@@ -1,0 +1,24 @@
+# Secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Generated media / output
+output/
+media/
+*.mp4
+*.mov
+*.png
+*.jpg
+*.jpeg
+
+# OS / editors
+.DS_Store
+.vscode/
+.idea/
