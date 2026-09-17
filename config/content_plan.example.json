@@ -1,0 +1,19 @@
+{
+  "mode": "dry-run",
+  "timezone": "Europe/Athens",
+  "platforms": [
+    "tiktok",
+    "instagram",
+    "facebook",
+    "youtube"
+  ],
+  "posts": [
+    {
+      "title": "Δοκιμαστικό αστείο βίντεο",
+      "caption": "Δοκιμή automation — δεν δημοσιεύεται σε dry-run.",
+      "hashtags": ["χιουμορ", "αστεια", "reels", "shorts", "tiktok"],
+      "media_path": "media/example.mp4",
+      "scheduled_at": "2026-09-17T21:00:00+03:00"
+    }
+  ]
+}
