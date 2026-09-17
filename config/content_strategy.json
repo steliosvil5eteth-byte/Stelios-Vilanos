@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "timezone": "Europe/Athens",
   "daily_target_videos": 12,
   "video_duration_seconds": {
@@ -86,6 +86,39 @@
     "compare_against_content_history": true,
     "compare_against_notion_archive": true,
     "store_summary_and_fingerprint_for_every_video": true
+  },
+  "weekly_learning": {
+    "enabled": true,
+    "review_day": "monday",
+    "review_previous_full_week": true,
+    "analytics_source": "metricool",
+    "archive_source": "notion_and_github",
+    "learning_state_file": "state/weekly_learning.json",
+    "evaluate_each_network_separately": true,
+    "evaluate_combined_performance": true,
+    "metrics_priority": [
+      "views_or_reach",
+      "average_watch_time",
+      "completion_or_retention",
+      "shares",
+      "saves",
+      "comments",
+      "likes",
+      "follows_or_profile_actions"
+    ],
+    "rules": [
+      "Identify the strongest hooks, emotional angles, zodiac topics, script structures, video lengths, posting slots and CTA patterns from the previous full week.",
+      "Identify weak patterns and reduce their use unless they are deliberate experiments.",
+      "Use successful mechanisms as inspiration but never copy an old script, hook, punchline or near-duplicate concept.",
+      "Prefer evidence from retention, shares and saves over likes alone when those metrics are available.",
+      "Do not overfit to one viral outlier; look for repeated patterns across multiple posts and platforms.",
+      "If data is insufficient, keep the existing strategy and continue testing rather than inventing conclusions."
+    ],
+    "next_week_mix": {
+      "proven_pattern_share": 0.7,
+      "new_experiment_share": 0.3
+    },
+    "apply_findings_automatically": true
   },
   "workflow": {
     "ask_for_confirmation_before_generation": false,
