@@ -1,7 +1,14 @@
-name: Social Media Automation Dry Run
+name: Social Media Automation Validation
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'config/**'
+      - 'queue/**'
+      - 'src/**'
+      - '.github/workflows/automation-dry-run.yml'
 
 jobs:
   validate-and-preview:
@@ -17,3 +24,6 @@ jobs:
 
       - name: Validate content plan
         run: python src/pipeline.py --plan config/content_plan.example.json
+
+      - name: Validate automation queues
+        run: python src/queue_validate.py
