@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "timezone": "Europe/Athens",
   "daily_target_videos": 12,
   "video_duration_seconds": {
@@ -16,7 +16,7 @@
     "order": ["zodiac", "soul"],
     "advance_only_after_full_day_completed": true,
     "pre_generate_future_days": true,
-    "prepare_next_day_after_local_hour": 18
+    "prepare_next_day_after_local_hour": 14
   },
   "zodiac_day": {
     "videos": 12,
