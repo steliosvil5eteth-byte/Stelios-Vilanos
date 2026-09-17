@@ -34,7 +34,7 @@
     "require_user_confirmation": false
   },
   "runner": {
-    "max_jobs_per_run": 2,
+    "max_jobs_per_run": 4,
     "duplicate_policy": "never_republish_same_job_id",
     "require_future_schedule": true,
     "hands_off_mode": true,
