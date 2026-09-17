@@ -1,0 +1,20 @@
+{
+  "mode": "chatgpt_connectors",
+  "metricool": {
+    "brand_id": 7000636,
+    "user_id": 5403385,
+    "timezone": "Europe/Athens",
+    "networks": ["facebook", "instagram", "tiktok", "youtube"]
+  },
+  "heygen": {
+    "enabled": true,
+    "default_aspect_ratio": "9:16",
+    "default_resolution": "720p",
+    "generation_mode": "requires_presenter_choice_or_existing_media"
+  },
+  "runner": {
+    "max_jobs_per_run": 2,
+    "duplicate_policy": "never_republish_same_job_id",
+    "require_future_schedule": true
+  }
+}
