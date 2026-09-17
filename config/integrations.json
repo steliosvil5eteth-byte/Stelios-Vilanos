@@ -10,7 +10,14 @@
     "enabled": true,
     "default_aspect_ratio": "9:16",
     "default_resolution": "720p",
-    "generation_mode": "requires_presenter_choice_or_existing_media"
+    "generation_mode": "public_avatar",
+    "avatar_group_name": "Brody",
+    "avatar_group_id": "469ba809c9f6441ba74a580058d41c4b",
+    "avatar_look_name": "Brody Living Room 1",
+    "avatar_look_id": "c1333835c09f4beaac193192119e20c5",
+    "engine": "avatar_iii",
+    "default_voice_id": "79f5fa6497474234a5d01764efc96e13",
+    "cost_profile": "low"
   },
   "runner": {
     "max_jobs_per_run": 2,
