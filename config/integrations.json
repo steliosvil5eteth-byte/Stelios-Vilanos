@@ -10,6 +10,7 @@
     "enabled": true,
     "default_aspect_ratio": "9:16",
     "default_resolution": "720p",
+    "default_fit": "cover",
     "generation_mode": "public_avatar",
     "avatar_group_name": "Brody",
     "avatar_group_id": "469ba809c9f6441ba74a580058d41c4b",
@@ -18,6 +19,10 @@
     "engine": "avatar_iii",
     "default_voice_id": "79f5fa6497474234a5d01764efc96e13",
     "cost_profile": "low"
+  },
+  "publishing": {
+    "daily_target_videos": 12,
+    "publish_to_all_connected_socials": true
   },
   "runner": {
     "max_jobs_per_run": 2,
