@@ -1,0 +1,19 @@
+name: Social Media Automation Dry Run
+
+on:
+  workflow_dispatch:
+
+jobs:
+  validate-and-preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate content plan
+        run: python src/pipeline.py --plan config/content_plan.example.json
