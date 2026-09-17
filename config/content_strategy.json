@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "timezone": "Europe/Athens",
   "daily_target_videos": 12,
   "video_duration_seconds": {
@@ -15,7 +15,8 @@
     "start_date": "2026-09-18",
     "order": ["zodiac", "soul"],
     "advance_only_after_full_day_completed": true,
-    "pre_generate_future_days": false
+    "pre_generate_future_days": true,
+    "prepare_next_day_after_local_hour": 18
   },
   "zodiac_day": {
     "videos": 12,
@@ -83,7 +84,17 @@
     "avoid_same_first_four_words": true,
     "avoid_near_duplicate_meaning": true,
     "compare_against_content_history": true,
+    "compare_against_notion_archive": true,
     "store_summary_and_fingerprint_for_every_video": true
+  },
+  "workflow": {
+    "ask_for_confirmation_before_generation": false,
+    "ask_for_confirmation_before_publishing": false,
+    "generate_title_caption_hashtags_automatically": true,
+    "quality_check_every_video": true,
+    "archive_every_video_in_github": true,
+    "archive_every_video_in_notion": true,
+    "continue_without_user_action_when_tools_allow": true
   },
   "publishing": {
     "networks": ["facebook", "instagram", "tiktok", "youtube"],
