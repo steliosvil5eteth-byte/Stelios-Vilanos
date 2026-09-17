@@ -20,6 +20,11 @@
     "default_voice_id": "79f5fa6497474234a5d01764efc96e13",
     "cost_profile": "low"
   },
+  "content": {
+    "strategy_file": "config/content_strategy.json",
+    "cycle_state_file": "state/content_cycle.json",
+    "history_file": "state/content_history.json"
+  },
   "publishing": {
     "daily_target_videos": 12,
     "publish_to_all_connected_socials": true
