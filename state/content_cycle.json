@@ -7,8 +7,8 @@
   "completed_count": 0,
   "target_count": 12,
   "prepared_count": 12,
-  "scheduled_count": 8,
-  "generating_count": 4,
+  "scheduled_count": 11,
+  "generating_count": 1,
   "last_completed_theme": null,
   "next_theme_after_completion": "soul",
   "status": "generation_in_progress"
