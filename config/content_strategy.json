@@ -1,10 +1,10 @@
 {
-  "version": 3,
+  "version": 4,
   "timezone": "Europe/Athens",
   "daily_target_videos": 12,
   "video_duration_seconds": {
     "min": 10,
-    "max": 15
+    "max": 13
   },
   "format": {
     "aspect_ratio": "9:16",
