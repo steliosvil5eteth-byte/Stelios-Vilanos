@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "last_reviewed_week": null,
+  "last_updated_at": null,
+  "top_patterns": [],
+  "weak_patterns": [],
+  "platform_findings": {},
+  "best_posting_slots": {},
+  "recommended_next_week_mix": {
+    "proven_pattern_share": 0.7,
+    "new_experiment_share": 0.3
+  },
+  "notes": "Updated automatically by the weekly performance review. Use findings as guidance, never as permission to repeat exact scripts or concepts."
+}
