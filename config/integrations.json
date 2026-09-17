@@ -23,15 +23,22 @@
   "content": {
     "strategy_file": "config/content_strategy.json",
     "cycle_state_file": "state/content_cycle.json",
-    "history_file": "state/content_history.json"
+    "history_file": "state/content_history.json",
+    "notion_rules_page_id": "3def2345-b318-8173-9711-e29c134da859",
+    "notion_archive_database_id": "38724259aa5143d09dc3b8cf606577b1",
+    "notion_archive_data_source_id": "46cd5cf4-5f7e-46e8-b0ef-274aeadbdb52"
   },
   "publishing": {
     "daily_target_videos": 12,
-    "publish_to_all_connected_socials": true
+    "publish_to_all_connected_socials": true,
+    "require_user_confirmation": false
   },
   "runner": {
     "max_jobs_per_run": 2,
     "duplicate_policy": "never_republish_same_job_id",
-    "require_future_schedule": true
+    "require_future_schedule": true,
+    "hands_off_mode": true,
+    "quality_check_before_publish": true,
+    "archive_every_video": true
   }
 }
