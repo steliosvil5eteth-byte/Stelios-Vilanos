@@ -29,19 +29,34 @@ Repository για αυτοματοποίηση δημιουργίας, οργά�
 - Metricool: scheduling και publishing
 - Notion: content planning
 - Dropbox / Google Drive: media storage
-- GitHub Actions: αυτοματισμοί
+- GitHub: queue, configuration και ιστορικό
+
+## Τρέχουσα αρχιτεκτονική
+
+Η πρώτη λειτουργική έκδοση χρησιμοποιεί τα ήδη συνδεδεμένα plugins ChatGPT για GitHub, Metricool και HeyGen. Έτσι δεν χρειάζεται να αποθηκεύονται API keys μέσα στο repository.
+
+- `queue/pending.json`: εργασίες που περιμένουν εκτέλεση
+- `queue/completed.json`: εργασίες που έχουν ολοκληρωθεί
+- `config/integrations.json`: μη ευαίσθητες ρυθμίσεις υπηρεσιών
+- `docs/AUTOMATION_RUNNER.md`: κανόνες του runner
+- `src/queue_validate.py`: έλεγχος εγκυρότητας queue
+- `.github/workflows/automation-dry-run.yml`: αυτόματος έλεγχος χωρίς δημοσίευση
 
 ## Ασφάλεια
 
-Δεν αποθηκεύουμε API keys, passwords ή tokens μέσα στον κώδικα. Χρησιμοποιούμε GitHub Secrets / environment variables.
+Δεν αποθηκεύουμε API keys, passwords, cookies ή tokens μέσα στον κώδικα. Η δημοσίευση δεν γίνεται από το GitHub Actions validation workflow. Η πραγματική ενέργεια περνά από τις συνδεδεμένες υπηρεσίες ή, αργότερα, από ασφαλή GitHub Secrets αν επιλεγεί direct API mode.
 
-## Τρέχουσα κατάσταση
+## Metricool
 
-Αρχικό στήσιμο του automation framework. Η πρώτη έκδοση λειτουργεί σε `dry-run`, ώστε να μην ανεβαίνει τίποτα κατά λάθος πριν συνδεθούν σωστά οι υπηρεσίες.
+- Brand ID: `7000636`
+- User ID: `5403385`
+- Timezone: `Europe/Athens`
+- Networks: Facebook, Instagram, TikTok, YouTube
 
-## Δομή
+## HeyGen
 
-- `src/pipeline.py`: βασικός automation runner
-- `config/content_plan.example.json`: παράδειγμα πλάνου περιεχομένου
-- `.github/workflows/automation-dry-run.yml`: ασφαλές χειροκίνητο test στο GitHub Actions
-- `.env.example`: ονόματα μεταβλητών που θα χρειαστούν αργότερα
+Η σύνδεση είναι διαθέσιμη, αλλά δεν υπάρχει ακόμη private avatar ή API-ready template στο workspace. Για αυτό τα jobs που ζητούν νέα δημιουργία HeyGen μένουν pending μέχρι να επιλεγεί τρόπος generation/presenter. Jobs με ήδη έτοιμο public media URL μπορούν να πάνε κατευθείαν στο Metricool.
+
+## Κατάσταση
+
+Το repository είναι πλέον έτοιμο να λειτουργήσει ως κεντρική ουρά αυτοματοποίησης. Η queue ξεκινά κενή ώστε να μην δημοσιευτεί τίποτα κατά λάθος.
