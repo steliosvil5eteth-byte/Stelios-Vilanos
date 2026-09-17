@@ -6,12 +6,27 @@ from typing import Any
 
 
 ALLOWED_NETWORKS = {"facebook", "instagram", "tiktok", "youtube"}
-ALLOWED_STATUS = {"pending", "processing", "scheduled", "published", "failed"}
+ALLOWED_STATUS = {
+    "pending",
+    "processing",
+    "heygen_processing",
+    "scheduled",
+    "published",
+    "failed",
+}
 
 
 def load_json(path: Path) -> dict[str, Any]:
     with path.open("r", encoding="utf-8") as f:
         return json.load(f)
+
+
+def first_present(job: dict[str, Any], *keys: str) -> Any:
+    for key in keys:
+        value = job.get(key)
+        if value not in (None, "", []):
+            return value
+    return None
 
 
 def validate_queue(path: Path) -> None:
@@ -26,14 +41,15 @@ def validate_queue(path: Path) -> None:
     for index, job in enumerate(jobs, start=1):
         if not isinstance(job, dict):
             raise ValueError(f"job #{index} must be an object")
-        job_id = str(job.get("id", "")).strip()
+
+        job_id = str(first_present(job, "id", "job_id") or "").strip()
         if not job_id:
-            raise ValueError(f"job #{index} is missing id")
+            raise ValueError(f"job #{index} is missing id/job_id")
         if job_id in seen_ids:
             raise ValueError(f"duplicate job id: {job_id}")
         seen_ids.add(job_id)
 
-        status = job.get("status", "pending")
+        status = str(job.get("status", "pending")).strip()
         if status not in ALLOWED_STATUS:
             raise ValueError(f"job {job_id}: invalid status {status}")
 
@@ -41,21 +57,23 @@ def validate_queue(path: Path) -> None:
         if not title:
             raise ValueError(f"job {job_id}: title is required")
 
-        networks = job.get("networks")
+        networks = first_present(job, "networks", "platforms")
         if not isinstance(networks, list) or not networks:
-            raise ValueError(f"job {job_id}: networks must be a non-empty list")
+            raise ValueError(f"job {job_id}: networks/platforms must be a non-empty list")
         invalid = set(networks) - ALLOWED_NETWORKS
         if invalid:
-            raise ValueError(f"job {job_id}: invalid networks {sorted(invalid)}")
+            raise ValueError(f"job {job_id}: invalid networks/platforms {sorted(invalid)}")
 
-        schedule = str(job.get("scheduled_at", "")).strip()
+        schedule = str(first_present(job, "scheduled_at", "scheduled_time") or "").strip()
         if not schedule:
-            raise ValueError(f"job {job_id}: scheduled_at is required")
+            raise ValueError(f"job {job_id}: scheduled_at/scheduled_time is required")
 
-        media = job.get("media")
-        generator = job.get("generator")
+        media = first_present(job, "media", "media_url")
+        generator = first_present(job, "generator", "heygen_video_id")
         if not media and not generator:
-            raise ValueError(f"job {job_id}: provide either media or generator")
+            raise ValueError(
+                f"job {job_id}: provide media/media_url or generator/heygen_video_id"
+            )
 
 
 def main() -> None:
