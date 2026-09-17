@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "timezone": "Europe/Athens",
+  "start_date": "2026-09-18",
+  "current_cycle_date": "2026-09-18",
+  "current_theme": "zodiac",
+  "completed_count": 0,
+  "target_count": 12,
+  "last_completed_theme": null,
+  "next_theme_after_completion": "soul",
+  "status": "ready"
+}
