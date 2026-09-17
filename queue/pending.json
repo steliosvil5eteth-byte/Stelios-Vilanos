@@ -1,4 +1,47 @@
 {
   "version": 1,
-  "jobs": []
+  "jobs": [
+    {
+      "job_id": "2026-09-18-zodiac-01-aries",
+      "date": "2026-09-18",
+      "theme": "zodiac",
+      "zodiac_sign": "Κριός",
+      "angle": "τι δεν συγχωρεί",
+      "hook": "Κριέ, μπορεί να συγχωρήσεις έναν καβγά.",
+      "script": "Κριέ, μπορεί να συγχωρήσεις έναν καβγά. Αυτό που δύσκολα ξεχνάς είναι να σε μειώσουν ενώ έδωσες την καρδιά σου. Η προδομένη αξιοπρέπεια κλείνει την πόρτα.",
+      "title": "Κριός — Τι δεν συγχωρεί",
+      "caption": "Κριός: όταν πληγωθεί η αξιοπρέπειά του, δύσκολα γυρίζει πίσω. Εσύ συμφωνείς;",
+      "hashtags": ["#Κριός", "#ζώδια", "#σχέσεις", "#αγάπη", "#fyp"],
+      "heygen_video_id": "bf1a101f677b6cb3f7c6c144b94a09ce",
+      "media_url": null,
+      "metricool_post_id": null,
+      "metricool_uuid": null,
+      "scheduled_time": "2026-09-18T09:00:00+03:00",
+      "platforms": ["facebook", "instagram", "tiktok", "youtube"],
+      "status": "heygen_processing",
+      "fingerprint": "2026-09-18|zodiac|Κριός|τι-δεν-συγχωρεί|προδομένη-αξιοπρέπεια",
+      "notion_page_id": "3def2345-b318-8126-84e8-fe111d0bd9e5"
+    },
+    {
+      "job_id": "2026-09-18-zodiac-02-taurus",
+      "date": "2026-09-18",
+      "theme": "zodiac",
+      "zodiac_sign": "Ταύρος",
+      "angle": "τι δεν συγχωρεί",
+      "hook": "Ταύρε, αντέχεις πολλά όταν αγαπάς.",
+      "script": "Ταύρε, αντέχεις πολλά όταν αγαπάς. Μα αν κάποιος παίξει με την εμπιστοσύνη σου, κάτι αλλάζει οριστικά. Μπορεί να μείνεις ήρεμος, αλλά μέσα σου η σχέση έχει ήδη ραγίσει.",
+      "title": "Ταύρος — Τι δεν συγχωρεί",
+      "caption": "Ταύρος: η εμπιστοσύνη χτίζεται αργά και μπορεί να χαθεί σε μία στιγμή. Εσύ δίνεις δεύτερη ευκαιρία;",
+      "hashtags": ["#Ταύρος", "#ζώδια", "#εμπιστοσύνη", "#σχέσεις", "#fyp"],
+      "heygen_video_id": "fdfdc47d0997a355dc9516d901d0923a",
+      "media_url": null,
+      "metricool_post_id": null,
+      "metricool_uuid": null,
+      "scheduled_time": "2026-09-18T10:15:00+03:00",
+      "platforms": ["facebook", "instagram", "tiktok", "youtube"],
+      "status": "heygen_processing",
+      "fingerprint": "2026-09-18|zodiac|Ταύρος|τι-δεν-συγχωρεί|σπασμένη-εμπιστοσύνη",
+      "notion_page_id": "3def2345-b318-8183-a4bb-ce528e9ff156"
+    }
+  ]
 }
