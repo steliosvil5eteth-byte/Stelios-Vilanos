@@ -1,0 +1,108 @@
+{
+  "version": 1,
+  "timezone": "Europe/Athens",
+  "daily_target_videos": 12,
+  "video_duration_seconds": {
+    "min": 10,
+    "max": 15
+  },
+  "format": {
+    "aspect_ratio": "9:16",
+    "resolution": "720p",
+    "fit": "cover"
+  },
+  "cycle": {
+    "start_date": "2026-09-18",
+    "order": ["zodiac", "soul"],
+    "advance_only_after_full_day_completed": true,
+    "pre_generate_future_days": false
+  },
+  "zodiac_day": {
+    "videos": 12,
+    "signs_in_order": [
+      "Κριός",
+      "Ταύρος",
+      "Δίδυμος",
+      "Καρκίνος",
+      "Λέων",
+      "Παρθένος",
+      "Ζυγός",
+      "Σκορπιός",
+      "Τοξότης",
+      "Αιγόκερως",
+      "Υδροχόος",
+      "Ιχθύς"
+    ],
+    "rule": "Use one shared daily angle across all 12 signs. Each sign gets one original script tailored to that sign. The shared angle must not repeat within 60 days.",
+    "angle_pool": [
+      "πώς ερωτεύεται",
+      "τι δεν συγχωρεί",
+      "πώς ζηλεύει",
+      "τι κάνει όταν του λείπεις",
+      "πώς φέρεται μετά τον χωρισμό",
+      "ποια πληγή κρύβει",
+      "τι χρειάζεται για να εμπιστευτεί",
+      "πώς δείχνει ότι σε θέλει",
+      "τι τον κάνει να απομακρύνεται",
+      "πώς αντιδρά στην προδοσία",
+      "τι δεν λέει ποτέ αλλά νιώθει",
+      "πώς ζητά δεύτερη ευκαιρία",
+      "τι φοβάται περισσότερο σε μια σχέση",
+      "πώς αγαπά όταν νιώθει ασφάλεια",
+      "τι τον κάνει να επιστρέψει",
+      "πώς κλείνει έναν κύκλο",
+      "τι τον πληγώνει πιο βαθιά",
+      "πώς συμπεριφέρεται όταν έχει θυμώσει",
+      "πώς είναι όταν νιώθει ότι δεν τον εκτιμούν",
+      "τι χρειάζεται για να μείνει"
+    ]
+  },
+  "soul_day": {
+    "videos": 12,
+    "rule": "All 12 videos must be emotionally distinct. Do not make 12 rewrites of the same breakup idea.",
+    "required_distinct_angles": [
+      "αγάπη που δεν ξεχάστηκε",
+      "χωρισμός χωρίς κλείσιμο",
+      "μήνυμα που δεν στάλθηκε",
+      "προδοσία",
+      "μοναξιά μετά από σχέση",
+      "ανάμνηση που επιστρέφει",
+      "αυτοσεβασμός και όρια",
+      "δεύτερη ευκαιρία",
+      "θεραπεία και προχώρημα",
+      "αγάπη που ήρθε αργά",
+      "συγγνώμη που δεν ειπώθηκε",
+      "λόγια που μιλούν στην ψυχή"
+    ]
+  },
+  "originality_rules": {
+    "minimum_days_before_reusing_same_core_angle": 60,
+    "never_reuse_exact_script": true,
+    "never_reuse_exact_hook": true,
+    "never_reuse_exact_punchline": true,
+    "avoid_same_first_four_words": true,
+    "avoid_near_duplicate_meaning": true,
+    "compare_against_content_history": true,
+    "store_summary_and_fingerprint_for_every_video": true
+  },
+  "publishing": {
+    "networks": ["facebook", "instagram", "tiktok", "youtube"],
+    "autopublish": true,
+    "slots_local_time": [
+      "09:00",
+      "10:15",
+      "11:30",
+      "12:45",
+      "14:00",
+      "15:15",
+      "16:30",
+      "17:45",
+      "19:00",
+      "20:15",
+      "21:30",
+      "22:45"
+    ],
+    "caption_language": "el",
+    "hashtags_per_post": 5
+  }
+}
