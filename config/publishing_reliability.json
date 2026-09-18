@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-18T17:49:00+03:00",
+  "updated_at": "2026-09-18T17:57:00+03:00",
   "timezone": "Europe/Athens",
   "rules": "\nPUBLISHING RELIABILITY REPAIR 2026-09-18 (required):\nRead config/publishing_reliability.json before each run. First reconcile ALL due posts by provider (this read/reconciliation work is not limited by max_jobs_per_run). PUBLISHED requires provider PUBLISHED plus a returned public URL; scheduled/PENDING is never published. Keep per-platform status, public URLs, errors and retry post IDs in GitHub and Notion. Mark a job completed only when all four required destinations are confirmed published. A partial failure must never republish successful destinations.\nFor transient timeouts, re-read the original and all known retry posts and check for a public URL or visible published matching post. If absence cannot be established, report an ambiguous result and do not blindly retry. Once absence is established, allow at most ONE delayed automatic retry per job/network with the existing hosted media, only the failed provider, at a future slot at least 15 minutes after failure. Persist the retry ID/UUID immediately and check it on subsequent runs. Never regenerate paid media for a publishing error. The Leo Instagram retry already exists: post 378060016 UUID -4218314236002483607 at 2026-09-18 14:30 Europe/Athens; original 377740952 remains the source for Facebook/TikTok/YouTube. Do NOT create another Leo retry.\nIf TikTok reports too many posts/OpenAPI 403 or a quota, record a per-network cooldown of at least 24 hours from that error (longer if provider specifies), defer only blocked-network pending publications to safe spaced slots after cooldown, preserving original content dates, and continue unaffected destinations. Do not burst catch-up jobs, bypass limits, or create duplicate attempts. Reconcile success after cooldown; do not declare a fixed daily cap guaranteed.\nLegacy photo posts drafted on 2026-09-18 are intentionally retired from the active calendar. Never reactivate or recreate them. Daily targets apply only to the new strategy, plus the explicitly requested weekly introduction. Count all active posts, special posts and retries when checking network load.\nOn explicit Metricool plan/quota errors stop new submissions to affected scope, preserve ready media, notify with exact error; do not purchase or infer current plan from old email. Likewise stop paid generation on insufficient balance; no unapproved credit purchases or paid retries.\nAfter 14:00 Europe/Athens prepare tomorrow's correct calendar theme even while today's future-scheduled posts remain in pending.json. Future pending jobs must not starve tomorrow's generation. Prioritize tomorrow's earliest missing slots; process at most 4 new/advancing generation jobs per run. Reuse task IDs and finished approved dog clip. Preflight quotas/balances through read-only connected tools. Notify if tomorrow remains incomplete by 22:00.\nFor Metricool updates preserve all original relevant content, media and provider settings, but omit unrelated networkData blocks not listed in providers (the read API may return default twitterData/instagramData for TikTok-only posts). Use known hosted Metricool media in info.media when already present; mediaFiles is for local paths. Check post UUID after updates because numeric IDs can change. Keep scheduled, published, partially_published, blocked and needs_review distinct.",
   "retired_legacy_post_uuids": [
@@ -25,6 +25,18 @@
       "automatic_retry_count": 1,
       "public_url": "https://www.instagram.com/reel/DdbVUXvlGzh/",
       "confirmed_at": "2026-09-18T14:32:42+03:00"
+    },
+    "strong_people_tiktok_photo": {
+      "original_id": "378173767",
+      "original_uuid": "-1601691169706586319",
+      "id": "378182641",
+      "uuid": "-3029365031314767155",
+      "scheduled_time": "2026-09-19T18:30:00+03:00",
+      "status": "PENDING",
+      "automatic_retry_count": 1,
+      "corrected_media_type": "image/jpeg",
+      "hosted_media_url": "https://static.metricool.com/planner/202609/7000636-file-17689786721063048682.jpeg",
+      "note": "Single TikTok-only retry scheduled after the active OpenAPI cooldown; do not create another retry."
     }
   },
   "network_cooldowns": {
@@ -78,7 +90,11 @@
       "network": "tiktok",
       "status": "ERROR",
       "error": "The content format of the Tiktok photo is incorrect. The 'image/png' type is not allowed, use 'image/jpeg' or 'image/webp' instead.",
-      "retry_status": "not_retried_missing_jpeg_or_webp_asset"
+      "retry_status": "scheduled_once_after_cooldown",
+      "retry_post_id": "378182641",
+      "retry_uuid": "-3029365031314767155",
+      "retry_scheduled_time": "2026-09-19T18:30:00+03:00",
+      "corrected_media_type": "image/jpeg"
     }
   ]
 }
