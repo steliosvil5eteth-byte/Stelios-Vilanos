@@ -311,39 +311,44 @@
         "tiktok",
         "youtube"
       ],
-      "status": "scheduled",
+      "status": "partially_published",
       "fingerprint": "2026-09-18|zodiac|Ζυγός|τι-δεν-συγχωρεί|άδικη-κατηγορία-σταματά-προσπάθεια",
       "blocked_networks": [
         "tiktok"
       ],
       "platform_status": {
         "facebook": {
-          "status": "PENDING",
-          "public_url": null,
+          "status": "PUBLISHED",
+          "public_url": "https://facebook.com/reel/1974598887278052",
           "error": null,
           "source_post_id": "378119771"
         },
         "instagram": {
-          "status": "PENDING",
-          "public_url": null,
-          "error": null,
-          "source_post_id": "378119771"
-        },
-        "youtube": {
-          "status": "PENDING",
-          "public_url": null,
+          "status": "PUBLISHED",
+          "public_url": "https://www.instagram.com/reel/DdbjGIZima5/",
           "error": null,
           "source_post_id": "378119771"
         },
         "tiktok": {
           "status": "blocked_cooldown",
           "public_url": null,
-          "error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
+          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
           "cooldown_until": "2026-09-19T16:07:00+03:00",
           "retry_status": "deferred_not_scheduled"
+        },
+        "youtube": {
+          "status": "PUBLISHED",
+          "public_url": "https://www.youtube.com/shorts/JmxKgw5bM_M",
+          "error": null,
+          "source_post_id": "378119771"
         }
       },
-      "last_reconciled_at": "2026-09-18T16:07:00+03:00"
+      "last_reconciled_at": "2026-09-18T16:40:00+03:00",
+      "public_urls": {
+        "facebook": "https://facebook.com/reel/1974598887278052",
+        "instagram": "https://www.instagram.com/reel/DdbjGIZima5/",
+        "youtube": "https://www.youtube.com/shorts/JmxKgw5bM_M"
+      }
     },
     {
       "job_id": "2026-09-18-zodiac-08-scorpio",
@@ -975,9 +980,105 @@
       "zodiac_sign": null,
       "generation_provider": "heygen",
       "generation_task_id": "a5f35f62bb494c506cc3f896e9f79ba4",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-10751794381936927292.mp4",
+      "metricool_post_id": "378137200",
+      "metricool_uuid": "7119671207944077321",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "status": "scheduled",
+      "platform_status": {
+        "facebook": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378137200"
+        },
+        "instagram": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378137200"
+        },
+        "tiktok": {
+          "status": "blocked_cooldown",
+          "public_url": null,
+          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
+        },
+        "youtube": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378137200"
+        }
+      },
+      "quality_check": {
+        "script_coherent": true,
+        "spelling_checked": true,
+        "title_caption_hashtags": true,
+        "hashtags_count": 5,
+        "aspect_ratio": "9:16",
+        "resolution": "720p",
+        "fit": "cover",
+        "duplicate_risk": "low",
+        "weekly_learning_applied": "insufficient_data_keep_strategy",
+        "duration_range": "passed",
+        "required_seconds": "10-13",
+        "actual_seconds": 12.984
+      },
+      "attempts": [
+        {
+          "heygen_video_id": "2ccdf214e008eb11f53e80c1676dfb46",
+          "status": "rejected_duration",
+          "duration_seconds": 13.5576
+        },
+        {
+          "heygen_video_id": "f89b2af730b5ebb5b7081a91a3685bb",
+          "status": "rejected_duration",
+          "duration_seconds": 9.81601
+        },
+        {
+          "heygen_video_id": "a5f35f62bb494c506cc3f896e9f79ba4",
+          "status": "accepted_scheduled",
+          "duration_seconds": 12.984
+        }
+      ],
+      "video_page_url": "https://app.heygen.com/videos/a5f35f62bb494c506cc3f896e9f79ba4",
+      "duration_seconds": 12.984,
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "last_reconciled_at": "2026-09-18T16:40:00+03:00"
+    },
+    {
+      "job_id": "2026-09-19-soul-05-healing-without-apology",
+      "date": "2026-09-19",
+      "theme": "soul",
+      "zodiac_sign": null,
+      "angle": "θεραπεία χωρίς συγγνώμη",
+      "hook": "Η επούλωση δεν περιμένει πάντα μια συγγνώμη.",
+      "script": "Η επούλωση αρχίζει όταν σταματάς να περιμένεις μια συγγνώμη. Δεν σημαίνει πως ξέχασες· σημαίνει πως αρνήθηκες να αφήσεις άλλο τον πόνο να αποφασίζει για σένα.",
+      "title": "Όταν ο πόνος σταματά να οδηγεί",
+      "caption": "Δεν χρειάζεσαι πάντα τη συγγνώμη που σου χρωστούν για να προχωρήσεις. Τι σε βοήθησε να θεραπευτείς;",
+      "hashtags": [
+        "#θεραπεία",
+        "#ψυχή",
+        "#δύναμη",
+        "#αυτογνωσία",
+        "#fyp"
+      ],
+      "heygen_video_id": "48fc5afb8882598655e0ed17957a1cc9",
+      "generation_provider": "heygen",
+      "generation_task_id": "48fc5afb8882598655e0ed17957a1cc9",
       "media_url": null,
       "metricool_post_id": null,
       "metricool_uuid": null,
+      "scheduled_time": "2026-09-19T10:06:00+03:00",
       "platforms": [
         "facebook",
         "instagram",
@@ -985,6 +1086,8 @@
         "youtube"
       ],
       "status": "generating",
+      "fingerprint": "2026-09-19|soul|θεραπεία|χωρίς-συγγνώμη-ο-πόνος-δεν-οδηγεί",
+      "notion_page_id": null,
       "platform_status": {
         "facebook": {
           "status": "not_scheduled",
@@ -997,9 +1100,11 @@
           "error": null
         },
         "tiktok": {
-          "status": "not_scheduled",
+          "status": "blocked_cooldown",
           "public_url": null,
-          "error": null
+          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
         },
         "youtube": {
           "status": "not_scheduled",
@@ -1017,27 +1122,172 @@
         "fit": "cover",
         "duplicate_risk": "low",
         "weekly_learning_applied": "insufficient_data_keep_strategy",
-        "duration_range": "pending_final_duration_correction",
+        "duration_range": "pending",
         "required_seconds": "10-13",
         "actual_seconds": null
       },
       "attempts": [
         {
-          "heygen_video_id": "2ccdf214e008eb11f53e80c1676dfb46",
-          "status": "rejected_duration",
-          "duration_seconds": 13.5576
-        },
-        {
-          "heygen_video_id": "f89b2af730b5ebb5b7081a91a3685bb",
-          "status": "rejected_duration",
-          "duration_seconds": 9.81601
-        },
-        {
-          "heygen_video_id": "a5f35f62bb494c506cc3f896e9f79ba4",
-          "status": "generating_final_duration_correction"
+          "heygen_video_id": "48fc5afb8882598655e0ed17957a1cc9",
+          "status": "generating"
         }
+      ]
+    },
+    {
+      "job_id": "2026-09-19-soul-06-self-respect-choose-yourself",
+      "date": "2026-09-19",
+      "theme": "soul",
+      "zodiac_sign": null,
+      "angle": "αυτοσεβασμός",
+      "hook": "Αυτοσεβασμός είναι να φύγεις πριν χαθείς.",
+      "script": "Αυτοσεβασμός είναι να φύγεις πριν πάψεις να αναγνωρίζεις τον εαυτό σου. Δεν χρειάζεται να μισήσεις κανέναν· αρκεί να διαλέξεις ξανά εσένα.",
+      "title": "Να διαλέξεις ξανά εσένα",
+      "caption": "Το να φύγεις δεν είναι πάντα ήττα· μερικές φορές είναι η πρώτη πράξη αυτοσεβασμού. Πότε διάλεξες εσένα;",
+      "hashtags": [
+        "#αυτοσεβασμός",
+        "#όρια",
+        "#σχέσεις",
+        "#δύναμη",
+        "#fyp"
       ],
-      "video_page_url": "https://app.heygen.com/videos/a5f35f62bb494c506cc3f896e9f79ba4"
+      "heygen_video_id": "8da928c396074579917249e9648d04aa",
+      "generation_provider": "heygen",
+      "generation_task_id": "8da928c396074579917249e9648d04aa",
+      "media_url": null,
+      "metricool_post_id": null,
+      "metricool_uuid": null,
+      "scheduled_time": "2026-09-19T12:30:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "status": "generating",
+      "fingerprint": "2026-09-19|soul|αυτοσεβασμός|φεύγεις-πριν-χαθείς-διαλέγεις-εσένα",
+      "notion_page_id": null,
+      "platform_status": {
+        "facebook": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        },
+        "instagram": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        },
+        "tiktok": {
+          "status": "blocked_cooldown",
+          "public_url": null,
+          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
+        },
+        "youtube": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        }
+      },
+      "quality_check": {
+        "script_coherent": true,
+        "spelling_checked": true,
+        "title_caption_hashtags": true,
+        "hashtags_count": 5,
+        "aspect_ratio": "9:16",
+        "resolution": "720p",
+        "fit": "cover",
+        "duplicate_risk": "low",
+        "weekly_learning_applied": "insufficient_data_keep_strategy",
+        "duration_range": "pending",
+        "required_seconds": "10-13",
+        "actual_seconds": null
+      },
+      "attempts": [
+        {
+          "heygen_video_id": "8da928c396074579917249e9648d04aa",
+          "status": "generating"
+        }
+      ]
+    },
+    {
+      "job_id": "2026-09-19-soul-07-memories-show-distance",
+      "date": "2026-09-19",
+      "theme": "soul",
+      "zodiac_sign": null,
+      "angle": "αναμνήσεις και εξέλιξη",
+      "hook": "Οι αναμνήσεις δεν ζητούν πάντα επιστροφή.",
+      "script": "Οι αναμνήσεις δεν επιστρέφουν για να σε γυρίσουν πίσω. Έρχονται να σου θυμίσουν ποιος ήσουν τότε και πόσο δρόμο κατάφερες να διανύσεις από εκεί.",
+      "title": "Η ανάμνηση δείχνει τον δρόμο",
+      "caption": "Μια ανάμνηση μπορεί να πονά και ταυτόχρονα να σου δείχνει πόσο άλλαξες. Ποια σε έκανε πιο δυνατό;",
+      "hashtags": [
+        "#αναμνήσεις",
+        "#ψυχή",
+        "#εξέλιξη",
+        "#ζωή",
+        "#fyp"
+      ],
+      "heygen_video_id": "fbc250a372b931d307589cd6baeb356b",
+      "generation_provider": "heygen",
+      "generation_task_id": "fbc250a372b931d307589cd6baeb356b",
+      "media_url": null,
+      "metricool_post_id": null,
+      "metricool_uuid": null,
+      "scheduled_time": "2026-09-19T14:54:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "status": "generating",
+      "fingerprint": "2026-09-19|soul|αναμνήσεις|θυμίζουν-διαδρομή-όχι-επιστροφή",
+      "notion_page_id": null,
+      "platform_status": {
+        "facebook": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        },
+        "instagram": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        },
+        "tiktok": {
+          "status": "blocked_cooldown",
+          "public_url": null,
+          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
+        },
+        "youtube": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        }
+      },
+      "quality_check": {
+        "script_coherent": true,
+        "spelling_checked": true,
+        "title_caption_hashtags": true,
+        "hashtags_count": 5,
+        "aspect_ratio": "9:16",
+        "resolution": "720p",
+        "fit": "cover",
+        "duplicate_risk": "low",
+        "weekly_learning_applied": "insufficient_data_keep_strategy",
+        "duration_range": "pending",
+        "required_seconds": "10-13",
+        "actual_seconds": null
+      },
+      "attempts": [
+        {
+          "heygen_video_id": "fbc250a372b931d307589cd6baeb356b",
+          "status": "generating"
+        }
+      ]
     }
   ]
 }
