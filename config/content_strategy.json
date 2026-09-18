@@ -1,5 +1,5 @@
 {
-  "version": 7,
+  "version": 8,
   "timezone": "Europe/Athens",
   "daily_target_videos": {
     "zodiac": 12,
@@ -192,7 +192,19 @@
     },
     "dog_barista_slot": "17:18",
     "schedule_effective_date": "2026-09-19",
-    "schedule_rule": "Start at 00:30 Europe/Athens on each content calendar date. Spread zodiac posts every 120 minutes, soul posts every 144 minutes. Preserve 2026-09-18 remaining slots as a transition. Never reset platform rolling quotas at midnight or burst missed slots."
+    "schedule_rule": "Start at 00:30 Europe/Athens on each content calendar date. Spread zodiac posts every 120 minutes, soul posts every 144 minutes. Preserve 2026-09-18 remaining slots as a transition. Never reset platform rolling quotas at midnight or burst missed slots.",
+    "platform_overrides": {
+      "tiktok": {
+        "format": "photo",
+        "mime_type": "image/jpeg",
+        "width": 1080,
+        "height": 1080,
+        "autoPublish": true,
+        "autoAddMusic": true,
+        "applies_to": "daily_zodiac_soul_and_dog_posts",
+        "rules": "USER TIKTOK FORMAT CHANGE 2026-09-18 — authoritative for the daily TikTok branch over earlier video-only instructions:\nFor TikTok @steliosvilanos only, create and automatically publish native PHOTO POSTS (JPEG 1080x1080, large readable Greek text, full uncropped copy), not avatar videos, MP4 slideshows or Runway clips. Include title, caption, 5 hashtags, comments enabled, autoPublish=true and TikTok autoAddMusic=true using the supported Metricool schema. Preserve calendar parity, exact configured slots and 12 zodiac / 10 soul daily targets (9 emotional photo posts plus 1 funny dog-barista photo post). The same daily concept may have different media by network; track TikTok photo media and separate Metricool IDs per network without duplicating logical jobs. Reuse/adapt existing approved scripts and reference images; do not buy video generation for TikTok. Use applicable image-generation and Library skills for new photo assets; verify JPEG MIME, file size and visual quality before submission. Do not reactivate retired legacy posts.\nBefore any future TikTok submission, reconcile existing scheduled/published posts and cooldowns. Convert only unposted daily TikTok destinations to photos, removing TikTok from any future shared video schedule before creating the corresponding photo schedule, while preserving all other provider settings and times. Never replace a published post or duplicate an existing retry. Preserve the existing corrected JPEG retry 378182641 / -3029365031314767155 and include it in load accounting. If an existing scheduled item cannot be safely updated, report the blocker rather than create a duplicate.\nOn any TikTok publishing failure, stop remaining TikTok attempts that local day; resume no earlier than next day AND expiration of any longer provider cooldown. The recorded cooldown is through 2026-09-19 16:07 Europe/Athens; re-read current reliability state, never shorten it or test/bypass it by changing media. No burst catch-up. Prepare images during cooldown without submitting blocked publications.\nKeep other networks' current setup and the separate weekly introduction task unchanged in this TikTok-only update. Evaluate photo-post analytics appropriately (shares/saves/comments/follows/reach; video retention only where applicable). Archive each photo post and per-platform status in the same GitHub/Notion histories. The target is automatic creation and scheduling without additional user confirmation, subject to actual quotas and tool availability; report scheduling versus confirmed publication accurately."
+      }
+    }
   },
   "dog_barista": {
     "videos_per_soul_day": 1,
