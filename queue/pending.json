@@ -488,36 +488,41 @@
       "zodiac_sign": null,
       "generation_provider": "heygen",
       "generation_task_id": "e7e032dcd5566aaf9cea4d4e56f1d799",
-      "media_url": null,
-      "metricool_post_id": null,
-      "metricool_uuid": null,
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-8973153217625051652.mp4",
+      "metricool_post_id": "378121244",
+      "metricool_uuid": "-2878152742504479547",
       "platforms": [
         "facebook",
         "instagram",
         "tiktok",
         "youtube"
       ],
-      "status": "generating",
+      "status": "scheduled",
       "platform_status": {
         "facebook": {
-          "status": "not_scheduled",
+          "status": "PENDING",
           "public_url": null,
-          "error": null
+          "error": null,
+          "source_post_id": "378121244"
         },
         "instagram": {
-          "status": "not_scheduled",
+          "status": "PENDING",
           "public_url": null,
-          "error": null
+          "error": null,
+          "source_post_id": "378121244"
         },
         "tiktok": {
-          "status": "not_scheduled",
+          "status": "blocked_cooldown",
           "public_url": null,
-          "error": null
+          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
         },
         "youtube": {
-          "status": "not_scheduled",
+          "status": "PENDING",
           "public_url": null,
-          "error": null
+          "error": null,
+          "source_post_id": "378121244"
         }
       },
       "quality_check": {
@@ -530,9 +535,9 @@
         "fit": "cover",
         "duplicate_risk": "low",
         "weekly_learning_applied": "insufficient_data_keep_strategy",
-        "duration_range": "pending_final_short_render",
+        "duration_range": "passed",
         "required_seconds": "10-13",
-        "actual_seconds": null
+        "actual_seconds": 10.968
       },
       "video_page_url": "https://app.heygen.com/videos/e7e032dcd5566aaf9cea4d4e56f1d799",
       "attempts": [
@@ -548,9 +553,15 @@
         },
         {
           "heygen_video_id": "e7e032dcd5566aaf9cea4d4e56f1d799",
-          "status": "generating_final_short_version"
+          "status": "accepted_scheduled",
+          "duration_seconds": 10.968
         }
-      ]
+      ],
+      "duration_seconds": 10.968,
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "last_reconciled_at": "2026-09-18T16:10:00+03:00"
     },
     {
       "job_id": "2026-09-19-soul-02-no-closure",
@@ -575,36 +586,41 @@
       "zodiac_sign": null,
       "generation_provider": "heygen",
       "generation_task_id": "2f11a30634c4a28980d3350cf5376c51",
-      "media_url": null,
-      "metricool_post_id": null,
-      "metricool_uuid": null,
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-12734929490523271795.mp4",
+      "metricool_post_id": "378121258",
+      "metricool_uuid": "-939280630344170335",
       "platforms": [
         "facebook",
         "instagram",
         "tiktok",
         "youtube"
       ],
-      "status": "generating",
+      "status": "scheduled",
       "platform_status": {
         "facebook": {
-          "status": "not_scheduled",
+          "status": "PENDING",
           "public_url": null,
-          "error": null
+          "error": null,
+          "source_post_id": "378121258"
         },
         "instagram": {
-          "status": "not_scheduled",
+          "status": "PENDING",
           "public_url": null,
-          "error": null
+          "error": null,
+          "source_post_id": "378121258"
         },
         "tiktok": {
-          "status": "not_scheduled",
+          "status": "blocked_cooldown",
           "public_url": null,
-          "error": null
+          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
         },
         "youtube": {
-          "status": "not_scheduled",
+          "status": "PENDING",
           "public_url": null,
-          "error": null
+          "error": null,
+          "source_post_id": "378121258"
         }
       },
       "quality_check": {
@@ -617,9 +633,9 @@
         "fit": "cover",
         "duplicate_risk": "low",
         "weekly_learning_applied": "insufficient_data_keep_strategy",
-        "duration_range": "pending_final_short_render",
+        "duration_range": "passed",
         "required_seconds": "10-13",
-        "actual_seconds": null
+        "actual_seconds": 10.704
       },
       "video_page_url": "https://app.heygen.com/videos/2f11a30634c4a28980d3350cf5376c51",
       "attempts": [
@@ -635,9 +651,15 @@
         },
         {
           "heygen_video_id": "2f11a30634c4a28980d3350cf5376c51",
-          "status": "generating_final_short_version"
+          "status": "accepted_scheduled",
+          "duration_seconds": 10.704
         }
-      ]
+      ],
+      "duration_seconds": 10.704,
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "last_reconciled_at": "2026-09-18T16:10:00+03:00"
     },
     {
       "job_id": "2026-09-19-soul-03-unsent-message",
@@ -727,7 +749,7 @@
       "job_id": "2026-09-19-soul-04-betrayal",
       "angle": "προδοσία",
       "hook": "Η προδοσία δεν πονά μόνο για αυτό που έγινε.",
-      "script": "Η προδοσία πονά βαθύτερα όταν έρχεται από εκείνον που γνώριζε τις πληγές σου. Δεν χάνεις μόνο εμπιστοσύνη· αλλάζει ο τρόπος που αγαπάς.",
+      "script": "Η προδοσία πονά βαθύτερα όταν έρχεται από εκείνον που γνώριζε όλες τις πληγές και τους φόβους σου. Δεν χάνεις μόνο την εμπιστοσύνη· αλλάζει για πάντα ο τρόπος που αγαπάς.",
       "title": "Η προδοσία ξέρει πού πονάς",
       "caption": "Η βαθύτερη πληγή έρχεται από αυτόν που ήξερε ακριβώς τι φοβόσουν. Συγχωρείται μια τέτοια προδοσία;",
       "hashtags": [
@@ -737,7 +759,7 @@
         "#πόνος",
         "#fyp"
       ],
-      "heygen_video_id": "f89b2af730b5ebb5b7081a91a3685bb",
+      "heygen_video_id": "a5f35f62bb494c506cc3f896e9f79ba4",
       "scheduled_time": "2026-09-19T07:42:00+03:00",
       "fingerprint": "2026-09-19|soul|προδοσία|γνώριζε-πληγή-και-χτύπησε-εκεί",
       "notion_page_id": "3dff2345-b318-81ea-a533-efbd849e3671",
@@ -745,7 +767,7 @@
       "theme": "soul",
       "zodiac_sign": null,
       "generation_provider": "heygen",
-      "generation_task_id": "f89b2af730b5ebb5b7081a91a3685bb",
+      "generation_task_id": "a5f35f62bb494c506cc3f896e9f79ba4",
       "media_url": null,
       "metricool_post_id": null,
       "metricool_uuid": null,
@@ -788,7 +810,7 @@
         "fit": "cover",
         "duplicate_risk": "low",
         "weekly_learning_applied": "insufficient_data_keep_strategy",
-        "duration_range": "pending_final_short_render",
+        "duration_range": "pending_final_duration_correction",
         "required_seconds": "10-13",
         "actual_seconds": null
       },
@@ -800,10 +822,15 @@
         },
         {
           "heygen_video_id": "f89b2af730b5ebb5b7081a91a3685bb",
-          "status": "generating_final_short_version"
+          "status": "rejected_duration",
+          "duration_seconds": 9.81601
+        },
+        {
+          "heygen_video_id": "a5f35f62bb494c506cc3f896e9f79ba4",
+          "status": "generating_final_duration_correction"
         }
       ],
-      "video_page_url": "https://app.heygen.com/videos/f89b2af730b5ebb5b7081a91a3685bb"
+      "video_page_url": "https://app.heygen.com/videos/a5f35f62bb494c506cc3f896e9f79ba4"
     }
   ]
 }
