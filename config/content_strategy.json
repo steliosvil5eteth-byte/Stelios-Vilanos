@@ -1,5 +1,5 @@
 {
-  "version": 10,
+  "version": 11,
   "timezone": "Europe/Athens",
   "daily_target_videos": {
     "zodiac": 12,
@@ -212,8 +212,24 @@
             "publication_time": "23:00",
             "timezone": "Europe/Athens",
             "all_posts_same_time": true,
-            "rules": "ONE-DATE USER SCHEDULE EXCEPTION (latest user instruction): For TikTok daily photo content dated 2026-09-19 ONLY, prepare all 10 posts (9 soul/emotional plus 1 dog-barista) and schedule all ten for exactly 2026-09-19T23:00:00+03:00 Europe/Athens, autoPublish=true and autoAddMusic=true. This explicitly overrides prior spaced-slot and no-compression instructions for this date only; it is the requested daily batch, not catch-up or retry traffic. Do not schedule any of these ten earlier that day. Prepare and schedule in advance through Metricool, not by waiting for an hourly task to run at 23:00. Check for duplicate jobs and current provider restrictions. Respect any active provider cooldown/limit extending to the target time; do not bypass it. On failure stop any remaining attempts when still cancellable, and report that simultaneously queued posts may already have been attempted. Do not promise all ten will publish. On 2026-09-20 automatically return to normal zodiac slots from 00:30, then continue the normal 12/10 calendar alternation; retain rolling-quota checks across midnight. Weekly Monday 23:00 introduction and other networks unchanged. Keep canceled legacy posts and retries canceled."
+            "rules": "ONE-DATE USER SCHEDULE EXCEPTION (latest user instruction): For TikTok daily photo content dated 2026-09-19 ONLY, prepare all 10 posts (9 soul/emotional plus 1 dog-barista) and schedule all ten for exactly 2026-09-19T23:00:00+03:00 Europe/Athens, autoPublish=true and autoAddMusic=true. This explicitly overrides prior spaced-slot and no-compression instructions for this date only; it is the requested daily batch, not catch-up or retry traffic. Do not schedule any of these ten earlier that day. Prepare and schedule in advance through Metricool, not by waiting for an hourly task to run at 23:00. Check for duplicate jobs and current provider restrictions. Respect any active provider cooldown/limit extending to the target time; do not bypass it. On failure stop any remaining attempts when still cancellable, and report that simultaneously queued posts may already have been attempted. Do not promise all ten will publish. On 2026-09-20 automatically return to normal zodiac slots from 00:30, then continue the normal 12/10 calendar alternation; retain rolling-quota checks across midnight. Weekly Monday 23:00 introduction and other networks unchanged. Keep canceled legacy posts and retries canceled.",
+            "composition": {
+              "emotional_photo_posts": 9,
+              "dog_videos": 1
+            }
           }
+        },
+        "dog_barista_override": {
+          "format": "video",
+          "start_date": "2026-09-19",
+          "every_n_calendar_days": 2,
+          "normal_slot": "17:18",
+          "replaces_dog_photo": true,
+          "daily_soul_composition": {
+            "emotional_photo_posts": 9,
+            "dog_videos": 1
+          },
+          "rules": "LATEST USER DOG VIDEO EXCEPTION: Keep the dog-barista as a VIDEO on TikTok every second calendar day (soul days), starting 2026-09-19 and then 2026-09-21, 2026-09-23, etc. It REPLACES the previously specified dog photo within the 10-post batch: exactly 9 emotional photo posts plus 1 dog-barista video, not an 11th daily post. Reuse the same approved dog video generated for the other networks, with existing Runway quality/budget rules; no extra paid generation solely for TikTok. TikTok autoAddMusic=true applies to the nine native photo posts; do not assume it adds music to a video on a personal TikTok account. Preserve the dog video's existing audio/silent settings and supported AI labels. For 2026-09-19 only, schedule the dog video together with all nine photo posts at 23:00 Europe/Athens. Thereafter use the existing soul-day dog slot 17:18, and preserve all other regular slots, 12-zodiac-photo days, rolling quotas, cooldowns, stop-on-failure, cancellation and duplicate safeguards. Keep Monday 23:00 introduction as the separate authorized weekly video and the other three platforms unchanged. This dog-video instruction overrides all prior dog-photo-only wording."
         }
       }
     }
