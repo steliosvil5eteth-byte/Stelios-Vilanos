@@ -1,7 +1,10 @@
 {
-  "version": 5,
+  "version": 6,
   "timezone": "Europe/Athens",
-  "daily_target_videos": 12,
+  "daily_target_videos": {
+    "zodiac": 12,
+    "soul": 10
+  },
   "video_duration_seconds": {
     "min": 10,
     "max": 13
@@ -13,10 +16,14 @@
   },
   "cycle": {
     "start_date": "2026-09-18",
-    "order": ["zodiac", "soul"],
-    "advance_only_after_full_day_completed": true,
+    "order": [
+      "zodiac",
+      "soul"
+    ],
+    "advance_only_after_full_day_completed": false,
     "pre_generate_future_days": true,
-    "prepare_next_day_after_local_hour": 14
+    "prepare_next_day_after_local_hour": 14,
+    "date_rule": "Calendar-day parity in Europe/Athens from 2026-09-18: even offset zodiac, odd offset soul. Missed jobs never shift the alternating dates."
   },
   "zodiac_day": {
     "videos": 12,
@@ -59,8 +66,8 @@
     ]
   },
   "soul_day": {
-    "videos": 12,
-    "rule": "All 12 videos must be emotionally distinct. Do not make 12 rewrites of the same breakup idea.",
+    "videos": 10,
+    "rule": "Exactly 9 emotionally distinct HeyGen videos about love, romance, separation and lived feelings that speak to the viewer's soul, plus exactly 1 funny Runway dog-barista video; 10 total, not 10 plus a dog. Choose 9 distinct angles from the pool, rotating across days.",
     "required_distinct_angles": [
       "αγάπη που δεν ξεχάστηκε",
       "χωρισμός χωρίς κλείσιμο",
@@ -74,7 +81,9 @@
       "αγάπη που ήρθε αργά",
       "συγγνώμη που δεν ειπώθηκε",
       "λόγια που μιλούν στην ψυχή"
-    ]
+    ],
+    "emotional_videos": 9,
+    "dog_barista_videos": 1
   },
   "originality_rules": {
     "minimum_days_before_reusing_same_core_angle": 60,
@@ -130,7 +139,12 @@
     "continue_without_user_action_when_tools_allow": true
   },
   "publishing": {
-    "networks": ["facebook", "instagram", "tiktok", "youtube"],
+    "networks": [
+      "facebook",
+      "instagram",
+      "tiktok",
+      "youtube"
+    ],
     "autopublish": true,
     "slots_local_time": [
       "09:00",
@@ -147,6 +161,53 @@
       "22:45"
     ],
     "caption_language": "el",
-    "hashtags_per_post": 5
+    "hashtags_per_post": 5,
+    "slots_by_theme": {
+      "zodiac": [
+        "09:00",
+        "10:15",
+        "11:30",
+        "12:45",
+        "14:00",
+        "15:15",
+        "16:30",
+        "17:45",
+        "19:00",
+        "20:15",
+        "21:30",
+        "22:45"
+      ],
+      "soul": [
+        "09:00",
+        "10:15",
+        "11:30",
+        "12:45",
+        "14:00",
+        "16:30",
+        "17:45",
+        "19:00",
+        "20:15",
+        "21:30"
+      ]
+    },
+    "dog_barista_slot": "19:00"
+  },
+  "dog_barista": {
+    "videos_per_soul_day": 1,
+    "duration_seconds": 5,
+    "aspect_ratio": "9:16",
+    "model": "gen-4.5",
+    "generate_audio": false,
+    "reference_image_task_id": "31ca58be-34c3-436e-84d0-5838f9839e19",
+    "approved_first_video_task_id": "fe3d8602-b125-4a73-b048-ceb42f2caafc",
+    "identity": "Golden retriever, teal barista apron, warm Greek cafe, natural canine movement.",
+    "creative_rule": "One simple action and humorous ending per clip; vary coffee, change tray, wiping counter, orders, breaks, tips. Foam must stay on muzzle through last frame when present. Reuse the approved first video once if not already published. Keep identity consistent using reference images.",
+    "budget": {
+      "video_credits": 60,
+      "new_image_credits": 8,
+      "max_automatic_attempts_per_episode": 1,
+      "auto_purchase": false
+    },
+    "quality_gate": "Check natural anatomy, persistent props and ending before publishing; on failure report rather than repeatedly regenerate."
   }
 }
