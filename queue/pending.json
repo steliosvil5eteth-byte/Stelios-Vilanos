@@ -2,69 +2,6 @@
   "version": 1,
   "jobs": [
     {
-      "job_id": "2026-09-18-zodiac-05-leo",
-      "date": "2026-09-18",
-      "theme": "zodiac",
-      "zodiac_sign": "Λέων",
-      "angle": "τι δεν συγχωρεί",
-      "hook": "Λέοντα, αντέχεις την αλήθεια, όχι την ταπείνωση.",
-      "script": "Λέοντα, αντέχεις την αλήθεια, όχι την ταπείνωση. Αυτό που δεν συγχωρείς είναι να σε εκθέσουν μπροστά σε άλλους για να νιώσουν εκείνοι δυνατοί. Εκεί δεν πληγώνεται μόνο η καρδιά· χάνεται ο σεβασμός.",
-      "title": "Λέων — Τι δεν συγχωρεί",
-      "caption": "Λέων: η δημόσια ταπείνωση μπορεί να τελειώσει τον σεβασμό. Εσύ θα έδινες δεύτερη ευκαιρία;",
-      "hashtags": [
-        "#Λέων",
-        "#ζώδια",
-        "#σεβασμός",
-        "#σχέσεις",
-        "#fyp"
-      ],
-      "heygen_video_id": "57a4153a7b848a13aa0abfe2ce5c9311",
-      "media_url": "https://static.metricool.com/planner/202609/7000636-file-11502541178777654997.mp4",
-      "metricool_post_id": "377740952",
-      "metricool_uuid": "6541017991369018037",
-      "scheduled_time": "2026-09-18T14:00:00+03:00",
-      "platforms": [
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube"
-      ],
-      "status": "partially_published",
-      "fingerprint": "2026-09-18|zodiac|Λέων|τι-δεν-συγχωρεί|δημόσια-ταπείνωση-χάνει-σεβασμό",
-      "notion_page_id": "3def2345-b318-811f-930f-f63fb2470b10",
-      "platform_status": {
-        "facebook": {
-          "status": "PUBLISHED",
-          "public_url": "https://facebook.com/reel/1406567734949536",
-          "error": null
-        },
-        "instagram": {
-          "status": "ERROR",
-          "public_url": null,
-          "error": "Read timed out"
-        },
-        "tiktok": {
-          "status": "PUBLISHED",
-          "public_url": "https://www.tiktok.com/@steliosvilanos/video/7686829596267777302",
-          "error": null
-        },
-        "youtube": {
-          "status": "PUBLISHED",
-          "public_url": "https://www.youtube.com/shorts/0KpYHYC0ZAM",
-          "error": null
-        }
-      },
-      "retry_posts": {
-        "instagram": {
-          "id": "378060016",
-          "uuid": "-4218314236002483607",
-          "scheduled_time": "2026-09-18T14:30:00+03:00",
-          "status": "PENDING",
-          "automatic_retry_count": 1
-        }
-      }
-    },
-    {
       "job_id": "2026-09-18-zodiac-06-virgo",
       "date": "2026-09-18",
       "theme": "zodiac",
