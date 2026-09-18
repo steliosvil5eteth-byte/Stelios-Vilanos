@@ -439,6 +439,274 @@
       ],
       "status": "scheduled",
       "fingerprint": "2026-09-18|zodiac|Ιχθύς|τι-δεν-συγχωρεί|ελπίδα-στην-ευαλωτότητα-μετά-εξαφάνιση"
+    },
+    {
+      "job_id": "2026-09-19-soul-01-love-unforgotten",
+      "angle": "αγάπη που δεν ξεχάστηκε",
+      "hook": "Δεν ξεχνάς εκείνον που αγάπησες αληθινά.",
+      "script": "Δεν ξεχνάς εκείνον που αγάπησες αληθινά. Μαθαίνεις απλώς να ζεις χωρίς την παρουσία του, μέχρι μια μικρή ανάμνηση να σου θυμίσει πως κάτι μέσα σου τον περιμένει ακόμα.",
+      "title": "Η αγάπη που δεν ξεχάστηκε",
+      "caption": "Μερικές αγάπες δεν φεύγουν· αλλάζουν θέση μέσα μας. Υπάρχει κάποιος που θυμάσαι ακόμα;",
+      "hashtags": [
+        "#αγάπη",
+        "#αναμνήσεις",
+        "#συναίσθημα",
+        "#ψυχή",
+        "#fyp"
+      ],
+      "heygen_video_id": "657eac8df6487ee0292e66b34539ab72",
+      "scheduled_time": "2026-09-19T09:00:00+03:00",
+      "fingerprint": "2026-09-19|soul|αγάπη-που-δεν-ξεχάστηκε|ανάμνηση-ξυπνά-κρυφή-αναμονή",
+      "notion_page_id": "3dff2345-b318-8179-bfe7-d2416cec508f",
+      "date": "2026-09-19",
+      "theme": "soul",
+      "zodiac_sign": null,
+      "generation_provider": "heygen",
+      "generation_task_id": "657eac8df6487ee0292e66b34539ab72",
+      "media_url": null,
+      "metricool_post_id": null,
+      "metricool_uuid": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "status": "generating",
+      "platform_status": {
+        "facebook": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        },
+        "instagram": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        },
+        "tiktok": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        },
+        "youtube": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        }
+      },
+      "quality_check": {
+        "script_coherent": true,
+        "spelling_checked": true,
+        "title_caption_hashtags": true,
+        "hashtags_count": 5,
+        "aspect_ratio": "9:16",
+        "resolution": "720p",
+        "fit": "cover",
+        "duplicate_risk": "low",
+        "weekly_learning_applied": "insufficient_data_keep_strategy"
+      }
+    },
+    {
+      "job_id": "2026-09-19-soul-02-no-closure",
+      "angle": "χωρισμός χωρίς κλείσιμο",
+      "hook": "Ο πιο δύσκολος χωρισμός είναι αυτός που δεν εξηγήθηκε ποτέ.",
+      "script": "Ο πιο δύσκολος χωρισμός είναι αυτός που δεν εξηγήθηκε ποτέ. Έμεινες με ένα «γιατί» στο στόμα και μια ιστορία που τελείωσε χωρίς να σου πει το τέλος.",
+      "title": "Ο χωρισμός χωρίς απάντηση",
+      "caption": "Το «γιατί» πονά περισσότερο όταν κανείς δεν σου έδωσε ένα τέλος. Έζησες ποτέ τέτοιο χωρισμό;",
+      "hashtags": [
+        "#χωρισμός",
+        "#σχέσεις",
+        "#συναίσθημα",
+        "#αλήθειες",
+        "#fyp"
+      ],
+      "heygen_video_id": "94dfa6c47fbf3ad64fbec78d685e8172",
+      "scheduled_time": "2026-09-19T10:15:00+03:00",
+      "fingerprint": "2026-09-19|soul|χωρισμός-χωρίς-κλείσιμο|γιατί-χωρίς-τελευταία-σελίδα",
+      "notion_page_id": "3dff2345-b318-81e5-b41e-f7ec31d72d32",
+      "date": "2026-09-19",
+      "theme": "soul",
+      "zodiac_sign": null,
+      "generation_provider": "heygen",
+      "generation_task_id": "94dfa6c47fbf3ad64fbec78d685e8172",
+      "media_url": null,
+      "metricool_post_id": null,
+      "metricool_uuid": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "status": "generating",
+      "platform_status": {
+        "facebook": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        },
+        "instagram": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        },
+        "tiktok": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        },
+        "youtube": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        }
+      },
+      "quality_check": {
+        "script_coherent": true,
+        "spelling_checked": true,
+        "title_caption_hashtags": true,
+        "hashtags_count": 5,
+        "aspect_ratio": "9:16",
+        "resolution": "720p",
+        "fit": "cover",
+        "duplicate_risk": "low",
+        "weekly_learning_applied": "insufficient_data_keep_strategy"
+      }
+    },
+    {
+      "job_id": "2026-09-19-soul-03-unsent-message",
+      "angle": "μήνυμα που δεν στάλθηκε",
+      "hook": "Έγραψες το μήνυμα δεκάδες φορές, αλλά δεν το έστειλες.",
+      "script": "Έγραψες το μήνυμα δεκάδες φορές, αλλά δεν το έστειλες. Όχι επειδή δεν σου λείπει· επειδή φοβάσαι πως η σιωπή του θα πονέσει περισσότερο από την απουσία.",
+      "title": "Το μήνυμα που έμεινε πρόχειρο",
+      "caption": "Κάποια μηνύματα δεν στάλθηκαν ποτέ, αλλά ειπώθηκαν χίλιες φορές μέσα μας. Εσύ θα το έστελνες;",
+      "hashtags": [
+        "#μήνυμα",
+        "#μουλείπεις",
+        "#σχέσεις",
+        "#ψυχή",
+        "#fyp"
+      ],
+      "heygen_video_id": "774340d865bccae7c7e01cda2b47eb4c",
+      "scheduled_time": "2026-09-19T11:30:00+03:00",
+      "fingerprint": "2026-09-19|soul|μήνυμα-που-δεν-στάλθηκε|φόβος-σιωπής-χειρότερος-απουσίας",
+      "notion_page_id": "3dff2345-b318-8177-bf04-e27abc8e94cb",
+      "date": "2026-09-19",
+      "theme": "soul",
+      "zodiac_sign": null,
+      "generation_provider": "heygen",
+      "generation_task_id": "774340d865bccae7c7e01cda2b47eb4c",
+      "media_url": null,
+      "metricool_post_id": null,
+      "metricool_uuid": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "status": "generating",
+      "platform_status": {
+        "facebook": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        },
+        "instagram": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        },
+        "tiktok": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        },
+        "youtube": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        }
+      },
+      "quality_check": {
+        "script_coherent": true,
+        "spelling_checked": true,
+        "title_caption_hashtags": true,
+        "hashtags_count": 5,
+        "aspect_ratio": "9:16",
+        "resolution": "720p",
+        "fit": "cover",
+        "duplicate_risk": "low",
+        "weekly_learning_applied": "insufficient_data_keep_strategy"
+      }
+    },
+    {
+      "job_id": "2026-09-19-soul-04-betrayal",
+      "angle": "προδοσία",
+      "hook": "Η προδοσία δεν πονά μόνο για αυτό που έγινε.",
+      "script": "Η προδοσία δεν πονά μόνο για αυτό που έγινε. Πονά γιατί εκείνος που ήξερε τις πληγές σου διάλεξε ακριβώς εκεί να σε χτυπήσει.",
+      "title": "Η προδοσία ξέρει πού πονάς",
+      "caption": "Η βαθύτερη πληγή έρχεται από αυτόν που ήξερε ακριβώς τι φοβόσουν. Συγχωρείται μια τέτοια προδοσία;",
+      "hashtags": [
+        "#προδοσία",
+        "#εμπιστοσύνη",
+        "#σχέσεις",
+        "#πόνος",
+        "#fyp"
+      ],
+      "heygen_video_id": "fe908568e1634b75385571a141ea7c68",
+      "scheduled_time": "2026-09-19T12:45:00+03:00",
+      "fingerprint": "2026-09-19|soul|προδοσία|γνώριζε-πληγή-και-χτύπησε-εκεί",
+      "notion_page_id": "3dff2345-b318-81ea-a533-efbd849e3671",
+      "date": "2026-09-19",
+      "theme": "soul",
+      "zodiac_sign": null,
+      "generation_provider": "heygen",
+      "generation_task_id": "fe908568e1634b75385571a141ea7c68",
+      "media_url": null,
+      "metricool_post_id": null,
+      "metricool_uuid": null,
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "status": "generating",
+      "platform_status": {
+        "facebook": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        },
+        "instagram": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        },
+        "tiktok": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        },
+        "youtube": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        }
+      },
+      "quality_check": {
+        "script_coherent": true,
+        "spelling_checked": true,
+        "title_caption_hashtags": true,
+        "hashtags_count": 5,
+        "aspect_ratio": "9:16",
+        "resolution": "720p",
+        "fit": "cover",
+        "duplicate_risk": "low",
+        "weekly_learning_applied": "insufficient_data_keep_strategy"
+      }
     }
   ]
 }
