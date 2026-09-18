@@ -302,5 +302,52 @@
       "paid_generation_enabled": false
     },
     "instruction": "Manage Stelios's existing social pipeline, Metricool brand7000636 timezone Europe/Athens; source repository steliosvil5eteth-byte/Stelios-Vilanos. This consolidated instruction supersedes all previous conflicting cancellation/volume instructions. Read config/integrations.json, content_strategy.json, publishing_reliability.json, queues and history with current SHAs; use Notion archive configured there. Preserve ALL already paid/generated videos dated2026-09-19: nine emotional videos at00:30,02:54,05:18,07:42,10:06,12:30,14:54,19:42,22:06 on Facebook/Instagram/YouTube. Explicit user reversed their cancellation; never draft or cancel these. Reuse existing media and UUIDs, no regeneration. Keep existing TikTok photos including corrected JPEG UUID-3029365031314767155 at19/9 23:00.\nKeep ongoing TikTok photo program as authorized: alternate12 zodiac photos (20/9 then every2days) with9 emotional photos (19/9 then every2days), plus the separate dog video on emotional days;19/9 all TikTok batch at23:00; thereafter established slots in strategy. Missing scheduled posts must be reported as missing, not claimed ready. Do not revive retired legacy drafts.\nDog is unchanged: one5-second gen-4.5 silent golden retriever barista clip every2days from19/9 on all4networks. Preserve existing19/9 scheduled clip at17:18 Facebook/Instagram/YouTube and23:00 TikTok, normal17:18 thereafter. Same dog/reference assets and quality checks, max one paid attempt/episode; live Runway balance check, no purchases, no repeats/substitutions without authorization.107credits last observed cannot fund a month; report insufficient budget, do not alter cadence.\nAll other NEW legacy avatar/zodiac/emotional-video production stops. Weekly intro remains paused. Canceled18/9 21:30 and22:45 videos remain drafts.\nNEW DAILY WORLD-STORY PROJECT IS EXPLICITLY ON HOLD pending tomorrow's discussion. User wants1video/day about fact-checked unusual things around the world, images+Greek narration/subtitles, same file on4socials, intended start20/9. Do NOT generate, spend credits or schedule these new stories until user resumes and finalizes duration/cost. Neither20seconds nor2minutes is a finalized choice;23:00 is only tentative, not a user-approved publication slot. HeyGen553credits last verified resets17/10; AvatarIII7credits/min cannot price VideoAgent40credits/min. No paid pricing experiments. Pricing-only session7fbafe9b41d04f149c0c84b920956c1d received stop request: do not resume.\nContinue hourly reconciliation: PUBLISHED requires provider status plus public URL. Respect cooldowns/quota errors (last TikTok cooldown19/9 16:07; read fresh state). No bypass or blind retries, no duplicates, no paid regeneration for publish failures. Preserve successful providers; update state/Notion per-provider. On Metricool updates omit unrelated networkData and keep existing hosted media in info.media; UUID stable, numeric ID may change. Record job IDs/credits/quality/archive. Weekly Monday analytics review retains previous full-week comparison, evidence-based learning and originality. No subscription/access changes. Report material success/blockers in Greek accurately."
+  },
+  "latest_user_transition": {
+    "effective_at": "2026-09-18T20:46:46+03:00",
+    "status": "active",
+    "non_dog_videos": "stopped",
+    "stop_scope": [
+      "zodiac videos",
+      "short emotional videos",
+      "weekly introduction",
+      "all retries and revivals of cancelled non-dog videos"
+    ],
+    "daily_story_video": {
+      "status": "on_hold_pending_format_and_safe_duration",
+      "generation_allowed": false,
+      "scheduling_allowed": false,
+      "heygen_spend_allowed": false
+    },
+    "dog_barista": {
+      "status": "preserved",
+      "cadence": "every other calendar day starting 2026-09-19",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "slot_standard": "17:18 Europe/Athens",
+      "exception_2026_09_19": {
+        "facebook_instagram_youtube": "17:18",
+        "tiktok": "23:00"
+      }
+    },
+    "existing_photo_posts": {
+      "policy": "preserve_existing_only",
+      "create_additional_batches": false
+    },
+    "weekly_introduction": {
+      "status": "disabled",
+      "automation_id": "6aacecbeaf94819198603f4458f8bb29"
+    },
+    "budgets_last_verified": {
+      "heygen_credits": 553,
+      "heygen_reset_date": "2026-10-17",
+      "runway_purchased_credits": 107,
+      "runway_plan_credits": 0
+    },
+    "safety": "No purchases; check live balance before dog generation; no new paid story generation until user finalizes format."
   }
 }
