@@ -4,16 +4,16 @@
   "start_date": "2026-09-18",
   "current_cycle_date": "2026-09-18",
   "current_theme": "zodiac",
-  "completed_count": 9,
+  "completed_count": 10,
   "target_count": 12,
   "prepared_count": 12,
-  "scheduled_count": 3,
+  "scheduled_count": 0,
   "generating_count": 0,
   "last_completed_theme": null,
   "next_theme_after_completion": "soul",
   "status": "publishing",
   "partially_published_count": 0,
-  "last_reconciled_at": "2026-09-18T20:20:00+03:00",
+  "last_reconciled_at": "2026-09-18T20:48:00+03:00",
   "next_cycle_date": "2026-09-19",
   "next_theme": "soul",
   "next_target_count": 10,
@@ -21,7 +21,7 @@
   "next_generating_count": 0,
   "last_future_prepared_at": "2026-09-18T17:54:00+03:00",
   "next_needs_review_count": 0,
-  "next_scheduled_count": 10,
+  "next_scheduled_count": 1,
   "network_cooldowns": {
     "tiktok": {
       "status": "active",
@@ -32,5 +32,12 @@
   "next_tiktok_prepared_count": 4,
   "next_tiktok_scheduled_count": 4,
   "next_tiktok_remaining_count": 6,
-  "next_tiktok_schedule_time": "2026-09-19T23:00:00+03:00"
+  "next_tiktok_schedule_time": "2026-09-19T23:00:00+03:00",
+  "current_strategy": "dog_barista_only_until_daily_story_format_finalized",
+  "current_status": "transitioning_to_daily_story",
+  "cancelled_count": 2,
+  "next_cancelled_non_dog_video_count": 9,
+  "next_tiktok_photo_scheduled_count": 3,
+  "story_video_status": "paused_awaiting_format_and_safe_duration",
+  "weekly_introduction_enabled": false
 }
