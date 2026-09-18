@@ -337,7 +337,7 @@
         "tiktok",
         "youtube"
       ],
-      "status": "generating",
+      "status": "needs_review",
       "platform_status": {
         "facebook": {
           "status": "not_scheduled",
@@ -369,8 +369,20 @@
         "resolution": "720p",
         "fit": "cover",
         "duplicate_risk": "low",
-        "weekly_learning_applied": "insufficient_data_keep_strategy"
-      }
+        "weekly_learning_applied": "insufficient_data_keep_strategy",
+        "duration_range": "failed",
+        "required_seconds": "10-13",
+        "actual_seconds": 9.92653
+      },
+      "duration_seconds": 9.92653,
+      "video_page_url": "https://app.heygen.com/videos/657eac8df6487ee0292e66b34539ab72",
+      "attempts": [
+        {
+          "heygen_video_id": "657eac8df6487ee0292e66b34539ab72",
+          "duration_seconds": 9.92653,
+          "status": "rejected_duration"
+        }
+      ]
     },
     {
       "job_id": "2026-09-19-soul-02-no-closure",
@@ -404,7 +416,7 @@
         "tiktok",
         "youtube"
       ],
-      "status": "generating",
+      "status": "needs_review",
       "platform_status": {
         "facebook": {
           "status": "not_scheduled",
@@ -436,8 +448,20 @@
         "resolution": "720p",
         "fit": "cover",
         "duplicate_risk": "low",
-        "weekly_learning_applied": "insufficient_data_keep_strategy"
-      }
+        "weekly_learning_applied": "insufficient_data_keep_strategy",
+        "duration_range": "failed",
+        "required_seconds": "10-13",
+        "actual_seconds": 8.30694
+      },
+      "duration_seconds": 8.30694,
+      "video_page_url": "https://app.heygen.com/videos/94dfa6c47fbf3ad64fbec78d685e8172",
+      "attempts": [
+        {
+          "heygen_video_id": "94dfa6c47fbf3ad64fbec78d685e8172",
+          "duration_seconds": 8.30694,
+          "status": "rejected_duration"
+        }
+      ]
     },
     {
       "job_id": "2026-09-19-soul-03-unsent-message",
