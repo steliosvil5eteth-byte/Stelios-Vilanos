@@ -1405,7 +1405,7 @@
       "zodiac_sign": null,
       "angle": "λαχτάρα μέσα στις καθημερινές συνήθειες",
       "hook": "Η απουσία κρύβεται στα πιο μικρά πράγματα.",
-      "script": "Η απουσία φαίνεται περισσότερο στις μικρές συνήθειες. Στον καφέ που έφτιαχνες για δύο, στο αστείο που δεν έχεις πια σε ποιον να στείλεις.",
+      "script": "Η απουσία φαίνεται περισσότερο στις μικρές καθημερινές συνήθειες. Στον καφέ που έφτιαχνες για δύο, στο αστείο που δεν έχεις πια σε ποιον να στείλεις, στο άδειο κάθισμα δίπλα σου.",
       "title": "Η απουσία μένει στις συνήθειες",
       "caption": "Δεν λείπει μόνο ο άνθρωπος· λείπουν κι όλα τα μικρά που κάνατε μαζί. Ποια συνήθεια σου λείπει περισσότερο;",
       "hashtags": [
@@ -1416,8 +1416,8 @@
         "#fyp"
       ],
       "generation_provider": "heygen",
-      "generation_task_id": "dcf331e7fbc46c058863a4f795a258c0",
-      "heygen_video_id": "dcf331e7fbc46c058863a4f795a258c0",
+      "generation_task_id": "f9eb158ad0aca4f449546c5a5e71e8a6",
+      "heygen_video_id": "f9eb158ad0aca4f449546c5a5e71e8a6",
       "media_url": null,
       "metricool_post_id": null,
       "metricool_uuid": null,
@@ -1465,14 +1465,19 @@
         "fit": "cover",
         "duplicate_risk": "low",
         "weekly_learning_applied": "insufficient_data_keep_strategy",
-        "duration_range": "pending",
+        "duration_range": "pending_corrected_render",
         "required_seconds": "10-13",
         "actual_seconds": null
       },
       "attempts": [
         {
           "heygen_video_id": "dcf331e7fbc46c058863a4f795a258c0",
-          "status": "generating"
+          "status": "rejected_duration",
+          "duration_seconds": 9.168
+        },
+        {
+          "heygen_video_id": "f9eb158ad0aca4f449546c5a5e71e8a6",
+          "status": "generating_corrected_version"
         }
       ]
     },
