@@ -1418,9 +1418,9 @@
       "generation_provider": "heygen",
       "generation_task_id": "f9eb158ad0aca4f449546c5a5e71e8a6",
       "heygen_video_id": "f9eb158ad0aca4f449546c5a5e71e8a6",
-      "media_url": null,
-      "metricool_post_id": null,
-      "metricool_uuid": null,
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-15655079379962673020.mp4",
+      "metricool_post_id": "378181175",
+      "metricool_uuid": "2510727418625477636",
       "scheduled_time": "2026-09-19T19:42:00+03:00",
       "platforms": [
         "facebook",
@@ -1428,19 +1428,21 @@
         "tiktok",
         "youtube"
       ],
-      "status": "generating",
+      "status": "scheduled",
       "fingerprint": "2026-09-19|soul|λαχτάρα|απουσία-στις-μικρές-συνήθειες",
       "notion_page_id": "3dff2345-b318-8104-ac1c-fc9bc8becae9",
       "platform_status": {
         "facebook": {
-          "status": "not_scheduled",
+          "status": "PENDING",
           "public_url": null,
-          "error": null
+          "error": null,
+          "source_post_id": "378181175"
         },
         "instagram": {
-          "status": "not_scheduled",
+          "status": "PENDING",
           "public_url": null,
-          "error": null
+          "error": null,
+          "source_post_id": "378181175"
         },
         "tiktok": {
           "status": "blocked_cooldown",
@@ -1450,9 +1452,10 @@
           "retry_status": "deferred_not_scheduled"
         },
         "youtube": {
-          "status": "not_scheduled",
+          "status": "PENDING",
           "public_url": null,
-          "error": null
+          "error": null,
+          "source_post_id": "378181175"
         }
       },
       "quality_check": {
@@ -1465,9 +1468,9 @@
         "fit": "cover",
         "duplicate_risk": "low",
         "weekly_learning_applied": "insufficient_data_keep_strategy",
-        "duration_range": "pending_corrected_render",
+        "duration_range": "passed",
         "required_seconds": "10-13",
-        "actual_seconds": null
+        "actual_seconds": 12.216
       },
       "attempts": [
         {
@@ -1477,9 +1480,15 @@
         },
         {
           "heygen_video_id": "f9eb158ad0aca4f449546c5a5e71e8a6",
-          "status": "generating_corrected_version"
+          "status": "accepted_scheduled",
+          "duration_seconds": 12.216
         }
-      ]
+      ],
+      "duration_seconds": 12.216,
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "last_reconciled_at": "2026-09-18T17:54:00+03:00"
     },
     {
       "job_id": "2026-09-19-soul-10-second-chance-change",
@@ -1501,9 +1510,9 @@
       "generation_provider": "heygen",
       "generation_task_id": "f92dd4cf12370a18800d46e75041ef27",
       "heygen_video_id": "f92dd4cf12370a18800d46e75041ef27",
-      "media_url": null,
-      "metricool_post_id": null,
-      "metricool_uuid": null,
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-17989163213358546731.mp4",
+      "metricool_post_id": "378181207",
+      "metricool_uuid": "-8992648413116346507",
       "scheduled_time": "2026-09-19T22:06:00+03:00",
       "platforms": [
         "facebook",
@@ -1511,19 +1520,21 @@
         "tiktok",
         "youtube"
       ],
-      "status": "generating",
+      "status": "scheduled",
       "fingerprint": "2026-09-19|soul|δεύτερη-ευκαιρία|αλλαγή-ώστε-να-μην-χτιστεί-ίδια-πληγή",
       "notion_page_id": "3dff2345-b318-817f-b2d4-db61dca9e119",
       "platform_status": {
         "facebook": {
-          "status": "not_scheduled",
+          "status": "PENDING",
           "public_url": null,
-          "error": null
+          "error": null,
+          "source_post_id": "378181207"
         },
         "instagram": {
-          "status": "not_scheduled",
+          "status": "PENDING",
           "public_url": null,
-          "error": null
+          "error": null,
+          "source_post_id": "378181207"
         },
         "tiktok": {
           "status": "blocked_cooldown",
@@ -1533,9 +1544,10 @@
           "retry_status": "deferred_not_scheduled"
         },
         "youtube": {
-          "status": "not_scheduled",
+          "status": "PENDING",
           "public_url": null,
-          "error": null
+          "error": null,
+          "source_post_id": "378181207"
         }
       },
       "quality_check": {
@@ -1548,9 +1560,9 @@
         "fit": "cover",
         "duplicate_risk": "low",
         "weekly_learning_applied": "insufficient_data_keep_strategy",
-        "duration_range": "pending_corrected_render",
+        "duration_range": "passed",
         "required_seconds": "10-13",
-        "actual_seconds": null
+        "actual_seconds": 10.968
       },
       "attempts": [
         {
@@ -1560,9 +1572,15 @@
         },
         {
           "heygen_video_id": "f92dd4cf12370a18800d46e75041ef27",
-          "status": "generating_corrected_version"
+          "status": "accepted_scheduled",
+          "duration_seconds": 10.968
         }
-      ]
+      ],
+      "duration_seconds": 10.968,
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "last_reconciled_at": "2026-09-18T17:54:00+03:00"
     }
   ]
 }
