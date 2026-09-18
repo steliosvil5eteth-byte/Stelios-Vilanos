@@ -166,7 +166,7 @@
         "tiktok",
         "youtube"
       ],
-      "status": "scheduled",
+      "status": "partially_published",
       "fingerprint": "2026-09-18|zodiac|Σκορπιός|τι-δεν-συγχωρεί|προδομένο-μυστικό-χάνει-ασφάλεια",
       "notion_page_id": "3def2345-b318-8137-ad7c-d75e2dd24e41",
       "blocked_networks": [
@@ -174,32 +174,37 @@
       ],
       "platform_status": {
         "facebook": {
-          "status": "PENDING",
-          "public_url": null,
+          "status": "PUBLISHED",
+          "public_url": "https://facebook.com/reel/1585313213089777",
           "error": null,
           "source_post_id": "378119779"
         },
         "instagram": {
-          "status": "PENDING",
-          "public_url": null,
-          "error": null,
-          "source_post_id": "378119779"
-        },
-        "youtube": {
-          "status": "PENDING",
-          "public_url": null,
+          "status": "PUBLISHED",
+          "public_url": "https://www.instagram.com/reel/DdbrpRpD4Up/",
           "error": null,
           "source_post_id": "378119779"
         },
         "tiktok": {
           "status": "blocked_cooldown",
           "public_url": null,
-          "error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
+          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
           "cooldown_until": "2026-09-19T16:07:00+03:00",
           "retry_status": "deferred_not_scheduled"
+        },
+        "youtube": {
+          "status": "PUBLISHED",
+          "public_url": "https://www.youtube.com/shorts/ksy65mXqt2I",
+          "error": null,
+          "source_post_id": "378119779"
         }
       },
-      "last_reconciled_at": "2026-09-18T16:07:00+03:00"
+      "last_reconciled_at": "2026-09-18T17:49:00+03:00",
+      "public_urls": {
+        "facebook": "https://facebook.com/reel/1585313213089777",
+        "instagram": "https://www.instagram.com/reel/DdbrpRpD4Up/",
+        "youtube": "https://www.youtube.com/shorts/ksy65mXqt2I"
+      }
     },
     {
       "job_id": "2026-09-18-zodiac-09-sagittarius",
@@ -1108,6 +1113,239 @@
         "tiktok"
       ],
       "last_reconciled_at": "2026-09-18T16:43:00+03:00"
+    },
+    {
+      "job_id": "2026-09-19-soul-08-dog-barista-foam",
+      "date": "2026-09-19",
+      "theme": "soul",
+      "zodiac_sign": null,
+      "angle": "σκύλος μπαρίστα — αφρός στη μουσούδα",
+      "hook": "Ο μπαρίστα κάνει ποιοτικό έλεγχο.",
+      "script": "One continuous photorealistic shot, locked camera. The golden retriever gently lowers its muzzle to touch the white milk foam on the cup in the first two seconds. A distinct thick white dollop sticks firmly to the top of its muzzle just above the black nose. The dog lifts its head and looks into the camera with its mouth closed. For the final two seconds it holds this charming pose with subtle blinking and breathing. The SAME white foam dollop remains clearly visible and firmly attached in the SAME place on the muzzle all the way through the very last frame, maintaining its size and shape. The foam is persistent and stable. Tongue stays inside the closed mouth, head stays steady. Natural canine anatomy and restrained realistic movements. Preserve the golden retriever, teal apron, stationary white cup, cafe and lighting of the reference image. Continuous shot.",
+      "title": "Ο μπαρίστα δοκίμασε τον αφρό",
+      "caption": "Όταν ο μπαρίστα κάνει ποιοτικό έλεγχο… και ο αφρός μένει πάνω στη μύτη του. ☕🐶",
+      "hashtags": [
+        "#DogBarista",
+        "#GoldenRetriever",
+        "#ΑστείαΒίντεο",
+        "#Καφές",
+        "#fyp"
+      ],
+      "generation_provider": "runway",
+      "generation_task_id": "fe3d8602-b125-4a73-b048-ceb42f2caafc",
+      "runway_task_id": "fe3d8602-b125-4a73-b048-ceb42f2caafc",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-13815689072781945592.mp4",
+      "metricool_post_id": "378178383",
+      "metricool_uuid": "7486346641732224351",
+      "scheduled_time": "2026-09-19T17:18:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "status": "scheduled",
+      "fingerprint": "2026-09-19|soul|dog-barista|foam-muzzle-persistent-funny-ending",
+      "notion_page_id": null,
+      "duration_seconds": 5.041667,
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "platform_status": {
+        "facebook": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378178383"
+        },
+        "instagram": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378178383"
+        },
+        "tiktok": {
+          "status": "blocked_cooldown",
+          "public_url": null,
+          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
+        },
+        "youtube": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378178383"
+        }
+      },
+      "quality_check": {
+        "silent": true,
+        "aspect_ratio": "9:16",
+        "resolution": "720x1280",
+        "duration_seconds": 5.041667,
+        "approved_existing_clip": true,
+        "natural_anatomy": true,
+        "props_consistent": true,
+        "foam_persists_to_last_frame": true,
+        "funny_ending": true,
+        "duplicate_risk": "low"
+      }
+    },
+    {
+      "job_id": "2026-09-19-soul-09-longing-in-habits",
+      "date": "2026-09-19",
+      "theme": "soul",
+      "zodiac_sign": null,
+      "angle": "λαχτάρα μέσα στις καθημερινές συνήθειες",
+      "hook": "Η απουσία κρύβεται στα πιο μικρά πράγματα.",
+      "script": "Η απουσία φαίνεται περισσότερο στις μικρές συνήθειες. Στον καφέ που έφτιαχνες για δύο, στο αστείο που δεν έχεις πια σε ποιον να στείλεις.",
+      "title": "Η απουσία μένει στις συνήθειες",
+      "caption": "Δεν λείπει μόνο ο άνθρωπος· λείπουν κι όλα τα μικρά που κάνατε μαζί. Ποια συνήθεια σου λείπει περισσότερο;",
+      "hashtags": [
+        "#μουλείπεις",
+        "#αναμνήσεις",
+        "#σχέσεις",
+        "#ψυχή",
+        "#fyp"
+      ],
+      "generation_provider": "heygen",
+      "generation_task_id": "dcf331e7fbc46c058863a4f795a258c0",
+      "heygen_video_id": "dcf331e7fbc46c058863a4f795a258c0",
+      "media_url": null,
+      "metricool_post_id": null,
+      "metricool_uuid": null,
+      "scheduled_time": "2026-09-19T19:42:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "status": "generating",
+      "fingerprint": "2026-09-19|soul|λαχτάρα|απουσία-στις-μικρές-συνήθειες",
+      "notion_page_id": null,
+      "platform_status": {
+        "facebook": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        },
+        "instagram": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        },
+        "tiktok": {
+          "status": "blocked_cooldown",
+          "public_url": null,
+          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
+        },
+        "youtube": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        }
+      },
+      "quality_check": {
+        "script_coherent": true,
+        "spelling_checked": true,
+        "title_caption_hashtags": true,
+        "hashtags_count": 5,
+        "aspect_ratio": "9:16",
+        "resolution": "720p",
+        "fit": "cover",
+        "duplicate_risk": "low",
+        "weekly_learning_applied": "insufficient_data_keep_strategy",
+        "duration_range": "pending",
+        "required_seconds": "10-13",
+        "actual_seconds": null
+      },
+      "attempts": [
+        {
+          "heygen_video_id": "dcf331e7fbc46c058863a4f795a258c0",
+          "status": "generating"
+        }
+      ]
+    },
+    {
+      "job_id": "2026-09-19-soul-10-second-chance-change",
+      "date": "2026-09-19",
+      "theme": "soul",
+      "zodiac_sign": null,
+      "angle": "δεύτερη ευκαιρία με πραγματική αλλαγή",
+      "hook": "Δεύτερη ευκαιρία δεν σημαίνει επιστροφή στα ίδια.",
+      "script": "Δεύτερη ευκαιρία δεν σημαίνει να ξεχάσεις όσα έγιναν. Σημαίνει πως και οι δύο αλλάξατε αρκετά, ώστε να μη χτίσετε ξανά την ίδια πληγή.",
+      "title": "Η δεύτερη ευκαιρία θέλει αλλαγή",
+      "caption": "Μια δεύτερη ευκαιρία αξίζει μόνο όταν δεν επαναλαμβάνει την ίδια πληγή. Εσύ θα την έδινες;",
+      "hashtags": [
+        "#δεύτερηευκαιρία",
+        "#σχέσεις",
+        "#αλλαγή",
+        "#αγάπη",
+        "#fyp"
+      ],
+      "generation_provider": "heygen",
+      "generation_task_id": "f22378ab4db496bdaa417ca6d8daf4d9",
+      "heygen_video_id": "f22378ab4db496bdaa417ca6d8daf4d9",
+      "media_url": null,
+      "metricool_post_id": null,
+      "metricool_uuid": null,
+      "scheduled_time": "2026-09-19T22:06:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "status": "generating",
+      "fingerprint": "2026-09-19|soul|δεύτερη-ευκαιρία|αλλαγή-ώστε-να-μην-χτιστεί-ίδια-πληγή",
+      "notion_page_id": null,
+      "platform_status": {
+        "facebook": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        },
+        "instagram": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        },
+        "tiktok": {
+          "status": "blocked_cooldown",
+          "public_url": null,
+          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
+        },
+        "youtube": {
+          "status": "not_scheduled",
+          "public_url": null,
+          "error": null
+        }
+      },
+      "quality_check": {
+        "script_coherent": true,
+        "spelling_checked": true,
+        "title_caption_hashtags": true,
+        "hashtags_count": 5,
+        "aspect_ratio": "9:16",
+        "resolution": "720p",
+        "fit": "cover",
+        "duplicate_risk": "low",
+        "weekly_learning_applied": "insufficient_data_keep_strategy",
+        "duration_range": "pending",
+        "required_seconds": "10-13",
+        "actual_seconds": null
+      },
+      "attempts": [
+        {
+          "heygen_video_id": "f22378ab4db496bdaa417ca6d8daf4d9",
+          "status": "generating"
+        }
+      ]
     }
   ]
 }
