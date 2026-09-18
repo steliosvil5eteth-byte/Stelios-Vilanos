@@ -1353,7 +1353,7 @@
       ],
       "status": "scheduled",
       "fingerprint": "2026-09-19|soul|dog-barista|foam-muzzle-persistent-funny-ending",
-      "notion_page_id": null,
+      "notion_page_id": "3dff2345-b318-810c-abcf-cd3fd8f8031a",
       "duration_seconds": 5.041667,
       "blocked_networks": [
         "tiktok"
@@ -1430,7 +1430,7 @@
       ],
       "status": "generating",
       "fingerprint": "2026-09-19|soul|λαχτάρα|απουσία-στις-μικρές-συνήθειες",
-      "notion_page_id": null,
+      "notion_page_id": "3dff2345-b318-8104-ac1c-fc9bc8becae9",
       "platform_status": {
         "facebook": {
           "status": "not_scheduled",
@@ -1508,7 +1508,7 @@
       ],
       "status": "generating",
       "fingerprint": "2026-09-19|soul|δεύτερη-ευκαιρία|αλλαγή-ώστε-να-μην-χτιστεί-ίδια-πληγή",
-      "notion_page_id": null,
+      "notion_page_id": "3dff2345-b318-817f-b2d4-db61dca9e119",
       "platform_status": {
         "facebook": {
           "status": "not_scheduled",
