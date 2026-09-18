@@ -1281,7 +1281,7 @@
       "zodiac_sign": null,
       "angle": "δεύτερη ευκαιρία με πραγματική αλλαγή",
       "hook": "Δεύτερη ευκαιρία δεν σημαίνει επιστροφή στα ίδια.",
-      "script": "Δεύτερη ευκαιρία δεν σημαίνει να ξεχάσεις όσα έγιναν. Σημαίνει πως και οι δύο αλλάξατε αρκετά, ώστε να μη χτίσετε ξανά την ίδια πληγή.",
+      "script": "Δεύτερη ευκαιρία δεν σημαίνει να ξεχάσεις όσα έγιναν. Σημαίνει πως και οι δύο αλλάξατε πραγματικά και στην πράξη, ώστε να μη χτίσετε ξανά την ίδια πληγή.",
       "title": "Η δεύτερη ευκαιρία θέλει αλλαγή",
       "caption": "Μια δεύτερη ευκαιρία αξίζει μόνο όταν δεν επαναλαμβάνει την ίδια πληγή. Εσύ θα την έδινες;",
       "hashtags": [
@@ -1292,8 +1292,8 @@
         "#fyp"
       ],
       "generation_provider": "heygen",
-      "generation_task_id": "f22378ab4db496bdaa417ca6d8daf4d9",
-      "heygen_video_id": "f22378ab4db496bdaa417ca6d8daf4d9",
+      "generation_task_id": "f92dd4cf12370a18800d46e75041ef27",
+      "heygen_video_id": "f92dd4cf12370a18800d46e75041ef27",
       "media_url": null,
       "metricool_post_id": null,
       "metricool_uuid": null,
@@ -1341,14 +1341,19 @@
         "fit": "cover",
         "duplicate_risk": "low",
         "weekly_learning_applied": "insufficient_data_keep_strategy",
-        "duration_range": "pending",
+        "duration_range": "pending_corrected_render",
         "required_seconds": "10-13",
         "actual_seconds": null
       },
       "attempts": [
         {
           "heygen_video_id": "f22378ab4db496bdaa417ca6d8daf4d9",
-          "status": "generating"
+          "status": "rejected_duration",
+          "duration_seconds": 9.768
+        },
+        {
+          "heygen_video_id": "f92dd4cf12370a18800d46e75041ef27",
+          "status": "generating_corrected_version"
         }
       ]
     }
