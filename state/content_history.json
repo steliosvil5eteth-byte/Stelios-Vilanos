@@ -134,8 +134,14 @@
         "tiktok",
         "youtube"
       ],
-      "status": "scheduled",
-      "fingerprint": "2026-09-18|zodiac|Καρκίνος|τι-δεν-συγχωρεί|ευαισθησία-ως-όπλο"
+      "status": "published",
+      "fingerprint": "2026-09-18|zodiac|Καρκίνος|τι-δεν-συγχωρεί|ευαισθησία-ως-όπλο",
+      "public_urls": {
+        "facebook": "https://facebook.com/reel/1992488485009950",
+        "instagram": "https://www.instagram.com/reel/DdbJTP2k_vP/",
+        "tiktok": "https://www.tiktok.com/@steliosvilanos/video/7686809539714256150",
+        "youtube": "https://www.youtube.com/shorts/44Qdi3bqU-A"
+      }
     },
     {
       "job_id": "2026-09-18-zodiac-05-leo",
