@@ -780,7 +780,7 @@
       "generation_provider": "heygen",
       "generation_task_id": "a5f35f62bb494c506cc3f896e9f79ba4",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-10751794381936927292.mp4",
-      "metricool_post_id": "378278125",
+      "metricool_post_id": "378280323",
       "metricool_uuid": "7119671207944077321",
       "platforms": [],
       "status": "cancelled_non_dog_video",
@@ -789,14 +789,14 @@
           "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378278125",
+          "source_post_id": "378280323",
           "reason": "Non-dog short videos stopped by user."
         },
         "instagram": {
           "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378278125",
+          "source_post_id": "378280323",
           "reason": "Non-dog short videos stopped by user."
         },
         "tiktok": {
@@ -810,7 +810,7 @@
           "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378278125",
+          "source_post_id": "378280323",
           "reason": "Non-dog short videos stopped by user."
         }
       },
@@ -850,15 +850,16 @@
       "blocked_networks": [
         "tiktok"
       ],
-      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "last_reconciled_at": "2026-09-18T20:55:00+03:00",
       "video_delivery": {
-        "post_id": "378278125",
+        "post_id": "378280323",
         "uuid": "7119671207944077321",
         "status": "CANCELLED_BY_USER",
         "draft": true,
         "auto_publish": false,
-        "cancelled_at": "2026-09-18T20:48:00+03:00",
-        "reason": "Replaced by one daily longer story video; production format pending."
+        "cancelled_at": "2026-09-18T20:52:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending.",
+        "reactivation_incident": "Automatically reactivated by stale automation, then cancelled again after disabling the conflicting automation."
       },
       "cancelled_at": "2026-09-18T20:48:00+03:00",
       "terminal": true
@@ -884,7 +885,7 @@
       "generation_provider": "heygen",
       "generation_task_id": "48fc5afb8882598655e0ed17957a1cc9",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-7999143470037139062.mp4",
-      "metricool_post_id": "378278134",
+      "metricool_post_id": "378280332",
       "metricool_uuid": "4494981964765348564",
       "scheduled_time": "2026-09-19T10:06:00+03:00",
       "platforms": [],
@@ -896,14 +897,14 @@
           "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378278134",
+          "source_post_id": "378280332",
           "reason": "Non-dog short videos stopped by user."
         },
         "instagram": {
           "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378278134",
+          "source_post_id": "378280332",
           "reason": "Non-dog short videos stopped by user."
         },
         "tiktok": {
@@ -917,7 +918,7 @@
           "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378278134",
+          "source_post_id": "378280332",
           "reason": "Non-dog short videos stopped by user."
         }
       },
@@ -946,15 +947,16 @@
       "blocked_networks": [
         "tiktok"
       ],
-      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "last_reconciled_at": "2026-09-18T20:55:00+03:00",
       "video_delivery": {
-        "post_id": "378278134",
+        "post_id": "378280332",
         "uuid": "4494981964765348564",
         "status": "CANCELLED_BY_USER",
         "draft": true,
         "auto_publish": false,
-        "cancelled_at": "2026-09-18T20:48:00+03:00",
-        "reason": "Replaced by one daily longer story video; production format pending."
+        "cancelled_at": "2026-09-18T20:52:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending.",
+        "reactivation_incident": "Automatically reactivated by stale automation, then cancelled again after disabling the conflicting automation."
       },
       "cancelled_at": "2026-09-18T20:48:00+03:00",
       "terminal": true
@@ -980,7 +982,7 @@
       "generation_provider": "heygen",
       "generation_task_id": "8da928c396074579917249e9648d04aa",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-1115543141634348693.mp4",
-      "metricool_post_id": "378278143",
+      "metricool_post_id": "378280342",
       "metricool_uuid": "1827937260421661697",
       "scheduled_time": "2026-09-19T12:30:00+03:00",
       "platforms": [],
@@ -992,14 +994,14 @@
           "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378278143",
+          "source_post_id": "378280342",
           "reason": "Non-dog short videos stopped by user."
         },
         "instagram": {
           "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378278143",
+          "source_post_id": "378280342",
           "reason": "Non-dog short videos stopped by user."
         },
         "tiktok": {
@@ -1013,7 +1015,7 @@
           "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378278143",
+          "source_post_id": "378280342",
           "reason": "Non-dog short videos stopped by user."
         }
       },
@@ -1042,15 +1044,16 @@
       "blocked_networks": [
         "tiktok"
       ],
-      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "last_reconciled_at": "2026-09-18T20:55:00+03:00",
       "video_delivery": {
-        "post_id": "378278143",
+        "post_id": "378280342",
         "uuid": "1827937260421661697",
         "status": "CANCELLED_BY_USER",
         "draft": true,
         "auto_publish": false,
-        "cancelled_at": "2026-09-18T20:48:00+03:00",
-        "reason": "Replaced by one daily longer story video; production format pending."
+        "cancelled_at": "2026-09-18T20:52:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending.",
+        "reactivation_incident": "Automatically reactivated by stale automation, then cancelled again after disabling the conflicting automation."
       },
       "cancelled_at": "2026-09-18T20:48:00+03:00",
       "terminal": true
@@ -1076,7 +1079,7 @@
       "generation_provider": "heygen",
       "generation_task_id": "fbc250a372b931d307589cd6baeb356b",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-11010549898351668935.mp4",
-      "metricool_post_id": "378278156",
+      "metricool_post_id": "378280370",
       "metricool_uuid": "-6171012434982779529",
       "scheduled_time": "2026-09-19T14:54:00+03:00",
       "platforms": [],
@@ -1088,14 +1091,14 @@
           "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378278156",
+          "source_post_id": "378280370",
           "reason": "Non-dog short videos stopped by user."
         },
         "instagram": {
           "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378278156",
+          "source_post_id": "378280370",
           "reason": "Non-dog short videos stopped by user."
         },
         "tiktok": {
@@ -1109,7 +1112,7 @@
           "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378278156",
+          "source_post_id": "378280370",
           "reason": "Non-dog short videos stopped by user."
         }
       },
@@ -1138,15 +1141,16 @@
       "blocked_networks": [
         "tiktok"
       ],
-      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "last_reconciled_at": "2026-09-18T20:55:00+03:00",
       "video_delivery": {
-        "post_id": "378278156",
+        "post_id": "378280370",
         "uuid": "-6171012434982779529",
         "status": "CANCELLED_BY_USER",
         "draft": true,
         "auto_publish": false,
-        "cancelled_at": "2026-09-18T20:48:00+03:00",
-        "reason": "Replaced by one daily longer story video; production format pending."
+        "cancelled_at": "2026-09-18T20:52:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending.",
+        "reactivation_incident": "Automatically reactivated by stale automation, then cancelled again after disabling the conflicting automation."
       },
       "cancelled_at": "2026-09-18T20:48:00+03:00",
       "terminal": true
@@ -1172,7 +1176,7 @@
       "generation_task_id": "f9eb158ad0aca4f449546c5a5e71e8a6",
       "heygen_video_id": "f9eb158ad0aca4f449546c5a5e71e8a6",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-15655079379962673020.mp4",
-      "metricool_post_id": "378278165",
+      "metricool_post_id": "378280355",
       "metricool_uuid": "2510727418625477636",
       "scheduled_time": "2026-09-19T19:42:00+03:00",
       "platforms": [],
@@ -1184,14 +1188,14 @@
           "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378278165",
+          "source_post_id": "378280355",
           "reason": "Non-dog short videos stopped by user."
         },
         "instagram": {
           "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378278165",
+          "source_post_id": "378280355",
           "reason": "Non-dog short videos stopped by user."
         },
         "tiktok": {
@@ -1205,7 +1209,7 @@
           "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378278165",
+          "source_post_id": "378280355",
           "reason": "Non-dog short videos stopped by user."
         }
       },
@@ -1239,15 +1243,16 @@
       "blocked_networks": [
         "tiktok"
       ],
-      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "last_reconciled_at": "2026-09-18T20:55:00+03:00",
       "video_delivery": {
-        "post_id": "378278165",
+        "post_id": "378280355",
         "uuid": "2510727418625477636",
         "status": "CANCELLED_BY_USER",
         "draft": true,
         "auto_publish": false,
-        "cancelled_at": "2026-09-18T20:48:00+03:00",
-        "reason": "Replaced by one daily longer story video; production format pending."
+        "cancelled_at": "2026-09-18T20:52:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending.",
+        "reactivation_incident": "Automatically reactivated by stale automation, then cancelled again after disabling the conflicting automation."
       },
       "cancelled_at": "2026-09-18T20:48:00+03:00",
       "terminal": true
@@ -1273,7 +1278,7 @@
       "generation_task_id": "f92dd4cf12370a18800d46e75041ef27",
       "heygen_video_id": "f92dd4cf12370a18800d46e75041ef27",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-17989163213358546731.mp4",
-      "metricool_post_id": "378278174",
+      "metricool_post_id": "378280361",
       "metricool_uuid": "-8992648413116346507",
       "scheduled_time": "2026-09-19T22:06:00+03:00",
       "platforms": [],
@@ -1285,14 +1290,14 @@
           "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378278174",
+          "source_post_id": "378280361",
           "reason": "Non-dog short videos stopped by user."
         },
         "instagram": {
           "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378278174",
+          "source_post_id": "378280361",
           "reason": "Non-dog short videos stopped by user."
         },
         "tiktok": {
@@ -1306,7 +1311,7 @@
           "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378278174",
+          "source_post_id": "378280361",
           "reason": "Non-dog short videos stopped by user."
         }
       },
@@ -1340,15 +1345,16 @@
       "blocked_networks": [
         "tiktok"
       ],
-      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "last_reconciled_at": "2026-09-18T20:55:00+03:00",
       "video_delivery": {
-        "post_id": "378278174",
+        "post_id": "378280361",
         "uuid": "-8992648413116346507",
         "status": "CANCELLED_BY_USER",
         "draft": true,
         "auto_publish": false,
-        "cancelled_at": "2026-09-18T20:48:00+03:00",
-        "reason": "Replaced by one daily longer story video; production format pending."
+        "cancelled_at": "2026-09-18T20:52:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending.",
+        "reactivation_incident": "Automatically reactivated by stale automation, then cancelled again after disabling the conflicting automation."
       },
       "cancelled_at": "2026-09-18T20:48:00+03:00",
       "terminal": true
