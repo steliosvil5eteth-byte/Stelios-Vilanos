@@ -171,8 +171,40 @@
         "tiktok",
         "youtube"
       ],
-      "status": "scheduled",
-      "fingerprint": "2026-09-18|zodiac|Λέων|τι-δεν-συγχωρεί|δημόσια-ταπείνωση-χάνει-σεβασμό"
+      "status": "partially_published",
+      "fingerprint": "2026-09-18|zodiac|Λέων|τι-δεν-συγχωρεί|δημόσια-ταπείνωση-χάνει-σεβασμό",
+      "notion_page_id": "3def2345-b318-811f-930f-f63fb2470b10",
+      "platform_status": {
+        "facebook": {
+          "status": "PUBLISHED",
+          "public_url": "https://facebook.com/reel/1406567734949536",
+          "error": null
+        },
+        "instagram": {
+          "status": "ERROR",
+          "public_url": null,
+          "error": "Read timed out"
+        },
+        "tiktok": {
+          "status": "PUBLISHED",
+          "public_url": "https://www.tiktok.com/@steliosvilanos/video/7686829596267777302",
+          "error": null
+        },
+        "youtube": {
+          "status": "PUBLISHED",
+          "public_url": "https://www.youtube.com/shorts/0KpYHYC0ZAM",
+          "error": null
+        }
+      },
+      "retry_posts": {
+        "instagram": {
+          "id": "378060016",
+          "uuid": "-4218314236002483607",
+          "scheduled_time": "2026-09-18T14:30:00+03:00",
+          "status": "PENDING",
+          "automatic_retry_count": 1
+        }
+      }
     },
     {
       "job_id": "2026-09-18-zodiac-06-virgo",
