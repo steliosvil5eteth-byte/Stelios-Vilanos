@@ -97,8 +97,14 @@
         "tiktok",
         "youtube"
       ],
-      "status": "scheduled",
-      "fingerprint": "2026-09-18|zodiac|Δίδυμος|τι-δεν-συγχωρεί|ψέμα-διαλύει-σύνδεση"
+      "status": "published",
+      "fingerprint": "2026-09-18|zodiac|Δίδυμος|τι-δεν-συγχωρεί|ψέμα-διαλύει-σύνδεση",
+      "public_urls": {
+        "facebook": "https://facebook.com/reel/1094119469888151",
+        "instagram": "https://www.instagram.com/reel/DdbA2l2jaZf/",
+        "tiktok": "https://www.tiktok.com/@steliosvilanos/video/7686790445577506070",
+        "youtube": "https://www.youtube.com/shorts/25Z5VWsn8RI"
+      }
     },
     {
       "job_id": "2026-09-18-zodiac-04-cancer",
