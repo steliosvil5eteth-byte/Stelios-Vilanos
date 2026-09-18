@@ -453,7 +453,7 @@
       "job_id": "2026-09-19-soul-01-love-unforgotten",
       "angle": "αγάπη που δεν ξεχάστηκε",
       "hook": "Δεν ξεχνάς εκείνον που αγάπησες αληθινά.",
-      "script": "Δεν ξεχνάς εκείνον που αγάπησες αληθινά. Μαθαίνεις απλώς να ζεις χωρίς την παρουσία του, μέχρι μια μικρή ανάμνηση να σου θυμίσει πως κάτι μέσα σου τον περιμένει ακόμα.",
+      "script": "Δεν ξεχνάς εκείνον που αγάπησες αληθινά. Μαθαίνεις απλώς να ζεις χωρίς την παρουσία του, μέχρι μια μικρή ανάμνηση να σου θυμίσει πως κάτι μέσα σου τον περιμένει ακόμα, κι ας μην το παραδέχεσαι σε κανέναν.",
       "title": "Η αγάπη που δεν ξεχάστηκε",
       "caption": "Μερικές αγάπες δεν φεύγουν· αλλάζουν θέση μέσα μας. Υπάρχει κάποιος που θυμάσαι ακόμα;",
       "hashtags": [
@@ -463,7 +463,7 @@
         "#ψυχή",
         "#fyp"
       ],
-      "heygen_video_id": "657eac8df6487ee0292e66b34539ab72",
+      "heygen_video_id": "1d6c79578c6b959e7dfdb3f0d66a179c",
       "scheduled_time": "2026-09-19T00:30:00+03:00",
       "fingerprint": "2026-09-19|soul|αγάπη-που-δεν-ξεχάστηκε|ανάμνηση-ξυπνά-κρυφή-αναμονή",
       "notion_page_id": "3dff2345-b318-8179-bfe7-d2416cec508f",
@@ -471,7 +471,7 @@
       "theme": "soul",
       "zodiac_sign": null,
       "generation_provider": "heygen",
-      "generation_task_id": "657eac8df6487ee0292e66b34539ab72",
+      "generation_task_id": "1d6c79578c6b959e7dfdb3f0d66a179c",
       "media_url": null,
       "metricool_post_id": null,
       "metricool_uuid": null,
@@ -481,7 +481,7 @@
         "tiktok",
         "youtube"
       ],
-      "status": "needs_review",
+      "status": "generating",
       "platform_status": {
         "facebook": {
           "status": "not_scheduled",
@@ -514,17 +514,20 @@
         "fit": "cover",
         "duplicate_risk": "low",
         "weekly_learning_applied": "insufficient_data_keep_strategy",
-        "duration_range": "failed",
+        "duration_range": "pending_corrected_render",
         "required_seconds": "10-13",
-        "actual_seconds": 9.92653
+        "actual_seconds": null
       },
-      "duration_seconds": 9.92653,
       "video_page_url": "https://app.heygen.com/videos/657eac8df6487ee0292e66b34539ab72",
       "attempts": [
         {
           "heygen_video_id": "657eac8df6487ee0292e66b34539ab72",
           "duration_seconds": 9.92653,
           "status": "rejected_duration"
+        },
+        {
+          "heygen_video_id": "1d6c79578c6b959e7dfdb3f0d66a179c",
+          "status": "generating_corrected_version"
         }
       ]
     },
@@ -532,7 +535,7 @@
       "job_id": "2026-09-19-soul-02-no-closure",
       "angle": "χωρισμός χωρίς κλείσιμο",
       "hook": "Ο πιο δύσκολος χωρισμός είναι αυτός που δεν εξηγήθηκε ποτέ.",
-      "script": "Ο πιο δύσκολος χωρισμός είναι αυτός που δεν εξηγήθηκε ποτέ. Έμεινες με ένα «γιατί» στο στόμα και μια ιστορία που τελείωσε χωρίς να σου πει το τέλος.",
+      "script": "Ο πιο δύσκολος χωρισμός είναι αυτός που δεν εξηγήθηκε ποτέ. Έμεινες με ένα «γιατί» στο στόμα και μια ιστορία που τελείωσε χωρίς να σου πει το τέλος. Και αναγκάστηκες να βρεις μόνος σου μια απάντηση για να συνεχίσεις.",
       "title": "Ο χωρισμός χωρίς απάντηση",
       "caption": "Το «γιατί» πονά περισσότερο όταν κανείς δεν σου έδωσε ένα τέλος. Έζησες ποτέ τέτοιο χωρισμό;",
       "hashtags": [
@@ -542,7 +545,7 @@
         "#αλήθειες",
         "#fyp"
       ],
-      "heygen_video_id": "94dfa6c47fbf3ad64fbec78d685e8172",
+      "heygen_video_id": "f897137ad454367ec34b9d825d8becbd",
       "scheduled_time": "2026-09-19T02:54:00+03:00",
       "fingerprint": "2026-09-19|soul|χωρισμός-χωρίς-κλείσιμο|γιατί-χωρίς-τελευταία-σελίδα",
       "notion_page_id": "3dff2345-b318-81e5-b41e-f7ec31d72d32",
@@ -550,7 +553,7 @@
       "theme": "soul",
       "zodiac_sign": null,
       "generation_provider": "heygen",
-      "generation_task_id": "94dfa6c47fbf3ad64fbec78d685e8172",
+      "generation_task_id": "f897137ad454367ec34b9d825d8becbd",
       "media_url": null,
       "metricool_post_id": null,
       "metricool_uuid": null,
@@ -560,7 +563,7 @@
         "tiktok",
         "youtube"
       ],
-      "status": "needs_review",
+      "status": "generating",
       "platform_status": {
         "facebook": {
           "status": "not_scheduled",
@@ -593,17 +596,20 @@
         "fit": "cover",
         "duplicate_risk": "low",
         "weekly_learning_applied": "insufficient_data_keep_strategy",
-        "duration_range": "failed",
+        "duration_range": "pending_corrected_render",
         "required_seconds": "10-13",
-        "actual_seconds": 8.30694
+        "actual_seconds": null
       },
-      "duration_seconds": 8.30694,
       "video_page_url": "https://app.heygen.com/videos/94dfa6c47fbf3ad64fbec78d685e8172",
       "attempts": [
         {
           "heygen_video_id": "94dfa6c47fbf3ad64fbec78d685e8172",
           "duration_seconds": 8.30694,
           "status": "rejected_duration"
+        },
+        {
+          "heygen_video_id": "f897137ad454367ec34b9d825d8becbd",
+          "status": "generating_corrected_version"
         }
       ]
     },
@@ -630,34 +636,34 @@
       "zodiac_sign": null,
       "generation_provider": "heygen",
       "generation_task_id": "774340d865bccae7c7e01cda2b47eb4c",
-      "media_url": null,
-      "metricool_post_id": "378066974",
-      "metricool_uuid": null,
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-15987112952921633159.mp4",
+      "metricool_post_id": "378066753",
+      "metricool_uuid": "8732791487214272690",
       "platforms": [
         "facebook",
         "instagram",
         "tiktok",
         "youtube"
       ],
-      "status": "generating",
+      "status": "scheduled",
       "platform_status": {
         "facebook": {
-          "status": "not_scheduled",
+          "status": "PENDING",
           "public_url": null,
           "error": null
         },
         "instagram": {
-          "status": "not_scheduled",
+          "status": "PENDING",
           "public_url": null,
           "error": null
         },
         "tiktok": {
-          "status": "not_scheduled",
+          "status": "PENDING",
           "public_url": null,
           "error": null
         },
         "youtube": {
-          "status": "not_scheduled",
+          "status": "PENDING",
           "public_url": null,
           "error": null
         }
@@ -672,13 +678,21 @@
         "fit": "cover",
         "duplicate_risk": "low",
         "weekly_learning_applied": "insufficient_data_keep_strategy"
-      }
+      },
+      "duration_seconds": 11.938,
+      "attempts": [
+        {
+          "heygen_video_id": "774340d865bccae7c7e01cda2b47eb4c",
+          "duration_seconds": 11.938,
+          "status": "accepted_scheduled"
+        }
+      ]
     },
     {
       "job_id": "2026-09-19-soul-04-betrayal",
       "angle": "προδοσία",
       "hook": "Η προδοσία δεν πονά μόνο για αυτό που έγινε.",
-      "script": "Η προδοσία δεν πονά μόνο για αυτό που έγινε. Πονά γιατί εκείνος που ήξερε τις πληγές σου διάλεξε ακριβώς εκεί να σε χτυπήσει.",
+      "script": "Η προδοσία δεν πονά μόνο για αυτό που έγινε. Πονά γιατί εκείνος που ήξερε τις πληγές σου διάλεξε ακριβώς εκεί να σε χτυπήσει. Γι’ αυτό δεν χάνεται μόνο η εμπιστοσύνη· αλλάζει ο τρόπος που αγαπάς.",
       "title": "Η προδοσία ξέρει πού πονάς",
       "caption": "Η βαθύτερη πληγή έρχεται από αυτόν που ήξερε ακριβώς τι φοβόσουν. Συγχωρείται μια τέτοια προδοσία;",
       "hashtags": [
@@ -688,7 +702,7 @@
         "#πόνος",
         "#fyp"
       ],
-      "heygen_video_id": "fe908568e1634b75385571a141ea7c68",
+      "heygen_video_id": "2ccdf214e008eb11f53e80c1676dfb46",
       "scheduled_time": "2026-09-19T07:42:00+03:00",
       "fingerprint": "2026-09-19|soul|προδοσία|γνώριζε-πληγή-και-χτύπησε-εκεί",
       "notion_page_id": "3dff2345-b318-81ea-a533-efbd849e3671",
@@ -696,7 +710,7 @@
       "theme": "soul",
       "zodiac_sign": null,
       "generation_provider": "heygen",
-      "generation_task_id": "fe908568e1634b75385571a141ea7c68",
+      "generation_task_id": "2ccdf214e008eb11f53e80c1676dfb46",
       "media_url": null,
       "metricool_post_id": null,
       "metricool_uuid": null,
@@ -738,8 +752,17 @@
         "resolution": "720p",
         "fit": "cover",
         "duplicate_risk": "low",
-        "weekly_learning_applied": "insufficient_data_keep_strategy"
-      }
+        "weekly_learning_applied": "insufficient_data_keep_strategy",
+        "duration_range": "pending_corrected_render",
+        "required_seconds": "10-13",
+        "actual_seconds": null
+      },
+      "attempts": [
+        {
+          "heygen_video_id": "2ccdf214e008eb11f53e80c1676dfb46",
+          "status": "generating_corrected_version"
+        }
+      ]
     }
   ]
 }
