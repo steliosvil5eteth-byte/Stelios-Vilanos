@@ -10,6 +10,8 @@ ALLOWED_STATUS = {
     "pending",
     "processing",
     "heygen_processing",
+    "generating",
+    "needs_review",
     "scheduled",
     "published",
     "failed",
