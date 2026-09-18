@@ -523,6 +523,835 @@
         "youtube"
       ],
       "completed_at": "2026-09-18T20:20:00+03:00"
+    },
+    {
+      "job_id": "2026-09-18-zodiac-10-capricorn",
+      "date": "2026-09-18",
+      "theme": "zodiac",
+      "zodiac_sign": "Αιγόκερως",
+      "angle": "τι δεν συγχωρεί",
+      "hook": "Αιγόκερε, ζητάς συνέπεια, όχι λόγια.",
+      "script": "Αιγόκερε, ζητάς συνέπεια, όχι λόγια. Δεν συγχωρείς όποιον θεωρεί δεδομένη την προσπάθειά σου και μετά σπάει όσα υποσχέθηκε. Εκεί σταματάς να επενδύεις, γιατί χάνεται ο σεβασμός.",
+      "title": "Αιγόκερως — Τι δεν συγχωρεί",
+      "caption": "Αιγόκερως: όταν η προσπάθεια θεωρείται δεδομένη και οι υποσχέσεις σπάνε, αποσύρεται. Συμφωνείς;",
+      "hashtags": [
+        "#Αιγόκερως",
+        "#ζώδια",
+        "#συνέπεια",
+        "#σχέσεις",
+        "#fyp"
+      ],
+      "heygen_video_id": "1eaab5eb49711dc54f4f1fafad0f9842",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-3868796764452694948.mp4",
+      "metricool_post_id": "378119818",
+      "metricool_uuid": "-1647793404669047041",
+      "scheduled_time": "2026-09-18T20:15:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "youtube"
+      ],
+      "status": "published",
+      "fingerprint": "2026-09-18|zodiac|Αιγόκερως|τι-δεν-συγχωρεί|δεδομένη-προσπάθεια-σπασμένη-υπόσχεση",
+      "notion_page_id": "3def2345-b318-8100-920e-fbca48d9c52e",
+      "attempts": [
+        {
+          "heygen_video_id": "a87de631ca73db4047dc59a92ee077b8",
+          "duration_seconds": 16.5355,
+          "status": "rejected_duration"
+        },
+        {
+          "heygen_video_id": "9f18fdf7dd2de28b5f86eae0c155da5b",
+          "duration_seconds": 8.59429,
+          "status": "rejected_duration"
+        },
+        {
+          "heygen_video_id": "1eaab5eb49711dc54f4f1fafad0f9842",
+          "duration_seconds": 12.9045,
+          "status": "accepted_scheduled"
+        }
+      ],
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "platform_status": {
+        "facebook": {
+          "status": "PUBLISHED",
+          "public_url": "https://facebook.com/reel/1064011066365821",
+          "error": null,
+          "source_post_id": "378119818"
+        },
+        "instagram": {
+          "status": "PUBLISHED",
+          "public_url": "https://www.instagram.com/reel/Ddb807dHIY-/",
+          "error": null,
+          "source_post_id": "378119818"
+        },
+        "youtube": {
+          "status": "PUBLISHED",
+          "public_url": "https://www.youtube.com/shorts/R5o4aN_epzk",
+          "error": null,
+          "source_post_id": "378119818"
+        },
+        "tiktok": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "reason": "TikTok reset excludes content dated before 2026-09-19.",
+          "retry_status": "terminal_no_retry"
+        }
+      },
+      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "cancelled_networks": [
+        "tiktok"
+      ],
+      "completion_scope": [
+        "facebook",
+        "instagram",
+        "youtube"
+      ],
+      "completed_at": "2026-09-18T20:48:00+03:00"
+    },
+    {
+      "job_id": "2026-09-18-zodiac-11-aquarius",
+      "date": "2026-09-18",
+      "theme": "zodiac",
+      "zodiac_sign": "Υδροχόος",
+      "angle": "τι δεν συγχωρεί",
+      "hook": "Υδροχόε, χρειάζεσαι χώρο για να είσαι ο εαυτός σου.",
+      "script": "Υδροχόε, χρειάζεσαι χώρο για να είσαι ο εαυτός σου. Αυτό που δύσκολα συγχωρείς είναι να σε πιέσουν με ενοχές για να αλλάξεις επιλογές και αξίες. Εκεί κλείνεις συναισθηματικά και παίρνεις απόσταση.",
+      "title": "Υδροχόος — Τι δεν συγχωρεί",
+      "caption": "Υδροχόος: όταν κάποιος προσπαθεί να αλλάξει τις αξίες του με ενοχές, κλείνει την πόρτα. Εσύ;",
+      "hashtags": [
+        "#Υδροχόος",
+        "#ζώδια",
+        "#όρια",
+        "#σχέσεις",
+        "#fyp"
+      ],
+      "heygen_video_id": "ac68a43f49a3606ea35379fb0fb4235a",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-6462396933850625587.mp4",
+      "metricool_post_id": "378267969",
+      "metricool_uuid": "-6989681795587618835",
+      "scheduled_time": "2026-09-18T21:30:00+03:00",
+      "platforms": [],
+      "status": "cancelled_non_dog_video",
+      "fingerprint": "2026-09-18|zodiac|Υδροχόος|τι-δεν-συγχωρεί|ενοχές-για-αλλαγή-αξιών",
+      "notion_page_id": "3def2345-b318-817d-9272-f16d76bb83ee",
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "platform_status": {
+        "facebook": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378267969",
+          "reason": "Non-dog short videos stopped by user."
+        },
+        "instagram": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378267969",
+          "reason": "Non-dog short videos stopped by user."
+        },
+        "youtube": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378267969",
+          "reason": "Non-dog short videos stopped by user."
+        },
+        "tiktok": {
+          "status": "blocked_cooldown",
+          "public_url": null,
+          "error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
+        }
+      },
+      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "video_delivery": {
+        "post_id": "378267969",
+        "uuid": "-6989681795587618835",
+        "status": "CANCELLED_BY_USER",
+        "draft": true,
+        "auto_publish": false,
+        "cancelled_at": "2026-09-18T20:48:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending."
+      },
+      "cancelled_at": "2026-09-18T20:48:00+03:00",
+      "terminal": true
+    },
+    {
+      "job_id": "2026-09-18-zodiac-12-pisces",
+      "date": "2026-09-18",
+      "theme": "zodiac",
+      "zodiac_sign": "Ιχθύς",
+      "angle": "τι δεν συγχωρεί",
+      "hook": "Ιχθύ, μπορείς να δώσεις πολλές ευκαιρίες όταν αγαπάς.",
+      "script": "Ιχθύ, μπορείς να δώσεις πολλές ευκαιρίες όταν αγαπάς. Αυτό που δύσκολα συγχωρείς είναι να σου δώσει κάποιος ελπίδα τη στιγμή που ήσουν πιο ευάλωτος και μετά να εξαφανιστεί. Εκεί ραγίζει η πίστη σου.",
+      "title": "Ιχθύς — Τι δεν συγχωρεί",
+      "caption": "Ιχθύς: η ελπίδα που δίνεται στην πιο ευάλωτη στιγμή και μετά χάνεται, αφήνει βαθύ σημάδι. Συμφωνείς;",
+      "hashtags": [
+        "#Ιχθύς",
+        "#ζώδια",
+        "#ελπίδα",
+        "#σχέσεις",
+        "#fyp"
+      ],
+      "heygen_video_id": "4af8a8cea146345acdec7bb8ba281528",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-16528973370744176324.mp4",
+      "metricool_post_id": "378267992",
+      "metricool_uuid": "5545531062385330284",
+      "scheduled_time": "2026-09-18T22:45:00+03:00",
+      "platforms": [],
+      "status": "cancelled_non_dog_video",
+      "fingerprint": "2026-09-18|zodiac|Ιχθύς|τι-δεν-συγχωρεί|ελπίδα-στην-ευαλωτότητα-μετά-εξαφάνιση",
+      "notion_page_id": "3def2345-b318-811c-a374-f2a2c969cf23",
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "platform_status": {
+        "facebook": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378267992",
+          "reason": "Non-dog short videos stopped by user."
+        },
+        "instagram": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378267992",
+          "reason": "Non-dog short videos stopped by user."
+        },
+        "youtube": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378267992",
+          "reason": "Non-dog short videos stopped by user."
+        },
+        "tiktok": {
+          "status": "blocked_cooldown",
+          "public_url": null,
+          "error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
+        }
+      },
+      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "video_delivery": {
+        "post_id": "378267992",
+        "uuid": "5545531062385330284",
+        "status": "CANCELLED_BY_USER",
+        "draft": true,
+        "auto_publish": false,
+        "cancelled_at": "2026-09-18T20:48:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending."
+      },
+      "cancelled_at": "2026-09-18T20:48:00+03:00",
+      "terminal": true
+    },
+    {
+      "job_id": "2026-09-19-soul-04-betrayal",
+      "angle": "προδοσία",
+      "hook": "Η προδοσία δεν πονά μόνο για αυτό που έγινε.",
+      "script": "Η προδοσία πονά βαθύτερα όταν έρχεται από εκείνον που γνώριζε όλες τις πληγές και τους φόβους σου. Δεν χάνεις μόνο την εμπιστοσύνη· αλλάζει για πάντα ο τρόπος που αγαπάς.",
+      "title": "Η προδοσία ξέρει πού πονάς",
+      "caption": "Η βαθύτερη πληγή έρχεται από αυτόν που ήξερε ακριβώς τι φοβόσουν. Συγχωρείται μια τέτοια προδοσία;",
+      "hashtags": [
+        "#προδοσία",
+        "#εμπιστοσύνη",
+        "#σχέσεις",
+        "#πόνος",
+        "#fyp"
+      ],
+      "heygen_video_id": "a5f35f62bb494c506cc3f896e9f79ba4",
+      "scheduled_time": "2026-09-19T07:42:00+03:00",
+      "fingerprint": "2026-09-19|soul|προδοσία|γνώριζε-πληγή-και-χτύπησε-εκεί",
+      "notion_page_id": "3dff2345-b318-81ea-a533-efbd849e3671",
+      "date": "2026-09-19",
+      "theme": "soul",
+      "zodiac_sign": null,
+      "generation_provider": "heygen",
+      "generation_task_id": "a5f35f62bb494c506cc3f896e9f79ba4",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-10751794381936927292.mp4",
+      "metricool_post_id": "378278125",
+      "metricool_uuid": "7119671207944077321",
+      "platforms": [],
+      "status": "cancelled_non_dog_video",
+      "platform_status": {
+        "facebook": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378278125",
+          "reason": "Non-dog short videos stopped by user."
+        },
+        "instagram": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378278125",
+          "reason": "Non-dog short videos stopped by user."
+        },
+        "tiktok": {
+          "status": "blocked_cooldown",
+          "public_url": null,
+          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
+        },
+        "youtube": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378278125",
+          "reason": "Non-dog short videos stopped by user."
+        }
+      },
+      "quality_check": {
+        "script_coherent": true,
+        "spelling_checked": true,
+        "title_caption_hashtags": true,
+        "hashtags_count": 5,
+        "aspect_ratio": "9:16",
+        "resolution": "720p",
+        "fit": "cover",
+        "duplicate_risk": "low",
+        "weekly_learning_applied": "insufficient_data_keep_strategy",
+        "duration_range": "passed",
+        "required_seconds": "10-13",
+        "actual_seconds": 12.984
+      },
+      "attempts": [
+        {
+          "heygen_video_id": "2ccdf214e008eb11f53e80c1676dfb46",
+          "status": "rejected_duration",
+          "duration_seconds": 13.5576
+        },
+        {
+          "heygen_video_id": "f89b2af730b5ebb5b7081a91a3685bb",
+          "status": "rejected_duration",
+          "duration_seconds": 9.81601
+        },
+        {
+          "heygen_video_id": "a5f35f62bb494c506cc3f896e9f79ba4",
+          "status": "accepted_scheduled",
+          "duration_seconds": 12.984
+        }
+      ],
+      "video_page_url": "https://app.heygen.com/videos/a5f35f62bb494c506cc3f896e9f79ba4",
+      "duration_seconds": 12.984,
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "video_delivery": {
+        "post_id": "378278125",
+        "uuid": "7119671207944077321",
+        "status": "CANCELLED_BY_USER",
+        "draft": true,
+        "auto_publish": false,
+        "cancelled_at": "2026-09-18T20:48:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending."
+      },
+      "cancelled_at": "2026-09-18T20:48:00+03:00",
+      "terminal": true
+    },
+    {
+      "job_id": "2026-09-19-soul-05-healing-without-apology",
+      "date": "2026-09-19",
+      "theme": "soul",
+      "zodiac_sign": null,
+      "angle": "θεραπεία χωρίς συγγνώμη",
+      "hook": "Η επούλωση δεν περιμένει πάντα μια συγγνώμη.",
+      "script": "Η επούλωση αρχίζει όταν σταματάς να περιμένεις μια συγγνώμη. Δεν σημαίνει πως ξέχασες· σημαίνει πως αρνήθηκες να αφήσεις άλλο τον πόνο να αποφασίζει για σένα.",
+      "title": "Όταν ο πόνος σταματά να οδηγεί",
+      "caption": "Δεν χρειάζεσαι πάντα τη συγγνώμη που σου χρωστούν για να προχωρήσεις. Τι σε βοήθησε να θεραπευτείς;",
+      "hashtags": [
+        "#θεραπεία",
+        "#ψυχή",
+        "#δύναμη",
+        "#αυτογνωσία",
+        "#fyp"
+      ],
+      "heygen_video_id": "48fc5afb8882598655e0ed17957a1cc9",
+      "generation_provider": "heygen",
+      "generation_task_id": "48fc5afb8882598655e0ed17957a1cc9",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-7999143470037139062.mp4",
+      "metricool_post_id": "378278134",
+      "metricool_uuid": "4494981964765348564",
+      "scheduled_time": "2026-09-19T10:06:00+03:00",
+      "platforms": [],
+      "status": "cancelled_non_dog_video",
+      "fingerprint": "2026-09-19|soul|θεραπεία|χωρίς-συγγνώμη-ο-πόνος-δεν-οδηγεί",
+      "notion_page_id": "3dff2345-b318-8192-b86f-e567e00e32b7",
+      "platform_status": {
+        "facebook": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378278134",
+          "reason": "Non-dog short videos stopped by user."
+        },
+        "instagram": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378278134",
+          "reason": "Non-dog short videos stopped by user."
+        },
+        "tiktok": {
+          "status": "blocked_cooldown",
+          "public_url": null,
+          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
+        },
+        "youtube": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378278134",
+          "reason": "Non-dog short videos stopped by user."
+        }
+      },
+      "quality_check": {
+        "script_coherent": true,
+        "spelling_checked": true,
+        "title_caption_hashtags": true,
+        "hashtags_count": 5,
+        "aspect_ratio": "9:16",
+        "resolution": "720p",
+        "fit": "cover",
+        "duplicate_risk": "low",
+        "weekly_learning_applied": "insufficient_data_keep_strategy",
+        "duration_range": "passed",
+        "required_seconds": "10-13",
+        "actual_seconds": 11.904
+      },
+      "attempts": [
+        {
+          "heygen_video_id": "48fc5afb8882598655e0ed17957a1cc9",
+          "status": "accepted_scheduled",
+          "duration_seconds": 11.904
+        }
+      ],
+      "duration_seconds": 11.904,
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "video_delivery": {
+        "post_id": "378278134",
+        "uuid": "4494981964765348564",
+        "status": "CANCELLED_BY_USER",
+        "draft": true,
+        "auto_publish": false,
+        "cancelled_at": "2026-09-18T20:48:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending."
+      },
+      "cancelled_at": "2026-09-18T20:48:00+03:00",
+      "terminal": true
+    },
+    {
+      "job_id": "2026-09-19-soul-06-self-respect-choose-yourself",
+      "date": "2026-09-19",
+      "theme": "soul",
+      "zodiac_sign": null,
+      "angle": "αυτοσεβασμός",
+      "hook": "Αυτοσεβασμός είναι να φύγεις πριν χαθείς.",
+      "script": "Αυτοσεβασμός είναι να φύγεις πριν πάψεις να αναγνωρίζεις τον εαυτό σου. Δεν χρειάζεται να μισήσεις κανέναν· αρκεί να διαλέξεις ξανά εσένα.",
+      "title": "Να διαλέξεις ξανά εσένα",
+      "caption": "Το να φύγεις δεν είναι πάντα ήττα· μερικές φορές είναι η πρώτη πράξη αυτοσεβασμού. Πότε διάλεξες εσένα;",
+      "hashtags": [
+        "#αυτοσεβασμός",
+        "#όρια",
+        "#σχέσεις",
+        "#δύναμη",
+        "#fyp"
+      ],
+      "heygen_video_id": "8da928c396074579917249e9648d04aa",
+      "generation_provider": "heygen",
+      "generation_task_id": "8da928c396074579917249e9648d04aa",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-1115543141634348693.mp4",
+      "metricool_post_id": "378278143",
+      "metricool_uuid": "1827937260421661697",
+      "scheduled_time": "2026-09-19T12:30:00+03:00",
+      "platforms": [],
+      "status": "cancelled_non_dog_video",
+      "fingerprint": "2026-09-19|soul|αυτοσεβασμός|φεύγεις-πριν-χαθείς-διαλέγεις-εσένα",
+      "notion_page_id": "3dff2345-b318-81c8-b169-d2775aca7704",
+      "platform_status": {
+        "facebook": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378278143",
+          "reason": "Non-dog short videos stopped by user."
+        },
+        "instagram": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378278143",
+          "reason": "Non-dog short videos stopped by user."
+        },
+        "tiktok": {
+          "status": "blocked_cooldown",
+          "public_url": null,
+          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
+        },
+        "youtube": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378278143",
+          "reason": "Non-dog short videos stopped by user."
+        }
+      },
+      "quality_check": {
+        "script_coherent": true,
+        "spelling_checked": true,
+        "title_caption_hashtags": true,
+        "hashtags_count": 5,
+        "aspect_ratio": "9:16",
+        "resolution": "720p",
+        "fit": "cover",
+        "duplicate_risk": "low",
+        "weekly_learning_applied": "insufficient_data_keep_strategy",
+        "duration_range": "passed",
+        "required_seconds": "10-13",
+        "actual_seconds": 10.776
+      },
+      "attempts": [
+        {
+          "heygen_video_id": "8da928c396074579917249e9648d04aa",
+          "status": "accepted_scheduled",
+          "duration_seconds": 10.776
+        }
+      ],
+      "duration_seconds": 10.776,
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "video_delivery": {
+        "post_id": "378278143",
+        "uuid": "1827937260421661697",
+        "status": "CANCELLED_BY_USER",
+        "draft": true,
+        "auto_publish": false,
+        "cancelled_at": "2026-09-18T20:48:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending."
+      },
+      "cancelled_at": "2026-09-18T20:48:00+03:00",
+      "terminal": true
+    },
+    {
+      "job_id": "2026-09-19-soul-07-memories-show-distance",
+      "date": "2026-09-19",
+      "theme": "soul",
+      "zodiac_sign": null,
+      "angle": "αναμνήσεις και εξέλιξη",
+      "hook": "Οι αναμνήσεις δεν ζητούν πάντα επιστροφή.",
+      "script": "Οι αναμνήσεις δεν επιστρέφουν για να σε γυρίσουν πίσω. Έρχονται να σου θυμίσουν ποιος ήσουν τότε και πόσο δρόμο κατάφερες να διανύσεις από εκεί.",
+      "title": "Η ανάμνηση δείχνει τον δρόμο",
+      "caption": "Μια ανάμνηση μπορεί να πονά και ταυτόχρονα να σου δείχνει πόσο άλλαξες. Ποια σε έκανε πιο δυνατό;",
+      "hashtags": [
+        "#αναμνήσεις",
+        "#ψυχή",
+        "#εξέλιξη",
+        "#ζωή",
+        "#fyp"
+      ],
+      "heygen_video_id": "fbc250a372b931d307589cd6baeb356b",
+      "generation_provider": "heygen",
+      "generation_task_id": "fbc250a372b931d307589cd6baeb356b",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-11010549898351668935.mp4",
+      "metricool_post_id": "378278156",
+      "metricool_uuid": "-6171012434982779529",
+      "scheduled_time": "2026-09-19T14:54:00+03:00",
+      "platforms": [],
+      "status": "cancelled_non_dog_video",
+      "fingerprint": "2026-09-19|soul|αναμνήσεις|θυμίζουν-διαδρομή-όχι-επιστροφή",
+      "notion_page_id": "3dff2345-b318-81d7-bc19-fb249d1fffd1",
+      "platform_status": {
+        "facebook": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378278156",
+          "reason": "Non-dog short videos stopped by user."
+        },
+        "instagram": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378278156",
+          "reason": "Non-dog short videos stopped by user."
+        },
+        "tiktok": {
+          "status": "blocked_cooldown",
+          "public_url": null,
+          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
+        },
+        "youtube": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378278156",
+          "reason": "Non-dog short videos stopped by user."
+        }
+      },
+      "quality_check": {
+        "script_coherent": true,
+        "spelling_checked": true,
+        "title_caption_hashtags": true,
+        "hashtags_count": 5,
+        "aspect_ratio": "9:16",
+        "resolution": "720p",
+        "fit": "cover",
+        "duplicate_risk": "low",
+        "weekly_learning_applied": "insufficient_data_keep_strategy",
+        "duration_range": "passed",
+        "required_seconds": "10-13",
+        "actual_seconds": 10.416
+      },
+      "attempts": [
+        {
+          "heygen_video_id": "fbc250a372b931d307589cd6baeb356b",
+          "status": "accepted_scheduled",
+          "duration_seconds": 10.416
+        }
+      ],
+      "duration_seconds": 10.416,
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "video_delivery": {
+        "post_id": "378278156",
+        "uuid": "-6171012434982779529",
+        "status": "CANCELLED_BY_USER",
+        "draft": true,
+        "auto_publish": false,
+        "cancelled_at": "2026-09-18T20:48:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending."
+      },
+      "cancelled_at": "2026-09-18T20:48:00+03:00",
+      "terminal": true
+    },
+    {
+      "job_id": "2026-09-19-soul-09-longing-in-habits",
+      "date": "2026-09-19",
+      "theme": "soul",
+      "zodiac_sign": null,
+      "angle": "λαχτάρα μέσα στις καθημερινές συνήθειες",
+      "hook": "Η απουσία κρύβεται στα πιο μικρά πράγματα.",
+      "script": "Η απουσία φαίνεται περισσότερο στις μικρές καθημερινές συνήθειες. Στον καφέ που έφτιαχνες για δύο, στο αστείο που δεν έχεις πια σε ποιον να στείλεις, στο άδειο κάθισμα δίπλα σου.",
+      "title": "Η απουσία μένει στις συνήθειες",
+      "caption": "Δεν λείπει μόνο ο άνθρωπος· λείπουν κι όλα τα μικρά που κάνατε μαζί. Ποια συνήθεια σου λείπει περισσότερο;",
+      "hashtags": [
+        "#μουλείπεις",
+        "#αναμνήσεις",
+        "#σχέσεις",
+        "#ψυχή",
+        "#fyp"
+      ],
+      "generation_provider": "heygen",
+      "generation_task_id": "f9eb158ad0aca4f449546c5a5e71e8a6",
+      "heygen_video_id": "f9eb158ad0aca4f449546c5a5e71e8a6",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-15655079379962673020.mp4",
+      "metricool_post_id": "378278165",
+      "metricool_uuid": "2510727418625477636",
+      "scheduled_time": "2026-09-19T19:42:00+03:00",
+      "platforms": [],
+      "status": "cancelled_non_dog_video",
+      "fingerprint": "2026-09-19|soul|λαχτάρα|απουσία-στις-μικρές-συνήθειες",
+      "notion_page_id": "3dff2345-b318-8104-ac1c-fc9bc8becae9",
+      "platform_status": {
+        "facebook": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378278165",
+          "reason": "Non-dog short videos stopped by user."
+        },
+        "instagram": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378278165",
+          "reason": "Non-dog short videos stopped by user."
+        },
+        "tiktok": {
+          "status": "blocked_cooldown",
+          "public_url": null,
+          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
+        },
+        "youtube": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378278165",
+          "reason": "Non-dog short videos stopped by user."
+        }
+      },
+      "quality_check": {
+        "script_coherent": true,
+        "spelling_checked": true,
+        "title_caption_hashtags": true,
+        "hashtags_count": 5,
+        "aspect_ratio": "9:16",
+        "resolution": "720p",
+        "fit": "cover",
+        "duplicate_risk": "low",
+        "weekly_learning_applied": "insufficient_data_keep_strategy",
+        "duration_range": "passed",
+        "required_seconds": "10-13",
+        "actual_seconds": 12.216
+      },
+      "attempts": [
+        {
+          "heygen_video_id": "dcf331e7fbc46c058863a4f795a258c0",
+          "status": "rejected_duration",
+          "duration_seconds": 9.168
+        },
+        {
+          "heygen_video_id": "f9eb158ad0aca4f449546c5a5e71e8a6",
+          "status": "accepted_scheduled",
+          "duration_seconds": 12.216
+        }
+      ],
+      "duration_seconds": 12.216,
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "video_delivery": {
+        "post_id": "378278165",
+        "uuid": "2510727418625477636",
+        "status": "CANCELLED_BY_USER",
+        "draft": true,
+        "auto_publish": false,
+        "cancelled_at": "2026-09-18T20:48:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending."
+      },
+      "cancelled_at": "2026-09-18T20:48:00+03:00",
+      "terminal": true
+    },
+    {
+      "job_id": "2026-09-19-soul-10-second-chance-change",
+      "date": "2026-09-19",
+      "theme": "soul",
+      "zodiac_sign": null,
+      "angle": "δεύτερη ευκαιρία με πραγματική αλλαγή",
+      "hook": "Δεύτερη ευκαιρία δεν σημαίνει επιστροφή στα ίδια.",
+      "script": "Δεύτερη ευκαιρία δεν σημαίνει να ξεχάσεις όσα έγιναν. Σημαίνει πως και οι δύο αλλάξατε πραγματικά και στην πράξη, ώστε να μη χτίσετε ξανά την ίδια πληγή.",
+      "title": "Η δεύτερη ευκαιρία θέλει αλλαγή",
+      "caption": "Μια δεύτερη ευκαιρία αξίζει μόνο όταν δεν επαναλαμβάνει την ίδια πληγή. Εσύ θα την έδινες;",
+      "hashtags": [
+        "#δεύτερηευκαιρία",
+        "#σχέσεις",
+        "#αλλαγή",
+        "#αγάπη",
+        "#fyp"
+      ],
+      "generation_provider": "heygen",
+      "generation_task_id": "f92dd4cf12370a18800d46e75041ef27",
+      "heygen_video_id": "f92dd4cf12370a18800d46e75041ef27",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-17989163213358546731.mp4",
+      "metricool_post_id": "378278174",
+      "metricool_uuid": "-8992648413116346507",
+      "scheduled_time": "2026-09-19T22:06:00+03:00",
+      "platforms": [],
+      "status": "cancelled_non_dog_video",
+      "fingerprint": "2026-09-19|soul|δεύτερη-ευκαιρία|αλλαγή-ώστε-να-μην-χτιστεί-ίδια-πληγή",
+      "notion_page_id": "3dff2345-b318-817f-b2d4-db61dca9e119",
+      "platform_status": {
+        "facebook": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378278174",
+          "reason": "Non-dog short videos stopped by user."
+        },
+        "instagram": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378278174",
+          "reason": "Non-dog short videos stopped by user."
+        },
+        "tiktok": {
+          "status": "blocked_cooldown",
+          "public_url": null,
+          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
+        },
+        "youtube": {
+          "status": "CANCELLED_BY_USER",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378278174",
+          "reason": "Non-dog short videos stopped by user."
+        }
+      },
+      "quality_check": {
+        "script_coherent": true,
+        "spelling_checked": true,
+        "title_caption_hashtags": true,
+        "hashtags_count": 5,
+        "aspect_ratio": "9:16",
+        "resolution": "720p",
+        "fit": "cover",
+        "duplicate_risk": "low",
+        "weekly_learning_applied": "insufficient_data_keep_strategy",
+        "duration_range": "passed",
+        "required_seconds": "10-13",
+        "actual_seconds": 10.968
+      },
+      "attempts": [
+        {
+          "heygen_video_id": "f22378ab4db496bdaa417ca6d8daf4d9",
+          "status": "rejected_duration",
+          "duration_seconds": 9.768
+        },
+        {
+          "heygen_video_id": "f92dd4cf12370a18800d46e75041ef27",
+          "status": "accepted_scheduled",
+          "duration_seconds": 10.968
+        }
+      ],
+      "duration_seconds": 10.968,
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "video_delivery": {
+        "post_id": "378278174",
+        "uuid": "-8992648413116346507",
+        "status": "CANCELLED_BY_USER",
+        "draft": true,
+        "auto_publish": false,
+        "cancelled_at": "2026-09-18T20:48:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending."
+      },
+      "cancelled_at": "2026-09-18T20:48:00+03:00",
+      "terminal": true
     }
   ]
 }
