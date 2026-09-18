@@ -11,13 +11,24 @@
       "script": "Κριέ, έναν καβγά μπορεί να τον ξεπεράσεις. Αυτό που δεν συγχωρείς εύκολα είναι να σε μειώσουν αφού έδωσες αληθινά την καρδιά σου. Όταν χτυπηθεί η αξιοπρέπειά σου, η πόρτα κλείνει οριστικά.",
       "title": "Κριός — Τι δεν συγχωρεί",
       "caption": "Κριός: όταν πληγωθεί η αξιοπρέπειά του, δύσκολα γυρίζει πίσω. Εσύ συμφωνείς;",
-      "hashtags": ["#Κριός", "#ζώδια", "#σχέσεις", "#αγάπη", "#fyp"],
+      "hashtags": [
+        "#Κριός",
+        "#ζώδια",
+        "#σχέσεις",
+        "#αγάπη",
+        "#fyp"
+      ],
       "heygen_video_id": "13dd47e51503540858701e45f51459ec",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-10574516884760694913.mp4",
       "metricool_post_id": "377691897",
       "metricool_uuid": "-3692140307404274168",
       "scheduled_time": "2026-09-18T09:00:00+03:00",
-      "platforms": ["facebook", "instagram", "tiktok", "youtube"],
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
       "status": "published",
       "fingerprint": "2026-09-18|zodiac|Κριός|τι-δεν-συγχωρεί|αξιοπρέπεια-κλείνει-οριστικά",
       "notion_page_id": "3def2345-b318-8126-84e8-fe111d0bd9e5",
@@ -26,6 +37,44 @@
         "instagram": "https://www.instagram.com/reel/Ddavy05DKSt/",
         "tiktok": "https://www.tiktok.com/@steliosvilanos/video/7686752132443360534",
         "youtube": "https://www.youtube.com/shorts/TBxBYhWKeKc"
+      }
+    },
+    {
+      "job_id": "2026-09-18-zodiac-02-taurus",
+      "date": "2026-09-18",
+      "theme": "zodiac",
+      "zodiac_sign": "Ταύρος",
+      "angle": "τι δεν συγχωρεί",
+      "hook": "Ταύρε, αντέχεις πολλά όταν αγαπάς.",
+      "script": "Ταύρε, αντέχεις πολλά όταν αγαπάς. Μα αν κάποιος παίξει με την εμπιστοσύνη σου, κάτι αλλάζει οριστικά. Μπορεί να μείνεις ήρεμος, αλλά μέσα σου η σχέση έχει ήδη ραγίσει.",
+      "title": "Ταύρος — Τι δεν συγχωρεί",
+      "caption": "Ταύρος: η εμπιστοσύνη χτίζεται αργά και μπορεί να χαθεί σε μία στιγμή. Εσύ δίνεις δεύτερη ευκαιρία;",
+      "hashtags": [
+        "#Ταύρος",
+        "#ζώδια",
+        "#εμπιστοσύνη",
+        "#σχέσεις",
+        "#fyp"
+      ],
+      "heygen_video_id": "fdfdc47d0997a355dc9516d901d0923a",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-9113145465759352701.mp4",
+      "metricool_post_id": "377647775",
+      "metricool_uuid": "982280081193913220",
+      "scheduled_time": "2026-09-18T10:15:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "status": "published",
+      "fingerprint": "2026-09-18|zodiac|Ταύρος|τι-δεν-συγχωρεί|σπασμένη-εμπιστοσύνη",
+      "notion_page_id": "3def2345-b318-8183-a4bb-ce528e9ff156",
+      "public_urls": {
+        "facebook": "https://facebook.com/reel/2745014109227576",
+        "instagram": "https://www.instagram.com/reel/Dda4NKyEQHp/",
+        "tiktok": "https://www.tiktok.com/@steliosvilanos/video/7686771021009063170",
+        "youtube": "https://www.youtube.com/shorts/D6a_nNZ1ToY"
       }
     }
   ]
