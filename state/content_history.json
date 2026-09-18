@@ -240,10 +240,9 @@
       "platforms": [
         "facebook",
         "instagram",
-        "tiktok",
         "youtube"
       ],
-      "status": "partially_published",
+      "status": "published",
       "fingerprint": "2026-09-18|zodiac|Παρθένος|τι-δεν-συγχωρεί|επαναλαμβανόμενο-λάθος-είναι-επιλογή",
       "platform_status": {
         "facebook": {
@@ -259,12 +258,11 @@
           "source_post_id": "377741065"
         },
         "tiktok": {
-          "status": "ERROR",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
-          "error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
-          "source_post_id": "377741065",
-          "cooldown_until": "2026-09-19T16:07:00+03:00",
-          "retry_status": "deferred_not_scheduled"
+          "error": null,
+          "reason": "Exclusive TikTok reset: no daily TikTok content dated before 2026-09-19.",
+          "retry_status": "terminal_no_retry"
         },
         "youtube": {
           "status": "PUBLISHED",
@@ -281,7 +279,16 @@
       "blocked_networks": [
         "tiktok"
       ],
-      "last_reconciled_at": "2026-09-18T16:07:00+03:00"
+      "last_reconciled_at": "2026-09-18T20:20:00+03:00",
+      "cancelled_networks": [
+        "tiktok"
+      ],
+      "completion_scope": [
+        "facebook",
+        "instagram",
+        "youtube"
+      ],
+      "completed_at": "2026-09-18T20:20:00+03:00"
     },
     {
       "job_id": "2026-09-18-zodiac-07-libra",
@@ -308,10 +315,9 @@
       "platforms": [
         "facebook",
         "instagram",
-        "tiktok",
         "youtube"
       ],
-      "status": "partially_published",
+      "status": "published",
       "fingerprint": "2026-09-18|zodiac|Ζυγός|τι-δεν-συγχωρεί|άδικη-κατηγορία-σταματά-προσπάθεια",
       "blocked_networks": [
         "tiktok"
@@ -330,11 +336,11 @@
           "source_post_id": "378119771"
         },
         "tiktok": {
-          "status": "blocked_cooldown",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
-          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
-          "cooldown_until": "2026-09-19T16:07:00+03:00",
-          "retry_status": "deferred_not_scheduled"
+          "error": null,
+          "reason": "Exclusive TikTok reset: no daily TikTok content dated before 2026-09-19.",
+          "retry_status": "terminal_no_retry"
         },
         "youtube": {
           "status": "PUBLISHED",
@@ -343,12 +349,21 @@
           "source_post_id": "378119771"
         }
       },
-      "last_reconciled_at": "2026-09-18T16:40:00+03:00",
+      "last_reconciled_at": "2026-09-18T20:20:00+03:00",
       "public_urls": {
         "facebook": "https://facebook.com/reel/1974598887278052",
         "instagram": "https://www.instagram.com/reel/DdbjGIZima5/",
         "youtube": "https://www.youtube.com/shorts/JmxKgw5bM_M"
-      }
+      },
+      "cancelled_networks": [
+        "tiktok"
+      ],
+      "completion_scope": [
+        "facebook",
+        "instagram",
+        "youtube"
+      ],
+      "completed_at": "2026-09-18T20:20:00+03:00"
     },
     {
       "job_id": "2026-09-18-zodiac-08-scorpio",
@@ -375,10 +390,9 @@
       "platforms": [
         "facebook",
         "instagram",
-        "tiktok",
         "youtube"
       ],
-      "status": "partially_published",
+      "status": "published",
       "fingerprint": "2026-09-18|zodiac|Σκορπιός|τι-δεν-συγχωρεί|προδομένο-μυστικό-χάνει-ασφάλεια",
       "blocked_networks": [
         "tiktok"
@@ -397,11 +411,11 @@
           "source_post_id": "378119779"
         },
         "tiktok": {
-          "status": "blocked_cooldown",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
-          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
-          "cooldown_until": "2026-09-19T16:07:00+03:00",
-          "retry_status": "deferred_not_scheduled"
+          "error": null,
+          "reason": "Exclusive TikTok reset: no daily TikTok content dated before 2026-09-19.",
+          "retry_status": "terminal_no_retry"
         },
         "youtube": {
           "status": "PUBLISHED",
@@ -410,12 +424,21 @@
           "source_post_id": "378119779"
         }
       },
-      "last_reconciled_at": "2026-09-18T17:49:00+03:00",
+      "last_reconciled_at": "2026-09-18T20:20:00+03:00",
       "public_urls": {
         "facebook": "https://facebook.com/reel/1585313213089777",
         "instagram": "https://www.instagram.com/reel/DdbrpRpD4Up/",
         "youtube": "https://www.youtube.com/shorts/ksy65mXqt2I"
-      }
+      },
+      "cancelled_networks": [
+        "tiktok"
+      ],
+      "completion_scope": [
+        "facebook",
+        "instagram",
+        "youtube"
+      ],
+      "completed_at": "2026-09-18T20:20:00+03:00"
     },
     {
       "job_id": "2026-09-18-zodiac-09-sagittarius",
@@ -442,42 +465,50 @@
       "platforms": [
         "facebook",
         "instagram",
-        "tiktok",
         "youtube"
       ],
-      "status": "scheduled",
+      "status": "published",
       "fingerprint": "2026-09-18|zodiac|Τοξότης|τι-δεν-συγχωρεί|έλεγχος-με-ζήλια-ενοχές-ψέματα",
       "blocked_networks": [
         "tiktok"
       ],
       "platform_status": {
         "facebook": {
-          "status": "PENDING",
-          "public_url": null,
+          "status": "PUBLISHED",
+          "public_url": "https://facebook.com/reel/1747398343207686",
           "error": null,
           "source_post_id": "378119793"
         },
         "instagram": {
-          "status": "PENDING",
-          "public_url": null,
+          "status": "PUBLISHED",
+          "public_url": "https://www.instagram.com/reel/Ddb00NTim6k/",
           "error": null,
           "source_post_id": "378119793"
         },
         "youtube": {
-          "status": "PENDING",
-          "public_url": null,
+          "status": "PUBLISHED",
+          "public_url": "https://www.youtube.com/shorts/1Opt4hq1sZE",
           "error": null,
           "source_post_id": "378119793"
         },
         "tiktok": {
-          "status": "blocked_cooldown",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
-          "error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
-          "cooldown_until": "2026-09-19T16:07:00+03:00",
-          "retry_status": "deferred_not_scheduled"
+          "error": null,
+          "reason": "Exclusive TikTok reset: no daily TikTok content dated before 2026-09-19.",
+          "retry_status": "terminal_no_retry"
         }
       },
-      "last_reconciled_at": "2026-09-18T16:07:00+03:00"
+      "last_reconciled_at": "2026-09-18T20:20:00+03:00",
+      "cancelled_networks": [
+        "tiktok"
+      ],
+      "completion_scope": [
+        "facebook",
+        "instagram",
+        "youtube"
+      ],
+      "completed_at": "2026-09-18T20:20:00+03:00"
     },
     {
       "job_id": "2026-09-18-zodiac-10-capricorn",
@@ -729,11 +760,13 @@
           "source_post_id": "378121244"
         },
         "tiktok": {
-          "status": "blocked_cooldown",
+          "status": "PENDING",
           "public_url": null,
-          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
-          "cooldown_until": "2026-09-19T16:07:00+03:00",
-          "retry_status": "deferred_not_scheduled"
+          "error": null,
+          "source_post_id": "378262154",
+          "source_uuid": "9039902732552782139",
+          "scheduled_time": "2026-09-19T23:00:00+03:00",
+          "format": "photo"
         },
         "youtube": {
           "status": "PENDING",
@@ -775,10 +808,21 @@
         }
       ],
       "duration_seconds": 10.968,
-      "blocked_networks": [
-        "tiktok"
-      ],
-      "last_reconciled_at": "2026-09-18T16:10:00+03:00"
+      "blocked_networks": [],
+      "last_reconciled_at": "2026-09-18T20:20:00+03:00",
+      "tiktok_delivery": {
+        "format": "photo",
+        "post_id": "378262154",
+        "uuid": "9039902732552782139",
+        "media_url": "https://static.metricool.com/planner/202609/7000636-file-4251031602469415811.jpeg",
+        "library_file_id": "libfile_c546369fd0c481918e36e89f3b02448f",
+        "library_path": "/01-love-unforgotten.jpg",
+        "auto_add_music": true,
+        "scheduled_time": "2026-09-19T23:00:00+03:00",
+        "status": "PENDING",
+        "auto_publish": true,
+        "comments_enabled": true
+      }
     },
     {
       "job_id": "2026-09-19-soul-02-no-closure",
@@ -827,11 +871,13 @@
           "source_post_id": "378121258"
         },
         "tiktok": {
-          "status": "blocked_cooldown",
+          "status": "PENDING",
           "public_url": null,
-          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
-          "cooldown_until": "2026-09-19T16:07:00+03:00",
-          "retry_status": "deferred_not_scheduled"
+          "error": null,
+          "source_post_id": "378262241",
+          "source_uuid": "5832980254006985063",
+          "scheduled_time": "2026-09-19T23:00:00+03:00",
+          "format": "photo"
         },
         "youtube": {
           "status": "PENDING",
@@ -873,10 +919,21 @@
         }
       ],
       "duration_seconds": 10.704,
-      "blocked_networks": [
-        "tiktok"
-      ],
-      "last_reconciled_at": "2026-09-18T16:10:00+03:00"
+      "blocked_networks": [],
+      "last_reconciled_at": "2026-09-18T20:20:00+03:00",
+      "tiktok_delivery": {
+        "format": "photo",
+        "post_id": "378262241",
+        "uuid": "5832980254006985063",
+        "media_url": "https://static.metricool.com/planner/202609/7000636-file-9350330219221664552.jpeg",
+        "library_file_id": "libfile_59e374e25c348191b840adb83177046e",
+        "library_path": "/02-no-closure.jpg",
+        "auto_add_music": true,
+        "scheduled_time": "2026-09-19T23:00:00+03:00",
+        "status": "PENDING",
+        "auto_publish": true,
+        "comments_enabled": true
+      }
     },
     {
       "job_id": "2026-09-19-soul-03-unsent-message",
@@ -925,11 +982,13 @@
           "source_post_id": "378119893"
         },
         "tiktok": {
-          "status": "blocked_cooldown",
+          "status": "PENDING",
           "public_url": null,
-          "error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
-          "cooldown_until": "2026-09-19T16:07:00+03:00",
-          "retry_status": "deferred_not_scheduled"
+          "error": null,
+          "source_post_id": "378262281",
+          "source_uuid": "-3094728111250849196",
+          "scheduled_time": "2026-09-19T23:00:00+03:00",
+          "format": "photo"
         },
         "youtube": {
           "status": "PENDING",
@@ -957,10 +1016,21 @@
           "status": "accepted_scheduled"
         }
       ],
-      "blocked_networks": [
-        "tiktok"
-      ],
-      "last_reconciled_at": "2026-09-18T16:07:00+03:00"
+      "blocked_networks": [],
+      "last_reconciled_at": "2026-09-18T20:20:00+03:00",
+      "tiktok_delivery": {
+        "format": "photo",
+        "post_id": "378262281",
+        "uuid": "-3094728111250849196",
+        "media_url": "https://static.metricool.com/planner/202609/7000636-file-9061311503209270755.jpeg",
+        "library_file_id": "libfile_6dd2310fdb4c8191a50be4cf357fc9ab",
+        "library_path": "/03-unsent-message.jpg",
+        "auto_add_music": true,
+        "scheduled_time": "2026-09-19T23:00:00+03:00",
+        "status": "PENDING",
+        "auto_publish": true,
+        "comments_enabled": true
+      }
     },
     {
       "job_id": "2026-09-19-soul-04-betrayal",
@@ -1355,9 +1425,7 @@
       "fingerprint": "2026-09-19|soul|dog-barista|foam-muzzle-persistent-funny-ending",
       "notion_page_id": "3dff2345-b318-810c-abcf-cd3fd8f8031a",
       "duration_seconds": 5.041667,
-      "blocked_networks": [
-        "tiktok"
-      ],
+      "blocked_networks": [],
       "platform_status": {
         "facebook": {
           "status": "PENDING",
@@ -1372,11 +1440,13 @@
           "source_post_id": "378178383"
         },
         "tiktok": {
-          "status": "blocked_cooldown",
+          "status": "PENDING",
           "public_url": null,
-          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
-          "cooldown_until": "2026-09-19T16:07:00+03:00",
-          "retry_status": "deferred_not_scheduled"
+          "error": null,
+          "source_post_id": "378262286",
+          "source_uuid": "6234574211891284294",
+          "scheduled_time": "2026-09-19T23:00:00+03:00",
+          "format": "video"
         },
         "youtube": {
           "status": "PENDING",
@@ -1396,7 +1466,20 @@
         "foam_persists_to_last_frame": true,
         "funny_ending": true,
         "duplicate_risk": "low"
-      }
+      },
+      "tiktok_delivery": {
+        "format": "video",
+        "post_id": "378262286",
+        "uuid": "6234574211891284294",
+        "media_url": "https://static.metricool.com/planner/202609/7000636-file-13815689072781945592.mp4",
+        "generation_task_id": "fe3d8602-b125-4a73-b048-ceb42f2caafc",
+        "auto_add_music": false,
+        "scheduled_time": "2026-09-19T23:00:00+03:00",
+        "status": "PENDING",
+        "auto_publish": true,
+        "comments_enabled": true
+      },
+      "last_reconciled_at": "2026-09-18T20:20:00+03:00"
     },
     {
       "job_id": "2026-09-19-soul-09-longing-in-habits",
