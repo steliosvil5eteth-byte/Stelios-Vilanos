@@ -1,5 +1,5 @@
 {
-  "version": 11,
+  "version": 12,
   "timezone": "Europe/Athens",
   "daily_target_videos": {
     "zodiac": 12,
@@ -251,5 +251,52 @@
       "auto_purchase": false
     },
     "quality_gate": "Check natural anatomy, persistent props and ending before publishing; on failure report rather than repeatedly regenerate."
+  },
+  "transition_override": {
+    "effective_date": "2026-09-18",
+    "priority": "Overrides all legacy volume/video rules below",
+    "stop_all_legacy_non_dog_videos": true,
+    "weekly_intro_enabled": false,
+    "new_story": {
+      "target_per_day": 1,
+      "networks": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "status": "awaiting_format_and_duration_selection",
+      "paid_generation_enabled": false
+    },
+    "dog": {
+      "enabled": true,
+      "every_n_calendar_days": 2,
+      "start_date": "2026-09-19",
+      "preserve_existing_schedule": true
+    },
+    "photos": {
+      "existing_schedules": "preserve_pending_user_scope_clarification",
+      "new_batches_enabled": false
+    },
+    "canceled_metricool_uuids": [
+      "-6989681795587618835",
+      "5545531062385330284",
+      "8732791487214272690",
+      "-2878152742504479547",
+      "-939280630344170335",
+      "7119671207944077321",
+      "4494981964765348564",
+      "1827937260421661697",
+      "-6171012434982779529",
+      "2510727418625477636",
+      "-8992648413116346507"
+    ],
+    "do_not_reactivate_legacy_videos": true,
+    "credit_snapshot": {
+      "heygen_remaining": 553,
+      "heygen_resets_at": "2026-10-17T15:04:42Z",
+      "runway_remaining": 107
+    },
+    "instruction": "\n\nLATEST USER CHANGE 2026-09-18 — overrides all previous volume/video instructions: Immediately stop creating, scheduling, retrying or reviving ALL non-dog videos, including zodiac, short emotional videos and weekly introduction. The user is replacing these with ONE daily longer story video cross-posted to Facebook, Instagram, TikTok and YouTube; production format and safe duration are being finalized in the current conversation. Until those choices are recorded, do not spend HeyGen credits or produce new story videos. Preserve dog-barista branch only as a video every other calendar day starting 2026-09-19, same existing times (17:18 Facebook/Instagram/YouTube; TikTok 23:00 on 19/9 only, normal dog slot thereafter), one unique clip cross-posted four ways. Do not cancel dog jobs. Current verified budgets: HeyGen 553 credits resets 2026-10-17; Runway 107 purchased credits, plan balance 0. Check live balances before spending and stop if insufficient; no purchases. Existing photo posts are outside the explicit video cancellation scope pending user clarification; do not create additional photo batches while the replacement strategy is being finalized. Existing canceled non-dog video jobs must never be reactivated from GitHub queues. Apply this instruction even if repository strategy is stale. Continue read-only publication reconciliation and dog processing under existing safety/quality/cooldown rules."
   }
 }
