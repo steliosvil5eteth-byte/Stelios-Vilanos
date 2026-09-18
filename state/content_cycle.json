@@ -4,12 +4,12 @@
   "start_date": "2026-09-18",
   "current_cycle_date": "2026-09-18",
   "current_theme": "zodiac",
-  "completed_count": 0,
+  "completed_count": 1,
   "target_count": 12,
   "prepared_count": 12,
   "scheduled_count": 12,
   "generating_count": 0,
   "last_completed_theme": null,
   "next_theme_after_completion": "soul",
-  "status": "scheduled"
+  "status": "publishing"
 }
