@@ -29,9 +29,46 @@
         "tiktok",
         "youtube"
       ],
-      "status": "scheduled",
+      "status": "partially_published",
       "fingerprint": "2026-09-18|zodiac|Παρθένος|τι-δεν-συγχωρεί|επαναλαμβανόμενο-λάθος-είναι-επιλογή",
-      "notion_page_id": "3def2345-b318-819a-9173-d9439dadd7d5"
+      "notion_page_id": "3def2345-b318-819a-9173-d9439dadd7d5",
+      "platform_status": {
+        "facebook": {
+          "status": "PUBLISHED",
+          "public_url": "https://facebook.com/reel/1544005190814433",
+          "error": null,
+          "source_post_id": "377741065"
+        },
+        "instagram": {
+          "status": "PUBLISHED",
+          "public_url": "https://www.instagram.com/reel/DdbaikHD3TG/",
+          "error": null,
+          "source_post_id": "377741065"
+        },
+        "tiktok": {
+          "status": "ERROR",
+          "public_url": null,
+          "error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
+          "source_post_id": "377741065",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
+        },
+        "youtube": {
+          "status": "PUBLISHED",
+          "public_url": "https://www.youtube.com/shorts/QOLv7FeLbOw",
+          "error": null,
+          "source_post_id": "377741065"
+        }
+      },
+      "public_urls": {
+        "facebook": "https://facebook.com/reel/1544005190814433",
+        "instagram": "https://www.instagram.com/reel/DdbaikHD3TG/",
+        "youtube": "https://www.youtube.com/shorts/QOLv7FeLbOw"
+      },
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "last_reconciled_at": "2026-09-18T16:07:00+03:00"
     },
     {
       "job_id": "2026-09-18-zodiac-07-libra",
@@ -52,7 +89,7 @@
       ],
       "heygen_video_id": "6f706ff7d1cf6e23f3697b8ba9409645",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-6584092389998701444.mp4",
-      "metricool_post_id": "377741176",
+      "metricool_post_id": "378119771",
       "metricool_uuid": "-9091847694490975092",
       "scheduled_time": "2026-09-18T16:30:00+03:00",
       "platforms": [
@@ -63,7 +100,38 @@
       ],
       "status": "scheduled",
       "fingerprint": "2026-09-18|zodiac|Ζυγός|τι-δεν-συγχωρεί|άδικη-κατηγορία-σταματά-προσπάθεια",
-      "notion_page_id": "3def2345-b318-817d-b8e3-f53a24e7e368"
+      "notion_page_id": "3def2345-b318-817d-b8e3-f53a24e7e368",
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "platform_status": {
+        "facebook": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378119771"
+        },
+        "instagram": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378119771"
+        },
+        "youtube": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378119771"
+        },
+        "tiktok": {
+          "status": "blocked_cooldown",
+          "public_url": null,
+          "error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
+        }
+      },
+      "last_reconciled_at": "2026-09-18T16:07:00+03:00"
     },
     {
       "job_id": "2026-09-18-zodiac-08-scorpio",
@@ -84,7 +152,7 @@
       ],
       "heygen_video_id": "a9a3fe9cffb6edd700a24ea23a422ed5",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-13336820302284638279.mp4",
-      "metricool_post_id": "377741265",
+      "metricool_post_id": "378119779",
       "metricool_uuid": "2946582551277292869",
       "scheduled_time": "2026-09-18T17:45:00+03:00",
       "platforms": [
@@ -95,7 +163,38 @@
       ],
       "status": "scheduled",
       "fingerprint": "2026-09-18|zodiac|Σκορπιός|τι-δεν-συγχωρεί|προδομένο-μυστικό-χάνει-ασφάλεια",
-      "notion_page_id": "3def2345-b318-8137-ad7c-d75e2dd24e41"
+      "notion_page_id": "3def2345-b318-8137-ad7c-d75e2dd24e41",
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "platform_status": {
+        "facebook": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378119779"
+        },
+        "instagram": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378119779"
+        },
+        "youtube": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378119779"
+        },
+        "tiktok": {
+          "status": "blocked_cooldown",
+          "public_url": null,
+          "error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
+        }
+      },
+      "last_reconciled_at": "2026-09-18T16:07:00+03:00"
     },
     {
       "job_id": "2026-09-18-zodiac-09-sagittarius",
@@ -116,7 +215,7 @@
       ],
       "heygen_video_id": "39abe3ef41ca2e046eca8e0bcd3c4b94",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-10982517099436820202.mp4",
-      "metricool_post_id": "377792270",
+      "metricool_post_id": "378119793",
       "metricool_uuid": "5482539241037581359",
       "scheduled_time": "2026-09-18T19:00:00+03:00",
       "platforms": [
@@ -127,7 +226,38 @@
       ],
       "status": "scheduled",
       "fingerprint": "2026-09-18|zodiac|Τοξότης|τι-δεν-συγχωρεί|έλεγχος-με-ζήλια-ενοχές-ψέματα",
-      "notion_page_id": "3def2345-b318-8101-a6a3-eac81635a34f"
+      "notion_page_id": "3def2345-b318-8101-a6a3-eac81635a34f",
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "platform_status": {
+        "facebook": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378119793"
+        },
+        "instagram": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378119793"
+        },
+        "youtube": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378119793"
+        },
+        "tiktok": {
+          "status": "blocked_cooldown",
+          "public_url": null,
+          "error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
+        }
+      },
+      "last_reconciled_at": "2026-09-18T16:07:00+03:00"
     },
     {
       "job_id": "2026-09-18-zodiac-10-capricorn",
@@ -148,7 +278,7 @@
       ],
       "heygen_video_id": "1eaab5eb49711dc54f4f1fafad0f9842",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-3868796764452694948.mp4",
-      "metricool_post_id": "377795094",
+      "metricool_post_id": "378119818",
       "metricool_uuid": "-1647793404669047041",
       "scheduled_time": "2026-09-18T20:15:00+03:00",
       "platforms": [
@@ -176,7 +306,38 @@
           "duration_seconds": 12.9045,
           "status": "accepted_scheduled"
         }
-      ]
+      ],
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "platform_status": {
+        "facebook": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378119818"
+        },
+        "instagram": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378119818"
+        },
+        "youtube": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378119818"
+        },
+        "tiktok": {
+          "status": "blocked_cooldown",
+          "public_url": null,
+          "error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
+        }
+      },
+      "last_reconciled_at": "2026-09-18T16:07:00+03:00"
     },
     {
       "job_id": "2026-09-18-zodiac-11-aquarius",
@@ -197,7 +358,7 @@
       ],
       "heygen_video_id": "ac68a43f49a3606ea35379fb0fb4235a",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-6462396933850625587.mp4",
-      "metricool_post_id": "377792347",
+      "metricool_post_id": "378119800",
       "metricool_uuid": "-6989681795587618835",
       "scheduled_time": "2026-09-18T21:30:00+03:00",
       "platforms": [
@@ -208,7 +369,38 @@
       ],
       "status": "scheduled",
       "fingerprint": "2026-09-18|zodiac|Υδροχόος|τι-δεν-συγχωρεί|ενοχές-για-αλλαγή-αξιών",
-      "notion_page_id": "3def2345-b318-817d-9272-f16d76bb83ee"
+      "notion_page_id": "3def2345-b318-817d-9272-f16d76bb83ee",
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "platform_status": {
+        "facebook": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378119800"
+        },
+        "instagram": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378119800"
+        },
+        "youtube": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378119800"
+        },
+        "tiktok": {
+          "status": "blocked_cooldown",
+          "public_url": null,
+          "error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
+        }
+      },
+      "last_reconciled_at": "2026-09-18T16:07:00+03:00"
     },
     {
       "job_id": "2026-09-18-zodiac-12-pisces",
@@ -229,7 +421,7 @@
       ],
       "heygen_video_id": "4af8a8cea146345acdec7bb8ba281528",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-16528973370744176324.mp4",
-      "metricool_post_id": "377792431",
+      "metricool_post_id": "378119810",
       "metricool_uuid": "5545531062385330284",
       "scheduled_time": "2026-09-18T22:45:00+03:00",
       "platforms": [
@@ -240,13 +432,44 @@
       ],
       "status": "scheduled",
       "fingerprint": "2026-09-18|zodiac|Ιχθύς|τι-δεν-συγχωρεί|ελπίδα-στην-ευαλωτότητα-μετά-εξαφάνιση",
-      "notion_page_id": "3def2345-b318-811c-a374-f2a2c969cf23"
+      "notion_page_id": "3def2345-b318-811c-a374-f2a2c969cf23",
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "platform_status": {
+        "facebook": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378119810"
+        },
+        "instagram": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378119810"
+        },
+        "youtube": {
+          "status": "PENDING",
+          "public_url": null,
+          "error": null,
+          "source_post_id": "378119810"
+        },
+        "tiktok": {
+          "status": "blocked_cooldown",
+          "public_url": null,
+          "error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
+        }
+      },
+      "last_reconciled_at": "2026-09-18T16:07:00+03:00"
     },
     {
       "job_id": "2026-09-19-soul-01-love-unforgotten",
       "angle": "αγάπη που δεν ξεχάστηκε",
       "hook": "Δεν ξεχνάς εκείνον που αγάπησες αληθινά.",
-      "script": "Δεν ξεχνάς εκείνον που αγάπησες αληθινά. Μαθαίνεις απλώς να ζεις χωρίς την παρουσία του, μέχρι μια μικρή ανάμνηση να σου θυμίσει πως κάτι μέσα σου τον περιμένει ακόμα, κι ας μην το παραδέχεσαι σε κανέναν.",
+      "script": "Δεν ξεχνάς εκείνον που αγάπησες αληθινά. Μαθαίνεις να ζεις χωρίς αυτόν, ώσπου μια μικρή ανάμνηση σου θυμίζει πως κάτι μέσα σου τον περιμένει ακόμα.",
       "title": "Η αγάπη που δεν ξεχάστηκε",
       "caption": "Μερικές αγάπες δεν φεύγουν· αλλάζουν θέση μέσα μας. Υπάρχει κάποιος που θυμάσαι ακόμα;",
       "hashtags": [
@@ -256,7 +479,7 @@
         "#ψυχή",
         "#fyp"
       ],
-      "heygen_video_id": "1d6c79578c6b959e7dfdb3f0d66a179c",
+      "heygen_video_id": "e7e032dcd5566aaf9cea4d4e56f1d799",
       "scheduled_time": "2026-09-19T00:30:00+03:00",
       "fingerprint": "2026-09-19|soul|αγάπη-που-δεν-ξεχάστηκε|ανάμνηση-ξυπνά-κρυφή-αναμονή",
       "notion_page_id": "3dff2345-b318-8179-bfe7-d2416cec508f",
@@ -264,7 +487,7 @@
       "theme": "soul",
       "zodiac_sign": null,
       "generation_provider": "heygen",
-      "generation_task_id": "1d6c79578c6b959e7dfdb3f0d66a179c",
+      "generation_task_id": "e7e032dcd5566aaf9cea4d4e56f1d799",
       "media_url": null,
       "metricool_post_id": null,
       "metricool_uuid": null,
@@ -307,11 +530,11 @@
         "fit": "cover",
         "duplicate_risk": "low",
         "weekly_learning_applied": "insufficient_data_keep_strategy",
-        "duration_range": "pending_corrected_render",
+        "duration_range": "pending_final_short_render",
         "required_seconds": "10-13",
         "actual_seconds": null
       },
-      "video_page_url": "https://app.heygen.com/videos/657eac8df6487ee0292e66b34539ab72",
+      "video_page_url": "https://app.heygen.com/videos/e7e032dcd5566aaf9cea4d4e56f1d799",
       "attempts": [
         {
           "heygen_video_id": "657eac8df6487ee0292e66b34539ab72",
@@ -320,7 +543,12 @@
         },
         {
           "heygen_video_id": "1d6c79578c6b959e7dfdb3f0d66a179c",
-          "status": "generating_corrected_version"
+          "status": "rejected_duration",
+          "duration_seconds": 17.5804
+        },
+        {
+          "heygen_video_id": "e7e032dcd5566aaf9cea4d4e56f1d799",
+          "status": "generating_final_short_version"
         }
       ]
     },
@@ -328,7 +556,7 @@
       "job_id": "2026-09-19-soul-02-no-closure",
       "angle": "χωρισμός χωρίς κλείσιμο",
       "hook": "Ο πιο δύσκολος χωρισμός είναι αυτός που δεν εξηγήθηκε ποτέ.",
-      "script": "Ο πιο δύσκολος χωρισμός είναι αυτός που δεν εξηγήθηκε ποτέ. Έμεινες με ένα «γιατί» στο στόμα και μια ιστορία που τελείωσε χωρίς να σου πει το τέλος. Και αναγκάστηκες να βρεις μόνος σου μια απάντηση για να συνεχίσεις.",
+      "script": "Ο πιο δύσκολος χωρισμός είναι αυτός που δεν εξηγήθηκε ποτέ. Μένεις με ένα γιατί και αναγκάζεσαι μόνος σου να βρεις απάντηση για να συνεχίσεις.",
       "title": "Ο χωρισμός χωρίς απάντηση",
       "caption": "Το «γιατί» πονά περισσότερο όταν κανείς δεν σου έδωσε ένα τέλος. Έζησες ποτέ τέτοιο χωρισμό;",
       "hashtags": [
@@ -338,7 +566,7 @@
         "#αλήθειες",
         "#fyp"
       ],
-      "heygen_video_id": "f897137ad454367ec34b9d825d8becbd",
+      "heygen_video_id": "2f11a30634c4a28980d3350cf5376c51",
       "scheduled_time": "2026-09-19T02:54:00+03:00",
       "fingerprint": "2026-09-19|soul|χωρισμός-χωρίς-κλείσιμο|γιατί-χωρίς-τελευταία-σελίδα",
       "notion_page_id": "3dff2345-b318-81e5-b41e-f7ec31d72d32",
@@ -346,7 +574,7 @@
       "theme": "soul",
       "zodiac_sign": null,
       "generation_provider": "heygen",
-      "generation_task_id": "f897137ad454367ec34b9d825d8becbd",
+      "generation_task_id": "2f11a30634c4a28980d3350cf5376c51",
       "media_url": null,
       "metricool_post_id": null,
       "metricool_uuid": null,
@@ -389,11 +617,11 @@
         "fit": "cover",
         "duplicate_risk": "low",
         "weekly_learning_applied": "insufficient_data_keep_strategy",
-        "duration_range": "pending_corrected_render",
+        "duration_range": "pending_final_short_render",
         "required_seconds": "10-13",
         "actual_seconds": null
       },
-      "video_page_url": "https://app.heygen.com/videos/94dfa6c47fbf3ad64fbec78d685e8172",
+      "video_page_url": "https://app.heygen.com/videos/2f11a30634c4a28980d3350cf5376c51",
       "attempts": [
         {
           "heygen_video_id": "94dfa6c47fbf3ad64fbec78d685e8172",
@@ -402,7 +630,12 @@
         },
         {
           "heygen_video_id": "f897137ad454367ec34b9d825d8becbd",
-          "status": "generating_corrected_version"
+          "status": "rejected_duration",
+          "duration_seconds": 14.7069
+        },
+        {
+          "heygen_video_id": "2f11a30634c4a28980d3350cf5376c51",
+          "status": "generating_final_short_version"
         }
       ]
     },
@@ -430,7 +663,7 @@
       "generation_provider": "heygen",
       "generation_task_id": "774340d865bccae7c7e01cda2b47eb4c",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-15987112952921633159.mp4",
-      "metricool_post_id": "378066753",
+      "metricool_post_id": "378119893",
       "metricool_uuid": "8732791487214272690",
       "platforms": [
         "facebook",
@@ -443,22 +676,27 @@
         "facebook": {
           "status": "PENDING",
           "public_url": null,
-          "error": null
+          "error": null,
+          "source_post_id": "378119893"
         },
         "instagram": {
           "status": "PENDING",
           "public_url": null,
-          "error": null
+          "error": null,
+          "source_post_id": "378119893"
         },
         "tiktok": {
-          "status": "PENDING",
+          "status": "blocked_cooldown",
           "public_url": null,
-          "error": null
+          "error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
+          "cooldown_until": "2026-09-19T16:07:00+03:00",
+          "retry_status": "deferred_not_scheduled"
         },
         "youtube": {
           "status": "PENDING",
           "public_url": null,
-          "error": null
+          "error": null,
+          "source_post_id": "378119893"
         }
       },
       "quality_check": {
@@ -479,13 +717,17 @@
           "duration_seconds": 11.938,
           "status": "accepted_scheduled"
         }
-      ]
+      ],
+      "blocked_networks": [
+        "tiktok"
+      ],
+      "last_reconciled_at": "2026-09-18T16:07:00+03:00"
     },
     {
       "job_id": "2026-09-19-soul-04-betrayal",
       "angle": "προδοσία",
       "hook": "Η προδοσία δεν πονά μόνο για αυτό που έγινε.",
-      "script": "Η προδοσία δεν πονά μόνο για αυτό που έγινε. Πονά γιατί εκείνος που ήξερε τις πληγές σου διάλεξε ακριβώς εκεί να σε χτυπήσει. Γι’ αυτό δεν χάνεται μόνο η εμπιστοσύνη· αλλάζει ο τρόπος που αγαπάς.",
+      "script": "Η προδοσία πονά βαθύτερα όταν έρχεται από εκείνον που γνώριζε τις πληγές σου. Δεν χάνεις μόνο εμπιστοσύνη· αλλάζει ο τρόπος που αγαπάς.",
       "title": "Η προδοσία ξέρει πού πονάς",
       "caption": "Η βαθύτερη πληγή έρχεται από αυτόν που ήξερε ακριβώς τι φοβόσουν. Συγχωρείται μια τέτοια προδοσία;",
       "hashtags": [
@@ -495,7 +737,7 @@
         "#πόνος",
         "#fyp"
       ],
-      "heygen_video_id": "2ccdf214e008eb11f53e80c1676dfb46",
+      "heygen_video_id": "f89b2af730b5ebb5b7081a91a3685bb",
       "scheduled_time": "2026-09-19T07:42:00+03:00",
       "fingerprint": "2026-09-19|soul|προδοσία|γνώριζε-πληγή-και-χτύπησε-εκεί",
       "notion_page_id": "3dff2345-b318-81ea-a533-efbd849e3671",
@@ -503,7 +745,7 @@
       "theme": "soul",
       "zodiac_sign": null,
       "generation_provider": "heygen",
-      "generation_task_id": "2ccdf214e008eb11f53e80c1676dfb46",
+      "generation_task_id": "f89b2af730b5ebb5b7081a91a3685bb",
       "media_url": null,
       "metricool_post_id": null,
       "metricool_uuid": null,
@@ -546,16 +788,22 @@
         "fit": "cover",
         "duplicate_risk": "low",
         "weekly_learning_applied": "insufficient_data_keep_strategy",
-        "duration_range": "pending_corrected_render",
+        "duration_range": "pending_final_short_render",
         "required_seconds": "10-13",
         "actual_seconds": null
       },
       "attempts": [
         {
           "heygen_video_id": "2ccdf214e008eb11f53e80c1676dfb46",
-          "status": "generating_corrected_version"
+          "status": "rejected_duration",
+          "duration_seconds": 13.5576
+        },
+        {
+          "heygen_video_id": "f89b2af730b5ebb5b7081a91a3685bb",
+          "status": "generating_final_short_version"
         }
-      ]
+      ],
+      "video_page_url": "https://app.heygen.com/videos/f89b2af730b5ebb5b7081a91a3685bb"
     }
   ]
 }
