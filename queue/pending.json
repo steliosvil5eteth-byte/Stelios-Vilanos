@@ -2,274 +2,6 @@
   "version": 1,
   "jobs": [
     {
-      "job_id": "2026-09-18-zodiac-06-virgo",
-      "date": "2026-09-18",
-      "theme": "zodiac",
-      "zodiac_sign": "Παρθένος",
-      "angle": "τι δεν συγχωρεί",
-      "hook": "Παρθένε, μπορείς να καταλάβεις ένα λάθος.",
-      "script": "Παρθένε, μπορείς να καταλάβεις ένα λάθος. Αυτό που δύσκολα συγχωρείς είναι να επαναλαμβάνεται ενώ το έχεις εξηγήσει καθαρά. Για σένα, όταν κάποιος ξέρει τι σε πονά και το ξανακάνει, είναι επιλογή.",
-      "title": "Παρθένος — Τι δεν συγχωρεί",
-      "caption": "Παρθένος: όταν το ίδιο λάθος επαναλαμβάνεται αφού το έχεις εξηγήσει, παύει να μοιάζει τυχαίο. Συμφωνείς;",
-      "hashtags": [
-        "#Παρθένος",
-        "#ζώδια",
-        "#όρια",
-        "#σχέσεις",
-        "#fyp"
-      ],
-      "heygen_video_id": "4a4777f7cd352d19ac189f65b615d5d5",
-      "media_url": "https://static.metricool.com/planner/202609/7000636-file-9693713464862465555.mp4",
-      "metricool_post_id": "377741065",
-      "metricool_uuid": "-586808285370235465",
-      "scheduled_time": "2026-09-18T15:15:00+03:00",
-      "platforms": [
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube"
-      ],
-      "status": "partially_published",
-      "fingerprint": "2026-09-18|zodiac|Παρθένος|τι-δεν-συγχωρεί|επαναλαμβανόμενο-λάθος-είναι-επιλογή",
-      "notion_page_id": "3def2345-b318-819a-9173-d9439dadd7d5",
-      "platform_status": {
-        "facebook": {
-          "status": "PUBLISHED",
-          "public_url": "https://facebook.com/reel/1544005190814433",
-          "error": null,
-          "source_post_id": "377741065"
-        },
-        "instagram": {
-          "status": "PUBLISHED",
-          "public_url": "https://www.instagram.com/reel/DdbaikHD3TG/",
-          "error": null,
-          "source_post_id": "377741065"
-        },
-        "tiktok": {
-          "status": "ERROR",
-          "public_url": null,
-          "error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
-          "source_post_id": "377741065",
-          "cooldown_until": "2026-09-19T16:07:00+03:00",
-          "retry_status": "deferred_not_scheduled"
-        },
-        "youtube": {
-          "status": "PUBLISHED",
-          "public_url": "https://www.youtube.com/shorts/QOLv7FeLbOw",
-          "error": null,
-          "source_post_id": "377741065"
-        }
-      },
-      "public_urls": {
-        "facebook": "https://facebook.com/reel/1544005190814433",
-        "instagram": "https://www.instagram.com/reel/DdbaikHD3TG/",
-        "youtube": "https://www.youtube.com/shorts/QOLv7FeLbOw"
-      },
-      "blocked_networks": [
-        "tiktok"
-      ],
-      "last_reconciled_at": "2026-09-18T16:07:00+03:00"
-    },
-    {
-      "job_id": "2026-09-18-zodiac-07-libra",
-      "date": "2026-09-18",
-      "theme": "zodiac",
-      "zodiac_sign": "Ζυγός",
-      "angle": "τι δεν συγχωρεί",
-      "hook": "Ζυγέ, θα ψάξεις πολλές φορές τρόπο να κρατήσεις την ισορροπία.",
-      "script": "Ζυγέ, θα ψάξεις πολλές φορές τρόπο να κρατήσεις την ισορροπία. Αυτό που δεν συγχωρείς εύκολα είναι να σε βάλουν να απολογείσαι για κάτι που δεν έκανες. Η αδικία σκοτώνει μέσα σου την ανάγκη να προσπαθήσεις.",
-      "title": "Ζυγός — Τι δεν συγχωρεί",
-      "caption": "Ζυγός: η αδικία μπορεί να τον κάνει να σταματήσει να προσπαθεί. Εσύ αντέχεις να σε κατηγορούν άδικα;",
-      "hashtags": [
-        "#Ζυγός",
-        "#ζώδια",
-        "#δικαιοσύνη",
-        "#σχέσεις",
-        "#fyp"
-      ],
-      "heygen_video_id": "6f706ff7d1cf6e23f3697b8ba9409645",
-      "media_url": "https://static.metricool.com/planner/202609/7000636-file-6584092389998701444.mp4",
-      "metricool_post_id": "378119771",
-      "metricool_uuid": "-9091847694490975092",
-      "scheduled_time": "2026-09-18T16:30:00+03:00",
-      "platforms": [
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube"
-      ],
-      "status": "partially_published",
-      "fingerprint": "2026-09-18|zodiac|Ζυγός|τι-δεν-συγχωρεί|άδικη-κατηγορία-σταματά-προσπάθεια",
-      "notion_page_id": "3def2345-b318-817d-b8e3-f53a24e7e368",
-      "blocked_networks": [
-        "tiktok"
-      ],
-      "platform_status": {
-        "facebook": {
-          "status": "PUBLISHED",
-          "public_url": "https://facebook.com/reel/1974598887278052",
-          "error": null,
-          "source_post_id": "378119771"
-        },
-        "instagram": {
-          "status": "PUBLISHED",
-          "public_url": "https://www.instagram.com/reel/DdbjGIZima5/",
-          "error": null,
-          "source_post_id": "378119771"
-        },
-        "tiktok": {
-          "status": "blocked_cooldown",
-          "public_url": null,
-          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
-          "cooldown_until": "2026-09-19T16:07:00+03:00",
-          "retry_status": "deferred_not_scheduled"
-        },
-        "youtube": {
-          "status": "PUBLISHED",
-          "public_url": "https://www.youtube.com/shorts/JmxKgw5bM_M",
-          "error": null,
-          "source_post_id": "378119771"
-        }
-      },
-      "last_reconciled_at": "2026-09-18T16:40:00+03:00",
-      "public_urls": {
-        "facebook": "https://facebook.com/reel/1974598887278052",
-        "instagram": "https://www.instagram.com/reel/DdbjGIZima5/",
-        "youtube": "https://www.youtube.com/shorts/JmxKgw5bM_M"
-      }
-    },
-    {
-      "job_id": "2026-09-18-zodiac-08-scorpio",
-      "date": "2026-09-18",
-      "theme": "zodiac",
-      "zodiac_sign": "Σκορπιός",
-      "angle": "τι δεν συγχωρεί",
-      "hook": "Σκορπιέ, μπορεί να συγχωρήσεις περισσότερα απ’ όσα δείχνεις.",
-      "script": "Σκορπιέ, μπορεί να συγχωρήσεις περισσότερα απ’ όσα δείχνεις. Αυτό που δεν ξεπερνάς εύκολα είναι να προδώσει κάποιος ένα μυστικό που του εμπιστεύτηκες. Εκεί δεν χάνεται μόνο η σχέση· χάνεται η ασφάλεια.",
-      "title": "Σκορπιός — Τι δεν συγχωρεί",
-      "caption": "Σκορπιός: ένα προδομένο μυστικό χτυπά κατευθείαν την εμπιστοσύνη. Θα το συγχωρούσες;",
-      "hashtags": [
-        "#Σκορπιός",
-        "#ζώδια",
-        "#εμπιστοσύνη",
-        "#σχέσεις",
-        "#fyp"
-      ],
-      "heygen_video_id": "a9a3fe9cffb6edd700a24ea23a422ed5",
-      "media_url": "https://static.metricool.com/planner/202609/7000636-file-13336820302284638279.mp4",
-      "metricool_post_id": "378119779",
-      "metricool_uuid": "2946582551277292869",
-      "scheduled_time": "2026-09-18T17:45:00+03:00",
-      "platforms": [
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube"
-      ],
-      "status": "partially_published",
-      "fingerprint": "2026-09-18|zodiac|Σκορπιός|τι-δεν-συγχωρεί|προδομένο-μυστικό-χάνει-ασφάλεια",
-      "notion_page_id": "3def2345-b318-8137-ad7c-d75e2dd24e41",
-      "blocked_networks": [
-        "tiktok"
-      ],
-      "platform_status": {
-        "facebook": {
-          "status": "PUBLISHED",
-          "public_url": "https://facebook.com/reel/1585313213089777",
-          "error": null,
-          "source_post_id": "378119779"
-        },
-        "instagram": {
-          "status": "PUBLISHED",
-          "public_url": "https://www.instagram.com/reel/DdbrpRpD4Up/",
-          "error": null,
-          "source_post_id": "378119779"
-        },
-        "tiktok": {
-          "status": "blocked_cooldown",
-          "public_url": null,
-          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
-          "cooldown_until": "2026-09-19T16:07:00+03:00",
-          "retry_status": "deferred_not_scheduled"
-        },
-        "youtube": {
-          "status": "PUBLISHED",
-          "public_url": "https://www.youtube.com/shorts/ksy65mXqt2I",
-          "error": null,
-          "source_post_id": "378119779"
-        }
-      },
-      "last_reconciled_at": "2026-09-18T17:49:00+03:00",
-      "public_urls": {
-        "facebook": "https://facebook.com/reel/1585313213089777",
-        "instagram": "https://www.instagram.com/reel/DdbrpRpD4Up/",
-        "youtube": "https://www.youtube.com/shorts/ksy65mXqt2I"
-      }
-    },
-    {
-      "job_id": "2026-09-18-zodiac-09-sagittarius",
-      "date": "2026-09-18",
-      "theme": "zodiac",
-      "zodiac_sign": "Τοξότης",
-      "angle": "τι δεν συγχωρεί",
-      "hook": "Τοξότη, αγαπάς την ελευθερία αλλά όχι την ασέβεια.",
-      "script": "Τοξότη, αγαπάς την ελευθερία αλλά όχι την ασέβεια. Αυτό που δύσκολα συγχωρείς είναι να προσπαθήσει κάποιος να σε ελέγξει με ζήλια, ενοχές ή ψέματα. Εκεί απομακρύνεσαι πριν χάσεις τον εαυτό σου.",
-      "title": "Τοξότης — Τι δεν συγχωρεί",
-      "caption": "Τοξότης: όταν η σχέση γίνεται έλεγχος, διαλέγει την ελευθερία του. Εσύ θα έμενες;",
-      "hashtags": [
-        "#Τοξότης",
-        "#ζώδια",
-        "#ελευθερία",
-        "#σχέσεις",
-        "#fyp"
-      ],
-      "heygen_video_id": "39abe3ef41ca2e046eca8e0bcd3c4b94",
-      "media_url": "https://static.metricool.com/planner/202609/7000636-file-10982517099436820202.mp4",
-      "metricool_post_id": "378119793",
-      "metricool_uuid": "5482539241037581359",
-      "scheduled_time": "2026-09-18T19:00:00+03:00",
-      "platforms": [
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube"
-      ],
-      "status": "scheduled",
-      "fingerprint": "2026-09-18|zodiac|Τοξότης|τι-δεν-συγχωρεί|έλεγχος-με-ζήλια-ενοχές-ψέματα",
-      "notion_page_id": "3def2345-b318-8101-a6a3-eac81635a34f",
-      "blocked_networks": [
-        "tiktok"
-      ],
-      "platform_status": {
-        "facebook": {
-          "status": "PENDING",
-          "public_url": null,
-          "error": null,
-          "source_post_id": "378119793"
-        },
-        "instagram": {
-          "status": "PENDING",
-          "public_url": null,
-          "error": null,
-          "source_post_id": "378119793"
-        },
-        "youtube": {
-          "status": "PENDING",
-          "public_url": null,
-          "error": null,
-          "source_post_id": "378119793"
-        },
-        "tiktok": {
-          "status": "blocked_cooldown",
-          "public_url": null,
-          "error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
-          "cooldown_until": "2026-09-19T16:07:00+03:00",
-          "retry_status": "deferred_not_scheduled"
-        }
-      },
-      "last_reconciled_at": "2026-09-18T16:07:00+03:00"
-    },
-    {
       "job_id": "2026-09-18-zodiac-10-capricorn",
       "date": "2026-09-18",
       "theme": "zodiac",
@@ -522,11 +254,13 @@
           "source_post_id": "378121244"
         },
         "tiktok": {
-          "status": "blocked_cooldown",
+          "status": "PENDING",
           "public_url": null,
-          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
-          "cooldown_until": "2026-09-19T16:07:00+03:00",
-          "retry_status": "deferred_not_scheduled"
+          "error": null,
+          "source_post_id": "378262154",
+          "source_uuid": "9039902732552782139",
+          "scheduled_time": "2026-09-19T23:00:00+03:00",
+          "format": "photo"
         },
         "youtube": {
           "status": "PENDING",
@@ -568,10 +302,21 @@
         }
       ],
       "duration_seconds": 10.968,
-      "blocked_networks": [
-        "tiktok"
-      ],
-      "last_reconciled_at": "2026-09-18T16:10:00+03:00"
+      "blocked_networks": [],
+      "last_reconciled_at": "2026-09-18T20:20:00+03:00",
+      "tiktok_delivery": {
+        "format": "photo",
+        "post_id": "378262154",
+        "uuid": "9039902732552782139",
+        "media_url": "https://static.metricool.com/planner/202609/7000636-file-4251031602469415811.jpeg",
+        "library_file_id": "libfile_c546369fd0c481918e36e89f3b02448f",
+        "library_path": "/01-love-unforgotten.jpg",
+        "auto_add_music": true,
+        "scheduled_time": "2026-09-19T23:00:00+03:00",
+        "status": "PENDING",
+        "auto_publish": true,
+        "comments_enabled": true
+      }
     },
     {
       "job_id": "2026-09-19-soul-02-no-closure",
@@ -620,11 +365,13 @@
           "source_post_id": "378121258"
         },
         "tiktok": {
-          "status": "blocked_cooldown",
+          "status": "PENDING",
           "public_url": null,
-          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
-          "cooldown_until": "2026-09-19T16:07:00+03:00",
-          "retry_status": "deferred_not_scheduled"
+          "error": null,
+          "source_post_id": "378262241",
+          "source_uuid": "5832980254006985063",
+          "scheduled_time": "2026-09-19T23:00:00+03:00",
+          "format": "photo"
         },
         "youtube": {
           "status": "PENDING",
@@ -666,10 +413,21 @@
         }
       ],
       "duration_seconds": 10.704,
-      "blocked_networks": [
-        "tiktok"
-      ],
-      "last_reconciled_at": "2026-09-18T16:10:00+03:00"
+      "blocked_networks": [],
+      "last_reconciled_at": "2026-09-18T20:20:00+03:00",
+      "tiktok_delivery": {
+        "format": "photo",
+        "post_id": "378262241",
+        "uuid": "5832980254006985063",
+        "media_url": "https://static.metricool.com/planner/202609/7000636-file-9350330219221664552.jpeg",
+        "library_file_id": "libfile_59e374e25c348191b840adb83177046e",
+        "library_path": "/02-no-closure.jpg",
+        "auto_add_music": true,
+        "scheduled_time": "2026-09-19T23:00:00+03:00",
+        "status": "PENDING",
+        "auto_publish": true,
+        "comments_enabled": true
+      }
     },
     {
       "job_id": "2026-09-19-soul-03-unsent-message",
@@ -718,11 +476,13 @@
           "source_post_id": "378119893"
         },
         "tiktok": {
-          "status": "blocked_cooldown",
+          "status": "PENDING",
           "public_url": null,
-          "error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
-          "cooldown_until": "2026-09-19T16:07:00+03:00",
-          "retry_status": "deferred_not_scheduled"
+          "error": null,
+          "source_post_id": "378262281",
+          "source_uuid": "-3094728111250849196",
+          "scheduled_time": "2026-09-19T23:00:00+03:00",
+          "format": "photo"
         },
         "youtube": {
           "status": "PENDING",
@@ -750,10 +510,21 @@
           "status": "accepted_scheduled"
         }
       ],
-      "blocked_networks": [
-        "tiktok"
-      ],
-      "last_reconciled_at": "2026-09-18T16:07:00+03:00"
+      "blocked_networks": [],
+      "last_reconciled_at": "2026-09-18T20:20:00+03:00",
+      "tiktok_delivery": {
+        "format": "photo",
+        "post_id": "378262281",
+        "uuid": "-3094728111250849196",
+        "media_url": "https://static.metricool.com/planner/202609/7000636-file-9061311503209270755.jpeg",
+        "library_file_id": "libfile_6dd2310fdb4c8191a50be4cf357fc9ab",
+        "library_path": "/03-unsent-message.jpg",
+        "auto_add_music": true,
+        "scheduled_time": "2026-09-19T23:00:00+03:00",
+        "status": "PENDING",
+        "auto_publish": true,
+        "comments_enabled": true
+      }
     },
     {
       "job_id": "2026-09-19-soul-04-betrayal",
@@ -1148,9 +919,7 @@
       "fingerprint": "2026-09-19|soul|dog-barista|foam-muzzle-persistent-funny-ending",
       "notion_page_id": "3dff2345-b318-810c-abcf-cd3fd8f8031a",
       "duration_seconds": 5.041667,
-      "blocked_networks": [
-        "tiktok"
-      ],
+      "blocked_networks": [],
       "platform_status": {
         "facebook": {
           "status": "PENDING",
@@ -1165,11 +934,13 @@
           "source_post_id": "378178383"
         },
         "tiktok": {
-          "status": "blocked_cooldown",
+          "status": "PENDING",
           "public_url": null,
-          "error": "TikTok OpenAPI 403 cooldown active until 2026-09-19T16:07:00+03:00",
-          "cooldown_until": "2026-09-19T16:07:00+03:00",
-          "retry_status": "deferred_not_scheduled"
+          "error": null,
+          "source_post_id": "378262286",
+          "source_uuid": "6234574211891284294",
+          "scheduled_time": "2026-09-19T23:00:00+03:00",
+          "format": "video"
         },
         "youtube": {
           "status": "PENDING",
@@ -1189,7 +960,20 @@
         "foam_persists_to_last_frame": true,
         "funny_ending": true,
         "duplicate_risk": "low"
-      }
+      },
+      "tiktok_delivery": {
+        "format": "video",
+        "post_id": "378262286",
+        "uuid": "6234574211891284294",
+        "media_url": "https://static.metricool.com/planner/202609/7000636-file-13815689072781945592.mp4",
+        "generation_task_id": "fe3d8602-b125-4a73-b048-ceb42f2caafc",
+        "auto_add_music": false,
+        "scheduled_time": "2026-09-19T23:00:00+03:00",
+        "status": "PENDING",
+        "auto_publish": true,
+        "comments_enabled": true
+      },
+      "last_reconciled_at": "2026-09-18T20:20:00+03:00"
     },
     {
       "job_id": "2026-09-19-soul-09-longing-in-habits",
