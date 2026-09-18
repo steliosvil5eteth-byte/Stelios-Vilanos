@@ -535,10 +535,9 @@
       "platforms": [
         "facebook",
         "instagram",
-        "tiktok",
         "youtube"
       ],
-      "status": "scheduled",
+      "status": "published",
       "fingerprint": "2026-09-18|zodiac|Αιγόκερως|τι-δεν-συγχωρεί|δεδομένη-προσπάθεια-σπασμένη-υπόσχεση",
       "attempts": [
         {
@@ -562,32 +561,41 @@
       ],
       "platform_status": {
         "facebook": {
-          "status": "PENDING",
-          "public_url": null,
+          "status": "PUBLISHED",
+          "public_url": "https://facebook.com/reel/1064011066365821",
           "error": null,
           "source_post_id": "378119818"
         },
         "instagram": {
-          "status": "PENDING",
-          "public_url": null,
+          "status": "PUBLISHED",
+          "public_url": "https://www.instagram.com/reel/Ddb807dHIY-/",
           "error": null,
           "source_post_id": "378119818"
         },
         "youtube": {
-          "status": "PENDING",
-          "public_url": null,
+          "status": "PUBLISHED",
+          "public_url": "https://www.youtube.com/shorts/R5o4aN_epzk",
           "error": null,
           "source_post_id": "378119818"
         },
         "tiktok": {
-          "status": "blocked_cooldown",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
-          "error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
-          "cooldown_until": "2026-09-19T16:07:00+03:00",
-          "retry_status": "deferred_not_scheduled"
+          "error": null,
+          "reason": "TikTok reset excludes content dated before 2026-09-19.",
+          "retry_status": "terminal_no_retry"
         }
       },
-      "last_reconciled_at": "2026-09-18T16:07:00+03:00"
+      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "cancelled_networks": [
+        "tiktok"
+      ],
+      "completion_scope": [
+        "facebook",
+        "instagram",
+        "youtube"
+      ],
+      "completed_at": "2026-09-18T20:48:00+03:00"
     },
     {
       "job_id": "2026-09-18-zodiac-11-aquarius",
@@ -608,38 +616,36 @@
       ],
       "heygen_video_id": "ac68a43f49a3606ea35379fb0fb4235a",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-6462396933850625587.mp4",
-      "metricool_post_id": "378119800",
+      "metricool_post_id": "378267969",
       "metricool_uuid": "-6989681795587618835",
       "scheduled_time": "2026-09-18T21:30:00+03:00",
-      "platforms": [
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube"
-      ],
-      "status": "scheduled",
+      "platforms": [],
+      "status": "cancelled_non_dog_video",
       "fingerprint": "2026-09-18|zodiac|Υδροχόος|τι-δεν-συγχωρεί|ενοχές-για-αλλαγή-αξιών",
       "blocked_networks": [
         "tiktok"
       ],
       "platform_status": {
         "facebook": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378119800"
+          "source_post_id": "378267969",
+          "reason": "Non-dog short videos stopped by user."
         },
         "instagram": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378119800"
+          "source_post_id": "378267969",
+          "reason": "Non-dog short videos stopped by user."
         },
         "youtube": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378119800"
+          "source_post_id": "378267969",
+          "reason": "Non-dog short videos stopped by user."
         },
         "tiktok": {
           "status": "blocked_cooldown",
@@ -649,7 +655,18 @@
           "retry_status": "deferred_not_scheduled"
         }
       },
-      "last_reconciled_at": "2026-09-18T16:07:00+03:00"
+      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "video_delivery": {
+        "post_id": "378267969",
+        "uuid": "-6989681795587618835",
+        "status": "CANCELLED_BY_USER",
+        "draft": true,
+        "auto_publish": false,
+        "cancelled_at": "2026-09-18T20:48:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending."
+      },
+      "cancelled_at": "2026-09-18T20:48:00+03:00",
+      "terminal": true
     },
     {
       "job_id": "2026-09-18-zodiac-12-pisces",
@@ -670,38 +687,36 @@
       ],
       "heygen_video_id": "4af8a8cea146345acdec7bb8ba281528",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-16528973370744176324.mp4",
-      "metricool_post_id": "378119810",
+      "metricool_post_id": "378267992",
       "metricool_uuid": "5545531062385330284",
       "scheduled_time": "2026-09-18T22:45:00+03:00",
-      "platforms": [
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube"
-      ],
-      "status": "scheduled",
+      "platforms": [],
+      "status": "cancelled_non_dog_video",
       "fingerprint": "2026-09-18|zodiac|Ιχθύς|τι-δεν-συγχωρεί|ελπίδα-στην-ευαλωτότητα-μετά-εξαφάνιση",
       "blocked_networks": [
         "tiktok"
       ],
       "platform_status": {
         "facebook": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378119810"
+          "source_post_id": "378267992",
+          "reason": "Non-dog short videos stopped by user."
         },
         "instagram": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378119810"
+          "source_post_id": "378267992",
+          "reason": "Non-dog short videos stopped by user."
         },
         "youtube": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378119810"
+          "source_post_id": "378267992",
+          "reason": "Non-dog short videos stopped by user."
         },
         "tiktok": {
           "status": "blocked_cooldown",
@@ -711,7 +726,18 @@
           "retry_status": "deferred_not_scheduled"
         }
       },
-      "last_reconciled_at": "2026-09-18T16:07:00+03:00"
+      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "video_delivery": {
+        "post_id": "378267992",
+        "uuid": "5545531062385330284",
+        "status": "CANCELLED_BY_USER",
+        "draft": true,
+        "auto_publish": false,
+        "cancelled_at": "2026-09-18T20:48:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending."
+      },
+      "cancelled_at": "2026-09-18T20:48:00+03:00",
+      "terminal": true
     },
     {
       "job_id": "2026-09-19-soul-01-love-unforgotten",
@@ -737,27 +763,26 @@
       "generation_provider": "heygen",
       "generation_task_id": "e7e032dcd5566aaf9cea4d4e56f1d799",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-8973153217625051652.mp4",
-      "metricool_post_id": "378121244",
+      "metricool_post_id": "378278111",
       "metricool_uuid": "-2878152742504479547",
       "platforms": [
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube"
+        "tiktok"
       ],
-      "status": "scheduled",
+      "status": "scheduled_tiktok_photo_video_cancelled",
       "platform_status": {
         "facebook": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378121244"
+          "source_post_id": "378278111",
+          "reason": "Non-dog short videos stopped by user."
         },
         "instagram": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378121244"
+          "source_post_id": "378278111",
+          "reason": "Non-dog short videos stopped by user."
         },
         "tiktok": {
           "status": "PENDING",
@@ -769,10 +794,11 @@
           "format": "photo"
         },
         "youtube": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378121244"
+          "source_post_id": "378278111",
+          "reason": "Non-dog short videos stopped by user."
         }
       },
       "quality_check": {
@@ -809,7 +835,7 @@
       ],
       "duration_seconds": 10.968,
       "blocked_networks": [],
-      "last_reconciled_at": "2026-09-18T20:20:00+03:00",
+      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
       "tiktok_delivery": {
         "format": "photo",
         "post_id": "378262154",
@@ -822,6 +848,15 @@
         "status": "PENDING",
         "auto_publish": true,
         "comments_enabled": true
+      },
+      "video_delivery": {
+        "post_id": "378278111",
+        "uuid": "-2878152742504479547",
+        "status": "CANCELLED_BY_USER",
+        "draft": true,
+        "auto_publish": false,
+        "cancelled_at": "2026-09-18T20:48:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending."
       }
     },
     {
@@ -848,27 +883,26 @@
       "generation_provider": "heygen",
       "generation_task_id": "2f11a30634c4a28980d3350cf5376c51",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-12734929490523271795.mp4",
-      "metricool_post_id": "378121258",
+      "metricool_post_id": "378278114",
       "metricool_uuid": "-939280630344170335",
       "platforms": [
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube"
+        "tiktok"
       ],
-      "status": "scheduled",
+      "status": "scheduled_tiktok_photo_video_cancelled",
       "platform_status": {
         "facebook": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378121258"
+          "source_post_id": "378278114",
+          "reason": "Non-dog short videos stopped by user."
         },
         "instagram": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378121258"
+          "source_post_id": "378278114",
+          "reason": "Non-dog short videos stopped by user."
         },
         "tiktok": {
           "status": "PENDING",
@@ -880,10 +914,11 @@
           "format": "photo"
         },
         "youtube": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378121258"
+          "source_post_id": "378278114",
+          "reason": "Non-dog short videos stopped by user."
         }
       },
       "quality_check": {
@@ -920,7 +955,7 @@
       ],
       "duration_seconds": 10.704,
       "blocked_networks": [],
-      "last_reconciled_at": "2026-09-18T20:20:00+03:00",
+      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
       "tiktok_delivery": {
         "format": "photo",
         "post_id": "378262241",
@@ -933,6 +968,15 @@
         "status": "PENDING",
         "auto_publish": true,
         "comments_enabled": true
+      },
+      "video_delivery": {
+        "post_id": "378278114",
+        "uuid": "-939280630344170335",
+        "status": "CANCELLED_BY_USER",
+        "draft": true,
+        "auto_publish": false,
+        "cancelled_at": "2026-09-18T20:48:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending."
       }
     },
     {
@@ -959,27 +1003,26 @@
       "generation_provider": "heygen",
       "generation_task_id": "774340d865bccae7c7e01cda2b47eb4c",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-15987112952921633159.mp4",
-      "metricool_post_id": "378119893",
+      "metricool_post_id": "378278100",
       "metricool_uuid": "8732791487214272690",
       "platforms": [
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube"
+        "tiktok"
       ],
-      "status": "scheduled",
+      "status": "scheduled_tiktok_photo_video_cancelled",
       "platform_status": {
         "facebook": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378119893"
+          "source_post_id": "378278100",
+          "reason": "Non-dog short videos stopped by user."
         },
         "instagram": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378119893"
+          "source_post_id": "378278100",
+          "reason": "Non-dog short videos stopped by user."
         },
         "tiktok": {
           "status": "PENDING",
@@ -991,10 +1034,11 @@
           "format": "photo"
         },
         "youtube": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378119893"
+          "source_post_id": "378278100",
+          "reason": "Non-dog short videos stopped by user."
         }
       },
       "quality_check": {
@@ -1017,7 +1061,7 @@
         }
       ],
       "blocked_networks": [],
-      "last_reconciled_at": "2026-09-18T20:20:00+03:00",
+      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
       "tiktok_delivery": {
         "format": "photo",
         "post_id": "378262281",
@@ -1030,6 +1074,15 @@
         "status": "PENDING",
         "auto_publish": true,
         "comments_enabled": true
+      },
+      "video_delivery": {
+        "post_id": "378278100",
+        "uuid": "8732791487214272690",
+        "status": "CANCELLED_BY_USER",
+        "draft": true,
+        "auto_publish": false,
+        "cancelled_at": "2026-09-18T20:48:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending."
       }
     },
     {
@@ -1056,27 +1109,24 @@
       "generation_provider": "heygen",
       "generation_task_id": "a5f35f62bb494c506cc3f896e9f79ba4",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-10751794381936927292.mp4",
-      "metricool_post_id": "378137200",
+      "metricool_post_id": "378278125",
       "metricool_uuid": "7119671207944077321",
-      "platforms": [
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube"
-      ],
-      "status": "scheduled",
+      "platforms": [],
+      "status": "cancelled_non_dog_video",
       "platform_status": {
         "facebook": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378137200"
+          "source_post_id": "378278125",
+          "reason": "Non-dog short videos stopped by user."
         },
         "instagram": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378137200"
+          "source_post_id": "378278125",
+          "reason": "Non-dog short videos stopped by user."
         },
         "tiktok": {
           "status": "blocked_cooldown",
@@ -1086,10 +1136,11 @@
           "retry_status": "deferred_not_scheduled"
         },
         "youtube": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378137200"
+          "source_post_id": "378278125",
+          "reason": "Non-dog short videos stopped by user."
         }
       },
       "quality_check": {
@@ -1128,7 +1179,18 @@
       "blocked_networks": [
         "tiktok"
       ],
-      "last_reconciled_at": "2026-09-18T16:40:00+03:00"
+      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "video_delivery": {
+        "post_id": "378278125",
+        "uuid": "7119671207944077321",
+        "status": "CANCELLED_BY_USER",
+        "draft": true,
+        "auto_publish": false,
+        "cancelled_at": "2026-09-18T20:48:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending."
+      },
+      "cancelled_at": "2026-09-18T20:48:00+03:00",
+      "terminal": true
     },
     {
       "job_id": "2026-09-19-soul-05-healing-without-apology",
@@ -1151,30 +1213,27 @@
       "generation_provider": "heygen",
       "generation_task_id": "48fc5afb8882598655e0ed17957a1cc9",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-7999143470037139062.mp4",
-      "metricool_post_id": "378139148",
+      "metricool_post_id": "378278134",
       "metricool_uuid": "4494981964765348564",
       "scheduled_time": "2026-09-19T10:06:00+03:00",
-      "platforms": [
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube"
-      ],
-      "status": "scheduled",
+      "platforms": [],
+      "status": "cancelled_non_dog_video",
       "fingerprint": "2026-09-19|soul|θεραπεία|χωρίς-συγγνώμη-ο-πόνος-δεν-οδηγεί",
       "notion_page_id": "3dff2345-b318-8192-b86f-e567e00e32b7",
       "platform_status": {
         "facebook": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378139148"
+          "source_post_id": "378278134",
+          "reason": "Non-dog short videos stopped by user."
         },
         "instagram": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378139148"
+          "source_post_id": "378278134",
+          "reason": "Non-dog short videos stopped by user."
         },
         "tiktok": {
           "status": "blocked_cooldown",
@@ -1184,10 +1243,11 @@
           "retry_status": "deferred_not_scheduled"
         },
         "youtube": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378139148"
+          "source_post_id": "378278134",
+          "reason": "Non-dog short videos stopped by user."
         }
       },
       "quality_check": {
@@ -1215,7 +1275,18 @@
       "blocked_networks": [
         "tiktok"
       ],
-      "last_reconciled_at": "2026-09-18T16:43:00+03:00"
+      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "video_delivery": {
+        "post_id": "378278134",
+        "uuid": "4494981964765348564",
+        "status": "CANCELLED_BY_USER",
+        "draft": true,
+        "auto_publish": false,
+        "cancelled_at": "2026-09-18T20:48:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending."
+      },
+      "cancelled_at": "2026-09-18T20:48:00+03:00",
+      "terminal": true
     },
     {
       "job_id": "2026-09-19-soul-06-self-respect-choose-yourself",
@@ -1238,30 +1309,27 @@
       "generation_provider": "heygen",
       "generation_task_id": "8da928c396074579917249e9648d04aa",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-1115543141634348693.mp4",
-      "metricool_post_id": "378139157",
+      "metricool_post_id": "378278143",
       "metricool_uuid": "1827937260421661697",
       "scheduled_time": "2026-09-19T12:30:00+03:00",
-      "platforms": [
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube"
-      ],
-      "status": "scheduled",
+      "platforms": [],
+      "status": "cancelled_non_dog_video",
       "fingerprint": "2026-09-19|soul|αυτοσεβασμός|φεύγεις-πριν-χαθείς-διαλέγεις-εσένα",
       "notion_page_id": "3dff2345-b318-81c8-b169-d2775aca7704",
       "platform_status": {
         "facebook": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378139157"
+          "source_post_id": "378278143",
+          "reason": "Non-dog short videos stopped by user."
         },
         "instagram": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378139157"
+          "source_post_id": "378278143",
+          "reason": "Non-dog short videos stopped by user."
         },
         "tiktok": {
           "status": "blocked_cooldown",
@@ -1271,10 +1339,11 @@
           "retry_status": "deferred_not_scheduled"
         },
         "youtube": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378139157"
+          "source_post_id": "378278143",
+          "reason": "Non-dog short videos stopped by user."
         }
       },
       "quality_check": {
@@ -1302,7 +1371,18 @@
       "blocked_networks": [
         "tiktok"
       ],
-      "last_reconciled_at": "2026-09-18T16:43:00+03:00"
+      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "video_delivery": {
+        "post_id": "378278143",
+        "uuid": "1827937260421661697",
+        "status": "CANCELLED_BY_USER",
+        "draft": true,
+        "auto_publish": false,
+        "cancelled_at": "2026-09-18T20:48:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending."
+      },
+      "cancelled_at": "2026-09-18T20:48:00+03:00",
+      "terminal": true
     },
     {
       "job_id": "2026-09-19-soul-07-memories-show-distance",
@@ -1325,30 +1405,27 @@
       "generation_provider": "heygen",
       "generation_task_id": "fbc250a372b931d307589cd6baeb356b",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-11010549898351668935.mp4",
-      "metricool_post_id": "378139173",
+      "metricool_post_id": "378278156",
       "metricool_uuid": "-6171012434982779529",
       "scheduled_time": "2026-09-19T14:54:00+03:00",
-      "platforms": [
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube"
-      ],
-      "status": "scheduled",
+      "platforms": [],
+      "status": "cancelled_non_dog_video",
       "fingerprint": "2026-09-19|soul|αναμνήσεις|θυμίζουν-διαδρομή-όχι-επιστροφή",
       "notion_page_id": "3dff2345-b318-81d7-bc19-fb249d1fffd1",
       "platform_status": {
         "facebook": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378139173"
+          "source_post_id": "378278156",
+          "reason": "Non-dog short videos stopped by user."
         },
         "instagram": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378139173"
+          "source_post_id": "378278156",
+          "reason": "Non-dog short videos stopped by user."
         },
         "tiktok": {
           "status": "blocked_cooldown",
@@ -1358,10 +1435,11 @@
           "retry_status": "deferred_not_scheduled"
         },
         "youtube": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378139173"
+          "source_post_id": "378278156",
+          "reason": "Non-dog short videos stopped by user."
         }
       },
       "quality_check": {
@@ -1389,7 +1467,18 @@
       "blocked_networks": [
         "tiktok"
       ],
-      "last_reconciled_at": "2026-09-18T16:43:00+03:00"
+      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "video_delivery": {
+        "post_id": "378278156",
+        "uuid": "-6171012434982779529",
+        "status": "CANCELLED_BY_USER",
+        "draft": true,
+        "auto_publish": false,
+        "cancelled_at": "2026-09-18T20:48:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending."
+      },
+      "cancelled_at": "2026-09-18T20:48:00+03:00",
+      "terminal": true
     },
     {
       "job_id": "2026-09-19-soul-08-dog-barista-foam",
@@ -1502,30 +1591,27 @@
       "generation_task_id": "f9eb158ad0aca4f449546c5a5e71e8a6",
       "heygen_video_id": "f9eb158ad0aca4f449546c5a5e71e8a6",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-15655079379962673020.mp4",
-      "metricool_post_id": "378181175",
+      "metricool_post_id": "378278165",
       "metricool_uuid": "2510727418625477636",
       "scheduled_time": "2026-09-19T19:42:00+03:00",
-      "platforms": [
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube"
-      ],
-      "status": "scheduled",
+      "platforms": [],
+      "status": "cancelled_non_dog_video",
       "fingerprint": "2026-09-19|soul|λαχτάρα|απουσία-στις-μικρές-συνήθειες",
       "notion_page_id": "3dff2345-b318-8104-ac1c-fc9bc8becae9",
       "platform_status": {
         "facebook": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378181175"
+          "source_post_id": "378278165",
+          "reason": "Non-dog short videos stopped by user."
         },
         "instagram": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378181175"
+          "source_post_id": "378278165",
+          "reason": "Non-dog short videos stopped by user."
         },
         "tiktok": {
           "status": "blocked_cooldown",
@@ -1535,10 +1621,11 @@
           "retry_status": "deferred_not_scheduled"
         },
         "youtube": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378181175"
+          "source_post_id": "378278165",
+          "reason": "Non-dog short videos stopped by user."
         }
       },
       "quality_check": {
@@ -1571,7 +1658,18 @@
       "blocked_networks": [
         "tiktok"
       ],
-      "last_reconciled_at": "2026-09-18T17:54:00+03:00"
+      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "video_delivery": {
+        "post_id": "378278165",
+        "uuid": "2510727418625477636",
+        "status": "CANCELLED_BY_USER",
+        "draft": true,
+        "auto_publish": false,
+        "cancelled_at": "2026-09-18T20:48:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending."
+      },
+      "cancelled_at": "2026-09-18T20:48:00+03:00",
+      "terminal": true
     },
     {
       "job_id": "2026-09-19-soul-10-second-chance-change",
@@ -1594,30 +1692,27 @@
       "generation_task_id": "f92dd4cf12370a18800d46e75041ef27",
       "heygen_video_id": "f92dd4cf12370a18800d46e75041ef27",
       "media_url": "https://static.metricool.com/planner/202609/7000636-file-17989163213358546731.mp4",
-      "metricool_post_id": "378181207",
+      "metricool_post_id": "378278174",
       "metricool_uuid": "-8992648413116346507",
       "scheduled_time": "2026-09-19T22:06:00+03:00",
-      "platforms": [
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube"
-      ],
-      "status": "scheduled",
+      "platforms": [],
+      "status": "cancelled_non_dog_video",
       "fingerprint": "2026-09-19|soul|δεύτερη-ευκαιρία|αλλαγή-ώστε-να-μην-χτιστεί-ίδια-πληγή",
       "notion_page_id": "3dff2345-b318-817f-b2d4-db61dca9e119",
       "platform_status": {
         "facebook": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378181207"
+          "source_post_id": "378278174",
+          "reason": "Non-dog short videos stopped by user."
         },
         "instagram": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378181207"
+          "source_post_id": "378278174",
+          "reason": "Non-dog short videos stopped by user."
         },
         "tiktok": {
           "status": "blocked_cooldown",
@@ -1627,10 +1722,11 @@
           "retry_status": "deferred_not_scheduled"
         },
         "youtube": {
-          "status": "PENDING",
+          "status": "CANCELLED_BY_USER",
           "public_url": null,
           "error": null,
-          "source_post_id": "378181207"
+          "source_post_id": "378278174",
+          "reason": "Non-dog short videos stopped by user."
         }
       },
       "quality_check": {
@@ -1663,7 +1759,18 @@
       "blocked_networks": [
         "tiktok"
       ],
-      "last_reconciled_at": "2026-09-18T17:54:00+03:00"
+      "last_reconciled_at": "2026-09-18T20:48:00+03:00",
+      "video_delivery": {
+        "post_id": "378278174",
+        "uuid": "-8992648413116346507",
+        "status": "CANCELLED_BY_USER",
+        "draft": true,
+        "auto_publish": false,
+        "cancelled_at": "2026-09-18T20:48:00+03:00",
+        "reason": "Replaced by one daily longer story video; production format pending."
+      },
+      "cancelled_at": "2026-09-18T20:48:00+03:00",
+      "terminal": true
     }
   ]
 }
