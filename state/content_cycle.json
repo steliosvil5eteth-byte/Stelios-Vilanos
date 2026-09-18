@@ -13,5 +13,11 @@
   "next_theme_after_completion": "soul",
   "status": "publishing",
   "partially_published_count": 1,
-  "last_reconciled_at": "2026-09-18T11:24:40.449Z"
+  "last_reconciled_at": "2026-09-18T11:24:40.449Z",
+  "next_cycle_date": "2026-09-19",
+  "next_theme": "soul",
+  "next_target_count": 10,
+  "next_prepared_count": 4,
+  "next_generating_count": 4,
+  "last_future_prepared_at": "2026-09-18T14:25:27+03:00"
 }
