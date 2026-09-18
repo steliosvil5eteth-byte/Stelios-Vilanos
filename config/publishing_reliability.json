@@ -1,6 +1,6 @@
 {
   "version": 3,
-  "updated_at": "2026-09-18T20:00:00+03:00",
+  "updated_at": "2026-09-18T20:20:00+03:00",
   "timezone": "Europe/Athens",
   "rules": "\nPUBLISHING RELIABILITY REPAIR 2026-09-18 (required):\nRead config/publishing_reliability.json before each run. First reconcile ALL due posts by provider (this read/reconciliation work is not limited by max_jobs_per_run). PUBLISHED requires provider PUBLISHED plus a returned public URL; scheduled/PENDING is never published. Keep per-platform status, public URLs, errors and retry post IDs in GitHub and Notion. Mark a job completed only when all four required destinations are confirmed published. A partial failure must never republish successful destinations.\nFor transient timeouts, re-read the original and all known retry posts and check for a public URL or visible published matching post. If absence cannot be established, report an ambiguous result and do not blindly retry. Once absence is established, allow at most ONE delayed automatic retry per job/network with the existing hosted media, only the failed provider, at a future slot at least 15 minutes after failure. Persist the retry ID/UUID immediately and check it on subsequent runs. Never regenerate paid media for a publishing error. The Leo Instagram retry already exists: post 378060016 UUID -4218314236002483607 at 2026-09-18 14:30 Europe/Athens; original 377740952 remains the source for Facebook/TikTok/YouTube. Do NOT create another Leo retry.\nIf TikTok reports too many posts/OpenAPI 403 or a quota, record a per-network cooldown of at least 24 hours from that error (longer if provider specifies), defer only blocked-network pending publications to safe spaced slots after cooldown, preserving original content dates, and continue unaffected destinations. Do not burst catch-up jobs, bypass limits, or create duplicate attempts. Reconcile success after cooldown; do not declare a fixed daily cap guaranteed.\nLegacy photo posts drafted on 2026-09-18 are intentionally retired from the active calendar. Never reactivate or recreate them. Daily targets apply only to the new strategy, plus the explicitly requested weekly introduction. Count all active posts, special posts and retries when checking network load.\nOn explicit Metricool plan/quota errors stop new submissions to affected scope, preserve ready media, notify with exact error; do not purchase or infer current plan from old email. Likewise stop paid generation on insufficient balance; no unapproved credit purchases or paid retries.\nAfter 14:00 Europe/Athens prepare tomorrow's correct calendar theme even while today's future-scheduled posts remain in pending.json. Future pending jobs must not starve tomorrow's generation. Prioritize tomorrow's earliest missing slots; process at most 4 new/advancing generation jobs per run. Reuse task IDs and finished approved dog clip. Preflight quotas/balances through read-only connected tools. Notify if tomorrow remains incomplete by 22:00.\nFor Metricool updates preserve all original relevant content, media and provider settings, but omit unrelated networkData blocks not listed in providers (the read API may return default twitterData/instagramData for TikTok-only posts). Use known hosted Metricool media in info.media when already present; mediaFiles is for local paths. Check post UUID after updates because numeric IDs can change. Keep scheduled, published, partially_published, blocked and needs_review distinct.\n\nUSER EXCLUSIVE TIKTOK RESET 2026-09-18 (latest instruction; overrides earlier retry-preservation and catch-up instructions): Only this daily photo-post pipeline and weekly introduction automation 6aacecbeaf94819198603f4458f8bb29 may publish to TikTok. Daily TikTok content starts 2026-09-19 with 10 photo posts (9 soul/emotional + 1 dog-barista), 2026-09-20 with 12 zodiac photo posts, alternating thereafter on the existing calendar and slots. Do not submit any TikTok daily content dated before 2026-09-19, revive old campaigns, or catch up canceled old videos. TikTok retry UUID -3029365031314767155 is now canceled by user: Metricool draft ID 378222792, autoPublish=false; never reactivate it or create a replacement. Keep all other retired legacy drafts inactive. Preserve the existing provider cooldown and stop-on-failure safeguards. Prepare the full 10-post batch, but on 2026-09-19 publish only at valid remaining configured slots after cooldown, do not squeeze 10 posts into the shortened window or misreport all 10 as scheduled/published. Report any target shortfall. Keep 2026-09-20 zodiac parity even if September 19 is incomplete. The weekly intro remains exactly Monday 23:00 Europe/Athens, starting 2026-09-21, as an additional explicitly authorized video. Changes here concern TikTok only; other networks remain governed by their existing instructions.\n\nAUTHORITATIVE CURRENT USER EXCEPTIONS (synced from config/content_strategy.json):\nONE-DATE USER SCHEDULE EXCEPTION (latest user instruction): For TikTok daily photo content dated 2026-09-19 ONLY, prepare all 10 posts (9 soul/emotional plus 1 dog-barista) and schedule all ten for exactly 2026-09-19T23:00:00+03:00 Europe/Athens, autoPublish=true and autoAddMusic=true. This explicitly overrides prior spaced-slot and no-compression instructions for this date only; it is the requested daily batch, not catch-up or retry traffic. Do not schedule any of these ten earlier that day. Prepare and schedule in advance through Metricool, not by waiting for an hourly task to run at 23:00. Check for duplicate jobs and current provider restrictions. Respect any active provider cooldown/limit extending to the target time; do not bypass it. On failure stop any remaining attempts when still cancellable, and report that simultaneously queued posts may already have been attempted. Do not promise all ten will publish. On 2026-09-20 automatically return to normal zodiac slots from 00:30, then continue the normal 12/10 calendar alternation; retain rolling-quota checks across midnight. Weekly Monday 23:00 introduction and other networks unchanged. Keep canceled legacy posts and retries canceled.\n\nLATEST USER DOG VIDEO EXCEPTION: Keep the dog-barista as a VIDEO on TikTok every second calendar day (soul days), starting 2026-09-19 and then 2026-09-21, 2026-09-23, etc. It REPLACES the previously specified dog photo within the 10-post batch: exactly 9 emotional photo posts plus 1 dog-barista video, not an 11th daily post. Reuse the same approved dog video generated for the other networks, with existing Runway quality/budget rules; no extra paid generation solely for TikTok. TikTok autoAddMusic=true applies to the nine native photo posts; do not assume it adds music to a video on a personal TikTok account. Preserve the dog video's existing audio/silent settings and supported AI labels. For 2026-09-19 only, schedule the dog video together with all nine photo posts at 23:00 Europe/Athens. Thereafter use the existing soul-day dog slot 17:18, and preserve all other regular slots, 12-zodiac-photo days, rolling quotas, cooldowns, stop-on-failure, cancellation and duplicate safeguards. Keep Monday 23:00 introduction as the separate authorized weekly video and the other three platforms unchanged. This dog-video instruction overrides all prior dog-photo-only wording.",
   "retired_legacy_post_uuids": [
@@ -56,14 +56,10 @@
   },
   "deferred_network_posts": {
     "tiktok": [
-      "2026-09-19-soul-03-unsent-message",
-      "2026-09-19-soul-01-love-unforgotten",
-      "2026-09-19-soul-02-no-closure",
       "2026-09-19-soul-04-betrayal",
       "2026-09-19-soul-05-healing-without-apology",
       "2026-09-19-soul-06-self-respect-choose-yourself",
       "2026-09-19-soul-07-memories-show-distance",
-      "2026-09-19-soul-08-dog-barista-foam",
       "2026-09-19-soul-09-longing-in-habits",
       "2026-09-19-soul-10-second-chance-change"
     ]
@@ -103,5 +99,49 @@
     "2026-09-18-zodiac-10-capricorn",
     "2026-09-18-zodiac-11-aquarius",
     "2026-09-18-zodiac-12-pisces"
-  ]
+  ],
+  "tiktok_daily_batches": {
+    "2026-09-19": {
+      "theme": "soul",
+      "target_count": 10,
+      "scheduled_count": 4,
+      "remaining_count": 6,
+      "publication_time": "2026-09-19T23:00:00+03:00",
+      "status": "partially_scheduled",
+      "jobs": [
+        {
+          "job_id": "2026-09-19-soul-01-love-unforgotten",
+          "format": "photo",
+          "post_id": "378262154",
+          "uuid": "9039902732552782139",
+          "status": "PENDING",
+          "media_url": "https://static.metricool.com/planner/202609/7000636-file-4251031602469415811.jpeg"
+        },
+        {
+          "job_id": "2026-09-19-soul-02-no-closure",
+          "format": "photo",
+          "post_id": "378262241",
+          "uuid": "5832980254006985063",
+          "status": "PENDING",
+          "media_url": "https://static.metricool.com/planner/202609/7000636-file-9350330219221664552.jpeg"
+        },
+        {
+          "job_id": "2026-09-19-soul-03-unsent-message",
+          "format": "photo",
+          "post_id": "378262281",
+          "uuid": "-3094728111250849196",
+          "status": "PENDING",
+          "media_url": "https://static.metricool.com/planner/202609/7000636-file-9061311503209270755.jpeg"
+        },
+        {
+          "job_id": "2026-09-19-soul-08-dog-barista-foam",
+          "format": "video",
+          "post_id": "378262286",
+          "uuid": "6234574211891284294",
+          "status": "PENDING",
+          "media_url": "https://static.metricool.com/planner/202609/7000636-file-13815689072781945592.mp4"
+        }
+      ]
+    }
+  }
 }
