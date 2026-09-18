@@ -1,5 +1,5 @@
 {
-  "version": 12,
+  "version": 13,
   "timezone": "Europe/Athens",
   "daily_target_videos": {
     "zodiac": 12,
@@ -253,34 +253,10 @@
     "quality_gate": "Check natural anatomy, persistent props and ending before publishing; on failure report rather than repeatedly regenerate."
   },
   "transition_override": {
-    "effective_date": "2026-09-18",
-    "priority": "Overrides all legacy volume/video rules below",
-    "stop_all_legacy_non_dog_videos": true,
-    "weekly_intro_enabled": false,
-    "new_story": {
-      "target_per_day": 1,
-      "networks": [
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube"
-      ],
-      "status": "awaiting_format_and_duration_selection",
-      "paid_generation_enabled": false
-    },
-    "dog": {
-      "enabled": true,
-      "every_n_calendar_days": 2,
-      "start_date": "2026-09-19",
-      "preserve_existing_schedule": true
-    },
-    "photos": {
-      "existing_schedules": "preserve_pending_user_scope_clarification",
-      "new_batches_enabled": false
-    },
-    "canceled_metricool_uuids": [
-      "-6989681795587618835",
-      "5545531062385330284",
+    "effective_date": "2026-09-20",
+    "priority": "Highest: latest user clarification",
+    "preserve_prepaid_videos_date": "2026-09-19",
+    "restored_metricool_uuids": [
       "8732791487214272690",
       "-2878152742504479547",
       "-939280630344170335",
@@ -291,12 +267,38 @@
       "2510727418625477636",
       "-8992648413116346507"
     ],
-    "do_not_reactivate_legacy_videos": true,
-    "credit_snapshot": {
-      "heygen_remaining": 553,
-      "heygen_resets_at": "2026-10-17T15:04:42Z",
-      "runway_remaining": 107
+    "photos": {
+      "preserve_existing": true,
+      "continue_existing_photo_schedule": true
     },
-    "instruction": "\n\nLATEST USER CHANGE 2026-09-18 — overrides all previous volume/video instructions: Immediately stop creating, scheduling, retrying or reviving ALL non-dog videos, including zodiac, short emotional videos and weekly introduction. The user is replacing these with ONE daily longer story video cross-posted to Facebook, Instagram, TikTok and YouTube; production format and safe duration are being finalized in the current conversation. Until those choices are recorded, do not spend HeyGen credits or produce new story videos. Preserve dog-barista branch only as a video every other calendar day starting 2026-09-19, same existing times (17:18 Facebook/Instagram/YouTube; TikTok 23:00 on 19/9 only, normal dog slot thereafter), one unique clip cross-posted four ways. Do not cancel dog jobs. Current verified budgets: HeyGen 553 credits resets 2026-10-17; Runway 107 purchased credits, plan balance 0. Check live balances before spending and stop if insufficient; no purchases. Existing photo posts are outside the explicit video cancellation scope pending user clarification; do not create additional photo batches while the replacement strategy is being finalized. Existing canceled non-dog video jobs must never be reactivated from GitHub queues. Apply this instruction even if repository strategy is stale. Continue read-only publication reconciliation and dog processing under existing safety/quality/cooldown rules."
+    "dog": {
+      "unchanged": true
+    },
+    "weekly_intro_enabled": false,
+    "new_story": {
+      "target_per_day": 1,
+      "topic": "Fact-checked unusual things around the world",
+      "format": "still images and Greek narration; no avatar",
+      "start_date": "2026-09-20",
+      "daily_time": "23:00",
+      "networks": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "budget": {
+        "balance": 553,
+        "days": 30,
+        "max_credits_per_episode": 14,
+        "reserve": 133,
+        "provisional_seconds": 20,
+        "rate_credits_per_minute": 40,
+        "cost_confirmation_required": true,
+        "status": "generation_blocked_until_all_in_cost_verified",
+        "renewal": "2026-10-17T15:04:42Z"
+      }
+    },
+    "instruction": "\n\nAUTHORITATIVE USER CLARIFICATION 2026-09-18 (supersedes prior transition block): Preserve and publish all already-generated/paid videos for 2026-09-19 at their existing times. Nine restored non-dog UUIDs: 8732791487214272690, -2878152742504479547, -939280630344170335, 7119671207944077321, 4494981964765348564, 1827937260421661697, -6171012434982779529, 2510727418625477636, -8992648413116346507. They are explicitly authorized; do not cancel them or regenerate paid media. Keep ALL existing additional TikTok photo posts and resume the established photo-only daily 12 zodiac / 9 soul plus dog-video calendar, existing times and 19/9 23:00 exception, all cooldowns and limits. Preserve corrected standalone JPEG UUID -3029365031314767155 now explicitly active at 19/9 23:00; earlier cancellation wording is obsolete. Dog videos remain wholly unchanged: one unique dog video every two days starting 19/9, crossposted to four networks, same existing timing/model/quality rules; no credit purchases or cadence substitutions. Weekly intro remains paused; today's two canceled zodiac videos remain canceled, no catch-up.\nFrom 2026-09-20 produce ONE original daily factual world-curiosities story using still images + Greek narration + Greek subtitles, vertical 9:16, NO visible avatar/presenter and NO expensive generated motion clips. Use credible current sources for factual claims; distinguish myths, unknowns and facts. Reuse the same finished video across Facebook/Instagram/TikTok/YouTube, one per network per date, at 23:00 Europe/Athens as daily story slot (respect live cooldown/quota checks; never bypass restrictions). This is additional to preserved photos and dog.\nBudget: verified HeyGen 553 credits on 18/9, renewal 17/10 18:04:42 Europe/Athens. Conservatively fund 30 stories dated 20/9–19/10 from CURRENT balance alone, do not assume future credits. Nominal allowance 18.433 credits/day; cap ALL-IN new-story spend at 14 credits/episode, 420 credits/30 episodes, preserve at least133 credits reserve. Official https://help.heygen.com/en/articles/15126059-how-to-use-credits-on-heygen says Standard Video Agent 40 credits/min (not avatar_iii 7). Provisional duration20seconds, not2minutes. Include all asset/speech/render costs and rounding within14; obtain actual estimate before any generation, no paid estimate tests. If a cheaper still-images/narration route has VERIFIED all-in cost, maximize coherent duration within14 credits (up to120seconds), recording calculation; never infer voice-only pricing from avatar or translation. Existing stock/licensed media preferable; generated visual reconstructions must not masquerade as documentary photos. If no confirmed bounded-cost route exists, prepare sourced script/visual plan without paid work and report blocker; do not claim produced or scheduled. Never call video_agent_generate solely for pricing because it starts a session. Pricing-only session7fbafe9b41d04f149c0c84b920956c1d was sent a stop request; never resume or render it. Runway budget is reserved for dog, not stories; no cross-provider balance pooling. Check credits each run, no purchases/paid retries. Keep IDs and per-platform states in GitHub/Notion, reconcile duplicate jobs, published only with PUBLISHED+public URL. Monthly renewal triggers fresh recalculation over next full cycle."
   }
 }
