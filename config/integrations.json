@@ -4,7 +4,12 @@
     "brand_id": 7000636,
     "user_id": 5403385,
     "timezone": "Europe/Athens",
-    "networks": ["facebook", "instagram", "tiktok", "youtube"]
+    "networks": [
+      "facebook",
+      "instagram",
+      "tiktok",
+      "youtube"
+    ]
   },
   "heygen": {
     "enabled": true,
@@ -31,7 +36,14 @@
   "publishing": {
     "daily_target_videos": 12,
     "publish_to_all_connected_socials": true,
-    "require_user_confirmation": false
+    "require_user_confirmation": false,
+    "daily_target_videos_by_theme": {
+      "zodiac": 12,
+      "soul": 10
+    },
+    "daily_target_source": "config/content_strategy.json",
+    "reliability_file": "config/publishing_reliability.json",
+    "daily_target_videos_note": "Legacy zodiac fallback only; use daily_target_videos_by_theme and strategy for the calendar date."
   },
   "runner": {
     "max_jobs_per_run": 4,
