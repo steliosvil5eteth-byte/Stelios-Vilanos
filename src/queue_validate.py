@@ -13,6 +13,7 @@ ALLOWED_STATUS = {
     "generating",
     "needs_review",
     "scheduled",
+    "partially_published",
     "published",
     "failed",
 }
