@@ -1,0 +1,50 @@
+name: Prepare Flying Dutchman visual inputs
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/legend-20260920-visuals.yml','tools/prepare_flying_dutchman.py']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: no-credit-media-output
+  cancel-in-progress: false
+jobs:
+  prepare:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install image preparation dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq python3-pil fonts-dejavu-core
+      - name: Download documented public-domain art and prepare 9-by-16 cards
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/legend-prepared
+        run: /usr/bin/python3 tools/prepare_flying_dutchman.py
+      - name: Keep public visual inputs separate from source code
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/legend-prepared
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/legend-output-repo"
+          git fetch origin media-output --depth=1
+          git worktree add --detach "$OUT" FETCH_HEAD
+          mkdir -p "$OUT/jobs"
+          cp -a "$OUTPUT_DIR"/. "$OUT/jobs/"
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/legend-20260920-flying-dutchman
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Prepare Flying Dutchman public-domain visual inputs; no AI or publishing calls'
+            git -C "$OUT" push origin HEAD:media-output
+          fi
+      - name: Export visuals for real inspection
+        uses: actions/upload-artifact@v4
+        with:
+          name: flying-dutchman-visual-inputs
+          path: ${{ runner.temp }}/legend-prepared/legend-20260920-flying-dutchman/
+          if-no-files-found: error
+          retention-days: 2
