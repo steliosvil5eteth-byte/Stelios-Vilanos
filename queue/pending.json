@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "jobs": [],
   "reset": {
     "requested_on": "2026-09-19",
@@ -7,7 +7,11 @@
     "reason": "User requested clearing the old queue and removing all dog videos. Old standalone zodiac/emotional jobs must not be restored. The new program has four logical posts daily per platform.",
     "previous_content_sha": "790a660438c503f855b8293cfb21fcef74bddcf9",
     "history_policy": "Old records remain in Git history. Completed publication history is unchanged. Emptying this file does not itself delete remotely hosted video files or already-published posts.",
-    "preserved_remote_schedule": "Existing single daily phenomenon videos at 18:00 Europe/Athens from 20 through 30 September remain in Metricool under their existing UUIDs. Do not recreate them from this empty pending queue.",
-    "new_media_status": "New daily twelve-card zodiac carousel, coherent five-card story and a different legend require real media preparation and QA before scheduling. Do not substitute Flying Dutchman or dog content."
+    "preserved_remote_schedule": "SUPERSEDED by the user's complete queue-clear instruction: all reviewed Metricool entries dated 20-30 September 2026, including phenomenon videos, are now draft=true and autoPublish=false. Do not restore or reschedule them. No entries were returned for 1 October-31 December 2026 in the latest read.",
+    "new_media_status": "New daily twelve-card zodiac carousel, coherent five-card story, phenomenon video and a different legend require actual preparation/QA and a deliberate restart before scheduling. They are NOT currently scheduled. Never substitute Flying Dutchman or dog content.",
+    "publishing_hold": true,
+    "related_automation_status": "The six ChatGPT preparation, sourcing, assembly, scheduling, repair and weekly-planning tasks were confirmed disabled on 19 September 2026. Do not resume them as a routine repair or refill the old queue.",
+    "remote_deletion_status": "NOT COMPLETED. The available Metricool connector has no deletion action. The old remote entries remain cancelled drafts, not deleted files. A scoped deletion request was sent to Metricool support on 19 September 2026; no completion confirmation has been received.",
+    "support_request_scope": "Delete only obsolete unpublished planner entries created on or before 19 September 2026 and planned for 20-30 September 2026, plus the previously identified unpublished dog drafts. Exclude already-published posts, new replacement entries created from 20 September onward, account/brand/subscription changes and unrelated source files."
   }
 }
