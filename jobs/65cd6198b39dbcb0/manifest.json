@@ -1,0 +1,490 @@
+{
+  "batch_sha256": "65cd6198b39dbcb0a024272c0ab33a0aef5a469daff8343308a6aa7ec6aeb3a9",
+  "batch_id": "65cd6198b39dbcb0",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "music-20260920-emotion1",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-1008071703018410527.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-emotion1.mp4",
+          "bytes": 549858,
+          "sha256": "c53e80e776ad3517edb3d0004525ec089ad2f624986b67524b8fc327d4b07b7c"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-emotion2",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-17839762938741990178.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-emotion2.mp4",
+          "bytes": 530016,
+          "sha256": "691806003867470613bf912e1f5af07dd6266ca082606bb349de1cc35e62754c"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-emotion3",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-2325916646625467205.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-emotion3.mp4",
+          "bytes": 533933,
+          "sha256": "8dc493edbb7f78c5f8abc285aadc2042179107f2a80988abdea535c1ab57105b"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-emotion4",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-12898887496861964161.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-emotion4.mp4",
+          "bytes": 548433,
+          "sha256": "bc9cd8d3c70bc767721e4d79f6300ad6f92b55600180d267082b92313306b9c5"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-emotion5",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-6242912684288043765.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-emotion5.mp4",
+          "bytes": 551673,
+          "sha256": "083db27f77f621332bb422ccf809e93e1723ee6f9462fd875e325ebbdc148a48"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-p4-aries",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-10565123331970384407.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-p4-aries.mp4",
+          "bytes": 597504,
+          "sha256": "fb0b22b70994b40e0977cd84e4b7fa2644950f8f5771774f6759fe34c3277763"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-p4-taurus",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-2643357955930071313.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-p4-taurus.mp4",
+          "bytes": 602726,
+          "sha256": "9523aa1de699707b662f0c2904cfba1e06c6d6a52a1b15182e2e6cd7e4a6aa84"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-p4-gemini",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-1673706076751611080.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-p4-gemini.mp4",
+          "bytes": 620263,
+          "sha256": "6798857d14a69f957a65ee82001b4d8e015d1450dece672bcc52931e3edcb479"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-p4-cancer",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-14606476793695845311.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-p4-cancer.mp4",
+          "bytes": 596834,
+          "sha256": "14841f46037e5ebb57a01b12fc1a30386fe4caae3771d77912de3083d5f89231"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-p4-leo",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-12292746523479471504.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-p4-leo.mp4",
+          "bytes": 608907,
+          "sha256": "3b5ce0ff04a7a5279e2ea78ab7f7b44d5e9b3ffe5a5d3a351ff0be27fc1a8c64"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-p4-virgo",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-13585979926545095215.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-p4-virgo.mp4",
+          "bytes": 616016,
+          "sha256": "b8306669f35123d4459a71f87d472892996080c2bc28c350e38adcd5e06c7a44"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-p4-libra",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-2124335554087592248.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-p4-libra.mp4",
+          "bytes": 598012,
+          "sha256": "6e5b3b7d98f244c9bc3162ec77c7a4480068f76e39be9085ff0e4f3ca232fc51"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-p4-scorpio",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-3925806074315798379.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-p4-scorpio.mp4",
+          "bytes": 623259,
+          "sha256": "637269579569580e0d9ae7a337f6d980d7dd6008d839898ef4ae816dd8ab978f"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-p4-sagittarius",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-11513391518979634694.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-p4-sagittarius.mp4",
+          "bytes": 608613,
+          "sha256": "f67e4afffc209df2fe24caf120323fdb5881b220cd21a5794077a82e398257fe"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-p4-capricorn",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-15347606855526826290.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-p4-capricorn.mp4",
+          "bytes": 581265,
+          "sha256": "a83665126bd9b8dd2c0fa802cb95930d0e4bd9c8f86715a4ba24e436d91bebb6"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-p4-aquarius",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-7732870573754134269.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-p4-aquarius.mp4",
+          "bytes": 615374,
+          "sha256": "28eef5fddbe0541eb13cbf596930c6825a2e8fa7e489bb4f9695a71f8c91a5a1"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-p4-pisces",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-11636474775364358864.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-p4-pisces.mp4",
+          "bytes": 612764,
+          "sha256": "9b88351fc7d92af35f586c1cedd0c9a8e38d36ed0fac713b8eb1338564587e49"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-p3-aries",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-17195682348260800149.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-p3-aries.mp4",
+          "bytes": 593160,
+          "sha256": "5ce44649bca786bebae8cea698a071e47e271909056e20ba0d408b6991c857f2"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-p3-taurus",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-3175565435537820074.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-p3-taurus.mp4",
+          "bytes": 567884,
+          "sha256": "dcfb4f8e21b091e9fe8e19874b8bd68da0cd5d37538959766d959fe8d7e5ecae"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-p3-gemini",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-3037561418967715220.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-p3-gemini.mp4",
+          "bytes": 586797,
+          "sha256": "20d6eb55308c6fc78807e4ec7b630861e71185c56c1cd6775d438da3dfa1ec3e"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-p3-cancer",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-1007226929789701809.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-p3-cancer.mp4",
+          "bytes": 571002,
+          "sha256": "9fa96fa380b5feacff7f871e0f46a6477f53b49dce36f17ae9def63f195bb7b8"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-p3-leo",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-15930709134373117769.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-p3-leo.mp4",
+          "bytes": 588081,
+          "sha256": "e41133576c64ab8890ba222b10886c1679eb3ea3d3a7a0961059a70084acd151"
+        }
+      ]
+    },
+    {
+      "id": "music-20260920-p3-virgo",
+      "mode": "image_music_video",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-15409037742056075006.jpeg",
+      "attribution": "Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording.",
+      "title": null,
+      "text": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "source_visual_preserved": true,
+      "files": [
+        {
+          "name": "music-20260920-p3-virgo.mp4",
+          "bytes": 579108,
+          "sha256": "14e8880f3811ba9da7f55cfd67f586a6b83b05f46bfaa58dabf4d4bb422f9f72"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "batch_id": "65cd6198b39dbcb0",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "music-20260920-emotion1",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-emotion2",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-emotion3",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-emotion4",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-emotion5",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-p4-aries",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-p4-taurus",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-p4-gemini",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-p4-cancer",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-p4-leo",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-p4-virgo",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-p4-libra",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-p4-scorpio",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-p4-sagittarius",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-p4-capricorn",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-p4-aquarius",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-p4-pisces",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-p3-aries",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-p3-taurus",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-p3-gemini",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-p3-cancer",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-p3-leo",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    },
+    {
+      "id": "music-20260920-p3-virgo",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "error": null
+    }
+  ]
+}
