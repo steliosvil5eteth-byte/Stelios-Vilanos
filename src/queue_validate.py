@@ -14,6 +14,7 @@ ALLOWED_STATUS = {
     "needs_review",
     "scheduled",
     "scheduled_tiktok_photo_video_cancelled",
+    "cancelled_non_dog_video",
     "partially_published",
     "published",
     "failed",
