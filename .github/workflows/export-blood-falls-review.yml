@@ -1,0 +1,51 @@
+name: Export Blood Falls for review
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/export-blood-falls-review.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: export-blood-falls-review
+  cancel-in-progress: false
+
+jobs:
+  export-existing-media:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Read the existing immutable media revision
+        uses: actions/checkout@v4
+        with:
+          ref: 3e41070c03a0701d8c3169ec6147a68582a17719
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            /jobs/6fc96d26ed10fde1/story-20260920-blood-falls.mp4
+            /jobs/6fc96d26ed10fde1/story-20260920-blood-falls-opening.jpg
+            /jobs/6fc96d26ed10fde1/story-20260920-blood-falls-middle.jpg
+            /jobs/6fc96d26ed10fde1/story-20260920-blood-falls-ending.jpg
+            /jobs/6fc96d26ed10fde1/manifest.json
+      - name: Verify exact previously rendered file
+        shell: bash
+        run: |
+          set -euo pipefail
+          echo '037b1994f9215972d83d627c9a36dd4e2437e34f3ec44c25d61557ce67aaa2eb  jobs/6fc96d26ed10fde1/story-20260920-blood-falls.mp4' | sha256sum --check
+          mkdir -p review
+          cp jobs/6fc96d26ed10fde1/story-20260920-blood-falls* review/
+          cp jobs/6fc96d26ed10fde1/manifest.json review/render_manifest.json
+          printf '%s\n' 'Existing complete Blood Falls file only. SHA256 verified. No rendering, TTS, paid AI, or social publishing called. Original narration retained; the added closing card is written, not newly spoken.' > review/README.txt
+      - name: Export file for authorized visual review
+        uses: actions/upload-artifact@v4
+        with:
+          name: blood-falls-existing-file-review
+          path: review/
+          if-no-files-found: error
+          retention-days: 1
+          compression-level: 0
