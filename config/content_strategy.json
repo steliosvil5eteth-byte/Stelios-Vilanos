@@ -1,5 +1,5 @@
 {
-  "version": 15,
+  "version": 16,
   "timezone": "Europe/Athens",
   "daily_target_videos": {
     "zodiac": 12,
@@ -424,14 +424,11 @@
       ]
     },
     "dog_video": {
-      "cadence": "every 2 calendar days",
-      "preserve_existing": true,
-      "networks": [
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube"
-      ]
+      "status": "disabled",
+      "publish": false,
+      "generate": false,
+      "schedule": false,
+      "rule": "USER CORRECTION 2026-09-19: Do not publish, generate, schedule, retry, revive, or substitute any dog videos on any platform. Dog content is completely removed from the active strategy."
     },
     "originality_gate": {
       "enabled": true,
@@ -455,7 +452,7 @@
     "publishing": {
       "autopublish": true,
       "start": "2026-09-20",
-      "rule": "Apply this strategy prospectively. Do not duplicate, revive, or overwrite already-published items. Reconcile existing scheduled items before creating replacements."
+      "rule": "Apply this strategy prospectively. Do not duplicate, revive, or overwrite already-published items. Reconcile existing scheduled items before creating replacements. Dog videos are excluded entirely."
     }
   }
 }
