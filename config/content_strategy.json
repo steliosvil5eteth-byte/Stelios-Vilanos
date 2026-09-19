@@ -1,5 +1,5 @@
 {
-  "version": 14,
+  "version": 15,
   "timezone": "Europe/Athens",
   "daily_target_videos": {
     "zodiac": 12,
@@ -305,7 +305,7 @@
   },
   "latest_user_transition": {
     "effective_at": "2026-09-18T20:46:46+03:00",
-    "status": "active",
+    "status": "superseded_by_current_strategy_2026_09_20",
     "non_dog_videos": "stopped",
     "stop_scope": [
       "zodiac videos",
@@ -349,5 +349,113 @@
       "runway_plan_credits": 0
     },
     "safety": "No purchases; check live balance before dog generation; no new paid story generation until user finalizes format."
+  },
+  "current_strategy": {
+    "effective_date": "2026-09-20",
+    "timezone": "Europe/Athens",
+    "priority": "AUTHORITATIVE_LATEST_USER_STRATEGY",
+    "networks": [
+      "facebook",
+      "instagram",
+      "tiktok",
+      "youtube"
+    ],
+    "alternating_daily_posts": {
+      "start_date": "2026-09-20",
+      "day_1": {
+        "type": "zodiac_carousel",
+        "count": 1,
+        "cards": 12,
+        "order": [
+          "Κριός",
+          "Ταύρος",
+          "Δίδυμος",
+          "Καρκίνος",
+          "Λέων",
+          "Παρθένος",
+          "Ζυγός",
+          "Σκορπιός",
+          "Τοξότης",
+          "Αιγόκερως",
+          "Υδροχόος",
+          "Ιχθύς"
+        ],
+        "rule": "One carousel/slideshow containing all 12 zodiac cards. Never publish the 12 signs as 12 separate posts."
+      },
+      "day_2": {
+        "type": "emotional_story_carousel",
+        "count": 1,
+        "cards": 5,
+        "themes": [
+          "έρωτας",
+          "χωρισμός",
+          "ψυχή"
+        ],
+        "rule": "One complete five-card story. Every day/story must be genuinely different from prior stories: different opening, hook, characters/situation, wording, phrases, progression, twist and ending. No template-level paraphrases or repeated first lines."
+      },
+      "repeat": "alternate day_1 and day_2 by Europe/Athens calendar date"
+    },
+    "daily_premium_legend_video": {
+      "count": 1,
+      "format": "9:16 vertical video; no avatar",
+      "duration_target": "75-120 seconds",
+      "requirements": [
+        "strong unique hook",
+        "original Greek script",
+        "Greek narration",
+        "readable Greek subtitles throughout",
+        "multiple relevant visuals",
+        "fact/theory distinction where applicable",
+        "immediate final CTA with no long silent gap",
+        "monetization-safe rights and originality check"
+      ],
+      "distribution": "same master video to all four platforms with platform-specific metadata"
+    },
+    "unusual_things_video": {
+      "cadence": "1 per day",
+      "through_2026_09_30": "use already prepared/scheduled unusual-things videos; do not regenerate duplicates",
+      "from_2026_10_01": "create one new original unusual/strange/fact-checked video per day",
+      "no_avatar": true,
+      "networks": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ]
+    },
+    "dog_video": {
+      "cadence": "every 2 calendar days",
+      "preserve_existing": true,
+      "networks": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ]
+    },
+    "originality_gate": {
+      "enabled": true,
+      "compare_history": true,
+      "never_reuse_exact_hook": true,
+      "never_reuse_exact_script": true,
+      "never_reuse_exact_opening": true,
+      "never_reuse_exact_phrase_pattern": true,
+      "avoid_near_duplicate_structure": true
+    },
+    "monetization_gate": {
+      "enabled": true,
+      "check_before_publish": [
+        "TikTok",
+        "YouTube",
+        "Facebook",
+        "Instagram"
+      ],
+      "rule": "Prefer fewer original high-quality posts over mass repetitive output. Do not claim monetization eligibility solely from follower/view thresholds."
+    },
+    "publishing": {
+      "autopublish": true,
+      "start": "2026-09-20",
+      "rule": "Apply this strategy prospectively. Do not duplicate, revive, or overwrite already-published items. Reconcile existing scheduled items before creating replacements."
+    }
   }
 }
