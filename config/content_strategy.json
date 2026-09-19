@@ -1,89 +1,48 @@
 {
-  "version": 16,
+  "version": 17,
   "timezone": "Europe/Athens",
-  "daily_target_videos": {
-    "zodiac": 12,
-    "soul": 10
+  "strategy_id": "FOUR_DAILY_V1",
+  "effective_date": "2026-09-20",
+  "priority": "AUTHORITATIVE_LATEST_USER_STRATEGY",
+  "legacy_pipeline": {
+    "enabled": false,
+    "generation_enabled": false,
+    "publishing_enabled": false,
+    "rule": "All previous alternating 12/10, 13/19, six-sign, standalone-card, avatar, weekly-introduction and dog pipelines are retired. Do not reactivate them or recover their cancelled queue. Historical settings remain available only in Git history."
   },
-  "video_duration_seconds": {
-    "min": 10,
-    "max": 13
-  },
-  "format": {
-    "aspect_ratio": "9:16",
-    "resolution": "720p",
-    "fit": "cover"
-  },
+  "daily_target_posts_per_network": 4,
+  "daily_target_videos": {"phenomenon": 1, "legend": 1},
   "cycle": {
-    "start_date": "2026-09-18",
-    "order": [
-      "zodiac",
-      "soul"
-    ],
-    "advance_only_after_full_day_completed": false,
+    "mode": "all_four_every_day",
+    "start_date": "2026-09-20",
+    "alternating_days": false,
+    "order": ["zodiac_carousel", "emotional_story_carousel", "phenomenon_video", "legend_video"],
     "pre_generate_future_days": true,
-    "prepare_next_day_after_local_hour": 14,
-    "date_rule": "Calendar-day parity in Europe/Athens from 2026-09-18: even offset zodiac, odd offset soul. Missed jobs never shift the alternating dates."
+    "date_rule": "All four categories occur on every Europe/Athens calendar date. A missed or blocked item never shifts the calendar and is never automatically reposted as catch-up."
   },
-  "zodiac_day": {
-    "videos": 12,
-    "signs_in_order": [
-      "Κριός",
-      "Ταύρος",
-      "Δίδυμος",
-      "Καρκίνος",
-      "Λέων",
-      "Παρθένος",
-      "Ζυγός",
-      "Σκορπιός",
-      "Τοξότης",
-      "Αιγόκερως",
-      "Υδροχόος",
-      "Ιχθύς"
-    ],
-    "rule": "Use one shared daily angle across all 12 signs. Each sign gets one original script tailored to that sign. The shared angle must not repeat within 60 days.",
-    "angle_pool": [
-      "πώς ερωτεύεται",
-      "τι δεν συγχωρεί",
-      "πώς ζηλεύει",
-      "τι κάνει όταν του λείπεις",
-      "πώς φέρεται μετά τον χωρισμό",
-      "ποια πληγή κρύβει",
-      "τι χρειάζεται για να εμπιστευτεί",
-      "πώς δείχνει ότι σε θέλει",
-      "τι τον κάνει να απομακρύνεται",
-      "πώς αντιδρά στην προδοσία",
-      "τι δεν λέει ποτέ αλλά νιώθει",
-      "πώς ζητά δεύτερη ευκαιρία",
-      "τι φοβάται περισσότερο σε μια σχέση",
-      "πώς αγαπά όταν νιώθει ασφάλεια",
-      "τι τον κάνει να επιστρέψει",
-      "πώς κλείνει έναν κύκλο",
-      "τι τον πληγώνει πιο βαθιά",
-      "πώς συμπεριφέρεται όταν έχει θυμώσει",
-      "πώς είναι όταν νιώθει ότι δεν τον εκτιμούν",
-      "τι χρειάζεται για να μείνει"
-    ]
+  "publishing": {
+    "networks": ["facebook", "instagram", "tiktok", "youtube"],
+    "autopublish": true,
+    "slots_local_time": ["12:30", "15:20", "18:00", "21:40"],
+    "schedule_effective_date": "2026-09-20",
+    "caption_language": "el",
+    "hashtags_per_post": 5,
+    "schedule_rule": "Implementation defaults reuse prior time slots, not a claim of a newly user-selected timetable. Publish only within 12:30-23:30, after real QA and current provider/account and rolling-24-hour capacity checks. These are four logical posts per platform, not twelve or five separate card posts."
   },
-  "soul_day": {
-    "videos": 10,
-    "rule": "Exactly 9 emotionally distinct HeyGen videos about love, romance, separation and lived feelings that speak to the viewer's soul, plus exactly 1 funny Runway dog-barista video; 10 total, not 10 plus a dog. Choose 9 distinct angles from the pool, rotating across days.",
-    "required_distinct_angles": [
-      "αγάπη που δεν ξεχάστηκε",
-      "χωρισμός χωρίς κλείσιμο",
-      "μήνυμα που δεν στάλθηκε",
-      "προδοσία",
-      "μοναξιά μετά από σχέση",
-      "ανάμνηση που επιστρέφει",
-      "αυτοσεβασμός και όρια",
-      "δεύτερη ευκαιρία",
-      "θεραπεία και προχώρημα",
-      "αγάπη που ήρθε αργά",
-      "συγγνώμη που δεν ειπώθηκε",
-      "λόγια που μιλούν στην ψυχή"
-    ],
-    "emotional_videos": 9,
-    "dog_barista_videos": 1
+  "workflow": {
+    "ask_for_confirmation_before_generation": false,
+    "ask_for_confirmation_before_publishing": false,
+    "authorization_basis": "Standing user authorization for routine daily preparation and internal QA; never claim personal user review of unseen media.",
+    "generate_title_caption_hashtags_automatically": true,
+    "quality_check_every_video": true,
+    "archive_every_video_in_github": true,
+    "archive_every_video_in_notion": true,
+    "continue_without_user_action_when_tools_allow": true,
+    "regular_scheduler": "Approval Gate",
+    "paid_feature_renderer": "Visual Story Assembly",
+    "master_notion_page_id": "3e0f2345-b318-81c0-9e1c-e8b4b7d19e9d",
+    "audio_qa_notion_page_id": "3e0f2345-b318-818f-9508-d00ec0269dec",
+    "migration_hold_rule": "Do not schedule or recreate work while the master migration status is IN_PROGRESS or an obsolete active queue remains. A policy update is not proof of ready media, scheduling or publication."
   },
   "originality_rules": {
     "minimum_days_before_reusing_same_core_angle": 60,
@@ -105,354 +64,124 @@
     "learning_state_file": "state/weekly_learning.json",
     "evaluate_each_network_separately": true,
     "evaluate_combined_performance": true,
-    "metrics_priority": [
-      "views_or_reach",
-      "average_watch_time",
-      "completion_or_retention",
-      "shares",
-      "saves",
-      "comments",
-      "likes",
-      "follows_or_profile_actions"
-    ],
+    "metrics_priority": ["views_or_reach", "average_watch_time", "completion_or_retention", "shares", "saves", "comments", "likes", "follows_or_profile_actions"],
     "rules": [
-      "Identify the strongest hooks, emotional angles, zodiac topics, script structures, video lengths, posting slots and CTA patterns from the previous full week.",
-      "Identify weak patterns and reduce their use unless they are deliberate experiments.",
-      "Use successful mechanisms as inspiration but never copy an old script, hook, punchline or near-duplicate concept.",
-      "Prefer evidence from retention, shares and saves over likes alone when those metrics are available.",
-      "Do not overfit to one viral outlier; look for repeated patterns across multiple posts and platforms.",
-      "If data is insufficient, keep the existing strategy and continue testing rather than inventing conclusions."
+      "Use comparable actual metrics and distinguish missing data from zero.",
+      "Learn from strong hooks and retention without copying old scripts or near-duplicate stories.",
+      "Do not overfit to a single viral outlier or claim guaranteed growth or monetization.",
+      "The weekly planner may refine themes but must not alter the four daily categories, counts or requested formats without a new user instruction."
     ],
-    "next_week_mix": {
-      "proven_pattern_share": 0.7,
-      "new_experiment_share": 0.3
-    },
+    "next_week_mix": {"proven_pattern_share": 0.7, "new_experiment_share": 0.3},
     "apply_findings_automatically": true
   },
-  "workflow": {
-    "ask_for_confirmation_before_generation": false,
-    "ask_for_confirmation_before_publishing": false,
-    "generate_title_caption_hashtags_automatically": true,
-    "quality_check_every_video": true,
-    "archive_every_video_in_github": true,
-    "archive_every_video_in_notion": true,
-    "continue_without_user_action_when_tools_allow": true
-  },
-  "publishing": {
-    "networks": [
-      "facebook",
-      "instagram",
-      "tiktok",
-      "youtube"
-    ],
-    "autopublish": true,
-    "slots_local_time": [
-      "00:30",
-      "02:30",
-      "04:30",
-      "06:30",
-      "08:30",
-      "10:30",
-      "12:30",
-      "14:30",
-      "16:30",
-      "18:30",
-      "20:30",
-      "22:30"
-    ],
-    "caption_language": "el",
-    "hashtags_per_post": 5,
-    "slots_by_theme": {
-      "zodiac": [
-        "00:30",
-        "02:30",
-        "04:30",
-        "06:30",
-        "08:30",
-        "10:30",
-        "12:30",
-        "14:30",
-        "16:30",
-        "18:30",
-        "20:30",
-        "22:30"
-      ],
-      "soul": [
-        "00:30",
-        "02:54",
-        "05:18",
-        "07:42",
-        "10:06",
-        "12:30",
-        "14:54",
-        "17:18",
-        "19:42",
-        "22:06"
-      ]
-    },
-    "dog_barista_slot": "17:18",
-    "schedule_effective_date": "2026-09-19",
-    "schedule_rule": "Start at 00:30 Europe/Athens on each content calendar date. Spread zodiac posts every 120 minutes, soul posts every 144 minutes. Preserve 2026-09-18 remaining slots as a transition. Never reset platform rolling quotas at midnight or burst missed slots.",
-    "platform_overrides": {
-      "tiktok": {
-        "format": "photo",
-        "mime_type": "image/jpeg",
-        "width": 1080,
-        "height": 1080,
-        "autoPublish": true,
-        "autoAddMusic": true,
-        "applies_to": "daily_zodiac_soul_and_dog_posts",
-        "rules": "USER TIKTOK FORMAT CHANGE 2026-09-18 — authoritative for the daily TikTok branch over earlier video-only instructions:\nFor TikTok @steliosvilanos only, create and automatically publish native PHOTO POSTS (JPEG 1080x1080, large readable Greek text, full uncropped copy), not avatar videos, MP4 slideshows or Runway clips. Include title, caption, 5 hashtags, comments enabled, autoPublish=true and TikTok autoAddMusic=true using the supported Metricool schema. Preserve calendar parity, exact configured slots and 12 zodiac / 10 soul daily targets (9 emotional photo posts plus 1 funny dog-barista photo post). The same daily concept may have different media by network; track TikTok photo media and separate Metricool IDs per network without duplicating logical jobs. Reuse/adapt existing approved scripts and reference images; do not buy video generation for TikTok. Use applicable image-generation and Library skills for new photo assets; verify JPEG MIME, file size and visual quality before submission. Do not reactivate retired legacy posts.\nBefore any future TikTok submission, reconcile existing scheduled/published posts and cooldowns. Convert only unposted daily TikTok destinations to photos, removing TikTok from any future shared video schedule before creating the corresponding photo schedule, while preserving all other provider settings and times. Never replace a published post or duplicate an existing retry. Preserve the existing corrected JPEG retry 378182641 / -3029365031314767155 and include it in load accounting. If an existing scheduled item cannot be safely updated, report the blocker rather than create a duplicate.\nOn any TikTok publishing failure, stop remaining TikTok attempts that local day; resume no earlier than next day AND expiration of any longer provider cooldown. The recorded cooldown is through 2026-09-19 16:07 Europe/Athens; re-read current reliability state, never shorten it or test/bypass it by changing media. No burst catch-up. Prepare images during cooldown without submitting blocked publications.\nKeep other networks' current setup and the separate weekly introduction task unchanged in this TikTok-only update. Evaluate photo-post analytics appropriately (shares/saves/comments/follows/reach; video retention only where applicable). Archive each photo post and per-platform status in the same GitHub/Notion histories. The target is automatic creation and scheduling without additional user confirmation, subject to actual quotas and tool availability; report scheduling versus confirmed publication accurately.",
-        "exclusive_reset_rule": "USER EXCLUSIVE TIKTOK RESET 2026-09-18 (latest instruction; overrides earlier retry-preservation and catch-up instructions): Only this daily photo-post pipeline and weekly introduction automation 6aacecbeaf94819198603f4458f8bb29 may publish to TikTok. Daily TikTok content starts 2026-09-19 with 10 photo posts (9 soul/emotional + 1 dog-barista), 2026-09-20 with 12 zodiac photo posts, alternating thereafter on the existing calendar and slots. Do not submit any TikTok daily content dated before 2026-09-19, revive old campaigns, or catch up canceled old videos. TikTok retry UUID -3029365031314767155 is now canceled by user: Metricool draft ID 378222792, autoPublish=false; never reactivate it or create a replacement. Keep all other retired legacy drafts inactive. Preserve the existing provider cooldown and stop-on-failure safeguards. Prepare the full 10-post batch, but on 2026-09-19 publish only at valid remaining configured slots after cooldown, do not squeeze 10 posts into the shortened window or misreport all 10 as scheduled/published. Report any target shortfall. Keep 2026-09-20 zodiac parity even if September 19 is incomplete. The weekly intro remains exactly Monday 23:00 Europe/Athens, starting 2026-09-21, as an additional explicitly authorized video. Changes here concern TikTok only; other networks remain governed by their existing instructions.",
-        "start_date": "2026-09-19",
-        "date_exceptions": {
-          "2026-09-19": {
-            "post_count": 10,
-            "theme": "soul",
-            "publication_time": "23:00",
-            "timezone": "Europe/Athens",
-            "all_posts_same_time": true,
-            "rules": "ONE-DATE USER SCHEDULE EXCEPTION (latest user instruction): For TikTok daily photo content dated 2026-09-19 ONLY, prepare all 10 posts (9 soul/emotional plus 1 dog-barista) and schedule all ten for exactly 2026-09-19T23:00:00+03:00 Europe/Athens, autoPublish=true and autoAddMusic=true. This explicitly overrides prior spaced-slot and no-compression instructions for this date only; it is the requested daily batch, not catch-up or retry traffic. Do not schedule any of these ten earlier that day. Prepare and schedule in advance through Metricool, not by waiting for an hourly task to run at 23:00. Check for duplicate jobs and current provider restrictions. Respect any active provider cooldown/limit extending to the target time; do not bypass it. On failure stop any remaining attempts when still cancellable, and report that simultaneously queued posts may already have been attempted. Do not promise all ten will publish. On 2026-09-20 automatically return to normal zodiac slots from 00:30, then continue the normal 12/10 calendar alternation; retain rolling-quota checks across midnight. Weekly Monday 23:00 introduction and other networks unchanged. Keep canceled legacy posts and retries canceled.",
-            "composition": {
-              "emotional_photo_posts": 9,
-              "dog_videos": 1
-            }
-          }
-        },
-        "dog_barista_override": {
-          "format": "video",
-          "start_date": "2026-09-19",
-          "every_n_calendar_days": 2,
-          "normal_slot": "17:18",
-          "replaces_dog_photo": true,
-          "daily_soul_composition": {
-            "emotional_photo_posts": 9,
-            "dog_videos": 1
-          },
-          "rules": "LATEST USER DOG VIDEO EXCEPTION: Keep the dog-barista as a VIDEO on TikTok every second calendar day (soul days), starting 2026-09-19 and then 2026-09-21, 2026-09-23, etc. It REPLACES the previously specified dog photo within the 10-post batch: exactly 9 emotional photo posts plus 1 dog-barista video, not an 11th daily post. Reuse the same approved dog video generated for the other networks, with existing Runway quality/budget rules; no extra paid generation solely for TikTok. TikTok autoAddMusic=true applies to the nine native photo posts; do not assume it adds music to a video on a personal TikTok account. Preserve the dog video's existing audio/silent settings and supported AI labels. For 2026-09-19 only, schedule the dog video together with all nine photo posts at 23:00 Europe/Athens. Thereafter use the existing soul-day dog slot 17:18, and preserve all other regular slots, 12-zodiac-photo days, rolling quotas, cooldowns, stop-on-failure, cancellation and duplicate safeguards. Keep Monday 23:00 introduction as the separate authorized weekly video and the other three platforms unchanged. This dog-video instruction overrides all prior dog-photo-only wording."
-        }
-      }
-    }
-  },
-  "dog_barista": {
-    "videos_per_soul_day": 1,
-    "duration_seconds": 5,
-    "aspect_ratio": "9:16",
-    "model": "gen-4.5",
-    "generate_audio": false,
-    "reference_image_task_id": "31ca58be-34c3-436e-84d0-5838f9839e19",
-    "approved_first_video_task_id": "fe3d8602-b125-4a73-b048-ceb42f2caafc",
-    "identity": "Golden retriever, teal barista apron, warm Greek cafe, natural canine movement.",
-    "creative_rule": "One simple action and humorous ending per clip; vary coffee, change tray, wiping counter, orders, breaks, tips. Foam must stay on muzzle through last frame when present. Reuse the approved first video once if not already published. Keep identity consistent using reference images.",
-    "budget": {
-      "video_credits": 60,
-      "new_image_credits": 8,
-      "max_automatic_attempts_per_episode": 1,
-      "auto_purchase": false
-    },
-    "quality_gate": "Check natural anatomy, persistent props and ending before publishing; on failure report rather than repeatedly regenerate."
-  },
-  "transition_override": {
-    "effective_date": "2026-09-20",
-    "priority": "Highest: latest user clarification",
-    "preserve_prepaid_videos_date": "2026-09-19",
-    "restored_metricool_uuids": [
-      "8732791487214272690",
-      "-2878152742504479547",
-      "-939280630344170335",
-      "7119671207944077321",
-      "4494981964765348564",
-      "1827937260421661697",
-      "-6171012434982779529",
-      "2510727418625477636",
-      "-8992648413116346507"
-    ],
-    "photos": {
-      "preserve_existing": true,
-      "continue_existing_photo_schedule": true
-    },
-    "dog": {
-      "unchanged": true
-    },
-    "weekly_intro_enabled": false,
-    "new_story": {
-      "target_per_day": 1,
-      "topic": "Fact-checked unusual things around the world",
-      "format": "still images and Greek narration; no avatar",
-      "start_date": "2026-09-20",
-      "daily_time": null,
-      "networks": [
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube"
-      ],
-      "budget": {
-        "balance": 553,
-        "days": 30,
-        "max_credits_per_episode": 14,
-        "reserve": 133,
-        "provisional_seconds": null,
-        "rate_credits_per_minute": 40,
-        "cost_confirmation_required": true,
-        "status": "generation_blocked_until_all_in_cost_verified",
-        "renewal": "2026-10-17T15:04:42Z"
-      },
-      "status": "on_hold_until_user_resumes_discussion",
-      "paid_generation_enabled": false
-    },
-    "instruction": "Manage Stelios's existing social pipeline, Metricool brand7000636 timezone Europe/Athens; source repository steliosvil5eteth-byte/Stelios-Vilanos. This consolidated instruction supersedes all previous conflicting cancellation/volume instructions. Read config/integrations.json, content_strategy.json, publishing_reliability.json, queues and history with current SHAs; use Notion archive configured there. Preserve ALL already paid/generated videos dated2026-09-19: nine emotional videos at00:30,02:54,05:18,07:42,10:06,12:30,14:54,19:42,22:06 on Facebook/Instagram/YouTube. Explicit user reversed their cancellation; never draft or cancel these. Reuse existing media and UUIDs, no regeneration. Keep existing TikTok photos including corrected JPEG UUID-3029365031314767155 at19/9 23:00.\nKeep ongoing TikTok photo program as authorized: alternate12 zodiac photos (20/9 then every2days) with9 emotional photos (19/9 then every2days), plus the separate dog video on emotional days;19/9 all TikTok batch at23:00; thereafter established slots in strategy. Missing scheduled posts must be reported as missing, not claimed ready. Do not revive retired legacy drafts.\nDog is unchanged: one5-second gen-4.5 silent golden retriever barista clip every2days from19/9 on all4networks. Preserve existing19/9 scheduled clip at17:18 Facebook/Instagram/YouTube and23:00 TikTok, normal17:18 thereafter. Same dog/reference assets and quality checks, max one paid attempt/episode; live Runway balance check, no purchases, no repeats/substitutions without authorization.107credits last observed cannot fund a month; report insufficient budget, do not alter cadence.\nAll other NEW legacy avatar/zodiac/emotional-video production stops. Weekly intro remains paused. Canceled18/9 21:30 and22:45 videos remain drafts.\nNEW DAILY WORLD-STORY PROJECT IS EXPLICITLY ON HOLD pending tomorrow's discussion. User wants1video/day about fact-checked unusual things around the world, images+Greek narration/subtitles, same file on4socials, intended start20/9. Do NOT generate, spend credits or schedule these new stories until user resumes and finalizes duration/cost. Neither20seconds nor2minutes is a finalized choice;23:00 is only tentative, not a user-approved publication slot. HeyGen553credits last verified resets17/10; AvatarIII7credits/min cannot price VideoAgent40credits/min. No paid pricing experiments. Pricing-only session7fbafe9b41d04f149c0c84b920956c1d received stop request: do not resume.\nContinue hourly reconciliation: PUBLISHED requires provider status plus public URL. Respect cooldowns/quota errors (last TikTok cooldown19/9 16:07; read fresh state). No bypass or blind retries, no duplicates, no paid regeneration for publish failures. Preserve successful providers; update state/Notion per-provider. On Metricool updates omit unrelated networkData and keep existing hosted media in info.media; UUID stable, numeric ID may change. Record job IDs/credits/quality/archive. Weekly Monday analytics review retains previous full-week comparison, evidence-based learning and originality. No subscription/access changes. Report material success/blockers in Greek accurately."
-  },
-  "latest_user_transition": {
-    "effective_at": "2026-09-18T20:46:46+03:00",
-    "status": "superseded_by_current_strategy_2026_09_20",
-    "non_dog_videos": "stopped",
-    "stop_scope": [
-      "zodiac videos",
-      "short emotional videos",
-      "weekly introduction",
-      "all retries and revivals of cancelled non-dog videos"
-    ],
-    "daily_story_video": {
-      "status": "on_hold_pending_format_and_safe_duration",
-      "generation_allowed": false,
-      "scheduling_allowed": false,
-      "heygen_spend_allowed": false
-    },
-    "dog_barista": {
-      "status": "preserved",
-      "cadence": "every other calendar day starting 2026-09-19",
-      "platforms": [
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube"
-      ],
-      "slot_standard": "17:18 Europe/Athens",
-      "exception_2026_09_19": {
-        "facebook_instagram_youtube": "17:18",
-        "tiktok": "23:00"
-      }
-    },
-    "existing_photo_posts": {
-      "policy": "preserve_existing_only",
-      "create_additional_batches": false
-    },
-    "weekly_introduction": {
-      "status": "disabled",
-      "automation_id": "6aacecbeaf94819198603f4458f8bb29"
-    },
-    "budgets_last_verified": {
-      "heygen_credits": 553,
-      "heygen_reset_date": "2026-10-17",
-      "runway_purchased_credits": 107,
-      "runway_plan_credits": 0
-    },
-    "safety": "No purchases; check live balance before dog generation; no new paid story generation until user finalizes format."
-  },
   "current_strategy": {
+    "strategy_id": "FOUR_DAILY_V1",
     "effective_date": "2026-09-20",
     "timezone": "Europe/Athens",
     "priority": "AUTHORITATIVE_LATEST_USER_STRATEGY",
-    "networks": [
-      "facebook",
-      "instagram",
-      "tiktok",
-      "youtube"
-    ],
-    "alternating_daily_posts": {
-      "start_date": "2026-09-20",
-      "day_1": {
-        "type": "zodiac_carousel",
+    "networks": ["facebook", "instagram", "tiktok", "youtube"],
+    "posts_per_network_per_day": 4,
+    "destination_target_per_day": 16,
+    "alternating_daily_posts": {"enabled": false, "rule": "Both carousels occur EVERY DAY, never on alternating days."},
+    "daily_posts": [
+      {
+        "category": "zodiac_carousel",
         "count": 1,
         "cards": 12,
-        "order": [
-          "Κριός",
-          "Ταύρος",
-          "Δίδυμος",
-          "Καρκίνος",
-          "Λέων",
-          "Παρθένος",
-          "Ζυγός",
-          "Σκορπιός",
-          "Τοξότης",
-          "Αιγόκερως",
-          "Υδροχόος",
-          "Ιχθύς"
-        ],
-        "rule": "One carousel/slideshow containing all 12 zodiac cards. Never publish the 12 signs as 12 separate posts."
+        "preferred_time": "12:30",
+        "order": ["Κριός", "Ταύρος", "Δίδυμοι", "Καρκίνος", "Λέων", "Παρθένος", "Ζυγός", "Σκορπιός", "Τοξότης", "Αιγόκερως", "Υδροχόος", "Ιχθύες"],
+        "rule": "One native carousel containing one card for each of all twelve signs. Never publish signs separately or split into six-sign groups. Check actual series continuity per platform, avoid repeats, and do not invent additional parts of completed series."
       },
-      "day_2": {
-        "type": "emotional_story_carousel",
+      {
+        "category": "emotional_story_carousel",
         "count": 1,
         "cards": 5,
-        "themes": [
-          "έρωτας",
-          "χωρισμός",
-          "ψυχή"
-        ],
-        "rule": "One complete five-card story. Every day/story must be genuinely different from prior stories: different opening, hook, characters/situation, wording, phrases, progression, twist and ending. No template-level paraphrases or repeated first lines."
+        "preferred_time": "15:20",
+        "themes": ["αγάπη", "έρωτας", "χωρισμός", "ψυχή"],
+        "rule": "ONE coherent story in FIVE ordered connected cards, not five independent posts or unrelated quotations. A genuinely new opening, hook, characters, situation, phrasing, progression, turning point and ending each day. Compare actual history, not titles alone."
       },
-      "repeat": "alternate day_1 and day_2 by Europe/Athens calendar date"
+      {
+        "category": "phenomenon_video",
+        "count": 1,
+        "preferred_time": "18:00",
+        "rule": "One fact-checked narrated unusual-phenomenon video. Preserve the actual existing unique media and queue entries for 20-30 September 2026; do not regenerate or duplicate them. From 1 October create one new original phenomenon video daily."
+      },
+      {
+        "category": "legend_video",
+        "count": 1,
+        "preferred_time": "21:40",
+        "duration_target_seconds": {"min": 75, "max": 120},
+        "rule": "One original narrated video about one different legend each day, clearly labelled folklore rather than proven supernatural fact. The Flying Dutchman is already published and excluded from all new scheduling and regeneration."
+      }
+    ],
+    "carousel_quality": {
+      "large_readable_greek_text": true,
+      "ordered_complete_cards": true,
+      "avatar": false,
+      "narration_or_tts": false,
+      "music": "Retain the approved original/no-cost rights-cleared music policy where the actual delivery format supports it; do not copy platform-licensed music to other platforms.",
+      "youtube": "One actual complete slideshow video containing all twelve or all five cards, with verified duration and readability.",
+      "native_carousel_support": "Verify the current connected API supports the required card count and requested format before submission. If unsupported, mark that platform blocked; never silently drop cards, split into extra posts or substitute a different format."
     },
-    "daily_premium_legend_video": {
-      "count": 1,
-      "format": "9:16 vertical video; no avatar",
-      "duration_target": "75-120 seconds",
-      "requirements": [
-        "strong unique hook",
-        "original Greek script",
-        "Greek narration",
-        "readable Greek subtitles throughout",
-        "multiple relevant visuals",
-        "fact/theory distinction where applicable",
-        "immediate final CTA with no long silent gap",
-        "monetization-safe rights and originality check"
-      ],
-      "distribution": "same master video to all four platforms with platform-specific metadata"
-    },
-    "unusual_things_video": {
-      "cadence": "1 per day",
-      "through_2026_09_30": "use already prepared/scheduled unusual-things videos; do not regenerate duplicates",
-      "from_2026_10_01": "create one new original unusual/strange/fact-checked video per day",
+    "narrated_video_quality": {
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
       "no_avatar": true,
-      "networks": [
-        "facebook",
-        "instagram",
-        "tiktok",
-        "youtube"
-      ]
+      "language": "el",
+      "narration": "Natural approved Greek voice over relevant lawful imagery.",
+      "subtitles": "Readable burned-in synchronized Greek subtitles covering the full narration.",
+      "ending": "Immediate spoken and written CTA, without a long silent gap.",
+      "rights": "Verified sources, creators, rights, attribution and known image dates; illustrations must not be presented as photographic proof.",
+      "technical_qa": "Verify real accessible final media, full duration/decode, representative frames, audio and subtitle synchronization; metadata is not sufficient."
     },
+    "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
     "dog_video": {
       "status": "disabled",
       "publish": false,
       "generate": false,
       "schedule": false,
-      "rule": "USER CORRECTION 2026-09-19: Do not publish, generate, schedule, retry, revive, or substitute any dog videos on any platform. Dog content is completely removed from the active strategy."
+      "retry": false,
+      "restore": false,
+      "excluded_metricool_uuids": ["7486346641732224351", "6234574211891284294", "4952065135289714308"],
+      "rule": "All dog/barista/terrier videos are removed from active production and publishing. Never revive an old dog draft or substitute another dog video."
     },
-    "originality_gate": {
-      "enabled": true,
-      "compare_history": true,
-      "never_reuse_exact_hook": true,
-      "never_reuse_exact_script": true,
-      "never_reuse_exact_opening": true,
-      "never_reuse_exact_phrase_pattern": true,
-      "avoid_near_duplicate_structure": true
+    "weekly_introduction": {"enabled": false},
+    "deduplication_policy": {
+      "logical_key": "local_date + category + platform",
+      "compare_media_and_story_fingerprint_across_dates": true,
+      "durable_claim_before_create": true,
+      "read_live_queue_and_history_before_write": true,
+      "ambiguous_write_result": "Reconcile by reading; never repeat create blindly.",
+      "protect_published_providers": true,
+      "cancelled_legacy_items_are_not_gaps": true,
+      "verify_after_write": true,
+      "flying_dutchman": {
+        "published_date": "2026-09-19",
+        "published_metricool_uuids": ["7639724372568328678", "814225112836948353"],
+        "cancelled_future_uuid": "-8042687935771622605",
+        "rule": "No further scheduling, reactivation, production or variant of this already-published story. Do not treat the cancelled 20 September entry as a missing upload to recover."
+      }
+    },
+    "capacity_and_cost": {
+      "real_provider_limits_override_targets": true,
+      "check_rolling_24h_and_following_day": true,
+      "midnight_is_not_assumed_quota_reset": true,
+      "blind_test_uploads_or_retries": false,
+      "purchases_topups_upgrades": false,
+      "paid_attempts_per_new_story_max": 1,
+      "paid_generation_for_cards": false,
+      "live_balance_and_reset_before_charged_work": true,
+      "credit_reserve_target": 10,
+      "rule": "Budget only genuinely new files after deducting ready/in-progress work and reservations. Unknown balances or costs are not zero and not permission to test pricing. Reuse the same two narrated masters across four platforms."
     },
     "monetization_gate": {
       "enabled": true,
-      "check_before_publish": [
-        "TikTok",
-        "YouTube",
-        "Facebook",
-        "Instagram"
-      ],
-      "rule": "Prefer fewer original high-quality posts over mass repetitive output. Do not claim monetization eligibility solely from follower/view thresholds."
+      "rule": "Check rights, originality and actual platform requirements. Never promise eligibility or earnings from follower/view thresholds alone."
     },
     "publishing": {
       "autopublish": true,
       "start": "2026-09-20",
-      "rule": "Apply this strategy prospectively. Do not duplicate, revive, or overwrite already-published items. Reconcile existing scheduled items before creating replacements. Dog videos are excluded entirely."
+      "rule": "Prospective four-category daily program only. Cancel obsolete standalone-card entries before creating replacements. Draft status cancels publishing but is not permanent deletion of the remote file or a published post. Scheduled is not Published."
     }
   }
 }
