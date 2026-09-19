@@ -63,7 +63,19 @@ def validate_queue(path: Path) -> None:
             raise ValueError(f"job {job_id}: title is required")
 
         networks = first_present(job, "networks", "platforms")
-        if not isinstance(networks, list) or not networks:
+        # A terminal cancelled archive entry intentionally has no destinations.
+        # Keep the non-empty requirement for every active/pending queue entry.
+        terminal_cancelled_archive = (
+            path.name == "completed.json"
+            and status == "cancelled_non_dog_video"
+            and job.get("terminal") is True
+            and (job.get("networks") == [] or job.get("platforms") == [])
+        )
+        if networks is None and terminal_cancelled_archive:
+            networks = []
+        if not isinstance(networks, list) or (
+            not networks and not terminal_cancelled_archive
+        ):
             raise ValueError(f"job {job_id}: networks/platforms must be a non-empty list")
         invalid = set(networks) - ALLOWED_NETWORKS
         if invalid:
