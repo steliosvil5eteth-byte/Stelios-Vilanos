@@ -1,0 +1,111 @@
+{
+  "batch_id": "b9becce189ec3803",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "story-20260921-devils-tower",
+      "status": "rendered",
+      "original_duration": 160.461016,
+      "final_duration": 164.44,
+      "error": null
+    },
+    {
+      "id": "story-20260926-plitvice",
+      "status": "rendered",
+      "original_duration": 123.141016,
+      "final_duration": 127.12,
+      "error": null
+    },
+    {
+      "id": "story-20260928-giants-causeway",
+      "status": "rendered",
+      "original_duration": 122.741016,
+      "final_duration": 126.72,
+      "error": null
+    },
+    {
+      "id": "story-20260929-zhangjiajie",
+      "status": "rendered",
+      "original_duration": 127.061016,
+      "final_duration": 131.04,
+      "error": null
+    },
+    {
+      "id": "qa-sailing-stones-middle",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "error": null
+    },
+    {
+      "id": "qa-blood-falls-middle",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "error": null
+    },
+    {
+      "id": "qa-pamukkale-middle",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "error": null
+    },
+    {
+      "id": "qa-socotra-middle",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "error": null
+    },
+    {
+      "id": "qa-grand-prismatic-middle",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "error": null
+    },
+    {
+      "id": "qa-cappadocia-middle",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "error": null
+    },
+    {
+      "id": "qa-ha-long-middle",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "error": null
+    },
+    {
+      "id": "qa-meteora-middle",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "error": null
+    },
+    {
+      "id": "qa-common-ending",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "error": null
+    },
+    {
+      "id": "qa-post-love",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "error": null
+    },
+    {
+      "id": "qa-zodiac-scorpio",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "error": null
+    }
+  ]
+}

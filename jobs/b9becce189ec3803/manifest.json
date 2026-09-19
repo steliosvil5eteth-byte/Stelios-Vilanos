@@ -1,0 +1,283 @@
+{
+  "batch_sha256": "b9becce189ec38038405d78c01d4f8c1127976009d63d9a4d15d36241727c9fa",
+  "batch_id": "b9becce189ec3803",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "story-20260921-devils-tower",
+      "mode": "video_cta",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-5001233009817752595.mp4",
+      "attribution": "Devils Tower. PLBechly, Ildar Sagdejev, Donna Jean Hobbs, Travelgal52, Bobneiers CC BY-SA 4.0; A7x CC BY-SA 3.0; w_lemay, KimonBerlin CC BY-SA 2.0; James St. John CC BY 4.0; Joseph H. Hartman CC0; halfuur CC BY 3.0. Adaptation CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/. Source https://commons.wikimedia.org/wiki/Category:Devils_Tower ; https://www.nps.gov/deto/learn/nature/tower-formation.htm . Change: closing text card added; original sequence and attribution preserved.",
+      "title": null,
+      "text": null,
+      "original_duration": 160.461016,
+      "final_duration": 164.44,
+      "width": 1080,
+      "height": 1920,
+      "original_narration_preserved": true,
+      "new_spoken_cta": false,
+      "written_cta_appended": true,
+      "decode_passed": true,
+      "subtitle_review": "original_pixels_preserved; human_visual_review_required",
+      "files": [
+        {
+          "name": "story-20260921-devils-tower.mp4",
+          "bytes": 37384069,
+          "sha256": "e48f0e108d9c75618fb04ef2f5fa789c677efe9a177c960867c7798aee3f7e9f"
+        }
+      ]
+    },
+    {
+      "id": "story-20260926-plitvice",
+      "mode": "video_cta",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-15175636905738409501.mp4",
+      "attribution": "Plitvice. Wikimedia Commons: Miroslav.vajdic, Matilda Skaro, Lukas Plewnia, Thomas Dahlstrom Nielsen, AutumnNY, Dennis G. Jarvis, Zysko serhii. Original CC BY/CC BY-SA 2.0-4.0 attribution preserved. Adaptation CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/. Research https://whc.unesco.org/en/list/98/. Change: closing text card added.",
+      "title": null,
+      "text": null,
+      "original_duration": 123.141016,
+      "final_duration": 127.12,
+      "width": 1080,
+      "height": 1920,
+      "original_narration_preserved": true,
+      "new_spoken_cta": false,
+      "written_cta_appended": true,
+      "decode_passed": true,
+      "subtitle_review": "original_pixels_preserved; human_visual_review_required",
+      "files": [
+        {
+          "name": "story-20260926-plitvice.mp4",
+          "bytes": 32678650,
+          "sha256": "cb68163e5242963e660cc0dbef1ddb0d30e7d535f4e584639fa366c546070694"
+        }
+      ]
+    },
+    {
+      "id": "story-20260928-giants-causeway",
+      "mode": "video_cta",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-9764509897415806023.mp4",
+      "attribution": "Giant's Causeway. Wikimedia Commons: el ui, JoachimKohler-HB, portengaround, Joseph Mischyshyn, Nicolas Raymond, Gerd Eichmann, Suzanne Mischyshyn, Z thomas, Bernard Ladenthin, Dieglop, Keith Ruffles, Chmee2. Original CC BY/CC BY-SA 2.0-4.0 attribution preserved. Adaptation CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/. Research https://whc.unesco.org/en/list/369/. Change: closing text card added.",
+      "title": null,
+      "text": null,
+      "original_duration": 122.741016,
+      "final_duration": 126.72,
+      "width": 1080,
+      "height": 1920,
+      "original_narration_preserved": true,
+      "new_spoken_cta": false,
+      "written_cta_appended": true,
+      "decode_passed": true,
+      "subtitle_review": "original_pixels_preserved; human_visual_review_required",
+      "files": [
+        {
+          "name": "story-20260928-giants-causeway.mp4",
+          "bytes": 27016050,
+          "sha256": "de8c2c94f619d690094cb6242f1e7e742964678e50494ca6914018b193e1f372"
+        }
+      ]
+    },
+    {
+      "id": "story-20260929-zhangjiajie",
+      "mode": "video_cta",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-14466158131387001478.mp4",
+      "attribution": "Zhangjiajie. Wikimedia Commons: JL Cogburn, Kuruman, xiquinhosilva, Carlos Adampol Galindo, SHdyroff, CrunchLabs. Original CC BY 2.0, CC BY-SA 2.0/4.0 attribution preserved. Adaptation CC BY-SA 4.0 https://creativecommons.org/licenses/by-sa/4.0/. Research https://whc.unesco.org/en/list/640/. Change: closing text card added.",
+      "title": null,
+      "text": null,
+      "original_duration": 127.061016,
+      "final_duration": 131.04,
+      "width": 1080,
+      "height": 1920,
+      "original_narration_preserved": true,
+      "new_spoken_cta": false,
+      "written_cta_appended": true,
+      "decode_passed": true,
+      "subtitle_review": "original_pixels_preserved; human_visual_review_required",
+      "files": [
+        {
+          "name": "story-20260929-zhangjiajie.mp4",
+          "bytes": 27795272,
+          "sha256": "f2cfee6007af65dc988ccf63d8ffedd55da2c5588769c4b763cef8dfdecdad4b"
+        }
+      ]
+    },
+    {
+      "id": "qa-sailing-stones-middle",
+      "mode": "preview",
+      "status": "rendered",
+      "source_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/6fc96d26ed10fde1/story-20260919-sailing-stones-middle.jpg",
+      "attribution": null,
+      "title": null,
+      "text": null,
+      "files": [
+        {
+          "name": "qa-sailing-stones-middle.png",
+          "bytes": 17933,
+          "sha256": "902a199592d214dfa2a39764ddd0adc9fe38354b8b679dc76828e562b53eba25"
+        }
+      ]
+    },
+    {
+      "id": "qa-blood-falls-middle",
+      "mode": "preview",
+      "status": "rendered",
+      "source_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/6fc96d26ed10fde1/story-20260920-blood-falls-middle.jpg",
+      "attribution": null,
+      "title": null,
+      "text": null,
+      "files": [
+        {
+          "name": "qa-blood-falls-middle.png",
+          "bytes": 22616,
+          "sha256": "8bcce54cbf2858ac9838cb5f3e219b36aa8074fe37e453c3ee29e96821d27530"
+        }
+      ]
+    },
+    {
+      "id": "qa-pamukkale-middle",
+      "mode": "preview",
+      "status": "rendered",
+      "source_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/6fc96d26ed10fde1/story-20260922-pamukkale-middle.jpg",
+      "attribution": null,
+      "title": null,
+      "text": null,
+      "files": [
+        {
+          "name": "qa-pamukkale-middle.png",
+          "bytes": 17716,
+          "sha256": "6f4ee512ffab63ce51bb1c3f72a351bab5a769c31e617b7e36775f5b30b87df2"
+        }
+      ]
+    },
+    {
+      "id": "qa-socotra-middle",
+      "mode": "preview",
+      "status": "rendered",
+      "source_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/6fc96d26ed10fde1/story-20260923-socotra-middle.jpg",
+      "attribution": null,
+      "title": null,
+      "text": null,
+      "files": [
+        {
+          "name": "qa-socotra-middle.png",
+          "bytes": 16214,
+          "sha256": "3369bb4ac7f2bd7eff785fe80db1b374757f4d6ff497818aec4762b3704ba184"
+        }
+      ]
+    },
+    {
+      "id": "qa-grand-prismatic-middle",
+      "mode": "preview",
+      "status": "rendered",
+      "source_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/6fc96d26ed10fde1/story-20260924-grand-prismatic-middle.jpg",
+      "attribution": null,
+      "title": null,
+      "text": null,
+      "files": [
+        {
+          "name": "qa-grand-prismatic-middle.png",
+          "bytes": 22382,
+          "sha256": "fcb8513311087aac3869e03387e0ec8bcd870408107530d654736578d0195bd6"
+        }
+      ]
+    },
+    {
+      "id": "qa-cappadocia-middle",
+      "mode": "preview",
+      "status": "rendered",
+      "source_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/6fc96d26ed10fde1/story-20260925-cappadocia-middle.jpg",
+      "attribution": null,
+      "title": null,
+      "text": null,
+      "files": [
+        {
+          "name": "qa-cappadocia-middle.png",
+          "bytes": 22321,
+          "sha256": "5daf8d6069d0eb84c61a2e00bf199edff74448e01e37dee39f50806f748e2ba6"
+        }
+      ]
+    },
+    {
+      "id": "qa-ha-long-middle",
+      "mode": "preview",
+      "status": "rendered",
+      "source_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/6fc96d26ed10fde1/story-20260927-ha-long-bay-middle.jpg",
+      "attribution": null,
+      "title": null,
+      "text": null,
+      "files": [
+        {
+          "name": "qa-ha-long-middle.png",
+          "bytes": 15817,
+          "sha256": "1ecaca1c80c75afa3fc63f2ba549bbfb1f6c91c31267ca3c98228bd16135b84b"
+        }
+      ]
+    },
+    {
+      "id": "qa-meteora-middle",
+      "mode": "preview",
+      "status": "rendered",
+      "source_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/6fc96d26ed10fde1/story-20260930-meteora-middle.jpg",
+      "attribution": null,
+      "title": null,
+      "text": null,
+      "files": [
+        {
+          "name": "qa-meteora-middle.png",
+          "bytes": 21131,
+          "sha256": "2183b91ac5c956b95ca7f98c0b6b6995ba8b10403634b578b7b034a4de36dc70"
+        }
+      ]
+    },
+    {
+      "id": "qa-common-ending",
+      "mode": "preview",
+      "status": "rendered",
+      "source_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/6fc96d26ed10fde1/story-20260920-blood-falls-ending.jpg",
+      "attribution": null,
+      "title": null,
+      "text": null,
+      "files": [
+        {
+          "name": "qa-common-ending.png",
+          "bytes": 6992,
+          "sha256": "0776f963c6a21e62b4c6830d30192b6d4045661ffa66b0498c02ce9b9dffad8e"
+        }
+      ]
+    },
+    {
+      "id": "qa-post-love",
+      "mode": "preview",
+      "status": "rendered",
+      "source_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/6fc96d26ed10fde1/post-love-remembered-cta.jpg",
+      "attribution": null,
+      "title": null,
+      "text": null,
+      "files": [
+        {
+          "name": "qa-post-love.png",
+          "bytes": 20050,
+          "sha256": "4c7207c64f151b475dc34a298a12594c93ccde880e8deb56a31b6eb90b9ca532"
+        }
+      ]
+    },
+    {
+      "id": "qa-zodiac-scorpio",
+      "mode": "preview",
+      "status": "rendered",
+      "source_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/6fc96d26ed10fde1/zodiac-scorpio-part2-cta.jpg",
+      "attribution": null,
+      "title": null,
+      "text": null,
+      "files": [
+        {
+          "name": "qa-zodiac-scorpio.png",
+          "bytes": 21268,
+          "sha256": "5362e5a1334e88500989b0480b858f8882884a6ca56ef5173b7e687455d09450"
+        }
+      ]
+    }
+  ]
+}
