@@ -1,0 +1,288 @@
+{
+  "key": "2026-09-20:legend:flying-dutchman",
+  "phase": "visual-inputs-ready",
+  "not_final_video": true,
+  "scenes": [
+    {
+      "file": "scene-01.jpg",
+      "source_art": "dix",
+      "script": "Ο θρύλος λέει πως, αν αυτό το πλοίο σε πλησιάσει, δεν πρέπει να δεχτείς τα γράμματά του.",
+      "voice_id": "8bc71625549d425d9a38b4e4a296ba32"
+    },
+    {
+      "file": "scene-02.jpg",
+      "source_art": "ryder",
+      "script": "Είναι ο Ιπτάμενος Ολλανδός. Το καράβι που δεν βρίσκει ποτέ λιμάνι.",
+      "voice_id": "8bc71625549d425d9a38b4e4a296ba32"
+    },
+    {
+      "file": "scene-03.jpg",
+      "source_art": "cruikshank",
+      "script": "Και η κατάρα του ξεκίνησε από έναν όρκο.",
+      "voice_id": "8bc71625549d425d9a38b4e4a296ba32"
+    },
+    {
+      "file": "scene-04.jpg",
+      "source_art": "strindberg",
+      "script": "Σε μια εκδοχή του θρύλου, ένας καπετάνιος προσπαθεί να περάσει το Ακρωτήριο της Καλής Ελπίδας μέσα σε φοβερή καταιγίδα.",
+      "voice_id": "8bc71625549d425d9a38b4e4a296ba32"
+    },
+    {
+      "file": "scene-05.jpg",
+      "source_art": "dix",
+      "script": "Ο άνεμος τον σπρώχνει πίσω. Εκείνος, όμως, αρνείται να υποχωρήσει.",
+      "voice_id": "8bc71625549d425d9a38b4e4a296ba32"
+    },
+    {
+      "file": "scene-06.jpg",
+      "source_art": "cruikshank",
+      "script": "Ορκίζεται ότι θα περάσει, ακόμη κι αν ταξιδεύει για πάντα.",
+      "voice_id": "8bc71625549d425d9a38b4e4a296ba32"
+    },
+    {
+      "file": "scene-07.jpg",
+      "source_art": "gehrts",
+      "script": "Και τότε, λέει η ιστορία, ο όρκος γίνεται καταδίκη.",
+      "voice_id": "8bc71625549d425d9a38b4e4a296ba32"
+    },
+    {
+      "file": "scene-08.jpg",
+      "source_art": "cawse",
+      "script": "Το πλοίο συνεχίζει να πλέει. Μόνο που κανείς δεν επιστρέφει σπίτι.",
+      "voice_id": "8bc71625549d425d9a38b4e4a296ba32"
+    },
+    {
+      "file": "scene-09.jpg",
+      "source_art": "ryder",
+      "script": "Οι ναυτικοί το περιγράφουν με παράξενη λάμψη. Με πανιά φουσκωμένα, ακόμη κι όταν η θάλασσα είναι ακίνητη.",
+      "voice_id": "8bc71625549d425d9a38b4e4a296ba32"
+    },
+    {
+      "file": "scene-10.jpg",
+      "source_art": "kingsley",
+      "script": "Το πιο ανατριχιαστικό, όμως, δεν είναι το πλοίο.",
+      "voice_id": "8bc71625549d425d9a38b4e4a296ba32"
+    },
+    {
+      "file": "scene-11.jpg",
+      "source_art": "gehrts",
+      "script": "Είναι το πλήρωμά του, που ζητά από περαστικούς να μεταφέρουν γράμματα στη στεριά.",
+      "voice_id": "8bc71625549d425d9a38b4e4a296ba32"
+    },
+    {
+      "file": "scene-12.jpg",
+      "source_art": "cawse",
+      "script": "Γράμματα για τους ανθρώπους που άφησαν πίσω. Μηνύματα από ένα ταξίδι που δεν τελειώνει.",
+      "voice_id": "8bc71625549d425d9a38b4e4a296ba32"
+    },
+    {
+      "file": "scene-13.jpg",
+      "source_art": "kingsley",
+      "script": "Κι όποιος τα δεχτεί, λένε, φέρνει την κακοτυχία κοντά του.",
+      "voice_id": "8bc71625549d425d9a38b4e4a296ba32"
+    },
+    {
+      "file": "scene-14.jpg",
+      "source_art": "strindberg",
+      "script": "Αυτά ανήκουν στη ναυτική παράδοση, όχι σε αποδεδειγμένο υπερφυσικό γεγονός. Αλλά ο φόβος πίσω από τον θρύλο είναι βαθιά ανθρώπινος:",
+      "voice_id": "8bc71625549d425d9a38b4e4a296ba32"
+    },
+    {
+      "file": "scene-15.jpg",
+      "source_art": "dix",
+      "script": "να περάσει όλη σου η ζωή ταξιδεύοντας, χωρίς να φτάσεις ποτέ εκεί όπου σε περιμένουν.",
+      "voice_id": "8bc71625549d425d9a38b4e4a296ba32"
+    }
+  ],
+  "credits_file": "credits.jpg",
+  "credits_hold_seconds": 7,
+  "closing_file": "closing.jpg",
+  "closing_script": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+  "source_art_count": 7,
+  "art": [
+    {
+      "id": "dix",
+      "artist": "Charles Temple Dix",
+      "artwork_date": "δεκαετία 1860",
+      "license": "Public Domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_page": "https://commons.wikimedia.org/wiki/File:The_Flying_Dutchman_by_Charles_Temple_Dix.jpg",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/5/59/The_Flying_Dutchman_by_Charles_Temple_Dix.jpg",
+      "original_sha256": "f196c9cc99eaaf04812b0b3612a547fe0dddc27adc6fb7a7e9be53db8b9fb9be",
+      "width": 2000,
+      "height": 1230,
+      "use": "Historical illustration, not a photograph of an actual ghost ship"
+    },
+    {
+      "id": "ryder",
+      "artist": "Albert Pinkham Ryder",
+      "artwork_date": "έως το 1887",
+      "license": "Public Domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Albert_Pinkham_Ryder_-_Flying_Dutchman_-_Smithsonian.jpg",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Albert_Pinkham_Ryder_-_Flying_Dutchman_-_Smithsonian.jpg",
+      "original_sha256": "b3062d5ed25b3ca78474dd2e7c970e776c81e566601c665b9a5b5bf16082a278",
+      "width": 4000,
+      "height": 3256,
+      "use": "Historical illustration, not a photograph of an actual ghost ship"
+    },
+    {
+      "id": "strindberg",
+      "artist": "August Strindberg",
+      "artwork_date": "1892",
+      "license": "Public Domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_page": "https://commons.wikimedia.org/wiki/File:August_Strindberg_-_Storm_in_the_Skerries._%22The_Flying_Dutchman%22_-_Google_Art_Project.jpg",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/August_Strindberg_-_Storm_in_the_Skerries._%22The_Flying_Dutchman%22_-_Google_Art_Project.jpg",
+      "original_sha256": "7b31fb67d5329a6d1de4ef4db5298ada3ccfb783dd5c55a1bdc93593fcb883c9",
+      "width": 6666,
+      "height": 4207,
+      "use": "Historical illustration, not a photograph of an actual ghost ship"
+    },
+    {
+      "id": "gehrts",
+      "artist": "Johann Gehrts",
+      "artwork_date": "1887",
+      "license": "Public Domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Gehrts_-_Flying_Dutchman_-_1887.jpg",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/e/e7/Gehrts_-_Flying_Dutchman_-_1887.jpg",
+      "original_sha256": "18df46a4591f738cf8569846a6da3397047cb348a2eccb619df9afc1c210372e",
+      "width": 747,
+      "height": 1201,
+      "use": "Historical illustration, not a photograph of an actual ghost ship"
+    },
+    {
+      "id": "cruikshank",
+      "artist": "Isaac Robert Cruikshank",
+      "artwork_date": "έως το 1829",
+      "license": "Public Domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Edward_Fitzball_-_The_Flying_Dutchman.jpg",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Edward_Fitzball_-_The_Flying_Dutchman.jpg",
+      "original_sha256": "93d93a8c9c8cd99df50fb77ad29904f1f91d4df51f000304c960e07c3343dc3f",
+      "width": 651,
+      "height": 828,
+      "use": "Historical illustration, not a photograph of an actual ghost ship"
+    },
+    {
+      "id": "kingsley",
+      "artist": "Elbridge Kingsley / LACMA",
+      "artwork_date": "1887",
+      "license": "Public Domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_page": "https://commons.wikimedia.org/wiki/File:The_Flying_Dutchman_LACMA_47.31.63.jpg",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/The_Flying_Dutchman_LACMA_47.31.63.jpg",
+      "original_sha256": "0d0f6c6d1581d0a8810d558041aa825bfc604beb1360831236389adfa7cd74f1",
+      "width": 2100,
+      "height": 1752,
+      "use": "Historical illustration, not a photograph of an actual ghost ship"
+    },
+    {
+      "id": "cawse",
+      "artist": "John Cawse",
+      "artwork_date": "έκδοση 1847",
+      "license": "Public Domain",
+      "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "source_page": "https://commons.wikimedia.org/wiki/File:The_Phantom_Ship_-_1847_frontispiece.jpeg",
+      "direct_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/The_Phantom_Ship_-_1847_frontispiece.jpeg",
+      "original_sha256": "c42e1ada8596179be66cb107345ae6ce018c9a4ed75fd42b5e998ab339f5f40d",
+      "width": 600,
+      "height": 900,
+      "use": "Historical illustration, not a photograph of an actual ghost ship"
+    }
+  ],
+  "research": [
+    "https://capepoint.co.za/capepointmoments-the-cape-of-ghosts/",
+    "https://www.rmg.co.uk/stories/maritime-history/halloween-on-board-cutty-sark"
+  ],
+  "paid_ai_calls": 0,
+  "publishing_calls": 0,
+  "files": [
+    {
+      "name": "closing.jpg",
+      "bytes": 108355,
+      "sha256": "ae2d64631c55279bca69e611e0df82e42a01a650d6978b2b2dc5a5a816cb711c"
+    },
+    {
+      "name": "credits.jpg",
+      "bytes": 198778,
+      "sha256": "ccb9f30520eec437503ae552f72b6c76311fcc040d3ac00db188898242a5b879"
+    },
+    {
+      "name": "scene-01.jpg",
+      "bytes": 240686,
+      "sha256": "b0b0f36e163352f603063968dcc2dc574b40c18cb9170d4e22f250bf7029db24"
+    },
+    {
+      "name": "scene-02.jpg",
+      "bytes": 473472,
+      "sha256": "638dec445fb42911cb5ca2b5c43ae8d3ec7d8fd2c12f7def77f6ab45fcd6f583"
+    },
+    {
+      "name": "scene-03.jpg",
+      "bytes": 463054,
+      "sha256": "6a6ded1a839602c005ee53022438f3e496c52b592a384bfc3b6df9b54c9d9864"
+    },
+    {
+      "name": "scene-04.jpg",
+      "bytes": 368364,
+      "sha256": "3a01796fcc0e33df236058793fbe7a4a7d37a76072b29661c19fa8fee07a40f3"
+    },
+    {
+      "name": "scene-05.jpg",
+      "bytes": 232152,
+      "sha256": "ce362725b07a37a16abd30906bf6a1ec731f54ba4cffadfd0a11514b0a459ced"
+    },
+    {
+      "name": "scene-06.jpg",
+      "bytes": 462443,
+      "sha256": "d51ce44db99e53eb79cc15b1992b9b555cb43f66e73803382625177b8dbe8119"
+    },
+    {
+      "name": "scene-07.jpg",
+      "bytes": 303361,
+      "sha256": "2ac8551fae28e9e39826f84648fb011f0aec220b49908e8385a5182b28c1ac61"
+    },
+    {
+      "name": "scene-08.jpg",
+      "bytes": 347668,
+      "sha256": "73d1d4fcf52084e5122dcc4563e480f70b59043ed4e8b30c1de9a3c7531f5455"
+    },
+    {
+      "name": "scene-09.jpg",
+      "bytes": 471670,
+      "sha256": "26fe8f91f7ebb92eb085193d5840e267f5dc3bf161426b486a416285f3d93b42"
+    },
+    {
+      "name": "scene-10.jpg",
+      "bytes": 468718,
+      "sha256": "413f71380854bc619dc1c88de26142bb9c9ab8bc3ea9966d91ac74cd9beff610"
+    },
+    {
+      "name": "scene-11.jpg",
+      "bytes": 304649,
+      "sha256": "356587cdf449d38c600eac04a25d82e8aca5bb2c88496cc38f45a3216587eb54"
+    },
+    {
+      "name": "scene-12.jpg",
+      "bytes": 348700,
+      "sha256": "d2b7d406802ae262d222387dd52ab97bc92bcd9694cffbb60e13d196a70e9450"
+    },
+    {
+      "name": "scene-13.jpg",
+      "bytes": 465129,
+      "sha256": "592b0bb49ef639829750282f2711c7b2a395e4f363586ac6072c59626f00cac7"
+    },
+    {
+      "name": "scene-14.jpg",
+      "bytes": 372791,
+      "sha256": "0471685b6de5f75f419e6b6aae0fbe96ca4b5a9ce983b0c613d8bbeaaf3c0fa8"
+    },
+    {
+      "name": "scene-15.jpg",
+      "bytes": 237803,
+      "sha256": "e192af63d00fb3c945586a3f6ded9c3f0290b701d7322eb6959eeb4d9a743fae"
+    }
+  ]
+}
