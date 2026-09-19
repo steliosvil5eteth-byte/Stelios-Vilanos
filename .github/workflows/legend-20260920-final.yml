@@ -1,0 +1,53 @@
+name: Finish Flying Dutchman existing video
+on:
+  push:
+    branches: [main]
+    paths: ['media_jobs/legend-20260920-final.json']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: no-credit-media-output
+  cancel-in-progress: false
+jobs:
+  finish:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install deterministic caption tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg python3-pil fonts-dejavu-core
+      - name: Preserve narration, burn Greek captions and check complete video
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/legend-final
+        run: /usr/bin/python3 tools/export_legend_video.py
+      - name: Store final video, subtitles and technical evidence
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/legend-final
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/legend-final-repo"
+          SRC="$OUTPUT_DIR/legend-20260920-flying-dutchman-final"
+          git fetch origin media-output --depth=1
+          git worktree add --detach "$OUT" FETCH_HEAD
+          DEST="$OUT/jobs/legend-20260920-flying-dutchman-final"
+          mkdir -p "$DEST"
+          cp "$SRC/flying-dutchman-20260920.mp4" "$SRC/subtitles.srt" "$SRC/subtitles.ass" "$SRC/qa-report.json" "$DEST/"
+          cp -a "$SRC/qa" "$DEST/"
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/legend-20260920-flying-dutchman-final
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Finish existing legend with full Greek subtitles; no AI generation or publishing'
+            git -C "$OUT" push origin HEAD:media-output
+          fi
+      - name: Export actual full files for final review
+        uses: actions/upload-artifact@v4
+        with:
+          name: flying-dutchman-final-qa
+          path: ${{ runner.temp }}/legend-final/legend-20260920-flying-dutchman-final/
+          if-no-files-found: error
+          retention-days: 2
