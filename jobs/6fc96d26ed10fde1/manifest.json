@@ -1,0 +1,479 @@
+{
+  "batch_sha256": "6fc96d26ed10fde1dceb739d04809c39e0de334c5f0172f6ec5bc3cf4221ae5e",
+  "batch_id": "6fc96d26ed10fde1",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "story-20260919-sailing-stones",
+      "mode": "video_cta",
+      "status": "rendered",
+      "original_duration": 139.221016,
+      "final_duration": 143.2,
+      "width": 1080,
+      "height": 1920,
+      "original_narration_preserved": true,
+      "new_spoken_cta": false,
+      "written_cta_appended": true,
+      "decode_passed": true,
+      "subtitle_review": "original_pixels_preserved; human_visual_review_required",
+      "files": [
+        {
+          "name": "story-20260919-sailing-stones.mp4",
+          "bytes": 21624133,
+          "sha256": "7e5cf3e9a8a65b2cc2a06484ce72cb4760e657ffe99e6dc61b6f480f1bd3eb36"
+        }
+      ]
+    },
+    {
+      "id": "story-20260920-blood-falls",
+      "mode": "video_cta",
+      "status": "rendered",
+      "original_duration": 140.583,
+      "final_duration": 144.6,
+      "width": 1080,
+      "height": 1920,
+      "original_narration_preserved": true,
+      "new_spoken_cta": false,
+      "written_cta_appended": true,
+      "decode_passed": true,
+      "subtitle_review": "original_pixels_preserved; human_visual_review_required",
+      "files": [
+        {
+          "name": "story-20260920-blood-falls.mp4",
+          "bytes": 19816901,
+          "sha256": "037b1994f9215972d83d627c9a36dd4e2437e34f3ec44c25d61557ce67aaa2eb"
+        }
+      ]
+    },
+    {
+      "id": "story-20260921-devils-tower",
+      "mode": "video_cta",
+      "status": "failed",
+      "original_duration": 160.461016,
+      "final_duration": 164.44,
+      "width": 1080,
+      "height": 1920,
+      "original_narration_preserved": true,
+      "new_spoken_cta": false,
+      "written_cta_appended": true,
+      "decode_passed": true,
+      "subtitle_review": "original_pixels_preserved; human_visual_review_required",
+      "files": [
+        {
+          "name": "story-20260921-devils-tower.mp4",
+          "bytes": 37384069,
+          "sha256": "e48f0e108d9c75618fb04ef2f5fa789c677efe9a177c960867c7798aee3f7e9f"
+        }
+      ],
+      "error": "Output exceeds 25 MB limit"
+    },
+    {
+      "id": "story-20260922-pamukkale",
+      "mode": "video_cta",
+      "status": "rendered",
+      "original_duration": 124.421016,
+      "final_duration": 128.416,
+      "width": 1080,
+      "height": 1920,
+      "original_narration_preserved": true,
+      "new_spoken_cta": false,
+      "written_cta_appended": true,
+      "decode_passed": true,
+      "subtitle_review": "original_pixels_preserved; human_visual_review_required",
+      "files": [
+        {
+          "name": "story-20260922-pamukkale.mp4",
+          "bytes": 15294561,
+          "sha256": "b217c6212382d1c3c2585e1c99f634263f9d7a77b1237d15e2c8773b8765ee0b"
+        }
+      ]
+    },
+    {
+      "id": "story-20260923-socotra",
+      "mode": "video_cta",
+      "status": "rendered",
+      "original_duration": 121.141016,
+      "final_duration": 125.12,
+      "width": 1080,
+      "height": 1920,
+      "original_narration_preserved": true,
+      "new_spoken_cta": false,
+      "written_cta_appended": true,
+      "decode_passed": true,
+      "subtitle_review": "original_pixels_preserved; human_visual_review_required",
+      "files": [
+        {
+          "name": "story-20260923-socotra.mp4",
+          "bytes": 19502770,
+          "sha256": "154035db09831113cc27579592916b43b557a08a95a11a42b3aec36e4f81a0a0"
+        }
+      ]
+    },
+    {
+      "id": "story-20260924-grand-prismatic",
+      "mode": "video_cta",
+      "status": "rendered",
+      "original_duration": 127.181016,
+      "final_duration": 131.16,
+      "width": 1080,
+      "height": 1920,
+      "original_narration_preserved": true,
+      "new_spoken_cta": false,
+      "written_cta_appended": true,
+      "decode_passed": true,
+      "subtitle_review": "original_pixels_preserved; human_visual_review_required",
+      "files": [
+        {
+          "name": "story-20260924-grand-prismatic.mp4",
+          "bytes": 13574156,
+          "sha256": "7c1d182ad03edfe870fc5c098c5dc2f3596a752d65dc79fbbd6d14cffd68702a"
+        }
+      ]
+    },
+    {
+      "id": "story-20260925-cappadocia",
+      "mode": "video_cta",
+      "status": "rendered",
+      "original_duration": 129.901016,
+      "final_duration": 133.898,
+      "width": 1080,
+      "height": 1920,
+      "original_narration_preserved": true,
+      "new_spoken_cta": false,
+      "written_cta_appended": true,
+      "decode_passed": true,
+      "subtitle_review": "original_pixels_preserved; human_visual_review_required",
+      "files": [
+        {
+          "name": "story-20260925-cappadocia.mp4",
+          "bytes": 22224346,
+          "sha256": "19888df28fc2f67331bb1dbdd955d55d27bb76d2ab62743d0ac39340229791ce"
+        }
+      ]
+    },
+    {
+      "id": "story-20260926-plitvice",
+      "mode": "video_cta",
+      "status": "failed",
+      "original_duration": 123.141016,
+      "final_duration": 127.12,
+      "width": 1080,
+      "height": 1920,
+      "original_narration_preserved": true,
+      "new_spoken_cta": false,
+      "written_cta_appended": true,
+      "decode_passed": true,
+      "subtitle_review": "original_pixels_preserved; human_visual_review_required",
+      "files": [
+        {
+          "name": "story-20260926-plitvice.mp4",
+          "bytes": 32678650,
+          "sha256": "cb68163e5242963e660cc0dbef1ddb0d30e7d535f4e584639fa366c546070694"
+        }
+      ],
+      "error": "Output exceeds 25 MB limit"
+    },
+    {
+      "id": "story-20260927-ha-long-bay",
+      "mode": "video_cta",
+      "status": "rendered",
+      "original_duration": 129.661016,
+      "final_duration": 133.642,
+      "width": 1080,
+      "height": 1920,
+      "original_narration_preserved": true,
+      "new_spoken_cta": false,
+      "written_cta_appended": true,
+      "decode_passed": true,
+      "subtitle_review": "original_pixels_preserved; human_visual_review_required",
+      "files": [
+        {
+          "name": "story-20260927-ha-long-bay.mp4",
+          "bytes": 18745097,
+          "sha256": "98daad3023f233b8ac564ad26563be51c747e514170694b6853a7c32b8c7622d"
+        }
+      ]
+    },
+    {
+      "id": "story-20260928-giants-causeway",
+      "mode": "video_cta",
+      "status": "failed",
+      "original_duration": 122.741016,
+      "final_duration": 126.72,
+      "width": 1080,
+      "height": 1920,
+      "original_narration_preserved": true,
+      "new_spoken_cta": false,
+      "written_cta_appended": true,
+      "decode_passed": true,
+      "subtitle_review": "original_pixels_preserved; human_visual_review_required",
+      "files": [
+        {
+          "name": "story-20260928-giants-causeway.mp4",
+          "bytes": 27016050,
+          "sha256": "de8c2c94f619d690094cb6242f1e7e742964678e50494ca6914018b193e1f372"
+        }
+      ],
+      "error": "Output exceeds 25 MB limit"
+    },
+    {
+      "id": "story-20260929-zhangjiajie",
+      "mode": "video_cta",
+      "status": "failed",
+      "original_duration": 127.061016,
+      "final_duration": 131.04,
+      "width": 1080,
+      "height": 1920,
+      "original_narration_preserved": true,
+      "new_spoken_cta": false,
+      "written_cta_appended": true,
+      "decode_passed": true,
+      "subtitle_review": "original_pixels_preserved; human_visual_review_required",
+      "files": [
+        {
+          "name": "story-20260929-zhangjiajie.mp4",
+          "bytes": 27795272,
+          "sha256": "f2cfee6007af65dc988ccf63d8ffedd55da2c5588769c4b763cef8dfdecdad4b"
+        }
+      ],
+      "error": "Output exceeds 25 MB limit"
+    },
+    {
+      "id": "story-20260930-meteora",
+      "mode": "video_cta",
+      "status": "rendered",
+      "original_duration": 127.581016,
+      "final_duration": 131.6,
+      "width": 1080,
+      "height": 1920,
+      "original_narration_preserved": true,
+      "new_spoken_cta": false,
+      "written_cta_appended": true,
+      "decode_passed": true,
+      "subtitle_review": "original_pixels_preserved; human_visual_review_required",
+      "files": [
+        {
+          "name": "story-20260930-meteora.mp4",
+          "bytes": 15982647,
+          "sha256": "fb106340948aa0066d5ed74c23b6ef1880b186b6f82988baa70428dc8059de7c"
+        }
+      ]
+    },
+    {
+      "id": "post-love-remembered-cta",
+      "mode": "image_cta",
+      "status": "rendered",
+      "final_duration": 18.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "post-love-remembered-cta.jpg",
+          "bytes": 318100,
+          "sha256": "7ca2c876d86729d50ed87221befba09bc3f60050d572bc70e841888ee490bb52"
+        },
+        {
+          "name": "post-love-remembered-cta.mp4",
+          "bytes": 332312,
+          "sha256": "4ada13e0758b24711287c8d7c59c2610c3d8cf5380d81dc13d999fd1baf0f887"
+        }
+      ]
+    },
+    {
+      "id": "post-breakup-unanswered-cta",
+      "mode": "image_cta",
+      "status": "rendered",
+      "final_duration": 18.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "post-breakup-unanswered-cta.jpg",
+          "bytes": 232956,
+          "sha256": "3974d998cf5f6464fb7ccccbb5a2d8bb46393daec71bba87a0441707253a8d0f"
+        },
+        {
+          "name": "post-breakup-unanswered-cta.mp4",
+          "bytes": 241374,
+          "sha256": "e5ea329c531879a32b2886f22f9bff6b36d12f5e13847f86c29560f784a02213"
+        }
+      ]
+    },
+    {
+      "id": "post-unsent-message-cta",
+      "mode": "image_cta",
+      "status": "rendered",
+      "final_duration": 18.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "post-unsent-message-cta.jpg",
+          "bytes": 273071,
+          "sha256": "64a08669ac1463ebd4a624002842e810e212e5c34467411f1aa2cd440cd07750"
+        },
+        {
+          "name": "post-unsent-message-cta.mp4",
+          "bytes": 281504,
+          "sha256": "dba3229c59c8edd3054cd035333c5d124639628afe510500fae731b3d29c1932"
+        }
+      ]
+    },
+    {
+      "id": "post-strong-people-cta",
+      "mode": "image_cta",
+      "status": "rendered",
+      "final_duration": 18.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "post-strong-people-cta.jpg",
+          "bytes": 295680,
+          "sha256": "a7242c6ccbf6258fdce16a7dd2afbc354e907868ce4ee9a38e71ccacc8735463"
+        },
+        {
+          "name": "post-strong-people-cta.mp4",
+          "bytes": 304123,
+          "sha256": "6ded89e886fa78fce88c4d95159141ac4c64cbc31f1c708de8480a4871611044"
+        }
+      ]
+    },
+    {
+      "id": "post-love-proven-cta",
+      "mode": "image_cta",
+      "status": "rendered",
+      "final_duration": 18.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "post-love-proven-cta.jpg",
+          "bytes": 261918,
+          "sha256": "c8b5d4082ab3f757b49d47a677ef66dbb1c0ec6b5dd7f78355847e019e05fab3"
+        },
+        {
+          "name": "post-love-proven-cta.mp4",
+          "bytes": 230017,
+          "sha256": "063d5e55d07c6eaf419fdd6bd09b385375155cc3b2ed6df00e3304525fc36a36"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-scorpio-part2-cta",
+      "mode": "image_cta",
+      "status": "rendered",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-scorpio-part2-cta.jpg",
+          "bytes": 553668,
+          "sha256": "d9870c18a707058d0d895471c57353c41563375465370fc3a837f5a91ed072b5"
+        },
+        {
+          "name": "zodiac-scorpio-part2-cta.mp4",
+          "bytes": 1031003,
+          "sha256": "87ec1ad2c8b245032ace0781e99adf1a75c99e4883cd9105db309981d39a941f"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-sagittarius-part2-cta",
+      "mode": "image_cta",
+      "status": "rendered",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-sagittarius-part2-cta.jpg",
+          "bytes": 544408,
+          "sha256": "b58a420d4105a7a6c410699870a7c4e328e47b639de84631390e54b8d32e2014"
+        },
+        {
+          "name": "zodiac-sagittarius-part2-cta.mp4",
+          "bytes": 1000811,
+          "sha256": "bb65f74e64cb0c67f7412b78c998bee454bbdbfa4b602e279f55413a6bf24b74"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-capricorn-part2-cta",
+      "mode": "image_cta",
+      "status": "rendered",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-capricorn-part2-cta.jpg",
+          "bytes": 556467,
+          "sha256": "1166ccd707fabcfc09d5f79f170789779e4136ba2206cb8b5a3557cb61ad7f70"
+        },
+        {
+          "name": "zodiac-capricorn-part2-cta.mp4",
+          "bytes": 1024127,
+          "sha256": "ed3120bd30f833637eaf926d20d4244b299d658120bf881fd95ab90b2aff6006"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-aquarius-part2-cta",
+      "mode": "image_cta",
+      "status": "rendered",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-aquarius-part2-cta.jpg",
+          "bytes": 606236,
+          "sha256": "bc19874365028595e1efbb680a2b0885134c903d79719ebd7bb050cda0f94e14"
+        },
+        {
+          "name": "zodiac-aquarius-part2-cta.mp4",
+          "bytes": 1127794,
+          "sha256": "934a7da809373032615a1b08a8765d320ce543b5a570fecc50e6c3e3177b4118"
+        }
+      ]
+    }
+  ]
+}
