@@ -1,257 +1,67 @@
 {
-  "version": 3,
-  "updated_at": "2026-09-18T20:55:00+03:00",
+  "version": 4,
+  "updated_at": "2026-09-19T23:25:34+03:00",
   "timezone": "Europe/Athens",
-  "rules": "\nPUBLISHING RELIABILITY REPAIR 2026-09-18 (required):\nRead config/publishing_reliability.json before each run. First reconcile ALL due posts by provider (this read/reconciliation work is not limited by max_jobs_per_run). PUBLISHED requires provider PUBLISHED plus a returned public URL; scheduled/PENDING is never published. Keep per-platform status, public URLs, errors and retry post IDs in GitHub and Notion. Mark a job completed only when all four required destinations are confirmed published. A partial failure must never republish successful destinations.\nFor transient timeouts, re-read the original and all known retry posts and check for a public URL or visible published matching post. If absence cannot be established, report an ambiguous result and do not blindly retry. Once absence is established, allow at most ONE delayed automatic retry per job/network with the existing hosted media, only the failed provider, at a future slot at least 15 minutes after failure. Persist the retry ID/UUID immediately and check it on subsequent runs. Never regenerate paid media for a publishing error. The Leo Instagram retry already exists: post 378060016 UUID -4218314236002483607 at 2026-09-18 14:30 Europe/Athens; original 377740952 remains the source for Facebook/TikTok/YouTube. Do NOT create another Leo retry.\nIf TikTok reports too many posts/OpenAPI 403 or a quota, record a per-network cooldown of at least 24 hours from that error (longer if provider specifies), defer only blocked-network pending publications to safe spaced slots after cooldown, preserving original content dates, and continue unaffected destinations. Do not burst catch-up jobs, bypass limits, or create duplicate attempts. Reconcile success after cooldown; do not declare a fixed daily cap guaranteed.\nLegacy photo posts drafted on 2026-09-18 are intentionally retired from the active calendar. Never reactivate or recreate them. Daily targets apply only to the new strategy, plus the explicitly requested weekly introduction. Count all active posts, special posts and retries when checking network load.\nOn explicit Metricool plan/quota errors stop new submissions to affected scope, preserve ready media, notify with exact error; do not purchase or infer current plan from old email. Likewise stop paid generation on insufficient balance; no unapproved credit purchases or paid retries.\nAfter 14:00 Europe/Athens prepare tomorrow's correct calendar theme even while today's future-scheduled posts remain in pending.json. Future pending jobs must not starve tomorrow's generation. Prioritize tomorrow's earliest missing slots; process at most 4 new/advancing generation jobs per run. Reuse task IDs and finished approved dog clip. Preflight quotas/balances through read-only connected tools. Notify if tomorrow remains incomplete by 22:00.\nFor Metricool updates preserve all original relevant content, media and provider settings, but omit unrelated networkData blocks not listed in providers (the read API may return default twitterData/instagramData for TikTok-only posts). Use known hosted Metricool media in info.media when already present; mediaFiles is for local paths. Check post UUID after updates because numeric IDs can change. Keep scheduled, published, partially_published, blocked and needs_review distinct.\n\nUSER EXCLUSIVE TIKTOK RESET 2026-09-18 (latest instruction; overrides earlier retry-preservation and catch-up instructions): Only this daily photo-post pipeline and weekly introduction automation 6aacecbeaf94819198603f4458f8bb29 may publish to TikTok. Daily TikTok content starts 2026-09-19 with 10 photo posts (9 soul/emotional + 1 dog-barista), 2026-09-20 with 12 zodiac photo posts, alternating thereafter on the existing calendar and slots. Do not submit any TikTok daily content dated before 2026-09-19, revive old campaigns, or catch up canceled old videos. TikTok retry UUID -3029365031314767155 is now canceled by user: Metricool draft ID 378222792, autoPublish=false; never reactivate it or create a replacement. Keep all other retired legacy drafts inactive. Preserve the existing provider cooldown and stop-on-failure safeguards. Prepare the full 10-post batch, but on 2026-09-19 publish only at valid remaining configured slots after cooldown, do not squeeze 10 posts into the shortened window or misreport all 10 as scheduled/published. Report any target shortfall. Keep 2026-09-20 zodiac parity even if September 19 is incomplete. The weekly intro remains exactly Monday 23:00 Europe/Athens, starting 2026-09-21, as an additional explicitly authorized video. Changes here concern TikTok only; other networks remain governed by their existing instructions.\n\nAUTHORITATIVE CURRENT USER EXCEPTIONS (synced from config/content_strategy.json):\nONE-DATE USER SCHEDULE EXCEPTION (latest user instruction): For TikTok daily photo content dated 2026-09-19 ONLY, prepare all 10 posts (9 soul/emotional plus 1 dog-barista) and schedule all ten for exactly 2026-09-19T23:00:00+03:00 Europe/Athens, autoPublish=true and autoAddMusic=true. This explicitly overrides prior spaced-slot and no-compression instructions for this date only; it is the requested daily batch, not catch-up or retry traffic. Do not schedule any of these ten earlier that day. Prepare and schedule in advance through Metricool, not by waiting for an hourly task to run at 23:00. Check for duplicate jobs and current provider restrictions. Respect any active provider cooldown/limit extending to the target time; do not bypass it. On failure stop any remaining attempts when still cancellable, and report that simultaneously queued posts may already have been attempted. Do not promise all ten will publish. On 2026-09-20 automatically return to normal zodiac slots from 00:30, then continue the normal 12/10 calendar alternation; retain rolling-quota checks across midnight. Weekly Monday 23:00 introduction and other networks unchanged. Keep canceled legacy posts and retries canceled.\n\nLATEST USER DOG VIDEO EXCEPTION: Keep the dog-barista as a VIDEO on TikTok every second calendar day (soul days), starting 2026-09-19 and then 2026-09-21, 2026-09-23, etc. It REPLACES the previously specified dog photo within the 10-post batch: exactly 9 emotional photo posts plus 1 dog-barista video, not an 11th daily post. Reuse the same approved dog video generated for the other networks, with existing Runway quality/budget rules; no extra paid generation solely for TikTok. TikTok autoAddMusic=true applies to the nine native photo posts; do not assume it adds music to a video on a personal TikTok account. Preserve the dog video's existing audio/silent settings and supported AI labels. For 2026-09-19 only, schedule the dog video together with all nine photo posts at 23:00 Europe/Athens. Thereafter use the existing soul-day dog slot 17:18, and preserve all other regular slots, 12-zodiac-photo days, rolling quotas, cooldowns, stop-on-failure, cancellation and duplicate safeguards. Keep Monday 23:00 introduction as the separate authorized weekly video and the other three platforms unchanged. This dog-video instruction overrides all prior dog-photo-only wording.",
+  "strategy_id": "FOUR_DAILY_V1",
+  "authoritative_strategy_file": "config/content_strategy.json",
+  "effective_date": "2026-09-20",
+  "rules": "AUTHORITATIVE USER RESET 19 SEPTEMBER 2026: Follow config/content_strategy.json and the newest master Notion page 3e0f2345-b318-81c0-9e1c-e8b4b7d19e9d. Exactly four logical posts DAILY per platform: one complete 12-sign carousel, one coherent five-card emotional story, one unusual real-phenomenon video and one different folklore/legend video. BOTH carousels occur every day. NO alternating dates, six-sign groups, separate card posts, dog/barista/terrier videos, avatars, weekly introductions or filler. All older 12/10, 13/19, dog-only, special 19 September bursts and dog-preservation exceptions are retired, including their retry and recovery instructions. Cancelled legacy work is not missing work.\nPUBLISHING SAFETY: Approval Gate is the sole regular scheduler. Visual Story Assembly is the sole paid feature renderer. Do not schedule while migration is IN_PROGRESS or obsolete active queue entries remain. Fetch live Metricool queue, publication history and durable ledger before every write. Enforce one key local_date+category+platform plus a cross-date content fingerprint. Claim ownership before create, reconcile ambiguous results and NEVER repeat create blindly. Update existing eligible UUIDs instead of creating duplicates; use the returned new numeric ID and stable UUID. Preserve full original relevant payload, media and successful providers; omit unrelated networkData. Verify every write by reading. PENDING/SCHEDULED is not PUBLISHED. Published requires provider evidence and a returned public URL. A partial failure must not republish successful networks.\nNO LEGACY RETRIES: Do not revive any cancelled old posts, dog drafts or Flying Dutchman versions. Both 19 September Dutchman publications already happened; their published copies have not been deleted. Future Dutchman UUID -8042687935771622605 remains retired. For a genuinely new non-retired item with a transient failure, at most one delayed retry on only the failed network is allowed after proving the original did not publish and checking current capacity. Unknown results, quota errors and format errors are not permission for automatic blind retry. Never rerender paid media for a publishing failure.\nCAPACITY: Respect current provider/account limits, rolling 24-hour attempts including failed attempts, the previous day and next-day commitments. Midnight is not a presumed reset. No burst catch-up. A historical cooldown does not prove current availability; refresh actual errors before scheduling. On explicit account/quota failure stop new submissions to the affected scope and preserve ready media. Do not infer current plan from an old email or buy credits/upgrades. Continue eligible unaffected networks only when their independent checks pass.\nEXISTING PHENOMENA: Preserve the one existing 18:00 Europe/Athens phenomenon entry for each date 20-30 September; reuse its media and UUID, never regenerate or duplicate it. New zodiac carousel, coherent story and a DIFFERENT legend still require actual media and QA before scheduling. From 1 October, prepare a new original phenomenon daily. Preferred implementation slots are 12:30,15:20,18:00,21:40, subject to capacity; these reuse prior slots and are not a new user-selected timetable.\nFORMAT AND QA: Verify native API support for the requested complete 12-card and five-card carousels per connection. If unsupported, mark only that destination blocked; never omit cards, split into extra posts or silently change format. YouTube requires one actual complete readable slideshow video containing all cards. Cards have no narration/TTS/avatar. Narrated videos use Greek voice, full synchronized burned-in subtitles, lawful relevant images and clear fact/folklore distinction. Exact closing: Αν σας άρεσε, ακολουθήστε για περισσότερα. Use approved original/no-cost rights-cleared music only where supported. Verify real final media, duration, decode, audio, card order, readability, subtitles, sources and rights; a metadata label is not QA. No paid card generation, no duplicate render, no purchases, upgrades or access changes. Check current balance and reserved jobs before any authorized charged work.\nREPORTING: Distinguish planned, preparing, blocked, scheduled and published. Draft=true cancels publication but is not permanent deletion of a hosted file. AutoPublish=false alone changes delivery to mobile notification and is NOT cancellation. Report only verified results; never claim the user reviewed unseen media or all four posts are ready when only one category is scheduled.",
   "retired_legacy_post_uuids": [
-    "5968469862478006616",
-    "-1941593113389937615",
-    "-4617932191721175622",
-    "-445330719101599033",
-    "4298891804249247341",
-    "-3290354035097646560",
-    "3516310839196861394",
-    "-5009975642393395068",
-    "-4880667067431302439",
-    "2317278556653109340",
-    "8795228733188163998",
-    "-3029365031314767155"
+    "5968469862478006616", "-1941593113389937615", "-4617932191721175622", "-445330719101599033", "4298891804249247341", "-3290354035097646560", "3516310839196861394", "-5009975642393395068", "-4880667067431302439", "2317278556653109340", "8795228733188163998", "-3029365031314767155",
+    "7486346641732224351", "6234574211891284294", "4952065135289714308", "-8042687935771622605"
   ],
+  "retired_categories": ["dog_barista", "dog_video", "terrier_video", "weekly_introduction", "legacy_standalone_zodiac", "legacy_standalone_emotional"],
   "known_retries": {
     "leo_instagram": {
-      "id": "378060016",
-      "uuid": "-4218314236002483607",
-      "scheduled_time": "2026-09-18T14:30:00+03:00",
-      "status": "PUBLISHED",
-      "automatic_retry_count": 1,
-      "public_url": "https://www.instagram.com/reel/DdbVUXvlGzh/",
-      "confirmed_at": "2026-09-18T14:32:42+03:00"
+      "id": "378060016", "uuid": "-4218314236002483607", "scheduled_time": "2026-09-18T14:30:00+03:00", "status": "PUBLISHED", "automatic_retry_count": 1,
+      "public_url": "https://www.instagram.com/reel/DdbVUXvlGzh/", "confirmed_at": "2026-09-18T14:32:42+03:00", "terminal": true
     },
     "strong_people_tiktok_photo": {
-      "original_id": "378173767",
-      "original_uuid": "-1601691169706586319",
-      "id": "378264496",
-      "uuid": "-3029365031314767155",
-      "scheduled_time": "2026-09-19T23:00:00+03:00",
-      "status": "PENDING_EXISTING_PHOTO_PRESERVED",
-      "automatic_retry_count": 1,
-      "corrected_media_type": "image/jpeg",
-      "hosted_media_url": "https://static.metricool.com/planner/202609/7000636-file-17689786721063048682.jpeg",
-      "note": "Existing photo post preserved under latest transition instruction; no additional photo batches.",
-      "notion_page_id": "3dff2345-b318-8166-b6b9-d7c5f2bd8d4e",
-      "notion_url": "https://app.notion.com/p/3dff2345b3188166b6b9d7c5f2bd8d4e?pvs=204"
+      "original_id": "378173767", "original_uuid": "-1601691169706586319", "id": "378264496", "uuid": "-3029365031314767155", "scheduled_time": "2026-09-19T23:00:00+03:00",
+      "status": "RETIRED_DO_NOT_SCHEDULE", "automatic_retry_count": 1, "terminal": true,
+      "corrected_media_type": "image/jpeg", "hosted_media_url": "https://static.metricool.com/planner/202609/7000636-file-17689786721063048682.jpeg",
+      "note": "Historical reference only; latest user reset prohibits reactivation, replacement and catch-up. This local retirement is not a claim of a newly verified remote deletion.",
+      "notion_page_id": "3dff2345-b318-8166-b6b9-d7c5f2bd8d4e", "notion_url": "https://app.notion.com/p/3dff2345b3188166b6b9d7c5f2bd8d4e?pvs=204"
     }
   },
   "network_cooldowns": {
     "tiktok": {
-      "status": "active",
-      "reason": "too_many_posts_openapi_403",
-      "observed_at": "2026-09-18T16:07:00+03:00",
-      "cooldown_until": "2026-09-19T16:07:00+03:00",
-      "source_job_id": "2026-09-18-zodiac-06-virgo",
-      "source_post_id": "377741065",
+      "status": "active", "reason": "too_many_posts_openapi_403", "observed_at": "2026-09-18T16:07:00+03:00", "cooldown_until": "2026-09-19T16:07:00+03:00",
+      "source_job_id": "2026-09-18-zodiac-06-virgo", "source_post_id": "377741065",
       "exact_error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
-      "policy": "Defer TikTok only; continue Facebook, Instagram and YouTube; no burst retries."
+      "policy": "Historical observation retained. Refresh actual account errors and rolling attempts before any write. Do not assume the old timestamp proves current availability. Defer blocked networks only; no burst retries.",
+      "requires_live_refresh": true
     }
   },
-  "deferred_network_posts": {
-    "tiktok": [
-      "2026-09-19-soul-04-betrayal",
-      "2026-09-19-soul-05-healing-without-apology",
-      "2026-09-19-soul-06-self-respect-choose-yourself",
-      "2026-09-19-soul-07-memories-show-distance",
-      "2026-09-19-soul-09-longing-in-habits",
-      "2026-09-19-soul-10-second-chance-change"
-    ]
-  },
-  "disabled_retired_post_ids": [
-    "378119832",
-    "378119841",
-    "378119848",
-    "378119855",
-    "378119867",
-    "378119875",
-    "378119884",
-    "378119886",
-    "378222792"
-  ],
+  "deferred_network_posts": {"tiktok": []},
+  "disabled_retired_post_ids": ["378119832", "378119841", "378119848", "378119855", "378119867", "378119875", "378119884", "378119886", "378222792"],
   "observed_external_failures": [
     {
-      "observed_at": "2026-09-18T17:49:00+03:00",
-      "post_id": "378173767",
-      "uuid": "-1601691169706586319",
-      "network": "tiktok",
-      "status": "ERROR",
+      "observed_at": "2026-09-18T17:49:00+03:00", "post_id": "378173767", "uuid": "-1601691169706586319", "network": "tiktok", "status": "ERROR",
       "error": "The content format of the Tiktok photo is incorrect. The 'image/png' type is not allowed, use 'image/jpeg' or 'image/webp' instead.",
-      "retry_status": "CANCELLED_BY_USER",
-      "retry_post_id": "378222792",
-      "retry_uuid": "-3029365031314767155",
-      "retry_scheduled_time": "2026-09-19T18:30:00+03:00",
-      "corrected_media_type": "image/jpeg",
-      "note": "Corrected JPEG retry is draft=true and autoPublish=false; never reactivate or replace."
+      "retry_status": "CANCELLED_BY_USER", "retry_post_id": "378222792", "retry_uuid": "-3029365031314767155", "retry_scheduled_time": "2026-09-19T18:30:00+03:00", "corrected_media_type": "image/jpeg",
+      "note": "Historical error, not a new failure. Never reactivate or replace this retired retry."
     }
   ],
-  "cancelled_tiktok_legacy_jobs": [
-    "2026-09-18-zodiac-06-virgo",
-    "2026-09-18-zodiac-07-libra",
-    "2026-09-18-zodiac-08-scorpio",
-    "2026-09-18-zodiac-09-sagittarius",
-    "2026-09-18-zodiac-10-capricorn",
-    "2026-09-18-zodiac-11-aquarius",
-    "2026-09-18-zodiac-12-pisces"
-  ],
-  "tiktok_daily_batches": {
-    "2026-09-19": {
-      "theme": "soul",
-      "target_count": 10,
-      "scheduled_count": 4,
-      "remaining_count": 6,
-      "publication_time": "2026-09-19T23:00:00+03:00",
-      "status": "partially_scheduled",
-      "jobs": [
-        {
-          "job_id": "2026-09-19-soul-01-love-unforgotten",
-          "format": "photo",
-          "post_id": "378262154",
-          "uuid": "9039902732552782139",
-          "status": "PENDING",
-          "media_url": "https://static.metricool.com/planner/202609/7000636-file-4251031602469415811.jpeg"
-        },
-        {
-          "job_id": "2026-09-19-soul-02-no-closure",
-          "format": "photo",
-          "post_id": "378262241",
-          "uuid": "5832980254006985063",
-          "status": "PENDING",
-          "media_url": "https://static.metricool.com/planner/202609/7000636-file-9350330219221664552.jpeg"
-        },
-        {
-          "job_id": "2026-09-19-soul-03-unsent-message",
-          "format": "photo",
-          "post_id": "378262281",
-          "uuid": "-3094728111250849196",
-          "status": "PENDING",
-          "media_url": "https://static.metricool.com/planner/202609/7000636-file-9061311503209270755.jpeg"
-        },
-        {
-          "job_id": "2026-09-19-soul-08-dog-barista-foam",
-          "format": "video",
-          "post_id": "378262286",
-          "uuid": "6234574211891284294",
-          "status": "PENDING",
-          "media_url": "https://static.metricool.com/planner/202609/7000636-file-13815689072781945592.mp4"
-        }
-      ]
-    }
-  },
+  "cancelled_tiktok_legacy_jobs": ["2026-09-18-zodiac-06-virgo", "2026-09-18-zodiac-07-libra", "2026-09-18-zodiac-08-scorpio", "2026-09-18-zodiac-09-sagittarius", "2026-09-18-zodiac-10-capricorn", "2026-09-18-zodiac-11-aquarius", "2026-09-18-zodiac-12-pisces"],
+  "tiktok_daily_batches": {},
   "strategy_transition": {
-    "effective_at": "2026-09-18T20:48:00+03:00",
-    "status": "active",
-    "rule": "Stop all non-dog video creation, scheduling, retries and publication. Preserve dog-barista every other day. Await final daily-story format and duration; spend no HeyGen credits.",
-    "weekly_introduction_automation_id": "6aacecbeaf94819198603f4458f8bb29",
-    "weekly_introduction_status": "disabled",
-    "cancelled_metricool_posts": [
-      {
-        "job_id": "2026-09-18-zodiac-11-aquarius",
-        "post_id": "378267969",
-        "uuid": "-6989681795587618835",
-        "status": "DRAFT",
-        "autoPublish": false
-      },
-      {
-        "job_id": "2026-09-18-zodiac-12-pisces",
-        "post_id": "378267992",
-        "uuid": "5545531062385330284",
-        "status": "DRAFT",
-        "autoPublish": false
-      },
-      {
-        "job_id": "2026-09-19-soul-01-love-unforgotten",
-        "post_id": "378280297",
-        "uuid": "-2878152742504479547",
-        "status": "DRAFT",
-        "autoPublish": false
-      },
-      {
-        "job_id": "2026-09-19-soul-02-no-closure",
-        "post_id": "378280318",
-        "uuid": "-939280630344170335",
-        "status": "DRAFT",
-        "autoPublish": false
-      },
-      {
-        "job_id": "2026-09-19-soul-03-unsent-message",
-        "post_id": "378280308",
-        "uuid": "8732791487214272690",
-        "status": "DRAFT",
-        "autoPublish": false
-      },
-      {
-        "job_id": "2026-09-19-soul-04-betrayal",
-        "post_id": "378280323",
-        "uuid": "7119671207944077321",
-        "status": "DRAFT",
-        "autoPublish": false
-      },
-      {
-        "job_id": "2026-09-19-soul-05-healing-without-apology",
-        "post_id": "378280332",
-        "uuid": "4494981964765348564",
-        "status": "DRAFT",
-        "autoPublish": false
-      },
-      {
-        "job_id": "2026-09-19-soul-06-self-respect-choose-yourself",
-        "post_id": "378280342",
-        "uuid": "1827937260421661697",
-        "status": "DRAFT",
-        "autoPublish": false
-      },
-      {
-        "job_id": "2026-09-19-soul-07-memories-show-distance",
-        "post_id": "378280370",
-        "uuid": "-6171012434982779529",
-        "status": "DRAFT",
-        "autoPublish": false
-      },
-      {
-        "job_id": "2026-09-19-soul-09-longing-in-habits",
-        "post_id": "378280355",
-        "uuid": "2510727418625477636",
-        "status": "DRAFT",
-        "autoPublish": false
-      },
-      {
-        "job_id": "2026-09-19-soul-10-second-chance-change",
-        "post_id": "378280361",
-        "uuid": "-8992648413116346507",
-        "status": "DRAFT",
-        "autoPublish": false
-      }
-    ],
-    "preserved_dog_jobs": [
-      "2026-09-19-soul-08-dog-barista-foam"
-    ],
-    "existing_photo_posts_policy": "Preserve already scheduled photo posts; create no additional photo batches pending clarification.",
-    "last_verified_at": "2026-09-18T20:55:00+03:00",
-    "reactivation_incident": {
-      "observed_at": "2026-09-18T20:49:00+03:00",
-      "summary": "Nine cancelled non-dog videos were automatically reactivated by stale automations.",
-      "resolved_at": "2026-09-18T20:55:00+03:00",
-      "resolution": "Re-cancelled all nine in Metricool and disabled the conflicting hourly and daily maintenance automations.",
-      "verification": "All nine UUIDs are draft=true and autoPublish=false; dog posts remain active."
-    },
+    "effective_at": "2026-09-20T00:00:00+03:00", "status": "LEGACY_QUEUE_CLEARED_NEW_MEDIA_PENDING", "strategy_id": "FOUR_DAILY_V1",
+    "rule": "Prepare only the four approved daily categories. All dog and standalone-card campaigns are retired. No new carousel or legend is marked ready by this configuration change.",
+    "weekly_introduction_automation_id": "6aacecbeaf94819198603f4458f8bb29", "weekly_introduction_status": "disabled", "preserved_dog_jobs": [],
+    "existing_photo_posts_policy": "Legacy standalone posts are retired drafts, not publication gaps. Only complete new carousels may enter the new program after QA.",
+    "last_verified_at": "2026-09-19T23:25:34+03:00",
     "disabled_conflicting_automations": [
-      {
-        "id": "6aabb848f94881919dca3051dae21f34",
-        "title": "Δημοσιεύσεις και σκύλος — ιστορίες σε αναμονή",
-        "status": "disabled"
-      },
-      {
-        "id": "6aad6dfc72c881919bcbd4dd37496907",
-        "title": "Καθημερινός έλεγχος και επιδιορθώσεις",
-        "status": "disabled"
-      }
+      {"id": "6aabb848f94881919dca3051dae21f34", "title": "Δημοσιεύσεις και σκύλος — ιστορίες σε αναμονή", "status": "disabled"},
+      {"id": "6aad6dfc72c881919bcbd4dd37496907", "title": "Καθημερινός έλεγχος και επιδιορθώσεις", "status": "disabled"}
     ]
+  },
+  "preserved_phenomenon_metricool_uuids": {
+    "2026-09-20": "2123662763815747664", "2026-09-21": "2726276820466814272", "2026-09-22": "-2388549801947019381", "2026-09-23": "-4209113635639966324", "2026-09-24": "-5009639251725630935", "2026-09-25": "-6217824847181035454", "2026-09-26": "-8868155511436325346", "2026-09-27": "1505476370371006414", "2026-09-28": "3716130563520349426", "2026-09-29": "4740472343308093579", "2026-09-30": "9042889003413750494"
+  },
+  "history_policy": {
+    "superseded_content_blob_sha": "34e8df7cf23cd51b58dfec15139bcaa69eaa4dd8",
+    "old_rules_and_batch_snapshots": "Retained in Git history for audit only, not executable recovery instructions.",
+    "completed_publication_history": "queue/completed.json and state/content_history.json were not modified."
   }
 }
