@@ -1,0 +1,146 @@
+{
+  "batch_id": "13546956f94fc8f3",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "zodiac-aries-part3",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-taurus-part3",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-gemini-part3",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-cancer-part3",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-leo-part3",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-virgo-part3",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-libra-part3",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-scorpio-part3",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-sagittarius-part3",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-capricorn-part3",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-aquarius-part3",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-pisces-part3",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "emotional-love-small-details-20260920",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 22.0,
+      "error": null
+    },
+    {
+      "id": "emotional-romance-safe-20260920",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 22.0,
+      "error": null
+    },
+    {
+      "id": "emotional-breakup-phone-20260920",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 22.0,
+      "error": null
+    },
+    {
+      "id": "emotional-soul-rest-20260920",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 22.0,
+      "error": null
+    },
+    {
+      "id": "emotional-soul-listen-20260920",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 22.0,
+      "error": null
+    },
+    {
+      "id": "mystery-kelso-dunes-20260920",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 22.0,
+      "error": null
+    },
+    {
+      "id": "mystery-finn-legend-20260920",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 22.0,
+      "error": null
+    },
+    {
+      "id": "mystery-brocken-spectre-20260920",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 22.0,
+      "error": null
+    }
+  ]
+}

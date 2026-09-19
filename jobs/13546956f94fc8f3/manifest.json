@@ -1,0 +1,567 @@
+{
+  "batch_sha256": "13546956f94fc8f32c5c3a81050fa054cb0814878606e1356b6de108a535042a",
+  "batch_id": "13546956f94fc8f3",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "zodiac-aries-part3",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΚΡΙΟΣ\n5 ακόμα πλευρές του",
+      "text": "11. Η χαρά του φαίνεται πριν τη μοιραστεί.\n12. Δυσκολεύεται να ζητήσει βοήθεια, όχι να τη δώσει.\n13. Μια καθαρή συγγνώμη τον αγγίζει περισσότερο από δικαιολογίες.\n14. Στη φιλία θέλει ειλικρίνεια, όχι ανταγωνισμό.\n15. Όταν ξαναρχίζει, θέλει δίπλα του κάποιον που πιστεύει σ’ αυτόν.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-aries-part3.jpg",
+          "bytes": 243079,
+          "sha256": "cb8b7bae712e0d6e9257520dd86d12aa82e675c5d72e9875da26a2061fae4872"
+        },
+        {
+          "name": "zodiac-aries-part3.mp4",
+          "bytes": 424734,
+          "sha256": "b823f583b31ab751513133b9031eaa8d9729cc81e4bd8bc1952068ca47b37c59"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-taurus-part3",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΤΑΥΡΟΣ\n5 ακόμα πλευρές του",
+      "text": "11. Χαίρεται με μικρά πράγματα που του δίνουν ηρεμία.\n12. Ζητά βοήθεια όταν νιώσει ότι δεν θα τον κρίνουν.\n13. Μια συγγνώμη χρειάζεται και διαφορετικές πράξεις.\n14. Στη φιλία προτιμά τη σταθερή παρουσία από τις υποσχέσεις.\n15. Για να ξαναρχίσει, θέλει έδαφος που δεν τρέμει.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-taurus-part3.jpg",
+          "bytes": 230439,
+          "sha256": "34a9ad49da85a7d9f1d6cf61628d97ff6b1188fc7d4469d48a42b7f5e0de4f9f"
+        },
+        {
+          "name": "zodiac-taurus-part3.mp4",
+          "bytes": 398072,
+          "sha256": "b3deb4b8233dd31d4dbf1f44c5a38ebce83f1875e3f78320f8be0b1ce53e6d2f"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-gemini-part3",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΔΙΔΥΜΟΙ\n5 ακόμα πλευρές τους",
+      "text": "11. Μια καλή κουβέντα μπορεί να τους αλλάξει τη μέρα.\n12. Πίσω από το χιούμορ μπορεί να κρύβεται ανάγκη για στήριξη.\n13. Θέλουν συγγνώμη που ανοίγει συζήτηση, όχι που την κλείνει.\n14. Στη φιλία χρειάζονται χώρο να είναι όλες οι πλευρές τους.\n15. Μια νέα αρχή τους ξυπνά την περιέργεια.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-gemini-part3.jpg",
+          "bytes": 253790,
+          "sha256": "098f8f30ac1ca9c132aee9256ff8356f2e32ea090eac7022d5d3c3d8e96b8a05"
+        },
+        {
+          "name": "zodiac-gemini-part3.mp4",
+          "bytes": 412445,
+          "sha256": "c7981ddcec8ac6e78a33a377abf3f8db9f438564497d6d146062a765851ebc59"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-cancer-part3",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΚΑΡΚΙΝΟΣ\n5 ακόμα πλευρές του",
+      "text": "11. Η χαρά του μεγαλώνει όταν τη μοιράζεται με δικούς του.\n12. Θέλει βοήθεια χωρίς να νιώθει ότι γίνεται βάρος.\n13. Μια συγγνώμη χρειάζεται τρυφερότητα και συνέπεια.\n14. Στη φιλία θυμάται ποιος έμεινε στις δύσκολες ώρες.\n15. Ξαναρχίζει όταν νιώσει ότι μπορεί πάλι να ανήκει.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-cancer-part3.jpg",
+          "bytes": 232762,
+          "sha256": "037e23cecc24c6d3a3e513c4b8d343a2d99216b6760940c4c430b8ff580bd862"
+        },
+        {
+          "name": "zodiac-cancer-part3.mp4",
+          "bytes": 399223,
+          "sha256": "e653027efba0f6b052deb58f1a0fe4d8f7ecedb6fc903f1758e531e01d970f31"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-leo-part3",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΛΕΩΝ\n5 ακόμα πλευρές του",
+      "text": "11. Θέλει να μοιράζεται τη χαρά, όχι μόνο να τον χειροκροτούν.\n12. Ζητά στήριξη δύσκολα όταν όλοι τον θεωρούν δυνατό.\n13. Μια συγγνώμη με σεβασμό τον αγγίζει βαθιά.\n14. Στη φιλία δίνει χώρο στους ανθρώπους του να λάμψουν.\n15. Ξαναρχίζει όταν θυμηθεί την αξία του.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-leo-part3.jpg",
+          "bytes": 238718,
+          "sha256": "cc172f0bf5962c1344d666b1b17623ccc9fd98ddf55c16bff5c720d22b8aea3c"
+        },
+        {
+          "name": "zodiac-leo-part3.mp4",
+          "bytes": 418214,
+          "sha256": "a4a4f44377efc312b44b7a092e1a3959fa90dd7dfcf911ef471403858b40a0f4"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-virgo-part3",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΠΑΡΘΕΝΟΣ\n5 ακόμα πλευρές του",
+      "text": "11. Μια μικρή λεπτομέρεια μπορεί να του φτιάξει τη μέρα.\n12. Δίνει λύσεις, αλλά χρειάζεται κι εκείνος έναν ώμο.\n13. Μια συγγνώμη έχει αξία όταν συνοδεύεται από ευθύνη.\n14. Στη φιλία δείχνει ενδιαφέρον με πράξεις που δεν διαφημίζει.\n15. Μαθαίνει να ξεκινά χωρίς να είναι όλα τέλεια.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-virgo-part3.jpg",
+          "bytes": 235566,
+          "sha256": "5789b0fbc547b1e640d2e241505dc176106a0461434760ebb7b21f527cb8ed5a"
+        },
+        {
+          "name": "zodiac-virgo-part3.mp4",
+          "bytes": 410132,
+          "sha256": "098ccec1eb29998e670c6c85742a2611aa6ef2d92e120760184f798c4e86ec1b"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-libra-part3",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΖΥΓΟΣ\n5 ακόμα πλευρές του",
+      "text": "11. Χαίρεται όταν οι άνθρωποί του βρίσκουν κοινό βήμα.\n12. Δυσκολεύεται να πει ότι κι εκείνος χρειάζεται φροντίδα.\n13. Μια συγγνώμη δεν πρέπει να τον βάζει να παρηγορεί τον άλλον.\n14. Στη φιλία θέλει αμοιβαιότητα, όχι μόνιμη διαμεσολάβηση.\n15. Ξαναρχίζει όταν διαλέξει και τον εαυτό του.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-libra-part3.jpg",
+          "bytes": 235394,
+          "sha256": "93b1f82b059a33b4a223be4249f0015ad4b9284f2551fd11f91b03793b73208c"
+        },
+        {
+          "name": "zodiac-libra-part3.mp4",
+          "bytes": 403405,
+          "sha256": "9c0a89a72602d4272db96b6d659e7e8bfff7f673c42341c6ab7d2e5d226c08d6"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-scorpio-part3",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΣΚΟΡΠΙΟΣ\n5 ακόμα πλευρές του",
+      "text": "11. Τη βαθιά χαρά του τη μοιράζεται με λίγους.\n12. Για να ζητήσει βοήθεια, χρειάζεται να νιώσει ασφαλής.\n13. Μια συγγνώμη θέλει αλήθεια, χωρίς μισές εξηγήσεις.\n14. Στη φιλία εκτιμά όποιον σέβεται όσα του εμπιστεύτηκε.\n15. Ξαναρχίζει όταν το παρελθόν πάψει να αποφασίζει γι’ αυτόν.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-scorpio-part3.jpg",
+          "bytes": 233990,
+          "sha256": "3d7d11f821e872ad0ae377576965b7fd0e7c26152474fd8ac60404fe73ec2b3d"
+        },
+        {
+          "name": "zodiac-scorpio-part3.mp4",
+          "bytes": 396813,
+          "sha256": "9f04fe0534290c0b36c0f98bd28344e961d5ee0f23c10d1580cb5cb47ba3b468"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-sagittarius-part3",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΤΟΞΟΤΗΣ\n5 ακόμα πλευρές του",
+      "text": "11. Η χαρά του συχνά γίνεται πρόσκληση για κάτι καινούργιο.\n12. Το χαμόγελό του δεν σημαίνει ότι δεν χρειάζεται στήριξη.\n13. Θέλει συγγνώμη χωρίς παιχνίδια και υπεκφυγές.\n14. Στη φιλία αγαπά την παρέα που δεν τον περιορίζει.\n15. Ξαναρχίζει όταν βρει κάτι που του δίνει ελπίδα.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-sagittarius-part3.jpg",
+          "bytes": 230253,
+          "sha256": "04df24debafbdc153f6ae24f915beb6ed35907cc7b702e40ae0ef0710b5c23a3"
+        },
+        {
+          "name": "zodiac-sagittarius-part3.mp4",
+          "bytes": 398950,
+          "sha256": "1308cf39b5ab8478c41d16587864b295066c465c82d3268e86ace1bfe6c3236c"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-capricorn-part3",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΑΙΓΟΚΕΡΩΣ\n5 ακόμα πλευρές του",
+      "text": "11. Χαίρεται σιωπηλά όταν ένας κόπος του πιάνει τόπο.\n12. Ζητά βοήθεια δύσκολα, γιατί έχει μάθει να αντέχει.\n13. Μια συγγνώμη χρειάζεται ανάληψη ευθύνης.\n14. Στη φιλία μετρά ποιος εμφανίζεται όταν χρειάζεται.\n15. Ξαναρχίζει με μικρά βήματα, όχι με μεγάλες δηλώσεις.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-capricorn-part3.jpg",
+          "bytes": 231207,
+          "sha256": "36870908f2eedcd21159b4e472691cc3ad664fefebfce6c61ff10fc48f1c20d5"
+        },
+        {
+          "name": "zodiac-capricorn-part3.mp4",
+          "bytes": 395507,
+          "sha256": "4714c746b5cdb537640031fcaac87e866ffce227bb149bebd77e53c82f9beb37"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-aquarius-part3",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΥΔΡΟΧΟΟΣ\n5 ακόμα πλευρές του",
+      "text": "11. Μια απρόσμενη ιδέα μπορεί να τον γεμίσει χαρά.\n12. Χρειάζεται στήριξη που δεν εισβάλλει στον χώρο του.\n13. Θέλει συγγνώμη που αναγνωρίζει τη δική του οπτική.\n14. Στη φιλία θέλει αποδοχή, όχι προσπάθεια να τον αλλάξουν.\n15. Ξαναρχίζει όταν δει μια διαφορετική δυνατότητα.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-aquarius-part3.jpg",
+          "bytes": 235603,
+          "sha256": "ffc32ea0249eb39f1af2f376a558a1e78a778d35649312372b0f050dcbd26e30"
+        },
+        {
+          "name": "zodiac-aquarius-part3.mp4",
+          "bytes": 408730,
+          "sha256": "2ab29b789d8f57a0f40d0df0496076c2fcbca45ddd44650b20881132d6f7c818"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-pisces-part3",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΙΧΘΥΣ\n5 ακόμα πλευρές του",
+      "text": "11. Η χαρά του μπορεί να κρύβεται σε μια εικόνα ή ένα τραγούδι.\n12. Δίνει φροντίδα, αλλά χρειάζεται να τη δέχεται κιόλας.\n13. Μια συγγνώμη δεν αρκεί αν τον ξαναπληγώνει το ίδιο μοτίβο.\n14. Στη φιλία θέλει κατανόηση χωρίς να χάνει τα όριά του.\n15. Ξαναρχίζει όταν το όνειρο βρει και μια πράξη.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-pisces-part3.jpg",
+          "bytes": 233993,
+          "sha256": "7787c0e0f17ba1de6383b0464fdbfa5683f73657139261ada7608ebc3b7fb97c"
+        },
+        {
+          "name": "zodiac-pisces-part3.mp4",
+          "bytes": 409823,
+          "sha256": "901e49b609d43cc539187ad436727cbf5878e1e0896711af94bd2acf91c65e7e"
+        }
+      ]
+    },
+    {
+      "id": "emotional-love-small-details-20260920",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "Η αγάπη θυμάται\nτα μικρά σου",
+      "text": "Δεν είναι μόνο τα μεγάλα λόγια.\nΕίναι που θυμήθηκε ότι είχες μια δύσκολη μέρα.\nΠου άφησε λίγο χώρο για τη σιωπή σου.\nΠου δεν σε έκανε να νιώθεις δύσκολος άνθρωπος επειδή χρειαζόσουν τρυφερότητα.\nΕκεί, στα μικρά, νιώθεις ότι σε βλέπουν.",
+      "final_duration": 22.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "emotional-love-small-details-20260920.jpg",
+          "bytes": 222011,
+          "sha256": "418b4b29db90aa03ffa6b16215e99ef0da3e8db97ef55d44e5878d8af48de0cb"
+        },
+        {
+          "name": "emotional-love-small-details-20260920.mp4",
+          "bytes": 275253,
+          "sha256": "2eab88f427880ba566cdefcc0182efdfc7854c8c832e8ca5672d4381a067d97d"
+        }
+      ]
+    },
+    {
+      "id": "emotional-romance-safe-20260920",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "Να σε θέλει\nχωρίς να σε μπερδεύει",
+      "text": "Να υπάρχει έρωτας.\nΑλλά να μη χρειάζεται να μαντεύεις αν αύριο θα εξαφανιστεί.\nΝα σου λείπει χωρίς να φοβάσαι.\nΝα τον θέλεις χωρίς να μικραίνεις.\nΗ ένταση είναι όμορφη όταν δεν σου κοστίζει την ηρεμία σου.",
+      "final_duration": 22.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "emotional-romance-safe-20260920.jpg",
+          "bytes": 208470,
+          "sha256": "f99d20664e51f53aab81fc98912db38de9c0921c00c234902a2f52cdf8019a7a"
+        },
+        {
+          "name": "emotional-romance-safe-20260920.mp4",
+          "bytes": 254862,
+          "sha256": "309ad6f77f8ad375ca8f00f5d9765fa23a35a70dc39f3077358ae28a39285e21"
+        }
+      ]
+    },
+    {
+      "id": "emotional-breakup-phone-20260920",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "Δεν περιμένω πια\nνα φωτίσει η οθόνη",
+      "text": "Στην αρχή κάθε ήχος του κινητού έμοιαζε με ελπίδα.\nΜετά με απογοήτευση.\nΚαι κάποια μέρα το άφησες στο άλλο δωμάτιο.\nΔεν ξέχασες ξαφνικά.\nΑπλώς η μέρα σου άρχισε να σου ανήκει λίγο περισσότερο.",
+      "final_duration": 22.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "emotional-breakup-phone-20260920.jpg",
+          "bytes": 206807,
+          "sha256": "a32e519e5522bed11416bad0ed7b1e7c607637127f276738c3a6c121e58c532b"
+        },
+        {
+          "name": "emotional-breakup-phone-20260920.mp4",
+          "bytes": 260365,
+          "sha256": "07a21472093bd5949a0afc27dec11aa3ed31c2046acd44959e06557b724af958"
+        }
+      ]
+    },
+    {
+      "id": "emotional-soul-rest-20260920",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "Σήμερα δεν χρειάζεται\nνα αποδείξεις τίποτα",
+      "text": "Δεν χρειάζεται να έχεις απάντηση για όλα.\nΟύτε να σηκώσεις πάλι όσα δεν είναι δικά σου.\nΜερικές μέρες το πιο γενναίο πράγμα είναι να πεις: «Έφτασα ως εδώ για σήμερα».\nΗ αξία σου δεν μειώνεται όταν χρειάζεσαι ανάσα.",
+      "final_duration": 22.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "emotional-soul-rest-20260920.jpg",
+          "bytes": 216244,
+          "sha256": "b23dcaac577475703ad0c779e42c36906c7a2541b1fb0605ca748047c2878155"
+        },
+        {
+          "name": "emotional-soul-rest-20260920.mp4",
+          "bytes": 268511,
+          "sha256": "c7476050a91f655c7571ad4440f5433495c02414019fe3179a3f7844bd52c355"
+        }
+      ]
+    },
+    {
+      "id": "emotional-soul-listen-20260920",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "Άκουσέ με λίγο\nχωρίς να με διορθώσεις",
+      "text": "Δεν ζητάω να μου λύσεις τη ζωή.\nΘέλω να μπορώ να πω ότι δυσκολεύομαι χωρίς να ακούσω πως άλλοι περνούν χειρότερα.\nΚάτσε λίγο δίπλα μου.\nΜερικές φορές η παρουσία βοηθά περισσότερο από τη σωστή συμβουλή.",
+      "final_duration": 22.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "emotional-soul-listen-20260920.jpg",
+          "bytes": 218120,
+          "sha256": "d16268b944a57b429efbc378342a2391f9992cecf72a561080910b19f0e8badb"
+        },
+        {
+          "name": "emotional-soul-listen-20260920.mp4",
+          "bytes": 267120,
+          "sha256": "d2bd487e4a8641c6657e17ce5795effa99e68d1c99b5fdee92be4fe00645dfa8"
+        }
+      ]
+    },
+    {
+      "id": "mystery-kelso-dunes-20260920",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "Μια έρημος\nπου ακούγεται;",
+      "text": "Στους αμμόλοφους Κέλσο, στην Καλιφόρνια, η άμμος μπορεί να βγάλει βαθύ βουητό όταν γλιστρά στην πλαγιά υπό κατάλληλες συνθήκες.\nΔεν είναι κρυμμένη μηχανή.\nΕίναι ένα πραγματικό φαινόμενο των αμμόλοφων που «τραγουδούν».",
+      "final_duration": 22.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "mystery-kelso-dunes-20260920.jpg",
+          "bytes": 228377,
+          "sha256": "a11a63c15a5afdfa7bce18de9a97f6882dc79a8175de9a2a0309e121efe8b687"
+        },
+        {
+          "name": "mystery-kelso-dunes-20260920.mp4",
+          "bytes": 283050,
+          "sha256": "df176d06a329f7fc2525066c7d71fad16c419f0c9b52a555220ddd910b32901c"
+        }
+      ]
+    },
+    {
+      "id": "mystery-finn-legend-20260920",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "Ο θρύλος λέει…\nέναν δρόμο από γίγαντες",
+      "text": "Σε μια ιρλανδική παράδοση, ο γίγαντας Φιν ΜακΚουλ έχτισε έναν πέτρινο δρόμο προς τη Σκωτία για να αντιμετωπίσει έναν αντίπαλο.\nΟι πέτρινες κολόνες υπάρχουν πραγματικά.\nΗ ιστορία με τους γίγαντες, όμως, είναι θρύλος — όχι ιστορικό γεγονός.",
+      "final_duration": 22.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "mystery-finn-legend-20260920.jpg",
+          "bytes": 244815,
+          "sha256": "aad59945a8aaa3e4537d7f439e0460d8c2a0d27b6c208d04f650cb00144b7d06"
+        },
+        {
+          "name": "mystery-finn-legend-20260920.mp4",
+          "bytes": 298836,
+          "sha256": "07b9549cd0298e36365d85b49d6ecdddee2f6076597113c30a978374acd0f110"
+        }
+      ]
+    },
+    {
+      "id": "mystery-brocken-spectre-20260920",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "Ένας γίγαντας\nμέσα στην ομίχλη;",
+      "text": "Στέκεσαι σε ένα βουνό και μια τεράστια σκοτεινή μορφή εμφανίζεται απέναντί σου.\nΣτο φαινόμενο Μπρόκεν, ο ήλιος πίσω σου προβάλλει τη σκιά σου στην ομίχλη ή σε ένα σύννεφο.\nΑυτός ο μακρινός «γίγαντας» μπορεί να είσαι εσύ.",
+      "final_duration": 22.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "mystery-brocken-spectre-20260920.jpg",
+          "bytes": 225802,
+          "sha256": "e05b399a9218e5079c0faf159c038768e2a1879e1d3fe9fe398822b8710ed055"
+        },
+        {
+          "name": "mystery-brocken-spectre-20260920.mp4",
+          "bytes": 279623,
+          "sha256": "a4d9ec7da0b3258a474de930c738a778c5f33f8c5a8e2185b60d7d14459f86c5"
+        }
+      ]
+    }
+  ]
+}
