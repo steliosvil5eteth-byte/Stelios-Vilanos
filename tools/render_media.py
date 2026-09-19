@@ -48,7 +48,7 @@ class SafeRedirect(urllib.request.HTTPRedirectHandler):
 
 def download(url: str, path: Path) -> None:
     check_url(url)
-    req = urllib.request.Request(url, headers={'User-Agent': 'SteliosMediaFinisher/1.1'})
+    req = urllib.request.Request(url, headers={'User-Agent': 'SteliosMediaFinisher/1.2'})
     with urllib.request.build_opener(SafeRedirect()).open(req, timeout=90) as r, path.open('wb') as f:
         check_url(r.url)
         total = 0
@@ -141,6 +141,47 @@ def silent_video(image: Path, out: Path, seconds: float=18):
     run(['ffmpeg','-y','-v','error','-loop','1','-framerate','25','-i',str(image),'-f','lavfi','-i','anullsrc=r=48000:cl=stereo','-t',str(seconds),'-vf','scale=1080:1080,pad=1080:1920:0:420:color=0x101A28,setsar=1','-c:v','libx264','-preset','veryfast','-crf','21','-threads','2','-pix_fmt','yuv420p','-c:a','aac','-b:a','96k','-movflags','+faststart','-shortest',str(out)])
 
 
+def music_video(image: Path, out: Path, seconds: float=35):
+    """Create a vertical card video with an original deterministic ambient bed.
+
+    The audio is synthesized locally from simple sine tones; it uses no external
+    recording, catalog song, paid API, TTS, or third-party music license.
+    """
+    if not 5 <= seconds <= 120:
+        raise ValueError('Music post duration must be 5-120 seconds')
+    fade_out=max(0.0, seconds-1.5)
+    filters=(
+        '[1:a]volume=0.032[a1];'
+        '[2:a]volume=0.024[a2];'
+        '[3:a]volume=0.020[a3];'
+        '[a1][a2][a3]amix=inputs=3:duration=longest:normalize=0,'
+        'highpass=f=90,lowpass=f=1800,'
+        'afade=t=in:st=0:d=1.5,'
+        f'afade=t=out:st={fade_out}:d=1.5,'
+        'aformat=sample_rates=48000:channel_layouts=stereo[a]'
+    )
+    run([
+        'ffmpeg','-y','-v','error',
+        '-loop','1','-framerate','25','-i',str(image),
+        '-f','lavfi','-i',f'sine=frequency=220:sample_rate=48000:duration={seconds}',
+        '-f','lavfi','-i',f'sine=frequency=277.18:sample_rate=48000:duration={seconds}',
+        '-f','lavfi','-i',f'sine=frequency=329.63:sample_rate=48000:duration={seconds}',
+        '-t',str(seconds),
+        '-vf','scale=1080:1080,pad=1080:1920:0:420:color=0x101A28,setsar=1',
+        '-filter_complex',filters,'-map','0:v','-map','[a]',
+        '-c:v','libx264','-preset','veryfast','-crf','21','-threads','2','-pix_fmt','yuv420p',
+        '-c:a','aac','-b:a','128k','-movflags','+faststart',str(out)
+    ])
+    meta=probe(out)
+    if not any(s['codec_type']=='audio' for s in meta['streams']):
+        raise ValueError('Music output has no audio stream')
+    duration=float(meta['format']['duration'])
+    if abs(duration-seconds)>.4:
+        raise ValueError(f'Music output duration mismatch {seconds}->{duration}')
+    run(['ffmpeg','-v','error','-i',str(out),'-f','null','-'])
+    return duration
+
+
 def finish_video(job,work,outdir):
     src=work/'source.mp4';download(job['source_url'],src)
     meta=probe(src); v=next(s for s in meta['streams'] if s['codec_type']=='video')
@@ -191,10 +232,21 @@ def main():
                     im=simple_image(job) if job['mode']=='simple_post' else image_cta(job,work)
                     jpg=output/(job['id']+'.jpg');im.save(jpg,quality=94,subsampling=0)
                     compact_preview(jpg,output/(job['id']+'-qa.png'))
-                    if job.get('youtube_copy',False):
+                    if job.get('music_copy',False):
+                        vid=output/(job['id']+'.mp4');record['final_duration']=music_video(jpg,vid,float(job.get('seconds',35)))
+                        record.update({'music_embedded':True,'music_source':'original_local_synth_no_external_license'})
+                    elif job.get('youtube_copy',False):
                         vid=output/(job['id']+'.mp4');silent_video(jpg,vid,float(job.get('seconds',18)))
                         record['final_duration']=float(probe(vid)['format']['duration'])
                     record.update({'written_cta':True,'narration':False,'image_size':[1080,1080]})
+                elif job['mode']=='image_music_video':
+                    src=work/'source.img';download(job['source_url'],src)
+                    im=Image.open(src).convert('RGB')
+                    source_jpg=work/'source.jpg';im.save(source_jpg,quality=96,subsampling=0)
+                    compact_preview(source_jpg,output/(job['id']+'-qa.png'))
+                    vid=output/(job['id']+'.mp4')
+                    record['final_duration']=music_video(source_jpg,vid,float(job.get('seconds',35)))
+                    record.update({'music_embedded':True,'music_source':'original_local_synth_no_external_license','narration':False,'source_visual_preserved':True})
                 elif job['mode']=='preview':
                     source=work/'source.img';download(job['source_url'],source)
                     compact_preview(source,output/(job['id']+'.png'))
@@ -210,7 +262,7 @@ def main():
         report['jobs'].append(record)
         print(json.dumps({'id':record['id'],'status':record['status'],'error':record.get('error')},ensure_ascii=False),flush=True)
     (output/'manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
-    (output/'summary.json').write_text(json.dumps({'batch_id':key,'paid_ai_credits_used':0,'jobs':[{k:r.get(k) for k in ['id','status','original_duration','final_duration','error']} for r in report['jobs']]},ensure_ascii=False,indent=2),encoding='utf-8')
+    (output/'summary.json').write_text(json.dumps({'batch_id':key,'paid_ai_credits_used':0,'jobs':[{k:r.get(k) for k in ['id','status','original_duration','final_duration','music_embedded','error']} for r in report['jobs']]},ensure_ascii=False,indent=2),encoding='utf-8')
     print('REPORT_PATH='+str(output/'manifest.json'))
 
 if __name__=='__main__': main()
