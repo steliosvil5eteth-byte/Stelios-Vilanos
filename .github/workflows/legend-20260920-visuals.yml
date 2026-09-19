@@ -20,10 +20,34 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq python3-pil fonts-dejavu-core
-      - name: Download documented public-domain art and prepare 9-by-16 cards
+      - name: Download documented public-domain art with conservative request pacing
         env:
           OUTPUT_DIR: ${{ runner.temp }}/legend-prepared
-        run: /usr/bin/python3 tools/prepare_flying_dutchman.py
+        run: |
+          /usr/bin/python3 - <<'PY'
+          import datetime, email.utils, runpy, time, urllib.error, urllib.request
+          original = urllib.request.OpenerDirector.open
+          def paced(self, *args, **kwargs):
+              time.sleep(6)
+              try:
+                  return original(self, *args, **kwargs)
+              except urllib.error.HTTPError as error:
+                  if error.code != 429:
+                      raise
+                  value = error.headers.get('Retry-After', '60')
+                  try:
+                      delay = max(60, float(value))
+                  except ValueError:
+                      when = email.utils.parsedate_to_datetime(value)
+                      delay = max(60, (when - datetime.datetime.now(datetime.timezone.utc)).total_seconds())
+                  if delay > 300:
+                      raise RuntimeError('Requested cooldown exceeds safe workflow wait') from error
+                  print('Honoring Wikimedia cooldown:', delay, 'seconds; one controlled retry', flush=True)
+                  time.sleep(delay)
+                  return original(self, *args, **kwargs)
+          urllib.request.OpenerDirector.open = paced
+          runpy.run_path('tools/prepare_flying_dutchman.py', run_name='__main__')
+          PY
       - name: Keep public visual inputs separate from source code
         env:
           OUTPUT_DIR: ${{ runner.temp }}/legend-prepared
