@@ -13,6 +13,7 @@ ALLOWED_STATUS = {
     "generating",
     "needs_review",
     "scheduled",
+    "scheduled_tiktok_photo_video_cancelled",
     "partially_published",
     "published",
     "failed",
