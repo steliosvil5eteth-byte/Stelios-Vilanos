@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Deterministic social-media finishing. No AI/TTS/payment or publishing APIs.
-Only process explicit, approved public media jobs. Originals are never overwritten.
+Only process explicit approved public jobs. Originals are never overwritten.
 """
 from __future__ import annotations
-import argparse, hashlib, json, math, re, subprocess, tempfile, urllib.parse, urllib.request
+import argparse, base64, hashlib, json, math, re, subprocess, tempfile, urllib.parse, urllib.request
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont, ImageOps
 
@@ -12,6 +12,7 @@ ALLOWED_HOSTS = {'static.metricool.com', 'raw.githubusercontent.com', 'upload.wi
 FONT = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
 BOLD = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 MAX_DOWNLOAD = 150 * 1024 * 1024
+MAX_OUTPUT = 64 * 1024 * 1024
 
 
 def run(args: list[str]) -> str:
@@ -47,14 +48,14 @@ class SafeRedirect(urllib.request.HTTPRedirectHandler):
 
 def download(url: str, path: Path) -> None:
     check_url(url)
-    req = urllib.request.Request(url, headers={'User-Agent': 'SteliosMediaFinisher/1.0'})
+    req = urllib.request.Request(url, headers={'User-Agent': 'SteliosMediaFinisher/1.1'})
     with urllib.request.build_opener(SafeRedirect()).open(req, timeout=90) as r, path.open('wb') as f:
         check_url(r.url)
         total = 0
         for data in iter(lambda: r.read(1024*1024), b''):
             total += len(data)
             if total > MAX_DOWNLOAD:
-                raise ValueError('Input exceeds the 150 MB safety limit')
+                raise ValueError('Input exceeds the 150 MiB safety limit')
             f.write(data)
     if total == 0:
         raise ValueError('Empty media')
@@ -125,7 +126,18 @@ def image_cta(job, work):
     return base
 
 
+def compact_preview(image: Path, destination: Path):
+    im=Image.open(image).convert('RGB')
+    im.thumbnail((270,480), Image.Resampling.LANCZOS)
+    im=im.quantize(colors=24,method=Image.Quantize.MEDIANCUT)
+    im.save(destination,format='PNG',optimize=True)
+    encoded=base64.b64encode(destination.read_bytes()).decode('ascii')
+    destination.with_suffix('.b64').write_text('\n'.join(encoded[i:i+100] for i in range(0,len(encoded),100)),encoding='ascii')
+
+
 def silent_video(image: Path, out: Path, seconds: float=18):
+    if not 5 <= seconds <= 120:
+        raise ValueError('Silent post duration must be 5-120 seconds')
     run(['ffmpeg','-y','-v','error','-loop','1','-framerate','25','-i',str(image),'-f','lavfi','-i','anullsrc=r=48000:cl=stereo','-t',str(seconds),'-vf','scale=1080:1080,pad=1080:1920:0:420:color=0x101A28,setsar=1','-c:v','libx264','-preset','veryfast','-crf','21','-threads','2','-pix_fmt','yuv420p','-c:a','aac','-b:a','96k','-movflags','+faststart','-shortest',str(out)])
 
 
@@ -151,13 +163,15 @@ def finish_video(job,work,outdir):
         raise ValueError(f'Duration mismatch {length}->{dl}')
     run(['ffmpeg','-v','error','-i',str(out),'-f','null','-'])
     for label,sec in [('opening',1),('middle',length/2),('ending',dl-2)]:
-        run(['ffmpeg','-y','-v','error','-ss',str(sec),'-i',str(out),'-frames:v','1','-vf','scale=360:-2',str(outdir/(job['id']+'-'+label+'.jpg'))])
+        preview=outdir/(job['id']+'-'+label+'.jpg')
+        run(['ffmpeg','-y','-v','error','-ss',str(sec),'-i',str(out),'-frames:v','1','-vf','scale=360:-2',str(preview)])
+        compact_preview(preview, outdir/(job['id']+'-'+label+'-qa.png'))
     return {'original_duration':length,'final_duration':dl,'width':w,'height':h,'original_narration_preserved':True,'new_spoken_cta':False,'written_cta_appended':True,'decode_passed':True,'subtitle_review':'original_pixels_preserved; human_visual_review_required'}
 
 
 def main():
     ap=argparse.ArgumentParser();ap.add_argument('--manifest',required=True);ap.add_argument('--output',required=True);ns=ap.parse_args()
-    manifest_path=Path(ns.manifest); raw=manifest_path.read_bytes();batch=json.loads(raw)
+    raw=Path(ns.manifest).read_bytes();batch=json.loads(raw)
     if batch.get('approved') is not True or batch.get('paid_generation_allowed') is not False:
         raise ValueError('Explicit approval and no-paid-generation flags are required')
     jobs=batch['jobs'];ids=[x['id'] for x in jobs]
@@ -165,8 +179,9 @@ def main():
         raise ValueError('Invalid, duplicate or too many jobs')
     key=hashlib.sha256(raw).hexdigest()[:16];output=Path(ns.output)/key;output.mkdir(parents=True,exist_ok=True)
     report={'batch_sha256':hashlib.sha256(raw).hexdigest(),'batch_id':key,'paid_ai_credits_used':0,'jobs':[]}
+    (output/'source_manifest.json').write_bytes(raw)
     for job in jobs:
-        record={'id':job['id'],'mode':job['mode'],'status':'failed'}
+        record={'id':job['id'],'mode':job['mode'],'status':'failed','source_url':job.get('source_url'),'attribution':job.get('attribution'),'title':job.get('title'),'text':job.get('text')}
         try:
             with tempfile.TemporaryDirectory() as td:
                 work=Path(td)
@@ -175,22 +190,27 @@ def main():
                 elif job['mode'] in ('simple_post','image_cta'):
                     im=simple_image(job) if job['mode']=='simple_post' else image_cta(job,work)
                     jpg=output/(job['id']+'.jpg');im.save(jpg,quality=94,subsampling=0)
+                    compact_preview(jpg,output/(job['id']+'-qa.png'))
                     if job.get('youtube_copy',False):
                         vid=output/(job['id']+'.mp4');silent_video(jpg,vid,float(job.get('seconds',18)))
                         record['final_duration']=float(probe(vid)['format']['duration'])
                     record.update({'written_cta':True,'narration':False,'image_size':[1080,1080]})
+                elif job['mode']=='preview':
+                    source=work/'source.img';download(job['source_url'],source)
+                    compact_preview(source,output/(job['id']+'.png'))
                 else:
                     raise ValueError('Unknown job mode')
             record['status']='rendered'
-            record['files']=[{'name':p.name,'bytes':p.stat().st_size,'sha256':digest(p)} for p in sorted(output.glob(job['id']+'.*'))]
-            if any(f['bytes']>25*1024*1024 for f in record['files']):
-                raise ValueError('Output exceeds 25 MB limit')
+            record['files']=[{'name':p.name,'bytes':p.stat().st_size,'sha256':digest(p)} for p in sorted(output.glob(job['id']+'.*')) if p.suffix != '.b64']
+            if any(f['bytes']>MAX_OUTPUT for f in record['files']):
+                raise ValueError('Output exceeds the 64 MiB repository safety limit')
         except Exception as exc:
             record['status']='failed';record['error']=str(exc)[:1800]
             for p in output.glob(job['id']+'*'):p.unlink()
         report['jobs'].append(record)
         print(json.dumps({'id':record['id'],'status':record['status'],'error':record.get('error')},ensure_ascii=False),flush=True)
     (output/'manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+    (output/'summary.json').write_text(json.dumps({'batch_id':key,'paid_ai_credits_used':0,'jobs':[{k:r.get(k) for k in ['id','status','original_duration','final_duration','error']} for r in report['jobs']]},ensure_ascii=False,indent=2),encoding='utf-8')
     print('REPORT_PATH='+str(output/'manifest.json'))
 
 if __name__=='__main__': main()
