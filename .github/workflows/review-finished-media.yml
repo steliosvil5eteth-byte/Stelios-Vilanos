@@ -15,56 +15,50 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 5
     steps:
-      - name: Read existing finished simple posts
+      - name: Read already rendered Part 4 cards
         uses: actions/checkout@v4
         with:
           ref: media-output
           persist-credentials: false
           sparse-checkout: |
-            jobs/13546956f94fc8f3
-            jobs/6fc96d26ed10fde1
-      - name: Collect and hash-check existing files only
+            jobs/4e48fe60dc9deef6
+      - name: Hash-check complete existing images and silent videos
         run: |
           python3 - <<'PY'
           import hashlib, json, shutil, subprocess
           from pathlib import Path
+          batch = '4e48fe60dc9deef6'
+          source = Path('jobs') / batch
           output = Path('review-previews')
-          output.mkdir()
-          counts = {}
-          for batch, wanted_mode in [('13546956f94fc8f3', 'simple_post'), ('6fc96d26ed10fde1', 'image_cta')]:
-              source = Path('jobs') / batch
-              target = output / batch
-              target.mkdir()
-              report = json.loads((source / 'manifest.json').read_text())
-              shutil.copy2(source / 'manifest.json', target / 'manifest.json')
-              if (source / 'source_manifest.json').is_file():
-                  shutil.copy2(source / 'source_manifest.json', target / 'source_manifest.json')
-              count = 0
-              for job in report['jobs']:
-                  if job['status'] != 'rendered' or job.get('mode') != wanted_mode:
-                      continue
-                  files = {item['name']: item for item in job['files']}
-                  for suffix in ('.jpg', '.mp4'):
-                      name = job['id'] + suffix
-                      item = files[name]
-                      media = source / name
-                      if not media.is_file() or media.stat().st_size != item['bytes']:
-                          raise RuntimeError('Missing or different-size file: ' + name)
-                      actual = hashlib.sha256(media.read_bytes()).hexdigest()
-                      if actual != item['sha256']:
-                          raise RuntimeError('Hash mismatch: ' + name)
-                      shutil.copy2(media, target / name)
-                  count += 1
-              counts[batch] = count
-          if counts != {'13546956f94fc8f3': 20, '6fc96d26ed10fde1': 9}:
-              raise RuntimeError('Unexpected media counts: ' + str(counts))
-          sha = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
-          (output / 'review.json').write_text(json.dumps({'media_commit': sha, 'post_counts': counts, 'sha256_checked': True, 'paid_ai_calls': 0, 'media_regenerated': False, 'publishing_calls': 0}, indent=2))
+          target = output / batch
+          target.mkdir(parents=True)
+          report = json.loads((source / 'manifest.json').read_text())
+          shutil.copy2(source / 'manifest.json', target / 'manifest.json')
+          shutil.copy2(source / 'source_manifest.json', target / 'source_manifest.json')
+          count = 0
+          for job in report['jobs']:
+              if job['status'] != 'rendered' or job.get('mode') != 'simple_post':
+                  raise RuntimeError('Incomplete job: ' + job['id'])
+              files = {item['name']: item for item in job['files']}
+              for suffix in ('.jpg', '.mp4'):
+                  name = job['id'] + suffix
+                  item = files[name]
+                  media = source / name
+                  if not media.is_file() or media.stat().st_size != item['bytes']:
+                      raise RuntimeError('Missing or different-size file: ' + name)
+                  if hashlib.sha256(media.read_bytes()).hexdigest() != item['sha256']:
+                      raise RuntimeError('Hash mismatch: ' + name)
+                  shutil.copy2(media, target / name)
+              count += 1
+          if count != 12:
+              raise RuntimeError('Expected twelve complete zodiac posts')
+          sha = subprocess.check_output(['git','rev-parse','HEAD'],text=True).strip()
+          (output / 'review.json').write_text(json.dumps({'media_commit':sha,'batch_id':batch,'post_count':count,'sha256_checked':True,'paid_ai_calls':0,'media_regenerated':False,'publishing_calls':0},indent=2))
           PY
-      - name: Make existing media accessible for visual and silent-audio inspection
+      - name: Provide original files for visual and silent-audio review
         uses: actions/upload-artifact@v4
         with:
-          name: simple-posts-qa
+          name: zodiac-part4-20260920-qa
           path: review-previews/
           if-no-files-found: error
           retention-days: 1
