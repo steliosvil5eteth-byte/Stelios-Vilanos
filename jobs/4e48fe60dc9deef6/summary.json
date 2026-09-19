@@ -1,0 +1,90 @@
+{
+  "batch_id": "4e48fe60dc9deef6",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "zodiac-aries-part4-20260920",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-taurus-part4-20260920",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-gemini-part4-20260920",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-cancer-part4-20260920",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-leo-part4-20260920",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-virgo-part4-20260920",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-libra-part4-20260920",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-scorpio-part4-20260920",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-sagittarius-part4-20260920",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-capricorn-part4-20260920",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-aquarius-part4-20260920",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    },
+    {
+      "id": "zodiac-pisces-part4-20260920",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": 35.0,
+      "error": null
+    }
+  ]
+}

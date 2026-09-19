@@ -1,0 +1,343 @@
+{
+  "batch_sha256": "4e48fe60dc9deef61d0ae4dd445fdb71b26871c472c3a157d177941509b44b34",
+  "batch_id": "4e48fe60dc9deef6",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "zodiac-aries-part4-20260920",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΚΡΙΟΣ\n5 τελευταίες πλευρές του",
+      "text": "16. Η αναμονή τον δυσκολεύει περισσότερο από τη δράση.\n17. Σέβεται ένα ξεκάθαρο «όχι», ακόμη κι αν αντιδράσει αρχικά.\n18. Όταν χάσει, θέλει χρόνο πριν παραδεχτεί πόσο τον ένοιαζε.\n19. Δεν χρειάζεται κάθε συζήτηση να γίνει αγώνας.\n20. Η δύναμή του μεγαλώνει όταν μαθαίνει να ακούει.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-aries-part4-20260920.jpg",
+          "bytes": 238283,
+          "sha256": "cdc9350767b8742eeaa5a20475e6e2ae858dbcfbb3c81f6223208a1a9dc180d1"
+        },
+        {
+          "name": "zodiac-aries-part4-20260920.mp4",
+          "bytes": 419448,
+          "sha256": "96b6921f58222df8549db6d5568fe8242bbfa952dd64cdee592bb4669247148a"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-taurus-part4-20260920",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΤΑΥΡΟΣ\n5 τελευταίες πλευρές του",
+      "text": "16. Θέλει τον χρόνο του πριν αλλάξει γνώμη.\n17. Η πίεση τον κλείνει περισσότερο από τη διαφωνία.\n18. Κρατά συνήθειες που του θυμίζουν ανθρώπους.\n19. Δεν είναι κάθε αλλαγή απειλή για όσα αγαπά.\n20. Η σταθερότητά του γίνεται δύναμη όταν αφήνει χώρο και στο καινούργιο.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-taurus-part4-20260920.jpg",
+          "bytes": 248340,
+          "sha256": "959a3720f7fdbbf68b3f117c6505af3e51a4c7500e9cabb6151ddf5d02f5137e"
+        },
+        {
+          "name": "zodiac-taurus-part4-20260920.mp4",
+          "bytes": 413442,
+          "sha256": "02b39adbd4f13643efe058c266b4a9e8fd0cdb6dc59672cd8efe483d0476d1ce"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-gemini-part4-20260920",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΔΙΔΥΜΟΙ\n5 τελευταίες πλευρές τους",
+      "text": "16. Η μονοτονία τούς κουράζει χωρίς να σημαίνει ότι δεν νοιάζονται.\n17. Σκέφτονται καλύτερα όταν μπορούν να μιλήσουν ελεύθερα.\n18. Κάποιες σιωπές τους είναι υπερφόρτωση, όχι αδιαφορία.\n19. Δεν χρειάζεται να εξηγούν κάθε πλευρά τους σε όλους.\n20. Η επικοινωνία βαθαίνει όταν μένουν και για την απάντηση.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-gemini-part4-20260920.jpg",
+          "bytes": 249622,
+          "sha256": "21407d4e96792e15add881c4a9d045315942406b957e24a20017dddd87439fe2"
+        },
+        {
+          "name": "zodiac-gemini-part4-20260920.mp4",
+          "bytes": 430966,
+          "sha256": "37e0e7f57dc3b749ce461d692f5bdd86242f97fb1d1fb4ec1ef2bd4f63c21d85"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-cancer-part4-20260920",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΚΑΡΚΙΝΟΣ\n5 τελευταίες πλευρές του",
+      "text": "16. Ένας τόπος μπορεί να του θυμίζει μια ολόκληρη ζωή.\n17. Η απότομη κουβέντα μένει μέσα του περισσότερο απ’ όσο δείχνει.\n18. Συχνά προστατεύει τους άλλους πριν προστατεύσει τον εαυτό του.\n19. Η νοσταλγία δεν σημαίνει ότι πρέπει να επιστρέψει.\n20. Η τρυφερότητα χρειάζεται και όρια για να αντέξει.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-cancer-part4-20260920.jpg",
+          "bytes": 246779,
+          "sha256": "2fc6786f58162d6ba3f70a960cc4610ac6d55cfad854ce3489cd794e5ca9cdb3"
+        },
+        {
+          "name": "zodiac-cancer-part4-20260920.mp4",
+          "bytes": 423719,
+          "sha256": "34c20577617ed6c40e0a83185ee6cf300040b3cc049b274d34ec3ac10c4231fc"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-leo-part4-20260920",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΛΕΩΝ\n5 τελευταίες πλευρές του",
+      "text": "16. Τον πονά να τον θυμούνται μόνο όταν τον χρειάζονται.\n17. Η περηφάνια καμιά φορά καθυστερεί μια τρυφερή κουβέντα.\n18. Θέλει αναγνώριση για την καρδιά του, όχι μόνο για όσα πετυχαίνει.\n19. Δεν χρειάζεται να εντυπωσιάζει για να αξίζει.\n20. Μπορεί να είναι σημαντικός ακόμη κι όταν δεν είναι στο κέντρο.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-leo-part4-20260920.jpg",
+          "bytes": 244382,
+          "sha256": "63c4ac5b924c9f4028cecc6f1ca73b553fb0600d217965bd12b49b41e081b233"
+        },
+        {
+          "name": "zodiac-leo-part4-20260920.mp4",
+          "bytes": 426123,
+          "sha256": "fc28a71f5d32c0e0983da45d395a60a6e2befd33ca0ac68cafd066e24f326f7e"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-virgo-part4-20260920",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΠΑΡΘΕΝΟΣ\n5 τελευταίες πλευρές του",
+      "text": "16. Παρατηρεί όσα οι άλλοι προσπερνούν.\n17. Το μυαλό του συνεχίζει ακόμη κι όταν το σώμα κουράζεται.\n18. Μερικές φορές ψάχνει λύση ενώ χρειάζεται απλώς ξεκούραση.\n19. Ένα λάθος δεν ακυρώνει όσα έχει κάνει σωστά.\n20. Η φροντίδα του γίνεται πιο ζεστή όταν χωρά και την ατέλεια.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-virgo-part4-20260920.jpg",
+          "bytes": 257774,
+          "sha256": "623f38d27499e375b55e1cc4e1ed4f2eece681a06dac8c3314452ecf1bf33ea3"
+        },
+        {
+          "name": "zodiac-virgo-part4-20260920.mp4",
+          "bytes": 441908,
+          "sha256": "7eee25a38ce42bdee80de40dc925e507a8c2c6d2d1bbe9d7ab7a4fca31dcc85d"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-libra-part4-20260920",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΖΥΓΟΣ\n5 τελευταίες πλευρές του",
+      "text": "16. Μια ένταση στο δωμάτιο τον επηρεάζει πριν μιλήσει κανείς.\n17. Το «δεν πειράζει» του δεν είναι πάντα αληθινό.\n18. Καμιά φορά καθυστερεί μια απόφαση για να μη στενοχωρήσει κανέναν.\n19. Η ηρεμία δεν απαιτεί να συμφωνεί σε όλα.\n20. Η ισορροπία αρχίζει όταν ακούει και τη δική του επιθυμία.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-libra-part4-20260920.jpg",
+          "bytes": 256028,
+          "sha256": "ad3e071571a36b8204d76e2a0793aab26c3512c7cfd9e4449e117c3ec91de441"
+        },
+        {
+          "name": "zodiac-libra-part4-20260920.mp4",
+          "bytes": 420201,
+          "sha256": "22db9d1d8e39f4b8a11fa586740ca5e7990608799420d138267abb9c3164944d"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-scorpio-part4-20260920",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΣΚΟΡΠΙΟΣ\n5 τελευταίες πλευρές του",
+      "text": "16. Παρατηρεί τη διαφορά ανάμεσα στα λόγια και στον τόνο τους.\n17. Η αμφιβολία τον κουράζει περισσότερο από μια δύσκολη αλήθεια.\n18. Δεν μοιράζεται κάθε σκέψη του τη στιγμή που γεννιέται.\n19. Η εμπιστοσύνη δεν χτίζεται με διαρκείς δοκιμασίες.\n20. Το βάθος του δεν χρειάζεται να γίνει άμυνα απέναντι σε όλους.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-scorpio-part4-20260920.jpg",
+          "bytes": 252691,
+          "sha256": "a2fcced0985fd46ff503a0580ca250d34f701d8962b46ddc25e4b2a370676f2a"
+        },
+        {
+          "name": "zodiac-scorpio-part4-20260920.mp4",
+          "bytes": 432728,
+          "sha256": "fcecc706f6be3823603e25c6a69f22e281f81eac4c15a218f2a66a02db880908"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-sagittarius-part4-20260920",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΤΟΞΟΤΗΣ\n5 τελευταίες πλευρές του",
+      "text": "16. Θέλει κάτι να περιμένει με ανυπομονησία.\n17. Μιλά αυθόρμητα και ύστερα καταλαβαίνει πώς ακούστηκε.\n18. Η ανάγκη του για χώρο δεν είναι πάντα φυγή.\n19. Η ειλικρίνεια μπορεί να είναι καθαρή χωρίς να πληγώνει.\n20. Η ελευθερία του γίνεται πιο ουσιαστική όταν χωρά και τη συνέπεια.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-sagittarius-part4-20260920.jpg",
+          "bytes": 255409,
+          "sha256": "65df80800ae5ca84fc04053448c0bc84c33227f2d38426f11d905b9959aaabdf"
+        },
+        {
+          "name": "zodiac-sagittarius-part4-20260920.mp4",
+          "bytes": 419411,
+          "sha256": "06e74d0234d8b8bfa8a7bce5dee2b343837af3e90dbf1275b994079f33ebdbd3"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-capricorn-part4-20260920",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΑΙΓΟΚΕΡΩΣ\n5 τελευταίες πλευρές του",
+      "text": "16. Δυσκολεύεται να αφήσει μια ευθύνη στη μέση.\n17. Κρύβει την κούραση πίσω από το «θα το κανονίσω».\n18. Συχνά αναβάλλει τη χαρά μέχρι να τελειώσουν οι δουλειές.\n19. Η ξεκούραση δεν είναι αποτυχία ούτε χαμένος χρόνος.\n20. Η αξία του δεν μετριέται μόνο με όσα καταφέρνει.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-capricorn-part4-20260920.jpg",
+          "bytes": 237280,
+          "sha256": "96276497aa8d2315e8bde4926805510518e0959662eab9287be15cb5e2ee0300"
+        },
+        {
+          "name": "zodiac-capricorn-part4-20260920.mp4",
+          "bytes": 408131,
+          "sha256": "3f36ea7c073269fa7dae65c1bf1ae2eae369b56043cdfd6720f1ae9d2752a0cb"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-aquarius-part4-20260920",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΥΔΡΟΧΟΟΣ\n5 τελευταίες πλευρές του",
+      "text": "16. Θέλει να καταλαβαίνει το «γιατί», όχι απλώς να ακολουθεί.\n17. Η διαφορετική του ματιά δεν είναι ανάγκη να προκαλέσει.\n18. Μπορεί να νοιάζεται χωρίς να το δείχνει με συνηθισμένο τρόπο.\n19. Η λογική δεν χρειάζεται να ακυρώνει το συναίσθημα.\n20. Η ανεξαρτησία του χωρά και μια αληθινή σύνδεση.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-aquarius-part4-20260920.jpg",
+          "bytes": 248719,
+          "sha256": "741ea60cf568777c5f61beb75a2bc143d4bfae267c2bc1999d10e50987680758"
+        },
+        {
+          "name": "zodiac-aquarius-part4-20260920.mp4",
+          "bytes": 427196,
+          "sha256": "020380151dff07a040d1925ba9ef9517df3659bcdd290b40c6a268f198680b01"
+        }
+      ]
+    },
+    {
+      "id": "zodiac-pisces-part4-20260920",
+      "mode": "simple_post",
+      "status": "rendered",
+      "source_url": null,
+      "attribution": null,
+      "title": "ΙΧΘΥΣ\n5 τελευταίες πλευρές του",
+      "text": "16. Η διάθεση των γύρω του μπορεί να γίνει και δική του.\n17. Χρειάζεται στιγμές ησυχίας για να ξεχωρίζει τι νιώθει.\n18. Μερικές φορές βλέπει τη δυνατότητα κάποιου αντί για τις πράξεις του.\n19. Δεν είναι δική του ευθύνη να σώσει τους πάντες.\n20. Η ευαισθησία του παραμένει δύναμη όταν προστατεύει και τον ίδιο.",
+      "final_duration": 35.0,
+      "written_cta": true,
+      "narration": false,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "files": [
+        {
+          "name": "zodiac-pisces-part4-20260920.jpg",
+          "bytes": 244296,
+          "sha256": "e48d124564028554f007988a211e90f3f8008c4c8339d1c7ca0018ba075a7dcd"
+        },
+        {
+          "name": "zodiac-pisces-part4-20260920.mp4",
+          "bytes": 423005,
+          "sha256": "e8977ce7fde244dc76af96b49b78c769391796d03d89746aaa01ab1ba84ae03f"
+        }
+      ]
+    }
+  ]
+}
