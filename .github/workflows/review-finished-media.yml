@@ -15,46 +15,56 @@ jobs:
     runs-on: ubuntu-24.04
     timeout-minutes: 5
     steps:
-      - name: Read the verified media snapshot
+      - name: Read existing finished simple posts
         uses: actions/checkout@v4
         with:
-          ref: 3e41070c03a0701d8c3169ec6147a68582a17719
+          ref: media-output
           persist-credentials: false
           sparse-checkout: |
+            jobs/13546956f94fc8f3
             jobs/6fc96d26ed10fde1
-            jobs/b9becce189ec3803
-      - name: Collect only existing preview images and production reports
+      - name: Collect and hash-check existing files only
         run: |
           python3 - <<'PY'
-          import json, shutil
+          import hashlib, json, shutil, subprocess
           from pathlib import Path
           output = Path('review-previews')
           output.mkdir()
-          count = 0
-          for batch in ('6fc96d26ed10fde1', 'b9becce189ec3803'):
+          counts = {}
+          for batch, wanted_mode in [('13546956f94fc8f3', 'simple_post'), ('6fc96d26ed10fde1', 'image_cta')]:
               source = Path('jobs') / batch
               target = output / batch
               target.mkdir()
               report = json.loads((source / 'manifest.json').read_text())
               shutil.copy2(source / 'manifest.json', target / 'manifest.json')
+              if (source / 'source_manifest.json').is_file():
+                  shutil.copy2(source / 'source_manifest.json', target / 'source_manifest.json')
+              count = 0
               for job in report['jobs']:
-                  if job['status'] != 'rendered' or job.get('mode') != 'video_cta':
+                  if job['status'] != 'rendered' or job.get('mode') != wanted_mode:
                       continue
-                  for label in ('opening', 'middle', 'ending'):
-                      name = job['id'] + '-' + label + '.jpg'
-                      image = source / name
-                      if not image.is_file():
-                          raise RuntimeError('Missing required preview: ' + name)
-                      shutil.copy2(image, target / name)
-                      count += 1
-          if count != 36:
-              raise RuntimeError('Expected 36 existing story QA images; received ' + str(count))
-          (output / 'review.json').write_text(json.dumps({'story_count': 12, 'preview_count': count, 'paid_ai_calls': 0, 'media_regenerated': False, 'publishing_calls': 0}, indent=2))
+                  files = {item['name']: item for item in job['files']}
+                  for suffix in ('.jpg', '.mp4'):
+                      name = job['id'] + suffix
+                      item = files[name]
+                      media = source / name
+                      if not media.is_file() or media.stat().st_size != item['bytes']:
+                          raise RuntimeError('Missing or different-size file: ' + name)
+                      actual = hashlib.sha256(media.read_bytes()).hexdigest()
+                      if actual != item['sha256']:
+                          raise RuntimeError('Hash mismatch: ' + name)
+                      shutil.copy2(media, target / name)
+                  count += 1
+              counts[batch] = count
+          if counts != {'13546956f94fc8f3': 20, '6fc96d26ed10fde1': 9}:
+              raise RuntimeError('Unexpected media counts: ' + str(counts))
+          sha = subprocess.check_output(['git', 'rev-parse', 'HEAD'], text=True).strip()
+          (output / 'review.json').write_text(json.dumps({'media_commit': sha, 'post_counts': counts, 'sha256_checked': True, 'paid_ai_calls': 0, 'media_regenerated': False, 'publishing_calls': 0}, indent=2))
           PY
-      - name: Make QA files accessible for actual visual inspection
+      - name: Make existing media accessible for visual and silent-audio inspection
         uses: actions/upload-artifact@v4
         with:
-          name: story-qa-previews
+          name: simple-posts-qa
           path: review-previews/
           if-no-files-found: error
           retention-days: 1
