@@ -1,0 +1,60 @@
+name: Review existing finished media
+
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/review-finished-media.yml']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  collect-existing-previews:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Read the verified media snapshot
+        uses: actions/checkout@v4
+        with:
+          ref: 3e41070c03a0701d8c3169ec6147a68582a17719
+          persist-credentials: false
+          sparse-checkout: |
+            jobs/6fc96d26ed10fde1
+            jobs/b9becce189ec3803
+      - name: Collect only existing preview images and production reports
+        run: |
+          python3 - <<'PY'
+          import json, shutil
+          from pathlib import Path
+          output = Path('review-previews')
+          output.mkdir()
+          count = 0
+          for batch in ('6fc96d26ed10fde1', 'b9becce189ec3803'):
+              source = Path('jobs') / batch
+              target = output / batch
+              target.mkdir()
+              report = json.loads((source / 'manifest.json').read_text())
+              shutil.copy2(source / 'manifest.json', target / 'manifest.json')
+              for job in report['jobs']:
+                  if job['status'] != 'rendered' or job.get('mode') != 'video_cta':
+                      continue
+                  for label in ('opening', 'middle', 'ending'):
+                      name = job['id'] + '-' + label + '.jpg'
+                      image = source / name
+                      if not image.is_file():
+                          raise RuntimeError('Missing required preview: ' + name)
+                      shutil.copy2(image, target / name)
+                      count += 1
+          if count != 36:
+              raise RuntimeError('Expected 36 existing story QA images; received ' + str(count))
+          (output / 'review.json').write_text(json.dumps({'story_count': 12, 'preview_count': count, 'paid_ai_calls': 0, 'media_regenerated': False, 'publishing_calls': 0}, indent=2))
+          PY
+      - name: Make QA files accessible for actual visual inspection
+        uses: actions/upload-artifact@v4
+        with:
+          name: story-qa-previews
+          path: review-previews/
+          if-no-files-found: error
+          retention-days: 1
