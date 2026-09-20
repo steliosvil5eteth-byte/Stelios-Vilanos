@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "updated_on": "2026-09-20",
   "timezone": "Europe/Athens",
   "strategy_id": "FOUR_DAILY_V2",
@@ -12,32 +12,156 @@
     "scheduler_id": "6aae233f15c0819193862001fcc5313a",
     "scope": "The old cancelled queue remains inactive, INCLUDING its eleven phenomenon entries dated20-30September. New V2 entries may reuse their unpublished media after QA and deduplication.",
     "released_on": "2026-09-20",
-    "release_basis": "User explicitly requests activating four daily publications today at08:00,11:00,17:00,23:00 and progress updates.",
+    "release_basis": "Standing user program effective 20/09/2026: 11:00 six-sign zodiac A/B, 15:00 five-card emotional story, 17:00 phenomenon, 23:00 foreign legend.",
     "rule": "Release applies ONLY to FOUR_DAILY_V2. Do not bulk-reactivate any old cancelled entries. A later user stop immediately overrides this release. Configuration activation is not proof of ready or queued media."
   },
-  "rules": "AUTHORITATIVE USER ACTIVATION20SEPTEMBER2026: Fetch newest Notionmaster3e0f2345-b318-81c0-9e1c-e8b4b7d19e9d and config/content_strategy.json. ACTIVE_NEW_PROGRAM releases the historical full-reset hold only for FOUR_DAILY_V2. Four logical posts EVERY DAY on EACH of Facebook/Instagram/TikTok/YouTube:08:00one full12-sign carousel;11:00one coherent five-card emotional story;17:00one factchecked unusual-phenomenon video;23:00one different clearly labelled legend video. Explicit user times replace ALL prior windows/defaults. No alternation, six-sign groups, independent card posts, dog/barista/terrier, avatars, intros or fillers. No burst catch-up, backdating or unapproved clock changes. Missing/blocked slots are reported, not silently moved.\nPUBLISHING SAFETY: ApprovalGate is sole regular scheduler. VisualStoryAssembly is sole paid feature renderer. Before each write read actual queue, publication history and ledger. One durable claim per local_date+category+platform plus crossdate content fingerprint. Reconcile ambiguous responses, NEVER repeat create blindly. New V2 work updates its existing eligible UUID rather than making another. Old cancelled queue stays draft, including phenomena because the old entries may be subject to a support deletion request. For reused unpublished phenomenon media create only ONE newV2 entry after checking no live/new duplicate. Preserve actual media, captions, rights, privacy, AIflags and successful providers; omit orphan networkData. Record returned numericID/stableUUID and verify each write. PENDING/SCHEDULED is not PUBLISHED. Protect successful networks on partial failure.\nNO LEGACY RETRIES: Never revive cancelled standalone posts/dogdrafts or ANY FlyingDutchman version. Both19SeptemberDutchman publications already happened; published-copy deletion is not confirmed. FutureUUID-8042687935771622605 staysretired. For genuinelynewV2 items only, a proven transientfailure can have atmostone delayedretry to failednetwork after proving no publication and validcapacity; never retry quota/format/unknownoutcome blindly. No paidrerender for publication failure.\nCAPACITY: Respect actual provider/accountlimits and rolling24h attempts includingfailedattempts, previousday and followingdaycommitments. No assumedmidnightreset or guaranteedremainingquota. Refresh currenterrors, oldcooldowntimestamps are historicalonly. On explicitquotablock stop new submissions to affectedscope and preserve media. No testuploads, upgrades or purchases.\nEXISTING PHENOMENA: Old20-30September18:00entries staydraft. Their existing unpublishedfiles can now supply correspondingnewV2category3 at17:00, without paidregeneration, after actualQA and historycheck. This is not restorationofoldqueue. Threeothercategoriesneedactualcomplete media anddifferentlegendbefore scheduling. Missingmedia meansblocked/preparing, never readyfrommetadata.\nFORMAT AND QA: Verify current nativeAPI support for complete12-card andfive-cardcarousels. Unsupported destination is blocked, never dropcards/splitposts/silently substituteformat. YouTubeonefullreadableslideshowMP4 allcards. Cardsnoavatar/narration/TTS; original/no-costrightsclearedmusic onlywheresupported. Features9:16Greekvoice, completeburned-in synchronizedcaptions, lawfulrelevantvisuals, factsdistinctfromfolklore. Exactclosing: Αν σας άρεσε, ακολουθήστε για περισσότερα. Actualmedia/fulltechnicalduration/decode/frames/audio/captions/rights mustbechecked; metadatalabelisnotQA. Livebalance/reset/reservationsbeforechargedwork,~10creditreserve, onepaidattempt/newstory, no paidcardsorpricingtests/purchases/accesschanges.\nREPORTING: Hourly read-only progresschecks notifyuserinGreek on meaningfulnewready/scheduled/provider-confirmedpublished/failure/recovery. Suppressunchangedduplicates. Do notclaimuserwatchedunseenmedia. Draft=truecancelsautopublishbutisnotpermanentdeletion; autoPublish=false aloneonlyswitchestomobile notification. Report actual perplatform evidence,not executionofwrittenpolicy.",
-  "retired_legacy_post_uuids": ["5968469862478006616", "-1941593113389937615", "-4617932191721175622", "-445330719101599033", "4298891804249247341", "-3290354035097646560", "3516310839196861394", "-5009975642393395068", "-4880667067431302439", "2317278556653109340", "8795228733188163998", "-3029365031314767155", "7486346641732224351", "6234574211891284294", "4952065135289714308", "-8042687935771622605"],
-  "retired_categories": ["dog_barista", "dog_video", "terrier_video", "weekly_introduction", "legacy_standalone_zodiac", "legacy_standalone_emotional"],
+  "rules": "AUTHORITATIVE CURRENT PROGRAM: Europe/Athens daily 11:00 one six-sign zodiac carousel alternating Group A/B by date; 15:00 one coherent five-card love/soul story; 17:00 one new fact-checked strange real phenomenon video; 23:00 one different international/foreign legend video. Greek myths remain postponed. No 08:00/12-sign schedule, no fillers, no dog/barista/terrier, no avatars, no Flying Dutchman.\nQA/AUDIO: 11:00 and 15:00 use music and no narration. TikTok native photo carousel requires JPEG/WebP and autoAddMusic=true. Facebook/Instagram use complete native carousel where supported; lack of native music support there does not block. YouTube uses the complete slideshow. 17:00 and 23:00 are 9:16 narrated Greek videos with burned-in synchronized subtitles, no background music, no avatar/presenter, TikTok auto-music false/omitted.\nSTABILITY: once a verified future record is active draft=false/autoPublish=true, do not roll it back merely because the slot is future or stale local metadata exists. Deactivate only on concrete live media/provider/duplicate/forbidden-content evidence or later user stop/change.\nSAFETY: one logical post per date+category+platform, max five hashtags, fresh live read before write, preserve published successes, reconcile unknown writes, never backdate/catch up automatically, never blind-retry provider/account-limit failures, no purchases/topups/upgrades/paid safety tests.",
+  "retired_legacy_post_uuids": [
+    "5968469862478006616",
+    "-1941593113389937615",
+    "-4617932191721175622",
+    "-445330719101599033",
+    "4298891804249247341",
+    "-3290354035097646560",
+    "3516310839196861394",
+    "-5009975642393395068",
+    "-4880667067431302439",
+    "2317278556653109340",
+    "8795228733188163998",
+    "-3029365031314767155",
+    "7486346641732224351",
+    "6234574211891284294",
+    "4952065135289714308",
+    "-8042687935771622605"
+  ],
+  "retired_categories": [
+    "dog_barista",
+    "dog_video",
+    "terrier_video",
+    "weekly_introduction",
+    "legacy_standalone_zodiac",
+    "legacy_standalone_emotional"
+  ],
   "known_retries": {
-    "leo_instagram": {"id": "378060016", "uuid": "-4218314236002483607", "scheduled_time": "2026-09-18T14:30:00+03:00", "status": "PUBLISHED", "automatic_retry_count": 1, "public_url": "https://www.instagram.com/reel/DdbVUXvlGzh/", "confirmed_at": "2026-09-18T14:32:42+03:00", "terminal": true},
-    "strong_people_tiktok_photo": {"original_id": "378173767", "original_uuid": "-1601691169706586319", "id": "378264496", "uuid": "-3029365031314767155", "scheduled_time": "2026-09-19T23:00:00+03:00", "status": "RETIRED_DO_NOT_SCHEDULE", "automatic_retry_count": 1, "terminal": true, "corrected_media_type": "image/jpeg", "hosted_media_url": "https://static.metricool.com/planner/202609/7000636-file-17689786721063048682.jpeg", "note": "Historical reference only; latest user reset prohibits reactivation, replacement and catch-up. This local retirement is not a claim of a newly verified remote deletion.", "notion_page_id": "3dff2345-b318-8166-b6b9-d7c5f2bd8d4e", "notion_url": "https://app.notion.com/p/3dff2345b3188166b6b9d7c5f2bd8d4e?pvs=204"}
+    "leo_instagram": {
+      "id": "378060016",
+      "uuid": "-4218314236002483607",
+      "scheduled_time": "2026-09-18T14:30:00+03:00",
+      "status": "PUBLISHED",
+      "automatic_retry_count": 1,
+      "public_url": "https://www.instagram.com/reel/DdbVUXvlGzh/",
+      "confirmed_at": "2026-09-18T14:32:42+03:00",
+      "terminal": true
+    },
+    "strong_people_tiktok_photo": {
+      "original_id": "378173767",
+      "original_uuid": "-1601691169706586319",
+      "id": "378264496",
+      "uuid": "-3029365031314767155",
+      "scheduled_time": "2026-09-19T23:00:00+03:00",
+      "status": "RETIRED_DO_NOT_SCHEDULE",
+      "automatic_retry_count": 1,
+      "terminal": true,
+      "corrected_media_type": "image/jpeg",
+      "hosted_media_url": "https://static.metricool.com/planner/202609/7000636-file-17689786721063048682.jpeg",
+      "note": "Historical reference only; latest user reset prohibits reactivation, replacement and catch-up. This local retirement is not a claim of a newly verified remote deletion.",
+      "notion_page_id": "3dff2345-b318-8166-b6b9-d7c5f2bd8d4e",
+      "notion_url": "https://app.notion.com/p/3dff2345b3188166b6b9d7c5f2bd8d4e?pvs=204"
+    }
   },
   "network_cooldowns": {
-    "tiktok": {"status": "active", "reason": "too_many_posts_openapi_403", "observed_at": "2026-09-18T16:07:00+03:00", "cooldown_until": "2026-09-19T16:07:00+03:00", "source_job_id": "2026-09-18-zodiac-06-virgo", "source_post_id": "377741065", "exact_error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)", "policy": "Historical observation retained, NOT proof of current active cooldown or current availability. Refresh actual account errors and rollingattempts. No burst retries. OnlynewV2program is authorized after20Septemberactivation; olddraftsremaininactive.", "requires_live_refresh": true}
+    "tiktok": {
+      "status": "active",
+      "reason": "too_many_posts_openapi_403",
+      "observed_at": "2026-09-18T16:07:00+03:00",
+      "cooldown_until": "2026-09-19T16:07:00+03:00",
+      "source_job_id": "2026-09-18-zodiac-06-virgo",
+      "source_post_id": "377741065",
+      "exact_error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
+      "policy": "Historical observation retained, NOT proof of current active cooldown or current availability. Refresh actual account errors and rollingattempts. No burst retries. OnlynewV2program is authorized after20Septemberactivation; olddraftsremaininactive.",
+      "requires_live_refresh": true
+    }
   },
-  "deferred_network_posts": {"tiktok": []},
-  "disabled_retired_post_ids": ["378119832", "378119841", "378119848", "378119855", "378119867", "378119875", "378119884", "378119886", "378222792"],
-  "observed_external_failures": [{"observed_at": "2026-09-18T17:49:00+03:00", "post_id": "378173767", "uuid": "-1601691169706586319", "network": "tiktok", "status": "ERROR", "error": "The content format of the Tiktok photo is incorrect. The 'image/png' type is not allowed, use 'image/jpeg' or 'image/webp' instead.", "retry_status": "CANCELLED_BY_USER", "retry_post_id": "378222792", "retry_uuid": "-3029365031314767155", "retry_scheduled_time": "2026-09-19T18:30:00+03:00", "corrected_media_type": "image/jpeg", "note": "Historical error, not a new failure. Never reactivate or replace this retired retry."}],
-  "cancelled_tiktok_legacy_jobs": ["2026-09-18-zodiac-06-virgo", "2026-09-18-zodiac-07-libra", "2026-09-18-zodiac-08-scorpio", "2026-09-18-zodiac-09-sagittarius", "2026-09-18-zodiac-10-capricorn", "2026-09-18-zodiac-11-aquarius", "2026-09-18-zodiac-12-pisces"],
+  "deferred_network_posts": {
+    "tiktok": []
+  },
+  "disabled_retired_post_ids": [
+    "378119832",
+    "378119841",
+    "378119848",
+    "378119855",
+    "378119867",
+    "378119875",
+    "378119884",
+    "378119886",
+    "378222792"
+  ],
+  "observed_external_failures": [
+    {
+      "observed_at": "2026-09-18T17:49:00+03:00",
+      "post_id": "378173767",
+      "uuid": "-1601691169706586319",
+      "network": "tiktok",
+      "status": "ERROR",
+      "error": "The content format of the Tiktok photo is incorrect. The 'image/png' type is not allowed, use 'image/jpeg' or 'image/webp' instead.",
+      "retry_status": "CANCELLED_BY_USER",
+      "retry_post_id": "378222792",
+      "retry_uuid": "-3029365031314767155",
+      "retry_scheduled_time": "2026-09-19T18:30:00+03:00",
+      "corrected_media_type": "image/jpeg",
+      "note": "Historical error, not a new failure. Never reactivate or replace this retired retry."
+    }
+  ],
+  "cancelled_tiktok_legacy_jobs": [
+    "2026-09-18-zodiac-06-virgo",
+    "2026-09-18-zodiac-07-libra",
+    "2026-09-18-zodiac-08-scorpio",
+    "2026-09-18-zodiac-09-sagittarius",
+    "2026-09-18-zodiac-10-capricorn",
+    "2026-09-18-zodiac-11-aquarius",
+    "2026-09-18-zodiac-12-pisces"
+  ],
   "tiktok_daily_batches": {},
   "strategy_transition": {
-    "effective_at": "2026-09-20T00:00:00+03:00", "status": "ACTIVE_NEW_PROGRAM", "strategy_id": "FOUR_DAILY_V2",
+    "effective_at": "2026-09-20T00:00:00+03:00",
+    "status": "ACTIVE_NEW_PROGRAM",
+    "strategy_id": "FOUR_DAILY_V2",
     "rule": "Explicituseractivation20Septemberauthorizesonlynewfourcategoriesat08:00/11:00/17:00/23:00. Entireoldqueue remainsinactive. Readiness/schedulingmustbeverified,notinferredfromactivation.",
-    "weekly_introduction_automation_id": "6aacecbeaf94819198603f4458f8bb29", "weekly_introduction_status": "disabled", "preserved_dog_jobs": [],
+    "weekly_introduction_automation_id": "6aacecbeaf94819198603f4458f8bb29",
+    "weekly_introduction_status": "disabled",
+    "preserved_dog_jobs": [],
     "existing_photo_posts_policy": "Legacy standalone posts stayretired. Newcompletecarouselsrequire actualmediaQA; olddraftsmaynotberevived.",
     "last_verified_date": "2026-09-20",
-    "disabled_conflicting_automations": [{"id": "6aabb848f94881919dca3051dae21f34", "title": "Δημοσιεύσεις και σκύλος — ιστορίες σε αναμονή", "status": "disabled"}, {"id": "6aad6dfc72c881919bcbd4dd37496907", "title": "Καθημερινός έλεγχος και επιδιορθώσεις", "status": "disabled"}]
+    "disabled_conflicting_automations": [
+      {
+        "id": "6aabb848f94881919dca3051dae21f34",
+        "title": "Δημοσιεύσεις και σκύλος — ιστορίες σε αναμονή",
+        "status": "disabled"
+      },
+      {
+        "id": "6aad6dfc72c881919bcbd4dd37496907",
+        "title": "Καθημερινός έλεγχος και επιδιορθώσεις",
+        "status": "disabled"
+      }
+    ]
   },
-  "cancelled_phenomenon_metricool_uuids": {"2026-09-20": "2123662763815747664", "2026-09-21": "2726276820466814272", "2026-09-22": "-2388549801947019381", "2026-09-23": "-4209113635639966324", "2026-09-24": "-5009639251725630935", "2026-09-25": "-6217824847181035454", "2026-09-26": "-8868155511436325346", "2026-09-27": "1505476370371006414", "2026-09-28": "3716130563520349426", "2026-09-29": "4740472343308093579", "2026-09-30": "9042889003413750494"},
-  "history_policy": {"superseded_content_blob_sha": "7370565c5639f253e79a56981d109a7020ff73cf", "original_legacy_rules_blob_sha": "34e8df7cf23cd51b58dfec15139bcaa69eaa4dd8", "old_rules_and_batch_snapshots": "Retained in Git history for audit only, not executable recovery instructions.", "completed_publication_history": "queue/completed.json and state/content_history.json were not modified."}
+  "cancelled_phenomenon_metricool_uuids": {
+    "2026-09-20": "2123662763815747664",
+    "2026-09-21": "2726276820466814272",
+    "2026-09-22": "-2388549801947019381",
+    "2026-09-23": "-4209113635639966324",
+    "2026-09-24": "-5009639251725630935",
+    "2026-09-25": "-6217824847181035454",
+    "2026-09-26": "-8868155511436325346",
+    "2026-09-27": "1505476370371006414",
+    "2026-09-28": "3716130563520349426",
+    "2026-09-29": "4740472343308093579",
+    "2026-09-30": "9042889003413750494"
+  },
+  "history_policy": {
+    "superseded_content_blob_sha": "7370565c5639f253e79a56981d109a7020ff73cf",
+    "original_legacy_rules_blob_sha": "34e8df7cf23cd51b58dfec15139bcaa69eaa4dd8",
+    "old_rules_and_batch_snapshots": "Retained in Git history for audit only, not executable recovery instructions.",
+    "completed_publication_history": "queue/completed.json and state/content_history.json were not modified."
+  }
 }
