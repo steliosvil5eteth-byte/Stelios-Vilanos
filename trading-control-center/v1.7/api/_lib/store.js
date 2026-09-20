@@ -1,3 +1,4 @@
+import {chainAuditItem} from './audit-chain.js';
 import {databaseConfigured,db} from './db.js';
 const mem = globalThis.__TCC_MEM__ || (globalThis.__TCC_MEM__ = new Map());
 function redisCfg(){return {url:process.env.KV_REST_API_URL||process.env.UPSTASH_REDIS_REST_URL||'',token:process.env.KV_REST_API_TOKEN||process.env.UPSTASH_REDIS_REST_TOKEN||''}}
@@ -33,5 +34,5 @@ export async function deleteJson(key){
   mem.delete(key);
 }
 export async function appendAudit(user,item){
-  const key=`tcc:${user}:audit`; const a=(await getJson(key))||[]; a.unshift(item); await setJson(key,a.slice(0,500)); return a.slice(0,500);
+  const key=`tcc:${user}:audit`; const a=(await getJson(key))||[]; const chained=chainAuditItem(item,a[0]||null); a.unshift(chained); await setJson(key,a.slice(0,500)); return a.slice(0,500);
 }
