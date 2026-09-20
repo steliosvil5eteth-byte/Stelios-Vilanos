@@ -5,7 +5,9 @@ import {requireFeature} from '../../_lib/plans.js';
 import {rateLimit,applyRateLimitError} from '../../_lib/rate-limit.js';
 import {requirePaperConsent} from '../../_lib/consent.js';
 import {requireVerifiedEmail} from '../../_lib/onboarding.js';
-import {requireIdempotencyKey,runIdempotent} from '../../_lib/idempotency.js';\nimport {requirePaperExecutionAllowed} from '../../_lib/safety.js';\nimport {requestId} from '../../_lib/request-trace.js';
+import {requireIdempotencyKey,runIdempotent} from '../../_lib/idempotency.js';
+import {requirePaperExecutionAllowed} from '../../_lib/safety.js';
+import {requestId} from '../../_lib/request-trace.js';
 export default async function handler(req,res){
   if(req.method!=='POST') return res.status(405).json({error:'POST only'});
   try{const rid=requestId(req,res);await rateLimit(req,{label:'ibkr-paper-reply',limit:20,windowMs:10*60*1000});const account=await requireAccount(req);requireFeature(account,'brokerPaper');const user=account.username,key=requireIdempotencyKey(req);
