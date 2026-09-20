@@ -1,0 +1,100 @@
+{
+  "batch_id": "76c3559791624013",
+  "batch_sha256": "76c3559791624013027eab138caad404d3592431cfffb999e8dbe99127ef9714",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "v2-20260922-zodiac-group-a",
+      "status": "rendered",
+      "card_count": 6,
+      "order_verified": true,
+      "readable_min_font_px": 30,
+      "final_duration": 30.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "files": [
+        {
+          "name": "v2-20260922-zodiac-group-a-01.jpg",
+          "bytes": 166831,
+          "sha256": "a3bbe1fa189530dce4d0805b4be7230d451832c6ff370173e37859824b9431f5"
+        },
+        {
+          "name": "v2-20260922-zodiac-group-a-02.jpg",
+          "bytes": 171129,
+          "sha256": "8054f59b9f9815def4655e8edf56d0d1faae0e937eda09e44347745b6186ae35"
+        },
+        {
+          "name": "v2-20260922-zodiac-group-a-03.jpg",
+          "bytes": 166508,
+          "sha256": "cb8f600869f78ede0c10a3e96d71a18bebfaa17eac96a90c06899be70a087f80"
+        },
+        {
+          "name": "v2-20260922-zodiac-group-a-04.jpg",
+          "bytes": 175478,
+          "sha256": "35225d872db1ab64d635f59773a759e59e2930813556a1663e496ff233c6c9f4"
+        },
+        {
+          "name": "v2-20260922-zodiac-group-a-05.jpg",
+          "bytes": 167826,
+          "sha256": "e9ddc6547baf7c197e892482d11f843302d7b85b1a2d0783979b68da0c37cd87"
+        },
+        {
+          "name": "v2-20260922-zodiac-group-a-06.jpg",
+          "bytes": 148298,
+          "sha256": "2426b3d2f67196bcbfaf3ddc2b3b8d40026b96d4e06c103d49f2aed808e4994b"
+        },
+        {
+          "name": "v2-20260922-zodiac-group-a.mp4",
+          "bytes": 476441,
+          "sha256": "31f42174ff1f0d5efd88a9c74b91ce2479e50a9f4ceb9eeadc3d326c78f376ed"
+        }
+      ]
+    },
+    {
+      "id": "v2-20260922-emotional-5",
+      "status": "rendered",
+      "card_count": 5,
+      "order_verified": true,
+      "readable_min_font_px": 30,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "files": [
+        {
+          "name": "v2-20260922-emotional-5-01.jpg",
+          "bytes": 123867,
+          "sha256": "482ec26d13fab94738a7275d768d1b1ca827cb43cd180c1a9e4563cdb846b0cf"
+        },
+        {
+          "name": "v2-20260922-emotional-5-02.jpg",
+          "bytes": 166209,
+          "sha256": "69d2e8bca2d62cb018f392ea0cbc54430bed1df6234c8a6a8be6c1c5aea64e1a"
+        },
+        {
+          "name": "v2-20260922-emotional-5-03.jpg",
+          "bytes": 144155,
+          "sha256": "f5cd74e9ad9d7bd8ba972bf7c08db02dc0c4c6ac10aa70ba75ba596f3786566c"
+        },
+        {
+          "name": "v2-20260922-emotional-5-04.jpg",
+          "bytes": 139464,
+          "sha256": "8ad7b97fa338297235cf247b676d3c7eea941c4226036340127b829cb57393fc"
+        },
+        {
+          "name": "v2-20260922-emotional-5-05.jpg",
+          "bytes": 145799,
+          "sha256": "0811731bd24de032244498725c40508e2a9a034bcea66f0b20812c73d50dfcf0"
+        },
+        {
+          "name": "v2-20260922-emotional-5.mp4",
+          "bytes": 439807,
+          "sha256": "38a912bad450c0f773befd8c3e130a21e2922a79dadd1bd891cdb2bf293d8d83"
+        }
+      ]
+    }
+  ]
+}
