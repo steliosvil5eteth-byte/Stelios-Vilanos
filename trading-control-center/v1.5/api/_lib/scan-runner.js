@@ -2,7 +2,8 @@ import {getJson,setJson,appendAudit} from './store.js';
 import {fetchMarketMany,marketDataConfig} from './market-data.js';
 import {updateForwardLedger} from './signal-ledger.js';
 import {evaluateSeries} from './scanner.js';
-import {strategySnapshot} from './model.js';\nimport {marketFreshness} from './freshness.js';
+import {strategySnapshot} from './model.js';
+import {marketFreshness} from './freshness.js';
 
 function symbolsFrom(value,maxSymbols=5){
   const arr=Array.isArray(value)?value:String(value||'').split(',');
