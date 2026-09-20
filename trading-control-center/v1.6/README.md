@@ -159,3 +159,25 @@ Environment additions:
 PAPER_EXECUTION_ENABLED=false
 MARKET_DATA_MAX_AGE_DAYS=7
 ```
+
+
+## v1.6 release-candidate controls
+
+- Server-side maintenance/read-only mode. Normal authenticated writes return `423 MAINTENANCE_MODE` while enabled; an admin can still use `/api/admin/maintenance` to turn it off.
+- Database schema version metadata (`tcc_meta`, required schema version 3) and migration `003_release_state.sql`.
+- Data-integrity audit across accounts, trades, strategies, scan history and forward-test signals.
+- Sanitized backup round-trip verification with SHA-256 checksum.
+- Admin preflight endpoint combining system health, data integrity, schema status and safety invariants.
+- Release metadata and request-safe health reporting retain `liveExecution=false`.
+
+New admin endpoints:
+- `GET|PUT /api/admin/maintenance`
+- `GET /api/admin/integrity`
+- `GET /api/admin/backup-verify`
+- `GET /api/admin/preflight`
+
+New local checks:
+```bash
+npm run validate
+npm run preflight
+```
