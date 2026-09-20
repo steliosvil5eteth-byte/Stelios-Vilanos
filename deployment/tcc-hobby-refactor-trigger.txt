@@ -1,0 +1,1 @@
+2026-09-20 consolidate TCC API into one Vercel function
