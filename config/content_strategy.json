@@ -1,5 +1,5 @@
 {
-  "version": 18,
+  "version": 19,
   "timezone": "Europe/Athens",
   "strategy_id": "FOUR_DAILY_V2",
   "effective_date": "2026-09-20",
@@ -8,31 +8,49 @@
     "enabled": false,
     "generation_enabled": false,
     "publishing_enabled": false,
-    "rule": "All previous alternating 12/10, 13/19, six-sign, standalone-card, avatar, weekly-introduction and dog pipelines are retired. Do not reactivate them or recover their cancelled queue. Historical settings remain available only in Git history."
+    "rule": "All previous 12-sign daily carousel, standalone-card, avatar, weekly-introduction, dog/barista/terrier, filler and old schedule pipelines are retired. The CURRENT six-sign Group A/Group B zodiac carousel is part of FOUR_DAILY_V2 and must not be treated as legacy. Historical settings remain only in Git history."
   },
   "daily_target_posts_per_network": 4,
-  "daily_target_videos": {"phenomenon": 1, "legend": 1},
+  "daily_target_videos": {
+    "phenomenon": 1,
+    "legend": 1
+  },
   "cycle": {
     "mode": "all_four_every_day",
     "start_date": "2026-09-20",
     "alternating_days": false,
-    "order": ["zodiac_carousel", "emotional_story_carousel", "phenomenon_video", "legend_video"],
+    "order": [
+      "zodiac_carousel",
+      "emotional_story_carousel",
+      "phenomenon_video",
+      "legend_video"
+    ],
     "pre_generate_future_days": true,
     "date_rule": "All four categories occur on every Europe/Athens calendar date. A missed or blocked item never shifts the calendar and is never automatically reposted as catch-up."
   },
   "publishing": {
-    "networks": ["facebook", "instagram", "tiktok", "youtube"],
+    "networks": [
+      "facebook",
+      "instagram",
+      "tiktok",
+      "youtube"
+    ],
     "autopublish": true,
-    "slots_local_time": ["08:00", "11:00", "17:00", "23:00"],
+    "slots_local_time": [
+      "11:00",
+      "15:00",
+      "17:00",
+      "23:00"
+    ],
     "schedule_effective_date": "2026-09-20",
     "caption_language": "el",
     "hashtags_per_post": 5,
-    "schedule_rule": "Explicit user-selected DAILY timetable from 20 September 2026: zodiac08:00, emotional story11:00, phenomenon17:00, legend23:00 Europe/Athens. Supersedes old noon-only window and prior default times. Schedule only after actual QA and current provider/account and rolling24h capacity checks. Four logical posts per platform, not twelve or five separate card posts. No backdating, burst catch-up or unapproved time changes: report blocked/missed slots."
+    "schedule_rule": "Current user-selected daily timetable from 20 September 2026: zodiac Group A/B carousel 11:00, five-card emotional story 15:00, phenomenon 17:00, foreign legend 23:00 Europe/Athens. No backdating or automatic time shifting."
   },
   "workflow": {
     "ask_for_confirmation_before_generation": false,
     "ask_for_confirmation_before_publishing": false,
-    "authorization_basis": "20 September user explicitly requests activation today and progress updates. Standing authorization covers routine daily preparation and internal QA; never claim personal user review of unseen media.",
+    "authorization_basis": "Standing user authorization from 20 September 2026 covers routine daily preparation, QA, scheduling and automatic publication for the current 11:00/15:00/17:00/23:00 program.",
     "generate_title_caption_hashtags_automatically": true,
     "quality_check_every_video": true,
     "archive_every_video_in_github": true,
@@ -65,14 +83,26 @@
     "learning_state_file": "state/weekly_learning.json",
     "evaluate_each_network_separately": true,
     "evaluate_combined_performance": true,
-    "metrics_priority": ["views_or_reach", "average_watch_time", "completion_or_retention", "shares", "saves", "comments", "likes", "follows_or_profile_actions"],
+    "metrics_priority": [
+      "views_or_reach",
+      "average_watch_time",
+      "completion_or_retention",
+      "shares",
+      "saves",
+      "comments",
+      "likes",
+      "follows_or_profile_actions"
+    ],
     "rules": [
       "Use comparable actual metrics and distinguish missing data from zero.",
       "Learn from strong hooks and retention without copying old scripts or near-duplicate stories.",
       "Do not overfit to a single viral outlier or claim guaranteed growth or monetization.",
       "The weekly planner may refine themes but must not alter the four daily categories, counts, user-selected times or requested formats without a new user instruction."
     ],
-    "next_week_mix": {"proven_pattern_share": 0.7, "new_experiment_share": 0.3},
+    "next_week_mix": {
+      "proven_pattern_share": 0.7,
+      "new_experiment_share": 0.3
+    },
     "apply_findings_automatically": true
   },
   "current_strategy": {
@@ -80,28 +110,84 @@
     "effective_date": "2026-09-20",
     "timezone": "Europe/Athens",
     "priority": "AUTHORITATIVE_LATEST_USER_STRATEGY",
-    "networks": ["facebook", "instagram", "tiktok", "youtube"],
+    "networks": [
+      "facebook",
+      "instagram",
+      "tiktok",
+      "youtube"
+    ],
     "posts_per_network_per_day": 4,
     "destination_target_per_day": 16,
-    "alternating_daily_posts": {"enabled": false, "rule": "Both carousels occur EVERY DAY, never on alternating days."},
+    "alternating_daily_posts": {
+      "enabled": false,
+      "rule": "Both carousels occur EVERY DAY, never on alternating days."
+    },
     "daily_posts": [
       {
-        "category": "zodiac_carousel", "count": 1, "cards": 12, "preferred_time": "08:00",
-        "order": ["Κριός", "Ταύρος", "Δίδυμοι", "Καρκίνος", "Λέων", "Παρθένος", "Ζυγός", "Σκορπιός", "Τοξότης", "Αιγόκερως", "Υδροχόος", "Ιχθύες"],
-        "rule": "One native carousel containing one card for each of all twelve signs. Never publish signs separately or split into six-sign groups. Check actual series continuity per platform, avoid repeats, and do not invent additional parts of completed series."
+        "category": "zodiac_carousel",
+        "count": 1,
+        "cards": 6,
+        "preferred_time": "11:00",
+        "order": [
+          "Κριός",
+          "Ταύρος",
+          "Δίδυμοι",
+          "Καρκίνος",
+          "Λέων",
+          "Παρθένος",
+          "Ζυγός",
+          "Σκορπιός",
+          "Τοξότης",
+          "Αιγόκερως",
+          "Υδροχόος",
+          "Ιχθύες"
+        ],
+        "rule": "One six-card zodiac carousel per day using the correct alternating group. Never split the six cards into separate posts and never restore the superseded 12-sign daily carousel.",
+        "group_a": [
+          "Κριός",
+          "Ταύρος",
+          "Δίδυμοι",
+          "Καρκίνος",
+          "Λέων",
+          "Παρθένος"
+        ],
+        "group_b": [
+          "Ζυγός",
+          "Σκορπιός",
+          "Τοξότης",
+          "Αιγόκερως",
+          "Υδροχόος",
+          "Ιχθύες"
+        ],
+        "alternation_rule": "Group A and Group B alternate by Europe/Athens calendar date; 20/09/2026=A, 21/09/2026=B, continuing without weekly reset."
       },
       {
-        "category": "emotional_story_carousel", "count": 1, "cards": 5, "preferred_time": "11:00",
-        "themes": ["αγάπη", "έρωτας", "χωρισμός", "ψυχή"],
+        "category": "emotional_story_carousel",
+        "count": 1,
+        "cards": 5,
+        "preferred_time": "15:00",
+        "themes": [
+          "αγάπη",
+          "έρωτας",
+          "χωρισμός",
+          "ψυχή"
+        ],
         "rule": "ONE coherent story in FIVE ordered connected cards, not five independent posts or unrelated quotations. A genuinely new opening, hook, characters, situation, phrasing, progression, turning point and ending each day. Compare actual history, not titles alone."
       },
       {
-        "category": "phenomenon_video", "count": 1, "preferred_time": "17:00",
+        "category": "phenomenon_video",
+        "count": 1,
+        "preferred_time": "17:00",
         "rule": "One fact-checked narrated unusual-phenomenon video. Reuse actual existing unique unpublished media for20-30September, not paid regeneration. Old cancelled queue UUIDs remain draft because they belong to the deletion request. Register ONE new V2 entry for the matching date at17:00 after checking history, no other active new entry and real QA. Reconcile unknown create responses, never duplicate. From1October create one new original phenomenon video daily."
       },
       {
-        "category": "legend_video", "count": 1, "preferred_time": "23:00",
-        "duration_target_seconds": {"min": 75, "max": 120},
+        "category": "legend_video",
+        "count": 1,
+        "preferred_time": "23:00",
+        "duration_target_seconds": {
+          "min": 75,
+          "max": 120
+        },
         "rule": "One original narrated video about one different legend each day, clearly labelled folklore rather than proven supernatural fact. The Flying Dutchman is already published and excluded from all new scheduling and regeneration."
       }
     ],
@@ -111,11 +197,15 @@
       "avatar": false,
       "narration_or_tts": false,
       "music": "Retain the approved original/no-cost rights-cleared music policy where the actual delivery format supports it; do not copy platform-licensed music to other platforms.",
-      "youtube": "One actual complete slideshow video containing all twelve or all five cards, with verified duration and readability.",
-      "native_carousel_support": "Verify the current connected API supports the required card count and requested format before submission. If unsupported, mark that platform blocked; never silently drop cards, split into extra posts or substitute a different format."
+      "youtube": "One actual complete slideshow video containing all six zodiac cards or all five emotional-story cards, preserving order and readability.",
+      "native_carousel_support": "Verify the current connected API supports the required card count and requested format before submission. If unsupported, mark that platform blocked; never silently drop cards, split into extra posts or substitute a different format.",
+      "tiktok": "Native photo carousel uses the complete approved card set, image/jpeg or image/webp only, with tiktokData.autoAddMusic=true; no narration/TTS."
     },
     "narrated_video_quality": {
-      "aspect_ratio": "9:16", "resolution": "1080x1920", "no_avatar": true, "language": "el",
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "no_avatar": true,
+      "language": "el",
       "narration": "Natural approved Greek voice over relevant lawful imagery.",
       "subtitles": "Readable burned-in synchronized Greek subtitles covering the full narration.",
       "ending": "Immediate spoken and written CTA, without a long silent gap.",
@@ -124,11 +214,22 @@
     },
     "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
     "dog_video": {
-      "status": "disabled", "publish": false, "generate": false, "schedule": false, "retry": false, "restore": false,
-      "excluded_metricool_uuids": ["7486346641732224351", "6234574211891284294", "4952065135289714308"],
+      "status": "disabled",
+      "publish": false,
+      "generate": false,
+      "schedule": false,
+      "retry": false,
+      "restore": false,
+      "excluded_metricool_uuids": [
+        "7486346641732224351",
+        "6234574211891284294",
+        "4952065135289714308"
+      ],
       "rule": "All dog/barista/terrier videos are removed from active production and publishing. Never revive an old dog draft or substitute another dog video."
     },
-    "weekly_introduction": {"enabled": false},
+    "weekly_introduction": {
+      "enabled": false
+    },
     "deduplication_policy": {
       "logical_key": "local_date + category + platform",
       "compare_media_and_story_fingerprint_across_dates": true,
@@ -140,7 +241,10 @@
       "verify_after_write": true,
       "flying_dutchman": {
         "published_date": "2026-09-19",
-        "published_metricool_uuids": ["7639724372568328678", "814225112836948353"],
+        "published_metricool_uuids": [
+          "7639724372568328678",
+          "814225112836948353"
+        ],
         "cancelled_future_uuid": "-8042687935771622605",
         "rule": "No further scheduling, reactivation, production or variant of this already-published story. Do not treat the cancelled20September entry as a missing upload to recover."
       }
@@ -157,11 +261,33 @@
       "credit_reserve_target": 10,
       "rule": "Budget only genuinely new files after deducting ready/in-progress work and reservations. Unknown balances or costs are not zero and not permission to test pricing. Reuse the same two narrated masters across four platforms."
     },
-    "monetization_gate": {"enabled": true, "rule": "Check rights, originality and actual platform requirements. Never promise eligibility or earnings from follower/view thresholds alone."},
-    "publishing": {
-      "autopublish": true, "start": "2026-09-20", "slots_local_time": ["08:00", "11:00", "17:00", "23:00"],
-      "rule": "Only the newly authorized four-category daily program is active. Old cancelled queue stays inactive. Draft cancellation is not permanent deletion. Real QA and publication evidence are required. Scheduled is not Published."
+    "monetization_gate": {
+      "enabled": true,
+      "rule": "Check rights, originality and actual platform requirements. Never promise eligibility or earnings from follower/view thresholds alone."
     },
-    "progress_updates": {"enabled": true, "language": "el", "check_cadence": "hourly", "notify_on": ["new ready package", "verified scheduling", "provider-confirmed publication", "new failure or blocker", "recovery"], "suppress_unchanged": true}
+    "publishing": {
+      "autopublish": true,
+      "start": "2026-09-20",
+      "slots_local_time": [
+        "11:00",
+        "15:00",
+        "17:00",
+        "23:00"
+      ],
+      "rule": "Only the current 11:00 six-sign zodiac, 15:00 five-card emotional story, 17:00 phenomenon and 23:00 foreign legend program is active. Old cancelled queue stays inactive. Scheduled is not Published."
+    },
+    "progress_updates": {
+      "enabled": true,
+      "language": "el",
+      "check_cadence": "hourly",
+      "notify_on": [
+        "new ready package",
+        "verified scheduling",
+        "provider-confirmed publication",
+        "new failure or blocker",
+        "recovery"
+      ],
+      "suppress_unchanged": true
+    }
   }
 }
