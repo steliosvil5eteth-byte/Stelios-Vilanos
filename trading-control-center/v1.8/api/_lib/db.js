@@ -12,7 +12,7 @@ export async function db(){
     await sql`create table if not exists tcc_idempotency (idem_key text primary key, fingerprint text not null, status text not null, response jsonb, expires_at timestamptz not null, created_at timestamptz not null default now(), updated_at timestamptz not null default now())`;
     await sql`create table if not exists tcc_meta (key text primary key, value text not null, updated_at timestamptz not null default now())`;
     await sql`create table if not exists tcc_migrations (version integer primary key, name text not null, applied_at timestamptz not null default now())`;
-    await sql`insert into tcc_meta (key,value,updated_at) values ('schema_version','4',now()) on conflict (key) do nothing`;
+    await sql`insert into tcc_meta (key,value,updated_at) values ('schema_version','5',now()) on conflict (key) do nothing`;
     return sql;
   })();
   return clientPromise;
