@@ -1,0 +1,6 @@
+import {requireAdmin} from '../_lib/access.js';
+import {allAccounts} from '../_lib/accounts.js';
+import {exportUserData} from '../_lib/user-data.js';
+import {checksumJson,checkDataIntegrity} from '../_lib/integrity.js';
+import {requestId} from '../_lib/request-trace.js';
+export default async function handler(req,res){try{const rid=requestId(req,res);await requireAdmin(req);if(req.method!=='GET')return res.status(405).json({error:'GET only'});const accounts=await allAccounts(),payload={schema:'tcc-sanitized-backup-v1.6',generatedAt:new Date().toISOString(),accounts:accounts.map(a=>({username:a.username,role:a.role,plan:a.plan,status:a.status})),users:{}};for(const a of accounts)payload.users[a.username]=await exportUserData(a.username);const serialized=JSON.stringify(payload),roundTrip=JSON.parse(serialized),integrity=await checkDataIntegrity();return res.status(integrity.ok?200:409).json({requestId:rid,ok:roundTrip.schema===payload.schema&&integrity.ok,bytes:Buffer.byteLength(serialized),sha256:checksumJson(roundTrip),users:accounts.length,integrity:{ok:integrity.ok,critical:integrity.critical,warnings:integrity.warnings}})}catch(e){return res.status(e.status||500).json({error:e.message,code:e.code})}}
