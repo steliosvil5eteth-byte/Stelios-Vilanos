@@ -1,0 +1,11 @@
+process.env.SESSION_SECRET='v17-smoke-secret-123456789012345';
+const {appendAudit,getJson}=await import('../api/_lib/store.js');
+const {verifyAuditChain}=await import('../api/_lib/audit-chain.js');
+const {verifyRecoveryPayload}=await import('../api/_lib/recovery.js');
+const {updateReleaseControl,getReleaseControl,releaseAssignment}=await import('../api/_lib/release-control.js');
+const {migrationStatus}=await import('../api/_lib/migrations.js');
+const {APP_VERSION,REQUIRED_SCHEMA_VERSION}=await import('../api/_lib/release.js');
+if(APP_VERSION!=='1.7'||REQUIRED_SCHEMA_VERSION!==4)throw Error('release version mismatch');
+await appendAudit('v17-audit',{ts:'2026-09-20T10:00:00Z',type:'ONE',detail:'a'});await appendAudit('v17-audit',{ts:'2026-09-20T10:01:00Z',type:'TWO',detail:'b'});const rows=await getJson('tcc:v17-audit:audit');let v=verifyAuditChain(rows);if(!v.ok||v.checked!==2)throw Error('audit chain failed');const tampered=structuredClone(rows);tampered[0].detail='changed';v=verifyAuditChain(tampered);if(v.ok)throw Error('audit tampering not detected');
+const backup={schema:'tcc-backup-v1.7',exportedAt:new Date().toISOString(),accounts:[{username:'a',role:'user',plan:'free',status:'active'}],data:{a:{trades:[]}}};const rec=verifyRecoveryPayload(backup);if(!rec.ok||rec.users!==1)throw Error('recovery verifier failed');const dup=verifyRecoveryPayload({...backup,accounts:[backup.accounts[0],backup.accounts[0]]});if(dup.ok)throw Error('duplicate account backup accepted');
+await updateReleaseControl('admin',{channel:'canary',canaryPercent:25,releaseLock:false,releaseId:'rc-1'});const rc=await getReleaseControl();if(rc.channel!=='canary'||rc.canaryPercent!==25||rc.releaseLock)throw Error('release control failed');const a1=await releaseAssignment('fixed-user');const a2=await releaseAssignment('fixed-user');if(a1.bucket!==a2.bucket)throw Error('canary assignment not deterministic');const ms=await migrationStatus();if(ms.configured)throw Error('migration status should be unconfigured without DB');console.log('v1.7 smoke: OK');
