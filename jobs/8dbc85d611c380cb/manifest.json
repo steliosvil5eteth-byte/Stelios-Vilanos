@@ -1,0 +1,130 @@
+{
+  "batch_id": "8dbc85d611c380cb",
+  "batch_sha256": "8dbc85d611c380cb0d884ee4580a0244a9b646e364dfcb4805639d406d82f44c",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "v2-20260920-zodiac-12",
+      "status": "rendered",
+      "card_count": 12,
+      "order_verified": true,
+      "readable_min_font_px": 30,
+      "final_duration": 60.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "files": [
+        {
+          "name": "v2-20260920-zodiac-12-01.jpg",
+          "bytes": 148057,
+          "sha256": "f4d3e87979e31bc6488e892e529a864460ee4a48d20c4fa090c6557e8add6d80"
+        },
+        {
+          "name": "v2-20260920-zodiac-12-02.jpg",
+          "bytes": 150824,
+          "sha256": "2ee92e01398f3bcd996b9c7f05479b46b7a5c157e264346d15fa183734ffaafc"
+        },
+        {
+          "name": "v2-20260920-zodiac-12-03.jpg",
+          "bytes": 152599,
+          "sha256": "8eab2cdcb775805a5438d908f0a0529a275e8c07764924d0ea2c390abe9c7ad8"
+        },
+        {
+          "name": "v2-20260920-zodiac-12-04.jpg",
+          "bytes": 158757,
+          "sha256": "bf79de5ba40ed6489705eec8c3525913980f96b447528ad589ae75cef9e06de8"
+        },
+        {
+          "name": "v2-20260920-zodiac-12-05.jpg",
+          "bytes": 149056,
+          "sha256": "5f317dbc72564b5b93ebe47f416c01aba9e697d90424a9b14d56f842ca11bfa9"
+        },
+        {
+          "name": "v2-20260920-zodiac-12-06.jpg",
+          "bytes": 149413,
+          "sha256": "bc0c84740504cd7478eb971e4e23b3b9fde0f365d537c0eedd0cbf51bd81868d"
+        },
+        {
+          "name": "v2-20260920-zodiac-12-07.jpg",
+          "bytes": 151533,
+          "sha256": "460ff14164a06515abacf00d8a92e71ed44409836c25702cf9008399ce5e7141"
+        },
+        {
+          "name": "v2-20260920-zodiac-12-08.jpg",
+          "bytes": 158366,
+          "sha256": "11dc0e3e897998cfc6a4f580d065363baef8b3d78cfc67323915a0cbca48bbd3"
+        },
+        {
+          "name": "v2-20260920-zodiac-12-09.jpg",
+          "bytes": 146742,
+          "sha256": "dc21cbcd2e814d821004c1e76ee2e0868d77c0fbe9540a937ba693ac708df2f5"
+        },
+        {
+          "name": "v2-20260920-zodiac-12-10.jpg",
+          "bytes": 149560,
+          "sha256": "6d200cbec0c7abcf717cf7f4925f8bc79a6bb626f0ca05d339f4b6bed3b511dd"
+        },
+        {
+          "name": "v2-20260920-zodiac-12-11.jpg",
+          "bytes": 152729,
+          "sha256": "b8843c20ccd5a2f43fb7cbac4e4bfa232cca693fd082b71490d695e1a52ecb05"
+        },
+        {
+          "name": "v2-20260920-zodiac-12-12.jpg",
+          "bytes": 146952,
+          "sha256": "82e73305cfe960fa9e300085f98b907c52097631078f72cf9e621f847c647e7e"
+        },
+        {
+          "name": "v2-20260920-zodiac-12.mp4",
+          "bytes": 892414,
+          "sha256": "607beccfd36c4f87386fa0c181b92f05bd186b6379cfc6e64783c18fdfc303dd"
+        }
+      ]
+    },
+    {
+      "id": "v2-20260920-emotional-5",
+      "status": "rendered",
+      "card_count": 5,
+      "order_verified": true,
+      "readable_min_font_px": 30,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "files": [
+        {
+          "name": "v2-20260920-emotional-5-01.jpg",
+          "bytes": 151609,
+          "sha256": "b0523c9ecf20b8ceb927d8d878ebb0e4a1f097c6029dcae4324bea23f73225f4"
+        },
+        {
+          "name": "v2-20260920-emotional-5-02.jpg",
+          "bytes": 154144,
+          "sha256": "88211779dae3abe29d0e5bc1b30efb09c8d657ac7c6961fa2c5d22071fd69d8e"
+        },
+        {
+          "name": "v2-20260920-emotional-5-03.jpg",
+          "bytes": 154783,
+          "sha256": "2fd18c03d4ce759c97415130054014f5de6955473278be91a99a0d1a00687ff4"
+        },
+        {
+          "name": "v2-20260920-emotional-5-04.jpg",
+          "bytes": 158490,
+          "sha256": "19ca97c173e1bb31d2c41696c0bc6000d0fe6d83ce7a711cd9d6de5f22ba1127"
+        },
+        {
+          "name": "v2-20260920-emotional-5-05.jpg",
+          "bytes": 168858,
+          "sha256": "323181a69a280e3c8e5f631c77420bb7e5610107aa5596dcc734b87aaae4d3ba"
+        },
+        {
+          "name": "v2-20260920-emotional-5.mp4",
+          "bytes": 457543,
+          "sha256": "a70c8c2d8a3c30786cff299257696e5383b00618d7b795baaf90dfb24dce01d2"
+        }
+      ]
+    }
+  ]
+}
