@@ -62,7 +62,7 @@ def text_block(im, text, box, start_size, *, bold=False, center=False, min_size=
         leading=math.ceil(size*1.35)
         if len(lines)*leading <= y1-y0:
             chosen=(font,lines,leading,size); break
-n    if not chosen:
+    if not chosen:
         raise ValueError('Text cannot fit at readable size')
     font,lines,leading,size=chosen
     y=y0 + max(0,(y1-y0-len(lines)*leading)//2) if center else y0
