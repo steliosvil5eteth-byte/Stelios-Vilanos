@@ -247,6 +247,12 @@ def main():
                     vid=output/(job['id']+'.mp4')
                     record['final_duration']=music_video(source_jpg,vid,float(job.get('seconds',35)))
                     record.update({'music_embedded':True,'music_source':'original_local_synth_no_external_license','narration':False,'source_visual_preserved':True})
+                elif job['mode']=='image_jpeg_copy':
+                    source=work/'source.img';download(job['source_url'],source)
+                    im=Image.open(source).convert('RGB')
+                    jpg=output/(job['id']+'.jpg');im.save(jpg,quality=96,subsampling=0)
+                    compact_preview(jpg,output/(job['id']+'-qa.png'))
+                    record.update({'source_visual_preserved':True,'narration':False,'image_size':[im.width,im.height]})
                 elif job['mode']=='preview':
                     source=work/'source.img';download(job['source_url'],source)
                     compact_preview(source,output/(job['id']+'.png'))
