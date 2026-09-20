@@ -135,3 +135,27 @@ MARKET_DATA_FAILOVER=true
 ```
 
 IBKR paper and Stripe test integrations should remain disabled until their own credentials are configured and separately verified.
+
+
+## v1.5 production safety hardening
+
+- Two-key global paper-execution gate: `PAPER_EXECUTION_ENABLED=true` plus an admin-controlled stored switch.
+- Emergency stop defaults to blocking paper execution on a fresh deployment.
+- Stale daily market data is rejected before strategy evaluation; default maximum age is 7 days.
+- IBKR reconciliation endpoint reports local/broker mismatches without automatically altering positions.
+- Request IDs are emitted on critical operational routes.
+- Stricter server-side symbol and order schema validation.
+- Live execution remains unavailable.
+
+Admin safety endpoint:
+- `GET /api/admin/safety`
+- `PUT /api/admin/safety`
+
+IBKR reconciliation:
+- `GET /api/broker/ibkr/reconcile`
+
+Environment additions:
+```env
+PAPER_EXECUTION_ENABLED=false
+MARKET_DATA_MAX_AGE_DAYS=7
+```
