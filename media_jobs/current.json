@@ -1,30 +1,73 @@
 {
   "approved": true,
   "paid_generation_allowed": false,
-  "purpose": "Latest user rule 2026-09-19: every non-narrated social post must use the same visual card as a vertical MP4 with embedded no-cost original locally synthesized music across TikTok, Facebook, Instagram and YouTube. No avatar, TTS, narration, external catalog music, purchase or AI credits. Preserve tomorrow 2026-09-20 text, visual and publication times; narrated Blood Falls and Flying Dutchman are excluded.",
+  "purpose": "Prepare exact 2026-09-21 zodiac Group B and emotional-story carousel cards as JPEG copies for TikTok compatibility. Preserve the original visual/text pixels; no creative changes, no TTS, no publishing, no paid generation.",
   "jobs": [
-    {"id":"music-20260920-emotion1","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-1008071703018410527.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-emotion2","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-17839762938741990178.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-emotion3","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-2325916646625467205.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-emotion4","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-12898887496861964161.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-emotion5","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-6242912684288043765.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-p4-aries","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-10565123331970384407.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-p4-taurus","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-2643357955930071313.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-p4-gemini","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-1673706076751611080.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-p4-cancer","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-14606476793695845311.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-p4-leo","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-12292746523479471504.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-p4-virgo","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-13585979926545095215.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-p4-libra","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-2124335554087592248.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-p4-scorpio","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-3925806074315798379.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-p4-sagittarius","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-11513391518979634694.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-p4-capricorn","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-15347606855526826290.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-p4-aquarius","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-7732870573754134269.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-p4-pisces","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-11636474775364358864.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-p3-aries","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-17195682348260800149.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-p3-taurus","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-3175565435537820074.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-p3-gemini","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-3037561418967715220.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-p3-cancer","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-1007226929789701809.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-p3-leo","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-15930709134373117769.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."},
-    {"id":"music-20260920-p3-virgo","mode":"image_music_video","source_url":"https://static.metricool.com/planner/202609/7000636-file-15409037742056075006.jpeg","seconds":35,"attribution":"Visual source is the already-approved user-owned/generated social card currently scheduled in Metricool. Music is locally synthesized by the deterministic renderer with no external recording."}
+    {
+      "id": "prep-20260921-zodiac-01",
+      "mode": "image_jpeg_copy",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-13903307916734297096.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
+    },
+    {
+      "id": "prep-20260921-zodiac-02",
+      "mode": "image_jpeg_copy",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-7755575088381564680.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
+    },
+    {
+      "id": "prep-20260921-zodiac-03",
+      "mode": "image_jpeg_copy",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-17823163913892937530.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
+    },
+    {
+      "id": "prep-20260921-zodiac-04",
+      "mode": "image_jpeg_copy",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-17506897390375142023.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
+    },
+    {
+      "id": "prep-20260921-zodiac-05",
+      "mode": "image_jpeg_copy",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-3923915325400838427.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
+    },
+    {
+      "id": "prep-20260921-zodiac-06",
+      "mode": "image_jpeg_copy",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-3382580873996074419.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
+    },
+    {
+      "id": "prep-20260921-emotional-01",
+      "mode": "image_jpeg_copy",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-328792346142254253.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
+    },
+    {
+      "id": "prep-20260921-emotional-02",
+      "mode": "image_jpeg_copy",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-3151224098697376723.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
+    },
+    {
+      "id": "prep-20260921-emotional-03",
+      "mode": "image_jpeg_copy",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-7281605175480333895.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
+    },
+    {
+      "id": "prep-20260921-emotional-04",
+      "mode": "image_jpeg_copy",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-13820761073754520937.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
+    },
+    {
+      "id": "prep-20260921-emotional-05",
+      "mode": "image_jpeg_copy",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-12525188636648768747.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
+    }
   ]
 }
