@@ -1,17 +1,15 @@
 {
-  "version": 2,
+  "version": 1,
   "jobs": [],
   "reset": {
     "requested_on": "2026-09-19",
-    "effective_strategy": "FOUR_DAILY_V1",
-    "reason": "User requested clearing the old queue and removing all dog videos. Old standalone zodiac/emotional jobs must not be restored. The new program has four logical posts daily per platform.",
-    "previous_content_sha": "790a660438c503f855b8293cfb21fcef74bddcf9",
-    "history_policy": "Old records remain in Git history. Completed publication history is unchanged. Emptying this file does not itself delete remotely hosted video files or already-published posts.",
-    "preserved_remote_schedule": "SUPERSEDED by the user's complete queue-clear instruction: all reviewed Metricool entries dated 20-30 September 2026, including phenomenon videos, are now draft=true and autoPublish=false. Do not restore or reschedule them. No entries were returned for 1 October-31 December 2026 in the latest read.",
-    "new_media_status": "New daily twelve-card zodiac carousel, coherent five-card story, phenomenon video and a different legend require actual preparation/QA and a deliberate restart before scheduling. They are NOT currently scheduled. Never substitute Flying Dutchman or dog content.",
-    "publishing_hold": true,
-    "related_automation_status": "The six ChatGPT preparation, sourcing, assembly, scheduling, repair and weekly-planning tasks were confirmed disabled on 19 September 2026. Do not resume them as a routine repair or refill the old queue.",
-    "remote_deletion_status": "NOT COMPLETED. The available Metricool connector has no deletion action. The old remote entries remain cancelled drafts, not deleted files. A scoped deletion request was sent to Metricool support on 19 September 2026; no completion confirmation has been received.",
-    "support_request_scope": "Delete only obsolete unpublished planner entries created on or before 19 September 2026 and planned for 20-30 September 2026, plus the previously identified unpublished dog drafts. Exclude already-published posts, new replacement entries created from 20 September onward, account/brand/subscription changes and unrelated source files."
+    "reconciled_on": "2026-09-20",
+    "effective_strategy": "FOUR_DAILY_V2",
+    "reason": "Old queue remains retired/empty. Current FOUR_DAILY_V2 is authorized and scheduled from live V2 state/ledger only; never repopulate this legacy pending queue from retired jobs.",
+    "history_policy": "Old records remain in Git history; completed publication history is unchanged.",
+    "publishing_hold": false,
+    "new_program": "11:00 six-sign zodiac A/B; 15:00 five-card emotional story; 17:00 phenomenon; 23:00 foreign legend, Europe/Athens.",
+    "legacy_policy": "Flying Dutchman, dog/barista/terrier, old standalone zodiac/emotional, avatar/introduction/filler and other retired jobs remain inactive. Do not restore them.",
+    "remote_deletion_status": "No claim of permanent deletion. Retired remote drafts remain separate from current V2 records."
   }
 }
