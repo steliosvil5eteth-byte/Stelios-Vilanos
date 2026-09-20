@@ -1,5 +1,5 @@
 import assert from 'node:assert/strict';
-import {syncUserModel,performanceForUser,evaluateAlerts,strategySnapshot} from '../api/_lib/model.js';
+import {syncUserModel,performanceForUser,evaluateAlerts,strategySnapshot} from '../server/api/_lib/model.js';
 const user='smoke-user';
 const settings={capital:10000,riskPct:.5,dailyLoss:2,maxPositionPct:25,maxExposurePct:100,maxOpen:5,slippageBps:5,commissionBps:2,minScore:68,minRR:2,maxHold:20,wTrend:30,wMomentum:25,wVolume:20,wVolatility:15,wRsi:10};
 const strategy=strategySnapshot(settings);

@@ -2,7 +2,7 @@ import {execFileSync} from 'node:child_process';
 import {readdirSync,readFileSync,writeFileSync,unlinkSync} from 'node:fs';
 import {join} from 'node:path';
 function walk(dir){return readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(join(dir,e.name)):[join(dir,e.name)])}
-for(const f of walk('api').filter(x=>x.endsWith('.js')))execFileSync(process.execPath,['--check',f],{stdio:'inherit'});
+for(const f of [...walk('api'),...walk('server/api')].filter(x=>x.endsWith('.js')))execFileSync(process.execPath,['--check',f],{stdio:'inherit'});
 const html=readFileSync('index.html','utf8'),js=html.split('<script>')[1]?.split('</script>')[0];if(!js)throw new Error('browser script missing');writeFileSync('.validate-browser.mjs',js);execFileSync(process.execPath,['--check','.validate-browser.mjs'],{stdio:'inherit'});unlinkSync('.validate-browser.mjs');
 for(const f of ['package.json','manifest.json','vercel.json'])JSON.parse(readFileSync(f,'utf8'));
 execFileSync(process.execPath,['scripts/model-smoke.mjs'],{stdio:'inherit'});

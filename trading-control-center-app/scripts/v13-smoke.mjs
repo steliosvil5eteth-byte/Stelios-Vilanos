@@ -12,12 +12,12 @@ process.env.STRIPE_WEBHOOK_SECRET='whsec_v13_local_validation_secret';
 process.env.STRIPE_PRICE_PRO='price_test_pro';
 process.env.STRIPE_PRICE_PREMIUM='price_test_premium';
 
-const {createAccount,getAccount,updateAccount}=await import('../api/_lib/accounts.js');
-const {issueEmailVerification,confirmEmailVerification}=await import('../api/_lib/email-verification.js');
-const {emailOutbox}=await import('../api/_lib/email.js');
-const {acceptConsent}=await import('../api/_lib/consent.js');
-const {onboardingStatus,requireVerifiedEmail}=await import('../api/_lib/onboarding.js');
-const {billingConfig,verifyStripeSignature,applyStripeEvent}=await import('../api/_lib/billing.js');
+const {createAccount,getAccount,updateAccount}=await import('../server/api/_lib/accounts.js');
+const {issueEmailVerification,confirmEmailVerification}=await import('../server/api/_lib/email-verification.js');
+const {emailOutbox}=await import('../server/api/_lib/email.js');
+const {acceptConsent}=await import('../server/api/_lib/consent.js');
+const {onboardingStatus,requireVerifiedEmail}=await import('../server/api/_lib/onboarding.js');
+const {billingConfig,verifyStripeSignature,applyStripeEvent}=await import('../server/api/_lib/billing.js');
 
 await createAccount({username:'v13-user',password:'LongPassword123!',email:'v13@example.test',plan:'free'});
 let a=await getAccount('v13-user');

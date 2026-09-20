@@ -1,9 +1,9 @@
 process.env.PAPER_EXECUTION_ENABLED='true';
 process.env.SESSION_SECRET='v15-smoke-session-secret-123456789012345';
-const {getSafetyState,updateSafetyState,requirePaperExecutionAllowed}=await import('../api/_lib/safety.js');
-const {marketFreshness}=await import('../api/_lib/freshness.js');
-const {reconcilePaperState}=await import('../api/_lib/reconciliation.js');
-const {validateLongPaperOrder,normalizeSymbols}=await import('../api/_lib/schema.js');
+const {getSafetyState,updateSafetyState,requirePaperExecutionAllowed}=await import('../server/api/_lib/safety.js');
+const {marketFreshness}=await import('../server/api/_lib/freshness.js');
+const {reconcilePaperState}=await import('../server/api/_lib/reconciliation.js');
+const {validateLongPaperOrder,normalizeSymbols}=await import('../server/api/_lib/schema.js');
 
 let s=await getSafetyState();if(s.paperExecutionAllowed)throw Error('paper execution must default blocked');
 await updateSafetyState('admin',{paperExecutionEnabled:true,emergencyStop:false,note:'smoke'});s=await getSafetyState();if(!s.paperExecutionAllowed)throw Error('two-key paper safety did not enable');await requirePaperExecutionAllowed();

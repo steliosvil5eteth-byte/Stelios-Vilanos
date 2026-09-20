@@ -2,14 +2,14 @@ import crypto from 'node:crypto';
 process.env.APP_USER='v12admin';
 process.env.APP_PASSWORD_SHA256=crypto.createHash('sha256').update('AdminPassword123!').digest('hex');
 process.env.SESSION_SECRET='v12-security-session-secret-123456789';
-const {createAccount,getAccount}=await import('../api/_lib/accounts.js');
-const {createSession,verifySession}=await import('../api/_lib/session.js');
-const {csrfToken}=await import('../api/_lib/csrf.js');
-const {requireAccount}=await import('../api/_lib/access.js');
-const {acceptConsent,requirePaperConsent}=await import('../api/_lib/consent.js');
-const {consumeUsage,getUsage}=await import('../api/_lib/usage.js');
-const {setJson,getJson}=await import('../api/_lib/store.js');
-const {exportUserData,deleteUserData}=await import('../api/_lib/user-data.js');
+const {createAccount,getAccount}=await import('../server/api/_lib/accounts.js');
+const {createSession,verifySession}=await import('../server/api/_lib/session.js');
+const {csrfToken}=await import('../server/api/_lib/csrf.js');
+const {requireAccount}=await import('../server/api/_lib/access.js');
+const {acceptConsent,requirePaperConsent}=await import('../server/api/_lib/consent.js');
+const {consumeUsage,getUsage}=await import('../server/api/_lib/usage.js');
+const {setJson,getJson}=await import('../server/api/_lib/store.js');
+const {exportUserData,deleteUserData}=await import('../server/api/_lib/user-data.js');
 
 await createAccount({username:'v12-user',password:'LongPassword123!',plan:'free'});
 const token=createSession('v12-user',1),session=verifySession(token),csrf=csrfToken(session);
@@ -24,7 +24,7 @@ await setJson('tcc:v12-user:profile',{displayName:'Test'});const exp=await expor
 await deleteUserData('v12-user');if(await getJson('tcc:v12-user:profile'))throw Error('user data deletion failed');
 if(!(await getAccount('v12-user')))throw Error('data deletion should not delete account row');
 
-const deleteHandler=(await import('../api/account/delete.js')).default;
+const deleteHandler=(await import('../server/api/account/delete.js')).default;
 await createAccount({username:'delete-v12',password:'DeletePassword123!',plan:'free'});
 const delToken=createSession('delete-v12',1),delCsrf=csrfToken(verifySession(delToken));
 function res(){return {code:200,body:null,headers:{},status(c){this.code=c;return this},json(v){this.body=v;return this},setHeader(k,v){this.headers[k]=v}}}

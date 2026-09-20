@@ -2,12 +2,12 @@ import crypto from 'node:crypto';
 process.env.APP_USER='apiadmin';
 process.env.APP_PASSWORD_SHA256=crypto.createHash('sha256').update('AdminPassword123!').digest('hex');
 process.env.SESSION_SECRET='api-smoke-session-secret-123456789';
-const {createAccount}=await import('../api/_lib/accounts.js');
-const {createSession,verifySession}=await import('../api/_lib/session.js');
-const {csrfToken}=await import('../api/_lib/csrf.js');
-const stateHandler=(await import('../api/state.js')).default;
-const strategyHandler=(await import('../api/strategies.js')).default;
-const adminHandler=(await import('../api/admin/users.js')).default;
+const {createAccount}=await import('../server/api/_lib/accounts.js');
+const {createSession,verifySession}=await import('../server/api/_lib/session.js');
+const {csrfToken}=await import('../server/api/_lib/csrf.js');
+const stateHandler=(await import('../server/api/state.js')).default;
+const strategyHandler=(await import('../server/api/strategies.js')).default;
+const adminHandler=(await import('../server/api/admin/users.js')).default;
 await createAccount({username:'free-api-user',password:'FreePassword123!',plan:'free'});
 function req(user,method='GET',body={},query={}){const token=createSession(user),headers={cookie:`tcc_session=${encodeURIComponent(token)}`};if(!['GET','HEAD','OPTIONS'].includes(method))headers['x-csrf-token']=csrfToken(verifySession(token));return {method,body,query,headers}}
 function res(){return {code:200,body:null,headers:{},status(c){this.code=c;return this},json(v){this.body=v;return this},setHeader(k,v){this.headers[k]=v}}}
