@@ -7,7 +7,10 @@ import {rateLimit,applyRateLimitError} from '../../_lib/rate-limit.js';
 import {requirePaperConsent} from '../../_lib/consent.js';
 import {consumeUsage} from '../../_lib/usage.js';
 import {requireVerifiedEmail} from '../../_lib/onboarding.js';
-import {requireIdempotencyKey,runIdempotent} from '../../_lib/idempotency.js';\nimport {requirePaperExecutionAllowed} from '../../_lib/safety.js';\nimport {validateBracketOrder} from '../../_lib/schema.js';\nimport {requestId} from '../../_lib/request-trace.js';
+import {requireIdempotencyKey,runIdempotent} from '../../_lib/idempotency.js';
+import {requirePaperExecutionAllowed} from '../../_lib/safety.js';
+import {validateBracketOrder} from '../../_lib/schema.js';
+import {requestId} from '../../_lib/request-trace.js';
 export default async function handler(req,res){
   if(req.method!=='POST') return res.status(405).json({error:'POST only'});
   try{
