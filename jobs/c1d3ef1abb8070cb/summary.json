@@ -1,0 +1,94 @@
+{
+  "batch_id": "c1d3ef1abb8070cb",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "prep-20260921-zodiac-01",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "error": null
+    },
+    {
+      "id": "prep-20260921-zodiac-02",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "error": null
+    },
+    {
+      "id": "prep-20260921-zodiac-03",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "error": null
+    },
+    {
+      "id": "prep-20260921-zodiac-04",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "error": null
+    },
+    {
+      "id": "prep-20260921-zodiac-05",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "error": null
+    },
+    {
+      "id": "prep-20260921-zodiac-06",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "error": null
+    },
+    {
+      "id": "prep-20260921-emotional-01",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "error": null
+    },
+    {
+      "id": "prep-20260921-emotional-02",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "error": null
+    },
+    {
+      "id": "prep-20260921-emotional-03",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "error": null
+    },
+    {
+      "id": "prep-20260921-emotional-04",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "error": null
+    },
+    {
+      "id": "prep-20260921-emotional-05",
+      "status": "rendered",
+      "original_duration": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "error": null
+    }
+  ]
+}

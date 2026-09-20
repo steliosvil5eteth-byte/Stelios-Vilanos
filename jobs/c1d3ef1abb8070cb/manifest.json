@@ -1,0 +1,249 @@
+{
+  "batch_sha256": "c1d3ef1abb8070cbd4f27d00a7fe654ee68cd5b898ea610d5503c973c39c80dc",
+  "batch_id": "c1d3ef1abb8070cb",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "prep-20260921-zodiac-01",
+      "mode": "image_jpeg_copy",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-13903307916734297096.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation.",
+      "title": null,
+      "text": null,
+      "source_visual_preserved": true,
+      "narration": false,
+      "image_size": [
+        1254,
+        1254
+      ],
+      "files": [
+        {
+          "name": "prep-20260921-zodiac-01.jpg",
+          "bytes": 1119172,
+          "sha256": "84aeac6d2e3c336df166637106053a4956849ae7432503d6dc841a76fda787ba"
+        }
+      ]
+    },
+    {
+      "id": "prep-20260921-zodiac-02",
+      "mode": "image_jpeg_copy",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-7755575088381564680.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation.",
+      "title": null,
+      "text": null,
+      "source_visual_preserved": true,
+      "narration": false,
+      "image_size": [
+        1254,
+        1254
+      ],
+      "files": [
+        {
+          "name": "prep-20260921-zodiac-02.jpg",
+          "bytes": 1088714,
+          "sha256": "688a9f189be315a205757d86032dc77491bd8ae0a3905d8a62c2edaa630bd43b"
+        }
+      ]
+    },
+    {
+      "id": "prep-20260921-zodiac-03",
+      "mode": "image_jpeg_copy",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-17823163913892937530.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation.",
+      "title": null,
+      "text": null,
+      "source_visual_preserved": true,
+      "narration": false,
+      "image_size": [
+        1254,
+        1254
+      ],
+      "files": [
+        {
+          "name": "prep-20260921-zodiac-03.jpg",
+          "bytes": 988034,
+          "sha256": "2635d2d96573663d98a5c1a8486ca8062c26f3ecde64b4dfe7cb0d91a6e22fa4"
+        }
+      ]
+    },
+    {
+      "id": "prep-20260921-zodiac-04",
+      "mode": "image_jpeg_copy",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-17506897390375142023.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation.",
+      "title": null,
+      "text": null,
+      "source_visual_preserved": true,
+      "narration": false,
+      "image_size": [
+        1254,
+        1254
+      ],
+      "files": [
+        {
+          "name": "prep-20260921-zodiac-04.jpg",
+          "bytes": 1094296,
+          "sha256": "713e25a8a913ee0a2a42736ac149fd805aa6c8755ec53eee2dbd66ffa255c213"
+        }
+      ]
+    },
+    {
+      "id": "prep-20260921-zodiac-05",
+      "mode": "image_jpeg_copy",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-3923915325400838427.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation.",
+      "title": null,
+      "text": null,
+      "source_visual_preserved": true,
+      "narration": false,
+      "image_size": [
+        1254,
+        1254
+      ],
+      "files": [
+        {
+          "name": "prep-20260921-zodiac-05.jpg",
+          "bytes": 1164654,
+          "sha256": "c19075f5e19e5f0c7e742cd2cb7263e937df1e8c4864b8403bac4d60b20f14ca"
+        }
+      ]
+    },
+    {
+      "id": "prep-20260921-zodiac-06",
+      "mode": "image_jpeg_copy",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-3382580873996074419.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation.",
+      "title": null,
+      "text": null,
+      "source_visual_preserved": true,
+      "narration": false,
+      "image_size": [
+        1254,
+        1254
+      ],
+      "files": [
+        {
+          "name": "prep-20260921-zodiac-06.jpg",
+          "bytes": 1161393,
+          "sha256": "2a57d3e093442fd51a85553d135fd35598244594d7623183d039d9c37750bf07"
+        }
+      ]
+    },
+    {
+      "id": "prep-20260921-emotional-01",
+      "mode": "image_jpeg_copy",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-328792346142254253.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation.",
+      "title": null,
+      "text": null,
+      "source_visual_preserved": true,
+      "narration": false,
+      "image_size": [
+        417,
+        627
+      ],
+      "files": [
+        {
+          "name": "prep-20260921-emotional-01.jpg",
+          "bytes": 151912,
+          "sha256": "ab274b07b1eade112133fc895fa18022ed6c33c018484b5f9a80816e5b6d507c"
+        }
+      ]
+    },
+    {
+      "id": "prep-20260921-emotional-02",
+      "mode": "image_jpeg_copy",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-3151224098697376723.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation.",
+      "title": null,
+      "text": null,
+      "source_visual_preserved": true,
+      "narration": false,
+      "image_size": [
+        419,
+        627
+      ],
+      "files": [
+        {
+          "name": "prep-20260921-emotional-02.jpg",
+          "bytes": 153499,
+          "sha256": "5a0392aee69fb57f7b329cc4bcba4b9e2cc9bab53e6765240a18c85d0803c9c3"
+        }
+      ]
+    },
+    {
+      "id": "prep-20260921-emotional-03",
+      "mode": "image_jpeg_copy",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-7281605175480333895.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation.",
+      "title": null,
+      "text": null,
+      "source_visual_preserved": true,
+      "narration": false,
+      "image_size": [
+        418,
+        627
+      ],
+      "files": [
+        {
+          "name": "prep-20260921-emotional-03.jpg",
+          "bytes": 129065,
+          "sha256": "487b751cceaa3b5ae7646867de76497958314af1e02a482e73f97f497a562c1a"
+        }
+      ]
+    },
+    {
+      "id": "prep-20260921-emotional-04",
+      "mode": "image_jpeg_copy",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-13820761073754520937.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation.",
+      "title": null,
+      "text": null,
+      "source_visual_preserved": true,
+      "narration": false,
+      "image_size": [
+        627,
+        627
+      ],
+      "files": [
+        {
+          "name": "prep-20260921-emotional-04.jpg",
+          "bytes": 212038,
+          "sha256": "5ae324d8d0f6255bac6b856bd45c5e2114fc02dd0b4cf298a12fc17d33f08e1b"
+        }
+      ]
+    },
+    {
+      "id": "prep-20260921-emotional-05",
+      "mode": "image_jpeg_copy",
+      "status": "rendered",
+      "source_url": "https://static.metricool.com/planner/202609/7000636-file-12525188636648768747.png",
+      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation.",
+      "title": null,
+      "text": null,
+      "source_visual_preserved": true,
+      "narration": false,
+      "image_size": [
+        627,
+        627
+      ],
+      "files": [
+        {
+          "name": "prep-20260921-emotional-05.jpg",
+          "bytes": 219662,
+          "sha256": "2d15251de72f077bbac83ed9e71adba07d6323d0296c4a3d42d856a85890f138"
+        }
+      ]
+    }
+  ]
+}
