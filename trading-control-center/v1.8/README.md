@@ -181,3 +181,28 @@ New local checks:
 npm run validate
 npm run preflight
 ```
+
+
+## v1.8 operations / promotion controls
+
+- SLO snapshot from stored health-check events (availability, sample count, critical events and DB latency).
+- Explicit incident state with severity, title, timestamps and admin audit trail.
+- Data-retention policy **dry-run only**; it reports eligible records but does not delete data.
+- Deployment manifest with deterministic SHA-256 and optional HMAC when `RELEASE_MANIFEST_SECRET` is configured.
+- Canary → stable promotion gate requiring: release unlocked, 100% canary, no incident, maintenance ON, emergency stop ON, enough healthy SLO samples, and live trading OFF.
+- Schema version 5 / migration `005_ops_observability.sql`.
+
+New admin endpoints:
+- `GET|PUT /api/admin/incident`
+- `GET /api/admin/slo`
+- `GET /api/admin/retention`
+- `GET /api/admin/deployment-manifest`
+- `GET /api/admin/promotion-gate`
+
+Local checks:
+```bash
+npm run validate
+npm run preflight
+npm run release-check
+npm run ops-check
+```
