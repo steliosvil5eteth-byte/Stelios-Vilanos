@@ -1,7 +1,7 @@
 {
   "strategy_id": "FOUR_DAILY_V2",
   "timezone": "Europe/Athens",
-  "updated_at": "2026-09-20T07:19:49+03:00",
+  "updated_at": "2026-09-20T07:20:00+03:00",
   "entries": {
     "2026-09-20|zodiac_carousel|facebook": {
       "logical_slot_id": "3e1f2345-b318-81dc-9cc5-d62e4e688ab7",
@@ -9,9 +9,12 @@
       "title": "Μετά τον καβγά: τι χρειάζεται κάθε ζώδιο",
       "content_fingerprint": "8dbc85d611c380cb0d884ee4580a0244a9b646e364dfcb4805639d406d82f44c:zodiac-12",
       "asset_batch": "8dbc85d611c380cb",
-      "claim_status": "CLAIMED",
-      "delivery_status": "PENDING_WRITE",
-      "evidence": "12-card deterministic render QA passed; Metricool official current format guide permits up to 35 Facebook images in one post; fresh provider history/live queue required immediately before create."
+      "claim_status": "OWNED",
+      "delivery_status": "SCHEDULED_VERIFIED",
+      "metricool_id": "378776002",
+      "metricool_uuid": "4721466792441563808",
+      "provider_status": "PENDING",
+      "delivery_evidence": "Fresh Metricool read after create returned the same ID/UUID at 2026-09-20 08:00 Europe/Athens with 12 media assets, draft=false, autoPublish=true, Facebook status PENDING."
     },
     "2026-09-20|zodiac_carousel|instagram": {
       "logical_slot_id": "3e1f2345-b318-81dc-9cc5-d62e4e688ab7",
