@@ -1,26 +1,136 @@
 {
- "version":4,"timezone":"Europe/Athens","start_date":"2026-09-20","current_cycle_date":"2026-09-20","current_theme":"all_four_every_day","current_strategy":"FOUR_DAILY_V2","current_status":"ACTIVE_PREPARING","status":"active","publishing_paused":false,
- "target_count":4,"completed_count":0,"scheduled_count":0,"prepared_count":null,"generating_count":null,"partially_published_count":0,
- "count_basis":"New V2 logical posts per platform. Workers activated successfully20September; no new Metricool creation made by the activation operation at this checkpoint. Full package readiness and later worker results are not yet verified. Do not infer four ready posts from activation.",
- "last_completed_theme":null,"next_theme_after_completion":"all_four_every_day","next_cycle_date":"2026-09-21","next_theme":"all_four_every_day","next_target_count":4,"next_prepared_count":null,"next_generating_count":null,"next_scheduled_count":0,"last_reconciled_date":"2026-09-20",
- "daily_categories":["zodiac_carousel","emotional_story_carousel","phenomenon_video","legend_video"],"daily_slots_local":["08:00","11:00","17:00","23:00"],"alternating_days":false,"weekly_introduction_enabled":false,"dog_video_enabled":false,"legacy_recovery_enabled":false,
- "new_media_pending":["zodiac_carousel","emotional_story_carousel","legend_video"],
- "existing_phenomena_status":"Existing unpublished20-30Septemberfiles may supply matchingNEWV2category3 at17:00 afterQA/historycheck,withoutpaidregeneration. OldcancelledUUIDsstaydraft becauseoldqueuehasareportedsupportdeletionrequest. BeforecreatingnewV2checkdurableledger/livequeueforalreadycreatedreplacement;oneperdate/category/platformonly.",
- "category_state_2026_09_20":{
-  "zodiac_carousel":{"cards":12,"logical_posts":1,"time":"08:00","status":"UNSCHEDULED_NEW_MEDIA_REQUIRED"},
-  "emotional_story_carousel":{"cards":5,"logical_posts":1,"time":"11:00","status":"UNSCHEDULED_NEW_MEDIA_REQUIRED"},
-  "phenomenon_video":{"time":"17:00","status":"EXISTING_MEDIA_PENDING_V2_QA_AND_SCHEDULING","source_cancelled_uuid":"2123662763815747664","source_cancelled_id":"378692127","title":"Blood Falls","source_media_url":"https://static.metricool.com/planner/202609/7000636-file-16048301884828378074.mp4","source_autoPublish":false,"source_draft":true,"new_metricool_uuid":null},
-  "legend_video":{"time":"23:00","status":"UNSCHEDULED_DIFFERENT_NEW_LEGEND_REQUIRED","forbidden_story":"Flying Dutchman"}
- },
- "retired_dog_metricool_uuids":["7486346641732224351","6234574211891284294","4952065135289714308"],"retired_flying_dutchman_future_uuid":"-8042687935771622605",
- "remote_queue_audit":{
-  "from_date":"2026-09-20","through_date":"2026-09-30","active_categories":[],"active_logical_posts":0,"active_posts_per_network":0,"active_legacy_standalone_posts":0,"active_dog_posts":0,"active_flying_dutchman_posts":0,
-  "method":"The fullreset19Septemberauditconfirmedzeroactiveoldqueue.20Septemberactivationreads00:00-11:59:59and16:30-18:05confirmedonlydrafts,no08:00/11:00V2carouselsandoldBloodFallsdraft. ThisisNOTa freshwholemonthaudit; Gate mustreconcilefullcurrentqueuebeforecreate.","last_full_audit_date":"2026-09-19","partial_check_date":"2026-09-20"
- },
- "scheduler":{"name":"Approval Gate","automation_id":"6aae233f15c0819193862001fcc5313a","enabled":true,"activated_at":"2026-09-20T06:31:39+03:00","first_run_local":"2026-09-20T06:55:00+03:00","cadence":"hourly"},
- "workers":{"preparation":{"id":"6aae4703011c8191b1ddefbeb25c24fe","enabled":true,"local_times":["06:35","19:35"]},"sourcing":{"id":"6aae259c36948191b37fb1fad93d9fe2","enabled":true,"cadence":"hourly","first_run_local":"2026-09-20T06:40:00+03:00"},"assembly":{"id":"6aae2eff6dc8819186a921d2dde4ad8e","enabled":true,"cadence":"hourly","first_run_local":"2026-09-20T06:45:00+03:00"},"health":{"id":"6aae1e8990e08191a339d31a2c6309eb","enabled":true,"cadence":"hourly","first_run_local":"2026-09-20T07:05:00+03:00"},"weekly_planner":{"id":"6aae23798d348191acb484169fbaf28e","enabled":true,"schedule":"Sunday19:00approximately"},"progress_updates":{"id":"6aad8088af2c8191a912e22b8b2493e8","enabled":true,"cadence":"hourly","first_run_local":"2026-09-20T07:15:00+03:00","notify_only_material_change":true}},
- "hold_rule":"Explicit20Septemberactivation releases historicalFULL_QUEUE_RESET_HOLD/IN_PROGRESS onlyfornewFOUR_DAILY_V2. MastercurrentstatusACTIVE_NEW_PROGRAM. Oldcancelledentriesneverbulkrestored;lateruserstopwins. Actualmedia/QA/limitsstillmandatory. Missedslotsnotbackdatedorrepostedascatchup.",
- "network_capacity_policy":"Readcurrentprovidererrors,rolling24hattemptsandcooldownsbeforeeachschedulingwrite. Nomidnightresetassumption. Exact08:00/11:00/17:00/23:00;blockedslotsreported,nounapprovedtimeretiming.",
- "historical_state_blob_shas":["27067cc583ffc83bc29a23949d30b308cf23f67b","a77b53ddd22cb9f60e7960c9ae2d4aad47f86c0c"],
- "history_policy":"HistoricalsnapshotsretainedinGithistoryonly.queue/completed.jsonandstate/content_history.jsonunchanged."
+  "version": 5,
+  "timezone": "Europe/Athens",
+  "start_date": "2026-09-20",
+  "current_cycle_date": "2026-09-20",
+  "current_theme": "all_four_every_day_with_date_specific_zodiac_override",
+  "current_strategy": "FOUR_DAILY_V2",
+  "current_status": "ACTIVE_PREPARING",
+  "status": "active",
+  "publishing_paused": false,
+  "target_count": 4,
+  "completed_count": 0,
+  "scheduled_count": 1,
+  "prepared_count": null,
+  "generating_count": null,
+  "partially_published_count": 0,
+  "count_basis": "FOUR_DAILY_V2 remains the base strategy, but the latest explicit 20/09/2026 07:36 user override controls zodiac/emotional timing on20-21September. Group A/B zodiac packages require final preview and a new explicit user OK before any upload. Emotional posts have no authorized replacement time on those two dates and are left unscheduled. Scheduled count here reflects only the currently verified phenomenon logical post, not draft-disabled entries.",
+  "last_completed_theme": null,
+  "next_theme_after_completion": "all_four_every_day_with_date_specific_zodiac_override",
+  "next_cycle_date": "2026-09-21",
+  "next_theme": "all_four_every_day_with_date_specific_zodiac_override",
+  "next_target_count": 4,
+  "next_prepared_count": null,
+  "next_generating_count": null,
+  "next_scheduled_count": 0,
+  "last_reconciled_date": "2026-09-20",
+  "daily_categories": ["zodiac_carousel", "emotional_story_carousel", "phenomenon_video", "legend_video"],
+  "default_daily_slots_local": ["08:00", "11:00", "17:00", "23:00"],
+  "alternating_days": false,
+  "weekly_introduction_enabled": false,
+  "dog_video_enabled": false,
+  "legacy_recovery_enabled": false,
+  "latest_zodiac_override": {
+    "issued_at": "2026-09-20T07:36:00+03:00",
+    "approval_first": true,
+    "preview_required_before_upload": true,
+    "prior_standing_authorization_is_not_final_media_approval": true,
+    "2026-09-20": {
+      "group": "A",
+      "signs": ["Κριός", "Ταύρος", "Δίδυμοι", "Καρκίνος", "Λέων", "Παρθένος"],
+      "time": "11:00",
+      "old_08_slot_superseded": true,
+      "emotional_11_unscheduled": true
+    },
+    "2026-09-21": {
+      "group": "B",
+      "signs": ["Ζυγός", "Σκορπιός", "Τοξότης", "Αιγόκερως", "Υδροχόος", "Ιχθύες"],
+      "time": "11:00",
+      "old_08_slot_superseded": true,
+      "emotional_11_unscheduled": true
+    },
+    "format": "One logical post per platform: native six-image carousel where supported, otherwise one ~30s slideshow using the exact same six images/order, approximately4.8s/image with short transitions.",
+    "audio": "Same approved original/no-cost rights-cleared music bed where the actual route supports it; no narration/TTS/avatar and no second audio layer.",
+    "deadline_rule": "No backdating or catch-up. If final media/QA/user preview approval is not complete by the exact11:00 deadline, report missed/blocked and do not dump later."
+  },
+  "new_media_pending": ["zodiac_group_a_slideshow_variant", "zodiac_group_b_slideshow_variant", "legend_video"],
+  "existing_phenomena_status": "Existing unpublished20-30September files may supply matching NEW V2 category3 at17:00 after QA/history check without paid regeneration. Old cancelled UUIDs stay draft. 20/09 Blood Falls new V2 replacement is already scheduled and verified in the durable ledger.",
+  "category_state_2026_09_20": {
+    "zodiac_carousel": {
+      "cards": 6,
+      "group": "A",
+      "signs": ["Κριός", "Ταύρος", "Δίδυμοι", "Καρκίνος", "Λέων", "Παρθένος"],
+      "logical_posts": 1,
+      "time": "11:00",
+      "status": "PREPARING_FINAL_VARIANT_PREVIEW_REQUIRED",
+      "source_batch": "8dbc85d611c380cb",
+      "logical_slot_id": "3e1f2345-b318-81dc-9cc5-d62e4e688ab7",
+      "old_metricool_uuid": "4721466792441563808",
+      "old_08_status": "DRAFT_DISABLED_BEFORE_DEADLINE"
+    },
+    "emotional_story_carousel": {
+      "cards": 5,
+      "logical_posts": 1,
+      "time": null,
+      "status": "UNSCHEDULED_BY_USER_OVERRIDE",
+      "metricool_uuids": ["-4577486680781470917", "-3828656645317246302"],
+      "metricool_status": "DRAFT_DISABLED"
+    },
+    "phenomenon_video": {
+      "time": "17:00",
+      "status": "SCHEDULED_VERIFIED",
+      "title": "Blood Falls",
+      "new_metricool_uuid": "4177466536332641613"
+    },
+    "legend_video": {
+      "time": "23:00",
+      "status": "BLOCKED_MEDIA_NOT_READY",
+      "forbidden_story": "Flying Dutchman"
+    }
+  },
+  "category_state_2026_09_21": {
+    "zodiac_carousel": {
+      "cards": 6,
+      "group": "B",
+      "signs": ["Ζυγός", "Σκορπιός", "Τοξότης", "Αιγόκερως", "Υδροχόος", "Ιχθύες"],
+      "logical_posts": 1,
+      "time": "11:00",
+      "status": "PREPARING_FINAL_VARIANT_PREVIEW_REQUIRED",
+      "source_batch": "8dbc85d611c380cb",
+      "logical_slot_id": "3e1f2345-b318-81df-aa0b-fd7a26aa1e30"
+    },
+    "emotional_story_carousel": {
+      "time": null,
+      "status": "UNSCHEDULED_BY_USER_OVERRIDE"
+    }
+  },
+  "retired_dog_metricool_uuids": ["7486346641732224351", "6234574211891284294", "4952065135289714308"],
+  "retired_flying_dutchman_future_uuid": "-8042687935771622605",
+  "remote_queue_audit": {
+    "last_check_date": "2026-09-20",
+    "old_08_zodiac_facebook_uuid": "4721466792441563808",
+    "old_08_zodiac_status": "DRAFT_DISABLED",
+    "old_11_emotional_uuids": ["-4577486680781470917", "-3828656645317246302"],
+    "old_11_emotional_status": "DRAFT_DISABLED",
+    "new_zodiac_11_status": "NOT_CREATED_PENDING_FINAL_PREVIEW_APPROVAL",
+    "rule": "Fresh queue read immediately before any future write. No duplicate create or legacy restoration."
+  },
+  "scheduler": {
+    "name": "Approval Gate",
+    "automation_id": "6aae233f15c0819193862001fcc5313a",
+    "enabled": true,
+    "activated_at": "2026-09-20T06:31:39+03:00",
+    "cadence": "hourly"
+  },
+  "workers": {
+    "preparation": {"id": "6aae4703011c8191b1ddefbeb25c24fe", "enabled": true, "local_times": ["06:35", "19:35"]},
+    "sourcing": {"id": "6aae259c36948191b37fb1fad93d9fe2", "enabled": true, "cadence": "hourly"},
+    "assembly": {"id": "6aae2eff6dc8819186a921d2dde4ad8e", "enabled": true, "cadence": "hourly"},
+    "health": {"id": "6aae1e8990e08191a339d31a2c6309eb", "enabled": true, "cadence": "hourly"},
+    "weekly_planner": {"id": "6aae23798d348191acb484169fbaf28e", "enabled": true, "schedule": "Sunday19:00approximately"},
+    "progress_updates": {"id": "6aad8088af2c8191a912e22b8b2493e8", "enabled": true, "cadence": "hourly", "notify_only_material_change": true}
+  },
+  "hold_rule": "Latest user instruction wins. Historical FULL_QUEUE_RESET_HOLD stays released only for eligible new FOUR_DAILY_V2 work; old cancelled entries never bulk restore. The new approval-first zodiac override blocks zodiac uploads until a new explicit preview OK, even though routine standing authorization remains active for other eligible categories.",
+  "network_capacity_policy": "Read current provider errors, rolling24h attempts and cooldowns before each scheduling write. No midnight-reset assumption. Date-specific exact times override defaults. Blocked/missed slots are reported, not retimed without user authorization.",
+  "history_policy": "Historical snapshots remain audit-only. Published content is not modified."
 }
