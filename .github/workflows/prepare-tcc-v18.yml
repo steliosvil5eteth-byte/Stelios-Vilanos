@@ -1,0 +1,43 @@
+name: Prepare Trading Control Center v1.8 source
+
+on:
+  push:
+    paths:
+      - 'deployment/trading-control-center-v1.8.b64'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  prepare-source:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Decode and unpack v1.8
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf trading-control-center-app
+          mkdir -p trading-control-center-app
+          base64 -d deployment/trading-control-center-v1.8.b64 > /tmp/trading-control-center-v1.8.zip
+          unzip -q /tmp/trading-control-center-v1.8.zip -d trading-control-center-app
+          test -f trading-control-center-app/package.json
+          test -f trading-control-center-app/vercel.json
+          test -f trading-control-center-app/api/health.js
+
+      - name: Commit prepared source
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add trading-control-center-app
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Prepare Trading Control Center v1.8 source for Vercel"
+            git push
+          fi
