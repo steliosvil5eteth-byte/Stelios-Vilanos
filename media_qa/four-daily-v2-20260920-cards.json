@@ -1,0 +1,55 @@
+{
+  "strategy_id": "FOUR_DAILY_V2",
+  "local_date": "2026-09-20",
+  "render_run_id": 35487120114,
+  "batch_id": "8dbc85d611c380cb",
+  "paid_ai_credits_used": 0,
+  "authorization": "Standing user authorization; actual deterministic internal QA, not user review.",
+  "zodiac_0800": {
+    "logical_slot": "3e1f2345-b318-81dc-9cc5-d62e4e688ab7",
+    "card_count": 12,
+    "order": ["Κριός","Ταύρος","Δίδυμοι","Καρκίνος","Λέων","Παρθένος","Ζυγός","Σκορπιός","Τοξότης","Αιγόκερως","Υδροχόος","Ιχθύες"],
+    "cards": [
+      "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/8dbc85d611c380cb/v2-20260920-zodiac-12-01.jpg",
+      "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/8dbc85d611c380cb/v2-20260920-zodiac-12-02.jpg",
+      "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/8dbc85d611c380cb/v2-20260920-zodiac-12-03.jpg",
+      "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/8dbc85d611c380cb/v2-20260920-zodiac-12-04.jpg",
+      "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/8dbc85d611c380cb/v2-20260920-zodiac-12-05.jpg",
+      "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/8dbc85d611c380cb/v2-20260920-zodiac-12-06.jpg",
+      "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/8dbc85d611c380cb/v2-20260920-zodiac-12-07.jpg",
+      "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/8dbc85d611c380cb/v2-20260920-zodiac-12-08.jpg",
+      "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/8dbc85d611c380cb/v2-20260920-zodiac-12-09.jpg",
+      "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/8dbc85d611c380cb/v2-20260920-zodiac-12-10.jpg",
+      "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/8dbc85d611c380cb/v2-20260920-zodiac-12-11.jpg",
+      "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/8dbc85d611c380cb/v2-20260920-zodiac-12-12.jpg"
+    ],
+    "youtube_slideshow": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/8dbc85d611c380cb/v2-20260920-zodiac-12.mp4",
+    "youtube_duration_sec": 60.0,
+    "youtube_sha256": "607beccfd36c4f87386fa0c181b92f05bd186b6379cfc6e64783c18fdfc303dd",
+    "music": "embedded original local synth; no external catalog; no narration",
+    "qa": {"order_verified": true, "minimum_text_px": 30, "cta_on_every_card": true},
+    "provider_guard": {
+      "instagram": "BLOCKED: current Metricool maximum 10 images; V2 requires one full 12-card carousel. Do not split/drop/substitute.",
+      "facebook": "Needs exact single-post multi-image semantics verification before scheduling.",
+      "tiktok": "Card count fits known Metricool/TikTok photo-post capacity; Gate must still verify live account/rolling capacity.",
+      "youtube": "Use complete 12-card slideshow; Gate must verify live account/rolling capacity."
+    }
+  },
+  "emotional_1100": {
+    "logical_slot": "3e1f2345-b318-811b-909f-f8aa27a48e0d",
+    "card_count": 5,
+    "cards": [
+      "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/8dbc85d611c380cb/v2-20260920-emotional-5-01.jpg",
+      "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/8dbc85d611c380cb/v2-20260920-emotional-5-02.jpg",
+      "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/8dbc85d611c380cb/v2-20260920-emotional-5-03.jpg",
+      "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/8dbc85d611c380cb/v2-20260920-emotional-5-04.jpg",
+      "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/8dbc85d611c380cb/v2-20260920-emotional-5-05.jpg"
+    ],
+    "youtube_slideshow": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/8dbc85d611c380cb/v2-20260920-emotional-5.mp4",
+    "youtube_duration_sec": 35.0,
+    "youtube_sha256": "a70c8c2d8a3c30786cff299257696e5383b00618d7b795baaf90dfb24dce01d2",
+    "music": "embedded original local synth; no external catalog; no narration",
+    "qa": {"order_verified": true, "minimum_text_px": 30, "cta_on_every_card": true, "connected_story": true},
+    "provider_guard": "Five cards fit known TikTok and Instagram image-count limits; Gate must verify exact destination format and current live account/rolling capacity before scheduling."
+  }
+}
