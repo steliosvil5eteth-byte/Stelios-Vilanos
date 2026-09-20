@@ -1,0 +1,65 @@
+name: TikTok emotional JPEG fix 2026-09-20
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/tiktok-emotional-jpeg-fix.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  convert:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install image tools
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq python3-pil
+      - name: Convert the exact approved cards from PNG to JPEG
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          from urllib.request import Request, urlopen
+          from PIL import Image
+          urls = [
+            "https://static.metricool.com/planner/202609/7000636-file-17563699960261578534.png",
+            "https://static.metricool.com/planner/202609/7000636-file-15577877137013105134.png",
+            "https://static.metricool.com/planner/202609/7000636-file-15897771707390029173.png",
+            "https://static.metricool.com/planner/202609/7000636-file-9220382612809355704.png",
+            "https://static.metricool.com/planner/202609/7000636-file-727688414554810469.png",
+          ]
+          out = Path("/tmp/fix")
+          out.mkdir(parents=True, exist_ok=True)
+          for i, url in enumerate(urls, 1):
+              req = Request(url, headers={"User-Agent":"Mozilla/5.0"})
+              data = urlopen(req, timeout=60).read()
+              src = out / f"card-{i}.png"
+              src.write_bytes(data)
+              im = Image.open(src).convert("RGB")
+              dst = out / f"card-{i}.jpg"
+              im.save(dst, "JPEG", quality=96, subsampling=0)
+              if not dst.exists() or dst.stat().st_size == 0:
+                  raise RuntimeError(f"missing output {dst}")
+          PY
+      - name: Store converted cards on media-output
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/media-output-repo"
+          if git fetch origin media-output --depth=1; then
+            git worktree add --detach "$OUT" FETCH_HEAD
+          else
+            git worktree add --detach "$OUT" "$GITHUB_SHA"
+            git -C "$OUT" checkout --orphan media-output
+            git -C "$OUT" rm -rf .
+          fi
+          mkdir -p "$OUT/jobs/tiktok-emotional-20260920-fix"
+          cp /tmp/fix/card-*.jpg "$OUT/jobs/tiktok-emotional-20260920-fix/"
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/tiktok-emotional-20260920-fix
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Convert exact 2026-09-20 emotional cards to JPEG for TikTok'
+            git -C "$OUT" push origin HEAD:media-output
+          fi
