@@ -1,0 +1,13 @@
+{
+  "name": "trading-control-center",
+  "version": "1.4.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "readiness": "node scripts/production-readiness.mjs"
+  },
+  "dependencies": {
+    "postgres": "^3.4.7"
+  }
+}
