@@ -1,7 +1,7 @@
 {
-  "version": 17,
+  "version": 18,
   "timezone": "Europe/Athens",
-  "strategy_id": "FOUR_DAILY_V1",
+  "strategy_id": "FOUR_DAILY_V2",
   "effective_date": "2026-09-20",
   "priority": "AUTHORITATIVE_LATEST_USER_STRATEGY",
   "legacy_pipeline": {
@@ -23,16 +23,16 @@
   "publishing": {
     "networks": ["facebook", "instagram", "tiktok", "youtube"],
     "autopublish": true,
-    "slots_local_time": ["12:30", "15:20", "18:00", "21:40"],
+    "slots_local_time": ["08:00", "11:00", "17:00", "23:00"],
     "schedule_effective_date": "2026-09-20",
     "caption_language": "el",
     "hashtags_per_post": 5,
-    "schedule_rule": "Implementation defaults reuse prior time slots, not a claim of a newly user-selected timetable. Publish only within 12:30-23:30, after real QA and current provider/account and rolling-24-hour capacity checks. These are four logical posts per platform, not twelve or five separate card posts."
+    "schedule_rule": "Explicit user-selected DAILY timetable from 20 September 2026: zodiac08:00, emotional story11:00, phenomenon17:00, legend23:00 Europe/Athens. Supersedes old noon-only window and prior default times. Schedule only after actual QA and current provider/account and rolling24h capacity checks. Four logical posts per platform, not twelve or five separate card posts. No backdating, burst catch-up or unapproved time changes: report blocked/missed slots."
   },
   "workflow": {
     "ask_for_confirmation_before_generation": false,
     "ask_for_confirmation_before_publishing": false,
-    "authorization_basis": "Standing user authorization for routine daily preparation and internal QA; never claim personal user review of unseen media.",
+    "authorization_basis": "20 September user explicitly requests activation today and progress updates. Standing authorization covers routine daily preparation and internal QA; never claim personal user review of unseen media.",
     "generate_title_caption_hashtags_automatically": true,
     "quality_check_every_video": true,
     "archive_every_video_in_github": true,
@@ -42,7 +42,8 @@
     "paid_feature_renderer": "Visual Story Assembly",
     "master_notion_page_id": "3e0f2345-b318-81c0-9e1c-e8b4b7d19e9d",
     "audio_qa_notion_page_id": "3e0f2345-b318-818f-9508-d00ec0269dec",
-    "migration_hold_rule": "Do not schedule or recreate work while the master migration status is IN_PROGRESS or an obsolete active queue remains. A policy update is not proof of ready media, scheduling or publication."
+    "migration_status": "ACTIVE_NEW_PROGRAM",
+    "migration_hold_rule": "The new explicit20September activation releases the historical IN_PROGRESS/FULL_QUEUE_RESET_HOLD for FOUR_DAILY_V2 only. Old cancelled UUIDs remain retired drafts. No bulk restoration. Any future user stop overrides this release. A policy update is not proof of ready media, scheduling or publication."
   },
   "originality_rules": {
     "minimum_days_before_reusing_same_core_angle": 60,
@@ -69,13 +70,13 @@
       "Use comparable actual metrics and distinguish missing data from zero.",
       "Learn from strong hooks and retention without copying old scripts or near-duplicate stories.",
       "Do not overfit to a single viral outlier or claim guaranteed growth or monetization.",
-      "The weekly planner may refine themes but must not alter the four daily categories, counts or requested formats without a new user instruction."
+      "The weekly planner may refine themes but must not alter the four daily categories, counts, user-selected times or requested formats without a new user instruction."
     ],
     "next_week_mix": {"proven_pattern_share": 0.7, "new_experiment_share": 0.3},
     "apply_findings_automatically": true
   },
   "current_strategy": {
-    "strategy_id": "FOUR_DAILY_V1",
+    "strategy_id": "FOUR_DAILY_V2",
     "effective_date": "2026-09-20",
     "timezone": "Europe/Athens",
     "priority": "AUTHORITATIVE_LATEST_USER_STRATEGY",
@@ -85,31 +86,21 @@
     "alternating_daily_posts": {"enabled": false, "rule": "Both carousels occur EVERY DAY, never on alternating days."},
     "daily_posts": [
       {
-        "category": "zodiac_carousel",
-        "count": 1,
-        "cards": 12,
-        "preferred_time": "12:30",
+        "category": "zodiac_carousel", "count": 1, "cards": 12, "preferred_time": "08:00",
         "order": ["Κριός", "Ταύρος", "Δίδυμοι", "Καρκίνος", "Λέων", "Παρθένος", "Ζυγός", "Σκορπιός", "Τοξότης", "Αιγόκερως", "Υδροχόος", "Ιχθύες"],
         "rule": "One native carousel containing one card for each of all twelve signs. Never publish signs separately or split into six-sign groups. Check actual series continuity per platform, avoid repeats, and do not invent additional parts of completed series."
       },
       {
-        "category": "emotional_story_carousel",
-        "count": 1,
-        "cards": 5,
-        "preferred_time": "15:20",
+        "category": "emotional_story_carousel", "count": 1, "cards": 5, "preferred_time": "11:00",
         "themes": ["αγάπη", "έρωτας", "χωρισμός", "ψυχή"],
         "rule": "ONE coherent story in FIVE ordered connected cards, not five independent posts or unrelated quotations. A genuinely new opening, hook, characters, situation, phrasing, progression, turning point and ending each day. Compare actual history, not titles alone."
       },
       {
-        "category": "phenomenon_video",
-        "count": 1,
-        "preferred_time": "18:00",
-        "rule": "One fact-checked narrated unusual-phenomenon video. Preserve the actual existing unique media and queue entries for 20-30 September 2026; do not regenerate or duplicate them. From 1 October create one new original phenomenon video daily."
+        "category": "phenomenon_video", "count": 1, "preferred_time": "17:00",
+        "rule": "One fact-checked narrated unusual-phenomenon video. Reuse actual existing unique unpublished media for20-30September, not paid regeneration. Old cancelled queue UUIDs remain draft because they belong to the deletion request. Register ONE new V2 entry for the matching date at17:00 after checking history, no other active new entry and real QA. Reconcile unknown create responses, never duplicate. From1October create one new original phenomenon video daily."
       },
       {
-        "category": "legend_video",
-        "count": 1,
-        "preferred_time": "21:40",
+        "category": "legend_video", "count": 1, "preferred_time": "23:00",
         "duration_target_seconds": {"min": 75, "max": 120},
         "rule": "One original narrated video about one different legend each day, clearly labelled folklore rather than proven supernatural fact. The Flying Dutchman is already published and excluded from all new scheduling and regeneration."
       }
@@ -124,10 +115,7 @@
       "native_carousel_support": "Verify the current connected API supports the required card count and requested format before submission. If unsupported, mark that platform blocked; never silently drop cards, split into extra posts or substitute a different format."
     },
     "narrated_video_quality": {
-      "aspect_ratio": "9:16",
-      "resolution": "1080x1920",
-      "no_avatar": true,
-      "language": "el",
+      "aspect_ratio": "9:16", "resolution": "1080x1920", "no_avatar": true, "language": "el",
       "narration": "Natural approved Greek voice over relevant lawful imagery.",
       "subtitles": "Readable burned-in synchronized Greek subtitles covering the full narration.",
       "ending": "Immediate spoken and written CTA, without a long silent gap.",
@@ -136,12 +124,7 @@
     },
     "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
     "dog_video": {
-      "status": "disabled",
-      "publish": false,
-      "generate": false,
-      "schedule": false,
-      "retry": false,
-      "restore": false,
+      "status": "disabled", "publish": false, "generate": false, "schedule": false, "retry": false, "restore": false,
       "excluded_metricool_uuids": ["7486346641732224351", "6234574211891284294", "4952065135289714308"],
       "rule": "All dog/barista/terrier videos are removed from active production and publishing. Never revive an old dog draft or substitute another dog video."
     },
@@ -159,7 +142,7 @@
         "published_date": "2026-09-19",
         "published_metricool_uuids": ["7639724372568328678", "814225112836948353"],
         "cancelled_future_uuid": "-8042687935771622605",
-        "rule": "No further scheduling, reactivation, production or variant of this already-published story. Do not treat the cancelled 20 September entry as a missing upload to recover."
+        "rule": "No further scheduling, reactivation, production or variant of this already-published story. Do not treat the cancelled20September entry as a missing upload to recover."
       }
     },
     "capacity_and_cost": {
@@ -174,14 +157,11 @@
       "credit_reserve_target": 10,
       "rule": "Budget only genuinely new files after deducting ready/in-progress work and reservations. Unknown balances or costs are not zero and not permission to test pricing. Reuse the same two narrated masters across four platforms."
     },
-    "monetization_gate": {
-      "enabled": true,
-      "rule": "Check rights, originality and actual platform requirements. Never promise eligibility or earnings from follower/view thresholds alone."
-    },
+    "monetization_gate": {"enabled": true, "rule": "Check rights, originality and actual platform requirements. Never promise eligibility or earnings from follower/view thresholds alone."},
     "publishing": {
-      "autopublish": true,
-      "start": "2026-09-20",
-      "rule": "Prospective four-category daily program only. Cancel obsolete standalone-card entries before creating replacements. Draft status cancels publishing but is not permanent deletion of the remote file or a published post. Scheduled is not Published."
-    }
+      "autopublish": true, "start": "2026-09-20", "slots_local_time": ["08:00", "11:00", "17:00", "23:00"],
+      "rule": "Only the newly authorized four-category daily program is active. Old cancelled queue stays inactive. Draft cancellation is not permanent deletion. Real QA and publication evidence are required. Scheduled is not Published."
+    },
+    "progress_updates": {"enabled": true, "language": "el", "check_cadence": "hourly", "notify_on": ["new ready package", "verified scheduling", "provider-confirmed publication", "new failure or blocker", "recovery"], "suppress_unchanged": true}
   }
 }
