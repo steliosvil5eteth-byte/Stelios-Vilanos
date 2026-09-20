@@ -2,7 +2,8 @@ import {getJson,setJson} from './store.js';
 import {dbPing} from './db.js';
 import {emailConfig,sendEmail} from './email.js';
 import {billingConfig} from './billing.js';
-import {marketDataConfig} from './market-data.js';\nimport {getSafetyState} from './safety.js';
+import {marketDataConfig} from './market-data.js';
+import {getSafetyState} from './safety.js';
 const KEY='tcc:monitoring:events';
 export async function systemSnapshot(){const database=await dbPing(),email=emailConfig(),billing=billingConfig(),marketData=marketDataConfig(),safety=await getSafetyState();const warnings=[];if(process.env.NODE_ENV==='production'&&!database.configured)warnings.push('DATABASE_URL not configured');if(process.env.NODE_ENV==='production'&&!email.configured)warnings.push('Transactional email not configured');if(process.env.NODE_ENV==='production'&&!marketData.alphaConfigured&&!marketData.twelveConfigured)warnings.push('No market-data provider configured');if(billing.mode!=='disabled'&&!billing.enabled)warnings.push('Billing mode configured but Stripe test safety checks failed');return {ts:new Date().toISOString(),database,email:{mode:email.mode,configured:email.configured},billing:{mode:billing.mode,enabled:billing.enabled,testMode:billing.testMode},marketData,safety,paperOnly:true,liveExecution:false,warnings,ok:database.configured?database.ok&&warnings.length===0:warnings.length===0}}
 export async function recordMonitoringEvent({severity='info',type='SYSTEM_CHECK',detail=''}={}){const rows=(await getJson(KEY))||[];const row={ts:new Date().toISOString(),severity:String(severity).slice(0,20),type:String(type).slice(0,60),detail:String(detail).slice(0,500)};rows.unshift(row);await setJson(KEY,rows.slice(0,500));return row}
