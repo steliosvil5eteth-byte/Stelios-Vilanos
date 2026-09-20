@@ -2,7 +2,9 @@ import {getScanRuns,runServerScan} from './_lib/scan-runner.js';
 import {persistentStoreConfigured} from './_lib/store.js';
 import {requireAccount} from './_lib/access.js';
 import {entitlements} from './_lib/plans.js';
-import {consumeUsage} from './_lib/usage.js';\nimport {normalizeSymbols} from './_lib/schema.js';\nimport {requestId} from './_lib/request-trace.js';
+import {consumeUsage} from './_lib/usage.js';
+import {normalizeSymbols} from './_lib/schema.js';
+import {requestId} from './_lib/request-trace.js';
 export default async function handler(req,res){
   try{
     const rid=requestId(req,res);const account=await requireAccount(req);const e=entitlements(account.plan);
