@@ -1,0 +1,2 @@
+import {runHealthMonitor} from '../_lib/monitoring.js';
+export default async function handler(req,res){const auth=String(req.headers.authorization||''),secret=String(process.env.CRON_SECRET||'');if(!secret||auth!==`Bearer ${secret}`)return res.status(401).json({error:'Unauthorized'});try{return res.status(200).json(await runHealthMonitor())}catch(e){return res.status(500).json({error:e.message})}}
