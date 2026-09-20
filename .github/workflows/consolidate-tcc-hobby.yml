@@ -1,0 +1,114 @@
+name: Consolidate Trading Control Center for Vercel Hobby
+
+on:
+  push:
+    paths:
+      - 'deployment/tcc-hobby-refactor-trigger.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  consolidate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Consolidate API into one Vercel function
+        shell: bash
+        run: |
+          set -euo pipefail
+          python - <<'PY'
+          from pathlib import Path
+          import shutil, json, re
+
+          root = Path('trading-control-center-app')
+          api = root / 'api'
+          server_api = root / 'server' / 'api'
+
+          if not server_api.exists():
+              server_api.parent.mkdir(parents=True, exist_ok=True)
+              shutil.move(str(api), str(server_api))
+          else:
+              # Refactor is idempotent: keep existing server copy and rebuild public api dir.
+              if api.exists():
+                  shutil.rmtree(api)
+
+          api.mkdir(parents=True, exist_ok=True)
+
+          route_files = []
+          for p in sorted(server_api.rglob('*.js')):
+              rel = p.relative_to(server_api)
+              if any(part.startswith('_') for part in rel.parts):
+                  continue
+              route_files.append(rel)
+
+          imports = []
+          entries = []
+          for i, rel in enumerate(route_files):
+              var = f'h{i}'
+              spec = '../server/api/' + rel.as_posix()
+              key = rel.with_suffix('').as_posix()
+              imports.append(f"import {var} from '{spec}';")
+              entries.append(f"  ['{key}', {var}],")
+
+          router = "\n".join(imports) + """
+          
+          const routes = new Map([
+          """ + "\n".join(entries) + """
+          ]);
+
+          function normalizeRoute(value){
+            if(Array.isArray(value)) value=value.join('/');
+            return decodeURIComponent(String(value||'')).replace(/^\\/+|\\/+$/g,'');
+          }
+
+          export default async function handler(req,res){
+            const key=normalizeRoute(req.query?.__route);
+            const fn=routes.get(key);
+            if(!fn) return res.status(404).json({error:'Not found',route:key});
+            if(req.query && Object.prototype.hasOwnProperty.call(req.query,'__route')) delete req.query.__route;
+            return fn(req,res);
+          }
+          """
+          (api / 'router.js').write_text(router, encoding='utf-8')
+
+          # Update test imports after moving implementation outside /api.
+          for p in (root / 'scripts').glob('*.mjs'):
+              s=p.read_text(encoding='utf-8')
+              s=s.replace("../api/", "../server/api/")
+              if p.name == 'validate.mjs':
+                  s=s.replace("for(const f of walk('api').filter(x=>x.endsWith('.js')))",
+                              "for(const f of [...walk('api'),...walk('server/api')].filter(x=>x.endsWith('.js')))")
+              p.write_text(s,encoding='utf-8')
+
+          vc_path=root/'vercel.json'
+          vc=json.loads(vc_path.read_text(encoding='utf-8'))
+          vc.pop('crons',None)
+          vc['rewrites']=[{'source':'/api/:path*','destination':'/api/router?__route=:path*'}]
+          vc_path.write_text(json.dumps(vc,indent=2,ensure_ascii=False)+'\n',encoding='utf-8')
+
+          print(f'Consolidated {len(route_files)} API routes into api/router.js')
+          PY
+
+      - name: Validate application
+        working-directory: trading-control-center-app
+        run: |
+          npm install
+          npm run validate
+
+      - name: Commit refactor
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add trading-control-center-app
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Consolidate TCC API for Vercel Hobby function limit"
+            git push
+          fi
