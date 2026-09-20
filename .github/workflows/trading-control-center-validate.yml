@@ -3,11 +3,15 @@ on:
   push:
     paths:
       - 'trading-control-center/v1.4/**'
+      - 'trading-control-center/DEPLOYMENT-CHECKLIST.md'
       - '.github/workflows/trading-control-center-validate.yml'
+      - '.github/workflows/trading-control-center-deploy.yml'
   pull_request:
     paths:
       - 'trading-control-center/v1.4/**'
+      - 'trading-control-center/DEPLOYMENT-CHECKLIST.md'
       - '.github/workflows/trading-control-center-validate.yml'
+      - '.github/workflows/trading-control-center-deploy.yml'
 jobs:
   validate:
     runs-on: ubuntu-latest
