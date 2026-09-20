@@ -1,0 +1,47 @@
+{
+  "strategy_id": "FOUR_DAILY_V2",
+  "timezone": "Europe/Athens",
+  "updated_at": "2026-09-20T07:19:49+03:00",
+  "entries": {
+    "2026-09-20|zodiac_carousel|facebook": {
+      "logical_slot_id": "3e1f2345-b318-81dc-9cc5-d62e4e688ab7",
+      "scheduled_time": "2026-09-20T08:00:00+03:00",
+      "title": "Μετά τον καβγά: τι χρειάζεται κάθε ζώδιο",
+      "content_fingerprint": "8dbc85d611c380cb0d884ee4580a0244a9b646e364dfcb4805639d406d82f44c:zodiac-12",
+      "asset_batch": "8dbc85d611c380cb",
+      "claim_status": "CLAIMED",
+      "delivery_status": "PENDING_WRITE",
+      "evidence": "12-card deterministic render QA passed; Metricool official current format guide permits up to 35 Facebook images in one post; fresh provider history/live queue required immediately before create."
+    },
+    "2026-09-20|zodiac_carousel|instagram": {
+      "logical_slot_id": "3e1f2345-b318-81dc-9cc5-d62e4e688ab7",
+      "scheduled_time": "2026-09-20T08:00:00+03:00",
+      "title": "Μετά τον καβγά: τι χρειάζεται κάθε ζώδιο",
+      "content_fingerprint": "8dbc85d611c380cb0d884ee4580a0244a9b646e364dfcb4805639d406d82f44c:zodiac-12",
+      "asset_batch": "8dbc85d611c380cb",
+      "claim_status": "NOT_CLAIMED",
+      "delivery_status": "BLOCKED_FORMAT_LIMIT",
+      "evidence": "Current Metricool/Instagram API maximum is 10 carousel images; V2 requires exactly 12. No split, card drop, or silent format substitution authorized."
+    },
+    "2026-09-20|zodiac_carousel|tiktok": {
+      "logical_slot_id": "3e1f2345-b318-81dc-9cc5-d62e4e688ab7",
+      "scheduled_time": "2026-09-20T08:00:00+03:00",
+      "title": "Μετά τον καβγά: τι χρειάζεται κάθε ζώδιο",
+      "content_fingerprint": "8dbc85d611c380cb0d884ee4580a0244a9b646e364dfcb4805639d406d82f44c:zodiac-12",
+      "asset_batch": "8dbc85d611c380cb",
+      "claim_status": "NOT_CLAIMED",
+      "delivery_status": "DEFERRED_CAPACITY_UNPROVEN",
+      "evidence": "17 provider-confirmed TikTok publications fall inside the rolling 24h window at the 08:00 candidate; a prior account-specific OpenAPI too-many-posts error exists and no evidenced safe account threshold above 17 is available. No blind test."
+    },
+    "2026-09-20|zodiac_carousel|youtube": {
+      "logical_slot_id": "3e1f2345-b318-81dc-9cc5-d62e4e688ab7",
+      "scheduled_time": "2026-09-20T08:00:00+03:00",
+      "title": "Μετά τον καβγά: τι χρειάζεται κάθε ζώδιο",
+      "content_fingerprint": "8dbc85d611c380cb0d884ee4580a0244a9b646e364dfcb4805639d406d82f44c:zodiac-12",
+      "asset_batch": "8dbc85d611c380cb",
+      "claim_status": "NOT_CLAIMED",
+      "delivery_status": "BLOCKED_CAPACITY",
+      "evidence": "20 provider-confirmed YouTube publications fall inside the rolling 24h window at 08:00. Current Metricool guidance states 10/24h on free plans and 20/24h on paid plans, so an additional 08:00 upload would exceed even the documented paid-plan ceiling."
+    }
+  }
+}
