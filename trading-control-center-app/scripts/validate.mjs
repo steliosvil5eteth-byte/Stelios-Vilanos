@@ -1,0 +1,21 @@
+import {execFileSync} from 'node:child_process';
+import {readdirSync,readFileSync,writeFileSync,unlinkSync} from 'node:fs';
+import {join} from 'node:path';
+function walk(dir){return readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(join(dir,e.name)):[join(dir,e.name)])}
+for(const f of walk('api').filter(x=>x.endsWith('.js')))execFileSync(process.execPath,['--check',f],{stdio:'inherit'});
+const html=readFileSync('index.html','utf8'),js=html.split('<script>')[1]?.split('</script>')[0];if(!js)throw new Error('browser script missing');writeFileSync('.validate-browser.mjs',js);execFileSync(process.execPath,['--check','.validate-browser.mjs'],{stdio:'inherit'});unlinkSync('.validate-browser.mjs');
+for(const f of ['package.json','manifest.json','vercel.json'])JSON.parse(readFileSync(f,'utf8'));
+execFileSync(process.execPath,['scripts/model-smoke.mjs'],{stdio:'inherit'});
+execFileSync(process.execPath,['scripts/scanner-smoke.mjs'],{stdio:'inherit'});
+execFileSync(process.execPath,['scripts/portfolio-smoke.mjs'],{stdio:'inherit'});
+execFileSync(process.execPath,['scripts/commercial-smoke.mjs'],{stdio:'inherit'});
+execFileSync(process.execPath,['scripts/security-smoke.mjs'],{stdio:'inherit'});
+execFileSync(process.execPath,['scripts/v12-smoke.mjs'],{stdio:'inherit'});
+execFileSync(process.execPath,['scripts/v13-smoke.mjs'],{stdio:'inherit'});
+execFileSync(process.execPath,['scripts/v14-smoke.mjs'],{stdio:'inherit'});
+execFileSync(process.execPath,['scripts/v15-smoke.mjs'],{stdio:'inherit'});
+execFileSync(process.execPath,['scripts/v16-smoke.mjs'],{stdio:'inherit'});
+execFileSync(process.execPath,['scripts/v17-smoke.mjs'],{stdio:'inherit'});
+execFileSync(process.execPath,['scripts/v18-smoke.mjs'],{stdio:'inherit'});
+execFileSync(process.execPath,['scripts/api-smoke.mjs'],{stdio:'inherit'});
+console.log('validate: OK');

@@ -1,0 +1,6 @@
+import {requireAdmin} from '../_lib/access.js';
+import {getSafetyState,updateSafetyState} from '../_lib/safety.js';
+import {requestId} from '../_lib/request-trace.js';
+export default async function handler(req,res){
+  try{requestId(req,res);const a=await requireAdmin(req);if(req.method==='GET')return res.status(200).json({safety:await getSafetyState()});if(req.method==='PUT'){const s=await updateSafetyState(a.username,req.body||{});return res.status(200).json({ok:true,safety:s})}return res.status(405).json({error:'GET or PUT only'})}catch(e){return res.status(e.status||500).json({error:e.message,code:e.code,safety:e.safety})}
+}

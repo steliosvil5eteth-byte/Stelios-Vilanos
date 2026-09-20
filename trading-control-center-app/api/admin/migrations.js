@@ -1,0 +1,6 @@
+import {requireAdmin} from '../_lib/access.js';
+import {getMaintenanceState} from '../_lib/maintenance.js';
+import {migrationStatus,runMigrations} from '../_lib/migrations.js';
+import {appendAudit} from '../_lib/store.js';
+import {requestId} from '../_lib/request-trace.js';
+export default async function handler(req,res){try{const rid=requestId(req,res);const a=await requireAdmin(req);if(req.method==='GET')return res.status(200).json({requestId:rid,status:await migrationStatus()});if(req.method==='POST'){const maintenance=await getMaintenanceState();if(!maintenance.enabled)return res.status(409).json({error:'Enable maintenance mode before running migrations',code:'MAINTENANCE_REQUIRED'});if(String(req.body?.confirm||'')!=='RUN MIGRATIONS')return res.status(400).json({error:'confirm must equal RUN MIGRATIONS'});const result=await runMigrations();await appendAudit(a.username,{ts:new Date().toISOString(),type:'MIGRATIONS_RUN',detail:`ran=${result.ran.map(x=>x.version).join(',')||'none'} final=${result.finalVersion} request=${rid}`});return res.status(200).json({ok:true,requestId:rid,result,status:await migrationStatus()})}return res.status(405).json({error:'GET or POST only'})}catch(e){return res.status(e.status||500).json({error:e.message,code:e.code})}}

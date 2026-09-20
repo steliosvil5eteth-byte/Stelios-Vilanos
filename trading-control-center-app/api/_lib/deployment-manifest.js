@@ -1,0 +1,7 @@
+import crypto from 'crypto';
+import {APP_VERSION,REQUIRED_SCHEMA_VERSION} from './release.js';
+import {getReleaseControl} from './release-control.js';
+import {getSafetyState} from './safety.js';
+import {getMaintenanceState} from './maintenance.js';
+function stable(v){if(v==null||typeof v!=='object')return v;if(Array.isArray(v))return v.map(stable);return Object.fromEntries(Object.keys(v).sort().map(k=>[k,stable(v[k])]))}
+export async function deploymentManifest(extra={}){const [release,safety,maintenance]=await Promise.all([getReleaseControl(),getSafetyState(),getMaintenanceState()]);const base={app:'Trading Control Center',version:APP_VERSION,requiredSchemaVersion:REQUIRED_SCHEMA_VERSION,generatedAt:new Date().toISOString(),paperOnly:true,liveExecution:false,release,safety:{paperExecutionAllowed:safety.paperExecutionAllowed,emergencyStop:safety.emergencyStop},maintenance:{enabled:maintenance.enabled},...extra};const canonical=JSON.stringify(stable(base)),sha256=crypto.createHash('sha256').update(canonical).digest('hex'),secret=String(process.env.RELEASE_MANIFEST_SECRET||'');const hmac=secret?crypto.createHmac('sha256',secret).update(canonical).digest('hex'):null;return {...base,sha256,hmacSigned:Boolean(hmac),hmac}}
