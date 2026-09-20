@@ -1,13 +1,14 @@
 {
   "name": "trading-control-center",
-  "version": "1.7.0",
+  "version": "1.8.0",
   "private": true,
   "type": "module",
   "scripts": {
     "validate": "node scripts/validate.mjs",
     "readiness": "node scripts/production-readiness.mjs",
     "preflight": "node scripts/preflight-smoke.mjs",
-    "release-check": "node scripts/release-check.mjs"
+    "release-check": "node scripts/release-check.mjs",
+    "ops-check": "node scripts/ops-check.mjs"
   },
   "dependencies": {
     "postgres": "^3.4.7"
