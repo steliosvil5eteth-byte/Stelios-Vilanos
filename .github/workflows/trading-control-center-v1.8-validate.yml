@@ -1,0 +1,28 @@
+name: Trading Control Center v1.8 Validate
+on:
+  push:
+    paths:
+      - 'trading-control-center/v1.8/**'
+      - '.github/workflows/trading-control-center-v1.8-validate.yml'
+      - '.github/workflows/trading-control-center-v1.8-deploy.yml'
+  pull_request:
+    paths:
+      - 'trading-control-center/v1.8/**'
+      - '.github/workflows/trading-control-center-v1.8-validate.yml'
+      - '.github/workflows/trading-control-center-v1.8-deploy.yml'
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: trading-control-center/v1.8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install --ignore-scripts
+      - run: npm run validate
+      - run: npm run preflight
+      - run: npm run release-check
+      - run: npm run ops-check
