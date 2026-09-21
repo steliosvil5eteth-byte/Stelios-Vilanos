@@ -1,0 +1,89 @@
+{
+  "local_date": "2026-09-22",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "v2-20260922-zodiac-group-a",
+      "status": "rendered",
+      "cards": [
+        {
+          "name": "v2-20260922-zodiac-group-a-01.jpg",
+          "bytes": 230148,
+          "sha256": "6e2c97c0972908050a1d8276c6e0d984a4530758012da36e00d475367b8ccf3e"
+        },
+        {
+          "name": "v2-20260922-zodiac-group-a-02.jpg",
+          "bytes": 239248,
+          "sha256": "7a9efc853d012c3f14cf3a92c075616debf7475db73c186165cf093836a03a0c"
+        },
+        {
+          "name": "v2-20260922-zodiac-group-a-03.jpg",
+          "bytes": 240702,
+          "sha256": "467d416d229ac5d42dc8460a3f8cd7d595e50808181de410e65f8b5762c22299"
+        },
+        {
+          "name": "v2-20260922-zodiac-group-a-04.jpg",
+          "bytes": 251824,
+          "sha256": "a58205fcd84d1ba270484743450756cf33797252d95187abc7e4a852024854d4"
+        },
+        {
+          "name": "v2-20260922-zodiac-group-a-05.jpg",
+          "bytes": 229956,
+          "sha256": "0ad2991d24adac9b28b3de997f7b4aae93f1157a8790cb41523d6afc022d65ee"
+        },
+        {
+          "name": "v2-20260922-zodiac-group-a-06.jpg",
+          "bytes": 229199,
+          "sha256": "cceae97782e2ca0899079e11031964887ce1ef215ef98c3301417be1dc4fe30a"
+        }
+      ],
+      "slideshow": {
+        "name": "v2-20260922-zodiac-group-a-slideshow.mp4",
+        "bytes": 950727,
+        "sha256": "4b8ce0d66cff98440e7921b55a15b1e67d97dfa28a6773702436774e93c99864"
+      },
+      "music_source": "original deterministic synthesis; no catalog/licensed third-party audio",
+      "visual_background": "illustrated scene, not text-only",
+      "cta_exact": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+    },
+    {
+      "id": "v2-20260922-emotional-5",
+      "status": "rendered",
+      "cards": [
+        {
+          "name": "v2-20260922-emotional-5-01.jpg",
+          "bytes": 139580,
+          "sha256": "cbeeff8c22dd94580b5a9c8d6ac8f7dddfee46901ea5c78c7d1b24047e66ea70"
+        },
+        {
+          "name": "v2-20260922-emotional-5-02.jpg",
+          "bytes": 185086,
+          "sha256": "0b75bd4cf83154daf008a2db14d90656582fc4be4d16f52f8371275097651e8c"
+        },
+        {
+          "name": "v2-20260922-emotional-5-03.jpg",
+          "bytes": 150318,
+          "sha256": "36ab1fbfe29d75db37ab3b99b989659ae1c2960c66097b464978678dd1a85b13"
+        },
+        {
+          "name": "v2-20260922-emotional-5-04.jpg",
+          "bytes": 150064,
+          "sha256": "a4d94e3674caaa9d16b9aa08c1f07ef694b5ee566f98f07af9dcdfb6a8d9ebec"
+        },
+        {
+          "name": "v2-20260922-emotional-5-05.jpg",
+          "bytes": 158444,
+          "sha256": "cd9612d67ea3300bc796fd0ef0ec0fa266dc7ed3d80dde1b86264f6dea438d1c"
+        }
+      ],
+      "slideshow": {
+        "name": "v2-20260922-emotional-5-slideshow.mp4",
+        "bytes": 972119,
+        "sha256": "ee6e6faa7aa7fbf6eee6746d365564c39ccfc91268cade9a3410629588036fc9"
+      },
+      "music_source": "original deterministic synthesis; no catalog/licensed third-party audio",
+      "visual_background": "illustrated scene, not text-only",
+      "cta_exact": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+    }
+  ]
+}
