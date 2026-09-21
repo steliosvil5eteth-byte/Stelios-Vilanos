@@ -1,0 +1,49 @@
+name: Render Myth Truth 2026-09-22
+on:
+  push:
+    paths:
+      - 'media_jobs/myth_truth_20260922.json'
+      - 'tools/render_myth_truth_cards.py'
+      - '.github/workflows/render-myth-truth-20260922.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install deterministic media tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg python3-pil fonts-dejavu-core
+      - name: Render illustrated cards and original-music YouTube slideshow
+        run: |
+          set -euo pipefail
+          rm -rf "$RUNNER_TEMP/mythtruth" && mkdir -p "$RUNNER_TEMP/mythtruth"
+          python3 tools/render_myth_truth_cards.py --manifest media_jobs/myth_truth_20260922.json --output "$RUNNER_TEMP/mythtruth"
+      - name: Publish QA-passed files
+        env:
+          OUTDIR: ${{ runner.temp }}/mythtruth
+        run: |
+          set -euo pipefail
+          BATCH=$(sha256sum media_jobs/myth_truth_20260922.json | cut -c1-16)
+          OUT="$RUNNER_TEMP/media-output-repo"
+          if git fetch origin media-output --depth=1; then
+            git worktree add --detach "$OUT" FETCH_HEAD
+          else
+            git worktree add --detach "$OUT" "$GITHUB_SHA"
+            git -C "$OUT" checkout --orphan media-output
+            git -C "$OUT" rm -rf .
+          fi
+          mkdir -p "$OUT/jobs/$BATCH"
+          cp -a "$OUTDIR"/. "$OUT/jobs/$BATCH/"
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m "Render illustrated Myth Truth package $BATCH"
+            git -C "$OUT" push origin HEAD:media-output
+          fi
+          echo "batch=$BATCH" >> "$GITHUB_STEP_SUMMARY"
+          cat "$OUTDIR/qa.json" >> "$GITHUB_STEP_SUMMARY"
