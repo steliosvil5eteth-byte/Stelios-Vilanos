@@ -1,0 +1,3 @@
+raw_duration=104.688526
+final_duration=119.988250
+atempo=0.8724043833333333
