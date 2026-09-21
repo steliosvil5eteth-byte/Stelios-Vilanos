@@ -8,15 +8,10 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
-
-concurrency:
-  group: azure-nestoras-voice-demo
-  cancel-in-progress: true
+  contents: read
 
 jobs:
   render:
-    if: github.event.repository.private == false
     runs-on: ubuntu-24.04
     timeout-minutes: 15
     env:
@@ -24,54 +19,32 @@ jobs:
       AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
     steps:
       - uses: actions/checkout@v4
-        with:
-          fetch-depth: 1
-
-      - name: Validate required secrets
-        run: |
-          set -euo pipefail
-          test -n "$AZURE_SPEECH_REGION"
-          test -n "$AZURE_SPEECH_KEY"
 
       - name: Install media tools
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core curl
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
 
-      - name: Synthesize with Azure Nestoras Neural
+      - name: Generate Nestoras audio
         run: |
           set -euo pipefail
           mkdir -p "$RUNNER_TEMP/nestoras"
-          TEXT=$(python -c "from pathlib import Path; import html; print(html.escape(Path('voice_demo/nestoras_demo.txt').read_text(encoding='utf-8').strip(), quote=False))")
-          cat > "$RUNNER_TEMP/nestoras/request.ssml" <<EOF
-<speak version='1.0' xml:lang='el-GR'>
-  <voice name='el-GR-NestorasNeural'>
-    <prosody rate='0%' pitch='0%'>$TEXT</prosody>
-  </voice>
-</speak>
-EOF
-          HTTP_CODE=$(curl -sS -o "$RUNNER_TEMP/nestoras/nestoras.wav" -w "%{http_code}"             -X POST "https://$AZURE_SPEECH_REGION.tts.speech.microsoft.com/cognitiveservices/v1"             -H "Ocp-Apim-Subscription-Key: $AZURE_SPEECH_KEY"             -H "Content-Type: application/ssml+xml"             -H "X-Microsoft-OutputFormat: riff-24khz-16bit-mono-pcm"             --data-binary @"$RUNNER_TEMP/nestoras/request.ssml")
-          if [ "$HTTP_CODE" != "200" ]; then
-            echo "Azure Speech returned HTTP $HTTP_CODE"
-            rm -f "$RUNNER_TEMP/nestoras/nestoras.wav"
-            exit 1
-          fi
+          python tools/azure_nestoras_demo.py voice_demo/nestoras_demo.txt "$RUNNER_TEMP/nestoras/nestoras.wav"
           ffmpeg -v error -i "$RUNNER_TEMP/nestoras/nestoras.wav" -f null -
-          DUR=$(ffprobe -v error -show_entries format=duration -of default=nk=1:nw=1 "$RUNNER_TEMP/nestoras/nestoras.wav")
-          printf 'voice=el-GR-NestorasNeural\nregion=%s\nduration=%s\n' "$AZURE_SPEECH_REGION" "$DUR" > "$RUNNER_TEMP/nestoras/info.txt"
+          ffprobe -v error -show_entries format=duration -of default=nk=1:nw=1 "$RUNNER_TEMP/nestoras/nestoras.wav" > "$RUNNER_TEMP/nestoras/duration.txt"
 
-      - name: Build vertical preview video
+      - name: Build preview video
         run: |
           set -euo pipefail
-          DUR=$(ffprobe -v error -show_entries format=duration -of default=nk=1:nw=1 "$RUNNER_TEMP/nestoras/nestoras.wav")
-          ffmpeg -y -v error             -f lavfi -i "color=c=0x101820:s=1080x1920:r=25:d=$DUR"             -i "$RUNNER_TEMP/nestoras/nestoras.wav"             -vf "drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='NESTORAS NEURAL':fontcolor=white:fontsize=70:x=(w-text_w)/2:y=760,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='Azure Speech F0 • ελληνική αντρική φωνή':fontcolor=white:fontsize=38:x=(w-text_w)/2:y=860"             -map 0:v -map 1:a -shortest             -c:v libx264 -preset veryfast -crf 24 -pix_fmt yuv420p             -c:a aac -b:a 160k -movflags +faststart             "$RUNNER_TEMP/nestoras/nestoras-demo.mp4"
+          DUR=$(cat "$RUNNER_TEMP/nestoras/duration.txt")
+          ffmpeg -y -v error -f lavfi -i "color=c=0x101820:s=1080x1920:r=25:d=$DUR" -i "$RUNNER_TEMP/nestoras/nestoras.wav" -vf "drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='NESTORAS NEURAL':fontcolor=white:fontsize=70:x=(w-text_w)/2:y=760,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='Azure Speech F0 - Greek male voice':fontcolor=white:fontsize=38:x=(w-text_w)/2:y=860" -map 0:v -map 1:a -shortest -c:v libx264 -preset veryfast -crf 24 -pix_fmt yuv420p -c:a aac -b:a 160k -movflags +faststart "$RUNNER_TEMP/nestoras/nestoras-demo.mp4"
 
-      - name: Upload Nestoras demo artifact
+      - name: Upload Nestoras demo
         uses: actions/upload-artifact@v4
         with:
           name: nestoras-azure-demo
           path: |
             ${{ runner.temp }}/nestoras/nestoras-demo.mp4
             ${{ runner.temp }}/nestoras/nestoras.wav
-            ${{ runner.temp }}/nestoras/info.txt
+            ${{ runner.temp }}/nestoras/duration.txt
           retention-days: 7
