@@ -1,20 +1,28 @@
 name: Free Greek Voice Demo
 
 on:
-  pull_request:
+  push:
+    branches: [main]
     paths:
-      - 'voice_demo/**'
+      - 'voice_demo/demo.txt'
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: free-greek-voice-demo
+  cancel-in-progress: true
 
 jobs:
   render:
+    if: github.event.repository.private == false
     runs-on: ubuntu-24.04
     timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
       - name: Install local TTS and media tools
         run: |
           sudo apt-get update -qq
@@ -27,9 +35,9 @@ jobs:
       - name: Synthesize Greek demo
         run: |
           set -euo pipefail
-          mkdir -p voice_demo/output
-          cat voice_demo/demo.txt | piper --model el_GR-rapunzelina-medium.onnx --sentence-silence 0.30 --output_file voice_demo/output/raw.wav
-          DUR=$(ffprobe -v error -show_entries format=duration -of default=nk=1:nw=1 voice_demo/output/raw.wav)
+          mkdir -p "$RUNNER_TEMP/voice-demo"
+          cat voice_demo/demo.txt | piper --model el_GR-rapunzelina-medium.onnx --sentence-silence 0.30 --output_file "$RUNNER_TEMP/voice-demo/raw.wav"
+          DUR=$(ffprobe -v error -show_entries format=duration -of default=nk=1:nw=1 "$RUNNER_TEMP/voice-demo/raw.wav")
           RATIO=$(python - "$DUR" <<'PY'
 import sys
 d=float(sys.argv[1])
@@ -37,20 +45,35 @@ r=d/120.0
 print(max(0.75,min(1.35,r)))
 PY
 )
-          ffmpeg -y -v error -i voice_demo/output/raw.wav -filter:a "atempo=${RATIO},loudnorm=I=-16:LRA=7:TP=-1.5" -ar 48000 -ac 2 voice_demo/output/voice.wav
-          FINAL=$(ffprobe -v error -show_entries format=duration -of default=nk=1:nw=1 voice_demo/output/voice.wav)
-          printf 'raw_duration=%s\nfinal_duration=%s\natempo=%s\n' "$DUR" "$FINAL" "$RATIO" > voice_demo/output/duration.txt
-      - name: Build 9x16 two-minute sample video
+          ffmpeg -y -v error -i "$RUNNER_TEMP/voice-demo/raw.wav" -filter:a "atempo=${RATIO},loudnorm=I=-16:LRA=7:TP=-1.5" -ar 48000 -ac 2 "$RUNNER_TEMP/voice-demo/voice.wav"
+          FINAL=$(ffprobe -v error -show_entries format=duration -of default=nk=1:nw=1 "$RUNNER_TEMP/voice-demo/voice.wav")
+          printf 'raw_duration=%s\nfinal_duration=%s\natempo=%s\n' "$DUR" "$FINAL" "$RATIO" > "$RUNNER_TEMP/voice-demo/duration.txt"
+      - name: Build vertical demo video
         run: |
           set -euo pipefail
-          ffmpeg -y -v error -f lavfi -i "color=c=0x101820:s=1080x1920:r=25:d=120" -i voice_demo/output/voice.wav -vf "drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='ΔΩΡΕΑΝ ΕΛΛΗΝΙΚΗ ΦΩΝΗ':fontcolor=white:fontsize=64:x=(w-text_w)/2:y=700,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='Piper • rapunzelina • δοκιμή 2 λεπτών':fontcolor=white:fontsize=38:x=(w-text_w)/2:y=800" -map 0:v -map 1:a -t 120 -c:v libx264 -preset veryfast -crf 23 -pix_fmt yuv420p -c:a aac -b:a 160k -movflags +faststart voice_demo/output/free-greek-voice-demo.mp4
-          ffmpeg -v error -i voice_demo/output/free-greek-voice-demo.mp4 -f null -
-      - name: Upload demo
-        uses: actions/upload-artifact@v4
-        with:
-          name: free-greek-voice-demo
-          path: |
-            voice_demo/output/free-greek-voice-demo.mp4
-            voice_demo/output/voice.wav
-            voice_demo/output/duration.txt
-          retention-days: 7
+          ffmpeg -y -v error -f lavfi -i "color=c=0x101820:s=1080x1920:r=25:d=120" -i "$RUNNER_TEMP/voice-demo/voice.wav" -vf "drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='ΔΩΡΕΑΝ ΕΛΛΗΝΙΚΗ ΦΩΝΗ':fontcolor=white:fontsize=64:x=(w-text_w)/2:y=700,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='Piper • rapunzelina • δοκιμή 2 λεπτών':fontcolor=white:fontsize=38:x=(w-text_w)/2:y=800" -map 0:v -map 1:a -t 120 -c:v libx264 -preset veryfast -crf 24 -pix_fmt yuv420p -c:a aac -b:a 160k -movflags +faststart "$RUNNER_TEMP/voice-demo/free-greek-voice-demo.mp4"
+          ffmpeg -v error -i "$RUNNER_TEMP/voice-demo/free-greek-voice-demo.mp4" -f null -
+      - name: Store demo in media-output branch
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/voice-demo
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/media-output-repo"
+          if git fetch origin media-output --depth=1; then
+            git worktree add --detach "$OUT" FETCH_HEAD
+          else
+            git worktree add --detach "$OUT" "$GITHUB_SHA"
+            git -C "$OUT" checkout --orphan media-output
+            git -C "$OUT" rm -rf .
+          fi
+          mkdir -p "$OUT/voice_demo"
+          cp "$OUTPUT_DIR/free-greek-voice-demo.mp4" "$OUT/voice_demo/"
+          cp "$OUTPUT_DIR/voice.wav" "$OUT/voice_demo/"
+          cp "$OUTPUT_DIR/duration.txt" "$OUT/voice_demo/"
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add voice_demo
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Render free Greek Piper voice demo'
+            git -C "$OUT" push origin HEAD:media-output
+          fi
