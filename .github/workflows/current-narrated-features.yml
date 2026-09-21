@@ -55,7 +55,7 @@ jobs:
           OUTPUT_DIR: ${{ runner.temp }}/finished
         run: |
           set -euo pipefail
-          python3 tools/render_narrated_feature.py \
+          python3 tools/render_narrated_feature_strict.py \
             --manifest media_jobs/narrated_feature_current.json \
             --output "$OUTPUT_DIR"
 
