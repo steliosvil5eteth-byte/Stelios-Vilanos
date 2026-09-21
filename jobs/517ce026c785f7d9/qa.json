@@ -1,0 +1,43 @@
+{
+  "id": "current-20260922-2000-myth-truth-brain10",
+  "cards": 4,
+  "order": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "jpeg_only": true,
+  "visible_illustration": "deterministic brain/neural/MRI-style illustration on every card",
+  "cta_exact": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+  "youtube_music": "original deterministic synthesized instrumental, no external recording",
+  "narration": false,
+  "paid_credits_used": 0,
+  "files": [
+    {
+      "name": "current-20260922-2000-myth-truth-brain10-card-1.jpg",
+      "bytes": 303787,
+      "sha256": "3c1191e8a1010c23c6ea287abc7076810c90fea7fb16a4bb73c831eb03410df5"
+    },
+    {
+      "name": "current-20260922-2000-myth-truth-brain10-card-2.jpg",
+      "bytes": 319092,
+      "sha256": "aee52b1853b07715d5918aa821d1618bb94958f7cf3fbdd5bd343762eba8acd9"
+    },
+    {
+      "name": "current-20260922-2000-myth-truth-brain10-card-3.jpg",
+      "bytes": 405168,
+      "sha256": "c0b820e61d92f9cd2b377331e0a636b9515d167383186d50508506c6c63fa5c3"
+    },
+    {
+      "name": "current-20260922-2000-myth-truth-brain10-card-4.jpg",
+      "bytes": 380275,
+      "sha256": "e659b9ff41f59ee6c3cebdb8d8c7092021854991737097b7738fd747fe3fed3e"
+    },
+    {
+      "name": "current-20260922-2000-myth-truth-brain10-youtube.mp4",
+      "bytes": 822607,
+      "sha256": "ae7db0b1ba61c2c3e87c6efd0d460b6afc1279b0522ab73c8640a8ee9762a0b0"
+    }
+  ]
+}

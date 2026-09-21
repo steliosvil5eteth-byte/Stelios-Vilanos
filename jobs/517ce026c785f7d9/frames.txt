@@ -1,0 +1,9 @@
+file '/home/runner/work/_temp/mythtruth/current-20260922-2000-myth-truth-brain10-card-1.jpg'
+duration 7
+file '/home/runner/work/_temp/mythtruth/current-20260922-2000-myth-truth-brain10-card-2.jpg'
+duration 7
+file '/home/runner/work/_temp/mythtruth/current-20260922-2000-myth-truth-brain10-card-3.jpg'
+duration 7
+file '/home/runner/work/_temp/mythtruth/current-20260922-2000-myth-truth-brain10-card-4.jpg'
+duration 7
+file '/home/runner/work/_temp/mythtruth/current-20260922-2000-myth-truth-brain10-card-4.jpg'
