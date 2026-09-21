@@ -12,7 +12,7 @@
     ]
   },
   "heygen": {
-    "enabled": true,
+    "enabled": false,
     "default_aspect_ratio": "9:16",
     "default_resolution": "720p",
     "default_fit": "cover",
@@ -23,7 +23,9 @@
     "avatar_look_id": "c1333835c09f4beaac193192119e20c5",
     "engine": "avatar_iii",
     "default_voice_id": "79f5fa6497474234a5d01764efc96e13",
-    "cost_profile": "low"
+    "cost_profile": "low",
+    "status": "retired_for_new_generation",
+    "rule": "No new routine generation. Weekly avatar is retired and narrated feature-video voice is Azure el-GR-NestorasNeural. Existing completed media may still be reused when otherwise valid."
   },
   "content": {
     "strategy_file": "config/content_strategy.json",
@@ -52,5 +54,22 @@
     "hands_off_mode": true,
     "quality_check_before_publish": true,
     "archive_every_video": true
+  },
+  "azure_speech": {
+    "enabled": true,
+    "tier": "F0",
+    "region_secret": "AZURE_SPEECH_REGION",
+    "key_secret": "AZURE_SPEECH_KEY",
+    "default_voice": "el-GR-NestorasNeural",
+    "language": "el-GR",
+    "use_for": [
+      "phenomenon_video",
+      "legend_video"
+    ],
+    "provider_free_quota_chars_per_month": 500000,
+    "internal_safety_cap_chars_per_month": 450000,
+    "paid_fallback_allowed": false,
+    "heygen_fallback_allowed": false,
+    "rule": "Use Nestoras for routine narrated feature videos. If Azure F0 is unavailable or the internal safety cap would be exceeded, block narration instead of using a paid fallback."
   }
 }
