@@ -1,0 +1,20 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "id": "current-20260922-2000-myth-truth-brain10",
+  "date": "2026-09-22",
+  "slot": "20:00",
+  "title": "Μύθος ή Αλήθεια; Χρησιμοποιούμε μόνο το 10% του εγκεφάλου μας;",
+  "cards": [
+    {"index": 1, "title": "ΕΡΩΤΗΣΗ", "body": "Χρησιμοποιούμε μόνο το 10% του εγκεφάλου μας;"},
+    {"index": 2, "title": "ΕΣΥ ΤΙ ΠΙΣΤΕΥΕΙΣ;", "body": "Μύθος ή αλήθεια; Διάλεξε πριν δεις την επόμενη κάρτα."},
+    {"index": 3, "title": "Η ΕΞΗΓΗΣΗ", "body": "Απεικονίσεις εγκεφάλου, όπως MRI και PET, δείχνουν ότι διαφορετικές περιοχές ενεργοποιούνται ανάλογα με τη δραστηριότητα. Δεν υπάρχει γνωστό 90% που να μένει μόνιμα ανενεργό."},
+    {"index": 4, "title": "ΑΠΑΝΤΗΣΗ: ΜΥΘΟΣ", "body": "Δεν χρησιμοποιούμε μόνο το 10%. Χρησιμοποιούμε διαφορετικά δίκτυα του εγκεφάλου σε διαφορετικές στιγμές."}
+  ],
+  "caption": "Μύθος ή Αλήθεια; Χρησιμοποιούμε μόνο το 10% του εγκεφάλου μας; Διάλεξε πριν δεις την τελευταία κάρτα.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#ΜύθοςΉΑλήθεια #Εγκέφαλος #Νευροεπιστήμη #Επιστήμη #FactCheck",
+  "sources": [
+    "BrainFacts/SfN educational material on the 10-percent brain myth",
+    "NIH/neurological imaging background: different networks support different tasks",
+    "General neuroscience consensus: no permanently unused 90 percent of healthy brain"
+  ]
+}
