@@ -41,7 +41,6 @@ def text_box(draw,text,box,size,bold=False,fill='white',spacing=1.25):
         y+=lead
 
 def brain(draw,cx,cy,scale,glow=(72,185,255)):
-    # head silhouette plus a clearly visible illustrated brain/network
     pts=[]
     for i in range(80):
         a=2*math.pi*i/80
@@ -64,13 +63,10 @@ def brain(draw,cx,cy,scale,glow=(72,185,255)):
 
 def backdrop(card_idx):
     im=Image.new('RGB',(W,H),(6,14,34)); d=ImageDraw.Draw(im)
-    # gradient bands
     for y in range(H):
         t=y/(H-1); c=(int(6+14*t),int(14+14*t),int(34+30*t)); d.line((0,y,W,y),fill=c)
-    # scene-specific visible illustration
     if card_idx==1:
         brain(d,540,590,650,(84,198,255))
-        # scanning frame
         for x in (190,890): d.line((x,290,x,890),fill=(40,100,170),width=3)
         d.line((180,590,900,590),fill=(70,180,220),width=3)
     elif card_idx==2:
@@ -78,7 +74,6 @@ def backdrop(card_idx):
         d.arc((260,920,820,1400),200,340,fill=(90,180,255),width=10)
         text_box(d,'?',(420,900,660,1260),190,True,fill=(111,205,255))
     elif card_idx==3:
-        # MRI-like illustrated sequence, clearly visual not text-only
         for j in range(3):
             x=105+j*300
             d.rounded_rectangle((x,320,x+270,760),radius=20,fill=(10,28,58),outline=(88,165,240),width=4)
@@ -109,19 +104,19 @@ def main():
     ap=argparse.ArgumentParser(); ap.add_argument('--manifest',required=True); ap.add_argument('--output',required=True); a=ap.parse_args()
     raw=Path(a.manifest).read_bytes(); m=json.loads(raw); out=Path(a.output); out.mkdir(parents=True,exist_ok=True)
     if not m.get('approved') or m.get('paid_generation_allowed') is not False: raise ValueError('approval/no-paid flags required')
-    cards=m['cards'];
+    cards=m['cards']
     if len(cards)!=4 or [c['index'] for c in cards] != [1,2,3,4]: raise ValueError('exactly four ordered cards required')
     jpgs=[]
     for c in cards:
         p=out/f"{m['id']}-card-{c['index']}.jpg"; make_card(c['index'],c['title'],c['body'],p); jpgs.append(p)
         im=Image.open(p); im.verify()
         if p.stat().st_size<100000: raise ValueError('card too small / likely invalid')
-    # original deterministic instrumental bed: layered synthesized tones; no external recording/copyright source.
     listfile=out/'frames.txt'
     listfile.write_text(''.join(f"file '{p.resolve()}'\nduration 7\n" for p in jpgs)+f"file '{jpgs[-1].resolve()}'\n",encoding='utf-8')
     mp4=out/f"{m['id']}-youtube.mp4"
-    filt="sine=frequency=220:sample_rate=48000:duration=28,volume=0.035[a0];sine=frequency=329.63:sample_rate=48000:duration=28,volume=0.018[a1];sine=frequency=440:sample_rate=48000:duration=28,volume=0.010[a2];[a0][a1][a2]amix=inputs=3:normalize=0,afade=t=in:st=0:d=1.5,afade=t=out:st=26:d=2[a]"
-    run(['ffmpeg','-y','-loglevel','error','-f','concat','-safe','0','-i',str(listfile),'-f','lavfi','-i',filt,'-map','0:v','-map','1:a','-vf','scale=1080:1920,fps=30,format=yuv420p','-t','28','-c:v','libx264','-preset','veryfast','-crf','22','-c:a','aac','-b:a','128k','-movflags','+faststart',str(mp4)])
+    # One original deterministic instrumental layer, synthesized locally; no external recording.
+    audio_expr="aevalsrc=0.025*sin(2*PI*220*t)+0.012*sin(2*PI*329.63*t)+0.007*sin(2*PI*440*t):s=48000:d=28,afade=t=in:st=0:d=1.5,afade=t=out:st=26:d=2"
+    run(['ffmpeg','-y','-loglevel','error','-f','concat','-safe','0','-i',str(listfile),'-f','lavfi','-i',audio_expr,'-map','0:v','-map','1:a','-vf','scale=1080:1920,fps=30,format=yuv420p','-t','28','-c:v','libx264','-preset','veryfast','-crf','22','-c:a','aac','-b:a','128k','-movflags','+faststart',str(mp4)])
     qa={'id':m['id'],'cards':4,'order':[1,2,3,4],'jpeg_only':all(p.suffix=='.jpg' for p in jpgs),'visible_illustration':'deterministic brain/neural/MRI-style illustration on every card','cta_exact':CTA,'youtube_music':'original deterministic synthesized instrumental, no external recording','narration':False,'paid_credits_used':0,'files':[{'name':p.name,'bytes':p.stat().st_size,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()} for p in jpgs+[mp4]]}
     (out/'qa.json').write_text(json.dumps(qa,ensure_ascii=False,indent=2),encoding='utf-8')
     print(json.dumps(qa,ensure_ascii=False))
