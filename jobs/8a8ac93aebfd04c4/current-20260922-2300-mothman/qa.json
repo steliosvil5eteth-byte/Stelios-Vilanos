@@ -1,0 +1,17 @@
+{
+  "id": "current-20260922-2300-mothman",
+  "voice": "el-GR-NestorasNeural",
+  "azure_only": true,
+  "paid_fallback_used": false,
+  "duration_seconds": 118.0,
+  "preferred_duration_met": false,
+  "max_detected_silence_seconds": 0.332,
+  "trailing_silence_seconds": 0.0,
+  "resolution": "1080x1920",
+  "audio_streams": 1,
+  "background_music": false,
+  "burned_subtitles": true,
+  "avatar_presenter": false,
+  "segments": 31,
+  "source_note": "Legend/history basis: Smithsonian Center for Folklife & Cultural Heritage (2021); e-WV West Virginia Encyclopedia, Mothman (rev. 2024); NTSB investigation HAR-71-01 for the documented mechanical cause of the 1967 Silver Bridge collapse. Visuals are deterministic original illustrations generated in-repo; no claim of supernatural proof."
+}
