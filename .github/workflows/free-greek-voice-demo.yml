@@ -42,13 +42,7 @@ jobs:
         run: |
           set -euo pipefail
           mkdir -p "$RUNNER_TEMP/nestoras"
-          TEXT=$(python - <<'PY'
-from pathlib import Path
-import html
-text=Path('voice_demo/nestoras_demo.txt').read_text(encoding='utf-8').strip()
-print(html.escape(text, quote=False))
-PY
-)
+          TEXT=$(python -c "from pathlib import Path; import html; print(html.escape(Path('voice_demo/nestoras_demo.txt').read_text(encoding='utf-8').strip(), quote=False))")
           cat > "$RUNNER_TEMP/nestoras/request.ssml" <<EOF
 <speak version='1.0' xml:lang='el-GR'>
   <voice name='el-GR-NestorasNeural'>
