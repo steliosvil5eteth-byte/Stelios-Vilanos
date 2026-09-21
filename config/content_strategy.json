@@ -1,5 +1,5 @@
 {
-  "version": 20,
+  "version": 21,
   "timezone": "Europe/Athens",
   "strategy_id": "FOUR_DAILY_V2",
   "effective_date": "2026-09-20",
@@ -309,6 +309,25 @@
         "recovery"
       ],
       "suppress_unchanged": true
+    },
+    "special_series": {
+      "true_survival_stories": {
+        "enabled": true,
+        "schedule": "unscheduled_extra_until_user_sets_slot",
+        "voice": "el-GR-NestorasNeural",
+        "voice_provider": "Azure Speech F0",
+        "duration_target_seconds": {
+          "min": 180,
+          "preferred_min": 195,
+          "preferred_max": 225,
+          "max": 240
+        },
+        "style": "True documented survival stories with a strong hook, clear chronology, practical all-hazards preparedness lessons, and no fearmongering.",
+        "pacing": "Information-dense; no filler, repeated ideas, artificial slow speech, long silent gaps or static dead time.",
+        "political_safety": "Do not predict war or present geopolitical speculation as fact. When preparedness is discussed, frame it as all-hazards civilian readiness and cite current official guidance.",
+        "publishing_rule": "Prepare as extra content but do not add a sixth daily post or schedule automatically until the user explicitly assigns a slot or replaces an existing slot.",
+        "visual_rule": "Use rights-cleared/public-domain/original visuals; clearly distinguish illustrations from documentary evidence."
+      }
     }
   }
 }
