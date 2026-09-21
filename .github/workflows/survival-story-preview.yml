@@ -1,0 +1,50 @@
+name: Survival Story Nestoras Preview
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'content/survival/2026-09-21_juliane_koepcke_script.txt'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    env:
+      AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+      AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install media tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+
+      - name: Generate Nestoras narration
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/survival"
+          python tools/azure_speech_tts.py             --text-file content/survival/2026-09-21_juliane_koepcke_script.txt             --output "$RUNNER_TEMP/survival/narration.wav"
+          ffmpeg -v error -i "$RUNNER_TEMP/survival/narration.wav" -f null -
+          ffprobe -v error -show_entries format=duration -of default=nk=1:nw=1 "$RUNNER_TEMP/survival/narration.wav" > "$RUNNER_TEMP/survival/duration.txt"
+
+      - name: Build timing preview
+        run: |
+          set -euo pipefail
+          DUR=$(cat "$RUNNER_TEMP/survival/duration.txt")
+          ffmpeg -y -v error             -f lavfi -i "color=c=0x101820:s=1080x1920:r=25:d=$DUR"             -i "$RUNNER_TEMP/survival/narration.wav"             -vf "drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf:text='ΑΛΗΘΙΝΗ ΙΣΤΟΡΙΑ ΕΠΙΒΙΩΣΗΣ':fontcolor=white:fontsize=58:x=(w-text_w)/2:y=700,drawtext=fontfile=/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf:text='Juliane Koepcke • timing preview':fontcolor=white:fontsize=38:x=(w-text_w)/2:y=800"             -map 0:v -map 1:a -shortest             -c:v libx264 -preset veryfast -crf 25 -pix_fmt yuv420p             -c:a aac -b:a 160k -movflags +faststart             "$RUNNER_TEMP/survival/survival-timing-preview.mp4"
+
+      - name: Upload preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: survival-story-juliane-preview
+          path: |
+            ${{ runner.temp }}/survival/survival-timing-preview.mp4
+            ${{ runner.temp }}/survival/narration.wav
+            ${{ runner.temp }}/survival/duration.txt
+          retention-days: 7
