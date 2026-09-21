@@ -1,0 +1,36 @@
+[
+  {
+    "id": "current-20260921-1700-brinicle",
+    "voice": "el-GR-NestorasNeural",
+    "azure_only": true,
+    "paid_fallback_used": false,
+    "duration_seconds": 93.886,
+    "preferred_duration_met": false,
+    "max_detected_silence_seconds": 0.338,
+    "trailing_silence_seconds": 0.0,
+    "resolution": "1080x1920",
+    "audio_streams": 1,
+    "background_music": false,
+    "burned_subtitles": true,
+    "avatar_presenter": false,
+    "segments": 25,
+    "source_note": "Fact basis: Seelye Martin, Journal of Fluid Mechanics / Cambridge Core, ice stalactites around cold dense brine rejected by growing sea ice; related sea-ice brine drainage literature."
+  },
+  {
+    "id": "current-20260921-2300-la-llorona",
+    "voice": "el-GR-NestorasNeural",
+    "azure_only": true,
+    "paid_fallback_used": false,
+    "duration_seconds": 93.234,
+    "preferred_duration_met": false,
+    "max_detected_silence_seconds": 0.369,
+    "trailing_silence_seconds": 0.0,
+    "resolution": "1080x1920",
+    "audio_streams": 1,
+    "background_music": false,
+    "burned_subtitles": true,
+    "avatar_presenter": false,
+    "segments": 25,
+    "source_note": "Fact basis: Smithsonian National Museum of the American Latino, 2018: multiple versions of La Llorona, including children drowned or lost at a river; colonial-era popularity and pre-Hispanic motifs."
+  }
+]
