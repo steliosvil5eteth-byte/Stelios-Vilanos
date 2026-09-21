@@ -1,0 +1,100 @@
+{
+  "batch_id": "336f57f7ef9e6784",
+  "batch_sha256": "336f57f7ef9e678410348e5d52408ff8718a79e4564611ad02a0e131158882b5",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "current-20260923-zodiac-group-b",
+      "status": "rendered",
+      "card_count": 6,
+      "order_verified": true,
+      "readable_min_font_px": 30,
+      "final_duration": 30.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "files": [
+        {
+          "name": "current-20260923-zodiac-group-b-01.jpg",
+          "bytes": 174363,
+          "sha256": "ff34aa2d9570670de38cdeab0a102d1cb8a79f5babe29d40dfffc5c1d2a86ea3"
+        },
+        {
+          "name": "current-20260923-zodiac-group-b-02.jpg",
+          "bytes": 161395,
+          "sha256": "13265a332a57bfe884789db5f2f54bb5a7d1b5fed8f07ffbf2ac6115220eb379"
+        },
+        {
+          "name": "current-20260923-zodiac-group-b-03.jpg",
+          "bytes": 154580,
+          "sha256": "8173375c9c0e5bee41ad02c954b55fee55f5e6e29d95bf821fb26fb5bb357277"
+        },
+        {
+          "name": "current-20260923-zodiac-group-b-04.jpg",
+          "bytes": 172191,
+          "sha256": "5fba21cdb86acfca285a6883bf47bb11e6e8326acf8233b328becadf85286c25"
+        },
+        {
+          "name": "current-20260923-zodiac-group-b-05.jpg",
+          "bytes": 166371,
+          "sha256": "0e517ca72b6299dfd6540ad489dcce281c855e1e3c9bd861a2af17fa920998b9"
+        },
+        {
+          "name": "current-20260923-zodiac-group-b-06.jpg",
+          "bytes": 174770,
+          "sha256": "28dff090f74100643a5cb5f37439511d2e9b109a54d4b06a6b2137da803f1e1d"
+        },
+        {
+          "name": "current-20260923-zodiac-group-b.mp4",
+          "bytes": 479954,
+          "sha256": "a5d90a9e1d7d8f5587932f29153f9beb4808fdca7b232752239b002a90f7db51"
+        }
+      ]
+    },
+    {
+      "id": "current-20260923-love-soul-5",
+      "status": "rendered",
+      "card_count": 5,
+      "order_verified": true,
+      "readable_min_font_px": 30,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "files": [
+        {
+          "name": "current-20260923-love-soul-5-01.jpg",
+          "bytes": 148923,
+          "sha256": "a5abf3caddcc6bba0716045e279908da2185353a4a7245cedb88cad0b8e15d9e"
+        },
+        {
+          "name": "current-20260923-love-soul-5-02.jpg",
+          "bytes": 172711,
+          "sha256": "63ce5bb3d82627e41169e5dd9e79eb8628b3d36f0e4f22febc55942d921891e7"
+        },
+        {
+          "name": "current-20260923-love-soul-5-03.jpg",
+          "bytes": 140743,
+          "sha256": "89c58ccb4b577d24b0f2138a086fed0c39cd0ecb6ac02e21460e8d8850b4e7db"
+        },
+        {
+          "name": "current-20260923-love-soul-5-04.jpg",
+          "bytes": 110168,
+          "sha256": "cae6260c22a335a2c67aab8ae13313d2e74dc2bdc877b8e2ac044ff9788bbddc"
+        },
+        {
+          "name": "current-20260923-love-soul-5-05.jpg",
+          "bytes": 132282,
+          "sha256": "60d320b3ef87b93a39d0fc6bb94977aa664879ff18dd5d18713c581e6177ac8c"
+        },
+        {
+          "name": "current-20260923-love-soul-5.mp4",
+          "bytes": 434333,
+          "sha256": "c584b46e44b688181759f427c08c3c5d09f92d827e2f16ebe754e0a323b2ec0c"
+        }
+      ]
+    }
+  ]
+}
