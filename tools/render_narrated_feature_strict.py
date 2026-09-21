@@ -3,7 +3,7 @@
 
 Keeps the renderer's hard QA gates while trimming only leading/trailing Azure
 silence. It deliberately preserves natural internal pauses and has no paid
-fallback path.
+fallback path. Current deterministic visual themes are rights-safe local art.
 """
 from __future__ import annotations
 
@@ -13,6 +13,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import render_narrated_feature as base
+import render_current_visuals as current_visuals
 
 
 def trim_edges_only(src: Path, dst: Path) -> None:
@@ -30,6 +31,7 @@ def trim_edges_only(src: Path, dst: Path) -> None:
 
 
 base.trim_wav = trim_edges_only
+base.make_scene = current_visuals.make_scene_factory(base.make_scene)
 
 if __name__ == "__main__":
     base.main()
