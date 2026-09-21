@@ -1,0 +1,46 @@
+{
+  "batch_id": "8e1686c2ff572f71",
+  "batch_sha256": "8e1686c2ff572f71cb49ee7a193d57902cfb9a9a08a8dd36d908f568c82dee18",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "current-20260923-myth-truth-lightning",
+      "status": "rendered",
+      "card_count": 4,
+      "order_verified": true,
+      "readable_min_font_px": 30,
+      "final_duration": 24.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "files": [
+        {
+          "name": "current-20260923-myth-truth-lightning-01.jpg",
+          "bytes": 113964,
+          "sha256": "fd0a6ace49ae11cde2ec7fa040a994e925097400ba9088a56dc6c8d66f5eadd8"
+        },
+        {
+          "name": "current-20260923-myth-truth-lightning-02.jpg",
+          "bytes": 111797,
+          "sha256": "52d7a742ee428935648c5ffaa2a6cebc8d0312bdeb553f2f7c602fef9976d6b7"
+        },
+        {
+          "name": "current-20260923-myth-truth-lightning-03.jpg",
+          "bytes": 145850,
+          "sha256": "bbae3a477973e7e56fdd826517cb033879f1fb0ab13c03b79ea6b274051dee76"
+        },
+        {
+          "name": "current-20260923-myth-truth-lightning-04.jpg",
+          "bytes": 150357,
+          "sha256": "666d0b7cf92babfcc16dacb0fc5f0e675e18adc70528060ef6640f0d3ed3f4fb"
+        },
+        {
+          "name": "current-20260923-myth-truth-lightning.mp4",
+          "bytes": 296850,
+          "sha256": "af6b46514ec68b4d714b4e9c28254ee9774d5a2c25450fade6f3bb569e3e4115"
+        }
+      ]
+    }
+  ]
+}

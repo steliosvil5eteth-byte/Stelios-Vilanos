@@ -1,0 +1,35 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_FIVE_DAILY",
+  "local_date": "2026-09-23",
+  "authorization_basis": "Standing user authorization for the current five-post daily program; automatic publishing is allowed only after QA.",
+  "purpose": "Create the 2026-09-23 20:00 four-card Myth or Truth pack using deterministic local rendering. No avatar, narration, TTS, external catalog music, paid AI credits or social publishing.",
+  "jobs": [
+    {
+      "id": "current-20260923-myth-truth-lightning",
+      "expected_cards": 4,
+      "seconds_per_slide": 6,
+      "slides": [
+        {
+          "title": "ΜΥΘΟΣ Ή ΑΛΗΘΕΙΑ; — 1/4",
+          "text": "Ο κεραυνός δεν χτυπά ποτέ δύο φορές το ίδιο σημείο."
+        },
+        {
+          "title": "ΠΡΙΝ ΔΕΙΣ ΤΗΝ ΑΠΑΝΤΗΣΗ — 2/4",
+          "text": "Εσύ τι πιστεύεις; Γράψε: ΜΥΘΟΣ ή ΑΛΗΘΕΙΑ;"
+        },
+        {
+          "title": "ΤΙ ΛΕΕΙ Η ΕΠΙΣΤΗΜΗ — 3/4",
+          "text": "Ψηλά, αιχμηρά και απομονωμένα αντικείμενα μπορούν να δεχτούν κεραυνό επανειλημμένα.",
+          "footer": "Πηγή ελέγχου: NOAA / National Weather Service"
+        },
+        {
+          "title": "Η ΑΠΑΝΤΗΣΗ: ΜΥΘΟΣ — 4/4",
+          "text": "Ο κεραυνός μπορεί να χτυπήσει το ίδιο σημείο πολλές φορές. Το «ποτέ δύο φορές» είναι μύθος.",
+          "footer": "Πηγή ελέγχου: NOAA / National Weather Service"
+        }
+      ]
+    }
+  ]
+}
