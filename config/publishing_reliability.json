@@ -1,6 +1,6 @@
 {
-  "version": 7,
-  "updated_on": "2026-09-20",
+  "version": 8,
+  "updated_on": "2026-09-21",
   "timezone": "Europe/Athens",
   "strategy_id": "FOUR_DAILY_V2",
   "authoritative_strategy_file": "config/content_strategy.json",
@@ -15,7 +15,7 @@
     "release_basis": "Standing user program effective 20/09/2026: 11:00 six-sign zodiac A/B, 15:00 five-card emotional story, 17:00 phenomenon, 23:00 foreign legend.",
     "rule": "Release applies ONLY to FOUR_DAILY_V2. Do not bulk-reactivate any old cancelled entries. A later user stop immediately overrides this release. Configuration activation is not proof of ready or queued media."
   },
-  "rules": "AUTHORITATIVE CURRENT PROGRAM: Europe/Athens daily 11:00 one six-sign zodiac carousel alternating Group A/B by date; 15:00 one coherent five-card love/soul story; 17:00 one new fact-checked strange real phenomenon video; 23:00 one different international/foreign legend video. Greek myths remain postponed. No 08:00/12-sign schedule, no fillers, no dog/barista/terrier, no avatars, no Flying Dutchman.\nQA/AUDIO: 11:00 and 15:00 use music and no narration. TikTok native photo carousel requires JPEG/WebP and autoAddMusic=true. Facebook/Instagram use complete native carousel where supported; lack of native music support there does not block. YouTube uses the complete slideshow. 17:00 and 23:00 are 9:16 narrated Greek videos with burned-in synchronized subtitles, no background music, no avatar/presenter, TikTok auto-music false/omitted.\nSTABILITY: once a verified future record is active draft=false/autoPublish=true, do not roll it back merely because the slot is future or stale local metadata exists. Deactivate only on concrete live media/provider/duplicate/forbidden-content evidence or later user stop/change.\nSAFETY: one logical post per date+category+platform, max five hashtags, fresh live read before write, preserve published successes, reconcile unknown writes, never backdate/catch up automatically, never blind-retry provider/account-limit failures, no purchases/topups/upgrades/paid safety tests.",
+  "rules": "AUTHORITATIVE CURRENT PROGRAM: Europe/Athens daily 11:00 one six-sign zodiac carousel alternating Group A/B by date; 15:00 one coherent five-card love/soul story; 17:00 one new fact-checked strange real phenomenon video; 23:00 one different international/foreign legend video. Greek myths remain postponed. No 08:00/12-sign schedule, no fillers, no dog/barista/terrier, no avatars, no Flying Dutchman.\nQA/AUDIO: 11:00 and 15:00 use music and no narration. TikTok native photo carousel requires JPEG/WebP and autoAddMusic=true. Facebook/Instagram use complete native carousel where supported; lack of native music support there does not block. YouTube uses the complete slideshow. 17:00 and 23:00 are 9:16 narrated Greek videos with burned-in synchronized subtitles, no background music, no avatar/presenter, TikTok auto-music false/omitted. While Azure Speech F0/Nestoras is active, each new feature video must be >=90s, preferably 95-115s and <=120s, with no filler, no dead-air gap >1.2s, natural sentence pauses usually <=0.8s, and trailing silence <=0.5s.\nSTABILITY: once a verified future record is active draft=false/autoPublish=true, do not roll it back merely because the slot is future or stale local metadata exists. Deactivate only on concrete live media/provider/duplicate/forbidden-content evidence or later user stop/change.\nSAFETY: one logical post per date+category+platform, max five hashtags, fresh live read before write, preserve published successes, reconcile unknown writes, never backdate/catch up automatically, never blind-retry provider/account-limit failures, no purchases/topups/upgrades/paid safety tests.",
   "retired_legacy_post_uuids": [
     "5968469862478006616",
     "-1941593113389937615",
@@ -163,5 +163,24 @@
     "original_legacy_rules_blob_sha": "34e8df7cf23cd51b58dfec15139bcaa69eaa4dd8",
     "old_rules_and_batch_snapshots": "Retained in Git history for audit only, not executable recovery instructions.",
     "completed_publication_history": "queue/completed.json and state/content_history.json were not modified."
+  },
+  "narrated_feature_duration_gate": {
+    "active": true,
+    "applies_to": [
+      "phenomenon_video",
+      "legend_video"
+    ],
+    "condition": "Azure Speech F0 / el-GR-NestorasNeural active",
+    "min_seconds": 90,
+    "preferred_seconds": [
+      95,
+      115
+    ],
+    "max_seconds": 120,
+    "max_dead_air_seconds": 1.2,
+    "usual_sentence_pause_max_seconds": 0.8,
+    "max_trailing_silence_seconds": 0.5,
+    "padding_for_duration_forbidden": true,
+    "failure_policy": "Block before scheduling; do not shorten, pad with silence, or use a paid fallback."
   }
 }
