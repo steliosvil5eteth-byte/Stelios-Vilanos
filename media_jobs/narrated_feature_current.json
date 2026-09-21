@@ -3,6 +3,7 @@
   "paid_generation_allowed": false,
   "strategy_id": "CURRENT_FIVE_DAILY",
   "local_date": "2026-09-21",
+  "render_revision": 2,
   "authorization_basis": "Standing user authorization for automatic publishing only after strict QA.",
   "purpose": "Replace only the blocked 2026-09-21 17:00 and 23:00 narrated features with strict Azure Speech F0 el-GR-NestorasNeural renders. No paid fallback, no music, no avatar/presenter.",
   "jobs": [
