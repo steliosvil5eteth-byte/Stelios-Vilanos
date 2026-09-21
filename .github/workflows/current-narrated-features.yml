@@ -1,0 +1,87 @@
+name: CURRENT narrated features - Azure F0 Nestoras
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'media_jobs/narrated_feature_current.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: current-narrated-features
+  cancel-in-progress: false
+
+jobs:
+  render:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - name: Check out approved current workflow
+        uses: actions/checkout@v4
+
+      - name: Verify Azure F0 and no-paid-fallback policy
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          cfg=json.loads(Path('config/integrations.json').read_text(encoding='utf-8'))['azure_speech']
+          assert cfg['enabled'] is True
+          assert cfg['tier'] == 'F0'
+          assert cfg['default_voice'] == 'el-GR-NestorasNeural'
+          assert cfg['paid_fallback_allowed'] is False
+          assert cfg['heygen_fallback_allowed'] is False
+          manifest=json.loads(Path('media_jobs/narrated_feature_current.json').read_text(encoding='utf-8'))
+          assert manifest['approved'] is True
+          assert manifest['paid_generation_allowed'] is False
+          total_chars=sum(len(s) for j in manifest['jobs'] for s in j.get('segments',[]))
+          if total_chars > 20000:
+              raise SystemExit(f'batch too large for conservative F0 run: {total_chars} chars')
+          print(f'F0 policy verified; requested characters={total_chars}')
+          PY
+
+      - name: Install deterministic media tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg python3-pil fonts-dejavu-core
+
+      - name: Render strict Nestoras features
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+          OUTPUT_DIR: ${{ runner.temp }}/finished
+        run: |
+          set -euo pipefail
+          python3 tools/render_narrated_feature.py \
+            --manifest media_jobs/narrated_feature_current.json \
+            --output "$OUTPUT_DIR"
+
+      - name: Publish only QA-passed media to media-output branch
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/finished
+        run: |
+          set -euo pipefail
+          BATCH=$(sha256sum media_jobs/narrated_feature_current.json | cut -c1-16)
+          OUT="$RUNNER_TEMP/media-output-repo"
+          if git fetch origin media-output --depth=1; then
+            git worktree add --detach "$OUT" FETCH_HEAD
+          else
+            git worktree add --detach "$OUT" "$GITHUB_SHA"
+            git -C "$OUT" checkout --orphan media-output
+            git -C "$OUT" rm -rf .
+          fi
+          mkdir -p "$OUT/jobs/$BATCH"
+          cp -a "$OUTPUT_DIR"/. "$OUT/jobs/$BATCH/"
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m "Render QA-passed Azure F0 Nestoras features $BATCH"
+            git -C "$OUT" push origin HEAD:media-output
+          fi
+          echo "batch=$BATCH" >> "$GITHUB_STEP_SUMMARY"
+          cat "$OUTPUT_DIR/qa-summary.json" >> "$GITHUB_STEP_SUMMARY"
+          echo "No background music, avatar, paid fallback or social publishing was used." >> "$GITHUB_STEP_SUMMARY"
