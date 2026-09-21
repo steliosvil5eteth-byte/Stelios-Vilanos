@@ -1,5 +1,5 @@
 {
-  "version": 19,
+  "version": 20,
   "timezone": "Europe/Athens",
   "strategy_id": "FOUR_DAILY_V2",
   "effective_date": "2026-09-20",
@@ -178,14 +178,22 @@
         "category": "phenomenon_video",
         "count": 1,
         "preferred_time": "17:00",
-        "rule": "One fact-checked narrated unusual-phenomenon video. Reuse actual existing unique unpublished media for20-30September, not paid regeneration. Old cancelled queue UUIDs remain draft because they belong to the deletion request. Register ONE new V2 entry for the matching date at17:00 after checking history, no other active new entry and real QA. Reconcile unknown create responses, never duplicate. From1October create one new original phenomenon video daily."
+        "rule": "One fact-checked narrated unusual-phenomenon video. Reuse actual existing unique unpublished media for20-30September, not paid regeneration. Old cancelled queue UUIDs remain draft because they belong to the deletion request. Register ONE new V2 entry for the matching date at17:00 after checking history, no other active new entry and real QA. Reconcile unknown create responses, never duplicate. From1October create one new original phenomenon video daily.",
+        "duration_target_seconds": {
+          "min": 90,
+          "preferred_min": 95,
+          "preferred_max": 115,
+          "max": 120
+        }
       },
       {
         "category": "legend_video",
         "count": 1,
         "preferred_time": "23:00",
         "duration_target_seconds": {
-          "min": 75,
+          "min": 90,
+          "preferred_min": 95,
+          "preferred_max": 115,
           "max": 120
         },
         "rule": "One original narrated video about one different legend each day, clearly labelled folklore rather than proven supernatural fact. The Flying Dutchman is already published and excluded from all new scheduling and regeneration."
@@ -210,7 +218,20 @@
       "subtitles": "Readable burned-in synchronized Greek subtitles covering the full narration.",
       "ending": "Immediate spoken and written CTA, without a long silent gap.",
       "rights": "Verified sources, creators, rights, attribution and known image dates; illustrations must not be presented as photographic proof.",
-      "technical_qa": "Verify real accessible final media, full duration/decode, representative frames, audio and subtitle synchronization; metadata is not sufficient."
+      "technical_qa": "Verify real accessible final media, full duration/decode, representative frames, audio and subtitle synchronization; metadata is not sufficient.",
+      "voice_provider": "Azure Speech F0",
+      "voice": "el-GR-NestorasNeural",
+      "duration_rule": "While Azure Speech F0 is the active narration path, every new 17:00/23:00 narrated feature must be at least 90 seconds. Preferred range 95-115 seconds; hard maximum 120 seconds unless the user later changes it.",
+      "minimum_duration_seconds": 90,
+      "preferred_duration_seconds": {
+        "min": 95,
+        "max": 115
+      },
+      "maximum_duration_seconds": 120,
+      "pacing": "Natural, information-dense pacing. Do not pad duration with filler, repeated ideas, slow delivery or static dead time.",
+      "silence_rule": "Narration should start promptly. Ordinary sentence pauses should usually stay <=0.8s; no dead-air gap >1.2s; trailing silence after CTA <=0.5s.",
+      "visual_pacing": "Keep visuals moving with meaningful changes roughly every 3-6 seconds when source material allows; avoid long static holds.",
+      "script_rule": "Use short clear sentences, strong hook in first 2 seconds, steady progression, no redundant recap, and immediate spoken/written CTA at the end."
     },
     "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
     "dog_video": {
