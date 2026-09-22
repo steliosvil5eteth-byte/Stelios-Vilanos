@@ -35,26 +35,38 @@
   ],
   "assets": [
     {
-      "url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/images/tonga_goes_2022015_4k.gif",
-      "credit": "Hunga Tonga GOES-17 animation — NASA/NOAA via USGS — Public Domain"
+      "url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FTaal%20Lightning%20Strike%20During%20Eruption%20(retouched).jpg&w=1400&output=jpg",
+      "credit": "Taal volcanic lightning — Etrhamjr; retouch Hike395 — CC BY-SA 4.0"
     },
     {
-      "url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/images/IMG_3366.jpeg",
-      "credit": "Kīlauea eruption plume, 2026 — USGS Hawaiian Volcano Observatory — Public Domain"
+      "url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FTaal%20Lightning%20Strike%20During%20Eruption%20(cropped).jpg&w=1400&output=jpg",
+      "credit": "Taal volcanic lightning — Etrhamjr; crop Hike395 — CC BY-SA 4.0"
     },
     {
-      "url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/multimediaFile-2022.jpg",
-      "credit": "Kīlauea ash plume aerial, 2018 — USGS Hawaiian Volcano Observatory — Public Domain"
+      "url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FGalunggung.jpg&w=1400&output=jpg",
+      "credit": "Galunggung volcanic lightning — USGS photo — Public Domain"
     },
     {
-      "url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/images/multimediaFile-4263.jpg",
-      "credit": "Kīlauea volcanic plume and sun, 2025 — USGS Hawaiian Volcano Observatory — Public Domain"
+      "url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FGalunggung-crop.jpg&w=1400&output=jpg",
+      "credit": "Galunggung volcanic lightning crop — USGS photo — Public Domain"
     },
     {
-      "url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/thumbnails/image/multimediaFile-2026.jpg",
-      "credit": "Kīlauea ash plume, 2018 — USGS Hawaiian Volcano Observatory — Public Domain"
+      "url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FRinjani%201994.jpg&w=1400&output=jpg",
+      "credit": "Rinjani volcanic lightning — Oliver Spalt — CC BY 2.0"
+    },
+    {
+      "url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FRinjani%201994%20cropped.jpg&w=1400&output=jpg",
+      "credit": "Rinjani volcanic lightning crop — Oliver Spalt — CC BY 2.0"
+    },
+    {
+      "url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FVesuvio%20eruzione%201944%20di%20notte.jpg&w=1400&output=jpg",
+      "credit": "Vesuvius 1944 night eruption — Wikimedia Commons source"
+    },
+    {
+      "url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FVolcanic%20Lightning%20as%20Seen%20from%20Hilo%20Beach%20by%20Charles%20Furneaux.JPG&w=1400&output=jpg",
+      "credit": "Volcanic lightning from Hilo Beach — Charles Furneaux — Wikimedia Commons source"
     }
   ],
-  "source_note": "Facts based on USGS Volcano Hazards Program and Hunga Tonga volcanic-lightning research. Preview only; no social publishing.",
-  "render_revision": 6
+  "source_note": "Facts based on USGS Volcano Hazards Program and Hunga Tonga volcanic-lightning research. Photo preview uses Wikimedia Commons source files through an image proxy to avoid source rate limits. Preview only; no social publishing.",
+  "render_revision": 5
 }
