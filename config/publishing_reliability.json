@@ -1,21 +1,20 @@
 {
-  "version": 8,
-  "updated_on": "2026-09-21",
+  "version": 9,
+  "updated_on": "2026-09-22",
   "timezone": "Europe/Athens",
   "strategy_id": "FOUR_DAILY_V2",
+  "program_label": "CURRENT_SIX_DAILY",
   "authoritative_strategy_file": "config/content_strategy.json",
-  "effective_date": "2026-09-20",
+  "effective_date": "2026-09-23",
   "publishing_paused": false,
+  "rules": "AUTHORITATIVE CURRENT PROGRAM from 23/09/2026: exactly six logical posts/day across Facebook, Instagram, TikTok and YouTube: 11:00 six-sign zodiac A/B; 13:00 current Dog Bartender four-card humor carousel; 15:00 coherent five-card love/soul story; 17:00 fact-checked strange real phenomenon; 20:00 four-card Myth or Truth ordered question-participation-explanation-answer; 23:00 different international/foreign legend. Greek myths/legends remain postponed. TikTok native photo carousels at 11/13/15/20 use silent JPEG/WebP only and autoAddMusic=true as the sole music source; 13:00 Dog Bartender requires exactly four 1080x1080 JPEG/WebP images and no MP4 fallback without explicit authorization. Other slideshow/video versions with embedded approved music must not get a second audio layer. 17/23 use vertical 9:16 local Piper el_GR-rapunzelina-medium at natural speed, burned-in synchronized Greek subtitles, no background music/avatar/presenter, TikTok auto music false/omitted, max five hashtags, immediate hook with no greeting. Narrated features must be strictly longer than 80 seconds with no maximum duration; no filler, repetition, artificial slow speech, silence padding or long static holds; reject unintended dead-air around two seconds or longer and remove useless trailing silence. NO-FALSE-ROLLBACK: preserve verified future active posts and Published successes; deactivate only on concrete live evidence of missing/corrupt/wrong media, active duplicate, forbidden content, explicit stop/change, double-audio risk or current QA failure; repair only affected destinations. Never backdate/catch up or revive legacy drafts. Scheduled/PENDING is not Published. No purchases, topups, upgrades or paid tests.",
+  "current_slots_local": ["11:00", "13:00", "15:00", "17:00", "20:00", "23:00"],
+  "daily_logical_target_per_network": 6,
+  "daily_destination_target": 24,
   "full_reset_hold": {
     "active": false,
-    "last_confirmed_scheduler_pause_at": "2026-09-19T23:28:00+03:00",
-    "scheduler_id": "6aae233f15c0819193862001fcc5313a",
-    "scope": "The old cancelled queue remains inactive, INCLUDING its eleven phenomenon entries dated20-30September. New V2 entries may reuse their unpublished media after QA and deduplication.",
-    "released_on": "2026-09-20",
-    "release_basis": "Standing user program effective 20/09/2026: 11:00 six-sign zodiac A/B, 15:00 five-card emotional story, 17:00 phenomenon, 23:00 foreign legend.",
-    "rule": "Release applies ONLY to FOUR_DAILY_V2. Do not bulk-reactivate any old cancelled entries. A later user stop immediately overrides this release. Configuration activation is not proof of ready or queued media."
+    "rule": "Release applies only to valid current-program work. Old cancelled entries remain inactive. A future user stop/change immediately overrides this release. Configuration activation is not proof of ready or queued media."
   },
-  "rules": "AUTHORITATIVE CURRENT PROGRAM: Europe/Athens daily 11:00 one six-sign zodiac carousel alternating Group A/B by date; 15:00 one coherent five-card love/soul story; 17:00 one new fact-checked strange real phenomenon video; 23:00 one different international/foreign legend video. Greek myths remain postponed. No 08:00/12-sign schedule, no fillers, no dog/barista/terrier, no avatars, no Flying Dutchman.\nQA/AUDIO: 11:00 and 15:00 use music and no narration. TikTok native photo carousel requires JPEG/WebP and autoAddMusic=true. Facebook/Instagram use complete native carousel where supported; lack of native music support there does not block. YouTube uses the complete slideshow. 17:00 and 23:00 are 9:16 narrated Greek videos with burned-in synchronized subtitles, no background music, no avatar/presenter, TikTok auto-music false/omitted. While Azure Speech F0/Nestoras is active, each new feature video must be >=90s, preferably 95-115s and <=120s, with no filler, no dead-air gap >1.2s, natural sentence pauses usually <=0.8s, and trailing silence <=0.5s.\nSTABILITY: once a verified future record is active draft=false/autoPublish=true, do not roll it back merely because the slot is future or stale local metadata exists. Deactivate only on concrete live media/provider/duplicate/forbidden-content evidence or later user stop/change.\nSAFETY: one logical post per date+category+platform, max five hashtags, fresh live read before write, preserve published successes, reconcile unknown writes, never backdate/catch up automatically, never blind-retry provider/account-limit failures, no purchases/topups/upgrades/paid safety tests.",
   "retired_legacy_post_uuids": [
     "5968469862478006616",
     "-1941593113389937615",
@@ -42,108 +41,8 @@
     "legacy_standalone_zodiac",
     "legacy_standalone_emotional"
   ],
-  "known_retries": {
-    "leo_instagram": {
-      "id": "378060016",
-      "uuid": "-4218314236002483607",
-      "scheduled_time": "2026-09-18T14:30:00+03:00",
-      "status": "PUBLISHED",
-      "automatic_retry_count": 1,
-      "public_url": "https://www.instagram.com/reel/DdbVUXvlGzh/",
-      "confirmed_at": "2026-09-18T14:32:42+03:00",
-      "terminal": true
-    },
-    "strong_people_tiktok_photo": {
-      "original_id": "378173767",
-      "original_uuid": "-1601691169706586319",
-      "id": "378264496",
-      "uuid": "-3029365031314767155",
-      "scheduled_time": "2026-09-19T23:00:00+03:00",
-      "status": "RETIRED_DO_NOT_SCHEDULE",
-      "automatic_retry_count": 1,
-      "terminal": true,
-      "corrected_media_type": "image/jpeg",
-      "hosted_media_url": "https://static.metricool.com/planner/202609/7000636-file-17689786721063048682.jpeg",
-      "note": "Historical reference only; latest user reset prohibits reactivation, replacement and catch-up. This local retirement is not a claim of a newly verified remote deletion.",
-      "notion_page_id": "3dff2345-b318-8166-b6b9-d7c5f2bd8d4e",
-      "notion_url": "https://app.notion.com/p/3dff2345b3188166b6b9d7c5f2bd8d4e?pvs=204"
-    }
-  },
-  "network_cooldowns": {
-    "tiktok": {
-      "status": "active",
-      "reason": "too_many_posts_openapi_403",
-      "observed_at": "2026-09-18T16:07:00+03:00",
-      "cooldown_until": "2026-09-19T16:07:00+03:00",
-      "source_job_id": "2026-09-18-zodiac-06-virgo",
-      "source_post_id": "377741065",
-      "exact_error": "Auto publish failed. This TikTok creator has made too many posts via OpenAPI in the last 24 hours, so this publishing attempt is blocked to minimize spam. The user can try again later or publish it in the mobile app instead. (403)",
-      "policy": "Historical observation retained, NOT proof of current active cooldown or current availability. Refresh actual account errors and rollingattempts. No burst retries. OnlynewV2program is authorized after20Septemberactivation; olddraftsremaininactive.",
-      "requires_live_refresh": true
-    }
-  },
-  "deferred_network_posts": {
-    "tiktok": []
-  },
-  "disabled_retired_post_ids": [
-    "378119832",
-    "378119841",
-    "378119848",
-    "378119855",
-    "378119867",
-    "378119875",
-    "378119884",
-    "378119886",
-    "378222792"
-  ],
-  "observed_external_failures": [
-    {
-      "observed_at": "2026-09-18T17:49:00+03:00",
-      "post_id": "378173767",
-      "uuid": "-1601691169706586319",
-      "network": "tiktok",
-      "status": "ERROR",
-      "error": "The content format of the Tiktok photo is incorrect. The 'image/png' type is not allowed, use 'image/jpeg' or 'image/webp' instead.",
-      "retry_status": "CANCELLED_BY_USER",
-      "retry_post_id": "378222792",
-      "retry_uuid": "-3029365031314767155",
-      "retry_scheduled_time": "2026-09-19T18:30:00+03:00",
-      "corrected_media_type": "image/jpeg",
-      "note": "Historical error, not a new failure. Never reactivate or replace this retired retry."
-    }
-  ],
-  "cancelled_tiktok_legacy_jobs": [
-    "2026-09-18-zodiac-06-virgo",
-    "2026-09-18-zodiac-07-libra",
-    "2026-09-18-zodiac-08-scorpio",
-    "2026-09-18-zodiac-09-sagittarius",
-    "2026-09-18-zodiac-10-capricorn",
-    "2026-09-18-zodiac-11-aquarius",
-    "2026-09-18-zodiac-12-pisces"
-  ],
-  "tiktok_daily_batches": {},
-  "strategy_transition": {
-    "effective_at": "2026-09-20T00:00:00+03:00",
-    "status": "ACTIVE_NEW_PROGRAM",
-    "strategy_id": "FOUR_DAILY_V2",
-    "rule": "Explicituseractivation20Septemberauthorizesonlynewfourcategoriesat08:00/11:00/17:00/23:00. Entireoldqueue remainsinactive. Readiness/schedulingmustbeverified,notinferredfromactivation.",
-    "weekly_introduction_automation_id": "6aacecbeaf94819198603f4458f8bb29",
-    "weekly_introduction_status": "disabled",
-    "preserved_dog_jobs": [],
-    "existing_photo_posts_policy": "Legacy standalone posts stayretired. Newcompletecarouselsrequire actualmediaQA; olddraftsmaynotberevived.",
-    "last_verified_date": "2026-09-20",
-    "disabled_conflicting_automations": [
-      {
-        "id": "6aabb848f94881919dca3051dae21f34",
-        "title": "Δημοσιεύσεις και σκύλος — ιστορίες σε αναμονή",
-        "status": "disabled"
-      },
-      {
-        "id": "6aad6dfc72c881919bcbd4dd37496907",
-        "title": "Καθημερινός έλεγχος και επιδιορθώσεις",
-        "status": "disabled"
-      }
-    ]
+  "current_nonlegacy_category_exception": {
+    "dog_bartender_carousel": "The 13:00 Σκύλος Μπάρμαν — ο παράξενος πελάτης four-card photo-carousel series is current approved content and must never be rejected merely because legacy dog video categories are retired."
   },
   "cancelled_phenomenon_metricool_uuids": {
     "2026-09-20": "2123662763815747664",
@@ -158,29 +57,55 @@
     "2026-09-29": "4740472343308093579",
     "2026-09-30": "9042889003413750494"
   },
-  "history_policy": {
-    "superseded_content_blob_sha": "7370565c5639f253e79a56981d109a7020ff73cf",
-    "original_legacy_rules_blob_sha": "34e8df7cf23cd51b58dfec15139bcaa69eaa4dd8",
-    "old_rules_and_batch_snapshots": "Retained in Git history for audit only, not executable recovery instructions.",
-    "completed_publication_history": "queue/completed.json and state/content_history.json were not modified."
+  "cancelled_legacy_rule": "Cancelled UUIDs are audit references only and are never gaps to revive. Reuse of underlying media is permitted only by creating a new current-program entry after fresh QA and deduplication when that exact media/content is still valid.",
+  "audio_safety": {
+    "exactly_one_music_layer": true,
+    "tiktok_photo_carousel_auto_add_music": true,
+    "tiktok_photo_assets_must_be_silent": true,
+    "tiktok_video_with_embedded_audio_auto_add_music": false,
+    "unclear_audio_configuration_policy": "block_review"
+  },
+  "dog_bartender_tiktok_gate": {
+    "cards": 4,
+    "mime_types": ["image/jpeg", "image/webp"],
+    "width": 1080,
+    "height": 1080,
+    "silent_assets": true,
+    "auto_add_music": true,
+    "video_fallback_allowed": false,
+    "oversize_policy": "resize_images_and_retry_tiktok_only",
+    "published_success_protection": "Never touch or duplicate already Published Facebook/Instagram destinations while repairing TikTok."
   },
   "narrated_feature_duration_gate": {
     "active": true,
-    "applies_to": [
-      "phenomenon_video",
-      "legend_video"
-    ],
-    "condition": "Azure Speech F0 / el-GR-NestorasNeural active",
-    "min_seconds": 90,
-    "preferred_seconds": [
-      95,
-      115
-    ],
-    "max_seconds": 120,
-    "max_dead_air_seconds": 1.2,
-    "usual_sentence_pause_max_seconds": 0.8,
-    "max_trailing_silence_seconds": 0.5,
+    "applies_to": ["phenomenon_video", "legend_video"],
+    "voice_provider": "Piper local",
+    "voice": "el_GR-rapunzelina-medium",
+    "strictly_longer_than_seconds": 80,
+    "maximum_duration_seconds": null,
+    "dead_air_reject_threshold_seconds": 2.0,
+    "target_max_trailing_silence_seconds": 0.5,
     "padding_for_duration_forbidden": true,
-    "failure_policy": "Block before scheduling; do not shorten, pad with silence, or use a paid fallback."
+    "background_music": false,
+    "avatar_presenter": false,
+    "failure_policy": "Block before scheduling and expand substantive script/content; never use silence padding or a paid fallback."
+  },
+  "deduplication_policy": {
+    "logical_key": "local_date + category + platform",
+    "fresh_live_read_before_write": true,
+    "protect_published_successes": true,
+    "repair_only_affected_destination": true,
+    "unknown_write_result": "Reconcile by live read before any retry.",
+    "future_pending_not_failure": true
+  },
+  "cost_safety": {
+    "purchases": false,
+    "topups": false,
+    "upgrades": false,
+    "paid_tests": false,
+    "paid_fallbacks": false
+  },
+  "history_policy": {
+    "rule": "Git history retains superseded configuration for audit only. Published content is not modified or republished."
   }
 }
