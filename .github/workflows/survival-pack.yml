@@ -1,0 +1,56 @@
+name: Survival carousel pack
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'media_jobs/survival_current.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: no-credit-media-output
+  cancel-in-progress: false
+
+jobs:
+  render-survival-pack:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - name: Check out approved job
+        uses: actions/checkout@v4
+      - name: Install deterministic media tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg python3-pil fonts-dejavu-core
+      - name: Render survival cards and YouTube slideshow
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/finished
+        run: |
+          /usr/bin/python3 tools/render_survival_pack.py --manifest media_jobs/survival_current.json --output "$OUTPUT_DIR"
+      - name: Store finished public assets on media-output
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/finished
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/media-output-repo"
+          if git fetch origin media-output --depth=1; then
+            git worktree add --detach "$OUT" FETCH_HEAD
+          else
+            git worktree add --detach "$OUT" "$GITHUB_SHA"
+            git -C "$OUT" checkout --orphan media-output
+            git -C "$OUT" rm -rf .
+          fi
+          mkdir -p "$OUT/jobs"
+          cp -a "$OUTPUT_DIR"/. "$OUT/jobs/"
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Render survival carousel without paid credits'
+            git -C "$OUT" push origin HEAD:media-output
+          fi
+          echo 'Rendered 9-card survival pack and one local-music YouTube slideshow. No TTS, paid AI, or social publishing API was called.' >> "$GITHUB_STEP_SUMMARY"
