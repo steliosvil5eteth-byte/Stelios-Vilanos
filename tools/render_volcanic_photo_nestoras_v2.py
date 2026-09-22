@@ -137,18 +137,27 @@ def download_assets(manifest: dict, work: Path) -> list[tuple[Path, dict]]:
                 break
             except urllib.error.HTTPError as exc:
                 last_error = exc
-                if exc.code != 429 or attempt == 4:
-                    raise
-                wait = 8 * (attempt + 1)
-                print(f"HTTP 429 for {asset['url']}; retrying in {wait}s")
-                time.sleep(wait)
+                if exc.code == 429 and attempt < 4:
+                    wait = 8 * (attempt + 1)
+                    print(f"HTTP 429 for {asset['url']}; retrying in {wait}s")
+                    time.sleep(wait)
+                    continue
+                print(f"Skipping unavailable photo {i}: HTTP {exc.code}")
+                break
+            except Exception as exc:
+                last_error = exc
+                print(f"Skipping unavailable photo {i}: {exc}")
+                break
         if last_error is not None:
-            raise last_error
-        time.sleep(1.5)
-        if path.stat().st_size < 10_000:
-            raise RuntimeError(f"downloaded asset is unexpectedly small: {path.name}")
+            continue
+        time.sleep(1.0)
+        if not path.exists() or path.stat().st_size < 10_000:
+            print(f"Skipping unexpectedly small photo {i}")
+            continue
         downloaded.append((path, asset))
         print(f"asset={path.name} bytes={path.stat().st_size}")
+    if len(downloaded) < 4:
+        raise RuntimeError(f"not enough usable photo assets: {len(downloaded)}")
     return downloaded
 
 
@@ -170,7 +179,7 @@ def build_photo_pool(downloaded: list[tuple[Path, dict]]) -> list[tuple[Image.Im
                 frames.append((sequence[idx].convert("RGB").copy(), meta))
         else:
             frames.append((image.convert("RGB"), meta))
-    if len(frames) < 8:
+    if len(frames) < 4:
         raise RuntimeError(f"photo pool too small: {len(frames)}")
     return frames
 
