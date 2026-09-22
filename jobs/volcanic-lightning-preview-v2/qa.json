@@ -1,0 +1,26 @@
+{
+  "id": "volcanic-lightning-preview-v2",
+  "preview_only": true,
+  "publish_to_social": false,
+  "voice": "el-GR-NestorasNeural",
+  "duration_seconds": 138.643,
+  "resolution": "1080x1920",
+  "burned_subtitles": true,
+  "subtitle_font_size": 20,
+  "subtitle_margin_vertical": 300,
+  "subtitle_max_lines": 2,
+  "photo_based_visuals": true,
+  "photo_pool_frames": 5,
+  "background_music": false,
+  "avatar_presenter": false,
+  "asset_credits": [
+    "Taal volcanic lightning — Etrhamjr; retouch Hike395 — CC BY-SA 4.0",
+    "Taal volcanic lightning — Etrhamjr; crop Hike395 — CC BY-SA 4.0",
+    "Galunggung volcanic lightning — USGS photo — Public Domain",
+    "Galunggung volcanic lightning crop — USGS photo — Public Domain",
+    "Rinjani volcanic lightning — Oliver Spalt — CC BY 2.0",
+    "Rinjani volcanic lightning crop — Oliver Spalt — CC BY 2.0",
+    "Vesuvius 1944 night eruption — Wikimedia Commons source",
+    "Volcanic lightning from Hilo Beach — Charles Furneaux — Wikimedia Commons source"
+  ]
+}
