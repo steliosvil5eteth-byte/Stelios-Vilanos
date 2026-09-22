@@ -1,0 +1,9 @@
+file '/home/runner/work/_temp/finished/fix-20260923-card-visuals/current-20260923-2000-mythtruth-01.jpg'
+duration 3.0
+file '/home/runner/work/_temp/finished/fix-20260923-card-visuals/current-20260923-2000-mythtruth-02.jpg'
+duration 3.0
+file '/home/runner/work/_temp/finished/fix-20260923-card-visuals/current-20260923-2000-mythtruth-03.jpg'
+duration 3.0
+file '/home/runner/work/_temp/finished/fix-20260923-card-visuals/current-20260923-2000-mythtruth-04.jpg'
+duration 3.0
+file '/home/runner/work/_temp/finished/fix-20260923-card-visuals/current-20260923-2000-mythtruth-04.jpg'

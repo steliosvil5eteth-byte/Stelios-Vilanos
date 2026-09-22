@@ -1,0 +1,31 @@
+{
+  "local_date": "2026-09-23",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "current-20260923-1500-story",
+      "kind": "story",
+      "status": "rendered",
+      "cards": [
+        "current-20260923-1500-story-01.jpg",
+        "current-20260923-1500-story-02.jpg",
+        "current-20260923-1500-story-03.jpg",
+        "current-20260923-1500-story-04.jpg",
+        "current-20260923-1500-story-05.jpg"
+      ],
+      "youtube": "current-20260923-1500-story-youtube.mp4"
+    },
+    {
+      "id": "current-20260923-2000-mythtruth",
+      "kind": "myth",
+      "status": "rendered",
+      "cards": [
+        "current-20260923-2000-mythtruth-01.jpg",
+        "current-20260923-2000-mythtruth-02.jpg",
+        "current-20260923-2000-mythtruth-03.jpg",
+        "current-20260923-2000-mythtruth-04.jpg"
+      ],
+      "youtube": "current-20260923-2000-mythtruth-youtube.mp4"
+    }
+  ]
+}
