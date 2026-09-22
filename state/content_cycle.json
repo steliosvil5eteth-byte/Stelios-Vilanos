@@ -1,321 +1,79 @@
 {
-  "version": 7,
+  "version": 8,
   "timezone": "Europe/Athens",
-  "start_date": "2026-09-20",
-  "current_cycle_date": "2026-09-20",
-  "current_theme": "all_four_every_day",
+  "start_date": "2026-09-23",
+  "current_cycle_date": "2026-09-23",
+  "current_theme": "all_six_every_day",
   "current_strategy": "FOUR_DAILY_V2",
+  "program_label": "CURRENT_SIX_DAILY",
   "current_status": "ACTIVE_SCHEDULED",
   "status": "active",
   "publishing_paused": false,
-  "target_count": 4,
-  "completed_count": 1,
-  "scheduled_count": 3,
-  "prepared_count": null,
-  "generating_count": null,
-  "partially_published_count": 0,
-  "count_basis": "Current explicit program: 11:00 six-sign zodiac Group A/B alternating by local date, 15:00 five-card emotional story, 17:00 phenomenon, 23:00 foreign legend on Facebook/Instagram/TikTok/YouTube. Counts are logical posts. On 20/09 the zodiac logical post is provider-confirmed Published on all four networks; the remaining three are active Scheduled/PENDING.",
-  "last_completed_theme": null,
-  "next_theme_after_completion": "all_four_every_day",
-  "next_cycle_date": "2026-09-21",
-  "next_theme": "all_four_every_day",
-  "next_target_count": 4,
-  "next_prepared_count": null,
-  "next_generating_count": null,
-  "next_scheduled_count": 4,
-  "last_reconciled_date": "2026-09-20",
+  "target_count": 6,
+  "scheduled_count": 6,
+  "completed_count": 0,
+  "completed_count_basis": "Do not count Scheduled/PENDING as Published. This state records only scheduling readiness; provider/public confirmation is required for completion.",
+  "count_basis": "Logical posts, not destination records. Current program is 11:00 zodiac, 13:00 Dog Bartender, 15:00 love/soul story, 17:00 phenomenon, 20:00 Myth or Truth, 23:00 foreign legend across Facebook/Instagram/TikTok/YouTube.",
+  "next_cycle_date": "2026-09-24",
+  "next_theme": "all_six_every_day",
+  "next_target_count": 6,
+  "next_scheduled_count": 0,
+  "last_reconciled_at": "2026-09-22T17:06:00+03:00",
+  "last_reconciled_basis": "Fresh Metricool live queue read for brand 7000636.",
   "daily_categories": [
     "zodiac_carousel",
+    "dog_bartender_carousel",
     "emotional_story_carousel",
     "phenomenon_video",
+    "myth_truth_carousel",
     "legend_video"
   ],
-  "default_daily_slots_local": [
-    "11:00",
-    "15:00",
-    "17:00",
-    "23:00"
-  ],
+  "default_daily_slots_local": ["11:00", "13:00", "15:00", "17:00", "20:00", "23:00"],
   "alternating_days": false,
   "weekly_introduction_enabled": false,
-  "dog_video_enabled": false,
+  "legacy_dog_video_enabled": false,
+  "dog_bartender_carousel_enabled": true,
   "legacy_recovery_enabled": false,
-  "superseded_override": {
-    "issued_at": "2026-09-20T07:36:00+03:00",
-    "status": "SUPERSEDED_BY_CURRENT_11_15_17_23_PROGRAM",
-    "note": "The temporary approval-first logic and the superseded 08:00/12-sign plan are inactive. Current zodiac is automatic after QA at 11:00 with six signs A/B alternating; emotional story is 15:00."
-  },
-  "category_state_2026_09_20": {
-    "zodiac_carousel": {
-      "cards": 6,
-      "logical_posts": 1,
-      "time": "11:00",
-      "status": "PUBLISHED_CONFIRMED_ALL4",
-      "title": "Ζώδια μετά τον καβγά — Μέρος 1",
-      "metricool_records": [
-        {
-          "id": 378797891,
-          "uuid": "-534275962096825255",
-          "providers": [
-            "facebook",
-            "instagram"
-          ],
-          "provider_status": "PUBLISHED"
-        },
-        {
-          "id": 378848221,
-          "uuid": "-8336141762775465707",
-          "providers": [
-            "tiktok"
-          ],
-          "provider_status": "PUBLISHED"
-        },
-        {
-          "id": 378851547,
-          "uuid": "-1604523145134520340",
-          "providers": [
-            "youtube"
-          ],
-          "provider_status": "PUBLISHED"
-        }
-      ],
-      "note": "YouTube succeeded on the explicitly authorized same-day retry at 14:10; do not republish this logical post again."
-    },
-    "emotional_story_carousel": {
-      "cards": 5,
-      "logical_posts": 1,
-      "time": "15:00",
-      "status": "SCHEDULED_PENDING",
-      "title": "Μια δεύτερη ευκαιρία",
-      "metricool_records": [
-        {
-          "id": 378803945,
-          "uuid": "-5037722529518498994",
-          "providers": [
-            "facebook",
-            "instagram"
-          ],
-          "draft": false,
-          "auto_publish": true
-        },
-        {
-          "id": 378804042,
-          "uuid": "7138384979467783663",
-          "providers": [
-            "youtube"
-          ],
-          "draft": false,
-          "auto_publish": true
-        },
-        {
-          "id": 378852091,
-          "uuid": "6622466650101796154",
-          "providers": [
-            "tiktok"
-          ],
-          "draft": false,
-          "auto_publish": true,
-          "media_type": "image/jpeg",
-          "auto_add_music": true
-        }
-      ]
-    },
-    "phenomenon_video": {
-      "logical_posts": 1,
-      "time": "17:00",
-      "status": "SCHEDULED_PENDING",
-      "title": "Οι κεραυνοί του Κατατούμπο",
-      "metricool_id": 378797987,
-      "metricool_uuid": "-1928066260297694149"
-    },
-    "legend_video": {
-      "logical_posts": 1,
-      "time": "23:00",
-      "status": "SCHEDULED_PENDING",
-      "title": "Κουτσισάκε-όννα — η γυναίκα με το σκισμένο στόμα",
-      "metricool_id": 378797998,
-      "metricool_uuid": "170581547433149323",
-      "forbidden_story": "Flying Dutchman"
-    }
-  },
-  "category_state_2026_09_21": {
-    "zodiac_carousel": {
-      "cards": 6,
-      "logical_posts": 1,
-      "time": "11:00",
-      "status": "SCHEDULED_PENDING",
-      "group": "B",
-      "title": "Ζώδια μετά τον καβγά — Μέρος 2",
-      "metricool_records": [
-        {
-          "id": 378855476,
-          "uuid": "-4331848175950279533",
-          "providers": [
-            "facebook",
-            "instagram"
-          ],
-          "draft": false,
-          "auto_publish": true
-        },
-        {
-          "id": 378855503,
-          "uuid": "-8506073730409216828",
-          "providers": [
-            "youtube"
-          ],
-          "draft": false,
-          "auto_publish": true
-        },
-        {
-          "id": 378855533,
-          "uuid": "-2842486496923203587",
-          "providers": [
-            "tiktok"
-          ],
-          "draft": false,
-          "auto_publish": true,
-          "media_type": "image/jpeg",
-          "auto_add_music": true
-        }
-      ]
-    },
-    "emotional_story_carousel": {
-      "cards": 5,
-      "logical_posts": 1,
-      "time": "15:00",
-      "status": "SCHEDULED_PENDING",
-      "title": "Το εισιτήριο που έμεινε",
-      "metricool_records": [
-        {
-          "id": 378855566,
-          "uuid": "5636304589676103222",
-          "providers": [
-            "facebook",
-            "instagram"
-          ],
-          "draft": false,
-          "auto_publish": true
-        },
-        {
-          "id": 378855592,
-          "uuid": "-6150063090162122624",
-          "providers": [
-            "youtube"
-          ],
-          "draft": false,
-          "auto_publish": true
-        },
-        {
-          "id": 378855616,
-          "uuid": "-1571459755730449042",
-          "providers": [
-            "tiktok"
-          ],
-          "draft": false,
-          "auto_publish": true,
-          "media_type": "image/jpeg",
-          "auto_add_music": true
-        }
-      ]
-    },
-    "phenomenon_video": {
-      "logical_posts": 1,
-      "time": "17:00",
-      "status": "SCHEDULED_PENDING",
-      "title": "Brinicle — ο υποθαλάσσιος παγοκρύσταλλος",
-      "metricool_id": 378798003,
-      "metricool_uuid": "928202884271262166"
-    },
-    "legend_video": {
-      "logical_posts": 1,
-      "time": "23:00",
-      "status": "SCHEDULED_PENDING",
-      "title": "La Llorona — Η Κλαίουσα",
-      "metricool_id": 378798021,
-      "metricool_uuid": "-8796223693166067560"
-    }
-  },
-  "retired_dog_metricool_uuids": [
-    "7486346641732224351",
-    "6234574211891284294",
-    "4952065135289714308"
-  ],
-  "retired_flying_dutchman_future_uuid": "-8042687935771622605",
-  "forbidden_published_flying_dutchman_uuids": [
-    "7639724372568328678",
-    "814225112836948353"
-  ],
-  "remote_queue_audit": {
-    "last_check_date": "2026-09-20",
-    "stale_six_sign_uuids": [],
-    "stale_six_sign_status": "NOT_APPLICABLE_TO_CURRENT_PROGRAM",
-    "rule": "Current six-sign A/B zodiac carousels are valid FOUR_DAILY_V2 work. Only legacy standalone/12-sign/forbidden drafts remain inactive."
-  },
-  "scheduler": {
-    "name": "Approval Gate",
-    "automation_id": "6aae233f15c0819193862001fcc5313a",
-    "enabled": true,
-    "cadence": "hourly"
-  },
-  "workers": {
-    "preparation": {
-      "id": "6aae4703011c8191b1ddefbeb25c24fe",
-      "enabled": true,
-      "local_times": [
-        "06:35",
-        "19:35"
-      ]
-    },
-    "sourcing": {
-      "id": "6aae259c36948191b37fb1fad93d9fe2",
-      "enabled": true,
-      "cadence": "hourly"
-    },
-    "assembly": {
-      "id": "6aae2eff6dc8819186a921d2dde4ad8e",
-      "enabled": true,
-      "cadence": "hourly",
-      "note": "Enabled current paid feature renderer; use only for required new 17:00/23:00 assets under current budget/QA rules."
-    },
-    "health": {
-      "id": "6aae1e8990e08191a339d31a2c6309eb",
-      "enabled": true,
-      "cadence": "hourly"
-    },
-    "weekly_planner": {
-      "id": "6aae23798d348191acb484169fbaf28e",
-      "enabled": true,
-      "schedule": "Sunday19:00approximately"
-    },
-    "progress_updates": {
-      "id": "6aad8088af2c8191a912e22b8b2493e8",
-      "enabled": true,
-      "cadence": "hourly",
-      "notify_only_material_change": true
-    }
-  },
-  "hold_rule": "Latest explicit user instruction wins. Historical FULL_QUEUE_RESET_HOLD stays released only for eligible new FOUR_DAILY_V2 work. Old cancelled entries never bulk restore. Unverified future replacements are cancelled rather than treated as ready.",
-  "network_capacity_policy": "Read current provider errors, rolling24h attempts, active scheduled records and durable reservations before each scheduling write. Do not count drafts, assume midnight reset or treat generic limits as guaranteed counters. Exact user times cannot be shifted automatically. Explicit quota blocks hold only affected unattempted destinations; healthy providers continue.",
-  "history_policy": "Historical snapshots remain audit-only. Published content is not modified or republished.",
   "zodiac_group_alternation": {
     "enabled": true,
     "anchor_date": "2026-09-20",
     "anchor_group": "A",
-    "group_a": [
-      "Κριός",
-      "Ταύρος",
-      "Δίδυμοι",
-      "Καρκίνος",
-      "Λέων",
-      "Παρθένος"
-    ],
-    "group_b": [
-      "Ζυγός",
-      "Σκορπιός",
-      "Τοξότης",
-      "Αιγόκερως",
-      "Υδροχόος",
-      "Ιχθύες"
-    ]
-  }
+    "group_a": ["Κριός", "Ταύρος", "Δίδυμοι", "Καρκίνος", "Λέων", "Παρθένος"],
+    "group_b": ["Ζυγός", "Σκορπιός", "Τοξότης", "Αιγόκερως", "Υδροχόος", "Ιχθύες"],
+    "2026-09-23": "B",
+    "2026-09-24": "A",
+    "2026-09-25": "B"
+  },
+  "live_queue_reconciliation": {
+    "2026-09-23": {
+      "current_logical_slots_active_pending": ["11:00", "13:00", "15:00", "17:00", "20:00", "23:00"],
+      "active_logical_count": 6,
+      "published_claim": false,
+      "rule": "No false rollback: keep verified active future records unless a concrete current defect is found."
+    },
+    "2026-09-24": {
+      "current_logical_slots_active_pending": [],
+      "active_logical_count": 0,
+      "legacy_drafts_present": ["18:00 Grand Prismatic"],
+      "rule": "Legacy draft is not a current-program slot and must not be revived or treated as a replacement."
+    },
+    "2026-09-25": {
+      "current_logical_slots_active_pending": [],
+      "active_logical_count": 0,
+      "legacy_drafts_present": ["18:00 Cappadocia"],
+      "rule": "Legacy draft is not a current-program slot and must not be revived or treated as a replacement."
+    }
+  },
+  "current_narrated_policy": {
+    "voice_provider": "Piper local",
+    "voice": "el_GR-rapunzelina-medium",
+    "duration": "strictly >80 seconds; no maximum",
+    "background_music": false,
+    "avatar_presenter": false,
+    "subtitles": "burned-in synchronized Greek",
+    "tiktok_auto_add_music": false
+  },
+  "hold_rule": "Latest explicit user instruction wins. Old cancelled/legacy drafts remain inactive. Missing future current slots require new QA-ready current assets; never revive a legacy draft, backdate or catch up.",
+  "network_capacity_policy": "Read current provider errors and active scheduled records before each write. Exact user times cannot be shifted automatically. Explicit provider blocks hold only affected destinations; healthy destinations continue.",
+  "history_policy": "Historical snapshots remain audit-only. Published content is not modified or republished."
 }
