@@ -8,8 +8,10 @@ import os
 import shutil
 import subprocess
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
+import time
 import wave
 from pathlib import Path
 
@@ -120,10 +122,29 @@ def download_assets(manifest: dict, work: Path) -> list[tuple[Path, dict]]:
             suffix = ".jpg"
         path = asset_dir / f"asset-{i:02d}{suffix}"
         req = urllib.request.Request(
-            asset["url"], headers={"User-Agent": "SteliosSocialPreview/2.0"}
+            asset["url"],
+            headers={
+                "User-Agent": "SteliosSocialPreview/2.0 (video preview; contact via GitHub repo)",
+                "Accept": "image/avif,image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8",
+            },
         )
-        with urllib.request.urlopen(req, timeout=90) as response:
-            path.write_bytes(response.read())
+        last_error = None
+        for attempt in range(5):
+            try:
+                with urllib.request.urlopen(req, timeout=90) as response:
+                    path.write_bytes(response.read())
+                last_error = None
+                break
+            except urllib.error.HTTPError as exc:
+                last_error = exc
+                if exc.code != 429 or attempt == 4:
+                    raise
+                wait = 8 * (attempt + 1)
+                print(f"HTTP 429 for {asset['url']}; retrying in {wait}s")
+                time.sleep(wait)
+        if last_error is not None:
+            raise last_error
+        time.sleep(1.5)
         if path.stat().st_size < 10_000:
             raise RuntimeError(f"downloaded asset is unexpectedly small: {path.name}")
         downloaded.append((path, asset))
