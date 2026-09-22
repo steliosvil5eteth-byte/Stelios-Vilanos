@@ -430,7 +430,7 @@ def render_video(
     )
     style = (
         "FontName=DejaVu Sans,"
-        "FontSize=20,"
+        f"FontSize={int(manifest.get('subtitle_style', {}).get('font_size', 16))},"
         "PrimaryColour=&H00FFFFFF,"
         "OutlineColour=&H00000000,"
         "BackColour=&H90000000,"
@@ -440,7 +440,7 @@ def render_video(
         "Alignment=2,"
         "MarginL=92,"
         "MarginR=92,"
-        "MarginV=300"
+        f"MarginV={int(manifest.get('subtitle_style', {}).get('margin_vertical', 240))}"
     )
     run(
         [
@@ -504,8 +504,8 @@ def qa(final: Path, manifest: dict, photo_pool_size: int) -> dict:
         "duration_seconds": round(duration, 3),
         "resolution": f"{W}x{H}",
         "burned_subtitles": True,
-        "subtitle_font_size": 20,
-        "subtitle_margin_vertical": 300,
+        "subtitle_font_size": int(manifest.get("subtitle_style", {}).get("font_size", 16)),
+        "subtitle_margin_vertical": int(manifest.get("subtitle_style", {}).get("margin_vertical", 240)),
         "subtitle_max_lines": 2,
         "photo_based_visuals": True,
         "photo_pool_frames": photo_pool_size,
