@@ -1,0 +1,20 @@
+[
+  {
+    "id": "current-20260922-replacement-volcanic-lightning",
+    "voice": "el_GR-rapunzelina-medium",
+    "paid_fallback_used": false,
+    "duration_seconds": 173.967,
+    "preferred_duration_met": true,
+    "max_detected_silence_seconds": 0.542,
+    "trailing_silence_seconds": 0.0,
+    "resolution": "1080x1920",
+    "audio_streams": 1,
+    "background_music": false,
+    "burned_subtitles": true,
+    "avatar_presenter": false,
+    "segments": 24,
+    "source_note": "Fact basis: U.S. Geological Survey, Van Eaton et al. 2023 on Hunga lightning; Van Eaton et al. 2022 on the Taal volcanic thunderstorm; Cimarelli et al. 2022 review of volcanic electrification; Behnke, Van Eaton & Schultz 2025 on monitoring lightning and electrification in volcanic plumes. Visuals are deterministic original illustrations generated in-repo; no third-party photographs are reused.",
+    "speech_engine": "piper_local",
+    "local_offline_tts": true
+  }
+]
