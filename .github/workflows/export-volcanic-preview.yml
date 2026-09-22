@@ -28,4 +28,5 @@ jobs:
           path: |
             jobs/volcanic-lightning-preview-v2/volcanic-lightning-preview-v2-nestoras.mp4
             jobs/volcanic-lightning-preview-v2/qa.json
+            jobs/volcanic-lightning-preview-v2/subtitles.srt
           retention-days: 7
