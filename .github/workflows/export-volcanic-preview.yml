@@ -1,0 +1,31 @@
+name: Export volcanic Nestoras preview
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'exports/volcanic_preview_export.txt'
+
+permissions:
+  contents: read
+
+jobs:
+  export:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Check out media-output
+        uses: actions/checkout@v4
+        with:
+          ref: media-output
+      - name: Verify preview file
+        run: |
+          test -s jobs/volcanic-lightning-preview-v2/volcanic-lightning-preview-v2-nestoras.mp4
+          test -s jobs/volcanic-lightning-preview-v2/qa.json
+      - name: Upload preview artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: volcanic-lightning-nestoras-preview
+          path: |
+            jobs/volcanic-lightning-preview-v2/volcanic-lightning-preview-v2-nestoras.mp4
+            jobs/volcanic-lightning-preview-v2/qa.json
+          retention-days: 7
