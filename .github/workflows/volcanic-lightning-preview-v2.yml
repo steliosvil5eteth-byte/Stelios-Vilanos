@@ -51,7 +51,7 @@ jobs:
         run: |
           cat > "$RUNNER_TEMP/render_preview.py" <<'PY'
           from __future__ import annotations
-          import json, math, os, shutil, subprocess, sys, urllib.request, wave
+          import json, math, os, shutil, subprocess, sys, urllib.request, urllib.parse, wave
           from pathlib import Path
           from PIL import Image, ImageFilter, ImageOps, ImageDraw, ImageFont, ImageSequence
 
@@ -90,7 +90,7 @@ jobs:
           asset_dir.mkdir()
           downloaded=[]
           for i,a in enumerate(manifest['assets'],1):
-              suffix=Path(urllib.request.urlparse(a['url']).path).suffix or '.jpg'
+              suffix=Path(urllib.parse.urlparse(a['url']).path).suffix or '.jpg'
               if '?' in suffix: suffix=suffix.split('?')[0]
               p=asset_dir/f'asset-{i:02d}{suffix}'
               req=urllib.request.Request(a['url'],headers={'User-Agent':'SteliosSocialPreview/2.0'})
