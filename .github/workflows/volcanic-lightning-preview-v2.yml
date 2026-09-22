@@ -41,16 +41,19 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg python3-pil fonts-dejavu-core
-          python3 -m pip install --disable-pip-version-check --no-input pillow
 
-      - name: Render Nestoras photo preview
+      - name: Fetch existing volcanic visual assets
+        run: |
+          git fetch origin media-output --depth=1
+
+      - name: Render Nestoras final review preview
         env:
           AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
           AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
           OUTPUT_DIR: ${{ runner.temp }}/volcanic-preview
         run: |
           set -euo pipefail
-          python3 tools/render_volcanic_photo_nestoras_v2.py \
+          python3 tools/render_volcanic_nestoras_existing_assets.py \
             --manifest media_jobs/volcanic_lightning_preview_v2.json \
             --output "$OUTPUT_DIR"
 
@@ -60,22 +63,16 @@ jobs:
         run: |
           set -euo pipefail
           OUT="$RUNNER_TEMP/media-output-repo"
-          if git fetch origin media-output --depth=1; then
-            git worktree add --detach "$OUT" FETCH_HEAD
-          else
-            git worktree add --detach "$OUT" "$GITHUB_SHA"
-            git -C "$OUT" checkout --orphan media-output
-            git -C "$OUT" rm -rf .
-          fi
-          DEST="$OUT/jobs/volcanic-lightning-preview-v2"
+          git worktree add --detach "$OUT" origin/media-output
+          DEST="$OUT/jobs/volcanic-lightning-nestoras-final-preview"
           rm -rf "$DEST"
           mkdir -p "$DEST"
           cp -a "$OUTPUT_DIR/preview"/. "$DEST"/
           git -C "$OUT" config user.name 'github-actions[bot]'
           git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git -C "$OUT" add jobs/volcanic-lightning-preview-v2
+          git -C "$OUT" add jobs/volcanic-lightning-nestoras-final-preview
           if ! git -C "$OUT" diff --cached --quiet; then
-            git -C "$OUT" commit -m "Render volcanic lightning Nestoras photo preview v2"
+            git -C "$OUT" commit -m "Render final Nestoras volcanic lightning review preview"
             git -C "$OUT" push origin HEAD:media-output
           fi
           cat "$OUTPUT_DIR/preview/qa.json" >> "$GITHUB_STEP_SUMMARY"
