@@ -1,0 +1,50 @@
+{
+  "approved_for_generation": true,
+  "publish_ready": false,
+  "local_date": "2026-09-24",
+  "slot": "13:00",
+  "category": "dog_bartender_carousel",
+  "series": "Σκύλος Μπάρμαν — ο παράξενος πελάτης",
+  "reason_not_publish_ready": "No new photorealistic/cinematic four-card image set for 2026-09-24 has passed QA yet. Never reuse the 2026-09-23 customer/dialogue as tomorrow's post.",
+  "visual_rules": {
+    "style": "photorealistic cinematic bar",
+    "same_dog_identity": true,
+    "cartoon_animation_forbidden": true,
+    "new_strange_customer": true,
+    "vary_across_cards": ["angle", "crop", "pose", "action", "composition"],
+    "tiktok_assets": {
+      "count": 4,
+      "mime_types": ["image/jpeg", "image/webp"],
+      "width": 1080,
+      "height": 1080,
+      "silent": true,
+      "autoAddMusic": true,
+      "mp4_fallback_allowed": false
+    }
+  },
+  "dialogue": [
+    {
+      "card": 1,
+      "hook": true,
+      "customer": "Έχεις ποτό που να στείλει μήνυμα στην πρώην μου χωρίς να το στείλω εγώ;",
+      "dog": "Έχω νερό. Για θαύματα, το μπαρ απέναντι."
+    },
+    {
+      "card": 2,
+      "customer": "Ναι, αλλά να φαίνεται ότι στάλθηκε κατά λάθος.",
+      "dog": "Να σας βάλω πάγο ή δικηγόρο;"
+    },
+    {
+      "card": 3,
+      "customer": "Στείλ’ το εσύ. Εσύ είσαι σκύλος, δεν θα θυμώσει μαζί σου.",
+      "dog": "Κρατάω το μπαρ. Όχι τις επαφές σας."
+    },
+    {
+      "card": 4,
+      "payoff": true,
+      "customer": "Τελικά βάλε κάτι δυνατό.",
+      "dog": "Ένα νερό. Αύριο θα με ευχαριστείς."
+    }
+  ],
+  "publishing_rule": "Keep 13:00 blocked until four NEW exact-1080x1080 silent JPEG/WebP cards pass visual/content QA. If Facebook/Instagram ever publish successfully before a TikTok repair, preserve them and repair TikTok only."
+}
