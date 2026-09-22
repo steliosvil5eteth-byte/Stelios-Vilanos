@@ -30,7 +30,7 @@ jobs:
           sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
           python3 -m pip install --disable-pip-version-check --no-input azure-cognitiveservices-speech
 
-      - name: Fetch corrected volcanic visual set
+      - name: Fetch volcanic visual set
         run: |
           set -euo pipefail
           git fetch origin media-output --depth=1
@@ -39,176 +39,150 @@ jobs:
           test -d "$SRC"
           mkdir -p "$RUNNER_TEMP/volcano/scenes"
           cp "$SRC"/scene-*.jpg "$RUNNER_TEMP/volcano/scenes/"
-          ls -lh "$RUNNER_TEMP/volcano/scenes" | head
+          test "$(ls "$RUNNER_TEMP/volcano/scenes"/scene-*.jpg | wc -l)" -ge 20
 
-      - name: Synthesize full Nestoras narration in one request
+      - name: Synthesize Nestoras in one request
         run: |
           set -euo pipefail
           mkdir -p "$RUNNER_TEMP/volcano"
           python3 - <<'PY'
-          import json, os, subprocess
+          import json, os, subprocess, re
           from pathlib import Path
           import azure.cognitiveservices.speech as speechsdk
 
           root = Path(os.environ["RUNNER_TEMP"]) / "volcano"
           script = Path("voice_demo/volcanic_lightning_nestoras_final_v4.txt").read_text(encoding="utf-8").strip()
-          if not script:
-              raise SystemExit("empty script")
 
-          key = os.environ["AZURE_SPEECH_KEY"]
-          region = os.environ["AZURE_SPEECH_REGION"]
-          speech_config = speechsdk.SpeechConfig(subscription=key, region=region)
+          speech_config = speechsdk.SpeechConfig(
+              subscription=os.environ["AZURE_SPEECH_KEY"],
+              region=os.environ["AZURE_SPEECH_REGION"]
+          )
           speech_config.speech_synthesis_voice_name = "el-GR-NestorasNeural"
           speech_config.set_speech_synthesis_output_format(
               speechsdk.SpeechSynthesisOutputFormat.Riff24Khz16BitMonoPcm
           )
 
           wav = root / "nestoras.wav"
-          audio_config = speechsdk.audio.AudioOutputConfig(filename=str(wav))
-          synth = speechsdk.SpeechSynthesizer(speech_config=speech_config, audio_config=audio_config)
+          synth = speechsdk.SpeechSynthesizer(
+              speech_config=speech_config,
+              audio_config=speechsdk.audio.AudioOutputConfig(filename=str(wav))
+          )
 
-          boundaries = []
-          def on_word(evt):
+          bounds=[]
+          def wb(evt):
               try:
-                  boundaries.append({
+                  bounds.append({
                       "text": evt.text,
-                      "offset": float(evt.audio_offset) / 10_000_000.0,
-                      "text_offset": int(evt.text_offset),
-                      "word_length": int(evt.word_length),
+                      "offset": float(evt.audio_offset)/10000000.0
                   })
               except Exception:
                   pass
+          synth.synthesis_word_boundary.connect(wb)
 
-          synth.synthesis_word_boundary.connect(on_word)
-          result = synth.speak_text_async(script).get()
+          result=synth.speak_text_async(script).get()
           if result.reason != speechsdk.ResultReason.SynthesizingAudioCompleted:
-              details = speechsdk.SpeechSynthesisCancellationDetails(result)
+              details=speechsdk.SpeechSynthesisCancellationDetails(result)
               raise SystemExit(f"Nestoras synthesis failed: {details.reason} {details.error_details}")
 
-          cp = subprocess.run(
+          duration=float(subprocess.run(
               ["ffprobe","-v","error","-show_entries","format=duration","-of","default=nk=1:nw=1",str(wav)],
-              check=True, text=True, capture_output=True
-          )
-          duration = float(cp.stdout.strip())
+              check=True,text=True,capture_output=True
+          ).stdout.strip())
           if duration <= 80:
-              raise SystemExit(f"duration gate failed: {duration:.3f}s")
+              raise SystemExit(f"duration gate failed: {duration:.3f}")
 
-          (root / "word-boundaries.json").write_text(
-              json.dumps(boundaries, ensure_ascii=False, indent=2), encoding="utf-8"
-          )
-          (root / "meta.json").write_text(
-              json.dumps({
-                  "voice": "el-GR-NestorasNeural",
-                  "duration_seconds": round(duration, 3),
-                  "word_boundaries": len(boundaries),
-                  "background_music": False,
-                  "preview_only": True
-              }, ensure_ascii=False, indent=2), encoding="utf-8"
-          )
+          (root/"word-boundaries.json").write_text(json.dumps(bounds,ensure_ascii=False,indent=2),encoding="utf-8")
+          (root/"meta.json").write_text(json.dumps({
+              "voice":"el-GR-NestorasNeural",
+              "duration_seconds":round(duration,3),
+              "word_boundaries":len(bounds),
+              "background_music":False,
+              "preview_only":True
+          },ensure_ascii=False,indent=2),encoding="utf-8")
           print(f"duration_seconds={duration:.3f}")
-          print(f"word_boundaries={len(boundaries)}")
+          print(f"word_boundaries={len(bounds)}")
           PY
 
-      - name: Build synchronized compact subtitles
+      - name: Build synchronized compact SRT subtitles
         run: |
           set -euo pipefail
           python3 - <<'PY'
-          import json, os, re, subprocess
+          import json, os, re
           from pathlib import Path
 
-          root = Path(os.environ["RUNNER_TEMP"]) / "volcano"
-          script = Path("voice_demo/volcanic_lightning_nestoras_final_v4.txt").read_text(encoding="utf-8").strip()
-          meta = json.loads((root / "meta.json").read_text(encoding="utf-8"))
-          duration = float(meta["duration_seconds"])
-          boundaries = json.loads((root / "word-boundaries.json").read_text(encoding="utf-8"))
+          root=Path(os.environ["RUNNER_TEMP"])/"volcano"
+          script=Path("voice_demo/volcanic_lightning_nestoras_final_v4.txt").read_text(encoding="utf-8").strip()
+          meta=json.loads((root/"meta.json").read_text(encoding="utf-8"))
+          duration=float(meta["duration_seconds"])
+          bounds=json.loads((root/"word-boundaries.json").read_text(encoding="utf-8"))
 
-          def ass_time(sec):
-              sec = max(0.0, sec)
-              h = int(sec // 3600)
-              sec -= h * 3600
-              m = int(sec // 60)
-              s = sec - m * 60
-              return f"{h}:{m:02d}:{s:05.2f}"
+          def ts(sec):
+              ms=int(round(max(0.0,sec)*1000))
+              h,ms=divmod(ms,3600000)
+              m,ms=divmod(ms,60000)
+              s,ms=divmod(ms,1000)
+              return f"{h:02d}:{m:02d}:{s:02d},{ms:03d}"
 
-          captions = []
-          if len(boundaries) >= 20:
-              group = []
-              for i, b in enumerate(boundaries):
+          captions=[]
+          if len(bounds)>=20:
+              group=[]
+              for i,b in enumerate(bounds):
                   group.append(b)
-                  joined = " ".join(x["text"] for x in group)
-                  end_sentence = bool(re.search(r"[.!;;?…]$", b["text"]))
-                  if len(group) >= 5 or len(joined) >= 34 or end_sentence:
-                      start = float(group[0]["offset"])
-                      end = float(boundaries[i+1]["offset"]) if i+1 < len(boundaries) else duration
-                      captions.append((start, max(start + 0.25, end), joined))
-                      group = []
+                  joined=" ".join(x["text"] for x in group)
+                  end_sentence=bool(re.search(r"[.!;;?…]$",b["text"]))
+                  if len(group)>=5 or len(joined)>=34 or end_sentence:
+                      st=float(group[0]["offset"])
+                      en=float(bounds[i+1]["offset"]) if i+1<len(bounds) else duration
+                      captions.append((st,max(st+0.25,en),joined))
+                      group=[]
               if group:
-                  start = float(group[0]["offset"])
-                  captions.append((start, duration, " ".join(x["text"] for x in group)))
+                  captions.append((float(group[0]["offset"]),duration," ".join(x["text"] for x in group)))
           else:
-              words = script.split()
-              weights = [max(1, len(w)) for w in words]
-              total = sum(weights)
-              t = 0.0
-              group = []
-              group_start = 0.0
-              consumed = 0
-              for idx, (w, wt) in enumerate(zip(words, weights)):
+              words=script.split()
+              weights=[max(1,len(w)) for w in words]
+              total=sum(weights)
+              consumed=0
+              group=[]
+              group_start=0.0
+              for w,wt in zip(words,weights):
                   if not group:
-                      group_start = duration * consumed / total
+                      group_start=duration*consumed/total
                   group.append(w)
-                  consumed += wt
-                  joined = " ".join(group)
-                  if len(group) >= 5 or len(joined) >= 34 or re.search(r"[.!;;?…]$", w):
-                      end = duration * consumed / total
-                      captions.append((group_start, max(group_start + 0.25, end), joined))
-                      group = []
+                  consumed+=wt
+                  joined=" ".join(group)
+                  if len(group)>=5 or len(joined)>=34 or re.search(r"[.!;;?…]$",w):
+                      en=duration*consumed/total
+                      captions.append((group_start,max(group_start+0.25,en),joined))
+                      group=[]
               if group:
-                  captions.append((group_start, duration, " ".join(group)))
+                  captions.append((group_start,duration," ".join(group)))
 
-          def two_lines(text, max_chars=30):
-              words = text.split()
-              lines = []
-              cur = ""
+          def wrap2(text,max_chars=30):
+              words=text.split()
+              lines=[]
+              cur=""
               for w in words:
-                  cand = (cur + " " + w).strip()
-                  if cur and len(cand) > max_chars:
+                  cand=(cur+" "+w).strip()
+                  if cur and len(cand)>max_chars:
                       lines.append(cur)
-                      cur = w
+                      cur=w
                   else:
-                      cur = cand
+                      cur=cand
               if cur:
                   lines.append(cur)
-              if len(lines) > 2:
-                  # rebalance to exactly 2 lines
-                  mid = max(1, len(words)//2)
-                  lines = [" ".join(words[:mid]), " ".join(words[mid:])]
-              return r"\N".join(lines[:2])
+              if len(lines)>2:
+                  mid=max(1,len(words)//2)
+                  lines=[" ".join(words[:mid])," ".join(words[mid:])]
+              return "\n".join(lines[:2])
 
-          header = "\\n".join([
-              "[Script Info]",
-              "ScriptType: v4.00+",
-              "PlayResX: 1080",
-              "PlayResY: 1920",
-              "WrapStyle: 2",
-              "ScaledBorderAndShadow: yes",
-              "",
-              "[V4+ Styles]",
-              "Format: Name,Fontname,Fontsize,PrimaryColour,SecondaryColour,OutlineColour,BackColour,Bold,Italic,Underline,StrikeOut,ScaleX,ScaleY,Spacing,Angle,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV,Encoding",
-              "Style: Main,DejaVu Sans,20,&H00FFFFFF,&H000000FF,&H00101010,&H90000000,-1,0,0,0,100,100,0,0,3,1,0,2,96,96,300,1",
-              "Style: Hook,DejaVu Sans,24,&H00FFFFFF,&H000000FF,&H00000000,&HA0000000,-1,0,0,0,100,100,0,0,3,1,0,2,96,96,300,1",
-              "",
-              "[Events]",
-              "Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text",
-              ""
-          ])
-          rows = []
-          for i, (st, en, txt) in enumerate(captions):
-              style = "Hook" if i < 2 else "Main"
-              safe = txt.replace("{", "(").replace("}", ")")
-              rows.append(f"Dialogue: 0,{ass_time(st)},{ass_time(en)},{style},,0,0,0,,{two_lines(safe)}")
-          (root / "subs.ass").write_text(header + "\n".join(rows) + "\n", encoding="utf-8")
-          print(f"captions={len(rows)}")
+          out=[]
+          for idx,(st,en,txt) in enumerate(captions,1):
+              out.append(str(idx))
+              out.append(f"{ts(st)} --> {ts(en)}")
+              out.append(wrap2(txt))
+              out.append("")
+          (root/"subs.srt").write_text("\n".join(out),encoding="utf-8")
+          print(f"captions={len(captions)}")
           PY
 
       - name: Assemble multi-image 9x16 preview
@@ -218,63 +192,60 @@ jobs:
           DUR=$(python3 -c 'import json,os; print(json.load(open(os.path.join(os.environ["RUNNER_TEMP"],"volcano","meta.json")))["duration_seconds"])')
           COUNT=$(ls "$ROOT/scenes"/scene-*.jpg | wc -l)
           PER=$(python3 -c "print(float('$DUR')/int('$COUNT'))")
+          FRAMES=$(python3 -c "import math; print(max(1,math.ceil(float('$PER')*30)))")
           mkdir -p "$ROOT/clips"
           : > "$ROOT/clips.txt"
           i=0
           for img in "$ROOT"/scenes/scene-*.jpg; do
             i=$((i+1))
             clip="$ROOT/clips/clip-$(printf '%02d' "$i").mp4"
-            frames=$(python3 -c "import math; print(max(1,math.ceil(float('$PER')*30)))")
-            ffmpeg -y -loglevel error -loop 1 -i "$img"               -vf "scale=1200:2134,zoompan=z='min(zoom+0.00022,1.035)':x='iw/2-(iw/zoom/2)+7*sin(on/47)':y='ih/2-(ih/zoom/2)+5*cos(on/53)':d=$frames:s=1080x1920:fps=30,format=yuv420p"               -t "$PER" -an -c:v libx264 -preset veryfast -crf 22 -pix_fmt yuv420p "$clip"
+            ffmpeg -y -loglevel error -loop 1 -i "$img" -vf "scale=1200:2134,zoompan=z='min(zoom+0.00022,1.035)':x='iw/2-(iw/zoom/2)+7*sin(on/47)':y='ih/2-(ih/zoom/2)+5*cos(on/53)':d=$FRAMES:s=1080x1920:fps=30,format=yuv420p" -t "$PER" -an -c:v libx264 -preset veryfast -crf 22 -pix_fmt yuv420p "$clip"
             printf "file '%s'\n" "$clip" >> "$ROOT/clips.txt"
           done
-
-          ffmpeg -y -loglevel error -f concat -safe 0 -i "$ROOT/clips.txt"             -an -c:v libx264 -preset veryfast -crf 22 -pix_fmt yuv420p "$ROOT/visual.mp4"
-
-          ffmpeg -y -loglevel error -i "$ROOT/visual.mp4" -i "$ROOT/nestoras.wav"             -vf "ass=$ROOT/subs.ass"             -c:v libx264 -preset medium -crf 20 -pix_fmt yuv420p             -c:a aac -b:a 128k -ar 48000 -ac 1 -shortest -movflags +faststart             "$ROOT/volcanic-lightning-nestoras-final-v4.mp4"
+          ffmpeg -y -loglevel error -f concat -safe 0 -i "$ROOT/clips.txt" -an -c:v libx264 -preset veryfast -crf 22 -pix_fmt yuv420p "$ROOT/visual.mp4"
+          STYLE="FontName=DejaVu Sans,FontSize=20,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,BackColour=&H90000000,BorderStyle=3,Outline=1,Shadow=0,Alignment=2,MarginL=92,MarginR=92,MarginV=300"
+          ffmpeg -y -loglevel error -i "$ROOT/visual.mp4" -i "$ROOT/nestoras.wav" -vf "subtitles='$ROOT/subs.srt':force_style='$STYLE'" -c:v libx264 -preset medium -crf 20 -pix_fmt yuv420p -c:a aac -b:a 128k -ar 48000 -ac 1 -shortest -movflags +faststart "$ROOT/volcanic-lightning-nestoras-final-v4.mp4"
 
       - name: Strict QA
         run: |
           set -euo pipefail
-          ROOT="$RUNNER_TEMP/volcano"
           python3 - <<'PY'
           import json, os, subprocess
           from pathlib import Path
-          root = Path(os.environ["RUNNER_TEMP"]) / "volcano"
-          video = root / "volcanic-lightning-nestoras-final-v4.mp4"
-          p = subprocess.run(
+          root=Path(os.environ["RUNNER_TEMP"])/"volcano"
+          video=root/"volcanic-lightning-nestoras-final-v4.mp4"
+          dur=float(subprocess.run(
               ["ffprobe","-v","error","-show_entries","format=duration","-of","default=nk=1:nw=1",str(video)],
-              check=True, text=True, capture_output=True
-          )
-          dur = float(p.stdout.strip())
-          streams = json.loads(subprocess.run(
+              check=True,text=True,capture_output=True
+          ).stdout.strip())
+          streams=json.loads(subprocess.run(
               ["ffprobe","-v","error","-show_streams","-of","json",str(video)],
-              check=True, text=True, capture_output=True
+              check=True,text=True,capture_output=True
           ).stdout)["streams"]
-          vids = [s for s in streams if s.get("codec_type") == "video"]
-          auds = [s for s in streams if s.get("codec_type") == "audio"]
-          if len(vids) != 1 or len(auds) != 1:
+          vids=[s for s in streams if s.get("codec_type")=="video"]
+          auds=[s for s in streams if s.get("codec_type")=="audio"]
+          if len(vids)!=1 or len(auds)!=1:
               raise SystemExit("stream QA failed")
-          if int(vids[0].get("width",0)) != 1080 or int(vids[0].get("height",0)) != 1920:
+          if int(vids[0].get("width",0))!=1080 or int(vids[0].get("height",0))!=1920:
               raise SystemExit("resolution QA failed")
-          if dur <= 80:
+          if dur<=80:
               raise SystemExit("duration QA failed")
-          qa = {
-              "preview_only": True,
-              "published": False,
-              "voice": "el-GR-NestorasNeural",
-              "duration_seconds": round(dur,3),
-              "resolution": "1080x1920",
-              "audio_streams": 1,
-              "background_music": False,
-              "burned_subtitles": True,
-              "subtitle_font_size": 20,
-              "subtitle_max_lines": 2,
-              "subtitle_safe_zone": True,
-              "multi_image_visuals": True,
-              "visual_scene_count": 25
+          qa={
+              "preview_only":True,
+              "published":False,
+              "voice":"el-GR-NestorasNeural",
+              "duration_seconds":round(dur,3),
+              "resolution":"1080x1920",
+              "audio_streams":1,
+              "background_music":False,
+              "burned_subtitles":True,
+              "subtitle_font_size":20,
+              "subtitle_max_lines":2,
+              "subtitle_safe_zone":True,
+              "multi_image_visuals":True,
+              "visual_scene_count":25
           }
-          (root / "qa.json").write_text(json.dumps(qa,ensure_ascii=False,indent=2),encoding="utf-8")
+          (root/"qa.json").write_text(json.dumps(qa,ensure_ascii=False,indent=2),encoding="utf-8")
           print(json.dumps(qa,ensure_ascii=False,indent=2))
           PY
 
@@ -285,7 +256,7 @@ jobs:
           path: |
             ${{ runner.temp }}/volcano/volcanic-lightning-nestoras-final-v4.mp4
             ${{ runner.temp }}/volcano/qa.json
-            ${{ runner.temp }}/volcano/subs.ass
+            ${{ runner.temp }}/volcano/subs.srt
             ${{ runner.temp }}/volcano/meta.json
           retention-days: 7
 
@@ -300,7 +271,7 @@ jobs:
           mkdir -p "$DEST"
           cp "$RUNNER_TEMP/volcano/volcanic-lightning-nestoras-final-v4.mp4" "$DEST/"
           cp "$RUNNER_TEMP/volcano/qa.json" "$DEST/"
-          cp "$RUNNER_TEMP/volcano/subs.ass" "$DEST/"
+          cp "$RUNNER_TEMP/volcano/subs.srt" "$DEST/"
           git -C "$OUT" config user.name 'github-actions[bot]'
           git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git -C "$OUT" add jobs/volcanic-lightning-nestoras-final-v4
