@@ -1,4 +1,4 @@
-name: CURRENT narrated features - Azure F0 Nestoras
+name: CURRENT narrated features - Piper local Greek
 
 on:
   push:
@@ -23,39 +23,44 @@ jobs:
       - name: Check out approved current workflow
         uses: actions/checkout@v4
 
-      - name: Verify Azure F0 and no-paid-fallback policy
+      - name: Verify current free-local policy
         run: |
           python3 - <<'PY'
           import json
           from pathlib import Path
-          cfg=json.loads(Path('config/integrations.json').read_text(encoding='utf-8'))['azure_speech']
-          assert cfg['enabled'] is True
-          assert cfg['tier'] == 'F0'
-          assert cfg['default_voice'] == 'el-GR-NestorasNeural'
-          assert cfg['paid_fallback_allowed'] is False
-          assert cfg['heygen_fallback_allowed'] is False
           manifest=json.loads(Path('media_jobs/narrated_feature_current.json').read_text(encoding='utf-8'))
           assert manifest['approved'] is True
           assert manifest['paid_generation_allowed'] is False
-          total_chars=sum(len(s) for j in manifest['jobs'] for s in j.get('segments',[]))
-          if total_chars > 20000:
-              raise SystemExit(f'batch too large for conservative F0 run: {total_chars} chars')
-          print(f'F0 policy verified; requested characters={total_chars}')
+          for job in manifest['jobs']:
+              assert job['voice'] == 'el_GR-rapunzelina-medium'
+              assert job['slot'] in {'17:00','23:00'}
+          print('Current policy verified: local Piper only; no paid fallback.')
           PY
 
-      - name: Install deterministic media tools
+      - name: Install deterministic media tools and Piper
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg python3-pil fonts-dejavu-core
+          sudo apt-get install -y -qq ffmpeg python3-pil fonts-dejavu-core curl
+          python3 -m pip install --disable-pip-version-check --no-input piper-tts
+          command -v piper
 
-      - name: Render strict Nestoras features
+      - name: Download pinned Greek Piper voice
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/piper"
+          BASE='https://huggingface.co/rhasspy/piper-voices/resolve/main/el/el_GR/rapunzelina/medium'
+          curl -L --fail --retry 3 "$BASE/el_GR-rapunzelina-medium.onnx" -o "$RUNNER_TEMP/piper/el_GR-rapunzelina-medium.onnx"
+          curl -L --fail --retry 3 "$BASE/el_GR-rapunzelina-medium.onnx.json" -o "$RUNNER_TEMP/piper/el_GR-rapunzelina-medium.onnx.json"
+          test -s "$RUNNER_TEMP/piper/el_GR-rapunzelina-medium.onnx"
+          test -s "$RUNNER_TEMP/piper/el_GR-rapunzelina-medium.onnx.json"
+
+      - name: Render strict Piper features
         env:
-          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
-          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+          PIPER_MODEL: ${{ runner.temp }}/piper/el_GR-rapunzelina-medium.onnx
           OUTPUT_DIR: ${{ runner.temp }}/finished
         run: |
           set -euo pipefail
-          python3 tools/render_narrated_feature_strict.py \
+          python3 tools/render_narrated_feature_piper.py \
             --manifest media_jobs/narrated_feature_current.json \
             --output "$OUTPUT_DIR"
 
@@ -79,9 +84,9 @@ jobs:
           git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git -C "$OUT" add jobs
           if ! git -C "$OUT" diff --cached --quiet; then
-            git -C "$OUT" commit -m "Render QA-passed Azure F0 Nestoras features $BATCH"
+            git -C "$OUT" commit -m "Render QA-passed Piper features $BATCH"
             git -C "$OUT" push origin HEAD:media-output
           fi
           echo "batch=$BATCH" >> "$GITHUB_STEP_SUMMARY"
           cat "$OUTPUT_DIR/qa-summary.json" >> "$GITHUB_STEP_SUMMARY"
-          echo "No background music, avatar, paid fallback or social publishing was used." >> "$GITHUB_STEP_SUMMARY"
+          echo "Free local Piper voice, no background music, avatar, paid fallback or social publishing was used." >> "$GITHUB_STEP_SUMMARY"
