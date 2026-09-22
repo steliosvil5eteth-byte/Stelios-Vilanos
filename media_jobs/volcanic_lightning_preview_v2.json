@@ -35,14 +35,6 @@
   ],
   "assets": [
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Taal_Lightning_Strike_During_Eruption_%28retouched%29.jpg",
-      "credit": "Taal volcanic lightning — Etrhamjr; retouch Hike395 — CC BY-SA 4.0"
-    },
-    {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Taal_Lightning_Strike_During_Eruption_%28cropped%29.jpg",
-      "credit": "Taal volcanic lightning — Etrhamjr; crop Hike395 — CC BY-SA 4.0"
-    },
-    {
       "url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Galunggung.jpg",
       "credit": "Galunggung volcanic lightning — R. Hadian / USGS-NOAA — Public Domain"
     },
@@ -52,5 +44,5 @@
     }
   ],
   "source_note": "Facts based on USGS Volcano Hazards Program and Hunga Tonga volcanic-lightning research. Preview only; no social publishing.",
-  "render_revision": 4
+  "render_revision": 5
 }
