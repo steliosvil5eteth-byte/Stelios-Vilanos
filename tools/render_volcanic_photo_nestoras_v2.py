@@ -185,7 +185,19 @@ def synthesize_narration(manifest: dict, work: Path) -> tuple[list[str], list[Pa
     for i, text in enumerate(segments, 1):
         raw = work / f"seg-{i:02d}-raw.wav"
         clean = work / f"seg-{i:02d}.wav"
-        synthesize(text, raw, manifest["voice"])
+        # Azure F0 can return HTTP 429 when several narration jobs overlap.
+        # Keep this preview on the requested Nestoras voice and back off instead of
+        # silently substituting another voice.
+        for attempt in range(5):
+            try:
+                synthesize(text, raw, manifest["voice"])
+                break
+            except RuntimeError as exc:
+                if "429" not in str(exc) or attempt == 4:
+                    raise
+                wait = 20 * (attempt + 1)
+                print(f"Azure Speech 429 on segment {i}; retrying in {wait}s")
+                time.sleep(wait)
         trim_wav(raw, clean)
         d = ffprobe_duration(clean)
         if d < 0.4:
