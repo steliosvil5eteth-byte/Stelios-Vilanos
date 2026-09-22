@@ -1,5 +1,5 @@
 {
-  "version": 8,
+  "version": 9,
   "timezone": "Europe/Athens",
   "start_date": "2026-09-23",
   "current_cycle_date": "2026-09-23",
@@ -17,9 +17,9 @@
   "next_cycle_date": "2026-09-24",
   "next_theme": "all_six_every_day",
   "next_target_count": 6,
-  "next_scheduled_count": 0,
-  "last_reconciled_at": "2026-09-22T17:06:00+03:00",
-  "last_reconciled_basis": "Fresh Metricool live queue read for brand 7000636.",
+  "next_scheduled_count": 3,
+  "last_reconciled_at": "2026-09-22T17:24:00+03:00",
+  "last_reconciled_basis": "Fresh Metricool live queue read for brand 7000636 after safe scheduling of the QA-passed 11:00, 15:00 and 20:00 current packages for 24/09.",
   "daily_categories": [
     "zodiac_carousel",
     "dog_bartender_carousel",
@@ -52,8 +52,14 @@
       "rule": "No false rollback: keep verified active future records unless a concrete current defect is found."
     },
     "2026-09-24": {
-      "current_logical_slots_active_pending": [],
-      "active_logical_count": 0,
+      "current_logical_slots_active_pending": ["11:00", "15:00", "20:00"],
+      "active_logical_count": 3,
+      "published_claim": false,
+      "blocked_or_not_ready": {
+        "13:00": "No new photorealistic/cinematic four-card Dog Bartender image set has passed the exact 1080x1080 silent JPEG/WebP TikTok gate. A new dialogue brief exists, but it is not publish-ready.",
+        "17:00": "Volcanic-lightning Piper render/strict QA is in progress; do not schedule until the workflow finishes successfully and publishes a QA report/media artifact.",
+        "23:00": "Baba Yaga Piper render/strict QA is in progress; do not schedule until the workflow finishes successfully and publishes a QA report/media artifact."
+      },
       "legacy_drafts_present": ["18:00 Grand Prismatic"],
       "rule": "Legacy draft is not a current-program slot and must not be revived or treated as a replacement."
     },
