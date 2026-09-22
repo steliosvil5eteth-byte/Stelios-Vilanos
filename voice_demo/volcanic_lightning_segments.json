@@ -1,7 +1,7 @@
 {
   "voice": "el-GR-NestorasNeural",
   "topic": "Ηφαιστειακοί κεραυνοί",
-  "source_note": "Fact basis: USGS Volcano Hazards Program; Van Eaton et al. 2023 on Hunga Tonga-Hunga Ha'apai. No paid fallback.",
+  "source_note": "Fact basis: USGS Volcano Hazards Program; Van Eaton et al. 2023 on Hunga Tonga-Hunga Ha'apai. Preview only; do not publish.",
   "segments": [
     "Μπορεί ένα ηφαίστειο να δημιουργήσει τη δική του καταιγίδα;",
     "Ναι. Οι ηφαιστειακοί κεραυνοί είναι πραγματικό φυσικό φαινόμενο.",
@@ -36,5 +36,17 @@
     "Ένα ηφαιστειακό νέφος μπορεί να λειτουργήσει σαν τεράστια ηλεκτρική μηχανή.",
     "Αν σας άρεσε, ακολουθήστε για περισσότερα."
   ],
-  "render_revision": 2
+  "render_revision": 3,
+  "preview_only": true,
+  "subtitle_policy": {
+    "burned_in": true,
+    "max_lines": 2,
+    "safe_zone": true,
+    "smaller_than_previous": true
+  },
+  "visual_policy": {
+    "multiple_images": true,
+    "replace_previous_poor_visual": true,
+    "vertical_9_16": true
+  }
 }
