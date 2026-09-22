@@ -1,0 +1,18 @@
+{
+  "id": "current-20260924-1700-volcanic-lightning",
+  "voice": "el_GR-rapunzelina-medium",
+  "paid_fallback_used": false,
+  "duration_seconds": 146.177,
+  "preferred_duration_met": true,
+  "max_detected_silence_seconds": 0.503,
+  "trailing_silence_seconds": 0.0,
+  "resolution": "1080x1920",
+  "audio_streams": 1,
+  "background_music": false,
+  "burned_subtitles": true,
+  "avatar_presenter": false,
+  "segments": 25,
+  "source_note": "Fact basis: U.S. Geological Survey Volcano Hazards Program and Van Eaton et al. (2023), Geophysical Research Letters, DOI 10.1029/2022GL102341. Hunga 15 Jan 2022: water-rich plume at least 58 km high, nearly 200,000 flashes, peak over 2,600 flashes/min, radially expanding lightning rings. Visuals are deterministic original illustrations generated in-repo.",
+  "speech_engine": "piper_local",
+  "local_offline_tts": true
+}
