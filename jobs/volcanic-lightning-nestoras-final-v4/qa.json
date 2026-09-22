@@ -1,0 +1,15 @@
+{
+  "preview_only": true,
+  "published": false,
+  "voice": "el-GR-NestorasNeural",
+  "duration_seconds": 157.487,
+  "resolution": "1080x1920",
+  "audio_streams": 1,
+  "background_music": false,
+  "burned_subtitles": true,
+  "subtitle_font_size": 20,
+  "subtitle_max_lines": 2,
+  "subtitle_safe_zone": true,
+  "multi_image_visuals": true,
+  "visual_scene_count": 25
+}
