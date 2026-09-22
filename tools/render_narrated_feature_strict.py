@@ -14,6 +14,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 import render_narrated_feature as base
 import render_current_visuals as current_visuals
+import render_next_visuals as next_visuals
 
 
 def trim_edges_only(src: Path, dst: Path) -> None:
@@ -31,7 +32,7 @@ def trim_edges_only(src: Path, dst: Path) -> None:
 
 
 base.trim_wav = trim_edges_only
-base.make_scene = current_visuals.make_scene_factory(base.make_scene)
+base.make_scene = next_visuals.make_scene_factory(current_visuals.make_scene_factory(base.make_scene))
 
 if __name__ == "__main__":
     base.main()
