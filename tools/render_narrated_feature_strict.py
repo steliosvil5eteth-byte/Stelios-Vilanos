@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Strict wrapper for narrated features.
 
-Keeps the renderer's hard QA gates while trimming only leading/trailing Azure
+Keeps the renderer's hard QA gates while trimming only leading/trailing speech
 silence. It deliberately preserves natural internal pauses and has no paid
 fallback path. Current deterministic visual themes are rights-safe local art.
 """
@@ -15,6 +15,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 import render_narrated_feature as base
 import render_current_visuals as current_visuals
 import render_next_visuals as next_visuals
+import render_20260924_visuals as visuals_20260924
 
 
 def trim_edges_only(src: Path, dst: Path) -> None:
@@ -32,7 +33,11 @@ def trim_edges_only(src: Path, dst: Path) -> None:
 
 
 base.trim_wav = trim_edges_only
-base.make_scene = next_visuals.make_scene_factory(current_visuals.make_scene_factory(base.make_scene))
+base.make_scene = visuals_20260924.make_scene_factory(
+    next_visuals.make_scene_factory(
+        current_visuals.make_scene_factory(base.make_scene)
+    )
+)
 
 if __name__ == "__main__":
     base.main()
