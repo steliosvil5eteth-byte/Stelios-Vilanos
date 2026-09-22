@@ -1,0 +1,16 @@
+{
+  "id": "volcanic-lightning-nestoras-final-preview",
+  "preview_only": true,
+  "publish_to_social": false,
+  "voice": "el-GR-NestorasNeural",
+  "duration_seconds": 156.348,
+  "resolution": "1080x1920",
+  "burned_subtitles": true,
+  "subtitle_font_size": 20,
+  "subtitle_margin_vertical": 300,
+  "subtitle_max_lines": 2,
+  "photo_or_scene_count": 19,
+  "background_music": false,
+  "avatar_presenter": false,
+  "audio_streams": 1
+}
