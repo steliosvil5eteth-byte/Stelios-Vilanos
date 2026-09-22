@@ -1,0 +1,57 @@
+name: Repair Sep 23 card visuals
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'media_jobs/current_card_visual_fix_20260923.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: no-credit-media-output
+  cancel-in-progress: false
+
+jobs:
+  render-fix:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - name: Check out approved visual fix
+        uses: actions/checkout@v4
+      - name: Install deterministic media tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg python3-pil fonts-dejavu-core
+      - name: Render illustrated cards and one-layer local music slideshows
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/finished
+        run: |
+          /usr/bin/python3 tools/render_current_card_visual_fix.py --manifest media_jobs/current_card_visual_fix_20260923.json --output "$OUTPUT_DIR"
+      - name: Store QA-ready outputs on media-output branch
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/finished
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/media-output-repo"
+          if git fetch origin media-output --depth=1; then
+            git worktree add --detach "$OUT" FETCH_HEAD
+          else
+            git worktree add --detach "$OUT" "$GITHUB_SHA"
+            git -C "$OUT" checkout --orphan media-output
+            git -C "$OUT" rm -rf .
+          fi
+          mkdir -p "$OUT/jobs"
+          rm -rf "$OUT/jobs/fix-20260923-card-visuals"
+          cp -a "$OUTPUT_DIR"/. "$OUT/jobs/"
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '418982+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/fix-20260923-card-visuals
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Render Sep 23 card visual fixes'
+            git -C "$OUT" push origin HEAD:media-output
+          fi
+          echo 'No paid AI API or publishing API was used by this workflow.' >> "$GITHUB_STEP_SUMMARY"
