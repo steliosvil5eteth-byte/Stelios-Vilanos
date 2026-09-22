@@ -9,8 +9,10 @@ music, and unintended dead-air gaps of about two seconds or longer fail QA.
 """
 from __future__ import annotations
 
+import json
 import os
 import subprocess
+import sys
 from pathlib import Path
 
 import render_narrated_feature_strict as strict
@@ -51,6 +53,30 @@ def synthesize_piper(text: str, output_path: Path, voice: str = VOICE) -> None:
     raw.unlink(missing_ok=True)
 
 
+def patch_qa_metadata(path: Path) -> None:
+    """Replace the base renderer's legacy Azure-only label for Piper runs."""
+    if not path.exists():
+        return
+    data = json.loads(path.read_text(encoding="utf-8"))
+    reports = data if isinstance(data, list) else [data]
+    for report in reports:
+        if isinstance(report, dict):
+            report.pop("azure_only", None)
+            report["speech_engine"] = "piper_local"
+            report["local_offline_tts"] = True
+            report["paid_fallback_used"] = False
+    path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+
+def output_dir_from_argv() -> Path | None:
+    if "--output" in sys.argv:
+        idx = sys.argv.index("--output")
+        if idx + 1 < len(sys.argv):
+            return Path(sys.argv[idx + 1])
+    value = os.environ.get("OUTPUT_DIR", "").strip()
+    return Path(value) if value else None
+
+
 # Patch only the synthesis/policy surface. Natural speed is Piper's default
 # length scale (1.0); no speed manipulation is passed to the CLI.
 base.synthesize = synthesize_piper
@@ -64,3 +90,8 @@ base.MAX_TRAILING = 0.50
 
 if __name__ == "__main__":
     base.main()
+    out = output_dir_from_argv()
+    if out is not None:
+        patch_qa_metadata(out / "qa-summary.json")
+        for qa in out.glob("*/qa.json"):
+            patch_qa_metadata(qa)
