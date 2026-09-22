@@ -1,0 +1,139 @@
+{
+  "batch_id": "b229e76e9916f1b7",
+  "batch_sha256": "b229e76e9916f1b782f760b1144a739e90a4e7f2b76d3bbf860b983977fab4de",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "current-20260924-1100-zodiac-group-a-hidden-interest",
+      "status": "rendered",
+      "card_count": 6,
+      "order_verified": true,
+      "readable_min_font_px": 30,
+      "final_duration": 30.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "files": [
+        {
+          "name": "current-20260924-1100-zodiac-group-a-hidden-interest-01.jpg",
+          "bytes": 147617,
+          "sha256": "be0c447fa6ada5be8bb836a94de9547e0a3d0869e08c3813662e7b6379c56ba5"
+        },
+        {
+          "name": "current-20260924-1100-zodiac-group-a-hidden-interest-02.jpg",
+          "bytes": 143677,
+          "sha256": "e8e4787fc6c0745ae86d52b06f6acae23da00c8453860e1708c43716df934357"
+        },
+        {
+          "name": "current-20260924-1100-zodiac-group-a-hidden-interest-03.jpg",
+          "bytes": 157775,
+          "sha256": "cb695540e51da0d5db741395bed170fc9556c31a72a1ce3c2e5e59e05305db0a"
+        },
+        {
+          "name": "current-20260924-1100-zodiac-group-a-hidden-interest-04.jpg",
+          "bytes": 159492,
+          "sha256": "5cba9ac8b5cd6f1bc7fe533848bc470f260e6d878c40a1c330768808bf8df452"
+        },
+        {
+          "name": "current-20260924-1100-zodiac-group-a-hidden-interest-05.jpg",
+          "bytes": 155863,
+          "sha256": "41f03efbebe061bd1d7b3b24833f48277aa9ca67b99ac2645195bedb00a71ea1"
+        },
+        {
+          "name": "current-20260924-1100-zodiac-group-a-hidden-interest-06.jpg",
+          "bytes": 176339,
+          "sha256": "beda3a227db03c963e4b36b07ef5a07d39c2319c7621ce2b567a8cfe1aa2986b"
+        },
+        {
+          "name": "current-20260924-1100-zodiac-group-a-hidden-interest.mp4",
+          "bytes": 466721,
+          "sha256": "57beb4e0466a79274eff26368e35d1be04055be64b92419cc5f835955ba04923"
+        }
+      ]
+    },
+    {
+      "id": "current-20260924-1500-balcony-light-story",
+      "status": "rendered",
+      "card_count": 5,
+      "order_verified": true,
+      "readable_min_font_px": 30,
+      "final_duration": 30.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "files": [
+        {
+          "name": "current-20260924-1500-balcony-light-story-01.jpg",
+          "bytes": 161601,
+          "sha256": "ed591cca2c5cac64e249ce3980b580c6b3c22edc6bea1002b8603b3ffa00fc70"
+        },
+        {
+          "name": "current-20260924-1500-balcony-light-story-02.jpg",
+          "bytes": 166933,
+          "sha256": "1e9e4af2a01bfdf7fae19b3875f77b1692dd78aa81538a0c92667cb815c9bce2"
+        },
+        {
+          "name": "current-20260924-1500-balcony-light-story-03.jpg",
+          "bytes": 185871,
+          "sha256": "8298a67fc633223985664e9613affc4b5dc9ef92e0dd07be6daff6e89d1a46c0"
+        },
+        {
+          "name": "current-20260924-1500-balcony-light-story-04.jpg",
+          "bytes": 169899,
+          "sha256": "1c106425d69711e11f6f6bbd3631db33bbce025a8e2a952a3aa0c37779a2378d"
+        },
+        {
+          "name": "current-20260924-1500-balcony-light-story-05.jpg",
+          "bytes": 159053,
+          "sha256": "ee8a0c1843f5985da88697a9324d95a664a6bd27896f6256f4c705679648b66f"
+        },
+        {
+          "name": "current-20260924-1500-balcony-light-story.mp4",
+          "bytes": 440886,
+          "sha256": "0b7ec781fc38af06a06f898bd4e7ca4c0a2e0f76e490ea70bd81f4ad8d4d4d31"
+        }
+      ]
+    },
+    {
+      "id": "current-20260924-2000-myth-truth-bats",
+      "status": "rendered",
+      "card_count": 4,
+      "order_verified": true,
+      "readable_min_font_px": 30,
+      "final_duration": 24.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "files": [
+        {
+          "name": "current-20260924-2000-myth-truth-bats-01.jpg",
+          "bytes": 100111,
+          "sha256": "0a4c67223a266d31c82c8e8efc0b88c6af96c76c382d3b5f2ed60ce61df8e36d"
+        },
+        {
+          "name": "current-20260924-2000-myth-truth-bats-02.jpg",
+          "bytes": 111797,
+          "sha256": "52d7a742ee428935648c5ffaa2a6cebc8d0312bdeb553f2f7c602fef9976d6b7"
+        },
+        {
+          "name": "current-20260924-2000-myth-truth-bats-03.jpg",
+          "bytes": 188752,
+          "sha256": "db1a793fb5ceffbb625ab43c97cbfbd3bb6b7cebb980b3a2bd4a4371c68dd3f9"
+        },
+        {
+          "name": "current-20260924-2000-myth-truth-bats-04.jpg",
+          "bytes": 178962,
+          "sha256": "e13b289404a5f672186bc5e3cb865d4e9920e522e1da85403c55cc4d5c5adc84"
+        },
+        {
+          "name": "current-20260924-2000-myth-truth-bats.mp4",
+          "bytes": 318530,
+          "sha256": "583952af9a5fc6f4f8bc97c4ba3a3c246f62380be43ea4807c953450f4b0b2c0"
+        }
+      ]
+    }
+  ]
+}
