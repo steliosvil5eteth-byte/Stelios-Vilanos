@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'media_jobs/survival_current.json'
+      - 'tools/render_survival_pack_v2.py'
   workflow_dispatch:
 
 permissions:
@@ -30,7 +31,7 @@ jobs:
         env:
           OUTPUT_DIR: ${{ runner.temp }}/finished
         run: |
-          /usr/bin/python3 tools/render_survival_pack.py --manifest media_jobs/survival_current.json --output "$OUTPUT_DIR"
+          /usr/bin/python3 tools/render_survival_pack_v2.py --manifest media_jobs/survival_current.json --output "$OUTPUT_DIR"
       - name: Store finished public assets on media-output
         env:
           OUTPUT_DIR: ${{ runner.temp }}/finished
