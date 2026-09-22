@@ -43,10 +43,6 @@
       "credit": "Taal volcanic lightning — Etrhamjr; crop Hike395 — CC BY-SA 4.0"
     },
     {
-      "url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Galunggung-crop.jpg",
-      "credit": "Galunggung 1982 — R. Hadian/USGS; crop Zanaq — CC BY-SA 1.0"
-    },
-    {
       "url": "https://d9-wret.s3.us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/media/images/tonga_goes_2022015_4k.gif",
       "credit": "Hunga Tonga GOES-17 animation — NASA/NOAA via USGS — Public Domain"
     },
@@ -68,5 +64,5 @@
     }
   ],
   "source_note": "Facts based on USGS Volcano Hazards Program, Hunga Tonga volcanic-lightning research, and documented Taal/Galunggung volcanic lightning. Preview only; no social publishing.",
-  "render_revision": 2
+  "render_revision": 3
 }
