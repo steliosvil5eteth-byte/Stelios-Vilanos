@@ -1,0 +1,87 @@
+name: Azure Nestoras segmented preview
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'voice_demo/volcanic_lightning_segments.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  synthesize:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    env:
+      AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+      AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install audio tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+
+      - name: Synthesize Nestoras segments
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/volcanic-lightning"
+          python3 - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          from tools.azure_speech_tts import synthesize, DEFAULT_VOICE
+
+          src=Path('voice_demo/volcanic_lightning_segments.json')
+          data=json.loads(src.read_text(encoding='utf-8'))
+          assert data['voice']=='el-GR-NestorasNeural'
+          segments=[s.strip() for s in data['segments'] if s.strip()]
+          assert len(segments) >= 20
+          out=Path(__import__('os').environ['RUNNER_TEMP'])/'volcanic-lightning'
+          rows=[]
+          for i,text in enumerate(segments,1):
+              raw=out/f'seg-{i:02d}-raw.wav'
+              clean=out/f'seg-{i:02d}.wav'
+              synthesize(text, raw, DEFAULT_VOICE)
+              subprocess.run([
+                  'ffmpeg','-y','-loglevel','error','-i',str(raw),
+                  '-af',
+                  'silenceremove=start_periods=1:start_duration=0.03:start_threshold=-48dB,'
+                  'areverse,'
+                  'silenceremove=start_periods=1:start_duration=0.03:start_threshold=-48dB,'
+                  'areverse',
+                  '-ar','24000','-ac','1','-c:a','pcm_s16le',str(clean)
+              ],check=True)
+              cp=subprocess.run([
+                  'ffprobe','-v','error','-show_entries','format=duration',
+                  '-of','default=noprint_wrappers=1:nokey=1',str(clean)
+              ],check=True,text=True,capture_output=True)
+              dur=float(cp.stdout.strip())
+              rows.append({'index':i,'text':text,'duration':dur,'file':clean.name})
+              raw.unlink(missing_ok=True)
+          (out/'segments.json').write_text(json.dumps(rows,ensure_ascii=False,indent=2),encoding='utf-8')
+          total=sum(r['duration'] for r in rows) + 0.16*(len(rows)-1)
+          (out/'summary.json').write_text(json.dumps({
+              'voice':DEFAULT_VOICE,
+              'segment_count':len(rows),
+              'estimated_total_seconds':round(total,3),
+              'paid_fallback_used':False
+          },ensure_ascii=False,indent=2),encoding='utf-8')
+          print(f'voice={DEFAULT_VOICE}')
+          print(f'segments={len(rows)}')
+          print(f'estimated_total_seconds={total:.3f}')
+          if total <= 80:
+              raise SystemExit(f'Duration gate failed: {total:.3f}s must be >80s')
+          PY
+
+      - name: Upload segmented Nestoras narration
+        uses: actions/upload-artifact@v4
+        with:
+          name: volcanic-lightning-nestoras-segments
+          path: |
+            ${{ runner.temp }}/volcanic-lightning/seg-*.wav
+            ${{ runner.temp }}/volcanic-lightning/segments.json
+            ${{ runner.temp }}/volcanic-lightning/summary.json
+          retention-days: 7
