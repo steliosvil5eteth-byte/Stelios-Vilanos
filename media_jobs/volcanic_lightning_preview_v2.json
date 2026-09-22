@@ -7,8 +7,8 @@
   "format": "1080x1920",
   "background_music": false,
   "subtitle_style": {
-    "font_size": 20,
-    "margin_vertical": 300,
+    "font_size": 16,
+    "margin_vertical": 240,
     "max_lines": 2,
     "safe_zone": true
   },
@@ -68,5 +68,5 @@
     }
   ],
   "source_note": "Final review preview: one-shot Azure Nestoras narration, existing multi-scene volcanic visuals, small burned-in subtitles, no social publishing.",
-  "render_revision": 7
+  "render_revision": 8
 }
