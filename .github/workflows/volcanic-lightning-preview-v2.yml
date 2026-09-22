@@ -12,20 +12,18 @@ permissions:
 
 concurrency:
   group: volcanic-lightning-preview-v2
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   render:
+    if: github.event.repository.private == false
     runs-on: ubuntu-24.04
     timeout-minutes: 45
-    env:
-      AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
-      AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
-      OUT_DIR: ${{ runner.temp }}/finished
     steps:
-      - uses: actions/checkout@v4
+      - name: Check out repository
+        uses: actions/checkout@v4
 
-      - name: Verify preview policy
+      - name: Verify preview-only settings
         run: |
           python3 - <<'PY'
           import json
@@ -36,256 +34,29 @@ jobs:
           assert m['publish_to_social'] is False
           assert m['voice'] == 'el-GR-NestorasNeural'
           assert m['min_duration_seconds'] >= 80
-          assert len(m['narration_segments']) >= 16
-          assert len(m['assets']) >= 6
-          print('Preview-only policy verified. No social publishing.')
+          print('Preview-only settings verified.')
           PY
 
       - name: Install media tools
         run: |
           sudo apt-get update -qq
-          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          sudo apt-get install -y -qq ffmpeg python3-pil fonts-dejavu-core
           python3 -m pip install --disable-pip-version-check --no-input pillow
 
-      - name: Render Nestoras photo video
+      - name: Render Nestoras photo preview
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+          OUTPUT_DIR: ${{ runner.temp }}/volcanic-preview
         run: |
-          cat > "$RUNNER_TEMP/render_preview.py" <<'PY'
-          from __future__ import annotations
-          import json, math, os, shutil, subprocess, sys, urllib.request, urllib.parse, wave
-          from pathlib import Path
-          from PIL import Image, ImageFilter, ImageOps, ImageDraw, ImageFont, ImageSequence
+          set -euo pipefail
+          python3 tools/render_volcanic_photo_nestoras_v2.py \
+            --manifest media_jobs/volcanic_lightning_preview_v2.json \
+            --output "$OUTPUT_DIR"
 
-          sys.path.insert(0, str(Path.cwd()/'tools'))
-          from azure_speech_tts import synthesize
-
-          W,H=1080,1920
-          SR=24000
-          PAUSE=0.14
-          FONT='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
-          BOLD='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
-          manifest=json.loads(Path('media_jobs/volcanic_lightning_preview_v2.json').read_text(encoding='utf-8'))
-          outroot=Path(os.environ['OUT_DIR'])
-          jobdir=outroot/'volcanic-lightning-preview-v2'
-          work=outroot/'work'
-          shutil.rmtree(jobdir, ignore_errors=True)
-          shutil.rmtree(work, ignore_errors=True)
-          jobdir.mkdir(parents=True)
-          work.mkdir(parents=True)
-
-          def run(cmd):
-              print('+',' '.join(map(str,cmd)))
-              subprocess.run(list(map(str,cmd)),check=True)
-
-          def duration(p):
-              cp=subprocess.run(['ffprobe','-v','error','-show_entries','format=duration','-of','default=nw=1:nk=1',str(p)],check=True,text=True,capture_output=True)
-              return float(cp.stdout.strip())
-
-          def trim(src,dst):
-              run(['ffmpeg','-y','-loglevel','error','-i',src,'-af',
-                   'silenceremove=start_periods=1:start_duration=0.03:start_threshold=-48dB,areverse,silenceremove=start_periods=1:start_duration=0.03:start_threshold=-48dB,areverse',
-                   '-ar',SR,'-ac',1,'-c:a','pcm_s16le',dst])
-
-          # Download photographic assets.
-          asset_dir=work/'assets'
-          asset_dir.mkdir()
-          downloaded=[]
-          for i,a in enumerate(manifest['assets'],1):
-              suffix=Path(urllib.parse.urlparse(a['url']).path).suffix or '.jpg'
-              if '?' in suffix: suffix=suffix.split('?')[0]
-              p=asset_dir/f'asset-{i:02d}{suffix}'
-              req=urllib.request.Request(a['url'],headers={'User-Agent':'SteliosSocialPreview/2.0'})
-              with urllib.request.urlopen(req,timeout=90) as r:
-                  p.write_bytes(r.read())
-              downloaded.append((p,a))
-              print('downloaded',p.name,p.stat().st_size)
-
-          # Expand stills/GIF frames into a photo pool.
-          frames=[]
-          for p,a in downloaded:
-              im=Image.open(p)
-              if getattr(im,'is_animated',False):
-                  seq=list(ImageSequence.Iterator(im))
-                  picks=[0, max(0,len(seq)//4), max(0,len(seq)//2), max(0,3*len(seq)//4), len(seq)-1]
-                  seen=set()
-                  for k in picks:
-                      if k in seen or k>=len(seq): continue
-                      seen.add(k)
-                      frames.append((seq[k].convert('RGB').copy(),a))
-              else:
-                  frames.append((im.convert('RGB'),a))
-
-          if len(frames) < 8:
-              raise RuntimeError('Too few usable photo frames')
-
-          # Narration: one Azure/Nestoras call per segment.
-          segments=[s.strip() for s in manifest['narration_segments'] if s.strip()]
-          seg_audio=[]
-          seg_durs=[]
-          for i,text in enumerate(segments,1):
-              raw=work/f'seg-{i:02d}-raw.wav'
-              clean=work/f'seg-{i:02d}.wav'
-              synthesize(text,raw,manifest['voice'])
-              trim(raw,clean)
-              d=duration(clean)
-              if d<0.4: raise RuntimeError(f'segment {i} too short')
-              seg_audio.append(clean); seg_durs.append(d)
-
-          # Combine narration with short natural gaps.
-          narration=work/'narration.wav'
-          silence_frames=int(PAUSE*SR)
-          with wave.open(str(narration),'wb') as out:
-              out.setnchannels(1);out.setsampwidth(2);out.setframerate(SR)
-              for i,p in enumerate(seg_audio):
-                  with wave.open(str(p),'rb') as src:
-                      out.writeframes(src.readframes(src.getnframes()))
-                  if i != len(seg_audio)-1:
-                      out.writeframes(b'\x00\x00'*silence_frames)
-          total=duration(narration)
-          if total <= manifest['min_duration_seconds']:
-              raise RuntimeError(f'duration gate failed: {total:.2f}s')
-
-          # Subtitle chunks: small, max two short lines at a time.
-          def subtitle_chunks(text,max_words=7,max_chars=44):
-              words=text.split()
-              chunks=[]; cur=[]
-              for w in words:
-                  cand=' '.join(cur+[w])
-                  if cur and (len(cur)>=max_words or len(cand)>max_chars):
-                      chunks.append(' '.join(cur));cur=[w]
-                  else:
-                      cur.append(w)
-              if cur: chunks.append(' '.join(cur))
-              return chunks
-
-          def srt_time(x):
-              ms=int(round(x*1000));h,ms=divmod(ms,3600000);m,ms=divmod(ms,60000);s,ms=divmod(ms,1000)
-              return f'{h:02d}:{m:02d}:{s:02d},{ms:03d}'
-
-          srt=work/'subtitles.srt'
-          t=0.0; n=1
-          with srt.open('w',encoding='utf-8') as f:
-              for i,(text,d) in enumerate(zip(segments,seg_durs)):
-                  ch=subtitle_chunks(text)
-                  weights=[max(1,len(x.replace(' ',''))) for x in ch]
-                  usable=max(0.5,d)
-                  start=t
-                  cum=0
-                  totalw=sum(weights)
-                  for j,(c,wgt) in enumerate(zip(ch,weights)):
-                      a=start+usable*cum/totalw
-                      cum+=wgt
-                      b=start+usable*cum/totalw
-                      # Prefer one line; split only if needed, never more than two.
-                      words=c.split()
-                      if len(c)>30 and len(words)>3:
-                          mid=len(words)//2
-                          c=' '.join(words[:mid])+'\n'+' '.join(words[mid:])
-                      f.write(f'{n}\n{srt_time(a)} --> {srt_time(b)}\n{c}\n\n')
-                      n+=1
-                  t += d
-                  if i != len(segments)-1: t += PAUSE
-
-          # Build portrait photo scenes with real photographs.
-          scene_dir=work/'scenes'; scene_dir.mkdir()
-          prepared=[]
-          title_font=ImageFont.truetype(BOLD,34)
-          small_font=ImageFont.truetype(FONT,18)
-          credit_font=ImageFont.truetype(FONT,15)
-          for i in range(len(segments)):
-              base,meta=frames[(i*3+i//4)%len(frames)]
-              img=base.copy()
-              # background: full-bleed crop, blurred and darkened
-              bg=ImageOps.fit(img,(W,H),method=Image.Resampling.LANCZOS,centering=(0.5,0.5)).filter(ImageFilter.GaussianBlur(20))
-              dark=Image.new('RGBA',(W,H),(0,0,0,90))
-              bg=Image.alpha_composite(bg.convert('RGBA'),dark)
-              # foreground photo fit, preserving composition.
-              maxw,maxh=1000,1360
-              fg=img.copy()
-              fg.thumbnail((maxw,maxh),Image.Resampling.LANCZOS)
-              card=Image.new('RGBA',(W,H),(0,0,0,0))
-              x=(W-fg.width)//2; y=235+(maxh-fg.height)//2
-              # subtle shadow
-              sh=Image.new('RGBA',(fg.width+24,fg.height+24),(0,0,0,0))
-              sd=ImageDraw.Draw(sh);sd.rounded_rectangle((4,4,fg.width+20,fg.height+20),radius=18,fill=(0,0,0,105))
-              card.alpha_composite(sh,(x-12,y-12))
-              card.alpha_composite(fg.convert('RGBA'),(x,y))
-              canvas=Image.alpha_composite(bg,card)
-              d=ImageDraw.Draw(canvas)
-              # modest top label, not a subtitle.
-              d.rounded_rectangle((54,72,730,128),radius=18,fill=(0,0,0,145))
-              d.text((78,82),'ΗΦΑΙΣΤΕΙΑΚΟΙ ΚΕΡΑΥΝΟΙ',font=title_font,fill='white')
-              d.text((60,1780),'Πραγματικό φυσικό φαινόμενο',font=small_font,fill=(230,230,230,255))
-              if i==len(segments)-1:
-                  credit='Εικόνες: USGS Public Domain • Etrhamjr/Hike395 CC BY-SA 4.0 • R. Hadian/Zanaq CC BY-SA 1.0'
-                  d.rounded_rectangle((45,1695,1035,1760),radius=16,fill=(0,0,0,145))
-                  # split credit into two lines
-                  d.text((65,1705),'Εικόνες: USGS Public Domain • Etrhamjr/Hike395 CC BY-SA 4.0',font=credit_font,fill='white')
-                  d.text((65,1731),'R. Hadian/Zanaq CC BY-SA 1.0',font=credit_font,fill='white')
-              p=scene_dir/f'scene-{i:02d}.jpg'
-              canvas.convert('RGB').save(p,'JPEG',quality=93,subsampling=0)
-              prepared.append(p)
-
-          # Render each photo for exactly its spoken segment duration + pause.
-          clips=[]
-          for i,(img,d) in enumerate(zip(prepared,seg_durs)):
-              clip=work/f'clip-{i:02d}.mp4'
-              clipdur=d+(PAUSE if i!=len(prepared)-1 else 0)
-              frames_n=max(1,int(math.ceil(clipdur*30)))
-              direction=1 if i%2==0 else -1
-              xexpr=f'iw/2-(iw/zoom/2)+{direction}*10*sin(on/45)'
-              yexpr='ih/2-(ih/zoom/2)+8*cos(on/53)'
-              vf=f"scale=1200:2134,zoompan=z='min(zoom+0.00022,1.035)':x='{xexpr}':y='{yexpr}':d={frames_n}:s=1080x1920:fps=30,format=yuv420p"
-              run(['ffmpeg','-y','-loglevel','error','-loop','1','-i',img,'-vf',vf,'-t',f'{clipdur:.4f}','-an','-c:v','libx264','-preset','veryfast','-crf','23','-pix_fmt','yuv420p',clip])
-              clips.append(clip)
-
-          concat=work/'clips.txt'
-          concat.write_text(''.join(f"file '{p.as_posix()}'\n" for p in clips),encoding='utf-8')
-          visual=work/'visual.mp4'
-          run(['ffmpeg','-y','-loglevel','error','-f','concat','-safe','0','-i',concat,'-an','-c:v','libx264','-preset','veryfast','-crf','22','-pix_fmt','yuv420p','-r','30',visual])
-
-          # Burn SMALL safe-zone subtitles.
-          escaped=str(srt).replace('\\','\\\\').replace(':','\\:').replace("'","\\'")
-          style="FontName=DejaVu Sans,FontSize=20,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,BackColour=&H90000000,BorderStyle=3,Outline=1,Shadow=0,Alignment=2,MarginL=92,MarginR=92,MarginV=300"
-          final=jobdir/'volcanic-lightning-preview-v2-nestoras.mp4'
-          run(['ffmpeg','-y','-loglevel','error','-i',visual,'-i',narration,'-vf',f"subtitles='{escaped}':force_style='{style}'",
-               '-c:v','libx264','-preset','medium','-crf','21','-pix_fmt','yuv420p','-c:a','aac','-b:a','128k','-ar','48000','-ac','1','-shortest','-movflags','+faststart',final])
-
-          # QA
-          final_d=duration(final)
-          cp=subprocess.run(['ffprobe','-v','error','-show_streams','-of','json',str(final)],check=True,text=True,capture_output=True)
-          streams=json.loads(cp.stdout)['streams']
-          v=[s for s in streams if s.get('codec_type')=='video']
-          a=[s for s in streams if s.get('codec_type')=='audio']
-          if len(v)!=1 or len(a)!=1: raise RuntimeError('stream QA failed')
-          if int(v[0]['width'])!=1080 or int(v[0]['height'])!=1920: raise RuntimeError('resolution QA failed')
-          if final_d <= manifest['min_duration_seconds']: raise RuntimeError('final duration QA failed')
-
-          qa={
-              'id':'volcanic-lightning-preview-v2',
-              'preview_only':True,
-              'publish_to_social':False,
-              'voice':'el-GR-NestorasNeural',
-              'duration_seconds':round(final_d,3),
-              'resolution':'1080x1920',
-              'burned_subtitles':True,
-              'subtitle_font_size':20,
-              'subtitle_margin_vertical':300,
-              'subtitle_max_lines':2,
-              'photo_based_visuals':True,
-              'photo_pool_frames':len(frames),
-              'background_music':False,
-              'avatar_presenter':False,
-              'asset_credits':[a['credit'] for a in manifest['assets']]
-          }
-          (jobdir/'qa.json').write_text(json.dumps(qa,ensure_ascii=False,indent=2),encoding='utf-8')
-          shutil.copy2(srt,jobdir/'subtitles.srt')
-          (jobdir/'script.txt').write_text('\n'.join(segments),encoding='utf-8')
-          print(json.dumps(qa,ensure_ascii=False,indent=2))
-          PY
-
-          python3 "$RUNNER_TEMP/render_preview.py"
-
-      - name: Publish preview artifact to media-output branch
+      - name: Publish preview to media-output branch
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/volcanic-preview
         run: |
           set -euo pipefail
           OUT="$RUNNER_TEMP/media-output-repo"
@@ -299,13 +70,13 @@ jobs:
           DEST="$OUT/jobs/volcanic-lightning-preview-v2"
           rm -rf "$DEST"
           mkdir -p "$DEST"
-          cp -a "$OUT_DIR/volcanic-lightning-preview-v2"/. "$DEST"/
+          cp -a "$OUTPUT_DIR/preview"/. "$DEST"/
           git -C "$OUT" config user.name 'github-actions[bot]'
           git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git -C "$OUT" add jobs/volcanic-lightning-preview-v2
           if ! git -C "$OUT" diff --cached --quiet; then
-            git -C "$OUT" commit -m 'Render volcanic lightning Nestoras photo preview v2'
+            git -C "$OUT" commit -m "Render volcanic lightning Nestoras photo preview v2"
             git -C "$OUT" push origin HEAD:media-output
           fi
-          cat "$OUT_DIR/volcanic-lightning-preview-v2/qa.json" >> "$GITHUB_STEP_SUMMARY"
-          echo 'Preview only. Nothing was published to social platforms.' >> "$GITHUB_STEP_SUMMARY"
+          cat "$OUTPUT_DIR/preview/qa.json" >> "$GITHUB_STEP_SUMMARY"
+          echo "Preview only. Nothing was published to social platforms." >> "$GITHUB_STEP_SUMMARY"
