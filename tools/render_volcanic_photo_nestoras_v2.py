@@ -302,13 +302,13 @@ def prepare_scenes(
             draw.rounded_rectangle((38, 1685, 1042, 1760), radius=15, fill=(0, 0, 0, 165))
             draw.text(
                 (56, 1697),
-                "Εικόνες: USGS Public Domain • Etrhamjr/Hike395 CC BY-SA 4.0",
+                "Εικόνες: USGS / NASA / NOAA — Public Domain",
                 font=credit_font,
                 fill="white",
             )
             draw.text(
                 (56, 1725),
-                "R. Hadian/Zanaq CC BY-SA 1.0",
+                "Πραγματικές φωτογραφίες και δορυφορικά οπτικά",
                 font=credit_font,
                 fill="white",
             )
