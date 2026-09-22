@@ -43,9 +43,21 @@ jobs:
           DUR=$(ffprobe -v error -show_entries format=duration -of default=nk=1:nw=1 voice_demo/output/voice.wav)
           printf 'final_duration=%s\n' "$DUR" > voice_demo/output/duration.txt
           awk -v d="$DUR" 'BEGIN {
-            if (d < 90) print "::warning::Narration is under the 90-second target (" d " s)"
-            else if (d > 105) print "::warning::Narration is over the preferred 90-105 second range (" d " s)"
+            if (d <= 80) {
+              print "::error::Narration must be longer than 80 seconds (" d " s)"
+              exit 1
+            }
           }'
+
+      - name: Reject long silent gaps
+        run: |
+          set -euo pipefail
+          ffmpeg -hide_banner -i voice_demo/output/voice.wav -af "silencedetect=n=-45dB:d=2.0" -f null - 2> voice_demo/output/silence-check.txt || true
+          if grep -Eq 'silence_duration: ([2-9]|[1-9][0-9])([.][0-9]+)?' voice_demo/output/silence-check.txt; then
+            echo "::error::Long silent gap detected in narration"
+            cat voice_demo/output/silence-check.txt
+            exit 1
+          fi
 
       - name: Build mobile preview video
         run: |
