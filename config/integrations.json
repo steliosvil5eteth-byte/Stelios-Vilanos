@@ -4,28 +4,12 @@
     "brand_id": 7000636,
     "user_id": 5403385,
     "timezone": "Europe/Athens",
-    "networks": [
-      "facebook",
-      "instagram",
-      "tiktok",
-      "youtube"
-    ]
+    "networks": ["facebook", "instagram", "tiktok", "youtube"]
   },
   "heygen": {
     "enabled": false,
-    "default_aspect_ratio": "9:16",
-    "default_resolution": "720p",
-    "default_fit": "cover",
-    "generation_mode": "public_avatar",
-    "avatar_group_name": "Brody",
-    "avatar_group_id": "469ba809c9f6441ba74a580058d41c4b",
-    "avatar_look_name": "Brody Living Room 1",
-    "avatar_look_id": "c1333835c09f4beaac193192119e20c5",
-    "engine": "avatar_iii",
-    "default_voice_id": "79f5fa6497474234a5d01764efc96e13",
-    "cost_profile": "low",
     "status": "retired_for_new_generation",
-    "rule": "No new routine generation. Weekly avatar is retired and narrated feature-video voice is Azure el-GR-NestorasNeural. Existing completed media may still be reused when otherwise valid."
+    "rule": "Do not use HeyGen for the current daily workflow. Existing completed media may be reused only when otherwise valid and specifically allowed by the current strategy."
   },
   "content": {
     "strategy_file": "config/content_strategy.json",
@@ -36,40 +20,52 @@
     "notion_archive_data_source_id": "46cd5cf4-5f7e-46e8-b0ef-274aeadbdb52"
   },
   "publishing": {
-    "daily_target_videos": 12,
+    "program_label": "CURRENT_SIX_DAILY",
+    "daily_target_logical_posts_per_network": 6,
+    "daily_target_destinations": 24,
+    "slots_local_time": ["11:00", "13:00", "15:00", "17:00", "20:00", "23:00"],
     "publish_to_all_connected_socials": true,
     "require_user_confirmation": false,
-    "daily_target_videos_by_theme": {
-      "zodiac": 12,
-      "soul": 10
-    },
     "daily_target_source": "config/content_strategy.json",
     "reliability_file": "config/publishing_reliability.json",
-    "daily_target_videos_note": "Legacy zodiac fallback only; use daily_target_videos_by_theme and strategy for the calendar date."
+    "rule": "Exactly six logical daily posts. Never infer Published from Scheduled/PENDING."
   },
   "runner": {
-    "max_jobs_per_run": 4,
-    "duplicate_policy": "never_republish_same_job_id",
+    "max_jobs_per_run": 6,
+    "duplicate_policy": "one_logical_post_per_date_category_platform",
     "require_future_schedule": true,
     "hands_off_mode": true,
     "quality_check_before_publish": true,
-    "archive_every_video": true
+    "archive_every_video": true,
+    "no_false_rollback": true,
+    "never_backdate_or_catch_up": true
   },
-  "azure_speech": {
+  "piper_speech": {
     "enabled": true,
-    "tier": "F0",
-    "region_secret": "AZURE_SPEECH_REGION",
-    "key_secret": "AZURE_SPEECH_KEY",
-    "default_voice": "el-GR-NestorasNeural",
+    "engine": "local_piper",
+    "default_voice": "el_GR-rapunzelina-medium",
     "language": "el-GR",
-    "use_for": [
-      "phenomenon_video",
-      "legend_video"
-    ],
-    "provider_free_quota_chars_per_month": 500000,
-    "internal_safety_cap_chars_per_month": 450000,
+    "natural_speed": true,
+    "use_for": ["phenomenon_video", "legend_video"],
+    "strictly_longer_than_seconds": 80,
+    "maximum_duration_seconds": null,
+    "background_music": false,
     "paid_fallback_allowed": false,
     "heygen_fallback_allowed": false,
-    "rule": "Use Nestoras for routine narrated feature videos. If Azure F0 is unavailable or the internal safety cap would be exceeded, block narration instead of using a paid fallback."
+    "rule": "Use local Piper at natural speed with burned-in synchronized Greek subtitles. Reject about-2-second-or-longer unintended dead air and useless trailing silence; never pad for duration."
+  },
+  "azure_speech": {
+    "enabled": false,
+    "status": "superseded_by_local_piper",
+    "default_voice": "el-GR-NestorasNeural",
+    "paid_fallback_allowed": false,
+    "rule": "Do not use Azure for CURRENT 17:00/23:00 generation while the local Piper policy is active."
+  },
+  "cost_safety": {
+    "purchases": false,
+    "topups": false,
+    "upgrades": false,
+    "paid_tests": false,
+    "paid_generation": false
   }
 }
