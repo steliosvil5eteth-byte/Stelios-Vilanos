@@ -1,0 +1,72 @@
+{
+  "batch_id": "ea440716c00c6389",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "v2-20260924-survival-sea-0900",
+      "status": "rendered",
+      "card_count": 9,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "order_verified": true,
+      "photographic_backgrounds": true,
+      "final_duration": 45.0,
+      "narration": false,
+      "music_source": "original_local_synth_no_external_license",
+      "files": [
+        {
+          "name": "v2-20260924-survival-sea-0900-01.jpg",
+          "bytes": 429279,
+          "sha256": "861b2a8ded2c7b4889b3f48734f9135d07fbfda02b086f3b5f1e1568c65d1c5e"
+        },
+        {
+          "name": "v2-20260924-survival-sea-0900-02.jpg",
+          "bytes": 435324,
+          "sha256": "94aee8cb7a02fdac94d81e5de3d7235da2f8af2c6f0796e3dd11b7dfba3f7e9b"
+        },
+        {
+          "name": "v2-20260924-survival-sea-0900-03.jpg",
+          "bytes": 495964,
+          "sha256": "216e4fa63a6c3dcb24b2e0dac8cb676aaf398387f5198fdb1deeec1bace87f06"
+        },
+        {
+          "name": "v2-20260924-survival-sea-0900-04.jpg",
+          "bytes": 438187,
+          "sha256": "8722801333033c3b54f55029004966b88556aa69cbb531985c574eeb81316c44"
+        },
+        {
+          "name": "v2-20260924-survival-sea-0900-05.jpg",
+          "bytes": 269997,
+          "sha256": "b192f59921be1ca2a78452ee08cb4e5a3e9ec1e16b2ad38e6d4dfc30cf1ffc29"
+        },
+        {
+          "name": "v2-20260924-survival-sea-0900-06.jpg",
+          "bytes": 388152,
+          "sha256": "2ef5c264ae4162cd87a45344910c1e4bcc0dff07058f17baad50c581198012a1"
+        },
+        {
+          "name": "v2-20260924-survival-sea-0900-07.jpg",
+          "bytes": 458725,
+          "sha256": "fbc52ea4fbd1ff9dce1df4a7041de6730841a3c33f3a7f4a320cb0e202d4d764"
+        },
+        {
+          "name": "v2-20260924-survival-sea-0900-08.jpg",
+          "bytes": 428031,
+          "sha256": "cc846266983ab1e6e78c3118da9dc091b6f64080ccac99991eda7f9bfebafb50"
+        },
+        {
+          "name": "v2-20260924-survival-sea-0900-09.jpg",
+          "bytes": 380196,
+          "sha256": "c4f6139e7de40c2956cab691e8d20e662288a74d6937308181c51841a0270dbb"
+        },
+        {
+          "name": "v2-20260924-survival-sea-0900.mp4",
+          "bytes": 1822929,
+          "sha256": "9fd14a0b4aae14ab3bc5fce0468bcaf3edd79b4895de290025382d7a2141d597"
+        }
+      ]
+    }
+  ]
+}
