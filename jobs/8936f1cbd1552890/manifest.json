@@ -1,0 +1,78 @@
+{
+  "batch_sha256": "8936f1cbd155289008dbee2777d3737de542d37a60f82ac7f950ba8cd2aa45d8",
+  "batch_id": "8936f1cbd1552890",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "dog-bartender-20260924",
+      "mode": "photo_dialogue_carousel",
+      "status": "rendered",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Three_Legged_Dog_at_Ruin_Bar_Budapest.jpg",
+      "attribution": "Three Legged Dog at Ruin Bar Budapest; Yourusernamewillbepublic2; CC0 1.0. Source image is a real photograph at a Budapest ruin bar. Modified with crops, text overlays and layout.",
+      "title": "Σκύλος Μπάρμαν — ο παράξενος πελάτης",
+      "text": null,
+      "card_count": 4,
+      "card_dimensions": [
+        1080,
+        1080
+      ],
+      "jpeg_cards": true,
+      "narration": false,
+      "card_audio": "silent",
+      "youtube_music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "final_duration": 24.0,
+      "source_license": "CC0 1.0 Universal Public Domain Dedication",
+      "source_author": "Yourusernamewillbepublic2",
+      "same_source_identity": true,
+      "visual_variation": "four deterministic photographic crops; one mirrored; varied zoom/emphasis",
+      "files": [
+        {
+          "name": "dog-bartender-20260924-01-qa.png",
+          "bytes": 23154,
+          "sha256": "33caea7ad62d9a8764795d94b17e59d2be7204a8e6ce6e5294fd04ebe12f3ec4"
+        },
+        {
+          "name": "dog-bartender-20260924-01.jpg",
+          "bytes": 377955,
+          "sha256": "119edb4ab0737e2629f906be9faa0d0befa307745e1a2a3babc7615987b04073"
+        },
+        {
+          "name": "dog-bartender-20260924-02-qa.png",
+          "bytes": 22151,
+          "sha256": "3831b38b96512c50c7e919c8c6f5c1d03398a172df66317a8651dc043a50c0d6"
+        },
+        {
+          "name": "dog-bartender-20260924-02.jpg",
+          "bytes": 382239,
+          "sha256": "c2566c55ad7e09c2fcbe1aa761c88089cefbf7c9791bd6299b30d1245e7242e9"
+        },
+        {
+          "name": "dog-bartender-20260924-03-qa.png",
+          "bytes": 21647,
+          "sha256": "9b1dbe4a1da7d4027eb7fa2ec9e6fe64204d7bc299d34e4a9a874a7a7ffab980"
+        },
+        {
+          "name": "dog-bartender-20260924-03.jpg",
+          "bytes": 374209,
+          "sha256": "c712a26c0fcb73e56544a1953a9e20ad93cb810902bd0c1f000a690fea89dffc"
+        },
+        {
+          "name": "dog-bartender-20260924-04-qa.png",
+          "bytes": 21784,
+          "sha256": "c3198793200653aef96c0aa6f9ba33f30ee10692b871e20911dee4b75e17f960"
+        },
+        {
+          "name": "dog-bartender-20260924-04.jpg",
+          "bytes": 402658,
+          "sha256": "09cad587114348e0fdc186cfcf6e1565360535c778a76d7152af0d3af783e1f9"
+        },
+        {
+          "name": "dog-bartender-20260924.mp4",
+          "bytes": 994251,
+          "sha256": "b8e10d8a1ec6768154b34f23a3b029d38a58fce78912c6bf0ffe459c336461dc"
+        }
+      ]
+    }
+  ]
+}

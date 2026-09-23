@@ -1,0 +1,15 @@
+{
+  "batch_id": "8936f1cbd1552890",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "dog-bartender-20260924",
+      "status": "rendered",
+      "card_count": 4,
+      "final_duration": 24.0,
+      "music_embedded": null,
+      "youtube_music_embedded": true,
+      "error": null
+    }
+  ]
+}

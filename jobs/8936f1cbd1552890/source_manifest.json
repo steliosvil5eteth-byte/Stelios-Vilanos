@@ -1,0 +1,38 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "purpose": "Prepare only the missing 2026-09-24 13:00 Dog Bartender four-card carousel and YouTube slideshow at zero incremental cost. No social publishing occurs in this renderer.",
+  "jobs": [
+    {
+      "id": "dog-bartender-20260924",
+      "mode": "photo_dialogue_carousel",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Three_Legged_Dog_at_Ruin_Bar_Budapest.jpg",
+      "source_author": "Yourusernamewillbepublic2",
+      "source_license": "CC0 1.0 Universal Public Domain Dedication",
+      "attribution": "Three Legged Dog at Ruin Bar Budapest; Yourusernamewillbepublic2; CC0 1.0. Source image is a real photograph at a Budapest ruin bar. Modified with crops, text overlays and layout.",
+      "title": "Σκύλος Μπάρμαν — ο παράξενος πελάτης",
+      "seconds_per_card": 6,
+      "cards": [
+        {
+          "customer": "Έχεις ποτό που να στείλει μήνυμα στην πρώην μου χωρίς να το στείλω εγώ;",
+          "dog": "Έχω νερό. Για θαύματα, το μπαρ απέναντι.",
+          "tail": "→ Περίμενε να ακούσεις τι ζήτησε μετά…"
+        },
+        {
+          "customer": "Ναι, αλλά να φαίνεται ότι στάλθηκε κατά λάθος.",
+          "dog": "Να σας βάλω πάγο ή δικηγόρο;",
+          "tail": "→ Κι όμως, δεν ήταν το πιο παράλογο…"
+        },
+        {
+          "customer": "Στείλ’ το εσύ. Εσύ είσαι σκύλος, δεν θα θυμώσει μαζί σου.",
+          "dog": "Κρατάω το μπαρ. Όχι τις επαφές σας.",
+          "tail": "→ Τότε ζήτησε το «δυνατό»…"
+        },
+        {
+          "customer": "Τελικά βάλε κάτι δυνατό.",
+          "dog": "Ένα νερό. Αύριο θα με ευχαριστείς."
+        }
+      ]
+    }
+  ]
+}
