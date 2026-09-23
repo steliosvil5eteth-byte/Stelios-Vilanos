@@ -5,7 +5,7 @@ Only process explicit approved public jobs. Originals are never overwritten.
 from __future__ import annotations
 import argparse, base64, hashlib, json, math, re, subprocess, tempfile, urllib.parse, urllib.request
 from pathlib import Path
-from PIL import Image, ImageDraw, ImageFont, ImageOps
+from PIL import Image, ImageDraw, ImageFont, ImageOps, ImageEnhance
 
 CTA = 'Αν σας άρεσε, ακολουθήστε για περισσότερα.'
 ALLOWED_HOSTS = {'static.metricool.com', 'raw.githubusercontent.com', 'upload.wikimedia.org'}
@@ -48,7 +48,7 @@ class SafeRedirect(urllib.request.HTTPRedirectHandler):
 
 def download(url: str, path: Path) -> None:
     check_url(url)
-    req = urllib.request.Request(url, headers={'User-Agent': 'SteliosMediaFinisher/1.2'})
+    req = urllib.request.Request(url, headers={'User-Agent': 'SteliosMediaFinisher/1.3'})
     with urllib.request.build_opener(SafeRedirect()).open(req, timeout=90) as r, path.open('wb') as f:
         check_url(r.url)
         total = 0
@@ -142,133 +142,136 @@ def silent_video(image: Path, out: Path, seconds: float=18):
 
 
 def music_video(image: Path, out: Path, seconds: float=35):
-    """Create a vertical card video with an original deterministic ambient bed.
-
-    The audio is synthesized locally from simple sine tones; it uses no external
-    recording, catalog song, paid API, TTS, or third-party music license.
-    """
     if not 5 <= seconds <= 120:
         raise ValueError('Music post duration must be 5-120 seconds')
     fade_out=max(0.0, seconds-1.5)
-    filters=(
-        '[1:a]volume=0.032[a1];'
-        '[2:a]volume=0.024[a2];'
-        '[3:a]volume=0.020[a3];'
-        '[a1][a2][a3]amix=inputs=3:duration=longest:normalize=0,'
-        'highpass=f=90,lowpass=f=1800,'
-        'afade=t=in:st=0:d=1.5,'
-        f'afade=t=out:st={fade_out}:d=1.5,'
-        'aformat=sample_rates=48000:channel_layouts=stereo[a]'
-    )
-    run([
-        'ffmpeg','-y','-v','error',
-        '-loop','1','-framerate','25','-i',str(image),
+    filters=('[1:a]volume=0.032[a1];[2:a]volume=0.024[a2];[3:a]volume=0.020[a3];'
+        '[a1][a2][a3]amix=inputs=3:duration=longest:normalize=0,highpass=f=90,lowpass=f=1800,'
+        'afade=t=in:st=0:d=1.5,'+f'afade=t=out:st={fade_out}:d=1.5,'+'aformat=sample_rates=48000:channel_layouts=stereo[a]')
+    run(['ffmpeg','-y','-v','error','-loop','1','-framerate','25','-i',str(image),
         '-f','lavfi','-i',f'sine=frequency=220:sample_rate=48000:duration={seconds}',
         '-f','lavfi','-i',f'sine=frequency=277.18:sample_rate=48000:duration={seconds}',
         '-f','lavfi','-i',f'sine=frequency=329.63:sample_rate=48000:duration={seconds}',
-        '-t',str(seconds),
-        '-vf','scale=1080:1080,pad=1080:1920:0:420:color=0x101A28,setsar=1',
-        '-filter_complex',filters,'-map','0:v','-map','[a]',
-        '-c:v','libx264','-preset','veryfast','-crf','21','-threads','2','-pix_fmt','yuv420p',
-        '-c:a','aac','-b:a','128k','-movflags','+faststart',str(out)
-    ])
+        '-t',str(seconds),'-vf','scale=1080:1080,pad=1080:1920:0:420:color=0x101A28,setsar=1',
+        '-filter_complex',filters,'-map','0:v','-map','[a]','-c:v','libx264','-preset','veryfast','-crf','21','-threads','2','-pix_fmt','yuv420p',
+        '-c:a','aac','-b:a','128k','-movflags','+faststart',str(out)])
     meta=probe(out)
-    if not any(s['codec_type']=='audio' for s in meta['streams']):
-        raise ValueError('Music output has no audio stream')
+    if not any(s['codec_type']=='audio' for s in meta['streams']): raise ValueError('Music output has no audio stream')
     duration=float(meta['format']['duration'])
-    if abs(duration-seconds)>.4:
-        raise ValueError(f'Music output duration mismatch {seconds}->{duration}')
+    if abs(duration-seconds)>.4: raise ValueError(f'Music output duration mismatch {seconds}->{duration}')
     run(['ffmpeg','-v','error','-i',str(out),'-f','null','-'])
     return duration
 
 
+def _crop_variant(source: Image.Image, idx: int) -> Image.Image:
+    centers=[(0.50,0.46),(0.42,0.56),(0.62,0.48),(0.50,0.62)]
+    zooms=[1.00,1.16,1.23,1.34]
+    w,h=source.size; side=int(min(w,h)/zooms[idx]); cx=int(w*centers[idx][0]); cy=int(h*centers[idx][1])
+    left=max(0,min(w-side,cx-side//2)); top=max(0,min(h-side,cy-side//2))
+    crop=source.crop((left,top,left+side,top+side)).resize((1080,1080),Image.Resampling.LANCZOS)
+    if idx == 2: crop=ImageOps.mirror(crop)
+    if idx == 3: crop=ImageEnhance.Contrast(crop).enhance(1.06)
+    return crop
+
+
+def photo_dialogue_card(source: Image.Image, card: dict, idx: int) -> Image.Image:
+    im=_crop_variant(source,idx).convert('RGBA'); shade=Image.new('RGBA',im.size,(0,0,0,0)); sd=ImageDraw.Draw(shade)
+    sd.rectangle((0,0,1080,150),fill=(8,12,18,170)); sd.rectangle((0,540,1080,1080),fill=(5,8,12,205))
+    im=Image.alpha_composite(im,shade).convert('RGB'); d=ImageDraw.Draw(im); d.rectangle((54,40,1026,44),fill='#D8BA78')
+    text_block(im,'ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ • Ο ΠΑΡΑΞΕΝΟΣ ΠΕΛΑΤΗΣ',(60,62,1020,132),38,bold=True,center=True,min_size=29)
+    text_block(im,'ΠΕΛΑΤΗΣ: '+card['customer'],(64,585,1016,760),46,bold=True,min_size=32)
+    text_block(im,'ΜΠΑΡΜΑΝ: '+card['dog'],(64,778,1016,945),43,min_size=30)
+    if idx < 3: text_block(im,card.get('tail','→ Και μετά το έκανε ακόμα πιο παράλογο…'),(64,960,1016,1038),27,bold=True,center=True,min_size=22)
+    else: text_block(im,CTA,(64,958,1016,1044),26,bold=True,center=True,min_size=21)
+    return im
+
+
+def carousel_music_video(images: list[Path], out: Path, seconds_per_card: float=6.0) -> float:
+    if len(images) < 2 or not 3 <= seconds_per_card <= 15: raise ValueError('Carousel video requires 2+ images and 3-15 seconds per card')
+    total=len(images)*seconds_per_card; concat=out.with_suffix('.concat.txt'); lines=[]
+    for p in images: lines += [f"file '{p.as_posix()}'", f'duration {seconds_per_card}']
+    lines += [f"file '{images[-1].as_posix()}'"]; concat.write_text('\n'.join(lines),encoding='utf-8'); fade_out=max(0.0,total-1.5)
+    filters=('[1:a]volume=0.030[a1];[2:a]volume=0.022[a2];[3:a]volume=0.018[a3];'
+        '[a1][a2][a3]amix=inputs=3:duration=longest:normalize=0,highpass=f=90,lowpass=f=1800,'
+        'afade=t=in:st=0:d=1.2,'+f'afade=t=out:st={fade_out}:d=1.5,'+'aformat=sample_rates=48000:channel_layouts=stereo[a]')
+    run(['ffmpeg','-y','-v','error','-f','concat','-safe','0','-i',str(concat),
+        '-f','lavfi','-i',f'sine=frequency=220:sample_rate=48000:duration={total}',
+        '-f','lavfi','-i',f'sine=frequency=277.18:sample_rate=48000:duration={total}',
+        '-f','lavfi','-i',f'sine=frequency=329.63:sample_rate=48000:duration={total}',
+        '-t',str(total),'-vf','fps=25,scale=1080:1080,pad=1080:1920:0:420:color=0x101A28,setsar=1',
+        '-filter_complex',filters,'-map','0:v','-map','[a]','-c:v','libx264','-preset','veryfast','-crf','21','-threads','2','-pix_fmt','yuv420p',
+        '-c:a','aac','-b:a','128k','-movflags','+faststart',str(out)])
+    concat.unlink(missing_ok=True); meta=probe(out); duration=float(meta['format']['duration'])
+    if not any(s['codec_type']=='audio' for s in meta['streams']): raise ValueError('Carousel video has no audio stream')
+    if abs(duration-total)>.6: raise ValueError(f'Carousel duration mismatch {total}->{duration}')
+    run(['ffmpeg','-v','error','-i',str(out),'-f','null','-']); return duration
+
+
+def photo_dialogue_carousel(job: dict, work: Path, outdir: Path) -> dict:
+    cards=job.get('cards',[])
+    if len(cards) != 4: raise ValueError('Dog Bartender carousel must contain exactly four cards')
+    src=work/'source.img'; download(job['source_url'],src); source=Image.open(src).convert('RGB'); outputs=[]
+    for idx,card in enumerate(cards):
+        im=photo_dialogue_card(source,card,idx); p=outdir/f"{job['id']}-{idx+1:02d}.jpg"; im.save(p,quality=95,subsampling=0,optimize=True)
+        if im.size != (1080,1080): raise ValueError('Dog card dimensions are not exactly 1080x1080')
+        compact_preview(p,outdir/f"{job['id']}-{idx+1:02d}-qa.png"); outputs.append(p)
+    video=outdir/f"{job['id']}.mp4"; duration=carousel_music_video(outputs,video,float(job.get('seconds_per_card',6)))
+    return {'card_count':4,'card_dimensions':[1080,1080],'jpeg_cards':True,'narration':False,'card_audio':'silent',
+        'youtube_music_embedded':True,'music_source':'original_local_synth_no_external_license','final_duration':duration,
+        'source_license':job.get('source_license'),'source_author':job.get('source_author'),'same_source_identity':True,
+        'visual_variation':'four deterministic photographic crops; one mirrored; varied zoom/emphasis'}
+
+
 def finish_video(job,work,outdir):
-    src=work/'source.mp4';download(job['source_url'],src)
-    meta=probe(src); v=next(s for s in meta['streams'] if s['codec_type']=='video')
-    length=float(meta['format']['duration'])
-    if not 10 <= length <= 240:
-        raise ValueError(f'Unexpected original duration {length}; no cropped/two-second source accepted')
+    src=work/'source.mp4';download(job['source_url'],src); meta=probe(src); v=next(s for s in meta['streams'] if s['codec_type']=='video'); length=float(meta['format']['duration'])
+    if not 10 <= length <= 240: raise ValueError(f'Unexpected original duration {length}; no cropped/two-second source accepted')
     w,h=int(v['width']),int(v['height'])
-    if abs(w/h-9/16)>.03 or w%2 or h%2:
-        raise ValueError('Original must be an even-sized vertical 9:16 video')
-    scale=min(1,1080/w,1920/h);w=int(w*scale)//2*2;h=int(h*scale)//2*2
-    card=work/'cta.png';end_card((w,h)).save(card)
-    has_audio=any(s['codec_type']=='audio' for s in meta['streams'])
-    if not has_audio:
-        raise ValueError('Expected narrated original with an audio stream')
-    out=outdir/(job['id']+'.mp4')
-    filters=f'[0:v]scale={w}:{h},setsar=1,fps=25,format=yuv420p,setpts=PTS-STARTPTS[v0];[0:a]aresample=48000,aformat=channel_layouts=stereo,asetpts=PTS-STARTPTS[a0];[1:v]setsar=1,fps=25,format=yuv420p,trim=duration=4,setpts=PTS-STARTPTS[v1];[2:a]atrim=duration=4,asetpts=PTS-STARTPTS[a1];[v0][a0][v1][a1]concat=n=2:v=1:a=1[v][a]'
+    if abs(w/h-9/16)>.03 or w%2 or h%2: raise ValueError('Original must be an even-sized vertical 9:16 video')
+    scale=min(1,1080/w,1920/h);w=int(w*scale)//2*2;h=int(h*scale)//2*2; card=work/'cta.png';end_card((w,h)).save(card)
+    if not any(s['codec_type']=='audio' for s in meta['streams']): raise ValueError('Expected narrated original with an audio stream')
+    out=outdir/(job['id']+'.mp4'); filters=f'[0:v]scale={w}:{h},setsar=1,fps=25,format=yuv420p,setpts=PTS-STARTPTS[v0];[0:a]aresample=48000,aformat=channel_layouts=stereo,asetpts=PTS-STARTPTS[a0];[1:v]setsar=1,fps=25,format=yuv420p,trim=duration=4,setpts=PTS-STARTPTS[v1];[2:a]atrim=duration=4,asetpts=PTS-STARTPTS[a1];[v0][a0][v1][a1]concat=n=2:v=1:a=1[v][a]'
     run(['ffmpeg','-y','-v','error','-i',str(src),'-loop','1','-framerate','25','-i',str(card),'-f','lavfi','-i','anullsrc=r=48000:cl=stereo','-filter_complex',filters,'-map','[v]','-map','[a]','-c:v','libx264','-preset','veryfast','-crf','22','-threads','2','-c:a','aac','-b:a','128k','-movflags','+faststart',str(out)])
     final=probe(out);dl=float(final['format']['duration'])
-    if abs(dl-(length+4))>.3:
-        raise ValueError(f'Duration mismatch {length}->{dl}')
+    if abs(dl-(length+4))>.3: raise ValueError(f'Duration mismatch {length}->{dl}')
     run(['ffmpeg','-v','error','-i',str(out),'-f','null','-'])
     for label,sec in [('opening',1),('middle',length/2),('ending',dl-2)]:
-        preview=outdir/(job['id']+'-'+label+'.jpg')
-        run(['ffmpeg','-y','-v','error','-ss',str(sec),'-i',str(out),'-frames:v','1','-vf','scale=360:-2',str(preview)])
-        compact_preview(preview, outdir/(job['id']+'-'+label+'-qa.png'))
+        preview=outdir/(job['id']+'-'+label+'.jpg'); run(['ffmpeg','-y','-v','error','-ss',str(sec),'-i',str(out),'-frames:v','1','-vf','scale=360:-2',str(preview)]); compact_preview(preview, outdir/(job['id']+'-'+label+'-qa.png'))
     return {'original_duration':length,'final_duration':dl,'width':w,'height':h,'original_narration_preserved':True,'new_spoken_cta':False,'written_cta_appended':True,'decode_passed':True,'subtitle_review':'original_pixels_preserved; human_visual_review_required'}
 
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--manifest',required=True);ap.add_argument('--output',required=True);ns=ap.parse_args()
-    raw=Path(ns.manifest).read_bytes();batch=json.loads(raw)
-    if batch.get('approved') is not True or batch.get('paid_generation_allowed') is not False:
-        raise ValueError('Explicit approval and no-paid-generation flags are required')
+    ap=argparse.ArgumentParser();ap.add_argument('--manifest',required=True);ap.add_argument('--output',required=True);ns=ap.parse_args(); raw=Path(ns.manifest).read_bytes();batch=json.loads(raw)
+    if batch.get('approved') is not True or batch.get('paid_generation_allowed') is not False: raise ValueError('Explicit approval and no-paid-generation flags are required')
     jobs=batch['jobs'];ids=[x['id'] for x in jobs]
-    if len(jobs)>60 or len(ids)!=len(set(ids)) or any(not re.fullmatch(r'[a-z0-9][a-z0-9_-]{0,80}',s) for s in ids):
-        raise ValueError('Invalid, duplicate or too many jobs')
-    key=hashlib.sha256(raw).hexdigest()[:16];output=Path(ns.output)/key;output.mkdir(parents=True,exist_ok=True)
-    report={'batch_sha256':hashlib.sha256(raw).hexdigest(),'batch_id':key,'paid_ai_credits_used':0,'jobs':[]}
-    (output/'source_manifest.json').write_bytes(raw)
+    if len(jobs)>60 or len(ids)!=len(set(ids)) or any(not re.fullmatch(r'[a-z0-9][a-z0-9_-]{0,80}',s) for s in ids): raise ValueError('Invalid, duplicate or too many jobs')
+    key=hashlib.sha256(raw).hexdigest()[:16];output=Path(ns.output)/key;output.mkdir(parents=True,exist_ok=True); report={'batch_sha256':hashlib.sha256(raw).hexdigest(),'batch_id':key,'paid_ai_credits_used':0,'jobs':[]}; (output/'source_manifest.json').write_bytes(raw)
     for job in jobs:
         record={'id':job['id'],'mode':job['mode'],'status':'failed','source_url':job.get('source_url'),'attribution':job.get('attribution'),'title':job.get('title'),'text':job.get('text')}
         try:
             with tempfile.TemporaryDirectory() as td:
                 work=Path(td)
-                if job['mode']=='video_cta':
-                    record.update(finish_video(job,work,output))
+                if job['mode']=='video_cta': record.update(finish_video(job,work,output))
                 elif job['mode'] in ('simple_post','image_cta'):
-                    im=simple_image(job) if job['mode']=='simple_post' else image_cta(job,work)
-                    jpg=output/(job['id']+'.jpg');im.save(jpg,quality=94,subsampling=0)
-                    compact_preview(jpg,output/(job['id']+'-qa.png'))
+                    im=simple_image(job) if job['mode']=='simple_post' else image_cta(job,work); jpg=output/(job['id']+'.jpg');im.save(jpg,quality=94,subsampling=0); compact_preview(jpg,output/(job['id']+'-qa.png'))
                     if job.get('music_copy',False):
-                        vid=output/(job['id']+'.mp4');record['final_duration']=music_video(jpg,vid,float(job.get('seconds',35)))
-                        record.update({'music_embedded':True,'music_source':'original_local_synth_no_external_license'})
+                        vid=output/(job['id']+'.mp4');record['final_duration']=music_video(jpg,vid,float(job.get('seconds',35))); record.update({'music_embedded':True,'music_source':'original_local_synth_no_external_license'})
                     elif job.get('youtube_copy',False):
-                        vid=output/(job['id']+'.mp4');silent_video(jpg,vid,float(job.get('seconds',18)))
-                        record['final_duration']=float(probe(vid)['format']['duration'])
+                        vid=output/(job['id']+'.mp4');silent_video(jpg,vid,float(job.get('seconds',18))); record['final_duration']=float(probe(vid)['format']['duration'])
                     record.update({'written_cta':True,'narration':False,'image_size':[1080,1080]})
                 elif job['mode']=='image_music_video':
-                    src=work/'source.img';download(job['source_url'],src)
-                    im=Image.open(src).convert('RGB')
-                    source_jpg=work/'source.jpg';im.save(source_jpg,quality=96,subsampling=0)
-                    compact_preview(source_jpg,output/(job['id']+'-qa.png'))
-                    vid=output/(job['id']+'.mp4')
-                    record['final_duration']=music_video(source_jpg,vid,float(job.get('seconds',35)))
-                    record.update({'music_embedded':True,'music_source':'original_local_synth_no_external_license','narration':False,'source_visual_preserved':True})
+                    src=work/'source.img';download(job['source_url'],src); im=Image.open(src).convert('RGB'); source_jpg=work/'source.jpg';im.save(source_jpg,quality=96,subsampling=0); compact_preview(source_jpg,output/(job['id']+'-qa.png')); vid=output/(job['id']+'.mp4'); record['final_duration']=music_video(source_jpg,vid,float(job.get('seconds',35))); record.update({'music_embedded':True,'music_source':'original_local_synth_no_external_license','narration':False,'source_visual_preserved':True})
                 elif job['mode']=='image_jpeg_copy':
-                    source=work/'source.img';download(job['source_url'],source)
-                    im=Image.open(source).convert('RGB')
-                    jpg=output/(job['id']+'.jpg');im.save(jpg,quality=96,subsampling=0)
-                    compact_preview(jpg,output/(job['id']+'-qa.png'))
-                    record.update({'source_visual_preserved':True,'narration':False,'image_size':[im.width,im.height]})
+                    source=work/'source.img';download(job['source_url'],source); im=Image.open(source).convert('RGB'); jpg=output/(job['id']+'.jpg');im.save(jpg,quality=96,subsampling=0); compact_preview(jpg,output/(job['id']+'-qa.png')); record.update({'source_visual_preserved':True,'narration':False,'image_size':[im.width,im.height]})
+                elif job['mode']=='photo_dialogue_carousel': record.update(photo_dialogue_carousel(job,work,output))
                 elif job['mode']=='preview':
-                    source=work/'source.img';download(job['source_url'],source)
-                    compact_preview(source,output/(job['id']+'.png'))
-                else:
-                    raise ValueError('Unknown job mode')
-            record['status']='rendered'
-            record['files']=[{'name':p.name,'bytes':p.stat().st_size,'sha256':digest(p)} for p in sorted(output.glob(job['id']+'.*')) if p.suffix != '.b64']
-            if any(f['bytes']>MAX_OUTPUT for f in record['files']):
-                raise ValueError('Output exceeds the 64 MiB repository safety limit')
+                    source=work/'source.img';download(job['source_url'],source); compact_preview(source,output/(job['id']+'.png'))
+                else: raise ValueError('Unknown job mode')
+            record['status']='rendered'; record['files']=[{'name':p.name,'bytes':p.stat().st_size,'sha256':digest(p)} for p in sorted(output.glob(job['id']+'*')) if p.suffix != '.b64' and not p.name.endswith('.concat.txt')]
+            if any(f['bytes']>MAX_OUTPUT for f in record['files']): raise ValueError('Output exceeds the 64 MiB repository safety limit')
         except Exception as exc:
             record['status']='failed';record['error']=str(exc)[:1800]
             for p in output.glob(job['id']+'*'):p.unlink()
-        report['jobs'].append(record)
-        print(json.dumps({'id':record['id'],'status':record['status'],'error':record.get('error')},ensure_ascii=False),flush=True)
-    (output/'manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
-    (output/'summary.json').write_text(json.dumps({'batch_id':key,'paid_ai_credits_used':0,'jobs':[{k:r.get(k) for k in ['id','status','original_duration','final_duration','music_embedded','error']} for r in report['jobs']]},ensure_ascii=False,indent=2),encoding='utf-8')
-    print('REPORT_PATH='+str(output/'manifest.json'))
+        report['jobs'].append(record); print(json.dumps({'id':record['id'],'status':record['status'],'error':record.get('error')},ensure_ascii=False),flush=True)
+    (output/'manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8'); (output/'summary.json').write_text(json.dumps({'batch_id':key,'paid_ai_credits_used':0,'jobs':[{k:r.get(k) for k in ['id','status','card_count','final_duration','music_embedded','youtube_music_embedded','error']} for r in report['jobs']]},ensure_ascii=False,indent=2),encoding='utf-8'); print('REPORT_PATH='+str(output/'manifest.json'))
 
 if __name__=='__main__': main()
