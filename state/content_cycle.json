@@ -1,26 +1,25 @@
 {
-  "version": 9,
+  "version": 10,
   "timezone": "Europe/Athens",
   "start_date": "2026-09-23",
   "current_cycle_date": "2026-09-23",
-  "current_theme": "all_six_every_day",
-  "current_strategy": "FOUR_DAILY_V2",
-  "program_label": "CURRENT_SIX_DAILY",
+  "current_theme": "seven_daily_current",
+  "current_strategy": "SEVEN_DAILY_CURRENT",
+  "program_label": "CURRENT_SEVEN_DAILY",
   "current_status": "ACTIVE_SCHEDULED",
   "status": "active",
   "publishing_paused": false,
-  "target_count": 6,
-  "scheduled_count": 6,
+  "target_count": 7,
   "completed_count": 0,
-  "completed_count_basis": "Do not count Scheduled/PENDING as Published. This state records only scheduling readiness; provider/public confirmation is required for completion.",
-  "count_basis": "Logical posts, not destination records. Current program is 11:00 zodiac, 13:00 Dog Bartender, 15:00 love/soul story, 17:00 phenomenon, 20:00 Myth or Truth, 23:00 foreign legend across Facebook/Instagram/TikTok/YouTube.",
+  "completed_count_basis": "Scheduled/PENDING is not Published; provider/public confirmation is required for completion.",
+  "count_basis": "Logical posts, not destination records. Current program is 09:00 survival, 11:00 zodiac, 13:00 Dog Bartender, 15:00 love/soul story, 17:00 phenomenon, 20:00 Myth or Truth, 23:00 foreign legend across Facebook/Instagram/TikTok/YouTube.",
   "next_cycle_date": "2026-09-24",
-  "next_theme": "all_six_every_day",
-  "next_target_count": 6,
-  "next_scheduled_count": 3,
-  "last_reconciled_at": "2026-09-22T17:24:00+03:00",
-  "last_reconciled_basis": "Fresh Metricool live queue read for brand 7000636 after safe scheduling of the QA-passed 11:00, 15:00 and 20:00 current packages for 24/09.",
+  "next_target_count": 7,
+  "next_scheduled_count": 6,
+  "last_reconciled_at": "2026-09-23T07:36:00+03:00",
+  "last_reconciled_basis": "Fresh Metricool queue read for brand 7000636 plus current QA evidence. 09:00, 11:00, 15:00, 17:00, 20:00 and 23:00 are active PENDING/autoPublish=true; 13:00 remains blocked because no new four-card photorealistic asset set has passed QA.",
   "daily_categories": [
+    "survival_carousel",
     "zodiac_carousel",
     "dog_bartender_carousel",
     "emotional_story_carousel",
@@ -28,8 +27,7 @@
     "myth_truth_carousel",
     "legend_video"
   ],
-  "default_daily_slots_local": ["11:00", "13:00", "15:00", "17:00", "20:00", "23:00"],
-  "alternating_days": false,
+  "default_daily_slots_local": ["09:00", "11:00", "13:00", "15:00", "17:00", "20:00", "23:00"],
   "weekly_introduction_enabled": false,
   "legacy_dog_video_enabled": false,
   "dog_bartender_carousel_enabled": true,
@@ -45,41 +43,37 @@
     "2026-09-25": "B"
   },
   "live_queue_reconciliation": {
-    "2026-09-23": {
-      "current_logical_slots_active_pending": ["11:00", "13:00", "15:00", "17:00", "20:00", "23:00"],
+    "2026-09-24": {
+      "current_logical_slots_active_pending": ["09:00", "11:00", "15:00", "17:00", "20:00", "23:00"],
       "active_logical_count": 6,
       "published_claim": false,
-      "rule": "No false rollback: keep verified active future records unless a concrete current defect is found."
-    },
-    "2026-09-24": {
-      "current_logical_slots_active_pending": ["11:00", "15:00", "20:00"],
-      "active_logical_count": 3,
-      "published_claim": false,
+      "scheduled_detail": {
+        "09:00": "Survival — sea; 9-card native photo set on Facebook/Instagram/TikTok plus YouTube slideshow.",
+        "11:00": "Zodiac Group A; 6-card set.",
+        "15:00": "Love/soul story — Το φως απέναντι; 5-card set.",
+        "17:00": "Volcanic lightning; four-provider narrated video, current active UUID -5116098538954078694.",
+        "20:00": "Myth or Truth — bats are blind; 4-card set.",
+        "23:00": "Grey Man of Ben Macdui; Azure Nestoras, QA-passed 162.425s, four-provider active UUID 425333639005753313."
+      },
       "blocked_or_not_ready": {
-        "13:00": "No new photorealistic/cinematic four-card Dog Bartender image set has passed the exact 1080x1080 silent JPEG/WebP TikTok gate. A new dialogue brief exists, but it is not publish-ready.",
-        "17:00": "Volcanic-lightning Piper render/strict QA is in progress; do not schedule until the workflow finishes successfully and publishes a QA report/media artifact.",
-        "23:00": "Baba Yaga Piper render/strict QA is in progress; do not schedule until the workflow finishes successfully and publishes a QA report/media artifact."
+        "13:00": "No new photorealistic/cinematic four-card Dog Bartender image set has passed the exact 1080x1080 silent JPEG/WebP TikTok gate. The current 24/09 dialogue brief exists but publish_ready=false; do not reuse the 23/09 scenario or schedule placeholders."
       },
       "legacy_drafts_present": ["18:00 Grand Prismatic"],
-      "rule": "Legacy draft is not a current-program slot and must not be revived or treated as a replacement."
-    },
-    "2026-09-25": {
-      "current_logical_slots_active_pending": [],
-      "active_logical_count": 0,
-      "legacy_drafts_present": ["18:00 Cappadocia"],
-      "rule": "Legacy draft is not a current-program slot and must not be revived or treated as a replacement."
+      "rule": "Legacy draft remains draft/autoPublish=false and is not a current-program slot or replacement."
     }
   },
   "current_narrated_policy": {
-    "voice_provider": "Piper local",
-    "voice": "el_GR-rapunzelina-medium",
+    "voice_provider": "Microsoft Azure Speech F0",
+    "voice": "el-GR-NestorasNeural",
+    "fallback": "Piper el_GR-rapunzelina-medium only if Azure F0 is temporarily unavailable and no new cost is incurred; do not silently switch when the current user instruction requires Nestoras.",
     "duration": "strictly >80 seconds; no maximum",
     "background_music": false,
     "avatar_presenter": false,
     "subtitles": "burned-in synchronized Greek",
     "tiktok_auto_add_music": false
   },
-  "hold_rule": "Latest explicit user instruction wins. Old cancelled/legacy drafts remain inactive. Missing future current slots require new QA-ready current assets; never revive a legacy draft, backdate or catch up.",
-  "network_capacity_policy": "Read current provider errors and active scheduled records before each write. Exact user times cannot be shifted automatically. Explicit provider blocks hold only affected destinations; healthy destinations continue.",
+  "zero_cost_policy": "No purchases, top-ups, upgrades, paid stock or paid generation. Only existing no-incremental-cost entitlements, free tiers, and lawful reusable assets.",
+  "hold_rule": "Latest explicit user instruction wins. Missing or QA-failed current slots stay blocked; never revive legacy drafts, backdate, catch up or invent completion.",
+  "network_capacity_policy": "Read current provider errors and active queue before writes. Exact user times are not shifted automatically. A provider-specific block holds only that destination when safe separation is possible.",
   "history_policy": "Historical snapshots remain audit-only. Published content is not modified or republished."
 }
