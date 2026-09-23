@@ -1,73 +1,38 @@
 {
   "approved": true,
   "paid_generation_allowed": false,
-  "purpose": "Prepare exact 2026-09-21 zodiac Group B and emotional-story carousel cards as JPEG copies for TikTok compatibility. Preserve the original visual/text pixels; no creative changes, no TTS, no publishing, no paid generation.",
+  "purpose": "Prepare only the missing 2026-09-24 13:00 Dog Bartender four-card carousel and YouTube slideshow at zero incremental cost. No social publishing occurs in this renderer.",
   "jobs": [
     {
-      "id": "prep-20260921-zodiac-01",
-      "mode": "image_jpeg_copy",
-      "source_url": "https://static.metricool.com/planner/202609/7000636-file-13903307916734297096.png",
-      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
-    },
-    {
-      "id": "prep-20260921-zodiac-02",
-      "mode": "image_jpeg_copy",
-      "source_url": "https://static.metricool.com/planner/202609/7000636-file-7755575088381564680.png",
-      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
-    },
-    {
-      "id": "prep-20260921-zodiac-03",
-      "mode": "image_jpeg_copy",
-      "source_url": "https://static.metricool.com/planner/202609/7000636-file-17823163913892937530.png",
-      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
-    },
-    {
-      "id": "prep-20260921-zodiac-04",
-      "mode": "image_jpeg_copy",
-      "source_url": "https://static.metricool.com/planner/202609/7000636-file-17506897390375142023.png",
-      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
-    },
-    {
-      "id": "prep-20260921-zodiac-05",
-      "mode": "image_jpeg_copy",
-      "source_url": "https://static.metricool.com/planner/202609/7000636-file-3923915325400838427.png",
-      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
-    },
-    {
-      "id": "prep-20260921-zodiac-06",
-      "mode": "image_jpeg_copy",
-      "source_url": "https://static.metricool.com/planner/202609/7000636-file-3382580873996074419.png",
-      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
-    },
-    {
-      "id": "prep-20260921-emotional-01",
-      "mode": "image_jpeg_copy",
-      "source_url": "https://static.metricool.com/planner/202609/7000636-file-328792346142254253.png",
-      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
-    },
-    {
-      "id": "prep-20260921-emotional-02",
-      "mode": "image_jpeg_copy",
-      "source_url": "https://static.metricool.com/planner/202609/7000636-file-3151224098697376723.png",
-      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
-    },
-    {
-      "id": "prep-20260921-emotional-03",
-      "mode": "image_jpeg_copy",
-      "source_url": "https://static.metricool.com/planner/202609/7000636-file-7281605175480333895.png",
-      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
-    },
-    {
-      "id": "prep-20260921-emotional-04",
-      "mode": "image_jpeg_copy",
-      "source_url": "https://static.metricool.com/planner/202609/7000636-file-13820761073754520937.png",
-      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
-    },
-    {
-      "id": "prep-20260921-emotional-05",
-      "mode": "image_jpeg_copy",
-      "source_url": "https://static.metricool.com/planner/202609/7000636-file-12525188636648768747.png",
-      "attribution": "Exact already-prepared Metricool carousel card for 2026-09-21. Technical PNG→JPEG conversion only; no creative or text changes; no paid generation."
+      "id": "dog-bartender-20260924",
+      "mode": "photo_dialogue_carousel",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Three_Legged_Dog_at_Ruin_Bar_Budapest.jpg",
+      "source_author": "Yourusernamewillbepublic2",
+      "source_license": "CC0 1.0 Universal Public Domain Dedication",
+      "attribution": "Three Legged Dog at Ruin Bar Budapest; Yourusernamewillbepublic2; CC0 1.0. Source image is a real photograph at a Budapest ruin bar. Modified with crops, text overlays and layout.",
+      "title": "Σκύλος Μπάρμαν — ο παράξενος πελάτης",
+      "seconds_per_card": 6,
+      "cards": [
+        {
+          "customer": "Έχεις ποτό που να στείλει μήνυμα στην πρώην μου χωρίς να το στείλω εγώ;",
+          "dog": "Έχω νερό. Για θαύματα, το μπαρ απέναντι.",
+          "tail": "→ Περίμενε να ακούσεις τι ζήτησε μετά…"
+        },
+        {
+          "customer": "Ναι, αλλά να φαίνεται ότι στάλθηκε κατά λάθος.",
+          "dog": "Να σας βάλω πάγο ή δικηγόρο;",
+          "tail": "→ Κι όμως, δεν ήταν το πιο παράλογο…"
+        },
+        {
+          "customer": "Στείλ’ το εσύ. Εσύ είσαι σκύλος, δεν θα θυμώσει μαζί σου.",
+          "dog": "Κρατάω το μπαρ. Όχι τις επαφές σας.",
+          "tail": "→ Τότε ζήτησε το «δυνατό»…"
+        },
+        {
+          "customer": "Τελικά βάλε κάτι δυνατό.",
+          "dog": "Ένα νερό. Αύριο θα με ευχαριστείς."
+        }
+      ]
     }
   ]
 }
