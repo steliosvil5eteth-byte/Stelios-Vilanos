@@ -1,0 +1,17 @@
+{
+  "publish_ready": true,
+  "local_date": "2026-09-24",
+  "slot": "23:00",
+  "voice": "el-GR-NestorasNeural",
+  "duration_seconds": 162.425,
+  "resolution": "1080x1920",
+  "background_music": false,
+  "burned_synced_greek_subtitles": true,
+  "avatar_presenter": false,
+  "spoken_written_cta": true,
+  "dead_air_ge_1_8s": false,
+  "photo_source_count": 8,
+  "rights_verified": true,
+  "paid_generation_used": false,
+  "folklore_not_fact": true
+}
