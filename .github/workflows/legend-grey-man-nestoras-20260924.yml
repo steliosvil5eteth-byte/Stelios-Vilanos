@@ -1,0 +1,230 @@
+name: 2026-09-24 Grey Man legend - Azure Nestoras
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'media_jobs/legend_grey_man_20260924.txt'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: legend-grey-man-nestoras-20260924
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    env:
+      AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+      AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install media and Azure Speech tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python3 -m pip install --disable-pip-version-check --no-input azure-cognitiveservices-speech requests pillow
+
+      - name: Verify zero-cost and source manifest
+        run: |
+          python3 - <<'PY'
+          import json
+          m=json.load(open('media_jobs/legend_grey_man_20260924_sources.json',encoding='utf-8'))
+          assert m['local_date']=='2026-09-24'
+          assert m['slot']=='23:00'
+          assert m['paid_generation_allowed'] is False
+          assert m['voice']=='el-GR-NestorasNeural'
+          assert m['background_music'] is False
+          assert m['folklore_not_fact'] is True
+          assert len(m['commons_files']) >= 8
+          print('source/zero-cost policy verified')
+          PY
+
+      - name: Resolve Commons rights metadata and download photographs
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/grey/photos"
+          python3 - <<'PY'
+          import json, os, re, time, html
+          from pathlib import Path
+          import requests
+          from PIL import Image
+
+          manifest=json.load(open('media_jobs/legend_grey_man_20260924_sources.json',encoding='utf-8'))
+          names=manifest['commons_files']
+          titles='|'.join('File:'+x for x in names)
+          sess=requests.Session()
+          sess.headers.update({'User-Agent':'SteliosMediaQA/1.0 zero-cost rights-check'})
+          params={'action':'query','format':'json','prop':'imageinfo','iiprop':'url|extmetadata','iiurlwidth':'1600','titles':titles}
+          r=sess.get('https://commons.wikimedia.org/w/api.php',params=params,timeout=60)
+          r.raise_for_status()
+          pages=r.json()['query']['pages']
+          by_name={}
+          for p in pages.values():
+              title=p.get('title','')
+              if title.startswith('File:'):
+                  by_name[title[5:]]=p
+          records=[]
+          allowed=('cc by','public domain','cc0')
+          out=Path(os.environ['RUNNER_TEMP'])/'grey'/'photos'
+          for idx,name in enumerate(names,1):
+              p=by_name.get(name)
+              if not p or 'imageinfo' not in p:
+                  raise SystemExit(f'missing Commons metadata: {name}')
+              info=p['imageinfo'][0]; meta=info.get('extmetadata',{})
+              lic=html.unescape(meta.get('LicenseShortName',{}).get('value','')).strip()
+              usage=html.unescape(meta.get('UsageTerms',{}).get('value','')).strip()
+              combined=(lic+' '+usage).lower()
+              if not any(a in combined for a in allowed):
+                  raise SystemExit(f'non-approved visual licence {name}: {lic} / {usage}')
+              artist=re.sub('<[^>]+>','',html.unescape(meta.get('Artist',{}).get('value',''))).strip()
+              credit=re.sub('<[^>]+>','',html.unescape(meta.get('Credit',{}).get('value',''))).strip()
+              pageurl='https://commons.wikimedia.org/wiki/File:'+requests.utils.quote(name,safe='()_,.-')
+              url=info.get('thumburl') or info['url']
+              dest=out/f'{idx:02d}.jpg'
+              last=None
+              for attempt in range(5):
+                  try:
+                      rr=sess.get(url,timeout=90)
+                      if rr.status_code==429:
+                          time.sleep(4*(attempt+1)); continue
+                      rr.raise_for_status(); dest.write_bytes(rr.content); break
+                  except Exception as e:
+                      last=e; time.sleep(3*(attempt+1))
+              else:
+                  raise SystemExit(f'download failed {name}: {last}')
+              if dest.stat().st_size < 20000:
+                  raise SystemExit(f'visual too small: {name}')
+              with Image.open(dest) as im:
+                  w,h=im.size
+                  if min(w,h)<500:
+                      raise SystemExit(f'visual dimensions too small {name}: {w}x{h}')
+                  im.convert('RGB').save(dest,quality=94)
+              records.append({'file':name,'artist':artist,'credit':credit,'license':lic or usage,'source_page':pageurl,'download_url':url})
+          (out.parent/'visual-attribution.json').write_text(json.dumps(records,ensure_ascii=False,indent=2),encoding='utf-8')
+          print(f'downloaded_and_rights_verified={len(records)}')
+          PY
+
+      - name: Synthesize Azure F0 Nestoras with word timing
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          import azure.cognitiveservices.speech as speechsdk
+          root=Path(os.environ['RUNNER_TEMP'])/'grey'; root.mkdir(parents=True,exist_ok=True)
+          script=Path('media_jobs/legend_grey_man_20260924.txt').read_text(encoding='utf-8').strip()
+          cfg=speechsdk.SpeechConfig(subscription=os.environ['AZURE_SPEECH_KEY'],region=os.environ['AZURE_SPEECH_REGION'])
+          cfg.speech_synthesis_voice_name='el-GR-NestorasNeural'
+          cfg.set_speech_synthesis_output_format(speechsdk.SpeechSynthesisOutputFormat.Riff24Khz16BitMonoPcm)
+          wav=root/'nestoras.wav'; syn=speechsdk.SpeechSynthesizer(speech_config=cfg,audio_config=speechsdk.audio.AudioOutputConfig(filename=str(wav)))
+          bounds=[]
+          syn.synthesis_word_boundary.connect(lambda e: bounds.append({'text':e.text,'offset':float(e.audio_offset)/10000000.0}))
+          res=syn.speak_text_async(script).get()
+          if res.reason != speechsdk.ResultReason.SynthesizingAudioCompleted:
+              d=speechsdk.SpeechSynthesisCancellationDetails(res)
+              raise SystemExit(f'Azure F0 Nestoras failed: {d.reason} {d.error_details}')
+          dur=float(subprocess.run(['ffprobe','-v','error','-show_entries','format=duration','-of','default=nk=1:nw=1',str(wav)],check=True,text=True,capture_output=True).stdout.strip())
+          if dur <= 80: raise SystemExit(f'duration gate failed: {dur:.3f}s')
+          (root/'word-boundaries.json').write_text(json.dumps(bounds,ensure_ascii=False,indent=2),encoding='utf-8')
+          (root/'speech-meta.json').write_text(json.dumps({'voice':'el-GR-NestorasNeural','duration_seconds':round(dur,3),'background_music':False,'word_boundaries':len(bounds)},ensure_ascii=False,indent=2),encoding='utf-8')
+          print(f'duration_seconds={dur:.3f}; word_boundaries={len(bounds)}')
+          PY
+
+      - name: Build synchronized Greek subtitles
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, os, re
+          from pathlib import Path
+          root=Path(os.environ['RUNNER_TEMP'])/'grey'
+          bounds=json.loads((root/'word-boundaries.json').read_text(encoding='utf-8'))
+          dur=float(json.loads((root/'speech-meta.json').read_text(encoding='utf-8'))['duration_seconds'])
+          if len(bounds)<20: raise SystemExit('insufficient Azure word-boundary data')
+          def ts(x):
+              ms=int(round(max(0,x)*1000)); h,ms=divmod(ms,3600000); m,ms=divmod(ms,60000); s,ms=divmod(ms,1000); return f'{h:02d}:{m:02d}:{s:02d},{ms:03d}'
+          caps=[]; g=[]
+          for i,b in enumerate(bounds):
+              g.append(b); txt=' '.join(x['text'] for x in g)
+              if len(g)>=6 or len(txt)>=38 or re.search(r'[.!;;?…]$',b['text']):
+                  st=float(g[0]['offset']); en=float(bounds[i+1]['offset']) if i+1<len(bounds) else dur
+                  caps.append((st,max(st+.22,en),txt)); g=[]
+          if g: caps.append((float(g[0]['offset']),dur,' '.join(x['text'] for x in g)))
+          def wrap(txt):
+              ws=txt.split(); lines=[]; cur=''
+              for w in ws:
+                  c=(cur+' '+w).strip()
+                  if cur and len(c)>31: lines.append(cur); cur=w
+                  else: cur=c
+              if cur: lines.append(cur)
+              if len(lines)>2:
+                  mid=max(1,len(ws)//2); lines=[' '.join(ws[:mid]),' '.join(ws[mid:])]
+              return '\n'.join(lines[:2])
+          rows=[]
+          for n,(st,en,txt) in enumerate(caps,1): rows += [str(n),f'{ts(st)} --> {ts(en)}',wrap(txt),'']
+          (root/'subs.srt').write_text('\n'.join(rows),encoding='utf-8')
+          print(f'captions={len(caps)}')
+          PY
+
+      - name: Assemble photographic 9x16 legend video
+        run: |
+          set -euo pipefail
+          ROOT="$RUNNER_TEMP/grey"
+          DUR=$(python3 -c 'import json,os; print(json.load(open(os.path.join(os.environ["RUNNER_TEMP"],"grey","speech-meta.json")))["duration_seconds"])')
+          COUNT=$(ls "$ROOT/photos"/*.jpg | wc -l)
+          SCENES=$((COUNT*2))
+          PER=$(python3 -c "print(float('$DUR')/int('$SCENES'))")
+          FRAMES=$(python3 -c "import math; print(max(1,math.ceil(float('$PER')*30)))")
+          mkdir -p "$ROOT/clips"; : > "$ROOT/clips.txt"
+          n=0
+          for pass in 1 2; do
+            if [ "$pass" = 1 ]; then FILES=$(ls "$ROOT/photos"/*.jpg); else FILES=$(ls -r "$ROOT/photos"/*.jpg); fi
+            for img in $FILES; do
+              n=$((n+1)); clip="$ROOT/clips/clip-$(printf '%02d' "$n").mp4"
+              if [ $((n%2)) -eq 0 ]; then X="iw/2-(iw/zoom/2)+10*sin(on/39)"; Y="ih/2-(ih/zoom/2)+8*cos(on/43)"; else X="iw/2-(iw/zoom/2)-10*sin(on/41)"; Y="ih/2-(ih/zoom/2)-8*cos(on/47)"; fi
+              ffmpeg -y -loglevel error -loop 1 -i "$img" -vf "scale=1200:2134:force_original_aspect_ratio=increase,crop=1200:2134,zoompan=z='min(zoom+0.00028,1.055)':x='$X':y='$Y':d=$FRAMES:s=1080x1920:fps=30,format=yuv420p" -t "$PER" -an -c:v libx264 -preset veryfast -crf 21 -pix_fmt yuv420p "$clip"
+              printf "file '%s'\n" "$clip" >> "$ROOT/clips.txt"
+            done
+          done
+          ffmpeg -y -loglevel error -f concat -safe 0 -i "$ROOT/clips.txt" -an -c:v libx264 -preset veryfast -crf 21 -pix_fmt yuv420p "$ROOT/visual.mp4"
+          STYLE="FontName=DejaVu Sans,FontSize=20,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,BackColour=&H90000000,BorderStyle=3,Outline=1,Shadow=0,Alignment=2,MarginL=88,MarginR=88,MarginV=300"
+          ffmpeg -y -loglevel error -i "$ROOT/visual.mp4" -i "$ROOT/nestoras.wav" -vf "subtitles='$ROOT/subs.srt':force_style='$STYLE'" -c:v libx264 -preset medium -crf 20 -pix_fmt yuv420p -c:a aac -b:a 128k -ar 48000 -ac 1 -shortest -movflags +faststart "$ROOT/grey-man-ben-macdui-20260924.mp4"
+
+      - name: Strict QA and no-dead-air check
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, os, re, subprocess
+          from pathlib import Path
+          root=Path(os.environ['RUNNER_TEMP'])/'grey'; v=root/'grey-man-ben-macdui-20260924.mp4'
+          meta=json.loads(subprocess.run(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(v)],check=True,text=True,capture_output=True).stdout)
+          dur=float(meta['format']['duration']); vs=[s for s in meta['streams'] if s.get('codec_type')=='video']; au=[s for s in meta['streams'] if s.get('codec_type')=='audio']
+          if dur<=80 or len(vs)!=1 or len(au)!=1 or int(vs[0]['width'])!=1080 or int(vs[0]['height'])!=1920: raise SystemExit('basic QA failed')
+          dec=subprocess.run(['ffmpeg','-v','error','-i',str(v),'-f','null','-'],text=True,capture_output=True)
+          if dec.returncode: raise SystemExit('decode QA failed: '+dec.stderr[-1000:])
+          sil=subprocess.run(['ffmpeg','-hide_banner','-i',str(v),'-af','silencedetect=noise=-45dB:d=1.8','-f','null','-'],text=True,capture_output=True).stderr
+          gaps=[float(x) for x in re.findall(r'silence_duration: ([0-9.]+)',sil)]
+          if any(x>=1.8 for x in gaps): raise SystemExit(f'dead-air QA failed: {gaps}')
+          script=Path('media_jobs/legend_grey_man_20260924.txt').read_text(encoding='utf-8')
+          cta='Αν σας άρεσε, ακολουθήστε για περισσότερα.'
+          if not script.rstrip().endswith(cta): raise SystemExit('spoken CTA missing')
+          visual_records=json.loads((root/'visual-attribution.json').read_text(encoding='utf-8'))
+          qa={'publish_ready':True,'local_date':'2026-09-24','slot':'23:00','voice':'el-GR-NestorasNeural','duration_seconds':round(dur,3),'resolution':'1080x1920','background_music':False,'burned_synced_greek_subtitles':True,'avatar_presenter':False,'spoken_written_cta':True,'dead_air_ge_1_8s':False,'photo_source_count':len(visual_records),'rights_verified':True,'paid_generation_used':False,'folklore_not_fact':True}
+          (root/'qa.json').write_text(json.dumps(qa,ensure_ascii=False,indent=2),encoding='utf-8')
+          print(json.dumps(qa,ensure_ascii=False,indent=2))
+          PY
+
+      - name: Save QA-passed media to media-output
+        run: |
+          set -euo pipefail
+          ROOT="$RUNNER_TEMP/grey"; OUT="$RUNNER_TEMP/media-output-save"
+          if git fetch origin media-output --depth=1; then git worktree add --detach "$OUT" FETCH_HEAD; else git worktree add --detach "$OUT" "$GITHUB_SHA"; git -C "$OUT" checkout --orphan media-output; git -C "$OUT" rm -rf .; fi
+          DEST="$OUT/jobs/legend-grey-man-nestoras-20260924"; rm -rf "$DEST"; mkdir -p "$DEST"
+          cp "$ROOT/grey-man-ben-macdui-20260924.mp4" "$ROOT/qa.json" "$ROOT/subs.srt" "$ROOT/speech-meta.json" "$ROOT/visual-attribution.json" "$DEST/"
+          git -C "$OUT" config user.name 'github-actions[bot]'; git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/legend-grey-man-nestoras-20260924
+          if ! git -C "$OUT" diff --cached --quiet; then git -C "$OUT" commit -m "Render QA-passed Grey Man Nestoras legend for 2026-09-24"; git -C "$OUT" push origin HEAD:media-output; fi
