@@ -1,0 +1,155 @@
+{
+  "batch_id": "65b3c5fce0d1318b",
+  "batch_sha256": "65b3c5fce0d1318be696efc6474ff5ed8f4ee18f3470aa64aba0992d990ec7df",
+  "paid_ai_credits_used": 0,
+  "photographic_visuals_required": true,
+  "jobs": [
+    {
+      "id": "current-20260924-1100-zodiac-group-a-hidden-interest-photo",
+      "status": "rendered",
+      "card_count": 6,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 30.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "files": [
+        {
+          "name": "current-20260924-1100-zodiac-group-a-hidden-interest-photo-01.jpg",
+          "bytes": 543715,
+          "sha256": "b04ad23c89d43c7664b086a4dc093cdcdd25bccf5573a90bc3782951f049db7a"
+        },
+        {
+          "name": "current-20260924-1100-zodiac-group-a-hidden-interest-photo-02.jpg",
+          "bytes": 616541,
+          "sha256": "d68d23bd74ecc1278f0dda54c70936956715f910471952fdee58e859b09767ae"
+        },
+        {
+          "name": "current-20260924-1100-zodiac-group-a-hidden-interest-photo-03.jpg",
+          "bytes": 652181,
+          "sha256": "d42b442848122e81f9900191708217e78902fc98f516e29600f502a8dae55d04"
+        },
+        {
+          "name": "current-20260924-1100-zodiac-group-a-hidden-interest-photo-04.jpg",
+          "bytes": 567944,
+          "sha256": "26f15c4d4a294a6e669e922f3082303176a9077150c3df3cce5c06862dd69099"
+        },
+        {
+          "name": "current-20260924-1100-zodiac-group-a-hidden-interest-photo-05.jpg",
+          "bytes": 513249,
+          "sha256": "b910158d91bcba61787b9cb76326bc99587797358c1c629ee974bc0508669719"
+        },
+        {
+          "name": "current-20260924-1100-zodiac-group-a-hidden-interest-photo-06.jpg",
+          "bytes": 515250,
+          "sha256": "2309de1ec93bbae875eef9208d70784e2d0bf97a385d5e8961083793e033291c"
+        },
+        {
+          "name": "current-20260924-1100-zodiac-group-a-hidden-interest-photo.mp4",
+          "bytes": 2049546,
+          "sha256": "5a182c9a0d57ec0318cd182b7f719d5b4f03fc895a866a216d524f4c89d69cb0"
+        }
+      ]
+    },
+    {
+      "id": "current-20260924-1500-balcony-light-story-photo",
+      "status": "rendered",
+      "card_count": 5,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 30.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "files": [
+        {
+          "name": "current-20260924-1500-balcony-light-story-photo-01.jpg",
+          "bytes": 407290,
+          "sha256": "19e3ec0fa9b2dffb3f0128e6fae233f25ad64cf0f8392104057d90804491e6fe"
+        },
+        {
+          "name": "current-20260924-1500-balcony-light-story-photo-02.jpg",
+          "bytes": 217942,
+          "sha256": "6c60d034bef1a4e5397c31d22fa9e50d5bf0446652d961cd341cb141b173a0f6"
+        },
+        {
+          "name": "current-20260924-1500-balcony-light-story-photo-03.jpg",
+          "bytes": 311831,
+          "sha256": "ebf7e377c14bb4ae4c54643db13a0a798e9663cb817bfe666676cac8fcf09701"
+        },
+        {
+          "name": "current-20260924-1500-balcony-light-story-photo-04.jpg",
+          "bytes": 315121,
+          "sha256": "4e573adf560e25f80ed128fac3bb6a8fa971a46962e52dffeef152d6667ac729"
+        },
+        {
+          "name": "current-20260924-1500-balcony-light-story-photo-05.jpg",
+          "bytes": 262887,
+          "sha256": "841e1d0aed06f83351dc7bd63aa43d8e681864d80afe24aa51acd92ffd209afe"
+        },
+        {
+          "name": "current-20260924-1500-balcony-light-story-photo.mp4",
+          "bytes": 830814,
+          "sha256": "f1dee6e560324b37a912a2f0981fe5700d70b18a3602f0c552d7af30fceddbf4"
+        }
+      ]
+    },
+    {
+      "id": "current-20260924-2000-myth-truth-bats-photo",
+      "status": "rendered",
+      "card_count": 4,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 24.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "files": [
+        {
+          "name": "current-20260924-2000-myth-truth-bats-photo-01.jpg",
+          "bytes": 166462,
+          "sha256": "a31c789ae87b1081ef2ee4993942a0c4acb0c4c0ef3075e9ce8c2a8eab29a966"
+        },
+        {
+          "name": "current-20260924-2000-myth-truth-bats-photo-02.jpg",
+          "bytes": 200472,
+          "sha256": "b1218ab01b3eb8421357f3b5c8f43a74b64e4aebdd28f323775efa5be794d5ae"
+        },
+        {
+          "name": "current-20260924-2000-myth-truth-bats-photo-03.jpg",
+          "bytes": 319109,
+          "sha256": "3653d74aba0e4efdf9cd49b93c4c32e3ff00f4532ef0d38907a11bda5d645e9e"
+        },
+        {
+          "name": "current-20260924-2000-myth-truth-bats-photo-04.jpg",
+          "bytes": 355636,
+          "sha256": "6a38985a8b4c872348435bb33d808acdd12fca70243f4c9f1670efc03bca8893"
+        },
+        {
+          "name": "current-20260924-2000-myth-truth-bats-photo.mp4",
+          "bytes": 611952,
+          "sha256": "b43fbe3773e1cb8527de651e9ad4cfbe409997536616640ac6894dd7a917bd5a"
+        }
+      ]
+    }
+  ]
+}
