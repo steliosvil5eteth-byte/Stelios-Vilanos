@@ -1,0 +1,43 @@
+{
+  "local_date": "2026-09-24",
+  "slot": "23:00",
+  "category": "international_foreign_legend",
+  "title": "Ο θρύλος λέει… Ο Γκρίζος Άνθρωπος του Ben Macdui",
+  "voice": "el-GR-NestorasNeural",
+  "azure_tier_required": "F0",
+  "paid_generation_allowed": false,
+  "background_music": false,
+  "folklore_not_fact": true,
+  "core_sources": [
+    {
+      "name": "The Cairngorm Club Journal, Vol. XI No. 64 (1926), The Ben Macdhui Giant Spectre",
+      "url": "https://www.cairngormclub.org.uk/journals/PDFs/Complete/The%20Cairngorm%20Club%20Journal%20064%20WM.pdf",
+      "role": "primary historical record of J. Norman Collie's account told at the 1925 Club dinner"
+    },
+    {
+      "name": "The Cairngorm Club Journal No. 105, Ferla Mor",
+      "url": "https://www.cairngormclub.org.uk/journals/PDFs/Articles/J105/The%20Cairngorm%20Club%20Journal%20105%20-%20Ferla%20Mor%20WM.pdf",
+      "role": "retrospective folklore/history context"
+    },
+    {
+      "name": "Met Office — Optical effects: Brocken spectre",
+      "url": "https://weather.metoffice.gov.uk/learn-about/weather/optical-effects",
+      "role": "authoritative explanation of the giant-shadow optical phenomenon; presented only as a possible class of mountain illusion, not as a proven explanation of Collie's experience"
+    }
+  ],
+  "commons_files": [
+    "Summit of Ben MacDui - geograph.org.uk - 50972.jpg",
+    "The summit of Ben Macdui - geograph.org.uk - 3184535.jpg",
+    "Ben Macdui summit - geograph.org.uk - 1975616.jpg",
+    "Rocky terrain on the approach to the summit of Ben Macdui - geograph.org.uk - 1975614.jpg",
+    "Beginning the final ascent to Ben Macdui - geograph.org.uk - 3589920.jpg",
+    "A winter day on Ben Macdui - geograph.org.uk - 4787997.jpg",
+    "Evening falls on Beinn Macduibh - geograph.org.uk - 878718.jpg",
+    "Walkers on Ben Macdui - geograph.org.uk - 3180672.jpg",
+    "October snow on Ben Macdui - geograph.org.uk - 3180685.jpg",
+    "The summit area of Ben Macdui - geograph.org.uk - 3181534.jpg",
+    "Brocken Spectre, Beinn a Chroin - geograph.org.uk - 189723.jpg"
+  ],
+  "rights_policy": "Runtime resolves Wikimedia Commons extmetadata and accepts only CC BY / CC BY-SA / CC0 / public-domain photographs. Attribution records are saved beside the final media. No paid stock and no generated fantasy artwork are used.",
+  "content_policy": "Explicitly label the Grey Man as Scottish folklore/legend. Do not present supernatural claims as proven fact. Separate Collie's documented historical account from later stories and from possible natural optical effects."
+}
