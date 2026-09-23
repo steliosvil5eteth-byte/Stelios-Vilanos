@@ -1,92 +1,46 @@
 {
   "approved": true,
   "paid_generation_allowed": false,
-  "strategy_id": "CURRENT_SIX_DAILY",
+  "strategy_id": "CURRENT_SEVEN_DAILY",
   "local_date": "2026-09-24",
-  "authorization_basis": "Standing user authorization for the current six-post daily program; automatic publishing is allowed only after QA and live deduplication.",
-  "purpose": "Prepare only the 2026-09-24 11:00 zodiac Group A, 15:00 love/soul story and 20:00 Myth or Truth card packs with deterministic local rendering. No avatar, narration, TTS, paid AI credits, external catalog music or social publishing. The 13:00 Dog Bartender is excluded because it requires photorealistic series-specific assets and its own exact 1080x1080 TikTok gate.",
+  "require_photographic_visuals": true,
+  "authorization_basis": "Standing user authorization; automatic publishing only after hard QA, rights and live deduplication.",
+  "purpose": "Repair the exact 2026-09-24 11:00, 15:00 and 20:00 card packs with lawful real photographic backgrounds. Silent square JPEG cards for photo carousels; YouTube slideshow receives one original local instrumental layer. No paid AI or catalog music.",
   "jobs": [
     {
-      "id": "current-20260924-1100-zodiac-group-a-hidden-interest",
+      "id": "current-20260924-1100-zodiac-group-a-hidden-interest-photo",
       "expected_cards": 6,
       "seconds_per_slide": 5,
       "slides": [
-        {
-          "title": "ΚΡΙΟΣ — 1/6",
-          "text": "Όταν σε θέλει αλλά φοβάται να το δείξει, θα σε πειράξει περισσότερο απ’ όλους και μετά θα ψάξει αφορμή να μείνει λίγο ακόμη δίπλα σου."
-        },
-        {
-          "title": "ΤΑΥΡΟΣ — 2/6",
-          "text": "Δεν θα βιαστεί να μιλήσει. Θα σε φροντίσει αθόρυβα, θα θυμηθεί τι σου αρέσει και θα είναι εκεί κάθε φορά που τον χρειάζεσαι."
-        },
-        {
-          "title": "ΔΙΔΥΜΟΙ — 3/6",
-          "text": "Θα γεμίσει τη συζήτηση αστεία και ιστορίες, αλλά θα προσέχει κάθε αντίδρασή σου. Αν ξαφνικά σωπάσει, μάλλον τον πέτυχες ακριβώς εκεί που νιώθει."
-        },
-        {
-          "title": "ΚΑΡΚΙΝΟΣ — 4/6",
-          "text": "Θα ρωτήσει αν έφαγες, αν γύρισες καλά, αν κάτι σε στενοχώρησε. Δεν θα πει εύκολα «σε θέλω», αλλά θα στο δείξει με μικρές προστατευτικές κινήσεις."
-        },
-        {
-          "title": "ΛΕΩΝ — 5/6",
-          "text": "Θα θέλει να σε κάνει να γελάσεις και να τον προσέξεις, αλλά αν νιώσει ότι εκτίθεται θα κρυφτεί πίσω από σιγουριά. Η ζήλια του όμως συνήθως τον προδίδει."
-        },
-        {
-          "title": "ΠΑΡΘΕΝΟΣ — 6/6",
-          "text": "Θα διορθώσει μια λεπτομέρεια, θα λύσει ένα πρόβλημά σου και θα θυμάται πράγματα που εσύ ξέχασες. Το ενδιαφέρον του φαίνεται περισσότερο στις πράξεις παρά στις δηλώσεις."
-        }
+        {"title":"ΚΡΙΟΣ — 1/6","text":"Όταν σε θέλει αλλά φοβάται να το δείξει, θα σε πειράξει περισσότερο απ’ όλους και μετά θα ψάξει αφορμή να μείνει λίγο ακόμη δίπλα σου.","source_url":"https://noirlab.edu/public/media/archives/images/large/aries.jpg","source_credit":"E. Slawik/NOIRLab/NSF/AURA/M. Zamani","license":"CC BY 4.0"},
+        {"title":"ΤΑΥΡΟΣ — 2/6","text":"Δεν θα βιαστεί να μιλήσει. Θα σε φροντίσει αθόρυβα, θα θυμηθεί τι σου αρέσει και θα είναι εκεί κάθε φορά που τον χρειάζεσαι.","source_url":"https://noirlab.edu/public/media/archives/images/large/taurus.jpg","source_credit":"E. Slawik/NOIRLab/NSF/AURA/M. Zamani","license":"CC BY 4.0"},
+        {"title":"ΔΙΔΥΜΟΙ — 3/6","text":"Θα γεμίσει τη συζήτηση αστεία και ιστορίες, αλλά θα προσέχει κάθε αντίδρασή σου. Αν ξαφνικά σωπάσει, μάλλον τον πέτυχες ακριβώς εκεί που νιώθει.","source_url":"https://noirlab.edu/public/media/archives/images/large/gemini.jpg","source_credit":"E. Slawik/NOIRLab/NSF/AURA/M. Zamani","license":"CC BY 4.0"},
+        {"title":"ΚΑΡΚΙΝΟΣ — 4/6","text":"Θα ρωτήσει αν έφαγες, αν γύρισες καλά, αν κάτι σε στενοχώρησε. Δεν θα πει εύκολα «σε θέλω», αλλά θα στο δείξει με μικρές προστατευτικές κινήσεις.","source_url":"https://noirlab.edu/public/media/archives/images/large/cancer.jpg","source_credit":"E. Slawik/NOIRLab/NSF/AURA/M. Zamani","license":"CC BY 4.0"},
+        {"title":"ΛΕΩΝ — 5/6","text":"Θα θέλει να σε κάνει να γελάσεις και να τον προσέξεις, αλλά αν νιώσει ότι εκτίθεται θα κρυφτεί πίσω από σιγουριά. Η ζήλια του όμως συνήθως τον προδίδει.","source_url":"https://noirlab.edu/public/media/archives/images/large/leoh.jpg","source_credit":"E. Slawik/NOIRLab/NSF/AURA/M. Zamani","license":"CC BY 4.0"},
+        {"title":"ΠΑΡΘΕΝΟΣ — 6/6","text":"Θα διορθώσει μια λεπτομέρεια, θα λύσει ένα πρόβλημά σου και θα θυμάται πράγματα που εσύ ξέχασες. Το ενδιαφέρον του φαίνεται περισσότερο στις πράξεις παρά στις δηλώσεις.","source_url":"https://noirlab.edu/public/media/archives/images/large/virgo.jpg","source_credit":"E. Slawik/NOIRLab/NSF/AURA/M. Zamani","license":"CC BY 4.0"}
       ]
     },
     {
-      "id": "current-20260924-1500-balcony-light-story",
+      "id": "current-20260924-1500-balcony-light-story-photo",
       "expected_cards": 5,
       "seconds_per_slide": 6,
       "slides": [
-        {
-          "title": "ΤΟ ΦΩΣ ΑΠΕΝΑΝΤΙ — 1/5",
-          "text": "Κάθε βράδυ, στις 23:17, άναβε το φως στο απέναντι μπαλκόνι. Εκείνος είχε αρχίσει να περιμένει αυτή τη στιγμή χωρίς να ξέρει ούτε το όνομά της."
-        },
-        {
-          "title": "ΕΝΑ ΧΑΡΤΙ ΣΤΟ ΤΖΑΜΙ — 2/5",
-          "text": "Μια νύχτα έγραψε «Είσαι καλά;» και σήκωσε το χαρτί στο παράθυρο. Η κοπέλα απέναντι χαμογέλασε και απάντησε με δύο λέξεις: «Τώρα καλύτερα.»"
-        },
-        {
-          "title": "ΧΩΡΙΣ ΝΑ ΕΧΟΥΝ ΜΙΛΗΣΕΙ — 3/5",
-          "text": "Για εβδομάδες επικοινωνούσαν με χαρτιά. Μικρά αστεία, δύσκολες μέρες, ένα «καληνύχτα». Δεν ήξεραν ακόμη τα επίθετά τους, αλλά ήξεραν πότε ο άλλος δεν ήταν καλά."
-        },
-        {
-          "title": "ΤΡΕΙΣ ΝΥΧΤΕΣ ΣΚΟΤΑΔΙ — 4/5",
-          "text": "Όταν το φως έμεινε σβηστό για τρεις νύχτες, κατέβηκε να τη βρει. Έμαθε μόνο ότι είχε φύγει ξαφνικά για να σταθεί δίπλα στη μητέρα της στο νοσοκομείο."
-        },
-        {
-          "title": "ΧΩΡΙΣ ΤΖΑΜΙΑ ΑΝΑΜΕΣΑ — 5/5",
-          "text": "Την τέταρτη νύχτα το φως άναψε ξανά. Στο τζάμι υπήρχε ένα χαρτί: «Αύριο, καφέ; Αυτή τη φορά χωρίς τζάμια ανάμεσά μας.»"
-        }
+        {"title":"ΤΟ ΦΩΣ ΑΠΕΝΑΝΤΙ — 1/5","text":"Κάθε βράδυ, στις 23:17, άναβε το φως στο απέναντι μπαλκόνι. Εκείνος είχε αρχίσει να περιμένει αυτή τη στιγμή χωρίς να ξέρει ούτε το όνομά της.","source_url":"https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FWindow%20Front%20at%20Night%20374889.jpg&w=1600&output=jpg","source_credit":"Matthew Henry","license":"CC0 1.0"},
+        {"title":"ΕΝΑ ΧΑΡΤΙ ΣΤΟ ΤΖΑΜΙ — 2/5","text":"Μια νύχτα έγραψε «Είσαι καλά;» και σήκωσε το χαρτί στο παράθυρο. Η κοπέλα απέναντι χαμογέλασε και απάντησε με δύο λέξεις: «Τώρα καλύτερα.»","source_url":"https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FView%20of%20Hanoi%20city%20at%20night%20from%20my%20balcony.jpg&w=1600&output=jpg","source_credit":"Wikimedia Commons contributor","license":"CC BY-SA 4.0"},
+        {"title":"ΧΩΡΙΣ ΝΑ ΕΧΟΥΝ ΜΙΛΗΣΕΙ — 3/5","text":"Για εβδομάδες επικοινωνούσαν με χαρτιά. Μικρά αστεία, δύσκολες μέρες, ένα «καληνύχτα». Δεν ήξεραν ακόμη τα επίθετά τους, αλλά ήξεραν πότε ο άλλος δεν ήταν καλά.","source_url":"https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FUniworld%20City%20at%20Night.jpg&w=1600&output=jpg","source_credit":"Radhamadhab Sarangi","license":"CC0 1.0"},
+        {"title":"ΤΡΕΙΣ ΝΥΧΤΕΣ ΣΚΟΤΑΔΙ — 4/5","text":"Όταν το φως έμεινε σβηστό για τρεις νύχτες, κατέβηκε να τη βρει. Έμαθε μόνο ότι είχε φύγει ξαφνικά για να σταθεί δίπλα στη μητέρα της στο νοσοκομείο.","source_url":"https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FHospitals%20corridor.jpg&w=1600&output=jpg","source_credit":"Pamela Adam","license":"CC BY 2.0"},
+        {"title":"ΧΩΡΙΣ ΤΖΑΜΙΑ ΑΝΑΜΕΣΑ — 5/5","text":"Την τέταρτη νύχτα το φως άναψε ξανά. Στο τζάμι υπήρχε ένα χαρτί: «Αύριο, καφέ; Αυτή τη φορά χωρίς τζάμια ανάμεσά μας.»","source_url":"https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FDining%20table%20for%20two.jpg&w=1600&output=jpg","source_credit":"Jeremy van Bedijk","license":"CC BY 2.0"}
       ]
     },
     {
-      "id": "current-20260924-2000-myth-truth-bats",
+      "id": "current-20260924-2000-myth-truth-bats-photo",
       "expected_cards": 4,
       "seconds_per_slide": 6,
       "slides": [
-        {
-          "title": "ΜΥΘΟΣ Ή ΑΛΗΘΕΙΑ; — 1/4",
-          "text": "Οι νυχτερίδες είναι τυφλές."
-        },
-        {
-          "title": "ΠΡΙΝ ΔΕΙΣ ΤΗΝ ΑΠΑΝΤΗΣΗ — 2/4",
-          "text": "Εσύ τι πιστεύεις; Γράψε: ΜΥΘΟΣ ή ΑΛΗΘΕΙΑ;"
-        },
-        {
-          "title": "ΤΙ ΛΕΕΙ Η ΕΠΙΣΤΗΜΗ — 3/4",
-          "text": "Οι νυχτερίδες μπορούν να δουν. Πολλά είδη χρησιμοποιούν επιπλέον ηχοεντοπισμό, εκπέμποντας ήχους και αναλύοντας τις ανακλάσεις τους για προσανατολισμό και κυνήγι.",
-          "footer": "Πηγή ελέγχου: Smithsonian Institution — Bat Facts"
-        },
-        {
-          "title": "Η ΑΠΑΝΤΗΣΗ: ΜΥΘΟΣ — 4/4",
-          "text": "Η φράση «τυφλός σαν νυχτερίδα» είναι λανθασμένη. Όλες οι νυχτερίδες βλέπουν, παρότι σε πολλά είδη η ηχοεντόπιση είναι εξαιρετικά σημαντική.",
-          "footer": "Πηγή ελέγχου: Smithsonian Institution — Bat Facts"
-        }
+        {"title":"ΜΥΘΟΣ Ή ΑΛΗΘΕΙΑ; — 1/4","text":"Οι νυχτερίδες είναι τυφλές.","source_url":"https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FBat%20flight.jpg&w=1600&output=jpg","source_credit":"Hu Nhu","license":"CC0 1.0"},
+        {"title":"ΠΡΙΝ ΔΕΙΣ ΤΗΝ ΑΠΑΝΤΗΣΗ — 2/4","text":"Εσύ τι πιστεύεις; Γράψε: ΜΥΘΟΣ ή ΑΛΗΘΕΙΑ;","source_url":"https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FEastern%20small-footed%20bat%20close%20up.jpg&w=1600&output=jpg","source_credit":"Paul Moosman","license":"CC BY-SA 4.0"},
+        {"title":"ΤΙ ΛΕΕΙ Η ΕΠΙΣΤΗΜΗ — 3/4","text":"Οι νυχτερίδες μπορούν να δουν. Πολλά είδη χρησιμοποιούν επιπλέον ηχοεντοπισμό, εκπέμποντας ήχους και αναλύοντας τις ανακλάσεις τους για προσανατολισμό και κυνήγι.","footer":"Πηγή ελέγχου: Smithsonian NMNH","source_url":"https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FMyotis%20bechsteinii-flying.jpg&w=1600&output=jpg","source_credit":"PLoS Computational Biology","license":"CC BY 2.5"},
+        {"title":"Η ΑΠΑΝΤΗΣΗ: ΜΥΘΟΣ — 4/4","text":"Η φράση «τυφλός σαν νυχτερίδα» είναι λανθασμένη. Όλες οι νυχτερίδες έχουν μάτια και μπορούν να δουν· η ποιότητα της όρασης διαφέρει ανά είδος, ενώ πολλά είδη βασίζονται πολύ και στην ηχοεντόπιση.","footer":"Πηγή ελέγχου: Smithsonian NMNH","source_url":"https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FBats%20flying%20%289413217529%29.jpg&w=1600&output=jpg","source_credit":"U.S. Fish and Wildlife Service","license":"Public Domain / CC BY 2.0 source record"}
       ]
     }
   ]
