@@ -1,92 +1,28 @@
 {
   "approved": true,
   "paid_generation_allowed": false,
-  "purpose": "Prepare the authorized 2026-09-23 09:00 Europe/Athens ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ mountain-safety post. Nine silent 1080x1080 JPEG photo cards for TikTok/Facebook/Instagram plus one vertical YouTube slideshow with one locally synthesized instrumental layer and no narration.",
+  "local_date": "2026-09-24",
+  "purpose": "Prepare the authorized 09:00 ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ SEA-safety post: nine silent 1080x1080 JPEG photo cards for TikTok/Facebook/Instagram plus one vertical YouTube slideshow with one locally synthesized instrumental layer and no narration.",
   "jobs": [
     {
-      "id": "v2-20260923-survival-0900",
+      "id": "v2-20260924-survival-sea-0900",
       "expected_cards": 9,
       "seconds_per_slide": 5,
       "fact_sources": [
-        "https://www.nps.gov/articles/10essentials.htm",
-        "https://www.nps.gov/yose/planyourvisit/hikingsafety.htm",
-        "https://www.nps.gov/mora/planyourvisit/hiking-safety.htm",
-        "https://www.nps.gov/olym/planyourvisit/wilderness-safety.htm",
-        "https://www.nps.gov/articles/gtgemergencyplan.htm"
+        "https://www.weather.gov/safety/coldwater",
+        "https://www.news.uscg.mil/Press-Releases/Article/3770112/video-available-us-coast-guard-urges-maritime-safety-through-proper-radio-use/",
+        "https://www.news.uscg.mil/Press-Releases/Article/3683649/coast-guard-rescues-2-from-sinking-boat-offshore-sabine-texas/"
       ],
       "slides": [
-        {
-          "visible_title": "ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ",
-          "subtitle": "ΒΟΥΝΟ: ΑΝ ΣΕ ΠΡΟΛΑΒΕΙ Ο ΚΑΙΡΟΣ;",
-          "text": "Πριν φύγεις: έλεγξε πρόγνωση, προειδοποιήσεις και δυσκολία διαδρομής. Πες σε δικό σου άνθρωπο τη διαδρομή και πότε αναμένεις να επιστρέψεις. Πάρε τα 10 βασικά και μην βασίζεσαι μόνο στο κινητό.",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Adventurous_Mountain_Hikes_%28Unsplash%29.jpg",
-          "credit": "Galen Crout — Adventurous Mountain Hikes (Unsplash), 29 Mar 2016, via Wikimedia Commons",
-          "license": "CC0 1.0"
-        },
-        {
-          "visible_title": "ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ",
-          "subtitle": "3 ΜΙΚΡΑ ΠΟΥ ΑΞΙΖΟΥΝ ΧΩΡΟ",
-          "text": "• Σφυρίχτρα.\n• Μικρό καθρεφτάκι σήμανσης.\n• Έντονο μαντήλι ή ύφασμα.\n\nΕίναι ελαφριά και μπορούν να σε κάνουν πολύ πιο εύκολο να εντοπιστείς.",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Hiker_with_a_large_backpack_%28Unsplash%29.jpg",
-          "credit": "Jake Melara — Hiker with a large backpack (Unsplash), 21 Aug 2015, via Wikimedia Commons",
-          "license": "CC0 1.0"
-        },
-        {
-          "visible_title": "ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ",
-          "subtitle": "ΠΩΣ ΤΑ ΧΡΗΣΙΜΟΠΟΙΕΙΣ",
-          "text": "Αν αναγκαστείς να σταματήσεις, χρησιμοποίησε τη σφυρίχτρα για να τραβήξεις προσοχή. Σε ανοικτό σημείο, καθρεφτάκι ή φωτεινό ύφασμα σε κάνουν ορατό από μακριά ή από τον αέρα. Μην αδειάζεις άσκοπα την μπαταρία ψάχνοντας συνέχεια σήμα.",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Mountain_hiker_%28Unsplash%29.jpg",
-          "credit": "Sujitkun Khantayana — Mountain hiker (Unsplash), 12 Jun 2016, via Wikimedia Commons",
-          "license": "CC0 1.0"
-        },
-        {
-          "visible_title": "ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ",
-          "subtitle": "ΠΡΩΤΑ: ΠΡΟΣΤΑΣΙΑ ΑΠΟ ΤΗΝ ΕΚΘΕΣΗ",
-          "text": "Βγες από άνεμο και βροχή σε σταθερό, ασφαλές σημείο. Χρησιμοποίησε tarp, bivy ή κουβέρτα έκτακτης ανάγκης αν έχεις. Κράτα τον εαυτό σου ζεστό και στεγνό. Σε κακή ορατότητα, μην συνεχίζεις μόνο και μόνο για να «προλάβεις».",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/25/Mountain_hiker_%28Unsplash%29.jpg",
-          "credit": "Sujitkun Khantayana — Mountain hiker (Unsplash), 12 Jun 2016, via Wikimedia Commons",
-          "license": "CC0 1.0"
-        },
-        {
-          "visible_title": "ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ",
-          "subtitle": "ΑΝ ΧΑΘΕΙΣ",
-          "text": "Μείνε ψύχραιμος. Αν το σημείο είναι ασφαλές, μείνε εκεί: οι διασώστες σε βρίσκουν ευκολότερα. Κράτα ζέστη και στεγνά ρούχα, εξοικονόμησε ενέργεια και κάνε ορατό σήμα. Μην ακολουθείς τυφλά ρέμα ή ποτάμι.",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/50/Hiker_with_a_large_backpack_%28Unsplash%29.jpg",
-          "credit": "Jake Melara — Hiker with a large backpack (Unsplash), 21 Aug 2015, via Wikimedia Commons",
-          "license": "CC0 1.0"
-        },
-        {
-          "visible_title": "ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ",
-          "subtitle": "4 ΛΑΘΗ ΠΡΙΝ ΚΑΝ ΑΡΧΙΣΕΙΣ",
-          "text": "1. Δεν λες σε κανέναν διαδρομή και ώρα επιστροφής.\n2. Βασίζεσαι μόνο σε κινητό ή GPS.\n3. Αγνοείς πρόγνωση ή γρήγορη αλλαγή καιρού.\n4. Μπαίνεις σε διαδρομή πάνω από τις δυνατότητές σου.",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Two_Hikers_climbing_Flattop_Mountain_%2822204020976%29.jpg",
-          "credit": "Let Ideas Compete — Two Hikers climbing Flattop Mountain, 11 Oct 2015, via Wikimedia Commons",
-          "license": "CC0 1.0"
-        },
-        {
-          "visible_title": "ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ",
-          "subtitle": "4 ΛΑΘΗ ΣΤΟ ΜΟΝΟΠΑΤΙ",
-          "text": "5. Φεύγεις χωρίς φακό κεφαλής.\n6. Παίρνεις λίγο νερό ή χωρίς τρόπο επεξεργασίας.\n7. Δεν έχεις ζεστά και αδιάβροχα στρώματα.\n8. Βγαίνεις από το καθιερωμένο μονοπάτι χωρίς σοβαρό λόγο.",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Adventurous_Mountain_Hikes_%28Unsplash%29.jpg",
-          "credit": "Galen Crout — Adventurous Mountain Hikes (Unsplash), 29 Mar 2016, via Wikimedia Commons",
-          "license": "CC0 1.0"
-        },
-        {
-          "visible_title": "ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ",
-          "subtitle": "4 ΛΑΘΗ ΟΤΑΝ ΚΑΤΙ ΠΑΕΙ ΣΤΡΑΒΑ",
-          "text": "9. Συνεχίζεις να περιπλανιέσαι όταν χαθείς.\n10. Χωρίζεις την ομάδα χωρίς σχέδιο επανένωσης.\n11. Αδειάζεις το κινητό ψάχνοντας ασταμάτητα σήμα.\n12. Παίρνεις ριψοκίνδυνη «συντόμευση» ή διάσχιση.",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Two_Hikers_climbing_Flattop_Mountain_%2822204020976%29.jpg",
-          "credit": "Let Ideas Compete — Two Hikers climbing Flattop Mountain, 11 Oct 2015, via Wikimedia Commons",
-          "license": "CC0 1.0"
-        },
-        {
-          "visible_title": "ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ",
-          "subtitle": "ΤΟ ΣΧΕΔΙΟ ΣΕ 6 ΒΗΜΑΤΑ",
-          "text": "Σταμάτα → έλεγξε τον άμεσο κίνδυνο → βρες ασφαλέστερη θέση → μείνε ζεστός και στεγνός → κάνε ορατό σήμα → εξοικονόμησε ενέργεια και κάλεσε βοήθεια όταν μπορείς.",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/fe/Adventurous_Mountain_Hikes_%28Unsplash%29.jpg",
-          "credit": "Galen Crout — Adventurous Mountain Hikes (Unsplash), 29 Mar 2016, via Wikimedia Commons",
-          "license": "CC0 1.0"
-        }
+        {"visible_title":"ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ","subtitle":"ΘΑΛΑΣΣΑ: ΑΝ ΜΕΙΝΕΙΣ ΧΩΡΙΣ ΒΟΗΘΕΙΑ;","text":"Πριν φύγεις: έλεγξε πρόγνωση, θαλάσσιες προειδοποιήσεις και θερμοκρασία νερού. Άφησε σχέδιο πλου σε άνθρωπο που εμπιστεύεσαι. Φόρα σωσίβιο — μην το έχεις απλώς αποθηκευμένο.","source_url":"https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FUSCG%20motor%20lifeboat%20crosses%20the%20bar%2C%20at%20Bodego%20Bay%20%28090912-G-%20-002%29.jpg&w=1600&output=jpg","credit":"U.S. Coast Guard","license":"Public Domain"},
+        {"visible_title":"ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ","subtitle":"3 ΜΙΚΡΑ ΠΟΥ ΑΞΙΖΟΥΝ ΧΩΡΟ","text":"• Σφυρίχτρα πάνω στο σωσίβιο.\n• Αδιάβροχο φως ή strobe.\n• Καταχωρημένο PLB 406 MHz ή κατάλληλο φορητό VHF.\n\nΜικρός όγκος, μεγάλη αξία όταν χρειάζεται να σε εντοπίσουν.","source_url":"https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FA%20Coast%20Guard%20Auxiliarist%20outfits%20a%20future%20boater%20with%20a%20life%20jacket%20to%20promote%20boater%20safety.jpg&w=1600&output=jpg","credit":"USCG / Paul Krug","license":"Public Domain"},
+        {"visible_title":"ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ","subtitle":"ΑΝ ΧΡΕΙΑΣΤΕΙΣ ΒΟΗΘΕΙΑ","text":"Σε πραγματικό κίνδυνο χρησιμοποίησε το θαλάσσιο VHF και το διεθνές σήμα MAYDAY στο κανάλι 16. Δώσε θέση, τι συμβαίνει, πόσα άτομα είστε και περιγραφή σκάφους. Κάλεσε νωρίς, όχι όταν η κατάσταση έχει ήδη ξεφύγει.","source_url":"https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FU.S.%20Coast%20Guard%20Over%20the%20Horizon%20%28OTH%29%20boat.jpg&w=1600&output=jpg","credit":"U.S. Coast Guard","license":"Public Domain"},
+        {"visible_title":"ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ","subtitle":"ΑΝ ΠΕΣΕΙΣ ΣΕ ΚΡΥΟ ΝΕΡΟ","text":"Μείνε όσο γίνεται ήρεμος και κράτα το κεφάλι έξω από το νερό. Αν δεν μπορείς να φτάσεις με ασφάλεια σε έξοδο, μείνε με σωσίβιο ή άλλο πλευστικό μέσο, εξοικονόμησε θερμότητα και περίμενε διάσωση αντί για εξαντλητικό κολύμπι.","source_url":"https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FLife%20raft.jpg&w=1600&output=jpg","credit":"USAF / Val Gempis","license":"Public Domain"},
+        {"visible_title":"ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ","subtitle":"ΑΝ Ο ΚΑΙΡΟΣ ΧΑΛΑΕΙ","text":"Αναζήτησε ασφαλέστερο καταφύγιο νωρίς. Αν βρίσκεσαι ήδη σε σωστική σχεδία ή με ομάδα, μείνε μαζί της εκτός αν υπάρχει σαφώς ασφαλέστερη επιλογή. Κράτα τα μέσα σήμανσης έτοιμα και συνέχισε την επικοινωνία.","source_url":"https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FHC-130H%20USCG%20drops%20life%20raft%20over%20Kaneohe%20Bay%202010.jpg&w=1600&output=jpg","credit":"USMC / Ronald W. Stauffer","license":"Public Domain"},
+        {"visible_title":"ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ","subtitle":"4 ΛΑΘΗ ΠΡΙΝ ΑΠΟ ΤΟΝ ΑΠΟΠΛΟΥ","text":"1. Δεν ελέγχεις θαλάσσια πρόγνωση και θερμοκρασία νερού.\n2. Δεν αφήνεις σχέδιο πλου.\n3. Έχεις σωσίβια κλεισμένα αντί να τα φοράς.\n4. Βασίζεσαι μόνο στο κινητό για βοήθεια.","source_url":"https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FAll%20four%20USCG%2052%20foot%20motor%20lifeboats.jpg&w=1600&output=jpg","credit":"USCG / Kurt Frederickson","license":"Public Domain"},
+        {"visible_title":"ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ","subtitle":"4 ΛΑΘΗ ΟΤΑΝ ΑΡΧΙΖΕΙ ΤΟ ΠΡΟΒΛΗΜΑ","text":"5. Δεν έχεις VHF ή μέσο εντοπισμού σε εκτεθειμένη διαδρομή.\n6. Καθυστερείς το σήμα κινδύνου.\n7. Κανείς άλλος δεν ξέρει θέση και βασικά στοιχεία του σκάφους.\n8. Συνεχίζεις μέσα σε επιδεινούμενο καιρό αντί να στραφείς νωρίς σε ασφαλέστερο σημείο.","source_url":"https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCoast%20Guard%20response%20boat-small%20DVIDS1076833.jpg&w=1600&output=jpg","credit":"USCG / Kyle Niemi","license":"Public Domain"},
+        {"visible_title":"ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ","subtitle":"4 ΛΑΘΗ ΜΕΤΑ ΤΗΝ ΠΤΩΣΗ ΣΤΟ ΝΕΡΟ","text":"9. Βγάζεις το σωσίβιο επειδή ο αέρας είναι ζεστός.\n10. Υποτιμάς το cold shock.\n11. Απομακρύνεσαι από πλευστικό μέσο χωρίς σαφώς ασφαλέστερη λύση.\n12. Ξεκινάς μακρύ κολύμπι ενώ δεν είναι καθαρά εφικτό.","source_url":"https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FMan%20overboard%20drill%20DVIDS1091896.jpg&w=1600&output=jpg","credit":"U.S. Coast Guard","license":"Public Domain"},
+        {"visible_title":"ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ","subtitle":"ΤΟ ΣΧΕΔΙΟ ΣΕ 7 ΚΙΝΗΣΕΙΣ","text":"Πρόγνωση → σχέδιο πλου → σωσίβιο πάνω σου → VHF/406 backup → κάλεσε νωρίς → μείνε ήρεμος και πλευστός → μείνε μαζί με την ομάδα και κάνε τον εαυτό σου ορατό.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.","source_url":"https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCanadian%20SAR%20Comorant%20and%20USCG%20boat.jpg&w=1600&output=jpg","credit":"U.S. Coast Guard","license":"Public Domain"}
       ]
     }
   ]
