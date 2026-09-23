@@ -30,17 +30,6 @@ jobs:
         env:
           OUTPUT_DIR: ${{ runner.temp }}/finished
         run: |
-          python3 - <<'PY'
-          from pathlib import Path
-          p=Path('tools/render_carousel_pack.py')
-          s=p.read_text(encoding='utf-8')
-          old="expected not in (5,6,12)"
-          new="expected not in (4,5,6,12)"
-          if old not in s and new not in s:
-              raise SystemExit('card-count gate signature changed; refusing unsafe patch')
-          if old in s:
-              p.write_text(s.replace(old,new,1),encoding='utf-8')
-          PY
           /usr/bin/python3 tools/render_carousel_pack.py --manifest media_jobs/four_daily_v2_current.json --output "$OUTPUT_DIR"
       - name: Store finished public publishing assets separately
         env:
@@ -64,4 +53,4 @@ jobs:
             git -C "$OUT" commit -m 'Render current complete card packs without paid credits'
             git -C "$OUT" push origin HEAD:media-output
           fi
-          echo 'Rendered complete ordered card packs and slideshow videos. No social publishing, TTS, paid AI API or catalog music was called.' >> "$GITHUB_STEP_SUMMARY"
+          echo 'Rendered complete ordered photographic card packs and slideshow videos. No social publishing, TTS, paid AI API or catalog music was called.' >> "$GITHUB_STEP_SUMMARY"
