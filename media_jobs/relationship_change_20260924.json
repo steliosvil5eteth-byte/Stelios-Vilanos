@@ -1,0 +1,60 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_EIGHT_DAILY",
+  "local_date": "2026-09-24",
+  "require_photographic_visuals": true,
+  "authorization_basis": "Standing user authorization; schedule only after hard QA, rights verification and live deduplication.",
+  "purpose": "Render the missing 07:00 relationship-change Episode 2 as six photographic square JPEG cards plus one vertical YouTube slideshow with original local instrumental music and no narration. Zero incremental cost.",
+  "jobs": [
+    {
+      "id": "current-20260924-0700-relationship-change-episode-2",
+      "expected_cards": 6,
+      "seconds_per_slide": 6,
+      "slides": [
+        {
+          "title": "ΜΙΑ ΟΘΟΝΗ ΑΝΑΜΕΣΑ ΜΑΣ — 1/6",
+          "text": "Δεν μπήκε τρίτος στη σχέση. Μπήκε μια οθόνη. Τα κινητά άλλαξαν τον τρόπο που γνωριζόμαστε, μιλάμε και περιμένουμε απάντηση.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F7155730%2Fpexels-photo-7155730.jpeg&w=1600&output=jpg",
+          "source_credit": "Gustavo Fring / Pexels",
+          "license": "Pexels License"
+        },
+        {
+          "title": "Η ΣΥΓΚΡΙΣΗ ΣΤΗΝ ΤΣΕΠΗ — 2/6",
+          "text": "Παλιά η σύγκριση σταματούσε όταν έκλεινε η πόρτα. Σήμερα εικόνες, stories και «τέλειες» στιγμές μπορούν να μας ακολουθούν όλη μέρα.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F5302930%2Fpexels-photo-5302930.jpeg&w=1600&output=jpg",
+          "source_credit": "Monstera Production / Pexels",
+          "license": "Pexels License"
+        },
+        {
+          "title": "ΤΟ «ΔΙΑΒΑΣΤΗΚΕ» — 3/6",
+          "text": "Ένα μήνυμα που αργεί, ένα like ή ένα «διαβάστηκε» μπορεί να γίνει αφορμή για παρεξήγηση, ακόμη κι όταν δεν υπάρχει πραγματικό πρόβλημα.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F6303546%2Fpexels-photo-6303546.jpeg&w=1600&output=jpg",
+          "source_credit": "Klaus Nielsen / Pexels",
+          "license": "Pexels License"
+        },
+        {
+          "title": "ΚΟΝΤΑ ΑΠΟ ΜΑΚΡΙΑ — 4/6",
+          "text": "Η τεχνολογία μάς κρατά κοντά όταν λείπουμε. Όταν όμως είμαστε δίπλα δίπλα, η ίδια οθόνη μπορεί να κλέψει τη συζήτηση και την προσοχή.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F4555321%2Fpexels-photo-4555321.jpeg&w=1600&output=jpg",
+          "source_credit": "ROMAN ODINTSOV / Pexels",
+          "license": "Pexels License"
+        },
+        {
+          "title": "ΤΟ ΘΕΜΑ ΔΕΝ ΕΙΝΑΙ ΤΟ ΚΙΝΗΤΟ — 5/6",
+          "text": "Το πρόβλημα αρχίζει όταν η οθόνη παίρνει τη θέση της συζήτησης, της προσοχής και της πραγματικής παρουσίας ανάμεσα σε δύο ανθρώπους.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F8059989%2Fpexels-photo-8059989.jpeg&w=1600&output=jpg",
+          "source_credit": "Ron Lach / Pexels",
+          "license": "Pexels License"
+        },
+        {
+          "title": "ΕΣΥ ΤΙ ΠΙΣΤΕΥΕΙΣ; — 6/6",
+          "text": "Η τεχνολογία έφερε τα ζευγάρια πιο κοντά ή τα απομάκρυνε; Γράψε τη γνώμη σου πριν δεις τις απαντήσεις των άλλων.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.pexels.com%2Fphotos%2F6147074%2Fpexels-photo-6147074.jpeg&w=1600&output=jpg",
+          "source_credit": "Keira Burton / Pexels",
+          "license": "Pexels License"
+        }
+      ]
+    }
+  ]
+}
