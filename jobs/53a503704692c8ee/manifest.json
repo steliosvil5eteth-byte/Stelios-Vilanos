@@ -1,0 +1,62 @@
+{
+  "batch_id": "53a503704692c8ee",
+  "batch_sha256": "53a503704692c8ee7ceb3108b22756f6a698be2313304ae52b97720270cdc020",
+  "paid_ai_credits_used": 0,
+  "photographic_visuals_required": true,
+  "jobs": [
+    {
+      "id": "current-20260924-0700-relationship-change-episode-2",
+      "status": "rendered",
+      "card_count": 6,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 36.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Η γνώμη σας μετράει. Ακολούθησέ με για περισσότερα.",
+      "files": [
+        {
+          "name": "current-20260924-0700-relationship-change-episode-2-01.jpg",
+          "bytes": 336805,
+          "sha256": "5d705d163746501119c81ea460d22d372e255af2771fcee907afc844657feb36"
+        },
+        {
+          "name": "current-20260924-0700-relationship-change-episode-2-02.jpg",
+          "bytes": 322081,
+          "sha256": "08010608883c2ef03195c837535062ed0cd573ea66a35505bc86e1d30d126f6d"
+        },
+        {
+          "name": "current-20260924-0700-relationship-change-episode-2-03.jpg",
+          "bytes": 418703,
+          "sha256": "b50d7b03eb8244c79b6480b32330c0773f480c97ad4fb982cc47850c26784266"
+        },
+        {
+          "name": "current-20260924-0700-relationship-change-episode-2-04.jpg",
+          "bytes": 272351,
+          "sha256": "8d936bf0eb61225176816881fe0a8beaa8fc75f5f4d93240d5781e48c2ee6874"
+        },
+        {
+          "name": "current-20260924-0700-relationship-change-episode-2-05.jpg",
+          "bytes": 321027,
+          "sha256": "c53842fd58689789772f908b55bdd430f4cfd7944bf16b9944956385ddfd682a"
+        },
+        {
+          "name": "current-20260924-0700-relationship-change-episode-2-06.jpg",
+          "bytes": 362510,
+          "sha256": "8e44d90ab55fd049ef3428d2bca343f685067bfde54e56c815162d0858cbc3b2"
+        },
+        {
+          "name": "current-20260924-0700-relationship-change-episode-2.mp4",
+          "bytes": 1082439,
+          "sha256": "c0812084c7a25810613a67b93d400501e4c1ac9c581d6b5f589a4567f1abf7c1"
+        }
+      ]
+    }
+  ]
+}
