@@ -1,0 +1,386 @@
+{
+  "version": 28,
+  "timezone": "Europe/Athens",
+  "strategy_id": "FOUR_DAILY_V2",
+  "program_label": "CURRENT_TEN_DAILY",
+  "effective_date": "2026-09-24",
+  "priority": "AUTHORITATIVE_LATEST_USER_STRATEGY",
+  "compatibility_note": "The historical strategy_id is retained for worker compatibility; the authoritative program is CURRENT_TEN_DAILY.",
+  "daily_target_posts_per_network": 10,
+  "destination_target_per_day": 40,
+  "daily_target_videos": {
+    "narrated_feature": 4,
+    "carousel_or_slideshow": 6
+  },
+  "legacy_pipeline": {
+    "enabled": false,
+    "generation_enabled": false,
+    "publishing_enabled": false,
+    "rule": "Retire old 12-sign standalone, avatar, weekly-introduction, dog/barista/terrier video, filler and superseded schedules. The current six-sign zodiac carousel and the current 13:00 Dog Bartender four-card photo series are NOT legacy."
+  },
+  "cycle": {
+    "mode": "all_ten_every_day",
+    "start_date": "2026-09-24",
+    "alternating_days": false,
+    "order": [
+      "relationship_changes_carousel",
+      "survival_rules_carousel",
+      "zodiac_carousel",
+      "dog_bartender_carousel",
+      "emotional_story_carousel",
+      "phenomenon_video",
+      "greece_two_day_video",
+      "myth_truth_carousel",
+      "documented_experiments_video",
+      "legend_video"
+    ],
+    "pre_generate_future_days": true,
+    "date_rule": "All ten categories occur every Europe/Athens calendar date. A missed or blocked item never shifts the calendar, is never backdated and is never automatically reposted as catch-up."
+  },
+  "publishing": {
+    "networks": [
+      "facebook",
+      "instagram",
+      "tiktok",
+      "youtube"
+    ],
+    "autopublish": false,
+    "slots_local_time": [
+      "07:00",
+      "09:00",
+      "11:00",
+      "13:00",
+      "15:00",
+      "17:00",
+      "18:30",
+      "20:00",
+      "21:30",
+      "23:00"
+    ],
+    "schedule_effective_date": "2026-09-24",
+    "caption_language": "el",
+    "hashtags_per_post_max": 5,
+    "schedule_rule": "07:00 relationships; 09:00 survival; 11:00 zodiac; 13:00 Dog Bartender; 15:00 emotional story; 17:00 strange real phenomenon; 18:30 two-day trip in Greece; 20:00 Myth or Truth; 21:30 documented experiments; 23:00 international/foreign legend. Old 18:00 slot remains retired."
+  },
+  "workflow": {
+    "ask_for_confirmation_before_generation": false,
+    "ask_for_confirmation_before_publishing": false,
+    "authorization_basis": "Standing user authorization covers preparation and QA. Publication is released only after PASSED_FINAL_REVIEW.",
+    "quality_check_before_publish": true,
+    "continue_without_user_action_when_tools_allow": true,
+    "no_purchases_topups_upgrades_paid_tests": true,
+    "scheduled_pending_is_not_published": true,
+    "hard_qa_gate": {
+      "active": true,
+      "default_action_on_missing_or_uncertain_qa": "BLOCK_PUBLICATION",
+      "autopublish_allowed_only_after_explicit_qa_pass": true,
+      "qa_pass_value": "PASSED",
+      "require_final_preview_review": true,
+      "require_visual_relevance_check": true,
+      "require_photorealistic_visual_check": true,
+      "require_no_repeated_or_placeholder_visuals": true,
+      "require_voice_check": true,
+      "require_burned_subtitle_check": true,
+      "require_subtitle_sync_check": true,
+      "require_duration_check": true,
+      "require_caption_and_hashtag_check": true,
+      "require_rights_and_source_check": true,
+      "require_platform_format_check": true,
+      "require_audio_layer_check": true,
+      "block_on_any_failed_item": true,
+      "rule": "A file existing as JPEG/WEBP/MP4 is never proof that it contains an acceptable photograph. Before release, directly inspect the exact final carousel/video: every carousel card and every video scene must visibly contain scene-relevant photographic/photorealistic or approved archival imagery as applicable. Any blank, text-only, generic, placeholder, mismatched, repeated or uninspected visual keeps the Metricool entry draft=true and autoPublish=false. Only the exact final artifact with explicit PASSED_FINAL_REVIEW may be released.",
+      "media_file_presence_is_not_visual_qa": true,
+      "jpeg_mp4_extension_is_not_proof_of_photographic_content": true,
+      "require_direct_final_artifact_visual_inspection": true,
+      "require_each_carousel_card_to_visibly_contain_scene_relevant_photographic_or_photorealistic_imagery": true,
+      "require_each_video_scene_to_visibly_contain_scene_relevant_photographic_or_approved_archival_imagery": true,
+      "pre_qa_metricool_state": {
+        "draft": true,
+        "autoPublish": false
+      },
+      "release_only_after_exact_final_artifact_pass": true
+    },
+    "topic_deduplication_gate": {
+      "active": true,
+      "check_before_generation": true,
+      "check_again_before_scheduling": true,
+      "lookback_days": 60,
+      "required_sources": [
+        "live Metricool published/scheduled history",
+        "repository content history and media jobs",
+        "current Metricool queue"
+      ],
+      "exact_title_or_text_match": "BLOCK_AND_REPLACE",
+      "same_core_topic_with_rewording": "BLOCK_AND_REPLACE",
+      "near_duplicate_angle_or_hook": "BLOCK_AND_REPLACE",
+      "current_day_duplicate": "BLOCK_AND_REPLACE",
+      "series_rule": "A recurring series may continue only with a genuinely new episode/topic. Reusing the same subject, myth, destination, experiment, legend, survival scenario, emotional story or relationship angle is not allowed merely because wording or visuals changed.",
+      "failure_policy": "Keep draft=true and autoPublish=false. Select a new topic, rebuild media, rerun visual QA, then reconcile live queue before release."
+    }
+  },
+  "originality_rules": {
+    "minimum_days_before_reusing_same_core_angle": 60,
+    "never_reuse_exact_script": true,
+    "never_reuse_exact_hook": true,
+    "never_reuse_exact_punchline": true,
+    "avoid_same_first_four_words": true,
+    "avoid_near_duplicate_meaning": true,
+    "compare_against_content_history": true,
+    "compare_against_notion_archive": true
+  },
+  "weekly_learning": {
+    "enabled": true,
+    "review_day": "monday",
+    "review_previous_full_week": true,
+    "analytics_source": "metricool",
+    "evaluate_each_network_separately": true,
+    "evaluate_combined_performance": true,
+    "apply_findings_automatically": true,
+    "rule": "Learning may refine themes and hooks but must not alter the nine categories, counts, user-selected times or requested formats without a newer user instruction."
+  },
+  "current_strategy": {
+    "strategy_id": "FOUR_DAILY_V2",
+    "program_label": "CURRENT_TEN_DAILY",
+    "effective_date": "2026-09-24",
+    "timezone": "Europe/Athens",
+    "networks": [
+      "facebook",
+      "instagram",
+      "tiktok",
+      "youtube"
+    ],
+    "posts_per_network_per_day": 10,
+    "destination_target_per_day": 40,
+    "daily_posts": [
+      {
+        "category": "relationship_changes_carousel",
+        "count": 1,
+        "cards": 7,
+        "preferred_time": "07:00",
+        "rule": "One new episode about changes in relationships between men and women. Strong hook on card 1, coherent progression, final card asks for viewer opinion. Use photographic/photorealistic scene-relevant visuals and clear Greek text; no narration.",
+        "platform_rule": "Facebook/Instagram/TikTok: complete 7-card native photo carousel where supported. TikTok uses silent 1080x1080 JPEG/WebP cards with exactly one platform-added music layer when available. YouTube: one complete vertical slideshow/Short containing all 7 cards; never drop or reorder cards.",
+        "used_angles": [
+          "technology/social media/screens in relationships",
+          "read receipts / constant messaging availability"
+        ],
+        "used_angle_rule": "A new relationship episode must use a genuinely different relationship-change angle; reworded technology/social-media episodes are duplicates."
+      },
+      {
+        "category": "survival_rules_carousel",
+        "count": 1,
+        "cards": 9,
+        "preferred_time": "09:00",
+        "rule": "One new practical survival-safety topic each day. Nine ordered photographic cards with clear actionable information, strong hook and final summary/CTA. No narration for the carousel format.",
+        "platform_rule": "Facebook/Instagram/TikTok: complete 9-card carousel where supported; TikTok uses silent 1080x1080 JPEG/WebP cards and a single platform-added music layer. YouTube: one complete vertical slideshow/Short with all 9 cards and at most one music layer."
+      },
+      {
+        "category": "zodiac_carousel",
+        "count": 1,
+        "cards": 6,
+        "preferred_time": "11:00",
+        "group_a": [
+          "Κριός",
+          "Ταύρος",
+          "Δίδυμοι",
+          "Καρκίνος",
+          "Λέων",
+          "Παρθένος"
+        ],
+        "group_b": [
+          "Ζυγός",
+          "Σκορπιός",
+          "Τοξότης",
+          "Αιγόκερως",
+          "Υδροχόος",
+          "Ιχθύες"
+        ],
+        "alternation_rule": "Group A and Group B alternate by Europe/Athens calendar date.",
+        "format_rule": "Six complete photographic cards, music only, no narration. TikTok uses silent JPEG/WebP photo carousel with autoAddMusic=true; YouTube receives one complete slideshow/Short."
+      },
+      {
+        "category": "dog_bartender_carousel",
+        "count": 1,
+        "cards": 4,
+        "preferred_time": "13:00",
+        "status": "current_approved_series",
+        "rule": "Every day is a new coherent four-card dialogue with one strange customer. Card 1 hooks strongly; cards 2-3 escalate; card 4 pays off. Photorealistic/cinematic bar only, never cartoon/animation. Same dog identity, but visibly different action/composition on every card.",
+        "tiktok_rule": "Exactly four individual silent 1080x1080 JPEG/WebP images; never MP4 fallback without explicit authorization; autoAddMusic=true is the single music source.",
+        "youtube_rule": "One vertical 9:16 slideshow/Short with all four cards, about 20 seconds, no narration and no second audio layer."
+      },
+      {
+        "category": "emotional_story_carousel",
+        "count": 1,
+        "cards": 5,
+        "preferred_time": "15:00",
+        "themes": [
+          "αγάπη",
+          "έρωτας",
+          "χωρισμός",
+          "ψυχή"
+        ],
+        "rule": "One coherent five-card story with a genuinely new hook, characters, progression, turn and ending every day. Photographic/photorealistic scene-relevant visuals, music only, no narration.",
+        "platform_rule": "Facebook/Instagram/TikTok: complete five-card carousel where supported; YouTube: one complete ordered slideshow/Short. Exactly one music layer."
+      },
+      {
+        "category": "phenomenon_video",
+        "count": 1,
+        "preferred_time": "17:00",
+        "rule": "One new fact-checked strange real phenomenon. Vertical 9:16, 1080x1920, strictly longer than 80 seconds, agreed Greek male voice Νέστορας only, synchronized burned-in Greek subtitles, real/photorealistic scene-relevant visuals, no background music, no avatar, no filler or long dead air."
+      },
+      {
+        "category": "greece_two_day_video",
+        "count": 1,
+        "preferred_time": "18:30",
+        "rule": "One different Greek destination each day as a practical two-day trip. Vertical 9:16, 1080x1920, strictly longer than 80 seconds, real photographs of the exact destination, agreed Greek male voice Νέστορας only, synchronized burned-in Greek subtitles, no background music/avatar. Verify place names, itinerary facts, image rights and scene matching.",
+        "retired_slot": "18:00"
+      },
+      {
+        "category": "myth_truth_carousel",
+        "count": 1,
+        "cards": 4,
+        "preferred_time": "20:00",
+        "order": [
+          "question",
+          "viewer_participation",
+          "explanation",
+          "final_answer"
+        ],
+        "rule": "Exactly four ordered photographic cards. Strong question first, viewer participation second, concise explanation third, reveal fourth. Music only, no narration.",
+        "platform_rule": "Facebook/Instagram/TikTok: four-card carousel where supported; YouTube: one complete four-card slideshow/Short. Exactly one music layer.",
+        "used_topics": [
+          "bats are blind / νυχτερίδες είναι τυφλές",
+          "lightning never strikes the same place twice / κεραυνός δεν χτυπά δύο φορές"
+        ],
+        "used_topic_rule": "Do not reuse a used core myth within the 60-day deduplication window, even with new wording or visuals."
+      },
+      {
+        "category": "documented_experiments_video",
+        "count": 1,
+        "preferred_time": "21:30",
+        "rule": "One documented real experiment or real-world trial per day. Start from verifiable evidence and explain what was tested, who ran it, what happened, what worked or failed, and what the limitations or ethical issues were. Distinguish documented facts from disputed interpretations; no conspiracy framing as fact.",
+        "first_episode": "Milgram obedience experiments",
+        "format_rule": "Vertical 9:16, 1080x1920, strictly longer than 80 seconds, agreed Greek male voice Νέστορας only, synchronized burned-in Greek subtitles, scene-relevant photographic/approved archival visuals, no background music/avatar, strong hook, source/rights verification, and PASSED_FINAL_REVIEW before publication.",
+        "used_topics": [
+          "Milgram obedience experiments"
+        ],
+        "used_topic_rule": "Milgram is already used/published per user confirmation and must not be scheduled again.",
+        "next_episode": "Asch conformity experiments"
+      },
+      {
+        "category": "legend_video",
+        "count": 1,
+        "preferred_time": "23:00",
+        "rule": "One different international/foreign legend daily, clearly framed as folklore rather than proven supernatural fact. Vertical 9:16, 1080x1920, strictly longer than 80 seconds, agreed Greek male voice Νέστορας only, synchronized burned-in Greek subtitles, scene-relevant photographic/approved archival visuals, no background music/avatar."
+      }
+    ],
+    "carousel_quality": {
+      "large_readable_greek_text": true,
+      "ordered_complete_cards": true,
+      "avatar": false,
+      "narration_or_tts": false,
+      "audio_safety": "Exactly one music layer. TikTok native photo carousels at 07:00/09:00/11:00/13:00/15:00/20:00 use silent JPEG/WebP cards and platform music when enabled. Never embed a second music layer. YouTube slideshow versions may contain one approved music layer only.",
+      "youtube": "Use one actual complete slideshow/video containing the full ordered card set with one approved embedded music layer.",
+      "native_carousel_support": "Never silently drop cards, split one logical item into extra posts or substitute a different format when the requested platform format is unsupported."
+    },
+    "narrated_video_quality": {
+      "applies_to": [
+        "phenomenon_video",
+        "greece_two_day_video",
+        "documented_experiments_video",
+        "legend_video"
+      ],
+      "aspect_ratio": "9:16",
+      "resolution": "1080x1920",
+      "voice_provider": "Piper local",
+      "voice": "el_GR-rapunzelina-medium",
+      "natural_speed": true,
+      "language": "el-GR",
+      "burned_in_synchronized_greek_subtitles": true,
+      "background_music": false,
+      "avatar_presenter": false,
+      "tiktok_auto_add_music": false,
+      "minimum_duration_rule": "STRICTLY_LONGER_THAN_80_SECONDS",
+      "maximum_duration_seconds": null,
+      "duration_rule": "Every new 17:00/23:00 feature must be strictly longer than 80 seconds. There is no maximum duration; do not shorten a substantive story to an old 120-second limit.",
+      "pacing": "Natural speed and continuous narration. No filler, repetition, artificial slow speech, silence padding or long static holds.",
+      "dead_air_rule": "Reject unintended dead-air gaps of about 2 seconds or longer.",
+      "trailing_silence_rule": "Remove useless trailing silence so the video ends with narration/CTA; target <=0.5s.",
+      "hook_rule": "Start immediately with a strong hook; do not prepend greetings such as Καλησπέρα.",
+      "technical_qa": "Verify real accessible final media, full duration/decode, representative frames, one narration audio layer and subtitle synchronization before scheduling.",
+      "required_voice_display_name": "Νέστορας",
+      "voice_rule": "Do not substitute any other male/female/robotic voice. If the configured engine cannot produce the exact agreed Νέστορας voice, block publication."
+    },
+    "legacy_dog_video": {
+      "status": "disabled",
+      "publish": false,
+      "generate": false,
+      "retry": false,
+      "restore": false,
+      "rule": "Old dog/barista/terrier VIDEO content stays retired. This does not apply to the current 13:00 Dog Bartender four-card carousel series."
+    },
+    "weekly_introduction": {
+      "enabled": false
+    },
+    "deduplication_policy": {
+      "logical_key": "local_date + category + platform",
+      "read_live_queue_and_history_before_write": true,
+      "protect_published_providers": true,
+      "cancelled_legacy_items_are_not_gaps": true,
+      "unknown_write_result": "Reconcile by live read; never repeat create blindly.",
+      "no_false_rollback": "Do not deactivate a verified future active post because it is future, because an earlier draft existed or because another worker handoff is incomplete. Deactivate only on concrete live evidence of missing/corrupt/wrong media, active duplicate, forbidden content, explicit stop/change, double-audio risk or current QA failure.",
+      "repair_scope": "Preserve Published successes and repair only affected destinations.",
+      "no_backdate_catchup": true,
+      "verify_after_write": true
+    },
+    "capacity_and_cost": {
+      "real_provider_limits_override_targets": true,
+      "blind_test_uploads_or_retries": false,
+      "purchases_topups_upgrades": false,
+      "paid_generation_allowed": false,
+      "paid_tests_allowed": false,
+      "rule": "Use free/local or already approved assets. Block rather than purchase, top up, upgrade or run a paid fallback/test."
+    },
+    "publishing": {
+      "autopublish": false,
+      "start": "2026-09-24",
+      "slots_local_time": [
+        "07:00",
+        "09:00",
+        "11:00",
+        "13:00",
+        "15:00",
+        "17:00",
+        "18:30",
+        "20:00",
+        "21:30",
+        "23:00"
+      ],
+      "rule": "Exactly ten logical posts per day across the four connected networks. Auto-publish remains OFF until the exact final artifact has PASSED_FINAL_REVIEW. Scheduled/PENDING is not Published.",
+      "qa_gate": "AUTO-PUBLISH ONLY AFTER EXPLICIT FULL QA PASS; otherwise autoPublish=false.",
+      "retired_slots": [
+        "18:00"
+      ]
+    },
+    "progress_updates": {
+      "enabled": true,
+      "language": "el",
+      "notify_on": [
+        "new ready package",
+        "verified scheduling",
+        "provider-confirmed publication",
+        "new failure or blocker",
+        "recovery"
+      ],
+      "suppress_unchanged": true
+    },
+    "special_series": {
+      "true_survival_stories": {
+        "enabled": true,
+        "schedule": "unscheduled_extra_until_user_sets_slot",
+        "voice": "el_GR-rapunzelina-medium",
+        "voice_provider": "Piper local",
+        "publishing_rule": "Do not create a seventh daily logical post unless the user explicitly assigns/replaces a slot."
+      }
+    }
+  }
+}
