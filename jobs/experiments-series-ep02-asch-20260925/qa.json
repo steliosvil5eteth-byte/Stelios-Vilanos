@@ -1,0 +1,19 @@
+{
+  "id": "experiments-series-ep02-asch-20260925",
+  "publish_ready_technical": true,
+  "voice": "el-GR-NestorasNeural",
+  "voice_provider": "edge_tts_free",
+  "paid_generation_used": false,
+  "duration_seconds": 156.4,
+  "resolution": "1080x1920",
+  "burned_synced_greek_subtitles": true,
+  "background_music": false,
+  "avatar_presenter": false,
+  "visual_scene_count": 12,
+  "all_scenes_photographic_reenactment": true,
+  "reenactment_label_on_every_scene": true,
+  "fact_checked": true,
+  "cta_exact": true,
+  "dead_air_ge_2s": false,
+  "requires_direct_final_visual_review_before_publish": true
+}
