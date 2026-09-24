@@ -11,7 +11,7 @@
   "avatar_presenter": false,
   "preview_only": true,
   "publish_to_social": false,
-  "final_review_status": "REBUILD_WITH_PINNED_ASCH_VISUALS_PENDING_FINAL_REVIEW",
+  "final_review_status": "PENDING_DIRECT_FINAL_VISUAL_REVIEW",
   "require_final_artifact_visual_review_before_publish": true,
   "require_burned_greek_subtitles": true,
   "require_photographic_visuals": true,
@@ -52,78 +52,78 @@
     {
       "filename": "Asch experiment.png",
       "kind": "asch_material",
-      "license": "GFDL / reusable",
-      "credit": "Wikimedia Commons"
+      "license": "CC BY-SA 3.0 / GFDL",
+      "credit": "Wikimedia Commons / Nyenyec"
     },
     {
       "filename": "Psychology-asch-1951.png",
       "kind": "asch_material",
       "license": "CC BY 3.0",
-      "credit": "Wikimedia Commons"
+      "credit": "Wikimedia Commons / Saul McLeod"
     },
     {
       "filename": "Ash Lines.jpg",
       "kind": "asch_material",
       "license": "Free Art License",
-      "credit": "Wikimedia Commons"
+      "credit": "Wikimedia Commons / experiment-resources.com"
     },
     {
       "filename": "Asch unanimous majority chart.png",
       "kind": "asch_material",
-      "license": "GFDL / reusable",
-      "credit": "Wikimedia Commons"
+      "license": "CC BY-SA 3.0 / GFDL",
+      "credit": "Wikimedia Commons / Nyenyec"
     },
     {
-      "filename": "University Students.jpg",
+      "filename": "Students engagement.jpg",
       "kind": "reenactment_photo",
       "license": "CC BY-SA 4.0",
-      "credit": "Wikimedia Commons"
-    },
-    {
-      "filename": "College Students.jpg",
-      "kind": "reenactment_photo",
-      "license": "CC BY-SA",
-      "credit": "Wikimedia Commons"
+      "credit": "Wikimedia Commons / Advaithacademy"
     },
     {
       "filename": "Two college students debating.jpg",
       "kind": "reenactment_photo",
       "license": "CC BY-SA 4.0",
-      "credit": "Wikimedia Commons"
+      "credit": "Wikimedia Commons / Ryanx7"
     },
     {
-      "filename": "A pupil answering a question in class.jpg",
-      "kind": "reenactment_photo",
-      "license": "CC0 1.0",
-      "credit": "Wikimedia Commons"
-    },
-    {
-      "filename": "Students in lecture.jpg",
-      "kind": "reenactment_photo",
-      "license": "CC BY-SA",
-      "credit": "Wikimedia Commons"
-    },
-    {
-      "filename": "Group Discussion.jpg",
-      "kind": "reenactment_photo",
-      "license": "CC BY-SA",
-      "credit": "Wikimedia Commons"
-    },
-    {
-      "filename": "Coffee table talk with students.jpg",
-      "kind": "reenactment_photo",
-      "license": "CC BY-SA",
-      "credit": "Wikimedia Commons"
-    },
-    {
-      "filename": "Student in classroom.jpg",
+      "filename": "Christ University focus group 3.jpg",
       "kind": "reenactment_photo",
       "license": "CC BY-SA 4.0",
-      "credit": "Wikimedia Commons"
+      "credit": "Wikimedia Commons / NSaad (WMF)"
+    },
+    {
+      "filename": "Christ University focus group 4.jpg",
+      "kind": "reenactment_photo",
+      "license": "CC BY-SA 4.0",
+      "credit": "Wikimedia Commons / NSaad (WMF)"
+    },
+    {
+      "filename": "Christ University focus group 5.jpg",
+      "kind": "reenactment_photo",
+      "license": "CC BY-SA 4.0",
+      "credit": "Wikimedia Commons / NSaad (WMF)"
+    },
+    {
+      "filename": "Christ University focus group 6.jpg",
+      "kind": "reenactment_photo",
+      "license": "CC BY-SA 4.0",
+      "credit": "Wikimedia Commons / NSaad (WMF)"
+    },
+    {
+      "filename": "Students in a university classroom in Tennessee 08.jpg",
+      "kind": "reenactment_photo",
+      "license": "CC BY 4.0",
+      "credit": "Wikimedia Commons / Harrison Keely"
+    },
+    {
+      "filename": "Students in classroom.jpg",
+      "kind": "reenactment_photo",
+      "license": "CC BY-SA 4.0",
+      "credit": "Wikimedia Commons / Esthee2010"
     }
   ],
   "approved": false,
-  "reset_hold": true,
-  "production_status": "RESET_HOLD",
-  "reset_note": "Superseded by SOCIAL_RESET_20260924. Historical/reference only. Do not generate, schedule, publish, retry, restore, or catch up."
+  "reset_hold": false,
+  "production_status": "REBUILDING_PINNED_VISUALS",
+  "reset_note": "Reactivated for visual repair only. Rendering is allowed; social publishing remains blocked until direct final visual review passes."
 }
