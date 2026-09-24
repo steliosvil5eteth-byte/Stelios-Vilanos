@@ -103,8 +103,16 @@ def text_block(im,text,box,start_size,*,bold=False,center=False,min_size=27,fill
         d.text((x,y),line,font=font,fill=fill,stroke_width=1,stroke_fill='#000000'); y+=leading
     return size
 
+ZODIAC_GLYPHS={
+    'ΚΡΙΟΣ':'♈','ΤΑΥΡΟΣ':'♉','ΔΙΔΥΜΟΙ':'♊','ΚΑΡΚΙΝΟΣ':'♋','ΛΕΩΝ':'♌','ΠΑΡΘΕΝΟΣ':'♍',
+    'ΖΥΓΟΣ':'♎','ΣΚΟΡΠΙΟΣ':'♏','ΤΟΞΟΤΗΣ':'♐','ΑΙΓΟΚΕΡΩΣ':'♑','ΥΔΡΟΧΟΟΣ':'♒','ΙΧΘΥΕΣ':'♓'
+}
+
 def render_card(slide,index,total,work,require_photo):
     if require_photo and not slide.get('source_url') and not slide.get('source_query'): raise ValueError('photographic source_url or source_query required')
+    title=slide.get('visible_title') or slide['title']
+    sign=title.split('—')[0].strip().upper()
+    zodiac=sign in ZODIAC_GLYPHS
     if slide.get('source_url') or slide.get('source_query'):
         src=work/f'src-{index:02}.img'; used=None
         if slide.get('source_url'):
@@ -117,16 +125,39 @@ def render_card(slide,index,total,work,require_photo):
         slide['_resolved_source']=used
         photo=Image.open(src).convert('RGB')
         im=ImageOps.fit(photo,(1080,1080),method=Image.Resampling.LANCZOS,centering=(0.5,0.5))
-        im=ImageEnhance.Contrast(im).enhance(0.92)
-        overlay=Image.new('RGBA',(1080,1080),(0,0,0,0)); od=ImageDraw.Draw(overlay)
-        od.rectangle((0,0,1080,1080),fill=(0,0,0,65))
-        od.rounded_rectangle((48,55,1032,905),radius=30,fill=(0,0,0,120))
-        im=Image.alpha_composite(im.convert('RGBA'),overlay).convert('RGB')
+        if zodiac:
+            im=ImageEnhance.Contrast(im).enhance(1.06)
+            im=ImageEnhance.Color(im).enhance(1.08)
+            overlay=Image.new('RGBA',(1080,1080),(0,0,0,0)); od=ImageDraw.Draw(overlay)
+            od.rectangle((0,0,1080,235),fill=(0,0,0,105))
+            od.rounded_rectangle((70,650,1010,905),radius=28,fill=(0,0,0,118))
+            im=Image.alpha_composite(im.convert('RGBA'),overlay).convert('RGB')
+        else:
+            im=ImageEnhance.Contrast(im).enhance(0.92)
+            overlay=Image.new('RGBA',(1080,1080),(0,0,0,0)); od=ImageDraw.Draw(overlay)
+            od.rectangle((0,0,1080,1080),fill=(0,0,0,65))
+            od.rounded_rectangle((48,55,1032,905),radius=30,fill=(0,0,0,120))
+            im=Image.alpha_composite(im.convert('RGBA'),overlay).convert('RGB')
     else:
         im=Image.new('RGB',(1080,1080),slide.get('background','#111B29'))
+
     d=ImageDraw.Draw(im)
+    if zodiac:
+        glyph=ZODIAC_GLYPHS[sign]
+        d.ellipse((58,44,238,224),fill=(10,16,28),outline=(216,186,120),width=5)
+        gf=ImageFont.truetype(BOLD,122)
+        gb=d.textbbox((0,0),glyph,font=gf)
+        d.text((148-(gb[2]-gb[0])/2,130-(gb[3]-gb[1])/2-8),glyph,font=gf,fill=(255,241,197))
+        text_block(im,sign,(270,58,1010,150),58,bold=True,center=False,min_size=38)
+        text_block(im,'Η ΕΙΚΟΝΑ ΤΟΥ ΖΩΔΙΟΥ',(270,150,1010,215),28,bold=True,center=False,min_size=22)
+        text_block(im,slide['text'],(100,690,980,842),46,bold=True,center=True,min_size=30)
+        d.rounded_rectangle((58,920,1022,1038),radius=18,fill=(15,24,36))
+        text_block(im,CTA,(76,934,1004,1015),30,bold=True,center=True,min_size=24)
+        d.text((945,1046),f'{index}/{total}',font=ImageFont.truetype(FONT,18),fill='#D5DCE6')
+        return im
+
     d.rectangle((72,64,1008,70),fill='#D8BA78')
-    title=slide.get('visible_title') or slide['title']; subtitle=slide.get('subtitle','')
+    subtitle=slide.get('subtitle','')
     if subtitle:
         text_block(im,title,(76,90,1004,185),52,bold=True,center=True,min_size=34)
         text_block(im,subtitle,(76,190,1004,285),39,bold=True,center=True,min_size=27)
