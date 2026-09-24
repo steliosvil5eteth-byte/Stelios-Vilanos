@@ -5,68 +5,61 @@
   "local_date": "2026-09-25",
   "require_photographic_visuals": true,
   "authorization_basis": "Standing user authorization; automatic publishing only after hard QA, rights and live deduplication.",
-  "purpose": "Render the six card-based slots for 2026-09-25 with photographic backgrounds, silent 1080x1080 JPEG carousel cards and a YouTube slideshow with one original local instrumental layer. 20:00 uses a fresh Great Wall visibility myth after deduplication removed bats and lightning repeats.",
+  "purpose": "Render the six card-based slots for 2026-09-25 with photographic backgrounds, silent 1080x1080 JPEG carousel cards and a YouTube slideshow with one original local instrumental layer. Deduplication replaced the 07:00 technology-adjacent relationship episode and the repeated 20:00 myths.",
   "jobs": [
     {
-      "id": "current-20260925-0700-relationship-communication",
+      "id": "current-20260925-0700-relationship-roles",
       "expected_cards": 7,
       "seconds_per_slide": 5,
       "slides": [
         {
           "title": "ΤΙ ΑΛΛΑΞΕ ΣΤΙΣ ΣΧΕΣΕΙΣ; — 1/7",
-          "text": "Κάποτε μια απάντηση μπορούσε να περιμένει ώρες. Σήμερα, για πολλούς, το «διαβάστηκε» μοιάζει ήδη με μήνυμα από μόνο του.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCouple%20with%20mobile%20phones%20at%20Senso-ji.jpg&w=1600&output=jpg",
-          "source_query": "couple mobile phones relationship photograph",
+          "text": "Κάποτε πολλοί ρόλοι μέσα σε ένα ζευγάρι θεωρούνταν αυτονόητοι. Σήμερα όλο και περισσότερα πράγματα χρειάζονται ξεκάθαρη συζήτηση.",
+          "source_query": "couple talking at home photograph",
           "source_credit": "Wikimedia Commons contributor",
-          "license": "CC BY 2.0"
+          "license": "Rights-checked Commons fallback"
         },
         {
-          "title": "Η ΕΥΚΟΛΙΑ — 2/7",
-          "text": "Τα μηνύματα έκαναν την επικοινωνία πιο άμεση. Μπορείς να μοιραστείς μια σκέψη, μια φωτογραφία ή ένα «μου λείπεις» μέσα σε δευτερόλεπτα.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FBeautiful%20Couple%20with%20Phone.jpg&w=1600&output=jpg",
-          "source_query": "couple smartphone photograph",
+          "title": "ΠΟΙΟΣ ΚΑΝΕΙ ΤΙ; — 2/7",
+          "text": "Δουλειές του σπιτιού, ψώνια, μαγείρεμα, λογαριασμοί: όταν οι προσδοκίες δεν λέγονται καθαρά, η καθημερινότητα μπορεί να γεμίσει μικρές εντάσεις.",
+          "source_query": "couple cooking home photograph",
           "source_credit": "Wikimedia Commons contributor",
-          "license": "CC BY-SA"
+          "license": "Rights-checked Commons fallback"
         },
         {
-          "title": "Η ΝΕΑ ΠΡΟΣΔΟΚΙΑ — 3/7",
-          "text": "Μαζί με την ευκολία ήρθε και κάτι άλλο: η αίσθηση ότι πρέπει να είμαστε διαθέσιμοι συνέχεια. Εκεί αρχίζουν συχνά οι παρεξηγήσεις.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCouple%20enjoys%20time%20together%20laughing%20and%20talking%20on%20the%20phone.jpg&w=1600&output=jpg",
-          "source_query": "couple talking phone photograph",
+          "title": "ΤΑ ΧΡΗΜΑΤΑ — 3/7",
+          "text": "Κοινό ταμείο, χωριστά χρήματα ή κάτι ενδιάμεσο; Δεν υπάρχει μία λύση για όλους. Το δύσκολο είναι να συμφωνήσουν δύο άνθρωποι τι θεωρούν δίκαιο.",
+          "source_query": "couple household finances photograph",
           "source_credit": "Wikimedia Commons contributor",
-          "license": "CC BY"
+          "license": "Rights-checked Commons fallback"
         },
         {
-          "title": "ΤΟ ΠΡΟΒΛΗΜΑ ΔΕΝ ΕΙΝΑΙ ΤΟ ΚΙΝΗΤΟ — 4/7",
-          "text": "Δύο άνθρωποι μπορεί να ανταλλάσσουν εκατό μηνύματα και πάλι να μην έχουν πει τι πραγματικά τους ενοχλεί.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCSIRO%20ScienceImage%202241%20A%20man%20and%20woman%20chatting%20outside%20a%20cafe.jpg&w=1600&output=jpg",
-          "source_query": "man woman talking cafe photograph",
-          "source_credit": "CSIRO",
-          "license": "CC BY 3.0"
+          "title": "Ο ΧΡΟΝΟΣ — 4/7",
+          "text": "Ποιος προσαρμόζει το πρόγραμμά του; Πόσο χρόνο κρατά ο καθένας για δουλειά, φίλους και προσωπική ζωή; Αυτά πλέον συζητιούνται περισσότερο αντί να θεωρούνται δεδομένα.",
+          "source_query": "couple calendar planning photograph",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "Rights-checked Commons fallback"
         },
         {
-          "title": "Η ΔΙΑΦΟΡΑ — 5/7",
-          "text": "Η ουσιαστική επικοινωνία δεν μετριέται σε ειδοποιήσεις. Μετριέται στο αν μπορείς να πεις καθαρά «αυτό με πείραξε» χωρίς παιχνίδια.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FOlder%20couple%20enjoys%20coffee%20together.jpg&w=1600&output=jpg",
-          "source_query": "older couple coffee conversation photograph",
+          "title": "Η ΦΡΟΝΤΙΔΑ — 5/7",
+          "text": "Όταν υπάρχουν παιδιά ή άλλες οικογενειακές ευθύνες, το πραγματικό βάρος φαίνεται στις καθημερινές μικρές υποχρεώσεις — όχι μόνο στις μεγάλες αποφάσεις.",
+          "source_query": "parents child home photograph",
           "source_credit": "Wikimedia Commons contributor",
-          "license": "CC BY 2.0"
+          "license": "Rights-checked Commons fallback"
         },
         {
-          "title": "ΤΙ ΜΕΝΕΙ ΙΔΙΟ — 6/7",
-          "text": "Τα μέσα αλλάζουν. Η ανάγκη όμως να νιώθεις ότι ο άλλος σε ακούει, σε σέβεται και σε καταλαβαίνει παραμένει.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FElderly%20Couple%20Eating.jpg&w=1600&output=jpg",
-          "source_query": "elderly couple together photograph",
+          "title": "ΤΟ ΚΛΕΙΔΙ — 6/7",
+          "text": "Το πρόβλημα συχνά δεν είναι ότι δύο άνθρωποι θέλουν διαφορετικά πράγματα. Είναι ότι ο καθένας θεωρεί πως το δικό του «αυτονόητο» είναι αυτονόητο και για τον άλλον.",
+          "source_query": "couple conversation table photograph",
           "source_credit": "Wikimedia Commons contributor",
-          "license": "CC0 1.0"
+          "license": "Rights-checked Commons fallback"
         },
         {
           "title": "ΕΣΥ ΤΙ ΠΙΣΤΕΥΕΙΣ; — 7/7",
-          "text": "Τα μηνύματα έκαναν τις σχέσεις πιο εύκολες ή απλώς έφεραν περισσότερες παρεξηγήσεις; Γράψε τη γνώμη σου.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FElderly%20couple%20%281586495%29.jpg&w=1600&output=jpg",
-          "source_query": "elderly couple portrait photograph",
+          "text": "Οι πιο ξεκάθαροι ρόλοι έκαναν παλιότερα τις σχέσεις πιο απλές ή η σημερινή διαπραγμάτευση τις κάνει πιο δίκαιες; Γράψε τη γνώμη σου.",
+          "source_query": "couple portrait home photograph",
           "source_credit": "Wikimedia Commons contributor",
-          "license": "CC BY-SA 4.0"
+          "license": "Rights-checked Commons fallback"
         }
       ]
     },
