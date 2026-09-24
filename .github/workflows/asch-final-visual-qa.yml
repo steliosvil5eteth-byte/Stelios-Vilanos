@@ -40,3 +40,5 @@ jobs:
           name: asch-final-visual-qa
           path: ${{ runner.temp }}/qa/asch-final-contact-sheet.jpg
           if-no-files-found: error
+
+# rerun after pinned visual repair 2026-09-24
