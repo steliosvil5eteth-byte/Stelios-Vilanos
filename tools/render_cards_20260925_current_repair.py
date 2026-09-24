@@ -16,8 +16,12 @@ jobs=[j for j in src.get('jobs',[]) if j.get('id') in ids]
 if {j.get('id') for j in jobs} != ids:
     raise SystemExit('required repair jobs missing')
 
+DIRECT={
+    'Mother and children at home.jpg':'https://upload.wikimedia.org/wikipedia/commons/4/40/Mother_and_children_at_home.jpg',
+    'Elderly Couple Eating.jpg':'https://upload.wikimedia.org/wikipedia/commons/6/6b/Elderly_Couple_Eating.jpg'
+}
 def source(filename):
-    return 'https://commons.wikimedia.org/wiki/Special:Redirect/file/'+urllib.parse.quote(filename,safe='()_,.-')+'?width=1600'
+    return DIRECT.get(filename,'https://commons.wikimedia.org/wiki/Special:Redirect/file/'+urllib.parse.quote(filename,safe='()_,.-')+'?width=1600')
 
 sources={
 'current-20260925-0700-relationship-roles':[
