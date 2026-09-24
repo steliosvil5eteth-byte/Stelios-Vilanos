@@ -6,6 +6,7 @@ import {strategySnapshot} from './model.js';
 import {marketFreshness} from './freshness.js';
 import {portfolioMetrics} from './portfolio.js';
 import {fetchEventSignal,eventDataConfig,combineTechnicalAndEvent} from './event-data.js';
+import {signalPortfolioContext} from './holdings.js';
 
 function symbolsFrom(value,maxSymbols=5){
   const arr=Array.isArray(value)?value:String(value||'').split(',');
@@ -14,7 +15,7 @@ function symbolsFrom(value,maxSymbols=5){
 
 export async function runServerScan(user,{symbols=null,source='manual',maxSymbols=5}={}){
   if(!user)throw new Error('user required');
-  const state=(await getJson(`tcc:${user}:state`))||{};const settings=state.settings||{},riskState=portfolioMetrics({settings,trades:Array.isArray(state.paper)?state.paper:[]});
+  const state=(await getJson(`tcc:${user}:state`))||{},holdings=(await getJson(`tcc:${user}:holdings`))||[];const settings=state.settings||{},riskState=portfolioMetrics({settings,trades:Array.isArray(state.paper)?state.paper:[]});
   const configured=symbolsFrom(symbols?.length?symbols:(state.scanConfig?.symbols||process.env.SCAN_SYMBOLS||''),maxSymbols);
   if(!configured.length)throw new Error('No server scan symbols configured');
   const startedAt=new Date().toISOString();const fetched=await fetchSignalMarketMany(configured);
@@ -30,6 +31,7 @@ export async function runServerScan(user,{symbols=null,source='manual',maxSymbol
     ev.signalScore=gate.signalScore;ev.setup.signalScore=gate.signalScore;ev.setup.eventScore=gate.eventScore;ev.setup.eventDirection=gate.eventDirection;
     ev.reasons.push(...gate.reasons.filter(x=>!ev.reasons.includes(x)));if(riskState.monthlyLossHit)ev.reasons.push('MONTHLY_LOSS_LOCK:-10%');ev.accepted=ev.reasons.length===0;
     if(ev.setup){
+      ev.portfolioContext=signalPortfolioContext(ev.setup,holdings);
       const headline=event.articles?.[0]?.title||event.sec?.filings?.[0]?.form||'No fresh event headline';
       ev.setup.rationale=[...(ev.setup.rationale||[]),`Event score ${event.score.toFixed(1)} / direction ${event.direction}`,`Fresh event: ${headline}`];
     }
