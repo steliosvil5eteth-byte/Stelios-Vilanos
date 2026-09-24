@@ -1,0 +1,64 @@
+name: 25 Sep card final visual QA
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cards-20260925-final-visual-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  qa-sheets:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install image tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq python3-pil
+      - name: Fetch card outputs
+        run: |
+          set -euo pipefail
+          git fetch origin media-output --depth=1
+          git worktree add --detach "$RUNNER_TEMP/media-output" FETCH_HEAD
+          ROOT=$(find "$RUNNER_TEMP/media-output/jobs" -type f -name 'current-20260925-0700-relationship-roles-01.jpg' -printf '%h\n' | head -1)
+          test -n "$ROOT"
+          echo "CARD_ROOT=$ROOT" >> "$GITHUB_ENV"
+      - name: Build one contact sheet per logical post
+        run: |
+          mkdir -p "$RUNNER_TEMP/qa"
+          python3 - <<'PY'
+          import os, math
+          from pathlib import Path
+          from PIL import Image, ImageOps, ImageDraw
+          root=Path(os.environ['CARD_ROOT'])
+          out=Path(os.environ['RUNNER_TEMP'])/'qa'
+          prefixes=[
+            'current-20260925-0700-relationship-roles',
+            'current-20260925-0900-survival-blackout',
+            'current-20260925-1100-zodiac-group-b-first-detail',
+            'current-20260925-1300-dog-bartender-mystery',
+            'current-20260925-1500-half-orange-story',
+            'current-20260925-2000-myth-truth-great-wall-space'
+          ]
+          for pref in prefixes:
+              imgs=sorted(root.glob(pref+'-[0-9][0-9].jpg'))
+              if not imgs: raise SystemExit('missing cards: '+pref)
+              cell=540; cols=3; rows=math.ceil(len(imgs)/cols)
+              sheet=Image.new('RGB',(cols*cell,rows*cell),(24,24,24))
+              for i,p in enumerate(imgs):
+                  im=Image.open(p).convert('RGB')
+                  im=ImageOps.fit(im,(cell,cell),method=Image.Resampling.LANCZOS)
+                  sheet.paste(im,((i%cols)*cell,(i//cols)*cell))
+              sheet.save(out/(pref+'-contact-sheet.jpg'),quality=92)
+          PY
+      - name: Upload QA sheets
+        uses: actions/upload-artifact@v4
+        with:
+          name: cards-20260925-final-visual-qa
+          path: ${{ runner.temp }}/qa/*.jpg
+          if-no-files-found: error
