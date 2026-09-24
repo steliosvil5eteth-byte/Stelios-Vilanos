@@ -264,5 +264,7 @@
       ],
       "max_duration_seconds": 120
     }
-  ]
+  ],
+  "repair_revision": 1,
+  "repair_note": "Pinned vetted source-pack visuals via proxy; strict 90-120s QA; rerun after renderer fix."
 }
