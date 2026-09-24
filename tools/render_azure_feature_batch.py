@@ -101,7 +101,9 @@ def explicit_visuals(items, outdir:Path, target:int):
         if marker not in page_path:
             raise RuntimeError(f'Pinned visual {i} source page is not a Commons File page')
         filename=page_path.split(marker,1)[1].replace('_',' ')
-        stable='https://commons.wikimedia.org/wiki/Special:Redirect/file/'+urllib.parse.quote(filename,safe='()_,.-')+'?width=1800'
+        # Encode the complete inner URL exactly once. Pre-encoding the file name
+        # would turn %20 into %2520 when the proxy URL is encoded.
+        stable='https://commons.wikimedia.org/wiki/Special:Redirect/file/'+filename+'?width=1800'
         fetch_url='https://images.weserv.nl/?url='+urllib.parse.quote(stable,safe='')+'&w=1800&output=jpg'
         ok=False; last=None
         for attempt in range(5):
