@@ -5,6 +5,15 @@ function sd(a){if(a.length<2)return 0;const m=avg(a);return Math.sqrt(avg(a.map(
 function sma(a,p,i){if(i<p-1)return null;return avg(a.slice(i-p+1,i+1))}
 function atr(series,p,i){if(i<p)return null;const tr=[];for(let j=i-p+1;j<=i;j++){const prev=series[j-1].close;tr.push(Math.max(series[j].high-series[j].low,Math.abs(series[j].high-prev),Math.abs(series[j].low-prev)))}return avg(tr)}
 function rsi(series,p,i){if(i<p)return null;let g=0,l=0;for(let j=i-p+1;j<=i;j++){const d=series[j].close-series[j-1].close;if(d>=0)g+=d;else l-=d}if(l===0)return 100;const rs=(g/p)/(l/p);return 100-100/(1+rs)}
+export function dataQuality(series=[]){
+  if(!Array.isArray(series)||!series.length)return {score:0,valid:false,reasons:['NO_BARS'],avgDollarVolume:0};
+  let invalid=0,duplicate=0,outOfOrder=0,zeroVolume=0;const seen=new Set();let prev='';
+  for(const b of series){const vals=[b.open,b.high,b.low,b.close].map(Number),ok=vals.every(v=>Number.isFinite(v)&&v>0)&&Number(b.high)>=Math.max(Number(b.open),Number(b.close))&&Number(b.low)<=Math.min(Number(b.open),Number(b.close));if(!ok)invalid++;const d=String(b.date||'');if(seen.has(d))duplicate++;seen.add(d);if(prev&&d<=prev)outOfOrder++;prev=d;if(!(Number(b.volume)>0))zeroVolume++}
+  const last=series.slice(-20),avgDollarVolume=last.length?last.reduce((a,b)=>a+Math.max(0,Number(b.close)||0)*Math.max(0,Number(b.volume)||0),0)/last.length:0;
+  const penalty=Math.min(100,invalid*20+duplicate*10+outOfOrder*10+(zeroVolume/series.length)*20),score=Math.max(0,100-penalty),reasons=[];
+  if(invalid)reasons.push(`INVALID_OHLC:${invalid}`);if(duplicate)reasons.push(`DUPLICATE_TIMESTAMPS:${duplicate}`);if(outOfOrder)reasons.push(`OUT_OF_ORDER:${outOfOrder}`);if(zeroVolume/series.length>.5)reasons.push('VOLUME_MOSTLY_MISSING');
+  return {score,valid:score>=95&&invalid===0&&duplicate===0&&outOfOrder===0,reasons,avgDollarVolume,zeroVolumePct:zeroVolume/series.length*100};
+}
 export function indicators(series,i,s={}){if(i<55)return null;const closes=series.map(x=>x.close),vols=series.map(x=>x.volume);const s20=sma(closes,20,i),s50=sma(closes,50,i),a14=atr(series,14,i),r14=rsi(series,14,i),mom=(series[i].close/series[i-20].close-1)*100,vr=series[i].volume/(avg(vols.slice(i-20,i))||1);const rets=[];for(let j=i-19;j<=i;j++)rets.push((series[j].close/series[j-1].close-1)*100);const mins=Math.max(0,num(s.barIntervalMinutes,0)),barsPerYear=mins?252*(390/mins):252,vol=sd(rets)*Math.sqrt(barsPerYear);return {s20,s50,atr:a14,rsi:r14,momentum:mom,volumeRatio:vr,annualVol:vol,price:series[i].close}}
 function weights(s){const a=[num(s.wTrend),num(s.wMomentum),num(s.wVolume),num(s.wVolatility),num(s.wRsi)],sum=a.reduce((x,y)=>x+y,0)||1;return a.map(v=>v/sum)}
 export function directionalScores(ind,s){
@@ -73,7 +82,9 @@ export function backtest(series,s){
 }
 export function metrics(trades){if(!trades.length)return {n:0,wins:0,winRate:0,avgR:0,profitFactor:0,maxDrawdown:0};const wins=trades.filter(t=>t.R>0),loss=trades.filter(t=>t.R<=0),gp=wins.reduce((a,t)=>a+t.R,0),gl=Math.abs(loss.reduce((a,t)=>a+t.R,0));let eq=0,peak=0,mdd=0;for(const t of trades){eq+=t.R;peak=Math.max(peak,eq);mdd=Math.max(mdd,peak-eq)}return {n:trades.length,wins:wins.length,winRate:wins.length/trades.length*100,avgR:avg(trades.map(t=>t.R)),profitFactor:gl?gp/gl:(gp?999:0),maxDrawdown:mdd}}
 export function evaluateSeries(symbol,series,s){
-  const setup=setupFromSeries(symbol,series,s);const reasons=[];const minBars=Math.max(60,num(s.scanMinBars,250)),minScore=Math.max(95,num(s.minScore,95));
+  const quality=dataQuality(series),setup=setupFromSeries(symbol,series,s);const reasons=[];const minBars=Math.max(60,num(s.scanMinBars,250)),minScore=Math.max(95,num(s.minScore,95)),minDollarVolume=Math.max(0,num(s.minAvgDollarVolume,0));
+  if(!quality.valid)reasons.push(...quality.reasons.map(x=>`DATA_QUALITY:${x}`));
+  if(minDollarVolume>0&&quality.avgDollarVolume<minDollarVolume)reasons.push(`LOW_LIQUIDITY:${quality.avgDollarVolume.toFixed(0)}<${minDollarVolume.toFixed(0)}`);
   if(series.length<minBars)reasons.push(`INSUFFICIENT_BARS:${series.length}<${minBars}`);
   if(!setup)return {symbol,accepted:false,reasons:[...reasons,'NO_INDICATORS'],bars:series.length};
   if(setup.score<minScore)reasons.push(`LOW_SCORE:${setup.score.toFixed(1)}<${minScore}`);
@@ -84,5 +95,5 @@ export function evaluateSeries(symbol,series,s){
   if(oos.n<minOosTrades)reasons.push(`INSUFFICIENT_OOS_TRADES:${oos.n}<${minOosTrades}`);
   if(oos.n>=minOosTrades&&oos.avgR<=minOosAvgR)reasons.push(`NON_POSITIVE_OOS_EXPECTANCY:${oos.avgR.toFixed(2)}<=${minOosAvgR.toFixed(2)}`);
   if(oos.n>=minOosTrades&&oos.profitFactor<minOosPF)reasons.push(`LOW_OOS_PROFIT_FACTOR:${oos.profitFactor.toFixed(2)}<${minOosPF.toFixed(2)}`);
-  return {symbol,accepted:reasons.length===0,reasons,setup,oos,bars:series.length,totalBacktestTrades:trades.length,signalPolicy:{minScore,stopLossPct:5,targetRangePct:[5,10],execution:'USER_DECIDES'}};
+  return {symbol,accepted:reasons.length===0,reasons,setup,oos,bars:series.length,dataQuality:quality,totalBacktestTrades:trades.length,signalPolicy:{minScore,stopLossPct:5,targetRangePct:[5,10],execution:'USER_DECIDES'}};
 }
