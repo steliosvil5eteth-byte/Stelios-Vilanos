@@ -1,0 +1,15 @@
+{
+  "id": "travel-monemvasia-20260924-1830",
+  "publish_to_social": true,
+  "voice": "el-GR-NestorasNeural",
+  "duration_seconds": 116.732,
+  "resolution": "1080x1920",
+  "burned_subtitles": true,
+  "background_music": false,
+  "avatar_presenter": false,
+  "audio_streams": 1,
+  "photo_count": 12,
+  "all_visuals_real_photos": true,
+  "cta_exact": true,
+  "min_duration_gate_passed": true
+}
