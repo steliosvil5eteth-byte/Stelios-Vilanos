@@ -6,7 +6,7 @@ function costsR(signal,exit,settings){const slip=n(settings.slippageBps)/10000,c
 export async function getSignals(user,limit=100){const rows=(await getJson(keyFor(user)))||[];return rows.slice(0,Math.max(1,Math.min(1000,Number(limit)||100)))}
 export async function updateForwardLedger(user,{fetched=[],evaluations=[],strategy,settings={}}={}){
   const rows=(await getJson(keyFor(user)))||[],bySymbol=new Map(fetched.filter(x=>!x.error&&Array.isArray(x.series)).map(x=>[x.symbol,x.series])),providerBySymbol=new Map(fetched.filter(x=>!x.error).map(x=>[x.symbol,x.provider||'unknown']));
-  let changed=0;
+  let changed=0;const createdSignals=[];
   for(const sig of rows.filter(x=>x.status==='OPEN')){
     const series=bySymbol.get(sig.symbol);if(!series)continue;const future=series.filter(b=>String(b.date)>String(sig.asOf));if(!future.length)continue;
     const maxHold=Math.max(1,n(sig.maxHold,settings.maxHold||20));let exit=null,reason=null,exitDate=null;
@@ -24,12 +24,12 @@ export async function updateForwardLedger(user,{fetched=[],evaluations=[],strate
     if(reason){sig.status='CLOSED';sig.exit=exit;sig.reason=reason;sig.closedAt=exitDate;sig.rMultiple=costsR(sig,exit,settings);sig.updatedAt=new Date().toISOString();changed++}
   }
   for(const ev of evaluations.filter(x=>x.accepted&&x.setup)){
-    const id=`${strategy.id}:${ev.symbol}:${ev.setup.asOf}:${ev.setup.direction||'LONG'}`;if(rows.some(x=>x.id===id))continue;
-    rows.unshift({id,symbol:ev.symbol,strategyId:strategy.id,strategyName:strategy.name,asOf:ev.setup.asOf,createdAt:new Date().toISOString(),status:'OPEN',direction:String(ev.setup.direction||'LONG'),entry:n(ev.setup.entry),stop:n(ev.setup.stop),target:n(ev.setup.target),score:n(ev.setup.score),signalScore:n(ev.signalScore,ev.setup.score),eventScore:n(ev.event?.score),eventDirection:String(ev.event?.direction||'NEUTRAL'),headline:String(ev.event?.articles?.[0]?.title||'').slice(0,240),portfolioContext:ev.portfolioContext||null,rr:n(ev.setup.rr),stopLossPct:n(ev.setup.stopLossPct,5),targetPct:n(ev.setup.targetPct),oos:ev.oos||null,maxHold:Math.max(1,n(settings.maxHold,20)),provider:providerBySymbol.get(ev.symbol)||'unknown',updatedAt:new Date().toISOString()});changed++;
+    const id=`${strategy.id}:${ev.symbol}:${ev.setup.asOf}:${ev.setup.direction||'LONG'}`;if(rows.some(x=>x.id===id))continue;if(rows.some(x=>x.status==='OPEN'&&x.symbol===ev.symbol))continue;
+    const maxHold=Math.max(1,n(settings.maxHold,20)),barMinutes=Math.max(0,n(settings.barIntervalMinutes,0)),baseTs=Date.parse(ev.setup.asOf),expiresAt=barMinutes&&Number.isFinite(baseTs)?new Date(baseTs+maxHold*barMinutes*60000).toISOString():null;const row={id,symbol:ev.symbol,strategyId:strategy.id,strategyName:strategy.name,asOf:ev.setup.asOf,createdAt:new Date().toISOString(),status:'OPEN',direction:String(ev.setup.direction||'LONG'),entry:n(ev.setup.entry),stop:n(ev.setup.stop),target:n(ev.setup.target),score:n(ev.setup.score),signalScore:n(ev.signalScore,ev.setup.score),eventScore:n(ev.event?.score),eventDirection:String(ev.event?.direction||'NEUTRAL'),headline:String(ev.event?.articles?.[0]?.title||'').slice(0,240),portfolioContext:ev.portfolioContext||null,rr:n(ev.setup.rr),stopLossPct:n(ev.setup.stopLossPct,5),targetPct:n(ev.setup.targetPct),oos:ev.oos||null,maxHold,barIntervalMinutes:barMinutes,expiresAt,provider:providerBySymbol.get(ev.symbol)||'unknown',updatedAt:new Date().toISOString()};rows.unshift(row);createdSignals.push(row);changed++;
   }
   rows.sort((a,b)=>String(b.createdAt).localeCompare(String(a.createdAt)));await setJson(keyFor(user),rows.slice(0,1000));
   if(changed)await appendAudit(user,{ts:new Date().toISOString(),type:'FORWARD_LEDGER_UPDATE',detail:`signals=${rows.length} changed=${changed}`});
-  return {signals:rows.slice(0,1000),changed,open:rows.filter(x=>x.status==='OPEN').length,closed:rows.filter(x=>x.status==='CLOSED').length};
+  return {signals:rows.slice(0,1000),createdSignals,changed,open:rows.filter(x=>x.status==='OPEN').length,closed:rows.filter(x=>x.status==='CLOSED').length};
 }
 export function signalMetrics(rows=[]){
   const closed=rows.filter(x=>x.status==='CLOSED'&&Number.isFinite(Number(x.rMultiple))),wins=closed.filter(x=>x.rMultiple>0),sum=closed.reduce((a,x)=>a+n(x.rMultiple),0),gp=wins.reduce((a,x)=>a+n(x.rMultiple),0),gl=Math.abs(closed.filter(x=>x.rMultiple<=0).reduce((a,x)=>a+n(x.rMultiple),0));
@@ -37,5 +37,5 @@ export function signalMetrics(rows=[]){
     const xs=closed.filter(x=>n(x.signalScore,x.score)>=b.min&&n(x.signalScore,x.score)<b.max),target=xs.filter(x=>x.reason==='TARGET').length,stop=xs.filter(x=>x.reason==='STOP').length,w=xs.filter(x=>n(x.rMultiple)>0).length;
     return {label:b.label,n:xs.length,wins:w,winRate:xs.length?w/xs.length*100:null,targetRate:xs.length?target/xs.length*100:null,stopRate:xs.length?stop/xs.length*100:null,avgR:xs.length?xs.reduce((a,x)=>a+n(x.rMultiple),0)/xs.length:null};
   });
-  return {n:closed.length,wins:wins.length,winRate:closed.length?wins.length/closed.length*100:null,avgR:closed.length?sum/closed.length:null,profitFactor:gl?gp/gl:(gp?999:0),targets:closed.filter(x=>x.reason==='TARGET').length,stops:closed.filter(x=>x.reason==='STOP').length,timeExits:closed.filter(x=>x.reason==='TIME').length,buckets,calibrationNote:'Model score is a ranking score, not a probability. Empirical hit rates are measured separately.'};
+  return {n:closed.length,sampleGate:closed.length>=30,wins:wins.length,winRate:closed.length?wins.length/closed.length*100:null,avgR:closed.length?sum/closed.length:null,profitFactor:gl?gp/gl:(gp?999:0),targets:closed.filter(x=>x.reason==='TARGET').length,stops:closed.filter(x=>x.reason==='STOP').length,timeExits:closed.filter(x=>x.reason==='TIME').length,buckets,calibrationNote:'Model score is a ranking score, not a probability. Empirical hit rates are measured separately.'};
 }
