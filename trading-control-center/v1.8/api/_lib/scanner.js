@@ -36,7 +36,15 @@ export function setupFromSeries(symbol,series,s){
   const i=series.length-1,ind=indicators(series,i);if(!ind)return null;
   const scores=directionalScores(ind,s),direction=scores.long>=scores.short?'LONG':'SHORT',score=Math.max(scores.long,scores.short),entry=series[i].close;
   const g=tradeGeometry(entry,score,direction,s);
-  return {ticker:symbol,asOf:series[i].date,bars:series.length,score,direction,entry,...g,atr:ind.atr,rsi:ind.rsi,momentum:ind.momentum,annualVol:ind.annualVol,volumeRatio:ind.volumeRatio,longScore:scores.long,shortScore:scores.short};
+  const trendPct=(ind.price/ind.s50-1)*100;
+  const rationale=[
+    `Direction ${direction} from long ${scores.long.toFixed(1)} vs short ${scores.short.toFixed(1)}`,
+    `Price vs SMA50 ${trendPct>=0?'+':''}${trendPct.toFixed(2)}%`,
+    `20d momentum ${ind.momentum>=0?'+':''}${ind.momentum.toFixed(2)}%`,
+    `Volume ${ind.volumeRatio.toFixed(2)}x recent average`,
+    `RSI ${ind.rsi.toFixed(1)}`
+  ];
+  return {ticker:symbol,asOf:series[i].date,bars:series.length,score,direction,entry,...g,atr:ind.atr,rsi:ind.rsi,momentum:ind.momentum,annualVol:ind.annualVol,volumeRatio:ind.volumeRatio,longScore:scores.long,shortScore:scores.short,rationale};
 }
 export function backtest(series,s){
   const trades=[];let i=55;const slip=num(s.slippageBps)/10000,comm=num(s.commissionBps)/10000,maxHold=Math.max(1,num(s.maxHold,20)),minScore=Math.max(95,num(s.minScore,95));
