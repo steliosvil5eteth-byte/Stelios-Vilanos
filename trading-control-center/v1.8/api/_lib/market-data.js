@@ -1,6 +1,7 @@
 const ALPHA_BASE='https://www.alphavantage.co/query';
 const TWELVE_BASE='https://api.twelvedata.com/time_series';
 const symbolOk=s=>/^[A-Z0-9.\/:-]{1,24}$/.test(String(s||''));
+const signalMarketCache=globalThis.__TSC_MARKET_CACHE__||(globalThis.__TSC_MARKET_CACHE__=new Map());
 
 export function parseDaily(payload){
   const ts=payload?.['Time Series (Daily)'];
