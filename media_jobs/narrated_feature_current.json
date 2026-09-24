@@ -1,5 +1,5 @@
 {
-  "approved": true,
+  "approved": false,
   "paid_generation_allowed": false,
   "strategy_id": "CURRENT_SIX_DAILY",
   "local_date": "2026-09-24",
@@ -41,7 +41,10 @@
         "Αυτό έχει σημασία και για την αεροπορία, επειδή η ηφαιστειακή στάχτη αποτελεί σοβαρό κίνδυνο για αεροσκάφη.",
         "Οπότε η εικόνα μοιάζει υπερφυσική, αλλά η εξήγηση είναι φυσική: ένα νέφος σωματιδίων μπορεί να μετατραπεί σε τεράστια ηλεκτρική μηχανή.",
         "Αν σας άρεσε, ακολουθήστε για περισσότερα."
-      ]
+      ],
+      "approved": false,
+      "publish_to_social": false,
+      "reset_hold": true
     },
     {
       "id": "current-20260924-2300-baba-yaga",
@@ -78,7 +81,14 @@
         "Μιλάμε για λαογραφία: ιστορίες που άλλαζαν καθώς περνούσαν από γενιά σε γενιά.",
         "Και ίσως αυτό εξηγεί γιατί επιβιώνει ακόμη: ποτέ δεν ξέρεις αν πίσω από την πόρτα σε περιμένει εχθρός ή σύμμαχος.",
         "Αν σας άρεσε, ακολουθήστε για περισσότερα."
-      ]
+      ],
+      "approved": false,
+      "publish_to_social": false,
+      "reset_hold": true
     }
-  ]
+  ],
+  "reset_hold": true,
+  "publish_to_social": false,
+  "production_status": "RESET_HOLD",
+  "reset_note": "Superseded by SOCIAL_RESET_20260924. Historical/reference only. Do not generate, schedule, publish, retry, restore, or catch up."
 }
