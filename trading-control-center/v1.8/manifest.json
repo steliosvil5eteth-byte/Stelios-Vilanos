@@ -1,12 +1,12 @@
 {
-  "name": "Trading Control Center v1.8",
-  "short_name": "Trading Center",
+  "name": "Trading Signal Center",
+  "short_name": "Signal Center",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",
   "background_color": "#07111f",
   "theme_color": "#07111f",
-  "description": "Multi-user paper-only market research, backtesting, risk controls and strategy performance analytics.",
+  "description": "Signal-first market research with intraday scoring, event confirmation, read-only holdings context and forward-test analytics. Live execution is off.",
   "icons": [
     {
       "src": "/icon.svg",
