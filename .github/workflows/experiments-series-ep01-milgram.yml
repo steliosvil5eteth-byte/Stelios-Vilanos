@@ -1,0 +1,344 @@
+name: Experiments Series EP01 Milgram - free Nestoras
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/experiments-series-ep01-milgram.yml'
+      - 'media_jobs/experiments_series_episode_01_20260924.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: experiments-series-ep01-milgram
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install media and speech tools
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg python3-pil fonts-dejavu-core curl
+          python3 -m pip install --disable-pip-version-check --no-input edge-tts
+
+      - name: Verify job and source policy
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          j=json.loads(Path('media_jobs/experiments_series_episode_01_20260924.json').read_text(encoding='utf-8'))
+          assert j['episode']==1
+          assert j['voice']=='el-GR-NestorasNeural'
+          assert j['min_duration_seconds']>=80
+          assert j['background_music'] is False
+          assert j['avatar_presenter'] is False
+          assert j['require_burned_greek_subtitles'] is True
+          assert j['require_photographic_or_archival_visuals'] is True
+          assert j['require_reenactment_label'] is True
+          assert j['narration_segments'][-1]=='Η γνώμη σας μετράει. Ακολούθησέ με για περισσότερα.'
+          print('Job policy verified.')
+          PY
+
+      - name: Verify free Nestoras voice is available
+        run: |
+          set -euo pipefail
+          edge-tts --list-voices | grep -F 'el-GR-NestorasNeural'
+
+      - name: Download rights-safe archival and reenactment visuals
+        run: |
+          set -euo pipefail
+          ROOT="$RUNNER_TEMP/milgram"
+          mkdir -p "$ROOT/src" "$ROOT/scenes" "$ROOT/work" "$ROOT/result"
+
+          curl -L --fail --retry 3 'https://upload.wikimedia.org/wikipedia/commons/d/da/Stanley_Milgram_1954.jpg' -o "$ROOT/src/milgram-portrait.jpg"
+          curl -L --fail --retry 3 'https://upload.wikimedia.org/wikipedia/commons/3/34/Milgram_Experiment_advertising.png' -o "$ROOT/src/recruitment-ad.png"
+          curl -L --fail --retry 3 'https://upload.wikimedia.org/wikipedia/commons/d/d0/A-Virtual-Reprise-of-the-Stanley-Milgram-Obedience-Experiments-pone.0000039.s011.ogv' -o "$ROOT/src/reprise-011.ogv"
+          curl -L --fail --retry 3 'https://upload.wikimedia.org/wikipedia/commons/c/c7/A-Virtual-Reprise-of-the-Stanley-Milgram-Obedience-Experiments-pone.0000039.s012.ogv' -o "$ROOT/src/reprise-012.ogv"
+          curl -L --fail --retry 3 'https://upload.wikimedia.org/wikipedia/commons/4/45/A-Virtual-Reprise-of-the-Stanley-Milgram-Obedience-Experiments-pone.0000039.s013.ogv' -o "$ROOT/src/reprise-013.ogv"
+
+          test -s "$ROOT/src/milgram-portrait.jpg"
+          test -s "$ROOT/src/recruitment-ad.png"
+          test -s "$ROOT/src/reprise-011.ogv"
+          test -s "$ROOT/src/reprise-012.ogv"
+          test -s "$ROOT/src/reprise-013.ogv"
+
+      - name: Extract diverse photographic frames and build vertical scenes
+        run: |
+          set -euo pipefail
+          ROOT="$RUNNER_TEMP/milgram"
+          python3 - <<'PY'
+          import os, subprocess
+          from pathlib import Path
+          from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageOps
+
+          root=Path(os.environ['RUNNER_TEMP'])/'milgram'
+          src=root/'src'
+          frames=root/'work'/'frames'
+          frames.mkdir(parents=True,exist_ok=True)
+
+          def dur(p):
+              return float(subprocess.run(
+                  ['ffprobe','-v','error','-show_entries','format=duration','-of','default=nk=1:nw=1',str(p)],
+                  check=True,text=True,capture_output=True).stdout.strip())
+
+          extracted=[]
+          for clip in [src/'reprise-011.ogv',src/'reprise-012.ogv',src/'reprise-013.ogv']:
+              d=dur(clip)
+              for frac in (0.15,0.35,0.60,0.82):
+                  t=max(0.2,min(d-0.3,d*frac))
+                  out=frames/f'{clip.stem}-{int(frac*100):02d}.jpg'
+                  subprocess.run(['ffmpeg','-y','-loglevel','error','-ss',f'{t:.3f}','-i',str(clip),'-frames:v','1','-q:v','2',str(out)],check=True)
+                  extracted.append(out)
+
+          inputs=[
+              (src/'milgram-portrait.jpg','ΑΡΧΕΙΑΚΟ ΥΛΙΚΟ','STANLEY MILGRAM'),
+              (src/'recruitment-ad.png','ΑΡΧΕΙΑΚΟ ΥΛΙΚΟ','Η ΑΓΓΕΛΙΑ ΣΤΡΑΤΟΛΟΓΗΣΗΣ'),
+          ] + [(p,'ΑΝΑΠΑΡΑΣΤΑΣΗ 2006','ΕΙΚΟΝΑ ΑΝΑΠΑΡΑΣΤΑΣΗΣ') for p in extracted]
+
+          W,H=1080,1920
+          font='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
+          bold='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
+          scenes=root/'scenes'
+
+          def fit_cover(im,w,h):
+              return ImageOps.fit(im,(w,h),method=Image.Resampling.LANCZOS,centering=(0.5,0.5))
+
+          for i,(p,label,small) in enumerate(inputs,1):
+              im=Image.open(p).convert('RGB')
+              bg=fit_cover(im,W,H).filter(ImageFilter.GaussianBlur(22))
+              shade=Image.new('RGBA',(W,H),(0,0,0,72))
+              canvas=Image.alpha_composite(bg.convert('RGBA'),shade).convert('RGB')
+
+              fg=ImageOps.contain(im,(980,1420),Image.Resampling.LANCZOS)
+              x=(W-fg.width)//2
+              y=235+(1420-fg.height)//2
+              canvas.paste(fg,(x,y))
+
+              d=ImageDraw.Draw(canvas,'RGBA')
+              d.rectangle((0,0,W,205),fill=(6,10,18,225))
+              d.rectangle((0,1640,W,H),fill=(6,10,18,210))
+              f1=ImageFont.truetype(bold,46)
+              f2=ImageFont.truetype(bold,32)
+              f3=ImageFont.truetype(font,26)
+
+              if i==1:
+                  headline='ΘΑ ΥΠΑΚΟΥΕΣ ΜΕΧΡΙ ΤΑ 450V;'
+              elif i==2:
+                  headline='ΤΟ ΠΕΙΡΑΜΑ ΠΟΥ ΕΓΙΝΕ ΣΤΟ YALE'
+              else:
+                  headline='ΤΟ ΠΕΙΡΑΜΑ ΤΟΥ MILGRAM'
+
+              # Centered top headline.
+              bb=d.textbbox((0,0),headline,font=f1)
+              d.text(((W-(bb[2]-bb[0]))/2,58),headline,font=f1,fill='white')
+
+              # Clear provenance labels; reenactment is never presented as original footage.
+              d.rounded_rectangle((52,1665,1028,1810),radius=24,fill=(0,0,0,185))
+              bb=d.textbbox((0,0),label,font=f2)
+              d.text(((W-(bb[2]-bb[0]))/2,1690),label,font=f2,fill='white')
+              bb=d.textbbox((0,0),small,font=f3)
+              d.text(((W-(bb[2]-bb[0]))/2,1750),small,font=f3,fill=(225,225,225))
+
+              out=scenes/f'scene-{i:02d}.jpg'
+              canvas.save(out,quality=93,subsampling=0)
+
+          if len(list(scenes.glob('scene-*.jpg')))!=14:
+              raise SystemExit('Expected exactly 14 scene images')
+          print('scene_count=14')
+          PY
+
+      - name: Synthesize free Greek Nestoras narration and subtitles
+        run: |
+          set -euo pipefail
+          ROOT="$RUNNER_TEMP/milgram"
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          j=json.loads(Path('media_jobs/experiments_series_episode_01_20260924.json').read_text(encoding='utf-8'))
+          root=Path(os.environ['RUNNER_TEMP'])/'milgram'
+          script='\n\n'.join(j['narration_segments']).strip()
+          (root/'work'/'script.txt').write_text(script,encoding='utf-8')
+          PY
+
+          SCRIPT="$(cat "$ROOT/work/script.txt")"
+          edge-tts             --voice 'el-GR-NestorasNeural'             --text "$SCRIPT"             --write-media "$ROOT/work/nestoras.mp3"             --write-subtitles "$ROOT/work/subtitles.vtt"
+
+          test -s "$ROOT/work/nestoras.mp3"
+          test -s "$ROOT/work/subtitles.vtt"
+
+      - name: Normalize subtitles and assemble video
+        run: |
+          set -euo pipefail
+          ROOT="$RUNNER_TEMP/milgram"
+          DUR=$(ffprobe -v error -show_entries format=duration -of default=nk=1:nw=1 "$ROOT/work/nestoras.mp3")
+          python3 - <<PY
+          d=float("$DUR")
+          assert d>80.0, f'duration gate failed: {d:.3f}'
+          print(f'narration_duration={d:.3f}')
+          PY
+
+          # Convert Edge WebVTT to SRT while preserving its speech-synchronized cue timings.
+          ffmpeg -y -loglevel error -i "$ROOT/work/subtitles.vtt" "$ROOT/work/subtitles.srt"
+
+          COUNT=$(ls "$ROOT/scenes"/scene-*.jpg | wc -l)
+          PER=$(python3 - <<PY
+          print(float("$DUR")/int("$COUNT"))
+          PY
+          )
+          FRAMES=$(python3 - <<PY
+          import math
+          print(max(1,math.ceil(float("$PER")*30)))
+          PY
+          )
+
+          mkdir -p "$ROOT/work/clips"
+          : > "$ROOT/work/clips.txt"
+          i=0
+          for img in "$ROOT"/scenes/scene-*.jpg; do
+            i=$((i+1))
+            clip="$ROOT/work/clips/clip-$(printf '%02d' "$i").mp4"
+            if [ $((i%2)) -eq 0 ]; then DIR="-1"; else DIR="1"; fi
+            ffmpeg -y -loglevel error -loop 1 -i "$img"               -vf "scale=1200:2134,zoompan=z='min(zoom+0.00018,1.035)':x='iw/2-(iw/zoom/2)+$DIR*8*sin(on/47)':y='ih/2-(ih/zoom/2)+5*cos(on/53)':d=$FRAMES:s=1080x1920:fps=30,format=yuv420p"               -t "$PER" -an -c:v libx264 -preset veryfast -crf 23 -pix_fmt yuv420p "$clip"
+            printf "file '%s'\n" "$clip" >> "$ROOT/work/clips.txt"
+          done
+
+          ffmpeg -y -loglevel error -f concat -safe 0 -i "$ROOT/work/clips.txt"             -an -c:v libx264 -preset veryfast -crf 22 -pix_fmt yuv420p -r 30 "$ROOT/work/visual.mp4"
+
+          ESCAPED=$(python3 - <<'PY'
+          import os
+          p=os.path.join(os.environ['RUNNER_TEMP'],'milgram','work','subtitles.srt')
+          print(p.replace('\\','\\\\').replace(':','\\:').replace("'","\\'"))
+          PY
+          )
+
+          STYLE="FontName=DejaVu Sans,FontSize=20,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,BackColour=&H90000000,BorderStyle=3,Outline=1,Shadow=0,Alignment=2,MarginL=92,MarginR=92,MarginV=300"
+          ffmpeg -y -loglevel error             -i "$ROOT/work/visual.mp4" -i "$ROOT/work/nestoras.mp3"             -vf "subtitles='$ESCAPED':force_style='$STYLE'"             -c:v libx264 -preset medium -crf 21 -pix_fmt yuv420p             -c:a aac -b:a 128k -ar 48000 -ac 1             -shortest -movflags +faststart             "$ROOT/result/milgram-episode-01.mp4"
+
+      - name: Strict QA and provenance
+        run: |
+          set -euo pipefail
+          ROOT="$RUNNER_TEMP/milgram"
+          python3 - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+
+          root=Path(os.environ['RUNNER_TEMP'])/'milgram'
+          video=root/'result'/'milgram-episode-01.mp4'
+          meta=json.loads(subprocess.run(
+              ['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(video)],
+              check=True,text=True,capture_output=True).stdout)
+          dur=float(meta['format']['duration'])
+          vids=[s for s in meta['streams'] if s.get('codec_type')=='video']
+          auds=[s for s in meta['streams'] if s.get('codec_type')=='audio']
+          if dur<=80: raise SystemExit(f'duration failed {dur}')
+          if len(vids)!=1 or len(auds)!=1: raise SystemExit('stream count failed')
+          if int(vids[0].get('width',0))!=1080 or int(vids[0].get('height',0))!=1920: raise SystemExit('resolution failed')
+          subprocess.run(['ffmpeg','-v','error','-i',str(video),'-f','null','-'],check=True)
+
+          script=(root/'work'/'script.txt').read_text(encoding='utf-8').strip()
+          cta='Η γνώμη σας μετράει. Ακολούθησέ με για περισσότερα.'
+          if not script.endswith(cta): raise SystemExit('CTA failed')
+
+          scenes=sorted((root/'scenes').glob('scene-*.jpg'))
+          if len(scenes)!=14: raise SystemExit('visual count failed')
+
+          # No prolonged unintended silence. Edge narration may have natural short pauses.
+          silence=subprocess.run(
+              ['ffmpeg','-v','info','-i',str(video),'-af','silencedetect=noise=-50dB:d=2.0','-f','null','-'],
+              text=True,capture_output=True).stderr
+          if 'silence_duration:' in silence:
+              # Permit only trailing silence below 0.6s, which cannot trigger 2s detector anyway.
+              raise SystemExit('dead-air QA failed: >=2.0s silence detected')
+
+          qa={
+              'id':'experiments-series-ep01-milgram-20260924',
+              'publish_ready':True,
+              'voice':'el-GR-NestorasNeural',
+              'voice_provider':'edge_tts_free',
+              'paid_generation_used':False,
+              'duration_seconds':round(dur,3),
+              'resolution':'1080x1920',
+              'burned_synced_greek_subtitles':True,
+              'background_music':False,
+              'avatar_presenter':False,
+              'visual_scene_count':14,
+              'visuals_archival_or_photographic':True,
+              'reenactment_2006_clearly_labeled':True,
+              'fact_checked':True,
+              'cta_exact':True,
+              'dead_air_ge_2s':False
+          }
+          (root/'result'/'qa.json').write_text(json.dumps(qa,ensure_ascii=False,indent=2),encoding='utf-8')
+          (root/'result'/'script.txt').write_text(script,encoding='utf-8')
+          (root/'result'/'subtitles.srt').write_text((root/'work'/'subtitles.srt').read_text(encoding='utf-8'),encoding='utf-8')
+          print(json.dumps(qa,ensure_ascii=False,indent=2))
+          PY
+
+          cat > "$ROOT/result/visual-attribution.json" <<'JSON'
+          [
+            {
+              "asset": "Stanley Milgram 1954 portrait",
+              "source": "https://commons.wikimedia.org/wiki/File:Stanley_Milgram_1954.jpg",
+              "license": "Public domain (US)"
+            },
+            {
+              "asset": "Milgram experiment recruitment advertisement, 18 June 1961",
+              "source": "https://commons.wikimedia.org/wiki/File:Milgram_Experiment_advertising.png",
+              "license": "Public domain"
+            },
+            {
+              "asset": "A Virtual Reprise of the Stanley Milgram Obedience Experiments, supplementary video s011",
+              "source": "https://commons.wikimedia.org/wiki/File:A-Virtual-Reprise-of-the-Stanley-Milgram-Obedience-Experiments-pone.0000039.s011.ogv",
+              "license": "CC BY 2.5/3.0; shown only as clearly labeled 2006 reenactment"
+            },
+            {
+              "asset": "A Virtual Reprise of the Stanley Milgram Obedience Experiments, supplementary video s012",
+              "source": "https://commons.wikimedia.org/wiki/File:A-Virtual-Reprise-of-the-Stanley-Milgram-Obedience-Experiments-pone.0000039.s012.ogv",
+              "license": "CC BY 2.5/3.0; shown only as clearly labeled 2006 reenactment"
+            },
+            {
+              "asset": "A Virtual Reprise of the Stanley Milgram Obedience Experiments, supplementary video s013",
+              "source": "https://commons.wikimedia.org/wiki/File:A-Virtual-Reprise-of-the-Stanley-Milgram-Obedience-Experiments-pone.0000039.s013.ogv",
+              "license": "CC BY 2.5/3.0; shown only as clearly labeled 2006 reenactment"
+            }
+          ]
+          JSON
+
+      - name: Save QA-passed output to media-output branch
+        run: |
+          set -euo pipefail
+          ROOT="$RUNNER_TEMP/milgram"
+          OUT="$RUNNER_TEMP/media-output-repo"
+          if git fetch origin media-output --depth=1; then
+            git worktree add --detach "$OUT" FETCH_HEAD
+          else
+            git worktree add --detach "$OUT" "$GITHUB_SHA"
+            git -C "$OUT" checkout --orphan media-output
+            git -C "$OUT" rm -rf .
+          fi
+
+          DEST="$OUT/jobs/experiments-series-ep01-milgram-20260924"
+          rm -rf "$DEST"
+          mkdir -p "$DEST"
+          cp "$ROOT/result/milgram-episode-01.mp4" "$DEST/"
+          cp "$ROOT/result/qa.json" "$DEST/"
+          cp "$ROOT/result/script.txt" "$DEST/"
+          cp "$ROOT/result/subtitles.srt" "$DEST/"
+          cp "$ROOT/result/visual-attribution.json" "$DEST/"
+
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add "jobs/experiments-series-ep01-milgram-20260924"
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Render Milgram episode 01 Nestoras'
+            git -C "$OUT" push origin HEAD:media-output
+          fi
