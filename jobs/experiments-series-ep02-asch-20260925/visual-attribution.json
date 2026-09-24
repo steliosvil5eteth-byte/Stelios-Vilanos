@@ -33,54 +33,14 @@
   },
   {
     "index": 5,
-    "filename": "Students engagement.jpg",
+    "filename": "Students in a university classroom in Tennessee 05.jpg",
     "kind": "reenactment_photo",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Students_engagement.jpg",
-    "credit": "Wikimedia Commons / Advaithacademy",
-    "license": "CC BY-SA 4.0"
+    "source_page": "https://commons.wikimedia.org/wiki/File:Students_in_a_university_classroom_in_Tennessee_05.jpg",
+    "credit": "Wikimedia Commons / Harrison Keely",
+    "license": "CC BY 4.0"
   },
   {
     "index": 6,
-    "filename": "Two college students debating.jpg",
-    "kind": "reenactment_photo",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Two_college_students_debating.jpg",
-    "credit": "Wikimedia Commons / Ryanx7",
-    "license": "CC BY-SA 4.0"
-  },
-  {
-    "index": 7,
-    "filename": "Christ University focus group 3.jpg",
-    "kind": "reenactment_photo",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Christ_University_focus_group_3.jpg",
-    "credit": "Wikimedia Commons / NSaad (WMF)",
-    "license": "CC BY-SA 4.0"
-  },
-  {
-    "index": 8,
-    "filename": "Christ University focus group 4.jpg",
-    "kind": "reenactment_photo",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Christ_University_focus_group_4.jpg",
-    "credit": "Wikimedia Commons / NSaad (WMF)",
-    "license": "CC BY-SA 4.0"
-  },
-  {
-    "index": 9,
-    "filename": "Christ University focus group 5.jpg",
-    "kind": "reenactment_photo",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Christ_University_focus_group_5.jpg",
-    "credit": "Wikimedia Commons / NSaad (WMF)",
-    "license": "CC BY-SA 4.0"
-  },
-  {
-    "index": 10,
-    "filename": "Christ University focus group 6.jpg",
-    "kind": "reenactment_photo",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Christ_University_focus_group_6.jpg",
-    "credit": "Wikimedia Commons / NSaad (WMF)",
-    "license": "CC BY-SA 4.0"
-  },
-  {
-    "index": 11,
     "filename": "Students in a university classroom in Tennessee 08.jpg",
     "kind": "reenactment_photo",
     "source_page": "https://commons.wikimedia.org/wiki/File:Students_in_a_university_classroom_in_Tennessee_08.jpg",
@@ -88,11 +48,51 @@
     "license": "CC BY 4.0"
   },
   {
-    "index": 12,
-    "filename": "Students in classroom.jpg",
+    "index": 7,
+    "filename": "Professor and students in a university classroom in Tennessee.jpg",
     "kind": "reenactment_photo",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Students_in_classroom.jpg",
-    "credit": "Wikimedia Commons / Esthee2010",
-    "license": "CC BY-SA 4.0"
+    "source_page": "https://commons.wikimedia.org/wiki/File:Professor_and_students_in_a_university_classroom_in_Tennessee.jpg",
+    "credit": "Wikimedia Commons / Harrison Keely",
+    "license": "CC BY 4.0"
+  },
+  {
+    "index": 8,
+    "filename": "A college professor teaching in a university classroom full of students in Tennessee, United States 01.jpg",
+    "kind": "reenactment_photo",
+    "source_page": "https://commons.wikimedia.org/wiki/File:A_college_professor_teaching_in_a_university_classroom_full_of_students_in_Tennessee,_United_States_01.jpg",
+    "credit": "Wikimedia Commons / Harrison Keely",
+    "license": "CC BY 4.0"
+  },
+  {
+    "index": 9,
+    "filename": "A college professor teaching in a university classroom full of students in Tennessee, United States 02.jpg",
+    "kind": "reenactment_photo",
+    "source_page": "https://commons.wikimedia.org/wiki/File:A_college_professor_teaching_in_a_university_classroom_full_of_students_in_Tennessee,_United_States_02.jpg",
+    "credit": "Wikimedia Commons / Harrison Keely",
+    "license": "CC BY 4.0"
+  },
+  {
+    "index": 10,
+    "filename": "A college professor teaching in a university classroom full of students in Tennessee, United States 03.jpg",
+    "kind": "reenactment_photo",
+    "source_page": "https://commons.wikimedia.org/wiki/File:A_college_professor_teaching_in_a_university_classroom_full_of_students_in_Tennessee,_United_States_03.jpg",
+    "credit": "Wikimedia Commons / Harrison Keely",
+    "license": "CC BY 4.0"
+  },
+  {
+    "index": 11,
+    "filename": "A college professor teaching in a university classroom full of students in Tennessee, United States 08.jpg",
+    "kind": "reenactment_photo",
+    "source_page": "https://commons.wikimedia.org/wiki/File:A_college_professor_teaching_in_a_university_classroom_full_of_students_in_Tennessee,_United_States_08.jpg",
+    "credit": "Wikimedia Commons / Harrison Keely",
+    "license": "CC BY 4.0"
+  },
+  {
+    "index": 12,
+    "filename": "A college professor teaching in a university classroom full of students in Tennessee, United States 11.jpg",
+    "kind": "reenactment_photo",
+    "source_page": "https://commons.wikimedia.org/wiki/File:A_college_professor_teaching_in_a_university_classroom_full_of_students_in_Tennessee,_United_States_11.jpg",
+    "credit": "Wikimedia Commons / Harrison Keely",
+    "license": "CC BY 4.0"
   }
 ]
