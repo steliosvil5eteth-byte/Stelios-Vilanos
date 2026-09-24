@@ -168,7 +168,10 @@ def main():
     ap=argparse.ArgumentParser(); ap.add_argument('--manifest',required=True); ap.add_argument('--output',required=True); ns=ap.parse_args()
     raw=Path(ns.manifest).read_bytes(); batch=json.loads(raw)
     if batch.get('approved') is not True or batch.get('paid_generation_allowed') is not False: raise ValueError('approved=true and paid_generation_allowed=false required')
-    jobs=batch.get('jobs',[]); require_photo=bool(batch.get('require_photographic_visuals',False))
+    jobs=batch.get('jobs',[])
+    if batch.get('require_photographic_visuals') is not True:
+        raise ValueError('require_photographic_visuals=true required; plain/text-only carousel cards are forbidden')
+    require_photo=True
     if not jobs or len(jobs)>8: raise ValueError('expected 1-8 carousel jobs')
     batch_id=hashlib.sha256(raw).hexdigest()[:16]; outdir=Path(ns.output)/batch_id; outdir.mkdir(parents=True,exist_ok=True); (outdir/'source_manifest.json').write_bytes(raw)
     report={'batch_id':batch_id,'batch_sha256':hashlib.sha256(raw).hexdigest(),'paid_ai_credits_used':0,'photographic_visuals_required':require_photo,'jobs':[]}
