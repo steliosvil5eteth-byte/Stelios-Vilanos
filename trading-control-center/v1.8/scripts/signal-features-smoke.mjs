@@ -25,7 +25,7 @@ const sm=signalMetrics(rows);assert.equal(sm.n,3);assert.equal(sm.targets,2);ass
 await createAccount({username:'signal-alert-user',password:'LongPassword123!',email:'signal@example.test',plan:'free'});
 await updateAccount('signal-alert-user',{emailVerifiedAt:new Date().toISOString()});
 await setJson('tcc:signal-alert-user:alerts',{rules:{signalEmailEnabled:true},events:[]});
-const ev={symbol:'AAPL',accepted:true,signalScore:97,setup:{asOf:'2026-09-25T10:00:00Z',direction:'LONG',entry:100,stop:95,target:107}};
+const ev={symbol:'AAPL',status:'OPEN',signalScore:97,asOf:'2026-09-25T10:00:00Z',direction:'LONG',entry:100,stop:95,target:107,expiresAt:'2026-09-25T11:40:00Z'};
 const out=await publishSignalAlerts('signal-alert-user',[ev],'RUN-1');assert.equal(out.created,1);assert.equal(out.email.sent,true);
 const out2=await publishSignalAlerts('signal-alert-user',[ev],'RUN-2');assert.equal(out2.created,0);
 const mail=await emailOutbox();assert.equal(mail.length,1);
