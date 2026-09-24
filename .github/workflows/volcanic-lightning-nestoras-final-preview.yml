@@ -36,7 +36,7 @@ jobs:
           curl -L --fail --retry 3 "https://commons.wikimedia.org/wiki/Special:Redirect/file/Taal%20Lightning%20Strike%20During%20Eruption.jpg" -o "$RUNNER_TEMP/volcano/images/01.jpg"
           curl -L --fail --retry 3 "https://commons.wikimedia.org/wiki/Special:Redirect/file/Galunggung.jpg" -o "$RUNNER_TEMP/volcano/images/02.jpg"
           curl -L --fail --retry 3 "https://commons.wikimedia.org/wiki/Special:Redirect/file/Rinjani%201994.jpg" -o "$RUNNER_TEMP/volcano/images/03.jpg"
-          curl -L --fail --retry 3 "https://commons.wikimedia.org/wiki/Special:Redirect/file/Volcanic%20Lightning%20as%20Seen%20from%20Hilo%20Beach%20by%20Charles%20Furneaux.JPG" -o "$RUNNER_TEMP/volcano/images/04.jpg"
+          curl -L --fail --retry 3 "https://commons.wikimedia.org/wiki/Special:Redirect/file/Eyjafjallaj%C3%B6kull%20by%20Terje%20S%C3%B8rgjerd.jpg" -o "$RUNNER_TEMP/volcano/images/04.jpg"
           for f in "$RUNNER_TEMP"/volcano/images/*; do ffprobe -v error "$f" >/dev/null; done
 
       - name: Synthesize Nestoras narration and build timed segments
@@ -55,11 +55,27 @@ jobs:
           out = Path(__import__('os').environ['RUNNER_TEMP'])/'volcano'
           rows=[]
           cursor=0.0
+          policy=spec.get('tts_policy',{})
+          max_attempts=int(policy.get('max_attempts',8))
+          base_backoff=float(policy.get('initial_backoff_seconds',8))
+          inter_delay=float(policy.get('inter_segment_delay_seconds',1.2))
+          transient=('429','throttl','rate limit','too many requests','timeout','timed out','temporar','connection')
 
           for i,text in enumerate(segments,1):
               raw=out/'audio'/f'{i:02d}-raw.wav'
               clean=out/'audio'/f'{i:02d}.wav'
-              synthesize(text, raw, spec['voice'])
+              for attempt in range(max_attempts):
+                  try:
+                      synthesize(text, raw, spec['voice'])
+                      break
+                  except Exception as exc:
+                      msg=str(exc).lower()
+                      raw.unlink(missing_ok=True)
+                      if attempt+1>=max_attempts or not any(token in msg for token in transient):
+                          raise
+                      wait=min(45.0,base_backoff*(attempt+1))
+                      print(f'Nestoras transient failure segment={i} attempt={attempt+1}/{max_attempts}; retry in {wait:.1f}s: {exc}',flush=True)
+                      time.sleep(wait)
               subprocess.run([
                   'ffmpeg','-y','-loglevel','error','-i',str(raw),
                   '-af',
@@ -77,7 +93,7 @@ jobs:
               dur=float(cp.stdout.strip())
               rows.append({'i':i,'text':text,'start':cursor,'duration':dur,'end':cursor+dur})
               cursor += dur
-              time.sleep(0.35)
+              time.sleep(inter_delay)
 
           if cursor <= 80:
               raise SystemExit(f'Duration gate failed: {cursor:.3f}s must be >80s')
@@ -236,10 +252,11 @@ Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
           cp "$RUNNER_TEMP/volcano/qa.json" "$DEST/"
           cp "$RUNNER_TEMP/volcano/subs.ass" "$DEST/"
           cat > "$DEST/CREDITS.txt" <<'EOF'
-Taal Volcano lightning photo: etrhamjr, CC BY-SA 4.0, Wikimedia Commons.
-Galunggung 1982 lightning photo: R. Hadian / USGS/NOAA, Public Domain.
-Mount Rinjani 1994 lightning photo: Oliver Spalt, CC BY 2.0 (also GFDL/CC BY-SA options), Wikimedia Commons.
-Volcanic Lightning as Seen from Hilo Beach by Charles Furneaux: Wikimedia Commons; used for review preview.
+Taal Volcano lightning photo: etrhamjr, CC BY-SA 4.0, Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:Taal_Lightning_Strike_During_Eruption.jpg
+Galunggung 1982 lightning photo: R. Hadian / USGS/NOAA, Public Domain. Source: https://commons.wikimedia.org/wiki/File:Galunggung.jpg
+Mount Rinjani 1994 lightning photo: Oliver Spalt, CC BY 2.0, Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:Rinjani_1994.jpg
+Eyjafjallajökull 2010 eruption photo: Terje Sørgjerd, CC BY-SA 3.0, Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:Eyjafjallajökull_by_Terje_Sørgjerd.jpg
+All crops/reframes are production changes; attribution and applicable share-alike terms are preserved.
 No social publishing performed by this workflow.
 EOF
           git -C "$OUT" config user.name 'github-actions[bot]'
