@@ -1,0 +1,42 @@
+name: Asch final direct visual QA
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/asch-final-direct-download-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  qa:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+      - name: Download exact final Asch MP4
+        run: |
+          set -euo pipefail
+          curl -L --fail --retry 3 --retry-delay 2 \
+            "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/experiments-series-ep02-asch-20260925/asch-episode-02.mp4" \
+            -o "$RUNNER_TEMP/asch-final.mp4"
+          test -s "$RUNNER_TEMP/asch-final.mp4"
+      - name: Build final contact sheet
+        run: |
+          set -euo pipefail
+          ffmpeg -y -loglevel error -i "$RUNNER_TEMP/asch-final.mp4" \
+            -vf "fps=1/10,scale=270:480:force_original_aspect_ratio=decrease,pad=270:480:(ow-iw)/2:(oh-ih)/2:black,tile=4x4" \
+            -frames:v 1 -q:v 2 "$RUNNER_TEMP/asch-final-contact-sheet.jpg"
+          test -s "$RUNNER_TEMP/asch-final-contact-sheet.jpg"
+      - name: Upload QA sheet
+        uses: actions/upload-artifact@v4
+        with:
+          name: asch-final-direct-visual-qa
+          path: ${{ runner.temp }}/asch-final-contact-sheet.jpg
+          if-no-files-found: error
