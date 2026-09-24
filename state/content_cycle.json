@@ -1,33 +1,47 @@
 {
-  "version": 10,
+  "version": 11,
   "timezone": "Europe/Athens",
   "start_date": "2026-09-23",
-  "current_cycle_date": "2026-09-23",
-  "current_theme": "seven_daily_current",
-  "current_strategy": "SEVEN_DAILY_CURRENT",
-  "program_label": "CURRENT_SEVEN_DAILY",
-  "current_status": "ACTIVE_SCHEDULED",
+  "current_cycle_date": "2026-09-24",
+  "current_theme": "ten_daily_current",
+  "current_strategy": "CURRENT_TEN_DAILY",
+  "program_label": "CURRENT_TEN_DAILY",
+  "current_status": "QA_HOLD",
   "status": "active",
   "publishing_paused": false,
-  "target_count": 7,
+  "target_count": 10,
   "completed_count": 0,
-  "completed_count_basis": "Scheduled/PENDING is not Published; provider/public confirmation is required for completion.",
-  "count_basis": "Logical posts, not destination records. Current program is 09:00 survival, 11:00 zodiac, 13:00 Dog Bartender, 15:00 love/soul story, 17:00 phenomenon, 20:00 Myth or Truth, 23:00 foreign legend across Facebook/Instagram/TikTok/YouTube.",
-  "next_cycle_date": "2026-09-24",
-  "next_target_count": 7,
-  "next_scheduled_count": 6,
-  "last_reconciled_at": "2026-09-23T07:36:00+03:00",
-  "last_reconciled_basis": "Fresh Metricool queue read for brand 7000636 plus current QA evidence. 09:00, 11:00, 15:00, 17:00, 20:00 and 23:00 are active PENDING/autoPublish=true; 13:00 remains blocked because no new four-card photorealistic asset set has passed QA.",
+  "completed_count_basis": "Scheduled/PENDING or draft is not Published; provider/public confirmation is required for completion.",
+  "count_basis": "Logical posts, not destination records. Current program is 07:00 relationships, 09:00 survival, 11:00 zodiac, 13:00 Dog Bartender, 15:00 emotional story, 17:00 phenomenon, 18:30 Greece two-day trip, 20:00 Myth or Truth, 21:30 documented experiments, 23:00 foreign legend across Facebook/Instagram/TikTok/YouTube.",
+  "next_cycle_date": "2026-09-25",
+  "next_target_count": 10,
+  "next_scheduled_count": 10,
+  "last_reconciled_at": "2026-09-24T16:11:00+03:00",
+  "last_reconciled_basis": "Fresh Metricool queue read for brand 7000636. All ten authoritative 25/09 logical slots exist. All are held draft=true/autoPublish=false pending exact-final-artifact visual QA. The retired 18:00 Cappadocia UUID -6217824847181035454 remains legacy draft only and is not a current slot.",
   "daily_categories": [
-    "survival_carousel",
+    "relationship_changes_carousel",
+    "survival_rules_carousel",
     "zodiac_carousel",
     "dog_bartender_carousel",
     "emotional_story_carousel",
     "phenomenon_video",
+    "greece_two_day_video",
     "myth_truth_carousel",
+    "documented_experiments_video",
     "legend_video"
   ],
-  "default_daily_slots_local": ["09:00", "11:00", "13:00", "15:00", "17:00", "20:00", "23:00"],
+  "default_daily_slots_local": [
+    "07:00",
+    "09:00",
+    "11:00",
+    "13:00",
+    "15:00",
+    "17:00",
+    "18:30",
+    "20:00",
+    "21:30",
+    "23:00"
+  ],
   "weekly_introduction_enabled": false,
   "legacy_dog_video_enabled": false,
   "dog_bartender_carousel_enabled": true,
@@ -36,15 +50,36 @@
     "enabled": true,
     "anchor_date": "2026-09-20",
     "anchor_group": "A",
-    "group_a": ["Κριός", "Ταύρος", "Δίδυμοι", "Καρκίνος", "Λέων", "Παρθένος"],
-    "group_b": ["Ζυγός", "Σκορπιός", "Τοξότης", "Αιγόκερως", "Υδροχόος", "Ιχθύες"],
+    "group_a": [
+      "Κριός",
+      "Ταύρος",
+      "Δίδυμοι",
+      "Καρκίνος",
+      "Λέων",
+      "Παρθένος"
+    ],
+    "group_b": [
+      "Ζυγός",
+      "Σκορπιός",
+      "Τοξότης",
+      "Αιγόκερως",
+      "Υδροχόος",
+      "Ιχθύες"
+    ],
     "2026-09-23": "B",
     "2026-09-24": "A",
     "2026-09-25": "B"
   },
   "live_queue_reconciliation": {
     "2026-09-24": {
-      "current_logical_slots_active_pending": ["09:00", "11:00", "15:00", "17:00", "20:00", "23:00"],
+      "current_logical_slots_active_pending": [
+        "09:00",
+        "11:00",
+        "15:00",
+        "17:00",
+        "20:00",
+        "23:00"
+      ],
       "active_logical_count": 6,
       "published_claim": false,
       "scheduled_detail": {
@@ -58,8 +93,44 @@
       "blocked_or_not_ready": {
         "13:00": "No new photorealistic/cinematic four-card Dog Bartender image set has passed the exact 1080x1080 silent JPEG/WebP TikTok gate. The current 24/09 dialogue brief exists but publish_ready=false; do not reuse the 23/09 scenario or schedule placeholders."
       },
-      "legacy_drafts_present": ["18:00 Grand Prismatic"],
+      "legacy_drafts_present": [
+        "18:00 Grand Prismatic"
+      ],
       "rule": "Legacy draft remains draft/autoPublish=false and is not a current-program slot or replacement."
+    },
+    "2026-09-25": {
+      "current_logical_slots_staged": [
+        "07:00",
+        "09:00",
+        "11:00",
+        "13:00",
+        "15:00",
+        "17:00",
+        "18:30",
+        "20:00",
+        "21:30",
+        "23:00"
+      ],
+      "logical_count": 10,
+      "all_staged_as_draft": true,
+      "all_auto_publish_off": true,
+      "published_claim": false,
+      "scheduled_detail": {
+        "07:00": "Relationships — Η μόνιμη διαθεσιμότητα; 7-card set + YouTube slideshow.",
+        "09:00": "Survival — blackout; 9-card set + YouTube slideshow.",
+        "11:00": "Zodiac Group B; 6-card set + YouTube slideshow.",
+        "13:00": "Dog Bartender — Ο μυστηριώδης πελάτης; 4-card set + YouTube slideshow.",
+        "15:00": "Emotional story — Το μισό πορτοκάλι; 5-card set + YouTube slideshow.",
+        "17:00": "Moonbow; narrated four-provider video.",
+        "18:30": "Two-day Greece — Ιωάννινα; narrated four-provider video.",
+        "20:00": "Myth or Truth — bats are blind; 4-card set + YouTube slideshow.",
+        "21:30": "Documented experiments — Milgram; rebuilt 159.48s, 1080x1920, Nestoras, burned Greek subtitles, 14 archival/photographic scenes, Metricool UUID -885278084662607157.",
+        "23:00": "Foreign legend — Selkie; narrated four-provider video."
+      },
+      "legacy_drafts_present": [
+        "18:00 Cappadocia — UUID -6217824847181035454"
+      ],
+      "rule": "Legacy 18:00 remains draft/autoPublish=false and is never counted or released. Exact final media must pass visual QA before any current slot is released."
     }
   },
   "current_narrated_policy": {
@@ -73,7 +144,7 @@
     "tiktok_auto_add_music": false
   },
   "zero_cost_policy": "No purchases, top-ups, upgrades, paid stock or paid generation. Only existing no-incremental-cost entitlements, free tiers, and lawful reusable assets.",
-  "hold_rule": "Latest explicit user instruction wins. Missing or QA-failed current slots stay blocked; never revive legacy drafts, backdate, catch up or invent completion.",
+  "hold_rule": "Latest explicit user instruction wins. Every current slot remains draft/autoPublish=false until the exact final carousel/video is directly verified to contain correct scene-relevant photographic/photorealistic or approved archival visuals and all other applicable QA checks pass. Missing or failed slots stay blocked; never revive legacy drafts.",
   "network_capacity_policy": "Read current provider errors and active queue before writes. Exact user times are not shifted automatically. A provider-specific block holds only that destination when safe separation is possible.",
   "history_policy": "Historical snapshots remain audit-only. Published content is not modified or republished."
 }
