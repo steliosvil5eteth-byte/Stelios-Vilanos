@@ -130,14 +130,14 @@ def main():
     raw=Path(ns.manifest).read_bytes(); batch=json.loads(raw)
     if batch.get('approved') is not True or batch.get('paid_generation_allowed') is not False: raise ValueError('approved=true and paid_generation_allowed=false required')
     jobs=batch.get('jobs',[]); require_photo=bool(batch.get('require_photographic_visuals',False))
-    if not jobs or len(jobs)>4: raise ValueError('expected 1-4 carousel jobs')
+    if not jobs or len(jobs)>8: raise ValueError('expected 1-8 carousel jobs')
     batch_id=hashlib.sha256(raw).hexdigest()[:16]; outdir=Path(ns.output)/batch_id; outdir.mkdir(parents=True,exist_ok=True); (outdir/'source_manifest.json').write_bytes(raw)
     report={'batch_id':batch_id,'batch_sha256':hashlib.sha256(raw).hexdigest(),'paid_ai_credits_used':0,'photographic_visuals_required':require_photo,'jobs':[]}
     for job in jobs:
         rec={'id':job['id'],'status':'failed'}
         try:
             slides=job['slides']; expected=job['expected_cards']
-            if len(slides)!=expected or expected not in (4,5,6,9,12): raise ValueError('card count mismatch')
+            if len(slides)!=expected or expected not in (4,5,6,7,9,12): raise ValueError('card count mismatch')
             with tempfile.TemporaryDirectory() as td:
                 work=Path(td); cards=[]
                 for i,slide in enumerate(slides,1):
