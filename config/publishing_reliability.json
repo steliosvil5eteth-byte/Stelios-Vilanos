@@ -1,5 +1,5 @@
 {
-  "version": 10,
+  "version": 11,
   "updated_on": "2026-09-24",
   "timezone": "Europe/Athens",
   "strategy_id": "FOUR_DAILY_V2",
@@ -135,5 +135,23 @@
     "publication_allowed_only_when_status": "PASSED_FINAL_REVIEW",
     "fail_closed": true,
     "rule": "Never create or update a Metricool/social publishing entry for an unreviewed final artifact. If the final file is ugly, generic, mismatched, technically wrong, uncertain, or not directly inspected, keep it preview-only and blocked."
+  },
+  "hard_qa_gate": {
+    "active": true,
+    "release_condition": "EXPLICIT_FULL_QA_PASS",
+    "missing_or_uncertain_evidence": "BLOCK",
+    "default_metricool_auto_publish_before_qa": false,
+    "required_checks": [
+      "final preview visually reviewed",
+      "visuals photorealistic and scene-relevant",
+      "no placeholders, generic mismatches or accidental repeated visuals",
+      "correct agreed voice",
+      "burned-in Greek subtitles present and synchronized when required",
+      "duration/pacing/dead-air requirements pass",
+      "caption/title/hashtags correct",
+      "sources and licenses verified when applicable",
+      "platform-specific media format and audio configuration pass"
+    ],
+    "failure_policy": "Do not publish, do not substitute a lower-quality fallback, and do not mark ready. Repair and re-run QA."
   }
 }
