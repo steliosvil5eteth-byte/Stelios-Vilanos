@@ -1,175 +1,20 @@
 {
-  "version": 13,
+  "version": 1,
   "timezone": "Europe/Athens",
-  "start_date": "2026-09-23",
-  "current_cycle_date": "2026-09-24",
-  "current_theme": "ten_daily_current",
-  "current_strategy": "CURRENT_TEN_DAILY",
-  "program_label": "CURRENT_TEN_DAILY",
-  "current_status": "QA_HOLD",
-  "status": "active",
-  "publishing_paused": false,
-  "target_count": 10,
+  "program_label": "RESET_HOLD",
+  "current_strategy": "SOCIAL_RESET_20260924",
+  "current_status": "RESET_HOLD",
+  "status": "paused",
+  "publishing_paused": true,
+  "generation_paused": true,
+  "target_count": 0,
   "completed_count": 0,
-  "completed_count_basis": "Scheduled/PENDING or draft is not Published; provider/public confirmation is required for completion.",
-  "count_basis": "Logical posts, not destination records. Current program is 07:00 relationships, 09:00 survival, 11:00 zodiac, 13:00 Dog Bartender, 15:00 emotional story, 17:00 phenomenon, 18:30 Greece two-day trip, 20:00 Myth or Truth, 21:30 documented experiments, 23:00 foreign legend across Facebook/Instagram/TikTok/YouTube.",
-  "next_cycle_date": "2026-09-25",
-  "next_target_count": 10,
-  "next_scheduled_count": 10,
-  "last_reconciled_at": "2026-09-24T18:05:00+03:00",
-  "last_reconciled_basis": "25/09 queue deduplication repair in progress. Repeated/near-duplicate 07:00 technology angle, 20:00 bats/lightning myths and 21:30 Milgram were blocked. Replacement topics are relationship roles/responsibilities, Great Wall visibility from space, and Asch conformity. All affected Metricool entries remain draft=true/autoPublish=false until rebuilt media passes final visual QA.",
-  "daily_categories": [
-    "relationship_changes_carousel",
-    "survival_rules_carousel",
-    "zodiac_carousel",
-    "dog_bartender_carousel",
-    "emotional_story_carousel",
-    "phenomenon_video",
-    "greece_two_day_video",
-    "myth_truth_carousel",
-    "documented_experiments_video",
-    "legend_video"
-  ],
-  "default_daily_slots_local": [
-    "07:00",
-    "09:00",
-    "11:00",
-    "13:00",
-    "15:00",
-    "17:00",
-    "18:30",
-    "20:00",
-    "21:30",
-    "23:00"
-  ],
-  "weekly_introduction_enabled": false,
-  "legacy_dog_video_enabled": false,
-  "dog_bartender_carousel_enabled": true,
+  "next_target_count": 0,
+  "next_scheduled_count": 0,
+  "active_slots_local": [],
+  "active_categories": [],
+  "metricool_future_queue_status": "All inspected future PENDING entries through 2026-10-31 are draft=true and autoPublish=false.",
+  "preserve_history_for_dedupe": true,
   "legacy_recovery_enabled": false,
-  "zodiac_group_alternation": {
-    "enabled": true,
-    "anchor_date": "2026-09-20",
-    "anchor_group": "A",
-    "group_a": [
-      "Κριός",
-      "Ταύρος",
-      "Δίδυμοι",
-      "Καρκίνος",
-      "Λέων",
-      "Παρθένος"
-    ],
-    "group_b": [
-      "Ζυγός",
-      "Σκορπιός",
-      "Τοξότης",
-      "Αιγόκερως",
-      "Υδροχόος",
-      "Ιχθύες"
-    ],
-    "2026-09-23": "B",
-    "2026-09-24": "A",
-    "2026-09-25": "B"
-  },
-  "live_queue_reconciliation": {
-    "2026-09-24": {
-      "current_logical_slots_active_pending": [
-        "09:00",
-        "11:00",
-        "15:00",
-        "17:00",
-        "20:00",
-        "23:00"
-      ],
-      "active_logical_count": 6,
-      "published_claim": false,
-      "scheduled_detail": {
-        "09:00": "Survival — sea; 9-card native photo set on Facebook/Instagram/TikTok plus YouTube slideshow.",
-        "11:00": "Zodiac Group A; 6-card set.",
-        "15:00": "Love/soul story — Το φως απέναντι; 5-card set.",
-        "17:00": "Volcanic lightning; four-provider narrated video, current active UUID -5116098538954078694.",
-        "20:00": "Myth or Truth — bats are blind; 4-card set.",
-        "23:00": "Grey Man of Ben Macdui; Azure Nestoras, QA-passed 162.425s, four-provider active UUID 425333639005753313."
-      },
-      "blocked_or_not_ready": {
-        "13:00": "No new photorealistic/cinematic four-card Dog Bartender image set has passed the exact 1080x1080 silent JPEG/WebP TikTok gate. The current 24/09 dialogue brief exists but publish_ready=false; do not reuse the 23/09 scenario or schedule placeholders."
-      },
-      "legacy_drafts_present": [
-        "18:00 Grand Prismatic"
-      ],
-      "rule": "Legacy draft remains draft/autoPublish=false and is not a current-program slot or replacement."
-    },
-    "2026-09-25": {
-      "current_logical_slots_staged": [
-        "07:00",
-        "09:00",
-        "11:00",
-        "13:00",
-        "15:00",
-        "17:00",
-        "18:30",
-        "20:00",
-        "21:30",
-        "23:00"
-      ],
-      "logical_count": 10,
-      "all_staged_as_draft": true,
-      "all_auto_publish_off": true,
-      "published_claim": false,
-      "scheduled_detail": {
-        "07:00": "Relationships — roles and responsibilities inside the couple; fresh 7-card photo set + YouTube slideshow; replaces technology/social-media near-duplicate.",
-        "09:00": "Survival — blackout; 9-card set + YouTube slideshow.",
-        "11:00": "Zodiac Group B — what they notice first; 6-card set + YouTube slideshow.",
-        "13:00": "Dog Bartender — mysterious customer; 4-card set + YouTube slideshow.",
-        "15:00": "Emotional story — Το μισό πορτοκάλι; 5-card set + YouTube slideshow.",
-        "17:00": "Moonbow; narrated four-provider video.",
-        "18:30": "Two-day Greece — Ιωάννινα; narrated four-provider video.",
-        "20:00": "Myth or Truth — Great Wall visible from space; fresh 4-card photo set + YouTube slideshow; replaces bats and already-used lightning myth.",
-        "21:30": "Documented experiments — Asch conformity; fresh >80s Nestoras narrated video; Milgram retired as already used.",
-        "23:00": "Foreign legend — Selkie; narrated four-provider video."
-      },
-      "legacy_drafts_present": [
-        "18:00 Cappadocia — UUID -6217824847181035454"
-      ],
-      "rule": "Legacy 18:00 remains draft/autoPublish=false and is never counted or released. Repeated or near-duplicate topics remain blocked. Exact final media must pass direct visual QA before any current slot is released.",
-      "rejected_duplicates": [
-        "Milgram obedience experiment — user confirmed already used/published",
-        "Bats are blind myth — duplicated current/previous queue",
-        "Lightning never strikes twice myth — published on 23/09",
-        "Relationship permanent-availability/messages angle — too close to current technology/social-media relationship episode"
-      ]
-    }
-  },
-  "current_narrated_policy": {
-    "voice_provider": "Microsoft Azure Speech F0",
-    "voice": "el-GR-NestorasNeural",
-    "fallback": "Piper el_GR-rapunzelina-medium only if Azure F0 is temporarily unavailable and no new cost is incurred; do not silently switch when the current user instruction requires Nestoras.",
-    "duration": "strictly >80 seconds; no maximum",
-    "background_music": false,
-    "avatar_presenter": false,
-    "subtitles": "burned-in synchronized Greek",
-    "tiktok_auto_add_music": false
-  },
-  "zero_cost_policy": "No purchases, top-ups, upgrades, paid stock or paid generation. Only existing no-incremental-cost entitlements, free tiers, and lawful reusable assets.",
-  "hold_rule": "Latest explicit user instruction wins. Every current slot remains draft/autoPublish=false until the exact final carousel/video is directly verified to contain correct scene-relevant photographic/photorealistic or approved archival visuals and all other applicable QA checks pass. Missing or failed slots stay blocked; never revive legacy drafts.",
-  "network_capacity_policy": "Read current provider errors and active queue before writes. Exact user times are not shifted automatically. A provider-specific block holds only that destination when safe separation is possible.",
-  "history_policy": "Historical snapshots remain audit-only. Published content is not modified or republished.",
-  "deduplication_repairs": {
-    "2026-09-25": {
-      "07:00": {
-        "blocked": "technology/social media / constant messaging availability",
-        "replacement": "roles and responsibilities inside the couple"
-      },
-      "20:00": {
-        "blocked": [
-          "bats are blind",
-          "lightning never strikes the same place twice"
-        ],
-        "replacement": "Great Wall visibility from space"
-      },
-      "21:30": {
-        "blocked": "Milgram obedience experiments",
-        "replacement": "Asch conformity experiments"
-      }
-    }
-  }
+  "rule": "No historical schedule, slot, queue item, media job, or category is active. Rebuild from one new authoritative specification only."
 }
