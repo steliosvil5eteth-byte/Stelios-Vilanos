@@ -260,7 +260,7 @@ jobs:
               raise SystemExit('dead-air QA failed: >=2.0s silence detected')
 
           qa={
-              'id':'experiments-series-ep01-milgram-20260924',
+              'id':'experiments-series-ep01-milgram-20260925',
               'publish_ready':True,
               'voice':'el-GR-NestorasNeural',
               'voice_provider':'edge_tts_free',
@@ -326,7 +326,7 @@ jobs:
             git -C "$OUT" rm -rf .
           fi
 
-          DEST="$OUT/jobs/experiments-series-ep01-milgram-20260924"
+          DEST="$OUT/jobs/experiments-series-ep01-milgram-20260925"
           rm -rf "$DEST"
           mkdir -p "$DEST"
           cp "$ROOT/result/milgram-episode-01.mp4" "$DEST/"
@@ -337,7 +337,7 @@ jobs:
 
           git -C "$OUT" config user.name 'github-actions[bot]'
           git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git -C "$OUT" add "jobs/experiments-series-ep01-milgram-20260924"
+          git -C "$OUT" add "jobs/experiments-series-ep01-milgram-20260925"
           if ! git -C "$OUT" diff --cached --quiet; then
             git -C "$OUT" commit -m 'Render Milgram episode 01 Nestoras'
             git -C "$OUT" push origin HEAD:media-output
