@@ -1,5 +1,5 @@
 {
-  "version": 27,
+  "version": 28,
   "timezone": "Europe/Athens",
   "strategy_id": "FOUR_DAILY_V2",
   "program_label": "CURRENT_TEN_DAILY",
@@ -158,7 +158,12 @@
         "cards": 7,
         "preferred_time": "07:00",
         "rule": "One new episode about changes in relationships between men and women. Strong hook on card 1, coherent progression, final card asks for viewer opinion. Use photographic/photorealistic scene-relevant visuals and clear Greek text; no narration.",
-        "platform_rule": "Facebook/Instagram/TikTok: complete 7-card native photo carousel where supported. TikTok uses silent 1080x1080 JPEG/WebP cards with exactly one platform-added music layer when available. YouTube: one complete vertical slideshow/Short containing all 7 cards; never drop or reorder cards."
+        "platform_rule": "Facebook/Instagram/TikTok: complete 7-card native photo carousel where supported. TikTok uses silent 1080x1080 JPEG/WebP cards with exactly one platform-added music layer when available. YouTube: one complete vertical slideshow/Short containing all 7 cards; never drop or reorder cards.",
+        "used_angles": [
+          "technology/social media/screens in relationships",
+          "read receipts / constant messaging availability"
+        ],
+        "used_angle_rule": "A new relationship episode must use a genuinely different relationship-change angle; reworded technology/social-media episodes are duplicates."
       },
       {
         "category": "survival_rules_carousel",
@@ -241,7 +246,12 @@
           "final_answer"
         ],
         "rule": "Exactly four ordered photographic cards. Strong question first, viewer participation second, concise explanation third, reveal fourth. Music only, no narration.",
-        "platform_rule": "Facebook/Instagram/TikTok: four-card carousel where supported; YouTube: one complete four-card slideshow/Short. Exactly one music layer."
+        "platform_rule": "Facebook/Instagram/TikTok: four-card carousel where supported; YouTube: one complete four-card slideshow/Short. Exactly one music layer.",
+        "used_topics": [
+          "bats are blind / νυχτερίδες είναι τυφλές",
+          "lightning never strikes the same place twice / κεραυνός δεν χτυπά δύο φορές"
+        ],
+        "used_topic_rule": "Do not reuse a used core myth within the 60-day deduplication window, even with new wording or visuals."
       },
       {
         "category": "documented_experiments_video",
