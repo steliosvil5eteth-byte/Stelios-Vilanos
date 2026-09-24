@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# 2026-09-25 repair pass: broaden rights-cleared Commons fallback queries.
 from __future__ import annotations
 import html, json, re, sys, urllib.parse, urllib.request
 from pathlib import Path
