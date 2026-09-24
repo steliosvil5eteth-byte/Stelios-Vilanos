@@ -11,7 +11,7 @@
   "avatar_presenter": false,
   "preview_only": true,
   "publish_to_social": false,
-  "final_review_status": "PENDING_DIRECT_FINAL_VISUAL_REVIEW",
+  "final_review_status": "PENDING_DIRECT_FINAL_VISUAL_REVIEW_AFTER_REBUILD",
   "require_final_artifact_visual_review_before_publish": true,
   "require_burned_greek_subtitles": true,
   "require_photographic_visuals": true,
@@ -74,40 +74,10 @@
       "credit": "Wikimedia Commons / Nyenyec"
     },
     {
-      "filename": "Students engagement.jpg",
+      "filename": "Students in a university classroom in Tennessee 05.jpg",
       "kind": "reenactment_photo",
-      "license": "CC BY-SA 4.0",
-      "credit": "Wikimedia Commons / Advaithacademy"
-    },
-    {
-      "filename": "Two college students debating.jpg",
-      "kind": "reenactment_photo",
-      "license": "CC BY-SA 4.0",
-      "credit": "Wikimedia Commons / Ryanx7"
-    },
-    {
-      "filename": "Christ University focus group 3.jpg",
-      "kind": "reenactment_photo",
-      "license": "CC BY-SA 4.0",
-      "credit": "Wikimedia Commons / NSaad (WMF)"
-    },
-    {
-      "filename": "Christ University focus group 4.jpg",
-      "kind": "reenactment_photo",
-      "license": "CC BY-SA 4.0",
-      "credit": "Wikimedia Commons / NSaad (WMF)"
-    },
-    {
-      "filename": "Christ University focus group 5.jpg",
-      "kind": "reenactment_photo",
-      "license": "CC BY-SA 4.0",
-      "credit": "Wikimedia Commons / NSaad (WMF)"
-    },
-    {
-      "filename": "Christ University focus group 6.jpg",
-      "kind": "reenactment_photo",
-      "license": "CC BY-SA 4.0",
-      "credit": "Wikimedia Commons / NSaad (WMF)"
+      "license": "CC BY 4.0",
+      "credit": "Wikimedia Commons / Harrison Keely"
     },
     {
       "filename": "Students in a university classroom in Tennessee 08.jpg",
@@ -116,14 +86,44 @@
       "credit": "Wikimedia Commons / Harrison Keely"
     },
     {
-      "filename": "Students in classroom.jpg",
+      "filename": "Professor and students in a university classroom in Tennessee.jpg",
       "kind": "reenactment_photo",
-      "license": "CC BY-SA 4.0",
-      "credit": "Wikimedia Commons / Esthee2010"
+      "license": "CC BY 4.0",
+      "credit": "Wikimedia Commons / Harrison Keely"
+    },
+    {
+      "filename": "A college professor teaching in a university classroom full of students in Tennessee, United States 01.jpg",
+      "kind": "reenactment_photo",
+      "license": "CC BY 4.0",
+      "credit": "Wikimedia Commons / Harrison Keely"
+    },
+    {
+      "filename": "A college professor teaching in a university classroom full of students in Tennessee, United States 02.jpg",
+      "kind": "reenactment_photo",
+      "license": "CC BY 4.0",
+      "credit": "Wikimedia Commons / Harrison Keely"
+    },
+    {
+      "filename": "A college professor teaching in a university classroom full of students in Tennessee, United States 03.jpg",
+      "kind": "reenactment_photo",
+      "license": "CC BY 4.0",
+      "credit": "Wikimedia Commons / Harrison Keely"
+    },
+    {
+      "filename": "A college professor teaching in a university classroom full of students in Tennessee, United States 08.jpg",
+      "kind": "reenactment_photo",
+      "license": "CC BY 4.0",
+      "credit": "Wikimedia Commons / Harrison Keely"
+    },
+    {
+      "filename": "A college professor teaching in a university classroom full of students in Tennessee, United States 11.jpg",
+      "kind": "reenactment_photo",
+      "license": "CC BY 4.0",
+      "credit": "Wikimedia Commons / Harrison Keely"
     }
   ],
-  "approved": false,
+  "approved": true,
   "reset_hold": false,
-  "production_status": "REBUILDING_PINNED_VISUALS",
-  "reset_note": "Reactivated for visual repair only. Rendering is allowed; social publishing remains blocked until direct final visual review passes."
+  "production_status": "REBUILD_WITH_CLASSROOM_VISUALS",
+  "reset_note": "Current rebuild authorized 2026-09-24. Render only; publish remains gated until direct final visual review passes."
 }
