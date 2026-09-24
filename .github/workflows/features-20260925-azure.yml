@@ -1,0 +1,66 @@
+name: 2026-09-25 features - Azure Nestoras
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'media_jobs/features_20260925.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: features-20260925-azure
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 55
+    env:
+      AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+      AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install media and Azure tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python3 -m pip install --disable-pip-version-check --no-input azure-cognitiveservices-speech requests pillow
+      - name: Render rights-checked Azure F0 features
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/finished
+        run: |
+          set -euo pipefail
+          python3 tools/render_azure_feature_batch.py --manifest media_jobs/features_20260925.json --output "$OUTPUT_DIR"
+      - name: Publish QA-passed media to media-output branch
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/finished
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/media-output-repo"
+          if git fetch origin media-output --depth=1; then
+            git worktree add --detach "$OUT" FETCH_HEAD
+          else
+            git worktree add --detach "$OUT" "$GITHUB_SHA"
+            git -C "$OUT" checkout --orphan media-output
+            git -C "$OUT" rm -rf .
+          fi
+          DEST="$OUT/jobs/features-20260925"
+          rm -rf "$DEST"; mkdir -p "$DEST"
+          for d in "$OUTPUT_DIR"/*; do
+            [ -d "$d" ] || continue
+            id=$(basename "$d")
+            mkdir -p "$DEST/$id"
+            cp "$d/$id.mp4" "$d/qa.json" "$d/subs.srt" "$d/speech-meta.json" "$d/visual-attribution.json" "$DEST/$id/"
+          done
+          cp "$OUTPUT_DIR/qa-summary.json" "$DEST/"
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/features-20260925
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Render 25 Sep QA-passed Azure F0 features'
+            git -C "$OUT" push origin HEAD:media-output
+          fi
+          cat "$OUTPUT_DIR/qa-summary.json" >> "$GITHUB_STEP_SUMMARY"
