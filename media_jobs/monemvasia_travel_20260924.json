@@ -1,0 +1,118 @@
+{
+  "id": "travel-monemvasia-20260924-1830",
+  "approved": true,
+  "publish_to_social": true,
+  "destination": "Monemvasia",
+  "voice": "el-GR-NestorasNeural",
+  "background_music": false,
+  "min_duration_seconds": 80,
+  "target_duration_seconds": "80-120",
+  "aspect_ratio": "9:16",
+  "source_facts": [
+    {
+      "name": "Visit Greece - Monemvasia",
+      "url": "https://www.visitgreece.gr/mainland/peloponnese/monemvasia/",
+      "notes": "Medieval castle town, single entrance/causeway, Lower Town, Upper Town/Goula, Agia Sophia, walking atmosphere and sea views."
+    }
+  ],
+  "narration_segments": [
+    "Αν θέλεις ένα διήμερο που να σε βγάζει αμέσως από την καθημερινότητα, η Μονεμβασιά έχει ένα μεγάλο πλεονέκτημα: πέτρα, θάλασσα και μια ολόκληρη καστροπολιτεία συγκεντρωμένα σε έναν εντυπωσιακό βράχο.",
+    "Το όνομά της συνδέεται με τη μοναδική είσοδο προς τον οικισμό. Περνάς προς τον βράχο, φτάνεις στην κύρια πύλη και από εκεί και μετά το καλύτερο κομμάτι της εκδρομής γίνεται κυρίως με τα πόδια.",
+    "Για ένα Σαββατοκύριακο αυτό λειτουργεί ιδανικά. Η Κάτω Πόλη είναι γεμάτη πέτρινα σοκάκια, καμάρες, παλιά σπίτια, μικρές αυλές και σημεία όπου μπορείς απλώς να περπατήσεις χωρίς να κυνηγάς συνεχώς το επόμενο αξιοθέατο.",
+    "Ξεκίνα την πρώτη μέρα με μια αργή βόλτα μέσα στην Κάτω Πόλη. Δες τις εκκλησίες, τις μικρές πλατείες και τα περάσματα ανάμεσα στα κτίρια. Εδώ η ίδια η διαδρομή είναι μέρος της εμπειρίας.",
+    "Τη δεύτερη μέρα αξίζει να ανέβεις προς την Άνω Πόλη, τη Γούλα. Εκεί βρίσκεται η Αγία Σοφία, ένα από τα χαρακτηριστικά μνημεία του βράχου, και η ανάβαση ανταμείβει με ανοιχτή θέα προς το πέλαγος.",
+    "Από ψηλά καταλαβαίνεις καλύτερα γιατί η Μονεμβασιά ξεχωρίζει. Τα τείχη, ο βράχος και η θάλασσα δημιουργούν ένα τοπίο που αλλάζει συνεχώς όσο κινείσαι από την Κάτω προς την Άνω Πόλη.",
+    "Κράτησε χρόνο και για τη θέα προς τον κόλπο. Το φως πάνω στο νερό και στα πέτρινα σπίτια είναι διαφορετικό το πρωί, το απόγευμα και λίγο πριν δύσει ο ήλιος, οπότε δεν χρειάζεται να γεμίσεις το πρόγραμμα με πολλές μετακινήσεις.",
+    "Μια καλή ιδέα είναι να αφήσεις κενά ανάμεσα στις στάσεις. Περπάτησε στα τείχη και στα πιο ήσυχα σοκάκια, κάθισε για καφέ ή φαγητό και άφησε τον ρυθμό της καστροπολιτείας να καθορίσει το διήμερο.",
+    "Η Μονεμβασιά ταιριάζει πολύ σε ζευγάρια, σε όσους αγαπούν την ιστορία και την αρχιτεκτονική, αλλά και σε ταξιδιώτες που θέλουν πολλές δυνατές εικόνες χωρίς να χρειάζεται να διανύσουν μεγάλες αποστάσεις μέσα στην ίδια την εκδρομή.",
+    "Αν σου αρέσει η φωτογραφία, θα βρεις διαφορετικές γωνίες σχεδόν σε κάθε στροφή: πόρτες, καμάρες, πέτρινα σπίτια, τείχη και θάλασσα. Το σημαντικό είναι να μην προσπαθήσεις να τα δεις όλα βιαστικά.",
+    "Για δύο μέρες, ένα απλό πλάνο αρκεί: πρώτη μέρα Κάτω Πόλη και βραδινή βόλτα, δεύτερη μέρα Άνω Πόλη, Αγία Σοφία και περισσότερος χρόνος στις διαδρομές με θέα. Έτσι το διήμερο μένει γεμάτο χωρίς να γίνεται εξαντλητικό.",
+    "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+  ],
+  "images": [
+    {
+      "filename": "Monemvasia - Rock and Old Town.jpg",
+      "author": "Ingo Mehling",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monemvasia_-_Rock_and_Old_Town.jpg",
+      "scene": "General view of the rock and old town"
+    },
+    {
+      "filename": "Monemvasia, the gate of the castle.jpg",
+      "author": "MinevaE",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monemvasia,_the_gate_of_the_castle.jpg",
+      "scene": "Main castle gate"
+    },
+    {
+      "filename": "Monemvasia - Downtown.jpg",
+      "author": "Ingo Mehling",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monemvasia_-_Downtown.jpg",
+      "scene": "Lower town stone streets"
+    },
+    {
+      "filename": "20190510 031 monemvasia.jpg",
+      "author": "Jean Housen",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:20190510_031_monemvasia.jpg",
+      "scene": "Lower town on the rock"
+    },
+    {
+      "filename": "Monemvasia Church of Hagia Sophia.jpg",
+      "author": "Jeroenu",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monemvasia_Church_of_Hagia_Sophia.jpg",
+      "scene": "Hagia Sophia in Upper Town"
+    },
+    {
+      "filename": "Monemvasia Citadel On Top.jpg",
+      "author": "AlMare",
+      "license": "CC BY-SA 2.5",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monemvasia_Citadel_On_Top.jpg",
+      "scene": "Upper citadel and high viewpoints"
+    },
+    {
+      "filename": "Monemvasia - Bay of Monemvasia.jpg",
+      "author": "Ingo Mehling",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monemvasia_-_Bay_of_Monemvasia.jpg",
+      "scene": "Bay and sea view"
+    },
+    {
+      "filename": "Monemvasia lower town from NE (1988) 02.jpg",
+      "author": "Mark Landon",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monemvasia_lower_town_from_NE_(1988)_02.jpg",
+      "scene": "Lower town and walls"
+    },
+    {
+      "filename": "Mur Est de la ville basse de Monemvasia.jpg",
+      "author": "Patrice78500",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mur_Est_de_la_ville_basse_de_Monemvasia.jpg",
+      "scene": "Eastern wall and walking route"
+    },
+    {
+      "filename": "20190510 090 monemvasia.jpg",
+      "author": "Jean Housen",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:20190510_090_monemvasia.jpg",
+      "scene": "Stone architecture and town details"
+    },
+    {
+      "filename": "Monemvasia (photo 4).jpg",
+      "author": "Dimitrios Patsis (DimitrisP67)",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monemvasia_(photo_4).jpg",
+      "scene": "Town and scenic walk"
+    },
+    {
+      "filename": "Monemvasia Greece Peloponnese.jpg",
+      "author": "Pixabay contributor; transferred and reviewed on Wikimedia Commons",
+      "license": "CC0 1.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monemvasia_Greece_Peloponnese.jpg",
+      "scene": "Closing scenic view"
+    }
+  ]
+}
