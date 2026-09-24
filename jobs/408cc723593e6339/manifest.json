@@ -51,7 +51,11 @@
           "source_credit": "Wikimedia Commons contributor",
           "license": "CC0 1.0"
         },
-        null
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F9%2F92%2FElderly_couple_%25281586495%2529.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        }
       ],
       "files": [
         {
@@ -118,13 +122,21 @@
           "source_credit": "Wikimedia Commons contributor",
           "license": "CC BY-SA 4.0"
         },
-        null,
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/USB%20power%20bank.jpg?width=1600",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 3.0"
+        },
         {
           "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCharging%20a%20smartphone%20with%20a%20USB%20power%20bank.jpg&w=1600&output=jpg",
           "source_credit": "Wikimedia Commons contributor",
           "license": "CC BY-SA 4.0"
         },
-        null,
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F0%2F09%2FFood_into_a_refrigerator_-_20111002.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA"
+        },
         {
           "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FFlashlight%20%2851852112087%29.jpg&w=1600&output=jpg",
           "source_credit": "Wikimedia Commons contributor",
@@ -140,7 +152,11 @@
           "source_credit": "Wikimedia Commons contributor",
           "license": "CC BY-SA"
         },
-        null,
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fb7%2FLed_flashlight.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        },
         {
           "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FDatrex%20emergency%20drinking%20water%20packet.JPG&w=1600&output=jpg",
           "source_credit": "Wikimedia Commons contributor",
@@ -217,12 +233,36 @@
       "narration": false,
       "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
       "resolved_sources": [
-        null,
-        null,
-        null,
-        null,
-        null,
-        null
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Photo%20of%20the%20constellation%20Libra%20produced%20by%20NOIRLab%20in%20collaboration%20with%20Eckhard%20Slawik,%20a%20German%20astrophotographer%20(libra).jpg?width=1600",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Photo%20of%20the%20constellation%20Scorpius%20produced%20by%20NOIRLab%20in%20collaboration%20with%20Eckhard%20Slawik,%20a%20German%20astrophotographer%20(scorpius).jpg?width=1600",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Photo%20of%20the%20constellation%20Sagittarius%20produced%20by%20NOIRLab%20in%20collaboration%20with%20Eckhard%20Slawik,%20a%20German%20astrophotographer%20(sagittarius).jpg?width=1600",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Photo%20of%20the%20constellation%20Capricornus%20produced%20by%20NOIRLab%20in%20collaboration%20with%20Eckhard%20Slawik,%20a%20German%20astrophotographer%20(capricornus).jpg?width=1600",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Photo%20of%20the%20constellation%20Aquarius%20produced%20by%20NOIRLab%20in%20collaboration%20with%20Eckhard%20Slawik,%20a%20German%20astrophotographer%20(aquarius).jpg?width=1600",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Photo%20of%20the%20constellation%20Pisces%20produced%20by%20NOIRLab%20in%20collaboration%20with%20Eckhard%20Slawik,%20a%20German%20astrophotographer%20(pisces).jpg?width=1600",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        }
       ],
       "files": [
         {
@@ -284,7 +324,11 @@
           "source_credit": "Wikimedia Commons contributor",
           "license": "CC BY-SA"
         },
-        null,
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fb0%2FBartender_%2528Unsplash%2529.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA"
+        },
         {
           "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCocktail%20bar.jpg&w=1600&output=jpg",
           "source_credit": "Wikimedia Commons contributor",
@@ -361,7 +405,11 @@
           "source_credit": "Wikimedia Commons contributor",
           "license": "CC0 1.0"
         },
-        null
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F3%2F39%2FElderly_couple_%25281527965%2529.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        }
       ],
       "files": [
         {
@@ -428,7 +476,11 @@
           "source_credit": "PLoS Computational Biology",
           "license": "CC BY 2.5"
         },
-        null
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fa%2Fac%2FBat_in_the_Hand_%2528251301881%2529.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA"
+        }
       ],
       "files": [
         {
