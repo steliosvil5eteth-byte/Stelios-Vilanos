@@ -31,7 +31,19 @@ jobs:
         env:
           OUTPUT_DIR: ${{ runner.temp }}/finished
         run: |
-          /usr/bin/python3 tools/render_carousel_pack_robust.py --manifest media_jobs/current_dog_zodiac_final.json --output "$OUTPUT_DIR"
+          set -euo pipefail
+          ok=0
+          for attempt in 1 2 3; do
+            rm -rf "$OUTPUT_DIR"
+            mkdir -p "$OUTPUT_DIR"
+            if /usr/bin/python3 tools/render_carousel_pack_robust.py --manifest media_jobs/current_dog_zodiac_final.json --output "$OUTPUT_DIR"; then
+              ok=1
+              break
+            fi
+            echo "Render attempt $attempt hit an upstream media error; waiting before retry."
+            sleep $((attempt * 35))
+          done
+          test "$ok" -eq 1
       - name: Store finished publishing assets
         env:
           OUTPUT_DIR: ${{ runner.temp }}/finished
