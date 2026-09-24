@@ -49,5 +49,9 @@
       "url": "https://www.apa.org/pubs/journals/releases/amp-64-1-1.pdf"
     }
   ],
-  "target_publication_time": "2026-09-25T21:30:00+03:00"
+  "target_publication_time": "2026-09-25T21:30:00+03:00",
+  "approved": false,
+  "reset_hold": true,
+  "production_status": "RESET_HOLD",
+  "reset_note": "Superseded by SOCIAL_RESET_20260924. Historical/reference only. Do not generate, schedule, publish, retry, restore, or catch up."
 }
