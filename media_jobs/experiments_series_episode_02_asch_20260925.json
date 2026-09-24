@@ -11,16 +11,12 @@
   "avatar_presenter": false,
   "preview_only": true,
   "publish_to_social": false,
-  "final_review_status": "PENDING_REBUILD_AND_DIRECT_FINAL_VISUAL_REVIEW",
+  "final_review_status": "REBUILD_WITH_PINNED_ASCH_VISUALS_PENDING_FINAL_REVIEW",
   "require_final_artifact_visual_review_before_publish": true,
   "require_burned_greek_subtitles": true,
   "require_photographic_visuals": true,
   "require_reenactment_label": true,
-  "photo_queries": [
-    "university students classroom photograph",
-    "students group discussion photograph",
-    "classroom lecture students photograph"
-  ],
+  "photo_queries": [],
   "narration_segments": [
     "Αν όλοι γύρω σου δώσουν την ίδια, ξεκάθαρα λάθος απάντηση, θα εμπιστευτείς τα μάτια σου ή την ομάδα;",
     "Στη δεκαετία του 1950, ο κοινωνικός ψυχολόγος Solomon Asch μελέτησε ακριβώς αυτή την πίεση: τι γίνεται όταν ένα άτομο πρέπει να απαντήσει δημόσια απέναντι σε μια ομόφωνη πλειοψηφία.",
@@ -51,5 +47,79 @@
       "url": "https://doi.org/10.1037/h0093718"
     }
   ],
-  "photo_target": 12
+  "photo_target": 12,
+  "visual_assets": [
+    {
+      "filename": "Asch experiment.png",
+      "kind": "asch_material",
+      "license": "GFDL / reusable",
+      "credit": "Wikimedia Commons"
+    },
+    {
+      "filename": "Psychology-asch-1951.png",
+      "kind": "asch_material",
+      "license": "CC BY 3.0",
+      "credit": "Wikimedia Commons"
+    },
+    {
+      "filename": "Ash Lines.jpg",
+      "kind": "asch_material",
+      "license": "Free Art License",
+      "credit": "Wikimedia Commons"
+    },
+    {
+      "filename": "Asch unanimous majority chart.png",
+      "kind": "asch_material",
+      "license": "GFDL / reusable",
+      "credit": "Wikimedia Commons"
+    },
+    {
+      "filename": "University Students.jpg",
+      "kind": "reenactment_photo",
+      "license": "CC BY-SA 4.0",
+      "credit": "Wikimedia Commons"
+    },
+    {
+      "filename": "College Students.jpg",
+      "kind": "reenactment_photo",
+      "license": "CC BY-SA",
+      "credit": "Wikimedia Commons"
+    },
+    {
+      "filename": "Two college students debating.jpg",
+      "kind": "reenactment_photo",
+      "license": "CC BY-SA 4.0",
+      "credit": "Wikimedia Commons"
+    },
+    {
+      "filename": "A pupil answering a question in class.jpg",
+      "kind": "reenactment_photo",
+      "license": "CC0 1.0",
+      "credit": "Wikimedia Commons"
+    },
+    {
+      "filename": "Students in lecture.jpg",
+      "kind": "reenactment_photo",
+      "license": "CC BY-SA",
+      "credit": "Wikimedia Commons"
+    },
+    {
+      "filename": "Group Discussion.jpg",
+      "kind": "reenactment_photo",
+      "license": "CC BY-SA",
+      "credit": "Wikimedia Commons"
+    },
+    {
+      "filename": "Coffee table talk with students.jpg",
+      "kind": "reenactment_photo",
+      "license": "CC BY-SA",
+      "credit": "Wikimedia Commons"
+    },
+    {
+      "filename": "Student in classroom.jpg",
+      "kind": "reenactment_photo",
+      "license": "CC BY-SA 4.0",
+      "credit": "Wikimedia Commons"
+    }
+  ]
 }
