@@ -11,10 +11,19 @@
     "same_dog_identity": true,
     "cartoon_animation_forbidden": true,
     "new_strange_customer": true,
-    "vary_across_cards": ["angle", "crop", "pose", "action", "composition"],
+    "vary_across_cards": [
+      "angle",
+      "crop",
+      "pose",
+      "action",
+      "composition"
+    ],
     "tiktok_assets": {
       "count": 4,
-      "mime_types": ["image/jpeg", "image/webp"],
+      "mime_types": [
+        "image/jpeg",
+        "image/webp"
+      ],
       "width": 1080,
       "height": 1080,
       "silent": true,
@@ -46,5 +55,10 @@
       "dog": "Ένα νερό. Αύριο θα με ευχαριστείς."
     }
   ],
-  "publishing_rule": "Keep 13:00 blocked until four NEW exact-1080x1080 silent JPEG/WebP cards pass visual/content QA. If Facebook/Instagram ever publish successfully before a TikTok repair, preserve them and repair TikTok only."
+  "publishing_rule": "Keep 13:00 blocked until four NEW exact-1080x1080 silent JPEG/WebP cards pass visual/content QA. If Facebook/Instagram ever publish successfully before a TikTok repair, preserve them and repair TikTok only.",
+  "approved": false,
+  "reset_hold": true,
+  "publish_to_social": false,
+  "production_status": "RESET_HOLD",
+  "reset_note": "Superseded by SOCIAL_RESET_20260924. Historical/reference only. Do not generate, schedule, publish, retry, restore, or catch up."
 }
