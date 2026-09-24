@@ -23,7 +23,8 @@ def variants(query):
       'home blackout night photograph':['blackout flashlight','power outage flashlight','flashlight dark'],
       'Scorpius constellation photograph':['Scorpius Milky Way','Scorpius stars','Antares Scorpius'],
       'elderly married couple photograph':['elderly couple','older couple','senior couple'],
-      'brown long eared bat photograph':['Plecotus auritus','long-eared bat','brown long-eared bat']
+      'brown long eared bat photograph':['Plecotus auritus','long-eared bat','brown long-eared bat'],
+      'refrigerator food home photograph':['food refrigerator','open refrigerator food','fridge food']
     }
     vals.extend(aliases.get(query,[]))
     out=[]
@@ -74,10 +75,18 @@ _original_render=base.render_card
 def commons_redirect(filename):
     return 'https://commons.wikimedia.org/wiki/Special:Redirect/file/'+urllib.parse.quote(filename,safe='()_,.-')+'?width=1600'
 
+def proxy(url):
+    return 'https://images.weserv.nl/?url='+urllib.parse.quote(url,safe='')+'&w=1600&output=jpg'
+
+REL='https://upload.wikimedia.org/wikipedia/commons/9/92/Elderly_couple_%281586495%29.jpg'
+ORANGE='https://upload.wikimedia.org/wikipedia/commons/3/39/Elderly_couple_%281527965%29.jpg'
+BAT='https://upload.wikimedia.org/wikipedia/commons/a/ac/Bat_in_the_Hand_%28251301881%29.jpg'
+FRIDGE='https://upload.wikimedia.org/wikipedia/commons/0/09/Food_into_a_refrigerator_-_20111002.jpg'
+
 PINNED={
-  'ΕΣΥ ΤΙ ΠΙΣΤΕΥΕΙΣ; — 7/7': 'https://upload.wikimedia.org/wikipedia/commons/9/92/Elderly_couple_%281586495%29.jpg',
+  'ΕΣΥ ΤΙ ΠΙΣΤΕΥΕΙΣ; — 7/7': proxy(REL),
   'ΜΙΚΡΑ ΠΟΥ ΒΟΗΘΟΥΝ — 2/9': commons_redirect('USB power bank.jpg'),
-  'ΑΥΤΟ ΓΙΝΕΤΑΙ ΣΠΙΤΙ — 5/5': 'https://upload.wikimedia.org/wikipedia/commons/3/39/Elderly_couple_%281527965%29.jpg',
+  'ΑΥΤΟ ΓΙΝΕΤΑΙ ΣΠΙΤΙ — 5/5': proxy(ORANGE),
   'ΖΥΓΟΣ — 1/6': commons_redirect('Photo of the constellation Libra produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (libra).jpg'),
   'ΣΚΟΡΠΙΟΣ — 2/6': commons_redirect('Photo of the constellation Scorpius produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (scorpius).jpg'),
   'ΤΟΞΟΤΗΣ — 3/6': commons_redirect('Photo of the constellation Sagittarius produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (sagittarius).jpg'),
@@ -86,9 +95,10 @@ PINNED={
   'ΙΧΘΥΕΣ — 6/6': commons_redirect('Photo of the constellation Pisces produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (pisces).jpg')
 }
 QUERY_PINNED={
-  'elderly couple portrait photograph':'https://upload.wikimedia.org/wikipedia/commons/9/92/Elderly_couple_%281586495%29.jpg',
-  'elderly married couple photograph':'https://upload.wikimedia.org/wikipedia/commons/3/39/Elderly_couple_%281527965%29.jpg',
-  'brown long eared bat photograph':'https://upload.wikimedia.org/wikipedia/commons/a/ac/Bat_in_the_Hand_%28251301881%29.jpg'
+  'elderly couple portrait photograph':proxy(REL),
+  'elderly married couple photograph':proxy(ORANGE),
+  'brown long eared bat photograph':proxy(BAT),
+  'refrigerator food home photograph':proxy(FRIDGE)
 }
 
 def pinned_render(slide,index,total,work,require_photo):
