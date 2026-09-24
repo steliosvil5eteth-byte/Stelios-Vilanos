@@ -1,30 +1,20 @@
 {
-  "version": 15,
+  "version": 16,
   "updated_on": "2026-09-24",
   "timezone": "Europe/Athens",
   "strategy_id": "FOUR_DAILY_V2",
-  "program_label": "CURRENT_TEN_DAILY",
+  "program_label": "RESET_HOLD",
   "authoritative_strategy_file": "config/content_strategy.json",
   "effective_date": "2026-09-24",
-  "publishing_paused": false,
-  "rules": "AUTHORITATIVE CURRENT PROGRAM from 24/09/2026: ten logical posts/day across Facebook, Instagram, TikTok and YouTube — 07:00 relationships carousel; 09:00 survival rules; 11:00 six-sign zodiac; 13:00 Dog Bartender; 15:00 emotional story; 17:00 fact-checked strange real phenomenon; 18:30 two-day trip in Greece; 20:00 Myth or Truth; 21:30 documented experiments video; 23:00 international/foreign legend. The documented experiments series starts with Milgram and must use verified evidence, distinguish facts from disputed interpretations, and never present conspiracy claims as fact. Narrated 17:00/18:30/21:30/23:00 videos require vertical 9:16 1080x1920, >80s, exact agreed Νέστορας voice, synchronized burned-in Greek subtitles, scene-relevant photographic/approved archival visuals, no background music/avatar, and PASSED_FINAL_REVIEW before publication. Old 18:00 slot remains retired.",
-  "current_slots_local": [
-    "07:00",
-    "09:00",
-    "11:00",
-    "13:00",
-    "15:00",
-    "17:00",
-    "18:30",
-    "20:00",
-    "21:30",
-    "23:00"
-  ],
-  "daily_logical_target_per_network": 10,
-  "daily_destination_target": 40,
+  "publishing_paused": true,
+  "rules": "RESET_HOLD is authoritative. No social publication or new production scheduling is allowed until config/content_strategy.json is explicitly replaced by a new post-reset strategy.",
+  "current_slots_local": [],
+  "daily_logical_target_per_network": 0,
+  "daily_destination_target": 0,
   "full_reset_hold": {
-    "active": false,
-    "rule": "Release applies only to valid current-program work. Old cancelled entries remain inactive. A future user stop/change immediately overrides this release. Configuration activation is not proof of ready or queued media."
+    "active": true,
+    "activated_at": "2026-09-24T17:47:00+03:00",
+    "rule": "All future social publishing remains blocked. Historical published content is retained only for deduplication/audit. No previous schedule or media job may be revived automatically."
   },
   "retired_legacy_post_uuids": [
     "5968469862478006616",
@@ -140,7 +130,7 @@
     "require_subtitle_sync_check": true,
     "require_duration_and_dead_air_check": true,
     "require_cta_check": true,
-    "publication_allowed_only_when_status": "PASSED_FINAL_REVIEW",
+    "publication_allowed_only_when_status": "RESET_HOLD_BLOCKED",
     "fail_closed": true,
     "rule": "Never create or release a Metricool/social publishing entry merely because a JPEG/WEBP/MP4 exists. Directly inspect the exact final artifact. Every carousel card and video scene must visibly contain correct scene-relevant photographic/photorealistic or approved archival imagery as applicable. Text-only, blank, generic, placeholder, mismatched, repeated or uninspected visuals are a hard failure: keep draft=true and autoPublish=false, repair, and re-run QA.",
     "media_file_presence_is_not_visual_qa": true,
@@ -154,7 +144,7 @@
   },
   "hard_qa_gate": {
     "active": true,
-    "release_condition": "EXPLICIT_FULL_QA_PASS",
+    "release_condition": "RESET_HOLD_BLOCKED",
     "missing_or_uncertain_evidence": "BLOCK",
     "default_metricool_auto_publish_before_qa": false,
     "required_checks": [
