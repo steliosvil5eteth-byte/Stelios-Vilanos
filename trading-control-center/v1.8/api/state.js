@@ -9,7 +9,7 @@ export default async function handler(req,res){
     if(req.method==='PUT'){
       const state=req.body?.state; if(!state||typeof state!=='object') return res.status(400).json({error:'state object required'});
       const settings=state.settings||{},paper=Array.isArray(state.paper)?state.paper.slice(0,1000):[]; const currentStrategy=strategySnapshot(settings,state.strategy?.name||'Current strategy');
-      const symbols=[...new Set(String(state.scanConfig?.symbols||'').toUpperCase().split(',').map(x=>x.trim()).filter(x=>/^[A-Z0-9.\\/\\-:]{1,24}$/.test(x)))].slice(0,e.maxWatchlist);
+      const symbols=[...new Set(String(state.scanConfig?.symbols||'').toUpperCase().split(',').map(x=>x.trim()).filter(x=>/^[A-Z0-9.\\/:-]{1,24}$/.test(x)))].slice(0,e.maxWatchlist);
       const scanConfig={symbols:symbols.join(',')};
       const safe={version:'signal-first-1',settings,paper,currentStrategy,scanConfig,plan:account.plan,updatedAt:new Date().toISOString()};
       await setJson(key,safe); const model=await syncUserModel(user,{settings,paper}); const alerts=await evaluateAlerts(user,safe);
