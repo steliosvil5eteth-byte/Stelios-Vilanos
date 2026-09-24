@@ -1,0 +1,42 @@
+name: Asch final visual QA contact sheet
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/asch-final-visual-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  qa-contact-sheet:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+      - name: Fetch final Asch video from media-output
+        run: |
+          set -euo pipefail
+          git fetch origin media-output --depth=1
+          git worktree add --detach "$RUNNER_TEMP/media-output" FETCH_HEAD
+          SRC="$RUNNER_TEMP/media-output/jobs/experiments-series-ep02-asch-20260925/asch-episode-02.mp4"
+          test -s "$SRC"
+          cp "$SRC" "$RUNNER_TEMP/asch-final.mp4"
+      - name: Build representative final contact sheet
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/qa"
+          ffmpeg -y -loglevel error -i "$RUNNER_TEMP/asch-final.mp4"             -vf "fps=1/10,scale=270:480:force_original_aspect_ratio=decrease,pad=270:480:(ow-iw)/2:(oh-ih)/2:black,tile=4x4"             -frames:v 1 -q:v 2 "$RUNNER_TEMP/qa/asch-final-contact-sheet.jpg"
+          test -s "$RUNNER_TEMP/qa/asch-final-contact-sheet.jpg"
+      - name: Upload contact sheet
+        uses: actions/upload-artifact@v4
+        with:
+          name: asch-final-visual-qa
+          path: ${{ runner.temp }}/qa/asch-final-contact-sheet.jpg
+          if-no-files-found: error
