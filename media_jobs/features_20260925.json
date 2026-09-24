@@ -266,5 +266,6 @@
     }
   ],
   "repair_revision": 1,
-  "repair_note": "Pinned vetted source-pack visuals via proxy; strict 90-120s QA; rerun after renderer fix."
+  "repair_note": "Pinned vetted source-pack visuals via proxy; strict 90-120s QA; rerun after renderer fix.",
+  "repair_trigger": "2026-09-24T11:55:00+03:00 resilient-direct-first-vetted-visuals"
 }
