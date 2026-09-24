@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - 'media_jobs/features_20260925.json'
+      - 'tools/render_azure_feature_batch.py'
+      - '.github/workflows/features-20260925-azure.yml'
   workflow_dispatch:
 
 permissions:
