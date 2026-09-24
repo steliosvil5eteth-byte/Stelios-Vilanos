@@ -196,7 +196,7 @@ def qa(job, video:Path, dur:float, photo_count:int, cap_count:int):
     gaps=[float(x) for x in re.findall(r'silence_duration: ([0-9.]+)',sil)]
     if any(x>1.2 for x in gaps): raise RuntimeError(f'dead-air QA failed: {gaps}')
     tail_log=subprocess.run(['ffmpeg','-hide_banner','-i',str(video),'-af','silencedetect=noise=-45dB:d=0.5','-f','null','-'],text=True,capture_output=True).stderr
-    tail=[(float(e),float(d)) for e,d in re.findall(r'silence_end: ([0-9.]+) \\| silence_duration: ([0-9.]+)',tail_log)]
+    tail=[(float(e),float(d)) for e,d in re.findall(r'silence_end: ([0-9.]+) \| silence_duration: ([0-9.]+)',tail_log)]
     trailing=max([d for e,d in tail if e>=vd-0.12] or [0.0])
     if trailing>0.5: raise RuntimeError(f'trailing-silence QA failed: {trailing:.3f}s')
     return {'publish_ready':True,'local_date':job['local_date'],'slot':job['slot'],'voice':VOICE,'duration_seconds':round(vd,3),'duration_min_seconds':min_d,'duration_max_seconds':max_d,'resolution':'1080x1920','background_music':False,'burned_synced_greek_subtitles':True,'avatar_presenter':False,'spoken_written_cta':job['script'].rstrip().endswith(CTA),'dead_air_gt_1_2s':False,'trailing_silence_gt_0_5s':False,'visual_source_count':photo_count,'source_pack_pinned':bool(job.get('visuals')),'rights_verified':True,'caption_count':cap_count,'paid_generation_used':False,'folklore_not_fact':bool(job.get('folklore_not_fact',False))}
