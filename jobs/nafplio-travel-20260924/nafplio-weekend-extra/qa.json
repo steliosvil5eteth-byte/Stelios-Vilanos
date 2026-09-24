@@ -3,16 +3,17 @@
   "local_date": "2026-09-24",
   "slot": "extra-now",
   "voice": "el-GR-NestorasNeural",
-  "duration_seconds": 82.0,
+  "duration_seconds": 88.0,
   "resolution": "1080x1920",
   "background_music": false,
   "burned_synced_greek_subtitles": true,
   "avatar_presenter": false,
   "spoken_written_cta": true,
   "dead_air_ge_1_8s": false,
-  "photo_source_count": 12,
+  "photo_source_count": 7,
   "rights_verified": true,
-  "caption_count": 52,
+  "caption_count": 56,
   "paid_generation_used": false,
-  "folklore_not_fact": false
+  "folklore_not_fact": false,
+  "diverse_query_sourcing": true
 }
