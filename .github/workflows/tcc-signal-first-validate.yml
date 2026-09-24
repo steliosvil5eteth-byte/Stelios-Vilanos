@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - trading-control-center-signal-first
+  pull_request:
   workflow_dispatch:
 
 permissions:
