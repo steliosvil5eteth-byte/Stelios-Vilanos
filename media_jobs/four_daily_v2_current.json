@@ -1,5 +1,5 @@
 {
-  "approved": true,
+  "approved": false,
   "paid_generation_allowed": false,
   "strategy_id": "CURRENT_EIGHT_DAILY",
   "local_date": "2026-09-25",
@@ -68,7 +68,10 @@
           "license": "CC0 1.0",
           "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCouple%20in%20a%20couch.jpg&w=1600&output=jpg"
         }
-      ]
+      ],
+      "approved": false,
+      "publish_to_social": false,
+      "reset_hold": true
     },
     {
       "id": "current-20260925-0900-survival-blackout",
@@ -149,7 +152,10 @@
           "source_credit": "Wikimedia Commons contributor",
           "license": "CC BY-SA 3.0"
         }
-      ]
+      ],
+      "approved": false,
+      "publish_to_social": false,
+      "reset_hold": true
     },
     {
       "id": "current-20260925-1100-zodiac-group-b-first-detail",
@@ -204,7 +210,10 @@
           "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
           "license": "CC BY 4.0"
         }
-      ]
+      ],
+      "approved": false,
+      "publish_to_social": false,
+      "reset_hold": true
     },
     {
       "id": "current-20260925-1300-dog-bartender-mystery",
@@ -243,7 +252,10 @@
           "source_credit": "Wikimedia Commons contributor",
           "license": "CC0 1.0"
         }
-      ]
+      ],
+      "approved": false,
+      "publish_to_social": false,
+      "reset_hold": true
     },
     {
       "id": "current-20260925-1500-half-orange-story",
@@ -290,7 +302,10 @@
           "source_credit": "Wikimedia Commons contributor",
           "license": "CC BY-SA 4.0"
         }
-      ]
+      ],
+      "approved": false,
+      "publish_to_social": false,
+      "reset_hold": true
     },
     {
       "id": "current-20260925-2000-myth-truth-great-wall-space",
@@ -330,7 +345,14 @@
           "license": "CC BY 2.0",
           "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FGreat%20Wall%20of%20China%20(2639618338).jpg&w=1600&output=jpg"
         }
-      ]
+      ],
+      "approved": false,
+      "publish_to_social": false,
+      "reset_hold": true
     }
-  ]
+  ],
+  "reset_hold": true,
+  "publish_to_social": false,
+  "production_status": "RESET_HOLD",
+  "reset_note": "Superseded by SOCIAL_RESET_20260924. Historical/reference only. Do not generate, schedule, publish, retry, restore, or catch up."
 }
