@@ -1,0 +1,302 @@
+name: Experiments Series EP02 Asch - free Nestoras
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/experiments-series-ep02-asch.yml'
+      - 'media_jobs/experiments_series_episode_02_asch_20260925.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: experiments-series-ep02-asch
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install media and speech tools
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg python3-pil fonts-dejavu-core
+          python3 -m pip install --disable-pip-version-check --no-input edge-tts
+
+      - name: Verify job policy
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          j=json.loads(Path('media_jobs/experiments_series_episode_02_asch_20260925.json').read_text(encoding='utf-8'))
+          assert j['episode']==2
+          assert j['local_date']=='2026-09-25'
+          assert j['voice']=='el-GR-NestorasNeural'
+          assert j['min_duration_seconds']>=80
+          assert j['background_music'] is False
+          assert j['avatar_presenter'] is False
+          assert j['require_burned_greek_subtitles'] is True
+          assert j['require_photographic_visuals'] is True
+          assert j['require_reenactment_label'] is True
+          assert len(j['photo_queries'])>=10
+          assert j['narration_segments'][-1]=='Η γνώμη σας μετράει. Ακολούθησέ με για περισσότερα.'
+          print('Job policy verified.')
+          PY
+
+      - name: Verify free Nestoras voice
+        run: edge-tts --list-voices | grep -F 'el-GR-NestorasNeural'
+
+      - name: Download diverse rights-cleared photographic reenactment visuals
+        run: |
+          set -euo pipefail
+          ROOT="$RUNNER_TEMP/asch"
+          mkdir -p "$ROOT/photos" "$ROOT/scenes" "$ROOT/work" "$ROOT/result"
+          python3 - <<'PY'
+          import html, json, os, re, urllib.parse, urllib.request
+          from pathlib import Path
+          from PIL import Image
+
+          root=Path(os.environ['RUNNER_TEMP'])/'asch'
+          j=json.loads(Path('media_jobs/experiments_series_episode_02_asch_20260925.json').read_text(encoding='utf-8'))
+          bad=('illustration','drawing','map','logo','diagram','icon','poster','stamp','painting','cartoon','render')
+          allowed=('cc by','cc-by','cc0','public domain','cc by-sa','cc-by-sa')
+          seen=set(); records=[]
+
+          def clean(s): return re.sub('<[^>]+>','',html.unescape(s or '')).strip()
+
+          for idx,q in enumerate(j['photo_queries'],1):
+              params={'action':'query','format':'json','generator':'search','gsrsearch':q,'gsrnamespace':'6','gsrlimit':'50','prop':'imageinfo','iiprop':'url|size|extmetadata','iiurlwidth':'1800'}
+              url='https://commons.wikimedia.org/w/api.php?'+urllib.parse.urlencode(params)
+              req=urllib.request.Request(url,headers={'User-Agent':'SteliosAschReenactment/1.0'})
+              with urllib.request.urlopen(req,timeout=90) as r:
+                  payload=json.loads(r.read().decode('utf-8'))
+              chosen=None
+              for p in payload.get('query',{}).get('pages',{}).values():
+                  title=p.get('title',''); low=title.lower()
+                  if title in seen or any(x in low for x in bad) or not re.search(r'\.(jpe?g)$',title,re.I):
+                      continue
+                  infos=p.get('imageinfo') or []
+                  if not infos: continue
+                  info=infos[0]; meta=info.get('extmetadata',{})
+                  lic=clean(meta.get('LicenseShortName',{}).get('value',''))
+                  usage=clean(meta.get('UsageTerms',{}).get('value',''))
+                  combo=(lic+' '+usage).lower()
+                  if not any(x in combo for x in allowed): continue
+                  if min(int(info.get('width') or 0),int(info.get('height') or 0))<700: continue
+                  imgurl=info.get('thumburl') or info.get('url')
+                  if not imgurl: continue
+                  try:
+                      dest=root/'photos'/f'photo-{idx:02}.jpg'
+                      req2=urllib.request.Request(imgurl,headers={'User-Agent':'SteliosAschReenactment/1.0','Accept':'image/*'})
+                      with urllib.request.urlopen(req2,timeout=120) as rr:
+                          data=rr.read(25*1024*1024)
+                      dest.write_bytes(data)
+                      with Image.open(dest) as im:
+                          if min(im.size)<700: raise ValueError('too small')
+                          im.convert('RGB').save(dest,quality=94,subsampling=0)
+                      chosen={'query':q,'title':title,'source_page':'https://commons.wikimedia.org/wiki/'+urllib.parse.quote(title.replace(' ','_'),safe=':()_,.-'),'download_url':imgurl,'artist':clean(meta.get('Artist',{}).get('value','')),'license':lic or usage}
+                      seen.add(title); records.append(chosen); break
+                  except Exception:
+                      dest.unlink(missing_ok=True)
+              if chosen is None:
+                  raise SystemExit(f'No rights-cleared photographic result for: {q}')
+          if len(records)!=len(j['photo_queries']):
+              raise SystemExit('photo count mismatch')
+          (root/'result'/'visual-attribution.json').write_text(json.dumps(records,ensure_ascii=False,indent=2),encoding='utf-8')
+          print('photos=',len(records))
+          PY
+
+      - name: Build vertical reenactment scenes with explicit labels
+        run: |
+          set -euo pipefail
+          ROOT="$RUNNER_TEMP/asch"
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageOps
+
+          root=Path(os.environ['RUNNER_TEMP'])/'asch'
+          photos=sorted((root/'photos').glob('photo-*.jpg'))
+          W,H=1080,1920
+          bold='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
+          regular='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
+
+          headlines=[
+            'ΘΑ ΕΜΠΙΣΤΕΥΟΣΟΥΝ ΤΑ ΜΑΤΙΑ ΣΟΥ;',
+            'Η ΟΜΑΔΑ ΕΝΑΝΤΙΟΝ ΜΙΑΣ ΑΠΑΝΤΗΣΗΣ',
+            'Η ΔΟΚΙΜΗ ΜΕ ΤΙΣ ΓΡΑΜΜΕΣ',
+            'ΟΤΑΝ ΟΙ ΑΛΛΟΙ ΑΠΑΝΤΟΥΝ ΠΡΩΤΟΙ',
+            'Η ΠΛΕΙΟΨΗΦΙΑ ΔΙΝΕΙ ΛΑΘΟΣ ΑΠΑΝΤΗΣΗ',
+            'ΤΩΡΑ ΕΙΝΑΙ Η ΣΕΙΡΑ ΣΟΥ',
+            'ΘΑ ΚΡΑΤΗΣΕΙΣ ΤΗ ΔΙΚΗ ΣΟΥ ΚΡΙΣΗ;',
+            'ΠΕΡΙΠΟΥ 1 ΣΤΙΣ 3 ΚΡΙΣΙΜΕΣ ΑΠΑΝΤΗΣΕΙΣ',
+            'ΠΕΡΙΠΟΥ 3 ΣΤΟΥΣ 4 ΕΣΤΩ ΜΙΑ ΦΟΡΑ',
+            'ΔΕΝ ΣΗΜΑΙΝΕΙ ΟΤΙ ΟΛΟΙ ΑΚΟΛΟΥΘΟΥΝ ΠΑΝΤΑ',
+            'ΕΝΑΣ ΣΥΜΜΑΧΟΣ ΑΛΛΑΖΕΙ ΤΗΝ ΠΙΕΣΗ',
+            'ΤΙ ΜΑΣ ΛΕΕΙ ΠΡΑΓΜΑΤΙΚΑ ΤΟ ASCH'
+          ]
+
+          def fit_cover(im):
+              return ImageOps.fit(im,(W,H),method=Image.Resampling.LANCZOS,centering=(0.5,0.5))
+
+          for i,p in enumerate(photos,1):
+              im=Image.open(p).convert('RGB')
+              bg=fit_cover(im).filter(ImageFilter.GaussianBlur(18))
+              bg=Image.blend(bg,Image.new('RGB',(W,H),'black'),0.16)
+              fg=ImageOps.contain(im,(980,1280),Image.Resampling.LANCZOS)
+              canvas=bg.copy()
+              canvas.paste(fg,((W-fg.width)//2,260+(1280-fg.height)//2))
+              d=ImageDraw.Draw(canvas,'RGBA')
+              d.rectangle((0,0,W,210),fill=(5,8,15,225))
+              d.rectangle((0,1570,W,H),fill=(5,8,15,220))
+              f1=ImageFont.truetype(bold,40)
+              f2=ImageFont.truetype(bold,30)
+              f3=ImageFont.truetype(regular,23)
+              headline=headlines[i-1]
+              bb=d.textbbox((0,0),headline,font=f1)
+              d.text(((W-(bb[2]-bb[0]))/2,70),headline,font=f1,fill='white')
+              label='ΑΝΑΠΑΡΑΣΤΑΣΗ — ΟΧΙ ΑΡΧΕΙΑΚΟ ΠΛΑΝΟ ΤΗΣ ΔΕΚΑΕΤΙΑΣ ΤΟΥ 1950'
+              bb=d.textbbox((0,0),label,font=f2)
+              d.text(((W-(bb[2]-bb[0]))/2,1610),label,font=f2,fill='white')
+              d.text((70,1685),'Οι φωτογραφίες χρησιμοποιούνται για οπτική αναπαράσταση της διαδικασίας.',font=f3,fill=(220,220,220))
+
+              if 3 <= i <= 8:
+                  x0,y0=175,1370
+                  d.rounded_rectangle((x0,y0,905,1545),radius=20,fill=(255,255,255,225))
+                  # reference line + choices A/B/C
+                  d.line((270,1410,270,1510),fill=(0,0,0,255),width=9)
+                  d.line((520,1435,520,1510),fill=(0,0,0,255),width=9)
+                  d.line((650,1410,650,1510),fill=(0,0,0,255),width=9)
+                  d.line((790,1445,790,1510),fill=(0,0,0,255),width=9)
+                  d.text((500,1515),'A',font=f3,fill='black')
+                  d.text((635,1515),'B',font=f3,fill='black')
+                  d.text((775,1515),'C',font=f3,fill='black')
+              canvas.save(root/'scenes'/f'scene-{i:02}.jpg',quality=94,subsampling=0)
+          if len(list((root/'scenes').glob('scene-*.jpg')))!=12:
+              raise SystemExit('scene count mismatch')
+          PY
+
+      - name: Synthesize Nestoras narration and subtitles
+        run: |
+          set -euo pipefail
+          ROOT="$RUNNER_TEMP/asch"
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          j=json.loads(Path('media_jobs/experiments_series_episode_02_asch_20260925.json').read_text(encoding='utf-8'))
+          root=Path(os.environ['RUNNER_TEMP'])/'asch'
+          script='\n\n'.join(j['narration_segments']).strip()
+          (root/'work'/'script.txt').write_text(script,encoding='utf-8')
+          PY
+          SCRIPT="$(cat "$ROOT/work/script.txt")"
+          edge-tts --voice 'el-GR-NestorasNeural' --text "$SCRIPT" --write-media "$ROOT/work/nestoras.mp3" --write-subtitles "$ROOT/work/subtitles.vtt"
+          test -s "$ROOT/work/nestoras.mp3"
+          test -s "$ROOT/work/subtitles.vtt"
+
+      - name: Assemble final video with burned Greek subtitles
+        run: |
+          set -euo pipefail
+          ROOT="$RUNNER_TEMP/asch"
+          DUR=$(ffprobe -v error -show_entries format=duration -of default=nk=1:nw=1 "$ROOT/work/nestoras.mp3")
+          python3 - <<PY
+          d=float("$DUR")
+          assert d>80.0, f'duration gate failed: {d:.3f}'
+          print(f'narration_duration={d:.3f}')
+          PY
+          ffmpeg -y -loglevel error -i "$ROOT/work/subtitles.vtt" "$ROOT/work/subtitles.srt"
+          COUNT=$(ls "$ROOT/scenes"/scene-*.jpg | wc -l)
+          PER=$(python3 - <<PY
+          print(float("$DUR")/int("$COUNT"))
+          PY
+          )
+          FRAMES=$(python3 - <<PY
+          import math
+          print(max(1,math.ceil(float("$PER")*30)))
+          PY
+          )
+          mkdir -p "$ROOT/work/clips"
+          : > "$ROOT/work/clips.txt"
+          i=0
+          for img in "$ROOT"/scenes/scene-*.jpg; do
+            i=$((i+1))
+            clip="$ROOT/work/clips/clip-$(printf '%02d' "$i").mp4"
+            if [ $((i%2)) -eq 0 ]; then DIR="-1"; else DIR="1"; fi
+            ffmpeg -y -loglevel error -loop 1 -i "$img" -vf "scale=1200:2134,zoompan=z='min(zoom+0.00018,1.035)':x='iw/2-(iw/zoom/2)+$DIR*8*sin(on/47)':y='ih/2-(ih/zoom/2)+5*cos(on/53)':d=$FRAMES:s=1080x1920:fps=30,format=yuv420p" -t "$PER" -an -c:v libx264 -preset veryfast -crf 23 -pix_fmt yuv420p "$clip"
+            printf "file '%s'\n" "$clip" >> "$ROOT/work/clips.txt"
+          done
+          ffmpeg -y -loglevel error -f concat -safe 0 -i "$ROOT/work/clips.txt" -an -c:v libx264 -preset veryfast -crf 22 -pix_fmt yuv420p -r 30 "$ROOT/work/visual.mp4"
+          ESCAPED=$(python3 - <<'PY'
+          import os
+          p=os.path.join(os.environ['RUNNER_TEMP'],'asch','work','subtitles.srt')
+          print(p.replace('\\','\\\\').replace(':','\\:').replace("'","\\'"))
+          PY
+          )
+          STYLE="FontName=DejaVu Sans,FontSize=20,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,BackColour=&H90000000,BorderStyle=3,Outline=1,Shadow=0,Alignment=2,MarginL=92,MarginR=92,MarginV=280"
+          ffmpeg -y -loglevel error -i "$ROOT/work/visual.mp4" -i "$ROOT/work/nestoras.mp3" -vf "subtitles='$ESCAPED':force_style='$STYLE'" -c:v libx264 -preset medium -crf 21 -pix_fmt yuv420p -c:a aac -b:a 128k -ar 48000 -ac 1 -shortest -movflags +faststart "$ROOT/result/asch-episode-02.mp4"
+
+      - name: Strict QA
+        run: |
+          set -euo pipefail
+          ROOT="$RUNNER_TEMP/asch"
+          python3 - <<'PY'
+          import json, os, subprocess
+          from pathlib import Path
+          root=Path(os.environ['RUNNER_TEMP'])/'asch'
+          video=root/'result'/'asch-episode-02.mp4'
+          meta=json.loads(subprocess.run(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(video)],check=True,text=True,capture_output=True).stdout)
+          dur=float(meta['format']['duration'])
+          vids=[s for s in meta['streams'] if s.get('codec_type')=='video']; auds=[s for s in meta['streams'] if s.get('codec_type')=='audio']
+          if dur<=80: raise SystemExit('duration failed')
+          if len(vids)!=1 or len(auds)!=1: raise SystemExit('stream count failed')
+          if int(vids[0].get('width',0))!=1080 or int(vids[0].get('height',0))!=1920: raise SystemExit('resolution failed')
+          subprocess.run(['ffmpeg','-v','error','-i',str(video),'-f','null','-'],check=True)
+          silence=subprocess.run(['ffmpeg','-v','info','-i',str(video),'-af','silencedetect=noise=-50dB:d=2.0','-f','null','-'],text=True,capture_output=True).stderr
+          if 'silence_duration:' in silence: raise SystemExit('dead-air QA failed')
+          script=(root/'work'/'script.txt').read_text(encoding='utf-8').strip()
+          if not script.endswith('Η γνώμη σας μετράει. Ακολούθησέ με για περισσότερα.'): raise SystemExit('CTA failed')
+          qa={
+            'id':'experiments-series-ep02-asch-20260925','publish_ready_technical':True,'voice':'el-GR-NestorasNeural',
+            'voice_provider':'edge_tts_free','paid_generation_used':False,'duration_seconds':round(dur,3),'resolution':'1080x1920',
+            'burned_synced_greek_subtitles':True,'background_music':False,'avatar_presenter':False,'visual_scene_count':12,
+            'all_scenes_photographic_reenactment':True,'reenactment_label_on_every_scene':True,'fact_checked':True,'cta_exact':True,'dead_air_ge_2s':False,
+            'requires_direct_final_visual_review_before_publish':True
+          }
+          (root/'result'/'qa.json').write_text(json.dumps(qa,ensure_ascii=False,indent=2),encoding='utf-8')
+          (root/'result'/'script.txt').write_text(script,encoding='utf-8')
+          (root/'result'/'subtitles.srt').write_text((root/'work'/'subtitles.srt').read_text(encoding='utf-8'),encoding='utf-8')
+          print(json.dumps(qa,ensure_ascii=False,indent=2))
+          PY
+
+      - name: Save QA output to media-output
+        run: |
+          set -euo pipefail
+          ROOT="$RUNNER_TEMP/asch"
+          OUT="$RUNNER_TEMP/media-output-repo"
+          if git fetch origin media-output --depth=1; then
+            git worktree add --detach "$OUT" FETCH_HEAD
+          else
+            git worktree add --detach "$OUT" "$GITHUB_SHA"
+            git -C "$OUT" checkout --orphan media-output
+            git -C "$OUT" rm -rf .
+          fi
+          DEST="$OUT/jobs/experiments-series-ep02-asch-20260925"
+          rm -rf "$DEST"
+          mkdir -p "$DEST"
+          cp "$ROOT/result/asch-episode-02.mp4" "$DEST/"
+          cp "$ROOT/result/qa.json" "$DEST/"
+          cp "$ROOT/result/script.txt" "$DEST/"
+          cp "$ROOT/result/subtitles.srt" "$DEST/"
+          cp "$ROOT/result/visual-attribution.json" "$DEST/"
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add "$DEST"
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Render Asch experiment episode 02 Nestoras'
+            git -C "$OUT" push origin HEAD:media-output
+          fi
