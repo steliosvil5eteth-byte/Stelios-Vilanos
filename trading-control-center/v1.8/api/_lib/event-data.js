@@ -5,8 +5,9 @@ let secTickerCache=null,secTickerCacheAt=0;
 
 function clamp(v,a,b){return Math.max(a,Math.min(b,v))}
 function num(v,d=0){const n=Number(v);return Number.isFinite(n)?n:d}
-function symbolOk(s){return /^[A-Z0-9.\-]{1,15}$/.test(String(s||''))}
+function symbolOk(s){return /^[A-Z0-9.\/:-]{1,24}$/.test(String(s||''))}
 function normalizedTicker(s){return String(s||'').toUpperCase().replace(/\./g,'-')}
+function alphaTicker(s){const x=normalizedTicker(s);if(x.includes('/'))return `CRYPTO:${x.split('/')[0]}`;return x}
 function alphaTime(v){
   const s=String(v||'');const m=s.match(/^(\d{4})(\d{2})(\d{2})T(\d{2})(\d{2})(\d{2})?/);
   if(!m)return null;const d=new Date(Date.UTC(Number(m[1]),Number(m[2])-1,Number(m[3]),Number(m[4]),Number(m[5]),Number(m[6]||0)));
