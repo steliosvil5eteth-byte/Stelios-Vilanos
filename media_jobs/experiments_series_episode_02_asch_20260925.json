@@ -121,5 +121,9 @@
       "license": "CC BY-SA 4.0",
       "credit": "Wikimedia Commons"
     }
-  ]
+  ],
+  "approved": false,
+  "reset_hold": true,
+  "production_status": "RESET_HOLD",
+  "reset_note": "Superseded by SOCIAL_RESET_20260924. Historical/reference only. Do not generate, schedule, publish, retry, restore, or catch up."
 }
