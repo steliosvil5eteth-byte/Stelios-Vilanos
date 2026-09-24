@@ -1,7 +1,7 @@
 {
   "id": "travel-monemvasia-20260924-1830",
-  "approved": true,
-  "publish_to_social": true,
+  "approved": false,
+  "publish_to_social": false,
   "destination": "Monemvasia",
   "voice": "el-GR-NestorasNeural",
   "background_music": false,
@@ -31,17 +31,92 @@
     "Αν σας άρεσε, ακολουθήστε για περισσότερα."
   ],
   "images": [
-    {"filename":"Monemvasia - Rock and Old Town.jpg","author":"Ingo Mehling","license":"CC BY-SA 3.0","source_url":"https://commons.wikimedia.org/wiki/File:Monemvasia_-_Rock_and_Old_Town.jpg","scene":"General view of the rock and old town"},
-    {"filename":"Monemvasia, the gate of the castle.jpg","author":"MinevaE","license":"CC BY-SA 4.0","source_url":"https://commons.wikimedia.org/wiki/File:Monemvasia,_the_gate_of_the_castle.jpg","scene":"Main castle gate"},
-    {"filename":"Monemvasia - Downtown.jpg","author":"Ingo Mehling","license":"CC BY-SA 3.0","source_url":"https://commons.wikimedia.org/wiki/File:Monemvasia_-_Downtown.jpg","scene":"Lower town stone streets"},
-    {"filename":"20190510 031 monemvasia.jpg","author":"Jean Housen","license":"CC BY-SA 4.0","source_url":"https://commons.wikimedia.org/wiki/File:20190510_031_monemvasia.jpg","scene":"Lower town on the rock"},
-    {"filename":"Monemvasia Church of Hagia Sophia.jpg","author":"Jeroenu","license":"CC BY-SA 4.0","source_url":"https://commons.wikimedia.org/wiki/File:Monemvasia_Church_of_Hagia_Sophia.jpg","scene":"Hagia Sophia in Upper Town"},
-    {"filename":"Monemvasia Citadel On Top.jpg","author":"AlMare","license":"CC BY-SA 2.5","source_url":"https://commons.wikimedia.org/wiki/File:Monemvasia_Citadel_On_Top.jpg","scene":"Upper citadel and high viewpoints"},
-    {"filename":"Monemvasia - Bay of Monemvasia.jpg","author":"Ingo Mehling","license":"CC BY-SA 3.0","source_url":"https://commons.wikimedia.org/wiki/File:Monemvasia_-_Bay_of_Monemvasia.jpg","scene":"Bay and sea view"},
-    {"filename":"Monemvasia lower town from NE (1988) 02.jpg","author":"Mark Landon","license":"CC BY 4.0","source_url":"https://commons.wikimedia.org/wiki/File:Monemvasia_lower_town_from_NE_(1988)_02.jpg","scene":"Lower town and walls"},
-    {"filename":"Mur Est de la ville basse de Monemvasia.jpg","author":"Patrice78500","license":"CC BY-SA 4.0","source_url":"https://commons.wikimedia.org/wiki/File:Mur_Est_de_la_ville_basse_de_Monemvasia.jpg","scene":"Eastern wall and walking route"},
-    {"filename":"20190510 090 monemvasia.jpg","author":"Jean Housen","license":"CC BY-SA 4.0","source_url":"https://commons.wikimedia.org/wiki/File:20190510_090_monemvasia.jpg","scene":"Stone architecture and town details"},
-    {"filename":"Monemvasia (photo 4).jpg","author":"Dimitrios Patsis (DimitrisP67)","license":"CC BY-SA 4.0","source_url":"https://commons.wikimedia.org/wiki/File:Monemvasia_(photo_4).jpg","scene":"Town and scenic walk"},
-    {"filename":"Monemvasia Greece Peloponnese.jpg","author":"Pixabay contributor; transferred and reviewed on Wikimedia Commons","license":"CC0 1.0","source_url":"https://commons.wikimedia.org/wiki/File:Monemvasia_Greece_Peloponnese.jpg","scene":"Closing scenic view"}
-  ]
+    {
+      "filename": "Monemvasia - Rock and Old Town.jpg",
+      "author": "Ingo Mehling",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monemvasia_-_Rock_and_Old_Town.jpg",
+      "scene": "General view of the rock and old town"
+    },
+    {
+      "filename": "Monemvasia, the gate of the castle.jpg",
+      "author": "MinevaE",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monemvasia,_the_gate_of_the_castle.jpg",
+      "scene": "Main castle gate"
+    },
+    {
+      "filename": "Monemvasia - Downtown.jpg",
+      "author": "Ingo Mehling",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monemvasia_-_Downtown.jpg",
+      "scene": "Lower town stone streets"
+    },
+    {
+      "filename": "20190510 031 monemvasia.jpg",
+      "author": "Jean Housen",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:20190510_031_monemvasia.jpg",
+      "scene": "Lower town on the rock"
+    },
+    {
+      "filename": "Monemvasia Church of Hagia Sophia.jpg",
+      "author": "Jeroenu",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monemvasia_Church_of_Hagia_Sophia.jpg",
+      "scene": "Hagia Sophia in Upper Town"
+    },
+    {
+      "filename": "Monemvasia Citadel On Top.jpg",
+      "author": "AlMare",
+      "license": "CC BY-SA 2.5",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monemvasia_Citadel_On_Top.jpg",
+      "scene": "Upper citadel and high viewpoints"
+    },
+    {
+      "filename": "Monemvasia - Bay of Monemvasia.jpg",
+      "author": "Ingo Mehling",
+      "license": "CC BY-SA 3.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monemvasia_-_Bay_of_Monemvasia.jpg",
+      "scene": "Bay and sea view"
+    },
+    {
+      "filename": "Monemvasia lower town from NE (1988) 02.jpg",
+      "author": "Mark Landon",
+      "license": "CC BY 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monemvasia_lower_town_from_NE_(1988)_02.jpg",
+      "scene": "Lower town and walls"
+    },
+    {
+      "filename": "Mur Est de la ville basse de Monemvasia.jpg",
+      "author": "Patrice78500",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Mur_Est_de_la_ville_basse_de_Monemvasia.jpg",
+      "scene": "Eastern wall and walking route"
+    },
+    {
+      "filename": "20190510 090 monemvasia.jpg",
+      "author": "Jean Housen",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:20190510_090_monemvasia.jpg",
+      "scene": "Stone architecture and town details"
+    },
+    {
+      "filename": "Monemvasia (photo 4).jpg",
+      "author": "Dimitrios Patsis (DimitrisP67)",
+      "license": "CC BY-SA 4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monemvasia_(photo_4).jpg",
+      "scene": "Town and scenic walk"
+    },
+    {
+      "filename": "Monemvasia Greece Peloponnese.jpg",
+      "author": "Pixabay contributor; transferred and reviewed on Wikimedia Commons",
+      "license": "CC0 1.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Monemvasia_Greece_Peloponnese.jpg",
+      "scene": "Closing scenic view"
+    }
+  ],
+  "reset_hold": true,
+  "production_status": "RESET_HOLD",
+  "reset_note": "Superseded by SOCIAL_RESET_20260924. Historical/reference only. Do not generate, schedule, publish, retry, restore, or catch up."
 }
