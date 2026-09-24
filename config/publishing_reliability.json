@@ -1,5 +1,5 @@
 {
-  "version": 13,
+  "version": 14,
   "updated_on": "2026-09-24",
   "timezone": "Europe/Athens",
   "strategy_id": "FOUR_DAILY_V2",
@@ -142,7 +142,15 @@
     "require_cta_check": true,
     "publication_allowed_only_when_status": "PASSED_FINAL_REVIEW",
     "fail_closed": true,
-    "rule": "Never create or update a Metricool/social publishing entry for an unreviewed final artifact. If the final file is ugly, generic, mismatched, technically wrong, uncertain, or not directly inspected, keep it preview-only and blocked."
+    "rule": "Never create or release a Metricool/social publishing entry merely because a JPEG/WEBP/MP4 exists. Directly inspect the exact final artifact. Every carousel card and video scene must visibly contain correct scene-relevant photographic/photorealistic or approved archival imagery as applicable. Text-only, blank, generic, placeholder, mismatched, repeated or uninspected visuals are a hard failure: keep draft=true and autoPublish=false, repair, and re-run QA.",
+    "media_file_presence_is_not_visual_qa": true,
+    "jpeg_mp4_extension_is_not_proof_of_photographic_content": true,
+    "require_each_carousel_card_visibly_contains_scene_relevant_photo": true,
+    "require_each_video_scene_visibly_contains_scene_relevant_photo_or_approved_archival_visual": true,
+    "pre_qa_metricool_state": {
+      "draft": true,
+      "autoPublish": false
+    }
   },
   "hard_qa_gate": {
     "active": true,
@@ -158,9 +166,10 @@
       "duration/pacing/dead-air requirements pass",
       "caption/title/hashtags correct",
       "sources and licenses verified when applicable",
-      "platform-specific media format and audio configuration pass"
+      "platform-specific media format and audio configuration pass",
+      "media extension/container alone is never accepted as proof of photographic content"
     ],
-    "failure_policy": "Do not publish, do not substitute a lower-quality fallback, and do not mark ready. Repair and re-run QA."
+    "failure_policy": "Do not publish, do not substitute a lower-quality fallback, and do not mark ready. Keep the Metricool entry draft=true and autoPublish=false, repair the final visual, directly inspect it, and re-run QA."
   },
   "retired_slots": [
     "18:00"
