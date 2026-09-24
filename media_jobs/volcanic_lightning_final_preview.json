@@ -1,0 +1,60 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "preview_only": true,
+  "publish_to_social": false,
+  "jobs": [
+    {
+      "id": "volcanic-lightning-nestoras-final-preview",
+      "local_date": "2026-09-24",
+      "slot": "preview",
+      "title": "Ηφαιστειακοί κεραυνοί",
+      "voice": "el-GR-NestorasNeural",
+      "background_music": false,
+      "photo_target": 4,
+      "scenes": 16,
+      "folklore_not_fact": false,
+      "min_duration_seconds": 80,
+      "caption": "Ηφαιστειακοί κεραυνοί — πραγματικό φυσικό φαινόμενο. Χωρίς μουσική, με αφήγηση Νέστορα και συγχρονισμένους ελληνικούς υπότιτλους.",
+      "script": "Μπορεί ένα ηφαίστειο να δημιουργήσει τη δική του καταιγίδα; Ναι. Οι ηφαιστειακοί κεραυνοί είναι πραγματικό φυσικό φαινόμενο. Εμφανίζονται κυρίως όταν μια έκρηξη σηκώνει πυκνό νέφος στάχτης. Αυτό το νέφος δεν είναι απλώς καπνός. Περιέχει αέρια, στάχτη και μικροσκοπικά θραύσματα πετρώματος. Κοντά στον κρατήρα, η βίαιη θραύση του μάγματος φορτίζει σωματίδια. Οι συγκρούσεις ανάμεσα στα σωματίδια χωρίζουν θετικά και αρνητικά φορτία. Όσο το νέφος ανεβαίνει, συναντά ψυχρότερα στρώματα της ατμόσφαιρας. Εκεί μπορεί να σχηματιστούν νερό, πάγος και υπέρψυχρα σταγονίδια. Αυτές οι συγκρούσεις μπορούν να ενισχύσουν ακόμη περισσότερο την ηλεκτροδότηση. Όταν η διαφορά φορτίου γίνει αρκετά μεγάλη, ο αέρας διασπάται. Και τότε εμφανίζεται η ηλεκτρική εκκένωση που βλέπουμε ως κεραυνό. Οι εκκενώσεις μπορούν να συμβούν κοντά στον κρατήρα ή ψηλά στο νέφος. Γι’ αυτό κάθε έκρηξη μπορεί να δώσει εντελώς διαφορετική εικόνα. Το πιο ακραίο παράδειγμα καταγράφηκε στην Τόνγκα το 2022. Στις δεκαπέντε Ιανουαρίου εξερράγη το υποθαλάσσιο ηφαίστειο Hunga. Το νέφος του ανέβηκε τουλάχιστον πενήντα οκτώ χιλιόμετρα. Μέσα στην έκρηξη καταγράφηκαν σχεδόν διακόσιες χιλιάδες αστραπές. Στην κορύφωση μετρήθηκαν πάνω από δύο χιλιάδες εξακόσιες το λεπτό. Οι κεραυνοί εμφανίστηκαν ακόμη και σε ασυνήθιστα μεγάλα ύψη. Οι επιστήμονες είδαν και τεράστιους δακτυλίους ηλεκτρικής δραστηριότητας. Οι δακτύλιοι κινούνταν μαζί με κύματα μέσα στο ηφαιστειακό νέφος. Στο Hunga έπαιξε ρόλο και η τεράστια ποσότητα θαλασσινού νερού. Το νερό εξατμίστηκε όταν ήρθε σε επαφή με το καυτό μάγμα. Έτσι δημιουργήθηκαν ιδανικές συνθήκες για εξαιρετικά έντονη ηλεκτρική δραστηριότητα. Όμως οι κεραυνοί δεν είναι μόνο ένα εντυπωσιακό θέαμα. Τα ραδιοκύματά τους μπορούν να ανιχνευθούν από μεγάλες αποστάσεις. Αυτό βοηθά τους επιστήμονες να εντοπίζουν εκρηκτικά νέφη στάχτης γρήγορα. Η πληροφορία είναι κρίσιμη όταν η στάχτη απειλεί αεροπορικές διαδρομές. Άρα η εικόνα μοιάζει υπερφυσική, αλλά η εξήγηση είναι φυσική. Ένα ηφαιστειακό νέφος μπορεί να λειτουργήσει σαν τεράστια ηλεκτρική μηχανή. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "visuals": [
+        {
+          "source": "Taal Lightning Strike During Eruption",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Taal%20Lightning%20Strike%20During%20Eruption.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Taal_Lightning_Strike_During_Eruption.jpg",
+          "attribution": "etrhamjr, “Taal Lightning Strike During Eruption”, CC BY-SA 4.0, via Wikimedia Commons; crops/reframes indicated.",
+          "license": "CC BY-SA",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "visual_kind": "photograph"
+        },
+        {
+          "source": "Galunggung 1982 eruption lightning",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Galunggung.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Galunggung.jpg",
+          "attribution": "R. Hadian / USGS/NOAA, “Galunggung”, Public Domain, via Wikimedia Commons.",
+          "license": "Public Domain",
+          "license_url": "https://commons.wikimedia.org/wiki/File:Galunggung.jpg",
+          "visual_kind": "photograph"
+        },
+        {
+          "source": "Rinjani 1994 eruption",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Rinjani%201994.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Rinjani_1994.jpg",
+          "attribution": "Oliver Spalt, “Rinjani 1994”, CC BY 2.0, via Wikimedia Commons; crops/reframes indicated.",
+          "license": "CC BY",
+          "license_url": "https://creativecommons.org/licenses/by/2.0/",
+          "visual_kind": "photograph"
+        },
+        {
+          "source": "Eyjafjallajökull eruption — Terje Sørgjerd",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Eyjafjallajökull%20by%20Terje%20Sørgjerd.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Eyjafjallajökull_by_Terje_Sørgjerd.jpg",
+          "attribution": "Terje Sørgjerd, “Eyjafjallajökull by Terje Sørgjerd”, CC BY-SA 3.0, via Wikimedia Commons; crops/reframes indicated.",
+          "license": "CC BY-SA",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "visual_kind": "photograph"
+        }
+      ]
+    }
+  ]
+}
