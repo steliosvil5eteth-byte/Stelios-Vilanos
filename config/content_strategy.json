@@ -1,5 +1,5 @@
 {
-  "version": 22,
+  "version": 23,
   "timezone": "Europe/Athens",
   "strategy_id": "FOUR_DAILY_V2",
   "program_label": "CURRENT_SIX_DAILY",
@@ -34,9 +34,21 @@
     "date_rule": "All six categories occur on every Europe/Athens calendar date. A missed or blocked item never shifts the calendar, is never backdated and is never automatically reposted as catch-up."
   },
   "publishing": {
-    "networks": ["facebook", "instagram", "tiktok", "youtube"],
+    "networks": [
+      "facebook",
+      "instagram",
+      "tiktok",
+      "youtube"
+    ],
     "autopublish": true,
-    "slots_local_time": ["11:00", "13:00", "15:00", "17:00", "20:00", "23:00"],
+    "slots_local_time": [
+      "11:00",
+      "13:00",
+      "15:00",
+      "17:00",
+      "20:00",
+      "23:00"
+    ],
     "schedule_effective_date": "2026-09-23",
     "caption_language": "el",
     "hashtags_per_post_max": 5,
@@ -49,7 +61,27 @@
     "quality_check_before_publish": true,
     "continue_without_user_action_when_tools_allow": true,
     "no_purchases_topups_upgrades_paid_tests": true,
-    "scheduled_pending_is_not_published": true
+    "scheduled_pending_is_not_published": true,
+    "hard_qa_gate": {
+      "active": true,
+      "default_action_on_missing_or_uncertain_qa": "BLOCK_PUBLICATION",
+      "autopublish_allowed_only_after_explicit_qa_pass": true,
+      "qa_pass_value": "PASSED",
+      "require_final_preview_review": true,
+      "require_visual_relevance_check": true,
+      "require_photorealistic_visual_check": true,
+      "require_no_repeated_or_placeholder_visuals": true,
+      "require_voice_check": true,
+      "require_burned_subtitle_check": true,
+      "require_subtitle_sync_check": true,
+      "require_duration_check": true,
+      "require_caption_and_hashtag_check": true,
+      "require_rights_and_source_check": true,
+      "require_platform_format_check": true,
+      "require_audio_layer_check": true,
+      "block_on_any_failed_item": true,
+      "rule": "Never schedule with autoPublish=true merely because media rendered successfully. A human-readable final preview and all applicable QA checks must explicitly PASS first. If any check is missing, uncertain, visually poor, mismatched, repetitive, unreadable, unsynchronized or rights-unclear, keep the post non-autopublishing and repair it before release."
+    }
   },
   "originality_rules": {
     "minimum_days_before_reusing_same_core_angle": 60,
@@ -76,7 +108,12 @@
     "program_label": "CURRENT_SIX_DAILY",
     "effective_date": "2026-09-23",
     "timezone": "Europe/Athens",
-    "networks": ["facebook", "instagram", "tiktok", "youtube"],
+    "networks": [
+      "facebook",
+      "instagram",
+      "tiktok",
+      "youtube"
+    ],
     "posts_per_network_per_day": 6,
     "destination_target_per_day": 24,
     "daily_posts": [
@@ -85,8 +122,22 @@
         "count": 1,
         "cards": 6,
         "preferred_time": "11:00",
-        "group_a": ["Κριός", "Ταύρος", "Δίδυμοι", "Καρκίνος", "Λέων", "Παρθένος"],
-        "group_b": ["Ζυγός", "Σκορπιός", "Τοξότης", "Αιγόκερως", "Υδροχόος", "Ιχθύες"],
+        "group_a": [
+          "Κριός",
+          "Ταύρος",
+          "Δίδυμοι",
+          "Καρκίνος",
+          "Λέων",
+          "Παρθένος"
+        ],
+        "group_b": [
+          "Ζυγός",
+          "Σκορπιός",
+          "Τοξότης",
+          "Αιγόκερως",
+          "Υδροχόος",
+          "Ιχθύες"
+        ],
         "alternation_rule": "Group A and Group B alternate by Europe/Athens calendar date; 20/09/2026=A, therefore 23/09/2026=B and 24/09/2026=A.",
         "format_rule": "Music, no narration. TikTok uses the complete silent JPEG/WebP photo carousel with autoAddMusic=true."
       },
@@ -104,7 +155,12 @@
         "count": 1,
         "cards": 5,
         "preferred_time": "15:00",
-        "themes": ["αγάπη", "έρωτας", "χωρισμός", "ψυχή"],
+        "themes": [
+          "αγάπη",
+          "έρωτας",
+          "χωρισμός",
+          "ψυχή"
+        ],
         "rule": "One coherent five-card story with a genuinely new opening, hook, characters, situation, phrasing, progression, turning point and ending each day. Music, no narration."
       },
       {
@@ -118,7 +174,12 @@
         "count": 1,
         "cards": 4,
         "preferred_time": "20:00",
-        "order": ["question", "viewer_participation", "explanation", "final_answer"],
+        "order": [
+          "question",
+          "viewer_participation",
+          "explanation",
+          "final_answer"
+        ],
         "rule": "Exactly four ordered cards. Music, no narration."
       },
       {
@@ -138,7 +199,10 @@
       "native_carousel_support": "Never silently drop cards, split one logical item into extra posts or substitute a different format when the requested platform format is unsupported."
     },
     "narrated_video_quality": {
-      "applies_to": ["phenomenon_video", "legend_video"],
+      "applies_to": [
+        "phenomenon_video",
+        "legend_video"
+      ],
       "aspect_ratio": "9:16",
       "resolution": "1080x1920",
       "voice_provider": "Piper local",
@@ -166,7 +230,9 @@
       "restore": false,
       "rule": "Old dog/barista/terrier VIDEO content stays retired. This does not apply to the current 13:00 Dog Bartender four-card carousel series."
     },
-    "weekly_introduction": {"enabled": false},
+    "weekly_introduction": {
+      "enabled": false
+    },
     "deduplication_policy": {
       "logical_key": "local_date + category + platform",
       "read_live_queue_and_history_before_write": true,
@@ -189,13 +255,27 @@
     "publishing": {
       "autopublish": true,
       "start": "2026-09-23",
-      "slots_local_time": ["11:00", "13:00", "15:00", "17:00", "20:00", "23:00"],
-      "rule": "Exactly six logical posts per day across the four connected networks. Scheduled/PENDING is not Published; report publication only from provider/public confirmation."
+      "slots_local_time": [
+        "11:00",
+        "13:00",
+        "15:00",
+        "17:00",
+        "20:00",
+        "23:00"
+      ],
+      "rule": "Exactly six logical posts per day across the four connected networks. Scheduled/PENDING is not Published; report publication only from provider/public confirmation.",
+      "qa_gate": "AUTO-PUBLISH ONLY AFTER EXPLICIT FULL QA PASS; otherwise autoPublish=false."
     },
     "progress_updates": {
       "enabled": true,
       "language": "el",
-      "notify_on": ["new ready package", "verified scheduling", "provider-confirmed publication", "new failure or blocker", "recovery"],
+      "notify_on": [
+        "new ready package",
+        "verified scheduling",
+        "provider-confirmed publication",
+        "new failure or blocker",
+        "recovery"
+      ],
       "suppress_unchanged": true
     },
     "special_series": {
