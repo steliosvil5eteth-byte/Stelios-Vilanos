@@ -1,5 +1,5 @@
 {
-  "version": 11,
+  "version": 12,
   "timezone": "Europe/Athens",
   "start_date": "2026-09-23",
   "current_cycle_date": "2026-09-24",
@@ -16,8 +16,8 @@
   "next_cycle_date": "2026-09-25",
   "next_target_count": 10,
   "next_scheduled_count": 10,
-  "last_reconciled_at": "2026-09-24T16:11:00+03:00",
-  "last_reconciled_basis": "Fresh Metricool queue read for brand 7000636. All ten authoritative 25/09 logical slots exist. All are held draft=true/autoPublish=false pending exact-final-artifact visual QA. The retired 18:00 Cappadocia UUID -6217824847181035454 remains legacy draft only and is not a current slot.",
+  "last_reconciled_at": "2026-09-24T18:04:00+03:00",
+  "last_reconciled_basis": "Semantic deduplication pass against live Metricool recent history plus repository jobs. Removed/replaced repeated Milgram and bats topics; a lightning myth replacement was also rejected after history showed it had already been published on 23/09. 07:00 technology-adjacent relationship topic was replaced as near-duplicate. All affected Metricool entries remain draft/autoPublish=false.",
   "daily_categories": [
     "relationship_changes_carousel",
     "survival_rules_carousel",
@@ -116,21 +116,27 @@
       "all_auto_publish_off": true,
       "published_claim": false,
       "scheduled_detail": {
-        "07:00": "Relationships — Η μόνιμη διαθεσιμότητα; 7-card set + YouTube slideshow.",
+        "07:00": "Relationships — changing roles and responsibilities in couples; fresh 7-card set + YouTube slideshow (rebuild in progress).",
         "09:00": "Survival — blackout; 9-card set + YouTube slideshow.",
-        "11:00": "Zodiac Group B; 6-card set + YouTube slideshow.",
-        "13:00": "Dog Bartender — Ο μυστηριώδης πελάτης; 4-card set + YouTube slideshow.",
+        "11:00": "Zodiac Group B — what they notice first; 6-card set + YouTube slideshow.",
+        "13:00": "Dog Bartender — mysterious customer; 4-card set + YouTube slideshow.",
         "15:00": "Emotional story — Το μισό πορτοκάλι; 5-card set + YouTube slideshow.",
         "17:00": "Moonbow; narrated four-provider video.",
         "18:30": "Two-day Greece — Ιωάννινα; narrated four-provider video.",
-        "20:00": "Myth or Truth — bats are blind; 4-card set + YouTube slideshow.",
-        "21:30": "Documented experiments — Milgram; rebuilt 159.48s, 1080x1920, Nestoras, burned Greek subtitles, 14 archival/photographic scenes, Metricool UUID -885278084662607157.",
+        "20:00": "Myth or Truth — Great Wall visibility from space; fresh 4-card set + YouTube slideshow (rebuild in progress).",
+        "21:30": "Documented experiments — Asch conformity experiments; Metricool UUID -885278084662607157, draft=true/autoPublish=false.",
         "23:00": "Foreign legend — Selkie; narrated four-provider video."
       },
       "legacy_drafts_present": [
         "18:00 Cappadocia — UUID -6217824847181035454"
       ],
-      "rule": "Legacy 18:00 remains draft/autoPublish=false and is never counted or released. Exact final media must pass visual QA before any current slot is released."
+      "rule": "Every topic must pass semantic 60-day deduplication against live Metricool history, repository history and current queue. Rewording does not make a repeated topic new. Exact final media remains draft/autoPublish=false until final visual QA passes.",
+      "rejected_duplicates": [
+        "Milgram obedience experiment — user confirmed already used/published",
+        "Bats are blind myth — duplicated current/previous queue",
+        "Lightning never strikes twice myth — published on 23/09",
+        "Relationship permanent-availability/messages angle — too close to current technology/social-media relationship episode"
+      ]
     }
   },
   "current_narrated_policy": {
