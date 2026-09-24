@@ -56,5 +56,6 @@
         }
       ]
     }
-  ]
+  ],
+  "repair_trigger": "2026-09-24T11:55:00+03:00 resilient-direct-first-vetted-visuals"
 }
