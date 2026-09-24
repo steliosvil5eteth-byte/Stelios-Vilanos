@@ -1,0 +1,17 @@
+{
+  "id": "travel-ioannina-20260925-1830",
+  "destination": "Ioannina",
+  "publish_to_social": true,
+  "voice": "el-GR-NestorasNeural",
+  "duration_seconds": 103.367,
+  "resolution": "1080x1920",
+  "burned_subtitles": true,
+  "background_music": false,
+  "avatar_presenter": false,
+  "audio_streams": 1,
+  "photo_count": 12,
+  "all_visuals_real_photos": true,
+  "cta_exact": true,
+  "min_duration_gate_passed": true,
+  "final_filename": "travel-ioannina-20260925-1830.mp4"
+}
