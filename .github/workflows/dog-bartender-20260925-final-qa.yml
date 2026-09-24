@@ -1,0 +1,55 @@
+name: Dog Bartender 25 Sep final visual QA
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/dog-bartender-20260925-final-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  qa:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install image tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq python3-pil
+      - name: Fetch exact repaired dog cards
+        run: |
+          set -euo pipefail
+          git fetch origin media-output --depth=1
+          git worktree add --detach "$RUNNER_TEMP/media-output" FETCH_HEAD
+          ROOT="$RUNNER_TEMP/media-output/jobs/25354be4d8ca6553"
+          for n in 01 02 03 04; do
+            test -s "$ROOT/current-20260925-1300-dog-bartender-mystery-$n.jpg"
+          done
+          echo "DOG_ROOT=$ROOT" >> "$GITHUB_ENV"
+      - name: Build dog contact sheet
+        run: |
+          python3 - <<'PY'
+          import os
+          from pathlib import Path
+          from PIL import Image, ImageOps, ImageDraw
+          root=Path(os.environ['DOG_ROOT'])
+          files=[root/f'current-20260925-1300-dog-bartender-mystery-{i:02}.jpg' for i in range(1,5)]
+          cell=720
+          sheet=Image.new('RGB',(cell*2,cell*2),(20,20,20))
+          for i,p in enumerate(files):
+              im=Image.open(p).convert('RGB')
+              im=ImageOps.fit(im,(cell,cell),method=Image.Resampling.LANCZOS)
+              sheet.paste(im,((i%2)*cell,(i//2)*cell))
+          out=Path(os.environ['RUNNER_TEMP'])/'dog-bartender-final-contact-sheet.jpg'
+          sheet.save(out,quality=94)
+          PY
+      - name: Upload dog QA sheet
+        uses: actions/upload-artifact@v4
+        with:
+          name: dog-bartender-20260925-final-qa
+          path: ${{ runner.temp }}/dog-bartender-final-contact-sheet.jpg
+          if-no-files-found: error
