@@ -1,13 +1,13 @@
 {
-  "version": 12,
+  "version": 13,
   "updated_on": "2026-09-24",
   "timezone": "Europe/Athens",
   "strategy_id": "FOUR_DAILY_V2",
-  "program_label": "CURRENT_NINE_DAILY",
+  "program_label": "CURRENT_TEN_DAILY",
   "authoritative_strategy_file": "config/content_strategy.json",
   "effective_date": "2026-09-24",
   "publishing_paused": false,
-  "rules": "AUTHORITATIVE CURRENT PROGRAM from 24/09/2026: exactly nine logical posts/day across Facebook, Instagram, TikTok and YouTube — 07:00 relationships carousel (7 cards); 09:00 survival rules carousel (9 cards); 11:00 six-sign zodiac carousel; 13:00 Dog Bartender four-card carousel; 15:00 five-card love/soul story; 17:00 fact-checked strange real phenomenon narrated video; 18:30 two-day trip in Greece narrated video; 20:00 four-card Myth or Truth; 23:00 international/foreign legend narrated video. Old 18:00 travel/phenomenon drafts are retired and never revived. All photographic/card content must use scene-relevant photographic or photorealistic visuals with readable Greek text. TikTok photo carousels use silent 1080x1080 JPEG/WebP and one platform-added music layer; no MP4 fallback for Dog Bartender. Narrated 17:00/18:30/23:00 videos are vertical 9:16 1080x1920, strictly >80s, agreed Greek male voice Νέστορας only, synchronized burned-in Greek subtitles, no background music/avatar, no filler, no long dead air. FINAL RENDER QA is mandatory: release only after PASSED_FINAL_REVIEW for visuals, voice, subtitles/sync, duration, audio, CTA, sources/licenses, platform format and duplicate checks. Any uncertainty blocks publication. No backdating/catch-up, no duplicate retries, no purchases/topups/upgrades/paid tests.",
+  "rules": "AUTHORITATIVE CURRENT PROGRAM from 24/09/2026: ten logical posts/day across Facebook, Instagram, TikTok and YouTube — 07:00 relationships carousel; 09:00 survival rules; 11:00 six-sign zodiac; 13:00 Dog Bartender; 15:00 emotional story; 17:00 fact-checked strange real phenomenon; 18:30 two-day trip in Greece; 20:00 Myth or Truth; 21:30 documented experiments video; 23:00 international/foreign legend. The documented experiments series starts with Milgram and must use verified evidence, distinguish facts from disputed interpretations, and never present conspiracy claims as fact. Narrated 17:00/18:30/21:30/23:00 videos require vertical 9:16 1080x1920, >80s, exact agreed Νέστορας voice, synchronized burned-in Greek subtitles, scene-relevant photographic/approved archival visuals, no background music/avatar, and PASSED_FINAL_REVIEW before publication. Old 18:00 slot remains retired.",
   "current_slots_local": [
     "07:00",
     "09:00",
@@ -17,10 +17,11 @@
     "17:00",
     "18:30",
     "20:00",
+    "21:30",
     "23:00"
   ],
-  "daily_logical_target_per_network": 9,
-  "daily_destination_target": 36,
+  "daily_logical_target_per_network": 10,
+  "daily_destination_target": 40,
   "full_reset_hold": {
     "active": false,
     "rule": "Release applies only to valid current-program work. Old cancelled entries remain inactive. A future user stop/change immediately overrides this release. Configuration activation is not proof of ready or queued media."
@@ -94,6 +95,7 @@
     "applies_to": [
       "phenomenon_video",
       "greece_two_day_video",
+      "documented_experiments_video",
       "legend_video"
     ],
     "voice_provider": "Piper local",
