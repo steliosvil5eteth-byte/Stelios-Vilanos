@@ -30,4 +30,4 @@ export async function applyStripeEvent(event){
   }
   return {handled:false,reason:'event ignored'};
 }
-export function billingCatalog(){return Object.values(PLANS).map(x=>({id:x.id,label:x.label,monthlyPriceEur:x.monthlyPriceEur}))}
+export function billingCatalog(){return Object.values(PLANS).map(x=>({id:x.id,label:x.label,monthlyPriceEur:x.monthlyPriceEur,maxWatchlist:x.maxWatchlist,maxHoldings:x.maxHoldings,signalEmail:x.signalEmail,autoWatch:x.autoWatch,autoWatchMinutes:x.autoWatchMinutes,maxAutoWatchSymbols:x.maxAutoWatchSymbols,exports:x.exports}))}
