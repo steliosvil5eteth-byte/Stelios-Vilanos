@@ -21,4 +21,6 @@ gate=combineTechnicalAndEvent(setup,{configured:true,score:70,direction:'LONG'},
 assert.equal(gate.accepted,false);assert.ok(gate.reasons.some(x=>x.startsWith('LOW_EVENT_SCORE')));
 gate=combineTechnicalAndEvent({score:94,direction:'LONG'},{configured:true,score:100,direction:'LONG'},{required:true,minEventScore:80});
 assert.equal(gate.accepted,false);assert.ok(gate.reasons.some(x=>x.startsWith('LOW_TECHNICAL_SCORE')));
+const cryptoNews=parseAlphaNews({feed:[{title:'Bitcoin demand accelerates',url:'https://example.com/c',source:'SourceC',time_published:'20260925T114500',ticker_sentiment:[{ticker:'CRYPTO:BTC',relevance_score:'0.99',ticker_sentiment_score:'0.5',ticker_sentiment_label:'Bullish'}]}]},'BTC/USD',{now,lookbackHours:24});
+assert.equal(cryptoNews.direction,'LONG');assert.equal(cryptoNews.headlineCount,1);
 console.log('event-smoke: OK');
