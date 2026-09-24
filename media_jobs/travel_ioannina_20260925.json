@@ -1,0 +1,51 @@
+{
+  "id": "travel-ioannina-20260925-1830",
+  "approved": true,
+  "publish_to_social": true,
+  "destination": "Ioannina",
+  "voice": "el-GR-NestorasNeural",
+  "background_music": false,
+  "min_duration_seconds": 80,
+  "target_duration_seconds": "80-120",
+  "aspect_ratio": "9:16",
+  "source_facts": [
+    {
+      "name": "Visit Greece - Ioannina",
+      "url": "https://www.visitgreece.gr/mainland/epirus/ioannina/",
+      "notes": "Lake Pamvotida, historic castle, museums, old town atmosphere, lively cafes and cultural life; suitable anchors for a compact two-day city break."
+    },
+    {
+      "name": "Piraeus Bank Group Cultural Foundation - Silversmithing Museum",
+      "url": "https://www.piop.gr/en/diktuo-mouseiwn/mouseio-argyrotexnias/",
+      "notes": "Silversmithing Museum is located in Ioannina Castle, in Its Kale."
+    }
+  ],
+  "narration_segments": [
+    "Αν θέλεις ένα διήμερο στην Ελλάδα που να συνδυάζει λίμνη, κάστρο, ιστορία και ζωντανή πόλη χωρίς να χρειάζεται να αλλάζεις συνεχώς περιοχή, τα Ιωάννινα είναι μια πολύ δυνατή επιλογή.",
+    "Η πρώτη εικόνα που αξίζει να κρατήσεις είναι η λίμνη Παμβώτιδα. Η παραλίμνια βόλτα δίνει αμέσως τον ρυθμό της εκδρομής και λειτουργεί ιδανικά για χαλαρό περπάτημα, καφέ και φωτογραφίες.",
+    "Την πρώτη μέρα μπορείς να κινηθείς γύρω από το ιστορικό κέντρο και το Κάστρο των Ιωαννίνων. Εκεί η πόλη αλλάζει χαρακτήρα, με πέτρινα περάσματα, τείχη και σημεία που σε φέρνουν πιο κοντά στην ιστορία της.",
+    "Μέσα στο κάστρο, η περιοχή του Ιτς Καλέ είναι από τις βασικές στάσεις. Η αρχιτεκτονική, τα μουσεία και τα ανοιχτά σημεία με θέα κάνουν τη διαδρομή αρκετά γεμάτη χωρίς να χρειάζεται βιασύνη.",
+    "Αν σε ενδιαφέρει η τοπική παράδοση, το Μουσείο Αργυροτεχνίας μέσα στο κάστρο δίνει ένα επιπλέον κομμάτι στην εμπειρία και εξηγεί μια τέχνη που συνδέεται στενά με την ιστορία των Ιωαννίνων.",
+    "Για τη δεύτερη μέρα, το νησάκι της λίμνης είναι μια πολύ φυσική συνέχεια. Η σύντομη μετακίνηση με καραβάκι αλλάζει εντελώς οπτική και σου δίνει πιο ήρεμες διαδρομές δίπλα στο νερό.",
+    "Το δυνατό σημείο ενός διημέρου εδώ είναι ότι δεν χρειάζεται να γεμίσεις κάθε ώρα. Μπορείς να εναλλάξεις λίμνη, κάστρο, παλιά γειτονιά και στάσεις για φαγητό ή καφέ χωρίς το πρόγραμμα να γίνει εξαντλητικό.",
+    "Το απόγευμα γύρω από την Παμβώτιδα είναι από τις στιγμές που αξίζει να αφήσεις χωρίς αυστηρό πρόγραμμα. Το φως, το νερό και η θέα προς την πόλη αλλάζουν την ατμόσφαιρα όσο πλησιάζει η δύση.",
+    "Τα Ιωάννινα ταιριάζουν ιδιαίτερα σε ζευγάρια, σε όσους αγαπούν την ιστορία και τη φωτογραφία, αλλά και σε ταξιδιώτες που θέλουν ένα Σαββατοκύριακο με βόλτα, φαγητό και πολιτισμό στον ίδιο προορισμό.",
+    "Αν σου αρέσουν οι φωτογραφίες, θα βρεις διαφορετικά κάδρα σχεδόν παντού: τη λίμνη, τα τείχη, τα τζαμιά και τις αυλές του κάστρου, το νησάκι και τις αντανακλάσεις στο νερό.",
+    "Ένα απλό πλάνο αρκεί: πρώτη μέρα παραλίμνια βόλτα και κάστρο, δεύτερη μέρα νησάκι, περισσότερος χρόνος στο ιστορικό κέντρο και χαλαρό κλείσιμο ξανά δίπλα στη λίμνη.",
+    "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+  ],
+  "images": [
+    {"filename":"Lake Pamvotida, Ioannina Greece.jpg","author":"Chris.rof","license":"CC BY-SA 4.0","source_url":"https://commons.wikimedia.org/wiki/File:Lake_Pamvotida,_Ioannina_Greece.jpg","scene":"Lake Pamvotida and Ioannina city view"},
+    {"filename":"Pamvotida Lake.jpg","author":"Thodorisv","license":"CC BY-SA 4.0","source_url":"https://commons.wikimedia.org/wiki/File:Pamvotida_Lake.jpg","scene":"Lakeside promenade and water view"},
+    {"filename":"Castle of Ioannina, Greece.jpg","author":"Annatsach","license":"CC BY-SA 4.0","source_url":"https://commons.wikimedia.org/wiki/File:Castle_of_Ioannina,_Greece.jpg","scene":"Ioannina Castle walls and historic fabric"},
+    {"filename":"Ioannina Its kale, Byzantine Museum and Fethiye Mosque.jpg","author":"TasosPapan","license":"CC BY-SA 3.0","source_url":"https://commons.wikimedia.org/wiki/File:Ioannina_Its_kale,_Byzantine_Museum_and_Fethiye_Mosque.jpg","scene":"Its Kale, Byzantine Museum and Fethiye Mosque"},
+    {"filename":"Ioannina-Castle-Sots-22.jpg","author":"Σωτήριος Παν. Γιαννακουλόπουλος","license":"CC BY-SA 4.0","source_url":"https://commons.wikimedia.org/wiki/File:Ioannina-Castle-Sots-22.jpg","scene":"Historic castle architecture and cultural area"},
+    {"filename":"Island in Ioannina lake.jpg","author":"DimitrisP67","license":"CC BY-SA 4.0","source_url":"https://commons.wikimedia.org/wiki/File:Island_in_Ioannina_lake.jpg","scene":"Island in Lake Pamvotida"},
+    {"filename":"Ioannina-Castle-Sots-19.jpg","author":"Σωτήριος Παν. Γιαννακουλόπουλος","license":"CC BY-SA 4.0","source_url":"https://commons.wikimedia.org/wiki/File:Ioannina-Castle-Sots-19.jpg","scene":"Castle detail and Ali Pasha historical area"},
+    {"filename":"Pamvotida Lake (Λίμνη Παμβώτιδα) 01.jpg","author":"Pudelek (Marcin Szala)","license":"CC BY-SA 4.0","source_url":"https://commons.wikimedia.org/wiki/File:Pamvotida_Lake_(Λίμνη_Παμβώτιδα)_01.jpg","scene":"Pamvotida lake atmosphere and shoreline"},
+    {"filename":"Ioannina Castle - Mosque.jpg","author":"CHE","license":"CC BY-SA 4.0","source_url":"https://commons.wikimedia.org/wiki/File:Ioannina_Castle_-_Mosque.jpg","scene":"Mosque inside Ioannina Castle"},
+    {"filename":"Pamvotida Lake (Λίμνη Παμβώτιδα) 02.JPG","author":"Pudelek (Marcin Szala)","license":"CC BY-SA 4.0","source_url":"https://commons.wikimedia.org/wiki/File:Pamvotida_Lake_(Λίμνη_Παμβώτιδα)_02.JPG","scene":"Lake view for photography and evening atmosphere"},
+    {"filename":"Pamvotis lake in Ioannina city, Greece - panoramio.jpg","author":"G Da","license":"CC BY-SA 3.0","source_url":"https://commons.wikimedia.org/wiki/File:Pamvotis_lake_in_Ioannina_city,_Greece_-_panoramio.jpg","scene":"Ioannina city and lake perspective"},
+    {"filename":"IOANNINA LAKE, GREECE.jpg","author":"Edousia","license":"CC BY-SA 4.0","source_url":"https://commons.wikimedia.org/wiki/File:IOANNINA_LAKE,_GREECE.jpg","scene":"Closing scenic view of Ioannina lake"}
+  ]
+}
