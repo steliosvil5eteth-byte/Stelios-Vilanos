@@ -40,17 +40,17 @@ function providerOrder(){
   const preferred=[];if(process.env.TWELVE_DATA_API_KEY)preferred.push('twelvedata');if(process.env.ALPHAVANTAGE_API_KEY)preferred.push('alphavantage');return preferred.length?preferred:['alphavantage','twelvedata'];
 }
 export function marketDataConfig(){return {mode:String(process.env.MARKET_DATA_PROVIDER||'auto').toLowerCase(),failover:String(process.env.MARKET_DATA_FAILOVER||'true').toLowerCase()!=='false',alphaConfigured:Boolean(process.env.ALPHAVANTAGE_API_KEY),twelveConfigured:Boolean(process.env.TWELVE_DATA_API_KEY),order:providerOrder()}}
-export function signalMarketConfig(){return {mode:'intraday-first',interval:signalInterval(),outputsize:Math.max(100,Math.min(5000,Number(process.env.SIGNAL_INTRADAY_OUTPUTSIZE)||300)),requireIntraday:String(process.env.SIGNAL_REQUIRE_INTRADAY||'true').toLowerCase()!=='false',twelveConfigured:Boolean(process.env.TWELVE_DATA_API_KEY)}}
+export function signalMarketConfig(){return {mode:'intraday-first',interval:signalInterval(),cacheSeconds:Math.max(0,Math.min(300,Number(process.env.SIGNAL_MARKET_CACHE_SECONDS)||120)),outputsize:Math.max(100,Math.min(5000,Number(process.env.SIGNAL_INTRADAY_OUTPUTSIZE)||300)),requireIntraday:String(process.env.SIGNAL_REQUIRE_INTRADAY||'true').toLowerCase()!=='false',twelveConfigured:Boolean(process.env.TWELVE_DATA_API_KEY)}}
 export async function fetchMarketDaily(symbol,opts={}){
   const errors=[];for(const provider of providerOrder())try{return provider==='twelvedata'?await fetchTwelveDaily(symbol,opts):await fetchAlphaDaily(symbol,opts)}catch(e){errors.push(`${provider}:${e.message||e}`)}
   throw new Error(`All market-data providers failed: ${errors.join(' | ')}`);
 }
 export async function fetchMarketMany(symbols,opts={}){const out=[];for(const symbol of symbols){try{out.push(await fetchMarketDaily(symbol,opts))}catch(e){out.push({symbol,error:String(e.message||e)})}}return out}
 export async function fetchSignalMarket(symbol,opts={}){
-  const cfg=signalMarketConfig(),errors=[];
-  if(process.env.TWELVE_DATA_API_KEY)try{return await fetchTwelveIntraday(symbol,opts)}catch(e){errors.push(`twelvedata-intraday:${e.message||e}`)}
+  const cfg=signalMarketConfig(),ttlSeconds=Math.max(0,Math.min(300,Number(process.env.SIGNAL_MARKET_CACHE_SECONDS)||120)),cacheKey=String(symbol).toUpperCase()+':'+cfg.interval,cached=signalMarketCache.get(cacheKey);if(ttlSeconds>0&&cached&&Date.now()-cached.at<ttlSeconds*1000)return {...cached.value,cacheHit:true};const errors=[];
+  if(process.env.TWELVE_DATA_API_KEY)try{const value={...(await fetchTwelveIntraday(symbol,opts)),cacheHit:false};if(ttlSeconds>0)signalMarketCache.set(cacheKey,{at:Date.now(),value});return value}catch(e){errors.push(`twelvedata-intraday:${e.message||e}`)}
   if(cfg.requireIntraday)throw new Error(`Intraday signal data unavailable: ${errors.join(' | ')||'TWELVE_DATA_API_KEY not configured'}`);
-  try{return await fetchMarketDaily(symbol,opts)}catch(e){errors.push(`daily-fallback:${e.message||e}`);throw new Error(`Signal market data failed: ${errors.join(' | ')}`)}
+  try{const value={...(await fetchMarketDaily(symbol,opts)),cacheHit:false};if(ttlSeconds>0)signalMarketCache.set(cacheKey,{at:Date.now(),value});return value}catch(e){errors.push(`daily-fallback:${e.message||e}`);throw new Error(`Signal market data failed: ${errors.join(' | ')}`)}
 }
 export async function fetchSignalMarketMany(symbols,opts={}){const out=[];for(const symbol of symbols){try{out.push(await fetchSignalMarket(symbol,opts))}catch(e){out.push({symbol,error:String(e.message||e)})}}return out}
 export const fetchAlphaMany=fetchMarketMany;
