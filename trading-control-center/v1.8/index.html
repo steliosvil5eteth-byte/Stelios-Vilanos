@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#07111f">
 <link rel="manifest" href="./manifest.json">
 <link rel="icon" href="./icon.svg" type="image/svg+xml">
-<title>Trading Control Center — v1.8</title>
+<title>Trading Signal Center — Signal First</title>
 <style>
 :root{--bg:#07111f;--card:#0d1b2a;--line:#203a54;--text:#edf6ff;--muted:#9fb3c8;--accent:#4aa3ff;--good:#2ecc71;--bad:#ff6b6b;--warn:#f6c85f}
 *{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#07111f,#09192a 45%,#07111f);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
@@ -27,7 +27,7 @@ input,select,button{font:inherit}input,select{width:100%;padding:11px;border-rad
 <body>
 <div class="wrap">
   <div class="top">
-    <div><h1>Trading Control Center</h1><div class="muted">v1.8 • Research + Paper Trading • Live execution OFF</div></div>
+    <div><h1>Trading Signal Center</h1><div class="muted">Signal-first • Score ≥95 • Manual execution only • Live execution OFF</div></div>
     <div class="actions"><span id="sessionBadge" class="badge">Offline</span><button id="logoutBtn" class="btn secondary hidden">Logout</button></div>
   </div>
 
@@ -59,27 +59,27 @@ input,select,button{font:inherit}input,select{width:100%;padding:11px;border-rad
 
     <div class="grid two">
       <section class="card">
-        <div class="split"><h2>Market Research Scanner</h2><span class="badge">Research only</span></div>
+        <div class="split"><h2>Market Signal Scanner</h2><span class="badge">USER DECIDES</span></div>
         <div class="field"><label>Watchlist</label><input id="symbols" value="AAPL,MSFT"></div>
         <div class="grid two">
-          <div class="field"><label>Min score</label><input id="minScore" type="number" value="68"></div>
-          <div class="field"><label>Min Risk/Reward</label><input id="minRR" type="number" step=".1" value="2"></div>
+          <div class="field"><label>Min score</label><input id="minScore" type="number" min="95" max="100" value="95"></div>
+          <div class="field"><label>Min Risk/Reward</label><input id="minRR" type="number" step=".1" min="1" value="1"></div>
           <div class="field"><label>Min bars</label><input id="minBars" type="number" value="250"></div>
           <div class="field"><label>Capital €</label><input id="capital" type="number" value="10000"></div>
         </div>
-        <div class="actions"><button id="saveState" class="btn secondary">SAVE RULES</button><button id="scanBtn" class="btn primary">SCAN MARKET</button></div>
+        <div class="status" style="margin-bottom:10px">Hard rules: score ≥95/100 • stop 5% ανά συναλλαγή • target 5–10% • ο χρήστης αποφασίζει αν θα εκτελέσει.</div><div class="actions"><button id="saveState" class="btn secondary">SAVE RULES</button><button id="scanBtn" class="btn primary">SCAN MARKET</button></div>
         <div id="scanStatus" class="status" style="margin-top:10px">Δεν έχει γίνει scan.</div>
         <div id="scanResults" class="list" style="margin-top:10px"></div>
       </section>
 
       <section class="card">
-        <div class="split"><h2>Paper Execution</h2><span class="badge">Simulated broker</span></div>
+        <div class="split"><h2>Signal Details</h2><span class="badge">Manual execution only</span></div>
         <div id="selectedBox" class="status">Επίλεξε accepted signal από το scanner.</div>
-        <div class="field" style="margin-top:10px"><label>Quantity</label><input id="qty" type="number" min="1" value="1"></div>
-        <div class="actions"><button id="paperBtn" class="btn primary" disabled>SUBMIT PAPER ORDER</button></div>
-        <div id="orderStatus" class="status" style="margin-top:10px">Verified email + current consent απαιτούνται.</div>
+        <div class="field" style="margin-top:10px"><label>Decision</label><div class="status">Το πρόγραμμα δεν στέλνει BUY/SELL. Ο χρήστης εκτελεί μόνος του στον broker/exchange του.</div><input id="qty" type="hidden" value="1"></div>
+        <div class="actions"><button id="paperBtn" class="btn primary" disabled>ACKNOWLEDGE SIGNAL</button></div>
+        <div id="orderStatus" class="status" style="margin-top:10px">Δεν εκτελείται πραγματική συναλλαγή από την εφαρμογή.</div>
         <hr style="border:0;border-top:1px solid var(--line);margin:16px 0">
-        <div class="actions"><button id="verifyBtn" class="btn secondary">SEND EMAIL VERIFICATION</button><button id="consentBtn" class="btn secondary">ACCEPT TERMS + PAPER RISK</button></div>
+        <div class="actions"><button id="verifyBtn" class="btn secondary">SEND EMAIL VERIFICATION</button><button id="consentBtn" class="btn secondary">ACCEPT TERMS + RISK DISCLOSURE</button></div>
         <div class="mini" style="margin-top:8px">Η αποδοχή αφορά την τρέχουσα έκδοση Terms/Risk. Το προϊόν δεν δίνει εγγύηση απόδοσης.</div>
       </section>
     </div>
@@ -107,7 +107,7 @@ input,select,button{font:inherit}input,select{width:100%;padding:11px;border-rad
     </section>
   </main>
 
-  <div class="footer">Paper/backtest αποτελέσματα μπορούν να διαφέρουν ουσιαστικά από πραγματική εκτέλεση λόγω slippage, liquidity, latency, data quality και regime changes. Δεν υπάρχει live-order endpoint σε αυτή την έκδοση.</div>
+  <div class="footer">Τα scores είναι βαθμολογία του μοντέλου, όχι πιθανότητα ή εγγύηση κέρδους. Η πραγματική εκτέλεση μπορεί να διαφέρει λόγω slippage, liquidity, latency, data quality και regime changes. Δεν υπάρχει live-order endpoint.</div>
 </div>
 
 <script>
@@ -123,13 +123,13 @@ async function refreshSession(){const j=await api('/api/auth/me');session.authen
 async function login(){try{await api('/api/auth/login',{method:'POST',body:JSON.stringify({username:$('loginUser').value.trim(),password:$('loginPass').value})});$('authStatus').textContent='Login OK';await refreshSession()}catch(e){$('authStatus').textContent='Login: '+e.message}}
 async function register(){try{const j=await api('/api/auth/register',{method:'POST',body:JSON.stringify({username:$('regUser').value.trim(),email:$('regEmail').value.trim(),password:$('regPass').value})});$('authStatus').textContent='Account created. Verification sent='+!!j.verification?.sent}catch(e){$('authStatus').textContent='Register: '+e.message}}
 async function logout(){try{await api('/api/auth/logout',{method:'POST',body:'{}'})}catch{}session={authenticated:false,account:null,csrfToken:''};renderSession()}
-function settings(){return {capital:Number($('capital').value)||10000,riskPct:.5,dailyLoss:2,maxPositionPct:25,maxExposurePct:100,maxOpen:5,minScore:Number($('minScore').value)||68,minRR:Number($('minRR').value)||2,maxHold:20,wTrend:30,wMomentum:25,wVolume:20,wVolatility:15,wRsi:10,slippageBps:5,commissionBps:2,scanMinBars:Number($('minBars').value)||250,scanMinOosTrades:5,scanMinOosAvgR:.05,scanMinOosPF:1.1}}
+function settings(){return {capital:Number($('capital').value)||10000,riskPct:.5,stopLossPct:5,targetMinPct:5,targetMaxPct:10,monthlyLossPct:10,dailyLoss:0,maxPositionPct:25,maxExposurePct:100,maxOpen:5,minScore:Math.max(95,Number($('minScore').value)||95),minRR:Math.max(1,Number($('minRR').value)||1),maxHold:20,wTrend:30,wMomentum:25,wVolume:20,wVolatility:15,wRsi:10,slippageBps:5,commissionBps:2,scanMinBars:Number($('minBars').value)||250,scanMinOosTrades:5,scanMinOosAvgR:.05,scanMinOosPF:1.1}}
 async function saveRules(){const j=await api('/api/state',{method:'PUT',body:JSON.stringify({state:{settings:settings(),paper:[],scanConfig:{symbols:$('symbols').value}}})});lastStrategyId=j.currentStrategy?.id||'';$('scanStatus').textContent='Rules saved • '+lastStrategyId}
-function renderScan(run){const root=$('scanResults');root.innerHTML='';lastStrategyId=run.strategyId||lastStrategyId;(run.evaluations||[]).forEach(x=>{const d=document.createElement('div');d.className='row';const s=x.setup||{};d.innerHTML='<div class="split"><strong>'+esc(x.symbol)+'</strong><span class="'+(x.accepted?'good':'badc')+'">'+(x.accepted?'ACCEPTED':'REJECTED')+'</span></div><div class="mini">Score '+(s.score?.toFixed?.(1)??'—')+' • RR '+(s.rr?.toFixed?.(2)??'—')+' • bars '+x.bars+'<br>'+esc((x.reasons||[]).join(' | '))+'</div>';if(x.accepted){const b=document.createElement('button');b.className='btn secondary';b.style.marginTop='8px';b.textContent='SELECT';b.onclick=()=>selectSignal(x,run.strategyId);d.appendChild(b)}root.appendChild(d)});if(!run.evaluations?.length)root.innerHTML='<div class="mini">No evaluations.</div>'}
-function selectSignal(x,strategyId){selected={...x.setup,strategyId};$('selectedBox').innerHTML='<strong>'+esc(x.symbol)+'</strong><div class="mini">Entry '+x.setup.entry.toFixed(2)+' • Stop '+x.setup.stop.toFixed(2)+' • Target '+x.setup.target.toFixed(2)+' • RR '+x.setup.rr.toFixed(2)+'</div>';$('paperBtn').disabled=false}
+function renderScan(run){const root=$('scanResults');root.innerHTML='';lastStrategyId=run.strategyId||lastStrategyId;(run.evaluations||[]).forEach(x=>{const d=document.createElement('div');d.className='row';const s=x.setup||{};const dir=s.direction||'—';d.innerHTML='<div class="split"><strong>'+esc(x.symbol)+' • '+esc(dir)+'</strong><span class="'+(x.accepted?'good':'badc')+'">'+(x.accepted?'95+ SIGNAL':'NO TRADE')+'</span></div><div class="mini">Score '+(s.score?.toFixed?.(1)??'—')+' • Entry '+(s.entry?.toFixed?.(2)??'—')+' • Stop '+(s.stop?.toFixed?.(2)??'—')+' ('+(s.stopLossPct?.toFixed?.(1)??'5.0')+'%) • Target '+(s.target?.toFixed?.(2)??'—')+' ('+(s.targetPct?.toFixed?.(1)??'—')+'%) • RR '+(s.rr?.toFixed?.(2)??'—')+'<br>'+esc((s.rationale||[]).join(' • '))+(x.reasons?.length?'<br>'+esc(x.reasons.join(' | ')):'')+'</div>';if(x.accepted){const b=document.createElement('button');b.className='btn secondary';b.style.marginTop='8px';b.textContent='VIEW SIGNAL';b.onclick=()=>selectSignal(x,run.strategyId);d.appendChild(b)}root.appendChild(d)});if(!run.evaluations?.length)root.innerHTML='<div class="mini">No evaluations.</div>'}
+function selectSignal(x,strategyId){selected={...x.setup,strategyId};$('selectedBox').innerHTML='<strong>'+esc(x.symbol)+' • '+esc(x.setup.direction)+'</strong><div class="mini">Model score '+x.setup.score.toFixed(1)+'/100 • Entry '+x.setup.entry.toFixed(2)+' • Stop '+x.setup.stop.toFixed(2)+' (5%) • Target '+x.setup.target.toFixed(2)+' ('+x.setup.targetPct.toFixed(1)+'%) • RR '+x.setup.rr.toFixed(2)+'<br>'+esc((x.setup.rationale||[]).join(' • '))+'</div>';$('paperBtn').disabled=false}
 async function scan(){try{await saveRules();$('scanStatus').textContent='Scanning…';const j=await api('/api/scans',{method:'POST',body:JSON.stringify({symbols:$('symbols').value.split(',').map(x=>x.trim()).filter(Boolean)})});renderScan(j.run);$('scanStatus').textContent='Scan '+j.run.id+' • accepted '+j.run.accepted+' / rejected '+j.run.rejected}catch(e){$('scanStatus').textContent='Scan error: '+e.message}}
 function idem(){return 'web-'+Date.now()+'-'+Math.random().toString(36).slice(2)}
-async function submitPaper(){if(!selected)return;try{const order={symbol:selected.ticker,qty:Number($('qty').value)||1,entry:selected.entry,stop:selected.stop,target:selected.target,strategyId:selected.strategyId||lastStrategyId};const j=await api('/api/broker/order',{method:'POST',headers:{'Idempotency-Key':idem()},body:JSON.stringify({order})});$('orderStatus').textContent='ACCEPTED '+j.ticket.id+' • '+j.ticket.symbol+' x '+j.ticket.qty;await refreshPortfolio()}catch(e){$('orderStatus').textContent='Order blocked: '+e.message}}
+async function submitPaper(){if(!selected)return;$('orderStatus').textContent='Signal acknowledged. Καμία εντολή δεν στάλθηκε. Η απόφαση και η εκτέλεση παραμένουν αποκλειστικά στον χρήστη.'}
 async function refreshConsent(){try{const j=await api('/api/consent');$('mConsent').textContent=j.consent.current?'CURRENT':'REQUIRED'}catch{$('mConsent').textContent='—'}}
 async function acceptConsent(){try{await api('/api/consent',{method:'POST',body:JSON.stringify({acceptTerms:true,acceptRisk:true})});await refreshConsent();$('orderStatus').textContent='Consent saved.'}catch(e){$('orderStatus').textContent=e.message}}
 async function verifyEmail(){try{const j=await api('/api/auth/email/request',{method:'POST',body:'{}'});$('orderStatus').textContent=j.alreadyVerified?'Email already verified.':('Verification sent='+j.sent)}catch(e){$('orderStatus').textContent=e.message}}
