@@ -267,38 +267,38 @@
       "files": [
         {
           "name": "current-20260925-1100-zodiac-group-b-first-detail-01.jpg",
-          "bytes": 582045,
-          "sha256": "555eb7050e428bddb6e9a94b9b2dfc8c62e6db0a5f67867f506735dbb3bd4d5e"
+          "bytes": 700819,
+          "sha256": "b438d4ed276430b9e63da00b1e79821521034b07091c54aa1e549c65e3f9db58"
         },
         {
           "name": "current-20260925-1100-zodiac-group-b-first-detail-02.jpg",
-          "bytes": 662153,
-          "sha256": "b82a1f8cc4493c102d58a052ca3656e6211d57c7594332c89bc493b457f386ff"
+          "bytes": 801227,
+          "sha256": "95c23f3fd24e7797670f29f40f8c62d79ce0c504096d2e5a0b3fd9167b9842d6"
         },
         {
           "name": "current-20260925-1100-zodiac-group-b-first-detail-03.jpg",
-          "bytes": 656627,
-          "sha256": "649c0c63cb5da58e88189996eb186500d0abdf046e996ae414cffbd157832fc8"
+          "bytes": 795033,
+          "sha256": "b441e1ab8382cf30ccd3b20dfbc1f93e65a37e70461b532372f037242f6318b5"
         },
         {
           "name": "current-20260925-1100-zodiac-group-b-first-detail-04.jpg",
-          "bytes": 612251,
-          "sha256": "5b841d10ddda69feef920b528ea1caac0d58caaec205c0c6f97231d0fafc8b5d"
+          "bytes": 742535,
+          "sha256": "ce561f8c7839c91f0d814c6e74c1eff3a015acb4a9a6466ca15a8f50ad393482"
         },
         {
           "name": "current-20260925-1100-zodiac-group-b-first-detail-05.jpg",
-          "bytes": 574449,
-          "sha256": "45b486016bbfaf224d92e7afd969fe74b1a7e5156e9a4a804c1028dcbca2a05b"
+          "bytes": 698012,
+          "sha256": "7e24162bc1cf496a8f6d3c65b33e699f6bef2b2034956c151bb6af1794da9019"
         },
         {
           "name": "current-20260925-1100-zodiac-group-b-first-detail-06.jpg",
-          "bytes": 550899,
-          "sha256": "456bd679b1d1eb6bd52c6c91076813871a2208ba17d1f76b3c556c7b4d31f048"
+          "bytes": 670056,
+          "sha256": "76c3a73b58cacef94f17c496b7a9c239f1eedeaa21193186a751a199d1f913cf"
         },
         {
           "name": "current-20260925-1100-zodiac-group-b-first-detail.mp4",
-          "bytes": 2337545,
-          "sha256": "37033958cb721d8558a52661001f67ecb784bf679c31ab942b58005451c0aa1f"
+          "bytes": 2609462,
+          "sha256": "c7f2d2a4b83f0c353ba65a482b4fd4f818383bad2497934c19812af24c6ac316"
         }
       ]
     },
