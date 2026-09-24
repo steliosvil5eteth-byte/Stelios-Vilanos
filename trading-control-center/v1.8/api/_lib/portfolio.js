@@ -40,8 +40,8 @@ export function portfolioMetrics({settings={},trades=[]}={}){
   const maxExposure=capital*Math.max(0,num(settings.maxExposurePct))/100;
   const dailyLossLimit=capital*Math.max(0,num(settings.dailyLoss))/100;
   const maxPosition=capital*Math.max(0,num(settings.maxPositionPct))/100;
-  const today=new Date().toISOString().slice(0,10);const dailyRealized=closed.filter(t=>String(t.closedAt).slice(0,10)===today).reduce((a,t)=>a+pnl(t),0);
-  return {asOf:new Date().toISOString(),capital,equity,realizedPnl:realized,unrealizedPnl:unrl,openPositions:open.length,exposure,exposurePct:capital?exposure/capital*100:0,maxExposure,exposureUtilizationPct:maxExposure?exposure/maxExposure*100:0,stopLossStress:stopStress,stopLossStressPct:capital?stopStress/capital*100:0,maxPosition,dailyRealized,dailyLossLimit,maxDrawdown:maxDD,maxDrawdownPct:capital?maxDD/capital*100:0,equityCurve:curve.slice(-500),bySymbol,byStrategy};
+  const today=new Date().toISOString().slice(0,10),month=today.slice(0,7);const dailyRealized=closed.filter(t=>String(t.closedAt).slice(0,10)===today).reduce((a,t)=>a+pnl(t),0),monthlyRealized=closed.filter(t=>String(t.closedAt).slice(0,7)===month).reduce((a,t)=>a+pnl(t),0),monthlyLossLimit=capital*Math.max(0,num(settings.monthlyLossPct,10))/100,monthlyLossHit=monthlyLossLimit>0&&monthlyRealized<=-monthlyLossLimit;
+  return {asOf:new Date().toISOString(),capital,equity,realizedPnl:realized,unrealizedPnl:unrl,openPositions:open.length,exposure,exposurePct:capital?exposure/capital*100:0,maxExposure,exposureUtilizationPct:maxExposure?exposure/maxExposure*100:0,stopLossStress:stopStress,stopLossStressPct:capital?stopStress/capital*100:0,maxPosition,dailyRealized,dailyLossLimit,monthlyRealized,monthlyLossLimit,monthlyLossHit,maxDrawdown:maxDD,maxDrawdownPct:capital?maxDD/capital*100:0,equityCurve:curve.slice(-500),bySymbol,byStrategy};
 }
 
 function valueOnOrAfter(series,date){const row=series.find(x=>x.date>=date)||series.at(-1);return row?.close||null}
