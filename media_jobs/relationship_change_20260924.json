@@ -1,5 +1,5 @@
 {
-  "approved": true,
+  "approved": false,
   "paid_generation_allowed": false,
   "strategy_id": "CURRENT_EIGHT_DAILY",
   "local_date": "2026-09-24",
@@ -54,7 +54,14 @@
           "source_credit": "Keira Burton / Pexels",
           "license": "Pexels License"
         }
-      ]
+      ],
+      "approved": false,
+      "publish_to_social": false,
+      "reset_hold": true
     }
-  ]
+  ],
+  "reset_hold": true,
+  "publish_to_social": false,
+  "production_status": "RESET_HOLD",
+  "reset_note": "Superseded by SOCIAL_RESET_20260924. Historical/reference only. Do not generate, schedule, publish, retry, restore, or catch up."
 }
