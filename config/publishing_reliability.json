@@ -1,14 +1,21 @@
 {
-  "version": 9,
-  "updated_on": "2026-09-22",
+  "version": 10,
+  "updated_on": "2026-09-24",
   "timezone": "Europe/Athens",
   "strategy_id": "FOUR_DAILY_V2",
   "program_label": "CURRENT_SIX_DAILY",
   "authoritative_strategy_file": "config/content_strategy.json",
   "effective_date": "2026-09-23",
   "publishing_paused": false,
-  "rules": "AUTHORITATIVE CURRENT PROGRAM from 23/09/2026: exactly six logical posts/day across Facebook, Instagram, TikTok and YouTube: 11:00 six-sign zodiac A/B; 13:00 current Dog Bartender four-card humor carousel; 15:00 coherent five-card love/soul story; 17:00 fact-checked strange real phenomenon; 20:00 four-card Myth or Truth ordered question-participation-explanation-answer; 23:00 different international/foreign legend. Greek myths/legends remain postponed. TikTok native photo carousels at 11/13/15/20 use silent JPEG/WebP only and autoAddMusic=true as the sole music source; 13:00 Dog Bartender requires exactly four 1080x1080 JPEG/WebP images and no MP4 fallback without explicit authorization. Other slideshow/video versions with embedded approved music must not get a second audio layer. 17/23 use vertical 9:16 local Piper el_GR-rapunzelina-medium at natural speed, burned-in synchronized Greek subtitles, no background music/avatar/presenter, TikTok auto music false/omitted, max five hashtags, immediate hook with no greeting. Narrated features must be strictly longer than 80 seconds with no maximum duration; no filler, repetition, artificial slow speech, silence padding or long static holds; reject unintended dead-air around two seconds or longer and remove useless trailing silence. NO-FALSE-ROLLBACK: preserve verified future active posts and Published successes; deactivate only on concrete live evidence of missing/corrupt/wrong media, active duplicate, forbidden content, explicit stop/change, double-audio risk or current QA failure; repair only affected destinations. Never backdate/catch up or revive legacy drafts. Scheduled/PENDING is not Published. No purchases, topups, upgrades or paid tests.",
-  "current_slots_local": ["11:00", "13:00", "15:00", "17:00", "20:00", "23:00"],
+  "rules": "AUTHORITATIVE CURRENT PROGRAM from 23/09/2026: exactly six logical posts/day across Facebook, Instagram, TikTok and YouTube: 11:00 six-sign zodiac A/B; 13:00 current Dog Bartender four-card humor carousel; 15:00 coherent five-card love/soul story; 17:00 fact-checked strange real phenomenon; 20:00 four-card Myth or Truth ordered question-participation-explanation-answer; 23:00 different international/foreign legend. Greek myths/legends remain postponed. TikTok native photo carousels at 11/13/15/20 use silent JPEG/WebP only and autoAddMusic=true as the sole music source; 13:00 Dog Bartender requires exactly four 1080x1080 JPEG/WebP images and no MP4 fallback without explicit authorization. Other slideshow/video versions with embedded approved music must not get a second audio layer. 17/23 use vertical 9:16 local Piper el_GR-rapunzelina-medium at natural speed, burned-in synchronized Greek subtitles, no background music/avatar/presenter, TikTok auto music false/omitted, max five hashtags, immediate hook with no greeting. Narrated features must be strictly longer than 80 seconds with no maximum duration; no filler, repetition, artificial slow speech, silence padding or long static holds; reject unintended dead-air around two seconds or longer and remove useless trailing silence. NO-FALSE-ROLLBACK: preserve verified future active posts and Published successes; deactivate only on concrete live evidence of missing/corrupt/wrong media, active duplicate, forbidden content, explicit stop/change, double-audio risk or current QA failure; repair only affected destinations. Never backdate/catch up or revive legacy drafts. Scheduled/PENDING is not Published. No purchases, topups, upgrades or paid tests. FINAL RENDER QA GATE 24/09/2026: no post/video may be scheduled or published until the final artifact itself has been directly inspected and marked PASSED_FINAL_REVIEW. Fail closed on any visual, voice, subtitle, sync, duration, dead-air, CTA, or quality doubt.",
+  "current_slots_local": [
+    "11:00",
+    "13:00",
+    "15:00",
+    "17:00",
+    "20:00",
+    "23:00"
+  ],
   "daily_logical_target_per_network": 6,
   "daily_destination_target": 24,
   "full_reset_hold": {
@@ -67,7 +74,10 @@
   },
   "dog_bartender_tiktok_gate": {
     "cards": 4,
-    "mime_types": ["image/jpeg", "image/webp"],
+    "mime_types": [
+      "image/jpeg",
+      "image/webp"
+    ],
     "width": 1080,
     "height": 1080,
     "silent_assets": true,
@@ -78,12 +88,15 @@
   },
   "narrated_feature_duration_gate": {
     "active": true,
-    "applies_to": ["phenomenon_video", "legend_video"],
+    "applies_to": [
+      "phenomenon_video",
+      "legend_video"
+    ],
     "voice_provider": "Piper local",
     "voice": "el_GR-rapunzelina-medium",
     "strictly_longer_than_seconds": 80,
     "maximum_duration_seconds": null,
-    "dead_air_reject_threshold_seconds": 2.0,
+    "dead_air_reject_threshold_seconds": 2,
     "target_max_trailing_silence_seconds": 0.5,
     "padding_for_duration_forbidden": true,
     "background_music": false,
@@ -107,5 +120,20 @@
   },
   "history_policy": {
     "rule": "Git history retains superseded configuration for audit only. Published content is not modified or republished."
+  },
+  "final_render_qa_gate": {
+    "active": true,
+    "applies_to_all_posts_and_videos": true,
+    "require_final_render_visual_inspection": true,
+    "require_scene_by_scene_visual_relevance": true,
+    "require_correct_photorealistic_or_approved_archival_visuals": true,
+    "require_correct_greek_male_voice_when_narrated": true,
+    "require_burned_in_subtitles_when_required": true,
+    "require_subtitle_sync_check": true,
+    "require_duration_and_dead_air_check": true,
+    "require_cta_check": true,
+    "publication_allowed_only_when_status": "PASSED_FINAL_REVIEW",
+    "fail_closed": true,
+    "rule": "Never create or update a Metricool/social publishing entry for an unreviewed final artifact. If the final file is ugly, generic, mismatched, technically wrong, uncertain, or not directly inspected, keep it preview-only and blocked."
   }
 }
