@@ -1,0 +1,52 @@
+name: 25 Sep 07 15 current card repair
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/cards-20260925-current-repair.yml'
+      - 'tools/render_cards_20260925_current_repair.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: cards-20260925-current-repair
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install deterministic media tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg python3-pil fonts-dejavu-core
+      - name: Render 07 and 15 repairs
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/finished
+        run: |
+          set -euo pipefail
+          /usr/bin/python3 tools/render_cards_20260925_current_repair.py             --source-manifest media_jobs/four_daily_v2_current.json             --output "$OUTPUT_DIR"
+      - name: Save repaired card assets
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/finished
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/media-output-repo"
+          git fetch origin media-output --depth=1
+          git worktree add --detach "$OUT" FETCH_HEAD
+          DEST="$OUT/jobs/current-card-repair-20260925"
+          rm -rf "$DEST"
+          mkdir -p "$DEST"
+          cp -a "$OUTPUT_DIR"/. "$DEST"/
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/current-card-repair-20260925
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Render repaired 07:00 and 15:00 card packs'
+            git -C "$OUT" push origin HEAD:media-output
+          fi
