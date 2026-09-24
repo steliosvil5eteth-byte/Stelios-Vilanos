@@ -84,3 +84,18 @@ export async function fetchEventSignal(symbol,{now=new Date()}={}){
   const freshness=[alpha?.freshnessHours,sec?.freshnessHours].filter(Number.isFinite);
   return {symbol,configured:cfg.alphaNewsConfigured||cfg.secConfigured,required:cfg.required,minEventScore:cfg.minEventScore,status:errors.length&&!(alpha||sec)?'ERROR':'OK',direction,score,freshnessHours:freshness.length?Math.min(...freshness):null,headlineCount:alpha?.headlineCount||0,weightedSentiment:alpha?.weightedSentiment||0,articles:alpha?.articles||[],sec:sec||null,errors};
 }
+
+
+export function combineTechnicalAndEvent(setup,event,{required=true,minEventScore=80}={}){
+  const reasons=[];if(!setup)return {accepted:false,signalScore:0,reasons:['NO_TECHNICAL_SETUP']};
+  const technicalScore=num(setup.score),configured=Boolean(event?.configured),eventScore=num(event?.score),eventDirection=String(event?.direction||'NEUTRAL');
+  const signalScore=configured?Math.min(100,technicalScore*.80+eventScore*.20):technicalScore;
+  if(technicalScore<95)reasons.push(`LOW_TECHNICAL_SCORE:${technicalScore.toFixed(1)}<95`);
+  if(required){
+    if(!configured)reasons.push('EVENT_SOURCE_UNAVAILABLE');
+    if(configured&&eventDirection!==String(setup.direction||''))reasons.push(`EVENT_DIRECTION_MISMATCH:${eventDirection}!=${setup.direction}`);
+    if(configured&&eventScore<minEventScore)reasons.push(`LOW_EVENT_SCORE:${eventScore.toFixed(1)}<${minEventScore}`);
+    if(configured&&signalScore<95)reasons.push(`LOW_COMBINED_SIGNAL_SCORE:${signalScore.toFixed(1)}<95`);
+  }
+  return {accepted:reasons.length===0,signalScore,reasons,eventScore,eventDirection};
+}
