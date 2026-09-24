@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 from __future__ import annotations
-import argparse, html, json, math, os, re, subprocess, time
+import argparse, html, json, math, os, re, subprocess, time, urllib.parse
 from pathlib import Path
 import requests
 from PIL import Image
@@ -11,6 +11,7 @@ CTA='Αν σας άρεσε, ακολουθήστε για περισσότερ�
 UA='SteliosMediaQA/2.0 zero-cost rights-checked feature renderer'
 BAD_TITLE=('illustration','drawing','map','logo','coat of arms','diagram','icon','poster','stamp')
 ALLOWED_LICENSE=('cc by','cc0','public domain')
+SAFE_EXPLICIT_LICENSE={'CC BY','CC BY-SA','CC0','Public Domain'}
 
 def run(args, **kwargs):
     p=subprocess.run(args,text=True,capture_output=True,**kwargs)
@@ -70,7 +71,58 @@ def commons_search(queries, outdir:Path, target:int):
         raise RuntimeError(f'Only {len(records)} rights-cleared photographic images found; need {target}')
     return records
 
-def synthesize(script:str, outdir:Path):
+
+def explicit_visuals(items, outdir:Path, target:int):
+    if len(items) != target:
+        raise RuntimeError(f'Pinned source-pack visual count mismatch: {len(items)} != {target}')
+    sess=requests.Session(); sess.headers.update({'User-Agent':UA})
+    records=[]
+    for i,item in enumerate(items,1):
+        media=item.get('direct_media_url','').strip()
+        page=item.get('source_page_url','').strip()
+        lic=item.get('license','').strip()
+        attribution=item.get('attribution','').strip()
+        license_url=item.get('license_url','').strip()
+        if lic not in SAFE_EXPLICIT_LICENSE:
+            raise RuntimeError(f'Unapproved pinned license for visual {i}: {lic}')
+        if not attribution or not license_url:
+            raise RuntimeError(f'Pinned visual {i} missing attribution/license URL')
+        mu=urllib.parse.urlsplit(media); pu=urllib.parse.urlsplit(page)
+        if mu.scheme!='https' or mu.hostname not in {'upload.wikimedia.org','commons.wikimedia.org'}:
+            raise RuntimeError(f'Pinned visual {i} has unapproved media host')
+        if pu.scheme!='https' or pu.hostname!='commons.wikimedia.org':
+            raise RuntimeError(f'Pinned visual {i} has unapproved source page')
+        dest=outdir/f'{i:02d}.jpg'
+        ok=False; last=None
+        for attempt in range(4):
+            try:
+                rr=sess.get(media,timeout=90,allow_redirects=True)
+                if rr.status_code==429:
+                    time.sleep(4*(attempt+1)); continue
+                rr.raise_for_status(); dest.write_bytes(rr.content)
+                with Image.open(dest) as im:
+                    if min(im.size)<600: raise ValueError('pinned visual too small')
+                    im.convert('RGB').save(dest,quality=94)
+                ok=True; break
+            except Exception as exc:
+                last=exc
+                time.sleep(2*(attempt+1))
+        if not ok:
+            dest.unlink(missing_ok=True)
+            raise RuntimeError(f'Pinned visual {i} download failed: {last}')
+        records.append({
+            'source':item.get('source',''),
+            'visual_kind':item.get('visual_kind','photograph'),
+            'attribution':attribution,
+            'license':lic,
+            'license_url':license_url,
+            'source_page':page,
+            'download_url':media,
+            'source_pack_pinned':True
+        })
+    return records
+
+def synthesize(script:str, outdir:Path, min_duration=None, max_duration=None):
     cfg=speechsdk.SpeechConfig(subscription=os.environ['AZURE_SPEECH_KEY'],region=os.environ['AZURE_SPEECH_REGION'])
     cfg.speech_synthesis_voice_name=VOICE
     cfg.set_speech_synthesis_output_format(speechsdk.SpeechSynthesisOutputFormat.Riff24Khz16BitMonoPcm)
@@ -81,7 +133,12 @@ def synthesize(script:str, outdir:Path):
     if res.reason != speechsdk.ResultReason.SynthesizingAudioCompleted:
         d=speechsdk.SpeechSynthesisCancellationDetails(res); raise RuntimeError(f'Azure F0 Nestoras failed: {d.reason} {d.error_details}')
     dur=probe_duration(wav)
-    if dur<=80: raise RuntimeError(f'duration gate failed: {dur:.3f}s <= 80s')
+    if min_duration is None:
+        if dur<=80: raise RuntimeError(f'duration gate failed: {dur:.3f}s <= 80s')
+    elif dur < float(min_duration):
+        raise RuntimeError(f'duration gate failed: {dur:.3f}s < {float(min_duration):.3f}s')
+    if max_duration is not None and dur > float(max_duration):
+        raise RuntimeError(f'duration gate failed: {dur:.3f}s > {float(max_duration):.3f}s')
     if len(bounds)<30: raise RuntimeError('insufficient word timing data')
     return wav,bounds,dur
 
@@ -130,13 +187,19 @@ def make_video(job, photos:Path, wav:Path, srt:Path, dur:float, out:Path):
 def qa(job, video:Path, dur:float, photo_count:int, cap_count:int):
     meta=json.loads(run(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(video)])); vd=float(meta['format']['duration'])
     vs=[s for s in meta['streams'] if s.get('codec_type')=='video']; au=[s for s in meta['streams'] if s.get('codec_type')=='audio']
-    if vd<=80 or len(vs)!=1 or len(au)!=1 or int(vs[0]['width'])!=1080 or int(vs[0]['height'])!=1920: raise RuntimeError('basic QA failed')
+    min_d=job.get('min_duration_seconds'); max_d=job.get('max_duration_seconds')
+    duration_bad=(vd<=80 if min_d is None else vd<float(min_d)) or (max_d is not None and vd>float(max_d))
+    if duration_bad or len(vs)!=1 or len(au)!=1 or int(vs[0]['width'])!=1080 or int(vs[0]['height'])!=1920: raise RuntimeError('basic QA failed')
     dec=subprocess.run(['ffmpeg','-v','error','-i',str(video),'-f','null','-'],text=True,capture_output=True)
     if dec.returncode: raise RuntimeError('decode QA failed: '+dec.stderr[-1000:])
-    sil=subprocess.run(['ffmpeg','-hide_banner','-i',str(video),'-af','silencedetect=noise=-45dB:d=1.8','-f','null','-'],text=True,capture_output=True).stderr
+    sil=subprocess.run(['ffmpeg','-hide_banner','-i',str(video),'-af','silencedetect=noise=-45dB:d=1.2','-f','null','-'],text=True,capture_output=True).stderr
     gaps=[float(x) for x in re.findall(r'silence_duration: ([0-9.]+)',sil)]
-    if any(x>=1.8 for x in gaps): raise RuntimeError(f'dead-air QA failed: {gaps}')
-    return {'publish_ready':True,'local_date':job['local_date'],'slot':job['slot'],'voice':VOICE,'duration_seconds':round(vd,3),'resolution':'1080x1920','background_music':False,'burned_synced_greek_subtitles':True,'avatar_presenter':False,'spoken_written_cta':job['script'].rstrip().endswith(CTA),'dead_air_ge_1_8s':False,'photo_source_count':photo_count,'rights_verified':True,'caption_count':cap_count,'paid_generation_used':False,'folklore_not_fact':bool(job.get('folklore_not_fact',False))}
+    if any(x>1.2 for x in gaps): raise RuntimeError(f'dead-air QA failed: {gaps}')
+    tail_log=subprocess.run(['ffmpeg','-hide_banner','-i',str(video),'-af','silencedetect=noise=-45dB:d=0.5','-f','null','-'],text=True,capture_output=True).stderr
+    tail=[(float(e),float(d)) for e,d in re.findall(r'silence_end: ([0-9.]+) \\| silence_duration: ([0-9.]+)',tail_log)]
+    trailing=max([d for e,d in tail if e>=vd-0.12] or [0.0])
+    if trailing>0.5: raise RuntimeError(f'trailing-silence QA failed: {trailing:.3f}s')
+    return {'publish_ready':True,'local_date':job['local_date'],'slot':job['slot'],'voice':VOICE,'duration_seconds':round(vd,3),'duration_min_seconds':min_d,'duration_max_seconds':max_d,'resolution':'1080x1920','background_music':False,'burned_synced_greek_subtitles':True,'avatar_presenter':False,'spoken_written_cta':job['script'].rstrip().endswith(CTA),'dead_air_gt_1_2s':False,'trailing_silence_gt_0_5s':False,'visual_source_count':photo_count,'source_pack_pinned':bool(job.get('visuals')),'rights_verified':True,'caption_count':cap_count,'paid_generation_used':False,'folklore_not_fact':bool(job.get('folklore_not_fact',False))}
 
 def main():
     ap=argparse.ArgumentParser(); ap.add_argument('--manifest',required=True); ap.add_argument('--output',required=True); ns=ap.parse_args()
@@ -147,9 +210,13 @@ def main():
         if job.get('voice')!=VOICE or job.get('background_music') is not False: raise RuntimeError('voice/audio policy mismatch')
         if not job['script'].rstrip().endswith(CTA): raise RuntimeError('CTA gate failed')
         root=outroot/job['id']; photos=root/'photos'; photos.mkdir(parents=True,exist_ok=True)
-        records=commons_search(job['commons_queries'],photos,int(job.get('photo_target',10)))
+        target=int(job.get('photo_target',10))
+        if job.get('visuals'):
+            records=explicit_visuals(job['visuals'],photos,target)
+        else:
+            records=commons_search(job['commons_queries'],photos,target)
         (root/'visual-attribution.json').write_text(json.dumps(records,ensure_ascii=False,indent=2),encoding='utf-8')
-        wav,bounds,dur=synthesize(job['script'],root); (root/'speech-meta.json').write_text(json.dumps({'voice':VOICE,'duration_seconds':round(dur,3),'background_music':False,'word_boundaries':len(bounds)},ensure_ascii=False,indent=2),encoding='utf-8')
+        wav,bounds,dur=synthesize(job['script'],root,job.get('min_duration_seconds'),job.get('max_duration_seconds')); (root/'speech-meta.json').write_text(json.dumps({'voice':VOICE,'duration_seconds':round(dur,3),'duration_min_seconds':job.get('min_duration_seconds'),'duration_max_seconds':job.get('max_duration_seconds'),'background_music':False,'word_boundaries':len(bounds)},ensure_ascii=False,indent=2),encoding='utf-8')
         srt=root/'subs.srt'; cap_count=subtitles(bounds,dur,srt); video=root/(job['id']+'.mp4'); make_video(job,photos,wav,srt,dur,video)
         result=qa(job,video,dur,len(records),cap_count); (root/'qa.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8'); summary.append(result)
     (outroot/'qa-summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
