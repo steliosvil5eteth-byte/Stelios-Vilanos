@@ -75,9 +75,9 @@ def commons_redirect(filename):
     return 'https://commons.wikimedia.org/wiki/Special:Redirect/file/'+urllib.parse.quote(filename,safe='()_,.-')+'?width=1600'
 
 PINNED={
-  'ΕΣΥ ΤΙ ΠΙΣΤΕΥΕΙΣ; — 7/7': commons_redirect('Elderly couple (1586495).jpg'),
+  'ΕΣΥ ΤΙ ΠΙΣΤΕΥΕΙΣ; — 7/7': 'https://upload.wikimedia.org/wikipedia/commons/9/92/Elderly_couple_%281586495%29.jpg',
   'ΜΙΚΡΑ ΠΟΥ ΒΟΗΘΟΥΝ — 2/9': commons_redirect('USB power bank.jpg'),
-  'ΑΥΤΟ ΓΙΝΕΤΑΙ ΣΠΙΤΙ — 5/5': commons_redirect('Elderly couple (1527965).jpg'),
+  'ΑΥΤΟ ΓΙΝΕΤΑΙ ΣΠΙΤΙ — 5/5': 'https://upload.wikimedia.org/wikipedia/commons/3/39/Elderly_couple_%281527965%29.jpg',
   'ΖΥΓΟΣ — 1/6': commons_redirect('Photo of the constellation Libra produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (libra).jpg'),
   'ΣΚΟΡΠΙΟΣ — 2/6': commons_redirect('Photo of the constellation Scorpius produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (scorpius).jpg'),
   'ΤΟΞΟΤΗΣ — 3/6': commons_redirect('Photo of the constellation Sagittarius produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (sagittarius).jpg'),
@@ -85,12 +85,18 @@ PINNED={
   'ΥΔΡΟΧΟΟΣ — 5/6': commons_redirect('Photo of the constellation Aquarius produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (aquarius).jpg'),
   'ΙΧΘΥΕΣ — 6/6': commons_redirect('Photo of the constellation Pisces produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (pisces).jpg')
 }
+QUERY_PINNED={
+  'elderly couple portrait photograph':'https://upload.wikimedia.org/wikipedia/commons/9/92/Elderly_couple_%281586495%29.jpg',
+  'elderly married couple photograph':'https://upload.wikimedia.org/wikipedia/commons/3/39/Elderly_couple_%281527965%29.jpg',
+  'brown long eared bat photograph':'https://upload.wikimedia.org/wikipedia/commons/a/ac/Bat_in_the_Hand_%28251301881%29.jpg'
+}
 
 def pinned_render(slide,index,total,work,require_photo):
     title=slide.get('visible_title') or slide.get('title','')
-    if title in PINNED:
+    query=slide.get('source_query','')
+    if title in PINNED or query in QUERY_PINNED:
         slide=dict(slide)
-        slide['source_url']=PINNED[title]
+        slide['source_url']=PINNED.get(title,QUERY_PINNED.get(query))
     return _original_render(slide,index,total,work,require_photo)
 
 base.render_card=pinned_render
