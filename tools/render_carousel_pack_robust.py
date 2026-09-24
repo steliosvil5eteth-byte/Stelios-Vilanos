@@ -88,13 +88,7 @@ BARTENDER='https://upload.wikimedia.org/wikipedia/commons/b/b0/Bartender_%28Unsp
 PINNED={
   'ΕΣΥ ΤΙ ΠΙΣΤΕΥΕΙΣ; — 7/7': proxy(REL),
   'ΜΙΚΡΑ ΠΟΥ ΒΟΗΘΟΥΝ — 2/9': commons_redirect('USB power bank.jpg'),
-  'ΑΥΤΟ ΓΙΝΕΤΑΙ ΣΠΙΤΙ — 5/5': proxy(ORANGE),
-  'ΖΥΓΟΣ — 1/6': commons_redirect('Photo of the constellation Libra produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (libra).jpg'),
-  'ΣΚΟΡΠΙΟΣ — 2/6': commons_redirect('Photo of the constellation Scorpius produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (scorpius).jpg'),
-  'ΤΟΞΟΤΗΣ — 3/6': commons_redirect('Photo of the constellation Sagittarius produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (sagittarius).jpg'),
-  'ΑΙΓΟΚΕΡΩΣ — 4/6': commons_redirect('Photo of the constellation Capricornus produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (capricornus).jpg'),
-  'ΥΔΡΟΧΟΟΣ — 5/6': commons_redirect('Photo of the constellation Aquarius produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (aquarius).jpg'),
-  'ΙΧΘΥΕΣ — 6/6': commons_redirect('Photo of the constellation Pisces produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (pisces).jpg')
+  'ΑΥΤΟ ΓΙΝΕΤΑΙ ΣΠΙΤΙ — 5/5': proxy(ORANGE)
 }
 QUERY_PINNED={
   'elderly couple portrait photograph':proxy(REL),
