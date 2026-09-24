@@ -5,7 +5,7 @@ function sd(a){if(a.length<2)return 0;const m=avg(a);return Math.sqrt(avg(a.map(
 function sma(a,p,i){if(i<p-1)return null;return avg(a.slice(i-p+1,i+1))}
 function atr(series,p,i){if(i<p)return null;const tr=[];for(let j=i-p+1;j<=i;j++){const prev=series[j-1].close;tr.push(Math.max(series[j].high-series[j].low,Math.abs(series[j].high-prev),Math.abs(series[j].low-prev)))}return avg(tr)}
 function rsi(series,p,i){if(i<p)return null;let g=0,l=0;for(let j=i-p+1;j<=i;j++){const d=series[j].close-series[j-1].close;if(d>=0)g+=d;else l-=d}if(l===0)return 100;const rs=(g/p)/(l/p);return 100-100/(1+rs)}
-export function indicators(series,i,s={}){if(i<55)return null;const closes=series.map(x=>x.close),vols=series.map(x=>x.volume);const s20=sma(closes,20,i),s50=sma(closes,50,i),a14=atr(series,14,i),r14=rsi(series,14,i),mom=(series[i].close/series[i-20].close-1)*100,vr=series[i].volume/(avg(vols.slice(i-20,i))||1);const rets=[];for(let j=i-19;j<=i;j++)rets.push((series[j].close/series[j-1].close-1)*100);const mins=Math.max(0,num(s.barIntervalMinutes,0)),barsPerYear=mins?252*(390/mins):252,const vol=sd(rets)*Math.sqrt(barsPerYear);return {s20,s50,atr:a14,rsi:r14,momentum:mom,volumeRatio:vr,annualVol:vol,price:series[i].close}}
+export function indicators(series,i,s={}){if(i<55)return null;const closes=series.map(x=>x.close),vols=series.map(x=>x.volume);const s20=sma(closes,20,i),s50=sma(closes,50,i),a14=atr(series,14,i),r14=rsi(series,14,i),mom=(series[i].close/series[i-20].close-1)*100,vr=series[i].volume/(avg(vols.slice(i-20,i))||1);const rets=[];for(let j=i-19;j<=i;j++)rets.push((series[j].close/series[j-1].close-1)*100);const mins=Math.max(0,num(s.barIntervalMinutes,0)),barsPerYear=mins?252*(390/mins):252,vol=sd(rets)*Math.sqrt(barsPerYear);return {s20,s50,atr:a14,rsi:r14,momentum:mom,volumeRatio:vr,annualVol:vol,price:series[i].close}}
 function weights(s){const a=[num(s.wTrend),num(s.wMomentum),num(s.wVolume),num(s.wVolatility),num(s.wRsi)],sum=a.reduce((x,y)=>x+y,0)||1;return a.map(v=>v/sum)}
 export function directionalScores(ind,s){
   const w=weights(s);
@@ -40,7 +40,7 @@ export function setupFromSeries(symbol,series,s){
   const rationale=[
     `Direction ${direction} from long ${scores.long.toFixed(1)} vs short ${scores.short.toFixed(1)}`,
     `Price vs SMA50 ${trendPct>=0?'+':''}${trendPct.toFixed(2)}%`,
-    `20d momentum ${ind.momentum>=0?'+':''}${ind.momentum.toFixed(2)}%`,
+    `20-bar momentum ${ind.momentum>=0?'+':''}${ind.momentum.toFixed(2)}%`,
     `Volume ${ind.volumeRatio.toFixed(2)}x recent average`,
     `RSI ${ind.rsi.toFixed(1)}`
   ];
