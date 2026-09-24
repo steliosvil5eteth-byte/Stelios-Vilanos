@@ -1,0 +1,22 @@
+{
+  "publish_ready": true,
+  "local_date": "2026-09-25",
+  "slot": "17:00",
+  "voice": "el-GR-NestorasNeural",
+  "duration_seconds": 102.959,
+  "duration_min_seconds": 90,
+  "duration_max_seconds": null,
+  "resolution": "1080x1920",
+  "background_music": false,
+  "burned_synced_greek_subtitles": true,
+  "avatar_presenter": false,
+  "spoken_written_cta": true,
+  "dead_air_gt_1_2s": false,
+  "trailing_silence_gt_0_5s": false,
+  "visual_source_count": 10,
+  "source_pack_pinned": true,
+  "rights_verified": true,
+  "caption_count": 61,
+  "paid_generation_used": false,
+  "folklore_not_fact": false
+}
