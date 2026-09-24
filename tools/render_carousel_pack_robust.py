@@ -82,6 +82,8 @@ REL='https://upload.wikimedia.org/wikipedia/commons/9/92/Elderly_couple_%2815864
 ORANGE='https://upload.wikimedia.org/wikipedia/commons/3/39/Elderly_couple_%281527965%29.jpg'
 BAT='https://upload.wikimedia.org/wikipedia/commons/a/ac/Bat_in_the_Hand_%28251301881%29.jpg'
 FRIDGE='https://upload.wikimedia.org/wikipedia/commons/0/09/Food_into_a_refrigerator_-_20111002.jpg'
+FLASH='https://upload.wikimedia.org/wikipedia/commons/b/b7/Led_flashlight.jpg'
+BARTENDER='https://upload.wikimedia.org/wikipedia/commons/b/b0/Bartender_%28Unsplash%29.jpg'
 
 PINNED={
   'ΕΣΥ ΤΙ ΠΙΣΤΕΥΕΙΣ; — 7/7': proxy(REL),
@@ -98,7 +100,9 @@ QUERY_PINNED={
   'elderly couple portrait photograph':proxy(REL),
   'elderly married couple photograph':proxy(ORANGE),
   'brown long eared bat photograph':proxy(BAT),
-  'refrigerator food home photograph':proxy(FRIDGE)
+  'refrigerator food home photograph':proxy(FRIDGE),
+  'torch flashlight photograph':proxy(FLASH),
+  'bartender preparing drink photograph':proxy(BARTENDER)
 }
 
 def pinned_render(slide,index,total,work,require_photo):
