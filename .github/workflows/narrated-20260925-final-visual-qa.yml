@@ -1,0 +1,49 @@
+name: 25 Sep narrated final visual QA
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/narrated-20260925-final-visual-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  qa-sheets:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+      - name: Fetch final narrated outputs
+        run: |
+          set -euo pipefail
+          git fetch origin media-output --depth=1
+          git worktree add --detach "$RUNNER_TEMP/media-output" FETCH_HEAD
+          mkdir -p "$RUNNER_TEMP/qa"
+      - name: Build contact sheets from exact final MP4 files
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/media-output"
+          declare -A files
+          files[moonbow]="$OUT/jobs/features-20260925/phenom-moonbow-20260925/phenom-moonbow-20260925.mp4"
+          files[ioannina]="$OUT/jobs/travel-ioannina-20260925-1830/travel-ioannina-20260925-1830.mp4"
+          files[asch]="$OUT/jobs/experiments-series-ep02-asch-20260925/asch-episode-02.mp4"
+          files[selkie]="$OUT/jobs/features-20260925/legend-selkie-20260925/legend-selkie-20260925.mp4"
+          for key in moonbow ioannina asch selkie; do
+            src="${files[$key]}"
+            test -s "$src"
+            ffmpeg -y -loglevel error -i "$src"               -vf "fps=1/10,scale=270:480:force_original_aspect_ratio=decrease,pad=270:480:(ow-iw)/2:(oh-ih)/2:black,tile=4x4"               -frames:v 1 -q:v 2 "$RUNNER_TEMP/qa/$key-contact-sheet.jpg"
+            test -s "$RUNNER_TEMP/qa/$key-contact-sheet.jpg"
+          done
+      - name: Upload narrated QA sheets
+        uses: actions/upload-artifact@v4
+        with:
+          name: narrated-20260925-final-visual-qa
+          path: ${{ runner.temp }}/qa/*.jpg
+          if-no-files-found: error
