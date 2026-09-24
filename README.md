@@ -48,10 +48,17 @@ Repository για αυτοματοποίηση δημιουργίας, οργά�
 
 ## Metricool
 
-- Brand ID: `7000636`
-- User ID: `5403385`
+- Active brand: **Ιστορίες που μας αγγίζουν**
+- Brand ID: `7076410`
 - Timezone: `Europe/Athens`
 - Networks: Facebook, Instagram, TikTok, YouTube
+- This is the **only operational brand**. Previous Metricool brands are historical/audit-only and must not be used for new scheduling, publishing or repair.
+
+## Active program
+
+The sole active schedule is **CURRENT_TEN_DAILY** with 10 logical posts per day at 07:00, 09:00, 11:00, 13:00, 15:00, 17:00, 18:30, 20:00, 21:30 and 23:00 Europe/Athens.
+
+Publishing is quality-first: a failed slot is repaired and published later the same day after full QA and a fresh duplicate check. End-of-day target: exactly 10 correct logical posts.
 
 ## HeyGen
 
