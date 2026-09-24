@@ -1,83 +1,98 @@
 {
   "mode": "chatgpt_connectors",
   "metricool": {
-    "brand_id": 7000636,
-    "user_id": 5403385,
+    "brand_id": 7076410,
+    "brand_label": "Ιστορίες που μας αγγίζουν",
+    "operational_brand_only": true,
     "timezone": "Europe/Athens",
     "networks": [
       "facebook",
       "instagram",
       "tiktok",
       "youtube"
-    ]
-  },
-  "heygen": {
-    "enabled": false,
-    "status": "retired_for_new_generation",
-    "rule": "Do not use HeyGen for the current daily workflow. Existing completed media may be reused only when otherwise valid and specifically allowed by the current strategy."
+    ],
+    "retired_brand_policy": "Do not schedule, publish, repair, reconcile or create new work on any previous Metricool brand. Historical references remain audit-only outside the active workflow."
   },
   "content": {
     "strategy_file": "config/content_strategy.json",
     "cycle_state_file": "state/content_cycle.json",
     "history_file": "state/content_history.json",
     "notion_rules_page_id": "3def2345-b318-8173-9711-e29c134da859",
+    "notion_current_program_page_id": "3e5f2345-b318-812d-a35a-f980ed6d873a",
     "notion_archive_database_id": "38724259aa5143d09dc3b8cf606577b1",
     "notion_archive_data_source_id": "46cd5cf4-5f7e-46e8-b0ef-274aeadbdb52"
   },
   "publishing": {
-    "program_label": "RESET_HOLD",
-    "daily_target_logical_posts_per_network": 0,
-    "daily_target_destinations": 0,
-    "slots_local_time": [],
-    "publish_to_all_connected_socials": false,
-    "require_user_confirmation": true,
-    "daily_target_source": "config/content_strategy.json",
-    "reliability_file": "config/publishing_reliability.json",
-    "rule": "Publishing is disabled during RESET_HOLD."
+    "program_label": "CURRENT_TEN_DAILY",
+    "daily_target_logical_posts_per_network": 10,
+    "daily_target_destinations": 40,
+    "slots_local_time": [
+      "07:00",
+      "09:00",
+      "11:00",
+      "13:00",
+      "15:00",
+      "17:00",
+      "18:30",
+      "20:00",
+      "21:30",
+      "23:00"
+    ],
+    "publish_to_all_connected_socials": [
+      "facebook",
+      "instagram",
+      "tiktok",
+      "youtube"
+    ],
+    "require_user_confirmation": false,
+    "quality_first_catch_up": true,
+    "rule": "Only brand 7076410 is operational. Every logical post must pass final QA. If a slot misses its original time, repair it and publish later the same day after a fresh duplicate check. End-of-day target is exactly 10 correct logical posts."
   },
   "runner": {
-    "max_jobs_per_run": 0,
+    "max_logical_posts_per_day": 10,
     "duplicate_policy": "one_logical_post_per_date_category_platform",
     "require_future_schedule": true,
-    "hands_off_mode": false,
+    "hands_off_mode": true,
     "quality_check_before_publish": true,
     "archive_every_video": true,
     "no_false_rollback": true,
-    "never_backdate_or_catch_up": true,
+    "never_backdate": true,
+    "catch_up_after_repair_same_day": true,
     "release_only_after_final_qa_pass": true,
-    "reset_hold": true
+    "fail_closed": true
   },
-  "piper_speech": {
-    "enabled": true,
-    "engine": "local_piper",
-    "default_voice": "el_GR-rapunzelina-medium",
-    "language": "el-GR",
-    "natural_speed": true,
-    "use_for": [
-      "phenomenon_video",
-      "greece_two_day_video",
-      "documented_experiments_video",
-      "legend_video"
-    ],
-    "strictly_longer_than_seconds": 80,
-    "maximum_duration_seconds": null,
-    "background_music": false,
-    "paid_fallback_allowed": false,
-    "heygen_fallback_allowed": false,
-    "rule": "Narrated slots require the exact agreed Νέστορας voice. If the configured local voice is not the exact approved voice, block publication rather than substituting it. All narrated videos require synchronized burned-in Greek subtitles, >80s duration, no background music and no long dead air."
+  "audio": {
+    "card_posts": {
+      "narration": false,
+      "tiktok_auto_add_music": true,
+      "youtube_single_original_instrumental_layer": true,
+      "facebook_instagram_native_carousel_music_optional": true,
+      "duplicate_audio_layers_forbidden": true
+    },
+    "narrated_posts": {
+      "provider": "edge_tts_free",
+      "voice": "el-GR-NestorasNeural",
+      "display_name": "Νέστορας",
+      "min_duration_seconds": 80,
+      "maximum_duration_seconds": null,
+      "burned_in_synchronized_greek_subtitles": true,
+      "background_music": false,
+      "avatar_presenter": false,
+      "tiktok_auto_music": false,
+      "voice_substitution_forbidden": true
+    }
   },
-  "azure_speech": {
-    "enabled": false,
-    "status": "superseded_by_local_piper",
-    "default_voice": "el-GR-NestorasNeural",
-    "paid_fallback_allowed": false,
-    "rule": "Do not use Azure for CURRENT 17:00/23:00 generation while the local Piper policy is active."
+  "visual_rules": {
+    "every_card_requires_scene_relevant_photographic_or_photorealistic_visual": true,
+    "generic_placeholder_cartoon_or_text_only_visuals": "BLOCK",
+    "zodiac_cards": "Each zodiac card must visibly include the corresponding zodiac visual/symbol/identity; plain black/text-only panels are forbidden.",
+    "dog_bartender": "Exactly four cards with the same recurring photorealistic brown dog bartender, clearly visible as bartender in every card, with four distinct scene-relevant compositions."
   },
   "cost_safety": {
     "purchases": false,
     "topups": false,
     "upgrades": false,
     "paid_tests": false,
-    "paid_generation": false
+    "paid_generation_without_explicit_user_approval": false
   }
 }
