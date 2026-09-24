@@ -1,113 +1,118 @@
 {
-  "version": 16,
+  "version": 17,
   "updated_on": "2026-09-24",
   "timezone": "Europe/Athens",
-  "strategy_id": "FOUR_DAILY_V2",
-  "program_label": "RESET_HOLD",
+  "strategy_id": "CURRENT_TEN_DAILY_20260924",
+  "program_label": "CURRENT_TEN_DAILY",
   "authoritative_strategy_file": "config/content_strategy.json",
-  "effective_date": "2026-09-24",
-  "publishing_paused": true,
-  "rules": "RESET_HOLD is authoritative. No social publication or new production scheduling is allowed until config/content_strategy.json is explicitly replaced by a new post-reset strategy.",
-  "current_slots_local": [],
-  "daily_logical_target_per_network": 0,
-  "daily_destination_target": 0,
-  "full_reset_hold": {
+  "publishing_paused": false,
+  "active_metricool_brand": {
+    "id": 7076410,
+    "label": "Ιστορίες που μας αγγίζουν",
+    "exclusive": true
+  },
+  "current_slots_local": [
+    "07:00",
+    "09:00",
+    "11:00",
+    "13:00",
+    "15:00",
+    "17:00",
+    "18:30",
+    "20:00",
+    "21:30",
+    "23:00"
+  ],
+  "daily_logical_target_per_network": 10,
+  "daily_destination_target": 40,
+  "final_render_qa_gate": {
     "active": true,
-    "activated_at": "2026-09-24T17:47:00+03:00",
-    "rule": "All future social publishing remains blocked. Historical published content is retained only for deduplication/audit. No previous schedule or media job may be revived automatically."
+    "require_final_render_visual_inspection": true,
+    "require_scene_by_scene_visual_relevance": true,
+    "require_correct_photorealistic_or_approved_archival_visuals": true,
+    "require_correct_nestoras_voice_when_narrated": true,
+    "require_burned_in_synchronized_greek_subtitles_when_narrated": true,
+    "require_duration_and_dead_air_check": true,
+    "require_cta_check": true,
+    "require_sources_and_licenses_when_applicable": true,
+    "publication_allowed_only_when_status": "PASSED_FINAL_REVIEW",
+    "pre_qa_metricool_state": {
+      "draft": true,
+      "autoPublish": false
+    },
+    "fail_closed": true
   },
-  "retired_legacy_post_uuids": [
-    "5968469862478006616",
-    "-1941593113389937615",
-    "-4617932191721175622",
-    "-445330719101599033",
-    "4298891804249247341",
-    "-3290354035097646560",
-    "3516310839196861394",
-    "-5009975642393395068",
-    "-4880667067431302439",
-    "2317278556653109340",
-    "8795228733188163998",
-    "-3029365031314767155",
-    "7486346641732224351",
-    "6234574211891284294",
-    "4952065135289714308",
-    "-8042687935771622605"
-  ],
-  "retired_categories": [
-    "dog_barista",
-    "dog_video",
-    "terrier_video",
-    "weekly_introduction",
-    "legacy_standalone_zodiac",
-    "legacy_standalone_emotional"
-  ],
-  "current_nonlegacy_category_exception": {
-    "dog_bartender_carousel": "The 13:00 Σκύλος Μπάρμαν — ο παράξενος πελάτης four-card photo-carousel series is current approved content and must never be rejected merely because legacy dog video categories are retired."
-  },
-  "cancelled_phenomenon_metricool_uuids": {
-    "2026-09-20": "2123662763815747664",
-    "2026-09-21": "2726276820466814272",
-    "2026-09-22": "-2388549801947019381",
-    "2026-09-23": "-4209113635639966324",
-    "2026-09-24": "-5009639251725630935",
-    "2026-09-25": "-6217824847181035454",
-    "2026-09-26": "-8868155511436325346",
-    "2026-09-27": "1505476370371006414",
-    "2026-09-28": "3716130563520349426",
-    "2026-09-29": "4740472343308093579",
-    "2026-09-30": "9042889003413750494"
-  },
-  "cancelled_legacy_rule": "Cancelled UUIDs are audit references only and are never gaps to revive. Reuse of underlying media is permitted only by creating a new current-program entry after fresh QA and deduplication when that exact media/content is still valid.",
   "audio_safety": {
-    "exactly_one_music_layer": true,
-    "tiktok_photo_carousel_auto_add_music": true,
-    "tiktok_photo_assets_must_be_silent": true,
-    "tiktok_video_with_embedded_audio_auto_add_music": false,
-    "unclear_audio_configuration_policy": "block_review"
-  },
-  "dog_bartender_tiktok_gate": {
-    "cards": 4,
-    "mime_types": [
-      "image/jpeg",
-      "image/webp"
-    ],
-    "width": 1080,
-    "height": 1080,
-    "silent_assets": true,
-    "auto_add_music": true,
-    "video_fallback_allowed": false,
-    "oversize_policy": "resize_images_and_retry_tiktok_only",
-    "published_success_protection": "Never touch or duplicate already Published Facebook/Instagram destinations while repairing TikTok."
+    "card_posts": {
+      "tiktok_auto_add_music": true,
+      "tiktok_photo_assets_silent": true,
+      "youtube_one_original_instrumental_layer": true,
+      "narration": false
+    },
+    "narrated_posts": {
+      "voice": "el-GR-NestorasNeural",
+      "display_name": "Νέστορας",
+      "background_music": false,
+      "tiktok_auto_music": false,
+      "avatar_presenter": false
+    }
   },
   "narrated_feature_duration_gate": {
     "active": true,
     "applies_to": [
-      "phenomenon_video",
-      "greece_two_day_video",
-      "documented_experiments_video",
-      "legend_video"
+      "strange_real_phenomenon",
+      "greece_two_day_trip",
+      "documented_experiments",
+      "international_legend"
     ],
-    "voice_provider": "Piper local",
-    "voice": "el_GR-rapunzelina-medium",
-    "strictly_longer_than_seconds": 80,
+    "strictly_at_least_seconds": 80,
     "maximum_duration_seconds": null,
     "dead_air_reject_threshold_seconds": 2,
-    "target_max_trailing_silence_seconds": 0.5,
-    "padding_for_duration_forbidden": true,
-    "background_music": false,
-    "avatar_presenter": false,
-    "failure_policy": "Block before scheduling and expand substantive script/content; never use silence padding or a paid fallback.",
-    "required_voice_display_name": "Νέστορας",
-    "voice_substitution_forbidden": true
+    "padding_for_duration_forbidden": true
+  },
+  "carousel_gates": {
+    "relationships": {
+      "cards": 7
+    },
+    "survival": {
+      "cards": 9
+    },
+    "zodiac": {
+      "cards": 6,
+      "each_card_must_show_its_zodiac_visual": true,
+      "plain_black_or_text_only": "BLOCK"
+    },
+    "dog_bartender": {
+      "cards": 4,
+      "same_photorealistic_brown_dog": true,
+      "dog_visible_as_bartender_on_every_card": true,
+      "distinct_scenes": true
+    },
+    "love_soul_relationship": {
+      "cards": 5
+    },
+    "myth_or_truth": {
+      "cards": 4
+    }
   },
   "deduplication_policy": {
     "logical_key": "local_date + category + platform",
     "fresh_live_read_before_write": true,
     "protect_published_successes": true,
-    "repair_only_affected_destination": true,
-    "unknown_write_result": "Reconcile by live read before any retry.",
-    "future_pending_not_failure": true
+    "block_exact_and_near_duplicate_topic": true,
+    "unknown_write_result": "Reconcile by live read before retry."
+  },
+  "quality_first_catch_up": {
+    "enabled": true,
+    "rule": "A failed or late slot is repaired first, then published later the same day after PASSED_FINAL_REVIEW and a fresh live duplicate check. Never backdate. Preserve exactly 10 logical posts for the day.",
+    "reschedule_following_unpublished_slots_if_needed": true
+  },
+  "retired_operational_context": {
+    "previous_metricool_brands": true,
+    "old_reset_hold": true,
+    "old_six_seven_four_daily_programs": true,
+    "piper_voice_substitution": true,
+    "legacy_dog_barista_video": true
   },
   "cost_safety": {
     "purchases": false,
@@ -115,68 +120,5 @@
     "upgrades": false,
     "paid_tests": false,
     "paid_fallbacks": false
-  },
-  "history_policy": {
-    "rule": "Git history retains superseded configuration for audit only. Published content is not modified or republished."
-  },
-  "final_render_qa_gate": {
-    "active": true,
-    "applies_to_all_posts_and_videos": true,
-    "require_final_render_visual_inspection": true,
-    "require_scene_by_scene_visual_relevance": true,
-    "require_correct_photorealistic_or_approved_archival_visuals": true,
-    "require_correct_greek_male_voice_when_narrated": true,
-    "require_burned_in_subtitles_when_required": true,
-    "require_subtitle_sync_check": true,
-    "require_duration_and_dead_air_check": true,
-    "require_cta_check": true,
-    "publication_allowed_only_when_status": "RESET_HOLD_BLOCKED",
-    "fail_closed": true,
-    "rule": "Never create or release a Metricool/social publishing entry merely because a JPEG/WEBP/MP4 exists. Directly inspect the exact final artifact. Every carousel card and video scene must visibly contain correct scene-relevant photographic/photorealistic or approved archival imagery as applicable. Text-only, blank, generic, placeholder, mismatched, repeated or uninspected visuals are a hard failure: keep draft=true and autoPublish=false, repair, and re-run QA.",
-    "media_file_presence_is_not_visual_qa": true,
-    "jpeg_mp4_extension_is_not_proof_of_photographic_content": true,
-    "require_each_carousel_card_visibly_contains_scene_relevant_photo": true,
-    "require_each_video_scene_visibly_contains_scene_relevant_photo_or_approved_archival_visual": true,
-    "pre_qa_metricool_state": {
-      "draft": true,
-      "autoPublish": false
-    }
-  },
-  "hard_qa_gate": {
-    "active": true,
-    "release_condition": "RESET_HOLD_BLOCKED",
-    "missing_or_uncertain_evidence": "BLOCK",
-    "default_metricool_auto_publish_before_qa": false,
-    "required_checks": [
-      "final preview visually reviewed",
-      "visuals photorealistic and scene-relevant",
-      "no placeholders, generic mismatches or accidental repeated visuals",
-      "correct agreed voice",
-      "burned-in Greek subtitles present and synchronized when required",
-      "duration/pacing/dead-air requirements pass",
-      "caption/title/hashtags correct",
-      "sources and licenses verified when applicable",
-      "platform-specific media format and audio configuration pass",
-      "media extension/container alone is never accepted as proof of photographic content"
-    ],
-    "failure_policy": "Do not publish, do not substitute a lower-quality fallback, and do not mark ready. Keep the Metricool entry draft=true and autoPublish=false, repair the final visual, directly inspect it, and re-run QA."
-  },
-  "retired_slots": [
-    "18:00"
-  ],
-  "topic_deduplication_gate": {
-    "active": true,
-    "lookback_days": 60,
-    "require_live_metricool_history": true,
-    "require_repository_history": true,
-    "require_current_queue_check": true,
-    "block_exact_duplicate": true,
-    "block_same_topic_reworded": true,
-    "block_near_duplicate_angle": true,
-    "release_condition": "NEW_TOPIC_AND_PASSED_FINAL_REVIEW",
-    "rule": "No current slot may be released until its topic is checked against live Metricool history, repository history and the current queue. A reworded version of a previously used core topic is still a duplicate and must be replaced."
-  },
-  "documented_experiments_used_topics": [
-    "Milgram obedience experiments"
-  ]
+  }
 }
