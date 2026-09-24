@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
-# 2026-09-25 repair pass: broaden rights-cleared Commons fallback queries.
+# 2026-09-25 repair pass: robust rights-cleared fallbacks plus verified direct media pins.
 from __future__ import annotations
 import html, json, re, sys, urllib.parse, urllib.request
 from pathlib import Path
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 import render_carousel_pack as base
 
-UA='SteliosPhotoCarousel/3.0 zero-cost rights-checked fallback'
+UA='SteliosPhotoCarousel/3.1 zero-cost rights-checked fallback'
 BAD=('illustration','drawing','map','logo','coat of arms','diagram','icon','poster','stamp','flag','symbol')
 ALLOWED=('cc by','cc-by','cc0','public domain','attribution')
 
@@ -69,4 +69,28 @@ def robust_commons_fallback(query,dst):
     raise ValueError(f'no rights-cleared Commons fallback found for query: {query}; last={last}')
 
 base.commons_fallback=robust_commons_fallback
+_original_render=base.render_card
+
+def commons_redirect(filename):
+    return 'https://commons.wikimedia.org/wiki/Special:Redirect/file/'+urllib.parse.quote(filename,safe='()_,.-')+'?width=1600'
+
+PINNED={
+  'ΕΣΥ ΤΙ ΠΙΣΤΕΥΕΙΣ; — 7/7': commons_redirect('Elderly couple (1586495).jpg'),
+  'ΑΥΤΟ ΓΙΝΕΤΑΙ ΣΠΙΤΙ — 5/5': commons_redirect('Elderly couple (1527965).jpg'),
+  'ΖΥΓΟΣ — 1/6': commons_redirect('Photo of the constellation Libra produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (libra).jpg'),
+  'ΣΚΟΡΠΙΟΣ — 2/6': commons_redirect('Photo of the constellation Scorpius produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (scorpius).jpg'),
+  'ΤΟΞΟΤΗΣ — 3/6': commons_redirect('Photo of the constellation Sagittarius produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (sagittarius).jpg'),
+  'ΑΙΓΟΚΕΡΩΣ — 4/6': commons_redirect('Photo of the constellation Capricornus produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (capricornus).jpg'),
+  'ΥΔΡΟΧΟΟΣ — 5/6': commons_redirect('Photo of the constellation Aquarius produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (aquarius).jpg'),
+  'ΙΧΘΥΕΣ — 6/6': commons_redirect('Photo of the constellation Pisces produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (pisces).jpg')
+}
+
+def pinned_render(slide,index,total,work,require_photo):
+    title=slide.get('visible_title') or slide.get('title','')
+    if title in PINNED:
+        slide=dict(slide)
+        slide['source_url']=PINNED[title]
+    return _original_render(slide,index,total,work,require_photo)
+
+base.render_card=pinned_render
 base.main()
