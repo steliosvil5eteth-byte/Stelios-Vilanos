@@ -1,11 +1,11 @@
 {
-  "version": 25,
+  "version": 26,
   "timezone": "Europe/Athens",
   "strategy_id": "FOUR_DAILY_V2",
   "program_label": "CURRENT_TEN_DAILY",
   "effective_date": "2026-09-24",
   "priority": "AUTHORITATIVE_LATEST_USER_STRATEGY",
-  "compatibility_note": "The historical strategy_id is retained for worker compatibility; the authoritative program is CURRENT_NINE_DAILY.",
+  "compatibility_note": "The historical strategy_id is retained for worker compatibility; the authoritative program is CURRENT_TEN_DAILY.",
   "daily_target_posts_per_network": 10,
   "destination_target_per_day": 40,
   "daily_target_videos": {
@@ -88,7 +88,17 @@
       "require_platform_format_check": true,
       "require_audio_layer_check": true,
       "block_on_any_failed_item": true,
-      "rule": "Never schedule with autoPublish=true merely because media rendered successfully. A human-readable final preview and all applicable QA checks must explicitly PASS first. If any check is missing, uncertain, visually poor, mismatched, repetitive, unreadable, unsynchronized or rights-unclear, keep the post non-autopublishing and repair it before release."
+      "rule": "A file existing as JPEG/WEBP/MP4 is never proof that it contains an acceptable photograph. Before release, directly inspect the exact final carousel/video: every carousel card and every video scene must visibly contain scene-relevant photographic/photorealistic or approved archival imagery as applicable. Any blank, text-only, generic, placeholder, mismatched, repeated or uninspected visual keeps the Metricool entry draft=true and autoPublish=false. Only the exact final artifact with explicit PASSED_FINAL_REVIEW may be released.",
+      "media_file_presence_is_not_visual_qa": true,
+      "jpeg_mp4_extension_is_not_proof_of_photographic_content": true,
+      "require_direct_final_artifact_visual_inspection": true,
+      "require_each_carousel_card_to_visibly_contain_scene_relevant_photographic_or_photorealistic_imagery": true,
+      "require_each_video_scene_to_visibly_contain_scene_relevant_photographic_or_approved_archival_imagery": true,
+      "pre_qa_metricool_state": {
+        "draft": true,
+        "autoPublish": false
+      },
+      "release_only_after_exact_final_artifact_pass": true
     }
   },
   "originality_rules": {
