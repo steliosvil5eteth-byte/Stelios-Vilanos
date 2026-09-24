@@ -76,6 +76,7 @@ def commons_redirect(filename):
 
 PINNED={
   'ΕΣΥ ΤΙ ΠΙΣΤΕΥΕΙΣ; — 7/7': commons_redirect('Elderly couple (1586495).jpg'),
+  'ΜΙΚΡΑ ΠΟΥ ΒΟΗΘΟΥΝ — 2/9': commons_redirect('USB power bank.jpg'),
   'ΑΥΤΟ ΓΙΝΕΤΑΙ ΣΠΙΤΙ — 5/5': commons_redirect('Elderly couple (1527965).jpg'),
   'ΖΥΓΟΣ — 1/6': commons_redirect('Photo of the constellation Libra produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (libra).jpg'),
   'ΣΚΟΡΠΙΟΣ — 2/6': commons_redirect('Photo of the constellation Scorpius produced by NOIRLab in collaboration with Eckhard Slawik, a German astrophotographer (scorpius).jpg'),
