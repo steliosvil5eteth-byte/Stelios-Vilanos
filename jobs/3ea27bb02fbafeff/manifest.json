@@ -1,0 +1,164 @@
+{
+  "batch_id": "3ea27bb02fbafeff",
+  "batch_sha256": "3ea27bb02fbafeffc17d6fabd0a385d10c68fd7860f3e6802f7046dd39847c00",
+  "paid_ai_credits_used": 0,
+  "photographic_visuals_required": true,
+  "jobs": [
+    {
+      "id": "current-20260925-1100-zodiac-group-b-first-detail",
+      "status": "rendered",
+      "card_count": 6,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 30.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Balance%20scale%20IMGP9755.jpg?width=1600",
+          "source_credit": "Nikodem Nijaki / Wikimedia Commons",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Scorpion%20Image.jpg?width=1600",
+          "source_credit": "Ready Street / Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/87/Arash_the_Archer_Amol.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "ENMIRAN",
+          "license": "CC BY-SA 4.0",
+          "source_title": "File:Arash the Archer Amol.jpg",
+          "fallback_query": "archer statue photograph"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Goat%20close-up%20portrait.jpg?width=1600",
+          "source_credit": "ladydragonflycc / Wikimedia Commons",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f8/2006-02-13_Drop-impact.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Roger McLassus",
+          "license": "CC BY-SA 3.0",
+          "source_title": "File:2006-02-13 Drop-impact.jpg",
+          "fallback_query": "water"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Koi%20Fish%20swimming.jpg?width=1600",
+          "source_credit": "Jnsa100 / Wikimedia Commons",
+          "license": "Reusable Wikimedia Commons source; verify source page at render QA"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-20260925-1100-zodiac-group-b-first-detail-01.jpg",
+          "bytes": 461385,
+          "sha256": "5080a62e961a7ee86dde981fbd0890eff2a85fc74a955c749dd269e3d34468d0"
+        },
+        {
+          "name": "current-20260925-1100-zodiac-group-b-first-detail-02.jpg",
+          "bytes": 320998,
+          "sha256": "e9c6a845bd2218cc7f2d1b41eb150494052fdd2c288a70280a601a0988c2d05e"
+        },
+        {
+          "name": "current-20260925-1100-zodiac-group-b-first-detail-03.jpg",
+          "bytes": 330678,
+          "sha256": "0da0abe8c26b1fdd800c625f108701adb0813a414fb54fff2a8bbf1fd4c3c102"
+        },
+        {
+          "name": "current-20260925-1100-zodiac-group-b-first-detail-04.jpg",
+          "bytes": 493220,
+          "sha256": "d2a5e18ab69f041662e91cd6fe8ed8c6ae282ee3331b0ae0cf9d4fbbdf32215f"
+        },
+        {
+          "name": "current-20260925-1100-zodiac-group-b-first-detail-05.jpg",
+          "bytes": 427826,
+          "sha256": "061a72c8d445f64ecb8a160d5ef847d39c4a6e855cbc6815237861674d56de37"
+        },
+        {
+          "name": "current-20260925-1100-zodiac-group-b-first-detail-06.jpg",
+          "bytes": 501841,
+          "sha256": "b9b70918837c078c131560e22e341a64c438aeb27791f6872399b78784ccc686"
+        },
+        {
+          "name": "current-20260925-1100-zodiac-group-b-first-detail.mp4",
+          "bytes": 1341107,
+          "sha256": "284d61699534e3faf3c1c45adec4d6042e454c82e74144d6fcce59a3a4185798"
+        }
+      ]
+    },
+    {
+      "id": "current-20260925-1300-dog-bartender-mystery",
+      "status": "rendered",
+      "card_count": 4,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 24.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F2faaa210-79ca-4210-b2c0-23f4403bcc2e%2Ff2106c19-90a5-4715-9ab8-a86283883c5d%2FPhotorealistic_cinematic_square_photograph_of_a_distinctive_.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNTNmOTQ5NmNmMzUzYTQzYSIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDM4ODU4OH0.lgfzEqmZ6g5EL93NcITYcIQE-fMdzBKjJlheUHoH1eA&w=1600&output=jpg",
+          "source_credit": "Project-generated consistent golden-brown/brown dog bartender scene",
+          "license": "AI-generated project asset"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F730af6e5-1f8c-42a5-9062-21cb7bbbbebb%2F82e58288-6f38-4d93-a197-9a498a0c615b%2F_dogbartender_in_the_same_realistic_dark_wood_bar__three_qua.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNzUzZjkzNjMwOWU3ZmE3MyIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDQxMjc3MX0.idiQx81tXKo2hN6ISXemskHsaU2otW0G7_6K-x8Kppk&w=1600&output=jpg",
+          "source_credit": "Project-generated consistent golden-brown/brown dog bartender scene",
+          "license": "AI-generated project asset"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F0c783dad-d1be-4c76-98bb-c40d83291093%2F5ef5f2d5-50b1-4f0a-8a2f-1267d79677e6%2F_dogbartender_in_the_same_realistic_dark_wood_cocktail_bar__.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNTljNDQxOWQ0ZTMzMTcwNCIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDM3NjQ3N30.FzxFLDl6xZPVb62pPnwOFazXL-C2IsVhDX6-CLTsXyk&w=1600&output=jpg",
+          "source_credit": "Project-generated consistent golden-brown/brown dog bartender scene",
+          "license": "AI-generated project asset"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F74cba74e-cfdb-44ca-9c40-f02e1e64c193%2F9fd63838-5cbd-4750-baf7-a28d9b2d3a75%2F_dogbartender_in_the_same_realistic_dark_wood_bar__wider_fro.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMDgwNDEwYzhlM2JiODI2OCIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDQyNjU2OH0.6GleH3-hk4BYSDFxGEjAmLhTDIE4xASfzuIa9B7qKgI&w=1600&output=jpg",
+          "source_credit": "Project-generated consistent golden-brown/brown dog bartender scene",
+          "license": "AI-generated project asset"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-20260925-1300-dog-bartender-mystery-01.jpg",
+          "bytes": 363193,
+          "sha256": "267e0939b0cb96f39695d082d642eb92a1f32d408173e1dced5dbc929f1dada6"
+        },
+        {
+          "name": "current-20260925-1300-dog-bartender-mystery-02.jpg",
+          "bytes": 354417,
+          "sha256": "65def08b23a0e0e10a9ef9d8417af39e62747293cde3f8dfb3feb515b1959b65"
+        },
+        {
+          "name": "current-20260925-1300-dog-bartender-mystery-03.jpg",
+          "bytes": 298434,
+          "sha256": "33b5c35423ef79e23ef9367c0c305b87659c92dabf6739398416e44278dbce32"
+        },
+        {
+          "name": "current-20260925-1300-dog-bartender-mystery-04.jpg",
+          "bytes": 371554,
+          "sha256": "280b029b0853b354a24f9844941fa32e80b67079472eb57c81290304959db85d"
+        },
+        {
+          "name": "current-20260925-1300-dog-bartender-mystery.mp4",
+          "bytes": 688809,
+          "sha256": "8e6029b4b07420910e2272b254b352eb06907fba92c2b8b290d87065c177e25f"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_TEN_DAILY",
+  "local_date": "2026-09-25",
+  "require_photographic_visuals": true,
+  "authorization_basis": "Current user authorization; render only. Social publishing remains separately gated by final QA.",
+  "purpose": "Dedicated final render for the two remaining blocked 25 Sep slots only: zodiac 11:00 and Dog Bartender 13:00. Uses final current rules, exact sign motifs, golden/honey-brown recurring dog, and scene-matched copy. Render only; publish remains direct-QA gated.",
+  "jobs": [
+    {
+      "id": "current-20260925-1100-zodiac-group-b-first-detail",
+      "expected_cards": 6,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΖΥΓΟΣ — 1/6",
+          "text": "Τον τρόπο που φέρεσαι στους γύρω σου.",
+          "source_query": "balance scale photograph",
+          "source_credit": "Nikodem Nijaki / Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Balance%20scale%20IMGP9755.jpg?width=1600"
+        },
+        {
+          "title": "ΣΚΟΡΠΙΟΣ — 2/6",
+          "text": "Αν τα μάτια και τα λόγια σου λένε το ίδιο πράγμα.",
+          "source_query": "scorpion photograph",
+          "source_credit": "Ready Street / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Scorpion%20Image.jpg?width=1600"
+        },
+        {
+          "title": "ΤΟΞΟΤΗΣ — 3/6",
+          "text": "Αν έχεις περιέργεια και χιούμορ.",
+          "source_query": "archer statue photograph",
+          "source_credit": "Yair-haklai / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Torso%20of%20a%20statue%20of%20an%20archer.jpg?width=1600"
+        },
+        {
+          "title": "ΑΙΓΟΚΕΡΩΣ — 4/6",
+          "text": "Αν είσαι συνεπής στα μικρά.",
+          "source_query": "goat portrait photograph",
+          "source_credit": "ladydragonflycc / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Goat%20close-up%20portrait.jpg?width=1600"
+        },
+        {
+          "title": "ΥΔΡΟΧΟΟΣ — 5/6",
+          "text": "Αν έχεις δικό σου τρόπο να σκέφτεσαι.",
+          "source_query": "water bearer statue photograph",
+          "source_credit": "Jean-Pierre Dalbéra / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/%22La%20porteuse%20deau%22%2C%20quartier%20de%20Katajanokka%20(Helsinki)%20(2769251264).jpg?width=1600"
+        },
+        {
+          "title": "ΙΧΘΥΕΣ — 6/6",
+          "text": "Τον τόνο της φωνής και το πώς τον κάνεις να νιώθει.",
+          "source_query": "two koi fish photograph",
+          "source_credit": "Jnsa100 / Wikimedia Commons",
+          "license": "Reusable Wikimedia Commons source; verify source page at render QA",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Koi%20Fish%20swimming.jpg?width=1600"
+        }
+      ],
+      "approved": true,
+      "publish_to_social": false,
+      "reset_hold": false
+    },
+    {
+      "id": "current-20260925-1300-dog-bartender-mystery",
+      "expected_cards": 4,
+      "seconds_per_slide": 6,
+      "slides": [
+        {
+          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 1/4",
+          "text": "ΠΕΛΑΤΗΣ: «Έχεις κοκτέιλ που να με κάνει να φαίνομαι μυστηριώδης;» Ο Σκύλος Μπάρμαν τον κοιτάζει και συνεχίζει ήρεμα τη δουλειά του.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F2faaa210-79ca-4210-b2c0-23f4403bcc2e%2Ff2106c19-90a5-4715-9ab8-a86283883c5d%2FPhotorealistic_cinematic_square_photograph_of_a_distinctive_.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNTNmOTQ5NmNmMzUzYTQzYSIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDM4ODU4OH0.lgfzEqmZ6g5EL93NcITYcIQE-fMdzBKjJlheUHoH1eA&w=1600&output=jpg",
+          "source_query": "",
+          "source_credit": "Project-generated consistent golden-brown/brown dog bartender scene",
+          "license": "AI-generated project asset"
+        },
+        {
+          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 2/4",
+          "text": "ΜΠΑΡΜΑΝ: «Βεβαίως. Αλλά αν σου πω τι βάζω μέσα, χαλάει το μυστήριο.» Και αρχίζει να το ετοιμάζει χωρίς άλλη εξήγηση.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F730af6e5-1f8c-42a5-9062-21cb7bbbbebb%2F82e58288-6f38-4d93-a197-9a498a0c615b%2F_dogbartender_in_the_same_realistic_dark_wood_bar__three_qua.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNzUzZjkzNjMwOWU3ZmE3MyIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDQxMjc3MX0.idiQx81tXKo2hN6ISXemskHsaU2otW0G7_6K-x8Kppk&w=1600&output=jpg",
+          "source_query": "",
+          "source_credit": "Project-generated consistent golden-brown/brown dog bartender scene",
+          "license": "AI-generated project asset"
+        },
+        {
+          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 3/4",
+          "text": "ΠΕΛΑΤΗΣ: «Και η ομπρελίτσα γιατί;» ΜΠΑΡΜΑΝ: «Για να μην υποψιαστεί κανείς τίποτα.»",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F0c783dad-d1be-4c76-98bb-c40d83291093%2F5ef5f2d5-50b1-4f0a-8a2f-1267d79677e6%2F_dogbartender_in_the_same_realistic_dark_wood_cocktail_bar__.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNTljNDQxOWQ0ZTMzMTcwNCIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDM3NjQ3N30.FzxFLDl6xZPVb62pPnwOFazXL-C2IsVhDX6-CLTsXyk&w=1600&output=jpg",
+          "source_query": "",
+          "source_credit": "Project-generated consistent golden-brown/brown dog bartender scene",
+          "license": "AI-generated project asset"
+        },
+        {
+          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 4/4",
+          "text": "ΠΕΛΑΤΗΣ: «Γιατί δύο ποτήρια;» ΜΠΑΡΜΑΝ: «Το δεύτερο είναι για το άλλοθί σου.» Και συνέχισε τη δουλειά του σαν να μην έγινε τίποτα.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F74cba74e-cfdb-44ca-9c40-f02e1e64c193%2F9fd63838-5cbd-4750-baf7-a28d9b2d3a75%2F_dogbartender_in_the_same_realistic_dark_wood_bar__wider_fro.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMDgwNDEwYzhlM2JiODI2OCIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDQyNjU2OH0.6GleH3-hk4BYSDFxGEjAmLhTDIE4xASfzuIa9B7qKgI&w=1600&output=jpg",
+          "source_query": "",
+          "source_credit": "Project-generated consistent golden-brown/brown dog bartender scene",
+          "license": "AI-generated project asset"
+        }
+      ],
+      "approved": true,
+      "publish_to_social": false,
+      "reset_hold": false
+    }
+  ],
+  "reset_hold": false,
+  "publish_to_social": false,
+  "production_status": "ACTIVE_RENDER_ONLY"
+}
