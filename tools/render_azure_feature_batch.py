@@ -93,9 +93,16 @@ def explicit_visuals(items, outdir:Path, target:int):
         if pu.scheme!='https' or pu.hostname!='commons.wikimedia.org':
             raise RuntimeError(f'Pinned visual {i} has unapproved source page')
         dest=outdir/f'{i:02d}.jpg'
-        # Keep the exact vetted original and licensing metadata, but use a
-        # deterministic image proxy to avoid Wikimedia full-size 429s.
-        fetch_url='https://images.weserv.nl/?url='+urllib.parse.quote(media,safe='')+'&w=1800&output=jpg'
+        # Resolve through the stable Commons file name from the vetted source
+        # page instead of a brittle upload.wikimedia storage path. Licensing,
+        # attribution and the selected work remain unchanged.
+        page_path=urllib.parse.unquote(pu.path)
+        marker='/wiki/File:'
+        if marker not in page_path:
+            raise RuntimeError(f'Pinned visual {i} source page is not a Commons File page')
+        filename=page_path.split(marker,1)[1].replace('_',' ')
+        stable='https://commons.wikimedia.org/wiki/Special:Redirect/file/'+urllib.parse.quote(filename,safe='()_,.-')+'?width=1800'
+        fetch_url='https://images.weserv.nl/?url='+urllib.parse.quote(stable,safe='')+'&w=1800&output=jpg'
         ok=False; last=None
         for attempt in range(5):
             try:
