@@ -1,7 +1,7 @@
 import {getJson,setJson} from './store.js';
 import {strategyLifecycle} from './portfolio.js';
 
-export const STRATEGY_KEYS=['minScore','minRR','maxHold','wTrend','wMomentum','wVolume','wVolatility','wRsi','slippageBps','commissionBps','riskPct','dailyLoss','maxPositionPct','maxExposurePct','maxOpen','scanMinBars','scanMinOosTrades','scanMinOosAvgR','scanMinOosPF'];
+export const STRATEGY_KEYS=['minScore','minRR','maxHold','wTrend','wMomentum','wVolume','wVolatility','wRsi','slippageBps','commissionBps','riskPct','stopLossPct','targetMinPct','targetMaxPct','monthlyLossPct','dailyLoss','maxPositionPct','maxExposurePct','maxOpen','scanMinBars','scanMinOosTrades','scanMinOosAvgR','scanMinOosPF'];
 
 function num(v,d=0){const n=Number(v);return Number.isFinite(n)?n:d}
 export function stableStrategySettings(settings={}){
