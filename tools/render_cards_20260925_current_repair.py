@@ -16,9 +16,8 @@ jobs=[j for j in src.get('jobs',[]) if j.get('id') in ids]
 if {j.get('id') for j in jobs} != ids:
     raise SystemExit('required repair jobs missing')
 
-def proxy(filename):
-    stable='https://commons.wikimedia.org/wiki/Special:Redirect/file/'+urllib.parse.quote(filename,safe='()_,.-')
-    return 'https://images.weserv.nl/?url='+urllib.parse.quote(stable,safe='')+'&w=1600&output=jpg'
+def source(filename):
+    return 'https://commons.wikimedia.org/wiki/Special:Redirect/file/'+urllib.parse.quote(filename,safe='()_,.-')+'?width=1600'
 
 sources={
 'current-20260925-0700-relationship-roles':[
@@ -48,8 +47,8 @@ for job in jobs:
         if fn in used:
             raise SystemExit('duplicate photo across repair jobs: '+fn)
         used.add(fn)
-        slide['source_url']=proxy(fn)
-        slide['source_query']=''
+        slide['source_url']=source(fn)
+        slide['source_query']=fn
         slide['source_credit']=credit
         slide['license']=lic
         slide['source_filename']=fn
