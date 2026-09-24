@@ -1,23 +1,26 @@
 {
-  "version": 11,
+  "version": 12,
   "updated_on": "2026-09-24",
   "timezone": "Europe/Athens",
   "strategy_id": "FOUR_DAILY_V2",
-  "program_label": "CURRENT_SIX_DAILY",
+  "program_label": "CURRENT_NINE_DAILY",
   "authoritative_strategy_file": "config/content_strategy.json",
-  "effective_date": "2026-09-23",
+  "effective_date": "2026-09-24",
   "publishing_paused": false,
-  "rules": "AUTHORITATIVE CURRENT PROGRAM from 23/09/2026: exactly six logical posts/day across Facebook, Instagram, TikTok and YouTube: 11:00 six-sign zodiac A/B; 13:00 current Dog Bartender four-card humor carousel; 15:00 coherent five-card love/soul story; 17:00 fact-checked strange real phenomenon; 20:00 four-card Myth or Truth ordered question-participation-explanation-answer; 23:00 different international/foreign legend. Greek myths/legends remain postponed. TikTok native photo carousels at 11/13/15/20 use silent JPEG/WebP only and autoAddMusic=true as the sole music source; 13:00 Dog Bartender requires exactly four 1080x1080 JPEG/WebP images and no MP4 fallback without explicit authorization. Other slideshow/video versions with embedded approved music must not get a second audio layer. 17/23 use vertical 9:16 local Piper el_GR-rapunzelina-medium at natural speed, burned-in synchronized Greek subtitles, no background music/avatar/presenter, TikTok auto music false/omitted, max five hashtags, immediate hook with no greeting. Narrated features must be strictly longer than 80 seconds with no maximum duration; no filler, repetition, artificial slow speech, silence padding or long static holds; reject unintended dead-air around two seconds or longer and remove useless trailing silence. NO-FALSE-ROLLBACK: preserve verified future active posts and Published successes; deactivate only on concrete live evidence of missing/corrupt/wrong media, active duplicate, forbidden content, explicit stop/change, double-audio risk or current QA failure; repair only affected destinations. Never backdate/catch up or revive legacy drafts. Scheduled/PENDING is not Published. No purchases, topups, upgrades or paid tests. FINAL RENDER QA GATE 24/09/2026: no post/video may be scheduled or published until the final artifact itself has been directly inspected and marked PASSED_FINAL_REVIEW. Fail closed on any visual, voice, subtitle, sync, duration, dead-air, CTA, or quality doubt.",
+  "rules": "AUTHORITATIVE CURRENT PROGRAM from 24/09/2026: exactly nine logical posts/day across Facebook, Instagram, TikTok and YouTube — 07:00 relationships carousel (7 cards); 09:00 survival rules carousel (9 cards); 11:00 six-sign zodiac carousel; 13:00 Dog Bartender four-card carousel; 15:00 five-card love/soul story; 17:00 fact-checked strange real phenomenon narrated video; 18:30 two-day trip in Greece narrated video; 20:00 four-card Myth or Truth; 23:00 international/foreign legend narrated video. Old 18:00 travel/phenomenon drafts are retired and never revived. All photographic/card content must use scene-relevant photographic or photorealistic visuals with readable Greek text. TikTok photo carousels use silent 1080x1080 JPEG/WebP and one platform-added music layer; no MP4 fallback for Dog Bartender. Narrated 17:00/18:30/23:00 videos are vertical 9:16 1080x1920, strictly >80s, agreed Greek male voice Νέστορας only, synchronized burned-in Greek subtitles, no background music/avatar, no filler, no long dead air. FINAL RENDER QA is mandatory: release only after PASSED_FINAL_REVIEW for visuals, voice, subtitles/sync, duration, audio, CTA, sources/licenses, platform format and duplicate checks. Any uncertainty blocks publication. No backdating/catch-up, no duplicate retries, no purchases/topups/upgrades/paid tests.",
   "current_slots_local": [
+    "07:00",
+    "09:00",
     "11:00",
     "13:00",
     "15:00",
     "17:00",
+    "18:30",
     "20:00",
     "23:00"
   ],
-  "daily_logical_target_per_network": 6,
-  "daily_destination_target": 24,
+  "daily_logical_target_per_network": 9,
+  "daily_destination_target": 36,
   "full_reset_hold": {
     "active": false,
     "rule": "Release applies only to valid current-program work. Old cancelled entries remain inactive. A future user stop/change immediately overrides this release. Configuration activation is not proof of ready or queued media."
@@ -90,6 +93,7 @@
     "active": true,
     "applies_to": [
       "phenomenon_video",
+      "greece_two_day_video",
       "legend_video"
     ],
     "voice_provider": "Piper local",
@@ -101,7 +105,9 @@
     "padding_for_duration_forbidden": true,
     "background_music": false,
     "avatar_presenter": false,
-    "failure_policy": "Block before scheduling and expand substantive script/content; never use silence padding or a paid fallback."
+    "failure_policy": "Block before scheduling and expand substantive script/content; never use silence padding or a paid fallback.",
+    "required_voice_display_name": "Νέστορας",
+    "voice_substitution_forbidden": true
   },
   "deduplication_policy": {
     "logical_key": "local_date + category + platform",
@@ -153,5 +159,8 @@
       "platform-specific media format and audio configuration pass"
     ],
     "failure_policy": "Do not publish, do not substitute a lower-quality fallback, and do not mark ready. Repair and re-run QA."
-  }
+  },
+  "retired_slots": [
+    "18:00"
+  ]
 }
