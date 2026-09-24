@@ -1,0 +1,91 @@
+name: Greek travel manifest renderer
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'media_jobs/travel_*.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: travel-manifest-${{ github.sha }}
+  cancel-in-progress: false
+
+jobs:
+  render:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: Detect manifest
+        id: manifest
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            FILE=$(ls -1t media_jobs/travel_*.json | head -1)
+          else
+            FILE=$(git diff-tree --no-commit-id --name-only -r "$GITHUB_SHA" | grep '^media_jobs/travel_.*\.json$' | head -1)
+          fi
+          test -n "$FILE"
+          echo "file=$FILE" >> "$GITHUB_OUTPUT"
+          python3 - <<'PY' "$FILE" "$GITHUB_OUTPUT"
+          import json,sys
+          f=sys.argv[1]; out=sys.argv[2]
+          m=json.load(open(f,encoding='utf-8'))
+          assert m['approved'] is True
+          assert m['publish_to_social'] is True
+          assert m['voice']=='el-GR-NestorasNeural'
+          assert m['background_music'] is False
+          assert m['min_duration_seconds']>=80
+          with open(out,'a',encoding='utf-8') as h:
+              h.write(f"job_id={m['id']}\n")
+              h.write(f"destination={m['destination']}\n")
+          print('Manifest verified:',m['id'],m['destination'])
+          PY
+
+      - name: Install media tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg python3-pil fonts-dejavu-core
+
+      - name: Render final video
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+          OUTPUT_DIR: ${{ runner.temp }}/travel-output
+        run: |
+          set -euo pipefail
+          python3 tools/render_travel_manifest.py \
+            --manifest "${{ steps.manifest.outputs.file }}" \
+            --output "$OUTPUT_DIR"
+
+      - name: Publish final media to media-output branch
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/travel-output
+          JOB_ID: ${{ steps.manifest.outputs.job_id }}
+        run: |
+          set -euo pipefail
+          git fetch origin media-output --depth=1
+          OUT="$RUNNER_TEMP/media-output-repo"
+          git worktree add --detach "$OUT" origin/media-output
+          DEST="$OUT/jobs/$JOB_ID"
+          rm -rf "$DEST"
+          mkdir -p "$DEST"
+          cp -a "$OUTPUT_DIR/result"/. "$DEST"/
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add "jobs/$JOB_ID"
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m "Render travel video $JOB_ID"
+            git -C "$OUT" push origin HEAD:media-output
+          fi
+          cat "$OUTPUT_DIR/result/qa.json" >> "$GITHUB_STEP_SUMMARY"
