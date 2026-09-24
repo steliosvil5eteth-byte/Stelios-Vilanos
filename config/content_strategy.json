@@ -1,5 +1,5 @@
 {
-  "version": 26,
+  "version": 27,
   "timezone": "Europe/Athens",
   "strategy_id": "FOUR_DAILY_V2",
   "program_label": "CURRENT_TEN_DAILY",
@@ -99,6 +99,23 @@
         "autoPublish": false
       },
       "release_only_after_exact_final_artifact_pass": true
+    },
+    "topic_deduplication_gate": {
+      "active": true,
+      "check_before_generation": true,
+      "check_again_before_scheduling": true,
+      "lookback_days": 60,
+      "required_sources": [
+        "live Metricool published/scheduled history",
+        "repository content history and media jobs",
+        "current Metricool queue"
+      ],
+      "exact_title_or_text_match": "BLOCK_AND_REPLACE",
+      "same_core_topic_with_rewording": "BLOCK_AND_REPLACE",
+      "near_duplicate_angle_or_hook": "BLOCK_AND_REPLACE",
+      "current_day_duplicate": "BLOCK_AND_REPLACE",
+      "series_rule": "A recurring series may continue only with a genuinely new episode/topic. Reusing the same subject, myth, destination, experiment, legend, survival scenario, emotional story or relationship angle is not allowed merely because wording or visuals changed.",
+      "failure_policy": "Keep draft=true and autoPublish=false. Select a new topic, rebuild media, rerun visual QA, then reconcile live queue before release."
     }
   },
   "originality_rules": {
@@ -232,7 +249,12 @@
         "preferred_time": "21:30",
         "rule": "One documented real experiment or real-world trial per day. Start from verifiable evidence and explain what was tested, who ran it, what happened, what worked or failed, and what the limitations or ethical issues were. Distinguish documented facts from disputed interpretations; no conspiracy framing as fact.",
         "first_episode": "Milgram obedience experiments",
-        "format_rule": "Vertical 9:16, 1080x1920, strictly longer than 80 seconds, agreed Greek male voice Νέστορας only, synchronized burned-in Greek subtitles, scene-relevant photographic/approved archival visuals, no background music/avatar, strong hook, source/rights verification, and PASSED_FINAL_REVIEW before publication."
+        "format_rule": "Vertical 9:16, 1080x1920, strictly longer than 80 seconds, agreed Greek male voice Νέστορας only, synchronized burned-in Greek subtitles, scene-relevant photographic/approved archival visuals, no background music/avatar, strong hook, source/rights verification, and PASSED_FINAL_REVIEW before publication.",
+        "used_topics": [
+          "Milgram obedience experiments"
+        ],
+        "used_topic_rule": "Milgram is already used/published per user confirmation and must not be scheduled again.",
+        "next_episode": "Asch conformity experiments"
       },
       {
         "category": "legend_video",
