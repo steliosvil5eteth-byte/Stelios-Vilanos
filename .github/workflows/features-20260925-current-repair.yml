@@ -1,0 +1,59 @@
+name: 25 Sep Moonbow Selkie current repair
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/features-20260925-current-repair.yml'
+      - 'tools/render_features_20260925_current_repair.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: features-20260925-current-repair
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    env:
+      AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+      AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install media and Azure tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python3 -m pip install --disable-pip-version-check --no-input azure-cognitiveservices-speech requests pillow
+      - name: Render current unique-visual repairs
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/finished
+        run: |
+          set -euo pipefail
+          python3 tools/render_features_20260925_current_repair.py             --source-manifest media_jobs/features_20260925.json             --output "$OUTPUT_DIR"
+      - name: Save repaired final media
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/finished
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/media-output-repo"
+          git fetch origin media-output --depth=1
+          git worktree add --detach "$OUT" FETCH_HEAD
+          for id in phenom-moonbow-20260925 legend-selkie-20260925; do
+            SRC="$OUTPUT_DIR/$id"
+            DEST="$OUT/jobs/current-repair-20260925/$id"
+            rm -rf "$DEST"
+            mkdir -p "$DEST"
+            cp "$SRC/$id.mp4" "$SRC/qa.json" "$SRC/subs.srt" "$SRC/speech-meta.json" "$SRC/visual-attribution.json" "$DEST/"
+          done
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/current-repair-20260925
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Render unique-visual Moonbow and Selkie repairs'
+            git -C "$OUT" push origin HEAD:media-output
+          fi
