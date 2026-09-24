@@ -6,8 +6,8 @@ const {getAccount,createAccount,updateAccount,verifyPassword,allAccounts}=await 
 const {entitlements}=await import('../api/_lib/plans.js');
 const {performanceReport}=await import('../api/_lib/report.js');
 const admin=await getAccount('rootadmin');if(!admin||admin.role!=='admin'||admin.plan!=='premium'||!verifyPassword('BootstrapPass123!',admin.auth))throw Error('bootstrap admin failed');
-let user=await createAccount({username:'testuser-v1',password:'LongPassword123!',plan:'free'});if(user.plan!=='free'||entitlements(user.plan).maxWatchlist!==2)throw Error('free plan failed');
-user=await updateAccount('testuser-v1',{plan:'pro'});if(user.plan!=='pro'||!entitlements(user.plan).brokerPaper)throw Error('plan update failed');
+let user=await createAccount({username:'testuser-v1',password:'LongPassword123!',plan:'free'});if(user.plan!=='free'||entitlements(user.plan).maxWatchlist!==2||entitlements(user.plan).monthlyPriceEur!==0||entitlements(user.plan).label!=='Demo')throw Error('free plan failed');
+user=await updateAccount('testuser-v1',{plan:'pro'});if(user.plan!=='pro'||entitlements(user.plan).monthlyPriceEur!==10.01||entitlements(user.plan).label!=='Starter')throw Error('starter plan failed');if(entitlements('premium').monthlyPriceEur!==30||entitlements('premium').label!=='Pro')throw Error('pro plan failed');
 const raw=await getAccount('testuser-v1');if(!verifyPassword('LongPassword123!',raw.auth))throw Error('scrypt login failed');
 const users=await allAccounts();if(!users.some(x=>x.username==='rootadmin')||!users.some(x=>x.username==='testuser-v1'))throw Error('account list failed');
 const settings={capital:10000,maxExposurePct:100,dailyLoss:2,maxPositionPct:25};
