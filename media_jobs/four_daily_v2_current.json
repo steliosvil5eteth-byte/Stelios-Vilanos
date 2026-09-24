@@ -5,7 +5,7 @@
   "local_date": "2026-09-25",
   "require_photographic_visuals": true,
   "authorization_basis": "Standing user authorization; automatic publishing only after hard QA, rights and live deduplication.",
-  "purpose": "Render the six card-based slots for 2026-09-25 with photographic backgrounds, silent 1080x1080 JPEG carousel cards and a YouTube slideshow with one original local instrumental layer. 20:00 uses a fresh lightning-repeat myth topic after deduplication removed the bats repeat.",
+  "purpose": "Render the six card-based slots for 2026-09-25 with photographic backgrounds, silent 1080x1080 JPEG carousel cards and a YouTube slideshow with one original local instrumental layer. 20:00 uses a fresh Great Wall visibility myth after deduplication removed bats and lightning repeats.",
   "jobs": [
     {
       "id": "current-20260925-0700-relationship-communication",
@@ -293,36 +293,36 @@
       ]
     },
     {
-      "id": "current-20260925-2000-myth-truth-lightning-repeat",
+      "id": "current-20260925-2000-myth-truth-great-wall-space",
       "expected_cards": 4,
       "seconds_per_slide": 6,
       "slides": [
         {
           "title": "ΜΥΘΟΣ Ή ΑΛΗΘΕΙΑ; — 1/4",
-          "text": "Ο κεραυνός δεν χτυπά ποτέ δύο φορές στο ίδιο σημείο. Ισχύει ή είναι ένας από τους πιο γνωστούς μύθους του καιρού;",
-          "source_query": "lightning strike city photograph",
+          "text": "Το Σινικό Τείχος φαίνεται με γυμνό μάτι από το διάστημα — και μάλιστα είναι το μόνο ανθρώπινο έργο που φαίνεται. Ισχύει;",
+          "source_query": "Great Wall of China photograph",
           "source_credit": "Wikimedia Commons contributor",
           "license": "Rights-checked Commons fallback"
         },
         {
           "title": "ΠΡΙΝ ΔΕΙΣ ΤΗΝ ΑΠΑΝΤΗΣΗ — 2/4",
-          "text": "Αν ένα ψηλό κτίριο ή ένας πύργος χτυπηθεί μία φορά, πιστεύεις ότι το ίδιο σημείο είναι μετά «ασφαλές»; Διάλεξε: Μύθος ή Αλήθεια;",
-          "source_query": "lightning skyscraper photograph",
+          "text": "Είναι τεράστιο σε μήκος. Αλλά από μεγάλο ύψος αυτό που μετράει πολύ είναι και το πλάτος, η αντίθεση με το έδαφος και οι συνθήκες παρατήρησης. Τι λες;",
+          "source_query": "Great Wall China mountains photograph",
           "source_credit": "Wikimedia Commons contributor",
           "license": "Rights-checked Commons fallback"
         },
         {
-          "title": "ΤΙ ΔΕΙΧΝΕΙ Η ΜΕΤΕΩΡΟΛΟΓΙΑ — 3/4",
-          "text": "Ο κεραυνός μπορεί να χτυπήσει το ίδιο σημείο ξανά και ξανά. Ψηλά, μυτερά και απομονωμένα αντικείμενα είναι πιο πιθανό να δέχονται επαναλαμβανόμενα πλήγματα.",
-          "footer": "Πηγή ελέγχου: NOAA / National Weather Service",
-          "source_query": "lightning strike tower photograph",
+          "title": "ΤΙ ΛΕΕΙ Η NASA — 3/4",
+          "text": "Η NASA αναφέρει ότι το Τείχος δεν είναι ορατό με γυμνό μάτι από τη Σελήνη και είναι δύσκολο ή αδύνατο να διακριθεί από χαμηλή γήινη τροχιά χωρίς ισχυρό φακό.",
+          "footer": "Πηγή ελέγχου: NASA",
+          "source_query": "Great Wall China aerial photograph",
           "source_credit": "Wikimedia Commons contributor",
           "license": "Rights-checked Commons fallback"
         },
         {
           "title": "Η ΑΠΑΝΤΗΣΗ: ΜΥΘΟΣ — 4/4",
-          "text": "Δεν υπάρχει κανόνας που να «προστατεύει» ένα σημείο επειδή χτυπήθηκε ήδη. Ο ίδιος πύργος, κορυφή ή κτίριο μπορεί να χτυπηθεί πολλές φορές.",
-          "source_query": "lightning building storm photograph",
+          "text": "Το τεράστιο μήκος δεν αρκεί για να το κάνει εύκολα ορατό. Το Σινικό Τείχος δεν είναι το μοναδικό ανθρώπινο έργο που φαίνεται από το διάστημα και δεν φαίνεται με γυμνό μάτι από τη Σελήνη.",
+          "source_query": "Great Wall China landscape photograph",
           "source_credit": "Wikimedia Commons contributor",
           "license": "Rights-checked Commons fallback"
         }
