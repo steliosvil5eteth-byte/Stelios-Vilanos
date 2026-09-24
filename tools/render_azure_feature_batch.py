@@ -148,6 +148,14 @@ def synthesize(script:str, outdir:Path, min_duration=None, max_duration=None):
     res=syn.speak_text_async(script).get()
     if res.reason != speechsdk.ResultReason.SynthesizingAudioCompleted:
         d=speechsdk.SpeechSynthesisCancellationDetails(res); raise RuntimeError(f'Azure F0 Nestoras failed: {d.reason} {d.error_details}')
+    # Azure can append close to a second of useless tail silence. Remove only
+    # the trailing edge; do not trim the beginning, change speech rate, or add
+    # padding, so word-boundary subtitle offsets stay aligned.
+    trimmed=outdir/'nestoras-tail-trim.wav'
+    run(['ffmpeg','-y','-loglevel','error','-i',str(wav),'-af',
+         'areverse,silenceremove=start_periods=1:start_duration=0.02:start_threshold=-48dB,areverse',
+         '-ar','24000','-ac','1','-c:a','pcm_s16le',str(trimmed)])
+    os.replace(trimmed,wav)
     dur=probe_duration(wav)
     if min_duration is None:
         if dur<=80: raise RuntimeError(f'duration gate failed: {dur:.3f}s <= 80s')
