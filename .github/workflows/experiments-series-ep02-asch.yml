@@ -83,7 +83,8 @@ jobs:
               fn=a['filename']
               q=urllib.parse.quote(fn,safe='()_,.-')
               source_page='https://commons.wikimedia.org/wiki/File:'+urllib.parse.quote(fn.replace(' ','_'),safe=':()_,.-')
-              url='https://commons.wikimedia.org/wiki/Special:Redirect/file/'+q+'?width=1800'
+              stable='https://commons.wikimedia.org/wiki/Special:Redirect/file/'+q+'?width=1800'
+              url='https://images.weserv.nl/?url='+urllib.parse.quote(stable,safe='')+'&w=1800&output=jpg'
               raw=root/'work'/f'raw-{idx:02}'
               raw.write_bytes(download(url))
               with Image.open(raw) as im:
