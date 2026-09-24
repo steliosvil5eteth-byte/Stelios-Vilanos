@@ -44,8 +44,7 @@ jobs:
           assert j['require_burned_greek_subtitles'] is True
           assert j['require_photographic_visuals'] is True
           assert j['require_reenactment_label'] is True
-          assert len(j['photo_queries'])>=3
-          assert j.get('photo_target')==12
+          assert len(j.get('visual_assets',[]))==12
           assert j['narration_segments'][-1]=='Η γνώμη σας μετράει. Ακολούθησέ με για περισσότερα.'
           print('Job policy verified.')
           PY
@@ -53,78 +52,56 @@ jobs:
       - name: Verify free Nestoras voice
         run: edge-tts --list-voices | grep -F 'el-GR-NestorasNeural'
 
-      - name: Download diverse rights-cleared photographic reenactment visuals
+      - name: Download pinned scene-relevant Asch visuals
         run: |
           set -euo pipefail
           ROOT="$RUNNER_TEMP/asch"
           mkdir -p "$ROOT/photos" "$ROOT/scenes" "$ROOT/work" "$ROOT/result"
           python3 - <<'PY'
-          import html, json, os, re, time, urllib.error, urllib.parse, urllib.request
+          import json, os, time, urllib.error, urllib.parse, urllib.request
           from pathlib import Path
           from PIL import Image
 
           root=Path(os.environ['RUNNER_TEMP'])/'asch'
           j=json.loads(Path('media_jobs/experiments_series_episode_02_asch_20260925.json').read_text(encoding='utf-8'))
-          target=int(j.get('photo_target',12))
-          bad=('illustration','drawing','map','logo','diagram','icon','poster','stamp','painting','cartoon','render','svg')
-          allowed=('cc by','cc-by','cc0','public domain','cc by-sa','cc-by-sa')
-          seen=set(); candidates=[]; records=[]
+          assets=j['visual_assets']
+          records=[]
 
-          def clean(s): return re.sub('<[^>]+>','',html.unescape(s or '')).strip()
-
-          def fetch_json(url):
+          def download(url):
               delay=2
               for attempt in range(5):
                   try:
-                      req=urllib.request.Request(url,headers={'User-Agent':'SteliosAschReenactment/1.1'})
-                      with urllib.request.urlopen(req,timeout=90) as r:
-                          return json.loads(r.read().decode('utf-8'))
+                      req=urllib.request.Request(url,headers={'User-Agent':'SteliosAschPinnedVisuals/2.0','Accept':'image/*,*/*;q=0.5'})
+                      with urllib.request.urlopen(req,timeout=120) as r:
+                          return r.read(30*1024*1024)
                   except urllib.error.HTTPError as exc:
                       if exc.code!=429 or attempt==4: raise
                       time.sleep(delay); delay*=2
-              raise RuntimeError('unreachable')
+              raise RuntimeError('download failed')
 
-          for q in j['photo_queries']:
-              params={'action':'query','format':'json','generator':'search','gsrsearch':q,'gsrnamespace':'6','gsrlimit':'50','prop':'imageinfo','iiprop':'url|size|extmetadata','iiurlwidth':'1800'}
-              payload=fetch_json('https://commons.wikimedia.org/w/api.php?'+urllib.parse.urlencode(params))
-              for p in payload.get('query',{}).get('pages',{}).values():
-                  title=p.get('title',''); low=title.lower()
-                  if title in seen or any(x in low for x in bad) or not re.search(r'\.(jpe?g)$',title,re.I):
-                      continue
-                  infos=p.get('imageinfo') or []
-                  if not infos: continue
-                  info=infos[0]; meta=info.get('extmetadata',{})
-                  lic=clean(meta.get('LicenseShortName',{}).get('value',''))
-                  usage=clean(meta.get('UsageTerms',{}).get('value',''))
-                  combo=(lic+' '+usage).lower()
-                  if not any(x in combo for x in allowed): continue
-                  if min(int(info.get('width') or 0),int(info.get('height') or 0))<700: continue
-                  imgurl=info.get('thumburl') or info.get('url')
-                  if not imgurl: continue
-                  candidates.append((q,title,imgurl,clean(meta.get('Artist',{}).get('value','')),lic or usage))
-                  seen.add(title)
-              time.sleep(2)
-
-          for q,title,imgurl,artist,license_name in candidates:
-              if len(records)>=target: break
-              idx=len(records)+1
-              dest=root/'photos'/f'photo-{idx:02}.jpg'
-              try:
-                  req=urllib.request.Request(imgurl,headers={'User-Agent':'SteliosAschReenactment/1.1','Accept':'image/*'})
-                  with urllib.request.urlopen(req,timeout=120) as rr:
-                      data=rr.read(25*1024*1024)
-                  dest.write_bytes(data)
-                  with Image.open(dest) as im:
-                      if min(im.size)<700: raise ValueError('too small')
-                      im.convert('RGB').save(dest,quality=94,subsampling=0)
-                  records.append({'query':q,'title':title,'source_page':'https://commons.wikimedia.org/wiki/'+urllib.parse.quote(title.replace(' ','_'),safe=':()_,.-'),'download_url':imgurl,'artist':artist,'license':license_name})
-              except Exception:
-                  dest.unlink(missing_ok=True)
-
-          if len(records)!=target:
-              raise SystemExit(f'Need {target} rights-cleared photographs, got {len(records)}')
+          for idx,a in enumerate(assets,1):
+              fn=a['filename']
+              q=urllib.parse.quote(fn,safe='()_,.-')
+              source_page='https://commons.wikimedia.org/wiki/File:'+urllib.parse.quote(fn.replace(' ','_'),safe=':()_,.-')
+              url='https://commons.wikimedia.org/wiki/Special:Redirect/file/'+q+'?width=1800'
+              raw=root/'work'/f'raw-{idx:02}'
+              raw.write_bytes(download(url))
+              with Image.open(raw) as im:
+                  im=im.convert('RGB')
+                  if a['kind']=='reenactment_photo' and min(im.size)<700:
+                      raise SystemExit(f'photo too small: {fn} {im.size}')
+                  if a['kind']=='asch_material' and min(im.size)<200:
+                      raise SystemExit(f'Asch material too small: {fn} {im.size}')
+                  dest=root/'photos'/f'photo-{idx:02}.jpg'
+                  im.save(dest,quality=94,subsampling=0)
+              records.append({
+                  'index':idx,'filename':fn,'kind':a['kind'],'source_page':source_page,
+                  'credit':a['credit'],'license':a['license']
+              })
+          if len(records)!=12:
+              raise SystemExit('expected exactly 12 pinned visuals')
           (root/'result'/'visual-attribution.json').write_text(json.dumps(records,ensure_ascii=False,indent=2),encoding='utf-8')
-          print('photos=',len(records))
+          print('pinned_visuals=',len(records))
           PY
 
       - name: Build vertical reenactment scenes with explicit labels
@@ -176,12 +153,17 @@ jobs:
               headline=headlines[i-1]
               bb=d.textbbox((0,0),headline,font=f1)
               d.text(((W-(bb[2]-bb[0]))/2,70),headline,font=f1,fill='white')
-              label='ΑΝΑΠΑΡΑΣΤΑΣΗ — ΟΧΙ ΑΡΧΕΙΑΚΟ ΠΛΑΝΟ ΤΗΣ ΔΕΚΑΕΤΙΑΣ ΤΟΥ 1950'
+              if i <= 4:
+                  label='ΥΛΙΚΟ/ΔΙΑΓΡΑΜΜΑ ASCH — ΟΧΙ ΑΥΘΕΝΤΙΚΟ ΠΛΑΝΟ ΤΟΥ 1950'
+                  note='Επαναχρησιμοποιήσιμο επεξηγηματικό υλικό για τη δοκιμή και τα αποτελέσματα.'
+              else:
+                  label='ΣΥΓΧΡΟΝΗ ΦΩΤΟΓΡΑΦΙΚΗ ΑΝΑΠΑΡΑΣΤΑΣΗ — ΟΧΙ ΠΛΑΝΟ ΤΟΥ 1950'
+                  note='Η φωτογραφία χρησιμοποιείται μόνο για οπτική αναπαράσταση της διαδικασίας.'
               bb=d.textbbox((0,0),label,font=f2)
               d.text(((W-(bb[2]-bb[0]))/2,1610),label,font=f2,fill='white')
-              d.text((70,1685),'Οι φωτογραφίες χρησιμοποιούνται για οπτική αναπαράσταση της διαδικασίας.',font=f3,fill=(220,220,220))
+              d.text((70,1685),note,font=f3,fill=(220,220,220))
 
-              if 3 <= i <= 8:
+              if 5 <= i <= 10:
                   x0,y0=175,1370
                   d.rounded_rectangle((x0,y0,905,1545),radius=20,fill=(255,255,255,225))
                   # reference line + choices A/B/C
@@ -279,7 +261,7 @@ jobs:
             'id':'experiments-series-ep02-asch-20260925','publish_ready_technical':True,'voice':'el-GR-NestorasNeural',
             'voice_provider':'edge_tts_free','paid_generation_used':False,'duration_seconds':round(dur,3),'resolution':'1080x1920',
             'burned_synced_greek_subtitles':True,'background_music':False,'avatar_presenter':False,'visual_scene_count':12,
-            'all_scenes_photographic_reenactment':True,'reenactment_label_on_every_scene':True,'fact_checked':True,'cta_exact':True,'dead_air_ge_2s':False,
+            'visuals_scene_relevant_photographic_or_asch_material':True,'photo_reenactments_clearly_labeled':True,'asch_material_clearly_labeled':True,'fact_checked':True,'cta_exact':True,'dead_air_ge_2s':False,
             'requires_direct_final_visual_review_before_publish':True
           }
           (root/'result'/'qa.json').write_text(json.dumps(qa,ensure_ascii=False,indent=2),encoding='utf-8')
