@@ -6,6 +6,7 @@ on:
     paths:
       - 'media_jobs/four_daily_v2_current.json'
       - 'tools/render_carousel_pack.py'
+      - 'tools/render_carousel_pack_robust.py'
   workflow_dispatch:
 
 permissions:
@@ -31,7 +32,7 @@ jobs:
         env:
           OUTPUT_DIR: ${{ runner.temp }}/finished
         run: |
-          /usr/bin/python3 tools/render_carousel_pack.py --manifest media_jobs/four_daily_v2_current.json --output "$OUTPUT_DIR"
+          /usr/bin/python3 tools/render_carousel_pack_robust.py --manifest media_jobs/four_daily_v2_current.json --output "$OUTPUT_DIR"
       - name: Store finished public publishing assets separately
         env:
           OUTPUT_DIR: ${{ runner.temp }}/finished
