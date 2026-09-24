@@ -1,0 +1,50 @@
+name: CURRENT dog + zodiac final direct visual QA
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/current-dog-zodiac-final-direct-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  qa:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install image tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq imagemagick
+      - name: Download exact final card assets
+        run: |
+          set -euo pipefail
+          ROOT="$RUNNER_TEMP/cards"
+          mkdir -p "$ROOT/dog" "$ROOT/zodiac"
+          BASE="https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/915ca2df23dfbaf8"
+          for i in 01 02 03 04; do
+            curl -L --fail --retry 3 "$BASE/current-20260925-1300-dog-bartender-mystery-$i.jpg" -o "$ROOT/dog/$i.jpg"
+          done
+          for i in 01 02 03 04 05 06; do
+            curl -L --fail --retry 3 "$BASE/current-20260925-1100-zodiac-group-b-first-detail-$i.jpg" -o "$ROOT/zodiac/$i.jpg"
+          done
+      - name: Build contact sheets
+        run: |
+          set -euo pipefail
+          ROOT="$RUNNER_TEMP/cards"
+          montage "$ROOT"/dog/*.jpg -thumbnail 360x360 -tile 2x2 -geometry +8+8 "$ROOT/dog-contact-sheet.jpg"
+          montage "$ROOT"/zodiac/*.jpg -thumbnail 360x360 -tile 3x2 -geometry +8+8 "$ROOT/zodiac-contact-sheet.jpg"
+          test -s "$ROOT/dog-contact-sheet.jpg"
+          test -s "$ROOT/zodiac-contact-sheet.jpg"
+      - name: Upload QA sheets
+        uses: actions/upload-artifact@v4
+        with:
+          name: current-dog-zodiac-final-direct-qa
+          path: |
+            ${{ runner.temp }}/cards/dog-contact-sheet.jpg
+            ${{ runner.temp }}/cards/zodiac-contact-sheet.jpg
+          if-no-files-found: error
