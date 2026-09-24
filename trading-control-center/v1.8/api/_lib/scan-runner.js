@@ -7,6 +7,7 @@ import {marketFreshness} from './freshness.js';
 import {portfolioMetrics} from './portfolio.js';
 import {fetchEventSignal,eventDataConfig,combineTechnicalAndEvent} from './event-data.js';
 import {signalPortfolioContext} from './holdings.js';
+import {publishSignalAlerts} from './signal-alerts.js';
 
 function symbolsFrom(value,maxSymbols=5){
   const arr=Array.isArray(value)?value:String(value||'').split(',');
@@ -42,7 +43,7 @@ export async function runServerScan(user,{symbols=null,source='manual',maxSymbol
   const providers=[...new Set(fetched.filter(x=>!x.error).map(x=>x.provider).filter(Boolean))];
   const ledger=await updateForwardLedger(user,{fetched,evaluations,strategy:current,settings:{...settings,barIntervalMinutes:current.settings.barIntervalMinutes}});
   const run={id:`SCAN-${Date.now()}-${Math.random().toString(36).slice(2,7)}`,source,provider:providers.length===1?providers[0]:'mixed',providers,marketDataConfig:marketDataConfig(),signalMarketConfig:signalCfg,eventDataConfig:eventCfg,riskState:{monthlyRealized:riskState.monthlyRealized,monthlyLossLimit:riskState.monthlyLossLimit,monthlyLossHit:riskState.monthlyLossHit},startedAt,completedAt:new Date().toISOString(),strategyId:current.id,symbols:configured,evaluations,accepted:evaluations.filter(x=>x.accepted).length,rejected:evaluations.filter(x=>!x.accepted).length,forwardLedger:{changed:ledger.changed,open:ledger.open,closed:ledger.closed}};
-  const key=`tcc:${user}:scanRuns`;const rows=(await getJson(key))||[];rows.unshift(run);await setJson(key,rows.slice(0,100));
+  run.alerts=await publishSignalAlerts(user,evaluations,run.id);const key=`tcc:${user}:scanRuns`;const rows=(await getJson(key))||[];rows.unshift(run);await setJson(key,rows.slice(0,100));
   await appendAudit(user,{ts:new Date().toISOString(),type:'SERVER_SCAN',detail:`${source} symbols=${configured.length} accepted=${run.accepted} rejected=${run.rejected} strategy=${current.id}`});
   return run;
 }
