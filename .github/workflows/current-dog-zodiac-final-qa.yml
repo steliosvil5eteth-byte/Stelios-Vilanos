@@ -1,0 +1,67 @@
+name: CURRENT dog zodiac final visual QA
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/current-dog-zodiac-final-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  qa:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install image tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq python3-pil
+      - name: Fetch exact final media-output assets
+        run: |
+          set -euo pipefail
+          git fetch origin media-output --depth=1
+          git worktree add --detach "$RUNNER_TEMP/out" FETCH_HEAD
+          ROOT="$RUNNER_TEMP/out/jobs/3ea27bb02fbafeff"
+          test -s "$ROOT/current-20260925-1100-zodiac-group-b-first-detail-01.jpg"
+          test -s "$ROOT/current-20260925-1300-dog-bartender-mystery-01.jpg"
+      - name: Build contact sheets
+        run: |
+          python3 - <<'PY'
+          from PIL import Image, ImageOps, ImageDraw
+          import os
+          from pathlib import Path
+          root=Path(os.environ['RUNNER_TEMP'])/'out'/'jobs'/'3ea27bb02fbafeff'
+          q=Path(os.environ['RUNNER_TEMP'])/'qa'
+          q.mkdir()
+          def sheet(paths, cols, name):
+              thumbs=[]
+              for i,p in enumerate(paths,1):
+                  im=Image.open(p).convert('RGB')
+                  im=ImageOps.contain(im,(360,360))
+                  canvas=Image.new('RGB',(380,405),'white')
+                  canvas.paste(im,((380-im.width)//2,10))
+                  d=ImageDraw.Draw(canvas)
+                  d.text((15,375),f'{i}',fill='black')
+                  thumbs.append(canvas)
+              rows=(len(thumbs)+cols-1)//cols
+              out=Image.new('RGB',(cols*380,rows*405),(235,235,235))
+              for i,im in enumerate(thumbs):
+                  out.paste(im,((i%cols)*380,(i//cols)*405))
+              out.save(q/name,quality=92)
+          z=sorted(root.glob('current-20260925-1100-zodiac-group-b-first-detail-*.jpg'))
+          d=sorted(root.glob('current-20260925-1300-dog-bartender-mystery-*.jpg'))
+          assert len(z)==6, len(z)
+          assert len(d)==4, len(d)
+          sheet(z,3,'zodiac-final-contact-sheet.jpg')
+          sheet(d,2,'dog-final-contact-sheet.jpg')
+          PY
+      - name: Upload final QA sheets
+        uses: actions/upload-artifact@v4
+        with:
+          name: current-dog-zodiac-final-qa
+          path: ${{ runner.temp }}/qa/*.jpg
+          if-no-files-found: error
