@@ -1,0 +1,522 @@
+{
+  "batch_id": "e212fa641035b24b",
+  "batch_sha256": "e212fa641035b24be8755539854daddb4e64c5059c68efaa5fe1966bf373ef00",
+  "paid_ai_credits_used": 0,
+  "photographic_visuals_required": true,
+  "jobs": [
+    {
+      "id": "current-20260925-0700-relationship-communication",
+      "status": "rendered",
+      "card_count": 7,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCouple%20with%20mobile%20phones%20at%20Senso-ji.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FBeautiful%20Couple%20with%20Phone.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCouple%20enjoys%20time%20together%20laughing%20and%20talking%20on%20the%20phone.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCSIRO%20ScienceImage%202241%20A%20man%20and%20woman%20chatting%20outside%20a%20cafe.jpg&w=1600&output=jpg",
+          "source_credit": "CSIRO",
+          "license": "CC BY 3.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FOlder%20couple%20enjoys%20coffee%20together.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FElderly%20Couple%20Eating.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC0 1.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F9%2F92%2FElderly_couple_%25281586495%2529.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-20260925-0700-relationship-communication-01.jpg",
+          "bytes": 401090,
+          "sha256": "2a1e11aa92d407a67912cebd14f3805259dd599dad691e28af79c6700db84d8c"
+        },
+        {
+          "name": "current-20260925-0700-relationship-communication-02.jpg",
+          "bytes": 309495,
+          "sha256": "46595aa9d5a7500d2045c05862a62672a2848a6ed82af987388a82775ec9a685"
+        },
+        {
+          "name": "current-20260925-0700-relationship-communication-03.jpg",
+          "bytes": 350203,
+          "sha256": "56c4cececfa4551d94b9765ec6aa9600eee8b60c3b241020dd157b6556bca4eb"
+        },
+        {
+          "name": "current-20260925-0700-relationship-communication-04.jpg",
+          "bytes": 349767,
+          "sha256": "a151407aac7287c0420bcce47d95691c054482d3c0d2df153940ebd4befa7606"
+        },
+        {
+          "name": "current-20260925-0700-relationship-communication-05.jpg",
+          "bytes": 269676,
+          "sha256": "a56161e3ab67174b21d4ded51f0177d8766eff454f96fc8203c22d5b107ac9a1"
+        },
+        {
+          "name": "current-20260925-0700-relationship-communication-06.jpg",
+          "bytes": 409495,
+          "sha256": "e98bcc367db103a1e9ccd075eb2f2ed8e3f1eec874b50bbee9660b61dd38b926"
+        },
+        {
+          "name": "current-20260925-0700-relationship-communication-07.jpg",
+          "bytes": 338244,
+          "sha256": "3d3c73def9810f625518ad6e1569453db0eb0065633a0292bce614aac56b2808"
+        },
+        {
+          "name": "current-20260925-0700-relationship-communication.mp4",
+          "bytes": 1253846,
+          "sha256": "f05dd9df5c99492b033c739e80bb02b075b7566c926e98544d7a4c3d752a4283"
+        }
+      ]
+    },
+    {
+      "id": "current-20260925-0900-survival-blackout",
+      "status": "rendered",
+      "card_count": 9,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 45.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FNIGHT%20LIGHT%20AT%20HOME.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/USB%20power%20bank.jpg?width=1600",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCharging%20a%20smartphone%20with%20a%20USB%20power%20bank.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F0%2F09%2FFood_into_a_refrigerator_-_20111002.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FFlashlight%20%2851852112087%29.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FLinterna%20encendida.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FNSS%20Transistor%20Radio.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fb7%2FLed_flashlight.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FDatrex%20emergency%20drinking%20water%20packet.JPG&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-20260925-0900-survival-blackout-01.jpg",
+          "bytes": 336157,
+          "sha256": "c4ca38b08b2486ea5693e99214118baf58520a0f89621d91ae4f0052b043d06f"
+        },
+        {
+          "name": "current-20260925-0900-survival-blackout-02.jpg",
+          "bytes": 303659,
+          "sha256": "83d9906342a00d7be977e74c95f24808f0974e77b361b2c0952a0aeb3cd4abbb"
+        },
+        {
+          "name": "current-20260925-0900-survival-blackout-03.jpg",
+          "bytes": 498175,
+          "sha256": "296668a9195e85d27be1542975c5fc1d0bae91c0177847d5404b81025c950a37"
+        },
+        {
+          "name": "current-20260925-0900-survival-blackout-04.jpg",
+          "bytes": 352302,
+          "sha256": "349b7dec412621203d03871bfa71f12e982c6e3211063efbe84a7cb53c91a7fd"
+        },
+        {
+          "name": "current-20260925-0900-survival-blackout-05.jpg",
+          "bytes": 243047,
+          "sha256": "185910af08f7ab2c51bd631f43a94e51c0df14fdd096d30ab5189f3393052a15"
+        },
+        {
+          "name": "current-20260925-0900-survival-blackout-06.jpg",
+          "bytes": 230741,
+          "sha256": "dbb67309ed8f1a863464cee2cbf05eccfce57080c8cf1e431a5842d6a8d380a8"
+        },
+        {
+          "name": "current-20260925-0900-survival-blackout-07.jpg",
+          "bytes": 362332,
+          "sha256": "f61ab7c44f3a1cc5d01898a314a0613c68051759cc539d8df0efb922effdf549"
+        },
+        {
+          "name": "current-20260925-0900-survival-blackout-08.jpg",
+          "bytes": 382953,
+          "sha256": "6e75f2a0d07fac1a3c948cbc34fb33b566a8fc4ff2d89746f5e1bc3c70c8433d"
+        },
+        {
+          "name": "current-20260925-0900-survival-blackout-09.jpg",
+          "bytes": 331048,
+          "sha256": "6495f0dec212655039f12b774eb399224f0a98d9d39024341be852054cdb9173"
+        },
+        {
+          "name": "current-20260925-0900-survival-blackout.mp4",
+          "bytes": 1571468,
+          "sha256": "10d2a9b275cb38d8be186740df4205cf0dcbfc52a7f24e95b2aaed356bbd7ff6"
+        }
+      ]
+    },
+    {
+      "id": "current-20260925-1100-zodiac-group-b-first-detail",
+      "status": "rendered",
+      "card_count": 6,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 30.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Photo%20of%20the%20constellation%20Libra%20produced%20by%20NOIRLab%20in%20collaboration%20with%20Eckhard%20Slawik,%20a%20German%20astrophotographer%20(libra).jpg?width=1600",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Photo%20of%20the%20constellation%20Scorpius%20produced%20by%20NOIRLab%20in%20collaboration%20with%20Eckhard%20Slawik,%20a%20German%20astrophotographer%20(scorpius).jpg?width=1600",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Photo%20of%20the%20constellation%20Sagittarius%20produced%20by%20NOIRLab%20in%20collaboration%20with%20Eckhard%20Slawik,%20a%20German%20astrophotographer%20(sagittarius).jpg?width=1600",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Photo%20of%20the%20constellation%20Capricornus%20produced%20by%20NOIRLab%20in%20collaboration%20with%20Eckhard%20Slawik,%20a%20German%20astrophotographer%20(capricornus).jpg?width=1600",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Photo%20of%20the%20constellation%20Aquarius%20produced%20by%20NOIRLab%20in%20collaboration%20with%20Eckhard%20Slawik,%20a%20German%20astrophotographer%20(aquarius).jpg?width=1600",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Photo%20of%20the%20constellation%20Pisces%20produced%20by%20NOIRLab%20in%20collaboration%20with%20Eckhard%20Slawik,%20a%20German%20astrophotographer%20(pisces).jpg?width=1600",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-20260925-1100-zodiac-group-b-first-detail-01.jpg",
+          "bytes": 582045,
+          "sha256": "555eb7050e428bddb6e9a94b9b2dfc8c62e6db0a5f67867f506735dbb3bd4d5e"
+        },
+        {
+          "name": "current-20260925-1100-zodiac-group-b-first-detail-02.jpg",
+          "bytes": 662153,
+          "sha256": "b82a1f8cc4493c102d58a052ca3656e6211d57c7594332c89bc493b457f386ff"
+        },
+        {
+          "name": "current-20260925-1100-zodiac-group-b-first-detail-03.jpg",
+          "bytes": 656627,
+          "sha256": "649c0c63cb5da58e88189996eb186500d0abdf046e996ae414cffbd157832fc8"
+        },
+        {
+          "name": "current-20260925-1100-zodiac-group-b-first-detail-04.jpg",
+          "bytes": 612251,
+          "sha256": "5b841d10ddda69feef920b528ea1caac0d58caaec205c0c6f97231d0fafc8b5d"
+        },
+        {
+          "name": "current-20260925-1100-zodiac-group-b-first-detail-05.jpg",
+          "bytes": 574449,
+          "sha256": "45b486016bbfaf224d92e7afd969fe74b1a7e5156e9a4a804c1028dcbca2a05b"
+        },
+        {
+          "name": "current-20260925-1100-zodiac-group-b-first-detail-06.jpg",
+          "bytes": 550899,
+          "sha256": "456bd679b1d1eb6bd52c6c91076813871a2208ba17d1f76b3c556c7b4d31f048"
+        },
+        {
+          "name": "current-20260925-1100-zodiac-group-b-first-detail.mp4",
+          "bytes": 2337545,
+          "sha256": "37033958cb721d8558a52661001f67ecb784bf679c31ab942b58005451c0aa1f"
+        }
+      ]
+    },
+    {
+      "id": "current-20260925-1300-dog-bartender-mystery",
+      "status": "rendered",
+      "card_count": 4,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 24.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FE5%20pub%20dog%20at%20dog-friendly%20pub.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fb0%2FBartender_%2528Unsplash%2529.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCocktail%20bar.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FAlcohol-bar-party-cocktail-1%20%2823698684204%29.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC0 1.0"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-20260925-1300-dog-bartender-mystery-01.jpg",
+          "bytes": 415991,
+          "sha256": "52fee5a35810c146cf12154a22e9fe2f44334261439c8a91eff1e30555ab7fd1"
+        },
+        {
+          "name": "current-20260925-1300-dog-bartender-mystery-02.jpg",
+          "bytes": 274414,
+          "sha256": "8291f1a29b6be671e2af58d43feeb91a36ff9f315331b223623602d0a8048d91"
+        },
+        {
+          "name": "current-20260925-1300-dog-bartender-mystery-03.jpg",
+          "bytes": 406129,
+          "sha256": "5b19714b4c83f43c6c930b44591e5c1da3408ac83a517c71747fdb8db4a346be"
+        },
+        {
+          "name": "current-20260925-1300-dog-bartender-mystery-04.jpg",
+          "bytes": 261283,
+          "sha256": "f09e6d6f8509d08b9137f4754c963b42632f1aa07ab3a9a633d642a31952ac5c"
+        },
+        {
+          "name": "current-20260925-1300-dog-bartender-mystery.mp4",
+          "bytes": 713100,
+          "sha256": "ef07dd19952d06de55b709ab5c28cc58ddc8fe45700d09f622d8adaeb23d5957"
+        }
+      ]
+    },
+    {
+      "id": "current-20260925-1500-half-orange-story",
+      "status": "rendered",
+      "card_count": 5,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 30.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FOrange%20fruit.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FOlder%20couple%20enjoys%20coffee%20together.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FElderly%20couple%20%281527965%29.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FElderly%20Couple%20Eating.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC0 1.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F3%2F39%2FElderly_couple_%25281527965%2529.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-20260925-1500-half-orange-story-01.jpg",
+          "bytes": 388274,
+          "sha256": "8865fb015f4633a34c6320c051a756dc44caa085fcf4a342d480374aac3cd0f5"
+        },
+        {
+          "name": "current-20260925-1500-half-orange-story-02.jpg",
+          "bytes": 259072,
+          "sha256": "3a2b4a30d3ae79c81d6002b65a1ef010a2f33085b2e4e68166481ff40602eeb0"
+        },
+        {
+          "name": "current-20260925-1500-half-orange-story-03.jpg",
+          "bytes": 296669,
+          "sha256": "eb3d5941efe8c4f69ccb3a2b452d095e0c2a9fd66185130700f03cb7828107b5"
+        },
+        {
+          "name": "current-20260925-1500-half-orange-story-04.jpg",
+          "bytes": 387809,
+          "sha256": "d29f612ab0f15489ab52f227694736fa174563489167ed68b3d060ed043f5bc0"
+        },
+        {
+          "name": "current-20260925-1500-half-orange-story-05.jpg",
+          "bytes": 305776,
+          "sha256": "8eb89885a0733bae7325d7c73900204403c7120be127040376a1d7dfa6096fd8"
+        },
+        {
+          "name": "current-20260925-1500-half-orange-story.mp4",
+          "bytes": 922496,
+          "sha256": "072ab37e0694886c3ffed814fa6d626db3dc176d1e439b6b43baefe3d9cd57ea"
+        }
+      ]
+    },
+    {
+      "id": "current-20260925-2000-myth-truth-lightning-repeat",
+      "status": "rendered",
+      "card_count": 4,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 24.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/CN_Tower_struck_by_lightning-Edit%28Taxi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Raul Heinrich",
+          "license": "CC BY-SA 3.0",
+          "source_title": "File:CN Tower struck by lightning-Edit(Taxi).jpg",
+          "fallback_query": "lightning strike"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Lightning3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "U.S. Air Force photo by Edward Aspera Jr.",
+          "license": "Public domain",
+          "source_title": "File:Lightning3.jpg",
+          "fallback_query": "lightning"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/09/CN_Tower_struck_by_lightning-Edit%28Taxi%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Raul Heinrich",
+          "license": "CC BY-SA 3.0",
+          "source_title": "File:CN Tower struck by lightning-Edit(Taxi).jpg",
+          "fallback_query": "lightning strike tower photograph"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Lightning3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "U.S. Air Force photo by Edward Aspera Jr.",
+          "license": "Public domain",
+          "source_title": "File:Lightning3.jpg",
+          "fallback_query": "lightning"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-20260925-2000-myth-truth-lightning-repeat-01.jpg",
+          "bytes": 274647,
+          "sha256": "c3194ab54b2780af94c1f208503de627c394aff2f38e683b02bfda79be870f12"
+        },
+        {
+          "name": "current-20260925-2000-myth-truth-lightning-repeat-02.jpg",
+          "bytes": 389235,
+          "sha256": "49f7a967a6d3df59fedf0b0fd0d1da929ea3dab2e2440c51cc52c1d3e291f6e8"
+        },
+        {
+          "name": "current-20260925-2000-myth-truth-lightning-repeat-03.jpg",
+          "bytes": 311869,
+          "sha256": "390882f757f1d5a8a11621e4dacccbbdf83e2e092c3cce62212bda55fae6be1e"
+        },
+        {
+          "name": "current-20260925-2000-myth-truth-lightning-repeat-04.jpg",
+          "bytes": 392229,
+          "sha256": "dc4ec63a2d732285500f28e331fbba748e3ed084d96906c15544fc8a2509eb7e"
+        },
+        {
+          "name": "current-20260925-2000-myth-truth-lightning-repeat.mp4",
+          "bytes": 742410,
+          "sha256": "93718f744b47e9e16d3f1e92a8fef2e0ce8cff3076f4876a1a673cd596d4f853"
+        }
+      ]
+    }
+  ]
+}
