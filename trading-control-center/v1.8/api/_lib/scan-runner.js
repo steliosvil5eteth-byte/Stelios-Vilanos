@@ -9,7 +9,7 @@ import {fetchEventSignal,eventDataConfig,combineTechnicalAndEvent} from './event
 
 function symbolsFrom(value,maxSymbols=5){
   const arr=Array.isArray(value)?value:String(value||'').split(',');
-  return [...new Set(arr.map(x=>String(x).trim().toUpperCase()).filter(x=>/^[A-Z0-9.\\/\\-:]{1,24}$/.test(x)))].slice(0,Math.max(1,Math.min(25,Number(maxSymbols)||5)));
+  return [...new Set(arr.map(x=>String(x).trim().toUpperCase()).filter(x=>/^[A-Z0-9.\\/:-]{1,24}$/.test(x)))].slice(0,Math.max(1,Math.min(25,Number(maxSymbols)||5)));
 }
 
 export async function runServerScan(user,{symbols=null,source='manual',maxSymbols=5}={}){
