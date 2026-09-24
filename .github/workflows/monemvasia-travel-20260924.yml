@@ -1,0 +1,76 @@
+name: Monemvasia travel 2026-09-24 - Nestoras real photos
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'media_jobs/monemvasia_travel_20260924.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: monemvasia-travel-20260924
+  cancel-in-progress: false
+
+jobs:
+  render:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Verify production settings
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          m=json.loads(Path('media_jobs/monemvasia_travel_20260924.json').read_text(encoding='utf-8'))
+          assert m['approved'] is True
+          assert m['publish_to_social'] is True
+          assert m['voice'] == 'el-GR-NestorasNeural'
+          assert m['background_music'] is False
+          assert m['min_duration_seconds'] >= 80
+          assert m['destination'] == 'Monemvasia'
+          print('Production settings verified.')
+          PY
+
+      - name: Install media tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg python3-pil fonts-dejavu-core
+
+      - name: Render final video
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+          OUTPUT_DIR: ${{ runner.temp }}/monemvasia-travel
+        run: |
+          set -euo pipefail
+          python3 tools/render_monemvasia_travel.py \
+            --manifest media_jobs/monemvasia_travel_20260924.json \
+            --output "$OUTPUT_DIR"
+
+      - name: Publish final media to media-output branch
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/monemvasia-travel
+        run: |
+          set -euo pipefail
+          git fetch origin media-output --depth=1
+          OUT="$RUNNER_TEMP/media-output-repo"
+          git worktree add --detach "$OUT" origin/media-output
+          DEST="$OUT/jobs/travel-monemvasia-20260924-1830"
+          rm -rf "$DEST"
+          mkdir -p "$DEST"
+          cp -a "$OUTPUT_DIR/result"/. "$DEST"/
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/travel-monemvasia-20260924-1830
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m "Render Monemvasia travel video for 2026-09-24 18:30"
+            git -C "$OUT" push origin HEAD:media-output
+          fi
+          cat "$OUTPUT_DIR/result/qa.json" >> "$GITHUB_STEP_SUMMARY"
