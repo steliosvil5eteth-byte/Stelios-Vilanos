@@ -33,7 +33,7 @@ jobs:
           OUTPUT_DIR: ${{ runner.temp }}/finished
         run: |
           set -euo pipefail
-          python3 tools/render_azure_feature_batch.py --manifest media_jobs/nafplio_travel_20260924.json --output "$OUTPUT_DIR"
+          python3 tools/render_azure_travel_feature.py --manifest media_jobs/nafplio_travel_20260924.json --output "$OUTPUT_DIR"
       - name: Publish QA-passed media to media-output branch
         env:
           OUTPUT_DIR: ${{ runner.temp }}/finished
