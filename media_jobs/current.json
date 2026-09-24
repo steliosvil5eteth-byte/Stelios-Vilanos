@@ -1,5 +1,5 @@
 {
-  "approved": true,
+  "approved": false,
   "paid_generation_allowed": false,
   "purpose": "Prepare only the missing 2026-09-24 13:00 Dog Bartender four-card carousel and YouTube slideshow at zero incremental cost. No social publishing occurs in this renderer.",
   "jobs": [
@@ -32,7 +32,14 @@
           "customer": "Τελικά βάλε κάτι δυνατό.",
           "dog": "Ένα νερό. Αύριο θα με ευχαριστείς."
         }
-      ]
+      ],
+      "approved": false,
+      "publish_to_social": false,
+      "reset_hold": true
     }
-  ]
+  ],
+  "reset_hold": true,
+  "publish_to_social": false,
+  "production_status": "RESET_HOLD",
+  "reset_note": "Superseded by SOCIAL_RESET_20260924. Historical/reference only. Do not generate, schedule, publish, retry, restore, or catch up."
 }
