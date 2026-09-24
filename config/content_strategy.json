@@ -1,15 +1,15 @@
 {
-  "version": 24,
+  "version": 25,
   "timezone": "Europe/Athens",
   "strategy_id": "FOUR_DAILY_V2",
-  "program_label": "CURRENT_NINE_DAILY",
+  "program_label": "CURRENT_TEN_DAILY",
   "effective_date": "2026-09-24",
   "priority": "AUTHORITATIVE_LATEST_USER_STRATEGY",
   "compatibility_note": "The historical strategy_id is retained for worker compatibility; the authoritative program is CURRENT_NINE_DAILY.",
-  "daily_target_posts_per_network": 9,
-  "destination_target_per_day": 36,
+  "daily_target_posts_per_network": 10,
+  "destination_target_per_day": 40,
   "daily_target_videos": {
-    "narrated_feature": 3,
+    "narrated_feature": 4,
     "carousel_or_slideshow": 6
   },
   "legacy_pipeline": {
@@ -19,7 +19,7 @@
     "rule": "Retire old 12-sign standalone, avatar, weekly-introduction, dog/barista/terrier video, filler and superseded schedules. The current six-sign zodiac carousel and the current 13:00 Dog Bartender four-card photo series are NOT legacy."
   },
   "cycle": {
-    "mode": "all_nine_every_day",
+    "mode": "all_ten_every_day",
     "start_date": "2026-09-24",
     "alternating_days": false,
     "order": [
@@ -31,10 +31,11 @@
       "phenomenon_video",
       "greece_two_day_video",
       "myth_truth_carousel",
+      "documented_experiments_video",
       "legend_video"
     ],
     "pre_generate_future_days": true,
-    "date_rule": "All nine categories occur every Europe/Athens calendar date. A missed or blocked item never shifts the calendar, is never backdated and is never automatically reposted as catch-up."
+    "date_rule": "All ten categories occur every Europe/Athens calendar date. A missed or blocked item never shifts the calendar, is never backdated and is never automatically reposted as catch-up."
   },
   "publishing": {
     "networks": [
@@ -53,12 +54,13 @@
       "17:00",
       "18:30",
       "20:00",
+      "21:30",
       "23:00"
     ],
     "schedule_effective_date": "2026-09-24",
     "caption_language": "el",
     "hashtags_per_post_max": 5,
-    "schedule_rule": "07:00 relationship changes; 09:00 survival rules; 11:00 six-sign zodiac A/B; 13:00 Dog Bartender; 15:00 love/soul story; 17:00 fact-checked strange real phenomenon; 18:30 two-day trip in Greece; 20:00 Myth or Truth; 23:00 different international/foreign legend. The old 18:00 travel/phenomenon draft slot is retired."
+    "schedule_rule": "07:00 relationships; 09:00 survival; 11:00 zodiac; 13:00 Dog Bartender; 15:00 emotional story; 17:00 strange real phenomenon; 18:30 two-day trip in Greece; 20:00 Myth or Truth; 21:30 documented experiments; 23:00 international/foreign legend. Old 18:00 slot remains retired."
   },
   "workflow": {
     "ask_for_confirmation_before_generation": false,
@@ -111,7 +113,7 @@
   },
   "current_strategy": {
     "strategy_id": "FOUR_DAILY_V2",
-    "program_label": "CURRENT_NINE_DAILY",
+    "program_label": "CURRENT_TEN_DAILY",
     "effective_date": "2026-09-24",
     "timezone": "Europe/Athens",
     "networks": [
@@ -120,8 +122,8 @@
       "tiktok",
       "youtube"
     ],
-    "posts_per_network_per_day": 9,
-    "destination_target_per_day": 36,
+    "posts_per_network_per_day": 10,
+    "destination_target_per_day": 40,
     "daily_posts": [
       {
         "category": "relationship_changes_carousel",
@@ -215,6 +217,14 @@
         "platform_rule": "Facebook/Instagram/TikTok: four-card carousel where supported; YouTube: one complete four-card slideshow/Short. Exactly one music layer."
       },
       {
+        "category": "documented_experiments_video",
+        "count": 1,
+        "preferred_time": "21:30",
+        "rule": "One documented real experiment or real-world trial per day. Start from verifiable evidence and explain what was tested, who ran it, what happened, what worked or failed, and what the limitations or ethical issues were. Distinguish documented facts from disputed interpretations; no conspiracy framing as fact.",
+        "first_episode": "Milgram obedience experiments",
+        "format_rule": "Vertical 9:16, 1080x1920, strictly longer than 80 seconds, agreed Greek male voice Νέστορας only, synchronized burned-in Greek subtitles, scene-relevant photographic/approved archival visuals, no background music/avatar, strong hook, source/rights verification, and PASSED_FINAL_REVIEW before publication."
+      },
+      {
         "category": "legend_video",
         "count": 1,
         "preferred_time": "23:00",
@@ -234,6 +244,7 @@
       "applies_to": [
         "phenomenon_video",
         "greece_two_day_video",
+        "documented_experiments_video",
         "legend_video"
       ],
       "aspect_ratio": "9:16",
@@ -299,9 +310,10 @@
         "17:00",
         "18:30",
         "20:00",
+        "21:30",
         "23:00"
       ],
-      "rule": "Exactly nine logical posts per day across the four connected networks. Auto-publish remains OFF until the exact final artifact has PASSED_FINAL_REVIEW. Scheduled/PENDING is not Published.",
+      "rule": "Exactly ten logical posts per day across the four connected networks. Auto-publish remains OFF until the exact final artifact has PASSED_FINAL_REVIEW. Scheduled/PENDING is not Published.",
       "qa_gate": "AUTO-PUBLISH ONLY AFTER EXPLICIT FULL QA PASS; otherwise autoPublish=false.",
       "retired_slots": [
         "18:00"
@@ -326,11 +338,6 @@
         "voice": "el_GR-rapunzelina-medium",
         "voice_provider": "Piper local",
         "publishing_rule": "Do not create a seventh daily logical post unless the user explicitly assigns/replaces a slot."
-      },
-      "documented_experiments": {
-        "enabled": true,
-        "schedule": "unscheduled_extra_until_user_assigns_or_replaces_a_slot",
-        "rule": "Series about documented social/psychological/government experiments and real-world trials. Fact-check every episode; distinguish documented evidence from disputed claims; no publication until full QA passes."
       }
     }
   }
