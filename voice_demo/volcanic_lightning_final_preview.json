@@ -13,7 +13,33 @@
     "photo_based": true,
     "photo_count": 4,
     "vertical_9_16": true,
-    "replace_previous_poor_visual": true
+    "replace_previous_poor_visual": true,
+    "verified_sources": [
+      {
+        "file": "Taal Lightning Strike During Eruption.jpg",
+        "creator": "etrhamjr",
+        "license": "CC BY-SA 4.0",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Taal_Lightning_Strike_During_Eruption.jpg"
+      },
+      {
+        "file": "Galunggung.jpg",
+        "creator": "R. Hadian / USGS/NOAA",
+        "license": "Public Domain",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Galunggung.jpg"
+      },
+      {
+        "file": "Rinjani 1994.jpg",
+        "creator": "Oliver Spalt",
+        "license": "CC BY 2.0",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Rinjani_1994.jpg"
+      },
+      {
+        "file": "Eyjafjallajökull by Terje Sørgjerd.jpg",
+        "creator": "Terje Sørgjerd",
+        "license": "CC BY-SA 3.0",
+        "source_page": "https://commons.wikimedia.org/wiki/File:Eyjafjallajökull_by_Terje_Sørgjerd.jpg"
+      }
+    ]
   },
   "segments": [
     "Μπορεί ένα ηφαίστειο να δημιουργήσει τη δική του καταιγίδα;",
@@ -48,5 +74,10 @@
     "Άρα η εικόνα μοιάζει υπερφυσική, αλλά η εξήγηση είναι φυσική.",
     "Ένα ηφαιστειακό νέφος μπορεί να λειτουργήσει σαν τεράστια ηλεκτρική μηχανή.",
     "Αν σας άρεσε, ακολουθήστε για περισσότερα."
-  ]
+  ],
+  "tts_policy": {
+    "max_attempts": 8,
+    "initial_backoff_seconds": 8,
+    "inter_segment_delay_seconds": 1.2
+  }
 }
