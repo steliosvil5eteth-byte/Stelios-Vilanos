@@ -101,16 +101,19 @@ def explicit_visuals(items, outdir:Path, target:int):
         if marker not in page_path:
             raise RuntimeError(f'Pinned visual {i} source page is not a Commons File page')
         filename=page_path.split(marker,1)[1].replace('_',' ')
-        # Encode the complete inner URL exactly once. Pre-encoding the file name
-        # would turn %20 into %2520 when the proxy URL is encoded.
-        stable='https://commons.wikimedia.org/wiki/Special:Redirect/file/'+filename+'?width=1800'
-        fetch_url='https://images.weserv.nl/?url='+urllib.parse.quote(stable,safe='')+'&w=1800&output=jpg'
+        stable='https://commons.wikimedia.org/wiki/Special:Redirect/file/'+urllib.parse.quote(filename,safe='()_,.-')+'?width=1800'
+        candidates=[]
+        if mu.hostname in {'upload.wikimedia.org','commons.wikimedia.org'}:
+            candidates.append(media)
+        candidates.append(stable)
+        candidates.append('https://images.weserv.nl/?url='+urllib.parse.quote(stable,safe='')+'&w=1800&output=jpg')
         ok=False; last=None
-        for attempt in range(5):
+        for attempt in range(6):
             try:
+                fetch_url=candidates[min(attempt,len(candidates)-1)]
                 rr=sess.get(fetch_url,timeout=90,allow_redirects=True)
                 if rr.status_code==429:
-                    last=RuntimeError('HTTP 429 from vetted-image proxy')
+                    last=RuntimeError('HTTP 429 while fetching vetted visual')
                     time.sleep(4*(attempt+1)); continue
                 rr.raise_for_status(); dest.write_bytes(rr.content)
                 with Image.open(dest) as im:
