@@ -50,7 +50,7 @@ jobs:
           OUTPUT_DIR: ${{ runner.temp }}/monemvasia-travel
         run: |
           set -euo pipefail
-          python3 tools/render_monemvasia_travel.py \
+          python3 tools/render_monemvasia_travel_v2.py \
             --manifest media_jobs/monemvasia_travel_20260924.json \
             --output "$OUTPUT_DIR"
 
