@@ -25,29 +25,18 @@
     "notion_archive_data_source_id": "46cd5cf4-5f7e-46e8-b0ef-274aeadbdb52"
   },
   "publishing": {
-    "program_label": "CURRENT_TEN_DAILY",
-    "daily_target_logical_posts_per_network": 10,
-    "daily_target_destinations": 40,
-    "slots_local_time": [
-      "07:00",
-      "09:00",
-      "11:00",
-      "13:00",
-      "15:00",
-      "17:00",
-      "18:30",
-      "20:00",
-      "21:30",
-      "23:00"
-    ],
-    "publish_to_all_connected_socials": true,
-    "require_user_confirmation": false,
+    "program_label": "RESET_HOLD",
+    "daily_target_logical_posts_per_network": 0,
+    "daily_target_destinations": 0,
+    "slots_local_time": [],
+    "publish_to_all_connected_socials": false,
+    "require_user_confirmation": true,
     "daily_target_source": "config/content_strategy.json",
     "reliability_file": "config/publishing_reliability.json",
-    "rule": "Exactly ten logical daily posts. Auto-publish remains disabled until PASSED_FINAL_REVIEW."
+    "rule": "Publishing is disabled during RESET_HOLD."
   },
   "runner": {
-    "max_jobs_per_run": 10,
+    "max_jobs_per_run": 0,
     "duplicate_policy": "one_logical_post_per_date_category_platform",
     "require_future_schedule": true,
     "hands_off_mode": false,
@@ -55,7 +44,8 @@
     "archive_every_video": true,
     "no_false_rollback": true,
     "never_backdate_or_catch_up": true,
-    "release_only_after_final_qa_pass": true
+    "release_only_after_final_qa_pass": true,
+    "reset_hold": true
   },
   "piper_speech": {
     "enabled": true,
