@@ -93,11 +93,15 @@ def explicit_visuals(items, outdir:Path, target:int):
         if pu.scheme!='https' or pu.hostname!='commons.wikimedia.org':
             raise RuntimeError(f'Pinned visual {i} has unapproved source page')
         dest=outdir/f'{i:02d}.jpg'
+        # Keep the exact vetted original and licensing metadata, but use a
+        # deterministic image proxy to avoid Wikimedia full-size 429s.
+        fetch_url='https://images.weserv.nl/?url='+urllib.parse.quote(media,safe='')+'&w=1800&output=jpg'
         ok=False; last=None
-        for attempt in range(4):
+        for attempt in range(5):
             try:
-                rr=sess.get(media,timeout=90,allow_redirects=True)
+                rr=sess.get(fetch_url,timeout=90,allow_redirects=True)
                 if rr.status_code==429:
+                    last=RuntimeError('HTTP 429 from vetted-image proxy')
                     time.sleep(4*(attempt+1)); continue
                 rr.raise_for_status(); dest.write_bytes(rr.content)
                 with Image.open(dest) as im:
