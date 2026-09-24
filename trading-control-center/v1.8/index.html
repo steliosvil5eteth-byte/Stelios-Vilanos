@@ -6,7 +6,7 @@
 <meta name="theme-color" content="#07111f">
 <link rel="manifest" href="./manifest.json">
 <link rel="icon" href="./icon.svg" type="image/svg+xml">
-<title>Trading Control Center — v1.8</title>
+<title>Trading Signal Center — Signal First</title>
 <style>
 :root{--bg:#07111f;--card:#0d1b2a;--line:#203a54;--text:#edf6ff;--muted:#9fb3c8;--accent:#4aa3ff;--good:#2ecc71;--bad:#ff6b6b;--warn:#f6c85f}
 *{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#07111f,#09192a 45%,#07111f);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
@@ -15,7 +15,7 @@ h1{font-size:clamp(25px,5vw,40px);margin:0}.muted{color:var(--muted)}.badge{bord
 .grid{display:grid;gap:14px}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.four{grid-template-columns:repeat(4,minmax(0,1fr))}
 .card{background:rgba(13,27,42,.97);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 14px 34px rgba(0,0,0,.24)}
 .card h2{font-size:17px;margin:0 0 12px}.field{display:grid;gap:6px;margin-bottom:10px}label{font-size:12px;color:var(--muted)}
-input,select,button{font:inherit}input,select{width:100%;padding:11px;border-radius:12px;border:1px solid var(--line);background:#071626;color:var(--text)}
+input,select,textarea,button{font:inherit}input,select,textarea{width:100%;padding:11px;border-radius:12px;border:1px solid var(--line);background:#071626;color:var(--text)}textarea{min-height:118px;resize:vertical}
 .actions{display:flex;gap:9px;flex-wrap:wrap}.btn{border:0;border-radius:12px;padding:10px 13px;font-weight:750;cursor:pointer}.primary{background:var(--accent);color:#00172a}.secondary{background:#17314b;color:#dcecff;border:1px solid #285171}.danger{background:#3a1720;color:#ffdce1;border:1px solid #6b3540}.btn:disabled{opacity:.45;cursor:not-allowed}
 .status{border:1px solid var(--line);border-radius:12px;padding:10px;font-size:12px;background:#081828}.ok{border-color:#245d43;color:#bdf2d0}.bad{border-color:#6b3540;color:#ffd0d6}.warn{border-color:#6d5727;color:#ffe6a5}
 .metric{background:#081828;border:1px solid var(--line);border-radius:12px;padding:10px}.metric .k{font-size:10px;color:var(--muted)}.metric .v{font-size:19px;font-weight:800;margin-top:3px}
@@ -27,7 +27,7 @@ input,select,button{font:inherit}input,select{width:100%;padding:11px;border-rad
 <body>
 <div class="wrap">
   <div class="top">
-    <div><h1>Trading Control Center</h1><div class="muted">v1.8 • Research + Paper Trading • Live execution OFF</div></div>
+    <div><h1>Trading Signal Center</h1><div class="muted">Signal-first • Score ≥95 • Manual execution only • Live execution OFF</div></div>
     <div class="actions"><span id="sessionBadge" class="badge">Offline</span><button id="logoutBtn" class="btn secondary hidden">Logout</button></div>
   </div>
 
@@ -59,27 +59,27 @@ input,select,button{font:inherit}input,select{width:100%;padding:11px;border-rad
 
     <div class="grid two">
       <section class="card">
-        <div class="split"><h2>Market Research Scanner</h2><span class="badge">Research only</span></div>
+        <div class="split"><h2>Market Signal Scanner</h2><span class="badge">USER DECIDES</span></div>
         <div class="field"><label>Watchlist</label><input id="symbols" value="AAPL,MSFT"></div>
         <div class="grid two">
-          <div class="field"><label>Min score</label><input id="minScore" type="number" value="68"></div>
-          <div class="field"><label>Min Risk/Reward</label><input id="minRR" type="number" step=".1" value="2"></div>
+          <div class="field"><label>Min score</label><input id="minScore" type="number" min="95" max="100" value="95"></div>
+          <div class="field"><label>Min Risk/Reward</label><input id="minRR" type="number" step=".1" min="1" value="1"></div>
           <div class="field"><label>Min bars</label><input id="minBars" type="number" value="250"></div>
           <div class="field"><label>Capital €</label><input id="capital" type="number" value="10000"></div>
         </div>
-        <div class="actions"><button id="saveState" class="btn secondary">SAVE RULES</button><button id="scanBtn" class="btn primary">SCAN MARKET</button></div>
+        <div class="status" style="margin-bottom:10px">Hard rules: score ≥95/100 • stop 5% ανά συναλλαγή • target 5–10% • ο χρήστης αποφασίζει αν θα εκτελέσει.</div><div class="actions"><button id="saveState" class="btn secondary">SAVE RULES</button><button id="scanBtn" class="btn primary">SCAN MARKET</button><button id="watchStartBtn" class="btn secondary">START ACTIVE WATCH</button><button id="watchStopBtn" class="btn secondary" disabled>STOP WATCH</button></div><div id="watchStatus" class="mini" style="margin-top:8px">Demo: manual scans only. Paid watch runs only while this page remains open.</div>
         <div id="scanStatus" class="status" style="margin-top:10px">Δεν έχει γίνει scan.</div>
         <div id="scanResults" class="list" style="margin-top:10px"></div>
       </section>
 
       <section class="card">
-        <div class="split"><h2>Paper Execution</h2><span class="badge">Simulated broker</span></div>
+        <div class="split"><h2>Signal Details</h2><span class="badge">Manual execution only</span></div>
         <div id="selectedBox" class="status">Επίλεξε accepted signal από το scanner.</div>
-        <div class="field" style="margin-top:10px"><label>Quantity</label><input id="qty" type="number" min="1" value="1"></div>
-        <div class="actions"><button id="paperBtn" class="btn primary" disabled>SUBMIT PAPER ORDER</button></div>
-        <div id="orderStatus" class="status" style="margin-top:10px">Verified email + current consent απαιτούνται.</div>
+        <div class="field" style="margin-top:10px"><label>Decision</label><div class="status">Το πρόγραμμα δεν στέλνει BUY/SELL. Ο χρήστης εκτελεί μόνος του στον broker/exchange του.</div><input id="qty" type="hidden" value="1"></div>
+        <div class="actions"><button id="paperBtn" class="btn primary" disabled>ACKNOWLEDGE SIGNAL</button></div>
+        <div id="orderStatus" class="status" style="margin-top:10px">Δεν εκτελείται πραγματική συναλλαγή από την εφαρμογή.</div>
         <hr style="border:0;border-top:1px solid var(--line);margin:16px 0">
-        <div class="actions"><button id="verifyBtn" class="btn secondary">SEND EMAIL VERIFICATION</button><button id="consentBtn" class="btn secondary">ACCEPT TERMS + PAPER RISK</button></div>
+        <div class="actions"><button id="verifyBtn" class="btn secondary">SEND EMAIL VERIFICATION</button><button id="consentBtn" class="btn secondary">ACCEPT TERMS + RISK DISCLOSURE</button></div>
         <div class="mini" style="margin-top:8px">Η αποδοχή αφορά την τρέχουσα έκδοση Terms/Risk. Το προϊόν δεν δίνει εγγύηση απόδοσης.</div>
       </section>
     </div>
@@ -87,6 +87,7 @@ input,select,button{font:inherit}input,select{width:100%;padding:11px;border-rad
     <div class="grid two" style="margin-top:14px">
       <section class="card">
         <div class="split"><h2>Forward-test Signals</h2><button id="signalsBtn" class="btn secondary">REFRESH</button></div>
+        <div id="signalStats" class="status" style="margin-bottom:10px">Δεν υπάρχουν ακόμη επαρκή forward-test δεδομένα.</div>
         <div id="signalsList" class="list"><div class="mini">—</div></div>
       </section>
       <section class="card">
@@ -101,42 +102,75 @@ input,select,button{font:inherit}input,select{width:100%;padding:11px;border-rad
       </section>
     </div>
 
+    <div class="grid two" style="margin-top:14px">
+      <section class="card">
+        <div class="split"><h2>Read-only Portfolio</h2><span class="badge">NO BROKER ACCESS</span></div>
+        <div class="mini" style="margin-bottom:8px">Μία θέση ανά γραμμή: SYMBOL, quantity, average cost, asset type. Παράδειγμα: AAPL,2,180,stock ή BTC/USD,0.01,60000,crypto.</div>
+        <textarea id="holdingsInput" placeholder="AAPL,2,180,stock&#10;BTC/USD,0.01,60000,crypto"></textarea>
+        <div class="actions" style="margin-top:9px"><button id="holdingsSaveBtn" class="btn secondary">SAVE HOLDINGS</button><button id="holdingsWatchBtn" class="btn secondary">USE AS WATCHLIST</button></div>
+        <div id="holdingsStatus" class="status" style="margin-top:10px">Δεν έχει φορτωθεί portfolio.</div>
+      </section>
+      <section class="card">
+        <div class="split"><h2>Signal Alerts</h2><span class="badge">OPT-IN</span></div>
+        <div class="field"><label><input id="signalEmailEnabled" type="checkbox" style="width:auto;margin-right:8px"> Email μόνο όταν δημιουργηθεί νέο accepted 95+ signal</label></div>
+        <div class="actions"><button id="alertsSaveBtn" class="btn secondary">SAVE ALERT SETTINGS</button><button id="alertsRefreshBtn" class="btn secondary">REFRESH</button></div>
+        <div id="alertsStatus" class="status" style="margin-top:10px">Τα email alerts είναι κλειστά από προεπιλογή.</div>
+        <div id="alertsList" class="list" style="margin-top:10px"></div>
+      </section>
+    </div>
+
+    <section class="card" style="margin-top:14px">
+      <div class="split"><h2>Plans</h2><span class="badge">Pricing model</span></div>
+      <div id="plansGrid" class="grid four"><div class="mini">Loading plans…</div></div>
+      <div id="billingStatus" class="status" style="margin-top:10px">Οι τιμές δεν αποτελούν υπόσχεση επενδυτικής απόδοσης.</div>
+    </section>
+
     <section id="adminCard" class="card hidden" style="margin-top:14px">
       <div class="split"><h2>Admin Overview</h2><button id="adminBtn" class="btn secondary">REFRESH</button></div>
       <div id="adminOut" class="list"></div>
     </section>
   </main>
 
-  <div class="footer">Paper/backtest αποτελέσματα μπορούν να διαφέρουν ουσιαστικά από πραγματική εκτέλεση λόγω slippage, liquidity, latency, data quality και regime changes. Δεν υπάρχει live-order endpoint σε αυτή την έκδοση.</div>
+  <div class="footer">Τα scores είναι βαθμολογία του μοντέλου, όχι πιθανότητα ή εγγύηση κέρδους. Η πραγματική εκτέλεση μπορεί να διαφέρει λόγω slippage, liquidity, latency, data quality και regime changes. Δεν υπάρχει live-order endpoint.</div>
 </div>
 
 <script>
 const $=id=>document.getElementById(id);
-let session={authenticated:false,account:null,csrfToken:''},selected=null,lastStrategyId='';
+let session={authenticated:false,account:null,csrfToken:''},selected=null,lastStrategyId='',currentEntitlements={},watchTimer=null;
 function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
 function money(v){return Number.isFinite(Number(v))?Number(v).toLocaleString('el-GR',{style:'currency',currency:'EUR'}):'—'}
 function pct(v){return Number.isFinite(Number(v))?Number(v).toFixed(1)+'%':'—'}
 async function api(path,opt={}){const o={credentials:'same-origin',...opt,headers:{'Content-Type':'application/json',...(opt.headers||{})}};if(!['GET','HEAD','OPTIONS'].includes((o.method||'GET').toUpperCase())&&session.csrfToken)o.headers['X-CSRF-Token']=session.csrfToken;const r=await fetch(path,o);const text=await r.text();let j={};try{j=text?JSON.parse(text):{}}catch{j={raw:text}}if(!r.ok){const e=new Error(j.error||('HTTP '+r.status));e.code=j.code;e.status=r.status;throw e}return j}
 async function csrf(){if(!session.authenticated)return;try{session.csrfToken=(await api('/api/auth/csrf')).csrfToken||''}catch{session.csrfToken=''}}
 function renderSession(){const a=session.account;$('authCard').classList.toggle('hidden',session.authenticated);$('app').classList.toggle('hidden',!session.authenticated);$('logoutBtn').classList.toggle('hidden',!session.authenticated);$('sessionBadge').textContent=session.authenticated?(a.username+' • '+a.plan):'Offline';if(!a)return;$('mPlan').textContent=(a.plan||'free').toUpperCase();$('mEmail').textContent=a.emailVerifiedAt?'VERIFIED':'PENDING';$('adminCard').classList.toggle('hidden',a.role!=='admin')}
-async function refreshSession(){const j=await api('/api/auth/me');session.authenticated=!!j.authenticated;session.account=j.account||null;renderSession();if(session.authenticated){await csrf();await refreshConsent();await refreshSignals();await refreshPortfolio();if(session.account.role==='admin')await refreshAdmin()}}
+async function refreshSession(){const j=await api('/api/auth/me');session.authenticated=!!j.authenticated;session.account=j.account||null;renderSession();if(session.authenticated){await csrf();await refreshConsent();await refreshSignals();await refreshPortfolio();await refreshHoldings();await refreshAlerts();await refreshBilling();if(session.account.role==='admin')await refreshAdmin()}}
 async function login(){try{await api('/api/auth/login',{method:'POST',body:JSON.stringify({username:$('loginUser').value.trim(),password:$('loginPass').value})});$('authStatus').textContent='Login OK';await refreshSession()}catch(e){$('authStatus').textContent='Login: '+e.message}}
 async function register(){try{const j=await api('/api/auth/register',{method:'POST',body:JSON.stringify({username:$('regUser').value.trim(),email:$('regEmail').value.trim(),password:$('regPass').value})});$('authStatus').textContent='Account created. Verification sent='+!!j.verification?.sent}catch(e){$('authStatus').textContent='Register: '+e.message}}
 async function logout(){try{await api('/api/auth/logout',{method:'POST',body:'{}'})}catch{}session={authenticated:false,account:null,csrfToken:''};renderSession()}
-function settings(){return {capital:Number($('capital').value)||10000,riskPct:.5,dailyLoss:2,maxPositionPct:25,maxExposurePct:100,maxOpen:5,minScore:Number($('minScore').value)||68,minRR:Number($('minRR').value)||2,maxHold:20,wTrend:30,wMomentum:25,wVolume:20,wVolatility:15,wRsi:10,slippageBps:5,commissionBps:2,scanMinBars:Number($('minBars').value)||250,scanMinOosTrades:5,scanMinOosAvgR:.05,scanMinOosPF:1.1}}
+function settings(){return {capital:Number($('capital').value)||10000,riskPct:.5,stopLossPct:5,targetMinPct:5,targetMaxPct:10,monthlyLossPct:10,dailyLoss:0,maxPositionPct:25,maxExposurePct:100,maxOpen:5,minScore:Math.max(95,Number($('minScore').value)||95),minRR:Math.max(1,Number($('minRR').value)||1),minAvgDollarVolume:0,maxHold:20,wTrend:30,wMomentum:25,wVolume:20,wVolatility:15,wRsi:10,slippageBps:5,commissionBps:2,scanMinBars:Number($('minBars').value)||250,scanMinOosTrades:5,scanMinOosAvgR:.05,scanMinOosPF:1.1}}
 async function saveRules(){const j=await api('/api/state',{method:'PUT',body:JSON.stringify({state:{settings:settings(),paper:[],scanConfig:{symbols:$('symbols').value}}})});lastStrategyId=j.currentStrategy?.id||'';$('scanStatus').textContent='Rules saved • '+lastStrategyId}
-function renderScan(run){const root=$('scanResults');root.innerHTML='';lastStrategyId=run.strategyId||lastStrategyId;(run.evaluations||[]).forEach(x=>{const d=document.createElement('div');d.className='row';const s=x.setup||{};d.innerHTML='<div class="split"><strong>'+esc(x.symbol)+'</strong><span class="'+(x.accepted?'good':'badc')+'">'+(x.accepted?'ACCEPTED':'REJECTED')+'</span></div><div class="mini">Score '+(s.score?.toFixed?.(1)??'—')+' • RR '+(s.rr?.toFixed?.(2)??'—')+' • bars '+x.bars+'<br>'+esc((x.reasons||[]).join(' | '))+'</div>';if(x.accepted){const b=document.createElement('button');b.className='btn secondary';b.style.marginTop='8px';b.textContent='SELECT';b.onclick=()=>selectSignal(x,run.strategyId);d.appendChild(b)}root.appendChild(d)});if(!run.evaluations?.length)root.innerHTML='<div class="mini">No evaluations.</div>'}
-function selectSignal(x,strategyId){selected={...x.setup,strategyId};$('selectedBox').innerHTML='<strong>'+esc(x.symbol)+'</strong><div class="mini">Entry '+x.setup.entry.toFixed(2)+' • Stop '+x.setup.stop.toFixed(2)+' • Target '+x.setup.target.toFixed(2)+' • RR '+x.setup.rr.toFixed(2)+'</div>';$('paperBtn').disabled=false}
+function renderScan(run){const root=$('scanResults');root.innerHTML='';lastStrategyId=run.strategyId||lastStrategyId;(run.evaluations||[]).forEach(x=>{const d=document.createElement('div');d.className='row';const s=x.setup||{};const dir=s.direction||'—';d.innerHTML='<div class="split"><strong>'+esc(x.symbol)+' • '+esc(dir)+'</strong><span class="'+(x.accepted?'good':'badc')+'">'+(x.accepted?'95+ SIGNAL':'NO TRADE')+'</span></div><div class="mini">Combined '+(x.signalScore?.toFixed?.(1)??'—')+'/100 • Technical '+(s.score?.toFixed?.(1)??'—')+' • Event '+(x.event?.score?.toFixed?.(1)??'—')+' ('+esc(x.event?.direction||'—')+')<br>Entry '+(s.entry?.toFixed?.(2)??'—')+' • Stop '+(s.stop?.toFixed?.(2)??'—')+' ('+(s.stopLossPct?.toFixed?.(1)??'5.0')+'%) • Target '+(s.target?.toFixed?.(2)??'—')+' ('+(s.targetPct?.toFixed?.(1)??'—')+'%) • RR '+(s.rr?.toFixed?.(2)??'—')+'<br>'+esc((s.rationale||[]).join(' • '))+(x.portfolioContext?.hasExistingPosition?'<br>Portfolio: ήδη υπάρχει '+Number(x.portfolioContext.existingWeightPct||0).toFixed(1)+'% έκθεση στο '+esc(x.symbol):'')+(x.dataQuality?'<br>Data quality '+Number(x.dataQuality.score||0).toFixed(0)+'/100':'')+(x.reasons?.length?'<br>'+esc(x.reasons.join(' | ')):'')+'</div>';if(x.accepted){const b=document.createElement('button');b.className='btn secondary';b.style.marginTop='8px';b.textContent='VIEW SIGNAL';b.onclick=()=>selectSignal(x,run.strategyId);d.appendChild(b)}root.appendChild(d)});if(!run.evaluations?.length)root.innerHTML='<div class="mini">No evaluations.</div>'}
+function selectSignal(x,strategyId){selected={...x.setup,strategyId};$('selectedBox').innerHTML='<strong>'+esc(x.symbol)+' • '+esc(x.setup.direction)+'</strong><div class="mini">Combined '+Number(x.signalScore||x.setup.score).toFixed(1)+'/100 • Technical '+x.setup.score.toFixed(1)+' • Event '+Number(x.event?.score||0).toFixed(1)+'<br>Entry '+x.setup.entry.toFixed(2)+' • Stop '+x.setup.stop.toFixed(2)+' (5%) • Target '+x.setup.target.toFixed(2)+' ('+x.setup.targetPct.toFixed(1)+'%) • RR '+x.setup.rr.toFixed(2)+'<br>'+esc((x.setup.rationale||[]).join(' • '))+'</div>';$('paperBtn').disabled=false}
 async function scan(){try{await saveRules();$('scanStatus').textContent='Scanning…';const j=await api('/api/scans',{method:'POST',body:JSON.stringify({symbols:$('symbols').value.split(',').map(x=>x.trim()).filter(Boolean)})});renderScan(j.run);$('scanStatus').textContent='Scan '+j.run.id+' • accepted '+j.run.accepted+' / rejected '+j.run.rejected}catch(e){$('scanStatus').textContent='Scan error: '+e.message}}
 function idem(){return 'web-'+Date.now()+'-'+Math.random().toString(36).slice(2)}
-async function submitPaper(){if(!selected)return;try{const order={symbol:selected.ticker,qty:Number($('qty').value)||1,entry:selected.entry,stop:selected.stop,target:selected.target,strategyId:selected.strategyId||lastStrategyId};const j=await api('/api/broker/order',{method:'POST',headers:{'Idempotency-Key':idem()},body:JSON.stringify({order})});$('orderStatus').textContent='ACCEPTED '+j.ticket.id+' • '+j.ticket.symbol+' x '+j.ticket.qty;await refreshPortfolio()}catch(e){$('orderStatus').textContent='Order blocked: '+e.message}}
+async function submitPaper(){if(!selected)return;$('orderStatus').textContent='Signal acknowledged. Καμία εντολή δεν στάλθηκε. Η απόφαση και η εκτέλεση παραμένουν αποκλειστικά στον χρήστη.'}
 async function refreshConsent(){try{const j=await api('/api/consent');$('mConsent').textContent=j.consent.current?'CURRENT':'REQUIRED'}catch{$('mConsent').textContent='—'}}
 async function acceptConsent(){try{await api('/api/consent',{method:'POST',body:JSON.stringify({acceptTerms:true,acceptRisk:true})});await refreshConsent();$('orderStatus').textContent='Consent saved.'}catch(e){$('orderStatus').textContent=e.message}}
 async function verifyEmail(){try{const j=await api('/api/auth/email/request',{method:'POST',body:'{}'});$('orderStatus').textContent=j.alreadyVerified?'Email already verified.':('Verification sent='+j.sent)}catch(e){$('orderStatus').textContent=e.message}}
-async function refreshSignals(){try{const j=await api('/api/signals?limit=30'),r=$('signalsList');r.innerHTML='';(j.signals||[]).forEach(s=>{const d=document.createElement('div');d.className='row';d.innerHTML='<div class="split"><strong>'+esc(s.symbol)+'</strong><span>'+esc(s.status)+'</span></div><div class="mini">'+esc(s.strategyId)+' • score '+Number(s.score||0).toFixed(1)+' • '+esc(s.reason||'OPEN')+(Number.isFinite(Number(s.rMultiple))?' • R '+Number(s.rMultiple).toFixed(2):'')+'</div>';r.appendChild(d)});if(!j.signals?.length)r.innerHTML='<div class="mini">No forward-test signals.</div>'}catch(e){$('signalsList').innerHTML='<div class="mini">'+esc(e.message)+'</div>'}}
+async function refreshSignals(){try{const j=await api('/api/signals?limit=100'),r=$('signalsList'),m=j.metrics||{};r.innerHTML='';$('signalStats').textContent=!m.n?'Δεν υπάρχουν ακόμη κλειστά forward-test signals. Το 95/100 είναι model score, όχι πιθανότητα.':m.sampleGate?('Closed '+m.n+' • empirical win rate '+Number(m.winRate||0).toFixed(1)+'% • targets '+(m.targets||0)+' • stops '+(m.stops||0)+' • avg R '+Number(m.avgR||0).toFixed(2)):('Forward-test sample '+m.n+'/30 • δεν εμφανίζουμε ακόμη win-rate ως αξιόπιστο KPI.');(j.signals||[]).slice(0,30).forEach(s=>{const d=document.createElement('div');d.className='row';d.innerHTML='<div class="split"><strong>'+esc(s.symbol)+' • '+esc(s.direction||'')+'</strong><span>'+esc(s.status)+'</span></div><div class="mini">combined '+Number(s.signalScore||s.score||0).toFixed(1)+' • event '+Number(s.eventScore||0).toFixed(1)+' • '+esc(s.reason||'OPEN')+(Number.isFinite(Number(s.rMultiple))?' • R '+Number(s.rMultiple).toFixed(2):'')+(s.status==='OPEN'&&s.expiresAt?'<br>Expires '+esc(new Date(s.expiresAt).toLocaleString('el-GR')):'')+'</div>';r.appendChild(d)});if(!j.signals?.length)r.innerHTML='<div class="mini">No forward-test signals.</div>'}catch(e){$('signalsList').innerHTML='<div class="mini">'+esc(e.message)+'</div>'}}
 async function refreshPortfolio(){try{const j=await api('/api/portfolio'),p=j.portfolio;$('pEquity').textContent=money(p.equity);$('pExposure').textContent=pct(p.exposurePct);$('pStress').textContent=pct(p.stopLossStressPct);$('pDD').textContent=pct(p.maxDrawdownPct);$('portfolioStatus').textContent='Open '+p.openPositions+' • Realized '+money(p.realizedPnl)+' • Unrealized '+money(p.unrealizedPnl)}catch(e){$('portfolioStatus').textContent=e.message}}
+function parseHoldingsText(){return $('holdingsInput').value.split('\n').map(x=>x.trim()).filter(Boolean).map(line=>{const [symbol,quantity,avgCost,assetType]=line.split(',').map(x=>x.trim());return {symbol,quantity:Number(quantity),avgCost:Number(avgCost),assetType:assetType||undefined}}).filter(x=>x.symbol&&x.quantity>0)}
+async function refreshHoldings(){try{const j=await api('/api/holdings');$('holdingsInput').value=(j.holdings||[]).map(h=>[h.symbol,h.quantity,h.avgCost,h.assetType].join(',')).join('\n');$('holdingsStatus').textContent='Positions '+j.summary.count+' / '+j.maxHoldings+' • reference value '+money(j.summary.totalReferenceValue)+' • largest '+Number(j.summary.largestPositionPct||0).toFixed(1)+'%'+(j.summary.concentrated?' • concentration warning':'')}catch(e){$('holdingsStatus').textContent=e.message}}
+async function saveHoldings(){try{const j=await api('/api/holdings',{method:'PUT',body:JSON.stringify({holdings:parseHoldingsText()})});$('holdingsStatus').textContent='Saved '+j.summary.count+' positions • read-only import'}catch(e){$('holdingsStatus').textContent=e.message}}
+function holdingsToWatchlist(){const syms=parseHoldingsText().map(x=>x.symbol.toUpperCase());if(syms.length)$('symbols').value=[...new Set(syms)].join(',')}
+async function refreshAlerts(){try{const j=await api('/api/alerts');$('signalEmailEnabled').checked=j.rules?.signalEmailEnabled===true;const rows=$('alertsList');rows.innerHTML='';(j.events||[]).filter(x=>x.type==='SIGNAL_95_PLUS').slice(0,10).forEach(a=>{const d=document.createElement('div');d.className='row';d.innerHTML='<strong>'+esc(a.symbol||'Signal')+' • '+esc(a.direction||'')+'</strong><div class="mini">'+esc(a.message||'')+'</div>';rows.appendChild(d)});$('alertsStatus').textContent='95+ signal email: '+($('signalEmailEnabled').checked?'ON':'OFF')}catch(e){$('alertsStatus').textContent=e.message}}
+async function saveAlerts(){try{const j=await api('/api/alerts',{method:'PUT',body:JSON.stringify({rules:{signalEmailEnabled:$('signalEmailEnabled').checked}})});$('alertsStatus').textContent='Saved • signal email '+(j.rules.signalEmailEnabled?'ON':'OFF')}catch(e){$('alertsStatus').textContent=e.message}}
+async function refreshBilling(){try{const j=await api('/api/billing/status'),g=$('plansGrid');currentEntitlements=j.entitlements||{};g.innerHTML='';(j.catalog||[]).forEach(p=>{const d=document.createElement('div');d.className='metric';const watch=p.autoWatch?(p.autoWatchMinutes+'′ watch • '+p.maxAutoWatchSymbols+' auto symbols'):'manual scans';d.innerHTML='<div class="k">'+esc(p.label)+'</div><div class="v">€'+Number(p.monthlyPriceEur||0).toFixed(2)+'</div><div class="mini">/ μήνα • watchlist '+p.maxWatchlist+' • holdings '+p.maxHoldings+'<br>'+esc(watch)+' • email '+(p.signalEmail?'yes':'no')+' • export '+(p.exports?'yes':'no')+'</div>';g.appendChild(d)});const current=(j.catalog||[]).find(x=>x.id===j.plan);if(current)$('mPlan').textContent=current.label.toUpperCase();$('billingStatus').textContent=(j.billing?.testMode?'Billing TEST mode μόνο. ':'Δεν υπάρχει ενεργό live billing. ')+'Current: '+(current?.label||j.plan);$('watchStatus').textContent=currentEntitlements.autoWatch?('Active Watch διαθέσιμο κάθε '+currentEntitlements.autoWatchMinutes+' λεπτά όσο η εφαρμογή είναι ανοιχτή.'):('Demo: manual scans only.')}catch(e){$('billingStatus').textContent=e.message}}
+async function activeWatchTick(){if(!session.authenticated||document.visibilityState!=='visible')return;try{await scan();$('watchStatus').textContent='Last active watch: '+new Date().toLocaleTimeString('el-GR')+' • next in '+currentEntitlements.autoWatchMinutes+'′'}catch(e){$('watchStatus').textContent='Watch error: '+e.message}}
+function startActiveWatch(){if(watchTimer)return;if(!currentEntitlements.autoWatch){$('watchStatus').textContent='Το Demo έχει μόνο χειροκίνητα scans.';return}const mins=Math.max(5,Number(currentEntitlements.autoWatchMinutes)||30);$('watchStartBtn').disabled=true;$('watchStopBtn').disabled=false;$('watchStatus').textContent='Active Watch ON • κάθε '+mins+'′ όσο η σελίδα είναι ανοιχτή.';activeWatchTick();watchTimer=setInterval(activeWatchTick,mins*60000)}
+function stopActiveWatch(){if(watchTimer)clearInterval(watchTimer);watchTimer=null;$('watchStartBtn').disabled=false;$('watchStopBtn').disabled=true;$('watchStatus').textContent='Active Watch OFF.'}
 async function refreshAdmin(){if(session.account?.role!=='admin')return;try{const j=await api('/api/admin/overview'),r=$('adminOut');r.innerHTML='';(j.users||[]).forEach(u=>{const d=document.createElement('div');d.className='row';d.innerHTML='<div class="split"><strong>'+esc(u.username)+'</strong><span>'+esc(u.plan)+' • '+esc(u.status)+'</span></div><div class="mini">role '+esc(u.role)+' • trades '+u.trades+' • scans '+u.scanRuns+'</div>';r.appendChild(d)})}catch(e){$('adminOut').innerHTML='<div class="mini">'+esc(e.message)+'</div>'}}
-$('loginBtn').onclick=login;$('registerBtn').onclick=register;$('logoutBtn').onclick=logout;$('saveState').onclick=()=>saveRules().catch(e=>$('scanStatus').textContent=e.message);$('scanBtn').onclick=scan;$('paperBtn').onclick=submitPaper;$('consentBtn').onclick=acceptConsent;$('verifyBtn').onclick=verifyEmail;$('signalsBtn').onclick=refreshSignals;$('portfolioBtn').onclick=refreshPortfolio;$('adminBtn').onclick=refreshAdmin;
+$('loginBtn').onclick=login;$('registerBtn').onclick=register;$('logoutBtn').onclick=logout;$('saveState').onclick=()=>saveRules().catch(e=>$('scanStatus').textContent=e.message);$('scanBtn').onclick=scan;$('paperBtn').onclick=submitPaper;$('consentBtn').onclick=acceptConsent;$('verifyBtn').onclick=verifyEmail;$('signalsBtn').onclick=refreshSignals;$('portfolioBtn').onclick=refreshPortfolio;$('holdingsSaveBtn').onclick=saveHoldings;$('holdingsWatchBtn').onclick=holdingsToWatchlist;$('alertsSaveBtn').onclick=saveAlerts;$('alertsRefreshBtn').onclick=refreshAlerts;$('watchStartBtn').onclick=startActiveWatch;$('watchStopBtn').onclick=stopActiveWatch;$('adminBtn').onclick=refreshAdmin;
 refreshSession().catch(()=>renderSession());
 </script>
 </body></html>

@@ -9,9 +9,9 @@ export default async function handler(req,res){
     if(req.method==='PUT'){
       const state=req.body?.state; if(!state||typeof state!=='object') return res.status(400).json({error:'state object required'});
       const settings=state.settings||{},paper=Array.isArray(state.paper)?state.paper.slice(0,1000):[]; const currentStrategy=strategySnapshot(settings,state.strategy?.name||'Current strategy');
-      const symbols=[...new Set(String(state.scanConfig?.symbols||'').toUpperCase().split(',').map(x=>x.trim()).filter(x=>/^[A-Z0-9.\-]{1,15}$/.test(x)))].slice(0,e.maxWatchlist);
+      const symbols=[...new Set(String(state.scanConfig?.symbols||'').toUpperCase().split(',').map(x=>x.trim()).filter(x=>/^[A-Z0-9.\\/:-]{1,24}$/.test(x)))].slice(0,e.maxWatchlist);
       const scanConfig={symbols:symbols.join(',')};
-      const safe={version:'1.7',settings,paper,currentStrategy,scanConfig,plan:account.plan,updatedAt:new Date().toISOString()};
+      const safe={version:'signal-first-1',settings,paper,currentStrategy,scanConfig,plan:account.plan,updatedAt:new Date().toISOString()};
       await setJson(key,safe); const model=await syncUserModel(user,{settings,paper}); const alerts=await evaluateAlerts(user,safe);
       await appendAudit(user,{ts:new Date().toISOString(),type:'STATE_SYNC',detail:`paper=${safe.paper.length} strategy=${currentStrategy.id} alerts=${alerts.events.length} plan=${account.plan}`});
       return res.status(200).json({ok:true,persistent:persistentStoreConfigured(),updatedAt:safe.updatedAt,currentStrategy:model.currentStrategy,strategyCount:model.strategyCount,tradeCount:model.tradeCount,alertCount:alerts.events.filter(x=>!x.acknowledged).length,scanConfig,entitlements:e});

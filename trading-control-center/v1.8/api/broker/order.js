@@ -1,6 +1,7 @@
 import {appendAudit} from '../_lib/store.js';
 import {strategyExecutionGate} from '../_lib/portfolio.js';
 import {requireAccount} from '../_lib/access.js';
+import {requireFeature} from '../_lib/plans.js';
 import {rateLimit,applyRateLimitError} from '../_lib/rate-limit.js';
 import {requirePaperConsent} from '../_lib/consent.js';
 import {consumeUsage} from '../_lib/usage.js';
@@ -12,7 +13,7 @@ import {requestId} from '../_lib/request-trace.js';
 function validOrder(o){return o&&/^[A-Z0-9.\-]{1,15}$/.test(String(o.symbol||''))&&Number(o.qty)>0&&Number(o.entry)>0&&Number(o.stop)>0&&Number(o.target)>0}
 export default async function handler(req,res){
   if(req.method!=='POST') return res.status(405).json({error:'POST only'});
-  try{await rateLimit(req,{label:'paper-order',limit:30,windowMs:10*60*1000});const account=await requireAccount(req),user=account.username,key=requireIdempotencyKey(req);
+  try{await rateLimit(req,{label:'paper-order',limit:30,windowMs:10*60*1000});const account=await requireAccount(req);requireFeature(account,'brokerPaper');const user=account.username,key=requireIdempotencyKey(req);
     await requirePaperConsent(user);requireVerifiedEmail(account);const order=req.body?.order;if(!validOrder(order)) return res.status(400).json({error:'Invalid order'});
     if(!(Number(order.stop)<Number(order.entry)&&Number(order.target)>Number(order.entry))) return res.status(400).json({error:'Long order requires stop < entry < target'});
     const gate=await strategyExecutionGate(user,String(order.strategyId||''));if(!gate.allowed)return res.status(409).json({error:`Strategy ${gate.lifecycle}: ${gate.reason}`,strategyGate:gate});
