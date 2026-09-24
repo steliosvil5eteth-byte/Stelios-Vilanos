@@ -1,56 +1,147 @@
 {
-  "version": 1,
+  "version": 2,
   "timezone": "Europe/Athens",
-  "strategy_id": "SOCIAL_RESET_20260924",
-  "program_label": "RESET_HOLD",
-  "effective_at": "2026-09-24T17:47:00+03:00",
+  "strategy_id": "CURRENT_TEN_DAILY_20260924",
+  "program_label": "CURRENT_TEN_DAILY",
+  "effective_at": "2026-09-24T19:37:00+03:00",
   "priority": "SOLE_ACTIVE_SOCIAL_STRATEGY",
-  "active_schedule": false,
-  "daily_target_posts_per_network": 0,
-  "destination_target_per_day": 0,
-  "cycle": {
-    "mode": "reset_hold",
-    "pre_generate_future_days": false,
-    "active_categories": [],
-    "active_slots_local_time": []
+  "active_schedule": true,
+  "active_metricool_brand": {
+    "id": 7076410,
+    "label": "Ιστορίες που μας αγγίζουν",
+    "exclusive": true
   },
-  "publishing": {
-    "networks": [
-      "facebook",
-      "instagram",
-      "tiktok",
-      "youtube"
-    ],
-    "paused": true,
-    "autopublish": false,
-    "slots_local_time": [],
-    "rule": "Do not publish, schedule, backdate, catch up, revive, replace, or create any social post while RESET_HOLD is active."
-  },
-  "generation": {
-    "paused": true,
-    "rule": "Do not generate new production media while RESET_HOLD is active. QA-only inspection of already generated artifacts is allowed."
-  },
-  "invariants": {
-    "preserve_published_history_for_deduplication": true,
-    "never_delete_published_history_as_part_of_reset": true,
-    "do_not_reuse_same_core_topic_within_days": 60,
-    "exact_or_near_duplicate_topic": "BLOCK",
-    "exact_final_visual_inspection_required": true,
-    "jpeg_mp4_presence_is_not_visual_qa": true,
-    "every_carousel_card_requires_scene_relevant_photographic_or_photorealistic_visual": true,
-    "every_narrated_scene_requires_scene_relevant_photographic_or_approved_archival_visual": true,
-    "narrated_voice_required": "Νέστορας",
-    "narrated_min_duration_seconds_exclusive": 80,
-    "burned_in_synchronized_greek_subtitles_required": true,
-    "narrated_background_music": false,
-    "avatar_presenter": false,
-    "fail_closed": true,
-    "no_paid_generation_or_topups": true
-  },
-  "history_sources_for_rebuild": [
-    "Metricool published history",
-    "GitHub repository history/media jobs",
-    "Notion archive when explicitly consulted"
+  "daily_target_logical_posts": 10,
+  "destination_target_per_day": 40,
+  "slots": [
+    {
+      "time": "07:00",
+      "category": "relationships",
+      "format": "carousel",
+      "cards": 7
+    },
+    {
+      "time": "09:00",
+      "category": "survival",
+      "format": "carousel",
+      "cards": 9
+    },
+    {
+      "time": "11:00",
+      "category": "zodiac",
+      "format": "carousel",
+      "cards": 6,
+      "zodiac_visual_required": true
+    },
+    {
+      "time": "13:00",
+      "category": "dog_bartender",
+      "format": "carousel",
+      "cards": 4,
+      "brown_same_dog_required": true
+    },
+    {
+      "time": "15:00",
+      "category": "love_soul_relationship",
+      "format": "carousel",
+      "cards": 5
+    },
+    {
+      "time": "17:00",
+      "category": "strange_real_phenomenon",
+      "format": "narrated_video"
+    },
+    {
+      "time": "18:30",
+      "category": "greece_two_day_trip",
+      "format": "narrated_video"
+    },
+    {
+      "time": "20:00",
+      "category": "myth_or_truth",
+      "format": "carousel",
+      "cards": 4
+    },
+    {
+      "time": "21:30",
+      "category": "documented_experiments",
+      "format": "narrated_video"
+    },
+    {
+      "time": "23:00",
+      "category": "international_legend",
+      "format": "narrated_video"
+    }
   ],
-  "rule": "This file is the only active strategy. Any older schedule, category count, slot, media job, state snapshot, or workflow assumption is historical and must not be treated as active until a new strategy explicitly supersedes RESET_HOLD."
+  "platforms": {
+    "facebook": "Native carousel for card slots; Reel for narrated video slots.",
+    "instagram": "Native carousel for card slots; Reel for narrated video slots.",
+    "tiktok": "Native photo post for card slots using silent JPEG/WebP 1080x1080 cards and autoAddMusic=true; normal video for narrated slots with auto-music off.",
+    "youtube": "Complete vertical slideshow/Short for card slots using every card and one original instrumental layer; complete Short/video for narrated slots without cutting content."
+  },
+  "narrated_video_rules": {
+    "ratio": "9:16",
+    "resolution": "1080x1920",
+    "min_duration_seconds": 80,
+    "maximum_duration_seconds": null,
+    "voice": "el-GR-NestorasNeural",
+    "voice_display_name": "Νέστορας",
+    "burned_in_synchronized_greek_subtitles": true,
+    "background_music": false,
+    "avatar_presenter": false,
+    "no_filler_or_silence_padding": true,
+    "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+  },
+  "carousel_rules": {
+    "image_size": "1080x1080",
+    "narration": false,
+    "each_card_has_distinct_scene_relevant_visual": true,
+    "tiktok_auto_add_music": true,
+    "youtube_one_original_instrumental_layer": true,
+    "no_blank_text_only_generic_cartoon_or_repeated_visuals": true
+  },
+  "special_visual_rules": {
+    "zodiac": "Every zodiac card must visibly show that sign's own image/symbol/visual identity. A plain black panel or text-only card is a hard failure.",
+    "dog_bartender": "Exactly four cards. Same recurring photorealistic brown dog in every card, clearly functioning as bartender in a believable real bar. Different scene/composition per card. No cartoon/animation."
+  },
+  "qa": {
+    "require_exact_final_artifact_visual_inspection": true,
+    "require_order_and_card_count_check": true,
+    "require_visual_relevance_check": true,
+    "require_voice_subtitle_duration_check_for_narrated_video": true,
+    "require_source_license_check_when_applicable": true,
+    "require_platform_format_check": true,
+    "require_ai_disclosure_when_applicable": true,
+    "release_status": "PASSED_FINAL_REVIEW",
+    "fail_closed": true
+  },
+  "duplicate_policy": {
+    "sources": [
+      "Notion Social Media Content Archive",
+      "current Metricool brand history",
+      "repository history"
+    ],
+    "block_exact_or_near_duplicate": true,
+    "compare": [
+      "title",
+      "core_topic",
+      "hook",
+      "caption",
+      "fingerprint"
+    ]
+  },
+  "quality_first_catch_up": {
+    "enabled": true,
+    "original_time_is_target_not_release_override": true,
+    "if_failed": "Keep Draft/Blocked, repair, re-run full QA, then publish later the same day at the first safe available time.",
+    "never_backdate": true,
+    "live_duplicate_check_before_retry": true,
+    "end_of_day_target": "Exactly 10 correct logical posts; never create an 11th duplicate to compensate."
+  },
+  "legacy": {
+    "previous_metricool_brands_operational": false,
+    "previous_schedules_operational": false,
+    "previous_audio_rules_operational": false,
+    "historical_data_use": "Audit/deduplication only; never a scheduling source."
+  }
 }
