@@ -17,18 +17,9 @@
   "require_photographic_visuals": true,
   "require_reenactment_label": true,
   "photo_queries": [
-    "college students classroom group photograph",
-    "students seated classroom photograph",
-    "group discussion university students photograph",
-    "student answering question classroom photograph",
-    "people group meeting photograph",
-    "student classroom photograph",
-    "classroom presentation students photograph",
-    "students discussion table photograph",
-    "person speaking to group photograph",
-    "university lecture students photograph",
-    "group decision discussion photograph",
-    "student alone classroom photograph"
+    "university students classroom photograph",
+    "students group discussion photograph",
+    "classroom lecture students photograph"
   ],
   "narration_segments": [
     "Αν όλοι γύρω σου δώσουν την ίδια, ξεκάθαρα λάθος απάντηση, θα εμπιστευτείς τα μάτια σου ή την ομάδα;",
@@ -59,5 +50,6 @@
       "name": "Asch 1956 — Studies of Independence and Conformity",
       "url": "https://doi.org/10.1037/h0093718"
     }
-  ]
+  ],
+  "photo_target": 12
 }
