@@ -25,9 +25,9 @@
     "notion_archive_data_source_id": "46cd5cf4-5f7e-46e8-b0ef-274aeadbdb52"
   },
   "publishing": {
-    "program_label": "CURRENT_NINE_DAILY",
-    "daily_target_logical_posts_per_network": 9,
-    "daily_target_destinations": 36,
+    "program_label": "CURRENT_TEN_DAILY",
+    "daily_target_logical_posts_per_network": 10,
+    "daily_target_destinations": 40,
     "slots_local_time": [
       "07:00",
       "09:00",
@@ -37,16 +37,17 @@
       "17:00",
       "18:30",
       "20:00",
+      "21:30",
       "23:00"
     ],
     "publish_to_all_connected_socials": true,
     "require_user_confirmation": false,
     "daily_target_source": "config/content_strategy.json",
     "reliability_file": "config/publishing_reliability.json",
-    "rule": "Exactly nine logical daily posts. Auto-publish is disabled until the exact final artifact has PASSED_FINAL_REVIEW. Never infer Published from Scheduled/PENDING."
+    "rule": "Exactly ten logical daily posts. Auto-publish remains disabled until PASSED_FINAL_REVIEW."
   },
   "runner": {
-    "max_jobs_per_run": 9,
+    "max_jobs_per_run": 10,
     "duplicate_policy": "one_logical_post_per_date_category_platform",
     "require_future_schedule": true,
     "hands_off_mode": false,
@@ -65,6 +66,7 @@
     "use_for": [
       "phenomenon_video",
       "greece_two_day_video",
+      "documented_experiments_video",
       "legend_video"
     ],
     "strictly_longer_than_seconds": 80,
