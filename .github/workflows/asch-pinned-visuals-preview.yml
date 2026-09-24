@@ -1,0 +1,64 @@
+name: Asch pinned visuals preview
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/asch-pinned-visuals-preview.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  preview:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install PIL
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq python3-pil fonts-dejavu-core
+      - name: Build source contact sheet
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.parse, urllib.request
+          from pathlib import Path
+          from PIL import Image, ImageOps, ImageDraw, ImageFont
+          j=json.loads(Path('media_jobs/experiments_series_episode_02_asch_20260925.json').read_text(encoding='utf-8'))
+          assets=j['visual_assets']
+          outdir=Path(os.environ['RUNNER_TEMP'])/'asch-preview'
+          outdir.mkdir()
+          imgs=[]
+          for i,a in enumerate(assets,1):
+              fn=a['filename']
+              stable='https://commons.wikimedia.org/wiki/Special:Redirect/file/'+urllib.parse.quote(fn,safe='()_,.-')+'?width=1200'
+              url='https://images.weserv.nl/?url='+urllib.parse.quote(stable,safe='')+'&w=1200&output=jpg'
+              req=urllib.request.Request(url,headers={'User-Agent':'SteliosAschPreview/1.0','Accept':'image/*,*/*;q=0.5'})
+              raw=outdir/f'raw-{i:02}.jpg'
+              with urllib.request.urlopen(req,timeout=120) as r: raw.write_bytes(r.read())
+              im=Image.open(raw).convert('RGB')
+              imgs.append((im,fn,a['kind']))
+          cellw,cellh=420,360
+          sheet=Image.new('RGB',(cellw*4,cellh*3),(20,20,20))
+          font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',18)
+          bold=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf',20)
+          for idx,(im,fn,kind) in enumerate(imgs):
+              fitted=ImageOps.fit(im,(cellw,cellh-70),method=Image.Resampling.LANCZOS)
+              x=(idx%4)*cellw; y=(idx//4)*cellh
+              sheet.paste(fitted,(x,y))
+              d=ImageDraw.Draw(sheet)
+              d.rectangle((x,y+cellh-70,x+cellw,y+cellh),fill=(10,10,10))
+              label=f'{idx+1}. {fn[:34]}'
+              d.text((x+10,y+cellh-62),label,font=bold,fill='white')
+              d.text((x+10,y+cellh-34),kind,font=font,fill=(210,210,210))
+          dest=Path(os.environ['RUNNER_TEMP'])/'asch-pinned-visuals-contact-sheet.jpg'
+          sheet.save(dest,quality=93)
+          PY
+      - name: Upload preview
+        uses: actions/upload-artifact@v4
+        with:
+          name: asch-pinned-visuals-preview
+          path: ${{ runner.temp }}/asch-pinned-visuals-contact-sheet.jpg
+          if-no-files-found: error
