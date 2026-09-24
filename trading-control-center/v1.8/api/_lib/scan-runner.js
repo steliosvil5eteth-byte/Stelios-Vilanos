@@ -1,5 +1,5 @@
 import {getJson,setJson,appendAudit} from './store.js';
-import {fetchMarketMany,marketDataConfig} from './market-data.js';
+import {fetchSignalMarketMany,marketDataConfig,signalMarketConfig} from './market-data.js';
 import {updateForwardLedger} from './signal-ledger.js';
 import {evaluateSeries} from './scanner.js';
 import {strategySnapshot} from './model.js';
@@ -16,12 +16,12 @@ export async function runServerScan(user,{symbols=null,source='manual',maxSymbol
   const state=(await getJson(`tcc:${user}:state`))||{};const settings=state.settings||{};
   const configured=symbolsFrom(symbols?.length?symbols:(state.scanConfig?.symbols||process.env.SCAN_SYMBOLS||''),maxSymbols);
   if(!configured.length)throw new Error('No server scan symbols configured');
-  const startedAt=new Date().toISOString();const fetched=await fetchMarketMany(configured);
-  const evaluations=[];const eventCfg=eventDataConfig();
+  const startedAt=new Date().toISOString();const fetched=await fetchSignalMarketMany(configured);
+  const evaluations=[];const eventCfg=eventDataConfig(),signalCfg=signalMarketConfig();
   for(const item of fetched){
     if(item.error){evaluations.push({symbol:item.symbol,accepted:false,reasons:[`DATA_ERROR:${item.error}`],bars:0});continue}
     const freshness=marketFreshness(item.series);
-    const ev=evaluateSeries(item.symbol,item.series,settings);ev.marketFreshness=freshness;
+    const interval=String(item.interval||signalCfg.interval),m=interval.match(/^(\\d+)(min|h)$/),barIntervalMinutes=m?(m[2]==='h'?Number(m[1])*60:Number(m[1])):0,scanSettings={...settings,barIntervalMinutes};const ev=evaluateSeries(item.symbol,item.series,scanSettings);ev.marketFreshness=freshness;ev.marketMode=item.mode||'unknown';ev.interval=interval;
     if(!freshness.ok){ev.accepted=false;ev.reasons=[...(ev.reasons||[]),`STALE_MARKET_DATA:${freshness.reason}`];evaluations.push(ev);continue}
     if(!ev.setup||ev.setup.score<95){evaluations.push(ev);continue}
     const event=await fetchEventSignal(item.symbol);ev.event=event;ev.technicalScore=ev.setup.score;
@@ -38,7 +38,7 @@ export async function runServerScan(user,{symbols=null,source='manual',maxSymbol
   const current=strategySnapshot(settings,state.strategy?.name||'Current strategy');
   const providers=[...new Set(fetched.filter(x=>!x.error).map(x=>x.provider).filter(Boolean))];
   const ledger=await updateForwardLedger(user,{fetched,evaluations,strategy:current,settings});
-  const run={id:`SCAN-${Date.now()}-${Math.random().toString(36).slice(2,7)}`,source,provider:providers.length===1?providers[0]:'mixed',providers,marketDataConfig:marketDataConfig(),eventDataConfig:eventCfg,startedAt,completedAt:new Date().toISOString(),strategyId:current.id,symbols:configured,evaluations,accepted:evaluations.filter(x=>x.accepted).length,rejected:evaluations.filter(x=>!x.accepted).length,forwardLedger:{changed:ledger.changed,open:ledger.open,closed:ledger.closed}};
+  const run={id:`SCAN-${Date.now()}-${Math.random().toString(36).slice(2,7)}`,source,provider:providers.length===1?providers[0]:'mixed',providers,marketDataConfig:marketDataConfig(),signalMarketConfig:signalCfg,eventDataConfig:eventCfg,startedAt,completedAt:new Date().toISOString(),strategyId:current.id,symbols:configured,evaluations,accepted:evaluations.filter(x=>x.accepted).length,rejected:evaluations.filter(x=>!x.accepted).length,forwardLedger:{changed:ledger.changed,open:ledger.open,closed:ledger.closed}};
   const key=`tcc:${user}:scanRuns`;const rows=(await getJson(key))||[];rows.unshift(run);await setJson(key,rows.slice(0,100));
   await appendAudit(user,{ts:new Date().toISOString(),type:'SERVER_SCAN',detail:`${source} symbols=${configured.length} accepted=${run.accepted} rejected=${run.rejected} strategy=${current.id}`});
   return run;
