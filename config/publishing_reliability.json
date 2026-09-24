@@ -1,5 +1,5 @@
 {
-  "version": 14,
+  "version": 15,
   "updated_on": "2026-09-24",
   "timezone": "Europe/Athens",
   "strategy_id": "FOUR_DAILY_V2",
@@ -173,5 +173,20 @@
   },
   "retired_slots": [
     "18:00"
+  ],
+  "topic_deduplication_gate": {
+    "active": true,
+    "lookback_days": 60,
+    "require_live_metricool_history": true,
+    "require_repository_history": true,
+    "require_current_queue_check": true,
+    "block_exact_duplicate": true,
+    "block_same_topic_reworded": true,
+    "block_near_duplicate_angle": true,
+    "release_condition": "NEW_TOPIC_AND_PASSED_FINAL_REVIEW",
+    "rule": "No current slot may be released until its topic is checked against live Metricool history, repository history and the current queue. A reworded version of a previously used core topic is still a duplicate and must be replaced."
+  },
+  "documented_experiments_used_topics": [
+    "Milgram obedience experiments"
   ]
 }
