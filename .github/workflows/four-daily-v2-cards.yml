@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'media_jobs/four_daily_v2_current.json'
+      - 'tools/render_carousel_pack.py'
   workflow_dispatch:
 
 permissions:
