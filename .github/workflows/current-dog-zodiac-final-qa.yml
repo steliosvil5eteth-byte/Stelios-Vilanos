@@ -10,6 +10,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: current-dog-zodiac-final-qa
+  cancel-in-progress: true
+
 jobs:
   qa:
     runs-on: ubuntu-24.04
@@ -20,21 +24,25 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq python3-pil
-      - name: Fetch exact final media-output assets
+      - name: Download exact final assets
         run: |
           set -euo pipefail
-          git fetch origin media-output --depth=1
-          git worktree add --detach "$RUNNER_TEMP/out" FETCH_HEAD
-          ROOT="$RUNNER_TEMP/out/jobs/3ea27bb02fbafeff"
-          test -s "$ROOT/current-20260925-1100-zodiac-group-b-first-detail-01.jpg"
-          test -s "$ROOT/current-20260925-1300-dog-bartender-mystery-01.jpg"
+          ROOT="$RUNNER_TEMP/assets"
+          mkdir -p "$ROOT"
+          BASE="https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/3ea27bb02fbafeff"
+          for i in 01 02 03 04 05 06; do
+            curl -L --fail --retry 3 --retry-delay 1 "$BASE/current-20260925-1100-zodiac-group-b-first-detail-$i.jpg" -o "$ROOT/zodiac-$i.jpg"
+          done
+          for i in 01 02 03 04; do
+            curl -L --fail --retry 3 --retry-delay 1 "$BASE/current-20260925-1300-dog-bartender-mystery-$i.jpg" -o "$ROOT/dog-$i.jpg"
+          done
       - name: Build contact sheets
         run: |
           python3 - <<'PY'
           from PIL import Image, ImageOps, ImageDraw
           import os
           from pathlib import Path
-          root=Path(os.environ['RUNNER_TEMP'])/'out'/'jobs'/'3ea27bb02fbafeff'
+          root=Path(os.environ['RUNNER_TEMP'])/'assets'
           q=Path(os.environ['RUNNER_TEMP'])/'qa'
           q.mkdir()
           def sheet(paths, cols, name):
@@ -52,10 +60,8 @@ jobs:
               for i,im in enumerate(thumbs):
                   out.paste(im,((i%cols)*380,(i//cols)*405))
               out.save(q/name,quality=92)
-          z=sorted(root.glob('current-20260925-1100-zodiac-group-b-first-detail-*.jpg'))
-          d=sorted(root.glob('current-20260925-1300-dog-bartender-mystery-*.jpg'))
-          assert len(z)==6, len(z)
-          assert len(d)==4, len(d)
+          z=[root/f'zodiac-{i:02}.jpg' for i in range(1,7)]
+          d=[root/f'dog-{i:02}.jpg' for i in range(1,5)]
           sheet(z,3,'zodiac-final-contact-sheet.jpg')
           sheet(d,2,'dog-final-contact-sheet.jpg')
           PY
