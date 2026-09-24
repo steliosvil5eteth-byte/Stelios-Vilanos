@@ -2,6 +2,7 @@ const ALPHA_BASE='https://www.alphavantage.co/query';
 const SEC_TICKERS='https://www.sec.gov/files/company_tickers.json';
 const SEC_SUBMISSIONS='https://data.sec.gov/submissions';
 let secTickerCache=null,secTickerCacheAt=0;
+const eventCache=globalThis.__TSC_EVENT_CACHE__||(globalThis.__TSC_EVENT_CACHE__=new Map());
 
 function clamp(v,a,b){return Math.max(a,Math.min(b,v))}
 function num(v,d=0){const n=Number(v);return Number.isFinite(n)?n:d}
@@ -73,18 +74,19 @@ async function fetchSecEvents(symbol,{userAgent=process.env.SEC_USER_AGENT,lookb
 }
 
 export function eventDataConfig(){
-  return {alphaNewsConfigured:Boolean(process.env.ALPHAVANTAGE_API_KEY),secConfigured:Boolean(process.env.SEC_USER_AGENT),required:String(process.env.EVENT_CONFIRMATION_REQUIRED||'true').toLowerCase()!=='false',lookbackHours:Math.max(1,Math.min(72,num(process.env.EVENT_LOOKBACK_HOURS,24))),minEventScore:clamp(num(process.env.EVENT_MIN_SCORE,80),0,100)};
+  return {alphaNewsConfigured:Boolean(process.env.ALPHAVANTAGE_API_KEY),secConfigured:Boolean(process.env.SEC_USER_AGENT),cacheMinutes:Math.max(1,Math.min(60,num(process.env.EVENT_CACHE_MINUTES,10))),required:String(process.env.EVENT_CONFIRMATION_REQUIRED||'true').toLowerCase()!=='false',lookbackHours:Math.max(1,Math.min(72,num(process.env.EVENT_LOOKBACK_HOURS,24))),minEventScore:clamp(num(process.env.EVENT_MIN_SCORE,80),0,100)};
 }
 
 export async function fetchEventSignal(symbol,{now=new Date()}={}){
-  const cfg=eventDataConfig(),errors=[];let alpha=null,sec=null;
+  const cfg=eventDataConfig(),cacheMinutes=Math.max(1,Math.min(60,num(process.env.EVENT_CACHE_MINUTES,10))),cacheKey=String(symbol).toUpperCase(),cached=eventCache.get(cacheKey);if(cached&&now.getTime()-cached.at<cacheMinutes*60000)return {...cached.value,cacheHit:true};
+  const errors=[];let alpha=null,sec=null;
   if(cfg.alphaNewsConfigured)try{alpha=await fetchAlphaNews(symbol,{lookbackHours:cfg.lookbackHours,now})}catch(e){errors.push(`alpha:${e.message||e}`)}
   if(cfg.secConfigured)try{sec=await fetchSecEvents(symbol,{lookbackHours:Math.max(48,cfg.lookbackHours),now})}catch(e){errors.push(`sec:${e.message||e}`)}
   const direction=alpha?.direction||'NEUTRAL';let score=alpha?.score||0;
   if(sec?.status==='OK'&&score>0)score=clamp(score+Math.min(5,sec.score/20),0,100);
   else if(sec?.status==='OK'&&score===0)score=Math.min(85,sec.score);
   const freshness=[alpha?.freshnessHours,sec?.freshnessHours].filter(Number.isFinite);
-  return {symbol,configured:cfg.alphaNewsConfigured||cfg.secConfigured,required:cfg.required,minEventScore:cfg.minEventScore,status:errors.length&&!(alpha||sec)?'ERROR':'OK',direction,score,freshnessHours:freshness.length?Math.min(...freshness):null,headlineCount:alpha?.headlineCount||0,weightedSentiment:alpha?.weightedSentiment||0,articles:alpha?.articles||[],sec:sec||null,errors};
+  const value={symbol,configured:cfg.alphaNewsConfigured||cfg.secConfigured,required:cfg.required,minEventScore:cfg.minEventScore,status:errors.length&&!(alpha||sec)?'ERROR':'OK',direction,score,freshnessHours:freshness.length?Math.min(...freshness):null,headlineCount:alpha?.headlineCount||0,weightedSentiment:alpha?.weightedSentiment||0,articles:alpha?.articles||[],sec:sec||null,errors,cacheHit:false};eventCache.set(cacheKey,{at:now.getTime(),value});return value;
 }
 
 
