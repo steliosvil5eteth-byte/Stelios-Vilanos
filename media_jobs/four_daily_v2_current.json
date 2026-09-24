@@ -5,7 +5,7 @@
   "local_date": "2026-09-25",
   "require_photographic_visuals": true,
   "authorization_basis": "Current user authorization; render only. Social publishing remains separately gated by final QA.",
-  "purpose": "Render CURRENT_TEN_DAILY card packs. Zodiac cards must show the sign visually; Dog Bartender uses the same recurring photorealistic brown/golden-brown dog across four distinct bar scenes. Render only; social release remains QA-gated.",
+  "purpose": "Render CURRENT_TEN_DAILY card packs. Zodiac cards must visibly show each sign's own recognizable motif (scales, scorpion, archer, goat, water bearer, fish) plus zodiac glyph and copy; Dog Bartender uses the same recurring photorealistic golden/honey-brown retriever-style bartender across four distinct bar scenes. Render only; social release remains QA-gated.",
   "jobs": [
     {
       "id": "current-20260925-0700-relationship-roles",
@@ -165,50 +165,44 @@
         {
           "title": "ΖΥΓΟΣ — 1/6",
           "text": "Τον τρόπο που φέρεσαι στους γύρω σου.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FLibra%20%28Annotated%29%20%28libra-ann%29.jpg&w=1600&output=jpg",
-          "source_query": "Libra constellation photograph",
-          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
-          "license": "CC BY 4.0"
+          "source_query": "balance scale photograph",
+          "source_credit": "Balance scale / Wikimedia Commons",
+          "license": "CC or public-domain source resolved at render time"
         },
         {
           "title": "ΣΚΟΡΠΙΟΣ — 2/6",
           "text": "Αν τα μάτια και τα λόγια σου λένε το ίδιο πράγμα.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FScorpius%20%28Annotated%29%20%28scorpius-ann%29.jpg&w=1600&output=jpg",
-          "source_query": "Scorpius constellation photograph",
-          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
-          "license": "CC BY 4.0"
+          "source_query": "scorpion photograph",
+          "source_credit": "Scorpion / Wikimedia Commons",
+          "license": "CC or public-domain source resolved at render time"
         },
         {
           "title": "ΤΟΞΟΤΗΣ — 3/6",
           "text": "Αν έχεις περιέργεια και χιούμορ.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FSagittarius%20%28Annotated%29%20%28sagittarius-ann%29.jpg&w=1600&output=jpg",
-          "source_query": "Sagittarius constellation photograph",
-          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
-          "license": "CC BY 4.0"
+          "source_query": "archer statue photograph",
+          "source_credit": "Archer statue / Wikimedia Commons",
+          "license": "CC or public-domain source resolved at render time"
         },
         {
           "title": "ΑΙΓΟΚΕΡΩΣ — 4/6",
           "text": "Αν είσαι συνεπής στα μικρά.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCapricornus%20%28Annotated%29%20%28capricornus-ann%29.jpg&w=1600&output=jpg",
-          "source_query": "Capricornus constellation photograph",
-          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
-          "license": "CC BY 4.0"
+          "source_query": "goat portrait photograph",
+          "source_credit": "Goat / Wikimedia Commons",
+          "license": "CC or public-domain source resolved at render time"
         },
         {
           "title": "ΥΔΡΟΧΟΟΣ — 5/6",
           "text": "Αν έχεις δικό σου τρόπο να σκέφτεσαι.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FAquarius%20%28Annotated%29%20%28aquarius-ann%29.jpg&w=1600&output=jpg",
-          "source_query": "Aquarius constellation photograph",
-          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
-          "license": "CC BY 4.0"
+          "source_query": "water bearer statue photograph",
+          "source_credit": "Water bearer statue / Wikimedia Commons",
+          "license": "CC or public-domain source resolved at render time"
         },
         {
           "title": "ΙΧΘΥΕΣ — 6/6",
           "text": "Τον τόνο της φωνής και το πώς τον κάνεις να νιώθει.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FPisces%20%28Annotated%29%20%28pisces-ann%29.jpg&w=1600&output=jpg",
-          "source_query": "Pisces constellation photograph",
-          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
-          "license": "CC BY 4.0"
+          "source_query": "two fish photograph",
+          "source_credit": "Fish / Wikimedia Commons",
+          "license": "CC or public-domain source resolved at render time"
         }
       ],
       "approved": true,
