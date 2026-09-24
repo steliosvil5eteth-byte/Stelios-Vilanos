@@ -1,0 +1,514 @@
+{
+  "batch_id": "25354be4d8ca6553",
+  "batch_sha256": "25354be4d8ca655326948cceb69804f93303493910dd5fb6bcd464d990eb4db0",
+  "paid_ai_credits_used": 0,
+  "photographic_visuals_required": true,
+  "jobs": [
+    {
+      "id": "current-20260925-0700-relationship-roles",
+      "status": "rendered",
+      "card_count": 7,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCouple%20enjoys%20time%20together%20at%20home.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FKochendes%20Paar%20in%20einer%20K%C3%BCche%202017-01-15.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC0 1.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FSenior%20couple%20at%20home%20checking%20finance%20on%20credit%20card%20from%20above.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCouple%20sits%20together%20on%20a%20couch%20with%20a%20camera.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FMother%20and%20children%20at%20home.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCouple%20enjoys%20time%20together%20on%20the%20couch%20while%20talking%20on%20the%20phone.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F9%2F92%2FElderly_couple_%25281586495%2529.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC0 1.0"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-20260925-0700-relationship-roles-01.jpg",
+          "bytes": 311115,
+          "sha256": "a1a6a5f9aa294b3250fad6814e50a98d6e4beacb7970216619e23edd692a9cf4"
+        },
+        {
+          "name": "current-20260925-0700-relationship-roles-02.jpg",
+          "bytes": 351672,
+          "sha256": "3f9e41a1120738b3d5c6c040615959d89787d6f5609fa437408c0adc72d47f7f"
+        },
+        {
+          "name": "current-20260925-0700-relationship-roles-03.jpg",
+          "bytes": 304371,
+          "sha256": "b45dd4f9a02a808a6dc85d40d2d749eb2b1c2ae9b6bcf5a867ccf102d2246786"
+        },
+        {
+          "name": "current-20260925-0700-relationship-roles-04.jpg",
+          "bytes": 336815,
+          "sha256": "b396e13cea880391c59c07828750ee932cbaf6309111186876f8c1a5b2c40edb"
+        },
+        {
+          "name": "current-20260925-0700-relationship-roles-05.jpg",
+          "bytes": 308242,
+          "sha256": "3fed4120eee3ff42543e32924470f0de3adf5dcb87ed3c0bea5b0d9d3a433077"
+        },
+        {
+          "name": "current-20260925-0700-relationship-roles-06.jpg",
+          "bytes": 331539,
+          "sha256": "63f2cf9eec757ef380295166ecd7b343953ffc35680e05c1a4178a158852ed13"
+        },
+        {
+          "name": "current-20260925-0700-relationship-roles-07.jpg",
+          "bytes": 344532,
+          "sha256": "3ec7f26c19bd1743f7dd75ffc87f1897213de2c42a2bd9bb6f97a9ce9b6c1257"
+        },
+        {
+          "name": "current-20260925-0700-relationship-roles.mp4",
+          "bytes": 1176775,
+          "sha256": "d57485c2a7cf2150f135e1ffff34a5992b68798962f0f5d82d721925874f84cc"
+        }
+      ]
+    },
+    {
+      "id": "current-20260925-0900-survival-blackout",
+      "status": "rendered",
+      "card_count": 9,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 45.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FNIGHT%20LIGHT%20AT%20HOME.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/USB%20power%20bank.jpg?width=1600",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCharging%20a%20smartphone%20with%20a%20USB%20power%20bank.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F0%2F09%2FFood_into_a_refrigerator_-_20111002.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FFlashlight%20%2851852112087%29.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FLinterna%20encendida.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FNSS%20Transistor%20Radio.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fb%2Fb7%2FLed_flashlight.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FDatrex%20emergency%20drinking%20water%20packet.JPG&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-20260925-0900-survival-blackout-01.jpg",
+          "bytes": 336157,
+          "sha256": "c4ca38b08b2486ea5693e99214118baf58520a0f89621d91ae4f0052b043d06f"
+        },
+        {
+          "name": "current-20260925-0900-survival-blackout-02.jpg",
+          "bytes": 303659,
+          "sha256": "83d9906342a00d7be977e74c95f24808f0974e77b361b2c0952a0aeb3cd4abbb"
+        },
+        {
+          "name": "current-20260925-0900-survival-blackout-03.jpg",
+          "bytes": 498175,
+          "sha256": "296668a9195e85d27be1542975c5fc1d0bae91c0177847d5404b81025c950a37"
+        },
+        {
+          "name": "current-20260925-0900-survival-blackout-04.jpg",
+          "bytes": 352302,
+          "sha256": "349b7dec412621203d03871bfa71f12e982c6e3211063efbe84a7cb53c91a7fd"
+        },
+        {
+          "name": "current-20260925-0900-survival-blackout-05.jpg",
+          "bytes": 243047,
+          "sha256": "185910af08f7ab2c51bd631f43a94e51c0df14fdd096d30ab5189f3393052a15"
+        },
+        {
+          "name": "current-20260925-0900-survival-blackout-06.jpg",
+          "bytes": 230741,
+          "sha256": "dbb67309ed8f1a863464cee2cbf05eccfce57080c8cf1e431a5842d6a8d380a8"
+        },
+        {
+          "name": "current-20260925-0900-survival-blackout-07.jpg",
+          "bytes": 362332,
+          "sha256": "f61ab7c44f3a1cc5d01898a314a0613c68051759cc539d8df0efb922effdf549"
+        },
+        {
+          "name": "current-20260925-0900-survival-blackout-08.jpg",
+          "bytes": 382953,
+          "sha256": "6e75f2a0d07fac1a3c948cbc34fb33b566a8fc4ff2d89746f5e1bc3c70c8433d"
+        },
+        {
+          "name": "current-20260925-0900-survival-blackout-09.jpg",
+          "bytes": 331048,
+          "sha256": "6495f0dec212655039f12b774eb399224f0a98d9d39024341be852054cdb9173"
+        },
+        {
+          "name": "current-20260925-0900-survival-blackout.mp4",
+          "bytes": 1571438,
+          "sha256": "66e225f3b00d58f6483229e92281793ce2df4b72d7a93a32e275967b47f3a1d3"
+        }
+      ]
+    },
+    {
+      "id": "current-20260925-1100-zodiac-group-b-first-detail",
+      "status": "rendered",
+      "card_count": 6,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 30.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Photo%20of%20the%20constellation%20Libra%20produced%20by%20NOIRLab%20in%20collaboration%20with%20Eckhard%20Slawik,%20a%20German%20astrophotographer%20(libra).jpg?width=1600",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Photo%20of%20the%20constellation%20Scorpius%20produced%20by%20NOIRLab%20in%20collaboration%20with%20Eckhard%20Slawik,%20a%20German%20astrophotographer%20(scorpius).jpg?width=1600",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Photo%20of%20the%20constellation%20Sagittarius%20produced%20by%20NOIRLab%20in%20collaboration%20with%20Eckhard%20Slawik,%20a%20German%20astrophotographer%20(sagittarius).jpg?width=1600",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Photo%20of%20the%20constellation%20Capricornus%20produced%20by%20NOIRLab%20in%20collaboration%20with%20Eckhard%20Slawik,%20a%20German%20astrophotographer%20(capricornus).jpg?width=1600",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Photo%20of%20the%20constellation%20Aquarius%20produced%20by%20NOIRLab%20in%20collaboration%20with%20Eckhard%20Slawik,%20a%20German%20astrophotographer%20(aquarius).jpg?width=1600",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Photo%20of%20the%20constellation%20Pisces%20produced%20by%20NOIRLab%20in%20collaboration%20with%20Eckhard%20Slawik,%20a%20German%20astrophotographer%20(pisces).jpg?width=1600",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-20260925-1100-zodiac-group-b-first-detail-01.jpg",
+          "bytes": 582045,
+          "sha256": "555eb7050e428bddb6e9a94b9b2dfc8c62e6db0a5f67867f506735dbb3bd4d5e"
+        },
+        {
+          "name": "current-20260925-1100-zodiac-group-b-first-detail-02.jpg",
+          "bytes": 662153,
+          "sha256": "b82a1f8cc4493c102d58a052ca3656e6211d57c7594332c89bc493b457f386ff"
+        },
+        {
+          "name": "current-20260925-1100-zodiac-group-b-first-detail-03.jpg",
+          "bytes": 656627,
+          "sha256": "649c0c63cb5da58e88189996eb186500d0abdf046e996ae414cffbd157832fc8"
+        },
+        {
+          "name": "current-20260925-1100-zodiac-group-b-first-detail-04.jpg",
+          "bytes": 612251,
+          "sha256": "5b841d10ddda69feef920b528ea1caac0d58caaec205c0c6f97231d0fafc8b5d"
+        },
+        {
+          "name": "current-20260925-1100-zodiac-group-b-first-detail-05.jpg",
+          "bytes": 574449,
+          "sha256": "45b486016bbfaf224d92e7afd969fe74b1a7e5156e9a4a804c1028dcbca2a05b"
+        },
+        {
+          "name": "current-20260925-1100-zodiac-group-b-first-detail-06.jpg",
+          "bytes": 550899,
+          "sha256": "456bd679b1d1eb6bd52c6c91076813871a2208ba17d1f76b3c556c7b4d31f048"
+        },
+        {
+          "name": "current-20260925-1100-zodiac-group-b-first-detail.mp4",
+          "bytes": 2337545,
+          "sha256": "37033958cb721d8558a52661001f67ecb784bf679c31ab942b58005451c0aa1f"
+        }
+      ]
+    },
+    {
+      "id": "current-20260925-1300-dog-bartender-mystery",
+      "status": "rendered",
+      "card_count": 4,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 24.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F4044ca91-5dc7-4c71-927b-2e4be17adf54%2F10fdf0af-08d2-4719-8969-4109a73e0cac%2FSingle_photorealistic_editorial_photograph__square_compositi.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNjhlYTc0MDY3ZTkzM2U4YiIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDQzNTU5MH0.26qlvYDxoR2sdjj4wgSyWqaS3F0EOu_-lCLcwvgHZmM&w=1600&output=jpg",
+          "source_credit": "Project-generated photorealistic dog-bartender image",
+          "license": "AI-generated project asset"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2Ff4c2fa0e-40d9-4a53-b759-023d10bbe64b%2F73b518c5-1912-4921-b401-e49fe90bc7bb%2F_dog_same_adult_black_and_white_Border_Collie_bartender__sam.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMTI3ZDQ0MDhiMGIzNjYwMiIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDQwNDEwNH0.V5ycgGf7hwV9GTqBs0sGL6UvpsV0KGjWqAvE9l0205Q&w=1600&output=jpg",
+          "source_credit": "Project-generated photorealistic dog-bartender image",
+          "license": "AI-generated project asset"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2Ff842f711-37fc-4ce4-a712-ddad9f3afa5b%2Fb8566611-6120-4de0-8fbc-de34ad82d92b%2F_dog_same_adult_black_and_white_Border_Collie_bartender__sam.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiZmEyODkwMTE2OTM2NmVjZSIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDM3NjcyMX0.Aej3ZTA24Bgp2x0hxo1-buXMBh05clunao4NyIiIH1k&w=1600&output=jpg",
+          "source_credit": "Project-generated photorealistic dog-bartender image",
+          "license": "AI-generated project asset"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F94cdcf56-147a-4b27-bfab-7f783b97a187%2F8dff22b7-bfb5-4a95-929b-679598e52919%2F_dog_same_adult_black_and_white_Border_Collie_bartender__sam.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiODMyY2IwZDJkYzQ4OWY1ZCIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDQzMDU0Nn0.21u_SVauktx4j1tLENrYLr3FSmXKi_NIM76v0mnGiq8&w=1600&output=jpg",
+          "source_credit": "Project-generated photorealistic dog-bartender image",
+          "license": "AI-generated project asset"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-20260925-1300-dog-bartender-mystery-01.jpg",
+          "bytes": 312184,
+          "sha256": "f2f52b33d19873db196628bd4b53f454d0ac150a3bdf2db8616c2618aeb89b15"
+        },
+        {
+          "name": "current-20260925-1300-dog-bartender-mystery-02.jpg",
+          "bytes": 276025,
+          "sha256": "d1b86d5dbf20a1193361b539846a4250e0f55a254944aa90179ccd0ee752c73c"
+        },
+        {
+          "name": "current-20260925-1300-dog-bartender-mystery-03.jpg",
+          "bytes": 307769,
+          "sha256": "f25e885ad04860a196de76771acdbbc43bcb1fdba8216f596791d12233e023c9"
+        },
+        {
+          "name": "current-20260925-1300-dog-bartender-mystery-04.jpg",
+          "bytes": 308570,
+          "sha256": "daf67a1e65b6fa0d730d3eaebdc1581e8edfbb9244fa30c72db12bc2aff0c49e"
+        },
+        {
+          "name": "current-20260925-1300-dog-bartender-mystery.mp4",
+          "bytes": 619604,
+          "sha256": "5f0cb615097dcd70c41e96433a9a38e2ca973d5f358294a156cba3b3d8c56c41"
+        }
+      ]
+    },
+    {
+      "id": "current-20260925-1500-half-orange-story",
+      "status": "rendered",
+      "card_count": 5,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 30.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FOrange%20fruit.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FOlder%20couple%20enjoys%20coffee%20together.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FElderly%20couple%20%281527965%29.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FElderly%20Couple%20Eating.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC0 1.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F3%2F39%2FElderly_couple_%25281527965%2529.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-20260925-1500-half-orange-story-01.jpg",
+          "bytes": 388274,
+          "sha256": "8865fb015f4633a34c6320c051a756dc44caa085fcf4a342d480374aac3cd0f5"
+        },
+        {
+          "name": "current-20260925-1500-half-orange-story-02.jpg",
+          "bytes": 259072,
+          "sha256": "3a2b4a30d3ae79c81d6002b65a1ef010a2f33085b2e4e68166481ff40602eeb0"
+        },
+        {
+          "name": "current-20260925-1500-half-orange-story-03.jpg",
+          "bytes": 296669,
+          "sha256": "eb3d5941efe8c4f69ccb3a2b452d095e0c2a9fd66185130700f03cb7828107b5"
+        },
+        {
+          "name": "current-20260925-1500-half-orange-story-04.jpg",
+          "bytes": 387809,
+          "sha256": "d29f612ab0f15489ab52f227694736fa174563489167ed68b3d060ed043f5bc0"
+        },
+        {
+          "name": "current-20260925-1500-half-orange-story-05.jpg",
+          "bytes": 305776,
+          "sha256": "8eb89885a0733bae7325d7c73900204403c7120be127040376a1d7dfa6096fd8"
+        },
+        {
+          "name": "current-20260925-1500-half-orange-story.mp4",
+          "bytes": 922496,
+          "sha256": "072ab37e0694886c3ffed814fa6d626db3dc176d1e439b6b43baefe3d9cd57ea"
+        }
+      ]
+    },
+    {
+      "id": "current-20260925-2000-myth-truth-great-wall-space",
+      "status": "rendered",
+      "card_count": 4,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 24.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FGreat%20Wall%20China%2001.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC BY 4.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FGreat%20Wall%20of%20China%20near%20Beijing.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FThe%20great%20wall%20China.jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FGreat%20Wall%20of%20China%20(2639618338).jpg&w=1600&output=jpg",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC BY 2.0"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-20260925-2000-myth-truth-great-wall-space-01.jpg",
+          "bytes": 440385,
+          "sha256": "e2598fb093e7fd892d80271a15cacd1ffd3f289c7209d7f904dad5effe81c365"
+        },
+        {
+          "name": "current-20260925-2000-myth-truth-great-wall-space-02.jpg",
+          "bytes": 335458,
+          "sha256": "6d2cd53eae2adefdbcfb71f101d3a357faad87352f2dc0c706ea41c8f2f37990"
+        },
+        {
+          "name": "current-20260925-2000-myth-truth-great-wall-space-03.jpg",
+          "bytes": 378212,
+          "sha256": "e012b9ccb342d388be005865b5595242a1ed7180949dbbc6270136b3177ec212"
+        },
+        {
+          "name": "current-20260925-2000-myth-truth-great-wall-space-04.jpg",
+          "bytes": 369591,
+          "sha256": "ad4075a54e9105a6657ddbb269f0cf95ef28c11eac14b96f4ebe72a7966f5fed"
+        },
+        {
+          "name": "current-20260925-2000-myth-truth-great-wall-space.mp4",
+          "bytes": 876711,
+          "sha256": "7e553f1733f1171e0588f3f3b8c107d338e0e42094db98a9a9c26ec658cbbe70"
+        }
+      ]
+    }
+  ]
+}

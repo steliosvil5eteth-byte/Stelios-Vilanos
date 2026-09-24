@@ -1,0 +1,357 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_TEN_DAILY",
+  "local_date": "2026-09-25",
+  "require_photographic_visuals": true,
+  "authorization_basis": "Current user authorization; render only. Social publishing remains separately gated by final QA.",
+  "purpose": "Render the current 25 Sep card packs. Dog Bartender uses four newly generated consistent photorealistic Border Collie bartender scenes. No social publishing occurs in this workflow.",
+  "jobs": [
+    {
+      "id": "current-20260925-0700-relationship-roles",
+      "expected_cards": 7,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΤΙ ΑΛΛΑΞΕ ΣΤΙΣ ΣΧΕΣΕΙΣ; — 1/7",
+          "text": "Κάποτε πολλοί ρόλοι μέσα σε ένα ζευγάρι θεωρούνταν αυτονόητοι. Σήμερα όλο και περισσότερα πράγματα χρειάζονται ξεκάθαρη συζήτηση.",
+          "source_query": "couple talking at home photograph",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCouple%20enjoys%20time%20together%20at%20home.jpg&w=1600&output=jpg"
+        },
+        {
+          "title": "ΠΟΙΟΣ ΚΑΝΕΙ ΤΙ; — 2/7",
+          "text": "Δουλειές του σπιτιού, ψώνια, μαγείρεμα, λογαριασμοί: όταν οι προσδοκίες δεν λέγονται καθαρά, η καθημερινότητα μπορεί να γεμίσει μικρές εντάσεις.",
+          "source_query": "couple cooking home photograph",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC0 1.0",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FKochendes%20Paar%20in%20einer%20K%C3%BCche%202017-01-15.jpg&w=1600&output=jpg"
+        },
+        {
+          "title": "ΤΑ ΧΡΗΜΑΤΑ — 3/7",
+          "text": "Κοινό ταμείο, χωριστά χρήματα ή κάτι ενδιάμεσο; Δεν υπάρχει μία λύση για όλους. Το δύσκολο είναι να συμφωνήσουν δύο άνθρωποι τι θεωρούν δίκαιο.",
+          "source_query": "couple household finances photograph",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FSenior%20couple%20at%20home%20checking%20finance%20on%20credit%20card%20from%20above.jpg&w=1600&output=jpg"
+        },
+        {
+          "title": "Ο ΧΡΟΝΟΣ — 4/7",
+          "text": "Ποιος προσαρμόζει το πρόγραμμά του; Πόσο χρόνο κρατά ο καθένας για δουλειά, φίλους και προσωπική ζωή; Αυτά πλέον συζητιούνται περισσότερο αντί να θεωρούνται δεδομένα.",
+          "source_query": "couple calendar planning photograph",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCouple%20sits%20together%20on%20a%20couch%20with%20a%20camera.jpg&w=1600&output=jpg"
+        },
+        {
+          "title": "Η ΦΡΟΝΤΙΔΑ — 5/7",
+          "text": "Όταν υπάρχουν παιδιά ή άλλες οικογενειακές ευθύνες, το πραγματικό βάρος φαίνεται στις καθημερινές μικρές υποχρεώσεις — όχι μόνο στις μεγάλες αποφάσεις.",
+          "source_query": "parents child home photograph",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FMother%20and%20children%20at%20home.jpg&w=1600&output=jpg"
+        },
+        {
+          "title": "ΤΟ ΚΛΕΙΔΙ — 6/7",
+          "text": "Το πρόβλημα συχνά δεν είναι ότι δύο άνθρωποι θέλουν διαφορετικά πράγματα. Είναι ότι ο καθένας θεωρεί πως το δικό του «αυτονόητο» είναι αυτονόητο και για τον άλλον.",
+          "source_query": "couple conversation table photograph",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCouple%20enjoys%20time%20together%20on%20the%20couch%20while%20talking%20on%20the%20phone.jpg&w=1600&output=jpg"
+        },
+        {
+          "title": "ΕΣΥ ΤΙ ΠΙΣΤΕΥΕΙΣ; — 7/7",
+          "text": "Οι πιο ξεκάθαροι ρόλοι έκαναν παλιότερα τις σχέσεις πιο απλές ή η σημερινή διαπραγμάτευση τις κάνει πιο δίκαιες; Γράψε τη γνώμη σου.",
+          "source_query": "couple portrait home photograph",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC0 1.0",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCouple%20in%20a%20couch.jpg&w=1600&output=jpg"
+        }
+      ],
+      "approved": true,
+      "publish_to_social": false,
+      "reset_hold": false
+    },
+    {
+      "id": "current-20260925-0900-survival-blackout",
+      "expected_cards": 9,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ — 1/9",
+          "text": "ΜΠΛΑΚΑΟΥΤ ΠΟΛΛΩΝ ΩΡΩΝ: πριν συμβεί, ξέρεις πού είναι φακός, νερό, φάρμακα, φορτιστές και βασικά τηλέφωνα ανάγκης;",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FNIGHT%20LIGHT%20AT%20HOME.jpg&w=1600&output=jpg",
+          "source_query": "home blackout night photograph",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "ΜΙΚΡΑ ΠΟΥ ΒΟΗΘΟΥΝ — 2/9",
+          "text": "Κράτα 2-3 χρήσιμα έξτρα: power bank φορτισμένο, φακό με εφεδρικές μπαταρίες και ραδιόφωνο μπαταρίας για επίσημες ενημερώσεις.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FPower%20bank.JPG&w=1600&output=jpg",
+          "source_query": "power bank photograph",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "ΚΡΑΤΑ ΕΝΕΡΓΕΙΑ — 3/9",
+          "text": "Βάλε το κινητό σε εξοικονόμηση ενέργειας, χαμήλωσε φωτεινότητα και χρησιμοποίησε το power bank μόνο όταν χρειάζεται. Κράτα μπαταρία για επικοινωνία ανάγκης.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCharging%20a%20smartphone%20with%20a%20USB%20power%20bank.jpg&w=1600&output=jpg",
+          "source_query": "smartphone charging power bank photograph",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "ΨΥΓΕΙΟ ΚΑΙ ΤΡΟΦΙΜΑ — 4/9",
+          "text": "Κράτα τις πόρτες ψυγείου και κατάψυξης κλειστές όσο γίνεται. Κάθε άνοιγμα αφήνει το κρύο να φύγει γρηγορότερα.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FOpen%20refrigerator%20with%20food%20at%20night.jpg&w=1600&output=jpg",
+          "source_query": "refrigerator food home photograph",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA"
+        },
+        {
+          "title": "ΦΩΣ ΚΑΙ ΑΣΦΑΛΕΙΑ — 5/9",
+          "text": "Προτίμησε φακούς αντί για κεριά. Γεννήτρια, ψησταριά ή άλλη συσκευή καύσης ποτέ μέσα στο σπίτι ή κοντά σε ανοίγματα: υπάρχει κίνδυνος μονοξειδίου.",
+          "footer": "Ασφάλεια: Ready.gov / CDC",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FFlashlight%20%2851852112087%29.jpg&w=1600&output=jpg",
+          "source_query": "flashlight dark photograph",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 2.0"
+        },
+        {
+          "title": "12 ΛΑΘΗ — 1 ΕΩΣ 4 — 6/9",
+          "text": "1. Ανάβεις κεριά χωρίς επίβλεψη. 2. Ανοίγεις συνέχεια το ψυγείο. 3. Αδειάζεις την μπαταρία στο κινητό. 4. Αγνοείς επίσημες ενημερώσεις.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FLinterna%20encendida.jpg&w=1600&output=jpg",
+          "source_query": "flashlight switched on photograph",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "12 ΛΑΘΗ — 5 ΕΩΣ 8 — 7/9",
+          "text": "5. Χρησιμοποιείς συσκευή καύσης μέσα. 6. Πιάνεις πεσμένα καλώδια. 7. Κάνεις άσκοπες μετακινήσεις στο σκοτάδι. 8. Δεν κρατάς νερό και απαραίτητα φάρμακα διαθέσιμα.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FNSS%20Transistor%20Radio.jpg&w=1600&output=jpg",
+          "source_query": "battery radio photograph",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA"
+        },
+        {
+          "title": "12 ΛΑΘΗ — 9 ΕΩΣ 12 — 8/9",
+          "text": "9. Υποθέτεις ότι όλοι έχουν ρεύμα. 10. Δεν ελέγχεις ευάλωτους δικούς σου. 11. Συνδέεις πολλά φορτία μόλις επανέλθει. 12. Αγνοείς μυρωδιά καμένου ή ηλεκτρικό κίνδυνο.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FTorch%20Light.jpg&w=1600&output=jpg",
+          "source_query": "torch flashlight photograph",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "ΤΙ ΚΑΝΕΙΣ ΤΕΛΙΚΑ — 9/9",
+          "text": "Φως με φακό, μπαταρία για επικοινωνία, πόρτες ψυγείου κλειστές, επίσημες οδηγίες και καθόλου καύση σε κλειστό χώρο. Σε πραγματική έκτακτη ανάγκη: 112.",
+          "footer": "Γενικές οδηγίες ετοιμότητας — όχι εγγύηση ασφάλειας",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FDatrex%20emergency%20drinking%20water%20packet.JPG&w=1600&output=jpg",
+          "source_query": "emergency water packet photograph",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 3.0"
+        }
+      ],
+      "approved": true,
+      "publish_to_social": false,
+      "reset_hold": false
+    },
+    {
+      "id": "current-20260925-1100-zodiac-group-b-first-detail",
+      "expected_cards": 6,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΖΥΓΟΣ — 1/6",
+          "text": "Τον τρόπο που φέρεσαι στους γύρω σου.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FLibra%20%28Annotated%29%20%28libra-ann%29.jpg&w=1600&output=jpg",
+          "source_query": "Libra constellation photograph",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "ΣΚΟΡΠΙΟΣ — 2/6",
+          "text": "Αν τα μάτια και τα λόγια σου λένε το ίδιο πράγμα.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FScorpius%20%28Annotated%29%20%28scorpius-ann%29.jpg&w=1600&output=jpg",
+          "source_query": "Scorpius constellation photograph",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "ΤΟΞΟΤΗΣ — 3/6",
+          "text": "Αν έχεις περιέργεια και χιούμορ.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FSagittarius%20%28Annotated%29%20%28sagittarius-ann%29.jpg&w=1600&output=jpg",
+          "source_query": "Sagittarius constellation photograph",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "ΑΙΓΟΚΕΡΩΣ — 4/6",
+          "text": "Αν είσαι συνεπής στα μικρά.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCapricornus%20%28Annotated%29%20%28capricornus-ann%29.jpg&w=1600&output=jpg",
+          "source_query": "Capricornus constellation photograph",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "ΥΔΡΟΧΟΟΣ — 5/6",
+          "text": "Αν έχεις δικό σου τρόπο να σκέφτεσαι.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FAquarius%20%28Annotated%29%20%28aquarius-ann%29.jpg&w=1600&output=jpg",
+          "source_query": "Aquarius constellation photograph",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "ΙΧΘΥΕΣ — 6/6",
+          "text": "Τον τόνο της φωνής και το πώς τον κάνεις να νιώθει.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FPisces%20%28Annotated%29%20%28pisces-ann%29.jpg&w=1600&output=jpg",
+          "source_query": "Pisces constellation photograph",
+          "source_credit": "E. Slawik/NOIRLab/NSF/AURA/M. Zamani",
+          "license": "CC BY 4.0"
+        }
+      ],
+      "approved": true,
+      "publish_to_social": false,
+      "reset_hold": false
+    },
+    {
+      "id": "current-20260925-1300-dog-bartender-mystery",
+      "expected_cards": 4,
+      "seconds_per_slide": 6,
+      "slides": [
+        {
+          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 1/4",
+          "text": "ΠΕΛΑΤΗΣ: «Έχεις κάτι που να με κάνει να φαίνομαι μυστηριώδης;» Ο μπάρμαν τον κοιτάζει για δύο δευτερόλεπτα χωρίς να γαβγίσει.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F4044ca91-5dc7-4c71-927b-2e4be17adf54%2F10fdf0af-08d2-4719-8969-4109a73e0cac%2FSingle_photorealistic_editorial_photograph__square_compositi.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNjhlYTc0MDY3ZTkzM2U4YiIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDQzNTU5MH0.26qlvYDxoR2sdjj4wgSyWqaS3F0EOu_-lCLcwvgHZmM&w=1600&output=jpg",
+          "source_query": "",
+          "source_credit": "Project-generated photorealistic dog-bartender image",
+          "license": "AI-generated project asset"
+        },
+        {
+          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 2/4",
+          "text": "ΜΠΑΡΜΑΝ: «Βεβαίως. Θα σου κλείσω το Wi-Fi.» ΠΕΛΑΤΗΣ: «Αυτό είναι ποτό;»",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2Ff4c2fa0e-40d9-4a53-b759-023d10bbe64b%2F73b518c5-1912-4921-b401-e49fe90bc7bb%2F_dog_same_adult_black_and_white_Border_Collie_bartender__sam.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMTI3ZDQ0MDhiMGIzNjYwMiIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDQwNDEwNH0.V5ycgGf7hwV9GTqBs0sGL6UvpsV0KGjWqAvE9l0205Q&w=1600&output=jpg",
+          "source_query": "",
+          "source_credit": "Project-generated photorealistic dog-bartender image",
+          "license": "AI-generated project asset"
+        },
+        {
+          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 3/4",
+          "text": "ΜΠΑΡΜΑΝ: «Όχι. Είναι η μόνη περίπτωση να αναρωτηθούν όλοι πού χάθηκες.» ΠΕΛΑΤΗΣ: «Και τι θα πίνω;»",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2Ff842f711-37fc-4ce4-a712-ddad9f3afa5b%2Fb8566611-6120-4de0-8fbc-de34ad82d92b%2F_dog_same_adult_black_and_white_Border_Collie_bartender__sam.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiZmEyODkwMTE2OTM2NmVjZSIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDM3NjcyMX0.Aej3ZTA24Bgp2x0hxo1-buXMBh05clunao4NyIiIH1k&w=1600&output=jpg",
+          "source_query": "",
+          "source_credit": "Project-generated photorealistic dog-bartender image",
+          "license": "AI-generated project asset"
+        },
+        {
+          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 4/4",
+          "text": "ΜΠΑΡΜΑΝ: «Νερό. Ο πραγματικά μυστηριώδης δεν εξηγεί ούτε την παραγγελία του.» Και συνέχισε να γυαλίζει το ποτήρι σαν να μην έγινε τίποτα.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F94cdcf56-147a-4b27-bfab-7f783b97a187%2F8dff22b7-bfb5-4a95-929b-679598e52919%2F_dog_same_adult_black_and_white_Border_Collie_bartender__sam.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiODMyY2IwZDJkYzQ4OWY1ZCIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDQzMDU0Nn0.21u_SVauktx4j1tLENrYLr3FSmXKi_NIM76v0mnGiq8&w=1600&output=jpg",
+          "source_query": "",
+          "source_credit": "Project-generated photorealistic dog-bartender image",
+          "license": "AI-generated project asset"
+        }
+      ],
+      "approved": true,
+      "publish_to_social": false,
+      "reset_hold": false
+    },
+    {
+      "id": "current-20260925-1500-half-orange-story",
+      "expected_cards": 5,
+      "seconds_per_slide": 6,
+      "slides": [
+        {
+          "title": "ΤΟ ΜΙΣΟ ΠΟΡΤΟΚΑΛΙ — 1/5",
+          "text": "Κάθε πρωί έτρωγε το μισό πορτοκάλι και άφηνε το άλλο μισό σκεπασμένο για εκείνη.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FOrange%20fruit.jpg&w=1600&output=jpg",
+          "source_query": "orange fruit breakfast photograph",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA"
+        },
+        {
+          "title": "ΔΕΝ ΗΤΑΝ ΤΑΙΝΙΑ — 2/5",
+          "text": "Δεν ήταν ρομαντικός με τον τρόπο των ταινιών. Ξεχνούσε επετείους και δεν έγραφε μεγάλα μηνύματα.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FOlder%20couple%20enjoys%20coffee%20together.jpg&w=1600&output=jpg",
+          "source_query": "older couple coffee together photograph",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "ΘΥΜΟΤΑΝ ΤΑ ΜΙΚΡΑ — 3/5",
+          "text": "Θυμόταν όμως ότι εκείνη ξυπνούσε αργότερα και ότι δεν της άρεσε να καθαρίζει πορτοκάλια.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FElderly%20couple%20%281527965%29.jpg&w=1600&output=jpg",
+          "source_query": "elderly couple home photograph",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "ΤΟ ΙΔΙΟ ΠΙΑΤΑΚΙ — 4/5",
+          "text": "Για χρόνια, το πιατάκι την περίμενε στο ίδιο σημείο.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FElderly%20Couple%20Eating.jpg&w=1600&output=jpg",
+          "source_query": "elderly couple breakfast photograph",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC0 1.0"
+        },
+        {
+          "title": "ΑΥΤΟ ΓΙΝΕΤΑΙ ΣΠΙΤΙ — 5/5",
+          "text": "Η αγάπη πολλές φορές δεν είναι η μεγάλη χειρονομία. Είναι κάτι μικρό που επαναλαμβάνεται τόσο σταθερά, ώστε γίνεται σπίτι.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FElderly%20couple%20%281586495%29.jpg&w=1600&output=jpg",
+          "source_query": "elderly married couple photograph",
+          "source_credit": "Wikimedia Commons contributor",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "approved": true,
+      "publish_to_social": false,
+      "reset_hold": false
+    },
+    {
+      "id": "current-20260925-2000-myth-truth-great-wall-space",
+      "expected_cards": 4,
+      "seconds_per_slide": 6,
+      "slides": [
+        {
+          "title": "ΜΥΘΟΣ Ή ΑΛΗΘΕΙΑ; — 1/4",
+          "text": "Το Σινικό Τείχος φαίνεται με γυμνό μάτι από το διάστημα — και μάλιστα είναι το μόνο ανθρώπινο έργο που φαίνεται. Ισχύει;",
+          "source_query": "Great Wall of China photograph",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC BY 4.0",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FGreat%20Wall%20China%2001.jpg&w=1600&output=jpg"
+        },
+        {
+          "title": "ΠΡΙΝ ΔΕΙΣ ΤΗΝ ΑΠΑΝΤΗΣΗ — 2/4",
+          "text": "Είναι τεράστιο σε μήκος. Αλλά από μεγάλο ύψος αυτό που μετράει πολύ είναι και το πλάτος, η αντίθεση με το έδαφος και οι συνθήκες παρατήρησης. Τι λες;",
+          "source_query": "Great Wall China mountains photograph",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FGreat%20Wall%20of%20China%20near%20Beijing.jpg&w=1600&output=jpg"
+        },
+        {
+          "title": "ΤΙ ΛΕΕΙ Η NASA — 3/4",
+          "text": "Η NASA αναφέρει ότι το Τείχος δεν είναι ορατό με γυμνό μάτι από τη Σελήνη και είναι δύσκολο ή αδύνατο να διακριθεί από χαμηλή γήινη τροχιά χωρίς ισχυρό φακό.",
+          "footer": "Πηγή ελέγχου: NASA",
+          "source_query": "Great Wall China aerial photograph",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FThe%20great%20wall%20China.jpg&w=1600&output=jpg"
+        },
+        {
+          "title": "Η ΑΠΑΝΤΗΣΗ: ΜΥΘΟΣ — 4/4",
+          "text": "Το τεράστιο μήκος δεν αρκεί για να το κάνει εύκολα ορατό. Το Σινικό Τείχος δεν είναι το μοναδικό ανθρώπινο έργο που φαίνεται από το διάστημα και δεν φαίνεται με γυμνό μάτι από τη Σελήνη.",
+          "source_query": "Great Wall China landscape photograph",
+          "source_credit": "Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FGreat%20Wall%20of%20China%20(2639618338).jpg&w=1600&output=jpg"
+        }
+      ],
+      "approved": true,
+      "publish_to_social": false,
+      "reset_hold": false
+    }
+  ],
+  "reset_hold": false,
+  "publish_to_social": false,
+  "production_status": "ACTIVE_RENDER_ONLY"
+}
