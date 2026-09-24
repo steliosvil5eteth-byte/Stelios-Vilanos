@@ -5,7 +5,7 @@
   "local_date": "2026-09-25",
   "require_photographic_visuals": true,
   "authorization_basis": "Current user authorization; render only. Social publishing remains separately gated by final QA.",
-  "purpose": "Render the current 25 Sep card packs. Dog Bartender uses four newly generated consistent photorealistic Border Collie bartender scenes. No social publishing occurs in this workflow.",
+  "purpose": "Render CURRENT_TEN_DAILY card packs. Zodiac cards must show the sign visually; Dog Bartender uses the same recurring photorealistic brown/golden-brown dog across four distinct bar scenes. Render only; social release remains QA-gated.",
   "jobs": [
     {
       "id": "current-20260925-0700-relationship-roles",
@@ -223,33 +223,33 @@
         {
           "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 1/4",
           "text": "ΠΕΛΑΤΗΣ: «Έχεις κάτι που να με κάνει να φαίνομαι μυστηριώδης;» Ο μπάρμαν τον κοιτάζει για δύο δευτερόλεπτα χωρίς να γαβγίσει.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F4044ca91-5dc7-4c71-927b-2e4be17adf54%2F10fdf0af-08d2-4719-8969-4109a73e0cac%2FSingle_photorealistic_editorial_photograph__square_compositi.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNjhlYTc0MDY3ZTkzM2U4YiIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDQzNTU5MH0.26qlvYDxoR2sdjj4wgSyWqaS3F0EOu_-lCLcwvgHZmM&w=1600&output=jpg",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F2faaa210-79ca-4210-b2c0-23f4403bcc2e%2Ff2106c19-90a5-4715-9ab8-a86283883c5d%2FPhotorealistic_cinematic_square_photograph_of_a_distinctive_.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNTNmOTQ5NmNmMzUzYTQzYSIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDM4ODU4OH0.lgfzEqmZ6g5EL93NcITYcIQE-fMdzBKjJlheUHoH1eA&w=1600&output=jpg",
           "source_query": "",
-          "source_credit": "Project-generated photorealistic dog-bartender image",
+          "source_credit": "Project-generated consistent golden-brown/brown dog bartender scene",
           "license": "AI-generated project asset"
         },
         {
           "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 2/4",
           "text": "ΜΠΑΡΜΑΝ: «Βεβαίως. Θα σου κλείσω το Wi-Fi.» ΠΕΛΑΤΗΣ: «Αυτό είναι ποτό;»",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2Ff4c2fa0e-40d9-4a53-b759-023d10bbe64b%2F73b518c5-1912-4921-b401-e49fe90bc7bb%2F_dog_same_adult_black_and_white_Border_Collie_bartender__sam.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMTI3ZDQ0MDhiMGIzNjYwMiIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDQwNDEwNH0.V5ycgGf7hwV9GTqBs0sGL6UvpsV0KGjWqAvE9l0205Q&w=1600&output=jpg",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F730af6e5-1f8c-42a5-9062-21cb7bbbbebb%2F82e58288-6f38-4d93-a197-9a498a0c615b%2F_dogbartender_in_the_same_realistic_dark_wood_bar__three_qua.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNzUzZjkzNjMwOWU3ZmE3MyIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDQxMjc3MX0.idiQx81tXKo2hN6ISXemskHsaU2otW0G7_6K-x8Kppk&w=1600&output=jpg",
           "source_query": "",
-          "source_credit": "Project-generated photorealistic dog-bartender image",
+          "source_credit": "Project-generated consistent golden-brown/brown dog bartender scene",
           "license": "AI-generated project asset"
         },
         {
           "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 3/4",
           "text": "ΜΠΑΡΜΑΝ: «Όχι. Είναι η μόνη περίπτωση να αναρωτηθούν όλοι πού χάθηκες.» ΠΕΛΑΤΗΣ: «Και τι θα πίνω;»",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2Ff842f711-37fc-4ce4-a712-ddad9f3afa5b%2Fb8566611-6120-4de0-8fbc-de34ad82d92b%2F_dog_same_adult_black_and_white_Border_Collie_bartender__sam.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiZmEyODkwMTE2OTM2NmVjZSIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDM3NjcyMX0.Aej3ZTA24Bgp2x0hxo1-buXMBh05clunao4NyIiIH1k&w=1600&output=jpg",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F0c783dad-d1be-4c76-98bb-c40d83291093%2F5ef5f2d5-50b1-4f0a-8a2f-1267d79677e6%2F_dogbartender_in_the_same_realistic_dark_wood_cocktail_bar__.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNTljNDQxOWQ0ZTMzMTcwNCIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDM3NjQ3N30.FzxFLDl6xZPVb62pPnwOFazXL-C2IsVhDX6-CLTsXyk&w=1600&output=jpg",
           "source_query": "",
-          "source_credit": "Project-generated photorealistic dog-bartender image",
+          "source_credit": "Project-generated consistent golden-brown/brown dog bartender scene",
           "license": "AI-generated project asset"
         },
         {
           "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 4/4",
           "text": "ΜΠΑΡΜΑΝ: «Νερό. Ο πραγματικά μυστηριώδης δεν εξηγεί ούτε την παραγγελία του.» Και συνέχισε να γυαλίζει το ποτήρι σαν να μην έγινε τίποτα.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F94cdcf56-147a-4b27-bfab-7f783b97a187%2F8dff22b7-bfb5-4a95-929b-679598e52919%2F_dog_same_adult_black_and_white_Border_Collie_bartender__sam.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiODMyY2IwZDJkYzQ4OWY1ZCIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDQzMDU0Nn0.21u_SVauktx4j1tLENrYLr3FSmXKi_NIM76v0mnGiq8&w=1600&output=jpg",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F74cba74e-cfdb-44ca-9c40-f02e1e64c193%2F9fd63838-5cbd-4750-baf7-a28d9b2d3a75%2F_dogbartender_in_the_same_realistic_dark_wood_bar__wider_fro.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMDgwNDEwYzhlM2JiODI2OCIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDQyNjU2OH0.6GleH3-hk4BYSDFxGEjAmLhTDIE4xASfzuIa9B7qKgI&w=1600&output=jpg",
           "source_query": "",
-          "source_credit": "Project-generated photorealistic dog-bartender image",
+          "source_credit": "Project-generated consistent golden-brown/brown dog bartender scene",
           "license": "AI-generated project asset"
         }
       ],
