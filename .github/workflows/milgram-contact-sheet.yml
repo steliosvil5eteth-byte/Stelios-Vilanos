@@ -1,0 +1,52 @@
+name: Milgram final visual contact sheet
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/milgram-contact-sheet.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  contact-sheet:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install ffmpeg
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+
+      - name: Fetch final Milgram video
+        run: |
+          set -euo pipefail
+          git fetch origin media-output --depth=1
+          git worktree add --detach "$RUNNER_TEMP/media-output" FETCH_HEAD
+          SRC="$RUNNER_TEMP/media-output/jobs/experiments-series-ep01-milgram-20260925/milgram-episode-01.mp4"
+          test -s "$SRC"
+          cp "$SRC" "$RUNNER_TEMP/milgram-final.mp4"
+
+      - name: Build representative final-frame contact sheet
+        run: |
+          set -euo pipefail
+          ffmpeg -y -loglevel error             -i "$RUNNER_TEMP/milgram-final.mp4"             -vf "fps=1/10,scale=270:480:force_original_aspect_ratio=decrease,pad=270:480:(ow-iw)/2:(oh-ih)/2:black,tile=4x4"             -frames:v 1 -q:v 2 "$RUNNER_TEMP/contact-sheet.jpg"
+          test -s "$RUNNER_TEMP/contact-sheet.jpg"
+
+      - name: Save contact sheet to media-output
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/media-output"
+          DEST="$OUT/jobs/experiments-series-ep01-milgram-20260925"
+          cp "$RUNNER_TEMP/contact-sheet.jpg" "$DEST/final-contact-sheet.jpg"
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add "$DEST/final-contact-sheet.jpg"
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Add Milgram final visual contact sheet'
+            git -C "$OUT" push origin HEAD:media-output
+          fi
