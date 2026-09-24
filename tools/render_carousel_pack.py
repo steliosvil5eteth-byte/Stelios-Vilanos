@@ -5,7 +5,7 @@ plus one vertical YouTube slideshow with locally synthesized original music.
 No AI/TTS/payment/publishing APIs.
 """
 from __future__ import annotations
-import argparse, hashlib, json, math, subprocess, tempfile, urllib.parse, urllib.request
+import argparse, hashlib, html, json, math, re, subprocess, tempfile, urllib.parse, urllib.request
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont, ImageOps, ImageEnhance
 
@@ -14,8 +14,10 @@ FONT='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
 BOLD='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 MAX_OUTPUT=64*1024*1024
 MAX_DOWNLOAD=25*1024*1024
-ALLOWED_HOSTS={'images.weserv.nl','noirlab.edu','storage.noirlab.edu','upload.wikimedia.org'}
+ALLOWED_HOSTS={'images.weserv.nl','noirlab.edu','storage.noirlab.edu','upload.wikimedia.org','commons.wikimedia.org'}
 _CACHE={}
+_BAD=('illustration','drawing','map','logo','coat of arms','diagram','icon','poster','stamp')
+_ALLOWED_LICENSE=('cc by','cc0','public domain')
 
 def run(args):
     p=subprocess.run(args,text=True,capture_output=True,timeout=900)
@@ -38,11 +40,40 @@ def download(url,dst):
     check_url(url)
     if url in _CACHE:
         dst.write_bytes(_CACHE[url]); return
-    req=urllib.request.Request(url,headers={'User-Agent':'SteliosPhotoCarousel/1.0','Accept':'image/*,*/*;q=0.5'})
+    req=urllib.request.Request(url,headers={'User-Agent':'SteliosPhotoCarousel/2.0','Accept':'image/*,*/*;q=0.5'})
     with urllib.request.urlopen(req,timeout=120) as r:
         data=r.read(MAX_DOWNLOAD+1)
     if not data or len(data)>MAX_DOWNLOAD: raise ValueError('invalid source image size')
     _CACHE[url]=data; dst.write_bytes(data)
+
+def _clean(s): return re.sub('<[^>]+>','',html.unescape(s or '')).strip()
+
+def commons_fallback(query,dst):
+    params={'action':'query','format':'json','generator':'search','gsrsearch':query,'gsrnamespace':'6','gsrlimit':'20','prop':'imageinfo','iiprop':'url|size|extmetadata','iiurlwidth':'1600'}
+    url='https://commons.wikimedia.org/w/api.php?'+urllib.parse.urlencode(params)
+    req=urllib.request.Request(url,headers={'User-Agent':'SteliosPhotoCarousel/2.0'})
+    with urllib.request.urlopen(req,timeout=90) as r:
+        payload=json.loads(r.read().decode('utf-8'))
+    pages=list(payload.get('query',{}).get('pages',{}).values())
+    for p in pages:
+        title=p.get('title',''); low=title.lower()
+        if any(x in low for x in _BAD) or not re.search(r'\.(jpe?g|png)$',title,re.I): continue
+        infos=p.get('imageinfo') or []
+        if not infos: continue
+        info=infos[0]; meta=info.get('extmetadata',{})
+        lic=(_clean(meta.get('LicenseShortName',{}).get('value',''))+' '+_clean(meta.get('UsageTerms',{}).get('value',''))).lower()
+        if not any(x in lic for x in _ALLOWED_LICENSE): continue
+        if min(int(info.get('width') or 0),int(info.get('height') or 0))<600: continue
+        imgurl=info.get('thumburl') or info.get('url')
+        if not imgurl: continue
+        try:
+            download(imgurl,dst)
+            with Image.open(dst) as im:
+                if min(im.size)<600: raise ValueError('fallback image too small')
+            return {'source_url':imgurl,'source_credit':_clean(meta.get('Artist',{}).get('value','')),'license':_clean(meta.get('LicenseShortName',{}).get('value','')) or _clean(meta.get('UsageTerms',{}).get('value','')),'source_title':title}
+        except Exception:
+            dst.unlink(missing_ok=True)
+    raise ValueError(f'no rights-cleared Commons fallback found for query: {query}')
 
 def wrap(draw,text,font,width):
     lines=[]
@@ -73,9 +104,17 @@ def text_block(im,text,box,start_size,*,bold=False,center=False,min_size=27,fill
     return size
 
 def render_card(slide,index,total,work,require_photo):
-    if require_photo and not slide.get('source_url'): raise ValueError('photographic source_url required')
-    if slide.get('source_url'):
-        src=work/f'src-{index:02}.img'; download(slide['source_url'],src)
+    if require_photo and not slide.get('source_url') and not slide.get('source_query'): raise ValueError('photographic source_url or source_query required')
+    if slide.get('source_url') or slide.get('source_query'):
+        src=work/f'src-{index:02}.img'; used=None
+        if slide.get('source_url'):
+            try:
+                download(slide['source_url'],src); used={'source_url':slide['source_url'],'source_credit':slide.get('source_credit',''),'license':slide.get('license','')}
+            except Exception:
+                if not slide.get('source_query'): raise
+        if used is None:
+            used=commons_fallback(slide['source_query'],src)
+        slide['_resolved_source']=used
         photo=Image.open(src).convert('RGB')
         im=ImageOps.fit(photo,(1080,1080),method=Image.Resampling.LANCZOS,centering=(0.5,0.5))
         im=ImageEnhance.Contrast(im).enhance(0.92)
@@ -143,7 +182,7 @@ def main():
                 for i,slide in enumerate(slides,1):
                     card=outdir/f"{job['id']}-{i:02}.jpg"; render_card(slide,i,expected,work,require_photo).save(card,quality=94,subsampling=0); cards.append(card)
                 video=outdir/f"{job['id']}.mp4"; duration=slideshow(cards,video,float(job.get('seconds_per_slide',5)))
-            rec.update({'status':'rendered','card_count':expected,'order_verified':True,'image_size':[1080,1080],'photographic_backgrounds':require_photo,'readable_min_font_px':28,'final_duration':duration,'music_embedded':True,'music_source':'original_local_synth_no_external_license','narration':False,'cta':CTA})
+            rec.update({'status':'rendered','card_count':expected,'order_verified':True,'image_size':[1080,1080],'photographic_backgrounds':require_photo,'readable_min_font_px':28,'final_duration':duration,'music_embedded':True,'music_source':'original_local_synth_no_external_license','narration':False,'cta':CTA,'resolved_sources':[s.get('_resolved_source') for s in slides]})
             rec['files']=[{'name':p.name,'bytes':p.stat().st_size,'sha256':sha256(p)} for p in [*cards,video]]
             if any(f['bytes']>MAX_OUTPUT for f in rec['files']): raise ValueError('output exceeds 64 MiB')
         except Exception as exc:
