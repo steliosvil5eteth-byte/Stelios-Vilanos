@@ -1,0 +1,18 @@
+{
+  "id": "experiments-series-ep01-milgram-20260924",
+  "publish_ready": true,
+  "voice": "el-GR-NestorasNeural",
+  "voice_provider": "edge_tts_free",
+  "paid_generation_used": false,
+  "duration_seconds": 159.48,
+  "resolution": "1080x1920",
+  "burned_synced_greek_subtitles": true,
+  "background_music": false,
+  "avatar_presenter": false,
+  "visual_scene_count": 14,
+  "visuals_archival_or_photographic": true,
+  "reenactment_2006_clearly_labeled": true,
+  "fact_checked": true,
+  "cta_exact": true,
+  "dead_air_ge_2s": false
+}
