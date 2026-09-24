@@ -40,3 +40,4 @@ jobs:
           name: asch-final-direct-visual-qa
           path: ${{ runner.temp }}/asch-final-contact-sheet.jpg
           if-no-files-found: error
+# rerun-after-classroom-visual-rebuild-2026-09-24
