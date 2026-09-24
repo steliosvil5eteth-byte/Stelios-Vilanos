@@ -15,7 +15,7 @@ function alphaTime(v){
 function hoursOld(date,now=new Date()){if(!(date instanceof Date)||Number.isNaN(date.getTime()))return Infinity;return Math.max(0,(now-date)/3600000)}
 
 export function parseAlphaNews(payload,symbol,{now=new Date(),lookbackHours=24}={}){
-  const sym=normalizedTicker(symbol),feed=Array.isArray(payload?.feed)?payload.feed:[],rows=[];
+  const sym=alphaTicker(symbol),feed=Array.isArray(payload?.feed)?payload.feed:[],rows=[];
   for(const article of feed){
     const published=alphaTime(article.time_published);if(!published)continue;
     const ageHours=hoursOld(published,now);if(ageHours>lookbackHours)continue;
@@ -37,7 +37,7 @@ async function fetchAlphaNews(symbol,{apiKey=process.env.ALPHAVANTAGE_API_KEY,lo
   if(!apiKey)throw new Error('ALPHAVANTAGE_API_KEY not configured');if(!symbolOk(symbol))throw new Error('Invalid symbol');
   const from=new Date(now.getTime()-lookbackHours*3600000);const z=n=>String(n).padStart(2,'0');
   const timeFrom=`${from.getUTCFullYear()}${z(from.getUTCMonth()+1)}${z(from.getUTCDate())}T${z(from.getUTCHours())}${z(from.getUTCMinutes())}`;
-  const u=new URL(ALPHA_BASE);u.searchParams.set('function','NEWS_SENTIMENT');u.searchParams.set('tickers',symbol);u.searchParams.set('time_from',timeFrom);u.searchParams.set('sort','LATEST');u.searchParams.set('limit','50');u.searchParams.set('apikey',apiKey);
+  const u=new URL(ALPHA_BASE);u.searchParams.set('function','NEWS_SENTIMENT');u.searchParams.set('tickers',alphaTicker(symbol));u.searchParams.set('time_from',timeFrom);u.searchParams.set('sort','LATEST');u.searchParams.set('limit','50');u.searchParams.set('apikey',apiKey);
   const r=await fetch(u,{headers:{'User-Agent':'Trading-Signal-Center/1.0'}});if(!r.ok)throw new Error(`Alpha news HTTP ${r.status}`);
   const json=await r.json();if(json.Note)throw new Error('Alpha news API rate limit');if(json.Information)throw new Error(json.Information);if(json['Error Message'])throw new Error('Alpha news symbol error');
   return parseAlphaNews(json,symbol,{now,lookbackHours});
@@ -65,6 +65,7 @@ export function parseSecSubmissions(payload,{now=new Date(),lookbackHours=48}={}
   return {status:'OK',score,freshnessHours,filings:rows.slice(0,8)};
 }
 async function fetchSecEvents(symbol,{userAgent=process.env.SEC_USER_AGENT,lookbackHours=48,now=new Date()}={}){
+  if(String(symbol).includes('/')||String(symbol).includes(':'))return {status:'NOT_EQUITY',score:0,freshnessHours:null,filings:[]};
   const map=await secTickerMap({userAgent,now:now.getTime()}),cik=map.get(normalizedTicker(symbol));if(!cik)return {status:'NO_SEC_CIK',score:0,freshnessHours:null,filings:[]};
   const r=await fetch(`${SEC_SUBMISSIONS}/CIK${cik}.json`,{headers:{'User-Agent':userAgent,'Accept-Encoding':'gzip, deflate'}});
   if(!r.ok)throw new Error(`SEC submissions HTTP ${r.status}`);const json=await r.json();return {...parseSecSubmissions(json,{now,lookbackHours}),cik};
