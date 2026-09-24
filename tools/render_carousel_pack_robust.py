@@ -109,8 +109,12 @@ def pinned_render(slide,index,total,work,require_photo):
     title=slide.get('visible_title') or slide.get('title','')
     query=slide.get('source_query','')
     if title in PINNED or query in QUERY_PINNED:
-        slide=dict(slide)
-        slide['source_url']=PINNED.get(title,QUERY_PINNED.get(query))
+        original=slide
+        pinned=dict(slide)
+        pinned['source_url']=PINNED.get(title,QUERY_PINNED.get(query))
+        image=_original_render(pinned,index,total,work,require_photo)
+        original['_resolved_source']=pinned.get('_resolved_source')
+        return image
     return _original_render(slide,index,total,work,require_photo)
 
 base.render_card=pinned_render
