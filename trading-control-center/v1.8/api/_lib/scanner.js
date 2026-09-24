@@ -5,7 +5,7 @@ function sd(a){if(a.length<2)return 0;const m=avg(a);return Math.sqrt(avg(a.map(
 function sma(a,p,i){if(i<p-1)return null;return avg(a.slice(i-p+1,i+1))}
 function atr(series,p,i){if(i<p)return null;const tr=[];for(let j=i-p+1;j<=i;j++){const prev=series[j-1].close;tr.push(Math.max(series[j].high-series[j].low,Math.abs(series[j].high-prev),Math.abs(series[j].low-prev)))}return avg(tr)}
 function rsi(series,p,i){if(i<p)return null;let g=0,l=0;for(let j=i-p+1;j<=i;j++){const d=series[j].close-series[j-1].close;if(d>=0)g+=d;else l-=d}if(l===0)return 100;const rs=(g/p)/(l/p);return 100-100/(1+rs)}
-export function indicators(series,i){if(i<55)return null;const closes=series.map(x=>x.close),vols=series.map(x=>x.volume);const s20=sma(closes,20,i),s50=sma(closes,50,i),a14=atr(series,14,i),r14=rsi(series,14,i),mom=(series[i].close/series[i-20].close-1)*100,vr=series[i].volume/(avg(vols.slice(i-20,i))||1);const rets=[];for(let j=i-19;j<=i;j++)rets.push((series[j].close/series[j-1].close-1)*100);const vol=sd(rets)*Math.sqrt(252);return {s20,s50,atr:a14,rsi:r14,momentum:mom,volumeRatio:vr,annualVol:vol,price:series[i].close}}
+export function indicators(series,i,s={}){if(i<55)return null;const closes=series.map(x=>x.close),vols=series.map(x=>x.volume);const s20=sma(closes,20,i),s50=sma(closes,50,i),a14=atr(series,14,i),r14=rsi(series,14,i),mom=(series[i].close/series[i-20].close-1)*100,vr=series[i].volume/(avg(vols.slice(i-20,i))||1);const rets=[];for(let j=i-19;j<=i;j++)rets.push((series[j].close/series[j-1].close-1)*100);const mins=Math.max(0,num(s.barIntervalMinutes,0)),barsPerYear=mins?252*(390/mins):252,const vol=sd(rets)*Math.sqrt(barsPerYear);return {s20,s50,atr:a14,rsi:r14,momentum:mom,volumeRatio:vr,annualVol:vol,price:series[i].close}}
 function weights(s){const a=[num(s.wTrend),num(s.wMomentum),num(s.wVolume),num(s.wVolatility),num(s.wRsi)],sum=a.reduce((x,y)=>x+y,0)||1;return a.map(v=>v/sum)}
 export function directionalScores(ind,s){
   const w=weights(s);
@@ -33,7 +33,7 @@ function tradeGeometry(entry,score,direction,s){
   return {stop,target,rr,stopLossPct:stopPct,targetPct};
 }
 export function setupFromSeries(symbol,series,s){
-  const i=series.length-1,ind=indicators(series,i);if(!ind)return null;
+  const i=series.length-1,ind=indicators(series,i,s);if(!ind)return null;
   const scores=directionalScores(ind,s),direction=scores.long>=scores.short?'LONG':'SHORT',score=Math.max(scores.long,scores.short),entry=series[i].close;
   const g=tradeGeometry(entry,score,direction,s);
   const trendPct=(ind.price/ind.s50-1)*100;
@@ -49,7 +49,7 @@ export function setupFromSeries(symbol,series,s){
 export function backtest(series,s){
   const trades=[];let i=55;const slip=num(s.slippageBps)/10000,comm=num(s.commissionBps)/10000,maxHold=Math.max(1,num(s.maxHold,20)),minScore=Math.max(95,num(s.minScore,95));
   while(i<series.length-2){
-    const ind=indicators(series,i);if(!ind){i++;continue}
+    const ind=indicators(series,i,s);if(!ind){i++;continue}
     const scores=directionalScores(ind,s),direction=scores.long>=scores.short?'LONG':'SHORT',score=Math.max(scores.long,scores.short);
     if(score<minScore){i++;continue}
     const entryIdx=i+1,rawEntry=series[entryIdx].open,entry=direction==='SHORT'?rawEntry*(1-slip):rawEntry*(1+slip),g=tradeGeometry(entry,score,direction,s),stop=g.stop,target=g.target;
