@@ -1,0 +1,8 @@
+{
+  "voice": "el-GR-NestorasNeural",
+  "duration_seconds": 86.922,
+  "duration_min_seconds": 80,
+  "duration_max_seconds": 150,
+  "background_music": false,
+  "word_boundaries": 287
+}
