@@ -1,0 +1,111 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_TEN_DAILY",
+  "local_date": "2026-09-26",
+  "require_photographic_visuals": true,
+  "jobs": [
+    {
+      "id": "current-20260926-1100-zodiac",
+      "expected_cards": 6,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΚΡΙΟΣ — 1/6",
+          "text": "Γίνεται πιο απότομος και θέλει να τελειώνει γρήγορα.",
+          "footer": "Συμβολικό πορτρέτο για ψυχαγωγία.",
+          "source_query": "ram portrait photograph"
+        },
+        {
+          "title": "ΤΑΥΡΟΣ — 2/6",
+          "text": "Μειώνει τις κουβέντες και ψάχνει ησυχία.",
+          "footer": "Συμβολικό πορτρέτο για ψυχαγωγία.",
+          "source_query": "bull portrait photograph"
+        },
+        {
+          "title": "ΔΙΔΥΜΟΙ — 3/6",
+          "text": "Από πολυλογία περνά ξαφνικά σε διάσπαση ή σιωπή.",
+          "footer": "Συμβολικό πορτρέτο για ψυχαγωγία.",
+          "source_query": "identical twins portrait photograph"
+        },
+        {
+          "title": "ΚΑΡΚΙΝΟΣ — 4/6",
+          "text": "Κλείνεται λίγο περισσότερο στο δικό του ασφαλές περιβάλλον.",
+          "footer": "Συμβολικό πορτρέτο για ψυχαγωγία.",
+          "source_query": "crab closeup photograph"
+        },
+        {
+          "title": "ΛΕΩΝ — 5/6",
+          "text": "Συνεχίζει να δείχνει δυνατός, αλλά χάνει τη διάθεση να σηκώνει τους άλλους.",
+          "footer": "Συμβολικό πορτρέτο για ψυχαγωγία.",
+          "source_query": "lion portrait photograph"
+        },
+        {
+          "title": "ΠΑΡΘΕΝΟΣ — 6/6",
+          "text": "Αρχίζει να ενοχλείται από λεπτομέρειες που συνήθως θα διόρθωνε ήρεμα.",
+          "footer": "Συμβολικό πορτρέτο για ψυχαγωγία.",
+          "source_query": "Virgo constellation night sky photograph"
+        }
+      ]
+    },
+    {
+      "id": "current-20260926-1500-emotional",
+      "expected_cards": 5,
+      "seconds_per_slide": 6,
+      "slides": [
+        {
+          "title": "ΤΟ ΔΩΜΑΤΙΟ ΠΟΥ ΞΑΝΑΕΒΑΨΕ — 1/5",
+          "text": "Την πρώτη μέρα μετά τον χωρισμό δεν έκλαψε. Πήγε και αγόρασε ένα κουτί μπογιά.",
+          "source_query": "woman painting wall home photograph"
+        },
+        {
+          "title": "ΤΟ ΔΩΜΑΤΙΟ ΠΟΥ ΞΑΝΑΕΒΑΨΕ — 2/5",
+          "text": "Το δωμάτιο είχε μείνει όπως το είχαν διαλέξει μαζί: χρώμα, φωτογραφίες, η θέση του κρεβατιού.",
+          "source_query": "couple bedroom home photograph"
+        },
+        {
+          "title": "ΤΟ ΔΩΜΑΤΙΟ ΠΟΥ ΞΑΝΑΕΒΑΨΕ — 3/5",
+          "text": "Δεν ήθελε να σβήσει όσα έζησαν. Ήθελε να σταματήσει να ζει μέσα σε μια απόφαση που δεν ήταν πια δική της.",
+          "source_query": "empty bedroom photograph"
+        },
+        {
+          "title": "ΤΟ ΔΩΜΑΤΙΟ ΠΟΥ ΞΑΝΑΕΒΑΨΕ — 4/5",
+          "text": "Έβγαλε πρώτα τις φωτογραφίες, μετά μετακίνησε τα έπιπλα και στο τέλος πέρασε το πρώτο χέρι.",
+          "source_query": "woman redecorating room photograph"
+        },
+        {
+          "title": "ΤΟ ΔΩΜΑΤΙΟ ΠΟΥ ΞΑΝΑΕΒΑΨΕ — 5/5",
+          "text": "Μερικές νέες αρχές δεν κάνουν θόρυβο. Μυρίζουν απλώς φρέσκια μπογιά.",
+          "source_query": "freshly painted bedroom photograph"
+        }
+      ]
+    },
+    {
+      "id": "current-20260926-2000-myth",
+      "expected_cards": 4,
+      "seconds_per_slide": 7,
+      "slides": [
+        {
+          "title": "ΜΥΘΟΣ Ή ΑΛΗΘΕΙΑ; — 1/4",
+          "text": "Το Σινικό Τείχος φαίνεται από τη Σελήνη με γυμνό μάτι;",
+          "source_query": "Great Wall of China photograph"
+        },
+        {
+          "title": "ΣΚΕΨΟΥ ΤΟ — 2/4",
+          "text": "Είναι τεράστιο σε μήκος. Αλλά από πολύ μακριά μετρά περισσότερο το πλάτος και η αντίθεση με το έδαφος.",
+          "source_query": "Great Wall China aerial photograph"
+        },
+        {
+          "title": "ΤΙ ΔΕΙΧΝΕΙ Η NASA — 3/4",
+          "text": "Δεν είναι ορατό από τη Σελήνη με γυμνό μάτι. Από χαμηλή γήινη τροχιά είναι επίσης πολύ δύσκολο να διακριθεί χωρίς βοήθεια.",
+          "source_query": "Earth from low orbit photograph"
+        },
+        {
+          "title": "ΑΠΑΝΤΗΣΗ: ΜΥΘΟΣ — 4/4",
+          "text": "Δεν φαίνεται από τη Σελήνη με γυμνό μάτι. Ειδικά όργανα μπορούν να εντοπίσουν τμήματα, αλλά αυτό είναι διαφορετικό.",
+          "source_query": "Great Wall of China landscape photograph"
+        }
+      ]
+    }
+  ]
+}
