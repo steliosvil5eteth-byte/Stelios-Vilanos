@@ -1,4 +1,4 @@
-# Trading Control Center v1.7
+# Trading Control Center v1.8 + paper bot
 
 Multi-user market-research and paper-trading application. This release remains **paper-only** and **test-billing-only**. There is no live-trading endpoint and no live Stripe charging mode.
 
@@ -268,3 +268,7 @@ npm run ops-check
 
 
 <!-- deployment-trigger: DATABASE_URL configured -->
+
+
+## Paper bot
+See [BOT.md](BOT.md) for the new mobile page, risk policy, tests, worker and deployment blockers.
