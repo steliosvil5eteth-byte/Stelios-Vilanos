@@ -53,8 +53,8 @@
       "title": "Το πείραμα του Milgram — πόσο μακριά φτάνει η υπακοή;",
       "voice": "el-GR-NestorasNeural",
       "background_music": false,
-      "photo_target": 10,
-      "scenes": 17,
+      "photo_target": 6,
+      "scenes": 12,
       "min_duration_seconds": 80,
       "max_duration_seconds": 170,
       "caption": "Το πείραμα υπακοής του Stanley Milgram έγινε στις αρχές της δεκαετίας του 1960 στο Yale και παραμένει ένα από τα πιο συζητημένα πειράματα της κοινωνικής ψυχολογίας. Τι δοκιμάστηκε, τι βρέθηκε και γιατί οι ηθικές του συνέπειες άλλαξαν τον τρόπο που βλέπουμε την έρευνα σε ανθρώπους.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Milgram #ΚοινωνικήΨυχολογία #Πειράματα #Υπακοή #Ψυχολογία",
@@ -65,7 +65,63 @@
         "Yale University 1960s campus photograph",
         "vintage laboratory control panel photograph"
       ],
-      "script": "Μέχρι πού μπορεί να φτάσει ένας συνηθισμένος άνθρωπος όταν μια μορφή εξουσίας του λέει να συνεχίσει; Στις αρχές της δεκαετίας του 1960, ο ψυχολόγος Stanley Milgram πραγματοποίησε στο Yale μια σειρά πειραμάτων υπακοής που έγιναν από τα πιο γνωστά και αμφιλεγόμενα στην κοινωνική ψυχολογία. Οι συμμετέχοντες πίστευαν ότι βοηθούσαν σε μια μελέτη για τη μάθηση και τη μνήμη. Τους ζητούσαν να δίνουν ολοένα ισχυρότερα ηλεκτρικά σοκ σε έναν άλλον άνθρωπο κάθε φορά που εκείνος έκανε λάθος. Στην πραγματικότητα, ο άλλος άνθρωπος ήταν συνεργάτης του πειράματος και δεν δεχόταν πραγματικά σοκ. Το κρίσιμο σημείο ήταν η πίεση από τον ερευνητή να συνεχιστεί η διαδικασία ακόμη και όταν ο συμμετέχων άκουγε διαμαρτυρίες και πίστευε ότι προκαλούσε πόνο. Στην πιο γνωστή βασική συνθήκη, ένα μεγάλο ποσοστό των συμμετεχόντων έφτασε μέχρι το υψηλότερο επίπεδο που παρουσιαζόταν στη συσκευή. Αυτό δεν σημαίνει ότι οι άνθρωποι υπακούν πάντα ούτε ότι όλοι συμπεριφέρονται με τον ίδιο τρόπο. Οι παραλλαγές του Milgram έδειξαν ότι η φυσική εγγύτητα του θύματος, η παρουσία άλλων ανθρώπων που αρνούνταν να συνεχίσουν και η μορφή της εξουσίας μπορούσαν να αλλάξουν σημαντικά τη συμπεριφορά. Το πείραμα όμως προκάλεσε έντονη ηθική κριτική. Οι συμμετέχοντες εξαπατήθηκαν για τον πραγματικό σκοπό, βρέθηκαν κάτω από σοβαρή ψυχολογική πίεση και πίστεψαν προσωρινά ότι μπορεί να τραυματίζουν κάποιον. Η συζήτηση γύρω από το Milgram συνέβαλε στο ευρύτερο ενδιαφέρον για αυστηρότερους κανόνες δεοντολογίας, ενημερωμένη συναίνεση, δικαίωμα αποχώρησης και προστασία των συμμετεχόντων. Το πιο χρήσιμο μάθημα δεν είναι ότι οι άνθρωποι είναι από τη φύση τους σκληροί. Είναι ότι το πλαίσιο, η εξουσία και η κοινωνική πίεση μπορούν να επηρεάσουν αποφάσεις πολύ περισσότερο απ’ όσο συνήθως φανταζόμαστε. Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      "script": "Μέχρι πού μπορεί να φτάσει ένας συνηθισμένος άνθρωπος όταν μια μορφή εξουσίας του λέει να συνεχίσει; Στις αρχές της δεκαετίας του 1960, ο ψυχολόγος Stanley Milgram πραγματοποίησε στο Yale μια σειρά πειραμάτων υπακοής που έγιναν από τα πιο γνωστά και αμφιλεγόμενα στην κοινωνική ψυχολογία. Οι συμμετέχοντες πίστευαν ότι βοηθούσαν σε μια μελέτη για τη μάθηση και τη μνήμη. Τους ζητούσαν να δίνουν ολοένα ισχυρότερα ηλεκτρικά σοκ σε έναν άλλον άνθρωπο κάθε φορά που εκείνος έκανε λάθος. Στην πραγματικότητα, ο άλλος άνθρωπος ήταν συνεργάτης του πειράματος και δεν δεχόταν πραγματικά σοκ. Το κρίσιμο σημείο ήταν η πίεση από τον ερευνητή να συνεχιστεί η διαδικασία ακόμη και όταν ο συμμετέχων άκουγε διαμαρτυρίες και πίστευε ότι προκαλούσε πόνο. Στην πιο γνωστή βασική συνθήκη, ένα μεγάλο ποσοστό των συμμετεχόντων έφτασε μέχρι το υψηλότερο επίπεδο που παρουσιαζόταν στη συσκευή. Αυτό δεν σημαίνει ότι οι άνθρωποι υπακούν πάντα ούτε ότι όλοι συμπεριφέρονται με τον ίδιο τρόπο. Οι παραλλαγές του Milgram έδειξαν ότι η φυσική εγγύτητα του θύματος, η παρουσία άλλων ανθρώπων που αρνούνταν να συνεχίσουν και η μορφή της εξουσίας μπορούσαν να αλλάξουν σημαντικά τη συμπεριφορά. Το πείραμα όμως προκάλεσε έντονη ηθική κριτική. Οι συμμετέχοντες εξαπατήθηκαν για τον πραγματικό σκοπό, βρέθηκαν κάτω από σοβαρή ψυχολογική πίεση και πίστεψαν προσωρινά ότι μπορεί να τραυματίζουν κάποιον. Η συζήτηση γύρω από το Milgram συνέβαλε στο ευρύτερο ενδιαφέρον για αυστηρότερους κανόνες δεοντολογίας, ενημερωμένη συναίνεση, δικαίωμα αποχώρησης και προστασία των συμμετεχόντων. Το πιο χρήσιμο μάθημα δεν είναι ότι οι άνθρωποι είναι από τη φύση τους σκληροί. Είναι ότι το πλαίσιο, η εξουσία και η κοινωνική πίεση μπορούν να επηρεάσουν αποφάσεις πολύ περισσότερο απ’ όσο συνήθως φανταζόμαστε. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "visuals": [
+        {
+          "source": "Stanley Milgram circa 1974",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Stanley_Milgram_1974.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Stanley_Milgram_1974.jpg",
+          "attribution": "Unknown author, Stanley Milgram circa 1974, public domain via Wikimedia Commons.",
+          "license": "Public Domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "visual_kind": "photograph"
+        },
+        {
+          "source": "Harkness Tower — Yale University",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/HarknessTower.JPG",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:HarknessTower.JPG",
+          "attribution": "Michael Fleischhacker, Harkness Tower, released to public domain via Wikimedia Commons.",
+          "license": "Public Domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "visual_kind": "photograph"
+        },
+        {
+          "source": "Durfee Hall — Yale Old Campus",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/DurfeeHall.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:DurfeeHall.jpg",
+          "attribution": "Jdbrandt, Durfee Hall Yale, released to public domain via Wikimedia Commons.",
+          "license": "Public Domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "visual_kind": "photograph"
+        },
+        {
+          "source": "Historic panoramic Yale campus",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Yale_campus_American_Panoramic_View_Co.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Yale_campus_American_Panoramic_View_Co.jpg",
+          "attribution": "American Panoramic View Co., historic Yale campus panorama, public domain via Library of Congress/Wikimedia Commons.",
+          "license": "Public Domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "visual_kind": "photograph"
+        },
+        {
+          "source": "Connecticut Hall — Yale University",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Connecticut_Hall.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Connecticut_Hall.jpg",
+          "attribution": "Photograph of Connecticut Hall at Yale, released to public domain via Wikimedia Commons.",
+          "license": "Public Domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "visual_kind": "photograph"
+        },
+        {
+          "source": "Historic electrical control panels",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Electrical_control_panels_made_in_Frankfurt,_1898.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Electrical_control_panels_made_in_Frankfurt,_1898.jpg",
+          "attribution": "Szilas, historic electrical control panels, public domain via Wikimedia Commons.",
+          "license": "Public Domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "visual_kind": "photograph"
+        }
+      ]
     },
     {
       "id": "legend-aswang-20260926-2300",
@@ -74,19 +130,18 @@
       "title": "Ο θρύλος λέει… Aswang",
       "voice": "el-GR-NestorasNeural",
       "background_music": false,
-      "photo_target": 10,
-      "scenes": 16,
+      "photo_target": 6,
+      "scenes": 12,
       "min_duration_seconds": 90,
       "max_duration_seconds": 150,
       "folklore_not_fact": true,
       "caption": "Ο θρύλος λέει… Aswang: όχι ένα μοναδικό τέρας, αλλά ένας όρος-ομπρέλα για διαφορετικές σκοτεινές παραδόσεις των Φιλιππίνων. Λαογραφία — όχι αποδεδειγμένο υπερφυσικό γεγονός.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Θρύλοι #Λαογραφία #Φιλιππίνες #Aswang #ΠαράξενεςΙστορίες",
       "commons_queries": [
-        "Philippines rural village night photograph",
-        "Philippines forest night photograph",
-        "Philippines countryside dusk photograph",
-        "Philippines traditional village photograph",
+        "Philippines village photograph",
+        "Philippines rural landscape photograph",
         "Philippines tropical forest photograph",
-        "Philippines moon night landscape photograph"
+        "Philippines countryside photograph",
+        "Philippines night landscape photograph"
       ],
       "script": "Ένα όνομα. Πολλοί διαφορετικοί φόβοι. Στις Φιλιππίνες, το aswang ανήκει στη λαογραφία και δεν περιγράφει ένα μοναδικό πλάσμα με μία σταθερή μορφή. Σε διαφορετικές περιοχές και αφηγήσεις, η ίδια λέξη μπορεί να χρησιμοποιείται για διαφορετικούς τύπους υπερφυσικών όντων. Ο λαογράφος Maximo Ramos μελέτησε αυτό το σύμπλεγμα παραδόσεων και έδειξε ότι δεν πρόκειται για μία ενιαία βιογραφία ενός τέρατος. Σε κάποιες ιστορίες το aswang παρουσιάζεται σαν αιμοβόρα μορφή. Σε άλλες συνδέεται με μάγισσες, μεταμορφώσεις ή πλάσματα που επιτίθενται τη νύχτα. Το manananggal εμφανίζεται επίσης σε ορισμένες ταξινομήσεις μέσα στο ευρύτερο σύμπλεγμα, αλλά δεν είναι σωστό να ταυτίζονται όλες αυτές οι μορφές μεταξύ τους. Αυτό έχει σημασία, γιατί η λαογραφία αλλάζει από τόπο σε τόπο. Μια αφήγηση μπορεί να περιγράφει άνθρωπο που μεταμορφώνεται, ενώ μια άλλη χρησιμοποιεί το ίδιο όνομα για εντελώς διαφορετικό υπερφυσικό πλάσμα. Ανθρωπολογικές και λαογραφικές μελέτες έχουν εξετάσει πώς τέτοιες ιστορίες συνδέονται με κοινωνικούς φόβους, σχέσεις μέσα στην κοινότητα και αντιλήψεις για ανθρώπους που θεωρούνται επικίνδυνοι ή έξω από τα αποδεκτά όρια. Δεν υπάρχει όμως επιστημονική απόδειξη ότι υπάρχει πραγματικό υπερφυσικό ον που αντιστοιχεί στο aswang. Οι φωτογραφίες από χωριά, τοπία και δάση των Φιλιππίνων λειτουργούν μόνο ως περιβαλλοντικό πλαίσιο, όχι ως αποδείξεις. Και ίσως αυτό είναι το πιο ενδιαφέρον στοιχείο του θρύλου: μία λέξη μπόρεσε να συγκεντρώσει πολλούς διαφορετικούς φόβους και να επιβιώσει μέσα από γενιές αφήγησης. Ο θρύλος λέει πολλά για τον τρόπο που μια κοινωνία αφηγείται τον φόβο της, όχι για την ύπαρξη ενός αποδεδειγμένου τέρατος. Αν σας άρεσε, ακολουθήστε για περισσότερα."
     }
