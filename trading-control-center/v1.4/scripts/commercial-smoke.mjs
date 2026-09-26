@@ -1,0 +1,16 @@
+import crypto from 'node:crypto';
+process.env.APP_USER='rootadmin';
+process.env.APP_PASSWORD_SHA256=crypto.createHash('sha256').update('BootstrapPass123!').digest('hex');
+process.env.SESSION_SECRET='commercial-smoke-secret-1234567890';
+const {getAccount,createAccount,updateAccount,verifyPassword,allAccounts}=await import('../api/_lib/accounts.js');
+const {entitlements}=await import('../api/_lib/plans.js');
+const {performanceReport}=await import('../api/_lib/report.js');
+const admin=await getAccount('rootadmin');if(!admin||admin.role!=='admin'||admin.plan!=='premium'||!verifyPassword('BootstrapPass123!',admin.auth))throw Error('bootstrap admin failed');
+let user=await createAccount({username:'testuser-v1',password:'LongPassword123!',plan:'free'});if(user.plan!=='free'||entitlements(user.plan).maxWatchlist!==2)throw Error('free plan failed');
+user=await updateAccount('testuser-v1',{plan:'pro'});if(user.plan!=='pro'||!entitlements(user.plan).brokerPaper)throw Error('plan update failed');
+const raw=await getAccount('testuser-v1');if(!verifyPassword('LongPassword123!',raw.auth))throw Error('scrypt login failed');
+const users=await allAccounts();if(!users.some(x=>x.username==='rootadmin')||!users.some(x=>x.username==='testuser-v1'))throw Error('account list failed');
+const settings={capital:10000,maxExposurePct:100,dailyLoss:2,maxPositionPct:25};
+const trades=[{ticker:'AAA',entry:100,stop:98,current:104,qty:10,status:'TARGET',closedAt:'2026-09-01T10:00:00Z',strategyId:'S1',strategyName:'Test'},{ticker:'BBB',entry:100,stop:98,current:98,qty:10,status:'STOP',closedAt:'2026-09-02T10:00:00Z',strategyId:'S1',strategyName:'Test'}];
+const r=performanceReport({settings,trades});if(r.summary.closedTrades!==2||r.strategies.length!==1||!Number.isFinite(r.summary.netPnl))throw Error('report failed');
+console.log('commercial smoke: OK');
