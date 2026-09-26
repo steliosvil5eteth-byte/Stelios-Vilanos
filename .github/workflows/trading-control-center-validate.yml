@@ -1,0 +1,27 @@
+name: Trading Control Center Validate
+on:
+  push:
+    paths:
+      - 'trading-control-center/v1.4/**'
+      - 'trading-control-center/DEPLOYMENT-CHECKLIST.md'
+      - '.github/workflows/trading-control-center-validate.yml'
+      - '.github/workflows/trading-control-center-deploy.yml'
+  pull_request:
+    paths:
+      - 'trading-control-center/v1.4/**'
+      - 'trading-control-center/DEPLOYMENT-CHECKLIST.md'
+      - '.github/workflows/trading-control-center-validate.yml'
+      - '.github/workflows/trading-control-center-deploy.yml'
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: trading-control-center/v1.4
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm install --ignore-scripts
+      - run: npm run validate

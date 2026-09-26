@@ -1,0 +1,57 @@
+name: Trading Control Center Vercel Preview Probe
+on:
+  push:
+    paths:
+      - '.github/workflows/trading-control-center-vercel-preview-probe.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  probe-and-preview:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: trading-control-center/v1.8
+    env:
+      VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Check Vercel credentials
+        shell: bash
+        run: |
+          missing=0
+          for key in VERCEL_TOKEN VERCEL_ORG_ID VERCEL_PROJECT_ID; do
+            if [ -z "${!key}" ]; then
+              echo "::error title=Missing Vercel secret::$key is not configured"
+              missing=1
+            else
+              echo "$key: configured"
+            fi
+          done
+          test "$missing" -eq 0
+      - name: Install and validate
+        run: |
+          npm install --ignore-scripts
+          npm run validate
+          npm run preflight
+          npm run release-check
+          npm run ops-check
+      - name: Install pinned Vercel CLI
+        run: npm install --global vercel@48.8.0
+      - name: Pull preview project
+        run: vercel pull --yes --environment=preview --token="$VERCEL_TOKEN"
+      - name: Build preview
+        run: vercel build --token="$VERCEL_TOKEN"
+      - name: Deploy preview
+        shell: bash
+        run: |
+          url="$(vercel deploy --prebuilt --token="$VERCEL_TOKEN")"
+          echo "PREVIEW_URL=$url" >> "$GITHUB_ENV"
+          echo "### Trading Control Center Preview" >> "$GITHUB_STEP_SUMMARY"
+          echo "$url" >> "$GITHUB_STEP_SUMMARY"
