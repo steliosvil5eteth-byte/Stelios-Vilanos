@@ -18,4 +18,7 @@ execFileSync(process.execPath,['scripts/v16-smoke.mjs'],{stdio:'inherit'});
 execFileSync(process.execPath,['scripts/v17-smoke.mjs'],{stdio:'inherit'});
 execFileSync(process.execPath,['scripts/v18-smoke.mjs'],{stdio:'inherit'});
 execFileSync(process.execPath,['scripts/api-smoke.mjs'],{stdio:'inherit'});
+execFileSync(process.execPath,['scripts/bot-smoke.mjs'],{stdio:'inherit'});
+execFileSync(process.execPath,['scripts/bot-api-smoke.mjs'],{stdio:'inherit'});
+const botJs=readFileSync('bot.html','utf8').split('<script>')[1].split('</script>')[0];writeFileSync('.validate-bot.mjs',botJs);execFileSync(process.execPath,['--check','.validate-bot.mjs'],{stdio:'inherit'});unlinkSync('.validate-bot.mjs');
 console.log('validate: OK');
