@@ -1,0 +1,9 @@
+file '/home/runner/work/_temp/myth/frame_01.jpg'
+duration 5.2
+file '/home/runner/work/_temp/myth/frame_02.jpg'
+duration 5.2
+file '/home/runner/work/_temp/myth/frame_03.jpg'
+duration 5.2
+file '/home/runner/work/_temp/myth/frame_04.jpg'
+duration 5.2
+file '/home/runner/work/_temp/myth/frame_04.jpg'

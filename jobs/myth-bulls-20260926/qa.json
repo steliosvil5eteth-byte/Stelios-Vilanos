@@ -1,0 +1,31 @@
+{
+  "publish_ready": true,
+  "cards": 4,
+  "youtube_video": "/home/runner/work/_temp/myth/myth_bulls_youtube.mp4",
+  "sources": [
+    {
+      "file": "File:A man standing with his four bulls (AM 74767-1).jpg",
+      "author": "Collins, Tudor Washington, 1898-1970, photographer",
+      "license": "CC BY 4.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:A_man_standing_with_his_four_bulls_(AM_74767-1).jpg"
+    },
+    {
+      "file": "File:A bull head.jpg",
+      "author": "ftrc",
+      "license": "CC BY-SA 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:A_bull_head.jpg"
+    },
+    {
+      "file": "File:Angry Bull in Pasture.jpg",
+      "author": "Bart Hiddink",
+      "license": "CC BY 2.0",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Angry_Bull_in_Pasture.jpg"
+    },
+    {
+      "file": "File:Arena of Roubaix during the fight of the lion and bull by Jules Beau.jpg",
+      "author": "Jules Beau",
+      "license": "Public domain",
+      "source_page": "https://commons.wikimedia.org/wiki/File:Arena_of_Roubaix_during_the_fight_of_the_lion_and_bull_by_Jules_Beau.jpg"
+    }
+  ]
+}
