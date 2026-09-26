@@ -1,0 +1,76 @@
+name: Features 20260926 Azure Nestoras
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'media_jobs/features_20260926.json'
+      - 'tools/render_azure_feature_batch.py'
+      - '.github/workflows/features-20260926-azure.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: features-20260926-azure
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Verify manifest policy
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          m=json.loads(Path('media_jobs/features_20260926.json').read_text())
+          assert m['approved'] is True
+          assert m['paid_generation_allowed'] is False
+          assert len(m['jobs']) == 4
+          for j in m['jobs']:
+              assert j['local_date']=='2026-09-26'
+              assert j['slot'] in {'17:00','18:30','21:30','23:00'}
+              assert j['voice']=='el-GR-NestorasNeural'
+              assert j['background_music'] is False
+          print('manifest policy OK')
+          PY
+
+      - name: Install media dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python3 -m pip install --disable-pip-version-check --no-input pillow requests azure-cognitiveservices-speech
+
+      - name: Render final media
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+        run: |
+          python3 tools/render_azure_feature_batch.py --manifest media_jobs/features_20260926.json --output "$RUNNER_TEMP/finished"
+
+      - name: Publish QA-passed media to media-output
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/media-output-repo"
+          if git fetch origin media-output --depth=1; then
+            git worktree add --detach "$OUT" FETCH_HEAD
+          else
+            git worktree add --detach "$OUT" "$GITHUB_SHA"
+            git -C "$OUT" checkout --orphan media-output
+            git -C "$OUT" rm -rf .
+          fi
+          mkdir -p "$OUT/jobs/features-20260926"
+          cp -a "$RUNNER_TEMP/finished"/. "$OUT/jobs/features-20260926/"
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/features-20260926
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m "Render 26 Sep Azure Nestoras features"
+            git -C "$OUT" push origin HEAD:media-output
+          fi
+          find "$RUNNER_TEMP/finished" -maxdepth 2 -type f -printf '%p %s bytes\n'
