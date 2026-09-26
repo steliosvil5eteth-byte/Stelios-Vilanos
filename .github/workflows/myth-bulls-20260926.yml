@@ -1,0 +1,48 @@
+name: Myth Bulls 20260926
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/render_myth_bulls_20260926.py'
+      - '.github/workflows/myth-bulls-20260926.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install media tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python3 -m pip install --disable-pip-version-check --no-input pillow requests
+      - name: Render myth cards and YouTube slideshow
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/myth
+        run: python3 tools/render_myth_bulls_20260926.py
+      - name: Publish to media-output
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/media-output-repo"
+          if git fetch origin media-output --depth=1; then
+            git worktree add --detach "$OUT" FETCH_HEAD
+          else
+            git worktree add --detach "$OUT" "$GITHUB_SHA"
+            git -C "$OUT" checkout --orphan media-output
+            git -C "$OUT" rm -rf .
+          fi
+          mkdir -p "$OUT/jobs/myth-bulls-20260926"
+          cp -a "$RUNNER_TEMP/myth"/. "$OUT/jobs/myth-bulls-20260926/"
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/myth-bulls-20260926
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m "Render 26 Sep bull color myth"
+            git -C "$OUT" push origin HEAD:media-output
+          fi
