@@ -1,0 +1,79 @@
+name: Piper Greek Voice Demo
+
+on:
+  push:
+    branches:
+      - main
+      - voice-demo-free-piper
+    paths:
+      - 'voice_demo/demo.txt'
+      - '.github/workflows/piper-greek-voice-demo.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Piper and media tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          python -m pip install --upgrade pip
+          python -m pip install "piper-tts==1.5.0"
+
+      - name: Download Greek Piper voice
+        run: |
+          python -m piper.download_voices el_GR-rapunzelina-medium
+          sha256sum el_GR-rapunzelina-medium.onnx el_GR-rapunzelina-medium.onnx.json > model-sha256.txt
+
+      - name: Synthesize at natural speed
+        run: |
+          set -euo pipefail
+          mkdir -p voice_demo/output
+          piper --model el_GR-rapunzelina-medium.onnx --sentence-silence 0.30 --output_file voice_demo/output/raw.wav < voice_demo/demo.txt
+          ffmpeg -y -v error -i voice_demo/output/raw.wav -af "loudnorm=I=-16:LRA=7:TP=-1.5" -ar 48000 -ac 1 voice_demo/output/voice.wav
+          ffmpeg -y -v error -i voice_demo/output/voice.wav -c:a aac -b:a 128k -movflags +faststart voice_demo/output/voice.m4a
+          DUR=$(ffprobe -v error -show_entries format=duration -of default=nk=1:nw=1 voice_demo/output/voice.wav)
+          printf 'final_duration=%s\n' "$DUR" > voice_demo/output/duration.txt
+          awk -v d="$DUR" 'BEGIN {
+            if (d <= 80) {
+              print "::error::Narration must be longer than 80 seconds (" d " s)"
+              exit 1
+            }
+          }'
+
+      - name: Reject long silent gaps
+        run: |
+          set -euo pipefail
+          ffmpeg -hide_banner -i voice_demo/output/voice.wav -af "silencedetect=n=-45dB:d=2.0" -f null - 2> voice_demo/output/silence-check.txt || true
+          if grep -Eq 'silence_duration: ([2-9]|[1-9][0-9])([.][0-9]+)?' voice_demo/output/silence-check.txt; then
+            echo "::error::Long silent gap detected in narration"
+            cat voice_demo/output/silence-check.txt
+            exit 1
+          fi
+
+      - name: Build mobile preview video
+        run: |
+          set -euo pipefail
+          DUR=$(ffprobe -v error -show_entries format=duration -of default=nk=1:nw=1 voice_demo/output/voice.wav)
+          ffmpeg -y -v error             -f lavfi -i "color=c=0x101820:s=1080x1920:r=25:d=$DUR"             -i voice_demo/output/voice.wav             -map 0:v -map 1:a -shortest             -c:v libx264 -preset veryfast -crf 23 -pix_fmt yuv420p             -c:a aac -b:a 128k -movflags +faststart             voice_demo/output/free-greek-voice-demo.mp4
+          ffmpeg -v error -i voice_demo/output/free-greek-voice-demo.mp4 -f null -
+
+      - name: Upload Piper demo
+        uses: actions/upload-artifact@v4
+        with:
+          name: free-greek-piper-demo
+          path: |
+            voice_demo/output/free-greek-voice-demo.mp4
+            voice_demo/output/voice.wav
+            voice_demo/output/voice.m4a
+            voice_demo/output/duration.txt
+            model-sha256.txt
+          retention-days: 7
