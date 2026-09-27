@@ -3,11 +3,11 @@
   "date": "2026-09-28",
   "brand_id": 7076410,
   "timezone": "Europe/Athens",
-  "observed_at": "2026-09-27T14:18:00+03:00",
+  "observed_at": "2026-09-27T14:26:40+03:00",
   "logical_target": 5,
   "destination_target": 20,
-  "status": "FIVE_LOGICAL_POSTS_SCHEDULED_PENDING_UNDER_ACTIVE_LEASE",
-  "final_ready_through": null,
+  "status": "FIVE_LOGICAL_POSTS_SCHEDULED_PENDING_QA_COMPLETE",
+  "final_ready_through": "2026-09-28",
   "slots": [
     {
       "time": "09:00",
@@ -63,7 +63,7 @@
       "time": "15:00",
       "category": "love_soul_relationship",
       "title": "Το ταπεράκι της Δευτέρας",
-      "qa": "LIVE_MEDIA_UPDATE_OBSERVED_UNDER_LEASE_REVIEW_PENDING",
+      "qa": "PASSED_FINAL_REVIEW_EXACT_METRICOOL_MEDIA",
       "entries": [
         {
           "post_id": 382832148,
@@ -81,7 +81,8 @@
             "youtube": "PENDING"
           }
         }
-      ]
+      ],
+      "media_commit": "227e4f65374e4e9678c9097d67de7b16aa04a315"
     },
     {
       "time": "17:00",
@@ -115,7 +116,7 @@
       "time": "20:00",
       "category": "myth_or_truth",
       "title": "Το χρυσόψαρο ξεχνά σε 3 δευτερόλεπτα;",
-      "qa": "LIVE_MEDIA_UPDATE_OBSERVED_UNDER_LEASE_REVIEW_PENDING",
+      "qa": "PASSED_FINAL_REVIEW_EXACT_METRICOOL_MEDIA",
       "entries": [
         {
           "post_id": 382833554,
@@ -133,7 +134,8 @@
             "youtube": "PENDING"
           }
         }
-      ]
+      ],
+      "media_commit": "669f1e13838249e103485eabcdd4b41340a23bde"
     }
   ],
   "suppressed_duplicates": [
@@ -147,16 +149,16 @@
     }
   ],
   "production_lease": {
-    "owner": "interactive-session-20260927",
-    "until": "2026-09-27T16:00:00+03:00",
-    "instruction": "Observe only; reconcile live queue after lease expiry before changing 11:00, 15:00 or 20:00."
+    "owner": "interactive-session-3147a767415a",
+    "until": "2026-09-27T17:00:00+03:00",
+    "date": "2026-09-29",
+    "instruction": "Do not create competing 29 Sep posts; reconcile live queue and exact final media after lease expiry before starting 30 Sep."
   },
   "notes": [
-    "Metricool live queue is authoritative. Backlog subjects are not scheduled until live readback confirms IDs.",
-    "The 15:00 love slot was replaced under the same UUIDs by the lease owner; live IDs are 382832148/382832155 and title is Το ταπεράκι της Δευτέρας.",
-    "The 20:00 myth slot was replaced under the same UUIDs by the lease owner; live IDs are 382833554/382833563 and title is Το χρυσόψαρο ξεχνά σε 3 δευτερόλεπτα; Exact final media QA is pending reconciliation.",
-    "Exact final media QA for the newest love replacement remains pending until the lease owner finalizes and the immutable media/readback are reconciled.",
-    "Because an active production lease may replace media under the same UUID, re-run exact final media QA after any update and before release.",
-    "final_ready_through remains null while the lease owner has not reconciled the backlog state."
+    "Metricool live readback confirms exactly five active logical posts / 20 destinations for 2026-09-28.",
+    "All five 2026-09-28 slots now have PASSED_FINAL_REVIEW evidence and immutable media commits in seven_day_production_buffer.json.",
+    "The intentionally suppressed duplicate UUID 4939033458929453922 remains draft=true and autoPublish=false.",
+    "2026-09-29 is owned by active interactive production lease until 17:00 Europe/Athens; no competing writes.",
+    "Start 2026-09-30 only after 2026-09-29 live IDs, QA evidence, and readback are reconciled."
   ]
 }
