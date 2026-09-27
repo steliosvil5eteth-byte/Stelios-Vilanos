@@ -5,7 +5,7 @@
   "horizon_start": "2026-09-28",
   "horizon_end": "2026-10-04",
   "target_logical_posts": 35,
-  "final_ready_through": "2026-09-28",
+  "final_ready_through": "2026-09-29",
   "rule": "Production backlog only; never treat this file as a scheduled or published queue. Only live Metricool readback establishes that.",
   "jobs": [
     {
@@ -102,11 +102,21 @@
       "slot": "09:00",
       "category": "survival",
       "title": "Καταιγίδα: προστασία μέσα στο σπίτι",
-      "status": "IN_PRODUCTION",
-      "publish_ready": false,
-      "metricool_post_ids": [],
+      "status": "SCHEDULED",
+      "publish_ready": true,
+      "metricool_post_ids": [
+        382842295,
+        382842305
+      ],
       "production_owner": "interactive-session-3147a767415a",
-      "production_lease_until": "2026-09-27T17:00:00+03:00"
+      "production_lease_until": null,
+      "metricool_uuids": [
+        "-861654960252367144",
+        "-989241822094471226"
+      ],
+      "media_commit": "b3124070129d7ed913ed361ec590e226af19fd0b",
+      "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b3124070129d7ed913ed361ec590e226af19fd0b/jobs/five-20260929/survival29/survival-storm.mp4",
+      "notion_page_id": "3e8f2345-b318-8138-8649-cdbe09f53279"
     },
     {
       "id": "2026-09-29-zodiac",
