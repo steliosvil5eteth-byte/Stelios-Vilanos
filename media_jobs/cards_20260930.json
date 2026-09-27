@@ -26,8 +26,19 @@
     "zodiac30": {
       "time": "11:00",
       "title": "Ποια μικρή χαρά σου αλλάζει τη μέρα; Κριός–Παρθένος",
-      "status": "QUEUED",
-      "cards": 6
+      "status": "SCHEDULED",
+      "cards": 6,
+      "publish_ready": true,
+      "metricool_post_ids": [
+        382867583,
+        382867702
+      ],
+      "metricool_uuids": [
+        "4518712419652355746",
+        "2611491093809285417"
+      ],
+      "media_commit": "9bd3bf6e2e772b5c37b5f91fe90b26ad3e42f9d2",
+      "qa_path": "jobs/five-20260930/zodiac-joy/qa.json"
     },
     "love30": {
       "time": "15:00",
