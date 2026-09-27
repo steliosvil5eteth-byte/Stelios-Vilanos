@@ -15,35 +15,35 @@
         {
           "title": "«ΓΕΙΑ ΣΟΥ, ΓΙΕ ΜΟΥ.» — 1/5",
           "text": "Ο Νίκος πάγωσε. Ο ηλικιωμένος άντρας τον κοίταζε σαν να τον ήξερε μια ζωή. «Με λένε Ανδρέα», είπε. «Και ήρθα να σου πω την αλήθεια.»",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Elderly_man_in_a_bookstore_%28Unsplash%29.jpg",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F7%2F7b%2FElderly_man_in_a_bookstore_%2528Unsplash%2529.jpg&w=1600&output=jpg",
           "source_credit": "Aris Sfakianakis / Unsplash via Wikimedia Commons",
           "license": "CC0 1.0"
         },
         {
           "title": "ΔΕΝ ΗΤΑΝ Ο ΠΑΤΕΡΑΣ ΠΟΥ ΗΞΕΡΕ — 2/5",
           "text": "«Ο άνθρωπος που σε μεγάλωσε ήταν πατέρας σου σε όλα», συνέχισε ο Ανδρέας. «Σε όλα — εκτός από το αίμα.»",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/24/Serious_man_in_furry_hood_%28Unsplash%29.jpg",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F2%2F24%2FSerious_man_in_furry_hood_%2528Unsplash%2529.jpg&w=1600&output=jpg",
           "source_credit": "Frank Marino / Unsplash via Wikimedia Commons",
           "license": "CC0 1.0"
         },
         {
           "title": "ΜΙΑ ΦΩΤΟΓΡΑΦΙΑ ΑΠΟ ΤΗΝ ΑΡΧΗ — 3/5",
           "text": "Ο Ανδρέας άφησε πάνω στο τραπέζι μια παλιά φωτογραφία: η μητέρα του Νίκου κρατούσε ένα μωρό. Δίπλα της στεκόταν ένας νεότερος άντρας.",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Portrait_of_Mother_and_Child.jpg",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fc%2Fc0%2FPortrait_of_Mother_and_Child.jpg&w=1600&output=jpg",
           "source_credit": "Unknown author / Wikimedia Commons",
           "license": "Public domain"
         },
         {
           "title": "«ΔΕΝ ΣΕ ΕΓΚΑΤΕΛΕΙΨΑ» — 4/5",
           "text": "«Δεν έφυγα επειδή δεν σε ήθελα», είπε. «Με έβγαλαν από τη ζωή σου. Για χρόνια πίστευα ότι έτσι θα έμενες ασφαλής.»",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Man_alone_in_T%C3%A0_X%C3%B9a_03-03-2017.jpg",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F1%2F1c%2FMan_alone_in_T%25C3%25A0_X%25C3%25B9a_03-03-2017.jpg&w=1600&output=jpg",
           "source_credit": "Linh Pham / Unsplash via Wikimedia Commons",
           "license": "CC0 1.0"
         },
         {
           "title": "ΚΑΙ ΤΟΤΕ ΜΙΛΗΣΕ Η ΜΑΡΙΑ — 5/5",
           "text": "Πριν προλάβει να απαντήσει ο Νίκος, η Μαρία ψιθύρισε: «Τον Ανδρέα τον είχα συναντήσει πριν από τον γάμο μας.»",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Serious_woman.jpg",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F8%2F8b%2FSerious_woman.jpg&w=1600&output=jpg",
           "source_credit": "Jiri Hodan / Wikimedia Commons",
           "license": "CC0 1.0"
         }
@@ -53,5 +53,6 @@
     }
   ],
   "publish_to_social": false,
-  "production_status": "AUTHORIZED_RENDER_PENDING_QA"
+  "production_status": "AUTHORIZED_RENDER_RETRY_PINNED_PROXY",
+  "repair_note": "Direct Wikimedia downloads hit HTTP 429. Minimum safe repair: same verified source files routed through approved images.weserv.nl proxy; credits/licenses unchanged."
 }
