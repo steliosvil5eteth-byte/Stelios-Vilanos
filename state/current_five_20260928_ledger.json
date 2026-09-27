@@ -3,7 +3,7 @@
   "date": "2026-09-28",
   "brand_id": 7076410,
   "timezone": "Europe/Athens",
-  "observed_at": "2026-09-27T14:10:00+03:00",
+  "observed_at": "2026-09-27T14:16:29+03:00",
   "logical_target": 5,
   "destination_target": 20,
   "status": "FIVE_LOGICAL_POSTS_SCHEDULED_PENDING_UNDER_ACTIVE_LEASE",
@@ -62,11 +62,11 @@
     {
       "time": "15:00",
       "category": "love_soul_relationship",
-      "title": "Η συνταγή στην τελευταία σελίδα",
-      "qa": "PASSED_FINAL_REVIEW_CURRENT_LIVE_VERSION",
+      "title": "Το ταπεράκι της Δευτέρας",
+      "qa": "LIVE_MEDIA_UPDATE_OBSERVED_UNDER_LEASE_REVIEW_PENDING",
       "entries": [
         {
-          "post_id": 382831147,
+          "post_id": 382832148,
           "uuid": "-7902353527416862519",
           "platforms": {
             "facebook": "PENDING",
@@ -75,7 +75,7 @@
           }
         },
         {
-          "post_id": 382831208,
+          "post_id": 382832155,
           "uuid": "7246532472844078062",
           "platforms": {
             "youtube": "PENDING"
@@ -154,6 +154,8 @@
   },
   "notes": [
     "Metricool live queue is authoritative. Backlog subjects are not scheduled until live readback confirms IDs.",
+    "The 15:00 love slot was replaced under the same UUIDs by the lease owner; live IDs are 382832148/382832155 and title is Το ταπεράκι της Δευτέρας.",
+    "Exact final media QA for the newest love replacement remains pending until the lease owner finalizes and the immutable media/readback are reconciled.",
     "Because an active production lease may replace media under the same UUID, re-run exact final media QA after any update and before release.",
     "final_ready_through remains null while the lease owner has not reconciled the backlog state."
   ]
