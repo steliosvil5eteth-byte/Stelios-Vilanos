@@ -1,0 +1,40 @@
+{
+  "status": "IN_PRODUCTION",
+  "production_owner": "automation-current-five-20260927-1534",
+  "production_lease_until": "2026-09-27T18:00:00+03:00",
+  "date": "2026-09-30",
+  "instruction": "Do not produce or schedule duplicate 30 Sep packs while this lease is active. Reconcile live Metricool queue, exact final media, config/content_strategy.json, Notion, and state/content_history.json before any write.",
+  "source_buffer": "state/seven_day_production_buffer.json",
+  "packs": {
+    "survival30": {
+      "time": "09:00",
+      "title": "Θυελλώδεις άνεμοι: προετοιμασία και προστασία",
+      "status": "IN_PRODUCTION",
+      "cards": 9
+    },
+    "zodiac30": {
+      "time": "11:00",
+      "title": "Ποια μικρή χαρά σου αλλάζει τη μέρα; Κριός–Παρθένος",
+      "status": "QUEUED",
+      "cards": 6
+    },
+    "love30": {
+      "time": "15:00",
+      "title": "Το άδειο κάδρο",
+      "status": "QUEUED",
+      "cards": 5
+    },
+    "stones30": {
+      "time": "17:00",
+      "title": "Οι πέτρες που κινούνται στην Κοιλάδα του Θανάτου",
+      "status": "SCRIPT_READY",
+      "manifest": "media_jobs/stones_20260930.json"
+    },
+    "myth30": {
+      "time": "20:00",
+      "title": "Η στρουθοκάμηλος κρύβει το κεφάλι στην άμμο;",
+      "status": "QUEUED",
+      "cards": 4
+    }
+  }
+}
