@@ -1,7 +1,7 @@
 {
-  "status": "IN_PRODUCTION",
+  "status": "COMPLETED_SCHEDULED",
   "production_owner": "interactive-session-3147a767415a",
-  "production_lease_until": "2026-09-27T17:00:00+03:00",
+  "production_lease_until": null,
   "date": "2026-09-29",
   "packs": {
     "zodiac29": {
@@ -156,5 +156,82 @@
         ]
       ]
     }
-  }
+  },
+  "completed_items": [
+    {
+      "pack": "zodiac29",
+      "title": "Πώς δέχεσαι ένα κομπλιμέντο; Ζυγός–Ιχθύες",
+      "slot": "11:00",
+      "posts": [
+        "zodiac29native",
+        "zodiac29youtube"
+      ],
+      "category": "zodiac",
+      "video": "zodiac-compliment-b.mp4",
+      "caption": "Πώς δέχεσαι ένα κομπλιμέντο; Ζυγός έως Ιχθύες\n\nΈξι ακόμη συμβολικά πορτρέτα για την καλή κουβέντα που μας μένει. Εσύ λες εύκολα «ευχαριστώ»;\nΨυχαγωγικό περιεχόμενο, όχι πρόβλεψη. Εικαστικά AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ζώδια #Ζυγός #Σκορπιός #Ιχθύες #Αστρολογία",
+      "duration": 42,
+      "qa": "All six final cards and full slideshow reviewed. Full decode passed. Original instrumental one layer. No narration. Native FB/IG/TikTok carousel with TikTok autoAddMusic. YouTube full vertical slideshow. AI disclosure and CTA.",
+      "notion_page_id": "3e8f2345-b318-8195-b55f-e41ea22b954f"
+    },
+    {
+      "pack": "love29",
+      "title": "Το σακάκι που δεν φόρεσε",
+      "slot": "15:00",
+      "posts": [
+        "love29native",
+        "love29youtube"
+      ],
+      "category": "love_soul_relationship",
+      "video": "love-blazer.mp4",
+      "caption": "Το σακάκι που δεν φόρεσε\n\nΜερικές φράσεις μένουν μέσα μας πολύ αφού τελειώσει μια σχέση. Η δική της πρώτη νίκη ήταν ότι εμφανίστηκε.\nΠρωτότυπη μυθοπλασία. Εικόνες δημιουργημένες με AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ιστορίες #ΝέαΑρχή #Αυτοεκτίμηση #Σχέσεις #Ψυχή",
+      "duration": 35,
+      "qa": "Five final cards visually reviewed for continuity and exact Greek. Full 35s slideshow decode and ending reviewed. Original single instrumental, no narration. Native photo carousel FB/IG/TikTok, full vertical YouTube slideshow. AI and fiction disclosed, CTA present.",
+      "notion_page_id": "3e8f2345-b318-8190-8b38-f0eec23b28c1"
+    },
+    {
+      "pack": "myth29",
+      "title": "Οι καμήλες αποθηκεύουν νερό στην καμπούρα;",
+      "slot": "20:00",
+      "posts": [
+        "myth29native",
+        "myth29youtube"
+      ],
+      "category": "myth_or_truth",
+      "video": "myth-camel.mp4",
+      "caption": "Οι καμήλες αποθηκεύουν νερό στην καμπούρα;\n\nΗ καμπούρα περιέχει λίπος. Η αντοχή της καμήλας στις δύσκολες συνθήκες δεν σημαίνει ότι κουβαλά ένα δοχείο νερού στην πλάτη της.\nΠηγή: San Diego Zoo — https://zoo.sandiegozoo.org/animals/camel\nΟι εικόνες είναι εκπαιδευτικές αναπαραστάσεις AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΜύθοςΉΑλήθεια #Καμήλα #Φύση #Ζώα #Έρημος",
+      "duration": 28,
+      "qa": "Four complete 1080 square JPEG cards visually reviewed. Facts verified San Diego Zoo. Full 28s video decode, sequence and ending reviewed. One original instrumental, no narration. Native FB/IG/TikTok and vertical full YouTube slideshow. AI label and CTA.",
+      "notion_page_id": "3e8f2345-b318-817f-b7b8-f2e803ecba77"
+    },
+    {
+      "pack": "kelvin29v2",
+      "title": "Kelvin–Helmholtz: κύματα στον ουρανό",
+      "slot": "17:00",
+      "posts": [
+        "kelvin29post"
+      ],
+      "category": "strange_real_phenomenon",
+      "video": "kelvin-helmholtz.mp4",
+      "caption": "Kelvin–Helmholtz: κύματα στον ουρανό\n\nΌταν δύο στρώματα αέρα κινούνται με διαφορετικές ταχύτητες, τα σύννεφα μπορούν να θυμίσουν κύματα που σπάνε. Ένα σύντομο, σπάνιο θέαμα με φυσική εξήγηση.\nΠηγές: Met Office, NWS Albany\nhttps://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/clouds/unusual-cloud-formations/kelvin-helmholtz\nhttps://www.weather.gov/media/aly/stormbuster/Spring17SB.pdf\nΕικόνες: ενδεικτικές αναπαραστάσεις AI, όχι αρχειακό υλικό.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Σύννεφα #Καιρός #Φύση #Επιστήμη #ΠαράξεναΦαινόμενα",
+      "duration": 119.997,
+      "qa": "Seven scene-specific images visually reviewed with AI labels and source credits. Final 119.997s 1080x1920 video full decode passed; all seven scenes and closing CTA reviewed. Azure F0 Nestoras narration, no music. Two unclear phrases rewritten; final independent Whisper medium transcription reviewed in full. Exact Azure word-boundary subtitles, longest measured pause 1.11508s. Repaired incomplete intermediate segment; final full-duration gate passed.",
+      "notion_page_id": "3e8f2345-b318-81e5-a118-dc06499e7235"
+    },
+    {
+      "pack": "survival29",
+      "title": "Καταιγίδα: προστασία μέσα στο σπίτι",
+      "slot": "09:00",
+      "posts": [
+        "survival29native",
+        "survival29youtube"
+      ],
+      "category": "survival",
+      "video": "survival-storm.mp4",
+      "caption": "Καταιγίδα: προστασία μέσα στο σπίτι ⛈️\n\nΤι προετοιμάζουμε πριν έρθει και τι αποφεύγουμε όσο υπάρχουν κεραυνοί; Εννέα απλές υπενθυμίσεις στις κάρτες. Ακολουθούμε πάντοτε τις οδηγίες των αρχών για την περιοχή μας.\n\nΠηγές: Πολιτική Προστασία https://civilprotection.gov.gr/odigies-prostasias/kataigides και National Weather Service https://www.weather.gov/safety/lightning-indoors\nΕκπαιδευτική ενημέρωση, όχι πρόγνωση καιρού. Εικόνες δημιουργημένες με AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Καταιγίδα #ΠολιτικήΠροστασία #Ασφάλεια #Επιβίωση #Κεραυνοί",
+      "duration": 63,
+      "qa": "Reviewed all nine final cards, source advice Civil Protection/NWS, numbering, spelling, photographic meaning, CTA and AI disclosure. Replaced card 5 to place family away from windows. Full 63s vertical slideshow, all nine scenes and ending reviewed, single original instrumental without narration, full FFmpeg decode passed. Four-network live readback PENDING, draft=false autoPublish=true.",
+      "notion_page_id": "3e8f2345-b318-8138-8649-cdbe09f53279"
+    }
+  ],
+  "final_ready_through": "2026-09-29"
 }
