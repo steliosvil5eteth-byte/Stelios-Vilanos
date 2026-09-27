@@ -5,7 +5,7 @@
   "horizon_start": "2026-09-28",
   "horizon_end": "2026-10-04",
   "target_logical_posts": 35,
-  "final_ready_through": null,
+  "final_ready_through": "2026-09-28",
   "rule": "Production backlog only; never treat this file as a scheduled or published queue. Only live Metricool readback establishes that.",
   "jobs": [
     {
@@ -20,7 +20,11 @@
         382829069,
         382829077
       ],
-      "media_commit": "3284ccaa73e539d34670c28a850250f5fc40bfec"
+      "media_commit": "3284ccaa73e539d34670c28a850250f5fc40bfec",
+      "metricool_uuids": [
+        "5052034884527017936",
+        "-1162706392677989621"
+      ]
     },
     {
       "id": "2026-09-28-zodiac",
@@ -34,7 +38,11 @@
         382831058,
         382831065
       ],
-      "media_commit": "3cb8b9505fca983b53c16161cd79d1e6b3ba2b64"
+      "media_commit": "3cb8b9505fca983b53c16161cd79d1e6b3ba2b64",
+      "metricool_uuids": [
+        "3730953815144417193",
+        "1293758576546499690"
+      ]
     },
     {
       "id": "2026-09-28-love_soul_relationship",
@@ -42,9 +50,17 @@
       "slot": "15:00",
       "category": "love_soul_relationship",
       "title": "Το ταπεράκι της Δευτέρας",
-      "status": "IN_PRODUCTION",
-      "publish_ready": false,
-      "metricool_post_ids": []
+      "status": "SCHEDULED",
+      "publish_ready": true,
+      "metricool_post_ids": [
+        382832148,
+        382832155
+      ],
+      "metricool_uuids": [
+        "-7902353527416862519",
+        "7246532472844078062"
+      ],
+      "media_commit": "227e4f65374e4e9678c9097d67de7b16aa04a315"
     },
     {
       "id": "2026-09-28-strange_real_phenomenon",
@@ -57,7 +73,10 @@
       "metricool_post_ids": [
         382829688
       ],
-      "media_commit": "ef3a79b03a7e762583edcec8d0d6d5aaaedc3886"
+      "media_commit": "ef3a79b03a7e762583edcec8d0d6d5aaaedc3886",
+      "metricool_uuids": [
+        "2450639086477656674"
+      ]
     },
     {
       "id": "2026-09-28-myth_or_truth",
@@ -65,9 +84,17 @@
       "slot": "20:00",
       "category": "myth_or_truth",
       "title": "Το χρυσόψαρο ξεχνά σε 3 δευτερόλεπτα;",
-      "status": "IN_PRODUCTION",
-      "publish_ready": false,
-      "metricool_post_ids": []
+      "status": "SCHEDULED",
+      "publish_ready": true,
+      "metricool_post_ids": [
+        382833554,
+        382833563
+      ],
+      "metricool_uuids": [
+        "4430904804091774595",
+        "-8344171222198759588"
+      ],
+      "media_commit": "669f1e13838249e103485eabcdd4b41340a23bde"
     },
     {
       "id": "2026-09-29-survival",
@@ -75,9 +102,11 @@
       "slot": "09:00",
       "category": "survival",
       "title": "Καταιγίδα: προστασία μέσα στο σπίτι",
-      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "status": "IN_PRODUCTION",
       "publish_ready": false,
-      "metricool_post_ids": []
+      "metricool_post_ids": [],
+      "production_owner": "interactive-session-3147a767415a",
+      "production_lease_until": "2026-09-27T17:00:00+03:00"
     },
     {
       "id": "2026-09-29-zodiac",
@@ -85,7 +114,7 @@
       "slot": "11:00",
       "category": "zodiac",
       "title": "Πώς δέχεσαι ένα κομπλιμέντο; Ζυγός–Ιχθύες",
-      "status": "SCRIPT_READY",
+      "status": "IN_PRODUCTION",
       "publish_ready": false,
       "metricool_post_ids": [],
       "script_cards": [
@@ -114,7 +143,9 @@
           "Κοκκινίζεις λίγο. Κρατάς περισσότερο το συναίσθημα από τις λέξεις."
         ]
       ],
-      "disclosure": "Συμβολικά πορτρέτα • Ψυχαγωγία • Εικόνες AI"
+      "disclosure": "Συμβολικά πορτρέτα • Ψυχαγωγία • Εικόνες AI",
+      "production_owner": "interactive-session-3147a767415a",
+      "production_lease_until": "2026-09-27T17:00:00+03:00"
     },
     {
       "id": "2026-09-29-love_soul_relationship",
@@ -122,7 +153,7 @@
       "slot": "15:00",
       "category": "love_soul_relationship",
       "title": "Το σακάκι που δεν φόρεσε",
-      "status": "SCRIPT_READY",
+      "status": "IN_PRODUCTION",
       "publish_ready": false,
       "metricool_post_ids": [],
       "script_cards": [
@@ -146,7 +177,9 @@
           "Η ΠΡΩΤΗ ΝΙΚΗ ΗΡΘΕ ΠΡΙΝ ΤΗΝ ΑΠΑΝΤΗΣΗ",
           "Είχε πάψει να ζητά άδεια για τη δική της ζωή."
         ]
-      ]
+      ],
+      "production_owner": "interactive-session-3147a767415a",
+      "production_lease_until": "2026-09-27T17:00:00+03:00"
     },
     {
       "id": "2026-09-29-strange_real_phenomenon",
@@ -154,9 +187,11 @@
       "slot": "17:00",
       "category": "strange_real_phenomenon",
       "title": "Kelvin–Helmholtz: κύματα στον ουρανό",
-      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "status": "IN_PRODUCTION",
       "publish_ready": false,
-      "metricool_post_ids": []
+      "metricool_post_ids": [],
+      "production_owner": "interactive-session-3147a767415a",
+      "production_lease_until": "2026-09-27T17:00:00+03:00"
     },
     {
       "id": "2026-09-29-myth_or_truth",
@@ -164,7 +199,7 @@
       "slot": "20:00",
       "category": "myth_or_truth",
       "title": "Οι καμήλες αποθηκεύουν νερό στην καμπούρα;",
-      "status": "SCRIPT_READY",
+      "status": "IN_PRODUCTION",
       "publish_ready": false,
       "metricool_post_ids": [],
       "script_cards": [
@@ -187,7 +222,9 @@
       ],
       "sources": [
         "https://zoo.sandiegozoo.org/animals/camel"
-      ]
+      ],
+      "production_owner": "interactive-session-3147a767415a",
+      "production_lease_until": "2026-09-27T17:00:00+03:00"
     },
     {
       "id": "2026-09-30-survival",
@@ -832,15 +869,18 @@
     }
   ],
   "continue_daily_until": "2050-12-31",
-  "rolling_buffer_days": 7,
+  "rolling_buffer_days": 3,
   "long_term_authorization": "User requested continuing the same five daily series until 2050; fill actual queue progressively after QA, never claim all years are produced.",
   "suppressed_duplicates": [
     {
       "metricool_uuid": "4939033458929453922",
-      "metricool_id": 382830070,
+      "metricool_id": 382830330,
       "draft": true,
       "autoPublish": false,
       "reason": "Concurrent alternate earthquake post for already filled 28 Sep 09 slot. Preserve draft; do not re-enable."
     }
-  ]
+  ],
+  "minimum_ready_days": 2,
+  "target_ready_days": 3,
+  "planning_horizon_days": 7
 }
