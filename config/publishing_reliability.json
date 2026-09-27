@@ -1,9 +1,9 @@
 {
-  "version": 18,
+  "version": 19,
   "updated_on": "2026-09-27",
   "timezone": "Europe/Athens",
-  "strategy_id": "CURRENT_FIVE_DAILY_20260927",
-  "program_label": "CURRENT_FIVE_DAILY",
+  "strategy_id": "CURRENT_TEN_DAILY_20260927",
+  "program_label": "CURRENT_TEN_DAILY",
   "authoritative_strategy_file": "config/content_strategy.json",
   "publishing_paused": false,
   "active_metricool_brand": {
@@ -12,14 +12,19 @@
     "exclusive": true
   },
   "current_slots_local": [
+    "07:00",
     "09:00",
+    "10:00",
     "11:00",
+    "13:00",
     "15:00",
     "17:00",
-    "20:00"
+    "18:30",
+    "20:00",
+    "22:00"
   ],
-  "daily_logical_target_per_network": 5,
-  "daily_destination_target": 20,
+  "daily_logical_target_per_network": 10,
+  "daily_destination_target": 40,
   "final_render_qa_gate": {
     "active": true,
     "require_final_render_visual_inspection": true,
@@ -99,7 +104,7 @@
   },
   "quality_first_catch_up": {
     "enabled": true,
-    "rule": "Only brand 7076410. Five posts/day, one per active category after full QA and fresh dedupe. Never catch up paused categories. Preserve published history.",
+    "rule": "Only brand 7076410. Ten posts/day, one per active category after full QA and fresh dedupe. Preserve published history. Never backdate.",
     "reschedule_following_unpublished_slots_if_needed": true
   },
   "retired_operational_context": {
@@ -116,11 +121,17 @@
     "paid_tests": false,
     "paid_fallbacks": false
   },
-  "paused_categories": [
+  "paused_categories": [],
+  "active_categories": [
     "relationships",
+    "survival",
     "dog_bartender",
+    "zodiac",
     "greece_two_day_trip",
+    "love_soul_relationship",
+    "strange_real_phenomenon",
     "documented_experiments",
+    "myth_or_truth",
     "international_legend"
   ]
 }
