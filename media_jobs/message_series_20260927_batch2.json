@@ -81,5 +81,6 @@
     }
   ],
   "publish_to_social": false,
-  "production_status": "AUTHORIZED_RENDER_PENDING_QA"
+  "production_status": "AUTHORIZED_RENDER_PENDING_QA",
+  "retriggered_at": "2026-09-27T16:16:30+03:00"
 }
