@@ -114,9 +114,12 @@
       "slot": "11:00",
       "category": "zodiac",
       "title": "Πώς δέχεσαι ένα κομπλιμέντο; Ζυγός–Ιχθύες",
-      "status": "IN_PRODUCTION",
-      "publish_ready": false,
-      "metricool_post_ids": [],
+      "status": "SCHEDULED",
+      "publish_ready": true,
+      "metricool_post_ids": [
+        382837560,
+        382837567
+      ],
       "script_cards": [
         [
           "ΖΥΓΟΣ • Πώς δέχεσαι ένα κομπλιμέντο;",
@@ -145,7 +148,14 @@
       ],
       "disclosure": "Συμβολικά πορτρέτα • Ψυχαγωγία • Εικόνες AI",
       "production_owner": "interactive-session-3147a767415a",
-      "production_lease_until": "2026-09-27T17:00:00+03:00"
+      "production_lease_until": null,
+      "metricool_uuids": [
+        "1721517511529484275",
+        "-3554725956835782704"
+      ],
+      "media_commit": "7969c98a8701a9715a16d6cbbd22e752ab6fe03d",
+      "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/7969c98a8701a9715a16d6cbbd22e752ab6fe03d/jobs/five-20260929/zodiac29/zodiac-compliment-b.mp4",
+      "notion_page_id": "3e8f2345-b318-8195-b55f-e41ea22b954f"
     },
     {
       "id": "2026-09-29-love_soul_relationship",
