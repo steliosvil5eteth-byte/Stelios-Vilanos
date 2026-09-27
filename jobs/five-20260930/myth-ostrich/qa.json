@@ -4,7 +4,7 @@
   "slot": "20:00",
   "category": "myth_or_truth",
   "title": "Η στρουθοκάμηλος κρύβει το κεφάλι στην άμμο;",
-  "status": "PASSED_FINAL_REVIEW_LOCAL_ARTIFACT",
+  "status": "PASSED_FINAL_REVIEW_AND_METRICOOL_READBACK",
   "reviewed_at": "2026-09-27T16:50:00+03:00",
   "reviewer": "automation-current-five-20260927-1534",
   "source": {
@@ -34,8 +34,27 @@
     "double_audio": false
   },
   "disclosure": "Εικόνες δημιουργημένες με AI για εικονογράφηση.",
-  "publish_ready": false,
-  "note": "Local artifact QA passed. Keep blocked from publishing until immutable GitHub commit, fresh duplicate check, Metricool create/readback and platform validation succeed.",
+  "publish_ready": true,
+  "media_commit": "567c90a6bedb4bb27768c564c14f00fa373be956",
+  "metricool": {
+    "carousel_id": 382879170,
+    "carousel_uuid": "8354266250268002774",
+    "youtube_id": 382879296,
+    "youtube_uuid": "8419495590942623931",
+    "publication": "2026-09-30T20:00:00 Europe/Athens",
+    "providers": {
+      "facebook": "PENDING",
+      "instagram": "PENDING",
+      "tiktok": "PENDING",
+      "youtube": "PENDING"
+    },
+    "draft": false,
+    "auto_publish": true,
+    "tiktok_auto_add_music": true,
+    "youtube_ai_disclosure": true,
+    "live_readback_at": "2026-09-27T16:46:00+03:00"
+  },
+  "note": "Final artifact QA passed; immutable commit, fresh duplicate checks, native-format scheduling and live Metricool readback succeeded for all four providers. PENDING means scheduled, not published.",
   "sha256": {
     "card-01.jpg": "31d457e7b77cb5779a83d04dab5f1d3d53c2b9969aecd173ff3c9ae9aacdfff1",
     "card-02.jpg": "038dd74d4dd05cde053d117a062743e1ba0e76492fbbc3b3556a9827bd187eef",
