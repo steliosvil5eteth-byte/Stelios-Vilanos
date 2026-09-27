@@ -1,0 +1,42 @@
+{
+  "strategy": "CURRENT_FIVE_DAILY_20260927",
+  "date": "2026-09-30",
+  "slot": "15:00",
+  "category": "love_soul_relationship",
+  "title": "Το άδειο κάδρο",
+  "status": "PASSED_FINAL_REVIEW_LOCAL_ARTIFACT",
+  "reviewed_at": "2026-09-27T16:32:00+03:00",
+  "reviewer": "automation-current-five-20260927-1534",
+  "carousel": {
+    "cards": 5,
+    "dimensions": "1080x1080",
+    "format": "JPEG",
+    "visual_review": "PASSED_DISTINCT_RELEVANT_PHOTOREALISTIC_CONTINUITY",
+    "character_continuity": "PASSED_SAME_DAUGHTER_AND_FATHER",
+    "text_review": "PASSED_READABLE_GREEK_ORDER_1_TO_5",
+    "tiktok_media_silent": true,
+    "tiktok_auto_add_music_required": true
+  },
+  "youtube": {
+    "file": "love-frame-youtube-short.mp4",
+    "dimensions": "1080x1920",
+    "duration_seconds": 35.114,
+    "video_codec": "h264",
+    "audio_streams": 1,
+    "audio_channels": 1,
+    "audio_type": "original instrumental, no narration",
+    "all_cards_present": true,
+    "double_audio": false
+  },
+  "disclosure": "Πρωτότυπη μυθοπλασία • Εικόνα AI",
+  "publish_ready": false,
+  "note": "Local artifact QA passed. Keep blocked from publishing until immutable GitHub commit, fresh duplicate check, Metricool create/readback, and platform validation succeed.",
+  "sha256": {
+    "card-01.jpg": "d2b8ebf052dd03c8c3fecfc2a6456e6c739197a71565fe9c9b9e93fc37cea7ad",
+    "card-02.jpg": "006f853c0cb65f16ad622dc1e94bfc424326bf22008d47c0c4b2cb66182ecb60",
+    "card-03.jpg": "009024d7b3e1433a25ce6eab93f4e5f51b464c64eccfc6134202353b75658eb8",
+    "card-04.jpg": "6dd313c603131677afd884d3bed9c95cf80d6c2e21568246a417da05b6f0cd01",
+    "card-05.jpg": "a96319d61fc0484c977d3019d4d9f57b6c28b11c0add8236c80abb0ee9c26170",
+    "love-frame-youtube-short.mp4": "235186715a9ea8161bbdb07061f18ee24af0485d083cb435d6770b4cbd77db9c"
+  }
+}
