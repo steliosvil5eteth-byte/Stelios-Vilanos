@@ -1,0 +1,58 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_FIVE_DAILY_20260927_EXTRA_MESSAGE_SERIES",
+  "local_date": "2026-09-27",
+  "require_photographic_visuals": true,
+  "authorization_basis": "Explicit user authorization to resume Episode 15 as extra content without replacing CURRENT_FIVE_DAILY.",
+  "purpose": "Produce Episode 15 of «Το μήνυμα που δεν έπρεπε να διαβάσει» as an exact five-card photographic carousel and a YouTube slideshow. Zero incremental cost; release only after direct final visual QA and fresh dedupe.",
+  "jobs": [
+    {
+      "id": "message-series-ep15",
+      "expected_cards": 5,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "«ΓΕΙΑ ΣΟΥ, ΓΙΕ ΜΟΥ.» — 1/5",
+          "text": "Ο Νίκος πάγωσε. Ο ηλικιωμένος άντρας τον κοίταζε σαν να τον ήξερε μια ζωή. «Με λένε Ανδρέα», είπε. «Και ήρθα να σου πω την αλήθεια.»",
+          "source_url": "https://images.weserv.nl/?url=ssl:upload.wikimedia.org/wikipedia/commons/7/7b/Elderly_man_in_a_bookstore_%28Unsplash%29.jpg&w=1600&output=jpg",
+          "source_credit": "Aris Sfakianakis / Unsplash via Wikimedia Commons",
+          "license": "CC0 1.0"
+        },
+        {
+          "title": "ΔΕΝ ΗΤΑΝ Ο ΠΑΤΕΡΑΣ ΠΟΥ ΗΞΕΡΕ — 2/5",
+          "text": "«Ο άνθρωπος που σε μεγάλωσε ήταν πατέρας σου σε όλα», συνέχισε ο Ανδρέας. «Σε όλα — εκτός από το αίμα.»",
+          "source_url": "https://images.weserv.nl/?url=ssl:upload.wikimedia.org/wikipedia/commons/2/24/Serious_man_in_furry_hood_%28Unsplash%29.jpg&w=1600&output=jpg",
+          "source_credit": "Frank Marino / Unsplash via Wikimedia Commons",
+          "license": "CC0 1.0"
+        },
+        {
+          "title": "ΜΙΑ ΦΩΤΟΓΡΑΦΙΑ ΑΠΟ ΤΗΝ ΑΡΧΗ — 3/5",
+          "text": "Ο Ανδρέας άφησε πάνω στο τραπέζι μια παλιά φωτογραφία: η μητέρα του Νίκου κρατούσε ένα μωρό. Δίπλα της στεκόταν ένας νεότερος άντρας.",
+          "source_url": "https://images.weserv.nl/?url=ssl:upload.wikimedia.org/wikipedia/commons/c/c0/Portrait_of_Mother_and_Child.jpg&w=1600&output=jpg",
+          "source_credit": "Unknown author / Wikimedia Commons",
+          "license": "Public domain"
+        },
+        {
+          "title": "«ΔΕΝ ΣΕ ΕΓΚΑΤΕΛΕΙΨΑ» — 4/5",
+          "text": "«Δεν έφυγα επειδή δεν σε ήθελα», είπε. «Με έβγαλαν από τη ζωή σου. Για χρόνια πίστευα ότι έτσι θα έμενες ασφαλής.»",
+          "source_url": "https://images.weserv.nl/?url=ssl:upload.wikimedia.org/wikipedia/commons/1/17/Old_man_sitting_portrait.jpg&w=1600&output=jpg",
+          "source_credit": "Charles Roscoe Savage / Harold B. Lee Library via Wikimedia Commons",
+          "license": "Public domain"
+        },
+        {
+          "title": "ΚΑΙ ΤΟΤΕ ΜΙΛΗΣΕ Η ΜΑΡΙΑ — 5/5",
+          "text": "Πριν προλάβει να απαντήσει ο Νίκος, η Μαρία ψιθύρισε: «Τον Ανδρέα τον είχα συναντήσει πριν από τον γάμο μας.»",
+          "source_url": "https://images.weserv.nl/?url=ssl:upload.wikimedia.org/wikipedia/commons/8/8b/Serious_woman.jpg&w=1600&output=jpg",
+          "source_credit": "Jiri Hodan / Wikimedia Commons",
+          "license": "CC0 1.0"
+        }
+      ],
+      "approved": true,
+      "publish_to_social": false
+    }
+  ],
+  "publish_to_social": false,
+  "production_status": "AUTHORIZED_RENDER_RETRY_WESERV_SSL_ORIGIN",
+  "repair_note": "Third minimal repair: use the documented images.weserv.nl ssl: origin syntax, preserving the same verified source images and licenses."
+}

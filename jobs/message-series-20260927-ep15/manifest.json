@@ -1,0 +1,84 @@
+{
+  "batch_id": "bebae93165cb5d93",
+  "batch_sha256": "bebae93165cb5d93c995f4b12966a87a5216ed739bbe22798a2ace04ef419770",
+  "paid_ai_credits_used": 0,
+  "photographic_visuals_required": true,
+  "jobs": [
+    {
+      "id": "message-series-ep15",
+      "status": "rendered",
+      "card_count": 5,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 25.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://images.weserv.nl/?url=ssl:upload.wikimedia.org/wikipedia/commons/7/7b/Elderly_man_in_a_bookstore_%28Unsplash%29.jpg&w=1600&output=jpg",
+          "source_credit": "Aris Sfakianakis / Unsplash via Wikimedia Commons",
+          "license": "CC0 1.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=ssl:upload.wikimedia.org/wikipedia/commons/2/24/Serious_man_in_furry_hood_%28Unsplash%29.jpg&w=1600&output=jpg",
+          "source_credit": "Frank Marino / Unsplash via Wikimedia Commons",
+          "license": "CC0 1.0"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=ssl:upload.wikimedia.org/wikipedia/commons/c/c0/Portrait_of_Mother_and_Child.jpg&w=1600&output=jpg",
+          "source_credit": "Unknown author / Wikimedia Commons",
+          "license": "Public domain"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=ssl:upload.wikimedia.org/wikipedia/commons/1/17/Old_man_sitting_portrait.jpg&w=1600&output=jpg",
+          "source_credit": "Charles Roscoe Savage / Harold B. Lee Library via Wikimedia Commons",
+          "license": "Public domain"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=ssl:upload.wikimedia.org/wikipedia/commons/8/8b/Serious_woman.jpg&w=1600&output=jpg",
+          "source_credit": "Jiri Hodan / Wikimedia Commons",
+          "license": "CC0 1.0"
+        }
+      ],
+      "files": [
+        {
+          "name": "message-series-ep15-01.jpg",
+          "bytes": 396508,
+          "sha256": "8d6d8783f2a3f92361dc3d01bc60fec8d1b54868c627d19ae6d3ca2855b7e55f"
+        },
+        {
+          "name": "message-series-ep15-02.jpg",
+          "bytes": 359885,
+          "sha256": "81cdb4e7c0c301182f644ac23a0730216b76908ea2f7eab1422eadc9da83c84a"
+        },
+        {
+          "name": "message-series-ep15-03.jpg",
+          "bytes": 308164,
+          "sha256": "49c9ca5cd169438fc7c8d7871bc4c7ff04604d02c0ca33327c8f81235ee39dad"
+        },
+        {
+          "name": "message-series-ep15-04.jpg",
+          "bytes": 347124,
+          "sha256": "751db847dcb70dc315dd6b8d0c825a5c5ce093de94f39018cf849d865ec0d285"
+        },
+        {
+          "name": "message-series-ep15-05.jpg",
+          "bytes": 248894,
+          "sha256": "80972bfdb606df52c97c95b5c3febbbdf40dcc29ce798ca71588d3e51a6f4371"
+        },
+        {
+          "name": "message-series-ep15.mp4",
+          "bytes": 875077,
+          "sha256": "07172139b416bf308a0e8297df081ddc385ffd0f9dcd4bcd1b02fd9dd164b61c"
+        }
+      ]
+    }
+  ]
+}
