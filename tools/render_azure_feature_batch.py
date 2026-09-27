@@ -30,8 +30,28 @@ def commons_search(queries, outdir:Path, target:int):
     for q in queries:
         if len(records)>=target: break
         params={'action':'query','format':'json','generator':'search','gsrsearch':q,'gsrnamespace':6,'gsrlimit':25,'prop':'imageinfo','iiprop':'url|size|extmetadata','iiurlwidth':1800}
-        r=sess.get('https://commons.wikimedia.org/w/api.php',params=params,timeout=60); r.raise_for_status()
-        pages=list(r.json().get('query',{}).get('pages',{}).values())
+        payload=None; last_query_error=None
+        for attempt in range(5):
+            try:
+                r=sess.get('https://commons.wikimedia.org/w/api.php',params=params,timeout=60)
+                if r.status_code==429:
+                    last_query_error=RuntimeError('HTTP 429 from Commons search API')
+                    time.sleep(4*(attempt+1))
+                    continue
+                r.raise_for_status()
+                payload=r.json()
+                break
+            except Exception as exc:
+                last_query_error=exc
+                time.sleep(2*(attempt+1))
+        if payload is None:
+            # A single exhausted query must not kill an otherwise valid batch.
+            # Continue to the next vetted search phrase; the final target-count
+            # gate below still blocks publication if enough lawful visuals
+            # cannot be established.
+            continue
+        pages=list(payload.get('query',{}).get('pages',{}).values())
+        time.sleep(0.6)
         for p in pages:
             if len(records)>=target: break
             title=p.get('title','')
