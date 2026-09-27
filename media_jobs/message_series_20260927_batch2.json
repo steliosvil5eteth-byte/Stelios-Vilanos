@@ -1,0 +1,85 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_FIVE_DAILY_20260927_EXTRA_MESSAGE_SERIES",
+  "local_date": "2026-09-27",
+  "require_photographic_visuals": true,
+  "authorization_basis": "Explicit user authorization 2026-09-27 to resume the 60-episode series from Episode 15 as extra same-day content, without replacing CURRENT_FIVE_DAILY.",
+  "purpose": "Render Episodes 23-24 of «Το μήνυμα που δεν έπρεπε να διαβάσει» as five-card photographic carousels plus vertical YouTube slideshows. Zero incremental cost. Production only; release requires exact visual QA and fresh live dedupe.",
+  "canonical_output_key": "message-series-20260927-batch2",
+  "series": {
+    "title": "Το μήνυμα που δεν έπρεπε να διαβάσει",
+    "total_planned_episodes": 60,
+    "resume_from_episode": 15,
+    "previous_completed_through": 14,
+    "format_for_this_resume": "one logical carousel per episode, 5 ordered cards"
+  },
+  "jobs": [
+    {
+      "id": "message-series-ep23",
+      "expected_cards": 5,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "«ΜΗΝ ΕΜΠΙΣΤΕΥΤΕΙΣ ΤΟΝ ΑΝΔΡΕΑ» — 1/5",
+          "text": "Ο Νίκος ξανάπαιξε το ηχητικό. Η φωνή του ανθρώπου που τον μεγάλωσε ήταν καθαρή: «Μην εμπιστευτείς τον Ανδρέα.»",
+          "source_query": "man listening smartphone audio photograph"
+        },
+        {
+          "title": "ΓΙΑΤΙ ΝΑ ΜΗΝ ΤΟΝ ΕΜΠΙΣΤΕΥΤΕΙ; — 2/5",
+          "text": "Στην ηχογράφηση ακολούθησε παύση. «Θα σου πει αλήθειες», έλεγε η φωνή. «Αλλά όχι με τη σειρά που έγιναν.»",
+          "source_query": "older man voice recording photograph"
+        },
+        {
+          "title": "Ο ΛΟΓΟΣ ΠΟΥ ΕΠΕΣΤΡΕΨΕ — 3/5",
+          "text": "«Δεν γύρισε μόνο για να σε βρει. Γύρισε γιατί υπάρχει κάτι που άφησα στο όνομά σου πριν εξαφανιστώ.»",
+          "source_query": "old key and documents photograph"
+        },
+        {
+          "title": "ΕΝΑΣ ΑΡΙΘΜΟΣ ΘΥΡΙΔΑΣ — 4/5",
+          "text": "Στο τέλος της ηχογράφησης ακούστηκε ένας αριθμός και το όνομα μιας παλιάς τραπεζικής θυρίδας. Ο Νίκος τον έγραψε αμέσως.",
+          "source_query": "safe deposit box key photograph"
+        },
+        {
+          "title": "Ο ΑΝΔΡΕΑΣ ΔΕΝ ΑΡΝΗΘΗΚΕ ΤΙΠΟΤΑ — 5/5",
+          "text": "Ο Νίκος τον κοίταξε. «Ξέρεις τι έχει μέσα;» Ο Ανδρέας δεν απάντησε. Η σιωπή του ήταν αρκετή.",
+          "source_query": "older man silent serious portrait photograph"
+        }
+      ]
+    },
+    {
+      "id": "message-series-ep24",
+      "expected_cards": 5,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "Η ΘΥΡΙΔΑ — 1/5",
+          "text": "Μέσα στη θυρίδα δεν υπήρχαν χρήματα. Υπήρχαν έγγραφα, παλιές φωτογραφίες και ένας μικρός φάκελος με το όνομα του Νίκου.",
+          "source_query": "documents inside safe box photograph"
+        },
+        {
+          "title": "Η ΠΑΤΡΟΤΗΤΑ ΕΠΙΒΕΒΑΙΩΝΟΤΑΝ — 2/5",
+          "text": "Το πρώτο χαρτί ήταν εξέταση πατρότητας. Αυτή τη φορά το αποτέλεσμα ήταν ξεκάθαρο: ο Ανδρέας ήταν πράγματι ο βιολογικός του πατέρας.",
+          "source_query": "medical report document photograph"
+        },
+        {
+          "title": "Ο ΑΝΔΡΕΑΣ ΗΞΕΡΕ ΓΙΑ ΤΟΝ ΑΔΕΛΦΟ — 3/5",
+          "text": "Δίπλα υπήρχαν αποδείξεις ότι ο Ανδρέας έστελνε χρήματα στον αδελφό του Νίκου για χρόνια. Ήξερε ότι ήταν ζωντανός.",
+          "source_query": "money transfer documents photograph"
+        },
+        {
+          "title": "ΜΙΑ ΠΡΟΣΦΑΤΗ ΦΩΤΟΓΡΑΦΙΑ — 4/5",
+          "text": "Κάτω από τα χαρτιά υπήρχε φωτογραφία τριών μηνών. Η Μαρία μιλούσε με τον άνθρωπο που είχε μεγαλώσει τον Νίκο — τον άντρα που όλοι θεωρούσαν νεκρό.",
+          "source_query": "woman talking older man street photograph"
+        },
+        {
+          "title": "«ΤΟΝ ΒΡΗΚΑ ΠΡΙΝ ΑΠΟ ΟΛΟΥΣ» — 5/5",
+          "text": "Ο Νίκος γύρισε προς τη Μαρία. Εκείνη δεν απέφυγε το βλέμμα του. «Ναι. Τον βρήκα πριν από όλους σας. Και το έκανα για έναν λόγο.»",
+          "source_query": "woman serious confession photograph"
+        }
+      ]
+    }
+  ],
+  "publish_to_social": false,
+  "production_status": "AUTHORIZED_RENDER_PENDING_QA"
+}
