@@ -207,11 +207,19 @@
       "slot": "17:00",
       "category": "strange_real_phenomenon",
       "title": "Kelvin–Helmholtz: κύματα στον ουρανό",
-      "status": "IN_PRODUCTION",
-      "publish_ready": false,
-      "metricool_post_ids": [],
+      "status": "SCHEDULED",
+      "publish_ready": true,
+      "metricool_post_ids": [
+        382840452
+      ],
       "production_owner": "interactive-session-3147a767415a",
-      "production_lease_until": "2026-09-27T17:00:00+03:00"
+      "production_lease_until": null,
+      "metricool_uuids": [
+        "5062927141864751292"
+      ],
+      "media_commit": "7ed0abaa9505e82b2fcd4742e89a51ae525dc35c",
+      "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/7ed0abaa9505e82b2fcd4742e89a51ae525dc35c/jobs/five-20260929/kelvin29v2/kelvin-helmholtz.mp4",
+      "notion_page_id": "3e8f2345-b318-81e5-a118-dc06499e7235"
     },
     {
       "id": "2026-09-29-myth_or_truth",
