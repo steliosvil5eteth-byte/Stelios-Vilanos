@@ -1,12 +1,6 @@
 name: Volcanic lightning Nestoras final preview
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'media_jobs/volcanic_lightning_final_preview.json'
-      - 'tools/render_azure_feature_batch.py'
-      - '.github/workflows/volcanic-lightning-nestoras-final-preview.yml'
   workflow_dispatch:
 
 permissions:
