@@ -2176,6 +2176,57 @@
           "source_post_id": 382829688
         }
       }
+    },
+    {
+      "job_id": "five-20260928/zodiac28",
+      "date": "2026-09-28",
+      "theme": "zodiac",
+      "title": "Πώς δέχεσαι ένα κομπλιμέντο; Κριός έως Παρθένος",
+      "caption": "Πώς δέχεσαι ένα κομπλιμέντο; Κριός έως Παρθένος\n\nΜια καλή κουβέντα, έξι διαφορετικές αντιδράσεις. Ποια σου μοιάζει περισσότερο;\nΣυμβολικά πορτρέτα για ψυχαγωγία. Εικαστικά AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ζώδια #Κριός #Ταύρος #Δίδυμοι #Αστρολογία",
+      "fingerprint": "five-20260928-zodiac28",
+      "status": "scheduled",
+      "scheduled_time": "2026-09-28T11:00:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "382831058,382831065",
+      "metricool_uuid": "3730953815144417193,1293758576546499690",
+      "notion_page_id": "3e8f2345-b318-81b6-af32-f454489ffd39",
+      "media_commit": "3cb8b9505fca983b53c16161cd79d1e6b3ba2b64",
+      "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/3cb8b9505fca983b53c16161cd79d1e6b3ba2b64/jobs/five-20260928/zodiac28/zodiac-compliment.mp4",
+      "duration_seconds": 42,
+      "quality_check": {
+        "final_visuals_reviewed": true,
+        "full_ffmpeg_decode_passed": true,
+        "final_end_reviewed": true,
+        "ai_disclosure": true
+      },
+      "platform_status": {
+        "facebook": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382831058
+        },
+        "instagram": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382831058
+        },
+        "tiktok": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382831058
+        },
+        "youtube": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382831065
+        }
+      }
     }
   ]
 }
