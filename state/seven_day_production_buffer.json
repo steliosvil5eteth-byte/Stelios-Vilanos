@@ -492,7 +492,8 @@
       ],
       "media_commit": "567c90a6bedb4bb27768c564c14f00fa373be956",
       "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/567c90a6bedb4bb27768c564c14f00fa373be956/jobs/five-20260930/myth-ostrich/myth-ostrich-youtube-short.mp4",
-      "qa_path": "jobs/five-20260930/myth-ostrich/qa.json"
+      "qa_path": "jobs/five-20260930/myth-ostrich/qa.json",
+      "notion_page_id": "3e8f2345-b318-811c-b451-cdba207796ba"
     },
     {
       "id": "2026-10-01-survival",
