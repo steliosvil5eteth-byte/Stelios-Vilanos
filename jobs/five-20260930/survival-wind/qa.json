@@ -1,0 +1,46 @@
+{
+  "strategy": "CURRENT_FIVE_DAILY_20260927",
+  "date": "2026-09-30",
+  "slot": "09:00",
+  "category": "survival",
+  "title": "Θυελλώδεις άνεμοι: προετοιμασία και προστασία",
+  "status": "PASSED_FINAL_REVIEW_LOCAL_ARTIFACT",
+  "reviewed_at": "2026-09-27T15:58:00+03:00",
+  "reviewer": "automation-current-five-20260927-1534",
+  "source": "https://civilprotection.gov.gr/odigies-prostasias/thyellodeis-anemoi",
+  "carousel": {
+    "cards": 9,
+    "dimensions": "1080x1080",
+    "format": "JPEG",
+    "visual_review": "PASSED_DISTINCT_RELEVANT_PHOTOREAL_SCENES",
+    "text_review": "PASSED_READABLE_GREEK_ORDER_1_TO_9",
+    "tiktok_media_silent": true,
+    "tiktok_auto_add_music_required": true
+  },
+  "youtube": {
+    "file": "survival-wind-youtube-short.mp4",
+    "dimensions": "1080x1920",
+    "duration_seconds": 63.125,
+    "video_codec": "h264",
+    "audio_streams": 1,
+    "audio_channels": 1,
+    "audio_type": "original instrumental, no narration",
+    "all_cards_present": true,
+    "double_audio": false
+  },
+  "disclosure": "Πολιτική Προστασία • Εικόνα AI",
+  "publish_ready": false,
+  "note": "Local artifact QA passed. Keep blocked from publishing until immutable GitHub commit, live duplicate check, Metricool create/readback, and platform configuration validation succeed.",
+  "sha256": {
+    "card-01.jpg": "5286a4516f21ac131aea0d35ae5b53cb036513b157cd60aea91433f9ffc76ac3",
+    "card-02.jpg": "0dd27777847e3460d65c2275ee1eccc5e3c80b95b2263cf6cab78ba946a57b4d",
+    "card-03.jpg": "dccebc30730bac99184acdf6e8c055991946aa384b0d54342a1080d774acce92",
+    "card-04.jpg": "56ba59b281a29081b953238ac20fc234f659cccb64a3a5275187ad77a6b3e289",
+    "card-05.jpg": "b50ac8da7b4f069334ef4bdc26ca75f283f9dbac4aafbb04d2ede38551f7a0c3",
+    "card-06.jpg": "b1e69cbf2166579b7c101c1ea6c8261f394c265f8130d9ed9057bb47deec5054",
+    "card-07.jpg": "cde87fd17c095a94a86e157e7fe2e98b03e605b1eda47ff3c5848398e38e09ca",
+    "card-08.jpg": "a2572c10babc032ae26400548542cc650106dbe74986ba8bc874e05d3e8433e9",
+    "card-09.jpg": "2a8e9e5a5a70c545b043282bc0d7cece871b9bc53bd644aa4498bb71e94b61ed",
+    "survival-wind-youtube-short.mp4": "7461b16877532b30f64c4c23b02027c82d74a7ad232d86190bb4d4b974b87aa7"
+  }
+}
