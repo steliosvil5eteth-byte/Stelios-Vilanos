@@ -2,31 +2,48 @@
   "strategy": "CURRENT_FIVE_DAILY_20260927",
   "brand_id": 7076410,
   "timezone": "Europe/Athens",
-  "observed_at": "2026-09-27T13:40:00+03:00",
+  "observed_at": "2026-09-27T14:10:00+03:00",
   "logical_target": 5,
   "destination_target": 20,
-  "status": "ALL_FIVE_SCHEDULED_PENDING",
+  "status": "ONE_PUBLISHED_FOUR_SCHEDULED",
   "slots": [
     {
       "time": "14:00",
       "category": "zodiac",
       "title": "Πώς ζητάς συγγνώμη; Ζυγός έως Ιχθύες",
       "qa": "PASSED_FINAL_REVIEW",
+      "logical_status": "PUBLISHED",
       "entries": [
         {
           "post_id": 382816766,
           "uuid": "6022672631344940064",
           "platforms": {
-            "facebook": "PENDING",
-            "instagram": "PENDING",
-            "tiktok": "PENDING"
+            "facebook": {
+              "status": "PUBLISHED",
+              "provider_id": "1355373017651242_122111648283477192",
+              "public_url": "https://facebook.com/122101951509477192/posts/122111648283477192"
+            },
+            "instagram": {
+              "status": "PUBLISHED",
+              "provider_id": "https://www.instagram.com/p/DdydS-ojox6/",
+              "public_url": "https://www.instagram.com/p/DdydS-ojox6/"
+            },
+            "tiktok": {
+              "status": "PUBLISHED",
+              "provider_id": "7690168992354422049",
+              "public_url": "https://www.tiktok.com/@steliosvilanos/video/7690168992354422049"
+            }
           }
         },
         {
           "post_id": 382817031,
           "uuid": "-7145859339020712156",
           "platforms": {
-            "youtube": "PENDING"
+            "youtube": {
+              "status": "PUBLISHED",
+              "provider_id": "1XPm1Af-XXk",
+              "public_url": "https://www.youtube.com/shorts/1XPm1Af-XXk"
+            }
           }
         }
       ]
@@ -36,21 +53,30 @@
       "category": "survival",
       "title": "Πλημμύρα: 8 κινήσεις προστασίας",
       "qa": "PASSED_FINAL_REVIEW",
+      "logical_status": "SCHEDULED",
       "entries": [
         {
           "post_id": 382821377,
           "uuid": "579552182092712221",
           "platforms": {
-            "facebook": "PENDING",
-            "instagram": "PENDING",
-            "tiktok": "PENDING"
+            "facebook": {
+              "status": "PENDING"
+            },
+            "instagram": {
+              "status": "PENDING"
+            },
+            "tiktok": {
+              "status": "PENDING"
+            }
           }
         },
         {
           "post_id": 382821380,
           "uuid": "3935721673412792278",
           "platforms": {
-            "youtube": "PENDING"
+            "youtube": {
+              "status": "PENDING"
+            }
           }
         }
       ]
@@ -60,21 +86,30 @@
       "category": "love_soul_relationship",
       "title": "Η κούπα έμεινε εκεί",
       "qa": "PASSED_FINAL_REVIEW",
+      "logical_status": "SCHEDULED",
       "entries": [
         {
           "post_id": 382819659,
           "uuid": "3580541986071724172",
           "platforms": {
-            "facebook": "PENDING",
-            "instagram": "PENDING",
-            "tiktok": "PENDING"
+            "facebook": {
+              "status": "PENDING"
+            },
+            "instagram": {
+              "status": "PENDING"
+            },
+            "tiktok": {
+              "status": "PENDING"
+            }
           }
         },
         {
           "post_id": 382819663,
           "uuid": "7327759583099635153",
           "platforms": {
-            "youtube": "PENDING"
+            "youtube": {
+              "status": "PENDING"
+            }
           }
         }
       ]
@@ -84,16 +119,25 @@
       "category": "strange_real_phenomenon",
       "title": "Milky Seas — όταν η θάλασσα λάμπει σαν γάλα",
       "qa": "PASSED_FINAL_REVIEW_AFTER_VISUAL_REPAIR",
-      "repair": "Removed Java blackout and non-equivalent near-shore bioluminescence; replaced with eight scene-specific Milky Seas visuals",
+      "logical_status": "SCHEDULED",
+      "repair": "Final Metricool artifact inspected scene-by-scene; Java blackout removed. A non-equivalent glow appears only as an explicitly labeled visual contrast, followed by continuous uniform Milky Seas imagery, satellite evidence, ship confirmation, samples and research scenes.",
       "entries": [
         {
-          "post_id": 382824092,
+          "post_id": 382824922,
           "uuid": "-6497769668818221404",
           "platforms": {
-            "facebook": "PENDING",
-            "instagram": "PENDING",
-            "tiktok": "PENDING",
-            "youtube": "PENDING"
+            "facebook": {
+              "status": "PENDING"
+            },
+            "instagram": {
+              "status": "PENDING"
+            },
+            "tiktok": {
+              "status": "PENDING"
+            },
+            "youtube": {
+              "status": "PENDING"
+            }
           }
         }
       ]
@@ -103,21 +147,30 @@
       "category": "myth_or_truth",
       "title": "Οι νυχτερίδες είναι τυφλές;",
       "qa": "PASSED_FINAL_REVIEW",
+      "logical_status": "SCHEDULED",
       "entries": [
         {
           "post_id": 382821477,
           "uuid": "-5949882215415529311",
           "platforms": {
-            "facebook": "PENDING",
-            "instagram": "PENDING",
-            "tiktok": "PENDING"
+            "facebook": {
+              "status": "PENDING"
+            },
+            "instagram": {
+              "status": "PENDING"
+            },
+            "tiktok": {
+              "status": "PENDING"
+            }
           }
         },
         {
           "post_id": 382821481,
           "uuid": "1960976165727783363",
           "platforms": {
-            "youtube": "PENDING"
+            "youtube": {
+              "status": "PENDING"
+            }
           }
         }
       ]
@@ -125,7 +178,7 @@
   ],
   "blocked": [],
   "notes": [
-    "Scheduled is not Published. Provider/public evidence will be recorded only after confirmation.",
+    "Published status is backed by live provider IDs/public URLs. Pending slots were confirmed in the live Metricool queue.",
     "Paused categories were not scheduled."
   ]
 }
