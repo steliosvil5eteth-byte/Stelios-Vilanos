@@ -280,7 +280,7 @@
       "slot": "09:00",
       "category": "survival",
       "title": "Θυελλώδεις άνεμοι: προετοιμασία και προστασία",
-      "status": "SCRIPT_READY",
+      "status": "IN_PRODUCTION",
       "publish_ready": false,
       "metricool_post_ids": [],
       "script_cards": [
@@ -323,7 +323,9 @@
       ],
       "sources": [
         "https://civilprotection.gov.gr/odigies-prostasias/thyellodeis-anemoi"
-      ]
+      ],
+      "production_owner": "automation-current-five-20260927-1534",
+      "production_lease_until": "2026-09-27T18:00:00+03:00"
     },
     {
       "id": "2026-09-30-zodiac",
@@ -331,7 +333,7 @@
       "slot": "11:00",
       "category": "zodiac",
       "title": "Ποια μικρή χαρά σου αλλάζει τη μέρα; Κριός–Παρθένος",
-      "status": "SCRIPT_READY",
+      "status": "IN_PRODUCTION",
       "publish_ready": false,
       "metricool_post_ids": [],
       "script_cards": [
@@ -360,7 +362,9 @@
           "Να τελειώνεις κάτι μικρό που είχες αφήσει στη μέση."
         ]
       ],
-      "disclosure": "Συμβολικά πορτρέτα • Ψυχαγωγία • Εικόνες AI"
+      "disclosure": "Συμβολικά πορτρέτα • Ψυχαγωγία • Εικόνες AI",
+      "production_owner": "automation-current-five-20260927-1534",
+      "production_lease_until": "2026-09-27T18:00:00+03:00"
     },
     {
       "id": "2026-09-30-love_soul_relationship",
@@ -368,7 +372,7 @@
       "slot": "15:00",
       "category": "love_soul_relationship",
       "title": "Το άδειο κάδρο",
-      "status": "SCRIPT_READY",
+      "status": "IN_PRODUCTION",
       "publish_ready": false,
       "metricool_post_ids": [],
       "script_cards": [
@@ -392,7 +396,9 @@
           "ΤΟ ΚΑΔΡΟ ΔΕΝ ΠΕΡΙΜΕΝΕ ΜΙΑ ΤΕΛΕΙΑ ΦΩΤΟΓΡΑΦΙΑ",
           "Περίμενε μια στιγμή που θα έφτιαχναν μαζί."
         ]
-      ]
+      ],
+      "production_owner": "automation-current-five-20260927-1534",
+      "production_lease_until": "2026-09-27T18:00:00+03:00"
     },
     {
       "id": "2026-09-30-strange_real_phenomenon",
@@ -400,7 +406,7 @@
       "slot": "17:00",
       "category": "strange_real_phenomenon",
       "title": "Οι πέτρες που κινούνται στην Κοιλάδα του Θανάτου",
-      "status": "SCRIPT_READY",
+      "status": "IN_PRODUCTION",
       "publish_ready": false,
       "metricool_post_ids": [],
       "script": "Πέτρες που αφήνουν διαδρομές πίσω τους, χωρίς να τις σπρώχνει κανείς. Στην Κοιλάδα του Θανάτου, μια επίπεδη λεκάνη με ξεραμένη λάσπη φιλοξενεί ένα θέαμα που προβλημάτιζε τους ερευνητές για δεκαετίες. Οι πέτρες έμεναν ακίνητες, αλλά τα ίχνη τους έδειχναν ότι κάποτε είχαν ταξιδέψει.\nΓια να καταλάβουν τι συμβαίνει, επιστήμονες εγκατέστησαν μετεωρολογικό σταθμό, κάμερες και ειδικούς δέκτες εντοπισμού σε πέτρες. Δεν αρκούσε μια φωτογραφία του αποτελέσματος. Έπρεπε να καταγράψουν την ίδια την κίνηση και τις συνθήκες που τη συνόδευαν.\nΗ ευκαιρία ήρθε τον Δεκέμβριο του δύο χιλιάδες δεκατρία. Στη λεκάνη είχε συγκεντρωθεί λίγο νερό. Τις κρύες νύχτες, η επιφάνειά του πάγωνε και δημιουργούσε ένα λεπτό, εύθραυστο στρώμα. Όταν ο ήλιος ανέβαινε, ο πάγος άρχιζε να λιώνει και να σπάει σε μεγάλες πλάκες.\nΈνας σχετικά ήπιος άνεμος μπορούσε τότε να μετακινήσει αυτές τις πλάκες πάνω στο ρηχό νερό. Ο πάγος έσπρωχνε τις πέτρες, ενώ εκείνες χάραζαν τη μαλακή λάσπη στον πυθμένα. Αργότερα, όταν το νερό και ο πάγος χάνονταν, έμεναν μόνο οι πέτρες και οι μυστηριώδεις γραμμές.\nΣτις παρατηρήσεις, ο πάγος είχε πάχος μόλις λίγων χιλιοστών. Η κίνηση ήταν αργή, της τάξης λίγων μέτρων το λεπτό, και μπορούσε να είναι δύσκολο να γίνει αντιληπτή από απόσταση. Δεν χρειαζόταν να σηκωθούν οι πέτρες στον αέρα ή να φυσά ένας τυφώνας.\nΗ μελέτη δημοσιεύτηκε το δύο χιλιάδες δεκατέσσερα και κατέγραψε έναν συγκεκριμένο μηχανισμό. Οι ίδιοι οι ερευνητές τόνισαν ότι δεν είχαν δει τις μεγαλύτερες πέτρες να κινούνται. Η επιστημονική εξήγηση γίνεται πιο αξιόπιστη όταν λέει καθαρά και τι δεν έχει ακόμη παρατηρηθεί.\nΈτσι, σε έναν τόπο διάσημο για τη ζέστη του, ο πρωταγωνιστής ήταν ο πάγος. Λίγο νερό, κρύες νύχτες και άνεμος συνεργάστηκαν για να αφήσουν ένα εντυπωσιακό ίχνος. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
@@ -408,7 +414,9 @@
         "https://www.nps.gov/deva/learn/news/racetrack.htm",
         "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0105948"
       ],
-      "source_manifest": "media_jobs/stones_20260930.json"
+      "source_manifest": "media_jobs/stones_20260930.json",
+      "production_owner": "automation-current-five-20260927-1534",
+      "production_lease_until": "2026-09-27T18:00:00+03:00"
     },
     {
       "id": "2026-09-30-myth_or_truth",
@@ -416,7 +424,7 @@
       "slot": "20:00",
       "category": "myth_or_truth",
       "title": "Η στρουθοκάμηλος κρύβει το κεφάλι στην άμμο;",
-      "status": "SCRIPT_READY",
+      "status": "IN_PRODUCTION",
       "publish_ready": false,
       "metricool_post_ids": [],
       "script_cards": [
@@ -439,7 +447,9 @@
       ],
       "sources": [
         "https://animals.sandiegozoo.org/animals/ostrich"
-      ]
+      ],
+      "production_owner": "automation-current-five-20260927-1534",
+      "production_lease_until": "2026-09-27T18:00:00+03:00"
     },
     {
       "id": "2026-10-01-survival",
@@ -936,5 +946,11 @@
   ],
   "minimum_ready_days": 2,
   "target_ready_days": 3,
-  "planning_horizon_days": 7
+  "planning_horizon_days": 7,
+  "active_production_lease": {
+    "date": "2026-09-30",
+    "owner": "automation-current-five-20260927-1534",
+    "until": "2026-09-27T18:00:00+03:00",
+    "manifest": "media_jobs/cards_20260930.json"
+  }
 }
