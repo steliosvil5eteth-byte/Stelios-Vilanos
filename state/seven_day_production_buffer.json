@@ -335,7 +335,8 @@
       ],
       "media_commit": "af93312882e202d70225a46800d79fdce645ceb7",
       "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/af93312882e202d70225a46800d79fdce645ceb7/jobs/five-20260930/survival-wind/survival-wind-youtube-short.mp4",
-      "qa_path": "jobs/five-20260930/survival-wind/qa.json"
+      "qa_path": "jobs/five-20260930/survival-wind/qa.json",
+      "notion_page_id": "3e8f2345-b318-8139-8589-e9a2d193a0ab"
     },
     {
       "id": "2026-09-30-zodiac",
