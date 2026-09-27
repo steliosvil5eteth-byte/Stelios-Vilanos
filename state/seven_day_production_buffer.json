@@ -280,9 +280,12 @@
       "slot": "09:00",
       "category": "survival",
       "title": "Θυελλώδεις άνεμοι: προετοιμασία και προστασία",
-      "status": "IN_PRODUCTION",
-      "publish_ready": false,
-      "metricool_post_ids": [],
+      "status": "SCHEDULED",
+      "publish_ready": true,
+      "metricool_post_ids": [
+        382862792,
+        382863015
+      ],
       "script_cards": [
         [
           "ΘΥΕΛΛΩΔΕΙΣ ΑΝΕΜΟΙ",
@@ -325,7 +328,14 @@
         "https://civilprotection.gov.gr/odigies-prostasias/thyellodeis-anemoi"
       ],
       "production_owner": "automation-current-five-20260927-1534",
-      "production_lease_until": "2026-09-27T18:00:00+03:00"
+      "production_lease_until": null,
+      "metricool_uuids": [
+        "7521044579969354051",
+        "-9023996980111258817"
+      ],
+      "media_commit": "af93312882e202d70225a46800d79fdce645ceb7",
+      "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/af93312882e202d70225a46800d79fdce645ceb7/jobs/five-20260930/survival-wind/survival-wind-youtube-short.mp4",
+      "qa_path": "jobs/five-20260930/survival-wind/qa.json"
     },
     {
       "id": "2026-09-30-zodiac",
