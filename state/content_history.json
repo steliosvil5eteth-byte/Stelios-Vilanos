@@ -2012,6 +2012,62 @@
           "source_post_id": 382821481
         }
       }
+    },
+    {
+      "job_id": "five-20260927/milky",
+      "date": "2026-09-27",
+      "theme": "strange_real_phenomenon",
+      "title": "Milky Seas — Η θάλασσα που λάμπει",
+      "caption": "Μια θάλασσα που λάμπει συνεχώς μέσα στη νύχτα. Τα milky seas δεν είναι θρύλος: δορυφορικές καταγραφές και φωτογραφίες πληρώματος επιβεβαιώνουν το φαινόμενο, ενώ ο ακριβής μηχανισμός ακόμη ερευνάται.\nΘα ήθελες να το δεις από ένα καράβι;\nΠηγές: Miller et al. (2021), Scientific Reports, doi:10.1038/s41598-021-94823-z · Miller (2022), PNAS, doi:10.1073/pnas.2207612119.\nFigures 1–2: S. D. Miller, PNAS 2022, CC BY 4.0 — https://creativecommons.org/licenses/by/4.0/ . Φωτογραφίες Ganesha: Coraline Bourdon / Leon Schommer. Τα σχήματα προβάλλονται σε νέα διάταξη· η δεξιά φωτογραφία έχει τη χρωματική προσαρμογή της δημοσίευσης. Οι υπόλοιπες εικόνες είναι ενδεικτικές αναπαραστάσεις AI και επισημαίνονται. Συνθετική αφήγηση Νέστορας.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#MilkySeas #ΦυσικάΦαινόμενα #Θάλασσα #Επιστήμη #Βιοφωταύγεια",
+      "fingerprint": "five-20260927-milky-seas-java-2019",
+      "status": "scheduled",
+      "scheduled_time": "2026-09-27T20:00:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "382824922",
+      "metricool_uuid": "-6497769668818221404",
+      "notion_page_id": "3e8f2345-b318-8141-87a6-f0db0fece5c9",
+      "media_commit": "95eb6239123dbf7c5f1b98aba88888775d8298fa",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-7765102974990478304.mp4",
+      "duration_seconds": 103.734,
+      "quality_check": {
+        "final_scenes_visually_reviewed": true,
+        "final_cta_reviewed": true,
+        "full_ffmpeg_decode_passed": true,
+        "independent_audio_transcription_reviewed": true,
+        "voice": "el-GR-NestorasNeural",
+        "background_music": false,
+        "burned_subtitles": true,
+        "source_figures_license": "CC BY 4.0",
+        "ai_reconstructions_labelled": true
+      },
+      "platform_status": {
+        "facebook": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382824922
+        },
+        "instagram": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382824922
+        },
+        "tiktok": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382824922
+        },
+        "youtube": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382824922
+        }
+      }
     }
   ]
 }
