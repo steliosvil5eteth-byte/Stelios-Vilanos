@@ -1,0 +1,210 @@
+{
+  "today": "2026-09-27",
+  "timezone": "Europe/Athens",
+  "minimum_days": 2,
+  "target_days": 3,
+  "consecutive_complete_days": 2,
+  "days": [
+    {
+      "date": "2026-09-28",
+      "complete": true,
+      "slots": [
+        {
+          "time": "09:00",
+          "category": "survival",
+          "complete": true,
+          "post_ids": [
+            382829069,
+            382829077
+          ],
+          "missing": [],
+          "duplicate_networks": [],
+          "unexpected_status": []
+        },
+        {
+          "time": "11:00",
+          "category": "zodiac",
+          "complete": true,
+          "post_ids": [
+            382831058,
+            382831065
+          ],
+          "missing": [],
+          "duplicate_networks": [],
+          "unexpected_status": []
+        },
+        {
+          "time": "15:00",
+          "category": "love_soul_relationship",
+          "complete": true,
+          "post_ids": [
+            382832148,
+            382832155
+          ],
+          "missing": [],
+          "duplicate_networks": [],
+          "unexpected_status": []
+        },
+        {
+          "time": "17:00",
+          "category": "strange_real_phenomenon",
+          "complete": true,
+          "post_ids": [
+            382829688
+          ],
+          "missing": [],
+          "duplicate_networks": [],
+          "unexpected_status": []
+        },
+        {
+          "time": "20:00",
+          "category": "myth_or_truth",
+          "complete": true,
+          "post_ids": [
+            382833554,
+            382833563
+          ],
+          "missing": [],
+          "duplicate_networks": [],
+          "unexpected_status": []
+        }
+      ]
+    },
+    {
+      "date": "2026-09-29",
+      "complete": true,
+      "slots": [
+        {
+          "time": "09:00",
+          "category": "survival",
+          "complete": true,
+          "post_ids": [
+            382842295,
+            382842305
+          ],
+          "missing": [],
+          "duplicate_networks": [],
+          "unexpected_status": []
+        },
+        {
+          "time": "11:00",
+          "category": "zodiac",
+          "complete": true,
+          "post_ids": [
+            382837560,
+            382837567
+          ],
+          "missing": [],
+          "duplicate_networks": [],
+          "unexpected_status": []
+        },
+        {
+          "time": "15:00",
+          "category": "love_soul_relationship",
+          "complete": true,
+          "post_ids": [
+            382838505,
+            382838515
+          ],
+          "missing": [],
+          "duplicate_networks": [],
+          "unexpected_status": []
+        },
+        {
+          "time": "17:00",
+          "category": "strange_real_phenomenon",
+          "complete": true,
+          "post_ids": [
+            382840452
+          ],
+          "missing": [],
+          "duplicate_networks": [],
+          "unexpected_status": []
+        },
+        {
+          "time": "20:00",
+          "category": "myth_or_truth",
+          "complete": true,
+          "post_ids": [
+            382839901,
+            382839911
+          ],
+          "missing": [],
+          "duplicate_networks": [],
+          "unexpected_status": []
+        }
+      ]
+    },
+    {
+      "date": "2026-09-30",
+      "complete": false,
+      "slots": [
+        {
+          "time": "09:00",
+          "category": "survival",
+          "complete": true,
+          "post_ids": [
+            382862792,
+            382863015
+          ],
+          "missing": [],
+          "duplicate_networks": [],
+          "unexpected_status": []
+        },
+        {
+          "time": "11:00",
+          "category": "zodiac",
+          "complete": true,
+          "post_ids": [
+            382867583,
+            382867702
+          ],
+          "missing": [],
+          "duplicate_networks": [],
+          "unexpected_status": []
+        },
+        {
+          "time": "15:00",
+          "category": "love_soul_relationship",
+          "complete": true,
+          "post_ids": [
+            382874914,
+            382875431
+          ],
+          "missing": [],
+          "duplicate_networks": [],
+          "unexpected_status": []
+        },
+        {
+          "time": "17:00",
+          "category": "strange_real_phenomenon",
+          "complete": false,
+          "post_ids": [],
+          "missing": [
+            "facebook",
+            "instagram",
+            "tiktok",
+            "youtube"
+          ],
+          "duplicate_networks": [],
+          "unexpected_status": []
+        },
+        {
+          "time": "20:00",
+          "category": "myth_or_truth",
+          "complete": true,
+          "post_ids": [
+            382879170,
+            382879296
+          ],
+          "missing": [],
+          "duplicate_networks": [],
+          "unexpected_status": []
+        }
+      ]
+    }
+  ],
+  "minimum_met": true,
+  "target_met": false,
+  "note": "Scheduled coverage only. Final media QA and published reconciliation remain separate gates."
+}
