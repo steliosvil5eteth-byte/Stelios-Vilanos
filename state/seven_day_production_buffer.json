@@ -14,9 +14,13 @@
       "slot": "09:00",
       "category": "survival",
       "title": "Σεισμός: 8 προετοιμασίες πριν συμβεί",
-      "status": "IN_PRODUCTION",
-      "publish_ready": false,
-      "metricool_post_ids": []
+      "status": "SCHEDULED",
+      "publish_ready": true,
+      "metricool_post_ids": [
+        382829069,
+        382829077
+      ],
+      "media_commit": "3284ccaa73e539d34670c28a850250f5fc40bfec"
     },
     {
       "id": "2026-09-28-zodiac",
@@ -44,9 +48,12 @@
       "slot": "17:00",
       "category": "strange_real_phenomenon",
       "title": "Φακοειδή νέφη: οι φακοί πάνω από τα βουνά",
-      "status": "IN_PRODUCTION",
-      "publish_ready": false,
-      "metricool_post_ids": []
+      "status": "SCHEDULED",
+      "publish_ready": true,
+      "metricool_post_ids": [
+        382829688
+      ],
+      "media_commit": "ef3a79b03a7e762583edcec8d0d6d5aaaedc3886"
     },
     {
       "id": "2026-09-28-myth_or_truth",
@@ -718,5 +725,14 @@
   ],
   "continue_daily_until": "2050-12-31",
   "rolling_buffer_days": 7,
-  "long_term_authorization": "User requested continuing the same five daily series until 2050; fill actual queue progressively after QA, never claim all years are produced."
+  "long_term_authorization": "User requested continuing the same five daily series until 2050; fill actual queue progressively after QA, never claim all years are produced.",
+  "suppressed_duplicates": [
+    {
+      "metricool_uuid": "4939033458929453922",
+      "metricool_id": 382830070,
+      "draft": true,
+      "autoPublish": false,
+      "reason": "Concurrent alternate earthquake post for already filled 28 Sep 09 slot. Preserve draft; do not re-enable."
+    }
+  ]
 }
