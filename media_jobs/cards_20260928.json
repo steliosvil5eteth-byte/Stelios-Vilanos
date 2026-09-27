@@ -1,8 +1,8 @@
 {
-  "status": "IN_PRODUCTION",
+  "status": "COMPLETED_SCHEDULED",
   "production_owner": "interactive-session-20260927",
-  "production_lease_until": "2026-09-27T16:00:00+03:00",
-  "instruction": "Do not produce or schedule duplicate 28 Sep packs while this lease is active. Reconcile actual Metricool queue and final review report first.",
+  "production_lease_until": null,
+  "instruction": "All five 28 Sep posts scheduled after QA. Do not regenerate. Read state/seven_day_production_buffer.json for IDs.",
   "date": "2026-09-28",
   "packs": {
     "survival28": {
