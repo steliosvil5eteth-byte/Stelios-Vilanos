@@ -1847,7 +1847,7 @@
       "hook": "Πλημμύρα: 8 κινήσεις προστασίας",
       "caption": "Πλημμύρα: 8 κινήσεις προστασίας πριν, κατά τη διάρκεια και μετά. Αποθήκευσέ το για να το έχεις εύκαιρο.\nΑκολουθούμε πάντα τις οδηγίες των αρμόδιων αρχών.\nΠηγή: Γενική Γραμματεία Πολιτικής Προστασίας — https://civilprotection.gov.gr/odigies-prostasias/plimmyres\nΟι εικόνες δημιουργήθηκαν με AI για εικονογράφηση.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Επιβίωση #Πλημμύρα #ΠολιτικήΠροστασία #Ασφάλεια #Ιστορίες",
       "fingerprint": "five-20260927-survival",
-      "status": "scheduled",
+      "status": "published",
       "scheduled_time": "2026-09-27T16:00:00+03:00",
       "platforms": [
         "facebook",
@@ -1876,26 +1876,31 @@
       },
       "platform_status": {
         "facebook": {
-          "status": "SCHEDULED",
-          "public_url": null,
+          "status": "PUBLISHED",
+          "provider_id": "1355373017651242_122111705331477192",
+          "public_url": "https://facebook.com/122101951509477192/posts/122111705331477192",
           "source_post_id": 382821377
         },
         "instagram": {
-          "status": "SCHEDULED",
-          "public_url": null,
+          "status": "PUBLISHED",
+          "provider_id": "https://www.instagram.com/p/DdyrIVwFT76/",
+          "public_url": "https://www.instagram.com/p/DdyrIVwFT76/",
           "source_post_id": 382821377
         },
         "tiktok": {
-          "status": "SCHEDULED",
-          "public_url": null,
+          "status": "PUBLISHED",
+          "provider_id": "7690200118095547681",
+          "public_url": "https://www.tiktok.com/@steliosvilanos/video/7690200118095547681",
           "source_post_id": 382821377
         },
         "youtube": {
-          "status": "SCHEDULED",
-          "public_url": null,
+          "status": "PUBLISHED",
+          "provider_id": "wuOpIg6HWJM",
+          "public_url": "https://www.youtube.com/shorts/wuOpIg6HWJM",
           "source_post_id": 382821380
         }
-      }
+      },
+      "published_checked_at": "2026-09-27T16:13:00+03:00"
     },
     {
       "job_id": "five-20260927/love",
