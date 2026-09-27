@@ -272,5 +272,7 @@
     }
   ],
   "publish_to_social": false,
-  "production_status": "AUTHORIZED_RENDER_PENDING_QA"
+  "production_status": "AUTHORIZED_RENDER_PENDING_QA",
+  "canonical_output_key": "message-series-20260927-batch1",
+  "retriggered_at": "2026-09-27T15:00:00+03:00"
 }
