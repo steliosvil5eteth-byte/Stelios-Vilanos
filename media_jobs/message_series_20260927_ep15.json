@@ -54,5 +54,6 @@
   ],
   "publish_to_social": false,
   "production_status": "AUTHORIZED_RENDER_RETRY_WESERV_SSL_ORIGIN",
-  "repair_note": "Third minimal repair: use the documented images.weserv.nl ssl: origin syntax, preserving the same verified source images and licenses."
+  "repair_note": "Third minimal repair: use the documented images.weserv.nl ssl: origin syntax, preserving the same verified source images and licenses.",
+  "qa_export_retrigger_at": "2026-09-27T15:39:00+03:00"
 }
