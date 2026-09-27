@@ -163,9 +163,12 @@
       "slot": "15:00",
       "category": "love_soul_relationship",
       "title": "Το σακάκι που δεν φόρεσε",
-      "status": "IN_PRODUCTION",
-      "publish_ready": false,
-      "metricool_post_ids": [],
+      "status": "SCHEDULED",
+      "publish_ready": true,
+      "metricool_post_ids": [
+        382838505,
+        382838515
+      ],
       "script_cards": [
         [
           "ΤΟ ΣΑΚΑΚΙ ΕΜΕΝΕ ΣΤΗ ΝΤΟΥΛΑΠΑ",
@@ -189,7 +192,14 @@
         ]
       ],
       "production_owner": "interactive-session-3147a767415a",
-      "production_lease_until": "2026-09-27T17:00:00+03:00"
+      "production_lease_until": null,
+      "metricool_uuids": [
+        "2265602157193482031",
+        "-547513606304741207"
+      ],
+      "media_commit": "d7e6be88e946f6ff80686eb650819e57dcf865e0",
+      "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/d7e6be88e946f6ff80686eb650819e57dcf865e0/jobs/five-20260929/love29/love-blazer.mp4",
+      "notion_page_id": "3e8f2345-b318-8190-8b38-f0eec23b28c1"
     },
     {
       "id": "2026-09-29-strange_real_phenomenon",
