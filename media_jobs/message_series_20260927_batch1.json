@@ -1,0 +1,276 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_FIVE_DAILY_20260927_EXTRA_MESSAGE_SERIES",
+  "local_date": "2026-09-27",
+  "require_photographic_visuals": true,
+  "authorization_basis": "Explicit user authorization 2026-09-27 to resume the 60-episode series from Episode 15 as extra same-day content, without replacing CURRENT_FIVE_DAILY.",
+  "purpose": "Render Episodes 15-22 of «Το μήνυμα που δεν έπρεπε να διαβάσει» as five-card photographic carousels plus vertical YouTube slideshows. Zero incremental cost. Production only; release requires exact visual QA and fresh live dedupe.",
+  "series": {
+    "title": "Το μήνυμα που δεν έπρεπε να διαβάσει",
+    "total_planned_episodes": 60,
+    "resume_from_episode": 15,
+    "previous_completed_through": 14,
+    "format_for_this_resume": "one logical carousel per episode, 5 ordered cards"
+  },
+  "jobs": [
+    {
+      "id": "message-series-ep15",
+      "expected_cards": 5,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "Ο ΑΝΤΡΑΣ ΠΟΥ ΕΙΠΕ «ΓΙΕ ΜΟΥ» — 1/5",
+          "text": "Ο Νίκος έμεινε ακίνητος. Ο ηλικιωμένος άντρας τον κοίταξε και επανέλαβε: «Γεια σου, γιε μου.» Ο Νίκος πίστεψε πως ήταν άλλη μία παγίδα.",
+          "source_query": "elderly man portrait photograph"
+        },
+        {
+          "title": "ΔΕΝ ΗΤΑΝ Ο ΠΑΤΕΡΑΣ ΠΟΥ ΗΞΕΡΕ — 2/5",
+          "text": "Ο Ανδρέας είπε κάτι που ανέτρεπε όλη του τη ζωή: «Ο άνθρωπος που σε μεγάλωσε ήταν πατέρας σου σε όλα — εκτός από το αίμα.»",
+          "source_query": "middle aged man shocked portrait photograph"
+        },
+        {
+          "title": "ΜΙΑ ΦΩΤΟΓΡΑΦΙΑ ΑΠΟ ΤΗΝ ΑΡΧΗ — 3/5",
+          "text": "Από έναν παλιό φάκελο έβγαλε φωτογραφία της μητέρας του Νίκου με ένα νεογέννητο. Δίπλα της στεκόταν ο Ανδρέας, πολύ νεότερος.",
+          "source_query": "mother newborn old family photograph"
+        },
+        {
+          "title": "«ΔΕΝ ΣΕ ΕΓΚΑΤΕΛΕΙΨΑ» — 4/5",
+          "text": "«Δεν έφυγα επειδή δεν σε ήθελα», είπε. «Με έβγαλαν από τη ζωή σου. Και για χρόνια πίστευα ότι ήταν ο μόνος τρόπος να μείνεις ασφαλής.»",
+          "source_query": "older man serious portrait photograph"
+        },
+        {
+          "title": "Η ΜΑΡΙΑ ΗΞΕΡΕ — 5/5",
+          "text": "Πριν ο Νίκος προλάβει να μιλήσει, η Μαρία ψιθύρισε: «Τον Ανδρέα τον είχα συναντήσει πριν από τον γάμο μας.» Ο Νίκος γύρισε και την κοίταξε.",
+          "source_query": "woman serious portrait photograph"
+        }
+      ]
+    },
+    {
+      "id": "message-series-ep16",
+      "expected_cards": 5,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΤΟ ΡΑΝΤΕΒΟΥ ΠΡΙΝ ΤΟΝ ΓΑΜΟ — 1/5",
+          "text": "«Πριν από τον γάμο μας;» ρώτησε ο Νίκος. Η Μαρία δεν προσπάθησε να το αρνηθεί. «Ναι. Και μου ζήτησε να μη σου πω τίποτα.»",
+          "source_query": "couple tense conversation photograph"
+        },
+        {
+          "title": "ΜΙΑ ΠΑΡΑΞΕΝΗ ΥΠΟΣΧΕΣΗ — 2/5",
+          "text": "Ο Ανδρέας της είχε πει μόνο: «Αν κάποτε αρχίσουν να τον ψάχνουν, μην τον αφήσεις μόνο.» Τότε η Μαρία δεν κατάλαβε τι εννοούσε.",
+          "source_query": "woman listening serious conversation photograph"
+        },
+        {
+          "title": "Ο ΦΑΚΕΛΟΣ ΠΟΥ ΚΡΑΤΗΣΕ — 3/5",
+          "text": "Η Μαρία έβγαλε από την τσάντα της έναν σφραγισμένο φάκελο. «Μου είπε να τον ανοίξω μόνο αν εμφανιστεί ο αδελφός σου.»",
+          "source_query": "sealed envelope on table photograph"
+        },
+        {
+          "title": "ΜΙΑ ΔΙΕΥΘΥΝΣΗ ΚΑΙ ΜΙΑ ΗΜΕΡΟΜΗΝΙΑ — 4/5",
+          "text": "Μέσα υπήρχαν μόνο δύο πράγματα: μια διεύθυνση και μια ημερομηνία δύο χρόνια πριν. Κανένα γράμμα. Καμία εξήγηση.",
+          "source_query": "handwritten address paper photograph"
+        },
+        {
+          "title": "ΤΟ ΣΠΙΤΙ ΤΟΥ ΑΔΕΛΦΟΥ ΤΟΥ — 5/5",
+          "text": "Ο Νίκος αναγνώρισε τη διεύθυνση αμέσως. Ήταν το σπίτι που είχε σφραγιστεί μετά τον «θάνατο» του αδελφού του.",
+          "source_query": "abandoned house exterior photograph"
+        }
+      ]
+    },
+    {
+      "id": "message-series-ep17",
+      "expected_cards": 5,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΤΟ ΣΠΙΤΙ ΠΟΥ ΕΠΡΕΠΕ ΝΑ ΕΙΝΑΙ ΑΔΕΙΟ — 1/5",
+          "text": "Η πόρτα άνοιξε με το κλειδί του φακέλου. Μέσα δεν υπήρχε σκόνη παντού. Κάποιος είχε περάσει από εκεί πρόσφατα.",
+          "source_query": "old house interior photograph"
+        },
+        {
+          "title": "ΚΑΠΟΙΟΣ ΕΜΕΝΕ ΕΚΕΙ — 2/5",
+          "text": "Στον νεροχύτη υπήρχε ένα καθαρό ποτήρι. Στο τραπέζι, ένα ανοιγμένο βιβλίο. Το σπίτι δεν ήταν εγκαταλελειμμένο.",
+          "source_query": "glass on kitchen table photograph"
+        },
+        {
+          "title": "Η ΦΩΤΟΓΡΑΦΙΑ ΣΤΟ ΣΥΡΤΑΡΙ — 3/5",
+          "text": "Σε ένα συρτάρι βρήκαν μια πρόσφατη φωτογραφία των δύο αδελφών από παλιά, τοποθετημένη δίπλα σε καινούριο κλειδί.",
+          "source_query": "old brothers family photograph"
+        },
+        {
+          "title": "«ΑΡΓΗΣΕΣ» — 4/5",
+          "text": "Ένα πάτωμα έτριξε στον επάνω όροφο. Ο Νίκος σήκωσε το βλέμμα. Μια γνώριμη φωνή ακούστηκε: «Άργησες.»",
+          "source_query": "dark staircase house photograph"
+        },
+        {
+          "title": "Ο ΛΟΓΟΣ ΤΟΥ «ΘΑΝΑΤΟΥ» — 5/5",
+          "text": "Ο αδελφός του κατέβηκε αργά. «Ο θάνατός μου ήταν η μόνη λύση που βρήκα τότε για να σε κρατήσω ζωντανό.»",
+          "source_query": "two adult brothers reunion photograph"
+        }
+      ]
+    },
+    {
+      "id": "message-series-ep18",
+      "expected_cards": 5,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΓΙΑΤΙ ΕΠΡΕΠΕ ΝΑ ΠΕΘΑΝΕΙ — 1/5",
+          "text": "Ο Νίκος ζήτησε μία καθαρή απάντηση. Ο αδελφός του είπε πως είχε βρει έγγραφα που δεν έπρεπε ποτέ να δει.",
+          "source_query": "man reading documents photograph"
+        },
+        {
+          "title": "ΤΑ ΧΑΡΤΙΑ ΤΗΣ ΤΑΥΤΟΤΗΤΑΣ — 2/5",
+          "text": "Στα έγγραφα υπήρχαν αλλαγές ονομάτων, ημερομηνίες και υπογραφές. Κάποιος είχε ξαναγράψει κομμάτια της οικογενειακής τους ιστορίας.",
+          "source_query": "official papers documents desk photograph"
+        },
+        {
+          "title": "Η ΕΞΑΦΑΝΙΣΗ ΣΤΗΘΗΚΕ — 3/5",
+          "text": "Όταν κατάλαβαν ότι είχε δει τα χαρτιά, κάποιος με πρόσβαση στα αρχεία τον βοήθησε να εξαφανιστεί και να θεωρηθεί νεκρός.",
+          "source_query": "man leaving at night photograph"
+        },
+        {
+          "title": "«ΟΛΟΙ ΞΕΡΑΤΕ;» — 4/5",
+          "text": "Ο Νίκος ξέσπασε: «Δηλαδή όλοι ξέρατε εκτός από μένα;» Ο αδελφός του κούνησε το κεφάλι. «Όχι όλοι.»",
+          "source_query": "angry man argument photograph"
+        },
+        {
+          "title": "Η ΜΗΤΕΡΑ ΤΟΥΣ ΔΕΝ ΗΞΕΡΕ — 5/5",
+          "text": "«Η μητέρα μας πίστεψε πραγματικά ότι πέθανα», είπε. «Την άφησαν να πενθεί για χρόνια. Δεν της είπαμε ποτέ την αλήθεια.»",
+          "source_query": "older woman sad portrait photograph"
+        }
+      ]
+    },
+    {
+      "id": "message-series-ep19",
+      "expected_cards": 5,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "Η ΜΗΤΕΡΑ ΤΟΥΣ ΔΕΝ ΗΞΕΡΕ — 1/5",
+          "text": "Ο Νίκος τηλεφώνησε στη μητέρα του. Δεν της είπε τίποτα. Μόνο: «Θέλω να έρθεις. Είναι σημαντικό.»",
+          "source_query": "man phone call photograph"
+        },
+        {
+          "title": "Η ΣΤΙΓΜΗ ΠΟΥ ΤΟΝ ΕΙΔΕ — 2/5",
+          "text": "Όταν μπήκε στο σπίτι και είδε τον γιο που είχε θάψει στη μνήμη της, σταμάτησε στην πόρτα. Δεν βγήκε ούτε λέξη.",
+          "source_query": "older woman shocked doorway photograph"
+        },
+        {
+          "title": "ΧΡΟΝΙΑ ΠΕΝΘΟΥΣ — 3/5",
+          "text": "Τον άγγιξε στο πρόσωπο σαν να φοβόταν ότι θα εξαφανιστεί. «Μου είπαν ότι δεν μπορούσα να δω το σώμα», ψιθύρισε.",
+          "source_query": "mother adult son embrace photograph"
+        },
+        {
+          "title": "Η ΥΠΟΣΧΕΣΗ ΠΟΥ ΤΗΣ ΠΗΡΑΝ — 4/5",
+          "text": "Είχε δεχτεί να μην ξανανοίξει ποτέ την υπόθεση. Ο άντρας που μεγάλωσε τον Νίκο τής είχε πει ότι έτσι προστάτευε την οικογένεια.",
+          "source_query": "older woman holding letter photograph"
+        },
+        {
+          "title": "Ο ΑΝΔΡΕΑΣ ΔΕΝ ΤΑ ΕΙΠΕ ΟΛΑ — 5/5",
+          "text": "Η μητέρα τους κοίταξε τον Ανδρέα. «Είσαι ο πατέρας του Νίκου. Αλλά μην κάνεις πως του είπες όλη την αλήθεια.»",
+          "source_query": "older woman confronting older man photograph"
+        }
+      ]
+    },
+    {
+      "id": "message-series-ep20",
+      "expected_cards": 5,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "Η ΜΙΣΗ ΑΛΗΘΕΙΑ — 1/5",
+          "text": "Ο Ανδρέας δεν αρνήθηκε την πατρότητα. «Ναι, είμαι ο βιολογικός σου πατέρας», είπε. «Αλλά έφυγα πριν με αναγκάσουν.»",
+          "source_query": "older man speaking serious photograph"
+        },
+        {
+          "title": "ΔΕΝ ΗΤΑΝ ΜΟΝΟ ΘΥΜΑ — 2/5",
+          "text": "Η μητέρα του Νίκου τον διέκοψε: «Στην αρχή έφυγες επειδή φοβήθηκες. Μόνο αργότερα άρχισες να προσπαθείς να διορθώσεις τα πράγματα.»",
+          "source_query": "older couple tense conversation photograph"
+        },
+        {
+          "title": "Ο ΑΝΘΡΩΠΟΣ ΠΟΥ ΤΟΝ ΜΕΓΑΛΩΣΕ — 3/5",
+          "text": "Ο άλλος άντρας είχε μείνει. Τον μεγάλωσε, τον προστάτεψε και κράτησε ένα μυστικό που δεν ήταν δικό του.",
+          "source_query": "father son family photograph"
+        },
+        {
+          "title": "Ο ΑΝΔΡΕΑΣ ΕΠΕΣΤΡΕΨΕ ΚΡΥΦΑ — 4/5",
+          "text": "Χρόνια αργότερα ο Ανδρέας επέστρεψε χωρίς να εμφανιστεί δημόσια. Έβλεπε τη Μαρία, τον αδελφό και τον άνθρωπο που μεγάλωσε τον Νίκο.",
+          "source_query": "older man street night photograph"
+        },
+        {
+          "title": "Η ΝΥΧΤΑ ΤΟΥ «ΘΑΝΑΤΟΥ» — 5/5",
+          "text": "Η μητέρα του Νίκου πήρε ανάσα. «Και το βράδυ που ο αδελφός σου “πέθανε”, ο Ανδρέας ήταν εκεί.»",
+          "source_query": "night road car photograph"
+        }
+      ]
+    },
+    {
+      "id": "message-series-ep21",
+      "expected_cards": 5,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "Η ΝΥΧΤΑ ΤΟΥ «ΘΑΝΑΤΟΥ» — 1/5",
+          "text": "Ο Νίκος γύρισε στον Ανδρέα. «Ήσουν εκεί;» Εκείνος έγνεψε. Για πρώτη φορά δεν προσπάθησε να δικαιολογηθεί.",
+          "source_query": "older man confession portrait photograph"
+        },
+        {
+          "title": "ΤΟ ΣΧΕΔΙΟ ΗΤΑΝ ΝΑ ΕΞΑΦΑΝΙΣΤΕΙ — 2/5",
+          "text": "Το αρχικό σχέδιο ήταν να φύγει ο αδελφός του και να αφήσει πίσω στοιχεία που θα έπειθαν ότι δεν θα επέστρεφε ποτέ.",
+          "source_query": "man suitcase leaving photograph"
+        },
+        {
+          "title": "ΚΑΤΙ ΠΗΓΕ ΣΤΡΑΒΑ — 3/5",
+          "text": "Στον δρόμο εμφανίστηκε δεύτερο αυτοκίνητο. Κάποιος τούς ακολουθούσε. Από εκείνη τη στιγμή, το σχέδιο έγινε πραγματικός κίνδυνος.",
+          "source_query": "two cars road night photograph"
+        },
+        {
+          "title": "Ο ΑΝΔΡΕΑΣ ΕΧΑΣΕ ΤΟΝ ΕΛΕΓΧΟ — 4/5",
+          "text": "«Δεν ήξερα ποιος ήταν πίσω μας», είπε. «Το μόνο που ήξερα ήταν ότι κάποιος γνώριζε τη διαδρομή μας.»",
+          "source_query": "driver worried car night photograph"
+        },
+        {
+          "title": "Ο ΟΔΗΓΟΣ ΤΟΥ ΔΕΥΤΕΡΟΥ ΑΥΤΟΚΙΝΗΤΟΥ — 5/5",
+          "text": "Ο αδελφός του Νίκου τον κοίταξε. «Εγώ είδα το πρόσωπό του. Ήταν ο άνθρωπος που εσύ αποκαλούσες πατέρα.»",
+          "source_query": "man behind steering wheel photograph"
+        }
+      ]
+    },
+    {
+      "id": "message-series-ep22",
+      "expected_cards": 5,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "Ο ΠΑΤΕΡΑΣ ΠΟΥ ΤΟΝ ΜΕΓΑΛΩΣΕ — 1/5",
+          "text": "«Αυτό είναι αδύνατον», είπε ο Νίκος. Ο άνθρωπος που τον μεγάλωσε υποτίθεται ότι είχε πεθάνει πριν από χρόνια.",
+          "source_query": "man disbelief portrait photograph"
+        },
+        {
+          "title": "ΕΝΑΣ ΑΚΟΜΗ ΣΚΗΝΟΘΕΤΗΜΕΝΟΣ ΘΑΝΑΤΟΣ — 2/5",
+          "text": "Ο Ανδρέας τον κοίταξε χωρίς να μιλήσει. Η Μαρία τότε κατάλαβε πρώτη: «Δεν πέθανε ούτε εκείνος… σωστά;»",
+          "source_query": "woman shocked realization photograph"
+        },
+        {
+          "title": "Η ΦΩΤΟΓΡΑΦΙΑ ΤΡΙΩΝ ΜΗΝΩΝ — 3/5",
+          "text": "Ο Νίκος θυμήθηκε την πρόσφατη φωτογραφία. Όλα έδεναν. Ο άνθρωπος που είχε πενθήσει ήταν ζωντανός και κρυβόταν.",
+          "source_query": "recent family photograph adults"
+        },
+        {
+          "title": "ΕΝΑ ΗΧΗΤΙΚΟ ΜΗΝΥΜΑ — 4/5",
+          "text": "Ο αδελφός του έβγαλε ένα παλιό κινητό. «Μου το έστειλε πριν τρεις μήνες. Δεν ήξερα αν έπρεπε να στο δώσω.»",
+          "source_query": "smartphone voice message photograph"
+        },
+        {
+          "title": "«ΜΗΝ ΕΜΠΙΣΤΕΥΤΕΙΣ ΤΟΝ ΑΝΔΡΕΑ» — 5/5",
+          "text": "Ακούστηκε η φωνή του ανθρώπου που τον μεγάλωσε: «Αν ακούς αυτό, Νίκο, τότε ο Ανδρέας σε βρήκε. Μην τον εμπιστευτείς.»",
+          "source_query": "older man voice recording photograph"
+        }
+      ]
+    }
+  ],
+  "publish_to_social": false,
+  "production_status": "AUTHORIZED_RENDER_PENDING_QA"
+}
