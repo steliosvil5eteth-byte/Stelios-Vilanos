@@ -394,9 +394,12 @@
       "slot": "15:00",
       "category": "love_soul_relationship",
       "title": "Το άδειο κάδρο",
-      "status": "IN_PRODUCTION",
-      "publish_ready": false,
-      "metricool_post_ids": [],
+      "status": "SCHEDULED",
+      "publish_ready": true,
+      "metricool_post_ids": [
+        382874914,
+        382875431
+      ],
       "script_cards": [
         [
           "ΤΗΣ ΕΚΑΝΕ ΔΩΡΟ ΕΝΑ ΑΔΕΙΟ ΚΑΔΡΟ",
@@ -420,7 +423,14 @@
         ]
       ],
       "production_owner": "automation-current-five-20260927-1534",
-      "production_lease_until": "2026-09-27T18:00:00+03:00"
+      "production_lease_until": null,
+      "metricool_uuids": [
+        "-2432437666935323877",
+        "4199047690556754284"
+      ],
+      "media_commit": "a1111aa19e2f24ffddc9de67de26ca3f8972d2a8",
+      "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/a1111aa19e2f24ffddc9de67de26ca3f8972d2a8/jobs/five-20260930/love-frame/love-frame-youtube-short.mp4",
+      "qa_path": "jobs/five-20260930/love-frame/qa.json"
     },
     {
       "id": "2026-09-30-strange_real_phenomenon",
