@@ -226,5 +226,33 @@
       "Phenomenon mean dominated by Brinicle",
       "No causal proof or guaranteed future ranking"
     ]
+  },
+  "date_overrides": {
+    "2026-09-27": {
+      "timezone": "Europe/Athens",
+      "not_before": "14:00",
+      "slots": [
+        {
+          "time": "14:00",
+          "category": "zodiac"
+        },
+        {
+          "time": "16:00",
+          "category": "survival"
+        },
+        {
+          "time": "18:00",
+          "category": "love_soul_relationship"
+        },
+        {
+          "time": "20:00",
+          "category": "strange_real_phenomenon"
+        },
+        {
+          "time": "22:00",
+          "category": "myth_or_truth"
+        }
+      ]
+    }
   }
 }
