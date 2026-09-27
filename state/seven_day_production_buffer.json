@@ -652,5 +652,8 @@
       "publish_ready": false,
       "metricool_post_ids": []
     }
-  ]
+  ],
+  "continue_daily_until": "2050-12-31",
+  "rolling_buffer_days": 7,
+  "long_term_authorization": "User requested continuing the same five daily series until 2050; fill actual queue progressively after QA, never claim all years are produced."
 }
