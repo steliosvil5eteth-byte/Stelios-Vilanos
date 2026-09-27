@@ -1,0 +1,43 @@
+{
+  "strategy": "CURRENT_FIVE_DAILY_20260927",
+  "date": "2026-09-30",
+  "slot": "11:00",
+  "category": "zodiac",
+  "title": "Ποια μικρή χαρά σου αλλάζει τη μέρα; Κριός–Παρθένος",
+  "status": "PASSED_FINAL_REVIEW_LOCAL_ARTIFACT",
+  "reviewed_at": "2026-09-27T16:12:00+03:00",
+  "reviewer": "automation-current-five-20260927-1534",
+  "carousel": {
+    "cards": 6,
+    "dimensions": "1080x1080",
+    "format": "JPEG",
+    "visual_review": "PASSED_COLORFUL_DISTINCT_SIGN_SPECIFIC_PHOTOREAL_SCENES",
+    "text_review": "PASSED_GREEK_HOOK_ON_EVERY_CARD_ORDER_1_TO_6",
+    "zodiac_symbols": ["Aries ram", "Taurus bull", "Gemini twins", "Cancer crab", "Leo lion", "Virgo maiden"],
+    "tiktok_media_silent": true,
+    "tiktok_auto_add_music_required": true
+  },
+  "youtube": {
+    "file": "zodiac-joy-youtube-short.mp4",
+    "dimensions": "1080x1920",
+    "duration_seconds": 42.112,
+    "video_codec": "h264",
+    "audio_streams": 1,
+    "audio_channels": 1,
+    "audio_type": "original instrumental, no narration",
+    "all_cards_present": true,
+    "double_audio": false
+  },
+  "disclosure": "Ψυχαγωγία • Εικαστικό AI",
+  "publish_ready": false,
+  "note": "Local artifact QA passed. Keep blocked from publishing until immutable GitHub commit, fresh duplicate check, Metricool create/readback, and platform configuration validation succeed.",
+  "sha256": {
+    "card-01.jpg": "6b08587f694116d3d92ecfce9c21a274e03b74a198716c5e327dbfc2980eccf2",
+    "card-02.jpg": "cb3cfb780d7082827f36509fbe4509cbabe3b022e8d07aa96d0fdb09242b1f6b",
+    "card-03.jpg": "d4488559e315aa24f3202dec3197652751c92bc92acd6b1a0fd0576c69ee8957",
+    "card-04.jpg": "2f147cf6b1903bb57dc1132c1f885eeeef3e5140b3337b5573fc3250c6db509e",
+    "card-05.jpg": "ba46c5c0e65d6c40c4a183747342a53846d32c216f6bcb5e37f53c5c85c17389",
+    "card-06.jpg": "960d7b9f105ad42d5bb41acb8045a8f78d55abce6e888e8bbf780534914108f6",
+    "zodiac-joy-youtube-short.mp4": "6564f6dd46d47c06f0436364540b59ce04307bb8bb2ad52e2201e19fc4e6c3d0"
+  }
+}
