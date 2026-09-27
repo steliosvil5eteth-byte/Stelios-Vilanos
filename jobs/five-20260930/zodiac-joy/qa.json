@@ -4,7 +4,7 @@
   "slot": "11:00",
   "category": "zodiac",
   "title": "Ποια μικρή χαρά σου αλλάζει τη μέρα; Κριός–Παρθένος",
-  "status": "PASSED_FINAL_REVIEW_LOCAL_ARTIFACT",
+  "status": "PASSED_FINAL_REVIEW_AND_METRICOOL_READBACK",
   "reviewed_at": "2026-09-27T16:12:00+03:00",
   "reviewer": "automation-current-five-20260927-1534",
   "carousel": {
@@ -13,7 +13,14 @@
     "format": "JPEG",
     "visual_review": "PASSED_COLORFUL_DISTINCT_SIGN_SPECIFIC_PHOTOREAL_SCENES",
     "text_review": "PASSED_GREEK_HOOK_ON_EVERY_CARD_ORDER_1_TO_6",
-    "zodiac_symbols": ["Aries ram", "Taurus bull", "Gemini twins", "Cancer crab", "Leo lion", "Virgo maiden"],
+    "zodiac_symbols": [
+      "Aries ram",
+      "Taurus bull",
+      "Gemini twins",
+      "Cancer crab",
+      "Leo lion",
+      "Virgo maiden"
+    ],
     "tiktok_media_silent": true,
     "tiktok_auto_add_music_required": true
   },
@@ -29,8 +36,8 @@
     "double_audio": false
   },
   "disclosure": "Ψυχαγωγία • Εικαστικό AI",
-  "publish_ready": false,
-  "note": "Local artifact QA passed. Keep blocked from publishing until immutable GitHub commit, fresh duplicate check, Metricool create/readback, and platform configuration validation succeed.",
+  "publish_ready": true,
+  "note": "Six sign-specific cards and the full vertical slideshow passed final visual/technical QA; Metricool live readback confirmed all four destinations, native formats, draft=false, and autoPublish=true.",
   "sha256": {
     "card-01.jpg": "6b08587f694116d3d92ecfce9c21a274e03b74a198716c5e327dbfc2980eccf2",
     "card-02.jpg": "cb3cfb780d7082827f36509fbe4509cbabe3b022e8d07aa96d0fdb09242b1f6b",
@@ -39,5 +46,23 @@
     "card-05.jpg": "ba46c5c0e65d6c40c4a183747342a53846d32c216f6bcb5e37f53c5c85c17389",
     "card-06.jpg": "960d7b9f105ad42d5bb41acb8045a8f78d55abce6e888e8bbf780534914108f6",
     "zodiac-joy-youtube-short.mp4": "6564f6dd46d47c06f0436364540b59ce04307bb8bb2ad52e2201e19fc4e6c3d0"
+  },
+  "media_commit": "9bd3bf6e2e772b5c37b5f91fe90b26ad3e42f9d2",
+  "metricool": {
+    "post_ids": [
+      382867583,
+      382867702
+    ],
+    "uuids": [
+      "4518712419652355746",
+      "2611491093809285417"
+    ],
+    "providers": {
+      "facebook": "PENDING",
+      "instagram": "PENDING",
+      "tiktok": "PENDING",
+      "youtube": "PENDING"
+    },
+    "live_readback_at": "2026-09-27T16:12:00+03:00"
   }
 }
