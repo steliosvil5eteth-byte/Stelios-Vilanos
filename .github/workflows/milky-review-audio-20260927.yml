@@ -1,0 +1,22 @@
+name: Export existing Milky Seas audio for review
+on:
+  push:
+    paths: ['.github/workflows/milky-review-audio-20260927.yml']
+permissions:
+  contents: read
+jobs:
+  export:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: media-output
+          sparse-checkout: jobs/features-20260927/phenom-milky-seas-20260927-1700
+      - uses: actions/upload-artifact@v4
+        with:
+          name: milky-existing-audio-subs
+          path: |
+            jobs/features-20260927/phenom-milky-seas-20260927-1700/nestoras.wav
+            jobs/features-20260927/phenom-milky-seas-20260927-1700/subs.srt
+            jobs/features-20260927/phenom-milky-seas-20260927-1700/speech-meta.json
+          retention-days: 3
