@@ -225,7 +225,45 @@
       "No reliable follower attribution",
       "Phenomenon mean dominated by Brinicle",
       "No causal proof or guaranteed future ranking"
-    ]
+    ],
+    "screenshot_validation_20260927": {
+      "window": "2026-07-28 through 2026-09-25 (60 days); 2026-09-19 through 2026-09-25 (7 days)",
+      "source": "User TikTok Studio screenshots IMG_4475–IMG_4492, reviewed visually",
+      "views_60d": 969000,
+      "viewers_60d": 335000,
+      "followers_total": 1013,
+      "net_followers_60d": 785,
+      "views_7d": 86669,
+      "top_examples": [
+        {
+          "category": "relationship_emotional",
+          "views": 88000
+        },
+        {
+          "category": "relationship_story",
+          "views": 87000
+        },
+        {
+          "category": "relationship_emotional",
+          "views": 47000
+        },
+        {
+          "category": "zodiac",
+          "views": 31000
+        },
+        {
+          "category": "zodiac",
+          "views": 25000
+        },
+        {
+          "category": "phenomenon_brinicle",
+          "views": 5607,
+          "window": "7 days"
+        }
+      ],
+      "interpretation": "Strongest established pillars: relationship stories and zodiac. Keep today's five approved categories; prioritize stronger hooks, narratives and production effort for these two. Survival is a provisional fifth category, not an equally proven winner. Screenshots rank individual posts and do not prove five distinct winning series.",
+      "restriction": "Replicate themes/mechanics, never the same script/story/media. Do not infer best daily hour from the partial activity screen."
+    }
   },
   "date_overrides": {
     "2026-09-27": {
@@ -254,5 +292,12 @@
         }
       ]
     }
-  }
+  },
+  "editorial_priorities": [
+    "love_soul_relationship",
+    "zodiac",
+    "strange_real_phenomenon",
+    "myth_or_truth",
+    "survival"
+  ]
 }
