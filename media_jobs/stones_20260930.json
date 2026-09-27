@@ -2,7 +2,7 @@
   "id": "stones-20260930",
   "date": "2026-09-30",
   "slot": "17:00",
-  "status": "SCRIPT_READY",
+  "status": "BLOCKED_AZURE_F0_RUNTIME_ACCESS",
   "publish_ready": false,
   "min_duration_seconds": 80,
   "voice": "el-GR-NestorasNeural",
@@ -12,5 +12,13 @@
     "https://www.nps.gov/deva/learn/news/racetrack.htm",
     "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0105948"
   ],
-  "visual_requirements": "Scene-specific legal photos or clearly disclosed AI reconstructions. Prefer original paper CC BY figures for measured motion. Never show moving rocks on dry ground as the observed mechanism. Seven scenes align exactly to seven narration paragraphs. Full final QA and independent ASR required."
+  "visual_requirements": "Scene-specific legal photos or clearly disclosed AI reconstructions. Prefer original paper CC BY figures for measured motion. Never show moving rocks on dry ground as the observed mechanism. Seven scenes align exactly to seven narration paragraphs. Full final QA and independent ASR required.",
+  "production_lease_until": null,
+  "blocker": {
+    "observed_at": "2026-09-27T16:48:00+03:00",
+    "reason": "Current automation runtime has no AZURE_SPEECH_KEY/AZURE_SPEECH_REGION and no authenticated GitHub Actions workflow-dispatch path. Required voice is el-GR-NestorasNeural via approved Azure Speech F0 only.",
+    "paid_fallback_used": false,
+    "substitute_voice_used": false,
+    "retry_condition": "Retry only when the approved Azure F0 secret-backed execution path is available to this runtime or workflow dispatch access is restored."
+  }
 }
