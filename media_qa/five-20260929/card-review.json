@@ -1,0 +1,40 @@
+{
+  "date": "2026-09-29",
+  "source_checks": {
+    "survival": [
+      "https://civilprotection.gov.gr/odigies-prostasias/kataigides",
+      "https://www.weather.gov/safety/lightning-indoors"
+    ],
+    "myth": [
+      "https://zoo.sandiegozoo.org/animals/camel"
+    ],
+    "zodiac": "Entertainment symbolic portraits, not factual personality predictions",
+    "love": "Original fiction"
+  },
+  "reviewed": [
+    "zodiac29",
+    "love29",
+    "myth29"
+  ],
+  "cards": {
+    "zodiac29": 6,
+    "love29": 5,
+    "myth29": 4
+  },
+  "native": {
+    "facebook": "POST carousel",
+    "instagram": "POST carousel",
+    "tiktok": "PHOTO autoAddMusic=true"
+  },
+  "youtube": {
+    "resolution": [
+      1080,
+      1920
+    ],
+    "seconds_per_card": 7,
+    "narration": false,
+    "music": "Single original synthesized instrumental layer"
+  },
+  "qa": "All generated originals visually reviewed, each final video extracted at every card boundary and reviewed; full FFmpeg decode passed. Final CTA and AI disclosure verified.",
+  "duplicate_checks": "Repository content history and Notion title/fingerprint search, then fresh Metricool read before each create."
+}
