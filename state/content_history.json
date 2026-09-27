@@ -2339,6 +2339,35 @@
         "final_end_reviewed": true,
         "notes": "Five final cards visually reviewed for continuity and exact Greek. Full 35s slideshow decode and ending reviewed. Original single instrumental, no narration. Native photo carousel FB/IG/TikTok, full vertical YouTube slideshow. AI and fiction disclosed, CTA present."
       }
+    },
+    {
+      "job_id": "five-20260929/myth29",
+      "date": "2026-09-29",
+      "theme": "myth_or_truth",
+      "title": "Οι καμήλες αποθηκεύουν νερό στην καμπούρα;",
+      "caption": "Οι καμήλες αποθηκεύουν νερό στην καμπούρα;\n\nΗ καμπούρα περιέχει λίπος. Η αντοχή της καμήλας στις δύσκολες συνθήκες δεν σημαίνει ότι κουβαλά ένα δοχείο νερού στην πλάτη της.\nΠηγή: San Diego Zoo — https://zoo.sandiegozoo.org/animals/camel\nΟι εικόνες είναι εκπαιδευτικές αναπαραστάσεις AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΜύθοςΉΑλήθεια #Καμήλα #Φύση #Ζώα #Έρημος",
+      "fingerprint": "five-20260929-myth29",
+      "status": "scheduled",
+      "scheduled_time": "2026-09-29T20:00:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "382839901,382839911",
+      "metricool_uuid": "-4458293815859196786,5635258198495547035",
+      "notion_page_id": "3e8f2345-b318-817f-b7b8-f2e803ecba77",
+      "media_commit": "f1ea2a2aee77dcaa0825edc9369e5a299efded96",
+      "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/f1ea2a2aee77dcaa0825edc9369e5a299efded96/jobs/five-20260929/myth29/myth-camel.mp4",
+      "duration_seconds": 28,
+      "quality_check": {
+        "final_visuals_reviewed": true,
+        "full_ffmpeg_decode_passed": true,
+        "final_end_reviewed": true,
+        "notes": "Four complete 1080 square JPEG cards visually reviewed. Facts verified San Diego Zoo. Full 28s video decode, sequence and ending reviewed. One original instrumental, no narration. Native FB/IG/TikTok and vertical full YouTube slideshow. AI label and CTA."
+      }
     }
   ]
 }
