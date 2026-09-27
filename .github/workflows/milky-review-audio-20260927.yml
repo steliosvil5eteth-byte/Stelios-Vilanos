@@ -1,4 +1,4 @@
-name: Export existing Milky Seas audio for review
+name: Export Milky Seas source material
 on:
   push:
     paths: ['.github/workflows/milky-review-audio-20260927.yml']
@@ -8,15 +8,12 @@ jobs:
   export:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-        with:
-          ref: media-output
-          sparse-checkout: jobs/features-20260927/phenom-milky-seas-20260927-1700
+      - name: Fetch open licensed research figures
+        run: |
+          mkdir sources
+          curl --fail --location --retry 2 'https://repository.library.noaa.gov/view/noaa/54100/noaa_54100_DS1.pdf' -o sources/milky-seas-paper.pdf
       - uses: actions/upload-artifact@v4
         with:
-          name: milky-existing-audio-subs
-          path: |
-            jobs/features-20260927/phenom-milky-seas-20260927-1700/nestoras.wav
-            jobs/features-20260927/phenom-milky-seas-20260927-1700/subs.srt
-            jobs/features-20260927/phenom-milky-seas-20260927-1700/speech-meta.json
+          name: milky-research-source
+          path: sources/
           retention-days: 3
