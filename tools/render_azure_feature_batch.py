@@ -3,7 +3,7 @@ from __future__ import annotations
 import argparse, html, json, math, os, re, subprocess, time, urllib.parse
 from pathlib import Path
 import requests
-from PIL import Image
+from PIL import Image, ImageChops
 import azure.cognitiveservices.speech as speechsdk
 
 VOICE='el-GR-NestorasNeural'
@@ -225,7 +225,7 @@ def make_video(job, photos:Path, wav:Path, srt:Path, dur:float, out:Path):
         lines.append("file '"+str(clip).replace("'","'\\''")+"'")
     concat.write_text('\n'.join(lines)+'\n',encoding='utf-8')
     visual=out.parent/'visual.mp4'; run(['ffmpeg','-y','-loglevel','error','-f','concat','-safe','0','-i',str(concat),'-an','-c:v','libx264','-preset','veryfast','-crf','21','-pix_fmt','yuv420p',str(visual)])
-    style='FontName=DejaVu Sans,FontSize=20,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,BackColour=&H90000000,BorderStyle=3,Outline=1,Shadow=0,Alignment=2,MarginL=88,MarginR=88,MarginV=300'
+    style='FontName=DejaVu Sans,FontSize=10,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,BackColour=&H90000000,BorderStyle=3,Outline=1,Shadow=0,Alignment=2,MarginL=14,MarginR=14,MarginV=42'
     run(['ffmpeg','-y','-loglevel','error','-i',str(visual),'-i',str(wav),'-vf',f"subtitles='{srt}':force_style='{style}'",'-c:v','libx264','-preset','medium','-crf','20','-pix_fmt','yuv420p','-c:a','aac','-b:a','128k','-ar','48000','-ac','1','-shortest','-movflags','+faststart',str(out)])
 
 def qa(job, video:Path, dur:float, photo_count:int, cap_count:int):
@@ -236,6 +236,25 @@ def qa(job, video:Path, dur:float, photo_count:int, cap_count:int):
     if duration_bad or len(vs)!=1 or len(au)!=1 or int(vs[0]['width'])!=1080 or int(vs[0]['height'])!=1920: raise RuntimeError('basic QA failed')
     dec=subprocess.run(['ffmpeg','-v','error','-i',str(video),'-f','null','-'],text=True,capture_output=True)
     if dec.returncode: raise RuntimeError('decode QA failed: '+dec.stderr[-1000:])
+    # Verify that subtitles are visibly burned into the same final MP4.
+    # The previous gate only trusted the existence of an SRT file and could
+    # miss an off-canvas libass style. Compare subtitle-band pixels against
+    # the subtitle-free visual render at several active cue timestamps.
+    visual=video.parent/'visual.mp4'
+    strong_counts=[]
+    for stamp in (1.0, 15.0, min(50.0, max(1.0, vd-2.0))):
+        clean=video.parent/f'.qa-clean-{str(stamp).replace(".","_")}.png'
+        final=video.parent/f'.qa-final-{str(stamp).replace(".","_")}.png'
+        try:
+            run(['ffmpeg','-y','-loglevel','error','-ss',str(stamp),'-i',str(visual),'-frames:v','1','-vf','crop=1080:760:0:1160',str(clean)])
+            run(['ffmpeg','-y','-loglevel','error','-ss',str(stamp),'-i',str(video),'-frames:v','1','-vf','crop=1080:760:0:1160',str(final)])
+            with Image.open(clean).convert('RGB') as a, Image.open(final).convert('RGB') as b:
+                diff=ImageChops.difference(a,b)
+                strong_counts.append(sum(1 for px in diff.getdata() if max(px)>55))
+        finally:
+            clean.unlink(missing_ok=True); final.unlink(missing_ok=True)
+    if max(strong_counts or [0]) < 1200:
+        raise RuntimeError(f'burned-subtitle visual QA failed: strong pixel counts {strong_counts}')
     sil=subprocess.run(['ffmpeg','-hide_banner','-i',str(video),'-af','silencedetect=noise=-45dB:d=1.2','-f','null','-'],text=True,capture_output=True).stderr
     gaps=[float(x) for x in re.findall(r'silence_duration: ([0-9.]+)',sil)]
     if any(x>1.2 for x in gaps): raise RuntimeError(f'dead-air QA failed: {gaps}')
