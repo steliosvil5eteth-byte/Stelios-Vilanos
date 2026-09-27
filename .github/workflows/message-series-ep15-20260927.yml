@@ -48,7 +48,7 @@ jobs:
           test -n "$SRC"
           mkdir -p "$OUT/jobs/message-series-20260927-ep15"
           rm -rf "$OUT/jobs/message-series-20260927-ep15"/*
-          cp -a "$SRC"/. "$OUT/jobs/message-series-20260927-ep15/"
+          cp -a "$SRC"/. "$OUT/jobs/message-series-20260927-ep15/"\n          for f in "$OUT"/jobs/message-series-20260927-ep15/*.jpg; do base64 -w 0 "$f" > "$f.b64"; done
           git -C "$OUT" config user.name 'github-actions[bot]'
           git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git -C "$OUT" add jobs/message-series-20260927-ep15
