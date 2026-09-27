@@ -2281,6 +2281,35 @@
         "final_end_reviewed": true,
         "ai_disclosure": true
       }
+    },
+    {
+      "job_id": "five-20260929/zodiac29",
+      "date": "2026-09-29",
+      "theme": "zodiac",
+      "title": "Πώς δέχεσαι ένα κομπλιμέντο; Ζυγός–Ιχθύες",
+      "caption": "Πώς δέχεσαι ένα κομπλιμέντο; Ζυγός έως Ιχθύες\n\nΈξι ακόμη συμβολικά πορτρέτα για την καλή κουβέντα που μας μένει. Εσύ λες εύκολα «ευχαριστώ»;\nΨυχαγωγικό περιεχόμενο, όχι πρόβλεψη. Εικαστικά AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ζώδια #Ζυγός #Σκορπιός #Ιχθύες #Αστρολογία",
+      "fingerprint": "five-20260929-zodiac29",
+      "status": "scheduled",
+      "scheduled_time": "2026-09-29T11:00:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "382837560,382837567",
+      "metricool_uuid": "1721517511529484275,-3554725956835782704",
+      "notion_page_id": "3e8f2345-b318-8195-b55f-e41ea22b954f",
+      "media_commit": "7969c98a8701a9715a16d6cbbd22e752ab6fe03d",
+      "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/7969c98a8701a9715a16d6cbbd22e752ab6fe03d/jobs/five-20260929/zodiac29/zodiac-compliment-b.mp4",
+      "duration_seconds": 42,
+      "quality_check": {
+        "final_visuals_reviewed": true,
+        "full_ffmpeg_decode_passed": true,
+        "final_end_reviewed": true,
+        "notes": "All six final cards and full slideshow reviewed. Full decode passed. Original instrumental one layer. No narration. Native FB/IG/TikTok carousel with TikTok autoAddMusic. YouTube full vertical slideshow. AI disclosure and CTA."
+      }
     }
   ]
 }
