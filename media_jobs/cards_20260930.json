@@ -43,8 +43,19 @@
     "love30": {
       "time": "15:00",
       "title": "Το άδειο κάδρο",
-      "status": "QUEUED",
-      "cards": 5
+      "status": "SCHEDULED",
+      "cards": 5,
+      "publish_ready": true,
+      "metricool_post_ids": [
+        382874914,
+        382875431
+      ],
+      "metricool_uuids": [
+        "-2432437666935323877",
+        "4199047690556754284"
+      ],
+      "media_commit": "a1111aa19e2f24ffddc9de67de26ca3f8972d2a8",
+      "qa_path": "jobs/five-20260930/love-frame/qa.json"
     },
     "stones30": {
       "time": "17:00",
