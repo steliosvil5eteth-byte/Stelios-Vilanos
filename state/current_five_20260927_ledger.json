@@ -2,10 +2,10 @@
   "strategy": "CURRENT_FIVE_DAILY_20260927",
   "brand_id": 7076410,
   "timezone": "Europe/Athens",
-  "observed_at": "2026-09-27T14:10:00+03:00",
+  "observed_at": "2026-09-27T17:22:00+03:00",
   "logical_target": 5,
   "destination_target": 20,
-  "status": "ONE_PUBLISHED_FOUR_SCHEDULED",
+  "status": "TWO_PUBLISHED_THREE_SCHEDULED",
   "slots": [
     {
       "time": "14:00",
@@ -53,20 +53,26 @@
       "category": "survival",
       "title": "Πλημμύρα: 8 κινήσεις προστασίας",
       "qa": "PASSED_FINAL_REVIEW",
-      "logical_status": "SCHEDULED",
+      "logical_status": "PUBLISHED",
       "entries": [
         {
           "post_id": 382821377,
           "uuid": "579552182092712221",
           "platforms": {
             "facebook": {
-              "status": "PENDING"
+              "status": "PUBLISHED",
+              "provider_id": "1355373017651242_122111705331477192",
+              "public_url": "https://facebook.com/122101951509477192/posts/122111705331477192"
             },
             "instagram": {
-              "status": "PENDING"
+              "status": "PUBLISHED",
+              "provider_id": "https://www.instagram.com/p/DdyrIVwFT76/",
+              "public_url": "https://www.instagram.com/p/DdyrIVwFT76/"
             },
             "tiktok": {
-              "status": "PENDING"
+              "status": "PUBLISHED",
+              "provider_id": "7690200118095547681",
+              "public_url": "https://www.tiktok.com/@steliosvilanos/video/7690200118095547681"
             }
           }
         },
@@ -75,7 +81,9 @@
           "uuid": "3935721673412792278",
           "platforms": {
             "youtube": {
-              "status": "PENDING"
+              "status": "PUBLISHED",
+              "provider_id": "wuOpIg6HWJM",
+              "public_url": "https://www.youtube.com/shorts/wuOpIg6HWJM"
             }
           }
         }
@@ -112,7 +120,18 @@
             }
           }
         }
-      ]
+      ],
+      "preflight": {
+        "checked_at": "2026-09-27T17:22:00+03:00",
+        "result": "PASSED_UPCOMING_SLOT",
+        "exact_metricool_media_match_to_final_review": true,
+        "carousel_cards": 5,
+        "youtube_media": 1,
+        "draft": false,
+        "autoPublish": true,
+        "tiktok_autoAddMusic": true,
+        "duplicate_records": false
+      }
     },
     {
       "time": "20:00",
@@ -179,6 +198,7 @@
   "blocked": [],
   "notes": [
     "Published status is backed by live provider IDs/public URLs. Pending slots were confirmed in the live Metricool queue.",
+    "17:22 preflight: 18:00 love slot matches the reviewed final Metricool media exactly; native carousel plus YouTube slideshow remain autoPublish=true and draft=false.",
     "Paused categories were not scheduled."
   ]
 }
