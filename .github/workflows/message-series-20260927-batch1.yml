@@ -1,0 +1,55 @@
+name: MESSAGE SERIES 20260927 batch 1
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'media_jobs/message_series_20260927_batch1.json'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: no-credit-media-output
+  cancel-in-progress: false
+
+jobs:
+  render-message-series-batch1:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - name: Check out approved jobs
+        uses: actions/checkout@v4
+      - name: Install deterministic media tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg python3-pil fonts-dejavu-core
+      - name: Render batch 1
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/finished
+        run: |
+          /usr/bin/python3 tools/render_carousel_pack_robust.py --manifest media_jobs/message_series_20260927_batch1.json --output "$OUTPUT_DIR"
+      - name: Store finished publishing assets
+        env:
+          OUTPUT_DIR: ${{ runner.temp }}/finished
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/media-output-repo"
+          if git fetch origin media-output --depth=1; then
+            git worktree add --detach "$OUT" FETCH_HEAD
+          else
+            git worktree add --detach "$OUT" "$GITHUB_SHA"
+            git -C "$OUT" checkout --orphan media-output
+            git -C "$OUT" rm -rf .
+          fi
+          mkdir -p "$OUT/jobs"
+          cp -a "$OUTPUT_DIR"/. "$OUT/jobs/"
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Render message-series continuation batch 1'
+            git -C "$OUT" push origin HEAD:media-output
+          fi
