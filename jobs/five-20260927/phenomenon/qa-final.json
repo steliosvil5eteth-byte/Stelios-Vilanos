@@ -1,0 +1,23 @@
+{
+  "strategy": "CURRENT_FIVE_DAILY_20260927",
+  "slot": "20:00",
+  "category": "strange_real_phenomenon",
+  "topic": "Milky Seas",
+  "status": "PASSED_FINAL_REVIEW",
+  "repair": "Replaced blackout/near-shore/non-equivalent bioluminescence with eight Milky-Seas-specific scenes",
+  "visual_scene_count": 8,
+  "visual_relevance": "PASSED_SCENE_BY_SCENE",
+  "no_power_blackout_java_images": true,
+  "diffuse_continuous_open_ocean_glow": true,
+  "voice": "el-GR-NestorasNeural",
+  "background_music": false,
+  "burned_in_synchronized_greek_subtitles": true,
+  "resolution": [
+    1080,
+    1920
+  ],
+  "audio_streams": 1,
+  "duration_seconds": 103.7,
+  "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+  "ai_disclosure_required": true
+}
