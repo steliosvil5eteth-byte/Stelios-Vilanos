@@ -10,20 +10,19 @@ This repository is the source of truth for the current social-media workflow.
 - Networks: Facebook, Instagram, TikTok, YouTube
 - Previous Metricool brands are **retired from operational use**. Do not schedule, publish, repair, reconcile, or create new posts on them.
 
-## CURRENT_TEN_DAILY
+## CURRENT_FIVE_DAILY
 
-Exactly 10 logical posts are targeted per day:
+Effective 27 September 2026: one post per active series, five logical posts per day across four networks.
 
-1. 07:00 — Relationships — 7-card carousel
-2. 09:00 — Survival — 9-card carousel
-3. 11:00 — Zodiac — 6-card carousel
-4. 13:00 — Brown Dog Bartender — 4-card carousel
-5. 15:00 — Love / Soul / Relationship — 5-card carousel
-6. 17:00 — Strange real phenomenon — narrated vertical video
-7. 18:30 — Two-day trip in Greece — narrated vertical video
-8. 20:00 — Myth or Truth — 4-card carousel
-9. 21:30 — Documented experiments — narrated vertical video
-10. 23:00 — International legend — narrated vertical video
+1. 09:00 — Survival — 9 cards
+2. 11:00 — Zodiac — 6 cards
+3. 15:00 — Love / Soul — 5 cards
+4. 17:00 — Strange real phenomenon — narrated video
+5. 20:00 — Myth or Truth — 4 cards
+
+Paused: separate 07:00 relationship commentary, dog bartender, Greece trips, experiments and legends. Never create or catch up paused series. Keep their files and published history. The current config/content_strategy.json takes priority over any older manifest or automation. Re-read it immediately before every scheduling write.
+
+Selection: mean TikTok views per post, 20–25 September, all over 24 hours old. Small unequal samples; phenomena depend heavily on Brinicle. See selection_evidence in the strategy. No guarantee of future performance.
 
 ## Required media rules
 
@@ -50,7 +49,7 @@ Narrated slots use 9:16 1080x1920 video, at least 80 seconds, **el-GR-NestorasNe
 
 ## Quality-first catch-up
 
-The planned clock time is a target, not permission to publish bad material. If a slot fails or is not ready, keep it Draft/Blocked, repair it, run full QA again, and publish it later the same day at the first safe available time. Never backdate. Before retrying, live-check that it did not publish on any destination. The end-of-day target is exactly **10 correct logical posts**, not 9 because a time was missed and not 11 because of a duplicate catch-up.
+The planned clock time is a target, not permission to publish bad material. If a slot fails or is not ready, keep it Draft/Blocked, repair it, run full QA again, and publish it later the same day at the first safe available time. Never backdate. Before retrying, live-check that it did not publish on any destination. The end-of-day target is five correct logical posts, one per active series. Never fill retired slots or duplicate successful posts.
 
 ## Historical data
 
