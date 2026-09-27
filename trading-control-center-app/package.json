@@ -8,7 +8,9 @@
     "readiness": "node scripts/production-readiness.mjs",
     "preflight": "node scripts/preflight-smoke.mjs",
     "release-check": "node scripts/release-check.mjs",
-    "ops-check": "node scripts/ops-check.mjs"
+    "ops-check": "node scripts/ops-check.mjs",
+    "bot-test": "node scripts/bot-smoke.mjs",
+    "bot-worker": "node scripts/bot-worker.mjs"
   },
   "dependencies": {
     "postgres": "^3.4.7"

@@ -1,3 +1,4 @@
+import botHandler from '../server/api/bot/index.js';
 import h0 from '../server/api/account/contact.js';
 import h1 from '../server/api/account/delete.js';
 import h2 from '../server/api/account/export.js';
@@ -69,6 +70,7 @@ import h67 from '../server/api/trades.js';
 import h68 from '../server/api/usage.js';
 
 const routes = new Map([
+  ['bot', botHandler],
   ['account/contact', h0],
   ['account/delete', h1],
   ['account/export', h2],
