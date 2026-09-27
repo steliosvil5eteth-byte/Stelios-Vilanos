@@ -1,12 +1,12 @@
 {
-  "version": 1,
+  "version": 2,
   "timezone": "Europe/Athens",
   "brand_id": 7076410,
   "horizon_start": "2026-09-28",
   "horizon_end": "2026-10-04",
-  "target_logical_posts": 35,
-  "final_ready_through": "2026-09-29",
-  "rule": "Production backlog only; never treat this file as a scheduled or published queue. Only live Metricool readback establishes that.",
+  "target_logical_posts": 70,
+  "final_ready_through": null,
+  "rule": "Production backlog only; never treat this file as a scheduled or published queue. Only live Metricool readback establishes that. A day is complete only with all 10 CURRENT_TEN_DAILY categories.",
   "jobs": [
     {
       "id": "2026-09-28-survival",
@@ -998,5 +998,8 @@
   "minimum_ready_days": 2,
   "target_ready_days": 3,
   "planning_horizon_days": 7,
-  "active_production_lease": null
+  "active_production_lease": null,
+  "program_label": "CURRENT_TEN_DAILY",
+  "minimum_complete_categories_per_day": 10,
+  "transition_note": "CURRENT_TEN_DAILY activated 27/09; existing five-category jobs are preserved, but no future day is considered fully ready until all ten active categories have PASSED_FINAL_REVIEW and live Metricool readback."
 }
