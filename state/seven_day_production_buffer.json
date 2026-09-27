@@ -219,9 +219,12 @@
       "slot": "20:00",
       "category": "myth_or_truth",
       "title": "Οι καμήλες αποθηκεύουν νερό στην καμπούρα;",
-      "status": "IN_PRODUCTION",
-      "publish_ready": false,
-      "metricool_post_ids": [],
+      "status": "SCHEDULED",
+      "publish_ready": true,
+      "metricool_post_ids": [
+        382839901,
+        382839911
+      ],
       "script_cards": [
         [
           "ΝΕΡΟ ΜΕΣΑ ΣΤΗΝ ΚΑΜΠΟΥΡΑ;",
@@ -244,7 +247,14 @@
         "https://zoo.sandiegozoo.org/animals/camel"
       ],
       "production_owner": "interactive-session-3147a767415a",
-      "production_lease_until": "2026-09-27T17:00:00+03:00"
+      "production_lease_until": null,
+      "metricool_uuids": [
+        "-4458293815859196786",
+        "5635258198495547035"
+      ],
+      "media_commit": "f1ea2a2aee77dcaa0825edc9369e5a299efded96",
+      "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/f1ea2a2aee77dcaa0825edc9369e5a299efded96/jobs/five-20260929/myth29/myth-camel.mp4",
+      "notion_page_id": "3e8f2345-b318-817f-b7b8-f2e803ecba77"
     },
     {
       "id": "2026-09-30-survival",
