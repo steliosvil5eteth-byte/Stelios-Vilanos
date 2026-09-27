@@ -1,7 +1,7 @@
 {
   "status": "PARTIAL_SCHEDULED",
   "production_owner": "automation-current-five-20260927-1534",
-  "production_lease_until": "2026-09-27T18:00:00+03:00",
+  "production_lease_until": null,
   "date": "2026-09-30",
   "instruction": "Do not produce or schedule duplicate 30 Sep packs while this lease is active. Reconcile live Metricool queue, exact final media, config/content_strategy.json, Notion, and state/content_history.json before any write.",
   "source_buffer": "state/seven_day_production_buffer.json",
@@ -60,8 +60,10 @@
     "stones30": {
       "time": "17:00",
       "title": "Οι πέτρες που κινούνται στην Κοιλάδα του Θανάτου",
-      "status": "SCRIPT_READY",
-      "manifest": "media_jobs/stones_20260930.json"
+      "status": "BLOCKED_AZURE_F0_RUNTIME_ACCESS",
+      "manifest": "media_jobs/stones_20260930.json",
+      "publish_ready": false,
+      "blocker": "No AZURE_SPEECH_KEY/AZURE_SPEECH_REGION or authenticated workflow-dispatch path in current runtime; required Nestoras Azure F0 voice cannot be substituted."
     },
     "myth30": {
       "time": "20:00",
