@@ -52,6 +52,7 @@ ends=starts[1:]+[length]
 titles=['ΚΥΜΑΤΑ ΣΤΟΝ ΟΥΡΑΝΟ','ΔΥΟ ΣΤΡΩΜΑΤΑ ΑΕΡΑ','ΠΩΣ ΓΕΝΝΙΕΤΑΙ Η ΚΑΜΠΥΛΗ','ΕΝΑ ΣΥΝΤΟΜΟ ΘΕΑΜΑ','ΠΑΝΩ ΑΠΟ ΤΑ ΒΟΥΝΑ','Η ΦΥΣΙΚΗ ΤΩΝ ΡΕΥΣΤΩΝ','Η ΚΙΝΗΣΗ ΓΙΝΕΤΑΙ ΟΡΑΤΗ']
 scenes=[(a,b,images[x['key']],titles[i],'Ενδεικτική αναπαράσταση AI','Πηγές: Met Office • NWS Albany') for i,(a,b,x) in enumerate(zip(starts,ends,job['scenes']))]
 manifest=[]
+render_commands=[]
 for i,(a,b,img,title,label,source) in enumerate(scenes):
  path=Path(img) if img.startswith('/') else P/img
  for key,value in [('title',title),('label',label),('credit',source)]:P.joinpath(f'{i}-{key}.txt').write_text(value)
@@ -60,12 +61,22 @@ for i,(a,b,img,title,label,source) in enumerate(scenes):
  for key,y,size,font in [('title',175,43,BOLD),('label',1470,30,FONT),('credit',1520,27,FONT)]:
   vf+=f',drawtext=fontfile={font}:textfile={P}/{i}-{key}.txt:fontcolor=white:fontsize={size}:x=(w-tw)/2:y={y}'
  frames=round(b*25)-round(a*25)
- run(['ffmpeg','-nostdin','-v','error','-y','-loop','1','-framerate','25','-i',str(path),'-vf',vf,'-frames:v',str(frames),'-an','-c:v','libx264','-preset','ultrafast','-crf','22','-pix_fmt','yuv420p',str(out)])
+ command=['ffmpeg','-nostdin','-v','error','-y','-loop','1','-framerate','25','-i',str(path),'-vf',vf,'-frames:v',str(frames),'-an','-c:v','libx264','-preset','ultrafast','-crf','22','-pix_fmt','yuv420p',str(out)]
+ run(command)
+ render_commands.append((out,frames/25,command))
  clipdur=float(run(['ffprobe','-v','error','-show_entries','format=duration','-of','default=nw=1:nk=1',str(out)]))
  assert abs(clipdur-frames/25)<0.1,(i,clipdur,frames/25)
  manifest.append({'start':round(a*25)/25,'end':round(b*25)/25,'image':str(path),'title':title,'source':source})
 P.joinpath('scenes.txt').write_text(''.join(f"file 'scene-{i:02d}.mp4'\n" for i in range(len(scenes))))
 P.joinpath('scene-map.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2))
+for clip,expected,command in render_commands:
+ try:
+  measured=float(run(['ffprobe','-v','error','-show_entries','format=duration','-of','default=nw=1:nk=1',str(clip)]))
+  assert abs(measured-expected)<0.1
+ except (RuntimeError,ValueError,AssertionError):
+  run(command)
+  measured=float(run(['ffprobe','-v','error','-show_entries','format=duration','-of','default=nw=1:nk=1',str(clip)]))
+  assert abs(measured-expected)<0.1
 run(['ffmpeg','-nostdin','-v','error','-y','-f','concat','-safe','0','-i',str(P/'scenes.txt'),'-i',str(P/'nestoras.wav'),'-vf',f'ass={P}/corrected.ass','-map','0:v','-map','1:a','-c:v','libx264','-preset','fast','-crf','23','-pix_fmt','yuv420p','-c:a','aac','-b:a','128k','-shortest','-movflags','+faststart',str(P/'kelvin-helmholtz.mp4')])
 actual=float(run(['ffprobe','-v','error','-show_entries','format=duration','-of','default=nw=1:nk=1',str(P/'kelvin-helmholtz.mp4')]))
 assert abs(actual-length)<0.2,(actual,length)
