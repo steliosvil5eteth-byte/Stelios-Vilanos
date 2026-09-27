@@ -66,8 +66,19 @@
     "myth30": {
       "time": "20:00",
       "title": "Η στρουθοκάμηλος κρύβει το κεφάλι στην άμμο;",
-      "status": "QUEUED",
-      "cards": 4
+      "status": "SCHEDULED",
+      "cards": 4,
+      "publish_ready": true,
+      "metricool_post_ids": [
+        382879170,
+        382879296
+      ],
+      "metricool_uuids": [
+        "8354266250268002774",
+        "8419495590942623931"
+      ],
+      "media_commit": "567c90a6bedb4bb27768c564c14f00fa373be956",
+      "qa_path": "jobs/five-20260930/myth-ostrich/qa.json"
     }
   }
 }
