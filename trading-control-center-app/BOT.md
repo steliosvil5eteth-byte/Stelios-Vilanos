@@ -45,3 +45,10 @@ These use deterministic fixtures. They do not establish strategy returns, 95% ac
 - https://blog.gdeltproject.org/gdelt-doc-2-0-api-debuts/ — DOC API article list.
 
 Vercel project check returned HTTP 403 for team `steliosvil5eteth-9734`: connection must be re-authenticated for that scope. No production deployment or execution switch was changed.
+
+## Follow-up verification — 2026-09-27
+
+- Fixed the worker's one-shot integration check: HTTP errors, malformed JSON, error payloads and transport failures now return exit code 1 instead of appearing successful. Successful checks return 0.
+- Worker rejects URL credentials, refuses redirects, redacts transport/server error bodies, and interrupts requests/sleep on SIGINT/SIGTERM.
+- Added deterministic worker regression tests to `npm run validate`. Validate, preflight, release-check and ops-check passed locally on this date. Storage in these checks is memory; database migrations and production operation remain unverified, and SLO samples are insufficient.
+- Retried Vercel access: list teams returned no teams; listing projects in the documented scope `steliosvil5eteth-9734` still returned 403 requiring re-authentication. No deployment or execution gates changed.
