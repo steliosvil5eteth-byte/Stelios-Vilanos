@@ -55,6 +55,6 @@
   "publish_to_social": false,
   "production_status": "AUTHORIZED_RENDER_AFTER_VISUAL_QA_REPAIR",
   "repair_note": "Third minimal repair: use the documented images.weserv.nl ssl: origin syntax, preserving the same verified source images and licenses.",
-  "qa_export_retrigger_at": "2026-09-27T15:48:00+03:00",
+  "qa_export_retrigger_at": "2026-09-27T15:56:00+03:00",
   "qa_repair_note": "Direct visual QA found card 3 claimed a younger man visible in the photo, but the exact final photo showed only mother and child. Text corrected to match the actual image. Number suffixes removed from headings because renderer already adds card numbering."
 }
