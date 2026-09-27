@@ -2227,6 +2227,60 @@
           "source_post_id": 382831065
         }
       }
+    },
+    {
+      "job_id": "five-20260928/love28",
+      "date": "2026-09-28",
+      "theme": "love_soul_relationship",
+      "title": "Το ταπεράκι της Δευτέρας",
+      "caption": "Το ταπεράκι της Δευτέρας\n\nΚάθε εβδομάδα έλεγε «περίσσεψε». Μέχρι που η Άννα κατάλαβε τι σήμαινε πραγματικά αυτή η λέξη.\nΠοια μικρή πράξη φροντίδας δεν ξέχασες ποτέ;\nΠρωτότυπη μυθοπλασία. Οι εικόνες δημιουργήθηκαν με AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ιστορίες #Αγάπη #Οικογένεια #Πατέρας #Φροντίδα",
+      "fingerprint": "five-20260928-love28",
+      "status": "scheduled",
+      "scheduled_time": "2026-09-28T15:00:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "382832148,382832155",
+      "metricool_uuid": "-7902353527416862519,7246532472844078062",
+      "media_commit": "227e4f65374e4e9678c9097d67de7b16aa04a315",
+      "duration_seconds": 35,
+      "quality_check": {
+        "final_visuals_reviewed": true,
+        "full_ffmpeg_decode_passed": true,
+        "final_end_reviewed": true,
+        "ai_disclosure": true
+      }
+    },
+    {
+      "job_id": "five-20260928/myth28",
+      "date": "2026-09-28",
+      "theme": "myth_or_truth",
+      "title": "Το χρυσόψαρο ξεχνά σε 3 δευτερόλεπτα;",
+      "caption": "Το χρυσόψαρο ξεχνά σε 3 δευτερόλεπτα;\n\nΗ έρευνα δείχνει κάτι πιο ενδιαφέρον: χρυσόψαρα μαθαίνουν μια απόσταση και χρησιμοποιούν οπτικά στοιχεία για να την εκτιμήσουν. Ο γνωστός ισχυρισμός των τριών δευτερολέπτων είναι μύθος.\nΠηγή: University of Oxford — https://www.biology.ox.ac.uk/node/2793891\nΟι εικόνες είναι εκπαιδευτικές αναπαραστάσεις AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΜύθοςΉΑλήθεια #Χρυσόψαρο #Μνήμη #Επιστήμη #Φύση",
+      "fingerprint": "five-20260928-myth28",
+      "status": "scheduled",
+      "scheduled_time": "2026-09-28T20:00:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "382833554,382833563",
+      "metricool_uuid": "4430904804091774595,-8344171222198759588",
+      "media_commit": "669f1e13838249e103485eabcdd4b41340a23bde",
+      "duration_seconds": 28,
+      "quality_check": {
+        "final_visuals_reviewed": true,
+        "full_ffmpeg_decode_passed": true,
+        "final_end_reviewed": true,
+        "ai_disclosure": true
+      }
     }
   ]
 }
