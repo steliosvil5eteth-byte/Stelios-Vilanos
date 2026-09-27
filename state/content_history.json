@@ -2068,6 +2068,114 @@
           "source_post_id": 382824922
         }
       }
+    },
+    {
+      "job_id": "five-20260928/survival28",
+      "date": "2026-09-28",
+      "theme": "survival",
+      "title": "Σεισμός: 8 προετοιμασίες πριν συμβεί",
+      "caption": "Σεισμός: 8 προετοιμασίες πριν συμβεί\n\nΗ προετοιμασία γίνεται πριν από τη δόνηση. Εννέα κάρτες με οκτώ πρακτικές κινήσεις για το σπίτι, βασισμένες στις οδηγίες της Πολιτικής Προστασίας.\nΠηγή: https://civilprotection.gov.gr/odigies-prostasias/seismoi\nΕικόνες: αναπαραστάσεις AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Σεισμός #Προετοιμασία #ΠολιτικήΠροστασία #Ασφάλεια #Επιβίωση",
+      "fingerprint": "five-20260928-survival28",
+      "status": "scheduled",
+      "scheduled_time": "2026-09-28T09:00:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "382829069,382829077",
+      "metricool_uuid": "5052034884527017936,-1162706392677989621",
+      "notion_page_id": "3e8f2345-b318-8115-92df-c1064d542702",
+      "media_commit": "3284ccaa73e539d34670c28a850250f5fc40bfec",
+      "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/3284ccaa73e539d34670c28a850250f5fc40bfec/jobs/five-20260928/survival28/survival-earthquake.mp4",
+      "duration_seconds": 63,
+      "quality_check": {
+        "final_visuals_reviewed": true,
+        "full_ffmpeg_decode_passed": true,
+        "final_end_reviewed": true,
+        "ai_disclosure": true,
+        "voice": null,
+        "independent_transcript_reviewed": false,
+        "background_music": true
+      },
+      "platform_status": {
+        "facebook": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382829069
+        },
+        "instagram": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382829069
+        },
+        "tiktok": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382829069
+        },
+        "youtube": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382829077
+        }
+      }
+    },
+    {
+      "job_id": "five-20260928/lenticular28v2",
+      "date": "2026-09-28",
+      "theme": "strange_real_phenomenon",
+      "title": "Φακοειδή νέφη: οι φακοί πάνω από τα βουνά",
+      "caption": "Φακοειδή νέφη: οι φακοί πάνω από τα βουνά\n\nΜοιάζουν ακίνητα, αλλά ο αέρας περνά μέσα τους. Πώς τα ορεινά κύματα δημιουργούν αυτά τα παράξενα σύννεφα;\nΠηγές: National Weather Service\nhttps://www.weather.gov/abq/features_acsl\nhttps://www.weather.gov/hfo/lenticular\nΟι εικόνες είναι ενδεικτικές αναπαραστάσεις AI, όχι ιστορικά τεκμήρια.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΦακοειδήΝέφη #Καιρός #Φύση #Επιστήμη #ΠαράξεναΦαινόμενα",
+      "fingerprint": "five-20260928-lenticular28v2",
+      "status": "scheduled",
+      "scheduled_time": "2026-09-28T17:00:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "382829688",
+      "metricool_uuid": "2450639086477656674",
+      "notion_page_id": "3e8f2345-b318-81de-b65d-f8cf8ca1212c",
+      "media_commit": "ef3a79b03a7e762583edcec8d0d6d5aaaedc3886",
+      "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/ef3a79b03a7e762583edcec8d0d6d5aaaedc3886/jobs/five-20260928/lenticular28v2/lenticular-clouds.mp4",
+      "duration_seconds": 105.797,
+      "quality_check": {
+        "final_visuals_reviewed": true,
+        "full_ffmpeg_decode_passed": true,
+        "final_end_reviewed": true,
+        "ai_disclosure": true,
+        "voice": "el-GR-NestorasNeural",
+        "independent_transcript_reviewed": true,
+        "background_music": false
+      },
+      "platform_status": {
+        "facebook": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382829688
+        },
+        "instagram": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382829688
+        },
+        "tiktok": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382829688
+        },
+        "youtube": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382829688
+        }
+      }
     }
   ]
 }
