@@ -1,8 +1,8 @@
 {
-  "version": 2,
+  "version": 3,
   "timezone": "Europe/Athens",
-  "program_label": "CURRENT_TEN_DAILY",
-  "current_strategy": "CURRENT_TEN_DAILY_20260924",
+  "program_label": "CURRENT_FIVE_DAILY",
+  "current_strategy": "CURRENT_FIVE_DAILY_20260927",
   "current_status": "ACTIVE",
   "status": "active",
   "publishing_paused": false,
@@ -10,35 +10,32 @@
   "active_metricool_brand_id": 7076410,
   "active_metricool_brand_label": "Ιστορίες που μας αγγίζουν",
   "previous_metricool_brands_operational": false,
-  "target_count": 10,
+  "target_count": 5,
   "completed_count": 0,
-  "next_target_count": 10,
+  "next_target_count": 5,
   "active_slots_local": [
-    "07:00",
     "09:00",
     "11:00",
-    "13:00",
     "15:00",
     "17:00",
-    "18:30",
-    "20:00",
-    "21:30",
-    "23:00"
+    "20:00"
   ],
   "active_categories": [
-    "relationships",
     "survival",
     "zodiac",
-    "dog_bartender",
     "love_soul_relationship",
     "strange_real_phenomenon",
-    "greece_two_day_trip",
-    "myth_or_truth",
-    "documented_experiments",
-    "international_legend"
+    "myth_or_truth"
   ],
   "quality_first_catch_up": true,
   "preserve_history_for_dedupe": true,
   "legacy_recovery_enabled": false,
-  "rule": "Only the Metricool brand 'Ιστορίες που μας αγγίζουν' (7076410) is operational. Produce and publish exactly 10 correct logical posts per day. Failed slots are repaired and released later the same day after full QA; old brands and schedules are never used as operational sources."
+  "rule": "Only brand 7076410. Five posts/day, one per active category after full QA and fresh dedupe. Never catch up paused categories. Preserve published history.",
+  "paused_categories": [
+    "relationships",
+    "dog_bartender",
+    "greece_two_day_trip",
+    "documented_experiments",
+    "international_legend"
+  ]
 }
