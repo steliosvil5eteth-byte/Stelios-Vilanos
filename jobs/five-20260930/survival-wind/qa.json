@@ -4,7 +4,7 @@
   "slot": "09:00",
   "category": "survival",
   "title": "Θυελλώδεις άνεμοι: προετοιμασία και προστασία",
-  "status": "PASSED_FINAL_REVIEW_LOCAL_ARTIFACT",
+  "status": "PASSED_FINAL_REVIEW_AND_METRICOOL_READBACK",
   "reviewed_at": "2026-09-27T15:58:00+03:00",
   "reviewer": "automation-current-five-20260927-1534",
   "source": "https://civilprotection.gov.gr/odigies-prostasias/thyellodeis-anemoi",
@@ -29,8 +29,8 @@
     "double_audio": false
   },
   "disclosure": "Πολιτική Προστασία • Εικόνα AI",
-  "publish_ready": false,
-  "note": "Local artifact QA passed. Keep blocked from publishing until immutable GitHub commit, live duplicate check, Metricool create/readback, and platform configuration validation succeed.",
+  "publish_ready": true,
+  "note": "Final carousel and corrected YouTube slideshow passed visual/technical QA; Metricool live readback confirmed all four destinations, native formats, draft=false, and autoPublish=true.",
   "sha256": {
     "card-01.jpg": "5286a4516f21ac131aea0d35ae5b53cb036513b157cd60aea91433f9ffc76ac3",
     "card-02.jpg": "0dd27777847e3460d65c2275ee1eccc5e3c80b95b2263cf6cab78ba946a57b4d",
@@ -42,5 +42,23 @@
     "card-08.jpg": "a2572c10babc032ae26400548542cc650106dbe74986ba8bc874e05d3e8433e9",
     "card-09.jpg": "2a8e9e5a5a70c545b043282bc0d7cece871b9bc53bd644aa4498bb71e94b61ed",
     "survival-wind-youtube-short.mp4": "7461b16877532b30f64c4c23b02027c82d74a7ad232d86190bb4d4b974b87aa7"
+  },
+  "media_commit": "af93312882e202d70225a46800d79fdce645ceb7",
+  "metricool": {
+    "post_ids": [
+      382862792,
+      382863015
+    ],
+    "uuids": [
+      "7521044579969354051",
+      "-9023996980111258817"
+    ],
+    "providers": {
+      "facebook": "PENDING",
+      "instagram": "PENDING",
+      "tiktok": "PENDING",
+      "youtube": "PENDING"
+    },
+    "live_readback_at": "2026-09-27T15:59:00+03:00"
   }
 }
