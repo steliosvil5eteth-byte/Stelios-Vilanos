@@ -1,0 +1,31 @@
+name: Prepare 29 Sep narration
+on:
+  push:
+    paths: ['.github/workflows/prepare-kelvin-20260929.yml']
+permissions:
+  contents: read
+jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          pip install pillow requests azure-cognitiveservices-speech faster-whisper==1.2.0
+      - name: Synthesize with existing approved Azure F0 and verify
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+        run: python tools/prepare_kelvin_audio.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: kelvin-audio-review
+          path: audio-review/
+          retention-days: 3
+
+# Scene-specific reviewed production
