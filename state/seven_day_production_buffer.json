@@ -1,0 +1,494 @@
+{
+  "version": 1,
+  "timezone": "Europe/Athens",
+  "brand_id": 7076410,
+  "horizon_start": "2026-09-28",
+  "horizon_end": "2026-10-04",
+  "target_logical_posts": 35,
+  "final_ready_through": null,
+  "rule": "Production backlog only; never treat this file as a scheduled or published queue. Only live Metricool readback establishes that.",
+  "jobs": [
+    {
+      "id": "2026-09-28-survival",
+      "date": "2026-09-28",
+      "slot": "09:00",
+      "category": "survival",
+      "title": "Σεισμός: 8 προετοιμασίες πριν συμβεί",
+      "status": "IN_PRODUCTION",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-09-28-zodiac",
+      "date": "2026-09-28",
+      "slot": "11:00",
+      "category": "zodiac",
+      "title": "Πώς δέχεσαι ένα κομπλιμέντο; Κριός–Παρθένος",
+      "status": "IN_PRODUCTION",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-09-28-love_soul_relationship",
+      "date": "2026-09-28",
+      "slot": "15:00",
+      "category": "love_soul_relationship",
+      "title": "Το ταπεράκι της Δευτέρας",
+      "status": "IN_PRODUCTION",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-09-28-strange_real_phenomenon",
+      "date": "2026-09-28",
+      "slot": "17:00",
+      "category": "strange_real_phenomenon",
+      "title": "Φακοειδή νέφη: οι φακοί πάνω από τα βουνά",
+      "status": "IN_PRODUCTION",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-09-28-myth_or_truth",
+      "date": "2026-09-28",
+      "slot": "20:00",
+      "category": "myth_or_truth",
+      "title": "Το χρυσόψαρο ξεχνά σε 3 δευτερόλεπτα;",
+      "status": "IN_PRODUCTION",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-09-29-survival",
+      "date": "2026-09-29",
+      "slot": "09:00",
+      "category": "survival",
+      "title": "Καταιγίδα: προστασία μέσα στο σπίτι",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-09-29-zodiac",
+      "date": "2026-09-29",
+      "slot": "11:00",
+      "category": "zodiac",
+      "title": "Πώς δέχεσαι ένα κομπλιμέντο; Ζυγός–Ιχθύες",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-09-29-love_soul_relationship",
+      "date": "2026-09-29",
+      "slot": "15:00",
+      "category": "love_soul_relationship",
+      "title": "Το σακάκι που δεν φόρεσε",
+      "status": "SCRIPT_READY",
+      "publish_ready": false,
+      "metricool_post_ids": [],
+      "script_cards": [
+        [
+          "ΤΟ ΣΑΚΑΚΙ ΕΜΕΝΕ ΣΤΗ ΝΤΟΥΛΑΠΑ",
+          "Το είχε αγοράσει για μια δουλειά που δεν τόλμησε ποτέ να διεκδικήσει."
+        ],
+        [
+          "«ΔΕΝ ΕΙΣΑΙ ΓΙΑ ΤΕΤΟΙΑ», ΤΗΣ ΕΛΕΓΕ",
+          "Η σχέση τελείωσε. Η φράση όμως είχε μείνει μέσα της."
+        ],
+        [
+          "ΕΝΑ ΠΡΩΙ ΤΟ ΕΒΓΑΛΕ ΑΠΟ ΤΗ ΘΗΚΗ",
+          "Δεν ήξερε αν θα την προσλάμβαναν. Ήξερε ότι θα εμφανιζόταν."
+        ],
+        [
+          "ΣΤΗ ΣΥΝΕΝΤΕΥΞΗ ΤΗΣ ΕΤΡΕΜΑΝ ΤΑ ΧΕΡΙΑ",
+          "Μίλησε παρ’ όλα αυτά. Για πρώτη φορά, χωρίς να απολογείται για όσα ήθελε."
+        ],
+        [
+          "Η ΠΡΩΤΗ ΝΙΚΗ ΗΡΘΕ ΠΡΙΝ ΤΗΝ ΑΠΑΝΤΗΣΗ",
+          "Είχε πάψει να ζητά άδεια για τη δική της ζωή."
+        ]
+      ]
+    },
+    {
+      "id": "2026-09-29-strange_real_phenomenon",
+      "date": "2026-09-29",
+      "slot": "17:00",
+      "category": "strange_real_phenomenon",
+      "title": "Kelvin–Helmholtz: κύματα στον ουρανό",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-09-29-myth_or_truth",
+      "date": "2026-09-29",
+      "slot": "20:00",
+      "category": "myth_or_truth",
+      "title": "Οι καμήλες αποθηκεύουν νερό στην καμπούρα;",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-09-30-survival",
+      "date": "2026-09-30",
+      "slot": "09:00",
+      "category": "survival",
+      "title": "Θυελλώδεις άνεμοι: προετοιμασία και προστασία",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-09-30-zodiac",
+      "date": "2026-09-30",
+      "slot": "11:00",
+      "category": "zodiac",
+      "title": "Ποια μικρή χαρά σου αλλάζει τη μέρα; Κριός–Παρθένος",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-09-30-love_soul_relationship",
+      "date": "2026-09-30",
+      "slot": "15:00",
+      "category": "love_soul_relationship",
+      "title": "Το άδειο κάδρο",
+      "status": "SCRIPT_READY",
+      "publish_ready": false,
+      "metricool_post_ids": [],
+      "script_cards": [
+        [
+          "ΤΗΣ ΕΚΑΝΕ ΔΩΡΟ ΕΝΑ ΑΔΕΙΟ ΚΑΔΡΟ",
+          "«Τη φωτογραφία θα τη βάλουμε μετά», της είπε ο πατέρας της."
+        ],
+        [
+          "ΕΚΕΙΝΗ ΝΟΜΙΖΕ ΟΤΙ ΕΙΧΕ ΞΕΧΑΣΕΙ",
+          "Το άφησε στο γραφείο της και βυθίστηκε ξανά στη δουλειά."
+        ],
+        [
+          "ΤΗΝ ΚΥΡΙΑΚΗ ΤΗΣ ΖΗΤΗΣΕ ΜΙΑ ΒΟΛΤΑ",
+          "Χωρίς γενέθλια. Χωρίς επέτειο. Χωρίς κάποια ιδιαίτερη αφορμή."
+        ],
+        [
+          "ΣΤΗΝ ΠΑΡΑΛΙΑ ΕΒΓΑΛΑΝ ΜΙΑ ΑΤΣΑΛΗ SELFIE",
+          "Ο αέρας της έκρυβε το πρόσωπο. Εκείνος γελούσε με κλειστά μάτια."
+        ],
+        [
+          "ΤΟ ΚΑΔΡΟ ΔΕΝ ΠΕΡΙΜΕΝΕ ΜΙΑ ΤΕΛΕΙΑ ΦΩΤΟΓΡΑΦΙΑ",
+          "Περίμενε μια στιγμή που θα έφτιαχναν μαζί."
+        ]
+      ]
+    },
+    {
+      "id": "2026-09-30-strange_real_phenomenon",
+      "date": "2026-09-30",
+      "slot": "17:00",
+      "category": "strange_real_phenomenon",
+      "title": "Οι πέτρες που κινούνται στην Κοιλάδα του Θανάτου",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-09-30-myth_or_truth",
+      "date": "2026-09-30",
+      "slot": "20:00",
+      "category": "myth_or_truth",
+      "title": "Η στρουθοκάμηλος κρύβει το κεφάλι στην άμμο;",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-10-01-survival",
+      "date": "2026-10-01",
+      "slot": "09:00",
+      "category": "survival",
+      "title": "112: πώς δίνουμε χρήσιμες πληροφορίες",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-10-01-zodiac",
+      "date": "2026-10-01",
+      "slot": "11:00",
+      "category": "zodiac",
+      "title": "Ποια μικρή χαρά σου αλλάζει τη μέρα; Ζυγός–Ιχθύες",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-10-01-love_soul_relationship",
+      "date": "2026-10-01",
+      "slot": "15:00",
+      "category": "love_soul_relationship",
+      "title": "Η ομπρέλα της στάσης",
+      "status": "SCRIPT_READY",
+      "publish_ready": false,
+      "metricool_post_ids": [],
+      "script_cards": [
+        [
+          "ΤΗΣ ΕΔΩΣΕ ΤΗΝ ΟΜΠΡΕΛΑ ΚΑΙ ΕΦΥΓΕ",
+          "Στη στάση, ένας άγνωστος της είπε: «Εγώ μένω εδώ κοντά»."
+        ],
+        [
+          "ΔΕΝ ΠΡΟΛΑΒΕ ΝΑ ΜΑΘΕΙ ΤΟ ΟΝΟΜΑ ΤΟΥ",
+          "Την κράτησε στο γραφείο, ελπίζοντας να τον ξαναδεί."
+        ],
+        [
+          "ΜΙΑ ΕΒΔΟΜΑΔΑ ΜΕΤΑ ΤΟΝ ΑΝΑΓΝΩΡΙΣΕ",
+          "Ήταν πάλι στη στάση. Και αυτή τη φορά έβρεχε πάνω του."
+        ],
+        [
+          "«ΔΕΝ ΜΕΝΕΙΣ ΕΔΩ ΚΟΝΤΑ;» ΤΟΝ ΡΩΤΗΣΕ",
+          "Χαμογέλασε αμήχανα. «Όχι τόσο κοντά όσο σου είπα»."
+        ],
+        [
+          "ΕΚΕΙΝΗ ΑΝΟΙΞΕ ΤΗΝ ΟΜΠΡΕΛΑ ΓΙΑ ΔΥΟ",
+          "Η πρώτη τους κουβέντα κράτησε περισσότερο από τη βροχή."
+        ]
+      ]
+    },
+    {
+      "id": "2026-10-01-strange_real_phenomenon",
+      "date": "2026-10-01",
+      "slot": "17:00",
+      "category": "strange_real_phenomenon",
+      "title": "Λίμνη Nyos: όταν απελευθερώθηκε διοξείδιο του άνθρακα",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-10-01-myth_or_truth",
+      "date": "2026-10-01",
+      "slot": "20:00",
+      "category": "myth_or_truth",
+      "title": "Οι εποχές αλλάζουν επειδή πλησιάζουμε τον Ήλιο;",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-10-02-survival",
+      "date": "2026-10-02",
+      "slot": "09:00",
+      "category": "survival",
+      "title": "Χιονόπτωση: ετοιμάζουμε σπίτι και εφόδια",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-10-02-zodiac",
+      "date": "2026-10-02",
+      "slot": "11:00",
+      "category": "zodiac",
+      "title": "Πώς μοιράζεσαι μια μικρή επιτυχία; Κριός–Παρθένος",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-10-02-love_soul_relationship",
+      "date": "2026-10-02",
+      "slot": "15:00",
+      "category": "love_soul_relationship",
+      "title": "Το κουδούνι στις επτά",
+      "status": "SCRIPT_READY",
+      "publish_ready": false,
+      "metricool_post_ids": [],
+      "script_cards": [
+        [
+          "ΤΟ ΚΟΥΔΟΥΝΙ ΧΤΥΠΗΣΕ ΣΤΙΣ ΕΠΤΑ",
+          "Η νέα γειτόνισσα κρατούσε μια παλιά κιθάρα. «Μου είπαν ότι διδάσκατε»."
+        ],
+        [
+          "ΕΙΧΕ ΧΡΟΝΙΑ ΝΑ ΑΝΟΙΞΕΙ ΤΗ ΘΗΚΗ ΤΟΥ",
+          "Μετά τη σύνταξη έλεγε πως η μουσική ανήκε πια στους νεότερους."
+        ],
+        [
+          "ΣΤΟ ΠΡΩΤΟ ΜΑΘΗΜΑ ΕΚΑΝΑΝ ΚΑΙ ΟΙ ΔΥΟ ΛΑΘΗ",
+          "Εκείνη στις συγχορδίες. Εκείνος, όταν προσπάθησε να κρύψει τη συγκίνησή του."
+        ],
+        [
+          "ΛΙΓΟ ΚΑΙΡΟ ΜΕΤΑ ΕΠΑΙΞΑΝ ΜΑΖΙ ΕΝΑ ΤΡΑΓΟΥΔΙ",
+          "Δεν ήταν τέλειο. Ήταν όμως η πρώτη φορά που το σπίτι γέμισε ξανά μουσική."
+        ],
+        [
+          "ΔΕΝ ΤΟΥ ΕΙΧΕ ΖΗΤΗΣΕΙ ΜΟΝΟ ΕΝΑ ΜΑΘΗΜΑ",
+          "Χωρίς να το ξέρει, του είχε δώσει έναν λόγο να ξαναρχίσει."
+        ]
+      ]
+    },
+    {
+      "id": "2026-10-02-strange_real_phenomenon",
+      "date": "2026-10-02",
+      "slot": "17:00",
+      "category": "strange_real_phenomenon",
+      "title": "Λουλούδια πάγου πάνω σε βλαστούς",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-10-02-myth_or_truth",
+      "date": "2026-10-02",
+      "slot": "20:00",
+      "category": "myth_or_truth",
+      "title": "Όλοι οι πιγκουίνοι ζουν στην Ανταρκτική;",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-10-03-survival",
+      "date": "2026-10-03",
+      "slot": "09:00",
+      "category": "survival",
+      "title": "Παγετός: τι προσέχουμε στη μετακίνηση",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-10-03-zodiac",
+      "date": "2026-10-03",
+      "slot": "11:00",
+      "category": "zodiac",
+      "title": "Πώς μοιράζεσαι μια μικρή επιτυχία; Ζυγός–Ιχθύες",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-10-03-love_soul_relationship",
+      "date": "2026-10-03",
+      "slot": "15:00",
+      "category": "love_soul_relationship",
+      "title": "Το λουλούδι στο συνεργείο",
+      "status": "SCRIPT_READY",
+      "publish_ready": false,
+      "metricool_post_ids": [],
+      "script_cards": [
+        [
+          "ΕΚΛΕΙΣΕ ΤΟ ΣΥΝΕΡΓΕΙΟ ΧΩΡΙΣ ΝΑ ΤΗΣ ΤΟ ΠΕΙ",
+          "Φοβόταν περισσότερο το βλέμμα της παρά τις άδειες θέσεις των εργαλείων."
+        ],
+        [
+          "ΤΟ ΒΡΑΔΥ ΤΗΣ ΑΦΗΣΕ ΤΑ ΚΛΕΙΔΙΑ ΣΤΟ ΤΡΑΠΕΖΙ",
+          "«Δεν ξέρω τι θα κάνω τώρα», της είπε."
+        ],
+        [
+          "ΕΚΕΙΝΗ ΔΕΝ ΤΟΥ ΥΠΟΣΧΕΘΗΚΕ ΟΤΙ ΟΛΑ ΘΑ ΕΙΝΑΙ ΕΥΚΟΛΑ",
+          "Τον ρώτησε μόνο: «Από πού θέλεις να ξεκινήσουμε αύριο;»."
+        ],
+        [
+          "ΤΟ ΠΡΩΙ ΒΡΗΚΕ ΜΙΑ ΜΙΚΡΗ ΓΛΑΣΤΡΑ",
+          "Δίπλα της, δυο κούπες καφέ και ένα λευκό τετράδιο για το επόμενο βήμα."
+        ],
+        [
+          "ΔΕΝ ΤΟΝ ΑΓΑΠΟΥΣΕ ΜΟΝΟ ΟΤΑΝ ΤΑ ΚΑΤΑΦΕΡΝΕ",
+          "Και αυτή ήταν η πρώτη σταθερή βάση για να ξανασταθεί."
+        ]
+      ]
+    },
+    {
+      "id": "2026-10-03-strange_real_phenomenon",
+      "date": "2026-10-03",
+      "slot": "17:00",
+      "category": "strange_real_phenomenon",
+      "title": "Γιατί ο βασάλτης σχηματίζει γεωμετρικές στήλες;",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-10-03-myth_or_truth",
+      "date": "2026-10-03",
+      "slot": "20:00",
+      "category": "myth_or_truth",
+      "title": "Ο χαμαιλέοντας αλλάζει χρώμα μόνο για καμουφλάζ;",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-10-04-survival",
+      "date": "2026-10-04",
+      "slot": "09:00",
+      "category": "survival",
+      "title": "Τσουνάμι: φυσικές προειδοποιήσεις και απομάκρυνση",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-10-04-zodiac",
+      "date": "2026-10-04",
+      "slot": "11:00",
+      "category": "zodiac",
+      "title": "Πώς υποδέχεσαι μια αυθόρμητη πρόσκληση; Κριός–Παρθένος",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-10-04-love_soul_relationship",
+      "date": "2026-10-04",
+      "slot": "15:00",
+      "category": "love_soul_relationship",
+      "title": "Οι γραμμές πίσω από την πόρτα",
+      "status": "SCRIPT_READY",
+      "publish_ready": false,
+      "metricool_post_ids": [],
+      "script_cards": [
+        [
+          "ΠΡΙΝ ΠΑΡΑΔΩΣΟΥΝ ΤΑ ΚΛΕΙΔΙΑ, ΖΗΤΗΣΕ ΕΝΑ ΛΕΠΤΟ",
+          "Η μητέρα στάθηκε πίσω από την πόρτα του παλιού σπιτιού."
+        ],
+        [
+          "ΕΚΕΙ ΥΠΗΡΧΑΝ ΑΚΟΜΗ ΟΙ ΜΟΛΥΒΙΕΣ",
+          "Το ύψος της κόρης της κάθε Σεπτέμβρη. Οι χρονολογίες γραμμένες στραβά."
+        ],
+        [
+          "Η ΚΟΡΗ ΤΙΣ ΦΩΤΟΓΡΑΦΙΣΕ ΜΙΑ ΜΙΑ",
+          "Η μητέρα χαμογέλασε. «Δεν ήθελα να τις ξεχάσουμε»."
+        ],
+        [
+          "ΣΤΟ ΚΑΙΝΟΥΡΙΟ ΣΠΙΤΙ ΤΗΝ ΠΕΡΙΜΕΝΕ ΕΝΑ ΚΑΔΡΟ",
+          "Μέσα του, όλες οι γραμμές μαζί. Από την πρώτη μέχρι την τελευταία."
+        ],
+        [
+          "ΑΛΛΑΞΑΝ ΔΙΕΥΘΥΝΣΗ, ΟΧΙ ΙΣΤΟΡΙΑ",
+          "Κάποιες ρίζες ταξιδεύουν μαζί μας."
+        ]
+      ]
+    },
+    {
+      "id": "2026-10-04-strange_real_phenomenon",
+      "date": "2026-10-04",
+      "slot": "17:00",
+      "category": "strange_real_phenomenon",
+      "title": "STEVE: η μωβ κορδέλα στον νυχτερινό ουρανό",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    },
+    {
+      "id": "2026-10-04-myth_or_truth",
+      "date": "2026-10-04",
+      "slot": "20:00",
+      "category": "myth_or_truth",
+      "title": "Οι ταύροι θυμώνουν εξαιτίας του κόκκινου χρώματος;",
+      "status": "RESEARCH_AND_SCRIPT_REQUIRED",
+      "publish_ready": false,
+      "metricool_post_ids": []
+    }
+  ]
+}
