@@ -15,14 +15,14 @@
         {
           "title": "«ΓΕΙΑ ΣΟΥ, ΓΙΕ ΜΟΥ.» — 1/5",
           "text": "Ο Νίκος πάγωσε. Ο ηλικιωμένος άντρας τον κοίταζε σαν να τον ήξερε μια ζωή. «Με λένε Ανδρέα», είπε. «Και ήρθα να σου πω την αλήθεια.»",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F7%2F7b%2FElderly_man_in_a_bookstore_%2528Unsplash%2529.jpg&w=1600&output=jpg",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F7%2F7b%2FElderly_man_in_a_bookstore_(Unsplash).jpg&w=1600&output=jpg",
           "source_credit": "Aris Sfakianakis / Unsplash via Wikimedia Commons",
           "license": "CC0 1.0"
         },
         {
           "title": "ΔΕΝ ΗΤΑΝ Ο ΠΑΤΕΡΑΣ ΠΟΥ ΗΞΕΡΕ — 2/5",
           "text": "«Ο άνθρωπος που σε μεγάλωσε ήταν πατέρας σου σε όλα», συνέχισε ο Ανδρέας. «Σε όλα — εκτός από το αίμα.»",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F2%2F24%2FSerious_man_in_furry_hood_%2528Unsplash%2529.jpg&w=1600&output=jpg",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F2%2F24%2FSerious_man_in_furry_hood_(Unsplash).jpg&w=1600&output=jpg",
           "source_credit": "Frank Marino / Unsplash via Wikimedia Commons",
           "license": "CC0 1.0"
         },
@@ -36,9 +36,9 @@
         {
           "title": "«ΔΕΝ ΣΕ ΕΓΚΑΤΕΛΕΙΨΑ» — 4/5",
           "text": "«Δεν έφυγα επειδή δεν σε ήθελα», είπε. «Με έβγαλαν από τη ζωή σου. Για χρόνια πίστευα ότι έτσι θα έμενες ασφαλής.»",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F1%2F1c%2FMan_alone_in_T%25C3%25A0_X%25C3%25B9a_03-03-2017.jpg&w=1600&output=jpg",
-          "source_credit": "Linh Pham / Unsplash via Wikimedia Commons",
-          "license": "CC0 1.0"
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F1%2F17%2FOld_man_sitting_portrait.jpg&w=1600&output=jpg",
+          "source_credit": "Charles Roscoe Savage / Harold B. Lee Library via Wikimedia Commons",
+          "license": "Public domain"
         },
         {
           "title": "ΚΑΙ ΤΟΤΕ ΜΙΛΗΣΕ Η ΜΑΡΙΑ — 5/5",
@@ -53,6 +53,6 @@
     }
   ],
   "publish_to_social": false,
-  "production_status": "AUTHORIZED_RENDER_RETRY_PINNED_PROXY",
-  "repair_note": "Direct Wikimedia downloads hit HTTP 429. Minimum safe repair: same verified source files routed through approved images.weserv.nl proxy; credits/licenses unchanged."
+  "production_status": "AUTHORIZED_RENDER_RETRY_PROXY_ENCODING_FIXED",
+  "repair_note": "Second minimal repair: remove double URL encoding in the image proxy; all source identities and licenses remain verified. Card 4 uses a public-domain older-man portrait to avoid a Unicode source-path failure."
 }
