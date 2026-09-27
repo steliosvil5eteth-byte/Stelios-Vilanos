@@ -4,7 +4,7 @@
   "slot": "15:00",
   "category": "love_soul_relationship",
   "title": "Το άδειο κάδρο",
-  "status": "PASSED_FINAL_REVIEW_LOCAL_ARTIFACT",
+  "status": "PASSED_FINAL_REVIEW_AND_METRICOOL_READBACK",
   "reviewed_at": "2026-09-27T16:32:00+03:00",
   "reviewer": "automation-current-five-20260927-1534",
   "carousel": {
@@ -29,8 +29,27 @@
     "double_audio": false
   },
   "disclosure": "Πρωτότυπη μυθοπλασία • Εικόνα AI",
-  "publish_ready": false,
-  "note": "Local artifact QA passed. Keep blocked from publishing until immutable GitHub commit, fresh duplicate check, Metricool create/readback, and platform validation succeed.",
+  "publish_ready": true,
+  "media_commit": "a1111aa19e2f24ffddc9de67de26ca3f8972d2a8",
+  "metricool": {
+    "carousel_id": 382874914,
+    "carousel_uuid": "-2432437666935323877",
+    "youtube_id": 382875431,
+    "youtube_uuid": "4199047690556754284",
+    "publication": "2026-09-30T15:00:00 Europe/Athens",
+    "providers": {
+      "facebook": "PENDING",
+      "instagram": "PENDING",
+      "tiktok": "PENDING",
+      "youtube": "PENDING"
+    },
+    "draft": false,
+    "auto_publish": true,
+    "tiktok_auto_add_music": true,
+    "youtube_ai_disclosure": true,
+    "live_readback_at": "2026-09-27T16:35:00+03:00"
+  },
+  "note": "Final artifact QA passed; immutable commit, fresh duplicate checks, native-format scheduling and live Metricool readback succeeded for all four providers. PENDING means scheduled, not published.",
   "sha256": {
     "card-01.jpg": "d2b8ebf052dd03c8c3fecfc2a6456e6c739197a71565fe9c9b9e93fc37cea7ad",
     "card-02.jpg": "006f853c0cb65f16ad622dc1e94bfc424326bf22008d47c0c4b2cb66182ecb60",
