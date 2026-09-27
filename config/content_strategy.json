@@ -1,9 +1,9 @@
 {
-  "version": 2,
+  "version": 3,
   "timezone": "Europe/Athens",
-  "strategy_id": "CURRENT_TEN_DAILY_20260924",
-  "program_label": "CURRENT_TEN_DAILY",
-  "effective_at": "2026-09-24T19:37:00+03:00",
+  "strategy_id": "CURRENT_FIVE_DAILY_20260927",
+  "program_label": "CURRENT_FIVE_DAILY",
+  "effective_at": "2026-09-27T12:56:14+03:00",
   "priority": "SOLE_ACTIVE_SOCIAL_STRATEGY",
   "active_schedule": true,
   "active_metricool_brand": {
@@ -11,15 +11,9 @@
     "label": "Ιστορίες που μας αγγίζουν",
     "exclusive": true
   },
-  "daily_target_logical_posts": 10,
-  "destination_target_per_day": 40,
+  "daily_target_logical_posts": 5,
+  "destination_target_per_day": 20,
   "slots": [
-    {
-      "time": "07:00",
-      "category": "relationships",
-      "format": "carousel",
-      "cards": 7
-    },
     {
       "time": "09:00",
       "category": "survival",
@@ -34,13 +28,6 @@
       "zodiac_visual_required": true
     },
     {
-      "time": "13:00",
-      "category": "dog_bartender",
-      "format": "carousel",
-      "cards": 4,
-      "brown_same_dog_required": true
-    },
-    {
       "time": "15:00",
       "category": "love_soul_relationship",
       "format": "carousel",
@@ -52,25 +39,10 @@
       "format": "narrated_video"
     },
     {
-      "time": "18:30",
-      "category": "greece_two_day_trip",
-      "format": "narrated_video"
-    },
-    {
       "time": "20:00",
       "category": "myth_or_truth",
       "format": "carousel",
       "cards": 4
-    },
-    {
-      "time": "21:30",
-      "category": "documented_experiments",
-      "format": "narrated_video"
-    },
-    {
-      "time": "23:00",
-      "category": "international_legend",
-      "format": "narrated_video"
     }
   ],
   "platforms": {
@@ -136,12 +108,123 @@
     "if_failed": "Keep Draft/Blocked, repair, re-run full QA, then publish later the same day at the first safe available time.",
     "never_backdate": true,
     "live_duplicate_check_before_retry": true,
-    "end_of_day_target": "Exactly 10 correct logical posts; never create an 11th duplicate to compensate."
+    "end_of_day_target": "Exactly five correct logical posts, one per active series. Do not catch up paused categories. Preserve already published history."
   },
   "legacy": {
     "previous_metricool_brands_operational": false,
     "previous_schedules_operational": false,
     "previous_audio_rules_operational": false,
     "historical_data_use": "Audit/deduplication only; never a scheduling source."
+  },
+  "paused_categories": [
+    "relationships",
+    "dog_bartender",
+    "greece_two_day_trip",
+    "documented_experiments",
+    "international_legend"
+  ],
+  "selection_evidence": {
+    "source": "Metricool brand 7076410 TikTok post analytics",
+    "publication_window": "2026-09-20 through 2026-09-25",
+    "retrieved_on": "2026-09-27",
+    "criterion": "Top five by mean views per post; at least 24h old. Cross-platform sanity check, not pooled views.",
+    "stats": [
+      {
+        "c": "legend",
+        "n": 5,
+        "sum": 1863,
+        "mean": 372.6,
+        "median": 406,
+        "likes": 13,
+        "shares": 0
+      },
+      {
+        "c": "experiments",
+        "n": 1,
+        "sum": 232,
+        "mean": 232,
+        "median": 232,
+        "likes": 0,
+        "shares": 0
+      },
+      {
+        "c": "myth",
+        "n": 5,
+        "sum": 5993,
+        "mean": 1198.6,
+        "median": 943,
+        "likes": 53,
+        "shares": 7
+      },
+      {
+        "c": "travel",
+        "n": 3,
+        "sum": 2221,
+        "mean": 740.3333333333334,
+        "median": 685,
+        "likes": 35,
+        "shares": 2
+      },
+      {
+        "c": "phenomenon",
+        "n": 5,
+        "sum": 6750,
+        "mean": 1350,
+        "median": 290,
+        "likes": 115,
+        "shares": 2
+      },
+      {
+        "c": "love",
+        "n": 5,
+        "sum": 4388,
+        "mean": 877.6,
+        "median": 565,
+        "likes": 47,
+        "shares": 2
+      },
+      {
+        "c": "dog",
+        "n": 3,
+        "sum": 1260,
+        "mean": 420,
+        "median": 444,
+        "likes": 14,
+        "shares": 0
+      },
+      {
+        "c": "zodiac",
+        "n": 6,
+        "sum": 39343,
+        "mean": 6557.166666666667,
+        "median": 1680,
+        "likes": 342,
+        "shares": 20
+      },
+      {
+        "c": "survival",
+        "n": 3,
+        "sum": 4326,
+        "mean": 1442,
+        "median": 1444,
+        "likes": 31,
+        "shares": 3
+      },
+      {
+        "c": "relationships",
+        "n": 2,
+        "sum": 880,
+        "mean": 440,
+        "median": 440,
+        "likes": 7,
+        "shares": 0
+      }
+    ],
+    "limitations": [
+      "Small unequal sample sizes and post ages",
+      "No reliable follower attribution",
+      "Phenomenon mean dominated by Brinicle",
+      "No causal proof or guaranteed future ranking"
+    ]
   }
 }
