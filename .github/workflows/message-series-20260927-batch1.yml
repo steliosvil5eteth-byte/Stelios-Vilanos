@@ -44,8 +44,11 @@ jobs:
             git -C "$OUT" checkout --orphan media-output
             git -C "$OUT" rm -rf .
           fi
-          mkdir -p "$OUT/jobs"
-          cp -a "$OUTPUT_DIR"/. "$OUT/jobs/"
+          SRC="$(find \"$OUTPUT_DIR\" -mindepth 1 -maxdepth 1 -type d | head -n1)"
+          test -n "$SRC"
+          mkdir -p "$OUT/jobs/message-series-20260927-batch1"
+          rm -rf "$OUT/jobs/message-series-20260927-batch1"/*
+          cp -a "$SRC"/. "$OUT/jobs/message-series-20260927-batch1/"
           git -C "$OUT" config user.name 'github-actions[bot]'
           git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
           git -C "$OUT" add jobs
