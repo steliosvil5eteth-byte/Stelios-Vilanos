@@ -299,5 +299,14 @@
     "strange_real_phenomenon",
     "myth_or_truth",
     "survival"
-  ]
+  ],
+  "continuation_policy": {
+    "authorized_until": "2050-12-31",
+    "timezone": "Europe/Athens",
+    "rolling_reviewed_queue_days": 7,
+    "target_logical_posts_per_day": 5,
+    "method": "Progressive production and verified scheduling, not bulk placeholders",
+    "requires_final_media_review": true,
+    "service_availability_not_guaranteed": true
+  }
 }
