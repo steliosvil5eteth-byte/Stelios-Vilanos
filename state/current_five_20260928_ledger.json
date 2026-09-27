@@ -3,7 +3,7 @@
   "date": "2026-09-28",
   "brand_id": 7076410,
   "timezone": "Europe/Athens",
-  "observed_at": "2026-09-27T14:16:29+03:00",
+  "observed_at": "2026-09-27T14:18:00+03:00",
   "logical_target": 5,
   "destination_target": 20,
   "status": "FIVE_LOGICAL_POSTS_SCHEDULED_PENDING_UNDER_ACTIVE_LEASE",
@@ -114,12 +114,11 @@
     {
       "time": "20:00",
       "category": "myth_or_truth",
-      "title": "Η κουκουβάγια γυρίζει το κεφάλι της 360°;",
-      "qa": "PASSED_FINAL_REVIEW_CURRENT_LIVE_VERSION",
-      "source": "https://www.nationalzoo.si.edu/animals/eastern-screech-owl",
+      "title": "Το χρυσόψαρο ξεχνά σε 3 δευτερόλεπτα;",
+      "qa": "LIVE_MEDIA_UPDATE_OBSERVED_UNDER_LEASE_REVIEW_PENDING",
       "entries": [
         {
-          "post_id": 382831626,
+          "post_id": 382833554,
           "uuid": "4430904804091774595",
           "platforms": {
             "facebook": "PENDING",
@@ -128,7 +127,7 @@
           }
         },
         {
-          "post_id": 382831650,
+          "post_id": 382833563,
           "uuid": "-8344171222198759588",
           "platforms": {
             "youtube": "PENDING"
@@ -155,6 +154,7 @@
   "notes": [
     "Metricool live queue is authoritative. Backlog subjects are not scheduled until live readback confirms IDs.",
     "The 15:00 love slot was replaced under the same UUIDs by the lease owner; live IDs are 382832148/382832155 and title is Το ταπεράκι της Δευτέρας.",
+    "The 20:00 myth slot was replaced under the same UUIDs by the lease owner; live IDs are 382833554/382833563 and title is Το χρυσόψαρο ξεχνά σε 3 δευτερόλεπτα; Exact final media QA is pending reconciliation.",
     "Exact final media QA for the newest love replacement remains pending until the lease owner finalizes and the immutable media/readback are reconciled.",
     "Because an active production lease may replace media under the same UUID, re-run exact final media QA after any update and before release.",
     "final_ready_through remains null while the lease owner has not reconciled the backlog state."
