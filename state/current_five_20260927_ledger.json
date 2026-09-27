@@ -1,0 +1,131 @@
+{
+  "strategy": "CURRENT_FIVE_DAILY_20260927",
+  "brand_id": 7076410,
+  "timezone": "Europe/Athens",
+  "observed_at": "2026-09-27T13:40:00+03:00",
+  "logical_target": 5,
+  "destination_target": 20,
+  "status": "ALL_FIVE_SCHEDULED_PENDING",
+  "slots": [
+    {
+      "time": "14:00",
+      "category": "zodiac",
+      "title": "Πώς ζητάς συγγνώμη; Ζυγός έως Ιχθύες",
+      "qa": "PASSED_FINAL_REVIEW",
+      "entries": [
+        {
+          "post_id": 382816766,
+          "uuid": "6022672631344940064",
+          "platforms": {
+            "facebook": "PENDING",
+            "instagram": "PENDING",
+            "tiktok": "PENDING"
+          }
+        },
+        {
+          "post_id": 382817031,
+          "uuid": "-7145859339020712156",
+          "platforms": {
+            "youtube": "PENDING"
+          }
+        }
+      ]
+    },
+    {
+      "time": "16:00",
+      "category": "survival",
+      "title": "Πλημμύρα: 8 κινήσεις προστασίας",
+      "qa": "PASSED_FINAL_REVIEW",
+      "entries": [
+        {
+          "post_id": 382821377,
+          "uuid": "579552182092712221",
+          "platforms": {
+            "facebook": "PENDING",
+            "instagram": "PENDING",
+            "tiktok": "PENDING"
+          }
+        },
+        {
+          "post_id": 382821380,
+          "uuid": "3935721673412792278",
+          "platforms": {
+            "youtube": "PENDING"
+          }
+        }
+      ]
+    },
+    {
+      "time": "18:00",
+      "category": "love_soul_relationship",
+      "title": "Η κούπα έμεινε εκεί",
+      "qa": "PASSED_FINAL_REVIEW",
+      "entries": [
+        {
+          "post_id": 382819659,
+          "uuid": "3580541986071724172",
+          "platforms": {
+            "facebook": "PENDING",
+            "instagram": "PENDING",
+            "tiktok": "PENDING"
+          }
+        },
+        {
+          "post_id": 382819663,
+          "uuid": "7327759583099635153",
+          "platforms": {
+            "youtube": "PENDING"
+          }
+        }
+      ]
+    },
+    {
+      "time": "20:00",
+      "category": "strange_real_phenomenon",
+      "title": "Milky Seas — όταν η θάλασσα λάμπει σαν γάλα",
+      "qa": "PASSED_FINAL_REVIEW_AFTER_VISUAL_REPAIR",
+      "repair": "Removed Java blackout and non-equivalent near-shore bioluminescence; replaced with eight scene-specific Milky Seas visuals",
+      "entries": [
+        {
+          "post_id": 382824092,
+          "uuid": "-6497769668818221404",
+          "platforms": {
+            "facebook": "PENDING",
+            "instagram": "PENDING",
+            "tiktok": "PENDING",
+            "youtube": "PENDING"
+          }
+        }
+      ]
+    },
+    {
+      "time": "22:00",
+      "category": "myth_or_truth",
+      "title": "Οι νυχτερίδες είναι τυφλές;",
+      "qa": "PASSED_FINAL_REVIEW",
+      "entries": [
+        {
+          "post_id": 382821477,
+          "uuid": "-5949882215415529311",
+          "platforms": {
+            "facebook": "PENDING",
+            "instagram": "PENDING",
+            "tiktok": "PENDING"
+          }
+        },
+        {
+          "post_id": 382821481,
+          "uuid": "1960976165727783363",
+          "platforms": {
+            "youtube": "PENDING"
+          }
+        }
+      ]
+    }
+  ],
+  "blocked": [],
+  "notes": [
+    "Scheduled is not Published. Provider/public evidence will be recorded only after confirmation.",
+    "Paused categories were not scheduled."
+  ]
+}
