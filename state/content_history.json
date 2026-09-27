@@ -1780,6 +1780,238 @@
       },
       "cancelled_at": "2026-09-18T20:48:00+03:00",
       "terminal": true
+    },
+    {
+      "job_id": "five-20260927/zodiac",
+      "date": "2026-09-27",
+      "theme": "zodiac",
+      "title": "Πώς ζητάς συγγνώμη; Ζυγός έως Ιχθύες",
+      "hook": "Πώς ζητάς συγγνώμη; Ζυγός έως Ιχθύες",
+      "caption": "Πώς ζητάς συγγνώμη; ♎♏♐♑♒♓\nΖυγός, Σκορπιός, Τοξότης, Αιγόκερως, Υδροχόος και Ιχθύες σε έξι συμβολικά πορτρέτα. Ποια φράση σε εκφράζει;\nΓια ψυχαγωγία — το ζώδιο δεν καθορίζει τη συμπεριφορά μας. Εικαστικά δημιουργημένα με AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ζώδια #συγγνώμη #σχέσεις #αυτογνωσία #ιστορίες",
+      "fingerprint": "five-20260927-zodiac",
+      "status": "scheduled",
+      "scheduled_time": "2026-09-27T14:00:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "382816766",
+      "metricool_post_ids": [
+        382816766,
+        382817031
+      ],
+      "notion_page_id": "3e8f2345-b318-8191-9bcc-f435171910f7",
+      "media_commit": "bdab1aeb5db013df8be42578f61470c30ed570e7",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-16556984151294697121.jpeg",
+      "quality_check": {
+        "final_cards_visually_reviewed": true,
+        "final_slideshow_each_scene_reviewed": true,
+        "full_ffmpeg_decode_passed": true,
+        "card_format": "1080x1080 JPEG",
+        "youtube_format": "1080x1920 MP4",
+        "tiktok_native_photos": true,
+        "tiktok_auto_add_music": true,
+        "youtube_original_instrumental": true
+      },
+      "platform_status": {
+        "facebook": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382816766
+        },
+        "instagram": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382816766
+        },
+        "tiktok": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382816766
+        },
+        "youtube": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382817031
+        }
+      }
+    },
+    {
+      "job_id": "five-20260927/survival",
+      "date": "2026-09-27",
+      "theme": "survival",
+      "title": "Πλημμύρα: 8 κινήσεις προστασίας",
+      "hook": "Πλημμύρα: 8 κινήσεις προστασίας",
+      "caption": "Πλημμύρα: 8 κινήσεις προστασίας πριν, κατά τη διάρκεια και μετά. Αποθήκευσέ το για να το έχεις εύκαιρο.\nΑκολουθούμε πάντα τις οδηγίες των αρμόδιων αρχών.\nΠηγή: Γενική Γραμματεία Πολιτικής Προστασίας — https://civilprotection.gov.gr/odigies-prostasias/plimmyres\nΟι εικόνες δημιουργήθηκαν με AI για εικονογράφηση.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Επιβίωση #Πλημμύρα #ΠολιτικήΠροστασία #Ασφάλεια #Ιστορίες",
+      "fingerprint": "five-20260927-survival",
+      "status": "scheduled",
+      "scheduled_time": "2026-09-27T16:00:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "382821377",
+      "metricool_post_ids": [
+        382821377,
+        382821380
+      ],
+      "notion_page_id": "3e8f2345-b318-8152-9ea2-d8b447dc0083",
+      "media_commit": "3916ee8637f4fbe5e9784a77d064324811da49bb",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-9038064281449147736.jpeg",
+      "quality_check": {
+        "final_cards_visually_reviewed": true,
+        "final_slideshow_each_scene_reviewed": true,
+        "full_ffmpeg_decode_passed": true,
+        "card_format": "1080x1080 JPEG",
+        "youtube_format": "1080x1920 MP4",
+        "tiktok_native_photos": true,
+        "tiktok_auto_add_music": true,
+        "youtube_original_instrumental": true
+      },
+      "platform_status": {
+        "facebook": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382821377
+        },
+        "instagram": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382821377
+        },
+        "tiktok": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382821377
+        },
+        "youtube": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382821380
+        }
+      }
+    },
+    {
+      "job_id": "five-20260927/love",
+      "date": "2026-09-27",
+      "theme": "love",
+      "title": "Η κούπα έμεινε εκεί",
+      "hook": "Η κούπα έμεινε εκεί",
+      "caption": "Η κούπα έμεινε εκεί. Μια μικρή ιστορία για την απουσία, τη φιλία και τον χώρο που ξαναδίνουμε στη ζωή.\nΠρωτότυπη μυθοπλασία. Οι εικόνες δημιουργήθηκαν με AI.\nΠοιο μικρό πράγμα σε βοήθησε να κάνεις μια νέα αρχή;\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ιστορίες #νέααρχή #ψυχή #φιλία #σχέσεις",
+      "fingerprint": "five-20260927-love",
+      "status": "scheduled",
+      "scheduled_time": "2026-09-27T18:00:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "382819659",
+      "metricool_post_ids": [
+        382819659,
+        382819663
+      ],
+      "notion_page_id": "3e8f2345-b318-8107-9151-d3bc75366a84",
+      "media_commit": "99ced18b178419d23f06d9e3c7d1f13e2691f750",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-14832535838908177799.jpeg",
+      "quality_check": {
+        "final_cards_visually_reviewed": true,
+        "final_slideshow_each_scene_reviewed": true,
+        "full_ffmpeg_decode_passed": true,
+        "card_format": "1080x1080 JPEG",
+        "youtube_format": "1080x1920 MP4",
+        "tiktok_native_photos": true,
+        "tiktok_auto_add_music": true,
+        "youtube_original_instrumental": true
+      },
+      "platform_status": {
+        "facebook": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382819659
+        },
+        "instagram": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382819659
+        },
+        "tiktok": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382819659
+        },
+        "youtube": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382819663
+        }
+      }
+    },
+    {
+      "job_id": "five-20260927/myth",
+      "date": "2026-09-27",
+      "theme": "myth",
+      "title": "Οι νυχτερίδες είναι τυφλές;",
+      "hook": "Οι νυχτερίδες είναι τυφλές;",
+      "caption": "Οι νυχτερίδες είναι τυφλές; Μύθος! Έχουν λειτουργικά μάτια, ενώ πολλά είδη χρησιμοποιούν και ηχοεντοπισμό.\nΠοιον άλλο μύθο για τα ζώα έχεις ακούσει;\nΠηγή: Bat Conservation International — https://www.batcon.org/blind-as-a-bat-no-such-thing/\nΕικόνες δημιουργημένες με AI για εικονογράφηση.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΜύθοςΉΑλήθεια #Νυχτερίδες #Φύση #Ζώα #Γνώση",
+      "fingerprint": "five-20260927-myth",
+      "status": "scheduled",
+      "scheduled_time": "2026-09-27T22:00:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "382821477",
+      "metricool_post_ids": [
+        382821477,
+        382821481
+      ],
+      "notion_page_id": "3e8f2345-b318-81a7-98e5-de9794c07f29",
+      "media_commit": "10e8c6458e2a5fa20f1b950c1865f36daf57d6ca",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-12402314029346332074.jpeg",
+      "quality_check": {
+        "final_cards_visually_reviewed": true,
+        "final_slideshow_each_scene_reviewed": true,
+        "full_ffmpeg_decode_passed": true,
+        "card_format": "1080x1080 JPEG",
+        "youtube_format": "1080x1920 MP4",
+        "tiktok_native_photos": true,
+        "tiktok_auto_add_music": true,
+        "youtube_original_instrumental": true
+      },
+      "platform_status": {
+        "facebook": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382821477
+        },
+        "instagram": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382821477
+        },
+        "tiktok": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382821477
+        },
+        "youtube": {
+          "status": "SCHEDULED",
+          "public_url": null,
+          "source_post_id": 382821481
+        }
+      }
     }
   ]
 }
