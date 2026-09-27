@@ -2310,6 +2310,35 @@
         "final_end_reviewed": true,
         "notes": "All six final cards and full slideshow reviewed. Full decode passed. Original instrumental one layer. No narration. Native FB/IG/TikTok carousel with TikTok autoAddMusic. YouTube full vertical slideshow. AI disclosure and CTA."
       }
+    },
+    {
+      "job_id": "five-20260929/love29",
+      "date": "2026-09-29",
+      "theme": "love_soul_relationship",
+      "title": "Το σακάκι που δεν φόρεσε",
+      "caption": "Το σακάκι που δεν φόρεσε\n\nΜερικές φράσεις μένουν μέσα μας πολύ αφού τελειώσει μια σχέση. Η δική της πρώτη νίκη ήταν ότι εμφανίστηκε.\nΠρωτότυπη μυθοπλασία. Εικόνες δημιουργημένες με AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ιστορίες #ΝέαΑρχή #Αυτοεκτίμηση #Σχέσεις #Ψυχή",
+      "fingerprint": "five-20260929-love29",
+      "status": "scheduled",
+      "scheduled_time": "2026-09-29T15:00:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "382838505,382838515",
+      "metricool_uuid": "2265602157193482031,-547513606304741207",
+      "notion_page_id": "3e8f2345-b318-8190-8b38-f0eec23b28c1",
+      "media_commit": "d7e6be88e946f6ff80686eb650819e57dcf865e0",
+      "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/d7e6be88e946f6ff80686eb650819e57dcf865e0/jobs/five-20260929/love29/love-blazer.mp4",
+      "duration_seconds": 35,
+      "quality_check": {
+        "final_visuals_reviewed": true,
+        "full_ffmpeg_decode_passed": true,
+        "final_end_reviewed": true,
+        "notes": "Five final cards visually reviewed for continuity and exact Greek. Full 35s slideshow decode and ending reviewed. Original single instrumental, no narration. Native photo carousel FB/IG/TikTok, full vertical YouTube slideshow. AI and fiction disclosed, CTA present."
+      }
     }
   ]
 }
