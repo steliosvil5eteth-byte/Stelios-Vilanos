@@ -1,0 +1,46 @@
+{
+  "strategy": "CURRENT_FIVE_DAILY_20260927",
+  "date": "2026-09-30",
+  "slot": "20:00",
+  "category": "myth_or_truth",
+  "title": "Η στρουθοκάμηλος κρύβει το κεφάλι στην άμμο;",
+  "status": "PASSED_FINAL_REVIEW_LOCAL_ARTIFACT",
+  "reviewed_at": "2026-09-27T16:50:00+03:00",
+  "reviewer": "automation-current-five-20260927-1534",
+  "source": {
+    "name": "San Diego Zoo Wildlife Alliance — Ostrich",
+    "url": "https://animals.sandiegozoo.org/animals/ostrich",
+    "fact_check": "PASSED_MYTH_CORRECTION_AND_DEFENSIVE_POSTURE"
+  },
+  "carousel": {
+    "cards": 4,
+    "dimensions": "1080x1080",
+    "format": "JPEG",
+    "visual_review": "PASSED_DISTINCT_RELEVANT_PHOTOREALISTIC_OSTRICH_SCENES",
+    "text_review": "PASSED_READABLE_GREEK_ORDER_1_TO_4",
+    "factual_sequence": "PASSED_HOOK_EXPLANATION_FINAL_ANSWER",
+    "tiktok_media_silent": true,
+    "tiktok_auto_add_music_required": true
+  },
+  "youtube": {
+    "file": "myth-ostrich-youtube-short.mp4",
+    "dimensions": "1080x1920",
+    "duration_seconds": 28.138,
+    "video_codec": "h264",
+    "audio_streams": 1,
+    "audio_channels": 1,
+    "audio_type": "original instrumental, no narration",
+    "all_cards_present": true,
+    "double_audio": false
+  },
+  "disclosure": "Εικόνες δημιουργημένες με AI για εικονογράφηση.",
+  "publish_ready": false,
+  "note": "Local artifact QA passed. Keep blocked from publishing until immutable GitHub commit, fresh duplicate check, Metricool create/readback and platform validation succeed.",
+  "sha256": {
+    "card-01.jpg": "31d457e7b77cb5779a83d04dab5f1d3d53c2b9969aecd173ff3c9ae9aacdfff1",
+    "card-02.jpg": "038dd74d4dd05cde053d117a062743e1ba0e76492fbbc3b3556a9827bd187eef",
+    "card-03.jpg": "d521935adef43cb05de1d935dd2356065bbd17468f48da9bad5b3ceacec8cc04",
+    "card-04.jpg": "83d8a7e413c24bc251ed94c592ef33bc922cc4add79a19f29f90ca1411f65d64",
+    "myth-ostrich-youtube-short.mp4": "f96338765815033a998599b24d194522b8dea869b366ad09cb6d1fd5c1962b87"
+  }
+}
