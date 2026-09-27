@@ -1,0 +1,1510 @@
+{
+  "queue": {
+    "data": [
+      {
+        "id": 382829069,
+        "publicationDate": {
+          "dateTime": "2026-09-28T09:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-09-27T14:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Σεισμός: 8 προετοιμασίες πριν συμβεί\n\nΗ προετοιμασία γίνεται πριν από τη δόνηση. Εννέα κάρτες με οκτώ πρακτικές κινήσεις για το σπίτι, βασισμένες στις οδηγίες της Πολιτικής Προστασίας.\nΠηγή: https://civilprotection.gov.gr/odigies-prostasias/seismoi\nΕικόνες: αναπαραστάσεις AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Σεισμός #Προετοιμασία #ΠολιτικήΠροστασία #Ασφάλεια #Επιβίωση",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202609/7000636-file-15868583543544925150.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-14027437921153908246.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-9837741517955221273.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-1084935378942289673.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-1295436198424370809.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-16941904680201840237.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-14251797452558373481.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-11655171983123835673.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-15324885183522387020.jpeg"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "facebookData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "type": "POST",
+          "showReelOnFeed": true,
+          "isAiGenerated": true
+        },
+        "tiktokData": {
+          "privacyOption": "PUBLIC_TO_EVERYONE",
+          "title": "Σεισμός: 8 προετοιμασίες πριν συμβεί",
+          "autoAddMusic": true,
+          "photoCoverIndex": 0,
+          "isAigc": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "5052034884527017936",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      },
+      {
+        "id": 382829077,
+        "publicationDate": {
+          "dateTime": "2026-09-28T09:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-09-27T14:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Σεισμός: 8 προετοιμασίες πριν συμβεί\n\nΗ προετοιμασία γίνεται πριν από τη δόνηση. Εννέα κάρτες με οκτώ πρακτικές κινήσεις για το σπίτι, βασισμένες στις οδηγίες της Πολιτικής Προστασίας.\nΠηγή: https://civilprotection.gov.gr/odigies-prostasias/seismoi\nΕικόνες: αναπαραστάσεις AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Σεισμός #Προετοιμασία #ΠολιτικήΠροστασία #Ασφάλεια #Επιβίωση",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202609/7000636-file-12232828199546939349.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "isAiGenerated": false
+        },
+        "youtubeData": {
+          "title": "Σεισμός: 8 προετοιμασίες πριν συμβεί",
+          "type": "short",
+          "privacy": "public",
+          "category": "EDUCATION",
+          "madeForKids": false,
+          "isAiGeneratedContent": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "-1162706392677989621",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      },
+      {
+        "id": 382829688,
+        "publicationDate": {
+          "dateTime": "2026-09-28T17:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-09-27T14:01:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Φακοειδή νέφη: οι φακοί πάνω από τα βουνά\n\nΜοιάζουν ακίνητα, αλλά ο αέρας περνά μέσα τους. Πώς τα ορεινά κύματα δημιουργούν αυτά τα παράξενα σύννεφα;\nΠηγές: National Weather Service\nhttps://www.weather.gov/abq/features_acsl\nhttps://www.weather.gov/hfo/lenticular\nΟι εικόνες είναι ενδεικτικές αναπαραστάσεις AI, όχι ιστορικά τεκμήρια.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΦακοειδήΝέφη #Καιρός #Φύση #Επιστήμη #ΠαράξεναΦαινόμενα",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202609/7000636-file-8666118579319418559.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "facebookData": {
+          "type": "REEL"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "type": "REEL",
+          "showReelOnFeed": true,
+          "isAiGenerated": true
+        },
+        "youtubeData": {
+          "title": "Φακοειδή νέφη: οι φακοί πάνω από τα βουνά",
+          "type": "short",
+          "privacy": "public",
+          "category": "EDUCATION",
+          "madeForKids": false,
+          "isAiGeneratedContent": true
+        },
+        "tiktokData": {
+          "privacyOption": "PUBLIC_TO_EVERYONE",
+          "title": "Φακοειδή νέφη: οι φακοί πάνω από τα βουνά",
+          "photoCoverIndex": 0,
+          "isAigc": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "2450639086477656674",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      },
+      {
+        "id": 382830330,
+        "publicationDate": {
+          "dateTime": "2026-09-28T09:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-09-27T14:03:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Σεισμός: 9 βασικές κινήσεις πριν, κατά τη διάρκεια και μετά. Αποθήκευσέ το και ακολούθησε πάντα τις οδηγίες των αρμόδιων αρχών.\nΠηγή: Ο.Α.Σ.Π. — https://oasp.gr/odigies-aytoprostasias\nΟι εικόνες δημιουργήθηκαν με AI για εικονογράφηση.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Επιβίωση #Σεισμός #ΟΑΣΠ #Ασφάλεια #Ιστορίες",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202609/7000636-file-1751987098588038138.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-9699860263382312850.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-10120569917774107601.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-1293316117953356734.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-7211907507074761515.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-6143471698312906201.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-11186320712849274120.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-3856414645170600033.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-11215817586049134837.jpeg"
+        ],
+        "autoPublish": false,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "shortener": false,
+        "draft": true,
+        "twitterData": {
+          "type": "POST"
+        },
+        "facebookData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": false,
+          "type": "POST",
+          "showReelOnFeed": true,
+          "isAiGenerated": true
+        },
+        "tiktokData": {
+          "privacyOption": "PUBLIC_TO_EVERYONE",
+          "title": "Σεισμός: 9 κινήσεις προστασίας",
+          "autoAddMusic": true,
+          "photoCoverIndex": 0,
+          "isAigc": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "4939033458929453922",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      },
+      {
+        "id": 382831058,
+        "publicationDate": {
+          "dateTime": "2026-09-28T11:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-09-27T14:06:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Πώς δέχεσαι ένα κομπλιμέντο; Κριός έως Παρθένος\n\nΜια καλή κουβέντα, έξι διαφορετικές αντιδράσεις. Ποια σου μοιάζει περισσότερο;\nΣυμβολικά πορτρέτα για ψυχαγωγία. Εικαστικά AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ζώδια #Κριός #Ταύρος #Δίδυμοι #Αστρολογία",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202609/7000636-file-2244710009524853494.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-3119732289804502516.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-1782969647511934954.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-8764301867858772078.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-4177812264414258087.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-652367469982352013.jpeg"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "facebookData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "type": "POST",
+          "showReelOnFeed": true,
+          "isAiGenerated": true
+        },
+        "tiktokData": {
+          "privacyOption": "PUBLIC_TO_EVERYONE",
+          "title": "Πώς δέχεσαι ένα κομπλιμέντο; Κριός έως Παρθένος",
+          "autoAddMusic": true,
+          "photoCoverIndex": 0,
+          "isAigc": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "3730953815144417193",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      },
+      {
+        "id": 382831065,
+        "publicationDate": {
+          "dateTime": "2026-09-28T11:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-09-27T14:06:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Πώς δέχεσαι ένα κομπλιμέντο; Κριός έως Παρθένος\n\nΜια καλή κουβέντα, έξι διαφορετικές αντιδράσεις. Ποια σου μοιάζει περισσότερο;\nΣυμβολικά πορτρέτα για ψυχαγωγία. Εικαστικά AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ζώδια #Κριός #Ταύρος #Δίδυμοι #Αστρολογία",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202609/7000636-file-1774083459100350751.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "isAiGenerated": false
+        },
+        "youtubeData": {
+          "title": "Πώς δέχεσαι ένα κομπλιμέντο; Κριός έως Παρθένος",
+          "type": "short",
+          "privacy": "public",
+          "category": "ENTERTAINMENT",
+          "madeForKids": false,
+          "isAiGeneratedContent": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "1293758576546499690",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      },
+      {
+        "id": 382832148,
+        "publicationDate": {
+          "dateTime": "2026-09-28T15:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-09-27T14:11:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Το ταπεράκι της Δευτέρας\n\nΚάθε εβδομάδα έλεγε «περίσσεψε». Μέχρι που η Άννα κατάλαβε τι σήμαινε πραγματικά αυτή η λέξη.\nΠοια μικρή πράξη φροντίδας δεν ξέχασες ποτέ;\nΠρωτότυπη μυθοπλασία. Οι εικόνες δημιουργήθηκαν με AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ιστορίες #Αγάπη #Οικογένεια #Πατέρας #Φροντίδα",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202609/7000636-file-6590596828336248648.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-10891649891594980689.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-15387313558380351035.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-8491488495184793186.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-15273107620335409267.jpeg"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "facebookData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "type": "POST",
+          "showReelOnFeed": true,
+          "isAiGenerated": true
+        },
+        "tiktokData": {
+          "privacyOption": "PUBLIC_TO_EVERYONE",
+          "title": "Το ταπεράκι της Δευτέρας",
+          "autoAddMusic": true,
+          "photoCoverIndex": 0,
+          "isAigc": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "-7902353527416862519",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      },
+      {
+        "id": 382832155,
+        "publicationDate": {
+          "dateTime": "2026-09-28T15:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-09-27T14:11:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Το ταπεράκι της Δευτέρας\n\nΚάθε εβδομάδα έλεγε «περίσσεψε». Μέχρι που η Άννα κατάλαβε τι σήμαινε πραγματικά αυτή η λέξη.\nΠοια μικρή πράξη φροντίδας δεν ξέχασες ποτέ;\nΠρωτότυπη μυθοπλασία. Οι εικόνες δημιουργήθηκαν με AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ιστορίες #Αγάπη #Οικογένεια #Πατέρας #Φροντίδα",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202609/7000636-file-14153756279319921696.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "isAiGenerated": false
+        },
+        "youtubeData": {
+          "title": "Το ταπεράκι της Δευτέρας",
+          "type": "short",
+          "privacy": "public",
+          "category": "ENTERTAINMENT",
+          "madeForKids": false,
+          "isAiGeneratedContent": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "7246532472844078062",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      },
+      {
+        "id": 382833554,
+        "publicationDate": {
+          "dateTime": "2026-09-28T20:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-09-27T14:16:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Το χρυσόψαρο ξεχνά σε 3 δευτερόλεπτα;\n\nΗ έρευνα δείχνει κάτι πιο ενδιαφέρον: χρυσόψαρα μαθαίνουν μια απόσταση και χρησιμοποιούν οπτικά στοιχεία για να την εκτιμήσουν. Ο γνωστός ισχυρισμός των τριών δευτερολέπτων είναι μύθος.\nΠηγή: University of Oxford — https://www.biology.ox.ac.uk/node/2793891\nΟι εικόνες είναι εκπαιδευτικές αναπαραστάσεις AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΜύθοςΉΑλήθεια #Χρυσόψαρο #Μνήμη #Επιστήμη #Φύση",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202609/7000636-file-14351666086500044155.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-9805134967591608111.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-15605241766678353152.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-4072821289689559143.jpeg"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "facebookData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "type": "POST",
+          "showReelOnFeed": true,
+          "isAiGenerated": true
+        },
+        "tiktokData": {
+          "privacyOption": "PUBLIC_TO_EVERYONE",
+          "title": "Το χρυσόψαρο ξεχνά σε 3 δευτερόλεπτα;",
+          "autoAddMusic": true,
+          "photoCoverIndex": 0,
+          "isAigc": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "4430904804091774595",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      },
+      {
+        "id": 382833563,
+        "publicationDate": {
+          "dateTime": "2026-09-28T20:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-09-27T14:16:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Το χρυσόψαρο ξεχνά σε 3 δευτερόλεπτα;\n\nΗ έρευνα δείχνει κάτι πιο ενδιαφέρον: χρυσόψαρα μαθαίνουν μια απόσταση και χρησιμοποιούν οπτικά στοιχεία για να την εκτιμήσουν. Ο γνωστός ισχυρισμός των τριών δευτερολέπτων είναι μύθος.\nΠηγή: University of Oxford — https://www.biology.ox.ac.uk/node/2793891\nΟι εικόνες είναι εκπαιδευτικές αναπαραστάσεις AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΜύθοςΉΑλήθεια #Χρυσόψαρο #Μνήμη #Επιστήμη #Φύση",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202609/7000636-file-2303421063585463020.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "isAiGenerated": false
+        },
+        "youtubeData": {
+          "title": "Το χρυσόψαρο ξεχνά σε 3 δευτερόλεπτα;",
+          "type": "short",
+          "privacy": "public",
+          "category": "EDUCATION",
+          "madeForKids": false,
+          "isAiGeneratedContent": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "-8344171222198759588",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      },
+      {
+        "id": 382837560,
+        "publicationDate": {
+          "dateTime": "2026-09-29T11:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-09-27T14:32:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Πώς δέχεσαι ένα κομπλιμέντο; Ζυγός έως Ιχθύες\n\nΈξι ακόμη συμβολικά πορτρέτα για την καλή κουβέντα που μας μένει. Εσύ λες εύκολα «ευχαριστώ»;\nΨυχαγωγικό περιεχόμενο, όχι πρόβλεψη. Εικαστικά AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ζώδια #Ζυγός #Σκορπιός #Ιχθύες #Αστρολογία",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202609/7000636-file-4994283738956560037.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-6455617702210974855.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-7157212288537853721.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-6099377521744027063.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-17346389180203050508.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-16948525392610372793.jpeg"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "facebookData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "type": "POST",
+          "showReelOnFeed": true,
+          "isAiGenerated": true
+        },
+        "tiktokData": {
+          "privacyOption": "PUBLIC_TO_EVERYONE",
+          "title": "Πώς δέχεσαι ένα κομπλιμέντο; Ζυγός–Ιχθύες",
+          "autoAddMusic": true,
+          "photoCoverIndex": 0,
+          "isAigc": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "1721517511529484275",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      },
+      {
+        "id": 382837567,
+        "publicationDate": {
+          "dateTime": "2026-09-29T11:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-09-27T14:32:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Πώς δέχεσαι ένα κομπλιμέντο; Ζυγός έως Ιχθύες\n\nΈξι ακόμη συμβολικά πορτρέτα για την καλή κουβέντα που μας μένει. Εσύ λες εύκολα «ευχαριστώ»;\nΨυχαγωγικό περιεχόμενο, όχι πρόβλεψη. Εικαστικά AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ζώδια #Ζυγός #Σκορπιός #Ιχθύες #Αστρολογία",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202609/7000636-file-6070647756673370908.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "isAiGenerated": false
+        },
+        "youtubeData": {
+          "title": "Πώς δέχεσαι ένα κομπλιμέντο; Ζυγός–Ιχθύες",
+          "type": "short",
+          "privacy": "public",
+          "category": "ENTERTAINMENT",
+          "madeForKids": false,
+          "isAiGeneratedContent": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "-3554725956835782704",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      },
+      {
+        "id": 382838505,
+        "publicationDate": {
+          "dateTime": "2026-09-29T15:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-09-27T14:36:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Το σακάκι που δεν φόρεσε\n\nΜερικές φράσεις μένουν μέσα μας πολύ αφού τελειώσει μια σχέση. Η δική της πρώτη νίκη ήταν ότι εμφανίστηκε.\nΠρωτότυπη μυθοπλασία. Εικόνες δημιουργημένες με AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ιστορίες #ΝέαΑρχή #Αυτοεκτίμηση #Σχέσεις #Ψυχή",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202609/7000636-file-2319127689941526847.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-4139702214048372489.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-11783564291360596615.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-13474207829404881099.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-10211041645162863489.jpeg"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "facebookData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "type": "POST",
+          "showReelOnFeed": true,
+          "isAiGenerated": true
+        },
+        "tiktokData": {
+          "privacyOption": "PUBLIC_TO_EVERYONE",
+          "title": "Το σακάκι που δεν φόρεσε",
+          "autoAddMusic": true,
+          "photoCoverIndex": 0,
+          "isAigc": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "2265602157193482031",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      },
+      {
+        "id": 382838515,
+        "publicationDate": {
+          "dateTime": "2026-09-29T15:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-09-27T14:36:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Το σακάκι που δεν φόρεσε\n\nΜερικές φράσεις μένουν μέσα μας πολύ αφού τελειώσει μια σχέση. Η δική της πρώτη νίκη ήταν ότι εμφανίστηκε.\nΠρωτότυπη μυθοπλασία. Εικόνες δημιουργημένες με AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ιστορίες #ΝέαΑρχή #Αυτοεκτίμηση #Σχέσεις #Ψυχή",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202609/7000636-file-13056690815297640096.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "isAiGenerated": false
+        },
+        "youtubeData": {
+          "title": "Το σακάκι που δεν φόρεσε",
+          "type": "short",
+          "privacy": "public",
+          "category": "ENTERTAINMENT",
+          "madeForKids": false,
+          "isAiGeneratedContent": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "-547513606304741207",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      },
+      {
+        "id": 382839901,
+        "publicationDate": {
+          "dateTime": "2026-09-29T20:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-09-27T14:40:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Οι καμήλες αποθηκεύουν νερό στην καμπούρα;\n\nΗ καμπούρα περιέχει λίπος. Η αντοχή της καμήλας στις δύσκολες συνθήκες δεν σημαίνει ότι κουβαλά ένα δοχείο νερού στην πλάτη της.\nΠηγή: San Diego Zoo — https://zoo.sandiegozoo.org/animals/camel\nΟι εικόνες είναι εκπαιδευτικές αναπαραστάσεις AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΜύθοςΉΑλήθεια #Καμήλα #Φύση #Ζώα #Έρημος",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202609/7000636-file-7008414180296957624.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-18227452352792763127.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-15123052579561795406.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-15642873589637711242.jpeg"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null,
+          null,
+          null,
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "facebookData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "type": "POST",
+          "showReelOnFeed": true,
+          "isAiGenerated": true
+        },
+        "tiktokData": {
+          "privacyOption": "PUBLIC_TO_EVERYONE",
+          "title": "Οι καμήλες αποθηκεύουν νερό στην καμπούρα;",
+          "autoAddMusic": true,
+          "photoCoverIndex": 0,
+          "isAigc": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "-4458293815859196786",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      },
+      {
+        "id": 382839911,
+        "publicationDate": {
+          "dateTime": "2026-09-29T20:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-09-27T14:40:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Οι καμήλες αποθηκεύουν νερό στην καμπούρα;\n\nΗ καμπούρα περιέχει λίπος. Η αντοχή της καμήλας στις δύσκολες συνθήκες δεν σημαίνει ότι κουβαλά ένα δοχείο νερού στην πλάτη της.\nΠηγή: San Diego Zoo — https://zoo.sandiegozoo.org/animals/camel\nΟι εικόνες είναι εκπαιδευτικές αναπαραστάσεις AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΜύθοςΉΑλήθεια #Καμήλα #Φύση #Ζώα #Έρημος",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202609/7000636-file-58358917404849021.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "isAiGenerated": false
+        },
+        "youtubeData": {
+          "title": "Οι καμήλες αποθηκεύουν νερό στην καμπούρα;",
+          "type": "short",
+          "privacy": "public",
+          "category": "EDUCATION",
+          "madeForKids": false,
+          "isAiGeneratedContent": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "5635258198495547035",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      },
+      {
+        "id": 382840452,
+        "publicationDate": {
+          "dateTime": "2026-09-29T17:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-09-27T14:42:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Kelvin–Helmholtz: κύματα στον ουρανό\n\nΌταν δύο στρώματα αέρα κινούνται με διαφορετικές ταχύτητες, τα σύννεφα μπορούν να θυμίσουν κύματα που σπάνε. Ένα σύντομο, σπάνιο θέαμα με φυσική εξήγηση.\nΠηγές: Met Office, NWS Albany\nhttps://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/clouds/unusual-cloud-formations/kelvin-helmholtz\nhttps://www.weather.gov/media/aly/stormbuster/Spring17SB.pdf\nΕικόνες: ενδεικτικές αναπαραστάσεις AI, όχι αρχειακό υλικό.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Σύννεφα #Καιρός #Φύση #Επιστήμη #ΠαράξεναΦαινόμενα",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202609/7000636-file-11624288290535242351.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "facebookData": {
+          "type": "REEL"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "type": "REEL",
+          "showReelOnFeed": true,
+          "isAiGenerated": true
+        },
+        "youtubeData": {
+          "title": "Kelvin–Helmholtz: κύματα στον ουρανό",
+          "type": "short",
+          "privacy": "public",
+          "category": "EDUCATION",
+          "madeForKids": false,
+          "isAiGeneratedContent": true
+        },
+        "tiktokData": {
+          "privacyOption": "PUBLIC_TO_EVERYONE",
+          "title": "Kelvin–Helmholtz: κύματα στον ουρανό",
+          "photoCoverIndex": 0,
+          "isAigc": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "5062927141864751292",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      },
+      {
+        "id": 382842295,
+        "publicationDate": {
+          "dateTime": "2026-09-29T09:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-09-27T14:49:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Καταιγίδα: προστασία μέσα στο σπίτι ⛈️\n\nΤι προετοιμάζουμε πριν έρθει και τι αποφεύγουμε όσο υπάρχουν κεραυνοί; Εννέα απλές υπενθυμίσεις στις κάρτες. Ακολουθούμε πάντοτε τις οδηγίες των αρχών για την περιοχή μας.\n\nΠηγές: Πολιτική Προστασία https://civilprotection.gov.gr/odigies-prostasias/kataigides και National Weather Service https://www.weather.gov/safety/lightning-indoors\nΕκπαιδευτική ενημέρωση, όχι πρόγνωση καιρού. Εικόνες δημιουργημένες με AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Καταιγίδα #ΠολιτικήΠροστασία #Ασφάλεια #Επιβίωση #Κεραυνοί",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202609/7000636-file-6841489783905473416.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-11320847632281321101.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-6232748278044601654.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-4833182825135419296.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-15913709734514091792.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-15890048191545908057.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-15933265676838735024.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-11414999843162853401.jpeg",
+          "https://static.metricool.com/planner/202609/7000636-file-4887189028800309316.jpeg"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "facebookData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "type": "POST",
+          "showReelOnFeed": true,
+          "isAiGenerated": true
+        },
+        "tiktokData": {
+          "privacyOption": "PUBLIC_TO_EVERYONE",
+          "title": "Καταιγίδα: προστασία μέσα στο σπίτι",
+          "autoAddMusic": true,
+          "photoCoverIndex": 0,
+          "isAigc": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "-861654960252367144",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      },
+      {
+        "id": 382842305,
+        "publicationDate": {
+          "dateTime": "2026-09-29T09:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-09-27T14:49:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Καταιγίδα: προστασία μέσα στο σπίτι ⛈️\n\nΤι προετοιμάζουμε πριν έρθει και τι αποφεύγουμε όσο υπάρχουν κεραυνοί; Εννέα απλές υπενθυμίσεις στις κάρτες. Ακολουθούμε πάντοτε τις οδηγίες των αρχών για την περιοχή μας.\n\nΠηγές: Πολιτική Προστασία https://civilprotection.gov.gr/odigies-prostasias/kataigides και National Weather Service https://www.weather.gov/safety/lightning-indoors\nΕκπαιδευτική ενημέρωση, όχι πρόγνωση καιρού. Εικόνες δημιουργημένες με AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Καταιγίδα #ΠολιτικήΠροστασία #Ασφάλεια #Επιβίωση #Κεραυνοί",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202609/7000636-file-180041862423441475.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "isAiGenerated": false
+        },
+        "youtubeData": {
+          "title": "Καταιγίδα: προστασία μέσα στο σπίτι",
+          "type": "short",
+          "privacy": "public",
+          "category": "EDUCATION",
+          "madeForKids": false,
+          "isAiGeneratedContent": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "-989241822094471226",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      }
+    ]
+  },
+  "qa": {
+    "date": "2026-09-29",
+    "status": "COMPLETED_SCHEDULED",
+    "items": [
+      {
+        "pack": "zodiac29",
+        "title": "Πώς δέχεσαι ένα κομπλιμέντο; Ζυγός–Ιχθύες",
+        "slot": "11:00",
+        "posts": [
+          "zodiac29native",
+          "zodiac29youtube"
+        ],
+        "category": "zodiac",
+        "video": "zodiac-compliment-b.mp4",
+        "caption": "Πώς δέχεσαι ένα κομπλιμέντο; Ζυγός έως Ιχθύες\n\nΈξι ακόμη συμβολικά πορτρέτα για την καλή κουβέντα που μας μένει. Εσύ λες εύκολα «ευχαριστώ»;\nΨυχαγωγικό περιεχόμενο, όχι πρόβλεψη. Εικαστικά AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ζώδια #Ζυγός #Σκορπιός #Ιχθύες #Αστρολογία",
+        "duration": 42,
+        "qa": "All six final cards and full slideshow reviewed. Full decode passed. Original instrumental one layer. No narration. Native FB/IG/TikTok carousel with TikTok autoAddMusic. YouTube full vertical slideshow. AI disclosure and CTA.",
+        "notion_page_id": "3e8f2345-b318-8195-b55f-e41ea22b954f"
+      },
+      {
+        "pack": "love29",
+        "title": "Το σακάκι που δεν φόρεσε",
+        "slot": "15:00",
+        "posts": [
+          "love29native",
+          "love29youtube"
+        ],
+        "category": "love_soul_relationship",
+        "video": "love-blazer.mp4",
+        "caption": "Το σακάκι που δεν φόρεσε\n\nΜερικές φράσεις μένουν μέσα μας πολύ αφού τελειώσει μια σχέση. Η δική της πρώτη νίκη ήταν ότι εμφανίστηκε.\nΠρωτότυπη μυθοπλασία. Εικόνες δημιουργημένες με AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ιστορίες #ΝέαΑρχή #Αυτοεκτίμηση #Σχέσεις #Ψυχή",
+        "duration": 35,
+        "qa": "Five final cards visually reviewed for continuity and exact Greek. Full 35s slideshow decode and ending reviewed. Original single instrumental, no narration. Native photo carousel FB/IG/TikTok, full vertical YouTube slideshow. AI and fiction disclosed, CTA present.",
+        "notion_page_id": "3e8f2345-b318-8190-8b38-f0eec23b28c1"
+      },
+      {
+        "pack": "myth29",
+        "title": "Οι καμήλες αποθηκεύουν νερό στην καμπούρα;",
+        "slot": "20:00",
+        "posts": [
+          "myth29native",
+          "myth29youtube"
+        ],
+        "category": "myth_or_truth",
+        "video": "myth-camel.mp4",
+        "caption": "Οι καμήλες αποθηκεύουν νερό στην καμπούρα;\n\nΗ καμπούρα περιέχει λίπος. Η αντοχή της καμήλας στις δύσκολες συνθήκες δεν σημαίνει ότι κουβαλά ένα δοχείο νερού στην πλάτη της.\nΠηγή: San Diego Zoo — https://zoo.sandiegozoo.org/animals/camel\nΟι εικόνες είναι εκπαιδευτικές αναπαραστάσεις AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΜύθοςΉΑλήθεια #Καμήλα #Φύση #Ζώα #Έρημος",
+        "duration": 28,
+        "qa": "Four complete 1080 square JPEG cards visually reviewed. Facts verified San Diego Zoo. Full 28s video decode, sequence and ending reviewed. One original instrumental, no narration. Native FB/IG/TikTok and vertical full YouTube slideshow. AI label and CTA.",
+        "notion_page_id": "3e8f2345-b318-817f-b7b8-f2e803ecba77"
+      },
+      {
+        "pack": "kelvin29v2",
+        "title": "Kelvin–Helmholtz: κύματα στον ουρανό",
+        "slot": "17:00",
+        "posts": [
+          "kelvin29post"
+        ],
+        "category": "strange_real_phenomenon",
+        "video": "kelvin-helmholtz.mp4",
+        "caption": "Kelvin–Helmholtz: κύματα στον ουρανό\n\nΌταν δύο στρώματα αέρα κινούνται με διαφορετικές ταχύτητες, τα σύννεφα μπορούν να θυμίσουν κύματα που σπάνε. Ένα σύντομο, σπάνιο θέαμα με φυσική εξήγηση.\nΠηγές: Met Office, NWS Albany\nhttps://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/clouds/unusual-cloud-formations/kelvin-helmholtz\nhttps://www.weather.gov/media/aly/stormbuster/Spring17SB.pdf\nΕικόνες: ενδεικτικές αναπαραστάσεις AI, όχι αρχειακό υλικό.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Σύννεφα #Καιρός #Φύση #Επιστήμη #ΠαράξεναΦαινόμενα",
+        "duration": 119.997,
+        "qa": "Seven scene-specific images visually reviewed with AI labels and source credits. Final 119.997s 1080x1920 video full decode passed; all seven scenes and closing CTA reviewed. Azure F0 Nestoras narration, no music. Two unclear phrases rewritten; final independent Whisper medium transcription reviewed in full. Exact Azure word-boundary subtitles, longest measured pause 1.11508s. Repaired incomplete intermediate segment; final full-duration gate passed.",
+        "notion_page_id": "3e8f2345-b318-81e5-a118-dc06499e7235"
+      },
+      {
+        "pack": "survival29",
+        "title": "Καταιγίδα: προστασία μέσα στο σπίτι",
+        "slot": "09:00",
+        "posts": [
+          "survival29native",
+          "survival29youtube"
+        ],
+        "category": "survival",
+        "video": "survival-storm.mp4",
+        "caption": "Καταιγίδα: προστασία μέσα στο σπίτι ⛈️\n\nΤι προετοιμάζουμε πριν έρθει και τι αποφεύγουμε όσο υπάρχουν κεραυνοί; Εννέα απλές υπενθυμίσεις στις κάρτες. Ακολουθούμε πάντοτε τις οδηγίες των αρχών για την περιοχή μας.\n\nΠηγές: Πολιτική Προστασία https://civilprotection.gov.gr/odigies-prostasias/kataigides και National Weather Service https://www.weather.gov/safety/lightning-indoors\nΕκπαιδευτική ενημέρωση, όχι πρόγνωση καιρού. Εικόνες δημιουργημένες με AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Καταιγίδα #ΠολιτικήΠροστασία #Ασφάλεια #Επιβίωση #Κεραυνοί",
+        "duration": 63,
+        "qa": "Reviewed all nine final cards, source advice Civil Protection/NWS, numbering, spelling, photographic meaning, CTA and AI disclosure. Replaced card 5 to place family away from windows. Full 63s vertical slideshow, all nine scenes and ending reviewed, single original instrumental without narration, full FFmpeg decode passed. Four-network live readback PENDING, draft=false autoPublish=true.",
+        "notion_page_id": "3e8f2345-b318-8138-8649-cdbe09f53279"
+      }
+    ],
+    "coverage": {
+      "today": "2026-09-27",
+      "timezone": "Europe/Athens",
+      "minimum_days": 2,
+      "target_days": 3,
+      "consecutive_complete_days": 2,
+      "days": [
+        {
+          "date": "2026-09-28",
+          "complete": true,
+          "slots": [
+            {
+              "time": "09:00",
+              "category": "survival",
+              "complete": true,
+              "post_ids": [
+                382829069,
+                382829077
+              ],
+              "missing": [],
+              "duplicate_networks": [],
+              "unexpected_status": []
+            },
+            {
+              "time": "11:00",
+              "category": "zodiac",
+              "complete": true,
+              "post_ids": [
+                382831058,
+                382831065
+              ],
+              "missing": [],
+              "duplicate_networks": [],
+              "unexpected_status": []
+            },
+            {
+              "time": "15:00",
+              "category": "love_soul_relationship",
+              "complete": true,
+              "post_ids": [
+                382832148,
+                382832155
+              ],
+              "missing": [],
+              "duplicate_networks": [],
+              "unexpected_status": []
+            },
+            {
+              "time": "17:00",
+              "category": "strange_real_phenomenon",
+              "complete": true,
+              "post_ids": [
+                382829688
+              ],
+              "missing": [],
+              "duplicate_networks": [],
+              "unexpected_status": []
+            },
+            {
+              "time": "20:00",
+              "category": "myth_or_truth",
+              "complete": true,
+              "post_ids": [
+                382833554,
+                382833563
+              ],
+              "missing": [],
+              "duplicate_networks": [],
+              "unexpected_status": []
+            }
+          ]
+        },
+        {
+          "date": "2026-09-29",
+          "complete": true,
+          "slots": [
+            {
+              "time": "09:00",
+              "category": "survival",
+              "complete": true,
+              "post_ids": [
+                382842295,
+                382842305
+              ],
+              "missing": [],
+              "duplicate_networks": [],
+              "unexpected_status": []
+            },
+            {
+              "time": "11:00",
+              "category": "zodiac",
+              "complete": true,
+              "post_ids": [
+                382837560,
+                382837567
+              ],
+              "missing": [],
+              "duplicate_networks": [],
+              "unexpected_status": []
+            },
+            {
+              "time": "15:00",
+              "category": "love_soul_relationship",
+              "complete": true,
+              "post_ids": [
+                382838505,
+                382838515
+              ],
+              "missing": [],
+              "duplicate_networks": [],
+              "unexpected_status": []
+            },
+            {
+              "time": "17:00",
+              "category": "strange_real_phenomenon",
+              "complete": true,
+              "post_ids": [
+                382840452
+              ],
+              "missing": [],
+              "duplicate_networks": [],
+              "unexpected_status": []
+            },
+            {
+              "time": "20:00",
+              "category": "myth_or_truth",
+              "complete": true,
+              "post_ids": [
+                382839901,
+                382839911
+              ],
+              "missing": [],
+              "duplicate_networks": [],
+              "unexpected_status": []
+            }
+          ]
+        },
+        {
+          "date": "2026-09-30",
+          "complete": false,
+          "slots": [
+            {
+              "time": "09:00",
+              "category": "survival",
+              "complete": false,
+              "post_ids": [],
+              "missing": [
+                "facebook",
+                "instagram",
+                "tiktok",
+                "youtube"
+              ],
+              "duplicate_networks": [],
+              "unexpected_status": []
+            },
+            {
+              "time": "11:00",
+              "category": "zodiac",
+              "complete": false,
+              "post_ids": [],
+              "missing": [
+                "facebook",
+                "instagram",
+                "tiktok",
+                "youtube"
+              ],
+              "duplicate_networks": [],
+              "unexpected_status": []
+            },
+            {
+              "time": "15:00",
+              "category": "love_soul_relationship",
+              "complete": false,
+              "post_ids": [],
+              "missing": [
+                "facebook",
+                "instagram",
+                "tiktok",
+                "youtube"
+              ],
+              "duplicate_networks": [],
+              "unexpected_status": []
+            },
+            {
+              "time": "17:00",
+              "category": "strange_real_phenomenon",
+              "complete": false,
+              "post_ids": [],
+              "missing": [
+                "facebook",
+                "instagram",
+                "tiktok",
+                "youtube"
+              ],
+              "duplicate_networks": [],
+              "unexpected_status": []
+            },
+            {
+              "time": "20:00",
+              "category": "myth_or_truth",
+              "complete": false,
+              "post_ids": [],
+              "missing": [
+                "facebook",
+                "instagram",
+                "tiktok",
+                "youtube"
+              ],
+              "duplicate_networks": [],
+              "unexpected_status": []
+            }
+          ]
+        }
+      ],
+      "minimum_met": true,
+      "target_met": false,
+      "note": "Scheduled coverage only. Final media QA and published reconciliation remain separate gates."
+    },
+    "note": "Final media reviewed. Scheduled is not Published. Wednesday scripts are not queued."
+  }
+}
