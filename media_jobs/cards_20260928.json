@@ -1,0 +1,161 @@
+{
+  "status": "IN_PRODUCTION",
+  "production_owner": "interactive-session-20260927",
+  "production_lease_until": "2026-09-27T16:00:00+03:00",
+  "instruction": "Do not produce or schedule duplicate 28 Sep packs while this lease is active. Reconcile actual Metricool queue and final review report first.",
+  "date": "2026-09-28",
+  "packs": {
+    "survival28": {
+      "title": "Σεισμός: 8 προετοιμασίες πριν συμβεί",
+      "time": "09:00",
+      "style": "photoreal Greek home preparedness documentary, navy amber white editorial, very large bold clean Greek sans typography",
+      "footer": "Πολιτική Προστασία • Εικόνες AI",
+      "cards": [
+        [
+          "ΣΕΙΣΜΟΣ: ΠΡΙΝ ΣΥΜΒΕΙ",
+          "8 προετοιμασίες που κάνουμε σήμερα. Όχι την ώρα της δόνησης.",
+          "Wide calm realistic Greek apartment living room, sturdy table, tidy secured furnishings, no disaster, no people."
+        ],
+        [
+          "ΣΤΕΡΕΩΣΕ ΤΑ ΨΗΛΑ ΕΠΙΠΛΑ",
+          "Βιβλιοθήκες και ράφια χρειάζονται γερή στερέωση στον τοίχο.",
+          "Close photo of actual metal furniture anti-tip bracket anchored at upper back of tall wood bookshelf to wall, realistic screws."
+        ],
+        [
+          "ΒΑΡΙΑ ΑΝΤΙΚΕΙΜΕΝΑ ΧΑΜΗΛΑ",
+          "Μετακίνησε τα βαριά αντικείμενα στα χαμηλότερα ράφια.",
+          "Low angle realistic bookshelf with heavy encyclopedias and ceramic vase on bottom shelf, light objects on top, distinct close view."
+        ],
+        [
+          "ΕΛΕΥΘΕΡΟΣ ΧΩΡΟΣ ΠΑΝΩ ΣΟΥ",
+          "Απομάκρυνε βαριά αντικείμενα από πάνω από κρεβάτια και καναπέδες.",
+          "Peaceful bedroom with bed against empty clear wall, no shelves or hanging heavy frames above pillows."
+        ],
+        [
+          "ΒΡΕΣ ΣΗΜΕΙΟ ΠΡΟΣΤΑΣΙΑΣ",
+          "Εντόπισε ανθεκτικό τραπέζι, μακριά από τζάμια και βιβλιοθήκες.",
+          "Sturdy wooden rectangular table in center of open room, visible strong legs, windows far away, no glass table."
+        ],
+        [
+          "ΕΤΟΙΜΑΣΕ ΤΑ ΒΑΣΙΚΑ",
+          "Φακός, ραδιόφωνο με μπαταρίες και βαλιτσάκι πρώτων βοηθειών.",
+          "Photographic flat lay black flashlight, portable battery radio, spare batteries, compact plain first aid case on wood table."
+        ],
+        [
+          "ΜΑΘΕ ΤΟΥΣ ΔΙΑΚΟΠΤΕΣ",
+          "Η οικογένεια να γνωρίζει πού κλείνουν ρεύμα, νερό και φυσικό αέριο.",
+          "Photoreal adult couple in utility area pointing from safe distance at CLOSED electrical breaker cabinet, no exposed wires, no work being performed."
+        ],
+        [
+          "ΣΥΜΦΩΝΗΣΤΕ ΠΟΥ ΘΑ ΒΡΕΘΕΙΤΕ",
+          "Διαλέξτε ανοιχτό σημείο, μακριά από κτίρια, δέντρα και καλώδια.",
+          "Wide open empty paved sports field under clear sky, unobstructed center, low distant buildings outside field, no overhead cables, two adults far center."
+        ],
+        [
+          "ΚΡΑΤΑ ΤΗΝ ΕΞΟΔΟ ΕΛΕΥΘΕΡΗ",
+          "Μην αφήνεις ψηλά έπιπλα να μπορούν να κλείσουν την πόρτα. Ακολουθούμε τις επίσημες οδηγίες.",
+          "Photoreal spacious unobstructed apartment entry hallway and front door, shoes stored neatly, no tall furniture near doorway."
+        ]
+      ]
+    },
+    "zodiac28": {
+      "title": "Πώς δέχεσαι ένα κομπλιμέντο; Κριός έως Παρθένος",
+      "time": "11:00",
+      "style": "rich colorful artistic zodiac portrait painting, premium celestial symbolism, deep jewel tones gold, very large elegant Greek letters, each sign clearly represented",
+      "footer": "Συμβολικά πορτρέτα • Ψυχαγωγία • AI",
+      "cards": [
+        [
+          "ΚΡΙΟΣ • ΠΩΣ ΔΕΧΕΣΑΙ ΕΝΑ ΚΟΜΠΛΙΜΕΝΤΟ;",
+          "Χαμογελάς σαν να το περίμενες. Μέσα σου παίρνεις φωτιά.",
+          "Majestic ram red and copper celestial fire but calm elegant, clearly Aries horned ram."
+        ],
+        [
+          "ΤΑΥΡΟΣ • ΠΩΣ ΔΕΧΕΣΑΙ ΕΝΑ ΚΟΜΠΛΙΜΕΝΤΟ;",
+          "Δεν κάνεις θόρυβο. Θυμάσαι όμως τη στιγμή για καιρό.",
+          "Majestic emerald gold bull in rose garden under zodiac stars clearly Taurus."
+        ],
+        [
+          "ΔΙΔΥΜΟΙ • ΠΩΣ ΔΕΧΕΣΑΙ ΕΝΑ ΚΟΜΠΛΙΜΕΝΤΟ;",
+          "Απαντάς με αστείο. Ύστερα το ξανασκέφτεσαι χαμογελώντας.",
+          "Two adult twin celestial faces mirrored in luminous violet yellow clouds, clearly Gemini twin motif."
+        ],
+        [
+          "ΚΑΡΚΙΝΟΣ • ΠΩΣ ΔΕΧΕΣΑΙ ΕΝΑ ΚΟΜΠΛΙΜΕΝΤΟ;",
+          "Σε αγγίζει περισσότερο όταν δείχνει ότι κάποιος σε πρόσεξε.",
+          "Large elegant silver crab on luminous blue shoreline beneath crescent moon, clearly Cancer."
+        ],
+        [
+          "ΛΕΩΝ • ΠΩΣ ΔΕΧΕΣΑΙ ΕΝΑ ΚΟΜΠΛΙΜΕΝΤΟ;",
+          "Λάμπεις. Και θέλεις να μοιραστείς λίγη από τη χαρά σου.",
+          "Regal golden lion frontal mane sunburst purple royal sky, unmistakable Leo."
+        ],
+        [
+          "ΠΑΡΘΕΝΟΣ • ΠΩΣ ΔΕΧΕΣΑΙ ΕΝΑ ΚΟΜΠΛΙΜΕΝΤΟ;",
+          "Λες «δεν ήταν τίποτα». Χαίρεσαι που φάνηκε η προσπάθεια.",
+          "Adult celestial maiden holding wheat sheaf elegant green gold ivory robes, clearly Virgo."
+        ]
+      ]
+    },
+    "love28": {
+      "title": "Το ταπεράκι της Δευτέρας",
+      "time": "15:00",
+      "style": "photoreal warm cinematic Greek family story, cream and muted blue palette, coherent characters adult daughter32 long dark hair blue shirt and father65 gray short hair clean shaven beige sweater, large bold readable Greek text",
+      "footer": "Πρωτότυπη μυθοπλασία • Εικόνες AI",
+      "cards": [
+        [
+          "ΚΑΘΕ ΔΕΥΤΕΡΑ, ΤΟ ΙΔΙΟ ΤΑΠΕΡΑΚΙ",
+          "Η Άννα έλεγε στον πατέρα της πως δεν χρειαζόταν να της μαγειρεύει.",
+          "Father65 gray short hair beige sweater hands blue lidded rectangular food container to daughter32 long dark hair blue shirt at Greek apartment doorway morning."
+        ],
+        [
+          "ΕΚΕΙΝΟΣ ΑΠΑΝΤΟΥΣΕ: «ΠΕΡΙΣΣΕΨΕ»",
+          "Μέχρι που μια μέρα πήγε απροειδοποίητα στο σπίτι του.",
+          "Daughter32 blue shirt entering father's modest warm kitchen, blue lidded lunchbox in hand, father65 beige sweater by stove surprised gently."
+        ],
+        [
+          "ΣΤΟ ΤΡΑΠΕΖΙ ΥΠΗΡΧΕ ΜΟΝΟ ΕΝΑ ΠΙΑΤΟ",
+          "Το φαγητό δεν περίσσευε. Το μαγείρευε από την αρχή για εκείνη.",
+          "Close kitchen table ONE plate of simple food beside blue lidded container packed with cooked food, father beige sleeve stirring pot background, no additional plates."
+        ],
+        [
+          "ΤΗΝ ΕΠΟΜΕΝΗ ΔΕΥΤΕΡΑ ΧΤΥΠΗΣΕ ΕΚΕΙΝΗ",
+          "Κρατούσε δύο μερίδες. «Μου περίσσεψε», του είπε.",
+          "Daughter32 long dark hair blue shirt at same apartment door holding TWO blue lidded lunchboxes stacked, smiling to father65 beige sweater, natural hands."
+        ],
+        [
+          "ΑΥΤΗ ΤΗ ΦΟΡΑ ΕΦΑΓΑΝ ΜΑΖΙ",
+          "Μερικά «σ’ αγαπώ» δεν λέγονται. Μπαίνουν στο τραπέζι.",
+          "Father65 gray short hair beige sweater and daughter32 long dark hair blue shirt seated across small Greek kitchen table with exactly TWO food plates, sharing warm smile no extra people."
+        ]
+      ]
+    },
+    "myth28": {
+      "title": "Το χρυσόψαρο ξεχνά σε 3 δευτερόλεπτα;",
+      "time": "20:00",
+      "style": "photoreal aquatic wildlife magazine, teal orange white, large bold Greek text, healthy natural common goldfish in roomy planted aquarium never tiny bowl",
+      "footer": "Πηγή: University of Oxford • Εικόνες AI",
+      "cards": [
+        [
+          "ΞΕΧΝΑ ΤΑ ΠΑΝΤΑ ΣΕ 3 ΔΕΥΤΕΡΟΛΕΠΤΑ;",
+          "Το έχουμε ακούσει για τα χρυσόψαρα. Τι δείχνουν όμως τα πειράματα;",
+          "Macro portrait common orange goldfish in large green planted aquarium frontal three-quarter."
+        ],
+        [
+          "ΜΠΟΡΕΙ ΝΑ ΜΑΘΕΙ ΜΙΑ ΔΙΑΔΡΟΜΗ",
+          "Σε μελέτη, χρυσόψαρα εκπαιδεύτηκαν να κολυμπούν συγκεκριμένη απόσταση.",
+          "Photoreal orange goldfish swimming left along long spacious clear aquarium seen side on, subtle black white vertical background stripes educational reconstruction."
+        ],
+        [
+          "ΧΡΗΣΙΜΟΠΟΙΕΙ ΟΠΤΙΚΑ ΣΤΟΙΧΕΙΑ",
+          "Όταν άλλαξαν οι ρίγες γύρω του, άλλαξε και η εκτίμησή του για την απόσταση.",
+          "Distinct photoreal close side angle goldfish turning near black white striped aquarium panel, spacious water, no fake measurement scale."
+        ],
+        [
+          "ΤΑ «3 ΔΕΥΤΕΡΟΛΕΠΤΑ» ΕΙΝΑΙ ΜΥΘΟΣ",
+          "Η μάθηση των χρυσόψαρων είναι πιο σύνθετη από μια δημοφιλή ατάκα.",
+          "Goldfish among healthy aquatic plants wide luminous green aquarium photo different composition, no small fishbowl."
+        ]
+      ]
+    }
+  }
+}
