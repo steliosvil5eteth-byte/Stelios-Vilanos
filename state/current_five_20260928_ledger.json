@@ -1,0 +1,160 @@
+{
+  "strategy": "CURRENT_FIVE_DAILY_20260927",
+  "date": "2026-09-28",
+  "brand_id": 7076410,
+  "timezone": "Europe/Athens",
+  "observed_at": "2026-09-27T14:10:00+03:00",
+  "logical_target": 5,
+  "destination_target": 20,
+  "status": "FIVE_LOGICAL_POSTS_SCHEDULED_PENDING_UNDER_ACTIVE_LEASE",
+  "final_ready_through": null,
+  "slots": [
+    {
+      "time": "09:00",
+      "category": "survival",
+      "title": "Σεισμός: 8 προετοιμασίες πριν συμβεί",
+      "qa": "PASSED_FINAL_REVIEW_EXACT_METRICOOL_MEDIA",
+      "media_commit": "3284ccaa73e539d34670c28a850250f5fc40bfec",
+      "entries": [
+        {
+          "post_id": 382829069,
+          "uuid": "5052034884527017936",
+          "platforms": {
+            "facebook": "PENDING",
+            "instagram": "PENDING",
+            "tiktok": "PENDING"
+          }
+        },
+        {
+          "post_id": 382829077,
+          "uuid": "-1162706392677989621",
+          "platforms": {
+            "youtube": "PENDING"
+          }
+        }
+      ]
+    },
+    {
+      "time": "11:00",
+      "category": "zodiac",
+      "title": "Πώς δέχεσαι ένα κομπλιμέντο; Κριός–Παρθένος",
+      "qa": "PASSED_FINAL_REVIEW_EXACT_METRICOOL_MEDIA",
+      "media_commit": "3cb8b9505fca983b53c16161cd79d1e6b3ba2b64",
+      "entries": [
+        {
+          "post_id": 382831058,
+          "uuid": "3730953815144417193",
+          "platforms": {
+            "facebook": "PENDING",
+            "instagram": "PENDING",
+            "tiktok": "PENDING"
+          }
+        },
+        {
+          "post_id": 382831065,
+          "uuid": "1293758576546499690",
+          "platforms": {
+            "youtube": "PENDING"
+          }
+        }
+      ]
+    },
+    {
+      "time": "15:00",
+      "category": "love_soul_relationship",
+      "title": "Η συνταγή στην τελευταία σελίδα",
+      "qa": "PASSED_FINAL_REVIEW_CURRENT_LIVE_VERSION",
+      "entries": [
+        {
+          "post_id": 382831147,
+          "uuid": "-7902353527416862519",
+          "platforms": {
+            "facebook": "PENDING",
+            "instagram": "PENDING",
+            "tiktok": "PENDING"
+          }
+        },
+        {
+          "post_id": 382831208,
+          "uuid": "7246532472844078062",
+          "platforms": {
+            "youtube": "PENDING"
+          }
+        }
+      ]
+    },
+    {
+      "time": "17:00",
+      "category": "strange_real_phenomenon",
+      "title": "Φακοειδή νέφη: οι φακοί πάνω από τα βουνά",
+      "qa": "PASSED_FINAL_REVIEW_EXACT_METRICOOL_MEDIA",
+      "media_commit": "ef3a79b03a7e762583edcec8d0d6d5aaaedc3886",
+      "checks": {
+        "duration_seconds": 105.797,
+        "resolution": "1080x1920",
+        "audio_streams": 1,
+        "background_music": false,
+        "max_detected_silence_seconds": 1.095,
+        "burned_in_greek_subtitles": true,
+        "visual_relevance": true
+      },
+      "entries": [
+        {
+          "post_id": 382829688,
+          "uuid": "2450639086477656674",
+          "platforms": {
+            "facebook": "PENDING",
+            "instagram": "PENDING",
+            "tiktok": "PENDING",
+            "youtube": "PENDING"
+          }
+        }
+      ]
+    },
+    {
+      "time": "20:00",
+      "category": "myth_or_truth",
+      "title": "Η κουκουβάγια γυρίζει το κεφάλι της 360°;",
+      "qa": "PASSED_FINAL_REVIEW_CURRENT_LIVE_VERSION",
+      "source": "https://www.nationalzoo.si.edu/animals/eastern-screech-owl",
+      "entries": [
+        {
+          "post_id": 382831626,
+          "uuid": "4430904804091774595",
+          "platforms": {
+            "facebook": "PENDING",
+            "instagram": "PENDING",
+            "tiktok": "PENDING"
+          }
+        },
+        {
+          "post_id": 382831650,
+          "uuid": "-8344171222198759588",
+          "platforms": {
+            "youtube": "PENDING"
+          }
+        }
+      ]
+    }
+  ],
+  "suppressed_duplicates": [
+    {
+      "current_post_id": 382830330,
+      "previous_recorded_id": 382830070,
+      "uuid": "4939033458929453922",
+      "draft": true,
+      "autoPublish": false,
+      "reason": "Concurrent alternate earthquake post for already filled 09:00 slot; intentionally suppressed and never to be reactivated."
+    }
+  ],
+  "production_lease": {
+    "owner": "interactive-session-20260927",
+    "until": "2026-09-27T16:00:00+03:00",
+    "instruction": "Observe only; reconcile live queue after lease expiry before changing 11:00, 15:00 or 20:00."
+  },
+  "notes": [
+    "Metricool live queue is authoritative. Backlog subjects are not scheduled until live readback confirms IDs.",
+    "Because an active production lease may replace media under the same UUID, re-run exact final media QA after any update and before release.",
+    "final_ready_through remains null while the lease owner has not reconciled the backlog state."
+  ]
+}
