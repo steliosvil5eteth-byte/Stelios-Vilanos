@@ -2397,6 +2397,35 @@
         "final_end_reviewed": true,
         "notes": "Seven scene-specific images visually reviewed with AI labels and source credits. Final 119.997s 1080x1920 video full decode passed; all seven scenes and closing CTA reviewed. Azure F0 Nestoras narration, no music. Two unclear phrases rewritten; final independent Whisper medium transcription reviewed in full. Exact Azure word-boundary subtitles, longest measured pause 1.11508s. Repaired incomplete intermediate segment; final full-duration gate passed."
       }
+    },
+    {
+      "job_id": "five-20260929/survival29",
+      "date": "2026-09-29",
+      "theme": "survival",
+      "title": "Καταιγίδα: προστασία μέσα στο σπίτι",
+      "caption": "Καταιγίδα: προστασία μέσα στο σπίτι ⛈️\n\nΤι προετοιμάζουμε πριν έρθει και τι αποφεύγουμε όσο υπάρχουν κεραυνοί; Εννέα απλές υπενθυμίσεις στις κάρτες. Ακολουθούμε πάντοτε τις οδηγίες των αρχών για την περιοχή μας.\n\nΠηγές: Πολιτική Προστασία https://civilprotection.gov.gr/odigies-prostasias/kataigides και National Weather Service https://www.weather.gov/safety/lightning-indoors\nΕκπαιδευτική ενημέρωση, όχι πρόγνωση καιρού. Εικόνες δημιουργημένες με AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Καταιγίδα #ΠολιτικήΠροστασία #Ασφάλεια #Επιβίωση #Κεραυνοί",
+      "fingerprint": "five-20260929-survival29",
+      "status": "scheduled",
+      "scheduled_time": "2026-09-29T09:00:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "382842295,382842305",
+      "metricool_uuid": "-861654960252367144,-989241822094471226",
+      "notion_page_id": "3e8f2345-b318-8138-8649-cdbe09f53279",
+      "media_commit": "b3124070129d7ed913ed361ec590e226af19fd0b",
+      "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b3124070129d7ed913ed361ec590e226af19fd0b/jobs/five-20260929/survival29/survival-storm.mp4",
+      "duration_seconds": 63,
+      "quality_check": {
+        "final_visuals_reviewed": true,
+        "full_ffmpeg_decode_passed": true,
+        "final_end_reviewed": true,
+        "notes": "Reviewed all nine final cards, source advice Civil Protection/NWS, numbering, spelling, photographic meaning, CTA and AI disclosure. Replaced card 5 to place family away from windows. Full 63s vertical slideshow, all nine scenes and ending reviewed, single original instrumental without narration, full FFmpeg decode passed. Four-network live readback PENDING, draft=false autoPublish=true."
+      }
     }
   ]
 }
