@@ -23,20 +23,15 @@
     "notion_archive_data_source_id": "46cd5cf4-5f7e-46e8-b0ef-274aeadbdb52"
   },
   "publishing": {
-    "program_label": "CURRENT_TEN_DAILY",
-    "daily_target_logical_posts_per_network": 10,
-    "daily_target_destinations": 40,
+    "program_label": "CURRENT_FIVE_DAILY",
+    "daily_target_logical_posts_per_network": 5,
+    "daily_target_destinations": 20,
     "slots_local_time": [
-      "07:00",
       "09:00",
       "11:00",
-      "13:00",
       "15:00",
       "17:00",
-      "18:30",
-      "20:00",
-      "21:30",
-      "23:00"
+      "20:00"
     ],
     "publish_to_all_connected_socials": [
       "facebook",
@@ -46,10 +41,24 @@
     ],
     "require_user_confirmation": false,
     "quality_first_catch_up": true,
-    "rule": "Only brand 7076410 is operational. Every logical post must pass final QA. If a slot misses its original time, repair it and publish later the same day after a fresh duplicate check. End-of-day target is exactly 10 correct logical posts."
+    "rule": "Only brand 7076410. Five posts/day, one per active category after full QA and fresh dedupe. Never catch up paused categories. Preserve published history.",
+    "active_categories": [
+      "survival",
+      "zodiac",
+      "love_soul_relationship",
+      "strange_real_phenomenon",
+      "myth_or_truth"
+    ],
+    "paused_categories": [
+      "relationships",
+      "dog_bartender",
+      "greece_two_day_trip",
+      "documented_experiments",
+      "international_legend"
+    ]
   },
   "runner": {
-    "max_logical_posts_per_day": 10,
+    "max_logical_posts_per_day": 5,
     "duplicate_policy": "one_logical_post_per_date_category_platform",
     "require_future_schedule": true,
     "hands_off_mode": true,
