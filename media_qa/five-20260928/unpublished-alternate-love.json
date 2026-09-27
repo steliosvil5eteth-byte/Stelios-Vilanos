@@ -1,0 +1,126 @@
+{
+  "date": "2026-09-28",
+  "purpose": "Preserve unpublished alternate media replaced by reviewed scene-specific final editions. Not scheduled or published; requires new duplicate and final-media review before any future use.",
+  "alternates": [
+    {
+      "id": 382831147,
+      "publicationDate": {
+        "dateTime": "2026-09-28T15:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "creationDate": {
+        "dateTime": "2026-09-27T14:07:00",
+        "timezone": "Europe/Athens"
+      },
+      "text": "Η συνταγή στην τελευταία σελίδα. Μια μικρή ιστορία για όσα συνεχίζουν να μας ενώνουν, ακόμη κι όταν κάποιος λείπει.\nΠρωτότυπη μυθοπλασία. Οι εικόνες δημιουργήθηκαν με AI.\nΠοια οικογενειακή συνταγή κρατά μια ανάμνηση ζωντανή για σένα;\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ιστορίες #Αγάπη #Οικογένεια #Αναμνήσεις #Ψυχή",
+      "firstCommentText": "",
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202609/7000636-file-9453986388854704558.jpeg",
+        "https://static.metricool.com/planner/202609/7000636-file-920070711537240357.jpeg",
+        "https://static.metricool.com/planner/202609/7000636-file-14802083910233954553.jpeg",
+        "https://static.metricool.com/planner/202609/7000636-file-17681110368477651357.jpeg",
+        "https://static.metricool.com/planner/202609/7000636-file-4681943352111484331.jpeg"
+      ],
+      "autoPublish": true,
+      "saveExternalMediaFiles": false,
+      "mediaAltText": [
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "shortener": false,
+      "draft": false,
+      "twitterData": {
+        "type": "POST"
+      },
+      "facebookData": {
+        "type": "POST"
+      },
+      "instagramData": {
+        "autoPublish": true,
+        "type": "POST",
+        "showReelOnFeed": true,
+        "isAiGenerated": true
+      },
+      "tiktokData": {
+        "privacyOption": "PUBLIC_TO_EVERYONE",
+        "title": "Η συνταγή στην τελευταία σελίδα",
+        "autoAddMusic": true,
+        "photoCoverIndex": 0,
+        "isAigc": true
+      },
+      "hasNotReadNotes": false,
+      "uuid": "-7902353527416862519",
+      "creatorUserMail": "stelios.vil5eteth@gmail.com",
+      "creatorUserId": 5403385
+    },
+    {
+      "id": 382831208,
+      "publicationDate": {
+        "dateTime": "2026-09-28T15:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "creationDate": {
+        "dateTime": "2026-09-27T14:07:00",
+        "timezone": "Europe/Athens"
+      },
+      "text": "Η συνταγή στην τελευταία σελίδα. Μια μικρή ιστορία για όσα συνεχίζουν να μας ενώνουν, ακόμη κι όταν κάποιος λείπει.\nΠρωτότυπη μυθοπλασία. Οι εικόνες δημιουργήθηκαν με AI.\nΠοια οικογενειακή συνταγή κρατά μια ανάμνηση ζωντανή για σένα;\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ιστορίες #Αγάπη #Οικογένεια #Αναμνήσεις #Ψυχή",
+      "firstCommentText": "",
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202609/7000636-file-13860812146809642644.mp4"
+      ],
+      "autoPublish": true,
+      "saveExternalMediaFiles": false,
+      "mediaAltText": [
+        null
+      ],
+      "shortener": false,
+      "draft": false,
+      "twitterData": {
+        "type": "POST"
+      },
+      "instagramData": {
+        "autoPublish": true,
+        "isAiGenerated": false
+      },
+      "youtubeData": {
+        "title": "Η συνταγή στην τελευταία σελίδα",
+        "type": "short",
+        "privacy": "public",
+        "category": "ENTERTAINMENT",
+        "madeForKids": false,
+        "isAiGeneratedContent": true
+      },
+      "hasNotReadNotes": false,
+      "uuid": "7246532472844078062",
+      "creatorUserMail": "stelios.vil5eteth@gmail.com",
+      "creatorUserId": 5403385
+    }
+  ]
+}
