@@ -2368,6 +2368,35 @@
         "final_end_reviewed": true,
         "notes": "Four complete 1080 square JPEG cards visually reviewed. Facts verified San Diego Zoo. Full 28s video decode, sequence and ending reviewed. One original instrumental, no narration. Native FB/IG/TikTok and vertical full YouTube slideshow. AI label and CTA."
       }
+    },
+    {
+      "job_id": "five-20260929/kelvin29v2",
+      "date": "2026-09-29",
+      "theme": "strange_real_phenomenon",
+      "title": "Kelvin–Helmholtz: κύματα στον ουρανό",
+      "caption": "Kelvin–Helmholtz: κύματα στον ουρανό\n\nΌταν δύο στρώματα αέρα κινούνται με διαφορετικές ταχύτητες, τα σύννεφα μπορούν να θυμίσουν κύματα που σπάνε. Ένα σύντομο, σπάνιο θέαμα με φυσική εξήγηση.\nΠηγές: Met Office, NWS Albany\nhttps://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/clouds/unusual-cloud-formations/kelvin-helmholtz\nhttps://www.weather.gov/media/aly/stormbuster/Spring17SB.pdf\nΕικόνες: ενδεικτικές αναπαραστάσεις AI, όχι αρχειακό υλικό.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Σύννεφα #Καιρός #Φύση #Επιστήμη #ΠαράξεναΦαινόμενα",
+      "fingerprint": "five-20260929-kelvin29v2",
+      "status": "scheduled",
+      "scheduled_time": "2026-09-29T17:00:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "382840452",
+      "metricool_uuid": "5062927141864751292",
+      "notion_page_id": "3e8f2345-b318-81e5-a118-dc06499e7235",
+      "media_commit": "7ed0abaa9505e82b2fcd4742e89a51ae525dc35c",
+      "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/7ed0abaa9505e82b2fcd4742e89a51ae525dc35c/jobs/five-20260929/kelvin29v2/kelvin-helmholtz.mp4",
+      "duration_seconds": 119.997,
+      "quality_check": {
+        "final_visuals_reviewed": true,
+        "full_ffmpeg_decode_passed": true,
+        "final_end_reviewed": true,
+        "notes": "Seven scene-specific images visually reviewed with AI labels and source credits. Final 119.997s 1080x1920 video full decode passed; all seven scenes and closing CTA reviewed. Azure F0 Nestoras narration, no music. Two unclear phrases rewritten; final independent Whisper medium transcription reviewed in full. Exact Azure word-boundary subtitles, longest measured pause 1.11508s. Repaired incomplete intermediate segment; final full-duration gate passed."
+      }
     }
   ]
 }
