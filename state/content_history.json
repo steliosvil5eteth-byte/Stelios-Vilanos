@@ -2431,6 +2431,42 @@
         "final_end_reviewed": true,
         "notes": "Reviewed all nine final cards, source advice Civil Protection/NWS, numbering, spelling, photographic meaning, CTA and AI disclosure. Replaced card 5 to place family away from windows. Full 63s vertical slideshow, all nine scenes and ending reviewed, single original instrumental without narration, full FFmpeg decode passed. Four-network live readback PENDING, draft=false autoPublish=true."
       }
+    },
+    {
+      "job_id": "extra-20260928-mountain-house",
+      "date": "2026-09-28",
+      "theme": "story",
+      "title": "Ένα σπίτι που έκρυβε ένα μυστικό για 30 χρόνια",
+      "caption": "Ένα σπίτι που έκρυβε ένα μυστικό για 30 χρόνια…\n\nΈνα παλιό μπαούλο, φωτογραφίες μιας άγνωστης γυναίκας και ένα κλειδί που οδηγούσε σε ένα δωμάτιο κρυμμένο πίσω από μια ντουλάπα.\n\nΠρωτότυπη μυθοπλασία. Οι εικόνες δημιουργήθηκαν με AI.\nΕσείς θα αποκαλύπτατε το μυστικό ή θα το αφήνατε κρυφό;\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Μυστήριο #Θρίλερ #Ιστορίες #Ανατροπή #Storytime",
+      "fingerprint": "extra-20260928-mountain-house-30-years",
+      "status": "scheduled",
+      "scheduled_time": "2026-09-28T14:00:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "383346984,383347080",
+      "metricool_uuid": "-2270278046541985578,8690328865246036131",
+      "notion_page_id": "3e9f2345-b318-8199-a426-de7e86a65015",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-3029188676503119081.mp4",
+      "quality_check": {
+        "final_visuals_reviewed": true,
+        "card_count": 10,
+        "final_card_10_corrected": true,
+        "tiktok_jpeg_1080": true,
+        "youtube_1080x1920": true,
+        "youtube_duration_seconds": 80,
+        "single_original_instrumental_layer": true,
+        "ai_disclosure": true,
+        "final_cta_verified": true,
+        "live_readback_status": "PENDING",
+        "draft": false,
+        "autoPublish": true,
+        "notes": "PASSED_FINAL_REVIEW. Duplicate checks clear. Existing 14:00 Metricool entries were updated in place rather than duplicated."
+      }
     }
   ]
 }
