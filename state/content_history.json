@@ -2387,7 +2387,7 @@
       "caption": "Kelvin–Helmholtz: κύματα στον ουρανό\n\nΌταν δύο στρώματα αέρα κινούνται με διαφορετικές ταχύτητες, τα σύννεφα μπορούν να θυμίσουν κύματα που σπάνε. Ένα σύντομο, σπάνιο θέαμα με φυσική εξήγηση.\nΠηγές: Met Office, NWS Albany\nhttps://weather.metoffice.gov.uk/learn-about/weather/types-of-weather/clouds/unusual-cloud-formations/kelvin-helmholtz\nhttps://www.weather.gov/media/aly/stormbuster/Spring17SB.pdf\nΕικόνες: ενδεικτικές αναπαραστάσεις AI, όχι αρχειακό υλικό.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Σύννεφα #Καιρός #Φύση #Επιστήμη #ΠαράξεναΦαινόμενα",
       "fingerprint": "five-20260929-kelvin29v2",
       "status": "scheduled",
-      "scheduled_time": "2026-09-29T17:00:00+03:00",
+      "scheduled_time": "2026-09-29T20:45:00+03:00",
       "platforms": [
         "facebook",
         "instagram",
@@ -2395,18 +2395,28 @@
         "youtube"
       ],
       "metricool_brand_id": "7076410",
-      "metricool_post_id": "382840452",
+      "metricool_post_id": "384391144",
       "metricool_uuid": "5062927141864751292",
       "notion_page_id": "3e8f2345-b318-81e5-a118-dc06499e7235",
       "media_commit": "7ed0abaa9505e82b2fcd4742e89a51ae525dc35c",
-      "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/7ed0abaa9505e82b2fcd4742e89a51ae525dc35c/jobs/five-20260929/kelvin29v2/kelvin-helmholtz.mp4",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-17706740676651618267.mp4",
       "duration_seconds": 119.997,
       "quality_check": {
         "final_visuals_reviewed": true,
         "full_ffmpeg_decode_passed": true,
         "final_end_reviewed": true,
-        "notes": "Seven scene-specific images visually reviewed with AI labels and source credits. Final 119.997s 1080x1920 video full decode passed; all seven scenes and closing CTA reviewed. Azure F0 Nestoras narration, no music. Two unclear phrases rewritten; final independent Whisper medium transcription reviewed in full. Exact Azure word-boundary subtitles, longest measured pause 1.11508s. Repaired incomplete intermediate segment; final full-duration gate passed."
-      }
+        "notes": "PASSED_FINAL_REVIEW. Exact final MP4 visually reviewed and byte-verified against repository; 119.997s 1080x1920 full decode, Nestor narration independently transcribed/reviewed end-to-end, exact Azure word-boundary burned Greek subtitles, no music, CTA/source/AI disclosure verified. Live Metricool readback at 19:48: 20:45 all four networks PENDING, draft=false, autoPublish=true.",
+        "voice": "el-GR-NestorasNeural",
+        "burned_synced_greek_subtitles": true,
+        "background_music": false,
+        "independent_whisper_medium_reviewed": true,
+        "exact_metricool_file_byte_verified": true,
+        "live_readback_status": "PENDING",
+        "draft": false,
+        "autoPublish": true,
+        "passed_final_review": true
+      },
+      "last_reconciled_at": "2026-09-29T19:48:13+03:00"
     },
     {
       "job_id": "five-20260929/survival29",
@@ -2546,7 +2556,7 @@
       "caption": "Ένα νησί χωρίς αυτοκίνητα για βόλτες στο λιμάνι, πέτρινα αρχοντικά, παραθαλάσσιες διαδρομές και ένα ήρεμο διήμερο με τα πόδια.",
       "fingerprint": "current-ten-20260929-travel-hydra",
       "status": "scheduled",
-      "scheduled_time": "2026-09-29T13:00:00+03:00",
+      "scheduled_time": "2026-09-29T21:30:00+03:00",
       "platforms": [
         "facebook",
         "instagram",
@@ -2554,21 +2564,30 @@
         "youtube"
       ],
       "metricool_brand_id": "7076410",
-      "metricool_post_id": "383956826",
+      "metricool_post_id": "384398057",
       "metricool_uuid": "-1168589066448843604",
       "notion_page_id": "3eaf2345-b318-8197-81c4-db3ef7c26905",
-      "media_url": "https://static.metricool.com/planner/202609/7000636-file-7460885752110415672.mp4",
-      "duration_seconds": 84,
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-16975578623912397288.mp4",
+      "duration_seconds": 84.185,
       "quality_check": {
         "final_visuals_reviewed": true,
         "voice": "el-GR-NestorasNeural",
         "burned_synced_greek_subtitles": true,
         "avatar_presenter": false,
         "background_music": false,
+        "full_ffmpeg_decode_passed": true,
+        "ten_unique_real_hydra_photos": true,
+        "incorrect_painting_removed": true,
+        "rights_verified": true,
+        "dead_air_gt_1_2s": false,
         "live_readback_status": "PENDING",
         "draft": false,
-        "autoPublish": true
-      }
+        "autoPublish": true,
+        "passed_final_review": true,
+        "notes": "PASSED_FINAL_REVIEW on the exact repaired final: 84.185s, 1080x1920, ten distinct real Hydra photographs, incorrect painting removed, burned Greek subtitles visible/synced, Nestor voice, no music/avatar; exact final contact sheet and all ten scene frames reviewed. Live Metricool readback: 21:30 all four PENDING."
+      },
+      "production_job_id": "current-ten-20260929-hydra-repair",
+      "last_reconciled_at": "2026-09-29T19:48:13+03:00"
     },
     {
       "job_id": "current-ten-20260929/hawthorne",
