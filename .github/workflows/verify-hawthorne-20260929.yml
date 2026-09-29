@@ -1,0 +1,47 @@
+name: Verify Hawthorne narration 20260929
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/verify-hawthorne-20260929.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch exact repaired media
+        run: |
+          git fetch origin media-output --depth=1
+          git worktree add "$RUNNER_TEMP/media-output" FETCH_HEAD
+          cp "$RUNNER_TEMP/media-output/jobs/current-ten-20260929-repaired-videos/current-ten-20260929-hawthorne-repair/nestoras.wav" hawthorne-nestoras.wav
+          cp "$RUNNER_TEMP/media-output/jobs/current-ten-20260929-repaired-videos/current-ten-20260929-hawthorne-repair/current-ten-20260929-hawthorne-repair.mp4" hawthorne-final.mp4
+          sha256sum hawthorne-nestoras.wav hawthorne-final.mp4 > sha256.txt
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Independent Greek ASR
+        run: |
+          pip install --disable-pip-version-check faster-whisper==1.2.0
+          python - <<'PY'
+          from faster_whisper import WhisperModel
+          import json
+          m=WhisperModel('medium',device='cpu',compute_type='int8',cpu_threads=4)
+          segs,info=m.transcribe('hawthorne-nestoras.wav',language='el',beam_size=5)
+          rows=[{'start':s.start,'end':s.end,'text':s.text.strip()} for s in segs]
+          open('hawthorne-medium-transcript.json','w',encoding='utf-8').write(json.dumps(rows,ensure_ascii=False,indent=2))
+          print(json.dumps(rows,ensure_ascii=False))
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: hawthorne-audio-verification
+          path: |
+            hawthorne-medium-transcript.json
+            sha256.txt
+          retention-days: 3
