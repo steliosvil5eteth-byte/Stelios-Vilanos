@@ -2383,7 +2383,7 @@
       "caption": "Οι καμήλες αποθηκεύουν νερό στην καμπούρα;\n\nΗ καμπούρα περιέχει λίπος. Η αντοχή της καμήλας στις δύσκολες συνθήκες δεν σημαίνει ότι κουβαλά ένα δοχείο νερού στην πλάτη της.\nΠηγή: San Diego Zoo — https://zoo.sandiegozoo.org/animals/camel\nΟι εικόνες είναι εκπαιδευτικές αναπαραστάσεις AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΜύθοςΉΑλήθεια #Καμήλα #Φύση #Ζώα #Έρημος",
       "fingerprint": "five-20260929-myth29",
       "status": "scheduled",
-      "scheduled_time": "2026-09-29T20:00:00+03:00",
+      "scheduled_time": "2026-09-29T21:05:00+03:00",
       "platforms": [
         "facebook",
         "instagram",
@@ -2391,17 +2391,44 @@
         "youtube"
       ],
       "metricool_brand_id": "7076410",
-      "metricool_post_id": "382839901,382839911",
+      "metricool_post_id": "382839901,384406783",
       "metricool_uuid": "-4458293815859196786,5635258198495547035",
       "notion_page_id": "3e8f2345-b318-817f-b7b8-f2e803ecba77",
       "media_commit": "f1ea2a2aee77dcaa0825edc9369e5a299efded96",
-      "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/f1ea2a2aee77dcaa0825edc9369e5a299efded96/jobs/five-20260929/myth29/myth-camel.mp4",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-17018110328618442834.mp4",
       "duration_seconds": 28,
       "quality_check": {
         "final_visuals_reviewed": true,
         "full_ffmpeg_decode_passed": true,
         "final_end_reviewed": true,
-        "notes": "Four complete 1080 square JPEG cards visually reviewed. Facts verified San Diego Zoo. Full 28s video decode, sequence and ending reviewed. One original instrumental, no narration. Native FB/IG/TikTok and vertical full YouTube slideshow. AI label and CTA."
+        "notes": "Four complete 1080 square JPEG cards visually reviewed. Facts verified San Diego Zoo. Full 28s video decode, sequence and ending reviewed. One original instrumental, no narration. Native FB/IG/TikTok and vertical full YouTube slideshow. AI label and CTA.",
+        "passed_final_review": true,
+        "exact_metricool_file_byte_verified": true,
+        "sha256": "bcbe0c94e144b876504b5a620dab7b1d8a5771354f2966a4bb22f1888e984000",
+        "single_instrumental_layer": true,
+        "narration": false,
+        "live_readback_status": "PENDING",
+        "draft": false,
+        "autoPublish": true
+      },
+      "last_reconciled_at": "2026-09-29T19:57:00+03:00",
+      "platform_status": {
+        "facebook": {
+          "status": "PENDING",
+          "source_post_id": "382839901"
+        },
+        "instagram": {
+          "status": "PENDING",
+          "source_post_id": "382839901"
+        },
+        "tiktok": {
+          "status": "PENDING",
+          "source_post_id": "382839901"
+        },
+        "youtube": {
+          "status": "PENDING",
+          "source_post_id": "384406783"
+        }
       }
     },
     {
