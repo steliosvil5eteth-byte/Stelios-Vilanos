@@ -1,0 +1,68 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_TEN_DAILY_20260927",
+  "local_date": "2026-09-29",
+  "active_metricool_brand_id": 7076410,
+  "require_photographic_visuals": true,
+  "authorization_basis": "User explicitly requested completing and publishing today's CURRENT_TEN_DAILY workflow. This manifest renders only; social release remains gated by direct final visual QA and fresh deduplication.",
+  "jobs": [
+    {
+      "id": "current-ten-20260929-relationships-personal-space",
+      "expected_cards": 7,
+      "seconds_per_slide": 5,
+      "caption": "Πόσο χώρο χρειάζεται μια σχέση;\n\nΤο «μαζί» δεν σημαίνει απαραίτητα «πάντα μαζί». Προσωπικός χρόνος, φίλοι, χόμπι και καθαρά όρια μπορούν να συνυπάρχουν με μια δεμένη σχέση — αρκεί οι δύο άνθρωποι να καταλαβαίνουν το ίδιο πράγμα όταν λένε «χρειάζομαι λίγο χώρο».\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Σχέσεις #Ζευγάρι #Επικοινωνία #Όρια #Αγάπη",
+      "slides": [
+        {
+          "title": "ΠΟΣΟ ΜΑΖΙ ΕΙΝΑΙ ΠΟΛΥ; — 1/7",
+          "text": "Μια σχέση μπορεί να είναι δεμένη χωρίς να κάνει τα πάντα μαζί. Το δύσκολο είναι να βρείτε πόσο χώρο χρειάζεται ο καθένας χωρίς να το νιώσει ως απόσταση.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_reads_books_together_in_their_living_room.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "ΧΡΟΝΟΣ ΜΟΝΟΣ — 2/7",
+          "text": "Κάποιος γεμίζει με παρέα. Ο άλλος χρειάζεται λίγες ώρες μόνος του. Αυτό δεν σημαίνει απαραίτητα λιγότερη αγάπη.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Woman_talking_on_the_phone_while_sitting_on_a_couch_during_day_time_in_a_cozy_living_room.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "ΦΙΛΟΙ ΧΩΡΙΣ ΤΟ ΖΕΥΓΑΡΙ — 3/7",
+          "text": "Το να βλέπεις φίλους χωρίς τον σύντροφό σου δεν μειώνει τη σχέση. Μπορεί να προστατεύει κομμάτια της ζωής που σε κάνουν εσένα.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Coffee_and_friends.jpg?width=1600",
+          "source_credit": "Abe.gova",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "ΧΟΜΠΙ ΚΑΙ ΣΥΝΗΘΕΙΕΣ — 4/7",
+          "text": "Όταν όλα γίνονται κοινά, μερικές φορές χάνεται το «εγώ». Ένα χόμπι, μια βόλτα ή λίγος χρόνος μόνος μπορεί να δώσει ανάσα.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Person_handling_a_blank_canvas_in_an_art_studio_during_daytime_preparations_for_a_creative_project.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "ΠΟΥ ΜΠΕΡΔΕΥΕΤΑΙ — 5/7",
+          "text": "Ο προσωπικός χώρος δεν είναι εξαφάνιση, σιωπή ως τιμωρία ή ζωή με μυστικά. Χρειάζεται συμφωνία και σεβασμό.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_enjoying_coffee_together_in_their_cozy_living_room.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "Η ΣΥΖΗΤΗΣΗ — 6/7",
+          "text": "Το καλύτερο όριο δεν είναι ίδιο για όλα τα ζευγάρια. Είναι αυτό που οι δύο καταλαβαίνουν με τον ίδιο τρόπο και δεν χρησιμοποιούν ο ένας εναντίον του άλλου.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_enjoys_time_together_on_the_couch_while_talking_on_the_phone.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "ΕΣΥ ΤΙ ΠΙΣΤΕΥΕΙΣ; — 7/7",
+          "text": "Μια δυνατή σχέση χρειάζεται περισσότερη κοινή ζωή ή περισσότερο προσωπικό χώρο; Γράψε τη γνώμη σου.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_sharing_music_experience_in_a_cozy_living_room_setting.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        }
+      ]
+    }
+  ]
+}

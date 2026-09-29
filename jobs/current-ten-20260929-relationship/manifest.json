@@ -1,0 +1,104 @@
+{
+  "batch_id": "e3907733d5e5b26a",
+  "batch_sha256": "e3907733d5e5b26a5ee56b991061f25e1163dc993ddef3ba746669fe5f18d8cc",
+  "paid_ai_credits_used": 0,
+  "photographic_visuals_required": true,
+  "jobs": [
+    {
+      "id": "current-ten-20260929-relationships-personal-space",
+      "status": "rendered",
+      "card_count": 7,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_reads_books_together_in_their_living_room.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Woman_talking_on_the_phone_while_sitting_on_a_couch_during_day_time_in_a_cozy_living_room.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Coffee_and_friends.jpg?width=1600",
+          "source_credit": "Abe.gova",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Person_handling_a_blank_canvas_in_an_art_studio_during_daytime_preparations_for_a_creative_project.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_enjoying_coffee_together_in_their_cozy_living_room.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_enjoys_time_together_on_the_couch_while_talking_on_the_phone.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_sharing_music_experience_in_a_cozy_living_room_setting.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-ten-20260929-relationships-personal-space-01.jpg",
+          "bytes": 308385,
+          "sha256": "4845b623be0f38e98835eee79212c84926b5a030ce024dbf08116a5fed4db246"
+        },
+        {
+          "name": "current-ten-20260929-relationships-personal-space-02.jpg",
+          "bytes": 270226,
+          "sha256": "e30ec50c9e4e6d1f5194e258839a979a6336bcb37a0b7584209e1b0d549fe1e9"
+        },
+        {
+          "name": "current-ten-20260929-relationships-personal-space-03.jpg",
+          "bytes": 363498,
+          "sha256": "8af31a514ea668139fa1fd2d85391693045ad5a3544eff9aedebf4fcd567014c"
+        },
+        {
+          "name": "current-ten-20260929-relationships-personal-space-04.jpg",
+          "bytes": 260949,
+          "sha256": "28f54c3f24b897795d38ba8d77852f59927191c0380c5186d28f4fe7b0ecacf5"
+        },
+        {
+          "name": "current-ten-20260929-relationships-personal-space-05.jpg",
+          "bytes": 294324,
+          "sha256": "6fdd6818d1704f1f951109ddb1e9112b26dd775e6eaa8b34f3ceb4b89a2e0860"
+        },
+        {
+          "name": "current-ten-20260929-relationships-personal-space-06.jpg",
+          "bytes": 335088,
+          "sha256": "72149408da2114feb6b2c7bd7f36db43a8bf345c00846307beb59b3ffd7c6a11"
+        },
+        {
+          "name": "current-ten-20260929-relationships-personal-space-07.jpg",
+          "bytes": 357997,
+          "sha256": "00b56731e79b039d84143e6074f04b16c210e8ba3be562383306aa3d638b70ca"
+        },
+        {
+          "name": "current-ten-20260929-relationships-personal-space.mp4",
+          "bytes": 1150261,
+          "sha256": "5245209e3a99f570bd83ca8f8ed3580564b0e9a1be9aa1554c48cd7cb8fb4514"
+        }
+      ]
+    }
+  ]
+}
