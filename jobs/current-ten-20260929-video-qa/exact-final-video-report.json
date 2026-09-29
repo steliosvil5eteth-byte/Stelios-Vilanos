@@ -1,0 +1,38 @@
+{
+  "hydra": {
+    "source_path": "jobs/features-20260927/travel-hydra-20260927-1830/travel-hydra-20260927-1830.mp4",
+    "sha256": "568419f7d206b1092b3f87f8458e27d2d98311d80970f7ae237275a10a1c4b70",
+    "duration_seconds": 84.0,
+    "video_streams": 1,
+    "audio_streams": 1,
+    "resolution": [
+      1080,
+      1920
+    ],
+    "contact_sheet": "hydra-contact-sheet.jpg"
+  },
+  "hawthorne": {
+    "source_path": "jobs/features-20260927/experiment-hawthorne-20260927-2130/experiment-hawthorne-20260927-2130.mp4",
+    "sha256": "cef5f26b5b1926ca41b375bfa0f4292674ff5de2fcbccbf7c7fbbc13b9e8a62b",
+    "duration_seconds": 100.697,
+    "video_streams": 1,
+    "audio_streams": 1,
+    "resolution": [
+      1080,
+      1920
+    ],
+    "contact_sheet": "hawthorne-contact-sheet.jpg"
+  },
+  "yuki-onna": {
+    "source_path": "jobs/features-20260927/legend-yuki-onna-20260927-2300/legend-yuki-onna-20260927-2300.mp4",
+    "sha256": "f7eae1fd60f4246ed3f7ca66cda7c13692dee0128c1d978a35c5a844a964a8c4",
+    "duration_seconds": 101.921,
+    "video_streams": 1,
+    "audio_streams": 1,
+    "resolution": [
+      1080,
+      1920
+    ],
+    "contact_sheet": "yuki-onna-contact-sheet.jpg"
+  }
+}
