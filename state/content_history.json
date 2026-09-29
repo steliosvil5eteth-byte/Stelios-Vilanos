@@ -2329,7 +2329,7 @@
       "caption": "Το σακάκι που δεν φόρεσε\n\nΜερικές φράσεις μένουν μέσα μας πολύ αφού τελειώσει μια σχέση. Η δική της πρώτη νίκη ήταν ότι εμφανίστηκε.\nΠρωτότυπη μυθοπλασία. Εικόνες δημιουργημένες με AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ιστορίες #ΝέαΑρχή #Αυτοεκτίμηση #Σχέσεις #Ψυχή",
       "fingerprint": "five-20260929-love29",
       "status": "scheduled",
-      "scheduled_time": "2026-09-29T15:00:00+03:00",
+      "scheduled_time": "2026-09-29T20:20:00+03:00",
       "platforms": [
         "facebook",
         "instagram",
@@ -2337,11 +2337,11 @@
         "youtube"
       ],
       "metricool_brand_id": "7076410",
-      "metricool_post_id": "382838505,382838515",
+      "metricool_post_id": "382838505,384402091",
       "metricool_uuid": "2265602157193482031,-547513606304741207",
       "notion_page_id": "3e8f2345-b318-8190-8b38-f0eec23b28c1",
       "media_commit": "d7e6be88e946f6ff80686eb650819e57dcf865e0",
-      "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/d7e6be88e946f6ff80686eb650819e57dcf865e0/jobs/five-20260929/love29/love-blazer.mp4",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-7914253199575724716.mp4",
       "duration_seconds": 35,
       "quality_check": {
         "final_visuals_reviewed": true,
@@ -2353,9 +2353,27 @@
         "narration": false,
         "exact_metricool_file_byte_verified": true,
         "cta_verified": true,
-        "ai_fiction_disclosure": true
+        "ai_fiction_disclosure": true,
+        "live_readback_status": "PENDING",
+        "draft": false,
+        "autoPublish": true
       },
-      "last_reconciled_at": "2026-09-29T19:49:25+03:00"
+      "last_reconciled_at": "2026-09-29T19:50:00+03:00",
+      "platform_status": {
+        "facebook": {
+          "status": "PUBLISHED"
+        },
+        "instagram": {
+          "status": "PUBLISHED"
+        },
+        "tiktok": {
+          "status": "PUBLISHED"
+        },
+        "youtube": {
+          "status": "PENDING",
+          "source_post_id": "384402091"
+        }
+      }
     },
     {
       "job_id": "five-20260929/myth29",
