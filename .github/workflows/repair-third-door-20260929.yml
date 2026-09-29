@@ -169,7 +169,7 @@ jobs:
               c=clips/f'{i:02d}.mp4'
               vf="scale=1080:1080,format=yuv420p,pad=1080:1920:0:420:black"
               subprocess.run(['ffmpeg','-y','-loglevel','error','-loop','1','-i',str(p),'-vf',vf,'-t','4.5','-r','30','-an','-c:v','libx264','-preset','veryfast','-crf','20',str(c)],check=True)
-              lines.append("file '"+str(c)+"'")
+              lines.append("file '"+str(c.resolve())+"'")
           (root/'yt-list.txt').write_text('\n'.join(lines)+'\n')
           subprocess.run(['ffmpeg','-y','-loglevel','error','-f','concat','-safe','0','-i',str(root/'yt-list.txt'),'-c:v','libx264','-preset','veryfast','-crf','20','-pix_fmt','yuv420p',str(root/'yt-visual.mp4')],check=True)
           subprocess.run(['ffmpeg','-y','-loglevel','error','-i',str(root/'yt-visual.mp4'),'-stream_loop','-1','-i',str(root/'instrumental.m4a'),'-map','0:v:0','-map','1:a:0','-t','45','-c:v','copy','-c:a','aac','-b:a','128k','-movflags','+faststart',str(root/'third-door-youtube-final.mp4')],check=True)
