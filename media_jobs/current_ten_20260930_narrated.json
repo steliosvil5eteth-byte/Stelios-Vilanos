@@ -1,0 +1,152 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_TEN_DAILY_20260927",
+  "local_date": "2026-09-30",
+  "active_metricool_brand_id": 7076410,
+  "jobs": [
+    {
+      "id": "current-ten-20260930-travel-pelion",
+      "local_date": "2026-09-30",
+      "slot": "13:00",
+      "title": "Διήμερο στην Ελλάδα — Πήλιο",
+      "voice": "el-GR-NestorasNeural",
+      "background_music": false,
+      "photo_target": 10,
+      "scenes": 18,
+      "min_duration_seconds": 80,
+      "max_duration_seconds": 150,
+      "caption": "Διήμερο στην Ελλάδα — Πήλιο. Πέτρινα χωριά, δάση, καλντερίμια και θέα ανάμεσα στο Αιγαίο και τον Παγασητικό σε ένα ήρεμο διήμερο με βάση τη Μακρινίτσα, την Πορταριά ή τις Μηλιές.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΔιήμεροΣτηνΕλλάδα #Πήλιο #Θεσσαλία #Μαγνησία #Ταξίδι",
+      "sources": [
+        "Visit Greece — Pelion",
+        "Visit Greece — Mount Pelion",
+        "Visit Greece — The Mount Pelion train"
+      ],
+      "commons_queries": [
+        "Pelion Greece Makrinitsa photograph",
+        "Pelion Greece Portaria photograph",
+        "Pelion Greece Tsagarada photograph",
+        "Pelion Greece Milies village photograph",
+        "Pelion train Moutzouris photograph",
+        "Pelion Greece Damouchari photograph",
+        "Pelion Greece cobblestone path photograph",
+        "Pelion Greece Aegean beach photograph",
+        "Pelion Greece Pagasetic Gulf view photograph",
+        "Pelion Greece stone houses photograph"
+      ],
+      "script": "Αν θέλεις ένα διήμερο που να συνδυάζει βουνό, πέτρινα χωριά και θάλασσα χωρίς να αλλάζεις ολόκληρη περιοχή, το Πήλιο είναι μια από τις πιο ιδιαίτερες επιλογές της Θεσσαλίας. Το βουνό απλώνεται ανάμεσα στο Αιγαίο και τον Παγασητικό και τα χωριά του συνδέονται με δάση, καλντερίμια και διαδρομές με μεγάλες αλλαγές στο τοπίο. Για την πρώτη μέρα, διάλεξε μία βάση όπως η Μακρινίτσα ή η Πορταριά και μην προσπαθήσεις να δεις τα πάντα. Περπάτησε στην πλατεία, στα πέτρινα σοκάκια και στα σημεία με θέα προς τον Βόλο και τον Παγασητικό. Αν θέλεις πιο μεγάλη διαδρομή, μπορείς να κινηθείς προς Τσαγκαράδα ή Μηλιές, κρατώντας χρόνο για στάσεις και όχι μόνο για οδήγηση. Η επίσημη τουριστική σελίδα της Ελλάδας αναφέρει είκοσι τέσσερα χωριά στις πλαγιές του Πηλίου, με παραδοσιακά σπίτια, πλατείες με πλατάνια και δρόμους που οδηγούν και προς παραλίες. Τη δεύτερη μέρα, επίλεξε μία εμπειρία αντί για πολλές. Ο ιστορικός «Μουτζούρης», το μικρό τρένο του Πηλίου, συνδέει τα Άνω Λεχώνια με τις Μηλιές σε μια διαδρομή περίπου δεκαπέντε χιλιομέτρων, όταν λειτουργεί σύμφωνα με το πρόγραμμά του. Εναλλακτικά, αν ο καιρός το επιτρέπει, κατέβα προς μια παραθαλάσσια περιοχή όπως η Νταμούχαρη και συνδύασε το βουνό με το Αιγαίο. Το Πήλιο δεν χρειάζεται γεμάτο πρόγραμμα. Χρειάζεται καλό παπούτσι, λίγο χρόνο στις πλατείες και μία διαδρομή που να σου αφήνει χώρο να δεις το τοπίο. Αν σας άρεσε, ακολουθήστε για περισσότερα."
+    },
+    {
+      "id": "current-ten-20260930-legend-headless-horseman",
+      "local_date": "2026-09-30",
+      "slot": "22:00",
+      "title": "Ο θρύλος λέει… Ο Ακέφαλος Καβαλάρης του Sleepy Hollow",
+      "voice": "el-GR-NestorasNeural",
+      "background_music": false,
+      "photo_target": 10,
+      "scenes": 15,
+      "min_duration_seconds": 90,
+      "max_duration_seconds": 120,
+      "folklore_not_fact": true,
+      "caption": "Λογοτεχνικός και λαογραφικός θρύλος: ο Ακέφαλος Καβαλάρης του Sleepy Hollow, όπως έγινε διάσημος από την ιστορία του Washington Irving το 1820. Η αφήγηση αφήνει ανοιχτό αν ο Ίκαμποντ είδε φάντασμα ή έπεσε θύμα ανθρώπινης φάρσας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Θρύλοι #Folklore #SleepyHollow #HeadlessHorseman #Ιστορίες",
+      "sources": [
+        "Washington Irving — The Legend of Sleepy Hollow, Project Gutenberg",
+        "Library of Congress — 1906 Sleepy Hollow edition",
+        "Smithsonian American Art Museum — John Quidor, The Headless Horseman Pursuing Ichabod Crane"
+      ],
+      "visuals": [
+        {
+          "source": "Quidor — Headless Horseman Pursuing Ichabod Crane (1858)",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:The_Headless_Horseman_Pursuing_Ichabod_Crane.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:The_Headless_Horseman_Pursuing_Ichabod_Crane.jpg",
+          "attribution": "John Quidor, 1858, public domain; Smithsonian American Art Museum/Wikimedia Commons.",
+          "license": "Public Domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "visual_kind": "historical artwork"
+        },
+        {
+          "source": "Quidor — Ichabod Crane Flying from the Headless Horseman",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:John_Quidor_-_Ichabod_Crane_Flying_from_the_Headless_Horseman_-_1948.68_-_Yale_University_Art_Gallery.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:John_Quidor_-_Ichabod_Crane_Flying_from_the_Headless_Horseman_-_1948.68_-_Yale_University_Art_Gallery.jpg",
+          "attribution": "John Quidor, public domain; Yale University Art Gallery/Wikimedia Commons.",
+          "license": "Public Domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "visual_kind": "historical artwork"
+        },
+        {
+          "source": "Ichabod Crane and the Headless Horseman c.1855",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Ichabod_crane_and_the_headless_horseman.PNG",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Ichabod_crane_and_the_headless_horseman.PNG",
+          "attribution": "Anonymous/after William John Wilgus, public domain; NGA/Wikimedia Commons.",
+          "license": "Public Domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "visual_kind": "historical artwork"
+        },
+        {
+          "source": "Darley Sleepy Hollow 1850 plate 1",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Washington_Irving%27s_Illustrations_of_the_Legend_of_Sleepy_Hollow,_Designed_and_Etched_by_F.O.C._Darley_for_the_Members_of_the_American_Art_Union,_1850_MET_49H_126R5.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Washington_Irving%27s_Illustrations_of_the_Legend_of_Sleepy_Hollow,_Designed_and_Etched_by_F.O.C._Darley_for_the_Members_of_the_American_Art_Union,_1850_MET_49H_126R5.jpg",
+          "attribution": "F.O.C. Darley, 1850, CC0; The Met/Wikimedia Commons.",
+          "license": "CC0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "visual_kind": "historical artwork"
+        },
+        {
+          "source": "Darley Sleepy Hollow plate 3",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Washington_Irving%27s_Illustrations_of_the_Legend_of_Sleepy_Hollow,_Designed_and_Etched_by_F.O.C._Darley_for_the_Members_of_the_American_Art_Union,_1850_MET_MM89544.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Washington_Irving%27s_Illustrations_of_the_Legend_of_Sleepy_Hollow,_Designed_and_Etched_by_F.O.C._Darley_for_the_Members_of_the_American_Art_Union,_1850_MET_MM89544.jpg",
+          "attribution": "F.O.C. Darley, 1850, CC0; The Met/Wikimedia Commons.",
+          "license": "CC0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "visual_kind": "historical artwork"
+        },
+        {
+          "source": "Darley Sleepy Hollow plate 4",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Washington_Irving%27s_Illustrations_of_the_Legend_of_Sleepy_Hollow,_Designed_and_Etched_by_F.O.C._Darley_for_the_Members_of_the_American_Art_Union,_1850_MET_MM89545.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Washington_Irving%27s_Illustrations_of_the_Legend_of_Sleepy_Hollow,_Designed_and_Etched_by_F.O.C._Darley_for_the_Members_of_the_American_Art_Union,_1850_MET_MM89545.jpg",
+          "attribution": "F.O.C. Darley, 1850, CC0; The Met/Wikimedia Commons.",
+          "license": "CC0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "visual_kind": "historical artwork"
+        },
+        {
+          "source": "Darley Sleepy Hollow plate 5",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Washington_Irving%27s_Illustrations_of_the_Legend_of_Sleepy_Hollow,_Designed_and_Etched_by_F.O.C._Darley_for_the_Members_of_the_American_Art_Union,_1850_MET_MM89546.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Washington_Irving%27s_Illustrations_of_the_Legend_of_Sleepy_Hollow,_Designed_and_Etched_by_F.O.C._Darley_for_the_Members_of_the_American_Art_Union,_1850_MET_MM89546.jpg",
+          "attribution": "F.O.C. Darley, 1850, CC0; The Met/Wikimedia Commons.",
+          "license": "CC0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "visual_kind": "historical artwork"
+        },
+        {
+          "source": "William Hart Sleepy Hollow 1864 p15",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Sleepy_Hollow_(1864)_15.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Sleepy_Hollow_(1864)_15.jpg",
+          "attribution": "William Hart, 1864, public domain; Wikimedia Commons.",
+          "license": "Public Domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "visual_kind": "historical artwork"
+        },
+        {
+          "source": "Emanuel Leutze Sleepy Hollow 1864 p51",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Sleepy_Hollow_(1864)_51.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Sleepy_Hollow_(1864)_51.jpg",
+          "attribution": "Emanuel Leutze, 1864, public domain; Wikimedia Commons.",
+          "license": "Public Domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "visual_kind": "historical artwork"
+        },
+        {
+          "source": "Edward Hull — The Legend of Sleepy Hollow",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:The_Legend_of_Sleepy_Hollow_by_E_Hull.jpg",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:The_Legend_of_Sleepy_Hollow_by_E_Hull.jpg",
+          "attribution": "Edward Hull, 19th century, public domain; Wikimedia Commons.",
+          "license": "Public Domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "visual_kind": "historical artwork"
+        }
+      ],
+      "script": "Ο θρύλος αρχίζει με μια εικόνα που δεν ξεχνιέται εύκολα: ένας καβαλάρης χωρίς κεφάλι, μέσα στη νύχτα, να καλπάζει πίσω από έναν μόνο άνθρωπο. Πρόκειται για αμερικανική λογοτεχνική και λαογραφική παράδοση, όχι για αποδεδειγμένο υπερφυσικό γεγονός. Στο «The Legend of Sleepy Hollow» του Washington Irving, που δημοσιεύτηκε το 1820, η ιστορία τοποθετείται γύρω στο 1790, κοντά στο Tarrytown της Νέας Υόρκης. Ο Ίκαμποντ Κρέιν είναι δάσκαλος, αλλά και άνθρωπος που επηρεάζεται εύκολα από ιστορίες φαντασμάτων. Οι κάτοικοι μιλούν για έναν Εσσιανό στρατιώτη που, σύμφωνα με τον θρύλο, έχασε το κεφάλι του από κανονόμπαλα στον Πόλεμο της Αμερικανικής Επανάστασης. Λένε ότι επιστρέφει τη νύχτα, αναζητώντας το χαμένο κεφάλι του. Ο Ίκαμποντ ενδιαφέρεται για την Κατρίνα Βαν Τάσελ, αλλά έχει αντίζηλο τον Brom Bones, γνωστό για τη δύναμη, την ιππασία και τις φάρσες του. Μετά από ένα βραδινό γλέντι γεμάτο ιστορίες για στοιχειωμένα μέρη, ο Ίκαμποντ φεύγει μόνος. Στον σκοτεινό δρόμο εμφανίζεται ένας τεράστιος καβαλάρης. Όταν το φως του ουρανού αποκαλύπτει τη μορφή του, ο Ίκαμποντ πιστεύει ότι βλέπει πως δεν έχει κεφάλι. Ακολουθεί καταδίωξη. Λίγο πριν χαθεί, ο καβαλάρης εκσφενδονίζει πάνω του αυτό που μοιάζει με το ίδιο του το κεφάλι. Την επόμενη μέρα ο δάσκαλος έχει εξαφανιστεί. Στον δρόμο βρίσκουν το καπέλο του και μια σπασμένη κολοκύθα. Όμως ο Irving αφήνει επίτηδες δεύτερη εξήγηση. Αργότερα κυκλοφορεί πληροφορία ότι ο Ίκαμποντ ζει αλλού, ενώ ο Brom γελά ιδιαίτερα κάθε φορά που ακούει για την κολοκύθα. Γι’ αυτό ο Ακέφαλος Καβαλάρης λειτουργεί τόσο καλά ως θρύλος: η ιστορία δεν αποδεικνύει ένα φάντασμα. Αφήνει τον υπερφυσικό φόβο και μια ανθρώπινη φάρσα να συνυπάρχουν μέχρι το τέλος. Αν σας άρεσε, ακολουθήστε για περισσότερα."
+    }
+  ]
+}
