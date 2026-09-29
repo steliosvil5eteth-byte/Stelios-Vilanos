@@ -1,0 +1,68 @@
+{
+  "cards": [
+    {
+      "file": "card-01.jpg",
+      "sha256": "ef8cea2f3186cf034d075b9e1285b9217b7b12e53d5aeb7a222c070911a2447b"
+    },
+    {
+      "file": "card-02.jpg",
+      "sha256": "e4dd5862dacab33f03aa8b5bd1a0493cd9394b22291e7df9117171a4b14b192e"
+    },
+    {
+      "file": "card-03.jpg",
+      "sha256": "54e17571273c68a0b1b870519f1039940741137be3763ce33aa6c8561d80732f"
+    },
+    {
+      "file": "card-04.jpg",
+      "sha256": "e6e05317e8dd33a8b2416eda76eb6b079e834c3a591b686271a17c40721ae4f0"
+    },
+    {
+      "file": "card-05.jpg",
+      "sha256": "74674d76a880e032d94d474da0910171dbe28ef9714c216869b3469f841ac9e0"
+    },
+    {
+      "file": "card-06.jpg",
+      "sha256": "5e60c330a6d215444ec1231807b6cfedc6dd8a0bf0fdf0754bbfc137ffc999c9"
+    },
+    {
+      "file": "card-07.jpg",
+      "sha256": "fb456c94dbf0cef8c60b727b79eceda0dddfeac128e3f4925bcdda889a317775"
+    },
+    {
+      "file": "card-08.jpg",
+      "sha256": "67ba0083722cd819cb0c2d915b08b1c3c2ab4b34655f569ec45dc70a495923be"
+    },
+    {
+      "file": "card-09.jpg",
+      "sha256": "da830885cdf34c2620e092f87ed3d3a6717505f80aa3b18d495889a7affd2da0"
+    },
+    {
+      "file": "card-10.jpg",
+      "sha256": "53a244d64ff105fe43a4ab522a300a6b79f860279a85ae7ce1b4195b37dda80d"
+    }
+  ],
+  "card_count": 10,
+  "all_jpeg": true,
+  "all_1080_square": true,
+  "child_faces_cards_1_3": "not shown/identifiable",
+  "replacement_sources": [
+    {
+      "card": 1,
+      "source": "Pexels 17325134",
+      "description": "Back view of girl standing in doorway",
+      "license": "Pexels free license"
+    },
+    {
+      "card": 2,
+      "source": "Pexels 5707671",
+      "description": "Back view of girl opening wooden house door",
+      "license": "Pexels free license"
+    },
+    {
+      "card": 3,
+      "source": "Pexels 3755755",
+      "description": "Concerned adult woman using laptop at home",
+      "license": "Pexels free license"
+    }
+  ]
+}
