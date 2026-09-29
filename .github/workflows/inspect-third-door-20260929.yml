@@ -1,0 +1,61 @@
+name: Inspect third door exact carousel 20260929
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/inspect-third-door-20260929.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  inspect:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - name: Download exact Metricool carousel files
+        run: |
+          python3 - <<'PY'
+          import requests, hashlib, json
+          from pathlib import Path
+          urls=[
+          "https://static.metricool.com/planner/202609/7000636-file-11409692463971289215.png",
+          "https://static.metricool.com/planner/202609/7000636-file-18400232244820545045.png",
+          "https://static.metricool.com/planner/202609/7000636-file-5993956493037717512.png",
+          "https://static.metricool.com/planner/202609/7000636-file-16266949739235141259.png",
+          "https://static.metricool.com/planner/202609/7000636-file-2463499063857862885.png",
+          "https://static.metricool.com/planner/202609/7000636-file-10554032681769309565.png",
+          "https://static.metricool.com/planner/202609/7000636-file-1161398796348264482.png",
+          "https://static.metricool.com/planner/202609/7000636-file-2910952727535366382.png",
+          "https://static.metricool.com/planner/202609/7000636-file-12374639006190743913.png",
+          "https://static.metricool.com/planner/202609/7000636-file-5072876397718942574.png"
+          ]
+          d=Path('third-door-exact'); d.mkdir()
+          rows=[]
+          for i,u in enumerate(urls,1):
+              r=requests.get(u,timeout=60); r.raise_for_status()
+              p=d/f'card-{i:02d}.png'; p.write_bytes(r.content)
+              rows.append({'card':i,'url':u,'bytes':len(r.content),'sha256':hashlib.sha256(r.content).hexdigest()})
+          (d/'manifest.json').write_text(json.dumps(rows,indent=2))
+          PY
+      - name: Build exact contact sheet
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq python3-pil
+          python3 - <<'PY'
+          from PIL import Image,ImageOps
+          from pathlib import Path
+          d=Path('third-door-exact'); files=sorted(d.glob('card-*.png'))
+          cw,ch=324,324; canvas=Image.new('RGB',(cw*5,ch*2),(20,20,20))
+          for i,p in enumerate(files):
+              with Image.open(p).convert('RGB') as im:
+                  canvas.paste(ImageOps.fit(im,(cw,ch),method=Image.Resampling.LANCZOS),((i%5)*cw,(i//5)*ch))
+          canvas.save(d/'contact-sheet.jpg',quality=95)
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: third-door-exact-carousel-review
+          path: third-door-exact/
+          retention-days: 3
