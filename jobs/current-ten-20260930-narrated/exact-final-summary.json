@@ -1,0 +1,46 @@
+{
+  "current-ten-20260930-travel-pelion": {
+    "sha256": "08431887ea56fa587bd59b3c2d0f589cdf32c9bb0d8ee8a35c3e4c5afea22730",
+    "duration_seconds": 97.2,
+    "resolution": [
+      1080,
+      1920
+    ],
+    "video_streams": 1,
+    "audio_streams": 1,
+    "contact_sheet": "final-contact-sheet.jpg"
+  },
+  "current-ten-20260930-milky-seas": {
+    "sha256": "0347a2c63676bb38880d40971631c3097b52c17e67f857761b516ce9ca0c6d42",
+    "duration_seconds": 103.5,
+    "resolution": [
+      1080,
+      1920
+    ],
+    "video_streams": 1,
+    "audio_streams": 1,
+    "contact_sheet": "final-contact-sheet.jpg"
+  },
+  "current-ten-20260930-milgram": {
+    "sha256": "a8035f2c24f2972dc15d006f181d17dd5fbafc17d161559f7fd35a771f66b30a",
+    "duration_seconds": 96.8,
+    "resolution": [
+      1080,
+      1920
+    ],
+    "video_streams": 1,
+    "audio_streams": 1,
+    "contact_sheet": "final-contact-sheet.jpg"
+  },
+  "current-ten-20260930-legend-headless-horseman": {
+    "sha256": "ea235db0379746fffb4ee87b3f525f6b24190063c8100cdd6afcceeb662b0e78",
+    "duration_seconds": 104.446,
+    "resolution": [
+      1080,
+      1920
+    ],
+    "video_streams": 1,
+    "audio_streams": 1,
+    "contact_sheet": "final-contact-sheet.jpg"
+  }
+}
