@@ -2682,6 +2682,44 @@
         "draft": false,
         "autoPublish": true
       }
+    },
+    {
+      "job_id": "current-ten-20260929/third-door-extra",
+      "date": "2026-09-29",
+      "theme": "extra_story",
+      "title": "Το κορίτσι και η τρίτη πόρτα",
+      "caption": "Το κορίτσι και η τρίτη πόρτα\n\nΣτις 2:17 τα ξημερώματα, ένα κορίτσι εμφανίστηκε κρατώντας το κλειδί του σπιτιού της. Κάθε απάντηση άνοιγε και ένα μεγαλύτερο μυστικό. Εσείς μέχρι πού θα συνεχίζατε να ψάχνετε;\n\nΠρωτότυπη μυθοπλασία. Εικόνες: συνδυασμός φωτογραφιών και AI/ψηφιακά επεξεργασμένων εικαστικών.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ιστορίες #Μυστήριο #Ανατροπή #Σχέσεις #Θρίλερ",
+      "fingerprint": "extra-20260929-third-door-10-card-repair",
+      "status": "scheduled",
+      "scheduled_time": "2026-09-29T23:15:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "384135783,384136054",
+      "metricool_uuid": "3966615825146201374,155869045720436287",
+      "notion_page_id": "3eaf2345-b318-813f-9ba7-f9fabf56cbd9",
+      "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/current-ten-20260929-third-door-repair/third-door-youtube-final.mp4",
+      "duration_seconds": 45,
+      "last_reconciled_at": "2026-09-29T19:51:00+03:00",
+      "quality_check": {
+        "passed_final_review": true,
+        "card_count": 10,
+        "all_jpeg_1080_square": true,
+        "final_visuals_reviewed": true,
+        "cards_1_3_repaired_with_distinct_photographic_scenes": true,
+        "child_faces_unidentifiable": true,
+        "youtube_1080x1920": true,
+        "youtube_duration_seconds": 45,
+        "full_ffmpeg_decode_passed": true,
+        "single_instrumental_layer": true,
+        "tiktok_auto_add_music": true,
+        "ai_mixed_media_disclosure": true,
+        "notes": "Exact repaired carousel contact sheet and first three replacement cards visually reviewed; cards 4-10 reviewed in same final contact sheet. YouTube final contact sheet reviewed; all 10 complete cards visible without crop loss. Existing Metricool records will be updated in place; no duplicate create."
+      }
     }
   ]
 }
