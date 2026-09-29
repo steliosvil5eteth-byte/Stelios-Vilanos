@@ -1,0 +1,62 @@
+{
+  "card_count": 4,
+  "order_verified": true,
+  "cards": [
+    {
+      "index": 1,
+      "source_filename": "card-01.png",
+      "final_filename": "card-01-final.png",
+      "sha256": "f6e7556abb825fd9154f37541355b2b875e08c29307fe163cb5e700df4c755a5",
+      "source_size": [
+        600,
+        600
+      ],
+      "final_size": [
+        1080,
+        1080
+      ]
+    },
+    {
+      "index": 2,
+      "source_filename": "card-02.png",
+      "final_filename": "card-02-final.png",
+      "sha256": "25a40a26b021803df577ac70a6e79d31c236552cb24d0e036922f8e3a38ff59c",
+      "source_size": [
+        600,
+        600
+      ],
+      "final_size": [
+        1080,
+        1080
+      ]
+    },
+    {
+      "index": 3,
+      "source_filename": "card-03.png",
+      "final_filename": "card-03-final.png",
+      "sha256": "c37f8394da86433174ce8d98e6c9d36dfc1aeb3b8fccd05f41850cec5aca9dba",
+      "source_size": [
+        600,
+        600
+      ],
+      "final_size": [
+        1080,
+        1080
+      ]
+    },
+    {
+      "index": 4,
+      "source_filename": "card-04.png",
+      "final_filename": "card-04-final.png",
+      "sha256": "4c059925a7d9f547dd031f7a8384fdbb32546e5af5c9893e667b72410715f03c",
+      "source_size": [
+        600,
+        600
+      ],
+      "final_size": [
+        1080,
+        1080
+      ]
+    }
+  ]
+}
