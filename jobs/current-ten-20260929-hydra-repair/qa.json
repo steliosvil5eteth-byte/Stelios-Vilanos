@@ -1,0 +1,18 @@
+{
+  "publish_ready": true,
+  "voice": "el-GR-NestorasNeural",
+  "duration_seconds": 84.185,
+  "resolution": "1080x1920",
+  "background_music": false,
+  "burned_synced_greek_subtitles": true,
+  "avatar_presenter": false,
+  "full_decode_passed": true,
+  "ten_unique_real_hydra_photos": true,
+  "incorrect_painting_removed": true,
+  "subtitle_pixel_check": [
+    71660,
+    81857,
+    62825
+  ],
+  "dead_air_gt_1_2s": false
+}
