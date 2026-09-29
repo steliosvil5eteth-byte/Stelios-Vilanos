@@ -12,8 +12,8 @@ permissions:
 
 jobs:
   verify:
-    runs-on: ubuntu-latest
-    timeout-minutes: 25
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - name: Fetch exact repaired media
@@ -26,22 +26,25 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Independent Greek ASR
+      - name: Install independent ASR
         run: |
-          pip install --disable-pip-version-check faster-whisper==1.2.0
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          pip install --disable-pip-version-check openai-whisper
+      - name: Transcribe exact Nestoras audio independently
+        run: |
           python - <<'PY'
-          from faster_whisper import WhisperModel
-          import json
-          m=WhisperModel('medium',device='cpu',compute_type='int8',cpu_threads=4)
-          segs,info=m.transcribe('hawthorne-nestoras.wav',language='el',beam_size=5)
-          rows=[{'start':s.start,'end':s.end,'text':s.text.strip()} for s in segs]
-          open('hawthorne-medium-transcript.json','w',encoding='utf-8').write(json.dumps(rows,ensure_ascii=False,indent=2))
+          import whisper, json
+          m=whisper.load_model('small')
+          r=m.transcribe('hawthorne-nestoras.wav',language='el',fp16=False)
+          rows=[{'start':s['start'],'end':s['end'],'text':s['text'].strip()} for s in r['segments']]
+          open('hawthorne-whisper-transcript.json','w',encoding='utf-8').write(json.dumps(rows,ensure_ascii=False,indent=2))
           print(json.dumps(rows,ensure_ascii=False))
           PY
       - uses: actions/upload-artifact@v4
         with:
           name: hawthorne-audio-verification
           path: |
-            hawthorne-medium-transcript.json
+            hawthorne-whisper-transcript.json
             sha256.txt
           retention-days: 3
