@@ -1,0 +1,30 @@
+name: Compare current Myth YouTube 20260929
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/compare-myth-current-20260929.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - name: Compare exact current Metricool file to reviewed repository master
+        run: |
+          set -euo pipefail
+          curl -fL --retry 2 --connect-timeout 20 --max-time 120 -o current.mp4 "https://static.metricool.com/planner/202609/7000636-file-17018110328618442834.mp4"
+          curl -fL --retry 2 --connect-timeout 20 --max-time 120 -o master.mp4 "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/f1ea2a2aee77dcaa0825edc9369e5a299efded96/jobs/five-20260929/myth29/myth-camel.mp4"
+          sha256sum current.mp4 master.mp4 | tee hashes.txt
+          cmp current.mp4 master.mp4
+          echo "IDENTICAL_BYTES=YES" >> hashes.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: myth-current-byte-identity
+          path: hashes.txt
+          retention-days: 3
