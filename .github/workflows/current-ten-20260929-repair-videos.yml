@@ -1,0 +1,268 @@
+name: Current Ten 20260929 repair Hawthorne and Yuki
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/current-ten-20260929-repair-videos.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: current-ten-20260929-repair-videos
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 75
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install media dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python3 -m pip install --disable-pip-version-check --no-input pillow requests azure-cognitiveservices-speech
+      - name: Write approved repair manifest
+        run: |
+          cat > "$RUNNER_TEMP/manifest.json" <<'JSON'
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "active_metricool_brand_id": 7076410,
+  "jobs": [
+    {
+      "id": "current-ten-20260929-hawthorne-repair",
+      "local_date": "2026-09-29",
+      "slot": "18:30",
+      "title": "Τα πειράματα Hawthorne — τι άλλαζε πραγματικά την παραγωγικότητα;",
+      "voice": "el-GR-NestorasNeural",
+      "background_music": false,
+      "photo_target": 8,
+      "scenes": 16,
+      "min_duration_seconds": 80,
+      "max_duration_seconds": 160,
+      "caption": "Τα πειράματα Hawthorne — τι άλλαζε πραγματικά την παραγωγικότητα;\\n\\nΗ απλή φράση «οι άνθρωποι δουλεύουν καλύτερα επειδή τους παρακολουθούν» είναι υπεραπλούστευση.\\n\\nΠηγές: Harvard Business School Baker Library — Hawthorne Experiments.\\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\\n#Hawthorne #Ψυχολογία #Πειράματα #Εργασία #Ιστορία",
+      "script": "Μπορεί η παραγωγικότητα να αλλάξει απλώς επειδή οι εργαζόμενοι ξέρουν ότι κάποιος τους παρακολουθεί; Η γνωστή απάντηση λέγεται «Hawthorne effect», αλλά η πραγματική ιστορία είναι πολύ πιο σύνθετη. Στα Hawthorne Works της Western Electric, κοντά στο Σικάγο, έγιναν από το 1924 έως το 1933 μια σειρά από μελέτες για την εργασία και την παραγωγικότητα. Οι πρώτες δοκιμές, από το 1924 έως το 1927, εξέτασαν τον φωτισμό σε διαφορετικά τμήματα του εργοστασίου. Σύμφωνα με το ιστορικό αρχείο της Harvard Business School, οι μετρήσεις δεν έδειξαν καθαρή, σημαντική συσχέτιση ανάμεσα στο επίπεδο φωτισμού και την παραγωγικότητα. Αυτό οδήγησε τους ερευνητές να εξετάσουν άλλους παράγοντες. Από το 1927, οι μελέτες στο Relay Assembly Test Room παρακολουθούσαν μια μικρή ομάδα γυναικών που συναρμολογούσαν ηλεκτρομαγνητικούς διακόπτες. Δοκιμάστηκαν αλλαγές σε διαλείμματα, ώρες εργασίας και άλλες συνθήκες, ενώ η απόδοση καταγραφόταν συστηματικά. Η παραγωγικότητα συχνά αυξανόταν, αλλά οι ίδιοι οι ερευνητές δεν μπορούσαν να απομονώσουν μία μοναδική αιτία. Μπορεί να έπαιζαν ρόλο τα διαλείμματα, το ωράριο, τα κίνητρα, η μικρότερη ομάδα, η σχέση με τους ερευνητές ή ένας συνδυασμός όλων αυτών. Αργότερα, η ιστορία συμπυκνώθηκε στη δημοφιλή ιδέα ότι οι άνθρωποι αποδίδουν καλύτερα μόνο και μόνο επειδή γνωρίζουν ότι παρατηρούνται. Αυτό είναι υπεραπλούστευση. Τα Hawthorne studies είναι σημαντικά κυρίως επειδή έστρεψαν περισσότερη προσοχή στις κοινωνικές σχέσεις, στα κίνητρα και στην ανθρώπινη πλευρά της εργασίας. Και θυμίζουν κάτι βασικό για κάθε πείραμα: όταν αλλάζεις πολλά πράγματα μαζί, πρέπει να είσαι πολύ προσεκτικός πριν αποδώσεις το αποτέλεσμα σε έναν μόνο παράγοντα. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "visuals": [
+        {
+          "source": "Hawthorne Works 1925",
+          "visual_kind": "photograph",
+          "attribution": "Western Electric Company / Wikimedia Commons",
+          "license": "Public Domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Hawthorne,_Illinois_Works_of_the_Western_Electric_Company,_1925.jpg",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Hawthorne,_Illinois_Works_of_the_Western_Electric_Company,_1925.jpg"
+        },
+        {
+          "source": "Hawthorne Works tower",
+          "visual_kind": "photograph",
+          "attribution": "MrHarman / Wikimedia Commons",
+          "license": "CC BY-SA",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Hawthorne_Works_tower_2012_1.JPG",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Hawthorne_Works_tower_2012_1.JPG"
+        },
+        {
+          "source": "Incandescent light bulb",
+          "visual_kind": "photograph",
+          "attribution": "Josch13 / Wikimedia Commons",
+          "license": "CC0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Lightbulb-g78ee411a4_1920.jpg",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Lightbulb-g78ee411a4_1920.jpg"
+        },
+        {
+          "source": "Ybor factory workers c.1920",
+          "visual_kind": "photograph",
+          "attribution": "Unknown / Tampa-Hillsborough County Public Library",
+          "license": "Public Domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Ybor_Cigar_workers.jpg",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Ybor_Cigar_workers.jpg"
+        },
+        {
+          "source": "Hammerdals factory workers 1920",
+          "visual_kind": "photograph",
+          "attribution": "Tekniska museet / Wikimedia Commons",
+          "license": "CC0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Hammerdals_liefabrik_1920_2.jpg",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Hammerdals_liefabrik_1920_2.jpg"
+        },
+        {
+          "source": "Hammerdals factory interior 1920",
+          "visual_kind": "photograph",
+          "attribution": "Tekniska museet / Wikimedia Commons",
+          "license": "CC0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Hammerdals_liefabrik_1920_3.jpg",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Hammerdals_liefabrik_1920_3.jpg"
+        },
+        {
+          "source": "Can factory workers 1909",
+          "visual_kind": "photograph",
+          "attribution": "Historical photograph / Wikimedia Commons",
+          "license": "Public Domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Can_factory_workers_stamping_out_end_discs,_published_1909.jpg",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Can_factory_workers_stamping_out_end_discs,_published_1909.jpg"
+        },
+        {
+          "source": "Ericsson telephone factory workers",
+          "visual_kind": "photograph",
+          "attribution": "Unknown / Wikimedia Commons",
+          "license": "Public Domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B5_%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9_%D1%84%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B8_%D0%AD%D1%80%D0%B8%D0%BA%D1%81%D0%BE%D0%BD.jpg",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:%D0%A0%D0%B0%D0%B1%D0%BE%D1%87%D0%B8%D0%B5_%D1%82%D0%B5%D0%BB%D0%B5%D1%84%D0%BE%D0%BD%D0%BD%D0%BE%D0%B9_%D1%84%D0%B0%D0%B1%D1%80%D0%B8%D0%BA%D0%B8_%D0%AD%D1%80%D0%B8%D0%BA%D1%81%D0%BE%D0%BD.jpg"
+        }
+      ]
+    },
+    {
+      "id": "current-ten-20260929-yuki-repair",
+      "local_date": "2026-09-29",
+      "slot": "22:00",
+      "title": "Ο θρύλος λέει… Yuki-onna",
+      "voice": "el-GR-NestorasNeural",
+      "background_music": false,
+      "photo_target": 8,
+      "scenes": 16,
+      "min_duration_seconds": 90,
+      "max_duration_seconds": 120,
+      "folklore_not_fact": true,
+      "caption": "Ο θρύλος λέει… Yuki-onna\\n\\nΗ ιστορία ακολουθεί την εκδοχή που δημοσίευσε ο Lafcadio Hearn στο Kwaidan το 1904. Λαογραφία — όχι αποδεδειγμένο υπερφυσικό γεγονός.\\n\\nΠηγή: Lafcadio Hearn, Kwaidan (1904) / Project Gutenberg.\\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\\n#YukiOnna #ΙαπωνικήΛαογραφία #Θρύλοι #Ιαπωνία #ΠαράξενεςΙστορίες",
+      "script": "Μέσα σε μια χιονοθύελλα, μια γυναίκα στα λευκά μπαίνει σε μια καλύβα — και ένας άντρας σώζεται μόνο επειδή υπόσχεται να μη μιλήσει ποτέ. Αυτός είναι ο θρύλος της Yuki-onna, της «γυναίκας του χιονιού» στην ιαπωνική λαογραφία. Δεν είναι αποδεδειγμένο υπερφυσικό γεγονός. Η ιστορία που ακολουθεί είναι συγκεκριμένα η εκδοχή που δημοσίευσε ο Lafcadio Hearn στο Kwaidan το 1904. Δύο ξυλοκόποι, ο ηλικιωμένος Mosaku και ο νεαρός Minokichi, αιφνιδιάζονται από χιονοθύελλα και βρίσκουν καταφύγιο σε μια μικρή καλύβα κοντά σε πορθμείο. Τη νύχτα, ο Minokichi ξυπνά και βλέπει μια γυναίκα ντυμένη στα λευκά. Στην αφήγηση, η παγωμένη ανάσα της σκοτώνει τον Mosaku. Τον ίδιο όμως τον λυπάται επειδή είναι νέος. Τον αφήνει να ζήσει με έναν όρο: να μην πει ποτέ σε κανέναν τι συνέβη. Τον επόμενο χειμώνα γνωρίζει μια νεαρή γυναίκα, την O-Yuki. Παντρεύονται, αποκτούν δέκα παιδιά και περνούν χρόνια μαζί. Εκείνη φαίνεται να μη γερνά. Ένα βράδυ, βλέποντάς την στο φως της λάμπας, ο Minokichi θυμάται τη χιονοθύελλα και σπάει την υπόσχεσή του. Η O-Yuki αποκαλύπτει ότι ήταν η γυναίκα εκείνης της νύχτας. Δεν τον σκοτώνει, επειδή τα παιδιά τους χρειάζονται πατέρα. Η ιστορία τελειώνει με την εξαφάνισή της. Ο ίδιος ο Hearn έγραψε ότι του διηγήθηκε αυτή την εκδοχή ένας αγρότης από το Chōfu της παλιάς επαρχίας Musashi. Η μορφή της Yuki-onna όμως υπήρχε ήδη σε παλαιότερη ιαπωνική παράδοση και εικονογραφία. Δεν υπάρχει μία μοναδική εκδοχή για όλη την Ιαπωνία. Κι αυτό είναι ίσως το πιο ενδιαφέρον: ο θρύλος δεν είναι μόνο τρόμος. Είναι ιστορία για μια υπόσχεση, μια οικογένεια και το τίμημα της αποκάλυψης. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "visuals": [
+        {
+          "source": "Toriyama Sekien Yuki-onna",
+          "visual_kind": "historical artwork/context",
+          "attribution": "Toriyama Sekien / Wikimedia Commons",
+          "license": "Public Domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:SekienYukionna.jpg",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:SekienYukionna.jpg"
+        },
+        {
+          "source": "Kwaidan frontispiece 1904",
+          "visual_kind": "historical artwork/context",
+          "attribution": "Keishū Takénouchi / Wikimedia Commons",
+          "license": "Public Domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Kwaidan,_Stories_and_Studies_of_Strange_Things_-_Frontispiece.png",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Kwaidan,_Stories_and_Studies_of_Strange_Things_-_Frontispiece.png"
+        },
+        {
+          "source": "Gion Shrine in Snow",
+          "visual_kind": "historical artwork/context",
+          "attribution": "Utagawa Hiroshige / Wikimedia Commons",
+          "license": "Public Domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Gion_Shrine_in_Snow.jpg",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Gion_Shrine_in_Snow.jpg"
+        },
+        {
+          "source": "Travellers on horseback in snow",
+          "visual_kind": "historical artwork/context",
+          "attribution": "Utagawa Hiroshige / Wikimedia Commons",
+          "license": "Public Domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Hiroshige,_Travellers_on_horseback_in_the_snow.jpg",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Hiroshige,_Travellers_on_horseback_in_the_snow.jpg"
+        },
+        {
+          "source": "Evening Snow at Kanbara",
+          "visual_kind": "historical artwork/context",
+          "attribution": "Utagawa Hiroshige / The Met / Wikimedia Commons",
+          "license": "Public Domain",
+          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E6%B5%B7%E9%81%93%E4%BA%94%E5%8D%81%E4%B8%89%E6%AC%A1%E4%B9%8B%E5%86%85_%E8%92%B2%E5%8E%9F_%E5%A4%9C%E3%81%AE%E9%9B%AA-Evening_Snow_at_Kanbara%2C_from_the_series_%22Fifty-three_Stations_of_the_T%C5%8Dkaid%C5%8D%22_MET_DP109333.jpg",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:%E6%9D%B1%E6%B5%B7%E9%81%93%E4%BA%94%E5%8D%81%E4%B8%89%E6%AC%A1%E4%B9%8B%E5%86%85_%E8%92%B2%E5%8E%9F_%E5%A4%9C%E3%81%AE%E9%9B%AA-Evening_Snow_at_Kanbara%2C_from_the_series_%22Fifty-three_Stations_of_the_T%C5%8Dkaid%C5%8D%22_MET_DP109333.jpg"
+        },
+        {
+          "source": "Evening Snow on Mount Hira",
+          "visual_kind": "historical artwork/context",
+          "attribution": "Utagawa Hiroshige / The Met / Wikimedia Commons",
+          "license": "CC0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:%E8%BF%91%E6%B1%9F%E5%85%AB%E6%99%AF%E4%B9%8B%E5%86%85_%E6%AF%94%E8%89%AF%E6%9A%AE%E9%9B%AA-Evening_Snow_on_Mount_Hira_MET_DP122130.jpg",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:%E8%BF%91%E6%B1%9F%E5%85%AB%E6%99%AF%E4%B9%8B%E5%86%85_%E6%AF%94%E8%89%AF%E6%9A%AE%E9%9B%AA-Evening_Snow_on_Mount_Hira_MET_DP122130.jpg"
+        },
+        {
+          "source": "Snow on the Sumida River",
+          "visual_kind": "historical artwork/context",
+          "attribution": "Katsushika Hokusai / The Met / Wikimedia Commons",
+          "license": "CC0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:%E9%9B%AA%E6%9C%88%E8%8A%B1_%E9%9A%85%E7%94%B0-Snow_on_the_Sumida_River_(Sumida),_from_the_series,_Snow,_Moon,_and_Flowers_(Setsugekka)_MET_DP141240.jpg",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:%E9%9B%AA%E6%9C%88%E8%8A%B1_%E9%9A%85%E7%94%B0-Snow_on_the_Sumida_River_(Sumida),_from_the_series,_Snow,_Moon,_and_Flowers_(Setsugekka)_MET_DP141240.jpg"
+        },
+        {
+          "source": "Snowy Landscape",
+          "visual_kind": "historical artwork/context",
+          "attribution": "Takahashi Sōhei / The Met / Wikimedia Commons",
+          "license": "CC0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Takahashi_S%C5%8Dhei_-_Snowy_Landscape_-_2015.300.182_-_Metropolitan_Museum_of_Art.jpg",
+          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Takahashi_S%C5%8Dhei_-_Snowy_Landscape_-_2015.300.182_-_Metropolitan_Museum_of_Art.jpg"
+        }
+      ]
+    }
+  ]
+}
+JSON
+      - name: Render exact final media
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+        run: |
+          set -euo pipefail
+          python3 tools/render_azure_feature_batch.py --manifest "$RUNNER_TEMP/manifest.json" --output "$RUNNER_TEMP/final"
+      - name: Build contact sheets from the exact final MP4 files
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, math, subprocess
+          from pathlib import Path
+          from PIL import Image, ImageOps
+          root=Path('/home/runner/work/_temp/final')
+          for d in root.iterdir():
+              if not d.is_dir(): continue
+              vids=list(d.glob('*.mp4'))
+              if len(vids)!=1: raise SystemExit(f'expected one mp4 in {d}')
+              video=vids[0]
+              probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_format','-of','json',str(video)]))
+              dur=float(probe['format']['duration'])
+              frames=[]
+              for i,x in enumerate((.05,.18,.32,.47,.62,.78,.94),1):
+                  p=d/f'qa-frame-{i:02}.jpg'
+                  subprocess.run(['ffmpeg','-y','-loglevel','error','-ss',f'{dur*x:.3f}','-i',str(video),'-frames:v','1','-q:v','2',str(p)],check=True)
+                  frames.append(p)
+              cw,ch=270,480; canvas=Image.new('RGB',(cw*4,ch*2),(24,24,24))
+              for i,p in enumerate(frames):
+                  with Image.open(p).convert('RGB') as im:
+                      canvas.paste(ImageOps.fit(im,(cw,ch),method=Image.Resampling.LANCZOS),((i%4)*cw,(i//4)*ch))
+              canvas.save(d/'final-contact-sheet.jpg',quality=94)
+              (d/'release-gate.txt').write_text('PENDING_DIRECT_VISUAL_REVIEW\n',encoding='utf-8')
+          PY
+      - name: Save repaired media and QA to media-output
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/media-output-repo"
+          git fetch origin media-output --depth=1
+          git worktree add -b current-ten-video-repair "$OUT" FETCH_HEAD
+          DEST="$OUT/jobs/current-ten-20260929-repaired-videos"
+          rm -rf "$DEST"
+          mkdir -p "$DEST"
+          cp -a "$RUNNER_TEMP/final"/. "$DEST"/
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/current-ten-20260929-repaired-videos
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Repair 29 Sep Hawthorne and Yuki final videos'
+            git -C "$OUT" fetch origin media-output
+            git -C "$OUT" rebase FETCH_HEAD
+            git -C "$OUT" push origin HEAD:media-output
+          fi
