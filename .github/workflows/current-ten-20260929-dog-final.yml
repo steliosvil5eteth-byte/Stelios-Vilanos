@@ -24,15 +24,15 @@ jobs:
         run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg python3-pil
-      - name: Download exact final Canva page renders
+      - name: Download exact corrected Canva page renders
         run: |
           set -euo pipefail
           mkdir -p "$RUNNER_TEMP/final"
-          curl -L --fail --retry 2 'https://export-download.canva.com/c063f93e-05a4-474f-83fa-ff87aae9d7d9/0/0001-3437889802634817130.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20260928%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260928T111253Z&X-Amz-Expires=77436&X-Amz-Signature=97b510af4b66fb80e020b1588626a0ba80e2791ad1b820ec0f897fe3be6d7701&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Tue%2C%2029%20Sep%202026%2008%3A43%3A29%20GMT' -o "$RUNNER_TEMP/final/card-01.png"
-          curl -L --fail --retry 2 'https://export-download.canva.com/0ca81b8d-7841-4aeb-8f9b-331dfaa00690/0/0002-7242305589571378862.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20260928%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260928T235139Z&X-Amz-Expires=31491&X-Amz-Signature=18a17f607729aa3c8f17d14802f0470c817079dece2a1ae3d1a4f1f1d93005c4&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Tue%2C%2029%20Sep%202026%2008%3A36%3A30%20GMT' -o "$RUNNER_TEMP/final/card-02.png"
-          curl -L --fail --retry 2 'https://export-download.canva.com/865cf827-10d7-4aff-8fe4-7a050622c0b8/0/0003-4194494540516979683.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20260928%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260928T192344Z&X-Amz-Expires=47575&X-Amz-Signature=2e10118bac9d57eeba083f127ea3ed137c6b32e5291749d1fccab9f7cef2a465&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Tue%2C%2029%20Sep%202026%2008%3A36%3A39%20GMT' -o "$RUNNER_TEMP/final/card-03.png"
-          curl -L --fail --retry 2 'https://export-download.canva.com/889ba7b5-327d-43b1-8092-57bdbf6be333/0/0004-5310261346987790967.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20260929%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260929T052317Z&X-Amz-Expires=14900&X-Amz-Signature=1670803946d85b94034a187cdd900cbed34a45b13b63ab0e01199a435968bcbe&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Tue%2C%2029%20Sep%202026%2009%3A31%3A37%20GMT' -o "$RUNNER_TEMP/final/card-04.png"
-      - name: Validate exact carousel pages and create QA contact sheet
+          curl -L --fail --retry 2 'https://export-download.canva.com/8efa6cee-bba8-44ab-9e50-a38f97b13b20/0/0001-1760298940223293793.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20260928%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260928T165021Z&X-Amz-Expires=59194&X-Amz-Signature=b786a3a7b8838ecca71fa45f49a975b65aba8441d0a0d5812c5e4294597f748a&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Tue%2C%2029%20Sep%202026%2009%3A16%3A55%20GMT' -o "$RUNNER_TEMP/final/card-01.png"
+          curl -L --fail --retry 2 'https://export-download.canva.com/b2e1e3a0-f2ec-4983-b316-8160306386ef/0/0002-7328999878504033356.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20260928%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260928T094451Z&X-Amz-Expires=83826&X-Amz-Signature=e301f306e7a58d80efe7421054e2cf3cd5e4963eb885dd5dc035511638a8d614&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Tue%2C%2029%20Sep%202026%2009%3A01%3A57%20GMT' -o "$RUNNER_TEMP/final/card-02.png"
+          curl -L --fail --retry 2 'https://export-download.canva.com/b887b109-9a9b-4eff-b9bc-772238bbcc1f/0/0003-8404234290279133001.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20260928%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260928T140309Z&X-Amz-Expires=67009&X-Amz-Signature=da42a7c913d2deb60891dbb75b790acec28fca8c150010b9fe0d011e9d556320&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Tue%2C%2029%20Sep%202026%2008%3A39%3A58%20GMT' -o "$RUNNER_TEMP/final/card-03.png"
+          curl -L --fail --retry 2 'https://export-download.canva.com/8f38df93-0f11-46ef-aab0-04b2d0962ad2/0/0004-1588036253741051923.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAQYCGKMUH5AO7UJ26%2F20260929%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260929T023508Z&X-Amz-Expires=21806&X-Amz-Signature=d3d64bb91cd8c3d919934849731ff5acb31feafc9b79873626bb29da570cdad7&X-Amz-SignedHeaders=host%3Bx-amz-expected-bucket-owner&response-expires=Tue%2C%2029%20Sep%202026%2008%3A38%3A34%20GMT' -o "$RUNNER_TEMP/final/card-04.png"
+      - name: Normalize final cards and build direct QA sheet
         run: |
           set -euo pipefail
           python3 - <<'PY'
@@ -40,23 +40,22 @@ jobs:
           from pathlib import Path
           from PIL import Image, ImageOps
           root=Path('/home/runner/work/_temp/final')
-          cards=[root/f'card-{i:02}.png' for i in range(1,5)]
-          report={'card_count':4,'order_verified':True,'cards':[]}
-          for i,p in enumerate(cards,1):
-              if not p.exists(): raise SystemExit(f'missing {p}')
-              with Image.open(p) as im:
-                  im=im.convert('RGB')
+          report={'card_count':4,'order_verified':True,'final_size':[1080,1080],'cards':[]}
+          for i in range(1,5):
+              src=root/f'card-{i:02}.png'
+              if not src.exists(): raise SystemExit(f'missing {src}')
+              with Image.open(src).convert('RGB') as im:
                   if im.width != im.height or min(im.size) < 600:
-                      raise SystemExit(f'invalid source render {p}: {im.size}')
+                      raise SystemExit(f'invalid source {src}: {im.size}')
                   source_size=list(im.size)
-                  if im.size != (1080,1080):
-                      im=im.resize((1080,1080),Image.Resampling.LANCZOS)
-                  final_png=root/f'card-{i:02}-final.png'
-                  im.save(final_png,optimize=True)
-                  im.save(root/f'card-{i:02}.jpg',quality=95,subsampling=0)
-              h=hashlib.sha256(final_png.read_bytes()).hexdigest()
-              report['cards'].append({'index':i,'source_filename':p.name,'final_filename':final_png.name,'sha256':h,'source_size':source_size,'final_size':[1080,1080]})
-          canvas=Image.new('RGB',(1080,1080),(24,24,24))
+                  im=im.resize((1080,1080),Image.Resampling.LANCZOS)
+                  fp=root/f'card-{i:02}-final.png'
+                  fj=root/f'card-{i:02}.jpg'
+                  im.save(fp,optimize=True)
+                  im.save(fj,quality=95,subsampling=0)
+              h=hashlib.sha256(fp.read_bytes()).hexdigest()
+              report['cards'].append({'index':i,'source_size':source_size,'sha256':h,'final_png':fp.name,'final_jpg':fj.name})
+          canvas=Image.new('RGB',(1080,1080),(20,20,20))
           for i in range(4):
               with Image.open(root/f'card-{i+1:02}-final.png').convert('RGB') as im:
                   canvas.paste(ImageOps.fit(im,(540,540),method=Image.Resampling.LANCZOS),((i%2)*540,(i//2)*540))
@@ -69,7 +68,7 @@ jobs:
           mkdir -p "$RUNNER_TEMP/slides"
           for i in 01 02 03 04; do
             ffmpeg -y -loglevel error -loop 1 -i "$RUNNER_TEMP/final/card-$i-final.png" \
-              -vf "scale=1080:1080,drawbox=x=0:y=0:w=1080:h=420:color=0x101A28:t=fill,pad=1080:1920:0:420:color=0x101A28" \
+              -vf "scale=1080:1080,pad=1080:1920:0:420:color=0x101A28" \
               -t 7 -r 30 -an -c:v libx264 -preset veryfast -crf 21 -pix_fmt yuv420p "$RUNNER_TEMP/slides/$i.mp4"
           done
           printf "file '%s'\n" "$RUNNER_TEMP/slides/01.mp4" "$RUNNER_TEMP/slides/02.mp4" "$RUNNER_TEMP/slides/03.mp4" "$RUNNER_TEMP/slides/04.mp4" > "$RUNNER_TEMP/slides/list.txt"
@@ -80,13 +79,13 @@ jobs:
           ffmpeg -y -loglevel error -i "$RUNNER_TEMP/final/visual.mp4" -i "$RUNNER_TEMP/final/music.m4a" \
             -map 0:v -map 1:a -c:v copy -c:a aac -shortest -movflags +faststart "$RUNNER_TEMP/final/dog-bartender-20260929-youtube.mp4"
           ffprobe -v error -show_streams -show_format -of json "$RUNNER_TEMP/final/dog-bartender-20260929-youtube.mp4" > "$RUNNER_TEMP/final/youtube-ffprobe.json"
-      - name: Save final assets to media-output
+      - name: Save exact final assets to media-output
         run: |
           set -euo pipefail
           OUT="$RUNNER_TEMP/media-output-repo"
           git fetch origin media-output --depth=1
-          git worktree add -b dog-final-output "$OUT" FETCH_HEAD
-          DEST="$OUT/jobs/current-ten-20260929-dog-final"
+          git worktree add -b dog-final-output-v2 "$OUT" FETCH_HEAD
+          DEST="$OUT/jobs/current-ten-20260929-dog-final-v2"
           rm -rf "$DEST"
           mkdir -p "$DEST"
           cp "$RUNNER_TEMP"/final/card-*-final.png "$DEST"/
@@ -98,9 +97,9 @@ jobs:
           printf '%s\n' 'PENDING_DIRECT_VISUAL_REVIEW' > "$DEST/release-gate.txt"
           git -C "$OUT" config user.name 'github-actions[bot]'
           git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git -C "$OUT" add jobs/current-ten-20260929-dog-final
+          git -C "$OUT" add jobs/current-ten-20260929-dog-final-v2
           if ! git -C "$OUT" diff --cached --quiet; then
-            git -C "$OUT" commit -m 'Add 29 Sep Dog Bartender final carousel and slideshow'
+            git -C "$OUT" commit -m 'Add corrected 29 Sep Dog Bartender final assets'
             git -C "$OUT" fetch origin media-output
             git -C "$OUT" rebase FETCH_HEAD
             git -C "$OUT" push origin HEAD:media-output
