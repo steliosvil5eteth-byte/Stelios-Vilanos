@@ -1,0 +1,80 @@
+name: Current Ten 20260929 existing video direct QA
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/qa-current-ten-20260929-existing-videos.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: qa-current-ten-20260929-existing-videos
+  cancel-in-progress: false
+
+jobs:
+  qa:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install media tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg python3-pil
+      - name: Fetch exact final videos and build direct visual QA sheets
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/media-output-repo"
+          git fetch origin media-output --depth=1
+          git worktree add --detach "$OUT" FETCH_HEAD
+          QA="$OUT/jobs/current-ten-20260929-video-qa"
+          rm -rf "$QA"
+          mkdir -p "$QA"
+          python3 - <<'PY'
+          import hashlib, json, math, os, subprocess
+          from pathlib import Path
+          from PIL import Image, ImageOps, ImageDraw
+          out=Path(os.environ['RUNNER_TEMP'])/'media-output-repo'
+          qa=out/'jobs/current-ten-20260929-video-qa'
+          jobs={
+            'hydra': out/'jobs/features-20260927/travel-hydra-20260927-1830/travel-hydra-20260927-1830.mp4',
+            'hawthorne': out/'jobs/features-20260927/experiment-hawthorne-20260927-2130/experiment-hawthorne-20260927-2130.mp4',
+            'yuki-onna': out/'jobs/features-20260927/legend-yuki-onna-20260927-2300/legend-yuki-onna-20260927-2300.mp4',
+          }
+          report={}
+          for key,video in jobs.items():
+              if not video.exists(): raise SystemExit(f'missing {video}')
+              probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(video)]))
+              dur=float(probe['format']['duration'])
+              frames=[]
+              stamps=[dur*x for x in (.06,.20,.35,.50,.65,.80,.94)]
+              for i,t in enumerate(stamps,1):
+                  p=qa/f'{key}-frame-{i:02}.jpg'
+                  subprocess.run(['ffmpeg','-y','-loglevel','error','-ss',f'{t:.3f}','-i',str(video),'-frames:v','1','-q:v','2',str(p)],check=True)
+                  frames.append(p)
+              cw,ch=270,480; cols=4; rows=2
+              canvas=Image.new('RGB',(cols*cw,rows*ch),(24,24,24))
+              for i,p in enumerate(frames):
+                  with Image.open(p).convert('RGB') as im:
+                      im=ImageOps.fit(im,(cw,ch),method=Image.Resampling.LANCZOS)
+                      canvas.paste(im,((i%cols)*cw,(i//cols)*ch))
+              canvas.save(qa/f'{key}-contact-sheet.jpg',quality=94)
+              h=hashlib.sha256()
+              with video.open('rb') as fh:
+                  for b in iter(lambda:fh.read(1024*1024),b''): h.update(b)
+              vs=[s for s in probe['streams'] if s.get('codec_type')=='video']
+              au=[s for s in probe['streams'] if s.get('codec_type')=='audio']
+              report[key]={'source_path':str(video.relative_to(out)),'sha256':h.hexdigest(),'duration_seconds':dur,'video_streams':len(vs),'audio_streams':len(au),'resolution':[int(vs[0]['width']),int(vs[0]['height'])] if vs else None,'contact_sheet':f'{key}-contact-sheet.jpg'}
+          (qa/'exact-final-video-report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
+          (qa/'release-gate.txt').write_text('PENDING_DIRECT_VISUAL_REVIEW\n',encoding='utf-8')
+          PY
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/current-ten-20260929-video-qa
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Add exact-final direct QA sheets for 29 Sep catch-up videos'
+            git -C "$OUT" push origin HEAD:media-output
+          fi
