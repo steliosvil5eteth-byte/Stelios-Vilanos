@@ -2699,12 +2699,12 @@
         "youtube"
       ],
       "metricool_brand_id": "7076410",
-      "metricool_post_id": "384135783,384136054",
+      "metricool_post_id": "384404223,384404366",
       "metricool_uuid": "3966615825146201374,155869045720436287",
       "notion_page_id": "3eaf2345-b318-813f-9ba7-f9fabf56cbd9",
-      "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/current-ten-20260929-third-door-repair/third-door-youtube-final.mp4",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-13225516666659699910.mp4",
       "duration_seconds": 45,
-      "last_reconciled_at": "2026-09-29T19:51:00+03:00",
+      "last_reconciled_at": "2026-09-29T19:53:00+03:00",
       "quality_check": {
         "passed_final_review": true,
         "card_count": 10,
@@ -2718,7 +2718,29 @@
         "single_instrumental_layer": true,
         "tiktok_auto_add_music": true,
         "ai_mixed_media_disclosure": true,
-        "notes": "Exact repaired carousel contact sheet and first three replacement cards visually reviewed; cards 4-10 reviewed in same final contact sheet. YouTube final contact sheet reviewed; all 10 complete cards visible without crop loss. Existing Metricool records will be updated in place; no duplicate create."
+        "notes": "Exact repaired carousel contact sheet and first three replacement cards visually reviewed; cards 4-10 reviewed in same final contact sheet. YouTube final contact sheet reviewed; all 10 complete cards visible without crop loss. Existing Metricool records will be updated in place; no duplicate create.",
+        "live_readback_status": "PENDING",
+        "draft": false,
+        "autoPublish": true
+      },
+      "platform_status": {
+        "facebook": {
+          "status": "PENDING",
+          "source_post_id": "384404223"
+        },
+        "instagram": {
+          "status": "PENDING",
+          "source_post_id": "384404223"
+        },
+        "tiktok": {
+          "status": "PENDING",
+          "source_post_id": "384404223",
+          "auto_add_music": true
+        },
+        "youtube": {
+          "status": "PENDING",
+          "source_post_id": "384404366"
+        }
       }
     }
   ]
