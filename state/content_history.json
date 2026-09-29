@@ -2649,7 +2649,7 @@
       "caption": "Η απλή φράση «οι άνθρωποι δουλεύουν καλύτερα επειδή τους παρακολουθούν» είναι υπεραπλούστευση.",
       "fingerprint": "current-ten-20260929-hawthorne-repair",
       "status": "scheduled",
-      "scheduled_time": "2026-09-29T18:30:00+03:00",
+      "scheduled_time": "2026-09-29T22:45:00+03:00",
       "platforms": [
         "facebook",
         "instagram",
@@ -2657,7 +2657,7 @@
         "youtube"
       ],
       "metricool_brand_id": "7076410",
-      "metricool_post_id": "384296128",
+      "metricool_post_id": "384407671",
       "metricool_uuid": "-5871918745834075997",
       "notion_page_id": "3eaf2345-b318-8141-8122-d0d3150d3fd5",
       "media_commit": "9bf0b782970a639481eba6aa710af66683baf294",
@@ -2679,7 +2679,25 @@
         "sha256": "7194c546e886a1dbcf0ce02e29a9376104960d2922ecc4e8dd4294f967ed7f4e",
         "notes": "PASSED_FINAL_REVIEW. Exact Metricool MP4 is byte-identical to repository QA master; 100.697s 1080x1920, Nestor voice, burned Greek subtitles, no music/avatar, full visual/risk/rights QA, independent ASR reviewed through CTA. Ready for safe reschedule."
       },
-      "last_reconciled_at": "2026-09-29T19:58:00+03:00"
+      "last_reconciled_at": "2026-09-29T19:58:00+03:00",
+      "platform_status": {
+        "facebook": {
+          "status": "PENDING",
+          "source_post_id": "384407671"
+        },
+        "instagram": {
+          "status": "PENDING",
+          "source_post_id": "384407671"
+        },
+        "tiktok": {
+          "status": "PENDING",
+          "source_post_id": "384407671"
+        },
+        "youtube": {
+          "status": "PENDING",
+          "source_post_id": "384407671"
+        }
+      }
     },
     {
       "job_id": "current-ten-20260929/yuki-onna",
