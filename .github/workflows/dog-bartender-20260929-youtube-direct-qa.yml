@@ -1,0 +1,66 @@
+name: Dog Bartender 29 Sep YouTube direct QA
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/dog-bartender-20260929-youtube-direct-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: dog-bartender-20260929-youtube-direct-qa
+  cancel-in-progress: false
+
+jobs:
+  qa:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install ffmpeg and pillow
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg python3-pil
+      - name: Fetch exact final YouTube MP4 and build contact sheet
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/media-output-repo"
+          git fetch origin media-output --depth=1
+          git worktree add -b dog-youtube-qa "$OUT" FETCH_HEAD
+          ROOT="$OUT/jobs/current-ten-20260929-dog-final"
+          VIDEO="$ROOT/dog-bartender-20260929-youtube.mp4"
+          test -s "$VIDEO"
+          mkdir -p "$RUNNER_TEMP/frames"
+          for n in 1 2 3 4; do
+            case "$n" in
+              1) T=3.5;;
+              2) T=10.5;;
+              3) T=17.5;;
+              4) T=24.5;;
+            esac
+            ffmpeg -y -loglevel error -ss "$T" -i "$VIDEO" -frames:v 1 -q:v 2 "$RUNNER_TEMP/frames/$n.jpg"
+          done
+          python3 - <<'PY'
+          from PIL import Image, ImageOps
+          from pathlib import Path
+          root=Path('/home/runner/work/_temp/frames')
+          out=Path('/home/runner/work/_temp/media-output-repo/jobs/current-ten-20260929-dog-final')
+          canvas=Image.new('RGB',(1080,1920),(20,20,20))
+          positions=[(0,0),(540,0),(0,960),(540,960)]
+          for i,pos in enumerate(positions,1):
+              with Image.open(root/f'{i}.jpg').convert('RGB') as im:
+                  im=ImageOps.fit(im,(540,960),method=Image.Resampling.LANCZOS)
+                  canvas.paste(im,pos)
+          canvas.save(out/'youtube-contact-sheet.jpg',quality=95)
+          (out/'youtube-direct-qa.txt').write_text('PENDING_DIRECT_VISUAL_REVIEW\n',encoding='utf-8')
+          PY
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/current-ten-20260929-dog-final/youtube-contact-sheet.jpg jobs/current-ten-20260929-dog-final/youtube-direct-qa.txt
+          git -C "$OUT" commit -m 'Add direct YouTube QA sheet for 29 Sep Dog Bartender'
+          git -C "$OUT" fetch origin media-output
+          git -C "$OUT" rebase FETCH_HEAD
+          git -C "$OUT" push origin HEAD:media-output
