@@ -2347,8 +2347,15 @@
         "final_visuals_reviewed": true,
         "full_ffmpeg_decode_passed": true,
         "final_end_reviewed": true,
-        "notes": "Five final cards visually reviewed for continuity and exact Greek. Full 35s slideshow decode and ending reviewed. Original single instrumental, no narration. Native photo carousel FB/IG/TikTok, full vertical YouTube slideshow. AI and fiction disclosed, CTA present."
-      }
+        "notes": "PASSED_FINAL_REVIEW. Five exact cards visually reviewed; 35s full vertical YouTube slideshow and ending reviewed; full decode; exactly one approved instrumental layer and no narration; exact Metricool file byte-identical to repository master. Prior 19:45 freeze was scheduling-state, not media/content failure. Ready for first safe retry after reconciliation.",
+        "passed_final_review": true,
+        "single_instrumental_layer": true,
+        "narration": false,
+        "exact_metricool_file_byte_verified": true,
+        "cta_verified": true,
+        "ai_fiction_disclosure": true
+      },
+      "last_reconciled_at": "2026-09-29T19:49:25+03:00"
     },
     {
       "job_id": "five-20260929/myth29",
