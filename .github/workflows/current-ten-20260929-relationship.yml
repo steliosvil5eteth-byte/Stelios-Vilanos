@@ -1,0 +1,94 @@
+name: Current Ten 20260929 relationship catch-up render
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/current-ten-20260929-relationship.yml'
+      - 'media_jobs/current_ten_20260929_relationship.json'
+      - 'tools/render_carousel_pack.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: current-ten-20260929-relationship
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install media tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg python3-pil fonts-dejavu-core
+      - name: Render exact final media
+        run: |
+          set -euo pipefail
+          python3 tools/render_carousel_pack.py \
+            --manifest media_jobs/current_ten_20260929_relationship.json \
+            --output "$RUNNER_TEMP/rendered"
+          ROOT=$(find "$RUNNER_TEMP/rendered" -mindepth 1 -maxdepth 1 -type d | head -1)
+          test -n "$ROOT"
+          echo "FINAL_ROOT=$ROOT" >> "$GITHUB_ENV"
+      - name: Build visual QA from the exact final files
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/qa"
+          python3 - <<'PY'
+          import os, math, subprocess
+          from pathlib import Path
+          from PIL import Image, ImageOps, ImageDraw
+          root=Path(os.environ['FINAL_ROOT'])
+          qa=Path(os.environ['RUNNER_TEMP'])/'qa'
+          pref='current-ten-20260929-relationships-personal-space'
+          cards=sorted(root.glob(pref+'-[0-9][0-9].jpg'))
+          if len(cards)!=7: raise SystemExit(f'expected 7 cards, got {len(cards)}')
+          def sheet(paths,out):
+              cell=480; cols=3; rows=math.ceil(len(paths)/cols)
+              canvas=Image.new('RGB',(cols*cell,rows*cell),(24,24,24))
+              for i,p in enumerate(paths):
+                  with Image.open(p).convert('RGB') as im:
+                      im=ImageOps.fit(im,(cell,cell),method=Image.Resampling.LANCZOS)
+                      canvas.paste(im,((i%cols)*cell,(i//cols)*cell))
+              canvas.save(out,quality=93)
+          sheet(cards,qa/'cards-contact-sheet.jpg')
+          video=root/(pref+'.mp4')
+          if not video.exists(): raise SystemExit('missing final slideshow')
+          frames=[]
+          for i,t in enumerate([2.5,7.5,12.5,17.5,22.5,27.5,32.5],1):
+              p=qa/f'video-frame-{i:02}.jpg'
+              subprocess.run(['ffmpeg','-y','-loglevel','error','-ss',str(t),'-i',str(video),'-frames:v','1','-q:v','2',str(p)],check=True)
+              frames.append(p)
+          cellw,cellh=270,480; cols=4; rows=2
+          canvas=Image.new('RGB',(cols*cellw,rows*cellh),(24,24,24))
+          for i,p in enumerate(frames):
+              with Image.open(p).convert('RGB') as im:
+                  im=ImageOps.fit(im,(cellw,cellh),method=Image.Resampling.LANCZOS)
+                  canvas.paste(im,((i%cols)*cellw,(i//cols)*cellh))
+          canvas.save(qa/'youtube-final-contact-sheet.jpg',quality=93)
+          PY
+          ffprobe -v error -show_streams -show_format -of json "$FINAL_ROOT/current-ten-20260929-relationships-personal-space.mp4" > "$RUNNER_TEMP/qa/ffprobe.json"
+          printf '%s\n' 'PENDING_DIRECT_VISUAL_REVIEW' > "$RUNNER_TEMP/qa/release-gate.txt"
+      - name: Save rendered media and QA to media-output
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/media-output-repo"
+          git fetch origin media-output --depth=1
+          git worktree add --detach "$OUT" FETCH_HEAD
+          DEST="$OUT/jobs/current-ten-20260929-relationship"
+          rm -rf "$DEST"
+          mkdir -p "$DEST"
+          cp -a "$FINAL_ROOT"/. "$DEST"/
+          cp -a "$RUNNER_TEMP/qa"/. "$DEST"/
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/current-ten-20260929-relationship
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Render 29 Sep relationship catch-up with final QA sheets'
+            git -C "$OUT" push origin HEAD:media-output
+          fi
