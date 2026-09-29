@@ -1,0 +1,104 @@
+{
+  "batch_id": "5d6460aa8773be19",
+  "batch_sha256": "5d6460aa8773be19de7fc07ce0df66bea0f8bf9efae9eb2f771e611e9eedbdea",
+  "paid_ai_credits_used": 0,
+  "photographic_visuals_required": true,
+  "jobs": [
+    {
+      "id": "current-ten-20260930-relationships-control",
+      "status": "rendered",
+      "card_count": 7,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_outdoors_(3).jpg?width=1600",
+          "source_credit": "National Cancer Institute / Bill Branson",
+          "license": "Public Domain"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Person_holding_smartphone_with_camera_app_open_while_sitting_outdoors_on_a_sunny_day%2C_focused_on_taking_a_picture_of_the_scene.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_arguing.png?width=1600",
+          "source_credit": "U3260357",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_outdoors_(4).jpg?width=1600",
+          "source_credit": "National Cancer Institute / Bill Branson",
+          "license": "Public Domain"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_walking_in_park_(1).jpg?width=1600",
+          "source_credit": "National Cancer Institute",
+          "license": "Public Domain"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_outdoors_(5).jpg?width=1600",
+          "source_credit": "National Cancer Institute / Bill Branson",
+          "license": "Public Domain"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_walking_outdoors.jpg?width=1600",
+          "source_credit": "National Cancer Institute / Rhoda Baer",
+          "license": "Public Domain"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-ten-20260930-relationships-control-01.jpg",
+          "bytes": 398817,
+          "sha256": "b49d6d3ff0aee237521bb5b88913d87c0a778499037ac9c3def5157053e39df6"
+        },
+        {
+          "name": "current-ten-20260930-relationships-control-02.jpg",
+          "bytes": 271504,
+          "sha256": "2ad93e8a0e509d8e56d6624afe05c578ac63822fd414fb11b30c4072936e8f03"
+        },
+        {
+          "name": "current-ten-20260930-relationships-control-03.jpg",
+          "bytes": 298012,
+          "sha256": "5d7f33bddc099fef0a78a92972347f46d0895a4228169bb7960e8c49e1e59995"
+        },
+        {
+          "name": "current-ten-20260930-relationships-control-04.jpg",
+          "bytes": 398303,
+          "sha256": "06de9794f751f55253521c6c35444c5d5a4a2c03e03e9a1f3a31dbff11badbf2"
+        },
+        {
+          "name": "current-ten-20260930-relationships-control-05.jpg",
+          "bytes": 429466,
+          "sha256": "6b4393b1c5dbfd7778805798c11fcf256ed30c2982c294f7d79743b9eb648641"
+        },
+        {
+          "name": "current-ten-20260930-relationships-control-06.jpg",
+          "bytes": 359277,
+          "sha256": "856286e050da708dc2d043f76f7ed36bc228c236a2102610b67d9b05ceaec017"
+        },
+        {
+          "name": "current-ten-20260930-relationships-control-07.jpg",
+          "bytes": 428012,
+          "sha256": "9c9b438bad295b06ce9e726c14394a914efda4adb2d3de9ef0ef11750c952f30"
+        },
+        {
+          "name": "current-ten-20260930-relationships-control.mp4",
+          "bytes": 1289882,
+          "sha256": "c8cf1dd427096ded550507a80bc3973481e4f3255990ce72369efa5ac3f3f92a"
+        }
+      ]
+    }
+  ]
+}
