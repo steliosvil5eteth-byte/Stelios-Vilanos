@@ -1,0 +1,219 @@
+name: Repair third door carousel 20260929
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/repair-third-door-20260929.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repair-third-door-20260929
+  cancel-in-progress: false
+
+jobs:
+  repair:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install media tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg python3-pil fonts-dejavu-core
+          python3 -m pip install --disable-pip-version-check requests
+      - name: Fetch exact original cards and approved replacement photos
+        run: |
+          python3 - <<'PY'
+          import requests
+          from pathlib import Path
+          out=Path('third-door-repair'); (out/'original').mkdir(parents=True); (out/'stock').mkdir()
+          originals=[
+              "https://static.metricool.com/planner/202609/7000636-file-11409692463971289215.png",
+              "https://static.metricool.com/planner/202609/7000636-file-18400232244820545045.png",
+              "https://static.metricool.com/planner/202609/7000636-file-5993956493037717512.png",
+              "https://static.metricool.com/planner/202609/7000636-file-16266949739235141259.png",
+              "https://static.metricool.com/planner/202609/7000636-file-2463499063857862885.png",
+              "https://static.metricool.com/planner/202609/7000636-file-10554032681769309565.png",
+              "https://static.metricool.com/planner/202609/7000636-file-1161398796348264482.png",
+              "https://static.metricool.com/planner/202609/7000636-file-2910952727535366382.png",
+              "https://static.metricool.com/planner/202609/7000636-file-12374639006190743913.png",
+              "https://static.metricool.com/planner/202609/7000636-file-5072876397718942574.png"
+          ]
+          for i,u in enumerate(originals,1):
+              r=requests.get(u,timeout=60); r.raise_for_status(); (out/'original'/f'{i:02d}.png').write_bytes(r.content)
+          stocks={
+            'door-girl':'https://images.pexels.com/photos/17325134/pexels-photo-17325134.jpeg?auto=compress&cs=tinysrgb&w=1800',
+            'girl-house-door':'https://images.pexels.com/photos/5707671/pexels-photo-5707671.jpeg?auto=compress&cs=tinysrgb&w=1800',
+            'worried-laptop':'https://images.pexels.com/photos/3755755/pexels-photo-3755755.jpeg?auto=compress&cs=tinysrgb&w=1800'
+          }
+          for k,u in stocks.items():
+              r=requests.get(u,headers={'User-Agent':'Mozilla/5.0'},timeout=90); r.raise_for_status(); (out/'stock'/f'{k}.jpg').write_bytes(r.content)
+          PY
+      - name: Rebuild only cards 1-3 with distinct scene-specific visuals
+        run: |
+          python3 - <<'PY'
+          from PIL import Image,ImageOps,ImageDraw,ImageFont,ImageEnhance,ImageFilter
+          from pathlib import Path
+          import hashlib, json, textwrap
+          root=Path('third-door-repair'); final=root/'final'; final.mkdir()
+          FREG='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'; FBOLD='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
+          white=(248,248,248); yellow=(255,205,70)
+          header_font=ImageFont.truetype(FBOLD,29)
+          def fit_bg(path):
+              im=Image.open(path).convert('RGB')
+              return ImageOps.fit(im,(1080,1080),method=Image.Resampling.LANCZOS,centering=(0.5,0.45))
+          def base(stock,number):
+              im=fit_bg(root/'stock'/stock)
+              im=ImageEnhance.Brightness(im).enhance(.58)
+              ov=Image.new('RGBA',im.size,(0,0,0,0)); d=ImageDraw.Draw(ov)
+              d.rectangle((0,0,1080,1080),fill=(0,0,0,55))
+              d.rounded_rectangle((30,18,1050,84),radius=22,fill=(0,0,0,230))
+              d.rectangle((0,430,1080,1080),fill=(0,0,0,150))
+              im=Image.alpha_composite(im.convert('RGBA'),ov)
+              ImageDraw.Draw(im).text((55,34),f'ΝΕΑ ΣΕΙΡΑ • {number}/10',font=header_font,fill=white)
+              return im
+          def paste_crop(canvas,src_path,box,dest,size,blur=0):
+              src=Image.open(src_path).convert('RGB').crop(box)
+              src=ImageOps.fit(src,size,method=Image.Resampling.LANCZOS)
+              if blur: src=src.filter(ImageFilter.GaussianBlur(blur))
+              mask=Image.new('L',size,0); md=ImageDraw.Draw(mask); md.rounded_rectangle((0,0,size[0]-1,size[1]-1),radius=24,fill=230)
+              canvas.paste(src,dest,mask)
+          def draw_blocks(im,blocks,start_y=480,max_width=980):
+              d=ImageDraw.Draw(im); y=start_y
+              for text,color,bold,size,gap in blocks:
+                  font=ImageFont.truetype(FBOLD if bold else FREG,size)
+                  words=text.split(); lines=[]; line=''
+                  for w in words:
+                      cand=(line+' '+w).strip()
+                      if d.textlength(cand,font=font)>max_width and line:
+                          lines.append(line); line=w
+                      else: line=cand
+                  if line: lines.append(line)
+                  for ln in lines:
+                      d.text((50,y),ln,font=font,fill=color,stroke_width=1,stroke_fill=(0,0,0))
+                      y += size+8
+                  y += gap
+              return im
+          # Card 1: child seen only from behind; same fictional woman appears in a separate close crop.
+          c1=base('door-girl.jpg',1)
+          paste_crop(c1,root/'original'/'01.png',(115,85,575,480),(45,105),(330,300))
+          c1=draw_blocks(c1,[
+            ('Στις 2:17 τα ξημερώματα, ένα κορίτσι 12 χρονών χτύπησε την πόρτα μου.',yellow,True,39,12),
+            ('«Μην φωνάξετε τον άντρα σας. Πρώτα θέλω να σας δείξω κάτι.»',white,False,34,12),
+            ('Και άνοιξε την παλάμη της.',white,False,34,10),
+            ('Κρατούσε…',white,False,34,2),
+            ('κλειδί από το σπίτι μου.',yellow,True,39,0)
+          ],start_y=455)
+          c1.convert('RGB').save(final/'card-01.jpg',quality=94,subsampling=0)
+          # Card 2: different doorway scene, child still faceless/back-view, with a close-up of the phone evidence.
+          c2=base('girl-house-door.jpg',2)
+          paste_crop(c2,root/'original'/'02.png',(555,535,900,900),(700,110),(315,315))
+          c2=draw_blocks(c2,[
+            ('«Πού το βρήκες;»',yellow,True,45,10),
+            ('«Δεν το βρήκα. Μου το έδωσε ο μπαμπάς μου.»',white,False,35,12),
+            ('Πήγα να κλείσω την πόρτα.',white,False,35,10),
+            ('Τότε μου έδειξε το κινητό της.',white,False,35,10),
+            ('Στην οθόνη ήταν μια φωτογραφία',white,False,35,0),
+            ('του άντρα μου μαζί της.',yellow,True,40,0)
+          ],start_y=470)
+          c2.convert('RGB').save(final/'card-02.jpg',quality=94,subsampling=0)
+          # Card 3: clearly new laptop/calculation scene, with the child shown only as an unidentifiable back-view insert.
+          c3=base('worried-laptop.jpg',3)
+          paste_crop(c3,root/'original'/'03.png',(670,120,1060,610),(735,115),(290,330),blur=0)
+          c3=draw_blocks(c3,[
+            ('Ήμασταν παντρεμένοι 18 χρόνια. Το κορίτσι ήταν 12.',yellow,True,39,10),
+            ('Έκανα αμέσως τον υπολογισμό.',white,False,34,9),
+            ('Όμως κάτι δεν μου κόλλαγε.',white,False,34,9),
+            ('Τη ρώτησα: «Τι δουλειά κάνει ο πατέρας σου;»',white,False,34,9),
+            ('Μου είπε ακριβώς την ίδια δουλειά που ήξερα κι εγώ.',white,False,34,8),
+            ('Εσύ τι θα σκεφτόσουν εδώ;',yellow,True,39,0)
+          ],start_y=455)
+          c3.convert('RGB').save(final/'card-03.jpg',quality=94,subsampling=0)
+          # Cards 4-10 are the already reviewed exact originals; convert to TikTok-safe JPEG.
+          for i in range(4,11):
+              Image.open(root/'original'/f'{i:02d}.png').convert('RGB').save(final/f'card-{i:02d}.jpg',quality=94,subsampling=0)
+          rows=[]
+          for p in sorted(final.glob('card-*.jpg')):
+              with Image.open(p) as im:
+                  if im.size!=(1080,1080): raise SystemExit(f'bad size {p}: {im.size}')
+              rows.append({'file':p.name,'sha256':hashlib.sha256(p.read_bytes()).hexdigest()})
+          if len({x['sha256'] for x in rows})!=10: raise SystemExit('duplicate final card bytes')
+          (root/'qa-cards.json').write_text(json.dumps({'cards':rows,'card_count':10,'all_jpeg':True,'all_1080_square':True,'child_faces_cards_1_3':'not shown/identifiable','replacement_sources':[
+            {'card':1,'source':'Pexels 17325134','description':'Back view of girl standing in doorway','license':'Pexels free license'},
+            {'card':2,'source':'Pexels 5707671','description':'Back view of girl opening wooden house door','license':'Pexels free license'},
+            {'card':3,'source':'Pexels 3755755','description':'Concerned adult woman using laptop at home','license':'Pexels free license'}
+          ]},ensure_ascii=False,indent=2))
+          PY
+      - name: Build repaired contact sheet and YouTube vertical slideshow
+        run: |
+          python3 - <<'PY'
+          from PIL import Image,ImageOps
+          from pathlib import Path
+          import subprocess,json
+          root=Path('third-door-repair'); final=root/'final'; cards=sorted(final.glob('card-*.jpg'))
+          cw,ch=324,324; sheet=Image.new('RGB',(cw*5,ch*2),(20,20,20))
+          for i,p in enumerate(cards):
+              with Image.open(p).convert('RGB') as im: sheet.paste(ImageOps.fit(im,(cw,ch),method=Image.Resampling.LANCZOS),((i%5)*cw,(i//5)*ch))
+          sheet.save(root/'final-carousel-contact-sheet.jpg',quality=95)
+          # Extract the already approved single instrumental layer from the previous YouTube version.
+          import requests
+          u='https://static.metricool.com/planner/202609/7000636-file-4345664022913357134.mp4'
+          r=requests.get(u,timeout=90); r.raise_for_status(); (root/'old-youtube.mp4').write_bytes(r.content)
+          subprocess.run(['ffmpeg','-y','-loglevel','error','-i',str(root/'old-youtube.mp4'),'-vn','-c:a','aac','-b:a','128k',str(root/'instrumental.m4a')],check=True)
+          clips=root/'yt-clips'; clips.mkdir(); lines=[]
+          for i,p in enumerate(cards,1):
+              c=clips/f'{i:02d}.mp4'
+              vf="scale=1080:1080,format=yuv420p,pad=1080:1920:0:420:black"
+              subprocess.run(['ffmpeg','-y','-loglevel','error','-loop','1','-i',str(p),'-vf',vf,'-t','4.5','-r','30','-an','-c:v','libx264','-preset','veryfast','-crf','20',str(c)],check=True)
+              lines.append("file '"+str(c)+"'")
+          (root/'yt-list.txt').write_text('\n'.join(lines)+'\n')
+          subprocess.run(['ffmpeg','-y','-loglevel','error','-f','concat','-safe','0','-i',str(root/'yt-list.txt'),'-c:v','libx264','-preset','veryfast','-crf','20','-pix_fmt','yuv420p',str(root/'yt-visual.mp4')],check=True)
+          subprocess.run(['ffmpeg','-y','-loglevel','error','-i',str(root/'yt-visual.mp4'),'-stream_loop','-1','-i',str(root/'instrumental.m4a'),'-map','0:v:0','-map','1:a:0','-t','45','-c:v','copy','-c:a','aac','-b:a','128k','-movflags','+faststart',str(root/'third-door-youtube-final.mp4')],check=True)
+          subprocess.run(['ffmpeg','-v','error','-i',str(root/'third-door-youtube-final.mp4'),'-f','null','-'],check=True)
+          probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(root/'third-door-youtube-final.mp4')],text=True))
+          vs=[s for s in probe['streams'] if s.get('codec_type')=='video']; au=[s for s in probe['streams'] if s.get('codec_type')=='audio']
+          if len(vs)!=1 or len(au)!=1 or int(vs[0]['width'])!=1080 or int(vs[0]['height'])!=1920: raise SystemExit('YouTube final format QA failed')
+          (root/'qa-youtube.json').write_text(json.dumps({'full_decode_passed':True,'resolution':'1080x1920','duration_seconds':float(probe['format']['duration']),'video_streams':len(vs),'audio_streams':len(au),'audio_source':'single instrumental extracted from previously approved version','complete_card_count':10},indent=2))
+          # Midpoint frame from every card in the exact final YouTube file.
+          yt=Image.new('RGB',(216*5,384*2),(20,20,20))
+          for i in range(10):
+              p=root/f'yt-frame-{i+1:02d}.jpg'; stamp=i*4.5+2.25
+              subprocess.run(['ffmpeg','-y','-loglevel','error','-ss',f'{stamp:.2f}','-i',str(root/'third-door-youtube-final.mp4'),'-frames:v','1','-q:v','2',str(p)],check=True)
+              with Image.open(p).convert('RGB') as im: yt.paste(ImageOps.fit(im,(216,384),method=Image.Resampling.LANCZOS),((i%5)*216,(i//5)*384))
+          yt.save(root/'final-youtube-contact-sheet.jpg',quality=94)
+          PY
+      - name: Save repaired assets to media-output
+        run: |
+          set -euo pipefail
+          git fetch origin media-output --depth=1
+          git worktree add -b third-door-repair-output "$RUNNER_TEMP/media-output" FETCH_HEAD
+          DEST="$RUNNER_TEMP/media-output/jobs/current-ten-20260929-third-door-repair"
+          rm -rf "$DEST"; mkdir -p "$DEST/cards"
+          cp third-door-repair/final/card-*.jpg "$DEST/cards/"
+          cp third-door-repair/third-door-youtube-final.mp4 "$DEST/"
+          cp third-door-repair/final-carousel-contact-sheet.jpg "$DEST/"
+          cp third-door-repair/final-youtube-contact-sheet.jpg "$DEST/"
+          cp third-door-repair/qa-cards.json "$DEST/"
+          cp third-door-repair/qa-youtube.json "$DEST/"
+          git -C "$RUNNER_TEMP/media-output" config user.name 'github-actions[bot]'
+          git -C "$RUNNER_TEMP/media-output" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$RUNNER_TEMP/media-output" add jobs/current-ten-20260929-third-door-repair
+          git -C "$RUNNER_TEMP/media-output" commit -m 'Repair third door carousel exact visuals'
+          git -C "$RUNNER_TEMP/media-output" fetch origin media-output
+          git -C "$RUNNER_TEMP/media-output" rebase FETCH_HEAD
+          git -C "$RUNNER_TEMP/media-output" push origin HEAD:media-output
+      - uses: actions/upload-artifact@v4
+        with:
+          name: third-door-repaired-final-review
+          path: |
+            third-door-repair/final/
+            third-door-repair/final-carousel-contact-sheet.jpg
+            third-door-repair/final-youtube-contact-sheet.jpg
+            third-door-repair/third-door-youtube-final.mp4
+            third-door-repair/qa-cards.json
+            third-door-repair/qa-youtube.json
+          retention-days: 3
