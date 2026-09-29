@@ -1,0 +1,33 @@
+name: Compare current Hawthorne Metricool media 20260929
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/compare-hawthorne-current-20260929.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  compare:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - name: Compare exact current Metricool file to reviewed repaired master
+        run: |
+          set -euo pipefail
+          git fetch origin media-output --depth=1
+          git worktree add "$RUNNER_TEMP/media-output" FETCH_HEAD
+          curl -fL --retry 2 -o current.mp4 "https://static.metricool.com/planner/202609/7000636-file-144302298478072654.mp4"
+          cp "$RUNNER_TEMP/media-output/jobs/current-ten-20260929-repaired-videos/current-ten-20260929-hawthorne-repair/current-ten-20260929-hawthorne-repair.mp4" master.mp4
+          sha256sum current.mp4 master.mp4 | tee hashes.txt
+          cmp current.mp4 master.mp4
+          printf 'IDENTICAL_BYTES=YES\n' >> hashes.txt
+      - uses: actions/upload-artifact@v4
+        with:
+          name: hawthorne-current-byte-identity
+          path: hashes.txt
+          retention-days: 3
