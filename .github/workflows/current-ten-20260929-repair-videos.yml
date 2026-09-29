@@ -230,9 +230,8 @@ jobs:
           root=Path('/home/runner/work/_temp/final')
           for d in root.iterdir():
               if not d.is_dir(): continue
-              vids=list(d.glob('*.mp4'))
-              if len(vids)!=1: raise SystemExit(f'expected one mp4 in {d}')
-              video=vids[0]
+              video=d/(d.name+'.mp4')
+              if not video.exists(): raise SystemExit(f'missing exact final mp4: {video}')
               probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_format','-of','json',str(video)]))
               dur=float(probe['format']['duration'])
               frames=[]
