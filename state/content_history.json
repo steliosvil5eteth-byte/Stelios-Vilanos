@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "items": [
     {
       "job_id": "2026-09-18-zodiac-01-aries",
@@ -2303,7 +2303,7 @@
         "youtube"
       ],
       "metricool_brand_id": "7076410",
-      "metricool_post_id": "382837560,382837567",
+      "metricool_post_id": "384026288,384026477",
       "metricool_uuid": "1721517511529484275,-3554725956835782704",
       "notion_page_id": "3e8f2345-b318-8195-b55f-e41ea22b954f",
       "media_commit": "7969c98a8701a9715a16d6cbbd22e752ab6fe03d",
@@ -2313,8 +2313,13 @@
         "final_visuals_reviewed": true,
         "full_ffmpeg_decode_passed": true,
         "final_end_reviewed": true,
-        "notes": "All six final cards and full slideshow reviewed. Full decode passed. Original instrumental one layer. No narration. Native FB/IG/TikTok carousel with TikTok autoAddMusic. YouTube full vertical slideshow. AI disclosure and CTA."
-      }
+        "notes": "All six final cards and full slideshow reviewed. Full decode passed. Original instrumental one layer. No narration. Native FB/IG/TikTok carousel with TikTok autoAddMusic. YouTube full vertical slideshow. AI disclosure and CTA.",
+        "live_readback_verified": true,
+        "draft": false,
+        "autoPublish": true,
+        "live_status": "PENDING"
+      },
+      "reconciliation_note": "29/09 live reconciliation: same UUIDs, new Metricool IDs after in-place update; current rows draft=false autoPublish=true PENDING on all four networks."
     },
     {
       "job_id": "five-20260929/love29",
