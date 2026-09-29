@@ -46,13 +46,19 @@ jobs:
               if not p.exists(): raise SystemExit(f'missing {p}')
               with Image.open(p) as im:
                   im=im.convert('RGB')
-                  if im.size!=(1080,1080): raise SystemExit(f'wrong size {p}: {im.size}')
+                  if im.width != im.height or min(im.size) < 600:
+                      raise SystemExit(f'invalid source render {p}: {im.size}')
+                  source_size=list(im.size)
+                  if im.size != (1080,1080):
+                      im=im.resize((1080,1080),Image.Resampling.LANCZOS)
+                  final_png=root/f'card-{i:02}-final.png'
+                  im.save(final_png,optimize=True)
                   im.save(root/f'card-{i:02}.jpg',quality=95,subsampling=0)
-              h=hashlib.sha256(p.read_bytes()).hexdigest()
-              report['cards'].append({'index':i,'filename':p.name,'sha256':h,'size':[1080,1080]})
+              h=hashlib.sha256(final_png.read_bytes()).hexdigest()
+              report['cards'].append({'index':i,'source_filename':p.name,'final_filename':final_png.name,'sha256':h,'source_size':source_size,'final_size':[1080,1080]})
           canvas=Image.new('RGB',(1080,1080),(24,24,24))
           for i in range(4):
-              with Image.open(root/f'card-{i+1:02}.png').convert('RGB') as im:
+              with Image.open(root/f'card-{i+1:02}-final.png').convert('RGB') as im:
                   canvas.paste(ImageOps.fit(im,(540,540),method=Image.Resampling.LANCZOS),((i%2)*540,(i//2)*540))
           canvas.save(root/'cards-contact-sheet.jpg',quality=95)
           (root/'qa-carousel.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
@@ -62,7 +68,7 @@ jobs:
           set -euo pipefail
           mkdir -p "$RUNNER_TEMP/slides"
           for i in 01 02 03 04; do
-            ffmpeg -y -loglevel error -loop 1 -i "$RUNNER_TEMP/final/card-$i.png" \
+            ffmpeg -y -loglevel error -loop 1 -i "$RUNNER_TEMP/final/card-$i-final.png" \
               -vf "scale=1080:1080,drawbox=x=0:y=0:w=1080:h=420:color=0x101A28:t=fill,pad=1080:1920:0:420:color=0x101A28" \
               -t 7 -r 30 -an -c:v libx264 -preset veryfast -crf 21 -pix_fmt yuv420p "$RUNNER_TEMP/slides/$i.mp4"
           done
@@ -83,7 +89,7 @@ jobs:
           DEST="$OUT/jobs/current-ten-20260929-dog-final"
           rm -rf "$DEST"
           mkdir -p "$DEST"
-          cp "$RUNNER_TEMP"/final/card-*.png "$DEST"/
+          cp "$RUNNER_TEMP"/final/card-*-final.png "$DEST"/
           cp "$RUNNER_TEMP"/final/card-*.jpg "$DEST"/
           cp "$RUNNER_TEMP"/final/cards-contact-sheet.jpg "$DEST"/
           cp "$RUNNER_TEMP"/final/qa-carousel.json "$DEST"/
