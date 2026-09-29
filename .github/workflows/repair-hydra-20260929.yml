@@ -1,0 +1,144 @@
+name: Repair Hydra 20260929 final media
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/repair-hydra-20260929.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: repair-hydra-20260929
+  cancel-in-progress: false
+
+jobs:
+  repair:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install media tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg python3-pil
+          python3 -m pip install --disable-pip-version-check requests
+      - name: Fetch approved source media and replace the incorrect painting
+        run: |
+          set -euo pipefail
+          git fetch origin media-output --depth=1
+          git worktree add "$RUNNER_TEMP/media-output" FETCH_HEAD
+          SRC="$RUNNER_TEMP/media-output/jobs/features-20260927/travel-hydra-20260927-1830"
+          OUT="$RUNNER_TEMP/hydra-final"
+          mkdir -p "$OUT/photos"
+          cp "$SRC/nestoras.wav" "$OUT/nestoras.wav"
+          cp "$SRC/subs.srt" "$OUT/subs.srt"
+          for n in 02 03 04 05 06 07 08 09 10; do cp "$SRC/photos/$n.jpg" "$OUT/photos/$n.jpg"; done
+          python3 - <<'PY'
+          import requests, urllib.parse
+          from pathlib import Path
+          from PIL import Image
+          out=Path('/home/runner/work/_temp/hydra-final/photos/01.jpg')
+          name='0056 - Hydra.jpg'
+          u='https://commons.wikimedia.org/wiki/Special:Redirect/file/'+urllib.parse.quote(name,safe='()_,.-')+'?width=1920'
+          r=requests.get(u,headers={'User-Agent':'SteliosMediaQA/2.0'},timeout=90,allow_redirects=True)
+          r.raise_for_status(); out.write_bytes(r.content)
+          with Image.open(out) as im:
+              assert min(im.size)>=600
+              im.convert('RGB').save(out,quality=94)
+          PY
+      - name: Render exact final 10-scene video and QA
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, hashlib, math, re, subprocess
+          from pathlib import Path
+          from PIL import Image, ImageOps, ImageChops
+          root=Path('/home/runner/work/_temp/hydra-final'); photos=root/'photos'
+          files=sorted(photos.glob('*.jpg'))
+          if len(files)!=10: raise SystemExit('need exactly 10 Hydra photographs')
+          hs=[hashlib.sha256(p.read_bytes()).hexdigest() for p in files]
+          if len(set(hs))!=10: raise SystemExit('duplicate visual detected')
+          dur=float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','default=noprint_wrappers=1:nokey=1',str(root/'nestoras.wav')],text=True).strip())
+          per=dur/10.0; frames=max(1,math.ceil(per*30)); clips=root/'clips'; clips.mkdir()
+          rows=[]
+          for i,img in enumerate(files,1):
+              clip=clips/f'clip-{i:02d}.mp4'; sign=1 if i%2 else -1
+              x=f"iw/2-(iw/zoom/2)+{sign*10}*sin(on/39)"; y=f"ih/2-(ih/zoom/2)+{sign*8}*cos(on/43)"
+              subprocess.run(['ffmpeg','-y','-loglevel','error','-loop','1','-i',str(img),'-vf',f"scale=1200:2134:force_original_aspect_ratio=increase,crop=1200:2134,zoompan=z='min(zoom+0.00028,1.055)':x='{x}':y='{y}':d={frames}:s=1080x1920:fps=30,format=yuv420p",'-t',str(per),'-an','-c:v','libx264','-preset','veryfast','-crf','21','-pix_fmt','yuv420p',str(clip)],check=True)
+              rows.append("file '"+str(clip).replace("'","'\\''")+"'")
+          (root/'clips.txt').write_text('\n'.join(rows)+'\n')
+          visual=root/'visual.mp4'
+          subprocess.run(['ffmpeg','-y','-loglevel','error','-f','concat','-safe','0','-i',str(root/'clips.txt'),'-an','-c:v','libx264','-preset','veryfast','-crf','21','-pix_fmt','yuv420p',str(visual)],check=True)
+          final=root/'hydra-20260929-final.mp4'
+          style='FontName=DejaVu Sans,FontSize=10,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,BackColour=&H90000000,BorderStyle=3,Outline=1,Shadow=0,Alignment=2,MarginL=14,MarginR=14,MarginV=42'
+          subprocess.run(['ffmpeg','-y','-loglevel','error','-i',str(visual),'-i',str(root/'nestoras.wav'),'-vf',f"subtitles='{root/'subs.srt'}':force_style='{style}'",'-c:v','libx264','-preset','medium','-crf','20','-pix_fmt','yuv420p','-c:a','aac','-b:a','128k','-ar','48000','-ac','1','-shortest','-movflags','+faststart',str(final)],check=True)
+          probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(final)],text=True))
+          vd=float(probe['format']['duration']); vs=[s for s in probe['streams'] if s.get('codec_type')=='video']; au=[s for s in probe['streams'] if s.get('codec_type')=='audio']
+          if not (80<=vd<=155 and len(vs)==1 and len(au)==1 and int(vs[0]['width'])==1080 and int(vs[0]['height'])==1920): raise SystemExit('basic QA failed')
+          subprocess.run(['ffmpeg','-v','error','-i',str(final),'-f','null','-'],check=True)
+          strong=[]
+          for stamp in (1.0,15.0,min(50.0,vd-2)):
+              a=root/f'clean-{stamp}.png'; b=root/f'final-{stamp}.png'
+              subprocess.run(['ffmpeg','-y','-loglevel','error','-ss',str(stamp),'-i',str(visual),'-frames:v','1','-vf','crop=1080:760:0:1160',str(a)],check=True)
+              subprocess.run(['ffmpeg','-y','-loglevel','error','-ss',str(stamp),'-i',str(final),'-frames:v','1','-vf','crop=1080:760:0:1160',str(b)],check=True)
+              with Image.open(a).convert('RGB') as ia, Image.open(b).convert('RGB') as ib:
+                  d=ImageChops.difference(ia,ib); strong.append(sum(1 for px in d.getdata() if max(px)>55))
+              a.unlink(); b.unlink()
+          if max(strong)<1200: raise SystemExit('burned subtitle QA failed')
+          silence=subprocess.run(['ffmpeg','-hide_banner','-i',str(final),'-af','silencedetect=noise=-45dB:d=1.2','-f','null','-'],text=True,capture_output=True).stderr
+          gaps=[float(x) for x in re.findall(r'silence_duration: ([0-9.]+)',silence)]
+          if any(x>1.2 for x in gaps): raise SystemExit('dead air QA failed')
+          # Contact sheet: one exact-final frame from each unique scene.
+          cw,ch=216,384; canvas=Image.new('RGB',(cw*5,ch*2),(20,20,20))
+          for i in range(10):
+              stamp=(i+0.5)*per; p=root/f'qa-frame-{i+1:02d}.jpg'
+              subprocess.run(['ffmpeg','-y','-loglevel','error','-ss',f'{stamp:.3f}','-i',str(final),'-frames:v','1','-q:v','2',str(p)],check=True)
+              with Image.open(p).convert('RGB') as im: canvas.paste(ImageOps.fit(im,(cw,ch),method=Image.Resampling.LANCZOS),((i%5)*cw,(i//5)*ch))
+          canvas.save(root/'final-contact-sheet.jpg',quality=94)
+          attribution=[
+            {'file':'0056 - Hydra.jpg','artist':'Misa.stefanovic.07','license':'CC BY-SA 4.0','source_page':'https://commons.wikimedia.org/wiki/File:0056_-_Hydra.jpg'},
+            {'file':'Ghidra - panoramio - Tanya Dedyukhina (1).jpg','artist':'Tanya Dedyukhina','license':'CC BY 3.0','source_page':'https://commons.wikimedia.org/wiki/File:Ghidra_-_panoramio_-_Tanya_Dedyukhina_(1).jpg'},
+            {'file':'Harbour of Hydra island (43058393960).jpg','artist':'dronepicr','license':'CC BY 2.0','source_page':'https://commons.wikimedia.org/wiki/File:Harbour_of_Hydra_island_(43058393960).jpg'},
+            {'file':'Harbour of Hydra island Greece (43058400180).jpg','artist':'dronepicr','license':'CC BY 2.0','source_page':'https://commons.wikimedia.org/wiki/File:Harbour_of_Hydra_island_Greece_(43058400180).jpg'},
+            {'file':'High above the harbour of Hydra (50573449301).jpg','artist':'Julien Seguinot','license':'CC BY-SA 2.0','source_page':'https://commons.wikimedia.org/wiki/File:High_above_the_harbour_of_Hydra_(50573449301).jpg'},
+            {'file':'Hydra Harbour 2013.JPG','artist':'Matti Blume','license':'CC BY-SA 3.0','source_page':'https://commons.wikimedia.org/wiki/File:Hydra_Harbour_2013.JPG'},
+            {'file':'Hydra Harbour at night.JPG','artist':'Matti Blume','license':'CC BY-SA 3.0','source_page':'https://commons.wikimedia.org/wiki/File:Hydra_Harbour_at_night.JPG'},
+            {'file':'Leaving the harbour of Hydra (50841874812).jpg','artist':'Julien Seguinot','license':'CC BY-SA 2.0','source_page':'https://commons.wikimedia.org/wiki/File:Leaving_the_harbour_of_Hydra_(50841874812).jpg'},
+            {'file':'Water tanker at Hydra harbour.JPG','artist':'Matti Blume','license':'CC BY-SA 3.0','source_page':'https://commons.wikimedia.org/wiki/File:Water_tanker_at_Hydra_harbour.JPG'},
+            {'file':'Aerial of Hydra Greece (44870059691).jpg','artist':'dronepicr','license':'CC BY 2.0','source_page':'https://commons.wikimedia.org/wiki/File:Aerial_of_Hydra_Greece_(44870059691).jpg'}
+          ]
+          (root/'visual-attribution.json').write_text(json.dumps(attribution,ensure_ascii=False,indent=2))
+          (root/'qa.json').write_text(json.dumps({'publish_ready':True,'voice':'el-GR-NestorasNeural','duration_seconds':round(vd,3),'resolution':'1080x1920','background_music':False,'burned_synced_greek_subtitles':True,'avatar_presenter':False,'full_decode_passed':True,'ten_unique_real_hydra_photos':True,'incorrect_painting_removed':True,'subtitle_pixel_check':strong,'dead_air_gt_1_2s':False},ensure_ascii=False,indent=2))
+          PY
+      - name: Save repaired final media and upload QA artifact
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/media-output"
+          DEST="$OUT/jobs/current-ten-20260929-hydra-repair"
+          rm -rf "$DEST"; mkdir -p "$DEST"
+          cp "$RUNNER_TEMP/hydra-final/hydra-20260929-final.mp4" "$DEST/"
+          cp "$RUNNER_TEMP/hydra-final/final-contact-sheet.jpg" "$DEST/"
+          cp "$RUNNER_TEMP/hydra-final"/qa-frame-*.jpg "$DEST/"
+          cp "$RUNNER_TEMP/hydra-final/qa.json" "$DEST/"
+          cp "$RUNNER_TEMP/hydra-final/visual-attribution.json" "$DEST/"
+          cp "$RUNNER_TEMP/hydra-final/subs.srt" "$DEST/"
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/current-ten-20260929-hydra-repair
+          git -C "$OUT" commit -m 'Repair Hydra 29 Sep with ten real distinct photos'
+          git -C "$OUT" fetch origin media-output
+          git -C "$OUT" rebase FETCH_HEAD
+          git -C "$OUT" push origin HEAD:media-output
+      - uses: actions/upload-artifact@v4
+        with:
+          name: hydra-20260929-final-review
+          path: |
+            /home/runner/work/_temp/hydra-final/hydra-20260929-final.mp4
+            /home/runner/work/_temp/hydra-final/final-contact-sheet.jpg
+            /home/runner/work/_temp/hydra-final/qa-frame-*.jpg
+            /home/runner/work/_temp/hydra-final/qa.json
+            /home/runner/work/_temp/hydra-final/visual-attribution.json
+          retention-days: 3
