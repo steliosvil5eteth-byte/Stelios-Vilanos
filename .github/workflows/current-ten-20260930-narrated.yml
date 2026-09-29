@@ -1,0 +1,139 @@
+name: Current Ten 20260930 narrated production and QA
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/current-ten-20260930-narrated.yml'
+      - 'media_jobs/current_ten_20260930_narrated.json'
+      - 'tools/render_azure_feature_batch.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: current-ten-20260930-narrated
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install media dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg python3-pil fonts-dejavu-core
+          python3 -m pip install --disable-pip-version-check --no-input pillow requests azure-cognitiveservices-speech
+
+      - name: Fetch existing immutable media-output
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/media-output-repo"
+          git fetch origin media-output --depth=1
+          git worktree add -b current-ten-20260930-narrated-output "$OUT" FETCH_HEAD
+          echo "MEDIA_OUT=$OUT" >> "$GITHUB_ENV"
+
+      - name: Copy already rendered unused finals
+        run: |
+          set -euo pipefail
+          mkdir -p "$RUNNER_TEMP/final/current-ten-20260930-milky-seas"
+          mkdir -p "$RUNNER_TEMP/final/current-ten-20260930-milgram"
+
+          cp "$MEDIA_OUT/jobs/features-20260927/phenom-milky-seas-20260927-1700/phenom-milky-seas-20260927-1700.mp4"              "$RUNNER_TEMP/final/current-ten-20260930-milky-seas/current-ten-20260930-milky-seas.mp4"
+          cp "$MEDIA_OUT/jobs/features-20260927/phenom-milky-seas-20260927-1700/qa.json"              "$RUNNER_TEMP/final/current-ten-20260930-milky-seas/source-qa.json"
+
+          cp "$MEDIA_OUT/jobs/features-20260926/experiment-milgram-20260926-2130/experiment-milgram-20260926-2130.mp4"              "$RUNNER_TEMP/final/current-ten-20260930-milgram/current-ten-20260930-milgram.mp4"
+          cp "$MEDIA_OUT/jobs/features-20260926/experiment-milgram-20260926-2130/qa.json"              "$RUNNER_TEMP/final/current-ten-20260930-milgram/source-qa.json"
+
+      - name: Render fresh Pelion and Headless Horseman finals
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+        run: |
+          set -euo pipefail
+          python3 tools/render_azure_feature_batch.py             --manifest media_jobs/current_ten_20260930_narrated.json             --output "$RUNNER_TEMP/new"
+          cp -a "$RUNNER_TEMP/new/current-ten-20260930-travel-pelion" "$RUNNER_TEMP/final/"
+          cp -a "$RUNNER_TEMP/new/current-ten-20260930-legend-headless-horseman" "$RUNNER_TEMP/final/"
+
+      - name: Validate exact final videos and build contact sheets
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib, json, math, subprocess
+          from pathlib import Path
+          from PIL import Image, ImageOps
+
+          root=Path('/home/runner/work/_temp/final')
+          jobs={
+            'current-ten-20260930-travel-pelion': {'min':80,'max':150},
+            'current-ten-20260930-milky-seas': {'min':90,'max':120},
+            'current-ten-20260930-milgram': {'min':80,'max':170},
+            'current-ten-20260930-legend-headless-horseman': {'min':90,'max':120},
+          }
+          summary={}
+          for key,gates in jobs.items():
+              d=root/key
+              video=d/(key+'.mp4')
+              if not video.exists(): raise SystemExit(f'missing exact final {video}')
+              probe=json.loads(subprocess.check_output([
+                  'ffprobe','-v','error','-show_streams','-show_format','-of','json',str(video)
+              ]))
+              dur=float(probe['format']['duration'])
+              vs=[s for s in probe['streams'] if s.get('codec_type')=='video']
+              au=[s for s in probe['streams'] if s.get('codec_type')=='audio']
+              if len(vs)!=1 or len(au)!=1: raise SystemExit(f'bad streams {key}')
+              if [int(vs[0]['width']),int(vs[0]['height'])] != [1080,1920]:
+                  raise SystemExit(f'bad resolution {key}')
+              if dur < gates['min'] or dur > gates['max']:
+                  raise SystemExit(f'bad duration {key}: {dur}')
+              frames=[]
+              for i,x in enumerate((.05,.18,.32,.47,.62,.78,.94),1):
+                  p=d/f'qa-frame-{i:02}.jpg'
+                  subprocess.run([
+                    'ffmpeg','-y','-loglevel','error','-ss',f'{dur*x:.3f}','-i',str(video),
+                    '-frames:v','1','-q:v','2',str(p)
+                  ],check=True)
+                  frames.append(p)
+              cw,ch=270,480
+              canvas=Image.new('RGB',(cw*4,ch*2),(24,24,24))
+              for i,p in enumerate(frames):
+                  with Image.open(p).convert('RGB') as im:
+                      canvas.paste(ImageOps.fit(im,(cw,ch),method=Image.Resampling.LANCZOS),((i%4)*cw,(i//4)*ch))
+              canvas.save(d/'final-contact-sheet.jpg',quality=94)
+              h=hashlib.sha256()
+              with video.open('rb') as fh:
+                  for block in iter(lambda:fh.read(1024*1024),b''): h.update(block)
+              summary[key]={
+                'sha256':h.hexdigest(),
+                'duration_seconds':dur,
+                'resolution':[1080,1920],
+                'video_streams':len(vs),
+                'audio_streams':len(au),
+                'contact_sheet':'final-contact-sheet.jpg'
+              }
+              (d/'ffprobe-final.json').write_text(json.dumps(probe,ensure_ascii=False,indent=2),encoding='utf-8')
+              (d/'release-gate.txt').write_text('PENDING_DIRECT_VISUAL_REVIEW\n',encoding='utf-8')
+          (root/'exact-final-summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
+          PY
+
+      - name: Save exact finals to media-output
+        run: |
+          set -euo pipefail
+          DEST="$MEDIA_OUT/jobs/current-ten-20260930-narrated"
+          rm -rf "$DEST"
+          mkdir -p "$DEST"
+          cp -a "$RUNNER_TEMP/final"/. "$DEST"/
+
+          git -C "$MEDIA_OUT" config user.name 'github-actions[bot]'
+          git -C "$MEDIA_OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$MEDIA_OUT" add jobs/current-ten-20260930-narrated
+          if ! git -C "$MEDIA_OUT" diff --cached --quiet; then
+            git -C "$MEDIA_OUT" commit -m 'Build 30 Sep CURRENT_TEN narrated finals and QA'
+            git -C "$MEDIA_OUT" fetch origin media-output
+            git -C "$MEDIA_OUT" rebase FETCH_HEAD
+            git -C "$MEDIA_OUT" push origin HEAD:media-output
+          fi
