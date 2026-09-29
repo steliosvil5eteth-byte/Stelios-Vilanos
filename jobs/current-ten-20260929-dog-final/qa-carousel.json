@@ -6,7 +6,7 @@
       "index": 1,
       "source_filename": "card-01.png",
       "final_filename": "card-01-final.png",
-      "sha256": "f6e7556abb825fd9154f37541355b2b875e08c29307fe163cb5e700df4c755a5",
+      "sha256": "c0a455231f05783044d8218ed3db4c634639a8073f63b56630ea6445a7f81747",
       "source_size": [
         600,
         600
@@ -20,7 +20,7 @@
       "index": 2,
       "source_filename": "card-02.png",
       "final_filename": "card-02-final.png",
-      "sha256": "25a40a26b021803df577ac70a6e79d31c236552cb24d0e036922f8e3a38ff59c",
+      "sha256": "58e3cef4757c58650bc2622a234b44b27960dd0daead7735261b52c043cc738f",
       "source_size": [
         600,
         600
@@ -34,7 +34,7 @@
       "index": 3,
       "source_filename": "card-03.png",
       "final_filename": "card-03-final.png",
-      "sha256": "c37f8394da86433174ce8d98e6c9d36dfc1aeb3b8fccd05f41850cec5aca9dba",
+      "sha256": "fdc88df534e7123f6a956b924cb9afe2c041a20cb9811cb2d02d75c591a0fd55",
       "source_size": [
         600,
         600
@@ -48,7 +48,7 @@
       "index": 4,
       "source_filename": "card-04.png",
       "final_filename": "card-04-final.png",
-      "sha256": "4c059925a7d9f547dd031f7a8384fdbb32546e5af5c9893e667b72410715f03c",
+      "sha256": "5b50ea288ff4692ffef5784467d8b52c092a081b945bde13a265db9e4c04d927",
       "source_size": [
         600,
         600
