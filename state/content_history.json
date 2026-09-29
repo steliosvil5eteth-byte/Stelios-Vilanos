@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "items": [
     {
       "job_id": "2026-09-18-zodiac-01-aries",
@@ -2466,6 +2466,172 @@
         "draft": false,
         "autoPublish": true,
         "notes": "PASSED_FINAL_REVIEW. Duplicate checks clear. Existing 14:00 Metricool entries were updated in place rather than duplicated."
+      }
+    },
+    {
+      "job_id": "current-ten-20260929/relationships-personal-space",
+      "date": "2026-09-29",
+      "theme": "relationships",
+      "title": "Πόσο χώρο χρειάζεται μια σχέση;",
+      "caption": "Το «μαζί» δεν σημαίνει απαραίτητα «πάντα μαζί». Προσωπικός χρόνος, φίλοι, χόμπι και καθαρά όρια μπορούν να συνυπάρχουν με μια δεμένη σχέση.",
+      "fingerprint": "current-ten-20260929-relationships-personal-space",
+      "status": "published",
+      "scheduled_time": "2026-09-29T07:50:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "383954480,383954585",
+      "metricool_uuid": "192110622604084551,6184407085100647074",
+      "notion_page_id": "3eaf2345-b318-81a5-bdaa-d24cf03b212d",
+      "media_commit": "7f07000ba936001f7ce53b2a5bed0881492b690a",
+      "quality_check": {
+        "final_visuals_reviewed": true,
+        "order_verified": true,
+        "card_count": 7,
+        "cta_verified": true,
+        "youtube_vertical_slideshow": true,
+        "single_instrumental_layer": true,
+        "live_readback_status": "PUBLISHED"
+      }
+    },
+    {
+      "job_id": "current-ten-20260929/dog-correct-decisions",
+      "date": "2026-09-29",
+      "theme": "dog_bartender",
+      "title": "Σκύλος Μπάρμαν — σωστές αποφάσεις",
+      "caption": "Ο πελάτης ζήτησε κοκτέιλ για σωστές αποφάσεις. Ο Σκύλος Μπάρμαν είχε μια απάντηση που μάλλον δεν περίμενε.",
+      "fingerprint": "current-ten-20260929-dog-correct-decisions",
+      "status": "scheduled",
+      "scheduled_time": "2026-09-29T10:45:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "384023730,384024020",
+      "metricool_uuid": "-5049033417137435465,1508674582083486471",
+      "notion_page_id": "3eaf2345-b318-81ad-90f1-db23c9b68d5c",
+      "media_commit": "fc3389025c32d11397c76df48b9d60f565efde20",
+      "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/fc3389025c32d11397c76df48b9d60f565efde20/jobs/current-ten-20260929-dog-final/dog-bartender-20260929-youtube.mp4",
+      "duration_seconds": 28,
+      "quality_check": {
+        "final_visuals_reviewed": true,
+        "order_verified": true,
+        "card_count": 4,
+        "final_text_layout_fixed": true,
+        "tiktok_auto_add_music": true,
+        "youtube_1080x1920": true,
+        "single_instrumental_layer": true,
+        "live_readback_status": "PENDING",
+        "draft": false,
+        "autoPublish": true
+      }
+    },
+    {
+      "job_id": "current-ten-20260929/travel-hydra",
+      "date": "2026-09-29",
+      "theme": "greece_two_day_trip",
+      "title": "Διήμερο στην Ελλάδα — Ύδρα",
+      "caption": "Ένα νησί χωρίς αυτοκίνητα για βόλτες στο λιμάνι, πέτρινα αρχοντικά, παραθαλάσσιες διαδρομές και ένα ήρεμο διήμερο με τα πόδια.",
+      "fingerprint": "current-ten-20260929-travel-hydra",
+      "status": "scheduled",
+      "scheduled_time": "2026-09-29T13:00:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "383956826",
+      "metricool_uuid": "-1168589066448843604",
+      "notion_page_id": "3eaf2345-b318-8197-81c4-db3ef7c26905",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-7460885752110415672.mp4",
+      "duration_seconds": 84,
+      "quality_check": {
+        "final_visuals_reviewed": true,
+        "voice": "el-GR-NestorasNeural",
+        "burned_synced_greek_subtitles": true,
+        "avatar_presenter": false,
+        "background_music": false,
+        "live_readback_status": "PENDING",
+        "draft": false,
+        "autoPublish": true
+      }
+    },
+    {
+      "job_id": "current-ten-20260929/hawthorne",
+      "date": "2026-09-29",
+      "theme": "documented_experiments",
+      "title": "Τα πειράματα Hawthorne — τι άλλαζε πραγματικά την παραγωγικότητα;",
+      "caption": "Η απλή φράση «οι άνθρωποι δουλεύουν καλύτερα επειδή τους παρακολουθούν» είναι υπεραπλούστευση.",
+      "fingerprint": "current-ten-20260929-hawthorne-repair",
+      "status": "scheduled",
+      "scheduled_time": "2026-09-29T18:30:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "384015187",
+      "metricool_uuid": "-5871918745834075997",
+      "notion_page_id": "3eaf2345-b318-8141-8122-d0d3150d3fd5",
+      "media_commit": "9bf0b782970a639481eba6aa710af66683baf294",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-11370035227436240852.mp4",
+      "duration_seconds": 100.697,
+      "quality_check": {
+        "final_visuals_reviewed": true,
+        "voice": "el-GR-NestorasNeural",
+        "burned_synced_greek_subtitles": true,
+        "avatar_presenter": false,
+        "background_music": false,
+        "rights_verified": true,
+        "live_readback_status": "PENDING",
+        "draft": false,
+        "autoPublish": true
+      }
+    },
+    {
+      "job_id": "current-ten-20260929/yuki-onna",
+      "date": "2026-09-29",
+      "theme": "international_legend",
+      "title": "Ο θρύλος λέει… Yuki-onna",
+      "caption": "Η ιστορία ακολουθεί την εκδοχή που δημοσίευσε ο Lafcadio Hearn στο Kwaidan το 1904. Ιαπωνική λαογραφία — όχι αποδεδειγμένο υπερφυσικό γεγονός.",
+      "fingerprint": "current-ten-20260929-yuki-repair",
+      "status": "scheduled",
+      "scheduled_time": "2026-09-29T22:00:00+03:00",
+      "platforms": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "384015400",
+      "metricool_uuid": "-4763852553848009225",
+      "notion_page_id": "3eaf2345-b318-8171-bedd-cf95eb97bc16",
+      "media_commit": "9bf0b782970a639481eba6aa710af66683baf294",
+      "media_url": "https://static.metricool.com/planner/202609/7000636-file-13663064365789460700.mp4",
+      "duration_seconds": 101.867,
+      "quality_check": {
+        "final_visuals_reviewed": true,
+        "voice": "el-GR-NestorasNeural",
+        "burned_synced_greek_subtitles": true,
+        "avatar_presenter": false,
+        "background_music": false,
+        "rights_verified": true,
+        "folklore_not_fact": true,
+        "live_readback_status": "PENDING",
+        "draft": false,
+        "autoPublish": true
       }
     }
   ]
