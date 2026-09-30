@@ -3,7 +3,7 @@
   "production_owner": "automation-current-five-20260927-1534",
   "production_lease_until": null,
   "date": "2026-09-30",
-  "instruction": "Historical five-series snapshot only. NEVER use as CURRENT_TEN completion evidence or routing. Reconcile against config/content_strategy.json, live Metricool brand 7076410, Notion archive and repository/history. The active day requires 10 standing series, 15 physical/member posts per network and 60 provider destinations; Zodiac requires six separate pair-comparison posts.",
+  "instruction": "Historical five-series snapshot only. NEVER use as CURRENT_TEN completion evidence or routing. Reconcile against config/content_strategy.json, live Metricool brand 7076410, Notion archive and repository/history. The active day requires exactly 10 baseline uploads per network and 40 provider destinations; Zodiac is one carousel upload containing six two-sign comparison units covering all 12 signs exactly once.",
   "source_buffer": "state/seven_day_production_buffer.json",
   "packs": {
     "survival30": {
@@ -85,4 +85,4 @@
   },
   "operational": false,
   "strategy_context": "RETIRED_CURRENT_FIVE_DAILY"
-}
+}\n
