@@ -1,12 +1,12 @@
 {
-  "version": 3,
+  "version": 4,
   "timezone": "Europe/Athens",
   "brand_id": 7076410,
   "horizon_start": "2026-09-28",
   "horizon_end": "2026-10-04",
   "target_logical_posts": 70,
   "final_ready_through": null,
-  "rule": "Production backlog only; never treat this file as scheduled/published proof. CURRENT_TEN_DAILY requires 10 standing series; the 11:00 zodiac series is complete only with six separate two-sign pair posts covering all 12 signs. Live Metricool readback plus exact-final QA establish readiness.",
+  "rule": "Production backlog only; never treat this file as scheduled/published proof. CURRENT_TEN_DAILY requires exactly 10 total baseline posts per network per day; the 11:00 zodiac series is one carousel upload containing six two-sign comparison units that cover all 12 signs exactly once. Live Metricool readback plus exact-final QA establish readiness.",
   "jobs": [
     {
       "id": "2026-09-28-survival",
@@ -1013,12 +1013,11 @@
   "transition_note": "CURRENT_TEN_DAILY is the sole active strategy. Legacy five-category records are retained only as history/backlog inputs. From 2026-09-30 onward, old single-sign zodiac scripts/carousels are obsolete and cannot satisfy the zodiac series gate.",
   "updated_on": "2026-09-30",
   "target_standing_series": 70,
-  "target_member_posts": 105,
+  "target_member_posts": 70,
   "target_destinations": 420,
   "current_ten_gap_audit": {
     "2026-09-30": {
       "required_standing_series": 10,
-      "zodiac_member_posts_required": 6,
       "missing_categories": [
         "relationships",
         "dog_bartender",
@@ -1031,11 +1030,11 @@
       ],
       "ready": false,
       "do_not_claim_complete": true,
-      "do_not_schedule_placeholders": true
+      "do_not_schedule_placeholders": true,
+      "zodiac_carousel_posts_required": 1
     },
     "2026-10-01": {
       "required_standing_series": 10,
-      "zodiac_member_posts_required": 6,
       "missing_categories": [
         "relationships",
         "dog_bartender",
@@ -1048,11 +1047,11 @@
       ],
       "ready": false,
       "do_not_claim_complete": true,
-      "do_not_schedule_placeholders": true
+      "do_not_schedule_placeholders": true,
+      "zodiac_carousel_posts_required": 1
     },
     "2026-10-02": {
       "required_standing_series": 10,
-      "zodiac_member_posts_required": 6,
       "missing_categories": [
         "relationships",
         "dog_bartender",
@@ -1065,11 +1064,11 @@
       ],
       "ready": false,
       "do_not_claim_complete": true,
-      "do_not_schedule_placeholders": true
+      "do_not_schedule_placeholders": true,
+      "zodiac_carousel_posts_required": 1
     },
     "2026-10-03": {
       "required_standing_series": 10,
-      "zodiac_member_posts_required": 6,
       "missing_categories": [
         "relationships",
         "dog_bartender",
@@ -1082,11 +1081,11 @@
       ],
       "ready": false,
       "do_not_claim_complete": true,
-      "do_not_schedule_placeholders": true
+      "do_not_schedule_placeholders": true,
+      "zodiac_carousel_posts_required": 1
     },
     "2026-10-04": {
       "required_standing_series": 10,
-      "zodiac_member_posts_required": 6,
       "missing_categories": [
         "relationships",
         "dog_bartender",
@@ -1099,7 +1098,10 @@
       ],
       "ready": false,
       "do_not_claim_complete": true,
-      "do_not_schedule_placeholders": true
+      "do_not_schedule_placeholders": true,
+      "zodiac_carousel_posts_required": 1
     }
-  }
-}\n
+  },
+  "target_baseline_posts_per_network": 70,
+  "destination_target_per_day": 40
+}
