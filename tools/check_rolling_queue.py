@@ -18,10 +18,10 @@ def load_strategy(path):
         raise SystemExit(f"FAIL_CLOSED: CURRENT_TEN requires exactly 10 standing series, found {len(slots)}")
     if len({str(x["time"]) for x in slots}) != 10:
         raise SystemExit("FAIL_CLOSED: duplicate standing slot times in active strategy")
-    physical=sum(int(x.get("member_posts",1)) for x in slots)
+    physical=len(slots)
     destinations=physical*len(NETWORKS)
-    if physical != 15 or destinations != 60:
-        raise SystemExit(f"FAIL_CLOSED: expected 15 physical member posts / 60 destinations, got {physical}/{destinations}")
+    if physical != 10 or destinations != 40:
+        raise SystemExit(f"FAIL_CLOSED: expected 10 logical posts / 40 destinations, got {physical}/{destinations}")
     return sid,slots,physical,destinations
 
 def _provider_rows(matches, network):
@@ -58,9 +58,9 @@ def audit(posts,today,slots,physical,destinations,days=3):
                     excess.append({"network":network,"expected":expected,"found":len(providers)})
                 if any(q.get("status") not in ("PENDING","SCHEDULED","PUBLISHED") for _,q in providers):
                     bad.append(network)
-            # For zodiac bundle, six separate member posts are mandatory.
-            # Distinct post records may be split social-vs-YouTube, so provider count per network
-            # is the reliable queue-level check; exact pair coverage remains a final-media QA gate.
+            # Every standing series contributes exactly one daily upload per network.
+            # Zodiac is one carousel containing six two-sign comparison units; exact
+            # all-12-sign coverage remains a final-media QA gate.
             good=not (missing or excess or bad)
             row["complete"] &= good
             row["standing_series"].append({
@@ -97,5 +97,5 @@ if __name__=="__main__":
     print(json.dumps({"strategy_id":sid,"minimum_met":result["minimum_met"],
                       "target_met":result["target_met"],
                       "consecutive_complete_days":result["consecutive_complete_days"],
-                      "required_physical_member_posts":physical,
+                      "required_logical_posts":physical,
                       "required_destinations":destinations}))
