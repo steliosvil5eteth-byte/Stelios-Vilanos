@@ -14,7 +14,7 @@ permissions:
 
 concurrency:
   group: current-ten-20260930-narrated
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   render:
