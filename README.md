@@ -56,9 +56,9 @@ Repository για αυτοματοποίηση δημιουργίας, οργά�
 
 ## Active program
 
-The sole active schedule is **CURRENT_TEN_DAILY** with 10 standing series per day at 07:00, 09:00, 10:00, 11:00, 13:00, 15:00, 17:00, 18:30, 20:00 and 22:00 Europe/Athens. The 11:00 Zodiac series is a required six-member bundle: six separate four-card pair-comparison posts covering all 12 signs exactly once.
+The sole active schedule is **CURRENT_TEN_DAILY** with exactly 10 baseline uploads per network per day at 07:00, 09:00, 10:00, 11:00, 13:00, 15:00, 17:00, 18:30, 20:00 and 22:00 Europe/Athens. The 11:00 Zodiac series is exactly one of those ten uploads: one carousel containing six two-sign comparison units covering all 12 signs exactly once. It must never be split into six separate uploads.
 
-Publishing is quality-first: a failed slot is repaired and published later the same day after full QA and a fresh duplicate check. A standing series is complete only when its current required output is complete; the obsolete single-sign zodiac carousel never satisfies the 11:00 gate. Historical illustrations are not valid final visuals under the current photographic/photorealistic rule.
+Publishing is quality-first: a failed slot is repaired and published later the same day after full QA and a fresh duplicate check. A standing series is complete only when its current required output is complete; the Zodiac gate requires one current-format carousel covering all 12 signs via six pair-comparison units. Historical illustrations are not valid final visuals under the current photographic/photorealistic rule.
 
 ## HeyGen
 
