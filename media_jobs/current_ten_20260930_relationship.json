@@ -16,7 +16,9 @@
         {
           "title": "ΠΟΥ ΕΙΣΑΙ; — 1/7",
           "text": "Μια απλή ερώτηση μπορεί να είναι ενδιαφέρον. Γίνεται έλεγχος όταν απαιτεί συνεχή αναφορά για κάθε κίνηση.",
-          "source_query": "couple talking together on park bench photograph"
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_outdoors_(3).jpg?width=1600",
+          "source_credit": "National Cancer Institute / Bill Branson",
+          "license": "Public Domain"
         },
         {
           "title": "ΤΟ ΚΙΝΗΤΟ — 2/7",
@@ -31,7 +33,9 @@
         {
           "title": "ΦΙΛΟΙ ΚΑΙ ΧΡΟΝΟΣ — 4/7",
           "text": "Μια σχέση δεν χρειάζεται να εξαφανίσει φίλους, χόμπι ή χρόνο μόνος σου. Το «μαζί» δεν σημαίνει «μόνο μαζί».",
-          "source_query": "group of friends walking together outdoors park photograph"
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Walking_in_Park.jpg?width=1600",
+          "source_credit": "Janesmith321",
+          "license": "CC0 1.0"
         },
         {
           "title": "Η ΔΙΑΦΟΡΑ — 5/7",
@@ -41,7 +45,9 @@
         {
           "title": "ΚΑΘΑΡΗ ΣΥΖΗΤΗΣΗ — 6/7",
           "text": "Τα όρια χρειάζονται συγκεκριμένες λέξεις: τι μας ενοχλεί, τι θεωρούμε ιδιωτικό και τι περιμένουμε ο ένας από τον άλλον.",
-          "source_query": "two adults talking at cafe table photograph"
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_talking_(32183069547).jpg?width=1600",
+          "source_credit": "Pedro Ribeiro Simões",
+          "license": "CC BY 2.0"
         },
         {
           "title": "Η ΕΡΩΤΗΣΗ — 7/7",
@@ -51,5 +57,5 @@
       ]
     }
   ],
-  "render_revision": "2026-09-30-direct-qa-repair-1"
+  "render_revision": "2026-09-30-direct-qa-repair-2"
 }
