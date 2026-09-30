@@ -1,5 +1,5 @@
 {
-  "version": 21,
+  "version": 22,
   "updated_on": "2026-09-30",
   "timezone": "Europe/Athens",
   "strategy_id": "CURRENT_TEN_DAILY_20260927",
@@ -160,5 +160,12 @@
     "expected_physical_member_posts_per_day": 15,
     "expected_destinations_per_day": 60
   },
-  "daily_standing_series_target": 10
+  "daily_standing_series_target": 10,
+  "repository_write_safety": {
+    "active": true,
+    "media_output_concurrent_ref_updates": "RETRY_FETCH_REBASE_PUSH",
+    "max_push_attempts": 5,
+    "blind_push_retry_forbidden": true,
+    "rule": "Any workflow writing media-output must fetch/rebase immediately before push and retry only ref-lock/non-fast-forward races with a fresh fetch/rebase. Content/render failures are never blindly retried."
+  }
 }
