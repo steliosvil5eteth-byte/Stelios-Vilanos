@@ -24,7 +24,7 @@
   },
   "publishing": {
     "program_label": "CURRENT_TEN_DAILY",
-    "daily_target_logical_posts_per_network": 10,
+    "daily_target_logical_posts_per_network": 15,
     "daily_target_destinations": 60,
     "slots_local_time": [
       "07:00",
@@ -46,7 +46,7 @@
     ],
     "require_user_confirmation": false,
     "quality_first_catch_up": true,
-    "rule": "Only brand 7076410. Ten posts/day, one per active category after full QA and fresh dedupe. Preserve published history. Never backdate.",
+    "rule": "Only brand 7076410. Ten standing series/day, producing 15 physical/member posts per network and 60 destinations because Zodiac has six pair-comparison member posts. Full QA and fresh dedupe required. Preserve published history. Never backdate.",
     "active_categories": [
       "relationships",
       "survival",
@@ -61,10 +61,12 @@
     ],
     "paused_categories": [],
     "daily_target_standing_series": 10,
-    "zodiac_member_posts": 6
+    "zodiac_member_posts": 6,
+    "daily_target_standing_series_per_network": 10,
+    "daily_target_physical_member_posts_per_network": 15
   },
   "runner": {
-    "max_logical_posts_per_day": 10,
+    "max_logical_posts_per_day": 15,
     "duplicate_policy": "one_active_post_per_date_category_series_member_platform; zodiac has six unique pair members",
     "require_future_schedule": true,
     "hands_off_mode": true,
@@ -74,7 +76,10 @@
     "never_backdate": true,
     "catch_up_after_repair_same_day": true,
     "release_only_after_final_qa_pass": true,
-    "fail_closed": true
+    "fail_closed": true,
+    "max_standing_series_per_day": 10,
+    "expected_physical_member_posts_per_day_per_network": 15,
+    "expected_provider_destinations_per_day": 60
   },
   "audio": {
     "card_posts": {
