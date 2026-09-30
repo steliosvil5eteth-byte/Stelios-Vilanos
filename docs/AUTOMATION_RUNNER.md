@@ -29,7 +29,7 @@ The active schedule contains ten required standing series:
 
 ## Mandatory 10-slot integrity barrier
 
-The ten standing series produce **15 physical member posts per network / 60 destinations per day**, because the single 11:00 Zodiac standing series contains six separate pair-comparison posts. A day with only one Zodiac carousel is incomplete.
+The ten standing series produce **exactly 10 baseline uploads per network / 40 destinations per day**. The 11:00 Zodiac standing series is one upload: a single carousel containing six two-sign comparison units that cover all 12 signs exactly once. Splitting Zodiac into six separate uploads is forbidden.
 
 Before any day is considered ready:
 
