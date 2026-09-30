@@ -25,7 +25,7 @@
   "publishing": {
     "program_label": "CURRENT_TEN_DAILY",
     "daily_target_logical_posts_per_network": 10,
-    "daily_target_destinations": 40,
+    "daily_target_destinations": 60,
     "slots_local_time": [
       "07:00",
       "09:00",
@@ -59,11 +59,13 @@
       "myth_or_truth",
       "international_legend"
     ],
-    "paused_categories": []
+    "paused_categories": [],
+    "daily_target_standing_series": 10,
+    "zodiac_member_posts": 6
   },
   "runner": {
     "max_logical_posts_per_day": 10,
-    "duplicate_policy": "one_logical_post_per_date_category_platform",
+    "duplicate_policy": "one_active_post_per_date_category_series_member_platform; zodiac has six unique pair members",
     "require_future_schedule": true,
     "hands_off_mode": true,
     "quality_check_before_publish": true,
@@ -83,7 +85,7 @@
       "duplicate_audio_layers_forbidden": true
     },
     "narrated_posts": {
-      "provider": "edge_tts_free",
+      "provider": "azure_speech_f0",
       "voice": "el-GR-NestorasNeural",
       "display_name": "Νέστορας",
       "min_duration_seconds": 80,
