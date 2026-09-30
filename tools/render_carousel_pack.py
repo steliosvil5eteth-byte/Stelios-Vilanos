@@ -5,7 +5,7 @@ plus one vertical YouTube slideshow with locally synthesized original music.
 No AI/TTS/payment/publishing APIs.
 """
 from __future__ import annotations
-import argparse, hashlib, html, json, math, re, subprocess, tempfile, urllib.parse, urllib.request
+import argparse, hashlib, html, json, math, re, subprocess, tempfile, time, urllib.error, urllib.parse, urllib.request
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont, ImageOps, ImageEnhance
 
@@ -40,11 +40,27 @@ def download(url,dst):
     check_url(url)
     if url in _CACHE:
         dst.write_bytes(_CACHE[url]); return
-    req=urllib.request.Request(url,headers={'User-Agent':'SteliosPhotoCarousel/2.0','Accept':'image/*,*/*;q=0.5'})
-    with urllib.request.urlopen(req,timeout=120) as r:
-        data=r.read(MAX_DOWNLOAD+1)
-    if not data or len(data)>MAX_DOWNLOAD: raise ValueError('invalid source image size')
-    _CACHE[url]=data; dst.write_bytes(data)
+    candidates=[url]
+    if urllib.parse.urlsplit(url).hostname in {'commons.wikimedia.org','upload.wikimedia.org'}:
+        candidates.append('https://images.weserv.nl/?url='+urllib.parse.quote(url,safe='')+'&w=1600&output=jpg')
+    last=None
+    for attempt in range(6):
+        candidate=candidates[min(attempt//3,len(candidates)-1)]
+        try:
+            req=urllib.request.Request(candidate,headers={'User-Agent':'SteliosPhotoCarousel/2.1','Accept':'image/*,*/*;q=0.5'})
+            with urllib.request.urlopen(req,timeout=120) as r:
+                data=r.read(MAX_DOWNLOAD+1)
+            if not data or len(data)>MAX_DOWNLOAD:
+                raise ValueError('invalid source image size')
+            _CACHE[url]=data; dst.write_bytes(data); return
+        except urllib.error.HTTPError as exc:
+            last=exc
+            if exc.code not in (429,500,502,503,504) and attempt<3:
+                break
+        except Exception as exc:
+            last=exc
+        time.sleep(2*(attempt+1))
+    raise RuntimeError(f'image download failed after retries: {last}')
 
 def _clean(s): return re.sub('<[^>]+>','',html.unescape(s or '')).strip()
 
