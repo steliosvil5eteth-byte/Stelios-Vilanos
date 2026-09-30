@@ -1,12 +1,12 @@
 {
-  "version": 2,
+  "version": 3,
   "timezone": "Europe/Athens",
   "brand_id": 7076410,
   "horizon_start": "2026-09-28",
   "horizon_end": "2026-10-04",
   "target_logical_posts": 70,
   "final_ready_through": null,
-  "rule": "Production backlog only; never treat this file as a scheduled or published queue. Only live Metricool readback establishes that. A day is complete only with all 10 CURRENT_TEN_DAILY categories.",
+  "rule": "Production backlog only; never treat this file as scheduled/published proof. CURRENT_TEN_DAILY requires 10 standing series; the 11:00 zodiac series is complete only with six separate two-sign pair posts covering all 12 signs. Live Metricool readback plus exact-final QA establish readiness.",
   "jobs": [
     {
       "id": "2026-09-28-survival",
@@ -344,11 +344,11 @@
       "slot": "11:00",
       "category": "zodiac",
       "title": "Ποια μικρή χαρά σου αλλάζει τη μέρα; Κριός–Παρθένος",
-      "status": "SCHEDULED",
-      "publish_ready": true,
+      "status": "BLOCKED_OBSOLETE_ZODIAC_FORMAT",
+      "publish_ready": false,
       "metricool_post_ids": [
-        382867583,
-        382867702
+        384793905,
+        384793914
       ],
       "script_cards": [
         [
@@ -386,7 +386,8 @@
       "media_commit": "9bd3bf6e2e772b5c37b5f91fe90b26ad3e42f9d2",
       "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/9bd3bf6e2e772b5c37b5f91fe90b26ad3e42f9d2/jobs/five-20260930/zodiac-joy/zodiac-joy-youtube-short.mp4",
       "qa_path": "jobs/five-20260930/zodiac-joy/qa.json",
-      "notion_page_id": "3e8f2345-b318-8162-95ac-ee5abdb45d15"
+      "notion_page_id": "3e8f2345-b318-8162-95ac-ee5abdb45d15",
+      "blocker": "Obsolete six-single-sign carousel. Latest rule requires six separate two-sign four-card comparison posts covering all 12 signs. Existing Metricool rows are draft=true/autoPublish=false."
     },
     {
       "id": "2026-09-30-love_soul_relationship",
@@ -518,7 +519,7 @@
       "slot": "11:00",
       "category": "zodiac",
       "title": "Ποια μικρή χαρά σου αλλάζει τη μέρα; Ζυγός–Ιχθύες",
-      "status": "SCRIPT_READY",
+      "status": "BLOCKED_OBSOLETE_ZODIAC_FORMAT",
       "publish_ready": false,
       "metricool_post_ids": [],
       "script_cards": [
@@ -547,7 +548,9 @@
           "Μια μελωδία που κάνει μια απλή στιγμή να μοιάζει με σκηνή."
         ]
       ],
-      "disclosure": "Συμβολικά πορτρέτα • Ψυχαγωγία • Εικόνες AI"
+      "disclosure": "Συμβολικά πορτρέτα • Ψυχαγωγία • Εικόνες AI",
+      "blocker": "Legacy single-sign six-card script. Replace with six distinct pair-comparison member posts before rendering or scheduling.",
+      "legacy_script_preserved_for_history": true
     },
     {
       "id": "2026-10-01-love_soul_relationship",
@@ -638,7 +641,7 @@
       "slot": "11:00",
       "category": "zodiac",
       "title": "Πώς μοιράζεσαι μια μικρή επιτυχία; Κριός–Παρθένος",
-      "status": "SCRIPT_READY",
+      "status": "BLOCKED_OBSOLETE_ZODIAC_FORMAT",
       "publish_ready": false,
       "metricool_post_ids": [],
       "script_cards": [
@@ -667,7 +670,9 @@
           "Πρώτα ελέγχεις ότι έγινε. Μετά αφήνεις τον εαυτό σου να χαρεί."
         ]
       ],
-      "disclosure": "Συμβολικά πορτρέτα • Ψυχαγωγία • Εικόνες AI"
+      "disclosure": "Συμβολικά πορτρέτα • Ψυχαγωγία • Εικόνες AI",
+      "blocker": "Legacy single-sign six-card script. Replace with six distinct pair-comparison member posts before rendering or scheduling.",
+      "legacy_script_preserved_for_history": true
     },
     {
       "id": "2026-10-02-love_soul_relationship",
@@ -758,7 +763,7 @@
       "slot": "11:00",
       "category": "zodiac",
       "title": "Πώς μοιράζεσαι μια μικρή επιτυχία; Ζυγός–Ιχθύες",
-      "status": "SCRIPT_READY",
+      "status": "BLOCKED_OBSOLETE_ZODIAC_FORMAT",
       "publish_ready": false,
       "metricool_post_ids": [],
       "script_cards": [
@@ -787,7 +792,9 @@
           "Το διηγείσαι με το συναίσθημα της στιγμής ακόμη στη φωνή."
         ]
       ],
-      "disclosure": "Συμβολικά πορτρέτα • Ψυχαγωγία • Εικόνες AI"
+      "disclosure": "Συμβολικά πορτρέτα • Ψυχαγωγία • Εικόνες AI",
+      "blocker": "Legacy single-sign six-card script. Replace with six distinct pair-comparison member posts before rendering or scheduling.",
+      "legacy_script_preserved_for_history": true
     },
     {
       "id": "2026-10-03-love_soul_relationship",
@@ -878,7 +885,7 @@
       "slot": "11:00",
       "category": "zodiac",
       "title": "Πώς υποδέχεσαι μια αυθόρμητη πρόσκληση; Κριός–Παρθένος",
-      "status": "SCRIPT_READY",
+      "status": "BLOCKED_OBSOLETE_ZODIAC_FORMAT",
       "publish_ready": false,
       "metricool_post_ids": [],
       "script_cards": [
@@ -907,7 +914,9 @@
           "Κοιτάς τι είχες κανονίσει. Ύστερα ψάχνεις τρόπο να χωρέσει."
         ]
       ],
-      "disclosure": "Συμβολικά πορτρέτα • Ψυχαγωγία • Εικόνες AI"
+      "disclosure": "Συμβολικά πορτρέτα • Ψυχαγωγία • Εικόνες AI",
+      "blocker": "Legacy single-sign six-card script. Replace with six distinct pair-comparison member posts before rendering or scheduling.",
+      "legacy_script_preserved_for_history": true
     },
     {
       "id": "2026-10-04-love_soul_relationship",
@@ -985,7 +994,7 @@
   ],
   "continue_daily_until": "2050-12-31",
   "rolling_buffer_days": 3,
-  "long_term_authorization": "User requested continuing the same five daily series until 2050; fill actual queue progressively after QA, never claim all years are produced.",
+  "long_term_authorization": "User authorized CURRENT_TEN_DAILY through 2050. Build progressively after exact-final QA and live deduplication; never treat legacy CURRENT_FIVE jobs as complete-day evidence.",
   "suppressed_duplicates": [
     {
       "metricool_uuid": "4939033458929453922",
@@ -1001,5 +1010,96 @@
   "active_production_lease": null,
   "program_label": "CURRENT_TEN_DAILY",
   "minimum_complete_categories_per_day": 10,
-  "transition_note": "CURRENT_TEN_DAILY activated 27/09; existing five-category jobs are preserved, but no future day is considered fully ready until all ten active categories have PASSED_FINAL_REVIEW and live Metricool readback."
+  "transition_note": "CURRENT_TEN_DAILY is the sole active strategy. Legacy five-category records are retained only as history/backlog inputs. From 2026-09-30 onward, old single-sign zodiac scripts/carousels are obsolete and cannot satisfy the zodiac series gate.",
+  "updated_on": "2026-09-30",
+  "target_standing_series": 70,
+  "target_member_posts": 105,
+  "target_destinations": 420,
+  "current_ten_gap_audit": {
+    "2026-09-30": {
+      "required_standing_series": 10,
+      "zodiac_member_posts_required": 6,
+      "missing_categories": [
+        "relationships",
+        "dog_bartender",
+        "greece_two_day_trip",
+        "documented_experiments",
+        "international_legend"
+      ],
+      "wrong_or_obsolete_categories": [
+        "zodiac"
+      ],
+      "ready": false,
+      "do_not_claim_complete": true,
+      "do_not_schedule_placeholders": true
+    },
+    "2026-10-01": {
+      "required_standing_series": 10,
+      "zodiac_member_posts_required": 6,
+      "missing_categories": [
+        "relationships",
+        "dog_bartender",
+        "greece_two_day_trip",
+        "documented_experiments",
+        "international_legend"
+      ],
+      "wrong_or_obsolete_categories": [
+        "zodiac"
+      ],
+      "ready": false,
+      "do_not_claim_complete": true,
+      "do_not_schedule_placeholders": true
+    },
+    "2026-10-02": {
+      "required_standing_series": 10,
+      "zodiac_member_posts_required": 6,
+      "missing_categories": [
+        "relationships",
+        "dog_bartender",
+        "greece_two_day_trip",
+        "documented_experiments",
+        "international_legend"
+      ],
+      "wrong_or_obsolete_categories": [
+        "zodiac"
+      ],
+      "ready": false,
+      "do_not_claim_complete": true,
+      "do_not_schedule_placeholders": true
+    },
+    "2026-10-03": {
+      "required_standing_series": 10,
+      "zodiac_member_posts_required": 6,
+      "missing_categories": [
+        "relationships",
+        "dog_bartender",
+        "greece_two_day_trip",
+        "documented_experiments",
+        "international_legend"
+      ],
+      "wrong_or_obsolete_categories": [
+        "zodiac"
+      ],
+      "ready": false,
+      "do_not_claim_complete": true,
+      "do_not_schedule_placeholders": true
+    },
+    "2026-10-04": {
+      "required_standing_series": 10,
+      "zodiac_member_posts_required": 6,
+      "missing_categories": [
+        "relationships",
+        "dog_bartender",
+        "greece_two_day_trip",
+        "documented_experiments",
+        "international_legend"
+      ],
+      "wrong_or_obsolete_categories": [
+        "zodiac"
+      ],
+      "ready": false,
+      "do_not_claim_complete": true,
+      "do_not_schedule_placeholders": true
+    }
+  }
 }
