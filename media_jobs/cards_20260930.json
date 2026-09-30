@@ -1,9 +1,9 @@
 {
-  "status": "PARTIAL_SCHEDULED",
+  "status": "HISTORICAL_LEGACY_PARTIAL",
   "production_owner": "automation-current-five-20260927-1534",
   "production_lease_until": null,
   "date": "2026-09-30",
-  "instruction": "Do not produce or schedule duplicate 30 Sep packs while this lease is active. Reconcile live Metricool queue, exact final media, config/content_strategy.json, Notion, and state/content_history.json before any write.",
+  "instruction": "Historical five-series snapshot only. NEVER use as CURRENT_TEN completion evidence or routing. Reconcile against config/content_strategy.json, live Metricool brand 7076410, Notion archive and repository/history. The active day requires 10 standing series, 15 physical/member posts per network and 60 provider destinations; Zodiac requires six separate pair-comparison posts.",
   "source_buffer": "state/seven_day_production_buffer.json",
   "packs": {
     "survival30": {
@@ -26,9 +26,9 @@
     "zodiac30": {
       "time": "11:00",
       "title": "Ποια μικρή χαρά σου αλλάζει τη μέρα; Κριός–Παρθένος",
-      "status": "SCHEDULED",
+      "status": "OBSOLETE_FORMAT_DRAFT_BLOCKED",
       "cards": 6,
-      "publish_ready": true,
+      "publish_ready": false,
       "metricool_post_ids": [
         382867583,
         382867702
@@ -82,5 +82,7 @@
       "media_commit": "567c90a6bedb4bb27768c564c14f00fa373be956",
       "qa_path": "jobs/five-20260930/myth-ostrich/qa.json"
     }
-  }
+  },
+  "operational": false,
+  "strategy_context": "RETIRED_CURRENT_FIVE_DAILY"
 }
