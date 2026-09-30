@@ -1,1 +1,3 @@
-PENDING_DIRECT_VISUAL_REVIEW
+PASSED_FINAL_REVIEW_SOCIAL_CAROUSEL
+YOUTUBE_AUDIO_REVIEW_PENDING
+Reviewed exact 7-card contact sheet after distinct-visual repair; Facebook/Instagram/TikTok released with exact immutable card set. YouTube remains fail-closed pending direct audio review.
