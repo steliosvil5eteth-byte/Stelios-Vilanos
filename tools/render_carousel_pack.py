@@ -65,31 +65,79 @@ def download(url,dst):
 def _clean(s): return re.sub('<[^>]+>','',html.unescape(s or '')).strip()
 
 def commons_fallback(query,dst):
-    # Commons search is brittle when natural-language prompts contain words such
-    # as "photograph". Try progressively simpler, still scene-specific variants
-    # before failing closed. This fixes transient zero-result searches without
-    # accepting generic or unlicensed media.
+    # Commons search can return zero results for natural-language prompts with
+    # generic media words. Try simpler but still scene-specific variants.
+    def simplify(q, words):
+        out=q
+        for word in words:
+            out=out.replace(' '+word,'').replace(word+' ','')
+        return ' '.join(out.split()).strip()
+
     variants=[]
     for q in (
         query,
-        re.sub(r'\\b(photograph|photo|picture|image)\\b','',query,flags=re.I),
-        re.sub(r'\\b(together|outdoors|portrait)\\b','',re.sub(r'\\b(photograph|photo|picture|image)\\b','',query,flags=re.I),flags=re.I),
+        simplify(query, ('photograph','photo','picture','image')),
+        simplify(query, ('photograph','photo','picture','image','together','outdoors','portrait')),
     ):
-        q=' '.join(q.split()).strip()
         if q and q not in variants:
             variants.append(q)
+
     last_error=None
     for search_query in variants:
         try:
-            params={'action':'query','format':'json','generator':'search','gsrsearch':search_query,'gsrnamespace':'6','gsrlimit':'40','prop':'imageinfo','iiprop':'url|size|extmetadata','iiurlwidth':'1600'}
+            params={
+                'action':'query','format':'json','generator':'search',
+                'gsrsearch':search_query,'gsrnamespace':'6','gsrlimit':'40',
+                'prop':'imageinfo','iiprop':'url|size|extmetadata','iiurlwidth':'1600'
+            }
             url='https://commons.wikimedia.org/w/api.php?'+urllib.parse.urlencode(params)
             req=urllib.request.Request(url,headers={'User-Agent':'SteliosPhotoCarousel/2.1'})
             with urllib.request.urlopen(req,timeout=90) as r:
                 payload=json.loads(r.read().decode('utf-8'))
             pages=list(payload.get('query',{}).get('pages',{}).values())
             for p in pages:
-                title=p.get('title',''); low=title.lower()
-                if any(x in low for x in _BAD) or not re.search(r'\\.(jpe?g|png)
+                title=p.get('title','')
+                low=title.lower()
+                if any(x in low for x in _BAD):
+                    continue
+                if not re.search(r'\.(jpe?g|png)$',title,re.I):
+                    continue
+                infos=p.get('imageinfo') or []
+                if not infos:
+                    continue
+                info=infos[0]
+                meta=info.get('extmetadata',{})
+                lic=(
+                    _clean(meta.get('LicenseShortName',{}).get('value',''))+
+                    ' '+
+                    _clean(meta.get('UsageTerms',{}).get('value',''))
+                ).lower()
+                if not any(x in lic for x in _ALLOWED_LICENSE):
+                    continue
+                if min(int(info.get('width') or 0),int(info.get('height') or 0))<600:
+                    continue
+                imgurl=info.get('thumburl') or info.get('url')
+                if not imgurl:
+                    continue
+                try:
+                    download(imgurl,dst)
+                    with Image.open(dst) as im:
+                        if min(im.size)<600:
+                            raise ValueError('fallback image too small')
+                    return {
+                        'source_url':imgurl,
+                        'source_credit':_clean(meta.get('Artist',{}).get('value','')),
+                        'license':_clean(meta.get('LicenseShortName',{}).get('value','')) or _clean(meta.get('UsageTerms',{}).get('value','')),
+                        'source_title':title,
+                        'search_query_used':search_query
+                    }
+                except Exception as exc:
+                    last_error=exc
+                    dst.unlink(missing_ok=True)
+        except Exception as exc:
+            last_error=exc
+    raise ValueError(f'no rights-cleared Commons fallback found for query: {query}; last={last_error}')
+
 def wrap(draw,text,font,width):
     lines=[]
     for para in text.split('\n'):
