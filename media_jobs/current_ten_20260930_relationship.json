@@ -16,51 +16,37 @@
         {
           "title": "ΠΟΥ ΕΙΣΑΙ; — 1/7",
           "text": "Μια απλή ερώτηση μπορεί να είναι ενδιαφέρον. Γίνεται έλεγχος όταν απαιτεί συνεχή αναφορά για κάθε κίνηση.",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_outdoors_(3).jpg?width=1600",
-          "source_credit": "National Cancer Institute / Bill Branson",
-          "license": "Public Domain"
+          "source_query": "couple talking outdoors photograph"
         },
         {
           "title": "ΤΟ ΚΙΝΗΤΟ — 2/7",
           "text": "Το να ζητά κάποιος κωδικούς, ιστορικό ή αποδείξεις επειδή «αν δεν κρύβεις κάτι, δεν έχεις λόγο να αρνείσαι» δεν είναι εμπιστοσύνη.",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Person_holding_smartphone_with_camera_app_open_while_sitting_outdoors_on_a_sunny_day%2C_focused_on_taking_a_picture_of_the_scene.jpg?width=1600",
-          "source_credit": "Shixart1985",
-          "license": "CC BY 2.0"
+          "source_query": "smartphone hand photograph"
         },
         {
           "title": "ΟΤΑΝ ΛΕΣ ΟΧΙ — 3/7",
           "text": "Ένα όριο φαίνεται καθαρά όταν μπορείς να πεις «δεν θέλω» χωρίς να ακολουθούν καβγάς, ενοχές ή τιμωρία.",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_arguing.png?width=1600",
-          "source_credit": "U3260357",
-          "license": "CC BY-SA 4.0"
+          "source_query": "couple disagreement photograph"
         },
         {
           "title": "ΦΙΛΟΙ ΚΑΙ ΧΡΟΝΟΣ — 4/7",
           "text": "Μια σχέση δεν χρειάζεται να εξαφανίσει φίλους, χόμπι ή χρόνο μόνος σου. Το «μαζί» δεν σημαίνει «μόνο μαζί».",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_outdoors_(4).jpg?width=1600",
-          "source_credit": "National Cancer Institute / Bill Branson",
-          "license": "Public Domain"
+          "source_query": "friends walking park photograph"
         },
         {
           "title": "Η ΔΙΑΦΟΡΑ — 5/7",
           "text": "Ενδιαφέρον είναι να ρωτάς και να ακούς. Έλεγχος είναι να απαιτείς, να παρακολουθείς ή να αποφασίζεις αντί για τον άλλον.",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_walking_in_park_(1).jpg?width=1600",
-          "source_credit": "National Cancer Institute",
-          "license": "Public Domain"
+          "source_query": "couple walking outdoors photograph"
         },
         {
           "title": "ΚΑΘΑΡΗ ΣΥΖΗΤΗΣΗ — 6/7",
           "text": "Τα όρια χρειάζονται συγκεκριμένες λέξεις: τι μας ενοχλεί, τι θεωρούμε ιδιωτικό και τι περιμένουμε ο ένας από τον άλλον.",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_outdoors_(5).jpg?width=1600",
-          "source_credit": "National Cancer Institute / Bill Branson",
-          "license": "Public Domain"
+          "source_query": "couple conversation cafe photograph"
         },
         {
           "title": "Η ΕΡΩΤΗΣΗ — 7/7",
           "text": "Σε μια σχέση νιώθεις ότι σε φροντίζουν ή ότι πρέπει συνεχώς να αποδεικνύεις πού είσαι και τι κάνεις;",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_walking_outdoors.jpg?width=1600",
-          "source_credit": "National Cancer Institute / Rhoda Baer",
-          "license": "Public Domain"
+          "source_query": "thoughtful person outdoors photograph"
         }
       ]
     }
