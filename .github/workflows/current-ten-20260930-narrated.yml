@@ -137,7 +137,15 @@ jobs:
           git -C "$MEDIA_OUT" add jobs/current-ten-20260930-narrated
           if ! git -C "$MEDIA_OUT" diff --cached --quiet; then
             git -C "$MEDIA_OUT" commit -m 'Build 30 Sep CURRENT_TEN narrated finals and QA'
-            git -C "$MEDIA_OUT" fetch origin media-output
-            git -C "$MEDIA_OUT" rebase FETCH_HEAD
-            git -C "$MEDIA_OUT" push origin HEAD:media-output
+            ok=0
+            for attempt in 1 2 3 4 5; do
+              git -C "$MEDIA_OUT" fetch origin media-output
+              git -C "$MEDIA_OUT" rebase FETCH_HEAD
+              if git -C "$MEDIA_OUT" push origin HEAD:media-output; then
+                ok=1
+                break
+              fi
+              sleep $((attempt * 3))
+            done
+            test "$ok" = 1
           fi
