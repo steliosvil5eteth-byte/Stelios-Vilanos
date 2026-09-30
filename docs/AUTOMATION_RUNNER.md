@@ -17,7 +17,7 @@ The active schedule contains ten required standing series:
 1. 07:00 — Relationships
 2. 09:00 — Survival
 3. 10:00 — Dog Bartender
-4. 11:00 — Zodiac
+4. 11:00 — Zodiac — **bundle of 6 separate member posts**, each comparing exactly 2 signs in 4 cards; all 12 signs appear exactly once per daily bundle
 5. 13:00 — Two-day trip in Greece
 6. 15:00 — Love / Soul / Relationship
 7. 17:00 — Strange real phenomenon
@@ -28,6 +28,8 @@ The active schedule contains ten required standing series:
 `CURRENT_FIVE_DAILY`, `PARTIAL_SCHEDULED`, old five-slot ledgers, archived manifests and old queue snapshots are **never completion evidence**. They may be read only for history/deduplication. If they conflict with `config/content_strategy.json`, the active strategy wins and publication stays fail-closed until reconciled.
 
 ## Mandatory 10-slot integrity barrier
+
+The ten standing series produce **15 physical member posts per network / 60 destinations per day**, because the single 11:00 Zodiac standing series contains six separate pair-comparison posts. A day with only one Zodiac carousel is incomplete.
 
 Before any day is considered ready:
 
