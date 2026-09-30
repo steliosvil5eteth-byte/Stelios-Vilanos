@@ -54,7 +54,7 @@
       "voice": "el-GR-NestorasNeural",
       "background_music": false,
       "photo_target": 10,
-      "scenes": 15,
+      "scenes": 10,
       "min_duration_seconds": 90,
       "max_duration_seconds": 120,
       "folklore_not_fact": true,
@@ -64,99 +64,30 @@
         "Library of Congress — 1906 Sleepy Hollow edition",
         "Smithsonian American Art Museum — John Quidor, The Headless Horseman Pursuing Ichabod Crane"
       ],
-      "visuals": [
-        {
-          "source": "Quidor — Headless Horseman Pursuing Ichabod Crane (1858)",
-          "direct_media_url": "https://commons.wikimedia.org/wiki/File:The_Headless_Horseman_Pursuing_Ichabod_Crane.jpg",
-          "source_page_url": "https://commons.wikimedia.org/wiki/File:The_Headless_Horseman_Pursuing_Ichabod_Crane.jpg",
-          "attribution": "John Quidor, 1858, public domain; Smithsonian American Art Museum/Wikimedia Commons.",
-          "license": "Public Domain",
-          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-          "visual_kind": "historical artwork"
-        },
-        {
-          "source": "Quidor — Ichabod Crane Flying from the Headless Horseman",
-          "direct_media_url": "https://commons.wikimedia.org/wiki/File:John_Quidor_-_Ichabod_Crane_Flying_from_the_Headless_Horseman_-_1948.68_-_Yale_University_Art_Gallery.jpg",
-          "source_page_url": "https://commons.wikimedia.org/wiki/File:John_Quidor_-_Ichabod_Crane_Flying_from_the_Headless_Horseman_-_1948.68_-_Yale_University_Art_Gallery.jpg",
-          "attribution": "John Quidor, public domain; Yale University Art Gallery/Wikimedia Commons.",
-          "license": "Public Domain",
-          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-          "visual_kind": "historical artwork"
-        },
-        {
-          "source": "Ichabod Crane and the Headless Horseman c.1855",
-          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Ichabod_crane_and_the_headless_horseman.PNG",
-          "source_page_url": "https://commons.wikimedia.org/wiki/File:Ichabod_crane_and_the_headless_horseman.PNG",
-          "attribution": "Anonymous/after William John Wilgus, public domain; NGA/Wikimedia Commons.",
-          "license": "Public Domain",
-          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-          "visual_kind": "historical artwork"
-        },
-        {
-          "source": "Darley Sleepy Hollow 1850 plate 1",
-          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Washington_Irving%27s_Illustrations_of_the_Legend_of_Sleepy_Hollow,_Designed_and_Etched_by_F.O.C._Darley_for_the_Members_of_the_American_Art_Union,_1850_MET_49H_126R5.jpg",
-          "source_page_url": "https://commons.wikimedia.org/wiki/File:Washington_Irving%27s_Illustrations_of_the_Legend_of_Sleepy_Hollow,_Designed_and_Etched_by_F.O.C._Darley_for_the_Members_of_the_American_Art_Union,_1850_MET_49H_126R5.jpg",
-          "attribution": "F.O.C. Darley, 1850, CC0; The Met/Wikimedia Commons.",
-          "license": "CC0",
-          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-          "visual_kind": "historical artwork"
-        },
-        {
-          "source": "Darley Sleepy Hollow plate 3",
-          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Washington_Irving%27s_Illustrations_of_the_Legend_of_Sleepy_Hollow,_Designed_and_Etched_by_F.O.C._Darley_for_the_Members_of_the_American_Art_Union,_1850_MET_MM89544.jpg",
-          "source_page_url": "https://commons.wikimedia.org/wiki/File:Washington_Irving%27s_Illustrations_of_the_Legend_of_Sleepy_Hollow,_Designed_and_Etched_by_F.O.C._Darley_for_the_Members_of_the_American_Art_Union,_1850_MET_MM89544.jpg",
-          "attribution": "F.O.C. Darley, 1850, CC0; The Met/Wikimedia Commons.",
-          "license": "CC0",
-          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-          "visual_kind": "historical artwork"
-        },
-        {
-          "source": "Darley Sleepy Hollow plate 4",
-          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Washington_Irving%27s_Illustrations_of_the_Legend_of_Sleepy_Hollow,_Designed_and_Etched_by_F.O.C._Darley_for_the_Members_of_the_American_Art_Union,_1850_MET_MM89545.jpg",
-          "source_page_url": "https://commons.wikimedia.org/wiki/File:Washington_Irving%27s_Illustrations_of_the_Legend_of_Sleepy_Hollow,_Designed_and_Etched_by_F.O.C._Darley_for_the_Members_of_the_American_Art_Union,_1850_MET_MM89545.jpg",
-          "attribution": "F.O.C. Darley, 1850, CC0; The Met/Wikimedia Commons.",
-          "license": "CC0",
-          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-          "visual_kind": "historical artwork"
-        },
-        {
-          "source": "Darley Sleepy Hollow plate 5",
-          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Washington_Irving%27s_Illustrations_of_the_Legend_of_Sleepy_Hollow,_Designed_and_Etched_by_F.O.C._Darley_for_the_Members_of_the_American_Art_Union,_1850_MET_MM89546.jpg",
-          "source_page_url": "https://commons.wikimedia.org/wiki/File:Washington_Irving%27s_Illustrations_of_the_Legend_of_Sleepy_Hollow,_Designed_and_Etched_by_F.O.C._Darley_for_the_Members_of_the_American_Art_Union,_1850_MET_MM89546.jpg",
-          "attribution": "F.O.C. Darley, 1850, CC0; The Met/Wikimedia Commons.",
-          "license": "CC0",
-          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-          "visual_kind": "historical artwork"
-        },
-        {
-          "source": "William Hart Sleepy Hollow 1864 p15",
-          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Sleepy_Hollow_(1864)_15.jpg",
-          "source_page_url": "https://commons.wikimedia.org/wiki/File:Sleepy_Hollow_(1864)_15.jpg",
-          "attribution": "William Hart, 1864, public domain; Wikimedia Commons.",
-          "license": "Public Domain",
-          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-          "visual_kind": "historical artwork"
-        },
-        {
-          "source": "Emanuel Leutze Sleepy Hollow 1864 p51",
-          "direct_media_url": "https://commons.wikimedia.org/wiki/File:Sleepy_Hollow_(1864)_51.jpg",
-          "source_page_url": "https://commons.wikimedia.org/wiki/File:Sleepy_Hollow_(1864)_51.jpg",
-          "attribution": "Emanuel Leutze, 1864, public domain; Wikimedia Commons.",
-          "license": "Public Domain",
-          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-          "visual_kind": "historical artwork"
-        },
-        {
-          "source": "Edward Hull — The Legend of Sleepy Hollow",
-          "direct_media_url": "https://commons.wikimedia.org/wiki/File:The_Legend_of_Sleepy_Hollow_by_E_Hull.jpg",
-          "source_page_url": "https://commons.wikimedia.org/wiki/File:The_Legend_of_Sleepy_Hollow_by_E_Hull.jpg",
-          "attribution": "Edward Hull, 19th century, public domain; Wikimedia Commons.",
-          "license": "Public Domain",
-          "license_url": "https://creativecommons.org/publicdomain/mark/1.0/",
-          "visual_kind": "historical artwork"
-        }
+      "script": "Ο θρύλος αρχίζει με μια εικόνα που δεν ξεχνιέται εύκολα: ένας καβαλάρης χωρίς κεφάλι, μέσα στη νύχτα, να καλπάζει πίσω από έναν μόνο άνθρωπο. Πρόκειται για αμερικανική λογοτεχνική και λαογραφική παράδοση, όχι για αποδεδειγμένο υπερφυσικό γεγονός. Στο «The Legend of Sleepy Hollow» του Washington Irving, που δημοσιεύτηκε το 1820, η ιστορία τοποθετείται γύρω στο 1790, κοντά στο Tarrytown της Νέας Υόρκης. Ο Ίκαμποντ Κρέιν είναι δάσκαλος, αλλά και άνθρωπος που επηρεάζεται εύκολα από ιστορίες φαντασμάτων. Οι κάτοικοι μιλούν για έναν Εσσιανό στρατιώτη που, σύμφωνα με τον θρύλο, έχασε το κεφάλι του από κανονόμπαλα στον Πόλεμο της Αμερικανικής Επανάστασης. Λένε ότι επιστρέφει τη νύχτα, αναζητώντας το χαμένο κεφάλι του. Ο Ίκαμποντ ενδιαφέρεται για την Κατρίνα Βαν Τάσελ, αλλά έχει αντίζηλο τον Brom Bones, γνωστό για τη δύναμη, την ιππασία και τις φάρσες του. Μετά από ένα βραδινό γλέντι γεμάτο ιστορίες για στοιχειωμένα μέρη, ο Ίκαμποντ φεύγει μόνος. Στον σκοτεινό δρόμο εμφανίζεται ένας τεράστιος καβαλάρης. Όταν το φως του ουρανού αποκαλύπτει τη μορφή του, ο Ίκαμποντ πιστεύει ότι βλέπει πως δεν έχει κεφάλι. Ακολουθεί καταδίωξη. Λίγο πριν χαθεί, ο καβαλάρης εκσφενδονίζει πάνω του αυτό που μοιάζει με το ίδιο του το κεφάλι. Την επόμενη μέρα ο δάσκαλος έχει εξαφανιστεί. Στον δρόμο βρίσκουν το καπέλο του και μια σπασμένη κολοκύθα. Όμως ο Irving αφήνει επίτηδες δεύτερη εξήγηση. Αργότερα κυκλοφορεί πληροφορία ότι ο Ίκαμποντ ζει αλλού, ενώ ο Brom γελά ιδιαίτερα κάθε φορά που ακούει για την κολοκύθα. Γι’ αυτό ο Ακέφαλος Καβαλάρης λειτουργεί τόσο καλά ως θρύλος: η ιστορία δεν αποδεικνύει ένα φάντασμα. Αφήνει τον υπερφυσικό φόβο και μια ανθρώπινη φάρσα να συνυπάρχουν μέχρι το τέλος. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "commons_queries": [
+        "Sleepy Hollow New York cemetery",
+        "Old Dutch Church Sleepy Hollow New York",
+        "Sleepy Hollow Cemetery New York",
+        "Washington Irving Sunnyside house",
+        "Philipsburg Manor Sleepy Hollow",
+        "Tarrytown New York Hudson River",
+        "Pocantico River Sleepy Hollow",
+        "Sleepy Hollow New York autumn forest",
+        "Sleepy Hollow road New York",
+        "Sleepy Hollow bridge New York",
+        "Washington Irving portrait photograph memorial",
+        "Sleepy Hollow New York village",
+        "Headless Horseman Bridge Sleepy Hollow",
+        "Sleepy Hollow New York church cemetery",
+        "Hudson Valley autumn road",
+        "Tarrytown New York historic house",
+        "Sleepy Hollow New York river",
+        "Westchester County New York autumn forest",
+        "Sunnyside Tarrytown Washington Irving",
+        "Sleepy Hollow cemetery gate"
       ],
-      "script": "Ο θρύλος αρχίζει με μια εικόνα που δεν ξεχνιέται εύκολα: ένας καβαλάρης χωρίς κεφάλι, μέσα στη νύχτα, να καλπάζει πίσω από έναν μόνο άνθρωπο. Πρόκειται για αμερικανική λογοτεχνική και λαογραφική παράδοση, όχι για αποδεδειγμένο υπερφυσικό γεγονός. Στο «The Legend of Sleepy Hollow» του Washington Irving, που δημοσιεύτηκε το 1820, η ιστορία τοποθετείται γύρω στο 1790, κοντά στο Tarrytown της Νέας Υόρκης. Ο Ίκαμποντ Κρέιν είναι δάσκαλος, αλλά και άνθρωπος που επηρεάζεται εύκολα από ιστορίες φαντασμάτων. Οι κάτοικοι μιλούν για έναν Εσσιανό στρατιώτη που, σύμφωνα με τον θρύλο, έχασε το κεφάλι του από κανονόμπαλα στον Πόλεμο της Αμερικανικής Επανάστασης. Λένε ότι επιστρέφει τη νύχτα, αναζητώντας το χαμένο κεφάλι του. Ο Ίκαμποντ ενδιαφέρεται για την Κατρίνα Βαν Τάσελ, αλλά έχει αντίζηλο τον Brom Bones, γνωστό για τη δύναμη, την ιππασία και τις φάρσες του. Μετά από ένα βραδινό γλέντι γεμάτο ιστορίες για στοιχειωμένα μέρη, ο Ίκαμποντ φεύγει μόνος. Στον σκοτεινό δρόμο εμφανίζεται ένας τεράστιος καβαλάρης. Όταν το φως του ουρανού αποκαλύπτει τη μορφή του, ο Ίκαμποντ πιστεύει ότι βλέπει πως δεν έχει κεφάλι. Ακολουθεί καταδίωξη. Λίγο πριν χαθεί, ο καβαλάρης εκσφενδονίζει πάνω του αυτό που μοιάζει με το ίδιο του το κεφάλι. Την επόμενη μέρα ο δάσκαλος έχει εξαφανιστεί. Στον δρόμο βρίσκουν το καπέλο του και μια σπασμένη κολοκύθα. Όμως ο Irving αφήνει επίτηδες δεύτερη εξήγηση. Αργότερα κυκλοφορεί πληροφορία ότι ο Ίκαμποντ ζει αλλού, ενώ ο Brom γελά ιδιαίτερα κάθε φορά που ακούει για την κολοκύθα. Γι’ αυτό ο Ακέφαλος Καβαλάρης λειτουργεί τόσο καλά ως θρύλος: η ιστορία δεν αποδεικνύει ένα φάντασμα. Αφήνει τον υπερφυσικό φόβο και μια ανθρώπινη φάρσα να συνυπάρχουν μέχρι το τέλος. Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      "visual_quality_rule": "photographic location/context images only; no drawings, paintings, engravings, cartoons or repeated images"
     },
     {
       "id": "current-ten-20260930-stones",
@@ -241,5 +172,5 @@
       "visual_quality_rule": "10 distinct rights-cleared photographic images, one per scene, no repeated scene images"
     }
   ],
-  "production_revision": "2026-09-30-recovery-expanded-query-pool-10-scenes"
+  "production_revision": "2026-09-30-legend-photo-only-repair"
 }
