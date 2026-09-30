@@ -1,5 +1,5 @@
 {
-  "version": 4,
+  "version": 5,
   "timezone": "Europe/Athens",
   "strategy_id": "CURRENT_TEN_DAILY_20260927",
   "program_label": "CURRENT_TEN_DAILY",
@@ -12,7 +12,7 @@
     "exclusive": true
   },
   "daily_target_logical_posts": 10,
-  "destination_target_per_day": 60,
+  "destination_target_per_day": 40,
   "slots": [
     {
       "time": "07:00",
@@ -35,12 +35,13 @@
     {
       "time": "11:00",
       "category": "zodiac",
-      "format": "six_native_pair_carousels",
       "zodiac_visual_required": true,
-      "member_posts": 6,
-      "cards_per_member_post": 4,
       "two_sign_comparison_required": true,
-      "all_12_signs_once": true
+      "all_12_signs_once": true,
+      "format": "single_pair_comparison_carousel",
+      "comparison_units": 6,
+      "logical_posts": 1,
+      "note": "One daily carousel upload. It contains six two-sign comparison units and covers all 12 signs exactly once. Exact card count follows the approved daily source pack and platform limits; never split into six separate uploads."
     },
     {
       "time": "13:00",
@@ -103,7 +104,7 @@
     "no_blank_text_only_generic_cartoon_or_repeated_visuals": true
   },
   "special_visual_rules": {
-    "zodiac": "Six separate daily member posts at the 11:00 zodiac series. Each member post compares exactly two signs in four cards; the daily bundle covers all twelve signs exactly once. Every sign card must visibly show that sign's own image/symbol/visual identity. Plain black/text-only cards or the obsolete single-sign six-card carousel are hard failures.",
+    "zodiac": "One daily zodiac carousel upload at 11:00. It must contain six two-sign comparison units covering all twelve signs exactly once. Every comparison must visibly identify both signs. Never split this standing series into six separate uploads; obsolete single-sign formats are hard failures.",
     "dog_bartender": "Exactly four cards. Same recurring photorealistic brown dog in every card, clearly functioning as bartender in a believable real bar. Different scene/composition per card. No cartoon/animation."
   },
   "qa": {
@@ -352,11 +353,13 @@
   "daily_target_standing_series": 10,
   "zodiac_bundle_policy": {
     "standing_series_count": 1,
-    "member_posts_per_day": 6,
-    "cards_per_member_post": 4,
-    "comparison": "two zodiac signs per member post",
-    "coverage": "all 12 signs exactly once per daily six-post bundle",
+    "logical_posts_per_day": 1,
+    "carousel_uploads_per_day": 1,
+    "comparison_units_per_carousel": 6,
+    "comparison": "two zodiac signs per comparison unit",
+    "coverage": "all 12 signs exactly once in the single daily carousel",
     "theme": "relationships",
-    "note": "The six member posts are the required output of the single 11:00 zodiac standing series. Never substitute the obsolete six-single-sign carousel."
+    "exact_card_count": "Follow the approved daily source pack and platform limits; no separate zodiac member uploads.",
+    "note": "The 11:00 zodiac standing series counts as exactly one of the ten daily posts."
   }
 }
