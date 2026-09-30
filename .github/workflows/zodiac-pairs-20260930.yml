@@ -47,7 +47,15 @@ jobs:
           git -C "$OUT" add jobs/zodiac-pairs-20260930
           if ! git -C "$OUT" diff --cached --quiet; then
             git -C "$OUT" commit -m 'Render six zodiac pair posts for 30 Sep'
-            git -C "$OUT" fetch origin media-output
-            git -C "$OUT" rebase FETCH_HEAD
-            git -C "$OUT" push origin HEAD:media-output
+            ok=0
+            for attempt in 1 2 3 4 5; do
+              git -C "$OUT" fetch origin media-output
+              git -C "$OUT" rebase FETCH_HEAD
+              if git -C "$OUT" push origin HEAD:media-output; then
+                ok=1
+                break
+              fi
+              sleep $((attempt * 3))
+            done
+            test "$ok" = 1
           fi
