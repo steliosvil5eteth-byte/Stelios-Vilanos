@@ -175,5 +175,7 @@
         }
       ]
     }
-  ]
+  ],
+  "render_revision": "2026-09-30-correct-pair-format-production-1",
+  "release_policy": "Render only. Six distinct pair posts; no Metricool write until every exact final passes direct visual QA and fresh deduplication."
 }
