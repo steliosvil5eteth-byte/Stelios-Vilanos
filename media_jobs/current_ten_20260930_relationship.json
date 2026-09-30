@@ -5,7 +5,7 @@
   "local_date": "2026-09-30",
   "active_metricool_brand_id": 7076410,
   "require_photographic_visuals": true,
-  "authorization_basis": "User requested maintaining the CURRENT_TEN_DAILY queue. Render only; publication remains gated by direct final visual QA and fresh deduplication.",
+  "authorization_basis": "CURRENT_TEN_DAILY repair after direct visual QA found repeated relationship visuals. Render only; publication remains gated by fresh direct visual review and live duplicate/history reconciliation.",
   "jobs": [
     {
       "id": "current-ten-20260930-relationships-control",
@@ -37,8 +37,8 @@
         {
           "title": "ΦΙΛΟΙ ΚΑΙ ΧΡΟΝΟΣ — 4/7",
           "text": "Μια σχέση δεν χρειάζεται να εξαφανίσει φίλους, χόμπι ή χρόνο μόνος σου. Το «μαζί» δεν σημαίνει «μόνο μαζί».",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Walking_in_Park.jpg?width=1600",
-          "source_credit": "Janesmith321",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Friends_group_picture.jpg?width=1600",
+          "source_credit": "Monikaa Baskar / Wikimedia Commons",
           "license": "CC0 1.0"
         },
         {
@@ -51,9 +51,9 @@
         {
           "title": "ΚΑΘΑΡΗ ΣΥΖΗΤΗΣΗ — 6/7",
           "text": "Τα όρια χρειάζονται συγκεκριμένες λέξεις: τι μας ενοχλεί, τι θεωρούμε ιδιωτικό και τι περιμένουμε ο ένας από τον άλλον.",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_talking_(32183069547).jpg?width=1600",
-          "source_credit": "Pedro Ribeiro Simões",
-          "license": "CC BY 2.0"
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_outdoors.jpg?width=1600",
+          "source_credit": "National Cancer Institute / Wikimedia Commons",
+          "license": "Public Domain"
         },
         {
           "title": "Η ΕΡΩΤΗΣΗ — 7/7",
@@ -65,5 +65,5 @@
       ]
     }
   ],
-  "render_revision": "2026-09-30-direct-qa-repair-3"
+  "render_revision": "2026-09-30-final-visual-dedup-repair-4"
 }
