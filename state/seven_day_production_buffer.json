@@ -387,7 +387,7 @@
       "media_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/9bd3bf6e2e772b5c37b5f91fe90b26ad3e42f9d2/jobs/five-20260930/zodiac-joy/zodiac-joy-youtube-short.mp4",
       "qa_path": "jobs/five-20260930/zodiac-joy/qa.json",
       "notion_page_id": "3e8f2345-b318-8162-95ac-ee5abdb45d15",
-      "blocker": "Obsolete six-single-sign carousel. Latest rule requires six separate two-sign four-card comparison posts covering all 12 signs. Existing Metricool rows are draft=true/autoPublish=false."
+      "blocker": "Obsolete six-single-sign carousel. Latest rule requires one zodiac carousel containing six two-sign comparison units covering all 12 signs exactly once. Existing Metricool rows are draft=true/autoPublish=false."
     },
     {
       "id": "2026-09-30-love_soul_relationship",
@@ -549,7 +549,7 @@
         ]
       ],
       "disclosure": "Συμβολικά πορτρέτα • Ψυχαγωγία • Εικόνες AI",
-      "blocker": "Legacy single-sign six-card script. Replace with six distinct pair-comparison member posts before rendering or scheduling.",
+      "blocker": "Legacy single-sign six-card script. Replace with one current-format zodiac carousel containing six pair-comparison units before rendering or scheduling.",
       "legacy_script_preserved_for_history": true
     },
     {
@@ -671,7 +671,7 @@
         ]
       ],
       "disclosure": "Συμβολικά πορτρέτα • Ψυχαγωγία • Εικόνες AI",
-      "blocker": "Legacy single-sign six-card script. Replace with six distinct pair-comparison member posts before rendering or scheduling.",
+      "blocker": "Legacy single-sign six-card script. Replace with one current-format zodiac carousel containing six pair-comparison units before rendering or scheduling.",
       "legacy_script_preserved_for_history": true
     },
     {
@@ -793,7 +793,7 @@
         ]
       ],
       "disclosure": "Συμβολικά πορτρέτα • Ψυχαγωγία • Εικόνες AI",
-      "blocker": "Legacy single-sign six-card script. Replace with six distinct pair-comparison member posts before rendering or scheduling.",
+      "blocker": "Legacy single-sign six-card script. Replace with one current-format zodiac carousel containing six pair-comparison units before rendering or scheduling.",
       "legacy_script_preserved_for_history": true
     },
     {
@@ -915,7 +915,7 @@
         ]
       ],
       "disclosure": "Συμβολικά πορτρέτα • Ψυχαγωγία • Εικόνες AI",
-      "blocker": "Legacy single-sign six-card script. Replace with six distinct pair-comparison member posts before rendering or scheduling.",
+      "blocker": "Legacy single-sign six-card script. Replace with one current-format zodiac carousel containing six pair-comparison units before rendering or scheduling.",
       "legacy_script_preserved_for_history": true
     },
     {
@@ -1102,4 +1102,4 @@
       "do_not_schedule_placeholders": true
     }
   }
-}
+}\n
