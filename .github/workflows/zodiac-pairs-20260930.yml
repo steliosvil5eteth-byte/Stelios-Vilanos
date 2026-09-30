@@ -1,0 +1,53 @@
+name: Zodiac pairs 20260930 production
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'media_jobs/zodiac_pairs_20260930.json'
+      - '.github/workflows/zodiac-pairs-20260930.yml'
+      - 'tools/render_carousel_pack.py'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: zodiac-pairs-20260930
+  cancel-in-progress: false
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install media dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg python3-pil fonts-dejavu-core
+      - name: Render six zodiac pair posts
+        run: |
+          set -euo pipefail
+          python3 tools/render_carousel_pack.py --manifest media_jobs/zodiac_pairs_20260930.json --output "$RUNNER_TEMP/rendered"
+          ROOT=$(find "$RUNNER_TEMP/rendered" -mindepth 1 -maxdepth 1 -type d | head -1)
+          test -n "$ROOT"
+          echo "FINAL_ROOT=$ROOT" >> "$GITHUB_ENV"
+      - name: Save exact finals to media-output
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/media-output-repo"
+          git fetch origin media-output --depth=1
+          git worktree add -b zodiac-pairs-30-output "$OUT" FETCH_HEAD
+          DEST="$OUT/jobs/zodiac-pairs-20260930"
+          rm -rf "$DEST"; mkdir -p "$DEST"
+          cp -a "$FINAL_ROOT"/. "$DEST"/
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/zodiac-pairs-20260930
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Render six zodiac pair posts for 30 Sep'
+            git -C "$OUT" fetch origin media-output
+            git -C "$OUT" rebase FETCH_HEAD
+            git -C "$OUT" push origin HEAD:media-output
+          fi
