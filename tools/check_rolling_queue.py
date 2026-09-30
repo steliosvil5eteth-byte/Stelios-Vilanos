@@ -31,7 +31,7 @@ def audit(posts,today,slots,physical,destinations,days=3):
     report={"today":today.isoformat(),"timezone":"Europe/Athens","minimum_days":2,
             "target_days":3,"consecutive_complete_days":0,
             "required_standing_series":10,
-            "required_physical_member_posts":physical,
+            "required_logical_posts":physical,
             "required_destinations":destinations,
             "days":[]}
     consecutive=True
@@ -40,7 +40,7 @@ def audit(posts,today,slots,physical,destinations,days=3):
         row={"date":day,"complete":True,"standing_series":[],"destination_count":0}
         for spec in slots:
             slot=str(spec["time"]); category=str(spec["category"])
-            expected=int(spec.get("member_posts",1))
+            expected=1
             stamp=day+"T"+slot+":00"
             matches=[p for p in posts
                      if p.get("publicationDate",{}).get("dateTime")==stamp
@@ -65,7 +65,7 @@ def audit(posts,today,slots,physical,destinations,days=3):
             row["complete"] &= good
             row["standing_series"].append({
                 "time":slot,"category":category,
-                "expected_member_posts":expected,
+                "expected_logical_posts":expected,
                 "complete":good,
                 "post_ids":[p.get("id") for p in matches],
                 "network_counts":network_counts,
@@ -78,7 +78,7 @@ def audit(posts,today,slots,physical,destinations,days=3):
         if consecutive: report["consecutive_complete_days"]+=1
     report["minimum_met"]=report["consecutive_complete_days"]>=2
     report["target_met"]=report["consecutive_complete_days"]>=3
-    report["note"]="Queue coverage only. Zodiac requires six member posts (24 destinations) inside the single 11:00 standing series. Exact pair coverage, final visual QA, dedupe and provider/public reconciliation remain separate hard gates."
+    report["note"]="Queue coverage only. Zodiac is one carousel upload (4 destinations) containing six two-sign comparison units covering all 12 signs exactly once. Exact pair coverage, final visual QA, dedupe and provider/public reconciliation remain separate hard gates."
     return report
 
 if __name__=="__main__":
