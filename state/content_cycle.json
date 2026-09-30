@@ -1,5 +1,5 @@
 {
-  "version": 5,
+  "version": 6,
   "timezone": "Europe/Athens",
   "program_label": "CURRENT_TEN_DAILY",
   "current_strategy": "CURRENT_TEN_DAILY_20260927",
@@ -40,11 +40,11 @@
   "quality_first_catch_up": true,
   "preserve_history_for_dedupe": true,
   "legacy_recovery_enabled": false,
-  "rule": "Only brand 7076410. Completion requires 10 standing series, 15 physical/member posts per network and 60 provider destinations. Zodiac contributes six pair-comparison member posts. Full QA and fresh dedupe required. Preserve published history. Never backdate.",
+  "rule": "Only brand 7076410. Completion requires exactly 10 baseline uploads per network and 40 provider destinations. Zodiac contributes one carousel upload containing six two-sign comparison units covering all 12 signs exactly once. Full QA and fresh dedupe required. Preserve published history. Never backdate.",
   "paused_categories": [],
   "full_ten_daily_effective_date": "2026-09-28",
-  "target_count_semantics": "standing_series",
-  "target_member_post_count_per_network": 15,
-  "target_provider_destinations": 60,
+  "target_count_semantics": "logical_posts",
+  "target_member_post_count_per_network": 10,
+  "target_provider_destinations": 40,
   "completed_member_post_count_per_network": 0
-}
+}\n
