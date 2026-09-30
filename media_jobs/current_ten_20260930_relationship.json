@@ -5,7 +5,7 @@
   "local_date": "2026-09-30",
   "active_metricool_brand_id": 7076410,
   "require_photographic_visuals": true,
-  "authorization_basis": "CURRENT_TEN_DAILY repair after direct visual QA found repeated relationship visuals. Render only; publication remains gated by fresh direct visual review and live duplicate/history reconciliation.",
+  "authorization_basis": "CURRENT_TEN_DAILY repair after direct visual QA found repeated relationship visuals. Slide 4 replaced with CC0 friends photo and slide 6 with a distinct NCI public-domain conversation photo; publication remains gated by fresh direct visual review and live duplicate/history reconciliation.",
   "jobs": [
     {
       "id": "current-ten-20260930-relationships-control",
@@ -51,8 +51,8 @@
         {
           "title": "ΚΑΘΑΡΗ ΣΥΖΗΤΗΣΗ — 6/7",
           "text": "Τα όρια χρειάζονται συγκεκριμένες λέξεις: τι μας ενοχλεί, τι θεωρούμε ιδιωτικό και τι περιμένουμε ο ένας από τον άλλον.",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_outdoors.jpg?width=1600",
-          "source_credit": "National Cancer Institute / Wikimedia Commons",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_enjoying_a_conversation_outdoors.jpg?width=1600",
+          "source_credit": "Rhoda Baer / National Cancer Institute / Wikimedia Commons",
           "license": "Public Domain"
         },
         {
@@ -65,5 +65,5 @@
       ]
     }
   ],
-  "render_revision": "2026-09-30-final-visual-dedup-repair-4"
+  "render_revision": "2026-09-30-final-visual-dedup-repair-5"
 }
