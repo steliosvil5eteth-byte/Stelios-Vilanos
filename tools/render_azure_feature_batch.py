@@ -74,6 +74,8 @@ def commons_search(queries, outdir:Path, target:int):
             infos=p.get('imageinfo') or []
             if not infos: continue
             info=infos[0]; meta=info.get('extmetadata',{})
+            descriptive=' '.join([clean_html(meta.get('Artist',{}).get('value','')), clean_html(meta.get('Credit',{}).get('value','')), clean_html(meta.get('ImageDescription',{}).get('value',''))]).lower()
+            if any(x in descriptive for x in ('print made','engraving','lithograph','watercolor','watercolour','painting','illustration','postcard')): continue
             lic=clean_html(meta.get('LicenseShortName',{}).get('value',''))
             usage=clean_html(meta.get('UsageTerms',{}).get('value',''))
             combo=(lic+' '+usage).lower()
