@@ -16,7 +16,7 @@
         {
           "title": "ΠΟΥ ΕΙΣΑΙ; — 1/7",
           "text": "Μια απλή ερώτηση μπορεί να είναι ενδιαφέρον. Γίνεται έλεγχος όταν απαιτεί συνεχή αναφορά για κάθε κίνηση.",
-          "source_query": "couple talking outdoors photograph"
+          "source_query": "couple talking together on park bench photograph"
         },
         {
           "title": "ΤΟ ΚΙΝΗΤΟ — 2/7",
@@ -31,7 +31,7 @@
         {
           "title": "ΦΙΛΟΙ ΚΑΙ ΧΡΟΝΟΣ — 4/7",
           "text": "Μια σχέση δεν χρειάζεται να εξαφανίσει φίλους, χόμπι ή χρόνο μόνος σου. Το «μαζί» δεν σημαίνει «μόνο μαζί».",
-          "source_query": "friends walking park photograph"
+          "source_query": "group of friends walking together outdoors park photograph"
         },
         {
           "title": "Η ΔΙΑΦΟΡΑ — 5/7",
@@ -41,7 +41,7 @@
         {
           "title": "ΚΑΘΑΡΗ ΣΥΖΗΤΗΣΗ — 6/7",
           "text": "Τα όρια χρειάζονται συγκεκριμένες λέξεις: τι μας ενοχλεί, τι θεωρούμε ιδιωτικό και τι περιμένουμε ο ένας από τον άλλον.",
-          "source_query": "couple conversation cafe photograph"
+          "source_query": "two adults talking at cafe table photograph"
         },
         {
           "title": "Η ΕΡΩΤΗΣΗ — 7/7",
@@ -50,5 +50,6 @@
         }
       ]
     }
-  ]
+  ],
+  "render_revision": "2026-09-30-direct-qa-repair-1"
 }
