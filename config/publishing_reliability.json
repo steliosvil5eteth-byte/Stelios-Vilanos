@@ -1,6 +1,6 @@
 {
-  "version": 19,
-  "updated_on": "2026-09-27",
+  "version": 20,
+  "updated_on": "2026-09-30",
   "timezone": "Europe/Athens",
   "strategy_id": "CURRENT_TEN_DAILY_20260927",
   "program_label": "CURRENT_TEN_DAILY",
@@ -133,5 +133,19 @@
     "documented_experiments",
     "myth_or_truth",
     "international_legend"
-  ]
+  ],
+  "ten_slot_integrity_gate": {
+    "active": true,
+    "require_exactly_ten_active_slots": true,
+    "legacy_partial_states_never_count_as_complete": [
+      "CURRENT_FIVE_DAILY",
+      "PARTIAL_SCHEDULED",
+      "five-slot ledgers",
+      "archived manifests",
+      "old queue snapshots"
+    ],
+    "completion_rule": "A day is complete only when all 10 active CURRENT_TEN_DAILY slots have current-format final media, PASSED_FINAL_REVIEW and successful live Metricool readback.",
+    "missing_or_blocked_slot": "FAIL_CLOSED",
+    "independent_second_check_local_time": "06:30"
+  }
 }
