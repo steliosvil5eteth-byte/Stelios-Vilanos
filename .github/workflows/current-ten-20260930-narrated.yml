@@ -49,7 +49,7 @@ jobs:
           cp "$MEDIA_OUT/jobs/features-20260926/experiment-milgram-20260926-2130/experiment-milgram-20260926-2130.mp4"              "$RUNNER_TEMP/final/current-ten-20260930-milgram/current-ten-20260930-milgram.mp4"
           cp "$MEDIA_OUT/jobs/features-20260926/experiment-milgram-20260926-2130/qa.json"              "$RUNNER_TEMP/final/current-ten-20260930-milgram/source-qa.json"
 
-      - name: Render fresh Pelion and Headless Horseman finals
+      - name: Render fresh missing CURRENT_TEN narrated finals
         env:
           AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
           AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
@@ -57,6 +57,8 @@ jobs:
           set -euo pipefail
           python3 tools/render_azure_feature_batch.py             --manifest media_jobs/current_ten_20260930_narrated.json             --output "$RUNNER_TEMP/new"
           cp -a "$RUNNER_TEMP/new/current-ten-20260930-travel-pelion" "$RUNNER_TEMP/final/"
+          cp -a "$RUNNER_TEMP/new/current-ten-20260930-stones" "$RUNNER_TEMP/final/"
+          cp -a "$RUNNER_TEMP/new/current-ten-20260930-bystander" "$RUNNER_TEMP/final/"
           cp -a "$RUNNER_TEMP/new/current-ten-20260930-legend-headless-horseman" "$RUNNER_TEMP/final/"
 
       - name: Validate exact final videos and build contact sheets
@@ -70,6 +72,8 @@ jobs:
           root=Path('/home/runner/work/_temp/final')
           jobs={
             'current-ten-20260930-travel-pelion': {'min':80,'max':150},
+            'current-ten-20260930-stones': {'min':80,'max':150},
+            'current-ten-20260930-bystander': {'min':80,'max':150},
             'current-ten-20260930-milky-seas': {'min':90,'max':120},
             'current-ten-20260930-milgram': {'min':80,'max':170},
             'current-ten-20260930-legend-headless-horseman': {'min':90,'max':120},
