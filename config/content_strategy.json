@@ -12,7 +12,7 @@
     "exclusive": true
   },
   "daily_target_logical_posts": 10,
-  "destination_target_per_day": 40,
+  "destination_target_per_day": 60,
   "slots": [
     {
       "time": "07:00",
@@ -35,9 +35,12 @@
     {
       "time": "11:00",
       "category": "zodiac",
-      "format": "carousel",
-      "cards": 6,
-      "zodiac_visual_required": true
+      "format": "six_native_pair_carousels",
+      "zodiac_visual_required": true,
+      "member_posts": 6,
+      "cards_per_member_post": 4,
+      "two_sign_comparison_required": true,
+      "all_12_signs_once": true
     },
     {
       "time": "13:00",
@@ -100,7 +103,7 @@
     "no_blank_text_only_generic_cartoon_or_repeated_visuals": true
   },
   "special_visual_rules": {
-    "zodiac": "Every zodiac card must visibly show that sign's own image/symbol/visual identity. A plain black panel or text-only card is a hard failure.",
+    "zodiac": "Six separate daily member posts at the 11:00 zodiac series. Each member post compares exactly two signs in four cards; the daily bundle covers all twelve signs exactly once. Every sign card must visibly show that sign's own image/symbol/visual identity. Plain black/text-only cards or the obsolete single-sign six-card carousel are hard failures.",
     "dog_bartender": "Exactly four cards. Same recurring photorealistic brown dog in every card, clearly functioning as bartender in a believable real bar. Different scene/composition per card. No cartoon/animation."
   },
   "qa": {
@@ -112,7 +115,9 @@
     "require_platform_format_check": true,
     "require_ai_disclosure_when_applicable": true,
     "release_status": "PASSED_FINAL_REVIEW",
-    "fail_closed": true
+    "fail_closed": true,
+    "require_photographic_or_photorealistic_visuals": true,
+    "archival_illustrations_allowed": false
   },
   "duplicate_policy": {
     "sources": [
@@ -343,5 +348,15 @@
     "activated_on": "2026-09-27",
     "full_ten_daily_effective_date": "2026-09-28",
     "rule": "Preserve every verified 27/09 published/scheduled item. Do not backdate newly reactivated series. From 28/09 onward CURRENT_TEN_DAILY is the sole active schedule."
+  },
+  "daily_target_standing_series": 10,
+  "zodiac_bundle_policy": {
+    "standing_series_count": 1,
+    "member_posts_per_day": 6,
+    "cards_per_member_post": 4,
+    "comparison": "two zodiac signs per member post",
+    "coverage": "all 12 signs exactly once per daily six-post bundle",
+    "theme": "relationships",
+    "note": "The six member posts are the required output of the single 11:00 zodiac standing series. Never substitute the obsolete six-single-sign carousel."
   }
 }
