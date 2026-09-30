@@ -24,9 +24,21 @@ def probe_duration(path:Path)->float:
 
 def clean_html(s): return re.sub('<[^>]+>','',html.unescape(s or '')).strip()
 
+def _dhash_image(path:Path):
+    with Image.open(path) as im:
+        im=im.convert('L').resize((9,8),Image.Resampling.LANCZOS)
+        px=list(im.getdata())
+    bits=0
+    for y in range(8):
+        for x in range(8):
+            bits=(bits<<1) | int(px[y*9+x] > px[y*9+x+1])
+    return bits
+
+def _hamming(a,b): return (a^b).bit_count()
+
 def commons_search(queries, outdir:Path, target:int):
     sess=requests.Session(); sess.headers.update({'User-Agent':UA})
-    seen=set(); records=[]
+    seen=set(); records=[]; hashes=[]
     for q in queries:
         if len(records)>=target: break
         params={'action':'query','format':'json','generator':'search','gsrsearch':q,'gsrnamespace':6,'gsrlimit':25,'prop':'imageinfo','iiprop':'url|size|extmetadata','iiurlwidth':1800}
@@ -52,8 +64,9 @@ def commons_search(queries, outdir:Path, target:int):
             continue
         pages=list(payload.get('query',{}).get('pages',{}).values())
         time.sleep(0.6)
+        added_for_query=False
         for p in pages:
-            if len(records)>=target: break
+            if len(records)>=target or added_for_query: break
             title=p.get('title','')
             low=title.lower()
             if any(x in low for x in BAD_TITLE) or title in seen: continue
@@ -85,7 +98,10 @@ def commons_search(queries, outdir:Path, target:int):
                     time.sleep(2*(attempt+1))
             if not ok:
                 dest.unlink(missing_ok=True); continue
-            seen.add(title)
+            ph=_dhash_image(dest)
+            if any(_hamming(ph,old)<10 for old in hashes):
+                dest.unlink(missing_ok=True); continue
+            seen.add(title); hashes.append(ph); added_for_query=True
             records.append({'file':title[5:] if title.startswith('File:') else title,'artist':clean_html(meta.get('Artist',{}).get('value','')),'credit':clean_html(meta.get('Credit',{}).get('value','')),'license':lic or usage,'source_page':'https://commons.wikimedia.org/wiki/'+requests.utils.quote(title.replace(' ','_'),safe=':()_,.-'),'download_url':url})
     if len(records)<target:
         raise RuntimeError(f'Only {len(records)} rights-cleared photographic images found; need {target}')
