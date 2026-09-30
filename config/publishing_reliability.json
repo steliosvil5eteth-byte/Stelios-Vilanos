@@ -23,7 +23,7 @@
     "20:00",
     "22:00"
   ],
-  "daily_logical_target_per_network": 10,
+  "daily_logical_target_per_network": 15,
   "daily_destination_target": 60,
   "final_render_qa_gate": {
     "active": true,
@@ -80,11 +80,11 @@
     },
     "zodiac": {
       "standing_series_count": 1,
-      "member_posts": 6,
+      "member_posts_per_day": 6,
       "cards_per_member_post": 4,
-      "two_sign_comparison_required": true,
-      "all_12_signs_once_per_daily_bundle": true,
-      "each_sign_must_show_its_zodiac_visual": true,
+      "two_signs_per_member_post": true,
+      "all_12_signs_exactly_once": true,
+      "theme": "relationships",
       "obsolete_single_sign_six_card_carousel": "BLOCK"
     },
     "dog_bartender": {
@@ -156,7 +156,9 @@
     ],
     "completion_rule": "A day is complete only when all 10 active CURRENT_TEN_DAILY slots have current-format final media, PASSED_FINAL_REVIEW and successful live Metricool readback.",
     "missing_or_blocked_slot": "FAIL_CLOSED",
-    "independent_second_check_local_time": "06:30"
+    "independent_second_check_local_time": "06:30",
+    "expected_physical_member_posts_per_day": 15,
+    "expected_destinations_per_day": 60
   },
   "daily_standing_series_target": 10
 }
