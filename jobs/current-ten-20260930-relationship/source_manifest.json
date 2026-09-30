@@ -5,7 +5,7 @@
   "local_date": "2026-09-30",
   "active_metricool_brand_id": 7076410,
   "require_photographic_visuals": true,
-  "authorization_basis": "User requested maintaining the CURRENT_TEN_DAILY queue. Render only; publication remains gated by direct final visual QA and fresh deduplication.",
+  "authorization_basis": "CURRENT_TEN_DAILY repair after direct visual QA found repeated relationship visuals. Slide 4 replaced with CC0 friends photo and slide 6 with a distinct NCI public-domain conversation photo; publication remains gated by fresh direct visual review and live duplicate/history reconciliation.",
   "jobs": [
     {
       "id": "current-ten-20260930-relationships-control",
@@ -37,9 +37,9 @@
         {
           "title": "ΦΙΛΟΙ ΚΑΙ ΧΡΟΝΟΣ — 4/7",
           "text": "Μια σχέση δεν χρειάζεται να εξαφανίσει φίλους, χόμπι ή χρόνο μόνος σου. Το «μαζί» δεν σημαίνει «μόνο μαζί».",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_outdoors_(4).jpg?width=1600",
-          "source_credit": "National Cancer Institute / Bill Branson",
-          "license": "Public Domain"
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Friends_group_picture.jpg?width=1600",
+          "source_credit": "Monikaa Baskar",
+          "license": "CC0 1.0"
         },
         {
           "title": "Η ΔΙΑΦΟΡΑ — 5/7",
@@ -51,8 +51,8 @@
         {
           "title": "ΚΑΘΑΡΗ ΣΥΖΗΤΗΣΗ — 6/7",
           "text": "Τα όρια χρειάζονται συγκεκριμένες λέξεις: τι μας ενοχλεί, τι θεωρούμε ιδιωτικό και τι περιμένουμε ο ένας από τον άλλον.",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_outdoors_(5).jpg?width=1600",
-          "source_credit": "National Cancer Institute / Bill Branson",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_enjoying_a_conversation_outdoors.jpg?width=1600",
+          "source_credit": "National Cancer Institute / Rhoda Baer",
           "license": "Public Domain"
         },
         {
@@ -64,5 +64,6 @@
         }
       ]
     }
-  ]
+  ],
+  "render_revision": "2026-09-30-final-visual-dedup-repair-5"
 }

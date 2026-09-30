@@ -34,7 +34,7 @@
       "start_time": "0.000000",
       "duration_ts": 448000,
       "duration": "35.000000",
-      "bit_rate": "249385",
+      "bit_rate": "243857",
       "bits_per_raw_sample": "8",
       "nb_frames": "875",
       "extradata_size": 50,
@@ -118,15 +118,15 @@
     }
   ],
   "format": {
-    "filename": "/home/runner/work/_temp/rendered/5d6460aa8773be19/current-ten-20260930-relationships-control.mp4",
+    "filename": "/home/runner/work/_temp/rendered/6258423521ef761f/current-ten-20260930-relationships-control.mp4",
     "nb_streams": 2,
     "nb_programs": 0,
     "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
     "format_long_name": "QuickTime / MOV",
     "start_time": "0.000000",
     "duration": "35.000000",
-    "size": "1289882",
-    "bit_rate": "294830",
+    "size": "1265697",
+    "bit_rate": "289302",
     "probe_score": 100,
     "tags": {
       "major_brand": "isom",

@@ -1,6 +1,6 @@
 {
-  "batch_id": "5d6460aa8773be19",
-  "batch_sha256": "5d6460aa8773be19de7fc07ce0df66bea0f8bf9efae9eb2f771e611e9eedbdea",
+  "batch_id": "6258423521ef761f",
+  "batch_sha256": "6258423521ef761f35e41c63dcbd3c4b224387d676685765f67029bd9e4a2809",
   "paid_ai_credits_used": 0,
   "photographic_visuals_required": true,
   "jobs": [
@@ -37,9 +37,9 @@
           "license": "CC BY-SA 4.0"
         },
         {
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_outdoors_(4).jpg?width=1600",
-          "source_credit": "National Cancer Institute / Bill Branson",
-          "license": "Public Domain"
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Friends_group_picture.jpg?width=1600",
+          "source_credit": "Monikaa Baskar",
+          "license": "CC0 1.0"
         },
         {
           "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_walking_in_park_(1).jpg?width=1600",
@@ -47,8 +47,8 @@
           "license": "Public Domain"
         },
         {
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_outdoors_(5).jpg?width=1600",
-          "source_credit": "National Cancer Institute / Bill Branson",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple_enjoying_a_conversation_outdoors.jpg?width=1600",
+          "source_credit": "National Cancer Institute / Rhoda Baer",
           "license": "Public Domain"
         },
         {
@@ -70,13 +70,13 @@
         },
         {
           "name": "current-ten-20260930-relationships-control-03.jpg",
-          "bytes": 298012,
-          "sha256": "5d7f33bddc099fef0a78a92972347f46d0895a4228169bb7960e8c49e1e59995"
+          "bytes": 282233,
+          "sha256": "66e4005eb8a5eaa629991987a00da4873db38fec6e8095a3339ded46efddba42"
         },
         {
           "name": "current-ten-20260930-relationships-control-04.jpg",
-          "bytes": 398303,
-          "sha256": "06de9794f751f55253521c6c35444c5d5a4a2c03e03e9a1f3a31dbff11badbf2"
+          "bytes": 328387,
+          "sha256": "92b1e02a71e22bcf78b50db2b9791ead9098837abc71778b001bcd4a80b77b83"
         },
         {
           "name": "current-ten-20260930-relationships-control-05.jpg",
@@ -85,8 +85,8 @@
         },
         {
           "name": "current-ten-20260930-relationships-control-06.jpg",
-          "bytes": 359277,
-          "sha256": "856286e050da708dc2d043f76f7ed36bc228c236a2102610b67d9b05ceaec017"
+          "bytes": 363025,
+          "sha256": "02c90710862cee018a0140379fc6d71a2c1786eb2a26454086e948ff371c14f0"
         },
         {
           "name": "current-ten-20260930-relationships-control-07.jpg",
@@ -95,8 +95,8 @@
         },
         {
           "name": "current-ten-20260930-relationships-control.mp4",
-          "bytes": 1289882,
-          "sha256": "c8cf1dd427096ded550507a80bc3973481e4f3255990ce72369efa5ac3f3f92a"
+          "bytes": 1265697,
+          "sha256": "a59fa2a48c2ed9b58dbcd0894498504e25cc671ef26c92df7523f0b8086eb20d"
         }
       ]
     }
