@@ -1,0 +1,77 @@
+name: Current Ten 20261001 dog bartender Canva repair
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'media_jobs/current_ten_20261001_dog_bartender.json'
+      - '.github/workflows/current-ten-20261001-dog-canva.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: current-ten-20261001-dog-canva
+  cancel-in-progress: true
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg python3-pil fonts-dejavu-core
+      - name: Render exact final cards and YouTube slideshow
+        run: |
+          set -euo pipefail
+          python3 tools/render_carousel_pack.py --manifest media_jobs/current_ten_20261001_dog_bartender.json --output "$RUNNER_TEMP/rendered"
+          ROOT=$(find "$RUNNER_TEMP/rendered" -mindepth 1 -maxdepth 1 -type d | head -1)
+          echo "FINAL_ROOT=$ROOT" >> "$GITHUB_ENV"
+      - name: Build exact-final review sheets
+        run: |
+          python3 - <<'PY'
+          import os, json, math, subprocess
+          from pathlib import Path
+          from PIL import Image,ImageOps
+          root=Path(os.environ['FINAL_ROOT']); qa=root/'qa'; qa.mkdir(exist_ok=True)
+          m=json.loads((root/'source_manifest.json').read_text())
+          for job in m['jobs']:
+              jid=job['id']; n=job['expected_cards']
+              cards=[root/f"{jid}-{i:02}.jpg" for i in range(1,n+1)]
+              if not all(p.exists() for p in cards): raise SystemExit('missing exact final cards')
+              c=Image.new('RGB',(1080,1080),(20,20,20))
+              for i,p in enumerate(cards):
+                  with Image.open(p).convert('RGB') as im:
+                      c.paste(ImageOps.fit(im,(540,540)),((i%2)*540,(i//2)*540))
+              c.save(qa/f'{jid}-cards.jpg',quality=94)
+              v=root/f'{jid}.mp4'
+              probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(v)]))
+              if not any(s.get('codec_type')=='audio' for s in probe['streams']): raise SystemExit('YouTube slideshow missing instrumental audio')
+              dur=float(probe['format']['duration'])
+              frames=[]
+              for k,x in enumerate((.12,.37,.62,.87),1):
+                  p=qa/f'{jid}-yt-{k}.jpg'
+                  subprocess.run(['ffmpeg','-y','-loglevel','error','-ss',f'{dur*x:.3f}','-i',str(v),'-frames:v','1','-q:v','2',str(p)],check=True)
+                  frames.append(p)
+              y=Image.new('RGB',(540*4,960),(20,20,20))
+              for i,p in enumerate(frames):
+                  with Image.open(p).convert('RGB') as im: y.paste(ImageOps.fit(im,(540,960)),(i*540,0))
+              y.save(qa/f'{jid}-youtube.jpg',quality=94)
+          (qa/'release-gate.txt').write_text('PENDING_DIRECT_VISUAL_REVIEW\n')
+          PY
+      - name: Save repaired finals to media-output
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/out"
+          git fetch origin media-output --depth=1
+          git worktree add -b cten1001dogcanva "$OUT" FETCH_HEAD
+          DEST="$OUT/jobs/current-ten-20261001-dog-canva"
+          rm -rf "$DEST"; mkdir -p "$DEST"; cp -a "$FINAL_ROOT"/. "$DEST"/
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/current-ten-20261001-dog-canva
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Render repaired 01 Oct dog bartender exact finals'
+            git -C "$OUT" fetch origin media-output
+            git -C "$OUT" rebase FETCH_HEAD
+            git -C "$OUT" push origin HEAD:media-output
+          fi
