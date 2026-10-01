@@ -1,357 +1,219 @@
 {
   "approved": true,
   "paid_generation_allowed": false,
-  "strategy_id": "CURRENT_TEN_DAILY",
-  "local_date": "2026-09-25",
+  "strategy_id": "CURRENT_TEN_DAILY_20260927",
+  "local_date": "2026-10-01",
+  "active_metricool_brand_id": 7076410,
   "require_photographic_visuals": true,
-  "authorization_basis": "Current user authorization; render only. Social publishing remains separately gated by final QA.",
-  "purpose": "FINAL 25 Sep CURRENT_TEN_DAILY render. Zodiac cards use explicit scene-relevant motifs for each sign (scales, scorpion, archer, goat, water bearer, two koi fish), with exact Greek copy and zodiac glyph. Dog Bartender uses the same recurring golden/honey-brown retriever-style bartender and scene-matched dry-humor copy. Render only; social release remains gated by direct visual QA.",
+  "release_policy": "Render only. No Metricool write until exact finals pass direct visual QA and fresh duplicate reconciliation.",
   "jobs": [
     {
-      "id": "current-20260925-0700-relationship-roles",
+      "id": "current-ten-20261001-relationships-silence",
       "expected_cards": 7,
       "seconds_per_slide": 5,
+      "caption": "Η σιωπή μετά τον καβγά: διάλειμμα ή τιμωρία;\n\nΟ χρόνος για να ηρεμήσεις μπορεί να προστατεύσει μια σχέση, αρκεί να υπάρχει καθαρή εξήγηση και επιστροφή στη συζήτηση. Η εξαφάνιση χωρίς όριο ή ενημέρωση μπορεί να λειτουργήσει σαν πίεση.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Σχέσεις #Επικοινωνία #Όρια #Καβγάς #Ζευγάρι",
       "slides": [
         {
-          "title": "ΤΙ ΑΛΛΑΞΕ ΣΤΙΣ ΣΧΕΣΕΙΣ; — 1/7",
-          "text": "Κάποτε πολλοί ρόλοι μέσα σε ένα ζευγάρι θεωρούνταν αυτονόητοι. Σήμερα όλο και περισσότερα πράγματα χρειάζονται ξεκάθαρη συζήτηση.",
-          "source_query": "couple talking at home photograph",
-          "source_credit": "Wikimedia Commons",
-          "license": "CC BY 2.0",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCouple%20enjoys%20time%20together%20at%20home.jpg&w=1600&output=jpg"
+          "title": "ΣΙΩΠΗ ΜΕΤΑ ΤΟΝ ΚΑΒΓΑ — 1/7",
+          "text": "Μερικές φορές είναι διάλειμμα. Άλλες φορές γίνεται τρόπος να τιμωρήσεις τον άλλον. Η διαφορά φαίνεται στο τι λες πριν απομακρυνθείς.",
+          "source_query": "couple disagreement living room photograph"
         },
         {
-          "title": "ΠΟΙΟΣ ΚΑΝΕΙ ΤΙ; — 2/7",
-          "text": "Δουλειές του σπιτιού, ψώνια, μαγείρεμα, λογαριασμοί: όταν οι προσδοκίες δεν λέγονται καθαρά, η καθημερινότητα μπορεί να γεμίσει μικρές εντάσεις.",
-          "source_query": "couple cooking home photograph",
-          "source_credit": "Wikimedia Commons",
-          "license": "CC0 1.0",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FKochendes%20Paar%20in%20einer%20K%C3%BCche%202017-01-15.jpg&w=1600&output=jpg"
+          "title": "ΔΙΑΛΕΙΜΜΑ — 2/7",
+          "text": "«Είμαι φορτισμένος. Θέλω λίγο χρόνο και μετά μιλάμε.» Έτσι ο άλλος ξέρει ότι η συζήτηση δεν εγκαταλείπεται.",
+          "source_query": "person sitting alone window photograph"
         },
         {
-          "title": "ΤΑ ΧΡΗΜΑΤΑ — 3/7",
-          "text": "Κοινό ταμείο, χωριστά χρήματα ή κάτι ενδιάμεσο; Δεν υπάρχει μία λύση για όλους. Το δύσκολο είναι να συμφωνήσουν δύο άνθρωποι τι θεωρούν δίκαιο.",
-          "source_query": "couple household finances photograph",
-          "source_credit": "Wikimedia Commons",
-          "license": "CC BY 2.0",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FSenior%20couple%20at%20home%20checking%20finance%20on%20credit%20card%20from%20above.jpg&w=1600&output=jpg"
+          "title": "ΤΙΜΩΡΙΑ — 3/7",
+          "text": "Όταν εξαφανίζεσαι χωρίς εξήγηση για να αγχωθεί ο άλλος ή να «μάθει», η σιωπή παύει να είναι ξεκούραση.",
+          "source_query": "person checking phone alone photograph"
         },
         {
           "title": "Ο ΧΡΟΝΟΣ — 4/7",
-          "text": "Ποιος προσαρμόζει το πρόγραμμά του; Πόσο χρόνο κρατά ο καθένας για δουλειά, φίλους και προσωπική ζωή; Αυτά πλέον συζητιούνται περισσότερο αντί να θεωρούνται δεδομένα.",
-          "source_query": "couple calendar planning photograph",
-          "source_credit": "Wikimedia Commons",
-          "license": "CC BY 2.0",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCouple%20sits%20together%20on%20a%20couch%20with%20a%20camera.jpg&w=1600&output=jpg"
+          "text": "Το υγιές διάλειμμα έχει ένα περίπου «πότε ξαναμιλάμε». Δεν χρειάζεται ακρίβεια λεπτού· χρειάζεται πρόθεση επιστροφής.",
+          "source_query": "clock coffee table photograph"
         },
         {
-          "title": "Η ΦΡΟΝΤΙΔΑ — 5/7",
-          "text": "Όταν υπάρχουν παιδιά ή άλλες οικογενειακές ευθύνες, το πραγματικό βάρος φαίνεται στις καθημερινές μικρές υποχρεώσεις — όχι μόνο στις μεγάλες αποφάσεις.",
-          "source_query": "parents child home photograph",
-          "source_credit": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FMother%20and%20children%20at%20home.jpg&w=1600&output=jpg"
+          "title": "Η ΑΣΦΑΛΕΙΑ — 5/7",
+          "text": "Δεν χρειάζεται να λυθεί κάθε διαφωνία αμέσως. Χρειάζεται όμως να ξέρουν και οι δύο ότι ο δεσμός δεν χρησιμοποιείται σαν απειλή.",
+          "source_query": "couple walking together park photograph"
         },
         {
-          "title": "ΤΟ ΚΛΕΙΔΙ — 6/7",
-          "text": "Το πρόβλημα συχνά δεν είναι ότι δύο άνθρωποι θέλουν διαφορετικά πράγματα. Είναι ότι ο καθένας θεωρεί πως το δικό του «αυτονόητο» είναι αυτονόητο και για τον άλλον.",
-          "source_query": "couple conversation table photograph",
-          "source_credit": "Wikimedia Commons",
-          "license": "CC BY 2.0",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCouple%20enjoys%20time%20together%20on%20the%20couch%20while%20talking%20on%20the%20phone.jpg&w=1600&output=jpg"
+          "title": "Η ΕΠΑΝΑΣΥΝΔΕΣΗ — 6/7",
+          "text": "Όταν επιστρέφεις, ξεκίνα από το πρόβλημα και όχι από νέο γύρο κατηγοριών. Στόχος είναι να καταλάβετε τι έγινε.",
+          "source_query": "couple talking cafe photograph"
         },
         {
-          "title": "ΕΣΥ ΤΙ ΠΙΣΤΕΥΕΙΣ; — 7/7",
-          "text": "Οι πιο ξεκάθαροι ρόλοι έκαναν παλιότερα τις σχέσεις πιο απλές ή η σημερινή διαπραγμάτευση τις κάνει πιο δίκαιες; Γράψε τη γνώμη σου.",
-          "source_query": "couple portrait home photograph",
-          "source_credit": "Wikimedia Commons",
-          "license": "CC0 1.0",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCouple%20in%20a%20couch.jpg&w=1600&output=jpg"
+          "title": "Η ΕΡΩΤΗΣΗ — 7/7",
+          "text": "Όταν χρειάζεσαι χώρο μετά από ένταση, λες στον άνθρωπό σου ότι θα επιστρέψεις στη συζήτηση;",
+          "source_query": "couple conversation outdoors photograph"
         }
-      ],
-      "approved": true,
-      "publish_to_social": false,
-      "reset_hold": false
+      ]
     },
     {
-      "id": "current-20260925-0900-survival-blackout",
+      "id": "current-ten-20261001-survival-112",
       "expected_cards": 9,
       "seconds_per_slide": 5,
+      "caption": "112: τι λες για να έρθει η σωστή βοήθεια;\n\nΣε πραγματική έκτακτη ανάγκη στην Ελλάδα και στην ΕΕ, το 112 λειτουργεί χωρίς χρέωση. Το βασικό είναι να πεις καθαρά τι συνέβη και πού βρίσκεσαι και να απαντήσεις στις ερωτήσεις του χειριστή.\n\nΠηγή: Υπουργείο Κλιματικής Κρίσης και Πολιτικής Προστασίας — 112.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#112 #Επιβίωση #ΠολιτικήΠροστασία #ΈκτακτηΑνάγκη #Ασφάλεια",
       "slides": [
         {
-          "title": "ΚΑΝΟΝΕΣ ΕΠΙΒΙΩΣΗΣ — 1/9",
-          "text": "ΜΠΛΑΚΑΟΥΤ ΠΟΛΛΩΝ ΩΡΩΝ: πριν συμβεί, ξέρεις πού είναι φακός, νερό, φάρμακα, φορτιστές και βασικά τηλέφωνα ανάγκης;",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FNIGHT%20LIGHT%20AT%20HOME.jpg&w=1600&output=jpg",
-          "source_query": "home blackout night photograph",
-          "source_credit": "Wikimedia Commons contributor",
-          "license": "CC BY-SA 4.0"
+          "title": "112: ΤΟ ΠΡΩΤΟ ΠΟΥ ΛΕΣ — 1/9",
+          "text": "Σε πραγματική έκτακτη ανάγκη πες πρώτα τι έχει συμβεί και πού βρίσκεσαι. Αυτά είναι τα δύο βασικά στοιχεία που ζητά το 112.",
+          "footer": "Πηγή: Πολιτική Προστασία — 112",
+          "source_query": "emergency phone call smartphone photograph"
         },
         {
-          "title": "ΜΙΚΡΑ ΠΟΥ ΒΟΗΘΟΥΝ — 2/9",
-          "text": "Κράτα 2-3 χρήσιμα έξτρα: power bank φορτισμένο, φακό με εφεδρικές μπαταρίες και ραδιόφωνο μπαταρίας για επίσημες ενημερώσεις.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FPower%20bank.JPG&w=1600&output=jpg",
-          "source_query": "power bank photograph",
-          "source_credit": "Wikimedia Commons contributor",
-          "license": "CC BY-SA 3.0"
+          "title": "ΤΙ ΕΓΙΝΕ — 2/9",
+          "text": "Πες σύντομα το είδος του περιστατικού: φωτιά, τροχαίο, άνθρωπος που δεν ανταποκρίνεται, κίνδυνος στη θάλασσα ή άλλο επείγον.",
+          "footer": "Πηγή: Πολιτική Προστασία — 112",
+          "source_query": "emergency services road photograph"
         },
         {
-          "title": "ΚΡΑΤΑ ΕΝΕΡΓΕΙΑ — 3/9",
-          "text": "Βάλε το κινητό σε εξοικονόμηση ενέργειας, χαμήλωσε φωτεινότητα και χρησιμοποίησε το power bank μόνο όταν χρειάζεται. Κράτα μπαταρία για επικοινωνία ανάγκης.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FCharging%20a%20smartphone%20with%20a%20USB%20power%20bank.jpg&w=1600&output=jpg",
-          "source_query": "smartphone charging power bank photograph",
-          "source_credit": "Wikimedia Commons contributor",
-          "license": "CC BY-SA 4.0"
+          "title": "ΠΟΥ ΕΙΣΑΙ — 3/9",
+          "text": "Δώσε όσο πιο συγκεκριμένη θέση μπορείς: οδό, περιοχή, δρόμο, χιλιόμετρο ή χαρακτηριστικό σημείο. Μην αρκεστείς στο «κάπου εδώ».",
+          "footer": "Πηγή: Πολιτική Προστασία — 112",
+          "source_query": "road sign Greece photograph"
         },
         {
-          "title": "ΨΥΓΕΙΟ ΚΑΙ ΤΡΟΦΙΜΑ — 4/9",
-          "text": "Κράτα τις πόρτες ψυγείου και κατάψυξης κλειστές όσο γίνεται. Κάθε άνοιγμα αφήνει το κρύο να φύγει γρηγορότερα.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FOpen%20refrigerator%20with%20food%20at%20night.jpg&w=1600&output=jpg",
-          "source_query": "refrigerator food home photograph",
-          "source_credit": "Wikimedia Commons contributor",
-          "license": "CC BY-SA"
+          "title": "ΠΟΤΕ ΕΓΙΝΕ — 4/9",
+          "text": "Αν στέλνεις μήνυμα στο 112, γράψε και πότε συνέβη το περιστατικό. Η χρονική πληροφορία βοηθά να εκτιμηθεί η κατάσταση.",
+          "footer": "Πηγή: Πολιτική Προστασία — 112",
+          "source_query": "smartphone text message photograph"
         },
         {
-          "title": "ΦΩΣ ΚΑΙ ΑΣΦΑΛΕΙΑ — 5/9",
-          "text": "Προτίμησε φακούς αντί για κεριά. Γεννήτρια, ψησταριά ή άλλη συσκευή καύσης ποτέ μέσα στο σπίτι ή κοντά σε ανοίγματα: υπάρχει κίνδυνος μονοξειδίου.",
-          "footer": "Ασφάλεια: Ready.gov / CDC",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FFlashlight%20%2851852112087%29.jpg&w=1600&output=jpg",
-          "source_query": "flashlight dark photograph",
-          "source_credit": "Wikimedia Commons contributor",
-          "license": "CC BY-SA 2.0"
+          "title": "ΥΠΑΡΧΟΥΝ ΤΡΑΥΜΑΤΙΕΣ; — 5/9",
+          "text": "Πες αν υπάρχουν τραυματίες και πόσοι περίπου. Μην κάνεις διάγνωση· περιέγραψε αυτό που βλέπεις με απλές λέξεις.",
+          "footer": "Πηγή: Πολιτική Προστασία — 112",
+          "source_query": "ambulance emergency response photograph"
         },
         {
-          "title": "12 ΛΑΘΗ — 1 ΕΩΣ 4 — 6/9",
-          "text": "1. Ανάβεις κεριά χωρίς επίβλεψη. 2. Ανοίγεις συνέχεια το ψυγείο. 3. Αδειάζεις την μπαταρία στο κινητό. 4. Αγνοείς επίσημες ενημερώσεις.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FLinterna%20encendida.jpg&w=1600&output=jpg",
-          "source_query": "flashlight switched on photograph",
-          "source_credit": "Wikimedia Commons contributor",
-          "license": "CC BY-SA 4.0"
+          "title": "ΑΠΑΝΤΗΣΕ ΣΤΙΣ ΕΡΩΤΗΣΕΙΣ — 6/9",
+          "text": "Ο χειριστής θα ζητήσει πληροφορίες για να αποφασιστεί τι βοήθεια χρειάζεται. Άκου, απάντησε καθαρά και μην βιάζεσαι να κλείσεις.",
+          "footer": "Πηγή: Πολιτική Προστασία — 112",
+          "source_query": "emergency call center operator photograph"
         },
         {
-          "title": "12 ΛΑΘΗ — 5 ΕΩΣ 8 — 7/9",
-          "text": "5. Χρησιμοποιείς συσκευή καύσης μέσα. 6. Πιάνεις πεσμένα καλώδια. 7. Κάνεις άσκοπες μετακινήσεις στο σκοτάδι. 8. Δεν κρατάς νερό και απαραίτητα φάρμακα διαθέσιμα.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FNSS%20Transistor%20Radio.jpg&w=1600&output=jpg",
-          "source_query": "battery radio photograph",
-          "source_credit": "Wikimedia Commons contributor",
-          "license": "CC BY-SA"
+          "title": "ΑΝ ΣΤΕΙΛΕΙΣ ΜΗΝΥΜΑ — 7/9",
+          "text": "Γράψε τέσσερα πράγματα: τι έγινε, πού έγινε, πότε έγινε και αν υπάρχουν τραυματίες. Κράτησέ το σύντομο και σαφές.",
+          "footer": "Πηγή: Πολιτική Προστασία — 112",
+          "source_query": "mobile phone typing message photograph"
         },
         {
-          "title": "12 ΛΑΘΗ — 9 ΕΩΣ 12 — 8/9",
-          "text": "9. Υποθέτεις ότι όλοι έχουν ρεύμα. 10. Δεν ελέγχεις ευάλωτους δικούς σου. 11. Συνδέεις πολλά φορτία μόλις επανέλθει. 12. Αγνοείς μυρωδιά καμένου ή ηλεκτρικό κίνδυνο.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FTorch%20Light.jpg&w=1600&output=jpg",
-          "source_query": "torch flashlight photograph",
-          "source_credit": "Wikimedia Commons contributor",
-          "license": "CC BY-SA 4.0"
+          "title": "ΟΧΙ ΑΣΚΟΠΕΣ ΚΛΗΣΕΙΣ — 8/9",
+          "text": "Το 112 είναι για άμεση ανάγκη ή κίνδυνο. Οι άσκοπες κλήσεις μπορούν να καθυστερήσουν βοήθεια για κάποιον που τη χρειάζεται πραγματικά.",
+          "footer": "Πηγή: Πολιτική Προστασία — 112",
+          "source_query": "emergency number telephone photograph"
         },
         {
-          "title": "ΤΙ ΚΑΝΕΙΣ ΤΕΛΙΚΑ — 9/9",
-          "text": "Φως με φακό, μπαταρία για επικοινωνία, πόρτες ψυγείου κλειστές, επίσημες οδηγίες και καθόλου καύση σε κλειστό χώρο. Σε πραγματική έκτακτη ανάγκη: 112.",
-          "footer": "Γενικές οδηγίες ετοιμότητας — όχι εγγύηση ασφάλειας",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FDatrex%20emergency%20drinking%20water%20packet.JPG&w=1600&output=jpg",
-          "source_query": "emergency water packet photograph",
-          "source_credit": "Wikimedia Commons contributor",
-          "license": "CC BY-SA 3.0"
+          "title": "ΤΟ ΜΝΗΜΟΝΙΚΟ — 9/9",
+          "text": "Τι έγινε → Πού έγινε → Πότε έγινε → Υπάρχουν τραυματίες; Μετά άκου τις οδηγίες του χειριστή.",
+          "footer": "112 — μόνο για πραγματική έκτακτη ανάγκη",
+          "source_query": "rescue team emergency photograph"
         }
-      ],
-      "approved": true,
-      "publish_to_social": false,
-      "reset_hold": false
+      ]
     },
     {
-      "id": "current-20260925-1100-zodiac-group-b-first-detail",
+      "id": "current-ten-20261001-zodiac-security",
       "expected_cards": 6,
-      "seconds_per_slide": 5,
-      "slides": [
-        {
-          "title": "ΖΥΓΟΣ — 1/6",
-          "text": "Τον τρόπο που φέρεσαι στους γύρω σου.",
-          "source_query": "balance scale photograph",
-          "source_credit": "Nikodem Nijaki / Wikimedia Commons",
-          "license": "CC BY-SA 3.0",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Balance%20scale%20IMGP9755.jpg?width=1600"
-        },
-        {
-          "title": "ΣΚΟΡΠΙΟΣ — 2/6",
-          "text": "Αν τα μάτια και τα λόγια σου λένε το ίδιο πράγμα.",
-          "source_query": "scorpion photograph",
-          "source_credit": "Ready Street / Wikimedia Commons",
-          "license": "CC BY-SA 4.0",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Scorpion%20Image.jpg?width=1600"
-        },
-        {
-          "title": "ΤΟΞΟΤΗΣ — 3/6",
-          "text": "Αν έχεις περιέργεια και χιούμορ.",
-          "source_query": "",
-          "source_credit": "Hemant23071999 / Wikimedia Commons",
-          "license": "CC0 1.0",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Archer%20with%20modern%20bow%20side%20view.jpg?width=1600"
-        },
-        {
-          "title": "ΑΙΓΟΚΕΡΩΣ — 4/6",
-          "text": "Αν είσαι συνεπής στα μικρά.",
-          "source_query": "goat portrait photograph",
-          "source_credit": "ladydragonflycc / Wikimedia Commons",
-          "license": "CC BY 2.0",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Goat%20close-up%20portrait.jpg?width=1600"
-        },
-        {
-          "title": "ΥΔΡΟΧΟΟΣ — 5/6",
-          "text": "Αν έχεις δικό σου τρόπο να σκέφτεσαι.",
-          "source_query": "",
-          "source_credit": "Jean-Pierre Dalbéra / Wikimedia Commons",
-          "license": "CC BY 2.0",
-          "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/%22La_porteuse_deau%22%2C_quartier_de_Katajanokka_%28Helsinki%29_%282769251264%29.jpg"
-        },
-        {
-          "title": "ΙΧΘΥΕΣ — 6/6",
-          "text": "Τον τόνο της φωνής και το πώς τον κάνεις να νιώθει.",
-          "source_query": "two koi fish photograph",
-          "source_credit": "Jnsa100 / Wikimedia Commons",
-          "license": "Reusable Wikimedia Commons source; verify source page at render QA",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Koi%20Fish%20swimming.jpg?width=1600"
-        }
-      ],
-      "approved": true,
-      "publish_to_social": false,
-      "reset_hold": false
-    },
-    {
-      "id": "current-20260925-1300-dog-bartender-mystery",
-      "expected_cards": 4,
       "seconds_per_slide": 6,
+      "caption": "Τι κάνει κάθε ζώδιο να νιώθει ασφάλεια σε μια σχέση;\n\nΈξι συγκρίσεις, δώδεκα ζώδια — κάθε ζώδιο εμφανίζεται μία φορά. Συμβολικό περιεχόμενο για ψυχαγωγία, όχι πρόβλεψη.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ζώδια #Σχέσεις #Αστρολογία #Ζευγάρι #Αγάπη",
       "slides": [
         {
-          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 1/4",
-          "text": "ΠΕΛΑΤΗΣ: «Έχεις κοκτέιλ που να με κάνει να φαίνομαι μυστηριώδης;» Ο Σκύλος Μπάρμαν τον κοιτάζει και συνεχίζει ήρεμα τη δουλειά του.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F2faaa210-79ca-4210-b2c0-23f4403bcc2e%2Ff2106c19-90a5-4715-9ab8-a86283883c5d%2FPhotorealistic_cinematic_square_photograph_of_a_distinctive_.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNTNmOTQ5NmNmMzUzYTQzYSIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDM4ODU4OH0.lgfzEqmZ6g5EL93NcITYcIQE-fMdzBKjJlheUHoH1eA&w=1600&output=jpg",
-          "source_query": "",
-          "source_credit": "Project-generated consistent golden-brown/brown dog bartender scene",
-          "license": "AI-generated project asset"
+          "title": "ΚΡΙΟΣ VS ΖΥΓΟΣ — 1/6",
+          "text": "Κριός: νιώθει ασφάλεια με καθαρό ενδιαφέρον και ευθύτητα. Ζυγός: με διάλογο, αμοιβαιότητα και σεβασμό στις αποφάσεις.",
+          "source_query": "couple talking city park photograph"
         },
         {
-          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 2/4",
-          "text": "ΜΠΑΡΜΑΝ: «Βεβαίως. Αλλά αν σου πω τι βάζω μέσα, χαλάει το μυστήριο.» Και αρχίζει να το ετοιμάζει χωρίς άλλη εξήγηση.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F730af6e5-1f8c-42a5-9062-21cb7bbbbebb%2F82e58288-6f38-4d93-a197-9a498a0c615b%2F_dogbartender_in_the_same_realistic_dark_wood_bar__three_qua.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNzUzZjkzNjMwOWU3ZmE3MyIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDQxMjc3MX0.idiQx81tXKo2hN6ISXemskHsaU2otW0G7_6K-x8Kppk&w=1600&output=jpg",
-          "source_query": "",
-          "source_credit": "Project-generated consistent golden-brown/brown dog bartender scene",
-          "license": "AI-generated project asset"
+          "title": "ΤΑΥΡΟΣ VS ΣΚΟΡΠΙΟΣ — 2/6",
+          "text": "Ταύρος: θέλει συνέπεια και πράξεις που επαναλαμβάνονται. Σκορπιός: βαθιά ειλικρίνεια, πίστη και να μη μένουν κρυφές ιστορίες.",
+          "source_query": "couple holding hands outdoors photograph"
         },
         {
-          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 3/4",
-          "text": "ΠΕΛΑΤΗΣ: «Και η ομπρελίτσα γιατί;» ΜΠΑΡΜΑΝ: «Για να μην υποψιαστεί κανείς τίποτα.»",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F0c783dad-d1be-4c76-98bb-c40d83291093%2F5ef5f2d5-50b1-4f0a-8a2f-1267d79677e6%2F_dogbartender_in_the_same_realistic_dark_wood_cocktail_bar__.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiNTljNDQxOWQ0ZTMzMTcwNCIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDM3NjQ3N30.FzxFLDl6xZPVb62pPnwOFazXL-C2IsVhDX6-CLTsXyk&w=1600&output=jpg",
-          "source_query": "",
-          "source_credit": "Project-generated consistent golden-brown/brown dog bartender scene",
-          "license": "AI-generated project asset"
+          "title": "ΔΙΔΥΜΟΙ VS ΤΟΞΟΤΗΣ — 3/6",
+          "text": "Δίδυμοι: νιώθουν κοντά μέσα από λέξεις και περιέργεια. Τοξότης: μέσα από εμπιστοσύνη, χιούμορ και χώρο για εμπειρίες.",
+          "source_query": "couple laughing travel photograph"
         },
         {
-          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 4/4",
-          "text": "ΠΕΛΑΤΗΣ: «Γιατί δύο ποτήρια;» ΜΠΑΡΜΑΝ: «Το δεύτερο είναι για το άλλοθί σου.» Και συνέχισε τη δουλειά του σαν να μην έγινε τίποτα.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fdnznrvs05pmza.cloudfront.net%2Fgemini%2Fgemini-3.1-flash-lite-image%2Fimages%2F74cba74e-cfdb-44ca-9c40-f02e1e64c193%2F9fd63838-5cbd-4750-baf7-a28d9b2d3a75%2F_dogbartender_in_the_same_realistic_dark_wood_bar__wider_fro.jpg%3F_jwt%3DeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXlIYXNoIjoiMDgwNDEwYzhlM2JiODI2OCIsImJ1Y2tldCI6InJ1bndheS10YXNrLWFydGlmYWN0cyIsInN0YWdlIjoicHJvZCIsImV4cCI6MTc5MDQyNjU2OH0.6GleH3-hk4BYSDFxGEjAmLhTDIE4xASfzuIa9B7qKgI&w=1600&output=jpg",
-          "source_query": "",
-          "source_credit": "Project-generated consistent golden-brown/brown dog bartender scene",
-          "license": "AI-generated project asset"
+          "title": "ΚΑΡΚΙΝΟΣ VS ΑΙΓΟΚΕΡΩΣ — 4/6",
+          "text": "Καρκίνος: χρειάζεται φροντίδα και συναισθηματική παρουσία. Αιγόκερως: αξιοπιστία, σταθερότητα και άνθρωπο που κρατά όσα υπόσχεται.",
+          "source_query": "couple home conversation photograph"
+        },
+        {
+          "title": "ΛΕΩΝ VS ΥΔΡΟΧΟΟΣ — 5/6",
+          "text": "Λέων: θέλει ζεστασιά και ξεκάθαρη εκτίμηση. Υδροχόος: αποδοχή της διαφορετικότητας και χώρο χωρίς συνεχή έλεγχο.",
+          "source_query": "couple evening city photograph"
+        },
+        {
+          "title": "ΠΑΡΘΕΝΟΣ VS ΙΧΘΥΕΣ — 6/6",
+          "text": "Παρθένος: νιώθει ασφάλεια όταν οι λεπτομέρειες γίνονται πράξεις. Ιχθύες: όταν υπάρχει τρυφερότητα, ενσυναίσθηση και ήρεμη κατανόηση.",
+          "source_query": "couple quiet lakeside photograph"
         }
-      ],
-      "approved": true,
-      "publish_to_social": false,
-      "reset_hold": false
+      ]
     },
     {
-      "id": "current-20260925-1500-half-orange-story",
+      "id": "current-ten-20261001-love-umbrella",
       "expected_cards": 5,
-      "seconds_per_slide": 6,
+      "seconds_per_slide": 7,
+      "caption": "Η ομπρέλα της στάσης\n\nΜια μικρή μυθοπλασία για μια απλή πράξη που έγινε αφορμή για δεύτερη συνάντηση. Οι εικόνες είναι ενδεικτικές.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ιστορίες #Αγάπη #Γνωριμία #Συναίσθημα #Ψυχή",
       "slides": [
         {
-          "title": "ΤΟ ΜΙΣΟ ΠΟΡΤΟΚΑΛΙ — 1/5",
-          "text": "Κάθε πρωί έτρωγε το μισό πορτοκάλι και άφηνε το άλλο μισό σκεπασμένο για εκείνη.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FOrange%20fruit.jpg&w=1600&output=jpg",
-          "source_query": "orange fruit breakfast photograph",
-          "source_credit": "Wikimedia Commons contributor",
-          "license": "CC BY-SA"
+          "title": "ΤΗΣ ΕΔΩΣΕ ΤΗΝ ΟΜΠΡΕΛΑ ΚΑΙ ΕΦΥΓΕ — 1/5",
+          "text": "Στη στάση, ένας άγνωστος της είπε: «Εγώ μένω εδώ κοντά».",
+          "source_query": "bus stop rain umbrella photograph"
         },
         {
-          "title": "ΔΕΝ ΗΤΑΝ ΤΑΙΝΙΑ — 2/5",
-          "text": "Δεν ήταν ρομαντικός με τον τρόπο των ταινιών. Ξεχνούσε επετείους και δεν έγραφε μεγάλα μηνύματα.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FOlder%20couple%20enjoys%20coffee%20together.jpg&w=1600&output=jpg",
-          "source_query": "older couple coffee together photograph",
-          "source_credit": "Wikimedia Commons contributor",
-          "license": "CC BY 2.0"
+          "title": "ΔΕΝ ΠΡΟΛΑΒΕ ΝΑ ΜΑΘΕΙ ΤΟ ΟΝΟΜΑ ΤΟΥ — 2/5",
+          "text": "Την κράτησε στο γραφείο, ελπίζοντας να τον ξαναδεί.",
+          "source_query": "umbrella office window rain photograph"
         },
         {
-          "title": "ΘΥΜΟΤΑΝ ΤΑ ΜΙΚΡΑ — 3/5",
-          "text": "Θυμόταν όμως ότι εκείνη ξυπνούσε αργότερα και ότι δεν της άρεσε να καθαρίζει πορτοκάλια.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FElderly%20couple%20%281527965%29.jpg&w=1600&output=jpg",
-          "source_query": "elderly couple home photograph",
-          "source_credit": "Wikimedia Commons contributor",
-          "license": "CC BY-SA 4.0"
+          "title": "ΜΙΑ ΕΒΔΟΜΑΔΑ ΜΕΤΑ ΤΟΝ ΑΝΑΓΝΩΡΙΣΕ — 3/5",
+          "text": "Ήταν πάλι στη στάση. Και αυτή τη φορά έβρεχε πάνω του.",
+          "source_query": "man waiting bus stop rain photograph"
         },
         {
-          "title": "ΤΟ ΙΔΙΟ ΠΙΑΤΑΚΙ — 4/5",
-          "text": "Για χρόνια, το πιατάκι την περίμενε στο ίδιο σημείο.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FElderly%20Couple%20Eating.jpg&w=1600&output=jpg",
-          "source_query": "elderly couple breakfast photograph",
-          "source_credit": "Wikimedia Commons contributor",
-          "license": "CC0 1.0"
+          "title": "«ΔΕΝ ΜΕΝΕΙΣ ΕΔΩ ΚΟΝΤΑ;» — 4/5",
+          "text": "Χαμογέλασε αμήχανα. «Όχι τόσο κοντά όσο σου είπα».",
+          "source_query": "two people talking bus stop photograph"
         },
         {
-          "title": "ΑΥΤΟ ΓΙΝΕΤΑΙ ΣΠΙΤΙ — 5/5",
-          "text": "Η αγάπη πολλές φορές δεν είναι η μεγάλη χειρονομία. Είναι κάτι μικρό που επαναλαμβάνεται τόσο σταθερά, ώστε γίνεται σπίτι.",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FElderly%20couple%20%281586495%29.jpg&w=1600&output=jpg",
-          "source_query": "elderly married couple photograph",
-          "source_credit": "Wikimedia Commons contributor",
-          "license": "CC BY-SA 4.0"
+          "title": "ΑΝΟΙΞΕ ΤΗΝ ΟΜΠΡΕΛΑ ΓΙΑ ΔΥΟ — 5/5",
+          "text": "Η πρώτη τους κουβέντα κράτησε περισσότερο από τη βροχή.",
+          "source_query": "couple sharing umbrella rain photograph"
         }
-      ],
-      "approved": true,
-      "publish_to_social": false,
-      "reset_hold": false
+      ]
     },
     {
-      "id": "current-20260925-2000-myth-truth-great-wall-space",
+      "id": "current-ten-20261001-myth-seasons",
       "expected_cards": 4,
-      "seconds_per_slide": 6,
+      "seconds_per_slide": 7,
+      "caption": "Μύθος ή Αλήθεια: οι εποχές αλλάζουν επειδή η Γη πλησιάζει και απομακρύνεται από τον Ήλιο;\n\nΜύθος. Η βασική αιτία είναι η κλίση του άξονα της Γης, που αλλάζει τη γωνία και τη διάρκεια του ηλιακού φωτός σε κάθε ημισφαίριο μέσα στη χρονιά.\n\nΠηγή: NASA.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΜύθοςΉΑλήθεια #Επιστήμη #Γη #Εποχές #NASA",
       "slides": [
         {
-          "title": "ΜΥΘΟΣ Ή ΑΛΗΘΕΙΑ; — 1/4",
-          "text": "Το Σινικό Τείχος φαίνεται με γυμνό μάτι από το διάστημα — και μάλιστα είναι το μόνο ανθρώπινο έργο που φαίνεται. Ισχύει;",
-          "source_query": "Great Wall of China photograph",
-          "source_credit": "Wikimedia Commons",
-          "license": "CC BY 4.0",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FGreat%20Wall%20China%2001.jpg&w=1600&output=jpg"
+          "title": "ΚΑΛΟΚΑΙΡΙ ΕΠΕΙΔΗ ΠΛΗΣΙΑΖΟΥΜΕ ΤΟΝ ΗΛΙΟ; — 1/4",
+          "text": "Ακούγεται λογικό. Δεν είναι όμως η βασική αιτία των εποχών.",
+          "footer": "Πηγή: NASA",
+          "source_query": "Earth from space photograph"
         },
         {
-          "title": "ΠΡΙΝ ΔΕΙΣ ΤΗΝ ΑΠΑΝΤΗΣΗ — 2/4",
-          "text": "Είναι τεράστιο σε μήκος. Αλλά από μεγάλο ύψος αυτό που μετράει πολύ είναι και το πλάτος, η αντίθεση με το έδαφος και οι συνθήκες παρατήρησης. Τι λες;",
-          "source_query": "Great Wall China mountains photograph",
-          "source_credit": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FGreat%20Wall%20of%20China%20near%20Beijing.jpg&w=1600&output=jpg"
+          "title": "ΤΟ ΚΛΕΙΔΙ ΕΙΝΑΙ Η ΚΛΙΣΗ ΤΗΣ ΓΗΣ — 2/4",
+          "text": "Ο άξονας της Γης είναι γερμένος περίπου 23,4°. Έτσι αλλάζουν η γωνία του φωτός και η διάρκεια της ημέρας.",
+          "footer": "Πηγή: NASA",
+          "source_query": "Earth globe sunlight photograph"
         },
         {
-          "title": "ΤΙ ΛΕΕΙ Η NASA — 3/4",
-          "text": "Η NASA αναφέρει ότι το Τείχος δεν είναι ορατό με γυμνό μάτι από τη Σελήνη και είναι δύσκολο ή αδύνατο να διακριθεί από χαμηλή γήινη τροχιά χωρίς ισχυρό φακό.",
-          "footer": "Πηγή ελέγχου: NASA",
-          "source_query": "Great Wall China aerial photograph",
-          "source_credit": "Wikimedia Commons",
-          "license": "CC BY-SA 4.0",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FThe%20great%20wall%20China.jpg&w=1600&output=jpg"
+          "title": "ΟΙ ΕΠΟΧΕΣ ΕΙΝΑΙ ΑΝΤΙΘΕΤΕΣ — 3/4",
+          "text": "Όταν το βόρειο ημισφαίριο γέρνει προς τον Ήλιο και έχει καλοκαίρι, το νότιο έχει χειμώνα.",
+          "footer": "Πηγή: NASA",
+          "source_query": "Earth hemisphere space photograph"
         },
         {
-          "title": "Η ΑΠΑΝΤΗΣΗ: ΜΥΘΟΣ — 4/4",
-          "text": "Το τεράστιο μήκος δεν αρκεί για να το κάνει εύκολα ορατό. Το Σινικό Τείχος δεν είναι το μοναδικό ανθρώπινο έργο που φαίνεται από το διάστημα και δεν φαίνεται με γυμνό μάτι από τη Σελήνη.",
-          "source_query": "Great Wall China landscape photograph",
-          "source_credit": "Wikimedia Commons",
-          "license": "CC BY 2.0",
-          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FSpecial%3ARedirect%2Ffile%2FGreat%20Wall%20of%20China%20(2639618338).jpg&w=1600&output=jpg"
+          "title": "Η ΑΠΟΣΤΑΣΗ ΔΕΝ ΕΞΗΓΕΙ ΤΟ ΚΑΛΟΚΑΙΡΙ — 4/4",
+          "text": "Η Γη βρίσκεται πιο κοντά στον Ήλιο περίπου στις αρχές Ιανουαρίου, όταν στην Ελλάδα έχουμε χειμώνα.",
+          "footer": "Μύθος — Πηγή: NASA",
+          "source_query": "Sun Earth space photograph"
         }
-      ],
-      "approved": true,
-      "publish_to_social": false,
-      "reset_hold": false
+      ]
     }
-  ],
-  "reset_hold": false,
-  "publish_to_social": false,
-  "production_status": "ACTIVE_RENDER_ONLY"
+  ]
 }
