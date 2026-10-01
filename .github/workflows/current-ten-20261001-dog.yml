@@ -1,0 +1,112 @@
+name: Current Ten 20261001 dog bartender
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'media_jobs/current_ten_20261001_dog.json'
+      - '.github/workflows/current-ten-20261001-dog.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: current-ten-20261001-dog
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python3 -m pip install --disable-pip-version-check --no-input pillow requests rembg onnxruntime
+      - name: Render same dog in four distinct bar compositions
+        run: |
+          python3 - <<'PY'
+          import json,requests,io,subprocess,math
+          from pathlib import Path
+          from PIL import Image,ImageOps,ImageDraw,ImageFont,ImageFilter
+          from rembg import remove
+          m=json.load(open('media_jobs/current_ten_20261001_dog.json'))
+          out=Path('/tmp/dog'); out.mkdir()
+          s=requests.Session(); s.headers['User-Agent']='SteliosDogBartender/1.0'
+          dog=Image.open(io.BytesIO(s.get(m['dog_source'],timeout=90).content)).convert('RGBA')
+          cut=remove(dog)
+          box=cut.getbbox()
+          if not box: raise SystemExit('dog segmentation empty')
+          cut=cut.crop(box)
+          B='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'; F='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
+          for i,(bgurl,(title,text)) in enumerate(zip(m['bar_backgrounds'],m['cards']),1):
+              bg=Image.open(io.BytesIO(s.get(bgurl,timeout=90).content)).convert('RGB')
+              bg=ImageOps.fit(bg,(1080,1080),method=Image.Resampling.LANCZOS)
+              # darken/blur upper background slightly for readable foreground
+              bg=bg.filter(ImageFilter.GaussianBlur(radius=0.7))
+              dscale=[0.68,0.72,0.66,0.70][i-1]
+              dogi=cut.copy(); target_h=int(1080*dscale)
+              dogi.thumbnail((700,target_h),Image.Resampling.LANCZOS)
+              positions=[(75,1080-dogi.height-25),(365,1080-dogi.height-20),(90,1080-dogi.height-30),(350,1080-dogi.height-25)]
+              bg.paste(dogi,positions[i-1],dogi)
+              ov=Image.new('RGBA',bg.size,(0,0,0,0)); od=ImageDraw.Draw(ov)
+              od.rounded_rectangle((45,45,1035,420),radius=30,fill=(0,0,0,165))
+              od.rounded_rectangle((45,900,1035,1040),radius=24,fill=(0,0,0,165))
+              bg=Image.alpha_composite(bg.convert('RGBA'),ov).convert('RGB')
+              dr=ImageDraw.Draw(bg)
+              def fit(txt,size,maxw,maxlines):
+                  while size>=26:
+                      ft=ImageFont.truetype(B,size)
+                      words=txt.split(); lines=[]; cur=''
+                      for w in words:
+                          c=(cur+' '+w).strip()
+                          if dr.textlength(c,font=ft)<=maxw: cur=c
+                          else: lines.append(cur); cur=w
+                      if cur: lines.append(cur)
+                      if len(lines)<=maxlines:return ft,lines
+                      size-=2
+                  raise SystemExit('text fit failed')
+              ft,lines=fit(title,48,900,2); y=78
+              for line in lines: dr.text((80,y),line,font=ft,fill='white',stroke_width=1,stroke_fill='black'); y+=ft.size*1.2
+              ft2,lines2=fit(text,37,900,4); y=205
+              for line in lines2: dr.text((80,y),line,font=ft2,fill='white',stroke_width=1,stroke_fill='black'); y+=ft2.size*1.25
+              cta='Αν σας άρεσε, ακολουθήστε για περισσότερα.'
+              fta=ImageFont.truetype(B,27); dr.text((70,942),cta,font=fta,fill='white')
+              dr.text((950,1038),f'{i}/4',font=ImageFont.truetype(F,18),fill='white')
+              bg.save(out/f'current-ten-20261001-dog-courage-{i:02}.jpg',quality=94)
+          # YouTube vertical slideshow with one local instrumental layer
+          segs=[]
+          for i in range(1,5):
+              sq=Image.open(out/f'current-ten-20261001-dog-courage-{i:02}.jpg').convert('RGB')
+              v=Image.new('RGB',(1080,1920),(16,24,36)); v.paste(sq,(0,420)); vp=out/f'v{i}.jpg'; v.save(vp,quality=94)
+              sp=out/f's{i}.mp4'
+              subprocess.run(['ffmpeg','-y','-loglevel','error','-loop','1','-i',str(vp),'-t','7','-vf','fps=25','-c:v','libx264','-pix_fmt','yuv420p','-an',str(sp)],check=True); segs.append(sp)
+          (out/'concat.txt').write_text('\n'.join(f"file '{p}'" for p in segs)+'\n')
+          visual=out/'visual.mp4'
+          subprocess.run(['ffmpeg','-y','-loglevel','error','-f','concat','-safe','0','-i',str(out/'concat.txt'),'-c','copy',str(visual)],check=True)
+          final=out/'current-ten-20261001-dog-courage.mp4'
+          subprocess.run(['ffmpeg','-y','-loglevel','error','-i',str(visual),'-f','lavfi','-i','sine=frequency=220:duration=28:sample_rate=48000','-filter_complex','[1:a]volume=0.025,afade=t=in:st=0:d=1,afade=t=out:st=26:d=2[a]','-map','0:v','-map','[a]','-c:v','copy','-c:a','aac','-b:a','128k','-shortest',str(final)],check=True)
+          # contact sheet exact finals
+          sheet=Image.new('RGB',(1080,1080),(20,20,20))
+          for i in range(1,5):
+              im=Image.open(out/f'current-ten-20261001-dog-courage-{i:02}.jpg').convert('RGB').resize((540,540))
+              sheet.paste(im,(((i-1)%2)*540,((i-1)//2)*540))
+          sheet.save(out/'dog-contact-sheet.jpg',quality=93)
+          (out/'release-gate.txt').write_text('PENDING_DIRECT_VISUAL_REVIEW\n')
+          (out/'source_manifest.json').write_text(json.dumps(m,ensure_ascii=False,indent=2))
+          PY
+      - name: Save to media-output
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/out"
+          git fetch origin media-output --depth=1
+          git worktree add -b cten1001dog "$OUT" FETCH_HEAD
+          DEST="$OUT/jobs/current-ten-20261001-dog"
+          rm -rf "$DEST"; mkdir -p "$DEST"; cp -a /tmp/dog/. "$DEST"/
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/current-ten-20261001-dog
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Render 01 Oct dog bartender'
+            git -C "$OUT" fetch origin media-output
+            git -C "$OUT" rebase FETCH_HEAD
+            git -C "$OUT" push origin HEAD:media-output
+          fi
