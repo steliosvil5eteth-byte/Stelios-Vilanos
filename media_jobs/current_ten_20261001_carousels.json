@@ -203,37 +203,27 @@
         {
           "title": "ΤΗΣ ΕΔΩΣΕ ΤΗΝ ΟΜΠΡΕΛΑ ΚΑΙ ΕΦΥΓΕ — 1/5",
           "text": "Στη στάση, ένας άγνωστος της είπε: «Εγώ μένω εδώ κοντά».",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Umbrellas%20in%20the%20rain.jpg?width=1600",
-          "source_credit": "Wikimedia Commons — rights-cleared file page",
-          "license": "See Commons source file license"
+          "source_query": "umbrella rain city street photograph"
         },
         {
           "title": "ΔΕΝ ΠΡΟΛΑΒΕ ΝΑ ΜΑΘΕΙ ΤΟ ΟΝΟΜΑ ΤΟΥ — 2/5",
           "text": "Την κράτησε στο γραφείο, ελπίζοντας να τον ξαναδεί.",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Rain%20under%20the%20umbrella.jpg?width=1600",
-          "source_credit": "Wikimedia Commons — rights-cleared file page",
-          "license": "See Commons source file license"
+          "source_query": "woman umbrella rain photograph"
         },
         {
           "title": "ΜΙΑ ΕΒΔΟΜΑΔΑ ΜΕΤΑ ΤΟΝ ΑΝΑΓΝΩΡΙΣΕ — 3/5",
           "text": "Ήταν πάλι στη στάση. Και αυτή τη φορά έβρεχε πάνω του.",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Man%20using%20a%20an%20umbrella%20to%20protect%20from%20rain%20showers.jpg?width=1600",
-          "source_credit": "Wikimedia Commons — rights-cleared file page",
-          "license": "See Commons source file license"
+          "source_query": "bus stop rain umbrella photograph"
         },
         {
           "title": "«ΔΕΝ ΜΕΝΕΙΣ ΕΔΩ ΚΟΝΤΑ;» — 4/5",
           "text": "Χαμογέλασε αμήχανα. «Όχι τόσο κοντά όσο σου είπα».",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/As%20an%20umbrella%20in%20the%20rain%20(48953583878).jpg?width=1600",
-          "source_credit": "Wikimedia Commons — rights-cleared file page",
-          "license": "See Commons source file license"
+          "source_query": "man umbrella rain street photograph"
         },
         {
           "title": "ΑΝΟΙΞΕ ΤΗΝ ΟΜΠΡΕΛΑ ΓΙΑ ΔΥΟ — 5/5",
           "text": "Η πρώτη τους κουβέντα κράτησε περισσότερο από τη βροχή.",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Under%20the%20Umbrella%20in%20the%20Rain.jpg?width=1600",
-          "source_credit": "Wikimedia Commons — rights-cleared file page",
-          "license": "See Commons source file license"
+          "source_query": "two people sharing umbrella rain photograph"
         }
       ]
     },
@@ -247,25 +237,25 @@
           "title": "ΚΑΛΟΚΑΙΡΙ ΕΠΕΙΔΗ ΠΛΗΣΙΑΖΟΥΜΕ ΤΟΝ ΗΛΙΟ; — 1/4",
           "text": "Ακούγεται λογικό. Δεν είναι όμως η βασική αιτία των εποχών.",
           "footer": "Πηγή: NASA",
-          "source_query": "Earth from space photograph"
+          "source_query": "Earth from space NASA photograph"
         },
         {
           "title": "ΤΟ ΚΛΕΙΔΙ ΕΙΝΑΙ Η ΚΛΙΣΗ ΤΗΣ ΓΗΣ — 2/4",
           "text": "Ο άξονας της Γης είναι γερμένος περίπου 23,4°. Έτσι αλλάζουν η γωνία του φωτός και η διάρκεια της ημέρας.",
           "footer": "Πηγή: NASA",
-          "source_query": "Earth globe sunlight photograph"
+          "source_query": "Blue Marble Earth NASA photograph"
         },
         {
           "title": "ΟΙ ΕΠΟΧΕΣ ΕΙΝΑΙ ΑΝΤΙΘΕΤΕΣ — 3/4",
           "text": "Όταν το βόρειο ημισφαίριο γέρνει προς τον Ήλιο και έχει καλοκαίρι, το νότιο έχει χειμώνα.",
           "footer": "Πηγή: NASA",
-          "source_query": "Earth hemisphere space photograph"
+          "source_query": "Earth horizon from space NASA photograph"
         },
         {
           "title": "Η ΑΠΟΣΤΑΣΗ ΔΕΝ ΕΞΗΓΕΙ ΤΟ ΚΑΛΟΚΑΙΡΙ — 4/4",
           "text": "Η Γη βρίσκεται πιο κοντά στον Ήλιο περίπου στις αρχές Ιανουαρίου, όταν στην Ελλάδα έχουμε χειμώνα.",
           "footer": "Μύθος — Πηγή: NASA",
-          "source_query": "Sun Earth space photograph"
+          "source_query": "Earth sunlit hemisphere NASA photograph"
         }
       ]
     }
