@@ -1,0 +1,67 @@
+name: Current Ten 20261001 carousels
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'media_jobs/current_ten_20261001_carousels.json'
+      - '.github/workflows/current-ten-20261001-carousels.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: current-ten-20261001-carousels
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg python3-pil fonts-dejavu-core
+      - name: Render
+        run: |
+          set -euo pipefail
+          python3 tools/render_carousel_pack.py --manifest media_jobs/current_ten_20261001_carousels.json --output "$RUNNER_TEMP/rendered"
+          ROOT=$(find "$RUNNER_TEMP/rendered" -mindepth 1 -maxdepth 1 -type d | head -1)
+          echo "FINAL_ROOT=$ROOT" >> "$GITHUB_ENV"
+      - name: Exact-final QA sheets
+        run: |
+          python3 - <<'PY'
+          import os,math,subprocess,json
+          from pathlib import Path
+          from PIL import Image,ImageOps
+          root=Path(os.environ['FINAL_ROOT']); qa=root/'qa'; qa.mkdir(exist_ok=True)
+          manifest=json.loads((root/'source_manifest.json').read_text())
+          for job in manifest['jobs']:
+              jid=job['id']; n=job['expected_cards']
+              cards=[root/f"{jid}-{i:02}.jpg" for i in range(1,n+1)]
+              if not all(p.exists() for p in cards): raise SystemExit(f"missing cards {jid}")
+              cw=360; cols=3; rows=math.ceil(n/cols); canvas=Image.new('RGB',(cw*cols,cw*rows),(20,20,20))
+              for i,p in enumerate(cards):
+                  with Image.open(p).convert('RGB') as im: canvas.paste(ImageOps.fit(im,(cw,cw)),((i%cols)*cw,(i//cols)*cw))
+              canvas.save(qa/f'{jid}-cards.jpg',quality=92)
+              v=root/f'{jid}.mp4'
+              if not v.exists(): raise SystemExit(f"missing video {jid}")
+              probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(v)]))
+              if not any(s.get('codec_type')=='audio' for s in probe['streams']): raise SystemExit(f"no youtube audio {jid}")
+          (qa/'release-gate.txt').write_text('PENDING_DIRECT_VISUAL_REVIEW\n')
+          PY
+      - name: Save to media-output
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/out"
+          git fetch origin media-output --depth=1
+          git worktree add -b cten1001car "$OUT" FETCH_HEAD
+          DEST="$OUT/jobs/current-ten-20261001-carousels"
+          rm -rf "$DEST"; mkdir -p "$DEST"; cp -a "$FINAL_ROOT"/. "$DEST"/
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/current-ten-20261001-carousels
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Render 01 Oct CURRENT_TEN carousels'
+            git -C "$OUT" fetch origin media-output
+            git -C "$OUT" rebase FETCH_HEAD
+            git -C "$OUT" push origin HEAD:media-output
+          fi
