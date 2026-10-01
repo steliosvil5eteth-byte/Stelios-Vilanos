@@ -1,0 +1,456 @@
+{
+  "batch_id": "e3e7f2130d6cf8e2",
+  "batch_sha256": "e3e7f2130d6cf8e2c70dc2905b90036d24da8fb771ed321c54262372e480f074",
+  "paid_ai_credits_used": 0,
+  "photographic_visuals_required": true,
+  "jobs": [
+    {
+      "id": "current-ten-20261001-relationships-silence",
+      "status": "rendered",
+      "card_count": 7,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20talking%20(10875818386).jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Woman%20looking%20out%20window.jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20talking%20(32183069547).jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20walking%20in%20park.jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20walking%20outdoors.jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20talking%20at%20the%20end%20of%20the%20day%20(47148742041).jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Old%20couple%20walking.jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-ten-20261001-relationships-silence-01.jpg",
+          "bytes": 483463,
+          "sha256": "a9e8611af9988e797ea01cd50ca8570d09b7b7727d1265ba0640c45ecaf267f4"
+        },
+        {
+          "name": "current-ten-20261001-relationships-silence-02.jpg",
+          "bytes": 267831,
+          "sha256": "d51c558c20588dc0917d7daa67b27db6edd4f0ca14856a2cd4779fb730b2d7c5"
+        },
+        {
+          "name": "current-ten-20261001-relationships-silence-03.jpg",
+          "bytes": 240088,
+          "sha256": "f9274a332a3e7f26f9e5d9b45d25ca152f961a79d6f6b053b3f18c8cc5ec88bd"
+        },
+        {
+          "name": "current-ten-20261001-relationships-silence-04.jpg",
+          "bytes": 435437,
+          "sha256": "82ca895bfc7412f377002c5115a31b77cb1d72eb0abc321545716aa6c1e1dcb6"
+        },
+        {
+          "name": "current-ten-20261001-relationships-silence-05.jpg",
+          "bytes": 441147,
+          "sha256": "8d7e225ac645a0565004ec9602efbaf94c94af802c453c22be684ab87ef0df6f"
+        },
+        {
+          "name": "current-ten-20261001-relationships-silence-06.jpg",
+          "bytes": 388920,
+          "sha256": "177fb5bab923c6f09d16cebd412f337e0c4f94fb689b477d7e339250b2dcb8fd"
+        },
+        {
+          "name": "current-ten-20261001-relationships-silence-07.jpg",
+          "bytes": 345879,
+          "sha256": "4c35401b5462ab5244ef134a9834f4236c9b3b25c8832294c41ce243f98f2376"
+        },
+        {
+          "name": "current-ten-20261001-relationships-silence.mp4",
+          "bytes": 1420517,
+          "sha256": "a512a339e8d51f22709b2de3e514dcab2144b6b88b942edad845f83afdf1400d"
+        }
+      ]
+    },
+    {
+      "id": "current-ten-20261001-survival-112",
+      "status": "rendered",
+      "card_count": 9,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 45.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Emergency%20telephone.jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ambulance1.jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/No%20entry%20road%20sign%20in%20Athens%2C%20Greece.jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Woman%20texting%20on%20a%20smartphone.jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/An%20ambulance.jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Emergency%20telephone%20NYC%201.jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Rescue%20team%20in%20a%20boat.jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ambulance%20Volkswagen%20T5.jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Rescue%20team%20searches%20for%20downed%20aircraft%20(4615269242).jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-ten-20261001-survival-112-01.jpg",
+          "bytes": 434394,
+          "sha256": "976e632668f072021eb665a4b7322775ee990e61eafdad4cb3571976fb1ebdaf"
+        },
+        {
+          "name": "current-ten-20261001-survival-112-02.jpg",
+          "bytes": 310521,
+          "sha256": "6443fde2b096231773e273bc4bb3c7fe28f0daa7deebc17141fdb582df95b602"
+        },
+        {
+          "name": "current-ten-20261001-survival-112-03.jpg",
+          "bytes": 426422,
+          "sha256": "44c0fa2ed1f1be92e972f16cbc3cc301e518cf71c890decc75469704941797ad"
+        },
+        {
+          "name": "current-ten-20261001-survival-112-04.jpg",
+          "bytes": 239402,
+          "sha256": "d102ba8c578d1ce366b9133de8865d84d07f2adcc3bc186f5b8eaefe554016e5"
+        },
+        {
+          "name": "current-ten-20261001-survival-112-05.jpg",
+          "bytes": 326653,
+          "sha256": "b60819ebba06c9ff52979f171a0efd2bd350768b417f25cebc9ca9ed5459a0f2"
+        },
+        {
+          "name": "current-ten-20261001-survival-112-06.jpg",
+          "bytes": 415833,
+          "sha256": "d661d7b20eed7185fea1dc32d7cb571fe149e905f99f49ca06afe91d7910fac7"
+        },
+        {
+          "name": "current-ten-20261001-survival-112-07.jpg",
+          "bytes": 407003,
+          "sha256": "e4d6b7818e0844e564ddb723d225c875e2bae7f1da695bb2ddb6ed03ce8b5c47"
+        },
+        {
+          "name": "current-ten-20261001-survival-112-08.jpg",
+          "bytes": 540004,
+          "sha256": "16d9ccffe869a8cceb09865a96fd545bc4cf4359aeae598a0b7ac9a9fbcf880d"
+        },
+        {
+          "name": "current-ten-20261001-survival-112-09.jpg",
+          "bytes": 246946,
+          "sha256": "e3e1165e50612ca3385dd6c42ab6201fbecb4e758d86288c10c3df17ad9b58e2"
+        },
+        {
+          "name": "current-ten-20261001-survival-112.mp4",
+          "bytes": 1778864,
+          "sha256": "12515e1922b1ef0ca7f401b348abcbacae14805770dab5094268cb48b496906e"
+        }
+      ]
+    },
+    {
+      "id": "current-ten-20261001-zodiac-security",
+      "status": "rendered",
+      "card_count": 6,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 36.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20walking%20in%20park%20(1).jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20walking%20in%20a%20park.jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20walking%20(16267925833).jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/A%20couple%20walking%20at%20Nathan%20Phillips%20Square%20in%20Toronto.jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20walking%20along%20the%20beach.jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20walking%20in%20a%20Cairo%20garden%20Egypt.jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-ten-20261001-zodiac-security-01.jpg",
+          "bytes": 433501,
+          "sha256": "2adc69b9946c48c4f3d7d69368804941abce747f005b0ebd28af5581771c8853"
+        },
+        {
+          "name": "current-ten-20261001-zodiac-security-02.jpg",
+          "bytes": 495250,
+          "sha256": "151d188917c5bb13dad58853b3134f3f04c4f05c48b8b96481181cd33881c55b"
+        },
+        {
+          "name": "current-ten-20261001-zodiac-security-03.jpg",
+          "bytes": 370220,
+          "sha256": "ea55ede0a63c0ebac4ba65522d6a3933b45852acc8fdca612e75a3d5389e9934"
+        },
+        {
+          "name": "current-ten-20261001-zodiac-security-04.jpg",
+          "bytes": 569691,
+          "sha256": "d141a5494b69dff009dae015943b723f9d6adf934285c6d0967baf3494f35fdd"
+        },
+        {
+          "name": "current-ten-20261001-zodiac-security-05.jpg",
+          "bytes": 190951,
+          "sha256": "bd2a916d63ab9010948e85a1d983c7433db85f1c0cdfc79af3b6bc56d1d0777b"
+        },
+        {
+          "name": "current-ten-20261001-zodiac-security-06.jpg",
+          "bytes": 417289,
+          "sha256": "bf53befd69df755ae7fe7872ab51e7c19bda01ae81040dd0c80af14cfa8c24db"
+        },
+        {
+          "name": "current-ten-20261001-zodiac-security.mp4",
+          "bytes": 1472910,
+          "sha256": "b36bb48c31725b22577fbe2cc51bb8847ed0dfec7419067e88a685f5bd99fc48"
+        }
+      ]
+    },
+    {
+      "id": "current-ten-20261001-love-umbrella",
+      "status": "rendered",
+      "card_count": 5,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Umbrellas%20in%20the%20rain.jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Rain%20under%20the%20umbrella.jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Man%20using%20a%20an%20umbrella%20to%20protect%20from%20rain%20showers.jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/As%20an%20umbrella%20in%20the%20rain%20(48953583878).jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Under%20the%20Umbrella%20in%20the%20Rain.jpg?width=1600",
+          "source_credit": "Wikimedia Commons — rights-cleared file page",
+          "license": "See Commons source file license"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-ten-20261001-love-umbrella-01.jpg",
+          "bytes": 377205,
+          "sha256": "69911ac4df71ed7ec6620fd8306199e8e2e06d5581de37438c9caf3a5ab8160b"
+        },
+        {
+          "name": "current-ten-20261001-love-umbrella-02.jpg",
+          "bytes": 240981,
+          "sha256": "056d38c32fb0d78bcd0dfc75118088e9a9964307dfe90b5c6325cfd4daf12640"
+        },
+        {
+          "name": "current-ten-20261001-love-umbrella-03.jpg",
+          "bytes": 488829,
+          "sha256": "417b9c4413685257861c957f654016014485959446ca1136f4ad4c339a72c90e"
+        },
+        {
+          "name": "current-ten-20261001-love-umbrella-04.jpg",
+          "bytes": 315685,
+          "sha256": "4fbef5c393ad7525a2e8f3f7557f9244ca7601bee6c9190969f9e637668eae7e"
+        },
+        {
+          "name": "current-ten-20261001-love-umbrella-05.jpg",
+          "bytes": 405591,
+          "sha256": "ea0f22d04658963425b7b33cb3de6656ebe4d5a0c7f8b1259fb8eae52ced3a7c"
+        },
+        {
+          "name": "current-ten-20261001-love-umbrella.mp4",
+          "bytes": 1047605,
+          "sha256": "c804c96f4f2ef4afbb98fcb00739e2c89ae1dbccb6b3d6a4a0e1e908deaf8898"
+        }
+      ]
+    },
+    {
+      "id": "current-ten-20261001-myth-seasons",
+      "status": "rendered",
+      "card_count": 4,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 28.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/cd/23_0053535_Convair_Negative_Image_-_Photograph_of_Earth_from_space_%2853917734097%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "San Diego Air & Space Museum Archives",
+          "license": "Public domain",
+          "source_title": "File:23 0053535 Convair Negative Image - Photograph of Earth from space (53917734097).jpg",
+          "search_query_used": "Earth from space photograph"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Earth-DSCOVR-20150706-IFV.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "NASA",
+          "license": "Public domain",
+          "source_title": "File:Earth-DSCOVR-20150706-IFV.jpg",
+          "search_query_used": "Earth globe sunlight photograph"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/ee/Mars%27_Closest_Approach_to_Earth_in_2018.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "NASA Hubble",
+          "license": "CC BY 2.0",
+          "source_title": "File:Mars' Closest Approach to Earth in 2018.jpg",
+          "search_query_used": "Earth hemisphere space photograph"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/29/Chatham_Islands_from_space_ISS005-E-15265.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "NASA",
+          "license": "Public domain",
+          "source_title": "File:Chatham Islands from space ISS005-E-15265.jpg",
+          "search_query_used": "Sun Earth space photograph"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-ten-20261001-myth-seasons-01.jpg",
+          "bytes": 184451,
+          "sha256": "b00af97ac106a153dac416aa5f0641c4ed87aede35d4aae72567da243cb4be91"
+        },
+        {
+          "name": "current-ten-20261001-myth-seasons-02.jpg",
+          "bytes": 339264,
+          "sha256": "691d0ac3ff39f158fd72b241f1abc4f0ed45a06037e99e7a5ccd4b2a051cc72c"
+        },
+        {
+          "name": "current-ten-20261001-myth-seasons-03.jpg",
+          "bytes": 165640,
+          "sha256": "46293d5138e314ec3cd3406f1639796ba7df4ac43518a6d51aaf1eeb99146b17"
+        },
+        {
+          "name": "current-ten-20261001-myth-seasons-04.jpg",
+          "bytes": 429421,
+          "sha256": "6d55293876bef242875d058c06e2b35e99d81a620b612219f897617eb53e7d0a"
+        },
+        {
+          "name": "current-ten-20261001-myth-seasons.mp4",
+          "bytes": 657713,
+          "sha256": "19e91fbe6c27da973dea7da2724848b4c780dd0119b2e906eaf28490f68b933a"
+        }
+      ]
+    }
+  ]
+}
