@@ -1,0 +1,4 @@
+file '/tmp/dog/s1.mp4'
+file '/tmp/dog/s2.mp4'
+file '/tmp/dog/s3.mp4'
+file '/tmp/dog/s4.mp4'
