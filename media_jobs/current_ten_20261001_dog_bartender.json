@@ -1,0 +1,55 @@
+{
+  "approved": false,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_TEN_DAILY_20260927",
+  "local_date": "2026-10-01",
+  "active_metricool_brand_id": 7076410,
+  "slot": "10:00",
+  "category": "dog_bartender",
+  "release_policy": "SCRIPT_READY_ONLY — no render, scheduling or publishing until four fresh same-dog photorealistic finals and the YouTube slideshow pass PASSED_FINAL_REVIEW.",
+  "reason_blocked": "Fresh 2026-10-01 same-dog photorealistic visual set is not available. Do not reuse prior Dog Bartender media.",
+  "jobs": [
+    {
+      "id": "current-ten-20261001-dog-bartender-phone",
+      "expected_cards": 4,
+      "seconds_per_slide": 7,
+      "title": "Σκύλος Μπάρμαν — κλείσε το κινητό",
+      "hook": "«Έχεις κοκτέιλ για να ξεχάσω την πρώην;»",
+      "caption": "Ο πελάτης ζήτησε ένα κοκτέιλ για να ξεχάσει την πρώην. Ο Σκύλος Μπάρμαν είχε άλλη συνταγή.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΣκύλοςΜπάρμαν #Χιούμορ #Σχέσεις #Ιστορίες #Carousel",
+      "visual_rules": {
+        "same_character_all_cards": "Ίδιος φωτορεαλιστικός χρυσοκάστανος/καφέ σκύλος-μπάρμαν με μαύρη ποδιά και σκούρο μπλε μαντήλι.",
+        "style": "photorealistic cinematic warm wooden bar",
+        "distinct_composition_each_card": true,
+        "no_text_baked_into_source_images": true,
+        "fresh_media_only": true
+      },
+      "slides": [
+        {
+          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 1/4",
+          "text": "ΠΕΛΑΤΗΣ: «Έχεις κοκτέιλ για να ξεχάσω την πρώην;» Ο μπάρμαν σταματά για ένα δευτερόλεπτο και τον κοιτάζει.",
+          "image_prompt": "Same distinctive photorealistic golden-brown dog bartender behind a warm wooden bar, black apron, dark navy neckerchief, looking seriously toward an unseen customer, cinematic square photograph, no text."
+        },
+        {
+          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 2/4",
+          "text": "ΜΠΑΡΜΑΝ: «Βεβαίως. Λέγεται “Κλείσε το κινητό”.» Και βάζει πάγο στο ποτήρι.",
+          "image_prompt": "Same distinctive photorealistic golden-brown dog bartender in black apron and dark navy neckerchief adding ice to a cocktail glass, different camera angle in the same warm wooden bar, cinematic square photograph, no text."
+        },
+        {
+          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 3/4",
+          "text": "ΠΕΛΑΤΗΣ: «Και τι έχει μέσα;» Ο σκύλος σπρώχνει ήρεμα το ποτήρι προς την άλλη πλευρά του μπαρ.",
+          "image_prompt": "Same distinctive photorealistic golden-brown dog bartender in black apron and dark navy neckerchief pushing a simple drink across the bar with one paw, side composition, warm cinematic bar, square photograph, no text."
+        },
+        {
+          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 4/4",
+          "text": "ΜΠΑΡΜΑΝ: «Πάγο, νερό και 30 μέρες χωρίς να κοιτάς τα stories της.»",
+          "image_prompt": "Same distinctive photorealistic golden-brown dog bartender in black apron and dark navy neckerchief giving a deadpan look beside a simple iced water glass, final punchline composition, warm wooden bar, cinematic square photograph, no text."
+        }
+      ],
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "required_outputs": {
+        "facebook_instagram_tiktok": "4 native 1080x1080 photo cards; TikTok autoAddMusic=true",
+        "youtube": "complete 1080x1920 vertical slideshow of all 4 cards with exactly one permitted instrumental layer"
+      }
+    }
+  ]
+}
