@@ -1,55 +1,48 @@
 {
-  "approved": false,
+  "approved": true,
   "paid_generation_allowed": false,
   "strategy_id": "CURRENT_TEN_DAILY_20260927",
   "local_date": "2026-10-01",
   "active_metricool_brand_id": 7076410,
-  "slot": "10:00",
-  "category": "dog_bartender",
-  "release_policy": "SCRIPT_READY_ONLY — no render, scheduling or publishing until four fresh same-dog photorealistic finals and the YouTube slideshow pass PASSED_FINAL_REVIEW.",
-  "reason_blocked": "Fresh 2026-10-01 same-dog photorealistic visual set is not available. Do not reuse prior Dog Bartender media.",
+  "require_photographic_visuals": true,
+  "release_policy": "Render only. Social release requires direct visual QA of the exact final files and a fresh duplicate check.",
   "jobs": [
     {
-      "id": "current-ten-20261001-dog-bartender-phone",
+      "id": "current-ten-20261001-dog-bartender-courage",
       "expected_cards": 4,
       "seconds_per_slide": 7,
-      "title": "Σκύλος Μπάρμαν — κλείσε το κινητό",
-      "hook": "«Έχεις κοκτέιλ για να ξεχάσω την πρώην;»",
-      "caption": "Ο πελάτης ζήτησε ένα κοκτέιλ για να ξεχάσει την πρώην. Ο Σκύλος Μπάρμαν είχε άλλη συνταγή.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΣκύλοςΜπάρμαν #Χιούμορ #Σχέσεις #Ιστορίες #Carousel",
-      "visual_rules": {
-        "same_character_all_cards": "Ίδιος φωτορεαλιστικός χρυσοκάστανος/καφέ σκύλος-μπάρμαν με μαύρη ποδιά και σκούρο μπλε μαντήλι.",
-        "style": "photorealistic cinematic warm wooden bar",
-        "distinct_composition_each_card": true,
-        "no_text_baked_into_source_images": true,
-        "fresh_media_only": true
-      },
+      "title": "Σκύλος Μπάρμαν — το ποτό για θάρρος",
+      "caption": "Ο πελάτης ζήτησε κάτι για να βρει το θάρρος να στείλει επιτέλους το μήνυμα. Ο Σκύλος Μπάρμαν είχε άλλη συνταγή.\n\nΕικόνες AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΣκύλοςΜπάρμαν #Χιούμορ #Σχέσεις #Ιστορίες #Carousel",
       "slides": [
         {
           "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 1/4",
-          "text": "ΠΕΛΑΤΗΣ: «Έχεις κοκτέιλ για να ξεχάσω την πρώην;» Ο μπάρμαν σταματά για ένα δευτερόλεπτο και τον κοιτάζει.",
-          "image_prompt": "Same distinctive photorealistic golden-brown dog bartender behind a warm wooden bar, black apron, dark navy neckerchief, looking seriously toward an unseen customer, cinematic square photograph, no text."
+          "text": "ΠΕΛΑΤΗΣ: «Έχεις κάτι για να βρω το θάρρος να στείλω επιτέλους αυτό το μήνυμα;» Ο μπάρμαν τον κοιτάζει ήρεμα.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fmedia.canva.com%2Fv2%2Fimage-resize%2Fformat%3AJPG%2Fheight%3A200%2Fquality%3A75%2Furi%3Aifs%253A%252F%252FM%252Ff56b35ae-0b65-4cb8-bf3c-2967230767c8%2Fwatermark%3AF%2Fwidth%3A200%3Fcsig%3DAAAAAAAAAAAAAAAAAAAAAMOCnER70qypUU7qBCzU85IZYAE615eVeCdn4neBm5ML%26exp%3D1790843465%26osig%3DAAAAAAAAAAAAAAAAAAAAAMu_1NhPbdpKBomSMr-r-e5owYFRsVc1diWO1-uuC5si%26signer%3Dmedia-rpc%26x-canva-quality%3Dthumbnail&w=1600&output=jpg&sharp=1",
+          "source_credit": "AI-generated recurring dog bartender scene via Canva",
+          "license": "Project-generated AI visual"
         },
         {
           "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 2/4",
-          "text": "ΜΠΑΡΜΑΝ: «Βεβαίως. Λέγεται “Κλείσε το κινητό”.» Και βάζει πάγο στο ποτήρι.",
-          "image_prompt": "Same distinctive photorealistic golden-brown dog bartender in black apron and dark navy neckerchief adding ice to a cocktail glass, different camera angle in the same warm wooden bar, cinematic square photograph, no text."
+          "text": "Ο σκύλος σπρώχνει ένα ποτήρι νερό προς το μέρος του. «Πρώτα πιες αυτό. Θάρρος με καθαρό μυαλό.»",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fmedia.canva.com%2Fv2%2Fimage-resize%2Fformat%3AJPG%2Fheight%3A200%2Fquality%3A75%2Furi%3Aifs%253A%252F%252FM%252Ff5170829-f2d9-4b6d-a349-68d2591b03b8%2Fwatermark%3AF%2Fwidth%3A200%3Fcsig%3DAAAAAAAAAAAAAAAAAAAAAPdxquVPMpQDyjCIyNlpCpGBdwieR-SXtMgo15allPDn%26exp%3D1790843728%26osig%3DAAAAAAAAAAAAAAAAAAAAAAaN8vhAWFwpOa7IelgtshLQzYjGrmrY6v5rsmmPA5Ft%26signer%3Dmedia-rpc%26x-canva-quality%3Dthumbnail&w=1600&output=jpg&sharp=1",
+          "source_credit": "AI-generated recurring dog bartender scene via Canva",
+          "license": "Project-generated AI visual"
         },
         {
           "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 3/4",
-          "text": "ΠΕΛΑΤΗΣ: «Και τι έχει μέσα;» Ο σκύλος σπρώχνει ήρεμα το ποτήρι προς την άλλη πλευρά του μπαρ.",
-          "image_prompt": "Same distinctive photorealistic golden-brown dog bartender in black apron and dark navy neckerchief pushing a simple drink across the bar with one paw, side composition, warm cinematic bar, square photograph, no text."
+          "text": "«Και μετά;» ρωτά ο πελάτης. Ο μπάρμαν κοιτάζει το κινητό στον πάγκο. «Γράψε αυτό που πραγματικά θες να πεις.»",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fmedia.canva.com%2Fv2%2Fimage-resize%2Fformat%3AJPG%2Fheight%3A200%2Fquality%3A75%2Furi%3Aifs%253A%252F%252FM%252F942d7bda-4481-4d61-8b9c-f75aed092153%2Fwatermark%3AF%2Fwidth%3A200%3Fcsig%3DAAAAAAAAAAAAAAAAAAAAAEKy5FwUzpiv1ns17W0cBKTiyed6HfOarZI9mlMAdfNu%26exp%3D1790842636%26osig%3DAAAAAAAAAAAAAAAAAAAAAMmRXPKyXnYqXvaEfoYsm1hkQf7NP0cbSTb42ojuy1I0%26signer%3Dmedia-rpc%26x-canva-quality%3Dthumbnail&w=1600&output=jpg&sharp=1",
+          "source_credit": "AI-generated recurring dog bartender scene via Canva",
+          "license": "Project-generated AI visual"
         },
         {
           "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 4/4",
-          "text": "ΜΠΑΡΜΑΝ: «Πάγο, νερό και 30 μέρες χωρίς να κοιτάς τα stories της.»",
-          "image_prompt": "Same distinctive photorealistic golden-brown dog bartender in black apron and dark navy neckerchief giving a deadpan look beside a simple iced water glass, final punchline composition, warm wooden bar, cinematic square photograph, no text."
+          "text": "«Εγώ κοκτέιλ φτιάχνω», λέει το βλέμμα του. «Την ειλικρίνεια θα τη βάλεις εσύ.»",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fmedia.canva.com%2Fv2%2Fimage-resize%2Fformat%3AJPG%2Fheight%3A200%2Fquality%3A75%2Furi%3Aifs%253A%252F%252FM%252F352991ad-595e-4bfd-a88a-82350be116a9%2Fwatermark%3AF%2Fwidth%3A200%3Fcsig%3DAAAAAAAAAAAAAAAAAAAAAHtrJ6RZrlqh_oKTxM1Nd7ZR9-2rvMrvMY5vGBZwWjiB%26exp%3D1790842311%26osig%3DAAAAAAAAAAAAAAAAAAAAAH9P7BLt3H7HsdD-YioOQtyf8Hneq7JtnzZ6prbWvjpp%26signer%3Dmedia-rpc%26x-canva-quality%3Dthumbnail&w=1600&output=jpg&sharp=1",
+          "source_credit": "AI-generated recurring dog bartender scene via Canva",
+          "license": "Project-generated AI visual"
         }
-      ],
-      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
-      "required_outputs": {
-        "facebook_instagram_tiktok": "4 native 1080x1080 photo cards; TikTok autoAddMusic=true",
-        "youtube": "complete 1080x1920 vertical slideshow of all 4 cards with exactly one permitted instrumental layer"
-      }
+      ]
     }
   ]
 }
