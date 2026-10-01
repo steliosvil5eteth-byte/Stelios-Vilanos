@@ -1,0 +1,42 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_TEN_DAILY_20260927",
+  "local_date": "2026-10-01",
+  "active_metricool_brand_id": 7076410,
+  "jobs": [
+    {
+      "id": "current-ten-20261001-phenomenon-frost-flowers",
+      "local_date": "2026-10-01",
+      "slot": "17:00",
+      "title": "Frost flowers: τα «λουλούδια» που φυτρώνουν πάνω στον πάγο",
+      "voice": "el-GR-NestorasNeural",
+      "background_music": false,
+      "photo_target": 10,
+      "scenes": 10,
+      "min_duration_seconds": 80,
+      "max_duration_seconds": 150,
+      "caption": "Frost flowers: εύθραυστοι κρύσταλλοι πάγου που σχηματίζονται κυρίως πάνω σε πολύ νέο θαλάσσιο πάγο, όταν η επιφάνεια είναι σχετικά θερμότερη από τον πολύ ψυχρό και ήρεμο αέρα.\n\nΠηγές: National Snow and Ice Data Center · Geophysical Research Letters.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΠαράξεναΦαινόμενα #FrostFlowers #Πάγος #Αρκτική #Επιστήμη",
+      "sources": [
+        "National Snow and Ice Data Center — frost flowers",
+        "Style & Worster, Geophysical Research Letters 2009 — Frost flower formation on sea ice and lake ice",
+        "NOAA Photo Library — frost flowers on pancake ice"
+      ],
+      "commons_queries": [
+        "frost flowers sea ice photograph",
+        "frost flowers Arctic sea ice photograph",
+        "frost flowers Alaska sea ice photograph",
+        "frost flowers ocean ice photograph",
+        "young sea ice frost flowers photograph",
+        "Beaufort Sea frost flowers photograph",
+        "Arctic sea ice crystals photograph",
+        "sea ice frost crystal photograph",
+        "polar frost flowers photograph",
+        "frost flowers Greenland sea ice photograph",
+        "new sea ice crystals photograph",
+        "Arctic ice close up photograph"
+      ],
+      "script": "Μοιάζουν με μικρά λουλούδια από γυαλί, αλλά δεν είναι φυτά. Τα frost flowers, ή «άνθη πάγου», είναι συστάδες λεπτών κρυστάλλων που εμφανίζονται πάνω σε πολύ νέο πάγο, ιδιαίτερα σε πολικές θάλασσες. Για να σχηματιστούν χρειάζεται ένας πολύ συγκεκριμένος συνδυασμός. Ο πάγος πρέπει να είναι λεπτός και σχετικά θερμότερος από τον αέρα ακριβώς από πάνω του. Ο αέρας πρέπει να είναι πολύ κρύος και αρκετά ήρεμος. Τότε η υγρασία κοντά στην επιφάνεια μπορεί να περάσει κατευθείαν σε στερεή μορφή και να δημιουργήσει μικρές διακλαδώσεις σαν πέταλα ή φτέρες. Το National Snow and Ice Data Center περιγράφει τα frost flowers ως κρυστάλλους που σχηματίζονται όταν οι υδρατμοί γίνονται στερεό και αποτίθενται πάνω στον θαλάσσιο πάγο. Μελέτες στο Geophysical Research Letters έδειξαν ότι το φαινόμενο συνδέεται με τη μεγάλη διαφορά θερμοκρασίας ανάμεσα στην επιφάνεια του νέου πάγου και την ατμόσφαιρα. Ένα ακόμη παράξενο στοιχείο είναι το αλάτι. Πάνω στον θαλάσσιο πάγο, τα frost flowers μπορούν να γίνουν πολύ αλμυρά, επειδή έρχονται σε επαφή με άλμη που συγκεντρώνεται στην επιφάνεια του νέου πάγου. Αυτό τα κάνει ενδιαφέροντα όχι μόνο για φωτογράφους αλλά και για επιστήμονες που μελετούν την ανταλλαγή αλάτων και χημικών ουσιών ανάμεσα στον ωκεανό, τον πάγο και την ατμόσφαιρα. Είναι επίσης εύθραυστα και βραχύβια. Όσο ο πάγος παχαίνει, η θερμοκρασία της επιφάνειάς του πλησιάζει περισσότερο τη θερμοκρασία του αέρα και οι κατάλληλες συνθήκες χάνονται. Ο δυνατός άνεμος επίσης μπορεί να εμποδίσει την ανάπτυξή τους. Έτσι, ένα ολόκληρο πεδίο από «λουλούδια» μπορεί να εμφανιστεί γρήγορα και να εξαφανιστεί σύντομα. Είναι ένα εντυπωσιακό παράδειγμα του πώς απλή φυσική της θερμοκρασίας, της υγρασίας και του πάγου μπορεί να δημιουργήσει κάτι που μοιάζει σχεδόν εξωπραγματικό. Αν σας άρεσε, ακολουθήστε για περισσότερα."
+    }
+  ]
+}
