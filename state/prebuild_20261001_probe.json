@@ -1,1 +1,41 @@
-{"status":"PREBUILD_PENDING","date":"2026-10-01"}
+{
+  "status": "BLOCKED_FAIL_CLOSED",
+  "date": "2026-10-01",
+  "strategy_id": "CURRENT_TEN_DAILY_20260927",
+  "metricool_brand_id": 7076410,
+  "checked_at_local": "2026-10-01T06:25:48+03:00",
+  "metricool_today_logical_posts": 0,
+  "metricool_today_provider_destinations": 0,
+  "baseline_expected_logical_posts": 10,
+  "baseline_expected_provider_destinations": 40,
+  "source_manifests_ready": {
+    "carousels": [
+      "relationships",
+      "survival",
+      "zodiac_one_six_pair_carousel",
+      "love_soul_relationship",
+      "myth_or_truth"
+    ],
+    "narrated": [
+      "greece_two_day_trip",
+      "strange_real_phenomenon",
+      "documented_experiments",
+      "international_legend"
+    ],
+    "dog_bartender": false
+  },
+  "release_blockers": [
+    "No 2026-10-01 exact final media exists on media-output.",
+    "No 2026-10-01 exact-final direct visual QA/PASSED_FINAL_REVIEW exists.",
+    "Dog Bartender 10:00 has no fresh 2026-10-01 source/final pack.",
+    "The connected GitHub write path cannot create/update the required Actions workflow in this run, so current manifests cannot be rendered through the approved renderer.",
+    "No Remote Desktop Commander device is connected as an alternate renderer.",
+    "Narrated videos cannot be substituted with HeyGen voices because the required voice is exactly el-GR-NestorasNeural."
+  ],
+  "reconciliation_notes": [
+    "Active Notion CURRENT_TEN_DAILY and config/content_strategy.json agree on exactly 10 logical posts/day and zodiac as one six-card pair-comparison carousel.",
+    "Older Notion V2 01/10 pages use historical formats/times (including 23:00 legend and old zodiac format) and are excluded by the user's newest instruction.",
+    "No Metricool writes were made because FAIL CLOSED release gates are unmet."
+  ],
+  "metricool_write_performed": false
+}
