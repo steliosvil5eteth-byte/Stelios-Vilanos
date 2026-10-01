@@ -1,0 +1,48 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_TEN_DAILY_20260927",
+  "local_date": "2026-10-01",
+  "active_metricool_brand_id": 7076410,
+  "require_photographic_visuals": true,
+  "release_policy": "Render only. Social release requires direct visual QA of the exact final files and a fresh duplicate check.",
+  "jobs": [
+    {
+      "id": "current-ten-20261001-dog-bartender-courage",
+      "expected_cards": 4,
+      "seconds_per_slide": 7,
+      "title": "Σκύλος Μπάρμαν — το ποτό για θάρρος",
+      "caption": "Ο πελάτης ζήτησε κάτι για να βρει το θάρρος να στείλει επιτέλους το μήνυμα. Ο Σκύλος Μπάρμαν είχε άλλη συνταγή.\n\nΕικόνες AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΣκύλοςΜπάρμαν #Χιούμορ #Σχέσεις #Ιστορίες #Carousel",
+      "slides": [
+        {
+          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 1/4",
+          "text": "ΠΕΛΑΤΗΣ: «Έχεις κάτι για να βρω το θάρρος να στείλω επιτέλους αυτό το μήνυμα;» Ο μπάρμαν τον κοιτάζει ήρεμα.",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fmedia.canva.com%2Fv2%2Fimage-resize%2Fformat%3AJPG%2Fheight%3A200%2Fquality%3A75%2Furi%3Aifs%253A%252F%252FM%252Ff56b35ae-0b65-4cb8-bf3c-2967230767c8%2Fwatermark%3AF%2Fwidth%3A200%3Fcsig%3DAAAAAAAAAAAAAAAAAAAAAMOCnER70qypUU7qBCzU85IZYAE615eVeCdn4neBm5ML%26exp%3D1790843465%26osig%3DAAAAAAAAAAAAAAAAAAAAAMu_1NhPbdpKBomSMr-r-e5owYFRsVc1diWO1-uuC5si%26signer%3Dmedia-rpc%26x-canva-quality%3Dthumbnail&w=1600&output=jpg&sharp=1",
+          "source_credit": "AI-generated recurring dog bartender scene via Canva",
+          "license": "Project-generated AI visual"
+        },
+        {
+          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 2/4",
+          "text": "Ο σκύλος σπρώχνει ένα ποτήρι νερό προς το μέρος του. «Πρώτα πιες αυτό. Θάρρος με καθαρό μυαλό.»",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fmedia.canva.com%2Fv2%2Fimage-resize%2Fformat%3AJPG%2Fheight%3A200%2Fquality%3A75%2Furi%3Aifs%253A%252F%252FM%252Ff5170829-f2d9-4b6d-a349-68d2591b03b8%2Fwatermark%3AF%2Fwidth%3A200%3Fcsig%3DAAAAAAAAAAAAAAAAAAAAAPdxquVPMpQDyjCIyNlpCpGBdwieR-SXtMgo15allPDn%26exp%3D1790843728%26osig%3DAAAAAAAAAAAAAAAAAAAAAAaN8vhAWFwpOa7IelgtshLQzYjGrmrY6v5rsmmPA5Ft%26signer%3Dmedia-rpc%26x-canva-quality%3Dthumbnail&w=1600&output=jpg&sharp=1",
+          "source_credit": "AI-generated recurring dog bartender scene via Canva",
+          "license": "Project-generated AI visual"
+        },
+        {
+          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 3/4",
+          "text": "«Και μετά;» ρωτά ο πελάτης. Ο μπάρμαν κοιτάζει το κινητό στον πάγκο. «Γράψε αυτό που πραγματικά θες να πεις.»",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fmedia.canva.com%2Fv2%2Fimage-resize%2Fformat%3AJPG%2Fheight%3A200%2Fquality%3A75%2Furi%3Aifs%253A%252F%252FM%252F942d7bda-4481-4d61-8b9c-f75aed092153%2Fwatermark%3AF%2Fwidth%3A200%3Fcsig%3DAAAAAAAAAAAAAAAAAAAAAEKy5FwUzpiv1ns17W0cBKTiyed6HfOarZI9mlMAdfNu%26exp%3D1790842636%26osig%3DAAAAAAAAAAAAAAAAAAAAAMmRXPKyXnYqXvaEfoYsm1hkQf7NP0cbSTb42ojuy1I0%26signer%3Dmedia-rpc%26x-canva-quality%3Dthumbnail&w=1600&output=jpg&sharp=1",
+          "source_credit": "AI-generated recurring dog bartender scene via Canva",
+          "license": "Project-generated AI visual"
+        },
+        {
+          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 4/4",
+          "text": "«Εγώ κοκτέιλ φτιάχνω», λέει το βλέμμα του. «Την ειλικρίνεια θα τη βάλεις εσύ.»",
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fmedia.canva.com%2Fv2%2Fimage-resize%2Fformat%3AJPG%2Fheight%3A200%2Fquality%3A75%2Furi%3Aifs%253A%252F%252FM%252F352991ad-595e-4bfd-a88a-82350be116a9%2Fwatermark%3AF%2Fwidth%3A200%3Fcsig%3DAAAAAAAAAAAAAAAAAAAAAHtrJ6RZrlqh_oKTxM1Nd7ZR9-2rvMrvMY5vGBZwWjiB%26exp%3D1790842311%26osig%3DAAAAAAAAAAAAAAAAAAAAAH9P7BLt3H7HsdD-YioOQtyf8Hneq7JtnzZ6prbWvjpp%26signer%3Dmedia-rpc%26x-canva-quality%3Dthumbnail&w=1600&output=jpg&sharp=1",
+          "source_credit": "AI-generated recurring dog bartender scene via Canva",
+          "license": "Project-generated AI visual"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "batch_id": "8a66409864c5e49f",
+  "batch_sha256": "8a66409864c5e49fd811ea71c1c47832d3353dac69787016834124624eb95bb2",
+  "paid_ai_credits_used": 0,
+  "photographic_visuals_required": true,
+  "jobs": [
+    {
+      "id": "current-ten-20261001-dog-bartender-courage",
+      "status": "rendered",
+      "card_count": 4,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 28.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fmedia.canva.com%2Fv2%2Fimage-resize%2Fformat%3AJPG%2Fheight%3A200%2Fquality%3A75%2Furi%3Aifs%253A%252F%252FM%252Ff56b35ae-0b65-4cb8-bf3c-2967230767c8%2Fwatermark%3AF%2Fwidth%3A200%3Fcsig%3DAAAAAAAAAAAAAAAAAAAAAMOCnER70qypUU7qBCzU85IZYAE615eVeCdn4neBm5ML%26exp%3D1790843465%26osig%3DAAAAAAAAAAAAAAAAAAAAAMu_1NhPbdpKBomSMr-r-e5owYFRsVc1diWO1-uuC5si%26signer%3Dmedia-rpc%26x-canva-quality%3Dthumbnail&w=1600&output=jpg&sharp=1",
+          "source_credit": "AI-generated recurring dog bartender scene via Canva",
+          "license": "Project-generated AI visual"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fmedia.canva.com%2Fv2%2Fimage-resize%2Fformat%3AJPG%2Fheight%3A200%2Fquality%3A75%2Furi%3Aifs%253A%252F%252FM%252Ff5170829-f2d9-4b6d-a349-68d2591b03b8%2Fwatermark%3AF%2Fwidth%3A200%3Fcsig%3DAAAAAAAAAAAAAAAAAAAAAPdxquVPMpQDyjCIyNlpCpGBdwieR-SXtMgo15allPDn%26exp%3D1790843728%26osig%3DAAAAAAAAAAAAAAAAAAAAAAaN8vhAWFwpOa7IelgtshLQzYjGrmrY6v5rsmmPA5Ft%26signer%3Dmedia-rpc%26x-canva-quality%3Dthumbnail&w=1600&output=jpg&sharp=1",
+          "source_credit": "AI-generated recurring dog bartender scene via Canva",
+          "license": "Project-generated AI visual"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fmedia.canva.com%2Fv2%2Fimage-resize%2Fformat%3AJPG%2Fheight%3A200%2Fquality%3A75%2Furi%3Aifs%253A%252F%252FM%252F942d7bda-4481-4d61-8b9c-f75aed092153%2Fwatermark%3AF%2Fwidth%3A200%3Fcsig%3DAAAAAAAAAAAAAAAAAAAAAEKy5FwUzpiv1ns17W0cBKTiyed6HfOarZI9mlMAdfNu%26exp%3D1790842636%26osig%3DAAAAAAAAAAAAAAAAAAAAAMmRXPKyXnYqXvaEfoYsm1hkQf7NP0cbSTb42ojuy1I0%26signer%3Dmedia-rpc%26x-canva-quality%3Dthumbnail&w=1600&output=jpg&sharp=1",
+          "source_credit": "AI-generated recurring dog bartender scene via Canva",
+          "license": "Project-generated AI visual"
+        },
+        {
+          "source_url": "https://images.weserv.nl/?url=https%3A%2F%2Fmedia.canva.com%2Fv2%2Fimage-resize%2Fformat%3AJPG%2Fheight%3A200%2Fquality%3A75%2Furi%3Aifs%253A%252F%252FM%252F352991ad-595e-4bfd-a88a-82350be116a9%2Fwatermark%3AF%2Fwidth%3A200%3Fcsig%3DAAAAAAAAAAAAAAAAAAAAAHtrJ6RZrlqh_oKTxM1Nd7ZR9-2rvMrvMY5vGBZwWjiB%26exp%3D1790842311%26osig%3DAAAAAAAAAAAAAAAAAAAAAH9P7BLt3H7HsdD-YioOQtyf8Hneq7JtnzZ6prbWvjpp%26signer%3Dmedia-rpc%26x-canva-quality%3Dthumbnail&w=1600&output=jpg&sharp=1",
+          "source_credit": "AI-generated recurring dog bartender scene via Canva",
+          "license": "Project-generated AI visual"
+        }
+      ],
+      "files": [
+        {
+          "name": "current-ten-20261001-dog-bartender-courage-01.jpg",
+          "bytes": 304012,
+          "sha256": "552b7ef8a1157e27375795ee11a86a2227b28466d921d9e12232778e47c245ad"
+        },
+        {
+          "name": "current-ten-20261001-dog-bartender-courage-02.jpg",
+          "bytes": 291604,
+          "sha256": "d30a2851558195c3326d4b76a64d8090573602ace2c8144f638938e815bf17a8"
+        },
+        {
+          "name": "current-ten-20261001-dog-bartender-courage-03.jpg",
+          "bytes": 262133,
+          "sha256": "c749ae941a59376829774e352153ae63538e116bd65fdade6e1c4e375f7e4a04"
+        },
+        {
+          "name": "current-ten-20261001-dog-bartender-courage-04.jpg",
+          "bytes": 265504,
+          "sha256": "98f42d674cdd5954bacc57e3849d445bcafcdff00b6b2447c0f3f3528ecf69ba"
+        },
+        {
+          "name": "current-ten-20261001-dog-bartender-courage.mp4",
+          "bytes": 595142,
+          "sha256": "e50aa9c6bd4a0fd0665ec72f5c4316d5b306bfc7eb8bb09561ded79b43285308"
+        }
+      ]
+    }
+  ]
+}
