@@ -1,0 +1,8 @@
+file '/home/runner/work/_temp/final/current-ten-20261001-experiment-good-samaritan/clips/clip-01.mp4'
+file '/home/runner/work/_temp/final/current-ten-20261001-experiment-good-samaritan/clips/clip-02.mp4'
+file '/home/runner/work/_temp/final/current-ten-20261001-experiment-good-samaritan/clips/clip-03.mp4'
+file '/home/runner/work/_temp/final/current-ten-20261001-experiment-good-samaritan/clips/clip-04.mp4'
+file '/home/runner/work/_temp/final/current-ten-20261001-experiment-good-samaritan/clips/clip-05.mp4'
+file '/home/runner/work/_temp/final/current-ten-20261001-experiment-good-samaritan/clips/clip-06.mp4'
+file '/home/runner/work/_temp/final/current-ten-20261001-experiment-good-samaritan/clips/clip-07.mp4'
+file '/home/runner/work/_temp/final/current-ten-20261001-experiment-good-samaritan/clips/clip-08.mp4'
