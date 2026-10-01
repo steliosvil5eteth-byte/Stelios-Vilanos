@@ -1,0 +1,41 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_TEN_DAILY_20260927",
+  "local_date": "2026-10-01",
+  "active_metricool_brand_id": 7076410,
+  "jobs": [
+    {
+      "id": "current-ten-20261001-experiment-good-samaritan",
+      "local_date": "2026-10-01",
+      "slot": "18:30",
+      "title": "Το πείραμα του «Καλού Σαμαρείτη»: τι κάνει η βιασύνη στη βοήθεια",
+      "voice": "el-GR-NestorasNeural",
+      "background_music": false,
+      "photo_target": 10,
+      "scenes": 10,
+      "min_duration_seconds": 80,
+      "max_duration_seconds": 150,
+      "caption": "Το πείραμα του «Καλού Σαμαρείτη», Princeton 1973: η πίεση χρόνου συνδέθηκε έντονα με το αν οι συμμετέχοντες σταματούσαν για να βοηθήσουν έναν άνθρωπο που φαινόταν να χρειάζεται βοήθεια. Το θέμα της ομιλίας τους δεν είχε σημαντική επίδραση.\n\nΠηγή: Darley & Batson, Journal of Personality and Social Psychology, 1973, DOI 10.1037/h0034449.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΚοινωνικήΨυχολογία #Πείραμα #Βοήθεια #Χρόνος #Ψυχολογία",
+      "sources": [
+        "Darley & Batson 1973 — From Jerusalem to Jericho: A Study of Situational and Dispositional Variables in Helping Behavior, DOI 10.1037/h0034449",
+        "Stanford SPARQ — Good Samaritan experiment summary"
+      ],
+      "commons_queries": [
+        "Princeton Theological Seminary campus photograph",
+        "Princeton University walkway photograph",
+        "Princeton campus doorway photograph",
+        "Princeton New Jersey campus path photograph",
+        "university students walking campus photograph",
+        "campus clock photograph",
+        "university hallway photograph",
+        "student walking alone campus photograph",
+        "Princeton University courtyard photograph",
+        "college campus autumn photograph",
+        "university building entrance photograph",
+        "Princeton New Jersey street photograph"
+      ],
+      "script": "Το 1973, οι ψυχολόγοι John Darley και Daniel Batson έκαναν ένα από τα πιο γνωστά πειράματα για τη βοήθεια προς έναν άγνωστο. Οι συμμετέχοντες ήταν φοιτητές θεολογίας στο Princeton. Οι ερευνητές τούς ζήτησαν να ετοιμάσουν μια σύντομη ομιλία και στη συνέχεια να πάνε σε άλλο κτίριο. Μερικοί θα μιλούσαν για επαγγελματικά θέματα και άλλοι για την παραβολή του Καλού Σαμαρείτη, μια ιστορία που αφορά ακριβώς τη βοήθεια προς κάποιον που βρίσκεται σε ανάγκη. Το κρίσιμο στοιχείο όμως ήταν άλλο: ο χρόνος. Σε κάποιους είπαν ότι είχαν αρκετό χρόνο. Σε άλλους ότι έπρεπε να βιαστούν. Στον δρόμο, οι συμμετέχοντες συναντούσαν έναν άνθρωπο που φαινόταν να χρειάζεται βοήθεια. Το αποτέλεσμα ήταν εντυπωσιακό. Η πίεση χρόνου είχε μεγάλη σχέση με το αν θα σταματούσαν. Στη συνθήκη μεγάλης βιασύνης, περίπου ένας στους δέκα σταμάτησε. Στη χαμηλή βιασύνη, περίπου έξι στους δέκα σταμάτησαν. Αντίθετα, το αν η ομιλία τους αφορούσε τον Καλό Σαμαρείτη δεν είχε στατιστικά σημαντική επίδραση στη βοήθεια. Το συμπέρασμα δεν είναι ότι οι άνθρωποι «δεν νοιάζονται». Είναι ότι το περιβάλλον και η αίσθηση ότι πιεζόμαστε μπορούν να επηρεάσουν πολύ τη συμπεριφορά μας, ακόμη και όταν οι αξίες μας δείχνουν προς άλλη κατεύθυνση. Σήμερα το πείραμα συζητείται επίσης ως παράδειγμα της εξέλιξης της ερευνητικής δεοντολογίας, επειδή οι συμμετέχοντες δεν γνώριζαν εκ των προτέρων όλο τον πραγματικό σκοπό της διαδικασίας. Το πιο χρήσιμο ερώτημα μένει απλό: πόσο συχνά η βιασύνη μάς κάνει να μην προσέχουμε τι συμβαίνει ακριβώς δίπλα μας; Αν σας άρεσε, ακολουθήστε για περισσότερα."
+    }
+  ]
+}
