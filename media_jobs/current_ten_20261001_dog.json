@@ -1,0 +1,39 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_TEN_DAILY_20260927",
+  "local_date": "2026-10-01",
+  "active_metricool_brand_id": 7076410,
+  "id": "current-ten-20261001-dog-courage",
+  "title": "Σκύλος Μπάρμαν — ένα ποτό για θάρρος",
+  "caption": "Ο πελάτης ζήτησε «κάτι για θάρρος». Ο Σκύλος Μπάρμαν κατάλαβε γρήγορα ότι το πρόβλημα δεν ήταν το ποτό.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΣκύλοςΜπάρμαν #Χιούμορ #Σχέσεις #Μπαρ #Ιστορίες",
+  "cards": [
+    [
+      "ΕΧΕΙΣ ΚΑΤΙ ΓΙΑ ΘΑΡΡΟΣ;",
+      "Ο πελάτης κάθισε στο μπαρ και κοίταξε το κινητό του. «Κάτι δυνατό», είπε."
+    ],
+    [
+      "Ο ΜΠΑΡΜΑΝ ΕΣΠΡΩΞΕ ΕΝΑ ΠΟΤΗΡΙ ΝΕΡΟ",
+      "«Πρώτα ξεκαθάρισε τι θες να κάνεις. Μετά βλέπουμε για ποτό.»"
+    ],
+    [
+      "«ΘΕΛΩ ΝΑ ΣΤΕΙΛΩ ΣΤΗΝ ΠΡΩΗΝ ΜΟΥ»",
+      "Ο Σκύλος Μπάρμαν έμεινε ακίνητος για δύο δευτερόλεπτα. Μετά κοίταξε ξανά το κινητό."
+    ],
+    [
+      "«ΤΟΤΕ ΑΣ’ ΤΟ ΚΑΤΩ»",
+      "«Απόψε δεν χρειάζεσαι θάρρος. Χρειάζεσαι ύπνο.»\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα."
+    ]
+  ],
+  "dog_source": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Three_Legged_Dog_at_Ruin_Bar_Budapest.jpg?width=1800",
+  "bar_backgrounds": [
+    "https://commons.wikimedia.org/wiki/Special:Redirect/file/Budapest,_Red_Ruin_B%C3%A1r.jpg?width=1800",
+    "https://commons.wikimedia.org/wiki/Special:Redirect/file/Budapest,_Red_Ruin_B%C3%A1r,_2.jpg?width=1800",
+    "https://commons.wikimedia.org/wiki/Special:Redirect/file/Budapest,_Red_Ruin_B%C3%A1r,_3.jpg?width=1800",
+    "https://commons.wikimedia.org/wiki/Special:Redirect/file/Budapest,_Red_Ruin_B%C3%A1r,_4.jpg?width=1800"
+  ],
+  "licensing": {
+    "dog": "CC0 1.0 — Yourusernamewillbepublic2, Three Legged Dog at Ruin Bar Budapest",
+    "backgrounds": "CC BY-SA 4.0 — Christo, Red Ruin Bar Budapest series"
+  }
+}
