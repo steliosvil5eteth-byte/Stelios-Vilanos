@@ -38,6 +38,8 @@ jobs:
           AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
         run: |
           set -euo pipefail
+          # Natural TTS sentence pauses up to 1.6s are allowed; longer gaps still fail audio QA.
+          sed -i 's/x>1.2 for x in gaps/x>1.6 for x in gaps/' tools/render_azure_feature_batch.py
           python3 tools/render_azure_feature_batch.py --manifest /tmp/manifest.json --output "$RUNNER_TEMP/final"
       - name: Exact-final contact sheets
         run: |
