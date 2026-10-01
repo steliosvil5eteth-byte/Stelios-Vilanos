@@ -16,37 +16,37 @@
         {
           "title": "ΣΙΩΠΗ ΜΕΤΑ ΤΟΝ ΚΑΒΓΑ — 1/7",
           "text": "Μερικές φορές είναι διάλειμμα. Άλλες φορές γίνεται τρόπος να τιμωρήσεις τον άλλον. Η διαφορά φαίνεται στο τι λες πριν απομακρυνθείς.",
-          "source_query": "couple disagreement living room photograph"
+          "source_query": "couple argument"
         },
         {
           "title": "ΔΙΑΛΕΙΜΜΑ — 2/7",
           "text": "«Είμαι φορτισμένος. Θέλω λίγο χρόνο και μετά μιλάμε.» Έτσι ο άλλος ξέρει ότι η συζήτηση δεν εγκαταλείπεται.",
-          "source_query": "person sitting alone window photograph"
+          "source_query": "person alone window"
         },
         {
           "title": "ΤΙΜΩΡΙΑ — 3/7",
           "text": "Όταν εξαφανίζεσαι χωρίς εξήγηση για να αγχωθεί ο άλλος ή να «μάθει», η σιωπή παύει να είναι ξεκούραση.",
-          "source_query": "person checking phone alone photograph"
+          "source_query": "person smartphone"
         },
         {
           "title": "Ο ΧΡΟΝΟΣ — 4/7",
           "text": "Το υγιές διάλειμμα έχει ένα περίπου «πότε ξαναμιλάμε». Δεν χρειάζεται ακρίβεια λεπτού· χρειάζεται πρόθεση επιστροφής.",
-          "source_query": "clock coffee table photograph"
+          "source_query": "alarm clock"
         },
         {
           "title": "Η ΑΣΦΑΛΕΙΑ — 5/7",
           "text": "Δεν χρειάζεται να λυθεί κάθε διαφωνία αμέσως. Χρειάζεται όμως να ξέρουν και οι δύο ότι ο δεσμός δεν χρησιμοποιείται σαν απειλή.",
-          "source_query": "couple walking together park photograph"
+          "source_query": "couple walking"
         },
         {
           "title": "Η ΕΠΑΝΑΣΥΝΔΕΣΗ — 6/7",
           "text": "Όταν επιστρέφεις, ξεκίνα από το πρόβλημα και όχι από νέο γύρο κατηγοριών. Στόχος είναι να καταλάβετε τι έγινε.",
-          "source_query": "couple talking cafe photograph"
+          "source_query": "couple talking"
         },
         {
           "title": "Η ΕΡΩΤΗΣΗ — 7/7",
           "text": "Όταν χρειάζεσαι χώρο μετά από ένταση, λες στον άνθρωπό σου ότι θα επιστρέψεις στη συζήτηση;",
-          "source_query": "couple conversation outdoors photograph"
+          "source_query": "couple park"
         }
       ]
     },
@@ -60,55 +60,55 @@
           "title": "112: ΤΟ ΠΡΩΤΟ ΠΟΥ ΛΕΣ — 1/9",
           "text": "Σε πραγματική έκτακτη ανάγκη πες πρώτα τι έχει συμβεί και πού βρίσκεσαι. Αυτά είναι τα δύο βασικά στοιχεία που ζητά το 112.",
           "footer": "Πηγή: Πολιτική Προστασία — 112",
-          "source_query": "emergency phone call smartphone photograph"
+          "source_query": "emergency telephone"
         },
         {
           "title": "ΤΙ ΕΓΙΝΕ — 2/9",
           "text": "Πες σύντομα το είδος του περιστατικού: φωτιά, τροχαίο, άνθρωπος που δεν ανταποκρίνεται, κίνδυνος στη θάλασσα ή άλλο επείγον.",
           "footer": "Πηγή: Πολιτική Προστασία — 112",
-          "source_query": "emergency services road photograph"
+          "source_query": "ambulance Greece"
         },
         {
           "title": "ΠΟΥ ΕΙΣΑΙ — 3/9",
           "text": "Δώσε όσο πιο συγκεκριμένη θέση μπορείς: οδό, περιοχή, δρόμο, χιλιόμετρο ή χαρακτηριστικό σημείο. Μην αρκεστείς στο «κάπου εδώ».",
           "footer": "Πηγή: Πολιτική Προστασία — 112",
-          "source_query": "road sign Greece photograph"
+          "source_query": "road sign Greece"
         },
         {
           "title": "ΠΟΤΕ ΕΓΙΝΕ — 4/9",
           "text": "Αν στέλνεις μήνυμα στο 112, γράψε και πότε συνέβη το περιστατικό. Η χρονική πληροφορία βοηθά να εκτιμηθεί η κατάσταση.",
           "footer": "Πηγή: Πολιτική Προστασία — 112",
-          "source_query": "smartphone text message photograph"
+          "source_query": "smartphone"
         },
         {
           "title": "ΥΠΑΡΧΟΥΝ ΤΡΑΥΜΑΤΙΕΣ; — 5/9",
           "text": "Πες αν υπάρχουν τραυματίες και πόσοι περίπου. Μην κάνεις διάγνωση· περιέγραψε αυτό που βλέπεις με απλές λέξεις.",
           "footer": "Πηγή: Πολιτική Προστασία — 112",
-          "source_query": "ambulance emergency response photograph"
+          "source_query": "ambulance"
         },
         {
           "title": "ΑΠΑΝΤΗΣΕ ΣΤΙΣ ΕΡΩΤΗΣΕΙΣ — 6/9",
           "text": "Ο χειριστής θα ζητήσει πληροφορίες για να αποφασιστεί τι βοήθεια χρειάζεται. Άκου, απάντησε καθαρά και μην βιάζεσαι να κλείσεις.",
           "footer": "Πηγή: Πολιτική Προστασία — 112",
-          "source_query": "emergency call center operator photograph"
+          "source_query": "call centre"
         },
         {
           "title": "ΑΝ ΣΤΕΙΛΕΙΣ ΜΗΝΥΜΑ — 7/9",
           "text": "Γράψε τέσσερα πράγματα: τι έγινε, πού έγινε, πότε έγινε και αν υπάρχουν τραυματίες. Κράτησέ το σύντομο και σαφές.",
           "footer": "Πηγή: Πολιτική Προστασία — 112",
-          "source_query": "mobile phone typing message photograph"
+          "source_query": "mobile phone"
         },
         {
           "title": "ΟΧΙ ΑΣΚΟΠΕΣ ΚΛΗΣΕΙΣ — 8/9",
           "text": "Το 112 είναι για άμεση ανάγκη ή κίνδυνο. Οι άσκοπες κλήσεις μπορούν να καθυστερήσουν βοήθεια για κάποιον που τη χρειάζεται πραγματικά.",
           "footer": "Πηγή: Πολιτική Προστασία — 112",
-          "source_query": "emergency number telephone photograph"
+          "source_query": "emergency number 112"
         },
         {
           "title": "ΤΟ ΜΝΗΜΟΝΙΚΟ — 9/9",
           "text": "Τι έγινε → Πού έγινε → Πότε έγινε → Υπάρχουν τραυματίες; Μετά άκου τις οδηγίες του χειριστή.",
           "footer": "112 — μόνο για πραγματική έκτακτη ανάγκη",
-          "source_query": "rescue team emergency photograph"
+          "source_query": "rescue workers"
         }
       ]
     },
@@ -121,32 +121,32 @@
         {
           "title": "ΚΡΙΟΣ VS ΖΥΓΟΣ — 1/6",
           "text": "Κριός: νιώθει ασφάλεια με καθαρό ενδιαφέρον και ευθύτητα. Ζυγός: με διάλογο, αμοιβαιότητα και σεβασμό στις αποφάσεις.",
-          "source_query": "couple talking city park photograph"
+          "source_query": "night sky stars"
         },
         {
           "title": "ΤΑΥΡΟΣ VS ΣΚΟΡΠΙΟΣ — 2/6",
           "text": "Ταύρος: θέλει συνέπεια και πράξεις που επαναλαμβάνονται. Σκορπιός: βαθιά ειλικρίνεια, πίστη και να μη μένουν κρυφές ιστορίες.",
-          "source_query": "couple holding hands outdoors photograph"
+          "source_query": "Milky Way night sky"
         },
         {
           "title": "ΔΙΔΥΜΟΙ VS ΤΟΞΟΤΗΣ — 3/6",
           "text": "Δίδυμοι: νιώθουν κοντά μέσα από λέξεις και περιέργεια. Τοξότης: μέσα από εμπιστοσύνη, χιούμορ και χώρο για εμπειρίες.",
-          "source_query": "couple laughing travel photograph"
+          "source_query": "starry sky"
         },
         {
           "title": "ΚΑΡΚΙΝΟΣ VS ΑΙΓΟΚΕΡΩΣ — 4/6",
           "text": "Καρκίνος: χρειάζεται φροντίδα και συναισθηματική παρουσία. Αιγόκερως: αξιοπιστία, σταθερότητα και άνθρωπο που κρατά όσα υπόσχεται.",
-          "source_query": "couple home conversation photograph"
+          "source_query": "constellation night sky"
         },
         {
           "title": "ΛΕΩΝ VS ΥΔΡΟΧΟΟΣ — 5/6",
           "text": "Λέων: θέλει ζεστασιά και ξεκάθαρη εκτίμηση. Υδροχόος: αποδοχή της διαφορετικότητας και χώρο χωρίς συνεχή έλεγχο.",
-          "source_query": "couple evening city photograph"
+          "source_query": "stars long exposure"
         },
         {
           "title": "ΠΑΡΘΕΝΟΣ VS ΙΧΘΥΕΣ — 6/6",
           "text": "Παρθένος: νιώθει ασφάλεια όταν οι λεπτομέρειες γίνονται πράξεις. Ιχθύες: όταν υπάρχει τρυφερότητα, ενσυναίσθηση και ήρεμη κατανόηση.",
-          "source_query": "couple quiet lakeside photograph"
+          "source_query": "Milky Way landscape"
         }
       ]
     },
@@ -159,27 +159,27 @@
         {
           "title": "ΤΗΣ ΕΔΩΣΕ ΤΗΝ ΟΜΠΡΕΛΑ ΚΑΙ ΕΦΥΓΕ — 1/5",
           "text": "Στη στάση, ένας άγνωστος της είπε: «Εγώ μένω εδώ κοντά».",
-          "source_query": "bus stop rain umbrella photograph"
+          "source_query": "umbrella rain street"
         },
         {
           "title": "ΔΕΝ ΠΡΟΛΑΒΕ ΝΑ ΜΑΘΕΙ ΤΟ ΟΝΟΜΑ ΤΟΥ — 2/5",
           "text": "Την κράτησε στο γραφείο, ελπίζοντας να τον ξαναδεί.",
-          "source_query": "umbrella office window rain photograph"
+          "source_query": "umbrella"
         },
         {
           "title": "ΜΙΑ ΕΒΔΟΜΑΔΑ ΜΕΤΑ ΤΟΝ ΑΝΑΓΝΩΡΙΣΕ — 3/5",
           "text": "Ήταν πάλι στη στάση. Και αυτή τη φορά έβρεχε πάνω του.",
-          "source_query": "man waiting bus stop rain photograph"
+          "source_query": "bus stop rain"
         },
         {
           "title": "«ΔΕΝ ΜΕΝΕΙΣ ΕΔΩ ΚΟΝΤΑ;» — 4/5",
           "text": "Χαμογέλασε αμήχανα. «Όχι τόσο κοντά όσο σου είπα».",
-          "source_query": "two people talking bus stop photograph"
+          "source_query": "people bus stop"
         },
         {
           "title": "ΑΝΟΙΞΕ ΤΗΝ ΟΜΠΡΕΛΑ ΓΙΑ ΔΥΟ — 5/5",
           "text": "Η πρώτη τους κουβέντα κράτησε περισσότερο από τη βροχή.",
-          "source_query": "couple sharing umbrella rain photograph"
+          "source_query": "couple umbrella"
         }
       ]
     },
