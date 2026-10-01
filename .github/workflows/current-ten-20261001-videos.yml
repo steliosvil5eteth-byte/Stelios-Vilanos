@@ -1,0 +1,83 @@
+name: Current Ten 20261001 narrated videos
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'media_jobs/current_ten_20261001_narrated_*.json'
+      - '.github/workflows/current-ten-20261001-videos.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: current-ten-20261001-videos
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python3 -m pip install --disable-pip-version-check --no-input pillow requests azure-cognitiveservices-speech
+      - name: Merge manifests
+        run: |
+          python3 - <<'PY'
+          import json,glob
+          paths=sorted(glob.glob('media_jobs/current_ten_20261001_narrated_*.json'))
+          jobs=[]
+          for p in paths:
+              d=json.load(open(p)); jobs.extend(d['jobs'])
+          if len(jobs)!=4: raise SystemExit(f'expected 4 jobs got {len(jobs)}')
+          json.dump({'approved':True,'paid_generation_allowed':False,'active_metricool_brand_id':7076410,'jobs':jobs},open('/tmp/manifest.json','w'),ensure_ascii=False,indent=2)
+          PY
+      - name: Render Nestoras finals
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+        run: |
+          set -euo pipefail
+          python3 tools/render_azure_feature_batch.py --manifest /tmp/manifest.json --output "$RUNNER_TEMP/final"
+      - name: Exact-final contact sheets
+        run: |
+          python3 - <<'PY'
+          import math,subprocess,json
+          from pathlib import Path
+          from PIL import Image,ImageOps
+          root=Path('/home/runner/work/_temp/final')
+          for d in root.iterdir():
+              if not d.is_dir(): continue
+              video=d/(d.name+'.mp4')
+              if not video.exists(): raise SystemExit(f'missing {video}')
+              probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(video)]))
+              dur=float(probe['format']['duration'])
+              if dur < 80: raise SystemExit(f'duration {dur} {d.name}')
+              frames=[]
+              for i,x in enumerate((.05,.18,.32,.47,.62,.78,.94),1):
+                  p=d/f'qa-frame-{i:02}.jpg'
+                  subprocess.run(['ffmpeg','-y','-loglevel','error','-ss',f'{dur*x:.3f}','-i',str(video),'-frames:v','1','-q:v','2',str(p)],check=True)
+                  frames.append(p)
+              cw,ch=270,480; c=Image.new('RGB',(cw*4,ch*2),(20,20,20))
+              for i,p in enumerate(frames):
+                  with Image.open(p).convert('RGB') as im: c.paste(ImageOps.fit(im,(cw,ch)),((i%4)*cw,(i//4)*ch))
+              c.save(d/'final-contact-sheet.jpg',quality=93)
+              (d/'release-gate.txt').write_text('PENDING_DIRECT_VISUAL_REVIEW\n')
+          PY
+      - name: Save to media-output
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/out"
+          git fetch origin media-output --depth=1
+          git worktree add -b cten1001vid "$OUT" FETCH_HEAD
+          DEST="$OUT/jobs/current-ten-20261001-videos"
+          rm -rf "$DEST"; mkdir -p "$DEST"; cp -a "$RUNNER_TEMP/final"/. "$DEST"/
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/current-ten-20261001-videos
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Render 01 Oct CURRENT_TEN narrated videos'
+            git -C "$OUT" fetch origin media-output
+            git -C "$OUT" rebase FETCH_HEAD
+            git -C "$OUT" push origin HEAD:media-output
+          fi
