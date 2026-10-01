@@ -10,7 +10,7 @@ permissions:
   contents: write
 concurrency:
   group: current-ten-20261001-carousels
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   render:
     runs-on: ubuntu-24.04
