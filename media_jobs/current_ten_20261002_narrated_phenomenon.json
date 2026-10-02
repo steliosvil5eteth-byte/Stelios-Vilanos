@@ -1,0 +1,23 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_TEN_DAILY_20260927",
+  "local_date": "2026-10-02",
+  "active_metricool_brand_id": 7076410,
+  "jobs": [{
+    "id": "current-ten-20261002-phenomenon-hair-ice",
+    "local_date": "2026-10-02",
+    "slot": "17:00",
+    "title": "Hair ice — οι παγωμένες ίνες που μοιάζουν με μαλλιά",
+    "voice": "el-GR-NestorasNeural",
+    "background_music": false,
+    "photo_target": 8,
+    "scenes": 8,
+    "min_duration_seconds": 80,
+    "max_duration_seconds": 150,
+    "caption": "Hair ice: πολύ λεπτές ίνες πάγου που μπορούν να εμφανιστούν πάνω σε νεκρό ξύλο πλατύφυλλων δέντρων, όταν επικρατούν κατάλληλες συνθήκες κοντά στο μηδέν. Μελέτη του 2015 έδειξε ισχυρή σύνδεση με τον μύκητα Exidiopsis effusa.\n\nΠηγή: Hofmann, Preuss & Mätzler, Biogeosciences 2015, DOI 10.5194/bg-12-4261-2015.\nΣυνθετική ελληνική αφήγηση: Azure Nestoras.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#HairIce #Πάγος #Φύση #Μύκητες #ΠαράξεναΦαινόμενα",
+    "sources": ["Hofmann, Preuss & Mätzler 2015 — Evidence for biological shaping of hair ice, Biogeosciences 12, 4261–4273"],
+    "commons_queries": ["hair ice photograph","hair ice dead wood photograph","Haareis photograph","ice hair wood forest photograph","winter dead wood frost photograph","Exidiopsis effusa hair ice photograph","forest frost dead branch photograph","hair ice close up photograph","frost woodland photograph","ice filaments wood photograph"],
+    "script": "Μοιάζει σαν κάποιος να άφησε μια τούφα λευκά μαλλιά πάνω σε ένα κομμάτι νεκρού ξύλου. Στην πραγματικότητα, είναι πάγος. Το φαινόμενο λέγεται hair ice και εμφανίζεται σε συγκεκριμένες συνθήκες, συνήθως πάνω σε υγρό, νεκρό ξύλο πλατύφυλλων δέντρων όταν η θερμοκρασία βρίσκεται λίγο κάτω από το μηδέν. Οι ίνες είναι τόσο λεπτές και πυκνές ώστε από απόσταση θυμίζουν βαμβάκι ή μεταξένια μαλλιά. Για πολλά χρόνια οι επιστήμονες γνώριζαν ότι το φαινόμενο είχε κάποια σχέση με τη βιολογία του ξύλου, αλλά η εικόνα έγινε πιο καθαρή μέσα από εργαστηριακές δοκιμές. Σε μελέτη που δημοσιεύτηκε το 2015 στο περιοδικό Biogeosciences, ερευνητές εξέτασαν δείγματα ξύλου που παρήγαγαν hair ice. Βρήκαν ότι ένας μύκητας, ο Exidiopsis effusa, υπήρχε σε όλα τα δείγματα που μελετήθηκαν. Όταν το ξύλο θερμάνθηκε ή αντιμετωπίστηκε με μυκητοκτόνο, η χαρακτηριστική ανάπτυξη του hair ice καταστάλθηκε. Ο πάγος εξακολουθεί να σχηματίζεται μέσω φυσικών διεργασιών καθώς το νερό βγαίνει από τους πόρους του ξύλου και παγώνει. Ο μύκητας όμως φαίνεται να βοηθά ώστε οι ίνες να παραμένουν πολύ λεπτές και να μην ανακρυσταλλώνονται γρήγορα σε μεγαλύτερους κόκκους πάγου. Γι’ αυτό το hair ice είναι αποτέλεσμα μιας εντυπωσιακής συνεργασίας ανάμεσα στη φυσική του νερού και στη βιολογία ενός μύκητα. Είναι εύθραυστο, παροδικό και μπορεί να λιώσει γρήγορα μόλις αλλάξουν οι συνθήκες. Αν σας άρεσε, ακολουθήστε για περισσότερα."
+  }]
+}
