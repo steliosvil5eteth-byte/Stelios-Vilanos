@@ -1,0 +1,28 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_TEN_DAILY_20260927",
+  "local_date": "2026-10-02",
+  "active_metricool_brand_id": 7076410,
+  "id": "current-ten-20261002-dog-patience",
+  "title": "Σκύλος Μπάρμαν — το ποτήρι της υπομονής",
+  "caption": "«Έχεις κάτι για να μην απαντήσω πάνω στα νεύρα μου;» Ο Σκύλος Μπάρμαν είχε μία συνταγή που δεν χρειαζόταν αλκοόλ.\n\nΣύνθεση εικόνων με AI-assisted επεξεργασία.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΣκύλοςΜπάρμαν #Χιούμορ #Σχέσεις #Υπομονή #Ιστορίες",
+  "cards": [
+    ["«ΕΧΕΙΣ ΚΑΤΙ ΓΙΑ ΝΑ ΜΗΝ ΑΠΑΝΤΗΣΩ ΠΑΝΩ ΣΤΑ ΝΕΥΡΑ ΜΟΥ;»", "Ο πελάτης άφησε το κινητό πάνω στον πάγκο. Η οθόνη ήταν ακόμη ανοιχτή στο μήνυμα."],
+    ["Ο ΣΚΥΛΟΣ ΕΣΠΡΩΞΕ ΕΝΑ ΠΟΤΗΡΙ ΝΕΡΟ", "«Αυτό και δέκα λεπτά χωρίς κινητό.»"],
+    ["«ΚΑΤΙ ΠΙΟ ΔΥΝΑΤΟ;»", "Ο μπάρμαν κοίταξε το κουμπί αποστολής. «Ναι. Το “μην αποστολή”.»"],
+    ["ΚΑΠΟΙΑ ΠΟΤΑ ΘΕΛΟΥΝ ΠΑΓΟ", "Κάποιες απαντήσεις θέλουν χρόνο.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα."]
+  ],
+  "dog_source": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Three_Legged_Dog_at_Ruin_Bar_Budapest.jpg?width=1800",
+  "bar_backgrounds": [
+    "https://commons.wikimedia.org/wiki/Special:Redirect/file/Budapest%2C_Paranoir_Pub.jpg?width=1800",
+    "https://commons.wikimedia.org/wiki/Special:Redirect/file/Budapest%2C_Paranoir_Pub%2C_3.jpg?width=1800",
+    "https://commons.wikimedia.org/wiki/Special:Redirect/file/Budapest%2C_Infinity_Esport_B%C3%A1r%2C_3.jpg?width=1800",
+    "https://commons.wikimedia.org/wiki/Special:Redirect/file/Budapest%2C_Infinity_Esport_B%C3%A1r%2C_6.jpg?width=1800"
+  ],
+  "licensing": {
+    "dog": "CC0 1.0 — recurring dog source from Wikimedia Commons",
+    "backgrounds": "CC BY-SA 4.0 — Christo / Wikimedia Commons"
+  },
+  "render_trigger": "2026-10-02T06:00:00+03:00"
+}
