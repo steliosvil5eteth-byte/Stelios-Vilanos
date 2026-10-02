@@ -1,0 +1,82 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_TEN_DAILY_20260927",
+  "local_date": "2026-10-02",
+  "active_metricool_brand_id": 7076410,
+  "require_photographic_visuals": true,
+  "release_policy": "Render only. No Metricool write until exact finals pass direct visual QA and fresh duplicate reconciliation.",
+  "jobs": [
+    {
+      "id": "current-ten-20261002-relationships-humor",
+      "expected_cards": 7,
+      "seconds_per_slide": 5,
+      "caption": "Πότε το «αστείο» παύει να ενώνει και αρχίζει να πληγώνει; Το χιούμορ έχει θέση στη σχέση όταν γελούν και οι δύο — όχι όταν ο ένας πρέπει να αντέχει για να μη φανεί υπερβολικός.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Σχέσεις #Επικοινωνία #Σεβασμός #Όρια #Ζευγάρι",
+      "slides": [
+        {"title":"ΠΟΤΕ ΤΟ ΑΣΤΕΙΟ ΠΑΥΕΙ ΝΑ ΕΙΝΑΙ ΑΣΤΕΙΟ; — 1/7","text":"Όταν γελούν και οι δύο, το χιούμορ ενώνει. Όταν ο ένας γελά μόνο για να μη φανεί δύσκολος, κάτι έχει αλλάξει.","source_query":"couple laughing together cafe photograph"},
+        {"title":"ΔΕΣ ΤΗΝ ΑΝΤΙΔΡΑΣΗ — 2/7","text":"Αν ο άλλος παγώνει, απομακρύνεται ή σου λέει ότι τον πείραξε, η αντίδρασή του αξίζει προσοχή.","source_query":"couple serious conversation outdoors photograph"},
+        {"title":"Η ΠΡΟΘΕΣΗ ΔΕΝ ΣΒΗΝΕΙ ΤΗΝ ΠΛΗΓΗ — 3/7","text":"Μπορεί να μην ήθελες να πληγώσεις. Πρώτα ακούς τι συνέβη και μετά εξηγείς.","source_query":"woman uncomfortable during conversation photograph"},
+        {"title":"ΔΗΜΟΣΙΑ ΕΙΡΩΝΕΙΑ — 4/7","text":"Ένα σχόλιο μπροστά σε φίλους μπορεί να πονά περισσότερο, ειδικά αν αγγίζει κάτι προσωπικό.","source_query":"friends table conversation couple photograph"},
+        {"title":"ΤΟ ΟΡΙΟ ΜΠΟΡΕΙ ΝΑ ΕΙΝΑΙ ΑΠΛΟ — 5/7","text":"«Αυτό δεν μου αρέσει να το κάνουμε αστείο.» Δεν χρειάζεται καβγάς για να μπει ένα καθαρό όριο.","source_query":"couple calm discussion home photograph"},
+        {"title":"Η ΔΙΟΡΘΩΣΗ ΧΩΡΙΣ ΑΜΥΝΑ — 6/7","text":"Ένα «το κατάλαβα, δεν θα το ξανακάνω» βοηθά περισσότερο από το «δεν έχεις χιούμορ».","source_query":"couple reconciliation talking photograph"},
+        {"title":"Η ΕΡΩΤΗΣΗ — 7/7","text":"Για εσάς, ποιο είναι το σημείο όπου το πείραγμα γίνεται έλλειψη σεβασμού;","source_query":"couple walking talking city photograph"}
+      ]
+    },
+    {
+      "id": "current-ten-20261002-survival-snow",
+      "expected_cards": 9,
+      "seconds_per_slide": 5,
+      "caption": "Χιονόπτωση και παγετός: η προετοιμασία γίνεται πριν δυσκολέψουν οι μετακινήσεις. Πηγή: Υπουργείο Κλιματικής Κρίσης και Πολιτικής Προστασίας — Χιονοπτώσεις / Παγετός.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Χιονόπτωση #Παγετός #ΠολιτικήΠροστασία #Ασφάλεια #Επιβίωση",
+      "slides": [
+        {"title":"ΧΙΟΝΙ: ΠΡΟΕΤΟΙΜΑΣΟΥ ΕΓΚΑΙΡΑ — 1/9","text":"Παρακολούθησε τις επίσημες προειδοποιήσεις και οργάνωσε ό,τι χρειάζεσαι πριν ενταθεί η χιονόπτωση.","footer":"Πηγή: Πολιτική Προστασία","source_query":"snowfall village house Greece photograph"},
+        {"title":"ΒΑΣΙΚΑ ΕΦΟΔΙΑ — 2/9","text":"Σε ορεινή ή δύσβατη περιοχή, προμηθεύσου υλικό θέρμανσης και τρόφιμα για αρκετές ημέρες.","footer":"Πηγή: Πολιτική Προστασία","source_query":"winter food supplies home photograph"},
+        {"title":"ΕΞΟΠΛΙΣΜΟΣ ΓΙΑ ΤΟ ΧΙΟΝΙ — 3/9","text":"Φρόντισε να υπάρχει κατάλληλος εξοπλισμός καθαρισμού, όπως φτυάρι, πριν συσσωρευτεί το χιόνι.","footer":"Πηγή: Πολιτική Προστασία","source_query":"shoveling snow house photograph"},
+        {"title":"ΜΕΙΝΕ ΖΕΣΤΑ ΚΑΙ ΑΣΦΑΛΗΣ — 4/9","text":"Όταν η χιονόπτωση είναι έντονη, κράτησε το σπίτι ζεστό και περιόρισε όσο γίνεται τις άσκοπες εξόδους.","footer":"Πηγή: Πολιτική Προστασία","source_query":"winter home heating interior photograph"},
+        {"title":"ΕΛΕΓΞΕ ΤΟ ΝΕΡΟ — 5/9","text":"Γνώριζε πού βρίσκονται ο υδρομετρητής και οι βασικοί διακόπτες ύδρευσης και έλεγξε το δίκτυο για προβλήματα από τον παγετό.","footer":"Πηγή: Πολιτική Προστασία","source_query":"water pipes winter frost photograph"},
+        {"title":"ΠΑΠΟΥΤΣΙΑ ΜΕ ΠΡΟΣΦΥΣΗ — 6/9","text":"Αν κινηθείς πεζός σε παγετό, φόρεσε κατάλληλα παπούτσια για να μειώσεις τον κίνδυνο πτώσης.","footer":"Πηγή: Πολιτική Προστασία","source_query":"winter boots snow walking photograph"},
+        {"title":"ΑΝΤΙΟΛΙΣΘΗΤΙΚΑ ΜΕΣΑ — 7/9","text":"Αν χρειαστεί μετακίνηση με αυτοκίνητο, ενημερώσου για το οδικό δίκτυο και έχε διαθέσιμα τα απαιτούμενα αντιολισθητικά μέσα.","footer":"Πηγή: Πολιτική Προστασία","source_query":"car snow chains winter road photograph"},
+        {"title":"ΜΗΝ ΠΙΕΖΕΙΣ ΜΙΑ ΔΥΣΚΟΛΗ ΔΙΑΔΡΟΜΗ — 8/9","text":"Σε έντονη χιονόπτωση απόφυγε δύσβατες ορεινές διαδρομές και άλλαξε πορεία αν οι συνθήκες χειροτερεύουν.","footer":"Πηγή: Πολιτική Προστασία","source_query":"snowy mountain road car photograph"},
+        {"title":"ΑΚΟΛΟΥΘΗΣΕ ΤΙΣ ΟΔΗΓΙΕΣ ΤΩΝ ΑΡΧΩΝ — 9/9","text":"Οι συνθήκες αλλάζουν γρήγορα. Έλεγχε επίσημη ενημέρωση και προσαρμόζεις το σχέδιό σου ανάλογα.","footer":"Πηγή: Πολιτική Προστασία","source_query":"weather warning smartphone winter photograph"}
+      ]
+    },
+    {
+      "id": "current-ten-20261002-zodiac-heard",
+      "expected_cards": 6,
+      "seconds_per_slide": 6,
+      "caption": "Τι σε κάνει να νιώθεις ότι σε ακούνε μέσα σε μια σχέση; Έξι συγκρίσεις, δώδεκα ζώδια — κάθε ζώδιο εμφανίζεται ακριβώς μία φορά. Συμβολικό περιεχόμενο για ψυχαγωγία, όχι πρόβλεψη.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ζώδια #Σχέσεις #Αστρολογία #Επικοινωνία #Ζευγάρι",
+      "slides": [
+        {"title":"ΚΡΙΟΣ VS ΖΥΓΟΣ — 1/6","text":"Κριός: όταν ο άλλος απαντά καθαρά. Ζυγός: όταν ακούγονται και οι δύο πλευρές χωρίς να κόβεται η κουβέντα.","source_query":"couple attentive conversation cafe photograph"},
+        {"title":"ΤΑΥΡΟΣ VS ΣΚΟΡΠΙΟΣ — 2/6","text":"Ταύρος: όταν θυμούνται όσα είπε και το δείχνουν με πράξεις. Σκορπιός: όταν μπορεί να πει κάτι προσωπικό με εμπιστοσύνη.","source_query":"couple quiet conversation park photograph"},
+        {"title":"ΔΙΔΥΜΟΙ VS ΤΟΞΟΤΗΣ — 3/6","text":"Δίδυμοι: όταν υπάρχει πραγματική ανταλλαγή ιδεών. Τοξότης: όταν μπορεί να μιλήσει ελεύθερα χωρίς να νιώθει ότι εξετάζεται.","source_query":"couple talking walking outdoors photograph"},
+        {"title":"ΚΑΡΚΙΝΟΣ VS ΑΙΓΟΚΕΡΩΣ — 4/6","text":"Καρκίνος: όταν ο άλλος προσέχει και το συναίσθημα πίσω από τις λέξεις. Αιγόκερως: όταν ακούει μέχρι τέλους και μετά ψάχνει λύση.","source_query":"couple supportive conversation home photograph"},
+        {"title":"ΛΕΩΝ VS ΥΔΡΟΧΟΟΣ — 5/6","text":"Λέων: όταν η προσοχή είναι ζεστή και ξεκάθαρη. Υδροχόος: όταν οι διαφορετικές απόψεις χωρούν χωρίς προσπάθεια να τον αλλάξουν.","source_query":"couple smiling conversation urban photograph"},
+        {"title":"ΠΑΡΘΕΝΟΣ VS ΙΧΘΥΕΣ — 6/6","text":"Παρθένος: όταν ο άλλος πιάνει τις λεπτομέρειες. Ιχθύες: όταν ακούει με ηρεμία και αφήνει χώρο στο συναίσθημα.","source_query":"couple listening bench photograph"}
+      ]
+    },
+    {
+      "id": "current-ten-20261002-love-doorbell",
+      "expected_cards": 5,
+      "seconds_per_slide": 7,
+      "caption": "Το κουδούνι στις επτά — μια μικρή μυθοπλασία για το πώς ένα απλό αίτημα μπορεί να ξαναφέρει νόημα σε μια καθημερινότητα που είχε αδειάσει.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ιστορίες #Ψυχή #Μουσική #Ζωή #Συναίσθημα",
+      "slides": [
+        {"title":"ΤΟ ΚΟΥΔΟΥΝΙ ΧΤΥΠΗΣΕ ΣΤΙΣ ΕΠΤΑ — 1/5","text":"Η νέα γειτόνισσα κρατούσε μια παλιά κιθάρα. «Μου είπαν ότι διδάσκατε».","source_query":"young woman holding acoustic guitar doorway photograph"},
+        {"title":"ΕΙΧΕ ΧΡΟΝΙΑ ΝΑ ΑΝΟΙΞΕΙ ΤΗ ΘΗΚΗ ΤΟΥ — 2/5","text":"Μετά τη σύνταξη έλεγε πως η μουσική ανήκε πια στους νεότερους.","source_query":"older man acoustic guitar home photograph"},
+        {"title":"ΣΤΟ ΠΡΩΤΟ ΜΑΘΗΜΑ ΕΚΑΝΑΝ ΚΑΙ ΟΙ ΔΥΟ ΛΑΘΗ — 3/5","text":"Εκείνη στις συγχορδίες. Εκείνος, όταν προσπάθησε να κρύψει τη συγκίνησή του.","source_query":"guitar lesson adult student teacher photograph"},
+        {"title":"ΛΙΓΟ ΚΑΙΡΟ ΜΕΤΑ ΕΠΑΙΞΑΝ ΜΑΖΙ — 4/5","text":"Δεν ήταν τέλειο. Ήταν όμως η πρώτη φορά που το σπίτι γέμισε ξανά μουσική.","source_query":"two people playing acoustic guitar home photograph"},
+        {"title":"ΔΕΝ ΤΟΥ ΕΙΧΕ ΖΗΤΗΣΕΙ ΜΟΝΟ ΕΝΑ ΜΑΘΗΜΑ — 5/5","text":"Χωρίς να το ξέρει, του είχε δώσει έναν λόγο να ξαναρχίσει.","source_query":"older man smiling with acoustic guitar photograph"}
+      ]
+    },
+    {
+      "id": "current-ten-20261002-myth-penguins",
+      "expected_cards": 4,
+      "seconds_per_slide": 7,
+      "caption": "Μύθος ή Αλήθεια: όλοι οι πιγκουίνοι ζουν στην Ανταρκτική; Μύθος. Ο αφρικανικός πιγκουίνος ζει στις ακτές της νότιας Αφρικής και κολυμπά σε ψυχρά θαλάσσια ρεύματα.\n\nΠηγή: San Diego Zoo Wildlife Alliance.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΜύθοςΉΑλήθεια #Πιγκουίνοι #ΆγριαΖωή #Αφρική #Φύση",
+      "slides": [
+        {"title":"ΟΛΟΙ ΟΙ ΠΙΓΚΟΥΙΝΟΙ ΖΟΥΝ ΣΤΗΝ ΑΝΤΑΡΚΤΙΚΗ; — 1/4","text":"Τους φανταζόμαστε πάντα ανάμεσα σε χιόνια και πάγους. Υπάρχουν όμως πιγκουίνοι πολύ βορειότερα.","footer":"Πηγή: San Diego Zoo Wildlife Alliance","source_url":"https://commons.wikimedia.org/wiki/Special:Redirect/file/African%20Penguin%20RWD.jpg?width=1600","source_credit":"Wikimedia Commons — Dick Daniels","license":"CC BY-SA 3.0"},
+        {"title":"ΥΠΑΡΧΕΙ ΑΦΡΙΚΑΝΙΚΟΣ ΠΙΓΚΟΥΙΝΟΣ — 2/4","text":"Ο αφρικανικός πιγκουίνος ζει στις βραχώδεις ακτές της νότιας Αφρικής.","footer":"Πηγή: San Diego Zoo Wildlife Alliance","source_query":"African penguin South Africa rocky coast photograph"},
+        {"title":"ΔΕΝ ΧΡΕΙΑΖΕΤΑΙ ΧΙΟΝΙ ΣΤΗΝ ΑΚΤΗ — 3/4","text":"Το πυκνό, αδιάβροχο φτέρωμά του τον βοηθά να παραμένει ζεστός και στεγνός στο κρύο νερό.","footer":"Πηγή: San Diego Zoo Wildlife Alliance","source_query":"African penguin swimming South Africa photograph"},
+        {"title":"ΜΥΘΟΣ — ΟΧΙ ΜΟΝΟ ΑΝΤΑΡΚΤΙΚΗ — 4/4","text":"Η οικογένεια των πιγκουίνων ζει σε περισσότερα μέρη του νότιου ημισφαιρίου απ’ όσο δείχνει η συνηθισμένη εικόνα.","footer":"Μύθος — Πηγή: San Diego Zoo Wildlife Alliance","source_query":"African penguin colony beach South Africa photograph"}
+      ]
+    }
+  ]
+}
