@@ -1,0 +1,24 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_TEN_DAILY_20260927",
+  "local_date": "2026-10-02",
+  "active_metricool_brand_id": 7076410,
+  "jobs": [{
+    "id": "current-ten-20261002-legend-kelpie",
+    "local_date": "2026-10-02",
+    "slot": "22:00",
+    "title": "Ο θρύλος του Kelpie — το άλογο των σκοτσέζικων νερών",
+    "voice": "el-GR-NestorasNeural",
+    "background_music": false,
+    "photo_target": 8,
+    "scenes": 8,
+    "min_duration_seconds": 80,
+    "max_duration_seconds": 150,
+    "folklore_not_fact": true,
+    "caption": "Στη σκοτσέζικη λαογραφία, τα kelpies είναι υδάτινα πνεύματα που συχνά παίρνουν μορφή αλόγου κοντά σε λίμνες και ποτάμια. Πρόκειται για λαϊκό θρύλο, όχι τεκμηριωμένο υπερφυσικό γεγονός. Μία ερμηνεία είναι ότι τέτοιες ιστορίες λειτουργούσαν και ως προειδοποίηση για τον κίνδυνο του νερού.\n\nΠηγές: Historic Environment Scotland · National Trust for Scotland.\nΣυνθετική ελληνική αφήγηση: Azure Nestoras.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Kelpie #Σκωτία #Λαογραφία #ΔιεθνείςΘρύλοι #Ιστορίες",
+    "sources": ["Historic Environment Scotland — Supernatural Creatures in Scottish Folklore","National Trust for Scotland — natural heritage folklore"],
+    "commons_queries": ["Scottish loch horse photograph","horse beside lake Scotland photograph","Loch Awe Scotland photograph","Scottish river horse photograph","Scotland misty loch photograph","horse Highlands Scotland photograph","Scottish loch landscape photograph","Falkirk Kelpies sculpture photograph","Highlands river Scotland photograph","horse water reflection photograph"],
+    "script": "Στις παλιές ιστορίες της Σκωτίας, ένα μοναχικό άλογο δίπλα σε λίμνη ή ποτάμι δεν ήταν πάντα αυτό που έδειχνε. Ο θρύλος μιλά για το kelpie, ένα υδάτινο πνεύμα που μπορούσε να πάρει τη μορφή αλόγου και να εμφανιστεί κοντά στο νερό. Σε πολλές παραδόσεις παρουσιαζόταν ήρεμο και ελκυστικό, ώστε ένας ανυποψίαστος ταξιδιώτης ή ένα παιδί να πλησιάσει. Από εκεί και πέρα οι ιστορίες γίνονται σκοτεινές: όποιος ανέβαινε στη ράχη του δεν μπορούσε εύκολα να ξεφύγει και το πλάσμα τον παρέσυρε προς το νερό. Σε άλλες εκδοχές το kelpie μπορούσε να πάρει ακόμη και ανθρώπινη μορφή. Η Historic Environment Scotland καταγράφει τέτοιες παραδόσεις ως μέρος της σκοτσέζικης λαογραφίας, ενώ το National Trust for Scotland σημειώνει ότι οι ιστορίες για kelpies μπορεί να λειτουργούσαν και σαν προειδοποίηση προς τα παιδιά να μένουν μακριά από επικίνδυνα νερά και αγνώστους. Αυτό είναι σημαντικό: δεν υπάρχει λόγος να παρουσιάζουμε το kelpie σαν πραγματικό υπερφυσικό ζώο. Είναι ένας θρύλος που γεννήθηκε σε έναν τόπο γεμάτο λίμνες, ποτάμια, ομίχλη και πραγματικούς κινδύνους. Η ιστορία όμως έμεινε ζωντανή για αιώνες και σήμερα το όνομα Kelpie έχει γίνει σύμβολο της σκοτσέζικης λαογραφίας. Οι τεράστιες μεταλλικές γλυπτικές κεφαλές The Kelpies κοντά στο Falkirk δείχνουν πόσο βαθιά έχει περάσει αυτή η μορφή στη σύγχρονη πολιτιστική εικόνα της χώρας. Ο θρύλος ίσως επιβίωσε επειδή μετατρέπει μια απλή προειδοποίηση σε εικόνα που δύσκολα ξεχνάς: μην εμπιστεύεσαι κάθε ήρεμη επιφάνεια του νερού. Αν σας άρεσε, ακολουθήστε για περισσότερα."
+  }]
+}
