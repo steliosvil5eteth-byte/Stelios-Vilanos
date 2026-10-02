@@ -2,51 +2,23 @@
   "approved": true,
   "paid_generation_allowed": false,
   "strategy_id": "CURRENT_TEN_DAILY_20260927",
-  "local_date": "2026-10-01",
+  "local_date": "2026-10-02",
   "active_metricool_brand_id": 7076410,
-  "jobs": [
-    {
-      "id": "current-ten-20261001-legend-loch-ness",
-      "local_date": "2026-10-01",
-      "slot": "22:00",
-      "title": "Ο θρύλος του τέρατος του Loch Ness",
-      "voice": "el-GR-NestorasNeural",
-      "background_music": false,
-      "photo_target": 8,
-      "scenes": 8,
-      "min_duration_seconds": 80,
-      "max_duration_seconds": 150,
-      "folklore_not_fact": true,
-      "caption": "Διεθνής θρύλος: το «τέρας» του Loch Ness. Υπάρχουν παλιότερες ιστορίες για παράξενο πλάσμα, όμως η σύγχρονη δημοσιότητα γύρω από τη Nessie απογειώθηκε τη δεκαετία του 1930. Μέχρι σήμερα δεν υπάρχει επιστημονική απόδειξη για άγνωστο μεγάλο ζώο στη λίμνη.\n\nΠηγές: National Library of Scotland · επιστημονικές έρευνες και σύγχρονες αναζητήσεις της λίμνης.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΔιεθνείςΘρύλοι #LochNess #Nessie #Σκωτία #Folklore",
-      "sources": [
-        "National Library of Scotland — Highland folklore and Loch Ness collections",
-        "Loch Ness environmental DNA survey literature",
-        "Historical accounts and modern searches of Loch Ness"
-      ],
-      "commons_queries": [
-        "Loch Ness",
-        "Urquhart Castle",
-        "Loch Ness Scotland",
-        "Scottish Highlands lake",
-        "Loch Ness boat",
-        "Urquhart Castle Loch Ness",
-        "Scottish Highlands",
-        "Loch Ness shore",
-        "Loch Ness panorama",
-        "Scotland lake landscape",
-        "Loch Ness water",
-        "Highlands Scotland lake",
-        "Loch Ness castle",
-        "Scotland mist lake",
-        "Loch Ness tourism",
-        "Loch Ness aerial",
-        "Scottish lake",
-        "Loch Ness village",
-        "Highland lake Scotland",
-        "Urquhart Castle Scotland"
-      ],
-      "script": "Σε μια βαθιά λίμνη των Σκωτσέζικων Highlands γεννήθηκε ένας από τους πιο γνωστούς θρύλους του κόσμου: το τέρας του Loch Ness, γνωστό ως Nessie. Υπάρχουν παλιότερες ιστορίες για παράξενα πλάσματα στα νερά της περιοχής, αλλά η National Library of Scotland σημειώνει ότι το σύγχρονο ενδιαφέρον για ένα τέρας στο Loch Ness απογειώθηκε τη δεκαετία του 1930. Από τότε, φωτογραφίες, μαρτυρίες και αποστολές αναζήτησης έκαναν τη Nessie διεθνές σύμβολο μυστηρίου. Η πιο διάσημη εικόνα ήταν η λεγόμενη «φωτογραφία του χειρουργού» του 1934, που έδειχνε κάτι σαν μακρύ λαιμό να βγαίνει από το νερό. Δεκαετίες αργότερα, η ιστορία πίσω από τη φωτογραφία αποκαλύφθηκε ως φάρσα. Αυτό όμως δεν σταμάτησε τις αναζητήσεις. Σόναρ, υποβρύχιες κάμερες και πιο πρόσφατα περιβαλλοντικό DNA έχουν χρησιμοποιηθεί για να εξεταστεί τι ζει μέσα στη λίμνη. Οι έρευνες έχουν καταγράψει πολλά γνωστά είδη, αλλά δεν έχουν δώσει επιστημονική απόδειξη για ένα άγνωστο μεγάλο ζώο που να ταιριάζει στον θρύλο. Το Loch Ness είναι επίσης ένα περιβάλλον όπου η ορατότητα στο νερό είναι περιορισμένη και αντικείμενα, κύματα, πουλιά ή ζώα μπορούν από απόσταση να δημιουργήσουν περίεργες εντυπώσεις. Κι όμως, η Nessie παραμένει ζωντανή ως ιστορία. Ίσως επειδή συνδυάζει ακριβώς όσα χρειάζεται ένας δυνατός θρύλος: ένα πραγματικό τοπίο, βαθιά και σκοτεινά νερά, ασαφείς μαρτυρίες και μια εικόνα που ο καθένας μπορεί να συμπληρώσει με τη φαντασία του. Άρα η σωστή ερώτηση δεν είναι αν αποδείχθηκε το τέρας. Δεν αποδείχθηκε. Η πιο ενδιαφέρουσα ερώτηση είναι γιατί, σχεδόν έναν αιώνα μετά τη μεγάλη δημοσιότητα, συνεχίζουμε να θέλουμε να υπάρχει κάτι εκεί κάτω. Αν σας άρεσε, ακολουθήστε για περισσότερα."
-    }
-  ],
-  "render_trigger": "2026-10-01T07:18:00+03:00"
+  "jobs": [{
+    "id": "current-ten-20261002-legend-kelpie",
+    "local_date": "2026-10-02",
+    "slot": "22:00",
+    "title": "Ο θρύλος του Kelpie — το άλογο των σκοτσέζικων νερών",
+    "voice": "el-GR-NestorasNeural",
+    "background_music": false,
+    "photo_target": 8,
+    "scenes": 8,
+    "min_duration_seconds": 80,
+    "max_duration_seconds": 150,
+    "folklore_not_fact": true,
+    "caption": "Στη σκοτσέζικη λαογραφία, τα kelpies είναι υδάτινα πνεύματα που συχνά παίρνουν μορφή αλόγου κοντά σε λίμνες και ποτάμια. Πρόκειται για λαϊκό θρύλο, όχι τεκμηριωμένο υπερφυσικό γεγονός. Μία ερμηνεία είναι ότι τέτοιες ιστορίες λειτουργούσαν και ως προειδοποίηση για τον κίνδυνο του νερού.\n\nΠηγές: Historic Environment Scotland · National Trust for Scotland.\nΣυνθετική ελληνική αφήγηση: Azure Nestoras.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Kelpie #Σκωτία #Λαογραφία #ΔιεθνείςΘρύλοι #Ιστορίες",
+    "sources": ["Historic Environment Scotland — Supernatural Creatures in Scottish Folklore","National Trust for Scotland — natural heritage folklore"],
+    "commons_queries": ["Scottish loch horse photograph","horse beside lake Scotland photograph","Loch Awe Scotland photograph","Scottish river horse photograph","Scotland misty loch photograph","horse Highlands Scotland photograph","Scottish loch landscape photograph","Falkirk Kelpies sculpture photograph","Highlands river Scotland photograph","horse water reflection photograph"],
+    "script": "Στις παλιές ιστορίες της Σκωτίας, ένα μοναχικό άλογο δίπλα σε λίμνη ή ποτάμι δεν ήταν πάντα αυτό που έδειχνε. Ο θρύλος μιλά για το kelpie, ένα υδάτινο πνεύμα που μπορούσε να πάρει τη μορφή αλόγου και να εμφανιστεί κοντά στο νερό. Σε πολλές παραδόσεις παρουσιαζόταν ήρεμο και ελκυστικό, ώστε ένας ανυποψίαστος ταξιδιώτης ή ένα παιδί να πλησιάσει. Από εκεί και πέρα οι ιστορίες γίνονται σκοτεινές: όποιος ανέβαινε στη ράχη του δεν μπορούσε εύκολα να ξεφύγει και το πλάσμα τον παρέσυρε προς το νερό. Σε άλλες εκδοχές το kelpie μπορούσε να πάρει ακόμη και ανθρώπινη μορφή. Η Historic Environment Scotland καταγράφει τέτοιες παραδόσεις ως μέρος της σκοτσέζικης λαογραφίας, ενώ το National Trust for Scotland σημειώνει ότι οι ιστορίες για kelpies μπορεί να λειτουργούσαν και σαν προειδοποίηση προς τα παιδιά να μένουν μακριά από επικίνδυνα νερά και αγνώστους. Αυτό είναι σημαντικό: δεν υπάρχει λόγος να παρουσιάζουμε το kelpie σαν πραγματικό υπερφυσικό ζώο. Είναι ένας θρύλος που γεννήθηκε σε έναν τόπο γεμάτο λίμνες, ποτάμια, ομίχλη και πραγματικούς κινδύνους. Η ιστορία όμως έμεινε ζωντανή για αιώνες και σήμερα το όνομα Kelpie έχει γίνει σύμβολο της σκοτσέζικης λαογραφίας. Οι τεράστιες μεταλλικές γλυπτικές κεφαλές The Kelpies κοντά στο Falkirk δείχνουν πόσο βαθιά έχει περάσει αυτή η μορφή στη σύγχρονη πολιτιστική εικόνα της χώρας. Ο θρύλος ίσως επιβίωσε επειδή μετατρέπει μια απλή προειδοποίηση σε εικόνα που δύσκολα ξεχνάς: μην εμπιστεύεσαι κάθε ήρεμη επιφάνεια του νερού. Αν σας άρεσε, ακολουθήστε για περισσότερα."
+  }]
 }
