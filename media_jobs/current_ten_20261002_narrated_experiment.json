@@ -1,0 +1,23 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_TEN_DAILY_20260927",
+  "local_date": "2026-10-02",
+  "active_metricool_brand_id": 7076410,
+  "jobs": [{
+    "id": "current-ten-20261002-experiment-clark-dolls",
+    "local_date": "2026-10-02",
+    "slot": "18:30",
+    "title": "Clark Doll Tests — ένα ιστορικό κοινωνικό πείραμα",
+    "voice": "el-GR-NestorasNeural",
+    "background_music": false,
+    "photo_target": 8,
+    "scenes": 8,
+    "min_duration_seconds": 80,
+    "max_duration_seconds": 150,
+    "caption": "Οι ιστορικές δοκιμές με κούκλες των Mamie και Kenneth Clark μελέτησαν πώς παιδιά αντιλαμβάνονταν τη φυλή και απέδιδαν θετικά ή αρνητικά χαρακτηριστικά σε κούκλες διαφορετικού χρώματος. Τα ευρήματα συνδέθηκαν με τη συζήτηση για τις ψυχολογικές επιπτώσεις του σχολικού διαχωρισμού και με την υπόθεση Brown v. Board of Education. Δεν αποτελούν καθολικό διαγνωστικό τεστ.\n\nΠηγές: Smithsonian NMAAHC · National Museum of American History.\nΣυνθετική ελληνική αφήγηση: Azure Nestoras.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΚοινωνικήΨυχολογία #ClarkDollTests #Ιστορία #Εκπαίδευση #Πείραμα",
+    "sources": ["Smithsonian National Museum of African American History and Culture — Clark doll studies","National Museum of American History — Separate Is Not Equal, Clark doll test"],
+    "commons_queries": ["dolls different skin tones photograph","school classroom 1950s photograph public domain","doll hands table photograph","1950s school classroom United States photograph","children classroom back view photograph","doll collection museum photograph","school desk vintage photograph","Brown v Board school photograph public domain","dolls museum display photograph","psychology study dolls photograph"],
+    "script": "Στα μέσα του εικοστού αιώνα, οι ψυχολόγοι Mamie και Kenneth Clark πραγματοποίησαν μια σειρά μελετών που έγιναν γνωστές ως Doll Tests. Στόχος τους ήταν να εξετάσουν πώς παιδιά αντιλαμβάνονταν τη φυλή και πώς συνέδεαν διαφορετικά χαρακτηριστικά με κούκλες διαφορετικού χρώματος. Σε διάφορες εκδοχές της διαδικασίας, τα παιδιά καλούνταν να επιλέξουν ανάμεσα σε κούκλες και να απαντήσουν σε ερωτήσεις για το ποια προτιμούσαν, ποια συνέδεαν με θετικά ή αρνητικά χαρακτηριστικά και ποια θεωρούσαν ότι έμοιαζε περισσότερο με τα ίδια. Οι Clarks βρήκαν ότι πολλά από τα παιδιά που μελετήθηκαν απέδιδαν συχνότερα θετικά χαρακτηριστικά στη λευκή κούκλα και αρνητικά χαρακτηριστικά στη μαύρη κούκλα. Οι ερευνητές ερμήνευσαν αυτά τα ευρήματα μέσα στο πλαίσιο του ρατσισμού και του σχολικού διαχωρισμού της εποχής. Το έργο τους απέκτησε ιδιαίτερη ιστορική σημασία επειδή αποτέλεσε μέρος της ευρύτερης επιστημονικής και νομικής συζήτησης γύρω από το Brown v. Board of Education, την απόφαση του Ανώτατου Δικαστηρίου των Ηνωμένων Πολιτειών που έκρινε αντισυνταγματικό τον φυλετικό διαχωρισμό στα δημόσια σχολεία. Χρειάζεται όμως προσοχή στον τρόπο που παρουσιάζουμε το πείραμα σήμερα. Δεν ήταν ένα καθολικό διαγνωστικό τεστ που μπορεί να χαρακτηρίσει κάθε παιδί ή κάθε κοινωνία. Οι μέθοδοι, το ιστορικό πλαίσιο και ο τρόπος ερμηνείας τέτοιων αποτελεσμάτων πρέπει να εξετάζονται προσεκτικά. Η αξία του παραμένει κυρίως ιστορική: έδειξε πόσο βαθιά μπορούν κοινωνικά μηνύματα και θεσμοί να συνδέονται με την εικόνα που διαμορφώνουν τα παιδιά για τον εαυτό τους και τους άλλους. Αν σας άρεσε, ακολουθήστε για περισσότερα."
+  }]
+}
