@@ -1,0 +1,522 @@
+{
+  "batch_id": "4e5a1f49efc15cd3",
+  "batch_sha256": "4e5a1f49efc15cd33fed0628c625802d094a8b1ea339c31b157c066c376ab0e3",
+  "paid_ai_credits_used": 0,
+  "photographic_visuals_required": true,
+  "jobs": [
+    {
+      "id": "ten-20261003-0700-relationships-unspoken-expectations",
+      "status": "rendered",
+      "card_count": 7,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20talking%20(10875818386).jpg?width=1600",
+          "source_credit": "Pedro Ribeiro Simões",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kochendes%20Paar%20in%20einer%20K%C3%BCche%202017-01-15.jpg?width=1600",
+          "source_credit": "Werner Heiber",
+          "license": "CC0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20reads%20books%20together%20in%20their%20living%20room.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20sitting%20at%20a%20kitchen%20table.jpg?width=1600",
+          "source_credit": "National Cancer Institute",
+          "license": "Public domain"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20enjoys%20coffee%20together%20at%20home.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20holding%20hands%20(28619046534).jpg?width=1600",
+          "source_credit": "freestocks.org",
+          "license": "CC0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20enjoying%20coffee%20together%20in%20their%20cozy%20living%20room.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        }
+      ],
+      "files": [
+        {
+          "name": "ten-20261003-0700-relationships-unspoken-expectations-01.jpg",
+          "bytes": 466654,
+          "sha256": "2032deab409d296252f3300bef0d59a2a7c7049a43e317a5fa873839924d4620"
+        },
+        {
+          "name": "ten-20261003-0700-relationships-unspoken-expectations-02.jpg",
+          "bytes": 387510,
+          "sha256": "3ff503b1c62c7a0a8366be8c3f610b0b5f65e79a7c3ca7cfd79530ea97790041"
+        },
+        {
+          "name": "ten-20261003-0700-relationships-unspoken-expectations-03.jpg",
+          "bytes": 280410,
+          "sha256": "d80f86115a8cf60158f0d1211d4231699c0770ac14b48310ee54ca0ce066ffbf"
+        },
+        {
+          "name": "ten-20261003-0700-relationships-unspoken-expectations-04.jpg",
+          "bytes": 358574,
+          "sha256": "0877cd92a3e0475c74961bc0fb56c75e97d4e0c8878442ae534d89ea66818fbe"
+        },
+        {
+          "name": "ten-20261003-0700-relationships-unspoken-expectations-05.jpg",
+          "bytes": 272654,
+          "sha256": "11ee9bb9e1b282bd921341d6e756ac4e37c16663f9c52e11e2f469049ef28635"
+        },
+        {
+          "name": "ten-20261003-0700-relationships-unspoken-expectations-06.jpg",
+          "bytes": 289636,
+          "sha256": "65777ad839cc2b5f9a84d56880f971362f1f962f3851c8781340267c5dae831e"
+        },
+        {
+          "name": "ten-20261003-0700-relationships-unspoken-expectations-07.jpg",
+          "bytes": 285390,
+          "sha256": "a92a3ef6fb90dfae31410a0ff921f34e962deb975a97cfbfac5db9051ea7dc18"
+        },
+        {
+          "name": "ten-20261003-0700-relationships-unspoken-expectations.mp4",
+          "bytes": 1249190,
+          "sha256": "03d9330cb682f3330efeaa48d16f1875d0888d45f277e76492d3e21bbe233970"
+        }
+      ]
+    },
+    {
+      "id": "ten-20261003-0900-survival-frost",
+      "status": "rendered",
+      "card_count": 9,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 45.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Icy%20Winter%20Road%20(Unsplash).jpg?width=1600",
+          "source_credit": "Abigail Keenan",
+          "license": "CC0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Snowy%20road%20during%20January%202026%20winter%20storm.jpg?width=1600",
+          "source_credit": "NinjaRobotPirate",
+          "license": "Commons free license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Snow%20tire%20with%20imprint%20in%20snow.jpg?width=1600",
+          "source_credit": "HopsonRoad",
+          "license": "Commons free license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Driver%20focuses%20on%20steering%20wheel%20while%20navigating%20snowy%20streets%20in%20winter.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Confederation%20Bridge%20during%20winter.jpg?width=1600",
+          "source_credit": "Quintin Soloviev",
+          "license": "CC BY 4.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Person%20walking%20a%20dog%20on%20an%20icy%20sidewalk%20in%20Quebec%20City.jpg?width=1600",
+          "source_credit": "Wilfredor",
+          "license": "Commons free license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Winter%20boots.jpg?width=1600",
+          "source_credit": "Ddd-www",
+          "license": "Public domain"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/EmergencyKit%20(51799078467).jpg?width=1600",
+          "source_credit": "Oregon Department of Transportation",
+          "license": "CC BY"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Snowy%20Drive.jpg?width=1600",
+          "source_credit": "Commons contributor",
+          "license": "Commons free license"
+        }
+      ],
+      "files": [
+        {
+          "name": "ten-20261003-0900-survival-frost-01.jpg",
+          "bytes": 376832,
+          "sha256": "73e3edd842c01a5af030e991721a9678b818d3726578702a44519f91a338ea20"
+        },
+        {
+          "name": "ten-20261003-0900-survival-frost-02.jpg",
+          "bytes": 366625,
+          "sha256": "0928d4ca1fb2ad483a44a4707045f43bcd042cdfaeb835b9e952be6481ebef3a"
+        },
+        {
+          "name": "ten-20261003-0900-survival-frost-03.jpg",
+          "bytes": 293606,
+          "sha256": "c3b97626be782e152393a3cbffc55ef6bfa69e2624cc69ca416f917586841037"
+        },
+        {
+          "name": "ten-20261003-0900-survival-frost-04.jpg",
+          "bytes": 286626,
+          "sha256": "f2ddcc6315e415194d31b2d55bfbad7b7115975547278b00af7b2f5bd840c2f3"
+        },
+        {
+          "name": "ten-20261003-0900-survival-frost-05.jpg",
+          "bytes": 400219,
+          "sha256": "1d235ef859d276de6466636bece62bc2c301c4f67a2dcc31b070bf99a0f6206d"
+        },
+        {
+          "name": "ten-20261003-0900-survival-frost-06.jpg",
+          "bytes": 388759,
+          "sha256": "dea728f0f57868bbbe994b4ba82c6a4897098bfaf84ea95401dc316675dd1f24"
+        },
+        {
+          "name": "ten-20261003-0900-survival-frost-07.jpg",
+          "bytes": 311337,
+          "sha256": "0f238b8bf7530a649f55192e96ea0b0112b96742bd76635823cc2d2a57292227"
+        },
+        {
+          "name": "ten-20261003-0900-survival-frost-08.jpg",
+          "bytes": 414693,
+          "sha256": "b011737aff5b0fe845d25ae7099bf4e5120737e79e808d6f9f33bb558b3be002"
+        },
+        {
+          "name": "ten-20261003-0900-survival-frost-09.jpg",
+          "bytes": 665646,
+          "sha256": "12b57591186f814c096e948b3f96228ddfbd46411044864f3e770d75905c9b02"
+        },
+        {
+          "name": "ten-20261003-0900-survival-frost.mp4",
+          "bytes": 1979456,
+          "sha256": "b25105a1f2b64d148e00768088da1fbc6c4b70acc179f937fd0f762f502433fb"
+        }
+      ]
+    },
+    {
+      "id": "ten-20261003-1000-dog-bartender-first-impression",
+      "status": "rendered",
+      "card_count": 4,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 20.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Alcock_brown_memorial.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Smb1001",
+          "license": "CC BY-SA 3.0",
+          "source_title": "File:Alcock brown memorial.jpg",
+          "fallback_query": "brown Labrador"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Alcock_brown_memorial.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Smb1001",
+          "license": "CC BY-SA 3.0",
+          "source_title": "File:Alcock brown memorial.jpg",
+          "fallback_query": "brown Labrador"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Alcock_brown_memorial.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Smb1001",
+          "license": "CC BY-SA 3.0",
+          "source_title": "File:Alcock brown memorial.jpg",
+          "fallback_query": "brown Labrador"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Alcock_brown_memorial.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Smb1001",
+          "license": "CC BY-SA 3.0",
+          "source_title": "File:Alcock brown memorial.jpg",
+          "fallback_query": "brown Labrador"
+        }
+      ],
+      "files": [
+        {
+          "name": "ten-20261003-1000-dog-bartender-first-impression-01.jpg",
+          "bytes": 355661,
+          "sha256": "35751a032234edb5566ca9c61b18f7ab4890d6dc969e0ae381fd6c569232bf59"
+        },
+        {
+          "name": "ten-20261003-1000-dog-bartender-first-impression-02.jpg",
+          "bytes": 322151,
+          "sha256": "12081f2f9c5864f7bd54ec14f06398ae53f73787b7849ccd545a7a8256afbbeb"
+        },
+        {
+          "name": "ten-20261003-1000-dog-bartender-first-impression-03.jpg",
+          "bytes": 332114,
+          "sha256": "59b229410891f36b5e6d2f60d3e46ed8ba68956daf8c03439fa8e47c2918fd4f"
+        },
+        {
+          "name": "ten-20261003-1000-dog-bartender-first-impression-04.jpg",
+          "bytes": 322220,
+          "sha256": "d705db6ff40559b8c1e6b798acd951fd9fa2d3bda7c840be497a127d36890404"
+        },
+        {
+          "name": "ten-20261003-1000-dog-bartender-first-impression.mp4",
+          "bytes": 739859,
+          "sha256": "f8b7ced8b66d25dd44052de0f3191fa111669336a6e3a0dc102b8b399c56fa99"
+        }
+      ]
+    },
+    {
+      "id": "ten-20261003-1100-zodiac-after-hard-day",
+      "status": "rendered",
+      "card_count": 6,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 30.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20talking%20(10875818386).jpg?width=1600",
+          "source_credit": "Pedro Ribeiro Simões",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kochendes%20Paar%20in%20einer%20K%C3%BCche%202017-01-15.jpg?width=1600",
+          "source_credit": "Werner Heiber",
+          "license": "CC0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20reads%20books%20together%20in%20their%20living%20room.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20sitting%20at%20a%20kitchen%20table.jpg?width=1600",
+          "source_credit": "National Cancer Institute",
+          "license": "Public domain"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20enjoys%20coffee%20together%20at%20home.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20holding%20hands%20(28619046534).jpg?width=1600",
+          "source_credit": "freestocks.org",
+          "license": "CC0"
+        }
+      ],
+      "files": [
+        {
+          "name": "ten-20261003-1100-zodiac-after-hard-day-01.jpg",
+          "bytes": 592445,
+          "sha256": "b17abf616e25caba973e39f6625e50eb3025a1554a48db0f9f4af566e8a14e58"
+        },
+        {
+          "name": "ten-20261003-1100-zodiac-after-hard-day-02.jpg",
+          "bytes": 484227,
+          "sha256": "8447859e5d53c385445db86f0230b9c2446d96faf4e424de2bef2c6dd6a65a29"
+        },
+        {
+          "name": "ten-20261003-1100-zodiac-after-hard-day-03.jpg",
+          "bytes": 353932,
+          "sha256": "632c3e37c1e2d4e59776cc620537022da0dea993f40f3bf5ec4d851ee7524b29"
+        },
+        {
+          "name": "ten-20261003-1100-zodiac-after-hard-day-04.jpg",
+          "bytes": 472959,
+          "sha256": "c3cccd06117c783057c8488e2b8cea29438861a8757018a683923123745a5c60"
+        },
+        {
+          "name": "ten-20261003-1100-zodiac-after-hard-day-05.jpg",
+          "bytes": 334211,
+          "sha256": "2d693d9bf7373f102a175fc5f6fd07f60e2e50cb0e37d366e598173821fc94bf"
+        },
+        {
+          "name": "ten-20261003-1100-zodiac-after-hard-day-06.jpg",
+          "bytes": 361354,
+          "sha256": "468ab07afee2f6919de8532a745e47574cc2d027fcc51f192c8538ac0c30d0fb"
+        },
+        {
+          "name": "ten-20261003-1100-zodiac-after-hard-day.mp4",
+          "bytes": 1326132,
+          "sha256": "75fcc10d49b02c2d8f79e8e21b791ed6152ee16d80219c7e1e0d4618782aefda"
+        }
+      ]
+    },
+    {
+      "id": "ten-20261003-1500-love-flower-workshop",
+      "status": "rendered",
+      "card_count": 5,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 25.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Car%20repair%20shop.jpg?width=1600",
+          "source_credit": "Martin Vorel",
+          "license": "Commons free license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Car%20Keys%201.jpg?width=1600",
+          "source_credit": "Gaurav Dhwaj Khadka",
+          "license": "Commons free license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20sitting%20at%20a%20kitchen%20table.jpg?width=1600",
+          "source_credit": "National Cancer Institute",
+          "license": "Public domain"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/A%20green%20plant%20in%20a%20round%20glass%20vase%20sits%20on%20a%20book%20next%20to%20a%20coffee%20mug.jpg?width=1600",
+          "source_credit": "DP Singh Bhullar / Bhullargraphic",
+          "license": "Commons free license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20holding%20hands%20(28619046534).jpg?width=1600",
+          "source_credit": "freestocks.org",
+          "license": "CC0"
+        }
+      ],
+      "files": [
+        {
+          "name": "ten-20261003-1500-love-flower-workshop-01.jpg",
+          "bytes": 532866,
+          "sha256": "6614d930241d0d5a2e2fbecbddbff64a2badf41fc651d75ba563c4d4d63148c7"
+        },
+        {
+          "name": "ten-20261003-1500-love-flower-workshop-02.jpg",
+          "bytes": 405605,
+          "sha256": "ba56e7d2076df4a251229c26a188c558a6283e4bb161c0de6702dc98410e5f51"
+        },
+        {
+          "name": "ten-20261003-1500-love-flower-workshop-03.jpg",
+          "bytes": 358564,
+          "sha256": "29d2e52e0d76a0618f4f22ff573baf92f20a6f514dc61b29f95070aef0314c05"
+        },
+        {
+          "name": "ten-20261003-1500-love-flower-workshop-04.jpg",
+          "bytes": 329298,
+          "sha256": "001e0cc8f98d418b40faba260e821791fb617a1660fc28d23d2d69ffed78bff9"
+        },
+        {
+          "name": "ten-20261003-1500-love-flower-workshop-05.jpg",
+          "bytes": 287083,
+          "sha256": "b5aab65f78d457905bad47c6d15140c33777f2ac2ec6b1fea98c4d7e85a2f419"
+        },
+        {
+          "name": "ten-20261003-1500-love-flower-workshop.mp4",
+          "bytes": 1037040,
+          "sha256": "ec9543e5fe8bafae6ff7b7b38bd02feba4fcc195b7967e19507b1e5883563030"
+        }
+      ]
+    },
+    {
+      "id": "ten-20261003-2000-myth-chameleon",
+      "status": "rendered",
+      "card_count": 4,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 20.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Panther%20Chameleon.jpg?width=1600",
+          "source_credit": "DrPrattDatta",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Panther%20chameleon.JPG?width=1600",
+          "source_credit": "Miroslav.vajdic",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Panther%20chameleon%20closeup.jpg?width=1600",
+          "source_credit": "Maubreville",
+          "license": "Commons free license"
+        },
+        {
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ambilobe%20panther%20chameleon.jpg?width=1600",
+          "source_credit": "Daniel Schwen",
+          "license": "CC BY-SA 4.0"
+        }
+      ],
+      "files": [
+        {
+          "name": "ten-20261003-2000-myth-chameleon-01.jpg",
+          "bytes": 425046,
+          "sha256": "269e73f7b20533b8d6c760de7879d06bc2f083450347cd8356c6991435c7eb40"
+        },
+        {
+          "name": "ten-20261003-2000-myth-chameleon-02.jpg",
+          "bytes": 445313,
+          "sha256": "66de419dd44880d3074e5796158d5df0c216c69b0fe95cc8f7128cd7ff3484df"
+        },
+        {
+          "name": "ten-20261003-2000-myth-chameleon-03.jpg",
+          "bytes": 362254,
+          "sha256": "3a1f1024a2845cea10786afa0cfb65e81dbda5ccbe8fbbd1c55520ef6edfc2d2"
+        },
+        {
+          "name": "ten-20261003-2000-myth-chameleon-04.jpg",
+          "bytes": 379702,
+          "sha256": "825e0197efd278f590b7c651e388e3b7f20168faac378b288605b7099014d621"
+        },
+        {
+          "name": "ten-20261003-2000-myth-chameleon.mp4",
+          "bytes": 782826,
+          "sha256": "3289991799b999bc384ee0beb1f393b3b16104706c9a1fe98e4cb792eaf88ac6"
+        }
+      ]
+    }
+  ]
+}
