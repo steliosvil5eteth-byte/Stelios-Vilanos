@@ -1,66 +1,82 @@
 [
   {
-    "file": "A street in Ermoupoli, Syros.jpg",
-    "artist": "Leeturtle",
-    "credit": "Own work",
-    "license": "CC BY-SA 4.0",
+    "source": "Wikimedia Commons",
+    "visual_kind": "photograph",
+    "attribution": "Leeturtle",
+    "license": "CC BY-SA",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "source_page": "https://commons.wikimedia.org/wiki/File:A_street_in_Ermoupoli,_Syros.jpg",
-    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/85/A_street_in_Ermoupoli%2C_Syros.jpg/1280px-A_street_in_Ermoupoli%2C_Syros.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "download_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/A%20street%20in%20Ermoupoli%2C%20Syros.jpg?width=1800",
+    "source_pack_pinned": true
   },
   {
-    "file": "Miaouli Square.JPG",
-    "artist": "Zacharias Mitzelos",
-    "credit": "Own work",
+    "source": "Wikimedia Commons",
+    "visual_kind": "photograph",
+    "attribution": "Zacharias Mitzelos",
     "license": "CC0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
     "source_page": "https://commons.wikimedia.org/wiki/File:Miaouli_Square.JPG",
-    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Miaouli_Square.JPG/1920px-Miaouli_Square.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "download_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Miaouli%20Square.JPG?width=1800",
+    "source_pack_pinned": true
   },
   {
-    "file": "Building (3).jpg",
-    "artist": "Magnus Manske",
-    "credit": "Own work",
-    "license": "CC BY-SA 3.0",
+    "source": "Wikimedia Commons",
+    "visual_kind": "photograph",
+    "attribution": "Magnus Manske",
+    "license": "CC BY-SA",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "source_page": "https://commons.wikimedia.org/wiki/File:Building_(3).jpg",
-    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Building_%283%29.jpg/1920px-Building_%283%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "download_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Building%20(3).jpg?width=1800",
+    "source_pack_pinned": true
   },
   {
-    "file": "Ermoupoli, Syros island, Greece.jpg",
-    "artist": "John Karakatsanis",
-    "credit": "originally posted to Flickr as Syros island, Greece",
-    "license": "CC BY-SA 2.0",
+    "source": "Wikimedia Commons",
+    "visual_kind": "photograph",
+    "attribution": "John Karakatsanis",
+    "license": "CC BY-SA",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "source_page": "https://commons.wikimedia.org/wiki/File:Ermoupoli,_Syros_island,_Greece.jpg",
-    "download_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/Ermoupoli%2C_Syros_island%2C_Greece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled"
+    "download_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ermoupoli%2C%20Syros%20island%2C%20Greece.jpg?width=1800",
+    "source_pack_pinned": true
   },
   {
-    "file": "20221027 Syros 287.jpg",
-    "artist": "Jean Housen",
-    "credit": "Own work",
-    "license": "CC BY-SA 4.0",
+    "source": "Wikimedia Commons",
+    "visual_kind": "photograph",
+    "attribution": "Jean Housen",
+    "license": "CC BY-SA",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
     "source_page": "https://commons.wikimedia.org/wiki/File:20221027_Syros_287.jpg",
-    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8b/20221027_Syros_287.jpg/1920px-20221027_Syros_287.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "download_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/20221027%20Syros%20287.jpg?width=1800",
+    "source_pack_pinned": true
   },
   {
-    "file": "Mykonos, windmills (15990113682).jpg",
-    "artist": "Arian Zwegers from Brussels, Belgium",
-    "credit": "Mykonos, windmills",
-    "license": "CC BY 2.0",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Mykonos,_windmills_(15990113682).jpg",
-    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/46/Mykonos%2C_windmills_%2815990113682%29.jpg/1920px-Mykonos%2C_windmills_%2815990113682%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "source": "Wikimedia Commons",
+    "visual_kind": "photograph",
+    "attribution": "G Da",
+    "license": "CC BY-SA",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Ermoupolis,_Syros_island,_Greece_-_panoramio_(1).jpg",
+    "download_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ermoupolis%2C%20Syros%20island%2C%20Greece%20-%20panoramio%20(1).jpg?width=1800",
+    "source_pack_pinned": true
   },
   {
-    "file": "Sailor of USNS Carson City (T-EPF-7) looking at harbor during arrival in Syros US Navy 180316-N-N0901-010.jpg",
-    "artist": "US Navy courtesy photo",
-    "credit": "This image was released by the United States Navy with the ID 180316-N-N0901-010 (next).\nThis tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See Commons:Licensing.\n\n\nالعربية ∙ বাংলা ∙ \nBahasa Indonesia ∙ \nBahaso Jambi ∙ \nDeutsch ∙ Deutsch (Sie-Form) ∙ English ∙ español ∙ euskara ∙ فارسی ∙ français ∙ italiano ∙ 日本語 ∙ 한국어 ∙ македонски ∙ മലയാളം ∙ Plattdüütsch ∙ Nederlands ∙ polski ∙ پښتو ∙ português ∙ русский ∙ slovenščina ∙ svenska ∙ Türkçe ∙ українська ∙ 简体中文 ∙ 繁體中文 ∙ +/−",
-    "license": "Public domain",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Sailor_of_USNS_Carson_City_(T-EPF-7)_looking_at_harbor_during_arrival_in_Syros_US_Navy_180316-N-N0901-010.jpg",
-    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/df/Sailor_of_USNS_Carson_City_%28T-EPF-7%29_looking_at_harbor_during_arrival_in_Syros_US_Navy_180316-N-N0901-010.jpg/1920px-Sailor_of_USNS_Carson_City_%28T-EPF-7%29_looking_at_harbor_during_arrival_in_Syros_US_Navy_180316-N-N0901-010.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "source": "Wikimedia Commons",
+    "visual_kind": "photograph",
+    "attribution": "NNeilAlieNN",
+    "license": "CC BY-SA",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source_page": "https://commons.wikimedia.org/wiki/File:Ano_Syros.JPG",
+    "download_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ano%20Syros.JPG?width=1800",
+    "source_pack_pinned": true
   },
   {
-    "file": "Syra LCCN94513340.jpg",
-    "artist": "Miscellaneous Items in High Demand, PPOC, Library of Congress",
-    "credit": "Library of Congress\n\nCatalog: https://lccn.loc.gov/94513340\nImage download: https://cdn.loc.gov/service/pnp/cph/3c00000/3c08000/3c08900/3c08905v.jpg\nOriginal url: https://www.loc.gov/pictures/item/94513340/",
-    "license": "Public domain",
-    "source_page": "https://commons.wikimedia.org/wiki/File:Syra_LCCN94513340.jpg",
-    "download_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9b/Syra_LCCN94513340.jpg/1920px-Syra_LCCN94513340.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail"
+    "source": "Wikimedia Commons",
+    "visual_kind": "photograph",
+    "attribution": "Andisrado",
+    "license": "CC BY-SA",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "source_page": "https://commons.wikimedia.org/wiki/File:View_by_the_sea,_Syros_island.jpg",
+    "download_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/View%20by%20the%20sea%2C%20Syros%20island.jpg?width=1800",
+    "source_pack_pinned": true
   }
 ]
