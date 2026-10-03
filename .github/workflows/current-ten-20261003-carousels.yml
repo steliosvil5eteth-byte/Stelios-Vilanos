@@ -13,7 +13,7 @@ permissions:
 
 concurrency:
   group: current-ten-20261003-carousels
-  cancel-in-progress: false
+  cancel-in-progress: true
 
 jobs:
   render:
