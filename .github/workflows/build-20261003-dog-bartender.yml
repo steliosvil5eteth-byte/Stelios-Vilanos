@@ -1,0 +1,43 @@
+name: Build 20261003 dog bartender exact-final
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tools/build_dog_bartender_20261003.py'
+      - '.github/workflows/build-20261003-dog-bartender.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --quiet pillow rembg onnxruntime
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+      - name: Render pack
+        run: |
+          python3 tools/build_dog_bartender_20261003.py "$RUNNER_TEMP/dog-final"
+      - name: Save to media-output
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/media-output"
+          git fetch origin media-output --depth=1
+          git worktree add --detach "$OUT" FETCH_HEAD
+          rm -rf "$OUT/jobs/current-ten-20261003-dog-bartender-final"
+          mkdir -p "$OUT/jobs/current-ten-20261003-dog-bartender-final"
+          cp -a "$RUNNER_TEMP/dog-final"/. "$OUT/jobs/current-ten-20261003-dog-bartender-final/"
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/current-ten-20261003-dog-bartender-final
+          git -C "$OUT" commit -m 'Build 03 Oct dog bartender exact final'
+          git -C "$OUT" fetch origin media-output
+          git -C "$OUT" rebase FETCH_HEAD
+          git -C "$OUT" push origin HEAD:media-output
