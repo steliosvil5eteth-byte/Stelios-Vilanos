@@ -8,62 +8,55 @@
   "purpose": "2026-10-03 CURRENT_TEN_DAILY carousel batch: relationships, survival, dog_bartender, zodiac current bundle, love_soul_relationship, myth_or_truth.",
   "jobs": [
     {
-      "id": "ten-20261003-0700-relationships-small-agreements",
+      "id": "ten-20261003-0700-relationships-unspoken-expectations",
       "expected_cards": 7,
       "seconds_per_slide": 5,
       "slides": [
         {
-          "title": "ΜΙΑ ΣΧΕΣΗ ΔΕΝ ΚΡΑΤΙΕΤΑΙ ΜΟΝΟ ΑΠΟ ΤΑ ΜΕΓΑΛΑ — 1/7",
-          "text": "Συχνά τη διαφορά την κάνουν μικρές συμφωνίες της καθημερινότητας που δύο άνθρωποι τηρούν χωρίς να τις θεωρούν δεδομένες.",
-          "source_query": "couple talking at home photograph",
+          "title": "«ΘΑ ΕΠΡΕΠΕ ΝΑ ΤΟ ΞΕΡΕΙ» — 1/7",
+          "text": "Αλλά του το είπες ποτέ καθαρά; Ο άλλος δεν μπορεί πάντα να μαντεύει τι χρειάζεσαι.",
           "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20talking%20(10875818386).jpg?width=1600",
           "source_credit": "Pedro Ribeiro Simões",
           "license": "CC BY 2.0"
         },
         {
-          "title": "ΠΟΙΟΣ ΑΝΑΛΑΜΒΑΝΕΙ ΤΙ; — 2/7",
-          "text": "Όταν οι ευθύνες μένουν θολές, η κούραση γίνεται εύκολα παράπονο. Μια καθαρή μοιρασιά μειώνει τις παρεξηγήσεις.",
-          "source_query": "couple doing household chores photograph",
+          "title": "ΠΡΟΣΔΟΚΙΑ ΔΕΝ ΕΙΝΑΙ ΣΥΜΦΩΝΙΑ — 2/7",
+          "text": "Το ότι κάτι μοιάζει αυτονόητο για εσένα δεν σημαίνει ότι έχει συμφωνηθεί και από τους δύο.",
           "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kochendes%20Paar%20in%20einer%20K%C3%BCche%202017-01-15.jpg?width=1600",
           "source_credit": "Werner Heiber",
           "license": "CC0"
         },
         {
-          "title": "ΧΡΟΝΟΣ ΓΙΑ ΤΟΥΣ ΔΥΟ — 3/7",
-          "text": "Η σχέση χρειάζεται χρόνο μαζί, αλλά και χώρο για φίλους, δουλειά και προσωπικά ενδιαφέροντα.",
-          "source_query": "couple planning calendar at home photograph",
+          "title": "ΠΕΣ ΤΗΝ ΑΝΑΓΚΗ ΣΥΓΚΕΚΡΙΜΕΝΑ — 3/7",
+          "text": "Αντί για «δεν με υπολογίζεις», πες τι θα σε βοηθούσε στην πράξη και πότε.",
           "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20reads%20books%20together%20in%20their%20living%20room.jpg?width=1600",
           "source_credit": "Shixart1985",
           "license": "CC BY 2.0"
         },
         {
-          "title": "ΤΑ ΧΡΗΜΑΤΑ ΘΕΛΟΥΝ ΣΥΖΗΤΗΣΗ — 4/7",
-          "text": "Δεν υπάρχει ένα σωστό μοντέλο για όλους. Υπάρχει όμως ανάγκη για διαφάνεια και κοινή συμφωνία για τα βασικά.",
-          "source_query": "couple discussing household finances photograph",
+          "title": "ΡΩΤΑ ΠΡΙΝ ΥΠΟΘΕΣΕΙΣ — 4/7",
+          "text": "Μια απλή ερώτηση μπορεί να προλάβει ώρες έντασης που ξεκίνησαν από μια λάθος υπόθεση.",
           "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20sitting%20at%20a%20kitchen%20table.jpg?width=1600",
           "source_credit": "National Cancer Institute",
           "license": "Public domain"
         },
         {
-          "title": "ΜΗΝ ΠΕΡΙΜΕΝΕΙΣ ΝΑ ΜΑΝΤΕΨΕΙ — 5/7",
-          "text": "Το «θα έπρεπε να το ξέρει» δημιουργεί απόσταση. Το να πεις καθαρά τι χρειάζεσαι είναι συχνά πιο δίκαιο και για τους δύο.",
-          "source_query": "couple serious conversation living room photograph",
+          "title": "ΑΝΑΓΚΗ Ή ΕΛΕΓΧΟΣ; — 5/7",
+          "text": "Το να ζητάς κάτι είναι διαφορετικό από το να απαιτείς ο άλλος να σκέφτεται και να λειτουργεί όπως εσύ.",
           "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20enjoys%20coffee%20together%20at%20home.jpg?width=1600",
           "source_credit": "Shixart1985",
           "license": "CC BY 2.0"
         },
         {
-          "title": "ΜΙΚΡΗ ΕΠΑΝΟΡΘΩΣΗ, ΜΕΓΑΛΗ ΔΙΑΦΟΡΑ — 6/7",
-          "text": "Ένα ειλικρινές «έκανα λάθος» ή «σε άκουσα» μπορεί να σταματήσει μια μικρή ένταση πριν γίνει μόνιμη πληγή.",
-          "source_query": "couple reconciling talking photograph",
+          "title": "ΚΑΝΤΕ ΜΙΑ ΚΟΙΝΗ ΣΥΜΦΩΝΙΑ — 6/7",
+          "text": "Όταν και οι δύο ξέρουν τι περιμένουν, υπάρχει λιγότερος χώρος για απογοήτευση και παρεξήγηση.",
           "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20holding%20hands%20(28619046534).jpg?width=1600",
           "source_credit": "freestocks.org",
           "license": "CC0"
         },
         {
-          "title": "ΕΣΕΙΣ ΤΙ ΕΧΕΤΕ ΣΥΜΦΩΝΗΣΕΙ; — 7/7",
-          "text": "Ποια μικρή καθημερινή συμφωνία θεωρείτε πιο σημαντική για να λειτουργεί μια σχέση;",
-          "source_query": "couple relaxed portrait home photograph",
+          "title": "ΕΣΕΙΣ ΤΟ ΕΧΕΤΕ ΠΕΙ; — 7/7",
+          "text": "Ποια προσδοκία σε μια σχέση θεωρούμε συχνά αυτονόητη χωρίς να την έχουμε πει ποτέ καθαρά;",
           "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20enjoying%20coffee%20together%20in%20their%20cozy%20living%20room.jpg?width=1600",
           "source_credit": "Shixart1985",
           "license": "CC BY 2.0"
@@ -151,84 +144,74 @@
       ]
     },
     {
-      "id": "ten-20261003-1000-dog-bartender-water-order",
+      "id": "ten-20261003-1000-dog-bartender-first-impression",
       "expected_cards": 4,
       "seconds_per_slide": 5,
       "slides": [
         {
-          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 1/4",
-          "text": "Ο πελάτης ζήτησε νερό «ούτε πολύ κρύο, ούτε χλιαρό, με δύο παγάκια ακριβώς». Ο μπάρμαν τον κοίταξε σοβαρά.",
-          "source_query": "golden retriever behind bar counter photograph"
+          "title": "«ΚΑΤΙ ΝΑ ΜΕ ΚΑΝΕΙ ΠΙΟ ΕΝΔΙΑΦΕΡΟΝ;» — 1/4",
+          "text": "Ο πελάτης ετοιμαζόταν για πρώτο ραντεβού και ζήτησε από τον σκύλο μπάρμαν το πιο δυνατό «κοκτέιλ εντύπωσης»."
         },
         {
-          "title": "Η ΠΑΡΑΓΓΕΛΙΑ ΣΥΝΕΧΙΣΤΗΚΕ — 2/4",
-          "text": "«Χωρίς λεμόνι, αλλά να μυρίζει λεμόνι. Και το ποτήρι να είναι μεγάλο, αλλά να μη φαίνεται μεγάλο».",
-          "source_query": "dog at pub bar counter photograph"
+          "title": "Ο ΜΠΑΡΜΑΝ ΕΒΑΛΕ ΕΝΑ ΑΠΛΟ ΠΟΤΟ — 2/4",
+          "text": "«Ναι», του είπε με το βλέμμα. «Μην προσπαθείς τόσο πολύ.»"
         },
         {
-          "title": "Ο ΜΠΑΡΜΑΝ ΕΚΑΝΕ Ο,ΤΙ ΜΠΟΡΟΥΣΕ — 3/4",
-          "text": "Έβαλε δύο παγάκια, κοίταξε το ποτήρι, κοίταξε τον πελάτη… και πήρε τη βαθύτερη ανάσα της βάρδιας.",
-          "source_query": "golden retriever bar interior photograph"
+          "title": "«ΑΥΤΟ ΕΙΝΑΙ ΟΛΟ;» — 3/4",
+          "text": "Ο σκύλος κοίταξε το κινητό με την έτοιμη υπερβολική ιστορία: «Και μη λες πράγματα που δεν έγιναν.»"
         },
         {
-          "title": "ΤΕΛΙΚΑ ΤΟΥ ΕΔΩΣΕ ΝΕΡΟ — 4/4",
-          "text": "Ο πελάτης χαμογέλασε: «Ακριβώς όπως το ήθελα». Ο σκύλος μπάρμαν δεν χαμογέλασε καθόλου.",
-          "source_query": "brown dog behind bar photograph"
+          "title": "Η ΚΑΛΗ ΠΡΩΤΗ ΕΝΤΥΠΩΣΗ — 4/4",
+          "text": "Κρατά περισσότερο όταν δεν χρειάζεται μετά να τη θυμάσαι σαν σενάριο."
         }
       ]
     },
     {
-      "id": "ten-20261003-1100-zodiac-distance-pairs",
+      "id": "ten-20261003-1100-zodiac-after-hard-day",
       "expected_cards": 6,
       "seconds_per_slide": 5,
       "slides": [
         {
-          "title": "ΚΡΙΟΣ + ΖΥΓΟΣ — 1/6",
-          "text": "Όταν νιώσουν απόσταση: ο Κριός ζητά γρήγορα ξεκαθάρισμα· ο Ζυγός πρώτα προσπαθεί να ρίξει τους τόνους.",
-          "source_query": "couple discussing relationship photograph",
+          "title": "ΚΡΙΟΣ + ΣΚΟΡΠΙΟΣ — 1/6",
+          "text": "Μετά από δύσκολη μέρα, ο Κριός θέλει λίγο χώρο να ξεθυμάνει· ο Σκορπιός θέλει ηρεμία και έναν άνθρωπο που δεν πιέζει.",
           "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20talking%20(10875818386).jpg?width=1600",
           "source_credit": "Pedro Ribeiro Simões",
           "license": "CC BY 2.0"
         },
         {
-          "title": "ΤΑΥΡΟΣ + ΣΚΟΡΠΙΟΣ — 2/6",
-          "text": "Ο Ταύρος ψάχνει σταθερότητα στις πράξεις· ο Σκορπιός παρατηρεί αν κάτι άλλαξε πίσω από τις λέξεις.",
-          "source_query": "couple serious eye contact photograph",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20holding%20hands%20(28619046534).jpg?width=1600",
-          "source_credit": "freestocks.org",
+          "title": "ΤΑΥΡΟΣ + ΤΟΞΟΤΗΣ — 2/6",
+          "text": "Ο Ταύρος ψάχνει άνεση και σταθερότητα· ο Τοξότης χρειάζεται αλλαγή παραστάσεων και κάτι που θα του σηκώσει τη διάθεση.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kochendes%20Paar%20in%20einer%20K%C3%BCche%202017-01-15.jpg?width=1600",
+          "source_credit": "Werner Heiber",
           "license": "CC0"
         },
         {
-          "title": "ΔΙΔΥΜΟΙ + ΤΟΞΟΤΗΣ — 3/6",
-          "text": "Οι Δίδυμοι ανοίγουν κουβέντα από πολλές πλευρές· ο Τοξότης θέλει μια ευθεία απάντηση και χώρο να αναπνεύσει.",
-          "source_query": "couple talking outdoors photograph",
+          "title": "ΔΙΔΥΜΟΙ + ΑΙΓΟΚΕΡΩΣ — 3/6",
+          "text": "Οι Δίδυμοι θέλουν να μιλήσουν και να ξεφύγει το μυαλό· ο Αιγόκερως προτιμά ησυχία, τάξη και λίγο χρόνο χωρίς απαιτήσεις.",
           "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20reads%20books%20together%20in%20their%20living%20room.jpg?width=1600",
           "source_credit": "Shixart1985",
           "license": "CC BY 2.0"
         },
         {
-          "title": "ΚΑΡΚΙΝΟΣ + ΑΙΓΟΚΕΡΩΣ — 4/6",
-          "text": "Ο Καρκίνος χρειάζεται συναισθηματική επιβεβαίωση· ο Αιγόκερως δείχνει ενδιαφέρον περισσότερο μέσα από σταθερές πράξεις.",
-          "source_query": "couple sitting together home photograph",
+          "title": "ΚΑΡΚΙΝΟΣ + ΥΔΡΟΧΟΟΣ — 4/6",
+          "text": "Ο Καρκίνος αναζητά τρυφερότητα και ασφάλεια· ο Υδροχόος χρειάζεται χώρο να αδειάσει το μυαλό πριν ξανασυνδεθεί.",
           "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20sitting%20at%20a%20kitchen%20table.jpg?width=1600",
           "source_credit": "National Cancer Institute",
           "license": "Public domain"
         },
         {
-          "title": "ΛΕΩΝ + ΥΔΡΟΧΟΟΣ — 5/6",
-          "text": "Ο Λέων θέλει να νιώσει ότι εξακολουθεί να μετρά· ο Υδροχόος χρειάζεται πρώτα λίγο χώρο για να καταλάβει τι νιώθει.",
-          "source_query": "couple conversation cafe photograph",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20enjoys%20coffee%20together%20in%20a%20cozy%20setting.jpg?width=1600",
+          "title": "ΛΕΩΝ + ΙΧΘΥΕΣ — 5/6",
+          "text": "Ο Λέων θέλει ζεστή προσοχή και αναγνώριση· οι Ιχθύες ηρεμούν με κατανόηση, τρυφερότητα και χαμηλούς τόνους.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20enjoys%20coffee%20together%20at%20home.jpg?width=1600",
           "source_credit": "Shixart1985",
           "license": "CC BY 2.0"
         },
         {
-          "title": "ΠΑΡΘΕΝΟΣ + ΙΧΘΥΕΣ — 6/6",
-          "text": "Ο Παρθένος ψάχνει τι άλλαξε συγκεκριμένα· οι Ιχθύες διαβάζουν περισσότερο τον τόνο και την ατμόσφαιρα.",
-          "source_query": "couple quiet conversation photograph",
-          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20enjoying%20coffee%20together%20in%20their%20cozy%20living%20room.jpg?width=1600",
-          "source_credit": "Shixart1985",
-          "license": "CC BY 2.0"
+          "title": "ΠΑΡΘΕΝΟΣ + ΖΥΓΟΣ — 6/6",
+          "text": "Η Παρθένος θέλει να τακτοποιήσει ό,τι την βαραίνει· ο Ζυγός χρειάζεται ήρεμη κουβέντα και μια αίσθηση ισορροπίας.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20holding%20hands%20(28619046534).jpg?width=1600",
+          "source_credit": "freestocks.org",
+          "license": "CC0"
         }
       ]
     },
@@ -319,5 +302,5 @@
       ]
     }
   ],
-  "production_note": "Render requested for 2026-10-03 after current workflow file was installed. | 2026-10-03 remediation: pinned rights-cleared, scene-specific photographic sources for relationships, survival, zodiac, love, myth; dog-bartender held separately pending compliant recurring-bartender visual."
+  "production_note": "Render requested for 2026-10-03 after current workflow file was installed. | 2026-10-03 remediation: pinned rights-cleared, scene-specific photographic sources for relationships, survival, zodiac, love, myth; dog-bartender held separately pending compliant recurring-bartender visual. | Reconciled 2026-10-03 with current Notion archive for relationships, dog_bartender and zodiac; older manifest topics superseded."
 }
