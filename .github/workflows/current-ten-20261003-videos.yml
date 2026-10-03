@@ -27,7 +27,6 @@ jobs:
           AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
         run: |
           set -euo pipefail
-          sed -i 's/x>1.2 for x in gaps/x>1.6 for x in gaps/' tools/render_azure_feature_batch.py
           python3 tools/render_azure_feature_batch.py --manifest media_jobs/current_ten_20261003_narrated_all.json --output "$RUNNER_TEMP/final"
       - name: Exact-final contact sheets
         run: |

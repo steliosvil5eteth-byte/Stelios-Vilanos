@@ -11,7 +11,7 @@
       "voice": "el-GR-NestorasNeural",
       "background_music": false,
       "photo_target": 8,
-      "scenes": 16,
+      "scenes": 8,
       "min_duration_seconds": 80,
       "max_duration_seconds": 180,
       "caption": "Διήμερο στη Σύρο: Ερμούπολη, Άνω Σύρος, νεοκλασικά και κυκλαδίτικη θέα σε ένα γεμάτο αλλά ανθρώπινο Σαββατοκύριακο.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Σύρος #Ερμούπολη #ΆνωΣύρος #Διήμερο #Ελλάδα",
@@ -35,7 +35,7 @@
       "voice": "el-GR-NestorasNeural",
       "background_music": false,
       "photo_target": 8,
-      "scenes": 16,
+      "scenes": 8,
       "min_duration_seconds": 80,
       "max_duration_seconds": 180,
       "caption": "Μοιάζουν με τεχνητές κολόνες, αλλά οι γεωμετρικές στήλες βασάλτη δημιουργούνται φυσικά όταν η λάβα ψύχεται, συστέλλεται και ραγίζει με οργανωμένο τρόπο.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Βασάλτης #Γεωλογία #Φύση #Ηφαίστεια #ΠαράξεναΦαινόμενα",
@@ -59,7 +59,7 @@
       "voice": "el-GR-NestorasNeural",
       "background_music": false,
       "photo_target": 8,
-      "scenes": 16,
+      "scenes": 8,
       "min_duration_seconds": 80,
       "max_duration_seconds": 190,
       "caption": "Το Pygmalion in the Classroom έγινε διάσημο για την ιδέα ότι οι προσδοκίες των εκπαιδευτικών μπορεί να επηρεάζουν τη συμπεριφορά και την επίδοση. Τα αποτελέσματα όμως έχουν συζητηθεί και δεν αναπαράγονται πάντα με τον ίδιο τρόπο.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ψυχολογία #Εκπαίδευση #Pygmalion #Πείραμα #ΚοινωνικήΨυχολογία",
@@ -83,7 +83,7 @@
       "voice": "el-GR-NestorasNeural",
       "background_music": false,
       "photo_target": 8,
-      "scenes": 16,
+      "scenes": 8,
       "min_duration_seconds": 80,
       "max_duration_seconds": 180,
       "folklore_not_fact": true,
@@ -100,5 +100,6 @@
         "Ireland cloudy landscape photograph"
       ]
     }
-  ]
+  ],
+  "qa_policy_note": "Every selected photograph is used once only; no repeated visual scenes. Original dead-air threshold remains unchanged."
 }
