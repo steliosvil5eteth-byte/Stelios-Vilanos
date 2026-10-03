@@ -225,5 +225,6 @@
         }
       ]
     }
-  ]
+  ],
+  "production_note": "Render requested for 2026-10-03 after current workflow file was installed."
 }
