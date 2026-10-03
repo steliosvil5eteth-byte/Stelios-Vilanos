@@ -174,8 +174,9 @@ ZODIAC_GLYPHS={
 def render_card(slide,index,total,work,require_photo):
     if require_photo and not slide.get('source_url') and not slide.get('source_query'): raise ValueError('photographic source_url or source_query required')
     title=slide.get('visible_title') or slide['title']
-    sign=title.split('—')[0].strip().upper()
-    zodiac=sign in ZODIAC_GLYPHS
+    sign_label=title.split('—')[0].strip().upper()
+    pair_signs=[s.strip() for s in sign_label.split('+') if s.strip()]
+    zodiac=len(pair_signs) in (1,2) and all(s in ZODIAC_GLYPHS for s in pair_signs)
     if slide.get('source_url') or slide.get('source_query'):
         src=work/f'src-{index:02}.img'; used=None
         if slide.get('source_url'):
@@ -206,13 +207,25 @@ def render_card(slide,index,total,work,require_photo):
 
     d=ImageDraw.Draw(im)
     if zodiac:
-        glyph=ZODIAC_GLYPHS[sign]
-        d.ellipse((58,44,238,224),fill=(10,16,28),outline=(216,186,120),width=5)
-        gf=ImageFont.truetype(BOLD,122)
-        gb=d.textbbox((0,0),glyph,font=gf)
-        d.text((148-(gb[2]-gb[0])/2,130-(gb[3]-gb[1])/2-8),glyph,font=gf,fill=(255,241,197))
-        text_block(im,sign,(270,58,1010,150),58,bold=True,center=False,min_size=38)
-        text_block(im,'Η ΕΙΚΟΝΑ ΤΟΥ ΖΩΔΙΟΥ',(270,150,1010,215),28,bold=True,center=False,min_size=22)
+        if len(pair_signs)==2:
+            circles=[(52,48,202,198),(222,48,372,198)]
+            centers=[(127,123),(297,123)]
+            gf=ImageFont.truetype(BOLD,92)
+            for s,circle,center in zip(pair_signs,circles,centers):
+                glyph=ZODIAC_GLYPHS[s]
+                d.ellipse(circle,fill=(10,16,28),outline=(216,186,120),width=5)
+                gb=d.textbbox((0,0),glyph,font=gf)
+                d.text((center[0]-(gb[2]-gb[0])/2,center[1]-(gb[3]-gb[1])/2-7),glyph,font=gf,fill=(255,241,197))
+            text_block(im,sign_label,(405,58,1010,145),48,bold=True,center=False,min_size=32)
+            text_block(im,'ΣΥΓΚΡΙΣΗ ΔΥΟ ΖΩΔΙΩΝ',(405,148,1010,210),27,bold=True,center=False,min_size=21)
+        else:
+            glyph=ZODIAC_GLYPHS[pair_signs[0]]
+            d.ellipse((58,44,238,224),fill=(10,16,28),outline=(216,186,120),width=5)
+            gf=ImageFont.truetype(BOLD,122)
+            gb=d.textbbox((0,0),glyph,font=gf)
+            d.text((148-(gb[2]-gb[0])/2,130-(gb[3]-gb[1])/2-8),glyph,font=gf,fill=(255,241,197))
+            text_block(im,sign_label,(270,58,1010,150),58,bold=True,center=False,min_size=38)
+            text_block(im,'Η ΕΙΚΟΝΑ ΤΟΥ ΖΩΔΙΟΥ',(270,150,1010,215),28,bold=True,center=False,min_size=22)
         text_block(im,slide['text'],(100,690,980,842),46,bold=True,center=True,min_size=30)
         d.rounded_rectangle((58,920,1022,1038),radius=18,fill=(15,24,36))
         text_block(im,CTA,(76,934,1004,1015),30,bold=True,center=True,min_size=24)
