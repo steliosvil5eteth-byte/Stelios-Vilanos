@@ -39,5 +39,5 @@ jobs:
           git -C "$OUT" add jobs/current-ten-20261003-dog-bartender-final
           git -C "$OUT" commit -m 'Build 03 Oct dog bartender exact final'
           git -C "$OUT" fetch origin media-output
-          git -C "$OUT" rebase FETCH_HEAD
+          git -C "$OUT" merge --no-edit -X ours FETCH_HEAD
           git -C "$OUT" push origin HEAD:media-output
