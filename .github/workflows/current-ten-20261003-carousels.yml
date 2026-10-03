@@ -12,7 +12,7 @@ permissions:
   contents: write
 
 concurrency:
-  group: current-ten-20261003-carousels
+  group: current-ten-20261003-carousels-v2
   cancel-in-progress: true
 
 jobs:
