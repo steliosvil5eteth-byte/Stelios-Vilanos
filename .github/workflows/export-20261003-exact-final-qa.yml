@@ -1,0 +1,72 @@
+name: Export 20261003 exact-final QA visuals
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/export-20261003-exact-final-qa.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  export:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install image tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq python3-pil
+      - name: Build exact-final contact sheets and text exports
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/media-output"
+          git fetch origin media-output --depth=1
+          git worktree add -b qaexport1003 "$OUT" FETCH_HEAD
+          OUT="$OUT" python3 - <<'PY'
+          import os, base64
+          from pathlib import Path
+          from PIL import Image, ImageOps
+          root=Path(os.environ["OUT"])
+          car=root/"jobs/current-ten-20261003-carousels/7fa0169f9e58bc8c"
+          export=root/"qa-visual-b64/2026-10-03"
+          export.mkdir(parents=True,exist_ok=True)
+          series=[
+            "ten-20261003-0700-relationships-small-agreements",
+            "ten-20261003-0900-survival-frost",
+            "ten-20261003-1000-dog-bartender-water-order",
+            "ten-20261003-1100-zodiac-distance-pairs",
+            "ten-20261003-1500-love-flower-workshop",
+            "ten-20261003-2000-myth-chameleon",
+          ]
+          for s in series:
+              files=sorted(car.glob(s+"-[0-9][0-9].jpg"))
+              if not files: raise SystemExit("missing cards "+s)
+              w=h=320; cols=3; rows=(len(files)+cols-1)//cols
+              sheet=Image.new("RGB",(cols*w,rows*h),(18,18,18))
+              for i,p in enumerate(files):
+                  with Image.open(p).convert("RGB") as im:
+                      sheet.paste(ImageOps.fit(im,(w,h)),((i%cols)*w,(i//cols)*h))
+              jpg=export/(s+"-contact.jpg")
+              sheet.save(jpg,quality=92)
+          vids=root/"jobs/current-ten-20261003-videos"
+          for d in sorted(vids.iterdir()):
+              if not d.is_dir(): continue
+              src=d/"final-contact-sheet.jpg"
+              if src.exists():
+                  (export/(d.name+"-contact.jpg")).write_bytes(src.read_bytes())
+          for jpg in export.glob("*.jpg"):
+              (export/(jpg.stem+".b64.txt")).write_text(base64.b64encode(jpg.read_bytes()).decode("ascii"))
+          PY
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add qa-visual-b64/2026-10-03
+          if ! git -C "$OUT" diff --cached --quiet; then
+            git -C "$OUT" commit -m 'Export 03 Oct exact-final QA visuals'
+            git -C "$OUT" fetch origin media-output
+            git -C "$OUT" rebase FETCH_HEAD
+            git -C "$OUT" push origin HEAD:media-output
+          fi
