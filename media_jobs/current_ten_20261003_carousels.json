@@ -150,21 +150,26 @@
       "slides": [
         {
           "title": "«ΚΑΤΙ ΝΑ ΜΕ ΚΑΝΕΙ ΠΙΟ ΕΝΔΙΑΦΕΡΟΝ;» — 1/4",
-          "text": "Ο πελάτης ετοιμαζόταν για πρώτο ραντεβού και ζήτησε από τον σκύλο μπάρμαν το πιο δυνατό «κοκτέιλ εντύπωσης»."
+          "text": "Ο πελάτης ετοιμαζόταν για πρώτο ραντεβού και ζήτησε από τον σκύλο μπάρμαν το πιο δυνατό «κοκτέιλ εντύπωσης».",
+          "source_query": "brown Labrador dog behind bar counter photograph"
         },
         {
           "title": "Ο ΜΠΑΡΜΑΝ ΕΒΑΛΕ ΕΝΑ ΑΠΛΟ ΠΟΤΟ — 2/4",
-          "text": "«Ναι», του είπε με το βλέμμα. «Μην προσπαθείς τόσο πολύ.»"
+          "text": "«Ναι», του είπε με το βλέμμα. «Μην προσπαθείς τόσο πολύ.»",
+          "source_query": "brown Labrador dog behind bar counter photograph"
         },
         {
           "title": "«ΑΥΤΟ ΕΙΝΑΙ ΟΛΟ;» — 3/4",
-          "text": "Ο σκύλος κοίταξε το κινητό με την έτοιμη υπερβολική ιστορία: «Και μη λες πράγματα που δεν έγιναν.»"
+          "text": "Ο σκύλος κοίταξε το κινητό με την έτοιμη υπερβολική ιστορία: «Και μη λες πράγματα που δεν έγιναν.»",
+          "source_query": "brown Labrador dog behind bar counter photograph"
         },
         {
           "title": "Η ΚΑΛΗ ΠΡΩΤΗ ΕΝΤΥΠΩΣΗ — 4/4",
-          "text": "Κρατά περισσότερο όταν δεν χρειάζεται μετά να τη θυμάσαι σαν σενάριο."
+          "text": "Κρατά περισσότερο όταν δεν χρειάζεται μετά να τη θυμάσαι σαν σενάριο.",
+          "source_query": "brown Labrador dog behind bar counter photograph"
         }
-      ]
+      ],
+      "production_override": "Render placeholder only; do not release. Exact recurring-dog final is produced by tools/build_dog_bartender_20261003.py and remains the only releasable dog media."
     },
     {
       "id": "ten-20261003-1100-zodiac-after-hard-day",
