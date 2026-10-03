@@ -1,0 +1,311 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_TEN_DAILY_20260927",
+  "local_date": "2026-10-03",
+  "require_photographic_visuals": true,
+  "authorization_basis": "User explicitly requested completion of the remaining CURRENT_TEN_DAILY posts for 2026-10-03. Render only; publishing remains gated by exact-final visual QA and live dedupe.",
+  "purpose": "2026-10-03 CURRENT_TEN_DAILY carousel batch: relationships, survival, dog_bartender, zodiac current bundle, love_soul_relationship, myth_or_truth.",
+  "jobs": [
+    {
+      "id": "ten-20261003-0700-relationships-unspoken-expectations",
+      "expected_cards": 7,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "«ΘΑ ΕΠΡΕΠΕ ΝΑ ΤΟ ΞΕΡΕΙ» — 1/7",
+          "text": "Αλλά του το είπες ποτέ καθαρά; Ο άλλος δεν μπορεί πάντα να μαντεύει τι χρειάζεσαι.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20talking%20(10875818386).jpg?width=1600",
+          "source_credit": "Pedro Ribeiro Simões",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "ΠΡΟΣΔΟΚΙΑ ΔΕΝ ΕΙΝΑΙ ΣΥΜΦΩΝΙΑ — 2/7",
+          "text": "Το ότι κάτι μοιάζει αυτονόητο για εσένα δεν σημαίνει ότι έχει συμφωνηθεί και από τους δύο.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kochendes%20Paar%20in%20einer%20K%C3%BCche%202017-01-15.jpg?width=1600",
+          "source_credit": "Werner Heiber",
+          "license": "CC0"
+        },
+        {
+          "title": "ΠΕΣ ΤΗΝ ΑΝΑΓΚΗ ΣΥΓΚΕΚΡΙΜΕΝΑ — 3/7",
+          "text": "Αντί για «δεν με υπολογίζεις», πες τι θα σε βοηθούσε στην πράξη και πότε.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20reads%20books%20together%20in%20their%20living%20room.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "ΡΩΤΑ ΠΡΙΝ ΥΠΟΘΕΣΕΙΣ — 4/7",
+          "text": "Μια απλή ερώτηση μπορεί να προλάβει ώρες έντασης που ξεκίνησαν από μια λάθος υπόθεση.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20sitting%20at%20a%20kitchen%20table.jpg?width=1600",
+          "source_credit": "National Cancer Institute",
+          "license": "Public domain"
+        },
+        {
+          "title": "ΑΝΑΓΚΗ Ή ΕΛΕΓΧΟΣ; — 5/7",
+          "text": "Το να ζητάς κάτι είναι διαφορετικό από το να απαιτείς ο άλλος να σκέφτεται και να λειτουργεί όπως εσύ.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20enjoys%20coffee%20together%20at%20home.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "ΚΑΝΤΕ ΜΙΑ ΚΟΙΝΗ ΣΥΜΦΩΝΙΑ — 6/7",
+          "text": "Όταν και οι δύο ξέρουν τι περιμένουν, υπάρχει λιγότερος χώρος για απογοήτευση και παρεξήγηση.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20holding%20hands%20(28619046534).jpg?width=1600",
+          "source_credit": "freestocks.org",
+          "license": "CC0"
+        },
+        {
+          "title": "ΕΣΕΙΣ ΤΟ ΕΧΕΤΕ ΠΕΙ; — 7/7",
+          "text": "Ποια προσδοκία σε μια σχέση θεωρούμε συχνά αυτονόητη χωρίς να την έχουμε πει ποτέ καθαρά;",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20enjoying%20coffee%20together%20in%20their%20cozy%20living%20room.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        }
+      ]
+    },
+    {
+      "id": "ten-20261003-0900-survival-frost",
+      "expected_cards": 9,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΠΑΓΕΤΟΣ ΣΤΗ ΜΕΤΑΚΙΝΗΣΗ — 1/9",
+          "text": "Ο πάγος μπορεί να είναι σχεδόν αόρατος. Μείωσε ταχύτητα, αύξησε απόσταση και απέφυγε απότομες κινήσεις.",
+          "footer": "Γενικές οδηγίες ασφάλειας — ακολούθησε πάντα τις τοπικές αρχές.",
+          "source_query": "icy road winter photograph",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Icy%20Winter%20Road%20(Unsplash).jpg?width=1600",
+          "source_credit": "Abigail Keenan",
+          "license": "CC0"
+        },
+        {
+          "title": "ΠΡΙΝ ΦΥΓΕΙΣ — 2/9",
+          "text": "Έλεγξε καιρό και οδικές συνθήκες. Αν υπάρχει σοβαρή προειδοποίηση, η ασφαλέστερη μετακίνηση μπορεί να είναι να μην ξεκινήσεις.",
+          "source_query": "winter weather forecast road photograph",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Snowy%20road%20during%20January%202026%20winter%20storm.jpg?width=1600",
+          "source_credit": "NinjaRobotPirate",
+          "license": "Commons free license"
+        },
+        {
+          "title": "ΤΑ ΛΑΣΤΙΧΑ ΜΕΤΡΑΝΕ — 3/9",
+          "text": "Σωστή κατάσταση και πίεση ελαστικών βοηθούν στο κράτημα. Σε περιοχές με απαιτήσεις χειμερινής οδήγησης ακολουθούμε τους τοπικούς κανόνες.",
+          "source_query": "car tire winter snow photograph",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Snow%20tire%20with%20imprint%20in%20snow.jpg?width=1600",
+          "source_credit": "HopsonRoad",
+          "license": "Commons free license"
+        },
+        {
+          "title": "ΟΧΙ ΑΠΟΤΟΜΟ ΦΡΕΝΑΡΙΣΜΑ — 4/9",
+          "text": "Σε ολισθηρό δρόμο, ήπιες κινήσεις στο τιμόνι και ομαλή επιβράδυνση μειώνουν την πιθανότητα απώλειας ελέγχου.",
+          "source_query": "car driving icy road photograph",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Driver%20focuses%20on%20steering%20wheel%20while%20navigating%20snowy%20streets%20in%20winter.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "ΠΡΟΣΟΧΗ ΣΕ ΓΕΦΥΡΕΣ ΚΑΙ ΣΚΙΕΡΑ ΣΗΜΕΙΑ — 5/9",
+          "text": "Μπορούν να παγώσουν νωρίτερα από άλλα τμήματα του δρόμου. Μην θεωρείς ότι επειδή ο δρόμος φαίνεται στεγνός είναι ασφαλής.",
+          "source_query": "icy bridge winter road photograph",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Confederation%20Bridge%20during%20winter.jpg?width=1600",
+          "source_credit": "Quintin Soloviev",
+          "license": "CC BY 4.0"
+        },
+        {
+          "title": "ΠΕΖΟΣ; ΜΙΚΡΑ ΒΗΜΑΤΑ — 6/9",
+          "text": "Περπάτα αργά, με μικρά βήματα και τα χέρια ελεύθερα όσο γίνεται, ώστε να κρατάς καλύτερη ισορροπία.",
+          "source_query": "person walking icy sidewalk winter photograph",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Person%20walking%20a%20dog%20on%20an%20icy%20sidewalk%20in%20Quebec%20City.jpg?width=1600",
+          "source_credit": "Wilfredor",
+          "license": "Commons free license"
+        },
+        {
+          "title": "ΠΑΠΟΥΤΣΙΑ ΜΕ ΚΑΛΟ ΚΡΑΤΗΜΑ — 7/9",
+          "text": "Σόλα με καλή πρόσφυση και σταθερό παπούτσι βοηθούν. Απόφυγε βιασύνη σε παγωμένες σκάλες και πεζοδρόμια.",
+          "source_query": "winter boots icy sidewalk photograph",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Winter%20boots.jpg?width=1600",
+          "source_credit": "Ddd-www",
+          "license": "Public domain"
+        },
+        {
+          "title": "ΕΧΕ ΒΑΣΙΚΑ ΣΤΟ ΑΥΤΟΚΙΝΗΤΟ — 8/9",
+          "text": "Φορτισμένο κινητό, ζεστά ρούχα, νερό και βασικός εξοπλισμός μπορούν να βοηθήσουν αν καθυστερήσεις ή ακινητοποιηθείς.",
+          "source_query": "winter car emergency kit photograph",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/EmergencyKit%20(51799078467).jpg?width=1600",
+          "source_credit": "Oregon Department of Transportation",
+          "license": "CC BY"
+        },
+        {
+          "title": "ΑΝ ΔΕΝ ΕΙΝΑΙ ΑΣΦΑΛΕΣ, ΜΗΝ ΤΟ ΠΙΕΣΕΙΣ — 9/9",
+          "text": "Η άφιξη δεν αξίζει περισσότερο από την ασφάλεια. Προσαρμόζουμε τη διαδρομή και ακολουθούμε επίσημες οδηγίες.",
+          "source_query": "snowy road closed warning photograph",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Snowy%20Drive.jpg?width=1600",
+          "source_credit": "Commons contributor",
+          "license": "Commons free license"
+        }
+      ]
+    },
+    {
+      "id": "ten-20261003-1000-dog-bartender-first-impression",
+      "expected_cards": 4,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "«ΚΑΤΙ ΝΑ ΜΕ ΚΑΝΕΙ ΠΙΟ ΕΝΔΙΑΦΕΡΟΝ;» — 1/4",
+          "text": "Ο πελάτης ετοιμαζόταν για πρώτο ραντεβού και ζήτησε από τον σκύλο μπάρμαν το πιο δυνατό «κοκτέιλ εντύπωσης».",
+          "source_query": "brown Labrador dog behind bar counter photograph"
+        },
+        {
+          "title": "Ο ΜΠΑΡΜΑΝ ΕΒΑΛΕ ΕΝΑ ΑΠΛΟ ΠΟΤΟ — 2/4",
+          "text": "«Ναι», του είπε με το βλέμμα. «Μην προσπαθείς τόσο πολύ.»",
+          "source_query": "brown Labrador dog behind bar counter photograph"
+        },
+        {
+          "title": "«ΑΥΤΟ ΕΙΝΑΙ ΟΛΟ;» — 3/4",
+          "text": "Ο σκύλος κοίταξε το κινητό με την έτοιμη υπερβολική ιστορία: «Και μη λες πράγματα που δεν έγιναν.»",
+          "source_query": "brown Labrador dog behind bar counter photograph"
+        },
+        {
+          "title": "Η ΚΑΛΗ ΠΡΩΤΗ ΕΝΤΥΠΩΣΗ — 4/4",
+          "text": "Κρατά περισσότερο όταν δεν χρειάζεται μετά να τη θυμάσαι σαν σενάριο.",
+          "source_query": "brown Labrador dog behind bar counter photograph"
+        }
+      ],
+      "production_override": "Render placeholder only; do not release. Exact recurring-dog final is produced by tools/build_dog_bartender_20261003.py and remains the only releasable dog media."
+    },
+    {
+      "id": "ten-20261003-1100-zodiac-after-hard-day",
+      "expected_cards": 6,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΚΡΙΟΣ + ΣΚΟΡΠΙΟΣ — 1/6",
+          "text": "Μετά από δύσκολη μέρα, ο Κριός θέλει λίγο χώρο να ξεθυμάνει· ο Σκορπιός θέλει ηρεμία και έναν άνθρωπο που δεν πιέζει.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20talking%20(10875818386).jpg?width=1600",
+          "source_credit": "Pedro Ribeiro Simões",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "ΤΑΥΡΟΣ + ΤΟΞΟΤΗΣ — 2/6",
+          "text": "Ο Ταύρος ψάχνει άνεση και σταθερότητα· ο Τοξότης χρειάζεται αλλαγή παραστάσεων και κάτι που θα του σηκώσει τη διάθεση.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Kochendes%20Paar%20in%20einer%20K%C3%BCche%202017-01-15.jpg?width=1600",
+          "source_credit": "Werner Heiber",
+          "license": "CC0"
+        },
+        {
+          "title": "ΔΙΔΥΜΟΙ + ΑΙΓΟΚΕΡΩΣ — 3/6",
+          "text": "Οι Δίδυμοι θέλουν να μιλήσουν και να ξεφύγει το μυαλό· ο Αιγόκερως προτιμά ησυχία, τάξη και λίγο χρόνο χωρίς απαιτήσεις.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20reads%20books%20together%20in%20their%20living%20room.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "ΚΑΡΚΙΝΟΣ + ΥΔΡΟΧΟΟΣ — 4/6",
+          "text": "Ο Καρκίνος αναζητά τρυφερότητα και ασφάλεια· ο Υδροχόος χρειάζεται χώρο να αδειάσει το μυαλό πριν ξανασυνδεθεί.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20sitting%20at%20a%20kitchen%20table.jpg?width=1600",
+          "source_credit": "National Cancer Institute",
+          "license": "Public domain"
+        },
+        {
+          "title": "ΛΕΩΝ + ΙΧΘΥΕΣ — 5/6",
+          "text": "Ο Λέων θέλει ζεστή προσοχή και αναγνώριση· οι Ιχθύες ηρεμούν με κατανόηση, τρυφερότητα και χαμηλούς τόνους.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20enjoys%20coffee%20together%20at%20home.jpg?width=1600",
+          "source_credit": "Shixart1985",
+          "license": "CC BY 2.0"
+        },
+        {
+          "title": "ΠΑΡΘΕΝΟΣ + ΖΥΓΟΣ — 6/6",
+          "text": "Η Παρθένος θέλει να τακτοποιήσει ό,τι την βαραίνει· ο Ζυγός χρειάζεται ήρεμη κουβέντα και μια αίσθηση ισορροπίας.",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20holding%20hands%20(28619046534).jpg?width=1600",
+          "source_credit": "freestocks.org",
+          "license": "CC0"
+        }
+      ]
+    },
+    {
+      "id": "ten-20261003-1500-love-flower-workshop",
+      "expected_cards": 5,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΕΚΛΕΙΣΕ ΤΟ ΣΥΝΕΡΓΕΙΟ ΧΩΡΙΣ ΝΑ ΤΗΣ ΤΟ ΠΕΙ — 1/5",
+          "text": "Φοβόταν περισσότερο το βλέμμα της παρά τις άδειες θέσεις των εργαλείων.",
+          "source_query": "empty auto repair workshop photograph",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Car%20repair%20shop.jpg?width=1600",
+          "source_credit": "Martin Vorel",
+          "license": "Commons free license"
+        },
+        {
+          "title": "ΤΟ ΒΡΑΔΥ ΤΗΣ ΑΦΗΣΕ ΤΑ ΚΛΕΙΔΙΑ ΣΤΟ ΤΡΑΠΕΖΙ — 2/5",
+          "text": "«Δεν ξέρω τι θα κάνω τώρα», της είπε.",
+          "source_query": "car keys on kitchen table photograph",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Car%20Keys%201.jpg?width=1600",
+          "source_credit": "Gaurav Dhwaj Khadka",
+          "license": "Commons free license"
+        },
+        {
+          "title": "ΕΚΕΙΝΗ ΔΕΝ ΤΟΥ ΕΙΠΕ ΟΤΙ ΟΛΑ ΘΑ ΕΙΝΑΙ ΕΥΚΟΛΑ — 3/5",
+          "text": "Τον ρώτησε μόνο: «Από πού θέλεις να ξεκινήσουμε αύριο;».",
+          "source_query": "couple talking kitchen table photograph",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20sitting%20at%20a%20kitchen%20table.jpg?width=1600",
+          "source_credit": "National Cancer Institute",
+          "license": "Public domain"
+        },
+        {
+          "title": "ΤΟ ΠΡΩΙ ΒΡΗΚΕ ΜΙΑ ΜΙΚΡΗ ΓΛΑΣΤΡΑ — 4/5",
+          "text": "Δίπλα της, δυο κούπες καφέ και ένα λευκό τετράδιο για το επόμενο βήμα.",
+          "source_query": "small potted flower coffee notebook table photograph",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/A%20green%20plant%20in%20a%20round%20glass%20vase%20sits%20on%20a%20book%20next%20to%20a%20coffee%20mug.jpg?width=1600",
+          "source_credit": "DP Singh Bhullar / Bhullargraphic",
+          "license": "Commons free license"
+        },
+        {
+          "title": "ΔΕΝ ΤΟΝ ΑΓΑΠΟΥΣΕ ΜΟΝΟ ΟΤΑΝ ΤΑ ΚΑΤΑΦΕΡΝΕ — 5/5",
+          "text": "Και αυτή ήταν η πρώτη σταθερή βάση για να ξανασταθεί.",
+          "source_query": "couple holding hands at table photograph",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Couple%20holding%20hands%20(28619046534).jpg?width=1600",
+          "source_credit": "freestocks.org",
+          "license": "CC0"
+        }
+      ]
+    },
+    {
+      "id": "ten-20261003-2000-myth-chameleon",
+      "expected_cards": 4,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΑΛΛΑΖΕΙ ΧΡΩΜΑ ΜΟΝΟ ΓΙΑ ΝΑ ΚΡΥΦΤΕΙ; — 1/4",
+          "text": "Ο χαμαιλέοντας δεν χρησιμοποιεί τις αλλαγές χρώματος μόνο σαν καμουφλάζ.",
+          "source_query": "panther chameleon photograph",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Panther%20Chameleon.jpg?width=1600",
+          "source_credit": "DrPrattDatta",
+          "license": "CC BY-SA 4.0"
+        },
+        {
+          "title": "ΤΟ ΧΡΩΜΑ ΜΠΟΡΕΙ ΝΑ ΕΙΝΑΙ ΜΗΝΥΜΑ — 2/4",
+          "text": "Σε ορισμένα είδη, έντονες αλλαγές εμφανίζονται στο φλερτ, στην κοινωνική επικοινωνία ή απέναντι σε ανταγωνιστή.",
+          "source_query": "colorful chameleon close up photograph",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Panther%20chameleon.JPG?width=1600",
+          "source_credit": "Miroslav.vajdic",
+          "license": "CC BY-SA 3.0"
+        },
+        {
+          "title": "ΜΙΚΡΟΣΚΟΠΙΚΟΙ ΚΡΥΣΤΑΛΛΟΙ ΣΤΟ ΔΕΡΜΑ — 3/4",
+          "text": "Στον χαμαιλέοντα πάνθηρα, αλλαγές στη διάταξη νανοκρυστάλλων επηρεάζουν το φως που ανακλάται.",
+          "source_query": "panther chameleon skin color photograph",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Panther%20chameleon%20closeup.jpg?width=1600",
+          "source_credit": "Maubreville",
+          "license": "Commons free license"
+        },
+        {
+          "title": "ΟΧΙ ΜΟΝΟ ΚΑΜΟΥΦΛΑΖ — 4/4",
+          "text": "Μερικές φορές τα έντονα χρώματα υπάρχουν ακριβώς για να τον προσέξουν. Άρα: ΜΥΘΟΣ.",
+          "source_query": "bright chameleon photograph",
+          "source_url": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ambilobe%20panther%20chameleon.jpg?width=1600",
+          "source_credit": "Daniel Schwen",
+          "license": "CC BY-SA 4.0"
+        }
+      ]
+    }
+  ],
+  "production_note": "Render requested for 2026-10-03 after current workflow file was installed. | 2026-10-03 remediation: pinned rights-cleared, scene-specific photographic sources for relationships, survival, zodiac, love, myth; dog-bartender held separately pending compliant recurring-bartender visual. | Reconciled 2026-10-03 with current Notion archive for relationships, dog_bartender and zodiac; older manifest topics superseded."
+}
