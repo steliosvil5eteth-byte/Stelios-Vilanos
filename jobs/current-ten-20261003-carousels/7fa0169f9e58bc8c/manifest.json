@@ -1,0 +1,584 @@
+{
+  "batch_id": "7fa0169f9e58bc8c",
+  "batch_sha256": "7fa0169f9e58bc8c070c1d862469263ce10f49cc88e8fd46149cd2ab0a54118e",
+  "paid_ai_credits_used": 0,
+  "photographic_visuals_required": true,
+  "jobs": [
+    {
+      "id": "ten-20261003-0700-relationships-small-agreements",
+      "status": "rendered",
+      "card_count": 7,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 35.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Conflict_Model_in_Positive_Psychotherapy.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Catroosya402",
+          "license": "CC BY-SA 4.0",
+          "source_title": "File:Conflict Model in Positive Psychotherapy.png",
+          "fallback_query": "couple talking"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/63/Bahar_%282599760344%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "runran",
+          "license": "CC BY-SA 2.0",
+          "source_title": "File:Bahar (2599760344).jpg",
+          "fallback_query": "couple doing household chores photograph"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/%27Sitting_Couple_on_Bench%27_-_geograph.org.uk_-_8355237.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Graham Hogg",
+          "license": "CC BY-SA 2.0",
+          "source_title": "File:'Sitting Couple on Bench' - geograph.org.uk - 8355237.jpg",
+          "fallback_query": "couple planning"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Droeba_Suratebiani_Damateba_1910_N14-3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Danton R",
+          "license": "CC BY-SA 4.0",
+          "source_title": "File:Droeba Suratebiani Damateba 1910 N14-3.jpg",
+          "fallback_query": "couple discussing"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/99/1870s_photograph_-Portrait_of_a_Chinese_Couple-_MET_DP148489_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Unknown authorUnknown author",
+          "license": "CC0",
+          "source_title": "File:1870s photograph -Portrait of a Chinese Couple- MET DP148489 (cropped).jpg",
+          "fallback_query": "couple"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Flemish_-_Scene_from_the_Story_of_Cephalus_and_Procris_-_Walters_8231.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Anonymous (Flemish)Unknown author",
+          "license": "Public domain",
+          "source_title": "File:Flemish - Scene from the Story of Cephalus and Procris - Walters 8231.jpg",
+          "fallback_query": "couple reconciling"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d3/Major_General_George_H._Thomas_%2814132585%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "dbking",
+          "license": "CC BY 2.0",
+          "source_title": "File:Major General George H. Thomas (14132585).jpg",
+          "fallback_query": "couple relaxed portrait home"
+        }
+      ],
+      "files": [
+        {
+          "name": "ten-20261003-0700-relationships-small-agreements-01.jpg",
+          "bytes": 303025,
+          "sha256": "57f850a419ba152546a1f372deb36a3cd1ebde28ae6e863f08b850bb2da856f5"
+        },
+        {
+          "name": "ten-20261003-0700-relationships-small-agreements-02.jpg",
+          "bytes": 477461,
+          "sha256": "6616f9b792a35a7b58fc7ab5b5226059e37c088a3da1307d155396082b6deabc"
+        },
+        {
+          "name": "ten-20261003-0700-relationships-small-agreements-03.jpg",
+          "bytes": 409936,
+          "sha256": "c7818ca6adbcf882164611ee7b03eb59223adb98f5ff5cbd2c42c785d9eaf828"
+        },
+        {
+          "name": "ten-20261003-0700-relationships-small-agreements-04.jpg",
+          "bytes": 402249,
+          "sha256": "a92b38fcbd6da2acb9f1520ec9ed4b329bafe4c270748579ffc4061dfbcc3e53"
+        },
+        {
+          "name": "ten-20261003-0700-relationships-small-agreements-05.jpg",
+          "bytes": 343309,
+          "sha256": "92092e9d537afc68cfa1bfda76ba4afe284771889c2c94d8a697042f275512e2"
+        },
+        {
+          "name": "ten-20261003-0700-relationships-small-agreements-06.jpg",
+          "bytes": 544256,
+          "sha256": "56660c605c7eab915b66d7ad1dbbed8f65fa5824014c86f57699019b9c5a1b88"
+        },
+        {
+          "name": "ten-20261003-0700-relationships-small-agreements-07.jpg",
+          "bytes": 346149,
+          "sha256": "cb6ad291091a9485302be9d485d5f333da4961f2b4482b6094f099a393772910"
+        },
+        {
+          "name": "ten-20261003-0700-relationships-small-agreements.mp4",
+          "bytes": 1511092,
+          "sha256": "27047d44446e3efe6751ff9f6bf260978e3d7839dff919c55bbe97d392c4bea6"
+        }
+      ]
+    },
+    {
+      "id": "ten-20261003-0900-survival-frost",
+      "status": "rendered",
+      "card_count": 9,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 45.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/da/A_drainage_ditch_and_an_icy_puddle_-_geograph.org.uk_-_5690883.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "John Sutton",
+          "license": "CC BY-SA 2.0",
+          "source_title": "File:A drainage ditch and an icy puddle - geograph.org.uk - 5690883.jpg",
+          "fallback_query": "icy road winter photograph"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Monumental_U_S_Storm_Brings_Severe_Winter_Weather_Coast_to_Coast_%2852736796765%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "NOAASatellites",
+          "license": "Public domain",
+          "source_title": "File:Monumental U S Storm Brings Severe Winter Weather Coast to Coast (52736796765).png",
+          "fallback_query": "winter weather forecast road photograph"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/94/Alfa_Romeo_33_TT_12_-_Redman_1974-05-19.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Lothar Spurzem",
+          "license": "CC BY-SA 2.0 de",
+          "source_title": "File:Alfa Romeo 33 TT 12 - Redman 1974-05-19.jpg",
+          "fallback_query": "car tire"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Bombardier_MX_Z-Rev_Ski-Doo_%28Die_Another_Day%29_front_National_Motor_Museum%2C_Beaulieu.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Karen Roe from Bury St Edmunds, Suffolk, UK",
+          "license": "CC BY 2.0",
+          "source_title": "File:Bombardier MX Z-Rev Ski-Doo (Die Another Day) front National Motor Museum, Beaulieu.jpg",
+          "fallback_query": "car driving icy road photograph"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Bridge_over_an_icy_drain_-_geograph.org.uk_-_7360916.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "DS Pugh",
+          "license": "CC BY-SA 2.0",
+          "source_title": "File:Bridge over an icy drain - geograph.org.uk - 7360916.jpg",
+          "fallback_query": "icy bridge"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/45/Dog_Dread_walking_%28rbm-QP301M8-1887-704a~01%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Muybridge, Eadweard, 1830-1904",
+          "license": "Public domain",
+          "source_title": "File:Dog Dread walking (rbm-QP301M8-1887-704a~01).jpg",
+          "fallback_query": "person walking"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Boots_2010.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Jeanne boleyn",
+          "license": "Public domain",
+          "source_title": "File:Boots 2010.JPG",
+          "fallback_query": "winter boots"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b8/EmergencyKit_%2851799078467%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Oregon Department of Transportation",
+          "license": "CC BY 2.0",
+          "source_title": "File:EmergencyKit (51799078467).jpg",
+          "fallback_query": "winter car emergency kit photograph"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Snowy_Fixby_Road_-_geograph.org.uk_-_7043088.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "yorkshirelad",
+          "license": "CC BY-SA 2.0",
+          "source_title": "File:Snowy Fixby Road - geograph.org.uk - 7043088.jpg",
+          "fallback_query": "snowy road"
+        }
+      ],
+      "files": [
+        {
+          "name": "ten-20261003-0900-survival-frost-01.jpg",
+          "bytes": 349334,
+          "sha256": "5d9c07730498259c2f0baf3314747dd14714f032a6a7811dcfde57796874191f"
+        },
+        {
+          "name": "ten-20261003-0900-survival-frost-02.jpg",
+          "bytes": 375882,
+          "sha256": "f62dd949efbc88b2d45771034e6a5d3f74ec38eb540fc7538c96959bc3779f96"
+        },
+        {
+          "name": "ten-20261003-0900-survival-frost-03.jpg",
+          "bytes": 439795,
+          "sha256": "ee51e33b1839424b6f7af3c629e33acdffcec7173b03dff3446ad5e6272b7fd5"
+        },
+        {
+          "name": "ten-20261003-0900-survival-frost-04.jpg",
+          "bytes": 346100,
+          "sha256": "192d9ed783c89b1be3b72c7a15accb867fd5792b7008532ab0923d076d8755ad"
+        },
+        {
+          "name": "ten-20261003-0900-survival-frost-05.jpg",
+          "bytes": 283595,
+          "sha256": "48b2219aa11ddfaeda480e30acaa3559817afb64e9df63a8511e490ab93c2bc3"
+        },
+        {
+          "name": "ten-20261003-0900-survival-frost-06.jpg",
+          "bytes": 263001,
+          "sha256": "d7f134da971579baa28e2201ee0f7afdcf2ae0569878435d2b7d506047b45683"
+        },
+        {
+          "name": "ten-20261003-0900-survival-frost-07.jpg",
+          "bytes": 437215,
+          "sha256": "da6670aa8c3a839618e70ca2fac9f32ce11d36d8da79fbdb17bb341cb30702ae"
+        },
+        {
+          "name": "ten-20261003-0900-survival-frost-08.jpg",
+          "bytes": 407826,
+          "sha256": "3136c4c1411fb8e038d15b6922dd3fb965fee06b94f10f8947a80c775fe9a99f"
+        },
+        {
+          "name": "ten-20261003-0900-survival-frost-09.jpg",
+          "bytes": 401055,
+          "sha256": "304985527ae39f6fb1fc0c5577b3a3be8eeadff17a9747e71b33d87485026056"
+        },
+        {
+          "name": "ten-20261003-0900-survival-frost.mp4",
+          "bytes": 1731321,
+          "sha256": "f9ec42c813c17f406f75b43dde31dd56590a3009d719ac154faed424bcebfecb"
+        }
+      ]
+    },
+    {
+      "id": "ten-20261003-1000-dog-bartender-water-order",
+      "status": "rendered",
+      "card_count": 4,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 20.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Golden_Retriever_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Johannnes89",
+          "license": "CC BY-SA 4.0",
+          "source_title": "File:Golden Retriever 2014.jpg",
+          "fallback_query": "golden retriever"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/8/86/Dog%2C_Helgafell%2C_Sn%C3%A6fellsnes_peninsula%2C_Iceland%2C_20230505_1507_5224.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Jakub Hałun",
+          "license": "CC BY-SA 4.0",
+          "source_title": "File:Dog, Helgafell, Snæfellsnes peninsula, Iceland, 20230505 1507 5224.jpg",
+          "fallback_query": "dog at"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c7/Golden_Retriever_2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Johannnes89",
+          "license": "CC BY-SA 4.0",
+          "source_title": "File:Golden Retriever 2014.jpg",
+          "fallback_query": "golden retriever"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Brown_Dog_-_Battersea_Park_-_2008-04-09.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Tagishsimon",
+          "license": "CC BY-SA 4.0",
+          "source_title": "File:Brown Dog - Battersea Park - 2008-04-09.jpg",
+          "fallback_query": "brown dog"
+        }
+      ],
+      "files": [
+        {
+          "name": "ten-20261003-1000-dog-bartender-water-order-01.jpg",
+          "bytes": 376780,
+          "sha256": "8de5afdca3989cef176caafb410001f88d1dc19f06022fc87c2741a578801716"
+        },
+        {
+          "name": "ten-20261003-1000-dog-bartender-water-order-02.jpg",
+          "bytes": 412101,
+          "sha256": "dcb4a04bed8f6e42ba93f6753805cf7ee95ea53d1c81011f924c64e77f45f4c1"
+        },
+        {
+          "name": "ten-20261003-1000-dog-bartender-water-order-03.jpg",
+          "bytes": 381583,
+          "sha256": "3dc1a040024865b1a591350880f0a6610e014446259511dad0a1164f188f1eec"
+        },
+        {
+          "name": "ten-20261003-1000-dog-bartender-water-order-04.jpg",
+          "bytes": 388306,
+          "sha256": "433a6941977381524156a64c693b11f92e39752fa4824cd2eff707776e5e62ad"
+        },
+        {
+          "name": "ten-20261003-1000-dog-bartender-water-order.mp4",
+          "bytes": 796260,
+          "sha256": "73904e5e3fe2cbb058dbc296f2140b807e065f51987b1533ef3369614bcdb4ef"
+        }
+      ]
+    },
+    {
+      "id": "ten-20261003-1100-zodiac-distance-pairs",
+      "status": "rendered",
+      "card_count": 6,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 30.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/10/Hillary_Rodham_Clinton_Secretary_of_State_with_Canadian_Foreign_Minister_Cannon_%283632679098%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "U.S. Embassy and Consulates in Canada",
+          "license": "Public domain",
+          "source_title": "File:Hillary Rodham Clinton Secretary of State with Canadian Foreign Minister Cannon (3632679098).jpg",
+          "fallback_query": "couple discussing relationship photograph"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Serious_Squirrel.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Ed Sweeney",
+          "license": "CC BY 2.0",
+          "source_title": "File:Serious Squirrel.jpg",
+          "fallback_query": "couple serious"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Conflict_Model_in_Positive_Psychotherapy.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Catroosya402",
+          "license": "CC BY-SA 4.0",
+          "source_title": "File:Conflict Model in Positive Psychotherapy.png",
+          "fallback_query": "couple talking"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/%27Sitting_Couple_on_Bench%27_-_geograph.org.uk_-_8355237.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Graham Hogg",
+          "license": "CC BY-SA 2.0",
+          "source_title": "File:'Sitting Couple on Bench' - geograph.org.uk - 8355237.jpg",
+          "fallback_query": "couple sitting"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1d/Con_la_pandemia_en_el_bolsillo_-_Flickr_-_Nicol%C3%A1s_Eduardo_Feredjian.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Nicolás Eduardo Feredjian from Parque Rivadavia - Buenos Aires, Argentina",
+          "license": "CC BY 2.0",
+          "source_title": "File:Con la pandemia en el bolsillo - Flickr - Nicolás Eduardo Feredjian.jpg",
+          "fallback_query": "couple conversation cafe photograph"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Sabaa_Nissan_Militiaman.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Christiaan Briggs —Christiaan 21:23, 2 Feb 2005 (UTC)",
+          "license": "CC BY-SA 3.0",
+          "source_title": "File:Sabaa Nissan Militiaman.jpg",
+          "fallback_query": "couple quiet"
+        }
+      ],
+      "files": [
+        {
+          "name": "ten-20261003-1100-zodiac-distance-pairs-01.jpg",
+          "bytes": 315278,
+          "sha256": "1cb383ad9403004726b85b9086ee5b8a91c23c065e849147316f5f53a219496a"
+        },
+        {
+          "name": "ten-20261003-1100-zodiac-distance-pairs-02.jpg",
+          "bytes": 250036,
+          "sha256": "b07bd1aae6ea3a5c36025cdcf7821119e7f006e73ba72f08f9dae2613d430ab5"
+        },
+        {
+          "name": "ten-20261003-1100-zodiac-distance-pairs-03.jpg",
+          "bytes": 272721,
+          "sha256": "59e2c44f2821b77cb64f862036c46a866a48f662f0dea4877e1a2916e821e364"
+        },
+        {
+          "name": "ten-20261003-1100-zodiac-distance-pairs-04.jpg",
+          "bytes": 422798,
+          "sha256": "1f4f2d9c4ebd445af985a59ef98e52868e8b47c842609540beacb00f828fb0fb"
+        },
+        {
+          "name": "ten-20261003-1100-zodiac-distance-pairs-05.jpg",
+          "bytes": 420456,
+          "sha256": "e9ea0f68e917639a2dceb8f6669699bc826cc5a48bfc69ea52846455d8004135"
+        },
+        {
+          "name": "ten-20261003-1100-zodiac-distance-pairs-06.jpg",
+          "bytes": 486488,
+          "sha256": "ab05a53f30a5da2691b7b463c0fdba0ccf7a498b55e4a868a019fcc3d2990d59"
+        },
+        {
+          "name": "ten-20261003-1100-zodiac-distance-pairs.mp4",
+          "bytes": 1087649,
+          "sha256": "1c8c4b0e84ecd804e603d9ffd0ea8ac4388c1c0b2dd989a8d6fea1323595de23"
+        }
+      ]
+    },
+    {
+      "id": "ten-20261003-1500-love-flower-workshop",
+      "status": "rendered",
+      "card_count": 5,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 25.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Alcator_C-Mod_empty_power_room.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Photographer: R.C. Fortier, MIT Plasma Science and Fusion Center",
+          "license": "CC BY 3.0",
+          "source_title": "File:Alcator C-Mod empty power room.jpg",
+          "fallback_query": "empty auto"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/-2021-03-06_Car_Park%2C_Cross_Keys_pub%2C_Dilham%2C_Norfolk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "David Pashley",
+          "license": "CC BY-SA 2.0",
+          "source_title": "File:-2021-03-06 Car Park, Cross Keys pub, Dilham, Norfolk.jpg",
+          "fallback_query": "car keys"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/5d/Conflict_Model_in_Positive_Psychotherapy.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Catroosya402",
+          "license": "CC BY-SA 4.0",
+          "source_title": "File:Conflict Model in Positive Psychotherapy.png",
+          "fallback_query": "couple talking"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/7/7a/%28Outdoor_foyer_of_small_potted_plants_near_Kyoto%2C_Japan%29_-_DPLA_-_39b2b73ce0954ba9b89e666a79fadd20.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Carlquist, Sherwin John, 1930-2021",
+          "license": "CC BY 4.0",
+          "source_title": "File:(Outdoor foyer of small potted plants near Kyoto, Japan) - DPLA - 39b2b73ce0954ba9b89e666a79fadd20.jpg",
+          "fallback_query": "small potted"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Borovikovsky_lobanovy_RostovskyFXD.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Vladimir Borovikovsky",
+          "license": "Public domain",
+          "source_title": "File:Borovikovsky lobanovy RostovskyFXD.jpg",
+          "fallback_query": "couple holding hands at table photograph"
+        }
+      ],
+      "files": [
+        {
+          "name": "ten-20261003-1500-love-flower-workshop-01.jpg",
+          "bytes": 281471,
+          "sha256": "0441a18169a9be75595f3dea33b1de888a9eae349fdf77da473a63b3ba704933"
+        },
+        {
+          "name": "ten-20261003-1500-love-flower-workshop-02.jpg",
+          "bytes": 342458,
+          "sha256": "5060cb031dd5fd55170a171fa33cd2e850d7431a5088b54823cdc9672e90b90d"
+        },
+        {
+          "name": "ten-20261003-1500-love-flower-workshop-03.jpg",
+          "bytes": 271365,
+          "sha256": "187bf88c2e030d7ad7d5c4672407deae4ecf0557516508f55d008e703d804808"
+        },
+        {
+          "name": "ten-20261003-1500-love-flower-workshop-04.jpg",
+          "bytes": 291403,
+          "sha256": "4f19cf55c54d6dd3986e94ca07a3829c802c058b12a28177fca837653f0ce7f7"
+        },
+        {
+          "name": "ten-20261003-1500-love-flower-workshop-05.jpg",
+          "bytes": 438691,
+          "sha256": "8850abf4add97163a4cf25bf458ce6d3736c040d3bb729e6fb3ef57b79b7e9ca"
+        },
+        {
+          "name": "ten-20261003-1500-love-flower-workshop.mp4",
+          "bytes": 854139,
+          "sha256": "f0f57c2ceefef498c05cde27fbf200127ed6ca0172a2471fe733fb26968ffe2c"
+        }
+      ]
+    },
+    {
+      "id": "ten-20261003-2000-myth-chameleon",
+      "status": "rendered",
+      "card_count": 4,
+      "order_verified": true,
+      "image_size": [
+        1080,
+        1080
+      ],
+      "photographic_backgrounds": true,
+      "readable_min_font_px": 28,
+      "final_duration": 20.0,
+      "music_embedded": true,
+      "music_source": "original_local_synth_no_external_license",
+      "narration": false,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "resolved_sources": [
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Furcifer_pardalis_-Z%C3%BCrich_Zoo-8a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Marc Staub",
+          "license": "CC BY-SA 2.0",
+          "source_title": "File:Furcifer pardalis -Zürich Zoo-8a.jpg",
+          "fallback_query": "panther chameleon photograph"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/A_colorful_Chameleon_keeps_a_watchful_eye_on_the_photographer_at_Kumbhalgarh_Fort%2C_Rajasthan%2C_India.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Kreativeart",
+          "license": "CC BY-SA 4.0",
+          "source_title": "File:A colorful Chameleon keeps a watchful eye on the photographer at Kumbhalgarh Fort, Rajasthan, India.jpg",
+          "fallback_query": "colorful chameleon"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/5/51/Chamaeleonidae-Furcifer_pardalis_a.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Colling-architektur",
+          "license": "CC BY-SA 3.0",
+          "source_title": "File:Chamaeleonidae-Furcifer pardalis a.jpg",
+          "fallback_query": "panther chameleon"
+        },
+        {
+          "source_url": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Amphibia_and_reptiles_%28Page_575%29_%286004713915%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+          "source_credit": "Gadow, Hans",
+          "license": "Public domain",
+          "source_title": "File:Amphibia and reptiles (Page 575) (6004713915).jpg",
+          "fallback_query": "bright chameleon photograph"
+        }
+      ],
+      "files": [
+        {
+          "name": "ten-20261003-2000-myth-chameleon-01.jpg",
+          "bytes": 329487,
+          "sha256": "7a18104bd3ab04a47d13c137adf6b7e3d164a1cd4259c7ffa2b1cd8a2f739176"
+        },
+        {
+          "name": "ten-20261003-2000-myth-chameleon-02.jpg",
+          "bytes": 359267,
+          "sha256": "33a01f8d7d38e551d6e6e8d54adea78ea2dcdda60a41c581545b70ab0b67aa7a"
+        },
+        {
+          "name": "ten-20261003-2000-myth-chameleon-03.jpg",
+          "bytes": 432830,
+          "sha256": "1df1c17e408f6760b8f5d6b5d3d284bc71b3b9bc901732353619da0980d5b529"
+        },
+        {
+          "name": "ten-20261003-2000-myth-chameleon-04.jpg",
+          "bytes": 441916,
+          "sha256": "a08a456cbba99665b348d7886a61e0d0a4947b4d8d846881111cac06993c2364"
+        },
+        {
+          "name": "ten-20261003-2000-myth-chameleon.mp4",
+          "bytes": 752187,
+          "sha256": "4fc0c403746ca39cba1c498db8b89c887f4ec6a78a27d19a4bfdb4a05e76953d"
+        }
+      ]
+    }
+  ]
+}
