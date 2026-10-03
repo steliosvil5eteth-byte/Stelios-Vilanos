@@ -21,12 +21,12 @@ bars=[
  'Bar counter with beer taps, Vieux-Québec.jpg',
  'Bar counter-Schrannenhalle.JPG'
 ]
-titles=['ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 1/4','Η ΠΑΡΑΓΓΕΛΙΑ ΣΥΝΕΧΙΣΤΗΚΕ — 2/4','Ο ΜΠΑΡΜΑΝ ΕΚΑΝΕ Ο,ΤΙ ΜΠΟΡΟΥΣΕ — 3/4','ΤΕΛΙΚΑ ΤΟΥ ΕΔΩΣΕ ΝΕΡΟ — 4/4']
+titles=['«ΚΑΤΙ ΝΑ ΜΕ ΚΑΝΕΙ ΠΙΟ ΕΝΔΙΑΦΕΡΟΝ;» — 1/4','Ο ΜΠΑΡΜΑΝ ΕΒΑΛΕ ΕΝΑ ΑΠΛΟ ΠΟΤΟ — 2/4','«ΑΥΤΟ ΕΙΝΑΙ ΟΛΟ;» — 3/4','Η ΚΑΛΗ ΠΡΩΤΗ ΕΝΤΥΠΩΣΗ — 4/4']
 bodies=[
- 'Ο πελάτης ζήτησε νερό «ούτε πολύ κρύο, ούτε χλιαρό, με δύο παγάκια ακριβώς». Ο μπάρμαν τον κοίταξε σοβαρά.',
- '«Χωρίς λεμόνι, αλλά να μυρίζει λεμόνι. Και το ποτήρι να είναι μεγάλο, αλλά να μη φαίνεται μεγάλο».',
- 'Έβαλε δύο παγάκια, κοίταξε το ποτήρι, κοίταξε τον πελάτη… και πήρε τη βαθύτερη ανάσα της βάρδιας.',
- 'Ο πελάτης χαμογέλασε: «Ακριβώς όπως το ήθελα». Ο σκύλος μπάρμαν δεν χαμογέλασε καθόλου.'
+ 'Ο πελάτης ετοιμαζόταν για πρώτο ραντεβού και ζήτησε από τον σκύλο μπάρμαν το πιο δυνατό «κοκτέιλ εντύπωσης».',
+ '«Ναι», του είπε με το βλέμμα. «Μην προσπαθείς τόσο πολύ.»',
+ 'Ο σκύλος κοίταξε το κινητό με την έτοιμη υπερβολική ιστορία: «Και μη λες πράγματα που δεν έγιναν.»',
+ 'Κρατά περισσότερο όταν δεν χρειάζεται μετά να τη θυμάσαι σαν σενάριο.'
 ]
 font='/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'; bold='/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 def wrap(d,text,f,maxw):
@@ -58,7 +58,7 @@ for i,(bar,title,body) in enumerate(zip(bars,titles,bodies),1):
     d.rounded_rectangle((42,944,1038,1038),radius=18,fill=(15,24,36,235))
     cta='Αν σας άρεσε, ακολουθήστε για περισσότερα.'; cf=ImageFont.truetype(bold,25); tw=d.textlength(cta,font=cf)
     d.text(((1080-tw)/2,975),cta,font=cf,fill='white')
-    card=OUT/f'ten-20261003-1000-dog-bartender-water-order-{i:02d}.jpg'; bg.convert('RGB').save(card,quality=95,subsampling=0); cards.append(card)
+    card=OUT/f'ten-20261003-1000-dog-bartender-first-impression-{i:02d}.jpg'; bg.convert('RGB').save(card,quality=95,subsampling=0); cards.append(card)
 
 sheet=Image.new('RGB',(960,640),(18,18,18))
 for i,c in enumerate(cards): sheet.paste(ImageOps.fit(Image.open(c).convert('RGB'),(480,320)),((i%2)*480,(i//2)*320))
@@ -71,7 +71,7 @@ for i,c in enumerate(cards,1):
     mp=td/f's{i}.mp4'; subprocess.run(['ffmpeg','-y','-v','error','-loop','1','-framerate','25','-i',str(jpg),'-t','5','-vf','setsar=1,fps=25','-c:v','libx264','-preset','veryfast','-crf','21','-pix_fmt','yuv420p','-an',str(mp)],check=True); segs.append(mp)
 concat=td/'concat.txt'; concat.write_text('\n'.join("file '"+str(p)+"'" for p in segs)+'\n')
 visual=td/'visual.mp4'; subprocess.run(['ffmpeg','-y','-v','error','-f','concat','-safe','0','-i',str(concat),'-c','copy',str(visual)],check=True)
-final=OUT/'ten-20261003-1000-dog-bartender-water-order.mp4'
+final=OUT/'ten-20261003-1000-dog-bartender-first-impression.mp4'
 subprocess.run(['ffmpeg','-y','-v','error','-i',str(visual),'-f','lavfi','-i','sine=frequency=220:sample_rate=48000:duration=20','-filter_complex','[1:a]volume=0.025,afade=t=in:st=0:d=1,afade=t=out:st=18.5:d=1.5[a]','-map','0:v','-map','[a]','-t','20','-c:v','copy','-c:a','aac','-b:a','128k','-movflags','+faststart',str(final)],check=True)
 for p in td.rglob('*'):
     if p.is_file(): p.unlink()
