@@ -1,0 +1,229 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_TEN_DAILY_20260927",
+  "local_date": "2026-10-03",
+  "require_photographic_visuals": true,
+  "authorization_basis": "User explicitly requested completion of the remaining CURRENT_TEN_DAILY posts for 2026-10-03. Render only; publishing remains gated by exact-final visual QA and live dedupe.",
+  "purpose": "2026-10-03 CURRENT_TEN_DAILY carousel batch: relationships, survival, dog_bartender, zodiac current bundle, love_soul_relationship, myth_or_truth.",
+  "jobs": [
+    {
+      "id": "ten-20261003-0700-relationships-small-agreements",
+      "expected_cards": 7,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΜΙΑ ΣΧΕΣΗ ΔΕΝ ΚΡΑΤΙΕΤΑΙ ΜΟΝΟ ΑΠΟ ΤΑ ΜΕΓΑΛΑ — 1/7",
+          "text": "Συχνά τη διαφορά την κάνουν μικρές συμφωνίες της καθημερινότητας που δύο άνθρωποι τηρούν χωρίς να τις θεωρούν δεδομένες.",
+          "source_query": "couple talking at home photograph"
+        },
+        {
+          "title": "ΠΟΙΟΣ ΑΝΑΛΑΜΒΑΝΕΙ ΤΙ; — 2/7",
+          "text": "Όταν οι ευθύνες μένουν θολές, η κούραση γίνεται εύκολα παράπονο. Μια καθαρή μοιρασιά μειώνει τις παρεξηγήσεις.",
+          "source_query": "couple doing household chores photograph"
+        },
+        {
+          "title": "ΧΡΟΝΟΣ ΓΙΑ ΤΟΥΣ ΔΥΟ — 3/7",
+          "text": "Η σχέση χρειάζεται χρόνο μαζί, αλλά και χώρο για φίλους, δουλειά και προσωπικά ενδιαφέροντα.",
+          "source_query": "couple planning calendar at home photograph"
+        },
+        {
+          "title": "ΤΑ ΧΡΗΜΑΤΑ ΘΕΛΟΥΝ ΣΥΖΗΤΗΣΗ — 4/7",
+          "text": "Δεν υπάρχει ένα σωστό μοντέλο για όλους. Υπάρχει όμως ανάγκη για διαφάνεια και κοινή συμφωνία για τα βασικά.",
+          "source_query": "couple discussing household finances photograph"
+        },
+        {
+          "title": "ΜΗΝ ΠΕΡΙΜΕΝΕΙΣ ΝΑ ΜΑΝΤΕΨΕΙ — 5/7",
+          "text": "Το «θα έπρεπε να το ξέρει» δημιουργεί απόσταση. Το να πεις καθαρά τι χρειάζεσαι είναι συχνά πιο δίκαιο και για τους δύο.",
+          "source_query": "couple serious conversation living room photograph"
+        },
+        {
+          "title": "ΜΙΚΡΗ ΕΠΑΝΟΡΘΩΣΗ, ΜΕΓΑΛΗ ΔΙΑΦΟΡΑ — 6/7",
+          "text": "Ένα ειλικρινές «έκανα λάθος» ή «σε άκουσα» μπορεί να σταματήσει μια μικρή ένταση πριν γίνει μόνιμη πληγή.",
+          "source_query": "couple reconciling talking photograph"
+        },
+        {
+          "title": "ΕΣΕΙΣ ΤΙ ΕΧΕΤΕ ΣΥΜΦΩΝΗΣΕΙ; — 7/7",
+          "text": "Ποια μικρή καθημερινή συμφωνία θεωρείτε πιο σημαντική για να λειτουργεί μια σχέση;",
+          "source_query": "couple relaxed portrait home photograph"
+        }
+      ]
+    },
+    {
+      "id": "ten-20261003-0900-survival-frost",
+      "expected_cards": 9,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΠΑΓΕΤΟΣ ΣΤΗ ΜΕΤΑΚΙΝΗΣΗ — 1/9",
+          "text": "Ο πάγος μπορεί να είναι σχεδόν αόρατος. Μείωσε ταχύτητα, αύξησε απόσταση και απέφυγε απότομες κινήσεις.",
+          "footer": "Γενικές οδηγίες ασφάλειας — ακολούθησε πάντα τις τοπικές αρχές.",
+          "source_query": "icy road winter photograph"
+        },
+        {
+          "title": "ΠΡΙΝ ΦΥΓΕΙΣ — 2/9",
+          "text": "Έλεγξε καιρό και οδικές συνθήκες. Αν υπάρχει σοβαρή προειδοποίηση, η ασφαλέστερη μετακίνηση μπορεί να είναι να μην ξεκινήσεις.",
+          "source_query": "winter weather forecast road photograph"
+        },
+        {
+          "title": "ΤΑ ΛΑΣΤΙΧΑ ΜΕΤΡΑΝΕ — 3/9",
+          "text": "Σωστή κατάσταση και πίεση ελαστικών βοηθούν στο κράτημα. Σε περιοχές με απαιτήσεις χειμερινής οδήγησης ακολουθούμε τους τοπικούς κανόνες.",
+          "source_query": "car tire winter snow photograph"
+        },
+        {
+          "title": "ΟΧΙ ΑΠΟΤΟΜΟ ΦΡΕΝΑΡΙΣΜΑ — 4/9",
+          "text": "Σε ολισθηρό δρόμο, ήπιες κινήσεις στο τιμόνι και ομαλή επιβράδυνση μειώνουν την πιθανότητα απώλειας ελέγχου.",
+          "source_query": "car driving icy road photograph"
+        },
+        {
+          "title": "ΠΡΟΣΟΧΗ ΣΕ ΓΕΦΥΡΕΣ ΚΑΙ ΣΚΙΕΡΑ ΣΗΜΕΙΑ — 5/9",
+          "text": "Μπορούν να παγώσουν νωρίτερα από άλλα τμήματα του δρόμου. Μην θεωρείς ότι επειδή ο δρόμος φαίνεται στεγνός είναι ασφαλής.",
+          "source_query": "icy bridge winter road photograph"
+        },
+        {
+          "title": "ΠΕΖΟΣ; ΜΙΚΡΑ ΒΗΜΑΤΑ — 6/9",
+          "text": "Περπάτα αργά, με μικρά βήματα και τα χέρια ελεύθερα όσο γίνεται, ώστε να κρατάς καλύτερη ισορροπία.",
+          "source_query": "person walking icy sidewalk winter photograph"
+        },
+        {
+          "title": "ΠΑΠΟΥΤΣΙΑ ΜΕ ΚΑΛΟ ΚΡΑΤΗΜΑ — 7/9",
+          "text": "Σόλα με καλή πρόσφυση και σταθερό παπούτσι βοηθούν. Απόφυγε βιασύνη σε παγωμένες σκάλες και πεζοδρόμια.",
+          "source_query": "winter boots icy sidewalk photograph"
+        },
+        {
+          "title": "ΕΧΕ ΒΑΣΙΚΑ ΣΤΟ ΑΥΤΟΚΙΝΗΤΟ — 8/9",
+          "text": "Φορτισμένο κινητό, ζεστά ρούχα, νερό και βασικός εξοπλισμός μπορούν να βοηθήσουν αν καθυστερήσεις ή ακινητοποιηθείς.",
+          "source_query": "winter car emergency kit photograph"
+        },
+        {
+          "title": "ΑΝ ΔΕΝ ΕΙΝΑΙ ΑΣΦΑΛΕΣ, ΜΗΝ ΤΟ ΠΙΕΣΕΙΣ — 9/9",
+          "text": "Η άφιξη δεν αξίζει περισσότερο από την ασφάλεια. Προσαρμόζουμε τη διαδρομή και ακολουθούμε επίσημες οδηγίες.",
+          "source_query": "snowy road closed warning photograph"
+        }
+      ]
+    },
+    {
+      "id": "ten-20261003-1000-dog-bartender-water-order",
+      "expected_cards": 4,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΣΚΥΛΟΣ ΜΠΑΡΜΑΝ — 1/4",
+          "text": "Ο πελάτης ζήτησε νερό «ούτε πολύ κρύο, ούτε χλιαρό, με δύο παγάκια ακριβώς». Ο μπάρμαν τον κοίταξε σοβαρά.",
+          "source_query": "golden retriever behind bar counter photograph"
+        },
+        {
+          "title": "Η ΠΑΡΑΓΓΕΛΙΑ ΣΥΝΕΧΙΣΤΗΚΕ — 2/4",
+          "text": "«Χωρίς λεμόνι, αλλά να μυρίζει λεμόνι. Και το ποτήρι να είναι μεγάλο, αλλά να μη φαίνεται μεγάλο».",
+          "source_query": "dog at pub bar counter photograph"
+        },
+        {
+          "title": "Ο ΜΠΑΡΜΑΝ ΕΚΑΝΕ Ο,ΤΙ ΜΠΟΡΟΥΣΕ — 3/4",
+          "text": "Έβαλε δύο παγάκια, κοίταξε το ποτήρι, κοίταξε τον πελάτη… και πήρε τη βαθύτερη ανάσα της βάρδιας.",
+          "source_query": "golden retriever bar interior photograph"
+        },
+        {
+          "title": "ΤΕΛΙΚΑ ΤΟΥ ΕΔΩΣΕ ΝΕΡΟ — 4/4",
+          "text": "Ο πελάτης χαμογέλασε: «Ακριβώς όπως το ήθελα». Ο σκύλος μπάρμαν δεν χαμογέλασε καθόλου.",
+          "source_query": "brown dog behind bar photograph"
+        }
+      ]
+    },
+    {
+      "id": "ten-20261003-1100-zodiac-distance-pairs",
+      "expected_cards": 6,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΚΡΙΟΣ + ΖΥΓΟΣ — 1/6",
+          "text": "Όταν νιώσουν απόσταση: ο Κριός ζητά γρήγορα ξεκαθάρισμα· ο Ζυγός πρώτα προσπαθεί να ρίξει τους τόνους.",
+          "source_query": "couple discussing relationship photograph"
+        },
+        {
+          "title": "ΤΑΥΡΟΣ + ΣΚΟΡΠΙΟΣ — 2/6",
+          "text": "Ο Ταύρος ψάχνει σταθερότητα στις πράξεις· ο Σκορπιός παρατηρεί αν κάτι άλλαξε πίσω από τις λέξεις.",
+          "source_query": "couple serious eye contact photograph"
+        },
+        {
+          "title": "ΔΙΔΥΜΟΙ + ΤΟΞΟΤΗΣ — 3/6",
+          "text": "Οι Δίδυμοι ανοίγουν κουβέντα από πολλές πλευρές· ο Τοξότης θέλει μια ευθεία απάντηση και χώρο να αναπνεύσει.",
+          "source_query": "couple talking outdoors photograph"
+        },
+        {
+          "title": "ΚΑΡΚΙΝΟΣ + ΑΙΓΟΚΕΡΩΣ — 4/6",
+          "text": "Ο Καρκίνος χρειάζεται συναισθηματική επιβεβαίωση· ο Αιγόκερως δείχνει ενδιαφέρον περισσότερο μέσα από σταθερές πράξεις.",
+          "source_query": "couple sitting together home photograph"
+        },
+        {
+          "title": "ΛΕΩΝ + ΥΔΡΟΧΟΟΣ — 5/6",
+          "text": "Ο Λέων θέλει να νιώσει ότι εξακολουθεί να μετρά· ο Υδροχόος χρειάζεται πρώτα λίγο χώρο για να καταλάβει τι νιώθει.",
+          "source_query": "couple conversation cafe photograph"
+        },
+        {
+          "title": "ΠΑΡΘΕΝΟΣ + ΙΧΘΥΕΣ — 6/6",
+          "text": "Ο Παρθένος ψάχνει τι άλλαξε συγκεκριμένα· οι Ιχθύες διαβάζουν περισσότερο τον τόνο και την ατμόσφαιρα.",
+          "source_query": "couple quiet conversation photograph"
+        }
+      ]
+    },
+    {
+      "id": "ten-20261003-1500-love-flower-workshop",
+      "expected_cards": 5,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΕΚΛΕΙΣΕ ΤΟ ΣΥΝΕΡΓΕΙΟ ΧΩΡΙΣ ΝΑ ΤΗΣ ΤΟ ΠΕΙ — 1/5",
+          "text": "Φοβόταν περισσότερο το βλέμμα της παρά τις άδειες θέσεις των εργαλείων.",
+          "source_query": "empty auto repair workshop photograph"
+        },
+        {
+          "title": "ΤΟ ΒΡΑΔΥ ΤΗΣ ΑΦΗΣΕ ΤΑ ΚΛΕΙΔΙΑ ΣΤΟ ΤΡΑΠΕΖΙ — 2/5",
+          "text": "«Δεν ξέρω τι θα κάνω τώρα», της είπε.",
+          "source_query": "car keys on kitchen table photograph"
+        },
+        {
+          "title": "ΕΚΕΙΝΗ ΔΕΝ ΤΟΥ ΕΙΠΕ ΟΤΙ ΟΛΑ ΘΑ ΕΙΝΑΙ ΕΥΚΟΛΑ — 3/5",
+          "text": "Τον ρώτησε μόνο: «Από πού θέλεις να ξεκινήσουμε αύριο;».",
+          "source_query": "couple talking kitchen table photograph"
+        },
+        {
+          "title": "ΤΟ ΠΡΩΙ ΒΡΗΚΕ ΜΙΑ ΜΙΚΡΗ ΓΛΑΣΤΡΑ — 4/5",
+          "text": "Δίπλα της, δυο κούπες καφέ και ένα λευκό τετράδιο για το επόμενο βήμα.",
+          "source_query": "small potted flower coffee notebook table photograph"
+        },
+        {
+          "title": "ΔΕΝ ΤΟΝ ΑΓΑΠΟΥΣΕ ΜΟΝΟ ΟΤΑΝ ΤΑ ΚΑΤΑΦΕΡΝΕ — 5/5",
+          "text": "Και αυτή ήταν η πρώτη σταθερή βάση για να ξανασταθεί.",
+          "source_query": "couple holding hands at table photograph"
+        }
+      ]
+    },
+    {
+      "id": "ten-20261003-2000-myth-chameleon",
+      "expected_cards": 4,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΑΛΛΑΖΕΙ ΧΡΩΜΑ ΜΟΝΟ ΓΙΑ ΝΑ ΚΡΥΦΤΕΙ; — 1/4",
+          "text": "Ο χαμαιλέοντας δεν χρησιμοποιεί τις αλλαγές χρώματος μόνο σαν καμουφλάζ.",
+          "source_query": "panther chameleon photograph"
+        },
+        {
+          "title": "ΤΟ ΧΡΩΜΑ ΜΠΟΡΕΙ ΝΑ ΕΙΝΑΙ ΜΗΝΥΜΑ — 2/4",
+          "text": "Σε ορισμένα είδη, έντονες αλλαγές εμφανίζονται στο φλερτ, στην κοινωνική επικοινωνία ή απέναντι σε ανταγωνιστή.",
+          "source_query": "colorful chameleon close up photograph"
+        },
+        {
+          "title": "ΜΙΚΡΟΣΚΟΠΙΚΟΙ ΚΡΥΣΤΑΛΛΟΙ ΣΤΟ ΔΕΡΜΑ — 3/4",
+          "text": "Στον χαμαιλέοντα πάνθηρα, αλλαγές στη διάταξη νανοκρυστάλλων επηρεάζουν το φως που ανακλάται.",
+          "source_query": "panther chameleon skin color photograph"
+        },
+        {
+          "title": "ΟΧΙ ΜΟΝΟ ΚΑΜΟΥΦΛΑΖ — 4/4",
+          "text": "Μερικές φορές τα έντονα χρώματα υπάρχουν ακριβώς για να τον προσέξουν. Άρα: ΜΥΘΟΣ.",
+          "source_query": "bright chameleon photograph"
+        }
+      ]
+    }
+  ]
+}
