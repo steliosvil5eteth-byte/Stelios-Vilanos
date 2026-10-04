@@ -1,0 +1,32 @@
+{
+  "strategy_id": "CURRENT_TEN_DAILY_20260927",
+  "brand_id": 7076410,
+  "brand_label": "Ιστορίες που μας αγγίζουν",
+  "local_date": "2026-10-04",
+  "slot": "15:00",
+  "timezone": "Europe/Athens",
+  "category": "love_soul_relationship",
+  "title": "Οι γραμμές πίσω από την πόρτα",
+  "qa_status": "PASSED_FINAL_REVIEW",
+  "card_count": 5,
+  "cards": [
+    {"file": "cards/01.jpg", "sha256": "9f49b2e67b806090b71e039516db04a9d2b5eab747859dcb36cc970334d8fad4"},
+    {"file": "cards/02.jpg", "sha256": "d56670db453d907ddd942124ec8bb027c058ebbc16123c4da2f7469bcfbc4247"},
+    {"file": "cards/03.jpg", "sha256": "418123d26175df60bb11202d29c2c681082a79b184024585878252298976c7f9"},
+    {"file": "cards/04.jpg", "sha256": "aef8120d0464807ca1d6b6bb0c97f2867bc6d432a552a851c05177ccf088c877"},
+    {"file": "cards/05.jpg", "sha256": "d7b2e6dff2ba0b97830d37f1aaf6db697e648900eceeed25073483c28b877548"}
+  ],
+  "youtube": {
+    "file": "door-height-lines-youtube.mp4",
+    "sha256": "720d949342b2d2004a52f61701a6dbebecf7603cff73e5360db8b648da4b5630",
+    "resolution": "1080x1920",
+    "duration_seconds": 25,
+    "audio_layers": 1,
+    "audio_type": "original instrumental"
+  },
+  "metricool": [
+    {"id": 387756048, "uuid": "629385489946267395", "providers": ["facebook", "instagram", "tiktok"], "status": "PENDING", "draft": false, "autoPublish": true},
+    {"id": 387756185, "uuid": "-5335538055787755882", "providers": ["youtube"], "status": "PENDING", "draft": false, "autoPublish": true}
+  ],
+  "notion_page_id": "3eff2345-b318-8198-93cd-e5f149c760a6"
+}
