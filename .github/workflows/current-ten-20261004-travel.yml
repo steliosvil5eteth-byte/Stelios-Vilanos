@@ -56,25 +56,35 @@ jobs:
           srt=root/'subs.srt'
           cap_count=r.subtitles(bounds,dur,srt)
           raw=srt.read_text(encoding='utf-8')
-          fixed=[]
+          cues=[]
           for block in raw.strip().split('\n\n'):
               lines=block.splitlines()
-              if len(lines) >= 3:
-                  txt=' '.join(lines[2:])
-                  txt=re.sub(r'\s+([,.;:!?·])', r'\1', txt)
-                  words=txt.split()
-                  rows=[]; row=''
-                  for word in words:
-                      if not row or len(row)+1+len(word) <= 30:
-                          row=word if not row else row+' '+word
-                      else:
-                          rows.append(row); row=word
-                  if row: rows.append(row)
-                  lines=lines[:2]+rows
-              fixed.append('\n'.join(lines))
-          srt.write_text('\n\n'.join(fixed)+'\n',encoding='utf-8')
-          if re.search(r'\s+[,.;:!?·]', srt.read_text(encoding='utf-8')):
-              raise SystemExit('subtitle punctuation-spacing normalization failed')
+              if len(lines)<3: continue
+              text=' '.join(lines[2:]).strip()
+              text=re.sub(r'\s+([,.;:!?·])', r'\1', text)
+              cues.append([lines[1],text])
+          clean=[]
+          for timing,text in cues:
+              if text and text[0] in ',.;:!?·' and clean:
+                  clean[-1][1]+=text[0]
+                  text=text[1:].lstrip()
+              if text: clean.append([timing,text])
+          rows=[]
+          for number,(timing,text) in enumerate(clean,1):
+              words=text.split(); wrapped=[]; row=''
+              for word in words:
+                  candidate=word if not row else row+' '+word
+                  if row and len(candidate)>31:
+                      wrapped.append(row); row=word
+                  else: row=candidate
+              if row: wrapped.append(row)
+              if len(wrapped)>2:
+                  mid=max(1,len(words)//2); wrapped=[' '.join(words[:mid]),' '.join(words[mid:])]
+              rows += [str(number),timing]+wrapped[:2]+['']
+          rendered='\n'.join(rows)
+          if re.search(r'\s+[,.;:!?·]', rendered) or re.search(r'(?:^|\n)[,.;:!?·]', rendered):
+              raise SystemExit('subtitle punctuation normalization failed')
+          srt.write_text(rendered,encoding='utf-8')
           video=root/(job['id']+'.mp4')
           r.make_video(job,photos,wav,srt,dur,video)
           result=r.qa(job,video,dur,len(records),cap_count)
