@@ -213,6 +213,9 @@ def subtitles(bounds,dur,out):
         txt=re.sub(r'\s+([,.;;!?…:])',r'\1',txt)
         txt=re.sub(r'([«“])\s+',r'\1',txt)
         txt=re.sub(r'\s+([»”])',r'\1',txt)
+        # Azure may emit the Greek apostrophe as a standalone word boundary.
+        # Attach it to the preceding Greek word while keeping the following space.
+        txt=re.sub(r'([Α-Ωα-ωΆ-Ώά-ώϊϋΐΰ])\s*’\s*',r'\1’ ',txt)
         return txt
     caps=[]; group=[]
     for i,b in enumerate(bounds):
