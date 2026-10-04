@@ -61,7 +61,7 @@ jobs:
               lines=block.splitlines()
               if len(lines) >= 3:
                   txt=' '.join(lines[2:])
-                  txt=re.sub(r'\\s+([,.;:!?·])', r'\\1', txt)
+                  txt=re.sub(r'\s+([,.;:!?·])', r'\1', txt)
                   words=txt.split()
                   rows=[]; row=''
                   for word in words:
@@ -73,7 +73,7 @@ jobs:
                   lines=lines[:2]+rows
               fixed.append('\n'.join(lines))
           srt.write_text('\n\n'.join(fixed)+'\n',encoding='utf-8')
-          if re.search(r'\\s+[,.;:!?·]', srt.read_text(encoding='utf-8')):
+          if re.search(r'\s+[,.;:!?·]', srt.read_text(encoding='utf-8')):
               raise SystemExit('subtitle punctuation-spacing normalization failed')
           video=root/(job['id']+'.mp4')
           r.make_video(job,photos,wav,srt,dur,video)
