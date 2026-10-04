@@ -4,6 +4,7 @@ on:
     branches: [main]
     paths:
       - '.github/workflows/current-ten-20261004-travel.yml'
+      - 'media_jobs/assets/current-ten-20261004-travel-nymfaio/**'
   workflow_dispatch:
 permissions:
   contents: write
@@ -21,25 +22,46 @@ jobs:
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
           python3 -m pip install --disable-pip-version-check --no-input pillow requests azure-cognitiveservices-speech
-      - name: Build one-job repair manifest
-        run: |
-          python3 - <<'PY'
-          import json
-          from pathlib import Path
-          src=json.loads(Path('media_jobs/current_ten_20261004_narrated_all.json').read_text(encoding='utf-8'))
-          job=next(j for j in src['jobs'] if j['id']=='current-ten-20261004-travel-nymfaio')
-          if 'Εικόνες δημιουργημένες με ΤΝ.' not in job['caption']:
-              job['caption']=job['caption'].replace('\n\nΑν σας άρεσε', '\n\nΕικόνες δημιουργημένες με ΤΝ.\n\nΑν σας άρεσε')
-          out={'approved':True,'paid_generation_allowed':False,'active_metricool_brand_id':7076410,'production_status':'AUTHORIZED_REPAIR_2026-10-04_TRAVEL','jobs':[job]}
-          Path('/tmp/travel-manifest.json').write_text(json.dumps(out,ensure_ascii=False,indent=2),encoding='utf-8')
-          PY
-      - name: Render Nestoras exact final
+      - name: Render Nestoras exact final from reviewed scene sources
         env:
           AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
           AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
         run: |
           set -euo pipefail
-          python3 tools/render_azure_feature_batch.py --manifest /tmp/travel-manifest.json --output "$RUNNER_TEMP/final"
+          python3 - <<'PY'
+          import hashlib, json, os, shutil, sys
+          from pathlib import Path
+          sys.path.insert(0,'tools')
+          import render_azure_feature_batch as r
+          src=json.loads(Path('media_jobs/current_ten_20261004_narrated_all.json').read_text(encoding='utf-8'))
+          job=next(j for j in src['jobs'] if j['id']=='current-ten-20261004-travel-nymfaio')
+          if 'Εικόνες δημιουργημένες με ΤΝ.' not in job['caption']:
+              job['caption']=job['caption'].replace('\n\nΑν σας άρεσε', '\n\nΕικόνες δημιουργημένες με ΤΝ.\n\nΑν σας άρεσε')
+          root=Path(os.environ['RUNNER_TEMP'])/'final'/job['id']
+          photos=root/'photos'
+          photos.mkdir(parents=True,exist_ok=True)
+          assets=sorted(Path('media_jobs/assets/current-ten-20261004-travel-nymfaio').glob('*.jpg'))
+          if len(assets)!=8:
+              raise SystemExit(f'need exactly 8 reviewed scene sources, found {len(assets)}')
+          hashes=[hashlib.sha256(p.read_bytes()).hexdigest() for p in assets]
+          if len(set(hashes))!=8:
+              raise SystemExit('duplicate scene source')
+          for i,p in enumerate(assets,1):
+              shutil.copy2(p,photos/f'{i:02d}.jpg')
+          records=[{'file':p.name,'source':'OpenAI built-in image generation','visual_kind':'photorealistic generated scene','ai_generated':True,'sha256':h} for p,h in zip(assets,hashes)]
+          (root/'visual-attribution.json').write_text(json.dumps(records,ensure_ascii=False,indent=2),encoding='utf-8')
+          (root/'final-caption.txt').write_text(job['caption'],encoding='utf-8')
+          wav,bounds,dur=r.synthesize(job['script'],root,job.get('min_duration_seconds'),job.get('max_duration_seconds'))
+          (root/'speech-meta.json').write_text(json.dumps({'voice':r.VOICE,'duration_seconds':round(dur,3),'duration_min_seconds':job.get('min_duration_seconds'),'duration_max_seconds':job.get('max_duration_seconds'),'background_music':False,'word_boundaries':len(bounds)},ensure_ascii=False,indent=2),encoding='utf-8')
+          srt=root/'subs.srt'
+          cap_count=r.subtitles(bounds,dur,srt)
+          video=root/(job['id']+'.mp4')
+          r.make_video(job,photos,wav,srt,dur,video)
+          result=r.qa(job,video,dur,len(records),cap_count)
+          result.update({'generated_visuals':True,'eight_distinct_scene_sources':True,'caption_ai_disclosure':True,'release_gate':'PENDING_DIRECT_VISUAL_AUDIO_REVIEW'})
+          (root/'qa.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+          print(json.dumps(result,ensure_ascii=False,indent=2))
+          PY
       - name: Exact-final contact sheet and release gate
         run: |
           python3 - <<'PY'
