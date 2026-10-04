@@ -208,13 +208,108 @@ def ts(x):
     ms=int(round(max(0,x)*1000)); h,ms=divmod(ms,3600000); m,ms=divmod(ms,60000); s,ms=divmod(ms,1000); return f'{h:02d}:{m:02d}:{s:02d},{ms:03d}'
 
 def subtitles(bounds,dur,out):
+    def caption_text(items):
+        txt=' '.join(x['text'] for x in items)
+        txt=re.sub(r'\\s+([,.;;!?…:])',r'\\1',txt)
+        txt=re.sub(r'([«“])\\s+',r'\\1',txt)
+        txt=re.sub(r'\\s+([»”])',r'\\1',txt)
+        return txt
     caps=[]; group=[]
     for i,b in enumerate(bounds):
-        group.append(b); txt=' '.join(x['text'] for x in group)
-        if len(group)>=6 or len(txt)>=38 or re.search(r'[.!;;?…]$',b['text']):
+        group.append(b); txt=caption_text(group)
+        if len(group)>=6 or len(txt)>=38 or re.search(r'[.!;;?…]
+    def wrap(txt):
+        words=txt.split(); lines=[]; cur=''
+        for w in words:
+            cand=(cur+' '+w).strip()
+            if cur and len(cand)>31: lines.append(cur); cur=w
+            else: cur=cand
+        if cur: lines.append(cur)
+        if len(lines)>2:
+            mid=max(1,len(words)//2); lines=[' '.join(words[:mid]),' '.join(words[mid:])]
+        return '\n'.join(lines[:2])
+    rows=[]
+    for n,(st,en,txt) in enumerate(caps,1): rows += [str(n),f'{ts(st)} --> {ts(en)}',wrap(txt),'']
+    out.write_text('\n'.join(rows),encoding='utf-8')
+    return len(caps)
+
+def make_video(job, photos:Path, wav:Path, srt:Path, dur:float, out:Path):
+    files=sorted(photos.glob('*.jpg')); scenes=max(len(files),int(job.get('scenes',15)))
+    per=dur/scenes; frames=max(1,math.ceil(per*30)); clips=out.parent/'clips'; clips.mkdir(exist_ok=True)
+    concat=out.parent/'clips.txt'; lines=[]
+    order=(files+list(reversed(files)))
+    for i in range(scenes):
+        img=order[i%len(order)]; clip=clips/f'clip-{i+1:02d}.mp4'
+        sign=1 if i%2==0 else -1
+        x=f"iw/2-(iw/zoom/2)+{sign*10}*sin(on/39)"; y=f"ih/2-(ih/zoom/2)+{sign*8}*cos(on/43)"
+        run(['ffmpeg','-y','-loglevel','error','-loop','1','-i',str(img),'-vf',f"scale=1200:2134:force_original_aspect_ratio=increase,crop=1200:2134,zoompan=z='min(zoom+0.00028,1.055)':x='{x}':y='{y}':d={frames}:s=1080x1920:fps=30,format=yuv420p",'-t',str(per),'-an','-c:v','libx264','-preset','veryfast','-crf','21','-pix_fmt','yuv420p',str(clip)])
+        lines.append("file '"+str(clip).replace("'","'\\''")+"'")
+    concat.write_text('\n'.join(lines)+'\n',encoding='utf-8')
+    visual=out.parent/'visual.mp4'; run(['ffmpeg','-y','-loglevel','error','-f','concat','-safe','0','-i',str(concat),'-an','-c:v','libx264','-preset','veryfast','-crf','21','-pix_fmt','yuv420p',str(visual)])
+    style='FontName=DejaVu Sans,FontSize=10,PrimaryColour=&H00FFFFFF,OutlineColour=&H00000000,BackColour=&H90000000,BorderStyle=3,Outline=1,Shadow=0,Alignment=2,MarginL=14,MarginR=14,MarginV=42'
+    run(['ffmpeg','-y','-loglevel','error','-i',str(visual),'-i',str(wav),'-vf',f"subtitles='{srt}':force_style='{style}'",'-c:v','libx264','-preset','medium','-crf','20','-pix_fmt','yuv420p','-c:a','aac','-b:a','128k','-ar','48000','-ac','1','-shortest','-movflags','+faststart',str(out)])
+
+def qa(job, video:Path, dur:float, photo_count:int, cap_count:int):
+    meta=json.loads(run(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(video)])); vd=float(meta['format']['duration'])
+    vs=[s for s in meta['streams'] if s.get('codec_type')=='video']; au=[s for s in meta['streams'] if s.get('codec_type')=='audio']
+    min_d=job.get('min_duration_seconds'); max_d=job.get('max_duration_seconds')
+    duration_bad=(vd<=80 if min_d is None else vd<float(min_d)) or (max_d is not None and vd>float(max_d))
+    if duration_bad or len(vs)!=1 or len(au)!=1 or int(vs[0]['width'])!=1080 or int(vs[0]['height'])!=1920: raise RuntimeError('basic QA failed')
+    dec=subprocess.run(['ffmpeg','-v','error','-i',str(video),'-f','null','-'],text=True,capture_output=True)
+    if dec.returncode: raise RuntimeError('decode QA failed: '+dec.stderr[-1000:])
+    # Verify that subtitles are visibly burned into the same final MP4.
+    # The previous gate only trusted the existence of an SRT file and could
+    # miss an off-canvas libass style. Compare subtitle-band pixels against
+    # the subtitle-free visual render at several active cue timestamps.
+    visual=video.parent/'visual.mp4'
+    strong_counts=[]
+    for stamp in (1.0, 15.0, min(50.0, max(1.0, vd-2.0))):
+        clean=video.parent/f'.qa-clean-{str(stamp).replace(".","_")}.png'
+        final=video.parent/f'.qa-final-{str(stamp).replace(".","_")}.png'
+        try:
+            run(['ffmpeg','-y','-loglevel','error','-ss',str(stamp),'-i',str(visual),'-frames:v','1','-vf','crop=1080:760:0:1160',str(clean)])
+            run(['ffmpeg','-y','-loglevel','error','-ss',str(stamp),'-i',str(video),'-frames:v','1','-vf','crop=1080:760:0:1160',str(final)])
+            with Image.open(clean).convert('RGB') as a, Image.open(final).convert('RGB') as b:
+                diff=ImageChops.difference(a,b)
+                strong_counts.append(sum(1 for px in diff.getdata() if max(px)>55))
+        finally:
+            clean.unlink(missing_ok=True); final.unlink(missing_ok=True)
+    if max(strong_counts or [0]) < 1200:
+        raise RuntimeError(f'burned-subtitle visual QA failed: strong pixel counts {strong_counts}')
+    sil=subprocess.run(['ffmpeg','-hide_banner','-i',str(video),'-af','silencedetect=noise=-45dB:d=1.2','-f','null','-'],text=True,capture_output=True).stderr
+    gaps=[float(x) for x in re.findall(r'silence_duration: ([0-9.]+)',sil)]
+    if any(x>1.2 for x in gaps): raise RuntimeError(f'dead-air QA failed: {gaps}')
+    tail_log=subprocess.run(['ffmpeg','-hide_banner','-i',str(video),'-af','silencedetect=noise=-45dB:d=0.5','-f','null','-'],text=True,capture_output=True).stderr
+    tail=[(float(e),float(d)) for e,d in re.findall(r'silence_end: ([0-9.]+) \| silence_duration: ([0-9.]+)',tail_log)]
+    trailing=max([d for e,d in tail if e>=vd-0.12] or [0.0])
+    if trailing>0.5: raise RuntimeError(f'trailing-silence QA failed: {trailing:.3f}s')
+    return {'publish_ready':True,'local_date':job['local_date'],'slot':job['slot'],'voice':VOICE,'duration_seconds':round(vd,3),'duration_min_seconds':min_d,'duration_max_seconds':max_d,'resolution':'1080x1920','background_music':False,'burned_synced_greek_subtitles':True,'avatar_presenter':False,'spoken_written_cta':job['script'].rstrip().endswith(CTA),'dead_air_gt_1_2s':False,'trailing_silence_gt_0_5s':False,'visual_source_count':photo_count,'source_pack_pinned':bool(job.get('visuals')),'rights_verified':True,'caption_count':cap_count,'paid_generation_used':False,'folklore_not_fact':bool(job.get('folklore_not_fact',False))}
+
+def main():
+    ap=argparse.ArgumentParser(); ap.add_argument('--manifest',required=True); ap.add_argument('--output',required=True); ns=ap.parse_args()
+    batch=json.loads(Path(ns.manifest).read_text(encoding='utf-8'))
+    if batch.get('approved') is not True or batch.get('paid_generation_allowed') is not False: raise RuntimeError('zero-cost approval gate failed')
+    jobs=batch.get('jobs') or []; outroot=Path(ns.output); outroot.mkdir(parents=True,exist_ok=True); summary=[]
+    for job in jobs:
+        if job.get('voice')!=VOICE or job.get('background_music') is not False: raise RuntimeError('voice/audio policy mismatch')
+        if not job['script'].rstrip().endswith(CTA): raise RuntimeError('CTA gate failed')
+        root=outroot/job['id']; photos=root/'photos'; photos.mkdir(parents=True,exist_ok=True)
+        target=int(job.get('photo_target',10))
+        if job.get('visuals'):
+            records=explicit_visuals(job['visuals'],photos,target)
+        else:
+            records=commons_search(job['commons_queries'],photos,target)
+        (root/'visual-attribution.json').write_text(json.dumps(records,ensure_ascii=False,indent=2),encoding='utf-8')
+        wav,bounds,dur=synthesize(job['script'],root,job.get('min_duration_seconds'),job.get('max_duration_seconds')); (root/'speech-meta.json').write_text(json.dumps({'voice':VOICE,'duration_seconds':round(dur,3),'duration_min_seconds':job.get('min_duration_seconds'),'duration_max_seconds':job.get('max_duration_seconds'),'background_music':False,'word_boundaries':len(bounds)},ensure_ascii=False,indent=2),encoding='utf-8')
+        srt=root/'subs.srt'; cap_count=subtitles(bounds,dur,srt); video=root/(job['id']+'.mp4'); make_video(job,photos,wav,srt,dur,video)
+        result=qa(job,video,dur,len(records),cap_count); (root/'qa.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8'); summary.append(result)
+    (outroot/'qa-summary.json').write_text(json.dumps(summary,ensure_ascii=False,indent=2),encoding='utf-8')
+    print(json.dumps(summary,ensure_ascii=False,indent=2))
+if __name__=='__main__': main()
+,b['text']):
             st=float(group[0]['offset']); en=float(bounds[i+1]['offset']) if i+1<len(bounds) else dur
             caps.append((st,max(st+.24,en),txt)); group=[]
-    if group: caps.append((float(group[0]['offset']),dur,' '.join(x['text'] for x in group)))
+    if group: caps.append((float(group[0]['offset']),dur,caption_text(group)))
     def wrap(txt):
         words=txt.split(); lines=[]; cur=''
         for w in words:
