@@ -17,7 +17,7 @@
       "caption": "Μια λεπτή μωβ κορδέλα διασχίζει τον νυχτερινό ουρανό πιο νότια από το συνηθισμένο σέλας. Είναι το STEVE, ένα πραγματικό φαινόμενο της ανώτερης ατμόσφαιρας που έγινε γνωστό στην επιστήμη χάρη σε πολίτες-παρατηρητές.\n\nΕικόνες από αδειοδοτημένες φωτογραφικές πηγές. Οπτική επεξεργασία με ΤΝ.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#STEVE #Διάστημα #Ατμόσφαιρα #Επιστήμη #ΠαράξεναΦαινόμενα",
       "commons_queries": [
         "STEVE aurora purple arc photograph",
-        "Strong Thermal Emission Velocity Enhancement photograph",
+        "aurora borealis over lake Tromso Norway photograph",
         "STEVE picket fence aurora photograph",
         "purple aurora arc Canada photograph",
         "subauroral arc night sky photograph",
@@ -46,5 +46,5 @@
     "AGU 2019: mauve arc and green picket fence arise from different processes",
     "ESA Swarm: fast-moving stream of extremely hot charged particles"
   ],
-  "production_note": "Repair retry 5: restored renderer from clean commit after a fail-closed formatter patch error, then applied punctuation cleanup only; no schedule/create attempted before renewed full QA."
+  "production_note": "Repair retry 6: exact-final review found a standalone punctuation cue and one collage-style source; punctuation is reattached to the prior cue and the source query is replaced. No schedule/create attempted before renewed full QA."
 }
