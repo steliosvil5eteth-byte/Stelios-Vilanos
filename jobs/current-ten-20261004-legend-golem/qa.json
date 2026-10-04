@@ -1,0 +1,26 @@
+{
+  "status": "PASSED_FINAL_REVIEW",
+  "title": "Το Γκόλεμ της Πράγας: ο φύλακας από πηλό",
+  "duration_seconds": 99.9,
+  "resolution": "1080x1920",
+  "voice": "el-GR-NestorasNeural",
+  "burned_in_synchronized_greek_subtitles": true,
+  "visual_scene_count": 9,
+  "distinct_scene_relevant_photographic_visuals": true,
+  "background_music": false,
+  "audio_streams": 1,
+  "avatar": false,
+  "cta_exact": true,
+  "caption_present": true,
+  "hashtags": 5,
+  "ai_disclosure": true,
+  "decode_ok": true,
+  "dead_air_ge_2s": false,
+  "sources": [
+    "https://prague.eu/en/spiritual-prague/the-old-new-synagogue-resting-place-of-the-mythical-golem/",
+    "https://prague.eu/en/golem-of-prague/",
+    "https://www.jewishmuseum.cz/novinka/the-golem-of-prague-the-legend-of-rabbi-loew-s-creation/",
+    "https://www.jewishmuseum.cz/en/explore/sites/old-new-synagogue/"
+  ],
+  "sha256": "bae08a4060f6b3536877249f16cd641ba36067cf3fe5434e0dc8a222b8ff4ec6"
+}

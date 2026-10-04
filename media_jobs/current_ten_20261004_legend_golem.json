@@ -1,0 +1,30 @@
+{
+  "strategy": "CURRENT_TEN_DAILY_20260927",
+  "brand_id": 7076410,
+  "local_date": "2026-10-04",
+  "timezone": "Europe/Athens",
+  "slot": "22:00",
+  "category": "international_legend",
+  "title": "Το Γκόλεμ της Πράγας: ο φύλακας από πηλό",
+  "format": "narrated_video",
+  "final_file": "final/golem-final.mp4",
+  "final_media_url": "https://storage.googleapis.com/vidiq-user-videos/4e3ba3bc-d9a3-4adb-a0ec-48b116bc886e/218a4b65-b2ea-4a9a-ac57-219a6537cc71.mp4?GoogleAccessId=ai-proxy-20261001%40studious-pen-429.vid.io.iam.gserviceaccount.com&Expires=1791740831&Signature=Wa2NnfVWRru10ldgF51YueCH1QlcCdEgLRLncPkAgfZvToHY83kjCb8%2BMK387dEkkxo9YIvuwGdbWNY7S7j9w3YTlrl1vIbnp9ORWBRN7B5BY1MO0idOPbY%2BeT7qk2XdXpCGSIWNMjIsbpH875elOLLOAK8HrX1n6VnhCljOp3HHorCtNzvTtE4RNIN%2Bk6An8qYYHoTjAAi6gGGPxnmTF7lEsMWcuKfwENOEo0ysBgKLmHwvEf5zrSilIT%2FSI0GDbbmrggPVJChF7twR1jTqCw0dSCL2iFA9YEAjfssaOewnB4LDpWrFCV7nEbvA1%2BTETqmfmWbpx%2Frc1lZv5WaYpw%3D%3D",
+  "hosted_upload_id": "218a4b65-b2ea-4a9a-ac57-219a6537cc71",
+  "final_sha256": "bae08a4060f6b3536877249f16cd641ba36067cf3fe5434e0dc8a222b8ff4ec6",
+  "resolution": "1080x1920",
+  "duration_seconds": 99.9,
+  "voice": "el-GR-NestorasNeural",
+  "burned_in_synchronized_greek_subtitles": true,
+  "visual_scene_count": 9,
+  "visuals": "distinct scene-relevant licensed photographs",
+  "background_music": false,
+  "avatar": false,
+  "audio_streams": 1,
+  "release_status": "PASSED_FINAL_REVIEW",
+  "sources": [
+    "https://prague.eu/en/spiritual-prague/the-old-new-synagogue-resting-place-of-the-mythical-golem/",
+    "https://prague.eu/en/golem-of-prague/",
+    "https://www.jewishmuseum.cz/novinka/the-golem-of-prague-the-legend-of-rabbi-loew-s-creation/",
+    "https://www.jewishmuseum.cz/en/explore/sites/old-new-synagogue/"
+  ]
+}
