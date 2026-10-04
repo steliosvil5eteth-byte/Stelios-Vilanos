@@ -1,0 +1,26 @@
+{
+  "strategy": "CURRENT_TEN_DAILY_20260927",
+  "brand_id": 7076410,
+  "local_date": "2026-10-04",
+  "timezone": "Europe/Athens",
+  "type": "EXTRA",
+  "title": "Η σακούλα της Παρασκευής",
+  "format": "10-card-carousel",
+  "repair": "TikTok JPEG retry after PNG format rejection",
+  "cards": 10,
+  "image_size": "1080x1080",
+  "mime_type": "image/jpeg",
+  "qa": "PASSED_FINAL_REVIEW",
+  "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+  "hashtags": [
+    "#Ιστορίες",
+    "#Καλοσύνη",
+    "#Αλληλεγγύη",
+    "#Οικογένεια",
+    "#Ζωή"
+  ],
+  "ai_disclosure": "Πρωτότυπη μυθοπλασία • Οπτική σύνθεση με ΤΝ",
+  "failed_tiktok_source_post_id": "387983386",
+  "retry_only_failed_destination": true,
+  "never_backdate": true
+}
