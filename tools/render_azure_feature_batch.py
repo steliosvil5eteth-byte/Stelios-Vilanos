@@ -210,14 +210,17 @@ def ts(x):
 def subtitles(bounds,dur,out):
     def caption_text(items):
         txt=' '.join(x['text'] for x in items)
-        txt=re.sub(r'\\s+([,.;;!?…:])',r'\\1',txt)
-        txt=re.sub(r'([«“])\\s+',r'\\1',txt)
-        txt=re.sub(r'\\s+([»”])',r'\\1',txt)
+        txt=re.sub(r'\s+([,.;;!?…:])',r'\1',txt)
+        txt=re.sub(r'([«“])\s+',r'\1',txt)
+        txt=re.sub(r'\s+([»”])',r'\1',txt)
         return txt
     caps=[]; group=[]
     for i,b in enumerate(bounds):
         group.append(b); txt=caption_text(group)
-        if len(group)>=6 or len(txt)>=38 or re.search(r'[.!;;?…]
+        if len(group)>=6 or len(txt)>=38 or re.search(r'[.!;;?…]$',b['text']):
+            st=float(group[0]['offset']); en=float(bounds[i+1]['offset']) if i+1<len(bounds) else dur
+            caps.append((st,max(st+.24,en),txt)); group=[]
+    if group: caps.append((float(group[0]['offset']),dur,caption_text(group)))
     def wrap(txt):
         words=txt.split(); lines=[]; cur=''
         for w in words:
@@ -232,7 +235,6 @@ def subtitles(bounds,dur,out):
     for n,(st,en,txt) in enumerate(caps,1): rows += [str(n),f'{ts(st)} --> {ts(en)}',wrap(txt),'']
     out.write_text('\n'.join(rows),encoding='utf-8')
     return len(caps)
-
 def make_video(job, photos:Path, wav:Path, srt:Path, dur:float, out:Path):
     files=sorted(photos.glob('*.jpg')); scenes=max(len(files),int(job.get('scenes',15)))
     per=dur/scenes; frames=max(1,math.ceil(per*30)); clips=out.parent/'clips'; clips.mkdir(exist_ok=True)

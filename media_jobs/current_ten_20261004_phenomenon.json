@@ -46,5 +46,5 @@
     "AGU 2019: mauve arc and green picket fence arise from different processes",
     "ESA Swarm: fast-moving stream of extremely hot charged particles"
   ],
-  "production_note": "Repair retry 3: exact-final review of retry 2 found subtitle punctuation spacing and one unnatural Greek phrase. Formatter and script corrected; no schedule/create attempted before renewed full QA."
+  "production_note": "Repair retry 4: corrected an escaping error in the subtitle formatter patch after a fail-closed syntax check; no schedule/create attempted before renewed full QA."
 }
