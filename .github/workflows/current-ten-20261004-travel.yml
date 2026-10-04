@@ -1,0 +1,88 @@
+name: Current Ten 20261004 travel Nymfaio repair
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/current-ten-20261004-travel.yml'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: current-ten-20261004-travel
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install media tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python3 -m pip install --disable-pip-version-check --no-input pillow requests azure-cognitiveservices-speech
+      - name: Build one-job repair manifest
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+          src=json.loads(Path('media_jobs/current_ten_20261004_narrated_all.json').read_text(encoding='utf-8'))
+          job=next(j for j in src['jobs'] if j['id']=='current-ten-20261004-travel-nymfaio')
+          if 'Εικόνες δημιουργημένες με ΤΝ.' not in job['caption']:
+              job['caption']=job['caption'].replace('\n\nΑν σας άρεσε', '\n\nΕικόνες δημιουργημένες με ΤΝ.\n\nΑν σας άρεσε')
+          out={'approved':True,'paid_generation_allowed':False,'active_metricool_brand_id':7076410,'production_status':'AUTHORIZED_REPAIR_2026-10-04_TRAVEL','jobs':[job]}
+          Path('/tmp/travel-manifest.json').write_text(json.dumps(out,ensure_ascii=False,indent=2),encoding='utf-8')
+          PY
+      - name: Render Nestoras exact final
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+        run: |
+          set -euo pipefail
+          python3 tools/render_azure_feature_batch.py --manifest /tmp/travel-manifest.json --output "$RUNNER_TEMP/final"
+      - name: Exact-final contact sheet and release gate
+        run: |
+          python3 - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          from PIL import Image,ImageOps
+          root=Path('/home/runner/work/_temp/final/current-ten-20261004-travel-nymfaio')
+          video=root/'current-ten-20261004-travel-nymfaio.mp4'
+          meta=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(video)],text=True))
+          dur=float(meta['format']['duration'])
+          if not (80 <= dur <= 180): raise SystemExit(f'duration failed: {dur}')
+          frames=[]
+          for i,x in enumerate((.06,.18,.30,.42,.56,.69,.82,.94),1):
+              p=root/f'qa-frame-{i:02d}.jpg'
+              subprocess.run(['ffmpeg','-y','-loglevel','error','-ss',f'{dur*x:.3f}','-i',str(video),'-frames:v','1','-q:v','2',str(p)],check=True)
+              frames.append(p)
+          cw,ch=270,480
+          canvas=Image.new('RGB',(cw*4,ch*2),(20,20,20))
+          for i,p in enumerate(frames):
+              with Image.open(p).convert('RGB') as im:
+                  canvas.paste(ImageOps.fit(im,(cw,ch),method=Image.Resampling.LANCZOS),((i%4)*cw,(i//4)*ch))
+          canvas.save(root/'final-contact-sheet.jpg',quality=94)
+          (root/'release-gate.txt').write_text('PENDING_DIRECT_VISUAL_AUDIO_REVIEW\n',encoding='utf-8')
+          PY
+      - name: Save QA output to media-output
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/out"
+          git fetch origin media-output --depth=1
+          git worktree add -b cten1004travel "$OUT" FETCH_HEAD
+          DEST="$OUT/jobs/current-ten-20261004-travel-nymfaio"
+          rm -rf "$DEST"
+          mkdir -p "$DEST"
+          cp -a "$RUNNER_TEMP/final/current-ten-20261004-travel-nymfaio"/. "$DEST"/
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/current-ten-20261004-travel-nymfaio
+          git -C "$OUT" commit -m 'Render 04 Oct Nymfaio travel catch-up'
+          git -C "$OUT" fetch origin media-output
+          git -C "$OUT" rebase FETCH_HEAD
+          git -C "$OUT" push origin HEAD:media-output
+      - uses: actions/upload-artifact@v4
+        with:
+          name: current-ten-20261004-travel-nymfaio
+          path: /home/runner/work/_temp/final/current-ten-20261004-travel-nymfaio/
+          retention-days: 3
