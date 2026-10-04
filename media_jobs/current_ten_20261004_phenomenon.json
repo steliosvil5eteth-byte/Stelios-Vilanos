@@ -46,5 +46,5 @@
     "AGU 2019: mauve arc and green picket fence arise from different processes",
     "ESA Swarm: fast-moving stream of extremely hot charged particles"
   ],
-  "production_note": "Repair retry 6: exact-final review found a standalone punctuation cue and one collage-style source; punctuation is reattached to the prior cue and the source query is replaced. No schedule/create attempted before renewed full QA."
+  "production_note": "Repair retry 7: restored the clean renderer after a fail-closed replacement escaping error; standalone punctuation is reattached and the collage-style source remains replaced. No schedule/create attempted before renewed full QA."
 }
