@@ -1,6 +1,6 @@
 {
   "current-ten-20260930-travel-pelion": {
-    "sha256": "e36867eb30363dafda28103e790081ebe10595d233bc4feff71b9b2332617bb0",
+    "sha256": "31137f4d3b980c5fc3606df98459b27e0d000bb8adfbf5501de3fe78f583b8ed",
     "duration_seconds": 97.333333,
     "resolution": [
       1080,
@@ -11,7 +11,7 @@
     "contact_sheet": "final-contact-sheet.jpg"
   },
   "current-ten-20260930-stones": {
-    "sha256": "75bd74565f71afe67993235916740a0d13d661cd9e2a9c6917f0aa58b623bf97",
+    "sha256": "ca85f087b6febd6400180904f2f8205dc894be7565f536098be2110375a4793d",
     "duration_seconds": 80.884,
     "resolution": [
       1080,
@@ -22,7 +22,7 @@
     "contact_sheet": "final-contact-sheet.jpg"
   },
   "current-ten-20260930-bystander": {
-    "sha256": "84f4350e98cf87f1ac24024c10305b5f63d7f9f6b268dde88afcc135652a82ea",
+    "sha256": "9bdcc288aacd2576fa6d18e9dbc4d2fde29b149ca3b6e5b8e4cc0edeb5bea95b",
     "duration_seconds": 88.666667,
     "resolution": [
       1080,
@@ -55,7 +55,7 @@
     "contact_sheet": "final-contact-sheet.jpg"
   },
   "current-ten-20260930-legend-headless-horseman": {
-    "sha256": "978728eb882836767a5c5237d4f8b83f870d4b2214ca25eea7dd59e06379198d",
+    "sha256": "a0b551e96d856530a9fdb7acfdf7e8b4098f095ea393967e66396d3d7e96a0ef",
     "duration_seconds": 104.333333,
     "resolution": [
       1080,
