@@ -1,0 +1,210 @@
+{
+  "approved": true,
+  "paid_generation_allowed": false,
+  "strategy_id": "CURRENT_TEN_DAILY_20260927",
+  "local_date": "2026-10-04",
+  "active_metricool_brand_id": 7076410,
+  "require_photographic_visuals": true,
+  "purpose": "2026-10-04 CURRENT_TEN_DAILY carousel batch after live Metricool + Notion + repository reconciliation. Publishing remains fail-closed pending exact-final QA.",
+  "jobs": [
+    {
+      "id": "ten-20261004-0700-relationships-listen-or-solve",
+      "expected_cards": 7,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΠΡΙΝ ΔΩΣΕΙΣ ΛΥΣΗ, ΚΑΝΕ ΜΙΑ ΕΡΩΤΗΣΗ — 1/7",
+          "text": "«Θέλεις να σε ακούσω ή θέλεις να το λύσουμε μαζί;» Μια μικρή ερώτηση αλλάζει ολόκληρη τη συζήτηση.",
+          "source_query": "couple talking at home photograph"
+        },
+        {
+          "title": "ΜΕΡΙΚΕΣ ΦΟΡΕΣ ΘΕΛΕΙ ΝΑ ΑΚΟΥΣΤΕΙ — 2/7",
+          "text": "Όταν ο άλλος είναι φορτισμένος, η πρώτη ανάγκη μπορεί να μην είναι η συμβουλή αλλά να νιώσει ότι τον καταλαβαίνεις.",
+          "source_query": "couple listening conversation living room photograph"
+        },
+        {
+          "title": "ΜΗΝ ΠΕΤΑΣ ΚΑΤΕΥΘΕΙΑΝ ΣΥΜΒΟΥΛΕΣ — 3/7",
+          "text": "Ακόμη και καλή πρόθεση μπορεί να ακουστεί σαν «σταμάτα να νιώθεις έτσι και κάνε αυτό».",
+          "source_query": "serious couple conversation kitchen table photograph"
+        },
+        {
+          "title": "ΑΝ ΘΕΛΕΙ ΝΑ ΜΙΛΗΣΕΙ, ΜΕΙΝΕ ΕΚΕΙ — 4/7",
+          "text": "Άκου χωρίς να διακόπτεις, χωρίς να μειώνεις αυτό που νιώθει και χωρίς να ετοιμάζεις την απάντησή σου πριν τελειώσει.",
+          "source_query": "couple listening closely photograph"
+        },
+        {
+          "title": "ΑΝ ΘΕΛΕΙ ΛΥΣΗ, ΔΩΣΤΕ ΤΗ ΜΑΖΙ — 5/7",
+          "text": "Πρότεινε επιλογές, όχι εντολές. Η λύση λειτουργεί καλύτερα όταν ανήκει και στους δύο.",
+          "source_query": "couple planning together notebook photograph"
+        },
+        {
+          "title": "ΠΕΣ ΤΙ ΚΑΤΑΛΑΒΕΣ — 6/7",
+          "text": "Ένα «αν κατάλαβα σωστά, αυτό σε πείραξε περισσότερο» μειώνει τις παρεξηγήσεις πριν μεγαλώσουν.",
+          "source_query": "couple calm discussion coffee table photograph"
+        },
+        {
+          "title": "ΕΣΥ ΤΙ ΧΡΕΙΑΖΕΣΑΙ ΠΡΩΤΑ; — 7/7",
+          "text": "Όταν είσαι φορτισμένος, προτιμάς να σε ακούσουν ή να ψάξετε αμέσως λύση;",
+          "source_query": "couple holding hands conversation photograph"
+        }
+      ]
+    },
+    {
+      "id": "ten-20261004-0900-survival-tsunami",
+      "expected_cards": 9,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΤΣΟΥΝΑΜΙ: ΜΗΝ ΠΕΡΙΜΕΝΕΙΣ ΠΑΝΤΑ ΣΕΙΡΗΝΑ — 1/9",
+          "text": "Αν βρίσκεσαι κοντά στην ακτή και νιώσεις πολύ ισχυρό ή παρατεταμένο σεισμό, αυτό μπορεί να είναι φυσική προειδοποίηση.",
+          "footer": "Γενικές οδηγίες ασφάλειας — ακολουθούμε πάντα τις τοπικές αρχές.",
+          "source_query": "coastal earthquake damage photograph"
+        },
+        {
+          "title": "ΔΕΣ ΤΗ ΘΑΛΑΣΣΑ, ΟΧΙ ΓΙΑ ΠΕΡΙΕΡΓΕΙΑ — 2/9",
+          "text": "Απότομη άνοδος ή υποχώρηση της στάθμης της θάλασσας είναι επίσης φυσικό προειδοποιητικό σημάδι.",
+          "source_query": "receding sea shoreline photograph"
+        },
+        {
+          "title": "ΕΝΑΣ ΠΑΡΑΞΕΝΟΣ ΔΥΝΑΤΟΣ ΒΟΜΒΟΣ — 3/9",
+          "text": "Ένας ασυνήθιστος βρυχηθμός από τη θάλασσα μπορεί να συνοδεύει την προσέγγιση κύματος.",
+          "source_query": "stormy sea large waves coast photograph"
+        },
+        {
+          "title": "ΑΝ ΥΠΑΡΧΕΙ ΦΥΣΙΚΗ ΠΡΟΕΙΔΟΠΟΙΗΣΗ, ΦΥΓΕ — 4/9",
+          "text": "Κινήσου αμέσως προς ψηλότερο έδαφος ή όσο πιο μέσα γίνεται. Μην περιμένεις επίσημη ειδοποίηση αν ο κίνδυνος είναι άμεσος.",
+          "source_query": "tsunami evacuation route sign photograph"
+        },
+        {
+          "title": "ΑΚΟΛΟΥΘΗΣΕ ΤΗΝ ΕΚΚΕΝΩΣΗ — 5/9",
+          "text": "Χρησιμοποίησε τις σημασμένες διαδρομές όπου υπάρχουν και ακολούθησε τις οδηγίες των τοπικών αρχών.",
+          "source_query": "evacuation route coastal town photograph"
+        },
+        {
+          "title": "ΜΗΝ ΠΑΣ ΣΤΗΝ ΑΚΤΗ ΝΑ ΤΟ ΔΕΙΣ — 6/9",
+          "text": "Μείνε μακριά από παραλίες, λιμάνια και υδάτινες οδούς μέχρι να δοθεί σαφές «όλα ασφαλή».",
+          "source_query": "closed beach warning waves photograph"
+        },
+        {
+          "title": "ΤΟ ΠΡΩΤΟ ΚΥΜΑ ΜΠΟΡΕΙ ΝΑ ΜΗΝ ΕΙΝΑΙ ΤΟ ΜΕΓΑΛΥΤΕΡΟ — 7/9",
+          "text": "Η επικίνδυνη δραστηριότητα μπορεί να συνεχιστεί για ώρες. Δεν επιστρέφουμε επειδή πέρασε ένα κύμα.",
+          "source_query": "tsunami waves harbor photograph"
+        },
+        {
+          "title": "ΑΚΟΥ ΤΙΣ ΕΠΙΣΗΜΕΣ ΕΙΔΟΠΟΙΗΣΕΙΣ — 8/9",
+          "text": "Warning, advisory και watch σημαίνουν διαφορετικό επίπεδο κινδύνου. Ακολούθησε το μήνυμα που ισχύει για την περιοχή σου.",
+          "source_query": "emergency alert mobile phone coastal photograph"
+        },
+        {
+          "title": "ΣΤΟ ΤΣΟΥΝΑΜΙ, Ο ΧΡΟΝΟΣ ΜΕΤΡΑΕΙ — 9/9",
+          "text": "Νιώσε, δες, άκου — και αν υπάρχουν φυσικά προειδοποιητικά σημάδια, απομακρύνσου άμεσα από την ακτή.",
+          "source_query": "high ground tsunami evacuation sign photograph"
+        }
+      ],
+      "research_sources": [
+        "https://www.weather.gov/safety/tsunami-alerts",
+        "https://tsunami.ioc.unesco.org/en/what-do"
+      ]
+    },
+    {
+      "id": "ten-20261004-1100-zodiac-proud-partner",
+      "expected_cards": 6,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΚΡΙΟΣ + ΠΑΡΘΕΝΟΣ — 1/6",
+          "text": "Ο Κριός καμαρώνει όταν βλέπει θάρρος και πρωτοβουλία· η Παρθένος όταν βλέπει συνέπεια, φροντίδα και πράξεις που έχουν νόημα.",
+          "source_query": "happy couple achievement photograph"
+        },
+        {
+          "title": "ΤΑΥΡΟΣ + ΖΥΓΟΣ — 2/6",
+          "text": "Ο Ταύρος νιώθει περηφάνια για σταθερότητα και αξιοπρέπεια· ο Ζυγός όταν ο σύντροφός του φέρεται με ευγένεια και ισορροπία.",
+          "source_query": "elegant couple together photograph"
+        },
+        {
+          "title": "ΔΙΔΥΜΟΙ + ΣΚΟΡΠΙΟΣ — 3/6",
+          "text": "Οι Δίδυμοι καμαρώνουν για εξυπνάδα και επικοινωνία· ο Σκορπιός για βάθος, αφοσίωση και δύναμη όταν τα πράγματα δυσκολεύουν.",
+          "source_query": "couple deep conversation photograph"
+        },
+        {
+          "title": "ΚΑΡΚΙΝΟΣ + ΤΟΞΟΤΗΣ — 4/6",
+          "text": "Ο Καρκίνος καμαρώνει για τη ζεστασιά και την πίστη· ο Τοξότης για την τόλμη, την ειλικρίνεια και το ανοιχτό μυαλό.",
+          "source_query": "couple outdoor adventure photograph"
+        },
+        {
+          "title": "ΛΕΩΝ + ΑΙΓΟΚΕΡΩΣ — 5/6",
+          "text": "Ο Λέων χαίρεται όταν ο άλλος λάμπει χωρίς να μικραίνει κανέναν· ο Αιγόκερως όταν βλέπει στόχο, υπευθυνότητα και αντοχή.",
+          "source_query": "successful couple city photograph"
+        },
+        {
+          "title": "ΥΔΡΟΧΟΟΣ + ΙΧΘΥΕΣ — 6/6",
+          "text": "Ο Υδροχόος καμαρώνει για ανεξαρτησία και ιδέες· οι Ιχθύες για καλοσύνη, ενσυναίσθηση και καρδιά.",
+          "source_query": "affectionate couple by sea photograph"
+        }
+      ],
+      "disclosure": "Ψυχαγωγικό αστρολογικό περιεχόμενο • Εικόνες AI/επεξεργασμένες όπου εφαρμόζεται"
+    },
+    {
+      "id": "ten-20261004-1500-love-door-height-lines",
+      "expected_cards": 5,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "ΠΡΙΝ ΠΑΡΑΔΩΣΟΥΝ ΤΑ ΚΛΕΙΔΙΑ, ΖΗΤΗΣΕ ΕΝΑ ΛΕΠΤΟ — 1/5",
+          "text": "Η μητέρα στάθηκε πίσω από την πόρτα του παλιού σπιτιού.",
+          "source_query": "mother daughter moving house doorway photograph"
+        },
+        {
+          "title": "ΕΚΕΙ ΥΠΗΡΧΑΝ ΑΚΟΜΗ ΟΙ ΜΟΛΥΒΙΕΣ — 2/5",
+          "text": "Το ύψος της κόρης της κάθε Σεπτέμβρη. Οι χρονολογίες γραμμένες στραβά.",
+          "source_query": "child height marks door frame photograph"
+        },
+        {
+          "title": "Η ΚΟΡΗ ΤΙΣ ΦΩΤΟΓΡΑΦΙΣΕ ΜΙΑ ΜΙΑ — 3/5",
+          "text": "Η μητέρα χαμογέλασε. «Δεν ήθελα να τις ξεχάσουμε».",
+          "source_query": "woman photographing old home wall photograph"
+        },
+        {
+          "title": "ΣΤΟ ΚΑΙΝΟΥΡΙΟ ΣΠΙΤΙ ΤΗΝ ΠΕΡΙΜΕΝΕ ΕΝΑ ΚΑΔΡΟ — 4/5",
+          "text": "Μέσα του, όλες οι γραμμές μαζί. Από την πρώτη μέχρι την τελευταία.",
+          "source_query": "framed family memory new home photograph"
+        },
+        {
+          "title": "ΑΛΛΑΞΑΝ ΔΙΕΥΘΥΝΣΗ, ΟΧΙ ΙΣΤΟΡΙΑ — 5/5",
+          "text": "Κάποιες ρίζες ταξιδεύουν μαζί μας. Ποιο μικρό σημάδι από ένα παλιό σπίτι θα κρατούσες;",
+          "source_query": "mother adult daughter unpacking new home photograph"
+        }
+      ]
+    },
+    {
+      "id": "ten-20261004-2000-myth-sugar-hyperactivity",
+      "expected_cards": 4,
+      "seconds_per_slide": 5,
+      "slides": [
+        {
+          "title": "Η ΖΑΧΑΡΗ ΚΑΝΕΙ ΤΑ ΠΑΙΔΙΑ ΥΠΕΡΚΙΝΗΤΙΚΑ; — 1/4",
+          "text": "Είναι από τους πιο γνωστούς διατροφικούς μύθους. Τι έδειξαν ελεγχόμενες μελέτες;",
+          "source_query": "children birthday party sweets photograph"
+        },
+        {
+          "title": "Η ΜΕΤΑ-ΑΝΑΛΥΣΗ ΔΕΝ ΒΡΗΚΕ ΣΤΑΘΕΡΟ ΑΠΟΤΕΛΕΣΜΑ — 2/4",
+          "text": "Ανασκόπηση 23 ελεγχόμενων μελετών δεν βρήκε ότι η ζάχαρη αλλάζει γενικά τη συμπεριφορά ή τη γνωστική απόδοση των παιδιών.",
+          "source_query": "children classroom activity photograph"
+        },
+        {
+          "title": "Η ΠΡΟΣΔΟΚΙΑ ΜΠΟΡΕΙ ΝΑ ΜΑΣ ΕΠΗΡΕΑΖΕΙ — 3/4",
+          "text": "Οι συγγραφείς σημείωσαν ότι η ισχυρή πεποίθηση των γονέων και οι συνθήκες όπου τρώγονται γλυκά μπορεί να επηρεάζουν την εντύπωση.",
+          "source_query": "parent child birthday cake photograph"
+        },
+        {
+          "title": "ΑΠΑΝΤΗΣΗ: ΜΥΘΟΣ ΩΣ ΓΕΝΙΚΟΣ ΚΑΝΟΝΑΣ — 4/4",
+          "text": "Αυτό δεν σημαίνει «όση ζάχαρη θέλουμε». Σημαίνει ότι η υπερκινητικότητα δεν εξηγείται απλά από ένα γλυκό. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+          "source_query": "healthy family meal child photograph"
+        }
+      ],
+      "research_sources": [
+        "https://pubmed.ncbi.nlm.nih.gov/7474248/"
+      ]
+    }
+  ]
+}
