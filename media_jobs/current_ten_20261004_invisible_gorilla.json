@@ -2,7 +2,7 @@
   "approved": true,
   "paid_generation_allowed": false,
   "active_metricool_brand_id": 7076410,
-  "production_status": "AUTHORIZED_CURRENT_TEN_2026-10-04_REPAIR_EXACT_SLOT",
+  "production_status": "AUTHORIZED_CURRENT_TEN_2026-10-04_REPAIR_APOSTROPHE_RERENDER",
   "jobs": [
     {
       "id": "current-ten-20261004-experiment-invisible-gorilla",
@@ -36,5 +36,8 @@
         "https://gsas.harvard.edu/news/paying-attention"
       ]
     }
+  ],
+  "qa_repairs": [
+    "Normalize Greek curly-apostrophe word boundaries in burned subtitles: παρ’ όλα / Γι’ αυτό"
   ]
 }
