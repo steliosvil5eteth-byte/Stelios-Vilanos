@@ -1,0 +1,37 @@
+{
+  "strategy": "CURRENT_TEN_DAILY_20260927",
+  "brand_id": 7076410,
+  "local_date": "2026-10-04",
+  "timezone": "Europe/Athens",
+  "slot": "20:00",
+  "category": "myth_or_truth",
+  "title": "Ο ταύρος εξοργίζεται με το κόκκινο;",
+  "format": "carousel",
+  "cards": 4,
+  "caption": "Ο ταύρος εξοργίζεται όταν βλέπει κόκκινο; Μύθος. Τα βοοειδή έχουν διχρωματική όραση: το κόκκινο δεν έχει τη μοναδική επίδραση που του αποδίδουμε. Η κίνηση του υφάσματος και η αντιληπτή απειλή είναι οι βασικοί παράγοντες αντίδρασης.\n\nΠηγές: Jacobs et al., Visual Neuroscience (1998)· Phillips & Lomas, Journal of Dairy Science (2001).\n\nΟι εικόνες δημιουργήθηκαν με ΤΝ για εκπαιδευτική απεικόνιση.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#ΜύθοςΉΑλήθεια #Ταύρος #Επιστήμη #Ζώα #Γνώση",
+  "sources": [
+    "https://pubmed.ncbi.nlm.nih.gov/9685209/",
+    "https://pubmed.ncbi.nlm.nih.gov/11352156/"
+  ],
+  "visuals": {
+    "type": "AI-generated photorealistic",
+    "distinct_scenes": 4,
+    "source_files": ["source/01.png", "source/02.png", "source/03.png", "source/04.png"]
+  },
+  "final_files": {
+    "facebook_instagram_tiktok": [
+      "final/card-01.jpg",
+      "final/card-02.jpg",
+      "final/card-03.jpg",
+      "final/card-04.jpg"
+    ],
+    "youtube": "final/youtube.mp4"
+  },
+  "platform_rules": {
+    "facebook": "native carousel",
+    "instagram": "native carousel",
+    "tiktok": "native photo carousel; autoAddMusic=true",
+    "youtube": "1080x1920 complete slideshow; one original instrumental layer"
+  },
+  "release_status": "PASSED_FINAL_REVIEW"
+}

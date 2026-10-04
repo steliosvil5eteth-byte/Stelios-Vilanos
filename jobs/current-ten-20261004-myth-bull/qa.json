@@ -1,0 +1,30 @@
+{
+  "status": "PASSED_FINAL_REVIEW",
+  "reviewed_at": "2026-10-04T19:05:00+03:00",
+  "checks": {
+    "correct_greek": true,
+    "hook_present": true,
+    "card_count": 4,
+    "card_order": [1, 2, 3, 4],
+    "distinct_scene_relevant_photorealistic_visuals": true,
+    "crop_and_readability": true,
+    "exact_cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+    "caption_present": true,
+    "hashtags": 5,
+    "ai_disclosure": true,
+    "facebook_instagram_native_carousel": true,
+    "tiktok_native_photo_auto_add_music": true,
+    "youtube_complete_vertical_slideshow": true,
+    "youtube_resolution": "1080x1920",
+    "youtube_duration_seconds": 20.0,
+    "youtube_audio_layers": 1,
+    "youtube_audio": "original synthesized instrumental"
+  },
+  "sha256": {
+    "card-01.jpg": "44d6680ef71ec3840b048b010f9ec1c9a9d2a176134c19a078b3889782077b0c",
+    "card-02.jpg": "23105ea473a3f19af0422ecd186034511b8b9ef106c02a1fc7abebe5ca015a77",
+    "card-03.jpg": "3b12b16c2b919cacfe6543e9ded2dad2cbda7daf5ff1393dca08fc768cd6ceb6",
+    "card-04.jpg": "24058b9213149dd074b670d859d539bcee8048ee63cca28c8cc99a12ccfee0d7",
+    "youtube.mp4": "9f53ec11ee30c75c20dc7b1afd9c2d82e3b9b87caf35929d4480e0d5da983b79"
+  }
+}
