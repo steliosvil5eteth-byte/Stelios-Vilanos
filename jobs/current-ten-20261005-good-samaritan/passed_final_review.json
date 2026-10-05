@@ -8,7 +8,7 @@
   "slot": "18:30",
   "category": "documented_experiments",
   "title": "Το πείραμα του Καλού Σαμαρείτη — πόσο αλλάζει η βιασύνη τη βοήθεια;",
-  "status": "PASSED_FINAL_REVIEW",
+  "status": "SCHEDULED_PENDING",
   "reviewed_at": "2026-10-05T16:50:00+03:00",
   "exact_final": {
     "url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/current-ten-20261005-good-samaritan/current-ten-20261005-good-samaritan.mp4",
@@ -49,6 +49,50 @@
     "metricool": true,
     "notion": true,
     "repository_history": true,
-    "duplicate_found": false
+    "duplicate_found": false,
+    "checked_before_update": "2026-10-05T16:59:00+03:00"
+  },
+  "qa_status": "PASSED_FINAL_REVIEW",
+  "scheduled_at": "2026-10-05T18:30:00+03:00",
+  "metricool": {
+    "brand_id": 7076410,
+    "publication_date": "2026-10-05T18:30:00+03:00",
+    "native": {
+      "id": 388573501,
+      "uuid": "-3874814584931532688",
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "provider_status": "PENDING",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-13201621891158633526.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true
+    },
+    "youtube": {
+      "id": 388574799,
+      "uuid": "842893094833374415",
+      "providers": [
+        "youtube"
+      ],
+      "provider_status": "PENDING",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-13278439295865969168.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true
+    },
+    "published": false,
+    "note": "PENDING is not Published."
+  },
+  "notion_archive": {
+    "id": "3f0f2345-b318-814c-8c56-d52d81f53945",
+    "url": "https://app.notion.com/p/3f0f2345b318814c8c56d52d81f53945?pvs=204",
+    "status": "Scheduled",
+    "approval_status": "Approved",
+    "approval_notes": "PASSED_FINAL_REVIEW"
   }
 }
