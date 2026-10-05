@@ -1,0 +1,100 @@
+{
+  "strategy": "CURRENT_TEN_DAILY_20260927",
+  "program_label": "CURRENT_TEN_DAILY",
+  "brand_id": 7076410,
+  "brand_name": "Ιστορίες που μας αγγίζουν",
+  "local_date": "2026-10-05",
+  "timezone": "Europe/Athens",
+  "slot": "09:00",
+  "category": "survival",
+  "title": "Ξαφνική πλημμύρα: 7 κινήσεις που σώζουν",
+  "production_job_id": "current-ten-20261005-survival-flood",
+  "release_status": "PASSED_FINAL_REVIEW",
+  "publish_status": "PENDING",
+  "logical_post_count": 1,
+  "destination_count": 4,
+  "cards": 9,
+  "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+  "hashtags": 5,
+  "ai_disclosure": true,
+  "final_qa": {
+    "greek": true,
+    "hook": true,
+    "card_order": true,
+    "distinct_photorealistic_visuals": true,
+    "crop_readability": true,
+    "caption": true,
+    "cta": true,
+    "ffmpeg_full_decode": true
+  },
+  "platform_rules": {
+    "facebook": "native carousel",
+    "instagram": "native carousel",
+    "tiktok": "native photo carousel; autoAddMusic=true",
+    "youtube": "1080x1920 complete 54s slideshow; one instrumental AAC track"
+  },
+  "metricool": [
+    {
+      "id": 388218268,
+      "uuid": "-5886575303659993918",
+      "draft": false,
+      "autoPublish": true,
+      "media_count": 9,
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "id": 388218530,
+      "uuid": "1623199791798043751",
+      "draft": false,
+      "autoPublish": true,
+      "media_count": 1,
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PENDING"
+        }
+      ]
+    }
+  ],
+  "checksums": {
+    "card_01.jpg": "b08c4e651b928984c8bd628e4693b5c4fc7e49678ef520f567bc6370e8a10f1a",
+    "card_02.jpg": "eed3141de5d6033e4ff12ef2a8302bc0111d311cbcd47b8c980b05fd7ebce27c",
+    "card_03.jpg": "a8dcb3c247229e6c53f8ce4569b3930e925a4712b8e0edf69a34804c30bc31b0",
+    "card_04.jpg": "15612f28cba6acd1ed33504db0aa2ba1c4d760d3d582b5703bf304a592e909ea",
+    "card_05.jpg": "9b9cc6ae703a2a8dc161d0dae8c1565a448c6cb3e7419de1e1ffb83c46be5359",
+    "card_06.jpg": "fb08b42ffe4286bcb6443b59546312b559b3d6aa29a9b009158b41185559be75",
+    "card_07.jpg": "69c1a945ddf9ac5626df95ad7ca65d826adf9f7df99136056533eff1de3892a9",
+    "card_08.jpg": "765b4ff9a8cf9253f27aa6ecc6d793e434d9f2a74a442f621cc01562784c6588",
+    "card_09.jpg": "a99ebd03c044d2a6e3bdc3297eefec5bd76a95994f4f2e6088860b88ea9071af",
+    "youtube_slideshow.mp4": "4d9cd82909f2a36796c2521365c86a545beae2e2aaeab649d486aa98b12b3284"
+  },
+  "dedupe": {
+    "metricool": true,
+    "notion": true,
+    "repository_history": true,
+    "checked_before_each_create_retry_update": true
+  },
+  "reconciliation": {
+    "checked_at_local": "2026-10-05T08:57:00+03:00",
+    "published_destinations": 0,
+    "failed": 0,
+    "blocked": 0,
+    "pending": 4
+  },
+  "notion_page": "https://app.notion.com/p/3f0f2345b31881be8c91c18c48d4c8db",
+  "assets_commit": "5eb5f866011e111ec0bb6669c2d4f9dc9d2a16a1",
+  "note": "Scheduled 4/4 after exact-final QA. PENDING is not Published."
+}
