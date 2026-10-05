@@ -1,0 +1,110 @@
+{
+  "schema_version": "1.0",
+  "program": "CURRENT_TEN_DAILY",
+  "legacy_programs_ignored": [
+    "CURRENT_FIVE",
+    "PARTIAL_SCHEDULED",
+    "old zodiac formats"
+  ],
+  "brand": {
+    "id": 7076410,
+    "name": "Ιστορίες που μας αγγίζουν",
+    "timezone": "Europe/Athens"
+  },
+  "baseline_slot": {
+    "date": "2026-10-05",
+    "time": "20:00",
+    "series": "myth_or_truth",
+    "logical_post_index": 9
+  },
+  "fingerprint": "myth_or_truth|2026-10-05|ostrich-head-in-sand|4cards",
+  "topic": "Μύθος ή Αλήθεια; Η στρουθοκάμηλος θάβει το κεφάλι της στην άμμο;",
+  "status": "SCHEDULED_PENDING",
+  "qa_status": "PASSED_FINAL_REVIEW",
+  "passed_final_review_at": "2026-10-05T17:16:00+03:00",
+  "exact_final_qa": {
+    "greek": true,
+    "hook": true,
+    "card_count": 4,
+    "card_order": [
+      "question",
+      "participation",
+      "evidence",
+      "answer"
+    ],
+    "distinct_scene_relevant_photorealistic_visuals": true,
+    "crop_readability": true,
+    "exact_cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+    "caption": true,
+    "hashtag_count": 4,
+    "ai_disclosure": true
+  },
+  "native_delivery": {
+    "networks": [
+      "facebook",
+      "instagram",
+      "tiktok"
+    ],
+    "metricool_id": 388597138,
+    "metricool_uuid": "-5090074550163913556",
+    "publication_date": "2026-10-05T20:00:00",
+    "timezone": "Europe/Athens",
+    "provider_statuses": {
+      "facebook": "PENDING",
+      "instagram": "PENDING",
+      "tiktok": "PENDING"
+    },
+    "media_count": 4,
+    "draft": false,
+    "autoPublish": true,
+    "facebook_type": "POST",
+    "instagram_type": "POST",
+    "tiktok_type": "native_photo",
+    "tiktok_autoAddMusic": true,
+    "tiktok_isAigc": true,
+    "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-5090074550163913556"
+  },
+  "youtube_delivery": {
+    "network": "youtube",
+    "metricool_id": 388597908,
+    "metricool_uuid": "-5426103825199643862",
+    "publication_date": "2026-10-05T20:00:00",
+    "timezone": "Europe/Athens",
+    "provider_status": "PENDING",
+    "media_count": 1,
+    "draft": false,
+    "autoPublish": true,
+    "type": "short",
+    "privacy": "public",
+    "category": "EDUCATION",
+    "full_vertical_slideshow": true,
+    "dimensions": "1080x1920",
+    "duration_seconds": 24,
+    "audio_layers": 1,
+    "audio": "permitted original synthesized instrumental",
+    "is_ai_generated_content": true,
+    "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-5426103825199643862"
+  },
+  "media_sha256": {
+    "01.jpg": "c68044a7459bda5c82e9e528c29496f4e2f59b54156a7ceeb170d19f4553c378",
+    "02.jpg": "546895b6ec66952f00efcf291cff9b9121f2139ce00e9a91e2164854bd897ec8",
+    "03.jpg": "695b9e08d0372ed50feb270161c305ce891224eedc1e30fc7a23b7c563c5c0fc",
+    "04.jpg": "ba68d7d87933f55e359780c763e94e20c4bf874cf8557b6b3863db03c52a84ab",
+    "youtube_slideshow.mp4": "be55407882631303e2c3bd4c8a6b98e5a260024a2dcf7d89c8f155f2662899cf"
+  },
+  "caption": "Η διάσημη εικόνα με τη στρουθοκάμηλο και το κεφάλι στην άμμο δεν περιγράφει την πραγματική συμπεριφορά της.\n\nΕικόνες δημιουργημένες με ΤΝ.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#ΜύθοςΉΑλήθεια #Στρουθοκάμηλος #Ζώα #Γνώση",
+  "sources": {
+    "canonical_notion_plan": "https://app.notion.com/p/3e2f2345b3188147b39ce4efe26977dd?pvs=204",
+    "notion_archive": "https://app.notion.com/p/3f0f2345b31881dea82ddabb9b081b27?pvs=204"
+  },
+  "reconciliation": {
+    "fresh_dedupe_before_native_create": true,
+    "fresh_dedupe_before_youtube_create": true,
+    "fresh_dedupe_before_notion_create": true,
+    "fresh_dedupe_before_repository_create": true,
+    "pending_is_not_published": true,
+    "no_backdate": true,
+    "no_replacement": true,
+    "no_duplicate": true
+  }
+}
