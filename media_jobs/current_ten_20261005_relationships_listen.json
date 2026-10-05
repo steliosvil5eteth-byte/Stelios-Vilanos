@@ -1,0 +1,79 @@
+{
+  "strategy": "CURRENT_TEN_DAILY_20260927",
+  "program_label": "CURRENT_TEN_DAILY",
+  "brand_id": 7076410,
+  "brand_name": "Ιστορίες που μας αγγίζουν",
+  "local_date": "2026-10-05",
+  "timezone": "Europe/Athens",
+  "slot": "07:00",
+  "category": "relationships",
+  "title": "Δεν ζητά πάντα λύση",
+  "production_job_id": "current-ten-20261005-relationships-listen",
+  "release_status": "PASSED_FINAL_REVIEW",
+  "logical_post_count": 1,
+  "destination_count": 4,
+  "caption": "Δεν ζητά πάντα λύση — μερικές φορές ζητά να ακουστεί.\n\nΜια σχέση αλλάζει όταν σταματάμε να ετοιμάζουμε απάντηση και αρχίζουμε να ακούμε πραγματικά.\n\nΟπτική σύνθεση με ΤΝ.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Σχέσεις #Επικοινωνία #Αγάπη #Ψυχολογία #Ζωή",
+  "cards": 7,
+  "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+  "hashtags": 5,
+  "ai_disclosure": true,
+  "final_qa": {
+    "greek": true,
+    "hook": true,
+    "card_order": true,
+    "distinct_photorealistic_visuals": true,
+    "crop_readability": true,
+    "caption": true,
+    "cta": true,
+    "ffmpeg_full_decode": true
+  },
+  "platform_rules": {
+    "facebook": "native carousel",
+    "instagram": "native carousel",
+    "tiktok": "native photo carousel; autoAddMusic=true",
+    "youtube": "1080x1920 complete 49s slideshow; one original instrumental audio track"
+  },
+  "metricool": [
+    {
+      "id": 388182461,
+      "uuid": "-4102388379650930328",
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "status": "PENDING",
+      "media_count": 7
+    },
+    {
+      "id": 388182766,
+      "uuid": "-2588817146339702352",
+      "providers": [
+        "youtube"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "status": "PENDING",
+      "media_count": 1
+    }
+  ],
+  "checksums": {
+    "card_01.jpg": "8af3b951c0401db2c5d536b3bce195e6d77ac3e1ae080fe0c9c4e379e6d84d71",
+    "card_02.jpg": "74751b14970dba4a8e2b53f4426741093f2e36c7267dbb119641078c278c771c",
+    "card_03.jpg": "2450235a664ba0b8eb88d727425b06fe8e9c00a21f81dd497cfbba509b006410",
+    "card_04.jpg": "c2ae4e7e63cc4572e31da02d8e3cc30bde4cb7ab306017f48e80ea83514ddb81",
+    "card_05.jpg": "48610088dbc0ca3567db7f6af9c24a6f21ce4621e6267ff0d2c8e5d8f127525e",
+    "card_06.jpg": "e4336b485eea926d5f611cf3cd9e705e07736ea8cbf427f8d8a71fca31fa2c42",
+    "card_07.jpg": "abd4c18a2efed1d5bebe02f5291d1a28ae805318548661f70cb38de2856bb590",
+    "youtube_slideshow.mp4": "5e7fd9268aca4844506d3dea4b8c3179cfa496ddc9a17d53e4762921a748aae4"
+  },
+  "dedupe": {
+    "metricool": true,
+    "notion": true,
+    "repository_history": true,
+    "checked_before_each_create": true
+  },
+  "note": "Scheduled-PENDING is not Published; provider outcome requires later reconciliation."
+}
