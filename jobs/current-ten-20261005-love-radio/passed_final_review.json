@@ -61,5 +61,49 @@
     "autoPublish": true
   },
   "canonical_notion_source": "https://app.notion.com/p/3e2f2345b3188194b242ea9bdf663e00",
-  "caption": "Μερικές φορές η αγάπη δεν φαίνεται σε κάτι καινούργιο, αλλά σε αυτό που κάποιος αρνείται να αφήσει να χαθεί.\n\nΠρωτότυπη μυθοπλασία. Εικόνες δημιουργημένες με ΤΝ.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Αγάπη #Ιστορία #Σχέσεις #Ψυχή"
+  "caption": "Μερικές φορές η αγάπη δεν φαίνεται σε κάτι καινούργιο, αλλά σε αυτό που κάποιος αρνείται να αφήσει να χαθεί.\n\nΠρωτότυπη μυθοπλασία. Εικόνες δημιουργημένες με ΤΝ.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Αγάπη #Ιστορία #Σχέσεις #Ψυχή",
+  "metricool": [
+    {
+      "id": 388468308,
+      "uuid": "-1177454770144523510",
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "status": [
+        "PENDING",
+        "PENDING",
+        "PENDING"
+      ],
+      "media_count": 5,
+      "draft": false,
+      "autoPublish": true,
+      "tiktok_autoAddMusic": true
+    },
+    {
+      "id": 388468737,
+      "uuid": "6366919343407056978",
+      "providers": [
+        "youtube"
+      ],
+      "status": [
+        "PENDING"
+      ],
+      "media_count": 1,
+      "draft": false,
+      "autoPublish": true
+    }
+  ],
+  "notion_archive": {
+    "page_id": "3f0f2345-b318-8176-af5c-f34f94694af2",
+    "url": "https://app.notion.com/p/3f0f2345b3188176af5cf34f94694af2?pvs=204",
+    "status": "Scheduled"
+  },
+  "reconciliation": {
+    "live_readback_at": "2026-10-05T14:53:00+03:00",
+    "pending_is_not_published": true,
+    "destination_count": 4,
+    "duplicate_records": false
+  }
 }
