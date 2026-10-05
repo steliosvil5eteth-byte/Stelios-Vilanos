@@ -6,7 +6,7 @@
   "slot": "22:00",
   "baseline_series": "international_legend",
   "title": "Ο θρύλος λέει… Pontianak",
-  "status": "SCHEDULED_PENDING",
+  "status": "PUBLISHED",
   "fingerprint": "international_legend|2026-10-05|pontianak|narrated",
   "exact_final": {
     "media_sha256": "ce32b412d631f36d7325b1707f77c8913cddd875a9c90cc7a89c920361f9db96",
@@ -70,18 +70,24 @@
         "providers": [
           {
             "network": "facebook",
-            "status": "PENDING",
-            "detailedStatus": "Pending"
+            "id": "3411793045693896",
+            "status": "PUBLISHED",
+            "publicUrl": "https://facebook.com/reel/3411793045693896",
+            "detailedStatus": "Published"
           },
           {
             "network": "instagram",
-            "status": "PENDING",
-            "detailedStatus": "Pending"
+            "id": "https://www.instagram.com/reel/DeH6pjwietD/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/DeH6pjwietD/",
+            "detailedStatus": "Published"
           },
           {
             "network": "tiktok",
-            "status": "PENDING",
-            "detailedStatus": "Pending"
+            "id": "7693261825990921504",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7693261825990921504",
+            "detailedStatus": "Published"
           }
         ],
         "media": [
@@ -95,8 +101,10 @@
         "providers": [
           {
             "network": "youtube",
-            "status": "PENDING",
-            "detailedStatus": "Pending"
+            "id": "Grm-deX6avg",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/watch?v=Grm-deX6avg",
+            "detailedStatus": "Published"
           }
         ],
         "media": [
@@ -104,12 +112,12 @@
         ],
         "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=7643415587896969464"
       },
-      "reconciliation_note": "Live readback confirmed PENDING 4/4. PENDING is not Published."
+      "reconciliation_note": "Live readback confirmed PUBLISHED 4/4: Facebook, Instagram, TikTok and YouTube. draft=false; autoPublish=true."
     },
     "notion_page": {
       "id": "3f0f2345-b318-81dc-9489-e1b63fd7910a",
       "url": "https://app.notion.com/p/3f0f2345b31881dc9489e1b63fd7910a?pvs=204",
-      "status": "Scheduled",
+      "status": "Published",
       "delivery_coverage": "Complete"
     }
   },
@@ -122,5 +130,6 @@
     "duplicate_created": false,
     "paid_credits_used": false
   },
-  "last_live_readback_utc": "2026-10-05T15:33:14Z"
+  "last_live_readback_utc": "2026-10-05T19:30:00Z",
+  "published_at": "2026-10-05T22:00:00+03:00"
 }
