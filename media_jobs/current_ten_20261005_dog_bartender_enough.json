@@ -1,0 +1,97 @@
+{
+  "strategy": "CURRENT_TEN_DAILY_20260927",
+  "program_label": "CURRENT_TEN_DAILY",
+  "brand_id": 7076410,
+  "brand_name": "Ιστορίες που μας αγγίζουν",
+  "local_date": "2026-10-05",
+  "timezone": "Europe/Athens",
+  "slot": "10:00",
+  "category": "dog_bartender",
+  "title": "Σκύλος Μπάρμαν: Απόψε, φτάνει",
+  "production_job_id": "current-ten-20261005-dog-bartender-enough",
+  "release_status": "PASSED_FINAL_REVIEW",
+  "publish_status": "PENDING",
+  "logical_post_count": 1,
+  "destination_count": 4,
+  "cards": 4,
+  "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+  "hashtags": 5,
+  "ai_disclosure": true,
+  "final_qa": {
+    "greek": true,
+    "hook": true,
+    "card_order": true,
+    "same_photorealistic_brown_dog": true,
+    "dog_bartender_each_card": true,
+    "distinct_compositions": true,
+    "crop_readability": true,
+    "caption": true,
+    "cta": true,
+    "ffmpeg_full_decode": true
+  },
+  "platform_rules": {
+    "facebook": "native carousel",
+    "instagram": "native carousel",
+    "tiktok": "native photo carousel; autoAddMusic=true",
+    "youtube": "1080x1920 complete 28s slideshow; one instrumental AAC track"
+  },
+  "metricool": [
+    {
+      "id": 388218957,
+      "uuid": "4038916168033587032",
+      "draft": false,
+      "autoPublish": true,
+      "media_count": 4,
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING"
+        }
+      ]
+    },
+    {
+      "id": 388219276,
+      "uuid": "-6373816010784881277",
+      "draft": false,
+      "autoPublish": true,
+      "media_count": 1,
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PENDING"
+        }
+      ]
+    }
+  ],
+  "checksums": {
+    "card_01.jpg": "355459dbbe11604e9922abf389b8028c79916a067c83f7ae2ca18bb6671d9728",
+    "card_02.jpg": "585ed7f5824b0f7d676ac3d24156d3aabbdf2bc6404d96c2ad3af57885bb2fcd",
+    "card_03.jpg": "8a8632425b7463e43cd88f8f93214ef3c3827958a7e4eb2c7a4a9d158b12ba7a",
+    "card_04.jpg": "3e52de6a45a2a9f27358edc3ecdfbf1b14f08ae5d8e04cdde2bfd0fff5951fa2",
+    "youtube_slideshow.mp4": "81798d6846ab7d2c46fe4b924b4c684cbc39be4f1dbedf5a5d957a9789183f5e"
+  },
+  "dedupe": {
+    "metricool": true,
+    "notion": true,
+    "repository_history": true,
+    "checked_before_each_create_retry_update": true
+  },
+  "reconciliation": {
+    "checked_at_local": "2026-10-05T08:58:00+03:00",
+    "published_destinations": 0,
+    "failed": 0,
+    "blocked": 0,
+    "pending": 4
+  },
+  "notion_page": "https://app.notion.com/p/3f0f2345b31881fb9bedce5fc6276fed",
+  "assets_commit": "5eb5f866011e111ec0bb6669c2d4f9dc9d2a16a1",
+  "note": "Scheduled 4/4 after exact-final QA. PENDING is not Published."
+}
