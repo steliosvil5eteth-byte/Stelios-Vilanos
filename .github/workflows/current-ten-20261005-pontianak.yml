@@ -1,0 +1,139 @@
+name: Current Ten 20261005 Pontianak repair
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/current-ten-20261005-pontianak.yml'
+      - 'media_jobs/current_ten_20261005_pontianak.json'
+      - 'media_jobs/assets/current-ten-20261005-pontianak/**'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: current-ten-20261005-pontianak
+  cancel-in-progress: false
+jobs:
+  render:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install media tools
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python3 -m pip install --disable-pip-version-check --no-input pillow requests azure-cognitiveservices-speech
+      - name: Decode reviewed visual bundle
+        run: |
+          mkdir -p "$RUNNER_TEMP/reviewed"
+          cat media_jobs/assets/current-ten-20261005-pontianak/assets.b64.part* | base64 -d > "$RUNNER_TEMP/assets.tar.gz"
+          tar -xzf "$RUNNER_TEMP/assets.tar.gz" -C "$RUNNER_TEMP/reviewed"
+          test "$(find "$RUNNER_TEMP/reviewed" -name '*.jpg' | wc -l)" -eq 15
+      - name: Render Nestoras exact final
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import hashlib, json, os, re, shutil, sys
+          from pathlib import Path
+          sys.path.insert(0,'tools')
+          import render_azure_feature_batch as r
+          src=json.loads(Path('media_jobs/current_ten_20261005_pontianak.json').read_text(encoding='utf-8'))
+          job=src['jobs'][0]
+          root=Path(os.environ['RUNNER_TEMP'])/'final'/job['id']
+          photos=root/'photos'; photos.mkdir(parents=True,exist_ok=True)
+          assets=sorted((Path(os.environ['RUNNER_TEMP'])/'reviewed').glob('*.jpg'))
+          if len(assets)!=15: raise SystemExit(f'need exactly 15 reviewed scenes, found {len(assets)}')
+          hashes=[hashlib.sha256(p.read_bytes()).hexdigest() for p in assets]
+          if len(set(hashes))!=15: raise SystemExit('duplicate scene source')
+          for i,p in enumerate(assets,1): shutil.copy2(p,photos/f'{i:02d}.jpg')
+          records=[{'file':p.name,'source':'OpenAI built-in image generation','visual_kind':'photorealistic generated folklore scene','ai_generated':True,'sha256':h} for p,h in zip(assets,hashes)]
+          (root/'visual-attribution.json').write_text(json.dumps(records,ensure_ascii=False,indent=2),encoding='utf-8')
+          (root/'final-caption.txt').write_text(job['caption'],encoding='utf-8')
+          wav,bounds,dur=r.synthesize(job['script'],root,job['min_duration_seconds'],job['max_duration_seconds'])
+          (root/'speech-meta.json').write_text(json.dumps({'voice':r.VOICE,'duration_seconds':round(dur,3),'background_music':False,'word_boundaries':len(bounds)},ensure_ascii=False,indent=2),encoding='utf-8')
+          srt=root/'subs.srt'
+          cap_count=r.subtitles(bounds,dur,srt)
+          raw=srt.read_text(encoding='utf-8')
+          cues=[]
+          for block in raw.strip().split('\n\n'):
+              lines=block.splitlines()
+              if len(lines)<3: continue
+              text=' '.join(lines[2:]).strip()
+              text=re.sub(r'\s+([,.;:!?·])', r'\1', text)
+              cues.append([lines[1],text])
+          clean=[]
+          for timing,text in cues:
+              if text and text[0] in ',.;:!?·' and clean:
+                  clean[-1][1]+=text[0]; text=text[1:].lstrip()
+              if text: clean.append([timing,text])
+          rows=[]
+          for number,(timing,text) in enumerate(clean,1):
+              words=text.split(); wrapped=[]; row=''
+              for word in words:
+                  candidate=word if not row else row+' '+word
+                  if row and len(candidate)>31: wrapped.append(row); row=word
+                  else: row=candidate
+              if row: wrapped.append(row)
+              if len(wrapped)>2:
+                  mid=max(1,len(words)//2); wrapped=[' '.join(words[:mid]),' '.join(words[mid:])]
+              rows += [str(number),timing]+wrapped[:2]+['']
+          rendered='\n'.join(rows)
+          if re.search(r'\s+[,.;:!?·]', rendered) or re.search(r'(?:^|\n)[,.;:!?·]', rendered):
+              raise SystemExit('subtitle punctuation normalization failed')
+          srt.write_text(rendered,encoding='utf-8')
+          video=root/(job['id']+'.mp4')
+          r.make_video(job,photos,wav,srt,dur,video)
+          result=r.qa(job,video,dur,len(records),cap_count)
+          result.update({'generated_visuals':True,'distinct_scene_sources':15,'caption_ai_disclosure':True,'release_gate':'PENDING_DIRECT_VISUAL_AUDIO_REVIEW'})
+          (root/'qa.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf-8')
+          print(json.dumps(result,ensure_ascii=False,indent=2))
+          PY
+      - name: Build exact-final contact sheet
+        run: |
+          python3 - <<'PY'
+          import json, subprocess
+          from pathlib import Path
+          from PIL import Image,ImageOps
+          root=Path('/home/runner/work/_temp/final/current-ten-20261005-pontianak')
+          video=root/'current-ten-20261005-pontianak.mp4'
+          meta=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(video)],text=True))
+          dur=float(meta['format']['duration'])
+          if dur < 80: raise SystemExit(f'duration failed: {dur}')
+          frames=[]
+          for i,x in enumerate((.04,.14,.24,.34,.44,.54,.64,.74,.84,.94),1):
+              p=root/f'qa-frame-{i:02d}.jpg'
+              subprocess.run(['ffmpeg','-y','-loglevel','error','-ss',f'{dur*x:.3f}','-i',str(video),'-frames:v','1','-q:v','2',str(p)],check=True)
+              frames.append(p)
+          cw,ch=216,384
+          canvas=Image.new('RGB',(cw*5,ch*2),(20,20,20))
+          for i,p in enumerate(frames):
+              with Image.open(p).convert('RGB') as im:
+                  canvas.paste(ImageOps.fit(im,(cw,ch),method=Image.Resampling.LANCZOS),((i%5)*cw,(i//5)*ch))
+          canvas.save(root/'final-contact-sheet.jpg',quality=94)
+          (root/'release-gate.txt').write_text('PENDING_DIRECT_VISUAL_AUDIO_REVIEW\n',encoding='utf-8')
+          PY
+      - name: Save QA output to media-output
+        run: |
+          set -euo pipefail
+          OUT="$RUNNER_TEMP/out"
+          git fetch origin media-output --depth=1
+          git worktree add -b cten1005pontianak "$OUT" FETCH_HEAD
+          DEST="$OUT/jobs/current-ten-20261005-pontianak"
+          rm -rf "$DEST"
+          mkdir -p "$DEST"
+          cp -a "$RUNNER_TEMP/final/current-ten-20261005-pontianak"/. "$DEST"/
+          git -C "$OUT" config user.name 'github-actions[bot]'
+          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git -C "$OUT" add jobs/current-ten-20261005-pontianak
+          git -C "$OUT" commit -m 'Render 05 Oct Pontianak legend repair'
+          git -C "$OUT" fetch origin media-output
+          git -C "$OUT" rebase FETCH_HEAD
+          git -C "$OUT" push origin HEAD:media-output
+      - uses: actions/upload-artifact@v4
+        with:
+          name: current-ten-20261005-pontianak
+          path: /home/runner/work/_temp/final/current-ten-20261005-pontianak/
+          retention-days: 3
