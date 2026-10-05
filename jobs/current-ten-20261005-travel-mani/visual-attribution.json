@@ -1,0 +1,58 @@
+[
+  {
+    "file": "01.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scene",
+    "ai_generated": true,
+    "sha256": "7acf038a714a3f1c2900158f0948d1283585ab369c6cb32639b0ee3e909ee9c8"
+  },
+  {
+    "file": "02.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scene",
+    "ai_generated": true,
+    "sha256": "f4960c526745f7018239084841ef59b8945b35b5eace858361f18f0a63b180f0"
+  },
+  {
+    "file": "03.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scene",
+    "ai_generated": true,
+    "sha256": "a184ea24876cdbc2528efdb7015d7f47318b94fe3934f0642a6626eb69db4673"
+  },
+  {
+    "file": "04.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scene",
+    "ai_generated": true,
+    "sha256": "38920b5e92e4c76ab1e6f2f73fa8467126c9f34da685858f14ce11ca0c368af9"
+  },
+  {
+    "file": "05.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scene",
+    "ai_generated": true,
+    "sha256": "b9b0761fe8f6c645d253f059cd51df5d22c00e78ed7c059a1337a54b0777226c"
+  },
+  {
+    "file": "06.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scene",
+    "ai_generated": true,
+    "sha256": "7eb4ec8460e54d6311327f316c0d7f16bc1adb822b2415c0aa2c881b74b3d6d3"
+  },
+  {
+    "file": "07.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scene",
+    "ai_generated": true,
+    "sha256": "ec1a76810c00f40a47a5b9b8830209f255515fdba53e69bd54eef2a22cec2e35"
+  },
+  {
+    "file": "08.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scene",
+    "ai_generated": true,
+    "sha256": "2fd44d5505f83f3a9301f562c0374fc098a9a1f3ab21131a2068ddc8ea52ff70"
+  }
+]
