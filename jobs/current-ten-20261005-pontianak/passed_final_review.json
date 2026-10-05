@@ -6,7 +6,7 @@
   "slot": "22:00",
   "baseline_series": "international_legend",
   "title": "Ο θρύλος λέει… Pontianak",
-  "status": "PASSED_FINAL_REVIEW",
+  "status": "SCHEDULED_PENDING",
   "fingerprint": "international_legend|2026-10-05|pontianak|narrated",
   "exact_final": {
     "media_sha256": "ce32b412d631f36d7325b1707f77c8913cddd875a9c90cc7a89c920361f9db96",
@@ -34,6 +34,19 @@
       "evidence": "Caption and burned subtitles explicitly identify Pontianak/Kuntilanak as folklore, not a proven supernatural event; three research sources pinned below."
     }
   },
+  "metricool_upload": {
+    "file_name": "current-ten-20261005-pontianak-metricool.mp4",
+    "media_sha256": "15ee01dc4836f93134b6f23a359c389c17420dbe53b348aaca56d467fb56d6a2",
+    "contact_sheet_sha256": "50173855deacc800574fa7c55dbcae6b2b856f09afa129221e148b46049bd9d1",
+    "size_bytes": 16871459,
+    "resolution": "1080x1920",
+    "duration_seconds": 110,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_channels": 1,
+    "direct_visual_review": "PASSED",
+    "technical_audio_review": "PASSED"
+  },
   "caption": "Η Pontianak δεν είναι μία ενιαία ιστορία αλλά μια μορφή λαογραφίας που αλλάζει ανάμεσα σε τόπους, αφηγητές και εποχές.\n\nΕικόνες δημιουργημένες με ΤΝ.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Pontianak #Kuntilanak #Λαογραφία #Θρύλοι",
   "research": [
     "https://doi.org/10.1163/22134379-17601001",
@@ -44,7 +57,70 @@
     "workflow_run": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/actions/runs/37327681522",
     "output_branch": "media-output",
     "output_path": "jobs/current-ten-20261005-pontianak",
-    "metricool": null,
-    "notion_page": null
-  }
+    "metricool": {
+      "publication_date": {
+        "dateTime": "2026-10-05T22:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "draft": false,
+      "autoPublish": true,
+      "native": {
+        "id": 388668146,
+        "uuid": "1320572306850991091",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-12636600666030430535.mp4"
+        ],
+        "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=1320572306850991091"
+      },
+      "youtube": {
+        "id": 388662612,
+        "uuid": "7643415587896969464",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-10585904296128997716.mp4"
+        ],
+        "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=7643415587896969464"
+      },
+      "reconciliation_note": "Live readback confirmed PENDING 4/4. PENDING is not Published."
+    },
+    "notion_page": {
+      "id": "3f0f2345-b318-81dc-9489-e1b63fd7910a",
+      "url": "https://app.notion.com/p/3f0f2345b31881dc9489e1b63fd7910a?pvs=204",
+      "status": "Scheduled",
+      "delivery_coverage": "Complete"
+    }
+  },
+  "guards": {
+    "fresh_dedupe_before_metricool_create": true,
+    "fresh_dedupe_before_notion_create": true,
+    "fresh_dedupe_before_repository_update": true,
+    "backdated": false,
+    "replaced_other_slot": false,
+    "duplicate_created": false,
+    "paid_credits_used": false
+  },
+  "last_live_readback_utc": "2026-10-05T15:33:14Z"
 }
