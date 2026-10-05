@@ -8,8 +8,10 @@
   "slot": "17:00",
   "category": "strange_real_phenomenon",
   "title": "Fata Morgana — όταν ένα πλοίο φαίνεται να αιωρείται",
-  "status": "PASSED_FINAL_REVIEW",
+  "status": "SCHEDULED_PENDING",
+  "qa_status": "PASSED_FINAL_REVIEW",
   "reviewed_at": "2026-10-05T16:05:00+03:00",
+  "scheduled_at": "2026-10-05T17:00:00+03:00",
   "exact_final": {
     "url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/current-ten-20261005-fata-morgana/current-ten-20261005-fata-morgana.mp4",
     "sha256": "f4ac26e7af7cc63e3bdb7b55720404fd4de65cbf3fdef4e9f9c689cfbf3a61ea",
@@ -40,11 +42,43 @@
     "paid_generation_used": false
   },
   "caption": "Ένα πραγματικό πλοίο μπορεί να μοιάζει σαν να αιωρείται επειδή η ατμόσφαιρα αλλάζει τη διαδρομή του φωτός.\n\nΕικόνες δημιουργημένες με ΤΝ.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#FataMorgana #ΑτμοσφαιρικήΟπτική #ΠαράξεναΦαινόμενα #Επιστήμη",
+  "metricool": {
+    "brand_id": 7076410,
+    "publication_date": "2026-10-05T17:00:00+03:00",
+    "native": {
+      "id": 388530463,
+      "uuid": "-5286989492189051988",
+      "providers": ["facebook", "instagram", "tiktok"],
+      "provider_status": "PENDING",
+      "media": ["https://static.metricool.com/planner/202610/7000636-file-14090914220655977448.mp4"],
+      "draft": false,
+      "autoPublish": true
+    },
+    "youtube": {
+      "id": 388531704,
+      "uuid": "4461383753196323697",
+      "providers": ["youtube"],
+      "provider_status": "PENDING",
+      "media": ["https://static.metricool.com/planner/202610/7000636-file-7082655477899057437.mp4"],
+      "draft": false,
+      "autoPublish": true
+    },
+    "published": false,
+    "note": "PENDING is not Published."
+  },
+  "notion_archive": {
+    "id": "3f0f2345-b318-81ea-976f-c11bd371b840",
+    "url": "https://app.notion.com/p/3f0f2345b31881ea976fc11bd371b840?pvs=204",
+    "status": "Scheduled",
+    "approval_status": "Approved",
+    "approval_notes": "PASSED_FINAL_REVIEW"
+  },
   "source_page": "https://app.notion.com/p/3e2f2345b31881ffbeade034d9405e75?pvs=204",
   "dedupe": {
     "metricool": true,
     "notion": true,
     "repository_history": true,
-    "duplicate_found": false
+    "duplicate_found": false,
+    "checked_before_update": "2026-10-05T16:14:00+03:00"
   }
 }
