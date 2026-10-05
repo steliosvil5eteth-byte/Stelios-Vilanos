@@ -39,5 +39,49 @@
     "paid_generation_used": false
   },
   "source_workflow_run_id": 37293123748,
-  "source_commit": "7a568802200aa0e02082b3bb9b89dc688bf5c280"
+  "source_commit": "7a568802200aa0e02082b3bb9b89dc688bf5c280",
+  "reconciliation": {
+    "reconciled_at": "2026-10-05T13:22:00+03:00",
+    "original_slot": "13:00",
+    "catch_up_slot": "13:30",
+    "missed_slot_reason": "Baseline post was absent from Metricool, Notion, and repository/history at the original slot.",
+    "schedule_guard": "CLEAR",
+    "backdated": false,
+    "metricool_brand_id": 7076410,
+    "metricool": [
+      {
+        "id": 388395919,
+        "uuid": "1621288120407116770",
+        "providers": [
+          "facebook",
+          "instagram",
+          "tiktok"
+        ],
+        "statuses": [
+          "PENDING",
+          "PENDING",
+          "PENDING"
+        ],
+        "draft": false,
+        "autoPublish": true,
+        "media": "https://static.metricool.com/planner/202610/7000636-file-545195659406740730.mp4"
+      },
+      {
+        "id": 388399272,
+        "uuid": "4604034861555732112",
+        "providers": [
+          "youtube"
+        ],
+        "statuses": [
+          "PENDING"
+        ],
+        "draft": false,
+        "autoPublish": true,
+        "media": "https://static.metricool.com/planner/202610/7000636-file-17974032185933184323.mp4"
+      }
+    ],
+    "provider_completion": "4/4 scheduled; PENDING is not Published",
+    "notion_archive_page_id": "3f0f2345-b318-8127-b324-d660edec97b9",
+    "notion_archive_url": "https://app.notion.com/p/3f0f2345b3188127b324d660edec97b9?pvs=204"
+  }
 }
