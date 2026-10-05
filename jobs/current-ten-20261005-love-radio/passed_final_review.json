@@ -66,15 +66,26 @@
     {
       "id": 388468308,
       "uuid": "-1177454770144523510",
+      "publicationDate": "2026-10-05T15:00:00+03:00",
       "providers": [
-        "facebook",
-        "instagram",
-        "tiktok"
-      ],
-      "status": [
-        "PENDING",
-        "PENDING",
-        "PENDING"
+        {
+          "network": "facebook",
+          "id": "1355373017651242_122116271673477192",
+          "status": "PUBLISHED",
+          "publicUrl": "https://facebook.com/122101951509477192/posts/122116271673477192"
+        },
+        {
+          "network": "instagram",
+          "id": "https://www.instagram.com/p/DeHKjbwoDri/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/p/DeHKjbwoDri/"
+        },
+        {
+          "network": "tiktok",
+          "id": "7693153202258201888",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7693153202258201888"
+        }
       ],
       "media_count": 5,
       "draft": false,
@@ -84,11 +95,14 @@
     {
       "id": 388468737,
       "uuid": "6366919343407056978",
+      "publicationDate": "2026-10-05T15:00:00+03:00",
       "providers": [
-        "youtube"
-      ],
-      "status": [
-        "PENDING"
+        {
+          "network": "youtube",
+          "id": "LSr2TNyVVjk",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.youtube.com/shorts/LSr2TNyVVjk"
+        }
       ],
       "media_count": 1,
       "draft": false,
@@ -98,12 +112,15 @@
   "notion_archive": {
     "page_id": "3f0f2345-b318-8176-af5c-f34f94694af2",
     "url": "https://app.notion.com/p/3f0f2345b3188176af5cf34f94694af2?pvs=204",
-    "status": "Scheduled"
+    "status": "Published"
   },
   "reconciliation": {
-    "live_readback_at": "2026-10-05T14:53:00+03:00",
+    "live_readback_at": "2026-10-05T15:04:00+03:00",
     "pending_is_not_published": true,
+    "publication_status": "PUBLISHED_4_OF_4",
     "destination_count": 4,
-    "duplicate_records": false
-  }
+    "duplicate_records": false,
+    "metricool_notion_repository_reconciled": true
+  },
+  "publication_status": "PUBLISHED_4_OF_4"
 }
