@@ -19,7 +19,7 @@
   },
   "fingerprint": "myth_or_truth|2026-10-05|ostrich-head-in-sand|4cards",
   "topic": "Μύθος ή Αλήθεια; Η στρουθοκάμηλος θάβει το κεφάλι της στην άμμο;",
-  "status": "SCHEDULED_PENDING",
+  "status": "PUBLISHED",
   "qa_status": "PASSED_FINAL_REVIEW",
   "passed_final_review_at": "2026-10-05T17:16:00+03:00",
   "exact_final_qa": {
@@ -50,9 +50,9 @@
     "publication_date": "2026-10-05T20:00:00",
     "timezone": "Europe/Athens",
     "provider_statuses": {
-      "facebook": "PENDING",
-      "instagram": "PENDING",
-      "tiktok": "PENDING"
+      "facebook": "PUBLISHED",
+      "instagram": "PUBLISHED",
+      "tiktok": "PUBLISHED"
     },
     "media_count": 4,
     "draft": false,
@@ -62,7 +62,30 @@
     "tiktok_type": "native_photo",
     "tiktok_autoAddMusic": true,
     "tiktok_isAigc": true,
-    "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-5090074550163913556"
+    "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-5090074550163913556",
+    "provider_results": [
+      {
+        "network": "facebook",
+        "id": "1355373017651242_122116412157477192",
+        "status": "PUBLISHED",
+        "publicUrl": "https://facebook.com/122101951509477192/posts/122116412157477192",
+        "detailedStatus": "Published"
+      },
+      {
+        "network": "instagram",
+        "id": "https://www.instagram.com/p/DeHtFqaCf0N/",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.instagram.com/p/DeHtFqaCf0N/",
+        "detailedStatus": "Published"
+      },
+      {
+        "network": "tiktok",
+        "id": "7693231031238888736",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7693231031238888736",
+        "detailedStatus": "Published"
+      }
+    ]
   },
   "youtube_delivery": {
     "network": "youtube",
@@ -70,7 +93,7 @@
     "metricool_uuid": "-5426103825199643862",
     "publication_date": "2026-10-05T20:00:00",
     "timezone": "Europe/Athens",
-    "provider_status": "PENDING",
+    "provider_status": "PUBLISHED",
     "media_count": 1,
     "draft": false,
     "autoPublish": true,
@@ -83,7 +106,16 @@
     "audio_layers": 1,
     "audio": "permitted original synthesized instrumental",
     "is_ai_generated_content": true,
-    "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-5426103825199643862"
+    "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-5426103825199643862",
+    "provider_results": [
+      {
+        "network": "youtube",
+        "id": "5h4MPRNSpgU",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.youtube.com/shorts/5h4MPRNSpgU",
+        "detailedStatus": "Published"
+      }
+    ]
   },
   "media_sha256": {
     "01.jpg": "c68044a7459bda5c82e9e528c29496f4e2f59b54156a7ceeb170d19f4553c378",
@@ -105,6 +137,12 @@
     "pending_is_not_published": true,
     "no_backdate": true,
     "no_replacement": true,
-    "no_duplicate": true
-  }
+    "no_duplicate": true,
+    "published_4of4_verified": true,
+    "public_urls_verified": true,
+    "fresh_dedupe_before_repository_update": true,
+    "no_retry": true
+  },
+  "published_at": "2026-10-05T20:00:00+03:00",
+  "last_live_readback": "2026-10-05T20:30:00+03:00"
 }
