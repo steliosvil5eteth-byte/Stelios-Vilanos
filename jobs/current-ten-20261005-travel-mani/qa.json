@@ -1,0 +1,43 @@
+{
+  "status": "PASSED_FINAL_REVIEW",
+  "reviewed_at": "2026-10-05T13:08:05+03:00",
+  "brand_id": 7076410,
+  "local_date": "2026-10-05",
+  "original_slot": "13:00",
+  "category": "greece_two_day_trip",
+  "title": "Διήμερο στη Μάνη — Αρεόπολη, Λιμένι και Σπήλαια Διρού",
+  "exact_final": {
+    "file": "current-ten-20261005-travel-mani.mp4",
+    "sha256": "1e50cf388f008afbd3da749a3d59b871c0002eb950f3ac8e5adb2eef45390f71",
+    "media_output_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/current-ten-20261005-travel-mani/current-ten-20261005-travel-mani.mp4",
+    "resolution": "1080x1920",
+    "duration_seconds": 84.734,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_streams": 1,
+    "audio_channels": 1,
+    "voice": "el-GR-NestorasNeural",
+    "background_music": false,
+    "avatar_presenter": false,
+    "burned_synced_greek_subtitles": true,
+    "subtitle_cues": 48,
+    "dead_air_gt_1_2s": false,
+    "trailing_silence_gt_0_5s": false
+  },
+  "content_checks": {
+    "correct_greek": true,
+    "hook_present": true,
+    "scene_count": 8,
+    "scene_order_reviewed": true,
+    "distinct_scene_relevant_photorealistic_visuals": true,
+    "crop_and_readability": true,
+    "cta_exact": true,
+    "caption_present": true,
+    "hashtag_count": 5,
+    "ai_disclosure": true,
+    "rights_verified": true,
+    "paid_generation_used": false
+  },
+  "source_workflow_run_id": 37293123748,
+  "source_commit": "7a568802200aa0e02082b3bb9b89dc688bf5c280"
+}
