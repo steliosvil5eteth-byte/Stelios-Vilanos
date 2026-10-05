@@ -1,0 +1,107 @@
+[
+  {
+    "file": "01.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scientific scene",
+    "ai_generated": true,
+    "sha256": "86d2a7916e6e6e8515aa7dfcd1e8350bb5083e434ba6f620b95cc44d136765a6"
+  },
+  {
+    "file": "02.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scientific scene",
+    "ai_generated": true,
+    "sha256": "70c22c6d3621c85beed755a60388c09e74060e37e55d839a95cb4d95aad96f07"
+  },
+  {
+    "file": "03.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scientific scene",
+    "ai_generated": true,
+    "sha256": "e1b5bc928b2d7aa7731bbe3263328c08e4c9dc6e0326678bc354b8f9844ec3ad"
+  },
+  {
+    "file": "04.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scientific scene",
+    "ai_generated": true,
+    "sha256": "b1f26fd47eac893d870d71e489eaca12e071c301bbc451757af38f47149c882c"
+  },
+  {
+    "file": "05.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scientific scene",
+    "ai_generated": true,
+    "sha256": "35884b7c2af9322f30ec0cc0917354506ad50704a06b32fe07e1320f76cb3629"
+  },
+  {
+    "file": "06.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scientific scene",
+    "ai_generated": true,
+    "sha256": "d672ee567bcc55bda2c12417a32640db17c0ba84fd54dd82c664018b9dcf9928"
+  },
+  {
+    "file": "07.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scientific scene",
+    "ai_generated": true,
+    "sha256": "741babd1c04721be7319b085ca07ce0068cdef67435728b5e5b01838c8a672fa"
+  },
+  {
+    "file": "08.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scientific scene",
+    "ai_generated": true,
+    "sha256": "54c4f87c47e5b47c03b010cf5da029b657d6e268cc635cbe8db1e42f0b0a7334"
+  },
+  {
+    "file": "09.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scientific scene",
+    "ai_generated": true,
+    "sha256": "ac5fd313d0a3f90ae5dd246b5298db0368c50cb2468197f350e0bf403d8b0b17"
+  },
+  {
+    "file": "10.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scientific scene",
+    "ai_generated": true,
+    "sha256": "bbec3e50b6740c317b52a348aafe325c8395cb822da722bf45391537bc2393fe"
+  },
+  {
+    "file": "11.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scientific scene",
+    "ai_generated": true,
+    "sha256": "c2b7a95f2efbadf532f2dba0e84e15443f204d2fc3726a4f509aecea453b565e"
+  },
+  {
+    "file": "12.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scientific scene",
+    "ai_generated": true,
+    "sha256": "1c5e99aab368c507a01d0bba77666542c94d607de66dd8d6ef361079c8c3f0a3"
+  },
+  {
+    "file": "13.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scientific scene",
+    "ai_generated": true,
+    "sha256": "4f9093cf8ceee9130f58004d7b944c2d770cc116812a2c588f8c659e12c1b129"
+  },
+  {
+    "file": "14.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scientific scene",
+    "ai_generated": true,
+    "sha256": "bbb32b6bf36d1e50ca626aa265a352baa3feee7d11a391cb525c2dbfc6b00f5d"
+  },
+  {
+    "file": "15.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated scientific scene",
+    "ai_generated": true,
+    "sha256": "a2727f2de81df40511a8511d972837f10e6385a2d12f3e1fd9f434dfd5af7d8c"
+  }
+]
