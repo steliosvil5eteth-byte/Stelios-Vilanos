@@ -1,0 +1,50 @@
+{
+  "schema": "current-ten-passed-final-review/v1",
+  "job_id": "current-ten-20261005-pontianak",
+  "local_date": "2026-10-05",
+  "timezone": "Europe/Athens",
+  "slot": "22:00",
+  "baseline_series": "international_legend",
+  "title": "Ο θρύλος λέει… Pontianak",
+  "status": "PASSED_FINAL_REVIEW",
+  "fingerprint": "international_legend|2026-10-05|pontianak|narrated",
+  "exact_final": {
+    "media_sha256": "ce32b412d631f36d7325b1707f77c8913cddd875a9c90cc7a89c920361f9db96",
+    "contact_sheet_sha256": "a2fd81bf2e9b0fa79c16e26d308a896297ce00eb57066390338990621b57b5e5",
+    "resolution": "1080x1920",
+    "duration_seconds": 110,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_channels": 1,
+    "voice": "el-GR-NestorasNeural",
+    "subtitle_cues": 59,
+    "burned_synced_greek_subtitles": true,
+    "background_music": false,
+    "avatar_presenter": false,
+    "distinct_scene_sources": 15,
+    "generated_visuals": true,
+    "caption_ai_disclosure": true,
+    "exact_cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+    "paid_generation_used": false,
+    "direct_visual_review": "PASSED",
+    "technical_audio_review": "PASSED",
+    "manual_semantic_overrides": {
+      "source_pack_pinned": true,
+      "folklore_not_fact": true,
+      "evidence": "Caption and burned subtitles explicitly identify Pontianak/Kuntilanak as folklore, not a proven supernatural event; three research sources pinned below."
+    }
+  },
+  "caption": "Η Pontianak δεν είναι μία ενιαία ιστορία αλλά μια μορφή λαογραφίας που αλλάζει ανάμεσα σε τόπους, αφηγητές και εποχές.\n\nΕικόνες δημιουργημένες με ΤΝ.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Pontianak #Kuntilanak #Λαογραφία #Θρύλοι",
+  "research": [
+    "https://doi.org/10.1163/22134379-17601001",
+    "https://www.tandfonline.com/doi/full/10.1080/15505340.2010.504408",
+    "https://cup.columbia.edu/book/alluring-monsters/9780231201339/"
+  ],
+  "production": {
+    "workflow_run": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/actions/runs/37327681522",
+    "output_branch": "media-output",
+    "output_path": "jobs/current-ten-20261005-pontianak",
+    "metricool": null,
+    "notion_page": null
+  }
+}
