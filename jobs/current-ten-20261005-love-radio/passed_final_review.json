@@ -1,0 +1,65 @@
+{
+  "job_id": "current-ten-20261005-love-radio",
+  "program": "CURRENT_TEN_DAILY",
+  "brand_id": 7076410,
+  "brand_name": "Ιστορίες που μας αγγίζουν",
+  "timezone": "Europe/Athens",
+  "local_date": "2026-10-05",
+  "original_slot": "15:00",
+  "category": "love_soul_relationship",
+  "title": "Το ραδιόφωνο που δεν πέταξε",
+  "status": "PASSED_FINAL_REVIEW",
+  "reviewed_at": "2026-10-05T14:48:00+03:00",
+  "format": {
+    "facebook": "native_carousel_5",
+    "instagram": "native_carousel_5",
+    "tiktok": "native_photo_5_autoAddMusic_true",
+    "youtube": "vertical_slideshow_1080x1920_45s_one_original_instrumental_layer"
+  },
+  "cards": [
+    {
+      "file": "card_01.jpg",
+      "sha256": "aadc4145b1026cae28493bd057f1d90d36fbe2f524541de1d98bf470c577998c"
+    },
+    {
+      "file": "card_02.jpg",
+      "sha256": "faa8256d4ff7e5496feab93eee940c485e13a752e1905e56c5af323af6f49234"
+    },
+    {
+      "file": "card_03.jpg",
+      "sha256": "4cc34c30b4228ac3b081221d3c50ea570bafd126f7d7cccb3966a664c3524bae"
+    },
+    {
+      "file": "card_04.jpg",
+      "sha256": "5dbf8abf493b0545c6e7da7903e3c385788df277d2078323d2de8f25a17d2a52"
+    },
+    {
+      "file": "card_05.jpg",
+      "sha256": "58af00fe286fd22f03e690c57f5b57dbf8a4a195c76abb1da60a521b8f3a5427"
+    }
+  ],
+  "youtube": {
+    "file": "youtube_slideshow.mp4",
+    "sha256": "c627ddd343e53b8bd8c1a2697027af93831888744c71702b760070e9433511e8",
+    "resolution": "1080x1920",
+    "duration_seconds": 45,
+    "audio_streams": 1
+  },
+  "checks": {
+    "correct_greek": true,
+    "hook_present": true,
+    "card_count": 5,
+    "card_order_reviewed": true,
+    "distinct_scene_relevant_photorealistic_visuals": true,
+    "character_continuity": true,
+    "crop_readability": true,
+    "cta_exact": true,
+    "caption_present": true,
+    "hashtags": 4,
+    "ai_disclosure": true,
+    "draft": false,
+    "autoPublish": true
+  },
+  "canonical_notion_source": "https://app.notion.com/p/3e2f2345b3188194b242ea9bdf663e00",
+  "caption": "Μερικές φορές η αγάπη δεν φαίνεται σε κάτι καινούργιο, αλλά σε αυτό που κάποιος αρνείται να αφήσει να χαθεί.\n\nΠρωτότυπη μυθοπλασία. Εικόνες δημιουργημένες με ΤΝ.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Αγάπη #Ιστορία #Σχέσεις #Ψυχή"
+}
