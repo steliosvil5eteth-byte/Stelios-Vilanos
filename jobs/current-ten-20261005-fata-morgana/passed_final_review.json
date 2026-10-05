@@ -1,0 +1,50 @@
+{
+  "job_id": "current-ten-20261005-fata-morgana",
+  "program": "CURRENT_TEN_DAILY",
+  "brand_id": 7076410,
+  "brand_name": "Ιστορίες που μας αγγίζουν",
+  "timezone": "Europe/Athens",
+  "local_date": "2026-10-05",
+  "slot": "17:00",
+  "category": "strange_real_phenomenon",
+  "title": "Fata Morgana — όταν ένα πλοίο φαίνεται να αιωρείται",
+  "status": "PASSED_FINAL_REVIEW",
+  "reviewed_at": "2026-10-05T16:05:00+03:00",
+  "exact_final": {
+    "url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/current-ten-20261005-fata-morgana/current-ten-20261005-fata-morgana.mp4",
+    "sha256": "f4ac26e7af7cc63e3bdb7b55720404fd4de65cbf3fdef4e9f9c689cfbf3a61ea",
+    "resolution": "1080x1920",
+    "duration_seconds": 104.5,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_streams": 1,
+    "audio_channels": 1,
+    "voice": "el-GR-NestorasNeural",
+    "subtitle_cues": 58,
+    "background_music": false,
+    "avatar_presenter": false,
+    "distinct_photorealistic_scenes": 15
+  },
+  "checks": {
+    "correct_greek": true,
+    "hook_present": true,
+    "visual_relevance": true,
+    "crop_readability": true,
+    "burned_synced_greek_subtitles": true,
+    "cta_exact": true,
+    "caption_present": true,
+    "hashtags": 4,
+    "ai_disclosure": true,
+    "draft": false,
+    "autoPublish": true,
+    "paid_generation_used": false
+  },
+  "caption": "Ένα πραγματικό πλοίο μπορεί να μοιάζει σαν να αιωρείται επειδή η ατμόσφαιρα αλλάζει τη διαδρομή του φωτός.\n\nΕικόνες δημιουργημένες με ΤΝ.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#FataMorgana #ΑτμοσφαιρικήΟπτική #ΠαράξεναΦαινόμενα #Επιστήμη",
+  "source_page": "https://app.notion.com/p/3e2f2345b31881ffbeade034d9405e75?pvs=204",
+  "dedupe": {
+    "metricool": true,
+    "notion": true,
+    "repository_history": true,
+    "duplicate_found": false
+  }
+}
