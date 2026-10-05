@@ -53,14 +53,24 @@
         "id": 388395919,
         "uuid": "1621288120407116770",
         "providers": [
-          "facebook",
-          "instagram",
-          "tiktok"
-        ],
-        "statuses": [
-          "PENDING",
-          "PENDING",
-          "PENDING"
+          {
+            "network": "facebook",
+            "id": "3321654424889292",
+            "status": "PUBLISHED",
+            "public_url": "https://facebook.com/reel/3321654424889292"
+          },
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/DeHAMe2CbAv/",
+            "status": "PUBLISHED",
+            "public_url": "https://www.instagram.com/reel/DeHAMe2CbAv/"
+          },
+          {
+            "network": "tiktok",
+            "id": "7693130143518215457",
+            "status": "PUBLISHED",
+            "public_url": "https://www.tiktok.com/@steliosvilanos/video/7693130143518215457"
+          }
         ],
         "draft": false,
         "autoPublish": true,
@@ -70,18 +80,21 @@
         "id": 388399272,
         "uuid": "4604034861555732112",
         "providers": [
-          "youtube"
-        ],
-        "statuses": [
-          "PENDING"
+          {
+            "network": "youtube",
+            "id": "0-4GwbztRtA",
+            "status": "PUBLISHED",
+            "public_url": "https://www.youtube.com/watch?v=0-4GwbztRtA"
+          }
         ],
         "draft": false,
         "autoPublish": true,
         "media": "https://static.metricool.com/planner/202610/7000636-file-17974032185933184323.mp4"
       }
     ],
-    "provider_completion": "4/4 scheduled; PENDING is not Published",
+    "provider_completion": "4/4 PUBLISHED with public IDs and URLs",
     "notion_archive_page_id": "3f0f2345-b318-8127-b324-d660edec97b9",
-    "notion_archive_url": "https://app.notion.com/p/3f0f2345b3188127b324d660edec97b9?pvs=204"
+    "notion_archive_url": "https://app.notion.com/p/3f0f2345b3188127b324d660edec97b9?pvs=204",
+    "publish_reconciled_at": "2026-10-05T13:37:00+03:00"
   }
 }
