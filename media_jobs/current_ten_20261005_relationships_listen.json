@@ -10,6 +10,7 @@
   "title": "Δεν ζητά πάντα λύση",
   "production_job_id": "current-ten-20261005-relationships-listen",
   "release_status": "PASSED_FINAL_REVIEW",
+  "publish_status": "PUBLISHED",
   "logical_post_count": 1,
   "destination_count": 4,
   "caption": "Δεν ζητά πάντα λύση — μερικές φορές ζητά να ακουστεί.\n\nΜια σχέση αλλάζει όταν σταματάμε να ετοιμάζουμε απάντηση και αρχίζουμε να ακούμε πραγματικά.\n\nΟπτική σύνθεση με ΤΝ.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Σχέσεις #Επικοινωνία #Αγάπη #Ψυχολογία #Ζωή",
@@ -37,26 +38,44 @@
     {
       "id": 388182461,
       "uuid": "-4102388379650930328",
-      "providers": [
-        "facebook",
-        "instagram",
-        "tiktok"
-      ],
       "draft": false,
       "autoPublish": true,
-      "status": "PENDING",
-      "media_count": 7
+      "media_count": 7,
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PUBLISHED",
+          "id": "1355373017651242_122116056669477192",
+          "public_url": "https://facebook.com/122101951509477192/posts/122116056669477192"
+        },
+        {
+          "network": "instagram",
+          "status": "PUBLISHED",
+          "id": "https://www.instagram.com/p/DeGTkw8CC8W/",
+          "public_url": "https://www.instagram.com/p/DeGTkw8CC8W/"
+        },
+        {
+          "network": "tiktok",
+          "status": "PUBLISHED",
+          "id": "7693029349750082849",
+          "public_url": "https://www.tiktok.com/@steliosvilanos/video/7693029349750082849"
+        }
+      ]
     },
     {
       "id": 388182766,
       "uuid": "-2588817146339702352",
-      "providers": [
-        "youtube"
-      ],
       "draft": false,
       "autoPublish": true,
-      "status": "PENDING",
-      "media_count": 1
+      "media_count": 1,
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PUBLISHED",
+          "id": "6CXMH9qdhCU",
+          "public_url": "https://www.youtube.com/shorts/6CXMH9qdhCU"
+        }
+      ]
     }
   ],
   "checksums": {
@@ -65,7 +84,7 @@
     "card_03.jpg": "2450235a664ba0b8eb88d727425b06fe8e9c00a21f81dd497cfbba509b006410",
     "card_04.jpg": "c2ae4e7e63cc4572e31da02d8e3cc30bde4cb7ab306017f48e80ea83514ddb81",
     "card_05.jpg": "48610088dbc0ca3567db7f6af9c24a6f21ce4621e6267ff0d2c8e5d8f127525e",
-    "card_06.jpg": "e4336b485eea926d5f611cf3cd9e705e07736ea8cbf427f8d8a71fca31fa2c42",
+    "card_06.jpg": "e4336b485eea926d5f611cf3cd9e705e07736ea8cbf427f8d8a71fca2c42",
     "card_07.jpg": "abd4c18a2efed1d5bebe02f5291d1a28ae805318548661f70cb38de2856bb590",
     "youtube_slideshow.mp4": "5e7fd9268aca4844506d3dea4b8c3179cfa496ddc9a17d53e4762921a748aae4"
   },
@@ -73,7 +92,14 @@
     "metricool": true,
     "notion": true,
     "repository_history": true,
-    "checked_before_each_create": true
+    "checked_before_each_create_retry_update": true
   },
-  "note": "Scheduled-PENDING is not Published; provider outcome requires later reconciliation."
+  "reconciliation": {
+    "checked_at_local": "2026-10-05T07:31:00+03:00",
+    "published_destinations": 4,
+    "failed": 0,
+    "blocked": 0,
+    "pending": 0
+  },
+  "note": "Provider-confirmed Published 4/4. No retry, backdate, conflict or duplicate."
 }
