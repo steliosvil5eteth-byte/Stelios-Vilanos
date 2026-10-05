@@ -8,7 +8,7 @@
   "slot": "18:30",
   "category": "documented_experiments",
   "title": "Το πείραμα του Καλού Σαμαρείτη — πόσο αλλάζει η βιασύνη τη βοήθεια;",
-  "status": "SCHEDULED_PENDING",
+  "status": "PUBLISHED",
   "reviewed_at": "2026-10-05T16:50:00+03:00",
   "exact_final": {
     "url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/current-ten-20261005-good-samaritan/current-ten-20261005-good-samaritan.mp4",
@@ -50,7 +50,7 @@
     "notion": true,
     "repository_history": true,
     "duplicate_found": false,
-    "checked_before_update": "2026-10-05T16:59:00+03:00"
+    "checked_before_update": "2026-10-05T18:38:00+03:00"
   },
   "qa_status": "PASSED_FINAL_REVIEW",
   "scheduled_at": "2026-10-05T18:30:00+03:00",
@@ -65,12 +65,35 @@
         "instagram",
         "tiktok"
       ],
-      "provider_status": "PENDING",
+      "provider_status": "PUBLISHED",
       "media": [
         "https://static.metricool.com/planner/202610/7000636-file-13201621891158633526.mp4"
       ],
       "draft": false,
-      "autoPublish": true
+      "autoPublish": true,
+      "provider_results": [
+        {
+          "network": "facebook",
+          "id": "1089347530574709",
+          "status": "PUBLISHED",
+          "publicUrl": "https://facebook.com/reel/1089347530574709",
+          "detailedStatus": "Published"
+        },
+        {
+          "network": "instagram",
+          "id": "https://www.instagram.com/reel/DeHieuvjnfE/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/DeHieuvjnfE/",
+          "detailedStatus": "Published"
+        },
+        {
+          "network": "tiktok",
+          "id": "7693207441055452448",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7693207441055452448",
+          "detailedStatus": "Published"
+        }
+      ]
     },
     "youtube": {
       "id": 388574799,
@@ -78,21 +101,33 @@
       "providers": [
         "youtube"
       ],
-      "provider_status": "PENDING",
+      "provider_status": "PUBLISHED",
       "media": [
         "https://static.metricool.com/planner/202610/7000636-file-13278439295865969168.mp4"
       ],
       "draft": false,
-      "autoPublish": true
+      "autoPublish": true,
+      "provider_results": [
+        {
+          "network": "youtube",
+          "id": "6UESb4PbSwU",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.youtube.com/watch?v=6UESb4PbSwU",
+          "detailedStatus": "Published"
+        }
+      ]
     },
-    "published": false,
-    "note": "PENDING is not Published."
+    "published": true,
+    "note": "Live Metricool readback confirmed PUBLISHED 4/4; provider IDs and public URLs verified."
   },
   "notion_archive": {
     "id": "3f0f2345-b318-814c-8c56-d52d81f53945",
     "url": "https://app.notion.com/p/3f0f2345b318814c8c56d52d81f53945?pvs=204",
-    "status": "Scheduled",
+    "status": "Published",
     "approval_status": "Approved",
-    "approval_notes": "PASSED_FINAL_REVIEW"
-  }
+    "approval_notes": "PASSED_FINAL_REVIEW",
+    "delivery_coverage": "Complete"
+  },
+  "published_at": "2026-10-05T18:30:00+03:00",
+  "last_live_readback": "2026-10-05T18:38:00+03:00"
 }
