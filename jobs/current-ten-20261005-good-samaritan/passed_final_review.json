@@ -1,0 +1,54 @@
+{
+  "job_id": "current-ten-20261005-good-samaritan",
+  "program": "CURRENT_TEN_DAILY",
+  "brand_id": 7076410,
+  "brand_name": "Ιστορίες που μας αγγίζουν",
+  "timezone": "Europe/Athens",
+  "local_date": "2026-10-05",
+  "slot": "18:30",
+  "category": "documented_experiments",
+  "title": "Το πείραμα του Καλού Σαμαρείτη — πόσο αλλάζει η βιασύνη τη βοήθεια;",
+  "status": "PASSED_FINAL_REVIEW",
+  "reviewed_at": "2026-10-05T16:50:00+03:00",
+  "exact_final": {
+    "url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/media-output/jobs/current-ten-20261005-good-samaritan/current-ten-20261005-good-samaritan.mp4",
+    "sha256": "9edd27d811a0d06690c1ec621010a91961407c7cdbcf7e5a7546349a308b6387",
+    "resolution": "1080x1920",
+    "duration_seconds": 117.5,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_streams": 1,
+    "audio_channels": 1,
+    "voice": "el-GR-NestorasNeural",
+    "subtitle_cues": 62,
+    "background_music": false,
+    "avatar_presenter": false,
+    "distinct_photorealistic_scenes": 15
+  },
+  "checks": {
+    "correct_greek": true,
+    "hook_present": true,
+    "scientific_caveats_present": true,
+    "visual_relevance": true,
+    "crop_readability": true,
+    "burned_synced_greek_subtitles": true,
+    "cta_exact": true,
+    "caption_present": true,
+    "hashtags": 4,
+    "ai_disclosure": true,
+    "draft": false,
+    "autoPublish": true,
+    "paid_generation_used": false
+  },
+  "caption": "Μπορεί η πίεση χρόνου να επηρεάσει αν θα σταματήσουμε να βοηθήσουμε; Μια κλασική μελέτη του 1973 έδειξε μια εντυπωσιακή συσχέτιση — με σημαντικούς περιορισμούς.\n\nΕικόνες αναπαράστασης δημιουργημένες με ΤΝ.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#ΚοινωνικήΨυχολογία #Πείραμα #Βοήθεια #Επιστήμη",
+  "research_urls": [
+    "https://greatergood.berkeley.edu/images/uploads/Darley-JersualemJericho.pdf",
+    "https://doi.org/10.1037/h0034449"
+  ],
+  "dedupe": {
+    "metricool": true,
+    "notion": true,
+    "repository_history": true,
+    "duplicate_found": false
+  }
+}
