@@ -28,7 +28,7 @@
       ],
       "original_slot": "13:00",
       "catch_up_slot": "13:30",
-      "schedule_status": "SCHEDULED_PENDING",
+      "schedule_status": "PUBLISHED",
       "scheduled_at": "2026-10-05T13:30:00+03:00",
       "backdated": false,
       "metricool_readback": [
@@ -36,11 +36,25 @@
           "id": 388395919,
           "uuid": "1621288120407116770",
           "providers": [
-            "facebook",
-            "instagram",
-            "tiktok"
+            {
+              "network": "facebook",
+              "id": "3321654424889292",
+              "status": "PUBLISHED",
+              "public_url": "https://facebook.com/reel/3321654424889292"
+            },
+            {
+              "network": "instagram",
+              "id": "https://www.instagram.com/reel/DeHAMe2CbAv/",
+              "status": "PUBLISHED",
+              "public_url": "https://www.instagram.com/reel/DeHAMe2CbAv/"
+            },
+            {
+              "network": "tiktok",
+              "id": "7693130143518215457",
+              "status": "PUBLISHED",
+              "public_url": "https://www.tiktok.com/@steliosvilanos/video/7693130143518215457"
+            }
           ],
-          "status": "PENDING",
           "draft": false,
           "autoPublish": true
         },
@@ -48,9 +62,13 @@
           "id": 388399272,
           "uuid": "4604034861555732112",
           "providers": [
-            "youtube"
+            {
+              "network": "youtube",
+              "id": "0-4GwbztRtA",
+              "status": "PUBLISHED",
+              "public_url": "https://www.youtube.com/watch?v=0-4GwbztRtA"
+            }
           ],
-          "status": "PENDING",
           "draft": false,
           "autoPublish": true
         }
@@ -59,7 +77,9 @@
         "page_id": "3f0f2345-b318-8127-b324-d660edec97b9",
         "url": "https://app.notion.com/p/3f0f2345b3188127b324d660edec97b9?pvs=204"
       },
-      "reconciliation_commit": "3c22b7ab8d4421fc171220e940eeac889f758e69"
+      "reconciliation_commit": "be148e15ec4c50fa063f169ffc05afd3759a636a",
+      "publish_reconciled_at": "2026-10-05T13:37:00+03:00",
+      "provider_completion": "4/4 PUBLISHED"
     }
   ]
 }
