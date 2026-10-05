@@ -10,7 +10,7 @@
   "title": "Σκύλος Μπάρμαν: Απόψε, φτάνει",
   "production_job_id": "current-ten-20261005-dog-bartender-enough",
   "release_status": "PASSED_FINAL_REVIEW",
-  "publish_status": "PENDING",
+  "publish_status": "PUBLISHED",
   "logical_post_count": 1,
   "destination_count": 4,
   "cards": 4,
@@ -45,15 +45,21 @@
       "providers": [
         {
           "network": "facebook",
-          "status": "PENDING"
+          "id": "1355373017651242_122116142769477192",
+          "status": "PUBLISHED",
+          "publicUrl": "https://facebook.com/122101951509477192/posts/122116142769477192"
         },
         {
           "network": "instagram",
-          "status": "PENDING"
+          "id": "https://www.instagram.com/p/DeGoSeFiLRx/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/p/DeGoSeFiLRx/"
         },
         {
           "network": "tiktok",
-          "status": "PENDING"
+          "id": "7693076083519835424",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7693076083519835424"
         }
       ]
     },
@@ -66,7 +72,9 @@
       "providers": [
         {
           "network": "youtube",
-          "status": "PENDING"
+          "id": "ZJuTxjGbXnY",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.youtube.com/shorts/ZJuTxjGbXnY"
         }
       ]
     }
@@ -85,13 +93,13 @@
     "checked_before_each_create_retry_update": true
   },
   "reconciliation": {
-    "checked_at_local": "2026-10-05T08:58:00+03:00",
-    "published_destinations": 0,
+    "checked_at_local": "2026-10-05T11:15:00+03:00",
+    "published_destinations": 4,
     "failed": 0,
     "blocked": 0,
-    "pending": 4
+    "pending": 0
   },
   "notion_page": "https://app.notion.com/p/3f0f2345b31881fb9bedce5fc6276fed",
   "assets_commit": "5eb5f866011e111ec0bb6669c2d4f9dc9d2a16a1",
-  "note": "Scheduled 4/4 after exact-final QA. PENDING is not Published."
+  "note": "Published 4/4. No retry, duplicate or backdate."
 }
