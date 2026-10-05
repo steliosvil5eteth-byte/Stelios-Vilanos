@@ -8,7 +8,7 @@
   "slot": "17:00",
   "category": "strange_real_phenomenon",
   "title": "Fata Morgana — όταν ένα πλοίο φαίνεται να αιωρείται",
-  "status": "SCHEDULED_PENDING",
+  "status": "PUBLISHED",
   "qa_status": "PASSED_FINAL_REVIEW",
   "reviewed_at": "2026-10-05T16:05:00+03:00",
   "scheduled_at": "2026-10-05T17:00:00+03:00",
@@ -48,30 +48,63 @@
     "native": {
       "id": 388530463,
       "uuid": "-5286989492189051988",
-      "providers": ["facebook", "instagram", "tiktok"],
-      "provider_status": "PENDING",
-      "media": ["https://static.metricool.com/planner/202610/7000636-file-14090914220655977448.mp4"],
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "provider_status": "PUBLISHED",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-14090914220655977448.mp4"
+      ],
       "draft": false,
-      "autoPublish": true
+      "autoPublish": true,
+      "provider_results": {
+        "facebook": {
+          "id": "2034761343901721",
+          "status": "PUBLISHED",
+          "public_url": "https://facebook.com/reel/2034761343901721"
+        },
+        "instagram": {
+          "id": "https://www.instagram.com/reel/DeHYn1UCXBR/",
+          "status": "PUBLISHED",
+          "public_url": "https://www.instagram.com/reel/DeHYn1UCXBR/"
+        },
+        "tiktok": {
+          "id": "7693185168781118753",
+          "status": "PUBLISHED",
+          "public_url": "https://www.tiktok.com/@steliosvilanos/video/7693185168781118753"
+        }
+      }
     },
     "youtube": {
       "id": 388531704,
       "uuid": "4461383753196323697",
-      "providers": ["youtube"],
-      "provider_status": "PENDING",
-      "media": ["https://static.metricool.com/planner/202610/7000636-file-7082655477899057437.mp4"],
+      "providers": [
+        "youtube"
+      ],
+      "provider_status": "PUBLISHED",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-7082655477899057437.mp4"
+      ],
       "draft": false,
-      "autoPublish": true
+      "autoPublish": true,
+      "provider_result": {
+        "id": "aBOfcQwJI7o",
+        "status": "PUBLISHED",
+        "public_url": "https://www.youtube.com/watch?v=aBOfcQwJI7o"
+      }
     },
-    "published": false,
-    "note": "PENDING is not Published."
+    "published": true,
+    "note": "Live readback verified Published 4/4; IDs/UUIDs unchanged; draft=false; autoPublish=true."
   },
   "notion_archive": {
     "id": "3f0f2345-b318-81ea-976f-c11bd371b840",
     "url": "https://app.notion.com/p/3f0f2345b31881ea976fc11bd371b840?pvs=204",
-    "status": "Scheduled",
+    "status": "Published",
     "approval_status": "Approved",
-    "approval_notes": "PASSED_FINAL_REVIEW"
+    "approval_notes": "PASSED_FINAL_REVIEW",
+    "reconciled": true
   },
   "source_page": "https://app.notion.com/p/3e2f2345b31881ffbeade034d9405e75?pvs=204",
   "dedupe": {
@@ -79,6 +112,7 @@
     "notion": true,
     "repository_history": true,
     "duplicate_found": false,
-    "checked_before_update": "2026-10-05T16:14:00+03:00"
-  }
+    "checked_before_update": "2026-10-05T17:26:06+03:00"
+  },
+  "published_at_confirmed": "2026-10-05T17:26:06+03:00"
 }
