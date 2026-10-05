@@ -1,0 +1,107 @@
+[
+  {
+    "file": "01.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated folklore scene",
+    "ai_generated": true,
+    "sha256": "412744c1f6204a68ee90d6dbcb117ac102667b989b83fec1ec7d76658eae3c64"
+  },
+  {
+    "file": "02.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated folklore scene",
+    "ai_generated": true,
+    "sha256": "dbf0e34dc7d2414b67cf40c3885658cb3a06ac58639769221662b78922184d09"
+  },
+  {
+    "file": "03.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated folklore scene",
+    "ai_generated": true,
+    "sha256": "e248e85c696690a040653588166fb89d4a6823a4aa08b147f37604b03d321369"
+  },
+  {
+    "file": "04.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated folklore scene",
+    "ai_generated": true,
+    "sha256": "52d0fc826ee642e902158851f60730f75799aab40ea80f4b1356fc8c2c7dcdd3"
+  },
+  {
+    "file": "05.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated folklore scene",
+    "ai_generated": true,
+    "sha256": "44e94b27944f142d328352698fc3f2896d58e76fda0acd63898d23bf82d3dd95"
+  },
+  {
+    "file": "06.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated folklore scene",
+    "ai_generated": true,
+    "sha256": "75a77aa4f8e41bd15769304cf506488b12bf120d1bae7e57a610eaf5c52725a8"
+  },
+  {
+    "file": "07.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated folklore scene",
+    "ai_generated": true,
+    "sha256": "50733e7327163394bcb38d4ca4fef79c274b4bc542fa3270e2c12125a15bf02e"
+  },
+  {
+    "file": "08.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated folklore scene",
+    "ai_generated": true,
+    "sha256": "c509999806d45edecbeb3700864e05c8510a797328bad3ed91a372eafca793a8"
+  },
+  {
+    "file": "09.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated folklore scene",
+    "ai_generated": true,
+    "sha256": "e98e379826c5a7817dc7a8c51ab77240eaae9dc21634c2fc3d7012eed0131ea0"
+  },
+  {
+    "file": "10.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated folklore scene",
+    "ai_generated": true,
+    "sha256": "c8eaec14c42706c3555110f9113461f43041ddd559fa61bc5a1dab2a3cb27130"
+  },
+  {
+    "file": "11.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated folklore scene",
+    "ai_generated": true,
+    "sha256": "1fdb5f04aac6ea06c499976cab5997e6decea6ad4562de1b2f4b6849ed8412e2"
+  },
+  {
+    "file": "12.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated folklore scene",
+    "ai_generated": true,
+    "sha256": "2f1100efbdf9b2d9b6eb06e9c466d47d12e8626bd2434657d4faacdf4db99fb3"
+  },
+  {
+    "file": "13.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated folklore scene",
+    "ai_generated": true,
+    "sha256": "88062c31d27a03de44315e8eb3323e86d72553d0897cb6e803b6b9187e620f1d"
+  },
+  {
+    "file": "14.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated folklore scene",
+    "ai_generated": true,
+    "sha256": "938e0ce362f127b452d6aee2ac9d50c4f763c98643bcac277520b503f07e4988"
+  },
+  {
+    "file": "15.jpg",
+    "source": "OpenAI built-in image generation",
+    "visual_kind": "photorealistic generated folklore scene",
+    "ai_generated": true,
+    "sha256": "514f1a3dc2408072c9222f7add0ceca2a9172a9984b11d1b18446afb89c3c4f0"
+  }
+]
