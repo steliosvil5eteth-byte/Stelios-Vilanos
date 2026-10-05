@@ -25,7 +25,41 @@
         "https://www.visitgreece.gr/mainland/peloponnese/areopoli/",
         "https://www.visitgreece.gr/experiences/beaches/best-beaches-of-the-mani-peninsula/",
         "https://diros-caves.gr/"
-      ]
+      ],
+      "original_slot": "13:00",
+      "catch_up_slot": "13:30",
+      "schedule_status": "SCHEDULED_PENDING",
+      "scheduled_at": "2026-10-05T13:30:00+03:00",
+      "backdated": false,
+      "metricool_readback": [
+        {
+          "id": 388395919,
+          "uuid": "1621288120407116770",
+          "providers": [
+            "facebook",
+            "instagram",
+            "tiktok"
+          ],
+          "status": "PENDING",
+          "draft": false,
+          "autoPublish": true
+        },
+        {
+          "id": 388399272,
+          "uuid": "4604034861555732112",
+          "providers": [
+            "youtube"
+          ],
+          "status": "PENDING",
+          "draft": false,
+          "autoPublish": true
+        }
+      ],
+      "notion_archive": {
+        "page_id": "3f0f2345-b318-8127-b324-d660edec97b9",
+        "url": "https://app.notion.com/p/3f0f2345b3188127b324d660edec97b9?pvs=204"
+      },
+      "reconciliation_commit": "3c22b7ab8d4421fc171220e940eeac889f758e69"
     }
   ]
 }
