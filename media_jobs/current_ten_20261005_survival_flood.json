@@ -10,7 +10,7 @@
   "title": "Ξαφνική πλημμύρα: 7 κινήσεις που σώζουν",
   "production_job_id": "current-ten-20261005-survival-flood",
   "release_status": "PASSED_FINAL_REVIEW",
-  "publish_status": "PENDING",
+  "publish_status": "PUBLISHED",
   "logical_post_count": 1,
   "destination_count": 4,
   "cards": 9,
@@ -43,15 +43,21 @@
       "providers": [
         {
           "network": "facebook",
-          "status": "PENDING"
+          "id": "1355373017651242_122116124403477192",
+          "status": "PUBLISHED",
+          "publicUrl": "https://facebook.com/122101951509477192/posts/122116124403477192"
         },
         {
           "network": "instagram",
-          "status": "PENDING"
+          "id": "https://www.instagram.com/p/DeGhcrziKZW/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/p/DeGhcrziKZW/"
         },
         {
           "network": "tiktok",
-          "status": "PENDING"
+          "id": "7693060674028637472",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7693060674028637472"
         }
       ]
     },
@@ -64,7 +70,9 @@
       "providers": [
         {
           "network": "youtube",
-          "status": "PENDING"
+          "id": "wi6ZoFwYz1Y",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.youtube.com/shorts/wi6ZoFwYz1Y"
         }
       ]
     }
@@ -88,13 +96,13 @@
     "checked_before_each_create_retry_update": true
   },
   "reconciliation": {
-    "checked_at_local": "2026-10-05T08:57:00+03:00",
-    "published_destinations": 0,
+    "checked_at_local": "2026-10-05T09:40:00+03:00",
+    "published_destinations": 4,
     "failed": 0,
     "blocked": 0,
-    "pending": 4
+    "pending": 0
   },
   "notion_page": "https://app.notion.com/p/3f0f2345b31881be8c91c18c48d4c8db",
   "assets_commit": "5eb5f866011e111ec0bb6669c2d4f9dc9d2a16a1",
-  "note": "Scheduled 4/4 after exact-final QA. PENDING is not Published."
+  "note": "Published 4/4. TikTok final provider confirmation resolved to ID 7693060674028637472. No retry, duplicate or backdate."
 }
