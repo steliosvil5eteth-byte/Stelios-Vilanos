@@ -1,0 +1,147 @@
+{
+  "strategy": "CURRENT_TEN_DAILY",
+  "program": "CURRENT_TEN_DAILY",
+  "brand": {
+    "id": 7076410,
+    "name": "Ιστορίες που μας αγγίζουν"
+  },
+  "date": "2026-10-05",
+  "timezone": "Europe/Athens",
+  "slot": {
+    "scheduled_local": "2026-10-05T11:00:00+03:00",
+    "category": "zodiac",
+    "baseline": true
+  },
+  "title": "Ποιος κάνει πρώτος κίνηση μετά τον καβγά;",
+  "theme": "Πρώτη κίνηση μετά τον καβγά",
+  "release_status": "PASSED_FINAL_REVIEW",
+  "publish_status": "PUBLISHED",
+  "logical_post_count": 1,
+  "destination_count": 4,
+  "card_count": 6,
+  "comparison_units": 6,
+  "all_12_signs_exactly_once": true,
+  "pairs": [
+    [
+      "Λέων",
+      "Υδροχόος"
+    ],
+    [
+      "Ταύρος",
+      "Σκορπιός"
+    ],
+    [
+      "Δίδυμοι",
+      "Τοξότης"
+    ],
+    [
+      "Καρκίνος",
+      "Αιγόκερως"
+    ],
+    [
+      "Κριός",
+      "Ζυγός"
+    ],
+    [
+      "Παρθένος",
+      "Ιχθύες"
+    ]
+  ],
+  "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+  "caption": "Ποιος κάνει πρώτος κίνηση μετά τον καβγά; Έξι συγκρίσεις, δώδεκα ζώδια — κανένα δεν μένει απ’ έξω.\n\nΔείτε πώς προσεγγίζει κάθε ζώδιο τη συμφιλίωση και πείτε μας: εσείς κάνετε την πρώτη κίνηση;\n\nΟπτική σύνθεση με ΤΝ.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ζώδια #Σχέσεις #Αστρολογία #Συμφιλίωση #Αγάπη",
+  "hashtags": [
+    "#Ζώδια",
+    "#Σχέσεις",
+    "#Αστρολογία",
+    "#Συμφιλίωση",
+    "#Αγάπη"
+  ],
+  "ai_disclosure": "Οπτική σύνθεση με ΤΝ.",
+  "exact_final_qa": {
+    "greek": true,
+    "hook": true,
+    "card_order": true,
+    "distinct_scene_relevant_photorealistic_visuals": true,
+    "crop_readability": true,
+    "cta": true,
+    "caption": true,
+    "hashtags_lte_5": true,
+    "ai_disclosure": true,
+    "tiktok_native_photo": true,
+    "tiktok_auto_add_music": true,
+    "youtube_full_vertical_slideshow": true,
+    "youtube_resolution": "1080x1920",
+    "youtube_duration_seconds": 35.966667,
+    "youtube_audio_layers": 1,
+    "youtube_audio": "permitted original instrumental",
+    "ffmpeg_decode_clean": true
+  },
+  "metricool": [
+    {
+      "id": 388295583,
+      "uuid": "-199236765445176906",
+      "draft": false,
+      "autoPublish": true,
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "media_count": 6,
+      "tiktok_autoAddMusic": true
+    },
+    {
+      "id": 388296335,
+      "uuid": "-6254247916916620847",
+      "draft": false,
+      "autoPublish": true,
+      "providers": [
+        "youtube"
+      ],
+      "media_count": 1
+    }
+  ],
+  "public_urls": {
+    "facebook": "https://facebook.com/122101951509477192/posts/122116166421477192",
+    "instagram": "https://www.instagram.com/p/DeGvWPgiEEX/",
+    "tiktok": "https://www.tiktok.com/@steliosvilanos/video/7693091983203634464",
+    "youtube": "https://www.youtube.com/shorts/5zs_ngaklxE"
+  },
+  "checksums_sha256": {
+    "card_01": "69851e78d1da62f635657195976c806841e2cf67c05f076a9c73509b32e93edc",
+    "card_02": "5705dbf7a3346793387a73a73b64206a3e65f78f7f8d9c89eb1ea939c5856eaa",
+    "card_03": "f3c27521921c7d5e28e9502ae3a93266f8edddd757583fe2abbb45e0dd083a2f",
+    "card_04": "3f1ab20e35dbd9f69c90233a40172fd6c08f906d113a253a5d1d23053484c67e",
+    "card_05": "e78bece9476ef32fff01d255a9e803735dd0306a73aebd18e3617fa2110ae95b",
+    "card_06": "8b5daedc7ec65b20db795b35f47848711d66c3462117ea6d116d5a3e60933f86",
+    "published_youtube_master": "8089b5a75b62c8cdfc4c47a4d94fef1944e740997f5175dc606aa4e079c11504",
+    "repository_delivery_copy": "ac200ef2a79d5ef400c37ab912d711cd1c9f243b6622dd0aa598e1bd6131c51d"
+  },
+  "repository_assets": {
+    "commit": "68a6432867109d92463089bc705918a0721110d3",
+    "path": "media_jobs/assets/2026-10-05/zodiac",
+    "note": "Repository delivery copy preserves 1080x1920/35.97s/H.264+AAC and is bitrate-optimized; published Metricool master checksum is recorded separately."
+  },
+  "notion": {
+    "page_id": "3f0f2345-b318-8175-916c-e52766f17e94",
+    "url": "https://app.notion.com/3f0f2345b3188175916ce52766f17e94"
+  },
+  "dedupe": {
+    "metricool": true,
+    "notion": true,
+    "repository": true,
+    "checked_immediately_before_create": true
+  },
+  "reconciliation": {
+    "published": 4,
+    "pending": 0,
+    "failed": 0,
+    "blocked": 0,
+    "readback_local": "2026-10-05T11:12:00+03:00"
+  },
+  "schedule_guard": {
+    "backdated": false,
+    "duplicate": false,
+    "replaced_existing_slot": false
+  }
+}
