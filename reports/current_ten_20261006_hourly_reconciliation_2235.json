@@ -1,0 +1,123 @@
+{
+  "schema_version": "CURRENT_TEN_DAILY_RECONCILIATION_V1",
+  "generated_at": "2026-10-06T19:35:00Z",
+  "local_time": "2026-10-06T22:35:00+03:00",
+  "timezone": "Europe/Athens",
+  "brand": {
+    "id": 7076410,
+    "name": "Ιστορίες που μας αγγίζουν"
+  },
+  "config": {
+    "path": "config/content_strategy.json",
+    "sha": "4daee55a188d949c0c450ca087ac9430d29b3fc4",
+    "program": "CURRENT_TEN_DAILY"
+  },
+  "day": {
+    "date": "2026-10-06",
+    "logical_posts": 10,
+    "metricool_records": 16,
+    "destinations": 40,
+    "counts": {
+      "published": 40,
+      "pending": 0,
+      "failed": 0,
+      "blocked": 0
+    },
+    "exact_baseline_guard": "PASS",
+    "final_state": "COMPLETE_40_OF_40_PUBLISHED"
+  },
+  "reconciled_post": {
+    "slot": "2026-10-06T22:00:00+03:00",
+    "production_job_id": "current-ten-20261006-tsukumogami",
+    "title": "Τσουκουμογκάμι: όταν τα παλιά αντικείμενα αποκτούν ψυχή",
+    "fingerprint": "international_legend|tsukumogami-japanese-discarded-objects-folklore",
+    "notion_page_id": "3f1f2345-b318-81f3-a6ef-eb816988ce18",
+    "status": "PUBLISHED_4_OF_4",
+    "metricool": {
+      "id": 389313993,
+      "uuid": "-528001035262738316",
+      "providers": [
+        {
+          "network": "facebook",
+          "provider_id": "2111930733018158",
+          "status": "PUBLISHED",
+          "detailed_status": "Published",
+          "public_url": "https://facebook.com/reel/2111930733018158"
+        },
+        {
+          "network": "instagram",
+          "provider_id": "https://www.instagram.com/reel/DeKfcRriL_G/",
+          "status": "PUBLISHED",
+          "detailed_status": "Published",
+          "public_url": "https://www.instagram.com/reel/DeKfcRriL_G/"
+        },
+        {
+          "network": "tiktok",
+          "provider_id": "7693632831947279648",
+          "status": "PUBLISHED",
+          "detailed_status": "Published",
+          "public_url": "https://www.tiktok.com/@steliosvilanos/video/7693632831947279648"
+        },
+        {
+          "network": "youtube",
+          "provider_id": "fqwzDglf6SU",
+          "status": "PUBLISHED",
+          "detailed_status": "Published",
+          "public_url": "https://www.youtube.com/shorts/fqwzDglf6SU"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-14954030714088333755.mp4"
+      ],
+      "media_type": "narrated_video",
+      "draft": false,
+      "autoPublish": true
+    },
+    "qa": {
+      "exact_final_review": "PASSED_FINAL_REVIEW",
+      "resolution": "1080x1920",
+      "duration_seconds": 87.97,
+      "voice": "el-GR-NestorasNeural",
+      "burned_in_synchronized_greek_subtitles": true,
+      "avatar": false,
+      "background_music": false,
+      "cta_exact": true,
+      "hashtags": 5,
+      "ai_disclosure": true,
+      "final_mp4_sha256": "7e36b1f2ab0a247b49d9e37cfec5a2b259aefc67c121057e380e5662dbf50b1e"
+    }
+  },
+  "future_queue": {
+    "2026-10-07": {
+      "logical_posts": 10,
+      "metricool_records": 16,
+      "destinations": 40,
+      "counts": {
+        "pending": 40
+      },
+      "qa": "PASSED_FINAL_REVIEW",
+      "lease": "state/production_leases/2026-10-07-brand7076410.json",
+      "lease_status": "COMPLETED_RELEASED"
+    },
+    "2026-10-08": {
+      "metricool_records": 0,
+      "destinations": 0,
+      "status": "MISSING",
+      "blocker": "No scheduled Metricool records; minimum two-day reviewed queue is not yet satisfied."
+    },
+    "reviewed_days_ready": 1,
+    "minimum_required_days": 2,
+    "target_days": 3
+  },
+  "dedupe_guard": {
+    "metricool": "PASS; exactly one post 389313993 for four providers",
+    "notion": "PASS via workspace search plus direct page fetch; one exact archive page identified and updated",
+    "notion_query_data_source": "UNAVAILABLE_USAGE_LIMIT; no retry attempted and no purchase made",
+    "repository_history": "PASS; current delivery/release/audit records found and no reconciliation report with this filename",
+    "production_lease_20261006": "COMPLETED_DELIVERY_AND_ARCHIVE"
+  },
+  "write_readback": {
+    "notion": "PASS; Published/Complete, four platform statuses Published, public URLs and IDs present",
+    "metricool": "PASS; brand/date/time/providers/media/draft/autoPublish/IDs/UUIDs/status re-read live after Notion write"
+  }
+}
