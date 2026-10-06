@@ -1,0 +1,510 @@
+[
+  {
+    "id": "current-ten-20261006-prespes",
+    "audio_sha256": "f27e1328487ccdd48b8c7a7f99468599ac487682be22fd694f8f1216c97e6ad9",
+    "asr_completed": true,
+    "normalized_exact_match": false,
+    "differences": [
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          28,
+          29
+        ],
+        "recognized_word_range": [
+          28,
+          29
+        ],
+        "expected": "αχιλλειου",
+        "recognized": "αχλιου"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          53,
+          54
+        ],
+        "recognized_word_range": [
+          53,
+          54
+        ],
+        "expected": "αχιλλειου",
+        "recognized": "αχχυλιου"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          85,
+          86
+        ],
+        "recognized_word_range": [
+          85,
+          86
+        ],
+        "expected": "τον",
+        "recognized": "το"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          176,
+          177
+        ],
+        "recognized_word_range": [
+          176,
+          177
+        ],
+        "expected": "δυο",
+        "recognized": "2"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          205,
+          207
+        ],
+        "recognized_word_range": [
+          205,
+          206
+        ],
+        "expected": "βαρκαδα η",
+        "recognized": "βαρκαδη"
+      }
+    ],
+    "errors": [],
+    "publish_ready": false
+  },
+  {
+    "id": "current-ten-20261006-singing-dunes",
+    "audio_sha256": "244212d75a1bd5e7a54a836f24106a730466f51797324ca40e8522de0ef88c92",
+    "asr_completed": true,
+    "normalized_exact_match": false,
+    "differences": [
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          18,
+          20
+        ],
+        "recognized_word_range": [
+          18,
+          20
+        ],
+        "expected": "κοκκοι αμμου",
+        "recognized": "κοκκια μου"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          22,
+          23
+        ],
+        "recognized_word_range": [
+          22,
+          23
+        ],
+        "expected": "γλιστρουν",
+        "recognized": "γλισρουν"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          44,
+          47
+        ],
+        "recognized_word_range": [
+          44,
+          45
+        ],
+        "expected": "μια ροη κοκκων",
+        "recognized": "μιαρωικον"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          57,
+          59
+        ],
+        "recognized_word_range": [
+          55,
+          57
+        ],
+        "expected": "στεφαν ντουαντι",
+        "recognized": "στεφαντου αντι"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          62,
+          63
+        ],
+        "recognized_word_range": [
+          60,
+          61
+        ],
+        "expected": "του",
+        "recognized": "τουσ"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          75,
+          76
+        ],
+        "recognized_word_range": [
+          73,
+          74
+        ],
+        "expected": "τουσ",
+        "recognized": "του"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          85,
+          86
+        ],
+        "recognized_word_range": [
+          83,
+          84
+        ],
+        "expected": "κοκκων",
+        "recognized": "κοκων"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          102,
+          103
+        ],
+        "recognized_word_range": [
+          100,
+          101
+        ],
+        "expected": "αμμολοφο",
+        "recognized": "αμολοφο"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          117,
+          118
+        ],
+        "recognized_word_range": [
+          115,
+          116
+        ],
+        "expected": "κοκκων",
+        "recognized": "κοκων"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          134,
+          136
+        ],
+        "recognized_word_range": [
+          132,
+          134
+        ],
+        "expected": "αμμου βοηθα",
+        "recognized": "αμπου βοη"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          138,
+          139
+        ],
+        "recognized_word_range": [
+          136,
+          138
+        ],
+        "expected": "γιατι",
+        "recognized": "για τη"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          172,
+          173
+        ],
+        "recognized_word_range": [
+          171,
+          172
+        ],
+        "expected": "αμμου",
+        "recognized": "αμου"
+      }
+    ],
+    "errors": [],
+    "publish_ready": false
+  },
+  {
+    "id": "current-ten-20261006-ikea-effect",
+    "audio_sha256": "1508a0250e62fa4cdd76e6d24c3d5a290dede4faa896d23c6a119abd93adc446",
+    "asr_completed": true,
+    "normalized_exact_match": false,
+    "differences": [
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          17,
+          18
+        ],
+        "recognized_word_range": [
+          17,
+          18
+        ],
+        "expected": "δυο",
+        "recognized": "2"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          37,
+          38
+        ],
+        "recognized_word_range": [
+          37,
+          38
+        ],
+        "expected": "πληρωνεσ",
+        "recognized": "πληρωτεσ"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          45,
+          49
+        ],
+        "recognized_word_range": [
+          45,
+          49
+        ],
+        "expected": "μαικλ νορτον ντανιελ μοτσον",
+        "recognized": "michael northone daniel modon"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          50,
+          52
+        ],
+        "recognized_word_range": [
+          50,
+          52
+        ],
+        "expected": "νταν αριελι",
+        "recognized": "d ναργελη"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          53,
+          54
+        ],
+        "recognized_word_range": [
+          53,
+          54
+        ],
+        "expected": "τεσσερισ",
+        "recognized": "4"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          60,
+          61
+        ],
+        "recognized_word_range": [
+          60,
+          61
+        ],
+        "expected": "ικεα",
+        "recognized": "οικια"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          88,
+          89
+        ],
+        "recognized_word_range": [
+          88,
+          90
+        ],
+        "expected": "οριγκαμι",
+        "recognized": "ο rgami"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          125,
+          126
+        ],
+        "recognized_word_range": [
+          126,
+          127
+        ],
+        "expected": "διαλυσουν",
+        "recognized": "διαλυσω"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          142,
+          143
+        ],
+        "recognized_word_range": [
+          143,
+          144
+        ],
+        "expected": "τον",
+        "recognized": "το"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          172,
+          173
+        ],
+        "recognized_word_range": [
+          173,
+          174
+        ],
+        "expected": "τουσ",
+        "recognized": "του"
+      },
+      {
+        "kind": "delete",
+        "expected_word_range": [
+          198,
+          199
+        ],
+        "recognized_word_range": [
+          199,
+          199
+        ],
+        "expected": "η",
+        "recognized": ""
+      }
+    ],
+    "errors": [],
+    "publish_ready": false
+  },
+  {
+    "id": "current-ten-20261006-tsukumogami",
+    "audio_sha256": "666ca318489620b723da5e7e97b1e1daedb952ec3c36863e199409b2b118b9ee",
+    "asr_completed": true,
+    "normalized_exact_match": false,
+    "differences": [
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          0,
+          1
+        ],
+        "recognized_word_range": [
+          0,
+          1
+        ],
+        "expected": "κι",
+        "recognized": "και"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          6,
+          7
+        ],
+        "recognized_word_range": [
+          6,
+          8
+        ],
+        "expected": "πεταξεσ",
+        "recognized": "πεταξε ασ"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          35,
+          36
+        ],
+        "recognized_word_range": [
+          36,
+          37
+        ],
+        "expected": "εκατο",
+        "recognized": "100"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          64,
+          65
+        ],
+        "recognized_word_range": [
+          65,
+          66
+        ],
+        "expected": "οσο",
+        "recognized": "οσα"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          82,
+          83
+        ],
+        "recognized_word_range": [
+          83,
+          85
+        ],
+        "expected": "μιτο",
+        "recognized": "μ το"
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          104,
+          105
+        ],
+        "recognized_word_range": [
+          106,
+          107
+        ],
+        "expected": "τη",
+        "recognized": "τι"
+      },
+      {
+        "kind": "delete",
+        "expected_word_range": [
+          126,
+          127
+        ],
+        "recognized_word_range": [
+          128,
+          128
+        ],
+        "expected": "η",
+        "recognized": ""
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          214,
+          215
+        ],
+        "recognized_word_range": [
+          215,
+          216
+        ],
+        "expected": "ειχε",
+        "recognized": "εχει"
+      }
+    ],
+    "errors": [],
+    "publish_ready": false
+  }
+]

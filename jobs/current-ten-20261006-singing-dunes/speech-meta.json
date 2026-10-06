@@ -14,7 +14,7 @@
   "word_boundaries": 252,
   "subtitle_cues": 46,
   "script_sha256": "8b71c86dcf8e209a497c06e7fbe13d1af5ab1f7483db51ddf694588d67a3ccc2",
-  "audio_sha256": "9b405c7de627498fd9fec869edf8285bef9d21b81c76c252ac2bab92b45dc6e1",
+  "audio_sha256": "244212d75a1bd5e7a54a836f24106a730466f51797324ca40e8522de0ef88c92",
   "srt_sha256": "24905ac361dd03f1e89df2815761ecb9d703698df9b9921433fde83c084242a4",
   "technical_audio_passed": true,
   "final_video_exists": false,
