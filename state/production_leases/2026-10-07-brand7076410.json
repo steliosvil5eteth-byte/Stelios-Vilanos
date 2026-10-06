@@ -1,0 +1,22 @@
+{
+  "brand_id": 7076410,
+  "date": "2026-10-07",
+  "owner": "next-day-social-prebuild-20261006T182542Z",
+  "created_at": "2026-10-06T18:25:42Z",
+  "expires_at": "2026-10-07T00:30:00Z",
+  "status": "PRODUCTION_IN_PROGRESS_NOT_QA_APPROVED",
+  "categories": [
+    "relationships",
+    "survival",
+    "dog_bartender",
+    "zodiac",
+    "greece_two_day_trip",
+    "love_soul_relationship",
+    "strange_real_phenomenon",
+    "documented_experiments",
+    "myth_or_truth",
+    "international_legend"
+  ],
+  "purpose": "CURRENT_TEN_DAILY exact-final production for 2026-10-07",
+  "metricool_brand_id": 7076410
+}
