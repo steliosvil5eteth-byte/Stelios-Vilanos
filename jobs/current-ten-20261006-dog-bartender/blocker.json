@@ -1,0 +1,34 @@
+{
+  "schema_version": 1,
+  "program_label": "CURRENT_TEN_DAILY",
+  "strategy_id": "CURRENT_TEN_DAILY_20260927",
+  "brand": {
+    "id": 7076410,
+    "label": "Ιστορίες που μας αγγίζουν"
+  },
+  "timezone": "Europe/Athens",
+  "date": "2026-10-06",
+  "baseline_slot": {
+    "original_time": "10:00",
+    "category": "dog_bartender",
+    "format": "carousel",
+    "required_cards": 4
+  },
+  "status": "Blocked",
+  "release_status": null,
+  "observed_at": "2026-10-06T10:34:00+03:00",
+  "blocker_code": "MISSING_EXACT_FINAL_MEDIA_AFTER_ORIGINAL_SLOT",
+  "blocker": "Δεν υπάρχει σημερινό exact-final 4-card carousel με τον ίδιο φωτορεαλιστικό καφέ σκύλο ως μπάρμαν σε τέσσερις διαφορετικές σκηνές ούτε πλήρες YouTube vertical slideshow που να έχει περάσει PASSED_FINAL_REVIEW. Metricool scheduled=0 και published-history=0· Notion CURRENT_TEN_DAILY archive=0· repository job/manifest=0.",
+  "missed_slot_policy": {
+    "backdate": false,
+    "replace_existing_slot": false,
+    "duplicate_create": false,
+    "action": "Freeze. Produce/repair until PASSED_FINAL_REVIEW, then run fresh dedupe and schedule at the first safe empty future time on 2026-10-06 with draft=false and autoPublish=true."
+  },
+  "evidence": {
+    "metricool_scheduled_count": 0,
+    "metricool_published_history_count": 0,
+    "notion_current_archive_count": 0,
+    "repository_current_job_count": 0
+  }
+}
