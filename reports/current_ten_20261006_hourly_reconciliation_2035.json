@@ -1,0 +1,127 @@
+{
+  "schema_version": "CURRENT_TEN_DAILY_RECONCILIATION_V1",
+  "generated_at": "2026-10-06T17:35:00Z",
+  "local_time": "2026-10-06T20:35:00+03:00",
+  "timezone": "Europe/Athens",
+  "brand": {
+    "id": 7076410,
+    "name": "Ιστορίες που μας αγγίζουν"
+  },
+  "config": {
+    "path": "config/content_strategy.json",
+    "sha": "4daee55a188d949c0c450ca087ac9430d29b3fc4",
+    "program": "CURRENT_TEN_DAILY"
+  },
+  "baseline": {
+    "logical_posts": 10,
+    "metricool_records": 16,
+    "destinations": 40,
+    "counts": {
+      "published": 36,
+      "pending": 4,
+      "failed": 0,
+      "blocked": 0
+    },
+    "exact_baseline_guard": "PASS"
+  },
+  "reconciled_post": {
+    "slot": "2026-10-06T20:00:00+03:00",
+    "production_job_id": "current-ten-20261006-myth-or-truth",
+    "title": "Τα ηλιοτρόπια ακολουθούν τον ήλιο όλη τους τη ζωή;",
+    "fingerprint": "myth_or_truth|sunflower-young-heliotropism-mature-east-facing",
+    "notion_page_id": "3f1f2345-b318-81c0-b1b6-d8c6eb348305",
+    "status": "PUBLISHED_4_OF_4",
+    "metricool": [
+      {
+        "id": 389302859,
+        "uuid": "7749543297691372767",
+        "providers": [
+          "facebook",
+          "instagram",
+          "tiktok"
+        ],
+        "media_type": "native_carousel",
+        "media_count": 4,
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-13418631672141941797.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-653856594620969597.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-8480821225081218485.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-10172432767522332238.jpeg"
+        ],
+        "draft": false,
+        "autoPublish": true,
+        "tiktok_autoAddMusic": true
+      },
+      {
+        "id": 389306202,
+        "uuid": "4442683070112745282",
+        "providers": [
+          "youtube"
+        ],
+        "media_type": "vertical_slideshow",
+        "media_count": 1,
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-4306208915672719731.mp4"
+        ],
+        "draft": false,
+        "autoPublish": true
+      }
+    ],
+    "provider_readback": [
+      {
+        "network": "facebook",
+        "provider_id": "1355373017651242_122116930023477192",
+        "status": "PUBLISHED",
+        "detailed_status": "Published",
+        "public_url": "https://facebook.com/122101951509477192/posts/122116930023477192"
+      },
+      {
+        "network": "instagram",
+        "provider_id": "https://www.instagram.com/p/DeKR1LGn7xf/",
+        "status": "PUBLISHED",
+        "detailed_status": "Published",
+        "public_url": "https://www.instagram.com/p/DeKR1LGn7xf/"
+      },
+      {
+        "network": "tiktok",
+        "provider_id": "7693601953208683808",
+        "status": "PUBLISHED",
+        "detailed_status": "Published",
+        "public_url": "https://www.tiktok.com/@steliosvilanos/video/7693601953208683808"
+      },
+      {
+        "network": "youtube",
+        "provider_id": "0G_pu5RLhLQ",
+        "status": "PUBLISHED",
+        "detailed_status": "Published",
+        "public_url": "https://www.youtube.com/shorts/0G_pu5RLhLQ"
+      }
+    ],
+    "qa": {
+      "exact_final_review": "PASSED_FINAL_REVIEW",
+      "card_count": 4,
+      "jpeg_media": true,
+      "distinct_scene_relevant_visuals": true,
+      "greek_copy_hook_order_cta_caption_hashtags_ai_disclosure": true
+    }
+  },
+  "remaining": {
+    "destinations": 4,
+    "status": "PENDING",
+    "slot": "2026-10-06T22:00:00+03:00",
+    "title": "Τσουκουμογκάμι: όταν τα παλιά αντικείμενα αποκτούν ψυχή",
+    "metricool_post_id": 389313993,
+    "metricool_uuid": "-528001035262738316",
+    "action": "No retry: scheduled slot has not elapsed."
+  },
+  "dedupe_guard": {
+    "metricool": "PASS; one native record plus one YouTube companion for one logical post",
+    "notion": "PASS; exactly one archive row for production job/fingerprint/title",
+    "repository_history": "PASS; current delivery/release records found and no reconciliation report with this filename",
+    "production_lease": "COMPLETED_DELIVERY_AND_ARCHIVE; ownership released"
+  },
+  "write_readback": {
+    "notion": "PASS; Status Published, Delivery Coverage Complete, all four platform statuses Published, URLs and IDs present",
+    "metricool": "PASS; date/time/providers/media/draft/autoPublish/IDs/UUIDs/status re-read live after Notion write"
+  }
+}
