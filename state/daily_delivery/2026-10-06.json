@@ -1,0 +1,589 @@
+{
+  "date": "2026-10-06",
+  "timezone": "Europe/Athens",
+  "brandId": 7076410,
+  "as_of_utc": "2026-10-06T10:36:21.578775+00:00",
+  "status": "ALL_TEN_DELIVERED_TO_METRICOOL",
+  "logical_post_count": 10,
+  "provider_destination_count": 40,
+  "published_logical_post_count": 2,
+  "published_provider_destination_count": 8,
+  "scheduled_provider_destination_count": 32,
+  "missing_series": [],
+  "duplicate_series_provider_pairs": [],
+  "provider_status_counts": {
+    "facebook": {
+      "PENDING": 8,
+      "PUBLISHED": 2
+    },
+    "instagram": {
+      "PENDING": 8,
+      "PUBLISHED": 2
+    },
+    "tiktok": {
+      "PENDING": 8,
+      "PUBLISHED": 2
+    },
+    "youtube": {
+      "PENDING": 8,
+      "PUBLISHED": 2
+    }
+  },
+  "logical_posts": [
+    {
+      "series": "documented_experiments",
+      "job_id": "current-ten-20261006-ikea-effect",
+      "title": "Το φαινόμενο ΙΚΕΑ: γιατί αγαπάμε αυτό που φτιάξαμε",
+      "content_key": "documented_experiments|ikea-effect-labor-valuation-completion",
+      "notion_page_id": "3f1f2345-b318-815d-a5b2-c793854e5da3",
+      "destinations": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389315750,
+          "metricool_uuid": "1071951261703491205",
+          "publication_date": {
+            "dateTime": "2026-10-06T18:30:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389315750,
+          "metricool_uuid": "1071951261703491205",
+          "publication_date": {
+            "dateTime": "2026-10-06T18:30:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389315750,
+          "metricool_uuid": "1071951261703491205",
+          "publication_date": {
+            "dateTime": "2026-10-06T18:30:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389315750,
+          "metricool_uuid": "1071951261703491205",
+          "publication_date": {
+            "dateTime": "2026-10-06T18:30:00",
+            "timezone": "Europe/Athens"
+          }
+        }
+      ],
+      "all_four_published": false
+    },
+    {
+      "series": "dog_bartender",
+      "job_id": "current-ten-20261006-dog-bartender",
+      "title": "Σκύλος Μπάρμαν — Πρώτα η φωτογραφία",
+      "content_key": "dog_bartender|drink-photo-staging-ice-melts-before-first-sip",
+      "notion_page_id": "3f1f2345-b318-81eb-ba11-d602004575ae",
+      "destinations": [
+        {
+          "network": "facebook",
+          "status": "PUBLISHED",
+          "public_url": "https://facebook.com/122101951509477192/posts/122116741347477192",
+          "metricool_post_id": 389294554,
+          "metricool_uuid": "2522268609407762487",
+          "publication_date": {
+            "dateTime": "2026-10-06T13:05:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "instagram",
+          "status": "PUBLISHED",
+          "public_url": "https://www.instagram.com/p/DeJh5ejFUYg/",
+          "metricool_post_id": 389294554,
+          "metricool_uuid": "2522268609407762487",
+          "publication_date": {
+            "dateTime": "2026-10-06T13:05:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "tiktok",
+          "status": "PUBLISHED",
+          "public_url": "https://www.tiktok.com/@steliosvilanos/video/7693493987449081120",
+          "metricool_post_id": 389294554,
+          "metricool_uuid": "2522268609407762487",
+          "publication_date": {
+            "dateTime": "2026-10-06T13:05:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "youtube",
+          "status": "PUBLISHED",
+          "public_url": "https://www.youtube.com/shorts/d85futoEtOw",
+          "metricool_post_id": 389304173,
+          "metricool_uuid": "2718272123696792080",
+          "publication_date": {
+            "dateTime": "2026-10-06T13:15:00",
+            "timezone": "Europe/Athens"
+          }
+        }
+      ],
+      "all_four_published": true
+    },
+    {
+      "series": "greece_two_day_trip",
+      "job_id": "current-ten-20261006-prespes",
+      "title": "Διήμερο στις Πρέσπες: δύο λίμνες, ένα νησί",
+      "content_key": "greece_two_day_trip|prespes-agios-achilleios-agios-germanos-psarades-two-day",
+      "notion_page_id": "3f1f2345-b318-810b-a014-f862f1ac647c",
+      "destinations": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389315514,
+          "metricool_uuid": "5271619876022142411",
+          "publication_date": {
+            "dateTime": "2026-10-06T14:30:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389315514,
+          "metricool_uuid": "5271619876022142411",
+          "publication_date": {
+            "dateTime": "2026-10-06T14:30:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389315514,
+          "metricool_uuid": "5271619876022142411",
+          "publication_date": {
+            "dateTime": "2026-10-06T14:30:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389315514,
+          "metricool_uuid": "5271619876022142411",
+          "publication_date": {
+            "dateTime": "2026-10-06T14:30:00",
+            "timezone": "Europe/Athens"
+          }
+        }
+      ],
+      "all_four_published": false
+    },
+    {
+      "series": "international_legend",
+      "job_id": "current-ten-20261006-tsukumogami",
+      "title": "Τσουκουμογκάμι: όταν τα παλιά αντικείμενα αποκτούν ψυχή",
+      "content_key": "international_legend|tsukumogami-japanese-discarded-objects-folklore",
+      "notion_page_id": "3f1f2345-b318-81f3-a6ef-eb816988ce18",
+      "destinations": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389313993,
+          "metricool_uuid": "-528001035262738316",
+          "publication_date": {
+            "dateTime": "2026-10-06T22:00:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389313993,
+          "metricool_uuid": "-528001035262738316",
+          "publication_date": {
+            "dateTime": "2026-10-06T22:00:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389313993,
+          "metricool_uuid": "-528001035262738316",
+          "publication_date": {
+            "dateTime": "2026-10-06T22:00:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389313993,
+          "metricool_uuid": "-528001035262738316",
+          "publication_date": {
+            "dateTime": "2026-10-06T22:00:00",
+            "timezone": "Europe/Athens"
+          }
+        }
+      ],
+      "all_four_published": false
+    },
+    {
+      "series": "love_soul_relationship",
+      "job_id": "current-ten-20261006-love-soul-relationship",
+      "title": "Ο μεγαλύτερος μαθητής της",
+      "content_key": "love_soul_relationship|elderly-father-becomes-pottery-student-respects-daughter-craft",
+      "notion_page_id": "3f1f2345-b318-8142-b7b9-e6d7730f20fc",
+      "destinations": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389301502,
+          "metricool_uuid": "-8886581024633958491",
+          "publication_date": {
+            "dateTime": "2026-10-06T15:00:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389301502,
+          "metricool_uuid": "-8886581024633958491",
+          "publication_date": {
+            "dateTime": "2026-10-06T15:00:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389301502,
+          "metricool_uuid": "-8886581024633958491",
+          "publication_date": {
+            "dateTime": "2026-10-06T15:00:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389306148,
+          "metricool_uuid": "-6615464117624813795",
+          "publication_date": {
+            "dateTime": "2026-10-06T15:00:00",
+            "timezone": "Europe/Athens"
+          }
+        }
+      ],
+      "all_four_published": false
+    },
+    {
+      "series": "myth_or_truth",
+      "job_id": "current-ten-20261006-myth-or-truth",
+      "title": "Τα ηλιοτρόπια ακολουθούν τον ήλιο όλη τους τη ζωή;",
+      "content_key": "myth_or_truth|sunflower-young-heliotropism-mature-east-facing",
+      "notion_page_id": "3f1f2345-b318-81c0-b1b6-d8c6eb348305",
+      "destinations": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389302859,
+          "metricool_uuid": "7749543297691372767",
+          "publication_date": {
+            "dateTime": "2026-10-06T20:00:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389302859,
+          "metricool_uuid": "7749543297691372767",
+          "publication_date": {
+            "dateTime": "2026-10-06T20:00:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389302859,
+          "metricool_uuid": "7749543297691372767",
+          "publication_date": {
+            "dateTime": "2026-10-06T20:00:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389306202,
+          "metricool_uuid": "4442683070112745282",
+          "publication_date": {
+            "dateTime": "2026-10-06T20:00:00",
+            "timezone": "Europe/Athens"
+          }
+        }
+      ],
+      "all_four_published": false
+    },
+    {
+      "series": "relationships",
+      "job_id": "current-ten-20261006-relationships",
+      "title": "Η προαγωγή που τους απομάκρυνε",
+      "content_key": "relationships|partner-promotion-envy-owned-support-without-self-erasure",
+      "notion_page_id": "3f1f2345-b318-81a2-a559-d77ea46c6e9e",
+      "destinations": [
+        {
+          "network": "facebook",
+          "status": "PUBLISHED",
+          "public_url": "https://facebook.com/122101951509477192/posts/122116752831477192",
+          "metricool_post_id": 389297281,
+          "metricool_uuid": "-1360804326168376263",
+          "publication_date": {
+            "dateTime": "2026-10-06T13:25:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "instagram",
+          "status": "PUBLISHED",
+          "public_url": "https://www.instagram.com/p/DeJkNi5leN7/",
+          "metricool_post_id": 389297281,
+          "metricool_uuid": "-1360804326168376263",
+          "publication_date": {
+            "dateTime": "2026-10-06T13:25:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "tiktok",
+          "status": "PUBLISHED",
+          "public_url": "https://www.tiktok.com/@steliosvilanos/video/7693499205654023457",
+          "metricool_post_id": 389297281,
+          "metricool_uuid": "-1360804326168376263",
+          "publication_date": {
+            "dateTime": "2026-10-06T13:25:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "youtube",
+          "status": "PUBLISHED",
+          "public_url": "https://www.youtube.com/shorts/n4fvbCJuTgE",
+          "metricool_post_id": 389305899,
+          "metricool_uuid": "-551583201493365578",
+          "publication_date": {
+            "dateTime": "2026-10-06T13:25:00",
+            "timezone": "Europe/Athens"
+          }
+        }
+      ],
+      "all_four_published": true
+    },
+    {
+      "series": "strange_real_phenomenon",
+      "job_id": "current-ten-20261006-singing-dunes",
+      "title": "Οι αμμόλοφοι που τραγουδούν",
+      "content_key": "strange_real_phenomenon|singing-sand-dunes-grain-synchronization",
+      "notion_page_id": "3f1f2345-b318-8183-80ef-c3cd92c7466d",
+      "destinations": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389314811,
+          "metricool_uuid": "-6327864391657438117",
+          "publication_date": {
+            "dateTime": "2026-10-06T17:00:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389314811,
+          "metricool_uuid": "-6327864391657438117",
+          "publication_date": {
+            "dateTime": "2026-10-06T17:00:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389314811,
+          "metricool_uuid": "-6327864391657438117",
+          "publication_date": {
+            "dateTime": "2026-10-06T17:00:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389314811,
+          "metricool_uuid": "-6327864391657438117",
+          "publication_date": {
+            "dateTime": "2026-10-06T17:00:00",
+            "timezone": "Europe/Athens"
+          }
+        }
+      ],
+      "all_four_published": false
+    },
+    {
+      "series": "survival",
+      "job_id": "current-ten-20261006-survival",
+      "title": "Ηλεκτρική φωτιά: τι κάνεις πριν χαθεί χρόνος",
+      "content_key": "survival|electrical-house-fire-safe-evacuation-no-water",
+      "notion_page_id": "3f1f2345-b318-81ee-9229-e1ee0d44b487",
+      "destinations": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389299946,
+          "metricool_uuid": "-2164958754893312240",
+          "publication_date": {
+            "dateTime": "2026-10-06T13:45:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389299946,
+          "metricool_uuid": "-2164958754893312240",
+          "publication_date": {
+            "dateTime": "2026-10-06T13:45:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389299946,
+          "metricool_uuid": "-2164958754893312240",
+          "publication_date": {
+            "dateTime": "2026-10-06T13:45:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389305950,
+          "metricool_uuid": "8018420815322697067",
+          "publication_date": {
+            "dateTime": "2026-10-06T13:45:00",
+            "timezone": "Europe/Athens"
+          }
+        }
+      ],
+      "all_four_published": false
+    },
+    {
+      "series": "zodiac",
+      "job_id": "current-ten-20261006-zodiac",
+      "title": "Ζώδια: εσείς οι δύο σε escape room",
+      "content_key": "zodiac|escape-room-puzzle-team-reactions|six-pairs-all-twelve",
+      "notion_page_id": "3f1f2345-b318-8149-b6a2-f333ed375511",
+      "destinations": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389302501,
+          "metricool_uuid": "-6188232199383922156",
+          "publication_date": {
+            "dateTime": "2026-10-06T14:05:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389302501,
+          "metricool_uuid": "-6188232199383922156",
+          "publication_date": {
+            "dateTime": "2026-10-06T14:05:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389302501,
+          "metricool_uuid": "-6188232199383922156",
+          "publication_date": {
+            "dateTime": "2026-10-06T14:05:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "public_url": null,
+          "metricool_post_id": 389305999,
+          "metricool_uuid": "-3840393506333636054",
+          "publication_date": {
+            "dateTime": "2026-10-06T14:05:00",
+            "timezone": "Europe/Athens"
+          }
+        }
+      ],
+      "all_four_published": false
+    }
+  ],
+  "notion_archive": {
+    "unique_pages": 10,
+    "verified": true,
+    "source": "reports/current_ten_20261006_notion_archive_verification.json"
+  },
+  "final_media_backup": {
+    "status": "ALL_45_MEDIA_PERSISTED_AND_LIVE_READBACK_VERIFIED",
+    "media_output_commit": "c66884ef3a26ea565042d414c07e1f0422bd0424",
+    "workflow_run_id": 37450420503,
+    "asset_count": 45,
+    "total_bytes": 87746646,
+    "main_source_commit": "c92877f09e1928bee1726ca33ddf9d0b5b0c4973"
+  },
+  "publication_note": "The 32 scheduled destinations are awaiting their actual times today. Scheduled is not published. Eight destinations are confirmed published at this readback.",
+  "next_action": "Reconcile these existing Metricool IDs as they publish. Retry only a genuinely failed destination after a fresh read; do not recreate an already scheduled or published logical post."
+}

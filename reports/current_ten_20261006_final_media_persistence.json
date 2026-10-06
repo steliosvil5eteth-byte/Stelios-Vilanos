@@ -1,0 +1,335 @@
+{
+  "status": "ALL_45_MEDIA_PERSISTED_AND_LIVE_READBACK_VERIFIED",
+  "base_commit": "bff42525ff1be6ca184fcdd751bece0f1928cec7",
+  "validated_assets": 45,
+  "manifest_sha256": "ee24aeb4e033c3514fcdf9aedf205de4d1b69f28d3be7577328c7cfb07e0bc60",
+  "journal_sha256": "05dd3d302a4e1e1fefb6eaa261ce3cac598488a4e64a76b6e8c093d723b83146",
+  "branch": "media-output",
+  "publish_action_performed": false,
+  "media_output_commit": "c66884ef3a26ea565042d414c07e1f0422bd0424",
+  "tree_sha": "2bd07edbb108e410a5d545e0d20cc4a7e9f9f9e3",
+  "completed_at_utc": "2026-10-06T10:33:44.880404+00:00",
+  "asset_count": 45,
+  "jpeg_count": 35,
+  "mp4_count": 10,
+  "total_bytes": 87746646,
+  "already_present": false,
+  "assets": [
+    {
+      "path": "jobs/current-ten-20261006-ikea-effect/final/current-ten-20261006-ikea-effect.mp4",
+      "sha256": "18ba6751359d7a5361b2207305e67f81f9564d04e0dee5778363e031905cc38d",
+      "bytes": 14087887,
+      "git_blob_sha1": "749bfbc841278671918e2458903298e4a6152517",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-dog-bartender/final/card-01.jpg",
+      "sha256": "50259917913b4f2b123f391a26dc12ad9926ba71623136ebb03c680d0cd0ede8",
+      "bytes": 204973,
+      "git_blob_sha1": "3e2782ba250b4c5845664d37325b9ac5b78bc861",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-dog-bartender/final/card-02.jpg",
+      "sha256": "ce99e1f07c388552f78eb9ebd30e5d6422fceb164377433b0ad09f08c626a976",
+      "bytes": 204947,
+      "git_blob_sha1": "bcfa10cbab500b8400198dcfe1bdcd61f9225dd3",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-dog-bartender/final/card-03.jpg",
+      "sha256": "f386467f487062ef9aeb71be3666dcb87d82a747e516d68f8511c13e4ed66953",
+      "bytes": 189155,
+      "git_blob_sha1": "47fa0db548da5425091a0823bf9d92a043438001",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-dog-bartender/final/card-04.jpg",
+      "sha256": "daaf3334980d89f5eefb87a883aa4185b721c1ca6383735820b81d8f4852cd92",
+      "bytes": 213740,
+      "git_blob_sha1": "066c58bf8c24ed554a5376c66e3bc37ae5743e00",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-dog-bartender/final/current-ten-20261006-dog-bartender.mp4",
+      "sha256": "d12f6f9ff213df3f9050c6b7fd7dba5ebe5b0b04ce6c5fe646ad36bcb41d07f0",
+      "bytes": 1344108,
+      "git_blob_sha1": "626b65134f9f1293fa0740ea2835837b75a822f8",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-prespes/final/current-ten-20261006-prespes.mp4",
+      "sha256": "02855ad188063f1f843f81e65f911776ae4dcc40c41454f55d5dceac05385cf3",
+      "bytes": 19501454,
+      "git_blob_sha1": "2bd35f87c6845eecbf35a1e8fcee7c8eb1bd8ba4",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-tsukumogami/final/current-ten-20261006-tsukumogami.mp4",
+      "sha256": "7e36b1f2ab0a247b49d9e37cfec5a2b259aefc67c121057e380e5662dbf50b1e",
+      "bytes": 15519092,
+      "git_blob_sha1": "70819c6ee4495d85f9f21665ee26de0348a1402f",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-love-soul-relationship/final/card-01.jpg",
+      "sha256": "b260dce4f06f66e26c465cf2e27a58a87e878817d136da8d046dc9093806cb50",
+      "bytes": 366290,
+      "git_blob_sha1": "33f8bf6586b252cc9da4a1f767aa34630506ccae",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-love-soul-relationship/final/card-02.jpg",
+      "sha256": "eff798095c7f2b84befeb6f9f1b5e78b1669b096ecb71b0af5b2e23720f3945c",
+      "bytes": 391683,
+      "git_blob_sha1": "117314db2ef14de47422673b65832b16d3bd245a",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-love-soul-relationship/final/card-03.jpg",
+      "sha256": "56ed9c032f79665ca9a50cc47e579bb392965010956b304f932b60f3466ed496",
+      "bytes": 408560,
+      "git_blob_sha1": "adf550060d3b82c3c2e2e55f5b907ac00526229b",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-love-soul-relationship/final/card-04.jpg",
+      "sha256": "75d31e9416afb54d68b9215a15422ed2e77ff624fe686c80c1872aa764a3ea2a",
+      "bytes": 360777,
+      "git_blob_sha1": "ed454e0df58fe374f8b210246176f2da577b1283",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-love-soul-relationship/final/card-05.jpg",
+      "sha256": "23de77dc34d36960e1f153af87eecc5224e7da1a74617fddfd11773eb6375e8b",
+      "bytes": 426686,
+      "git_blob_sha1": "ecb263153711810632575a082f1b06545f80f83c",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-love-soul-relationship/final/current-ten-20261006-love-soul-relationship.mp4",
+      "sha256": "a159b4b76f9a69c90427b14857194693b0aa67a8d366e7a6aad848796147808a",
+      "bytes": 1932594,
+      "git_blob_sha1": "18f3af17510e5001af87cdabe06831d5718fcee7",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-myth-or-truth/final/card-01.jpg",
+      "sha256": "e2593f53fd87b83c6dc37006454c6eb23eabc0c07b15a5d84610590d22aaedc7",
+      "bytes": 184906,
+      "git_blob_sha1": "f7689f82e3415c7074b19338395c1bc811dc056e",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-myth-or-truth/final/card-02.jpg",
+      "sha256": "37c8749bfd863e86acc6736067ba98fb29fefd855e1a15c60b5160c75b930ee4",
+      "bytes": 151748,
+      "git_blob_sha1": "35d6f97f322292fd996e92616bcb30276888870d",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-myth-or-truth/final/card-03.jpg",
+      "sha256": "beee378a8e44cb4bf29290bd22cf1b7bab95ecead61356d5e11325e6be06965a",
+      "bytes": 130010,
+      "git_blob_sha1": "43914eb223fe9505e242c0acd297ba6855d1fdde",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-myth-or-truth/final/card-04.jpg",
+      "sha256": "7c8a26817c4ff827cc178fb5cf18838380cc87d817d95a8f116ad5c0be7b5536",
+      "bytes": 214991,
+      "git_blob_sha1": "c2dbbdcf4cbaaa71f3d9a0ab3586627aaa525c9c",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-myth-or-truth/final/current-ten-20261006-myth-or-truth.mp4",
+      "sha256": "308c6e042fae04f3af6d67dc1da55a0a6b11b467f3cd0b7ba0d13939694e3af3",
+      "bytes": 1290873,
+      "git_blob_sha1": "26182325681b8bfdff532187e5e68037c8138460",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-relationships/final/card-01.jpg",
+      "sha256": "cc618107a95ec78bd5e37ef5461301fb3dd5048d243be615e760c0bcf9138a7a",
+      "bytes": 249496,
+      "git_blob_sha1": "13dc5f8d7e8840ebab71ec189ffd5b99bfb090d5",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-relationships/final/card-02.jpg",
+      "sha256": "23fbaef9961752ec635fabb74ad3e8bc832711cc820d6102623291c837f08a84",
+      "bytes": 294805,
+      "git_blob_sha1": "38402b2113d78384689e570496e6c0967a261290",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-relationships/final/card-03.jpg",
+      "sha256": "207590add9897a013ac96cfc0ad8253df1cbcd40744c768e75f445ffdc20c711",
+      "bytes": 283446,
+      "git_blob_sha1": "2a18f1c858bc1bd4079a047c05228245f68bde1a",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-relationships/final/card-04.jpg",
+      "sha256": "e99dc2c34d803e541b92303fa26c82fc4122bbb679f3914deae8e9d2b828a6aa",
+      "bytes": 269483,
+      "git_blob_sha1": "b4ca5ad4df987eac94df1f80c1419dc67b689e3b",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-relationships/final/card-05.jpg",
+      "sha256": "767e76cd6e0dcd5d7355c1737a2b72d8a36b2def77a1d84afae7751ce3ab9428",
+      "bytes": 265396,
+      "git_blob_sha1": "f5ea6612abce858f05921867895bb3757a9f7de6",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-relationships/final/card-06.jpg",
+      "sha256": "955de764fdb3e04c6fb783ea5031feae9c3d5abbfd06dc4b80aff6bce1da7d4d",
+      "bytes": 293721,
+      "git_blob_sha1": "d006ba6108db92b355177eae891dee8397606b81",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-relationships/final/card-07.jpg",
+      "sha256": "e61cea586e95a3893db753f33e888e899cac6e680b9e11a032b5bef0be2021b7",
+      "bytes": 339828,
+      "git_blob_sha1": "775dea359da10deca7d8e2d6d1f0499e66f2e75b",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-relationships/final/current-ten-20261006-relationships.mp4",
+      "sha256": "e48a5fd287e27c23c2106aec37f3aa6c580cc475d72392ea5d80d89a7dd9a2fa",
+      "bytes": 2372590,
+      "git_blob_sha1": "90076bd3da018f4f4e379b507debba2792fe6d3f",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-singing-dunes/final/current-ten-20261006-singing-dunes.mp4",
+      "sha256": "dec4523bee6a7a28ef2905f85e937fdc7a704ad017f8d41244fb6122989c0292",
+      "bytes": 17851016,
+      "git_blob_sha1": "b394b5c807a8b110285d96864bc4f118fc7141a1",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-survival/final/card-01.jpg",
+      "sha256": "40981e9c18ed9f86e13a0db93bafefb0dc7be93c6f385c53f06e56efc8c985c3",
+      "bytes": 272706,
+      "git_blob_sha1": "ff9e63dfe8a8eeaee77ab5e59534f1e5a56b9564",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-survival/final/card-02.jpg",
+      "sha256": "31ddea1347a6d711e5185325c8ea303b5b70f6b992fc1af343c7b37f2a302322",
+      "bytes": 259244,
+      "git_blob_sha1": "0de684eb3cd171993b9cbf86a3bb638b10871f45",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-survival/final/card-03.jpg",
+      "sha256": "b32d4f6ef299aba803bdc569032d802c8e8dd5e74aa9a228ff6844f5b6fcf11b",
+      "bytes": 261641,
+      "git_blob_sha1": "617e9ac048ab91835975a1e2ebf875033cdc9c9d",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-survival/final/card-04.jpg",
+      "sha256": "e47f0633c391a19f20209fbed2e86e484647d602ac3b14821266e1e491517a11",
+      "bytes": 281342,
+      "git_blob_sha1": "2ed33ba56ef9d2d7c5650784de5a69ca492bc89a",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-survival/final/card-05.jpg",
+      "sha256": "a543d38316f93eccefa0f9d354874ea0a72919abf56d38cd977c320084ca3ee8",
+      "bytes": 223245,
+      "git_blob_sha1": "d55c194ab47708f33d5ff22cc6a19cde57d652b3",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-survival/final/card-06.jpg",
+      "sha256": "f22e198b952094e281161ff41b1b9e655aa202cd780efb1b4c50041362f9f71a",
+      "bytes": 271000,
+      "git_blob_sha1": "6d630930874d466fdaa138c93e1170bf21d7e856",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-survival/final/card-07.jpg",
+      "sha256": "eff06cf6be46832ae71f558f1b3069285002aa29141f95489e91cde8d3193d30",
+      "bytes": 242800,
+      "git_blob_sha1": "9b178d7b6dedca7dba4741cdc90fcafb8070c5a9",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-survival/final/card-08.jpg",
+      "sha256": "bb067a95552af7803fd02a3875055083ddb8f0ab1179290e41fb977622038043",
+      "bytes": 296142,
+      "git_blob_sha1": "4ef8fb1a8a579503e27827754e14824e3dff5eae",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-survival/final/card-09.jpg",
+      "sha256": "61a309ed0faae5b702ac158a815eccca8bc812a6bc99ddfef3cb4580a77547af",
+      "bytes": 371693,
+      "git_blob_sha1": "e7961eaefa9c82616dbc7f60ee17e00abad1d040",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-survival/final/current-ten-20261006-survival.mp4",
+      "sha256": "b0e2f1c5c4766c5dbda0dd3c0bcea2fd39c60caef82f4f65559bc117dbf100b1",
+      "bytes": 2673684,
+      "git_blob_sha1": "804c4e40c61c2769afa71a8527d220b9c16434f2",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-zodiac/final/card-01.jpg",
+      "sha256": "648129eba35335a75b3adbb3b203945d705fc846867133e3649d44a0feec9881",
+      "bytes": 210101,
+      "git_blob_sha1": "9c8ac819e52496c8c7c205489a0de381212a0e32",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-zodiac/final/card-02.jpg",
+      "sha256": "958fc4bcbb0ff7121db541befd002c93dd7cdb55bd37d6372b8c2e91a86fc0cd",
+      "bytes": 185559,
+      "git_blob_sha1": "1b92f399355b6e5f9c5bb681392b7ab79f0cda64",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-zodiac/final/card-03.jpg",
+      "sha256": "1adaeeee58475043d9c6f9cfb6bdf023ddbf9589015fcf1559b39003638cb822",
+      "bytes": 186291,
+      "git_blob_sha1": "132a0414afbd6d9be014fda234bbd7709c52d561",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-zodiac/final/card-04.jpg",
+      "sha256": "9ee98232f1979936d804cbfb94d0e3c509eda48dcc1e369138eede147befd9cb",
+      "bytes": 207804,
+      "git_blob_sha1": "365938d19bc22f7d2973a1ed25b33a2d53ffc1fb",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-zodiac/final/card-05.jpg",
+      "sha256": "dcbc1ec8f00ac77189dd20a4581c611dd3ebc07b8816d117cad8738b6b67d7a9",
+      "bytes": 203744,
+      "git_blob_sha1": "50d669ca6f52538cfe893ea4c9fa71f737e6ad11",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-zodiac/final/card-06.jpg",
+      "sha256": "fe8d9e33a16fb8969c5e6b0d4cf039a26fc3048e3adfc80179edf83704406538",
+      "bytes": 207485,
+      "git_blob_sha1": "7f89c09385be691f22155e2c837832168a2f0676",
+      "tree_readback_verified": true
+    },
+    {
+      "path": "jobs/current-ten-20261006-zodiac/final/current-ten-20261006-zodiac.mp4",
+      "sha256": "21c6ced881f0f747a89d94e80134cb985689cb66df73924b22eed15746471cc3",
+      "bytes": 2047910,
+      "git_blob_sha1": "8ddddecc2096152792cab28b42972a7bf664da0e",
+      "tree_readback_verified": true
+    }
+  ],
+  "verification_note": "Each SHA256 was measured from actual reviewed CDN bytes. Git blob SHA1 was derived from those exact bytes, checked against API creation, and all final tree blob IDs and sizes were read back at the verified live commit."
+}

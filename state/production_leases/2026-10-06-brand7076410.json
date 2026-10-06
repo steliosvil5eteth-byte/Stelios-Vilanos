@@ -3,9 +3,9 @@
   "date": "2026-10-06",
   "timezone": "Europe/Athens",
   "owner": "interactive-repair-20261006-0923",
-  "status": "PRODUCTION_IN_PROGRESS_NOT_QA_APPROVED",
+  "status": "COMPLETED_DELIVERY_AND_ARCHIVE",
   "created_at": "2026-10-06T09:36:00Z",
-  "expires_at": "2026-10-06T13:00:00Z",
+  "expires_at": "2026-10-06T10:36:21.578775+00:00",
   "categories": [
     "relationships",
     "survival",
@@ -18,5 +18,15 @@
     "myth_or_truth",
     "international_legend"
   ],
-  "note": "Active user-directed repair and fresh production. Other sessions must reconcile owner status and latest Metricool/Notion/repository before starting competing content for these slots. This is an ownership marker, not a schedule, media approval or publication claim."
+  "note": "Owner completed production, final QA, all 40 Metricool destinations, 10 unique Notion archives, and 45 exact final asset backups. Ownership released. Remaining scheduled posts must publish through their existing IDs. Reconcile those records and repair only actual failed destinations. This marker does not claim that all 40 destinations are already public.",
+  "completed_at": "2026-10-06T10:36:21.578775+00:00",
+  "released_at": "2026-10-06T10:36:21.578775+00:00",
+  "daily_delivery_record": "state/daily_delivery/2026-10-06.json",
+  "logical_posts_delivered": 10,
+  "provider_destinations_delivered": 40,
+  "published_destinations_at_release": 8,
+  "scheduled_destinations_at_release": 32,
+  "notion_archive_pages": 10,
+  "verified_final_media_assets": 45,
+  "media_output_commit": "c66884ef3a26ea565042d414c07e1f0422bd0424"
 }
