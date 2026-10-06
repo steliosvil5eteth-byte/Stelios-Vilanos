@@ -1,0 +1,38 @@
+{
+  "schema_version": 1,
+  "program_label": "CURRENT_TEN_DAILY",
+  "strategy_id": "CURRENT_TEN_DAILY_20260927",
+  "brand": {
+    "id": 7076410,
+    "label": "Ιστορίες που μας αγγίζουν"
+  },
+  "timezone": "Europe/Athens",
+  "date": "2026-10-06",
+  "baseline_slot": {
+    "original_time": "11:00",
+    "category": "zodiac",
+    "format": "single_pair_comparison_carousel",
+    "logical_posts": 1,
+    "comparison_units": 6,
+    "required_sign_coverage": 12
+  },
+  "status": "Blocked",
+  "release_status": null,
+  "observed_at": "2026-10-06T11:30:00+03:00",
+  "blocker_code": "MISSING_CURRENT_EXACT_FINAL_ZODIAC_AFTER_ORIGINAL_SLOT",
+  "blocker": "Δεν υπάρχει σημερινό ενεργό CURRENT_TEN_DAILY zodiac carousel με 6 συγκρίσεις ζευγαριών και όλα τα 12 ζώδια ακριβώς μία φορά ούτε πλήρες YouTube vertical slideshow που να έχει περάσει PASSED_FINAL_REVIEW. Το V2-2026-10-06-ZODIAC-1100 αποκλείστηκε ως legacy. Metricool scheduled=0 και published-history=0· Notion current archive=0· repository current job/manifest=0.",
+  "missed_slot_policy": {
+    "backdate": false,
+    "replace_existing_slot": false,
+    "duplicate_create": false,
+    "split_into_six_uploads": false,
+    "action": "Freeze. Produce/repair one zodiac carousel until PASSED_FINAL_REVIEW, then run fresh dedupe and schedule at the first safe empty future time on 2026-10-06 with draft=false and autoPublish=true."
+  },
+  "evidence": {
+    "metricool_scheduled_count": 0,
+    "metricool_published_history_count": 0,
+    "notion_current_archive_count": 0,
+    "repository_current_job_count": 0,
+    "legacy_v2_excluded": true
+  }
+}
