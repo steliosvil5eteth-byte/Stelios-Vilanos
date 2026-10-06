@@ -1,0 +1,642 @@
+{
+  "report_type": "CURRENT_TEN_DAILY_HOURLY_RECONCILIATION",
+  "generated_at": "2026-10-06T14:37:00+03:00",
+  "timezone": "Europe/Athens",
+  "brand": {
+    "id": 7076410,
+    "label": "Ιστορίες που μας αγγίζουν"
+  },
+  "config_sha": "4daee55a188d949c0c450ca087ac9430d29b3fc4",
+  "logical_posts": 10,
+  "metricool_records": 16,
+  "provider_destinations": 40,
+  "status_counts": {
+    "PUBLISHED": 20,
+    "PENDING": 20
+  },
+  "failed_or_blocked_destinations": 0,
+  "notion_archive_pages": 10,
+  "newly_reconciled_published": [
+    {
+      "series": "survival",
+      "native_id": 389299946,
+      "native_uuid": "-2164958754893312240",
+      "youtube_id": 389305950,
+      "youtube_uuid": "8018420815322697067",
+      "status": "PUBLISHED_4_OF_4",
+      "notion_page": "3f1f2345-b318-81ee-9229-e1ee0d44b487"
+    },
+    {
+      "series": "zodiac",
+      "native_id": 389302501,
+      "native_uuid": "-6188232199383922156",
+      "youtube_id": 389305999,
+      "youtube_uuid": "-3840393506333636054",
+      "status": "PUBLISHED_4_OF_4",
+      "notion_page": "3f1f2345-b318-8149-b6a2-f333ed375511"
+    },
+    {
+      "series": "greece_two_day_trip",
+      "metricool_id": 389315514,
+      "metricool_uuid": "5271619876022142411",
+      "status": "PUBLISHED_4_OF_4",
+      "notion_page": "3f1f2345-b318-810b-a014-f862f1ac647c"
+    }
+  ],
+  "metricool_live_readback": [
+    {
+      "id": 389294554,
+      "uuid": "2522268609407762487",
+      "publicationDate": {
+        "dateTime": "2026-10-06T13:05:00",
+        "timezone": "Europe/Athens"
+      },
+      "title": "Σκύλος Μπάρμαν — Πρώτα η φωτογραφία",
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PUBLISHED",
+          "id": "1355373017651242_122116741347477192",
+          "publicUrl": "https://facebook.com/122101951509477192/posts/122116741347477192",
+          "detailedStatus": "Published"
+        },
+        {
+          "network": "instagram",
+          "status": "PUBLISHED",
+          "id": "https://www.instagram.com/p/DeJh5ejFUYg/",
+          "publicUrl": "https://www.instagram.com/p/DeJh5ejFUYg/",
+          "detailedStatus": "Published"
+        },
+        {
+          "network": "tiktok",
+          "status": "PUBLISHED",
+          "id": "7693493987449081120",
+          "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7693493987449081120",
+          "detailedStatus": "Published"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-7935826148268303480.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-6983141712990696874.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-3885008728061579989.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-9080813065837540984.jpeg"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "tiktokAutoAddMusic": true
+    },
+    {
+      "id": 389297281,
+      "uuid": "-1360804326168376263",
+      "publicationDate": {
+        "dateTime": "2026-10-06T13:25:00",
+        "timezone": "Europe/Athens"
+      },
+      "title": "Η προαγωγή που τους απομάκρυνε",
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PUBLISHED",
+          "id": "1355373017651242_122116752831477192",
+          "publicUrl": "https://facebook.com/122101951509477192/posts/122116752831477192",
+          "detailedStatus": "Published"
+        },
+        {
+          "network": "instagram",
+          "status": "PUBLISHED",
+          "id": "https://www.instagram.com/p/DeJkNi5leN7/",
+          "publicUrl": "https://www.instagram.com/p/DeJkNi5leN7/",
+          "detailedStatus": "Published"
+        },
+        {
+          "network": "tiktok",
+          "status": "PUBLISHED",
+          "id": "7693499205654023457",
+          "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7693499205654023457",
+          "detailedStatus": "Published"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-15956424106260738408.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-13302720121401239240.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-5044672012073281547.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-16565131831830608287.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-5851539623160246425.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-13050940566317527786.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-9466781164645225551.jpeg"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "tiktokAutoAddMusic": true
+    },
+    {
+      "id": 389299946,
+      "uuid": "-2164958754893312240",
+      "publicationDate": {
+        "dateTime": "2026-10-06T13:45:00",
+        "timezone": "Europe/Athens"
+      },
+      "title": "Ηλεκτρική φωτιά: τι κάνεις πριν χαθεί χρόνος",
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PUBLISHED",
+          "id": "1355373017651242_122116760841477192",
+          "publicUrl": "https://facebook.com/122101951509477192/posts/122116760841477192",
+          "detailedStatus": "Published"
+        },
+        {
+          "network": "instagram",
+          "status": "PUBLISHED",
+          "id": "https://www.instagram.com/p/DeJmiIIlS3q/",
+          "publicUrl": "https://www.instagram.com/p/DeJmiIIlS3q/",
+          "detailedStatus": "Published"
+        },
+        {
+          "network": "tiktok",
+          "status": "PUBLISHED",
+          "id": "7693504426941664545",
+          "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7693504426941664545",
+          "detailedStatus": "Published"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-9390424578664759861.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-17201803520285161912.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-12214789244395638260.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-7872285806735053101.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-16337988527113892366.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-4883816618768288053.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-10055989095266849107.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-15940608085730734958.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-3073465919281800078.jpeg"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "tiktokAutoAddMusic": true
+    },
+    {
+      "id": 389301502,
+      "uuid": "-8886581024633958491",
+      "publicationDate": {
+        "dateTime": "2026-10-06T15:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "title": "Ο μεγαλύτερος μαθητής της",
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "id": null,
+          "publicUrl": null,
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "id": null,
+          "publicUrl": null,
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "id": null,
+          "publicUrl": null,
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-14770023520077852904.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-2129335350416881626.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-12786375792211825784.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-2963322273679519313.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-16145330622524203446.jpeg"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "tiktokAutoAddMusic": true
+    },
+    {
+      "id": 389302501,
+      "uuid": "-6188232199383922156",
+      "publicationDate": {
+        "dateTime": "2026-10-06T14:05:00",
+        "timezone": "Europe/Athens"
+      },
+      "title": "Ζώδια: εσείς οι δύο σε escape room",
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PUBLISHED",
+          "id": "1355373017651242_122116768191477192",
+          "publicUrl": "https://facebook.com/122101951509477192/posts/122116768191477192",
+          "detailedStatus": "Published"
+        },
+        {
+          "network": "instagram",
+          "status": "PUBLISHED",
+          "id": "https://www.instagram.com/p/DeJoy0wleH9/",
+          "publicUrl": "https://www.instagram.com/p/DeJoy0wleH9/",
+          "detailedStatus": "Published"
+        },
+        {
+          "network": "tiktok",
+          "status": "PUBLISHED",
+          "id": "7693509502955490593",
+          "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7693509502955490593",
+          "detailedStatus": "Published"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-3659298171682841537.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-4982654754408260386.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-14940969455631770505.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-9311906995407308397.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-17582576430766613732.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-137871174020796964.jpeg"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "tiktokAutoAddMusic": true
+    },
+    {
+      "id": 389302859,
+      "uuid": "7749543297691372767",
+      "publicationDate": {
+        "dateTime": "2026-10-06T20:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "title": "Τα ηλιοτρόπια ακολουθούν τον ήλιο όλη τους τη ζωή;",
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "id": null,
+          "publicUrl": null,
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "id": null,
+          "publicUrl": null,
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "id": null,
+          "publicUrl": null,
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-13418631672141941797.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-653856594620969597.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-8480821225081218485.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-10172432767522332238.jpeg"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "tiktokAutoAddMusic": true
+    },
+    {
+      "id": 389304173,
+      "uuid": "2718272123696792080",
+      "publicationDate": {
+        "dateTime": "2026-10-06T13:15:00",
+        "timezone": "Europe/Athens"
+      },
+      "title": "Σκύλος Μπάρμαν — Πρώτα η φωτογραφία",
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PUBLISHED",
+          "id": "d85futoEtOw",
+          "publicUrl": "https://www.youtube.com/shorts/d85futoEtOw",
+          "detailedStatus": "Published"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-14408891305692183752.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "tiktokAutoAddMusic": null
+    },
+    {
+      "id": 389305899,
+      "uuid": "-551583201493365578",
+      "publicationDate": {
+        "dateTime": "2026-10-06T13:25:00",
+        "timezone": "Europe/Athens"
+      },
+      "title": "Η προαγωγή που τους απομάκρυνε",
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PUBLISHED",
+          "id": "n4fvbCJuTgE",
+          "publicUrl": "https://www.youtube.com/shorts/n4fvbCJuTgE",
+          "detailedStatus": "Published"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-4394160177894275921.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "tiktokAutoAddMusic": null
+    },
+    {
+      "id": 389305950,
+      "uuid": "8018420815322697067",
+      "publicationDate": {
+        "dateTime": "2026-10-06T13:45:00",
+        "timezone": "Europe/Athens"
+      },
+      "title": "Ηλεκτρική φωτιά: τι κάνεις πριν χαθεί χρόνος",
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PUBLISHED",
+          "id": "EgvgbmmApYo",
+          "publicUrl": "https://www.youtube.com/shorts/EgvgbmmApYo",
+          "detailedStatus": "Published"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-11774771589626709686.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "tiktokAutoAddMusic": null
+    },
+    {
+      "id": 389305999,
+      "uuid": "-3840393506333636054",
+      "publicationDate": {
+        "dateTime": "2026-10-06T14:05:00",
+        "timezone": "Europe/Athens"
+      },
+      "title": "Ζώδια: εσείς οι δύο σε escape room",
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PUBLISHED",
+          "id": "K_JH4xnhSkw",
+          "publicUrl": "https://www.youtube.com/shorts/K_JH4xnhSkw",
+          "detailedStatus": "Published"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-4349748086731368800.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "tiktokAutoAddMusic": null
+    },
+    {
+      "id": 389306148,
+      "uuid": "-6615464117624813795",
+      "publicationDate": {
+        "dateTime": "2026-10-06T15:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "title": "Ο μεγαλύτερος μαθητής της",
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "id": null,
+          "publicUrl": null,
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-1968136371303319835.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "tiktokAutoAddMusic": null
+    },
+    {
+      "id": 389306202,
+      "uuid": "4442683070112745282",
+      "publicationDate": {
+        "dateTime": "2026-10-06T20:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "title": "Τα ηλιοτρόπια ακολουθούν τον ήλιο όλη τους τη ζωή;",
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "id": null,
+          "publicUrl": null,
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-4306208915672719731.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "tiktokAutoAddMusic": null
+    },
+    {
+      "id": 389313993,
+      "uuid": "-528001035262738316",
+      "publicationDate": {
+        "dateTime": "2026-10-06T22:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "title": "Τσουκουμογκάμι: όταν τα παλιά αντικείμενα αποκτούν ψυχή",
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "id": null,
+          "publicUrl": null,
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "id": null,
+          "publicUrl": null,
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "id": null,
+          "publicUrl": null,
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "id": null,
+          "publicUrl": null,
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-14954030714088333755.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "tiktokAutoAddMusic": null
+    },
+    {
+      "id": 389314811,
+      "uuid": "-6327864391657438117",
+      "publicationDate": {
+        "dateTime": "2026-10-06T17:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "title": "Οι αμμόλοφοι που τραγουδούν",
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "id": null,
+          "publicUrl": null,
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "id": null,
+          "publicUrl": null,
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "id": null,
+          "publicUrl": null,
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "id": null,
+          "publicUrl": null,
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-3432370607354900943.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "tiktokAutoAddMusic": null
+    },
+    {
+      "id": 389315514,
+      "uuid": "5271619876022142411",
+      "publicationDate": {
+        "dateTime": "2026-10-06T14:30:00",
+        "timezone": "Europe/Athens"
+      },
+      "title": "Διήμερο στις Πρέσπες: δύο λίμνες, ένα νησί",
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PUBLISHED",
+          "id": "28944184295194696",
+          "publicUrl": "https://facebook.com/reel/28944184295194696",
+          "detailedStatus": "Published"
+        },
+        {
+          "network": "instagram",
+          "status": "PUBLISHED",
+          "id": "https://www.instagram.com/reel/DeJrtkXgHC1/",
+          "publicUrl": "https://www.instagram.com/reel/DeJrtkXgHC1/",
+          "detailedStatus": "Published"
+        },
+        {
+          "network": "tiktok",
+          "status": "PUBLISHED",
+          "id": "7693516349095644449",
+          "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7693516349095644449",
+          "detailedStatus": "Published"
+        },
+        {
+          "network": "youtube",
+          "status": "PUBLISHED",
+          "id": "Zoso2CQkz5A",
+          "publicUrl": "https://www.youtube.com/shorts/Zoso2CQkz5A",
+          "detailedStatus": "Published"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-3346417477904985316.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "tiktokAutoAddMusic": null
+    },
+    {
+      "id": 389315750,
+      "uuid": "1071951261703491205",
+      "publicationDate": {
+        "dateTime": "2026-10-06T18:30:00",
+        "timezone": "Europe/Athens"
+      },
+      "title": "Το φαινόμενο ΙΚΕΑ: γιατί αγαπάμε αυτό που φτιάξαμε",
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "id": null,
+          "publicUrl": null,
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "id": null,
+          "publicUrl": null,
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "id": null,
+          "publicUrl": null,
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "id": null,
+          "publicUrl": null,
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-15224941781031624816.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "tiktokAutoAddMusic": null
+    }
+  ],
+  "future_queue": {
+    "dates": [
+      "2026-10-07",
+      "2026-10-08"
+    ],
+    "metricool_records": 0,
+    "notion_pages": 0,
+    "repository_search_results": 1,
+    "minimum_two_complete_days_satisfied": false,
+    "note": "No placeholders created. Future dates remain not QA-passed."
+  },
+  "write_scope": "Notion publication reconciliation plus this immutable repository report only; no Metricool create/retry/update.",
+  "pending_is_not_published": true
+}
