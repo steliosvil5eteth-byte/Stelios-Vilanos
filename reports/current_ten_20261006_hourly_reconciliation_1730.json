@@ -1,0 +1,93 @@
+{
+  "schema_version": "1.0",
+  "reconciliation_type": "CURRENT_TEN_DAILY_HOURLY",
+  "checked_at": "2026-10-06T17:29:15+03:00",
+  "timezone": "Europe/Athens",
+  "brand": {
+    "id": 7076410,
+    "label": "Ιστορίες που μας αγγίζουν",
+    "exclusive": true
+  },
+  "strategy": "CURRENT_TEN_DAILY",
+  "daily_state": {
+    "logical_posts": 10,
+    "metricool_records": 16,
+    "destinations": 40,
+    "published": 28,
+    "pending": 12,
+    "failed": 0,
+    "blocked": 0,
+    "drafts": 0,
+    "auto_publish_false": 0
+  },
+  "newly_reconciled": {
+    "series": "strange_real_phenomenon",
+    "title": "Οι αμμόλοφοι που τραγουδούν",
+    "scheduled_time": "2026-10-06T17:00:00+03:00",
+    "metricool_id": 389314811,
+    "metricool_uuid": "-6327864391657438117",
+    "media": [
+      "https://static.metricool.com/planner/202610/7000636-file-3432370607354900943.mp4"
+    ],
+    "draft": false,
+    "autoPublish": true,
+    "providers": [
+      {
+        "network": "facebook",
+        "id": "2162319017974742",
+        "status": "PUBLISHED",
+        "publicUrl": "https://facebook.com/reel/2162319017974742",
+        "detailedStatus": "Published"
+      },
+      {
+        "network": "instagram",
+        "id": "https://www.instagram.com/reel/DeJ9hHOjRPt/",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.instagram.com/reel/DeJ9hHOjRPt/",
+        "detailedStatus": "Published"
+      },
+      {
+        "network": "tiktok",
+        "id": "7693556475226082593",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7693556475226082593",
+        "detailedStatus": "Published"
+      },
+      {
+        "network": "youtube",
+        "id": "YAxQ1Wz4uiE",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.youtube.com/shorts/YAxQ1Wz4uiE",
+        "detailedStatus": "Published"
+      }
+    ],
+    "notion_page_id": "3f1f2345-b318-8183-80ef-c3cd92c7466d",
+    "notion_status": "Published",
+    "notion_delivery_coverage": "Complete"
+  },
+  "remaining_pending": [
+    {
+      "time": "2026-10-06T18:30:00+03:00",
+      "title": "Το φαινόμενο ΙΚΕΑ: γιατί αγαπάμε αυτό που φτιάξαμε",
+      "destinations": 4
+    },
+    {
+      "time": "2026-10-06T20:00:00+03:00",
+      "title": "Τα ηλιοτρόπια ακολουθούν τον ήλιο όλη τους τη ζωή;",
+      "destinations": 4
+    },
+    {
+      "time": "2026-10-06T22:00:00+03:00",
+      "title": "Τσουκουμογκάμι: όταν τα παλιά αντικείμενα αποκτούν ψυχή",
+      "destinations": 4
+    }
+  ],
+  "guards": {
+    "retry": false,
+    "duplicate": false,
+    "backdate": false,
+    "metricool_mutation": false,
+    "paid_credits": false,
+    "pending_is_published": false
+  }
+}
