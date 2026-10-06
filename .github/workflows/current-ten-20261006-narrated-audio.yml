@@ -6,16 +6,18 @@ on:
       - '.github/workflows/current-ten-20261006-narrated-audio.yml'
       - 'media_jobs/current_ten_20261006_narrated.json'
       - 'tools/render_current_ten_20261006_audio.py'
+      - 'tools/qa_current_ten_20261006_asr.py'
+      - 'tools/save_current_ten_20261006_audio.py'
   workflow_dispatch:
 permissions:
   contents: write
 concurrency:
   group: current-ten-20261006-narrated-audio
-  cancel-in-progress: false
+  cancel-in-progress: true
 jobs:
   audio:
     runs-on: ubuntu-24.04
-    timeout-minutes: 20
+    timeout-minutes: 25
     steps:
       - uses: actions/checkout@v4
       - name: Install established Azure audio dependencies
@@ -30,40 +32,28 @@ jobs:
         run: |
           set -euo pipefail
           python3 tools/render_current_ten_20261006_audio.py --manifest media_jobs/current_ten_20261006_narrated.json --output "$RUNNER_TEMP/narrated-audio"
-      - name: Save audio for exact final production and review
-        run: |
-          set -euo pipefail
-          OUT="$RUNNER_TEMP/audio-output"
-          git fetch origin media-output --depth=1
-          git worktree add -b current-ten-20261006-audio "$OUT" FETCH_HEAD
-          python3 - "$RUNNER_TEMP/narrated-audio" "$OUT" <<'PY'
-          import json, shutil, sys
-          from pathlib import Path
-          src, dst = map(Path, sys.argv[1:])
-          summary = json.loads((src / 'audio-batch-summary.json').read_text())
-          for job in summary:
-              target = dst / 'jobs' / job['id']
-              target.mkdir(parents=True, exist_ok=True)
-              for file in (src / job['id']).iterdir():
-                  if file.is_file():
-                      shutil.copy2(file, target / file.name)
-          report = dst / 'reports' / 'current-ten-20261006-narrated-audio.json'
-          report.parent.mkdir(parents=True, exist_ok=True)
-          shutil.copy2(src / 'audio-batch-summary.json', report)
-          PY
-          git -C "$OUT" config user.name 'github-actions[bot]'
-          git -C "$OUT" config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git -C "$OUT" add jobs/current-ten-20261006-prespes jobs/current-ten-20261006-singing-dunes jobs/current-ten-20261006-ikea-effect jobs/current-ten-20261006-tsukumogami reports/current-ten-20261006-narrated-audio.json
-          if git -C "$OUT" diff --cached --quiet; then
-            echo 'Identical reviewed audio already saved.'
-          else
-            git -C "$OUT" commit -m 'Prepare 06 Oct Nestoras narration; final media review pending'
-            git -C "$OUT" fetch origin media-output
-            git -C "$OUT" rebase FETCH_HEAD
-            git -C "$OUT" push origin HEAD:media-output
-          fi
-      - uses: actions/upload-artifact@v4
+      - name: Preserve downloadable audio before any further processing
+        uses: actions/upload-artifact@v4
         with:
           name: current-ten-20261006-narrated-audio
           path: ${{ runner.temp }}/narrated-audio/
           retention-days: 3
+      - name: Recognize exact WAVs independently without script hints
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+        run: |
+          python3 tools/qa_current_ten_20261006_asr.py --manifest media_jobs/current_ten_20261006_narrated.json --source "$RUNNER_TEMP/narrated-audio" --output "$RUNNER_TEMP/asr-results"
+      - name: Preserve recognition evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: current-ten-20261006-independent-asr
+          path: ${{ runner.temp }}/asr-results/
+          retention-days: 3
+      - name: Save only batch files through GitHub Git Data API
+        if: always()
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          python3 tools/save_current_ten_20261006_audio.py --audio "$RUNNER_TEMP/narrated-audio" --asr "$RUNNER_TEMP/asr-results"
