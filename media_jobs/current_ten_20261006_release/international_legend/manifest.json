@@ -1,0 +1,156 @@
+{
+  "job_id": "current-ten-20261006-tsukumogami",
+  "id": "current-ten-20261006-tsukumogami",
+  "date": "2026-10-06",
+  "brandId": 7076410,
+  "title": "Τσουκουμογκάμι: όταν τα παλιά αντικείμενα αποκτούν ψυχή",
+  "series": "international_legend",
+  "content_key": "international_legend|tsukumogami-japanese-discarded-objects-folklore",
+  "content_fingerprint_sha256": "6311e6a181e39eeed52e5664f5cf3d8263071d21431fdc7b14ad770709f65418",
+  "caption": "Στην ιαπωνική λαογραφία, παλιά αντικείμενα μπορούν να γίνουν τσουκουμογκάμι: παράξενες, τρομακτικές ή αστείες μορφές με τη δική τους ιστορία. Μια παράδοση για τα εργαλεία που οι άνθρωποι κάποτε χρησιμοποιούσαν και ύστερα ξέχασαν.\nΠηγές: Mito City Museum · Victoria and Albert Museum.\nΛαογραφική αφήγηση.\nΟι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη. Συνθετική ελληνική αφήγηση με τη φωνή Nestoras (Azure Speech).\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Τσουκουμογκάμι #Ιαπωνία #Λαογραφία #ΔιεθνείςΘρύλοι #Yokai",
+  "script": "Κι αν η παλιά ομπρέλα που πέταξες μπορούσε να θυμάται πώς της φέρθηκες;\n\nΣτην ιαπωνική λαογραφία υπάρχουν τα τσουκουμογκάμι: παλιά αντικείμενα και εργαλεία που αποκτούν πνεύμα. Μια γνωστή εκδοχή συνδέει τη μεταμόρφωση με τη συμπλήρωση εκατό χρόνων. Μπαίνουμε στον κόσμο του θρύλου, των εικόνων και της αφήγησης.\n\nΣκέψου μια αποθήκη με σκεύη, φανάρια και εργαλεία που κάποτε χρησιμοποιούνταν κάθε μέρα. Οι άνθρωποι τα φρόντιζαν όσο τους ήταν χρήσιμα. Ύστερα τα αντικατέστησαν και τα άφησαν ξεχασμένα ή τα πέταξαν.\n\nΤο Δημοτικό Μουσείο του Μίτο παρουσιάζει μια λαογραφική εκδοχή όπου αυτά τα παραμελημένα αντικείμενα αποκτούν ψυχή, συγκεντρώνονται και αποφασίζουν να τρομάξουν τους ανθρώπους που τα κακομεταχειρίστηκαν. Τη νύχτα ξεχύνονται μαζί στους δρόμους, κρατώντας ακόμη κάτι από την αρχική τους μορφή.\n\nΗ όψη τους μπορεί να είναι τρομακτική, παράξενη ή και αστεία. Έτσι, καθημερινά πράγματα γίνονται χαρακτήρες. Η μορφή του εργαλείου παραμένει αναγνωρίσιμη, αλλά η φαντασία το κάνει να κινείται, να θυμώνει και να διεκδικεί προσοχή.\n\nΟι μουσειακές παρουσιάσεις και οι παλιές παραστάσεις τεκμηριώνουν αυτή την παράδοση ως πολιτισμική δημιουργία. Δεν αποτελούν απόδειξη ότι ένα αντικείμενο μπορεί πραγματικά να ζωντανέψει.\n\nΜια σημερινή, προσωπική ανάγνωση είναι να σκεφτούμε πόσες ιστορίες κουβαλούν τα πράγματα που θεωρούμε άχρηστα: μια επισκευασμένη κούπα, ένα παλιό εργαλείο, ένα φθαρμένο μουσικό όργανο.\n\nΑν ένα αντικείμενο από το σπίτι σου μπορούσε να μιλήσει, ποιο θα είχε την πιο δυνατή ιστορία;\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+  "script_sha256": "8b3643120661dbd04dacfba1eb9dadfca801036e6605ea45d07fc03e92ed3ce3",
+  "word_count": 225,
+  "sources": [
+    {
+      "url": "https://museum-mito.jp/exhibition/1819.html",
+      "ref": "turn11view2",
+      "supports": "Official Japanese museum describes discarded tools gaining souls, gathering and frightening humans, with both scary and humorous forms."
+    },
+    {
+      "url": "https://www.vam.ac.uk/blog/young/lost-and-found-yokai",
+      "ref": "turn9search3",
+      "supports": "V&A indexed page describes everyday objects becoming tsukumogami at 100 years; direct open returns 403."
+    },
+    {
+      "url": "https://hotspringmuseum.taipei/en/content.aspx?id=598&pid=3",
+      "ref": "turn9search8",
+      "supports": "Museum exhibition with Japanese temple scrolls and night parade motif; search indexed paragraph provides discarded-object explanation."
+    }
+  ],
+  "source_records": [
+    {
+      "scene": 1,
+      "prompt": "Create one vertical 9:16 photorealistic cinematic source photograph for a carefully labeled Japanese folklore video. A very old traditional Japanese wagasa paper umbrella stands half-open beside a wooden post in an authentic aged Japanese household storeroom, its ribs and warm weathered paper clearly visible, soft side light through shoji, dust and fine craft detail, quiet intriguing mood. Physical umbrella remains entirely inanimate, NO face or eyes in this scene. Grounded museum-quality material realism, high-end live-action film still, natural subdued colors. One continuous composition, no grid, no collage, no text, no lettering, no logos, no watermark, no infographic, no drawing or animation. Portrait image fills the frame, umbrella centered with space in lower portion for later subtitles.",
+      "original_path": "/workspace/scratch/73e79e1cf9df/generated_images/exec-39898fed-cb84-4f63-b32c-8b550e222269.png",
+      "filename": "01.png",
+      "ai_generated": true,
+      "source_visual_review": "PASSED_SCENE_RELEVANCE_NOT_FINAL_MEDIA_QA",
+      "local_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/sources/01.png",
+      "sha256": "3e4823cafc919a2f9c83c7bfa5b6cd076eb35e211aa986b6b462cf35ed5d3b6b"
+    },
+    {
+      "scene": 2,
+      "prompt": "Create one vertical 9:16 photorealistic live-action cinematic source image for an explicitly labeled Japanese folklore story about forgotten household tools. Interior of a traditional wooden Japanese storehouse: old iron kettle, paper lantern, bamboo broom, ceramic bowls and wooden utensils arranged naturally on worn shelves, fine cracks and repaired joins show years of use, gentle afternoon sunlight from small window, no people. All objects are inanimate and physically plausible, documentary craft detail, warm natural tones and depth. Completely different composition from an umbrella portrait. One scene only, no grid or collage, no text, no lettering on objects, no logos or watermark, no cartoons, no painting. Portrait 9:16 with readable central objects.",
+      "original_path": "/workspace/scratch/73e79e1cf9df/generated_images/exec-2e70d7eb-2357-436c-9d92-d42a08fac7d0.png",
+      "filename": "02.png",
+      "ai_generated": true,
+      "source_visual_review": "PASSED_SCENE_RELEVANCE_NOT_FINAL_MEDIA_QA",
+      "local_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/sources/02.png",
+      "sha256": "88e6f1b8d8b9506279f5b5863f0db7b1ff0f44b6aa5252d0a04403e8359327b6"
+    },
+    {
+      "scene": 3,
+      "prompt": "Generate one vertical 9:16 photorealistic historical live-action film still, illustrative reconstruction for Japanese tsukumogami folklore. A small pile of visibly worn household objects left outside the side of an old Japanese timber home at twilight: cracked ceramic bowl, frayed broom, dented kettle and a tattered folded paper lantern. Foreground discarded objects clearly seen, quiet empty lane stretching away, muted blue evening light and a warm domestic window. No people, no living creatures, no animated faces yet. The scene suggests neglect without misery or filth. Authentic tactile wood, ceramic, paper and metal. One continuous portrait composition, not a grid, no text, no symbols or writing, no logo, no watermark, not a cartoon or illustration.",
+      "original_path": "/workspace/scratch/73e79e1cf9df/generated_images/exec-79196cc3-6bfd-46e6-80b1-85e5be4f4a63.png",
+      "filename": "03.png",
+      "ai_generated": true,
+      "source_visual_review": "PASSED_SCENE_RELEVANCE_NOT_FINAL_MEDIA_QA",
+      "local_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/sources/03.png",
+      "sha256": "7d4f6157afefb63cd2edc55bc9011f647a2b5f34a3f92ed4fc4acf77c2dc2ff1"
+    },
+    {
+      "scene": 4,
+      "prompt": "Generate one vertical 9:16 highly photorealistic cinematic fantasy film still for an EXPLICITLY LABELED JAPANESE FOLKLORE RECONSTRUCTION, not evidence of an actual event. Night in a narrow traditional Japanese wooden village lane. A small mysterious procession of old household objects appears to shuffle together: weathered paper umbrella lifted on one carved wooden foot, battered kettle with two small articulated wooden feet, an old paper lantern with a subtly expressive crease like a face, and a bamboo broom leaning forward as if walking. They retain believable physical material and recognizable tools, practical-effects live-action cinema quality, restrained supernatural movement, moonlight with amber paper-lantern illumination. Uncanny and curious, no violence, no gore, no humans, not cute, not anime, not cartoon, not painting. No grid, no collage, no text, no writing on lanterns, no logos, no watermark. Portrait composition with several distinct old objects visible in the center.",
+      "original_path": "/workspace/scratch/73e79e1cf9df/generated_images/exec-7ebe6df1-5297-4d40-b79e-b3017b8c8e21.png",
+      "filename": "04.png",
+      "ai_generated": true,
+      "source_visual_review": "PASSED_SCENE_RELEVANCE_NOT_FINAL_MEDIA_QA",
+      "local_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/sources/04.png",
+      "sha256": "c1ac06178ceac8188bd342675720833297fe0bd9035e91355873dd2194271d1b"
+    },
+    {
+      "scene": 5,
+      "prompt": "Generate one vertical 9:16 photorealistic cinematic close-up of a fictional tsukumogami paper lantern as a physical practical-effects film prop for an explicitly labeled Japanese folklore reconstruction. A worn cream-colored Japanese hanging paper lantern in a dark old wooden room, an odd but subtle expressive face suggested by torn paper openings and crafted folds, no blood, no fangs, no menace, fascinating rather than frightening. Age cracks, bamboo supports and candle-like warm light are believable. An old umbrella and kettle out of focus behind it, different shot from a night parade. High-end live-action prop photography, tactile material realism, restrained eerie warm lighting. No lettering, no Japanese characters, no text, no logo, no watermark, not illustration, not anime, not cartoon, no grid, no collage. Portrait source image without subtitles.",
+      "original_path": "/workspace/scratch/73e79e1cf9df/generated_images/exec-5eb0e5f1-764b-4593-ab15-1cf980cde14f.png",
+      "filename": "05.png",
+      "ai_generated": true,
+      "source_visual_review": "PASSED_SCENE_RELEVANCE_NOT_FINAL_MEDIA_QA",
+      "local_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/sources/05.png",
+      "sha256": "65e049a7d5bd6ab4b83e00a28869c4f425e5c35f8d0d01ec35ddbfcb3d39d8b5"
+    },
+    {
+      "scene": 6,
+      "prompt": "Create one vertical 9:16 photorealistic documentary-style source photograph for the reflective ending of a Japanese folklore video. Close framing on adult hands gently repairing a well-loved ceramic cup at a small wooden worktable in a warm contemporary home. An old hand tool and a worn small string instrument rest naturally on nearby shelves, showing care and memory. The cup has a tasteful visible repair seam; no sharp broken pieces being handled, no unsafe action, no labels. Natural skin and anatomically accurate hands, quiet afternoon window light, emotionally calm, realistic lived-in details. Objects entirely inanimate, no supernatural elements here. One continuous photograph, no text, no lettering, no logo or watermark, no collage or grid, not drawing or animation. Vertical 9:16 composition.",
+      "original_path": "/workspace/scratch/73e79e1cf9df/generated_images/exec-86b1b830-c0a3-40e6-9bcf-e14a2cfecc75.png",
+      "filename": "06.png",
+      "ai_generated": true,
+      "source_visual_review": "PASSED_SCENE_RELEVANCE_NOT_FINAL_MEDIA_QA",
+      "local_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/sources/06.png",
+      "sha256": "4e2009e98467df9c7ff80f7285eda15a6e2fb6bbdbec829fc181de11635fb92f"
+    }
+  ],
+  "source_registry_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/source_registry.json",
+  "video": {
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/current-ten-20261006-tsukumogami.mp4",
+    "sha256": "7e36b1f2ab0a247b49d9e37cfec5a2b259aefc67c121057e380e5662dbf50b1e",
+    "duration_seconds": 87.966667,
+    "width": 1080,
+    "height": 1920,
+    "video_codec": "h264",
+    "audio_codec": "aac"
+  },
+  "voice": "el-GR-NestorasNeural",
+  "background_music": false,
+  "avatar": false,
+  "filler_padding": false,
+  "qa": {
+    "technical_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/qa.json",
+    "audio_binding_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/audio-binding.json",
+    "visual_language_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/final_visual_language_qa.json",
+    "caption_review_index_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption-review-index.json",
+    "source_asr_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/audio/speech-recognition.json",
+    "direct_listening_claimed": false
+  },
+  "dedupe": {
+    "repository_history_catalog_path": "/workspace/scratch/73e79e1cf9df/repo_fix/repo_history_catalog.json",
+    "repository_history_catalog_sha256": "533adf871a7269b9934b77cb6ae49fee2fb5b68a6d7e0ea9f5f5a3a7d5df58f4",
+    "repository_topics": 133,
+    "repository_semantic_match_found": false,
+    "repository_main_sha_at_root_refresh": "9fa0cebf622a019d4fc910364329b6f17fbcc140",
+    "notion_view_snapshot_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/notion_dedupe_view_snapshot.json",
+    "root_latest_notion_row_count": 164,
+    "root_latest_metricool_history_count": 208,
+    "latest_cross_source_result_reported_by_root": "No prior substantive match for this content concept; root owns live pre-release reconciliation."
+  },
+  "audio_provenance": {
+    "recovery_run_id": 37446913087,
+    "status": "completed",
+    "conclusion": "success",
+    "media_output_commit": "bff42525ff1be6ca184fcdd751bece0f1928cec7"
+  },
+  "publish_ready": true,
+  "root_release_decision_pending": false,
+  "release_gate": "PASSED_ROOT_FINAL_REVIEW",
+  "caveats": [
+    "Present explicitly as folklore, never documented supernatural fact or a belief held by all Japanese people.",
+    "Mito narrative is a museum's presentation of the tradition, not one canonical story with fixed characters.",
+    "Closing meaning about valued possessions is explicitly our modern interpretation.",
+    "Use photorealistic cinematic fantasy objects, not cartoons; avoid graphic horror.",
+    "Do not claim exact historical date of origin or assert every object becomes alive at precisely 100 years."
+  ],
+  "prepared_at_utc": "2026-10-06T10:20:50.013805+00:00",
+  "release_status": "APPROVED_EXACT_FINAL_WITH_TECHNICAL_AUDIO_AND_DOCUMENTED_ASR_VARIANTS",
+  "release_review": {
+    "publish_ready": true,
+    "status": "APPROVED_EXACT_FINAL_WITH_TECHNICAL_AUDIO_AND_DOCUMENTED_ASR_VARIANTS",
+    "reviewer": "root",
+    "reviewed_at": "2026-10-06T10:23:02.107229+00:00",
+    "video_sha256": "7e36b1f2ab0a247b49d9e37cfec5a2b259aefc67c121057e380e5662dbf50b1e",
+    "independent_visual_language_report_sha256": "7c18890d2fa4538ab8f7c69430f5ed4492c015487836accebfb1cfc45ea4cee2",
+    "full_decoded_audio_binding_sha256": "b09e1debfb4a31adddd6afa4d7fa8ceb93d4c39f0e12ee901afc6063aa4a3bfb",
+    "basis": "All final scenes and burned subtitles directly reviewed; complete decoded AAC bound to approved Nestoras WAV; ASR variants reviewed without established missing or content-changing narration defect. Root reviewed full final scene sheet.",
+    "direct_listening": false,
+    "fresh_three_source_dedupe_required_before_create": true
+  }
+}

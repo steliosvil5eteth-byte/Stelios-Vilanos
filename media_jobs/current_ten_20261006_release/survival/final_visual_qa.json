@@ -1,0 +1,380 @@
+{
+  "reviewer": "/root/research_fresh_content",
+  "reviewed_at_utc": "2026-10-06T09:54:22.700146+00:00",
+  "series": "survival",
+  "visual_status": "APPROVED_FOR_EXACT_REVIEWED_FILES",
+  "visual_approval": true,
+  "scope": "Direct visual reading of every final JPEG and one ffmpeg-extracted midpoint frame from every card of the exact final MP4. No subjective listening or continuous real-time playback claimed.",
+  "coverage": {
+    "expected_cards": 9,
+    "jpegs_directly_reviewed": 9,
+    "distinct_mp4_cards_directly_reviewed": 9,
+    "visual_fixes_required": 0
+  },
+  "cards": [
+    {
+      "card": 1,
+      "jpeg_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/card-01.jpg",
+      "jpeg_sha256": "40981e9c18ed9f86e13a0db93bafefb0dc7be93c6f385c53f06e56efc8c985c3",
+      "jpeg_dimensions": [
+        1080,
+        1080
+      ],
+      "jpeg_visual_approved": true,
+      "full_greek_text_read": true,
+      "expected_full_text": "Φωτιά σε ηλεκτρική συσκευή;\nΜην πιάσεις το νερό.",
+      "text_matches_approved_copy": true,
+      "no_missing_or_clipped_text": true,
+      "main_scene_visible": true,
+      "contrast_readable": true,
+      "video_frame": {
+        "card": 1,
+        "time_seconds": 3.5,
+        "extracted_frame_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/qa_frames/card-01-mid.png",
+        "sha256": "c561fcd7180af3fbfcbc6a75f5cc80579c7e04a42ef11070b50320d028c3cb13",
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "direct_visual_approved": true,
+        "full_greek_text_read": true,
+        "same_card_content_as_jpeg": true,
+        "no_new_crop_or_text_loss": true
+      },
+      "review_note": "Κείμενο hook διαβάστηκε πλήρως. Πρίζα/φις με φλόγα, χωρίς χέρι ή νερό. Αρίθμηση 1/9 και τίτλος πλήρεις."
+    },
+    {
+      "card": 2,
+      "jpeg_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/card-02.jpg",
+      "jpeg_sha256": "31ddea1347a6d711e5185325c8ea303b5b70f6b992fc1af343c7b37f2a302322",
+      "jpeg_dimensions": [
+        1080,
+        1080
+      ],
+      "jpeg_visual_approved": true,
+      "full_greek_text_read": true,
+      "expected_full_text": "Φώναξε «Φωτιά!»\nΕιδοποίησε όσους βρίσκονται στο σπίτι. Η ασφαλής έξοδος είναι η προτεραιότητα.",
+      "text_matches_approved_copy": true,
+      "no_missing_or_clipped_text": true,
+      "main_scene_visible": true,
+      "contrast_readable": true,
+      "video_frame": {
+        "card": 2,
+        "time_seconds": 10.5,
+        "extracted_frame_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/qa_frames/card-02-mid.png",
+        "sha256": "550bc98a116962de4ad688d0d752bdec2282e570b2e18ea7c41b1ef4d0dfc414",
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "direct_visual_approved": true,
+        "full_greek_text_read": true,
+        "same_card_content_as_jpeg": true,
+        "no_new_crop_or_text_loss": true
+      },
+      "review_note": "Κείμενο ειδοποίησης/ασφαλούς εξόδου διαβάστηκε πλήρως. Δύο ενήλικες προς καθαρή έξοδο. Αρίθμηση 2/9 πλήρης."
+    },
+    {
+      "card": 3,
+      "jpeg_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/card-03.jpg",
+      "jpeg_sha256": "b32d4f6ef299aba803bdc569032d802c8e8dd5e74aa9a228ff6844f5b6fcf11b",
+      "jpeg_dimensions": [
+        1080,
+        1080
+      ],
+      "jpeg_visual_approved": true,
+      "full_greek_text_read": true,
+      "expected_full_text": "Μην ρίξεις νερό.\nΣε ηλεκτρική φωτιά μπορεί να προκαλέσει ηλεκτροπληξία. Μην προσπαθήσεις να αντιμετωπίσεις μόνος σου τη φωτιά.",
+      "text_matches_approved_copy": true,
+      "no_missing_or_clipped_text": true,
+      "main_scene_visible": true,
+      "contrast_readable": true,
+      "video_frame": {
+        "card": 3,
+        "time_seconds": 18.4,
+        "extracted_frame_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/qa_frames/card-03-mid.png",
+        "sha256": "9e0cfb54199c8a3349234d4eeb761a6d0f7771db0bd51fa13b8a0ab1c37405a0",
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "direct_visual_approved": true,
+        "full_greek_text_read": true,
+        "same_card_content_as_jpeg": true,
+        "no_new_crop_or_text_loss": true
+      },
+      "review_note": "Κείμενο για μη χρήση νερού και μη προσπάθεια κατάσβεσης διαβάστηκε πλήρως. Συνδεδεμένη συσκευή, χωρίς επικίνδυνη πράξη. Αρίθμηση 3/9 πλήρης."
+    },
+    {
+      "card": 4,
+      "jpeg_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/card-04.jpg",
+      "jpeg_sha256": "e47f0633c391a19f20209fbed2e86e484647d602ac3b14821266e1e491517a11",
+      "jpeg_dimensions": [
+        1080,
+        1080
+      ],
+      "jpeg_visual_approved": true,
+      "full_greek_text_read": true,
+      "expected_full_text": "Άφησε τα αντικείμενα.\nΜην καθυστερείς για τσάντες, έγγραφα ή συσκευές. Βγες από ασφαλή διαδρομή.",
+      "text_matches_approved_copy": true,
+      "no_missing_or_clipped_text": true,
+      "main_scene_visible": true,
+      "contrast_readable": true,
+      "video_frame": {
+        "card": 4,
+        "time_seconds": 26.366667,
+        "extracted_frame_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/qa_frames/card-04-mid.png",
+        "sha256": "4571c456b4d18fc819d73922e9306504b31bdd2c8dc6998270be883d044483d2",
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "direct_visual_approved": true,
+        "full_greek_text_read": true,
+        "same_card_content_as_jpeg": true,
+        "no_new_crop_or_text_loss": true
+      },
+      "review_note": "Κείμενο εγκατάλειψης αντικειμένων διαβάστηκε πλήρως. Τσάντα/έγγραφα μένουν πίσω, άνθρωποι απομακρύνονται. Αρίθμηση 4/9 πλήρης."
+    },
+    {
+      "card": 5,
+      "jpeg_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/card-05.jpg",
+      "jpeg_sha256": "a543d38316f93eccefa0f9d354874ea0a72919abf56d38cd977c320084ca3ee8",
+      "jpeg_dimensions": [
+        1080,
+        1080
+      ],
+      "jpeg_visual_approved": true,
+      "full_greek_text_read": true,
+      "expected_full_text": "Κλείνε τις πόρτες πίσω σου.\nΑυτό βοηθά να περιοριστεί η εξάπλωση της φωτιάς και του καπνού.",
+      "text_matches_approved_copy": true,
+      "no_missing_or_clipped_text": true,
+      "main_scene_visible": true,
+      "contrast_readable": true,
+      "video_frame": {
+        "card": 5,
+        "time_seconds": 33.916667,
+        "extracted_frame_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/qa_frames/card-05-mid.png",
+        "sha256": "ed87c893ee585f3b9a8cf73930046135fd27a68d0eee0af812332e3f7e9f9ccf",
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "direct_visual_approved": true,
+        "full_greek_text_read": true,
+        "same_card_content_as_jpeg": true,
+        "no_new_crop_or_text_loss": true
+      },
+      "review_note": "Κείμενο κλεισίματος πορτών διαβάστηκε πλήρως. Χειρισμός κανονικής πόρτας σε καθαρό διάδρομο. Αρίθμηση 5/9 πλήρης."
+    },
+    {
+      "card": 6,
+      "jpeg_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/card-06.jpg",
+      "jpeg_sha256": "f22e198b952094e281161ff41b1b9e655aa202cd780efb1b4c50041362f9f71a",
+      "jpeg_dimensions": [
+        1080,
+        1080
+      ],
+      "jpeg_visual_approved": true,
+      "full_greek_text_read": true,
+      "expected_full_text": "Πριν ανοίξεις πόρτα, έλεγξε τη θερμοκρασία με το πίσω μέρος του χεριού.\nΑν είναι ζεστή, μην την ανοίξεις.",
+      "text_matches_approved_copy": true,
+      "no_missing_or_clipped_text": true,
+      "main_scene_visible": true,
+      "contrast_readable": true,
+      "video_frame": {
+        "card": 6,
+        "time_seconds": 42.3,
+        "extracted_frame_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/qa_frames/card-06-mid.png",
+        "sha256": "5c0df5b62b4dfdaa954dd7d390daf11ff864f4dbe789ca99e160725795c7908b",
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "direct_visual_approved": true,
+        "full_greek_text_read": true,
+        "same_card_content_as_jpeg": true,
+        "no_new_crop_or_text_loss": true
+      },
+      "review_note": "Κείμενο ελέγχου πόρτας με πίσω μέρος χεριού και μη ανοίγματος ζεστής πόρτας διαβάστηκε πλήρως. Η εικόνα δείχνει κλειστή πόρτα χωρίς λανθασμένη χειρονομία. Αρίθμηση 6/9 πλήρης."
+    },
+    {
+      "card": 7,
+      "jpeg_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/card-07.jpg",
+      "jpeg_sha256": "eff06cf6be46832ae71f558f1b3069285002aa29141f95489e91cde8d3193d30",
+      "jpeg_dimensions": [
+        1080,
+        1080
+      ],
+      "jpeg_visual_approved": true,
+      "full_greek_text_read": true,
+      "expected_full_text": "Η έξοδος έχει μπλοκαριστεί;\nΠήγαινε σε δωμάτιο με παράθυρο, κλείσε την πόρτα και κάλεσε 112. Δήλωσε ακριβώς πού βρίσκεσαι.",
+      "text_matches_approved_copy": true,
+      "no_missing_or_clipped_text": true,
+      "main_scene_visible": true,
+      "contrast_readable": true,
+      "video_frame": {
+        "card": 7,
+        "time_seconds": 51.308333,
+        "extracted_frame_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/qa_frames/card-07-mid.png",
+        "sha256": "9eb9559f3d2d6c06eb06a0c162053d43fa848c38626298ded466585d64e82878",
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "direct_visual_approved": true,
+        "full_greek_text_read": true,
+        "same_card_content_as_jpeg": true,
+        "no_new_crop_or_text_loss": true
+      },
+      "review_note": "Κείμενο μπλοκαρισμένης εξόδου/δωματίου με παράθυρο/112/ακριβούς θέσης διαβάστηκε πλήρως. Κλειστή πόρτα, γυναίκα στο τηλέφωνο, χωρίς άλμα από παράθυρο. Αρίθμηση 7/9 πλήρης."
+    },
+    {
+      "card": 8,
+      "jpeg_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/card-08.jpg",
+      "jpeg_sha256": "bb067a95552af7803fd02a3875055083ddb8f0ab1179290e41fb977622038043",
+      "jpeg_dimensions": [
+        1080,
+        1080
+      ],
+      "jpeg_visual_approved": true,
+      "full_greek_text_read": true,
+      "expected_full_text": "Μόλις είσαι σε ασφάλεια, κάλεσε 112 ή 199.\nΠες τι καίγεται, τη διεύθυνση και αν υπάρχουν εγκλωβισμένοι.",
+      "text_matches_approved_copy": true,
+      "no_missing_or_clipped_text": true,
+      "main_scene_visible": true,
+      "contrast_readable": true,
+      "video_frame": {
+        "card": 8,
+        "time_seconds": 60.108333,
+        "extracted_frame_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/qa_frames/card-08-mid.png",
+        "sha256": "0f70b8ec6ca3dcf84bf366c9265ae6c4a206d70b74678504703a2359cf724923",
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "direct_visual_approved": true,
+        "full_greek_text_read": true,
+        "same_card_content_as_jpeg": true,
+        "no_new_crop_or_text_loss": true
+      },
+      "review_note": "Κείμενο 112 ή 199 και πληροφοριών συμβάντος διαβάστηκε πλήρως. Ενήλικας τηλεφωνεί έξω από κτίριο. Αρίθμηση 8/9 πλήρης."
+    },
+    {
+      "card": 9,
+      "jpeg_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/card-09.jpg",
+      "jpeg_sha256": "61a309ed0faae5b702ac158a815eccca8bc812a6bc99ddfef3cb4580a77547af",
+      "jpeg_dimensions": [
+        1080,
+        1080
+      ],
+      "jpeg_visual_approved": true,
+      "full_greek_text_read": true,
+      "expected_full_text": "Βγήκες; Μην ξαναμπείς.\nΠερίμενε τις οδηγίες της Πυροσβεστικής.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "text_matches_approved_copy": true,
+      "no_missing_or_clipped_text": true,
+      "main_scene_visible": true,
+      "contrast_readable": true,
+      "video_frame": {
+        "card": 9,
+        "time_seconds": 67.866667,
+        "extracted_frame_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/qa_frames/card-09-mid.png",
+        "sha256": "2d217dcfb706031034b117710b881428b8237140b46dd2f1b22e2a7a8db9cfb2",
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "direct_visual_approved": true,
+        "full_greek_text_read": true,
+        "same_card_content_as_jpeg": true,
+        "no_new_crop_or_text_loss": true
+      },
+      "review_note": "Κείμενο μη επανεισόδου διαβάστηκε πλήρως. Ενήλικες έξω, πυροσβέστης στο βάθος. Αρίθμηση 9/9 και ακριβές τελικό CTA πλήρη."
+    }
+  ],
+  "video": {
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/current-ten-20261006-survival.mp4",
+    "sha256": "b0e2f1c5c4766c5dbda0dd3c0bcea2fd39c60caef82f4f65559bc117dbf100b1",
+    "visual_approved": true,
+    "duration_seconds": 71.4,
+    "dimensions": [
+      1080,
+      1920
+    ],
+    "frame_rate": "25/1",
+    "frame_extraction_manifest": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/qa_frames/extraction_manifest.json",
+    "all_expected_cards_present_in_reviewed_order": true,
+    "last_card_cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+    "last_card_cta_directly_read": true
+  },
+  "fact_check": {
+    "status": "SUPPORTED_BY_RECHECKED_PRIMARY_SOURCES",
+    "sources": [
+      {
+        "url": "https://www.cumbriafire.gov.uk/electrical-safety",
+        "ref": "turn24view0",
+        "supports": "Never use water on an electrical fire; get out/stay out; no risky intervention."
+      },
+      {
+        "url": "https://www.london-fire.gov.uk/safety/the-home/escape-plan/escape-plan-houses-and-converted-flats/",
+        "ref": "turn25view0",
+        "supports": "Alert others, leave valuables, close doors, test warmth with back of hand, do not open warm door, room/window/phone when trapped, no re-entry."
+      },
+      {
+        "url": "https://www.fireservice.gr/el/-/gia-to-spiti",
+        "ref": "turn26view0",
+        "supports": "Greek fire-service number 199."
+      },
+      {
+        "url": "https://civilprotection.gov.gr/112/pote-pos-kalo",
+        "ref": "turn26view1",
+        "supports": "112 for emergency fire assistance, communicate incident type and location."
+      }
+    ],
+    "qualification": "Safety advice applies to an electrical fire inside the home. Illustrative photographs do not claim an actual incident."
+  },
+  "caption": {
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/caption.txt",
+    "sha256": "b9c611ac52e209ea47882d7072ecbcd44065d64e083fcab9045dd4962c3b8aa3",
+    "matches_manifest": true,
+    "has_exact_cta": true,
+    "hashtags": [
+      "#ΚανόνεςΕπιβίωσης",
+      "#Πυρασφάλεια",
+      "#ΗλεκτρικήΑσφάλεια",
+      "#Προετοιμασία",
+      "#Ασφάλεια"
+    ],
+    "hashtag_count": 5,
+    "ai_illustration_disclosure_present": true
+  },
+  "audio_review": {
+    "listened": false,
+    "asr_performed": false,
+    "subjective_audio_approval": false,
+    "reason": "Parent reports audio input unsupported; no suitable ASR tool exposed and common local ASR packages absent in current Python environment. No purchase or new external service used.",
+    "technical_evidence": {
+      "audio_decode_exit_code": 0,
+      "heard_by_reviewer": false,
+      "asr_performed": false,
+      "asr_modules_available": false,
+      "stats": {
+        "Peak level dB": "-23.100143",
+        "RMS level dB": "-34.113717",
+        "RMS peak dB": "-28.913757",
+        "RMS trough dB": "-67.445039",
+        "Number of samples": "3427328",
+        "Number of NaNs": "0.000000",
+        "Number of Infs": "0.000000",
+        "Number of denormals": "0.000000"
+      },
+      "detected_silences": []
+    },
+    "technical_log": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/qa_frames/audio_technical.log",
+    "level_observation": "Peak -23.10 dBFS and overall RMS about -34 dBFS are low measured levels; subjective audibility/quality has not been judged.",
+    "approval_scope": "Technical decode and signal evidence only; does not attest musical quality, absence of speech by listening, or subjective loudness."
+  },
+  "required_visual_fixes": [],
+  "asset_mutations_performed": false,
+  "release_decision": "Visual review approved for the hashes above. Full release/audio decision remains with root; no external publication performed."
+}

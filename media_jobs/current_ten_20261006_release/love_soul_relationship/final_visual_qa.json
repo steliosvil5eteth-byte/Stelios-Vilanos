@@ -1,0 +1,243 @@
+{
+  "brandId": 7076410,
+  "series": "love_soul_relationship",
+  "title": "Ο μεγαλύτερος μαθητής της",
+  "reviewed_at_utc": "2026-10-06T09:59:54Z",
+  "reviewer": "/root/notion_automation_audit",
+  "visual_review_status": "PASSED_EXACT_FINAL_VISUAL_REVIEW",
+  "full_release_status": "PENDING_ROOT_FINAL_RELEASE_CHECKS",
+  "publish_ready": false,
+  "scope": "Every final JPEG was opened individually at original resolution; one decoded frame from every card of the exact final MP4 was opened individually. Opening and ending frames were also visually checked in a labelled contact sheet.",
+  "cards": [
+    {
+      "number": 1,
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/card-01.jpg",
+      "sha256": "b260dce4f06f66e26c465cf2e27a58a87e878817d136da8d046dc9093806cb50",
+      "source_sha256": "ff572081e6ac4f47bba10f6ce27e8768a08ec50b33ab8dde66f40564f51fe6ae",
+      "jpeg_direct_visual_review": "PASS",
+      "video_frame_direct_visual_review": "PASS",
+      "visible_copy_matches_approved": true,
+      "no_text_clipping_or_overlap": true,
+      "main_font_px": 46,
+      "cta_font_px": null,
+      "observations": "Father arrives holding apron while daughter works; strong hook is complete and legible.",
+      "exact_mp4_frame": {
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/qa_frames/card-01.png",
+        "sha256": "1bbb7c03108ee22f266fd0d485dcb08d5c7ffd378f8cdcd7f022a1b777fdb1f9",
+        "time_seconds": 4.82,
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "card_number": 1,
+        "card_sha256": "b260dce4f06f66e26c465cf2e27a58a87e878817d136da8d046dc9093806cb50",
+        "card_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/card-01.jpg",
+        "source_sha256": "ff572081e6ac4f47bba10f6ce27e8768a08ec50b33ab8dde66f40564f51fe6ae",
+        "main_font_px": 46,
+        "cta_font_px": null,
+        "full_copy_matches_approved": true,
+        "card_start_seconds": 0,
+        "card_duration_seconds": 9.64,
+        "square_copy_psnr_db": 37.818
+      }
+    },
+    {
+      "number": 2,
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/card-02.jpg",
+      "sha256": "eff798095c7f2b84befeb6f9f1b5e78b1669b096ecb71b0af5b2e23720f3945c",
+      "source_sha256": "847f62f215f89bf7c3c80420f54b15a0270ba22b4794d0cf56735aefd8786ad2",
+      "jpeg_direct_visual_review": "PASS",
+      "video_frame_direct_visual_review": "PASS",
+      "visible_copy_matches_approved": true,
+      "no_text_clipping_or_overlap": true,
+      "main_font_px": 43,
+      "cta_font_px": null,
+      "observations": "Classroom scene shows father wearing new apron with other students; full dialogue and final line fit.",
+      "exact_mp4_frame": {
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/qa_frames/card-02.png",
+        "sha256": "a65fa95e8a193320f2238f68a14ba6927a295a26dbcf899e8e4d6bf96019e2f3",
+        "time_seconds": 14.64,
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "card_number": 2,
+        "card_sha256": "eff798095c7f2b84befeb6f9f1b5e78b1669b096ecb71b0af5b2e23720f3945c",
+        "card_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/card-02.jpg",
+        "source_sha256": "847f62f215f89bf7c3c80420f54b15a0270ba22b4794d0cf56735aefd8786ad2",
+        "main_font_px": 43,
+        "cta_font_px": null,
+        "full_copy_matches_approved": true,
+        "card_start_seconds": 9.64,
+        "card_duration_seconds": 10.0,
+        "square_copy_psnr_db": 37.265
+      }
+    },
+    {
+      "number": 3,
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/card-03.jpg",
+      "sha256": "56ed9c032f79665ca9a50cc47e579bb392965010956b304f932b60f3466ed496",
+      "source_sha256": "8c5ba761492387c8b16dc140c35d9aac9591efe336eec68f39f9c8c338e47615",
+      "jpeg_direct_visual_review": "PASS",
+      "video_frame_direct_visual_review": "PASS",
+      "visible_copy_matches_approved": true,
+      "no_text_clipping_or_overlap": true,
+      "main_font_px": 38,
+      "cta_font_px": null,
+      "observations": "Card-specific text panel now starts at y=760. Daughter’s completed bowl and father’s collapsed clay bowl are both clearly visible. All copy is retained at 38 px.",
+      "exact_mp4_frame": {
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/qa_frames/card-03.png",
+        "sha256": "3842624672c3b2db0956bdb64e01dcb28e4ee1d8011fa0c54453fa31a200a5d0",
+        "time_seconds": 24.64,
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "card_number": 3,
+        "card_sha256": "56ed9c032f79665ca9a50cc47e579bb392965010956b304f932b60f3466ed496",
+        "card_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/card-03.jpg",
+        "source_sha256": "8c5ba761492387c8b16dc140c35d9aac9591efe336eec68f39f9c8c338e47615",
+        "main_font_px": 38,
+        "cta_font_px": null,
+        "full_copy_matches_approved": true,
+        "card_start_seconds": 19.64,
+        "card_duration_seconds": 10.0,
+        "square_copy_psnr_db": 37.535
+      }
+    },
+    {
+      "number": 4,
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/card-04.jpg",
+      "sha256": "75d31e9416afb54d68b9215a15422ed2e77ff624fe686c80c1872aa764a3ea2a",
+      "source_sha256": "9993d1beb56d22a63c31ae988d3445b18705a6918354c082ead5af29b1a42537",
+      "jpeg_direct_visual_review": "PASS",
+      "video_frame_direct_visual_review": "PASS",
+      "visible_copy_matches_approved": true,
+      "no_text_clipping_or_overlap": true,
+      "main_font_px": 43,
+      "cta_font_px": null,
+      "observations": "Close conversation at clay table supports apology; all quoted dialogue and name are readable.",
+      "exact_mp4_frame": {
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/qa_frames/card-04.png",
+        "sha256": "c6772f7b5e57579d580e0c5d4f47f31162b3566c7d777d0cd17fd7d60a6e00b1",
+        "time_seconds": 34.46,
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "card_number": 4,
+        "card_sha256": "75d31e9416afb54d68b9215a15422ed2e77ff624fe686c80c1872aa764a3ea2a",
+        "card_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/card-04.jpg",
+        "source_sha256": "9993d1beb56d22a63c31ae988d3445b18705a6918354c082ead5af29b1a42537",
+        "main_font_px": 43,
+        "cta_font_px": null,
+        "full_copy_matches_approved": true,
+        "card_start_seconds": 29.64,
+        "card_duration_seconds": 9.64,
+        "square_copy_psnr_db": 37.708
+      }
+    },
+    {
+      "number": 5,
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/card-05.jpg",
+      "sha256": "23de77dc34d36960e1f153af87eecc5224e7da1a74617fddfd11773eb6375e8b",
+      "source_sha256": "ce5f4d002b6188c598dd4cfe0ac3b5f28c71ccbff2e7f5bebf6fbbc38a1e8a6d",
+      "jpeg_direct_visual_review": "PASS",
+      "video_frame_direct_visual_review": "PASS",
+      "visible_copy_matches_approved": true,
+      "no_text_clipping_or_overlap": true,
+      "main_font_px": 43,
+      "cta_font_px": 36,
+      "observations": "Return-to-class scene shows father continuing the craft. Full final question and exact 36 px CTA are visible.",
+      "exact_mp4_frame": {
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/qa_frames/card-05.png",
+        "sha256": "ccf43b3bd016a881bac6d407d4dc4c74da64387a54d5b4481a4f7a840d39e05d",
+        "time_seconds": 44.28,
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "card_number": 5,
+        "card_sha256": "23de77dc34d36960e1f153af87eecc5224e7da1a74617fddfd11773eb6375e8b",
+        "card_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/card-05.jpg",
+        "source_sha256": "ce5f4d002b6188c598dd4cfe0ac3b5f28c71ccbff2e7f5bebf6fbbc38a1e8a6d",
+        "main_font_px": 43,
+        "cta_font_px": 36,
+        "full_copy_matches_approved": true,
+        "card_start_seconds": 39.28,
+        "card_duration_seconds": 10.0,
+        "square_copy_psnr_db": 36.2
+      }
+    }
+  ],
+  "video": {
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/current-ten-20261006-love-soul-relationship.mp4",
+    "sha256": "a159b4b76f9a69c90427b14857194693b0aa67a8d366e7a6aad848796147808a",
+    "dimensions": [
+      1080,
+      1920
+    ],
+    "duration_seconds": 49.28,
+    "card_count": 5,
+    "each_card_present_in_order": true,
+    "square_cards_preserved_without_crop": true,
+    "copy_readable_after_video_encoding": true,
+    "final_cta_present_and_visible": true,
+    "opening_ending_visual_review": "PASS",
+    "endpoints": [
+      {
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/qa_frames/opening.png",
+        "sha256": "3d0fe5091dceb793c00ffd8c9203e85b35fd3c6a17fe4364ca4352454a7be243",
+        "time_seconds": 0.04,
+        "dimensions": [
+          1080,
+          1920
+        ]
+      },
+      {
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/qa_frames/ending.png",
+        "sha256": "ef4802dccd4b976a1fd48371325920a4eb3b70b615450f80b25c9076479f7b8e",
+        "time_seconds": 49.2,
+        "dimensions": [
+          1080,
+          1920
+        ]
+      }
+    ],
+    "full_decode_errors": ""
+  },
+  "caption": {
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/caption.txt",
+    "sha256": "4db51749f3263476e7f6595a74886ed25784832ecc1ed21f4034ddde4dae5568",
+    "exact_cta_present": true,
+    "fiction_disclosure": true,
+    "ai_disclosure": true,
+    "hashtag_count": 5,
+    "hashtags": [
+      "#Οικογένεια",
+      "#Πατέρας",
+      "#Κόρη",
+      "#Ιστορίες",
+      "#Αγάπη"
+    ]
+  },
+  "audio": {
+    "audibly_reviewed": false,
+    "approval_granted": false,
+    "gain_changed": false,
+    "technical_measurement_only": "[Parsed_volumedetect_0 @ 0x56453c099f80] n_samples: 0\n[Parsed_volumedetect_0 @ 0x56453c0993c0] n_samples: 4730880\n[Parsed_volumedetect_0 @ 0x56453c0993c0] mean_volume: -34.2 dB\n[Parsed_volumedetect_0 @ 0x56453c0993c0] max_volume: -23.1 dB",
+    "note": "No listening claim. Original music and gain from the root renderer were preserved. Root owns any separate audio decision and final release."
+  },
+  "unique_source_images": 5,
+  "visual_blockers": [],
+  "minimum_main_text_font_px": 38,
+  "minimum_cta_font_px": 36,
+  "small_secondary_series_labels_and_disclosure_are_separate": true,
+  "layout_adjustments": "Card-specific local adjustments in final/fiction_layout_adjustments.py; shared renderer unchanged; original music unchanged.",
+  "evidence_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/qa_extraction_evidence.json",
+  "evidence_sha256": "63c785de7705f1f97baf702735d14e2a877eca2572d4faa06ceff23b6e77b03a",
+  "endpoint_contact_sheet_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/fiction_endpoint_contact.png",
+  "endpoint_contact_sheet_sha256": "9c2778d1ec55e891ca1133b757304c443e333836bf393982f5eef7ed68281485",
+  "fresh_deduplication_and_external_publication_owned_by_root": true,
+  "no_external_mutations_performed": true
+}

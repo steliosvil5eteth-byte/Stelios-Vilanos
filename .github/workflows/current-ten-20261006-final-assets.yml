@@ -1,0 +1,65 @@
+name: Current Ten 20261006 final delivered media archive
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/current-ten-20261006-final-assets.yml'
+      - 'media_jobs/current_ten_20261006_final_delivery_assets.json'
+      - 'tools/save_current_ten_20261006_final_assets.py'
+permissions:
+  contents: write
+concurrency:
+  group: current-ten-20261006-final-assets
+  cancel-in-progress: false
+jobs:
+  archive:
+    if: github.repository == 'steliosvil5eteth-byte/Stelios-Vilanos'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - name: Read only the bounded manifest, journal, and saver from main
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          persist-credentials: false
+          sparse-checkout-cone-mode: false
+          sparse-checkout: |
+            tools/save_current_ten_20261006_final_assets.py
+            media_jobs/current_ten_20261006_final_delivery_assets.json
+            media_jobs/current_ten_20261006_delivery_journal.json
+      - name: Install media metadata inspector
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+      - name: Download only the 45 confirmed static Metricool files and validate reviewed hashes
+        id: validate_assets
+        run: |
+          set -euo pipefail
+          python3 tools/save_current_ten_20261006_final_assets.py --mode validate --manifest media_jobs/current_ten_20261006_final_delivery_assets.json --work "$RUNNER_TEMP/final-delivery-archive"
+      - name: Preserve validation evidence before persistence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: current-ten-20261006-final-assets-validation
+          path: |
+            ${{ runner.temp }}/final-delivery-archive/validated_assets.json
+            ${{ runner.temp }}/final-delivery-archive/failure-validate.json
+          retention-days: 7
+          if-no-files-found: warn
+      - name: Persist 45 final assets through bounded Git Data API and verify live paths
+        if: always() && steps.validate_assets.outcome == 'success'
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          python3 tools/save_current_ten_20261006_final_assets.py --mode persist --manifest media_jobs/current_ten_20261006_final_delivery_assets.json --work "$RUNNER_TEMP/final-delivery-archive"
+      - name: Preserve exact persistence outcome and readback evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: current-ten-20261006-final-assets-persistence
+          path: |
+            ${{ runner.temp }}/final-delivery-archive/persistence-result.json
+            ${{ runner.temp }}/final-delivery-archive/failure-persist.json
+          retention-days: 7
+          if-no-files-found: warn

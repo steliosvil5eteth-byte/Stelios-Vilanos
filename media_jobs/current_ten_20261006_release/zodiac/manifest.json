@@ -1,0 +1,317 @@
+{
+  "brandId": 7076410,
+  "date": "2026-10-06",
+  "series": "zodiac",
+  "job_id": "current-ten-20261006-zodiac",
+  "title": "Ζώδια: εσείς οι δύο σε escape room",
+  "content_key": "zodiac|escape-room-puzzle-team-reactions|six-pairs-all-twelve",
+  "caption": "Εσείς οι δύο σε escape room: δώδεκα ζώδια και έξι συγκρίσεις για τη συνεργασία μέσα στη σχέση. Ποιος διαβάζει τις οδηγίες, ποιος ψάχνει κρυφούς μηχανισμούς και ποιος δοκιμάζει τα πάντα;\n\nΠώς συνεργάζεστε εσύ και το ταίρι σου;\n\nΧιουμοριστικά, συμβολικά πορτρέτα για ψυχαγωγία· το ζώδιο δεν καθορίζει τη συμπεριφορά μας. Εικόνες δημιουργημένες με ΤΝ.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ζώδια #Αστρολογία #Χιούμορ #EscapeRoom #Παρέα",
+  "cards": [
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/card-01.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/zodiac/01.png",
+      "source_sha256": "cc401651e01f1bcf170dde6c587751caf7bd77b80209fab28dc8c26c0864f86d",
+      "sha256": "dc53c786881c7c6ba1900282f2731a6c6954a5085b37bdceae24c5790810d87d",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "ΕΣΕΙΣ ΟΙ ΔΥΟ ΣΕ ESCAPE ROOM\nΠοιος λύνει τον γρίφο;\nΚριός: Δοκιμάζει πρώτος το λουκέτο.\nΠαρθένος: Διαβάζει πρώτα τις οδηγίες.",
+      "typography": {
+        "size": 46,
+        "lines": [
+          "ΕΣΕΙΣ ΟΙ ΔΥΟ ΣΕ ESCAPE ROOM",
+          "Ποιος λύνει τον γρίφο;",
+          "Κριός: Δοκιμάζει πρώτος το λουκέτο.",
+          "Παρθένος: Διαβάζει πρώτα τις",
+          "οδηγίες."
+        ],
+        "bottom": 958,
+        "text": "ΕΣΕΙΣ ΟΙ ΔΥΟ ΣΕ ESCAPE ROOM\nΠοιος λύνει τον γρίφο;\nΚριός: Δοκιμάζει πρώτος το λουκέτο.\nΠαρθένος: Διαβάζει πρώτα τις οδηγίες."
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/card-02.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/zodiac/02.png",
+      "source_sha256": "1928c10b7abe111b7104e429a601b48ccb9be5b73eacc10fba3bd0cd4e22f546",
+      "sha256": "96c1e1c44ae66a2ac2c284ed1da19e822f5ee792e7cb19bd052a3a9b9e41518d",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Ταύρος: «Το κλειδί πρέπει να είναι κάπου εδώ».\nΥδροχόος: Ελέγχει μήπως το ράφι είναι μυστικός διακόπτης.",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "Ταύρος: «Το κλειδί πρέπει να είναι κάπου",
+          "εδώ».",
+          "Υδροχόος: Ελέγχει μήπως το ράφι είναι",
+          "μυστικός διακόπτης."
+        ],
+        "bottom": 888,
+        "text": "Ταύρος: «Το κλειδί πρέπει να είναι κάπου εδώ».\nΥδροχόος: Ελέγχει μήπως το ράφι είναι μυστικός διακόπτης."
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/card-03.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/zodiac/03.png",
+      "source_sha256": "6615af134b8d04d5c1ea31cd6994eff2ce6425efde76442de7aab8a196efec6a",
+      "sha256": "779512e617db9a197e91882c1e3073b22cf1d006d8b0368573343ebea35846dc",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Δίδυμοι: Λένε δυνατά πέντε πιθανές λύσεις.\nΣκορπιός: Προσέχει τη μοναδική λεπτομέρεια που κανείς δεν κοίταξε.",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "Δίδυμοι: Λένε δυνατά πέντε πιθανές λύσεις.",
+          "Σκορπιός: Προσέχει τη μοναδική",
+          "λεπτομέρεια που κανείς δεν κοίταξε."
+        ],
+        "bottom": 833,
+        "text": "Δίδυμοι: Λένε δυνατά πέντε πιθανές λύσεις.\nΣκορπιός: Προσέχει τη μοναδική λεπτομέρεια που κανείς δεν κοίταξε."
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/card-04.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/zodiac/04.png",
+      "source_sha256": "41921c78fc9b7007dc5e627181985d421d52a63e521e40affe032d599a455f7a",
+      "sha256": "2b30f10fcf40cd77569e5ca3460aa978d55d1b3d63c097f18b10703b430ee917",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Καρκίνος: «Μην αφήσουμε κανέναν μόνο στο σκοτάδι».\nΑιγόκερως: «Έχουμε είκοσι λεπτά. Ποιος αναλαμβάνει τι;»",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "Καρκίνος: «Μην αφήσουμε κανέναν μόνο στο",
+          "σκοτάδι».",
+          "Αιγόκερως: «Έχουμε είκοσι λεπτά. Ποιος",
+          "αναλαμβάνει τι;»"
+        ],
+        "bottom": 888,
+        "text": "Καρκίνος: «Μην αφήσουμε κανέναν μόνο στο σκοτάδι».\nΑιγόκερως: «Έχουμε είκοσι λεπτά. Ποιος αναλαμβάνει τι;»"
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/card-05.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/zodiac/05.png",
+      "source_sha256": "0b01c6d8ac6e310675d9b708cbf3c382878d755519f8712732abee5093f0dc7b",
+      "sha256": "c057745fab522899e734841fd5f8b2e478de2cf69ee264cca6fc64f823f7a37d",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Λέων: Ανακοινώνει τη λύση σαν να κέρδισε βραβείο.\nΙχθύες: Έχουν ήδη φανταστεί την ιστορία πίσω από τον γρίφο.",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "Λέων: Ανακοινώνει τη λύση σαν να κέρδισε",
+          "βραβείο.",
+          "Ιχθύες: Έχουν ήδη φανταστεί την ιστορία",
+          "πίσω από τον γρίφο."
+        ],
+        "bottom": 888,
+        "text": "Λέων: Ανακοινώνει τη λύση σαν να κέρδισε βραβείο.\nΙχθύες: Έχουν ήδη φανταστεί την ιστορία πίσω από τον γρίφο."
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/card-06.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/zodiac/06.png",
+      "source_sha256": "285c83be368b893e9859605b0db8cf87e148d9297e16331869bf9daf543064ef",
+      "sha256": "b5445b79bfd7f0578335912e7d5babe84e203ecaacf46cf2f307bd17f39919b0",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Ζυγός: Ζυγίζει τις δύο επικρατέστερες λύσεις.\nΤοξότης: «Να δοκιμάσουμε και τις δύο!»\nΠώς συνεργάζεστε εσύ και το ταίρι σου;\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "Ζυγός: Ζυγίζει τις δύο επικρατέστερες",
+          "λύσεις.",
+          "Τοξότης: «Να δοκιμάσουμε και τις δύο!»",
+          "Πώς συνεργάζεστε εσύ και το ταίρι σου;"
+        ],
+        "bottom": 888,
+        "text": "Ζυγός: Ζυγίζει τις δύο επικρατέστερες λύσεις.\nΤοξότης: «Να δοκιμάσουμε και τις δύο!»\nΠώς συνεργάζεστε εσύ και το ταίρι σου;"
+      }
+    }
+  ],
+  "video": {
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/current-ten-20261006-zodiac.mp4",
+    "sha256": "21c6ced881f0f747a89d94e80134cb985689cb66df73924b22eed15746471cc3",
+    "duration": 51.08,
+    "seconds_per_card": [
+      9.633333333333335,
+      7.966666666666667,
+      7.55,
+      7.133333333333334,
+      8.8,
+      10.0
+    ],
+    "width": 1080,
+    "height": 1920,
+    "audio": "One original instrumental composition synthesized locally; no voice",
+    "complete_card_count": 6,
+    "ffprobe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "width": 1080,
+          "height": 1920,
+          "coded_width": 1080,
+          "coded_height": 1920,
+          "closed_captions": 0,
+          "film_grain": 0,
+          "has_b_frames": 2,
+          "sample_aspect_ratio": "1:1",
+          "display_aspect_ratio": "9:16",
+          "pix_fmt": "yuv420p",
+          "level": 40,
+          "color_range": "tv",
+          "color_space": "bt470bg",
+          "chroma_location": "center",
+          "field_order": "progressive",
+          "refs": 1,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "25/1",
+          "avg_frame_rate": "25/1",
+          "time_base": "1/12800",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 653824,
+          "duration": "51.080000",
+          "bit_rate": "153964",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "1277",
+          "extradata_size": 50,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "vendor_id": "[0][0][0][0]",
+            "encoder": "Lavc60.31.102 libx264"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "initial_padding": 0,
+          "id": "0x2",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 2451840,
+          "duration": "51.080000",
+          "bit_rate": "160376",
+          "nb_frames": "2396",
+          "extradata_size": 5,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "SoundHandler",
+            "vendor_id": "[0][0][0][0]"
+          }
+        }
+      ],
+      "format": {
+        "filename": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/current-ten-20261006-zodiac.mp4",
+        "nb_streams": 2,
+        "nb_programs": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "51.080000",
+        "size": "2047910",
+        "bit_rate": "320737",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "encoder": "Lavf60.16.100"
+        }
+      }
+    }
+  },
+  "source_references": [],
+  "release_status": "PASSED_DIRECT_VISUAL_AND_FULL_DECODED_AUDIO_VERIFICATION",
+  "publish_ready": true,
+  "release_review": {
+    "reviewer": "root",
+    "reviewed_at": "2026-10-06T10:08:34.812138+00:00",
+    "video_sha256": "21c6ced881f0f747a89d94e80134cb985689cb66df73924b22eed15746471cc3",
+    "visual_report_sha256": "3ee40b745cc09c8a8439830c7af45648a02ff91bedddcda3a120544a65d0c3b0",
+    "audio_report_sha256": "9c08479a266faffcd70fc3bb57d36773fc6908d67de42480df1d3921e48b3297",
+    "audio_method": "Entire decoded audio compared to the deterministic original instrumental composition; one audio stream; no voice",
+    "direct_listening": false,
+    "fresh_dedupe_required_before_create": true
+  }
+}

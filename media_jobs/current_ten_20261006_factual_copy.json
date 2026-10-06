@@ -1,0 +1,234 @@
+{
+  "status": "PROPOSED",
+  "date": "2026-10-06",
+  "brand_id": 7076410,
+  "intended_baseline": "CURRENT_TEN_DAILY",
+  "scope": "Research and proposed copy only. No assets generated, no scheduling or publishing. All items require fresh full duplicate/history check and final media QA.",
+  "history_checked": [
+    "/workspace/scratch/73e79e1cf9df/notion_archive_audit.json",
+    "/workspace/scratch/73e79e1cf9df/metricool_history.json"
+  ],
+  "rejected_candidates": [
+    "Galaxidi",
+    "hair ice",
+    "invisible gorilla",
+    "bats blind",
+    "selkie",
+    "Great Wall visible from space or Moon",
+    "bull sees red",
+    "lightning same place"
+  ],
+  "items": [
+    {
+      "series": "survival",
+      "title": "Ηλεκτρική φωτιά: τι κάνεις πριν χαθεί χρόνος",
+      "format": "carousel",
+      "expected_card_count": 9,
+      "cards": [
+        "Φωτιά σε ηλεκτρική συσκευή;\nΜην πιάσεις το νερό.",
+        "Φώναξε «Φωτιά!»\nΕιδοποίησε όσους βρίσκονται στο σπίτι. Η ασφαλής έξοδος είναι η προτεραιότητα.",
+        "Μην ρίξεις νερό.\nΣε ηλεκτρική φωτιά μπορεί να προκαλέσει ηλεκτροπληξία. Μην προσπαθήσεις να αντιμετωπίσεις μόνος σου τη φωτιά.",
+        "Άφησε τα αντικείμενα.\nΜην καθυστερείς για τσάντες, έγγραφα ή συσκευές. Βγες από ασφαλή διαδρομή.",
+        "Κλείνε τις πόρτες πίσω σου.\nΑυτό βοηθά να περιοριστεί η εξάπλωση της φωτιάς και του καπνού.",
+        "Πριν ανοίξεις πόρτα, έλεγξε τη θερμοκρασία με το πίσω μέρος του χεριού.\nΑν είναι ζεστή, μην την ανοίξεις.",
+        "Η έξοδος έχει μπλοκαριστεί;\nΠήγαινε σε δωμάτιο με παράθυρο, κλείσε την πόρτα και κάλεσε 112. Δήλωσε ακριβώς πού βρίσκεσαι.",
+        "Μόλις είσαι σε ασφάλεια, κάλεσε 112 ή 199.\nΠες τι καίγεται, τη διεύθυνση και αν υπάρχουν εγκλωβισμένοι.",
+        "Βγήκες; Μην ξαναμπείς.\nΠερίμενε τις οδηγίες της Πυροσβεστικής.\nΑν σας άρεσε, ακολουθήστε για περισσότερα."
+      ],
+      "caption": "Ηλεκτρική φωτιά στο σπίτι: ειδοποιούμε, απομακρυνόμαστε με ασφάλεια και καλούμε βοήθεια. Ποτέ νερό σε ηλεκτρική φωτιά. Αποθήκευσέ το και συζήτησε την έξοδο του σπιτιού με όσους μένουν μαζί σου.\nΠηγές: Cumbria Fire & Rescue Service · London Fire Brigade · Πυροσβεστικό Σώμα Ελλάδος.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΚανόνεςΕπιβίωσης #Πυρασφάλεια #ΗλεκτρικήΑσφάλεια #Προετοιμασία #Ασφάλεια",
+      "sources": [
+        {
+          "url": "https://www.cumbriafire.gov.uk/electrical-safety",
+          "ref": "turn11view1",
+          "supports": "Water/electrical-fire danger; get out, stay out; warning signs."
+        },
+        {
+          "url": "https://www.london-fire.gov.uk/safety/the-home/escape-plan/escape-plan-houses-and-converted-flats/",
+          "ref": "turn13view5",
+          "supports": "Alert everyone; leave valuables; close doors; warm door; blocked exit room; never reenter."
+        },
+        {
+          "url": "https://www.fireservice.gr/el/-/gia-to-spiti",
+          "ref": "turn6view3",
+          "supports": "Greek fire-service number 199."
+        },
+        {
+          "url": "https://civilprotection.gov.gr/112/pote-pos-kalo",
+          "ref": "turn12search15",
+          "supports": "Greek 112, emergency type and location."
+        }
+      ],
+      "caveats": [
+        "Guidance concerns a fire originating inside the home, not a universal instruction to enter a smoke-filled common stairwell.",
+        "No forced demonstration, extinguisher tutorial, live battery fire, touching damaged wiring, or unsafe firefighting.",
+        "Use distinct scene-specific photorealistic images; never depict anyone throwing water onto electrics.",
+        "Do not add an instruction to collect belongings or delay exit to reach the electrical board."
+      ],
+      "content_key": "survival|electrical-house-fire-safe-evacuation-no-water"
+    },
+    {
+      "series": "greece_two_day_trip",
+      "title": "Διήμερο στις Πρέσπες: δύο λίμνες, ένα νησί",
+      "format": "narrated_vertical_video",
+      "narration": "Ένα νησί που το φτάνεις περπατώντας πάνω από τη λίμνη. Αυτό είναι το πρώτο μας ραντεβού με τις Πρέσπες.\n\nΤην πρώτη μέρα ξεκινάμε από την πεζογέφυρα του Αγίου Αχιλλείου, στη Μικρή Πρέσπα. Περνάμε αργά, κοιτάζουμε το νερό και φτάνουμε στο νησάκι. Ανάμεσα στα σημαντικότερα μνημεία του βρίσκονται τα ερείπια της βασιλικής του Αγίου Αχιλλείου, που συνδέεται με τον τσάρο Σαμουήλ και τον δέκατο αιώνα. Εδώ η ιστορία μπαίνει μέσα στο τοπίο.\n\nΣυνεχίζουμε προς τον Άγιο Γερμανό. Μια βόλτα στον οικισμό και στον παραδοσιακό νερόμυλο αλλάζει τον ρυθμό της ημέρας. Για επίσκεψη στο εσωτερικό, επιβεβαιώνουμε προηγουμένως τη λειτουργία του.\n\nΤη δεύτερη μέρα πηγαίνουμε στους Ψαράδες, στη Μεγάλη Πρέσπα. Περπατάμε στο χωριό και καθόμαστε δίπλα στη λίμνη. Από εδώ ξεκινούν πλωτές περιηγήσεις προς τα ασκηταριά και τις βραχογραφίες των απόκρημνων ακτών. Τις κανονίζουμε με τοπικό επαγγελματία, ανάλογα με τη διαθεσιμότητα και τον καιρό.\n\nΣτο τραπέζι, αναζητούμε τις γεύσεις του τόπου: φασόλια Πρεσπών και τοπικά πιάτα ψαριών. Κρατάμε χρόνο και για παρατήρηση πουλιών από απόσταση, χωρίς να πλησιάζουμε φωλιές ή να ενοχλούμε την άγρια ζωή.\n\nΑυτό το διήμερο χωρά δύο λίμνες, ένα νησί και μικρούς οικισμούς που αξίζουν την προσοχή μας, χωρίς να γεμίσουμε κάθε ώρα με συνεχείς μετακινήσεις. Εσύ ποια στάση θα κρατούσες περισσότερο: το νησάκι, τη βαρκάδα ή τη βόλτα στο χωριό;\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "word_count": 217,
+      "caption": "Ένα διήμερο στις Πρέσπες: Άγιος Αχίλλειος, Άγιος Γερμανός και Ψαράδες. Για εσωτερικές επισκέψεις και βαρκάδα, επιβεβαιώνουμε λειτουργία, διαθεσιμότητα και τοπικές συνθήκες.\nΠηγές: Δήμος Πρεσπών / VisitPrespes.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Πρέσπες #ΔιήμεροΣτηνΕλλάδα #ΆγιοςΑχίλλειος #Ψαράδες #Ταξίδι",
+      "sources": [
+        {
+          "url": "https://visitprespes.gr/el/30/ανακαλυψτε/130/άγιος-αχίλλειος",
+          "ref": "turn10view7",
+          "supports": "Island in Small Prespa; basilica and Tsar Samuel, late tenth century."
+        },
+        {
+          "url": "https://visitprespes.gr/el/ανακαλυψτε/32/1-οικισμοι/123/ψαράδες",
+          "ref": "turn10view8",
+          "supports": "Psarades on Great Prespa; traditional village; fishing food; boat routes and hermitages."
+        },
+        {
+          "url": "https://visitprespes.gr/el/εμπειριεσ/43/δραστηριότητες",
+          "ref": "turn13view3",
+          "supports": "Agios Achilleios footbridge; Agios Germanos watermill; gastronomy; birdwatching."
+        }
+      ],
+      "caveats": [
+        "Itinerary is an editorial suggestion, not a bookable service or confirmed timetable.",
+        "Do not promise open hours, prices, boat availability, or bird sightings.",
+        "Visuals must match real Prespa geography. Label generated representations honestly. Do not substitute random Greek lakes or seaside villages."
+      ]
+    },
+    {
+      "series": "strange_real_phenomenon",
+      "title": "Οι αμμόλοφοι που τραγουδούν",
+      "format": "narrated_vertical_video",
+      "narration": "Στη μέση της ερήμου, η άμμος μπορεί να τραγουδήσει. Ένα βαθύ, παρατεταμένο βουητό βγαίνει από την πλαγιά, καθώς κόκκοι άμμου αρχίζουν να γλιστρούν.\n\nΤο φαινόμενο λέγεται «τραγούδι των αμμόλοφων» και έχει καταγραφεί επιστημονικά. Δεν το παράγει κάθε αμμόλοφος. Χρειάζονται κατάλληλη άμμος, ξηρές συνθήκες και μια ροή κόκκων που μπορεί να οργανωθεί με συγκεκριμένο τρόπο.\n\nΤο 2006, ο Στεφάν Ντουαντί και οι συνεργάτες του συνέκριναν αμμόλοφους και πραγματοποίησαν πειράματα στο πεδίο και στο εργαστήριο. Τα αποτελέσματά τους συνέδεσαν τον ήχο με τη σχετική, συγχρονισμένη κίνηση των κόκκων. Η έκπληξη ήταν ότι κατάφεραν να παράγουν τον ήχο στο εργαστήριο, χωρίς να χρειάζονται έναν ολόκληρο αμμόλοφο.\n\nΣε μεταγενέστερη μελέτη, το 2012, οι ερευνητές εξέτασαν και τη σημασία του μεγέθους των κόκκων. Δείγματα με διαφορετικές ομάδες μεγεθών μπορούσαν να δίνουν περισσότερες από μία συχνότητες. Έτσι, η σύνθεση της άμμου βοηθά να καταλάβουμε γιατί διαφορετικές ροές ακούγονται διαφορετικά.\n\nΟι επιστημονικές εξηγήσεις για τον ακριβή μηχανισμό έχουν συζητηθεί και συγκριθεί. Το ασφαλές συμπέρασμα είναι ότι πρόκειται για πραγματικό ακουστικό φαινόμενο, συνδεδεμένο με την κίνηση και τις ιδιότητες της άμμου.\n\nΣκέψου την εικόνα: ένας τεράστιος λόφος, φαινομενικά ακίνητος, και αμέτρητοι μικροσκοπικοί κόκκοι που μαζί παράγουν έναν ήχο αρκετά δυνατό ώστε να τον ακούσεις.\n\nΑν βρισκόσουν εκεί χωρίς να ξέρεις την εξήγηση, από πού θα νόμιζες ότι έρχεται το βουητό;\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "word_count": 218,
+      "caption": "Ορισμένες ροές ξηρής άμμου παράγουν ένα βαθύ, παρατεταμένο βουητό. Επιστημονικά πειράματα συνδέουν το φαινόμενο με την κίνηση και τις ιδιότητες των κόκκων.\nΠηγές: Douady et al., Physical Review Letters (2006), DOI 10.1103/PhysRevLett.97.018002 · Dagois-Bohy et al., Geophysical Research Letters (2012), DOI 10.1029/2012GL052540.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΠαράξεναΦαινόμενα #Αμμόλοφοι #Φυσική #Επιστήμη #Έρημος",
+      "sources": [
+        {
+          "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.018002",
+          "ref": "turn10view4",
+          "supports": "Field and lab comparison; synchronized relative grain motion; sound reproduced without whole dune."
+        },
+        {
+          "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2012GL052540",
+          "ref": "turn13search0",
+          "supports": "Dry suitable sand; multiple grain-size peaks associated with multiple frequencies; debate about mechanism."
+        },
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/19880153/",
+          "ref": "turn13search1",
+          "supports": "Not all dunes sing; dry sand and slip-face avalanches; laboratory phenomenon."
+        }
+      ],
+      "caveats": [
+        "Do not frame a single proposed model as universally settled; competing mechanism literature exists.",
+        "Do not conflate low booming dunes with all squeaky beach sand.",
+        "Do not claim recorded natural audio unless a licensed actual recording is used. Narrated version has no added music or fake scientific audio.",
+        "Do not instruct viewers to disturb protected dunes or deliberately trigger avalanches."
+      ]
+    },
+    {
+      "series": "documented_experiments",
+      "title": "Το φαινόμενο ΙΚΕΑ: γιατί αγαπάμε αυτό που φτιάξαμε",
+      "format": "narrated_vertical_video",
+      "narration": "Γιατί ένα απλό κουτί μπορεί να σου φαίνεται πολυτιμότερο, μόνο και μόνο επειδή το συναρμολόγησες εσύ;\n\nΦαντάσου δύο παρόμοια κουτιά αποθήκευσης. Το ένα είναι έτοιμο. Για το άλλο, ακολούθησες οδηγίες, ένωσες κομμάτια και αφιέρωσες χρόνο. Πόσο θα πλήρωνες για το καθένα;\n\nΤο 2012, οι ερευνητές Μάικλ Νόρτον, Ντάνιελ Μότσον και Νταν Αριέλι δημοσίευσαν τέσσερις μελέτες για αυτό που ονόμασαν «φαινόμενο ΙΚΕΑ». Οι συμμετέχοντες συναρμολόγησαν κουτιά, δίπλωσαν οριγκάμι και έφτιαξαν κατασκευές με τουβλάκια.\n\nΣτις συνθήκες των πειραμάτων, η προσωπική κατασκευή αύξανε την αξία που απέδιδαν στο αποτέλεσμα. Μερικοί δημιουργοί οριγκάμι αξιολογούσαν τις ερασιτεχνικές κατασκευές τους κοντά στην αξία έργων ειδικών και περίμεναν ότι οι άλλοι θα συμφωνούσαν μαζί τους.\n\nΥπήρχε όμως ένας κρίσιμος όρος: η ολοκλήρωση. Όταν οι συμμετέχοντες δεν ολοκλήρωναν το έργο ή έπρεπε να διαλύσουν την κατασκευή τους, η αύξηση της αποτίμησης υποχωρούσε.\n\nΜια δεύτερη δημοσιευμένη εργασία των ίδιων ερευνητών εξέτασε τον ρόλο της αίσθησης ικανότητας: το συναίσθημα ότι κατάφερες να δημιουργήσεις κάτι συνδεόταν με τη μεγαλύτερη αξία που του έδινες.\n\nΑυτά είναι ευρήματα από συγκεκριμένα πειράματα και δείγματα. Η εφαρμογή τους σε κάθε άνθρωπο ή σε πολύ διαφορετικές καταστάσεις χρειάζεται ξεχωριστό έλεγχο.\n\nΜας δίνουν, πάντως, μια χρήσιμη ερώτηση: όταν υπερασπιζόμαστε κάτι που φτιάξαμε, αξιολογούμε το αποτέλεσμα ή και τον κόπο που βάλαμε μέσα του;\n\nΕσύ ποιο αντικείμενο αγαπάς περισσότερο επειδή το έφτιαξες μόνος σου;\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "word_count": 222,
+      "caption": "Μπορεί ο κόπος σου να αλλάξει την αξία που δίνεις σε ένα απλό αντικείμενο; Οι μελέτες για το «φαινόμενο ΙΚΕΑ» εξέτασαν ακριβώς αυτή την ερώτηση, με κρίσιμο όρο την ολοκλήρωση του έργου.\nΠηγές: Norton, Mochon & Ariely (2012), Journal of Consumer Psychology, DOI 10.1016/j.jcps.2011.08.002 · International Journal of Research in Marketing, DOI 10.1016/j.ijresmar.2012.05.001.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ψυχολογία #Πειράματα #IKEAEffect #ΑνθρώπινηΣυμπεριφορά #Επιστήμη",
+      "sources": [
+        {
+          "url": "https://dash.harvard.edu/entities/publication/73120378-ce76-6bd4-e053-0100007fdf3b",
+          "ref": "turn11view0",
+          "supports": "2012 original article; four studies with boxes/origami/Lego; overvaluation; completion/dismantling boundary."
+        },
+        {
+          "url": "https://dash.harvard.edu/entities/publication/73120378-be26-6bd4-e053-0100007fdf3b",
+          "ref": "turn10view3",
+          "supports": "Companion original study examining competence as mediator."
+        }
+      ],
+      "caveats": [
+        "Use bounded claims about study samples and tasks; no claim that every person is affected identically.",
+        "No invented percentages, experimental headcounts, effect sizes, or 'mind control' claims.",
+        "Opening two-box scenario is a simplifying illustration, not documentary footage.",
+        "Use ordinary unbranded storage boxes/origami/bricks, not a simulated IKEA advertisement. Filmic experiment scenes must be labelled as AI reconstruction when generated."
+      ]
+    },
+    {
+      "series": "myth_or_truth",
+      "title": "Τα ηλιοτρόπια ακολουθούν τον ήλιο όλη τους τη ζωή;",
+      "format": "carousel",
+      "expected_card_count": 4,
+      "cards": [
+        "ΜΥΘΟΣ Ή ΑΛΗΘΕΙΑ;\nΤα ηλιοτρόπια ακολουθούν τον ήλιο όλη τους τη ζωή;",
+        "ΜΥΘΟΣ.\nΤα νεαρά ηλιοτρόπια, όσο αναπτύσσονται, παρακολουθούν την πορεία του ήλιου από την ανατολή στη δύση.",
+        "Τη νύχτα στρέφονται ξανά ανατολικά.\nΗ κίνηση συνδέεται με άνιση ανάπτυξη του βλαστού και το εσωτερικό τους βιολογικό ρολόι.",
+        "Στα ώριμα, ανθισμένα φυτά η κίνηση σταματά.\nΤα άνθη μένουν συνήθως στραμμένα ανατολικά.\nΑν σας άρεσε, ακολουθήστε για περισσότερα."
+      ],
+      "caption": "Το νεαρό ηλιοτρόπιο κινείται με τον ημερήσιο κύκλο. Στην ώριμη ανθοφορία, η παρακολούθηση του ήλιου σταματά και τα άνθη συνήθως κοιτούν ανατολικά.\nΠηγή: Atamian et al., Science (2016), DOI 10.1126/science.aaf9793 · UC Davis.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΜύθοςΉΑλήθεια #Ηλιοτρόπια #Φυτά #Βιολογία #Φύση",
+      "sources": [
+        {
+          "url": "https://pubmed.ncbi.nlm.nih.gov/27493185/",
+          "ref": "turn12search0",
+          "supports": "Atamian et al. 2016 original study; young tracking vs mature east orientation."
+        },
+        {
+          "url": "https://zenodo.org/records/889822",
+          "ref": "turn12search3",
+          "supports": "Original Science study archived abstract and DOI."
+        },
+        {
+          "url": "https://biology.ucdavis.edu/news/how-sunflowers-see-sun",
+          "ref": "turn13view1",
+          "supports": "2023 official explanation of differential stem growth and biological clock; mechanism nuance."
+        }
+      ],
+      "caveats": [
+        "The myth is tracking throughout life, not that young sunflowers never track.",
+        "Card 2 and card 3 must show young growing plants/buds; fully mature flowers should not be depicted rotating.",
+        "Do not add a universal numerical pollinator benefit; later work qualifies some broader pollination claims.",
+        "Use relative sun/plant direction accurately, without fake time-lapse presented as observation."
+      ],
+      "content_key": "myth_or_truth|sunflower-young-heliotropism-mature-east-facing"
+    },
+    {
+      "series": "international_legends",
+      "title": "Τσουκουμογκάμι: όταν τα παλιά αντικείμενα αποκτούν ψυχή",
+      "format": "narrated_vertical_video",
+      "narration": "Κι αν η παλιά ομπρέλα που πέταξες μπορούσε να θυμάται πώς της φέρθηκες;\n\nΣτην ιαπωνική λαογραφία υπάρχουν τα τσουκουμογκάμι: παλιά αντικείμενα και εργαλεία που αποκτούν πνεύμα. Μια γνωστή εκδοχή συνδέει τη μεταμόρφωση με τη συμπλήρωση εκατό χρόνων. Μπαίνουμε στον κόσμο του θρύλου, των εικόνων και της αφήγησης.\n\nΣκέψου μια αποθήκη με σκεύη, φανάρια και εργαλεία που κάποτε χρησιμοποιούνταν κάθε μέρα. Οι άνθρωποι τα φρόντιζαν όσο τους ήταν χρήσιμα. Ύστερα τα αντικατέστησαν και τα άφησαν ξεχασμένα ή τα πέταξαν.\n\nΤο Δημοτικό Μουσείο του Μίτο παρουσιάζει μια λαογραφική εκδοχή όπου αυτά τα παραμελημένα αντικείμενα αποκτούν ψυχή, συγκεντρώνονται και αποφασίζουν να τρομάξουν τους ανθρώπους που τα κακομεταχειρίστηκαν. Τη νύχτα ξεχύνονται μαζί στους δρόμους, κρατώντας ακόμη κάτι από την αρχική τους μορφή.\n\nΗ όψη τους μπορεί να είναι τρομακτική, παράξενη ή και αστεία. Έτσι, καθημερινά πράγματα γίνονται χαρακτήρες. Η μορφή του εργαλείου παραμένει αναγνωρίσιμη, αλλά η φαντασία το κάνει να κινείται, να θυμώνει και να διεκδικεί προσοχή.\n\nΟι μουσειακές παρουσιάσεις και οι παλιές παραστάσεις τεκμηριώνουν αυτή την παράδοση ως πολιτισμική δημιουργία. Δεν αποτελούν απόδειξη ότι ένα αντικείμενο μπορεί πραγματικά να ζωντανέψει.\n\nΜια σημερινή, προσωπική ανάγνωση είναι να σκεφτούμε πόσες ιστορίες κουβαλούν τα πράγματα που θεωρούμε άχρηστα: μια επισκευασμένη κούπα, ένα παλιό εργαλείο, ένα φθαρμένο μουσικό όργανο.\n\nΑν ένα αντικείμενο από το σπίτι σου μπορούσε να μιλήσει, ποιο θα είχε την πιο δυνατή ιστορία;\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "word_count": 225,
+      "caption": "Στην ιαπωνική λαογραφία, παλιά αντικείμενα μπορούν να γίνουν τσουκουμογκάμι: παράξενες, τρομακτικές ή αστείες μορφές με τη δική τους ιστορία. Μια παράδοση για τα εργαλεία που οι άνθρωποι κάποτε χρησιμοποιούσαν και ύστερα ξέχασαν.\nΠηγές: Mito City Museum · Victoria and Albert Museum.\nΛαογραφική αφήγηση.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Τσουκουμογκάμι #Ιαπωνία #Λαογραφία #ΔιεθνείςΘρύλοι #Yokai",
+      "sources": [
+        {
+          "url": "https://museum-mito.jp/exhibition/1819.html",
+          "ref": "turn11view2",
+          "supports": "Official Japanese museum describes discarded tools gaining souls, gathering and frightening humans, with both scary and humorous forms."
+        },
+        {
+          "url": "https://www.vam.ac.uk/blog/young/lost-and-found-yokai",
+          "ref": "turn9search3",
+          "supports": "V&A indexed page describes everyday objects becoming tsukumogami at 100 years; direct open returns 403."
+        },
+        {
+          "url": "https://hotspringmuseum.taipei/en/content.aspx?id=598&pid=3",
+          "ref": "turn9search8",
+          "supports": "Museum exhibition with Japanese temple scrolls and night parade motif; search indexed paragraph provides discarded-object explanation."
+        }
+      ],
+      "caveats": [
+        "Present explicitly as folklore, never documented supernatural fact or a belief held by all Japanese people.",
+        "Mito narrative is a museum's presentation of the tradition, not one canonical story with fixed characters.",
+        "Closing meaning about valued possessions is explicitly our modern interpretation.",
+        "Use photorealistic cinematic fantasy objects, not cartoons; avoid graphic horror.",
+        "Do not claim exact historical date of origin or assert every object becomes alive at precisely 100 years."
+      ]
+    }
+  ],
+  "production_reminders": [
+    "All items remain PROPOSED pending latest full source-of-truth reconciliation and duplicate check immediately before every create.",
+    "Narration word count does not prove duration. Measure final Nestoras audio and conform to the active hard duration gate without filler or trailing dead air.",
+    "All narrated assets require Greek burned-in synchronized subtitles, active Nestoras voice, no avatar, and no extra music.",
+    "Append an accurate AI disclosure only if it describes the actual final media (e.g. generated visual reconstruction and synthetic Nestoras narration).",
+    "Exact final files still need full visual/audio QA before any PASSED_FINAL_REVIEW or scheduling.",
+    "Source URLs are research references, not licences to reuse source photos, logos, figures, footage or audio."
+  ]
+}

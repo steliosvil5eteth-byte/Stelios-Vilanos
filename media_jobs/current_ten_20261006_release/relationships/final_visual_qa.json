@@ -1,0 +1,307 @@
+{
+  "brandId": 7076410,
+  "series": "relationships",
+  "title": "Η προαγωγή που τους απομάκρυνε",
+  "reviewed_at_utc": "2026-10-06T09:59:54Z",
+  "reviewer": "/root/notion_automation_audit",
+  "visual_review_status": "PASSED_EXACT_FINAL_VISUAL_REVIEW",
+  "full_release_status": "PENDING_ROOT_FINAL_RELEASE_CHECKS",
+  "publish_ready": false,
+  "scope": "Every final JPEG was opened individually at original resolution; one decoded frame from every card of the exact final MP4 was opened individually. Opening and ending frames were also visually checked in a labelled contact sheet.",
+  "cards": [
+    {
+      "number": 1,
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/card-01.jpg",
+      "sha256": "cc618107a95ec78bd5e37ef5461301fb3dd5048d243be615e760c0bcf9138a7a",
+      "source_sha256": "b665e19562d28c6ba5ec44fb337d6402b287cc960e9f3dcddc93deb3cf375224",
+      "jpeg_direct_visual_review": "PASS",
+      "video_frame_direct_visual_review": "PASS",
+      "visible_copy_matches_approved": true,
+      "no_text_clipping_or_overlap": true,
+      "main_font_px": 46,
+      "cta_font_px": null,
+      "observations": "Bold promotion hook is fully visible; Eleni arrives with work folder while Petros reacts. Distinct opening scene.",
+      "exact_mp4_frame": {
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/qa_frames/card-01.png",
+        "sha256": "e862f0be40dc7962917aa369c37aa6ccf525dec211a0e9c8104ff552a9ebeedc",
+        "time_seconds": 3.5,
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "card_number": 1,
+        "card_sha256": "cc618107a95ec78bd5e37ef5461301fb3dd5048d243be615e760c0bcf9138a7a",
+        "card_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/card-01.jpg",
+        "source_sha256": "b665e19562d28c6ba5ec44fb337d6402b287cc960e9f3dcddc93deb3cf375224",
+        "main_font_px": 46,
+        "cta_font_px": null,
+        "full_copy_matches_approved": true,
+        "card_start_seconds": 0,
+        "card_duration_seconds": 7.0,
+        "square_copy_psnr_db": 39.759
+      }
+    },
+    {
+      "number": 2,
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/card-02.jpg",
+      "sha256": "23fbaef9961752ec635fabb74ad3e8bc832711cc820d6102623291c837f08a84",
+      "source_sha256": "c1babd45049d66b8154d18018dc1421143459b262af632aaabf8c63913d442f8",
+      "jpeg_direct_visual_review": "PASS",
+      "video_frame_direct_visual_review": "PASS",
+      "visible_copy_matches_approved": true,
+      "no_text_clipping_or_overlap": true,
+      "main_font_px": 43,
+      "cta_font_px": null,
+      "observations": "Both partners are visible in a separate dinner-table composition; full three-sentence narrative reads cleanly.",
+      "exact_mp4_frame": {
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/qa_frames/card-02.png",
+        "sha256": "9d9c2162be8b9ea629729dbf66b3ecb49088233c8078c5b305caed62e158c480",
+        "time_seconds": 12.0,
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "card_number": 2,
+        "card_sha256": "23fbaef9961752ec635fabb74ad3e8bc832711cc820d6102623291c837f08a84",
+        "card_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/card-02.jpg",
+        "source_sha256": "c1babd45049d66b8154d18018dc1421143459b262af632aaabf8c63913d442f8",
+        "main_font_px": 43,
+        "cta_font_px": null,
+        "full_copy_matches_approved": true,
+        "card_start_seconds": 7.0,
+        "card_duration_seconds": 10.0,
+        "square_copy_psnr_db": 38.492
+      }
+    },
+    {
+      "number": 3,
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/card-03.jpg",
+      "sha256": "207590add9897a013ac96cfc0ad8253df1cbcd40744c768e75f445ffdc20c711",
+      "source_sha256": "510f5c8938ecf7ff6519db5020381a10bc069027cc7ba463481d7c1a94381def",
+      "jpeg_direct_visual_review": "PASS",
+      "video_frame_direct_visual_review": "PASS",
+      "visible_copy_matches_approved": true,
+      "no_text_clipping_or_overlap": true,
+      "main_font_px": 43,
+      "cta_font_px": null,
+      "observations": "Boundary-setting dialogue has complete quotation marks and no clipped Greek letters; distinct closer composition.",
+      "exact_mp4_frame": {
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/qa_frames/card-03.png",
+        "sha256": "e9aece453fa9851fb92630ea6050f1e2413e8dbe644ec31c75778a7f74d646c3",
+        "time_seconds": 22.0,
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "card_number": 3,
+        "card_sha256": "207590add9897a013ac96cfc0ad8253df1cbcd40744c768e75f445ffdc20c711",
+        "card_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/card-03.jpg",
+        "source_sha256": "510f5c8938ecf7ff6519db5020381a10bc069027cc7ba463481d7c1a94381def",
+        "main_font_px": 43,
+        "cta_font_px": null,
+        "full_copy_matches_approved": true,
+        "card_start_seconds": 17.0,
+        "card_duration_seconds": 10.0,
+        "square_copy_psnr_db": 39.209
+      }
+    },
+    {
+      "number": 4,
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/card-04.jpg",
+      "sha256": "e99dc2c34d803e541b92303fa26c82fc4122bbb679f3914deae8e9d2b828a6aa",
+      "source_sha256": "6660a976ad5ccc771d043ff600e9bc17bb26f2088f2525ccee662509705c91c0",
+      "jpeg_direct_visual_review": "PASS",
+      "video_frame_direct_visual_review": "PASS",
+      "visible_copy_matches_approved": true,
+      "no_text_clipping_or_overlap": true,
+      "main_font_px": 43,
+      "cta_font_px": null,
+      "observations": "Petros owns envy in an over-the-shoulder composition; face and full admission remain unobscured.",
+      "exact_mp4_frame": {
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/qa_frames/card-04.png",
+        "sha256": "bae17a5ebc557e37e5caf6a02966b65124fa212c3c5d7e2a17efcfda4d7f11fd",
+        "time_seconds": 31.2,
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "card_number": 4,
+        "card_sha256": "e99dc2c34d803e541b92303fa26c82fc4122bbb679f3914deae8e9d2b828a6aa",
+        "card_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/card-04.jpg",
+        "source_sha256": "6660a976ad5ccc771d043ff600e9bc17bb26f2088f2525ccee662509705c91c0",
+        "main_font_px": 43,
+        "cta_font_px": null,
+        "full_copy_matches_approved": true,
+        "card_start_seconds": 27.0,
+        "card_duration_seconds": 8.4,
+        "square_copy_psnr_db": 39.611
+      }
+    },
+    {
+      "number": 5,
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/card-05.jpg",
+      "sha256": "767e76cd6e0dcd5d7355c1737a2b72d8a36b2def77a1d84afae7751ce3ab9428",
+      "source_sha256": "f6e7a7cb997551a8a965c08bfbca87a389c29903d3bf44701a321e19cde235a8",
+      "jpeg_direct_visual_review": "PASS",
+      "video_frame_direct_visual_review": "PASS",
+      "visible_copy_matches_approved": true,
+      "no_text_clipping_or_overlap": true,
+      "main_font_px": 43,
+      "cta_font_px": null,
+      "observations": "Reverse angle centers Eleni’s response; all copy remains readable against the dark lower panel.",
+      "exact_mp4_frame": {
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/qa_frames/card-05.png",
+        "sha256": "34b98389868562c0df6c168dafc5b1a2b4df61f919dbe9a56abdb5eef37923af",
+        "time_seconds": 40.22,
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "card_number": 5,
+        "card_sha256": "767e76cd6e0dcd5d7355c1737a2b72d8a36b2def77a1d84afae7751ce3ab9428",
+        "card_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/card-05.jpg",
+        "source_sha256": "f6e7a7cb997551a8a965c08bfbca87a389c29903d3bf44701a321e19cde235a8",
+        "main_font_px": 43,
+        "cta_font_px": null,
+        "full_copy_matches_approved": true,
+        "card_start_seconds": 35.4,
+        "card_duration_seconds": 9.64,
+        "square_copy_psnr_db": 39.363
+      }
+    },
+    {
+      "number": 6,
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/card-06.jpg",
+      "sha256": "955de764fdb3e04c6fb783ea5031feae9c3d5abbfd06dc4b80aff6bce1da7d4d",
+      "source_sha256": "2d04f697a4c17111661a815123821f11ff57c61a6f1aa5ff0c184064700118c5",
+      "jpeg_direct_visual_review": "PASS",
+      "video_frame_direct_visual_review": "PASS",
+      "visible_copy_matches_approved": true,
+      "no_text_clipping_or_overlap": true,
+      "main_font_px": 43,
+      "cta_font_px": null,
+      "observations": "Friends at dinner create a distinct scene; Eleni speaks and Petros listens; full narrative is present.",
+      "exact_mp4_frame": {
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/qa_frames/card-06.png",
+        "sha256": "92412546c5617984ec273ef68da0a766cb0532e782fb044165103e9b8529009c",
+        "time_seconds": 50.04,
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "card_number": 6,
+        "card_sha256": "955de764fdb3e04c6fb783ea5031feae9c3d5abbfd06dc4b80aff6bce1da7d4d",
+        "card_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/card-06.jpg",
+        "source_sha256": "2d04f697a4c17111661a815123821f11ff57c61a6f1aa5ff0c184064700118c5",
+        "main_font_px": 43,
+        "cta_font_px": null,
+        "full_copy_matches_approved": true,
+        "card_start_seconds": 45.04,
+        "card_duration_seconds": 10.0,
+        "square_copy_psnr_db": 38.742
+      }
+    },
+    {
+      "number": 7,
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/card-07.jpg",
+      "sha256": "e61cea586e95a3893db753f33e888e899cac6e680b9e11a032b5bef0be2021b7",
+      "source_sha256": "8dc5a823b6b3890025f66f4ee40e3bcd3d2402cbbef37b88317af18e5f5b4da9",
+      "jpeg_direct_visual_review": "PASS",
+      "video_frame_direct_visual_review": "PASS",
+      "visible_copy_matches_approved": true,
+      "no_text_clipping_or_overlap": true,
+      "main_font_px": 43,
+      "cta_font_px": 36,
+      "observations": "Final outdoor scene preserves cautious continuation rather than an instant resolution. Full question and exact CTA are visible; CTA is 36 px.",
+      "exact_mp4_frame": {
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/qa_frames/card-07.png",
+        "sha256": "a7f0a9e1d340c053601bf1918bcfff95570861351eed74ad047cdb7846e278f7",
+        "time_seconds": 60.04,
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "card_number": 7,
+        "card_sha256": "e61cea586e95a3893db753f33e888e899cac6e680b9e11a032b5bef0be2021b7",
+        "card_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/card-07.jpg",
+        "source_sha256": "8dc5a823b6b3890025f66f4ee40e3bcd3d2402cbbef37b88317af18e5f5b4da9",
+        "main_font_px": 43,
+        "cta_font_px": 36,
+        "full_copy_matches_approved": true,
+        "card_start_seconds": 55.04,
+        "card_duration_seconds": 10.0,
+        "square_copy_psnr_db": 37.362
+      }
+    }
+  ],
+  "video": {
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/current-ten-20261006-relationships.mp4",
+    "sha256": "e48a5fd287e27c23c2106aec37f3aa6c580cc475d72392ea5d80d89a7dd9a2fa",
+    "dimensions": [
+      1080,
+      1920
+    ],
+    "duration_seconds": 65.04,
+    "card_count": 7,
+    "each_card_present_in_order": true,
+    "square_cards_preserved_without_crop": true,
+    "copy_readable_after_video_encoding": true,
+    "final_cta_present_and_visible": true,
+    "opening_ending_visual_review": "PASS",
+    "endpoints": [
+      {
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/qa_frames/opening.png",
+        "sha256": "9c2e22c8130dc0eed5e1991f04a5c2a95348792a3f633fe6244485456ea48eff",
+        "time_seconds": 0.04,
+        "dimensions": [
+          1080,
+          1920
+        ]
+      },
+      {
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/qa_frames/ending.png",
+        "sha256": "3f0ac4e3b5a07c4551fbc4f7a9337bd38259902ff05f8b1eb8346000c379317a",
+        "time_seconds": 64.96,
+        "dimensions": [
+          1080,
+          1920
+        ]
+      }
+    ],
+    "full_decode_errors": ""
+  },
+  "caption": {
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/caption.txt",
+    "sha256": "7173a3a315967ed644b3fc91edd30af168f5809cfaf8adff72316c5ae7d3325e",
+    "exact_cta_present": true,
+    "fiction_disclosure": true,
+    "ai_disclosure": true,
+    "hashtag_count": 5,
+    "hashtags": [
+      "#Ιστορίες",
+      "#Σχέσεις",
+      "#Αγάπη",
+      "#Εμπιστοσύνη",
+      "#Συντροφικότητα"
+    ]
+  },
+  "audio": {
+    "audibly_reviewed": false,
+    "approval_granted": false,
+    "gain_changed": false,
+    "technical_measurement_only": "[Parsed_volumedetect_0 @ 0x564487d64dc0] n_samples: 0\n[Parsed_volumedetect_0 @ 0x564487cc2b00] n_samples: 6244352\n[Parsed_volumedetect_0 @ 0x564487cc2b00] mean_volume: -34.1 dB\n[Parsed_volumedetect_0 @ 0x564487cc2b00] max_volume: -23.1 dB",
+    "note": "No listening claim. Original music and gain from the root renderer were preserved. Root owns any separate audio decision and final release."
+  },
+  "unique_source_images": 7,
+  "visual_blockers": [],
+  "minimum_main_text_font_px": 43,
+  "minimum_cta_font_px": 36,
+  "small_secondary_series_labels_and_disclosure_are_separate": true,
+  "layout_adjustments": "Card-specific local adjustments in final/fiction_layout_adjustments.py; shared renderer unchanged; original music unchanged.",
+  "evidence_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/qa_extraction_evidence.json",
+  "evidence_sha256": "7ed9d51b7ef0d4cd171d5b2d1f82b4cb4c11f84e780f69d725095c1dda5cd3aa",
+  "endpoint_contact_sheet_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/fiction_endpoint_contact.png",
+  "endpoint_contact_sheet_sha256": "9c2778d1ec55e891ca1133b757304c443e333836bf393982f5eef7ed68281485",
+  "fresh_deduplication_and_external_publication_owned_by_root": true,
+  "no_external_mutations_performed": true
+}

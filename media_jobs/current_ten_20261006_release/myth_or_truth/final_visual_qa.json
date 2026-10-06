@@ -1,0 +1,215 @@
+{
+  "reviewer": "/root/research_fresh_content",
+  "reviewed_at_utc": "2026-10-06T09:54:22.709706+00:00",
+  "series": "myth_or_truth",
+  "visual_status": "APPROVED_FOR_EXACT_REVIEWED_FILES",
+  "visual_approval": true,
+  "scope": "Direct visual reading of every final JPEG and one ffmpeg-extracted midpoint frame from every card of the exact final MP4. No subjective listening or continuous real-time playback claimed.",
+  "coverage": {
+    "expected_cards": 4,
+    "jpegs_directly_reviewed": 4,
+    "distinct_mp4_cards_directly_reviewed": 4,
+    "visual_fixes_required": 0
+  },
+  "cards": [
+    {
+      "card": 1,
+      "jpeg_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/myth_or_truth/card-01.jpg",
+      "jpeg_sha256": "6b5a9b58ec876989b97ceff6be6b143b9e20f8c412f132391e0294657a16a718",
+      "jpeg_dimensions": [
+        1080,
+        1080
+      ],
+      "jpeg_visual_approved": true,
+      "full_greek_text_read": true,
+      "expected_full_text": "ΜΥΘΟΣ Ή ΑΛΗΘΕΙΑ;\nΤα ηλιοτρόπια ακολουθούν τον ήλιο όλη τους τη ζωή;",
+      "text_matches_approved_copy": true,
+      "no_missing_or_clipped_text": true,
+      "main_scene_visible": true,
+      "contrast_readable": true,
+      "video_frame": {
+        "card": 1,
+        "time_seconds": 3.5,
+        "extracted_frame_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/myth_or_truth/qa_frames/card-01-mid.png",
+        "sha256": "e0823a4258a1f0965d103f6c40e8c28d239b8fd4272065cc647df8e898de0792",
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "direct_visual_approved": true,
+        "full_greek_text_read": true,
+        "same_card_content_as_jpeg": true,
+        "no_new_crop_or_text_loss": true
+      },
+      "review_note": "Ολόκληρο το ερώτημα για παρακολούθηση ήλιου σε όλη τη ζωή διαβάστηκε. Ώριμο ανοικτό άνθος· οι κομμένες άκρες ορισμένων πετάλων δεν κρύβουν τον αναγνωρίσιμο δίσκο/στάδιο. Αρίθμηση 1/4 πλήρης."
+    },
+    {
+      "card": 2,
+      "jpeg_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/myth_or_truth/card-02.jpg",
+      "jpeg_sha256": "16ffff6579c7adda795fdcaceb6f8e5630ba73a97d6b66f0335ff6730a6046f3",
+      "jpeg_dimensions": [
+        1080,
+        1080
+      ],
+      "jpeg_visual_approved": true,
+      "full_greek_text_read": true,
+      "expected_full_text": "ΜΥΘΟΣ.\nΤα νεαρά ηλιοτρόπια, όσο αναπτύσσονται, παρακολουθούν την πορεία του ήλιου από την ανατολή στη δύση.",
+      "text_matches_approved_copy": true,
+      "no_missing_or_clipped_text": true,
+      "main_scene_visible": true,
+      "contrast_readable": true,
+      "video_frame": {
+        "card": 2,
+        "time_seconds": 10.983333,
+        "extracted_frame_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/myth_or_truth/qa_frames/card-02-mid.png",
+        "sha256": "547939a277741e54b9cb24ef0830cf9382977a9b3351d9cc002d6d54de1030eb",
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "direct_visual_approved": true,
+        "full_greek_text_read": true,
+        "same_card_content_as_jpeg": true,
+        "no_new_crop_or_text_loss": true
+      },
+      "review_note": "ΜΥΘΟΣ και ολόκληρη η εξήγηση για νεαρά φυτά/ανατολή προς δύση διαβάστηκαν. Κλειστό νεαρό πράσινο μπουμπούκι, χωρίς ώριμα άνθη. Αρίθμηση 2/4 πλήρης."
+    },
+    {
+      "card": 3,
+      "jpeg_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/myth_or_truth/card-03.jpg",
+      "jpeg_sha256": "1cc2168e4591d0810964e00d971e24148b43f59a501a9a57dd0659e0aeb815ea",
+      "jpeg_dimensions": [
+        1080,
+        1080
+      ],
+      "jpeg_visual_approved": true,
+      "full_greek_text_read": true,
+      "expected_full_text": "Τη νύχτα στρέφονται ξανά ανατολικά.\nΗ κίνηση συνδέεται με άνιση ανάπτυξη του βλαστού και το εσωτερικό τους βιολογικό ρολόι.",
+      "text_matches_approved_copy": true,
+      "no_missing_or_clipped_text": true,
+      "main_scene_visible": true,
+      "contrast_readable": true,
+      "video_frame": {
+        "card": 3,
+        "time_seconds": 19.575,
+        "extracted_frame_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/myth_or_truth/qa_frames/card-03-mid.png",
+        "sha256": "4d2cd09de71343fbb64347dc2f368c6f24a8d101d22417f90cce4efdab238c83",
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "direct_visual_approved": true,
+        "full_greek_text_read": true,
+        "same_card_content_as_jpeg": true,
+        "no_new_crop_or_text_loss": true
+      },
+      "review_note": "Ολόκληρο το κείμενο νυχτερινής επιστροφής/άνισης ανάπτυξης/βιολογικού ρολογιού διαβάστηκε. Νυχτερινό κλειστό μπουμπούκι, χωρίς ανοικτό άνθος. Αρίθμηση 3/4 πλήρης."
+    },
+    {
+      "card": 4,
+      "jpeg_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/myth_or_truth/card-04.jpg",
+      "jpeg_sha256": "fc518beb1a55efd0e6cae53d2171c2758b1da5b8938bb2ac1634acc910018f48",
+      "jpeg_dimensions": [
+        1080,
+        1080
+      ],
+      "jpeg_visual_approved": true,
+      "full_greek_text_read": true,
+      "expected_full_text": "Στα ώριμα, ανθισμένα φυτά η κίνηση σταματά.\nΤα άνθη μένουν συνήθως στραμμένα ανατολικά.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "text_matches_approved_copy": true,
+      "no_missing_or_clipped_text": true,
+      "main_scene_visible": true,
+      "contrast_readable": true,
+      "video_frame": {
+        "card": 4,
+        "time_seconds": 28.791667,
+        "extracted_frame_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/myth_or_truth/qa_frames/card-04-mid.png",
+        "sha256": "7f1c827b6a2c15319bd30f0b6deb1206e15391b03a3eee42c3a5faac7d14b3cf",
+        "dimensions": [
+          1080,
+          1920
+        ],
+        "direct_visual_approved": true,
+        "full_greek_text_read": true,
+        "same_card_content_as_jpeg": true,
+        "no_new_crop_or_text_loss": true
+      },
+      "review_note": "Ολόκληρο το κείμενο παύσης κίνησης σε ώριμη ανθοφορία και συνήθους ανατολικού προσανατολισμού διαβάστηκε. Ώριμα άνθη και ακριβές CTA. Αρίθμηση 4/4 πλήρης."
+    }
+  ],
+  "video": {
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/myth_or_truth/current-ten-20261006-myth-or-truth.mp4",
+    "sha256": "308c6e042fae04f3af6d67dc1da55a0a6b11b467f3cd0b7ba0d13939694e3af3",
+    "visual_approved": true,
+    "duration_seconds": 33.36,
+    "dimensions": [
+      1080,
+      1920
+    ],
+    "frame_rate": "25/1",
+    "frame_extraction_manifest": "/workspace/scratch/73e79e1cf9df/production_20261006/final/myth_or_truth/qa_frames/extraction_manifest.json",
+    "all_expected_cards_present_in_reviewed_order": true,
+    "last_card_cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+    "last_card_cta_directly_read": true
+  },
+  "fact_check": {
+    "status": "SUPPORTED_BY_RECHECKED_PRIMARY_SOURCES",
+    "sources": [
+      {
+        "url": "https://zenodo.org/records/889822",
+        "ref": "turn27view0",
+        "supports": "Original Atamian et al. 2016 Science abstract: young tracking east-west/day and east/night; mature cessation with east-facing heads; directional elongation and circadian regulation."
+      },
+      {
+        "url": "https://biology.ucdavis.edu/news/how-sunflowers-see-sun",
+        "ref": "turn25view1",
+        "supports": "2023 primary institutional explanation: opposite-side stem growth and internal circadian clock; copy makes no unsupported claim about a fully solved light-sensing pathway."
+      }
+    ],
+    "qualification": "Youth versus mature flowering is explicit. Usually east-facing is appropriately qualified. Illustrative pictures are not compass measurements or time-lapse evidence."
+  },
+  "caption": {
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/myth_or_truth/caption.txt",
+    "sha256": "334bdc9151506bd04561c18a31ecab051b3cbd0657369e9b8456034f4424f2dd",
+    "matches_manifest": true,
+    "has_exact_cta": true,
+    "hashtags": [
+      "#ΜύθοςΉΑλήθεια",
+      "#Ηλιοτρόπια",
+      "#Φυτά",
+      "#Βιολογία",
+      "#Φύση"
+    ],
+    "hashtag_count": 5,
+    "ai_illustration_disclosure_present": true
+  },
+  "audio_review": {
+    "listened": false,
+    "asr_performed": false,
+    "subjective_audio_approval": false,
+    "reason": "Parent reports audio input unsupported; no suitable ASR tool exposed and common local ASR packages absent in current Python environment. No purchase or new external service used.",
+    "technical_evidence": {
+      "audio_decode_exit_code": 0,
+      "heard_by_reviewer": false,
+      "asr_performed": false,
+      "asr_modules_available": false,
+      "stats": {
+        "Peak level dB": "-23.100143",
+        "RMS level dB": "-34.286127",
+        "RMS peak dB": "-28.913811",
+        "RMS trough dB": "-67.445039",
+        "Number of samples": "1601536",
+        "Number of NaNs": "0.000000",
+        "Number of Infs": "0.000000",
+        "Number of denormals": "0.000000"
+      },
+      "detected_silences": []
+    },
+    "technical_log": "/workspace/scratch/73e79e1cf9df/production_20261006/final/myth_or_truth/qa_frames/audio_technical.log",
+    "level_observation": "Peak -23.10 dBFS and overall RMS about -34 dBFS are low measured levels; subjective audibility/quality has not been judged.",
+    "approval_scope": "Technical decode and signal evidence only; does not attest musical quality, absence of speech by listening, or subjective loudness."
+  },
+  "required_visual_fixes": [],
+  "asset_mutations_performed": false,
+  "release_decision": "Visual review approved for the hashes above. Full release/audio decision remains with root; no external publication performed."
+}

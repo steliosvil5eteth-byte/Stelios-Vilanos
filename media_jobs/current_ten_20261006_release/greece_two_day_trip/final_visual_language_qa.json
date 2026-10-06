@@ -1,0 +1,1793 @@
+{
+  "status": "APPROVED_VISUAL_FACTUAL_WITH_DOCUMENTED_ASR_VARIANTS",
+  "reviewed_at_utc": "2026-10-06T10:22:57.335196+00:00",
+  "reviewer": "research_fresh_content independent final review",
+  "series": "prespes",
+  "video_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/current-ten-20261006-prespes.mp4",
+  "video_sha256": "02855ad188063f1f843f81e65f911776ae4dcc40c41454f55d5dceac05385cf3",
+  "duration_seconds": 83.666667,
+  "minimum_80_seconds_passed": true,
+  "width": 1080,
+  "height": 1920,
+  "frame_rate": "30/1",
+  "voice": "el-GR-NestorasNeural",
+  "provider": "Azure Speech",
+  "listened": false,
+  "audio_tested": true,
+  "audio_verification_methods": [
+    "Full decoded AAC waveform binding to hashed Nestoras source WAV",
+    "Independent el-GR recognition with no script hints",
+    "Every ASR difference reconciled against NBest and source word events"
+  ],
+  "audio_stream_count": 1,
+  "audio_channels": 1,
+  "background_music": false,
+  "no_music_evidence": "Render command maps only the single source Nestoras WAV; full decoded signal binding passes. No music or other audio input.",
+  "source_audio_sha256": "f27e1328487ccdd48b8c7a7f99468599ac487682be22fd694f8f1216c97e6ad9",
+  "script_file_sha256": "0dda25548635fa738252b1a5ff758364bf5f8b52af123720042e5b0051465f19",
+  "script_text_sha256": "6dcee041685fc509cff827b55875ae0d42d4f9bd674fcb2eabe1330cbab6f107",
+  "script_hash_note": "Speech metadata hashes approved script text without the file's final newline. Both exact file-byte hash and text hash are recorded; text matches approved manifest exactly.",
+  "srt_sha256": "7ee789184d268b97f728edc74cce47240c2ee16f30564ac808379d5910ea6b0c",
+  "ass_sha256": "0a12d6a351738c646ea81b6284e8b839254af1aa23f85d1137a0602faa70824c",
+  "source_word_count": 217,
+  "source_boundary_words_match_script": true,
+  "srt_and_burned_ass_all_words_match_script": true,
+  "subtitle_cue_count": 48,
+  "every_cue_directly_read": true,
+  "subtitle_timing": {
+    "all_cue_starts_match_source_word_events_within_seconds": 0.001,
+    "ASS_centisecond_rounding_max_seconds": 0.0051,
+    "overlap_count": 0,
+    "missing_cues": 0,
+    "first_cue_start_seconds": 0.05,
+    "last_cue_end_seconds": 83.66,
+    "complete_spoken_word_and_subtitle_coverage": true,
+    "last_independently_recognized_word_end_seconds": 83.6,
+    "final_word_within_source_audio": true,
+    "truncated_subtitle_or_established_truncated_speech": false
+  },
+  "subtitle_cues": [
+    {
+      "cue": 1,
+      "start_seconds": 0.05,
+      "end_seconds": 1.68,
+      "burned_text": "Ένα νησί που το\nφτάνεις περπατώντας",
+      "script_word_range": [
+        0,
+        6
+      ],
+      "first_source_word_offset": 0.05,
+      "capture_frame_number": 26,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-001.jpg",
+      "capture_sha256": "134c1e8ee79eed80c4a70f9e7d49de0ed969b2c8626e34a5c501769555848cd1",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 2,
+      "start_seconds": 1.68,
+      "end_seconds": 3.42,
+      "burned_text": "πάνω από τη λίμνη.",
+      "script_word_range": [
+        6,
+        10
+      ],
+      "first_source_word_offset": 1.675,
+      "capture_frame_number": 76,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-002.jpg",
+      "capture_sha256": "55daec5314794c205d81afd1ee084e0fdcb3d497dc6cb77e0b9bdf3b3e440a19",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 3,
+      "start_seconds": 3.42,
+      "end_seconds": 4.82,
+      "burned_text": "Αυτό είναι το πρώτο\nμας ραντεβού",
+      "script_word_range": [
+        10,
+        16
+      ],
+      "first_source_word_offset": 3.425,
+      "capture_frame_number": 124,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-003.jpg",
+      "capture_sha256": "f525db74d63a66e8b1404a5a99487aa57504406681a96ec1acfdcba726d9b601",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 4,
+      "start_seconds": 4.82,
+      "end_seconds": 6.46,
+      "burned_text": "με τις Πρέσπες.",
+      "script_word_range": [
+        16,
+        19
+      ],
+      "first_source_word_offset": 4.825,
+      "capture_frame_number": 169,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-004.jpg",
+      "capture_sha256": "189b6e9347c38ecbad227a82bae9ec6efc91a624b544d8171876bcbc774ae0a8",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 5,
+      "start_seconds": 6.46,
+      "end_seconds": 7.79,
+      "burned_text": "Την πρώτη μέρα\nξεκινάμε από την",
+      "script_word_range": [
+        19,
+        25
+      ],
+      "first_source_word_offset": 6.4625,
+      "capture_frame_number": 214,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-005.jpg",
+      "capture_sha256": "77cc3d64e615558aadbc06d7349401c4aa2c5451bd42691f37e47159070534d8",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 6,
+      "start_seconds": 7.79,
+      "end_seconds": 9.65,
+      "burned_text": "πεζογέφυρα του\nΑγίου Αχιλλείου, στη",
+      "script_word_range": [
+        25,
+        30
+      ],
+      "first_source_word_offset": 7.7875,
+      "capture_frame_number": 262,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-006.jpg",
+      "capture_sha256": "cd44211d1050d0ee52beff51be97056fc78b1ca99d8f20b589ac3a26805b5610",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 7,
+      "start_seconds": 9.65,
+      "end_seconds": 11.35,
+      "burned_text": "Μικρή Πρέσπα.",
+      "script_word_range": [
+        30,
+        32
+      ],
+      "first_source_word_offset": 9.65,
+      "capture_frame_number": 315,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-007.jpg",
+      "capture_sha256": "935eef2328db18723e4e857a10380e60e2e18b5b285250488b483f7e55dfdd57",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 8,
+      "start_seconds": 11.35,
+      "end_seconds": 13.31,
+      "burned_text": "Περνάμε αργά,\nκοιτάζουμε το νερό",
+      "script_word_range": [
+        32,
+        37
+      ],
+      "first_source_word_offset": 11.35,
+      "capture_frame_number": 370,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-008.jpg",
+      "capture_sha256": "b8423866fe7527f847997353eb39f1d054503b22ed2692e45105bc369f898c77",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 9,
+      "start_seconds": 13.31,
+      "end_seconds": 15.38,
+      "burned_text": "και φτάνουμε στο νησάκι.",
+      "script_word_range": [
+        37,
+        41
+      ],
+      "first_source_word_offset": 13.3125,
+      "capture_frame_number": 430,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-009.jpg",
+      "capture_sha256": "6925ee696c6a60cb356ad314d2351f40ac1387190d793c84d34db6d75fba7a1c",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 10,
+      "start_seconds": 15.38,
+      "end_seconds": 17.45,
+      "burned_text": "Ανάμεσα στα σημαντικότερα\nμνημεία του βρίσκονται",
+      "script_word_range": [
+        41,
+        47
+      ],
+      "first_source_word_offset": 15.375,
+      "capture_frame_number": 492,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-010.jpg",
+      "capture_sha256": "ba748ccc66a20c73f71bb144c9e08521cbb36086d1fe60fc35999694e5b3e12f",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 11,
+      "start_seconds": 17.45,
+      "end_seconds": 18.88,
+      "burned_text": "τα ερείπια της\nβασιλικής του Αγίου",
+      "script_word_range": [
+        47,
+        53
+      ],
+      "first_source_word_offset": 17.45,
+      "capture_frame_number": 545,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-011.jpg",
+      "capture_sha256": "1422959663450aec3f9a3f0cea9e113e44286e01f55483e847b2119388eba7df",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 12,
+      "start_seconds": 18.88,
+      "end_seconds": 20.36,
+      "burned_text": "Αχιλλείου, που συνδέεται με τον",
+      "script_word_range": [
+        53,
+        58
+      ],
+      "first_source_word_offset": 18.875,
+      "capture_frame_number": 589,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-012.jpg",
+      "capture_sha256": "50f2c9f16d6ac9a6f512d701bf63676b7b98442f58192a64d168b123497f2e6b",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 13,
+      "start_seconds": 20.36,
+      "end_seconds": 22.88,
+      "burned_text": "τσάρο Σαμουήλ και\nτον δέκατο αιώνα.",
+      "script_word_range": [
+        58,
+        64
+      ],
+      "first_source_word_offset": 20.3625,
+      "capture_frame_number": 649,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-013.jpg",
+      "capture_sha256": "b27af92bc84960f88f006ca7a2c36fd46b8b6cd953fc9045cb7d4b6764d64660",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 14,
+      "start_seconds": 22.88,
+      "end_seconds": 24.35,
+      "burned_text": "Εδώ η ιστορία μπαίνει μέσα στο",
+      "script_word_range": [
+        64,
+        70
+      ],
+      "first_source_word_offset": 22.875,
+      "capture_frame_number": 708,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-014.jpg",
+      "capture_sha256": "ef68f0b4de85641a95c3ac045719c2e73468f052c9254ecade1a5cc090eefd43",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 15,
+      "start_seconds": 24.35,
+      "end_seconds": 25.75,
+      "burned_text": "τοπίο.",
+      "script_word_range": [
+        70,
+        71
+      ],
+      "first_source_word_offset": 24.35,
+      "capture_frame_number": 752,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-015.jpg",
+      "capture_sha256": "a4de6ac64ccf802ba3deeed6a7b5d163eee9e089abbecca5e4c08d6c43ff26f3",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 16,
+      "start_seconds": 25.75,
+      "end_seconds": 28.66,
+      "burned_text": "Συνεχίζουμε προς\nτον Άγιο Γερμανό.",
+      "script_word_range": [
+        71,
+        76
+      ],
+      "first_source_word_offset": 25.75,
+      "capture_frame_number": 816,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-016.jpg",
+      "capture_sha256": "926caedba6010727a776c18fa4ac4f97df384b3caf3f363fcfb44df8b36ec66b",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 17,
+      "start_seconds": 28.66,
+      "end_seconds": 30.0,
+      "burned_text": "Μια βόλτα στον\nοικισμό και στον",
+      "script_word_range": [
+        76,
+        82
+      ],
+      "first_source_word_offset": 28.6625,
+      "capture_frame_number": 880,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-017.jpg",
+      "capture_sha256": "50670d4769f12674e228c1fe06b3441d00a886b7ed09b6963f02ff3d4af20ac1",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 18,
+      "start_seconds": 30.0,
+      "end_seconds": 31.7,
+      "burned_text": "παραδοσιακό νερόμυλο\nαλλάζει τον ρυθμό",
+      "script_word_range": [
+        82,
+        87
+      ],
+      "first_source_word_offset": 30.0,
+      "capture_frame_number": 926,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-018.jpg",
+      "capture_sha256": "5ff967dcaacdf882271d04b9b0153701b036f7830da36347e6e5574e2d6a4026",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 19,
+      "start_seconds": 31.7,
+      "end_seconds": 33.17,
+      "burned_text": "της ημέρας.",
+      "script_word_range": [
+        87,
+        89
+      ],
+      "first_source_word_offset": 31.7,
+      "capture_frame_number": 973,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-019.jpg",
+      "capture_sha256": "19173fcbf8f736321bd9361ac3252f0827d1b799de3a644acc23e2487d3c8489",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 20,
+      "start_seconds": 33.17,
+      "end_seconds": 35.61,
+      "burned_text": "Για επίσκεψη στο\nεσωτερικό, επιβεβαιώνουμε",
+      "script_word_range": [
+        89,
+        94
+      ],
+      "first_source_word_offset": 33.175,
+      "capture_frame_number": 1032,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-020.jpg",
+      "capture_sha256": "915fa1d8d8ac7cd5137012103d44f2139c166c810abf0f72804ee13726b6e072",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 21,
+      "start_seconds": 35.61,
+      "end_seconds": 37.94,
+      "burned_text": "προηγουμένως τη\nλειτουργία του.",
+      "script_word_range": [
+        94,
+        98
+      ],
+      "first_source_word_offset": 35.6125,
+      "capture_frame_number": 1103,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-021.jpg",
+      "capture_sha256": "fce0b1782092d520df1e85c2af9d2a7df6e8f94d64e6d2ac1c9b5c077e5e7df4",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 22,
+      "start_seconds": 37.94,
+      "end_seconds": 39.92,
+      "burned_text": "Τη δεύτερη μέρα\nπηγαίνουμε στους Ψαράδες,",
+      "script_word_range": [
+        98,
+        104
+      ],
+      "first_source_word_offset": 37.9375,
+      "capture_frame_number": 1168,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-022.jpg",
+      "capture_sha256": "8aac79a7441f695fd3709b17984eed6569e6b40ab6c40d31bc16e5e4f8b6eac3",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 23,
+      "start_seconds": 39.92,
+      "end_seconds": 41.91,
+      "burned_text": "στη Μεγάλη Πρέσπα.",
+      "script_word_range": [
+        104,
+        107
+      ],
+      "first_source_word_offset": 39.925,
+      "capture_frame_number": 1227,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-023.jpg",
+      "capture_sha256": "1aa304da6d6f33dae230b37fe276e20710c7345459a84dd2909fbf23465596ee",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 24,
+      "start_seconds": 41.91,
+      "end_seconds": 43.82,
+      "burned_text": "Περπατάμε στο χωριό\nκαι καθόμαστε δίπλα",
+      "script_word_range": [
+        107,
+        113
+      ],
+      "first_source_word_offset": 41.9125,
+      "capture_frame_number": 1286,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-024.jpg",
+      "capture_sha256": "a44039a8be822897685417a4a71e1dc66c4f2949cb7e5f4812ba21a716730472",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 25,
+      "start_seconds": 43.82,
+      "end_seconds": 45.29,
+      "burned_text": "στη λίμνη.",
+      "script_word_range": [
+        113,
+        115
+      ],
+      "first_source_word_offset": 43.825,
+      "capture_frame_number": 1337,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-025.jpg",
+      "capture_sha256": "70387917fe1711b505b6a94fc14d72def20ba68de2d701a3f031ffb9678672b3",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 26,
+      "start_seconds": 45.29,
+      "end_seconds": 47.35,
+      "burned_text": "Από εδώ ξεκινούν\nπλωτές περιηγήσεις προς",
+      "script_word_range": [
+        115,
+        121
+      ],
+      "first_source_word_offset": 45.2875,
+      "capture_frame_number": 1390,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-026.jpg",
+      "capture_sha256": "3187675d189ee0e850bcd4d07ce4df9115adfdc9f90c036309fbe89e0efc0c5b",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 27,
+      "start_seconds": 47.35,
+      "end_seconds": 48.9,
+      "burned_text": "τα ασκηταριά και τις\nβραχογραφίες των",
+      "script_word_range": [
+        121,
+        127
+      ],
+      "first_source_word_offset": 47.35,
+      "capture_frame_number": 1444,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-027.jpg",
+      "capture_sha256": "984d744bfe2ccfe5598de7d7376b94adb70a9a39ac0e5165e53f16efb02f83bd",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 28,
+      "start_seconds": 48.9,
+      "end_seconds": 50.8,
+      "burned_text": "απόκρημνων ακτών.",
+      "script_word_range": [
+        127,
+        129
+      ],
+      "first_source_word_offset": 48.9,
+      "capture_frame_number": 1495,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-028.jpg",
+      "capture_sha256": "2ac6812dc4b1df0d388ed855cb416a27457a32bec6420001790e9b7f67579b56",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 29,
+      "start_seconds": 50.8,
+      "end_seconds": 52.99,
+      "burned_text": "Τις κανονίζουμε με\nτοπικό επαγγελματία,",
+      "script_word_range": [
+        129,
+        134
+      ],
+      "first_source_word_offset": 50.8,
+      "capture_frame_number": 1557,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-029.jpg",
+      "capture_sha256": "f7d83fbca711929b1fc59127247b3ff8b1768c2f74b749e351de547faf6056ea",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 30,
+      "start_seconds": 52.99,
+      "end_seconds": 54.54,
+      "burned_text": "ανάλογα με τη\nδιαθεσιμότητα και τον",
+      "script_word_range": [
+        134,
+        140
+      ],
+      "first_source_word_offset": 52.9875,
+      "capture_frame_number": 1613,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-030.jpg",
+      "capture_sha256": "3aaa0f2c175ca67e9b036da53eebdecbd4e47c9f2a041bf7cac3dcca626ec61d",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 31,
+      "start_seconds": 54.54,
+      "end_seconds": 55.84,
+      "burned_text": "καιρό.",
+      "script_word_range": [
+        140,
+        141
+      ],
+      "first_source_word_offset": 54.5375,
+      "capture_frame_number": 1656,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-031.jpg",
+      "capture_sha256": "00e373a3fa644795360f08d239e385e693b90aef7d77509701e8a9b24a3bb6ae",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 32,
+      "start_seconds": 55.84,
+      "end_seconds": 57.89,
+      "burned_text": "Στο τραπέζι,\nαναζητούμε τις γεύσεις",
+      "script_word_range": [
+        141,
+        146
+      ],
+      "first_source_word_offset": 55.8375,
+      "capture_frame_number": 1706,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-032.jpg",
+      "capture_sha256": "573884ec8369991a7efa3f66df4d83c63a3d7b1029b498f9214fda337a2e8243",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 33,
+      "start_seconds": 57.89,
+      "end_seconds": 59.56,
+      "burned_text": "του τόπου: φασόλια\nΠρεσπών και",
+      "script_word_range": [
+        146,
+        151
+      ],
+      "first_source_word_offset": 57.8875,
+      "capture_frame_number": 1762,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-033.jpg",
+      "capture_sha256": "89bfccc8a0dc2da37375f010d2bd43883e68c316737605ca152523e73b1cd0bc",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 34,
+      "start_seconds": 59.56,
+      "end_seconds": 61.66,
+      "burned_text": "τοπικά πιάτα ψαριών.",
+      "script_word_range": [
+        151,
+        154
+      ],
+      "first_source_word_offset": 59.5625,
+      "capture_frame_number": 1818,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-034.jpg",
+      "capture_sha256": "90e0597d6d1feddec9394349022bc576eaa3ab87b3b2dcb9ee67dc4e0c043f86",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 35,
+      "start_seconds": 61.66,
+      "end_seconds": 63.4,
+      "burned_text": "Κρατάμε χρόνο και για\nπαρατήρηση πουλιών",
+      "script_word_range": [
+        154,
+        160
+      ],
+      "first_source_word_offset": 61.6625,
+      "capture_frame_number": 1876,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-035.jpg",
+      "capture_sha256": "3753369a5bdc7c2d20bba2e8529477588c6609ca8ec0cc1d11b4f8ce05be94c0",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 36,
+      "start_seconds": 63.4,
+      "end_seconds": 65.31,
+      "burned_text": "από απόσταση, χωρίς\nνα πλησιάζουμε",
+      "script_word_range": [
+        160,
+        165
+      ],
+      "first_source_word_offset": 63.4,
+      "capture_frame_number": 1931,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-036.jpg",
+      "capture_sha256": "69990a1ae0b81d3ac7a63b509cc2be00ac8b46230e3a5da8a3279902f7b67652",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 37,
+      "start_seconds": 65.31,
+      "end_seconds": 66.61,
+      "burned_text": "φωλιές ή να\nενοχλούμε την άγρια",
+      "script_word_range": [
+        165,
+        171
+      ],
+      "first_source_word_offset": 65.3125,
+      "capture_frame_number": 1979,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-037.jpg",
+      "capture_sha256": "2f5791a137375d9a69bb69aa3fe4fa4de35d7080770a53a2853a4cbec751134b",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 38,
+      "start_seconds": 66.61,
+      "end_seconds": 67.95,
+      "burned_text": "ζωή.",
+      "script_word_range": [
+        171,
+        172
+      ],
+      "first_source_word_offset": 66.6125,
+      "capture_frame_number": 2018,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-038.jpg",
+      "capture_sha256": "83a433758a5e9346f179603b876b0cb50aad1306f89c52de2569f8b89b5f8588",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 39,
+      "start_seconds": 67.95,
+      "end_seconds": 69.8,
+      "burned_text": "Αυτό το διήμερο\nχωρά δύο λίμνες,",
+      "script_word_range": [
+        172,
+        178
+      ],
+      "first_source_word_offset": 67.95,
+      "capture_frame_number": 2066,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-039.jpg",
+      "capture_sha256": "10d239fc945d1fb5389c12f64513050ae0918a016dd2536ff56921dc3610fc63",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 40,
+      "start_seconds": 69.8,
+      "end_seconds": 71.2,
+      "burned_text": "ένα νησί και μικρούς\nοικισμούς που",
+      "script_word_range": [
+        178,
+        184
+      ],
+      "first_source_word_offset": 69.8,
+      "capture_frame_number": 2115,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-040.jpg",
+      "capture_sha256": "dfcc105eef99e61d60648ba6c362fec61310f5f99c593690b890b8ca5732d209",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 41,
+      "start_seconds": 71.2,
+      "end_seconds": 72.72,
+      "burned_text": "αξίζουν την προσοχή μας, χωρίς",
+      "script_word_range": [
+        184,
+        189
+      ],
+      "first_source_word_offset": 71.2,
+      "capture_frame_number": 2159,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-041.jpg",
+      "capture_sha256": "f0a4aae9acc24dd79abc60852730428d183b974081876c3ee86fdd0e3de81b84",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 42,
+      "start_seconds": 72.72,
+      "end_seconds": 74.11,
+      "burned_text": "να γεμίσουμε κάθε\nώρα με συνεχείς",
+      "script_word_range": [
+        189,
+        195
+      ],
+      "first_source_word_offset": 72.725,
+      "capture_frame_number": 2202,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-042.jpg",
+      "capture_sha256": "c1720d64ec4671f6dfe06e71edb0cd223defb065c5ea184e5bca9fb95cc58ee8",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 43,
+      "start_seconds": 74.11,
+      "end_seconds": 75.72,
+      "burned_text": "μετακινήσεις.",
+      "script_word_range": [
+        195,
+        196
+      ],
+      "first_source_word_offset": 74.1125,
+      "capture_frame_number": 2247,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-043.jpg",
+      "capture_sha256": "766cfcfa1c5a454348bcdc5b07eb0570b2685d6fa5525be759acbb8779c7f720",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 44,
+      "start_seconds": 75.72,
+      "end_seconds": 77.91,
+      "burned_text": "Εσύ ποια στάση θα\nκρατούσες περισσότερο:",
+      "script_word_range": [
+        196,
+        202
+      ],
+      "first_source_word_offset": 75.725,
+      "capture_frame_number": 2304,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-044.jpg",
+      "capture_sha256": "8dc9f0782ee18db2b55f0f1c5b3553026e9d144689025fbffa2752e0bac8b252",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 45,
+      "start_seconds": 77.91,
+      "end_seconds": 79.3,
+      "burned_text": "το νησάκι, τη βαρκάδα ή",
+      "script_word_range": [
+        202,
+        207
+      ],
+      "first_source_word_offset": 77.9125,
+      "capture_frame_number": 2358,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-045.jpg",
+      "capture_sha256": "c989510041ee30c390d0f3d0819533f7e0c6ecedd7cc4f327c020bf573475022",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 46,
+      "start_seconds": 79.3,
+      "end_seconds": 81.14,
+      "burned_text": "τη βόλτα στο χωριό;",
+      "script_word_range": [
+        207,
+        211
+      ],
+      "first_source_word_offset": 79.3,
+      "capture_frame_number": 2407,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-046.jpg",
+      "capture_sha256": "af251116c364c3c654a6038e6466d431d35771e94ec61e72478588f9ccb73695",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 47,
+      "start_seconds": 81.14,
+      "end_seconds": 83.05,
+      "burned_text": "Αν σας άρεσε, ακολουθήστε για",
+      "script_word_range": [
+        211,
+        216
+      ],
+      "first_source_word_offset": 81.1375,
+      "capture_frame_number": 2463,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-047.jpg",
+      "capture_sha256": "1586cd0cd898a03a63ad173a005e9452ed76104a755571327d9cd78231b81b56",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 48,
+      "start_seconds": 83.05,
+      "end_seconds": 83.66,
+      "burned_text": "περισσότερα.",
+      "script_word_range": [
+        216,
+        217
+      ],
+      "first_source_word_offset": 83.05,
+      "capture_frame_number": 2501,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption_frames/cue-048.jpg",
+      "capture_sha256": "35cbfa62616641dfdb85132b484f6c14ac8d1ca0d315cbc0ae41c7789ab42f6c",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    }
+  ],
+  "cue_sheet_evidence": [
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption-review-01.jpg",
+      "sha256": "5598783f18eb52aecf5a4fad01bdbecc56b02717ba03d8e9b6c5a01774bc3cb3",
+      "directly_viewed_and_all_cues_read": true
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption-review-02.jpg",
+      "sha256": "7a9372ab73504744a1611eae368a84aec11f84489553b150247b828f82c1808b",
+      "directly_viewed_and_all_cues_read": true
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption-review-03.jpg",
+      "sha256": "8b4cd8fa83215ebd90471b0d56b9539f9c46a5beb0bf36c2fe1144a07f8e5fe5",
+      "directly_viewed_and_all_cues_read": true
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption-review-04.jpg",
+      "sha256": "65ce70a9f04cd2ef066549031269e5c7a770d06428eb4a039c5078d47af1643e",
+      "directly_viewed_and_all_cues_read": true
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption-review-05.jpg",
+      "sha256": "fc1dd8a242e8ec34601e837899366aa69d8d9eb08259c9e7e447e64dbe4455ca",
+      "directly_viewed_and_all_cues_read": true
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption-review-06.jpg",
+      "sha256": "27a72c94e37fb4cf75742a7cb78bfb4bb2257050002ae4bde6f4e1c57e3b83c4",
+      "directly_viewed_and_all_cues_read": true
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption-review-07.jpg",
+      "sha256": "8711d109b454d9be8875f74df82d8a0ddec36131e1f6bce1843af17cf8189a21",
+      "directly_viewed_and_all_cues_read": true
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/caption-review-08.jpg",
+      "sha256": "7626fd26e39121a0259454fc513d61736f744a72033027680a9b969d81eddaf9",
+      "directly_viewed_and_all_cues_read": true
+    }
+  ],
+  "scene_count": 8,
+  "distinct_sources": 8,
+  "minimum_scene_seconds": 7.0,
+  "every_scene_directly_viewed": true,
+  "scenes": [
+    {
+      "scene": 1,
+      "source_index": 2,
+      "anchor": "",
+      "anchor_seconds": 0.0,
+      "start": 0.0,
+      "end": 7.0,
+      "duration": 7.0,
+      "frames": 210,
+      "anchor_adjustment_seconds": 0.0,
+      "source_sha256": "aa7875aa1e68e99808b602a01cc013c50ce49c65d8352ce9f0eae8800f104c0f",
+      "capture_timestamp": 3.5,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/final-scene-01.jpg",
+      "capture_sha256": "36b86c1eba29f031ff70e24c1f63e30f15c2721f6333f2a98143c516ed6aeccb",
+      "directly_viewed": true,
+      "status": "APPROVED",
+      "note": "Exact licensed Agios Achilleios footbridge photo; bridge/water retained and author/license readable."
+    },
+    {
+      "scene": 2,
+      "source_index": 1,
+      "anchor": "Την πρώτη μέρα",
+      "anchor_seconds": 6.4625,
+      "start": 7.0,
+      "end": 14.966666666666667,
+      "duration": 7.966666666666667,
+      "frames": 239,
+      "anchor_adjustment_seconds": 0.537,
+      "source_sha256": "c5b160538d90948cca42e954d9b77b499e9f3087a3942d3bfe499faa2005bc39",
+      "capture_timestamp": 10.983333333333334,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/final-scene-02.jpg",
+      "capture_sha256": "5b9c33298302835a80e5c00f1b17cb0a8d6b71368d827ab21e4e9ef410258b03",
+      "directly_viewed": true,
+      "status": "APPROVED",
+      "note": "Exact Lesser Prespa overview retains lake, islands and surrounding landscape; no geographic substitution."
+    },
+    {
+      "scene": 3,
+      "source_index": 3,
+      "anchor": "Ανάμεσα στα σημαντικότερα",
+      "anchor_seconds": 15.375,
+      "start": 14.966666666666667,
+      "end": 23.966666666666665,
+      "duration": 9.0,
+      "frames": 270,
+      "anchor_adjustment_seconds": -0.408,
+      "source_sha256": "56989ce28a0ada9a5974017774298ef0261afa7600c83b04587932e2d68f274c",
+      "capture_timestamp": 19.466666666666665,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/final-scene-03.jpg",
+      "capture_sha256": "0a2d5a466009910af97459675bfbdce86b53f1ecba82c883731980e253e2d4b6",
+      "directly_viewed": true,
+      "status": "APPROVED",
+      "note": "Exact Agios Achilleios basilica remains recognizable; Samuel/tenth-century caption has matching monument."
+    },
+    {
+      "scene": 4,
+      "source_index": 4,
+      "anchor": "Συνεχίζουμε προς",
+      "anchor_seconds": 25.75,
+      "start": 23.966666666666665,
+      "end": 30.966666666666665,
+      "duration": 7.0,
+      "frames": 210,
+      "anchor_adjustment_seconds": -1.783,
+      "source_sha256": "946ef4a1cc46830109f93a4ca012a530787bcff3de11dda65b1d40ce2b004d09",
+      "capture_timestamp": 27.466666666666665,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/final-scene-04.jpg",
+      "capture_sha256": "57bf799b2ec4eb51bbe62eec237a67cc3feffe4296a230cc89dd97dc9dc966b0",
+      "directly_viewed": true,
+      "status": "APPROVED",
+      "note": "Exact Agios Germanos stone houses establish village while narration transitions to its visit."
+    },
+    {
+      "scene": 5,
+      "source_index": 5,
+      "anchor": "Για επίσκεψη στο εσωτερικό",
+      "anchor_seconds": 33.175,
+      "start": 30.966666666666665,
+      "end": 37.96666666666667,
+      "duration": 7.0,
+      "frames": 210,
+      "anchor_adjustment_seconds": -2.208,
+      "source_sha256": "e712753425e24eb755d1865de5651f7d916a9f6c2bc74af54bac5ae8ecfe04f7",
+      "capture_timestamp": 34.46666666666667,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/final-scene-05.jpg",
+      "capture_sha256": "40cbc9e7c2070a8d763b9cb4462c513437a123bc83f129640fb37cedc0d3d254",
+      "directly_viewed": true,
+      "status": "APPROVED",
+      "note": "Exact Agios Germanos watermill exterior; shown during mill/interior-availability discussion, not represented as an interior view."
+    },
+    {
+      "scene": 6,
+      "source_index": 6,
+      "anchor": "Τη δεύτερη μέρα",
+      "anchor_seconds": 37.9375,
+      "start": 37.96666666666667,
+      "end": 45.3,
+      "duration": 7.333333333333333,
+      "frames": 220,
+      "anchor_adjustment_seconds": 0.029,
+      "source_sha256": "83cb37848cc53daa653c5ba3eeddb40c5e92b3421b8e55c2cdb881de9cba34ff",
+      "capture_timestamp": 41.63333333333333,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/final-scene-06.jpg",
+      "capture_sha256": "33e1817f286df82b5ec156304dac8963a27729f567b0145fcc9e4714564a99c8",
+      "directly_viewed": true,
+      "status": "APPROVED",
+      "note": "Exact Psarades village view; corrected transition now coincides with Psarades narration within one video frame."
+    },
+    {
+      "scene": 7,
+      "source_index": 7,
+      "anchor": "Από εδώ ξεκινούν",
+      "anchor_seconds": 45.2875,
+      "start": 45.3,
+      "end": 67.93333333333334,
+      "duration": 22.633333333333333,
+      "frames": 679,
+      "anchor_adjustment_seconds": 0.012,
+      "source_sha256": "1f60d233a4d19d2792a571618d6817d089d4e633161b2535044907d43dd5e337",
+      "capture_timestamp": 56.61666666666667,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/final-scene-07.jpg",
+      "capture_sha256": "5bacb8645268c516eec53e11e3f3f2b4bd0510286625a9949cc3e6c458529b7a",
+      "directly_viewed": true,
+      "status": "APPROVED",
+      "note": "Exact Psarades bay/Great Prespa view; corrected transition coincides with boat departure passage, remains local scenic context for food/birdwatching."
+    },
+    {
+      "scene": 8,
+      "source_index": 8,
+      "anchor": "Αυτό το διήμερο",
+      "anchor_seconds": 67.95,
+      "start": 67.93333333333334,
+      "end": 83.66666666666667,
+      "duration": 15.733333333333333,
+      "frames": 472,
+      "anchor_adjustment_seconds": -0.017,
+      "source_sha256": "005da44171c09703cc4a55d03b735044bbc371985b03d47aab62c67fcc551199",
+      "capture_timestamp": 75.80000000000001,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/final-scene-08.jpg",
+      "capture_sha256": "3739b8c0c15fbf971fad4b66e6e0231f63d05c92074cf469388a791a92106ddc",
+      "directly_viewed": true,
+      "status": "APPROVED",
+      "note": "Exact Agios Achilleios bridge/island view illustrates itinerary recap and final question/CTA."
+    }
+  ],
+  "opening_and_ending_review": "Hook, scene composition and closing CTA inspected at exact final captures; final word also read on last cue capture.",
+  "visual_findings": "No cut-off text, missing Greek accents/glyphs, unreadable subtitle contrast, obstructed essential subject or misleading source substitution found in the reviewed final.",
+  "fact_check": [
+    {
+      "url": "https://visitprespes.gr/el/30/ανακαλυψτε/130/άγιος-αχίλλειος",
+      "retrieval_ref": "turn29view1",
+      "result": "PASS",
+      "supports": "Official municipality tourism page confirms footbridge, island in Lesser Prespa, basilica associated with Tsar Samuel and 980–985, supporting the tenth-century claim and name spelling."
+    },
+    {
+      "url": "https://visitprespes.gr/el/ανακαλυψτε/32/1-οικισμοι/123/ψαράδες",
+      "retrieval_ref": "turn29view3",
+      "result": "PASS",
+      "supports": "Psarades on Great Prespa, traditional village, fishing food, departure point for hermitages and cliff paintings."
+    },
+    {
+      "url": "https://visitprespes.gr/el/εμπειριεσ/43/δραστηριότητες",
+      "retrieval_ref": "turn30view0",
+      "result": "PASS",
+      "supports": "Agios Germanos watermill, footbridge, beans/fish gastronomy, Psarades boat trips and birdwatching. Script promises no availability, schedule, sighting or interior access."
+    }
+  ],
+  "caption_sha256": "540b6ac0d32d981173199483a5c488e7d1be3983e99dba8c091a8c84b3e31bf3",
+  "caption_review": "Complete Greek caption, five hashtags and exact CTA verified. Source credits and synthetic voice disclosure retained; Tsukumogami additionally declares AI reconstruction and folklore.",
+  "full_audio_binding": {
+    "source_audio_sha256": "f27e1328487ccdd48b8c7a7f99468599ac487682be22fd694f8f1216c97e6ad9",
+    "video_sha256": "02855ad188063f1f843f81e65f911776ae4dcc40c41454f55d5dceac05385cf3",
+    "lag_samples": 0,
+    "lag_seconds": 0.0,
+    "correlation": 0.9994752969821535,
+    "minimum_voiced_two_second_correlation": 0.9991980543846606,
+    "signal_to_error_db": 29.7871452417326,
+    "gain": 0.9933468158045125,
+    "decoded_peak": 0.6826171875,
+    "clipped_sample_fraction": 0.0,
+    "silences_over_1_2_seconds": [],
+    "decoded_seconds": 83.66933333333333,
+    "source_seconds": 83.66004166666667,
+    "direct_listening_claimed": false,
+    "independent_asr_review_required": true,
+    "waveform_binding_passed": true,
+    "signal_quality_passed": true
+  },
+  "independent_asr": {
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/audio/speech-recognition.json",
+    "sha256": "3082ee980e176e40249b4368c0f015e30003a7846dadf5d7dbee35ea371268f4",
+    "provider": "Azure Speech independent speech recognition",
+    "script_hints": false,
+    "completed": true,
+    "errors": [],
+    "no_match_regions": [],
+    "normalized_exact_lexical_match": false,
+    "differences_count": 5,
+    "differences_disposition": [
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          28,
+          29
+        ],
+        "recognized_word_range": [
+          28,
+          29
+        ],
+        "expected": "αχιλλειου",
+        "recognized": "αχλιου",
+        "disposition": "ACCEPTED_WITH_PROPER_NAME_RECOGNITION_UNCERTAINTY",
+        "assessment": "Αχιλλείου appears as low-confidence Αχλίου and αχχυλίου / αχλείου alternatives. The αχχυλίου alternative is compatible with modern Greek iotacist spelling of the intended name. Correct official spelling is in source script and subtitles; exact pronunciation was not auditioned.",
+        "established_defective_narration": false
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          53,
+          54
+        ],
+        "recognized_word_range": [
+          53,
+          54
+        ],
+        "expected": "αχιλλειου",
+        "recognized": "αχχυλιου",
+        "disposition": "ACCEPTED_WITH_PROPER_NAME_RECOGNITION_UNCERTAINTY",
+        "assessment": "Second Αχιλλείου occurrence appears as Αχχυλίου with competing Αχλίου/Αχλείου spellings. This is a rare-name recognition ambiguity, not established evidence of another place or defective speech.",
+        "established_defective_narration": false
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          85,
+          86
+        ],
+        "recognized_word_range": [
+          85,
+          86
+        ],
+        "expected": "τον",
+        "recognized": "το",
+        "disposition": "ACCEPTED_NBEST_SUPPORT",
+        "assessment": "τον / το before ρυθμό is a weak final-consonant recognition variation; NBest ranks 3 and 4 contain the expected τον ρυθμό.",
+        "established_defective_narration": false
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          176,
+          177
+        ],
+        "recognized_word_range": [
+          176,
+          177
+        ],
+        "expected": "δυο",
+        "recognized": "2",
+        "disposition": "ACCEPTED_NUMBER_FORMATTING",
+        "assessment": "Display 2 represents spoken δύο; lexical recognition retains the intended number.",
+        "established_defective_narration": false
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          205,
+          207
+        ],
+        "recognized_word_range": [
+          205,
+          206
+        ],
+        "expected": "βαρκαδα η",
+        "recognized": "βαρκαδη",
+        "disposition": "RESIDUAL_RECOGNITION_AMBIGUITY",
+        "assessment": "βαρκάδα ή is merged into βαρκάδη / βαρκάδι in NBest. Vowel coalescence and word segmentation are plausible, but exact lexical separation is not independently established. Source and visible cue retain the intended alternatives; no audition is claimed.",
+        "established_defective_narration": false
+      }
+    ],
+    "segments_and_nbest": [
+      {
+        "segment": 0,
+        "offset_seconds": 0.07,
+        "duration_seconds": 3.17,
+        "text": "Ένα νησί που το φτάνεις περπατώντας πάνω από τη λίμνη.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.8320802,
+            "text": "ένα νησί που το φτάνεις περπατώντας πάνω από τη λίμνη"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.7624163,
+            "text": "ένα νησί που το φτάνεις περπατώντας πάνω από την λίμνη"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.796159,
+            "text": "νησί που το φτάνεις περπατώντας πάνω από τη λίμνη"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.73376817,
+            "text": "ενα νησί που το φτάνεις περπατώντας πάνω από τη λίμνη"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.760331,
+            "text": "ένα νησί που το φτάνει περπατώντας πάνω από τη λίμνη"
+          }
+        ]
+      },
+      {
+        "segment": 1,
+        "offset_seconds": 3.47,
+        "duration_seconds": 2.89,
+        "text": "Αυτό είναι το πρώτο μας ραντεβού με τις πρέσπες.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.8619555,
+            "text": "αυτό είναι το πρώτο μας ραντεβού με τις πρέσπες"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.74261576,
+            "text": "a υτό είναι το πρώτο μας ραντεβού με τις πρέσπες"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.7871834,
+            "text": "αυτό είναι το πρώτο μας ραντεβού με τις πρέπει"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.85918105,
+            "text": "αυτό είναι το πρώτο ραντεβού με τις πρέσπες"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.8103363,
+            "text": "το πρώτο μας ραντεβού με τις πρέσπες"
+          }
+        ]
+      },
+      {
+        "segment": 2,
+        "offset_seconds": 6.59,
+        "duration_seconds": 4.49,
+        "text": "Την πρώτη μέρα ξεκινάμε από την πεζογέφυρα του Αγίου Αχλίου στη μικρή πρέσπα.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.6789292,
+            "text": "την πρώτη μέρα ξεκινάμε από την πεζογέφυρα του αγίου αχλίου στη μικρή πρέσπα"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.68743294,
+            "text": "την πρώτη μέρα ξεκινάμε από την πεζογέρα του αγίου αχλείου στη μικρή πρέσπα"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.66239196,
+            "text": "την πρώτη μέρα ξεκινάμε από τη πεζογέφυρα του αγίου αχλίου στη μικρή πρέσπα"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.68142384,
+            "text": "την πρώτη μέρα ξεκινάμε από την πεζογέφυρα του αγίου αχχυλίου στη μικρή πρέσπα"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.66488665,
+            "text": "την πρώτη μέρα ξεκινάμε από τη πεζογέφυρα του αγίου αχχυλίου στη μικρή πρέσπα"
+          }
+        ]
+      },
+      {
+        "segment": 3,
+        "offset_seconds": 11.31,
+        "duration_seconds": 4.12,
+        "text": "Περνάμε αργά, κοιτάζουμε το νερό και φτάνουμε στο νησάκι.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.84327984,
+            "text": "περνάμε αργά κοιτάζουμε το νερό και φτάνουμε στο νησάκι"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.76516706,
+            "text": "περνάμε αργά κοι κοιτάζουμε το νερό και φτάνουμε στο νησάκι"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.8570495,
+            "text": "αργά κοιτάζουμε το νερό και φτάνουμε στο νησάκι"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.7499287,
+            "text": "περνάμε αργά κοιτάζουμε το νερό και φτάνουμε στο νησί"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.7771504,
+            "text": "περνάμε αργά κοιτάμε το νερό και φτάνουμε στο νησάκι"
+          }
+        ]
+      },
+      {
+        "segment": 4,
+        "offset_seconds": 15.51,
+        "duration_seconds": 7.28,
+        "text": "Ανάμεσα στα σημαντικότερα μνημεία του βρίσκονται τα ερείπια της Βασιλικής του Αγίου Αχχυλίου που συνδέεται με τον τσάρο Σαμουήλ και τον δέκατο αιώνα.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.7734425,
+            "text": "ανάμεσα στα σημαντικότερα μνημεία του βρίσκονται τα ερείπια της βασιλικής του αγίου αχχυλίου που συνδέεται με τον τσάρο σαμουήλ και τον δέκατο αιώνα"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.7693261,
+            "text": "ανάμεσα στα σημαντικότερα μνημεία του βρίσκονται τα ερείπια της βασιλικής του αγίου αχχυλίου που συνδέεται με τον τσάρο σαμουήλ και το δέκατο αιώνα"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.7786611,
+            "text": "ανάμεσα στα σημαντικότερα μνημεία του βρίσκονται τα ερείπια της βασιλικής του αγίου αχλίου που συνδέεται με τον τσάρο σαμουήλ και τον δέκατο αιώνα"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.7761973,
+            "text": "ανάμεσα στα σημαντικότερα μνημεία του βρίσκονται τα ερείπια της βασιλικής του αγίου αχλείου που συνδέεται με τον τσάρο σαμουήλ και τον δέκατο αιώνα"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.77454466,
+            "text": "ανάμεσα στα σημαντικότερα μνημεία του βρίσκονται τα ερείπια της βασιλικής του αγίου αχλίου που συνδέεται με τον τσάρο σαμουήλ και το δέκατο αιώνα"
+          }
+        ]
+      },
+      {
+        "segment": 5,
+        "offset_seconds": 22.87,
+        "duration_seconds": 2.84,
+        "text": "Εδώ η ιστορία μπαίνει μέσα στο τοπίο.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.8503216,
+            "text": "εδώ η ιστορία μπαίνει μέσα στο τοπίο"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.74687433,
+            "text": "εδώ η ιστορία μπαίνει μέσα στο τοπείο"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.84046936,
+            "text": "η ιστορία μπαίνει μέσα στο τοπίο"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.8286092,
+            "text": "ιστορία μπαίνει μέσα στο τοπίο"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.7197809,
+            "text": "η ιστορία μπαίνει μέσα στο τοπείο"
+          }
+        ]
+      },
+      {
+        "segment": 6,
+        "offset_seconds": 25.83,
+        "duration_seconds": 2.73,
+        "text": "Συνεχίζουμε προς τον άγιο Γερμανό.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.8356103,
+            "text": "συνεχίζουμε προς τον άγιο γερμανό"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.5907042,
+            "text": "συνεχίζουμε στον άγιο γερμανό"
+          }
+        ]
+      },
+      {
+        "segment": 7,
+        "offset_seconds": 28.67,
+        "duration_seconds": 4.45,
+        "text": "Μία βόλτα στον οικισμό και στον παραδοσιακό νερόμυλο αλλάζει το ρυθμό της ημέρας.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.69419485,
+            "text": "μία βόλτα στον οικισμό και στον παραδοσιακό νερόμυλο αλλάζει το ρυθμό της ημέρας"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.68143773,
+            "text": "μια βόλτα στον οικισμό και στον παραδοσιακό νερόμυλο αλλάζει το ρυθμό της ημέρας"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.6702672,
+            "text": "μία βόλτα στον οικισμό και στον παραδοσιακό νερόμυλο αλλάζει τον ρυθμό της ημέρας"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.65751004,
+            "text": "μια βόλτα στον οικισμό και στον παραδοσιακό νερόμυλο αλλάζει τον ρυθμό της ημέρας"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.65507585,
+            "text": "μία βόλτα στον οικισμό και στον παραδοσιακό νερό αλλάζει το ρυθμό της ημέρας"
+          }
+        ]
+      },
+      {
+        "segment": 8,
+        "offset_seconds": 33.27,
+        "duration_seconds": 4.49,
+        "text": "Για επίσκεψη στο εσωτερικό επιβεβαιώνουμε προηγουμένως τη λειτουργία του.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.85029167,
+            "text": "για επίσκεψη στο εσωτερικό επιβεβαιώνουμε προηγουμένως τη λειτουργία του"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.7617972,
+            "text": "για επίσκεψη στο εσωτερικό επιβεβαιώνει προηγουμένως τη λειτουργία του"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.7499347,
+            "text": "για επίσκεψη στο εσωτερικό επιβεβαιώουμε προηγουμένως τη λειτουργία του"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.8432517,
+            "text": "επίσκεψη στο εσωτερικό επιβεβαιώνουμε προηγουμένως τη λειτουργία του"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.76804614,
+            "text": "για επισκεψη στο εσωτερικό επιβεβαιώνουμε προηγουμένως τη λειτουργία του"
+          }
+        ]
+      },
+      {
+        "segment": 9,
+        "offset_seconds": 37.95,
+        "duration_seconds": 3.85,
+        "text": "Τη δεύτερη μέρα πηγαίνουμε στους ψαράδες στη μεγάλη πρέσπα.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.78508484,
+            "text": "τη δεύτερη μέρα πηγαίνουμε στους ψαράδες στη μεγάλη πρέσπα"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.70588344,
+            "text": "την δεύτερη μέρα πηγαίνουμε στους ψαράδες στη μεγάλη πρέσπα"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.69643176,
+            "text": "τη δεύτερη ημέρα πηγαίνουμε στους ψαράδες στη μεγάλη πρέσπα"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.75951177,
+            "text": "τη δεύτερη μέρα πηγαίνουμε στους ψαράδες στη μεγάλη πρέσπα"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.73303014,
+            "text": "στη δεύτερη μέρα πηγαίνουμε στους ψαράδες στη μεγάλη πρέσπα"
+          }
+        ]
+      },
+      {
+        "segment": 10,
+        "offset_seconds": 41.95,
+        "duration_seconds": 3.21,
+        "text": "Περπατάμε στο χωριό και καθόμαστε δίπλα στη λίμνη.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.8144178,
+            "text": "περπατάμε στο χωριό και καθόμαστε δίπλα στη λίμνη"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.7072876,
+            "text": "περπάτα στο χωριό και καθόμαστε δίπλα στη λίμνη"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.7170906,
+            "text": "περπατάμε στο χωρίο και καθόμαστε δίπλα στη λίμνη"
+          }
+        ]
+      },
+      {
+        "segment": 11,
+        "offset_seconds": 45.31,
+        "duration_seconds": 5.4,
+        "text": "Από εδώ ξεκινούν πλωτές περιηγήσεις προς τα ασκηταριά και τις βραχογραφίες των απόκρημνων ακτών.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.79731834,
+            "text": "από εδώ ξεκινούν πλωτές περιηγήσεις προς τα ασκηταριά και τις βραχογραφίες των απόκρημνων ακτών"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.74467885,
+            "text": "από εδώ ξεκινούν πλωτές περιήσεις προς τα ασκηταριά και τις βραχογραφίες των απόκρημνων ακτών"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.7391798,
+            "text": "από εδώ ξεκινούν πλωτές περιηγήσεις προς τα ασκηταριά και τις βροχογραφίες των απόκρημνων ακτών"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.75919396,
+            "text": "από εδώ ξεκινούν πλωτές περιηγήσεις προς τα ασκήταριά και τις βραχογραφίες των απόκρημνων ακτών"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.7473382,
+            "text": "από εδώ ξεκινούν πλωτές περιηγήσεις προς τα ασκητα και τις βραχογραφίες των απόκρημνων ακτών"
+          }
+        ]
+      },
+      {
+        "segment": 12,
+        "offset_seconds": 50.83,
+        "duration_seconds": 4.81,
+        "text": "Τις κανονίζουμε με τοπικό επαγγελματία ανάλογα με τη διαθεσιμότητα και τον καιρό.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.8083462,
+            "text": "τις κανονίζουμε με τοπικό επαγγελματία ανάλογα με τη διαθεσιμότητα και τον καιρό"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.7632517,
+            "text": "της κανονίζουμε με τοπικό επαγγελματία ανάλογα με τη διαθεσιμότητα και τον καιρό"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.76876307,
+            "text": "τις κανονίζουμε με τοπικό επαγγελματία ανάλογα με τη διαθεσισιμότητα και τον καιρό"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.82074636,
+            "text": "κανονίζουμε με τοπικό επαγγελματία ανάλογα με τη διαθεσιμότητα και τον καιρό"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.7343117,
+            "text": "τις κανονίζουμε με τοπικό επαγγελματία ανάλογα με την διαθεσιμότητα και τον καιρό"
+          }
+        ]
+      },
+      {
+        "segment": 13,
+        "offset_seconds": 55.83,
+        "duration_seconds": 5.73,
+        "text": "Στο τραπέζι αναζητούμε τις γεύσεις του τόπου, φασόλια πρεσπών και τοπικά πιάτα ψαριών.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.78849167,
+            "text": "στο τραπέζι αναζητούμε τις γεύσεις του τόπου φασόλια πρεσπών και τοπικά πιάτα ψαριών"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.7992845,
+            "text": "στο τραπέζι αναζητούμε τις γεύσεις του τόπου φασόλια πρεσπών και τοπικά πιάτα ψαριών"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.80704546,
+            "text": "στο τραπέζι αναζητούμε τις γεύσεις του τόπου πρεσπών και τοπικά πιάτα ψαριών"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.7291538,
+            "text": "στο τραπέζι αναζητούν τις γεύσεις του τόπου φασόλια πρεσπών και τοπικά πιάτα ψαριών"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.73542964,
+            "text": "το τραπέζι αναζητούμε τις γεύσεις του τόπου φασόλια πρεσπών και τοπικά πιάτα ψαριών"
+          }
+        ]
+      },
+      {
+        "segment": 14,
+        "offset_seconds": 61.67,
+        "duration_seconds": 6.09,
+        "text": "Κρατάμε χρόνο και για παρατήρηση Πουλίων από απόσταση χωρίς να πλησιάζουμε φωλιές ή να ενοχλούμε την άγρια ζωή.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.7595733,
+            "text": "κρατάμε χρόνο και για παρατήρηση πουλίων από απόσταση χωρίς να πλησιάζουμε φωλιές ή να ενοχλούμε την άγρια ζωή"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.7762496,
+            "text": "κρατάμε χρόνο και για παρατήρηση πουλιών από απόσταση χωρίς να πλησιάζουμε φωλιές ή να ενοχλούμε την άγρια ζωή"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.75232625,
+            "text": "κρατάμε χρόνο και για παρατήρηση πουλίων από απόσταση χωρίς να πλησιάζουμε φωιές ή να ενοχλούμε την άγρια ζωή"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.7690026,
+            "text": "κρατάμε χρόνο και για παρατήρηση πουλιών από απόσταση χωρίς να πλησιάζουμε φωιές ή να ενοχλούμε την άγρια ζωή"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.77105486,
+            "text": "κρατάμε χρόνο και για παρατήρηση πουλιων από απόσταση χωρίς να πλησιάζουμε φωλιές ή να ενοχλούμε την άγρια ζωή"
+          }
+        ]
+      },
+      {
+        "segment": 15,
+        "offset_seconds": 67.95,
+        "duration_seconds": 7.65,
+        "text": "Αυτό το διήμερο χωρά 2 λίμνες, ένα νησί και μικρούς οικισμούς που αξίζουν την προσοχή μας χωρίς να γεμίσουμε κάθε ώρα με συνεχείς μετακινήσεις.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.8511736,
+            "text": "αυτό το διήμερο χωρά δύο λίμνες ένα νησί και μικρούς οικισμούς που αξίζουν την προσοχή μας χωρίς να γεμίσουμε κάθε ώρα με συνεχείς μετακινήσεις"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.8107707,
+            "text": "a υτό το διήμερο χωρά δύο λίμνες ένα νησί και μικρούς οικισμούς που αξίζουν την προσοχή μας χωρίς να γεμίσουμε κάθε ώρα με συνεχείς μετακινήσεις"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.8364858,
+            "text": "αυτό το διήμερο χωράμνες ένα νησί και μικρούς οικισμούς που αξίζουν την προσοχή μας χωρίς να γεμίσουμε κάθε ώρα με συνεχείς μετακινήσεις"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.8660249,
+            "text": "αυτό το διήμερο χωρά λίμνες ένα νησί και μικρούς οικισμούς που αξίζουν την προσοχή μας χωρίς να γεμίσουμε κάθε ώρα με συνεχείς μετακινήσεις"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.8245729,
+            "text": "αυτό το διήμερο χωρά δύο λίμνες ένα νησί και μικρούς οικμούς που αξίζουν την προσοχή μας χωρίς να γεμίσουμε κάθε ώρα με συνεχείς μετακινήσεις"
+          }
+        ]
+      },
+      {
+        "segment": 16,
+        "offset_seconds": 75.75,
+        "duration_seconds": 5.21,
+        "text": "Εσύ ποια στάση θα κρατούσες περισσότερο; Το νησάκι τη βαρκάδη, τη βόλτα στο χωριό.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.80939996,
+            "text": "εσύ ποια στάση θα κρατούσες περισσότερο το νησάκι τη βαρκάδη τη βόλτα στο χωριό"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.7664538,
+            "text": "εσύ πια στάση θα κρατούσες περισσότερο το νησάκι τη βαρκάδη τη βόλτα στο χωριό"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.7568497,
+            "text": "εσύ ποια στάση θα κρατούσες περισσότερο το νησάκι τη βαρκδη τη βόλτα στο χωριό"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.77191496,
+            "text": "εσύ πια ποια στάση θα κρατούσες περισσότερο το νησάκι τη βαρκάδη τη βόλτα στο χωριό"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.7815673,
+            "text": "εσύ ποια στάση θα κρατούσες περισσότερο το νησάκι τη βαρκάδι τη βόλτα στο χωριό"
+          }
+        ]
+      },
+      {
+        "segment": 17,
+        "offset_seconds": 81.15,
+        "duration_seconds": 2.45,
+        "text": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.8162786,
+            "text": "αν σας άρεσε ακολουθήστε για περισσότερα"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.61491895,
+            "text": "a ν σας άρεσε ακολουθήστε για περισσότερα"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.6921635,
+            "text": "αν σας άρεσε ακολουθείστε για περισσότερα"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.69470525,
+            "text": "αν σας άρεσε ακολουθήστε για περισσότε"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.8445989,
+            "text": "αν σας άρεσε για περισσότερα"
+          }
+        ]
+      },
+      {
+        "segment": 18,
+        "offset_seconds": 83.66,
+        "duration_seconds": 0.0,
+        "text": "",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.0,
+            "text": ""
+          }
+        ]
+      }
+    ],
+    "residual_recognition_uncertainty_retained": true,
+    "assessment": "ASR is independent corroboration, not a perfect transcript. Rare names, homophones and short-word segmentation leave documented ambiguity; no established content-changing narration error was identified. No audio audition or perfect lexical match is claimed."
+  },
+  "blocking_visual_or_factual_fixes": [],
+  "delivery_assets_modified_by_reviewer": false,
+  "external_publication_performed": false,
+  "release_scope": "Exact-byte visual/factual approval with full technical audio evidence and explicitly documented residual recognition ambiguity. Parent assesses release; this report does not assert listening.",
+  "resolved_geographic_timing_fix": {
+    "superseded_video_sha256": "4df656eee1609cf4dd13fc01c7bc3ab1c566761f03e93e8eafdcee1d19d131cd",
+    "issue": "Old watermill image remained during full Psarades-location cue; bay appeared late during boat passage.",
+    "resolved": true,
+    "new_psarades_start_seconds": 37.96666666666667,
+    "new_boat_bay_start_seconds": 45.3,
+    "audio_and_srt_unchanged": true
+  }
+}

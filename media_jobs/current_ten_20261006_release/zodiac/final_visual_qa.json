@@ -1,0 +1,283 @@
+{
+  "status": "APPROVED_FOR_EXACT_REVIEWED_FILES",
+  "reviewed_at_utc": "2026-10-06T10:07:03.460735+00:00",
+  "series": "zodiac",
+  "reviewer": "research_fresh_content",
+  "batch_id": "3f6f5927c66f4af4b257c8feb0d6bac4",
+  "hosted_jpeg_count": 6,
+  "directly_viewed_all_hosted_jpegs": true,
+  "cards": [
+    {
+      "card": 1,
+      "file_id": "815b86ab640c4d4c9e48d47669822b45",
+      "url": "https://dynamic.heygen.ai/image/815b86ab640c4d4c9e48d47669822b45/original.jpg",
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/hosted/card-01.jpg",
+      "sha256": "648129eba35335a75b3adbb3b203945d705fc846867133e3649d44a0feec9881",
+      "original_sha256": "dc53c786881c7c6ba1900282f2731a6c6954a5085b37bdceae24c5790810d87d",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "directly_viewed": true,
+      "full_greek_read": true,
+      "copy_matches_final_manifest": true,
+      "expected_complete_copy": "ΕΣΕΙΣ ΟΙ ΔΥΟ ΣΕ ESCAPE ROOM\nΠοιος λύνει τον γρίφο;\nΚριός: Δοκιμάζει πρώτος το λουκέτο.\nΠαρθένος: Διαβάζει πρώτα τις οδηγίες.",
+      "text_crop_defects": [],
+      "visible_generation_defects_requiring_fix": [],
+      "review_note": "Κριός ♈ / Παρθένος ♍. Both faces and hands visible; lock and instructions match the joke; badges below faces at y583. Entire Greek copy legible.",
+      "status": "APPROVED_FOR_EXACT_HOSTED_JPEG"
+    },
+    {
+      "card": 2,
+      "file_id": "48f253e0d74c422a882d27b261abbd4d",
+      "url": "https://dynamic.heygen.ai/image/48f253e0d74c422a882d27b261abbd4d/original.jpg",
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/hosted/card-02.jpg",
+      "sha256": "958fc4bcbb0ff7121db541befd002c93dd7cdb55bd37d6372b8c2e91a86fc0cd",
+      "original_sha256": "96c1e1c44ae66a2ac2c284ed1da19e822f5ee792e7cb19bd052a3a9b9e41518d",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "directly_viewed": true,
+      "full_greek_read": true,
+      "copy_matches_final_manifest": true,
+      "expected_complete_copy": "Ταύρος: «Το κλειδί πρέπει να είναι κάπου εδώ».\nΥδροχόος: Ελέγχει μήπως το ράφι είναι μυστικός διακόπτης.",
+      "text_crop_defects": [],
+      "visible_generation_defects_requiring_fix": [],
+      "review_note": "Ταύρος ♉ / Υδροχόος ♒. Drawer search and shelf inspection match copy. Face/eye areas unobstructed; all Greek copy legible.",
+      "status": "APPROVED_FOR_EXACT_HOSTED_JPEG"
+    },
+    {
+      "card": 3,
+      "file_id": "9862cd03d51448a7a52867729580e560",
+      "url": "https://dynamic.heygen.ai/image/9862cd03d51448a7a52867729580e560/original.jpg",
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/hosted/card-03.jpg",
+      "sha256": "1adaeeee58475043d9c6f9cfb6bdf023ddbf9589015fcf1559b39003638cb822",
+      "original_sha256": "779512e617db9a197e91882c1e3073b22cf1d006d8b0368573343ebea35846dc",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "directly_viewed": true,
+      "full_greek_read": true,
+      "copy_matches_final_manifest": true,
+      "expected_complete_copy": "Δίδυμοι: Λένε δυνατά πέντε πιθανές λύσεις.\nΣκορπιός: Προσέχει τη μοναδική λεπτομέρεια που κανείς δεν κοίταξε.",
+      "text_crop_defects": [],
+      "visible_generation_defects_requiring_fix": [],
+      "review_note": "Δίδυμοι ♊ / Σκορπιός ♏. Talking man and inspecting woman visible; correct glyphs and labels; complete copy legible.",
+      "status": "APPROVED_FOR_EXACT_HOSTED_JPEG"
+    },
+    {
+      "card": 4,
+      "file_id": "809cf91fc2c54c63b2e8ed4e45c91cfe",
+      "url": "https://dynamic.heygen.ai/image/809cf91fc2c54c63b2e8ed4e45c91cfe/original.jpg",
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/hosted/card-04.jpg",
+      "sha256": "9ee98232f1979936d804cbfb94d0e3c509eda48dcc1e369138eede147befd9cb",
+      "original_sha256": "2b30f10fcf40cd77569e5ca3460aa978d55d1b3d63c097f18b10703b430ee917",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "directly_viewed": true,
+      "full_greek_read": true,
+      "copy_matches_final_manifest": true,
+      "expected_complete_copy": "Καρκίνος: «Μην αφήσουμε κανέναν μόνο στο σκοτάδι».\nΑιγόκερως: «Έχουμε είκοσι λεπτά. Ποιος αναλαμβάνει τι;»",
+      "text_crop_defects": [],
+      "visible_generation_defects_requiring_fix": [],
+      "review_note": "Καρκίνος ♋ / Αιγόκερως ♑. Lantern/team puzzle scene, both faces visible; glyphs correct; full Greek dialogue readable.",
+      "status": "APPROVED_FOR_EXACT_HOSTED_JPEG"
+    },
+    {
+      "card": 5,
+      "file_id": "76a968d837e74bfdab4e24f4f43411f1",
+      "url": "https://dynamic.heygen.ai/image/76a968d837e74bfdab4e24f4f43411f1/original.jpg",
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/hosted/card-05.jpg",
+      "sha256": "dcbc1ec8f00ac77189dd20a4581c611dd3ebc07b8816d117cad8738b6b67d7a9",
+      "original_sha256": "c057745fab522899e734841fd5f8b2e478de2cf69ee264cca6fc64f823f7a37d",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "directly_viewed": true,
+      "full_greek_read": true,
+      "copy_matches_final_manifest": true,
+      "expected_complete_copy": "Λέων: Ανακοινώνει τη λύση σαν να κέρδισε βραβείο.\nΙχθύες: Έχουν ήδη φανταστεί την ιστορία πίσω από τον γρίφο.",
+      "text_crop_defects": [],
+      "visible_generation_defects_requiring_fix": [],
+      "review_note": "Λέων ♌ / Ιχθύες ♓. Celebration and thought scene; correct glyphs; eyes/face areas unobstructed and copy legible.",
+      "status": "APPROVED_FOR_EXACT_HOSTED_JPEG"
+    },
+    {
+      "card": 6,
+      "file_id": "a81119f2a6bb480fb982911d8fb88348",
+      "url": "https://dynamic.heygen.ai/image/a81119f2a6bb480fb982911d8fb88348/original.jpg",
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/hosted/card-06.jpg",
+      "sha256": "fe8d9e33a16fb8969c5e6b0d4cf039a26fc3048e3adfc80179edf83704406538",
+      "original_sha256": "b5445b79bfd7f0578335912e7d5babe84e203ecaacf46cf2f307bd17f39919b0",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "directly_viewed": true,
+      "full_greek_read": true,
+      "copy_matches_final_manifest": true,
+      "expected_complete_copy": "Ζυγός: Ζυγίζει τις δύο επικρατέστερες λύσεις.\nΤοξότης: «Να δοκιμάσουμε και τις δύο!»\nΠώς συνεργάζεστε εσύ και το ταίρι σου;\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "text_crop_defects": [],
+      "visible_generation_defects_requiring_fix": [],
+      "review_note": "Ζυγός ♎ / Τοξότης ♐. Two puzzle choices visible; correct glyphs; complete audience question and exact CTA legible.",
+      "status": "APPROVED_FOR_EXACT_HOSTED_JPEG"
+    }
+  ],
+  "exact_final_cta_read": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+  "text_legibility": "Entire Greek copy read directly at 1080 square; no clipping, missing accents, unreadable glyphs or compression degradation requiring correction.",
+  "reencoding_review": "Public JPEG bytes differ from original, so each hosted JPEG was inspected directly. Dimensions remain 1080×1080.",
+  "video": {
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/hosted/current-ten-20261006-zodiac.mp4",
+    "file_id": "0ebdcf8804164b9db736ffc83f16be2d",
+    "url": "https://resource2.heygen.ai/video/0ebdcf8804164b9db736ffc83f16be2d/original.mp4",
+    "sha256": "21c6ced881f0f747a89d94e80134cb985689cb66df73924b22eed15746471cc3",
+    "original_sha256": "21c6ced881f0f747a89d94e80134cb985689cb66df73924b22eed15746471cc3",
+    "byte_identical_to_reviewed_local_final": true,
+    "prior_local_visual_qa": null,
+    "prior_local_video_review_applies": false,
+    "new_zodiac_card_frame_review": "ALL_SIX_EXACT_VIDEO_CARD_FRAMES_DIRECTLY_REVIEWED_APPROVED",
+    "directly_reviewed_card_frames": [
+      {
+        "card": 1,
+        "timestamp_seconds": 4.816666666666667,
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/hosted/qa_frames/card-01-mid.png",
+        "sha256": "6e60f94bf79f3029ee2ed4955cb4d916086d2794ff0e713f439ed874360f11b5",
+        "direct_visual_review": "APPROVED",
+        "directly_viewed": true,
+        "full_greek_read": true,
+        "correct_pair_and_glyphs": true,
+        "eyes_unobstructed": true,
+        "crop_or_text_defects": [],
+        "review_note": "Complete square card retained inside 1080×1920 video; top brand readable; all card text, glyphs and badges readable, with clear faces. Exact CTA readable on card 6."
+      },
+      {
+        "card": 2,
+        "timestamp_seconds": 13.616666666666667,
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/hosted/qa_frames/card-02-mid.png",
+        "sha256": "91a991a07bf2739a202401668d75800661faed02f54c546ceca73882b8dfeded",
+        "direct_visual_review": "APPROVED",
+        "directly_viewed": true,
+        "full_greek_read": true,
+        "correct_pair_and_glyphs": true,
+        "eyes_unobstructed": true,
+        "crop_or_text_defects": [],
+        "review_note": "Complete square card retained inside 1080×1920 video; top brand readable; all card text, glyphs and badges readable, with clear faces. Exact CTA readable on card 6."
+      },
+      {
+        "card": 3,
+        "timestamp_seconds": 21.375,
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/hosted/qa_frames/card-03-mid.png",
+        "sha256": "284378a6db6b2d2ab1735c5270fc4682a84671a1ceb128f871de64114be90d25",
+        "direct_visual_review": "APPROVED",
+        "directly_viewed": true,
+        "full_greek_read": true,
+        "correct_pair_and_glyphs": true,
+        "eyes_unobstructed": true,
+        "crop_or_text_defects": [],
+        "review_note": "Complete square card retained inside 1080×1920 video; top brand readable; all card text, glyphs and badges readable, with clear faces. Exact CTA readable on card 6."
+      },
+      {
+        "card": 4,
+        "timestamp_seconds": 28.71666666666667,
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/hosted/qa_frames/card-04-mid.png",
+        "sha256": "37aa2b7163bf8d5a80495603a641e508b6afd3a29a4ec65a7c7377f8c029d12f",
+        "direct_visual_review": "APPROVED",
+        "directly_viewed": true,
+        "full_greek_read": true,
+        "correct_pair_and_glyphs": true,
+        "eyes_unobstructed": true,
+        "crop_or_text_defects": [],
+        "review_note": "Complete square card retained inside 1080×1920 video; top brand readable; all card text, glyphs and badges readable, with clear faces. Exact CTA readable on card 6."
+      },
+      {
+        "card": 5,
+        "timestamp_seconds": 36.68333333333334,
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/hosted/qa_frames/card-05-mid.png",
+        "sha256": "ea44807834914dce31b1fa61685f955c37c21316b9395d58d3e7b730587d2056",
+        "direct_visual_review": "APPROVED",
+        "directly_viewed": true,
+        "full_greek_read": true,
+        "correct_pair_and_glyphs": true,
+        "eyes_unobstructed": true,
+        "crop_or_text_defects": [],
+        "review_note": "Complete square card retained inside 1080×1920 video; top brand readable; all card text, glyphs and badges readable, with clear faces. Exact CTA readable on card 6."
+      },
+      {
+        "card": 6,
+        "timestamp_seconds": 46.08333333333334,
+        "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/hosted/qa_frames/card-06-mid.png",
+        "sha256": "a9248131528a2ffc33b1245fb4f91378d0f6c83be5e18575a0d814efa024364f",
+        "direct_visual_review": "APPROVED",
+        "directly_viewed": true,
+        "full_greek_read": true,
+        "correct_pair_and_glyphs": true,
+        "eyes_unobstructed": true,
+        "crop_or_text_defects": [],
+        "review_note": "Complete square card retained inside 1080×1920 video; top brand readable; all card text, glyphs and badges readable, with clear faces. Exact CTA readable on card 6."
+      }
+    ],
+    "frame_count_reviewed": 6,
+    "exact_mp4_full_greek_read": true,
+    "review_basis": "Fresh direct visual review of one midpoint frame for every card, extracted from the exact public MP4, which is byte-identical to the new local final MP4."
+  },
+  "factual_sources": [],
+  "technical_audio_qa": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/final_audio_qa.json",
+  "listened": false,
+  "blocking_fixes": [],
+  "delivery_assets_modified": false,
+  "external_publication_performed": false,
+  "release_scope": "Visual approval only for the exact listed public bytes. Parent owns scheduling and release.",
+  "zodiac_verification": {
+    "all_twelve_signs_once": true,
+    "correct_glyph_label_pairing": true,
+    "badge_top_y": 583,
+    "badge_covers_eyes": false,
+    "pairs": [
+      [
+        "Κριός",
+        "♈",
+        "Παρθένος",
+        "♍"
+      ],
+      [
+        "Ταύρος",
+        "♉",
+        "Υδροχόος",
+        "♒"
+      ],
+      [
+        "Δίδυμοι",
+        "♊",
+        "Σκορπιός",
+        "♏"
+      ],
+      [
+        "Καρκίνος",
+        "♋",
+        "Αιγόκερως",
+        "♑"
+      ],
+      [
+        "Λέων",
+        "♌",
+        "Ιχθύες",
+        "♓"
+      ],
+      [
+        "Ζυγός",
+        "♎",
+        "Τοξότης",
+        "♐"
+      ]
+    ]
+  },
+  "review_scope": "6 exact hosted JPEGs and 6 new MP4 card frames. Hosted MP4 bytes identical to final local video.",
+  "video_sha256": "21c6ced881f0f747a89d94e80134cb985689cb66df73924b22eed15746471cc3",
+  "video_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/current-ten-20261006-zodiac.mp4",
+  "hosted_qa_report": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/hosted/final_visual_qa.json"
+}

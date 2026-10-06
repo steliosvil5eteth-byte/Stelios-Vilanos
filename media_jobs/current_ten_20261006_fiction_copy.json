@@ -1,0 +1,284 @@
+{
+  "date": "2026-10-06",
+  "brandId": 7076410,
+  "timezone": "Europe/Athens",
+  "workflow_state": "LOCAL_COPY_ONLY_NO_MEDIA_GENERATED_NO_EXTERNAL_CREATE",
+  "qa_state": "NOT_YET_RENDERED_NOT_PASSED_FINAL_REVIEW",
+  "dedupe": {
+    "checked_at": "2026-10-06T09:30:43Z",
+    "metricool_history_source": "/workspace/scratch/73e79e1cf9df/metricool_history.json",
+    "metricool_rows_read": 208,
+    "unique_substantive_caption_variants_read": 115,
+    "notion_archive_rows": 134,
+    "notion_searches": {
+      "promotion": "No results",
+      "pottery": "No results",
+      "escape_room": "Only unrelated battery humor and generic source mentions",
+      "drink_photography": "Existing other dog drink plots, no photo-staging story"
+    },
+    "fresh_metricool_20261006_through_20261008": "data=[]",
+    "repository_check": "PENDING_ROOT",
+    "recheck_required_before_generation_and_each_external_create": true
+  },
+  "requirements": {
+    "card_dimensions": [
+      1080,
+      1080
+    ],
+    "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+    "platforms": [
+      "Facebook",
+      "Instagram",
+      "TikTok",
+      "YouTube"
+    ],
+    "facebook_instagram": "Native carousel",
+    "tiktok": "Native photo carousel, autoAddMusic=true",
+    "youtube": "Complete vertical 1080x1920 slideshow of every card; one permitted instrumental layer; no narration",
+    "ai_disclosure": true
+  },
+  "posts": [
+    {
+      "series": "relationships",
+      "baseline_time": "07:00",
+      "title": "Η προαγωγή που τους απομάκρυνε",
+      "content_key": "relationships|partner-promotion-envy-owned-support-without-self-erasure",
+      "status": "COPY_REVIEW_PENDING",
+      "format": "native_carousel",
+      "card_count": 7,
+      "standalone": true,
+      "cast": "Eleni: Greek woman 38, shoulder-length dark wavy hair, olive skin, brown eyes, dark teal blouse. Petros: Greek man 40, short dark hair, light stubble, grey shirt. Same adult couple throughout; contemporary modest apartment and a family dining room.",
+      "hook": "Πήρε την προαγωγή. Κι εκείνος είπε: «Τώρα θα μας κάνεις και τη σπουδαία;»",
+      "caption": "Η προαγωγή που τους απομάκρυνε\n\nΜπορείς να χαρείς με την επιτυχία του ανθρώπου σου όταν νιώθεις ότι η δική σου ζωή έχει κολλήσει; Ο Πέτρος άφησε τη ζήλια του να πληγώσει την Ελένη. Η παραδοχή ήταν μόνο η αρχή· η αλλαγή έπρεπε να φανεί στον τρόπο που της φερόταν.\n\nΧωράει η επιτυχία και των δύο στη σχέση;\n\nΠρωτότυπη μυθοπλασία. Εικόνες δημιουργημένες με ΤΝ.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #Σχέσεις #Αγάπη #Εμπιστοσύνη #Συντροφικότητα",
+      "hashtags": [
+        "#Ιστορίες",
+        "#Σχέσεις",
+        "#Αγάπη",
+        "#Εμπιστοσύνη",
+        "#Συντροφικότητα"
+      ],
+      "cards": [
+        {
+          "number": 1,
+          "of": 7,
+          "text": "Πήρε την προαγωγή.\nΚι εκείνος είπε:\n«Τώρα θα μας κάνεις και τη σπουδαία;»",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Eleni: Greek woman 38, shoulder-length dark wavy hair, olive skin, brown eyes, dark teal blouse. Petros: Greek man 40, short dark hair, light stubble, grey shirt. Same adult couple throughout; contemporary modest apartment and a family dining room. Doorway medium shot: Eleni arrives home holding a closed work folder, hopeful smile interrupted by Petros's tight, bitter half-smile. Warm evening light, emotional tension visible, no readable company names."
+        },
+        {
+          "number": 2,
+          "of": 7,
+          "text": "Η Ελένη είχε δουλέψει δύο χρόνια γι’ αυτή τη θέση.\nΟ Πέτρος είχε μόλις απορριφθεί από μια δουλειά.\nΕκείνο το βράδυ, έκρυψε τη χαρά της.",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Eleni: Greek woman 38, shoulder-length dark wavy hair, olive skin, brown eyes, dark teal blouse. Petros: Greek man 40, short dark hair, light stubble, grey shirt. Same adult couple throughout; contemporary modest apartment and a family dining room. Wide kitchen-table shot: Eleni sits with the closed promotion folder beside her, looking down; Petros is farther away at his laptop. Two untouched dinner plates and physical distance convey contrasting news. No text visible on screen."
+        },
+        {
+          "number": 3,
+          "of": 7,
+          "text": "Για μέρες, κάθε καλό νέο της γινόταν αστείο του.\nΏσπου τον κοίταξε:\n«Δεν θέλω να μικραίνω όσα πέτυχα για να χωράμε μαζί.»",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Eleni: Greek woman 38, shoulder-length dark wavy hair, olive skin, brown eyes, dark teal blouse. Petros: Greek man 40, short dark hair, light stubble, grey shirt. Same adult couple throughout; contemporary modest apartment and a family dining room. Eye-level close two-shot across the dining table. Eleni faces Petros steadily and speaks with composure, one hand resting firmly on the closed folder; he has stopped smiling. No shouting, no violence."
+        },
+        {
+          "number": 4,
+          "of": 7,
+          "text": "Εκείνος δεν είπε «πλάκα έκανα».\n«Σε ζήλεψα. Ένιωσα πίσω και το έβγαλα πάνω σου.\nΔεν έφταιγες εσύ.»",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Eleni: Greek woman 38, shoulder-length dark wavy hair, olive skin, brown eyes, dark teal blouse. Petros: Greek man 40, short dark hair, light stubble, grey shirt. Same adult couple throughout; contemporary modest apartment and a family dining room. Close portrait of Petros sitting on the sofa, gaze lowered and hands unclenched; Eleni's shoulder softly visible in foreground. His expression admits embarrassment and envy, reflective quiet evening."
+        },
+        {
+          "number": 5,
+          "of": 7,
+          "text": "«Η δουλειά σου δεν ορίζει την αξία σου», του είπε.\n«Αλλά ο τρόπος που μου φέρεσαι αλλάζει τη σχέση μας.»",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Eleni: Greek woman 38, shoulder-length dark wavy hair, olive skin, brown eyes, dark teal blouse. Petros: Greek man 40, short dark hair, light stubble, grey shirt. Same adult couple throughout; contemporary modest apartment and a family dining room. Reverse medium close portrait of Eleni looking directly at Petros with calm seriousness, upright posture and clear boundary. Subtle window side light. No consoling embrace or false instant reconciliation."
+        },
+        {
+          "number": 6,
+          "of": 7,
+          "text": "Στο επόμενο τραπέζι, κάποιος τη ρώτησε για τη νέα θέση.\nΟ Πέτρος άφησε την Ελένη να μιλήσει.\n«Το κέρδισε», πρόσθεσε. Χωρίς αστείο αυτή τη φορά.",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Eleni: Greek woman 38, shoulder-length dark wavy hair, olive skin, brown eyes, dark teal blouse. Petros: Greek man 40, short dark hair, light stubble, grey shirt. Same adult couple throughout; contemporary modest apartment and a family dining room. Family dinner with two additional adults in soft focus. Eleni speaks about her work, animated but natural. Petros listens attentively beside her, small sincere supportive nod. Different room and wider lens."
+        },
+        {
+          "number": 7,
+          "of": 7,
+          "text": "Δεν διορθώθηκαν όλα εκείνο το βράδυ.\nΕίχαν κάνει μια αρχή· η συνέχεια ήθελε πράξεις.\nΧωράει η επιτυχία και των δύο στη σχέση;\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Eleni: Greek woman 38, shoulder-length dark wavy hair, olive skin, brown eyes, dark teal blouse. Petros: Greek man 40, short dark hair, light stubble, grey shirt. Same adult couple throughout; contemporary modest apartment and a family dining room. Exterior late-afternoon two-shot of the same couple walking side by side on a quiet Greek neighborhood street, a little space between them, tentative relaxed conversation, not triumphant or magically resolved."
+        }
+      ]
+    },
+    {
+      "series": "love_soul_relationship",
+      "baseline_time": "15:00",
+      "title": "Ο μεγαλύτερος μαθητής της",
+      "content_key": "love_soul_relationship|elderly-father-becomes-pottery-student-respects-daughter-craft",
+      "status": "COPY_REVIEW_PENDING",
+      "format": "native_carousel",
+      "card_count": 5,
+      "standalone": true,
+      "cast": "Marina: Greek woman 42, dark curly hair tied in a loose bun, terracotta blouse, indigo canvas apron. Her father Giorgos: Greek man 72, short white hair, thick grey eyebrows, weathered kind face, light-blue shirt, beige canvas apron. Same adult daughter and elderly father throughout. Authentic small ceramics studio, pottery wheels, damp clay, shelves of imperfect handmade vessels.",
+      "hook": "Στα 72 του, γράφτηκε στο μάθημα της κόρης του. Για χρόνια της έλεγε ότι η κεραμική «δεν είναι κανονική δουλειά».",
+      "caption": "Ο μεγαλύτερος μαθητής της\n\nΓια χρόνια, ο πατέρας της υποτιμούσε τη δουλειά της. Στα 72 του κάθισε απέναντί της, φόρεσε ποδιά και της ζήτησε να του μάθει από την αρχή. Η Μαρίνα δεν περίμενε να γίνει καλός κεραμίστας. Περίμενε να την πάρει στα σοβαρά.\n\nΠοια κουβέντα περιμένατε χρόνια να ακούσετε;\n\nΠρωτότυπη μυθοπλασία. Εικόνες δημιουργημένες με ΤΝ.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Οικογένεια #Πατέρας #Κόρη #Ιστορίες #Αγάπη",
+      "hashtags": [
+        "#Οικογένεια",
+        "#Πατέρας",
+        "#Κόρη",
+        "#Ιστορίες",
+        "#Αγάπη"
+      ],
+      "cards": [
+        {
+          "number": 1,
+          "of": 5,
+          "text": "Στα 72 του, γράφτηκε στο μάθημα της κόρης του.\nΓια χρόνια της έλεγε ότι η κεραμική «δεν είναι κανονική δουλειά».",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Marina: Greek woman 42, dark curly hair tied in a loose bun, terracotta blouse, indigo canvas apron. Her father Giorgos: Greek man 72, short white hair, thick grey eyebrows, weathered kind face, light-blue shirt, beige canvas apron. Same adult daughter and elderly father throughout. Authentic small ceramics studio, pottery wheels, damp clay, shelves of imperfect handmade vessels. Establishing photograph at the ceramics studio entrance: elderly Giorgos pauses with his beige apron folded under one arm; Marina sees him from beside a pottery wheel, surprised. Natural morning window light, no sign lettering."
+        },
+        {
+          "number": 2,
+          "of": 5,
+          "text": "Η Μαρίνα τον είδε στην τελευταία θέση, με μια καινούργια ποδιά.\n«Μπαμπά;»\n«Μην με βάλεις μπροστά επειδή είμαι πατέρας σου.\nΔεν ξέρω ούτε από πού αρχίζουμε.»",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Marina: Greek woman 42, dark curly hair tied in a loose bun, terracotta blouse, indigo canvas apron. Her father Giorgos: Greek man 72, short white hair, thick grey eyebrows, weathered kind face, light-blue shirt, beige canvas apron. Same adult daughter and elderly father throughout. Authentic small ceramics studio, pottery wheels, damp clay, shelves of imperfect handmade vessels. Wide reverse view of the studio classroom: Giorgos sits at the last pottery wheel tying the beige apron. Marina approaches with genuine surprise; two adult students quietly prepare clay in background. Perspective clearly different from first card."
+        },
+        {
+          "number": 3,
+          "of": 5,
+          "text": "Το πήλινο μπολ του κατέρρευσε τρεις φορές.\nΕκείνη κάθισε δίπλα του και του έδειξε πώς να κρατά τα χέρια.\nΓια πρώτη φορά, εκείνος άκουγε χωρίς να τη διορθώνει.",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Marina: Greek woman 42, dark curly hair tied in a loose bun, terracotta blouse, indigo canvas apron. Her father Giorgos: Greek man 72, short white hair, thick grey eyebrows, weathered kind face, light-blue shirt, beige canvas apron. Same adult daughter and elderly father throughout. Authentic small ceramics studio, pottery wheels, damp clay, shelves of imperfect handmade vessels. Intimate side close-up of both at the pottery wheel. A collapsed misshapen wet-clay bowl in front of Giorgos. Marina demonstrates a correct gentle hand position beside his hands; he watches her attentively. Anatomically correct hands and authentic damp clay."
+        },
+        {
+          "number": 4,
+          "of": 5,
+          "text": "«Σου έλεγα να βρεις αληθινή δουλειά», ψιθύρισε.\n«Κι ούτε είχα καθίσει μία ώρα να δω τη δική σου.\nΣυγγνώμη, Μαρίνα.»",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Marina: Greek woman 42, dark curly hair tied in a loose bun, terracotta blouse, indigo canvas apron. Her father Giorgos: Greek man 72, short white hair, thick grey eyebrows, weathered kind face, light-blue shirt, beige canvas apron. Same adult daughter and elderly father throughout. Authentic small ceramics studio, pottery wheels, damp clay, shelves of imperfect handmade vessels. Medium two-shot at the workbench after class. Giorgos looks up at Marina with humble remorse, clay-marked hands still on the bench. Marina listens, visibly moved yet composed. Honest, quiet moment without forced tears."
+        },
+        {
+          "number": 5,
+          "of": 5,
+          "text": "Την επόμενη εβδομάδα ήταν πάλι εκεί.\n«Τι μαθαίνουμε σήμερα, δασκάλα;»\nΑυτή τη φορά, το είπε με περηφάνια.\nΠοια κουβέντα περιμένατε χρόνια να ακούσετε;\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Marina: Greek woman 42, dark curly hair tied in a loose bun, terracotta blouse, indigo canvas apron. Her father Giorgos: Greek man 72, short white hair, thick grey eyebrows, weathered kind face, light-blue shirt, beige canvas apron. Same adult daughter and elderly father throughout. Authentic small ceramics studio, pottery wheels, damp clay, shelves of imperfect handmade vessels. New morning a week later, broad side view. Giorgos is already at the pottery wheel in the same apron, looks toward Marina with a warm respectful smile. She begins teaching with relaxed confidence. Fresh lump of clay ready, no gift and no finished commemorative object."
+        }
+      ]
+    },
+    {
+      "series": "dog_bartender",
+      "baseline_time": "10:00",
+      "title": "Σκύλος Μπάρμαν — Πρώτα η φωτογραφία",
+      "content_key": "dog_bartender|drink-photo-staging-ice-melts-before-first-sip",
+      "status": "PROPOSAL_COPY_REVIEW_PENDING",
+      "card_count": 4,
+      "cast": "Same photorealistic brown Labrador bartender with green bow tie, real canine face and fur, behind an authentic warm wood bar in every card. Same human customer: Greek man 34, curly black hair, navy overshirt, modern smartphone. One orange non-alcoholic cocktail with ice and citrus garnish.",
+      "hook": "«Μισό λεπτό. Πρώτα μια φωτογραφία!»",
+      "caption": "Έψαχνε το τέλειο φίλτρο. Ο πάγος δεν τον περίμενε.\n\nΣκύλος Μπάρμαν — Πρώτα η φωτογραφία.\nΕσείς: πρώτα φωτογραφία ή πρώτη γουλιά;\n\nΠρωτότυπη χιουμοριστική μυθοπλασία. Εικόνες δημιουργημένες με ΤΝ.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#ΣκύλοςΜπάρμαν #Χιούμορ #Ιστορίες #Μπαρ #Καθημερινότητα",
+      "hashtags": [
+        "#ΣκύλοςΜπάρμαν",
+        "#Χιούμορ",
+        "#Ιστορίες",
+        "#Μπαρ",
+        "#Καθημερινότητα"
+      ],
+      "cards": [
+        {
+          "number": 1,
+          "of": 4,
+          "text": "«Μισό λεπτό. Πρώτα μια φωτογραφία!»\nΟ πελάτης σήκωσε το κινητό.\nΟ Σκύλος Μπάρμαν περίμενε.",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Same brown Labrador bartender in green bow tie behind warm wood bar; same curly-haired adult customer in navy overshirt holds smartphone above a freshly served orange non-alcoholic cocktail with distinct large ice cubes. Eye-level view across counter."
+        },
+        {
+          "number": 2,
+          "of": 4,
+          "text": "Δέκα λεπτά μετά:\n«Λίγο πιο εδώ το ποτήρι…\nΝα βρούμε τον σωστό φωτισμό!»",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Same brown Labrador bartender in green bow tie watches from behind bar while the same customer bends far sideways to photograph the orange drink next to a small bar lamp. Side-angle wide shot, exaggerated human concentration but real photographic acting."
+        },
+        {
+          "number": 3,
+          "of": 4,
+          "text": "Επιτέλους δοκίμασε.\n«Μα… γιατί νερώθηκε;»\nΟ μπάρμαν κοίταξε το ποτήρι.\nΎστερα κοίταξε το κινητό.",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Same brown Labrador bartender behind the bar, same customer taking first sip and looking surprised. Drink now has smaller melting ice cubes. Over-customer-shoulder angle, bartender gives dry skeptical sideways glance toward phone on counter."
+        },
+        {
+          "number": 4,
+          "of": 4,
+          "text": "«Γιατί ο πάγος λιώνει.\nΔεν περιμένει να ανεβάσεις στόρι.»\nΕσείς: πρώτα φωτογραφία ή πρώτη γουλιά;\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Same brown Labrador bartender in green bow tie, sharply focused close medium shot with one paw resting beside the diluted orange cocktail and smartphone. Human customer soft-focus opposite, sheepish smile. Believable real bar, no human face on dog."
+        }
+      ]
+    },
+    {
+      "series": "zodiac",
+      "baseline_time": "11:00",
+      "title": "Ζώδια: εσείς οι δύο σε escape room",
+      "content_key": "zodiac|escape-room-puzzle-team-reactions|six-pairs-all-twelve",
+      "status": "COPY_APPROVED_PENDING_MEDIA_AND_FINAL_QA",
+      "card_count": 6,
+      "pairs": [
+        [
+          "Κριός",
+          "Παρθένος"
+        ],
+        [
+          "Ταύρος",
+          "Υδροχόος"
+        ],
+        [
+          "Δίδυμοι",
+          "Σκορπιός"
+        ],
+        [
+          "Καρκίνος",
+          "Αιγόκερως"
+        ],
+        [
+          "Λέων",
+          "Ιχθύες"
+        ],
+        [
+          "Ζυγός",
+          "Τοξότης"
+        ]
+      ],
+      "hook": "Ζώδια: εσείς οι δύο σε escape room. Ποιος λύνει τον γρίφο;",
+      "caption": "Εσείς οι δύο σε escape room: δώδεκα ζώδια και έξι συγκρίσεις για τη συνεργασία μέσα στη σχέση. Ποιος διαβάζει τις οδηγίες, ποιος ψάχνει κρυφούς μηχανισμούς και ποιος δοκιμάζει τα πάντα;\n\nΠώς συνεργάζεστε εσύ και το ταίρι σου;\n\nΧιουμοριστικά, συμβολικά πορτρέτα για ψυχαγωγία· το ζώδιο δεν καθορίζει τη συμπεριφορά μας. Εικόνες δημιουργημένες με ΤΝ.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ζώδια #Αστρολογία #Χιούμορ #EscapeRoom #Παρέα",
+      "hashtags": [
+        "#Ζώδια",
+        "#Αστρολογία",
+        "#Χιούμορ",
+        "#EscapeRoom",
+        "#Παρέα"
+      ],
+      "layout_note": "Each of the six cards visibly compares exactly the two listed signs, with their exact Greek names and corresponding glyphs typeset deterministically above the respective half. No additional sign appears on another card. First card carries the title plus first comparison; sixth carries sixth comparison plus complete CTA. Use photo-real human scenes and photo-real zodiac emblems, not cartoon constellation drawings.",
+      "cards": [
+        {
+          "number": 1,
+          "of": 6,
+          "text": "ΕΣΕΙΣ ΟΙ ΔΥΟ ΣΕ ESCAPE ROOM\nΠοιος λύνει τον γρίφο;\nΚριός: Δοκιμάζει πρώτος το λουκέτο.\nΠαρθένος: Διαβάζει πρώτα τις οδηγίες.",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Photorealistic escape-room antique workshop puzzle. Left adult eagerly tests a harmless brass padlock; right adult carefully reads a plain clue card. Distinct Aries and Virgo metallic emblems are composition placeholders; exact glyphs and names added separately, no generated text. Warm brass and teal palette."
+        },
+        {
+          "number": 2,
+          "of": 6,
+          "text": "Ταύρος: «Το κλειδί πρέπει να είναι κάπου εδώ».\nΥδροχόος: Ελέγχει μήπως το ράφι είναι μυστικός διακόπτης.",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Photorealistic escape-room old library. Left adult searches a desk drawer for a key; right adult examines a subtly hinged bookshelf mechanism. Taurus and Aquarius positions reserved for exact glyph overlays, natural thoughtful acting."
+        },
+        {
+          "number": 3,
+          "of": 6,
+          "text": "Δίδυμοι: Λένε δυνατά πέντε πιθανές λύσεις.\nΣκορπιός: Προσέχει τη μοναδική λεπτομέρεια που κανείς δεν κοίταξε.",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Photorealistic escape-room nautical study. Left adult energetically discusses options, open hands; right adult notices a small engraved symbol on a compass box. Gemini and Scorpio positions reserved for exact glyph overlays. Different camera angle, no real brand names."
+        },
+        {
+          "number": 4,
+          "of": 6,
+          "text": "Καρκίνος: «Μην αφήσουμε κανέναν μόνο στο σκοτάδι».\nΑιγόκερως: «Έχουμε είκοσι λεπτά. Ποιος αναλαμβάνει τι;»",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Photorealistic safe themed escape-room tunnel with theatrical dim blue lighting. Left adult keeps adult teammates together with a lantern; right adult calmly divides tasks beside an unnumbered prop clock. Cancer and Capricorn positions reserved for exact glyph overlays, no danger or horror."
+        },
+        {
+          "number": 5,
+          "of": 6,
+          "text": "Λέων: Ανακοινώνει τη λύση σαν να κέρδισε βραβείο.\nΙχθύες: Έχουν ήδη φανταστεί την ιστορία πίσω από τον γρίφο.",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Photorealistic escape-room museum set. Left adult celebrates solving a puzzle with open arms; right adult studies old portraits and imagines their connection. Leo and Pisces positions reserved for exact glyph overlays, amber museum lighting."
+        },
+        {
+          "number": 6,
+          "of": 6,
+          "text": "Ζυγός: Ζυγίζει τις δύο επικρατέστερες λύσεις.\nΤοξότης: «Να δοκιμάσουμε και τις δύο!»\nΠώς συνεργάζεστε εσύ και το ταίρι σου;\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+          "image_prompt": "Photorealistic cinematic photograph, square 1080x1080 final composition, believable contemporary Greek setting, natural skin and hands, no illustrations/cartoon, no watermark or generated writing. Keep the important scene in the upper 60 percent with a quiet darker lower area for the exact Greek overlay. Every card is a new composition and a distinct narrative beat. Maintain the named cast exactly. Text is rendered separately and must remain complete. Photorealistic escape-room observatory puzzle table. Left adult weighs two harmless mechanical puzzle pieces; right adult points enthusiastically to try both in turn. Libra and Sagittarius positions reserved for exact glyph overlays. Bright hopeful last-scene palette, no copied scene or lettering."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,384 @@
+{
+  "brandId": 7076410,
+  "date": "2026-10-06",
+  "owner": "/root/notion_automation_audit",
+  "data_source_id": "46cd5cf4-5f7e-46e8-b0ef-274aeadbdb52",
+  "notion_pages": {
+    "dog_bartender": "3f1f2345-b318-81eb-ba11-d602004575ae",
+    "relationships": "3f1f2345-b318-81a2-a559-d77ea46c6e9e",
+    "survival": "3f1f2345-b318-81ee-9229-e1ee0d44b487",
+    "love_soul_relationship": "3f1f2345-b318-8142-b7b9-e6d7730f20fc",
+    "zodiac": "3f1f2345-b318-8149-b6a2-f333ed375511",
+    "myth_or_truth": "3f1f2345-b318-81c0-b1b6-d8c6eb348305",
+    "international_legend": "3f1f2345-b318-81f3-a6ef-eb816988ce18",
+    "strange_real_phenomenon": "3f1f2345-b318-8183-80ef-c3cd92c7466d",
+    "greece_two_day_trip": "3f1f2345-b318-810b-a014-f862f1ac647c",
+    "documented_experiments": "3f1f2345-b318-815d-a5b2-c793854e5da3"
+  },
+  "records": {
+    "dog_bartender": {
+      "page_id": "3f1f2345-b318-81eb-ba11-d602004575ae",
+      "metricool_ids": [
+        389294554,
+        389304173
+      ],
+      "created_by_root": true,
+      "next_action": "Complete; all four public URLs confirmed",
+      "url": "https://app.notion.com/p/3f1f2345b31881ebba11d602004575ae?pvs=204",
+      "native_status": "Published",
+      "youtube_status": "Published",
+      "platform_statuses": {
+        "facebook": "Published",
+        "instagram": "Published",
+        "tiktok": "Published",
+        "youtube": "Published"
+      },
+      "provider_raw_statuses": {
+        "facebook": "PUBLISHED",
+        "instagram": "PUBLISHED",
+        "tiktok": "PUBLISHED",
+        "youtube": "PUBLISHED"
+      },
+      "synced_at_utc": "2026-10-06T10:17:21Z",
+      "readback_verified": true,
+      "overall_status": "Published",
+      "youtube_metricool_id": 389304173,
+      "public_urls": {
+        "facebook": "https://facebook.com/122101951509477192/posts/122116741347477192",
+        "instagram": "https://www.instagram.com/p/DeJh5ejFUYg/",
+        "tiktok": "https://www.tiktok.com/@steliosvilanos/video/7693493987449081120",
+        "youtube": "https://www.youtube.com/shorts/d85futoEtOw"
+      },
+      "checks": {
+        "complete": true,
+        "four_public": true,
+        "youtube_body": true,
+        "no_pending_youtube": true,
+        "intact": true
+      }
+    },
+    "relationships": {
+      "page_id": "3f1f2345-b318-81a2-a559-d77ea46c6e9e",
+      "url": "https://app.notion.com/p/3f1f2345b31881a2a559d77ea46c6e9e?pvs=204",
+      "metricool_ids": [
+        389297281,
+        389305899
+      ],
+      "native_status": "Published",
+      "youtube_status": "Published",
+      "synced_at_utc": "2026-10-06T10:27:43.126Z",
+      "readback_verified": true,
+      "checks": {
+        "published": true,
+        "complete": true,
+        "scriptPreserved": true,
+        "captionPreserved": true,
+        "allSevenCards": true,
+        "allNativeImages": true,
+        "qaHashes": true,
+        "publicURLs": true,
+        "noPendingBody": true
+      },
+      "youtube_metricool_id": 389305899,
+      "overall_status": "Published",
+      "platform_statuses": {
+        "Facebook": "Published",
+        "Instagram": "Published",
+        "TikTok": "Published",
+        "YouTube": "Published"
+      },
+      "public_urls": {
+        "Facebook": "https://facebook.com/122101951509477192/posts/122116752831477192",
+        "Instagram": "https://www.instagram.com/p/DeJkNi5leN7/",
+        "TikTok": "https://www.tiktok.com/@steliosvilanos/video/7693499205654023457",
+        "YouTube": "https://www.youtube.com/shorts/n4fvbCJuTgE"
+      },
+      "next_action": "All four destinations published; no pending publication for this logical post."
+    },
+    "survival": {
+      "page_id": "3f1f2345-b318-81ee-9229-e1ee0d44b487",
+      "url": "https://app.notion.com/p/3f1f2345b31881ee9229e1ee0d44b487?pvs=204",
+      "metricool_ids": [
+        389299946,
+        389305950
+      ],
+      "native_status": "Scheduled",
+      "youtube_status": "Scheduled",
+      "synced_at_utc": "2026-10-06T10:16:43Z",
+      "readback_verified": true,
+      "checks": {
+        "post_ids": true,
+        "all_four_scheduled": true,
+        "script_preserved": true,
+        "caption_preserved": true,
+        "native_images_retained": true,
+        "youtube_video_present": true,
+        "video_sha_present": true,
+        "audio_qa_sha_present": true,
+        "no_unknown_youtube": true,
+        "complete": true
+      },
+      "youtube_metricool_id": 389305950,
+      "overall_status": "Scheduled",
+      "platform_statuses": {
+        "facebook": "Scheduled",
+        "instagram": "Scheduled",
+        "tiktok": "Scheduled",
+        "youtube": "Scheduled"
+      }
+    },
+    "love_soul_relationship": {
+      "page_id": "3f1f2345-b318-8142-b7b9-e6d7730f20fc",
+      "url": "https://app.notion.com/p/3f1f2345b3188142b7b9e6d7730f20fc?pvs=204",
+      "metricool_ids": [
+        389301502,
+        389306148
+      ],
+      "native_status": "Scheduled",
+      "youtube_status": "Scheduled",
+      "synced_at_utc": "2026-10-06T10:16:53Z",
+      "readback_verified": true,
+      "checks": {
+        "post_ids": true,
+        "all_four_scheduled": true,
+        "script_preserved": true,
+        "caption_preserved": true,
+        "native_images_retained": true,
+        "youtube_video_present": true,
+        "video_sha_present": true,
+        "audio_qa_sha_present": true,
+        "no_unknown_youtube": true,
+        "complete": true
+      },
+      "youtube_metricool_id": 389306148,
+      "overall_status": "Scheduled",
+      "platform_statuses": {
+        "facebook": "Scheduled",
+        "instagram": "Scheduled",
+        "tiktok": "Scheduled",
+        "youtube": "Scheduled"
+      }
+    },
+    "zodiac": {
+      "page_id": "3f1f2345-b318-8149-b6a2-f333ed375511",
+      "url": "https://app.notion.com/p/3f1f2345b3188149b6a2f333ed375511?pvs=204",
+      "metricool_ids": [
+        389302501,
+        389305999
+      ],
+      "native_status": "Scheduled",
+      "youtube_status": "Scheduled",
+      "synced_at_utc": "2026-10-06T10:16:47Z",
+      "readback_verified": true,
+      "checks": {
+        "post_ids": true,
+        "all_four_scheduled": true,
+        "script_preserved": true,
+        "caption_preserved": true,
+        "native_images_retained": true,
+        "youtube_video_present": true,
+        "video_sha_present": true,
+        "audio_qa_sha_present": true,
+        "no_unknown_youtube": true,
+        "complete": true
+      },
+      "youtube_metricool_id": 389305999,
+      "overall_status": "Scheduled",
+      "platform_statuses": {
+        "facebook": "Scheduled",
+        "instagram": "Scheduled",
+        "tiktok": "Scheduled",
+        "youtube": "Scheduled"
+      }
+    },
+    "myth_or_truth": {
+      "page_id": "3f1f2345-b318-81c0-b1b6-d8c6eb348305",
+      "url": "https://app.notion.com/p/3f1f2345b31881c0b1b6d8c6eb348305?pvs=204",
+      "metricool_ids": [
+        389302859,
+        389306202
+      ],
+      "native_status": "Scheduled",
+      "youtube_status": "Scheduled",
+      "synced_at_utc": "2026-10-06T10:16:57Z",
+      "readback_verified": true,
+      "checks": {
+        "post_ids": true,
+        "all_four_scheduled": true,
+        "script_preserved": true,
+        "caption_preserved": true,
+        "native_images_retained": true,
+        "youtube_video_present": true,
+        "video_sha_present": true,
+        "audio_qa_sha_present": true,
+        "no_unknown_youtube": true,
+        "complete": true
+      },
+      "youtube_metricool_id": 389306202,
+      "overall_status": "Scheduled",
+      "platform_statuses": {
+        "facebook": "Scheduled",
+        "instagram": "Scheduled",
+        "tiktok": "Scheduled",
+        "youtube": "Scheduled"
+      }
+    },
+    "international_legend": {
+      "page_id": "3f1f2345-b318-81f3-a6ef-eb816988ce18",
+      "url": "https://app.notion.com/p/3f1f2345b31881f3a6efeb816988ce18?pvs=204",
+      "metricool_ids": [
+        389313993
+      ],
+      "native_status": "Scheduled",
+      "overall_status": "Scheduled",
+      "youtube_status": "Scheduled",
+      "youtube_metricool_id": 389313993,
+      "platform_statuses": {
+        "Facebook": "Scheduled",
+        "Instagram": "Scheduled",
+        "TikTok": "Scheduled",
+        "YouTube": "Scheduled"
+      },
+      "synced_at_utc": "2026-10-06T10:27:04.502Z",
+      "readback_verified": true,
+      "checks": {
+        "job": true,
+        "key": true,
+        "caption": true,
+        "script": true,
+        "allFourScheduled": true,
+        "overallScheduled": true,
+        "metricoolId": true,
+        "videoURL": true,
+        "releaseDecision": true,
+        "sourceRecords": true,
+        "qaHashes": true,
+        "notTruncated": true,
+        "knownBlocks": true
+      },
+      "caption_readback_normalization": "Notion auto-linked identical bare URL; visible text preserved"
+    },
+    "strange_real_phenomenon": {
+      "page_id": "3f1f2345-b318-8183-80ef-c3cd92c7466d",
+      "url": "https://app.notion.com/p/3f1f2345b318818380efc3cd92c7466d?pvs=204",
+      "metricool_ids": [
+        389314811
+      ],
+      "native_status": "Scheduled",
+      "overall_status": "Scheduled",
+      "youtube_status": "Scheduled",
+      "youtube_metricool_id": 389314811,
+      "platform_statuses": {
+        "Facebook": "Scheduled",
+        "Instagram": "Scheduled",
+        "TikTok": "Scheduled",
+        "YouTube": "Scheduled"
+      },
+      "synced_at_utc": "2026-10-06T10:27:04.502Z",
+      "readback_verified": true,
+      "checks": {
+        "job": true,
+        "key": true,
+        "caption": true,
+        "script": true,
+        "allFourScheduled": true,
+        "overallScheduled": true,
+        "metricoolId": true,
+        "videoURL": true,
+        "releaseDecision": true,
+        "sourceRecords": true,
+        "qaHashes": true,
+        "notTruncated": true,
+        "knownBlocks": true
+      },
+      "caption_readback_normalization": "Notion auto-linked identical bare URL; visible text preserved"
+    },
+    "greece_two_day_trip": {
+      "page_id": "3f1f2345-b318-810b-a014-f862f1ac647c",
+      "url": "https://app.notion.com/p/3f1f2345b318810ba014f862f1ac647c?pvs=204",
+      "metricool_ids": [
+        389315514
+      ],
+      "native_status": "Scheduled",
+      "overall_status": "Scheduled",
+      "youtube_status": "Scheduled",
+      "youtube_metricool_id": 389315514,
+      "platform_statuses": {
+        "Facebook": "Scheduled",
+        "Instagram": "Scheduled",
+        "TikTok": "Scheduled",
+        "YouTube": "Scheduled"
+      },
+      "synced_at_utc": "2026-10-06T10:27:04.502Z",
+      "readback_verified": true,
+      "checks": {
+        "job": true,
+        "key": true,
+        "caption": true,
+        "script": true,
+        "allFourScheduled": true,
+        "overallScheduled": true,
+        "metricoolId": true,
+        "videoURL": true,
+        "releaseDecision": true,
+        "sourceRecords": true,
+        "qaHashes": true,
+        "notTruncated": true,
+        "knownBlocks": true
+      },
+      "caption_readback_normalization": "Notion auto-linked identical bare URL; visible text preserved"
+    },
+    "documented_experiments": {
+      "page_id": "3f1f2345-b318-815d-a5b2-c793854e5da3",
+      "url": "https://app.notion.com/p/3f1f2345b318815da5b2c793854e5da3?pvs=204",
+      "metricool_ids": [
+        389315750
+      ],
+      "native_status": "Scheduled",
+      "overall_status": "Scheduled",
+      "youtube_status": "Scheduled",
+      "youtube_metricool_id": 389315750,
+      "platform_statuses": {
+        "Facebook": "Scheduled",
+        "Instagram": "Scheduled",
+        "TikTok": "Scheduled",
+        "YouTube": "Scheduled"
+      },
+      "synced_at_utc": "2026-10-06T10:27:04.502Z",
+      "readback_verified": true,
+      "checks": {
+        "job": true,
+        "key": true,
+        "caption": true,
+        "script": true,
+        "allFourScheduled": true,
+        "overallScheduled": true,
+        "metricoolId": true,
+        "videoURL": true,
+        "releaseDecision": true,
+        "sourceRecords": true,
+        "qaHashes": true,
+        "notTruncated": true,
+        "knownBlocks": true
+      },
+      "caption_readback_normalization": "Notion auto-linked identical bare URL; visible text preserved"
+    }
+  },
+  "pending_series": [],
+  "last_complete_sync_at_utc": "2026-10-06T10:28:49.702Z",
+  "logical_record_count": 10,
+  "platform_destination_count": 40,
+  "latest_live_status_check_at_utc": "2026-10-06T10:27:43.126Z",
+  "coverage": {
+    "logical_posts": 10,
+    "platform_destinations": 40,
+    "metricool_records": 16,
+    "logical_published_all_four": 2,
+    "logical_scheduled_all_four": 8,
+    "published_destinations": 8,
+    "scheduled_destinations": 32,
+    "missing_records": 0,
+    "duplicate_jobs": 0,
+    "duplicate_fingerprints": 0
+  }
+}

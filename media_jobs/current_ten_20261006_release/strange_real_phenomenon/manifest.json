@@ -1,0 +1,155 @@
+{
+  "job_id": "current-ten-20261006-singing-dunes",
+  "id": "current-ten-20261006-singing-dunes",
+  "date": "2026-10-06",
+  "brandId": 7076410,
+  "title": "Οι αμμόλοφοι που τραγουδούν",
+  "series": "strange_real_phenomenon",
+  "content_key": "strange_real_phenomenon|singing-sand-dunes-grain-synchronization",
+  "content_fingerprint_sha256": "8d5e2e0d2adac5b0191f14932c259700af8fd00602769feb8398b1c789f6b4e2",
+  "caption": "Ορισμένες ροές ξηρής άμμου παράγουν ένα βαθύ, παρατεταμένο βουητό. Επιστημονικά πειράματα συνδέουν το φαινόμενο με την κίνηση και τις ιδιότητες των κόκκων.\nΠηγές: Douady et al., Physical Review Letters (2006), DOI 10.1103/PhysRevLett.97.018002 · Dagois-Bohy et al., Geophysical Research Letters (2012), DOI 10.1029/2012GL052540.\nΟι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη. Συνθετική ελληνική αφήγηση με τη φωνή Nestoras (Azure Speech).\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΠαράξεναΦαινόμενα #Αμμόλοφοι #Φυσική #Επιστήμη #Έρημος",
+  "script": "Στη μέση της ερήμου, η άμμος μπορεί να τραγουδήσει. Ένα βαθύ, παρατεταμένο βουητό βγαίνει από την πλαγιά, καθώς κόκκοι άμμου αρχίζουν να γλιστρούν.\n\nΤο φαινόμενο λέγεται «τραγούδι των αμμόλοφων» και έχει καταγραφεί επιστημονικά. Δεν το παράγει κάθε αμμόλοφος. Χρειάζονται κατάλληλη άμμος, ξηρές συνθήκες και μια ροή κόκκων που μπορεί να οργανωθεί με συγκεκριμένο τρόπο.\n\nΤο 2006, ο Στεφάν Ντουαντί και οι συνεργάτες του συνέκριναν αμμόλοφους και πραγματοποίησαν πειράματα στο πεδίο και στο εργαστήριο. Τα αποτελέσματά τους συνέδεσαν τον ήχο με τη σχετική, συγχρονισμένη κίνηση των κόκκων. Η έκπληξη ήταν ότι κατάφεραν να παράγουν τον ήχο στο εργαστήριο, χωρίς να χρειάζονται έναν ολόκληρο αμμόλοφο.\n\nΣε μεταγενέστερη μελέτη, το 2012, οι ερευνητές εξέτασαν και τη σημασία του μεγέθους των κόκκων. Δείγματα με διαφορετικές ομάδες μεγεθών μπορούσαν να δίνουν περισσότερες από μία συχνότητες. Έτσι, η σύνθεση της άμμου βοηθά να καταλάβουμε γιατί διαφορετικές ροές ακούγονται διαφορετικά.\n\nΟι επιστημονικές εξηγήσεις για τον ακριβή μηχανισμό έχουν συζητηθεί και συγκριθεί. Το ασφαλές συμπέρασμα είναι ότι πρόκειται για πραγματικό ακουστικό φαινόμενο, συνδεδεμένο με την κίνηση και τις ιδιότητες της άμμου.\n\nΣκέψου την εικόνα: ένας τεράστιος λόφος, φαινομενικά ακίνητος, και αμέτρητοι μικροσκοπικοί κόκκοι που μαζί παράγουν έναν ήχο αρκετά δυνατό ώστε να τον ακούσεις.\n\nΑν βρισκόσουν εκεί χωρίς να ξέρεις την εξήγηση, από πού θα νόμιζες ότι έρχεται το βουητό;\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+  "script_sha256": "8b71c86dcf8e209a497c06e7fbe13d1af5ab1f7483db51ddf694588d67a3ccc2",
+  "word_count": 218,
+  "sources": [
+    {
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.018002",
+      "ref": "turn10view4",
+      "supports": "Field and lab comparison; synchronized relative grain motion; sound reproduced without whole dune."
+    },
+    {
+      "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2012GL052540",
+      "ref": "turn13search0",
+      "supports": "Dry suitable sand; multiple grain-size peaks associated with multiple frequencies; debate about mechanism."
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19880153/",
+      "ref": "turn13search1",
+      "supports": "Not all dunes sing; dry sand and slip-face avalanches; laboratory phenomenon."
+    }
+  ],
+  "source_records": [
+    {
+      "scene": 1,
+      "prompt": "Use case: photorealistic-natural. Asset type: source-only documentary reconstruction for a vertical Greek science video about booming singing sand dunes. Create ONE full-frame photographic image, portrait 9:16. A vast dry desert dune with a sharply defined slip face at golden dawn, a subtle narrow naturally sliding veil of sand descending its upper face, rippled foreground, empty horizon, no named landmark. Authentic granular texture, real atmospheric light, editorial landscape photography, no fantasy. Frame the dune crest in upper half; keep detailed foreground unobstructed. No text, no labels, no logos, no watermark, no panel layout, no grid, no diagram, no illustration.",
+      "original_path": "/workspace/scratch/73e79e1cf9df/generated_images/exec-2b56dcfc-daff-4118-b1b6-9c15ecc32c45.png",
+      "filename": "01.png",
+      "ai_generated": true,
+      "source_visual_review": "PASSED_SCENE_RELEVANCE_NOT_FINAL_MEDIA_QA",
+      "local_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/sources/01.png",
+      "sha256": "1d2f7fbc4df9cef21a72db90a705f5c3023596980fd3b0f935749a982df53195"
+    },
+    {
+      "scene": 2,
+      "prompt": "Use case: photorealistic-natural. Asset type: source-only educational documentary reconstruction for a vertical science video about singing dunes. Create ONE full-frame portrait 9:16 photograph: extreme close-up of dry rounded desert sand grains flowing as a shallow miniature avalanche over a sandy slope, photographed at macro scale with raking natural light. Grains look like real sand of mixed tan hues, not marbles, crystals or giant boulders. A small in-focus moving surface patch, granular texture elsewhere, no waves or visual sound symbols. No text, no labels, no logos, no watermark, no collage or grid, no cartoon.",
+      "original_path": "/workspace/scratch/73e79e1cf9df/generated_images/exec-84ec8d39-f617-4907-9e1d-81e9eca5b1c8.png",
+      "filename": "02.png",
+      "ai_generated": true,
+      "source_visual_review": "PASSED_SCENE_RELEVANCE_NOT_FINAL_MEDIA_QA",
+      "local_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/sources/02.png",
+      "sha256": "b611804801c5fe90f48bc1031517fbe7c1aea0155e1e0ce59f0567d0446c527a"
+    },
+    {
+      "scene": 3,
+      "prompt": "Use case: photorealistic-natural. Asset type: source-only documentary reconstruction. Create ONE full-frame portrait 9:16 realistic photograph of two anonymous adult scientists studying a dry desert dune: a small field microphone on a short stand near a naturally exposed sand slip face, a plain handheld recording instrument held by one scientist, the other observing from stable flat sand at the side. Wide environmental portrait, practical light outdoor clothing, faces not focal, midday dry light. Respectful observational fieldwork, nobody intentionally triggering an avalanche. No readable screens or papers, no logos or labels, no text, no grid, no cartoon.",
+      "original_path": "/workspace/scratch/73e79e1cf9df/generated_images/exec-f17c47bf-bf72-40de-a8de-8caa7f1803f7.png",
+      "filename": "03.png",
+      "ai_generated": true,
+      "source_visual_review": "PASSED_SCENE_RELEVANCE_NOT_FINAL_MEDIA_QA",
+      "local_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/sources/03.png",
+      "sha256": "331f5794971a618eb54d1a089df0fba95c2f088e6ff4892c2a2b69a548c966d4"
+    },
+    {
+      "scene": 4,
+      "prompt": "Use case: photorealistic-natural. Asset type: source-only scientific documentary reconstruction. Create ONE full-frame portrait 9:16 photograph inside a modest university granular physics laboratory. A transparent shallow rectangular tray tilted gently on a sturdy bench holds dry tan sand; one anonymous adult researcher's gloved hand stabilizes the outer tray handle while a small microphone on a desk stand points toward the sliding granular surface. Natural laboratory materials, subtle neutral lighting, credible physical scale, clear sand texture. It illustrates recording sound from flowing sand in a lab without a whole dune. No lab coats with logos, no readable papers or screen, no text, no waveform graphics, no grid, no cartoon.",
+      "original_path": "/workspace/scratch/73e79e1cf9df/generated_images/exec-efcf51a5-b622-4212-9bca-22ed623c9ffd.png",
+      "filename": "04.png",
+      "ai_generated": true,
+      "source_visual_review": "PASSED_SCENE_RELEVANCE_NOT_FINAL_MEDIA_QA",
+      "local_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/sources/04.png",
+      "sha256": "e75fbde52ae8cbce7269c99263dc3bbf3674a11663cb776570578ebe08ca0fcc"
+    },
+    {
+      "scene": 5,
+      "prompt": "Use case: photorealistic-natural. Asset type: source-only educational photo for science of singing sand. Create ONE full-frame portrait 9:16 photographic still life on a plain laboratory bench: two shallow glass sample dishes of dry desert sand with visibly finer and slightly coarser natural grains, a stainless steel fine sieve and a small scoop beside them, a neutral unmarked microscope softly blurred behind. Side-window lighting, highly realistic granular textures, close view, ordinary real equipment. Do not show a diagram or scaled labels. No text, no readable labels, no logos, no watermark, no panels, no grid.",
+      "original_path": "/workspace/scratch/73e79e1cf9df/generated_images/exec-641cf573-ef19-4db8-8fc2-9fafa85b99a1.png",
+      "filename": "05.png",
+      "ai_generated": true,
+      "source_visual_review": "PASSED_SCENE_RELEVANCE_NOT_FINAL_MEDIA_QA",
+      "local_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/sources/05.png",
+      "sha256": "23b38ec9df396a178744199cd1edd0d8b9b18b53a59057b7fd1074f92f1ecb0f"
+    },
+    {
+      "scene": 6,
+      "prompt": "Use case: photorealistic-natural. Asset type: source-only final atmospheric image for a documentary video about singing dunes. Create ONE full-frame portrait 9:16 photograph of an immense sculpted golden desert dune at sunset, viewed from a low stable ridge. One small anonymous adult observer stands well away from the steep slope in the lower-left middle distance, listening quietly, head turned toward the dunes. Distinct composition from any dawn aerial: long dark shadows, glowing crest, expansive clear sky. Realistic desert photography, no supernatural objects or depicted sound waves. No text, no logo, no watermark, no collage, no grid, no cartoon.",
+      "original_path": "/workspace/scratch/73e79e1cf9df/generated_images/exec-41fd3882-35be-4d00-8b1c-634483509c4a.png",
+      "filename": "06.png",
+      "ai_generated": true,
+      "source_visual_review": "PASSED_SCENE_RELEVANCE_NOT_FINAL_MEDIA_QA",
+      "local_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/sources/06.png",
+      "sha256": "1bae760a04c9faa2676a827d4f0df36b7d63f86c1663494ff3ca237195233800"
+    }
+  ],
+  "source_registry_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/source_registry.json",
+  "video": {
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/current-ten-20261006-singing-dunes.mp4",
+    "sha256": "dec4523bee6a7a28ef2905f85e937fdc7a704ad017f8d41244fb6122989c0292",
+    "duration_seconds": 87.5,
+    "width": 1080,
+    "height": 1920,
+    "video_codec": "h264",
+    "audio_codec": "aac"
+  },
+  "voice": "el-GR-NestorasNeural",
+  "background_music": false,
+  "avatar": false,
+  "filler_padding": false,
+  "qa": {
+    "technical_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/qa.json",
+    "audio_binding_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/audio-binding.json",
+    "visual_language_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/final_visual_language_qa.json",
+    "caption_review_index_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption-review-index.json",
+    "source_asr_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/audio/speech-recognition.json",
+    "direct_listening_claimed": false
+  },
+  "dedupe": {
+    "repository_history_catalog_path": "/workspace/scratch/73e79e1cf9df/repo_fix/repo_history_catalog.json",
+    "repository_history_catalog_sha256": "533adf871a7269b9934b77cb6ae49fee2fb5b68a6d7e0ea9f5f5a3a7d5df58f4",
+    "repository_topics": 133,
+    "repository_semantic_match_found": false,
+    "repository_main_sha_at_root_refresh": "9fa0cebf622a019d4fc910364329b6f17fbcc140",
+    "notion_view_snapshot_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/notion_dedupe_view_snapshot.json",
+    "root_latest_notion_row_count": 164,
+    "root_latest_metricool_history_count": 208,
+    "latest_cross_source_result_reported_by_root": "No prior substantive match for this content concept; root owns live pre-release reconciliation."
+  },
+  "audio_provenance": {
+    "recovery_run_id": 37446913087,
+    "status": "completed",
+    "conclusion": "success",
+    "media_output_commit": "bff42525ff1be6ca184fcdd751bece0f1928cec7"
+  },
+  "publish_ready": true,
+  "root_release_decision_pending": false,
+  "release_gate": "PASSED_ROOT_FINAL_REVIEW",
+  "caveats": [
+    "Do not frame a single proposed model as universally settled; competing mechanism literature exists.",
+    "Do not conflate low booming dunes with all squeaky beach sand.",
+    "Do not claim recorded natural audio unless a licensed actual recording is used. Narrated version has no added music or fake scientific audio.",
+    "Do not instruct viewers to disturb protected dunes or deliberately trigger avalanches."
+  ],
+  "prepared_at_utc": "2026-10-06T10:20:49.932053+00:00",
+  "release_status": "APPROVED_EXACT_FINAL_WITH_TECHNICAL_AUDIO_AND_DOCUMENTED_ASR_VARIANTS",
+  "release_review": {
+    "publish_ready": true,
+    "status": "APPROVED_EXACT_FINAL_WITH_TECHNICAL_AUDIO_AND_DOCUMENTED_ASR_VARIANTS",
+    "reviewer": "root",
+    "reviewed_at": "2026-10-06T10:23:02.143370+00:00",
+    "video_sha256": "dec4523bee6a7a28ef2905f85e937fdc7a704ad017f8d41244fb6122989c0292",
+    "independent_visual_language_report_sha256": "05a0add50a7cd6592c1fae0dccbb244a50cdf3adfcdfee709bb6c0457f5fc76a",
+    "full_decoded_audio_binding_sha256": "aae40ceef0d27b1c64ed2a2b44aa1e76539a97fcb00726d25ae1b2e88175294d",
+    "basis": "All final scenes and burned subtitles directly reviewed; complete decoded AAC bound to approved Nestoras WAV; ASR variants reviewed without established missing or content-changing narration defect. Root reviewed full final scene sheet.",
+    "direct_listening": false,
+    "fresh_three_source_dedupe_required_before_create": true
+  }
+}

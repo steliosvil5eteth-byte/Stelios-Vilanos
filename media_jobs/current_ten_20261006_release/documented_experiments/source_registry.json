@@ -1,0 +1,82 @@
+[
+  {
+    "scene": 1,
+    "prompt": "Use case: photorealistic-natural. Asset type: source-only documentary reconstruction for a Greek psychology video about the IKEA effect. ONE full-frame portrait 9:16 photograph. On a modest apartment dining table sit two simple unbranded natural cardboard storage boxes of similar size, one finished box in the foreground and one flat-pack set of cardboard panels with small plain fasteners beside it. An anonymous adult's hands thoughtfully compare the objects. Warm natural window light, credible ordinary materials, a calm home background. No advertisements, logos, readable writing, diagrams, price labels, grid, collage, cartoon, or watermark.",
+    "original_path": "/workspace/scratch/73e79e1cf9df/generated_images/exec-28485c54-007b-4dca-a7e9-1be66626c087.png",
+    "filename": "01.png",
+    "ai_generated": true,
+    "source_visual_review": "PASSED_SCENE_RELEVANCE_NOT_FINAL_MEDIA_QA",
+    "local_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/sources/01.png",
+    "sha256": "f340392fa7600cd8c29b3dd7ff05c1393c9afbbf77e1904c9261ceab40f705db"
+  },
+  {
+    "scene": 2,
+    "prompt": "Use case: photorealistic-natural. Asset type: source-only psychological experiment reconstruction. ONE full-frame portrait 9:16 photograph of an adult woman at a plain table carefully assembling a small unbranded cardboard storage box from flat panels and simple fasteners. Close view of her natural hands fitting the last corner, focused face only partly visible, neutral university study-room background, authentic candid documentary lighting. A folded blank instruction sheet sits to one side with no readable marks. No brand logo, captions, labels, grid, collage, or cartoon.",
+    "original_path": "/workspace/scratch/73e79e1cf9df/generated_images/exec-2ced6910-3b12-4f7e-bc4b-99215913e215.png",
+    "filename": "02.png",
+    "ai_generated": true,
+    "source_visual_review": "PASSED_SCENE_RELEVANCE_NOT_FINAL_MEDIA_QA",
+    "local_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/sources/02.png",
+    "sha256": "2c22b7a07965b80b58914ee818819b54b10bb177a485bdbd1aea8efbb72053f8"
+  },
+  {
+    "scene": 3,
+    "prompt": "Use case: photorealistic-natural. Asset type: source-only reconstruction for a psychology study explainer. ONE full-frame portrait 9:16 photograph, over-the-shoulder view of an anonymous adult participant carefully folding a slightly uneven origami crane from plain cream paper at a study table. Two simple colored interlocking plastic building-brick structures sit further back in soft focus. Focus on the paper and realistic hand anatomy, modest classroom laboratory setting, neutral daylight. No LEGO or IKEA logos, no text or labels, no price signs, no grid, no collage, no cartoon.",
+    "original_path": "/workspace/scratch/73e79e1cf9df/generated_images/exec-a0f3da20-95fe-42e5-9bdb-3614462abcc1.png",
+    "filename": "03.png",
+    "ai_generated": true,
+    "source_visual_review": "PASSED_SCENE_RELEVANCE_NOT_FINAL_MEDIA_QA",
+    "local_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/sources/03.png",
+    "sha256": "72bcca48d4b57b7a29d34addcc8e175d1ebc274f115913a9c1c02943252f3b72"
+  },
+  {
+    "scene": 4,
+    "prompt": "Use case: photorealistic-natural. Asset type: source-only documentary reconstruction illustrating self-made object valuation. ONE full-frame portrait 9:16 photograph of a pleased anonymous adult man seated at a plain study table, presenting his slightly imperfect handmade origami bird in open hands. Across the table, another adult observer looks at the same bird with a neutral expression, softly out of focus. Real paper creases, believable expressions, candid university experiment room, daylight. No money, numbers, captions, labels, logos, grid, collage, or cartoon.",
+    "original_path": "/workspace/scratch/73e79e1cf9df/generated_images/exec-d2f8128c-0ef2-444c-8b88-09ac8dbc5cf1.png",
+    "filename": "04.png",
+    "ai_generated": true,
+    "source_visual_review": "PASSED_SCENE_RELEVANCE_NOT_FINAL_MEDIA_QA",
+    "local_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/sources/04.png",
+    "sha256": "770dac8c16a201a373a1d0ba8e03c23b481c41f12728408a75ce0ddc44784174"
+  },
+  {
+    "scene": 5,
+    "prompt": "Use case: photorealistic-natural. Asset type: source-only psychology explainer reconstruction. ONE full-frame portrait 9:16 close documentary photograph of adult hands dismantling a small simple unbranded cardboard storage box on a clean table. One side panel already detached, a few plain fasteners nearby, recognizably an unfinished or taken-apart version of a modest household box. Quiet neutral study room, soft side lighting, realistic material texture and anatomy. No text, readable instructions, labels, logos, price stickers, grid, collage, or cartoon.",
+    "original_path": "/workspace/scratch/73e79e1cf9df/generated_images/exec-2b546ddd-255f-4b49-84d9-74fd74adfc9b.png",
+    "filename": "05.png",
+    "ai_generated": true,
+    "source_visual_review": "PASSED_SCENE_RELEVANCE_NOT_FINAL_MEDIA_QA",
+    "local_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/sources/05.png",
+    "sha256": "a7bb4d6ee479637b03f96233eace24742a7ec0e2cccca0069466de3fe9f18fba"
+  },
+  {
+    "scene": 6,
+    "prompt": "Use case: photorealistic-natural. Asset type: source-only concluding reconstruction for a Greek psychology video about valuing things we build. ONE full-frame portrait 9:16 natural photograph of a middle-aged adult woman at home placing a small handmade wooden keepsake box onto a shelf with a subtle proud smile. The box has visible modest craft imperfections, fingertips gently rest on its edge, a small workbench with hand tools in soft focus behind. Intimate warm daylight, authentic ordinary home, no lavish staging. No text, logos, numbers, watermark, collage, grid, or cartoon.",
+    "original_path": "/workspace/scratch/73e79e1cf9df/generated_images/exec-6edc55c8-3c17-4364-a518-43ccdf5e1276.png",
+    "filename": "06.png",
+    "ai_generated": true,
+    "source_visual_review": "PASSED_SCENE_RELEVANCE_NOT_FINAL_MEDIA_QA",
+    "local_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/sources/06.png",
+    "sha256": "45dc4d61e5640d83d32c47e71e6f4587d274adecf3c9a40746f6364a3b478027"
+  },
+  {
+    "scene": 7,
+    "prompt": "One vertical 9:16 photorealistic documentary-style source photograph, a completely new distinct scene for an educational psychology video about the sense of competence after completing a task. An older adult man in a modest real home woodworking corner gently examining the small wooden storage box he has just finished assembling. He holds the box with both hands and shows a subtle satisfied expression, natural believable hands, modest handmade result not a masterpiece. Warm daylight, authentic worn workbench, tools safely at rest in background, no powered tool in use. Real human emotion and tactile wood grain, premium documentary photography. No branded furniture or logos, no text or letters, no watermark, no grid or collage, no cartoon or illustration. Portrait composition, box and face both visible, lower quarter uncluttered for later subtitles.",
+    "original_path": "/workspace/scratch/73e79e1cf9df/generated_images/exec-767e1e20-31aa-49dc-8818-70fda154c8c7.png",
+    "filename": "07.png",
+    "ai_generated": true,
+    "source_visual_review": "PASSED_SCENE_RELEVANCE_NOT_FINAL_MEDIA_QA",
+    "local_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/sources/07.png",
+    "sha256": "41a12db51c2e44be2838c9d6e6c34417664a23cf341b44284b650e4948261914"
+  },
+  {
+    "scene": 8,
+    "prompt": "One vertical 9:16 photorealistic documentary-style source photograph for an educational psychology video explaining that experimental findings depend on specific conditions and participants. A neutral small psychology research room with two adult research participants and a female adult researcher sitting around a table. On the table are a simple completed cardboard box, a folded paper crane, a disassembled box and a few unbranded plastic building bricks, each clearly separate. The researcher observes calmly, everyone in everyday clothes, respectful ordinary study setting, not a medical trial. Blank clipboards without any readable marks. Natural expressions and anatomically correct hands, believable window lighting, high-end realistic photography. No logo, no brand names, no writing, no text, no graphs, no diagram, no grid, no collage, no animation or painting. Portrait image, subjects centered and clear.",
+    "original_path": "/workspace/scratch/73e79e1cf9df/generated_images/exec-7ae4f774-7e85-4994-a62c-b5890632b640.png",
+    "filename": "08.png",
+    "ai_generated": true,
+    "source_visual_review": "PASSED_SCENE_RELEVANCE_NOT_FINAL_MEDIA_QA",
+    "local_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/sources/08.png",
+    "sha256": "dd0c029d315813a76477345979fa6c92d8605fea51c222b493fc385a4d9051b2"
+  }
+]

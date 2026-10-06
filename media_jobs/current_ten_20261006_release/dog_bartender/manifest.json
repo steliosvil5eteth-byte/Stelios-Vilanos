@@ -1,0 +1,315 @@
+{
+  "brandId": 7076410,
+  "date": "2026-10-06",
+  "series": "dog_bartender",
+  "job_id": "current-ten-20261006-dog-bartender",
+  "title": "Σκύλος Μπάρμαν — Πρώτα η φωτογραφία",
+  "content_key": "dog_bartender|drink-photo-staging-ice-melts-before-first-sip",
+  "caption": "Έψαχνε το τέλειο φίλτρο. Ο πάγος δεν τον περίμενε.\n\nΣκύλος Μπάρμαν — Πρώτα η φωτογραφία.\nΕσείς: πρώτα φωτογραφία ή πρώτη γουλιά;\n\nΠρωτότυπη χιουμοριστική μυθοπλασία. Εικόνες δημιουργημένες με ΤΝ.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#ΣκύλοςΜπάρμαν #Χιούμορ #Ιστορίες #Μπαρ #Καθημερινότητα",
+  "cards": [
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/dog_bartender/card-01.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/dog_bartender/01.png",
+      "source_sha256": "13b479a33923071fc4267e82620bc268a478e57394e9d89b2cbf41ec14d68b14",
+      "sha256": "f4a25903bcd474f7329e0827d9695b19638293ddfa59b85c5359f7fda83f69a6",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "«Μισό λεπτό. Πρώτα μια φωτογραφία!»\nΟ πελάτης σήκωσε το κινητό.\nΟ Σκύλος Μπάρμαν περίμενε.",
+      "typography": {
+        "size": 46,
+        "lines": [
+          "«Μισό λεπτό. Πρώτα μια",
+          "φωτογραφία!»",
+          "Ο πελάτης σήκωσε το κινητό.",
+          "Ο Σκύλος Μπάρμαν περίμενε."
+        ],
+        "bottom": 900,
+        "text": "«Μισό λεπτό. Πρώτα μια φωτογραφία!»\nΟ πελάτης σήκωσε το κινητό.\nΟ Σκύλος Μπάρμαν περίμενε."
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/dog_bartender/card-02.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/dog_bartender/02.png",
+      "source_sha256": "8bdc466dce20d6d55a8474ee504c83b28ce2bae315aa5ab228de8018cfa850b2",
+      "sha256": "2eb29da38be5b641fdcd822d719d97fba8e6ab65331eb5b623ad218855eaf8d1",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Δέκα λεπτά μετά:\n«Λίγο πιο εδώ το ποτήρι…\nΝα βρούμε τον σωστό φωτισμό!»",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "Δέκα λεπτά μετά:",
+          "«Λίγο πιο εδώ το ποτήρι…",
+          "Να βρούμε τον σωστό φωτισμό!»"
+        ],
+        "bottom": 833,
+        "text": "Δέκα λεπτά μετά:\n«Λίγο πιο εδώ το ποτήρι…\nΝα βρούμε τον σωστό φωτισμό!»"
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/dog_bartender/card-03.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/dog_bartender/03.png",
+      "source_sha256": "4e029f18e6a0d88d53979aea5ad59cb953b034d6a79755e40b62d901b36c3c98",
+      "sha256": "bc569ba8ef19a4f5820c510d664f92df59a650bf05ac38a49193b4bf2697f58a",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Επιτέλους δοκίμασε.\n«Μα… γιατί νερώθηκε;»\nΟ μπάρμαν κοίταξε το ποτήρι.\nΎστερα κοίταξε το κινητό.",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "Επιτέλους δοκίμασε.",
+          "«Μα… γιατί νερώθηκε;»",
+          "Ο μπάρμαν κοίταξε το ποτήρι.",
+          "Ύστερα κοίταξε το κινητό."
+        ],
+        "bottom": 888,
+        "text": "Επιτέλους δοκίμασε.\n«Μα… γιατί νερώθηκε;»\nΟ μπάρμαν κοίταξε το ποτήρι.\nΎστερα κοίταξε το κινητό."
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/dog_bartender/card-04.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/dog_bartender/04.png",
+      "source_sha256": "5cad609ece99d1458323c9956693b605644f0d3713752cc797f6fc65c1b04731",
+      "sha256": "a8588b69c170bd3a2b1938f1cfac4fc8cd8367bde23a4f06e28599570d1a15ff",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "«Γιατί ο πάγος λιώνει.\nΔεν περιμένει να ανεβάσεις στόρι.»\nΕσείς: πρώτα φωτογραφία ή πρώτη γουλιά;\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "«Γιατί ο πάγος λιώνει.",
+          "Δεν περιμένει να ανεβάσεις στόρι.»",
+          "Εσείς: πρώτα φωτογραφία ή πρώτη γουλιά;"
+        ],
+        "bottom": 833,
+        "text": "«Γιατί ο πάγος λιώνει.\nΔεν περιμένει να ανεβάσεις στόρι.»\nΕσείς: πρώτα φωτογραφία ή πρώτη γουλιά;"
+      }
+    }
+  ],
+  "video": {
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/dog_bartender/current-ten-20261006-dog-bartender.mp4",
+    "sha256": "d12f6f9ff213df3f9050c6b7fd7dba5ebe5b0b04ce6c5fe646ad36bcb41d07f0",
+    "duration": 31.24,
+    "seconds_per_card": [
+      7.133333333333334,
+      7.0,
+      7.133333333333334,
+      10.0
+    ],
+    "width": 1080,
+    "height": 1920,
+    "audio": "One original instrumental composition synthesized locally; no voice",
+    "complete_card_count": 4,
+    "ffprobe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "width": 1080,
+          "height": 1920,
+          "coded_width": 1080,
+          "coded_height": 1920,
+          "closed_captions": 0,
+          "film_grain": 0,
+          "has_b_frames": 2,
+          "sample_aspect_ratio": "1:1",
+          "display_aspect_ratio": "9:16",
+          "pix_fmt": "yuv420p",
+          "level": 40,
+          "color_range": "tv",
+          "color_space": "bt470bg",
+          "chroma_location": "center",
+          "field_order": "progressive",
+          "refs": 1,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "25/1",
+          "avg_frame_rate": "25/1",
+          "time_base": "1/12800",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 399872,
+          "duration": "31.240000",
+          "bit_rate": "177315",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "781",
+          "extradata_size": 50,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "vendor_id": "[0][0][0][0]",
+            "encoder": "Lavc60.31.102 libx264"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "initial_padding": 0,
+          "id": "0x2",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 1499520,
+          "duration": "31.240000",
+          "bit_rate": "160304",
+          "nb_frames": "1466",
+          "extradata_size": 5,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "SoundHandler",
+            "vendor_id": "[0][0][0][0]"
+          }
+        }
+      ],
+      "format": {
+        "filename": "/workspace/scratch/73e79e1cf9df/production_20261006/final/dog_bartender/current-ten-20261006-dog-bartender.mp4",
+        "nb_streams": 2,
+        "nb_programs": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "31.240000",
+        "size": "1344108",
+        "bit_rate": "344201",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "encoder": "Lavf60.16.100"
+        }
+      }
+    }
+  },
+  "source_references": [],
+  "release_status": "PASSED_DIRECT_VISUAL_AND_FULL_DECODED_AUDIO_VERIFICATION",
+  "publish_ready": true,
+  "hosted_cards": [
+    {
+      "id": "0ebcf2205c9c4052a4534a23f60384e5",
+      "url": "https://dynamic.heygen.ai/image/0ebcf2205c9c4052a4534a23f60384e5/original.jpg",
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/dog_bartender/hosted/card-01.jpg",
+      "size": 204973,
+      "sha256": "50259917913b4f2b123f391a26dc12ad9926ba71623136ebb03c680d0cd0ede8",
+      "dimensions": [
+        1080,
+        1080
+      ]
+    },
+    {
+      "id": "c785af670e81427a8b5c23ad97b9d9cb",
+      "url": "https://dynamic.heygen.ai/image/c785af670e81427a8b5c23ad97b9d9cb/original.jpg",
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/dog_bartender/hosted/card-02.jpg",
+      "size": 204947,
+      "sha256": "ce99e1f07c388552f78eb9ebd30e5d6422fceb164377433b0ad09f08c626a976",
+      "dimensions": [
+        1080,
+        1080
+      ]
+    },
+    {
+      "id": "833b5f51203745e4a5e4f9e2fa1c3b82",
+      "url": "https://dynamic.heygen.ai/image/833b5f51203745e4a5e4f9e2fa1c3b82/original.jpg",
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/dog_bartender/hosted/card-03.jpg",
+      "size": 189155,
+      "sha256": "f386467f487062ef9aeb71be3666dcb87d82a747e516d68f8511c13e4ed66953",
+      "dimensions": [
+        1080,
+        1080
+      ]
+    },
+    {
+      "id": "4244230bc2d944a29aafcd103ca234da",
+      "url": "https://dynamic.heygen.ai/image/4244230bc2d944a29aafcd103ca234da/original.jpg",
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/dog_bartender/hosted/card-04.jpg",
+      "size": 213740,
+      "sha256": "daaf3334980d89f5eefb87a883aa4185b721c1ca6383735820b81d8f4852cd92",
+      "dimensions": [
+        1080,
+        1080
+      ]
+    }
+  ],
+  "native_carousel_publish_ready": true,
+  "native_release_status": "PASSED_FINAL_VISUAL_REVIEW",
+  "release_review": {
+    "reviewer": "root",
+    "reviewed_at": "2026-10-06T10:08:34.807136+00:00",
+    "video_sha256": "d12f6f9ff213df3f9050c6b7fd7dba5ebe5b0b04ce6c5fe646ad36bcb41d07f0",
+    "visual_report_sha256": "93911355543f4ef0b59995c77934d009872d5e9c763f95d89bda37af3019755d",
+    "audio_report_sha256": "5efb03eb9e9dd9f7477aa3a666ab318250474f8ebb43d95a786ad7bc08ed32f3",
+    "audio_method": "Entire decoded audio compared to the deterministic original instrumental composition; one audio stream; no voice",
+    "direct_listening": false,
+    "fresh_dedupe_required_before_create": true
+  }
+}

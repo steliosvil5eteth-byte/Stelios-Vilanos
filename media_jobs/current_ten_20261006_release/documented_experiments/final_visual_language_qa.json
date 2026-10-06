@@ -1,0 +1,856 @@
+{
+  "status": "APPROVED_VISUAL_FACTUAL_WITH_DOCUMENTED_ASR_VARIANTS",
+  "reviewed_at_utc": "2026-10-06T10:22:59.561979+00:00",
+  "reviewer": "repo_audit exact final media review",
+  "job_id": "current-ten-20261006-ikea-effect",
+  "series": "documented_experiments",
+  "video_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/current-ten-20261006-ikea-effect.mp4",
+  "video_sha256": "18ba6751359d7a5361b2207305e67f81f9564d04e0dee5778363e031905cc38d",
+  "duration_seconds": 91.233333,
+  "minimum_80_seconds_passed": true,
+  "width": 1080,
+  "height": 1920,
+  "frame_rate": "30/1",
+  "voice": "el-GR-NestorasNeural",
+  "provider": "Azure Speech",
+  "listened": false,
+  "direct_listening_claimed": false,
+  "audio_tested": true,
+  "audio_verification_methods": [
+    "Independent el-GR ASR of original hashed source WAV with no script hints; all top-choice differences and relevant NBest hypotheses reviewed",
+    "Lossless source-to-derived PCM provenance: only a verified 0.600-second silence was removed, zero source word events removed; timestamps shifted consistently",
+    "Full decoded final AAC signal matched to complete derived WAV at zero lag, including every voiced two-second window",
+    "Approved script token sequence equals all 48 burned subtitle cues; every cue directly read from exact final video captures"
+  ],
+  "audio_stream_count": 1,
+  "background_music": false,
+  "avatar": false,
+  "filler_padding": false,
+  "source_audio_sha256": "74849eeedf43d4c1e500982dab444f3694ce75c4165b0bf8b970693dd6a4bb5d",
+  "original_asr_source_audio_sha256": "1508a0250e62fa4cdd76e6d24c3d5a290dede4faa896d23c6a119abd93adc446",
+  "audio_edit_provenance": {
+    "original_audio_sha256": "1508a0250e62fa4cdd76e6d24c3d5a290dede4faa896d23c6a119abd93adc446",
+    "original_duration_seconds": 91.833167,
+    "cut_start": 26.5,
+    "cut_end": 27.1,
+    "removed_seconds": 0.6000000000000014,
+    "removed_peak": 0.000579833984375,
+    "removed_rms": 6.938322749958325e-05,
+    "non_silent_source_samples_changed": false,
+    "word_boundaries_removed": 0,
+    "operation": "Lossless PCM concatenation outside one verified silence interval; speech rate unchanged"
+  },
+  "audio_edit_note": "This optional natural-pause tightening was already in progress before the root instruction not to use a blanket 1.2-second silence gate. It is documented, not presented as repair of a missing-word defect. Original source audio remains available. No further pause edits were made.",
+  "script_text_sha256": "47950c7e36f3d47cae5483450a79ca4ac0d2e95d8c7ceed8a923225a8e8983bd",
+  "script_file_sha256": "442e0bc84fdc74c69fd78e86623801f9bf2164bdd3ff4d5d363dfdf682bd1a76",
+  "srt_sha256": "161785ace23b56b753548884bb977df6a615916769c1e188ddba0c00afc9c575",
+  "ass_sha256": "69de27de6a8cfb9ffa9f559f46cc980d7286a8cd9ff4f1bf73e96962d208008c",
+  "source_word_count": 222,
+  "srt_and_burned_ass_all_words_match_script": true,
+  "subtitle_cue_count": 48,
+  "every_cue_directly_read": true,
+  "punctuation_only_cue_count": 0,
+  "subtitle_cues": [
+    {
+      "cue": 1,
+      "start_seconds": 0.05,
+      "end_seconds": 1.34,
+      "burned_text": "Γιατί ένα απλό κουτί μπορεί να",
+      "capture_frame_number": 21,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-001.jpg",
+      "capture_sha256": "b283b2eed11121297852024a3415f1b7975b1c4fb89d40c9cda56d2893a0c10f",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 2,
+      "start_seconds": 1.34,
+      "end_seconds": 3.08,
+      "burned_text": "σου φαίνεται\nπολυτιμότερο, μόνο και",
+      "capture_frame_number": 66,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-002.jpg",
+      "capture_sha256": "352f16f0da4b56a987483ce090d5dbd17f3d64bbbc69dcdf8af9b92bdaea0068",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 3,
+      "start_seconds": 3.08,
+      "end_seconds": 5.65,
+      "burned_text": "μόνο επειδή το\nσυναρμολόγησες εσύ;",
+      "capture_frame_number": 131,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-003.jpg",
+      "capture_sha256": "cc16418cbb1d2c25ceed901939f63d048b69e0196717dc52d20cd83116e39fee",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 4,
+      "start_seconds": 5.65,
+      "end_seconds": 8.76,
+      "burned_text": "Φαντάσου δύο παρόμοια\nκουτιά αποθήκευσης.",
+      "capture_frame_number": 216,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-004.jpg",
+      "capture_sha256": "0bff8ea86c5e7ec1f5486f939ecf6be4b1fbf34169db5eeff2076214d1d71f46",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 5,
+      "start_seconds": 8.76,
+      "end_seconds": 10.68,
+      "burned_text": "Το ένα είναι έτοιμο.",
+      "capture_frame_number": 292,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-005.jpg",
+      "capture_sha256": "f9e5ad7123e3b839911d87bb4d2a6fc59ab36fe319e3f31b09d572d306de14fb",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 6,
+      "start_seconds": 10.68,
+      "end_seconds": 13.08,
+      "burned_text": "Για το άλλο,\nακολούθησες οδηγίες,",
+      "capture_frame_number": 356,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-006.jpg",
+      "capture_sha256": "5bfea568eac3fe0e4e62a6aad2c06eafbdf76b0e5b5d72245f43139ace9671c2",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 7,
+      "start_seconds": 13.08,
+      "end_seconds": 15.95,
+      "burned_text": "ένωσες κομμάτια και\nαφιέρωσες χρόνο.",
+      "capture_frame_number": 435,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-007.jpg",
+      "capture_sha256": "d6e3bab6bdf0f8c1c27bc6a06b577aee0177319dc432edced6e9f3b72e169857",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 8,
+      "start_seconds": 15.95,
+      "end_seconds": 18.48,
+      "burned_text": "Πόσο θα πλήρωνες\nγια το καθένα;",
+      "capture_frame_number": 516,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-008.jpg",
+      "capture_sha256": "ba052853a165370ad46121dc5106a2adb1d9488d1471180bb71b33cb9eee8e22",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 9,
+      "start_seconds": 18.48,
+      "end_seconds": 20.88,
+      "burned_text": "Το 2012, οι ερευνητές Μάικλ",
+      "capture_frame_number": 590,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-009.jpg",
+      "capture_sha256": "eeb2449d2320e9cc7c2239fa329d77aa8e6fab338cfbe0ca1710fd59268b6c4a",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 10,
+      "start_seconds": 20.88,
+      "end_seconds": 22.59,
+      "burned_text": "Νόρτον, Ντάνιελ\nΜότσον και Νταν",
+      "capture_frame_number": 652,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-010.jpg",
+      "capture_sha256": "e492819bd8674d9fe8789ac59f6d9711d61fcf262fc7cd63730896e505412ae7",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 11,
+      "start_seconds": 22.59,
+      "end_seconds": 24.38,
+      "burned_text": "Αριέλι δημοσίευσαν\nτέσσερις μελέτες για",
+      "capture_frame_number": 705,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-011.jpg",
+      "capture_sha256": "a0cac8af2efff3e44dc86e2b65ac02bbca7f32d7d81163b3426b91fba43f2f96",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 12,
+      "start_seconds": 24.38,
+      "end_seconds": 27.06,
+      "burned_text": "αυτό που ονόμασαν\n«φαινόμενο ΙΚΕΑ».",
+      "capture_frame_number": 772,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-012.jpg",
+      "capture_sha256": "c8264368fd27977c9812d43f5e03a15aa8a5e0007dfe99c4f50ee771908a936e",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 13,
+      "start_seconds": 27.06,
+      "end_seconds": 29.25,
+      "burned_text": "Οι συμμετέχοντες\nσυναρμολόγησαν κουτιά,",
+      "capture_frame_number": 845,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-013.jpg",
+      "capture_sha256": "3a276e2884d1d941d26eb2955dd1fd5d47ba9ad3bea11d3e2a5c3e0bff27fc92",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 14,
+      "start_seconds": 29.25,
+      "end_seconds": 31.29,
+      "burned_text": "δίπλωσαν οριγκάμι και\nέφτιαξαν κατασκευές",
+      "capture_frame_number": 908,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-014.jpg",
+      "capture_sha256": "9af75210dbe5210d152e22e2d037cbf7001efc7ead2e1481e326d2f699f65e72",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 15,
+      "start_seconds": 31.29,
+      "end_seconds": 32.85,
+      "burned_text": "με τουβλάκια.",
+      "capture_frame_number": 962,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-015.jpg",
+      "capture_sha256": "a2e0d058fc3ad3baf5efe3d54c19f192ffe2d8e2bf768fdbb3dc47ef4bc779db",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 16,
+      "start_seconds": 32.85,
+      "end_seconds": 34.51,
+      "burned_text": "Στις συνθήκες των\nπειραμάτων, η",
+      "capture_frame_number": 1010,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-016.jpg",
+      "capture_sha256": "dd5a6b1e62c21e5e4cf87b5e8b2ebac426811d2cad15bb5ce8d5fef183e0cb74",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 17,
+      "start_seconds": 34.51,
+      "end_seconds": 36.44,
+      "burned_text": "προσωπική κατασκευή\nαύξανε την αξία που",
+      "capture_frame_number": 1064,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-017.jpg",
+      "capture_sha256": "e5e856de6ac5b9f839ea6cbaf84370bb9539419a44ab2efd3bd4fa78159832d0",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 18,
+      "start_seconds": 36.44,
+      "end_seconds": 38.6,
+      "burned_text": "απέδιδαν στο αποτέλεσμα.",
+      "capture_frame_number": 1126,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-018.jpg",
+      "capture_sha256": "33b1963027d25f53847d9905ae6b80468610b03e64226399f70daec83ad8c64b",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 19,
+      "start_seconds": 38.6,
+      "end_seconds": 40.59,
+      "burned_text": "Μερικοί δημιουργοί\nοριγκάμι αξιολογούσαν",
+      "capture_frame_number": 1188,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-019.jpg",
+      "capture_sha256": "21132d6328dd36d880b7aa3623a0d7e3832fcabcf9a110bcf12bff23c2a56bdc",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 20,
+      "start_seconds": 40.59,
+      "end_seconds": 42.22,
+      "burned_text": "τις ερασιτεχνικές\nκατασκευές τους κοντά",
+      "capture_frame_number": 1242,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-020.jpg",
+      "capture_sha256": "ddd033d94fb13e86e203afd75bbf0986e053d2e0f7b1b673809445130759ea5b",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 21,
+      "start_seconds": 42.22,
+      "end_seconds": 43.96,
+      "burned_text": "στην αξία έργων\nειδικών και περίμεναν",
+      "capture_frame_number": 1293,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-021.jpg",
+      "capture_sha256": "17d594b3243c50c335501766bb635cb83bbff52dc3fbe6d616abd2a72f13ca7d",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 22,
+      "start_seconds": 43.96,
+      "end_seconds": 45.26,
+      "burned_text": "ότι οι άλλοι θα\nσυμφωνούσαν μαζί",
+      "capture_frame_number": 1338,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-022.jpg",
+      "capture_sha256": "85e4de8e09dab069ceb9de98fe343949553c100717b510583a4f435d14c07b5b",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 23,
+      "start_seconds": 45.26,
+      "end_seconds": 46.41,
+      "burned_text": "τους.",
+      "capture_frame_number": 1375,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-023.jpg",
+      "capture_sha256": "671070ac2ee0b167448ceda2566e19ac25b43013795cfd1431da7dee1fc52ca7",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 24,
+      "start_seconds": 46.41,
+      "end_seconds": 48.39,
+      "burned_text": "Υπήρχε όμως ένας\nκρίσιμος όρος:",
+      "capture_frame_number": 1422,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-024.jpg",
+      "capture_sha256": "6d398bc273599c724312b49e2b869eb2273971a60163ddca3010dd67d274329a",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 25,
+      "start_seconds": 48.39,
+      "end_seconds": 50.15,
+      "burned_text": "η ολοκλήρωση.",
+      "capture_frame_number": 1478,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-025.jpg",
+      "capture_sha256": "522a8b7221543653c72db5e5c40c7015b0f3422e75e74f09f51b60b29be59141",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 26,
+      "start_seconds": 50.15,
+      "end_seconds": 51.91,
+      "burned_text": "Όταν οι συμμετέχοντες\nδεν ολοκλήρωναν το",
+      "capture_frame_number": 1531,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-026.jpg",
+      "capture_sha256": "ca31da7768c26130a68e7e94783051cb6449b6217263dba00e076eca9df42f55",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 27,
+      "start_seconds": 51.91,
+      "end_seconds": 53.16,
+      "burned_text": "έργο ή έπρεπε να διαλύσουν την",
+      "capture_frame_number": 1576,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-027.jpg",
+      "capture_sha256": "fd21f388d647e00525e7f144147d7fd87bd5679f51fe27737f3ba397ff923f81",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 28,
+      "start_seconds": 53.16,
+      "end_seconds": 54.76,
+      "burned_text": "κατασκευή τους, η αύξηση της",
+      "capture_frame_number": 1619,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-028.jpg",
+      "capture_sha256": "d1c917f7b4b4465f84f9ac71eb8a9105e9769f89efd3a4309fc57ed10aea808c",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 29,
+      "start_seconds": 54.76,
+      "end_seconds": 56.88,
+      "burned_text": "αποτίμησης υποχωρούσε.",
+      "capture_frame_number": 1675,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-029.jpg",
+      "capture_sha256": "43b5a146f9ffa9d7eeeeb3731433dd84a7d489457bddd137cefc3a66a91a0b0e",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 30,
+      "start_seconds": 56.88,
+      "end_seconds": 58.92,
+      "burned_text": "Μια δεύτερη δημοσιευμένη\nεργασία των ίδιων",
+      "capture_frame_number": 1737,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-030.jpg",
+      "capture_sha256": "d004712ce96a3debe5ef0a9ae1276727238a13212c363bc2c65ae8ccd604bf99",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 31,
+      "start_seconds": 58.92,
+      "end_seconds": 60.7,
+      "burned_text": "ερευνητών εξέτασε\nτον ρόλο της αίσθησης",
+      "capture_frame_number": 1794,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-031.jpg",
+      "capture_sha256": "1e41b2b424a45cdbef8a078aa4218cb7db51f25f4d3a80147aa4c46a4d872800",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 32,
+      "start_seconds": 60.7,
+      "end_seconds": 62.71,
+      "burned_text": "ικανότητας: το\nσυναίσθημα ότι κατάφερες",
+      "capture_frame_number": 1851,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-032.jpg",
+      "capture_sha256": "220faea9448d1e70c63737fd6dc9116f3d819ab1080e8a1143a4818e1819720e",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 33,
+      "start_seconds": 62.71,
+      "end_seconds": 64.24,
+      "burned_text": "να δημιουργήσεις\nκάτι συνδεόταν με τη",
+      "capture_frame_number": 1904,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-033.jpg",
+      "capture_sha256": "6a4af86668200f1e024acc7f447a145135c0de90b35b651f4dca745f67adfaf0",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 34,
+      "start_seconds": 64.24,
+      "end_seconds": 66.58,
+      "burned_text": "μεγαλύτερη αξία\nπου του έδινες.",
+      "capture_frame_number": 1962,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-034.jpg",
+      "capture_sha256": "177fea14f9700ee393be5fa8803687148859c04121dc8ed6be630c8fa1054132",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 35,
+      "start_seconds": 66.58,
+      "end_seconds": 68.76,
+      "burned_text": "Αυτά είναι ευρήματα από\nσυγκεκριμένα πειράματα",
+      "capture_frame_number": 2030,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-035.jpg",
+      "capture_sha256": "ba78df2274c255705197644b52339f698f5cb73ef48af88808a76bc41899109c",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 36,
+      "start_seconds": 68.76,
+      "end_seconds": 70.34,
+      "burned_text": "και δείγματα.",
+      "capture_frame_number": 2087,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-036.jpg",
+      "capture_sha256": "837e36f94b7d7ed1b8f50f901c0fd5f37ccd6a341ca14aa4aea10be09f4041cf",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 37,
+      "start_seconds": 70.34,
+      "end_seconds": 71.88,
+      "burned_text": "Η εφαρμογή τους\nσε κάθε άνθρωπο",
+      "capture_frame_number": 2133,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-037.jpg",
+      "capture_sha256": "e37eba27559943139e127d1e2a9ed8b43aacf992a5c74c844d6568a9cab5730c",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 38,
+      "start_seconds": 71.88,
+      "end_seconds": 74.01,
+      "burned_text": "ή σε πολύ διαφορετικές\nκαταστάσεις χρειάζεται",
+      "capture_frame_number": 2188,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-038.jpg",
+      "capture_sha256": "3a2150dbb60ea7dc8331a58ac4b7d65f947886247d3be9940a24f38335f1576f",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 39,
+      "start_seconds": 74.01,
+      "end_seconds": 75.96000000000001,
+      "burned_text": "ξεχωριστό έλεγχο.",
+      "capture_frame_number": 2250,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-039.jpg",
+      "capture_sha256": "534bc55838cafb3da682296235111f22cfc42d9c64d29ddd2c5a6332fe281e15",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 40,
+      "start_seconds": 75.96000000000001,
+      "end_seconds": 77.7,
+      "burned_text": "Μας δίνουν, πάντως, μια",
+      "capture_frame_number": 2305,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-040.jpg",
+      "capture_sha256": "4054c377cc23eb05a69dab2c1e950f5a271f23b4aadcd880f369966f8301a426",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 41,
+      "start_seconds": 77.7,
+      "end_seconds": 80.2,
+      "burned_text": "χρήσιμη ερώτηση: όταν\nυπερασπιζόμαστε κάτι",
+      "capture_frame_number": 2368,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-041.jpg",
+      "capture_sha256": "eb3a89f0aa481375bf9cc7917f5f9427335d788021436f2fd5871bc6c9aefc10",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 42,
+      "start_seconds": 80.2,
+      "end_seconds": 82.35,
+      "burned_text": "που φτιάξαμε, αξιολογούμε\nτο αποτέλεσμα",
+      "capture_frame_number": 2438,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-042.jpg",
+      "capture_sha256": "15b8b36fd67e6c2d82e631e71c0837ebb87f40b559ae239beb55e76a8db20426",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 43,
+      "start_seconds": 82.35,
+      "end_seconds": 83.2,
+      "burned_text": "ή και τον κόπο που βάλαμε",
+      "capture_frame_number": 2483,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-043.jpg",
+      "capture_sha256": "9f1975046efcca25076fc6d9567dab2c27f5c50172395f5a33620b07a0e3ae8e",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 44,
+      "start_seconds": 83.2,
+      "end_seconds": 84.6,
+      "burned_text": "μέσα του;",
+      "capture_frame_number": 2517,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-044.jpg",
+      "capture_sha256": "82e50dfa71814ed613b91dbc936c3593683fc20c99c8f98c1d4d73d92aa49d08",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 45,
+      "start_seconds": 84.6,
+      "end_seconds": 86.49,
+      "burned_text": "Εσύ ποιο αντικείμενο\nαγαπάς περισσότερο",
+      "capture_frame_number": 2566,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-045.jpg",
+      "capture_sha256": "8a28db9db03b1402a12e97ca0f63e3d9adba196143c0df44cbbb8c73ee204be9",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 46,
+      "start_seconds": 86.49,
+      "end_seconds": 88.76,
+      "burned_text": "επειδή το έφτιαξες μόνος σου;",
+      "capture_frame_number": 2629,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-046.jpg",
+      "capture_sha256": "8f72b8a284075650f484765ddf28b3290bbf648505a56eeb57151d60cd9041e6",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 47,
+      "start_seconds": 88.76,
+      "end_seconds": 90.65,
+      "burned_text": "Αν σας άρεσε, ακολουθήστε για",
+      "capture_frame_number": 2691,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-047.jpg",
+      "capture_sha256": "8135121c6081553997f120f4e906751a271ce32c23f8794709ce260fdb636305",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 48,
+      "start_seconds": 90.65,
+      "end_seconds": 91.23,
+      "burned_text": "περισσότερα.",
+      "capture_frame_number": 2728,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/caption_frames/cue-048.jpg",
+      "capture_sha256": "d4c5d805c7d4b3c20fea88260583235536abe1ca45a164f95f90007ea6fd38c1",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    }
+  ],
+  "specific_visual_correction": {
+    "previous_defect": "Closing quote and period appeared alone as a separate cue.",
+    "correction": "Merged punctuation into preceding phrase and extended its end to 27.06s.",
+    "corrected_cue": 12,
+    "corrected_text": "αυτό που ονόμασαν\n«φαινόμενο ΙΚΕΑ».",
+    "exact_corrected_frame_directly_viewed": true,
+    "all_48_final_cues_reinspected": true
+  },
+  "scenes": {
+    "count": 8,
+    "distinct_source_count": 8,
+    "all_source_images_directly_inspected": true,
+    "all_final_scene_frames_directly_inspected": true,
+    "minimum_scene_seconds": 7.8,
+    "full_scene_review_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/final-contact-sheet.jpg",
+    "source_registry_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/source_registry.json",
+    "findings": "Eight distinct photographic reconstructions show finished/unassembled boxes, assembly, origami/building blocks, valuation, disassembly, craft satisfaction, research context and personal reflection. Captions match each phase. No false archival claim; final caption discloses AI reconstructions and synthetic voice."
+  },
+  "asr_reconciliation": {
+    "asr_completed": true,
+    "recognizer_received_script_hints": false,
+    "asr_audio_sha256": "1508a0250e62fa4cdd76e6d24c3d5a290dede4faa896d23c6a119abd93adc446",
+    "normalized_exact_match": false,
+    "all_differences_reviewed": true,
+    "differences": [
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          17,
+          18
+        ],
+        "recognized_word_range": [
+          17,
+          18
+        ],
+        "expected": "δυο",
+        "recognized": "2",
+        "assessment": "Number formatting δύο/2, identical numeric value."
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          37,
+          38
+        ],
+        "recognized_word_range": [
+          37,
+          38
+        ],
+        "expected": "πληρωνεσ",
+        "recognized": "πληρωτεσ",
+        "assessment": "Top-choice πλήρωτες for πλήρωνες; the approved source event and burned caption are πλήρωνες. Recognition ambiguity does not establish a spoken substitution."
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          45,
+          49
+        ],
+        "recognized_word_range": [
+          45,
+          49
+        ],
+        "expected": "μαικλ νορτον ντανιελ μοτσον",
+        "recognized": "michael northone daniel modon",
+        "assessment": "Foreign author names recognized in Latin/phonetic spelling (Michael Northone, Daniel Modon); correct Μάικλ Νόρτον and Ντάνιελ Μότσον preserved in script and subtitles."
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          50,
+          52
+        ],
+        "recognized_word_range": [
+          50,
+          52
+        ],
+        "expected": "νταν αριελι",
+        "recognized": "d ναργελη",
+        "assessment": "Foreign author name Νταν Αριέλι poorly segmented as D Ναργέλη; retain this recognition uncertainty without claiming independent pronunciation certainty."
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          53,
+          54
+        ],
+        "recognized_word_range": [
+          53,
+          54
+        ],
+        "expected": "τεσσερισ",
+        "recognized": "4",
+        "assessment": "Number formatting τέσσερις/4, identical numeric value."
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          60,
+          61
+        ],
+        "recognized_word_range": [
+          60,
+          61
+        ],
+        "expected": "ικεα",
+        "recognized": "οικια",
+        "assessment": "Brand ΙΚΕΑ transcribed as οικία; proper-name recognition ambiguity; correct term appears in subtitle and source events."
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          88,
+          89
+        ],
+        "recognized_word_range": [
+          88,
+          90
+        ],
+        "expected": "οριγκαμι",
+        "recognized": "ο rgami",
+        "assessment": "Foreign craft name οριγκάμι split into mixed-script o rgami."
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          125,
+          126
+        ],
+        "recognized_word_range": [
+          126,
+          127
+        ],
+        "expected": "διαλυσουν",
+        "recognized": "διαλυσω",
+        "assessment": "Top-choice διαλύσω differs; expected διαλύσουν is present in NBest 2."
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          142,
+          143
+        ],
+        "recognized_word_range": [
+          143,
+          144
+        ],
+        "expected": "τον",
+        "recognized": "το",
+        "assessment": "τον/το difference before following consonant, short-particle recognition ambiguity."
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          172,
+          173
+        ],
+        "recognized_word_range": [
+          173,
+          174
+        ],
+        "expected": "τουσ",
+        "recognized": "του",
+        "assessment": "τους/του difference; expected τους is present in NBest 3."
+      },
+      {
+        "kind": "delete",
+        "expected_word_range": [
+          198,
+          199
+        ],
+        "recognized_word_range": [
+          199,
+          199
+        ],
+        "expected": "η",
+        "recognized": "",
+        "assessment": "Short conjunction ή omitted by independent recognition in phrase ή και; source event and burned subtitle include it. This unresolved ASR omission does not establish dropped audio; no source speech interval was removed."
+      }
+    ],
+    "errors": [],
+    "no_match_regions": [],
+    "established_missing_or_repeated_passage": false,
+    "direct_perceptual_pronunciation_certainty": false,
+    "limitation": "No actual listening was available. ASR hypotheses contain lexical, name and short-conjunction uncertainty; exact source text events, source-preserving silent-gap edit and full final signal binding establish complete delivery of generated speech intervals, not perfect independent recognition of every phoneme."
+  },
+  "audio_binding": {
+    "source_audio_sha256": "74849eeedf43d4c1e500982dab444f3694ce75c4165b0bf8b970693dd6a4bb5d",
+    "video_sha256": "18ba6751359d7a5361b2207305e67f81f9564d04e0dee5778363e031905cc38d",
+    "lag_samples": 0,
+    "lag_seconds": 0.0,
+    "correlation": 0.9994741945262057,
+    "minimum_voiced_two_second_correlation": 0.9990998379800514,
+    "signal_to_error_db": 29.77802264680434,
+    "gain": 0.9935777738974673,
+    "decoded_peak": 0.723358154296875,
+    "clipped_sample_fraction": 0.0,
+    "silences_over_1_2_seconds": [],
+    "decoded_seconds": 91.24266666666666,
+    "source_seconds": 91.23316666666666,
+    "direct_listening_claimed": false,
+    "independent_asr_review_required": true,
+    "waveform_binding_passed": true,
+    "signal_quality_passed": true
+  },
+  "factual_and_disclosure_review": {
+    "primary_source_links": [
+      {
+        "url": "https://dash.harvard.edu/entities/publication/73120378-ce76-6bd4-e053-0100007fdf3b",
+        "ref": "turn11view0",
+        "supports": "2012 original article; four studies with boxes/origami/Lego; overvaluation; completion/dismantling boundary."
+      },
+      {
+        "url": "https://dash.harvard.edu/entities/publication/73120378-be26-6bd4-e053-0100007fdf3b",
+        "ref": "turn10view3",
+        "supports": "Companion original study examining competence as mediator."
+      }
+    ],
+    "caption_contains_ai_image_and_synthetic_voice_disclosures": true,
+    "research_generalization_limits_stated": true,
+    "completion_condition_preserved": true
+  },
+  "known_content_visual_or_signal_defects": [],
+  "root_release_decision_pending": true,
+  "publish_ready": false
+}

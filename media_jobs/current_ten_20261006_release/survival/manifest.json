@@ -1,0 +1,401 @@
+{
+  "brandId": 7076410,
+  "date": "2026-10-06",
+  "series": "survival",
+  "job_id": "current-ten-20261006-survival",
+  "title": "Ηλεκτρική φωτιά: τι κάνεις πριν χαθεί χρόνος",
+  "content_key": "survival|electrical-house-fire-safe-evacuation-no-water",
+  "caption": "Ηλεκτρική φωτιά στο σπίτι: ειδοποιούμε, απομακρυνόμαστε με ασφάλεια και καλούμε βοήθεια. Ποτέ νερό σε ηλεκτρική φωτιά. Αποθήκευσέ το και συζήτησε την έξοδο του σπιτιού με όσους μένουν μαζί σου.\nΠηγές: Cumbria Fire & Rescue Service · London Fire Brigade · Πυροσβεστικό Σώμα Ελλάδος.\nΕικόνες αναπαράστασης δημιουργημένες με ΤΝ.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΚανόνεςΕπιβίωσης #Πυρασφάλεια #ΗλεκτρικήΑσφάλεια #Προετοιμασία #Ασφάλεια",
+  "cards": [
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/card-01.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/survival/01.png",
+      "source_sha256": "80bcc3497d477c76775e2480c28ab4d3716e131ff63c9f83e466e4442d26e0d8",
+      "sha256": "40981e9c18ed9f86e13a0db93bafefb0dc7be93c6f385c53f06e56efc8c985c3",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Φωτιά σε ηλεκτρική συσκευή;\nΜην πιάσεις το νερό.",
+      "typography": {
+        "size": 46,
+        "lines": [
+          "Φωτιά σε ηλεκτρική συσκευή;",
+          "Μην πιάσεις το νερό."
+        ],
+        "bottom": 784,
+        "text": "Φωτιά σε ηλεκτρική συσκευή;\nΜην πιάσεις το νερό."
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/card-02.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/survival/02.png",
+      "source_sha256": "9b580d31ad343d010f34cb2cfdb1eb4711ee81f2350d527bef51aff1d60d4a0c",
+      "sha256": "31ddea1347a6d711e5185325c8ea303b5b70f6b992fc1af343c7b37f2a302322",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Φώναξε «Φωτιά!»\nΕιδοποίησε όσους βρίσκονται στο σπίτι. Η ασφαλής έξοδος είναι η προτεραιότητα.",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "Φώναξε «Φωτιά!»",
+          "Ειδοποίησε όσους βρίσκονται στο σπίτι. Η",
+          "ασφαλής έξοδος είναι η προτεραιότητα."
+        ],
+        "bottom": 833,
+        "text": "Φώναξε «Φωτιά!»\nΕιδοποίησε όσους βρίσκονται στο σπίτι. Η ασφαλής έξοδος είναι η προτεραιότητα."
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/card-03.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/survival/03.png",
+      "source_sha256": "87a617b998507aded1d80d5262860358f8887754ba91248481b7890650d0050c",
+      "sha256": "b32d4f6ef299aba803bdc569032d802c8e8dd5e74aa9a228ff6844f5b6fcf11b",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Μην ρίξεις νερό.\nΣε ηλεκτρική φωτιά μπορεί να προκαλέσει ηλεκτροπληξία. Μην προσπαθήσεις να αντιμετωπίσεις μόνος σου τη φωτιά.",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "Μην ρίξεις νερό.",
+          "Σε ηλεκτρική φωτιά μπορεί να προκαλέσει",
+          "ηλεκτροπληξία. Μην προσπαθήσεις να",
+          "αντιμετωπίσεις μόνος σου τη φωτιά."
+        ],
+        "bottom": 888,
+        "text": "Μην ρίξεις νερό.\nΣε ηλεκτρική φωτιά μπορεί να προκαλέσει ηλεκτροπληξία. Μην προσπαθήσεις να αντιμετωπίσεις μόνος σου τη φωτιά."
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/card-04.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/survival/04.png",
+      "source_sha256": "3285e2322bc33f67ac432327b6523bdec442dfeab52f61c0a254f166ba00c300",
+      "sha256": "e47f0633c391a19f20209fbed2e86e484647d602ac3b14821266e1e491517a11",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Άφησε τα αντικείμενα.\nΜην καθυστερείς για τσάντες, έγγραφα ή συσκευές. Βγες από ασφαλή διαδρομή.",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "Άφησε τα αντικείμενα.",
+          "Μην καθυστερείς για τσάντες, έγγραφα ή",
+          "συσκευές. Βγες από ασφαλή διαδρομή."
+        ],
+        "bottom": 833,
+        "text": "Άφησε τα αντικείμενα.\nΜην καθυστερείς για τσάντες, έγγραφα ή συσκευές. Βγες από ασφαλή διαδρομή."
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/card-05.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/survival/05.png",
+      "source_sha256": "e87635c3d60c83c42dc98dc64241b8f58da146f9e43b9b4e681914bb1c41dfb4",
+      "sha256": "a543d38316f93eccefa0f9d354874ea0a72919abf56d38cd977c320084ca3ee8",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Κλείνε τις πόρτες πίσω σου.\nΑυτό βοηθά να περιοριστεί η εξάπλωση της φωτιάς και του καπνού.",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "Κλείνε τις πόρτες πίσω σου.",
+          "Αυτό βοηθά να περιοριστεί η εξάπλωση της",
+          "φωτιάς και του καπνού."
+        ],
+        "bottom": 833,
+        "text": "Κλείνε τις πόρτες πίσω σου.\nΑυτό βοηθά να περιοριστεί η εξάπλωση της φωτιάς και του καπνού."
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/card-06.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/survival/06.png",
+      "source_sha256": "42881b3ace40b0fbf35cd4299d3ce60d8f6d176af701af78389ed193944b25b4",
+      "sha256": "f22e198b952094e281161ff41b1b9e655aa202cd780efb1b4c50041362f9f71a",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Πριν ανοίξεις πόρτα, έλεγξε τη θερμοκρασία με το πίσω μέρος του χεριού.\nΑν είναι ζεστή, μην την ανοίξεις.",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "Πριν ανοίξεις πόρτα, έλεγξε τη θερμοκρασία",
+          "με το πίσω μέρος του χεριού.",
+          "Αν είναι ζεστή, μην την ανοίξεις."
+        ],
+        "bottom": 833,
+        "text": "Πριν ανοίξεις πόρτα, έλεγξε τη θερμοκρασία με το πίσω μέρος του χεριού.\nΑν είναι ζεστή, μην την ανοίξεις."
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/card-07.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/survival/07.png",
+      "source_sha256": "383b6c3f92d025829fbc063855f05034f172300702cde7ce0c6760a86ae0ae70",
+      "sha256": "eff06cf6be46832ae71f558f1b3069285002aa29141f95489e91cde8d3193d30",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Η έξοδος έχει μπλοκαριστεί;\nΠήγαινε σε δωμάτιο με παράθυρο, κλείσε την πόρτα και κάλεσε 112. Δήλωσε ακριβώς πού βρίσκεσαι.",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "Η έξοδος έχει μπλοκαριστεί;",
+          "Πήγαινε σε δωμάτιο με παράθυρο, κλείσε",
+          "την πόρτα και κάλεσε 112. Δήλωσε ακριβώς",
+          "πού βρίσκεσαι."
+        ],
+        "bottom": 888,
+        "text": "Η έξοδος έχει μπλοκαριστεί;\nΠήγαινε σε δωμάτιο με παράθυρο, κλείσε την πόρτα και κάλεσε 112. Δήλωσε ακριβώς πού βρίσκεσαι."
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/card-08.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/survival/08.png",
+      "source_sha256": "550d5729b19298152f405957874176b2ba85ea8446e85df850e6472b7d9aacbd",
+      "sha256": "bb067a95552af7803fd02a3875055083ddb8f0ab1179290e41fb977622038043",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Μόλις είσαι σε ασφάλεια, κάλεσε 112 ή 199.\nΠες τι καίγεται, τη διεύθυνση και αν υπάρχουν εγκλωβισμένοι.",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "Μόλις είσαι σε ασφάλεια, κάλεσε 112 ή 199.",
+          "Πες τι καίγεται, τη διεύθυνση και αν",
+          "υπάρχουν εγκλωβισμένοι."
+        ],
+        "bottom": 833,
+        "text": "Μόλις είσαι σε ασφάλεια, κάλεσε 112 ή 199.\nΠες τι καίγεται, τη διεύθυνση και αν υπάρχουν εγκλωβισμένοι."
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/card-09.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/survival/09.png",
+      "source_sha256": "99e232b393666b8ee9db0668733749c775ab0241a6e9cb7ef41f3711e0e32a29",
+      "sha256": "61a309ed0faae5b702ac158a815eccca8bc812a6bc99ddfef3cb4580a77547af",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Βγήκες; Μην ξαναμπείς.\nΠερίμενε τις οδηγίες της Πυροσβεστικής.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "Βγήκες; Μην ξαναμπείς.",
+          "Περίμενε τις οδηγίες της Πυροσβεστικής."
+        ],
+        "bottom": 778,
+        "text": "Βγήκες; Μην ξαναμπείς.\nΠερίμενε τις οδηγίες της Πυροσβεστικής."
+      }
+    }
+  ],
+  "video": {
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/current-ten-20261006-survival.mp4",
+    "sha256": "b0e2f1c5c4766c5dbda0dd3c0bcea2fd39c60caef82f4f65559bc117dbf100b1",
+    "duration": 71.4,
+    "seconds_per_card": [
+      7.0,
+      7.0,
+      8.8,
+      7.133333333333334,
+      7.966666666666667,
+      8.8,
+      9.216666666666667,
+      8.383333333333335,
+      7.133333333333334
+    ],
+    "width": 1080,
+    "height": 1920,
+    "audio": "One original instrumental composition synthesized locally; no voice",
+    "complete_card_count": 9,
+    "ffprobe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "width": 1080,
+          "height": 1920,
+          "coded_width": 1080,
+          "coded_height": 1920,
+          "closed_captions": 0,
+          "film_grain": 0,
+          "has_b_frames": 2,
+          "sample_aspect_ratio": "1:1",
+          "display_aspect_ratio": "9:16",
+          "pix_fmt": "yuv420p",
+          "level": 40,
+          "color_range": "tv",
+          "color_space": "bt470bg",
+          "chroma_location": "center",
+          "field_order": "progressive",
+          "refs": 1,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "25/1",
+          "avg_frame_rate": "25/1",
+          "time_base": "1/12800",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 913920,
+          "duration": "71.400000",
+          "bit_rate": "132800",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "1785",
+          "extradata_size": 50,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "vendor_id": "[0][0][0][0]",
+            "encoder": "Lavc60.31.102 libx264"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "initial_padding": 0,
+          "id": "0x2",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 3427200,
+          "duration": "71.400000",
+          "bit_rate": "160463",
+          "nb_frames": "3348",
+          "extradata_size": 5,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "SoundHandler",
+            "vendor_id": "[0][0][0][0]"
+          }
+        }
+      ],
+      "format": {
+        "filename": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/current-ten-20261006-survival.mp4",
+        "nb_streams": 2,
+        "nb_programs": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "71.400000",
+        "size": "2673684",
+        "bit_rate": "299572",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "encoder": "Lavf60.16.100"
+        }
+      }
+    }
+  },
+  "source_references": [
+    {
+      "url": "https://www.cumbriafire.gov.uk/electrical-safety",
+      "ref": "turn11view1",
+      "supports": "Water/electrical-fire danger; get out, stay out; warning signs."
+    },
+    {
+      "url": "https://www.london-fire.gov.uk/safety/the-home/escape-plan/escape-plan-houses-and-converted-flats/",
+      "ref": "turn13view5",
+      "supports": "Alert everyone; leave valuables; close doors; warm door; blocked exit room; never reenter."
+    },
+    {
+      "url": "https://www.fireservice.gr/el/-/gia-to-spiti",
+      "ref": "turn6view3",
+      "supports": "Greek fire-service number 199."
+    },
+    {
+      "url": "https://civilprotection.gov.gr/112/pote-pos-kalo",
+      "ref": "turn12search15",
+      "supports": "Greek 112, emergency type and location."
+    }
+  ],
+  "release_status": "PASSED_DIRECT_VISUAL_AND_FULL_DECODED_AUDIO_VERIFICATION",
+  "publish_ready": true,
+  "release_review": {
+    "reviewer": "root",
+    "reviewed_at": "2026-10-06T10:08:34.810509+00:00",
+    "video_sha256": "b0e2f1c5c4766c5dbda0dd3c0bcea2fd39c60caef82f4f65559bc117dbf100b1",
+    "visual_report_sha256": "09026cf5653d6ad2b836fa381fe083da5c6a37ac4438bb37cefd21e209cc5c37",
+    "audio_report_sha256": "48fe0d5bded3b97e2e7ad2e29bdaecd5eca9c7568c83d3cdd7dc2f0042d3c97c",
+    "audio_method": "Entire decoded audio compared to the deterministic original instrumental composition; one audio stream; no voice",
+    "direct_listening": false,
+    "fresh_dedupe_required_before_create": true
+  }
+}

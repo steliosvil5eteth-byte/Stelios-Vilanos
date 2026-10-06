@@ -1,0 +1,12 @@
+{
+  "publish_ready": true,
+  "status": "APPROVED_EXACT_FINAL_WITH_TECHNICAL_AUDIO_AND_DOCUMENTED_ASR_VARIANTS",
+  "reviewer": "root",
+  "reviewed_at": "2026-10-06T10:24:03.514505+00:00",
+  "video_sha256": "18ba6751359d7a5361b2207305e67f81f9564d04e0dee5778363e031905cc38d",
+  "independent_visual_language_report_sha256": "6cf30330edfd6a0afb9a24378363f4d5995e9194b0a5b98954121826c85c15e3",
+  "full_decoded_audio_binding_sha256": "371c2163ba5799c943dbe845d49c1d1f9aa9fe25262c55c8a3a95350625a2ec7",
+  "basis": "Every final scene and burned subtitle reviewed after specific corrections; full decoded AAC bound to approved Nestoras source; ASR variants reviewed without established content-changing narration defect; root reviewed full final scene sheet.",
+  "direct_listening": false,
+  "fresh_three_source_dedupe_required_before_create": true
+}

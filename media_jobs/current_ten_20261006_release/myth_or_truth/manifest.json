@@ -1,0 +1,283 @@
+{
+  "brandId": 7076410,
+  "date": "2026-10-06",
+  "series": "myth_or_truth",
+  "job_id": "current-ten-20261006-myth-or-truth",
+  "title": "Τα ηλιοτρόπια ακολουθούν τον ήλιο όλη τους τη ζωή;",
+  "content_key": "myth_or_truth|sunflower-young-heliotropism-mature-east-facing",
+  "caption": "Το νεαρό ηλιοτρόπιο κινείται με τον ημερήσιο κύκλο. Στην ώριμη ανθοφορία, η παρακολούθηση του ήλιου σταματά και τα άνθη συνήθως κοιτούν ανατολικά.\nΠηγή: Atamian et al., Science (2016), DOI 10.1126/science.aaf9793 · UC Davis.\nΕικόνες αναπαράστασης δημιουργημένες με ΤΝ.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#ΜύθοςΉΑλήθεια #Ηλιοτρόπια #Φυτά #Βιολογία #Φύση",
+  "cards": [
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/myth_or_truth/card-01.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/myth_or_truth/01.png",
+      "source_sha256": "a8f403738c441be24ce2a1052afc795d440330f79fd22c3726db2d49e8ed47d4",
+      "sha256": "6b5a9b58ec876989b97ceff6be6b143b9e20f8c412f132391e0294657a16a718",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "ΜΥΘΟΣ Ή ΑΛΗΘΕΙΑ;\nΤα ηλιοτρόπια ακολουθούν τον ήλιο όλη τους τη ζωή;",
+      "typography": {
+        "size": 46,
+        "lines": [
+          "Τα ηλιοτρόπια ακολουθούν τον ήλιο",
+          "όλη τους τη ζωή;"
+        ],
+        "bottom": 784,
+        "text": "Τα ηλιοτρόπια ακολουθούν τον ήλιο όλη τους τη ζωή;"
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/myth_or_truth/card-02.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/myth_or_truth/02.png",
+      "source_sha256": "cfeb76d3565cad96b29f17fb3529693ba66dbc3e841724ffa3568d96bdcba07e",
+      "sha256": "16ffff6579c7adda795fdcaceb6f8e5630ba73a97d6b66f0335ff6730a6046f3",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "ΜΥΘΟΣ.\nΤα νεαρά ηλιοτρόπια, όσο αναπτύσσονται, παρακολουθούν την πορεία του ήλιου από την ανατολή στη δύση.",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "ΜΥΘΟΣ.",
+          "Τα νεαρά ηλιοτρόπια, όσο αναπτύσσονται,",
+          "παρακολουθούν την πορεία του ήλιου από",
+          "την ανατολή στη δύση."
+        ],
+        "bottom": 888,
+        "text": "ΜΥΘΟΣ.\nΤα νεαρά ηλιοτρόπια, όσο αναπτύσσονται, παρακολουθούν την πορεία του ήλιου από την ανατολή στη δύση."
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/myth_or_truth/card-03.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/myth_or_truth/03.png",
+      "source_sha256": "dc77aa084784ed1baef7c51c42c51a43a414477b72a71bfc8b600b740c9d13c5",
+      "sha256": "1cc2168e4591d0810964e00d971e24148b43f59a501a9a57dd0659e0aeb815ea",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Τη νύχτα στρέφονται ξανά ανατολικά.\nΗ κίνηση συνδέεται με άνιση ανάπτυξη του βλαστού και το εσωτερικό τους βιολογικό ρολόι.",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "Τη νύχτα στρέφονται ξανά ανατολικά.",
+          "Η κίνηση συνδέεται με άνιση ανάπτυξη του",
+          "βλαστού και το εσωτερικό τους βιολογικό",
+          "ρολόι."
+        ],
+        "bottom": 888,
+        "text": "Τη νύχτα στρέφονται ξανά ανατολικά.\nΗ κίνηση συνδέεται με άνιση ανάπτυξη του βλαστού και το εσωτερικό τους βιολογικό ρολόι."
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/myth_or_truth/card-04.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/myth_or_truth/04.png",
+      "source_sha256": "c5d3109dbeebf3ca4ad7f0493d363b9b36a9c36b9305e524fcc060a6d9b1a2aa",
+      "sha256": "fc518beb1a55efd0e6cae53d2171c2758b1da5b8938bb2ac1634acc910018f48",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Στα ώριμα, ανθισμένα φυτά η κίνηση σταματά.\nΤα άνθη μένουν συνήθως στραμμένα ανατολικά.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "Στα ώριμα, ανθισμένα φυτά η κίνηση",
+          "σταματά.",
+          "Τα άνθη μένουν συνήθως στραμμένα",
+          "ανατολικά."
+        ],
+        "bottom": 888,
+        "text": "Στα ώριμα, ανθισμένα φυτά η κίνηση σταματά.\nΤα άνθη μένουν συνήθως στραμμένα ανατολικά."
+      }
+    }
+  ],
+  "video": {
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/myth_or_truth/current-ten-20261006-myth-or-truth.mp4",
+    "sha256": "308c6e042fae04f3af6d67dc1da55a0a6b11b467f3cd0b7ba0d13939694e3af3",
+    "duration": 33.36,
+    "seconds_per_card": [
+      7.0,
+      7.966666666666667,
+      9.216666666666667,
+      9.216666666666667
+    ],
+    "width": 1080,
+    "height": 1920,
+    "audio": "One original instrumental composition synthesized locally; no voice",
+    "complete_card_count": 4,
+    "ffprobe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "width": 1080,
+          "height": 1920,
+          "coded_width": 1080,
+          "coded_height": 1920,
+          "closed_captions": 0,
+          "film_grain": 0,
+          "has_b_frames": 2,
+          "sample_aspect_ratio": "1:1",
+          "display_aspect_ratio": "9:16",
+          "pix_fmt": "yuv420p",
+          "level": 40,
+          "color_range": "tv",
+          "color_space": "bt470bg",
+          "chroma_location": "center",
+          "field_order": "progressive",
+          "refs": 1,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "25/1",
+          "avg_frame_rate": "25/1",
+          "time_base": "1/12800",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 427008,
+          "duration": "33.360000",
+          "bit_rate": "142725",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "834",
+          "extradata_size": 50,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "vendor_id": "[0][0][0][0]",
+            "encoder": "Lavc60.31.102 libx264"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "initial_padding": 0,
+          "id": "0x2",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 1601280,
+          "duration": "33.360000",
+          "bit_rate": "160286",
+          "nb_frames": "1565",
+          "extradata_size": 5,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "SoundHandler",
+            "vendor_id": "[0][0][0][0]"
+          }
+        }
+      ],
+      "format": {
+        "filename": "/workspace/scratch/73e79e1cf9df/production_20261006/final/myth_or_truth/current-ten-20261006-myth-or-truth.mp4",
+        "nb_streams": 2,
+        "nb_programs": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "33.360000",
+        "size": "1290873",
+        "bit_rate": "309561",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "encoder": "Lavf60.16.100"
+        }
+      }
+    }
+  },
+  "source_references": [
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/27493185/",
+      "ref": "turn12search0",
+      "supports": "Atamian et al. 2016 original study; young tracking vs mature east orientation."
+    },
+    {
+      "url": "https://zenodo.org/records/889822",
+      "ref": "turn12search3",
+      "supports": "Original Science study archived abstract and DOI."
+    },
+    {
+      "url": "https://biology.ucdavis.edu/news/how-sunflowers-see-sun",
+      "ref": "turn13view1",
+      "supports": "2023 official explanation of differential stem growth and biological clock; mechanism nuance."
+    }
+  ],
+  "release_status": "PASSED_DIRECT_VISUAL_AND_FULL_DECODED_AUDIO_VERIFICATION",
+  "publish_ready": true,
+  "release_review": {
+    "reviewer": "root",
+    "reviewed_at": "2026-10-06T10:08:34.814736+00:00",
+    "video_sha256": "308c6e042fae04f3af6d67dc1da55a0a6b11b467f3cd0b7ba0d13939694e3af3",
+    "visual_report_sha256": "f20b089fdf45176aed0b2cfdc605965f798b5e059cd27d25341c31b0d520d7d6",
+    "audio_report_sha256": "402e5605cc34ab509127a065c47cba711ca47f59b5cd6cfe5d7f33f7e551fa2c",
+    "audio_method": "Entire decoded audio compared to the deterministic original instrumental composition; one audio stream; no voice",
+    "direct_listening": false,
+    "fresh_dedupe_required_before_create": true
+  }
+}

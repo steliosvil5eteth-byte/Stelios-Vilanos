@@ -1,0 +1,1748 @@
+{
+  "status": "APPROVED_VISUAL_FACTUAL_WITH_DOCUMENTED_ASR_VARIANTS",
+  "reviewed_at_utc": "2026-10-06T10:18:42.847883+00:00",
+  "reviewer": "research_fresh_content independent final review",
+  "series": "tsukumogami",
+  "video_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/current-ten-20261006-tsukumogami.mp4",
+  "video_sha256": "7e36b1f2ab0a247b49d9e37cfec5a2b259aefc67c121057e380e5662dbf50b1e",
+  "duration_seconds": 87.966667,
+  "minimum_80_seconds_passed": true,
+  "width": 1080,
+  "height": 1920,
+  "frame_rate": "30/1",
+  "voice": "el-GR-NestorasNeural",
+  "provider": "Azure Speech",
+  "listened": false,
+  "audio_tested": true,
+  "audio_verification_methods": [
+    "Full decoded AAC waveform binding to hashed Nestoras source WAV",
+    "Independent el-GR recognition with no script hints",
+    "Every ASR difference reconciled against NBest and source word events"
+  ],
+  "audio_stream_count": 1,
+  "audio_channels": 1,
+  "background_music": false,
+  "no_music_evidence": "Render command maps only the single source Nestoras WAV; full decoded signal binding passes. No music or other audio input.",
+  "source_audio_sha256": "666ca318489620b723da5e7e97b1e1daedb952ec3c36863e199409b2b118b9ee",
+  "script_file_sha256": "51e7f87c5c92d6636f534a529113c5895e4acaf29cd46e7c94578ad333860ff0",
+  "script_text_sha256": "8b3643120661dbd04dacfba1eb9dadfca801036e6605ea45d07fc03e92ed3ce3",
+  "script_hash_note": "Speech metadata hashes approved script text without the file's final newline. Both exact file-byte hash and text hash are recorded; text matches approved manifest exactly.",
+  "srt_sha256": "99e94f2434e5dc3a4a2f56c492ba4a32a332efa65928f33b3241a1c0ca85acd4",
+  "ass_sha256": "fa91d51dfef756d0a173d6d6a76ee9a2bc74bfef7dbb9645b6e193116104c0bb",
+  "source_word_count": 225,
+  "source_boundary_words_match_script": true,
+  "srt_and_burned_ass_all_words_match_script": true,
+  "subtitle_cue_count": 47,
+  "every_cue_directly_read": true,
+  "subtitle_timing": {
+    "all_cue_starts_match_source_word_events_within_seconds": 0.001,
+    "ASS_centisecond_rounding_max_seconds": 0.0051,
+    "overlap_count": 0,
+    "missing_cues": 0,
+    "first_cue_start_seconds": 0.05,
+    "last_cue_end_seconds": 87.934,
+    "complete_spoken_word_and_subtitle_coverage": true,
+    "last_independently_recognized_word_end_seconds": 87.88,
+    "final_word_within_source_audio": true,
+    "truncated_subtitle_or_established_truncated_speech": false
+  },
+  "subtitle_cues": [
+    {
+      "cue": 1,
+      "start_seconds": 0.05,
+      "end_seconds": 1.05,
+      "burned_text": "Κι αν η παλιά ομπρέλα που",
+      "script_word_range": [
+        0,
+        6
+      ],
+      "first_source_word_offset": 0.05,
+      "capture_frame_number": 16,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-001.jpg",
+      "capture_sha256": "df80d3e0797705d2eb9840dfea1c318fd9d7fe02358e25ec72394efbd41e06d7",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 2,
+      "start_seconds": 1.05,
+      "end_seconds": 2.51,
+      "burned_text": "πέταξες μπορούσε\nνα θυμάται πώς της",
+      "script_word_range": [
+        6,
+        12
+      ],
+      "first_source_word_offset": 1.05,
+      "capture_frame_number": 53,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-002.jpg",
+      "capture_sha256": "a4763126ef21343e1abddbfc29eb188d09a396271c9accbc62c19eefd27ff330",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 3,
+      "start_seconds": 2.51,
+      "end_seconds": 3.96,
+      "burned_text": "φέρθηκες;",
+      "script_word_range": [
+        12,
+        13
+      ],
+      "first_source_word_offset": 2.5125,
+      "capture_frame_number": 97,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-003.jpg",
+      "capture_sha256": "917f89ed2f82ced301a8c414abdc919248c01f7cb538bed46174055ba30641d3",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 4,
+      "start_seconds": 3.96,
+      "end_seconds": 6.7,
+      "burned_text": "Στην ιαπωνική λαογραφία\nυπάρχουν τα τσουκουμογκάμι:",
+      "script_word_range": [
+        13,
+        19
+      ],
+      "first_source_word_offset": 3.9625,
+      "capture_frame_number": 160,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-004.jpg",
+      "capture_sha256": "5dbe2af88a32909075704aa55bfac66bbc02adf6b1225af927f0711012da6eaa",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 5,
+      "start_seconds": 6.7,
+      "end_seconds": 8.36,
+      "burned_text": "παλιά αντικείμενα και\nεργαλεία που αποκτούν",
+      "script_word_range": [
+        19,
+        25
+      ],
+      "first_source_word_offset": 6.7,
+      "capture_frame_number": 226,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-005.jpg",
+      "capture_sha256": "502f3206934a2d3e652d8dbc0e4e47fce2948ceae9d47841ed462b6332c0982a",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 6,
+      "start_seconds": 8.36,
+      "end_seconds": 9.79,
+      "burned_text": "πνεύμα.",
+      "script_word_range": [
+        25,
+        26
+      ],
+      "first_source_word_offset": 8.3625,
+      "capture_frame_number": 272,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-006.jpg",
+      "capture_sha256": "6375f9601e211c37cb8e537119ab71110b6dfcc6cd182994c6180152c1ff0a4f",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 7,
+      "start_seconds": 9.79,
+      "end_seconds": 11.79,
+      "burned_text": "Μια γνωστή εκδοχή\nσυνδέει τη μεταμόρφωση",
+      "script_word_range": [
+        26,
+        32
+      ],
+      "first_source_word_offset": 9.7875,
+      "capture_frame_number": 324,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-007.jpg",
+      "capture_sha256": "bb4798649f18a262e8db9ccfe48166dc95961485116a5f394d880f2bc199f9f7",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 8,
+      "start_seconds": 11.79,
+      "end_seconds": 14.11,
+      "burned_text": "με τη συμπλήρωση\nεκατό χρόνων.",
+      "script_word_range": [
+        32,
+        37
+      ],
+      "first_source_word_offset": 11.7875,
+      "capture_frame_number": 388,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-008.jpg",
+      "capture_sha256": "1445a30ab3cd9988f8945a27b33ab0bc4700557af60a9cec896f41da2bca3ccd",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 9,
+      "start_seconds": 14.11,
+      "end_seconds": 15.78,
+      "burned_text": "Μπαίνουμε στον\nκόσμο του θρύλου,",
+      "script_word_range": [
+        37,
+        42
+      ],
+      "first_source_word_offset": 14.1125,
+      "capture_frame_number": 448,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-009.jpg",
+      "capture_sha256": "65090b4d72b76f2ff263ca336c5224c04f7614ce1d9d62a1cf4d6e698c758923",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 10,
+      "start_seconds": 15.78,
+      "end_seconds": 18.12,
+      "burned_text": "των εικόνων και της αφήγησης.",
+      "script_word_range": [
+        42,
+        47
+      ],
+      "first_source_word_offset": 15.775,
+      "capture_frame_number": 508,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-010.jpg",
+      "capture_sha256": "1fb92fba62212641cbf70bf3bf4d187eb51c98f2dd7929cd74701e0a39006c5a",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 11,
+      "start_seconds": 18.12,
+      "end_seconds": 19.82,
+      "burned_text": "Σκέψου μια αποθήκη με σκεύη,",
+      "script_word_range": [
+        47,
+        52
+      ],
+      "first_source_word_offset": 18.125,
+      "capture_frame_number": 569,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-011.jpg",
+      "capture_sha256": "2a6e084462fd0c0cf6f3075e5df1cd9691547b5609f16405abdaf065d7ab646c",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 12,
+      "start_seconds": 19.82,
+      "end_seconds": 21.98,
+      "burned_text": "φανάρια και εργαλεία που\nκάποτε χρησιμοποιούνταν",
+      "script_word_range": [
+        52,
+        58
+      ],
+      "first_source_word_offset": 19.825,
+      "capture_frame_number": 627,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-012.jpg",
+      "capture_sha256": "21934575808c30a89373ad89850c078005b66755b31a1dc2e5e0da8814ddcf47",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 13,
+      "start_seconds": 21.98,
+      "end_seconds": 23.49,
+      "burned_text": "κάθε μέρα.",
+      "script_word_range": [
+        58,
+        60
+      ],
+      "first_source_word_offset": 21.975,
+      "capture_frame_number": 682,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-013.jpg",
+      "capture_sha256": "31bcf32f0933ea579b3dd837072170e5e937e6e1e0208adc3371429a9f6161d7",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 14,
+      "start_seconds": 23.49,
+      "end_seconds": 24.95,
+      "burned_text": "Οι άνθρωποι τα\nφρόντιζαν όσο τους",
+      "script_word_range": [
+        60,
+        66
+      ],
+      "first_source_word_offset": 23.4875,
+      "capture_frame_number": 727,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-014.jpg",
+      "capture_sha256": "da59b099171d942057944fb45e8bc0fb4b594c7630777d6d093a7ae85b5fd044",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 15,
+      "start_seconds": 24.95,
+      "end_seconds": 26.6,
+      "burned_text": "ήταν χρήσιμα.",
+      "script_word_range": [
+        66,
+        68
+      ],
+      "first_source_word_offset": 24.95,
+      "capture_frame_number": 773,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-015.jpg",
+      "capture_sha256": "2cba832709f8f16a78928ff0a75b59b104c70fff507e1418944b3dd28d6cde06",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 16,
+      "start_seconds": 26.6,
+      "end_seconds": 28.38,
+      "burned_text": "Ύστερα τα αντικατέστησαν\nκαι τα άφησαν",
+      "script_word_range": [
+        68,
+        74
+      ],
+      "first_source_word_offset": 26.6,
+      "capture_frame_number": 825,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-016.jpg",
+      "capture_sha256": "d3fdcbbc050d5383129dcf94314074582eb4e13062fc9793347b3a5c8627c28b",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 17,
+      "start_seconds": 28.38,
+      "end_seconds": 30.56,
+      "burned_text": "ξεχασμένα ή τα πέταξαν.",
+      "script_word_range": [
+        74,
+        78
+      ],
+      "first_source_word_offset": 28.375,
+      "capture_frame_number": 884,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-017.jpg",
+      "capture_sha256": "a1c63a0932371b4bae03b6f04b7be3115542306e257df0f89f466d453b9b3aab",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 18,
+      "start_seconds": 30.56,
+      "end_seconds": 32.25,
+      "burned_text": "Το Δημοτικό Μουσείο\nτου Μίτο παρουσιάζει",
+      "script_word_range": [
+        78,
+        84
+      ],
+      "first_source_word_offset": 30.5625,
+      "capture_frame_number": 942,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-018.jpg",
+      "capture_sha256": "516a25f1335097e7995658da988a4db7ef30638389ff9b8ff11982ab41367e80",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 19,
+      "start_seconds": 32.25,
+      "end_seconds": 33.79,
+      "burned_text": "μια λαογραφική\nεκδοχή όπου αυτά τα",
+      "script_word_range": [
+        84,
+        90
+      ],
+      "first_source_word_offset": 32.25,
+      "capture_frame_number": 991,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-019.jpg",
+      "capture_sha256": "75ea11e1317b4b8306b3f219c22fd599d0fe1ed500ae70aad8336596d352084c",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 20,
+      "start_seconds": 33.79,
+      "end_seconds": 35.8,
+      "burned_text": "παραμελημένα αντικείμενα\nαποκτούν ψυχή,",
+      "script_word_range": [
+        90,
+        94
+      ],
+      "first_source_word_offset": 33.7875,
+      "capture_frame_number": 1044,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-020.jpg",
+      "capture_sha256": "35de8d792aad1c2ca3c79110220b866a782fe7cfc6b3422429e7c5442d179278",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 21,
+      "start_seconds": 35.8,
+      "end_seconds": 37.6,
+      "burned_text": "συγκεντρώνονται και\nαποφασίζουν να τρομάξουν",
+      "script_word_range": [
+        94,
+        99
+      ],
+      "first_source_word_offset": 35.8,
+      "capture_frame_number": 1101,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-021.jpg",
+      "capture_sha256": "d57f82ca82280389b5014c988dcbb10a770a3f1bdd55b261ed88e220f543ec54",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 22,
+      "start_seconds": 37.6,
+      "end_seconds": 40.22,
+      "burned_text": "τους ανθρώπους που τα\nκακομεταχειρίστηκαν.",
+      "script_word_range": [
+        99,
+        104
+      ],
+      "first_source_word_offset": 37.6,
+      "capture_frame_number": 1167,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-022.jpg",
+      "capture_sha256": "2665d9787404d4bd84a63eaf400380b395d5b7cbc1b8adbf82965f5b3f06bd5e",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 23,
+      "start_seconds": 40.22,
+      "end_seconds": 42.24,
+      "burned_text": "Τη νύχτα ξεχύνονται\nμαζί στους δρόμους,",
+      "script_word_range": [
+        104,
+        110
+      ],
+      "first_source_word_offset": 40.225,
+      "capture_frame_number": 1237,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-023.jpg",
+      "capture_sha256": "75b448425b5cfce7437a4f069fb25d9b95a6824dcf9197a271e6177a3b7b0835",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 24,
+      "start_seconds": 42.24,
+      "end_seconds": 43.81,
+      "burned_text": "κρατώντας ακόμη\nκάτι από την αρχική",
+      "script_word_range": [
+        110,
+        116
+      ],
+      "first_source_word_offset": 42.2375,
+      "capture_frame_number": 1291,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-024.jpg",
+      "capture_sha256": "e96a550d321dd2bb19a008e57dfa19d8c158748dbfedca35d43b34f5abcba402",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 25,
+      "start_seconds": 43.81,
+      "end_seconds": 45.34,
+      "burned_text": "τους μορφή.",
+      "script_word_range": [
+        116,
+        118
+      ],
+      "first_source_word_offset": 43.8125,
+      "capture_frame_number": 1337,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-025.jpg",
+      "capture_sha256": "35dbba1f103384cb1926b41ed087c28963a39aed4c403f656d6ccc6993280136",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 26,
+      "start_seconds": 45.34,
+      "end_seconds": 46.3,
+      "burned_text": "Η όψη τους μπορεί να είναι",
+      "script_word_range": [
+        118,
+        124
+      ],
+      "first_source_word_offset": 45.3375,
+      "capture_frame_number": 1375,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-026.jpg",
+      "capture_sha256": "f33168ff8a8fdea2b1cf8f78f17642850a4ad99209ec3ddc3f34e8afbe56f03d",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 27,
+      "start_seconds": 46.3,
+      "end_seconds": 49.39,
+      "burned_text": "τρομακτική, παράξενη\nή και αστεία.",
+      "script_word_range": [
+        124,
+        129
+      ],
+      "first_source_word_offset": 46.3,
+      "capture_frame_number": 1435,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-027.jpg",
+      "capture_sha256": "436a24a699e49d65957169cd4f300b65d8fbbb0666d55b8fb4b244b2ff3f9293",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 28,
+      "start_seconds": 49.39,
+      "end_seconds": 53.05,
+      "burned_text": "Έτσι, καθημερινά πράγματα\nγίνονται χαρακτήρες.",
+      "script_word_range": [
+        129,
+        134
+      ],
+      "first_source_word_offset": 49.3875,
+      "capture_frame_number": 1537,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-028.jpg",
+      "capture_sha256": "cba1fe88f16179bd12d9391f518a402b7c9e435d6395fde208b6a4b3472188c8",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 29,
+      "start_seconds": 53.05,
+      "end_seconds": 55.34,
+      "burned_text": "Η μορφή του εργαλείου\nπαραμένει αναγνωρίσιμη,",
+      "script_word_range": [
+        134,
+        140
+      ],
+      "first_source_word_offset": 53.05,
+      "capture_frame_number": 1626,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-029.jpg",
+      "capture_sha256": "b57855bf54f3d049af47e2b271f95f32deeb45fa7eaa6ee80b13f8a60af784cd",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 30,
+      "start_seconds": 55.34,
+      "end_seconds": 56.41,
+      "burned_text": "αλλά η φαντασία το κάνει να",
+      "script_word_range": [
+        140,
+        146
+      ],
+      "first_source_word_offset": 55.3375,
+      "capture_frame_number": 1676,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-030.jpg",
+      "capture_sha256": "be8bbe387a0693dbd768cec042b5ec21ce71ed2a7e944cdcf04b320ae016b40c",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 31,
+      "start_seconds": 56.41,
+      "end_seconds": 57.86,
+      "burned_text": "κινείται, να θυμώνει και να",
+      "script_word_range": [
+        146,
+        151
+      ],
+      "first_source_word_offset": 56.4125,
+      "capture_frame_number": 1714,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-031.jpg",
+      "capture_sha256": "8229cc61bad0cc2b6dd95a797886643f56927d2f54c122ba2134e24d6ebd44e1",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 32,
+      "start_seconds": 57.86,
+      "end_seconds": 59.79,
+      "burned_text": "διεκδικεί προσοχή.",
+      "script_word_range": [
+        151,
+        153
+      ],
+      "first_source_word_offset": 57.8625,
+      "capture_frame_number": 1765,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-032.jpg",
+      "capture_sha256": "674cf0e99fab549a848cdb6a698fe602a2da75bef912b0938e1ae9a85a08449f",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 33,
+      "start_seconds": 59.79,
+      "end_seconds": 61.49,
+      "burned_text": "Οι μουσειακές\nπαρουσιάσεις και οι παλιές",
+      "script_word_range": [
+        153,
+        159
+      ],
+      "first_source_word_offset": 59.7875,
+      "capture_frame_number": 1819,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-033.jpg",
+      "capture_sha256": "82e8a684c54cfe68d9ab1778e59880e635fe60b4fbaf4d3eceabd61b0068d6fc",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 34,
+      "start_seconds": 61.49,
+      "end_seconds": 63.36,
+      "burned_text": "παραστάσεις τεκμηριώνουν\nαυτή την παράδοση",
+      "script_word_range": [
+        159,
+        164
+      ],
+      "first_source_word_offset": 61.4875,
+      "capture_frame_number": 1873,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-034.jpg",
+      "capture_sha256": "1ab30f3e0c568aea1fc34a10d35a5b6b64fbfa818738af30ac1b5398b5d8a284",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 35,
+      "start_seconds": 63.36,
+      "end_seconds": 65.64,
+      "burned_text": "ως πολιτισμική δημιουργία.",
+      "script_word_range": [
+        164,
+        167
+      ],
+      "first_source_word_offset": 63.3625,
+      "capture_frame_number": 1935,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-035.jpg",
+      "capture_sha256": "e87d465d1cba924a742c1258fbe319c12260af2304dc10128a3994efb43bb32d",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 36,
+      "start_seconds": 65.64,
+      "end_seconds": 67.56,
+      "burned_text": "Δεν αποτελούν απόδειξη\nότι ένα αντικείμενο",
+      "script_word_range": [
+        167,
+        173
+      ],
+      "first_source_word_offset": 65.6375,
+      "capture_frame_number": 1998,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-036.jpg",
+      "capture_sha256": "6d18d003e03394423aab0926032191e71552eb09b4c26f297c826ae9734385f3",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 37,
+      "start_seconds": 67.56,
+      "end_seconds": 69.96000000000001,
+      "burned_text": "μπορεί πραγματικά\nνα ζωντανέψει.",
+      "script_word_range": [
+        173,
+        177
+      ],
+      "first_source_word_offset": 67.5625,
+      "capture_frame_number": 2063,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-037.jpg",
+      "capture_sha256": "2dc502f54382e6d7b6520fd6cee86a83feea82279cdf822c68ed9fdfad9d21b0",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 38,
+      "start_seconds": 69.96000000000001,
+      "end_seconds": 72.19,
+      "burned_text": "Μια σημερινή, προσωπική\nανάγνωση είναι",
+      "script_word_range": [
+        177,
+        182
+      ],
+      "first_source_word_offset": 69.9625,
+      "capture_frame_number": 2132,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-038.jpg",
+      "capture_sha256": "341361dc9a5d33a865d9de3911a01eeb136e6fa7e11f0485c2195528e614abaa",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 39,
+      "start_seconds": 72.19,
+      "end_seconds": 73.82,
+      "burned_text": "να σκεφτούμε πόσες\nιστορίες κουβαλούν τα",
+      "script_word_range": [
+        182,
+        188
+      ],
+      "first_source_word_offset": 72.1875,
+      "capture_frame_number": 2190,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-039.jpg",
+      "capture_sha256": "48da21048425b13c49fffa318a5aca456e6b656f1a58a79c84972ca3e630825c",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 40,
+      "start_seconds": 73.82,
+      "end_seconds": 75.69,
+      "burned_text": "πράγματα που\nθεωρούμε άχρηστα: μια",
+      "script_word_range": [
+        188,
+        193
+      ],
+      "first_source_word_offset": 73.825,
+      "capture_frame_number": 2243,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-040.jpg",
+      "capture_sha256": "791be56b0419915e69e580052facc6fa9249d8ede89e2cfe145be780e9ac87ac",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 41,
+      "start_seconds": 75.69,
+      "end_seconds": 78.19,
+      "burned_text": "επισκευασμένη κούπα,\nένα παλιό εργαλείο,",
+      "script_word_range": [
+        193,
+        198
+      ],
+      "first_source_word_offset": 75.6875,
+      "capture_frame_number": 2308,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-041.jpg",
+      "capture_sha256": "4b736509c283e8469ae34e288f7f3eb8c49698b70d0715b55a33ef66b04731a2",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 42,
+      "start_seconds": 78.19,
+      "end_seconds": 80.53,
+      "burned_text": "ένα φθαρμένο μουσικό όργανο.",
+      "script_word_range": [
+        198,
+        202
+      ],
+      "first_source_word_offset": 78.1875,
+      "capture_frame_number": 2381,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-042.jpg",
+      "capture_sha256": "38e8d61c62694769f29a06bbba2ab49dd78a678573cdfcd793f352d2ab95a3ce",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 43,
+      "start_seconds": 80.53,
+      "end_seconds": 81.86,
+      "burned_text": "Αν ένα αντικείμενο από το σπίτι",
+      "script_word_range": [
+        202,
+        208
+      ],
+      "first_source_word_offset": 80.525,
+      "capture_frame_number": 2436,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-043.jpg",
+      "capture_sha256": "f9c8e5f57459afdc58970123c71cfb3ac0cf953300851f40d9dbc02b700f3e14",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 44,
+      "start_seconds": 81.86,
+      "end_seconds": 83.22,
+      "burned_text": "σου μπορούσε να μιλήσει, ποιο",
+      "script_word_range": [
+        208,
+        213
+      ],
+      "first_source_word_offset": 81.8625,
+      "capture_frame_number": 2476,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-044.jpg",
+      "capture_sha256": "af808372cfab03d5a3e59e68d5513abd9078d80900086a3b820566e44266e8ed",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 45,
+      "start_seconds": 83.22,
+      "end_seconds": 85.44,
+      "burned_text": "θα είχε την πιο δυνατή ιστορία;",
+      "script_word_range": [
+        213,
+        219
+      ],
+      "first_source_word_offset": 83.225,
+      "capture_frame_number": 2530,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-045.jpg",
+      "capture_sha256": "6d4851c9d583a25f271ed30c646811d3fadadd0771faeedbcb2d292ebde664f9",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 46,
+      "start_seconds": 85.44,
+      "end_seconds": 87.35,
+      "burned_text": "Αν σας άρεσε, ακολουθήστε για",
+      "script_word_range": [
+        219,
+        224
+      ],
+      "first_source_word_offset": 85.4375,
+      "capture_frame_number": 2592,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-046.jpg",
+      "capture_sha256": "b36878311f3f45ca3a266eed78b98842f4629daa7e8671596db9b665f604c4e3",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 47,
+      "start_seconds": 87.35,
+      "end_seconds": 87.93,
+      "burned_text": "περισσότερα.",
+      "script_word_range": [
+        224,
+        225
+      ],
+      "first_source_word_offset": 87.35,
+      "capture_frame_number": 2629,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption_frames/cue-047.jpg",
+      "capture_sha256": "260b49dc44706ce1be75ca45fe6ef2aa57055a7a828bb11c6d34c0499d503949",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    }
+  ],
+  "cue_sheet_evidence": [
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption-review-01.jpg",
+      "sha256": "0726df8f1f8d8c7b43edd3fe6d79ab045adf079c7af55e60a0b54968df4e08f9",
+      "directly_viewed_and_all_cues_read": true
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption-review-02.jpg",
+      "sha256": "80a34fe87b0e23dfa053f03dff65fbc521853f61c973c04fb74a637bd90b4ede",
+      "directly_viewed_and_all_cues_read": true
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption-review-03.jpg",
+      "sha256": "3fd219dfd8a97b5f3e1b2a3529bd35124b3e43035f47bcf719a50ad0db5c49f7",
+      "directly_viewed_and_all_cues_read": true
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption-review-04.jpg",
+      "sha256": "4efb08701f66307600850ea71b28185a1a2facfb5b2c90d75923ecd13f5acdd9",
+      "directly_viewed_and_all_cues_read": true
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption-review-05.jpg",
+      "sha256": "ef72395d506331518d326cb46b5f0cec12b9e97052cbd12696957ecb28b8ab8b",
+      "directly_viewed_and_all_cues_read": true
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption-review-06.jpg",
+      "sha256": "f7061004eda87bc589c938029f93e1c17fd3547c547aebff91819b122eddb322",
+      "directly_viewed_and_all_cues_read": true
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption-review-07.jpg",
+      "sha256": "c6c6f8d9479a95def9f3e0ae7b35439798fd8b8961e6cd666f11f8187602133b",
+      "directly_viewed_and_all_cues_read": true
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/caption-review-08.jpg",
+      "sha256": "7f63a30b2cfe77c327080a4ed4817078109d57dfaf02e5f39e2290e0683aeddf",
+      "directly_viewed_and_all_cues_read": true
+    }
+  ],
+  "scene_count": 6,
+  "distinct_sources": 6,
+  "minimum_scene_seconds": 7.0,
+  "every_scene_directly_viewed": true,
+  "scenes": [
+    {
+      "scene": 1,
+      "source_index": 1,
+      "anchor": "",
+      "anchor_seconds": 0.0,
+      "start": 0.0,
+      "end": 18.133333333333333,
+      "duration": 18.133333333333333,
+      "frames": 544,
+      "anchor_adjustment_seconds": 0.0,
+      "source_sha256": "3e4823cafc919a2f9c83c7bfa5b6cd076eb35e211aa986b6b462cf35ed5d3b6b",
+      "capture_timestamp": 9.066666666666666,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/final-scene-01.jpg",
+      "capture_sha256": "6375f9601e211c37cb8e537119ab71110b6dfcc6cd182994c6180152c1ff0a4f",
+      "directly_viewed": true,
+      "status": "APPROVED",
+      "note": "Old Japanese paper umbrella remains visibly inanimate; recognizable photographic prop, clear composition."
+    },
+    {
+      "scene": 2,
+      "source_index": 2,
+      "anchor": "Σκέψου μια αποθήκη",
+      "anchor_seconds": 18.125,
+      "start": 18.133333333333333,
+      "end": 25.133333333333333,
+      "duration": 7.0,
+      "frames": 210,
+      "anchor_adjustment_seconds": 0.0,
+      "source_sha256": "88e6f1b8d8b9506279f5b5863f0db7b1ff0f44b6aa5252d0a04403e8359327b6",
+      "capture_timestamp": 21.633333333333333,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/final-scene-02.jpg",
+      "capture_sha256": "8a79a62b4af0bd68c77a1e5360afa6c93be236ffc682e4e055a46e17c7c55031",
+      "directly_viewed": true,
+      "status": "APPROVED",
+      "note": "Shelves of worn bowls, kettle, lantern and broom match everyday tools and storehouse passage."
+    },
+    {
+      "scene": 3,
+      "source_index": 3,
+      "anchor": "Οι άνθρωποι τα φρόντιζαν",
+      "anchor_seconds": 23.4875,
+      "start": 25.133333333333333,
+      "end": 32.13333333333333,
+      "duration": 7.0,
+      "frames": 210,
+      "anchor_adjustment_seconds": 1.637,
+      "source_sha256": "7d4f6157afefb63cd2edc55bc9011f647a2b5f34a3f92ed4fc4acf77c2dc2ff1",
+      "capture_timestamp": 28.633333333333333,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/final-scene-03.jpg",
+      "capture_sha256": "863be4dea20314b17d2b92be3618a4f82311f63e28c719482b0ff982c5039227",
+      "directly_viewed": true,
+      "status": "APPROVED",
+      "note": "Discarded cracked bowl, lantern, kettle and broom match neglect/discarding passage."
+    },
+    {
+      "scene": 4,
+      "source_index": 4,
+      "anchor": "Το Δημοτικό Μουσείο",
+      "anchor_seconds": 30.5625,
+      "start": 32.13333333333333,
+      "end": 45.333333333333336,
+      "duration": 13.2,
+      "frames": 396,
+      "anchor_adjustment_seconds": 1.562,
+      "source_sha256": "c1ac06178ceac8188bd342675720833297fe0bd9035e91355873dd2194271d1b",
+      "capture_timestamp": 38.733333333333334,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/final-scene-04.jpg",
+      "capture_sha256": "3193d17dacc5a555a520861ef13418952e39e063cb8b00225546095c21da68ce",
+      "directly_viewed": true,
+      "status": "APPROVED",
+      "note": "Clearly fantastical procession of old household objects retains identifiable tools, no gore or real-event claim."
+    },
+    {
+      "scene": 5,
+      "source_index": 5,
+      "anchor": "Η όψη τους",
+      "anchor_seconds": 45.3375,
+      "start": 45.333333333333336,
+      "end": 69.96666666666667,
+      "duration": 24.633333333333333,
+      "frames": 739,
+      "anchor_adjustment_seconds": 0.0,
+      "source_sha256": "65e049a7d5bd6ab4b83e00a28869c4f425e5c35f8d0d01ec35ddbfcb3d39d8b5",
+      "capture_timestamp": 57.650000000000006,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/final-scene-05.jpg",
+      "capture_sha256": "89309cf36384978cc8f054940199684a944cae3a1695f1fcf18c93c6059202c5",
+      "directly_viewed": true,
+      "status": "APPROVED",
+      "note": "Photorealistic expressive paper-lantern prop matches fanciful appearance passage; no text obstructing face."
+    },
+    {
+      "scene": 6,
+      "source_index": 6,
+      "anchor": "Μια σημερινή",
+      "anchor_seconds": 69.9625,
+      "start": 69.96666666666667,
+      "end": 87.96666666666667,
+      "duration": 18.0,
+      "frames": 540,
+      "anchor_adjustment_seconds": 0.0,
+      "source_sha256": "4e2009e98467df9c7ff80f7285eda15a6e2fb6bbdbec829fc181de11635fb92f",
+      "capture_timestamp": 78.96666666666667,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/final-scene-06.jpg",
+      "capture_sha256": "bad943e5df3712eb73c2480c8d8208b15676338d2d55194d3cb52ebacb12486f",
+      "directly_viewed": true,
+      "status": "APPROVED",
+      "note": "Hands repairing a cup with old tool and worn string instrument matches the explicitly personal modern interpretation."
+    }
+  ],
+  "opening_and_ending_review": "Hook, scene composition and closing CTA inspected at exact final captures; final word also read on last cue capture.",
+  "visual_findings": "No cut-off text, missing Greek accents/glyphs, unreadable subtitle contrast, obstructed essential subject or misleading source substitution found in the reviewed final.",
+  "fact_check": [
+    {
+      "url": "https://museum-mito.jp/exhibition/1819.html",
+      "retrieval_ref": "turn29view0",
+      "result": "PASS",
+      "supports": "Mito City Museum's published folklore presentation explicitly describes discarded old tools gaining souls, grouping together, frightening mistreating humans at night, and retaining humorous tool forms. The 2018 exhibition is not presented as a current booking."
+    },
+    {
+      "url": "https://www.vam.ac.uk/blog/young/lost-and-found-yokai",
+      "retrieval_ref": "turn30search0",
+      "result": "PASS",
+      "supports": "Official V&A indexed article identifies tsukumogami as everyday objects receiving spirit at 100 years. Narration appropriately says one known version; no supernatural fact claim. Direct page fetch returned 403, official indexed full article was retrieved."
+    }
+  ],
+  "caption_sha256": "c06976b4d2a9ad1aa1e9706753aae496d4c9c91598fd4927b31d2e0ed93471ff",
+  "caption_review": "Complete Greek caption, five hashtags and exact CTA verified. Source credits and synthetic voice disclosure retained; Tsukumogami additionally declares AI reconstruction and folklore.",
+  "full_audio_binding": {
+    "source_audio_sha256": "666ca318489620b723da5e7e97b1e1daedb952ec3c36863e199409b2b118b9ee",
+    "video_sha256": "7e36b1f2ab0a247b49d9e37cfec5a2b259aefc67c121057e380e5662dbf50b1e",
+    "lag_samples": 0,
+    "lag_seconds": 0.0,
+    "correlation": 0.9994719828874357,
+    "minimum_voiced_two_second_correlation": 0.9990988998478878,
+    "signal_to_error_db": 29.759779281123613,
+    "gain": 0.9933711648527135,
+    "decoded_peak": 0.718048095703125,
+    "clipped_sample_fraction": 0.0,
+    "silences_over_1_2_seconds": [],
+    "decoded_seconds": 87.936,
+    "source_seconds": 87.934375,
+    "direct_listening_claimed": false,
+    "independent_asr_review_required": true,
+    "waveform_binding_passed": true,
+    "signal_quality_passed": true
+  },
+  "independent_asr": {
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/audio/speech-recognition.json",
+    "sha256": "927081dc3245de844010d9bf1527cac8b86a11a9ebdd86a8ba8da8147c2f2e55",
+    "provider": "Azure Speech independent speech recognition",
+    "script_hints": false,
+    "completed": true,
+    "errors": [],
+    "no_match_regions": [],
+    "normalized_exact_lexical_match": false,
+    "differences_count": 8,
+    "differences_disposition": [
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          0,
+          1
+        ],
+        "recognized_word_range": [
+          0,
+          1
+        ],
+        "expected": "κι",
+        "recognized": "και",
+        "disposition": "ACCEPTED_CONTRACTION_VARIANT",
+        "assessment": "Κι / και are alternate Greek conjunction forms with the same intended meaning; does not alter the hook.",
+        "established_defective_narration": false
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          6,
+          7
+        ],
+        "recognized_word_range": [
+          6,
+          8
+        ],
+        "expected": "πεταξεσ",
+        "recognized": "πεταξε ασ",
+        "disposition": "RESIDUAL_RECOGNITION_AMBIGUITY",
+        "assessment": "Expected πέταξες is segmented as πέταξε ας (or πέταξε ως) in NBest. No exact expected alternative is present. Intended source word and subtitle are correct; this is not proof of a defective utterance, and no audition is claimed.",
+        "established_defective_narration": false
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          35,
+          36
+        ],
+        "recognized_word_range": [
+          36,
+          37
+        ],
+        "expected": "εκατο",
+        "recognized": "100",
+        "disposition": "ACCEPTED_NUMBER_FORMATTING",
+        "assessment": "Display 100 corresponds to lexical εκατό in the best hypothesis; spoken quantity matches.",
+        "established_defective_narration": false
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          64,
+          65
+        ],
+        "recognized_word_range": [
+          65,
+          66
+        ],
+        "expected": "οσο",
+        "recognized": "οσα",
+        "disposition": "ACCEPTED_NBEST_SUPPORT",
+        "assessment": "Best hypothesis όσα differs from όσο, but NBest rank 2 contains the exact expected όσο phrase.",
+        "established_defective_narration": false
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          82,
+          83
+        ],
+        "recognized_word_range": [
+          83,
+          85
+        ],
+        "expected": "μιτο",
+        "recognized": "μ το",
+        "disposition": "ACCEPTED_PROPER_NAME_SEGMENTATION",
+        "assessment": "Μίτο is rendered μ το / μη το. NBest μη το preserves the /mi to/ sequence of Mito; subtitle uses the correct proper name. Segmentation is not an established name-pronunciation defect.",
+        "established_defective_narration": false
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          104,
+          105
+        ],
+        "recognized_word_range": [
+          106,
+          107
+        ],
+        "expected": "τη",
+        "recognized": "τι",
+        "disposition": "ACCEPTED_HOMOPHONE",
+        "assessment": "τη and τι are homophones; NBest rank 2 has the expected τη νύχτα.",
+        "established_defective_narration": false
+      },
+      {
+        "kind": "delete",
+        "expected_word_range": [
+          126,
+          127
+        ],
+        "recognized_word_range": [
+          128,
+          128
+        ],
+        "expected": "η",
+        "recognized": "",
+        "disposition": "RESIDUAL_RECOGNITION_AMBIGUITY",
+        "assessment": "The short particle ή in παράξενη ή και αστεία is absent from NBest. Exact source boundary and subtitle retain it. Recognition does not independently prove its audibility; no established factual or visual defect.",
+        "established_defective_narration": false
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          214,
+          215
+        ],
+        "recognized_word_range": [
+          215,
+          216
+        ],
+        "expected": "ειχε",
+        "recognized": "εχει",
+        "disposition": "ACCEPTED_NBEST_SUPPORT",
+        "assessment": "Best έχει differs from είχε, but NBest rank 2 contains the exact expected θα είχε phrase.",
+        "established_defective_narration": false
+      }
+    ],
+    "segments_and_nbest": [
+      {
+        "segment": 0,
+        "offset_seconds": 0.07,
+        "duration_seconds": 3.76,
+        "text": "Και αν η παλιά ομπρέλα που πέταξε ας μπορούσε να θυμάται πως της φέρθηκες.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.5738364,
+            "text": "και αν η παλιά ομπρέλα που πέταξε ας μπορούσε να θυμάται πως της φέρθηκες"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.5695355,
+            "text": "και αν η παλιά ομπρέλα που πέταξε ως μπορούσε να θυμάται πως της φέρθηκες"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.54172236,
+            "text": "και αν η παλιά ομπρέλα που πέταξε ας μπορούσα να θυμάται πως της φέρθηκες"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.5560051,
+            "text": "και αν η παλιά ομπρέλα που πέταξε ας μπορούσε να θυμάται πως τις φέρθηκες"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.5517042,
+            "text": "και αν η παλιά ομπρέλα που πέταξε ως μπορούσε να θυμάται πως τις φέρθηκες"
+          }
+        ]
+      },
+      {
+        "segment": 1,
+        "offset_seconds": 4.03,
+        "duration_seconds": 5.73,
+        "text": "Στην ιαπωνική λαογραφία υπάρχουν τα τσουκουμογκάμι, παλιά αντικείμενα και εργαλεία που αποκτούν πνεύμα.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.7039854,
+            "text": "στην ιαπωνική λαογραφία υπάρχουν τα τσουκουμογκάμι παλιά αντικείμενα και εργαλεία που αποκτούν πνεύμα"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.69974405,
+            "text": "στην ιαπική λαογραφία υπάρχουν τα τσουκουμογκάμι παλιά αντικείμενα και εργαλεία που αποκτούν πνεύμα"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.701163,
+            "text": "στην ιαπωνική λαογραφία υπάρχουν τα τσουμογκάμι παλιά αντικείμενα και εργαλεία που αποκτούν πνεύμα"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.721663,
+            "text": "στην ιαπωνική λαογραφία υπάρχουν τα τσουκουμογκάη παλιά αντικείμενα και εργαλεία που αποκτούν πνεύμα"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.69692165,
+            "text": "στην ιαπική λαογραφία υπάρχουν τα τσουμογκάμι παλιά αντικείμενα και εργαλεία που αποκτούν πνεύμα"
+          }
+        ]
+      },
+      {
+        "segment": 2,
+        "offset_seconds": 9.87,
+        "duration_seconds": 4.17,
+        "text": "Μία γνωστή εκδοχή συνδέει τη μεταμόρφωση με τη συμπλήρωση 100 χρόνων.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.7717914,
+            "text": "μία γνωστή εκδοχή συνδέει τη μεταμόρφωση με τη συμπλήρωση εκατό χρόνων"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.745344,
+            "text": "μια γνωστή εκδοχή συνδέει τη μεταμόρφωση με τη συμπλήρωση εκατό χρόνων"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.71905404,
+            "text": "μία γνωστή εκδοχή συνδέει τη μεταμόρφωση με την συμπλήρωση εκατό χρόνων"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.66302,
+            "text": "μία γνωστή εκδοχήει τη μεταμόρφωση με τη συμπλήρωση εκατό χρόνων"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.6926065,
+            "text": "μια γνωστή εκδοχή συνδέει τη μεταμόρφωση με την συμπλήρωση εκατό χρόνων"
+          }
+        ]
+      },
+      {
+        "segment": 3,
+        "offset_seconds": 14.19,
+        "duration_seconds": 3.81,
+        "text": "Μπαίνουμε στον κόσμο του θρύλου των εικόνων και της αφήγησης.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.8080253,
+            "text": "μπαίνουμε στον κόσμο του θρύλου των εικόνων και της αφήγησης"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.70316607,
+            "text": "μπαίνουμε στο κόσμο του θρύλου των εικόνων και της αφήγησης"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.72989017,
+            "text": "μπαίνουμε στον κόσμο του θρύλλου των εικόνων και της αφήγησης"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.7457745,
+            "text": "μπαίνουμε στον κόσμο του θρύλου των εικόνων και της αφήγηση"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.7171233,
+            "text": "μπαίνουμε στον κόσμο του θρύνου των εικόνων και της αφήγησης"
+          }
+        ]
+      },
+      {
+        "segment": 4,
+        "offset_seconds": 18.19,
+        "duration_seconds": 5.13,
+        "text": "Σκέψου μία αποθήκη με σκεύη, φανάρια και εργαλεία που κάποτε χρησιμοποιούνταν κάθε μέρα.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.77187234,
+            "text": "σκέψου μία αποθήκη με σκεύη φανάρια και εργαλεία που κάποτε χρησιμοποιούνταν κάθε μέρα"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.7595021,
+            "text": "σκέψου μια αποθήκη με σκεύη φανάρια και εργαλεία που κάποτε χρησιμοποιούνταν κάθε μέρα"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.75362223,
+            "text": "σκέψου μία αποθήκη με σκεή φανάρια και εργαλεία που κάποτε χρησιμοποιούνταν κάθε μέρα"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.7616523,
+            "text": "σκέψου μία αποθήκη με σκεία φανάρια και εργαλεία που κάποτε χρησιμοποιούνταν κάθε μέρα"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.7603934,
+            "text": "σκέψου μία αποθήκη με σκεύη φανάρια και εργαλεία που κάποτε χρησιμοποιούνταν κάθε"
+          }
+        ]
+      },
+      {
+        "segment": 5,
+        "offset_seconds": 23.51,
+        "duration_seconds": 2.89,
+        "text": "Οι άνθρωποι τα φρόντιζαν όσα τους ήταν χρήσιμα.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.7521928,
+            "text": "οι άνθρωποι τα φρόντιζαν όσα τους ήταν χρήσιμα"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.740135,
+            "text": "οι άνθρωποι τα φρόντιζαν όσο τους ήταν χρήσιμα"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.6426169,
+            "text": "o ι άνθρωποι τα φρόντιζαν όσα τους ήταν χρήσιμα"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.63055915,
+            "text": "o ι άνθρωποι τα φρόντιζαν όσο τους ήταν χρήσιμα"
+          }
+        ]
+      },
+      {
+        "segment": 6,
+        "offset_seconds": 26.59,
+        "duration_seconds": 3.81,
+        "text": "Ύστερα τα αντικατέστησαν και τα άφησαν ξεχασμένα ή τα πέταξαν.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.7243543,
+            "text": "ύστερα τα αντικατέστησαν και τα άφησαν ξεχασμένα ή τα πέταξαν"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.6625221,
+            "text": "ύστερα τα αντικατέστησαν και τα άφησαν ξεχασμένα ή τα πέταξ"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.66889936,
+            "text": "ύστερα το αντικατέστησαν και τα άφησαν ξεχασμένα ή τα πέταξαν"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.6596317,
+            "text": "ύστερα τα αντικακατέστησαν και τα άφησαν ξεχασμένα ή τα πέταξαν"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.66312176,
+            "text": "ύστερα τα αντικατέστησαν και τα αφήσαν ξεχασμένα ή τα πέταξαν"
+          }
+        ]
+      },
+      {
+        "segment": 7,
+        "offset_seconds": 30.63,
+        "duration_seconds": 8.88,
+        "text": "Το δημοτικό μουσείο του Μ. Το παρουσιάζει μια λαογραφική εκδοχή, όπου αυτά τα παραμελημένα αντικείμενα αποκτούν ψυχή, συγκεντρώνονται και αποφασίζουν να τρομάξουν τους ανθρώπους που τα κακομεταχειρίστηκαν.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.7976871,
+            "text": "το δημοτικό μουσείο του μ το παρουσιάζει μια λαογραφική εκδοχή όπου αυτά τα παραμελημένα αντικείμενα αποκτούν ψυχή συγκεντρώνονται και αποφασίζουν να τρομάξουν τους ανθρώπους που τα κακομεταχειρίστηκαν"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.79820174,
+            "text": "το δημοτικό μουσείο του μ το παρουσιάζει μία λαογραφική εκδοχή όπου αυτά τα παραμελημένα αντικείμενα αποκτούν ψυχή συγκεντρώνονται και αποφασίζουν να τρομάξουν τους ανθρώπους που τα κακομεταχειρίστηκαν"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.8049604,
+            "text": "το δημοτικό μουσείο του μη το παρουσιάζει μια λαογραφική εκδοχή όπου αυτά τα παραμελημένα αντικείμενα αποκτούν ψυχή συγκεντρώνονται και αποφασίζουν να τρομάξουν τους ανθρώπους που τα κακομεταχειρίστηκαν"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.80547506,
+            "text": "το δημοτικό μουσείο του μη το παρουσιάζει μία λαογραφική εκδοχή όπου αυτά τα παραμελημένα αντικείμενα αποκτούν ψυχή συγκεντρώνονται και αποφασίζουν να τρομάξουν τους ανθρώπους που τα κακομεταχειρίστηκαν"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.8334469,
+            "text": "το δημοτικό μουσείο του παρουσιάζει μια λαογραφική εκδοχή όπου αυτά τα παραμελημένα αντικείμενα αποκτούν ψυχή συγκεντρώνονται και αποφασίζουν να τρομάξουν τους ανθρώπους που τα κακομεταχειρίστηκαν"
+          }
+        ]
+      },
+      {
+        "segment": 8,
+        "offset_seconds": 39.65,
+        "duration_seconds": 5.55,
+        "text": "Τι νύχτα ξεχύνονται μαζί στους δρόμους, κρατώντας ακόμη κάτι από την αρχική τους μορφή.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.7868196,
+            "text": "τι νύχτα ξεχύνονται μαζί στους δρόμους κρατώντας ακόμη κάτι από την αρχική τους μορφή"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.773684,
+            "text": "τη νύχτα ξεχύνονται μαζί στους δρόμους κρατώντας ακόμη κάτι από την αρχική τους μορφή"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.74728763,
+            "text": "τι νύχτα ξεχύίνονται μαζί στους δρόμους κρατώντας ακόμη κάτι από την αρχική τους μορφή"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.7328741,
+            "text": "τη νύχτα ξεχύίνονται μαζί στους δρόμους κρατώντας ακόμη κάτι από την αρχική τους μορφή"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.71724874,
+            "text": "τι νύχτα ξεχύνονται μαζί στους δρόμους κρατώντας ακόμα κάτι από την αρχική τους μορφή"
+          }
+        ]
+      },
+      {
+        "segment": 9,
+        "offset_seconds": 45.39,
+        "duration_seconds": 3.85,
+        "text": "Η όψη τους μπορεί να είναι τρομακτική, παράξενη και αστεία.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.7209521,
+            "text": "η όψη τους μπορεί να είναι τρομακτική παράξενη και αστεία"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.70948344,
+            "text": "η όξή τους μπορεί να είναι τρομακτική παράξενη και αστεία"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.70623165,
+            "text": "η όψή τους μπορεί να είναι τρομακτική παράξενη και αστεία"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.63870645,
+            "text": "η όψη τους μπορεί να είναι τρομαχτική παράξενη και αστεία"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.6272378,
+            "text": "η όξή τους μπορεί να είναι τρομαχτική παράξενη και αστεία"
+          }
+        ]
+      },
+      {
+        "segment": 10,
+        "offset_seconds": 49.39,
+        "duration_seconds": 3.49,
+        "text": "Έτσι καθημερινά πράγματα γίνονται χαρακτήρες.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.8138052,
+            "text": "έτσι καθημερινά πράγματα γίνονται χαρακτήρες"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.6898921,
+            "text": "έτσι καθημερινά πράγματα γίνονται χαρακτήρι"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.68483055,
+            "text": "ετσι καθημερινά πράγματα γίνονται χαρακτήρες"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.590244,
+            "text": "έτσι καθημερινό πράγματα γίνονται χαρακτήρες"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.63109434,
+            "text": "έτσι καθημερινά πράματα γίνονται χαρακτήρες"
+          }
+        ]
+      },
+      {
+        "segment": 11,
+        "offset_seconds": 53.11,
+        "duration_seconds": 6.64,
+        "text": "Η μορφή του εργαλείου παραμένει αναγνωρίσιμη, αλλά η φαντασία το κάνει να κινείται, να θυμώνει και να διεκδικεί προσοχή.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.8083181,
+            "text": "η μορφή του εργαλείου παραμένει αναγνωρίσιμη αλλά η φαντασία το κάνει να κινείται να θυμώνει και να διεκδικεί προσοχή"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.7898459,
+            "text": "h μορφή του εργαλείου παραμένει αναγνωρίσιμη αλλά η φαντασία το κάνει να κινείται να θυμώνει και να διεκδικεί προσοχή"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.7718507,
+            "text": "η μορφή του εργαλείου παραμένει η αναγνωρίσιμη αλλά η φαντασία το κάνει να κινείται να θυμώνει και να διεκδικεί προσοχή"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.77351815,
+            "text": "η μορφή του εργαλείο παραμένει αναγνωρίσιμη αλλά η φαντασία το κάνει να κινείται να θυμώνει και να διεκδικεί προσοχή"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.754302,
+            "text": "h μορφή του εργαλείου παραμένει η αναγνωρίσιμη αλλά η φαντασία το κάνει να κινείται να θυμώνει και να διεκδικεί προσοχή"
+          }
+        ]
+      },
+      {
+        "segment": 12,
+        "offset_seconds": 59.83,
+        "duration_seconds": 5.72,
+        "text": "Οι μουσειακές παρουσιάσεις και οι παλιές παραστάσεις τεκμηριώνουν αυτή την παράδοση ως πολιτισμική δημιουργία.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.78540623,
+            "text": "οι μουσειακές παρουσιάσεις και οι παλιές παραστάσεις τεκμηριώνουν αυτή την παράδοση ως πολιτισμική δημιουργία"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.78010935,
+            "text": "οι μουσειακές παρουσιάσεις και οι παλιές παραστάσεις τεκμηριώνουν αυτή την παράδοση ως πολιτισμική δημιουργία"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.7449906,
+            "text": "οι μουσεικές παρουσιάσεις και οι παλιές παραστάσεις τεκμηριώνουν αυτή την παράδοση ως πολιτισμική δημιουργία"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.7261921,
+            "text": "οι μουσειακές παρουσιάσεις και οι παλιές παραστάσεις τεκμηριώνουν αυτή τη παράδοση ως πολιτισμική δημιουργία"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.7396936,
+            "text": "οι μουσεικές παρουσιάσεις και οι παλιές παραστάσεις τεκμηριώνουν αυτή την παράδοση ως πολιτισμική δημιουργία"
+          }
+        ]
+      },
+      {
+        "segment": 13,
+        "offset_seconds": 65.67,
+        "duration_seconds": 4.17,
+        "text": "Δεν αποτελούν απόδειξη ότι ένα αντικείμενο μπορεί πραγματικά να ζωντανέψει.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.80666083,
+            "text": "δεν αποτελούν απόδειξη ότι ένα αντικείμενο μπορεί πραγματικά να ζωντανέψει"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.72180116,
+            "text": "δεν αποτελούν απόδειξη ότι είναι ένα αντικείμενο μπορεί πραγματικά να ζωντανέψει"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.72495306,
+            "text": "δεν αποτελούν απόδειξη ότι είναι αντικείμενο μπορεί πραγματικά να ζωντανέψει"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.78306055,
+            "text": "αποτελούν απόδειξη ότι ένα αντικείμενο μπορεί πραγματικά να ζωντανέψει"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.6920751,
+            "text": "αποτελούν απόδειξη ότι είναι ένα αντικείμενο μπορεί πραγματικά να ζωντανέψει"
+          }
+        ]
+      },
+      {
+        "segment": 14,
+        "offset_seconds": 69.99,
+        "duration_seconds": 10.37,
+        "text": "Μία σημερινή προσωπική ανάγνωση είναι να σκεφτούμε πόσες ιστορίες κουβαλούν τα πράγματα που θεωρούμε άχρηστα μία επισκευασμένη κούπα, ένα παλιό εργαλείο, ένα φθαρμένο μουσικό όργανο.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.8012316,
+            "text": "μία σημερινή προσωπική ανάγνωση είναι να σκεφτούμε πόσες ιστορίες κουβαλούν τα πράγματα που θεωρούμε άχρηστα μία επισκευασμένη κούπα ένα παλιό εργαλείο ένα φθαρμένο μουσικό όργανο"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.7812525,
+            "text": "μια σημερινή προσωπική ανάγνωση είναι να σκεφτούμε πόσες ιστορίες κουβαλούν τα πράγματα που θεωρούμε άχρηστα μία επισκευασμένη κούπα ένα παλιό εργαλείο ένα φθαρμένο μουσικό όργανο"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.7796953,
+            "text": "μία σημερινή προσωπική ανάγνωση είναι να σκεφτούμε πόσες ιστορίες κουβαλούν τα πράγματα που θεωρούμε άχρηστα μια επισκευασμένη κούπα ένα παλιό εργαλείο ένα φθαρμένο μουσικό όργανο"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.75971615,
+            "text": "μια σημερινή προσωπική ανάγνωση είναι να σκεφτούμε πόσες ιστορίες κουβαλούν τα πράγματα που θεωρούμε άχρηστα μια επισκευασμένη κούπα ένα παλιό εργαλείο ένα φθαρμένο μουσικό όργανο"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.7603234,
+            "text": "μία σημερινή προσωπική ανάγνωση είναι να σκεφτούμε πόσες ιστορίες κουβαλούν τα πράγματα που θεωρούμε άχρηστα μία επισκευασμένη κούπα ενα παλιό εργαλείο ένα φθαρμένο μουσικό όργανο"
+          }
+        ]
+      },
+      {
+        "segment": 15,
+        "offset_seconds": 80.55,
+        "duration_seconds": 4.77,
+        "text": "Αν ένα αντικείμενο από το σπίτι σου μπορούσε να μιλήσει, ποιο θα έχει την πιο δυνατή ιστορία;",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.76541156,
+            "text": "αν ένα αντικείμενο από το σπίτι σου μπορούσε να μιλήσει ποιο θα έχει την πιο δυνατή ιστορία"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.75121355,
+            "text": "αν ένα αντικείμενο από το σπίτι σου μπορούσε να μιλήσει ποιο θα είχε την πιο δυνατή ιστορία"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.75212854,
+            "text": "αν ένα αντικείμενο από το σπίτι σου μπορούσε να μιλήσει ποιο θα έχετε την πιο δυνατή ιστορία"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.7385472,
+            "text": "αν είναι αντικείμενο από το σπίτι σου μπορούσε να μιλήσει ποιο θα έχει την πιο δυνατή ιστορία"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.7243492,
+            "text": "αν είναι αντικείμενο από το σπίτι σου μπορούσε να μιλήσει ποιο θα είχε την πιο δυνατή ιστορία"
+          }
+        ]
+      },
+      {
+        "segment": 16,
+        "offset_seconds": 85.43,
+        "duration_seconds": 2.45,
+        "text": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "nbest_lexical": [
+          {
+            "rank": 1,
+            "confidence": 0.8525593,
+            "text": "αν σας άρεσε ακολουθήστε για περισσότερα"
+          },
+          {
+            "rank": 2,
+            "confidence": 0.6328544,
+            "text": "a ν σας άρεσε ακολουθήστε για περισσότερα"
+          },
+          {
+            "rank": 3,
+            "confidence": 0.7350742,
+            "text": "αν σας άρεσε ακολουθείστε για περισσότερα"
+          },
+          {
+            "rank": 4,
+            "confidence": 0.7227396,
+            "text": "αν σας άρεσε ακολουθήστε για περισσότε"
+          },
+          {
+            "rank": 5,
+            "confidence": 0.67670405,
+            "text": "a αν σας άρεσε ακολουθήστε για περισσότερα"
+          }
+        ]
+      }
+    ],
+    "residual_recognition_uncertainty_retained": true,
+    "assessment": "ASR is independent corroboration, not a perfect transcript. Rare names, homophones and short-word segmentation leave documented ambiguity; no established content-changing narration error was identified. No audio audition or perfect lexical match is claimed."
+  },
+  "blocking_visual_or_factual_fixes": [],
+  "delivery_assets_modified_by_reviewer": false,
+  "external_publication_performed": false,
+  "release_scope": "Exact-byte visual/factual approval with full technical audio evidence and explicitly documented residual recognition ambiguity. Parent assesses release; this report does not assert listening."
+}

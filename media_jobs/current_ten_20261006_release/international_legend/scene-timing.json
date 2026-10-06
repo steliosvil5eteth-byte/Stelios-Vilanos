@@ -1,0 +1,74 @@
+[
+  {
+    "scene": 1,
+    "source_index": 1,
+    "anchor": "",
+    "anchor_seconds": 0.0,
+    "start": 0.0,
+    "end": 18.133333333333333,
+    "duration": 18.133333333333333,
+    "frames": 544,
+    "anchor_adjustment_seconds": 0.0,
+    "source_sha256": "3e4823cafc919a2f9c83c7bfa5b6cd076eb35e211aa986b6b462cf35ed5d3b6b"
+  },
+  {
+    "scene": 2,
+    "source_index": 2,
+    "anchor": "Σκέψου μια αποθήκη",
+    "anchor_seconds": 18.125,
+    "start": 18.133333333333333,
+    "end": 25.133333333333333,
+    "duration": 7.0,
+    "frames": 210,
+    "anchor_adjustment_seconds": 0.0,
+    "source_sha256": "88e6f1b8d8b9506279f5b5863f0db7b1ff0f44b6aa5252d0a04403e8359327b6"
+  },
+  {
+    "scene": 3,
+    "source_index": 3,
+    "anchor": "Οι άνθρωποι τα φρόντιζαν",
+    "anchor_seconds": 23.4875,
+    "start": 25.133333333333333,
+    "end": 32.13333333333333,
+    "duration": 7.0,
+    "frames": 210,
+    "anchor_adjustment_seconds": 1.637,
+    "source_sha256": "7d4f6157afefb63cd2edc55bc9011f647a2b5f34a3f92ed4fc4acf77c2dc2ff1"
+  },
+  {
+    "scene": 4,
+    "source_index": 4,
+    "anchor": "Το Δημοτικό Μουσείο",
+    "anchor_seconds": 30.5625,
+    "start": 32.13333333333333,
+    "end": 45.333333333333336,
+    "duration": 13.2,
+    "frames": 396,
+    "anchor_adjustment_seconds": 1.562,
+    "source_sha256": "c1ac06178ceac8188bd342675720833297fe0bd9035e91355873dd2194271d1b"
+  },
+  {
+    "scene": 5,
+    "source_index": 5,
+    "anchor": "Η όψη τους",
+    "anchor_seconds": 45.3375,
+    "start": 45.333333333333336,
+    "end": 69.96666666666667,
+    "duration": 24.633333333333333,
+    "frames": 739,
+    "anchor_adjustment_seconds": 0.0,
+    "source_sha256": "65e049a7d5bd6ab4b83e00a28869c4f425e5c35f8d0d01ec35ddbfcb3d39d8b5"
+  },
+  {
+    "scene": 6,
+    "source_index": 6,
+    "anchor": "Μια σημερινή",
+    "anchor_seconds": 69.9625,
+    "start": 69.96666666666667,
+    "end": 87.96666666666667,
+    "duration": 18.0,
+    "frames": 540,
+    "anchor_adjustment_seconds": 0.0,
+    "source_sha256": "4e2009e98467df9c7ff80f7285eda15a6e2fb6bbdbec829fc181de11635fb92f"
+  }
+]

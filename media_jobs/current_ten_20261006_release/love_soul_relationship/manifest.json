@@ -1,0 +1,325 @@
+{
+  "brandId": 7076410,
+  "date": "2026-10-06",
+  "series": "love_soul_relationship",
+  "job_id": "current-ten-20261006-love-soul-relationship",
+  "title": "Ο μεγαλύτερος μαθητής της",
+  "content_key": "love_soul_relationship|elderly-father-becomes-pottery-student-respects-daughter-craft",
+  "caption": "Ο μεγαλύτερος μαθητής της\n\nΓια χρόνια, ο πατέρας της υποτιμούσε τη δουλειά της. Στα 72 του κάθισε απέναντί της, φόρεσε ποδιά και της ζήτησε να του μάθει από την αρχή. Η Μαρίνα δεν περίμενε να γίνει καλός κεραμίστας. Περίμενε να την πάρει στα σοβαρά.\n\nΠοια κουβέντα περιμένατε χρόνια να ακούσετε;\n\nΠρωτότυπη μυθοπλασία. Εικόνες δημιουργημένες με ΤΝ.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Οικογένεια #Πατέρας #Κόρη #Ιστορίες #Αγάπη",
+  "cards": [
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/card-01.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/love_soul_relationship/01.png",
+      "source_sha256": "ff572081e6ac4f47bba10f6ce27e8768a08ec50b33ab8dde66f40564f51fe6ae",
+      "sha256": "b260dce4f06f66e26c465cf2e27a58a87e878817d136da8d046dc9093806cb50",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Στα 72 του, γράφτηκε στο μάθημα της κόρης του.\nΓια χρόνια της έλεγε ότι η κεραμική «δεν είναι κανονική δουλειά».",
+      "typography": {
+        "size": 46,
+        "lines": [
+          "Στα 72 του, γράφτηκε στο μάθημα",
+          "της κόρης του.",
+          "Για χρόνια της έλεγε ότι η κεραμική",
+          "«δεν είναι κανονική δουλειά»."
+        ],
+        "bottom": 900,
+        "text": "Στα 72 του, γράφτηκε στο μάθημα της κόρης του.\nΓια χρόνια της έλεγε ότι η κεραμική «δεν είναι κανονική δουλειά»."
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/card-02.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/love_soul_relationship/02.png",
+      "source_sha256": "847f62f215f89bf7c3c80420f54b15a0270ba22b4794d0cf56735aefd8786ad2",
+      "sha256": "eff798095c7f2b84befeb6f9f1b5e78b1669b096ecb71b0af5b2e23720f3945c",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Η Μαρίνα τον είδε στην τελευταία θέση, με μια καινούργια ποδιά.\n«Μπαμπά;»\n«Μην με βάλεις μπροστά επειδή είμαι πατέρας σου.\nΔεν ξέρω ούτε από πού αρχίζουμε.»",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "Η Μαρίνα τον είδε στην τελευταία θέση, με",
+          "μια καινούργια ποδιά.",
+          "«Μπαμπά;»",
+          "«Μην με βάλεις μπροστά επειδή είμαι",
+          "πατέρας σου.",
+          "Δεν ξέρω ούτε από πού αρχίζουμε.»"
+        ],
+        "bottom": 998,
+        "text": "Η Μαρίνα τον είδε στην τελευταία θέση, με μια καινούργια ποδιά.\n«Μπαμπά;»\n«Μην με βάλεις μπροστά επειδή είμαι πατέρας σου.\nΔεν ξέρω ούτε από πού αρχίζουμε.»"
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/card-03.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/love_soul_relationship/03.png",
+      "source_sha256": "8c5ba761492387c8b16dc140c35d9aac9591efe336eec68f39f9c8c338e47615",
+      "sha256": "56ed9c032f79665ca9a50cc47e579bb392965010956b304f932b60f3466ed496",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Το πήλινο μπολ του κατέρρευσε τρεις φορές.\nΕκείνη κάθισε δίπλα του και του έδειξε πώς να κρατά τα χέρια.\nΓια πρώτη φορά, εκείνος άκουγε χωρίς να τη διορθώνει.",
+      "typography": {
+        "size": 38,
+        "lines": [
+          "Το πήλινο μπολ του κατέρρευσε τρεις φορές.",
+          "Εκείνη κάθισε δίπλα του και του έδειξε πώς να",
+          "κρατά τα χέρια.",
+          "Για πρώτη φορά, εκείνος άκουγε χωρίς να τη",
+          "διορθώνει."
+        ],
+        "bottom": 1000,
+        "text": "Το πήλινο μπολ του κατέρρευσε τρεις φορές.\nΕκείνη κάθισε δίπλα του και του έδειξε πώς να κρατά τα χέρια.\nΓια πρώτη φορά, εκείνος άκουγε χωρίς να τη διορθώνει."
+      },
+      "layout_adjustment": {
+        "scope": "this card only",
+        "photo_crop": false,
+        "overlay_fade": [
+          700,
+          760
+        ],
+        "reason": "Show collapsed clay bowl without covering it with copy"
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/card-04.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/love_soul_relationship/04.png",
+      "source_sha256": "9993d1beb56d22a63c31ae988d3445b18705a6918354c082ead5af29b1a42537",
+      "sha256": "75d31e9416afb54d68b9215a15422ed2e77ff624fe686c80c1872aa764a3ea2a",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "«Σου έλεγα να βρεις αληθινή δουλειά», ψιθύρισε.\n«Κι ούτε είχα καθίσει μία ώρα να δω τη δική σου.\nΣυγγνώμη, Μαρίνα.»",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "«Σου έλεγα να βρεις αληθινή δουλειά»,",
+          "ψιθύρισε.",
+          "«Κι ούτε είχα καθίσει μία ώρα να δω τη δική",
+          "σου.",
+          "Συγγνώμη, Μαρίνα.»"
+        ],
+        "bottom": 943,
+        "text": "«Σου έλεγα να βρεις αληθινή δουλειά», ψιθύρισε.\n«Κι ούτε είχα καθίσει μία ώρα να δω τη δική σου.\nΣυγγνώμη, Μαρίνα.»"
+      }
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/card-05.jpg",
+      "source_path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/love_soul_relationship/05.png",
+      "source_sha256": "ce5f4d002b6188c598dd4cfe0ac3b5f28c71ccbff2e7f5bebf6fbbc38a1e8a6d",
+      "sha256": "23de77dc34d36960e1f153af87eecc5224e7da1a74617fddfd11773eb6375e8b",
+      "dimensions": [
+        1080,
+        1080
+      ],
+      "format": "JPEG",
+      "full_text": "Την επόμενη εβδομάδα ήταν πάλι εκεί.\n«Τι μαθαίνουμε σήμερα, δασκάλα;»\nΑυτή τη φορά, το είπε με περηφάνια.\nΠοια κουβέντα περιμένατε χρόνια να ακούσετε;\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "typography": {
+        "size": 43,
+        "lines": [
+          "Την επόμενη εβδομάδα ήταν πάλι εκεί.",
+          "«Τι μαθαίνουμε σήμερα, δασκάλα;»",
+          "Αυτή τη φορά, το είπε με περηφάνια.",
+          "Ποια κουβέντα περιμένατε χρόνια να",
+          "ακούσετε;"
+        ],
+        "bottom": 943,
+        "text": "Την επόμενη εβδομάδα ήταν πάλι εκεί.\n«Τι μαθαίνουμε σήμερα, δασκάλα;»\nΑυτή τη φορά, το είπε με περηφάνια.\nΠοια κουβέντα περιμένατε χρόνια να ακούσετε;"
+      },
+      "layout_adjustment": {
+        "scope": "this card only",
+        "photo_crop": false,
+        "overlay_fade": [
+          570,
+          685
+        ],
+        "reason": "CTA at minimum 36 px"
+      },
+      "cta_typography": {
+        "size": 36,
+        "lines": [
+          "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+        ],
+        "bottom": 1046,
+        "text": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      }
+    }
+  ],
+  "video": {
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/current-ten-20261006-love-soul-relationship.mp4",
+    "sha256": "a159b4b76f9a69c90427b14857194693b0aa67a8d366e7a6aad848796147808a",
+    "duration": 49.28,
+    "seconds_per_card": [
+      9.633333333333335,
+      10.0,
+      10.0,
+      9.633333333333335,
+      10.0
+    ],
+    "width": 1080,
+    "height": 1920,
+    "audio": "One original instrumental composition synthesized locally; no voice",
+    "complete_card_count": 5,
+    "ffprobe": {
+      "streams": [
+        {
+          "index": 0,
+          "codec_name": "h264",
+          "codec_long_name": "H.264 / AVC / MPEG-4 AVC / MPEG-4 part 10",
+          "profile": "High",
+          "codec_type": "video",
+          "codec_tag_string": "avc1",
+          "codec_tag": "0x31637661",
+          "width": 1080,
+          "height": 1920,
+          "coded_width": 1080,
+          "coded_height": 1920,
+          "closed_captions": 0,
+          "film_grain": 0,
+          "has_b_frames": 2,
+          "sample_aspect_ratio": "1:1",
+          "display_aspect_ratio": "9:16",
+          "pix_fmt": "yuv420p",
+          "level": 40,
+          "color_range": "tv",
+          "color_space": "bt470bg",
+          "chroma_location": "center",
+          "field_order": "progressive",
+          "refs": 1,
+          "is_avc": "true",
+          "nal_length_size": "4",
+          "id": "0x1",
+          "r_frame_rate": "25/1",
+          "avg_frame_rate": "25/1",
+          "time_base": "1/12800",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 630784,
+          "duration": "49.280000",
+          "bit_rate": "146952",
+          "bits_per_raw_sample": "8",
+          "nb_frames": "1232",
+          "extradata_size": 50,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "VideoHandler",
+            "vendor_id": "[0][0][0][0]",
+            "encoder": "Lavc60.31.102 libx264"
+          }
+        },
+        {
+          "index": 1,
+          "codec_name": "aac",
+          "codec_long_name": "AAC (Advanced Audio Coding)",
+          "profile": "LC",
+          "codec_type": "audio",
+          "codec_tag_string": "mp4a",
+          "codec_tag": "0x6134706d",
+          "sample_fmt": "fltp",
+          "sample_rate": "48000",
+          "channels": 2,
+          "channel_layout": "stereo",
+          "bits_per_sample": 0,
+          "initial_padding": 0,
+          "id": "0x2",
+          "r_frame_rate": "0/0",
+          "avg_frame_rate": "0/0",
+          "time_base": "1/48000",
+          "start_pts": 0,
+          "start_time": "0.000000",
+          "duration_ts": 2365440,
+          "duration": "49.280000",
+          "bit_rate": "160377",
+          "nb_frames": "2311",
+          "extradata_size": 5,
+          "disposition": {
+            "default": 1,
+            "dub": 0,
+            "original": 0,
+            "comment": 0,
+            "lyrics": 0,
+            "karaoke": 0,
+            "forced": 0,
+            "hearing_impaired": 0,
+            "visual_impaired": 0,
+            "clean_effects": 0,
+            "attached_pic": 0,
+            "timed_thumbnails": 0,
+            "non_diegetic": 0,
+            "captions": 0,
+            "descriptions": 0,
+            "metadata": 0,
+            "dependent": 0,
+            "still_image": 0
+          },
+          "tags": {
+            "language": "und",
+            "handler_name": "SoundHandler",
+            "vendor_id": "[0][0][0][0]"
+          }
+        }
+      ],
+      "format": {
+        "filename": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/current-ten-20261006-love-soul-relationship.mp4",
+        "nb_streams": 2,
+        "nb_programs": 0,
+        "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+        "format_long_name": "QuickTime / MOV",
+        "start_time": "0.000000",
+        "duration": "49.280000",
+        "size": "1932594",
+        "bit_rate": "313732",
+        "probe_score": 100,
+        "tags": {
+          "major_brand": "isom",
+          "minor_version": "512",
+          "compatible_brands": "isomiso2avc1mp41",
+          "encoder": "Lavf60.16.100"
+        }
+      }
+    }
+  },
+  "source_references": [],
+  "release_status": "PASSED_DIRECT_VISUAL_AND_FULL_DECODED_AUDIO_VERIFICATION",
+  "publish_ready": true,
+  "layout_adjustments": "Card-specific local adjustments in final/fiction_layout_adjustments.py; shared renderer unchanged; original music unchanged.",
+  "release_review": {
+    "reviewer": "root",
+    "reviewed_at": "2026-10-06T10:08:34.813628+00:00",
+    "video_sha256": "a159b4b76f9a69c90427b14857194693b0aa67a8d366e7a6aad848796147808a",
+    "visual_report_sha256": "cd50f7ccf91f570eba81c8e16e7025c4155569fe0a5e0498f5327f447cd9fdb0",
+    "audio_report_sha256": "12d99770b9a58efa1ff56ac96e77c367ea74a67b3dbb316acf4f1971558d6624",
+    "audio_method": "Entire decoded audio compared to the deterministic original instrumental composition; one audio stream; no voice",
+    "direct_listening": false,
+    "fresh_dedupe_required_before_create": true
+  }
+}

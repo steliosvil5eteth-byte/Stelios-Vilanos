@@ -1,0 +1,3215 @@
+{
+  "status": "PASS_DELIVERY_CONFIGURATION_PUBLICATION_IN_PROGRESS",
+  "audited_at_utc": "2026-10-06T10:28:32.360253+00:00",
+  "live_metricool_readback_at_utc": "2026-10-06T10:26:49.397Z",
+  "auditor": "/root/research_fresh_content",
+  "scope": "Independent read-only Metricool snapshot plus exact local final manifests, QA and approved persistence contract. No publication or external write performed.",
+  "brand_id": 7076410,
+  "date": "2026-10-06",
+  "timezone": "Europe/Athens",
+  "counts": {
+    "metricool_records": 16,
+    "logical_series": 10,
+    "provider_destinations": 40,
+    "unique_media_assets": 45,
+    "native_jpegs": 35,
+    "complete_videos": 10
+  },
+  "duplicate_series_provider_pairs": [],
+  "publication_status_counts_at_readback": {
+    "PUBLISHED": 7,
+    "AWAITING_CONFIRMATION": 1,
+    "PENDING": 32
+  },
+  "publication_note": "Scheduled or awaiting-confirmation destinations are not represented as published. Provider states are the exact independent readback snapshot and may change afterward.",
+  "metadata_issue_resolved": "Narrated root_release_decision_pending was stale; root changed all authoritative manifests to false during audit. Independent source QA reports remain immutable records of their original pre-release checks.",
+  "remote_asset_bytes_scope": "No repeat remote downloads. Exact 45 URLs, sequence, series, IDs and approved SHA256 values checked against persistence contract. The separate persistence workflow owns downloading and validating every remote JPEG/MP4 byte.",
+  "prespes_credits": {
+    "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/main/media_jobs/current_ten_20261006_prespes_credits.md",
+    "correct_url_present": true,
+    "external_page_availability_rechecked_in_this_audit": false
+  },
+  "listening_claim": false,
+  "evidence_files": [
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/release_journal.json",
+      "sha256": "aa52ff1723a8bf18ada5cedecbb12bd6e8f6f9192650d8a41ad89255e7c3bbfd"
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final_delivery_independent_metricool_readback.json",
+      "sha256": "90dfea731729c41f79987072bb7f0caf37ad7337526c2323a57a8ad8860597fc"
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/persistence/commit_files/media_jobs/current_ten_20261006_final_delivery_assets.json",
+      "sha256": "ee24aeb4e033c3514fcdf9aedf205de4d1b69f28d3be7577328c7cfb07e0bc60"
+    }
+  ],
+  "check_count": 420,
+  "failed_check_count": 0,
+  "failed_checks": [],
+  "checks": [
+    {
+      "check": "brand_and_date",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "exactly_16_unique_live_metricool_records",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "live_ids_exactly_match_delivery_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "journal_mapping_covers_exactly_all_records",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "exactly_10_required_logical_series",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389294554:today_athens",
+      "passed": true,
+      "detail": "2026-10-06T13:05:00+03:00"
+    },
+    {
+      "check": "389294554:unique_expected_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389294554:autopublish_not_draft",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389294554:approved_caption_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389294554:exact_cta_once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389294554:at_most_five_hashtags",
+      "passed": true,
+      "detail": [
+        "#ΣκύλοςΜπάρμαν",
+        "#Χιούμορ",
+        "#Ιστορίες",
+        "#Μπαρ",
+        "#Καθημερινότητα"
+      ]
+    },
+    {
+      "check": "389294554:media_urls_unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389294554:approved_static_metricool_media_host",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389294554:three_native_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389294554:exact_native_card_count_and_jpegs",
+      "passed": true,
+      "detail": {
+        "expected": 4,
+        "actual": 4
+      }
+    },
+    {
+      "check": "389294554:native_post_formats",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389294554:native_tiktok_auto_music",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389294554:tiktok_public_title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389297281:today_athens",
+      "passed": true,
+      "detail": "2026-10-06T13:25:00+03:00"
+    },
+    {
+      "check": "389297281:unique_expected_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389297281:autopublish_not_draft",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389297281:approved_caption_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389297281:exact_cta_once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389297281:at_most_five_hashtags",
+      "passed": true,
+      "detail": [
+        "#Ιστορίες",
+        "#Σχέσεις",
+        "#Αγάπη",
+        "#Εμπιστοσύνη",
+        "#Συντροφικότητα"
+      ]
+    },
+    {
+      "check": "389297281:media_urls_unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389297281:approved_static_metricool_media_host",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389297281:three_native_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389297281:exact_native_card_count_and_jpegs",
+      "passed": true,
+      "detail": {
+        "expected": 7,
+        "actual": 7
+      }
+    },
+    {
+      "check": "389297281:native_post_formats",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389297281:native_tiktok_auto_music",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389297281:tiktok_public_title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389299946:today_athens",
+      "passed": true,
+      "detail": "2026-10-06T13:45:00+03:00"
+    },
+    {
+      "check": "389299946:unique_expected_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389299946:autopublish_not_draft",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389299946:approved_caption_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389299946:exact_cta_once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389299946:at_most_five_hashtags",
+      "passed": true,
+      "detail": [
+        "#ΚανόνεςΕπιβίωσης",
+        "#Πυρασφάλεια",
+        "#ΗλεκτρικήΑσφάλεια",
+        "#Προετοιμασία",
+        "#Ασφάλεια"
+      ]
+    },
+    {
+      "check": "389299946:media_urls_unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389299946:approved_static_metricool_media_host",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389299946:three_native_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389299946:exact_native_card_count_and_jpegs",
+      "passed": true,
+      "detail": {
+        "expected": 9,
+        "actual": 9
+      }
+    },
+    {
+      "check": "389299946:native_post_formats",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389299946:native_tiktok_auto_music",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389299946:tiktok_public_title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389301502:today_athens",
+      "passed": true,
+      "detail": "2026-10-06T15:00:00+03:00"
+    },
+    {
+      "check": "389301502:unique_expected_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389301502:autopublish_not_draft",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389301502:approved_caption_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389301502:exact_cta_once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389301502:at_most_five_hashtags",
+      "passed": true,
+      "detail": [
+        "#Οικογένεια",
+        "#Πατέρας",
+        "#Κόρη",
+        "#Ιστορίες",
+        "#Αγάπη"
+      ]
+    },
+    {
+      "check": "389301502:media_urls_unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389301502:approved_static_metricool_media_host",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389301502:three_native_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389301502:exact_native_card_count_and_jpegs",
+      "passed": true,
+      "detail": {
+        "expected": 5,
+        "actual": 5
+      }
+    },
+    {
+      "check": "389301502:native_post_formats",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389301502:native_tiktok_auto_music",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389301502:tiktok_public_title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389302501:today_athens",
+      "passed": true,
+      "detail": "2026-10-06T14:05:00+03:00"
+    },
+    {
+      "check": "389302501:unique_expected_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389302501:autopublish_not_draft",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389302501:approved_caption_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389302501:exact_cta_once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389302501:at_most_five_hashtags",
+      "passed": true,
+      "detail": [
+        "#Ζώδια",
+        "#Αστρολογία",
+        "#Χιούμορ",
+        "#EscapeRoom",
+        "#Παρέα"
+      ]
+    },
+    {
+      "check": "389302501:media_urls_unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389302501:approved_static_metricool_media_host",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389302501:three_native_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389302501:exact_native_card_count_and_jpegs",
+      "passed": true,
+      "detail": {
+        "expected": 6,
+        "actual": 6
+      }
+    },
+    {
+      "check": "389302501:native_post_formats",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389302501:native_tiktok_auto_music",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389302501:tiktok_public_title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389302859:today_athens",
+      "passed": true,
+      "detail": "2026-10-06T20:00:00+03:00"
+    },
+    {
+      "check": "389302859:unique_expected_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389302859:autopublish_not_draft",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389302859:approved_caption_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389302859:exact_cta_once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389302859:at_most_five_hashtags",
+      "passed": true,
+      "detail": [
+        "#ΜύθοςΉΑλήθεια",
+        "#Ηλιοτρόπια",
+        "#Φυτά",
+        "#Βιολογία",
+        "#Φύση"
+      ]
+    },
+    {
+      "check": "389302859:media_urls_unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389302859:approved_static_metricool_media_host",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389302859:three_native_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389302859:exact_native_card_count_and_jpegs",
+      "passed": true,
+      "detail": {
+        "expected": 4,
+        "actual": 4
+      }
+    },
+    {
+      "check": "389302859:native_post_formats",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389302859:native_tiktok_auto_music",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389302859:tiktok_public_title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389304173:today_athens",
+      "passed": true,
+      "detail": "2026-10-06T13:15:00+03:00"
+    },
+    {
+      "check": "389304173:unique_expected_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389304173:autopublish_not_draft",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389304173:approved_caption_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389304173:exact_cta_once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389304173:at_most_five_hashtags",
+      "passed": true,
+      "detail": [
+        "#ΣκύλοςΜπάρμαν",
+        "#Χιούμορ",
+        "#Ιστορίες",
+        "#Μπαρ",
+        "#Καθημερινότητα"
+      ]
+    },
+    {
+      "check": "389304173:media_urls_unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389304173:approved_static_metricool_media_host",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389304173:youtube_one_complete_mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389304173:youtube_public_short_title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305899:today_athens",
+      "passed": true,
+      "detail": "2026-10-06T13:25:00+03:00"
+    },
+    {
+      "check": "389305899:unique_expected_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305899:autopublish_not_draft",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305899:approved_caption_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305899:exact_cta_once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305899:at_most_five_hashtags",
+      "passed": true,
+      "detail": [
+        "#Ιστορίες",
+        "#Σχέσεις",
+        "#Αγάπη",
+        "#Εμπιστοσύνη",
+        "#Συντροφικότητα"
+      ]
+    },
+    {
+      "check": "389305899:media_urls_unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305899:approved_static_metricool_media_host",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305899:youtube_one_complete_mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305899:youtube_public_short_title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305950:today_athens",
+      "passed": true,
+      "detail": "2026-10-06T13:45:00+03:00"
+    },
+    {
+      "check": "389305950:unique_expected_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305950:autopublish_not_draft",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305950:approved_caption_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305950:exact_cta_once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305950:at_most_five_hashtags",
+      "passed": true,
+      "detail": [
+        "#ΚανόνεςΕπιβίωσης",
+        "#Πυρασφάλεια",
+        "#ΗλεκτρικήΑσφάλεια",
+        "#Προετοιμασία",
+        "#Ασφάλεια"
+      ]
+    },
+    {
+      "check": "389305950:media_urls_unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305950:approved_static_metricool_media_host",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305950:youtube_one_complete_mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305950:youtube_public_short_title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305999:today_athens",
+      "passed": true,
+      "detail": "2026-10-06T14:05:00+03:00"
+    },
+    {
+      "check": "389305999:unique_expected_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305999:autopublish_not_draft",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305999:approved_caption_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305999:exact_cta_once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305999:at_most_five_hashtags",
+      "passed": true,
+      "detail": [
+        "#Ζώδια",
+        "#Αστρολογία",
+        "#Χιούμορ",
+        "#EscapeRoom",
+        "#Παρέα"
+      ]
+    },
+    {
+      "check": "389305999:media_urls_unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305999:approved_static_metricool_media_host",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305999:youtube_one_complete_mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389305999:youtube_public_short_title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389306148:today_athens",
+      "passed": true,
+      "detail": "2026-10-06T15:00:00+03:00"
+    },
+    {
+      "check": "389306148:unique_expected_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389306148:autopublish_not_draft",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389306148:approved_caption_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389306148:exact_cta_once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389306148:at_most_five_hashtags",
+      "passed": true,
+      "detail": [
+        "#Οικογένεια",
+        "#Πατέρας",
+        "#Κόρη",
+        "#Ιστορίες",
+        "#Αγάπη"
+      ]
+    },
+    {
+      "check": "389306148:media_urls_unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389306148:approved_static_metricool_media_host",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389306148:youtube_one_complete_mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389306148:youtube_public_short_title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389306202:today_athens",
+      "passed": true,
+      "detail": "2026-10-06T20:00:00+03:00"
+    },
+    {
+      "check": "389306202:unique_expected_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389306202:autopublish_not_draft",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389306202:approved_caption_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389306202:exact_cta_once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389306202:at_most_five_hashtags",
+      "passed": true,
+      "detail": [
+        "#ΜύθοςΉΑλήθεια",
+        "#Ηλιοτρόπια",
+        "#Φυτά",
+        "#Βιολογία",
+        "#Φύση"
+      ]
+    },
+    {
+      "check": "389306202:media_urls_unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389306202:approved_static_metricool_media_host",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389306202:youtube_one_complete_mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389306202:youtube_public_short_title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389313993:today_athens",
+      "passed": true,
+      "detail": "2026-10-06T22:00:00+03:00"
+    },
+    {
+      "check": "389313993:unique_expected_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389313993:autopublish_not_draft",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389313993:approved_caption_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389313993:exact_cta_once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389313993:at_most_five_hashtags",
+      "passed": true,
+      "detail": [
+        "#Τσουκουμογκάμι",
+        "#Ιαπωνία",
+        "#Λαογραφία",
+        "#ΔιεθνείςΘρύλοι",
+        "#Yokai"
+      ]
+    },
+    {
+      "check": "389313993:media_urls_unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389313993:approved_static_metricool_media_host",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389313993:four_providers_one_mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389313993:narrated_reel_formats",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389313993:no_platform_music_addition",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389313993:youtube_public_short_title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389313993:tiktok_public_title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389314811:today_athens",
+      "passed": true,
+      "detail": "2026-10-06T17:00:00+03:00"
+    },
+    {
+      "check": "389314811:unique_expected_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389314811:autopublish_not_draft",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389314811:approved_caption_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389314811:exact_cta_once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389314811:at_most_five_hashtags",
+      "passed": true,
+      "detail": [
+        "#ΠαράξεναΦαινόμενα",
+        "#Αμμόλοφοι",
+        "#Φυσική",
+        "#Επιστήμη",
+        "#Έρημος"
+      ]
+    },
+    {
+      "check": "389314811:media_urls_unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389314811:approved_static_metricool_media_host",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389314811:four_providers_one_mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389314811:narrated_reel_formats",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389314811:no_platform_music_addition",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389314811:youtube_public_short_title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389314811:tiktok_public_title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315514:today_athens",
+      "passed": true,
+      "detail": "2026-10-06T14:30:00+03:00"
+    },
+    {
+      "check": "389315514:unique_expected_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315514:autopublish_not_draft",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315514:approved_caption_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315514:exact_cta_once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315514:at_most_five_hashtags",
+      "passed": true,
+      "detail": [
+        "#Πρέσπες",
+        "#ΔιήμεροΣτηνΕλλάδα",
+        "#ΆγιοςΑχίλλειος",
+        "#Ψαράδες",
+        "#Ταξίδι"
+      ]
+    },
+    {
+      "check": "389315514:media_urls_unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315514:approved_static_metricool_media_host",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315514:four_providers_one_mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315514:narrated_reel_formats",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315514:no_platform_music_addition",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315514:youtube_public_short_title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315514:tiktok_public_title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315750:today_athens",
+      "passed": true,
+      "detail": "2026-10-06T18:30:00+03:00"
+    },
+    {
+      "check": "389315750:unique_expected_providers",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315750:autopublish_not_draft",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315750:approved_caption_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315750:exact_cta_once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315750:at_most_five_hashtags",
+      "passed": true,
+      "detail": [
+        "#Ψυχολογία",
+        "#Πειράματα",
+        "#IKEAEffect",
+        "#ΑνθρώπινηΣυμπεριφορά",
+        "#Επιστήμη"
+      ]
+    },
+    {
+      "check": "389315750:media_urls_unique",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315750:approved_static_metricool_media_host",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315750:four_providers_one_mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315750:narrated_reel_formats",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315750:no_platform_music_addition",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315750:youtube_public_short_title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "389315750:tiktok_public_title",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "exactly_40_provider_destinations",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "every_required_series_provider_exactly_once",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "no_unexpected_or_error_provider_states",
+      "passed": true,
+      "detail": {
+        "PUBLISHED": 7,
+        "AWAITING_CONFIRMATION": 1,
+        "PENDING": 32
+      }
+    },
+    {
+      "check": "45_unique_media_assets_35_jpegs_10_mp4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "relationships:manifest_ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "relationships:manifest_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "relationships:local_final_exact_approved_sha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "relationships:vertical_full_hd",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "relationships:root_review_exact_video_sha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "relationships:complete_all_cards_video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "relationships:minimum_card_hold_seven_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "relationships:instrumental_only_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "relationships:exact_full_audio_qa_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "survival:manifest_ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "survival:manifest_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "survival:local_final_exact_approved_sha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "survival:vertical_full_hd",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "survival:root_review_exact_video_sha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "survival:complete_all_cards_video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "survival:minimum_card_hold_seven_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "survival:instrumental_only_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "survival:exact_full_audio_qa_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "myth_or_truth:manifest_ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "myth_or_truth:manifest_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "myth_or_truth:local_final_exact_approved_sha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "myth_or_truth:vertical_full_hd",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "myth_or_truth:root_review_exact_video_sha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "myth_or_truth:complete_all_cards_video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "myth_or_truth:minimum_card_hold_seven_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "myth_or_truth:instrumental_only_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "myth_or_truth:exact_full_audio_qa_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "zodiac:manifest_ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "zodiac:manifest_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "zodiac:local_final_exact_approved_sha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "zodiac:vertical_full_hd",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "zodiac:root_review_exact_video_sha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "zodiac:complete_all_cards_video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "zodiac:minimum_card_hold_seven_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "zodiac:instrumental_only_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "zodiac:exact_full_audio_qa_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "love_soul_relationship:manifest_ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "love_soul_relationship:manifest_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "love_soul_relationship:local_final_exact_approved_sha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "love_soul_relationship:vertical_full_hd",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "love_soul_relationship:root_review_exact_video_sha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "love_soul_relationship:complete_all_cards_video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "love_soul_relationship:minimum_card_hold_seven_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "love_soul_relationship:instrumental_only_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "love_soul_relationship:exact_full_audio_qa_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dog_bartender:manifest_ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dog_bartender:manifest_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dog_bartender:local_final_exact_approved_sha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dog_bartender:vertical_full_hd",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dog_bartender:root_review_exact_video_sha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dog_bartender:complete_all_cards_video",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dog_bartender:minimum_card_hold_seven_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dog_bartender:instrumental_only_provenance",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "dog_bartender:exact_full_audio_qa_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "greece_two_day_trip:manifest_ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "greece_two_day_trip:manifest_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "greece_two_day_trip:local_final_exact_approved_sha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "greece_two_day_trip:vertical_full_hd",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "greece_two_day_trip:root_review_exact_video_sha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "greece_two_day_trip:narration_format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "greece_two_day_trip:minimum_80_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "greece_two_day_trip:root_pending_flag_resolved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "greece_two_day_trip:exact_full_narration_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "greece_two_day_trip:root_review_binds_qa_reports",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strange_real_phenomenon:manifest_ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strange_real_phenomenon:manifest_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strange_real_phenomenon:local_final_exact_approved_sha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strange_real_phenomenon:vertical_full_hd",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strange_real_phenomenon:root_review_exact_video_sha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strange_real_phenomenon:narration_format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strange_real_phenomenon:minimum_80_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strange_real_phenomenon:root_pending_flag_resolved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strange_real_phenomenon:exact_full_narration_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "strange_real_phenomenon:root_review_binds_qa_reports",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "documented_experiments:manifest_ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "documented_experiments:manifest_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "documented_experiments:local_final_exact_approved_sha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "documented_experiments:vertical_full_hd",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "documented_experiments:root_review_exact_video_sha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "documented_experiments:narration_format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "documented_experiments:minimum_80_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "documented_experiments:root_pending_flag_resolved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "documented_experiments:exact_full_narration_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "documented_experiments:root_review_binds_qa_reports",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "international_legend:manifest_ready",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "international_legend:manifest_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "international_legend:local_final_exact_approved_sha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "international_legend:vertical_full_hd",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "international_legend:root_review_exact_video_sha",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "international_legend:narration_format",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "international_legend:minimum_80_seconds",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "international_legend:root_pending_flag_resolved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "international_legend:exact_full_narration_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "international_legend:root_review_binds_qa_reports",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "prespes_correct_credits_url_in_all_provider_caption",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "persistence_contract_exact_45_live_urls",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:current-ten-20261006-ikea-effect.mp4:documented_experiments:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:documented_experiments:approved_video_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-01.jpg:dog_bartender:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:dog_bartender:card-01.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:dog_bartender:card-01.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-02.jpg:dog_bartender:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:dog_bartender:card-02.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:dog_bartender:card-02.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-03.jpg:dog_bartender:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:dog_bartender:card-03.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:dog_bartender:card-03.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-04.jpg:dog_bartender:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:dog_bartender:card-04.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:dog_bartender:card-04.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:current-ten-20261006-dog-bartender.mp4:dog_bartender:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:dog_bartender:approved_video_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:current-ten-20261006-prespes.mp4:greece_two_day_trip:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:greece_two_day_trip:approved_video_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:current-ten-20261006-tsukumogami.mp4:international_legend:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:international_legend:approved_video_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-01.jpg:love_soul_relationship:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:love_soul_relationship:card-01.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:love_soul_relationship:card-01.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-02.jpg:love_soul_relationship:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:love_soul_relationship:card-02.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:love_soul_relationship:card-02.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-03.jpg:love_soul_relationship:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:love_soul_relationship:card-03.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:love_soul_relationship:card-03.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-04.jpg:love_soul_relationship:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:love_soul_relationship:card-04.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:love_soul_relationship:card-04.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-05.jpg:love_soul_relationship:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:love_soul_relationship:card-05.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:love_soul_relationship:card-05.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:current-ten-20261006-love-soul-relationship.mp4:love_soul_relationship:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:love_soul_relationship:approved_video_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-01.jpg:myth_or_truth:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:myth_or_truth:card-01.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:myth_or_truth:card-01.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-02.jpg:myth_or_truth:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:myth_or_truth:card-02.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:myth_or_truth:card-02.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-03.jpg:myth_or_truth:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:myth_or_truth:card-03.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:myth_or_truth:card-03.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-04.jpg:myth_or_truth:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:myth_or_truth:card-04.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:myth_or_truth:card-04.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:current-ten-20261006-myth-or-truth.mp4:myth_or_truth:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:myth_or_truth:approved_video_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-01.jpg:relationships:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:relationships:card-01.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:relationships:card-01.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-02.jpg:relationships:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:relationships:card-02.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:relationships:card-02.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-03.jpg:relationships:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:relationships:card-03.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:relationships:card-03.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-04.jpg:relationships:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:relationships:card-04.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:relationships:card-04.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-05.jpg:relationships:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:relationships:card-05.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:relationships:card-05.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-06.jpg:relationships:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:relationships:card-06.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:relationships:card-06.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-07.jpg:relationships:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:relationships:card-07.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:relationships:card-07.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:current-ten-20261006-relationships.mp4:relationships:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:relationships:approved_video_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:current-ten-20261006-singing-dunes.mp4:strange_real_phenomenon:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:strange_real_phenomenon:approved_video_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-01.jpg:survival:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:survival:card-01.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:survival:card-01.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-02.jpg:survival:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:survival:card-02.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:survival:card-02.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-03.jpg:survival:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:survival:card-03.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:survival:card-03.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-04.jpg:survival:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:survival:card-04.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:survival:card-04.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-05.jpg:survival:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:survival:card-05.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:survival:card-05.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-06.jpg:survival:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:survival:card-06.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:survival:card-06.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-07.jpg:survival:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:survival:card-07.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:survival:card-07.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-08.jpg:survival:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:survival:card-08.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:survival:card-08.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-09.jpg:survival:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:survival:card-09.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:survival:card-09.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:current-ten-20261006-survival.mp4:survival:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:survival:approved_video_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-01.jpg:zodiac:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:zodiac:card-01.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:zodiac:card-01.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-02.jpg:zodiac:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:zodiac:card-02.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:zodiac:card-02.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-03.jpg:zodiac:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:zodiac:card-03.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:zodiac:card-03.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-04.jpg:zodiac:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:zodiac:card-04.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:zodiac:card-04.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-05.jpg:zodiac:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:zodiac:card-05.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:zodiac:card-05.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:card-06.jpg:zodiac:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:zodiac:card-06.jpg:order_matches_journal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:zodiac:card-06.jpg:approved_card_sha_in_contract",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:current-ten-20261006-zodiac.mp4:zodiac:series_post_url_binding",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "check": "asset:zodiac:approved_video_sha_in_contract",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "series": [
+    {
+      "series": "relationships",
+      "title": "Η προαγωγή που τους απομάκρυνε",
+      "content_key": "relationships|partner-promotion-envy-owned-support-without-self-erasure",
+      "manifest_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/manifest.json",
+      "manifest_sha256": "644db541410beb0275096f6c956b0aea9a0cf3e7ba1abd231987dac5197a8fd4",
+      "publish_ready": true,
+      "video_sha256": "e48a5fd287e27c23c2106aec37f3aa6c580cc475d72392ea5d80d89a7dd9a2fa",
+      "root_release_status": "PASSED_DIRECT_VISUAL_AND_FULL_DECODED_AUDIO_VERIFICATION",
+      "native_cards": 7,
+      "video_duration_seconds": 65.04,
+      "audio_format": "Original instrumental composition, no voice",
+      "audio_qa_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/relationships/final_audio_qa.json",
+      "audio_qa_sha256": "7178a3463ac53254d824706195d3f15ad2acacf84cdc1f5cc449c420a2593d9f",
+      "audio_listened": false,
+      "all_audio_samples_tested": true
+    },
+    {
+      "series": "survival",
+      "title": "Ηλεκτρική φωτιά: τι κάνεις πριν χαθεί χρόνος",
+      "content_key": "survival|electrical-house-fire-safe-evacuation-no-water",
+      "manifest_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/manifest.json",
+      "manifest_sha256": "3747a22276852ad73db7cc03c7e1757a6854e3482e58a98297c2351dc3719165",
+      "publish_ready": true,
+      "video_sha256": "b0e2f1c5c4766c5dbda0dd3c0bcea2fd39c60caef82f4f65559bc117dbf100b1",
+      "root_release_status": "PASSED_DIRECT_VISUAL_AND_FULL_DECODED_AUDIO_VERIFICATION",
+      "native_cards": 9,
+      "video_duration_seconds": 71.4,
+      "audio_format": "Original instrumental composition, no voice",
+      "audio_qa_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/survival/final_audio_qa.json",
+      "audio_qa_sha256": "48fe0d5bded3b97e2e7ad2e29bdaecd5eca9c7568c83d3cdd7dc2f0042d3c97c",
+      "audio_listened": false,
+      "all_audio_samples_tested": true
+    },
+    {
+      "series": "myth_or_truth",
+      "title": "Τα ηλιοτρόπια ακολουθούν τον ήλιο όλη τους τη ζωή;",
+      "content_key": "myth_or_truth|sunflower-young-heliotropism-mature-east-facing",
+      "manifest_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/myth_or_truth/manifest.json",
+      "manifest_sha256": "336fd9c57624028d873a879ef9b68c756f0f511fffc50f886f2475c8e67598bd",
+      "publish_ready": true,
+      "video_sha256": "308c6e042fae04f3af6d67dc1da55a0a6b11b467f3cd0b7ba0d13939694e3af3",
+      "root_release_status": "PASSED_DIRECT_VISUAL_AND_FULL_DECODED_AUDIO_VERIFICATION",
+      "native_cards": 4,
+      "video_duration_seconds": 33.36,
+      "audio_format": "Original instrumental composition, no voice",
+      "audio_qa_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/myth_or_truth/final_audio_qa.json",
+      "audio_qa_sha256": "402e5605cc34ab509127a065c47cba711ca47f59b5cd6cfe5d7f33f7e551fa2c",
+      "audio_listened": false,
+      "all_audio_samples_tested": true
+    },
+    {
+      "series": "zodiac",
+      "title": "Ζώδια: εσείς οι δύο σε escape room",
+      "content_key": "zodiac|escape-room-puzzle-team-reactions|six-pairs-all-twelve",
+      "manifest_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/manifest.json",
+      "manifest_sha256": "40360bd857845ed1b1bd32dc794567810469caba8ff90ad18e15d63466bee50c",
+      "publish_ready": true,
+      "video_sha256": "21c6ced881f0f747a89d94e80134cb985689cb66df73924b22eed15746471cc3",
+      "root_release_status": "PASSED_DIRECT_VISUAL_AND_FULL_DECODED_AUDIO_VERIFICATION",
+      "native_cards": 6,
+      "video_duration_seconds": 51.08,
+      "audio_format": "Original instrumental composition, no voice",
+      "audio_qa_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/zodiac/final_audio_qa.json",
+      "audio_qa_sha256": "9c08479a266faffcd70fc3bb57d36773fc6908d67de42480df1d3921e48b3297",
+      "audio_listened": false,
+      "all_audio_samples_tested": true
+    },
+    {
+      "series": "love_soul_relationship",
+      "title": "Ο μεγαλύτερος μαθητής της",
+      "content_key": "love_soul_relationship|elderly-father-becomes-pottery-student-respects-daughter-craft",
+      "manifest_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/manifest.json",
+      "manifest_sha256": "d58965361b2b7fec88edacc47d9636cf740aa3e9f019d00a8db281d431333759",
+      "publish_ready": true,
+      "video_sha256": "a159b4b76f9a69c90427b14857194693b0aa67a8d366e7a6aad848796147808a",
+      "root_release_status": "PASSED_DIRECT_VISUAL_AND_FULL_DECODED_AUDIO_VERIFICATION",
+      "native_cards": 5,
+      "video_duration_seconds": 49.28,
+      "audio_format": "Original instrumental composition, no voice",
+      "audio_qa_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/love_soul_relationship/final_audio_qa.json",
+      "audio_qa_sha256": "12d99770b9a58efa1ff56ac96e77c367ea74a67b3dbb316acf4f1971558d6624",
+      "audio_listened": false,
+      "all_audio_samples_tested": true
+    },
+    {
+      "series": "dog_bartender",
+      "title": "Σκύλος Μπάρμαν — Πρώτα η φωτογραφία",
+      "content_key": "dog_bartender|drink-photo-staging-ice-melts-before-first-sip",
+      "manifest_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/dog_bartender/manifest.json",
+      "manifest_sha256": "ef31e883434689f6bfe6a2994e011d957f04a72b6ee43402e5f0af9986ea566f",
+      "publish_ready": true,
+      "video_sha256": "d12f6f9ff213df3f9050c6b7fd7dba5ebe5b0b04ce6c5fe646ad36bcb41d07f0",
+      "root_release_status": "PASSED_DIRECT_VISUAL_AND_FULL_DECODED_AUDIO_VERIFICATION",
+      "native_cards": 4,
+      "video_duration_seconds": 31.24,
+      "audio_format": "Original instrumental composition, no voice",
+      "audio_qa_path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/dog_bartender/final_audio_qa.json",
+      "audio_qa_sha256": "5efb03eb9e9dd9f7477aa3a666ab318250474f8ebb43d95a786ad7bc08ed32f3",
+      "audio_listened": false,
+      "all_audio_samples_tested": true
+    },
+    {
+      "series": "greece_two_day_trip",
+      "title": "Διήμερο στις Πρέσπες: δύο λίμνες, ένα νησί",
+      "content_key": "greece_two_day_trip|prespes-agios-achilleios-agios-germanos-psarades-two-day",
+      "manifest_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/manifest.json",
+      "manifest_sha256": "8a5cfc7ea27d3506632ef3148b939101efa5c8408130733f7452b651a93e206e",
+      "publish_ready": true,
+      "video_sha256": "02855ad188063f1f843f81e65f911776ae4dcc40c41454f55d5dceac05385cf3",
+      "root_release_status": "APPROVED_EXACT_FINAL_WITH_TECHNICAL_AUDIO_AND_DOCUMENTED_ASR_VARIANTS",
+      "video_duration_seconds": 83.666667,
+      "voice": "el-GR-NestorasNeural",
+      "background_music": false,
+      "avatar": false,
+      "audio_qa_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/prespes/final/audio-binding.json",
+      "audio_qa_sha256": "54145c3523ce4a417bc018d3e4ddad4f093d2737069fd5a33eb192de0ecbeb64",
+      "audio_listened": false,
+      "full_audio_waveform_binding": true
+    },
+    {
+      "series": "strange_real_phenomenon",
+      "title": "Οι αμμόλοφοι που τραγουδούν",
+      "content_key": "strange_real_phenomenon|singing-sand-dunes-grain-synchronization",
+      "manifest_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/manifest.json",
+      "manifest_sha256": "fdcb7e8c53543d24b5293643ef501271287af60fb93212e0f4b3e97d30731515",
+      "publish_ready": true,
+      "video_sha256": "dec4523bee6a7a28ef2905f85e937fdc7a704ad017f8d41244fb6122989c0292",
+      "root_release_status": "APPROVED_EXACT_FINAL_WITH_TECHNICAL_AUDIO_AND_DOCUMENTED_ASR_VARIANTS",
+      "video_duration_seconds": 87.5,
+      "voice": "el-GR-NestorasNeural",
+      "background_music": false,
+      "avatar": false,
+      "audio_qa_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/audio-binding.json",
+      "audio_qa_sha256": "aae40ceef0d27b1c64ed2a2b44aa1e76539a97fcb00726d25ae1b2e88175294d",
+      "audio_listened": false,
+      "full_audio_waveform_binding": true
+    },
+    {
+      "series": "documented_experiments",
+      "title": "Το φαινόμενο ΙΚΕΑ: γιατί αγαπάμε αυτό που φτιάξαμε",
+      "content_key": "documented_experiments|ikea-effect-labor-valuation-completion",
+      "manifest_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/manifest.json",
+      "manifest_sha256": "f6433a07deb83c443321ae803fafc5ad1a3ab400116aa56773a631558c54be4c",
+      "publish_ready": true,
+      "video_sha256": "18ba6751359d7a5361b2207305e67f81f9564d04e0dee5778363e031905cc38d",
+      "root_release_status": "APPROVED_EXACT_FINAL_WITH_TECHNICAL_AUDIO_AND_DOCUMENTED_ASR_VARIANTS",
+      "video_duration_seconds": 91.233333,
+      "voice": "el-GR-NestorasNeural",
+      "background_music": false,
+      "avatar": false,
+      "audio_qa_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/ikea_effect/final/audio-binding.json",
+      "audio_qa_sha256": "371c2163ba5799c943dbe845d49c1d1f9aa9fe25262c55c8a3a95350625a2ec7",
+      "audio_listened": false,
+      "full_audio_waveform_binding": true
+    },
+    {
+      "series": "international_legend",
+      "title": "Τσουκουμογκάμι: όταν τα παλιά αντικείμενα αποκτούν ψυχή",
+      "content_key": "international_legend|tsukumogami-japanese-discarded-objects-folklore",
+      "manifest_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/manifest.json",
+      "manifest_sha256": "04e81ce446d7ad611001604af4e6aabace3e3f3ab180ba0ecd3bc1bb980aa773",
+      "publish_ready": true,
+      "video_sha256": "7e36b1f2ab0a247b49d9e37cfec5a2b259aefc67c121057e380e5662dbf50b1e",
+      "root_release_status": "APPROVED_EXACT_FINAL_WITH_TECHNICAL_AUDIO_AND_DOCUMENTED_ASR_VARIANTS",
+      "video_duration_seconds": 87.966667,
+      "voice": "el-GR-NestorasNeural",
+      "background_music": false,
+      "avatar": false,
+      "audio_qa_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/tsukumogami/final/audio-binding.json",
+      "audio_qa_sha256": "b09e1debfb4a31adddd6afa4d7fa8ceb93d4c39f0e12ee901afc6063aa4a3bfb",
+      "audio_listened": false,
+      "full_audio_waveform_binding": true
+    }
+  ],
+  "records": [
+    {
+      "id": 389294554,
+      "series": "dog_bartender",
+      "kind": "native_carousel",
+      "networks": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "athens_datetime": "2026-10-06T13:05:00+03:00",
+      "media_count": 4,
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-7935826148268303480.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-6983141712990696874.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-3885008728061579989.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-9080813065837540984.jpeg"
+      ],
+      "caption_sha256": "7223cb55f64c307c5521e96dccd74d6fecd431ea502a1d97c39faf2e66630b12",
+      "hashtags": [
+        "#ΣκύλοςΜπάρμαν",
+        "#Χιούμορ",
+        "#Ιστορίες",
+        "#Μπαρ",
+        "#Καθημερινότητα"
+      ],
+      "exact_cta": true
+    },
+    {
+      "id": 389297281,
+      "series": "relationships",
+      "kind": "native_carousel",
+      "networks": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "athens_datetime": "2026-10-06T13:25:00+03:00",
+      "media_count": 7,
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-15956424106260738408.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-13302720121401239240.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-5044672012073281547.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-16565131831830608287.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-5851539623160246425.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-13050940566317527786.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-9466781164645225551.jpeg"
+      ],
+      "caption_sha256": "51d72708f01477c412a8d344ab94ed050cc33e8f3768993b45ae30e4399e55b4",
+      "hashtags": [
+        "#Ιστορίες",
+        "#Σχέσεις",
+        "#Αγάπη",
+        "#Εμπιστοσύνη",
+        "#Συντροφικότητα"
+      ],
+      "exact_cta": true
+    },
+    {
+      "id": 389299946,
+      "series": "survival",
+      "kind": "native_carousel",
+      "networks": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "athens_datetime": "2026-10-06T13:45:00+03:00",
+      "media_count": 9,
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-9390424578664759861.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-17201803520285161912.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-12214789244395638260.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-7872285806735053101.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-16337988527113892366.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-4883816618768288053.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-10055989095266849107.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-15940608085730734958.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-3073465919281800078.jpeg"
+      ],
+      "caption_sha256": "d903834574811196364c3e28f59d2ef1ae7d09873c012daa59c7c9f50bef0b4b",
+      "hashtags": [
+        "#ΚανόνεςΕπιβίωσης",
+        "#Πυρασφάλεια",
+        "#ΗλεκτρικήΑσφάλεια",
+        "#Προετοιμασία",
+        "#Ασφάλεια"
+      ],
+      "exact_cta": true
+    },
+    {
+      "id": 389301502,
+      "series": "love_soul_relationship",
+      "kind": "native_carousel",
+      "networks": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "athens_datetime": "2026-10-06T15:00:00+03:00",
+      "media_count": 5,
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-14770023520077852904.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-2129335350416881626.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-12786375792211825784.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-2963322273679519313.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-16145330622524203446.jpeg"
+      ],
+      "caption_sha256": "41bf8c4b9a68f55a2dcd7b585879f4efe05d6ce11980ec6fea942a77f1956fd6",
+      "hashtags": [
+        "#Οικογένεια",
+        "#Πατέρας",
+        "#Κόρη",
+        "#Ιστορίες",
+        "#Αγάπη"
+      ],
+      "exact_cta": true
+    },
+    {
+      "id": 389302501,
+      "series": "zodiac",
+      "kind": "native_carousel",
+      "networks": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "athens_datetime": "2026-10-06T14:05:00+03:00",
+      "media_count": 6,
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-3659298171682841537.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-4982654754408260386.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-14940969455631770505.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-9311906995407308397.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-17582576430766613732.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-137871174020796964.jpeg"
+      ],
+      "caption_sha256": "69beb8326e483d648873450410c2a9b5ff791c449a0183f51b77b08c70b871e3",
+      "hashtags": [
+        "#Ζώδια",
+        "#Αστρολογία",
+        "#Χιούμορ",
+        "#EscapeRoom",
+        "#Παρέα"
+      ],
+      "exact_cta": true
+    },
+    {
+      "id": 389302859,
+      "series": "myth_or_truth",
+      "kind": "native_carousel",
+      "networks": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "athens_datetime": "2026-10-06T20:00:00+03:00",
+      "media_count": 4,
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-13418631672141941797.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-653856594620969597.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-8480821225081218485.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-10172432767522332238.jpeg"
+      ],
+      "caption_sha256": "ab415dc108b05dd92fa10576ebc084559a898a70aa62607add1792ce9b12a361",
+      "hashtags": [
+        "#ΜύθοςΉΑλήθεια",
+        "#Ηλιοτρόπια",
+        "#Φυτά",
+        "#Βιολογία",
+        "#Φύση"
+      ],
+      "exact_cta": true
+    },
+    {
+      "id": 389304173,
+      "series": "dog_bartender",
+      "kind": "complete_carousel_video",
+      "networks": [
+        "youtube"
+      ],
+      "athens_datetime": "2026-10-06T13:15:00+03:00",
+      "media_count": 1,
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-14408891305692183752.mp4"
+      ],
+      "caption_sha256": "7223cb55f64c307c5521e96dccd74d6fecd431ea502a1d97c39faf2e66630b12",
+      "hashtags": [
+        "#ΣκύλοςΜπάρμαν",
+        "#Χιούμορ",
+        "#Ιστορίες",
+        "#Μπαρ",
+        "#Καθημερινότητα"
+      ],
+      "exact_cta": true
+    },
+    {
+      "id": 389305899,
+      "series": "relationships",
+      "kind": "complete_carousel_video",
+      "networks": [
+        "youtube"
+      ],
+      "athens_datetime": "2026-10-06T13:25:00+03:00",
+      "media_count": 1,
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-4394160177894275921.mp4"
+      ],
+      "caption_sha256": "51d72708f01477c412a8d344ab94ed050cc33e8f3768993b45ae30e4399e55b4",
+      "hashtags": [
+        "#Ιστορίες",
+        "#Σχέσεις",
+        "#Αγάπη",
+        "#Εμπιστοσύνη",
+        "#Συντροφικότητα"
+      ],
+      "exact_cta": true
+    },
+    {
+      "id": 389305950,
+      "series": "survival",
+      "kind": "complete_carousel_video",
+      "networks": [
+        "youtube"
+      ],
+      "athens_datetime": "2026-10-06T13:45:00+03:00",
+      "media_count": 1,
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-11774771589626709686.mp4"
+      ],
+      "caption_sha256": "d903834574811196364c3e28f59d2ef1ae7d09873c012daa59c7c9f50bef0b4b",
+      "hashtags": [
+        "#ΚανόνεςΕπιβίωσης",
+        "#Πυρασφάλεια",
+        "#ΗλεκτρικήΑσφάλεια",
+        "#Προετοιμασία",
+        "#Ασφάλεια"
+      ],
+      "exact_cta": true
+    },
+    {
+      "id": 389305999,
+      "series": "zodiac",
+      "kind": "complete_carousel_video",
+      "networks": [
+        "youtube"
+      ],
+      "athens_datetime": "2026-10-06T14:05:00+03:00",
+      "media_count": 1,
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-4349748086731368800.mp4"
+      ],
+      "caption_sha256": "69beb8326e483d648873450410c2a9b5ff791c449a0183f51b77b08c70b871e3",
+      "hashtags": [
+        "#Ζώδια",
+        "#Αστρολογία",
+        "#Χιούμορ",
+        "#EscapeRoom",
+        "#Παρέα"
+      ],
+      "exact_cta": true
+    },
+    {
+      "id": 389306148,
+      "series": "love_soul_relationship",
+      "kind": "complete_carousel_video",
+      "networks": [
+        "youtube"
+      ],
+      "athens_datetime": "2026-10-06T15:00:00+03:00",
+      "media_count": 1,
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-1968136371303319835.mp4"
+      ],
+      "caption_sha256": "41bf8c4b9a68f55a2dcd7b585879f4efe05d6ce11980ec6fea942a77f1956fd6",
+      "hashtags": [
+        "#Οικογένεια",
+        "#Πατέρας",
+        "#Κόρη",
+        "#Ιστορίες",
+        "#Αγάπη"
+      ],
+      "exact_cta": true
+    },
+    {
+      "id": 389306202,
+      "series": "myth_or_truth",
+      "kind": "complete_carousel_video",
+      "networks": [
+        "youtube"
+      ],
+      "athens_datetime": "2026-10-06T20:00:00+03:00",
+      "media_count": 1,
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-4306208915672719731.mp4"
+      ],
+      "caption_sha256": "ab415dc108b05dd92fa10576ebc084559a898a70aa62607add1792ce9b12a361",
+      "hashtags": [
+        "#ΜύθοςΉΑλήθεια",
+        "#Ηλιοτρόπια",
+        "#Φυτά",
+        "#Βιολογία",
+        "#Φύση"
+      ],
+      "exact_cta": true
+    },
+    {
+      "id": 389313993,
+      "series": "international_legend",
+      "kind": "narrated_video",
+      "networks": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "athens_datetime": "2026-10-06T22:00:00+03:00",
+      "media_count": 1,
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-14954030714088333755.mp4"
+      ],
+      "caption_sha256": "92a47b648286f9451ff648a1ab008a66f4dac6228b17f8e0a2268cbce78a25b7",
+      "hashtags": [
+        "#Τσουκουμογκάμι",
+        "#Ιαπωνία",
+        "#Λαογραφία",
+        "#ΔιεθνείςΘρύλοι",
+        "#Yokai"
+      ],
+      "exact_cta": true
+    },
+    {
+      "id": 389314811,
+      "series": "strange_real_phenomenon",
+      "kind": "narrated_video",
+      "networks": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "athens_datetime": "2026-10-06T17:00:00+03:00",
+      "media_count": 1,
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-3432370607354900943.mp4"
+      ],
+      "caption_sha256": "013adbaf081be0b4b5a25c3eb1f47410c86776f6797d6b31647152c942f118ce",
+      "hashtags": [
+        "#ΠαράξεναΦαινόμενα",
+        "#Αμμόλοφοι",
+        "#Φυσική",
+        "#Επιστήμη",
+        "#Έρημος"
+      ],
+      "exact_cta": true
+    },
+    {
+      "id": 389315514,
+      "series": "greece_two_day_trip",
+      "kind": "narrated_video",
+      "networks": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "athens_datetime": "2026-10-06T14:30:00+03:00",
+      "media_count": 1,
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-3346417477904985316.mp4"
+      ],
+      "caption_sha256": "8b868b1b13ab47a0ed124104920c77bf359bcf544b8ee6156c63383ef2c04221",
+      "hashtags": [
+        "#Πρέσπες",
+        "#ΔιήμεροΣτηνΕλλάδα",
+        "#ΆγιοςΑχίλλειος",
+        "#Ψαράδες",
+        "#Ταξίδι"
+      ],
+      "exact_cta": true
+    },
+    {
+      "id": 389315750,
+      "series": "documented_experiments",
+      "kind": "narrated_video",
+      "networks": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "athens_datetime": "2026-10-06T18:30:00+03:00",
+      "media_count": 1,
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-15224941781031624816.mp4"
+      ],
+      "caption_sha256": "0be362ad837bf69f4c7dc509a4b895f5192af9c4a67cc3aa413d41926d4826a2",
+      "hashtags": [
+        "#Ψυχολογία",
+        "#Πειράματα",
+        "#IKEAEffect",
+        "#ΑνθρώπινηΣυμπεριφορά",
+        "#Επιστήμη"
+      ],
+      "exact_cta": true
+    }
+  ],
+  "destinations": [
+    {
+      "series": "dog_bartender",
+      "network": "facebook",
+      "metricool_post_id": 389294554,
+      "athens_datetime": "2026-10-06T13:05:00+03:00",
+      "status_at_readback": "PUBLISHED",
+      "detailed_status": "Published",
+      "public_url": "https://facebook.com/122101951509477192/posts/122116741347477192"
+    },
+    {
+      "series": "dog_bartender",
+      "network": "instagram",
+      "metricool_post_id": 389294554,
+      "athens_datetime": "2026-10-06T13:05:00+03:00",
+      "status_at_readback": "PUBLISHED",
+      "detailed_status": "Published",
+      "public_url": "https://www.instagram.com/p/DeJh5ejFUYg/"
+    },
+    {
+      "series": "dog_bartender",
+      "network": "tiktok",
+      "metricool_post_id": 389294554,
+      "athens_datetime": "2026-10-06T13:05:00+03:00",
+      "status_at_readback": "PUBLISHED",
+      "detailed_status": "Published",
+      "public_url": "https://www.tiktok.com/@steliosvilanos/video/7693493987449081120"
+    },
+    {
+      "series": "relationships",
+      "network": "facebook",
+      "metricool_post_id": 389297281,
+      "athens_datetime": "2026-10-06T13:25:00+03:00",
+      "status_at_readback": "PUBLISHED",
+      "detailed_status": "Published",
+      "public_url": "https://facebook.com/122101951509477192/posts/122116752831477192"
+    },
+    {
+      "series": "relationships",
+      "network": "instagram",
+      "metricool_post_id": 389297281,
+      "athens_datetime": "2026-10-06T13:25:00+03:00",
+      "status_at_readback": "PUBLISHED",
+      "detailed_status": "Published",
+      "public_url": "https://www.instagram.com/p/DeJkNi5leN7/"
+    },
+    {
+      "series": "relationships",
+      "network": "tiktok",
+      "metricool_post_id": 389297281,
+      "athens_datetime": "2026-10-06T13:25:00+03:00",
+      "status_at_readback": "AWAITING_CONFIRMATION",
+      "detailed_status": "Published:7693498626559166497",
+      "public_url": null
+    },
+    {
+      "series": "survival",
+      "network": "facebook",
+      "metricool_post_id": 389299946,
+      "athens_datetime": "2026-10-06T13:45:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "survival",
+      "network": "instagram",
+      "metricool_post_id": 389299946,
+      "athens_datetime": "2026-10-06T13:45:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "survival",
+      "network": "tiktok",
+      "metricool_post_id": 389299946,
+      "athens_datetime": "2026-10-06T13:45:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "love_soul_relationship",
+      "network": "facebook",
+      "metricool_post_id": 389301502,
+      "athens_datetime": "2026-10-06T15:00:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "love_soul_relationship",
+      "network": "instagram",
+      "metricool_post_id": 389301502,
+      "athens_datetime": "2026-10-06T15:00:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "love_soul_relationship",
+      "network": "tiktok",
+      "metricool_post_id": 389301502,
+      "athens_datetime": "2026-10-06T15:00:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "zodiac",
+      "network": "facebook",
+      "metricool_post_id": 389302501,
+      "athens_datetime": "2026-10-06T14:05:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "zodiac",
+      "network": "instagram",
+      "metricool_post_id": 389302501,
+      "athens_datetime": "2026-10-06T14:05:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "zodiac",
+      "network": "tiktok",
+      "metricool_post_id": 389302501,
+      "athens_datetime": "2026-10-06T14:05:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "myth_or_truth",
+      "network": "facebook",
+      "metricool_post_id": 389302859,
+      "athens_datetime": "2026-10-06T20:00:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "myth_or_truth",
+      "network": "instagram",
+      "metricool_post_id": 389302859,
+      "athens_datetime": "2026-10-06T20:00:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "myth_or_truth",
+      "network": "tiktok",
+      "metricool_post_id": 389302859,
+      "athens_datetime": "2026-10-06T20:00:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "dog_bartender",
+      "network": "youtube",
+      "metricool_post_id": 389304173,
+      "athens_datetime": "2026-10-06T13:15:00+03:00",
+      "status_at_readback": "PUBLISHED",
+      "detailed_status": "Published",
+      "public_url": "https://www.youtube.com/shorts/d85futoEtOw"
+    },
+    {
+      "series": "relationships",
+      "network": "youtube",
+      "metricool_post_id": 389305899,
+      "athens_datetime": "2026-10-06T13:25:00+03:00",
+      "status_at_readback": "PUBLISHED",
+      "detailed_status": "Published",
+      "public_url": "https://www.youtube.com/shorts/n4fvbCJuTgE"
+    },
+    {
+      "series": "survival",
+      "network": "youtube",
+      "metricool_post_id": 389305950,
+      "athens_datetime": "2026-10-06T13:45:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "zodiac",
+      "network": "youtube",
+      "metricool_post_id": 389305999,
+      "athens_datetime": "2026-10-06T14:05:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "love_soul_relationship",
+      "network": "youtube",
+      "metricool_post_id": 389306148,
+      "athens_datetime": "2026-10-06T15:00:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "myth_or_truth",
+      "network": "youtube",
+      "metricool_post_id": 389306202,
+      "athens_datetime": "2026-10-06T20:00:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "international_legend",
+      "network": "facebook",
+      "metricool_post_id": 389313993,
+      "athens_datetime": "2026-10-06T22:00:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "international_legend",
+      "network": "instagram",
+      "metricool_post_id": 389313993,
+      "athens_datetime": "2026-10-06T22:00:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "international_legend",
+      "network": "tiktok",
+      "metricool_post_id": 389313993,
+      "athens_datetime": "2026-10-06T22:00:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "international_legend",
+      "network": "youtube",
+      "metricool_post_id": 389313993,
+      "athens_datetime": "2026-10-06T22:00:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "strange_real_phenomenon",
+      "network": "facebook",
+      "metricool_post_id": 389314811,
+      "athens_datetime": "2026-10-06T17:00:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "strange_real_phenomenon",
+      "network": "instagram",
+      "metricool_post_id": 389314811,
+      "athens_datetime": "2026-10-06T17:00:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "strange_real_phenomenon",
+      "network": "tiktok",
+      "metricool_post_id": 389314811,
+      "athens_datetime": "2026-10-06T17:00:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "strange_real_phenomenon",
+      "network": "youtube",
+      "metricool_post_id": 389314811,
+      "athens_datetime": "2026-10-06T17:00:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "greece_two_day_trip",
+      "network": "facebook",
+      "metricool_post_id": 389315514,
+      "athens_datetime": "2026-10-06T14:30:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "greece_two_day_trip",
+      "network": "instagram",
+      "metricool_post_id": 389315514,
+      "athens_datetime": "2026-10-06T14:30:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "greece_two_day_trip",
+      "network": "tiktok",
+      "metricool_post_id": 389315514,
+      "athens_datetime": "2026-10-06T14:30:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "greece_two_day_trip",
+      "network": "youtube",
+      "metricool_post_id": 389315514,
+      "athens_datetime": "2026-10-06T14:30:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "documented_experiments",
+      "network": "facebook",
+      "metricool_post_id": 389315750,
+      "athens_datetime": "2026-10-06T18:30:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "documented_experiments",
+      "network": "instagram",
+      "metricool_post_id": 389315750,
+      "athens_datetime": "2026-10-06T18:30:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "documented_experiments",
+      "network": "tiktok",
+      "metricool_post_id": 389315750,
+      "athens_datetime": "2026-10-06T18:30:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    },
+    {
+      "series": "documented_experiments",
+      "network": "youtube",
+      "metricool_post_id": 389315750,
+      "athens_datetime": "2026-10-06T18:30:00+03:00",
+      "status_at_readback": "PENDING",
+      "detailed_status": "Pending",
+      "public_url": null
+    }
+  ]
+}

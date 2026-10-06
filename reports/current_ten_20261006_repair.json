@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-06",
+  "timezone": "Europe/Athens",
+  "brandId": 7076410,
+  "author": "root",
+  "written_at": "2026-10-06T10:30:46.443249+00:00",
+  "repair_commits": [
+    "87fd8225691e3113d759186696a6619e8da4cae3",
+    "18984d0d7b7c60d41ac74262d57780fcef5c3313",
+    "9fa0cebf622a019d4fc910364329b6f17fbcc140"
+  ],
+  "root_findings": [
+    "Daily production and next-day prebuild automations were disabled when inspected; cause of disabling was not established.",
+    "Configuration/state files contained trailing literal escape sequences that broke JSON parsing.",
+    "Legacy static image query/title fallbacks and premature publish_ready flags permitted stale media or unjustified release claims.",
+    "The audio export was delayed by a large media-output branch fetch; bounded Git Data API persistence completed successfully."
+  ],
+  "fixes": [
+    "Restored daily production at06:00 and next-day prebuild at21:00 Europe/Athens with exact10logical40destination baseline.",
+    "Hardened hourly QA for production ownership, fresh three-source duplicate checks, and retrying only failed destinations; nightly23:30 audit reconciles read-only.",
+    "Repaired invalid JSON and the one-carousel six-card zodiac policy.",
+    "Removed stale source fallbacks; final sources are explicit and render completion does not auto-approve publication.",
+    "Retired accidental push triggers on dated historical workflows.",
+    "Replaced the slow branch checkout with bounded artifact and Git Data API preservation.",
+    "Produced and verified 10 fresh logical posts,35finalJPEGcards,10finalMP4videos; all40destinations have actual Metricool records and10uniqueNotionarchivepages."
+  ],
+  "verification": {
+    "metricool_records": 16,
+    "logical_posts": 10,
+    "provider_destinations": 40,
+    "published_destinations_at_last_readback": 8,
+    "scheduled_destinations_at_last_readback": 32,
+    "notion_pages": 10,
+    "independent_delivery_audit_failures": 0,
+    "historical_metricool_records_checked": 208,
+    "historical_notion_rows_before_today": 158,
+    "repo_history_topics": 133,
+    "repository_manifests_in_topic_catalog": 67,
+    "full_repository_files_initially_read": 84,
+    "narrated_durations_seconds": [
+      83.666667,
+      87.5,
+      91.233333,
+      87.966667
+    ],
+    "voice": "el-GR-NestorasNeural"
+  },
+  "quality_corrections_before_narrated_upload": [
+    "Prespes scene boundaries corrected so Psarades and boat-tour references align with the actual location images.",
+    "IKEA closing punctuation attached to its prior subtitle cue; all48finalcues rereviewed."
+  ],
+  "audio_evidence_limits": "Complete decoded AAC signal binding and independent unprompted Greek ASR were checked, with residual recognition ambiguities documented. Direct listening is not claimed.",
+  "future_buffer_note": "No completed two-day future-content buffer is claimed by this repair; next-dayprebuildautomationisrestored.",
+  "asset_persistence": "Separate bounded45-file workflow validates actual CDN bytes against reviewedSHA256 and reads back storedGitblobIDsandsizes; see its final result for success."
+}

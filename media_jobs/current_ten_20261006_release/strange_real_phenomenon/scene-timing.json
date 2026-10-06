@@ -1,0 +1,74 @@
+[
+  {
+    "scene": 1,
+    "source_index": 1,
+    "anchor": "",
+    "anchor_seconds": 0.0,
+    "start": 0.0,
+    "end": 9.433333333333334,
+    "duration": 9.433333333333334,
+    "frames": 283,
+    "anchor_adjustment_seconds": 0.0,
+    "source_sha256": "1d2f7fbc4df9cef21a72db90a705f5c3023596980fd3b0f935749a982df53195"
+  },
+  {
+    "scene": 2,
+    "source_index": 2,
+    "anchor": "Το φαινόμενο λέγεται",
+    "anchor_seconds": 9.425,
+    "start": 9.433333333333334,
+    "end": 23.066666666666666,
+    "duration": 13.633333333333333,
+    "frames": 409,
+    "anchor_adjustment_seconds": 0.0,
+    "source_sha256": "b611804801c5fe90f48bc1031517fbe7c1aea0155e1e0ce59f0567d0446c527a"
+  },
+  {
+    "scene": 3,
+    "source_index": 3,
+    "anchor": "Το 2006",
+    "anchor_seconds": 23.0625,
+    "start": 23.066666666666666,
+    "end": 35.666666666666664,
+    "duration": 12.6,
+    "frames": 378,
+    "anchor_adjustment_seconds": 0.0,
+    "source_sha256": "331f5794971a618eb54d1a089df0fba95c2f088e6ff4892c2a2b69a548c966d4"
+  },
+  {
+    "scene": 4,
+    "source_index": 4,
+    "anchor": "Η έκπληξη ήταν",
+    "anchor_seconds": 35.65,
+    "start": 35.666666666666664,
+    "end": 42.666666666666664,
+    "duration": 7.0,
+    "frames": 210,
+    "anchor_adjustment_seconds": 0.0,
+    "source_sha256": "e75fbde52ae8cbce7269c99263dc3bbf3674a11663cb776570578ebe08ca0fcc"
+  },
+  {
+    "scene": 5,
+    "source_index": 5,
+    "anchor": "Σε μεταγενέστερη μελέτη",
+    "anchor_seconds": 41.7,
+    "start": 42.666666666666664,
+    "end": 70.83333333333333,
+    "duration": 28.166666666666668,
+    "frames": 845,
+    "anchor_adjustment_seconds": 0.95,
+    "source_sha256": "23b38ec9df396a178744199cd1edd0d8b9b18b53a59057b7fd1074f92f1ecb0f"
+  },
+  {
+    "scene": 6,
+    "source_index": 6,
+    "anchor": "Σκέψου την εικόνα",
+    "anchor_seconds": 70.8375,
+    "start": 70.83333333333333,
+    "end": 87.5,
+    "duration": 16.666666666666668,
+    "frames": 500,
+    "anchor_adjustment_seconds": 0.0,
+    "source_sha256": "1bae760a04c9faa2676a827d4f0df36b7d63f86c1663494ff3ca237195233800"
+  }
+]

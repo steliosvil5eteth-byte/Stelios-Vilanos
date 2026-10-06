@@ -1,0 +1,83 @@
+[
+  {
+    "series": "dog_bartender",
+    "number": 1,
+    "source": "/workspace/scratch/73e79e1cf9df/generated_images/exec-cccfb4a2-87a8-43a4-9479-fa2487ece5d7.png",
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/dog_bartender/01.png",
+    "sha256": "13b479a33923071fc4267e82620bc268a478e57394e9d89b2cbf41ec14d68b14"
+  },
+  {
+    "series": "dog_bartender",
+    "number": 2,
+    "hint": "Generated images are saved to /workspace/scratch/73e79e1cf9df/generated_images as /workspace/scratch/73e79e1cf9df/generated_images/exec-3c74580b-7abf-49e5-8c2b-a1678d02a265.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "source": "/workspace/scratch/73e79e1cf9df/generated_images/exec-3c74580b-7abf-49e5-8c2b-a1678d02a265.png",
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/dog_bartender/02.png",
+    "sha256": "8bdc466dce20d6d55a8474ee504c83b28ce2bae315aa5ab228de8018cfa850b2"
+  },
+  {
+    "series": "dog_bartender",
+    "number": 3,
+    "hint": "Generated images are saved to /workspace/scratch/73e79e1cf9df/generated_images as /workspace/scratch/73e79e1cf9df/generated_images/exec-f88b9fe5-1dd4-43b2-bc69-a606a1551a20.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "source": "/workspace/scratch/73e79e1cf9df/generated_images/exec-f88b9fe5-1dd4-43b2-bc69-a606a1551a20.png",
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/dog_bartender/03.png",
+    "sha256": "4e029f18e6a0d88d53979aea5ad59cb953b034d6a79755e40b62d901b36c3c98"
+  },
+  {
+    "series": "dog_bartender",
+    "number": 4,
+    "hint": "Generated images are saved to /workspace/scratch/73e79e1cf9df/generated_images as /workspace/scratch/73e79e1cf9df/generated_images/exec-6de172de-0fb9-442f-a420-c272864d9af6.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "source": "/workspace/scratch/73e79e1cf9df/generated_images/exec-6de172de-0fb9-442f-a420-c272864d9af6.png",
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/dog_bartender/04.png",
+    "sha256": "5cad609ece99d1458323c9956693b605644f0d3713752cc797f6fc65c1b04731"
+  },
+  {
+    "series": "zodiac",
+    "number": 1,
+    "hint": "Generated images are saved to /workspace/scratch/73e79e1cf9df/generated_images as /workspace/scratch/73e79e1cf9df/generated_images/exec-2b4adb77-23f9-4ee1-a412-f2d1d532d576.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "source": "/workspace/scratch/73e79e1cf9df/generated_images/exec-2b4adb77-23f9-4ee1-a412-f2d1d532d576.png",
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/zodiac/01.png",
+    "sha256": "cc401651e01f1bcf170dde6c587751caf7bd77b80209fab28dc8c26c0864f86d"
+  },
+  {
+    "series": "zodiac",
+    "number": 2,
+    "hint": "Generated images are saved to /workspace/scratch/73e79e1cf9df/generated_images as /workspace/scratch/73e79e1cf9df/generated_images/exec-5f3849bc-5899-430b-b3e1-b64b2fec6e7c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "source": "/workspace/scratch/73e79e1cf9df/generated_images/exec-5f3849bc-5899-430b-b3e1-b64b2fec6e7c.png",
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/zodiac/02.png",
+    "sha256": "1928c10b7abe111b7104e429a601b48ccb9be5b73eacc10fba3bd0cd4e22f546"
+  },
+  {
+    "series": "zodiac",
+    "number": 3,
+    "hint": "Generated images are saved to /workspace/scratch/73e79e1cf9df/generated_images as /workspace/scratch/73e79e1cf9df/generated_images/exec-7b4939ef-0fc7-4ca8-bb5f-7a579168ded2.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "source": "/workspace/scratch/73e79e1cf9df/generated_images/exec-7b4939ef-0fc7-4ca8-bb5f-7a579168ded2.png",
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/zodiac/03.png",
+    "sha256": "6615af134b8d04d5c1ea31cd6994eff2ce6425efde76442de7aab8a196efec6a"
+  },
+  {
+    "series": "zodiac",
+    "number": 4,
+    "source": "/workspace/scratch/73e79e1cf9df/generated_images/exec-c12f4c0a-feaa-44db-8f73-e17bc56c051b.png",
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/zodiac/04.png",
+    "sha256": "41921c78fc9b7007dc5e627181985d421d52a63e521e40affe032d599a455f7a",
+    "rejected_source": "/workspace/scratch/73e79e1cf9df/generated_images/exec-13013ac8-3d42-436f-afce-1889df9e7796.png",
+    "rejected_sha256": "979a9f0a88f5fc29fff95bb17cd518eeeb36b81f85f6eb02730c8bcabf707733",
+    "correction": "Removed duplicated pair; exactly one couple, directly visually reviewed, final composition used in releasedcard4."
+  },
+  {
+    "series": "zodiac",
+    "number": 5,
+    "hint": "Generated images are saved to /workspace/scratch/73e79e1cf9df/generated_images as /workspace/scratch/73e79e1cf9df/generated_images/exec-18f3d35c-03b1-4312-9a0e-c147e0755182.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "source": "/workspace/scratch/73e79e1cf9df/generated_images/exec-18f3d35c-03b1-4312-9a0e-c147e0755182.png",
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/zodiac/05.png",
+    "sha256": "0b01c6d8ac6e310675d9b708cbf3c382878d755519f8712732abee5093f0dc7b"
+  },
+  {
+    "series": "zodiac",
+    "number": 6,
+    "hint": "Generated images are saved to /workspace/scratch/73e79e1cf9df/generated_images as /workspace/scratch/73e79e1cf9df/generated_images/exec-033134a9-f767-4e46-8739-1018f336fc3e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+    "source": "/workspace/scratch/73e79e1cf9df/generated_images/exec-033134a9-f767-4e46-8739-1018f336fc3e.png",
+    "path": "/workspace/scratch/73e79e1cf9df/production_20261006/sources/zodiac/06.png",
+    "sha256": "285c83be368b893e9859605b0db8cf87e148d9297e16331869bf9daf543064ef"
+  }
+]

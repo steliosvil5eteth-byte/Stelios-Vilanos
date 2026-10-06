@@ -1,0 +1,19 @@
+{
+  "source_audio_sha256": "f27e1328487ccdd48b8c7a7f99468599ac487682be22fd694f8f1216c97e6ad9",
+  "video_sha256": "02855ad188063f1f843f81e65f911776ae4dcc40c41454f55d5dceac05385cf3",
+  "lag_samples": 0,
+  "lag_seconds": 0.0,
+  "correlation": 0.9994752969821535,
+  "minimum_voiced_two_second_correlation": 0.9991980543846606,
+  "signal_to_error_db": 29.7871452417326,
+  "gain": 0.9933468158045125,
+  "decoded_peak": 0.6826171875,
+  "clipped_sample_fraction": 0.0,
+  "silences_over_1_2_seconds": [],
+  "decoded_seconds": 83.66933333333333,
+  "source_seconds": 83.66004166666667,
+  "direct_listening_claimed": false,
+  "independent_asr_review_required": true,
+  "waveform_binding_passed": true,
+  "signal_quality_passed": true
+}

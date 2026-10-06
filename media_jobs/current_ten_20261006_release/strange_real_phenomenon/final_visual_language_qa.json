@@ -1,0 +1,827 @@
+{
+  "status": "APPROVED_VISUAL_FACTUAL_WITH_DOCUMENTED_ASR_VARIANTS",
+  "reviewed_at_utc": "2026-10-06T10:21:59.861096+00:00",
+  "reviewer": "repo_audit exact final media review",
+  "job_id": "current-ten-20261006-singing-dunes",
+  "series": "strange_real_phenomenon",
+  "video_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/current-ten-20261006-singing-dunes.mp4",
+  "video_sha256": "dec4523bee6a7a28ef2905f85e937fdc7a704ad017f8d41244fb6122989c0292",
+  "duration_seconds": 87.5,
+  "minimum_80_seconds_passed": true,
+  "width": 1080,
+  "height": 1920,
+  "frame_rate": "30/1",
+  "voice": "el-GR-NestorasNeural",
+  "provider": "Azure Speech",
+  "listened": false,
+  "direct_listening_claimed": false,
+  "audio_tested": true,
+  "audio_verification_methods": [
+    "Independent el-GR ASR of original hashed source WAV with no script hints; all top-choice differences and relevant NBest hypotheses reviewed",
+    "Full decoded final AAC signal matched to complete source WAV at zero lag, including every voiced two-second window",
+    "Approved script token sequence equals all burned subtitle cues; all 46 burned cues directly read on exact video frame crop sheets"
+  ],
+  "audio_stream_count": 1,
+  "background_music": false,
+  "avatar": false,
+  "filler_padding": false,
+  "source_audio_sha256": "244212d75a1bd5e7a54a836f24106a730466f51797324ca40e8522de0ef88c92",
+  "script_text_sha256": "8b71c86dcf8e209a497c06e7fbe13d1af5ab1f7483db51ddf694588d67a3ccc2",
+  "script_file_sha256": "687da5d8c543cb0870c8419a178bc24c63a738319199f7a1e9d4281cd920fe1f",
+  "srt_sha256": "24905ac361dd03f1e89df2815761ecb9d703698df9b9921433fde83c084242a4",
+  "ass_sha256": "6be24fcf495e5661c2ad2caebe0ae8f7c7d476add0e47615872c7e4a4caac1e0",
+  "source_word_count": 218,
+  "srt_and_burned_ass_all_words_match_script": true,
+  "subtitle_cue_count": 46,
+  "every_cue_directly_read": true,
+  "subtitle_cues": [
+    {
+      "cue": 1,
+      "start_seconds": 0.05,
+      "end_seconds": 1.54,
+      "burned_text": "Στη μέση της ερήμου, η",
+      "capture_frame_number": 24,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-001.jpg",
+      "capture_sha256": "6d74a85efe926682dc622a806523ab50d0e59270a705ac235bc34ff99f621730",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 2,
+      "start_seconds": 1.54,
+      "end_seconds": 3.69,
+      "burned_text": "άμμος μπορεί να τραγουδήσει.",
+      "capture_frame_number": 78,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-002.jpg",
+      "capture_sha256": "5ec19c749b43ea15fa779a20d1019896e0e25f19453a06ea18f4ffb80184ed15",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 3,
+      "start_seconds": 3.69,
+      "end_seconds": 5.86,
+      "burned_text": "Ένα βαθύ, παρατεταμένο\nβουητό βγαίνει",
+      "capture_frame_number": 143,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-003.jpg",
+      "capture_sha256": "94cb9f146dd85639384961d5b08346d3708fea9622a5e33dbfdded8785feb458",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 4,
+      "start_seconds": 5.86,
+      "end_seconds": 7.31,
+      "burned_text": "από την πλαγιά, καθώς κόκκοι",
+      "capture_frame_number": 198,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-004.jpg",
+      "capture_sha256": "1c04fc1acebddcf3ea62b36e0a5738ef4a24bf12fe51f82d7de923c641411bf7",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 5,
+      "start_seconds": 7.31,
+      "end_seconds": 9.43,
+      "burned_text": "άμμου αρχίζουν να γλιστρούν.",
+      "capture_frame_number": 251,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-005.jpg",
+      "capture_sha256": "8d70253b1d9dc3de454a1462a4938e1a591668d9a137a3462fbfb010c1483575",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 6,
+      "start_seconds": 9.43,
+      "end_seconds": 11.34,
+      "burned_text": "Το φαινόμενο λέγεται\n«τραγούδι των",
+      "capture_frame_number": 312,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-006.jpg",
+      "capture_sha256": "855bbeef6015b5b788f7b0beb491107e276af0a1864268faed15fab85224c007",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 7,
+      "start_seconds": 11.34,
+      "end_seconds": 14.62,
+      "burned_text": "αμμόλοφων» και έχει\nκαταγραφεί επιστημονικά.",
+      "capture_frame_number": 389,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-007.jpg",
+      "capture_sha256": "02fcfc461da6addebdd2234d28feee420447e3117a7dc1f635691a3d99ecdb92",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 8,
+      "start_seconds": 14.62,
+      "end_seconds": 17.14,
+      "burned_text": "Δεν το παράγει\nκάθε αμμόλοφος.",
+      "capture_frame_number": 476,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-008.jpg",
+      "capture_sha256": "05847398ab6c2ecbf18365202f20954b550fb6d1dcd0b73bb219cd82d77e5938",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 9,
+      "start_seconds": 17.14,
+      "end_seconds": 19.51,
+      "burned_text": "Χρειάζονται κατάλληλη\nάμμος, ξηρές συνθήκες",
+      "capture_frame_number": 550,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-009.jpg",
+      "capture_sha256": "97a40d7cbd03a58631fb83bd806ad4344763d9ada8f5ce15c8427dbb67221385",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 10,
+      "start_seconds": 19.51,
+      "end_seconds": 20.6,
+      "burned_text": "και μια ροή κόκκων που μπορεί",
+      "capture_frame_number": 602,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-010.jpg",
+      "capture_sha256": "c6079ea7ba823ab19b707fd472257a6ee99712f025f4fcaad01431adce89c099",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 11,
+      "start_seconds": 20.6,
+      "end_seconds": 23.06,
+      "burned_text": "να οργανωθεί με\nσυγκεκριμένο τρόπο.",
+      "capture_frame_number": 655,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-011.jpg",
+      "capture_sha256": "630ece2ca27bf6b735dbe285d73a7e58680718bd8967b70324da1d23052e64aa",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 12,
+      "start_seconds": 23.06,
+      "end_seconds": 25.29,
+      "burned_text": "Το 2006, ο Στεφάν Ντουαντί",
+      "capture_frame_number": 725,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-012.jpg",
+      "capture_sha256": "cebb215409afcc02dec805d89fb760f4eb4e021c67ab6fd0ed0d04336251dc06",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 13,
+      "start_seconds": 25.29,
+      "end_seconds": 27.0,
+      "burned_text": "και οι συνεργάτες του\nσυνέκριναν αμμόλοφους",
+      "capture_frame_number": 784,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-013.jpg",
+      "capture_sha256": "5ba48781a351c0593fa8fac321147ee12d6530076bc3a4994240a50612a9edd3",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 14,
+      "start_seconds": 27.0,
+      "end_seconds": 28.66,
+      "burned_text": "και πραγματοποίησαν\nπειράματα στο πεδίο",
+      "capture_frame_number": 835,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-014.jpg",
+      "capture_sha256": "aaa131396979d4e730d50eb169c283f4b2decac80b04a69e92b65c2a645898a5",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 15,
+      "start_seconds": 28.66,
+      "end_seconds": 30.45,
+      "burned_text": "και στο εργαστήριο.",
+      "capture_frame_number": 887,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-015.jpg",
+      "capture_sha256": "b8a854255c2bd206b9a47f2b15718e8ebeabd76cdcaea88bb25e1b290d73702f",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 16,
+      "start_seconds": 30.45,
+      "end_seconds": 32.06,
+      "burned_text": "Τα αποτελέσματά τους\nσυνέδεσαν τον ήχο",
+      "capture_frame_number": 938,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-016.jpg",
+      "capture_sha256": "2d38ce3951887a3b9a4ba08820512e3b62e754be1f9e0f76a7317122cec3acae",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 17,
+      "start_seconds": 32.06,
+      "end_seconds": 34.17,
+      "burned_text": "με τη σχετική,\nσυγχρονισμένη κίνηση",
+      "capture_frame_number": 993,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-017.jpg",
+      "capture_sha256": "b60cfcf4003241bc06ae8ab1bc69c50e90eb4409ae6180e502bfd79c9270c5b8",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 18,
+      "start_seconds": 34.17,
+      "end_seconds": 35.65,
+      "burned_text": "των κόκκων.",
+      "capture_frame_number": 1047,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-018.jpg",
+      "capture_sha256": "4ee5d31825cdfd061b935d81dd3dc094914330fb4b9c4719cb13b59b1330e579",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 19,
+      "start_seconds": 35.65,
+      "end_seconds": 37.1,
+      "burned_text": "Η έκπληξη ήταν\nότι κατάφεραν να",
+      "capture_frame_number": 1091,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-019.jpg",
+      "capture_sha256": "d114f8021fafbb6a57a11caae314c2b9ab47e933fb0bd70d16ed968ff267dc21",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 20,
+      "start_seconds": 37.1,
+      "end_seconds": 38.72,
+      "burned_text": "παράγουν τον ήχο\nστο εργαστήριο,",
+      "capture_frame_number": 1137,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-020.jpg",
+      "capture_sha256": "1f5d1c0d04ee67057b6e16d85b830dae49260881b72eb78160b743d3a5da6e8c",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 21,
+      "start_seconds": 38.72,
+      "end_seconds": 41.7,
+      "burned_text": "χωρίς να χρειάζονται\nέναν ολόκληρο αμμόλοφο.",
+      "capture_frame_number": 1206,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-021.jpg",
+      "capture_sha256": "48d5e1b22550b96d71642e21728336156331c62b6fc16e96a882537c8ee1ad4f",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 22,
+      "start_seconds": 41.7,
+      "end_seconds": 44.71,
+      "burned_text": "Σε μεταγενέστερη\nμελέτη, το 2012,",
+      "capture_frame_number": 1296,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-022.jpg",
+      "capture_sha256": "cbd2936ab6d8cf93e0175e377466da902d263d1824868dfc661cc5461fa7bce3",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 23,
+      "start_seconds": 44.71,
+      "end_seconds": 46.4,
+      "burned_text": "οι ερευνητές εξέτασαν\nκαι τη σημασία",
+      "capture_frame_number": 1367,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-023.jpg",
+      "capture_sha256": "71d087ae1363957eb0e0cb18cf68e19c40147239fecdd1ff4e0562413c851920",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 24,
+      "start_seconds": 46.4,
+      "end_seconds": 48.34,
+      "burned_text": "του μεγέθους των κόκκων.",
+      "capture_frame_number": 1421,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-024.jpg",
+      "capture_sha256": "1e08463704b6b2dc5edff801963dd5c413bd9aa522f494e8bf27d7292abb8116",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 25,
+      "start_seconds": 48.34,
+      "end_seconds": 50.32,
+      "burned_text": "Δείγματα με διαφορετικές\nομάδες μεγεθών",
+      "capture_frame_number": 1480,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-025.jpg",
+      "capture_sha256": "84aa6ec91a85cd93a0d9d8192582de9d8f59b968c13bf9b01f3468fee56390c2",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 26,
+      "start_seconds": 50.32,
+      "end_seconds": 51.9,
+      "burned_text": "μπορούσαν να δίνουν\nπερισσότερες από μία",
+      "capture_frame_number": 1533,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-026.jpg",
+      "capture_sha256": "04ed846e5b177245ad91c2c862cc16c92bdb9a8c5a20b87fbcd8283823aef9c7",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 27,
+      "start_seconds": 51.9,
+      "end_seconds": 53.5,
+      "burned_text": "συχνότητες.",
+      "capture_frame_number": 1581,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-027.jpg",
+      "capture_sha256": "f13ae54f5fe1e965c15aae62a213993842e5f8dee836f3588d63a0e290fc9e27",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 28,
+      "start_seconds": 53.5,
+      "end_seconds": 55.08,
+      "burned_text": "Έτσι, η σύνθεση της άμμου",
+      "capture_frame_number": 1629,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-028.jpg",
+      "capture_sha256": "72268a519357c9795c2fd9a24098b015ebcffef6394cb9331ffebda216b335e4",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 29,
+      "start_seconds": 55.08,
+      "end_seconds": 56.84,
+      "burned_text": "βοηθά να καταλάβουμε\nγιατί διαφορετικές",
+      "capture_frame_number": 1679,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-029.jpg",
+      "capture_sha256": "e9bd85295c688044b2528ebb4c1e240834a135a6f04bd4075ada3feb134d2e4a",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 30,
+      "start_seconds": 56.84,
+      "end_seconds": 59.16,
+      "burned_text": "ροές ακούγονται διαφορετικά.",
+      "capture_frame_number": 1740,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-030.jpg",
+      "capture_sha256": "1dc8cdfd523ae7a6a8dbd900cac9fa4b44c00bb62b2fe9651405125d71c329b1",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 31,
+      "start_seconds": 59.16,
+      "end_seconds": 61.06,
+      "burned_text": "Οι επιστημονικές\nεξηγήσεις για τον ακριβή",
+      "capture_frame_number": 1803,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-031.jpg",
+      "capture_sha256": "d70c3fa40fc2ef33e2ab7156362915aafcb44aee60d585c49fee9f2fd66b6e94",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 32,
+      "start_seconds": 61.06,
+      "end_seconds": 64.15,
+      "burned_text": "μηχανισμό έχουν\nσυζητηθεί και συγκριθεί.",
+      "capture_frame_number": 1878,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-032.jpg",
+      "capture_sha256": "6da026b56d5d34165b5f1421c6de54aca428c254658067a29518909a1089c125",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 33,
+      "start_seconds": 64.15,
+      "end_seconds": 65.8,
+      "burned_text": "Το ασφαλές συμπέρασμα\nείναι ότι πρόκειται",
+      "capture_frame_number": 1949,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-033.jpg",
+      "capture_sha256": "131d4344b74a8031f81906b55a00af94148e77accebb4273293ac31eb5970dd3",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 34,
+      "start_seconds": 65.8,
+      "end_seconds": 68.16,
+      "burned_text": "για πραγματικό ακουστικό\nφαινόμενο, συνδεδεμένο",
+      "capture_frame_number": 2009,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-034.jpg",
+      "capture_sha256": "2cc3b3e4b1a9370d43c280c6110f53ec9a4416929fa8c698f07d7a3ba1c0fdd6",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 35,
+      "start_seconds": 68.16,
+      "end_seconds": 69.41,
+      "burned_text": "με την κίνηση και τις ιδιότητες",
+      "capture_frame_number": 2064,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-035.jpg",
+      "capture_sha256": "51dc9027c7d51f765a8a73e9b85c514663acc022eb8c50cee1808beacc95bba2",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 36,
+      "start_seconds": 69.41,
+      "end_seconds": 70.84,
+      "burned_text": "της άμμου.",
+      "capture_frame_number": 2104,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-036.jpg",
+      "capture_sha256": "a05a2efadf5c44b4fdf0e6cbdd77765571f558ae669616c703ad442e2e2d97a0",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 37,
+      "start_seconds": 70.84,
+      "end_seconds": 72.89,
+      "burned_text": "Σκέψου την εικόνα:\nένας τεράστιος",
+      "capture_frame_number": 2156,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-037.jpg",
+      "capture_sha256": "5b7d969a75be4507489e8fd86f3733161684ca97fe7c874263b0bfa04417806d",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 38,
+      "start_seconds": 72.89,
+      "end_seconds": 74.99,
+      "burned_text": "λόφος, φαινομενικά\nακίνητος, και",
+      "capture_frame_number": 2218,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-038.jpg",
+      "capture_sha256": "2abe5385485c0ec8cb580073d15460f50437c4a67e495ab276fa7b8d26b7b6f6",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 39,
+      "start_seconds": 74.99,
+      "end_seconds": 76.56,
+      "burned_text": "αμέτρητοι μικροσκοπικοί\nκόκκοι που μαζί",
+      "capture_frame_number": 2273,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-039.jpg",
+      "capture_sha256": "70e0a29731861cc50403eca30963f0c319b447c43fad380338e8dedeb50ff2df",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 40,
+      "start_seconds": 76.56,
+      "end_seconds": 78.15,
+      "burned_text": "παράγουν έναν ήχο\nαρκετά δυνατό ώστε",
+      "capture_frame_number": 2321,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-040.jpg",
+      "capture_sha256": "8df0b00f3688ae4700b8ca17530a1d47a9fb8b274a440731ac919f3022781ada",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 41,
+      "start_seconds": 78.15,
+      "end_seconds": 79.74,
+      "burned_text": "να τον ακούσεις.",
+      "capture_frame_number": 2368,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-041.jpg",
+      "capture_sha256": "a848e27a1890fe6db9e7eb7e72213cbff0127b34c33064a50fa92bc415eb0510",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 42,
+      "start_seconds": 79.74,
+      "end_seconds": 81.3,
+      "burned_text": "Αν βρισκόσουν εκεί\nχωρίς να ξέρεις",
+      "capture_frame_number": 2416,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-042.jpg",
+      "capture_sha256": "d79299f93f93e637db59f4520ffdfccf2948779a87eee4daf6937633b783e222",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 43,
+      "start_seconds": 81.3,
+      "end_seconds": 82.71000000000001,
+      "burned_text": "την εξήγηση, από πού θα",
+      "capture_frame_number": 2460,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-043.jpg",
+      "capture_sha256": "b36fbcc23fc7ee72f69f0c518f5669fcda660a7792a3b30d544530f8eb2481d1",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 44,
+      "start_seconds": 82.71000000000001,
+      "end_seconds": 84.99,
+      "burned_text": "νόμιζες ότι έρχεται το βουητό;",
+      "capture_frame_number": 2516,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-044.jpg",
+      "capture_sha256": "8240a785f8b29b04eccf6eadfdc3cc1a8d26d61b9b7cc22f50c98b97aaa11a4b",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 45,
+      "start_seconds": 84.99,
+      "end_seconds": 86.89,
+      "burned_text": "Αν σας άρεσε, ακολουθήστε για",
+      "capture_frame_number": 2578,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-045.jpg",
+      "capture_sha256": "587d70f61f187c3f85a94378b2635dd947d851d3c13f53c325bf4e04d8a1a549",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    },
+    {
+      "cue": 46,
+      "start_seconds": 86.89,
+      "end_seconds": 87.47,
+      "burned_text": "περισσότερα.",
+      "capture_frame_number": 2615,
+      "capture_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/caption_frames/cue-046.jpg",
+      "capture_sha256": "fea93f156e9c44588861888d4512692708213575319083bd5b72c65060fff748",
+      "directly_read_on_exact_frame_crop_sheet": true,
+      "full_text_legible": true,
+      "clipping_or_missing_glyphs": false
+    }
+  ],
+  "scenes": {
+    "count": 6,
+    "distinct_source_count": 6,
+    "all_source_images_directly_inspected": true,
+    "all_final_scene_frames_directly_inspected": true,
+    "minimum_scene_seconds": 7.0,
+    "full_scene_review_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/final/final-contact-sheet.jpg",
+    "source_registry_path": "/workspace/scratch/73e79e1cf9df/production_20261006/narrated/singing_dunes/source_registry.json",
+    "findings": "Six distinct photographic reconstructions match dune formation, grain motion, field/laboratory research and reflective ending. Greek text legible within safe area; no clipping, missing glyphs, factual image labels, grids, or unannounced natural-sound claims."
+  },
+  "asr_reconciliation": {
+    "asr_completed": true,
+    "recognizer_received_script_hints": false,
+    "asr_audio_sha256": "244212d75a1bd5e7a54a836f24106a730466f51797324ca40e8522de0ef88c92",
+    "normalized_exact_match": false,
+    "all_differences_reviewed": true,
+    "differences": [
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          18,
+          20
+        ],
+        "recognized_word_range": [
+          18,
+          20
+        ],
+        "expected": "κοκκοι αμμου",
+        "recognized": "κοκκια μου",
+        "assessment": "Phonetic word-boundary merge: κόκκοι άμμου recognized as κόκκια μου; source word events and burned text preserve approved two words."
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          22,
+          23
+        ],
+        "recognized_word_range": [
+          22,
+          23
+        ],
+        "expected": "γλιστρουν",
+        "recognized": "γλισρουν",
+        "assessment": "Recognizer drops consonant in top choice; expected γλιστρούν appears in NBest."
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          44,
+          47
+        ],
+        "recognized_word_range": [
+          44,
+          45
+        ],
+        "expected": "μια ροη κοκκων",
+        "recognized": "μιαρωικον",
+        "assessment": "Low-confidence merged-word hypothesis for μια ροή κόκκων. This ASR result cannot establish a missing or substituted spoken phrase; full source audio and subtitles preserved."
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          57,
+          59
+        ],
+        "recognized_word_range": [
+          55,
+          57
+        ],
+        "expected": "στεφαν ντουαντι",
+        "recognized": "στεφαντου αντι",
+        "assessment": "Foreign-name segmentation: Στεφάν Ντουαντί recognized as Στεφάντου αντί. Named researcher is correct in script and burned subtitles."
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          62,
+          63
+        ],
+        "recognized_word_range": [
+          60,
+          61
+        ],
+        "expected": "του",
+        "recognized": "τουσ",
+        "assessment": "του/τους ambiguity before following sigma; alternate hypothesis supports expected particle."
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          75,
+          76
+        ],
+        "recognized_word_range": [
+          73,
+          74
+        ],
+        "expected": "τουσ",
+        "recognized": "του",
+        "assessment": "τους/του recognition ambiguity; alternate hypothesis supports expected particle."
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          85,
+          86
+        ],
+        "recognized_word_range": [
+          83,
+          84
+        ],
+        "expected": "κοκκων",
+        "recognized": "κοκων",
+        "assessment": "Double-consonant spelling variation κόκκων/κόκων; homophonic in Greek."
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          102,
+          103
+        ],
+        "recognized_word_range": [
+          100,
+          101
+        ],
+        "expected": "αμμολοφο",
+        "recognized": "αμολοφο",
+        "assessment": "Double-consonant spelling variation αμμόλοφο/αμόλοφο; homophonic in Greek."
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          117,
+          118
+        ],
+        "recognized_word_range": [
+          115,
+          116
+        ],
+        "expected": "κοκκων",
+        "recognized": "κοκων",
+        "assessment": "Double-consonant spelling variation κόκκων/κόκων; homophonic in Greek."
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          134,
+          136
+        ],
+        "recognized_word_range": [
+          132,
+          134
+        ],
+        "expected": "αμμου βοηθα",
+        "recognized": "αμπου βοη",
+        "assessment": "Low-confidence phrase hypothesis άμπου βοη for άμμου βοηθά; βοηθά is present in NBest. Record uncertainty without claiming exact independent pronunciation verification."
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          138,
+          139
+        ],
+        "recognized_word_range": [
+          136,
+          138
+        ],
+        "expected": "γιατι",
+        "recognized": "για τη",
+        "assessment": "Homophonic segmentation γιατί/για τη."
+      },
+      {
+        "kind": "replace",
+        "expected_word_range": [
+          172,
+          173
+        ],
+        "recognized_word_range": [
+          171,
+          172
+        ],
+        "expected": "αμμου",
+        "recognized": "αμου",
+        "assessment": "Double-consonant spelling variation άμμου/άμου; homophonic in Greek."
+      }
+    ],
+    "errors": [],
+    "no_match_regions": [],
+    "established_missing_or_repeated_passage": false,
+    "direct_perceptual_pronunciation_certainty": false,
+    "limitation": "No actual listening was available. ASR hypotheses contain lexical and segmentation uncertainties; provider text events and full signal binding establish delivery of the complete generated source, not perfect independent recognition of every phoneme."
+  },
+  "audio_binding": {
+    "source_audio_sha256": "244212d75a1bd5e7a54a836f24106a730466f51797324ca40e8522de0ef88c92",
+    "video_sha256": "dec4523bee6a7a28ef2905f85e937fdc7a704ad017f8d41244fb6122989c0292",
+    "lag_samples": 0,
+    "lag_seconds": 0.0,
+    "correlation": 0.9994514709215916,
+    "minimum_voiced_two_second_correlation": 0.9990573504803052,
+    "signal_to_error_db": 29.594129000552684,
+    "gain": 0.993217200026867,
+    "decoded_peak": 0.682037353515625,
+    "clipped_sample_fraction": 0.0,
+    "silences_over_1_2_seconds": [],
+    "decoded_seconds": 87.488,
+    "source_seconds": 87.472125,
+    "direct_listening_claimed": false,
+    "independent_asr_review_required": true,
+    "waveform_binding_passed": true,
+    "signal_quality_passed": true
+  },
+  "factual_and_disclosure_review": {
+    "primary_source_links": [
+      {
+        "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.97.018002",
+        "ref": "turn10view4",
+        "supports": "Field and lab comparison; synchronized relative grain motion; sound reproduced without whole dune."
+      },
+      {
+        "url": "https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2012GL052540",
+        "ref": "turn13search0",
+        "supports": "Dry suitable sand; multiple grain-size peaks associated with multiple frequencies; debate about mechanism."
+      },
+      {
+        "url": "https://pubmed.ncbi.nlm.nih.gov/19880153/",
+        "ref": "turn13search1",
+        "supports": "Not all dunes sing; dry sand and slip-face avalanches; laboratory phenomenon."
+      }
+    ],
+    "caption_contains_ai_image_and_synthetic_voice_disclosures": true,
+    "scientific_mechanism_presented_with_uncertainty": true,
+    "no_fabricated_natural_dune_audio": true
+  },
+  "known_content_visual_or_signal_defects": [],
+  "root_release_decision_pending": true,
+  "publish_ready": false
+}

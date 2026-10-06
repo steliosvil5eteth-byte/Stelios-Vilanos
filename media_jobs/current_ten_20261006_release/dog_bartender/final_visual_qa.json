@@ -1,0 +1,69 @@
+{
+  "reviewed_at": "2026-10-06T09:52:56.867504+00:00",
+  "reviewer": "root",
+  "native_visual_passed": true,
+  "cards": [
+    {
+      "file": "card-01.jpg",
+      "sha256": "f4a25903bcd474f7329e0827d9695b19638293ddfa59b85c5359f7fda83f69a6",
+      "directly_viewed_full_final_jpeg": true,
+      "greek_complete": true,
+      "crop_and_scene_passed": true
+    },
+    {
+      "file": "card-02.jpg",
+      "sha256": "2eb29da38be5b641fdcd822d719d97fba8e6ab65331eb5b623ad218855eaf8d1",
+      "directly_viewed_full_final_jpeg": true,
+      "greek_complete": true,
+      "crop_and_scene_passed": true
+    },
+    {
+      "file": "card-03.jpg",
+      "sha256": "bc569ba8ef19a4f5820c510d664f92df59a650bf05ac38a49193b4bf2697f58a",
+      "directly_viewed_full_final_jpeg": true,
+      "greek_complete": true,
+      "crop_and_scene_passed": true
+    },
+    {
+      "file": "card-04.jpg",
+      "sha256": "a8588b69c170bd3a2b1938f1cfac4fc8cd8367bde23a4f06e28599570d1a15ff",
+      "directly_viewed_full_final_jpeg": true,
+      "greek_complete": true,
+      "crop_and_scene_passed": true
+    }
+  ],
+  "card_count": 4,
+  "disclosure": "Original AI-generated fiction clearly disclosed",
+  "video_final_review": "PASSED_EXACT_FINAL_VISUAL_REVIEW",
+  "video_sha256": "d12f6f9ff213df3f9050c6b7fd7dba5ebe5b0b04ce6c5fe646ad36bcb41d07f0",
+  "video_frames": [
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/dog_bartender/qa_frames/frame-01.jpg",
+      "sha256": "842672f5d483d85e627329ba13f763dee7ae5f3bd38771f3ecca610a29646bf0",
+      "directly_viewed": true,
+      "full_greek_read": true,
+      "all_card_content_visible": true
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/dog_bartender/qa_frames/frame-02.jpg",
+      "sha256": "8462796b25283835d2ef592be319246caad6c9b427f8ebfcb876f3e52b2c278e",
+      "directly_viewed": true,
+      "full_greek_read": true,
+      "all_card_content_visible": true
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/dog_bartender/qa_frames/frame-03.jpg",
+      "sha256": "598c037956d114c11ddecf092c1fc48737d29999c834f69abb78c57eb669c79e",
+      "directly_viewed": true,
+      "full_greek_read": true,
+      "all_card_content_visible": true
+    },
+    {
+      "path": "/workspace/scratch/73e79e1cf9df/production_20261006/final/dog_bartender/qa_frames/frame-04.jpg",
+      "sha256": "a502ffe6a30e241aaa28225e960aef213d84d868970a00e823fd0f16052ccff1",
+      "directly_viewed": true,
+      "full_greek_read": true,
+      "all_card_content_visible": true
+    }
+  ]
+}
