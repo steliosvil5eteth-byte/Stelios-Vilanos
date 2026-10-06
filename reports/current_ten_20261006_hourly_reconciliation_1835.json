@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "reconciliation_type": "CURRENT_TEN_DAILY_HOURLY",
+  "checked_at": "2026-10-06T18:34:00+03:00",
+  "timezone": "Europe/Athens",
+  "brand": {
+    "id": 7076410,
+    "label": "Ιστορίες που μας αγγίζουν",
+    "exclusive": true
+  },
+  "strategy": "CURRENT_TEN_DAILY",
+  "daily_state": {
+    "logical_posts": 10,
+    "metricool_records": 16,
+    "destinations": 40,
+    "published": 32,
+    "pending": 8,
+    "awaiting_confirmation": 0,
+    "failed": 0,
+    "blocked": 0,
+    "drafts": 0,
+    "auto_publish_false": 0
+  },
+  "newly_reconciled": {
+    "series": "documented_experiments",
+    "title": "Το φαινόμενο ΙΚΕΑ: γιατί αγαπάμε αυτό που φτιάξαμε",
+    "scheduled_time": "2026-10-06T18:30:00+03:00",
+    "metricool_id": 389315750,
+    "metricool_uuid": "1071951261703491205",
+    "media": [
+      "https://static.metricool.com/planner/202610/7000636-file-15224941781031624816.mp4"
+    ],
+    "draft": false,
+    "autoPublish": true,
+    "providers": [
+      {
+        "network": "facebook",
+        "id": "1642882744086298",
+        "status": "PUBLISHED",
+        "publicUrl": "https://facebook.com/reel/1642882744086298",
+        "detailedStatus": "Published"
+      },
+      {
+        "network": "instagram",
+        "id": "https://www.instagram.com/reel/DeKHOP2gTB1/",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.instagram.com/reel/DeKHOP2gTB1/",
+        "detailedStatus": "Published"
+      },
+      {
+        "network": "tiktok",
+        "id": "7693578299586481440",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7693578299586481440",
+        "detailedStatus": "Published"
+      },
+      {
+        "network": "youtube",
+        "id": "7lo0UyVeip0",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.youtube.com/shorts/7lo0UyVeip0",
+        "detailedStatus": "Published"
+      }
+    ],
+    "notion_page_id": "3f1f2345-b318-815d-a5b2-c793854e5da3",
+    "notion_status": "Published",
+    "notion_delivery_coverage": "Complete",
+    "transient_state_resolved": "TikTok AWAITING_CONFIRMATION was re-read and confirmed PUBLISHED before reconciliation."
+  },
+  "remaining_pending": [
+    {
+      "time": "2026-10-06T20:00:00+03:00",
+      "title": "Τα ηλιοτρόπια ακολουθούν τον ήλιο όλη τους τη ζωή;",
+      "destinations": 4
+    },
+    {
+      "time": "2026-10-06T22:00:00+03:00",
+      "title": "Τσουκουμογκάμι: όταν τα παλιά αντικείμενα αποκτούν ψυχή",
+      "destinations": 4
+    }
+  ],
+  "guards": {
+    "retry": false,
+    "duplicate": false,
+    "backdate": false,
+    "metricool_mutation": false,
+    "paid_credits": false,
+    "pending_is_published": false
+  }
+}
