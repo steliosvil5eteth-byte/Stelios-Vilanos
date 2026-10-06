@@ -4,7 +4,7 @@
   "owner": "next-day-social-prebuild-20261006T182542Z",
   "created_at": "2026-10-06T18:25:42Z",
   "expires_at": "2026-10-07T00:30:00Z",
-  "status": "PRODUCTION_IN_PROGRESS_NOT_QA_APPROVED",
+  "status": "COMPLETED_RELEASED",
   "categories": [
     "relationships",
     "survival",
@@ -18,5 +18,11 @@
     "international_legend"
   ],
   "purpose": "CURRENT_TEN_DAILY exact-final production for 2026-10-07",
-  "metricool_brand_id": 7076410
+  "metricool_brand_id": 7076410,
+  "completed_at": "2026-10-06T19:26:00Z",
+  "logical_posts": 10,
+  "destinations": 40,
+  "metricool_records": 16,
+  "delivery_journal": "media_jobs/current_ten_20261007_delivery_journal.json",
+  "final_review": "PASSED_FINAL_REVIEW"
 }
