@@ -1,0 +1,893 @@
+{
+  "status": "ALL_45_ACTUAL_MEDIA_BYTES_MATCH_REVIEWED_HASHES",
+  "validated_at_utc": "2026-10-06T10:32:43.211173+00:00",
+  "brandId": 7076410,
+  "date": "2026-10-06",
+  "asset_count": 45,
+  "logical_posts": 10,
+  "provider_destinations": 40,
+  "manifest_sha256": "ee24aeb4e033c3514fcdf9aedf205de4d1b69f28d3be7577328c7cfb07e0bc60",
+  "journal_sha256": "05dd3d302a4e1e1fefb6eaa261ce3cac598488a4e64a76b6e8c093d723b83146",
+  "total_bytes": 87746646,
+  "publication_status_note": "This archives existing Metricool delivery records. Pending, scheduled, publishing, or awaiting-confirmation destinations are not claimed as already published.",
+  "publish_action_performed": false,
+  "publish_ready_inferred": false,
+  "base_commit": "bff42525ff1be6ca184fcdd751bece0f1928cec7",
+  "assets": [
+    {
+      "index": 1,
+      "job_id": "current-ten-20261006-ikea-effect",
+      "series": "documented_experiments",
+      "path": "jobs/current-ten-20261006-ikea-effect/final/current-ten-20261006-ikea-effect.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-15224941781031624816.mp4",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-15224941781031624816.mp4",
+      "metricool_post_id": 389315750,
+      "sha256": "18ba6751359d7a5361b2207305e67f81f9564d04e0dee5778363e031905cc38d",
+      "bytes": 14087887,
+      "git_blob_sha1": "749bfbc841278671918e2458903298e4a6152517",
+      "media": {
+        "width": 1080,
+        "height": 1920,
+        "video_codec": "h264",
+        "audio_stream_count": 1,
+        "duration_seconds": 91.233333,
+        "audio_codec": "aac"
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 2,
+      "job_id": "current-ten-20261006-dog-bartender",
+      "series": "dog_bartender",
+      "path": "jobs/current-ten-20261006-dog-bartender/final/card-01.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-7935826148268303480.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-7935826148268303480.jpeg",
+      "metricool_post_id": 389294554,
+      "sha256": "50259917913b4f2b123f391a26dc12ad9926ba71623136ebb03c680d0cd0ede8",
+      "bytes": 204973,
+      "git_blob_sha1": "3e2782ba250b4c5845664d37325b9ac5b78bc861",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 3,
+      "job_id": "current-ten-20261006-dog-bartender",
+      "series": "dog_bartender",
+      "path": "jobs/current-ten-20261006-dog-bartender/final/card-02.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-6983141712990696874.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-6983141712990696874.jpeg",
+      "metricool_post_id": 389294554,
+      "sha256": "ce99e1f07c388552f78eb9ebd30e5d6422fceb164377433b0ad09f08c626a976",
+      "bytes": 204947,
+      "git_blob_sha1": "bcfa10cbab500b8400198dcfe1bdcd61f9225dd3",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 4,
+      "job_id": "current-ten-20261006-dog-bartender",
+      "series": "dog_bartender",
+      "path": "jobs/current-ten-20261006-dog-bartender/final/card-03.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-3885008728061579989.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-3885008728061579989.jpeg",
+      "metricool_post_id": 389294554,
+      "sha256": "f386467f487062ef9aeb71be3666dcb87d82a747e516d68f8511c13e4ed66953",
+      "bytes": 189155,
+      "git_blob_sha1": "47fa0db548da5425091a0823bf9d92a043438001",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 5,
+      "job_id": "current-ten-20261006-dog-bartender",
+      "series": "dog_bartender",
+      "path": "jobs/current-ten-20261006-dog-bartender/final/card-04.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-9080813065837540984.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-9080813065837540984.jpeg",
+      "metricool_post_id": 389294554,
+      "sha256": "daaf3334980d89f5eefb87a883aa4185b721c1ca6383735820b81d8f4852cd92",
+      "bytes": 213740,
+      "git_blob_sha1": "066c58bf8c24ed554a5376c66e3bc37ae5743e00",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 6,
+      "job_id": "current-ten-20261006-dog-bartender",
+      "series": "dog_bartender",
+      "path": "jobs/current-ten-20261006-dog-bartender/final/current-ten-20261006-dog-bartender.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-14408891305692183752.mp4",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-14408891305692183752.mp4",
+      "metricool_post_id": 389304173,
+      "sha256": "d12f6f9ff213df3f9050c6b7fd7dba5ebe5b0b04ce6c5fe646ad36bcb41d07f0",
+      "bytes": 1344108,
+      "git_blob_sha1": "626b65134f9f1293fa0740ea2835837b75a822f8",
+      "media": {
+        "width": 1080,
+        "height": 1920,
+        "video_codec": "h264",
+        "audio_stream_count": 1,
+        "duration_seconds": 31.24,
+        "audio_codec": "aac"
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 7,
+      "job_id": "current-ten-20261006-prespes",
+      "series": "greece_two_day_trip",
+      "path": "jobs/current-ten-20261006-prespes/final/current-ten-20261006-prespes.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-3346417477904985316.mp4",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-3346417477904985316.mp4",
+      "metricool_post_id": 389315514,
+      "sha256": "02855ad188063f1f843f81e65f911776ae4dcc40c41454f55d5dceac05385cf3",
+      "bytes": 19501454,
+      "git_blob_sha1": "2bd35f87c6845eecbf35a1e8fcee7c8eb1bd8ba4",
+      "media": {
+        "width": 1080,
+        "height": 1920,
+        "video_codec": "h264",
+        "audio_stream_count": 1,
+        "duration_seconds": 83.666667,
+        "audio_codec": "aac"
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 8,
+      "job_id": "current-ten-20261006-tsukumogami",
+      "series": "international_legend",
+      "path": "jobs/current-ten-20261006-tsukumogami/final/current-ten-20261006-tsukumogami.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-14954030714088333755.mp4",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-14954030714088333755.mp4",
+      "metricool_post_id": 389313993,
+      "sha256": "7e36b1f2ab0a247b49d9e37cfec5a2b259aefc67c121057e380e5662dbf50b1e",
+      "bytes": 15519092,
+      "git_blob_sha1": "70819c6ee4495d85f9f21665ee26de0348a1402f",
+      "media": {
+        "width": 1080,
+        "height": 1920,
+        "video_codec": "h264",
+        "audio_stream_count": 1,
+        "duration_seconds": 87.966667,
+        "audio_codec": "aac"
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 9,
+      "job_id": "current-ten-20261006-love-soul-relationship",
+      "series": "love_soul_relationship",
+      "path": "jobs/current-ten-20261006-love-soul-relationship/final/card-01.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-14770023520077852904.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-14770023520077852904.jpeg",
+      "metricool_post_id": 389301502,
+      "sha256": "b260dce4f06f66e26c465cf2e27a58a87e878817d136da8d046dc9093806cb50",
+      "bytes": 366290,
+      "git_blob_sha1": "33f8bf6586b252cc9da4a1f767aa34630506ccae",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 10,
+      "job_id": "current-ten-20261006-love-soul-relationship",
+      "series": "love_soul_relationship",
+      "path": "jobs/current-ten-20261006-love-soul-relationship/final/card-02.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-2129335350416881626.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-2129335350416881626.jpeg",
+      "metricool_post_id": 389301502,
+      "sha256": "eff798095c7f2b84befeb6f9f1b5e78b1669b096ecb71b0af5b2e23720f3945c",
+      "bytes": 391683,
+      "git_blob_sha1": "117314db2ef14de47422673b65832b16d3bd245a",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 11,
+      "job_id": "current-ten-20261006-love-soul-relationship",
+      "series": "love_soul_relationship",
+      "path": "jobs/current-ten-20261006-love-soul-relationship/final/card-03.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-12786375792211825784.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-12786375792211825784.jpeg",
+      "metricool_post_id": 389301502,
+      "sha256": "56ed9c032f79665ca9a50cc47e579bb392965010956b304f932b60f3466ed496",
+      "bytes": 408560,
+      "git_blob_sha1": "adf550060d3b82c3c2e2e55f5b907ac00526229b",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 12,
+      "job_id": "current-ten-20261006-love-soul-relationship",
+      "series": "love_soul_relationship",
+      "path": "jobs/current-ten-20261006-love-soul-relationship/final/card-04.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-2963322273679519313.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-2963322273679519313.jpeg",
+      "metricool_post_id": 389301502,
+      "sha256": "75d31e9416afb54d68b9215a15422ed2e77ff624fe686c80c1872aa764a3ea2a",
+      "bytes": 360777,
+      "git_blob_sha1": "ed454e0df58fe374f8b210246176f2da577b1283",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 13,
+      "job_id": "current-ten-20261006-love-soul-relationship",
+      "series": "love_soul_relationship",
+      "path": "jobs/current-ten-20261006-love-soul-relationship/final/card-05.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-16145330622524203446.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-16145330622524203446.jpeg",
+      "metricool_post_id": 389301502,
+      "sha256": "23de77dc34d36960e1f153af87eecc5224e7da1a74617fddfd11773eb6375e8b",
+      "bytes": 426686,
+      "git_blob_sha1": "ecb263153711810632575a082f1b06545f80f83c",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 14,
+      "job_id": "current-ten-20261006-love-soul-relationship",
+      "series": "love_soul_relationship",
+      "path": "jobs/current-ten-20261006-love-soul-relationship/final/current-ten-20261006-love-soul-relationship.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-1968136371303319835.mp4",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-1968136371303319835.mp4",
+      "metricool_post_id": 389306148,
+      "sha256": "a159b4b76f9a69c90427b14857194693b0aa67a8d366e7a6aad848796147808a",
+      "bytes": 1932594,
+      "git_blob_sha1": "18f3af17510e5001af87cdabe06831d5718fcee7",
+      "media": {
+        "width": 1080,
+        "height": 1920,
+        "video_codec": "h264",
+        "audio_stream_count": 1,
+        "duration_seconds": 49.28,
+        "audio_codec": "aac"
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 15,
+      "job_id": "current-ten-20261006-myth-or-truth",
+      "series": "myth_or_truth",
+      "path": "jobs/current-ten-20261006-myth-or-truth/final/card-01.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-13418631672141941797.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-13418631672141941797.jpeg",
+      "metricool_post_id": 389302859,
+      "sha256": "e2593f53fd87b83c6dc37006454c6eb23eabc0c07b15a5d84610590d22aaedc7",
+      "bytes": 184906,
+      "git_blob_sha1": "f7689f82e3415c7074b19338395c1bc811dc056e",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 16,
+      "job_id": "current-ten-20261006-myth-or-truth",
+      "series": "myth_or_truth",
+      "path": "jobs/current-ten-20261006-myth-or-truth/final/card-02.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-653856594620969597.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-653856594620969597.jpeg",
+      "metricool_post_id": 389302859,
+      "sha256": "37c8749bfd863e86acc6736067ba98fb29fefd855e1a15c60b5160c75b930ee4",
+      "bytes": 151748,
+      "git_blob_sha1": "35d6f97f322292fd996e92616bcb30276888870d",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 17,
+      "job_id": "current-ten-20261006-myth-or-truth",
+      "series": "myth_or_truth",
+      "path": "jobs/current-ten-20261006-myth-or-truth/final/card-03.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-8480821225081218485.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-8480821225081218485.jpeg",
+      "metricool_post_id": 389302859,
+      "sha256": "beee378a8e44cb4bf29290bd22cf1b7bab95ecead61356d5e11325e6be06965a",
+      "bytes": 130010,
+      "git_blob_sha1": "43914eb223fe9505e242c0acd297ba6855d1fdde",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 18,
+      "job_id": "current-ten-20261006-myth-or-truth",
+      "series": "myth_or_truth",
+      "path": "jobs/current-ten-20261006-myth-or-truth/final/card-04.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-10172432767522332238.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-10172432767522332238.jpeg",
+      "metricool_post_id": 389302859,
+      "sha256": "7c8a26817c4ff827cc178fb5cf18838380cc87d817d95a8f116ad5c0be7b5536",
+      "bytes": 214991,
+      "git_blob_sha1": "c2dbbdcf4cbaaa71f3d9a0ab3586627aaa525c9c",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 19,
+      "job_id": "current-ten-20261006-myth-or-truth",
+      "series": "myth_or_truth",
+      "path": "jobs/current-ten-20261006-myth-or-truth/final/current-ten-20261006-myth-or-truth.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-4306208915672719731.mp4",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-4306208915672719731.mp4",
+      "metricool_post_id": 389306202,
+      "sha256": "308c6e042fae04f3af6d67dc1da55a0a6b11b467f3cd0b7ba0d13939694e3af3",
+      "bytes": 1290873,
+      "git_blob_sha1": "26182325681b8bfdff532187e5e68037c8138460",
+      "media": {
+        "width": 1080,
+        "height": 1920,
+        "video_codec": "h264",
+        "audio_stream_count": 1,
+        "duration_seconds": 33.36,
+        "audio_codec": "aac"
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 20,
+      "job_id": "current-ten-20261006-relationships",
+      "series": "relationships",
+      "path": "jobs/current-ten-20261006-relationships/final/card-01.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-15956424106260738408.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-15956424106260738408.jpeg",
+      "metricool_post_id": 389297281,
+      "sha256": "cc618107a95ec78bd5e37ef5461301fb3dd5048d243be615e760c0bcf9138a7a",
+      "bytes": 249496,
+      "git_blob_sha1": "13dc5f8d7e8840ebab71ec189ffd5b99bfb090d5",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 21,
+      "job_id": "current-ten-20261006-relationships",
+      "series": "relationships",
+      "path": "jobs/current-ten-20261006-relationships/final/card-02.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-13302720121401239240.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-13302720121401239240.jpeg",
+      "metricool_post_id": 389297281,
+      "sha256": "23fbaef9961752ec635fabb74ad3e8bc832711cc820d6102623291c837f08a84",
+      "bytes": 294805,
+      "git_blob_sha1": "38402b2113d78384689e570496e6c0967a261290",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 22,
+      "job_id": "current-ten-20261006-relationships",
+      "series": "relationships",
+      "path": "jobs/current-ten-20261006-relationships/final/card-03.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-5044672012073281547.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-5044672012073281547.jpeg",
+      "metricool_post_id": 389297281,
+      "sha256": "207590add9897a013ac96cfc0ad8253df1cbcd40744c768e75f445ffdc20c711",
+      "bytes": 283446,
+      "git_blob_sha1": "2a18f1c858bc1bd4079a047c05228245f68bde1a",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 23,
+      "job_id": "current-ten-20261006-relationships",
+      "series": "relationships",
+      "path": "jobs/current-ten-20261006-relationships/final/card-04.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-16565131831830608287.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-16565131831830608287.jpeg",
+      "metricool_post_id": 389297281,
+      "sha256": "e99dc2c34d803e541b92303fa26c82fc4122bbb679f3914deae8e9d2b828a6aa",
+      "bytes": 269483,
+      "git_blob_sha1": "b4ca5ad4df987eac94df1f80c1419dc67b689e3b",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 24,
+      "job_id": "current-ten-20261006-relationships",
+      "series": "relationships",
+      "path": "jobs/current-ten-20261006-relationships/final/card-05.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-5851539623160246425.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-5851539623160246425.jpeg",
+      "metricool_post_id": 389297281,
+      "sha256": "767e76cd6e0dcd5d7355c1737a2b72d8a36b2def77a1d84afae7751ce3ab9428",
+      "bytes": 265396,
+      "git_blob_sha1": "f5ea6612abce858f05921867895bb3757a9f7de6",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 25,
+      "job_id": "current-ten-20261006-relationships",
+      "series": "relationships",
+      "path": "jobs/current-ten-20261006-relationships/final/card-06.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-13050940566317527786.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-13050940566317527786.jpeg",
+      "metricool_post_id": 389297281,
+      "sha256": "955de764fdb3e04c6fb783ea5031feae9c3d5abbfd06dc4b80aff6bce1da7d4d",
+      "bytes": 293721,
+      "git_blob_sha1": "d006ba6108db92b355177eae891dee8397606b81",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 26,
+      "job_id": "current-ten-20261006-relationships",
+      "series": "relationships",
+      "path": "jobs/current-ten-20261006-relationships/final/card-07.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-9466781164645225551.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-9466781164645225551.jpeg",
+      "metricool_post_id": 389297281,
+      "sha256": "e61cea586e95a3893db753f33e888e899cac6e680b9e11a032b5bef0be2021b7",
+      "bytes": 339828,
+      "git_blob_sha1": "775dea359da10deca7d8e2d6d1f0499e66f2e75b",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 27,
+      "job_id": "current-ten-20261006-relationships",
+      "series": "relationships",
+      "path": "jobs/current-ten-20261006-relationships/final/current-ten-20261006-relationships.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-4394160177894275921.mp4",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-4394160177894275921.mp4",
+      "metricool_post_id": 389305899,
+      "sha256": "e48a5fd287e27c23c2106aec37f3aa6c580cc475d72392ea5d80d89a7dd9a2fa",
+      "bytes": 2372590,
+      "git_blob_sha1": "90076bd3da018f4f4e379b507debba2792fe6d3f",
+      "media": {
+        "width": 1080,
+        "height": 1920,
+        "video_codec": "h264",
+        "audio_stream_count": 1,
+        "duration_seconds": 65.04,
+        "audio_codec": "aac"
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 28,
+      "job_id": "current-ten-20261006-singing-dunes",
+      "series": "strange_real_phenomenon",
+      "path": "jobs/current-ten-20261006-singing-dunes/final/current-ten-20261006-singing-dunes.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-3432370607354900943.mp4",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-3432370607354900943.mp4",
+      "metricool_post_id": 389314811,
+      "sha256": "dec4523bee6a7a28ef2905f85e937fdc7a704ad017f8d41244fb6122989c0292",
+      "bytes": 17851016,
+      "git_blob_sha1": "b394b5c807a8b110285d96864bc4f118fc7141a1",
+      "media": {
+        "width": 1080,
+        "height": 1920,
+        "video_codec": "h264",
+        "audio_stream_count": 1,
+        "duration_seconds": 87.5,
+        "audio_codec": "aac"
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 29,
+      "job_id": "current-ten-20261006-survival",
+      "series": "survival",
+      "path": "jobs/current-ten-20261006-survival/final/card-01.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-9390424578664759861.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-9390424578664759861.jpeg",
+      "metricool_post_id": 389299946,
+      "sha256": "40981e9c18ed9f86e13a0db93bafefb0dc7be93c6f385c53f06e56efc8c985c3",
+      "bytes": 272706,
+      "git_blob_sha1": "ff9e63dfe8a8eeaee77ab5e59534f1e5a56b9564",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 30,
+      "job_id": "current-ten-20261006-survival",
+      "series": "survival",
+      "path": "jobs/current-ten-20261006-survival/final/card-02.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-17201803520285161912.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-17201803520285161912.jpeg",
+      "metricool_post_id": 389299946,
+      "sha256": "31ddea1347a6d711e5185325c8ea303b5b70f6b992fc1af343c7b37f2a302322",
+      "bytes": 259244,
+      "git_blob_sha1": "0de684eb3cd171993b9cbf86a3bb638b10871f45",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 31,
+      "job_id": "current-ten-20261006-survival",
+      "series": "survival",
+      "path": "jobs/current-ten-20261006-survival/final/card-03.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-12214789244395638260.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-12214789244395638260.jpeg",
+      "metricool_post_id": 389299946,
+      "sha256": "b32d4f6ef299aba803bdc569032d802c8e8dd5e74aa9a228ff6844f5b6fcf11b",
+      "bytes": 261641,
+      "git_blob_sha1": "617e9ac048ab91835975a1e2ebf875033cdc9c9d",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 32,
+      "job_id": "current-ten-20261006-survival",
+      "series": "survival",
+      "path": "jobs/current-ten-20261006-survival/final/card-04.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-7872285806735053101.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-7872285806735053101.jpeg",
+      "metricool_post_id": 389299946,
+      "sha256": "e47f0633c391a19f20209fbed2e86e484647d602ac3b14821266e1e491517a11",
+      "bytes": 281342,
+      "git_blob_sha1": "2ed33ba56ef9d2d7c5650784de5a69ca492bc89a",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 33,
+      "job_id": "current-ten-20261006-survival",
+      "series": "survival",
+      "path": "jobs/current-ten-20261006-survival/final/card-05.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-16337988527113892366.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-16337988527113892366.jpeg",
+      "metricool_post_id": 389299946,
+      "sha256": "a543d38316f93eccefa0f9d354874ea0a72919abf56d38cd977c320084ca3ee8",
+      "bytes": 223245,
+      "git_blob_sha1": "d55c194ab47708f33d5ff22cc6a19cde57d652b3",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 34,
+      "job_id": "current-ten-20261006-survival",
+      "series": "survival",
+      "path": "jobs/current-ten-20261006-survival/final/card-06.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-4883816618768288053.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-4883816618768288053.jpeg",
+      "metricool_post_id": 389299946,
+      "sha256": "f22e198b952094e281161ff41b1b9e655aa202cd780efb1b4c50041362f9f71a",
+      "bytes": 271000,
+      "git_blob_sha1": "6d630930874d466fdaa138c93e1170bf21d7e856",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 35,
+      "job_id": "current-ten-20261006-survival",
+      "series": "survival",
+      "path": "jobs/current-ten-20261006-survival/final/card-07.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-10055989095266849107.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-10055989095266849107.jpeg",
+      "metricool_post_id": 389299946,
+      "sha256": "eff06cf6be46832ae71f558f1b3069285002aa29141f95489e91cde8d3193d30",
+      "bytes": 242800,
+      "git_blob_sha1": "9b178d7b6dedca7dba4741cdc90fcafb8070c5a9",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 36,
+      "job_id": "current-ten-20261006-survival",
+      "series": "survival",
+      "path": "jobs/current-ten-20261006-survival/final/card-08.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-15940608085730734958.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-15940608085730734958.jpeg",
+      "metricool_post_id": 389299946,
+      "sha256": "bb067a95552af7803fd02a3875055083ddb8f0ab1179290e41fb977622038043",
+      "bytes": 296142,
+      "git_blob_sha1": "4ef8fb1a8a579503e27827754e14824e3dff5eae",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 37,
+      "job_id": "current-ten-20261006-survival",
+      "series": "survival",
+      "path": "jobs/current-ten-20261006-survival/final/card-09.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-3073465919281800078.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-3073465919281800078.jpeg",
+      "metricool_post_id": 389299946,
+      "sha256": "61a309ed0faae5b702ac158a815eccca8bc812a6bc99ddfef3cb4580a77547af",
+      "bytes": 371693,
+      "git_blob_sha1": "e7961eaefa9c82616dbc7f60ee17e00abad1d040",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 38,
+      "job_id": "current-ten-20261006-survival",
+      "series": "survival",
+      "path": "jobs/current-ten-20261006-survival/final/current-ten-20261006-survival.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-11774771589626709686.mp4",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-11774771589626709686.mp4",
+      "metricool_post_id": 389305950,
+      "sha256": "b0e2f1c5c4766c5dbda0dd3c0bcea2fd39c60caef82f4f65559bc117dbf100b1",
+      "bytes": 2673684,
+      "git_blob_sha1": "804c4e40c61c2769afa71a8527d220b9c16434f2",
+      "media": {
+        "width": 1080,
+        "height": 1920,
+        "video_codec": "h264",
+        "audio_stream_count": 1,
+        "duration_seconds": 71.4,
+        "audio_codec": "aac"
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 39,
+      "job_id": "current-ten-20261006-zodiac",
+      "series": "zodiac",
+      "path": "jobs/current-ten-20261006-zodiac/final/card-01.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-3659298171682841537.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-3659298171682841537.jpeg",
+      "metricool_post_id": 389302501,
+      "sha256": "648129eba35335a75b3adbb3b203945d705fc846867133e3649d44a0feec9881",
+      "bytes": 210101,
+      "git_blob_sha1": "9c8ac819e52496c8c7c205489a0de381212a0e32",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 40,
+      "job_id": "current-ten-20261006-zodiac",
+      "series": "zodiac",
+      "path": "jobs/current-ten-20261006-zodiac/final/card-02.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-4982654754408260386.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-4982654754408260386.jpeg",
+      "metricool_post_id": 389302501,
+      "sha256": "958fc4bcbb0ff7121db541befd002c93dd7cdb55bd37d6372b8c2e91a86fc0cd",
+      "bytes": 185559,
+      "git_blob_sha1": "1b92f399355b6e5f9c5bb681392b7ab79f0cda64",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 41,
+      "job_id": "current-ten-20261006-zodiac",
+      "series": "zodiac",
+      "path": "jobs/current-ten-20261006-zodiac/final/card-03.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-14940969455631770505.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-14940969455631770505.jpeg",
+      "metricool_post_id": 389302501,
+      "sha256": "1adaeeee58475043d9c6f9cfb6bdf023ddbf9589015fcf1559b39003638cb822",
+      "bytes": 186291,
+      "git_blob_sha1": "132a0414afbd6d9be014fda234bbd7709c52d561",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 42,
+      "job_id": "current-ten-20261006-zodiac",
+      "series": "zodiac",
+      "path": "jobs/current-ten-20261006-zodiac/final/card-04.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-9311906995407308397.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-9311906995407308397.jpeg",
+      "metricool_post_id": 389302501,
+      "sha256": "9ee98232f1979936d804cbfb94d0e3c509eda48dcc1e369138eede147befd9cb",
+      "bytes": 207804,
+      "git_blob_sha1": "365938d19bc22f7d2973a1ed25b33a2d53ffc1fb",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 43,
+      "job_id": "current-ten-20261006-zodiac",
+      "series": "zodiac",
+      "path": "jobs/current-ten-20261006-zodiac/final/card-05.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-17582576430766613732.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-17582576430766613732.jpeg",
+      "metricool_post_id": 389302501,
+      "sha256": "dcbc1ec8f00ac77189dd20a4581c611dd3ebc07b8816d117cad8738b6b67d7a9",
+      "bytes": 203744,
+      "git_blob_sha1": "50d669ca6f52538cfe893ea4c9fa71f737e6ad11",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 44,
+      "job_id": "current-ten-20261006-zodiac",
+      "series": "zodiac",
+      "path": "jobs/current-ten-20261006-zodiac/final/card-06.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-137871174020796964.jpeg",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-137871174020796964.jpeg",
+      "metricool_post_id": 389302501,
+      "sha256": "fe8d9e33a16fb8969c5e6b0d4cf039a26fc3048e3adfc80179edf83704406538",
+      "bytes": 207485,
+      "git_blob_sha1": "7f89c09385be691f22155e2c837832168a2f0676",
+      "media": {
+        "width": 1080,
+        "height": 1080,
+        "video_codec": "mjpeg",
+        "audio_stream_count": 0
+      },
+      "reviewed_hash_match": true
+    },
+    {
+      "index": 45,
+      "job_id": "current-ten-20261006-zodiac",
+      "series": "zodiac",
+      "path": "jobs/current-ten-20261006-zodiac/final/current-ten-20261006-zodiac.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-4349748086731368800.mp4",
+      "resolved_url": "https://static.metricool.com/planner/202610/7000636-file-4349748086731368800.mp4",
+      "metricool_post_id": 389305999,
+      "sha256": "21c6ced881f0f747a89d94e80134cb985689cb66df73924b22eed15746471cc3",
+      "bytes": 2047910,
+      "git_blob_sha1": "8ddddecc2096152792cab28b42972a7bf664da0e",
+      "media": {
+        "width": 1080,
+        "height": 1920,
+        "video_codec": "h264",
+        "audio_stream_count": 1,
+        "duration_seconds": 51.08,
+        "audio_codec": "aac"
+      },
+      "reviewed_hash_match": true
+    }
+  ]
+}
