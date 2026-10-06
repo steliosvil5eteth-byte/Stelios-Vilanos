@@ -1,12 +1,6 @@
 name: Zodiac pairs 20260930 production
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'media_jobs/zodiac_pairs_20260930.json'
-      - '.github/workflows/zodiac-pairs-20260930.yml'
-      - 'tools/render_carousel_pack.py'
   workflow_dispatch:
 
 permissions:

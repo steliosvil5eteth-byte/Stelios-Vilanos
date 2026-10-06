@@ -1,12 +1,6 @@
 name: FOUR_DAILY_V2 card packs
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'media_jobs/four_daily_v2_current.json'
-      - 'tools/render_carousel_pack.py'
-      - 'tools/render_carousel_pack_robust.py'
   workflow_dispatch:
 
 permissions:

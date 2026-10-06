@@ -169,4 +169,4 @@
     "blind_push_retry_forbidden": true,
     "rule": "Any workflow writing media-output must fetch/rebase immediately before push and retry only ref-lock/non-fast-forward races with a fresh fetch/rebase. Content/render failures are never blindly retried."
   }
-}\n
+}

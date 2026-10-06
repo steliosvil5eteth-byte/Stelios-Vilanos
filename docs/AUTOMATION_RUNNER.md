@@ -17,7 +17,7 @@ The active schedule contains ten required standing series:
 1. 07:00 — Relationships
 2. 09:00 — Survival
 3. 10:00 — Dog Bartender
-4. 11:00 — Zodiac — **bundle of 6 separate member posts**, each comparing exactly 2 signs in 4 cards; all 12 signs appear exactly once per daily bundle
+4. 11:00 — Zodiac — **one carousel upload** containing six two-sign comparison units; all 12 signs appear exactly once in that carousel
 5. 13:00 — Two-day trip in Greece
 6. 15:00 — Love / Soul / Relationship
 7. 17:00 — Strange real phenomenon
@@ -54,7 +54,7 @@ Narrated slots use 9:16 1080x1920 video, at least 80 seconds, **el-GR-NestorasNe
 
 1. Reconcile Metricool, Notion and repository/history.
 2. Fresh duplicate/history check immediately before every create/update.
-3. Render the exact final files.
+3. Render the exact final files from explicit scene-specific source files or URLs. Never replace a missing or failed source with a title-based pin, an automatic search result, or a broader query. Reject repeated source images within a carousel.
 4. Visually inspect those exact files; metadata/render success is not QA.
 5. Verify text, spelling, order, media relevance, crop, readability, CTA, caption, hashtags, duration, voice, subtitles, audio, platform format and AI disclosure.
 6. Keep failed material Draft/Blocked.
@@ -66,3 +66,4 @@ Narrated slots use 9:16 1080x1920 video, at least 80 seconds, **el-GR-NestorasNe
 ## Historical data
 
 Old queue records and strategy files remain for audit/deduplication only. They must never be used to decide that a CURRENT_TEN_DAILY day is complete.
+

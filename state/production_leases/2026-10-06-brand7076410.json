@@ -1,0 +1,22 @@
+{
+  "brandId": 7076410,
+  "date": "2026-10-06",
+  "timezone": "Europe/Athens",
+  "owner": "interactive-repair-20261006-0923",
+  "status": "PRODUCTION_IN_PROGRESS_NOT_QA_APPROVED",
+  "created_at": "2026-10-06T09:36:00Z",
+  "expires_at": "2026-10-06T13:00:00Z",
+  "categories": [
+    "relationships",
+    "survival",
+    "dog_bartender",
+    "zodiac",
+    "greece_two_day_trip",
+    "love_soul_relationship",
+    "strange_real_phenomenon",
+    "documented_experiments",
+    "myth_or_truth",
+    "international_legend"
+  ],
+  "note": "Active user-directed repair and fresh production. Other sessions must reconcile owner status and latest Metricool/Notion/repository before starting competing content for these slots. This is an ownership marker, not a schedule, media approval or publication claim."
+}

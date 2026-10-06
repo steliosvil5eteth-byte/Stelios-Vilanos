@@ -1,13 +1,6 @@
 name: CURRENT final dog + zodiac render
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'media_jobs/current_dog_zodiac_final.json'
-      - '.github/workflows/current-dog-zodiac-render.yml'
-      - 'tools/render_carousel_pack.py'
-      - 'tools/render_carousel_pack_robust.py'
   workflow_dispatch:
 
 permissions:

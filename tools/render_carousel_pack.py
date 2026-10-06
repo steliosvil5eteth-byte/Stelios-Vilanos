@@ -65,78 +65,54 @@ def download(url,dst):
 def _clean(s): return re.sub('<[^>]+>','',html.unescape(s or '')).strip()
 
 def commons_fallback(query,dst):
-    # Commons search can return zero results for natural-language prompts with
-    # generic media words. Try simpler but still scene-specific variants.
-    def simplify(q, words):
-        out=q
-        for word in words:
-            out=out.replace(' '+word,'').replace(word+' ','')
-        return ' '.join(out.split()).strip()
+    raise ValueError(
+        'Automatic image substitution is disabled. Select and inspect a '
+        'scene-specific source, then supply source_url or source_path.'
+    )
 
-    variants=[]
-    for q in (
-        query,
-        simplify(query, ('photograph','photo','picture','image')),
-        simplify(query, ('photograph','photo','picture','image','together','outdoors','portrait')),
-    ):
-        if q and q not in variants:
-            variants.append(q)
 
-    last_error=None
-    for search_query in variants:
-        try:
-            params={
-                'action':'query','format':'json','generator':'search',
-                'gsrsearch':search_query,'gsrnamespace':'6','gsrlimit':'40',
-                'prop':'imageinfo','iiprop':'url|size|extmetadata','iiurlwidth':'1600'
-            }
-            url='https://commons.wikimedia.org/w/api.php?'+urllib.parse.urlencode(params)
-            req=urllib.request.Request(url,headers={'User-Agent':'SteliosPhotoCarousel/2.1'})
-            with urllib.request.urlopen(req,timeout=90) as r:
-                payload=json.loads(r.read().decode('utf-8'))
-            pages=list(payload.get('query',{}).get('pages',{}).values())
-            for p in pages:
-                title=p.get('title','')
-                low=title.lower()
-                if any(x in low for x in _BAD):
-                    continue
-                if not re.search(r'\.(jpe?g|png)$',title,re.I):
-                    continue
-                infos=p.get('imageinfo') or []
-                if not infos:
-                    continue
-                info=infos[0]
-                meta=info.get('extmetadata',{})
-                lic=(
-                    _clean(meta.get('LicenseShortName',{}).get('value',''))+
-                    ' '+
-                    _clean(meta.get('UsageTerms',{}).get('value',''))
-                ).lower()
-                if not any(x in lic for x in _ALLOWED_LICENSE):
-                    continue
-                if min(int(info.get('width') or 0),int(info.get('height') or 0))<600:
-                    continue
-                imgurl=info.get('thumburl') or info.get('url')
-                if not imgurl:
-                    continue
-                try:
-                    download(imgurl,dst)
-                    with Image.open(dst) as im:
-                        if min(im.size)<600:
-                            raise ValueError('fallback image too small')
-                    return {
-                        'source_url':imgurl,
-                        'source_credit':_clean(meta.get('Artist',{}).get('value','')),
-                        'license':_clean(meta.get('LicenseShortName',{}).get('value','')) or _clean(meta.get('UsageTerms',{}).get('value','')),
-                        'source_title':title,
-                        'search_query_used':search_query
-                    }
-                except Exception as exc:
-                    last_error=exc
-                    dst.unlink(missing_ok=True)
-        except Exception as exc:
-            last_error=exc
-    raise ValueError(f'no rights-cleared Commons fallback found for query: {query}; last={last_error}')
+def resolve_source(slide, index, work):
+    """Load exactly the source selected for this card; never search or substitute."""
+    source_url=slide.get('source_url')
+    source_path=slide.get('source_path')
+    if bool(source_url) == bool(source_path):
+        raise ValueError('Exactly one explicit source_url or source_path is required')
+    src=work/f'src-{index:02}.img'
+    if source_path:
+        source=Path(source_path)
+        if not source.is_file():
+            raise ValueError(f'Explicit source file is missing: {source_path}')
+        if not 0 < source.stat().st_size <= MAX_DOWNLOAD:
+            raise ValueError('invalid source image size')
+        src.write_bytes(source.read_bytes())
+        used={'source_path':str(source)}
+    else:
+        download(source_url,src)
+        used={'source_url':source_url}
+    actual_sha=sha256(src)
+    expected_sha=slide.get('source_sha256')
+    if expected_sha and expected_sha != actual_sha:
+        raise ValueError('Source checksum changed; inspect and pin the intended file')
+    with Image.open(src) as original:
+        if min(original.size) < 600:
+            raise ValueError('source image too small')
+        photo=original.convert('RGB')
+    # Pixel identity also catches copies with changed metadata or filenames.
+    pixels_sha=hashlib.sha256(
+        f'{photo.width}x{photo.height}:RGB:'.encode()+photo.tobytes()
+    ).hexdigest()
+    marker=work/f'source-pixels-{pixels_sha}'
+    if marker.exists():
+        raise ValueError('Repeated source image in carousel; choose a distinct scene')
+    marker.write_text(str(index),encoding='utf-8')
+    used.update({
+        'source_credit':slide.get('source_credit',''),
+        'license':slide.get('license',''),
+        'source_sha256':actual_sha,
+        'pixel_sha256':pixels_sha,
+    })
+    slide['_resolved_source']=used
+    return photo
 
 def wrap(draw,text,font,width):
     lines=[]
@@ -172,22 +148,13 @@ ZODIAC_GLYPHS={
 }
 
 def render_card(slide,index,total,work,require_photo):
-    if require_photo and not slide.get('source_url') and not slide.get('source_query'): raise ValueError('photographic source_url or source_query required')
+    if require_photo and not slide.get('source_url') and not slide.get('source_path'): raise ValueError('Explicit photographic source_url or source_path required; query-only images are blocked')
     title=slide.get('visible_title') or slide['title']
     sign_label=title.split('—')[0].strip().upper()
     pair_signs=[s.strip() for s in sign_label.split('+') if s.strip()]
     zodiac=len(pair_signs) in (1,2) and all(s in ZODIAC_GLYPHS for s in pair_signs)
-    if slide.get('source_url') or slide.get('source_query'):
-        src=work/f'src-{index:02}.img'; used=None
-        if slide.get('source_url'):
-            try:
-                download(slide['source_url'],src); used={'source_url':slide['source_url'],'source_credit':slide.get('source_credit',''),'license':slide.get('license','')}
-            except Exception:
-                if not slide.get('source_query'): raise
-        if used is None:
-            used=commons_fallback(slide['source_query'],src)
-        slide['_resolved_source']=used
-        photo=Image.open(src).convert('RGB')
+    if slide.get('source_url') or slide.get('source_path'):
+        photo=resolve_source(slide,index,work)
         im=ImageOps.fit(photo,(1080,1080),method=Image.Resampling.LANCZOS,centering=(0.5,0.5))
         if zodiac:
             im=ImageEnhance.Contrast(im).enhance(1.06)
@@ -292,7 +259,7 @@ def main():
                 for i,slide in enumerate(slides,1):
                     card=outdir/f"{job['id']}-{i:02}.jpg"; render_card(slide,i,expected,work,require_photo).save(card,quality=94,subsampling=0); cards.append(card)
                 video=outdir/f"{job['id']}.mp4"; duration=slideshow(cards,video,float(job.get('seconds_per_slide',5)))
-            rec.update({'status':'rendered','card_count':expected,'order_verified':True,'image_size':[1080,1080],'photographic_backgrounds':require_photo,'readable_min_font_px':28,'final_duration':duration,'music_embedded':True,'music_source':'original_local_synth_no_external_license','narration':False,'cta':CTA,'resolved_sources':[s.get('_resolved_source') for s in slides]})
+            rec.update({'status':'rendered','release_status':'PENDING_DIRECT_VISUAL_AUDIO_REVIEW','publish_ready':False,'card_count':expected,'order_verified':True,'image_size':[1080,1080],'photographic_backgrounds':require_photo,'readable_min_font_px':28,'final_duration':duration,'music_embedded':True,'music_source':'original_local_synth_no_external_license','narration':False,'cta':CTA,'resolved_sources':[s.get('_resolved_source') for s in slides]})
             rec['files']=[{'name':p.name,'bytes':p.stat().st_size,'sha256':sha256(p)} for p in [*cards,video]]
             if any(f['bytes']>MAX_OUTPUT for f in rec['files']): raise ValueError('output exceeds 64 MiB')
         except Exception as exc:
@@ -304,3 +271,4 @@ def main():
     if any(j['status']!='rendered' for j in report['jobs']): raise SystemExit(1)
     print('REPORT_PATH='+str(outdir/'manifest.json'))
 if __name__=='__main__': main()
+

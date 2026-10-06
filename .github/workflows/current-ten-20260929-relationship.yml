@@ -1,12 +1,6 @@
 name: Current Ten 20260929 relationship catch-up render
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/current-ten-20260929-relationship.yml'
-      - 'media_jobs/current_ten_20260929_relationship.json'
-      - 'tools/render_carousel_pack.py'
   workflow_dispatch:
 
 permissions:

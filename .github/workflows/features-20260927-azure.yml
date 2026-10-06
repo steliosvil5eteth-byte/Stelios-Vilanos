@@ -1,12 +1,6 @@
 name: Features 20260927 Azure Nestoras
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'media_jobs/features_20260927.json'
-      - 'tools/render_azure_feature_batch.py'
-      - '.github/workflows/features-20260927-azure.yml'
   workflow_dispatch:
 
 permissions:
@@ -75,3 +69,4 @@ jobs:
             git -C "$OUT" push origin HEAD:media-output
           fi
           find "$RUNNER_TEMP/finished" -maxdepth 2 -type f -printf '%p %s bytes\n'
+

@@ -1,12 +1,6 @@
 name: Current Ten 20260930 narrated production and QA
 
 on:
-  push:
-    branches: [main]
-    paths:
-      - '.github/workflows/current-ten-20260930-narrated.yml'
-      - 'media_jobs/current_ten_20260930_narrated.json'
-      - 'tools/render_azure_feature_batch.py'
   workflow_dispatch:
 
 permissions:
@@ -149,3 +143,4 @@ jobs:
             done
             test "$ok" = 1
           fi
+
