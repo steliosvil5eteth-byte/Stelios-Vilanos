@@ -1,0 +1,115 @@
+{
+  "schema_version": "1.0",
+  "program": "CURRENT_TEN_DAILY",
+  "brand": {
+    "id": 7076410,
+    "name": "Ιστορίες που μας αγγίζουν",
+    "timezone": "Europe/Athens"
+  },
+  "checked_at": "2026-10-07T11:27:00+03:00",
+  "logical_slot": {
+    "date": "2026-10-07",
+    "time": "11:00",
+    "series": "zodiac",
+    "title": "Ζώδια: χάσατε την πτήση — τι κάνετε τώρα;",
+    "status": "Published"
+  },
+  "exact_final_review": {
+    "status": "PASSED_FINAL_REVIEW",
+    "native_carousel_cards": 6,
+    "comparisons": 6,
+    "zodiac_signs_exactly_once": 12,
+    "entertainment_only_disclosure": true,
+    "ai_disclosure": true,
+    "exact_cta": true,
+    "hashtags": 5,
+    "youtube_full_vertical_slideshow": true
+  },
+  "metricool": {
+    "logical_posts": 10,
+    "destinations": 40,
+    "destination_status_counts": {
+      "PUBLISHED": 16,
+      "PENDING": 24
+    },
+    "records": [
+      {
+        "id": 389755660,
+        "uuid": "-3012975602945142789",
+        "publication_date": {
+          "dateTime": "2026-10-07T11:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "draft": false,
+        "auto_publish": true,
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-591074090738875216.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-11656747547299318500.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-17579223113268952298.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-14619411009164186022.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-5071218186365108646.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-17913738054273318451.jpeg"
+        ],
+        "tiktok_auto_add_music": true,
+        "providers": [
+          {
+            "network": "facebook",
+            "id": "1355373017651242_122117234763477192",
+            "status": "PUBLISHED",
+            "publicUrl": "https://facebook.com/122101951509477192/posts/122117234763477192",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/p/DeL40YhDuYb/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/p/DeL40YhDuYb/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "tiktok",
+            "id": "7693833833342389537",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7693833833342389537",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "id": 389755773,
+        "uuid": "1566311565811466288",
+        "publication_date": {
+          "dateTime": "2026-10-07T11:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "draft": false,
+        "auto_publish": true,
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-15274723381162256608.mp4"
+        ],
+        "providers": [
+          {
+            "network": "youtube",
+            "id": "7tWoEQaaD-U",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/7tWoEQaaD-U",
+            "detailedStatus": "Published"
+          }
+        ]
+      }
+    ]
+  },
+  "notion": {
+    "data_source": "collection://46cd5cf4-5f7e-46e8-b0ef-274aeadbdb52",
+    "page_id": "3f1f2345-b318-811c-8388-c168d288e416",
+    "status": "Published",
+    "delivery_coverage": "Complete"
+  },
+  "reconciliation": {
+    "triple_dedupe": "Metricool + Notion + repository/history",
+    "retries": 0,
+    "duplicates_created": 0,
+    "backdated": false,
+    "note": "PENDING was not treated as Published; reconciliation occurred only after all four live providers returned PUBLISHED."
+  }
+}
