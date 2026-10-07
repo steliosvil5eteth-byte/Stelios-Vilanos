@@ -1,0 +1,98 @@
+{
+  "generated_at": "2026-10-07T07:32:00+03:00",
+  "timezone": "Europe/Athens",
+  "strategy": "CURRENT_TEN_DAILY",
+  "metricool_brand": {
+    "id": 7076410,
+    "label": "Ιστορίες που μας αγγίζουν"
+  },
+  "slot": {
+    "scheduled_at": "2026-10-07T07:00:00+03:00",
+    "series": "relationships",
+    "title": "Ο κωδικός που δεν ζήτησε",
+    "qa": "PASSED_FINAL_REVIEW"
+  },
+  "live_readback": {
+    "logical_posts_scheduled": 10,
+    "destinations_total": 40,
+    "status_counts": {
+      "PUBLISHED": 4,
+      "PENDING": 36
+    },
+    "slot_destinations": [
+      {
+        "slot": "2026-10-07T07:00:00",
+        "network": "facebook",
+        "status": "PUBLISHED",
+        "publicUrl": "https://facebook.com/122101951509477192/posts/122117133615477192",
+        "providerId": "1355373017651242_122117133615477192",
+        "metricoolId": 389753456,
+        "uuid": "1417403427953266355",
+        "draft": false,
+        "autoPublish": true,
+        "media_count": 7
+      },
+      {
+        "slot": "2026-10-07T07:00:00",
+        "network": "instagram",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.instagram.com/p/DeLdFbHj5wY/",
+        "providerId": "https://www.instagram.com/p/DeLdFbHj5wY/",
+        "metricoolId": 389753456,
+        "uuid": "1417403427953266355",
+        "draft": false,
+        "autoPublish": true,
+        "media_count": 7
+      },
+      {
+        "slot": "2026-10-07T07:00:00",
+        "network": "tiktok",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7693771284827688224",
+        "providerId": "7693771284827688224",
+        "metricoolId": 389753456,
+        "uuid": "1417403427953266355",
+        "draft": false,
+        "autoPublish": true,
+        "media_count": 7
+      },
+      {
+        "slot": "2026-10-07T07:00:00",
+        "network": "youtube",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.youtube.com/shorts/jWMLTtDekzM",
+        "providerId": "jWMLTtDekzM",
+        "metricoolId": 389754179,
+        "uuid": "-4910729305501056610",
+        "draft": false,
+        "autoPublish": true,
+        "media_count": 1
+      }
+    ],
+    "native_media_count": 7,
+    "youtube_media_count": 1
+  },
+  "notion": {
+    "page_id": "3f1f2345-b318-8126-8198-d57c910581d8",
+    "status": "Published",
+    "delivery_coverage": "Complete"
+  },
+  "actions": {
+    "metricool_mutation": false,
+    "retry": false,
+    "duplicate_create": false,
+    "notion_updated": true,
+    "repository_readback_created": true
+  },
+  "future_queue": {
+    "date_2026_10_08": {
+      "metricool_destinations": 0,
+      "qa_passed_lease": false
+    },
+    "date_2026_10_09": {
+      "metricool_destinations": 0,
+      "qa_passed_lease": false
+    },
+    "minimum_two_days_met": false
+  }
+}
