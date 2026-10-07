@@ -1,0 +1,123 @@
+{
+  "schema_version": "1.0",
+  "program": "CURRENT_TEN_DAILY",
+  "brand": {
+    "id": 7076410,
+    "name": "Ιστορίες που μας αγγίζουν",
+    "timezone": "Europe/Athens"
+  },
+  "checked_at": "2026-10-07T17:34:00+03:00",
+  "logical_slot": {
+    "date": "2026-10-07",
+    "time": "17:00",
+    "series": "strange_real_phenomenon",
+    "title": "Ο καταρράκτης που μοιάζει να παίρνει φωτιά",
+    "fingerprint": "strange_real_phenomenon|yosemite-horsetail-fall-sunset-backlight-firefall",
+    "exact_final_review": "PASSED_FINAL_REVIEW"
+  },
+  "metricool_record": {
+    "id": 389757230,
+    "uuid": "-3811293072361438275",
+    "publication_time": "2026-10-07T17:00:00+03:00",
+    "providers": [
+      {
+        "network": "facebook",
+        "id": "846621938507740",
+        "status": "PUBLISHED",
+        "publicUrl": "https://facebook.com/reel/846621938507740",
+        "detailedStatus": "Published"
+      },
+      {
+        "network": "instagram",
+        "id": "https://www.instagram.com/reel/DeMiBPeD1-G/",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.instagram.com/reel/DeMiBPeD1-G/",
+        "detailedStatus": "Published"
+      },
+      {
+        "network": "tiktok",
+        "id": "7693926894906969377",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7693926894906969377",
+        "detailedStatus": "Published"
+      },
+      {
+        "network": "youtube",
+        "id": "KzsA3MlqIJc",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.youtube.com/shorts/KzsA3MlqIJc",
+        "detailedStatus": "Published"
+      }
+    ],
+    "media": [
+      "https://static.metricool.com/planner/202610/7000636-file-10518159609120697243.mp4"
+    ],
+    "draft": false,
+    "autoPublish": true
+  },
+  "narrated_qa": {
+    "resolution": "1080x1920",
+    "duration_seconds": 100.1,
+    "voice": "el-GR-NestorasNeural",
+    "burned_in_synchronized_greek_subtitles": true,
+    "avatar": false,
+    "background_music": false,
+    "video_sha256": "3de11647cdbedf58225ebec446292d8a32d1e6ff96642cca6ece24d4c7113fab",
+    "caption": true,
+    "hashtags_count": 5,
+    "ai_disclosure": true,
+    "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+  },
+  "final_delivery": {
+    "status": "PUBLISHED",
+    "logical_destinations": "4/4"
+  },
+  "day_reconciliation": {
+    "baseline_logical_posts": 10,
+    "baseline_logical_destinations": 40,
+    "logical_destination_statuses": {
+      "PUBLISHED": 28,
+      "PENDING": 12,
+      "ERROR": 0
+    },
+    "physical_provider_attempt_statuses": {
+      "PUBLISHED": 28,
+      "PENDING": 12,
+      "ERROR": 1
+    },
+    "explanation": "Το physical ERROR είναι μόνο η ιστορική αρχική TikTok απόπειρα του 13:00, που καλύφθηκε από επιτυχημένο TikTok-only catch-up."
+  },
+  "next_slot_preflight": {
+    "time": "2026-10-07T18:30:00+03:00",
+    "records": [
+      {
+        "id": 389757445,
+        "uuid": "3313202101657618567",
+        "title": "Το Robbers Cave έδειξε, σε ένα συγκεκριμένο ιστορικό πείραμα κατασκήνωσης, πώς ο ανταγωνισμός μπορεί να ενισχύσει τη σύγκρουση και πώς οι κοινοί υπερκείμενοι στόχοι μπορούν να βοηθήσουν τη συνεργασία.",
+        "providers": {
+          "facebook": "PENDING",
+          "instagram": "PENDING",
+          "tiktok": "PENDING",
+          "youtube": "PENDING"
+        },
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-16405695293885071401.mp4"
+        ],
+        "draft": false,
+        "autoPublish": true
+      }
+    ],
+    "exact_final_review": "PASSED_FINAL_REVIEW"
+  },
+  "controls": {
+    "fresh_dedupe": "Metricool 7076410 + Notion archive page + repository search/history immediately before create",
+    "retry": false,
+    "duplicate": false,
+    "backdated": false,
+    "metricool_mutation": false,
+    "pending_is_published": false,
+    "notion_page_id": "3f1f2345-b318-812a-bca6-f0e752dffb74",
+    "notion_status": "Published",
+    "notion_delivery_coverage": "Complete"
+  }
+}
