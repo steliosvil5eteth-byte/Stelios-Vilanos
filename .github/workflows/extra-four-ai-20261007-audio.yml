@@ -1,0 +1,55 @@
+name: Extra four AI stories 20261007 audio and recognition
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/extra-four-ai-20261007-audio.yml'
+      - 'media_jobs/extra_four_ai_20261007.json'
+      - 'tools/render_extra_four_ai_20261007_audio.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: extra-four-ai-20261007-audio
+  cancel-in-progress: false
+jobs:
+  audio:
+    if: github.repository == 'steliosvil5eteth-byte/Stelios-Vilanos'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install established Azure audio dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          python3 -m pip install --disable-pip-version-check --no-input pillow requests azure-cognitiveservices-speech
+      - name: Synthesize four original extra stories with Nestoras
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+        run: |
+          set -euo pipefail
+          python3 tools/render_extra_four_ai_20261007_audio.py --manifest media_jobs/extra_four_ai_20261007.json --output "$RUNNER_TEMP/extra-four-audio"
+      - name: Preserve exact narration and timings before independent review
+        uses: actions/upload-artifact@v4
+        with:
+          name: extra-four-ai-20261007-nestoras
+          path: ${{ runner.temp }}/extra-four-audio/
+          retention-days: 7
+          if-no-files-found: error
+      - name: Independently recognize the generated Greek speech
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+        run: |
+          set -euo pipefail
+          python3 tools/qa_current_ten_20261006_asr.py --manifest media_jobs/extra_four_ai_20261007.json --source "$RUNNER_TEMP/extra-four-audio" --output "$RUNNER_TEMP/extra-four-asr"
+      - name: Preserve independent recognition evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: extra-four-ai-20261007-asr
+          path: ${{ runner.temp }}/extra-four-asr/
+          retention-days: 7
+          if-no-files-found: warn
