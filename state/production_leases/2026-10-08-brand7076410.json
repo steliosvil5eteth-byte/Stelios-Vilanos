@@ -5,7 +5,7 @@
   "owner": "next-day-social-prebuild-20261007T182253Z",
   "created_at": "2026-10-07T18:22:53Z",
   "expires_at": "2026-10-08T02:00:00Z",
-  "status": "PRODUCTION_IN_PROGRESS_NOT_QA_APPROVED",
+  "status": "COMPLETED_RELEASED",
   "categories": [
     "relationships",
     "survival",
@@ -18,5 +18,10 @@
     "myth_or_truth",
     "international_legend"
   ],
-  "note": "Exclusive lease after live reconciliation of Metricool, Notion archive, repository manifests/releases/readbacks/history."
+  "note": "Exclusive lease after live reconciliation of Metricool, Notion archive, repository manifests/releases/readbacks/history.",
+  "completed_at": "2026-10-07T19:03:00Z",
+  "metricool_records": 16,
+  "destinations": 40,
+  "final_review": "PASSED_FINAL_REVIEW",
+  "delivery_journal": "media_jobs/current_ten_20261008_delivery_journal.json"
 }
