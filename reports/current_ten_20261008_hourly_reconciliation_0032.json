@@ -1,0 +1,211 @@
+{
+  "report_type": "CURRENT_TEN_DAILY_HOURLY_RECONCILIATION",
+  "reconciled_at": "2026-10-08T00:32:00+03:00",
+  "timezone": "Europe/Athens",
+  "metricool_brand": {
+    "id": 7076410,
+    "label": "Ιστορίες που μας αγγίζουν",
+    "exclusive": true
+  },
+  "strategy": {
+    "program_label": "CURRENT_TEN_DAILY",
+    "config_sha": "4daee55a188d949c0c450ca087ac9430d29b3fc4"
+  },
+  "baseline": {
+    "logical_posts": 10,
+    "destinations": 40,
+    "physical_records": 16,
+    "statuses": {
+      "PENDING": 40
+    },
+    "draft_false": true,
+    "auto_publish_true": true,
+    "times": [
+      "07:00",
+      "09:00",
+      "10:00",
+      "11:00",
+      "13:00",
+      "15:00",
+      "17:00",
+      "18:30",
+      "20:00",
+      "22:00"
+    ],
+    "final_review": "PASSED_FINAL_REVIEW",
+    "classification": "BASELINE"
+  },
+  "extras": {
+    "classification": "EXTRAS",
+    "logical_posts": 4,
+    "destinations": 16,
+    "physical_records": 4,
+    "statuses": {
+      "PENDING": 16
+    },
+    "final_review": "PASSED_FINAL_REVIEW",
+    "separation_rule": "Not counted toward the baseline 10 logical posts / 40 destinations.",
+    "records": [
+      {
+        "id": 390693509,
+        "uuid": "4208819118522191286",
+        "time": "2026-10-08T14:00:00",
+        "title": "Ζάκυνθος 1943: όταν οι γείτονες έγιναν καταφύγιο",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING"
+          },
+          {
+            "network": "youtube",
+            "status": "PENDING"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-17827925008442224518.mp4"
+        ],
+        "draft": false,
+        "autoPublish": true
+      },
+      {
+        "id": 390693759,
+        "uuid": "-7083174261733899026",
+        "time": "2026-10-08T16:00:00",
+        "title": "Ο υπολογιστής που βγήκε από τον βυθό",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING"
+          },
+          {
+            "network": "youtube",
+            "status": "PENDING"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-14839872058978942384.mp4"
+        ],
+        "draft": false,
+        "autoPublish": true
+      },
+      {
+        "id": 390693787,
+        "uuid": "8360217804873092321",
+        "time": "2026-10-08T19:00:00",
+        "title": "Γύρισε για να σωθεί ο φίλος του | Δάμων και Φιντίας — Μύθος",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING"
+          },
+          {
+            "network": "youtube",
+            "status": "PENDING"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-13381343245604049941.mp4"
+        ],
+        "draft": false,
+        "autoPublish": true
+      },
+      {
+        "id": 390693815,
+        "uuid": "753216304123234447",
+        "time": "2026-10-08T21:00:00",
+        "title": "Οι σαράντα υπογραφές",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING"
+          },
+          {
+            "network": "youtube",
+            "status": "PENDING"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-1063904639260768568.mp4"
+        ],
+        "draft": false,
+        "autoPublish": true
+      }
+    ],
+    "exact_final": {
+      "resolution": "1080x1920",
+      "fps": 30,
+      "video_codec": "H264",
+      "audio_codec": "AAC",
+      "voice": "el-GR-NestorasNeural",
+      "burned_in_greek_subtitles": true,
+      "avatar": false,
+      "music": false,
+      "durations_seconds": [
+        112.633,
+        115.567,
+        97.7,
+        109.033
+      ],
+      "ai_disclosure": true,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+    },
+    "notion_delivery_coverage": "Complete",
+    "notion_pages": [
+      "3f2f2345-b318-81bc-bf74-ea5a7695e409",
+      "3f2f2345-b318-81d4-ab5a-c6b3d77f8f6f",
+      "3f2f2345-b318-81d7-81f6-c36610f8ee26",
+      "3f2f2345-b318-81bc-b64e-c769e224f2db"
+    ],
+    "repository_manifest": "media_jobs/extra_four_ai_20261007.json",
+    "dedupe_result": "Fresh Metricool + Notion + repository/history ownership and dedupe checks passed for all four EXTRAS."
+  },
+  "forward_queue": {
+    "complete_reviewed_future_days_after_current_date": 0,
+    "2026-10-09": {
+      "metricool_records": 0,
+      "active_production_lease": false,
+      "confirmed_notion_batch": false
+    },
+    "2026-10-10": {
+      "metricool_records": 0,
+      "active_production_lease": false,
+      "confirmed_notion_batch": false
+    },
+    "minimum_required": 2,
+    "target": 3,
+    "minimum_satisfied": false,
+    "blocker": "No final artifacts or active ownership for 2026-10-09 or 2026-10-10. No placeholder created."
+  }
+}
