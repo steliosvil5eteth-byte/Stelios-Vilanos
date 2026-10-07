@@ -1,0 +1,40 @@
+name: Current Ten 20261008 narrated audio
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/current-ten-20261008-narrated-audio.yml'
+      - 'media_jobs/current_ten_20261008_narrated.json'
+      - 'tools/render_current_ten_20261008_audio.py'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: current-ten-20261008-narrated-audio
+  cancel-in-progress: false
+jobs:
+  audio:
+    if: github.repository == 'steliosvil5eteth-byte/Stelios-Vilanos'
+    runs-on: ubuntu-24.04
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install established Azure audio dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          python3 -m pip install --disable-pip-version-check --no-input pillow requests azure-cognitiveservices-speech
+      - name: Synthesize four complete scripts with Nestoras
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+        run: |
+          set -euo pipefail
+          python3 tools/render_current_ten_20261008_audio.py --manifest media_jobs/current_ten_20261008_narrated.json --output "$RUNNER_TEMP/narrated-audio"
+      - name: Preserve exact audio, timings, subtitles, and QA
+        uses: actions/upload-artifact@v4
+        with:
+          name: current-ten-20261008-narrated-audio
+          path: ${{ runner.temp }}/narrated-audio/
+          retention-days: 3
+          if-no-files-found: error
