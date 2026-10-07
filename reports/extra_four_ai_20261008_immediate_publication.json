@@ -1,0 +1,773 @@
+{
+  "report_type": "EXTRA_FOUR_AI_IMMEDIATE_PUBLICATION_RECONCILIATION",
+  "batch_id": "extra-four-ai-20261007",
+  "date": "2026-10-08",
+  "timezone": "Europe/Athens",
+  "status": "PUBLISHED",
+  "reconciled_at": "2026-10-07T21:59:46.000Z",
+  "metricool_brand": {
+    "id": 7076410,
+    "label": "Ιστορίες που μας αγγίζουν",
+    "exclusive": true
+  },
+  "classification": "EXTRAS",
+  "logical_posts": 4,
+  "target_destinations": 16,
+  "operation": "UPDATE_EXISTING_SCHEDULE",
+  "new_logical_posts_created": 0,
+  "uuid_preserved_count": 4,
+  "numeric_post_id_changed_count": 4,
+  "confirmed_published_destinations": 16,
+  "pending_destinations": 0,
+  "provider_status_counts": {
+    "PUBLISHED": 16
+  },
+  "historical_snapshot_preserved": {
+    "path": "reports/current_ten_20261008_hourly_reconciliation_0032.json",
+    "blob_sha": "25cae8a2831891b3a43740cb28716540510ff856",
+    "commit_sha": "710129351a228be1218c3df1e12e1757b0177b82",
+    "unchanged": true
+  },
+  "baseline": {
+    "program_label": "CURRENT_TEN_DAILY",
+    "modified": false,
+    "extras_count_toward_baseline": false
+  },
+  "production_manifest": {
+    "path": "media_jobs/extra_four_ai_20261007.json",
+    "modified": false
+  },
+  "prepublication_history_check": {
+    "status": "PASS_HISTORY_RECHECK",
+    "checked_at_utc": "2026-10-07T21:49:06.653Z",
+    "notion_rows_checked": 192,
+    "prior_history_journal_records": 64,
+    "duplicate_or_independent_published_versions_found": 0,
+    "fingerprints_and_uuids_match": true,
+    "source_filename": "prepublish_history_recheck_20261008.json",
+    "source_sha256": "0fa6628eb0ed9609786c014830243516ac7dba1a6af927d1247f8b0c65b6a2ae"
+  },
+  "quality_status": "PASSED_FINAL_REVIEW",
+  "direct_listening_claimed": false,
+  "records": [
+    {
+      "slug": "zakynthos_1943_neighbors",
+      "title": "Ζάκυνθος 1943: όταν οι γείτονες έγιναν καταφύγιο",
+      "source_slot_id": "2026-10-08-extra-four-ai-1",
+      "script_sha256": "f1eba792424d54fff59aa32fd53f0bf5ee227da9dbcf24f56714443fafe0afca",
+      "video_sha256": "5d7b64ebd4381ca96d89b4b96b3a15bf51192ea20a55e24cb09a38361c189dfd",
+      "metricool_brand_id": "7076410",
+      "metricool_uuid": "4208819118522191286",
+      "metricool_post_id": "390711670",
+      "old_metricool_post_id": "390693509",
+      "scheduled_time": "2026-10-08T00:52:00+03:00",
+      "old_scheduled_time": "2026-10-08T14:00:00+03:00",
+      "media_url": "https://static.metricool.com/planner/202610/7000636-file-17827925008442224518.mp4",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=4208819118522191286",
+      "notion_page_id": "3f2f2345-b318-81bc-bf74-ea5a7695e409",
+      "status": "published",
+      "platform_status": {
+        "facebook": {
+          "status": "PUBLISHED",
+          "id": "1049536508128492",
+          "public_url": "https://facebook.com/reel/1049536508128492",
+          "source_post_id": "390711670",
+          "source_uuid": "4208819118522191286",
+          "confirmed_at_utc": "2026-10-07T21:59:46.000Z"
+        },
+        "instagram": {
+          "status": "PUBLISHED",
+          "id": "https://www.instagram.com/reel/DeNXqr4jiLI/",
+          "public_url": "https://www.instagram.com/reel/DeNXqr4jiLI/",
+          "source_post_id": "390711670",
+          "source_uuid": "4208819118522191286",
+          "confirmed_at_utc": "2026-10-07T21:59:46.000Z"
+        },
+        "tiktok": {
+          "status": "PUBLISHED",
+          "id": "7694047661254577440",
+          "public_url": "https://www.tiktok.com/@steliosvilanos/video/7694047661254577440",
+          "source_post_id": "390711670",
+          "source_uuid": "4208819118522191286",
+          "confirmed_at_utc": "2026-10-07T21:59:46.000Z"
+        },
+        "youtube": {
+          "status": "PUBLISHED",
+          "id": "yG5fYJdAWWs",
+          "public_url": "https://www.youtube.com/shorts/yG5fYJdAWWs",
+          "source_post_id": "390711670",
+          "source_uuid": "4208819118522191286",
+          "confirmed_at_utc": "2026-10-07T21:59:46.000Z"
+        }
+      },
+      "public_urls": {
+        "facebook": "https://facebook.com/reel/1049536508128492",
+        "instagram": "https://www.instagram.com/reel/DeNXqr4jiLI/",
+        "tiktok": "https://www.tiktok.com/@steliosvilanos/video/7694047661254577440",
+        "youtube": "https://www.youtube.com/shorts/yG5fYJdAWWs"
+      },
+      "update_readback_verified": true,
+      "publication_confirmed": true,
+      "confirmed_at_utc": "2026-10-07T21:59:46.000Z",
+      "exact_platform_publication_timestamps_available": false
+    },
+    {
+      "slug": "o_ypologistis_pou_vgike_apo_ton_vytho",
+      "title": "Ο υπολογιστής που βγήκε από τον βυθό",
+      "source_slot_id": "2026-10-08-extra-four-ai-2",
+      "script_sha256": "0e1d19aaaa173b398aee6acf95e7a48cec799e5e6fbd6e156960e066b162c4ed",
+      "video_sha256": "f4204cbd5e6f78f25f89e6d232b3f4c3a6b64d07e0504c00d9a4866362f54cbc",
+      "metricool_brand_id": "7076410",
+      "metricool_uuid": "-7083174261733899026",
+      "metricool_post_id": "390711823",
+      "old_metricool_post_id": "390693759",
+      "scheduled_time": "2026-10-08T00:53:00+03:00",
+      "old_scheduled_time": "2026-10-08T16:00:00+03:00",
+      "media_url": "https://static.metricool.com/planner/202610/7000636-file-14839872058978942384.mp4",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-7083174261733899026",
+      "notion_page_id": "3f2f2345-b318-81d4-ab5a-c6b3d77f8f6f",
+      "status": "published",
+      "platform_status": {
+        "facebook": {
+          "status": "PUBLISHED",
+          "id": "1478112874223278",
+          "public_url": "https://facebook.com/reel/1478112874223278",
+          "source_post_id": "390711823",
+          "source_uuid": "-7083174261733899026",
+          "confirmed_at_utc": "2026-10-07T21:59:46.000Z"
+        },
+        "instagram": {
+          "status": "PUBLISHED",
+          "id": "https://www.instagram.com/reel/DeNXwxxDSvd/",
+          "public_url": "https://www.instagram.com/reel/DeNXwxxDSvd/",
+          "source_post_id": "390711823",
+          "source_uuid": "-7083174261733899026",
+          "confirmed_at_utc": "2026-10-07T21:59:46.000Z"
+        },
+        "tiktok": {
+          "status": "PUBLISHED",
+          "id": "7694047903299538208",
+          "public_url": "https://www.tiktok.com/@steliosvilanos/video/7694047903299538208",
+          "source_post_id": "390711823",
+          "source_uuid": "-7083174261733899026",
+          "confirmed_at_utc": "2026-10-07T21:59:46.000Z"
+        },
+        "youtube": {
+          "status": "PUBLISHED",
+          "id": "u1jk7C-nyvg",
+          "public_url": "https://www.youtube.com/shorts/u1jk7C-nyvg",
+          "source_post_id": "390711823",
+          "source_uuid": "-7083174261733899026",
+          "confirmed_at_utc": "2026-10-07T21:59:46.000Z"
+        }
+      },
+      "public_urls": {
+        "facebook": "https://facebook.com/reel/1478112874223278",
+        "instagram": "https://www.instagram.com/reel/DeNXwxxDSvd/",
+        "tiktok": "https://www.tiktok.com/@steliosvilanos/video/7694047903299538208",
+        "youtube": "https://www.youtube.com/shorts/u1jk7C-nyvg"
+      },
+      "update_readback_verified": true,
+      "publication_confirmed": true,
+      "confirmed_at_utc": "2026-10-07T21:59:46.000Z",
+      "exact_platform_publication_timestamps_available": false
+    },
+    {
+      "slug": "damon_phintias_myth",
+      "title": "Γύρισε για να σωθεί ο φίλος του | Δάμων και Φιντίας — Μύθος",
+      "source_slot_id": "2026-10-08-extra-four-ai-3",
+      "script_sha256": "e86179d5629ebd3019d8ea32d18b15ef939c16f13348e0184b48c88e5ff35fa3",
+      "video_sha256": "5a9ceef3e95bc652accbf85a15280bbb8cf1d287beaec09f6855d0a8cd70d35b",
+      "metricool_brand_id": "7076410",
+      "metricool_uuid": "8360217804873092321",
+      "metricool_post_id": "390711839",
+      "old_metricool_post_id": "390693787",
+      "scheduled_time": "2026-10-08T00:54:00+03:00",
+      "old_scheduled_time": "2026-10-08T19:00:00+03:00",
+      "media_url": "https://static.metricool.com/planner/202610/7000636-file-13381343245604049941.mp4",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=8360217804873092321",
+      "notion_page_id": "3f2f2345-b318-81d7-81f6-c36610f8ee26",
+      "status": "published",
+      "platform_status": {
+        "facebook": {
+          "status": "PUBLISHED",
+          "id": "1106404278429758",
+          "public_url": "https://facebook.com/reel/1106404278429758",
+          "source_post_id": "390711839",
+          "source_uuid": "8360217804873092321",
+          "confirmed_at_utc": "2026-10-07T21:59:46.000Z"
+        },
+        "instagram": {
+          "status": "PUBLISHED",
+          "id": "https://www.instagram.com/reel/DeNX9ZTATE8/",
+          "public_url": "https://www.instagram.com/reel/DeNX9ZTATE8/",
+          "source_post_id": "390711839",
+          "source_uuid": "8360217804873092321",
+          "confirmed_at_utc": "2026-10-07T21:59:46.000Z"
+        },
+        "tiktok": {
+          "status": "PUBLISHED",
+          "id": "7694048341486882081",
+          "public_url": "https://www.tiktok.com/@steliosvilanos/video/7694048341486882081",
+          "source_post_id": "390711839",
+          "source_uuid": "8360217804873092321",
+          "confirmed_at_utc": "2026-10-07T21:59:46.000Z"
+        },
+        "youtube": {
+          "status": "PUBLISHED",
+          "id": "KuhBnlx-X5c",
+          "public_url": "https://www.youtube.com/shorts/KuhBnlx-X5c",
+          "source_post_id": "390711839",
+          "source_uuid": "8360217804873092321",
+          "confirmed_at_utc": "2026-10-07T21:59:46.000Z"
+        }
+      },
+      "public_urls": {
+        "facebook": "https://facebook.com/reel/1106404278429758",
+        "instagram": "https://www.instagram.com/reel/DeNX9ZTATE8/",
+        "tiktok": "https://www.tiktok.com/@steliosvilanos/video/7694048341486882081",
+        "youtube": "https://www.youtube.com/shorts/KuhBnlx-X5c"
+      },
+      "update_readback_verified": true,
+      "publication_confirmed": true,
+      "confirmed_at_utc": "2026-10-07T21:59:46.000Z",
+      "exact_platform_publication_timestamps_available": false
+    },
+    {
+      "slug": "oi_saranta_ypografes",
+      "title": "Οι σαράντα υπογραφές",
+      "source_slot_id": "2026-10-08-extra-four-ai-4",
+      "script_sha256": "1ae1d504f4ed8943fd756dca0aa967fbf93f4bbbd1ebf2df4d3f4a1f0f340829",
+      "video_sha256": "96b95cbf80501d86afbc66a795fa9265e32bb8c9f379515e9b7dedeac132e1a9",
+      "metricool_brand_id": "7076410",
+      "metricool_uuid": "753216304123234447",
+      "metricool_post_id": "390711866",
+      "old_metricool_post_id": "390693815",
+      "scheduled_time": "2026-10-08T00:55:00+03:00",
+      "old_scheduled_time": "2026-10-08T21:00:00+03:00",
+      "media_url": "https://static.metricool.com/planner/202610/7000636-file-1063904639260768568.mp4",
+      "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=753216304123234447",
+      "notion_page_id": "3f2f2345-b318-81bc-b64e-c769e224f2db",
+      "status": "published",
+      "platform_status": {
+        "facebook": {
+          "status": "PUBLISHED",
+          "id": "1425569907299310",
+          "public_url": "https://facebook.com/reel/1425569907299310",
+          "source_post_id": "390711866",
+          "source_uuid": "753216304123234447",
+          "confirmed_at_utc": "2026-10-07T21:59:46.000Z"
+        },
+        "instagram": {
+          "status": "PUBLISHED",
+          "id": "https://www.instagram.com/reel/DeNX_d6DZKZ/",
+          "public_url": "https://www.instagram.com/reel/DeNX_d6DZKZ/",
+          "source_post_id": "390711866",
+          "source_uuid": "753216304123234447",
+          "confirmed_at_utc": "2026-10-07T21:59:46.000Z"
+        },
+        "tiktok": {
+          "status": "PUBLISHED",
+          "id": "7694048424127253793",
+          "public_url": "https://www.tiktok.com/@steliosvilanos/video/7694048424127253793",
+          "source_post_id": "390711866",
+          "source_uuid": "753216304123234447",
+          "confirmed_at_utc": "2026-10-07T21:59:46.000Z"
+        },
+        "youtube": {
+          "status": "PUBLISHED",
+          "id": "D1cwY-RIPtg",
+          "public_url": "https://www.youtube.com/shorts/D1cwY-RIPtg",
+          "source_post_id": "390711866",
+          "source_uuid": "753216304123234447",
+          "confirmed_at_utc": "2026-10-07T21:59:46.000Z"
+        }
+      },
+      "public_urls": {
+        "facebook": "https://facebook.com/reel/1425569907299310",
+        "instagram": "https://www.instagram.com/reel/DeNX_d6DZKZ/",
+        "tiktok": "https://www.tiktok.com/@steliosvilanos/video/7694048424127253793",
+        "youtube": "https://www.youtube.com/shorts/D1cwY-RIPtg"
+      },
+      "update_readback_verified": true,
+      "publication_confirmed": true,
+      "confirmed_at_utc": "2026-10-07T21:59:46.000Z",
+      "exact_platform_publication_timestamps_available": false
+    }
+  ],
+  "update_receipts_snapshot": {
+    "batch_id": "extra-four-ai-20261007",
+    "request": "Publish existing four QA-passed stories now",
+    "updated_at_utc": "2026-10-07 21:51:12 UTC",
+    "status": "AWAITING_PUBLICATION_CONFIRMATION",
+    "brand_id": "7076410",
+    "new_posts_created": 0,
+    "receipts": [
+      {
+        "slug": "zakynthos_1943_neighbors",
+        "title": "Ζάκυνθος 1943: όταν οι γείτονες έγιναν καταφύγιο",
+        "source_slot_id": "2026-10-08-extra-four-ai-1",
+        "script_sha256": "f1eba792424d54fff59aa32fd53f0bf5ee227da9dbcf24f56714443fafe0afca",
+        "video_sha256": "5d7b64ebd4381ca96d89b4b96b3a15bf51192ea20a55e24cb09a38361c189dfd",
+        "brand_id": "7076410",
+        "scheduled_iso": "2026-10-08T00:52:00+03:00",
+        "timezone": "Europe/Athens",
+        "status": "Scheduled",
+        "metricool_post_id": 390711670,
+        "metricool_uuid": "4208819118522191286",
+        "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=4208819118522191286",
+        "media_url": "https://static.metricool.com/planner/202610/7000636-file-17827925008442224518.mp4",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "auto_publish": true,
+        "draft": false,
+        "readback_verified": true,
+        "public_urls": null,
+        "old_metricool_post_id": 390693509,
+        "old_scheduled_iso": "2026-10-08T14:00:00+03:00",
+        "write_kind": "UPDATE_EXISTING_SCHEDULE",
+        "request_correction": "Removed inactive twitterData returned by getScheduledPosts; first attempt rejected before mutation and readback confirmed unchanged."
+      },
+      {
+        "slug": "o_ypologistis_pou_vgike_apo_ton_vytho",
+        "title": "Ο υπολογιστής που βγήκε από τον βυθό",
+        "source_slot_id": "2026-10-08-extra-four-ai-2",
+        "script_sha256": "0e1d19aaaa173b398aee6acf95e7a48cec799e5e6fbd6e156960e066b162c4ed",
+        "video_sha256": "f4204cbd5e6f78f25f89e6d232b3f4c3a6b64d07e0504c00d9a4866362f54cbc",
+        "brand_id": "7076410",
+        "scheduled_iso": "2026-10-08T00:53:00+03:00",
+        "timezone": "Europe/Athens",
+        "status": "Scheduled",
+        "metricool_post_id": 390711823,
+        "metricool_uuid": "-7083174261733899026",
+        "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-7083174261733899026",
+        "media_url": "https://static.metricool.com/planner/202610/7000636-file-14839872058978942384.mp4",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "auto_publish": true,
+        "draft": false,
+        "readback_verified": true,
+        "public_urls": null,
+        "old_metricool_post_id": 390693759,
+        "old_scheduled_iso": "2026-10-08T16:00:00+03:00",
+        "write_kind": "UPDATE_EXISTING_SCHEDULE"
+      },
+      {
+        "slug": "damon_phintias_myth",
+        "title": "Γύρισε για να σωθεί ο φίλος του | Δάμων και Φιντίας — Μύθος",
+        "source_slot_id": "2026-10-08-extra-four-ai-3",
+        "script_sha256": "e86179d5629ebd3019d8ea32d18b15ef939c16f13348e0184b48c88e5ff35fa3",
+        "video_sha256": "5a9ceef3e95bc652accbf85a15280bbb8cf1d287beaec09f6855d0a8cd70d35b",
+        "brand_id": "7076410",
+        "scheduled_iso": "2026-10-08T00:54:00+03:00",
+        "timezone": "Europe/Athens",
+        "status": "Scheduled",
+        "metricool_post_id": 390711839,
+        "metricool_uuid": "8360217804873092321",
+        "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=8360217804873092321",
+        "media_url": "https://static.metricool.com/planner/202610/7000636-file-13381343245604049941.mp4",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "auto_publish": true,
+        "draft": false,
+        "readback_verified": true,
+        "public_urls": null,
+        "old_metricool_post_id": 390693787,
+        "old_scheduled_iso": "2026-10-08T19:00:00+03:00",
+        "write_kind": "UPDATE_EXISTING_SCHEDULE"
+      },
+      {
+        "slug": "oi_saranta_ypografes",
+        "title": "Οι σαράντα υπογραφές",
+        "source_slot_id": "2026-10-08-extra-four-ai-4",
+        "script_sha256": "1ae1d504f4ed8943fd756dca0aa967fbf93f4bbbd1ebf2df4d3f4a1f0f340829",
+        "video_sha256": "96b95cbf80501d86afbc66a795fa9265e32bb8c9f379515e9b7dedeac132e1a9",
+        "brand_id": "7076410",
+        "scheduled_iso": "2026-10-08T00:55:00+03:00",
+        "timezone": "Europe/Athens",
+        "status": "Scheduled",
+        "metricool_post_id": 390711866,
+        "metricool_uuid": "753216304123234447",
+        "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=753216304123234447",
+        "media_url": "https://static.metricool.com/planner/202610/7000636-file-1063904639260768568.mp4",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "auto_publish": true,
+        "draft": false,
+        "readback_verified": true,
+        "public_urls": null,
+        "old_metricool_post_id": 390693815,
+        "old_scheduled_iso": "2026-10-08T21:00:00+03:00",
+        "write_kind": "UPDATE_EXISTING_SCHEDULE"
+      }
+    ]
+  },
+  "final_publication_receipt": {
+    "batch_id": "extra-four-ai-20261007",
+    "brand_id": "7076410",
+    "timezone": "Europe/Athens",
+    "checked_at_utc": "2026-10-07T21:59:46.000Z",
+    "status": "Published",
+    "story_count": 4,
+    "published_destination_count": 16,
+    "scheduled_destination_count": 0,
+    "failed_destination_count": 0,
+    "new_posts_created": 0,
+    "original_future_schedules_replaced": true,
+    "receipts": [
+      {
+        "slug": "zakynthos_1943_neighbors",
+        "title": "Ζάκυνθος 1943: όταν οι γείτονες έγιναν καταφύγιο",
+        "source_slot_id": "2026-10-08-extra-four-ai-1",
+        "script_sha256": "f1eba792424d54fff59aa32fd53f0bf5ee227da9dbcf24f56714443fafe0afca",
+        "video_sha256": "5d7b64ebd4381ca96d89b4b96b3a15bf51192ea20a55e24cb09a38361c189dfd",
+        "brand_id": "7076410",
+        "scheduled_iso": "2026-10-08T00:52:00+03:00",
+        "timezone": "Europe/Athens",
+        "status": "Published",
+        "metricool_post_id": 390711670,
+        "metricool_uuid": "4208819118522191286",
+        "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=4208819118522191286",
+        "media_url": "https://static.metricool.com/planner/202610/7000636-file-17827925008442224518.mp4",
+        "providers": [
+          {
+            "network": "facebook",
+            "id": "1049536508128492",
+            "status": "PUBLISHED",
+            "publicUrl": "https://facebook.com/reel/1049536508128492",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/DeNXqr4jiLI/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/DeNXqr4jiLI/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "tiktok",
+            "id": "7694047661254577440",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7694047661254577440",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "yG5fYJdAWWs",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/yG5fYJdAWWs",
+            "detailedStatus": "Published"
+          }
+        ],
+        "auto_publish": true,
+        "draft": false,
+        "readback_verified": true,
+        "public_urls": {
+          "facebook": "https://facebook.com/reel/1049536508128492",
+          "instagram": "https://www.instagram.com/reel/DeNXqr4jiLI/",
+          "tiktok": "https://www.tiktok.com/@steliosvilanos/video/7694047661254577440",
+          "youtube": "https://www.youtube.com/shorts/yG5fYJdAWWs"
+        },
+        "old_metricool_post_id": 390693509,
+        "old_scheduled_iso": "2026-10-08T14:00:00+03:00",
+        "write_kind": "UPDATE_EXISTING_SCHEDULE",
+        "request_correction": "Removed inactive twitterData returned by getScheduledPosts; first attempt rejected before mutation and readback confirmed unchanged.",
+        "confirmed_at_utc": "2026-10-07T21:59:46.000Z",
+        "exact_platform_publication_timestamps_available": false
+      },
+      {
+        "slug": "o_ypologistis_pou_vgike_apo_ton_vytho",
+        "title": "Ο υπολογιστής που βγήκε από τον βυθό",
+        "source_slot_id": "2026-10-08-extra-four-ai-2",
+        "script_sha256": "0e1d19aaaa173b398aee6acf95e7a48cec799e5e6fbd6e156960e066b162c4ed",
+        "video_sha256": "f4204cbd5e6f78f25f89e6d232b3f4c3a6b64d07e0504c00d9a4866362f54cbc",
+        "brand_id": "7076410",
+        "scheduled_iso": "2026-10-08T00:53:00+03:00",
+        "timezone": "Europe/Athens",
+        "status": "Published",
+        "metricool_post_id": 390711823,
+        "metricool_uuid": "-7083174261733899026",
+        "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-7083174261733899026",
+        "media_url": "https://static.metricool.com/planner/202610/7000636-file-14839872058978942384.mp4",
+        "providers": [
+          {
+            "network": "facebook",
+            "id": "1478112874223278",
+            "status": "PUBLISHED",
+            "publicUrl": "https://facebook.com/reel/1478112874223278",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/DeNXwxxDSvd/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/DeNXwxxDSvd/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "tiktok",
+            "id": "7694047903299538208",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7694047903299538208",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "u1jk7C-nyvg",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/u1jk7C-nyvg",
+            "detailedStatus": "Published"
+          }
+        ],
+        "auto_publish": true,
+        "draft": false,
+        "readback_verified": true,
+        "public_urls": {
+          "facebook": "https://facebook.com/reel/1478112874223278",
+          "instagram": "https://www.instagram.com/reel/DeNXwxxDSvd/",
+          "tiktok": "https://www.tiktok.com/@steliosvilanos/video/7694047903299538208",
+          "youtube": "https://www.youtube.com/shorts/u1jk7C-nyvg"
+        },
+        "old_metricool_post_id": 390693759,
+        "old_scheduled_iso": "2026-10-08T16:00:00+03:00",
+        "write_kind": "UPDATE_EXISTING_SCHEDULE",
+        "confirmed_at_utc": "2026-10-07T21:59:46.000Z",
+        "exact_platform_publication_timestamps_available": false
+      },
+      {
+        "slug": "damon_phintias_myth",
+        "title": "Γύρισε για να σωθεί ο φίλος του | Δάμων και Φιντίας — Μύθος",
+        "source_slot_id": "2026-10-08-extra-four-ai-3",
+        "script_sha256": "e86179d5629ebd3019d8ea32d18b15ef939c16f13348e0184b48c88e5ff35fa3",
+        "video_sha256": "5a9ceef3e95bc652accbf85a15280bbb8cf1d287beaec09f6855d0a8cd70d35b",
+        "brand_id": "7076410",
+        "scheduled_iso": "2026-10-08T00:54:00+03:00",
+        "timezone": "Europe/Athens",
+        "status": "Published",
+        "metricool_post_id": 390711839,
+        "metricool_uuid": "8360217804873092321",
+        "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=8360217804873092321",
+        "media_url": "https://static.metricool.com/planner/202610/7000636-file-13381343245604049941.mp4",
+        "providers": [
+          {
+            "network": "facebook",
+            "id": "1106404278429758",
+            "status": "PUBLISHED",
+            "publicUrl": "https://facebook.com/reel/1106404278429758",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/DeNX9ZTATE8/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/DeNX9ZTATE8/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "tiktok",
+            "id": "7694048341486882081",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7694048341486882081",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "KuhBnlx-X5c",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/KuhBnlx-X5c",
+            "detailedStatus": "Published"
+          }
+        ],
+        "auto_publish": true,
+        "draft": false,
+        "readback_verified": true,
+        "public_urls": {
+          "facebook": "https://facebook.com/reel/1106404278429758",
+          "instagram": "https://www.instagram.com/reel/DeNX9ZTATE8/",
+          "tiktok": "https://www.tiktok.com/@steliosvilanos/video/7694048341486882081",
+          "youtube": "https://www.youtube.com/shorts/KuhBnlx-X5c"
+        },
+        "old_metricool_post_id": 390693787,
+        "old_scheduled_iso": "2026-10-08T19:00:00+03:00",
+        "write_kind": "UPDATE_EXISTING_SCHEDULE",
+        "confirmed_at_utc": "2026-10-07T21:59:46.000Z",
+        "exact_platform_publication_timestamps_available": false
+      },
+      {
+        "slug": "oi_saranta_ypografes",
+        "title": "Οι σαράντα υπογραφές",
+        "source_slot_id": "2026-10-08-extra-four-ai-4",
+        "script_sha256": "1ae1d504f4ed8943fd756dca0aa967fbf93f4bbbd1ebf2df4d3f4a1f0f340829",
+        "video_sha256": "96b95cbf80501d86afbc66a795fa9265e32bb8c9f379515e9b7dedeac132e1a9",
+        "brand_id": "7076410",
+        "scheduled_iso": "2026-10-08T00:55:00+03:00",
+        "timezone": "Europe/Athens",
+        "status": "Published",
+        "metricool_post_id": 390711866,
+        "metricool_uuid": "753216304123234447",
+        "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=753216304123234447",
+        "media_url": "https://static.metricool.com/planner/202610/7000636-file-1063904639260768568.mp4",
+        "providers": [
+          {
+            "network": "facebook",
+            "id": "1425569907299310",
+            "status": "PUBLISHED",
+            "publicUrl": "https://facebook.com/reel/1425569907299310",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/DeNX_d6DZKZ/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/DeNX_d6DZKZ/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "tiktok",
+            "id": "7694048424127253793",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7694048424127253793",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "D1cwY-RIPtg",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/D1cwY-RIPtg",
+            "detailedStatus": "Published"
+          }
+        ],
+        "auto_publish": true,
+        "draft": false,
+        "readback_verified": true,
+        "public_urls": {
+          "facebook": "https://facebook.com/reel/1425569907299310",
+          "instagram": "https://www.instagram.com/reel/DeNX_d6DZKZ/",
+          "tiktok": "https://www.tiktok.com/@steliosvilanos/video/7694048424127253793",
+          "youtube": "https://www.youtube.com/shorts/D1cwY-RIPtg"
+        },
+        "old_metricool_post_id": 390693815,
+        "old_scheduled_iso": "2026-10-08T21:00:00+03:00",
+        "write_kind": "UPDATE_EXISTING_SCHEDULE",
+        "confirmed_at_utc": "2026-10-07T21:59:46.000Z",
+        "exact_platform_publication_timestamps_available": false
+      }
+    ]
+  },
+  "content_history": {
+    "path": "state/content_history.json",
+    "version": 3,
+    "existing_records_before_merge": 44,
+    "new_logical_story_records": 4,
+    "total_records": 48,
+    "merge_actions": [
+      {
+        "slug": "zakynthos_1943_neighbors",
+        "action": "appended",
+        "index": 44
+      },
+      {
+        "slug": "o_ypologistis_pou_vgike_apo_ton_vytho",
+        "action": "appended",
+        "index": 45
+      },
+      {
+        "slug": "damon_phintias_myth",
+        "action": "appended",
+        "index": 46
+      },
+      {
+        "slug": "oi_saranta_ypografes",
+        "action": "appended",
+        "index": 47
+      }
+    ],
+    "all_44_prior_records_preserved": true,
+    "four_unique_fingerprints_and_uuids": true
+  },
+  "evidence_limit": "Each destination was confirmed PUBLISHED at confirmed_at_utc, using final providers[].id and providers[].publicUrl. Exact platform publication timestamps were not supplied and are not inferred from the scheduled times.",
+  "confirmed_at_utc": "2026-10-07T21:59:46.000Z",
+  "exact_platform_publication_timestamps_available": false,
+  "failed_destinations": 0,
+  "final_publication_receipt_sha256": "b7a04ac15f4dd323d3b7e2bdb1af91dd0546c0f18248c2e1e24ea7661434cf2e"
+}
