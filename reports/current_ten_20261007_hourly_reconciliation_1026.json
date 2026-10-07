@@ -1,0 +1,116 @@
+{
+  "generated_at": "2026-10-07T10:26:00+03:00",
+  "timezone": "Europe/Athens",
+  "strategy": "CURRENT_TEN_DAILY",
+  "metricool_brand": {
+    "id": 7076410,
+    "label": "Ιστορίες που μας αγγίζουν"
+  },
+  "slot": {
+    "scheduled_at": "2026-10-07T10:00:00+03:00",
+    "series": "dog_bartender",
+    "title": "Σκύλος Μπάρμαν: Το μήνυμα των δύο",
+    "qa": "PASSED_FINAL_REVIEW",
+    "card_count": 4,
+    "visual_rule": "same photorealistic brown dog bartender; four distinct scenes"
+  },
+  "live_readback": {
+    "logical_posts_scheduled": 10,
+    "destinations_total": 40,
+    "status_counts": {
+      "PUBLISHED": 12,
+      "PENDING": 28
+    },
+    "slot_destinations": [
+      {
+        "slot": "2026-10-07T10:00:00",
+        "network": "facebook",
+        "status": "PUBLISHED",
+        "publicUrl": "https://facebook.com/122101951509477192/posts/122117202015477192",
+        "providerId": "1355373017651242_122117202015477192",
+        "metricoolId": 389755025,
+        "uuid": "-5144935647883146398",
+        "draft": false,
+        "autoPublish": true,
+        "mediaCount": 4,
+        "tiktokAutoAddMusic": true
+      },
+      {
+        "slot": "2026-10-07T10:00:00",
+        "network": "instagram",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.instagram.com/p/DeLxw7dmtOe/",
+        "providerId": "https://www.instagram.com/p/DeLxw7dmtOe/",
+        "metricoolId": 389755025,
+        "uuid": "-5144935647883146398",
+        "draft": false,
+        "autoPublish": true,
+        "mediaCount": 4,
+        "tiktokAutoAddMusic": true
+      },
+      {
+        "slot": "2026-10-07T10:00:00",
+        "network": "tiktok",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7693817961211006240",
+        "providerId": "7693817961211006240",
+        "metricoolId": 389755025,
+        "uuid": "-5144935647883146398",
+        "draft": false,
+        "autoPublish": true,
+        "mediaCount": 4,
+        "tiktokAutoAddMusic": true
+      },
+      {
+        "slot": "2026-10-07T10:00:00",
+        "network": "youtube",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.youtube.com/shorts/k5TDXKeQp3s",
+        "providerId": "k5TDXKeQp3s",
+        "metricoolId": 389755136,
+        "uuid": "-8693870611235844814",
+        "draft": false,
+        "autoPublish": true,
+        "mediaCount": 1,
+        "tiktokAutoAddMusic": null
+      }
+    ]
+  },
+  "notion": {
+    "page_id": "3f1f2345-b318-8100-8b6c-d5d09c058e41",
+    "status": "Published",
+    "delivery_coverage": "Complete"
+  },
+  "actions": {
+    "metricool_mutation": false,
+    "retry": false,
+    "duplicate_create": false,
+    "notion_updated": true,
+    "repository_readback_created": true
+  },
+  "next_slot_preflight": {
+    "scheduled_at": "2026-10-07T11:00:00+03:00",
+    "series": "zodiac",
+    "logical_posts": 1,
+    "comparison_units": 6,
+    "all_12_signs_once": true,
+    "entertainment_disclosure": true,
+    "destinations": 4,
+    "statuses": {
+      "PENDING": 4
+    },
+    "native_media_count": 6,
+    "draft_false": true,
+    "auto_publish_true": true
+  },
+  "future_queue": {
+    "date_2026_10_08": {
+      "metricool_records": 0,
+      "qa_passed_lease": false
+    },
+    "date_2026_10_09": {
+      "metricool_records": 0
+    },
+    "minimum_two_days_met": false
+  }
+}
