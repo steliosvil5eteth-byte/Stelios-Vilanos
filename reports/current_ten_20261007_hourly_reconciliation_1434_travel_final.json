@@ -1,0 +1,134 @@
+{
+  "schema_version": "1.0",
+  "program": "CURRENT_TEN_DAILY",
+  "brand": {
+    "id": 7076410,
+    "name": "Ιστορίες που μας αγγίζουν",
+    "timezone": "Europe/Athens"
+  },
+  "checked_at": "2026-10-07T14:34:00+03:00",
+  "logical_slot": {
+    "date": "2026-10-07",
+    "original_time": "13:00",
+    "series": "greece_two_day_trip",
+    "title": "Διήμερο στη Δημητσάνα και τη Στεμνίτσα",
+    "exact_final_review": "PASSED_FINAL_REVIEW"
+  },
+  "final_delivery": {
+    "status": "PUBLISHED",
+    "logical_destinations": "4/4",
+    "providers": [
+      {
+        "network": "facebook",
+        "id": "1733877344352942",
+        "status": "PUBLISHED",
+        "publicUrl": "https://facebook.com/reel/1733877344352942",
+        "record_id": 389757027
+      },
+      {
+        "network": "instagram",
+        "id": "https://www.instagram.com/reel/DeMGm3PFMtk/",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.instagram.com/reel/DeMGm3PFMtk/",
+        "record_id": 389757027
+      },
+      {
+        "network": "youtube",
+        "id": "GpWYjpzCwRM",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.youtube.com/shorts/GpWYjpzCwRM",
+        "record_id": 389757027
+      },
+      {
+        "network": "tiktok",
+        "id": "7693874030599867680",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7693874030599867680",
+        "record_id": 390209077
+      }
+    ]
+  },
+  "original_record": {
+    "id": 389757027,
+    "uuid": "-305548979675250645",
+    "publication_time": "2026-10-07T13:00:00+03:00",
+    "tiktok_result": "ERROR_HTTP_503_NO_PROVIDER_ID",
+    "other_destinations": "PUBLISHED",
+    "draft": false,
+    "autoPublish": true
+  },
+  "tiktok_recovery": {
+    "id": 390209077,
+    "uuid": "-5026103076433673443",
+    "publication_time": "2026-10-07T13:40:00+03:00",
+    "provider_id": "7693874030599867680",
+    "status": "PUBLISHED",
+    "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7693874030599867680",
+    "media": [
+      "https://static.metricool.com/planner/202610/7000636-file-7172353212739238582.mp4"
+    ],
+    "draft": false,
+    "autoPublish": true
+  },
+  "day_reconciliation": {
+    "baseline_logical_posts": 10,
+    "baseline_logical_destinations": 40,
+    "logical_destination_statuses": {
+      "PUBLISHED": 20,
+      "PENDING": 20,
+      "ERROR": 0
+    },
+    "physical_provider_attempt_statuses": {
+      "PUBLISHED": 20,
+      "PENDING": 20,
+      "ERROR": 1
+    },
+    "explanation": "Το ERROR είναι η ιστορική αρχική προσπάθεια TikTok στο record 389757027. Το ίδιο logical destination καλύφθηκε από το επιτυχημένο TikTok-only catch-up 390209077 και δεν προσμετράται δεύτερη φορά."
+  },
+  "next_slot_preflight": {
+    "time": "2026-10-07T15:00:00+03:00",
+    "title": "Το φόρεμα με τη γνώριμη κλωστή",
+    "logical_destinations": "4",
+    "statuses": {
+      "facebook": "PENDING",
+      "instagram": "PENDING",
+      "tiktok": "PENDING",
+      "youtube": "PENDING"
+    },
+    "records": [
+      {
+        "id": 389756009,
+        "uuid": "4919627866263669640",
+        "providers": [
+          "facebook",
+          "instagram",
+          "tiktok"
+        ],
+        "media_count": 5,
+        "draft": false,
+        "autoPublish": true
+      },
+      {
+        "id": 389756142,
+        "uuid": "2835419760681372062",
+        "providers": [
+          "youtube"
+        ],
+        "media_count": 1,
+        "draft": false,
+        "autoPublish": true
+      }
+    ],
+    "exact_final_review": "PASSED_FINAL_REVIEW"
+  },
+  "controls": {
+    "fresh_dedupe": "Metricool + Notion + repository/history immediately before update and report create",
+    "other_destinations_retried": false,
+    "backdated": false,
+    "duplicates_created": 0,
+    "pending_is_published": false,
+    "notion_page_id": "3f1f2345-b318-812f-8f7f-c98362db6b40",
+    "notion_status": "Published",
+    "notion_delivery_coverage": "Complete"
+  }
+}
