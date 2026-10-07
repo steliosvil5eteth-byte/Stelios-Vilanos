@@ -1,0 +1,133 @@
+{
+  "schema_version": "1.0",
+  "program": "CURRENT_TEN_DAILY",
+  "brand": {
+    "id": 7076410,
+    "name": "Ιστορίες που μας αγγίζουν",
+    "timezone": "Europe/Athens"
+  },
+  "checked_at": "2026-10-07T15:33:00+03:00",
+  "logical_slot": {
+    "date": "2026-10-07",
+    "time": "15:00",
+    "series": "love_soul_relationship",
+    "title": "Το φόρεμα με τη γνώριμη κλωστή",
+    "fingerprint": "love_soul_relationship|grandmother-seamstress-repairs-late-mothers-blue-dress-wedding",
+    "exact_final_review": "PASSED_FINAL_REVIEW",
+    "expected_cards": 5
+  },
+  "metricool_records": [
+    {
+      "id": 389756009,
+      "uuid": "4919627866263669640",
+      "publication_time": "2026-10-07T15:00:00+03:00",
+      "providers": [
+        {
+          "network": "facebook",
+          "id": "1355373017651242_122117323539477192",
+          "status": "PUBLISHED",
+          "publicUrl": "https://facebook.com/122101951509477192/posts/122117323539477192"
+        },
+        {
+          "network": "instagram",
+          "id": "https://www.instagram.com/p/DeMUKTAD1pR/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/p/DeMUKTAD1pR/"
+        },
+        {
+          "network": "tiktok",
+          "id": "7693895473358245153",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7693895473358245153"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-10919914726421794616.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-9421335474079308182.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-995884219957496932.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-402605487960392164.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-9537337661361828049.jpeg"
+      ],
+      "media_count": 5,
+      "draft": false,
+      "autoPublish": true,
+      "tiktok_autoAddMusic": true,
+      "tiktok_native_photo": true
+    },
+    {
+      "id": 389756142,
+      "uuid": "2835419760681372062",
+      "publication_time": "2026-10-07T15:00:00+03:00",
+      "providers": [
+        {
+          "network": "youtube",
+          "id": "EnWCEHI9Dek",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.youtube.com/shorts/EnWCEHI9Dek"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-4546797422816124524.mp4"
+      ],
+      "media_count": 1,
+      "draft": false,
+      "autoPublish": true,
+      "youtube_complete_vertical_slideshow": true
+    }
+  ],
+  "final_delivery": {
+    "status": "PUBLISHED",
+    "logical_destinations": "4/4"
+  },
+  "qa": {
+    "exact_card_count_and_order": true,
+    "final_jpeg_cards": "5 x 1080x1080",
+    "distinct_scene_relevant_photorealistic_visuals": true,
+    "crop_and_readability": true,
+    "caption": true,
+    "hashtags_max_5": true,
+    "ai_disclosure": true,
+    "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+  },
+  "day_reconciliation": {
+    "baseline_logical_posts": 10,
+    "baseline_logical_destinations": 40,
+    "logical_destination_statuses": {
+      "PUBLISHED": 24,
+      "PENDING": 16,
+      "ERROR": 0
+    },
+    "physical_provider_attempt_statuses": {
+      "PUBLISHED": 24,
+      "PENDING": 16,
+      "ERROR": 1
+    },
+    "explanation": "Το μοναδικό physical ERROR είναι η ιστορική αρχική TikTok απόπειρα του 13:00, η οποία καλύφθηκε από δημοσιευμένο TikTok-only catch-up και δεν αποτελεί logical error."
+  },
+  "next_slot_preflight": {
+    "time": "2026-10-07T17:00:00+03:00",
+    "title": "Horsetail Fall — το νερό που μοιάζει με φωτιά",
+    "metricool_id": 389757230,
+    "uuid": "-3811293072361438275",
+    "providers": {
+      "facebook": "PENDING",
+      "instagram": "PENDING",
+      "tiktok": "PENDING",
+      "youtube": "PENDING"
+    },
+    "draft": false,
+    "autoPublish": true,
+    "exact_final_review": "PASSED_FINAL_REVIEW"
+  },
+  "controls": {
+    "fresh_dedupe": "Metricool brand 7076410 + Notion archive page + repository search/history immediately before write",
+    "retry": false,
+    "duplicate": false,
+    "backdated": false,
+    "metricool_mutation": false,
+    "pending_is_published": false,
+    "notion_page_id": "3f1f2345-b318-81cb-83f7-d640242d2e08",
+    "notion_status": "Published",
+    "notion_delivery_coverage": "Complete"
+  }
+}
