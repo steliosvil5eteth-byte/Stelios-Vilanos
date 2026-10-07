@@ -1,0 +1,118 @@
+{
+  "report_type": "CURRENT_TEN_DAILY_HOURLY_RECONCILIATION",
+  "reconciled_at": "2026-10-07T22:34:00+03:00",
+  "timezone": "Europe/Athens",
+  "metricool_brand": {
+    "id": 7076410,
+    "label": "Ιστορίες που μας αγγίζουν",
+    "exclusive": true
+  },
+  "strategy": {
+    "program_label": "CURRENT_TEN_DAILY",
+    "config_sha": "4daee55a188d949c0c450ca087ac9430d29b3fc4",
+    "logical_posts_required": 10,
+    "destinations_required": 40
+  },
+  "slot": {
+    "source_slot_id": "CURRENT_TEN_DAILY_20261007_international_legend",
+    "scheduled_time": "2026-10-07T22:00:00+03:00",
+    "title": "Νέκεν: η μουσική που ερχόταν από τη λίμνη",
+    "fingerprint": "international_legend|nokken-norwegian-water-spirit-fiddle-shapeshifter",
+    "qa_status": "PASSED_FINAL_REVIEW",
+    "format": "narrated_video",
+    "media": [
+      "https://static.metricool.com/planner/202610/7000636-file-2967894258804044363.mp4"
+    ],
+    "metricool": {
+      "id": 389757618,
+      "uuid": "-8468780067211033615",
+      "draft": false,
+      "autoPublish": true,
+      "providers": [
+        {
+          "network": "facebook",
+          "id": "1098096956029723",
+          "status": "PUBLISHED",
+          "publicUrl": "https://facebook.com/reel/1098096956029723",
+          "detailedStatus": "Published"
+        },
+        {
+          "network": "instagram",
+          "id": "https://www.instagram.com/reel/DeNES-vldwI/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/DeNES-vldwI/",
+          "detailedStatus": "Published"
+        },
+        {
+          "network": "tiktok",
+          "id": "7694004089578884384",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7694004089578884384",
+          "detailedStatus": "Published"
+        },
+        {
+          "network": "youtube",
+          "id": "fL-rPPzU0tg",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.youtube.com/shorts/fL-rPPzU0tg",
+          "detailedStatus": "Published"
+        }
+      ]
+    },
+    "notion": {
+      "page_id": "3f1f2345-b318-8170-a9b8-d053ad37b561",
+      "status": "Published",
+      "delivery_coverage": "Complete"
+    },
+    "dedupe": {
+      "metricool_match_count": 1,
+      "notion_owner_page_id": "3f1f2345-b318-8170-a9b8-d053ad37b561",
+      "repository_current_paths": [
+        "media_jobs/current_ten_20261007_narrated.json",
+        "media_jobs/current_ten_20261007_delivery_journal.json"
+      ],
+      "earlier_or_parallel_live_duplicate": false
+    },
+    "action": "No retry, backdate, reschedule, or duplicate was created."
+  },
+  "daily_reconciliation": {
+    "logical_posts_published": 10,
+    "destination_results": {
+      "published": 40,
+      "pending": 0,
+      "failed": 0,
+      "blocked": 0
+    },
+    "physical_metricool_records": 17,
+    "historical_physical_errors": 1,
+    "historical_error_note": "The original 13:00 TikTok attempt returned HTTP 503 and remains only as historical physical evidence; its logical destination was recovered and published at 13:40.",
+    "baseline_complete": true
+  },
+  "forward_queue": {
+    "2026-10-08": {
+      "logical_posts": 10,
+      "destinations": 40,
+      "metricool_records": 16,
+      "statuses": {
+        "PENDING": 40
+      },
+      "draft_false": true,
+      "auto_publish_true": true,
+      "production_lease": "state/production_leases/2026-10-08-brand7076410.json",
+      "final_review": "PASSED_FINAL_REVIEW",
+      "complete_reviewed_day": true
+    },
+    "2026-10-09": {
+      "logical_posts": 0,
+      "destinations": 0,
+      "metricool_records": 0,
+      "active_production_lease": false,
+      "complete_reviewed_day": false
+    },
+    "complete_reviewed_future_days": 1,
+    "minimum_required": 2,
+    "target": 3,
+    "minimum_satisfied": false,
+    "blocker": "No Metricool records, repository manifest/release/readback, active production lease, or confirmed Notion batch for 2026-10-09. No placeholder was created."
+  }
+}
