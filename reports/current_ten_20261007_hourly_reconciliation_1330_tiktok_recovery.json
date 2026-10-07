@@ -1,0 +1,100 @@
+{
+  "schema_version": "1.0",
+  "program": "CURRENT_TEN_DAILY",
+  "brand": {
+    "id": 7076410,
+    "name": "Ιστορίες που μας αγγίζουν",
+    "timezone": "Europe/Athens"
+  },
+  "checked_at": "2026-10-07T13:30:00+03:00",
+  "logical_slot": {
+    "date": "2026-10-07",
+    "original_time": "13:00",
+    "series": "greece_two_day_trip",
+    "title": "Διήμερο στη Δημητσάνα και τη Στεμνίτσα"
+  },
+  "qa": {
+    "status": "PASSED_FINAL_REVIEW",
+    "resolution": "1080x1920",
+    "duration_seconds": 100.266667,
+    "voice": "el-GR-NestorasNeural",
+    "burned_in_synced_greek_subtitles": true,
+    "avatar": false,
+    "background_music": false,
+    "video_sha256": "28015babc685bd99e3e11ee45c8aed8028ccef512f546609c227088029e09fe7"
+  },
+  "original_record": {
+    "id": 389757027,
+    "uuid": "-305548979675250645",
+    "providers": [
+      {
+        "network": "facebook",
+        "id": "1733877344352942",
+        "status": "PUBLISHED",
+        "publicUrl": "https://facebook.com/reel/1733877344352942",
+        "detailedStatus": "Published"
+      },
+      {
+        "network": "instagram",
+        "id": "https://www.instagram.com/reel/DeMGm3PFMtk/",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.instagram.com/reel/DeMGm3PFMtk/",
+        "detailedStatus": "Published"
+      },
+      {
+        "network": "tiktok",
+        "status": "ERROR",
+        "detailedStatus": "Auto publish failed. Unexpected error with response code 503 and error stream: <HTML><HEAD>\n<TITLE>Service Unavailable</TITLE>\n</HEAD><BODY>\n<H1>Service Unavailable - Zero size object</H1>\nThe server"
+      },
+      {
+        "network": "youtube",
+        "id": "GpWYjpzCwRM",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.youtube.com/shorts/GpWYjpzCwRM",
+        "detailedStatus": "Published"
+      }
+    ],
+    "media": [
+      "https://static.metricool.com/planner/202610/7000636-file-13056911456525405585.mp4"
+    ],
+    "draft": false,
+    "autoPublish": true
+  },
+  "confirmation_not_published": {
+    "metricool_tiktok_status": "ERROR",
+    "provider_id_present": false,
+    "metricool_analytics_range": "2026-10-07T12:50:00+03:00/2026-10-07T13:35:00+03:00",
+    "analytics_rows": 0,
+    "web_search": "TikTok blocked by robots.txt; not used as publication proof"
+  },
+  "retry": {
+    "only_destination": "tiktok",
+    "publication_time": "2026-10-07T13:40:00+03:00",
+    "id": 390209077,
+    "uuid": "-5026103076433673443",
+    "providers": [
+      {
+        "network": "tiktok",
+        "status": "PENDING",
+        "detailedStatus": "Pending"
+      }
+    ],
+    "media": [
+      "https://static.metricool.com/planner/202610/7000636-file-7172353212739238582.mp4"
+    ],
+    "draft": false,
+    "autoPublish": true,
+    "current_status": "PENDING"
+  },
+  "rejected_pre_write_attempts": [
+    "failed to upload Metricool URL for mediaFiles[0]: No such file or directory (os error 2); no record created",
+    "Error processing post information: Field 'publicationDate' is required; no record created"
+  ],
+  "reconciliation": {
+    "fresh_dedupe": "Metricool + TikTok analytics + Notion + repository/history before each create",
+    "other_destinations_retried": false,
+    "backdated": false,
+    "duplicates_created": 0,
+    "pending_is_published": false
+  }
+}
