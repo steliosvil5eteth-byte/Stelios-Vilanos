@@ -1,0 +1,108 @@
+{
+  "report_type": "CURRENT_TEN_DAILY_HOURLY_RECONCILIATION",
+  "generated_at": "2026-10-07T19:34:58+03:00",
+  "timezone": "Europe/Athens",
+  "brand": {
+    "id": 7076410,
+    "label": "Ιστορίες που μας αγγίζουν",
+    "exclusive": true
+  },
+  "strategy": "CURRENT_TEN_DAILY",
+  "slot": {
+    "local_date": "2026-10-07",
+    "local_time": "18:30",
+    "series": "documented_experiments",
+    "title": "Robbers Cave: πώς δύο ομάδες έγιναν αντίπαλοι",
+    "final_review": "PASSED_FINAL_REVIEW",
+    "metricool_id": 389757445,
+    "metricool_uuid": "3313202101657618567",
+    "draft": false,
+    "autoPublish": true,
+    "media": [
+      "https://static.metricool.com/planner/202610/7000636-file-16405695293885071401.mp4"
+    ],
+    "providers": {
+      "facebook": {
+        "status": "PUBLISHED",
+        "id": "1352613187936382",
+        "url": "https://facebook.com/reel/1352613187936382"
+      },
+      "instagram": {
+        "status": "PUBLISHED",
+        "id": "https://www.instagram.com/reel/DeMsEUTjLbt/",
+        "url": "https://www.instagram.com/reel/DeMsEUTjLbt/"
+      },
+      "tiktok": {
+        "status": "PUBLISHED",
+        "id": "7693949527467838752",
+        "url": "https://www.tiktok.com/@steliosvilanos/video/7693949527467838752"
+      },
+      "youtube": {
+        "status": "PUBLISHED",
+        "id": "rC87AIDuyj8",
+        "url": "https://www.youtube.com/shorts/rC87AIDuyj8"
+      }
+    },
+    "qa": {
+      "resolution": "1080x1920",
+      "duration_seconds": 106.834,
+      "voice": "el-GR-NestorasNeural",
+      "burned_in_synchronized_greek_subtitles": true,
+      "avatar_presenter": false,
+      "background_music": false,
+      "ai_disclosure": true,
+      "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "hashtag_count": 5
+    }
+  },
+  "dedupe": {
+    "sources": [
+      "Metricool brand 7076410 live history",
+      "Notion collection://46cd5cf4-5f7e-46e8-b0ef-274aeadbdb52",
+      "repository/history"
+    ],
+    "repository_candidates": [
+      {
+        "date": "2026-10-01",
+        "path": "media_jobs/current_ten_20261001_videos.json",
+        "disposition": "UNCONSUMED_MANIFEST; live 18:30 was Good Samaritan"
+      },
+      {
+        "date": "2026-10-03",
+        "path": "media_jobs/current_ten_20261003_narrated.json",
+        "disposition": "UNCONSUMED_MANIFEST; no live 18:30 post"
+      }
+    ],
+    "prior_live_delivery_found": false,
+    "conclusion": "NO_LIVE_DUPLICATE"
+  },
+  "notion": {
+    "page_id": "3f1f2345-b318-8104-b4fc-c07efc57b6e5",
+    "status": "Published",
+    "delivery_coverage": "Complete",
+    "platform_statuses": "Published 4/4",
+    "readback_verified": true
+  },
+  "day_logical_summary": {
+    "exact_baseline_posts": 10,
+    "exact_destinations": 40,
+    "published": 32,
+    "pending": 8,
+    "failed": 0,
+    "blocked": 0,
+    "historical_physical_error_attempts": 1,
+    "note": "The historical physical error is the superseded 13:00 TikTok 503 attempt; the logical destination was recovered and published."
+  },
+  "next_slots": [
+    {
+      "time": "20:00",
+      "status": "PENDING",
+      "count": 4
+    },
+    {
+      "time": "22:00",
+      "status": "PENDING",
+      "count": 4
+    }
+  ]
+}
