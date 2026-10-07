@@ -1,0 +1,109 @@
+{
+  "generated_at": "2026-10-07T09:31:00+03:00",
+  "timezone": "Europe/Athens",
+  "strategy": "CURRENT_TEN_DAILY",
+  "metricool_brand": {
+    "id": 7076410,
+    "label": "Ιστορίες που μας αγγίζουν"
+  },
+  "slot": {
+    "scheduled_at": "2026-10-07T09:00:00+03:00",
+    "series": "survival",
+    "title": "Μονοξείδιο του άνθρακα: φύγε πριν ψάξεις την αιτία",
+    "qa": "PASSED_FINAL_REVIEW",
+    "card_count": 9
+  },
+  "live_readback": {
+    "logical_posts_scheduled": 10,
+    "destinations_total": 40,
+    "status_counts": {
+      "PUBLISHED": 8,
+      "PENDING": 32
+    },
+    "slot_destinations": [
+      {
+        "slot": "2026-10-07T09:00:00",
+        "network": "facebook",
+        "status": "PUBLISHED",
+        "publicUrl": "https://facebook.com/122101951509477192/posts/122117182827477192",
+        "providerId": "1355373017651242_122117182827477192",
+        "metricoolId": 389754629,
+        "uuid": "1701702829720749562",
+        "draft": false,
+        "autoPublish": true,
+        "mediaCount": 9,
+        "tiktokAutoAddMusic": true
+      },
+      {
+        "slot": "2026-10-07T09:00:00",
+        "network": "instagram",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.instagram.com/p/DeLq5uLCYMF/",
+        "providerId": "https://www.instagram.com/p/DeLq5uLCYMF/",
+        "metricoolId": 389754629,
+        "uuid": "1701702829720749562",
+        "draft": false,
+        "autoPublish": true,
+        "mediaCount": 9,
+        "tiktokAutoAddMusic": true
+      },
+      {
+        "slot": "2026-10-07T09:00:00",
+        "network": "tiktok",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7693802499374910752",
+        "providerId": "7693802499374910752",
+        "metricoolId": 389754629,
+        "uuid": "1701702829720749562",
+        "draft": false,
+        "autoPublish": true,
+        "mediaCount": 9,
+        "tiktokAutoAddMusic": true
+      },
+      {
+        "slot": "2026-10-07T09:00:00",
+        "network": "youtube",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.youtube.com/shorts/XwjdpUrO7To",
+        "providerId": "XwjdpUrO7To",
+        "metricoolId": 389754785,
+        "uuid": "2198965736719664209",
+        "draft": false,
+        "autoPublish": true,
+        "mediaCount": 1,
+        "tiktokAutoAddMusic": null
+      }
+    ]
+  },
+  "notion": {
+    "page_id": "3f1f2345-b318-8147-94e1-c9c9729100a7",
+    "status": "Published",
+    "delivery_coverage": "Complete"
+  },
+  "actions": {
+    "metricool_mutation": false,
+    "retry": false,
+    "duplicate_create": false,
+    "notion_updated": true,
+    "repository_readback_created": true
+  },
+  "next_slot_preflight": {
+    "scheduled_at": "2026-10-07T10:00:00+03:00",
+    "series": "dog_bartender",
+    "destinations": 4,
+    "status": "PENDING",
+    "native_media_count": 4,
+    "draft_false": true,
+    "auto_publish_true": true
+  },
+  "future_queue": {
+    "date_2026_10_08": {
+      "metricool_records": 0,
+      "qa_passed_lease": false
+    },
+    "date_2026_10_09": {
+      "metricool_records": 0
+    },
+    "minimum_two_days_met": false
+  }
+}
