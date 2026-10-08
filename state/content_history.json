@@ -3480,16 +3480,18 @@
       "source_slot_id": "CURRENT_TEN_20261008_documented_experiments",
       "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
       "status": "blocked",
-      "production_state": "MEDIA_READY_AWAITING_FINAL_AUDIO_REVIEW",
+      "production_state": "METRICOOL_DRAFT_READY_AWAITING_FINAL_AUDIO_REVIEW",
       "scheduled_time": null,
       "timezone": "Europe/Athens",
-      "platforms": [],
+      "platforms": [
+        "youtube"
+      ],
       "intended_platforms": [
         "youtube"
       ],
       "metricool_brand_id": "7076410",
-      "metricool_post_id": null,
-      "metricool_uuid": null,
+      "metricool_post_id": "391458921",
+      "metricool_uuid": "-3528729913796770475",
       "legacy_inactive_metricool_draft": {
         "id": "390888157",
         "uuid": "-3528729913796770475",
@@ -3500,10 +3502,11 @@
           "instagram",
           "tiktok"
         ],
-        "usage": "Historical inactive shared-program draft. Not a newly created YouTube post or release."
+        "usage": "Historical source draft ID. The same UUID now points to the repaired inactive YouTube-only draft; no second logical record was created.",
+        "replaced_by_id": "391458921"
       },
       "notion_page_id": "3f2f2345-b318-8121-8211-fe12da480dab",
-      "media_url": null,
+      "media_url": "https://static.metricool.com/planner/202610/7000636-file-10555168709203677419.mp4",
       "duration_seconds": 96.646,
       "artifacts": [
         {
@@ -3544,18 +3547,35 @@
         "avatar_presenter": false,
         "background_music": false,
         "resolution": "1080x1920",
-        "fps": 30
+        "fps": 30,
+        "uploaded_exact_bytes_verified": true
       },
-      "platform_status": {},
+      "platform_status": {
+        "youtube": {
+          "status": "PENDING",
+          "draft": true,
+          "autoPublish": false,
+          "source_post_id": "391458921",
+          "source_uuid": "-3528729913796770475",
+          "public_url": null,
+          "confirmed_at_utc": "2026-10-08T18:59:19Z"
+        }
+      },
       "public_urls": {},
       "terminal": false,
       "publication_enabled": false,
       "scheduling_enabled": false,
       "new_tts_calls": 0,
-      "new_metricool_writes": 0,
+      "new_metricool_writes": 1,
       "recovery_record": "state/recovery_false_consensus_20261008_2109.json",
-      "last_reconciled_at": "2026-10-08T18:37:08Z",
-      "reconciliation_note": "Existing unpublished False Consensus story repaired from its original Nestoras WAV and nine new illustrative images. Exact final MP4 is saved for human actual-audio review; it has not been uploaded to Metricool, scheduled or published. Fresh history/queue check remains required before any release. Old four-file audio exception is not applied to this item."
+      "last_reconciled_at": "2026-10-08T18:59:19Z",
+      "reconciliation_note": "The exact visually and technically reviewed MP4 was uploaded directly to Metricool and its returned hosted bytes matched the reviewed SHA256. Existing inactive UUID was updated in place to YouTube only, draft=true and autoPublish=false. This is NOT scheduled or published, and the22:30 calendar field is only an inactive draft placeholder. Actual audio listening remains unperformed. Current ID391458921 supersedes old390888157. Initial validation rejected unselected legacy networkData; original unchanged state was verified before a corrected request. No new logical post or public platform URL.",
+      "active_platforms": [],
+      "platforms_semantics": "Selected destination of an inactive draft; not an active scheduled or published destination.",
+      "draft": true,
+      "autoPublish": false,
+      "draft_calendar_time": "2026-10-08T22:30:00+03:00",
+      "metricool_write_attempt_count": 2
     }
   ]
 }
