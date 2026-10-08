@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "strategy_id": "PLATFORM_SPECIFIC_TEN_DAILY_20261008",
-  "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+  "strategy_id": "PLATFORM_SPECIFIC_FIFTEEN_DAILY_20261008",
+  "program_label": "PLATFORM_SPECIFIC_FIFTEEN_DAILY",
   "effective_at": "2026-10-08T08:28:13+03:00",
-  "user_reconfirmed_at": "2026-10-08T08:53:21+03:00",
+  "user_reconfirmed_at": "2026-10-08T23:50:00+03:00",
   "prepared_at_utc": "2026-10-08 06:01:37 UTC",
   "authoritative": true,
   "enabled": false,
@@ -25,15 +25,15 @@
     "activation_is_not_automatic": true
   },
   "targets": {
-    "daily_distinct_stories": 40,
-    "daily_distinct_videos": 40,
-    "daily_provider_destinations": 40,
-    "per_platform_daily_video_target": 10,
+    "daily_distinct_stories": 60,
+    "daily_distinct_videos": 60,
+    "daily_provider_destinations": 60,
+    "per_platform_daily_video_target": 15,
     "one_platform_per_story": true,
     "one_provider_per_record": true,
     "crossposting_allowed": false,
     "renamed_or_reformatted_reuse_counts_as_new": false,
-    "cadence_basis": "Explicit user target, not a proven algorithmic optimum",
+    "cadence_basis": "Explicit user target: 15 distinct videos per platform per day; topics selected separately per platform using own-account analytics and verified platform research.",
     "shortage_policy": "Report shortfall; do not fill with reused, unverified or unreviewed material"
   },
   "legacy_common_program": {
@@ -203,8 +203,8 @@
       "timezone": "Europe/Athens"
     },
     "private_baseline_location": "Private analysis report; raw account analytics must not be committed to this public repository",
-    "selection_basis": "Observed own-account metrics and verified primary platform sources",
-    "claim_status": "Editorial hypotheses to test, not proven winning formulas",
+    "selection_basis": "Observed own-account platform analytics plus verified official platform research; choose different daily topics separately for Facebook, Instagram, TikTok, and YouTube based on strongest platform-specific evidence available.",
+    "claim_status": "Platform-specific editorial hypotheses refreshed daily from current analytics/research; do not present small samples or photo performance as proven video performance.",
     "initial_mix_is_adjustable_after_evidence": true,
     "observation_windows_hours": [
       24,
@@ -243,7 +243,9 @@
       "https://www.instagram.com/reel/DFFyRp-pINJ/",
       "https://about.fb.com/news/2024/02/labeling-ai-generated-images-on-facebook-instagram-and-threads/"
     ],
-    "single_viral_outlier_does_not_guarantee_repeatability": true
+    "single_viral_outlier_does_not_guarantee_repeatability": true,
+    "daily_topic_refresh_required": true,
+    "platform_specific_topic_selection_required": true
   },
   "scheduling": {
     "enabled": false,
@@ -309,7 +311,7 @@
       "enabled": false,
       "status": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
       "provider": "facebook",
-      "daily_video_target": 10,
+      "daily_video_target": 15,
       "format": "REEL",
       "orientation": "9:16",
       "minimum_duration_seconds": 80,
@@ -345,7 +347,7 @@
       "enabled": false,
       "status": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
       "provider": "instagram",
-      "daily_video_target": 10,
+      "daily_video_target": 15,
       "format": "REEL",
       "orientation": "9:16",
       "minimum_duration_seconds": 80,
@@ -381,7 +383,7 @@
       "enabled": false,
       "status": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
       "provider": "tiktok",
-      "daily_video_target": 10,
+      "daily_video_target": 15,
       "format": "VIDEO",
       "orientation": "9:16",
       "minimum_duration_seconds": 80,
@@ -417,7 +419,7 @@
       "enabled": false,
       "status": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
       "provider": "youtube",
-      "daily_video_target": 10,
+      "daily_video_target": 15,
       "format": "YOUTUBE_SHORT",
       "orientation": "9:16",
       "minimum_duration_seconds": 80,
@@ -547,5 +549,13 @@
     "actual_new_final_mp4": 0,
     "actual_new_scheduled": 0,
     "gates_changed": false
+  },
+  "latest_user_instruction": {
+    "at": "2026-10-08T23:50:00+03:00",
+    "instruction": "From now on, publish 15 different videos per platform per day, with daily platform-specific topic selection based on what performs best on each platform separately.",
+    "daily_target_per_platform": 15,
+    "daily_total": 60,
+    "crossposting_allowed": false,
+    "daily_fresh_topics_required": true
   }
 }
