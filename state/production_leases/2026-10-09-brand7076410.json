@@ -4,8 +4,8 @@
   "brandName": "Ιστορίες που μας αγγίζουν",
   "owner": "daily-social-production-20261008T0600-athens",
   "created_at": "2026-10-08T03:05:00Z",
-  "expires_at": "2026-10-08T07:30:00Z",
-  "status": "ACTIVE_PRODUCTION",
+  "expires_at": "2026-10-08T09:30:00Z",
+  "status": "QA_PASSED_SCHEDULING_BLOCKED",
   "categories": [
     "relationships",
     "survival",
@@ -18,6 +18,7 @@
     "myth_or_truth",
     "international_legend"
   ],
-  "note": "Exclusive lease after live reconciliation of Metricool 7076410, Notion archive, repository history, current manifests and leases. No Metricool records exist for 2026-10-09 at acquisition.",
-  "final_review": "NOT_RUN"
+  "note": "10/10 exact-final packages complete and durable; 56 media/QA files byte-verified. Metricool create rejected exact-final media upload with INVALID_ARGUMENT; public URLs/data URIs were treated as filenames. Live 2026-10-09 readback remains empty. Notion contains 10 Blocked records; no placeholders or Metricool records created.",
+  "final_review": "PASSED_FINAL_REVIEW",
+  "updated_at": "2026-10-08T04:20:00Z"
 }
