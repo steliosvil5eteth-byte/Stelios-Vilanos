@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0",
+  "observed_at": "2026-10-08T07:30:00+03:00",
+  "timezone": "Europe/Athens",
+  "brand": {
+    "id": 7076410,
+    "name": "Ιστορίες που μας αγγίζουν"
+  },
+  "policy": {
+    "social_program": "CURRENT_TEN_DAILY",
+    "social_destinations": [
+      "facebook",
+      "instagram",
+      "tiktok"
+    ],
+    "social_target_logical_posts": 10,
+    "social_target_destinations": 30,
+    "youtube_program": "YOUTUBE_GROWTH_TEN_DAILY",
+    "automation_youtube_mutations_allowed": false,
+    "reason": "config/youtube_growth_strategy.json is missing and no reconciled active Notion/repository policy or production lease was found; manual transition session owns YouTube."
+  },
+  "repository_guard": {
+    "content_strategy_sha": "4daee55a188d949c0c450ca087ac9430d29b3fc4",
+    "content_strategy_still_legacy_40_destinations": true,
+    "youtube_growth_strategy_path": "config/youtube_growth_strategy.json",
+    "youtube_growth_strategy_fetch": "404_NOT_FOUND"
+  },
+  "live_metricool": {
+    "non_youtube_baseline": {
+      "published": 3,
+      "pending": 27,
+      "error": 0,
+      "total": 30
+    },
+    "extras_non_youtube": {
+      "published": 12,
+      "pending": 0,
+      "error": 0,
+      "total": 12
+    },
+    "youtube": {
+      "published_today": 5,
+      "superseded_pending_records": 9,
+      "next_pending": {
+        "time": "2026-10-08T09:00:00+03:00",
+        "metricool_id": 390603371,
+        "uuid": "-4283568355360488397"
+      },
+      "mutation_performed": false
+    }
+  },
+  "youtube_pending": [
+    {
+      "time": "09:00",
+      "id": 390603371,
+      "uuid": "-4283568355360488397"
+    },
+    {
+      "time": "10:00",
+      "id": 390603823,
+      "uuid": "-3195901586094079596"
+    },
+    {
+      "time": "11:00",
+      "id": 390604325,
+      "uuid": "-3104381034110696490"
+    },
+    {
+      "time": "13:00",
+      "id": 390605926,
+      "uuid": "1517024098265220252",
+      "shared_record": true
+    },
+    {
+      "time": "15:00",
+      "id": 390604819,
+      "uuid": "7135582515505546690"
+    },
+    {
+      "time": "17:00",
+      "id": 390606102,
+      "uuid": "-1185450267594568207",
+      "shared_record": true
+    },
+    {
+      "time": "18:30",
+      "id": 390606315,
+      "uuid": "-3528729913796770475",
+      "shared_record": true
+    },
+    {
+      "time": "20:00",
+      "id": 390605592,
+      "uuid": "2135361205242841756"
+    },
+    {
+      "time": "22:00",
+      "id": 390606520,
+      "uuid": "1283007378597757545",
+      "shared_record": true
+    }
+  ],
+  "action": "FAIL_CLOSED_NO_YOUTUBE_WRITE",
+  "note": "Do not reactivate, retry, reschedule, publish, or cancel YouTube from hourly automation. Manual transition must reconcile ownership and remove only YouTube provider where records are shared."
+}
