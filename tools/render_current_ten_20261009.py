@@ -243,7 +243,7 @@ def main() -> None:
             contact_sheet(cards, qa_dir / f"{series}-final-preview.jpg", cols=3)
             files = sorted(target.glob("*.jpg")) + [yt]
             results.append({"series": series, "format": "carousel", "card_count": len(cards), "youtube_complete": True,
-                            "resolution": "1080x1080", "files": [{"path": str(p.relative_to(ROOT)), "sha256": sha256(p), "bytes": p.stat().st_size} for p in files],
+                            "resolution": "1080x1080", "files": [{"path": str(p.resolve().relative_to(ROOT)), "sha256": sha256(p), "bytes": p.stat().st_size} for p in files],
                             "release_status": "PENDING_FINAL_VISUAL_REVIEW"})
         else:
             if len(post["script"].split()) < 200 or not post["script"].rstrip().endswith(CTA):
