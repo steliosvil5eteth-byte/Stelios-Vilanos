@@ -3479,8 +3479,8 @@
       "production_batch_id": "RECOVERY_20261008_2109",
       "source_slot_id": "CURRENT_TEN_20261008_documented_experiments",
       "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
-      "status": "scheduled",
-      "production_state": "SCHEDULED_PENDING_USER_AUTHORIZED_AUDIO_EXCEPTION",
+      "status": "published",
+      "production_state": "PUBLISHED",
       "scheduled_time": "2026-10-08T22:20:00+03:00",
       "timezone": "Europe/Athens",
       "platforms": [
@@ -3502,8 +3502,9 @@
           "instagram",
           "tiktok"
         ],
-        "usage": "Historical source draft ID. The same UUID now points to the repaired inactive YouTube-only draft; no second logical record was created.",
-        "replaced_by_id": "391458921"
+        "usage": "Historical original draft ID. The same UUID was repaired, prepared for YouTube, then published under the user's single-file audio-review exception; no additional logical record was created.",
+        "replaced_by_id": "391473399",
+        "intermediate_prepared_draft_id": "391458921"
       },
       "notion_page_id": "3f2f2345-b318-8121-8211-fe12da480dab",
       "media_url": "https://static.metricool.com/planner/202610/7000636-file-10555168709203677419.mp4",
@@ -3551,32 +3552,34 @@
         "uploaded_exact_bytes_verified": true,
         "release_basis": "USER_AUTHORIZED_SINGLE_FILE_RELEASE_WITH_AUDIO_LIMITATION",
         "user_authorized_at": "2026-10-08T22:15:06+03:00",
-        "user_authorized_exception": true
+        "user_authorized_exception": true,
+        "live_readback_status": "PUBLISHED"
       },
       "platform_status": {
         "youtube": {
-          "status": "PENDING",
-          "draft": false,
-          "autoPublish": true,
+          "status": "PUBLISHED",
+          "id": "CQRewxEzwn0",
+          "public_url": "https://www.youtube.com/shorts/CQRewxEzwn0",
           "source_post_id": "391473399",
           "source_uuid": "-3528729913796770475",
-          "public_url": null,
-          "confirmed_at_utc": "2026-10-08T19:18:36Z"
+          "draft": false,
+          "autoPublish": true,
+          "confirmed_at_utc": "2026-10-08T19:21:18Z"
         }
       },
-      "public_urls": {},
-      "terminal": false,
-      "publication_enabled": true,
-      "scheduling_enabled": true,
+      "public_urls": {
+        "youtube": "https://www.youtube.com/shorts/CQRewxEzwn0"
+      },
+      "terminal": true,
+      "publication_enabled": false,
+      "scheduling_enabled": false,
       "new_tts_calls": 0,
       "new_metricool_writes": 2,
       "recovery_record": "state/recovery_false_consensus_20261008_2109.json",
-      "last_reconciled_at": "2026-10-08T19:18:36Z",
-      "reconciliation_note": "The user explicitly approved this one exact YouTube video after disclosure that actual listening was unavailable. The same prepared UUID is now active for 22:20 Europe/Athens, with draft=false and autoPublish=true. Live provider status is PENDING, not PUBLISHED. No new logical post or media upload was created, and no general audio-QA exception was granted.",
-      "active_platforms": [
-        "youtube"
-      ],
-      "platforms_semantics": "The single YouTube destination is actively scheduled under the recorded user-authorized audio-review exception.",
+      "last_reconciled_at": "2026-10-08T19:21:18Z",
+      "reconciliation_note": "YouTube provider status PUBLISHED and the exact public URL were verified in brand 7076410. Scheduled time and confirmation time are recorded separately; the exact provider publication timestamp was not returned. The hosted MP4 matches the reviewed SHA256. Actual audio listening was not performed; publication followed the user's explicit 22:15:06 single-file exception. That exception is consumed and does not authorize other videos.",
+      "active_platforms": [],
+      "platforms_semantics": "Confirmed published destinations for this story.",
       "draft": false,
       "autoPublish": true,
       "metricool_write_attempt_count": 3,
@@ -3598,8 +3601,12 @@
           "This does not constitute PASSED_FINAL_REVIEW.",
           "No waiver for other stories or the recurring production program.",
           "No new synthesis or generation credits authorized."
-        ]
-      }
+        ],
+        "consumed": true,
+        "consumed_at_utc": "2026-10-08T19:21:18Z"
+      },
+      "confirmed_at_utc": "2026-10-08T19:21:18Z",
+      "exact_platform_publication_timestamps_available": false
     }
   ]
 }
