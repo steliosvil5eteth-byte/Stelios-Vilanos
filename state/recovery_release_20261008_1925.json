@@ -1,0 +1,97 @@
+{
+  "schema_version": 1,
+  "batch_id": "RECOVERY_20261008_1925",
+  "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+  "brand_id": 7076410,
+  "timezone": "Europe/Athens",
+  "status": "RESERVED_FOR_DIRECT_METRICOOL_RELEASE",
+  "authorization": {
+    "user_instruction": "Φτιάξε τα φτιάξε ό,τι μπορείς και ανέβασέ τα",
+    "received_at": "2026-10-08T19:25:04+03:00",
+    "context": "The preceding handoff explicitly disclosed that actual listening to the four exact repaired videos was unavailable, with 0 new publications. The user then directed proceeding with whatever could be completed and uploaded.",
+    "scope": "Only the four exact existing repaired files and explicit one-platform assignments below; no new synthesis, no credit use, no legacy reactivation, no general recurring-program activation.",
+    "quality_exception": "Proceed with this bounded best-effort batch despite unperformed actual audio listening. This is not PASSED_FINAL_REVIEW and is not a representation that audio was listened to."
+  },
+  "actual_audio_listening_performed": false,
+  "passed_final_review": false,
+  "new_tts_calls": 0,
+  "new_generation_credit_use": 0,
+  "one_platform_per_story": true,
+  "crossposting_allowed": false,
+  "legacy_workflows_reactivated": false,
+  "backdating_allowed": false,
+  "blind_retry_allowed": false,
+  "candidates": [
+    {
+      "story_id": "RECOVERY_TINOS_PYRGOS_VOLAX_20261008",
+      "title": "Τήνος: Πύργος και Βώλαξ",
+      "platform": "instagram",
+      "filename": "Tinos_Pyrgos_Volax.mp4",
+      "sha256": "d2ed20cfb1b315db0cf2745f991b2bacadc8fc482197941efb6f6039edbc2701",
+      "seconds": 95.822,
+      "notion_page_id": "3f3f2345b31881409db5ee868dff626d",
+      "status": "RESERVED",
+      "exact_final_visual_review_completed": true,
+      "actual_audio_listening_performed": false,
+      "metricool": null
+    },
+    {
+      "story_id": "RECOVERY_GREEN_FLASH_20261008",
+      "title": "Η πράσινη αναλαμπή",
+      "platform": "facebook",
+      "filename": "Prasini_Analampi.mp4",
+      "sha256": "7c6867f7008de3f5223c8c5c66e1b606f4e53a8f6c04ffc895c2bcb3fbacfb6c",
+      "seconds": 89.086,
+      "notion_page_id": "3f3f2345b31881b9b512c8f6a435c05e",
+      "status": "RESERVED",
+      "exact_final_visual_review_completed": true,
+      "actual_audio_listening_performed": false,
+      "metricool": null
+    },
+    {
+      "story_id": "RECOVERY_DOOR_EXPERIMENT_20261008",
+      "title": "Το πείραμα της πόρτας: τι δεν παρατηρούμε;",
+      "platform": "youtube",
+      "filename": "Peirama_Tis_Portas.mp4",
+      "sha256": "cad16f6b7c89cea875954ad464ae54d2085b680fb81823e3b201c07ec684dd67",
+      "seconds": 93.373,
+      "notion_page_id": "3f3f2345b31881c38bb7c9007d63eada",
+      "status": "RESERVED",
+      "exact_final_visual_review_completed": true,
+      "actual_audio_listening_performed": false,
+      "metricool": null
+    },
+    {
+      "story_id": "RECOVERY_BELL_WITCH_20261008",
+      "title": "Bell Witch: ο θρύλος του Τενεσί",
+      "platform": "tiktok",
+      "filename": "Bell_Witch.mp4",
+      "sha256": "e0a19a96ca7003fee65b4b9ffa21123868c6ddd78b6bd43c416ad3de780c1edf",
+      "seconds": 101.346,
+      "notion_page_id": "3f3f2345b31881d8ba49c282a2b67bf2",
+      "status": "RESERVED",
+      "exact_final_visual_review_completed": true,
+      "actual_audio_listening_performed": false,
+      "metricool": null
+    }
+  ],
+  "publication_count": 0,
+  "metricool_write_count": 0,
+  "full_daily_target_completed": false,
+  "media_transport": {
+    "vidiq_upload": "AUTOMATIC_APPROVAL_REJECTED_NO_TRANSFER",
+    "rejection_reason": "Private unreleased media transfer to additional vidIQ service was not specifically authorized; connected account had no authorized channels.",
+    "next": "Use only direct Metricool publication transport. No alternate third-party hosting workaround."
+  },
+  "history_clearance": {
+    "as_of": "2026-10-08T19:34:00+03:00",
+    "notion_archive_rows": 202,
+    "notion_unique_rows": 202,
+    "repository_ledger_entries": 48,
+    "active_conflicting_leases": 0,
+    "metricool_records": 20,
+    "published_per_platform": 5,
+    "active_pending_per_platform": 0,
+    "candidate_conflicts_found": 0
+  }
+}

@@ -1,0 +1,108 @@
+{
+  "program": "PLATFORM_SPECIFIC_TEN_DAILY",
+  "scope": {
+    "brand_id": 7076410,
+    "local_dates": [
+      "2026-10-08"
+    ],
+    "providers": [
+      "facebook",
+      "instagram",
+      "tiktok",
+      "youtube"
+    ]
+  },
+  "owner": "interactive-recovery-20261008-root",
+  "status": "ACTIVE_MANUAL_RELEASE",
+  "started_at": "2026-10-08T16:34:00Z",
+  "expires_at": "2026-10-08T17:34:00Z",
+  "authorization": {
+    "batch_id": "RECOVERY_20261008_1925",
+    "ledger_path": "state/recovery_release_20261008_1925.json",
+    "enabled": true,
+    "execution_mode": "INTERACTIVE_MANUAL_ONLY",
+    "brand_id": 7076410,
+    "user_instruction_at": "2026-10-08T19:25:04+03:00",
+    "source": "Current user instruction after explicit disclosure of the exact four files and unperformed actual audio listening.",
+    "release_basis": "USER_AUTHORIZED_BEST_EFFORT_RELEASE_WITH_AUDIO_LIMITATION",
+    "actual_audio_listened": false,
+    "passed_final_review": false,
+    "max_posts": 4,
+    "max_posts_per_story": 1,
+    "exact_assignments": [
+      {
+        "story_id": "RECOVERY_TINOS_PYRGOS_VOLAX_20261008",
+        "platform": "instagram",
+        "sha256": "d2ed20cfb1b315db0cf2745f991b2bacadc8fc482197941efb6f6039edbc2701"
+      },
+      {
+        "story_id": "RECOVERY_GREEN_FLASH_20261008",
+        "platform": "facebook",
+        "sha256": "7c6867f7008de3f5223c8c5c66e1b606f4e53a8f6c04ffc895c2bcb3fbacfb6c"
+      },
+      {
+        "story_id": "RECOVERY_DOOR_EXPERIMENT_20261008",
+        "platform": "youtube",
+        "sha256": "cad16f6b7c89cea875954ad464ae54d2085b680fb81823e3b201c07ec684dd67"
+      },
+      {
+        "story_id": "RECOVERY_BELL_WITCH_20261008",
+        "platform": "tiktok",
+        "sha256": "e0a19a96ca7003fee65b4b9ffa21123868c6ddd78b6bd43c416ad3de780c1edf"
+      }
+    ],
+    "remaining_requirements": [
+      "Fresh successful history/deduplication and lease checks",
+      "Only supported direct publication transport",
+      "Required supported native AI settings or documented alternative for a platform with no toggle",
+      "Live readback after every write"
+    ],
+    "general_production_enabled": false,
+    "legacy_reactivation_allowed": false,
+    "new_synthesis_allowed": false,
+    "credit_budget": 0,
+    "scope_rule": "This newer user authorization permits only these four repaired exact assets and assignments despite the earlier audio-listening prerequisite and general production pause. It does not mark final QA passed, re-enable automated production, approve new asset generation, alter duplicate exclusions, or waive access/approval controls.",
+    "transport_restriction": "The auto-review-rejected vidIQ transfer remains prohibited without specific user approval; use direct authorized Metricool publication only."
+  },
+  "items": [
+    {
+      "story_fingerprint": "RECOVERY_TINOS_PYRGOS_VOLAX_20261008",
+      "source_notion_page": "3f3f2345b31881409db5ee868dff626d",
+      "platform": "instagram",
+      "media_sha256": "d2ed20cfb1b315db0cf2745f991b2bacadc8fc482197941efb6f6039edbc2701",
+      "delivery_status": "RESERVED",
+      "metricool_id": null,
+      "metricool_uuid": null
+    },
+    {
+      "story_fingerprint": "RECOVERY_GREEN_FLASH_20261008",
+      "source_notion_page": "3f3f2345b31881b9b512c8f6a435c05e",
+      "platform": "facebook",
+      "media_sha256": "7c6867f7008de3f5223c8c5c66e1b606f4e53a8f6c04ffc895c2bcb3fbacfb6c",
+      "delivery_status": "RESERVED",
+      "metricool_id": null,
+      "metricool_uuid": null
+    },
+    {
+      "story_fingerprint": "RECOVERY_DOOR_EXPERIMENT_20261008",
+      "source_notion_page": "3f3f2345b31881c38bb7c9007d63eada",
+      "platform": "youtube",
+      "media_sha256": "cad16f6b7c89cea875954ad464ae54d2085b680fb81823e3b201c07ec684dd67",
+      "delivery_status": "RESERVED",
+      "metricool_id": null,
+      "metricool_uuid": null
+    },
+    {
+      "story_fingerprint": "RECOVERY_BELL_WITCH_20261008",
+      "source_notion_page": "3f3f2345b31881d8ba49c282a2b67bf2",
+      "platform": "tiktok",
+      "media_sha256": "e0a19a96ca7003fee65b4b9ffa21123868c6ddd78b6bd43c416ad3de780c1edf",
+      "delivery_status": "RESERVED",
+      "metricool_id": null,
+      "metricool_uuid": null
+    }
+  ],
+  "automatic_production_enabled": false,
+  "crossposting_allowed": false,
+  "credit_budget": 0
+}

@@ -427,5 +427,55 @@
     }
   },
   "latest_recovery_report": "state/recovery_20261008_evening.json",
-  "last_reconciled_at": "2026-10-08T18:49:33+03:00"
+  "last_reconciled_at": "2026-10-08T18:49:33+03:00",
+  "bounded_manual_release_authorizations": {
+    "RECOVERY_20261008_1925": {
+      "batch_id": "RECOVERY_20261008_1925",
+      "ledger_path": "state/recovery_release_20261008_1925.json",
+      "enabled": true,
+      "execution_mode": "INTERACTIVE_MANUAL_ONLY",
+      "brand_id": 7076410,
+      "user_instruction_at": "2026-10-08T19:25:04+03:00",
+      "source": "Current user instruction after explicit disclosure of the exact four files and unperformed actual audio listening.",
+      "release_basis": "USER_AUTHORIZED_BEST_EFFORT_RELEASE_WITH_AUDIO_LIMITATION",
+      "actual_audio_listened": false,
+      "passed_final_review": false,
+      "max_posts": 4,
+      "max_posts_per_story": 1,
+      "exact_assignments": [
+        {
+          "story_id": "RECOVERY_TINOS_PYRGOS_VOLAX_20261008",
+          "platform": "instagram",
+          "sha256": "d2ed20cfb1b315db0cf2745f991b2bacadc8fc482197941efb6f6039edbc2701"
+        },
+        {
+          "story_id": "RECOVERY_GREEN_FLASH_20261008",
+          "platform": "facebook",
+          "sha256": "7c6867f7008de3f5223c8c5c66e1b606f4e53a8f6c04ffc895c2bcb3fbacfb6c"
+        },
+        {
+          "story_id": "RECOVERY_DOOR_EXPERIMENT_20261008",
+          "platform": "youtube",
+          "sha256": "cad16f6b7c89cea875954ad464ae54d2085b680fb81823e3b201c07ec684dd67"
+        },
+        {
+          "story_id": "RECOVERY_BELL_WITCH_20261008",
+          "platform": "tiktok",
+          "sha256": "e0a19a96ca7003fee65b4b9ffa21123868c6ddd78b6bd43c416ad3de780c1edf"
+        }
+      ],
+      "remaining_requirements": [
+        "Fresh successful history/deduplication and lease checks",
+        "Only supported direct publication transport",
+        "Required supported native AI settings or documented alternative for a platform with no toggle",
+        "Live readback after every write"
+      ],
+      "general_production_enabled": false,
+      "legacy_reactivation_allowed": false,
+      "new_synthesis_allowed": false,
+      "credit_budget": 0,
+      "scope_rule": "This newer user authorization permits only these four repaired exact assets and assignments despite the earlier audio-listening prerequisite and general production pause. It does not mark final QA passed, re-enable automated production, approve new asset generation, alter duplicate exclusions, or waive access/approval controls.",
+      "transport_restriction": "The auto-review-rejected vidIQ transfer remains prohibited without specific user approval; use direct authorized Metricool publication only."
+    }
+  }
 }
