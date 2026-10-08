@@ -1,0 +1,134 @@
+name: YouTube growth exact-media Greek ASR
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'media_jobs/youtube_growth/requests/asr.json'
+  workflow_dispatch:
+    inputs:
+      manifest_path:
+        description: 'Existing explicit ASR request with an owned final-media artifact'
+        required: true
+        default: 'media_jobs/youtube_growth/requests/asr.json'
+        type: string
+      job_ids:
+        description: 'Optional comma-separated stable IDs after reconciliation'
+        required: false
+        default: ''
+        type: string
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: youtube-growth-asr-f0
+  cancel-in-progress: false
+
+jobs:
+  independent-recognition:
+    if: github.repository == 'steliosvil5eteth-byte/Stelios-Vilanos' && github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 80
+    env:
+      YT_ASR_MANIFEST: ${{ inputs.manifest_path || 'media_jobs/youtube_growth/requests/asr.json' }}
+      YT_ASR_SELECTED_IDS: ${{ inputs.job_ids || '' }}
+      YT_ASR_SOURCE: ${{ runner.temp }}/youtube-growth-review-source
+      YT_ASR_OUTPUT: ${{ runner.temp }}/youtube-growth-exact-asr
+
+    steps:
+      - name: Check out explicit review request
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Validate owned artifact routing and free-only request
+        id: request
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, os, re, subprocess, sys
+          from pathlib import Path
+          name = os.environ['YT_ASR_MANIFEST']
+          if not re.fullmatch(r'media_jobs/youtube_growth/(?:requests|batches)/[A-Za-z0-9_-]+\.json', name):
+              raise SystemExit('Only explicit YouTube growth ASR request paths are allowed')
+          root = Path(os.environ['GITHUB_WORKSPACE']).resolve()
+          path = (root/name).resolve(strict=True)
+          if not path.is_relative_to(root):
+              raise SystemExit('Request path escaped the repository')
+          request = json.loads(path.read_text(encoding='utf-8'))
+          source = request.get('source_artifact', {})
+          run_id, artifact = source.get('run_id'), source.get('name')
+          if isinstance(run_id, bool) or not isinstance(run_id, int) or run_id <= 0:
+              raise SystemExit('An explicit source workflow run ID is required')
+          if not isinstance(artifact, str) or not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.-]{2,127}', artifact):
+              raise SystemExit('An explicit artifact name is required')
+          selected = [s.strip() for s in os.environ['YT_ASR_SELECTED_IDS'].split(',') if s.strip()]
+          cmd = [sys.executable, 'tools/qa_youtube_growth_asr.py', '--manifest', str(path), '--validate-only']
+          for job_id in selected:
+              cmd += ['--job-id', job_id]
+          subprocess.run(cmd, check=True)
+          with open(os.environ['GITHUB_OUTPUT'], 'a', encoding='utf-8') as out:
+              out.write(f'run_id={run_id}\nartifact_name={artifact}\n')
+          PY
+
+      - name: Read existing media from this repository only
+        uses: actions/download-artifact@v4
+        with:
+          name: ${{ steps.request.outputs.artifact_name }}
+          run-id: ${{ steps.request.outputs.run_id }}
+          github-token: ${{ github.token }}
+          path: ${{ runner.temp }}/youtube-growth-review-source
+
+      - name: Verify every exact media hash before recognition
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import os, subprocess, sys
+          cmd = [sys.executable, 'tools/qa_youtube_growth_asr.py',
+                 '--manifest', os.environ['YT_ASR_MANIFEST'],
+                 '--source', os.environ['YT_ASR_SOURCE'], '--validate-only']
+          for job_id in [s.strip() for s in os.environ['YT_ASR_SELECTED_IDS'].split(',') if s.strip()]:
+              cmd += ['--job-id', job_id]
+          subprocess.run(cmd, check=True)
+          PY
+
+      - name: Install existing Azure recognition dependencies
+        timeout-minutes: 5
+        run: |
+          set -euo pipefail
+          if ! command -v ffmpeg >/dev/null 2>&1 || ! command -v ffprobe >/dev/null 2>&1; then
+            sudo timeout --kill-after=10s 90s apt-get -o Acquire::Retries=1 -o Acquire::http::Timeout=15 -o Acquire::https::Timeout=15 update -qq
+            sudo timeout --kill-after=10s 90s apt-get -o Acquire::Retries=1 -o Acquire::http::Timeout=15 -o Acquire::https::Timeout=15 install -y -qq --no-install-recommends ffmpeg
+          fi
+          timeout --kill-after=10s 90s python3 -m pip install --disable-pip-version-check --no-input --timeout 15 --retries 1 --only-binary=:all: azure-core==1.41.0 azure-cognitiveservices-speech==1.52.0
+
+      - name: Independently recognize the exact decoded audio once
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import os, subprocess, sys
+          if not os.environ.get('AZURE_SPEECH_KEY') or not os.environ.get('AZURE_SPEECH_REGION'):
+              raise SystemExit('Established Azure F0 credentials are unavailable; no fallback')
+          cmd = [sys.executable, 'tools/qa_youtube_growth_asr.py',
+                 '--manifest', os.environ['YT_ASR_MANIFEST'],
+                 '--source', os.environ['YT_ASR_SOURCE'],
+                 '--output', os.environ['YT_ASR_OUTPUT']]
+          for job_id in [s.strip() for s in os.environ['YT_ASR_SELECTED_IDS'].split(',') if s.strip()]:
+              cmd += ['--job-id', job_id]
+          subprocess.run(cmd, check=True)
+          PY
+
+      - name: Preserve independent ASR and exact reviewed audio
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: youtube-growth-exact-asr-${{ github.run_id }}
+          path: ${{ runner.temp }}/youtube-growth-exact-asr/
+          retention-days: 7
+          if-no-files-found: warn
+

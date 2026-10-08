@@ -77,11 +77,16 @@
     "program_label": "YOUTUBE_GROWTH_TEN_DAILY",
     "strategy_file": "config/youtube_growth_strategy.json",
     "enabled": false,
-    "status": "TRANSITION_NOT_ACTIVE",
+    "status": "BLOCKED_REQUIRED_NOTION_HISTORY_QUERY",
     "daily_target": 10,
     "transition_date": "2026-10-08",
     "already_published_on_transition_date": 5,
     "max_additional_new_videos_on_transition_date": 5,
-    "counts_require_fresh_live_reconciliation": true
+    "counts_require_fresh_live_reconciliation": true,
+    "prepared_scripts": 6,
+    "new_final_videos": 0,
+    "new_youtube_scheduled": 0,
+    "checkpoint_file": "reports/youtube_growth_blocked_checkpoint_20261008.json",
+    "automatic_retry_after_entitlement_error": false
   }
 }

@@ -1,0 +1,586 @@
+{
+  "program": "YOUTUBE_GROWTH_TEN_DAILY",
+  "batch_id": "ytg-prepared-partial-20261008",
+  "brand_id": 7076410,
+  "timezone": "Europe/Athens",
+  "voice": "el-GR-NestorasNeural",
+  "azure_tier_required": "F0",
+  "paid_generation_allowed": false,
+  "daily_new_video_limits": {
+    "2026-10-08": 5,
+    "2026-10-09": 10,
+    "2026-10-10": 10
+  },
+  "jobs": [
+    {
+      "id": "yt-20261008-01",
+      "program": "YOUTUBE_GROWTH_TEN_DAILY",
+      "local_date": "2026-10-08",
+      "slot": "11:00",
+      "title": "Το γκολ που ακύρωσε ο σκόρερ",
+      "kind": "original_fiction",
+      "fingerprint": "youtube-growth|adult-amateur-cup-final|scorer-admits-handball-before-restart|team-loses-and-trains-again",
+      "hook": "Το γκολ θα τους έδινε το κύπελλο. Ο σκόρερ ζήτησε να ακυρωθεί.",
+      "script": "Το γκολ θα τους έδινε το κύπελλο. Ο σκόρερ ζήτησε να ακυρωθεί.\n\nΟ Λέανδρος έπαιζε δεκαπέντε χρόνια στην ίδια ερασιτεχνική ομάδα. Προπονήσεις μετά τη δουλειά, λασπωμένα παπούτσια στο πορτμπαγκάζ, Κυριακές χωρίς ξεκούραση. Εκείνο το απόγευμα έμεναν ελάχιστα λεπτά για το πρώτο τους κύπελλο.\n\nΗ μπάλα χτύπησε στο χέρι του και κατέληξε στα δίχτυα. Ο διαιτητής δεν το είδε. Οι συμπαίκτες του έτρεξαν πάνω του. Από τον πάγκο, κάποιος του έκανε νόημα να μη μιλήσει.\n\nΟ αντίπαλος τερματοφύλακας διαμαρτυρόταν μόνος. Ο Λέανδρος τον γνώριζε από τα μικρά γήπεδα της γειτονιάς. Ήξερε πόσες βάρδιες άλλαζε για να προλαβαίνει τους αγώνες.\n\nΠριν αρχίσει ξανά το παιχνίδι, ξέφυγε από τις αγκαλιές. Πλησίασε τον διαιτητή. «Βρήκε στο χέρι μου», είπε. Μόνο αυτό.\n\nΤο γκολ ακυρώθηκε. Ακούστηκαν φωνές και από τις δύο πλευρές. Στην τελευταία φάση, η άλλη ομάδα σκόραρε. Το κύπελλο έφυγε μαζί της. Δεν ακολούθησε θαυματουργή ανατροπή ούτε χειροκρότησε ολόκληρο το γήπεδο.\n\nΣτα αποδυτήρια, κανείς δεν μιλούσε. Ο Λέανδρος έλυνε αργά τα κορδόνια του. Ένας συμπαίκτης άφησε δίπλα του ένα μπουκάλι νερό. «Τρίτη, στην προπόνηση;» τον ρώτησε.\n\nΟ Λέανδρος σήκωσε το κεφάλι. «Τρίτη», απάντησε. Η ήττα ήταν ακόμη εκεί. Μα μπορούσαν να ξαναπαίξουν μαζί.\n\nΕσύ θα μιλούσες, αν η αλήθεια κόστιζε τη νίκη; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "caption": "Ένα άγγιγμα στο χέρι, ένα κύπελλο και μια απόφαση πριν ξαναρχίσει ο αγώνας. Εσύ θα μιλούσες;\n\nΠρωτότυπη ιστορία μυθοπλασίας. Οι χαρακτήρες και τα γεγονότα είναι επινοημένα. Φωτορεαλιστικές σκηνές δημιουργημένες με τεχνητή νοημοσύνη και συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #Μυθοπλασία #Ποδόσφαιρο #Αξιοπρέπεια #Shorts",
+      "sources": [],
+      "narrative_notes": "Fiction about adult amateur sport and a costly fair-play choice, with an ordinary continuation rather than a miraculous reward. No real match or athlete is depicted.",
+      "scene_beats": [
+        "Adult red-shirt striker beside the goal realizing the ball touched his forearm; tense immediate opening, no text.",
+        "Same striker in work clothes putting worn football boots into his modest car after a shift, early evening.",
+        "Wide small Greek amateur football ground, red teammates celebrating while the blue goalkeeper appeals.",
+        "Close medium shot of red striker looking toward a coach quietly gesturing from the bench.",
+        "Striker speaking honestly to the black-uniformed referee before play restarts; teammates puzzled behind.",
+        "Blue team scores at the far end in the final play, red striker stands still, no scoreboard or text.",
+        "Quiet red-team changing room after defeat; striker untying boots with lowered head.",
+        "A teammate places a water bottle beside him; both men share a restrained, hopeful look, no trophy."
+      ],
+      "visual_prompt": "Use case: photorealistic-natural. Create one high-resolution cinematic storyboard atlas with EXACTLY eight edge-to-edge photographic panels in a regular 4-column by 2-row grid. Each panel is a distinct vertical 9:16 composition; total atlas aspect ratio approximately9:8. Every panel must be internally coherent and full-bleed, with exact straight grid seams, no border, no labels, no letters, no captions, no logos or watermarks. Consistent fictional adult Greek protagonist in all scenes: Leandros,32,short dark curly hair,light stubble,lean athletic build; plain deep-red football shirt and black shorts during match,grey work jacket only panel2. All people adults. Opponents plainblue jerseys, referee black. Natural modern small Greek amateur pitch, worn realistic clothes, cinematic warm late-afternoon light, authentic human facial expressions. Panel1 top-left: medium dynamic shot beside goal, ball just glances striker forearm as he realizes the accidental handball, anatomically correct. Panel2: earlier that day same man in greyworkjacket putting worn boots into modest car afterwork. Panel3: redteammates celebrate goal whileblue goalkeeper appeals, modestgroundwideview. Panel4: closestrikerwaryexpression, adultcoach quietlymotionsfrombench inbackground. Panel5 bottom-left: striker seriouslyspeaks toblackreferee beforeplayrestarts. Panel6: blueteamscores atotherend, redstrikerwatchingquietly; no scoreboards. Panel7: subduedlockerroom strikeruntyingbootsafterloss. Panel8: teammateputswaterbottlebesidehim, restrainedwarmeyecontact, notatriumphantcelebration. Eight visuallydistinct shots, natural hands, no melodrama, no children. This atlas will be used as eight separate scene regions in an original narrated film, never as visible multi-panel text cards.",
+      "dedupe": {
+        "reviewed_at": "2026-10-08T04:50:00Z",
+        "notion_matching_rows": 0,
+        "notion_query_terms": [
+          "διαιτητ",
+          "referee",
+          "αγώνα"
+        ],
+        "archive_semantic_records_reviewed": 202,
+        "repository_history_blob_sha": "613f202b1f2ed7a753a1b91875aecc571e721750",
+        "metricool_range": "2026-10-08 through2026-10-10 Europe/Athens",
+        "result": "NO_SUBSTANTIVE_STORY_MATCH_IN_REVIEWED_SOURCES",
+        "valid_for_new_execution": false,
+        "fresh_recheck_required_before_production_and_scheduling": true
+      },
+      "release_status": "BLOCKED_FRESH_NOTION_RECHECK_AND_FINAL_MEDIA",
+      "atlas_grid": {
+        "cols": 4,
+        "rows": 2
+      },
+      "visual_review": "Eight distinct coherent adult-only photographic scenes reviewed; image-generation source only, final video review pending.",
+      "providers": [
+        "youtube"
+      ],
+      "voice": "el-GR-NestorasNeural",
+      "background_music": false,
+      "avatar": false,
+      "script_sha256": "34e4e23ce81c86a1f870ca7b68b4c276be43be4a39dd253e6ca7faad47719c12",
+      "publish_ready": false,
+      "generated_visual": {
+        "filename": "yt-20261008-01-atlas.png",
+        "sha256": "05c814ce7f6bf9c208583c079b993e3f822be1bb822d061c96aacb8e45b1c404",
+        "status": "SOURCE_IMAGE_ONLY_FINAL_VIDEO_NOT_RENDERED",
+        "persisted_generated_image_name": "exec-b00eba5c-8090-4851-bc6d-bebda8f6058d.png"
+      }
+    },
+    {
+      "id": "yt-20261008-02",
+      "program": "YOUTUBE_GROWTH_TEN_DAILY",
+      "local_date": "2026-10-08",
+      "slot": "13:00",
+      "title": "Στη μακέτα χωρούσαν όλα. Εκτός από το δέντρο.",
+      "kind": "original_fiction",
+      "fingerprint": "youtube-growth|architect-community-courtyard-model|mature-tree-erased-on-plan|observed-shade-redesign",
+      "hook": "Στη μακέτα χωρούσαν όλα. Εκτός από το δέντρο.",
+      "script": "Στη μακέτα χωρούσαν όλα. Εκτός από το δέντρο.\n\nΗ Δανάη είχε ετοιμάσει την πρώτη της πρόταση για μια κοινόχρηστη αυλή. Ίσιες διαδρομές, καινούργια παγκάκια, καθαρές γραμμές. Στο λευκό χαρτόνι, ο χώρος έμοιαζε τέλειος. Το μεγάλο δέντρο στη μέση το είχε αφαιρέσει με ένα κλικ.\n\nΠριν από την παρουσίαση, πήγε να δει ξανά την αυλή. Ένας ηλικιωμένος καθόταν στη σκιά. Μια γυναίκα είχε αφήσει δίπλα του τις σακούλες της. Δύο γείτονες συζητούσαν όρθιοι, στο σημείο όπου τελείωνε ο ήλιος.\n\nΗ Δανάη κοίταξε την ώρα. Έβγαλε φωτογραφίες. Λίγο αργότερα, οι άνθρωποι είχαν μετακινηθεί μαζί με τη σκιά. Στο σχέδιό της είχε μετρήσει τα πάντα, εκτός από αυτό που ήδη έκανε χρήσιμο τον χώρο.\n\nΣτο γραφείο, ο συνεργάτης της κοίταξε τη δεύτερη εκδοχή. «Αύριο παρουσιάζουμε», της θύμισε. Η Δανάη άπλωσε τις φωτογραφίες. Δεν ζήτησε να εγκρίνουν μια ωραία ιδέα. Τους έδειξε τι είχε παραβλέψει.\n\nΞαναδούλεψαν τις διαδρομές. Μετακίνησαν καθίσματα. Το αποτέλεσμα ήταν λιγότερο συμμετρικό και χρειάστηκε περισσότερες συζητήσεις. Αυτή τη φορά, όμως, το δέντρο βρισκόταν στο κέντρο της μακέτας.\n\nΜήνες αργότερα, η αυλή παραδόθηκε. Η Δανάη στάθηκε στην άκρη και είδε ανθρώπους να διαλέγουν πάλι τη σκιά. Έκλεισε το κινητό χωρίς να βγάλει φωτογραφία. Κάθισε κι εκείνη.\n\nΠοιο μικρό πράγμα κάνει έναν χώρο δικό σου; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "caption": "Μια πρώτη μακέτα, μια επίσκεψη στην αυλή και κάτι που δεν είχε χωρέσει στις μετρήσεις. Ποιο μικρό πράγμα κάνει έναν χώρο δικό σου;\n\nΠρωτότυπη ιστορία μυθοπλασίας, με επινοημένους χαρακτήρες και έργο. Φωτορεαλιστικές σκηνές δημιουργημένες με τεχνητή νοημοσύνη και συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #Μυθοπλασία #Γειτονιά #Άνθρωποι #Shorts",
+      "sources": [],
+      "scene_beats": [
+        "Close portrait of young adult Greek architect at a white physical courtyard model without its central tree, plans in frame but no readable words.",
+        "Architect designs straight paths and benches at bright small architecture office, white cardboard model.",
+        "Real modest Greek courtyard with mature leafy tree; older adult man and adult woman rest in its shade.",
+        "Architect notices long shifting tree shadow and neighbors gathering under it, thoughtful observational shot.",
+        "She shares courtyard photographs with an adult male colleague at a desk, collaborative tension, no legible text.",
+        "Hands adjust cardboard curving paths around model tree, collaborative design process, natural anatomy.",
+        "Months-later completed modest courtyard preserving same mature tree, revised paths and shaded benches.",
+        "Architect sits quietly on bench beneath same tree with other adult residents, phone put away, natural calm ending."
+      ],
+      "visual_prompt": "Use case: photorealistic-natural. One cinematicphotographicstoryboardatlas EXACTLY4columnsby2rows,8distinctfull-bleedvertical9:16panels,overall9:8aspectratio. No text,labels,logos,watermarksor borders. ConsistentfictionaladultGreekarchitect Danae,29,shoulder-lengthdarkbrownwavyhair,creamlinenblouse,darknavytrousers,modeststyle; samewoman throughout. ModernsmallGreekneighborhoodcourtyard, matureleafyplaintree, naturalwarmdaylight, honesthumantexture, no glossyadvertisinglook. Panel1: closeportraitDanaethoughtful overperfectwhitecardboardcourtyardmodelwithno tree, geometryfillsforeground. Panel2: widerarchitectureofficeviewDanea carefullyworkingwithwhitecardboardstraightpathsandsmallbenches,blueprintswithoutwords. Panel3: realcourtyardunderlargegreenplaintree, olderadultmanandadultwomanwithshoppingbagsrestinthecoolshade. Panel4: Danaeobservesdiagonalshadowsandtwoadultneighborsstandinginshade, strongafternoonsun. Panel5: calmseriouscollaborationwithadultmalecolleagueassheplacescourtyardphotographsondesk. Panel6: closehandsadjustcardboardcurvedpathsaroundnewmodeltree, anatomicallycorrecthands. Panel7: completedmodestcourtyardmonths later, treepreserved, curvingpathsandsimplewoodbenches, normalpeoplewalking. Panel8: Danaesitsquietlyunderleafyshadeonbenchwithherphoneputaway, othersadultsatdistance, eye-levelintimateending. Exactlyeightdistinctshots,sameprotagonistandtree, naturalexpression, nochildren, noidealizedunrealisticmegaproject. Highestpracticalresolution;theatlaswillbeusedasindividualsceneregionsforanoriginalnarratedfilm,neverdisplayedasanatlasinvideo.",
+      "dedupe": {
+        "reviewed_at": "2026-10-08T04:55:00Z",
+        "notion_matching_rows": 0,
+        "notion_query_terms": [
+          "μακέτα",
+          "αρχιτέκτ",
+          "courtyard",
+          "δέντρο"
+        ],
+        "archive_semantic_records_reviewed": 202,
+        "repository_history_blob_sha": "613f202b1f2ed7a753a1b91875aecc571e721750",
+        "metricool_range": "2026-10-08 through2026-10-10 Europe/Athens",
+        "result": "NO_SUBSTANTIVE_STORY_MATCH_IN_REVIEWED_SOURCES",
+        "valid_for_new_execution": false,
+        "fresh_recheck_required_before_production_and_scheduling": true
+      },
+      "release_status": "BLOCKED_FRESH_NOTION_RECHECK_AND_FINAL_MEDIA",
+      "providers": [
+        "youtube"
+      ],
+      "voice": "el-GR-NestorasNeural",
+      "background_music": false,
+      "avatar": false,
+      "script_sha256": "e95ae860fcc3c618299cb318c7df6084336f624818596645c6d3134fdef3ce26",
+      "publish_ready": false
+    },
+    {
+      "id": "yt-20261009-01",
+      "program": "YOUTUBE_GROWTH_TEN_DAILY",
+      "date": "2026-10-09",
+      "slot": "07:00",
+      "timezone": "Europe/Athens",
+      "platforms": [
+        "youtube"
+      ],
+      "content_type": "original_human_fiction",
+      "title": "Η παράσταση που έμεινε χωρίς φώτα",
+      "fingerprint": "youtube-growth|original-fiction|amateur-adult-theatre-blackout-eva-first-leading-role-performs-and-chooses-tomorrow",
+      "hook": "Το ρεύμα κόπηκε τη στιγμή που η Εύα θα έλεγε την πρώτη της ατάκα.",
+      "script": "Το ρεύμα κόπηκε τη στιγμή που η Εύα θα έλεγε την πρώτη της ατάκα.\n\nΈξι μήνες πρόβες σε μια δημοτική αίθουσα. Κοστούμια δανεικά, σκηνικά βαμμένα τα Σαββατοκύριακα, εβδομήντα θεατές. Η Εύα, λογίστρια τη μέρα, είχε ζητήσει έναν μικρό ρόλο. Της έδωσαν τον μεγαλύτερο.\n\nΌταν έσβησαν οι προβολείς, ένιωσε πρώτα ανακούφιση. Να μια δικαιολογία για να μη βγει.\n\nΟ φωτισμός ασφαλείας λειτουργούσε. Ο υπεύθυνος έλεγξε την αίθουσα, αλλά οι προβολείς δεν θα άναβαν σύντομα. Ο σκηνοθέτης ετοιμάστηκε να ανακοινώσει αναβολή.\n\nΤότε ακούστηκε από τη σκηνή μια φωνή: «Εγώ πάντως ήρθα για να σου πω κάτι».\n\nΉταν ο συμπρωταγωνιστής της. Είχε πει την ατάκα του, χωρίς φώτα και χωρίς να τη βλέπει καλά.\n\nΗ Εύα γνώριζε την απάντηση. Την είχε πει εκατό φορές στην κουζίνα της. Τώρα όμως έπρεπε να τη διαλέξει.\n\nΠροχώρησε στο φωτισμένο μπροστινό μέρος της σκηνής και απάντησε.\n\nΈφεραν δύο καρέκλες. Άφησαν τα μεγάλα σκηνικά στην άκρη. Οι θεατές έγειραν μπροστά για να ακούν. Σε μια αστεία σκηνή, το γέλιο ήρθε λίγο αργότερα από τις πρόβες, αλλά κράτησε περισσότερο.\n\nΚάποιος έχασε μια ατάκα. Κάποιος άλλος την περιέγραψε με δικά του λόγια. Η ιστορία έφτασε ως το τέλος.\n\nΌταν επέστρεψε το ρεύμα, υποκλίνονταν ήδη.\n\nΣτην έξοδο, η Εύα βρήκε τον σκηνοθέτη να μαζεύει τα εισιτήρια. «Αύριο με κανονικά φώτα;» τον ρώτησε.\n\n«Αύριο με κανονικά φώτα».\n\nΓια πρώτη φορά, δεν ευχήθηκε να συμβεί κάτι που θα την κρατούσε μακριά από τη σκηνή.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "caption": "Η Εύα είχε έτοιμη μια δικαιολογία για να φύγει από τη σκηνή. Όμως η ιστορία είχε ήδη αρχίσει.\n\nΠρωτότυπη μυθοπλασία· τα πρόσωπα και τα γεγονότα είναι φανταστικά. Φωτορεαλιστικές εικόνες δημιουργημένες με τεχνητή νοημοσύνη και συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#ΠρωτότυπηΙστορία #Θέατρο #Θάρρος #ΑνθρώπινεςΙστορίες",
+      "sources": [],
+      "facts_mapping": [
+        {
+          "claim": "All people, dialogue and events in the story",
+          "basis": "Original fiction authored for this YouTube batch; no factual incident or borrowed common-series script asserted."
+        }
+      ],
+      "storyboard": {
+        "layout": "4x2",
+        "panel_order": "left-to-right top row, then left-to-right bottom row",
+        "panels": [
+          "Wide establishing shot of a modest Greek municipal theatre during evening rehearsal, adult volunteers painting lightweight stage flats, blue velvet curtain, warm practical light, no readable signs.",
+          "Intimate backstage mirror shot of Eva, a Greek woman aged 42 with a shoulder-length dark wavy bob and simple burgundy costume, checking her cuff while gripping a plain folded script with no visible writing.",
+          "View from the back of the adult-only audience as theatrical spotlights go dark while steady practical safety lighting stays visible; stage crew calmly assesses the room, no smoke, fire or panic.",
+          "Over-the-shoulder view behind Eva in the wing as her male co-star aged 45 in a muted olive jacket speaks from the softly illuminated front of the stage, empty space separating them.",
+          "Low front-row camera angle as Eva steps into the soft practical light to answer him, vulnerability turning to concentration, natural facial expression, no triumphant pose.",
+          "Side-stage medium-wide shot of the two actors performing an intimate conversation seated on two plain wooden chairs, unused large scenery behind them, radically different framing from previous panel.",
+          "Close oblique audience reaction shot of varied adult spectators leaning forward and laughing naturally, softly illuminated faces, performers blurred far in the background.",
+          "After the show, calm theatre entrance scene: Eva still in her burgundy costume asks the adult director a question while he gathers plain unmarked ticket stubs, warm restored light, small confident smile."
+        ],
+        "prompt": "Create ONE photorealistic cinematic contact sheet with exactly 8 distinct equal panels in a 4-column by 2-row grid. Every panel is a vertical 9:16 composition usable as a separate scene. Maintain identical adult characters, clothing and location continuity throughout. No text, letters, digits, subtitles, logos, watermarks, avatars, child faces, duplicate compositions, extra panels, illustration or cartoon style. All characters adults. Realistic Greek municipal theatre with sober natural colours and plausible lighting. No direct-to-camera presenter. Scene sequence: 1. Wide establishing shot of a modest Greek municipal theatre during evening rehearsal, adult volunteers painting lightweight stage flats, blue velvet curtain, warm practical light, no readable signs. 2. Intimate backstage mirror shot of Eva, a Greek woman aged 42 with a shoulder-length dark wavy bob and simple burgundy costume, checking her cuff while gripping a plain folded script with no visible writing. 3. View from the back of the adult-only audience as theatrical spotlights go dark while steady practical safety lighting stays visible; stage crew calmly assesses the room, no smoke, fire or panic. 4. Over-the-shoulder view behind Eva in the wing as her male co-star aged 45 in a muted olive jacket speaks from the softly illuminated front of the stage, empty space separating them. 5. Low front-row camera angle as Eva steps into the soft practical light to answer him, vulnerability turning to concentration, natural facial expression, no triumphant pose. 6. Side-stage medium-wide shot of the two actors performing an intimate conversation seated on two plain wooden chairs, unused large scenery behind them, radically different framing from previous panel. 7. Close oblique audience reaction shot of varied adult spectators leaning forward and laughing naturally, softly illuminated faces, performers blurred far in the background. 8. After the show, calm theatre entrance scene: Eva still in her burgundy costume asks the adult director a question while he gathers plain unmarked ticket stubs, warm restored light, small confident smile."
+      },
+      "production": {
+        "voice": "el-GR-NestorasNeural",
+        "voice_label": "Νέστορας",
+        "min_duration_seconds": 80,
+        "target_duration_seconds": [
+          80,
+          110
+        ],
+        "max_duration_seconds": 150,
+        "narration_speed": "natural; measure synthesized audio and revise script if outside bounds, never pad with silence",
+        "burned_in_subtitles": "exact synchronized Greek narration",
+        "music": "none",
+        "paid_fallback_allowed": false,
+        "review_status": "SCRIPT_SOURCEPACK_READY_NOT_FINAL_MEDIA_REVIEW"
+      },
+      "dedupe_evidence": {
+        "checked_at_utc": "2026-10-08 04:46:14 UTC",
+        "decision": "PASS_NO_SAME_OR_SUBSTANTIALLY_SIMILAR_STORY",
+        "candidate_terms": [
+          "θέατρ",
+          "θεατρ",
+          "παράστα",
+          "πρόβ",
+          "διακοπή ρεύματος"
+        ],
+        "metricool": {
+          "brand_id": 7076410,
+          "date_window": [
+            "2026-10-08",
+            "2026-10-10"
+          ],
+          "records_reviewed": 20,
+          "substantive_story_matches": 0
+        },
+        "notion": {
+          "archive": "Social Media Content Archive",
+          "query_complete": true,
+          "keyword_candidates_reviewed": 9,
+          "semantic_history_records_reviewed": 202,
+          "substantive_story_matches": 0
+        },
+        "repository": {
+          "repository": "steliosvil5eteth-byte/Stelios-Vilanos",
+          "ref": "main",
+          "files": [
+            {
+              "path": "state/content_history.json",
+              "blob_sha": "613f202b1f2ed7a753a1b91875aecc571e721750"
+            },
+            {
+              "path": "production_20261009/manifest.json",
+              "blob_sha": "0b43fd136416c8c74bf7144e86104b4567053ee0"
+            },
+            {
+              "path": "media_jobs/current_ten_20261008_delivery_journal.json",
+              "blob_sha": "e49ffba6660d1498e3a18c1e7910c12e96ec787e"
+            }
+          ],
+          "reserved_common_date": "2026-10-09",
+          "substantive_story_matches": 0
+        },
+        "same_batch_substantive_story_matches": 0,
+        "valid_for_new_execution": false,
+        "fresh_recheck_required_before_production_and_scheduling": true
+      },
+      "word_count": 237,
+      "local_date": "2026-10-09",
+      "providers": [
+        "youtube"
+      ],
+      "voice": "el-GR-NestorasNeural",
+      "background_music": false,
+      "avatar": false,
+      "script_sha256": "35c701c4dfa239233df79ae387e4d31153abf5cd0836c739c7b70cee831ae913",
+      "release_status": "BLOCKED_FRESH_NOTION_RECHECK_AND_FINAL_MEDIA",
+      "publish_ready": false
+    },
+    {
+      "id": "yt-20261009-02",
+      "program": "YOUTUBE_GROWTH_TEN_DAILY",
+      "date": "2026-10-09",
+      "slot": "09:00",
+      "timezone": "Europe/Athens",
+      "platforms": [
+        "youtube"
+      ],
+      "content_type": "original_human_fiction",
+      "title": "Το πορτρέτο που διάλεξε η ίδια",
+      "fingerprint": "youtube-growth|original-fiction|laundrette-owner-stella-chooses-astronomy-rooftop-portrait-subject-agency",
+      "hook": "«Μην πατήσεις ακόμα το κουμπί. Δεν είμαι μόνο αυτό που βλέπεις».",
+      "script": "«Μην πατήσεις ακόμα το κουμπί. Δεν είμαι μόνο αυτό που βλέπεις».\n\nΗ Στέλλα στεκόταν ανάμεσα σε σακούλες με σεντόνια, στο μικρό καθαριστήριό της. Ο Πέτρος ετοίμαζε μια έκθεση με πρόσωπα της γειτονιάς. Είχε ζητήσει την άδειά της και είχε βρει, πίστευε, την εικόνα του: κουρασμένα χέρια, ατμός, μια γυναίκα πίσω από τη δουλειά της.\n\nΕκείνη κοίταξε τη δοκιμαστική φωτογραφία.\n\n«Αυτή είναι η βάρδιά μου», είπε. «Εγώ πού είμαι;»\n\nΟ Πέτρος κατέβασε τη μηχανή. Της ζήτησε να του προτείνει άλλο μέρος.\n\n«Έλα μετά το κλείσιμο. Και φόρα ζακέτα».\n\nΣτις οκτώ ανέβηκαν στην ταράτσα της. Η Στέλλα άνοιξε μια μακριά θήκη και άρχισε να στήνει ένα μικρό τηλεσκόπιο.\n\nΟ Πέτρος ξαφνιάστηκε. Την έβλεπε κάθε εβδομάδα εδώ και χρόνια. Δεν της είχε κάνει ποτέ μια ερώτηση που δεν αφορούσε πουκάμισα.\n\nΕκείνη του έδειξε πώς ρυθμίζει το τρίποδο. Περίμεναν να καθαρίσει ο ουρανός. Μίλησαν για τις νύχτες που ανέβαινε μόνη και για όσες καλούσε φίλους, μοιράζοντας καρέκλες και κουβέρτες.\n\nΌταν άνοιξε ένα κενό στα σύννεφα, η Στέλλα έσκυψε στον φακό. Ύστερα γύρισε προς εκείνον, ανυπόμονη.\n\n«Θα κοιτάξεις ή θα φωτογραφίζεις;»\n\nΠρώτα κοίταξε.\n\nΤη φωτογραφία την τράβηξε αργότερα, με τη συγκατάθεσή της. Στην έκθεση, εκείνη διάλεξε το κάδρο και τη θέση του.\n\nΈνας γείτονας τη ρώτησε αν ήταν καινούργιο χόμπι.\n\n«Δεκαεννέα χρόνια», απάντησε γελώντας.\n\nΟ Πέτρος άκουσε την απάντηση από δίπλα. Για το επόμενο πορτρέτο είχε ήδη έτοιμη την πρώτη του ερώτηση: «Πού θα ήθελες να σε γνωρίσω;»\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "word_count": 239,
+      "caption": "Η Στέλλα δεν ήθελε να κρύψει τη δουλειά της. Ήθελε να χωρέσει στην εικόνα και η υπόλοιπη ζωή της.\n\nΠρωτότυπη μυθοπλασία· φανταστικά πρόσωπα και γεγονότα. Φωτορεαλιστικές εικόνες δημιουργημένες με τεχνητή νοημοσύνη και συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#ΠρωτότυπηΙστορία #Φωτογραφία #Άνθρωποι #Ιστορίες",
+      "sources": [],
+      "facts_mapping": [
+        {
+          "claim": "All people, dialogue and events",
+          "basis": "Original fiction; no factual incident or borrowed common-series script asserted."
+        }
+      ],
+      "storyboard": {
+        "layout": "4x2",
+        "panel_order": "left-to-right top row, then left-to-right bottom row",
+        "panels": [
+          "Close cinematic view inside a modest Greek dry-cleaning shop: Stella, a 58-year-old Greek woman with a neat silver pixie haircut and navy work apron, raises an open hand gently toward a 34-year-old male photographer before he presses his camera shutter; everyone fully clothed.",
+          "Wide side-angle composition with white linens and hanging plain garments around Stella at her counter, warm steam in the distant background, photographer listening rather than posing her, no commercial brand labels.",
+          "Over-shoulder shot of the photographer lowering the camera while Stella takes off her navy work apron, thoughtful expression, plain frosted shop door behind her.",
+          "Twilight rooftop scene: Stella now in a rust-coloured knit cardigan opens a long dark equipment bag next to a small telescope tripod; photographer wearing a grey jacket has just arrived, urban Greek roofs beyond.",
+          "Macro detail of Stella's adult hands tightening a small telescope tripod knob, realistic screws and metal texture, photographer's hands resting to the side without intervening.",
+          "Wide roof composition of two folding chairs, folded blankets, telescope and both adults waiting under a cloudy evening sky; no huge stars, aurora or impossible planets.",
+          "Low three-quarter view of the photographer looking through the telescope while Stella stands beside him amused, natural night light and dim red practical lamp, ordinary believable sky.",
+          "Small neighbourhood photo exhibition interior: Stella stands beside a framed text-free photograph showing herself with a telescope, warmly conversing with one adult neighbour; photographer in the far background listens. No written placards or gallery labels."
+        ],
+        "prompt": "Create ONE photorealistic cinematic contact sheet with exactly 8 distinct equal panels in a 4-column by 2-row grid. Every panel is a vertical 9:16 composition usable as a separate scene. Maintain adult character and object continuity. No text, letters, digits, subtitles, logos, watermarks, avatars, child faces, duplicate compositions, extra panels, illustration or cartoon style. No direct-to-camera presenter.  Scene sequence: 1. Close cinematic view inside a modest Greek dry-cleaning shop: Stella, a 58-year-old Greek woman with a neat silver pixie haircut and navy work apron, raises an open hand gently toward a 34-year-old male photographer before he presses his camera shutter; everyone fully clothed. 2. Wide side-angle composition with white linens and hanging plain garments around Stella at her counter, warm steam in the distant background, photographer listening rather than posing her, no commercial brand labels. 3. Over-shoulder shot of the photographer lowering the camera while Stella takes off her navy work apron, thoughtful expression, plain frosted shop door behind her. 4. Twilight rooftop scene: Stella now in a rust-coloured knit cardigan opens a long dark equipment bag next to a small telescope tripod; photographer wearing a grey jacket has just arrived, urban Greek roofs beyond. 5. Macro detail of Stella's adult hands tightening a small telescope tripod knob, realistic screws and metal texture, photographer's hands resting to the side without intervening. 6. Wide roof composition of two folding chairs, folded blankets, telescope and both adults waiting under a cloudy evening sky; no huge stars, aurora or impossible planets. 7. Low three-quarter view of the photographer looking through the telescope while Stella stands beside him amused, natural night light and dim red practical lamp, ordinary believable sky. 8. Small neighbourhood photo exhibition interior: Stella stands beside a framed text-free photograph showing herself with a telescope, warmly conversing with one adult neighbour; photographer in the far background listens. No written placards or gallery labels."
+      },
+      "production": {
+        "voice": "el-GR-NestorasNeural",
+        "voice_label": "Νέστορας",
+        "min_duration_seconds": 80,
+        "target_duration_seconds": [
+          80,
+          110
+        ],
+        "max_duration_seconds": 150,
+        "narration_speed": "natural; measure synthesized audio and revise script if outside bounds, never pad with silence",
+        "burned_in_subtitles": "exact synchronized Greek narration",
+        "music": "none",
+        "paid_fallback_allowed": false,
+        "review_status": "SCRIPT_SOURCEPACK_READY_NOT_FINAL_MEDIA_REVIEW"
+      },
+      "dedupe_evidence": {
+        "checked_at_utc": "2026-10-08 04:48:36 UTC",
+        "decision": "PASS_NO_SAME_OR_SUBSTANTIALLY_SIMILAR_STORY",
+        "candidate_terms": [
+          "φωτογρ",
+          "πορτρέτ",
+          "portrait",
+          "αστρονομ",
+          "τηλεσκόπ",
+          "πλυντ"
+        ],
+        "metricool": {
+          "brand_id": 7076410,
+          "date_window": [
+            "2026-10-08",
+            "2026-10-10"
+          ],
+          "records_reviewed": 20,
+          "substantive_story_matches": 0
+        },
+        "notion": {
+          "archive": "Social Media Content Archive",
+          "query_complete": true,
+          "keyword_candidates_reviewed": 39,
+          "semantic_history_records_reviewed": 202,
+          "substantive_story_matches": 0
+        },
+        "repository": {
+          "repository": "steliosvil5eteth-byte/Stelios-Vilanos",
+          "ref": "main",
+          "files": [
+            {
+              "path": "state/content_history.json",
+              "blob_sha": "613f202b1f2ed7a753a1b91875aecc571e721750"
+            },
+            {
+              "path": "production_20261009/manifest.json",
+              "blob_sha": "0b43fd136416c8c74bf7144e86104b4567053ee0"
+            },
+            {
+              "path": "media_jobs/current_ten_20261008_delivery_journal.json",
+              "blob_sha": "e49ffba6660d1498e3a18c1e7910c12e96ec787e"
+            }
+          ],
+          "reserved_common_date": "2026-10-09",
+          "substantive_story_matches": 0
+        },
+        "same_batch_substantive_story_matches": 0,
+        "valid_for_new_execution": false,
+        "fresh_recheck_required_before_production_and_scheduling": true
+      },
+      "local_date": "2026-10-09",
+      "providers": [
+        "youtube"
+      ],
+      "voice": "el-GR-NestorasNeural",
+      "background_music": false,
+      "avatar": false,
+      "script_sha256": "63f4cbb609ce7bc1bf666933716050b514556eb00079c89bb3373b15aa6420f8",
+      "release_status": "BLOCKED_FRESH_NOTION_RECHECK_AND_FINAL_MEDIA",
+      "publish_ready": false
+    },
+    {
+      "id": "yt-20261009-03",
+      "program": "YOUTUBE_GROWTH_TEN_DAILY",
+      "date": "2026-10-09",
+      "slot": "10:00",
+      "timezone": "Europe/Athens",
+      "platforms": [
+        "youtube"
+      ],
+      "content_type": "original_human_fiction",
+      "title": "Η ερώτηση πριν από το «ναι»",
+      "fingerprint": "youtube-growth|original-fiction|job-applicant-lina-observes-real-return-desk-work-before-declining-role-mismatch",
+      "hook": "Η Λίνα είχε επιτέλους μια προσφορά δουλειάς, αλλά δεν είπε αμέσως «ναι».",
+      "script": "Η Λίνα είχε επιτέλους μια προσφορά δουλειάς, αλλά δεν είπε αμέσως «ναι».\n\nΤρεις μήνες έστελνε βιογραφικά. Στις συνεντεύξεις είχε μάθει να μιλά γρήγορα, να χαμογελά και να παρουσιάζει κάθε δυσκολία σαν ευκαιρία.\n\nΗ θέση λεγόταν «εξυπηρέτηση πελατών». Της άρεσε να συζητά με ανθρώπους, να λύνει μικρές παρεξηγήσεις, να εξηγεί πράγματα από κοντά. Είχε ήδη φανταστεί τον εαυτό της πίσω από έναν πάγκο.\n\nΠριν συμφωνήσει, ρώτησε: «Μπορώ να δω πού θα κάθομαι;»\n\nΟ υπεύθυνος την οδήγησε σε ένα ήσυχο δωμάτιο, πίσω από την αποθήκη. Μια εργαζόμενη διαχειριζόταν επιστροφές προϊόντων στον υπολογιστή. Δεν υπήρχε χώρος υποδοχής.\n\nΗ Λίνα κάθισε για λίγο δίπλα της, με την άδειά της, χωρίς να διαβάσει στοιχεία πελατών. Ρώτησε για τη ροή της ημέρας.\n\nΑπαντήσεις σε μηνύματα, έλεγχος παραγγελιών, φωτογραφίες από δέματα. Όλα από την οθόνη.\n\n«Συναντάτε ποτέ τους ανθρώπους;»\n\n«Σχεδόν ποτέ. Εμένα αυτό μου ταιριάζει», είπε η εργαζόμενη.\n\nΣτην επιστροφή προς το γραφείο, η Λίνα ένιωσε την παλιά παρόρμηση: πες ναι, πριν αλλάξουν γνώμη.\n\nΖήτησε να απαντήσει το επόμενο πρωί.\n\nΣτο σπίτι χώρισε ένα χαρτί στα δύο. Στη μία πλευρά έβαλε όσα χρειαζόταν επειγόντως. Στην άλλη, όσα ήξερε ότι μπορούσε να κάνει καθημερινά χωρίς να προσποιείται.\n\nΔεν βρήκε εύκολη απάντηση. Βρήκε όμως τη δική της.\n\nΤο πρωί ευχαρίστησε τον υπεύθυνο και αρνήθηκε. Ύστερα άνοιξε ξανά τις αγγελίες, αυτή τη φορά αναζητώντας συγκεκριμένα δουλειά με φυσική παρουσία πελατών.\n\nΗ αναζήτηση συνεχιζόταν. Τουλάχιστον τώρα ήξερε ποια θέση αναζητούσε.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "word_count": 235,
+      "caption": "Μια προσφορά μπορεί να είναι καλή και να μη σου ταιριάζει. Η Λίνα χρειάστηκε να δει την πραγματική καθημερινότητα πριν αποφασίσει.\n\nΠρωτότυπη μυθοπλασία, όχι επαγγελματική συμβουλή ή πραγματικό περιστατικό. Φωτορεαλιστικές εικόνες δημιουργημένες με τεχνητή νοημοσύνη και συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#ΠρωτότυπηΙστορία #Επιλογές #Δουλειά #Αυτογνωσία",
+      "sources": [],
+      "facts_mapping": [
+        {
+          "claim": "All people, dialogue and events",
+          "basis": "Original fiction; no factual incident or borrowed common-series script asserted."
+        }
+      ],
+      "storyboard": {
+        "layout": "4x2",
+        "panel_order": "left-to-right top row, then left-to-right bottom row",
+        "panels": [
+          "Medium close shot of Lina, a Greek woman aged 36 with short chestnut hair and a dark teal blouse, sitting in an ordinary job interview across from a 50-year-old male manager; her hand rests on her bag as she hesitates before accepting, no visible company name.",
+          "Kitchen preparation scene the previous evening, Lina in a soft grey jumper beside a closed laptop and several plain blank sheets, practising silently to herself, natural compact apartment details.",
+          "Wide office corridor view of Lina following the manager toward a small room behind an orderly warehouse, cardboard parcels without labels and a doorway framing their backs.",
+          "Side view of a 40-year-old woman at a returns-processing desk with parcels and a computer monitor turned away from camera; Lina sits beside her attentively, respectful distance, no customer data or readable screens.",
+          "Close detail of generic packaging, a returned plain household object and a camera on the desk, adult hands indicating the workflow, no addresses, serial numbers or paperwork text.",
+          "Quiet walking shot of Lina alone outside the building in afternoon light, she pauses near a bus stop with no readable signage, no despairing or heroic pose.",
+          "Overhead evening kitchen shot of Lina drawing a single straight dividing line on a blank sheet with a pencil, the rest of the sheet has no writing, tea beside it, warm practical lighting.",
+          "Morning final scene, Lina seated by a window with a phone held naturally at her ear and closed laptop nearby, calm thoughtful expression, city opening for the day beyond; no text or success celebration."
+        ],
+        "prompt": "Create ONE photorealistic cinematic contact sheet with exactly 8 distinct equal panels in a 4-column by 2-row grid. Every panel is a vertical 9:16 composition usable as a separate scene. Maintain adult character and object continuity. No text, letters, digits, subtitles, logos, watermarks, avatars, child faces, duplicate compositions, extra panels, illustration or cartoon style. No direct-to-camera presenter.  Scene sequence: 1. Medium close shot of Lina, a Greek woman aged 36 with short chestnut hair and a dark teal blouse, sitting in an ordinary job interview across from a 50-year-old male manager; her hand rests on her bag as she hesitates before accepting, no visible company name. 2. Kitchen preparation scene the previous evening, Lina in a soft grey jumper beside a closed laptop and several plain blank sheets, practising silently to herself, natural compact apartment details. 3. Wide office corridor view of Lina following the manager toward a small room behind an orderly warehouse, cardboard parcels without labels and a doorway framing their backs. 4. Side view of a 40-year-old woman at a returns-processing desk with parcels and a computer monitor turned away from camera; Lina sits beside her attentively, respectful distance, no customer data or readable screens. 5. Close detail of generic packaging, a returned plain household object and a camera on the desk, adult hands indicating the workflow, no addresses, serial numbers or paperwork text. 6. Quiet walking shot of Lina alone outside the building in afternoon light, she pauses near a bus stop with no readable signage, no despairing or heroic pose. 7. Overhead evening kitchen shot of Lina drawing a single straight dividing line on a blank sheet with a pencil, the rest of the sheet has no writing, tea beside it, warm practical lighting. 8. Morning final scene, Lina seated by a window with a phone held naturally at her ear and closed laptop nearby, calm thoughtful expression, city opening for the day beyond; no text or success celebration."
+      },
+      "production": {
+        "voice": "el-GR-NestorasNeural",
+        "voice_label": "Νέστορας",
+        "min_duration_seconds": 80,
+        "target_duration_seconds": [
+          80,
+          110
+        ],
+        "max_duration_seconds": 150,
+        "narration_speed": "natural; measure synthesized audio and revise script if outside bounds, never pad with silence",
+        "burned_in_subtitles": "exact synchronized Greek narration",
+        "music": "none",
+        "paid_fallback_allowed": false,
+        "review_status": "SCRIPT_SOURCEPACK_READY_NOT_FINAL_MEDIA_REVIEW"
+      },
+      "dedupe_evidence": {
+        "checked_at_utc": "2026-10-08 04:51:47 UTC",
+        "decision": "PASS_NO_SAME_OR_SUBSTANTIALLY_SIMILAR_STORY",
+        "candidate_terms": [
+          "συνέντευξ",
+          "υποψήφι",
+          "interview",
+          "βάρδι",
+          "ωράρι"
+        ],
+        "metricool": {
+          "brand_id": 7076410,
+          "date_window": [
+            "2026-10-08",
+            "2026-10-10"
+          ],
+          "records_reviewed": 20,
+          "substantive_story_matches": 0
+        },
+        "notion": {
+          "archive": "Social Media Content Archive",
+          "query_complete": true,
+          "keyword_candidates_reviewed": 5,
+          "semantic_history_records_reviewed": 202,
+          "substantive_story_matches": 0
+        },
+        "repository": {
+          "repository": "steliosvil5eteth-byte/Stelios-Vilanos",
+          "ref": "main",
+          "files": [
+            {
+              "path": "state/content_history.json",
+              "blob_sha": "613f202b1f2ed7a753a1b91875aecc571e721750"
+            },
+            {
+              "path": "production_20261009/manifest.json",
+              "blob_sha": "0b43fd136416c8c74bf7144e86104b4567053ee0"
+            },
+            {
+              "path": "media_jobs/current_ten_20261008_delivery_journal.json",
+              "blob_sha": "e49ffba6660d1498e3a18c1e7910c12e96ec787e"
+            }
+          ],
+          "reserved_common_date": "2026-10-09",
+          "substantive_story_matches": 0
+        },
+        "same_batch_substantive_story_matches": 0,
+        "valid_for_new_execution": false,
+        "fresh_recheck_required_before_production_and_scheduling": true
+      },
+      "local_date": "2026-10-09",
+      "providers": [
+        "youtube"
+      ],
+      "voice": "el-GR-NestorasNeural",
+      "background_music": false,
+      "avatar": false,
+      "script_sha256": "23b142e180f4642c34967c4212ae4a547b2a89271cf3d74d734fbf530fc47a2f",
+      "release_status": "BLOCKED_FRESH_NOTION_RECHECK_AND_FINAL_MEDIA",
+      "publish_ready": false
+    },
+    {
+      "id": "yt-20261009-04",
+      "program": "YOUTUBE_GROWTH_TEN_DAILY",
+      "date": "2026-10-09",
+      "slot": "11:00",
+      "timezone": "Europe/Athens",
+      "platforms": [
+        "youtube"
+      ],
+      "content_type": "original_human_fiction",
+      "title": "Η καταιγίδα μέσα στο σουρωτήρι",
+      "fingerprint": "youtube-growth|original-fiction|sound-editor-danae-rice-colander-tray-builds-film-rain-forgets-record-button",
+      "hook": "Η καταιγίδα της ταινίας χωρούσε τελικά μέσα σε ένα σουρωτήρι.",
+      "script": "Η καταιγίδα της ταινίας χωρούσε τελικά μέσα σε ένα σουρωτήρι.\n\nΗ Δανάη είχε αναλάβει τον ήχο μιας μικρής ταινίας. Στην τελευταία σκηνή, ένας άντρας περίμενε στη στάση κάτω από δυνατή βροχή. Στο γύρισμα είχαν βρέξει τον δρόμο. Το μικρόφωνο, όμως, είχε γράψει περισσότερο ένα μηχανάκι που περνούσε δίπλα.\n\nΗ πρεμιέρα ήταν το Σάββατο. Ο ουρανός παρέμενε πεισματικά καθαρός.\n\nΔοκίμασε τη βρύση. Ακουγόταν σαν βρύση. Δοκίμασε το ντους. Ακουγόταν σαν άνθρωπος που είχε ξεχάσει να κλείσει το ντους.\n\nΤο απόγευμα ήρθε ο συγκάτοικός της για να μαγειρέψει. Τη βρήκε στο πάτωμα, ανάμεσα σε καλώδια και κατσαρόλες.\n\n«Θα φάμε τίποτα ή η κουζίνα γυρίζει ταινία;»\n\nΚαθώς μετρούσε ρύζι, λίγοι κόκκοι έπεσαν στο μεταλλικό ταψί. Η Δανάη σήκωσε το κεφάλι.\n\nΤου ζήτησε να το ξανακάνει. Πιο αργά. Από λίγο ψηλότερα. Με το ταψί πιο μακριά από το μικρόφωνο.\n\nΈφεραν ένα σουρωτήρι. Δοκίμασαν μικρές ποσότητες, άλλαξαν επιφάνεια, πρόσθεσαν ένα απαλό θρόισμα από χαρτί.\n\nΣτα ακουστικά, η κουζίνα άρχισε να μοιάζει με βρεγμένο δρόμο.\n\nΔούλεψαν ώσπου η κίνηση του ήχου ακολούθησε την εικόνα. Η Δανάη χαμογέλασε, κοίταξε την οθόνη και πάγωσε.\n\nΔεν είχε πατήσει εγγραφή.\n\nΟ συγκάτοικος έμεινε ακίνητος με το σουρωτήρι στο χέρι. Ύστερα της το έδωσε.\n\n«Αυτή τη φορά εγώ πατάω το κουμπί».\n\nΣτην πρεμιέρα, κανείς δεν μίλησε για τον ήχο. Παρακολουθούσαν τον άντρα που περίμενε μέσα στη βροχή.\n\nΗ Δανάη τού ψιθύρισε: «Πέτυχε».\n\nΕκείνος έγνεψε. «Αύριο, πάντως, μαγειρεύεις εσύ».\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "word_count": 233,
+      "caption": "Μια φανταστική ιστορία για τις μικρές κατασκευές πίσω από μια μεγάλη κινηματογραφική ψευδαίσθηση — και για το κουμπί που δεν πρέπει να ξεχάσεις.\n\nΠρωτότυπη μυθοπλασία. Φωτορεαλιστικές εικόνες δημιουργημένες με τεχνητή νοημοσύνη και συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#ΠρωτότυπηΙστορία #Σινεμά #Ήχος #Χιούμορ",
+      "sources": [],
+      "facts_mapping": [
+        {
+          "claim": "All people, dialogue and events",
+          "basis": "Original fiction; no factual incident or borrowed common-series script asserted."
+        }
+      ],
+      "storyboard": {
+        "layout": "4x2",
+        "panel_order": "left-to-right top row, then left-to-right bottom row",
+        "panels": [
+          "Overhead cinematic view of a modest apartment kitchen floor: Danae, a Greek woman aged 29 with dark curly hair in a bun and ochre T-shirt, sits wearing headphones among a plain metal colander, baking tray, audio recorder and tidy cables; no readable screen or labels.",
+          "Text-free cinematic scene within the fictional film: an adult man aged 40 in a charcoal coat waits alone at a bus shelter on a wet evening street, water on pavement, no readable route numbers, no child faces.",
+          "Side-angle kitchen shot of Danae listening with headphones beside a running tap and a recorder positioned safely on a dry counter away from water, unimpressed expression, no unsafe wiring.",
+          "Medium doorway shot of her adult male flatmate aged 31 in a plain green T-shirt arriving with a reusable grocery bag, facing Danae amid the improvised sound setup, understated comic expression.",
+          "Extreme close-up of a few dry rice grains dropping from an adult hand into a plain metal baking tray, shallow depth of field, no other repeated scene composition.",
+          "Wide side composition of the two adults deliberately controlling rice through a colander over the tray while the microphone stays on a stand nearby; Danae listens intently, no water near equipment.",
+          "Close three-quarter view of Danae's surprised face as she looks at an unlit blank recorder display, the flatmate freezes holding the colander in the background, device has no text, digits or brand.",
+          "Small independent cinema with exclusively adult audience seen in profile in dim projected light: Danae and her flatmate sit beside each other whispering with amused relief, screen out of frame, no poster text."
+        ],
+        "prompt": "Create ONE photorealistic cinematic contact sheet with exactly 8 distinct equal panels in a 4-column by 2-row grid. Every panel is a vertical 9:16 composition usable as a separate scene. Maintain adult character and object continuity. No text, letters, digits, subtitles, logos, watermarks, avatars, child faces, duplicate compositions, extra panels, illustration or cartoon style. No direct-to-camera presenter.  Scene sequence: 1. Overhead cinematic view of a modest apartment kitchen floor: Danae, a Greek woman aged 29 with dark curly hair in a bun and ochre T-shirt, sits wearing headphones among a plain metal colander, baking tray, audio recorder and tidy cables; no readable screen or labels. 2. Text-free cinematic scene within the fictional film: an adult man aged 40 in a charcoal coat waits alone at a bus shelter on a wet evening street, water on pavement, no readable route numbers, no child faces. 3. Side-angle kitchen shot of Danae listening with headphones beside a running tap and a recorder positioned safely on a dry counter away from water, unimpressed expression, no unsafe wiring. 4. Medium doorway shot of her adult male flatmate aged 31 in a plain green T-shirt arriving with a reusable grocery bag, facing Danae amid the improvised sound setup, understated comic expression. 5. Extreme close-up of a few dry rice grains dropping from an adult hand into a plain metal baking tray, shallow depth of field, no other repeated scene composition. 6. Wide side composition of the two adults deliberately controlling rice through a colander over the tray while the microphone stays on a stand nearby; Danae listens intently, no water near equipment. 7. Close three-quarter view of Danae's surprised face as she looks at an unlit blank recorder display, the flatmate freezes holding the colander in the background, device has no text, digits or brand. 8. Small independent cinema with exclusively adult audience seen in profile in dim projected light: Danae and her flatmate sit beside each other whispering with amused relief, screen out of frame, no poster text."
+      },
+      "production": {
+        "voice": "el-GR-NestorasNeural",
+        "voice_label": "Νέστορας",
+        "min_duration_seconds": 80,
+        "target_duration_seconds": [
+          80,
+          110
+        ],
+        "max_duration_seconds": 150,
+        "narration_speed": "natural; measure synthesized audio and revise script if outside bounds, never pad with silence",
+        "burned_in_subtitles": "exact synchronized Greek narration",
+        "music": "none",
+        "paid_fallback_allowed": false,
+        "review_status": "SCRIPT_SOURCEPACK_READY_NOT_FINAL_MEDIA_REVIEW"
+      },
+      "dedupe_evidence": {
+        "checked_at_utc": "2026-10-08 04:53:16 UTC",
+        "decision": "PASS_NO_SAME_OR_SUBSTANTIALLY_SIMILAR_STORY",
+        "candidate_terms": [
+          "ηχολήπτ",
+          "ηχογράφ",
+          "βροχή",
+          "foley",
+          "ηχητικ"
+        ],
+        "metricool": {
+          "brand_id": 7076410,
+          "date_window": [
+            "2026-10-08",
+            "2026-10-10"
+          ],
+          "records_reviewed": 20,
+          "substantive_story_matches": 0
+        },
+        "notion": {
+          "archive": "Social Media Content Archive",
+          "query_complete": true,
+          "keyword_candidates_reviewed": 1,
+          "semantic_history_records_reviewed": 202,
+          "substantive_story_matches": 0
+        },
+        "repository": {
+          "repository": "steliosvil5eteth-byte/Stelios-Vilanos",
+          "ref": "main",
+          "files": [
+            {
+              "path": "state/content_history.json",
+              "blob_sha": "613f202b1f2ed7a753a1b91875aecc571e721750"
+            },
+            {
+              "path": "production_20261009/manifest.json",
+              "blob_sha": "0b43fd136416c8c74bf7144e86104b4567053ee0"
+            },
+            {
+              "path": "media_jobs/current_ten_20261008_delivery_journal.json",
+              "blob_sha": "e49ffba6660d1498e3a18c1e7910c12e96ec787e"
+            }
+          ],
+          "reserved_common_date": "2026-10-09",
+          "substantive_story_matches": 0
+        },
+        "same_batch_substantive_story_matches": 0,
+        "valid_for_new_execution": false,
+        "fresh_recheck_required_before_production_and_scheduling": true
+      },
+      "local_date": "2026-10-09",
+      "providers": [
+        "youtube"
+      ],
+      "voice": "el-GR-NestorasNeural",
+      "background_music": false,
+      "avatar": false,
+      "script_sha256": "e5369cf7bc714f1637d87de6860aadbefd955a73c0e8841c2733fdfb60eb4865",
+      "release_status": "BLOCKED_FRESH_NOTION_RECHECK_AND_FINAL_MEDIA",
+      "publish_ready": false
+    }
+  ],
+  "production_status": "PARTIAL_SCRIPTS_ONLY_BLOCKED_FRESH_NOTION_HISTORY",
+  "publish_ready": false,
+  "automatic_execution_authorized": false,
+  "blocked_reason": "Notion query_data_sources usage_limit_reached; required fresh history query not executed. No automatic retries or alternate access route. New scheduling awaits a successful authorized fresh check and exact-final review."
+}

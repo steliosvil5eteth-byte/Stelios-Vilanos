@@ -1,0 +1,57 @@
+{
+  "program": "YOUTUBE_GROWTH_TEN_DAILY",
+  "as_of_utc": "2026-10-08T05:00:00Z",
+  "status": "BLOCKED_REQUIRED_NOTION_HISTORY_QUERY",
+  "legacy_pending_youtube_cancelled": 9,
+  "legacy_only_drafts_disabled": 5,
+  "mixed_records_youtube_removed_only": 4,
+  "current_active_pending_youtube": 0,
+  "already_published_youtube_today": 5,
+  "new_youtube_scheduled": 0,
+  "new_youtube_published": 0,
+  "new_scripts_prepared": 6,
+  "prepared_scripts_by_date": {
+    "2026-10-08": 2,
+    "2026-10-09": 4,
+    "2026-10-10": 0
+  },
+  "generated_storyboard_atlases": 1,
+  "new_tts_calls": 0,
+  "new_final_videos": 0,
+  "heygen_generation_calls_in_this_transition": 0,
+  "new_azure_generation_calls": 0,
+  "new_paid_purchase_or_upgrade_actions": 0,
+  "notion_history_last_completed_archive_count": 202,
+  "notion_block": {
+    "operation": "query_data_sources",
+    "code": "usage_limit_reached",
+    "classification": "entitlement",
+    "query_executed": false,
+    "automatic_retry": false,
+    "alternate_access_path_used": false
+  },
+  "original_other_platform_routes_and_schedules_preserved": true,
+  "youtube_strategy_enabled": false,
+  "remaining_steps": [
+    "Restore authorized fresh Notion history query access.",
+    "Finish missing original scripts after fresh Metricool+Notion+repository dedupe.",
+    "Generate exact Nestoras narration and original relevant visuals using approved existing free tools.",
+    "Inspect exact final videos and bind PASSED_FINAL_REVIEW to media hashes.",
+    "Enable independent YouTube program only when release registry is ready.",
+    "Fresh dedupe and schedule YouTube-only records, verify live status and complete daily coverage."
+  ],
+  "prepared_batch": "media_jobs/youtube_growth/batches/prepared_partial_20261008.json",
+  "active_synthesis_request_created": false,
+  "active_asr_request_created": false,
+  "checkpoint_saved_at_utc": "2026-10-08T05:08:28Z",
+  "production_lease_status": "RELEASED_BLOCKED",
+  "sourcepack_archive_excludes_private_history_rows": true,
+  "offline_validation": {
+    "prepared_jobs": 6,
+    "manifest_valid": true,
+    "execution_authorized": false,
+    "normal_execution_refused_before_provider_import": true,
+    "new_provider_calls": 0
+  },
+  "audio_driver_sha256": "aeb1f9e9a6e63771890e54ac5117531b3d735b9b333569f2373a826915968582"
+}

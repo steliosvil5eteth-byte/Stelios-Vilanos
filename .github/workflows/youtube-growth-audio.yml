@@ -1,0 +1,124 @@
+name: YouTube growth Nestoras audio only
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'media_jobs/youtube_growth/requests/active.json'
+  workflow_dispatch:
+    inputs:
+      manifest_path:
+        description: 'Existing approved YouTube-only manifest in the repository'
+        required: true
+        default: 'media_jobs/youtube_growth/requests/active.json'
+        type: string
+      job_ids:
+        description: 'Optional comma-separated stable IDs after partial-output reconciliation'
+        required: false
+        default: ''
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: youtube-growth-audio-f0
+  cancel-in-progress: false
+
+jobs:
+  narration:
+    if: github.repository == 'steliosvil5eteth-byte/Stelios-Vilanos' && github.event.repository.private == false
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    env:
+      YT_MANIFEST_PATH: ${{ inputs.manifest_path || 'media_jobs/youtube_growth/requests/active.json' }}
+      YT_SELECTED_JOB_IDS: ${{ inputs.job_ids || '' }}
+      YT_AUDIO_OUTPUT: ${{ runner.temp }}/youtube-growth-nestoras
+
+    steps:
+      - name: Check out isolated audio request
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Validate program, request path, voice, cost and IDs before synthesis
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import os, re, subprocess, sys
+          from pathlib import Path
+          raw = os.environ['YT_MANIFEST_PATH']
+          allowed = (
+              r'media_jobs/youtube_growth/(?:requests|batches)/[A-Za-z0-9_-]+\.json',
+              r'media_jobs/youtube_growth_[A-Za-z0-9_-]+\.json',
+          )
+          if not any(re.fullmatch(pattern, raw) for pattern in allowed):
+              raise SystemExit('Only explicit YouTube growth request/batch paths are allowed')
+          repo = Path(os.environ['GITHUB_WORKSPACE']).resolve()
+          manifest = (repo / raw).resolve(strict=True)
+          if not manifest.is_relative_to(repo) or not manifest.is_file():
+              raise SystemExit('Manifest must be an existing file inside this repository')
+          selected = [part.strip() for part in os.environ['YT_SELECTED_JOB_IDS'].split(',') if part.strip()]
+          cmd = [sys.executable, 'tools/render_youtube_growth_audio.py',
+                 '--manifest', str(manifest), '--validate-only']
+          for job_id in selected:
+              cmd += ['--job-id', job_id]
+          subprocess.run(cmd, check=True)
+          PY
+
+      - name: Install established deterministic audio dependencies
+        timeout-minutes: 5
+        run: |
+          set -euo pipefail
+          if ! command -v ffmpeg >/dev/null 2>&1 || ! command -v ffprobe >/dev/null 2>&1; then
+            sudo timeout --kill-after=10s 90s apt-get -o Acquire::Retries=1 -o Acquire::http::Timeout=15 -o Acquire::https::Timeout=15 update -qq
+            sudo timeout --kill-after=10s 90s apt-get -o Acquire::Retries=1 -o Acquire::http::Timeout=15 -o Acquire::https::Timeout=15 install -y -qq --no-install-recommends ffmpeg
+          fi
+          timeout --kill-after=10s 90s python3 -m pip install --disable-pip-version-check --no-input --timeout 15 --retries 1 --only-binary=:all: pillow==12.3.0 requests==2.31.0 azure-core==1.41.0 azure-cognitiveservices-speech==1.52.0
+          python3 -c 'import PIL, requests, azure.core, azure.cognitiveservices.speech; print("Established Azure audio dependencies ready")'
+
+      - name: Generate Nestoras narration once with genuine word timings
+        env:
+          AZURE_SPEECH_KEY: ${{ secrets.AZURE_SPEECH_KEY }}
+          AZURE_SPEECH_REGION: ${{ secrets.AZURE_SPEECH_REGION }}
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import os, subprocess, sys
+          if not os.environ.get('AZURE_SPEECH_KEY') or not os.environ.get('AZURE_SPEECH_REGION'):
+              raise SystemExit('Established Azure Speech credentials are unavailable; no fallback or retry')
+          selected = [part.strip() for part in os.environ['YT_SELECTED_JOB_IDS'].split(',') if part.strip()]
+          cmd = [sys.executable, 'tools/render_youtube_growth_audio.py',
+                 '--manifest', os.environ['YT_MANIFEST_PATH'],
+                 '--output', os.environ['YT_AUDIO_OUTPUT']]
+          for job_id in selected:
+              cmd += ['--job-id', job_id]
+          subprocess.run(cmd, check=True)
+          PY
+
+      - name: Preserve completed or partial audio for exact review and reconciliation
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: youtube-growth-nestoras-${{ github.run_id }}
+          path: ${{ runner.temp }}/youtube-growth-nestoras/
+          retention-days: 7
+          if-no-files-found: warn
+
+      - name: State the unapproved media stage
+        if: success()
+        run: |
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          summary = json.loads((Path(os.environ['YT_AUDIO_OUTPUT'])/'batch-summary.json').read_text(encoding='utf-8'))
+          text = (
+              f"Program: {summary['program']}\n"
+              f"Audio jobs: {len(summary['jobs'])}\n"
+              "Final visual/audio review has not been performed. Publish ready: false.\n"
+              "No social-platform writes, purchases, upgrades, paid fallback, avatars or music.\n"
+          )
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a', encoding='utf-8') as file:
+              file.write(text)
+          PY
+

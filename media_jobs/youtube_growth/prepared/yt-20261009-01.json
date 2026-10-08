@@ -1,0 +1,114 @@
+{
+  "id": "yt-20261009-01",
+  "program": "YOUTUBE_GROWTH_TEN_DAILY",
+  "date": "2026-10-09",
+  "slot": "07:00",
+  "timezone": "Europe/Athens",
+  "platforms": [
+    "youtube"
+  ],
+  "content_type": "original_human_fiction",
+  "title": "Η παράσταση που έμεινε χωρίς φώτα",
+  "fingerprint": "youtube-growth|original-fiction|amateur-adult-theatre-blackout-eva-first-leading-role-performs-and-chooses-tomorrow",
+  "hook": "Το ρεύμα κόπηκε τη στιγμή που η Εύα θα έλεγε την πρώτη της ατάκα.",
+  "script": "Το ρεύμα κόπηκε τη στιγμή που η Εύα θα έλεγε την πρώτη της ατάκα.\n\nΈξι μήνες πρόβες σε μια δημοτική αίθουσα. Κοστούμια δανεικά, σκηνικά βαμμένα τα Σαββατοκύριακα, εβδομήντα θεατές. Η Εύα, λογίστρια τη μέρα, είχε ζητήσει έναν μικρό ρόλο. Της έδωσαν τον μεγαλύτερο.\n\nΌταν έσβησαν οι προβολείς, ένιωσε πρώτα ανακούφιση. Να μια δικαιολογία για να μη βγει.\n\nΟ φωτισμός ασφαλείας λειτουργούσε. Ο υπεύθυνος έλεγξε την αίθουσα, αλλά οι προβολείς δεν θα άναβαν σύντομα. Ο σκηνοθέτης ετοιμάστηκε να ανακοινώσει αναβολή.\n\nΤότε ακούστηκε από τη σκηνή μια φωνή: «Εγώ πάντως ήρθα για να σου πω κάτι».\n\nΉταν ο συμπρωταγωνιστής της. Είχε πει την ατάκα του, χωρίς φώτα και χωρίς να τη βλέπει καλά.\n\nΗ Εύα γνώριζε την απάντηση. Την είχε πει εκατό φορές στην κουζίνα της. Τώρα όμως έπρεπε να τη διαλέξει.\n\nΠροχώρησε στο φωτισμένο μπροστινό μέρος της σκηνής και απάντησε.\n\nΈφεραν δύο καρέκλες. Άφησαν τα μεγάλα σκηνικά στην άκρη. Οι θεατές έγειραν μπροστά για να ακούν. Σε μια αστεία σκηνή, το γέλιο ήρθε λίγο αργότερα από τις πρόβες, αλλά κράτησε περισσότερο.\n\nΚάποιος έχασε μια ατάκα. Κάποιος άλλος την περιέγραψε με δικά του λόγια. Η ιστορία έφτασε ως το τέλος.\n\nΌταν επέστρεψε το ρεύμα, υποκλίνονταν ήδη.\n\nΣτην έξοδο, η Εύα βρήκε τον σκηνοθέτη να μαζεύει τα εισιτήρια. «Αύριο με κανονικά φώτα;» τον ρώτησε.\n\n«Αύριο με κανονικά φώτα».\n\nΓια πρώτη φορά, δεν ευχήθηκε να συμβεί κάτι που θα την κρατούσε μακριά από τη σκηνή.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+  "caption": "Η Εύα είχε έτοιμη μια δικαιολογία για να φύγει από τη σκηνή. Όμως η ιστορία είχε ήδη αρχίσει.\n\nΠρωτότυπη μυθοπλασία· τα πρόσωπα και τα γεγονότα είναι φανταστικά. Φωτορεαλιστικές εικόνες δημιουργημένες με τεχνητή νοημοσύνη και συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#ΠρωτότυπηΙστορία #Θέατρο #Θάρρος #ΑνθρώπινεςΙστορίες",
+  "sources": [],
+  "facts_mapping": [
+    {
+      "claim": "All people, dialogue and events in the story",
+      "basis": "Original fiction authored for this YouTube batch; no factual incident or borrowed common-series script asserted."
+    }
+  ],
+  "storyboard": {
+    "layout": "4x2",
+    "panel_order": "left-to-right top row, then left-to-right bottom row",
+    "panels": [
+      "Wide establishing shot of a modest Greek municipal theatre during evening rehearsal, adult volunteers painting lightweight stage flats, blue velvet curtain, warm practical light, no readable signs.",
+      "Intimate backstage mirror shot of Eva, a Greek woman aged 42 with a shoulder-length dark wavy bob and simple burgundy costume, checking her cuff while gripping a plain folded script with no visible writing.",
+      "View from the back of the adult-only audience as theatrical spotlights go dark while steady practical safety lighting stays visible; stage crew calmly assesses the room, no smoke, fire or panic.",
+      "Over-the-shoulder view behind Eva in the wing as her male co-star aged 45 in a muted olive jacket speaks from the softly illuminated front of the stage, empty space separating them.",
+      "Low front-row camera angle as Eva steps into the soft practical light to answer him, vulnerability turning to concentration, natural facial expression, no triumphant pose.",
+      "Side-stage medium-wide shot of the two actors performing an intimate conversation seated on two plain wooden chairs, unused large scenery behind them, radically different framing from previous panel.",
+      "Close oblique audience reaction shot of varied adult spectators leaning forward and laughing naturally, softly illuminated faces, performers blurred far in the background.",
+      "After the show, calm theatre entrance scene: Eva still in her burgundy costume asks the adult director a question while he gathers plain unmarked ticket stubs, warm restored light, small confident smile."
+    ],
+    "prompt": "Create ONE photorealistic cinematic contact sheet with exactly 8 distinct equal panels in a 4-column by 2-row grid. Every panel is a vertical 9:16 composition usable as a separate scene. Maintain identical adult characters, clothing and location continuity throughout. No text, letters, digits, subtitles, logos, watermarks, avatars, child faces, duplicate compositions, extra panels, illustration or cartoon style. All characters adults. Realistic Greek municipal theatre with sober natural colours and plausible lighting. No direct-to-camera presenter. Scene sequence: 1. Wide establishing shot of a modest Greek municipal theatre during evening rehearsal, adult volunteers painting lightweight stage flats, blue velvet curtain, warm practical light, no readable signs. 2. Intimate backstage mirror shot of Eva, a Greek woman aged 42 with a shoulder-length dark wavy bob and simple burgundy costume, checking her cuff while gripping a plain folded script with no visible writing. 3. View from the back of the adult-only audience as theatrical spotlights go dark while steady practical safety lighting stays visible; stage crew calmly assesses the room, no smoke, fire or panic. 4. Over-the-shoulder view behind Eva in the wing as her male co-star aged 45 in a muted olive jacket speaks from the softly illuminated front of the stage, empty space separating them. 5. Low front-row camera angle as Eva steps into the soft practical light to answer him, vulnerability turning to concentration, natural facial expression, no triumphant pose. 6. Side-stage medium-wide shot of the two actors performing an intimate conversation seated on two plain wooden chairs, unused large scenery behind them, radically different framing from previous panel. 7. Close oblique audience reaction shot of varied adult spectators leaning forward and laughing naturally, softly illuminated faces, performers blurred far in the background. 8. After the show, calm theatre entrance scene: Eva still in her burgundy costume asks the adult director a question while he gathers plain unmarked ticket stubs, warm restored light, small confident smile."
+  },
+  "production": {
+    "voice": "el-GR-NestorasNeural",
+    "voice_label": "Νέστορας",
+    "min_duration_seconds": 80,
+    "target_duration_seconds": [
+      80,
+      110
+    ],
+    "max_duration_seconds": 150,
+    "narration_speed": "natural; measure synthesized audio and revise script if outside bounds, never pad with silence",
+    "burned_in_subtitles": "exact synchronized Greek narration",
+    "music": "none",
+    "paid_fallback_allowed": false,
+    "review_status": "SCRIPT_SOURCEPACK_READY_NOT_FINAL_MEDIA_REVIEW"
+  },
+  "dedupe_evidence": {
+    "checked_at_utc": "2026-10-08 04:46:14 UTC",
+    "decision": "PASS_NO_SAME_OR_SUBSTANTIALLY_SIMILAR_STORY",
+    "candidate_terms": [
+      "θέατρ",
+      "θεατρ",
+      "παράστα",
+      "πρόβ",
+      "διακοπή ρεύματος"
+    ],
+    "metricool": {
+      "brand_id": 7076410,
+      "date_window": [
+        "2026-10-08",
+        "2026-10-10"
+      ],
+      "records_reviewed": 20,
+      "substantive_story_matches": 0
+    },
+    "notion": {
+      "archive": "Social Media Content Archive",
+      "query_complete": true,
+      "keyword_candidates_reviewed": 9,
+      "semantic_history_records_reviewed": 202,
+      "substantive_story_matches": 0
+    },
+    "repository": {
+      "repository": "steliosvil5eteth-byte/Stelios-Vilanos",
+      "ref": "main",
+      "files": [
+        {
+          "path": "state/content_history.json",
+          "blob_sha": "613f202b1f2ed7a753a1b91875aecc571e721750"
+        },
+        {
+          "path": "production_20261009/manifest.json",
+          "blob_sha": "0b43fd136416c8c74bf7144e86104b4567053ee0"
+        },
+        {
+          "path": "media_jobs/current_ten_20261008_delivery_journal.json",
+          "blob_sha": "e49ffba6660d1498e3a18c1e7910c12e96ec787e"
+        }
+      ],
+      "reserved_common_date": "2026-10-09",
+      "substantive_story_matches": 0
+    },
+    "same_batch_substantive_story_matches": 0,
+    "valid_for_new_execution": false,
+    "fresh_recheck_required_before_production_and_scheduling": true
+  },
+  "word_count": 237,
+  "local_date": "2026-10-09",
+  "providers": [
+    "youtube"
+  ],
+  "voice": "el-GR-NestorasNeural",
+  "background_music": false,
+  "avatar": false,
+  "script_sha256": "35c701c4dfa239233df79ae387e4d31153abf5cd0836c739c7b70cee831ae913",
+  "release_status": "BLOCKED_FRESH_NOTION_RECHECK_AND_FINAL_MEDIA",
+  "publish_ready": false
+}

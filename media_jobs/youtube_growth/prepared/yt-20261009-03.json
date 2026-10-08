@@ -1,0 +1,114 @@
+{
+  "id": "yt-20261009-03",
+  "program": "YOUTUBE_GROWTH_TEN_DAILY",
+  "date": "2026-10-09",
+  "slot": "10:00",
+  "timezone": "Europe/Athens",
+  "platforms": [
+    "youtube"
+  ],
+  "content_type": "original_human_fiction",
+  "title": "Η ερώτηση πριν από το «ναι»",
+  "fingerprint": "youtube-growth|original-fiction|job-applicant-lina-observes-real-return-desk-work-before-declining-role-mismatch",
+  "hook": "Η Λίνα είχε επιτέλους μια προσφορά δουλειάς, αλλά δεν είπε αμέσως «ναι».",
+  "script": "Η Λίνα είχε επιτέλους μια προσφορά δουλειάς, αλλά δεν είπε αμέσως «ναι».\n\nΤρεις μήνες έστελνε βιογραφικά. Στις συνεντεύξεις είχε μάθει να μιλά γρήγορα, να χαμογελά και να παρουσιάζει κάθε δυσκολία σαν ευκαιρία.\n\nΗ θέση λεγόταν «εξυπηρέτηση πελατών». Της άρεσε να συζητά με ανθρώπους, να λύνει μικρές παρεξηγήσεις, να εξηγεί πράγματα από κοντά. Είχε ήδη φανταστεί τον εαυτό της πίσω από έναν πάγκο.\n\nΠριν συμφωνήσει, ρώτησε: «Μπορώ να δω πού θα κάθομαι;»\n\nΟ υπεύθυνος την οδήγησε σε ένα ήσυχο δωμάτιο, πίσω από την αποθήκη. Μια εργαζόμενη διαχειριζόταν επιστροφές προϊόντων στον υπολογιστή. Δεν υπήρχε χώρος υποδοχής.\n\nΗ Λίνα κάθισε για λίγο δίπλα της, με την άδειά της, χωρίς να διαβάσει στοιχεία πελατών. Ρώτησε για τη ροή της ημέρας.\n\nΑπαντήσεις σε μηνύματα, έλεγχος παραγγελιών, φωτογραφίες από δέματα. Όλα από την οθόνη.\n\n«Συναντάτε ποτέ τους ανθρώπους;»\n\n«Σχεδόν ποτέ. Εμένα αυτό μου ταιριάζει», είπε η εργαζόμενη.\n\nΣτην επιστροφή προς το γραφείο, η Λίνα ένιωσε την παλιά παρόρμηση: πες ναι, πριν αλλάξουν γνώμη.\n\nΖήτησε να απαντήσει το επόμενο πρωί.\n\nΣτο σπίτι χώρισε ένα χαρτί στα δύο. Στη μία πλευρά έβαλε όσα χρειαζόταν επειγόντως. Στην άλλη, όσα ήξερε ότι μπορούσε να κάνει καθημερινά χωρίς να προσποιείται.\n\nΔεν βρήκε εύκολη απάντηση. Βρήκε όμως τη δική της.\n\nΤο πρωί ευχαρίστησε τον υπεύθυνο και αρνήθηκε. Ύστερα άνοιξε ξανά τις αγγελίες, αυτή τη φορά αναζητώντας συγκεκριμένα δουλειά με φυσική παρουσία πελατών.\n\nΗ αναζήτηση συνεχιζόταν. Τουλάχιστον τώρα ήξερε ποια θέση αναζητούσε.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.",
+  "word_count": 235,
+  "caption": "Μια προσφορά μπορεί να είναι καλή και να μη σου ταιριάζει. Η Λίνα χρειάστηκε να δει την πραγματική καθημερινότητα πριν αποφασίσει.\n\nΠρωτότυπη μυθοπλασία, όχι επαγγελματική συμβουλή ή πραγματικό περιστατικό. Φωτορεαλιστικές εικόνες δημιουργημένες με τεχνητή νοημοσύνη και συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#ΠρωτότυπηΙστορία #Επιλογές #Δουλειά #Αυτογνωσία",
+  "sources": [],
+  "facts_mapping": [
+    {
+      "claim": "All people, dialogue and events",
+      "basis": "Original fiction; no factual incident or borrowed common-series script asserted."
+    }
+  ],
+  "storyboard": {
+    "layout": "4x2",
+    "panel_order": "left-to-right top row, then left-to-right bottom row",
+    "panels": [
+      "Medium close shot of Lina, a Greek woman aged 36 with short chestnut hair and a dark teal blouse, sitting in an ordinary job interview across from a 50-year-old male manager; her hand rests on her bag as she hesitates before accepting, no visible company name.",
+      "Kitchen preparation scene the previous evening, Lina in a soft grey jumper beside a closed laptop and several plain blank sheets, practising silently to herself, natural compact apartment details.",
+      "Wide office corridor view of Lina following the manager toward a small room behind an orderly warehouse, cardboard parcels without labels and a doorway framing their backs.",
+      "Side view of a 40-year-old woman at a returns-processing desk with parcels and a computer monitor turned away from camera; Lina sits beside her attentively, respectful distance, no customer data or readable screens.",
+      "Close detail of generic packaging, a returned plain household object and a camera on the desk, adult hands indicating the workflow, no addresses, serial numbers or paperwork text.",
+      "Quiet walking shot of Lina alone outside the building in afternoon light, she pauses near a bus stop with no readable signage, no despairing or heroic pose.",
+      "Overhead evening kitchen shot of Lina drawing a single straight dividing line on a blank sheet with a pencil, the rest of the sheet has no writing, tea beside it, warm practical lighting.",
+      "Morning final scene, Lina seated by a window with a phone held naturally at her ear and closed laptop nearby, calm thoughtful expression, city opening for the day beyond; no text or success celebration."
+    ],
+    "prompt": "Create ONE photorealistic cinematic contact sheet with exactly 8 distinct equal panels in a 4-column by 2-row grid. Every panel is a vertical 9:16 composition usable as a separate scene. Maintain adult character and object continuity. No text, letters, digits, subtitles, logos, watermarks, avatars, child faces, duplicate compositions, extra panels, illustration or cartoon style. No direct-to-camera presenter.  Scene sequence: 1. Medium close shot of Lina, a Greek woman aged 36 with short chestnut hair and a dark teal blouse, sitting in an ordinary job interview across from a 50-year-old male manager; her hand rests on her bag as she hesitates before accepting, no visible company name. 2. Kitchen preparation scene the previous evening, Lina in a soft grey jumper beside a closed laptop and several plain blank sheets, practising silently to herself, natural compact apartment details. 3. Wide office corridor view of Lina following the manager toward a small room behind an orderly warehouse, cardboard parcels without labels and a doorway framing their backs. 4. Side view of a 40-year-old woman at a returns-processing desk with parcels and a computer monitor turned away from camera; Lina sits beside her attentively, respectful distance, no customer data or readable screens. 5. Close detail of generic packaging, a returned plain household object and a camera on the desk, adult hands indicating the workflow, no addresses, serial numbers or paperwork text. 6. Quiet walking shot of Lina alone outside the building in afternoon light, she pauses near a bus stop with no readable signage, no despairing or heroic pose. 7. Overhead evening kitchen shot of Lina drawing a single straight dividing line on a blank sheet with a pencil, the rest of the sheet has no writing, tea beside it, warm practical lighting. 8. Morning final scene, Lina seated by a window with a phone held naturally at her ear and closed laptop nearby, calm thoughtful expression, city opening for the day beyond; no text or success celebration."
+  },
+  "production": {
+    "voice": "el-GR-NestorasNeural",
+    "voice_label": "Νέστορας",
+    "min_duration_seconds": 80,
+    "target_duration_seconds": [
+      80,
+      110
+    ],
+    "max_duration_seconds": 150,
+    "narration_speed": "natural; measure synthesized audio and revise script if outside bounds, never pad with silence",
+    "burned_in_subtitles": "exact synchronized Greek narration",
+    "music": "none",
+    "paid_fallback_allowed": false,
+    "review_status": "SCRIPT_SOURCEPACK_READY_NOT_FINAL_MEDIA_REVIEW"
+  },
+  "dedupe_evidence": {
+    "checked_at_utc": "2026-10-08 04:51:47 UTC",
+    "decision": "PASS_NO_SAME_OR_SUBSTANTIALLY_SIMILAR_STORY",
+    "candidate_terms": [
+      "συνέντευξ",
+      "υποψήφι",
+      "interview",
+      "βάρδι",
+      "ωράρι"
+    ],
+    "metricool": {
+      "brand_id": 7076410,
+      "date_window": [
+        "2026-10-08",
+        "2026-10-10"
+      ],
+      "records_reviewed": 20,
+      "substantive_story_matches": 0
+    },
+    "notion": {
+      "archive": "Social Media Content Archive",
+      "query_complete": true,
+      "keyword_candidates_reviewed": 5,
+      "semantic_history_records_reviewed": 202,
+      "substantive_story_matches": 0
+    },
+    "repository": {
+      "repository": "steliosvil5eteth-byte/Stelios-Vilanos",
+      "ref": "main",
+      "files": [
+        {
+          "path": "state/content_history.json",
+          "blob_sha": "613f202b1f2ed7a753a1b91875aecc571e721750"
+        },
+        {
+          "path": "production_20261009/manifest.json",
+          "blob_sha": "0b43fd136416c8c74bf7144e86104b4567053ee0"
+        },
+        {
+          "path": "media_jobs/current_ten_20261008_delivery_journal.json",
+          "blob_sha": "e49ffba6660d1498e3a18c1e7910c12e96ec787e"
+        }
+      ],
+      "reserved_common_date": "2026-10-09",
+      "substantive_story_matches": 0
+    },
+    "same_batch_substantive_story_matches": 0,
+    "valid_for_new_execution": false,
+    "fresh_recheck_required_before_production_and_scheduling": true
+  },
+  "local_date": "2026-10-09",
+  "providers": [
+    "youtube"
+  ],
+  "voice": "el-GR-NestorasNeural",
+  "background_music": false,
+  "avatar": false,
+  "script_sha256": "23b142e180f4642c34967c4212ae4a547b2a89271cf3d74d734fbf530fc47a2f",
+  "release_status": "BLOCKED_FRESH_NOTION_RECHECK_AND_FINAL_MEDIA",
+  "publish_ready": false
+}

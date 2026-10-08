@@ -12,15 +12,22 @@
     ]
   },
   "owner": "interactive-youtube-transition-20261008-root",
-  "status": "ACTIVE_PRODUCTION",
+  "status": "RELEASED_BLOCKED",
   "started_at": "2026-10-08T04:45:00Z",
-  "expires_at": "2026-10-08T12:45:00Z",
-  "manual_transition_owner": true,
+  "expires_at": "2026-10-08T05:08:28Z",
+  "manual_transition_owner": false,
   "automatic_youtube_writes_blocked_until_strategy_and_exact_final_registry_ready": true,
   "common_program_leases_untouched": true,
   "transition_already_published": 5,
   "transition_max_new": 5,
   "normal_day_target": 10,
   "minimum_future_days": 2,
-  "publish_authorized_only_after_exact_final_review": true
+  "publish_authorized_only_after_exact_final_review": true,
+  "released_at": "2026-10-08T05:08:28Z",
+  "active_production": false,
+  "blocker": "BLOCKED_REQUIRED_NOTION_HISTORY_QUERY",
+  "prepared_scripts": 6,
+  "new_final_videos": 0,
+  "new_youtube_scheduled": 0,
+  "resume_requires_new_lease_and_fresh_history_checks": true
 }

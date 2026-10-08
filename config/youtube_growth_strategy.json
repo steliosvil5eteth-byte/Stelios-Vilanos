@@ -3,7 +3,7 @@
   "strategy_id": "YOUTUBE_GROWTH_TEN_DAILY_20261008",
   "program_label": "YOUTUBE_GROWTH_TEN_DAILY",
   "enabled": false,
-  "state": "TRANSITION_NOT_ACTIVE",
+  "state": "BLOCKED_REQUIRED_NOTION_HISTORY_QUERY",
   "effective_date": "2026-10-08",
   "timezone": "Europe/Athens",
   "active_metricool_brand": {
@@ -67,13 +67,14 @@
     "max_additional_new_videos": 5,
     "count_all_youtube_publications_on_this_local_date": true,
     "refresh_live_published_and_pending_counts_before_each_create": true,
-    "unpublished_legacy_youtube_destinations": "CANCEL_AFTER_LIVE_READ",
+    "unpublished_legacy_youtube_destinations": "CANCELLED_AND_LIVE_VERIFIED",
     "preserve_published_youtube": true,
     "preserve_facebook_instagram_tiktok": true,
-    "new_youtube_program_must_not_inherit_legacy_pending_posts": true
+    "new_youtube_program_must_not_inherit_legacy_pending_posts": true,
+    "cancelled_legacy_youtube_destinations": 9
   },
   "active_format_profile": "original_narrated_shorts",
-  "format_profile_status": "SELECTED_PREPARE_AND_REVIEW_BATCH_BEFORE_ENABLE",
+  "format_profile_status": "SELECTED_PRODUCTION_BLOCKED_REQUIRED_HISTORY_QUERY",
   "format_profiles": {
     "original_narrated_shorts": {
       "description": "Ten original narrated vertical videos per normal day.",
@@ -196,5 +197,21 @@
     "Original human stories with a complete narrative",
     "Factual curiosities and history supported by reliable sources",
     "Occasional folklore explicitly labelled as folklore"
-  ]
+  ],
+  "blocker": {
+    "recorded_at_utc": "2026-10-08T05:08:28Z",
+    "operation": "query_data_sources",
+    "code": "usage_limit_reached",
+    "classification": "entitlement",
+    "failed_query_executed": false,
+    "automatic_retry": false,
+    "alternate_access_path_allowed": false,
+    "reason": "Required fresh Notion history query is unavailable. Prepared sourcepacks cannot be produced or scheduled until authorized history access is restored and fresh checks pass.",
+    "resume_requirements": [
+      "Fresh production lease and live published/pending reconciliation.",
+      "Fresh Metricool, Notion and repository duplicate checks.",
+      "Approved free-capacity check before voice synthesis.",
+      "Exact final-file visual/audio review and release registry before enabling YouTube publishing."
+    ]
+  }
 }
