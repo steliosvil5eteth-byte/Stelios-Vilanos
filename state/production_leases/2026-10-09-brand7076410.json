@@ -1,0 +1,23 @@
+{
+  "date": "2026-10-09",
+  "brandId": 7076410,
+  "brandName": "Ιστορίες που μας αγγίζουν",
+  "owner": "daily-social-production-20261008T0600-athens",
+  "created_at": "2026-10-08T03:05:00Z",
+  "expires_at": "2026-10-08T07:30:00Z",
+  "status": "ACTIVE_PRODUCTION",
+  "categories": [
+    "relationships",
+    "survival",
+    "dog_bartender",
+    "zodiac",
+    "greece_two_day_trip",
+    "love_soul_relationship",
+    "strange_real_phenomenon",
+    "documented_experiments",
+    "myth_or_truth",
+    "international_legend"
+  ],
+  "note": "Exclusive lease after live reconciliation of Metricool 7076410, Notion archive, repository history, current manifests and leases. No Metricool records exist for 2026-10-09 at acquisition.",
+  "final_review": "NOT_RUN"
+}
