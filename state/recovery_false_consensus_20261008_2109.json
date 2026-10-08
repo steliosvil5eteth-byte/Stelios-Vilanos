@@ -6,12 +6,14 @@
   "brand_id": 7076410,
   "timezone": "Europe/Athens",
   "requested_at": "2026-10-08T21:09:51+03:00",
-  "status": "REPAIR_IN_PROGRESS_NOT_RELEASED",
+  "status": "MEDIA_READY_AWAITING_FINAL_AUDIO_REVIEW",
   "lease": {
     "owner": "interactive_20261008_2109",
-    "status": "ACTIVE",
+    "status": "COMPLETED_RELEASED",
     "scope": "One existing unpublished story visual repair and user-review deliverable only",
-    "release_after_completion": true
+    "release_after_completion": true,
+    "completed_at_utc": "2026-10-08T18:36:32Z",
+    "released_at_utc": "2026-10-08T18:36:32Z"
   },
   "target_platform": "youtube",
   "existing_inactive_metricool": {
@@ -33,9 +35,171 @@
   "qa": {
     "actual_audio_input_supported": false,
     "actual_audio_listened": false,
-    "passed_final_review": false
+    "passed_final_review": false,
+    "exact_final_visual_review_completed": true,
+    "visual_review_scope": [
+      "all_9_scenes",
+      "all_54_subtitle_cues",
+      "opening_hook",
+      "complete_final_cta",
+      "corrected_scene08_hands"
+    ],
+    "technical_review_passed": true,
+    "full_mp4_decode_passed": true,
+    "source_narration_reused_unchanged": true,
+    "voice": "el-GR-NestorasNeural",
+    "no_music": true,
+    "no_avatar": true,
+    "source_fact_check_passed": true,
+    "caption_review_passed": true,
+    "ai_disclosure_present": true,
+    "bibliography": [
+      {
+        "title": "The “false consensus effect”: An egocentric bias in social perception and attribution processes",
+        "authors": "Ross, Greene & House",
+        "year": 1977,
+        "url": "https://doi.org/10.1016/0022-1031(77)90049-X"
+      }
+    ]
   },
   "scheduling_enabled": false,
   "publication_enabled": false,
-  "requires": "Human actual listening of exact final MP4 plus remaining final visual, source, caption and duplicate checks. No prior four-file audio exception assumed."
+  "requires": "Human actual listening of the exact final MP4 for voice/pronunciation and subtitle synchronisation; fresh duplicate/queue readback before any release. No prior four-file audio exception is assumed.",
+  "final_media": {
+    "file_name": "Psefdis_Synainesi_2026-10-08.mp4",
+    "sha256": "94e50f723007c17d442620e8d6180c2f60a65dc4ebf15c67d6e16f7c50ef8295",
+    "bytes": 10121631,
+    "duration_seconds": 96.646,
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "video_codec": "h264",
+    "audio_codec": "aac",
+    "audio_sample_rate": 48000,
+    "audio_channels": 1,
+    "scenes": 9,
+    "subtitle_cues": 54,
+    "library_file_id": "libfile_0fd2493b02248191a6e6c7dca34e38ed",
+    "file_id": "file_00000000644481f6b1b642714f31bee0",
+    "media_url": null,
+    "already_uploaded_to_metricool": false
+  },
+  "duplicate_check": {
+    "status": "NO_CONFLICT_FOUND_IN_CHECKED_HISTORY",
+    "checked_before_repair": true,
+    "planner_prior_records": 241,
+    "published_analytics_rows": 902,
+    "notion_archive_unique_rows": 202,
+    "only_current_inactive_story_id": 390888157,
+    "final_current_queue_readback": {
+      "checked_at_utc": "2026-10-08T18:33:21Z",
+      "brand_id": 7076410,
+      "timezone": "Europe/Athens",
+      "from": "2026-10-08",
+      "through": "2026-10-10",
+      "published_per_platform": {
+        "facebook": 6,
+        "instagram": 6,
+        "tiktok": 6,
+        "youtube": 6
+      },
+      "active_scheduled_provider_entries": 0,
+      "inactive_draft_rows": 14,
+      "failed_provider_entries": 0,
+      "physical_rows": 24,
+      "evening_recoveries": [
+        {
+          "postId": 391353442,
+          "uuid": "3757779727790130426",
+          "platform": "instagram",
+          "url": "https://www.instagram.com/reel/DePY72XAW7c/",
+          "status": "PUBLISHED",
+          "title": "Διήμερο στην Τήνο με Πύργο και Βώλακα: μάρμαρο, παραδοσιακά χωριά και γρανίτης. Ελέγξτε επίσημα ωράρια, καιρό, σήμανση και δρομολόγια πριν από κάθε διαδρομή.",
+          "scheduled": {
+            "dateTime": "2026-10-08T19:42:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "postId": 391354040,
+          "uuid": "588557238060466501",
+          "platform": "tiktok",
+          "url": "https://www.tiktok.com/@steliosvilanos/video/7694338705678552352",
+          "status": "PUBLISHED",
+          "title": "Η Bell Witch είναι θρύλος του Τενεσί, συνδεδεμένος με την οικογένεια Bell, παράξενους ήχους και μια υποτιθέμενη φωνή στο αγρόκτημά τους. Οι αφηγήσεις ανήκουν στη λαογραφία και μεταδόθηκαν μέσα από μεταγενέστερες καταγραφές και επαναφηγήσεις. Η σημερινή επισκεψιμότητα της σπηλιάς και της σχετικής τοποθεσίας δείχνει τη δύναμη της τοπικής παράδοσης.",
+          "scheduled": {
+            "dateTime": "2026-10-08T19:43:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "postId": 391354358,
+          "uuid": "5902858299946320594",
+          "platform": "youtube",
+          "url": "https://www.youtube.com/shorts/LmYmxMJjdtw",
+          "status": "PUBLISHED",
+          "title": "Στη μελέτη των Simons και Levin, ένας συνομιλητής αντικαθίστατο ενώ μια πόρτα περνούσε ανάμεσα σε δύο ανθρώπους. Αρκετοί συμμετέχοντες δεν ανέφεραν την αλλαγή — ένα πραγματικό παράδειγμα change blindness.",
+          "scheduled": {
+            "dateTime": "2026-10-08T19:44:00",
+            "timezone": "Europe/Athens"
+          }
+        },
+        {
+          "postId": 391354660,
+          "uuid": "8474262344644053993",
+          "platform": "facebook",
+          "url": "https://facebook.com/reel/1762777144933208",
+          "status": "PUBLISHED",
+          "title": "Η πράσινη αναλαμπή κρατά συνήθως ελάχιστα δευτερόλεπτα: η ατμόσφαιρα διαθλά το ηλιακό φως και, υπό κατάλληλες συνθήκες, γίνεται ορατό ένα πράσινο άκρο. Το φαινόμενο εμφανίζεται τόσο στην ανατολή όσο και στη δύση. Μην κοιτάζετε απευθείας τον έντονο Ήλιο ή μέσα από μη προστατευμένα οπτικά όργανα.",
+          "scheduled": {
+            "dateTime": "2026-10-08T19:45:00",
+            "timezone": "Europe/Athens"
+          }
+        }
+      ]
+    },
+    "fresh_check_required_before_publication": true
+  },
+  "caption_title": "Γιατί πιστεύουμε ότι «όλοι» συμφωνούν μαζί μας;",
+  "fingerprint": "documented_experiments|ross-greene-house-1977-false-consensus-four-studies",
+  "notion_page_id": "3f2f2345-b318-8121-8211-fe12da480dab",
+  "reconciliation": {
+    "stale_notion_preflight_rows_corrected": 9,
+    "new_publications_this_attempt": 0,
+    "new_metricool_writes": 0
+  },
+  "intended_platform_only": "youtube",
+  "scope_limitations": [
+    "No actual audio listening occurred in this runtime.",
+    "The global forty-distinct-story daily program is still blocked; no automatic activation has been performed.",
+    "Azure account SKU and remaining free allowance have not been verified. No new TTS calls were made."
+  ],
+  "completed_at_utc": "2026-10-08T18:36:32Z",
+  "artifacts": [
+    {
+      "file_name": "Psefdis_Synainesi_2026-10-08.mp4",
+      "library_file_id": "libfile_0fd2493b02248191a6e6c7dca34e38ed",
+      "file_id": "file_00000000644481f6b1b642714f31bee0",
+      "version": 0,
+      "sha256": "94e50f723007c17d442620e8d6180c2f60a65dc4ebf15c67d6e16f7c50ef8295"
+    },
+    {
+      "file_name": "Lezanta_Psefdis_Synainesi.txt",
+      "library_file_id": "libfile_42924dd163c4819199a5cf9637f53d39",
+      "file_id": "file_00000000389c81f6b48cc9e5dcaf77be",
+      "version": 0,
+      "sha256": "3ca14da3e4345106a8de866e89a129fff4fd25a70fe6bd32812bea7853cad3b5"
+    },
+    {
+      "file_name": "Psefdis_Synainesi_Pigi_2026-10-08.zip",
+      "library_file_id": "libfile_361f5bc8345081919b1afbca54be08a2",
+      "file_id": "file_00000000c28881f6bff5909ff27f51dd",
+      "version": 0,
+      "sha256": "eb97d111887c105c082a8623f923d765b44bd76a17f362fba4193f36cd9335d6"
+    }
+  ],
+  "final_review_record": {
+    "inside_source_zip": "final_review.json",
+    "sha256": "397233cf51941ea885bc2c3fb87f847d2b1a3a82448d0199d6d05cb3676989b8"
+  }
 }
