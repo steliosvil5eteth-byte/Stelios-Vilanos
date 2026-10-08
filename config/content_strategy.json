@@ -1,86 +1,15 @@
 {
-  "version": 6,
+  "version": 7,
   "timezone": "Europe/Athens",
-  "strategy_id": "CURRENT_TEN_DAILY_20260927",
-  "program_label": "CURRENT_TEN_DAILY",
-  "effective_at": "2026-09-27T18:08:00+03:00",
-  "priority": "ACTIVE_COMMON_SOCIAL_STRATEGY",
-  "active_schedule": true,
+  "priority": "BLOCKED_PLATFORM_SPECIFIC_STRATEGY",
+  "active_schedule": false,
   "active_metricool_brand": {
     "id": 7076410,
     "label": "Ιστορίες που μας αγγίζουν",
     "exclusive": true
   },
-  "daily_target_logical_posts": 10,
-  "destination_target_per_day": 30,
-  "slots": [
-    {
-      "time": "07:00",
-      "category": "relationships",
-      "format": "carousel",
-      "cards": 7
-    },
-    {
-      "time": "09:00",
-      "category": "survival",
-      "format": "carousel",
-      "cards": 9
-    },
-    {
-      "time": "10:00",
-      "category": "dog_bartender",
-      "format": "carousel",
-      "cards": 4
-    },
-    {
-      "time": "11:00",
-      "category": "zodiac",
-      "zodiac_visual_required": true,
-      "two_sign_comparison_required": true,
-      "all_12_signs_once": true,
-      "format": "single_pair_comparison_carousel",
-      "comparison_units": 6,
-      "logical_posts": 1,
-      "note": "One daily carousel upload. It contains six two-sign comparison units and covers all 12 signs exactly once. Exact card count follows the approved daily source pack and platform limits; never split into six separate uploads."
-    },
-    {
-      "time": "13:00",
-      "category": "greece_two_day_trip",
-      "format": "narrated_video"
-    },
-    {
-      "time": "15:00",
-      "category": "love_soul_relationship",
-      "format": "carousel",
-      "cards": 5
-    },
-    {
-      "time": "17:00",
-      "category": "strange_real_phenomenon",
-      "format": "narrated_video"
-    },
-    {
-      "time": "18:30",
-      "category": "documented_experiments",
-      "format": "narrated_video"
-    },
-    {
-      "time": "20:00",
-      "category": "myth_or_truth",
-      "format": "carousel",
-      "cards": 4
-    },
-    {
-      "time": "22:00",
-      "category": "international_legend",
-      "format": "narrated_video"
-    }
-  ],
-  "platforms": {
-    "facebook": "Native carousel for card slots; Reel for narrated video slots.",
-    "instagram": "Native carousel for card slots; Reel for narrated video slots.",
-    "tiktok": "Native photo post for card slots using silent JPEG/WebP 1080x1080 cards and autoAddMusic=true; normal video for narrated slots with auto-music off."
-  },
+  "daily_target_logical_posts": 40,
+  "destination_target_per_day": 40,
   "narrated_video_rules": {
     "ratio": "9:16",
     "resolution": "1080x1920",
@@ -92,19 +21,17 @@
     "background_music": false,
     "avatar_presenter": false,
     "no_filler_or_silence_padding": true,
-    "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
-  },
-  "carousel_rules": {
-    "image_size": "1080x1080",
-    "narration": false,
-    "each_card_has_distinct_scene_relevant_visual": true,
-    "tiktok_auto_add_music": true,
-    "no_blank_text_only_generic_cartoon_or_repeated_visuals": true,
-    "youtube_adaptations_enabled": false
-  },
-  "special_visual_rules": {
-    "zodiac": "One daily zodiac carousel upload at 11:00. It must contain six two-sign comparison units covering all twelve signs exactly once. Every comparison must visibly identify both signs. Never split this standing series into six separate uploads; obsolete single-sign formats are hard failures.",
-    "dog_bartender": "Exactly four cards. Same recurring photorealistic brown dog in every card, clearly functioning as bartender in a believable real bar. Different scene/composition per card. No cartoon/animation."
+    "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+    "target_duration_seconds": {
+      "min": 80,
+      "max": 110
+    },
+    "target_duration_is_editorial_hypothesis": true,
+    "platform_duration_overrides": {
+      "youtube": {
+        "maximum_duration_seconds": 150
+      }
+    }
   },
   "qa": {
     "require_exact_final_artifact_visual_inspection": true,
@@ -136,15 +63,19 @@
       "episode_or_part_number",
       "media_identity"
     ],
-    "cross_program_history_required": true
+    "cross_program_history_required": true,
+    "cross_platform_story_identity_required": true,
+    "one_platform_per_story": true,
+    "fresh_required_sources_must_all_succeed": true,
+    "unavailable_required_history_action": "BLOCK"
   },
   "quality_first_catch_up": {
-    "enabled": true,
+    "enabled": false,
     "original_time_is_target_not_release_override": true,
-    "if_failed": "Keep Draft/Blocked, repair, re-run full QA, then publish later the same day at the first safe available time.",
+    "if_failed": "Keep Blocked; no automatic generation, repair, retry or publication while the canonical program or platform is disabled.",
     "never_backdate": true,
     "live_duplicate_check_before_retry": true,
-    "end_of_day_target": "Exactly ten correct logical posts, one per active series. Preserve already published history; never backdate."
+    "end_of_day_target": "Objective after verified activation: ten unique videos per platform, forty different videos total. Shortfall never overrides source, cost, history, final QA or future-time gates."
   },
   "legacy": {
     "previous_metricool_brands_operational": false,
@@ -154,245 +85,292 @@
   },
   "paused_categories": [],
   "selection_evidence": {
-    "source": "Metricool brand 7076410 TikTok post analytics",
-    "publication_window": "2026-09-20 through 2026-09-25",
-    "retrieved_on": "2026-09-27",
-    "criterion": "Top five by mean views per post; at least 24h old. Cross-platform sanity check, not pooled views.",
-    "stats": [
-      {
-        "c": "legend",
-        "n": 5,
-        "sum": 1863,
-        "mean": 372.6,
-        "median": 406,
-        "likes": 13,
-        "shares": 0
-      },
-      {
-        "c": "experiments",
-        "n": 1,
-        "sum": 232,
-        "mean": 232,
-        "median": 232,
-        "likes": 0,
-        "shares": 0
-      },
-      {
-        "c": "myth",
-        "n": 5,
-        "sum": 5993,
-        "mean": 1198.6,
-        "median": 943,
-        "likes": 53,
-        "shares": 7
-      },
-      {
-        "c": "travel",
-        "n": 3,
-        "sum": 2221,
-        "mean": 740.3333333333334,
-        "median": 685,
-        "likes": 35,
-        "shares": 2
-      },
-      {
-        "c": "phenomenon",
-        "n": 5,
-        "sum": 6750,
-        "mean": 1350,
-        "median": 290,
-        "likes": 115,
-        "shares": 2
-      },
-      {
-        "c": "love",
-        "n": 5,
-        "sum": 4388,
-        "mean": 877.6,
-        "median": 565,
-        "likes": 47,
-        "shares": 2
-      },
-      {
-        "c": "dog",
-        "n": 3,
-        "sum": 1260,
-        "mean": 420,
-        "median": 444,
-        "likes": 14,
-        "shares": 0
-      },
-      {
-        "c": "zodiac",
-        "n": 6,
-        "sum": 39343,
-        "mean": 6557.166666666667,
-        "median": 1680,
-        "likes": 342,
-        "shares": 20
-      },
-      {
-        "c": "survival",
-        "n": 3,
-        "sum": 4326,
-        "mean": 1442,
-        "median": 1444,
-        "likes": 31,
-        "shares": 3
-      },
-      {
-        "c": "relationships",
-        "n": 2,
-        "sum": 880,
-        "mean": 440,
-        "median": 440,
-        "likes": 7,
-        "shares": 0
-      }
-    ],
-    "limitations": [
-      "Small unequal sample sizes and post ages",
-      "No reliable follower attribution",
-      "Phenomenon mean dominated by Brinicle",
-      "No causal proof or guaranteed future ranking"
-    ],
-    "screenshot_validation_20260927": {
-      "window": "2026-07-28 through 2026-09-25 (60 days); 2026-09-19 through 2026-09-25 (7 days)",
-      "source": "User TikTok Studio screenshots IMG_4475–IMG_4492, reviewed visually",
-      "views_60d": 969000,
-      "viewers_60d": 335000,
-      "followers_total": 1013,
-      "net_followers_60d": 785,
-      "views_7d": 86669,
-      "top_examples": [
-        {
-          "category": "relationship_emotional",
-          "views": 88000
-        },
-        {
-          "category": "relationship_story",
-          "views": 87000
-        },
-        {
-          "category": "relationship_emotional",
-          "views": 47000
-        },
-        {
-          "category": "zodiac",
-          "views": 31000
-        },
-        {
-          "category": "zodiac",
-          "views": 25000
-        },
-        {
-          "category": "phenomenon_brinicle",
-          "views": 5607,
-          "window": "7 days"
-        }
-      ],
-      "interpretation": "Strongest established pillars: relationship stories and zodiac. Keep today's five approved categories; prioritize stronger hooks, narratives and production effort for these two. Survival is a provisional fifth category, not an equally proven winner. Screenshots rank individual posts and do not prove five distinct winning series.",
-      "restriction": "Replicate themes/mechanics, never the same script/story/media. Do not infer best daily hour from the partial activity screen."
-    }
+    "status": "HISTORICAL_PRIVATE_EVIDENCE_NOT_EMBEDDED",
+    "operational": false,
+    "limitations": "Historical private analytics and supplied screenshots are retained separately for audit. They do not establish current platform winners or authorize production. Public platform guidance supplies editorial hypotheses, not account performance claims."
   },
-  "date_overrides": {
-    "2026-09-27": {
-      "timezone": "Europe/Athens",
-      "not_before": "14:00",
-      "slots": [
-        {
-          "time": "14:00",
-          "category": "zodiac"
-        },
-        {
-          "time": "16:00",
-          "category": "survival"
-        },
-        {
-          "time": "18:00",
-          "category": "love_soul_relationship"
-        },
-        {
-          "time": "20:00",
-          "category": "strange_real_phenomenon"
-        },
-        {
-          "time": "22:00",
-          "category": "myth_or_truth"
-        }
-      ]
-    }
-  },
-  "editorial_priorities": [
-    "relationships",
-    "survival",
-    "dog_bartender",
-    "zodiac",
-    "greece_two_day_trip",
-    "love_soul_relationship",
-    "strange_real_phenomenon",
-    "documented_experiments",
-    "myth_or_truth",
-    "international_legend"
-  ],
   "continuation_policy": {
     "authorized_until": "2050-12-31",
     "timezone": "Europe/Athens",
     "rolling_reviewed_queue_days": 3,
-    "target_logical_posts_per_day": 10,
+    "target_logical_posts_per_day": 40,
     "method": "Progressive production and verified scheduling, not bulk placeholders",
     "requires_final_media_review": true,
     "service_availability_not_guaranteed": true,
     "minimum_reviewed_queue_days": 2,
     "target_reviewed_queue_days": 3,
     "planning_horizon_days": 7,
-    "replenish_one_complete_day_daily": true,
-    "scope": "CURRENT_TEN_DAILY common FB/IG/TikTok program; independent YouTube targets do not consume this program's ten slots."
+    "replenish_one_complete_day_daily": false,
+    "scope": "PLATFORM_SPECIFIC_TEN_DAILY; one distinct story per platform destination. Superseded programs never refill.",
+    "enabled": false,
+    "target_logical_posts_per_platform_per_day": 10,
+    "require_canonical_policy_reload_before_every_action": true,
+    "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+    "reviewed_queue_completion_rule": "Future inventory counts as ready only with exact-final QA and fresh live verification of an active, non-draft, future schedule with autoPublish=true and provider status PENDING. Scheduled-PENDING is never Published or daily publication completion."
   },
-  "transition": {
-    "activated_on": "2026-09-27",
-    "full_ten_daily_effective_date": "2026-09-28",
-    "rule": "Preserve every verified 27/09 published/scheduled item. Do not backdate newly reactivated series. From 28/09 onward CURRENT_TEN_DAILY is the sole active schedule."
-  },
-  "daily_target_standing_series": 10,
-  "zodiac_bundle_policy": {
-    "standing_series_count": 1,
-    "logical_posts_per_day": 1,
-    "carousel_uploads_per_day": 1,
-    "comparison_units_per_carousel": 6,
-    "comparison": "two zodiac signs per comparison unit",
-    "coverage": "all 12 signs exactly once in the single daily carousel",
-    "theme": "relationships",
-    "exact_card_count": "Follow the approved daily source pack and platform limits; no separate zodiac member uploads.",
-    "note": "The 11:00 zodiac standing series counts as exactly one of the ten daily posts."
-  },
-  "providers": [
-    "facebook",
-    "instagram",
-    "tiktok"
-  ],
-  "excluded_providers": [
-    "youtube"
-  ],
+  "providers": [],
+  "excluded_providers": [],
   "provider_routing_override": {
     "effective_date": "2026-10-08",
-    "common_program": "CURRENT_TEN_DAILY",
-    "common_providers": [
-      "facebook",
-      "instagram",
-      "tiktok"
-    ],
-    "youtube_program": "YOUTUBE_GROWTH_TEN_DAILY",
-    "youtube_strategy_file": "config/youtube_growth_strategy.json",
-    "youtube_from_common_flow": false,
-    "normal_day_targets_after_youtube_activation": {
-      "common_logical_posts": 10,
-      "common_destinations": 30,
-      "youtube_original_videos": 10,
-      "youtube_destinations": 10,
-      "combined_distinct_logical_items": 20,
-      "combined_provider_destinations": 40
+    "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+    "authoritative_strategy_file": "config/platform_growth_strategy.json",
+    "enabled": false,
+    "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+    "allowed_providers": [],
+    "empty_provider_list_means": "DENY_ALL",
+    "connected_network_inventory_is_not_routing_allowlist": true,
+    "broadcast_fallback_allowed": false,
+    "exactly_one_explicit_platform_per_story": true,
+    "crossposting_allowed": false,
+    "same_story_script_or_media_on_multiple_platforms": "BLOCK",
+    "required_program_attribution": "PLATFORM_SPECIFIC_TEN_DAILY",
+    "require_canonical_enabled": true,
+    "require_canonical_production_enabled": true,
+    "require_selected_platform_enabled": true,
+    "require_fresh_required_history_and_verified_zero_credit_capacity": true,
+    "objective_distinct_videos_per_day": 40,
+    "objective_destinations_per_day": 40,
+    "objective_videos_per_platform_per_day": {
+      "facebook": 10,
+      "instagram": 10,
+      "tiktok": 10,
+      "youtube": 10
     },
-    "published_history_mutations": false
+    "published_history_mutations": false,
+    "retired_programs": {
+      "CURRENT_TEN_DAILY": {
+        "enabled": false,
+        "status": "SUPERSEDED",
+        "reactivate_when_new_program_enabled": false,
+        "historical_data_use": "Audit and deduplication only; never a scheduling source."
+      },
+      "YOUTUBE_GROWTH_TEN_DAILY": {
+        "enabled": false,
+        "status": "SUPERSEDED",
+        "reactivate_when_new_program_enabled": false,
+        "historical_data_use": "Audit and deduplication only; never a scheduling source."
+      }
+    }
+  },
+  "archived_legacy_configuration": {
+    "program_label": "CURRENT_TEN_DAILY",
+    "status": "SUPERSEDED",
+    "operational": false,
+    "historical_data_use": "Audit and deduplication only; these values do not authorize production or routing.",
+    "strategy_id": "CURRENT_TEN_DAILY_20260927",
+    "effective_at": "2026-09-27T18:08:00+03:00",
+    "slots": [
+      {
+        "time": "07:00",
+        "category": "relationships",
+        "format": "carousel",
+        "cards": 7
+      },
+      {
+        "time": "09:00",
+        "category": "survival",
+        "format": "carousel",
+        "cards": 9
+      },
+      {
+        "time": "10:00",
+        "category": "dog_bartender",
+        "format": "carousel",
+        "cards": 4
+      },
+      {
+        "time": "11:00",
+        "category": "zodiac",
+        "zodiac_visual_required": true,
+        "two_sign_comparison_required": true,
+        "all_12_signs_once": true,
+        "format": "single_pair_comparison_carousel",
+        "comparison_units": 6,
+        "logical_posts": 1,
+        "note": "One daily carousel upload. It contains six two-sign comparison units and covers all 12 signs exactly once. Exact card count follows the approved daily source pack and platform limits; never split into six separate uploads."
+      },
+      {
+        "time": "13:00",
+        "category": "greece_two_day_trip",
+        "format": "narrated_video"
+      },
+      {
+        "time": "15:00",
+        "category": "love_soul_relationship",
+        "format": "carousel",
+        "cards": 5
+      },
+      {
+        "time": "17:00",
+        "category": "strange_real_phenomenon",
+        "format": "narrated_video"
+      },
+      {
+        "time": "18:30",
+        "category": "documented_experiments",
+        "format": "narrated_video"
+      },
+      {
+        "time": "20:00",
+        "category": "myth_or_truth",
+        "format": "carousel",
+        "cards": 4
+      },
+      {
+        "time": "22:00",
+        "category": "international_legend",
+        "format": "narrated_video"
+      }
+    ],
+    "platforms": {
+      "facebook": "Native carousel for card slots; Reel for narrated video slots.",
+      "instagram": "Native carousel for card slots; Reel for narrated video slots.",
+      "tiktok": "Native photo post for card slots using silent JPEG/WebP 1080x1080 cards and autoAddMusic=true; normal video for narrated slots with auto-music off."
+    },
+    "carousel_rules": {
+      "image_size": "1080x1080",
+      "narration": false,
+      "each_card_has_distinct_scene_relevant_visual": true,
+      "tiktok_auto_add_music": true,
+      "no_blank_text_only_generic_cartoon_or_repeated_visuals": true,
+      "youtube_adaptations_enabled": false
+    },
+    "special_visual_rules": {
+      "zodiac": "One daily zodiac carousel upload at 11:00. It must contain six two-sign comparison units covering all twelve signs exactly once. Every comparison must visibly identify both signs. Never split this standing series into six separate uploads; obsolete single-sign formats are hard failures.",
+      "dog_bartender": "Exactly four cards. Same recurring photorealistic brown dog in every card, clearly functioning as bartender in a believable real bar. Different scene/composition per card. No cartoon/animation."
+    },
+    "date_overrides": {
+      "2026-09-27": {
+        "timezone": "Europe/Athens",
+        "not_before": "14:00",
+        "slots": [
+          {
+            "time": "14:00",
+            "category": "zodiac"
+          },
+          {
+            "time": "16:00",
+            "category": "survival"
+          },
+          {
+            "time": "18:00",
+            "category": "love_soul_relationship"
+          },
+          {
+            "time": "20:00",
+            "category": "strange_real_phenomenon"
+          },
+          {
+            "time": "22:00",
+            "category": "myth_or_truth"
+          }
+        ]
+      }
+    },
+    "editorial_priorities": [
+      "relationships",
+      "survival",
+      "dog_bartender",
+      "zodiac",
+      "greece_two_day_trip",
+      "love_soul_relationship",
+      "strange_real_phenomenon",
+      "documented_experiments",
+      "myth_or_truth",
+      "international_legend"
+    ],
+    "transition": {
+      "activated_on": "2026-09-27",
+      "full_ten_daily_effective_date": "2026-09-28",
+      "rule": "Preserve every verified 27/09 published/scheduled item. Do not backdate newly reactivated series. From 28/09 onward CURRENT_TEN_DAILY is the sole active schedule."
+    },
+    "daily_target_standing_series": 10,
+    "zodiac_bundle_policy": {
+      "standing_series_count": 1,
+      "logical_posts_per_day": 1,
+      "carousel_uploads_per_day": 1,
+      "comparison_units_per_carousel": 6,
+      "comparison": "two zodiac signs per comparison unit",
+      "coverage": "all 12 signs exactly once in the single daily carousel",
+      "theme": "relationships",
+      "exact_card_count": "Follow the approved daily source pack and platform limits; no separate zodiac member uploads.",
+      "note": "The 11:00 zodiac standing series counts as exactly one of the ten daily posts."
+    }
+  },
+  "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+  "strategy_id": "PLATFORM_SPECIFIC_TEN_DAILY_20261008",
+  "authoritative_strategy_file": "config/platform_growth_strategy.json",
+  "enabled": false,
+  "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+  "status": "paused",
+  "generation_paused": true,
+  "publishing_paused": true,
+  "production": {
+    "enabled": false,
+    "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY"
+  },
+  "retired_programs": {
+    "CURRENT_TEN_DAILY": {
+      "enabled": false,
+      "status": "SUPERSEDED",
+      "reactivate_when_new_program_enabled": false,
+      "historical_data_use": "Audit and deduplication only; never a scheduling source."
+    },
+    "YOUTUBE_GROWTH_TEN_DAILY": {
+      "enabled": false,
+      "status": "SUPERSEDED",
+      "reactivate_when_new_program_enabled": false,
+      "historical_data_use": "Audit and deduplication only; never a scheduling source."
+    }
+  },
+  "providers_semantics": "Publishing allowlist: empty means DENY_ALL; never fall back to connected-network inventory or broadcast.",
+  "effective_at": "2026-10-08",
+  "daily_target_logical_posts_per_platform": {
+    "facebook": 10,
+    "instagram": 10,
+    "tiktok": 10,
+    "youtube": 10
+  },
+  "target_semantics": "Objectives only: forty distinct stories/videos, each routed to one platform, not forty copies or deliveries of shared content.",
+  "slots": [],
+  "platforms": {
+    "facebook": {
+      "enabled": false,
+      "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+      "daily_target_original_videos": 10,
+      "format": "original_narrated_video",
+      "authoritative_strategy_file": "config/platform_growth_strategy.json"
+    },
+    "instagram": {
+      "enabled": false,
+      "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+      "daily_target_original_videos": 10,
+      "format": "original_narrated_video",
+      "authoritative_strategy_file": "config/platform_growth_strategy.json"
+    },
+    "tiktok": {
+      "enabled": false,
+      "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+      "daily_target_original_videos": 10,
+      "format": "original_narrated_video",
+      "authoritative_strategy_file": "config/platform_growth_strategy.json"
+    },
+    "youtube": {
+      "enabled": false,
+      "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+      "daily_target_original_videos": 10,
+      "format": "original_narrated_video",
+      "authoritative_strategy_file": "config/platform_growth_strategy.json"
+    }
+  },
+  "excluded_providers_semantics": "Inventory exclusion only; this does not enable any provider. All publishing allowlists are currently empty and deny all.",
+  "transition": {
+    "date": "2026-10-08",
+    "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+    "superseded_programs": [
+      "CURRENT_TEN_DAILY",
+      "YOUTUBE_GROWTH_TEN_DAILY"
+    ],
+    "rule": "Brand 7076410 only. The current objective is forty different original narrated videos per local day: ten each for Facebook, Instagram, TikTok and YouTube, with exactly one platform per story and no crossposting or common media/script reuse. Generation, repair, retry, scheduling and publication remain blocked until the canonical policy explicitly enables production and the relevant platform, fresh required history checks pass, and sufficient zero-credit capacity is verified. Exact-final visual/audio QA and live readback remain mandatory. Preserve published history; never backdate or refill superseded/cancelled legacy slots."
   }
 }

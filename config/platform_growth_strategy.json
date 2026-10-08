@@ -1,0 +1,423 @@
+{
+  "schema_version": 1,
+  "strategy_id": "PLATFORM_SPECIFIC_TEN_DAILY_20261008",
+  "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+  "effective_at": "2026-10-08T08:28:13+03:00",
+  "user_reconfirmed_at": "2026-10-08T08:53:21+03:00",
+  "prepared_at_utc": "2026-10-08 06:01:37 UTC",
+  "authoritative": true,
+  "enabled": false,
+  "active_schedule": false,
+  "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+  "active_metricool_brand": {
+    "id": 7076410,
+    "name": "Ιστορίες που μας αγγίζουν"
+  },
+  "timezone": "Europe/Athens",
+  "content_language": "el-GR",
+  "production": {
+    "enabled": false,
+    "new_scripts_enabled": false,
+    "new_media_enabled": false,
+    "scheduling_enabled": false,
+    "publication_enabled": false,
+    "read_only_research_enabled": true,
+    "activation_is_not_automatic": true
+  },
+  "targets": {
+    "daily_distinct_stories": 40,
+    "daily_distinct_videos": 40,
+    "daily_provider_destinations": 40,
+    "per_platform_daily_video_target": 10,
+    "one_platform_per_story": true,
+    "one_provider_per_record": true,
+    "crossposting_allowed": false,
+    "renamed_or_reformatted_reuse_counts_as_new": false,
+    "cadence_basis": "Explicit user target, not a proven algorithmic optimum",
+    "shortage_policy": "Report shortfall; do not fill with reused, unverified or unreviewed material"
+  },
+  "legacy_common_program": {
+    "enabled": false,
+    "status": "SUPERSEDED",
+    "program_label": "CURRENT_TEN_DAILY",
+    "never_reactivate_when_new_program_enabled": true
+  },
+  "legacy_youtube_only_program": {
+    "enabled": false,
+    "status": "SUPERSEDED",
+    "program_label": "YOUTUBE_GROWTH_TEN_DAILY",
+    "prepared_source_packs_are_not_current_release_approval": true
+  },
+  "routing": {
+    "connected_network_inventory": [
+      "facebook",
+      "instagram",
+      "tiktok",
+      "youtube"
+    ],
+    "inventory_is_not_broadcast_allowlist": true,
+    "active_publish_providers": [],
+    "record_requires_exactly_one_explicit_target": true,
+    "require_program_attribution": true,
+    "require_unique_story_id_and_media_sha256": true,
+    "same_story_on_second_platform_allowed": false,
+    "provider_only_title_or_thumbnail_changes_are_not_distinct_story": true
+  },
+  "required_checks": {
+    "fresh_history": {
+      "status": "BLOCKED_NOTION_QUERY_USAGE_LIMIT_REACHED",
+      "sources": [
+        "Metricool live published and pending history",
+        "Notion authorized fresh archive query",
+        "Repository content history and manifest",
+        "Exclusive production lease and delivery ledger"
+      ],
+      "required_before": [
+        "new story drafting or media generation",
+        "schedule or publish creation",
+        "publication retry or reschedule"
+      ],
+      "cached_archive_is_not_fresh_clearance": true,
+      "automatic_retry_of_entitlement_rejection": false,
+      "alternate_route_to_bypass_entitlement_allowed": false,
+      "known_page_maintenance_is_not_duplicate_clearance": true
+    },
+    "zero_credit_capacity": {
+      "status": "BLOCKED_ACTUAL_TIER_AND_FREE_CAPACITY_UNVERIFIED",
+      "generation_or_research_credit_budget": 0,
+      "purchases_allowed": false,
+      "topups_allowed": false,
+      "upgrades_allowed": false,
+      "paid_tests_allowed": false,
+      "unknown_cost_blocks_call": true,
+      "unknown_free_quota_blocks_call": true,
+      "existing_credit_balance_is_not_spending_authorization": true,
+      "required_voice": "el-GR-NestorasNeural",
+      "actual_azure_sku": "UNKNOWN",
+      "actual_remaining_tts_allowance": "UNKNOWN",
+      "actual_remaining_asr_allowance": "UNKNOWN",
+      "published_f0_tts_characters_per_month": 500000,
+      "published_f0_realtime_asr_hours_per_month": 5,
+      "illustrative_characters_per_video": 1433.8333333333333,
+      "illustrative_30_day_tts_characters": 1720600,
+      "illustrative_30_day_asr_hours": [
+        26.6666666667,
+        36.6666666667
+      ],
+      "estimate_basis": "Six previously prepared scripts, 8603 Unicode characters total; 40 videos/day, 30 days, 80–110 s/video, one pass only",
+      "estimate_is_not_account_billing_data": true,
+      "azure_f0_name_in_code_is_not_account_evidence": true,
+      "no_multiple_accounts_keys_or_unofficial_quota_workaround": true,
+      "local_asr_can_only_replace_cloud_asr_after_validation": true,
+      "local_asr_does_not_solve_exact_nestoras_tts_capacity": true,
+      "source": "https://azure.microsoft.com/en-us/pricing/details/speech/"
+    },
+    "original_content": {
+      "status": "REQUIRED_PER_STORY",
+      "full_new_story_not_template_swap": true,
+      "verified_factual_sources": true,
+      "fiction_and_folklore_clearly_labeled": true,
+      "asset_rights_and_attribution_checked": true
+    },
+    "final_media_review": {
+      "status": "NOT_PERFORMED_FOR_NEW_PROGRAM",
+      "required_release_status": "PASSED_FINAL_REVIEW",
+      "bind_review_to_exact_sha256": true,
+      "require_actual_audio_listen_and_visual_inspection": true,
+      "render_metadata_or_asr_alone_is_not_final_review": true
+    },
+    "native_platform_disclosure": {
+      "status": "REQUIRED_PER_PLATFORM_BEFORE_RELEASE",
+      "verify_supported_native_ai_setting": true,
+      "caption_is_not_assumed_substitute": true,
+      "posting_and_monetization_eligibility_are_separate": true
+    },
+    "new_program_execution_path": {
+      "status": "NOT_VALIDATED_FOR_PRODUCTION",
+      "legacy_runners_do_not_implement_this_program": true,
+      "new_config_alone_does_not_create_media_or_publish": true
+    }
+  },
+  "creative_rules": {
+    "narration_voice": "Νέστορας",
+    "voice_id": "el-GR-NestorasNeural",
+    "voice_substitution_allowed": false,
+    "minimum_duration_seconds": 80,
+    "target_duration_seconds": [
+      80,
+      110
+    ],
+    "padding_silence_or_repeated_scenes_to_reach_duration_allowed": false,
+    "hook": "First spoken sentence establishes the concrete question, conflict or decision",
+    "ending": "Complete resolution in the same video; do not make promised resolution depend on another post",
+    "visuals": "Photographic or photorealistic, licensed, relevant, distinct scenes; consistent people and places where required",
+    "children_faces_allowed": false,
+    "avatar_allowed": false,
+    "second_or_background_music_in_narration_allowed": false,
+    "subtitles": {
+      "language": "Greek",
+      "burned_in": true,
+      "synchronized_with_actual_final_audio": true,
+      "readable_on_mobile": true
+    },
+    "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+    "maximum_hashtags": 5,
+    "stock_pan_zoom_is_not_monetization_certification": true,
+    "same_intro_cta_style_allowed_but_body_story_must_differ": true,
+    "caption_has_accurate_story_type_and_sources": true
+  },
+  "research_and_measurement": {
+    "baseline_window": {
+      "from": "2026-09-08",
+      "to": "2026-10-07",
+      "timezone": "Europe/Athens"
+    },
+    "private_baseline_location": "Private analysis report; raw account analytics must not be committed to this public repository",
+    "selection_basis": "Observed own-account metrics and verified primary platform sources",
+    "claim_status": "Editorial hypotheses to test, not proven winning formulas",
+    "initial_mix_is_adjustable_after_evidence": true,
+    "observation_windows_hours": [
+      24,
+      72,
+      168
+    ],
+    "compare_within_same_platform_format_age_and_duration_band": true,
+    "views_reach_impressions_are_not_interchangeable": true,
+    "tiktok_photo_and_video_are_separate_groups": true,
+    "instagram_shares_are_not_assumed_dm_sends": true,
+    "missing_metrics_are_not_zero": true,
+    "unknown_metric_units_are_not_guessed": true,
+    "no_completion_rate_without_compatible_duration_and_denominator": true,
+    "no_per_post_follower_attribution_without_data": true,
+    "outlier_not_used_as_typical_performance": true,
+    "video_opening_pacing_not_claimed_observed_without_watching": true,
+    "primary_metrics": [
+      "valid average watch duration",
+      "early retention or viewed versus swiped away when available",
+      "completion when valid",
+      "shares or sends when exposed",
+      "saves",
+      "follows when attributable"
+    ],
+    "secondary_metrics": [
+      "views",
+      "reach",
+      "profile visits when available"
+    ],
+    "research_leads_are_not_approved_content": true,
+    "sources": [
+      "https://support.google.com/youtube/answer/11914225?co=YOUTUBE._YTVideoType%3Dshorts&hl=en",
+      "https://support.google.com/youtube/answer/1311392?hl=en",
+      "https://support.tiktok.com/en/using-tiktok/exploring-videos/how-tiktok-recommends-content",
+      "https://about.fb.com/news/2026/03/rewarding-original-creators-on-facebook/",
+      "https://www.instagram.com/reel/DFFyRp-pINJ/",
+      "https://about.fb.com/news/2024/02/labeling-ai-generated-images-on-facebook-instagram-and-threads/"
+    ],
+    "single_viral_outlier_does_not_guarantee_repeatability": true
+  },
+  "scheduling": {
+    "enabled": false,
+    "slot_status": "INITIAL_TEST_TIMES_NOT_VALIDATED_OPTIMAL",
+    "proposed_local_slots": [
+      "07:00",
+      "09:00",
+      "10:00",
+      "11:00",
+      "13:00",
+      "15:00",
+      "17:00",
+      "18:30",
+      "20:00",
+      "22:00"
+    ],
+    "native_format_per_platform": true,
+    "backdating_allowed": false,
+    "daily_limit_includes_existing_published_and_active_pending": true,
+    "require_live_brand_timezone_provider_media_draft_autopublish_id_uuid_status_readback_after_each_write": true,
+    "pending_is_not_published": true,
+    "future_buffer": {
+      "minimum_complete_days_per_platform": 2,
+      "target_complete_days_per_platform": 3,
+      "ready_now": false
+    },
+    "queue_mutations_while_any_required_gate_blocked": false
+  },
+  "transition": {
+    "date": "2026-10-08",
+    "baseline_published_per_platform": {
+      "facebook": 5,
+      "instagram": 5,
+      "tiktok": 5,
+      "youtube": 5
+    },
+    "baseline_active_pending_after_withdrawal": {
+      "facebook": 0,
+      "instagram": 0,
+      "tiktok": 0,
+      "youtube": 0
+    },
+    "baseline_remaining_possible_new_per_platform": 5,
+    "counts_are_snapshot_not_current_authorization": true,
+    "refresh_counts_before_each_write": true,
+    "common_pending_records_made_inactive": 9,
+    "common_provider_destinations_made_inactive": 27,
+    "already_published_posts_preserved": true,
+    "legacy_notion_unpublished_records_withdrawn": 19,
+    "previous_youtube_withdrawal_remains_effective": true,
+    "new_program_videos_created": 0,
+    "new_program_videos_scheduled": 0,
+    "retired_posts_must_not_be_treated_as_missing_items_to_rebuild": true
+  },
+  "special_series": {
+    "title": "Το μήνυμα που ερχόταν πάντα στις00:00",
+    "status": "PREPARE_ONLY",
+    "publishing_allowed": false,
+    "global_history_and_credit_gates_still_apply": true
+  },
+  "platforms": {
+    "facebook": {
+      "enabled": false,
+      "status": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+      "provider": "facebook",
+      "daily_video_target": 10,
+      "format": "REEL",
+      "orientation": "9:16",
+      "minimum_duration_seconds": 80,
+      "target_duration_seconds": [
+        80,
+        110
+      ],
+      "maximum_duration_seconds": null,
+      "editorial_focus": "Recognizable human relationships, choices and consequences",
+      "initial_daily_mix": [
+        {
+          "category": "human_relationship_fiction",
+          "count": 4
+        },
+        {
+          "category": "documented_human_history",
+          "count": 3
+        },
+        {
+          "category": "zodiac_entertainment",
+          "count": 2
+        },
+        {
+          "category": "folklore_labeled",
+          "count": 1
+        }
+      ],
+      "mix_status": "UNTESTED_EDITORIAL_HYPOTHESIS",
+      "evidence_note": "Relationships are a candidate direction; one large Reel outlier must not determine the entire mix",
+      "required_content_identity": "Different complete story, narration and relevant scene sequence from every other platform"
+    },
+    "instagram": {
+      "enabled": false,
+      "status": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+      "provider": "instagram",
+      "daily_video_target": 10,
+      "format": "REEL",
+      "orientation": "9:16",
+      "minimum_duration_seconds": 80,
+      "target_duration_seconds": [
+        80,
+        110
+      ],
+      "maximum_duration_seconds": null,
+      "editorial_focus": "Visually concrete place, nature and object stories",
+      "initial_daily_mix": [
+        {
+          "category": "place_history",
+          "count": 4
+        },
+        {
+          "category": "nature_phenomenon",
+          "count": 3
+        },
+        {
+          "category": "art_or_object_history",
+          "count": 2
+        },
+        {
+          "category": "human_story_in_place",
+          "count": 1
+        }
+      ],
+      "mix_status": "UNTESTED_EDITORIAL_HYPOTHESIS",
+      "evidence_note": "Place and nature examples are tentative signals in a small, low-engagement sample",
+      "required_content_identity": "Different complete story, narration and relevant scene sequence from every other platform"
+    },
+    "tiktok": {
+      "enabled": false,
+      "status": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+      "provider": "tiktok",
+      "daily_video_target": 10,
+      "format": "VIDEO",
+      "orientation": "9:16",
+      "minimum_duration_seconds": 80,
+      "target_duration_seconds": [
+        80,
+        110
+      ],
+      "maximum_duration_seconds": null,
+      "editorial_focus": "Human curiosity with a complete reveal, plus documented visual questions",
+      "initial_daily_mix": [
+        {
+          "category": "human_mystery_fiction",
+          "count": 4
+        },
+        {
+          "category": "documented_curiosity_or_mystery",
+          "count": 3
+        },
+        {
+          "category": "folklore_labeled",
+          "count": 2
+        },
+        {
+          "category": "science_question",
+          "count": 1
+        }
+      ],
+      "mix_status": "UNTESTED_EDITORIAL_HYPOTHESIS",
+      "evidence_note": "Historical PHOTO winners do not establish narrated VIDEO performance; evaluate new videos separately",
+      "required_content_identity": "Different complete story, narration and relevant scene sequence from every other platform"
+    },
+    "youtube": {
+      "enabled": false,
+      "status": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+      "provider": "youtube",
+      "daily_video_target": 10,
+      "format": "YOUTUBE_SHORT",
+      "orientation": "9:16",
+      "minimum_duration_seconds": 80,
+      "target_duration_seconds": [
+        80,
+        110
+      ],
+      "maximum_duration_seconds": 150,
+      "editorial_focus": "One specific scientific or historical question, or one human decision",
+      "initial_daily_mix": [
+        {
+          "category": "science_or_history_question",
+          "count": 4
+        },
+        {
+          "category": "human_choice_story",
+          "count": 3
+        },
+        {
+          "category": "greek_microhistory",
+          "count": 2
+        },
+        {
+          "category": "myth_labeled",
+          "count": 1
+        }
+      ],
+      "mix_status": "UNTESTED_EDITORIAL_HYPOTHESIS",
+      "evidence_note": "Prioritize clear first scene and narrative progression; low average watch duration is the primary issue",
+      "required_content_identity": "Different complete story, narration and relevant scene sequence from every other platform"
+    }
+  }
+}

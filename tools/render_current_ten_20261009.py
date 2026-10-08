@@ -10,12 +10,16 @@ import subprocess
 import wave
 from pathlib import Path
 
+from guard_legacy_common_program import require_legacy_common_program
+
+ROOT = Path(__file__).resolve().parents[1]
+require_legacy_common_program(ROOT)  # Before PIL/Azure imports or any media work.
+
 from PIL import Image, ImageDraw, ImageFilter, ImageFont, ImageOps
 
 import render_azure_feature_batch as azure
 
 
-ROOT = Path(__file__).resolve().parents[1]
 VOICE = "el-GR-NestorasNeural"
 CTA = "Αν σας άρεσε, ακολουθήστε για περισσότερα."
 GRID = {

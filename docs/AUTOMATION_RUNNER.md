@@ -1,3 +1,17 @@
+# Ενεργή οδηγία: διαφορετικά βίντεο ανά πλατφόρμα
+
+Η νεότερη οδηγία της 08/10/2026 ορίζει **10 διαφορετικά βίντεο ανά πλατφόρμα/ημέρα, 40 διαφορετικές ιστορίες συνολικά**, στη μάρκα 7076410. Κάθε ιστορία έχει έναν μόνο προορισμό. Το μοναδικό authoritative αρχείο είναι `config/platform_growth_strategy.json`.
+
+**Κατάσταση: BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY.** Η παραγωγή και ο προγραμματισμός είναι απενεργοποιημένα. Δεν έχουν δημιουργηθεί ή προγραμματιστεί νέα βίντεο για αυτό το πρόγραμμα. Απαιτούνται επιτυχής εξουσιοδοτημένος fresh έλεγχος ιστορικού, επαλήθευση πραγματικής δωρεάν δυναμικότητας με μηδενικά credits, ελεγμένη νέα διαδρομή εκτέλεσης, και τελικός έλεγχος των ίδιων media.
+
+Τα `CURRENT_TEN_DAILY` και `YOUTUBE_GROWTH_TEN_DAILY` είναι **SUPERSEDED**. Τα ιστορικά κείμενα παρακάτω δεν επιτρέπουν επαναφορά κοινών αναρτήσεων, παλιών sourcepacks ή παλιών παραγωγών. Η ενεργοποίηση του νέου config δεν ενεργοποιεί κάποιο παλιό workflow. Τα legacy Azure jobs έχουν τεθεί σε hold στο τρέχον head· παλιά commits/reruns δεν πρέπει να χρησιμοποιούνται.
+
+Ο dry-run CI και το παλιό `tools/check_rolling_queue.py` δεν πιστοποιούν ετοιμότητα της νέας παραγωγής. Το νέο config περιγράφει πολιτική και στόχο, όχι ολοκληρωμένη υπηρεσία παραγωγής. Δες `docs/PLATFORM_SPECIFIC_TEN_DAILY.md` για τα gates και τη διαδικασία ελέγχου.
+
+---
+
+## Ιστορικό οδηγιών — ισχύει μόνο όπου δεν συγκρούεται με τα παραπάνω
+
 # Automation Runner
 
 Provider routing changed on 2026-10-08. The common program is governed by `config/content_strategy.json`; the independent YouTube program is governed by `config/youtube_growth_strategy.json`. Re-read the relevant strategy immediately before every write. A connected-network inventory is never a publishing allowlist.
@@ -92,3 +106,4 @@ Independent YouTube duration and aspect ratio follow its selected format profile
 ## Historical data
 
 Old queue records, scripts, manifests and strategy files remain for audit/deduplication only. They must never be used to decide that an active program's day is complete or to restore a cancelled legacy YouTube destination.
+

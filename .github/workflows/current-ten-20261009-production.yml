@@ -15,7 +15,9 @@ concurrency:
   cancel-in-progress: false
 jobs:
   production:
-    if: github.repository == 'steliosvil5eteth-byte/Stelios-Vilanos'
+    # Archived shared production; new program activation must not revive it.
+    # Keep this job disabled even when its historical manifest is withdrawn.
+    if: ${{ false }}
     runs-on: ubuntu-24.04
     timeout-minutes: 50
     steps:

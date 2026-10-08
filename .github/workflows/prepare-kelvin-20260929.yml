@@ -6,6 +6,9 @@ permissions:
   contents: read
 jobs:
   prepare:
+    # Held during the forty-unique-video migration: no Azure calls.
+    # Config enabled=true alone must not revive a dated or superseded job.
+    if: ${{ false }}
     runs-on: ubuntu-latest
     timeout-minutes: 15
     steps:

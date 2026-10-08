@@ -1,9 +1,9 @@
 {
-  "version": 1,
+  "version": 2,
   "strategy_id": "YOUTUBE_GROWTH_TEN_DAILY_20261008",
   "program_label": "YOUTUBE_GROWTH_TEN_DAILY",
   "enabled": false,
-  "state": "BLOCKED_REQUIRED_NOTION_HISTORY_QUERY",
+  "state": "SUPERSEDED",
   "effective_date": "2026-10-08",
   "timezone": "Europe/Athens",
   "active_metricool_brand": {
@@ -11,70 +11,11 @@
     "label": "Ιστορίες που μας αγγίζουν",
     "exclusive": true
   },
-  "providers": [
-    "youtube"
-  ],
-  "daily_target_logical_posts": 10,
-  "destination_target_per_day": 10,
+  "providers": [],
+  "daily_target_logical_posts": 0,
+  "destination_target_per_day": 0,
   "require_explicit_program_attribution": true,
-  "slots": [
-    {
-      "time": "07:00",
-      "category": "youtube_original_01"
-    },
-    {
-      "time": "09:00",
-      "category": "youtube_original_02"
-    },
-    {
-      "time": "10:00",
-      "category": "youtube_original_03"
-    },
-    {
-      "time": "11:00",
-      "category": "youtube_original_04"
-    },
-    {
-      "time": "13:00",
-      "category": "youtube_original_05"
-    },
-    {
-      "time": "15:00",
-      "category": "youtube_original_06"
-    },
-    {
-      "time": "17:00",
-      "category": "youtube_original_07"
-    },
-    {
-      "time": "18:30",
-      "category": "youtube_original_08"
-    },
-    {
-      "time": "20:00",
-      "category": "youtube_original_09"
-    },
-    {
-      "time": "22:00",
-      "category": "youtube_original_10"
-    }
-  ],
-  "slot_policy": "Normal-day time slots are independent of the common content. During the transition, select future safe times after fresh live reconciliation; never backdate or refill cancelled legacy slots.",
-  "transition": {
-    "date": "2026-10-08",
-    "already_published_youtube_videos": 5,
-    "daily_total_limit": 10,
-    "max_additional_new_videos": 5,
-    "count_all_youtube_publications_on_this_local_date": true,
-    "refresh_live_published_and_pending_counts_before_each_create": true,
-    "unpublished_legacy_youtube_destinations": "CANCELLED_AND_LIVE_VERIFIED",
-    "preserve_published_youtube": true,
-    "preserve_facebook_instagram_tiktok": true,
-    "new_youtube_program_must_not_inherit_legacy_pending_posts": true,
-    "cancelled_legacy_youtube_destinations": 9
-  },
-  "active_format_profile": "original_narrated_shorts",
-  "format_profile_status": "SELECTED_PRODUCTION_BLOCKED_REQUIRED_HISTORY_QUERY",
+  "format_profile_status": "SUPERSEDED_REFERENCE_ONLY",
   "format_profiles": {
     "original_narrated_shorts": {
       "description": "Ten original narrated vertical videos per normal day.",
@@ -109,7 +50,8 @@
     "factual_claims_require_reliable_sources": true,
     "realistic_ai_content_disclosure_when_applicable": true,
     "fiction_must_be_identified_as_fiction": true,
-    "folklore_must_be_identified_as_folklore": true
+    "folklore_must_be_identified_as_folklore": true,
+    "enabled": false
   },
   "audio": {
     "provider": "existing_azure_speech_free_infrastructure",
@@ -119,7 +61,8 @@
     "avatar_presenter": false,
     "background_music": false,
     "voice_substitution": false,
-    "on_voice_unavailable_or_free_limit": "BLOCK affected video until the approved voice is available; never switch voice or use a paid fallback."
+    "on_voice_unavailable_or_free_limit": "BLOCK affected video until the approved voice is available; never switch voice or use a paid fallback.",
+    "enabled": false
   },
   "cost_safety": {
     "free_only": true,
@@ -129,7 +72,12 @@
     "paid_tests": false,
     "paid_generation": false,
     "paid_fallbacks": false,
-    "check_remaining_free_capacity_before_generation": true
+    "check_remaining_free_capacity_before_generation": true,
+    "max_credits": 0,
+    "credit_spend_allowed": false,
+    "verified_remaining_zero_credit_capacity_required": true,
+    "unknown_quota_or_capacity_action": "BLOCK",
+    "quota_or_auth_error_action": "STOP_NO_AUTOMATIC_RETRY_OR_FALLBACK"
   },
   "qa": {
     "release_status": "PASSED_FINAL_REVIEW",
@@ -184,14 +132,16 @@
       "status"
     ],
     "pending_is_not_published": true,
-    "provider_failure_retry_only_after_confirmed_not_published": true
-  },
-  "queue_policy": {
-    "minimum_reviewed_days": 2,
-    "target_reviewed_days": 3,
-    "scope": "Independent original YouTube videos only; common packs do not count.",
-    "lease_namespace": "state/production_leases/youtube-growth",
-    "archive_history_immutable": true
+    "provider_failure_retry_only_after_confirmed_not_published": true,
+    "enabled": false,
+    "state": "SUPERSEDED",
+    "autoPublish": false,
+    "allowed_providers": [],
+    "empty_provider_list_means": "DENY_ALL",
+    "broadcast_fallback_allowed": false,
+    "authoritative_strategy_file": "config/platform_growth_strategy.json",
+    "legacy_program_can_publish": false,
+    "canonical_activation_does_not_reactivate_this_file": true
   },
   "editorial_focus": [
     "Original human stories with a complete narrative",
@@ -212,6 +162,156 @@
       "Fresh Metricool, Notion and repository duplicate checks.",
       "Approved free-capacity check before voice synthesis.",
       "Exact final-file visual/audio review and release registry before enabling YouTube publishing."
-    ]
+    ],
+    "legacy_program_resume_allowed": false,
+    "new_program_blocked_state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+    "resume_requirements_scope": "Historical gates only. Any new production must satisfy the canonical program; this superseded program never resumes."
+  },
+  "archived_legacy_configuration": {
+    "program_label": "YOUTUBE_GROWTH_TEN_DAILY",
+    "status": "SUPERSEDED",
+    "operational": false,
+    "historical_data_use": "Audit and deduplication only; these values do not authorize production or routing.",
+    "slots": [
+      {
+        "time": "07:00",
+        "category": "youtube_original_01"
+      },
+      {
+        "time": "09:00",
+        "category": "youtube_original_02"
+      },
+      {
+        "time": "10:00",
+        "category": "youtube_original_03"
+      },
+      {
+        "time": "11:00",
+        "category": "youtube_original_04"
+      },
+      {
+        "time": "13:00",
+        "category": "youtube_original_05"
+      },
+      {
+        "time": "15:00",
+        "category": "youtube_original_06"
+      },
+      {
+        "time": "17:00",
+        "category": "youtube_original_07"
+      },
+      {
+        "time": "18:30",
+        "category": "youtube_original_08"
+      },
+      {
+        "time": "20:00",
+        "category": "youtube_original_09"
+      },
+      {
+        "time": "22:00",
+        "category": "youtube_original_10"
+      }
+    ],
+    "slot_policy": "Normal-day time slots are independent of the common content. During the transition, select future safe times after fresh live reconciliation; never backdate or refill cancelled legacy slots.",
+    "transition": {
+      "date": "2026-10-08",
+      "already_published_youtube_videos": 5,
+      "daily_total_limit": 10,
+      "max_additional_new_videos": 5,
+      "count_all_youtube_publications_on_this_local_date": true,
+      "refresh_live_published_and_pending_counts_before_each_create": true,
+      "unpublished_legacy_youtube_destinations": "CANCELLED_AND_LIVE_VERIFIED",
+      "preserve_published_youtube": true,
+      "preserve_facebook_instagram_tiktok": true,
+      "new_youtube_program_must_not_inherit_legacy_pending_posts": true,
+      "cancelled_legacy_youtube_destinations": 9
+    },
+    "active_format_profile": "original_narrated_shorts",
+    "queue_policy": {
+      "minimum_reviewed_days": 2,
+      "target_reviewed_days": 3,
+      "scope": "Independent original YouTube videos only; common packs do not count.",
+      "lease_namespace": "state/production_leases/youtube-growth",
+      "archive_history_immutable": true
+    },
+    "previous_state": "BLOCKED_REQUIRED_NOTION_HISTORY_QUERY",
+    "previous_daily_target_logical_posts": 10,
+    "previous_destination_target_per_day": 10
+  },
+  "status": "SUPERSEDED",
+  "generation_paused": true,
+  "publishing_paused": true,
+  "production": {
+    "enabled": false,
+    "state": "SUPERSEDED"
+  },
+  "active_schedule": false,
+  "authoritative_strategy_file": "config/platform_growth_strategy.json",
+  "replacement_program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+  "replacement_platform": "youtube",
+  "replacement_objective_videos_per_day": 10,
+  "reactivate_when_replacement_enabled": false,
+  "slots": [],
+  "slot_policy": "SUPERSEDED. This file authorizes no production, slot refill, scheduling or publication; use only the canonical platform strategy.",
+  "active_format_profile": null,
+  "queue_policy": {
+    "enabled": false,
+    "state": "SUPERSEDED",
+    "automatic_replenishment": false,
+    "authoritative_strategy_file": "config/platform_growth_strategy.json",
+    "archive_history_immutable": true,
+    "superseded_or_cancelled_slots_are_missing_work": false
+  },
+  "retirement": {
+    "date": "2026-10-08",
+    "status": "SUPERSEDED",
+    "operational": false,
+    "reason": "The separate YouTube program is replaced by one canonical program with forty unique videos across four platforms. New-program activation must never reactivate this legacy program.",
+    "preserve_source_scripts_media_and_quality_rules": true
+  },
+  "providers_semantics": "Publishing allowlist: empty means DENY_ALL; never fall back to connected-network inventory or broadcast.",
+  "provider_routing_override": {
+    "effective_date": "2026-10-08",
+    "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+    "authoritative_strategy_file": "config/platform_growth_strategy.json",
+    "enabled": false,
+    "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+    "allowed_providers": [],
+    "empty_provider_list_means": "DENY_ALL",
+    "connected_network_inventory_is_not_routing_allowlist": true,
+    "broadcast_fallback_allowed": false,
+    "exactly_one_explicit_platform_per_story": true,
+    "crossposting_allowed": false,
+    "same_story_script_or_media_on_multiple_platforms": "BLOCK",
+    "required_program_attribution": "PLATFORM_SPECIFIC_TEN_DAILY",
+    "require_canonical_enabled": true,
+    "require_canonical_production_enabled": true,
+    "require_selected_platform_enabled": true,
+    "require_fresh_required_history_and_verified_zero_credit_capacity": true,
+    "objective_distinct_videos_per_day": 40,
+    "objective_destinations_per_day": 40,
+    "objective_videos_per_platform_per_day": {
+      "facebook": 10,
+      "instagram": 10,
+      "tiktok": 10,
+      "youtube": 10
+    },
+    "published_history_mutations": false,
+    "retired_programs": {
+      "CURRENT_TEN_DAILY": {
+        "enabled": false,
+        "status": "SUPERSEDED",
+        "reactivate_when_new_program_enabled": false,
+        "historical_data_use": "Audit and deduplication only; never a scheduling source."
+      },
+      "YOUTUBE_GROWTH_TEN_DAILY": {
+        "enabled": false,
+        "status": "SUPERSEDED",
+        "reactivate_when_new_program_enabled": false,
+        "historical_data_use": "Audit and deduplication only; never a scheduling source."
+      }
+    }
   }
 }

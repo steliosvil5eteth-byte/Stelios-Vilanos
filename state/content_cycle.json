@@ -1,92 +1,184 @@
 {
-  "version": 7,
+  "version": 8,
   "timezone": "Europe/Athens",
-  "program_label": "CURRENT_TEN_DAILY",
-  "current_strategy": "CURRENT_TEN_DAILY_20260927",
-  "current_status": "ACTIVE",
-  "status": "active",
-  "publishing_paused": false,
-  "generation_paused": false,
+  "current_status": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+  "status": "paused",
+  "publishing_paused": true,
+  "generation_paused": true,
   "active_metricool_brand_id": 7076410,
   "active_metricool_brand_label": "Ιστορίες που μας αγγίζουν",
   "previous_metricool_brands_operational": false,
-  "target_count": 10,
+  "target_count": 40,
   "completed_count": 0,
-  "next_target_count": 10,
-  "active_slots_local": [
-    "07:00",
-    "09:00",
-    "10:00",
-    "11:00",
-    "13:00",
-    "15:00",
-    "17:00",
-    "18:30",
-    "20:00",
-    "22:00"
-  ],
-  "active_categories": [
-    "relationships",
-    "survival",
-    "dog_bartender",
-    "zodiac",
-    "greece_two_day_trip",
-    "love_soul_relationship",
-    "strange_real_phenomenon",
-    "documented_experiments",
-    "myth_or_truth",
-    "international_legend"
-  ],
-  "quality_first_catch_up": true,
+  "next_target_count": 40,
+  "quality_first_catch_up": false,
   "preserve_history_for_dedupe": true,
   "legacy_recovery_enabled": false,
-  "rule": "Only brand 7076410. CURRENT_TEN_DAILY produces exactly ten common logical posts per day for Facebook, Instagram and TikTok: 30 provider destinations. YouTube is excluded from this common flow and is governed exclusively by config/youtube_growth_strategy.json. Preserve all common series, formats, scripts, slot times, published history and existing non-YouTube deliveries. Require exact-final QA, fresh deduplication and live readback. Never backdate.",
+  "rule": "Brand 7076410 only. The current objective is forty different original narrated videos per local day: ten each for Facebook, Instagram, TikTok and YouTube, with exactly one platform per story and no crossposting or common media/script reuse. Generation, repair, retry, scheduling and publication remain blocked until the canonical policy explicitly enables production and the relevant platform, fresh required history checks pass, and sufficient zero-credit capacity is verified. Exact-final visual/audio QA and live readback remain mandatory. Preserve published history; never backdate or refill superseded/cancelled legacy slots.",
   "paused_categories": [],
-  "full_ten_daily_effective_date": "2026-09-28",
-  "target_count_semantics": "logical_posts",
+  "target_count_semantics": "Distinct original videos for the new program: forty overall, ten for each platform, with one platform per story.",
   "target_member_post_count_per_network": 10,
-  "target_provider_destinations": 30,
+  "target_provider_destinations": 40,
   "completed_member_post_count_per_network": 0,
-  "providers": [
-    "facebook",
-    "instagram",
-    "tiktok"
-  ],
+  "providers": [],
   "provider_routing_override": {
     "effective_date": "2026-10-08",
-    "common_program": "CURRENT_TEN_DAILY",
-    "common_providers": [
-      "facebook",
-      "instagram",
-      "tiktok"
-    ],
-    "youtube_program": "YOUTUBE_GROWTH_TEN_DAILY",
-    "youtube_strategy_file": "config/youtube_growth_strategy.json",
-    "youtube_from_common_flow": false,
-    "normal_day_targets_after_youtube_activation": {
-      "common_logical_posts": 10,
-      "common_destinations": 30,
-      "youtube_original_videos": 10,
-      "youtube_destinations": 10,
-      "combined_distinct_logical_items": 20,
-      "combined_provider_destinations": 40
-    },
-    "published_history_mutations": false
-  },
-  "independent_youtube": {
-    "program_label": "YOUTUBE_GROWTH_TEN_DAILY",
-    "strategy_file": "config/youtube_growth_strategy.json",
+    "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+    "authoritative_strategy_file": "config/platform_growth_strategy.json",
     "enabled": false,
-    "status": "BLOCKED_REQUIRED_NOTION_HISTORY_QUERY",
-    "daily_target": 10,
-    "transition_date": "2026-10-08",
-    "already_published_on_transition_date": 5,
-    "max_additional_new_videos_on_transition_date": 5,
-    "counts_require_fresh_live_reconciliation": true,
-    "prepared_scripts": 6,
-    "new_final_videos": 0,
-    "new_youtube_scheduled": 0,
-    "checkpoint_file": "reports/youtube_growth_blocked_checkpoint_20261008.json",
-    "automatic_retry_after_entitlement_error": false
+    "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+    "allowed_providers": [],
+    "empty_provider_list_means": "DENY_ALL",
+    "connected_network_inventory_is_not_routing_allowlist": true,
+    "broadcast_fallback_allowed": false,
+    "exactly_one_explicit_platform_per_story": true,
+    "crossposting_allowed": false,
+    "same_story_script_or_media_on_multiple_platforms": "BLOCK",
+    "required_program_attribution": "PLATFORM_SPECIFIC_TEN_DAILY",
+    "require_canonical_enabled": true,
+    "require_canonical_production_enabled": true,
+    "require_selected_platform_enabled": true,
+    "require_fresh_required_history_and_verified_zero_credit_capacity": true,
+    "objective_distinct_videos_per_day": 40,
+    "objective_destinations_per_day": 40,
+    "objective_videos_per_platform_per_day": {
+      "facebook": 10,
+      "instagram": 10,
+      "tiktok": 10,
+      "youtube": 10
+    },
+    "published_history_mutations": false,
+    "retired_programs": {
+      "CURRENT_TEN_DAILY": {
+        "enabled": false,
+        "status": "SUPERSEDED",
+        "reactivate_when_new_program_enabled": false,
+        "historical_data_use": "Audit and deduplication only; never a scheduling source."
+      },
+      "YOUTUBE_GROWTH_TEN_DAILY": {
+        "enabled": false,
+        "status": "SUPERSEDED",
+        "reactivate_when_new_program_enabled": false,
+        "historical_data_use": "Audit and deduplication only; never a scheduling source."
+      }
+    }
+  },
+  "archived_legacy_configuration": {
+    "program_label": "CURRENT_TEN_DAILY",
+    "status": "SUPERSEDED",
+    "operational": false,
+    "historical_data_use": "Audit and deduplication only; these values do not authorize production or routing.",
+    "current_strategy": "CURRENT_TEN_DAILY_20260927",
+    "active_slots_local": [
+      "07:00",
+      "09:00",
+      "10:00",
+      "11:00",
+      "13:00",
+      "15:00",
+      "17:00",
+      "18:30",
+      "20:00",
+      "22:00"
+    ],
+    "active_categories": [
+      "relationships",
+      "survival",
+      "dog_bartender",
+      "zodiac",
+      "greece_two_day_trip",
+      "love_soul_relationship",
+      "strange_real_phenomenon",
+      "documented_experiments",
+      "myth_or_truth",
+      "international_legend"
+    ],
+    "full_ten_daily_effective_date": "2026-09-28",
+    "independent_youtube": {
+      "program_label": "YOUTUBE_GROWTH_TEN_DAILY",
+      "strategy_file": "config/youtube_growth_strategy.json",
+      "enabled": false,
+      "status": "SUPERSEDED",
+      "daily_target": 10,
+      "transition_date": "2026-10-08",
+      "already_published_on_transition_date": 5,
+      "max_additional_new_videos_on_transition_date": 5,
+      "counts_require_fresh_live_reconciliation": true,
+      "prepared_scripts": 6,
+      "new_final_videos": 0,
+      "new_youtube_scheduled": 0,
+      "checkpoint_file": "reports/youtube_growth_blocked_checkpoint_20261008.json",
+      "automatic_retry_after_entitlement_error": false,
+      "previous_status": "BLOCKED_REQUIRED_NOTION_HISTORY_QUERY",
+      "operational": false
+    }
+  },
+  "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+  "strategy_id": "PLATFORM_SPECIFIC_TEN_DAILY_20261008",
+  "authoritative_strategy_file": "config/platform_growth_strategy.json",
+  "enabled": false,
+  "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+  "production": {
+    "enabled": false,
+    "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY"
+  },
+  "retired_programs": {
+    "CURRENT_TEN_DAILY": {
+      "enabled": false,
+      "status": "SUPERSEDED",
+      "reactivate_when_new_program_enabled": false,
+      "historical_data_use": "Audit and deduplication only; never a scheduling source."
+    },
+    "YOUTUBE_GROWTH_TEN_DAILY": {
+      "enabled": false,
+      "status": "SUPERSEDED",
+      "reactivate_when_new_program_enabled": false,
+      "historical_data_use": "Audit and deduplication only; never a scheduling source."
+    }
+  },
+  "providers_semantics": "Publishing allowlist: empty means DENY_ALL; never fall back to connected-network inventory or broadcast.",
+  "current_strategy": "PLATFORM_SPECIFIC_TEN_DAILY_20261008",
+  "active_slots_local": [],
+  "active_categories": [],
+  "completion_evidence_state": "NO_NEW_APPROVED_FINAL_ARTIFACTS_OR_VERIFIED_DESTINATIONS",
+  "completed_counts_scope": "New PLATFORM_SPECIFIC_TEN_DAILY daily PUBLISHED completion only. Verified active future Scheduled-PENDING items may count in the separate ready queue, never in these completed counters. These counters are not a fresh inventory of historical or pending posts.",
+  "counts_require_fresh_live_reconciliation": true,
+  "platforms": {
+    "facebook": {
+      "enabled": false,
+      "status": "paused",
+      "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+      "generation_paused": true,
+      "publishing_paused": true,
+      "target_count": 10,
+      "completed_count": 0
+    },
+    "instagram": {
+      "enabled": false,
+      "status": "paused",
+      "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+      "generation_paused": true,
+      "publishing_paused": true,
+      "target_count": 10,
+      "completed_count": 0
+    },
+    "tiktok": {
+      "enabled": false,
+      "status": "paused",
+      "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+      "generation_paused": true,
+      "publishing_paused": true,
+      "target_count": 10,
+      "completed_count": 0
+    },
+    "youtube": {
+      "enabled": false,
+      "status": "paused",
+      "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+      "generation_paused": true,
+      "publishing_paused": true,
+      "target_count": 10,
+      "completed_count": 0
+    }
   }
 }

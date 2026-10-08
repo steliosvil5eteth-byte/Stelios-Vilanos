@@ -16,7 +16,9 @@ concurrency:
 
 jobs:
   render:
-    if: github.event.repository.private == false
+    # Held during the forty-unique-video migration: no Azure calls.
+    # Config enabled=true alone must not revive a dated or superseded job.
+    if: ${{ false }}
     runs-on: ubuntu-24.04
     timeout-minutes: 45
     steps:

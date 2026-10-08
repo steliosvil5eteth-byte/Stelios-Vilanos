@@ -17,6 +17,9 @@ concurrency:
 
 jobs:
   render:
+    # Held during the forty-unique-video migration: no Azure calls.
+    # Config enabled=true alone must not revive a dated or superseded job.
+    if: ${{ false }}
     runs-on: ubuntu-24.04
     timeout-minutes: 70
     steps:

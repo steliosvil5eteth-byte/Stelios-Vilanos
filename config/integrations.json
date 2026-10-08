@@ -12,84 +12,122 @@
       "youtube"
     ],
     "retired_brand_policy": "Do not schedule, publish, repair, reconcile or create new work on any previous Metricool brand. Historical references remain audit-only outside the active workflow.",
-    "networks_semantics": "Connected-network inventory, not a publishing allowlist. Each program must use its own providers."
+    "networks_semantics": "Connected-network inventory only. It never authorizes generation, scheduling or publication and must never be used as a broadcast fallback."
   },
   "content": {
-    "strategy_file": "config/content_strategy.json",
+    "strategy_file": "config/platform_growth_strategy.json",
     "cycle_state_file": "state/content_cycle.json",
     "history_file": "state/content_history.json",
     "notion_rules_page_id": "3def2345-b318-8173-9711-e29c134da859",
     "notion_current_program_page_id": "3e5f2345-b318-812d-a35a-f980ed6d873a",
     "notion_archive_database_id": "38724259aa5143d09dc3b8cf606577b1",
     "notion_archive_data_source_id": "46cd5cf4-5f7e-46e8-b0ef-274aeadbdb52",
-    "youtube_growth_strategy_file": "config/youtube_growth_strategy.json"
+    "youtube_growth_strategy_file": "config/youtube_growth_strategy.json",
+    "compatibility_strategy_file": "config/content_strategy.json",
+    "youtube_growth_strategy_file_semantics": "SUPERSEDED historical compatibility file; the canonical platform strategy is the only authority."
   },
   "publishing": {
-    "program_label": "CURRENT_TEN_DAILY",
+    "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
     "daily_target_logical_posts_per_network": 10,
-    "daily_target_destinations": 30,
-    "slots_local_time": [
-      "07:00",
-      "09:00",
-      "10:00",
-      "11:00",
-      "13:00",
-      "15:00",
-      "17:00",
-      "18:30",
-      "20:00",
-      "22:00"
-    ],
-    "publish_to_all_connected_socials": [
-      "facebook",
-      "instagram",
-      "tiktok"
-    ],
+    "daily_target_destinations": 40,
+    "publish_to_all_connected_socials": [],
     "require_user_confirmation": false,
-    "quality_first_catch_up": true,
-    "rule": "Only brand 7076410. CURRENT_TEN_DAILY produces exactly ten common logical posts per day for Facebook, Instagram and TikTok: 30 provider destinations. YouTube is excluded from this common flow and is governed exclusively by config/youtube_growth_strategy.json. Preserve all common series, formats, scripts, slot times, published history and existing non-YouTube deliveries. Require exact-final QA, fresh deduplication and live readback. Never backdate.",
-    "active_categories": [
-      "relationships",
-      "survival",
-      "dog_bartender",
-      "zodiac",
-      "greece_two_day_trip",
-      "love_soul_relationship",
-      "strange_real_phenomenon",
-      "documented_experiments",
-      "myth_or_truth",
-      "international_legend"
-    ],
+    "quality_first_catch_up": false,
+    "rule": "Brand 7076410 only. The current objective is forty different original narrated videos per local day: ten each for Facebook, Instagram, TikTok and YouTube, with exactly one platform per story and no crossposting or common media/script reuse. Generation, repair, retry, scheduling and publication remain blocked until the canonical policy explicitly enables production and the relevant platform, fresh required history checks pass, and sufficient zero-credit capacity is verified. Exact-final visual/audio QA and live readback remain mandatory. Preserve published history; never backdate or refill superseded/cancelled legacy slots.",
     "paused_categories": [],
-    "daily_target_standing_series": 10,
-    "zodiac_member_posts": 1,
-    "daily_target_standing_series_per_network": 10,
     "daily_target_physical_member_posts_per_network": 10,
-    "zodiac_comparison_units_per_carousel": 6,
     "provider_routing_override": {
       "effective_date": "2026-10-08",
-      "common_program": "CURRENT_TEN_DAILY",
-      "common_providers": [
-        "facebook",
-        "instagram",
-        "tiktok"
-      ],
-      "youtube_program": "YOUTUBE_GROWTH_TEN_DAILY",
-      "youtube_strategy_file": "config/youtube_growth_strategy.json",
-      "youtube_from_common_flow": false,
-      "normal_day_targets_after_youtube_activation": {
-        "common_logical_posts": 10,
-        "common_destinations": 30,
-        "youtube_original_videos": 10,
-        "youtube_destinations": 10,
-        "combined_distinct_logical_items": 20,
-        "combined_provider_destinations": 40
+      "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+      "authoritative_strategy_file": "config/platform_growth_strategy.json",
+      "enabled": false,
+      "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+      "allowed_providers": [],
+      "empty_provider_list_means": "DENY_ALL",
+      "connected_network_inventory_is_not_routing_allowlist": true,
+      "broadcast_fallback_allowed": false,
+      "exactly_one_explicit_platform_per_story": true,
+      "crossposting_allowed": false,
+      "same_story_script_or_media_on_multiple_platforms": "BLOCK",
+      "required_program_attribution": "PLATFORM_SPECIFIC_TEN_DAILY",
+      "require_canonical_enabled": true,
+      "require_canonical_production_enabled": true,
+      "require_selected_platform_enabled": true,
+      "require_fresh_required_history_and_verified_zero_credit_capacity": true,
+      "objective_distinct_videos_per_day": 40,
+      "objective_destinations_per_day": 40,
+      "objective_videos_per_platform_per_day": {
+        "facebook": 10,
+        "instagram": 10,
+        "tiktok": 10,
+        "youtube": 10
       },
-      "published_history_mutations": false
-    }
+      "published_history_mutations": false,
+      "retired_programs": {
+        "CURRENT_TEN_DAILY": {
+          "enabled": false,
+          "status": "SUPERSEDED",
+          "reactivate_when_new_program_enabled": false,
+          "historical_data_use": "Audit and deduplication only; never a scheduling source."
+        },
+        "YOUTUBE_GROWTH_TEN_DAILY": {
+          "enabled": false,
+          "status": "SUPERSEDED",
+          "reactivate_when_new_program_enabled": false,
+          "historical_data_use": "Audit and deduplication only; never a scheduling source."
+        }
+      }
+    },
+    "archived_legacy_configuration": {
+      "program_label": "CURRENT_TEN_DAILY",
+      "status": "SUPERSEDED",
+      "operational": false,
+      "historical_data_use": "Audit and deduplication only; these values do not authorize production or routing.",
+      "slots_local_time": [
+        "07:00",
+        "09:00",
+        "10:00",
+        "11:00",
+        "13:00",
+        "15:00",
+        "17:00",
+        "18:30",
+        "20:00",
+        "22:00"
+      ],
+      "active_categories": [
+        "relationships",
+        "survival",
+        "dog_bartender",
+        "zodiac",
+        "greece_two_day_trip",
+        "love_soul_relationship",
+        "strange_real_phenomenon",
+        "documented_experiments",
+        "myth_or_truth",
+        "international_legend"
+      ],
+      "daily_target_standing_series": 10,
+      "zodiac_member_posts": 1,
+      "daily_target_standing_series_per_network": 10,
+      "zodiac_comparison_units_per_carousel": 6
+    },
+    "authoritative_strategy_file": "config/platform_growth_strategy.json",
+    "enabled": false,
+    "paused": true,
+    "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+    "autoPublish": false,
+    "daily_target_logical_posts": 40,
+    "daily_target_distinct_original_videos": 40,
+    "slots_local_time": [],
+    "active_categories": [],
+    "publish_to_all_connected_socials_semantics": "Disabled; empty means DENY_ALL and never broadcast.",
+    "broadcast_enabled": false,
+    "providers": [],
+    "providers_semantics": "Publishing allowlist: empty means DENY_ALL; never fall back to connected-network inventory or broadcast."
   },
   "runner": {
-    "max_logical_posts_per_day": 20,
+    "max_logical_posts_per_day": 40,
     "duplicate_policy": "One active post per program, local date, slot/category and platform; compare story/topic/script/media identity across all programs and platforms before every create.",
     "require_future_schedule": true,
     "hands_off_mode": true,
@@ -97,28 +135,74 @@
     "archive_every_video": true,
     "no_false_rollback": true,
     "never_backdate": true,
-    "catch_up_after_repair_same_day": true,
+    "catch_up_after_repair_same_day": false,
     "release_only_after_final_qa_pass": true,
     "fail_closed": true,
-    "max_standing_series_per_day": 10,
     "expected_physical_member_posts_per_day_per_network": 10,
-    "expected_provider_destinations_per_day": 30,
-    "max_logical_posts_per_program_per_day": 10,
-    "max_common_logical_posts_per_day": 10,
+    "expected_provider_destinations_per_day": 40,
+    "max_logical_posts_per_program_per_day": 40,
+    "max_common_logical_posts_per_day": 0,
     "max_youtube_original_videos_per_day": 10,
-    "expected_provider_destinations_scope": "CURRENT_TEN_DAILY only; the independent YouTube target is declared by its own strategy.",
-    "normal_day_combined_provider_destinations_after_youtube_activation": 40,
+    "expected_provider_destinations_scope": "PLATFORM_SPECIFIC_TEN_DAILY objective only: forty distinct videos and forty single-platform destinations; no completion or current capacity claim.",
     "required_strategy_reload_before_every_write": true,
-    "youtube_strategy_file": "config/youtube_growth_strategy.json"
+    "archived_legacy_configuration": {
+      "program_label": "CURRENT_TEN_DAILY",
+      "status": "SUPERSEDED",
+      "operational": false,
+      "historical_data_use": "Audit and deduplication only; these values do not authorize production or routing.",
+      "max_standing_series_per_day": 10,
+      "youtube_strategy_file": "config/youtube_growth_strategy.json",
+      "normal_day_combined_provider_destinations_after_youtube_activation": 40
+    },
+    "enabled": false,
+    "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+    "authoritative_strategy_file": "config/platform_growth_strategy.json",
+    "generation_enabled": false,
+    "publishing_enabled": false,
+    "production_enabled": false,
+    "automatic_provider_calls_enabled": false,
+    "generation_paused": true,
+    "publishing_paused": true,
+    "allowed_actions": [
+      "read_only_inventory",
+      "local_validation"
+    ],
+    "blocked_actions": [
+      "generate",
+      "tts",
+      "asr",
+      "render",
+      "repair",
+      "create",
+      "update",
+      "retry",
+      "schedule",
+      "publish",
+      "upload"
+    ],
+    "max_logical_posts_per_platform_per_day": 10,
+    "require_exactly_one_explicit_platform": true,
+    "crossposting_allowed": false,
+    "missing_or_empty_provider_action": "BLOCK",
+    "require_canonical_and_production_and_platform_enabled": true,
+    "require_verified_zero_credit_capacity": true,
+    "require_all_fresh_history_sources": true,
+    "retired_programs": {
+      "CURRENT_TEN_DAILY": {
+        "enabled": false,
+        "status": "SUPERSEDED",
+        "reactivate_when_new_program_enabled": false,
+        "historical_data_use": "Audit and deduplication only; never a scheduling source."
+      },
+      "YOUTUBE_GROWTH_TEN_DAILY": {
+        "enabled": false,
+        "status": "SUPERSEDED",
+        "reactivate_when_new_program_enabled": false,
+        "historical_data_use": "Audit and deduplication only; never a scheduling source."
+      }
+    }
   },
   "audio": {
-    "card_posts": {
-      "narration": false,
-      "tiktok_auto_add_music": true,
-      "facebook_instagram_native_carousel_music_optional": true,
-      "duplicate_audio_layers_forbidden": true,
-      "youtube_adaptations_enabled": false
-    },
     "narrated_posts": {
       "provider": "azure_speech_f0",
       "voice": "el-GR-NestorasNeural",
@@ -129,20 +213,61 @@
       "background_music": false,
       "avatar_presenter": false,
       "tiktok_auto_music": false,
-      "voice_substitution_forbidden": true
+      "voice_substitution_forbidden": true,
+      "enabled": false,
+      "target_duration_seconds": {
+        "min": 80,
+        "max": 110
+      },
+      "target_duration_is_editorial_hypothesis": true,
+      "platform_duration_overrides": {
+        "youtube": {
+          "maximum_duration_seconds": 150
+        }
+      },
+      "verified_remaining_zero_credit_capacity_required": true,
+      "paid_fallbacks": false
+    },
+    "archived_legacy_card_posts": {
+      "status": "SUPERSEDED",
+      "operational": false,
+      "rules": {
+        "narration": false,
+        "tiktok_auto_add_music": true,
+        "facebook_instagram_native_carousel_music_optional": true,
+        "duplicate_audio_layers_forbidden": true,
+        "youtube_adaptations_enabled": false
+      }
     }
-  },
-  "visual_rules": {
-    "every_card_requires_scene_relevant_photographic_or_photorealistic_visual": true,
-    "generic_placeholder_cartoon_or_text_only_visuals": "BLOCK",
-    "zodiac_cards": "Each zodiac card must visibly include the corresponding zodiac visual/symbol/identity; plain black/text-only panels are forbidden.",
-    "dog_bartender": "Exactly four cards with the same recurring photorealistic brown dog bartender, clearly visible as bartender in every card, with four distinct scene-relevant compositions."
   },
   "cost_safety": {
     "purchases": false,
     "topups": false,
     "upgrades": false,
     "paid_tests": false,
-    "paid_generation_without_explicit_user_approval": false
+    "paid_generation_without_explicit_user_approval": false,
+    "free_only": true,
+    "max_credits": 0,
+    "credit_spend_allowed": false,
+    "paid_generation": false,
+    "paid_fallbacks": false,
+    "verified_remaining_zero_credit_capacity_required": true,
+    "unknown_quota_or_capacity_action": "BLOCK",
+    "quota_or_auth_error_action": "STOP_NO_AUTOMATIC_RETRY_OR_FALLBACK"
+  },
+  "archived_legacy_visual_rules": {
+    "status": "SUPERSEDED",
+    "operational": false,
+    "rules": {
+      "every_card_requires_scene_relevant_photographic_or_photorealistic_visual": true,
+      "generic_placeholder_cartoon_or_text_only_visuals": "BLOCK",
+      "zodiac_cards": "Each zodiac card must visibly include the corresponding zodiac visual/symbol/identity; plain black/text-only panels are forbidden.",
+      "dog_bartender": "Exactly four cards with the same recurring photorealistic brown dog bartender, clearly visible as bartender in every card, with four distinct scene-relevant compositions."
+    }
+  },
+  "visual_rules": {
+    "every_scene_requires_relevant_photographic_or_photorealistic_visual": true,
+    "generic_placeholder_cartoon_or_text_only_visuals": "BLOCK",
+    "same_story_script_or_media_on_multiple_platforms": "BLOCK"
   }
 }
