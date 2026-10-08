@@ -301,7 +301,7 @@
   "strategy_id": "PLATFORM_SPECIFIC_TEN_DAILY_20261008",
   "authoritative_strategy_file": "config/platform_growth_strategy.json",
   "enabled": false,
-  "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+  "state": "BLOCKED_ZERO_CREDIT_CAPACITY_AND_FINAL_AUDIO_REVIEW",
   "status": "paused",
   "generation_paused": true,
   "publishing_paused": true,
@@ -366,11 +366,13 @@
   "excluded_providers_semantics": "Inventory exclusion only; this does not enable any provider. All publishing allowlists are currently empty and deny all.",
   "transition": {
     "date": "2026-10-08",
-    "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+    "state": "BLOCKED_ZERO_CREDIT_CAPACITY_AND_FINAL_AUDIO_REVIEW",
     "superseded_programs": [
       "CURRENT_TEN_DAILY",
       "YOUTUBE_GROWTH_TEN_DAILY"
     ],
     "rule": "Brand 7076410 only. The current objective is forty different original narrated videos per local day: ten each for Facebook, Instagram, TikTok and YouTube, with exactly one platform per story and no crossposting or common media/script reuse. Generation, repair, retry, scheduling and publication remain blocked until the canonical policy explicitly enables production and the relevant platform, fresh required history checks pass, and sufficient zero-credit capacity is verified. Exact-final visual/audio QA and live readback remain mandatory. Preserve published history; never backdate or refill superseded/cancelled legacy slots."
-  }
+  },
+  "latest_recovery_report": "state/recovery_20261008_evening.json",
+  "last_reconciled_at": "2026-10-08T18:49:33+03:00"
 }

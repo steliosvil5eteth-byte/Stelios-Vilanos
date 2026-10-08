@@ -8,7 +8,7 @@
   "authoritative": true,
   "enabled": false,
   "active_schedule": false,
-  "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
+  "state": "BLOCKED_ZERO_CREDIT_CAPACITY_AND_FINAL_AUDIO_REVIEW",
   "active_metricool_brand": {
     "id": 7076410,
     "name": "Ιστορίες που μας αγγίζουν"
@@ -65,7 +65,7 @@
   },
   "required_checks": {
     "fresh_history": {
-      "status": "BLOCKED_NOTION_QUERY_USAGE_LIMIT_REACHED",
+      "status": "READ_SUCCEEDED_REVALIDATE_BEFORE_RELEASE",
       "sources": [
         "Metricool live published and pending history",
         "Notion authorized fresh archive query",
@@ -80,7 +80,11 @@
       "cached_archive_is_not_fresh_clearance": true,
       "automatic_retry_of_entitlement_rejection": false,
       "alternate_route_to_bypass_entitlement_allowed": false,
-      "known_page_maintenance_is_not_duplicate_clearance": true
+      "known_page_maintenance_is_not_duplicate_clearance": true,
+      "previous_status": "BLOCKED_NOTION_QUERY_USAGE_LIMIT_REACHED",
+      "last_successful_archive_read_at": "2026-10-08T18:14:42+03:00",
+      "last_successful_archive_rows": 202,
+      "evening_reconciliation_note": "Supported Notion archive reads now succeed. Published-platform analytics found previously published moonbow and Selkie stories plus material Galaxidi overlap that the repository ledger alone missed. This point-in-time reconciliation is not clearance for a future create."
     },
     "zero_credit_capacity": {
       "status": "BLOCKED_ACTUAL_TIER_AND_FREE_CAPACITY_UNVERIFIED",
@@ -120,11 +124,13 @@
       "asset_rights_and_attribution_checked": true
     },
     "final_media_review": {
-      "status": "NOT_PERFORMED_FOR_NEW_PROGRAM",
+      "status": "BLOCKED_ACTUAL_AUDIO_LISTEN_UNAVAILABLE",
       "required_release_status": "PASSED_FINAL_REVIEW",
       "bind_review_to_exact_sha256": true,
       "require_actual_audio_listen_and_visual_inspection": true,
-      "render_metadata_or_asr_alone_is_not_final_review": true
+      "render_metadata_or_asr_alone_is_not_final_review": true,
+      "current_runtime_actual_audio_listening_supported": false,
+      "render_or_audio_identity_does_not_prove_listening": true
     },
     "native_platform_disclosure": {
       "status": "REQUIRED_PER_PLATFORM_BEFORE_RELEASE",
@@ -419,5 +425,7 @@
       "evidence_note": "Prioritize clear first scene and narrative progression; low average watch duration is the primary issue",
       "required_content_identity": "Different complete story, narration and relevant scene sequence from every other platform"
     }
-  }
+  },
+  "latest_recovery_report": "state/recovery_20261008_evening.json",
+  "last_reconciled_at": "2026-10-08T18:49:33+03:00"
 }

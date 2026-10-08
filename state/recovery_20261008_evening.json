@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "incident": "20261008_EVENING_RECOVERY",
+  "as_of": "2026-10-08T18:49:33+03:00",
+  "brand_id": 7076410,
+  "timezone": "Europe/Athens",
+  "program": "PLATFORM_SPECIFIC_TEN_DAILY",
+  "result": "BLOCKED_PENDING_AUDIO_REVIEW",
+  "new_metricool_writes": 0,
+  "new_publications": 0,
+  "new_tts_calls": 0,
+  "new_generation_credit_use": 0,
+  "live_readback": {
+    "completed_at": "2026-10-08T18:48:00+03:00",
+    "published_per_platform": {
+      "facebook": 5,
+      "instagram": 5,
+      "tiktok": 5,
+      "youtube": 5
+    },
+    "active_pending_per_platform": {
+      "facebook": 0,
+      "instagram": 0,
+      "tiktok": 0,
+      "youtube": 0
+    },
+    "latest_published_local_time": "07:00",
+    "record_count": 20,
+    "held_draft_records": 14,
+    "oct9_oct10_records": 0,
+    "unchanged_from_earlier_snapshot": true
+  },
+  "cause": "Morning transition withdrew pending legacy posts while replacement production stayed disabled; no replacement batch was produced or scheduled.",
+  "history": {
+    "notion_archive_supported_read_succeeded": true,
+    "archive_rows": 202,
+    "prior_quota_error_is_not_current": true,
+    "published_analytics_checked": "2026-09-01 through 2026-10-08",
+    "before_each_release_revalidate": true
+  },
+  "exclusions": [
+    {
+      "story": "Moonbow",
+      "reason": "Previously published 2026-09-25; same substantive explanation",
+      "youtube": "https://www.youtube.com/watch?v=14s3sWEIzSw"
+    },
+    {
+      "story": "Selkie",
+      "reason": "Previously published 2026-09-25; same substantive plot",
+      "youtube": "https://www.youtube.com/watch?v=70LscUp8MfY"
+    },
+    {
+      "story": "Nafpaktos and Galaxidi",
+      "reason": "Material Galaxidi itinerary overlap with 2026-10-01 publication",
+      "youtube": "https://www.youtube.com/watch?v=9OvlDDtjDIU"
+    }
+  ],
+  "local_review_candidates": [
+    {
+      "story": "Tinos: Pyrgos and Volax",
+      "file": "Tinos_Pyrgos_Volax.mp4",
+      "sha256": "d2ed20cfb1b315db0cf2745f991b2bacadc8fc482197941efb6f6039edbc2701",
+      "seconds": 95.822,
+      "visual_review": "COMPLETED_DIRECT_MODEL_INSPECTION",
+      "audio": "Original AAC payload and timing preserved; actual listening unperformed",
+      "status": "BLOCKED_PENDING_AUDIO_REVIEW",
+      "target_platforms": []
+    },
+    {
+      "story": "Green flash",
+      "file": "Prasini_Analampi.mp4",
+      "sha256": "7c6867f7008de3f5223c8c5c66e1b606f4e53a8f6c04ffc895c2bcb3fbacfb6c",
+      "seconds": 89.086,
+      "visual_review": "COMPLETED_DIRECT_MODEL_INSPECTION",
+      "audio": "Removed unclear observation instruction at original 77.450–82.700 seconds, retained other decoded samples and re-encoded AAC; actual listening unperformed",
+      "status": "BLOCKED_PENDING_AUDIO_REVIEW",
+      "target_platforms": []
+    },
+    {
+      "story": "Door experiment",
+      "file": "Peirama_Tis_Portas.mp4",
+      "sha256": "cad16f6b7c89cea875954ad464ae54d2085b680fb81823e3b201c07ec684dd67",
+      "seconds": 93.373,
+      "visual_review": "COMPLETED_DIRECT_MODEL_INSPECTION",
+      "audio": "Original AAC and decoded PCM preserved; actual listening unperformed",
+      "status": "BLOCKED_PENDING_AUDIO_REVIEW",
+      "target_platforms": []
+    },
+    {
+      "story": "Bell Witch",
+      "file": "Bell_Witch.mp4",
+      "sha256": "e0a19a96ca7003fee65b4b9ffa21123868c6ddd78b6bd43c416ad3de780c1edf",
+      "seconds": 101.346,
+      "visual_review": "COMPLETED_DIRECT_MODEL_INSPECTION",
+      "audio": "Original AAC payload and timing preserved; actual listening unperformed",
+      "status": "BLOCKED_PENDING_AUDIO_REVIEW",
+      "target_platforms": []
+    }
+  ],
+  "incomplete": {
+    "story": "False consensus",
+    "status": "BLOCKED_MISSING_CLEAN_SCENE_ASSETS_AND_AUDIO_REVIEW",
+    "safe_subtitle_cues": 55,
+    "original_audio_recovered": true,
+    "final_repaired_mp4_created": false
+  },
+  "final_review": {
+    "actual_audio_input_supported": false,
+    "actual_listening_performed": false,
+    "passed_final_review": false,
+    "audio_hash_identity_is_not_listening": true,
+    "required_next": "Listen to each exact candidate in full; record result against its SHA256 before any release."
+  },
+  "full_program": {
+    "ready": false,
+    "new_program_original_stories_created": 0,
+    "local_repairs_are_not_a_complete_daily_batch": true,
+    "azure_actual_tier_and_zero_cost_allowance": "UNVERIFIED",
+    "daily_target_per_platform": 10,
+    "one_platform_per_story": true,
+    "crossposting_allowed": false
+  },
+  "operational_safety": {
+    "published_content_modified": false,
+    "legacy_workflows_reactivated": false,
+    "all_existing_holds_preserved": true,
+    "backdating": false,
+    "blind_retries": false
+  },
+  "superseded_evidence_note": "Historical PASSED claims for the Oct8 delivery journal do not approve current media. Actual review found clipped false-consensus captions and duplicate/overlap exclusions.",
+  "next_release": "Existing user publication authorization remains. Actual audio review, fresh dedupe, one-platform assignment, required native settings, and an explicit verified batch must precede a release. Do not restore legacy shared records."
+}
