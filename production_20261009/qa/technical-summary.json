@@ -1,0 +1,315 @@
+[
+  {
+    "series": "relationships",
+    "format": "carousel",
+    "card_count": 7,
+    "youtube_complete": true,
+    "resolution": "1080x1080",
+    "files": [
+      {
+        "path": "production_20261009/final/relationships/card-01.jpg",
+        "sha256": "9fea624c357f07650f2ec724e514ea41d4f0a4e4d56b96cb64dfe894a1b18b64",
+        "bytes": 244872
+      },
+      {
+        "path": "production_20261009/final/relationships/card-02.jpg",
+        "sha256": "6d85ab3be8afbc0e33caea9e96935260bca05cdfb8b316e9c2a871df54ca2e7b",
+        "bytes": 290053
+      },
+      {
+        "path": "production_20261009/final/relationships/card-03.jpg",
+        "sha256": "c831068f51bea0b3e166664ab9439dcd7dd93fd0e864a83f45f38c8fb98853fb",
+        "bytes": 271112
+      },
+      {
+        "path": "production_20261009/final/relationships/card-04.jpg",
+        "sha256": "6e231f78df613ce6f27321c8bf41a6d7d93f15279821a48affd4ba5d0459614f",
+        "bytes": 289454
+      },
+      {
+        "path": "production_20261009/final/relationships/card-05.jpg",
+        "sha256": "647e2c48420d8c90587494b81ae6ebf920d1d676749fbc57e8fa1fe81c5e7027",
+        "bytes": 276737
+      },
+      {
+        "path": "production_20261009/final/relationships/card-06.jpg",
+        "sha256": "a145d07e038bb8e2fd0cbb5f5b780946ac4f5047007a883c0c783a64190e8e5f",
+        "bytes": 319308
+      },
+      {
+        "path": "production_20261009/final/relationships/card-07.jpg",
+        "sha256": "fc33974bb9766b6254e15deb8e4d495af62faa2e40e57a968ad2dfbf65ff797f",
+        "bytes": 307998
+      },
+      {
+        "path": "production_20261009/final/relationships/youtube-short.mp4",
+        "sha256": "bfadadfb93cc39d56204116b72ab3cbad838b4c1346285a787ee0752d5830934",
+        "bytes": 1687425
+      }
+    ],
+    "release_status": "PENDING_FINAL_VISUAL_REVIEW"
+  },
+  {
+    "series": "survival",
+    "format": "carousel",
+    "card_count": 9,
+    "youtube_complete": true,
+    "resolution": "1080x1080",
+    "files": [
+      {
+        "path": "production_20261009/final/survival/card-01.jpg",
+        "sha256": "1c6a1e4146ac8d706e32a03f51d3499061f77c763cbe8dad01119fe1fb216e6f",
+        "bytes": 235060
+      },
+      {
+        "path": "production_20261009/final/survival/card-02.jpg",
+        "sha256": "fa6c1ecc6043d5a1371940e5cd3f718f73a3abb89a8ee8ec45f1dc5b8bcd1584",
+        "bytes": 287365
+      },
+      {
+        "path": "production_20261009/final/survival/card-03.jpg",
+        "sha256": "65e267c5bae7dc4b59e5bd39e81c8b2f36f28e616879df54f5a00ccd196b16f4",
+        "bytes": 243922
+      },
+      {
+        "path": "production_20261009/final/survival/card-04.jpg",
+        "sha256": "6247f0f47390beaa391116b3e4a79cdc3f78a94f1854cf41c880b9244c3e409e",
+        "bytes": 250237
+      },
+      {
+        "path": "production_20261009/final/survival/card-05.jpg",
+        "sha256": "d4f32e82a6b7c8adfecdb3e035a7d5030e85669a50188b3f852cbf6e6ebfcd74",
+        "bytes": 270783
+      },
+      {
+        "path": "production_20261009/final/survival/card-06.jpg",
+        "sha256": "a5b0f4e4aab0383f619804e82ecc67d39b4dac2a01407c80618f4d96fd529f62",
+        "bytes": 290094
+      },
+      {
+        "path": "production_20261009/final/survival/card-07.jpg",
+        "sha256": "40d5df4bcf49809553b92d358eeac8f78c68e2bfd58812a0c1b5fc7526d69eb2",
+        "bytes": 238716
+      },
+      {
+        "path": "production_20261009/final/survival/card-08.jpg",
+        "sha256": "838bfebdf6375c16d324345427d872cd9f7d45cfedcf7c89abcb7e314a456b94",
+        "bytes": 235060
+      },
+      {
+        "path": "production_20261009/final/survival/card-09.jpg",
+        "sha256": "49027e71e0f730b86860070ca44e66faebc8ff817c9b8bab9203ee717e22a9ef",
+        "bytes": 271574
+      },
+      {
+        "path": "production_20261009/final/survival/youtube-short.mp4",
+        "sha256": "c513407ac7266f1440cedcdfe0920f2c022c242e62a7cf29e27c51cc0ae64e70",
+        "bytes": 1982445
+      }
+    ],
+    "release_status": "PENDING_FINAL_VISUAL_REVIEW"
+  },
+  {
+    "series": "dog_bartender",
+    "format": "carousel",
+    "card_count": 4,
+    "youtube_complete": true,
+    "resolution": "1080x1080",
+    "files": [
+      {
+        "path": "production_20261009/final/dog_bartender/card-01.jpg",
+        "sha256": "c9dfa9f855760cea882bf36e3bbd034fefa421886b3258ee1983798d152d67c9",
+        "bytes": 284694
+      },
+      {
+        "path": "production_20261009/final/dog_bartender/card-02.jpg",
+        "sha256": "a6d443555993a1956883efe6443b7dccfef004ee21000a6f8faac770bc47e47d",
+        "bytes": 310885
+      },
+      {
+        "path": "production_20261009/final/dog_bartender/card-03.jpg",
+        "sha256": "f91aac60ad407bbb5adc25ce267df43196cc04475dbaa1bea4460cd2984a7a50",
+        "bytes": 324435
+      },
+      {
+        "path": "production_20261009/final/dog_bartender/card-04.jpg",
+        "sha256": "c57b2d25faaa3dd85f1d2c663bbde7ffaa89d3752b0c795f7fe563c752ce5891",
+        "bytes": 370687
+      },
+      {
+        "path": "production_20261009/final/dog_bartender/youtube-short.mp4",
+        "sha256": "c18e4ac5af1939b31a0447227240ad7493bad2494a273f46a5592a376a6460f2",
+        "bytes": 1022625
+      }
+    ],
+    "release_status": "PENDING_FINAL_VISUAL_REVIEW"
+  },
+  {
+    "series": "zodiac",
+    "format": "carousel",
+    "card_count": 6,
+    "youtube_complete": true,
+    "resolution": "1080x1080",
+    "files": [
+      {
+        "path": "production_20261009/final/zodiac/card-01.jpg",
+        "sha256": "7e635ff6f41c693bc21a827abac8f4ecd106d6aadc56f83b0a12c81659aa618a",
+        "bytes": 323392
+      },
+      {
+        "path": "production_20261009/final/zodiac/card-02.jpg",
+        "sha256": "40b7f779584d4e548405fd64a9a0a5a883f8e379b377c1a871737ef1f26d0150",
+        "bytes": 337897
+      },
+      {
+        "path": "production_20261009/final/zodiac/card-03.jpg",
+        "sha256": "3ab4040ed0909d95505d20393918f65070ab95fe04621090cf35339d1af728d5",
+        "bytes": 332141
+      },
+      {
+        "path": "production_20261009/final/zodiac/card-04.jpg",
+        "sha256": "2f5c935299bd9b22d3234998d80037fdb5a6c949cd6653652840442c45d1346a",
+        "bytes": 431509
+      },
+      {
+        "path": "production_20261009/final/zodiac/card-05.jpg",
+        "sha256": "2da03a221753a440315214c2d415ecd27ff95f8d65fcf81e5e4a8f32ebd61e6d",
+        "bytes": 367848
+      },
+      {
+        "path": "production_20261009/final/zodiac/card-06.jpg",
+        "sha256": "352048db5a82c9ca7012a7b53d31db39462a4efeac3203d473664a93a2ed208a",
+        "bytes": 394265
+      },
+      {
+        "path": "production_20261009/final/zodiac/youtube-short.mp4",
+        "sha256": "47c361a027cc1404ac18867cfaf16475646e6086c1cda9923ee94864b22a632a",
+        "bytes": 1680915
+      }
+    ],
+    "release_status": "PENDING_FINAL_VISUAL_REVIEW"
+  },
+  {
+    "series": "greece_two_day_trip",
+    "duration_seconds": 95.822,
+    "voice": "el-GR-NestorasNeural",
+    "subtitle_cues": 52,
+    "resolution": "1080x1920",
+    "avatar": false,
+    "background_music": false,
+    "decode_passed": true,
+    "sha256": "da4b095af77a5450e4b6db72deb4354002362fabe489aff268d35a538f2c161b",
+    "release_status": "PENDING_FINAL_VISUAL_REVIEW"
+  },
+  {
+    "series": "love_soul_relationship",
+    "format": "carousel",
+    "card_count": 5,
+    "youtube_complete": true,
+    "resolution": "1080x1080",
+    "files": [
+      {
+        "path": "production_20261009/final/love_soul_relationship/card-01.jpg",
+        "sha256": "64692f767eb0b29791a8c8e3a07a2e4256ad5e6d8482ae2f994d88efe8a72b87",
+        "bytes": 296493
+      },
+      {
+        "path": "production_20261009/final/love_soul_relationship/card-02.jpg",
+        "sha256": "68eeb2c0a2582f68623ea6cdfa56edbe7a47cd280435c2382ff51d171ef7c11e",
+        "bytes": 297560
+      },
+      {
+        "path": "production_20261009/final/love_soul_relationship/card-03.jpg",
+        "sha256": "cbd1f66660f86ac88e6c7e30c16f0cde1a2fedc55e1c3ab34334a98864ae4bb6",
+        "bytes": 307891
+      },
+      {
+        "path": "production_20261009/final/love_soul_relationship/card-04.jpg",
+        "sha256": "0f070d4afdd6085727da5268a6fc388bae2c6b98bbf85bb05c53be184f4b28cd",
+        "bytes": 340683
+      },
+      {
+        "path": "production_20261009/final/love_soul_relationship/card-05.jpg",
+        "sha256": "364475d3d50900dc8f446ada495d88699b5db4a523f0369edf031a0ecd293282",
+        "bytes": 365368
+      },
+      {
+        "path": "production_20261009/final/love_soul_relationship/youtube-short.mp4",
+        "sha256": "6b63701437d1ec601de632190468fd51ce5b8cd21a344d5bcf6ad6c8e0601d68",
+        "bytes": 1316008
+      }
+    ],
+    "release_status": "PENDING_FINAL_VISUAL_REVIEW"
+  },
+  {
+    "series": "strange_real_phenomenon",
+    "duration_seconds": 94.322,
+    "voice": "el-GR-NestorasNeural",
+    "subtitle_cues": 50,
+    "resolution": "1080x1920",
+    "avatar": false,
+    "background_music": false,
+    "decode_passed": true,
+    "sha256": "a18209dbe64c94450eb7829ea0557e84955f0a72df1405ceddbd0f4680ea3f0b",
+    "release_status": "PENDING_FINAL_VISUAL_REVIEW"
+  },
+  {
+    "series": "documented_experiments",
+    "duration_seconds": 93.373,
+    "voice": "el-GR-NestorasNeural",
+    "subtitle_cues": 51,
+    "resolution": "1080x1920",
+    "avatar": false,
+    "background_music": false,
+    "decode_passed": true,
+    "sha256": "7ffec7b819a71945b215880d8a79d1085604c7c8509659de5512acf166e0e6ec",
+    "release_status": "PENDING_FINAL_VISUAL_REVIEW"
+  },
+  {
+    "series": "myth_or_truth",
+    "format": "carousel",
+    "card_count": 4,
+    "youtube_complete": true,
+    "resolution": "1080x1080",
+    "files": [
+      {
+        "path": "production_20261009/final/myth_or_truth/card-01.jpg",
+        "sha256": "de6abcf06854d998cebbd4fc12343e0313afebc54821141e137832992e2f2edd",
+        "bytes": 283974
+      },
+      {
+        "path": "production_20261009/final/myth_or_truth/card-02.jpg",
+        "sha256": "43758f131d62de75e7a6a51f432e8fb5d7ec9036fdc094c99f66a12218059958",
+        "bytes": 363584
+      },
+      {
+        "path": "production_20261009/final/myth_or_truth/card-03.jpg",
+        "sha256": "9403f14c5af200105b1b7fd9e36d754b4d0721d77dcb1034b02f281342187e4d",
+        "bytes": 337221
+      },
+      {
+        "path": "production_20261009/final/myth_or_truth/card-04.jpg",
+        "sha256": "1653e419c8ec8d2fd82ceeea5ef70b35171807c527cd80b70085ea16dd95b669",
+        "bytes": 345438
+      },
+      {
+        "path": "production_20261009/final/myth_or_truth/youtube-short.mp4",
+        "sha256": "ace0606a1835b88e14a2e2c72c54b6aecb8943b078b56bce5fa29665c6050f61",
+        "bytes": 1050071
+      }
+    ],
+    "release_status": "PENDING_FINAL_VISUAL_REVIEW"
+  },
+  {
+    "series": "international_legend",
+    "duration_seconds": 101.346,
+    "voice": "el-GR-NestorasNeural",
+    "subtitle_cues": 56,
+    "resolution": "1080x1920",
+    "avatar": false,
+    "background_music": false,
+    "decode_passed": true,
+    "sha256": "0b097963d369525a94d61636ea16e996fdccb1fc30564955e2fb7e71e0c123c0",
+    "release_status": "PENDING_FINAL_VISUAL_REVIEW"
+  }
+]
