@@ -1,0 +1,200 @@
+{
+  "version": 1,
+  "strategy_id": "YOUTUBE_GROWTH_TEN_DAILY_20261008",
+  "program_label": "YOUTUBE_GROWTH_TEN_DAILY",
+  "enabled": false,
+  "state": "TRANSITION_NOT_ACTIVE",
+  "effective_date": "2026-10-08",
+  "timezone": "Europe/Athens",
+  "active_metricool_brand": {
+    "id": 7076410,
+    "label": "Ιστορίες που μας αγγίζουν",
+    "exclusive": true
+  },
+  "providers": [
+    "youtube"
+  ],
+  "daily_target_logical_posts": 10,
+  "destination_target_per_day": 10,
+  "require_explicit_program_attribution": true,
+  "slots": [
+    {
+      "time": "07:00",
+      "category": "youtube_original_01"
+    },
+    {
+      "time": "09:00",
+      "category": "youtube_original_02"
+    },
+    {
+      "time": "10:00",
+      "category": "youtube_original_03"
+    },
+    {
+      "time": "11:00",
+      "category": "youtube_original_04"
+    },
+    {
+      "time": "13:00",
+      "category": "youtube_original_05"
+    },
+    {
+      "time": "15:00",
+      "category": "youtube_original_06"
+    },
+    {
+      "time": "17:00",
+      "category": "youtube_original_07"
+    },
+    {
+      "time": "18:30",
+      "category": "youtube_original_08"
+    },
+    {
+      "time": "20:00",
+      "category": "youtube_original_09"
+    },
+    {
+      "time": "22:00",
+      "category": "youtube_original_10"
+    }
+  ],
+  "slot_policy": "Normal-day time slots are independent of the common content. During the transition, select future safe times after fresh live reconciliation; never backdate or refill cancelled legacy slots.",
+  "transition": {
+    "date": "2026-10-08",
+    "already_published_youtube_videos": 5,
+    "daily_total_limit": 10,
+    "max_additional_new_videos": 5,
+    "count_all_youtube_publications_on_this_local_date": true,
+    "refresh_live_published_and_pending_counts_before_each_create": true,
+    "unpublished_legacy_youtube_destinations": "CANCEL_AFTER_LIVE_READ",
+    "preserve_published_youtube": true,
+    "preserve_facebook_instagram_tiktok": true,
+    "new_youtube_program_must_not_inherit_legacy_pending_posts": true
+  },
+  "active_format_profile": "original_narrated_shorts",
+  "format_profile_status": "SELECTED_PREPARE_AND_REVIEW_BATCH_BEFORE_ENABLE",
+  "format_profiles": {
+    "original_narrated_shorts": {
+      "description": "Ten original narrated vertical videos per normal day.",
+      "shorts": {
+        "count": 10,
+        "min_duration_seconds": 80,
+        "target_duration_seconds": {
+          "min": 80,
+          "max": 110
+        },
+        "max_duration_seconds": 150,
+        "aspect_ratio": "9:16",
+        "resolution": "1080x1920",
+        "no_filler_or_silence_padding": true
+      }
+    }
+  },
+  "require_format_profile_selection_before_enable": true,
+  "production_rules": {
+    "original_script_per_video": true,
+    "independent_of_common_program": true,
+    "legacy_common_media_reuploads": false,
+    "legacy_common_scripts_as_new_videos": false,
+    "carousel_slideshow_adaptations": false,
+    "substantial_original_narrative_or_explanation": true,
+    "distinct_scene_relevant_photographic_or_photorealistic_visuals": true,
+    "no_generic_repeated_cartoon_or_text_only_visuals": true,
+    "children_faces_forbidden": true,
+    "no_filler_or_silence_padding": true,
+    "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+    "max_hashtags": 5,
+    "factual_claims_require_reliable_sources": true,
+    "realistic_ai_content_disclosure_when_applicable": true,
+    "fiction_must_be_identified_as_fiction": true,
+    "folklore_must_be_identified_as_folklore": true
+  },
+  "audio": {
+    "provider": "existing_azure_speech_free_infrastructure",
+    "voice": "el-GR-NestorasNeural",
+    "voice_display_name": "Νέστορας",
+    "burned_in_synchronized_greek_subtitles": true,
+    "avatar_presenter": false,
+    "background_music": false,
+    "voice_substitution": false,
+    "on_voice_unavailable_or_free_limit": "BLOCK affected video until the approved voice is available; never switch voice or use a paid fallback."
+  },
+  "cost_safety": {
+    "free_only": true,
+    "purchases": false,
+    "topups": false,
+    "upgrades": false,
+    "paid_tests": false,
+    "paid_generation": false,
+    "paid_fallbacks": false,
+    "check_remaining_free_capacity_before_generation": true
+  },
+  "qa": {
+    "release_status": "PASSED_FINAL_REVIEW",
+    "fail_closed": true,
+    "inspect_exact_final_upload_files": true,
+    "check_text_spelling_hook_continuity_cta_caption_hashtags": true,
+    "check_scene_relevance_crop_readability": true,
+    "check_voice_subtitle_sync_duration_dead_air_audio": true,
+    "check_platform_format_sources_licenses_ai_disclosure": true,
+    "technical_render_success_is_not_review": true,
+    "bind_review_to_final_file_sha256": true
+  },
+  "duplicate_policy": {
+    "fresh_check_before_every_create": true,
+    "history_sources": [
+      "live Metricool brand 7076410 published and scheduled history",
+      "Notion Social Media Content Archive",
+      "repository history, delivery journals, manifests and release readbacks"
+    ],
+    "compare": [
+      "series",
+      "core_topic",
+      "title",
+      "hook",
+      "caption",
+      "fingerprint",
+      "episode_or_part_number",
+      "script",
+      "media_identity"
+    ],
+    "cross_program_and_cross_platform_story_identity": true,
+    "exact_or_substantially_similar": "BLOCK_AND_PREPARE_DIFFERENT_ORIGINAL",
+    "unknown_write_result": "Reconcile by live read before any retry."
+  },
+  "publishing": {
+    "only_provider": "youtube",
+    "forbid_mixed_provider_records": true,
+    "program_attribution_field": "program_label",
+    "program_attribution_value": "YOUTUBE_GROWTH_TEN_DAILY",
+    "never_backdate": true,
+    "require_fresh_strategy_read_before_every_write": true,
+    "live_readback_fields": [
+      "brand",
+      "date",
+      "time",
+      "providers",
+      "media",
+      "draft",
+      "autoPublish",
+      "IDs",
+      "UUIDs",
+      "status"
+    ],
+    "pending_is_not_published": true,
+    "provider_failure_retry_only_after_confirmed_not_published": true
+  },
+  "queue_policy": {
+    "minimum_reviewed_days": 2,
+    "target_reviewed_days": 3,
+    "scope": "Independent original YouTube videos only; common packs do not count.",
+    "lease_namespace": "state/production_leases/youtube-growth",
+    "archive_history_immutable": true
+  },
+  "editorial_focus": [
+    "Original human stories with a complete narrative",
+    "Factual curiosities and history supported by reliable sources",
+    "Occasional folklore explicitly labelled as folklore"
+  ]
+}

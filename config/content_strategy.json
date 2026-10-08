@@ -1,10 +1,10 @@
 {
-  "version": 5,
+  "version": 6,
   "timezone": "Europe/Athens",
   "strategy_id": "CURRENT_TEN_DAILY_20260927",
   "program_label": "CURRENT_TEN_DAILY",
   "effective_at": "2026-09-27T18:08:00+03:00",
-  "priority": "SOLE_ACTIVE_SOCIAL_STRATEGY",
+  "priority": "ACTIVE_COMMON_SOCIAL_STRATEGY",
   "active_schedule": true,
   "active_metricool_brand": {
     "id": 7076410,
@@ -12,7 +12,7 @@
     "exclusive": true
   },
   "daily_target_logical_posts": 10,
-  "destination_target_per_day": 40,
+  "destination_target_per_day": 30,
   "slots": [
     {
       "time": "07:00",
@@ -79,8 +79,7 @@
   "platforms": {
     "facebook": "Native carousel for card slots; Reel for narrated video slots.",
     "instagram": "Native carousel for card slots; Reel for narrated video slots.",
-    "tiktok": "Native photo post for card slots using silent JPEG/WebP 1080x1080 cards and autoAddMusic=true; normal video for narrated slots with auto-music off.",
-    "youtube": "Complete vertical slideshow/Short for card slots using every card and one original instrumental layer; complete Short/video for narrated slots without cutting content."
+    "tiktok": "Native photo post for card slots using silent JPEG/WebP 1080x1080 cards and autoAddMusic=true; normal video for narrated slots with auto-music off."
   },
   "narrated_video_rules": {
     "ratio": "9:16",
@@ -100,8 +99,8 @@
     "narration": false,
     "each_card_has_distinct_scene_relevant_visual": true,
     "tiktok_auto_add_music": true,
-    "youtube_one_original_instrumental_layer": true,
-    "no_blank_text_only_generic_cartoon_or_repeated_visuals": true
+    "no_blank_text_only_generic_cartoon_or_repeated_visuals": true,
+    "youtube_adaptations_enabled": false
   },
   "special_visual_rules": {
     "zodiac": "One daily zodiac carousel upload at 11:00. It must contain six two-sign comparison units covering all twelve signs exactly once. Every comparison must visibly identify both signs. Never split this standing series into six separate uploads; obsolete single-sign formats are hard failures.",
@@ -128,12 +127,16 @@
     ],
     "block_exact_or_near_duplicate": true,
     "compare": [
-      "title",
+      "series",
       "core_topic",
+      "title",
       "hook",
       "caption",
-      "fingerprint"
-    ]
+      "fingerprint",
+      "episode_or_part_number",
+      "media_identity"
+    ],
+    "cross_program_history_required": true
   },
   "quality_first_catch_up": {
     "enabled": true,
@@ -343,7 +346,8 @@
     "minimum_reviewed_queue_days": 2,
     "target_reviewed_queue_days": 3,
     "planning_horizon_days": 7,
-    "replenish_one_complete_day_daily": true
+    "replenish_one_complete_day_daily": true,
+    "scope": "CURRENT_TEN_DAILY common FB/IG/TikTok program; independent YouTube targets do not consume this program's ten slots."
   },
   "transition": {
     "activated_on": "2026-09-27",
@@ -361,5 +365,34 @@
     "theme": "relationships",
     "exact_card_count": "Follow the approved daily source pack and platform limits; no separate zodiac member uploads.",
     "note": "The 11:00 zodiac standing series counts as exactly one of the ten daily posts."
+  },
+  "providers": [
+    "facebook",
+    "instagram",
+    "tiktok"
+  ],
+  "excluded_providers": [
+    "youtube"
+  ],
+  "provider_routing_override": {
+    "effective_date": "2026-10-08",
+    "common_program": "CURRENT_TEN_DAILY",
+    "common_providers": [
+      "facebook",
+      "instagram",
+      "tiktok"
+    ],
+    "youtube_program": "YOUTUBE_GROWTH_TEN_DAILY",
+    "youtube_strategy_file": "config/youtube_growth_strategy.json",
+    "youtube_from_common_flow": false,
+    "normal_day_targets_after_youtube_activation": {
+      "common_logical_posts": 10,
+      "common_destinations": 30,
+      "youtube_original_videos": 10,
+      "youtube_destinations": 10,
+      "combined_distinct_logical_items": 20,
+      "combined_provider_destinations": 40
+    },
+    "published_history_mutations": false
   }
 }

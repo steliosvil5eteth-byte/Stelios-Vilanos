@@ -1,5 +1,5 @@
 {
-  "version": 6,
+  "version": 7,
   "timezone": "Europe/Athens",
   "program_label": "CURRENT_TEN_DAILY",
   "current_strategy": "CURRENT_TEN_DAILY_20260927",
@@ -40,12 +40,48 @@
   "quality_first_catch_up": true,
   "preserve_history_for_dedupe": true,
   "legacy_recovery_enabled": false,
-  "rule": "Only brand 7076410. Completion requires exactly 10 baseline uploads per network and 40 provider destinations. Zodiac contributes one carousel upload containing six two-sign comparison units covering all 12 signs exactly once. Full QA and fresh dedupe required. Preserve published history. Never backdate.",
+  "rule": "Only brand 7076410. CURRENT_TEN_DAILY produces exactly ten common logical posts per day for Facebook, Instagram and TikTok: 30 provider destinations. YouTube is excluded from this common flow and is governed exclusively by config/youtube_growth_strategy.json. Preserve all common series, formats, scripts, slot times, published history and existing non-YouTube deliveries. Require exact-final QA, fresh deduplication and live readback. Never backdate.",
   "paused_categories": [],
   "full_ten_daily_effective_date": "2026-09-28",
   "target_count_semantics": "logical_posts",
   "target_member_post_count_per_network": 10,
-  "target_provider_destinations": 40,
-  "completed_member_post_count_per_network": 0
+  "target_provider_destinations": 30,
+  "completed_member_post_count_per_network": 0,
+  "providers": [
+    "facebook",
+    "instagram",
+    "tiktok"
+  ],
+  "provider_routing_override": {
+    "effective_date": "2026-10-08",
+    "common_program": "CURRENT_TEN_DAILY",
+    "common_providers": [
+      "facebook",
+      "instagram",
+      "tiktok"
+    ],
+    "youtube_program": "YOUTUBE_GROWTH_TEN_DAILY",
+    "youtube_strategy_file": "config/youtube_growth_strategy.json",
+    "youtube_from_common_flow": false,
+    "normal_day_targets_after_youtube_activation": {
+      "common_logical_posts": 10,
+      "common_destinations": 30,
+      "youtube_original_videos": 10,
+      "youtube_destinations": 10,
+      "combined_distinct_logical_items": 20,
+      "combined_provider_destinations": 40
+    },
+    "published_history_mutations": false
+  },
+  "independent_youtube": {
+    "program_label": "YOUTUBE_GROWTH_TEN_DAILY",
+    "strategy_file": "config/youtube_growth_strategy.json",
+    "enabled": false,
+    "status": "TRANSITION_NOT_ACTIVE",
+    "daily_target": 10,
+    "transition_date": "2026-10-08",
+    "already_published_on_transition_date": 5,
+    "max_additional_new_videos_on_transition_date": 5,
+    "counts_require_fresh_live_reconciliation": true
+  }
 }
-

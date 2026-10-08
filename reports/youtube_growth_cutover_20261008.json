@@ -1,0 +1,608 @@
+{
+  "program": "YOUTUBE_GROWTH_TEN_DAILY",
+  "date": "2026-10-08",
+  "brand_id": 7076410,
+  "timezone": "Europe/Athens",
+  "status": "LEGACY_QUEUE_CANCELLED_NEW_MEDIA_IN_PRODUCTION",
+  "cancellations": [
+    {
+      "uuid": "-4283568355360488397",
+      "oldId": 390603371,
+      "newId": 390864997,
+      "mode": "youtube_only_to_draft",
+      "passed": true,
+      "readback": {
+        "id": 390864997,
+        "publicationDate": {
+          "dateTime": "2026-10-08T09:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-10-08T07:31:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Αν μυρίζει αέριο, μην αγγίζετε ηλεκτρικούς διακόπτες, μην ανάβετε φλόγα, αερίστε μόνο αν είναι ασφαλές, απομακρυνθείτε και καλέστε το 112 από ασφαλές σημείο. Μην επιστρέψετε πριν τον έλεγχο.\n\nΠηγές: Gas Networks Ireland — What to do if you smell gas · SGN — What to do if you smell gas · Υπηρεσία 112 Ελλάδας. Γενική ενημέρωση ασφάλειας. Οι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Επιβίωση #Ασφάλεια #ΔιαρροήΑερίου #112 #Σπίτι",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-14570771940071661420.mp4"
+        ],
+        "autoPublish": false,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": true,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": false,
+          "isAiGenerated": false
+        },
+        "youtubeData": {
+          "title": "Μυρίζει αέριο: οι κινήσεις που δεν κάνουν σπίθα",
+          "type": "short",
+          "privacy": "public",
+          "category": "EDUCATION",
+          "madeForKids": false,
+          "isAiGeneratedContent": true,
+          "notifySubscribers": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "-4283568355360488397",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      }
+    },
+    {
+      "uuid": "-3195901586094079596",
+      "oldId": 390603823,
+      "newId": 390865162,
+      "mode": "youtube_only_to_draft",
+      "passed": true,
+      "readback": {
+        "id": 390865162,
+        "publicationDate": {
+          "dateTime": "2026-10-08T10:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-10-08T07:32:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Σκύλος Μπάρμαν — Κυριακή 23:58\n\nΌταν η δουλειά χτυπά την πόρτα πριν τελειώσει το Σαββατοκύριακο, ο μπάρμαν σερβίρει ανθρακούχο νερό, λεμόνι και ένα πολύ αυστηρό airplane mode.\n\nΠρωτότυπη μυθοπλασία. Οι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#ΣκύλοςΜπάρμαν #Χιούμορ #Δουλειά #Κυριακή #Ιστορίες",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-1688923927406540362.mp4"
+        ],
+        "autoPublish": false,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": true,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": false,
+          "isAiGenerated": false
+        },
+        "youtubeData": {
+          "title": "Σκύλος Μπάρμαν: Κυριακή 23:58",
+          "type": "short",
+          "privacy": "public",
+          "category": "ENTERTAINMENT",
+          "madeForKids": false,
+          "isAiGeneratedContent": true,
+          "notifySubscribers": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "-3195901586094079596",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      }
+    },
+    {
+      "uuid": "-3104381034110696490",
+      "oldId": 390604325,
+      "newId": 390865178,
+      "mode": "youtube_only_to_draft",
+      "passed": true,
+      "readback": {
+        "id": 390865178,
+        "publicationDate": {
+          "dateTime": "2026-10-08T11:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-10-08T07:32:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Χάλασε το Wi‑Fi στις διακοπές — ποιος φτιάχνει το router και ποιος ανακαλύπτει ξανά το ηλιοβασίλεμα;\n\nΈξι συγκρίσεις, όλα τα 12 ζώδια ακριβώς μία φορά. Περιεχόμενο μόνο για ψυχαγωγία, όχι επιστημονική περιγραφή προσωπικότητας. Οι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ζώδια #Διακοπές #Ζευγάρια #WiFi #Ψυχαγωγία",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-4764472938700551446.mp4"
+        ],
+        "autoPublish": false,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": true,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": false,
+          "isAiGenerated": false
+        },
+        "youtubeData": {
+          "title": "Ζώδια: χάλασε το Wi‑Fi στις διακοπές",
+          "type": "short",
+          "privacy": "public",
+          "category": "ENTERTAINMENT",
+          "madeForKids": false,
+          "isAiGeneratedContent": true,
+          "notifySubscribers": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "-3104381034110696490",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      }
+    },
+    {
+      "uuid": "7135582515505546690",
+      "oldId": 390604819,
+      "newId": 390865191,
+      "mode": "youtube_only_to_draft",
+      "passed": true,
+      "readback": {
+        "id": 390865191,
+        "publicationDate": {
+          "dateTime": "2026-10-08T15:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-10-08T07:32:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Το ποδήλατο του πατέρα\n\nΜερικά πράγματα δεν επισκευάζονται με μία κουβέντα. Αλλά μια ειλικρινής πρόταση μπορεί να γίνει το πρώτο εργαλείο πάνω στον πάγκο.\n\nΠρωτότυπη μυθοπλασία. Οι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Αδέλφια #Πατέρας #Συγχώρεση #Οικογένεια #Ιστορίες",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-4159260458026865297.mp4"
+        ],
+        "autoPublish": false,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": true,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": false,
+          "isAiGenerated": false
+        },
+        "youtubeData": {
+          "title": "Το ποδήλατο του πατέρα",
+          "type": "short",
+          "privacy": "public",
+          "category": "ENTERTAINMENT",
+          "madeForKids": false,
+          "isAiGeneratedContent": true,
+          "notifySubscribers": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "7135582515505546690",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      }
+    },
+    {
+      "uuid": "2135361205242841756",
+      "oldId": 390605592,
+      "newId": 390865206,
+      "mode": "youtube_only_to_draft",
+      "passed": true,
+      "readback": {
+        "id": 390865206,
+        "publicationDate": {
+          "dateTime": "2026-10-08T20:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-10-08T07:32:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Το κρακ στα δάχτυλα προκαλεί αρθρίτιδα; Οι διαθέσιμες μελέτες δεν δείχνουν ότι αποτελεί παράγοντα κινδύνου για οστεοαρθρίτιδα του χεριού. Αυτό δεν σημαίνει ότι αγνοούμε πόνο ή επίμονο πρήξιμο.\n\nΠηγές: Deweber et al., JABFM (2011), PMID 21383216 · Castellanos & Axelrod, Ann Rheum Dis (1990), PMID 2344210. Γενική ενημέρωση, όχι ιατρική διάγνωση. Οι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#ΜύθοςΉΑλήθεια #Αρθρίτιδα #Δάχτυλα #Επιστήμη #Υγεία",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-11647313949147695419.mp4"
+        ],
+        "autoPublish": false,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": true,
+        "twitterData": {
+          "type": "POST"
+        },
+        "instagramData": {
+          "autoPublish": false,
+          "isAiGenerated": false
+        },
+        "youtubeData": {
+          "title": "Το κρακ στα δάχτυλα προκαλεί αρθρίτιδα;",
+          "type": "short",
+          "privacy": "public",
+          "category": "EDUCATION",
+          "madeForKids": false,
+          "isAiGeneratedContent": true,
+          "notifySubscribers": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "2135361205242841756",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      }
+    },
+    {
+      "uuid": "1517024098265220252",
+      "oldId": 390605926,
+      "newId": 390865222,
+      "mode": "remove_only_youtube_provider",
+      "passed": true,
+      "readback": {
+        "id": 390865222,
+        "publicationDate": {
+          "dateTime": "2026-10-08T13:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-10-08T07:32:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Διήμερο σε Ναύπακτο και Γαλαξίδι: οχυρωμένο λιμάνι και κάστρο την πρώτη ημέρα, ναυτική ιστορία και αρχοντικά τη δεύτερη. Ελέγξτε επίσημα ωράρια, πρόσβαση και καιρό πριν ξεκινήσετε.\n\nΠηγές: Visit Greece — Galaxidi · Υπουργείο Πολιτισμού/Οδυσσεύς — Κάστρο Ναυπάκτου. Οι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη και δεν υποκαθιστούν χάρτη ή επιτόπια ενημέρωση. Συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ναύπακτος #Γαλαξίδι #ΣτερεάΕλλάδα #Διήμερο #Ελλάδα",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-1350527688641340745.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "facebookData": {
+          "type": "REEL",
+          "title": "Διήμερο σε Ναύπακτο και Γαλαξίδι"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "type": "REEL",
+          "showReelOnFeed": true,
+          "isAiGenerated": true
+        },
+        "tiktokData": {
+          "privacyOption": "PUBLIC_TO_EVERYONE",
+          "title": "Διήμερο σε Ναύπακτο και Γαλαξίδι",
+          "photoCoverIndex": 0,
+          "isAigc": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "1517024098265220252",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      }
+    },
+    {
+      "uuid": "-1185450267594568207",
+      "oldId": 390606102,
+      "newId": 390865236,
+      "mode": "remove_only_youtube_provider",
+      "passed": true,
+      "readback": {
+        "id": 390865236,
+        "publicationDate": {
+          "dateTime": "2026-10-08T17:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-10-08T07:32:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Το moonbow είναι πραγματικό σεληνιακό ουράνιο τόξο: το φως της Σελήνης διαθλάται και ανακλάται σε σταγόνες νερού. Στους καταρράκτες του Yosemite μπορεί να εμφανιστεί όταν συμπέσουν ισχυρή ροή, καθαρός ουρανός και σωστή γωνία της Σελήνης.\n\nΠηγή: U.S. National Park Service — Lower Yosemite Fall Viewing Area. Οι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη. Συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Moonbow #Σελήνη #Καταρράκτης #ΦυσικάΦαινόμενα #Επιστήμη",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-16316084174306716174.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "facebookData": {
+          "type": "REEL",
+          "title": "Το ουράνιο τόξο που εμφανίζεται τη νύχτα"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "type": "REEL",
+          "showReelOnFeed": true,
+          "isAiGenerated": true
+        },
+        "tiktokData": {
+          "privacyOption": "PUBLIC_TO_EVERYONE",
+          "title": "Το ουράνιο τόξο που εμφανίζεται τη νύχτα",
+          "photoCoverIndex": 0,
+          "isAigc": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "-1185450267594568207",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      }
+    },
+    {
+      "uuid": "-3528729913796770475",
+      "oldId": 390606315,
+      "newId": 390865244,
+      "mode": "remove_only_youtube_provider",
+      "passed": true,
+      "readback": {
+        "id": 390865244,
+        "publicationDate": {
+          "dateTime": "2026-10-08T18:30:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-10-08T07:32:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Η ψευδής συναίνεση είναι η τάση να υπερεκτιμούμε πόσοι άλλοι συμμερίζονται τη δική μας επιλογή. Οι Ross, Greene και House την τεκμηρίωσαν σε τέσσερις μελέτες το 1977.\n\nΠηγή: Ross, Greene & House, Journal of Experimental Social Psychology 13(3), 1977, DOI 10.1016/0022-1031(77)90049-X. Οι εικόνες είναι φωτορεαλιστικές ιστορικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη· δεν απεικονίζουν πραγματικούς συμμετέχοντες. Συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ψυχολογία #Πείραμα #ΨευδήςΣυναίνεση #ΚοινωνικήΨυχολογία #Επιστήμη",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-15532553290516393112.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "facebookData": {
+          "type": "REEL",
+          "title": "Η πλάνη της ψευδούς συναίνεσης"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "type": "REEL",
+          "showReelOnFeed": true,
+          "isAiGenerated": true
+        },
+        "tiktokData": {
+          "privacyOption": "PUBLIC_TO_EVERYONE",
+          "title": "Η πλάνη της ψευδούς συναίνεσης",
+          "photoCoverIndex": 0,
+          "isAigc": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "-3528729913796770475",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      }
+    },
+    {
+      "uuid": "1283007378597757545",
+      "oldId": 390606520,
+      "newId": 390865255,
+      "mode": "remove_only_youtube_provider",
+      "passed": true,
+      "readback": {
+        "id": 390865255,
+        "publicationDate": {
+          "dateTime": "2026-10-08T22:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "creationDate": {
+          "dateTime": "2026-10-08T07:32:00",
+          "timezone": "Europe/Athens"
+        },
+        "text": "Οι σέλκι της σκωτσέζικης λαογραφίας ζουν ως φώκιες στη θάλασσα και παίρνουν ανθρώπινη μορφή στη στεριά. Στις ιστορίες της «συζύγου σέλκι», το κρυμμένο δέρμα γίνεται σύμβολο χαμένης ελευθερίας. Λαογραφική αφήγηση — όχι πραγματικό γεγονός.\n\nΠηγές: Historic Environment Scotland — Orkney’s folklore: 5 Orcadian folktales · National Museums Scotland — Selkies in the Scottish imagination. Οι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη. Συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Σέλκι #Σκωτία #Όρκνεϊ #Λαογραφία #ΔιεθνείςΘρύλοι",
+        "firstCommentText": "",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-15059519393348737132.mp4"
+        ],
+        "autoPublish": true,
+        "saveExternalMediaFiles": false,
+        "mediaAltText": [
+          null
+        ],
+        "shortener": false,
+        "draft": false,
+        "twitterData": {
+          "type": "POST"
+        },
+        "facebookData": {
+          "type": "REEL",
+          "title": "Η σέλκι που έκρυψαν τη θάλασσά της"
+        },
+        "instagramData": {
+          "autoPublish": true,
+          "type": "REEL",
+          "showReelOnFeed": true,
+          "isAiGenerated": true
+        },
+        "tiktokData": {
+          "privacyOption": "PUBLIC_TO_EVERYONE",
+          "title": "Η σέλκι που έκρυψαν τη θάλασσά της",
+          "photoCoverIndex": 0,
+          "isAigc": true
+        },
+        "hasNotReadNotes": false,
+        "uuid": "1283007378597757545",
+        "creatorUserMail": "stelios.vil5eteth@gmail.com",
+        "creatorUserId": 5403385
+      }
+    }
+  ],
+  "non_youtube_unchanged": true,
+  "already_published_youtube": 5,
+  "active_legacy_pending_youtube": 0,
+  "new_material_scheduled": 0,
+  "root_writer_guards_updated": true,
+  "reporting_automation_scope_updates": [
+    {
+      "id": "6ab92eda9f2881918f4dc7d38b10444b",
+      "title": "Nightly Social Audit",
+      "verified": true,
+      "updated_at": "2026-10-08T04:39:45.693688+00:00"
+    },
+    {
+      "id": "6ab75736088081918b9708b8d0b3e851",
+      "title": "06:30 Ten-Slot Gate",
+      "verified": true,
+      "updated_at": "2026-10-08T04:40:07.413817+00:00"
+    },
+    {
+      "id": "6ab7914757308191bddd5803ed4aa2e6",
+      "title": "Εβδομαδιαίο πλάνο social media",
+      "verified": true,
+      "updated_at": "2026-10-08T04:40:24.890963+00:00"
+    },
+    {
+      "id": "6abd304580f481918a04babd07acc53e",
+      "title": "Τάσεις social και A/B tests",
+      "verified": true,
+      "updated_at": "2026-10-08T04:40:39.003534+00:00"
+    }
+  ],
+  "youtube_strategy_enabled": false,
+  "source_checkpoint": "interactive live Metricool readback 2026-10-08",
+  "do_not_recreate_legacy_companions": true
+}

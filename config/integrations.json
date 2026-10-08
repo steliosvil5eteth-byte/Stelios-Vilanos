@@ -11,7 +11,8 @@
       "tiktok",
       "youtube"
     ],
-    "retired_brand_policy": "Do not schedule, publish, repair, reconcile or create new work on any previous Metricool brand. Historical references remain audit-only outside the active workflow."
+    "retired_brand_policy": "Do not schedule, publish, repair, reconcile or create new work on any previous Metricool brand. Historical references remain audit-only outside the active workflow.",
+    "networks_semantics": "Connected-network inventory, not a publishing allowlist. Each program must use its own providers."
   },
   "content": {
     "strategy_file": "config/content_strategy.json",
@@ -20,12 +21,13 @@
     "notion_rules_page_id": "3def2345-b318-8173-9711-e29c134da859",
     "notion_current_program_page_id": "3e5f2345-b318-812d-a35a-f980ed6d873a",
     "notion_archive_database_id": "38724259aa5143d09dc3b8cf606577b1",
-    "notion_archive_data_source_id": "46cd5cf4-5f7e-46e8-b0ef-274aeadbdb52"
+    "notion_archive_data_source_id": "46cd5cf4-5f7e-46e8-b0ef-274aeadbdb52",
+    "youtube_growth_strategy_file": "config/youtube_growth_strategy.json"
   },
   "publishing": {
     "program_label": "CURRENT_TEN_DAILY",
     "daily_target_logical_posts_per_network": 10,
-    "daily_target_destinations": 40,
+    "daily_target_destinations": 30,
     "slots_local_time": [
       "07:00",
       "09:00",
@@ -41,12 +43,11 @@
     "publish_to_all_connected_socials": [
       "facebook",
       "instagram",
-      "tiktok",
-      "youtube"
+      "tiktok"
     ],
     "require_user_confirmation": false,
     "quality_first_catch_up": true,
-    "rule": "Only brand 7076410. Exactly ten baseline uploads per network/day and 40 destinations total. Zodiac is one daily carousel upload containing six two-sign comparison units covering all 12 signs exactly once. Full QA and fresh dedupe required. Preserve published history. Never backdate.",
+    "rule": "Only brand 7076410. CURRENT_TEN_DAILY produces exactly ten common logical posts per day for Facebook, Instagram and TikTok: 30 provider destinations. YouTube is excluded from this common flow and is governed exclusively by config/youtube_growth_strategy.json. Preserve all common series, formats, scripts, slot times, published history and existing non-YouTube deliveries. Require exact-final QA, fresh deduplication and live readback. Never backdate.",
     "active_categories": [
       "relationships",
       "survival",
@@ -64,11 +65,32 @@
     "zodiac_member_posts": 1,
     "daily_target_standing_series_per_network": 10,
     "daily_target_physical_member_posts_per_network": 10,
-    "zodiac_comparison_units_per_carousel": 6
+    "zodiac_comparison_units_per_carousel": 6,
+    "provider_routing_override": {
+      "effective_date": "2026-10-08",
+      "common_program": "CURRENT_TEN_DAILY",
+      "common_providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "youtube_program": "YOUTUBE_GROWTH_TEN_DAILY",
+      "youtube_strategy_file": "config/youtube_growth_strategy.json",
+      "youtube_from_common_flow": false,
+      "normal_day_targets_after_youtube_activation": {
+        "common_logical_posts": 10,
+        "common_destinations": 30,
+        "youtube_original_videos": 10,
+        "youtube_destinations": 10,
+        "combined_distinct_logical_items": 20,
+        "combined_provider_destinations": 40
+      },
+      "published_history_mutations": false
+    }
   },
   "runner": {
-    "max_logical_posts_per_day": 10,
-    "duplicate_policy": "one_active_post_per_date_category_platform; zodiac is one carousel upload with six comparison units",
+    "max_logical_posts_per_day": 20,
+    "duplicate_policy": "One active post per program, local date, slot/category and platform; compare story/topic/script/media identity across all programs and platforms before every create.",
     "require_future_schedule": true,
     "hands_off_mode": true,
     "quality_check_before_publish": true,
@@ -80,15 +102,22 @@
     "fail_closed": true,
     "max_standing_series_per_day": 10,
     "expected_physical_member_posts_per_day_per_network": 10,
-    "expected_provider_destinations_per_day": 40
+    "expected_provider_destinations_per_day": 30,
+    "max_logical_posts_per_program_per_day": 10,
+    "max_common_logical_posts_per_day": 10,
+    "max_youtube_original_videos_per_day": 10,
+    "expected_provider_destinations_scope": "CURRENT_TEN_DAILY only; the independent YouTube target is declared by its own strategy.",
+    "normal_day_combined_provider_destinations_after_youtube_activation": 40,
+    "required_strategy_reload_before_every_write": true,
+    "youtube_strategy_file": "config/youtube_growth_strategy.json"
   },
   "audio": {
     "card_posts": {
       "narration": false,
       "tiktok_auto_add_music": true,
-      "youtube_single_original_instrumental_layer": true,
       "facebook_instagram_native_carousel_music_optional": true,
-      "duplicate_audio_layers_forbidden": true
+      "duplicate_audio_layers_forbidden": true,
+      "youtube_adaptations_enabled": false
     },
     "narrated_posts": {
       "provider": "azure_speech_f0",
@@ -116,4 +145,4 @@
     "paid_tests": false,
     "paid_generation_without_explicit_user_approval": false
   }
-}\n
+}

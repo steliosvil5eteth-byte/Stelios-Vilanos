@@ -51,14 +51,18 @@ Repository για αυτοματοποίηση δημιουργίας, οργά�
 - Active brand: **Ιστορίες που μας αγγίζουν**
 - Brand ID: `7076410`
 - Timezone: `Europe/Athens`
-- Networks: Facebook, Instagram, TikTok, YouTube
+- Connected networks: Facebook, Instagram, TikTok, YouTube. Publishing providers are selected separately by each program.
 - This is the **only operational brand**. Previous Metricool brands are historical/audit-only and must not be used for new scheduling, publishing or repair.
 
-## Active program
+## Active programs
 
-The sole active schedule is **CURRENT_TEN_DAILY** with exactly 10 baseline uploads per network per day at 07:00, 09:00, 10:00, 11:00, 13:00, 15:00, 17:00, 18:30, 20:00 and 22:00 Europe/Athens. The 11:00 Zodiac series is exactly one of those ten uploads: one carousel containing six two-sign comparison units covering all 12 signs exactly once. It must never be split into six separate uploads.
+From 2026-10-08, **CURRENT_TEN_DAILY** continues unchanged for Facebook, Instagram and TikTok: ten common logical posts at 07:00, 09:00, 10:00, 11:00, 13:00, 15:00, 17:00, 18:30, 20:00 and 22:00 Europe/Athens, giving 30 provider destinations per normal day. Its authoritative configuration is `config/content_strategy.json`. The 11:00 Zodiac series remains one carousel containing six two-sign comparison units covering all 12 signs exactly once.
 
-Publishing is quality-first: a failed slot is repaired and published later the same day after full QA and a fresh duplicate check. A standing series is complete only when its current required output is complete; the Zodiac gate requires one current-format carousel covering all 12 signs via six pair-comparison units. Historical illustrations are not valid final visuals under the current photographic/photorealistic rule.
+YouTube is excluded from the common publishing flow. Its separate **YOUTUBE_GROWTH_TEN_DAILY** strategy is `config/youtube_growth_strategy.json`, with a target of ten original videos per normal day. The selected format is ten original narrated vertical videos, at least 80 seconds each, targeting 80–110 seconds with a maximum of 150 seconds and no filler. The strategy remains disabled until the actual batch is ready and reviewed. Existing common carousel/slideshow adaptations and scripts cannot be relabelled as the new YouTube videos.
+
+Once both programs are active, their normal-day targets are 20 distinct logical items and 40 provider destinations: ten shared posts delivered to three networks, plus ten separate YouTube videos. Each program has its own daily limit of ten. On 2026-10-08, five YouTube videos already published count toward the daily total, so at most five additional new YouTube videos may be created, subject to a fresh live count before each create.
+
+Publishing is quality-first: preserve published history, inspect the exact final files, require PASSED_FINAL_REVIEW, check all history for duplicates, and verify every write by live readback. Cancel only unpublished legacy YouTube destinations; preserve the Facebook, Instagram and TikTok provider records, schedules, copy and media. Missing legacy YouTube adaptations must never trigger repair of the common program.
 
 ## HeyGen
 

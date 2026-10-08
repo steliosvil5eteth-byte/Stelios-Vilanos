@@ -146,5 +146,20 @@
       "caption": "Η Bell Witch είναι θρύλος του Τενεσί που συνδέθηκε με την οικογένεια Bell, παράξενους ήχους και μια υποτιθέμενη φωνή στο αγρόκτημά τους. Οι γνωστές αφηγήσεις είναι λαογραφία και μεταγενέστερες καταγραφές, όχι επιστημονική απόδειξη υπερφυσικού γεγονότος.\n\nΠηγές: Tennessee Department of Tourist Development — Bell Witch folklore · Tennessee State Museum ghost-story programming. Οι εικόνες είναι φωτορεαλιστικές ιστορικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη. Συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#BellWitch #Τενεσί #Λαογραφία #Θρύλοι #Ιστορίες",
       "visual_prompt": "Nine-panel photorealistic early-1800s Tennessee frontier folklore contact sheet: isolated Bell family farmhouse at dusk, family hearing knocks inside wooden room, candle-lit hallway with no visible ghost, worried father, young woman listening near window, neighbors visiting, later storytellers around lantern, cave and rural landscape, final empty farmhouse at night. Historically plausible clothing and interiors, atmospheric but not graphic, no literal monster, no supernatural proof, no text, no logos, no watermark, 3 by 3 grid."
     }
-  ]
+  ],
+  "publishing_targets": [
+    "facebook",
+    "instagram",
+    "tiktok"
+  ],
+  "provider_routing_override": {
+    "effective_date": "2026-10-08",
+    "youtube_adaptations": {
+      "generate": false,
+      "publish": false,
+      "replacement_strategy_file": "config/youtube_growth_strategy.json"
+    },
+    "preserve_all_existing_non_youtube_media_and_copy": true,
+    "reason": "User requested a separate original YouTube program; this common pack remains for Facebook, Instagram and TikTok only."
+  }
 }

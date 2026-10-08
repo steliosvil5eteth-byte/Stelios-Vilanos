@@ -1,6 +1,6 @@
 {
-  "version": 23,
-  "updated_on": "2026-09-30",
+  "version": 24,
+  "updated_on": "2026-10-08",
   "timezone": "Europe/Athens",
   "strategy_id": "CURRENT_TEN_DAILY_20260927",
   "program_label": "CURRENT_TEN_DAILY",
@@ -24,7 +24,7 @@
     "22:00"
   ],
   "daily_logical_target_per_network": 10,
-  "daily_destination_target": 40,
+  "daily_destination_target": 30,
   "final_render_qa_gate": {
     "active": true,
     "require_final_render_visual_inspection": true,
@@ -47,8 +47,8 @@
     "card_posts": {
       "tiktok_auto_add_music": true,
       "tiktok_photo_assets_silent": true,
-      "youtube_one_original_instrumental_layer": true,
-      "narration": false
+      "narration": false,
+      "youtube_adaptations_enabled": false
     },
     "narrated_posts": {
       "voice": "el-GR-NestorasNeural",
@@ -102,7 +102,7 @@
     }
   },
   "deduplication_policy": {
-    "logical_key": "local_date + category + platform",
+    "logical_key": "program + local_date + slot_or_category + platform",
     "fresh_live_read_before_write": true,
     "protect_published_successes": true,
     "block_exact_and_near_duplicate_topic": true,
@@ -111,11 +111,12 @@
     "expected_active_provider_instances_per_slot": {
       "default": 1,
       "zodiac": 1
-    }
+    },
+    "cross_program_story_identity_check": true
   },
   "quality_first_catch_up": {
     "enabled": true,
-    "rule": "Only brand 7076410. Ten posts/day, one per active category after full QA and fresh dedupe. Preserve published history. Never backdate.",
+    "rule": "Only brand 7076410. CURRENT_TEN_DAILY produces exactly ten common logical posts per day for Facebook, Instagram and TikTok: 30 provider destinations. YouTube is excluded from this common flow and is governed exclusively by config/youtube_growth_strategy.json. Preserve all common series, formats, scripts, slot times, published history and existing non-YouTube deliveries. Require exact-final QA, fresh deduplication and live readback. Never backdate.",
     "reschedule_following_unpublished_slots_if_needed": true
   },
   "retired_operational_context": {
@@ -155,11 +156,11 @@
       "archived manifests",
       "old queue snapshots"
     ],
-    "completion_rule": "A day is complete only when all 10 active CURRENT_TEN_DAILY slots have current-format final media, PASSED_FINAL_REVIEW and successful live Metricool readback.",
+    "completion_rule": "CURRENT_TEN_DAILY is complete only when all ten common slots have current-format final media, PASSED_FINAL_REVIEW and successful live Metricool readback for Facebook, Instagram and TikTok. Missing legacy YouTube adaptations must never trigger common-flow repair.",
     "missing_or_blocked_slot": "FAIL_CLOSED",
     "independent_second_check_local_time": "06:30",
     "expected_physical_member_posts_per_day": 10,
-    "expected_destinations_per_day": 40
+    "expected_destinations_per_day": 30
   },
   "daily_standing_series_target": 10,
   "repository_write_safety": {
@@ -168,5 +169,44 @@
     "max_push_attempts": 5,
     "blind_push_retry_forbidden": true,
     "rule": "Any workflow writing media-output must fetch/rebase immediately before push and retry only ref-lock/non-fast-forward races with a fresh fetch/rebase. Content/render failures are never blindly retried."
+  },
+  "providers": [
+    "facebook",
+    "instagram",
+    "tiktok"
+  ],
+  "provider_routing_override": {
+    "effective_date": "2026-10-08",
+    "common_program": "CURRENT_TEN_DAILY",
+    "common_providers": [
+      "facebook",
+      "instagram",
+      "tiktok"
+    ],
+    "youtube_program": "YOUTUBE_GROWTH_TEN_DAILY",
+    "youtube_strategy_file": "config/youtube_growth_strategy.json",
+    "youtube_from_common_flow": false,
+    "normal_day_targets_after_youtube_activation": {
+      "common_logical_posts": 10,
+      "common_destinations": 30,
+      "youtube_original_videos": 10,
+      "youtube_destinations": 10,
+      "combined_distinct_logical_items": 20,
+      "combined_provider_destinations": 40
+    },
+    "published_history_mutations": false
+  },
+  "youtube_strategy_file": "config/youtube_growth_strategy.json",
+  "independent_youtube_gate": {
+    "strategy_file": "config/youtube_growth_strategy.json",
+    "require_strategy_enabled": true,
+    "require_explicit_program_attribution": true,
+    "legacy_common_media_or_script_reuse": "BLOCK",
+    "mixed_provider_record": "BLOCK",
+    "daily_target": 10,
+    "transition_date": "2026-10-08",
+    "already_published_on_transition_date": 5,
+    "max_additional_new_videos_on_transition_date": 5,
+    "refresh_live_counts_before_create": true
   }
 }
