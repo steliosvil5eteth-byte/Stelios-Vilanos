@@ -3465,6 +3465,97 @@
         "tiktok": "https://www.tiktok.com/@steliosvilanos/video/7694338705678552352"
       },
       "exact_platform_publication_timestamps_available": false
+    },
+    {
+      "job_id": "RECOVERY_20261008_2109/RECOVERY_FALSE_CONSENSUS_20261008",
+      "date": "2026-10-08",
+      "theme": "documented_experiments",
+      "title": "Γιατί πιστεύουμε ότι «όλοι» συμφωνούν μαζί μας;",
+      "script": "Πόσο συχνά πιστεύουμε ότι οι περισσότεροι άνθρωποι θα έκαναν την ίδια επιλογή με εμάς; Το 1977, οι Lee Ross, David Greene και Pamela House δημοσίευσαν τέσσερις μελέτες για αυτό που ονόμασαν επίδραση ψευδούς συναίνεσης. Οι συμμετέχοντες αντιμετώπιζαν υποθετικές ή πραγματικές επιλογές και στη συνέχεια εκτιμούσαν πόσοι άλλοι θα διάλεγαν όπως εκείνοι. Σε ένα από τα πιο γνωστά σενάρια, φοιτητές έπρεπε να αποφασίσουν αν θα περπατούσαν στην πανεπιστημιούπολη φορώντας μια πινακίδα που διαφήμιζε ένα εστιατόριο. Όσοι δέχτηκαν, έτειναν να πιστεύουν ότι περισσότεροι συμφοιτητές θα δέχονταν επίσης. Όσοι αρνήθηκαν, εκτιμούσαν συχνότερα ότι και οι άλλοι θα αρνούνταν. Το μοτίβο δεν αφορούσε μόνο τις προβλέψεις. Οι συμμετέχοντες έβλεπαν την επιλογή τους ως σχετικά συνηθισμένη και λιγότερο αποκαλυπτική για τον χαρακτήρα. Αντίθετα, περιέγραφαν την αντίθετη επιλογή ως πιο ασυνήθιστη και περισσότερο ενδεικτική προσωπικότητας. Οι ερευνητές βρήκαν το φαινόμενο και σε ερωτηματολόγια και σε αυθεντικές καταστάσεις σύγκρουσης. Αυτό δεν σημαίνει ότι κάθε άνθρωπος κάνει πάντα το ίδιο λάθος, ούτε ότι δεν μπορούμε ποτέ να εκτιμήσουμε σωστά τι πιστεύουν οι άλλοι. Δείχνει όμως έναν συστηματικό πειρασμό: χρησιμοποιούμε τη δική μας απόφαση ως σημείο αναφοράς και υπερεκτιμούμε πόσο κοινή είναι. Η μελέτη ήταν προϊόν της εποχής της και τα δείγματά της δεν αντιπροσωπεύουν όλο τον κόσμο. Παραμένει όμως ιστορικά σημαντική, επειδή έδωσε όνομα και πειραματική μορφή σε μια καθημερινή πλάνη. Την επόμενη φορά που θα πείτε «όλοι έτσι σκέφτονται», ποια πραγματικά δεδομένα θα έχετε; Μια χρήσιμη άσκηση είναι να ζητάμε ανεξάρτητες απαντήσεις, πριν αποκαλύψουμε τη δική μας θέση και επηρεάσουμε τη συζήτηση. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "caption": "«Όλοι έτσι θα έκαναν». Το ξέρουμε ή το υποθέτουμε;\n\nΗ ψευδής συναίνεση είναι η τάση να θεωρούμε τη δική μας επιλογή πιο συνηθισμένη απ’ όσο την εκτιμούν όσοι επιλέγουν διαφορετικά. Οι Lee Ross, David Greene και Pamela House μελέτησαν αυτό το μοτίβο σε τέσσερις μελέτες που δημοσιεύτηκαν το 1977. Ένα από τα σενάρια αφορούσε μια διαφημιστική πινακίδα στην πανεπιστημιούπολη.\n\nΟι εικόνες είναι ενδεικτικές φωτορεαλιστικές αναπαραστάσεις με τεχνητή νοημοσύνη· δεν απεικονίζουν τους πραγματικούς ερευνητές ή συμμετέχοντες. Οι σύγχρονες σκηνές εικονογραφούν εφαρμογές στην καθημερινότητα. Συνθετική ελληνική αφήγηση: Νέστορας.\n\nΠηγή: Ross, Greene & House, Journal of Experimental Social Psychology, 13(3), 279–301 (1977).\nhttps://doi.org/10.1016/0022-1031(77)90049-X\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ψυχολογία #ΨευδήςΣυναίνεση #ΚοινωνικήΨυχολογία #Πείραμα #Ιστορίες",
+      "hook": "Πιστεύεις ότι «όλοι» συμφωνούν;",
+      "fingerprint": "documented_experiments|ross-greene-house-1977-false-consensus-four-studies",
+      "production_job_id": "RECOVERY_20261008_2109",
+      "production_batch_id": "RECOVERY_20261008_2109",
+      "source_slot_id": "CURRENT_TEN_20261008_documented_experiments",
+      "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+      "status": "blocked",
+      "production_state": "MEDIA_READY_AWAITING_FINAL_AUDIO_REVIEW",
+      "scheduled_time": null,
+      "timezone": "Europe/Athens",
+      "platforms": [],
+      "intended_platforms": [
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": null,
+      "metricool_uuid": null,
+      "legacy_inactive_metricool_draft": {
+        "id": "390888157",
+        "uuid": "-3528729913796770475",
+        "draft": true,
+        "autoPublish": false,
+        "providers": [
+          "facebook",
+          "instagram",
+          "tiktok"
+        ],
+        "usage": "Historical inactive shared-program draft. Not a newly created YouTube post or release."
+      },
+      "notion_page_id": "3f2f2345-b318-8121-8211-fe12da480dab",
+      "media_url": null,
+      "duration_seconds": 96.646,
+      "artifacts": [
+        {
+          "file_name": "Psefdis_Synainesi_2026-10-08.mp4",
+          "library_file_id": "libfile_0fd2493b02248191a6e6c7dca34e38ed",
+          "file_id": "file_00000000644481f6b1b642714f31bee0",
+          "version": 0,
+          "sha256": "94e50f723007c17d442620e8d6180c2f60a65dc4ebf15c67d6e16f7c50ef8295"
+        },
+        {
+          "file_name": "Lezanta_Psefdis_Synainesi.txt",
+          "library_file_id": "libfile_42924dd163c4819199a5cf9637f53d39",
+          "file_id": "file_00000000389c81f6b48cc9e5dcaf77be",
+          "version": 0,
+          "sha256": "3ca14da3e4345106a8de866e89a129fff4fd25a70fe6bd32812bea7853cad3b5"
+        },
+        {
+          "file_name": "Psefdis_Synainesi_Pigi_2026-10-08.zip",
+          "library_file_id": "libfile_361f5bc8345081919b1afbca54be08a2",
+          "file_id": "file_00000000c28881f6bff5909ff27f51dd",
+          "version": 0,
+          "sha256": "eb97d111887c105c082a8623f923d765b44bd76a17f362fba4193f36cd9335d6"
+        }
+      ],
+      "quality_check": {
+        "passed_final_review": false,
+        "actual_audio_listening_performed": false,
+        "exact_final_visual_review_completed": true,
+        "visual_scope": "All 9 scenes and 54 subtitle cues, opening hook and complete CTA",
+        "technical_review_passed": true,
+        "full_mp4_decode_passed": true,
+        "source_fact_check_passed": true,
+        "caption_review_passed": true,
+        "sha256": "94e50f723007c17d442620e8d6180c2f60a65dc4ebf15c67d6e16f7c50ef8295",
+        "voice": "el-GR-NestorasNeural",
+        "burned_greek_subtitles": true,
+        "audio_subtitle_sync_confirmed_by_listening": false,
+        "avatar_presenter": false,
+        "background_music": false,
+        "resolution": "1080x1920",
+        "fps": 30
+      },
+      "platform_status": {},
+      "public_urls": {},
+      "terminal": false,
+      "publication_enabled": false,
+      "scheduling_enabled": false,
+      "new_tts_calls": 0,
+      "new_metricool_writes": 0,
+      "recovery_record": "state/recovery_false_consensus_20261008_2109.json",
+      "last_reconciled_at": "2026-10-08T18:37:08Z",
+      "reconciliation_note": "Existing unpublished False Consensus story repaired from its original Nestoras WAV and nine new illustrative images. Exact final MP4 is saved for human actual-audio review; it has not been uploaded to Metricool, scheduled or published. Fresh history/queue check remains required before any release. Old four-file audio exception is not applied to this item."
     }
   ]
 }
