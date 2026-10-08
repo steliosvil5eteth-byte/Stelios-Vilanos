@@ -13,7 +13,7 @@
     ]
   },
   "owner": "interactive-recovery-20261008-root",
-  "status": "ACTIVE_MANUAL_RELEASE",
+  "status": "COMPLETED_RELEASED",
   "started_at": "2026-10-08T16:34:00Z",
   "expires_at": "2026-10-08T17:34:00Z",
   "authorization": {
@@ -70,44 +70,53 @@
       "source_notion_page": "3f3f2345b31881409db5ee868dff626d",
       "platform": "instagram",
       "media_sha256": "d2ed20cfb1b315db0cf2745f991b2bacadc8fc482197941efb6f6039edbc2701",
-      "delivery_status": "SCHEDULED_PENDING",
+      "delivery_status": "PUBLISHED",
       "metricool_id": "391353442",
       "metricool_uuid": "3757779727790130426",
-      "scheduled_at": "2026-10-08T19:42:00+03:00"
+      "scheduled_at": "2026-10-08T19:42:00+03:00",
+      "public_url": "https://www.instagram.com/reel/DePY72XAW7c/",
+      "provider_id": "https://www.instagram.com/reel/DePY72XAW7c/"
     },
     {
       "story_fingerprint": "RECOVERY_GREEN_FLASH_20261008",
       "source_notion_page": "3f3f2345b31881b9b512c8f6a435c05e",
       "platform": "facebook",
       "media_sha256": "7c6867f7008de3f5223c8c5c66e1b606f4e53a8f6c04ffc895c2bcb3fbacfb6c",
-      "delivery_status": "SCHEDULED_PENDING",
+      "delivery_status": "PUBLISHED",
       "metricool_id": "391354660",
       "metricool_uuid": "8474262344644053993",
-      "scheduled_at": "2026-10-08T19:45:00+03:00"
+      "scheduled_at": "2026-10-08T19:45:00+03:00",
+      "public_url": "https://facebook.com/reel/1762777144933208",
+      "provider_id": "1762777144933208"
     },
     {
       "story_fingerprint": "RECOVERY_DOOR_EXPERIMENT_20261008",
       "source_notion_page": "3f3f2345b31881c38bb7c9007d63eada",
       "platform": "youtube",
       "media_sha256": "cad16f6b7c89cea875954ad464ae54d2085b680fb81823e3b201c07ec684dd67",
-      "delivery_status": "SCHEDULED_PENDING",
+      "delivery_status": "PUBLISHED",
       "metricool_id": "391354358",
       "metricool_uuid": "5902858299946320594",
-      "scheduled_at": "2026-10-08T19:44:00+03:00"
+      "scheduled_at": "2026-10-08T19:44:00+03:00",
+      "public_url": "https://www.youtube.com/shorts/LmYmxMJjdtw",
+      "provider_id": "LmYmxMJjdtw"
     },
     {
       "story_fingerprint": "RECOVERY_BELL_WITCH_20261008",
       "source_notion_page": "3f3f2345b31881d8ba49c282a2b67bf2",
       "platform": "tiktok",
       "media_sha256": "e0a19a96ca7003fee65b4b9ffa21123868c6ddd78b6bd43c416ad3de780c1edf",
-      "delivery_status": "SCHEDULED_PENDING",
+      "delivery_status": "PUBLISHED",
       "metricool_id": "391354040",
       "metricool_uuid": "588557238060466501",
-      "scheduled_at": "2026-10-08T19:43:00+03:00"
+      "scheduled_at": "2026-10-08T19:43:00+03:00",
+      "public_url": "https://www.tiktok.com/@steliosvilanos/video/7694338705678552352",
+      "provider_id": "7694338705678552352"
     }
   ],
   "automatic_production_enabled": false,
   "crossposting_allowed": false,
   "credit_budget": 0,
-  "last_reconciled_at": "2026-10-08T16:39:20Z"
+  "last_reconciled_at": "2026-10-08T16:48:34Z",
+  "released_at": "2026-10-08T16:48:34Z"
 }

@@ -3231,7 +3231,7 @@
       "source_slot_id": "PLATFORM_SPECIFIC_TEN_DAILY:2026-10-08:RECOVERY_TINOS_PYRGOS_VOLAX_20261008",
       "production_batch_id": "RECOVERY_20261008_1925",
       "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
-      "status": "scheduled",
+      "status": "published",
       "scheduled_time": "2026-10-08T19:42:00+03:00",
       "timezone": "Europe/Athens",
       "platforms": [
@@ -3257,21 +3257,28 @@
         "background_music": false,
         "resolution": "1080x1920",
         "fps": 30,
-        "live_readback_status": "PENDING",
+        "live_readback_status": "PUBLISHED",
         "draft": false,
         "autoPublish": true
       },
-      "last_reconciled_at": "2026-10-08T16:39:20Z",
+      "last_reconciled_at": "2026-10-08T16:48:34Z",
       "platform_status": {
         "instagram": {
-          "status": "PENDING",
+          "status": "PUBLISHED",
+          "id": "https://www.instagram.com/reel/DePY72XAW7c/",
+          "public_url": "https://www.instagram.com/reel/DePY72XAW7c/",
           "source_post_id": "391353442",
           "source_uuid": "3757779727790130426",
-          "confirmed_at_utc": "2026-10-08T16:39:20Z"
+          "confirmed_at_utc": "2026-10-08T16:45:26Z"
         }
       },
-      "terminal": false,
-      "reconciliation_note": "One newly created record for one platform only, direct local-file Metricool upload with exact CDN SHA256 match. Scheduled-PENDING is not Published. Superseded shared records and automatic workflows were not reactivated."
+      "terminal": true,
+      "reconciliation_note": "Final provider status PUBLISHED and exact public URL verified in brand 7076410; one platform per story. Scheduled time and confirmation time are distinct. Uploaded file bytes matched the exact reviewed repair SHA256. Actual audio listening was not performed; release followed the informed, bounded user instruction.",
+      "confirmed_at_utc": "2026-10-08T16:45:26Z",
+      "public_urls": {
+        "instagram": "https://www.instagram.com/reel/DePY72XAW7c/"
+      },
+      "exact_platform_publication_timestamps_available": false
     },
     {
       "job_id": "RECOVERY_20261008_1925/RECOVERY_GREEN_FLASH_20261008",
@@ -3286,7 +3293,7 @@
       "source_slot_id": "PLATFORM_SPECIFIC_TEN_DAILY:2026-10-08:RECOVERY_GREEN_FLASH_20261008",
       "production_batch_id": "RECOVERY_20261008_1925",
       "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
-      "status": "scheduled",
+      "status": "published",
       "scheduled_time": "2026-10-08T19:45:00+03:00",
       "timezone": "Europe/Athens",
       "platforms": [
@@ -3312,21 +3319,28 @@
         "background_music": false,
         "resolution": "1080x1920",
         "fps": 30,
-        "live_readback_status": "PENDING",
+        "live_readback_status": "PUBLISHED",
         "draft": false,
         "autoPublish": true
       },
-      "last_reconciled_at": "2026-10-08T16:39:20Z",
+      "last_reconciled_at": "2026-10-08T16:48:34Z",
       "platform_status": {
         "facebook": {
-          "status": "PENDING",
+          "status": "PUBLISHED",
+          "id": "1762777144933208",
+          "public_url": "https://facebook.com/reel/1762777144933208",
           "source_post_id": "391354660",
           "source_uuid": "8474262344644053993",
-          "confirmed_at_utc": "2026-10-08T16:39:20Z"
+          "confirmed_at_utc": "2026-10-08T16:48:34Z"
         }
       },
-      "terminal": false,
-      "reconciliation_note": "One newly created record for one platform only, direct local-file Metricool upload with exact CDN SHA256 match. Scheduled-PENDING is not Published. Superseded shared records and automatic workflows were not reactivated."
+      "terminal": true,
+      "reconciliation_note": "Final provider status PUBLISHED and exact public URL verified in brand 7076410; one platform per story. Scheduled time and confirmation time are distinct. Uploaded file bytes matched the exact reviewed repair SHA256. Actual audio listening was not performed; release followed the informed, bounded user instruction.",
+      "confirmed_at_utc": "2026-10-08T16:48:34Z",
+      "public_urls": {
+        "facebook": "https://facebook.com/reel/1762777144933208"
+      },
+      "exact_platform_publication_timestamps_available": false
     },
     {
       "job_id": "RECOVERY_20261008_1925/RECOVERY_DOOR_EXPERIMENT_20261008",
@@ -3341,7 +3355,7 @@
       "source_slot_id": "PLATFORM_SPECIFIC_TEN_DAILY:2026-10-08:RECOVERY_DOOR_EXPERIMENT_20261008",
       "production_batch_id": "RECOVERY_20261008_1925",
       "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
-      "status": "scheduled",
+      "status": "published",
       "scheduled_time": "2026-10-08T19:44:00+03:00",
       "timezone": "Europe/Athens",
       "platforms": [
@@ -3367,21 +3381,28 @@
         "background_music": false,
         "resolution": "1080x1920",
         "fps": 30,
-        "live_readback_status": "PENDING",
+        "live_readback_status": "PUBLISHED",
         "draft": false,
         "autoPublish": true
       },
-      "last_reconciled_at": "2026-10-08T16:39:20Z",
+      "last_reconciled_at": "2026-10-08T16:48:34Z",
       "platform_status": {
         "youtube": {
-          "status": "PENDING",
+          "status": "PUBLISHED",
+          "id": "LmYmxMJjdtw",
+          "public_url": "https://www.youtube.com/shorts/LmYmxMJjdtw",
           "source_post_id": "391354358",
           "source_uuid": "5902858299946320594",
-          "confirmed_at_utc": "2026-10-08T16:39:20Z"
+          "confirmed_at_utc": "2026-10-08T16:45:26Z"
         }
       },
-      "terminal": false,
-      "reconciliation_note": "One newly created record for one platform only, direct local-file Metricool upload with exact CDN SHA256 match. Scheduled-PENDING is not Published. Superseded shared records and automatic workflows were not reactivated."
+      "terminal": true,
+      "reconciliation_note": "Final provider status PUBLISHED and exact public URL verified in brand 7076410; one platform per story. Scheduled time and confirmation time are distinct. Uploaded file bytes matched the exact reviewed repair SHA256. Actual audio listening was not performed; release followed the informed, bounded user instruction.",
+      "confirmed_at_utc": "2026-10-08T16:45:26Z",
+      "public_urls": {
+        "youtube": "https://www.youtube.com/shorts/LmYmxMJjdtw"
+      },
+      "exact_platform_publication_timestamps_available": false
     },
     {
       "job_id": "RECOVERY_20261008_1925/RECOVERY_BELL_WITCH_20261008",
@@ -3396,7 +3417,7 @@
       "source_slot_id": "PLATFORM_SPECIFIC_TEN_DAILY:2026-10-08:RECOVERY_BELL_WITCH_20261008",
       "production_batch_id": "RECOVERY_20261008_1925",
       "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
-      "status": "scheduled",
+      "status": "published",
       "scheduled_time": "2026-10-08T19:43:00+03:00",
       "timezone": "Europe/Athens",
       "platforms": [
@@ -3422,21 +3443,28 @@
         "background_music": false,
         "resolution": "1080x1920",
         "fps": 30,
-        "live_readback_status": "PENDING",
+        "live_readback_status": "PUBLISHED",
         "draft": false,
         "autoPublish": true
       },
-      "last_reconciled_at": "2026-10-08T16:39:20Z",
+      "last_reconciled_at": "2026-10-08T16:48:34Z",
       "platform_status": {
         "tiktok": {
-          "status": "PENDING",
+          "status": "PUBLISHED",
+          "id": "7694338705678552352",
+          "public_url": "https://www.tiktok.com/@steliosvilanos/video/7694338705678552352",
           "source_post_id": "391354040",
           "source_uuid": "588557238060466501",
-          "confirmed_at_utc": "2026-10-08T16:39:20Z"
+          "confirmed_at_utc": "2026-10-08T16:45:26Z"
         }
       },
-      "terminal": false,
-      "reconciliation_note": "One newly created record for one platform only, direct local-file Metricool upload with exact CDN SHA256 match. Scheduled-PENDING is not Published. Superseded shared records and automatic workflows were not reactivated."
+      "terminal": true,
+      "reconciliation_note": "Final provider status PUBLISHED and exact public URL verified in brand 7076410; one platform per story. Scheduled time and confirmation time are distinct. Uploaded file bytes matched the exact reviewed repair SHA256. Actual audio listening was not performed; release followed the informed, bounded user instruction.",
+      "confirmed_at_utc": "2026-10-08T16:45:26Z",
+      "public_urls": {
+        "tiktok": "https://www.tiktok.com/@steliosvilanos/video/7694338705678552352"
+      },
+      "exact_platform_publication_timestamps_available": false
     }
   ]
 }

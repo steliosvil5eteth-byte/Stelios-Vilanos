@@ -426,13 +426,13 @@
       "required_content_identity": "Different complete story, narration and relevant scene sequence from every other platform"
     }
   },
-  "latest_recovery_report": "state/recovery_20261008_evening.json",
-  "last_reconciled_at": "2026-10-08T18:49:33+03:00",
+  "latest_recovery_report": "state/recovery_release_20261008_1925.json",
+  "last_reconciled_at": "2026-10-08T16:48:34Z",
   "bounded_manual_release_authorizations": {
     "RECOVERY_20261008_1925": {
       "batch_id": "RECOVERY_20261008_1925",
       "ledger_path": "state/recovery_release_20261008_1925.json",
-      "enabled": true,
+      "enabled": false,
       "execution_mode": "INTERACTIVE_MANUAL_ONLY",
       "brand_id": 7076410,
       "user_instruction_at": "2026-10-08T19:25:04+03:00",
@@ -475,7 +475,11 @@
       "new_synthesis_allowed": false,
       "credit_budget": 0,
       "scope_rule": "This newer user authorization permits only these four repaired exact assets and assignments despite the earlier audio-listening prerequisite and general production pause. It does not mark final QA passed, re-enable automated production, approve new asset generation, alter duplicate exclusions, or waive access/approval controls.",
-      "transport_restriction": "The auto-review-rejected vidIQ transfer remains prohibited without specific user approval; use direct authorized Metricool publication only."
+      "transport_restriction": "The auto-review-rejected vidIQ transfer remains prohibited without specific user approval; use direct authorized Metricool publication only.",
+      "status": "COMPLETED_ALL_FOUR_PUBLISHED",
+      "consumed_posts": 4,
+      "remaining_new_creates": 0,
+      "completed_at": "2026-10-08T16:48:34Z"
     }
   }
 }

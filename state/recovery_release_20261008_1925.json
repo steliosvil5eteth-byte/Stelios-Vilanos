@@ -4,7 +4,7 @@
   "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
   "brand_id": 7076410,
   "timezone": "Europe/Athens",
-  "status": "ALL_FOUR_SCHEDULED_PENDING",
+  "status": "ALL_FOUR_PUBLISHED",
   "authorization": {
     "user_instruction": "Φτιάξε τα φτιάξε ό,τι μπορείς και ανέβασέ τα",
     "received_at": "2026-10-08T19:25:04+03:00",
@@ -30,7 +30,7 @@
       "sha256": "d2ed20cfb1b315db0cf2745f991b2bacadc8fc482197941efb6f6039edbc2701",
       "seconds": 95.822,
       "notion_page_id": "3f3f2345b31881409db5ee868dff626d",
-      "status": "SCHEDULED_PENDING",
+      "status": "PUBLISHED",
       "exact_final_visual_review_completed": true,
       "actual_audio_listening_performed": false,
       "metricool": {
@@ -43,8 +43,10 @@
         "providers": [
           {
             "network": "instagram",
-            "status": "PENDING",
-            "detailedStatus": "Pending"
+            "id": "https://www.instagram.com/reel/DePY72XAW7c/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/DePY72XAW7c/",
+            "detailedStatus": "Published"
           }
         ],
         "media": [
@@ -59,7 +61,10 @@
           "isAiGenerated": true
         }
       },
-      "uploaded_exact_bytes_verified": true
+      "uploaded_exact_bytes_verified": true,
+      "public_url": "https://www.instagram.com/reel/DePY72XAW7c/",
+      "first_confirmed_published_at": "2026-10-08T16:45:26Z",
+      "notion_publication_written": true
     },
     {
       "story_id": "RECOVERY_GREEN_FLASH_20261008",
@@ -69,7 +74,7 @@
       "sha256": "7c6867f7008de3f5223c8c5c66e1b606f4e53a8f6c04ffc895c2bcb3fbacfb6c",
       "seconds": 89.086,
       "notion_page_id": "3f3f2345b31881b9b512c8f6a435c05e",
-      "status": "SCHEDULED_PENDING",
+      "status": "PUBLISHED",
       "exact_final_visual_review_completed": true,
       "actual_audio_listening_performed": false,
       "metricool": {
@@ -82,8 +87,10 @@
         "providers": [
           {
             "network": "facebook",
-            "status": "PENDING",
-            "detailedStatus": "Pending"
+            "id": "1762777144933208",
+            "status": "PUBLISHED",
+            "publicUrl": "https://facebook.com/reel/1762777144933208",
+            "detailedStatus": "Published"
           }
         ],
         "media": [
@@ -103,7 +110,10 @@
         "caption_disclosure": true,
         "documentation": "https://help.metricool.com/how-to-label-ai-generated-content-for-eu-ai-act-compliance-8a1j8"
       },
-      "uploaded_exact_bytes_verified": true
+      "uploaded_exact_bytes_verified": true,
+      "public_url": "https://facebook.com/reel/1762777144933208",
+      "first_confirmed_published_at": "2026-10-08T16:48:34Z",
+      "notion_publication_written": true
     },
     {
       "story_id": "RECOVERY_DOOR_EXPERIMENT_20261008",
@@ -113,7 +123,7 @@
       "sha256": "cad16f6b7c89cea875954ad464ae54d2085b680fb81823e3b201c07ec684dd67",
       "seconds": 93.373,
       "notion_page_id": "3f3f2345b31881c38bb7c9007d63eada",
-      "status": "SCHEDULED_PENDING",
+      "status": "PUBLISHED",
       "exact_final_visual_review_completed": true,
       "actual_audio_listening_performed": false,
       "metricool": {
@@ -126,8 +136,10 @@
         "providers": [
           {
             "network": "youtube",
-            "status": "PENDING",
-            "detailedStatus": "Pending"
+            "id": "LmYmxMJjdtw",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/LmYmxMJjdtw",
+            "detailedStatus": "Published"
           }
         ],
         "media": [
@@ -145,7 +157,10 @@
           "notifySubscribers": true
         }
       },
-      "uploaded_exact_bytes_verified": true
+      "uploaded_exact_bytes_verified": true,
+      "public_url": "https://www.youtube.com/shorts/LmYmxMJjdtw",
+      "first_confirmed_published_at": "2026-10-08T16:45:26Z",
+      "notion_publication_written": true
     },
     {
       "story_id": "RECOVERY_BELL_WITCH_20261008",
@@ -155,7 +170,7 @@
       "sha256": "e0a19a96ca7003fee65b4b9ffa21123868c6ddd78b6bd43c416ad3de780c1edf",
       "seconds": 101.346,
       "notion_page_id": "3f3f2345b31881d8ba49c282a2b67bf2",
-      "status": "SCHEDULED_PENDING",
+      "status": "PUBLISHED",
       "exact_final_visual_review_completed": true,
       "actual_audio_listening_performed": false,
       "metricool": {
@@ -168,8 +183,10 @@
         "providers": [
           {
             "network": "tiktok",
-            "status": "PENDING",
-            "detailedStatus": "Pending"
+            "id": "7694338705678552352",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.tiktok.com/@steliosvilanos/video/7694338705678552352",
+            "detailedStatus": "Published"
           }
         ],
         "media": [
@@ -184,10 +201,13 @@
           "isAigc": true
         }
       },
-      "uploaded_exact_bytes_verified": true
+      "uploaded_exact_bytes_verified": true,
+      "public_url": "https://www.tiktok.com/@steliosvilanos/video/7694338705678552352",
+      "first_confirmed_published_at": "2026-10-08T16:45:26Z",
+      "notion_publication_written": true
     }
   ],
-  "publication_count": 0,
+  "publication_count": 4,
   "metricool_write_count": 4,
   "full_daily_target_completed": false,
   "media_transport": {
@@ -208,5 +228,29 @@
     "active_pending_per_platform": 0,
     "candidate_conflicts_found": 0
   },
-  "last_reconciled_at": "2026-10-08T19:39:20+03:00"
+  "last_reconciled_at": "2026-10-08T16:48:34Z",
+  "incomplete": {
+    "story": "False consensus",
+    "status": "BLOCKED_MISSING_CLEAN_SCENE_ASSETS",
+    "latest_bounded_recovery_check": "Cropping existing burned-in original frames cannot supply a coherent complete scene sequence: captions obscure participants/tasks, the restaurant board lacks advertising content, and split-panel charts remain unsuitable.",
+    "new_repaired_mp4_created": false
+  },
+  "final_counts": {
+    "published_per_platform": {
+      "facebook": 6,
+      "instagram": 6,
+      "tiktok": 6,
+      "youtube": 6
+    },
+    "active_unpublished_per_platform": {
+      "facebook": 0,
+      "instagram": 0,
+      "tiktok": 0,
+      "youtube": 0
+    },
+    "metricool_records": 24,
+    "held_drafts": 14
+  },
+  "new_metricool_records": 4,
+  "old_metricool_records_modified": 0
 }
