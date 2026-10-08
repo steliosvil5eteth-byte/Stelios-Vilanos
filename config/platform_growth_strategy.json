@@ -3,7 +3,7 @@
   "strategy_id": "PLATFORM_SPECIFIC_FIFTEEN_DAILY_20261008",
   "program_label": "PLATFORM_SPECIFIC_FIFTEEN_DAILY",
   "effective_at": "2026-10-08T08:28:13+03:00",
-  "user_reconfirmed_at": "2026-10-08T23:55:00+03:00",
+  "user_reconfirmed_at": "2026-10-08T23:58:00+03:00",
   "prepared_at_utc": "2026-10-08 06:01:37 UTC",
   "authoritative": true,
   "enabled": false,
@@ -276,7 +276,11 @@
       "target_complete_days_per_platform": 3,
       "ready_now": false
     },
-    "queue_mutations_while_any_required_gate_blocked": false
+    "queue_mutations_while_any_required_gate_blocked": false,
+    "requested_start_date": "2026-10-09",
+    "requested_first_publish_time_local": "07:00",
+    "requested_timezone": "Europe/Athens",
+    "first_slot_required": true
   },
   "transition": {
     "date": "2026-10-08",
@@ -555,14 +559,17 @@
     "gates_changed": false
   },
   "latest_user_instruction": {
-    "at": "2026-10-08T23:55:00+03:00",
-    "instruction": "For each platform, choose daily topics from what generally performs best based on broad statistics and platform-specific evidence relevant to this content style, not from the user's own account. Use only zero-credit research and production paths; do not consume credits.",
+    "at": "2026-10-08T23:58:00+03:00",
+    "instruction": "Start the platform-specific 15-per-platform daily publishing program tomorrow at 07:00 Europe/Athens, subject to all active zero-credit, history, QA, and platform gates.",
     "daily_target_per_platform": 15,
     "daily_total": 60,
     "crossposting_allowed": false,
     "daily_fresh_topics_required": true,
     "optimize_from_general_platform_statistics": true,
     "own_account_analytics_primary": false,
-    "zero_credit_only": true
+    "zero_credit_only": true,
+    "start_date": "2026-10-09",
+    "first_publish_time_local": "07:00",
+    "timezone": "Europe/Athens"
   }
 }
