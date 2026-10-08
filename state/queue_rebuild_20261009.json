@@ -1,0 +1,62 @@
+{
+  "schema_version": 1,
+  "run_id": "QUEUE_REBUILD_20261008_2233",
+  "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+  "brand_id": 7076410,
+  "timezone": "Europe/Athens",
+  "user_instruction_at": "2026-10-08T22:33:46+03:00",
+  "user_instruction": "Γέμισε όλη την ουρά με πραγματικά βίντεο ψάξε και βρες τα και της επόμενης ημέρας και όπως είπαμε θα ψάξεις να βρεις για την κάθε πλατφόρμα ξεχωριστά ανεβαίνουνε 10 κάθε μέρα με βάση αυτά που είπαμε",
+  "target_date": "2026-10-09",
+  "targets": {
+    "facebook": 10,
+    "instagram": 10,
+    "tiktok": 10,
+    "youtube": 10,
+    "distinct_stories": 40
+  },
+  "state": "PREPARING_RESEARCH_AND_PRODUCTION_CODE",
+  "scope": "Unrendered research and production implementation. This record is not a scheduled queue or a release authorization.",
+  "real_new_mp4_files": 0,
+  "new_metricool_records": 0,
+  "new_synthesis_calls": 0,
+  "paid_credits_consumed": 0,
+  "active_scheduled_pending": 0,
+  "latest_published_counts_20261008": {
+    "facebook": 6,
+    "instagram": 6,
+    "tiktok": 6,
+    "youtube": 7
+  },
+  "required_unresolved_evidence": [
+    "Live Azure resource SKU and currently remaining no-charge Nestoras allowance",
+    "Fresh complete cross-source duplicate/lease clearance",
+    "Actual listening and visual review of each exact final MP4"
+  ],
+  "known_research_exclusions": [
+    {
+      "topic": "Zagori",
+      "reason": "Existing2Octoberstory"
+    },
+    {
+      "topic": "Sailing stones",
+      "reason": "ExistingpublishedFB/IG/YTstory"
+    },
+    {
+      "topic": "Roman concrete",
+      "reason": "Excluded pending uncertain ownership of surfaced prior Instagramstory"
+    }
+  ],
+  "production_config_unchanged": true,
+  "global_release_enabled": false,
+  "lease": {
+    "owner": "interactive_queue_rebuild_20261008_2233",
+    "mode": "PREPARATION_ONLY_NO_MEDIA_OR_PUBLICATION",
+    "status": "ACTIVE",
+    "acquired_at_utc": "2026-10-08T19:52:12.583Z",
+    "expires_at_utc": "2026-10-08T22:00:00Z",
+    "scope": [
+      "production/platform_specific",
+      "production_20261009_platform_specific"
+    ]
+  }
+}
