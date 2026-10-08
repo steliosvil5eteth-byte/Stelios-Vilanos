@@ -3479,9 +3479,9 @@
       "production_batch_id": "RECOVERY_20261008_2109",
       "source_slot_id": "CURRENT_TEN_20261008_documented_experiments",
       "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
-      "status": "blocked",
-      "production_state": "METRICOOL_DRAFT_READY_AWAITING_FINAL_AUDIO_REVIEW",
-      "scheduled_time": null,
+      "status": "scheduled",
+      "production_state": "SCHEDULED_PENDING_USER_AUTHORIZED_AUDIO_EXCEPTION",
+      "scheduled_time": "2026-10-08T22:20:00+03:00",
       "timezone": "Europe/Athens",
       "platforms": [
         "youtube"
@@ -3490,7 +3490,7 @@
         "youtube"
       ],
       "metricool_brand_id": "7076410",
-      "metricool_post_id": "391458921",
+      "metricool_post_id": "391473399",
       "metricool_uuid": "-3528729913796770475",
       "legacy_inactive_metricool_draft": {
         "id": "390888157",
@@ -3548,34 +3548,58 @@
         "background_music": false,
         "resolution": "1080x1920",
         "fps": 30,
-        "uploaded_exact_bytes_verified": true
+        "uploaded_exact_bytes_verified": true,
+        "release_basis": "USER_AUTHORIZED_SINGLE_FILE_RELEASE_WITH_AUDIO_LIMITATION",
+        "user_authorized_at": "2026-10-08T22:15:06+03:00",
+        "user_authorized_exception": true
       },
       "platform_status": {
         "youtube": {
           "status": "PENDING",
-          "draft": true,
-          "autoPublish": false,
-          "source_post_id": "391458921",
+          "draft": false,
+          "autoPublish": true,
+          "source_post_id": "391473399",
           "source_uuid": "-3528729913796770475",
           "public_url": null,
-          "confirmed_at_utc": "2026-10-08T18:59:19Z"
+          "confirmed_at_utc": "2026-10-08T19:18:36Z"
         }
       },
       "public_urls": {},
       "terminal": false,
-      "publication_enabled": false,
-      "scheduling_enabled": false,
+      "publication_enabled": true,
+      "scheduling_enabled": true,
       "new_tts_calls": 0,
-      "new_metricool_writes": 1,
+      "new_metricool_writes": 2,
       "recovery_record": "state/recovery_false_consensus_20261008_2109.json",
-      "last_reconciled_at": "2026-10-08T18:59:19Z",
-      "reconciliation_note": "The exact visually and technically reviewed MP4 was uploaded directly to Metricool and its returned hosted bytes matched the reviewed SHA256. Existing inactive UUID was updated in place to YouTube only, draft=true and autoPublish=false. This is NOT scheduled or published, and the22:30 calendar field is only an inactive draft placeholder. Actual audio listening remains unperformed. Current ID391458921 supersedes old390888157. Initial validation rejected unselected legacy networkData; original unchanged state was verified before a corrected request. No new logical post or public platform URL.",
-      "active_platforms": [],
-      "platforms_semantics": "Selected destination of an inactive draft; not an active scheduled or published destination.",
-      "draft": true,
-      "autoPublish": false,
-      "draft_calendar_time": "2026-10-08T22:30:00+03:00",
-      "metricool_write_attempt_count": 2
+      "last_reconciled_at": "2026-10-08T19:18:36Z",
+      "reconciliation_note": "The user explicitly approved this one exact YouTube video after disclosure that actual listening was unavailable. The same prepared UUID is now active for 22:20 Europe/Athens, with draft=false and autoPublish=true. Live provider status is PENDING, not PUBLISHED. No new logical post or media upload was created, and no general audio-QA exception was granted.",
+      "active_platforms": [
+        "youtube"
+      ],
+      "platforms_semantics": "The single YouTube destination is actively scheduled under the recorded user-authorized audio-review exception.",
+      "draft": false,
+      "autoPublish": true,
+      "metricool_write_attempt_count": 3,
+      "previous_draft_calendar_time": "2026-10-08T22:30:00+03:00",
+      "authorization": {
+        "type": "USER_AUTHORIZED_SINGLE_FILE_RELEASE_WITH_AUDIO_LIMITATION",
+        "user_authorized_at": "2026-10-08T22:15:06+03:00",
+        "user_response": "OK μια χαρά μόνο σε αυτό έχουμε κόλλημα; Γιατί στην ουσία δεν έχεις ανεβάσει τίποτα σήμερα εκτός από το πρωί",
+        "in_response_to": "Μου επιτρέπεις να δημοσιεύσω μόνο αυτό το συγκεκριμένο βίντεο, με ολοκληρωμένο οπτικό και τεχνικό έλεγχο αλλά χωρίς πραγματική ακρόαση;",
+        "scope": {
+          "story_id": "RECOVERY_FALSE_CONSENSUS_20261008",
+          "platform": "youtube",
+          "metricool_uuid": "-3528729913796770475",
+          "sha256": "94e50f723007c17d442620e8d6180c2f60a65dc4ebf15c67d6e16f7c50ef8295",
+          "media_url": "https://static.metricool.com/planner/202610/7000636-file-10555168709203677419.mp4"
+        },
+        "limitations": [
+          "Actual audio listening was not performed.",
+          "This does not constitute PASSED_FINAL_REVIEW.",
+          "No waiver for other stories or the recurring production program.",
+          "No new synthesis or generation credits authorized."
+        ]
+      }
     }
   ]
 }
