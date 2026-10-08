@@ -6,14 +6,13 @@
   "brand_id": 7076410,
   "timezone": "Europe/Athens",
   "requested_at": "2026-10-08T21:09:51+03:00",
-  "status": "MEDIA_READY_AWAITING_FINAL_AUDIO_REVIEW",
+  "status": "PREPARING_INACTIVE_METRICOOL_DRAFT_AWAITING_AUDIO_REVIEW",
   "lease": {
-    "owner": "interactive_20261008_2109",
-    "status": "COMPLETED_RELEASED",
-    "scope": "One existing unpublished story visual repair and user-review deliverable only",
-    "release_after_completion": true,
-    "completed_at_utc": "2026-10-08T18:36:32Z",
-    "released_at_utc": "2026-10-08T18:36:32Z"
+    "owner": "interactive_20261008_2151",
+    "status": "ACTIVE",
+    "scope": "Replace media/caption/provider of the existing inactive False Consensus draft only. Do not schedule or publish.",
+    "started_at_utc": "2026-10-08T18:55:44Z",
+    "release_after_completion": true
   },
   "target_platform": "youtube",
   "existing_inactive_metricool": {
@@ -201,5 +200,14 @@
   "final_review_record": {
     "inside_source_zip": "final_review.json",
     "sha256": "397233cf51941ea885bc2c3fb87f847d2b1a3a82448d0199d6d05cb3676989b8"
-  }
+  },
+  "followup_attempts": [
+    {
+      "requested_at": "2026-10-08T21:51:25+03:00",
+      "action": "PREPARE_EXISTING_INACTIVE_DRAFT",
+      "new_publications": 0,
+      "actual_audio_listened": false,
+      "publication_authorized_without_audio_review": false
+    }
+  ]
 }
