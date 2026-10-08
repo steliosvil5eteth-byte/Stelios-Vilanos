@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "incident": "20261008_2109_RECOVERY",
+  "story_id": "RECOVERY_FALSE_CONSENSUS_20261008",
+  "source_logical_story": "CURRENT_TEN_20261008_documented_experiments",
+  "brand_id": 7076410,
+  "timezone": "Europe/Athens",
+  "requested_at": "2026-10-08T21:09:51+03:00",
+  "status": "REPAIR_IN_PROGRESS_NOT_RELEASED",
+  "lease": {
+    "owner": "interactive_20261008_2109",
+    "status": "ACTIVE",
+    "scope": "One existing unpublished story visual repair and user-review deliverable only",
+    "release_after_completion": true
+  },
+  "target_platform": "youtube",
+  "existing_inactive_metricool": {
+    "id": 390888157,
+    "uuid": "-3528729913796770475",
+    "draft": true,
+    "autoPublish": false
+  },
+  "new_metricool_writes": 0,
+  "new_tts_calls": 0,
+  "paid_api_calls": 0,
+  "source_audio": {
+    "artifact_run": 37669816976,
+    "artifact_id": 11505310638,
+    "path": "documented_experiments/nestoras.wav",
+    "sha256": "a3c4df56911c9e6ad9f88c33e234b4636660087ebfa8ef0a2639f16848f770a6",
+    "seconds": 96.646458
+  },
+  "qa": {
+    "actual_audio_input_supported": false,
+    "actual_audio_listened": false,
+    "passed_final_review": false
+  },
+  "scheduling_enabled": false,
+  "publication_enabled": false,
+  "requires": "Human actual listening of exact final MP4 plus remaining final visual, source, caption and duplicate checks. No prior four-file audio exception assumed."
+}
