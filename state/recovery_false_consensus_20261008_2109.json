@@ -6,7 +6,7 @@
   "brand_id": 7076410,
   "timezone": "Europe/Athens",
   "requested_at": "2026-10-08T21:09:51+03:00",
-  "status": "AUTHORIZED_SINGLE_FILE_RELEASE_IN_PROGRESS",
+  "status": "SCHEDULED_PENDING_USER_AUTHORIZED_AUDIO_EXCEPTION",
   "lease": {
     "owner": "interactive_20261008_2215",
     "status": "ACTIVE",
@@ -15,17 +15,7 @@
     "release_after_completion": true
   },
   "target_platform": "youtube",
-  "existing_inactive_metricool": {
-    "id": 391458921,
-    "uuid": "-3528729913796770475",
-    "draft": true,
-    "autoPublish": false,
-    "providers": [
-      "youtube"
-    ],
-    "provider_status": "PENDING"
-  },
-  "new_metricool_writes": 1,
+  "new_metricool_writes": 2,
   "new_tts_calls": 0,
   "paid_api_calls": 0,
   "source_audio": {
@@ -70,7 +60,7 @@
   },
   "scheduling_enabled": true,
   "publication_enabled": true,
-  "requires": "Complete one bounded release and verify provider result; do not extend this exception to other media.",
+  "requires": "Await and verify the YouTube provider result; PENDING is not PUBLISHED. Preserve the exact one-file user exception and do not retry or create another post blindly.",
   "final_media": {
     "file_name": "Psefdis_Synainesi_2026-10-08.mp4",
     "sha256": "94e50f723007c17d442620e8d6180c2f60a65dc4ebf15c67d6e16f7c50ef8295",
@@ -174,16 +164,16 @@
   "reconciliation": {
     "stale_notion_preflight_rows_corrected": 9,
     "new_publications_this_attempt": 0,
-    "new_metricool_writes": 1,
+    "new_metricool_writes": 2,
     "physical_metricool_rows": 24,
-    "inactive_draft_rows": 14,
+    "inactive_draft_rows": 13,
     "published_per_platform": {
       "facebook": 6,
       "instagram": 6,
       "tiktok": 6,
       "youtube": 6
     },
-    "active_scheduled_provider_entries": 0,
+    "active_scheduled_provider_entries": 1,
     "public_playback_independently_verified": false
   },
   "intended_platform_only": "youtube",
@@ -233,7 +223,7 @@
       "metricool_uuid": "-3528729913796770475"
     }
   ],
-  "last_reconciled_at": "2026-10-08T19:17:01Z",
+  "last_reconciled_at": "2026-10-08T19:18:36Z",
   "previous_inactive_metricool": {
     "id": 390888157,
     "uuid": "-3528729913796770475",
@@ -242,7 +232,7 @@
   },
   "current_metricool": {
     "brand_id": 7076410,
-    "id": 391458921,
+    "id": 391473399,
     "uuid": "-3528729913796770475",
     "providers": [
       {
@@ -254,13 +244,13 @@
     "media": [
       "https://static.metricool.com/planner/202610/7000636-file-10555168709203677419.mp4"
     ],
-    "draft": true,
-    "autoPublish": false,
-    "draft_calendar_date": {
-      "dateTime": "2026-10-08T22:30:00",
+    "draft": false,
+    "autoPublish": true,
+    "publicationDate": {
+      "dateTime": "2026-10-08T22:20:00",
       "timezone": "Europe/Athens"
     },
-    "calendar_date_is_active_schedule": false,
+    "calendar_date_is_active_schedule": true,
     "youtubeData": {
       "title": "Γιατί πιστεύουμε ότι «όλοι» συμφωνούν μαζί μας;",
       "type": "short",
@@ -272,7 +262,7 @@
     },
     "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-3528729913796770475",
     "public_platform_url": null,
-    "checked_at_utc": "2026-10-08T18:59:19Z"
+    "checked_at_utc": "2026-10-08T19:18:36Z"
   },
   "metricool_write_attempts": [
     {
@@ -285,6 +275,16 @@
       "detail": "Removed network-specific Data fields for unselected networks after validation response; retained all other original fields except requested media/text/provider/date changes.",
       "id": 391458921,
       "uuid": "-3528729913796770475"
+    },
+    {
+      "outcome": "SUCCESS_SCHEDULED_PENDING_UNDER_USER_EXCEPTION",
+      "id": 391473399,
+      "uuid": "-3528729913796770475",
+      "scheduled_at": {
+        "dateTime": "2026-10-08T22:20:00",
+        "timezone": "Europe/Athens"
+      },
+      "checked_at_utc": "2026-10-08T19:18:36Z"
     }
   ],
   "fresh_followup_history_check": {
@@ -320,12 +320,26 @@
   },
   "enabled_scope": "Only the exact media/platform/UUID listed in authorization; global production configuration remains disabled.",
   "release_attempt": {
-    "status": "AUTHORIZED_NOT_YET_SCHEDULED",
+    "status": "SCHEDULED_PENDING",
     "intended_date_time": "2026-10-08T22:20:00",
     "timezone": "Europe/Athens",
     "source_metricool_id": 391458921,
     "metricool_uuid": "-3528729913796770475",
     "media_url": "https://static.metricool.com/planner/202610/7000636-file-10555168709203677419.mp4",
-    "created_logical_posts": 0
+    "created_logical_posts": 0,
+    "current_metricool_id": 391473399,
+    "scheduled_date_time": "2026-10-08T22:20:00",
+    "activated_at_utc": "2026-10-08T19:18:36Z"
+  },
+  "terminal": false,
+  "pre_release_inactive_metricool": {
+    "id": 391458921,
+    "uuid": "-3528729913796770475",
+    "draft": true,
+    "autoPublish": false,
+    "providers": [
+      "youtube"
+    ],
+    "provider_status": "PENDING"
   }
 }
