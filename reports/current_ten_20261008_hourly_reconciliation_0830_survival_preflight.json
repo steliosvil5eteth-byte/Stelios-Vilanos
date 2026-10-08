@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.0",
+  "reconciliation_at": "2026-10-08T08:30:00+03:00",
+  "timezone": "Europe/Athens",
+  "brand": {
+    "id": 7076410,
+    "name": "Ιστορίες που μας αγγίζουν"
+  },
+  "active_common_policy": {
+    "program": "CURRENT_TEN_DAILY",
+    "config_version": 6,
+    "config_sha": "6887436bbf1765992d1cc615bcf07ff511d81ad3",
+    "providers": [
+      "facebook",
+      "instagram",
+      "tiktok"
+    ],
+    "logical_posts_per_day": 10,
+    "destinations_per_day": 30
+  },
+  "slot": {
+    "time": "2026-10-08T09:00:00+03:00",
+    "series": "survival",
+    "title": "Μυρίζει αέριο: οι κινήσεις που δεν κάνουν σπίθα",
+    "qa": "PASSED_FINAL_REVIEW",
+    "record": {
+      "id": 390603193,
+      "uuid": "3739450433856226000",
+      "providers": [
+        "facebook:PENDING",
+        "instagram:PENDING",
+        "tiktok:PENDING"
+      ],
+      "media_count": 9,
+      "draft": false,
+      "autoPublish": true,
+      "tiktok_auto_add_music": true
+    },
+    "notion_page_id": "3f2f2345-b318-815a-9cc2-eb2889c6f124",
+    "schedule_guard": "CLEAR"
+  },
+  "youtube_transition": {
+    "strategy_path": "config/youtube_growth_strategy.json",
+    "strategy_sha": "760a86e2c61597bac29196cf12887fd6e1e91eca",
+    "enabled": false,
+    "state": "BLOCKED_REQUIRED_NOTION_HISTORY_QUERY",
+    "blocker_code": "usage_limit_reached",
+    "published_today": 5,
+    "legacy_common_destinations_removed_from_shared_records": 4,
+    "legacy_youtube_only_records_inactive_drafts": 5,
+    "sample_inactive_draft": {
+      "id": 390864997,
+      "uuid": "-4283568355360488397",
+      "status": "PENDING",
+      "draft": true,
+      "autoPublish": false
+    },
+    "automation_mutation_performed": false
+  },
+  "day_state": {
+    "common_baseline": {
+      "published": 3,
+      "pending": 27,
+      "error": 0,
+      "total": 30
+    },
+    "extras_non_youtube": {
+      "published": 12,
+      "pending": 0,
+      "error": 0,
+      "total": 12
+    },
+    "youtube": {
+      "published": 5,
+      "active_autopublish_pending": 0,
+      "inactive_draft_pending": 5
+    }
+  },
+  "forward_queue": {
+    "2026-10-09": {
+      "common_metricool_records": 0
+    },
+    "2026-10-10": {
+      "common_metricool_records": 0
+    },
+    "reviewed_future_days": 0,
+    "minimum_required": 2,
+    "target": 3
+  }
+}
