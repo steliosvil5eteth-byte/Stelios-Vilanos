@@ -6,7 +6,7 @@
   "baseline_logical_posts": 10,
   "destinations": 40,
   "voice": "el-GR-NestorasNeural",
-  "final_review": "PASSED_FINAL_REVIEW",
+  "final_review": "PENDING_FINAL_VISUAL_REVIEW",
   "posts": [
     {
       "series": "relationships",
@@ -56,20 +56,7 @@
           "bytes": 1687425
         }
       ],
-      "release_status": "PASSED_FINAL_REVIEW",
-      "metricool": {
-        "status": "Blocked",
-        "ids": [],
-        "uuids": [],
-        "public_urls": [],
-        "destinations": {
-          "facebook": "Blocked",
-          "instagram": "Blocked",
-          "tiktok": "Blocked",
-          "youtube": "Blocked"
-        }
-      },
-      "notion_page_id": "3f3f2345-b318-81ed-85c3-cdc3acd96ff8"
+      "release_status": "PENDING_FINAL_VISUAL_REVIEW"
     },
     {
       "series": "survival",
@@ -129,20 +116,7 @@
           "bytes": 1982445
         }
       ],
-      "release_status": "PASSED_FINAL_REVIEW",
-      "metricool": {
-        "status": "Blocked",
-        "ids": [],
-        "uuids": [],
-        "public_urls": [],
-        "destinations": {
-          "facebook": "Blocked",
-          "instagram": "Blocked",
-          "tiktok": "Blocked",
-          "youtube": "Blocked"
-        }
-      },
-      "notion_page_id": "3f3f2345-b318-81d0-9017-f03729c8d69b"
+      "release_status": "PENDING_FINAL_VISUAL_REVIEW"
     },
     {
       "series": "dog_bartender",
@@ -177,20 +151,7 @@
           "bytes": 1022625
         }
       ],
-      "release_status": "PASSED_FINAL_REVIEW",
-      "metricool": {
-        "status": "Blocked",
-        "ids": [],
-        "uuids": [],
-        "public_urls": [],
-        "destinations": {
-          "facebook": "Blocked",
-          "instagram": "Blocked",
-          "tiktok": "Blocked",
-          "youtube": "Blocked"
-        }
-      },
-      "notion_page_id": "3f3f2345-b318-81a0-837f-d203eb5747e4"
+      "release_status": "PENDING_FINAL_VISUAL_REVIEW"
     },
     {
       "series": "zodiac",
@@ -235,20 +196,7 @@
           "bytes": 1680915
         }
       ],
-      "release_status": "PASSED_FINAL_REVIEW",
-      "metricool": {
-        "status": "Blocked",
-        "ids": [],
-        "uuids": [],
-        "public_urls": [],
-        "destinations": {
-          "facebook": "Blocked",
-          "instagram": "Blocked",
-          "tiktok": "Blocked",
-          "youtube": "Blocked"
-        }
-      },
-      "notion_page_id": "3f3f2345-b318-8195-88b2-de18064718ec"
+      "release_status": "PENDING_FINAL_VISUAL_REVIEW"
     },
     {
       "series": "greece_two_day_trip",
@@ -259,21 +207,8 @@
       "avatar": false,
       "background_music": false,
       "decode_passed": true,
-      "sha256": "da4b095af77a5450e4b6db72deb4354002362fabe489aff268d35a538f2c161b",
-      "release_status": "PASSED_FINAL_REVIEW",
-      "metricool": {
-        "status": "Blocked",
-        "ids": [],
-        "uuids": [],
-        "public_urls": [],
-        "destinations": {
-          "facebook": "Blocked",
-          "instagram": "Blocked",
-          "tiktok": "Blocked",
-          "youtube": "Blocked"
-        }
-      },
-      "notion_page_id": "3f3f2345-b318-8140-9db5-ee868dff626d"
+      "sha256": "b117807c6fdd636867e7bbfae0ba09718dc896fcda8d964593d7107be4bdb1f9",
+      "release_status": "PENDING_FINAL_VISUAL_REVIEW"
     },
     {
       "series": "love_soul_relationship",
@@ -313,20 +248,7 @@
           "bytes": 1316008
         }
       ],
-      "release_status": "PASSED_FINAL_REVIEW",
-      "metricool": {
-        "status": "Blocked",
-        "ids": [],
-        "uuids": [],
-        "public_urls": [],
-        "destinations": {
-          "facebook": "Blocked",
-          "instagram": "Blocked",
-          "tiktok": "Blocked",
-          "youtube": "Blocked"
-        }
-      },
-      "notion_page_id": "3f3f2345-b318-81da-90c3-fe5c800d8307"
+      "release_status": "PENDING_FINAL_VISUAL_REVIEW"
     },
     {
       "series": "strange_real_phenomenon",
@@ -337,46 +259,20 @@
       "avatar": false,
       "background_music": false,
       "decode_passed": true,
-      "sha256": "a18209dbe64c94450eb7829ea0557e84955f0a72df1405ceddbd0f4680ea3f0b",
-      "release_status": "PASSED_FINAL_REVIEW",
-      "metricool": {
-        "status": "Blocked",
-        "ids": [],
-        "uuids": [],
-        "public_urls": [],
-        "destinations": {
-          "facebook": "Blocked",
-          "instagram": "Blocked",
-          "tiktok": "Blocked",
-          "youtube": "Blocked"
-        }
-      },
-      "notion_page_id": "3f3f2345-b318-81b9-b512-c8f6a435c05e"
+      "sha256": "c5d5dd637ed2a80fc671c7ba930bacdf545ddc9751246ae0e72a47fd80a8a832",
+      "release_status": "PENDING_FINAL_VISUAL_REVIEW"
     },
     {
       "series": "documented_experiments",
-      "duration_seconds": 93.373,
+      "duration_seconds": 93.372,
       "voice": "el-GR-NestorasNeural",
       "subtitle_cues": 51,
       "resolution": "1080x1920",
       "avatar": false,
       "background_music": false,
       "decode_passed": true,
-      "sha256": "7ffec7b819a71945b215880d8a79d1085604c7c8509659de5512acf166e0e6ec",
-      "release_status": "PASSED_FINAL_REVIEW",
-      "metricool": {
-        "status": "Blocked",
-        "ids": [],
-        "uuids": [],
-        "public_urls": [],
-        "destinations": {
-          "facebook": "Blocked",
-          "instagram": "Blocked",
-          "tiktok": "Blocked",
-          "youtube": "Blocked"
-        }
-      },
-      "notion_page_id": "3f3f2345-b318-81c3-8bb7-c9007d63eada"
+      "sha256": "7756e5c53aced5b5b0a9cf2722dcdeaa1a2832c72267d1a3f91ed0db69572b22",
+      "release_status": "PENDING_FINAL_VISUAL_REVIEW"
     },
     {
       "series": "myth_or_truth",
@@ -411,20 +307,7 @@
           "bytes": 1050071
         }
       ],
-      "release_status": "PASSED_FINAL_REVIEW",
-      "metricool": {
-        "status": "Blocked",
-        "ids": [],
-        "uuids": [],
-        "public_urls": [],
-        "destinations": {
-          "facebook": "Blocked",
-          "instagram": "Blocked",
-          "tiktok": "Blocked",
-          "youtube": "Blocked"
-        }
-      },
-      "notion_page_id": "3f3f2345-b318-8109-83b7-f3f2d53bf7d2"
+      "release_status": "PENDING_FINAL_VISUAL_REVIEW"
     },
     {
       "series": "international_legend",
@@ -435,54 +318,8 @@
       "avatar": false,
       "background_music": false,
       "decode_passed": true,
-      "sha256": "0b097963d369525a94d61636ea16e996fdccb1fc30564955e2fb7e71e0c123c0",
-      "release_status": "PASSED_FINAL_REVIEW",
-      "metricool": {
-        "status": "Blocked",
-        "ids": [],
-        "uuids": [],
-        "public_urls": [],
-        "destinations": {
-          "facebook": "Blocked",
-          "instagram": "Blocked",
-          "tiktok": "Blocked",
-          "youtube": "Blocked"
-        }
-      },
-      "notion_page_id": "3f3f2345-b318-81d8-ba49-c282a2b67bf2"
+      "sha256": "c80e3081599b937e67e4339c8ebd84456a69db0a98a6bd27b904cfcaa9c55e26",
+      "release_status": "PENDING_FINAL_VISUAL_REVIEW"
     }
-  ],
-  "reviewed_at": "2026-10-08T06:58:00+03:00",
-  "review_basis": {
-    "workflow_run_id": 37722751042,
-    "artifact_id": 11526641805,
-    "artifact_digest": "sha256:d1d544",
-    "media_commit": "4e5816fb28ec7d87abeb996790e526350eef5d78",
-    "technical_decode": "PASSED",
-    "visual_contact_sheet_review": "PASSED",
-    "remote_exact_byte_readback": "PASSED"
-  },
-  "scheduling_status": "BLOCKED",
-  "scheduling_attempted_at": "2026-10-08T07:18:00+03:00",
-  "metricool_brand_id": 7076410,
-  "metricool_live_readback_records": 0,
-  "metricool_error": "createscheduledpost media upload rejected: INVALID_ARGUMENT for exact-final local JPEG/MP4; public HTTPS and data URI were treated as filenames. All rejected attempts were followed by live empty-day readback.",
-  "destinations_summary": {
-    "Published": 0,
-    "Scheduled-PENDING": 0,
-    "Failed": 0,
-    "Blocked": 40
-  },
-  "notion_page_ids": [
-    "3f3f2345-b318-81ed-85c3-cdc3acd96ff8",
-    "3f3f2345-b318-81d0-9017-f03729c8d69b",
-    "3f3f2345-b318-81a0-837f-d203eb5747e4",
-    "3f3f2345-b318-8195-88b2-de18064718ec",
-    "3f3f2345-b318-8140-9db5-ee868dff626d",
-    "3f3f2345-b318-81da-90c3-fe5c800d8307",
-    "3f3f2345-b318-81b9-b512-c8f6a435c05e",
-    "3f3f2345-b318-81c3-8bb7-c9007d63eada",
-    "3f3f2345-b318-8109-83b7-f3f2d53bf7d2",
-    "3f3f2345-b318-81d8-ba49-c282a2b67bf2"
   ]
 }

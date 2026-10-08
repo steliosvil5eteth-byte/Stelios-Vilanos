@@ -198,7 +198,7 @@
     "avatar": false,
     "background_music": false,
     "decode_passed": true,
-    "sha256": "da4b095af77a5450e4b6db72deb4354002362fabe489aff268d35a538f2c161b",
+    "sha256": "b117807c6fdd636867e7bbfae0ba09718dc896fcda8d964593d7107be4bdb1f9",
     "release_status": "PENDING_FINAL_VISUAL_REVIEW"
   },
   {
@@ -250,19 +250,19 @@
     "avatar": false,
     "background_music": false,
     "decode_passed": true,
-    "sha256": "a18209dbe64c94450eb7829ea0557e84955f0a72df1405ceddbd0f4680ea3f0b",
+    "sha256": "c5d5dd637ed2a80fc671c7ba930bacdf545ddc9751246ae0e72a47fd80a8a832",
     "release_status": "PENDING_FINAL_VISUAL_REVIEW"
   },
   {
     "series": "documented_experiments",
-    "duration_seconds": 93.373,
+    "duration_seconds": 93.372,
     "voice": "el-GR-NestorasNeural",
     "subtitle_cues": 51,
     "resolution": "1080x1920",
     "avatar": false,
     "background_music": false,
     "decode_passed": true,
-    "sha256": "7ffec7b819a71945b215880d8a79d1085604c7c8509659de5512acf166e0e6ec",
+    "sha256": "7756e5c53aced5b5b0a9cf2722dcdeaa1a2832c72267d1a3f91ed0db69572b22",
     "release_status": "PENDING_FINAL_VISUAL_REVIEW"
   },
   {
@@ -309,7 +309,7 @@
     "avatar": false,
     "background_music": false,
     "decode_passed": true,
-    "sha256": "0b097963d369525a94d61636ea16e996fdccb1fc30564955e2fb7e71e0c123c0",
+    "sha256": "c80e3081599b937e67e4339c8ebd84456a69db0a98a6bd27b904cfcaa9c55e26",
     "release_status": "PENDING_FINAL_VISUAL_REVIEW"
   }
 ]
