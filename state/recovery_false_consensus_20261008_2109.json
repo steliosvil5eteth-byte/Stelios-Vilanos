@@ -6,13 +6,15 @@
   "brand_id": 7076410,
   "timezone": "Europe/Athens",
   "requested_at": "2026-10-08T21:09:51+03:00",
-  "status": "SCHEDULED_PENDING_USER_AUTHORIZED_AUDIO_EXCEPTION",
+  "status": "PUBLISHED",
   "lease": {
     "owner": "interactive_20261008_2215",
-    "status": "ACTIVE",
+    "status": "COMPLETED_RELEASED",
     "scope": "Release only the exact existing False Consensus MP4 on YouTube under the user's 22:15:06 single-file audio-review exception.",
     "started_at_utc": "2026-10-08T19:17:01Z",
-    "release_after_completion": true
+    "release_after_completion": true,
+    "completed_at_utc": "2026-10-08T19:21:18Z",
+    "released_at_utc": "2026-10-08T19:21:18Z"
   },
   "target_platform": "youtube",
   "new_metricool_writes": 2,
@@ -58,9 +60,9 @@
     "release_basis": "USER_AUTHORIZED_SINGLE_FILE_RELEASE_WITH_AUDIO_LIMITATION",
     "user_authorized_exception": true
   },
-  "scheduling_enabled": true,
-  "publication_enabled": true,
-  "requires": "Await and verify the YouTube provider result; PENDING is not PUBLISHED. Preserve the exact one-file user exception and do not retry or create another post blindly.",
+  "scheduling_enabled": false,
+  "publication_enabled": false,
+  "requires": "No further action for this completed release. Other media retain their own unresolved quality/capacity requirements.",
   "final_media": {
     "file_name": "Psefdis_Synainesi_2026-10-08.mp4",
     "sha256": "94e50f723007c17d442620e8d6180c2f60a65dc4ebf15c67d6e16f7c50ef8295",
@@ -163,7 +165,7 @@
   "notion_page_id": "3f2f2345-b318-8121-8211-fe12da480dab",
   "reconciliation": {
     "stale_notion_preflight_rows_corrected": 9,
-    "new_publications_this_attempt": 0,
+    "new_publications_this_attempt": 1,
     "new_metricool_writes": 2,
     "physical_metricool_rows": 24,
     "inactive_draft_rows": 13,
@@ -171,10 +173,11 @@
       "facebook": 6,
       "instagram": 6,
       "tiktok": 6,
-      "youtube": 6
+      "youtube": 7
     },
-    "active_scheduled_provider_entries": 1,
-    "public_playback_independently_verified": false
+    "active_scheduled_provider_entries": 0,
+    "public_playback_independently_verified": false,
+    "failed_provider_entries": 0
   },
   "intended_platform_only": "youtube",
   "scope_limitations": [
@@ -182,7 +185,7 @@
     "The global forty-distinct-story daily program is still blocked; no automatic activation has been performed.",
     "Azure account SKU and remaining free allowance have not been verified. No new TTS calls were made."
   ],
-  "completed_at_utc": "2026-10-08T18:59:19Z",
+  "completed_at_utc": "2026-10-08T19:21:18Z",
   "artifacts": [
     {
       "file_name": "Psefdis_Synainesi_2026-10-08.mp4",
@@ -223,7 +226,7 @@
       "metricool_uuid": "-3528729913796770475"
     }
   ],
-  "last_reconciled_at": "2026-10-08T19:18:36Z",
+  "last_reconciled_at": "2026-10-08T19:21:18Z",
   "previous_inactive_metricool": {
     "id": 390888157,
     "uuid": "-3528729913796770475",
@@ -237,8 +240,10 @@
     "providers": [
       {
         "network": "youtube",
-        "status": "PENDING",
-        "detailedStatus": "Pending"
+        "id": "CQRewxEzwn0",
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.youtube.com/shorts/CQRewxEzwn0",
+        "detailedStatus": "Published"
       }
     ],
     "media": [
@@ -261,8 +266,8 @@
       "notifySubscribers": true
     },
     "planner_url": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-3528729913796770475",
-    "public_platform_url": null,
-    "checked_at_utc": "2026-10-08T19:18:36Z"
+    "public_platform_url": "https://www.youtube.com/shorts/CQRewxEzwn0",
+    "checked_at_utc": "2026-10-08T19:21:18Z"
   },
   "metricool_write_attempts": [
     {
@@ -316,11 +321,13 @@
       "This does not constitute PASSED_FINAL_REVIEW.",
       "No waiver for other stories or the recurring production program.",
       "No new synthesis or generation credits authorized."
-    ]
+    ],
+    "consumed": true,
+    "consumed_at_utc": "2026-10-08T19:21:18Z"
   },
-  "enabled_scope": "Only the exact media/platform/UUID listed in authorization; global production configuration remains disabled.",
+  "enabled_scope": "The one-file authorization has been consumed by the confirmed publication. No further release is enabled by this record.",
   "release_attempt": {
-    "status": "SCHEDULED_PENDING",
+    "status": "PUBLISHED",
     "intended_date_time": "2026-10-08T22:20:00",
     "timezone": "Europe/Athens",
     "source_metricool_id": 391458921,
@@ -329,9 +336,12 @@
     "created_logical_posts": 0,
     "current_metricool_id": 391473399,
     "scheduled_date_time": "2026-10-08T22:20:00",
-    "activated_at_utc": "2026-10-08T19:18:36Z"
+    "activated_at_utc": "2026-10-08T19:18:36Z",
+    "provider_id": "CQRewxEzwn0",
+    "public_url": "https://www.youtube.com/shorts/CQRewxEzwn0",
+    "published_confirmed_at_utc": "2026-10-08T19:21:18Z"
   },
-  "terminal": false,
+  "terminal": true,
   "pre_release_inactive_metricool": {
     "id": 391458921,
     "uuid": "-3528729913796770475",
@@ -341,5 +351,11 @@
       "youtube"
     ],
     "provider_status": "PENDING"
-  }
+  },
+  "published_confirmed_at_utc": "2026-10-08T19:21:18Z",
+  "exact_platform_publication_timestamp_available": false,
+  "public_urls": {
+    "youtube": "https://www.youtube.com/shorts/CQRewxEzwn0"
+  },
+  "full_daily_target_completed": false
 }
