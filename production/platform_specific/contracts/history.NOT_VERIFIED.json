@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "checked_at": null,
+  "expires_at": null,
+  "complete": false,
+  "sources": {
+    "metricool": {"status": "NOT_READ", "complete": false, "rows_seen": 0},
+    "notion": {"status": "NOT_READ", "complete": false, "rows_seen": 0},
+    "repository": {"status": "NOT_READ", "complete": false, "rows_seen": 0},
+    "production_lease": {"status": "NOT_READ", "complete": false, "conflicting_active_lease": null}
+  },
+  "stories": [],
+  "semantic_reviews": {},
+  "queue_snapshot": {"status": "NOT_READ", "complete": false, "checked_at": null, "expires_at": null, "platforms": {}}
+}

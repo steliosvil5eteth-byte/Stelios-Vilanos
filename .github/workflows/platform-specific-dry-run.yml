@@ -1,0 +1,55 @@
+name: Platform-specific production validation (manual, no provider calls)
+on:
+  workflow_dispatch:
+    inputs:
+      manifest_path:
+        description: Public daily manifest path
+        required: true
+        default: production_20261009_platform_specific/manifest.json
+permissions:
+  contents: read
+concurrency:
+  group: platform-specific-validation
+  cancel-in-progress: false
+jobs:
+  validate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install local validation dependencies only
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install -r production/platform_specific/requirements.txt
+      - name: Validate path
+        env:
+          MANIFEST_PATH: ${{ inputs.manifest_path }}
+        run: |
+          python - <<'PY'
+          import os,re
+          value=os.environ['MANIFEST_PATH']
+          if not re.fullmatch(r'production_\d{8}_platform_specific/[A-Za-z0-9_.-]+\.json',value):
+              raise SystemExit('Only a public daily manifest path is accepted')
+          PY
+      - name: Test failure paths without credentials or provider requests
+        working-directory: production/platform_specific
+        run: python -m unittest discover -s tests -v
+      - name: Produce a no-network stage report
+        env:
+          MANIFEST_PATH: ${{ inputs.manifest_path }}
+        run: |
+          python production/platform_specific/pipeline.py plan \
+            --manifest "$MANIFEST_PATH" \
+            --policy config/platform_growth_strategy.json \
+            --output "$RUNNER_TEMP/platform-specific-dry-run.json"
+      - name: Preserve non-private dry-run report
+        uses: actions/upload-artifact@v4
+        with:
+          name: platform-specific-dry-run
+          path: ${{ runner.temp }}/platform-specific-dry-run.json
+          retention-days: 3
+          if-no-files-found: error

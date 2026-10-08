@@ -14,8 +14,8 @@
     "youtube": 10,
     "distinct_stories": 40
   },
-  "state": "PREPARING_RESEARCH_AND_PRODUCTION_CODE",
-  "scope": "Unrendered research and production implementation. This record is not a scheduled queue or a release authorization.",
+  "state": "PREPARATION_COMPLETE_RELEASE_BLOCKED",
+  "scope": "Forty complete researched source packs and locally tested guarded production implementation. Zero new audio, final MP4s or Metricool records; this is not a populated publishing queue.",
   "real_new_mp4_files": 0,
   "new_metricool_records": 0,
   "new_synthesis_calls": 0,
@@ -28,9 +28,12 @@
     "youtube": 7
   },
   "required_unresolved_evidence": [
-    "Live Azure resource SKU and currently remaining no-charge Nestoras allowance",
-    "Fresh complete cross-source duplicate/lease clearance",
-    "Actual listening and visual review of each exact final MP4"
+    "Verified actual Azure Speech resource F0 SKU, credentials-to-resource binding and currently remaining no-charge Nestoras allowance",
+    "Fresh complete cross-source semantic duplicate and owned production lease clearance; latest Notion full query and historical Metricool/TikTok reads are incomplete",
+    "Actual scene assets, rights and factual/relevance review",
+    "Actual Nestoras audio, synchronized subtitles and complete final MP4s",
+    "Actual complete listening and visual review of each exact final MP4, bound to SHA256",
+    "Supported native platform disclosures and immediate live provider readback after each future write"
   ],
   "known_research_exclusions": [
     {
@@ -46,17 +49,62 @@
       "reason": "Excluded pending uncertain ownership of surfaced prior Instagramstory"
     }
   ],
-  "production_config_unchanged": true,
+  "production_config_unchanged": false,
   "global_release_enabled": false,
   "lease": {
     "owner": "interactive_queue_rebuild_20261008_2233",
     "mode": "PREPARATION_ONLY_NO_MEDIA_OR_PUBLICATION",
-    "status": "ACTIVE",
+    "status": "COMPLETED_RELEASED",
     "acquired_at_utc": "2026-10-08T19:52:12.583Z",
     "expires_at_utc": "2026-10-08T22:00:00Z",
     "scope": [
       "production/platform_specific",
       "production_20261009_platform_specific"
-    ]
-  }
+    ],
+    "released_at_utc": "2026-10-08T20:15:58Z"
+  },
+  "completed_preparation_at_utc": "2026-10-08T20:15:58Z",
+  "research_counts": {
+    "source_packs": 40,
+    "per_platform": {
+      "facebook": 10,
+      "instagram": 10,
+      "tiktok": 10,
+      "youtube": 10
+    },
+    "planned_scenes": 340,
+    "source_entries": 94,
+    "unique_source_urls": 94,
+    "script_words": 9996,
+    "word_count_range": [
+      245,
+      256
+    ],
+    "script_characters_editorial_estimate": 67100,
+    "actual_new_mp4_files": 0,
+    "actual_new_audio_files": 0,
+    "actual_audio_listening_reviews": 0,
+    "actual_new_scheduled_posts": 0
+  },
+  "source_catalog": "production_20261009_platform_specific/catalog.json",
+  "manifest": "production_20261009_platform_specific/manifest.json",
+  "dry_run": "production_20261009_platform_specific/plan.json",
+  "source_integrity_report": "production_20261009_platform_specific/verification.json",
+  "live_queue_readback": "production_20261009_platform_specific/live_queue_counts.json",
+  "production_implementation": "production/platform_specific",
+  "local_validation": {
+    "command": "python -m unittest discover -s tests -v",
+    "passed": 35,
+    "failed": 0,
+    "real_provider_calls": 0,
+    "provider_failure_tests_use_mocks_only": true,
+    "prior_tests": 33,
+    "added_negative_tests": 2
+  },
+  "validation_sha256": "4389fcb62afbfd81fb5e2cfa85cfc9c3add2dbf9153ade91c7c6268ca9b908ac",
+  "actual_provider_execution_tested": false,
+  "actual_new_story_render_tested": false,
+  "publisher_implemented_in_new_modules": false,
+  "production_gates_unchanged": true,
+  "recurring_daily_production_active": false
 }

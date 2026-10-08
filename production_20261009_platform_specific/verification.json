@@ -1,0 +1,37 @@
+{
+  "scope": "Source-pack structure and real forty-job dry run only",
+  "created_at_utc": "2026-10-08T20:14:53.280153+00:00",
+  "counts": {
+    "source_packs": 40,
+    "per_platform": {
+      "facebook": 10,
+      "instagram": 10,
+      "tiktok": 10,
+      "youtube": 10
+    },
+    "planned_scenes": 340,
+    "source_entries": 94,
+    "unique_source_urls": 94,
+    "script_words": 9996,
+    "word_count_range": [
+      245,
+      256
+    ],
+    "script_characters_editorial_estimate": 67100,
+    "actual_new_mp4_files": 0,
+    "actual_new_audio_files": 0,
+    "actual_audio_listening_reviews": 0,
+    "actual_new_scheduled_posts": 0
+  },
+  "manifest_errors": [],
+  "no_network_dry_run": true,
+  "actual_media_or_publication_qa": "NOT_PERFORMED",
+  "global_history_clearance": "INCOMPLETE",
+  "files": {
+    "live_queue_counts.json": "3a7c707f700f8c06ee340037c0a63fe96ca002a8d301048d24fcd48fc65153ee",
+    "manifest.json": "3c5e2485dd574932ea432be83510aaf640571998bf80c1cb1b6ee879836d5ce8",
+    "plan.json": "131835d0bf03e8b7e91cf30886a02571427cc03b2dd1c84ebee4af3d38cf9676",
+    "selected_slots.json": "e59df0cbbba2e336d89ecf05ef38e5816c5c19fcdce7c6c6cfa87c4065fb1b84",
+    "catalog.json": "fb1981e26e66e9fc16f66ccdebfd6d1e63a4534668ce3d4d6df0ef72a0c0027a"
+  }
+}

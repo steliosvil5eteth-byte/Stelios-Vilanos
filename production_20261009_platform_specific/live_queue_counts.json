@@ -1,0 +1,168 @@
+{
+  "read_at_utc": "2026-10-08T20:13:53Z",
+  "source": "Metricool getscheduledposts live response",
+  "brand_id": 7076410,
+  "timezone": "Europe/Athens",
+  "read_succeeded": true,
+  "range": [
+    "2026-10-08",
+    "2026-10-11"
+  ],
+  "records": 24,
+  "inactive_draft_records": 13,
+  "counts": {
+    "2026-10-08": {
+      "facebook": {
+        "published": 6,
+        "active_pending": 0,
+        "inactive_draft": 8,
+        "failed": 0
+      },
+      "instagram": {
+        "published": 6,
+        "active_pending": 0,
+        "inactive_draft": 8,
+        "failed": 0
+      },
+      "tiktok": {
+        "published": 6,
+        "active_pending": 0,
+        "inactive_draft": 8,
+        "failed": 0
+      },
+      "youtube": {
+        "published": 7,
+        "active_pending": 0,
+        "inactive_draft": 5,
+        "failed": 0
+      }
+    },
+    "2026-10-09": {
+      "facebook": {
+        "published": 0,
+        "active_pending": 0,
+        "inactive_draft": 0,
+        "failed": 0
+      },
+      "instagram": {
+        "published": 0,
+        "active_pending": 0,
+        "inactive_draft": 0,
+        "failed": 0
+      },
+      "tiktok": {
+        "published": 0,
+        "active_pending": 0,
+        "inactive_draft": 0,
+        "failed": 0
+      },
+      "youtube": {
+        "published": 0,
+        "active_pending": 0,
+        "inactive_draft": 0,
+        "failed": 0
+      }
+    },
+    "2026-10-10": {
+      "facebook": {
+        "published": 0,
+        "active_pending": 0,
+        "inactive_draft": 0,
+        "failed": 0
+      },
+      "instagram": {
+        "published": 0,
+        "active_pending": 0,
+        "inactive_draft": 0,
+        "failed": 0
+      },
+      "tiktok": {
+        "published": 0,
+        "active_pending": 0,
+        "inactive_draft": 0,
+        "failed": 0
+      },
+      "youtube": {
+        "published": 0,
+        "active_pending": 0,
+        "inactive_draft": 0,
+        "failed": 0
+      }
+    }
+  },
+  "scope": "Counts of published destinations and active pending posts; not a claim that every historical publication uses the new narrated-video format.",
+  "new_records_created_this_rebuild": 0,
+  "new_final_mp4_files_this_rebuild": 0,
+  "confirmed_evening_publications": [
+    {
+      "id": 391353442,
+      "planned_time": {
+        "dateTime": "2026-10-08T19:42:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "instagram",
+          "status": "PUBLISHED",
+          "url": "https://www.instagram.com/reel/DePY72XAW7c/"
+        }
+      ]
+    },
+    {
+      "id": 391354040,
+      "planned_time": {
+        "dateTime": "2026-10-08T19:43:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "tiktok",
+          "status": "PUBLISHED",
+          "url": "https://www.tiktok.com/@steliosvilanos/video/7694338705678552352"
+        }
+      ]
+    },
+    {
+      "id": 391354358,
+      "planned_time": {
+        "dateTime": "2026-10-08T19:44:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PUBLISHED",
+          "url": "https://www.youtube.com/shorts/LmYmxMJjdtw"
+        }
+      ]
+    },
+    {
+      "id": 391354660,
+      "planned_time": {
+        "dateTime": "2026-10-08T19:45:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PUBLISHED",
+          "url": "https://facebook.com/reel/1762777144933208"
+        }
+      ]
+    },
+    {
+      "id": 391473399,
+      "planned_time": {
+        "dateTime": "2026-10-08T22:20:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PUBLISHED",
+          "url": "https://www.youtube.com/shorts/CQRewxEzwn0"
+        }
+      ]
+    }
+  ]
+}

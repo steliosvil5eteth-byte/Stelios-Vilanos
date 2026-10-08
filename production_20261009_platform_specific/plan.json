@@ -1,0 +1,877 @@
+{
+  "program": "PLATFORM_SPECIFIC_TEN_DAILY",
+  "local_date": "2026-10-09",
+  "generated_at": "2026-10-08T20:14:53.280153+00:00",
+  "mode": "NO_NETWORK_DRY_RUN",
+  "manifest_errors": [],
+  "new_synthesis_calls": 0,
+  "new_publication_calls": 0,
+  "real_scheduled_queue_count": 0,
+  "scheduled_status_not_inferred_from_manifest": true,
+  "daily_complete": false,
+  "reserved_tts_characters_in_plan_only": 0,
+  "per_platform": {
+    "facebook": {
+      "slots": 10,
+      "source_packs": 10,
+      "exact_final_ready": 0
+    },
+    "instagram": {
+      "slots": 10,
+      "source_packs": 10,
+      "exact_final_ready": 0
+    },
+    "tiktok": {
+      "slots": 10,
+      "source_packs": 10,
+      "exact_final_ready": 0
+    },
+    "youtube": {
+      "slots": 10,
+      "source_packs": 10,
+      "exact_final_ready": 0
+    }
+  },
+  "jobs": [
+    {
+      "job_id": "2026-10-09-facebook-01",
+      "story_id": "FACEBOOK_20261009_01_NANSEN_PASSPORT_1922",
+      "platform": "facebook",
+      "title": "Το χαρτί που ξανάνοιξε τα σύνορα",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-facebook-02",
+      "story_id": "FACEBOOK_20261009_02_CHRISTMAS_TRUCE_1914",
+      "platform": "facebook",
+      "title": "Όταν οι αντίπαλοι βγήκαν από τα χαρακώματα",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-facebook-03",
+      "story_id": "FACEBOOK_20261009_03_ALICE_GUY_BLACHE_CINEMA",
+      "platform": "facebook",
+      "title": "Άλις Γκι: η πρωτοπόρος που ξαναβρέθηκε στο κάδρο",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-facebook-04",
+      "story_id": "FACEBOOK_20261009_04_NELLIE_BLY_72_DAYS",
+      "platform": "facebook",
+      "title": "Το ταξίδι που ξεπέρασε τον Φιλέα Φογκ",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-facebook-05",
+      "story_id": "FACEBOOK_20261009_05_MONTGOMERY_BOYCOTT_1955",
+      "platform": "facebook",
+      "title": "Η θέση στο λεωφορείο και οι 381 μέρες",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-facebook-06",
+      "story_id": "FACEBOOK_20261009_06_MATCHWOMEN_STRIKE_1888",
+      "platform": "facebook",
+      "title": "Οι εργάτριες που έσβησαν τα πρόστιμα",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-facebook-07",
+      "story_id": "FACEBOOK_20261009_07_MEMPHIS_SANITATION_1968",
+      "platform": "facebook",
+      "title": "Το σύνθημα που ζητούσε αξιοπρέπεια",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-facebook-08",
+      "story_id": "FACEBOOK_20261009_08_MIGRANT_MOTHER_1936",
+      "platform": "facebook",
+      "title": "Το πρόσωπο πίσω από τη διάσημη φωτογραφία",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-facebook-09",
+      "story_id": "FACEBOOK_20261009_09_HALVORSEN_CANDY_AIRLIFT_1948",
+      "platform": "facebook",
+      "title": "Τα μικρά αλεξίπτωτα πάνω από το Βερολίνο",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-facebook-10",
+      "story_id": "FACEBOOK_20261009_10_TARPON_SPRINGS_SPONGE_DIVERS_1905",
+      "platform": "facebook",
+      "title": "Η ελληνική τέχνη που ταξίδεψε στη Φλόριντα",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-instagram-01",
+      "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
+      "platform": "instagram",
+      "title": "Νίσυρος: ο κρατήρας που δεν είναι λίμνη λάβας",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-instagram-02",
+      "story_id": "INSTAGRAM_20261009_02_NIKE_SAMOTHRACE_MARBLE_MOTION",
+      "platform": "instagram",
+      "title": "Η Νίκη που μοιάζει να κινείται χωρίς κεφάλι",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-instagram-03",
+      "story_id": "INSTAGRAM_20261009_03_MYSTRAS_HILLSIDE_BYZANTINE_CITY",
+      "platform": "instagram",
+      "title": "Μυστράς: η πόλη που διαβάζεται στην πλαγιά",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-instagram-04",
+      "story_id": "INSTAGRAM_20261009_04_DAPHNI_MONASTERY_MOSAICS",
+      "platform": "instagram",
+      "title": "Δαφνί: όταν ο τοίχος γίνεται χρυσό φως",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-instagram-05",
+      "story_id": "INSTAGRAM_20261009_05_LESVOS_PETRIFIED_FOREST_MIOCENE",
+      "platform": "instagram",
+      "title": "Το δάσος που έμεινε μέσα στην πέτρα",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-instagram-06",
+      "story_id": "INSTAGRAM_20261009_06_SARAKINIKO_MILOS_GEOLOGICAL_SCULPTURE",
+      "platform": "instagram",
+      "title": "Σαρακήνικο: το λευκό τοπίο που έφτιαξε η Γη",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-instagram-07",
+      "story_id": "INSTAGRAM_20261009_07_CHIOS_MASTIC_KENTIMA_CRAFT",
+      "platform": "instagram",
+      "title": "Χίος: τα δάκρυα που χρειάζονται πολλά χέρια",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-instagram-08",
+      "story_id": "INSTAGRAM_20261009_08_RHODES_MEDIEVAL_CITY_LAYERS",
+      "platform": "instagram",
+      "title": "Ρόδος: πολλές εποχές μέσα στα ίδια τείχη",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-instagram-09",
+      "story_id": "INSTAGRAM_20261009_09_CORINTH_CANAL_1893_CUT",
+      "platform": "instagram",
+      "title": "Η τομή που άλλαξε τον χάρτη της διαδρομής",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-instagram-10",
+      "story_id": "INSTAGRAM_20261009_10_DELOS_HOUSES_MOSAICS_COURTYARDS",
+      "platform": "instagram",
+      "title": "Δήλος: η ιστορία που βρίσκεται κάτω από τα πόδια",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-tiktok-01",
+      "story_id": "tiktok-20261009-01-hair-ice",
+      "platform": "tiktok",
+      "title": "Γιατί αυτό το ξύλο βγάζει τρίχες από πάγο;",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-tiktok-02",
+      "story_id": "tiktok-20261009-02-blood-falls-iron-brine",
+      "platform": "tiktok",
+      "title": "Γιατί ο παγετώνας Taylor βγάζει κόκκινο νερό;",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-tiktok-03",
+      "story_id": "tiktok-20261009-03-bloop-icequake",
+      "platform": "tiktok",
+      "title": "Bloop: τι ήταν ο μυστηριώδης ήχος του ωκεανού;",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-tiktok-04",
+      "story_id": "tiktok-20261009-04-glassfrog-hidden-blood",
+      "platform": "tiktok",
+      "title": "Ο βάτραχος που κρύβει το αίμα του όταν κοιμάται",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-tiktok-05",
+      "story_id": "tiktok-20261009-05-synchronous-fireflies",
+      "platform": "tiktok",
+      "title": "Πώς συγχρονίζονται οι πυγολαμπίδες ενός δάσους;",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-tiktok-06",
+      "story_id": "tiktok-20261009-06-bombardier-beetle",
+      "platform": "tiktok",
+      "title": "Το σκαθάρι με τον παλμικό αμυντικό ψεκασμό",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-tiktok-07",
+      "story_id": "tiktok-20261009-07-wombat-cubes",
+      "platform": "tiktok",
+      "title": "Πώς ένα βόμπατ φτιάχνει σχεδόν κυβικά περιττώματα;",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-tiktok-08",
+      "story_id": "tiktok-20261009-08-pistol-shrimp-cavitation",
+      "platform": "tiktok",
+      "title": "Η γαρίδα που δημιουργεί ήχο με μια φυσαλίδα",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-tiktok-09",
+      "story_id": "tiktok-20261009-09-narwhal-tusk",
+      "platform": "tiktok",
+      "title": "Το «κέρατο» του ναρβάλ είναι ένα ιδιαίτερο δόντι",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-tiktok-10",
+      "story_id": "tiktok-20261009-10-turritopsis-lifecycle",
+      "platform": "tiktok",
+      "title": "Τι σημαίνει πραγματικά «αθάνατη μέδουσα»;",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-youtube-01",
+      "story_id": "youtube-20261009-01-floating-ice",
+      "platform": "youtube",
+      "title": "Γιατί ο πάγος επιπλέει στο νερό;",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-youtube-02",
+      "story_id": "youtube-20261009-02-lunar-laser-ranging",
+      "platform": "youtube",
+      "title": "Πώς μετρήσαμε ότι η Σελήνη απομακρύνεται;",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-youtube-03",
+      "story_id": "youtube-20261009-03-gps-relativity",
+      "platform": "youtube",
+      "title": "Γιατί το GPS χρειάζεται τη σχετικότητα;",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-youtube-04",
+      "story_id": "youtube-20261009-04-gregorian-leap-year",
+      "platform": "youtube",
+      "title": "Γιατί το 2100 δεν θα είναι δίσεκτο;",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-youtube-05",
+      "story_id": "youtube-20261009-05-apollo12-lightning",
+      "platform": "youtube",
+      "title": "Apollo 12: η εντολή που αποκατέστησε τα δεδομένα",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-youtube-06",
+      "story_id": "youtube-20261009-06-webb-gold-mirrors",
+      "platform": "youtube",
+      "title": "Γιατί οι καθρέφτες του Webb είναι χρυσοί;",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-youtube-07",
+      "story_id": "youtube-20261009-07-photovoltaics",
+      "platform": "youtube",
+      "title": "Πώς ένα φωτοβολταϊκό μετατρέπει το φως σε ρεύμα;",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-youtube-08",
+      "story_id": "youtube-20261009-08-first-barcode-scan",
+      "platform": "youtube",
+      "title": "Το πακέτο τσίχλες που μπήκε στην ιστορία του barcode",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-youtube-09",
+      "story_id": "youtube-20261009-09-harrison-longitude",
+      "platform": "youtube",
+      "title": "Πώς ένα ρολόι βοήθησε να βρεθεί το γεωγραφικό μήκος;",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    },
+    {
+      "job_id": "2026-10-09-youtube-10",
+      "story_id": "youtube-20261009-10-voyager-golden-record",
+      "platform": "youtube",
+      "title": "Τι ταξιδεύει στον χρυσό δίσκο των Voyager;",
+      "state": "SOURCE_PACK_READY_REVIEW_PENDING",
+      "blockers": [
+        "CANONICAL_PROGRAM_DISABLED",
+        "FRESH_ACCOUNT_BUDGET_REQUIRED",
+        "FRESH_HISTORY_REQUIRED",
+        "NESTORAS_AUDIO_MISSING",
+        "OWNED_ACTIVE_LEASE_FOR_ACTION_REQUIRED",
+        "PLATFORM_PRODUCTION_DISABLED",
+        "SOURCE_REVIEW_REQUIRED",
+        "SYNTHESIZE_DISABLED"
+      ],
+      "counts_as_ready_media": false,
+      "counts_as_scheduled_queue": false,
+      "new_provider_calls": 0,
+      "next_action": "synthesize_existing_script"
+    }
+  ]
+}

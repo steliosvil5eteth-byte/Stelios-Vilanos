@@ -1,0 +1,55 @@
+{
+  "date": "2026-10-09",
+  "timezone": "Europe/Athens",
+  "selection": "Ten highest returned hourly values per platform when data are nonzero; Instagram retains agreed initial times because all returned values are zero.",
+  "status": "UNSCHEDULED_TEST_SLOTS_NOT_PROVEN_OPTIMAL",
+  "facebook": [
+    "09:00",
+    "10:00",
+    "11:00",
+    "12:00",
+    "13:00",
+    "14:00",
+    "15:00",
+    "16:00",
+    "17:00",
+    "18:00"
+  ],
+  "instagram": [
+    "07:00",
+    "09:00",
+    "10:00",
+    "11:00",
+    "13:00",
+    "15:00",
+    "17:00",
+    "18:30",
+    "20:00",
+    "22:00"
+  ],
+  "tiktok": [
+    "09:00",
+    "10:00",
+    "11:00",
+    "12:00",
+    "13:00",
+    "15:00",
+    "16:00",
+    "17:00",
+    "18:00",
+    "19:00"
+  ],
+  "youtube": [
+    "08:00",
+    "09:00",
+    "10:00",
+    "11:00",
+    "12:00",
+    "13:00",
+    "14:00",
+    "15:00",
+    "16:00",
+    "17:00"
+  ],
+  "public_queue_created": false
+}

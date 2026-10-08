@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "checked_at": null,
+  "expires_at": null,
+  "complete": false,
+  "source": null,
+  "resource_id": null,
+  "actual_sku": "UNKNOWN",
+  "period": null,
+  "voice": "el-GR-NestorasNeural",
+  "zero_cost_verified": false,
+  "usage_complete_for_period": false,
+  "remaining_tts_characters": null,
+  "reviewer": null,
+  "evidence_sha256": null,
+  "credential_binding": {
+    "private": true,
+    "verified_same_resource": false,
+    "resource_id": null,
+    "region": null,
+    "endpoint": null,
+    "key_sha256": null
+  },
+  "included_attempt_ids": [],
+  "usage_window_end": null,
+  "note": "Invalid schema example only. Populate a real receipt privately outside the public repository."
+}

@@ -1,0 +1,111 @@
+{
+  "status": "LOCAL_IMPLEMENTATION_TESTED_NOT_PRODUCTION_ACTIVATED",
+  "validated_at": "2026-10-08T20:14:28.224323+00:00",
+  "unit_tests": {
+    "command": "python -m unittest discover -s tests -v",
+    "passed": 35,
+    "failed": 0,
+    "real_provider_calls": 0,
+    "provider_failure_tests_use_mocks_only": true,
+    "prior_tests": 33,
+    "added_negative_tests": 2
+  },
+  "smoke": {
+    "ass_ffmpeg_render": "PASS",
+    "one_synthetic_frame_only": true,
+    "visual_layout_inspected": true,
+    "actual_story_rendered": false,
+    "actual_audio_listened": false,
+    "source": "smoke/result.json"
+  },
+  "source_pack_integration": {
+    "catalog": "research_tiktok_youtube.json",
+    "catalog_sha256": "6f7d0d9e0323efa80f22f1e79f617d1e100309a60a48f881199f7856eb154175",
+    "actual_source_packs_imported": 20,
+    "manifest_slots": 40,
+    "manifest_errors": 0,
+    "exact_final_ready": 0,
+    "real_scheduled_queue_count": 0,
+    "report": "reports/tiktok_youtube_20_dry_run.json"
+  },
+  "workflow": {
+    "manual_only": true,
+    "automatic_runs": false,
+    "synthesis_steps": 0,
+    "publication_steps": 0
+  },
+  "operational_guards": {
+    "canonical_snapshot_disabled": true,
+    "account_receipt_verified": false,
+    "fresh_complete_history_available": false,
+    "actual_final_audio_review_performed": false,
+    "new_synthesis_calls": 0,
+    "new_asr_calls": 0,
+    "new_publication_calls": 0,
+    "remote_mutations_by_this_subtask": 0
+  },
+  "limitations": [
+    "Actual Azure SDK/network execution has not been tested or invoked.",
+    "A complete new-story end-to-end render awaits approved local assets and valid production/history gates.",
+    "Actual final audio and visual review is still required for every exact video.",
+    "Private account receipts, live archive extracts, credential fingerprints and ledgers are excluded from the commit file list.",
+    "Resolved path/resource/period binding cannot prove shared storage across hosts; all production workers still require one common durable ledger store and coordinated executor/lease, never independent host copies."
+  ],
+  "stable_files": [
+    {
+      "path": "pipeline.py",
+      "bytes": 31698,
+      "sha256": "66ee2284ff2978bb03c5c6832859859b117ae5a2f98cd09209e6885bbe19a477"
+    },
+    {
+      "path": "synthesize_guarded.py",
+      "bytes": 13935,
+      "sha256": "925cc60f2fdf44707cf2fd6ba6d3ef021dbf7e1a7ed2605c99afe719196295ef"
+    },
+    {
+      "path": "render_local.py",
+      "bytes": 17728,
+      "sha256": "89704af103cf8df57fc993065ec0bcf075ba0f98c8347567175f4f7a6bbb519a"
+    },
+    {
+      "path": "tests/test_pipeline.py",
+      "bytes": 25413,
+      "sha256": "4c17f557f0b1cfaf313445ab4860988e484442dfc4c32be6c3af8aa1d9725035"
+    },
+    {
+      "path": "README.md",
+      "bytes": 12797,
+      "sha256": "1052caf14c0c31ba6c8745955bf91143ae4be1541e073b6cfb8e546c9fce8ddc"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 15,
+      "sha256": "41b54a6fb2918667ca47a61d73b522629d84490f3d78f0f20b21135faba10d35"
+    },
+    {
+      "path": "contracts/history.NOT_VERIFIED.json",
+      "bytes": 600,
+      "sha256": "08f92fb9176bde0a2fc3943baae260f88b13006567e66a34ff7f10e49cb17f23"
+    },
+    {
+      "path": "contracts/budget.NOT_VERIFIED.json",
+      "bytes": 708,
+      "sha256": "2a2a4c20bd400507999a8f9f664d5e5744e125839b9b617efbe8adc8a7a8e764"
+    },
+    {
+      "path": "workflow/platform-specific-dry-run.yml",
+      "bytes": 2044,
+      "sha256": "0a91a113bb4b933314af2fec92a775ab16f73c2d0ea33122416314bdb9615db0"
+    }
+  ],
+  "targeted_risk_regressions": {
+    "command": "PYTHONPATH=tests python -m unittest test_pipeline.FinalAndReleaseTests.test_future_review_or_render_timestamp_cannot_pass test_pipeline.HistoryAndBudgetTests.test_unbound_or_mismatched_executor_ledger_blocks_before_call -v",
+    "passed": 2,
+    "failed": 0,
+    "future_review_or_render_evidence_rejected": true,
+    "missing_or_mismatched_private_executor_ledger_binding_rejected": true,
+    "provider_invocations_in_new_negative_tests": 0,
+    "operational_receipt_created": false,
+    "remote_calls": 0
+  }
+}

@@ -84,7 +84,22 @@
       "previous_status": "BLOCKED_NOTION_QUERY_USAGE_LIMIT_REACHED",
       "last_successful_archive_read_at": "2026-10-08T18:14:42+03:00",
       "last_successful_archive_rows": 202,
-      "evening_reconciliation_note": "Supported Notion archive reads now succeed. Published-platform analytics found previously published moonbow and Selkie stories plus material Galaxidi overlap that the repository ledger alone missed. This point-in-time reconciliation is not clearance for a future create."
+      "evening_reconciliation_note": "Supported Notion archive reads now succeed. Published-platform analytics found previously published moonbow and Selkie stories plus material Galaxidi overlap that the repository ledger alone missed. This point-in-time reconciliation is not clearance for a future create.",
+      "latest_preparation_check": {
+        "at_utc": "2026-10-08T20:15:58Z",
+        "status": "INCOMPLETE_NOT_RELEASE_CLEARANCE",
+        "fresh_current_metricool_range_succeeded": true,
+        "fresh_full_notion_query_succeeded": false,
+        "notion_query_error": "usage_limit_reached",
+        "historical_metricool_or_tiktok_errors": "INVALID_ARGUMENT",
+        "targeted_notion_search_is_only_partial": true,
+        "private_baseline_counts": {
+          "instagram_reels": 84,
+          "facebook_reels": 82,
+          "youtube_videos": 130
+        },
+        "repository_history_rows": 53
+      }
     },
     "zero_credit_capacity": {
       "status": "BLOCKED_ACTUAL_TIER_AND_FREE_CAPACITY_UNVERIFIED",
@@ -102,13 +117,13 @@
       "actual_remaining_asr_allowance": "UNKNOWN",
       "published_f0_tts_characters_per_month": 500000,
       "published_f0_realtime_asr_hours_per_month": 5,
-      "illustrative_characters_per_video": 1433.8333333333333,
-      "illustrative_30_day_tts_characters": 1720600,
+      "illustrative_characters_per_video": 1677.5,
+      "illustrative_30_day_tts_characters": 2013000,
       "illustrative_30_day_asr_hours": [
         26.6666666667,
         36.6666666667
       ],
-      "estimate_basis": "Six previously prepared scripts, 8603 Unicode characters total; 40 videos/day, 30 days, 80–110 s/video, one pass only",
+      "estimate_basis": "Forty complete 9 October source-pack scripts: 67,100 Unicode characters total; 40 different videos/day, 30 days, one synthesis pass only. Editorial estimate, not provider billing or quota evidence.",
       "estimate_is_not_account_billing_data": true,
       "azure_f0_name_in_code_is_not_account_evidence": true,
       "no_multiple_accounts_keys_or_unofficial_quota_workaround": true,
@@ -139,9 +154,18 @@
       "posting_and_monetization_eligibility_are_separate": true
     },
     "new_program_execution_path": {
-      "status": "NOT_VALIDATED_FOR_PRODUCTION",
+      "status": "LOCAL_IMPLEMENTATION_TESTED_NOT_ACTIVATED",
       "legacy_runners_do_not_implement_this_program": true,
-      "new_config_alone_does_not_create_media_or_publish": true
+      "new_config_alone_does_not_create_media_or_publish": true,
+      "implementation_path": "production/platform_specific",
+      "validation_report": "production/platform_specific/VALIDATION.json",
+      "unit_tests_passed": 35,
+      "local_validation_only": true,
+      "actual_azure_sdk_execution_tested": false,
+      "actual_new_story_end_to_end_render_tested": false,
+      "publisher_implemented": false,
+      "manual_dry_run_workflow": ".github/workflows/platform-specific-dry-run.yml",
+      "automatic_workflow_execution": false
     }
   },
   "creative_rules": {
@@ -514,5 +538,14 @@
       "remaining_new_creates": 0,
       "completed_at": "2026-10-08T19:21:18Z"
     }
+  },
+  "latest_preparation_report": {
+    "path": "state/queue_rebuild_20261009.json",
+    "target_date": "2026-10-09",
+    "at_utc": "2026-10-08T20:15:58Z",
+    "research_source_packs": 40,
+    "actual_new_final_mp4": 0,
+    "actual_new_scheduled": 0,
+    "gates_changed": false
   }
 }
