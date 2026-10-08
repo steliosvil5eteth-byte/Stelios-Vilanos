@@ -426,8 +426,8 @@
       "required_content_identity": "Different complete story, narration and relevant scene sequence from every other platform"
     }
   },
-  "latest_recovery_report": "state/recovery_release_20261008_1925.json",
-  "last_reconciled_at": "2026-10-08T16:48:34Z",
+  "latest_recovery_report": "state/recovery_false_consensus_20261008_2109.json",
+  "last_reconciled_at": "2026-10-08T19:21:18Z",
   "bounded_manual_release_authorizations": {
     "RECOVERY_20261008_1925": {
       "batch_id": "RECOVERY_20261008_1925",
@@ -480,6 +480,39 @@
       "consumed_posts": 4,
       "remaining_new_creates": 0,
       "completed_at": "2026-10-08T16:48:34Z"
+    },
+    "RECOVERY_FALSE_CONSENSUS_20261008_2215": {
+      "batch_id": "RECOVERY_FALSE_CONSENSUS_20261008_2215",
+      "ledger_path": "state/recovery_false_consensus_20261008_2109.json",
+      "enabled": false,
+      "execution_mode": "INTERACTIVE_MANUAL_ONLY",
+      "brand_id": 7076410,
+      "user_instruction_at": "2026-10-08T22:15:06+03:00",
+      "source": "The user explicitly answered the request to publish this exact video with completed visual/technical review and no actual listening.",
+      "release_basis": "USER_AUTHORIZED_SINGLE_FILE_RELEASE_WITH_AUDIO_LIMITATION",
+      "actual_audio_listened": false,
+      "passed_final_review": false,
+      "max_posts": 1,
+      "max_posts_per_story": 1,
+      "exact_assignments": [
+        {
+          "story_id": "RECOVERY_FALSE_CONSENSUS_20261008",
+          "platform": "youtube",
+          "sha256": "94e50f723007c17d442620e8d6180c2f60a65dc4ebf15c67d6e16f7c50ef8295",
+          "metricool_uuid": "-3528729913796770475",
+          "metricool_id": 391473399,
+          "public_url": "https://www.youtube.com/shorts/CQRewxEzwn0"
+        }
+      ],
+      "general_production_enabled": false,
+      "legacy_reactivation_allowed": false,
+      "new_synthesis_allowed": false,
+      "credit_budget": 0,
+      "scope_rule": "Consumed authorization for one exact existing MP4 on YouTube. It does not mark audio QA passed, permit another publication or asset, activate general production, or relax duplicate checks.",
+      "status": "COMPLETED_ONE_PUBLISHED",
+      "consumed_posts": 1,
+      "remaining_new_creates": 0,
+      "completed_at": "2026-10-08T19:21:18Z"
     }
   }
 }
