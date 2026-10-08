@@ -3217,6 +3217,226 @@
       "reconciliation_note": "All four target platforms confirmed PUBLISHED with final provider IDs and public URLs. Existing logical post was updated in place, retaining its UUID while Metricool changed its numeric post ID. Confirmation time is recorded; exact platform publication timestamps were not supplied. This EXTRAS story is not part of the ten-story baseline.",
       "confirmed_at_utc": "2026-10-07T21:59:46.000Z",
       "exact_platform_publication_timestamps_available": false
+    },
+    {
+      "job_id": "RECOVERY_20261008_1925/RECOVERY_TINOS_PYRGOS_VOLAX_20261008",
+      "date": "2026-10-08",
+      "theme": "RECOVERY_TINOS_PYRGOS_VOLAX_20261008",
+      "title": "Τήνος: Πύργος και Βώλαξ",
+      "script": "Αν θέλετε να γνωρίσετε την Τήνο πέρα από τη Χώρα και χωρίς να μετατρέψετε το διήμερο σε αγώνα, συνδυάστε τον Πύργο με τον Βώλακα. Την πρώτη ημέρα κατευθυνόμαστε προς τον Πύργο, ένα χωριό όπου το μάρμαρο εμφανίζεται στις αυλές, στις καμάρες, στις κρήνες και στις λεπτομέρειες των σπιτιών. Περπατάμε αργά στα στενά και παρατηρούμε τις σκαλιστές προσόψεις χωρίς να μπαίνουμε σε ιδιωτικούς χώρους. Στην πλατεία κρατάμε χρόνο για καφέ και δεν αντιμετωπίζουμε το χωριό σαν γρήγορη στάση φωτογραφίας. Αν λειτουργούν οι χώροι πολιτισμού και τα μουσεία μαρμαροτεχνίας, ελέγχουμε πρώτα το επίσημο ωράριο και επιλέγουμε μία οργανωμένη επίσκεψη. Το απόγευμα μπορούμε να ακολουθήσουμε μόνο τμήμα μιας σηματοδοτημένης διαδρομής γύρω από την περιοχή, ανάλογα με τον καιρό, την εμπειρία και το διαθέσιμο φως. Τη δεύτερη ημέρα πηγαίνουμε στον Βώλακα. Το χωριό βρίσκεται ανάμεσα σε μεγάλους γρανιτικούς σχηματισμούς που κάνουν το τοπίο να μοιάζει σχεδόν εξωπραγματικό. Δεν χρειάζεται να σκαρφαλώσουμε πάνω στους βράχους για να το απολαύσουμε. Περπατάμε στους επιτρεπόμενους δρόμους, βλέπουμε τα σπίτια που εντάσσονται στο τοπίο και αναζητούμε τα ίχνη της καλαθοπλεκτικής παράδοσης. Το Tinos Trails περιγράφει διαδρομές που συνδέουν τον Βώλακα με άλλα χωριά και αναδεικνύουν τη γεωλογία του νησιού. Πριν ξεκινήσουμε, ελέγχουμε τη σήμανση, τη διάρκεια, τη θερμοκρασία και τα δρομολόγια επιστροφής. Παίρνουμε νερό, καπέλο και κατάλληλα παπούτσια, γιατί η σκιά δεν είναι δεδομένη. Το διήμερο έχει δύο διαφορετικές υφές: την πρώτη ημέρα το μάρμαρο που έγινε τέχνη, τη δεύτερη ο γρανίτης που διαμόρφωσε ολόκληρο τοπίο. Αν έπρεπε να διαλέξετε μία εικόνα, θα κρατούσατε την πλατεία του Πύργου ή τους βράχους του Βώλακα; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "caption": "Διήμερο στην Τήνο με Πύργο και Βώλακα: μάρμαρο, παραδοσιακά χωριά και γρανίτης. Ελέγξτε επίσημα ωράρια, καιρό, σήμανση και δρομολόγια πριν από κάθε διαδρομή.\n\nΠηγές διαδρομών: Tinos Trails — επίσημο δίκτυο μονοπατιών, M2 Georoute, E3 Road of the Marble.\n\nΟι επισημασμένες ενδεικτικές εικόνες είναι φωτορεαλιστικές αναπαραστάσεις με τεχνητή νοημοσύνη και δεν αποτελούν ακριβή αποτύπωση τοποθεσιών ή χάρτη. Συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΠραγματική φωτογραφία «Tinos - Volax»: Zigomitros Athanasios, Wikimedia Commons, CC BY-SA 4.0. Διατηρείται ολόκληρο το αρχικό κάδρο και αλλάζει μόνο το μέγεθος προβολής. Πηγή: https://commons.wikimedia.org/wiki/File:Tinos_-_Volax.jpg — άδεια: https://creativecommons.org/licenses/by-sa/4.0/\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Τήνος #Πύργος #Βώλαξ #Κυκλάδες #Διήμερο",
+      "hook": "Αν θέλετε να γνωρίσετε την Τήνο πέρα από τη Χώρα και χωρίς να μετατρέψετε το διήμερο σε αγώνα, συνδυάστε τον Πύργο με τον Βώλακα",
+      "fingerprint": "greece_two_day_trip|tinos-pyrgos-volax-marble-granite-villages-two-day",
+      "production_job_id": "RECOVERY_20261008_1925",
+      "source_slot_id": "PLATFORM_SPECIFIC_TEN_DAILY:2026-10-08:RECOVERY_TINOS_PYRGOS_VOLAX_20261008",
+      "production_batch_id": "RECOVERY_20261008_1925",
+      "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+      "status": "scheduled",
+      "scheduled_time": "2026-10-08T19:42:00+03:00",
+      "timezone": "Europe/Athens",
+      "platforms": [
+        "instagram"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "391353442",
+      "metricool_uuid": "3757779727790130426",
+      "notion_page_id": "3f3f2345b31881409db5ee868dff626d",
+      "media_url": "https://static.metricool.com/planner/202610/7000636-file-17755369194557891790.mp4",
+      "duration_seconds": 95.822,
+      "quality_check": {
+        "passed_final_review": false,
+        "release_basis": "USER_AUTHORIZED_BEST_EFFORT_RELEASE_WITH_AUDIO_LIMITATION",
+        "user_authorized_at": "2026-10-08T19:25:04+03:00",
+        "actual_audio_listening_performed": false,
+        "exact_final_visual_review_completed": true,
+        "sha256": "d2ed20cfb1b315db0cf2745f991b2bacadc8fc482197941efb6f6039edbc2701",
+        "uploaded_bytes_sha256_matched": true,
+        "voice": "el-GR-NestorasNeural",
+        "burned_synced_greek_subtitles": true,
+        "avatar_presenter": false,
+        "background_music": false,
+        "resolution": "1080x1920",
+        "fps": 30,
+        "live_readback_status": "PENDING",
+        "draft": false,
+        "autoPublish": true
+      },
+      "last_reconciled_at": "2026-10-08T16:39:20Z",
+      "platform_status": {
+        "instagram": {
+          "status": "PENDING",
+          "source_post_id": "391353442",
+          "source_uuid": "3757779727790130426",
+          "confirmed_at_utc": "2026-10-08T16:39:20Z"
+        }
+      },
+      "terminal": false,
+      "reconciliation_note": "One newly created record for one platform only, direct local-file Metricool upload with exact CDN SHA256 match. Scheduled-PENDING is not Published. Superseded shared records and automatic workflows were not reactivated."
+    },
+    {
+      "job_id": "RECOVERY_20261008_1925/RECOVERY_GREEN_FLASH_20261008",
+      "date": "2026-10-08",
+      "theme": "RECOVERY_GREEN_FLASH_20261008",
+      "title": "Η πράσινη αναλαμπή",
+      "script": "Τη στιγμή που ο Ήλιος χάνεται πίσω από έναν καθαρό ορίζοντα, μπορεί να εμφανιστεί για ένα ή δύο δευτερόλεπτα μια λεπτή πράσινη λάμψη. Δεν είναι φίλτρο, ούτε αντανάκλαση από τη θάλασσα. Είναι ένα πραγματικό ατμοσφαιρικό οπτικό φαινόμενο που ονομάζεται πράσινη αναλαμπή. Η ατμόσφαιρα λειτουργεί σαν ασθενές πρίσμα. Καθώς το φως περνά μέσα από διαφορετικά στρώματα αέρα, διαθλάται και τα χρώματά του χωρίζονται ελαφρά. Κοντά στον ορίζοντα, η διαδρομή μέσα στην ατμόσφαιρα είναι μεγαλύτερη. Το μπλε και το ιώδες φως διασκορπίζονται πιο έντονα, ενώ για μια πολύ σύντομη στιγμή μπορεί να μείνει ορατό ένα πράσινο άκρο πάνω από τον Ήλιο. Η Εθνική Μετεωρολογική Υπηρεσία των Ηνωμένων Πολιτειών εξηγεί ότι η πράσινη αναλαμπή συνδέεται με τη διάθλαση του φωτός. Οι καλύτερες συνθήκες είναι ένας μακρινός, επίπεδος ορίζοντας, καθαρός αέρας και στρώματα ατμόσφαιρας που καμπυλώνουν το φως με κατάλληλο τρόπο. Γι’ αυτό πολλοί παρατηρητές την αναζητούν στη θάλασσα, αλλά μπορεί να εμφανιστεί και πάνω από μακρινές πεδιάδες ή κορυφές. Δεν συμβαίνει σε κάθε δύση. Ακόμη και όταν υπάρχει, μπορεί να χαθεί μέσα σε θόλωση, σύννεφα ή κύματα θερμού αέρα. Και επειδή διαρκεί ελάχιστα, συχνά κάποιος αναρωτιέται αν πράγματι την είδε. Υπάρχει όμως ένας βασικός κανόνας ασφάλειας: δεν κοιτάζουμε ποτέ τον έντονο Ήλιο με γυμνά μάτια ή μέσα από φωτογραφικό φακό. Αν μια μέρα δείτε μια πράσινη σπίθα στο τελευταίο άκρο του Ήλιου, δεν άνοιξε κάποια πύλη στον ορίζοντα. Είδατε την ατμόσφαιρα να χωρίζει το φως για μια στιγμή. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "caption": "Η πράσινη αναλαμπή κρατά συνήθως ελάχιστα δευτερόλεπτα: η ατμόσφαιρα διαθλά το ηλιακό φως και, υπό κατάλληλες συνθήκες, γίνεται ορατό ένα πράσινο άκρο. Το φαινόμενο εμφανίζεται τόσο στην ανατολή όσο και στη δύση. Μην κοιτάζετε απευθείας τον έντονο Ήλιο ή μέσα από μη προστατευμένα οπτικά όργανα.\n\nΠηγές: NOAA/National Weather Service, Storm Courier 2010, «Science Corner: Atmospheric Optics», σελ. 8 — https://www.weather.gov/media/chs/newsletters/StormCourier_2010.pdf · Andrew T. Young, San Diego State University — https://aty.sdsu.edu/index.html · NASA, ασφάλεια παρατήρησης — https://science.nasa.gov/eclipses/safety/\n\nΠραγματικές φωτογραφίες:\n• «Multiple Green Flashes»: CTIO/NOIRLab/NSF/AURA/T. Slovinský & P. Horálek (IoP Opava) — https://noirlab.edu/public/images/iotw2313a/\n• «Green flash at La Silla»: Aleksandar Cikota/ESO — https://www.eso.org/public/images/greenflash-20170102-cc/\nΚαι οι δύο: CC BY 4.0, https://creativecommons.org/licenses/by/4.0/ . Έγινε περικοπή και αλλαγή μεγέθους. Η δεύτερη εικόνα είναι λεπτομέρεια φωτογραφικής ακολουθίας ανατολής. Οι υπόλοιπες εικόνες είναι ενδεικτικές φωτορεαλιστικές αναπαραστάσεις AI, με σήμανση μέσα στο βίντεο. Συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#ΠράσινηΑναλαμπή #Ηλιοβασίλεμα #Ατμόσφαιρα #ΦυσικάΦαινόμενα #Επιστήμη",
+      "hook": "Τη στιγμή που ο Ήλιος χάνεται πίσω από έναν καθαρό ορίζοντα, μπορεί να εμφανιστεί για ένα ή δύο δευτερόλεπτα μια λεπτή πράσινη λάμψη",
+      "fingerprint": "strange_real_phenomenon|green-flash-sunset-atmospheric-refraction-horizon",
+      "production_job_id": "RECOVERY_20261008_1925",
+      "source_slot_id": "PLATFORM_SPECIFIC_TEN_DAILY:2026-10-08:RECOVERY_GREEN_FLASH_20261008",
+      "production_batch_id": "RECOVERY_20261008_1925",
+      "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+      "status": "scheduled",
+      "scheduled_time": "2026-10-08T19:45:00+03:00",
+      "timezone": "Europe/Athens",
+      "platforms": [
+        "facebook"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "391354660",
+      "metricool_uuid": "8474262344644053993",
+      "notion_page_id": "3f3f2345b31881b9b512c8f6a435c05e",
+      "media_url": "https://static.metricool.com/planner/202610/7000636-file-11311042525078872391.mp4",
+      "duration_seconds": 89.086,
+      "quality_check": {
+        "passed_final_review": false,
+        "release_basis": "USER_AUTHORIZED_BEST_EFFORT_RELEASE_WITH_AUDIO_LIMITATION",
+        "user_authorized_at": "2026-10-08T19:25:04+03:00",
+        "actual_audio_listening_performed": false,
+        "exact_final_visual_review_completed": true,
+        "sha256": "7c6867f7008de3f5223c8c5c66e1b606f4e53a8f6c04ffc895c2bcb3fbacfb6c",
+        "uploaded_bytes_sha256_matched": true,
+        "voice": "el-GR-NestorasNeural",
+        "burned_synced_greek_subtitles": true,
+        "avatar_presenter": false,
+        "background_music": false,
+        "resolution": "1080x1920",
+        "fps": 30,
+        "live_readback_status": "PENDING",
+        "draft": false,
+        "autoPublish": true
+      },
+      "last_reconciled_at": "2026-10-08T16:39:20Z",
+      "platform_status": {
+        "facebook": {
+          "status": "PENDING",
+          "source_post_id": "391354660",
+          "source_uuid": "8474262344644053993",
+          "confirmed_at_utc": "2026-10-08T16:39:20Z"
+        }
+      },
+      "terminal": false,
+      "reconciliation_note": "One newly created record for one platform only, direct local-file Metricool upload with exact CDN SHA256 match. Scheduled-PENDING is not Published. Superseded shared records and automatic workflows were not reactivated."
+    },
+    {
+      "job_id": "RECOVERY_20261008_1925/RECOVERY_DOOR_EXPERIMENT_20261008",
+      "date": "2026-10-08",
+      "theme": "RECOVERY_DOOR_EXPERIMENT_20261008",
+      "title": "Το πείραμα της πόρτας: τι δεν παρατηρούμε;",
+      "script": "Θα καταλαβαίνατε ότι ο άνθρωπος με τον οποίο μιλούσατε αντικαταστάθηκε ξαφνικά από κάποιον άλλο; Το 1998, οι ψυχολόγοι Daniel Simons και Daniel Levin δημοσίευσαν μια μελέτη για την τύφλωση στην αλλαγή μέσα σε πραγματική κοινωνική αλληλεπίδραση. Ένας ερευνητής πλησίαζε έναν πεζό σε πανεπιστημιούπολη και ζητούσε οδηγίες. Ενώ μιλούσαν, δύο εργάτες περνούσαν ανάμεσά τους κρατώντας μια μεγάλη πόρτα. Για ένα πολύ σύντομο διάστημα, η πόρτα έκρυβε τον ερευνητή. Τότε ο αρχικός συνομιλητής άλλαζε θέση με έναν από τους ανθρώπους που μετέφεραν την πόρτα. Ο νέος άνθρωπος συνέχιζε τη συζήτηση σαν να μην είχε συμβεί τίποτα. Σε αρκετές περιπτώσεις, οι πεζοί δεν ανέφεραν ότι ο συνομιλητής τους είχε αλλάξει, παρόλο που υπήρχαν διαφορές στην εμφάνιση και στα ρούχα. Το αποτέλεσμα δεν σημαίνει ότι οι άνθρωποι δεν βλέπουν. Δείχνει ότι η προσοχή και η μνήμη δεν αποθηκεύουν κάθε λεπτομέρεια μιας σκηνής με την ακρίβεια κάμερας. Όταν εστιάζουμε σε έναν στόχο, όπως να εξηγήσουμε μια διαδρομή, μπορεί να κρατάμε μόνο μια γενική αναπαράσταση του άλλου ανθρώπου. Οι ερευνητές συζήτησαν επίσης τον ρόλο των κοινωνικών κατηγοριών: όταν ο συνομιλητής θεωρούνταν απλώς ένας άγνωστος που ζητούσε οδηγίες, οι συμμετέχοντες ίσως δεν επεξεργάζονταν με προσοχή όλα τα χαρακτηριστικά του. Η μελέτη είχε μικρό και συγκεκριμένο πλαίσιο, επομένως δεν αποδεικνύει ότι όλοι θα αντιδράσουν το ίδιο σε κάθε κατάσταση. Έγινε όμως ένα κλασικό παράδειγμα του πόσο περιορισμένη μπορεί να είναι η επίγνωσή μας για αλλαγές που συμβαίνουν μπροστά μας. Την επόμενη φορά που θα πείτε «θα το πρόσεχα σίγουρα», θυμηθείτε ότι η βεβαιότητα δεν είναι το ίδιο με την προσοχή. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "caption": "Στη μελέτη των Simons και Levin, ένας συνομιλητής αντικαθίστατο ενώ μια πόρτα περνούσε ανάμεσα σε δύο ανθρώπους. Αρκετοί συμμετέχοντες δεν ανέφεραν την αλλαγή — ένα πραγματικό παράδειγμα change blindness.\n\nΠηγή: Simons & Levin, Perception 27(9), 1998, “Failure to detect changes to people during a real-world interaction”. Οι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη· δεν απεικονίζουν πραγματικούς συμμετέχοντες. Συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ψυχολογία #Πείραμα #ChangeBlindness #Προσοχή #Επιστήμη",
+      "hook": "Θα καταλαβαίνατε ότι ο άνθρωπος με τον οποίο μιλούσατε αντικαταστάθηκε ξαφνικά από κάποιον άλλο; Το 1998, οι ψυχολόγοι Daniel Simons και Daniel Levin δημοσίευσαν μια μελέτη για την τύφλωση στην αλλαγή μέσα σε πραγματική κοινωνική αλληλεπίδραση",
+      "fingerprint": "documented_experiments|simons-levin-1998-door-study-change-blindness",
+      "production_job_id": "RECOVERY_20261008_1925",
+      "source_slot_id": "PLATFORM_SPECIFIC_TEN_DAILY:2026-10-08:RECOVERY_DOOR_EXPERIMENT_20261008",
+      "production_batch_id": "RECOVERY_20261008_1925",
+      "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+      "status": "scheduled",
+      "scheduled_time": "2026-10-08T19:44:00+03:00",
+      "timezone": "Europe/Athens",
+      "platforms": [
+        "youtube"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "391354358",
+      "metricool_uuid": "5902858299946320594",
+      "notion_page_id": "3f3f2345b31881c38bb7c9007d63eada",
+      "media_url": "https://static.metricool.com/planner/202610/7000636-file-16107581787172568372.mp4",
+      "duration_seconds": 93.373,
+      "quality_check": {
+        "passed_final_review": false,
+        "release_basis": "USER_AUTHORIZED_BEST_EFFORT_RELEASE_WITH_AUDIO_LIMITATION",
+        "user_authorized_at": "2026-10-08T19:25:04+03:00",
+        "actual_audio_listening_performed": false,
+        "exact_final_visual_review_completed": true,
+        "sha256": "cad16f6b7c89cea875954ad464ae54d2085b680fb81823e3b201c07ec684dd67",
+        "uploaded_bytes_sha256_matched": true,
+        "voice": "el-GR-NestorasNeural",
+        "burned_synced_greek_subtitles": true,
+        "avatar_presenter": false,
+        "background_music": false,
+        "resolution": "1080x1920",
+        "fps": 30,
+        "live_readback_status": "PENDING",
+        "draft": false,
+        "autoPublish": true
+      },
+      "last_reconciled_at": "2026-10-08T16:39:20Z",
+      "platform_status": {
+        "youtube": {
+          "status": "PENDING",
+          "source_post_id": "391354358",
+          "source_uuid": "5902858299946320594",
+          "confirmed_at_utc": "2026-10-08T16:39:20Z"
+        }
+      },
+      "terminal": false,
+      "reconciliation_note": "One newly created record for one platform only, direct local-file Metricool upload with exact CDN SHA256 match. Scheduled-PENDING is not Published. Superseded shared records and automatic workflows were not reactivated."
+    },
+    {
+      "job_id": "RECOVERY_20261008_1925/RECOVERY_BELL_WITCH_20261008",
+      "date": "2026-10-08",
+      "theme": "RECOVERY_BELL_WITCH_20261008",
+      "title": "Bell Witch: ο θρύλος του Τενεσί",
+      "script": "Στις αρχές του δέκατου ένατου αιώνα, κοντά στην κοινότητα Άνταμς του Τενεσί, μια οικογενειακή ιστορία άρχισε να μετατρέπεται σε έναν από τους πιο γνωστούς αμερικανικούς θρύλους. Η παράδοση μιλά για την οικογένεια Bell και για παράξενα χτυπήματα στους τοίχους, ψιθύρους, βήματα και μια φωνή που φαινόταν να γνωρίζει πράγματα για τους ανθρώπους του σπιτιού. Στις πιο δημοφιλείς εκδοχές, η παρουσία απέκτησε το όνομα Bell Witch. Λέγεται ότι πείραζε την οικογένεια, απαντούσε σε ερωτήσεις και ιδιαίτερα βασάνιζε τον John Bell και την κόρη του Betsy. Με τα χρόνια, η ιστορία μεγάλωσε. Επισκέπτες, γείτονες και αργότερα συγγραφείς πρόσθεσαν επεισόδια, μέχρι που ο θρύλος συνδέθηκε ακόμη και με τον Andrew Jackson. Δεν υπάρχει όμως σύγχρονη επιστημονική τεκμηρίωση ότι συνέβη κάτι υπερφυσικό. Οι περισσότερες γνωστές αφηγήσεις καταγράφηκαν αργότερα, όταν η ιστορία είχε ήδη περάσει από στόμα σε στόμα. Αυτό είναι σημαντικό, γιατί η λαογραφία δεν λειτουργεί σαν δικαστικό πρακτικό. Αλλάζει με κάθε αφηγητή, κρατά τους φόβους μιας κοινότητας και συχνά μετατρέπει οικογενειακές συγκρούσεις ή ανεξήγητους ήχους σε πρόσωπα και φωνές. Η πολιτεία του Τενεσί εξακολουθεί να παρουσιάζει την Bell Witch ως μέρος της τοπικής παράδοσης και των ιστοριών τρόμου της περιοχής. Η σπηλιά και το αγρόκτημα γύρω από τον θρύλο έχουν γίνει σημεία επίσκεψης, αλλά αυτό δεν αποδεικνύει τα υπερφυσικά στοιχεία. Η Bell Witch παραμένει δυνατή ιστορία επειδή δεν περιγράφει απλώς ένα φάντασμα. Περιγράφει έναν φόβο που μπαίνει μέσα στο σπίτι, μιλά με γνώριμη φωνή και κάνει τους κατοίκους να αμφιβάλλουν για όσα ακούν. Αν βρισκόσασταν σε ένα παλιό ξύλινο σπίτι και μια φωνή ήξερε το όνομά σας, θα ψάχνατε πρώτα μια φυσική εξήγηση ή θα φεύγατε; Θρύλος και λαογραφία — όχι επιβεβαιωμένο πραγματικό γεγονός. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "caption": "Η Bell Witch είναι θρύλος του Τενεσί, συνδεδεμένος με την οικογένεια Bell, παράξενους ήχους και μια υποτιθέμενη φωνή στο αγρόκτημά τους. Οι αφηγήσεις ανήκουν στη λαογραφία και μεταδόθηκαν μέσα από μεταγενέστερες καταγραφές και επαναφηγήσεις. Η σημερινή επισκεψιμότητα της σπηλιάς και της σχετικής τοποθεσίας δείχνει τη δύναμη της τοπικής παράδοσης.\n\nΘρύλος και λαογραφία — όχι επιβεβαιωμένο πραγματικό γεγονός.\n\nΠηγές:\nTennessee State Museum, «Tennessee Legends: The Bell Witch»\nhttps://tnmuseum.org/junior-curators/posts/tennessee-legends-the-bell-witch\nTennessee Historical Society, «Bell Witch»\nhttps://tennesseeencyclopedia.net/entries/bell-witch/\nTennessee Department of Tourist Development, ενότητα «Bell Witch Cave in Adams»\nhttps://www.tnvacation.com/trip-inspiration/articles/guide-to-ghost-towns-and-haunted-places-tennessee\n\nΟι εικόνες είναι φωτορεαλιστικές εικονογραφήσεις του θρύλου, δημιουργημένες με τεχνητή νοημοσύνη. Απεικονίζουν φανταστικές σκηνές και χώρους. Συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#BellWitch #Τενεσί #Λαογραφία #Θρύλοι #Ιστορίες",
+      "hook": "Στις αρχές του δέκατου ένατου αιώνα, κοντά στην κοινότητα Άνταμς του Τενεσί, μια οικογενειακή ιστορία άρχισε να μετατρέπεται σε έναν από τους πιο γνωστούς αμερικανικούς θρύλους",
+      "fingerprint": "international_legend|tennessee-bell-witch-adams-farm-folklore",
+      "production_job_id": "RECOVERY_20261008_1925",
+      "source_slot_id": "PLATFORM_SPECIFIC_TEN_DAILY:2026-10-08:RECOVERY_BELL_WITCH_20261008",
+      "production_batch_id": "RECOVERY_20261008_1925",
+      "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+      "status": "scheduled",
+      "scheduled_time": "2026-10-08T19:43:00+03:00",
+      "timezone": "Europe/Athens",
+      "platforms": [
+        "tiktok"
+      ],
+      "metricool_brand_id": "7076410",
+      "metricool_post_id": "391354040",
+      "metricool_uuid": "588557238060466501",
+      "notion_page_id": "3f3f2345b31881d8ba49c282a2b67bf2",
+      "media_url": "https://static.metricool.com/planner/202610/7000636-file-5451157159152410604.mp4",
+      "duration_seconds": 101.346,
+      "quality_check": {
+        "passed_final_review": false,
+        "release_basis": "USER_AUTHORIZED_BEST_EFFORT_RELEASE_WITH_AUDIO_LIMITATION",
+        "user_authorized_at": "2026-10-08T19:25:04+03:00",
+        "actual_audio_listening_performed": false,
+        "exact_final_visual_review_completed": true,
+        "sha256": "e0a19a96ca7003fee65b4b9ffa21123868c6ddd78b6bd43c416ad3de780c1edf",
+        "uploaded_bytes_sha256_matched": true,
+        "voice": "el-GR-NestorasNeural",
+        "burned_synced_greek_subtitles": true,
+        "avatar_presenter": false,
+        "background_music": false,
+        "resolution": "1080x1920",
+        "fps": 30,
+        "live_readback_status": "PENDING",
+        "draft": false,
+        "autoPublish": true
+      },
+      "last_reconciled_at": "2026-10-08T16:39:20Z",
+      "platform_status": {
+        "tiktok": {
+          "status": "PENDING",
+          "source_post_id": "391354040",
+          "source_uuid": "588557238060466501",
+          "confirmed_at_utc": "2026-10-08T16:39:20Z"
+        }
+      },
+      "terminal": false,
+      "reconciliation_note": "One newly created record for one platform only, direct local-file Metricool upload with exact CDN SHA256 match. Scheduled-PENDING is not Published. Superseded shared records and automatic workflows were not reactivated."
     }
   ]
 }

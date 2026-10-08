@@ -4,7 +4,7 @@
   "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
   "brand_id": 7076410,
   "timezone": "Europe/Athens",
-  "status": "RESERVED_FOR_DIRECT_METRICOOL_RELEASE",
+  "status": "ALL_FOUR_SCHEDULED_PENDING",
   "authorization": {
     "user_instruction": "Φτιάξε τα φτιάξε ό,τι μπορείς και ανέβασέ τα",
     "received_at": "2026-10-08T19:25:04+03:00",
@@ -30,10 +30,36 @@
       "sha256": "d2ed20cfb1b315db0cf2745f991b2bacadc8fc482197941efb6f6039edbc2701",
       "seconds": 95.822,
       "notion_page_id": "3f3f2345b31881409db5ee868dff626d",
-      "status": "RESERVED",
+      "status": "SCHEDULED_PENDING",
       "exact_final_visual_review_completed": true,
       "actual_audio_listening_performed": false,
-      "metricool": null
+      "metricool": {
+        "id": 391353442,
+        "uuid": "3757779727790130426",
+        "publicationDate": {
+          "dateTime": "2026-10-08T19:42:00",
+          "timezone": "Europe/Athens"
+        },
+        "providers": [
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-17755369194557891790.mp4"
+        ],
+        "autoPublish": true,
+        "draft": false,
+        "instagramData": {
+          "autoPublish": true,
+          "type": "REEL",
+          "showReelOnFeed": true,
+          "isAiGenerated": true
+        }
+      },
+      "uploaded_exact_bytes_verified": true
     },
     {
       "story_id": "RECOVERY_GREEN_FLASH_20261008",
@@ -43,10 +69,41 @@
       "sha256": "7c6867f7008de3f5223c8c5c66e1b606f4e53a8f6c04ffc895c2bcb3fbacfb6c",
       "seconds": 89.086,
       "notion_page_id": "3f3f2345b31881b9b512c8f6a435c05e",
-      "status": "RESERVED",
+      "status": "SCHEDULED_PENDING",
       "exact_final_visual_review_completed": true,
       "actual_audio_listening_performed": false,
-      "metricool": null
+      "metricool": {
+        "id": 391354660,
+        "uuid": "8474262344644053993",
+        "publicationDate": {
+          "dateTime": "2026-10-08T19:45:00",
+          "timezone": "Europe/Athens"
+        },
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-11311042525078872391.mp4"
+        ],
+        "autoPublish": true,
+        "draft": false,
+        "facebookData": {
+          "type": "REEL",
+          "title": "Η πράσινη αναλαμπή: ένα σπάνιο παιχνίδι του φωτός"
+        }
+      },
+      "ai_disclosure": {
+        "native_toggle_available_in_metricool": false,
+        "native_toggle_claimed_enabled": false,
+        "visible_media_label": true,
+        "caption_disclosure": true,
+        "documentation": "https://help.metricool.com/how-to-label-ai-generated-content-for-eu-ai-act-compliance-8a1j8"
+      },
+      "uploaded_exact_bytes_verified": true
     },
     {
       "story_id": "RECOVERY_DOOR_EXPERIMENT_20261008",
@@ -56,10 +113,39 @@
       "sha256": "cad16f6b7c89cea875954ad464ae54d2085b680fb81823e3b201c07ec684dd67",
       "seconds": 93.373,
       "notion_page_id": "3f3f2345b31881c38bb7c9007d63eada",
-      "status": "RESERVED",
+      "status": "SCHEDULED_PENDING",
       "exact_final_visual_review_completed": true,
       "actual_audio_listening_performed": false,
-      "metricool": null
+      "metricool": {
+        "id": 391354358,
+        "uuid": "5902858299946320594",
+        "publicationDate": {
+          "dateTime": "2026-10-08T19:44:00",
+          "timezone": "Europe/Athens"
+        },
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-16107581787172568372.mp4"
+        ],
+        "autoPublish": true,
+        "draft": false,
+        "youtubeData": {
+          "title": "Το πείραμα της πόρτας: θα πρόσεχες ότι άλλαξε ο άνθρωπος;",
+          "type": "short",
+          "privacy": "public",
+          "category": "EDUCATION",
+          "madeForKids": false,
+          "isAiGeneratedContent": true,
+          "notifySubscribers": true
+        }
+      },
+      "uploaded_exact_bytes_verified": true
     },
     {
       "story_id": "RECOVERY_BELL_WITCH_20261008",
@@ -69,19 +155,47 @@
       "sha256": "e0a19a96ca7003fee65b4b9ffa21123868c6ddd78b6bd43c416ad3de780c1edf",
       "seconds": 101.346,
       "notion_page_id": "3f3f2345b31881d8ba49c282a2b67bf2",
-      "status": "RESERVED",
+      "status": "SCHEDULED_PENDING",
       "exact_final_visual_review_completed": true,
       "actual_audio_listening_performed": false,
-      "metricool": null
+      "metricool": {
+        "id": 391354040,
+        "uuid": "588557238060466501",
+        "publicationDate": {
+          "dateTime": "2026-10-08T19:43:00",
+          "timezone": "Europe/Athens"
+        },
+        "providers": [
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-5451157159152410604.mp4"
+        ],
+        "autoPublish": true,
+        "draft": false,
+        "tiktokData": {
+          "privacyOption": "PUBLIC_TO_EVERYONE",
+          "title": "Bell Witch: ο θρύλος του Τενεσί",
+          "photoCoverIndex": 0,
+          "isAigc": true
+        }
+      },
+      "uploaded_exact_bytes_verified": true
     }
   ],
   "publication_count": 0,
-  "metricool_write_count": 0,
+  "metricool_write_count": 4,
   "full_daily_target_completed": false,
   "media_transport": {
     "vidiq_upload": "AUTOMATIC_APPROVAL_REJECTED_NO_TRANSFER",
-    "rejection_reason": "Private unreleased media transfer to additional vidIQ service was not specifically authorized; connected account had no authorized channels.",
-    "next": "Use only direct Metricool publication transport. No alternate third-party hosting workaround."
+    "rejection_reason": "Additional unapproved media-host transfer was rejected; no transfer occurred. Direct authorized Metricool upload succeeded.",
+    "next": "Use only direct Metricool publication transport. No alternate third-party hosting workaround.",
+    "direct_metricool_local_path_upload": "CONFIRMED_ALL_FOUR",
+    "exact_uploaded_sha256_match": true
   },
   "history_clearance": {
     "as_of": "2026-10-08T19:34:00+03:00",
@@ -93,5 +207,6 @@
     "published_per_platform": 5,
     "active_pending_per_platform": 0,
     "candidate_conflicts_found": 0
-  }
+  },
+  "last_reconciled_at": "2026-10-08T19:39:20+03:00"
 }
