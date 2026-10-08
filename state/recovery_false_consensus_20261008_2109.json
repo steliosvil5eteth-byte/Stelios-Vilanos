@@ -6,15 +6,13 @@
   "brand_id": 7076410,
   "timezone": "Europe/Athens",
   "requested_at": "2026-10-08T21:09:51+03:00",
-  "status": "METRICOOL_DRAFT_READY_AWAITING_FINAL_AUDIO_REVIEW",
+  "status": "AUTHORIZED_SINGLE_FILE_RELEASE_IN_PROGRESS",
   "lease": {
-    "owner": "interactive_20261008_2151",
-    "status": "COMPLETED_RELEASED",
-    "scope": "Replace media/caption/provider of the existing inactive False Consensus draft only. Do not schedule or publish.",
-    "started_at_utc": "2026-10-08T18:55:44Z",
-    "release_after_completion": true,
-    "completed_at_utc": "2026-10-08T18:59:19Z",
-    "released_at_utc": "2026-10-08T18:59:19Z"
+    "owner": "interactive_20261008_2215",
+    "status": "ACTIVE",
+    "scope": "Release only the exact existing False Consensus MP4 on YouTube under the user's 22:15:06 single-file audio-review exception.",
+    "started_at_utc": "2026-10-08T19:17:01Z",
+    "release_after_completion": true
   },
   "target_platform": "youtube",
   "existing_inactive_metricool": {
@@ -66,11 +64,13 @@
         "url": "https://doi.org/10.1016/0022-1031(77)90049-X"
       }
     ],
-    "uploaded_exact_bytes_verified": true
+    "uploaded_exact_bytes_verified": true,
+    "release_basis": "USER_AUTHORIZED_SINGLE_FILE_RELEASE_WITH_AUDIO_LIMITATION",
+    "user_authorized_exception": true
   },
-  "scheduling_enabled": false,
-  "publication_enabled": false,
-  "requires": "Actual audio review of this exact MP4 under the current quality rule before release, plus a fresh duplicate/queue check. Any exception requires an explicit user instruction for this exact file and must not be represented as PASSED_FINAL_REVIEW.",
+  "scheduling_enabled": true,
+  "publication_enabled": true,
+  "requires": "Complete one bounded release and verify provider result; do not extend this exception to other media.",
   "final_media": {
     "file_name": "Psefdis_Synainesi_2026-10-08.mp4",
     "sha256": "94e50f723007c17d442620e8d6180c2f60a65dc4ebf15c67d6e16f7c50ef8295",
@@ -233,7 +233,7 @@
       "metricool_uuid": "-3528729913796770475"
     }
   ],
-  "last_reconciled_at": "2026-10-08T18:59:19Z",
+  "last_reconciled_at": "2026-10-08T19:17:01Z",
   "previous_inactive_metricool": {
     "id": 390888157,
     "uuid": "-3528729913796770475",
@@ -298,5 +298,34 @@
     "known_story_records": 1,
     "extra_logical_records_created": 0
   },
-  "future_metricool_update_requirement": "getScheduledPosts may return default *Data fields for unselected providers. Before updates, remove only network-specific fields whose network is not in providers; preserve the current ID and UUID, and re-read after every write."
+  "future_metricool_update_requirement": "getScheduledPosts may return default *Data fields for unselected providers. Before updates, remove only network-specific fields whose network is not in providers; preserve the current ID and UUID, and re-read after every write.",
+  "authorization": {
+    "type": "USER_AUTHORIZED_SINGLE_FILE_RELEASE_WITH_AUDIO_LIMITATION",
+    "user_authorized_at": "2026-10-08T22:15:06+03:00",
+    "user_response": "OK μια χαρά μόνο σε αυτό έχουμε κόλλημα; Γιατί στην ουσία δεν έχεις ανεβάσει τίποτα σήμερα εκτός από το πρωί",
+    "in_response_to": "Μου επιτρέπεις να δημοσιεύσω μόνο αυτό το συγκεκριμένο βίντεο, με ολοκληρωμένο οπτικό και τεχνικό έλεγχο αλλά χωρίς πραγματική ακρόαση;",
+    "scope": {
+      "story_id": "RECOVERY_FALSE_CONSENSUS_20261008",
+      "platform": "youtube",
+      "metricool_uuid": "-3528729913796770475",
+      "sha256": "94e50f723007c17d442620e8d6180c2f60a65dc4ebf15c67d6e16f7c50ef8295",
+      "media_url": "https://static.metricool.com/planner/202610/7000636-file-10555168709203677419.mp4"
+    },
+    "limitations": [
+      "Actual audio listening was not performed.",
+      "This does not constitute PASSED_FINAL_REVIEW.",
+      "No waiver for other stories or the recurring production program.",
+      "No new synthesis or generation credits authorized."
+    ]
+  },
+  "enabled_scope": "Only the exact media/platform/UUID listed in authorization; global production configuration remains disabled.",
+  "release_attempt": {
+    "status": "AUTHORIZED_NOT_YET_SCHEDULED",
+    "intended_date_time": "2026-10-08T22:20:00",
+    "timezone": "Europe/Athens",
+    "source_metricool_id": 391458921,
+    "metricool_uuid": "-3528729913796770475",
+    "media_url": "https://static.metricool.com/planner/202610/7000636-file-10555168709203677419.mp4",
+    "created_logical_posts": 0
+  }
 }
