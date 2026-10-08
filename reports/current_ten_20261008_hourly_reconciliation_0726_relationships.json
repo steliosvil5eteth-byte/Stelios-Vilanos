@@ -1,0 +1,95 @@
+{
+  "schema_version": "1.0",
+  "reconciliation_at": "2026-10-08T07:26:00+03:00",
+  "timezone": "Europe/Athens",
+  "brand": {
+    "id": 7076410,
+    "name": "Ιστορίες που μας αγγίζουν"
+  },
+  "program": "CURRENT_TEN_DAILY",
+  "slot": {
+    "scheduled_time": "2026-10-08T07:00:00+03:00",
+    "series": "relationships",
+    "title": "Η συγγνώμη χωρίς «αλλά»",
+    "qa": "PASSED_FINAL_REVIEW",
+    "records": [
+      {
+        "metricool_id": 390602019,
+        "uuid": "5917469971186467796",
+        "draft": false,
+        "autoPublish": true,
+        "media_count": 7,
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PUBLISHED",
+            "provider_id": "1355373017651242_122117655735477192",
+            "public_url": "https://facebook.com/122101951509477192/posts/122117655735477192"
+          },
+          {
+            "network": "instagram",
+            "status": "PUBLISHED",
+            "provider_id": "https://www.instagram.com/p/DeOB4JaHFmu/",
+            "public_url": "https://www.instagram.com/p/DeOB4JaHFmu/"
+          },
+          {
+            "network": "tiktok",
+            "status": "PUBLISHED",
+            "provider_id": "7694142410883910945",
+            "public_url": "https://www.tiktok.com/@steliosvilanos/video/7694142410883910945"
+          }
+        ]
+      },
+      {
+        "metricool_id": 390602630,
+        "uuid": "5935376547100573985",
+        "draft": false,
+        "autoPublish": true,
+        "media_count": 1,
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PUBLISHED",
+            "provider_id": "9W7Z0gC7JkE",
+            "public_url": "https://www.youtube.com/shorts/9W7Z0gC7JkE"
+          }
+        ]
+      }
+    ],
+    "logical_status": "PUBLISHED_4_OF_4",
+    "mutation": "NONE",
+    "duplicate_created": false,
+    "backdated": false
+  },
+  "day_state": {
+    "baseline_logical_posts": 10,
+    "baseline_destinations": 40,
+    "baseline_published": 4,
+    "baseline_pending": 36,
+    "baseline_failed_or_blocked": 0,
+    "extras_logical_posts": 4,
+    "extras_destinations": 16,
+    "extras_published": 16,
+    "extras_pending": 0
+  },
+  "archive": {
+    "notion_page_id": "3f2f2345-b318-813d-bd1b-ef7dc3f694ea",
+    "status": "Published",
+    "delivery_coverage": "Complete"
+  },
+  "forward_queue": {
+    "2026-10-09": {
+      "metricool_records": 0,
+      "confirmed_notion_batch": false,
+      "active_production_lease": false
+    },
+    "2026-10-10": {
+      "metricool_records": 0,
+      "confirmed_notion_batch": false,
+      "active_production_lease": false
+    },
+    "full_qa_passed_future_days": 0,
+    "minimum_required": 2,
+    "target": 3
+  }
+}
