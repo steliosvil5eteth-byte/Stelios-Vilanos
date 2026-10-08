@@ -36,10 +36,14 @@ jobs:
     env:
       YT_ASR_MANIFEST: ${{ inputs.manifest_path || 'media_jobs/youtube_growth/requests/asr.json' }}
       YT_ASR_SELECTED_IDS: ${{ inputs.job_ids || '' }}
-      YT_ASR_SOURCE: ${{ runner.temp }}/youtube-growth-review-source
-      YT_ASR_OUTPUT: ${{ runner.temp }}/youtube-growth-exact-asr
 
     steps:
+      - name: Set runner-local review paths
+        shell: bash
+        run: |
+          printf 'YT_ASR_SOURCE=%s/youtube-growth-review-source\n' "$RUNNER_TEMP" >> "$GITHUB_ENV"
+          printf 'YT_ASR_OUTPUT=%s/youtube-growth-exact-asr\n' "$RUNNER_TEMP" >> "$GITHUB_ENV"
+
       - name: Check out explicit review request
         uses: actions/checkout@v4
         with:

@@ -35,9 +35,13 @@ jobs:
     env:
       YT_MANIFEST_PATH: ${{ inputs.manifest_path || 'media_jobs/youtube_growth/requests/active.json' }}
       YT_SELECTED_JOB_IDS: ${{ inputs.job_ids || '' }}
-      YT_AUDIO_OUTPUT: ${{ runner.temp }}/youtube-growth-nestoras
 
     steps:
+      - name: Set runner-local audio output
+        shell: bash
+        run: |
+          printf 'YT_AUDIO_OUTPUT=%s/youtube-growth-nestoras\n' "$RUNNER_TEMP" >> "$GITHUB_ENV"
+
       - name: Check out isolated audio request
         uses: actions/checkout@v4
         with:
