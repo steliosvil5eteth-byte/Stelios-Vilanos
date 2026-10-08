@@ -6,7 +6,7 @@
   "baseline_logical_posts": 10,
   "destinations": 40,
   "voice": "el-GR-NestorasNeural",
-  "final_review": "PENDING_FINAL_VISUAL_REVIEW",
+  "final_review": "PASSED_FINAL_REVIEW",
   "posts": [
     {
       "series": "relationships",
@@ -56,7 +56,7 @@
           "bytes": 1687425
         }
       ],
-      "release_status": "PENDING_FINAL_VISUAL_REVIEW"
+      "release_status": "PASSED_FINAL_REVIEW"
     },
     {
       "series": "survival",
@@ -116,7 +116,7 @@
           "bytes": 1982445
         }
       ],
-      "release_status": "PENDING_FINAL_VISUAL_REVIEW"
+      "release_status": "PASSED_FINAL_REVIEW"
     },
     {
       "series": "dog_bartender",
@@ -151,7 +151,7 @@
           "bytes": 1022625
         }
       ],
-      "release_status": "PENDING_FINAL_VISUAL_REVIEW"
+      "release_status": "PASSED_FINAL_REVIEW"
     },
     {
       "series": "zodiac",
@@ -196,7 +196,7 @@
           "bytes": 1680915
         }
       ],
-      "release_status": "PENDING_FINAL_VISUAL_REVIEW"
+      "release_status": "PASSED_FINAL_REVIEW"
     },
     {
       "series": "greece_two_day_trip",
@@ -208,7 +208,7 @@
       "background_music": false,
       "decode_passed": true,
       "sha256": "da4b095af77a5450e4b6db72deb4354002362fabe489aff268d35a538f2c161b",
-      "release_status": "PENDING_FINAL_VISUAL_REVIEW"
+      "release_status": "PASSED_FINAL_REVIEW"
     },
     {
       "series": "love_soul_relationship",
@@ -248,7 +248,7 @@
           "bytes": 1316008
         }
       ],
-      "release_status": "PENDING_FINAL_VISUAL_REVIEW"
+      "release_status": "PASSED_FINAL_REVIEW"
     },
     {
       "series": "strange_real_phenomenon",
@@ -260,7 +260,7 @@
       "background_music": false,
       "decode_passed": true,
       "sha256": "a18209dbe64c94450eb7829ea0557e84955f0a72df1405ceddbd0f4680ea3f0b",
-      "release_status": "PENDING_FINAL_VISUAL_REVIEW"
+      "release_status": "PASSED_FINAL_REVIEW"
     },
     {
       "series": "documented_experiments",
@@ -272,7 +272,7 @@
       "background_music": false,
       "decode_passed": true,
       "sha256": "7ffec7b819a71945b215880d8a79d1085604c7c8509659de5512acf166e0e6ec",
-      "release_status": "PENDING_FINAL_VISUAL_REVIEW"
+      "release_status": "PASSED_FINAL_REVIEW"
     },
     {
       "series": "myth_or_truth",
@@ -307,7 +307,7 @@
           "bytes": 1050071
         }
       ],
-      "release_status": "PENDING_FINAL_VISUAL_REVIEW"
+      "release_status": "PASSED_FINAL_REVIEW"
     },
     {
       "series": "international_legend",
@@ -319,7 +319,17 @@
       "background_music": false,
       "decode_passed": true,
       "sha256": "0b097963d369525a94d61636ea16e996fdccb1fc30564955e2fb7e71e0c123c0",
-      "release_status": "PENDING_FINAL_VISUAL_REVIEW"
+      "release_status": "PASSED_FINAL_REVIEW"
     }
-  ]
+  ],
+  "reviewed_at": "2026-10-08T06:58:00+03:00",
+  "review_basis": {
+    "workflow_run_id": 37722751042,
+    "artifact_id": 11526641805,
+    "artifact_digest": "sha256:d1d544",
+    "media_commit": "4e5816fb28ec7d87abeb996790e526350eef5d78",
+    "technical_decode": "PASSED",
+    "visual_contact_sheet_review": "PASSED",
+    "remote_exact_byte_readback": "PASSED"
+  }
 }
