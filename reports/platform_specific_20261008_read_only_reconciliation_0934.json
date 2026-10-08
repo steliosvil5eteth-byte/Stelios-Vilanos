@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "report_type": "PLATFORM_SPECIFIC_TEN_DAILY_READ_ONLY_RECONCILIATION",
+  "observed_at": "2026-10-08T09:34:00+03:00",
+  "metricool_brand_id": 7076410,
+  "timezone": "Europe/Athens",
+  "canonical_config": {
+    "path": "config/platform_growth_strategy.json",
+    "sha": "f6a6d9ae7e7c1ed7435705e0802d232d555fdb2a",
+    "enabled": false,
+    "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY"
+  },
+  "live_metricool": {
+    "facebook": {
+      "published": 5,
+      "active_scheduled_pending": 0,
+      "inactive_pending_drafts": 9,
+      "failed": 0
+    },
+    "instagram": {
+      "published": 5,
+      "active_scheduled_pending": 0,
+      "inactive_pending_drafts": 9,
+      "failed": 0
+    },
+    "tiktok": {
+      "published": 5,
+      "active_scheduled_pending": 0,
+      "inactive_pending_drafts": 9,
+      "failed": 0
+    },
+    "youtube": {
+      "published": 5,
+      "active_scheduled_pending": 0,
+      "inactive_pending_drafts": 5,
+      "failed": 0
+    },
+    "new_program_created": 0,
+    "new_program_scheduled": 0
+  },
+  "critical_slot_0900": {
+    "outcome": "NOT_PUBLISHED_WITHDRAWAL_CONFIRMED",
+    "facebook_instagram_tiktok": {
+      "id": 390887725,
+      "uuid": "3739450433856226000",
+      "status": "PENDING",
+      "draft": true,
+      "autoPublish": false,
+      "provider_count": 3
+    },
+    "youtube": {
+      "id": 390864997,
+      "uuid": "-4283568355360488397",
+      "status": "PENDING",
+      "draft": true,
+      "autoPublish": false,
+      "provider_count": 1
+    }
+  },
+  "notion_known_page_read_only": {
+    "page_id": "3f2f2345-b318-815a-9cc2-eb2889c6f124",
+    "status_property": "Blocked",
+    "network_statuses": "Not Targeted",
+    "terminal_note": "SUPERSEDED_BY_PLATFORM_SPECIFIC_TEN_DAILY",
+    "caveat": "Known-page fetch is not fresh duplicate clearance"
+  },
+  "blockers": [
+    "BLOCKED_NOTION_QUERY_USAGE_LIMIT_REACHED",
+    "BLOCKED_ACTUAL_TIER_AND_FREE_CAPACITY_UNVERIFIED",
+    "NOT_PERFORMED_FOR_NEW_PROGRAM exact-final review",
+    "NOT_VALIDATED_FOR_PRODUCTION execution path"
+  ],
+  "actions_taken": [
+    "Read-only live Metricool reconciliation",
+    "Read-only known Notion page fetch",
+    "Read-only repository/config/commit reconciliation",
+    "No content or media generation",
+    "No Metricool/Notion mutation",
+    "No retry, reschedule, publish, or draft activation",
+    "No credit-consuming call"
+  ],
+  "conclusion": "FAIL_CLOSED_CONFIRMED"
+}
