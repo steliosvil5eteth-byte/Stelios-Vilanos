@@ -3,8 +3,8 @@
   "manifest_id": "first_four_archive_asset_leads_20261009",
   "research_date": "2026-10-09",
   "created_at_utc": "2026-10-09T07:25:13Z",
-  "status": "RESEARCH_ONLY_FIFTEEN_ASSET_LEADS_ZERO_ACQUISITIONS",
-  "purpose": "Public-repository-safe archive-asset research for four already prepared narrated-video sourcepacks.",
+  "status": "FIFTEEN_ASSET_LEADS_EIGHT_NISYROS_COPIES_ACQUIRED_FINAL_MEDIA_PENDING",
+  "purpose": "Archive-asset leads for four existing sourcepacks, with verified Nisyros photo acquisitions and source-preview review recorded separately from final media readiness.",
   "sourcepack_provenance": {
     "repository": "steliosvil5eteth-byte/Stelios-Vilanos",
     "catalog_path": "production_20261009_platform_specific/catalog.json",
@@ -18,18 +18,22 @@
     "asset_lead_count": 15,
     "image_file_lead_count": 14,
     "article_figure_collection_lead_count": 1,
-    "acquired_media_count": 0,
+    "acquired_media_count": 8,
     "acquired_audio_count": 0,
     "rendered_video_count": 0,
     "scheduled_post_count": 0,
-    "provisional_research_choices_only": true,
+    "provisional_research_choices_only": false,
     "daily_slots_changed_by_this_manifest": false,
     "sourcepacks_changed_by_this_manifest": false,
     "media_generation_authorized_by_this_manifest": false,
     "paid_media_tools_authorized": false,
     "credit_spend_authorized": false,
     "media_acquisition_authorized_by_this_file": false,
-    "release_authorized": false
+    "release_authorized": false,
+    "acquired_source_photograph_count": 8,
+    "source_color_preview_review_count": 8,
+    "unacquired_asset_lead_count": 7,
+    "count_basis": "Eight unique acquired source-photo JPEG copies; review derivatives are not additional source photographs. The remaining seven leads are unacquired."
   },
   "production_constraints": {
     "required_voice": "el-GR-NestorasNeural",
@@ -68,13 +72,15 @@
   "interpretation_notes": [
     "This research manifest does not revoke or replace prior user authorization or change any canonical production gate. Its readiness values describe the unproduced assets only.",
     "A license statement observed on a source page is research evidence, not completed rights clearance for the final edited asset.",
-    "No downloaded bytes, original-file hashes, visual inspections or crop inspections exist in this manifest.",
     "Null resolution or license-version fields are deliberately unverified, not inferred.",
     "Each story retains its sourcepack's original unscheduled editorial date/time. The provisional TikTok choice remains sequence 2 at 10:00 Europe/Athens; it does not replace sequence 1 or claim a publishing slot.",
     "Paragraph mappings are proposals. Reuse of one image does not automatically satisfy requirements for a distinct image per scene.",
     "The Frontiers figure collection is one research lead and must resolve into individually selected image components before acquisition is recorded.",
     "Raw publishing history, private analytics and private content-workspace records are excluded.",
-    "Nisyros now has an eight-paragraph proposed source mapping only. Dry-stone wall visibility for paragraph 7 and the daylight closing proposal for paragraph 8 remain unresolved; no sourcepack scene prompt or publishing slot was changed."
+    "Eight Nisyros photographs were acquired as RGB JPEG copies. Their detail previews were actually visually inspected and locally SHA256-verified. Original downloaded-byte hashes are not available.",
+    "Nisyros scene directions and the draft caption now refer to the actual archival selection, including the daylight panorama. Narration, voice, identity and unscheduled editorial time remain unchanged. The revised caption has a new story hash; historical import clearance does not transfer to new production.",
+    "Source-preview review is separate from final vertical framing, final adaptation rights, complete actual narration listening and review of the exact exported video. These final gates remain incomplete.",
+    "Aggregate all_stories_and_assets_gate_state booleans mean the whole four-story set. Some acquired-copy and source-preview work is complete for Nisyros while the whole-set and all final-media gates remain false."
   ],
   "stories": [
     {
@@ -165,22 +171,29 @@
       ],
       "sourcepack_sequence": 1,
       "semantic_assessment": {
-        "status": "PROVISIONALLY_DISTINCT_FOR_MEDIA_RESEARCH",
-        "basis": "Existing reviewed snapshots only; no fresh global release clearance.",
-        "summary": "Stefanos hydrothermal formation and Nisyros geography are distinct from previously reviewed sulfur flames, volcanic lightning and basalt cooling."
+        "status": "HISTORICAL_SCOPED_IMPORT_CHECK_ONLY_FRESH_PRODUCTION_CHECK_REQUIRED",
+        "basis": "42 Metricool day reads, full Notion active/archive reads and pinned repository/history/lease review completed before the bounded source import. The later caption change has a separately recorded story hash.",
+        "summary": "No target topic conflict was identified within that scope. Full historical media-byte identity and current canonical release clearance are not claimed.",
+        "release_clearance": false
       },
       "unresolved_scene_paragraphs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
         7,
         8
       ],
       "scene_gap_notes": [
-        "All eight paragraphs now have distinct proposed source leads; no source image has been acquired or visually accepted.",
-        "The three existing leads for paragraphs 1, 5 and 6 are preserved unchanged.",
-        "Paragraph 7: agricultural context is documented, but suitable dry-stone wall or terrace visibility remains unconfirmed.",
-        "Paragraph 8: use the photographed daylight setting as a routine editorial adjustment under the user's continuation instruction; the sourcepack update and actual visual fit remain pending.",
-        "Aerial/caldera framing, scientific vent labeling, every 9:16 crop and all final scene rights remain subject to the later authorized acquisition and review workflow."
+        "Eight distinct archival source photos have now been acquired and their color previews actually reviewed. No source-photo acquisition gap remains for the eight proposed paragraphs.",
+        "Every final vertical composition, actual narration timing, final adaptation-rights treatment and exact exported-video review remains pending.",
+        "Paragraph 7 uses visually confirmed general agricultural context; no photo-specific identification of dry-stone construction or terraces is claimed.",
+        "Paragraph 8 now uses the visually confirmed daylight panorama, with village, crater and Aegean horizon. A static 9:16 crop has not been verified to retain all three.",
+        "No audio or final video has been produced. No scheduled or published post was created."
       ],
-      "downloaded": false,
+      "downloaded": true,
       "visual_qa_complete": false,
       "vertical_crop_qa_complete": false,
       "rights_complete": false,
@@ -194,87 +207,95 @@
       "scheduled": false,
       "published": false,
       "publishable": false,
-      "proposed_source_mapping_status": "EIGHT_PARAGRAPHS_MAPPED_TO_LEADS_ONLY",
+      "proposed_source_mapping_status": "EIGHT_ACQUIRED_SOURCE_PHOTOS_PREVIEW_REVIEWED_FINAL_FRAMING_PENDING",
       "proposed_source_mapping": [
         {
           "paragraph": 1,
           "asset_id": "ig_stefanos_north",
-          "mapping_status": "PRESERVED_EXISTING_LEAD",
+          "mapping_status": "ACQUIRED_AND_PREVIEW_REVIEWED_FINAL_FRAMING_PENDING",
           "assignment_final": false,
-          "downloaded": false,
+          "downloaded": true,
           "visual_qa_complete": false,
           "rights_complete": false,
-          "release_authorized": false
+          "release_authorized": false,
+          "source_preview_review_complete": true
         },
         {
           "paragraph": 2,
           "asset_id": "ig_nisyros_aerial_2009",
-          "mapping_status": "NEW_LEAD_VISUAL_FIT_UNVERIFIED",
+          "mapping_status": "ACQUIRED_AND_PREVIEW_REVIEWED_FINAL_FRAMING_PENDING",
           "assignment_final": false,
-          "downloaded": false,
+          "downloaded": true,
           "visual_qa_complete": false,
           "rights_complete": false,
-          "release_authorized": false
+          "release_authorized": false,
+          "source_preview_review_complete": true
         },
         {
           "paragraph": 3,
           "asset_id": "ig_stefanos_vent_2009",
-          "mapping_status": "NEW_LEAD_SCIENTIFIC_LABEL_CONSTRAINT",
+          "mapping_status": "ACQUIRED_AND_PREVIEW_REVIEWED_FINAL_FRAMING_PENDING",
           "assignment_final": false,
-          "downloaded": false,
+          "downloaded": true,
           "visual_qa_complete": false,
           "rights_complete": false,
-          "release_authorized": false
+          "release_authorized": false,
+          "source_preview_review_complete": true
         },
         {
           "paragraph": 4,
           "asset_id": "ig_stefanos_southern_slope",
-          "mapping_status": "NEW_LEAD_VISUAL_FIT_UNVERIFIED",
+          "mapping_status": "ACQUIRED_AND_PREVIEW_REVIEWED_FINAL_FRAMING_PENDING",
           "assignment_final": false,
-          "downloaded": false,
+          "downloaded": true,
           "visual_qa_complete": false,
           "rights_complete": false,
-          "release_authorized": false
+          "release_authorized": false,
+          "source_preview_review_complete": true
         },
         {
           "paragraph": 5,
           "asset_id": "ig_stefanos_fumarole",
-          "mapping_status": "PRESERVED_EXISTING_LEAD",
+          "mapping_status": "ACQUIRED_AND_PREVIEW_REVIEWED_FINAL_FRAMING_PENDING",
           "assignment_final": false,
-          "downloaded": false,
+          "downloaded": true,
           "visual_qa_complete": false,
           "rights_complete": false,
-          "release_authorized": false
+          "release_authorized": false,
+          "source_preview_review_complete": true
         },
         {
           "paragraph": 6,
           "asset_id": "ig_stefanos_nikia",
-          "mapping_status": "PRESERVED_EXISTING_LEAD",
+          "mapping_status": "ACQUIRED_AND_PREVIEW_REVIEWED_FINAL_FRAMING_PENDING",
           "assignment_final": false,
-          "downloaded": false,
+          "downloaded": true,
           "visual_qa_complete": false,
           "rights_complete": false,
-          "release_authorized": false
+          "release_authorized": false,
+          "source_preview_review_complete": true
         },
         {
           "paragraph": 7,
           "asset_id": "ig_nisyros_agricultural_inland",
-          "mapping_status": "UNRESOLVED_DRY_STONE_WALL_VISIBILITY",
+          "mapping_status": "ACQUIRED_AND_PREVIEW_REVIEWED_FINAL_FRAMING_PENDING",
           "assignment_final": false,
-          "downloaded": false,
+          "downloaded": true,
           "visual_qa_complete": false,
           "rights_complete": false,
-          "release_authorized": false
+          "release_authorized": false,
+          "source_preview_review_complete": true
         },
         {
           "paragraph": 8,
           "asset_id": "ig_nisyros_nikia_crater_panorama",
-          "mapping_status": "UNRESOLVED_DAYLIGHT_CLOSING_PROPOSAL",
+          "mapping_status": "ACQUIRED_AND_PREVIEW_REVIEWED_FINAL_FRAMING_PENDING",
           "assignment_final": false,
-          "downloaded": false,
+          "downloaded": true,
           "visual_qa_complete": false,
           "rights_complete": false,
-          "release_authorized": false
+          "release_authorized": false,
+          "source_preview_review_complete": true
         }
       ],
       "visual_fit_unverified_paragraphs": [
@@ -286,7 +307,41 @@
         6,
         7,
         8
-      ]
+      ],
+      "source_photo_copies_acquired": 8,
+      "source_preview_review_complete": true,
+      "source_preview_fit_checked_paragraphs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "unresolved_source_mapping_paragraphs": [],
+      "acquired_copy_attribution_recorded": true,
+      "credit_ledger": {
+        "commit_sha": "9802259fcf96686efe7fd0f7fe992283be1738d0",
+        "blob_sha": "ac353128ada9ecc3ff47fdf5929c5d6e071a76f1",
+        "path": "production_20261009_platform_specific/NISYROS_PHOTO_CREDITS.md",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/9802259fcf96686efe7fd0f7fe992283be1738d0/production_20261009_platform_specific/NISYROS_PHOTO_CREDITS.md"
+      },
+      "sourcepack_hash_revision": {
+        "import_story_sha256": "d4e6dc30c9c3b28fc8e2b0c72e2946f6efe422979be1bd1b2158f808ad1ec9f9",
+        "current_story_sha256": "048d6fe541ceeb96c743d0431a483d75f7a64069da050649c94eedd06a41448e",
+        "script_sha256": "03abce7d47e612847b297b182032c705fc2bc45727a332ec990bd303c7055919",
+        "script_unchanged": true,
+        "reason": "Replace unrealized AI-image scene instructions and draft disclosure with eight actually acquired archive photographs; preserve narration, identity, source facts and unscheduled editorial slot.",
+        "prior_import_preflight_is_historical_only": true,
+        "fresh_complete_semantic_media_history_preflight_required_before_synthesis_render_or_release": true,
+        "current_canonical_production_preflight_passed": false,
+        "manifest_commit": "13bdc4591c800bd752d67ec003c0d9d3dde1bfe6",
+        "manifest_blob": "40e118a89ee17d4e8785de6bdce2e38497acc4c7",
+        "catalog_commit": "4cdf57cc311e50ff1467dce3df907dab8821344d",
+        "catalog_blob": "c5640d69510ac1d89f9dc78b3da70a9442db8603"
+      }
     },
     {
       "story_id": "tiktok-20261009-02-blood-falls-iron-brine",
@@ -551,17 +606,17 @@
       "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
       "title": "View of the Stefanos crater from the north. Nisyros, Greece.jpg",
       "lead_type": "EXISTING_IMAGE_FILE",
-      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "status": "SOURCE_PHOTO_ACQUIRED_PREVIEW_REVIEWED_FINAL_MEDIA_PENDING",
       "source_page_url": "https://commons.wikimedia.org/wiki/File:View_of_the_Stefanos_crater_from_the_north._Nisyros,_Greece.jpg",
       "observed_date": "2026-10-09",
-      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
-      "direct_download_url": null,
-      "download_url_status": "NOT_RESOLVED_OR_FETCHED",
+      "evidence_level": "INDIVIDUAL_SOURCE_LICENSE_PAGE_READ_AND_ACTUAL_COLOR_PREVIEW_REVIEW",
+      "direct_download_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/View_of_the_Stefanos_crater_from_the_north._Nisyros%2C_Greece.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+      "download_url_status": "SOURCE_FETCHED_AND_REENCODED_JPEG_COPY_PERSISTED",
       "local_media_path": null,
       "download_sha256": null,
       "original_file_bytes_verified": false,
       "scene_assignment_final": false,
-      "downloaded": false,
+      "downloaded": true,
       "visual_qa_complete": false,
       "vertical_crop_qa_complete": false,
       "rights_complete": false,
@@ -598,7 +653,7 @@
         "width": 6016,
         "height": 4016,
         "unit": "px",
-        "basis": "Source page original-file metadata; bytes not downloaded."
+        "basis": "Historical source-page original-file metadata recorded before acquisition; acquired-copy dimensions are recorded separately from the runtime output."
       },
       "planned_uses": [
         {
@@ -611,24 +666,87 @@
         "No lava lake, synthetic steam, invented eruption, or current-condition claim.",
         "Check 9:16 framing without misrepresenting the crater geography.",
         "A single panorama does not complete the other caldera, rock-texture or closing scenes."
-      ]
+      ],
+      "acquisition_method": "image_jpeg_copy",
+      "repository_media_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/33ad1815d7a03a3dfbca216449ee15a54c19c754/jobs/f2c822db2a95b253/nisyros-20261009-scene-01.jpg",
+      "acquired_copy": {
+        "name": "nisyros-20261009-scene-01.jpg",
+        "bytes": 20839670,
+        "sha256": "9bd72bd5e60c545e4dc7bad0fd7bf0f1c05caf957101fc5a543eee0876865439",
+        "dimensions_px": [
+          6016,
+          4016
+        ],
+        "output_commit": "33ad1815d7a03a3dfbca216449ee15a54c19c754",
+        "path": "jobs/f2c822db2a95b253/nisyros-20261009-scene-01.jpg",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/33ad1815d7a03a3dfbca216449ee15a54c19c754/jobs/f2c822db2a95b253/nisyros-20261009-scene-01.jpg",
+        "raw_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/33ad1815d7a03a3dfbca216449ee15a54c19c754/jobs/f2c822db2a95b253/nisyros-20261009-scene-01.jpg",
+        "sha256_basis": "Production runtime output manifest; scenes 1–2 also rehashed before review derivation"
+      },
+      "acquired_copy_sha256": "9bd72bd5e60c545e4dc7bad0fd7bf0f1c05caf957101fc5a543eee0876865439",
+      "detail_preview": {
+        "name": "nisyros-20261009-scene-01-review-detail.jpg",
+        "bytes": 679699,
+        "sha256": "f53b63070d8f9d650bc46f9a9d7509207374b1d57b5692f8c253405e76c4ade4",
+        "dimensions_px": [
+          1600,
+          1068
+        ],
+        "output_commit": "b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba",
+        "path": "jobs/4deeeea5dc72c239/nisyros-20261009-scene-01-review-detail.jpg",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-01-review-detail.jpg",
+        "raw_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-01-review-detail.jpg",
+        "git_blob_sha": "1006472ee5f66fa5621cd45e140dadf2845ee134",
+        "local_bytes_sha256_verified": true
+      },
+      "source_preview_review_complete": true,
+      "source_preview_review": {
+        "status": "COMPLETED_WITH_FRAMING_CONSTRAINTS",
+        "reviewer": "root",
+        "completed_at_utc": "2026-10-09T10:00:56Z",
+        "method": "Actual visual inspection of the full-color JPEG preview displayed to the assistant; maximum image edge 1600 pixels.",
+        "observations_el": "Ο κρατήρας και οι εσωτερικές πλαγιές του διακρίνονται μέσα σε ευρύτερο ηφαιστειακό τοπίο. Στο πλάνο υπάρχουν δρόμος, σταθμευμένα οχήματα και πολύ μικρές ανθρώπινες φιγούρες. Δεν διακρίνονται αναγνωρίσιμα πρόσωπα στην ελεγμένη προεπισκόπηση ούτε εμφανής ατμός.",
+        "future_scene_constraints_el": "Το μελλοντικό κάθετο κάδρο πρέπει να διατηρεί αναγνωρίσιμη τη μορφή του κρατήρα και να μην επικεντρώνεται στα οχήματα. Δεν προστίθεται ατμός ή λάβα.",
+        "original_full_resolution_review": false,
+        "final_vertical_crop_review": false
+      },
+      "acquired_copy_attribution_recorded": true,
+      "credit_ledger": {
+        "commit_sha": "9802259fcf96686efe7fd0f7fe992283be1738d0",
+        "blob_sha": "ac353128ada9ecc3ff47fdf5929c5d6e071a76f1",
+        "path": "production_20261009_platform_specific/NISYROS_PHOTO_CREDITS.md",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/9802259fcf96686efe7fd0f7fe992283be1738d0/production_20261009_platform_specific/NISYROS_PHOTO_CREDITS.md"
+      },
+      "modifications_performed": [
+        "RGB conversion",
+        "JPEG re-encoding at original pixel dimensions, quality 96",
+        "Reduced-color compact PNG review derivative",
+        "Resized full-color JPEG review derivative, maximum edge 1600 pixels"
+      ],
+      "acquisition_record_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/f45cda0f3be09cf5535f0faf01367299fa626460/production_20261009_platform_specific/nisyros_photo_acquisition_20261009.json",
+      "acquired_copy_resolution": {
+        "width": 6016,
+        "height": 4016,
+        "unit": "px",
+        "basis": "Completed image-copy runtime report"
+      }
     },
     {
       "asset_id": "ig_stefanos_nikia",
       "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
       "title": "View of the Stefanos Crater from Nikia. Nisyros, Greece.jpg",
       "lead_type": "EXISTING_IMAGE_FILE",
-      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "status": "SOURCE_PHOTO_ACQUIRED_PREVIEW_REVIEWED_FINAL_MEDIA_PENDING",
       "source_page_url": "https://commons.wikimedia.org/wiki/File:View_of_the_Stefanos_Crater_from_Nikia._Nisyros,_Greece.jpg",
       "observed_date": "2026-10-09",
-      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
-      "direct_download_url": null,
-      "download_url_status": "NOT_RESOLVED_OR_FETCHED",
+      "evidence_level": "INDIVIDUAL_SOURCE_LICENSE_PAGE_READ_AND_ACTUAL_COLOR_PREVIEW_REVIEW",
+      "direct_download_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/View_of_the_Stefanos_Crater_from_Nikia._Nisyros%2C_Greece.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+      "download_url_status": "SOURCE_FETCHED_AND_REENCODED_JPEG_COPY_PERSISTED",
       "local_media_path": null,
       "download_sha256": null,
       "original_file_bytes_verified": false,
       "scene_assignment_final": false,
-      "downloaded": false,
+      "downloaded": true,
       "visual_qa_complete": false,
       "vertical_crop_qa_complete": false,
       "rights_complete": false,
@@ -665,7 +783,7 @@
         "width": 5672,
         "height": 3914,
         "unit": "px",
-        "basis": "Source page original-file metadata; bytes not downloaded."
+        "basis": "Historical source-page original-file metadata recorded before acquisition; acquired-copy dimensions are recorded separately from the runtime output."
       },
       "planned_uses": [
         {
@@ -678,24 +796,87 @@
         "Do not label this view as an aerial photograph.",
         "Keep the geographical view tied to the Nikia paragraph.",
         "Do not assume the image contains suitable architecture, terraces or other scene details until visually inspected."
-      ]
+      ],
+      "acquisition_method": "image_jpeg_copy",
+      "repository_media_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-06.jpg",
+      "acquired_copy": {
+        "name": "nisyros-20261009-scene-06.jpg",
+        "bytes": 19440249,
+        "sha256": "7aac7b16dc65567e7201af21f0d3fc61941d04548058f9855f205ea8e8f91024",
+        "dimensions_px": [
+          5672,
+          3914
+        ],
+        "output_commit": "b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba",
+        "path": "jobs/4deeeea5dc72c239/nisyros-20261009-scene-06.jpg",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-06.jpg",
+        "raw_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-06.jpg",
+        "sha256_basis": "Production runtime output manifest; scenes 1–2 also rehashed before review derivation"
+      },
+      "acquired_copy_sha256": "7aac7b16dc65567e7201af21f0d3fc61941d04548058f9855f205ea8e8f91024",
+      "detail_preview": {
+        "name": "nisyros-20261009-scene-06-qa-detail.jpg",
+        "bytes": 630960,
+        "sha256": "ed708678cf6cb044999c60dc789fd8b796ed2fcab5d7b63682bf4b69132dcce9",
+        "dimensions_px": [
+          1600,
+          1104
+        ],
+        "output_commit": "b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba",
+        "path": "jobs/4deeeea5dc72c239/nisyros-20261009-scene-06-qa-detail.jpg",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-06-qa-detail.jpg",
+        "raw_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-06-qa-detail.jpg",
+        "git_blob_sha": "09ed594e4e86e70ad499e62ffcfea6774d5db07c",
+        "local_bytes_sha256_verified": true
+      },
+      "source_preview_review_complete": true,
+      "source_preview_review": {
+        "status": "COMPLETED_WITH_FRAMING_CONSTRAINTS",
+        "reviewer": "root",
+        "completed_at_utc": "2026-10-09T10:00:56Z",
+        "method": "Actual visual inspection of the full-color JPEG preview displayed to the assistant; maximum image edge 1600 pixels.",
+        "observations_el": "Από ψηλά διακρίνονται ο οβάλ κρατήρας, οι ηφαιστειακές πλαγιές, χωράφια αριστερά και βραχώδες προσκήνιο δεξιά. Δεν υπάρχουν κτίρια του χωριού μέσα στο κάδρο.",
+        "future_scene_constraints_el": "Διατήρηση της γεωγραφικής κλίμακας της θέας από τα Νικιά. Δεν ζητείται ούτε προστίθεται αρχιτεκτονική που απουσιάζει από τη λήψη.",
+        "original_full_resolution_review": false,
+        "final_vertical_crop_review": false
+      },
+      "acquired_copy_attribution_recorded": true,
+      "credit_ledger": {
+        "commit_sha": "9802259fcf96686efe7fd0f7fe992283be1738d0",
+        "blob_sha": "ac353128ada9ecc3ff47fdf5929c5d6e071a76f1",
+        "path": "production_20261009_platform_specific/NISYROS_PHOTO_CREDITS.md",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/9802259fcf96686efe7fd0f7fe992283be1738d0/production_20261009_platform_specific/NISYROS_PHOTO_CREDITS.md"
+      },
+      "modifications_performed": [
+        "RGB conversion",
+        "JPEG re-encoding at original pixel dimensions, quality 96",
+        "Reduced-color compact PNG review derivative",
+        "Resized full-color JPEG review derivative, maximum edge 1600 pixels"
+      ],
+      "acquisition_record_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/f45cda0f3be09cf5535f0faf01367299fa626460/production_20261009_platform_specific/nisyros_photo_acquisition_20261009.json",
+      "acquired_copy_resolution": {
+        "width": 5672,
+        "height": 3914,
+        "unit": "px",
+        "basis": "Completed image-copy runtime report"
+      }
     },
     {
       "asset_id": "ig_stefanos_fumarole",
       "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
       "title": "Fumarole Nisyros.JPG",
       "lead_type": "EXISTING_IMAGE_FILE",
-      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "status": "SOURCE_PHOTO_ACQUIRED_PREVIEW_REVIEWED_FINAL_MEDIA_PENDING",
       "source_page_url": "https://commons.wikimedia.org/wiki/File:Fumarole_Nisyros.JPG",
       "observed_date": "2026-10-09",
-      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
-      "direct_download_url": null,
-      "download_url_status": "NOT_RESOLVED_OR_FETCHED",
+      "evidence_level": "INDIVIDUAL_SOURCE_LICENSE_PAGE_READ_AND_ACTUAL_COLOR_PREVIEW_REVIEW",
+      "direct_download_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Fumarole_Nisyros.JPG?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+      "download_url_status": "SOURCE_FETCHED_AND_REENCODED_JPEG_COPY_PERSISTED",
       "local_media_path": null,
       "download_sha256": null,
       "original_file_bytes_verified": false,
       "scene_assignment_final": false,
-      "downloaded": false,
+      "downloaded": true,
       "visual_qa_complete": false,
       "vertical_crop_qa_complete": false,
       "rights_complete": false,
@@ -731,7 +912,7 @@
         "width": 4608,
         "height": 3456,
         "unit": "px",
-        "basis": "Source page original-file metadata; bytes not downloaded."
+        "basis": "Historical source-page original-file metadata recorded before acquisition; acquired-copy dimensions are recorded separately from the runtime output."
       },
       "planned_uses": [
         {
@@ -747,7 +928,70 @@
         "Select one final scene use; do not count this one file as two distinct scene photographs.",
         "Do not infer present-day emissions, access safety or an eruption forecast from a 2013 photograph.",
         "Verify actual visible fumarole detail and the crop before acquisition acceptance."
-      ]
+      ],
+      "acquisition_method": "image_jpeg_copy",
+      "repository_media_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-05.jpg",
+      "acquired_copy": {
+        "name": "nisyros-20261009-scene-05.jpg",
+        "bytes": 8375338,
+        "sha256": "14c07405823cf171ec3fb9b56cc44b002655202880cf4041c5d82696f205e032",
+        "dimensions_px": [
+          4608,
+          3456
+        ],
+        "output_commit": "b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba",
+        "path": "jobs/4deeeea5dc72c239/nisyros-20261009-scene-05.jpg",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-05.jpg",
+        "raw_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-05.jpg",
+        "sha256_basis": "Production runtime output manifest; scenes 1–2 also rehashed before review derivation"
+      },
+      "acquired_copy_sha256": "14c07405823cf171ec3fb9b56cc44b002655202880cf4041c5d82696f205e032",
+      "detail_preview": {
+        "name": "nisyros-20261009-scene-05-qa-detail.jpg",
+        "bytes": 759448,
+        "sha256": "d769dde5525ae5098d21b3b5f0ff111b0dd017e7076b1ed461cc3ddf39060689",
+        "dimensions_px": [
+          1600,
+          1200
+        ],
+        "output_commit": "b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba",
+        "path": "jobs/4deeeea5dc72c239/nisyros-20261009-scene-05-qa-detail.jpg",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-05-qa-detail.jpg",
+        "raw_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-05-qa-detail.jpg",
+        "git_blob_sha": "4b59c9007831a70a5c4876414c48a7b8e7c61223",
+        "local_bytes_sha256_verified": true
+      },
+      "source_preview_review_complete": true,
+      "source_preview_review": {
+        "status": "COMPLETED_WITH_FRAMING_CONSTRAINTS",
+        "reviewer": "root",
+        "completed_at_utc": "2026-10-09T10:00:56Z",
+        "method": "Actual visual inspection of the full-color JPEG preview displayed to the assistant; maximum image edge 1600 pixels.",
+        "observations_el": "Κοντινή λήψη γκρίζων βράχων με έντονες κιτρινοπράσινες αποθέσεις και ελαφρύ διάχυτο ατμό, κυρίως στο κέντρο και επάνω δεξιά. Δεν υπάρχουν άνθρωποι ή χείλος κρατήρα.",
+        "future_scene_constraints_el": "Χρήση ως αρχειακή λεπτομέρεια ατμίδας του 2013. Δεν παρουσιάζεται ως σημερινή κατάσταση ούτε τεκμηριώνεται συγκεκριμένη χημική σύσταση μόνο από το χρώμα.",
+        "original_full_resolution_review": false,
+        "final_vertical_crop_review": false
+      },
+      "acquired_copy_attribution_recorded": true,
+      "credit_ledger": {
+        "commit_sha": "9802259fcf96686efe7fd0f7fe992283be1738d0",
+        "blob_sha": "ac353128ada9ecc3ff47fdf5929c5d6e071a76f1",
+        "path": "production_20261009_platform_specific/NISYROS_PHOTO_CREDITS.md",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/9802259fcf96686efe7fd0f7fe992283be1738d0/production_20261009_platform_specific/NISYROS_PHOTO_CREDITS.md"
+      },
+      "modifications_performed": [
+        "RGB conversion",
+        "JPEG re-encoding at original pixel dimensions, quality 96",
+        "Reduced-color compact PNG review derivative",
+        "Resized full-color JPEG review derivative, maximum edge 1600 pixels"
+      ],
+      "acquisition_record_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/f45cda0f3be09cf5535f0faf01367299fa626460/production_20261009_platform_specific/nisyros_photo_acquisition_20261009.json",
+      "acquired_copy_resolution": {
+        "width": 4608,
+        "height": 3456,
+        "unit": "px",
+        "basis": "Completed image-copy runtime report"
+      }
     },
     {
       "asset_id": "tt_bloodfalls_front",
@@ -1187,18 +1431,18 @@
       "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
       "title": "Nisyros air 1.jpg",
       "lead_type": "EXISTING_IMAGE_FILE",
-      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "status": "SOURCE_PHOTO_ACQUIRED_PREVIEW_REVIEWED_FINAL_MEDIA_PENDING",
       "source_page_url": "https://commons.wikimedia.org/wiki/File:Nisyros_air_1.jpg",
       "source_file_id": "Nisyros_air_1.jpg",
       "observed_date": "2026-10-09",
-      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
-      "direct_download_url": null,
-      "download_url_status": "NOT_RESOLVED_FOR_ACQUISITION",
+      "evidence_level": "INDIVIDUAL_SOURCE_LICENSE_PAGE_READ_AND_ACTUAL_COLOR_PREVIEW_REVIEW",
+      "direct_download_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Nisyros_air_1.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+      "download_url_status": "SOURCE_FETCHED_AND_REENCODED_JPEG_COPY_PERSISTED",
       "local_media_path": null,
       "download_sha256": null,
       "original_file_bytes_verified": false,
       "scene_assignment_final": false,
-      "downloaded": false,
+      "downloaded": true,
       "visual_qa_complete": false,
       "vertical_crop_qa_complete": false,
       "rights_complete": false,
@@ -1239,7 +1483,7 @@
         "width": 2200,
         "height": 1603,
         "unit": "px",
-        "basis": "Individual source page original-file metadata; bytes not acquired."
+        "basis": "Historical source-page original-file metadata recorded before acquisition; acquired-copy dimensions are recorded separately from the runtime output."
       },
       "planned_uses": [
         {
@@ -1257,25 +1501,88 @@
         "Do not label an individual hydrothermal crater as the whole caldera.",
         "This archival aerial is not a present-day condition report.",
         "Source dimensions do not by themselves demonstrate acceptable 9:16 composition or quality."
-      ]
+      ],
+      "acquisition_method": "image_jpeg_copy",
+      "repository_media_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/33ad1815d7a03a3dfbca216449ee15a54c19c754/jobs/f2c822db2a95b253/nisyros-20261009-scene-02.jpg",
+      "acquired_copy": {
+        "name": "nisyros-20261009-scene-02.jpg",
+        "bytes": 1643777,
+        "sha256": "180906305246567ccdc2a126f60eca0f7cdcbabac1b3d37b69ec5ac7fa848832",
+        "dimensions_px": [
+          2200,
+          1603
+        ],
+        "output_commit": "33ad1815d7a03a3dfbca216449ee15a54c19c754",
+        "path": "jobs/f2c822db2a95b253/nisyros-20261009-scene-02.jpg",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/33ad1815d7a03a3dfbca216449ee15a54c19c754/jobs/f2c822db2a95b253/nisyros-20261009-scene-02.jpg",
+        "raw_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/33ad1815d7a03a3dfbca216449ee15a54c19c754/jobs/f2c822db2a95b253/nisyros-20261009-scene-02.jpg",
+        "sha256_basis": "Production runtime output manifest; scenes 1–2 also rehashed before review derivation"
+      },
+      "acquired_copy_sha256": "180906305246567ccdc2a126f60eca0f7cdcbabac1b3d37b69ec5ac7fa848832",
+      "detail_preview": {
+        "name": "nisyros-20261009-scene-02-review-detail.jpg",
+        "bytes": 273872,
+        "sha256": "76a5a0ec60085c0eca08d591f14fa83a3c83501ecff09f65d3bb3210bb9bdf6a",
+        "dimensions_px": [
+          1600,
+          1166
+        ],
+        "output_commit": "b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba",
+        "path": "jobs/4deeeea5dc72c239/nisyros-20261009-scene-02-review-detail.jpg",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-02-review-detail.jpg",
+        "raw_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-02-review-detail.jpg",
+        "git_blob_sha": "9131fe689893272d317ce27cffd7c48438a084ab",
+        "local_bytes_sha256_verified": true
+      },
+      "source_preview_review_complete": true,
+      "source_preview_review": {
+        "status": "COMPLETED_WITH_FRAMING_CONSTRAINTS",
+        "reviewer": "root",
+        "completed_at_utc": "2026-10-09T10:00:56Z",
+        "method": "Actual visual inspection of the full-color JPEG preview displayed to the assistant; maximum image edge 1600 pixels.",
+        "observations_el": "Διακρίνεται όλο το νησί μέσα στη θάλασσα και το ανοιχτόχρωμο ηφαιστειακό εσωτερικό του, με ατμοσφαιρική θαμπάδα. Δεν υπάρχουν άνθρωποι.",
+        "future_scene_constraints_el": "Να διατηρείται αρκετό από το νησί για να αποδίδεται η κλίμακα της καλδέρας. Ένα στενό κάθετο κόψιμο μπορεί να αφαιρέσει μεγάλο μέρος της ακτογραμμής.",
+        "original_full_resolution_review": false,
+        "final_vertical_crop_review": false
+      },
+      "acquired_copy_attribution_recorded": true,
+      "credit_ledger": {
+        "commit_sha": "9802259fcf96686efe7fd0f7fe992283be1738d0",
+        "blob_sha": "ac353128ada9ecc3ff47fdf5929c5d6e071a76f1",
+        "path": "production_20261009_platform_specific/NISYROS_PHOTO_CREDITS.md",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/9802259fcf96686efe7fd0f7fe992283be1738d0/production_20261009_platform_specific/NISYROS_PHOTO_CREDITS.md"
+      },
+      "modifications_performed": [
+        "RGB conversion",
+        "JPEG re-encoding at original pixel dimensions, quality 96",
+        "Reduced-color compact PNG review derivative",
+        "Resized full-color JPEG review derivative, maximum edge 1600 pixels"
+      ],
+      "acquisition_record_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/f45cda0f3be09cf5535f0faf01367299fa626460/production_20261009_platform_specific/nisyros_photo_acquisition_20261009.json",
+      "acquired_copy_resolution": {
+        "width": 2200,
+        "height": 1603,
+        "unit": "px",
+        "basis": "Completed image-copy runtime report"
+      }
     },
     {
       "asset_id": "ig_stefanos_vent_2009",
       "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
       "title": "Nisyros vulcan mofetta 2.jpg",
       "lead_type": "EXISTING_IMAGE_FILE",
-      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "status": "SOURCE_PHOTO_ACQUIRED_PREVIEW_REVIEWED_FINAL_MEDIA_PENDING",
       "source_page_url": "https://commons.wikimedia.org/wiki/File:Nisyros_vulcan_mofetta_2.jpg",
       "source_file_id": "Nisyros_vulcan_mofetta_2.jpg",
       "observed_date": "2026-10-09",
-      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
-      "direct_download_url": null,
-      "download_url_status": "NOT_RESOLVED_FOR_ACQUISITION",
+      "evidence_level": "INDIVIDUAL_SOURCE_LICENSE_PAGE_READ_AND_ACTUAL_COLOR_PREVIEW_REVIEW",
+      "direct_download_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Nisyros_vulcan_mofetta_2.jpg",
+      "download_url_status": "SOURCE_FETCHED_AND_REENCODED_JPEG_COPY_PERSISTED",
       "local_media_path": null,
       "download_sha256": null,
       "original_file_bytes_verified": false,
       "scene_assignment_final": false,
-      "downloaded": false,
+      "downloaded": true,
       "visual_qa_complete": false,
       "vertical_crop_qa_complete": false,
       "rights_complete": false,
@@ -1315,7 +1622,7 @@
         "width": 2400,
         "height": 1600,
         "unit": "px",
-        "basis": "Individual source page original-file metadata; bytes not acquired."
+        "basis": "Historical source-page original-file metadata recorded before acquisition; acquired-copy dimensions are recorded separately from the runtime output."
       },
       "planned_uses": [
         {
@@ -1334,25 +1641,88 @@
         "Do not infer visible steam, temperature or gas composition without verified supporting evidence.",
         "Retain the separate existing ig_stefanos_fumarole lead for paragraph 5.",
         "Verify a legible vertical crop of the actual original before accepting the scene."
-      ]
+      ],
+      "acquisition_method": "image_jpeg_copy",
+      "repository_media_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-03.jpg",
+      "acquired_copy": {
+        "name": "nisyros-20261009-scene-03.jpg",
+        "bytes": 3384866,
+        "sha256": "289be12f78170a1431b90ff3c1c88ac02e8d54534358356003cade62ece8ca10",
+        "dimensions_px": [
+          2400,
+          1600
+        ],
+        "output_commit": "b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba",
+        "path": "jobs/4deeeea5dc72c239/nisyros-20261009-scene-03.jpg",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-03.jpg",
+        "raw_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-03.jpg",
+        "sha256_basis": "Production runtime output manifest; scenes 1–2 also rehashed before review derivation"
+      },
+      "acquired_copy_sha256": "289be12f78170a1431b90ff3c1c88ac02e8d54534358356003cade62ece8ca10",
+      "detail_preview": {
+        "name": "nisyros-20261009-scene-03-qa-detail.jpg",
+        "bytes": 720822,
+        "sha256": "bca0ffdf9c95b7fdf3966109e5195533dda390e7abf4318a42786ea7aee330b2",
+        "dimensions_px": [
+          1600,
+          1067
+        ],
+        "output_commit": "b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba",
+        "path": "jobs/4deeeea5dc72c239/nisyros-20261009-scene-03-qa-detail.jpg",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-03-qa-detail.jpg",
+        "raw_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-03-qa-detail.jpg",
+        "git_blob_sha": "df896d3177caed8126a0abee222134ee8bf86b69",
+        "local_bytes_sha256_verified": true
+      },
+      "source_preview_review_complete": true,
+      "source_preview_review": {
+        "status": "COMPLETED_WITH_FRAMING_CONSTRAINTS",
+        "reviewer": "root",
+        "completed_at_utc": "2026-10-09T10:00:56Z",
+        "method": "Actual visual inspection of the full-color JPEG preview displayed to the assistant; maximum image edge 1600 pixels.",
+        "observations_el": "Φωτογραφία εδάφους με σκοτεινά ανοίγματα, ρωγμές και κιτρινωπές αποθέσεις. Στην επάνω αριστερή πλευρά φαίνονται μόνο τα κάτω μέρη ποδιών και παπούτσια ενός ανθρώπου, χωρίς πρόσωπο. Δεν διακρίνεται σαφής ατμός.",
+        "future_scene_constraints_el": "Εστίαση στο έδαφος, με μελλοντικό κάδρο που μπορεί να αποκλείει τα πόδια. Η ονομασία mofette αποδίδεται στην πηγή. Δεν συνάγονται από τη φωτογραφία ηλικία ανθρώπου, συγκεκριμένη χημεία, θερμοκρασία ή ιστορική έκρηξη.",
+        "original_full_resolution_review": false,
+        "final_vertical_crop_review": false
+      },
+      "acquired_copy_attribution_recorded": true,
+      "credit_ledger": {
+        "commit_sha": "9802259fcf96686efe7fd0f7fe992283be1738d0",
+        "blob_sha": "ac353128ada9ecc3ff47fdf5929c5d6e071a76f1",
+        "path": "production_20261009_platform_specific/NISYROS_PHOTO_CREDITS.md",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/9802259fcf96686efe7fd0f7fe992283be1738d0/production_20261009_platform_specific/NISYROS_PHOTO_CREDITS.md"
+      },
+      "modifications_performed": [
+        "RGB conversion",
+        "JPEG re-encoding at original pixel dimensions, quality 96",
+        "Reduced-color compact PNG review derivative",
+        "Resized full-color JPEG review derivative, maximum edge 1600 pixels"
+      ],
+      "acquisition_record_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/f45cda0f3be09cf5535f0faf01367299fa626460/production_20261009_platform_specific/nisyros_photo_acquisition_20261009.json",
+      "acquired_copy_resolution": {
+        "width": 2400,
+        "height": 1600,
+        "unit": "px",
+        "basis": "Completed image-copy runtime report"
+      }
     },
     {
       "asset_id": "ig_stefanos_southern_slope",
       "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
       "title": "The southern slope of the Stefanos crater. Nisyros, Greece.jpg",
       "lead_type": "EXISTING_IMAGE_FILE",
-      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "status": "SOURCE_PHOTO_ACQUIRED_PREVIEW_REVIEWED_FINAL_MEDIA_PENDING",
       "source_page_url": "https://commons.wikimedia.org/wiki/File:The_southern_slope_of_the_Stefanos_crater._Nisyros,_Greece.jpg",
       "source_file_id": "The_southern_slope_of_the_Stefanos_crater._Nisyros,_Greece.jpg",
       "observed_date": "2026-10-09",
-      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
-      "direct_download_url": null,
-      "download_url_status": "NOT_RESOLVED_FOR_ACQUISITION",
+      "evidence_level": "INDIVIDUAL_SOURCE_LICENSE_PAGE_READ_AND_ACTUAL_COLOR_PREVIEW_REVIEW",
+      "direct_download_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/The_southern_slope_of_the_Stefanos_crater._Nisyros%2C_Greece.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+      "download_url_status": "SOURCE_FETCHED_AND_REENCODED_JPEG_COPY_PERSISTED",
       "local_media_path": null,
       "download_sha256": null,
       "original_file_bytes_verified": false,
       "scene_assignment_final": false,
-      "downloaded": false,
+      "downloaded": true,
       "visual_qa_complete": false,
       "vertical_crop_qa_complete": false,
       "rights_complete": false,
@@ -1394,7 +1764,7 @@
         "width": 6016,
         "height": 4016,
         "unit": "px",
-        "basis": "Individual source page original-file metadata; bytes not acquired."
+        "basis": "Historical source-page original-file metadata recorded before acquisition; acquired-copy dimensions are recorded separately from the runtime output."
       },
       "planned_uses": [
         {
@@ -1407,25 +1777,88 @@
         "Verify actual rock detail and framing; page metadata is not a pixel-level review.",
         "Do not claim that the image demonstrates an underground process or visible steam before inspection.",
         "Do not introduce an invented steaming fissure to match the earlier unrealized reconstruction prompt."
-      ]
+      ],
+      "acquisition_method": "image_jpeg_copy",
+      "repository_media_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-04.jpg",
+      "acquired_copy": {
+        "name": "nisyros-20261009-scene-04.jpg",
+        "bytes": 18323460,
+        "sha256": "cf6bb13014c84d1b0f325924871605ef0386c89ea76d339919e5c73830c06cf0",
+        "dimensions_px": [
+          6016,
+          4016
+        ],
+        "output_commit": "b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba",
+        "path": "jobs/4deeeea5dc72c239/nisyros-20261009-scene-04.jpg",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-04.jpg",
+        "raw_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-04.jpg",
+        "sha256_basis": "Production runtime output manifest; scenes 1–2 also rehashed before review derivation"
+      },
+      "acquired_copy_sha256": "cf6bb13014c84d1b0f325924871605ef0386c89ea76d339919e5c73830c06cf0",
+      "detail_preview": {
+        "name": "nisyros-20261009-scene-04-qa-detail.jpg",
+        "bytes": 781374,
+        "sha256": "5bcf5c4dfa9c1207258f5a9506c42a50b23924fedd5e8edbee2e621abce25efa",
+        "dimensions_px": [
+          1600,
+          1068
+        ],
+        "output_commit": "b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba",
+        "path": "jobs/4deeeea5dc72c239/nisyros-20261009-scene-04-qa-detail.jpg",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-04-qa-detail.jpg",
+        "raw_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-04-qa-detail.jpg",
+        "git_blob_sha": "583f4cf92e0891d9c99ba79e39004f381a1fa8e6",
+        "local_bytes_sha256_verified": true
+      },
+      "source_preview_review_complete": true,
+      "source_preview_review": {
+        "status": "COMPLETED_WITH_FRAMING_CONSTRAINTS",
+        "reviewer": "root",
+        "completed_at_utc": "2026-10-09T10:00:56Z",
+        "method": "Actual visual inspection of the full-color JPEG preview displayed to the assistant; maximum image edge 1600 pixels.",
+        "observations_el": "Ανοιχτόχρωμες και κιτρινωπές υφές βράχου πάνω από τον γυμνό πυθμένα. Στο κάτω μέρος υπάρχουν πολύ μακρινοί επισκέπτες χωρίς διακριτά πρόσωπα στην προεπισκόπηση. Δεν διακρίνεται ατμίζουσα ρωγμή.",
+        "future_scene_constraints_el": "Να διατηρούνται οι πραγματικές υφές του εδάφους. Δεν προστίθεται ρωγμή με ατμό και δεν μεγεθύνονται τα πρόσωπα των επισκεπτών.",
+        "original_full_resolution_review": false,
+        "final_vertical_crop_review": false
+      },
+      "acquired_copy_attribution_recorded": true,
+      "credit_ledger": {
+        "commit_sha": "9802259fcf96686efe7fd0f7fe992283be1738d0",
+        "blob_sha": "ac353128ada9ecc3ff47fdf5929c5d6e071a76f1",
+        "path": "production_20261009_platform_specific/NISYROS_PHOTO_CREDITS.md",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/9802259fcf96686efe7fd0f7fe992283be1738d0/production_20261009_platform_specific/NISYROS_PHOTO_CREDITS.md"
+      },
+      "modifications_performed": [
+        "RGB conversion",
+        "JPEG re-encoding at original pixel dimensions, quality 96",
+        "Reduced-color compact PNG review derivative",
+        "Resized full-color JPEG review derivative, maximum edge 1600 pixels"
+      ],
+      "acquisition_record_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/f45cda0f3be09cf5535f0faf01367299fa626460/production_20261009_platform_specific/nisyros_photo_acquisition_20261009.json",
+      "acquired_copy_resolution": {
+        "width": 6016,
+        "height": 4016,
+        "unit": "px",
+        "basis": "Completed image-copy runtime report"
+      }
     },
     {
       "asset_id": "ig_nisyros_agricultural_inland",
       "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
       "title": "Nisyros inland 1.jpg",
       "lead_type": "EXISTING_IMAGE_FILE",
-      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "status": "SOURCE_PHOTO_ACQUIRED_PREVIEW_REVIEWED_FINAL_MEDIA_PENDING",
       "source_page_url": "https://commons.wikimedia.org/wiki/File:Nisyros_inland_1.jpg",
       "source_file_id": "Nisyros_inland_1.jpg",
       "observed_date": "2026-10-09",
-      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
-      "direct_download_url": null,
-      "download_url_status": "NOT_RESOLVED_FOR_ACQUISITION",
+      "evidence_level": "INDIVIDUAL_SOURCE_LICENSE_PAGE_READ_AND_ACTUAL_COLOR_PREVIEW_REVIEW",
+      "direct_download_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Nisyros_inland_1.jpg",
+      "download_url_status": "SOURCE_FETCHED_AND_REENCODED_JPEG_COPY_PERSISTED",
       "local_media_path": null,
       "download_sha256": null,
       "original_file_bytes_verified": false,
       "scene_assignment_final": false,
-      "downloaded": false,
+      "downloaded": true,
       "visual_qa_complete": false,
       "vertical_crop_qa_complete": false,
       "rights_complete": false,
@@ -1466,12 +1899,12 @@
         "width": 2400,
         "height": 1547,
         "unit": "px",
-        "basis": "Individual source page original-file metadata; bytes not acquired."
+        "basis": "Historical source-page original-file metadata recorded before acquisition; acquired-copy dimensions are recorded separately from the runtime output."
       },
       "planned_uses": [
         {
           "paragraph": 7,
-          "role": "Proposed agricultural landscape for the human use of Nisyros's terrain; dry-stone wall visibility is not established.",
+          "role": "Agricultural landscape for the human use of Nisyros's terrain; dry-stone wall construction and terraces are not identified from this photo.",
           "required_label_el": "Αγροτικό τοπίο στο εσωτερικό της Νισύρου"
         }
       ],
@@ -1479,7 +1912,77 @@
         "status": "IMAGE_REFERENCE_RETURNED_WITHOUT_INSPECTABLE_IMAGE_BLOCK",
         "pixel_level_review_complete": false
       },
-      "unresolved_scene_plan_details": [
+      "unresolved_scene_plan_details": [],
+      "constraints": [
+        "Do not label this as a close-up of dry-stone walls without visual confirmation.",
+        "Do not substitute walls or terraces from another Greek island.",
+        "This is a provisional paragraph mapping, not a completed scene.",
+        "Do not mark the dry-stone wall requirement satisfied based on the Agriculture category alone."
+      ],
+      "acquisition_method": "image_jpeg_copy",
+      "repository_media_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-07.jpg",
+      "acquired_copy": {
+        "name": "nisyros-20261009-scene-07.jpg",
+        "bytes": 2088542,
+        "sha256": "c604fded28ae4d1bf1c7a228c8ecbcc9e1859b7d5329089fc138f3573eed847c",
+        "dimensions_px": [
+          2400,
+          1547
+        ],
+        "output_commit": "b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba",
+        "path": "jobs/4deeeea5dc72c239/nisyros-20261009-scene-07.jpg",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-07.jpg",
+        "raw_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-07.jpg",
+        "sha256_basis": "Production runtime output manifest; scenes 1–2 also rehashed before review derivation"
+      },
+      "acquired_copy_sha256": "c604fded28ae4d1bf1c7a228c8ecbcc9e1859b7d5329089fc138f3573eed847c",
+      "detail_preview": {
+        "name": "nisyros-20261009-scene-07-qa-detail.jpg",
+        "bytes": 432369,
+        "sha256": "606f4444631fba2566a0fc99a5279cc48975c21aa8b4771b81f71934ee2b8cef",
+        "dimensions_px": [
+          1600,
+          1031
+        ],
+        "output_commit": "b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba",
+        "path": "jobs/4deeeea5dc72c239/nisyros-20261009-scene-07-qa-detail.jpg",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-07-qa-detail.jpg",
+        "raw_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-07-qa-detail.jpg",
+        "git_blob_sha": "010ffe50b4c10782f5e41f2b47aeb0fc49f93efe",
+        "local_bytes_sha256_verified": true
+      },
+      "source_preview_review_complete": true,
+      "source_preview_review": {
+        "status": "COMPLETED_WITH_FRAMING_CONSTRAINTS",
+        "reviewer": "root",
+        "completed_at_utc": "2026-10-09T10:00:56Z",
+        "method": "Actual visual inspection of the full-color JPEG preview displayed to the assistant; maximum image edge 1600 pixels.",
+        "observations_el": "Κοιλάδα με δέντρα, χρυσαφένια αγροτεμάχια, γραμμικά όρια χωραφιών, μικρή κατασκευή και ηφαιστειακές πλαγιές. Επιβεβαιώνεται γενικό αγροτικό τοπίο. Οι λεπτομέρειες δεν αρκούν για ασφαλή αναγνώριση της κατασκευής ξερολιθιών ή αναβαθμίδων.",
+        "future_scene_constraints_el": "Η σκηνή επισημαίνεται γενικά ως αγροτικό τοπίο. Η αναφορά της αφήγησης στις ξερολιθιές παραμένει γεωγραφικό πλαίσιο, χωρίς ισχυρισμό ότι η φωτογραφία δείχνει συγκεκριμένη κατασκευή τους.",
+        "original_full_resolution_review": false,
+        "final_vertical_crop_review": false
+      },
+      "acquired_copy_attribution_recorded": true,
+      "credit_ledger": {
+        "commit_sha": "9802259fcf96686efe7fd0f7fe992283be1738d0",
+        "blob_sha": "ac353128ada9ecc3ff47fdf5929c5d6e071a76f1",
+        "path": "production_20261009_platform_specific/NISYROS_PHOTO_CREDITS.md",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/9802259fcf96686efe7fd0f7fe992283be1738d0/production_20261009_platform_specific/NISYROS_PHOTO_CREDITS.md"
+      },
+      "modifications_performed": [
+        "RGB conversion",
+        "JPEG re-encoding at original pixel dimensions, quality 96",
+        "Reduced-color compact PNG review derivative",
+        "Resized full-color JPEG review derivative, maximum edge 1600 pixels"
+      ],
+      "acquisition_record_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/f45cda0f3be09cf5535f0faf01367299fa626460/production_20261009_platform_specific/nisyros_photo_acquisition_20261009.json",
+      "acquired_copy_resolution": {
+        "width": 2400,
+        "height": 1547,
+        "unit": "px",
+        "basis": "Completed image-copy runtime report"
+      },
+      "prior_unresolved_scene_plan_details": [
         {
           "code": "DRY_STONE_WALL_VISIBILITY_UNCONFIRMED",
           "status": "UNRESOLVED",
@@ -1493,11 +1996,12 @@
           "scene_plan_change_approved": false
         }
       ],
-      "constraints": [
-        "Do not label this as a close-up of dry-stone walls without visual confirmation.",
-        "Do not substitute walls or terraces from another Greek island.",
-        "This is a provisional paragraph mapping, not a completed scene.",
-        "Do not mark the dry-stone wall requirement satisfied based on the Agriculture category alone."
+      "resolved_scene_plan_details": [
+        {
+          "code": "GENERAL_AGRICULTURAL_CONTEXT_CONFIRMED",
+          "status": "EDITORIAL_SCOPE_CORRECTED",
+          "detail": "The actual preview shows fields, trees and field boundaries. Canonical scene 7 now uses general agricultural context without claiming visual identification of dry-stone wall construction or terraces. Final framing remains pending."
+        }
       ]
     },
     {
@@ -1505,18 +2009,18 @@
       "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
       "title": "Panoramic view southern Nisyros, Nikia village and Crater.jpg",
       "lead_type": "EXISTING_IMAGE_FILE",
-      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "status": "SOURCE_PHOTO_ACQUIRED_PREVIEW_REVIEWED_FINAL_MEDIA_PENDING",
       "source_page_url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_southern_Nisyros,_Nikia_village_and_Crater.jpg",
       "source_file_id": "Panoramic_view_southern_Nisyros,_Nikia_village_and_Crater.jpg",
       "observed_date": "2026-10-09",
-      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
-      "direct_download_url": null,
-      "download_url_status": "NOT_RESOLVED_FOR_ACQUISITION",
+      "evidence_level": "INDIVIDUAL_SOURCE_LICENSE_PAGE_READ_AND_ACTUAL_COLOR_PREVIEW_REVIEW",
+      "direct_download_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Panoramic_view_southern_Nisyros%2C_Nikia_village_and_Crater.jpg",
+      "download_url_status": "SOURCE_FETCHED_AND_REENCODED_JPEG_COPY_PERSISTED",
       "local_media_path": null,
       "download_sha256": null,
       "original_file_bytes_verified": false,
       "scene_assignment_final": false,
-      "downloaded": false,
+      "downloaded": true,
       "visual_qa_complete": false,
       "vertical_crop_qa_complete": false,
       "rights_complete": false,
@@ -1555,12 +2059,12 @@
         "width": 5090,
         "height": 1764,
         "unit": "px",
-        "basis": "Individual source page original-file metadata; bytes not acquired."
+        "basis": "Historical source-page original-file metadata recorded before acquisition; acquired-copy dimensions are recorded separately from the runtime output."
       },
       "planned_uses": [
         {
           "paragraph": 8,
-          "role": "Proposed daylight closing panorama connecting the island, settlement and crater.",
+          "role": "Daylight closing panorama with visibly observed village, crater and Aegean horizon; final vertical composition pending.",
           "required_label_el": "Νίσυρος — τοπίο, οικισμός και ηφαίστειο"
         }
       ],
@@ -1568,7 +2072,77 @@
         "status": "PREVIEW_FETCH_FAILED_DESCRIPTION_AND_LICENSE_PAGE_READ",
         "pixel_level_review_complete": false
       },
-      "unresolved_scene_plan_details": [
+      "unresolved_scene_plan_details": [],
+      "constraints": [
+        "Do not describe or alter this daylight source as an evening observation.",
+        "Do not claim a visible Aegean horizon until the actual image and intended framing are inspected.",
+        "The very wide composition needs a deliberate 9:16 review; preserve the required geographical relationships.",
+        "Keep the full closing narration and CTA; timing awaits actual Nestoras audio."
+      ],
+      "acquisition_method": "image_jpeg_copy",
+      "repository_media_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-08.jpg",
+      "acquired_copy": {
+        "name": "nisyros-20261009-scene-08.jpg",
+        "bytes": 2778774,
+        "sha256": "2b135bdd941bca2b026d9990e4b9e940b1d71cee9813aa4076883d52b914ec3f",
+        "dimensions_px": [
+          5090,
+          1764
+        ],
+        "output_commit": "b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba",
+        "path": "jobs/4deeeea5dc72c239/nisyros-20261009-scene-08.jpg",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-08.jpg",
+        "raw_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-08.jpg",
+        "sha256_basis": "Production runtime output manifest; scenes 1–2 also rehashed before review derivation"
+      },
+      "acquired_copy_sha256": "2b135bdd941bca2b026d9990e4b9e940b1d71cee9813aa4076883d52b914ec3f",
+      "detail_preview": {
+        "name": "nisyros-20261009-scene-08-qa-detail.jpg",
+        "bytes": 257547,
+        "sha256": "b4636c178130c5f9d2ba0b60d7615c20a38ab40dd4913f85e3f50ad65e3da07b",
+        "dimensions_px": [
+          1600,
+          554
+        ],
+        "output_commit": "b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba",
+        "path": "jobs/4deeeea5dc72c239/nisyros-20261009-scene-08-qa-detail.jpg",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-08-qa-detail.jpg",
+        "raw_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-08-qa-detail.jpg",
+        "git_blob_sha": "187b4076ff7182de99d7d461d5e190f2dd77655c",
+        "local_bytes_sha256_verified": true
+      },
+      "source_preview_review_complete": true,
+      "source_preview_review": {
+        "status": "COMPLETED_WITH_FRAMING_CONSTRAINTS",
+        "reviewer": "root",
+        "completed_at_utc": "2026-10-09T10:00:56Z",
+        "method": "Actual visual inspection of the full-color JPEG preview displayed to the assistant; maximum image edge 1600 pixels.",
+        "observations_el": "Φαίνονται τα κτίρια των Νικιών κεντροαριστερά, το ηφαιστειακό εσωτερικό και ο κρατήρας δεξιά, καθώς και ο ορίζοντας του Αιγαίου αριστερά και στο βάθος. Είναι ημερήσια λήψη. Δεν διακρίνονται αναγνωρίσιμα πρόσωπα.",
+        "future_scene_constraints_el": "Η πολύ πλατιά λήψη χρειάζεται ιδιαίτερη επιλογή παρουσίασης: ένα στατικό κάθετο κόψιμο σε όλο το ύψος κρατά περίπου το 19,5% του πλάτους και μπορεί να αποκλείσει βασικά στοιχεία. Η κάθετη παρουσίαση και η γεωγραφική σχέση των στοιχείων δεν έχουν ελεγχθεί σε τελικό βίντεο. Δεν επισημαίνεται ως βραδινή λήψη.",
+        "original_full_resolution_review": false,
+        "final_vertical_crop_review": false
+      },
+      "acquired_copy_attribution_recorded": true,
+      "credit_ledger": {
+        "commit_sha": "9802259fcf96686efe7fd0f7fe992283be1738d0",
+        "blob_sha": "ac353128ada9ecc3ff47fdf5929c5d6e071a76f1",
+        "path": "production_20261009_platform_specific/NISYROS_PHOTO_CREDITS.md",
+        "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/9802259fcf96686efe7fd0f7fe992283be1738d0/production_20261009_platform_specific/NISYROS_PHOTO_CREDITS.md"
+      },
+      "modifications_performed": [
+        "RGB conversion",
+        "JPEG re-encoding at original pixel dimensions, quality 96",
+        "Reduced-color compact PNG review derivative",
+        "Resized full-color JPEG review derivative, maximum edge 1600 pixels"
+      ],
+      "acquisition_record_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/f45cda0f3be09cf5535f0faf01367299fa626460/production_20261009_platform_specific/nisyros_photo_acquisition_20261009.json",
+      "acquired_copy_resolution": {
+        "width": 5090,
+        "height": 1764,
+        "unit": "px",
+        "basis": "Completed image-copy runtime report"
+      },
+      "prior_unresolved_scene_plan_details": [
         {
           "code": "DAYLIGHT_SCENE_PLAN_UPDATE_AND_VISUAL_CHECK_PENDING",
           "status": "UNRESOLVED",
@@ -1578,11 +2152,12 @@
           "sourcepack_scene_plan_updated": false
         }
       ],
-      "constraints": [
-        "Do not describe or alter this daylight source as an evening observation.",
-        "Do not claim a visible Aegean horizon until the actual image and intended framing are inspected.",
-        "The very wide composition needs a deliberate 9:16 review; preserve the required geographical relationships.",
-        "Keep the full closing narration and CTA; timing awaits actual Nestoras audio."
+      "resolved_scene_plan_details": [
+        {
+          "code": "DAYLIGHT_PANORAMA_SOURCE_AND_EDITORIAL_UPDATE_CONFIRMED",
+          "status": "SOURCE_PREVIEW_REVIEWED_FINAL_FRAMING_PENDING",
+          "detail": "The daylight preview visibly includes Nikia, the volcanic interior/crater and the Aegean horizon. Canonical scene 8 now uses daylight. Retention and geographic clarity of these components in the eventual vertical presentation remain unverified."
+        }
       ]
     }
   ],
@@ -1611,5 +2186,27 @@
       "release_authorized": false
     }
   ],
-  "last_research_update_at_utc": "2026-10-09T09:14:11Z"
+  "last_research_update_at_utc": "2026-10-09T09:14:11Z",
+  "last_acquisition_update_at_utc": "2026-10-09T10:12:58Z",
+  "current_sourcepack_provenance": {
+    "manifest_path": "production_20261009_platform_specific/manifest.json",
+    "manifest_commit": "13bdc4591c800bd752d67ec003c0d9d3dde1bfe6",
+    "manifest_file_sha": "40e118a89ee17d4e8785de6bdce2e38497acc4c7",
+    "catalog_path": "production_20261009_platform_specific/catalog.json",
+    "catalog_commit": "4cdf57cc311e50ff1467dce3df907dab8821344d",
+    "catalog_file_sha": "c5640d69510ac1d89f9dc78b3da70a9442db8603",
+    "verified_at_utc": "2026-10-09T10:10:43Z",
+    "original_sourcepack_provenance_retained": true
+  },
+  "acquisition_record": {
+    "path": "production_20261009_platform_specific/nisyros_photo_acquisition_20261009.json",
+    "commit_sha": "f45cda0f3be09cf5535f0faf01367299fa626460",
+    "url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/f45cda0f3be09cf5535f0faf01367299fa626460/production_20261009_platform_specific/nisyros_photo_acquisition_20261009.json"
+  },
+  "editorial_adjustment_record": {
+    "path": "production_20261009_platform_specific/nisyros_editorial_adjustment_20261009.json",
+    "commit_sha": "8e54a21d7e7c804fc8699b31c0e0fd4e6195e2e4",
+    "applied": true,
+    "canonical_production_preflight_passed": false
+  }
 }
