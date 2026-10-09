@@ -148,17 +148,36 @@
     "configuration_disagreement": {
       "platform_strategy_target_per_network": 15,
       "prepared_sourcepack_target_per_network": 10,
-      "changed_during_this_audit": false
+      "changed_during_this_audit": true,
+      "resolved": true,
+      "resolved_target_per_network": 10,
+      "resolution_commit": "33b33212be112d36f61abc73bda8cdccc7f6e6e6"
     },
     "blocking_dependencies": [
       "The replacement pipeline has no implemented publisher and production remains disabled",
       "Actual verified no-charge exact Nestoras synthesis capacity is unavailable",
-      "No new final MP4s or actual final audio listening reviews exist",
-      "Current configuration and prepared batch targets disagree; no ambiguous post may be released"
+      "No new final MP4s or actual final audio listening reviews exist"
     ],
     "publishing_actions_performed": 0,
     "paid_generation_calls": 0,
     "legacy_duplicates_reused": false,
-    "production_flags_changed": false
+    "production_flags_changed": false,
+    "updated_at_utc": "2026-10-09T05:56:49Z",
+    "last_metricool_today_and_future_read_at_utc": "2026-10-09T05:56:09Z",
+    "full_metricool_history_audit": {
+      "from": "2026-09-01",
+      "through": "2026-10-12",
+      "unique_records": 265,
+      "retrieval": "Supported bounded date windows after explicit reduce-range response-size guidance",
+      "brand_id": 7076410
+    },
+    "additional_semantic_review": {
+      "candidate": "Ο λεκές στο τραπεζομάντιλο",
+      "prior_published_story": "Το φόρεμα με τη γνώριμη κλωστή",
+      "prior_publication_date": "2026-10-07",
+      "result": "STRONG_SUBSTANTIVE_SIMILARITY_NOT_EXACT_DUPLICATE; KEEP_BLOCKED",
+      "notion_readback_verified": true
+    },
+    "format_choice": "No alternative-format selection received; narrated-video requirements retained"
   }
 }
