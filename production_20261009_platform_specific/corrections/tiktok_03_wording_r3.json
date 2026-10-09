@@ -1,0 +1,24 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-09T16:26:15.306Z",
+  "job_id": "2026-10-09-tiktok-03",
+  "story_id": "tiktok-20261009-03-bloop-icequake",
+  "changes": [
+    {
+      "before": "Συγκρίσιμες καταγραφές έγιναν και στη Θάλασσα της Σκότια.",
+      "after": "Συγκρίσιμες καταγραφές από παγόβουνα ενίσχυσαν αυτή την εξήγηση."
+    },
+    {
+      "before": "Για το Μπλουπ,",
+      "after": "Για τον συγκεκριμένο ήχο,"
+    }
+  ],
+  "old_script_sha256": "db0dcb63bf425a11fa9b22dc79796b37c727a3ad3ef77f88b4f7d8b48eedda0e",
+  "new_script_sha256": "94981ab22dba7e0a885850f57e441376a28beaebbc1c880488a0e1ad8547a4b9",
+  "prior_final_sha256": "033f8d0c281fb4c60e227062fc60c6ddcab05c259bba34fa631ba54ac053ad31",
+  "interpretation": "Two named-entity outputs repeat across full and independent-window ASR. This is not proof of an audible defect. Root authorized equivalent wording so the conclusion does not depend on those ambiguous occurrences; the first Bloop name and the source attribution remain.",
+  "scope": "Bounded equivalent wording clarification, preserving historical facts and written source names; one ordinary zero-credit Nestoras request after verified public commit.",
+  "actual_audio_listened": false,
+  "passed_final_review": false,
+  "global_gates_modified": false
+}

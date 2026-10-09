@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-09T16:26:15.306Z",
+  "job_id": "2026-10-09-facebook-04",
+  "story_id": "FACEBOOK_20261009_04_NELLIE_BLY_72_DAYS",
+  "changes": [
+    {
+      "before": "Δεν επρόκειτο για αδιάκοπο ταξίδι πάνω σε ένα μέσο.",
+      "after": "Η διαδρομή απαιτούσε αλλαγές στα μέσα μεταφοράς."
+    }
+  ],
+  "old_script_sha256": "33c22fd847c8815f5023a33a200c7b58ea4a9291c9c6af82606cdba9ecdea663",
+  "new_script_sha256": "7d519fc6aad5a623d2b6917cec5e9eda8f7b09e91da63b2c9618abfffa6c7810",
+  "prior_final_sha256": "5b8e34b57ade81f76b457221fda193091ad56beb76384ac7528590392f7a7e90",
+  "observed_windows": [
+    {
+      "seconds": [
+        32.8,
+        36.9
+      ],
+      "asr": "Δεν είναι πρόκειτο για διάκοπο ταξίδη πάνω σε ένα μέσο."
+    }
+  ],
+  "interpretation": "Full medium and independent focused window both split the negative construction similarly. This is an objective pronunciation/word-boundary uncertainty, not direct hearing or proof of a specific audible error. The affirmative sentence retains the same transport-change meaning.",
+  "scope": "Bounded equivalent wording clarification, preserving historical facts and written source names; one ordinary zero-credit Nestoras request after verified public commit.",
+  "actual_audio_listened": false,
+  "passed_final_review": false,
+  "global_gates_modified": false
+}
