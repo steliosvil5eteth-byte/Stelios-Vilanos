@@ -106,5 +106,59 @@
   "actual_new_story_render_tested": false,
   "publisher_implemented_in_new_modules": false,
   "production_gates_unchanged": true,
-  "recurring_daily_production_active": false
+  "recurring_daily_production_active": false,
+  "latest_operational_audit": {
+    "audited_at_utc": "2026-10-09T05:49:13Z",
+    "incident": "MISSED_20261009_0700_EUROPE_ATHENS",
+    "status": "PUBLICATION_NOT_RESTORED",
+    "brand_id": 7076410,
+    "timezone": "Europe/Athens",
+    "metricool_read_range": {
+      "from": "2026-10-08T00:00:00+03:00",
+      "to": "2026-10-12T23:59:59+03:00"
+    },
+    "records_dated_20261009": 0,
+    "future_active_scheduled_records_through_20261012": 0,
+    "new_final_mp4s_in_replacement_batch": 0,
+    "disabled_production_automations": [
+      {
+        "id": "6ab92ba43c348191a319b62319599d8c",
+        "title": "Daily Social Production"
+      },
+      {
+        "id": "6abcf44a59ec8191b00e9b06fcc31932",
+        "title": "Next-Day Social Prebuild"
+      }
+    ],
+    "notion_archive_read": {
+      "supported_mode": "view",
+      "rows": 202,
+      "pagination_complete": true,
+      "sql_attempted": false,
+      "semantic_release_clearance": false
+    },
+    "stale_notion_preflight_labels_corrected": 6,
+    "correction_readbacks_verified": true,
+    "exact_legacy_visual_failure": {
+      "path": "production_20261009/final/relationships/card-04.jpg",
+      "blob_sha": "2d333f910ac083472d2f62bad5f72278f96dc80b",
+      "finding": "Image shows the woman erasing the calendar; Greek text says Andreas did so.",
+      "disposition": "BLOCKED; historical PASSED claim is not current release evidence"
+    },
+    "configuration_disagreement": {
+      "platform_strategy_target_per_network": 15,
+      "prepared_sourcepack_target_per_network": 10,
+      "changed_during_this_audit": false
+    },
+    "blocking_dependencies": [
+      "The replacement pipeline has no implemented publisher and production remains disabled",
+      "Actual verified no-charge exact Nestoras synthesis capacity is unavailable",
+      "No new final MP4s or actual final audio listening reviews exist",
+      "Current configuration and prepared batch targets disagree; no ambiguous post may be released"
+    ],
+    "publishing_actions_performed": 0,
+    "paid_generation_calls": 0,
+    "legacy_duplicates_reused": false,
+    "production_flags_changed": false
+  }
 }
