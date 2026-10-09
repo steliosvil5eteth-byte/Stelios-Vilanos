@@ -1,0 +1,1113 @@
+{
+  "schema_version": "1.0",
+  "manifest_id": "first_four_archive_asset_leads_20261009",
+  "research_date": "2026-10-09",
+  "created_at_utc": "2026-10-09T07:25:13Z",
+  "status": "RESEARCH_ONLY_TEN_ASSET_LEADS_ZERO_ACQUISITIONS",
+  "purpose": "Public-repository-safe archive-asset research for four already prepared narrated-video sourcepacks.",
+  "sourcepack_provenance": {
+    "repository": "steliosvil5eteth-byte/Stelios-Vilanos",
+    "catalog_path": "production_20261009_platform_specific/catalog.json",
+    "catalog_file_sha": "fbdd8fd765e336e592af454ae592a73733fc6f13",
+    "manifest_path": "production_20261009_platform_specific/manifest.json",
+    "manifest_file_sha": "21e196f7c2200203864d2a1a587bb8f46a3d5eb0",
+    "catalog_read_date": "2026-10-09"
+  },
+  "scope": {
+    "story_count": 4,
+    "asset_lead_count": 10,
+    "image_file_lead_count": 9,
+    "article_figure_collection_lead_count": 1,
+    "acquired_media_count": 0,
+    "acquired_audio_count": 0,
+    "rendered_video_count": 0,
+    "scheduled_post_count": 0,
+    "provisional_research_choices_only": true,
+    "daily_slots_changed_by_this_manifest": false,
+    "sourcepacks_changed_by_this_manifest": false,
+    "media_generation_authorized_by_this_manifest": false,
+    "paid_media_tools_authorized": false,
+    "credit_spend_authorized": false,
+    "media_acquisition_authorized_by_this_file": false,
+    "release_authorized": false
+  },
+  "production_constraints": {
+    "required_voice": "el-GR-NestorasNeural",
+    "voice_capacity_status": "CURRENT_VERIFIED_NO_CHARGE_CAPACITY_REQUIRED",
+    "target_duration_seconds": [
+      80,
+      110
+    ],
+    "vertical_aspect_ratio": "9:16",
+    "language": "el-GR",
+    "subtitles": "SYNCHRONIZED_GREEK_BURNED_IN_SUBTITLES_REQUIRED",
+    "background_music": false,
+    "second_voice": false,
+    "avatar": false,
+    "new_ai_image_generation_required_by_manifest": false,
+    "final_exact_media_qa_required": true
+  },
+  "global_history_clearance": "INCOMPLETE_FOR_RELEASE",
+  "release_lease": null,
+  "all_stories_and_assets_gate_state": {
+    "downloaded": false,
+    "visual_qa_complete": false,
+    "vertical_crop_qa_complete": false,
+    "rights_complete": false,
+    "attribution_complete": false,
+    "scene_set_complete": false,
+    "audio_generated": false,
+    "final_video_rendered": false,
+    "final_media_qa_complete": false,
+    "release_lease_acquired": false,
+    "release_authorized": false,
+    "scheduled": false,
+    "published": false,
+    "publishable": false
+  },
+  "interpretation_notes": [
+    "This research manifest does not revoke or replace prior user authorization or change any canonical production gate. Its readiness values describe the unproduced assets only.",
+    "A license statement observed on a source page is research evidence, not completed rights clearance for the final edited asset.",
+    "No downloaded bytes, original-file hashes, visual inspections or crop inspections exist in this manifest.",
+    "Null resolution or license-version fields are deliberately unverified, not inferred.",
+    "Each story retains its sourcepack's original unscheduled editorial date/time. The provisional TikTok choice remains sequence 2 at 10:00 Europe/Athens; it does not replace sequence 1 or claim a publishing slot.",
+    "Paragraph mappings are proposals. Reuse of one image does not automatically satisfy requirements for a distinct image per scene.",
+    "The Frontiers figure collection is one research lead and must resolve into individually selected image components before acquisition is recorded.",
+    "Raw publishing history, private analytics and private content-workspace records are excluded."
+  ],
+  "stories": [
+    {
+      "story_id": "FACEBOOK_20261009_01_NANSEN_PASSPORT_1922",
+      "platform": "facebook",
+      "title": "Το χαρτί που ξανάνοιξε τα σύνορα",
+      "fingerprint": "documented_topic|nansen_passport_1922",
+      "sourcepack_word_count": 245,
+      "narration_paragraph_count": 8,
+      "sourcepack_original_editorial_slot": {
+        "local_date": "2026-10-09",
+        "local_time": "09:00",
+        "timezone": "Europe/Athens",
+        "status": "UNSCHEDULED_EDITORIAL_TEST_SLOT",
+        "changed_by_manifest": false,
+        "scheduled": false
+      },
+      "sourcepack_source_urls": [
+        "https://www.unhcr.org/blogs/a-century-of-mobility-a-glimpse-into-the-history-of-refugee-travel-documents/",
+        "https://www.nobelprize.org/prizes/peace/1922/nansen/biographical/?level=1",
+        "https://www.unhcr.org/news/stories/passion-vision-and-action-fridtjof-nansen-humanitarian-extraordinaire"
+      ],
+      "asset_ids": [
+        "fb_nansen_passport_1929",
+        "fb_nansen_portrait_loc"
+      ],
+      "sourcepack_sequence": 1,
+      "semantic_assessment": {
+        "status": "PROVISIONALLY_DISTINCT_FOR_MEDIA_RESEARCH",
+        "basis": "Existing reviewed snapshots only; no fresh global release clearance.",
+        "summary": "No matching Nansen-passport or equivalent refugee identity-document story identified."
+      },
+      "unresolved_scene_paragraphs": [
+        1,
+        2,
+        5,
+        6,
+        7,
+        8
+      ],
+      "scene_gap_notes": [
+        "Only the biography portrait and one correctly dated passport example have concrete source leads.",
+        "Remaining period-correct travel, administrative and closing scenes require additional relevant archival files or an explicit scene-plan revision."
+      ],
+      "downloaded": false,
+      "visual_qa_complete": false,
+      "vertical_crop_qa_complete": false,
+      "rights_complete": false,
+      "attribution_complete": false,
+      "scene_set_complete": false,
+      "audio_generated": false,
+      "final_video_rendered": false,
+      "final_media_qa_complete": false,
+      "release_lease_acquired": false,
+      "release_authorized": false,
+      "scheduled": false,
+      "published": false,
+      "publishable": false
+    },
+    {
+      "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
+      "platform": "instagram",
+      "title": "Νίσυρος: ο κρατήρας που δεν είναι λίμνη λάβας",
+      "fingerprint": "documented_topic|nisyros_stefanos_hydrothermal",
+      "sourcepack_word_count": 254,
+      "narration_paragraph_count": 8,
+      "sourcepack_original_editorial_slot": {
+        "local_date": "2026-10-09",
+        "local_time": "07:00",
+        "timezone": "Europe/Athens",
+        "status": "UNSCHEDULED_EDITORIAL_TEST_SLOT",
+        "changed_by_manifest": false,
+        "scheduled": false
+      },
+      "sourcepack_source_urls": [
+        "https://www.unesco.org/en/iggp/nisyros-unesco-global-geopark",
+        "https://www.visitnisyros.gr/en/settlements-2/20-caldera-crater"
+      ],
+      "asset_ids": [
+        "ig_stefanos_north",
+        "ig_stefanos_nikia",
+        "ig_stefanos_fumarole"
+      ],
+      "sourcepack_sequence": 1,
+      "semantic_assessment": {
+        "status": "PROVISIONALLY_DISTINCT_FOR_MEDIA_RESEARCH",
+        "basis": "Existing reviewed snapshots only; no fresh global release clearance.",
+        "summary": "Stefanos hydrothermal formation and Nisyros geography are distinct from previously reviewed sulfur flames, volcanic lightning and basalt cooling."
+      },
+      "unresolved_scene_paragraphs": [
+        2,
+        3,
+        4,
+        7,
+        8
+      ],
+      "scene_gap_notes": [
+        "Three separate photographs have leads: north view, fumarole, Nikia overlook.",
+        "The fumarole may be reassigned to paragraph 3, but one image cannot count as both distinct scene 3 and scene 5.",
+        "Additional caldera, rock textures, inhabited terraces and a distinct closing landscape remain to be selected."
+      ],
+      "downloaded": false,
+      "visual_qa_complete": false,
+      "vertical_crop_qa_complete": false,
+      "rights_complete": false,
+      "attribution_complete": false,
+      "scene_set_complete": false,
+      "audio_generated": false,
+      "final_video_rendered": false,
+      "final_media_qa_complete": false,
+      "release_lease_acquired": false,
+      "release_authorized": false,
+      "scheduled": false,
+      "published": false,
+      "publishable": false
+    },
+    {
+      "story_id": "tiktok-20261009-02-blood-falls-iron-brine",
+      "platform": "tiktok",
+      "title": "Γιατί ο παγετώνας Taylor βγάζει κόκκινο νερό;",
+      "fingerprint": "documented_topic|blood_falls_iron_brine",
+      "sourcepack_word_count": 249,
+      "narration_paragraph_count": 9,
+      "sourcepack_original_editorial_slot": {
+        "local_date": "2026-10-09",
+        "local_time": "10:00",
+        "timezone": "Europe/Athens",
+        "status": "UNSCHEDULED_EDITORIAL_TEST_SLOT",
+        "changed_by_manifest": false,
+        "scheduled": false
+      },
+      "sourcepack_source_urls": [
+        "https://www.uaf.edu/news/archives/news-archives-2010-2021/researchers-solve-the-100-year-old-mystery-of-blood-falls.php",
+        "https://hub.jhu.edu/2023/06/26/blood-falls-mystery/"
+      ],
+      "asset_ids": [
+        "tt_bloodfalls_front",
+        "tt_bloodfalls_aerial",
+        "tt_bloodfalls_scientific_figures"
+      ],
+      "sourcepack_sequence": 2,
+      "semantic_assessment": {
+        "status": "PROVISIONALLY_DISTINCT_FOR_MEDIA_RESEARCH",
+        "basis": "Existing reviewed snapshots only; no fresh global release clearance.",
+        "summary": "Iron-rich red outflow and its subsurface brine system differ from a descending underwater brine ice tube, despite their shared Antarctic context."
+      },
+      "batch_selection_status": "PROVISIONAL_RESEARCH_CHOICE_WITH_ORIGINAL_SLOT_RETAINED",
+      "prior_first_topic_reservation_status": "UNFINISHED_PRIOR_TOPIC_RESERVATION_REQUIRES_RECONCILIATION",
+      "original_daily_slot_changed": false,
+      "daily_sequence_one_replaced_by_this_manifest": false,
+      "unresolved_scene_paragraphs": [
+        6,
+        7,
+        8,
+        9
+      ],
+      "scene_gap_notes": [
+        "Figure components for paragraphs 3-5 remain unselected and unacquired.",
+        "Additional brine/freezing, researcher/radar and closing images remain to be selected.",
+        "University news-page researcher photographs have no verified individual reuse grant in this research; do not acquire them as cleared assets."
+      ],
+      "downloaded": false,
+      "visual_qa_complete": false,
+      "vertical_crop_qa_complete": false,
+      "rights_complete": false,
+      "attribution_complete": false,
+      "scene_set_complete": false,
+      "audio_generated": false,
+      "final_video_rendered": false,
+      "final_media_qa_complete": false,
+      "release_lease_acquired": false,
+      "release_authorized": false,
+      "scheduled": false,
+      "published": false,
+      "publishable": false
+    },
+    {
+      "story_id": "youtube-20261009-01-floating-ice",
+      "platform": "youtube",
+      "title": "Γιατί ο πάγος επιπλέει στο νερό;",
+      "fingerprint": "documented_topic|floating_ice",
+      "sourcepack_word_count": 250,
+      "narration_paragraph_count": 9,
+      "sourcepack_original_editorial_slot": {
+        "local_date": "2026-10-09",
+        "local_time": "08:00",
+        "timezone": "Europe/Athens",
+        "status": "UNSCHEDULED_EDITORIAL_TEST_SLOT",
+        "changed_by_manifest": false,
+        "scheduled": false
+      },
+      "sourcepack_source_urls": [
+        "https://www.usgs.gov/water-science-school/science/water-density",
+        "https://cordis.europa.eu/article/id/454697-why-does-ice-float"
+      ],
+      "asset_ids": [
+        "yt_glass_ice_cc0",
+        "yt_beaufort_floating_ice"
+      ],
+      "sourcepack_sequence": 1,
+      "semantic_assessment": {
+        "status": "PROVISIONALLY_DISTINCT_FOR_MEDIA_RESEARCH",
+        "basis": "Existing reviewed snapshots only; no fresh global release clearance.",
+        "summary": "Ordinary ice density and lake freezing differ from unusual ice-filament growth and a descending underwater brine ice tube."
+      },
+      "unresolved_scene_paragraphs": [
+        2,
+        3,
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "scene_gap_notes": [
+        "The everyday glass and general sea-ice photograph are only provisional visual leads.",
+        "The scientific molecular diagram must be accurate and separately checked; it must not be invented as a microscopic photograph.",
+        "A freshwater-lake image and the final distinct scene remain to be selected."
+      ],
+      "downloaded": false,
+      "visual_qa_complete": false,
+      "vertical_crop_qa_complete": false,
+      "rights_complete": false,
+      "attribution_complete": false,
+      "scene_set_complete": false,
+      "audio_generated": false,
+      "final_video_rendered": false,
+      "final_media_qa_complete": false,
+      "release_lease_acquired": false,
+      "release_authorized": false,
+      "scheduled": false,
+      "published": false,
+      "publishable": false
+    }
+  ],
+  "assets": [
+    {
+      "asset_id": "fb_nansen_passport_1929",
+      "story_id": "FACEBOOK_20261009_01_NANSEN_PASSPORT_1922",
+      "title": "1929 Bulgarian issued Nansen passport.jpg",
+      "lead_type": "EXISTING_IMAGE_FILE",
+      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:1929_Bulgarian_issued_Nansen_passport.jpg",
+      "observed_date": "2026-10-09",
+      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
+      "direct_download_url": null,
+      "download_url_status": "NOT_RESOLVED_OR_FETCHED",
+      "local_media_path": null,
+      "download_sha256": null,
+      "original_file_bytes_verified": false,
+      "scene_assignment_final": false,
+      "downloaded": false,
+      "visual_qa_complete": false,
+      "vertical_crop_qa_complete": false,
+      "rights_complete": false,
+      "attribution_complete": false,
+      "scene_set_complete": false,
+      "audio_generated": false,
+      "final_video_rendered": false,
+      "final_media_qa_complete": false,
+      "release_lease_acquired": false,
+      "release_authorized": false,
+      "scheduled": false,
+      "published": false,
+      "publishable": false,
+      "source_file_id": "1929_Bulgarian_issued_Nansen_passport.jpg",
+      "provenance": {
+        "repository": "Wikimedia Commons",
+        "creator": "Huddyhuddy",
+        "source_description": "Uploader's own photograph of a Bulgarian-issued Nansen passport.",
+        "document_year": 1929,
+        "photograph_date": "2024-10-24"
+      },
+      "license": {
+        "label_observed": "CC0 1.0 Universal Public Domain Dedication",
+        "code": "CC0-1.0",
+        "version": "1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:1929_Bulgarian_issued_Nansen_passport.jpg",
+        "source_statement_read": true,
+        "individual_rights_review_complete": false,
+        "worldwide_clearance_complete": false,
+        "attribution_plan": "Huddyhuddy / Wikimedia Commons, CC0 1.0; identify the document as a 1929 example."
+      },
+      "resolution_observed": {
+        "width": 1336,
+        "height": 1922,
+        "unit": "px",
+        "basis": "Source page original-file metadata; bytes not downloaded."
+      },
+      "planned_uses": [
+        {
+          "paragraph": 4,
+          "role": "Actual example of a Nansen identity/travel document.",
+          "required_label_el": "Διαβατήριο Νάνσεν, βουλγαρική έκδοση του 1929"
+        }
+      ],
+      "constraints": [
+        "Do not identify this 1929 document as the first 1922 issue.",
+        "Do not infer citizenship or unrestricted border admission from the document.",
+        "Inspect the exact image and crop before selecting; preserve document authenticity.",
+        "A close crop is not automatically a new distinct scene asset."
+      ]
+    },
+    {
+      "asset_id": "fb_nansen_portrait_loc",
+      "story_id": "FACEBOOK_20261009_01_NANSEN_PASSPORT_1922",
+      "title": "Fridtjof Nansen LOC 03377u.jpg",
+      "lead_type": "EXISTING_IMAGE_FILE",
+      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Fridtjof_Nansen_LOC_03377u.jpg",
+      "observed_date": "2026-10-09",
+      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
+      "direct_download_url": null,
+      "download_url_status": "NOT_RESOLVED_OR_FETCHED",
+      "local_media_path": null,
+      "download_sha256": null,
+      "original_file_bytes_verified": false,
+      "scene_assignment_final": false,
+      "downloaded": false,
+      "visual_qa_complete": false,
+      "vertical_crop_qa_complete": false,
+      "rights_complete": false,
+      "attribution_complete": false,
+      "scene_set_complete": false,
+      "audio_generated": false,
+      "final_video_rendered": false,
+      "final_media_qa_complete": false,
+      "release_lease_acquired": false,
+      "release_authorized": false,
+      "scheduled": false,
+      "published": false,
+      "publishable": false,
+      "source_file_id": "Fridtjof_Nansen_LOC_03377u.jpg",
+      "provenance": {
+        "repository": "Wikimedia Commons",
+        "original_collection": "George Grantham Bain Collection, Library of Congress",
+        "creator": "Henry van der Weyde",
+        "original_digital_id": "ggbain.03377",
+        "date_label_observed": "29 April 1915 (date created or published later by Bain)",
+        "date_is_not_verified_exposure_date": true
+      },
+      "license": {
+        "label_observed": "Public domain in the United States; Library of Congress Bain collection reports no known copyright restrictions.",
+        "code": "PD-US / LOC-NO-KNOWN-RESTRICTIONS",
+        "version": null,
+        "license_url": null,
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Fridtjof_Nansen_LOC_03377u.jpg",
+        "source_statement_read": true,
+        "individual_rights_review_complete": false,
+        "worldwide_clearance_complete": false,
+        "unresolved": "Source page explicitly warns that public-domain status outside the United States may differ. Confirm applicable rights for worldwide social distribution.",
+        "attribution_plan": "Henry van der Weyde / George Grantham Bain Collection, Library of Congress, digital ID ggbain.03377; via Wikimedia Commons."
+      },
+      "resolution_observed": {
+        "width": 3584,
+        "height": 5200,
+        "unit": "px",
+        "basis": "Source page original-file metadata; bytes not downloaded."
+      },
+      "planned_uses": [
+        {
+          "paragraph": 3,
+          "role": "Actual portrait of Fridtjof Nansen during the biographical introduction.",
+          "required_label_el": "Φρίντιοφ Νάνσεν — αρχειακή φωτογραφία"
+        }
+      ],
+      "constraints": [
+        "Do not describe the portrait as a photograph of his 1921 appointment or an office event.",
+        "Worldwide rights review remains incomplete.",
+        "Verify that the selected original and any pre-existing retouching match the credited file version.",
+        "Do not substitute the low-resolution Nansen.jpg engraving for this photographic lead."
+      ]
+    },
+    {
+      "asset_id": "ig_stefanos_north",
+      "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
+      "title": "View of the Stefanos crater from the north. Nisyros, Greece.jpg",
+      "lead_type": "EXISTING_IMAGE_FILE",
+      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:View_of_the_Stefanos_crater_from_the_north._Nisyros,_Greece.jpg",
+      "observed_date": "2026-10-09",
+      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
+      "direct_download_url": null,
+      "download_url_status": "NOT_RESOLVED_OR_FETCHED",
+      "local_media_path": null,
+      "download_sha256": null,
+      "original_file_bytes_verified": false,
+      "scene_assignment_final": false,
+      "downloaded": false,
+      "visual_qa_complete": false,
+      "vertical_crop_qa_complete": false,
+      "rights_complete": false,
+      "attribution_complete": false,
+      "scene_set_complete": false,
+      "audio_generated": false,
+      "final_video_rendered": false,
+      "final_media_qa_complete": false,
+      "release_lease_acquired": false,
+      "release_authorized": false,
+      "scheduled": false,
+      "published": false,
+      "publishable": false,
+      "source_file_id": "View_of_the_Stefanos_crater_from_the_north._Nisyros,_Greece.jpg",
+      "provenance": {
+        "repository": "Wikimedia Commons",
+        "creator": "Ввласенко",
+        "source_description": "Own photograph of Stefanos crater from the north, Nisyros, Greece.",
+        "photograph_date": "2021-09-08"
+      },
+      "license": {
+        "label_observed": "Creative Commons Attribution-Share Alike 3.0 Unported",
+        "code": "CC-BY-SA-3.0",
+        "version": "3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:View_of_the_Stefanos_crater_from_the_north._Nisyros,_Greece.jpg",
+        "source_statement_read": true,
+        "individual_rights_review_complete": false,
+        "worldwide_clearance_complete": false,
+        "attribution_plan": "Ввласенко / Wikimedia Commons, CC BY-SA 3.0; include source and license links and describe any crop or other changes.",
+        "adaptation_obligation": "Identify and apply the required same or compatible license to adaptations; do not treat attribution alone as completing the obligation."
+      },
+      "resolution_observed": {
+        "width": 6016,
+        "height": 4016,
+        "unit": "px",
+        "basis": "Source page original-file metadata; bytes not downloaded."
+      },
+      "planned_uses": [
+        {
+          "paragraph": 1,
+          "role": "Geographically accurate opening view of Stefanos crater.",
+          "required_label_el": "Κρατήρας Στέφανος, Νίσυρος"
+        }
+      ],
+      "constraints": [
+        "No lava lake, synthetic steam, invented eruption, or current-condition claim.",
+        "Check 9:16 framing without misrepresenting the crater geography.",
+        "A single panorama does not complete the other caldera, rock-texture or closing scenes."
+      ]
+    },
+    {
+      "asset_id": "ig_stefanos_nikia",
+      "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
+      "title": "View of the Stefanos Crater from Nikia. Nisyros, Greece.jpg",
+      "lead_type": "EXISTING_IMAGE_FILE",
+      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:View_of_the_Stefanos_Crater_from_Nikia._Nisyros,_Greece.jpg",
+      "observed_date": "2026-10-09",
+      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
+      "direct_download_url": null,
+      "download_url_status": "NOT_RESOLVED_OR_FETCHED",
+      "local_media_path": null,
+      "download_sha256": null,
+      "original_file_bytes_verified": false,
+      "scene_assignment_final": false,
+      "downloaded": false,
+      "visual_qa_complete": false,
+      "vertical_crop_qa_complete": false,
+      "rights_complete": false,
+      "attribution_complete": false,
+      "scene_set_complete": false,
+      "audio_generated": false,
+      "final_video_rendered": false,
+      "final_media_qa_complete": false,
+      "release_lease_acquired": false,
+      "release_authorized": false,
+      "scheduled": false,
+      "published": false,
+      "publishable": false,
+      "source_file_id": "View_of_the_Stefanos_Crater_from_Nikia._Nisyros,_Greece.jpg",
+      "provenance": {
+        "repository": "Wikimedia Commons",
+        "creator": "Ввласенко",
+        "source_description": "Own photograph of Stefanos crater viewed from Nikia, Nisyros, Greece.",
+        "photograph_date": "2021-09-08"
+      },
+      "license": {
+        "label_observed": "Creative Commons Attribution-Share Alike 3.0 Unported",
+        "code": "CC-BY-SA-3.0",
+        "version": "3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:View_of_the_Stefanos_Crater_from_Nikia._Nisyros,_Greece.jpg",
+        "source_statement_read": true,
+        "individual_rights_review_complete": false,
+        "worldwide_clearance_complete": false,
+        "attribution_plan": "Ввласенко / Wikimedia Commons, CC BY-SA 3.0; include source and license links and describe any crop or other changes.",
+        "adaptation_obligation": "Identify and apply the required same or compatible license to adaptations."
+      },
+      "resolution_observed": {
+        "width": 5672,
+        "height": 3914,
+        "unit": "px",
+        "basis": "Source page original-file metadata; bytes not downloaded."
+      },
+      "planned_uses": [
+        {
+          "paragraph": 6,
+          "role": "View from Nikia that conveys the scale of the volcanic interior.",
+          "required_label_el": "Θέα από τα Νικιά"
+        }
+      ],
+      "constraints": [
+        "Do not label this view as an aerial photograph.",
+        "Keep the geographical view tied to the Nikia paragraph.",
+        "Do not assume the image contains suitable architecture, terraces or other scene details until visually inspected."
+      ]
+    },
+    {
+      "asset_id": "ig_stefanos_fumarole",
+      "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
+      "title": "Fumarole Nisyros.JPG",
+      "lead_type": "EXISTING_IMAGE_FILE",
+      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Fumarole_Nisyros.JPG",
+      "observed_date": "2026-10-09",
+      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
+      "direct_download_url": null,
+      "download_url_status": "NOT_RESOLVED_OR_FETCHED",
+      "local_media_path": null,
+      "download_sha256": null,
+      "original_file_bytes_verified": false,
+      "scene_assignment_final": false,
+      "downloaded": false,
+      "visual_qa_complete": false,
+      "vertical_crop_qa_complete": false,
+      "rights_complete": false,
+      "attribution_complete": false,
+      "scene_set_complete": false,
+      "audio_generated": false,
+      "final_video_rendered": false,
+      "final_media_qa_complete": false,
+      "release_lease_acquired": false,
+      "release_authorized": false,
+      "scheduled": false,
+      "published": false,
+      "publishable": false,
+      "source_file_id": "Fumarole_Nisyros.JPG",
+      "provenance": {
+        "repository": "Wikimedia Commons",
+        "creator": "Dreizung",
+        "source_description": "Own photograph of a fumarole specifically identified as being in Stefanos crater, Nisyros.",
+        "photograph_date": "2013-10-21"
+      },
+      "license": {
+        "label_observed": "Creative Commons Attribution 3.0 Unported; source page permits choosing this license from its offered alternatives.",
+        "code": "CC-BY-3.0",
+        "version": "3.0",
+        "license_url": "https://creativecommons.org/licenses/by/3.0",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Fumarole_Nisyros.JPG",
+        "source_statement_read": true,
+        "individual_rights_review_complete": false,
+        "worldwide_clearance_complete": false,
+        "attribution_plan": "Dreizung / Wikimedia Commons, CC BY 3.0; include source and license links and indicate changes."
+      },
+      "resolution_observed": {
+        "width": 4608,
+        "height": 3456,
+        "unit": "px",
+        "basis": "Source page original-file metadata; bytes not downloaded."
+      },
+      "planned_uses": [
+        {
+          "paragraph": 5,
+          "role": "Real fumarole associated with the active hydrothermal system.",
+          "required_label_el": "Ατμίδα στον Στέφανο — αρχειακή φωτογραφία"
+        }
+      ],
+      "alternative_paragraph_uses": [
+        3
+      ],
+      "constraints": [
+        "Select one final scene use; do not count this one file as two distinct scene photographs.",
+        "Do not infer present-day emissions, access safety or an eruption forecast from a 2013 photograph.",
+        "Verify actual visible fumarole detail and the crop before acquisition acceptance."
+      ]
+    },
+    {
+      "asset_id": "tt_bloodfalls_front",
+      "story_id": "tiktok-20261009-02-blood-falls-iron-brine",
+      "title": "Blood Falls by Peter Rejcek.jpg",
+      "lead_type": "EXISTING_IMAGE_FILE",
+      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Blood_Falls_by_Peter_Rejcek.jpg",
+      "observed_date": "2026-10-09",
+      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
+      "direct_download_url": null,
+      "download_url_status": "NOT_RESOLVED_OR_FETCHED",
+      "local_media_path": null,
+      "download_sha256": null,
+      "original_file_bytes_verified": false,
+      "scene_assignment_final": false,
+      "downloaded": false,
+      "visual_qa_complete": false,
+      "vertical_crop_qa_complete": false,
+      "rights_complete": false,
+      "attribution_complete": false,
+      "scene_set_complete": false,
+      "audio_generated": false,
+      "final_video_rendered": false,
+      "final_media_qa_complete": false,
+      "release_lease_acquired": false,
+      "release_authorized": false,
+      "scheduled": false,
+      "published": false,
+      "publishable": false,
+      "source_file_id": "Blood_Falls_by_Peter_Rejcek.jpg",
+      "provenance": {
+        "repository": "Wikimedia Commons",
+        "creator": "Peter Rejcek",
+        "credited_institution": "National Science Foundation",
+        "original_archive": "U.S. Antarctic Program Photo Library",
+        "original_source_identifier": "BLOOD_FALLS.JPG",
+        "source_description": "Actual Blood Falls outflow at the end of Taylor Glacier toward Lake Bonney.",
+        "photograph_date": "2006-11-26"
+      },
+      "license": {
+        "label_observed": "Public domain: National Science Foundation employee's work made as part of official duties.",
+        "code": "PD-US-GOV-NSF",
+        "version": null,
+        "license_url": null,
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Blood_Falls_by_Peter_Rejcek.jpg",
+        "source_statement_read": true,
+        "individual_rights_review_complete": false,
+        "worldwide_clearance_complete": false,
+        "attribution_plan": "National Science Foundation / Peter Rejcek; Blood Falls, 26 November 2006; via Wikimedia Commons."
+      },
+      "resolution_observed": {
+        "width": 2968,
+        "height": 1740,
+        "unit": "px",
+        "basis": "Source page original-file metadata; bytes not downloaded."
+      },
+      "planned_uses": [
+        {
+          "paragraph": 1,
+          "role": "Authentic opening landscape showing the red outflow.",
+          "required_label_el": "Blood Falls, παγετώνας Taylor, Ανταρκτική"
+        }
+      ],
+      "constraints": [
+        "Do not intensify the red color to imply blood.",
+        "The image is an archival observation, not evidence of continuous or current discharge.",
+        "Inspect framing, small visible people and any scale references before final selection.",
+        "The concluding scene still needs a distinct approved image or an explicitly reconciled scene plan."
+      ]
+    },
+    {
+      "asset_id": "tt_bloodfalls_aerial",
+      "story_id": "tiktok-20261009-02-blood-falls-iron-brine",
+      "title": "Blood Falls aerial view 2014-11-21 02.jpg",
+      "lead_type": "EXISTING_IMAGE_FILE",
+      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Blood_Falls_aerial_view_2014-11-21_02.jpg",
+      "observed_date": "2026-10-09",
+      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
+      "direct_download_url": null,
+      "download_url_status": "NOT_RESOLVED_OR_FETCHED",
+      "local_media_path": null,
+      "download_sha256": null,
+      "original_file_bytes_verified": false,
+      "scene_assignment_final": false,
+      "downloaded": false,
+      "visual_qa_complete": false,
+      "vertical_crop_qa_complete": false,
+      "rights_complete": false,
+      "attribution_complete": false,
+      "scene_set_complete": false,
+      "audio_generated": false,
+      "final_video_rendered": false,
+      "final_media_qa_complete": false,
+      "release_lease_acquired": false,
+      "release_authorized": false,
+      "scheduled": false,
+      "published": false,
+      "publishable": false,
+      "source_file_id": "Blood_Falls_aerial_view_2014-11-21_02.jpg",
+      "provenance": {
+        "repository": "Wikimedia Commons",
+        "creator": "Peter Rejcek",
+        "credited_institution": "National Science Foundation",
+        "original_archive": "U.S. Antarctic Program Photo Library",
+        "original_source_identifier": "dry-valleys-blood-falls-aerials3.JPG",
+        "original_source_url": "https://photolibrary.usap.gov/PhotoDetails.aspx?filename=dry-valleys-blood-falls-aerials3.JPG",
+        "original_archive_current_access_verified": false,
+        "photograph_date": "2014-11-21",
+        "commons_license_review_date": "2025-03-29",
+        "commons_license_reviewer": "Leoboudv"
+      },
+      "license": {
+        "label_observed": "Public domain: National Science Foundation employee's official-duty work; Commons records review of the original archive license.",
+        "code": "PD-US-GOV-NSF",
+        "version": null,
+        "license_url": null,
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Blood_Falls_aerial_view_2014-11-21_02.jpg",
+        "source_statement_read": true,
+        "individual_rights_review_complete": false,
+        "worldwide_clearance_complete": false,
+        "attribution_plan": "Peter Rejcek / NSF; Blood Falls aerial view, 21 November 2014; via Wikimedia Commons."
+      },
+      "resolution_observed": {
+        "width": 6000,
+        "height": 4000,
+        "unit": "px",
+        "basis": "Source page original-file metadata confirmed in root's 2026-10-09 review; bytes not downloaded."
+      },
+      "planned_uses": [
+        {
+          "paragraph": 2,
+          "role": "Wider geographic view linking Taylor Glacier, the outflow and Lake Bonney.",
+          "required_label_el": "Taylor Glacier και Lake Bonney — αρχειακή αεροφωτογραφία"
+        }
+      ],
+      "constraints": [
+        "Do not treat visible tents or researchers as the radar team mentioned later without specific evidence.",
+        "Do not infer exact subsurface routes from the surface photograph.",
+        "Verify the exact downloaded original and source provenance during acquisition."
+      ]
+    },
+    {
+      "asset_id": "tt_bloodfalls_scientific_figures",
+      "story_id": "tiktok-20261009-02-blood-falls-iron-brine",
+      "title": "A Multi-Technique Analysis of Surface Materials From Blood Falls, Antarctica — figure leads",
+      "lead_type": "ARTICLE_FIGURE_COLLECTION",
+      "status": "ARTICLE_AND_FIGURE_LEADS_IDENTIFIED_NOT_ACQUIRED",
+      "source_page_url": "https://www.frontiersin.org/journals/astronomy-and-space-sciences/articles/10.3389/fspas.2022.843174/full",
+      "observed_date": "2026-10-09",
+      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
+      "direct_download_url": null,
+      "download_url_status": "NOT_RESOLVED_OR_FETCHED",
+      "local_media_path": null,
+      "download_sha256": null,
+      "original_file_bytes_verified": false,
+      "scene_assignment_final": false,
+      "downloaded": false,
+      "visual_qa_complete": false,
+      "vertical_crop_qa_complete": false,
+      "rights_complete": false,
+      "attribution_complete": false,
+      "scene_set_complete": false,
+      "audio_generated": false,
+      "final_video_rendered": false,
+      "final_media_qa_complete": false,
+      "release_lease_acquired": false,
+      "release_authorized": false,
+      "scheduled": false,
+      "published": false,
+      "publishable": false,
+      "source_file_id": null,
+      "provenance": {
+        "repository": "Frontiers in Astronomy and Space Sciences",
+        "authors": [
+          "Elizabeth C. Sklute",
+          "Jill A. Mikucki",
+          "M. Darby Dyar",
+          "Peter A. Lee",
+          "Ken J. T. Livi",
+          "Sarina Mitchell"
+        ],
+        "publication_date": "2022-05-30",
+        "doi": "10.3389/fspas.2022.843174",
+        "source_description": "Original research article containing actual site/sample photographs and electron microscopy; this entry is a source lead, not one acquired media file."
+      },
+      "license": {
+        "label_observed": "Creative Commons Attribution License (CC BY)",
+        "code": "CC-BY-VERSION-UNVERIFIED",
+        "version": null,
+        "license_url": null,
+        "evidence_url": "https://www.frontiersin.org/journals/astronomy-and-space-sciences/articles/10.3389/fspas.2022.843174/full",
+        "source_statement_read": true,
+        "exact_license_link_resolved": false,
+        "individual_rights_review_complete": false,
+        "worldwide_clearance_complete": false,
+        "unresolved": "The article explicitly states CC BY, but the exact license-link click failed. Verify the deed/version and any figure-specific third-party exceptions before use.",
+        "attribution_plan": "Sklute et al. (2022), doi:10.3389/fspas.2022.843174; cite exact figure/panel, license and changes."
+      },
+      "resolution_observed": null,
+      "component_leads": [
+        {
+          "component_id": "figure_1_site_and_samples",
+          "figure": "1",
+          "panels": "A-F",
+          "description": "Actual Blood Falls outflow fan and varied collected materials; choose the precise panel after visual review.",
+          "download_url": null,
+          "resolution_observed": null,
+          "downloaded": false,
+          "visual_qa_complete": false,
+          "vertical_crop_qa_complete": false,
+          "rights_complete": false,
+          "attribution_complete": false,
+          "scene_set_complete": false,
+          "audio_generated": false,
+          "final_video_rendered": false,
+          "final_media_qa_complete": false,
+          "release_lease_acquired": false,
+          "release_authorized": false,
+          "scheduled": false,
+          "published": false,
+          "publishable": false
+        },
+        {
+          "component_id": "figure_10c_nanoparticles",
+          "figure": "10",
+          "panels": "C",
+          "description": "Real electron micrograph of amorphous iron-rich nanospheres attached to an aragonite crystal.",
+          "download_url": null,
+          "resolution_observed": null,
+          "downloaded": false,
+          "visual_qa_complete": false,
+          "vertical_crop_qa_complete": false,
+          "rights_complete": false,
+          "attribution_complete": false,
+          "scene_set_complete": false,
+          "audio_generated": false,
+          "final_video_rendered": false,
+          "final_media_qa_complete": false,
+          "release_lease_acquired": false,
+          "release_authorized": false,
+          "scheduled": false,
+          "published": false,
+          "publishable": false
+        },
+        {
+          "component_id": "figure_10d_amorphous_structure",
+          "figure": "10",
+          "panels": "D",
+          "description": "HRTEM image of one amorphous iron-rich nanosphere with no lattice fringes.",
+          "download_url": null,
+          "resolution_observed": null,
+          "downloaded": false,
+          "visual_qa_complete": false,
+          "vertical_crop_qa_complete": false,
+          "rights_complete": false,
+          "attribution_complete": false,
+          "scene_set_complete": false,
+          "audio_generated": false,
+          "final_video_rendered": false,
+          "final_media_qa_complete": false,
+          "release_lease_acquired": false,
+          "release_authorized": false,
+          "scheduled": false,
+          "published": false,
+          "publishable": false
+        }
+      ],
+      "planned_uses": [
+        {
+          "paragraph": 3,
+          "component_id": "figure_1_site_and_samples",
+          "role": "Actual red deposits or sample material relevant to the chemical explanation; exact panel remains unselected.",
+          "required_label_el": "Δείγματα από το Blood Falls"
+        },
+        {
+          "paragraph": 4,
+          "component_id": "figure_10c_nanoparticles",
+          "role": "Actual microscopy for the iron-rich nanosphere explanation.",
+          "required_label_el": "Πραγματική μικρογραφία — Sklute και συν., 2022"
+        },
+        {
+          "paragraph": 5,
+          "component_id": "figure_10d_amorphous_structure",
+          "role": "Actual HRTEM evidence for amorphous structure.",
+          "required_label_el": "Άμορφο νανοσωματίδιο πλούσιο σε σίδηρο"
+        }
+      ],
+      "constraints": [
+        "This article lead must resolve into separate selected, rights-checked image components before any scene is marked acquired.",
+        "Preserve scale bars, scientific panel meaning, and accurate captions.",
+        "Do not relabel microscopy as a macroscopic photograph or invent molecules with an image generator.",
+        "Do not use electron-beam-damaged crystalline panels from Figure 11 as evidence of the original amorphous state.",
+        "The paper's date is 2022; the Johns Hopkins news story describing it is from 2023."
+      ]
+    },
+    {
+      "asset_id": "yt_glass_ice_cc0",
+      "story_id": "youtube-20261009-01-floating-ice",
+      "title": "Bermuda (UK) photos number 41 glass of water with straw and ice and lemon.jpg",
+      "lead_type": "EXISTING_IMAGE_FILE",
+      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Bermuda_(UK)_photos_number_41_glass_of_water_with_straw_and_ice_and_lemon.jpg",
+      "observed_date": "2026-10-09",
+      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
+      "direct_download_url": null,
+      "download_url_status": "NOT_RESOLVED_OR_FETCHED",
+      "local_media_path": null,
+      "download_sha256": null,
+      "original_file_bytes_verified": false,
+      "scene_assignment_final": false,
+      "downloaded": false,
+      "visual_qa_complete": false,
+      "vertical_crop_qa_complete": false,
+      "rights_complete": false,
+      "attribution_complete": false,
+      "scene_set_complete": false,
+      "audio_generated": false,
+      "final_video_rendered": false,
+      "final_media_qa_complete": false,
+      "release_lease_acquired": false,
+      "release_authorized": false,
+      "scheduled": false,
+      "published": false,
+      "publishable": false,
+      "source_file_id": "Bermuda_(UK)_photos_number_41_glass_of_water_with_straw_and_ice_and_lemon.jpg",
+      "provenance": {
+        "repository": "Wikimedia Commons",
+        "creator": "Tomwsulcer",
+        "source_description": "Own photograph of a glass of water with ice, lemon and a straw.",
+        "photograph_date": "2016-11-18"
+      },
+      "license": {
+        "label_observed": "CC0 1.0 Universal Public Domain Dedication",
+        "code": "CC0-1.0",
+        "version": "1.0",
+        "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Bermuda_(UK)_photos_number_41_glass_of_water_with_straw_and_ice_and_lemon.jpg",
+        "source_statement_read": true,
+        "individual_rights_review_complete": false,
+        "worldwide_clearance_complete": false,
+        "attribution_plan": "Tomwsulcer / Wikimedia Commons, CC0 1.0; document any crop."
+      },
+      "resolution_observed": {
+        "width": 1521,
+        "height": 1817,
+        "unit": "px",
+        "basis": "Source page original-file metadata; bytes not downloaded."
+      },
+      "planned_uses": [
+        {
+          "paragraph": 1,
+          "role": "Everyday example of ice in a glass of water.",
+          "required_label_el": null
+        }
+      ],
+      "constraints": [
+        "Visually confirm the ice, water surface and framing make the buoyancy explanation intelligible.",
+        "The glass also contains lemon and a straw; do not present it as a controlled pure-water laboratory experiment.",
+        "This file's resolution and composition still need a 9:16 crop review.",
+        "Do not reuse it for the final scene while counting it as a second distinct image."
+      ]
+    },
+    {
+      "asset_id": "yt_beaufort_floating_ice",
+      "story_id": "youtube-20261009-01-floating-ice",
+      "title": "Ice floating in the Beaufort Sea, Alaska",
+      "lead_type": "EXISTING_IMAGE_FILE",
+      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "source_page_url": "https://www.usgs.gov/media/images/ice-floating-beaufort-sea-alaska",
+      "observed_date": "2026-10-09",
+      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
+      "direct_download_url": null,
+      "download_url_status": "NOT_RESOLVED_OR_FETCHED",
+      "local_media_path": null,
+      "download_sha256": null,
+      "original_file_bytes_verified": false,
+      "scene_assignment_final": false,
+      "downloaded": false,
+      "visual_qa_complete": false,
+      "vertical_crop_qa_complete": false,
+      "rights_complete": false,
+      "attribution_complete": false,
+      "scene_set_complete": false,
+      "audio_generated": false,
+      "final_video_rendered": false,
+      "final_media_qa_complete": false,
+      "release_lease_acquired": false,
+      "release_authorized": false,
+      "scheduled": false,
+      "published": false,
+      "publishable": false,
+      "source_file_id": "usgs-media-images-ice-floating-beaufort-sea-alaska",
+      "provenance": {
+        "repository": "U.S. Geological Survey",
+        "creator": "Ashley Stanek",
+        "credited_institution": "U.S. Geological Survey",
+        "source_description": "Real ice floating in the Beaufort Sea, Alaska.",
+        "page_date": "2021-07-23",
+        "photograph_date": null
+      },
+      "license": {
+        "label_observed": "Public Domain",
+        "code": "PUBLIC-DOMAIN-SOURCE-STATEMENT",
+        "version": null,
+        "license_url": null,
+        "evidence_url": "https://www.usgs.gov/media/images/ice-floating-beaufort-sea-alaska",
+        "source_statement_read": true,
+        "individual_rights_review_complete": false,
+        "worldwide_clearance_complete": false,
+        "attribution_plan": "Ashley Stanek / U.S. Geological Survey; Ice floating in the Beaufort Sea, Alaska; Public Domain."
+      },
+      "evidence_refresh": {
+        "earlier_agent_read": "SUCCESS_SOURCE_AND_USAGE_TEXT_READ",
+        "root_refresh": "INTERNAL_FETCH_ERROR",
+        "root_reverification_complete": false,
+        "acquisition_refresh_required": true
+      },
+      "resolution_observed": null,
+      "planned_uses": [
+        {
+          "paragraph": 5,
+          "role": "General floating-ice example, conditional on the selected view supporting the intended explanation.",
+          "required_label_el": "Πάγος στη Θάλασσα Μποφόρ, Αλάσκα"
+        }
+      ],
+      "constraints": [
+        "Use as sea-ice context, not as a freshwater-lake image.",
+        "Do not claim the submerged fraction is visibly demonstrated unless the actual photograph supports it.",
+        "Acquire a separate suitable freshwater-lake image for paragraphs 7-8.",
+        "Refresh the source and original media metadata during acquisition; later root fetch errors did not erase the earlier successful page read."
+      ]
+    }
+  ],
+  "rejected_or_unselected_leads": [
+    {
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Glass_of_water_with_ice_cubes.JPG",
+      "status": "REJECTED_INSUFFICIENT_SOURCE_RESOLUTION",
+      "resolution_observed": {
+        "width": 170,
+        "height": 299,
+        "unit": "px"
+      },
+      "reason": "Not suitable as the normal full-screen scene source.",
+      "downloaded": false,
+      "visual_qa_complete": false,
+      "rights_complete": false,
+      "release_authorized": false
+    },
+    {
+      "source_page_url": "https://www.usgs.gov/media/images/heavy-ice",
+      "status": "UNSELECTED_DIFFERENT_SCIENTIFIC_SUBJECT",
+      "reason": "Heavy-water ice can sink; using this as an ordinary-ice example risks contradicting the current script.",
+      "downloaded": false,
+      "visual_qa_complete": false,
+      "rights_complete": false,
+      "release_authorized": false
+    }
+  ]
+}
