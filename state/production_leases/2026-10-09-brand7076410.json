@@ -2,235 +2,59 @@
   "date": "2026-10-09",
   "brandId": 7076410,
   "brandName": "Ιστορίες που μας αγγίζουν",
-  "owner": "nisyros-photo-import-20261009T093617Z",
-  "created_at": "2026-10-09T09:36:17Z",
-  "updated_at": "2026-10-09T10:14:34Z",
-  "expires_at": "2026-10-09T10:14:34Z",
-  "status": "COMPLETED_RELEASED",
-  "authorized_actions": [],
+  "owner": "interactive-recovery-20261009T121500Z-root",
+  "created_at": "2026-10-09T12:15:33.447Z",
+  "updated_at": "2026-10-09T12:15:33.447Z",
+  "expires_at": "2026-10-09T13:45:33.447Z",
+  "status": "ACTIVE",
+  "authorized_actions": [
+    "existing_sourcepack_continuation",
+    "zero_paid_credit_narration",
+    "local_render",
+    "exact_final_review"
+  ],
   "story_binding": {
     "job_id": "2026-10-09-instagram-01",
     "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
     "fingerprint": "documented_topic|nisyros_stefanos_hydrothermal",
-    "story_sha256": "d4e6dc30c9c3b28fc8e2b0c72e2946f6efe422979be1bd1b2158f808ad1ec9f9",
     "script_sha256": "03abce7d47e612847b297b182032c705fc2bc45727a332ec990bd303c7055919",
-    "sourcepack_ref": "3a861c29085eaf229862ee40cc79a1ba3ba59538",
     "sourcepack_path": "production_20261009_platform_specific/manifest.json"
   },
-  "input_path": "media_jobs/current.json",
-  "input_sha256": "4deeeea5dc72c23911c6b91b15fe596bd797d3c9b910b3886e563271fdc5499c",
-  "batch_id": "4deeeea5dc72c239",
-  "asset_job_bindings": [
-    {
-      "job_id": "nisyros-20261009-scene-01-review",
-      "mode": "preview",
-      "asset_id": "ig_stefanos_north",
-      "source_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/33ad1815d7a03a3dfbca216449ee15a54c19c754/jobs/f2c822db2a95b253/nisyros-20261009-scene-01.jpg",
-      "expected_source_sha256": "9bd72bd5e60c545e4dc7bad0fd7bf0f1c05caf957101fc5a543eee0876865439"
-    },
-    {
-      "job_id": "nisyros-20261009-scene-02-review",
-      "mode": "preview",
-      "asset_id": "ig_nisyros_aerial_2009",
-      "source_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/33ad1815d7a03a3dfbca216449ee15a54c19c754/jobs/f2c822db2a95b253/nisyros-20261009-scene-02.jpg",
-      "expected_source_sha256": "180906305246567ccdc2a126f60eca0f7cdcbabac1b3d37b69ec5ac7fa848832"
-    },
-    {
-      "job_id": "nisyros-20261009-scene-03",
-      "mode": "image_jpeg_copy",
-      "asset_id": "ig_stefanos_vent_2009",
-      "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Nisyros_vulcan_mofetta_2.jpg",
-      "expected_source_sha256": null
-    },
-    {
-      "job_id": "nisyros-20261009-scene-04",
-      "mode": "image_jpeg_copy",
-      "asset_id": "ig_stefanos_southern_slope",
-      "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/The_southern_slope_of_the_Stefanos_crater._Nisyros%2C_Greece.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
-      "expected_source_sha256": null
-    },
-    {
-      "job_id": "nisyros-20261009-scene-05",
-      "mode": "image_jpeg_copy",
-      "asset_id": "ig_stefanos_fumarole",
-      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Fumarole_Nisyros.JPG?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
-      "expected_source_sha256": null
-    },
-    {
-      "job_id": "nisyros-20261009-scene-06",
-      "mode": "image_jpeg_copy",
-      "asset_id": "ig_stefanos_nikia",
-      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/View_of_the_Stefanos_Crater_from_Nikia._Nisyros%2C_Greece.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
-      "expected_source_sha256": null
-    },
-    {
-      "job_id": "nisyros-20261009-scene-07",
-      "mode": "image_jpeg_copy",
-      "asset_id": "ig_nisyros_agricultural_inland",
-      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Nisyros_inland_1.jpg",
-      "expected_source_sha256": null
-    },
-    {
-      "job_id": "nisyros-20261009-scene-08",
-      "mode": "image_jpeg_copy",
-      "asset_id": "ig_nisyros_nikia_crater_panorama",
-      "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Panoramic_view_southern_Nisyros%2C_Nikia_village_and_Crater.jpg",
-      "expected_source_sha256": null
-    }
-  ],
+  "prior_completed_lease": {
+    "blob_sha": "3e19b5e1d78bc944afdcce2ea9fc1e6d0816670f",
+    "status": "COMPLETED_RELEASED",
+    "all_historical_details_preserved_in_git": true
+  },
+  "request_scope": {
+    "at_local": "2026-10-09T15:04:17+03:00",
+    "daily_target_per_platform": 10,
+    "platforms": [
+      "facebook",
+      "instagram",
+      "tiktok",
+      "youtube"
+    ],
+    "no_duplicate_stories": true,
+    "zero_paid_credit_budget": true,
+    "exact_voice": "el-GR-NestorasNeural"
+  },
+  "execution_scope": "One ordinary narration request for the existing Nisyros story using the publicly available Microsoft Edge voice service without an account/billing key, then local rendering. No automatic retry or paid fallback. This does not alter canonical automated production flags.",
+  "preflight": {
+    "metricool_read_complete_at": "2026-10-09T12:14:35Z",
+    "metricool_day_reads": 42,
+    "metricool_records": 265,
+    "metricool_today_records": 0,
+    "notion_records_last_full_read": 202,
+    "notion_read_at": "2026-10-09T12:07:04Z",
+    "exact_voice_list_verified": true,
+    "tls_certificate_verification_enabled": true,
+    "paid_account_credentials_used": false,
+    "final_production_preflight_pending_target_notion_refresh": true
+  },
   "final_review": "NOT_PERFORMED",
+  "actual_audio_listened": false,
   "publish_to_social": false,
-  "canonical_production_gates_enabled": false,
-  "prior_lease": {
-    "commit_ref": "3a861c29085eaf229862ee40cc79a1ba3ba59538",
-    "blob_sha": "67348215b3cb7bf4c27e6b307ed97617c0f8ebc1",
-    "expired_at": "2026-10-08T09:30:00Z",
-    "note": "Expired historical common-program state retained in immutable Git history. Its historical final-review claim is not inherited by this new asset import."
-  },
-  "manual_preflight": {
-    "decision": "CLEAR_FOR_SCOPED_RESUMPTION_OF_SIX_FAILED_IMPORTS_AND_TWO_EXISTING_COPY_PREVIEWS_ONLY",
-    "reviewer": "nisyros-photo-import-20261009T093617Z",
-    "semantic_checked_at": "2026-10-09T09:54:06Z",
-    "same_existing_sourcepack_continuation": true,
-    "history_reads_succeeded": [
-      "metricool",
-      "notion_active_and_archived",
-      "pinned_repository_history_and_sourcepack",
-      "repository_leases"
-    ],
-    "metricool_checked_at": "2026-10-09T09:28:47.269Z",
-    "metricool_records_sha256": "def1a9cbead0a23d1dcc968f1a024f4839d2ceaf95790faf13563cf59ef325b2",
-    "notion_repository_checked_at": "2026-10-09T09:30:05Z",
-    "private_notion_repository_readset_sha256": "6d1d69083ed16ef1fe8e6172fe9c51e7a72dd0cab09b3b62ed9140ce44980b8f",
-    "conflicting_target_story_found": false,
-    "known_same_original_filename_found": false,
-    "media_novelty_limit": "Metricool rewrites original filenames; absence of source-name matches is not a full historic media-byte or visual identity proof. Target-topic history and current sourcepack acquisition state were also reviewed.",
-    "lease_path": "state/production_leases/2026-10-09-brand7076410.json",
-    "lease_owner": "nisyros-photo-import-20261009T093617Z",
-    "lease_must_be_claimed_and_read_back_before_dispatch": true,
-    "authorized_actions": [
-      "asset_import",
-      "asset_review_previews"
-    ],
-    "canonical_production_preflight_passed": false,
-    "enforcement_note": "This is a root-reviewed asset-import authorization and external CAS lease binding. The existing image copier does not implement canonical production preflight or enforce this metadata; no production gate is enabled.",
-    "known_existing_acquisitions": [
-      {
-        "job_id": "nisyros-20261009-scene-01",
-        "output_commit": "33ad1815d7a03a3dfbca216449ee15a54c19c754",
-        "files": [
-          {
-            "name": "nisyros-20261009-scene-01-qa.png",
-            "bytes": 15510,
-            "sha256": "84bb769a8dd02448fb36bf223c4ad69e5873fba62efaf33a8abf0a3cc9103dab"
-          },
-          {
-            "name": "nisyros-20261009-scene-01.jpg",
-            "bytes": 20839670,
-            "sha256": "9bd72bd5e60c545e4dc7bad0fd7bf0f1c05caf957101fc5a543eee0876865439"
-          }
-        ]
-      },
-      {
-        "job_id": "nisyros-20261009-scene-02",
-        "output_commit": "33ad1815d7a03a3dfbca216449ee15a54c19c754",
-        "files": [
-          {
-            "name": "nisyros-20261009-scene-02-qa.png",
-            "bytes": 5403,
-            "sha256": "19842028057c48c43ebe09c9bc26290417995a4432edc7223309e4fdf64d5225"
-          },
-          {
-            "name": "nisyros-20261009-scene-02.jpg",
-            "bytes": 1643777,
-            "sha256": "180906305246567ccdc2a126f60eca0f7cdcbabac1b3d37b69ec5ac7fa848832"
-          }
-        ]
-      }
-    ],
-    "duplicate_handling": "The two acquired photographs are not imported again from Wikimedia and are not counted as new photos. Their review derivatives bind the exact acquired-copy SHA256. The six failed source jobs had no surviving imported media and are explicitly resumed under the same existing story.",
-    "repository_delta_review": {
-      "base_ref": "3a861c29085eaf229862ee40cc79a1ba3ba59538",
-      "known_root_writes": [
-        "state/production_leases/2026-10-09-brand7076410.json",
-        "media_jobs/current.json",
-        "tools/render_media.py"
-      ],
-      "initial_import_report_and_exact_source_manifest_read_back": true,
-      "latest_source_code_commit": "43c38cf3193bc00b624a8fad500b9e6d47cf728e",
-      "canonical_story_and_script_unchanged": true
-    }
-  },
-  "prior_batches": [
-    {
-      "input_sha256": "f2c822db2a95b253847f7777bd8ccfc9ffb0d90525ae7858e055415b6ffd6811",
-      "batch_id": "f2c822db2a95b253",
-      "workflow_run_id": 37912424036,
-      "output_commit": "33ad1815d7a03a3dfbca216449ee15a54c19c754",
-      "report_path": "jobs/f2c822db2a95b253/manifest.json",
-      "successful_source_imports": 2,
-      "failed_source_imports": 6,
-      "successes_are_preserved_and_not_redownloaded_from_original_source": true
-    }
-  ],
-  "code_repair": {
-    "commit_sha": "43c38cf3193bc00b624a8fad500b9e6d47cf728e",
-    "blob_sha": "240b60878d3a234125cf8e7a7bad6b99d2202379",
-    "path": "tools/render_media.py",
-    "file_sha256": "2d072c91ee44c298a7e556d926d602ccdf12e5c7877398bcb98ed7d590e17960",
-    "readback_verified": true,
-    "offline_tests_passed": 20,
-    "real_source_calls_in_validation": 0,
-    "paid_services_called": 0
-  },
-  "completed_at": "2026-10-09T10:14:34Z",
-  "released_at": "2026-10-09T10:14:34Z",
-  "authorized_until_before_release": "2026-10-09T10:54:06Z",
-  "completed_authorized_actions": [
-    "asset_import",
-    "asset_review_previews"
-  ],
-  "execution_completed_at": "2026-10-09T09:59:16Z",
-  "source_preview_review_completed_at": "2026-10-09T10:00:56Z",
-  "post_import_canonical_binding": {
-    "import_story_sha256": "d4e6dc30c9c3b28fc8e2b0c72e2946f6efe422979be1bd1b2158f808ad1ec9f9",
-    "current_story_sha256": "048d6fe541ceeb96c743d0431a483d75f7a64069da050649c94eedd06a41448e",
-    "script_sha256": "03abce7d47e612847b297b182032c705fc2bc45727a332ec990bd303c7055919",
-    "script_unchanged": true,
-    "reason": "Replace unrealized AI-image scene instructions and draft disclosure with eight actually acquired archive photographs; preserve narration, identity, source facts and unscheduled editorial slot.",
-    "prior_import_preflight_is_historical_only": true,
-    "fresh_complete_semantic_media_history_preflight_required_before_synthesis_render_or_release": true,
-    "current_canonical_production_preflight_passed": false,
-    "manifest_commit": "13bdc4591c800bd752d67ec003c0d9d3dde1bfe6",
-    "manifest_blob": "40e118a89ee17d4e8785de6bdce2e38497acc4c7",
-    "catalog_commit": "4cdf57cc311e50ff1467dce3df907dab8821344d",
-    "catalog_blob": "c5640d69510ac1d89f9dc78b3da70a9442db8603"
-  },
-  "historical_binding_note": "story_binding, input_sha256 and manual_preflight identify the original executed import only. The later archival caption correction is separately bound and has no inherited production or release clearance.",
-  "retired_input": {
-    "path": "media_jobs/current.json",
-    "commit_sha": "ea76a4ceafcf653315636cf01fd33c051c3f8f69",
-    "blob_sha": "caa825981e3a17425a056feb36e01aadc8e475bf",
-    "approved": false,
-    "executable_jobs": 0,
-    "readback_verified": true
-  },
-  "completion_summary": {
-    "unique_photographs_acquired": 8,
-    "full_color_source_previews_actually_reviewed": 8,
-    "local_preview_sha256_verifications": 8,
-    "source_original_bytes_verified": false,
-    "new_audio_files": 0,
-    "new_final_videos": 0,
-    "new_scheduled_posts": 0,
-    "new_published_posts": 0,
-    "paid_generation_or_research_credits_used": 0,
-    "final_review": "NOT_PERFORMED",
-    "final_rights_complete": false,
-    "final_vertical_framing_complete": false
-  },
-  "acquisition_record": {
-    "path": "production_20261009_platform_specific/nisyros_photo_acquisition_20261009.json",
-    "commit_sha": "f45cda0f3be09cf5535f0faf01367299fa626460"
-  }
+  "synthesis_attempts": 0,
+  "final_videos": 0,
+  "new_scheduled_posts": 0
 }
