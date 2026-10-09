@@ -4,13 +4,10 @@
   "brandName": "Ιστορίες που μας αγγίζουν",
   "owner": "nisyros-photo-import-20261009T093617Z",
   "created_at": "2026-10-09T09:36:17Z",
-  "updated_at": "2026-10-09T09:54:06Z",
-  "expires_at": "2026-10-09T10:54:06Z",
-  "status": "ACTIVE",
-  "authorized_actions": [
-    "asset_import",
-    "asset_review_previews"
-  ],
+  "updated_at": "2026-10-09T10:14:34Z",
+  "expires_at": "2026-10-09T10:14:34Z",
+  "status": "COMPLETED_RELEASED",
+  "authorized_actions": [],
   "story_binding": {
     "job_id": "2026-10-09-instagram-01",
     "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
@@ -185,5 +182,55 @@
     "offline_tests_passed": 20,
     "real_source_calls_in_validation": 0,
     "paid_services_called": 0
+  },
+  "completed_at": "2026-10-09T10:14:34Z",
+  "released_at": "2026-10-09T10:14:34Z",
+  "authorized_until_before_release": "2026-10-09T10:54:06Z",
+  "completed_authorized_actions": [
+    "asset_import",
+    "asset_review_previews"
+  ],
+  "execution_completed_at": "2026-10-09T09:59:16Z",
+  "source_preview_review_completed_at": "2026-10-09T10:00:56Z",
+  "post_import_canonical_binding": {
+    "import_story_sha256": "d4e6dc30c9c3b28fc8e2b0c72e2946f6efe422979be1bd1b2158f808ad1ec9f9",
+    "current_story_sha256": "048d6fe541ceeb96c743d0431a483d75f7a64069da050649c94eedd06a41448e",
+    "script_sha256": "03abce7d47e612847b297b182032c705fc2bc45727a332ec990bd303c7055919",
+    "script_unchanged": true,
+    "reason": "Replace unrealized AI-image scene instructions and draft disclosure with eight actually acquired archive photographs; preserve narration, identity, source facts and unscheduled editorial slot.",
+    "prior_import_preflight_is_historical_only": true,
+    "fresh_complete_semantic_media_history_preflight_required_before_synthesis_render_or_release": true,
+    "current_canonical_production_preflight_passed": false,
+    "manifest_commit": "13bdc4591c800bd752d67ec003c0d9d3dde1bfe6",
+    "manifest_blob": "40e118a89ee17d4e8785de6bdce2e38497acc4c7",
+    "catalog_commit": "4cdf57cc311e50ff1467dce3df907dab8821344d",
+    "catalog_blob": "c5640d69510ac1d89f9dc78b3da70a9442db8603"
+  },
+  "historical_binding_note": "story_binding, input_sha256 and manual_preflight identify the original executed import only. The later archival caption correction is separately bound and has no inherited production or release clearance.",
+  "retired_input": {
+    "path": "media_jobs/current.json",
+    "commit_sha": "ea76a4ceafcf653315636cf01fd33c051c3f8f69",
+    "blob_sha": "caa825981e3a17425a056feb36e01aadc8e475bf",
+    "approved": false,
+    "executable_jobs": 0,
+    "readback_verified": true
+  },
+  "completion_summary": {
+    "unique_photographs_acquired": 8,
+    "full_color_source_previews_actually_reviewed": 8,
+    "local_preview_sha256_verifications": 8,
+    "source_original_bytes_verified": false,
+    "new_audio_files": 0,
+    "new_final_videos": 0,
+    "new_scheduled_posts": 0,
+    "new_published_posts": 0,
+    "paid_generation_or_research_credits_used": 0,
+    "final_review": "NOT_PERFORMED",
+    "final_rights_complete": false,
+    "final_vertical_framing_complete": false
+  },
+  "acquisition_record": {
+    "path": "production_20261009_platform_specific/nisyros_photo_acquisition_20261009.json",
+    "commit_sha": "f45cda0f3be09cf5535f0faf01367299fa626460"
   }
 }
