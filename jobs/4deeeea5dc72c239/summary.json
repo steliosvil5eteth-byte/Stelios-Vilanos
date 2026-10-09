@@ -1,0 +1,78 @@
+{
+  "batch_id": "4deeeea5dc72c239",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "nisyros-20261009-scene-01-review",
+      "status": "rendered",
+      "card_count": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "youtube_music_embedded": null,
+      "error": null
+    },
+    {
+      "id": "nisyros-20261009-scene-02-review",
+      "status": "rendered",
+      "card_count": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "youtube_music_embedded": null,
+      "error": null
+    },
+    {
+      "id": "nisyros-20261009-scene-03",
+      "status": "rendered",
+      "card_count": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "youtube_music_embedded": null,
+      "error": null
+    },
+    {
+      "id": "nisyros-20261009-scene-04",
+      "status": "rendered",
+      "card_count": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "youtube_music_embedded": null,
+      "error": null
+    },
+    {
+      "id": "nisyros-20261009-scene-05",
+      "status": "rendered",
+      "card_count": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "youtube_music_embedded": null,
+      "error": null
+    },
+    {
+      "id": "nisyros-20261009-scene-06",
+      "status": "rendered",
+      "card_count": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "youtube_music_embedded": null,
+      "error": null
+    },
+    {
+      "id": "nisyros-20261009-scene-07",
+      "status": "rendered",
+      "card_count": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "youtube_music_embedded": null,
+      "error": null
+    },
+    {
+      "id": "nisyros-20261009-scene-08",
+      "status": "rendered",
+      "card_count": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "youtube_music_embedded": null,
+      "error": null
+    }
+  ]
+}

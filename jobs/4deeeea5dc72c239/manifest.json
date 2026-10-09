@@ -1,0 +1,574 @@
+{
+  "batch_sha256": "4deeeea5dc72c23911c6b91b15fe596bd797d3c9b910b3886e563271fdc5499c",
+  "batch_id": "4deeeea5dc72c239",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "nisyros-20261009-scene-01-review",
+      "mode": "preview",
+      "status": "rendered",
+      "source_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/33ad1815d7a03a3dfbca216449ee15a54c19c754/jobs/f2c822db2a95b253/nisyros-20261009-scene-01.jpg",
+      "attribution": "View_of_the_Stefanos_crater_from_the_north._Nisyros,_Greece.jpg — Ввласенко / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:View_of_the_Stefanos_crater_from_the_north._Nisyros,_Greece.jpg. License: CC-BY-SA-3.0; https://creativecommons.org/licenses/by-sa/3.0. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job. This preview job additionally resizes the already acquired copy to a full-color JPEG review image, maximum edge 1600 pixels; source-image license remains unchanged.",
+      "title": "View_of_the_Stefanos_crater_from_the_north._Nisyros,_Greece.jpg",
+      "text": null,
+      "verified_source_sha256": "9bd72bd5e60c545e4dc7bad0fd7bf0f1c05caf957101fc5a543eee0876865439",
+      "files": [
+        {
+          "name": "nisyros-20261009-scene-01-review-detail.jpg",
+          "bytes": 679699,
+          "sha256": "f53b63070d8f9d650bc46f9a9d7509207374b1d57b5692f8c253405e76c4ade4"
+        },
+        {
+          "name": "nisyros-20261009-scene-01-review.png",
+          "bytes": 15510,
+          "sha256": "84bb769a8dd02448fb36bf223c4ad69e5873fba62efaf33a8abf0a3cc9103dab"
+        }
+      ],
+      "download_events": [
+        {
+          "at_utc": "2026-10-09T09:54:53.375225+00:00",
+          "decision": "source_request_started",
+          "source_host": "raw.githubusercontent.com",
+          "attempt": 1,
+          "redirect": false
+        },
+        {
+          "at_utc": "2026-10-09T09:54:54.030234+00:00",
+          "decision": "source_download_completed",
+          "source_host": "raw.githubusercontent.com",
+          "attempt": 1,
+          "bytes": 20839670
+        }
+      ]
+    },
+    {
+      "id": "nisyros-20261009-scene-02-review",
+      "mode": "preview",
+      "status": "rendered",
+      "source_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/33ad1815d7a03a3dfbca216449ee15a54c19c754/jobs/f2c822db2a95b253/nisyros-20261009-scene-02.jpg",
+      "attribution": "Nisyros_air_1.jpg — Karelj / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:Nisyros_air_1.jpg. License: Public-domain release by the author, worldwide (PD-self); grant documented on the source page.. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job. This preview job additionally resizes the already acquired copy to a full-color JPEG review image, maximum edge 1600 pixels; source-image license remains unchanged.",
+      "title": "Nisyros_air_1.jpg",
+      "text": null,
+      "verified_source_sha256": "180906305246567ccdc2a126f60eca0f7cdcbabac1b3d37b69ec5ac7fa848832",
+      "files": [
+        {
+          "name": "nisyros-20261009-scene-02-review-detail.jpg",
+          "bytes": 273872,
+          "sha256": "76a5a0ec60085c0eca08d591f14fa83a3c83501ecff09f65d3bb3210bb9bdf6a"
+        },
+        {
+          "name": "nisyros-20261009-scene-02-review.png",
+          "bytes": 5403,
+          "sha256": "19842028057c48c43ebe09c9bc26290417995a4432edc7223309e4fdf64d5225"
+        }
+      ],
+      "download_events": [
+        {
+          "at_utc": "2026-10-09T09:54:54.653425+00:00",
+          "decision": "source_request_started",
+          "source_host": "raw.githubusercontent.com",
+          "attempt": 1,
+          "redirect": false
+        },
+        {
+          "at_utc": "2026-10-09T09:54:55.120708+00:00",
+          "decision": "source_download_completed",
+          "source_host": "raw.githubusercontent.com",
+          "attempt": 1,
+          "bytes": 1643777
+        }
+      ]
+    },
+    {
+      "id": "nisyros-20261009-scene-03",
+      "mode": "image_jpeg_copy",
+      "status": "rendered",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Nisyros_vulcan_mofetta_2.jpg",
+      "attribution": "Nisyros_vulcan_mofetta_2.jpg — Karelj / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:Nisyros_vulcan_mofetta_2.jpg. License: Public-domain release by the author, worldwide (PD-self); grant documented on the source page.. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job. A full-color resized JPEG review image, maximum edge 1600 pixels, is also produced; source-image license remains unchanged.",
+      "title": "Nisyros_vulcan_mofetta_2.jpg",
+      "text": null,
+      "source_visual_preserved": true,
+      "narration": false,
+      "image_size": [
+        2400,
+        1600
+      ],
+      "files": [
+        {
+          "name": "nisyros-20261009-scene-03-qa-detail.jpg",
+          "bytes": 720822,
+          "sha256": "bca0ffdf9c95b7fdf3966109e5195533dda390e7abf4318a42786ea7aee330b2"
+        },
+        {
+          "name": "nisyros-20261009-scene-03-qa.png",
+          "bytes": 21788,
+          "sha256": "820f6afa83fe9a6c0e517ade780aeb295db85cdc8492dc1438a1007f63c3e09b"
+        },
+        {
+          "name": "nisyros-20261009-scene-03.jpg",
+          "bytes": 3384866,
+          "sha256": "289be12f78170a1431b90ff3c1c88ac02e8d54534358356003cade62ece8ca10"
+        }
+      ],
+      "download_events": [
+        {
+          "at_utc": "2026-10-09T09:54:55.250339+00:00",
+          "decision": "source_request_started",
+          "source_host": "upload.wikimedia.org",
+          "attempt": 1,
+          "redirect": false
+        },
+        {
+          "at_utc": "2026-10-09T09:54:55.622811+00:00",
+          "decision": "source_download_completed",
+          "source_host": "upload.wikimedia.org",
+          "attempt": 1,
+          "bytes": 4744315
+        }
+      ]
+    },
+    {
+      "id": "nisyros-20261009-scene-04",
+      "mode": "image_jpeg_copy",
+      "status": "rendered",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/The_southern_slope_of_the_Stefanos_crater._Nisyros%2C_Greece.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+      "attribution": "The_southern_slope_of_the_Stefanos_crater._Nisyros,_Greece.jpg — Ввласенко / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:The_southern_slope_of_the_Stefanos_crater._Nisyros,_Greece.jpg. License: CC-BY-SA-3.0; https://creativecommons.org/licenses/by-sa/3.0. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job. A full-color resized JPEG review image, maximum edge 1600 pixels, is also produced; source-image license remains unchanged.",
+      "title": "The_southern_slope_of_the_Stefanos_crater._Nisyros,_Greece.jpg",
+      "text": null,
+      "source_visual_preserved": true,
+      "narration": false,
+      "image_size": [
+        6016,
+        4016
+      ],
+      "files": [
+        {
+          "name": "nisyros-20261009-scene-04-qa-detail.jpg",
+          "bytes": 781374,
+          "sha256": "5bcf5c4dfa9c1207258f5a9506c42a50b23924fedd5e8edbee2e621abce25efa"
+        },
+        {
+          "name": "nisyros-20261009-scene-04-qa.png",
+          "bytes": 24598,
+          "sha256": "962a7a3c336d9ba92657db97f4492d1f06359e882ef8cb0d98053368bd25d4d6"
+        },
+        {
+          "name": "nisyros-20261009-scene-04.jpg",
+          "bytes": 18323460,
+          "sha256": "cf6bb13014c84d1b0f325924871605ef0386c89ea76d339919e5c73830c06cf0"
+        }
+      ],
+      "download_events": [
+        {
+          "at_utc": "2026-10-09T09:54:55.838739+00:00",
+          "decision": "wait_before_source_request",
+          "source_host": "upload.wikimedia.org",
+          "attempt": 1,
+          "wait_seconds": 29.412,
+          "not_before_utc": "2026-10-09T09:55:25.250350+00:00"
+        },
+        {
+          "at_utc": "2026-10-09T09:55:25.250446+00:00",
+          "decision": "source_request_started",
+          "source_host": "upload.wikimedia.org",
+          "attempt": 1,
+          "redirect": false
+        },
+        {
+          "at_utc": "2026-10-09T09:55:26.208157+00:00",
+          "decision": "source_download_completed",
+          "source_host": "upload.wikimedia.org",
+          "attempt": 1,
+          "bytes": 23705616
+        }
+      ]
+    },
+    {
+      "id": "nisyros-20261009-scene-05",
+      "mode": "image_jpeg_copy",
+      "status": "rendered",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Fumarole_Nisyros.JPG?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+      "attribution": "Fumarole_Nisyros.JPG — Dreizung / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:Fumarole_Nisyros.JPG. License: CC-BY-3.0; https://creativecommons.org/licenses/by/3.0. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job. A full-color resized JPEG review image, maximum edge 1600 pixels, is also produced; source-image license remains unchanged.",
+      "title": "Fumarole_Nisyros.JPG",
+      "text": null,
+      "source_visual_preserved": true,
+      "narration": false,
+      "image_size": [
+        4608,
+        3456
+      ],
+      "files": [
+        {
+          "name": "nisyros-20261009-scene-05-qa-detail.jpg",
+          "bytes": 759448,
+          "sha256": "d769dde5525ae5098d21b3b5f0ff111b0dd017e7076b1ed461cc3ddf39060689"
+        },
+        {
+          "name": "nisyros-20261009-scene-05-qa.png",
+          "bytes": 28693,
+          "sha256": "04979202f50c9482a134a8af56fe423775e73c3e2fb36eab7eb572c8057f6845"
+        },
+        {
+          "name": "nisyros-20261009-scene-05.jpg",
+          "bytes": 8375338,
+          "sha256": "14c07405823cf171ec3fb9b56cc44b002655202880cf4041c5d82696f205e032"
+        }
+      ],
+      "download_events": [
+        {
+          "at_utc": "2026-10-09T09:55:27.081269+00:00",
+          "decision": "wait_before_source_request",
+          "source_host": "upload.wikimedia.org",
+          "attempt": 1,
+          "wait_seconds": 28.169,
+          "not_before_utc": "2026-10-09T09:55:55.250453+00:00"
+        },
+        {
+          "at_utc": "2026-10-09T09:55:55.250567+00:00",
+          "decision": "source_request_started",
+          "source_host": "upload.wikimedia.org",
+          "attempt": 1,
+          "redirect": false
+        },
+        {
+          "at_utc": "2026-10-09T09:55:55.794358+00:00",
+          "decision": "source_download_completed",
+          "source_host": "upload.wikimedia.org",
+          "attempt": 1,
+          "bytes": 11064087
+        }
+      ]
+    },
+    {
+      "id": "nisyros-20261009-scene-06",
+      "mode": "image_jpeg_copy",
+      "status": "rendered",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/View_of_the_Stefanos_Crater_from_Nikia._Nisyros%2C_Greece.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+      "attribution": "View_of_the_Stefanos_Crater_from_Nikia._Nisyros,_Greece.jpg — Ввласенко / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:View_of_the_Stefanos_Crater_from_Nikia._Nisyros,_Greece.jpg. License: CC-BY-SA-3.0; https://creativecommons.org/licenses/by-sa/3.0. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job. A full-color resized JPEG review image, maximum edge 1600 pixels, is also produced; source-image license remains unchanged.",
+      "title": "View_of_the_Stefanos_Crater_from_Nikia._Nisyros,_Greece.jpg",
+      "text": null,
+      "source_visual_preserved": true,
+      "narration": false,
+      "image_size": [
+        5672,
+        3914
+      ],
+      "files": [
+        {
+          "name": "nisyros-20261009-scene-06-qa-detail.jpg",
+          "bytes": 630960,
+          "sha256": "ed708678cf6cb044999c60dc789fd8b796ed2fcab5d7b63682bf4b69132dcce9"
+        },
+        {
+          "name": "nisyros-20261009-scene-06-qa.png",
+          "bytes": 16066,
+          "sha256": "e320b997010adf708855852f8cc9aabe1e40960fb9bae7783216f20d9120f90c"
+        },
+        {
+          "name": "nisyros-20261009-scene-06.jpg",
+          "bytes": 19440249,
+          "sha256": "7aac7b16dc65567e7201af21f0d3fc61941d04548058f9855f205ea8e8f91024"
+        }
+      ],
+      "download_events": [
+        {
+          "at_utc": "2026-10-09T09:55:56.327706+00:00",
+          "decision": "wait_before_source_request",
+          "source_host": "upload.wikimedia.org",
+          "attempt": 1,
+          "wait_seconds": 28.923,
+          "not_before_utc": "2026-10-09T09:56:25.250568+00:00"
+        },
+        {
+          "at_utc": "2026-10-09T09:56:25.250707+00:00",
+          "decision": "source_request_started",
+          "source_host": "upload.wikimedia.org",
+          "attempt": 1,
+          "redirect": false
+        },
+        {
+          "at_utc": "2026-10-09T09:56:26.156893+00:00",
+          "decision": "source_download_completed",
+          "source_host": "upload.wikimedia.org",
+          "attempt": 1,
+          "bytes": 22445627
+        }
+      ]
+    },
+    {
+      "id": "nisyros-20261009-scene-07",
+      "mode": "image_jpeg_copy",
+      "status": "rendered",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Nisyros_inland_1.jpg",
+      "attribution": "Nisyros_inland_1.jpg — Karelj / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:Nisyros_inland_1.jpg. License: Public-domain release by the author, worldwide (PD-self); grant documented on the source page.. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job. A full-color resized JPEG review image, maximum edge 1600 pixels, is also produced; source-image license remains unchanged.",
+      "title": "Nisyros_inland_1.jpg",
+      "text": null,
+      "source_visual_preserved": true,
+      "narration": false,
+      "image_size": [
+        2400,
+        1547
+      ],
+      "files": [
+        {
+          "name": "nisyros-20261009-scene-07-qa-detail.jpg",
+          "bytes": 432369,
+          "sha256": "606f4444631fba2566a0fc99a5279cc48975c21aa8b4771b81f71934ee2b8cef"
+        },
+        {
+          "name": "nisyros-20261009-scene-07-qa.png",
+          "bytes": 13608,
+          "sha256": "4691b04029ff5235d1ec7f57dc3a398c0978fd1337bcf77f4bec5622615710e0"
+        },
+        {
+          "name": "nisyros-20261009-scene-07.jpg",
+          "bytes": 2088542,
+          "sha256": "c604fded28ae4d1bf1c7a228c8ecbcc9e1859b7d5329089fc138f3573eed847c"
+        }
+      ],
+      "download_events": [
+        {
+          "at_utc": "2026-10-09T09:56:27.029266+00:00",
+          "decision": "wait_before_source_request",
+          "source_host": "upload.wikimedia.org",
+          "attempt": 1,
+          "wait_seconds": 28.221,
+          "not_before_utc": "2026-10-09T09:56:55.250711+00:00"
+        },
+        {
+          "at_utc": "2026-10-09T09:56:55.250809+00:00",
+          "decision": "source_request_started",
+          "source_host": "upload.wikimedia.org",
+          "attempt": 1,
+          "redirect": false
+        },
+        {
+          "at_utc": "2026-10-09T09:56:55.560443+00:00",
+          "decision": "source_download_completed",
+          "source_host": "upload.wikimedia.org",
+          "attempt": 1,
+          "bytes": 3070320
+        }
+      ]
+    },
+    {
+      "id": "nisyros-20261009-scene-08",
+      "mode": "image_jpeg_copy",
+      "status": "rendered",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Panoramic_view_southern_Nisyros%2C_Nikia_village_and_Crater.jpg",
+      "attribution": "Panoramic_view_southern_Nisyros,_Nikia_village_and_Crater.jpg — Alexios Emmanuel Panagiotopoulos (Isandros) / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:Panoramic_view_southern_Nisyros,_Nikia_village_and_Crater.jpg. License: CC-BY-SA-4.0; https://creativecommons.org/licenses/by-sa/4.0. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job. A full-color resized JPEG review image, maximum edge 1600 pixels, is also produced; source-image license remains unchanged.",
+      "title": "Panoramic_view_southern_Nisyros,_Nikia_village_and_Crater.jpg",
+      "text": null,
+      "source_visual_preserved": true,
+      "narration": false,
+      "image_size": [
+        5090,
+        1764
+      ],
+      "files": [
+        {
+          "name": "nisyros-20261009-scene-08-qa-detail.jpg",
+          "bytes": 257547,
+          "sha256": "b4636c178130c5f9d2ba0b60d7615c20a38ab40dd4913f85e3f50ad65e3da07b"
+        },
+        {
+          "name": "nisyros-20261009-scene-08-qa.png",
+          "bytes": 7109,
+          "sha256": "ab4806ca184f1838cd64a72f96d830a1a46088711e076dcf41d21dea01028ed7"
+        },
+        {
+          "name": "nisyros-20261009-scene-08.jpg",
+          "bytes": 2778774,
+          "sha256": "2b135bdd941bca2b026d9990e4b9e940b1d71cee9813aa4076883d52b914ec3f"
+        }
+      ],
+      "download_events": [
+        {
+          "at_utc": "2026-10-09T09:56:55.722950+00:00",
+          "decision": "wait_before_source_request",
+          "source_host": "upload.wikimedia.org",
+          "attempt": 1,
+          "wait_seconds": 29.528,
+          "not_before_utc": "2026-10-09T09:57:25.250811+00:00"
+        },
+        {
+          "at_utc": "2026-10-09T09:57:25.250906+00:00",
+          "decision": "source_request_started",
+          "source_host": "upload.wikimedia.org",
+          "attempt": 1,
+          "redirect": false
+        },
+        {
+          "at_utc": "2026-10-09T09:57:25.532408+00:00",
+          "decision": "source_download_completed",
+          "source_host": "upload.wikimedia.org",
+          "attempt": 1,
+          "bytes": 1769667
+        }
+      ]
+    }
+  ],
+  "download_policy": {
+    "wikimedia_minimum_interval_seconds": 30.0,
+    "default_429_cooldown_seconds": 60.0,
+    "maximum_retry_after_seconds": 300.0,
+    "maximum_retries": 1,
+    "batch_429_count": 0,
+    "source_requests_stopped": false,
+    "stop_reason": null,
+    "events": [
+      {
+        "at_utc": "2026-10-09T09:54:53.375225+00:00",
+        "decision": "source_request_started",
+        "source_host": "raw.githubusercontent.com",
+        "attempt": 1,
+        "redirect": false
+      },
+      {
+        "at_utc": "2026-10-09T09:54:54.030234+00:00",
+        "decision": "source_download_completed",
+        "source_host": "raw.githubusercontent.com",
+        "attempt": 1,
+        "bytes": 20839670
+      },
+      {
+        "at_utc": "2026-10-09T09:54:54.653425+00:00",
+        "decision": "source_request_started",
+        "source_host": "raw.githubusercontent.com",
+        "attempt": 1,
+        "redirect": false
+      },
+      {
+        "at_utc": "2026-10-09T09:54:55.120708+00:00",
+        "decision": "source_download_completed",
+        "source_host": "raw.githubusercontent.com",
+        "attempt": 1,
+        "bytes": 1643777
+      },
+      {
+        "at_utc": "2026-10-09T09:54:55.250339+00:00",
+        "decision": "source_request_started",
+        "source_host": "upload.wikimedia.org",
+        "attempt": 1,
+        "redirect": false
+      },
+      {
+        "at_utc": "2026-10-09T09:54:55.622811+00:00",
+        "decision": "source_download_completed",
+        "source_host": "upload.wikimedia.org",
+        "attempt": 1,
+        "bytes": 4744315
+      },
+      {
+        "at_utc": "2026-10-09T09:54:55.838739+00:00",
+        "decision": "wait_before_source_request",
+        "source_host": "upload.wikimedia.org",
+        "attempt": 1,
+        "wait_seconds": 29.412,
+        "not_before_utc": "2026-10-09T09:55:25.250350+00:00"
+      },
+      {
+        "at_utc": "2026-10-09T09:55:25.250446+00:00",
+        "decision": "source_request_started",
+        "source_host": "upload.wikimedia.org",
+        "attempt": 1,
+        "redirect": false
+      },
+      {
+        "at_utc": "2026-10-09T09:55:26.208157+00:00",
+        "decision": "source_download_completed",
+        "source_host": "upload.wikimedia.org",
+        "attempt": 1,
+        "bytes": 23705616
+      },
+      {
+        "at_utc": "2026-10-09T09:55:27.081269+00:00",
+        "decision": "wait_before_source_request",
+        "source_host": "upload.wikimedia.org",
+        "attempt": 1,
+        "wait_seconds": 28.169,
+        "not_before_utc": "2026-10-09T09:55:55.250453+00:00"
+      },
+      {
+        "at_utc": "2026-10-09T09:55:55.250567+00:00",
+        "decision": "source_request_started",
+        "source_host": "upload.wikimedia.org",
+        "attempt": 1,
+        "redirect": false
+      },
+      {
+        "at_utc": "2026-10-09T09:55:55.794358+00:00",
+        "decision": "source_download_completed",
+        "source_host": "upload.wikimedia.org",
+        "attempt": 1,
+        "bytes": 11064087
+      },
+      {
+        "at_utc": "2026-10-09T09:55:56.327706+00:00",
+        "decision": "wait_before_source_request",
+        "source_host": "upload.wikimedia.org",
+        "attempt": 1,
+        "wait_seconds": 28.923,
+        "not_before_utc": "2026-10-09T09:56:25.250568+00:00"
+      },
+      {
+        "at_utc": "2026-10-09T09:56:25.250707+00:00",
+        "decision": "source_request_started",
+        "source_host": "upload.wikimedia.org",
+        "attempt": 1,
+        "redirect": false
+      },
+      {
+        "at_utc": "2026-10-09T09:56:26.156893+00:00",
+        "decision": "source_download_completed",
+        "source_host": "upload.wikimedia.org",
+        "attempt": 1,
+        "bytes": 22445627
+      },
+      {
+        "at_utc": "2026-10-09T09:56:27.029266+00:00",
+        "decision": "wait_before_source_request",
+        "source_host": "upload.wikimedia.org",
+        "attempt": 1,
+        "wait_seconds": 28.221,
+        "not_before_utc": "2026-10-09T09:56:55.250711+00:00"
+      },
+      {
+        "at_utc": "2026-10-09T09:56:55.250809+00:00",
+        "decision": "source_request_started",
+        "source_host": "upload.wikimedia.org",
+        "attempt": 1,
+        "redirect": false
+      },
+      {
+        "at_utc": "2026-10-09T09:56:55.560443+00:00",
+        "decision": "source_download_completed",
+        "source_host": "upload.wikimedia.org",
+        "attempt": 1,
+        "bytes": 3070320
+      },
+      {
+        "at_utc": "2026-10-09T09:56:55.722950+00:00",
+        "decision": "wait_before_source_request",
+        "source_host": "upload.wikimedia.org",
+        "attempt": 1,
+        "wait_seconds": 29.528,
+        "not_before_utc": "2026-10-09T09:57:25.250811+00:00"
+      },
+      {
+        "at_utc": "2026-10-09T09:57:25.250906+00:00",
+        "decision": "source_request_started",
+        "source_host": "upload.wikimedia.org",
+        "attempt": 1,
+        "redirect": false
+      },
+      {
+        "at_utc": "2026-10-09T09:57:25.532408+00:00",
+        "decision": "source_download_completed",
+        "source_host": "upload.wikimedia.org",
+        "attempt": 1,
+        "bytes": 1769667
+      }
+    ]
+  }
+}
