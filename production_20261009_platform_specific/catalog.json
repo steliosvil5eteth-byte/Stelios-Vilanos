@@ -26,7 +26,10 @@
     "actual_new_mp4_files": 0,
     "actual_new_audio_files": 0,
     "actual_audio_listening_reviews": 0,
-    "actual_new_scheduled_posts": 0
+    "actual_new_scheduled_posts": 0,
+    "actual_acquired_source_photographs": 8,
+    "actual_source_photo_color_preview_reviews": 8,
+    "actual_new_ai_generated_images": 0
   },
   "global_history_clearance": "INCOMPLETE",
   "source_pack_checks_are_not_final_media_qa": true,
@@ -396,7 +399,7 @@
         110
       ],
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
-        84.0,
+        84,
         96.9
       ],
       "actual_duration_seconds": null,
@@ -766,7 +769,7 @@
         110
       ],
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
-        84.0,
+        84,
         96.9
       ],
       "actual_duration_seconds": null,
@@ -947,7 +950,7 @@
         110
       ],
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
-        82.0,
+        82,
         94.6
       ],
       "actual_duration_seconds": null,
@@ -1316,7 +1319,7 @@
         110
       ],
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
-        84.0,
+        84,
         96.9
       ],
       "actual_duration_seconds": null,
@@ -1687,7 +1690,7 @@
         110
       ],
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
-        83.0,
+        83,
         95.8
       ],
       "actual_duration_seconds": null,
@@ -1909,7 +1912,7 @@
       ],
       "duration_measured_seconds": null,
       "duration_estimate_note": "245–265-word editorial target calibrated against four existing Nestoras recordings. Actual duration remains unmeasured and must fall within 80–110 seconds after synthesis; no silence padding.",
-      "caption": "Στέφανος, Νίσυρος: ένα εντυπωσιακό τοπίο γίνεται πιο ενδιαφέρον όταν ξεχωρίζουμε την καλδέρα, τη λάβα και την υδροθερμική δράση.\n\nΠηγές: UNESCO — Nisyros Global Geopark — https://www.unesco.org/en/iggp/nisyros-unesco-global-geopark · Visit Nisyros — Caldera and crater — https://www.visitnisyros.gr/en/settlements-2/20-caldera-crater.\n\nΟι εικόνες θα είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη, όχι αρχειακές λήψεις. Προβλεπόμενη συνθετική ελληνική αφήγηση: Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Νίσυρος #Στέφανος #Ηφαίστειο #Γεωλογία #Αιγαίο",
+      "caption": "Στέφανος, Νίσυρος: ένα εντυπωσιακό τοπίο γίνεται πιο ενδιαφέρον όταν ξεχωρίζουμε την καλδέρα, τη λάβα και την υδροθερμική δράση.\n\nΠηγές: UNESCO — Nisyros Global Geopark — https://www.unesco.org/en/iggp/nisyros-unesco-global-geopark · Visit Nisyros — Caldera and crater — https://www.visitnisyros.gr/en/settlements-2/20-caldera-crater.\n\nΕπιλεγμένες αρχειακές φωτογραφίες της Νισύρου (2009–2021). Πηγές και άδειες φωτογραφιών: https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/9802259fcf96686efe7fd0f7fe992283be1738d0/production_20261009_platform_specific/NISYROS_PHOTO_CREDITS.md. Προβλεπόμενη συνθετική ελληνική αφήγηση: Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Νίσυρος #Στέφανος #Ηφαίστειο #Γεωλογία #Αιγαίο",
       "hashtags": [
         "#Νίσυρος",
         "#Στέφανος",
@@ -1946,67 +1949,187 @@
       "scene_plan": [
         {
           "scene": 1,
-          "visual_prompt": "Vertical 9:16 photorealistic documentary reconstruction. Accurate setting and period details; no invented evidence, no text, no logos, no watermark, no avatar, no recognizable child faces. Use a distinct composition for this scene. Wide accurate view of Stefanos crater, pale ground and restrained steam, no lava lake.",
+          "visual_prompt": "Αρχειακή άποψη του κρατήρα Στέφανος από τον βορρά. Κάδρο που διατηρεί αναγνωρίσιμη τη μορφή του κρατήρα και το φωτογραφημένο έδαφος.",
           "estimated_share_of_narration": 0.0984,
           "actual_duration_seconds": null,
-          "status": "PLANNED_NOT_GENERATED",
-          "narration_paragraph_index": 1
+          "status": "SOURCE_PHOTO_ACQUIRED_PREVIEW_REVIEWED_FRAMING_PENDING",
+          "narration_paragraph_index": 1,
+          "image_source_type": "ARCHIVAL_PHOTOGRAPH",
+          "source_asset_id": "ig_stefanos_north",
+          "source_photo_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/33ad1815d7a03a3dfbca216449ee15a54c19c754/jobs/f2c822db2a95b253/nisyros-20261009-scene-01.jpg",
+          "source_photo_sha256": "9bd72bd5e60c545e4dc7bad0fd7bf0f1c05caf957101fc5a543eee0876865439",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:View_of_the_Stefanos_crater_from_the_north._Nisyros,_Greece.jpg",
+          "source_license": "CC-BY-SA-3.0",
+          "source_preview_review_complete": true,
+          "source_preview_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-01-review-detail.jpg",
+          "source_preview_sha256": "f53b63070d8f9d650bc46f9a9d7509207374b1d57b5692f8c253405e76c4ade4",
+          "source_preview_observations_el": "Ο κρατήρας και οι εσωτερικές πλαγιές του διακρίνονται μέσα σε ευρύτερο ηφαιστειακό τοπίο. Στο πλάνο υπάρχουν δρόμος, σταθμευμένα οχήματα και πολύ μικρές ανθρώπινες φιγούρες. Δεν διακρίνονται αναγνωρίσιμα πρόσωπα στην ελεγμένη προεπισκόπηση ούτε εμφανής ατμός.",
+          "future_framing_constraints_el": "Το μελλοντικό κάθετο κάδρο πρέπει να διατηρεί αναγνωρίσιμη τη μορφή του κρατήρα και να μην επικεντρώνεται στα οχήματα. Δεν προστίθεται ατμός ή λάβα.",
+          "scene_assignment_final": false,
+          "vertical_crop_qa_complete": false,
+          "rights_complete": false,
+          "final_visual_qa_complete": false
         },
         {
           "scene": 2,
-          "visual_prompt": "Vertical 9:16 photorealistic documentary reconstruction. Accurate setting and period details; no invented evidence, no text, no logos, no watermark, no avatar, no recognizable child faces. Use a distinct composition for this scene. Aerial view of the Nisyros caldera with its enclosing volcanic slopes.",
+          "visual_prompt": "Αρχειακή αεροφωτογραφία της Νισύρου, 2009. Διατήρηση αρκετού από το νησί και το εσωτερικό του ώστε να υποστηρίζεται η εξήγηση της καλδέρας.",
           "estimated_share_of_narration": 0.1102,
           "actual_duration_seconds": null,
-          "status": "PLANNED_NOT_GENERATED",
-          "narration_paragraph_index": 2
+          "status": "SOURCE_PHOTO_ACQUIRED_PREVIEW_REVIEWED_FRAMING_PENDING",
+          "narration_paragraph_index": 2,
+          "image_source_type": "ARCHIVAL_PHOTOGRAPH",
+          "source_asset_id": "ig_nisyros_aerial_2009",
+          "source_photo_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/33ad1815d7a03a3dfbca216449ee15a54c19c754/jobs/f2c822db2a95b253/nisyros-20261009-scene-02.jpg",
+          "source_photo_sha256": "180906305246567ccdc2a126f60eca0f7cdcbabac1b3d37b69ec5ac7fa848832",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Nisyros_air_1.jpg",
+          "source_license": "PD-SELF",
+          "source_preview_review_complete": true,
+          "source_preview_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-02-review-detail.jpg",
+          "source_preview_sha256": "76a5a0ec60085c0eca08d591f14fa83a3c83501ecff09f65d3bb3210bb9bdf6a",
+          "source_preview_observations_el": "Διακρίνεται όλο το νησί μέσα στη θάλασσα και το ανοιχτόχρωμο ηφαιστειακό εσωτερικό του, με ατμοσφαιρική θαμπάδα. Δεν υπάρχουν άνθρωποι.",
+          "future_framing_constraints_el": "Να διατηρείται αρκετό από το νησί για να αποδίδεται η κλίμακα της καλδέρας. Ένα στενό κάθετο κόψιμο μπορεί να αφαιρέσει μεγάλο μέρος της ακτογραμμής.",
+          "scene_assignment_final": false,
+          "vertical_crop_qa_complete": false,
+          "rights_complete": false,
+          "final_visual_qa_complete": false
         },
         {
           "scene": 3,
-          "visual_prompt": "Vertical 9:16 photorealistic documentary reconstruction. Accurate setting and period details; no invented evidence, no text, no logos, no watermark, no avatar, no recognizable child faces. Use a distinct composition for this scene. Close view of a hydrothermal vent and altered ground, no explosive spectacle.",
+          "visual_prompt": "Αρχειακή φωτογραφία επιφανειακής υδροθερμικής εκδήλωσης στη Νίσυρο, 2009, με την περιγραφή «mofette» της πηγής. Παρουσίαση του πραγματικού εδάφους και των ανοιγμάτων που διακρίνονται.",
           "estimated_share_of_narration": 0.1102,
           "actual_duration_seconds": null,
-          "status": "PLANNED_NOT_GENERATED",
-          "narration_paragraph_index": 3
+          "status": "SOURCE_PHOTO_ACQUIRED_PREVIEW_REVIEWED_FRAMING_PENDING",
+          "narration_paragraph_index": 3,
+          "image_source_type": "ARCHIVAL_PHOTOGRAPH",
+          "source_asset_id": "ig_stefanos_vent_2009",
+          "source_photo_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-03.jpg",
+          "source_photo_sha256": "289be12f78170a1431b90ff3c1c88ac02e8d54534358356003cade62ece8ca10",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Nisyros_vulcan_mofetta_2.jpg",
+          "source_license": "PD-SELF",
+          "source_preview_review_complete": true,
+          "source_preview_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-03-qa-detail.jpg",
+          "source_preview_sha256": "bca0ffdf9c95b7fdf3966109e5195533dda390e7abf4318a42786ea7aee330b2",
+          "source_preview_observations_el": "Φωτογραφία εδάφους με σκοτεινά ανοίγματα, ρωγμές και κιτρινωπές αποθέσεις. Στην επάνω αριστερή πλευρά φαίνονται μόνο τα κάτω μέρη ποδιών και παπούτσια ενός ανθρώπου, χωρίς πρόσωπο. Δεν διακρίνεται σαφής ατμός.",
+          "future_framing_constraints_el": "Εστίαση στο έδαφος, με μελλοντικό κάδρο που μπορεί να αποκλείει τα πόδια. Η ονομασία mofette αποδίδεται στην πηγή. Δεν συνάγονται από τη φωτογραφία ηλικία ανθρώπου, συγκεκριμένη χημεία, θερμοκρασία ή ιστορική έκρηξη.",
+          "scene_assignment_final": false,
+          "vertical_crop_qa_complete": false,
+          "rights_complete": false,
+          "final_visual_qa_complete": false
         },
         {
           "scene": 4,
-          "visual_prompt": "Vertical 9:16 photorealistic documentary reconstruction. Accurate setting and period details; no invented evidence, no text, no logos, no watermark, no avatar, no recognizable child faces. Use a distinct composition for this scene. Distinct volcanic rock textures beside a small steaming fissure.",
+          "visual_prompt": "Αρχειακή άποψη της νότιας πλαγιάς του Στέφανου. Παρουσίαση των πραγματικών μορφών και υφών του εδάφους που διακρίνονται στη φωτογραφία.",
           "estimated_share_of_narration": 0.1732,
           "actual_duration_seconds": null,
-          "status": "PLANNED_NOT_GENERATED",
-          "narration_paragraph_index": 4
+          "status": "SOURCE_PHOTO_ACQUIRED_PREVIEW_REVIEWED_FRAMING_PENDING",
+          "narration_paragraph_index": 4,
+          "image_source_type": "ARCHIVAL_PHOTOGRAPH",
+          "source_asset_id": "ig_stefanos_southern_slope",
+          "source_photo_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-04.jpg",
+          "source_photo_sha256": "cf6bb13014c84d1b0f325924871605ef0386c89ea76d339919e5c73830c06cf0",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:The_southern_slope_of_the_Stefanos_crater._Nisyros,_Greece.jpg",
+          "source_license": "CC-BY-SA-3.0",
+          "source_preview_review_complete": true,
+          "source_preview_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-04-qa-detail.jpg",
+          "source_preview_sha256": "5bcf5c4dfa9c1207258f5a9506c42a50b23924fedd5e8edbee2e621abce25efa",
+          "source_preview_observations_el": "Ανοιχτόχρωμες και κιτρινωπές υφές βράχου πάνω από τον γυμνό πυθμένα. Στο κάτω μέρος υπάρχουν πολύ μακρινοί επισκέπτες χωρίς διακριτά πρόσωπα στην προεπισκόπηση. Δεν διακρίνεται ατμίζουσα ρωγμή.",
+          "future_framing_constraints_el": "Να διατηρούνται οι πραγματικές υφές του εδάφους. Δεν προστίθεται ρωγμή με ατμό και δεν μεγεθύνονται τα πρόσωπα των επισκεπτών.",
+          "scene_assignment_final": false,
+          "vertical_crop_qa_complete": false,
+          "rights_complete": false,
+          "final_visual_qa_complete": false
         },
         {
           "scene": 5,
-          "visual_prompt": "Vertical 9:16 photorealistic documentary reconstruction. Accurate setting and period details; no invented evidence, no text, no logos, no watermark, no avatar, no recognizable child faces. Use a distinct composition for this scene. Ground-level view across fumaroles with the crater rim in the background.",
+          "visual_prompt": "Ατμίδα μέσα στον κρατήρα Στέφανος — αρχειακή φωτογραφία, 2013. Κάδρο προσαρμοσμένο στην πραγματική ορατή λεπτομέρεια των βράχων, των αποθέσεων και του ελαφρού ατμού.",
           "estimated_share_of_narration": 0.122,
           "actual_duration_seconds": null,
-          "status": "PLANNED_NOT_GENERATED",
-          "narration_paragraph_index": 5
+          "status": "SOURCE_PHOTO_ACQUIRED_PREVIEW_REVIEWED_FRAMING_PENDING",
+          "narration_paragraph_index": 5,
+          "image_source_type": "ARCHIVAL_PHOTOGRAPH",
+          "source_asset_id": "ig_stefanos_fumarole",
+          "source_photo_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-05.jpg",
+          "source_photo_sha256": "14c07405823cf171ec3fb9b56cc44b002655202880cf4041c5d82696f205e032",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Fumarole_Nisyros.JPG",
+          "source_license": "CC-BY-3.0",
+          "source_preview_review_complete": true,
+          "source_preview_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-05-qa-detail.jpg",
+          "source_preview_sha256": "d769dde5525ae5098d21b3b5f0ff111b0dd017e7076b1ed461cc3ddf39060689",
+          "source_preview_observations_el": "Κοντινή λήψη γκρίζων βράχων με έντονες κιτρινοπράσινες αποθέσεις και ελαφρύ διάχυτο ατμό, κυρίως στο κέντρο και επάνω δεξιά. Δεν υπάρχουν άνθρωποι ή χείλος κρατήρα.",
+          "future_framing_constraints_el": "Χρήση ως αρχειακή λεπτομέρεια ατμίδας του 2013. Δεν παρουσιάζεται ως σημερινή κατάσταση ούτε τεκμηριώνεται συγκεκριμένη χημική σύσταση μόνο από το χρώμα.",
+          "scene_assignment_final": false,
+          "vertical_crop_qa_complete": false,
+          "rights_complete": false,
+          "final_visual_qa_complete": false
         },
         {
           "scene": 6,
-          "visual_prompt": "Vertical 9:16 photorealistic documentary reconstruction. Accurate setting and period details; no invented evidence, no text, no logos, no watermark, no avatar, no recognizable child faces. Use a distinct composition for this scene. View from Nikia toward the caldera, architecture and scale matching reference geography.",
+          "visual_prompt": "Θέα του Στέφανου από τα Νικιά — αρχειακή φωτογραφία, 2021. Διατήρηση της γεωγραφικής κλίμακας του τοπίου. Η λήψη δεν περιλαμβάνει κτίρια του χωριού.",
           "estimated_share_of_narration": 0.1575,
           "actual_duration_seconds": null,
-          "status": "PLANNED_NOT_GENERATED",
-          "narration_paragraph_index": 6
+          "status": "SOURCE_PHOTO_ACQUIRED_PREVIEW_REVIEWED_FRAMING_PENDING",
+          "narration_paragraph_index": 6,
+          "image_source_type": "ARCHIVAL_PHOTOGRAPH",
+          "source_asset_id": "ig_stefanos_nikia",
+          "source_photo_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-06.jpg",
+          "source_photo_sha256": "7aac7b16dc65567e7201af21f0d3fc61941d04548058f9855f205ea8e8f91024",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:View_of_the_Stefanos_Crater_from_Nikia._Nisyros,_Greece.jpg",
+          "source_license": "CC-BY-SA-3.0",
+          "source_preview_review_complete": true,
+          "source_preview_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-06-qa-detail.jpg",
+          "source_preview_sha256": "ed708678cf6cb044999c60dc789fd8b796ed2fcab5d7b63682bf4b69132dcce9",
+          "source_preview_observations_el": "Από ψηλά διακρίνονται ο οβάλ κρατήρας, οι ηφαιστειακές πλαγιές, χωράφια αριστερά και βραχώδες προσκήνιο δεξιά. Δεν υπάρχουν κτίρια του χωριού μέσα στο κάδρο.",
+          "future_framing_constraints_el": "Διατήρηση της γεωγραφικής κλίμακας της θέας από τα Νικιά. Δεν ζητείται ούτε προστίθεται αρχιτεκτονική που απουσιάζει από τη λήψη.",
+          "scene_assignment_final": false,
+          "vertical_crop_qa_complete": false,
+          "rights_complete": false,
+          "final_visual_qa_complete": false
         },
         {
           "scene": 7,
-          "visual_prompt": "Vertical 9:16 photorealistic documentary reconstruction. Accurate setting and period details; no invented evidence, no text, no logos, no watermark, no avatar, no recognizable child faces. Use a distinct composition for this scene. Dry stone walls and agricultural terraces above the volcanic interior.",
+          "visual_prompt": "Αγροτικό τοπίο στο εσωτερικό της Νισύρου — αρχειακή φωτογραφία, 2009. Παρουσίαση των αγροτεμαχίων, των δέντρων και των ορίων των χωραφιών ως γενικό ανθρώπινο και γεωγραφικό πλαίσιο.",
           "estimated_share_of_narration": 0.122,
           "actual_duration_seconds": null,
-          "status": "PLANNED_NOT_GENERATED",
-          "narration_paragraph_index": 7
+          "status": "SOURCE_PHOTO_ACQUIRED_PREVIEW_REVIEWED_FRAMING_PENDING",
+          "narration_paragraph_index": 7,
+          "image_source_type": "ARCHIVAL_PHOTOGRAPH",
+          "source_asset_id": "ig_nisyros_agricultural_inland",
+          "source_photo_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-07.jpg",
+          "source_photo_sha256": "c604fded28ae4d1bf1c7a228c8ecbcc9e1859b7d5329089fc138f3573eed847c",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Nisyros_inland_1.jpg",
+          "source_license": "PD-SELF",
+          "source_preview_review_complete": true,
+          "source_preview_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-07-qa-detail.jpg",
+          "source_preview_sha256": "606f4444631fba2566a0fc99a5279cc48975c21aa8b4771b81f71934ee2b8cef",
+          "source_preview_observations_el": "Κοιλάδα με δέντρα, χρυσαφένια αγροτεμάχια, γραμμικά όρια χωραφιών, μικρή κατασκευή και ηφαιστειακές πλαγιές. Επιβεβαιώνεται γενικό αγροτικό τοπίο. Οι λεπτομέρειες δεν αρκούν για ασφαλή αναγνώριση της κατασκευής ξερολιθιών ή αναβαθμίδων.",
+          "future_framing_constraints_el": "Η σκηνή επισημαίνεται γενικά ως αγροτικό τοπίο. Η αναφορά της αφήγησης στις ξερολιθιές παραμένει γεωγραφικό πλαίσιο, χωρίς ισχυρισμό ότι η φωτογραφία δείχνει συγκεκριμένη κατασκευή τους.",
+          "scene_assignment_final": false,
+          "vertical_crop_qa_complete": false,
+          "rights_complete": false,
+          "final_visual_qa_complete": false
         },
         {
           "scene": 8,
-          "visual_prompt": "Vertical 9:16 photorealistic documentary reconstruction. Accurate setting and period details; no invented evidence, no text, no logos, no watermark, no avatar, no recognizable child faces. Use a distinct composition for this scene. Evening panorama connecting the caldera, village and Aegean horizon.",
+          "visual_prompt": "Ημερήσιο πανόραμα της νότιας Νισύρου, των Νικιών και του κρατήρα — αρχειακή φωτογραφία, 2019. Στη λήψη διακρίνεται και ο ορίζοντας του Αιγαίου. Η μελλοντική κάθετη παρουσίαση πρέπει να διατηρεί κατανοητή τη χωρική σχέση των στοιχείων.",
           "estimated_share_of_narration": 0.1063,
           "actual_duration_seconds": null,
-          "status": "PLANNED_NOT_GENERATED",
-          "narration_paragraph_index": 8
+          "status": "SOURCE_PHOTO_ACQUIRED_PREVIEW_REVIEWED_FRAMING_PENDING",
+          "narration_paragraph_index": 8,
+          "image_source_type": "ARCHIVAL_PHOTOGRAPH",
+          "source_asset_id": "ig_nisyros_nikia_crater_panorama",
+          "source_photo_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-08.jpg",
+          "source_photo_sha256": "2b135bdd941bca2b026d9990e4b9e940b1d71cee9813aa4076883d52b914ec3f",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_southern_Nisyros,_Nikia_village_and_Crater.jpg",
+          "source_license": "CC-BY-SA-4.0",
+          "source_preview_review_complete": true,
+          "source_preview_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-08-qa-detail.jpg",
+          "source_preview_sha256": "b4636c178130c5f9d2ba0b60d7615c20a38ab40dd4913f85e3f50ad65e3da07b",
+          "source_preview_observations_el": "Φαίνονται τα κτίρια των Νικιών κεντροαριστερά, το ηφαιστειακό εσωτερικό και ο κρατήρας δεξιά, καθώς και ο ορίζοντας του Αιγαίου αριστερά και στο βάθος. Είναι ημερήσια λήψη. Δεν διακρίνονται αναγνωρίσιμα πρόσωπα.",
+          "future_framing_constraints_el": "Η πολύ πλατιά λήψη χρειάζεται ιδιαίτερη επιλογή παρουσίασης: ένα στατικό κάθετο κόψιμο σε όλο το ύψος κρατά περίπου το 19,5% του πλάτους και μπορεί να αποκλείσει βασικά στοιχεία. Η κάθετη παρουσίαση και η γεωγραφική σχέση των στοιχείων δεν έχουν ελεγχθεί σε τελικό βίντεο. Δεν επισημαίνεται ως βραδινή λήψη.",
+          "scene_assignment_final": false,
+          "vertical_crop_qa_complete": false,
+          "rights_complete": false,
+          "final_visual_qa_complete": false
         }
       ],
       "media_url": null,
@@ -2028,10 +2151,10 @@
       "caption_is_draft": true,
       "final_disclosure_requires_asset_check": true,
       "caption_ready_for_release": false,
-      "asset_rights_status": "NOT_ACQUIRED",
+      "asset_rights_status": "SOURCE_PHOTO_LICENSES_RECORDED_FINAL_ADAPTATION_RIGHTS_PENDING",
       "release_ready": false,
       "tts_created": false,
-      "image_files_created": false,
+      "image_files_created": true,
       "video_rendered": false,
       "editorial_category": "nature",
       "platform_rationale": "A concrete Greek place, natural formation, object or local craft with visual detail suited to an image-led narrative.",
@@ -2062,15 +2185,125 @@
       "scheduled": false,
       "media": [],
       "release_blockers": [
-        "COMPLETE_FRESH_GLOBAL_HISTORY_CLEARANCE",
+        "COMPLETE_FRESH_GLOBAL_HISTORY_CLEARANCE_FOR_UPDATED_SOURCEPACK",
         "VERIFIED_CURRENT_NO_CHARGE_NESTORAS_CAPACITY",
-        "ACTUAL_SCENE_ASSETS_AND_RIGHTS",
+        "FINAL_VERTICAL_SCENE_FRAMING_AND_ADAPTATION_RIGHTS",
         "ACTUAL_NESTORAS_AUDIO_AND_TIMED_SUBTITLES",
         "ACTUAL_COMPLETE_LISTENING_AND_EXACT_FINAL_VIDEO_REVIEW",
         "SUPPORTED_NATIVE_DISCLOSURE_AND_VERIFIED_PUBLISHER_READBACK"
       ],
       "proposed_local_time": "07:00",
-      "time_status": "UNSCHEDULED_EDITORIAL_TEST_SLOT"
+      "time_status": "UNSCHEDULED_EDITORIAL_TEST_SLOT",
+      "sourcepack_hash_revision": {
+        "import_story_sha256": "d4e6dc30c9c3b28fc8e2b0c72e2946f6efe422979be1bd1b2158f808ad1ec9f9",
+        "current_story_sha256": "048d6fe541ceeb96c743d0431a483d75f7a64069da050649c94eedd06a41448e",
+        "script_sha256": "03abce7d47e612847b297b182032c705fc2bc45727a332ec990bd303c7055919",
+        "script_unchanged": true,
+        "reason": "Replace unrealized AI-image scene instructions and draft disclosure with eight actually acquired archive photographs; preserve narration, identity, source facts and unscheduled editorial slot.",
+        "prior_import_preflight_is_historical_only": true,
+        "fresh_complete_semantic_media_history_preflight_required_before_synthesis_render_or_release": true,
+        "current_canonical_production_preflight_passed": false
+      },
+      "archive_photo_acquisition": {
+        "status": "EIGHT_COPIES_ACQUIRED_COLOR_PREVIEWS_REVIEWED_FINAL_FRAMING_PENDING",
+        "source_photo_count": 8,
+        "new_ai_images_generated": 0,
+        "credits_url": "https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/9802259fcf96686efe7fd0f7fe992283be1738d0/production_20261009_platform_specific/NISYROS_PHOTO_CREDITS.md",
+        "acquisition_record_path": "production_20261009_platform_specific/nisyros_photo_acquisition_20261009.json",
+        "final_media_qa_complete": false,
+        "release_ready": false
+      },
+      "image_file_creation_method": "EIGHT_ARCHIVAL_SOURCE_COPIES_AND_REVIEW_DERIVATIVES_NO_AI_GENERATION",
+      "source_photo_assets": [
+        {
+          "scene": 1,
+          "asset_id": "ig_stefanos_north",
+          "url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/33ad1815d7a03a3dfbca216449ee15a54c19c754/jobs/f2c822db2a95b253/nisyros-20261009-scene-01.jpg",
+          "sha256": "9bd72bd5e60c545e4dc7bad0fd7bf0f1c05caf957101fc5a543eee0876865439",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:View_of_the_Stefanos_crater_from_the_north._Nisyros,_Greece.jpg",
+          "source_license": "CC-BY-SA-3.0",
+          "source_preview_review_complete": true,
+          "vertical_crop_qa_complete": false,
+          "final_rights_complete": false
+        },
+        {
+          "scene": 2,
+          "asset_id": "ig_nisyros_aerial_2009",
+          "url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/33ad1815d7a03a3dfbca216449ee15a54c19c754/jobs/f2c822db2a95b253/nisyros-20261009-scene-02.jpg",
+          "sha256": "180906305246567ccdc2a126f60eca0f7cdcbabac1b3d37b69ec5ac7fa848832",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Nisyros_air_1.jpg",
+          "source_license": "PD-SELF",
+          "source_preview_review_complete": true,
+          "vertical_crop_qa_complete": false,
+          "final_rights_complete": false
+        },
+        {
+          "scene": 3,
+          "asset_id": "ig_stefanos_vent_2009",
+          "url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-03.jpg",
+          "sha256": "289be12f78170a1431b90ff3c1c88ac02e8d54534358356003cade62ece8ca10",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Nisyros_vulcan_mofetta_2.jpg",
+          "source_license": "PD-SELF",
+          "source_preview_review_complete": true,
+          "vertical_crop_qa_complete": false,
+          "final_rights_complete": false
+        },
+        {
+          "scene": 4,
+          "asset_id": "ig_stefanos_southern_slope",
+          "url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-04.jpg",
+          "sha256": "cf6bb13014c84d1b0f325924871605ef0386c89ea76d339919e5c73830c06cf0",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:The_southern_slope_of_the_Stefanos_crater._Nisyros,_Greece.jpg",
+          "source_license": "CC-BY-SA-3.0",
+          "source_preview_review_complete": true,
+          "vertical_crop_qa_complete": false,
+          "final_rights_complete": false
+        },
+        {
+          "scene": 5,
+          "asset_id": "ig_stefanos_fumarole",
+          "url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-05.jpg",
+          "sha256": "14c07405823cf171ec3fb9b56cc44b002655202880cf4041c5d82696f205e032",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Fumarole_Nisyros.JPG",
+          "source_license": "CC-BY-3.0",
+          "source_preview_review_complete": true,
+          "vertical_crop_qa_complete": false,
+          "final_rights_complete": false
+        },
+        {
+          "scene": 6,
+          "asset_id": "ig_stefanos_nikia",
+          "url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-06.jpg",
+          "sha256": "7aac7b16dc65567e7201af21f0d3fc61941d04548058f9855f205ea8e8f91024",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:View_of_the_Stefanos_Crater_from_Nikia._Nisyros,_Greece.jpg",
+          "source_license": "CC-BY-SA-3.0",
+          "source_preview_review_complete": true,
+          "vertical_crop_qa_complete": false,
+          "final_rights_complete": false
+        },
+        {
+          "scene": 7,
+          "asset_id": "ig_nisyros_agricultural_inland",
+          "url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-07.jpg",
+          "sha256": "c604fded28ae4d1bf1c7a228c8ecbcc9e1859b7d5329089fc138f3573eed847c",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Nisyros_inland_1.jpg",
+          "source_license": "PD-SELF",
+          "source_preview_review_complete": true,
+          "vertical_crop_qa_complete": false,
+          "final_rights_complete": false
+        },
+        {
+          "scene": 8,
+          "asset_id": "ig_nisyros_nikia_crater_panorama",
+          "url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba/jobs/4deeeea5dc72c239/nisyros-20261009-scene-08.jpg",
+          "sha256": "2b135bdd941bca2b026d9990e4b9e940b1d71cee9813aa4076883d52b914ec3f",
+          "source_page_url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_southern_Nisyros,_Nikia_village_and_Crater.jpg",
+          "source_license": "CC-BY-SA-4.0",
+          "source_preview_review_complete": true,
+          "vertical_crop_qa_complete": false,
+          "final_rights_complete": false
+        }
+      ]
     },
     {
       "id": "INSTAGRAM_20261009_02_NIKE_SAMOTHRACE_MARBLE_MOTION",
@@ -2609,7 +2842,7 @@
         110
       ],
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
-        83.0,
+        83,
         95.8
       ],
       "actual_duration_seconds": null,
@@ -2986,7 +3219,7 @@
         110
       ],
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
-        83.0,
+        83,
         95.8
       ],
       "actual_duration_seconds": null,
@@ -3358,7 +3591,7 @@
         110
       ],
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
-        83.0,
+        83,
         95.8
       ],
       "actual_duration_seconds": null,
@@ -3778,7 +4011,7 @@
       "estimated_duration_seconds_at_165_wpm": 89.8,
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
         82.3,
-        95.0
+        95
       ],
       "caption": "Λευκές ίνες πάνω σε νεκρό ξύλο: ο πάγος παίρνει τη μορφή του με τη βοήθεια μυκητιακής δραστηριότητας.\n\nΠηγές: https://bg.copernicus.org/articles/12/4261/2015/ · https://www.egu.eu/news/180/fungus-shapes-hair-ice-researchers-identify-fungus-responsible-for-peculiar-ice-filaments-that-grow-on-dead-wood/\n\nΟι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη. Συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Φύση #Πάγος #Επιστήμη #HairIce",
       "caption_is_draft": true,
@@ -3966,7 +4199,7 @@
       "duration_verified": false,
       "estimated_duration_seconds_at_165_wpm": 90.5,
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
-        83.0,
+        83,
         95.8
       ],
       "caption": "Η κόκκινη άλμη του Taylor Glacier συνδέει χημεία, μικροσκοπικά σωματίδια και νερό που κινείται μέσα σε πολύ κρύο πάγο.\n\nΠηγές: https://www.uaf.edu/news/archives/news-archives-2010-2021/researchers-solve-the-100-year-old-mystery-of-blood-falls.php · https://hub.jhu.edu/2023/06/26/blood-falls-mystery/\n\nΟι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη. Συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ανταρκτική #BloodFalls #Γεωλογία #Επιστήμη",
@@ -4343,7 +4576,7 @@
       "duration_verified": false,
       "estimated_duration_seconds_at_165_wpm": 89.5,
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
-        82.0,
+        82,
         94.6
       ],
       "caption": "Σε ένα είδος γυάλινου βατράχου, η προσωρινή αποθήκευση ερυθρών αιμοσφαιρίων στο ήπαρ βοηθά το καμουφλάζ κατά την ανάπαυση.\n\nΠηγές: https://pmc.ncbi.nlm.nih.gov/articles/PMC9984244/ · https://pratt.duke.edu/news/glassfrogs-hide-red-blood-cells-their-liver-become-transparent/\n\nΟι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη. Συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Βιολογία #Βάτραχος #Καμουφλάζ #Επιστήμη",
@@ -4532,7 +4765,7 @@
       "duration_verified": false,
       "estimated_duration_seconds_at_165_wpm": 90.5,
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
-        83.0,
+        83,
         95.8
       ],
       "caption": "Στο Photinus carolinus, οι φωτεινοί ρυθμοί σχετίζονται με αναπαραγωγική επικοινωνία και συλλογική συμπεριφορά.\n\nΠηγές: https://www.nps.gov/grsm/learn/nature/fireflies.htm · https://pubmed.ncbi.nlm.nih.gov/34233879/\n\nΟι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη. Συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Πυγολαμπίδες #Φύση #Βιολογία #Επιστήμη",
@@ -4720,7 +4953,7 @@
       "duration_verified": false,
       "estimated_duration_seconds_at_165_wpm": 90.5,
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
-        83.0,
+        83,
         95.8
       ],
       "caption": "Μια εύκαμπτη μεμβράνη, μια βαλβίδα και οι αλλαγές πίεσης εξηγούν τον παλμικό αμυντικό ψεκασμό του σκαθαριού βομβαρδιστή.\n\nΠηγές: https://pubmed.ncbi.nlm.nih.gov/25931557/ · https://news.mit.edu/2015/how-bombardier-beetles-produce-defensive-spray-0430\n\nΟι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη. Συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Σκαθάρι #Βιολογία #Φύση #Επιστήμη",
@@ -4908,7 +5141,7 @@
       "duration_verified": false,
       "estimated_duration_seconds_at_165_wpm": 89.5,
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
-        82.0,
+        82,
         94.6
       ],
       "caption": "Η ανομοιόμορφη ακαμψία του εντέρου βοηθά να εξηγηθεί πώς τα βόμπατ διαμορφώνουν σχεδόν κυβικά περιττώματα.\n\nΠηγές: https://pubmed.ncbi.nlm.nih.gov/33289747/ · https://www.hu.gatech.edu/Lee/cubed-poops/\n\nΟι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη. Συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Βόμπατ #Φύση #Βιολογία #Επιστήμη",
@@ -5096,7 +5329,7 @@
       "duration_verified": false,
       "estimated_duration_seconds_at_165_wpm": 90.5,
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
-        83.0,
+        83,
         95.8
       ],
       "caption": "Ο κρότος της snapping shrimp συνδέεται με την κατάρρευση μιας φυσαλίδας σπηλαίωσης που δημιουργεί ο πίδακας από τη δαγκάνα της.\n\nΠηγές: https://pubmed.ncbi.nlm.nih.gov/11000111/ · https://research.utwente.nl/en/publications/on-the-sound-of-snapping-shrimp-the-collapse-of-a-cavitation-bubb/\n\nΟι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη. Συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Θάλασσα #Γαρίδα #Φυσική #Επιστήμη",
@@ -5472,7 +5705,7 @@
       "duration_verified": false,
       "estimated_duration_seconds_at_165_wpm": 89.5,
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
-        82.0,
+        82,
         94.6
       ],
       "caption": "Η Turritopsis dohrnii μπορεί να αντιστρέψει μέρος του κύκλου ανάπτυξής της. Το παρατσούκλι «αθάνατη» δεν σημαίνει ότι δεν κινδυνεύει ή δεν πεθαίνει.\n\nΠηγές: https://www.amnh.org/explore/news-blogs/immortal-jellyfish · https://www.icm.csic.es/en/news/immortal-jellyfish-tiny-creature-infinite-power\n\nΟι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη. Συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Μέδουσα #Βιολογία #Θάλασσα #Επιστήμη",
@@ -5846,7 +6079,7 @@
         110
       ],
       "duration_verified": false,
-      "estimated_duration_seconds_at_165_wpm": 92.0,
+      "estimated_duration_seconds_at_165_wpm": 92,
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
         84.3,
         97.3
@@ -6036,7 +6269,7 @@
       "duration_verified": false,
       "estimated_duration_seconds_at_165_wpm": 92.7,
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
-        85.0,
+        85,
         98.1
       ],
       "caption": "Η κίνηση και το βαρυτικό δυναμικό επηρεάζουν τον ρυθμό των δορυφορικών ρολογιών. Οι σχετικές διορθώσεις είναι μέρος της λειτουργίας του GPS.\n\nΠηγές: https://link.springer.com/article/10.12942/lrr-2003-1 · https://www.nist.gov/atomic-clocks/a-technology-powerhouse/knowing-where-we-are\n\nΟι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη. Συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#GPS #Σχετικότητα #Τεχνολογία #Φυσική",
@@ -6225,7 +6458,7 @@
       "duration_verified": false,
       "estimated_duration_seconds_at_165_wpm": 92.7,
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
-        85.0,
+        85,
         98.1
       ],
       "caption": "Στο Γρηγοριανό ημερολόγιο, τα έτη των αιώνων είναι δίσεκτα μόνο όταν διαιρούνται ακριβώς με το 400. Γι’ αυτό διαφέρουν το 2000 και το 2100.\n\nΠηγές: https://aa.usno.navy.mil/faq/leap_years · https://robinfo.oma.be/en/astro-info/calendar/the-gregorian-calendar/\n\nΟι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη. Συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ημερολόγιο #ΔίσεκτοΈτος #Αστρονομία #Επιστήμη",
@@ -6600,7 +6833,7 @@
       "duration_verified": false,
       "estimated_duration_seconds_at_165_wpm": 92.7,
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
-        85.0,
+        85,
         98.1
       ],
       "caption": "Μια πολύ λεπτή επίστρωση χρυσού βοηθά τους καθρέφτες βηρυλλίου του Webb να ανακλούν το υπέρυθρο φως προς τα όργανά του.\n\nΠηγές: https://science.nasa.gov/mission/webb/webbs-mirrors/ · https://science.nasa.gov/mission/webb/faqs-full/\n\nΟι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη. Συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#JamesWebb #Διάστημα #Τεχνολογία #NASA",
@@ -6789,7 +7022,7 @@
       "estimated_duration_seconds_at_165_wpm": 89.8,
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
         82.3,
-        95.0
+        95
       ],
       "caption": "Οι φωτοβολταϊκές κυψέλες μετατρέπουν ενέργεια του φωτός σε ηλεκτρισμό. Η υψηλή θερμοκρασία δεν αποτελεί αυτόματα πλεονέκτημα για την απόδοσή τους.\n\nΠηγές: https://www.energy.gov/cmei/systems/solar-photovoltaic-cell-basics · https://www.energy.gov/cmei/systems/solar-photovoltaic-performance-and-efficiency-basics · https://www.energy.gov/cmei/systems/solar-integration-inverters-and-grid-services-basics\n\nΟι εικόνες είναι φωτορεαλιστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη. Συνθετική ελληνική αφήγηση με τη φωνή Νέστορας.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Φωτοβολταϊκά #Ενέργεια #Τεχνολογία #Επιστήμη",
       "caption_is_draft": true,
