@@ -2,23 +2,103 @@
   "date": "2026-10-09",
   "brandId": 7076410,
   "brandName": "Ιστορίες που μας αγγίζουν",
-  "owner": "daily-social-production-20261008T0600-athens",
-  "created_at": "2026-10-08T03:05:00Z",
-  "expires_at": "2026-10-08T09:30:00Z",
-  "status": "QA_PASSED_SCHEDULING_BLOCKED",
-  "categories": [
-    "relationships",
-    "survival",
-    "dog_bartender",
-    "zodiac",
-    "greece_two_day_trip",
-    "love_soul_relationship",
-    "strange_real_phenomenon",
-    "documented_experiments",
-    "myth_or_truth",
-    "international_legend"
+  "owner": "nisyros-photo-import-20261009T093617Z",
+  "created_at": "2026-10-09T09:36:17Z",
+  "updated_at": "2026-10-09T09:36:17Z",
+  "expires_at": "2026-10-09T10:36:17Z",
+  "status": "ACTIVE",
+  "authorized_actions": [
+    "asset_import"
   ],
-  "note": "10/10 exact-final packages complete and durable; 56 media/QA files byte-verified. Metricool create rejected exact-final media upload with INVALID_ARGUMENT; public URLs/data URIs were treated as filenames. Live 2026-10-09 readback remains empty. Notion contains 10 Blocked records; no placeholders or Metricool records created.",
-  "final_review": "PASSED_FINAL_REVIEW",
-  "updated_at": "2026-10-08T04:20:00Z"
+  "story_binding": {
+    "job_id": "2026-10-09-instagram-01",
+    "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
+    "fingerprint": "documented_topic|nisyros_stefanos_hydrothermal",
+    "story_sha256": "d4e6dc30c9c3b28fc8e2b0c72e2946f6efe422979be1bd1b2158f808ad1ec9f9",
+    "script_sha256": "03abce7d47e612847b297b182032c705fc2bc45727a332ec990bd303c7055919",
+    "sourcepack_ref": "3a861c29085eaf229862ee40cc79a1ba3ba59538",
+    "sourcepack_path": "production_20261009_platform_specific/manifest.json"
+  },
+  "input_path": "media_jobs/current.json",
+  "input_sha256": "f2c822db2a95b253847f7777bd8ccfc9ffb0d90525ae7858e055415b6ffd6811",
+  "batch_id": "f2c822db2a95b253",
+  "asset_job_bindings": [
+    {
+      "job_id": "nisyros-20261009-scene-01",
+      "asset_id": "ig_stefanos_north",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/View_of_the_Stefanos_crater_from_the_north._Nisyros%2C_Greece.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org"
+    },
+    {
+      "job_id": "nisyros-20261009-scene-02",
+      "asset_id": "ig_nisyros_aerial_2009",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Nisyros_air_1.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org"
+    },
+    {
+      "job_id": "nisyros-20261009-scene-03",
+      "asset_id": "ig_stefanos_vent_2009",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Nisyros_vulcan_mofetta_2.jpg"
+    },
+    {
+      "job_id": "nisyros-20261009-scene-04",
+      "asset_id": "ig_stefanos_southern_slope",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/The_southern_slope_of_the_Stefanos_crater._Nisyros%2C_Greece.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org"
+    },
+    {
+      "job_id": "nisyros-20261009-scene-05",
+      "asset_id": "ig_stefanos_fumarole",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Fumarole_Nisyros.JPG?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org"
+    },
+    {
+      "job_id": "nisyros-20261009-scene-06",
+      "asset_id": "ig_stefanos_nikia",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/View_of_the_Stefanos_Crater_from_Nikia._Nisyros%2C_Greece.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org"
+    },
+    {
+      "job_id": "nisyros-20261009-scene-07",
+      "asset_id": "ig_nisyros_agricultural_inland",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Nisyros_inland_1.jpg"
+    },
+    {
+      "job_id": "nisyros-20261009-scene-08",
+      "asset_id": "ig_nisyros_nikia_crater_panorama",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Panoramic_view_southern_Nisyros%2C_Nikia_village_and_Crater.jpg"
+    }
+  ],
+  "final_review": "NOT_PERFORMED",
+  "publish_to_social": false,
+  "canonical_production_gates_enabled": false,
+  "prior_lease": {
+    "commit_ref": "3a861c29085eaf229862ee40cc79a1ba3ba59538",
+    "blob_sha": "67348215b3cb7bf4c27e6b307ed97617c0f8ebc1",
+    "expired_at": "2026-10-08T09:30:00Z",
+    "note": "Expired historical common-program state retained in immutable Git history. Its historical final-review claim is not inherited by this new asset import."
+  },
+  "manual_preflight": {
+    "decision": "CLEAR_FOR_SCOPED_ASSET_IMPORT_ONLY",
+    "reviewer": "nisyros-photo-import-20261009T093617Z",
+    "semantic_checked_at": "2026-10-09T09:36:17Z",
+    "same_existing_sourcepack_continuation": true,
+    "history_reads_succeeded": [
+      "metricool",
+      "notion_active_and_archived",
+      "pinned_repository_history_and_sourcepack",
+      "repository_leases"
+    ],
+    "metricool_checked_at": "2026-10-09T09:28:47.269Z",
+    "metricool_records_sha256": "def1a9cbead0a23d1dcc968f1a024f4839d2ceaf95790faf13563cf59ef325b2",
+    "notion_repository_checked_at": "2026-10-09T09:30:05Z",
+    "private_notion_repository_readset_sha256": "6d1d69083ed16ef1fe8e6172fe9c51e7a72dd0cab09b3b62ed9140ce44980b8f",
+    "conflicting_target_story_found": false,
+    "existing_acquisition_of_selected_sourcepack_found": false,
+    "known_same_original_filename_found": false,
+    "media_novelty_limit": "Metricool rewrites original filenames; absence of source-name matches is not a full historic media-byte or visual identity proof. Target-topic history and current sourcepack acquisition state were also reviewed.",
+    "lease_path": "state/production_leases/2026-10-09-brand7076410.json",
+    "lease_owner": "nisyros-photo-import-20261009T093617Z",
+    "lease_must_be_claimed_and_read_back_before_dispatch": true,
+    "authorized_actions": [
+      "asset_import"
+    ],
+    "canonical_production_preflight_passed": false,
+    "enforcement_note": "This is a root-reviewed asset-import authorization and external CAS lease binding. The existing image copier does not implement canonical production preflight or enforce this metadata; no production gate is enabled."
+  }
 }
