@@ -3,7 +3,8 @@
 Only process explicit approved public jobs. Originals are never overwritten.
 """
 from __future__ import annotations
-import argparse, base64, hashlib, json, math, re, subprocess, tempfile, urllib.parse, urllib.request
+import argparse, base64, datetime, hashlib, io, json, math, re, subprocess, tempfile, time, urllib.error, urllib.parse, urllib.request
+from email.utils import parsedate_to_datetime
 from pathlib import Path
 from PIL import Image, ImageDraw, ImageFont, ImageOps, ImageEnhance
 
@@ -13,6 +14,11 @@ FONT = '/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf'
 BOLD = '/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf'
 MAX_DOWNLOAD = 150 * 1024 * 1024
 MAX_OUTPUT = 64 * 1024 * 1024
+USER_AGENT = 'SteliosMediaFinisher/1.3 (media-import bot; +https://github.com/steliosvil5eteth-byte/Stelios-Vilanos)'
+WIKIMEDIA_INTERVAL = 30.0
+DEFAULT_429_COOLDOWN = 60.0
+MAX_RETRY_AFTER = 300.0
+DETAIL_MAX_BYTES = 900 * 1024
 
 
 def run(args: list[str]) -> str:
@@ -40,25 +46,115 @@ def check_url(url: str) -> None:
         raise ValueError('Source must be an explicit HTTPS media URL on the allowed hosts')
 
 
+class RateLimitedBatch(RuntimeError):
+    """No further source requests are permitted in this batch."""
+
+
+class DownloadPolicy:
+    def __init__(self):
+        self.events = []
+        self.last_wikimedia_attempt = None
+        self.retry_not_before = 0.0
+        self.rate_limits = 0
+        self.stop_reason = None
+
+    def record(self, decision, **details):
+        event = {'at_utc': datetime.datetime.fromtimestamp(time.time(), datetime.timezone.utc).isoformat(),
+                 'decision': decision, **details}
+        self.events.append(event)
+        print(json.dumps({'download_policy': event}, ensure_ascii=False), flush=True)
+
+    def before_request(self, url, attempt, redirect=False):
+        host = urllib.parse.urlsplit(url).hostname
+        if self.stop_reason:
+            self.record('source_request_not_attempted', source_host=host, reason=self.stop_reason)
+            raise RateLimitedBatch(self.stop_reason)
+        target = self.retry_not_before
+        if host == 'upload.wikimedia.org' and self.last_wikimedia_attempt is not None:
+            target = max(target, self.last_wikimedia_attempt + WIKIMEDIA_INTERVAL)
+        delay = max(0.0, target - time.monotonic())
+        if delay:
+            self.record('wait_before_source_request', source_host=host, attempt=attempt,
+                        wait_seconds=round(delay, 3),
+                        not_before_utc=datetime.datetime.fromtimestamp(time.time() + delay, datetime.timezone.utc).isoformat())
+            while True:
+                remaining = target - time.monotonic()
+                if remaining <= 0:
+                    break
+                time.sleep(min(60.0, remaining))
+        if host == 'upload.wikimedia.org':
+            self.last_wikimedia_attempt = time.monotonic()
+        self.record('source_request_started', source_host=host, attempt=attempt, redirect=redirect)
+
+    def rate_limited(self, error, url, attempt):
+        received_monotonic, received_wall = time.monotonic(), time.time()
+        raw = str((error.headers or {}).get('Retry-After', '')).strip()
+        delay, basis = DEFAULT_429_COOLDOWN, 'default_60_seconds'
+        try:
+            if re.fullmatch(r'[0-9]+', raw):
+                delay, basis = int(raw), 'retry_after_seconds'
+            elif raw:
+                moment = parsedate_to_datetime(raw)
+                if moment.tzinfo is None:
+                    raise ValueError('HTTP-date has no timezone')
+                delay, basis = max(0.0, moment.timestamp() - received_wall), 'retry_after_http_date'
+        except (TypeError, ValueError, OverflowError):
+            pass
+        error.close()
+        self.rate_limits += 1
+        self.record('http_429', source_host=urllib.parse.urlsplit(url).hostname, attempt=attempt,
+                    batch_429_count=self.rate_limits, retry_after_seconds=delay, retry_after_basis=basis)
+        if self.rate_limits >= 2 or attempt >= 2:
+            self.stop_reason = 'RATE_LIMIT_BATCH_STOP_SECOND_429'
+        elif delay > MAX_RETRY_AFTER:
+            self.stop_reason = 'RATE_LIMIT_BATCH_STOP_RETRY_AFTER_OVER_300_SECONDS'
+        if self.stop_reason:
+            self.record('batch_source_requests_stopped', reason=self.stop_reason)
+            raise RateLimitedBatch(self.stop_reason)
+        self.retry_not_before = received_monotonic + delay
+        self.record('single_retry_scheduled', attempt=attempt + 1, cooldown_seconds=delay)
+
+
+DOWNLOAD_POLICY = DownloadPolicy()
+
+
 class SafeRedirect(urllib.request.HTTPRedirectHandler):
+    def __init__(self, policy=None, attempt=1):
+        super().__init__()
+        self.policy = policy if policy is not None else DOWNLOAD_POLICY
+        self.attempt = attempt
+
     def redirect_request(self, req, fp, code, msg, headers, newurl):
         check_url(newurl)
-        return super().redirect_request(req, fp, code, msg, headers, newurl)
+        redirected = super().redirect_request(req, fp, code, msg, headers, newurl)
+        if redirected is not None:
+            self.policy.before_request(newurl, self.attempt, redirect=True)
+        return redirected
 
 
 def download(url: str, path: Path) -> None:
     check_url(url)
-    req = urllib.request.Request(url, headers={'User-Agent': 'SteliosMediaFinisher/1.3'})
-    with urllib.request.build_opener(SafeRedirect()).open(req, timeout=90) as r, path.open('wb') as f:
-        check_url(r.url)
-        total = 0
-        for data in iter(lambda: r.read(1024*1024), b''):
-            total += len(data)
-            if total > MAX_DOWNLOAD:
-                raise ValueError('Input exceeds the 150 MiB safety limit')
-            f.write(data)
-    if total == 0:
-        raise ValueError('Empty media')
+    for attempt in (1, 2):
+        DOWNLOAD_POLICY.before_request(url, attempt)
+        req = urllib.request.Request(url, headers={'User-Agent': USER_AGENT})
+        try:
+            with urllib.request.build_opener(SafeRedirect(DOWNLOAD_POLICY, attempt)).open(req, timeout=90) as r, path.open('wb') as f:
+                check_url(r.url)
+                total = 0
+                for data in iter(lambda: r.read(1024*1024), b''):
+                    total += len(data)
+                    if total > MAX_DOWNLOAD:
+                        raise ValueError('Input exceeds the 150 MiB safety limit')
+                    f.write(data)
+            if total == 0:
+                raise ValueError('Empty media')
+            DOWNLOAD_POLICY.record('source_download_completed', source_host=urllib.parse.urlsplit(url).hostname,
+                                   attempt=attempt, bytes=total)
+            return
+        except urllib.error.HTTPError as exc:
+            if exc.code != 429:
+                raise
+            DOWNLOAD_POLICY.rate_limited(exc, exc.url or url, attempt)
 
 
 def wrapped(draw, text, font, max_width):
@@ -126,13 +222,25 @@ def image_cta(job, work):
     return base
 
 
-def compact_preview(image: Path, destination: Path):
+def compact_preview(image: Path, destination: Path, *, detail=False):
     im=Image.open(image).convert('RGB')
     im.thumbnail((270,480), Image.Resampling.LANCZOS)
     im=im.quantize(colors=24,method=Image.Quantize.MEDIANCUT)
     im.save(destination,format='PNG',optimize=True)
     encoded=base64.b64encode(destination.read_bytes()).decode('ascii')
     destination.with_suffix('.b64').write_text('\n'.join(encoded[i:i+100] for i in range(0,len(encoded),100)),encoding='ascii')
+    if detail:
+        with Image.open(image) as source:
+            detailed = source.convert('RGB')
+        detailed.thumbnail((1600, 1600), Image.Resampling.LANCZOS)
+        for quality in list(range(88, 0, -4)) + [1]:
+            buffer = io.BytesIO()
+            detailed.save(buffer, format='JPEG', quality=quality, optimize=True)
+            if buffer.tell() <= DETAIL_MAX_BYTES:
+                destination.with_name(destination.stem + '-detail.jpg').write_bytes(buffer.getvalue())
+                break
+        else:
+            raise ValueError('Full-color detail preview exceeds 900 KiB at the supported quality range')
 
 
 def silent_video(image: Path, out: Path, seconds: float=18):
@@ -240,6 +348,8 @@ def finish_video(job,work,outdir):
 
 
 def main():
+    global DOWNLOAD_POLICY
+    DOWNLOAD_POLICY = DownloadPolicy()
     ap=argparse.ArgumentParser();ap.add_argument('--manifest',required=True);ap.add_argument('--output',required=True);ns=ap.parse_args(); raw=Path(ns.manifest).read_bytes();batch=json.loads(raw)
     if batch.get('approved') is not True or batch.get('paid_generation_allowed') is not False: raise ValueError('Explicit approval and no-paid-generation flags are required')
     jobs=batch['jobs'];ids=[x['id'] for x in jobs]
@@ -247,6 +357,7 @@ def main():
     key=hashlib.sha256(raw).hexdigest()[:16];output=Path(ns.output)/key;output.mkdir(parents=True,exist_ok=True); report={'batch_sha256':hashlib.sha256(raw).hexdigest(),'batch_id':key,'paid_ai_credits_used':0,'jobs':[]}; (output/'source_manifest.json').write_bytes(raw)
     for job in jobs:
         record={'id':job['id'],'mode':job['mode'],'status':'failed','source_url':job.get('source_url'),'attribution':job.get('attribution'),'title':job.get('title'),'text':job.get('text')}
+        event_start = len(DOWNLOAD_POLICY.events)
         try:
             with tempfile.TemporaryDirectory() as td:
                 work=Path(td)
@@ -261,17 +372,32 @@ def main():
                 elif job['mode']=='image_music_video':
                     src=work/'source.img';download(job['source_url'],src); im=Image.open(src).convert('RGB'); source_jpg=work/'source.jpg';im.save(source_jpg,quality=96,subsampling=0); compact_preview(source_jpg,output/(job['id']+'-qa.png')); vid=output/(job['id']+'.mp4'); record['final_duration']=music_video(source_jpg,vid,float(job.get('seconds',35))); record.update({'music_embedded':True,'music_source':'original_local_synth_no_external_license','narration':False,'source_visual_preserved':True})
                 elif job['mode']=='image_jpeg_copy':
-                    source=work/'source.img';download(job['source_url'],source); im=Image.open(source).convert('RGB'); jpg=output/(job['id']+'.jpg');im.save(jpg,quality=96,subsampling=0); compact_preview(jpg,output/(job['id']+'-qa.png')); record.update({'source_visual_preserved':True,'narration':False,'image_size':[im.width,im.height]})
+                    source=work/'source.img';download(job['source_url'],source); im=Image.open(source).convert('RGB'); jpg=output/(job['id']+'.jpg');im.save(jpg,quality=96,subsampling=0); compact_preview(jpg,output/(job['id']+'-qa.png'),detail=job.get('detail_preview') is True); record.update({'source_visual_preserved':True,'narration':False,'image_size':[im.width,im.height]})
                 elif job['mode']=='photo_dialogue_carousel': record.update(photo_dialogue_carousel(job,work,output))
                 elif job['mode']=='preview':
-                    source=work/'source.img';download(job['source_url'],source); compact_preview(source,output/(job['id']+'.png'))
+                    source=work/'source.img';download(job['source_url'],source)
+                    expected = job.get('expected_source_sha256')
+                    if expected is not None:
+                        actual = digest(source)
+                        if not isinstance(expected, str) or not re.fullmatch(r'[0-9a-f]{64}', expected) or actual != expected:
+                            raise ValueError('Preview source SHA256 does not match the expected exact bytes')
+                        record['verified_source_sha256'] = actual
+                    compact_preview(source,output/(job['id']+'.png'),detail=job.get('detail_preview') is True)
                 else: raise ValueError('Unknown job mode')
             record['status']='rendered'; record['files']=[{'name':p.name,'bytes':p.stat().st_size,'sha256':digest(p)} for p in sorted(output.glob(job['id']+'*')) if p.suffix != '.b64' and not p.name.endswith('.concat.txt')]
             if any(f['bytes']>MAX_OUTPUT for f in record['files']): raise ValueError('Output exceeds the 64 MiB repository safety limit')
         except Exception as exc:
             record['status']='failed';record['error']=str(exc)[:1800]
+            if isinstance(exc, RateLimitedBatch):
+                record['source_request_policy'] = DOWNLOAD_POLICY.stop_reason
             for p in output.glob(job['id']+'*'):p.unlink()
+        record['download_events'] = DOWNLOAD_POLICY.events[event_start:]
         report['jobs'].append(record); print(json.dumps({'id':record['id'],'status':record['status'],'error':record.get('error')},ensure_ascii=False),flush=True)
+    report['download_policy'] = {'wikimedia_minimum_interval_seconds': WIKIMEDIA_INTERVAL,
+        'default_429_cooldown_seconds': DEFAULT_429_COOLDOWN, 'maximum_retry_after_seconds': MAX_RETRY_AFTER,
+        'maximum_retries': 1, 'batch_429_count': DOWNLOAD_POLICY.rate_limits,
+        'source_requests_stopped': DOWNLOAD_POLICY.stop_reason is not None,
+        'stop_reason': DOWNLOAD_POLICY.stop_reason, 'events': DOWNLOAD_POLICY.events}
     (output/'manifest.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8'); (output/'summary.json').write_text(json.dumps({'batch_id':key,'paid_ai_credits_used':0,'jobs':[{k:r.get(k) for k in ['id','status','card_count','final_duration','music_embedded','youtube_music_embedded','error']} for r in report['jobs']]},ensure_ascii=False,indent=2),encoding='utf-8'); print('REPORT_PATH='+str(output/'manifest.json'))
 
 if __name__=='__main__': main()
