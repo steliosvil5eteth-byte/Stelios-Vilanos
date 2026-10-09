@@ -1,0 +1,20 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-09T16:34:14.035Z",
+  "job_id": "2026-10-09-tiktok-10",
+  "story_id": "tiktok-20261009-10-turritopsis-lifecycle",
+  "changes": [
+    {
+      "before": "μια εντυπωσιακή επιστροφή στην ανάπτυξη",
+      "after": "η επιστροφή σε προηγούμενο στάδιο ανάπτυξης"
+    }
+  ],
+  "old_script_sha256": "95e6830dbd0374d16317c57c4353ee98067214fc9235c4d92aaf89eec97da841",
+  "new_script_sha256": "bb29f26e49cad085d26497bb0e96c52bc579af640d3720b0fa89ab74fb4a0044",
+  "prior_final_sha256": "33e11285f73bd090d7146f5dee1d6764b79e0be183b1ad3a103909dbef481bfa",
+  "interpretation": "Full medium and one unconditioned84.8–91.3-second window both transcribed μη εντυπωσιακή in place of μια εντυπωσιακή. This is ambiguous model evidence, not proof of an audible error. Root authorized a grammatical equivalent avoiding that article-adjective boundary.",
+  "scope": "Equivalent explicit developmental-stage wording avoids an ASR-detected positive/negative ambiguity. The preceding positive factual conclusion remains unchanged.",
+  "actual_audio_listened": false,
+  "passed_final_review": false,
+  "global_gates_modified": false
+}
