@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-09T16:11:15.156Z",
+  "job_id": "2026-10-09-facebook-03",
+  "story_id": "FACEBOOK_20261009_03_ALICE_GUY_BLACHE_CINEMA",
+  "scope": "Use the clearly spoken surname while preserving the full historical written name and all factual content.",
+  "changes": [
+    {
+      "before": "Η Άλις Γκι Μπλασέ εργαζόταν",
+      "after": "Η Άλις Μπλασέ εργαζόταν"
+    },
+    {
+      "before": "Η Γκι Μπλασέ αναζήτησε",
+      "after": "Η Μπλασέ αναζήτησε"
+    }
+  ],
+  "prior_final_sha256": "0ecdc8c3a9e29abaea6a971df4f9c5622b64effe24346f8d22ea7f35cde8a570",
+  "old_script_sha256": "dc0d97437fe19e2defea203069b8575d4b29063b8b45e6c63f1673d25865f6dd",
+  "new_script_sha256": "73c55a3f737fa6c2e00add3117f05602da5c28a2418936621c6eea4efb0d2199",
+  "observed_windows": [
+    {
+      "seconds": [
+        4.8,
+        8.4
+      ],
+      "asr": "Και άλλης γραμμακά παγιότα μπλασέ, εργαζόταν πίσω από την κάμερα, όταν ο χειροκρότητας"
+    },
+    {
+      "seconds": [
+        75.2,
+        79.5
+      ],
+      "asr": "Οι γαμακά παγιώτα μπλασσέ αναζήτησαν αργότερα τις δικές τις ταινίες και γραφεύτησαν."
+    }
+  ],
+  "interpretation": "Full unprompted offline medium ASR and two separate short windows consistently output gamma/kappa/iota-like words at both occurrences of Γκι. This is objective ASR evidence, not a claim of actual hearing. The minimal spoken name avoids those letter readings without changing identity or historical claims.",
+  "actual_audio_listened": false,
+  "passed_final_review": false,
+  "global_gates_modified": false
+}
