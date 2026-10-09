@@ -1,0 +1,27 @@
+{
+  "program": "PLATFORM_SPECIFIC_TEN_DAILY",
+  "brand_id": 7076410,
+  "checkpoint_at_utc": "2026-10-09 13:35:16 UTC",
+  "requested_per_platform": 10,
+  "one_platform_per_story": true,
+  "current_full_narrations": 40,
+  "local_final_exports": {
+    "facebook": 2,
+    "instagram": 3,
+    "tiktok": 1,
+    "youtube": 1
+  },
+  "new_scheduled": 0,
+  "new_published": 0,
+  "remaining_final_exports": 33,
+  "actual_audio_listened": false,
+  "passed_final_review": false,
+  "publishable": false,
+  "status": "PREPARATION_CHECKPOINT_AWAITING_REQUIRED_INPUT",
+  "external_transfer_block": "Automatic approval review rejected unpublished Nisyros MP4 transfer to HeyGen as an intermediate host; explicit consent for that destination is required.",
+  "specific_audio_ambiguity": "Mystras nineteenth-century wording recognized as eleventh century by local ASR; keep held for actual listening.",
+  "source_acquisition": "Sole image worker stopped on tunnel403, no retries or route change.",
+  "audio_corrections": "Ten Γι’ contractions expanded to Για; Daphni Ό,τι expanded to Αυτό που. Truncated audio and failed video revisions are preserved and excluded.",
+  "automation_activated": false,
+  "private_artifacts": "Current complete media, scripts, source packs and QA handoffs saved privately; do not infer publication from this public checkpoint."
+}

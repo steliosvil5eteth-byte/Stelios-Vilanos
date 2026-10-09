@@ -4,9 +4,9 @@
   "brandName": "Ιστορίες που μας αγγίζουν",
   "owner": "interactive-recovery-20261009T121500Z-root",
   "created_at": "2026-10-09T12:15:33.447Z",
-  "updated_at": "2026-10-09T12:43:14.647Z",
-  "expires_at": "2026-10-09T15:43:14.647Z",
-  "status": "ACTIVE",
+  "updated_at": "2026-10-09 13:35:16 UTC",
+  "expires_at": "2026-10-09 13:35:16 UTC",
+  "status": "RELEASED_BLOCKED_AWAITING_REQUIRED_INPUT",
   "authorized_actions": [
     "public_source_asset_acquisition",
     "existing_public_script_zero_paid_credit_narration",
@@ -79,12 +79,21 @@
       "2026-10-09-instagram-01"
     ]
   },
-  "completed_narrations": 1,
+  "completed_narrations": 40,
   "external_transfer_block": {
     "destination": "HeyGen asset upload",
     "status": "AUTOMATIC_APPROVAL_REVIEW_REJECTED",
     "bytes_uploaded_verified": false,
     "upload_not_completed": true,
     "reason": "No explicit authorization for third-party staging destination; do not retry without authorization or a materially safer approved destination."
-  }
+  },
+  "released_at": "2026-10-09 13:35:16 UTC",
+  "completed_final_exports": 7,
+  "new_published_posts": 0,
+  "remaining_final_exports": 33,
+  "release_reason": "Authorized preparation checkpoint saved. HeyGen staging transfer was rejected by automatic approval review because that intermediate destination needs explicit consent. Actual final audio listening is unavailable. No publication or auto-activation occurred.",
+  "PASSED_FINAL_REVIEW": false,
+  "publishing_permitted": false,
+  "background_production_running": false,
+  "source_acquisition_state": "Stopped after an HTTP tunnel403; no retry or reroute"
 }

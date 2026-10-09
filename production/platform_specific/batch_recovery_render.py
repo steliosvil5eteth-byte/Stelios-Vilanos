@@ -42,8 +42,15 @@ def digest(path: Path) -> str:
     return value.hexdigest()
 
 
-def run(args: list[str], cwd: Path | None = None) -> str:
-    result = subprocess.run(args, cwd=cwd, text=True, capture_output=True)
+def run(args: list[str], cwd: Path | None = None, log_path: Path | None = None) -> str:
+    if Path(args[0]).name == "ffmpeg" and "-nostdin" not in args:
+        args = [args[0], "-nostdin", *args[1:]]
+    result = subprocess.run(args, cwd=cwd, stdin=subprocess.DEVNULL, text=True, capture_output=True)
+    if log_path is not None:
+        log_path.parent.mkdir(parents=True, exist_ok=True)
+        log_path.write_text(json.dumps({"command": args, "cwd": str(cwd) if cwd else None,
+                                       "returncode": result.returncode, "stdout": result.stdout,
+                                       "stderr": result.stderr}, ensure_ascii=False, indent=2) + "\n")
     if result.returncode:
         raise RenderBlocked(f"{Path(args[0]).name} failed: {result.stderr[-2500:]}")
     return result.stdout
@@ -93,17 +100,60 @@ def derive_narration(mp3: Path, boundaries_path: Path, script_path: Path, output
     script = script_path.read_text(encoding="utf-8").strip()
     paragraphs = [part.split() for part in re.split(r"\n\s*\n", script) if part.strip()]
     tokens = [token for paragraph in paragraphs for token in paragraph]
-    boundaries = json.loads(boundaries_path.read_text(encoding="utf-8"))
-    if len(paragraphs) not in (8, 9) or len(boundaries) != len(tokens):
-        raise RenderBlocked("Actual word boundaries do not align one-to-one with the eight- or nine-paragraph script")
+    actual_events = json.loads(boundaries_path.read_text(encoding="utf-8"))
+    if len(paragraphs) not in (8, 9):
+        raise RenderBlocked("The exact script must have eight or nine paragraphs")
     audio_duration = float(probe(mp3)["format"]["duration"])
-    for i, (token, boundary) in enumerate(zip(tokens, boundaries)):
-        if words(token) != words(boundary["text"]):
-            raise RenderBlocked(f"Actual speech word {i + 1} differs from the exact script")
+    for i, boundary in enumerate(actual_events):
         if not 0 <= boundary["start"] < boundary["end"] <= audio_duration + .06:
             raise RenderBlocked(f"Actual speech word {i + 1} has an invalid timestamp")
-        if i and boundary["start"] < boundaries[i - 1]["end"] - .003:
+        if i and boundary["start"] < actual_events[i - 1]["end"] - .003:
             raise RenderBlocked("Actual speech word timestamps overlap")
+    # Find the smallest indivisible units whose boundaries are BOTH written
+    # token boundaries and actual speech-event boundaries. This permits Ό,τι
+    # as two real events, or a single event such as "1921 Ύπατος", without
+    # splitting an event or inventing an internal timestamp.
+    lexical_script, script_ends = [], {0: 0}
+    for index, token in enumerate(tokens, 1):
+        parts = words(token)
+        if not parts:
+            raise RenderBlocked("A script token has no lexical content")
+        lexical_script.extend(parts)
+        script_ends[len(lexical_script)] = index
+    lexical_events, event_ends = [], {0: 0}
+    for index, event in enumerate(actual_events, 1):
+        parts = words(event["text"])
+        if not parts:
+            raise RenderBlocked("A word event has no lexical content")
+        lexical_events.extend(parts)
+        event_ends[len(lexical_events)] = index
+    if lexical_script != lexical_events:
+        raise RenderBlocked("The full actual speech-event lexical sequence differs from the exact script")
+    common_ends = sorted(set(script_ends) & set(event_ends))
+    paragraph_ends, lexical_cursor = [], 0
+    for paragraph in paragraphs:
+        lexical_cursor += sum(len(words(token)) for token in paragraph)
+        paragraph_ends.append(lexical_cursor)
+    if not set(paragraph_ends).issubset(common_ends):
+        raise RenderBlocked("An indivisible actual speech event crosses a narration paragraph boundary")
+    boundaries, token_event_alignment = [], []
+    timed_paragraphs = [[] for _ in paragraphs]
+    paragraph_index, previous_end = 0, 0
+    for end in common_ends[1:]:
+        token_start, token_end = script_ends[previous_end], script_ends[end]
+        event_start, event_end = event_ends[previous_end], event_ends[end]
+        text = " ".join(tokens[token_start:token_end])
+        boundaries.append({"text": text, "start": actual_events[event_start]["start"],
+                           "end": actual_events[event_end - 1]["end"]})
+        token_event_alignment.append({"script_token_start_index": token_start,
+                                      "script_token_end_index_exclusive": token_end,
+                                      "actual_event_start_index": event_start,
+                                      "actual_event_end_index_exclusive": event_end})
+        timed_paragraphs[paragraph_index].append(text)
+        if end == paragraph_ends[paragraph_index]:
+            paragraph_index += 1
+        previous_end = end
+    paragraphs = timed_paragraphs
     font = ImageFont.truetype(str(FONT), SUB_SIZE)
     groups, offset = [], 0
     for paragraph_number, paragraph in enumerate(paragraphs, 1):
@@ -118,7 +168,9 @@ def derive_narration(mp3: Path, boundaries_path: Path, script_path: Path, output
                     wrap_two_lines(caption, font, SUB_WIDTH)
                 except RenderBlocked:
                     continue
-                count = end - start
+                count = sum(len(unit.split()) for unit in paragraph[start:end])
+                if count > 7:
+                    continue
                 elapsed = boundaries[offset + end - 1]["end"] - boundaries[offset + start]["start"]
                 if elapsed > 3.6:
                     continue
@@ -136,8 +188,13 @@ def derive_narration(mp3: Path, boundaries_path: Path, script_path: Path, output
         if not math.isfinite(cost):
             raise RenderBlocked("Actual speech cannot fit safe short subtitle cues without changing timestamps")
         for start, end in chosen:
+            first_alignment = token_event_alignment[offset + start]
+            last_alignment = token_event_alignment[offset + end - 1]
             groups.append({"number": len(groups) + 1, "paragraph": paragraph_number,
-                           "word_start_index": offset + start, "word_end_index_exclusive": offset + end,
+                           "word_start_index": first_alignment["script_token_start_index"],
+                           "word_end_index_exclusive": last_alignment["script_token_end_index_exclusive"],
+                           "actual_event_start_index": first_alignment["actual_event_start_index"],
+                           "actual_event_end_index_exclusive": last_alignment["actual_event_end_index_exclusive"],
                            "start": boundaries[offset + start]["start"],
                            "end": boundaries[offset + end - 1]["end"],
                            "text": " ".join(paragraph[start:end])})
@@ -159,7 +216,9 @@ def derive_narration(mp3: Path, boundaries_path: Path, script_path: Path, output
     read_cues(srt, script, decoded_duration)
     audit = {"source_mp3_sha256": digest(mp3), "actual_word_boundaries_sha256": digest(boundaries_path),
              "script_sha256": digest(script_path), "wav_sha256": digest(wav), "srt_sha256": digest(srt),
-             "script_words": len(tokens), "actual_boundary_count": len(boundaries), "subtitle_cues": groups,
+             "script_words": len(tokens), "actual_boundary_count": len(actual_events), "subtitle_cues": groups,
+             "atomic_speech_units": token_event_alignment,
+             "subtitle_word_indices_reference": "Script whitespace tokens; each maps to complete actual events above",
              "word_alignment_exact": True, "paragraph_boundaries_preserved": True,
              "source_duration_seconds": audio_duration, "decoded_duration_seconds": decoded_duration,
              "timing_source": "Actual WordBoundary events from this exact existing narration",
@@ -224,13 +283,24 @@ def read_sources(path: Path, paragraph_count: int) -> list[dict]:
     inventory = json.loads(path.read_text(encoding="utf-8"))
     sources = sorted(inventory["assets"], key=lambda item: item["scene"])
     if [item["scene"] for item in sources] != list(range(1, paragraph_count + 1)):
-        raise RenderBlocked("Every narration paragraph requires one unique, ordered source asset")
-    if len({item["sha256"] for item in sources}) != paragraph_count:
-        raise RenderBlocked("A source asset repeats")
+        raise RenderBlocked("Every narration paragraph requires one ordered source asset")
+    seen_sources = {}
     for source in sources:
         if source.get("paragraph_index", source["scene"]) != source["scene"]:
             raise RenderBlocked("Source paragraph mapping is out of order")
-        for field in ("asset_label", "source_page_url", "creator", "license", "license_url"):
+        original_diagram = (source.get("original_user_composition") is True
+                            and source.get("kind") == "explanatory_diagram")
+        provenance_fields = ["asset_label", "creator", "license"]
+        if original_diagram:
+            provenance_fields += ["rightsholder", "copyright_statement"]
+            scientific_sources = source.get("scientific_source_urls")
+            if (not isinstance(scientific_sources, list) or not scientific_sources
+                    or any(not isinstance(url, str) or not re.match(r"https?://[^/\\s]+", url)
+                           for url in scientific_sources)):
+                raise RenderBlocked("An original explanatory diagram requires its scientific-source URLs")
+        else:
+            provenance_fields += ["source_page_url", "license_url"]
+        for field in provenance_fields:
             if not isinstance(source.get(field), str) or not source[field].strip():
                 raise RenderBlocked(f"Source provenance field {field} is missing")
         source_path = Path(source.get("path", source.get("local_path", ""))).resolve()
@@ -239,13 +309,26 @@ def read_sources(path: Path, paragraph_count: int) -> list[dict]:
         with Image.open(source_path) as bitmap:
             bitmap.verify()
         source["path"] = str(source_path)
+        previous = seen_sources.get(source["sha256"])
+        if previous is not None:
+            reason = source.get("source_reuse_reason", "")
+            if not isinstance(reason, str) or not reason.strip():
+                raise RenderBlocked("An intentionally repeated source needs source_reuse_reason")
+            identity_fields = ("source_page_url", "creator", "license", "license_url",
+                               "original_user_composition", "kind", "rightsholder",
+                               "copyright_statement", "scientific_source_urls")
+            if any(source.get(field) != previous.get(field) for field in identity_fields):
+                raise RenderBlocked("Repeated source bytes have inconsistent source identity or attribution")
+            source["source_reused_from_scene"] = previous["scene"]
+        else:
+            seen_sources[source["sha256"]] = source
     return sources
 
 
 def render_frame(source: dict, output: Path) -> dict:
     with Image.open(source["path"]) as opened:
         photo = ImageOps.exif_transpose(opened).convert("RGB")
-    # A quiet photographic background maintains the vertical canvas while the
+    # A quiet same-image background maintains the vertical canvas while the
     # foreground of geographically wide photos remains complete and undistorted.
     background = ImageOps.fit(photo, (WIDTH, HEIGHT), method=Image.Resampling.LANCZOS)
     background = background.filter(ImageFilter.GaussianBlur(42))
@@ -282,7 +365,7 @@ def render_frame(source: dict, output: Path) -> dict:
     return {"scene": source["scene"], "layout": mode, "source_dimensions": list(photo.size),
             "foreground_rect": [x, y, foreground.width, foreground.height],
             "complete_source_preserved": mode == "contain", "crop_focus": [focus_x, focus_y],
-            "frame_sha256": digest(output), "photographic_background": "Blurred darker same-source photograph",
+            "frame_sha256": digest(output), "background": "Blurred darker same-source image",
             "visible_credit": credit, "visible_context_label": label,
             "final_visual_review_passed": False}
 
@@ -393,9 +476,10 @@ def build(args: argparse.Namespace) -> dict:
     if len(streams) != 1 or streams[0].get("channels") != 1:
         raise RenderBlocked("One mono narration track is required")
     duration = float(metadata["format"]["duration"])
-    maximum = 150 if inventory["platform"] == "youtube" else 110
-    if not 80 <= duration <= maximum:
-        raise RenderBlocked(f"Measured narration duration {duration:.3f}s is outside 80–{maximum}s; never pad or resynthesize automatically")
+    maximum = 150 if inventory["platform"] == "youtube" else None
+    if duration < 80 or (maximum is not None and duration > maximum):
+        limit = f"80–{maximum}s" if maximum is not None else "at least 80s"
+        raise RenderBlocked(f"Measured narration duration {duration:.3f}s must be {limit}; never pad or resynthesize automatically")
     cues = read_cues(srt, script, duration)
     scenes = scene_timeline(script, cues, duration)
     sources = read_sources(args.inventory.resolve(), len(scenes))
@@ -404,8 +488,15 @@ def build(args: argparse.Namespace) -> dict:
               "created_at_utc": dt.datetime.now(dt.timezone.utc).isoformat(),
               "status": "DRY_RUN_INPUTS_VALIDATED", "voice_claim_from_input": args.voice,
               "audio": {"path": str(audio), "sha256": digest(audio), "duration_seconds": duration},
+              "duration_limits_seconds": {"minimum": 80, "maximum": maximum},
               "script_sha256": digest(script_path), "input_srt_sha256": digest(srt),
               "source_inventory_sha256": digest(args.inventory), "source_assets": sources,
+              "unique_source_count": len({source["sha256"] for source in sources}),
+              "source_reuse": [{"scene": source["scene"],
+                                "reuses_scene": source["source_reused_from_scene"],
+                                "sha256": source["sha256"],
+                                "reason": source["source_reuse_reason"]}
+                               for source in sources if "source_reused_from_scene" in source],
               "narration_text_sha256": narration_hash,
               "scenes": scenes, "subtitle_font_px": SUB_SIZE, "subtitle_max_lines": 2,
               "subtitle_max_width_px": SUB_WIDTH, "subtitle_cues": cues,
@@ -421,12 +512,26 @@ def build(args: argparse.Namespace) -> dict:
     frames, segments = output / "scene_frames", output / "segments"
     frames.mkdir(); segments.mkdir()
     report["layouts"] = []
+    report["segment_checks"] = []
     for source, scene in zip(sources, scenes):
         image_path = frames / f"{source['scene']:02d}.jpg"
         report["layouts"].append(render_frame(source, image_path))
+        segment_path = segments / f"{source['scene']:02d}.mp4"
         run(["ffmpeg", "-v", "error", "-loop", "1", "-framerate", str(FPS), "-i", str(image_path),
              "-frames:v", str(scene["frames"]), "-an", "-c:v", "libx264", "-preset", "fast", "-crf", "19",
-             "-pix_fmt", "yuv420p", "-threads", str(args.threads), str(segments / f"{source['scene']:02d}.mp4")])
+             "-pix_fmt", "yuv420p", "-threads", str(args.threads), str(segment_path)],
+            log_path=output / "execution_logs" / f"scene-{source['scene']:02d}.json")
+        segment_info = probe(segment_path)
+        segment_video = [stream for stream in segment_info["streams"] if stream["codec_type"] == "video"]
+        if (len(segment_video) != 1
+                or (segment_video[0].get("width"), segment_video[0].get("height")) != (WIDTH, HEIGHT)
+                or int(segment_video[0].get("nb_frames", 0)) != scene["frames"]):
+            raise RenderBlocked(f"Scene {source['scene']} did not produce its complete expected video frames")
+        report["segment_checks"].append({"scene": source["scene"], "path": str(segment_path),
+                                         "bytes": segment_path.stat().st_size,
+                                         "expected_frames": scene["frames"],
+                                         "actual_frames": int(segment_video[0]["nb_frames"]),
+                                         "format_probe_passed": True})
     (output / "segments.ffconcat").write_text("ffconcat version 1.0\n" + "".join(f"file 'segments/{i:02d}.mp4'\n" for i in range(1, len(scenes) + 1)), encoding="utf-8")
     write_ass(output / "final.ass", args.title or inventory["title"], cues, duration,
               inventory.get("disclosure", "Αρχειακό υλικό · Συνθετική αφήγηση"))
@@ -435,7 +540,8 @@ def build(args: argparse.Namespace) -> dict:
          "-map", "0:v:0", "-map", "1:a:0", "-vf", "ass=final.ass", "-t", f"{duration:.6f}",
          "-c:v", "libx264", "-preset", "fast", "-crf", "19", "-threads", str(args.threads),
          "-pix_fmt", "yuv420p", "-r", str(FPS), "-c:a", "aac", "-b:a", "160k", "-ar", "48000", "-ac", "1",
-         "-movflags", "+faststart", str(final)], cwd=output)
+         "-movflags", "+faststart", str(final)], cwd=output,
+        log_path=output / "execution_logs" / "final.json")
     final_info = probe(final)
     video = [stream for stream in final_info["streams"] if stream["codec_type"] == "video"]
     audio_streams = [stream for stream in final_info["streams"] if stream["codec_type"] == "audio"]
@@ -443,7 +549,10 @@ def build(args: argparse.Namespace) -> dict:
         raise RenderBlocked("Final format validation failed")
     if abs(float(final_info["format"]["duration"]) - duration) > .1:
         raise RenderBlocked("Final duration does not preserve complete narration")
-    run(["ffmpeg", "-v", "error", "-i", str(final), "-f", "null", "-"])
+    if any(abs(float(stream.get("duration", 0)) - duration) > .1 for stream in [video[0], audio_streams[0]]):
+        raise RenderBlocked("An individual final audio or video stream ends before the complete narration")
+    run(["ffmpeg", "-v", "error", "-i", str(final), "-f", "null", "-"],
+        log_path=output / "execution_logs" / "final-decode.json")
     report["review_frames"] = create_review_frames(final, cues, scenes, output)
     report["review_contact_sheets"] = create_review_sheets(report["review_frames"], output)
     report["status"] = "NEEDS_FINAL_REVIEW"

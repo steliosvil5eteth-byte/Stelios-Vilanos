@@ -12,6 +12,7 @@ import hashlib
 import html
 import json
 import ssl
+import subprocess
 import urllib.request
 from pathlib import Path
 
@@ -59,7 +60,20 @@ async def synthesize(job, output):
         if audio_path.stat().st_size < 1024 or len(boundaries) < 20:
             raise RuntimeError("Incomplete audio or boundary response")
         write(output / "word_boundaries.json", boundaries)
-        attempt.update(status="NARRATION_RENDERED_NEEDS_REVIEW", audio_bytes=audio_path.stat().st_size, audio_sha256=hashlib.sha256(audio_path.read_bytes()).hexdigest(), word_boundaries=len(boundaries))
+        # Word events can cover the entire script even when a service response
+        # silently omits encoded audio. Inspect a complete PCM decode before
+        # reporting a usable narration; neither a header nor event count proves
+        # that the actual sound data reaches the final word.
+        pcm = subprocess.run([
+            "ffmpeg", "-v", "error", "-i", str(audio_path),
+            "-ac", "1", "-ar", "24000", "-f", "s16le", "-",
+        ], capture_output=True, check=True).stdout
+        decoded_seconds = len(pcm) / 48000
+        last_word_end = max(float(event["end"]) for event in boundaries)
+        attempt.update(audio_bytes=audio_path.stat().st_size, audio_sha256=hashlib.sha256(audio_path.read_bytes()).hexdigest(), word_boundaries=len(boundaries), decoded_audio_seconds=decoded_seconds, last_word_end_seconds=last_word_end, complete_word_span_fits_audio=decoded_seconds + 0.05 >= last_word_end)
+        if decoded_seconds + 0.05 < last_word_end:
+            raise RuntimeError("Actual decoded audio ends before returned final word boundary")
+        attempt.update(status="NARRATION_RENDERED_NEEDS_REVIEW")
     except Exception as exc:
         # Do not echo service URLs, client headers or credentials in errors.
         attempt.update(status="FAILED_NO_AUTOMATIC_RETRY", error_type=type(exc).__name__, audio_bytes=audio_path.stat().st_size if audio_path.exists() else 0)
