@@ -2514,7 +2514,7 @@
       "hook": "Αν ανεβείτε νοερά αυτή την πλαγιά, θα περάσετε από σπίτια, εκκλησίες, παλάτια και κάστρο.",
       "story_type": "documented_place_nature_or_object",
       "status": "RESEARCH_COMPLETE_UNRENDERED",
-      "word_count": 248,
+      "word_count": 250,
       "narration_language": "el-GR",
       "requested_voice": "el-GR-NestorasNeural",
       "duration_target_seconds": [
@@ -2536,15 +2536,15 @@
         "Passed to Byzantine rule in 1262.",
         "Became seat of the Despotate of Morea in the mid-fourteenth century.",
         "Church frescoes and urban layout preserve late Byzantine culture.",
-        "Population shifted gradually toward new Sparta in the nineteenth century."
+        "UNESCO Outstanding Universal Value states that inhabitants gradually started moving to modern Sparta after1834; this is not a claim of a single exact abandonment year."
       ],
       "sources": [
         {
           "label": "UNESCO — Archaeological Site of Mystras",
           "url": "https://whc.unesco.org/en/list/511/",
-          "retrieval_ref": "turn40view0",
+          "retrieval_ref": "turn91view0",
           "source_type": "primary_or_custodial_institution",
-          "access_note": "Retrieved by public web search and/or page open on 2026-10-08; an inaccessible full open is not represented as fully read."
+          "access_note": "Full primary UNESCO page opened2026-10-09. Outstanding Universal Value / Brief synthesis states gradual migration to modern Sparta after1834. The short introductory abandonment date is not used for this migration claim."
         },
         {
           "label": "Hellenic Ministry of Culture — Mystras castle route",
@@ -2562,7 +2562,7 @@
         {
           "scene": 1,
           "visual_prompt": "Vertical 9:16 photorealistic documentary reconstruction. Accurate setting and period details; no invented evidence, no text, no logos, no watermark, no avatar, no recognizable child faces. Use a distinct composition for this scene. Wide hillside view with the castle above the layered medieval city.",
-          "estimated_share_of_narration": 0.1129,
+          "estimated_share_of_narration": 0.112,
           "actual_duration_seconds": null,
           "status": "PLANNED_NOT_GENERATED",
           "narration_paragraph_index": 1
@@ -2570,7 +2570,7 @@
         {
           "scene": 2,
           "visual_prompt": "Vertical 9:16 photorealistic documentary reconstruction. Accurate setting and period details; no invented evidence, no text, no logos, no watermark, no avatar, no recognizable child faces. Use a distinct composition for this scene. Accurate upper castle masonry overlooking the Spartan plain.",
-          "estimated_share_of_narration": 0.1169,
+          "estimated_share_of_narration": 0.116,
           "actual_duration_seconds": null,
           "status": "PLANNED_NOT_GENERATED",
           "narration_paragraph_index": 2
@@ -2578,7 +2578,7 @@
         {
           "scene": 3,
           "visual_prompt": "Vertical 9:16 photorealistic documentary reconstruction. Accurate setting and period details; no invented evidence, no text, no logos, no watermark, no avatar, no recognizable child faces. Use a distinct composition for this scene. Stone gateway and descending path linking upper and lower city.",
-          "estimated_share_of_narration": 0.1169,
+          "estimated_share_of_narration": 0.116,
           "actual_duration_seconds": null,
           "status": "PLANNED_NOT_GENERATED",
           "narration_paragraph_index": 3
@@ -2586,7 +2586,7 @@
         {
           "scene": 4,
           "visual_prompt": "Vertical 9:16 photorealistic documentary reconstruction. Accurate setting and period details; no invented evidence, no text, no logos, no watermark, no avatar, no recognizable child faces. Use a distinct composition for this scene. Palace complex in its documented location on the slope.",
-          "estimated_share_of_narration": 0.1169,
+          "estimated_share_of_narration": 0.116,
           "actual_duration_seconds": null,
           "status": "PLANNED_NOT_GENERATED",
           "narration_paragraph_index": 4
@@ -2594,7 +2594,7 @@
         {
           "scene": 5,
           "visual_prompt": "Vertical 9:16 photorealistic documentary reconstruction. Accurate setting and period details; no invented evidence, no text, no logos, no watermark, no avatar, no recognizable child faces. Use a distinct composition for this scene. Reference-guided detail of a surviving Byzantine fresco, preserve observed damage.",
-          "estimated_share_of_narration": 0.1815,
+          "estimated_share_of_narration": 0.18,
           "actual_duration_seconds": null,
           "status": "PLANNED_NOT_GENERATED",
           "narration_paragraph_index": 5
@@ -2602,7 +2602,7 @@
         {
           "scene": 6,
           "visual_prompt": "Vertical 9:16 photorealistic documentary reconstruction. Accurate setting and period details; no invented evidence, no text, no logos, no watermark, no avatar, no recognizable child faces. Use a distinct composition for this scene. Ruined residential street and house thresholds, no fantasy market.",
-          "estimated_share_of_narration": 0.1169,
+          "estimated_share_of_narration": 0.116,
           "actual_duration_seconds": null,
           "status": "PLANNED_NOT_GENERATED",
           "narration_paragraph_index": 6
@@ -2610,7 +2610,7 @@
         {
           "scene": 7,
           "visual_prompt": "Vertical 9:16 photorealistic documentary reconstruction. Accurate setting and period details; no invented evidence, no text, no logos, no watermark, no avatar, no recognizable child faces. Use a distinct composition for this scene. Distant modern Sparta beyond the historic hillside, topography accurate.",
-          "estimated_share_of_narration": 0.125,
+          "estimated_share_of_narration": 0.132,
           "actual_duration_seconds": null,
           "status": "PLANNED_NOT_GENERATED",
           "narration_paragraph_index": 7
@@ -2618,7 +2618,7 @@
         {
           "scene": 8,
           "visual_prompt": "Vertical 9:16 photorealistic documentary reconstruction. Accurate setting and period details; no invented evidence, no text, no logos, no watermark, no avatar, no recognizable child faces. Use a distinct composition for this scene. Late-afternoon layered view showing homes, churches, palace and castle together.",
-          "estimated_share_of_narration": 0.1129,
+          "estimated_share_of_narration": 0.112,
           "actual_duration_seconds": null,
           "status": "PLANNED_NOT_GENERATED",
           "narration_paragraph_index": 8
@@ -2650,22 +2650,22 @@
       "video_rendered": false,
       "editorial_category": "place",
       "platform_rationale": "A concrete Greek place, natural formation, object or local craft with visual detail suited to an image-led narrative.",
-      "script": "Αν ανεβείτε νοερά αυτή την πλαγιά, θα περάσετε από σπίτια, εκκλησίες, παλάτια και κάστρο. Ο Μυστράς δεν είναι ένα μόνο μνημείο, αλλά η μορφή μιας ολόκληρης μεσαιωνικής πόλης.\n\nΗ αρχή του συνδέεται με το κάστρο που έχτισε το 1249 ο Φράγκος ηγεμόνας Γουλιέλμος Βιλλεαρδουίνος. Η οχυρή θέση πάνω από την περιοχή της Σπάρτης είχε προφανή στρατηγική σημασία.\n\nΤο 1262 το κάστρο πέρασε στους Βυζαντινούς. Γύρω και χαμηλότερα από αυτό αναπτύχθηκε σταδιακά η πόλη, με κατοίκους, διοικητικές λειτουργίες και θρησκευτικά ιδρύματα που άλλαξαν την εικόνα του λόφου.\n\nΑπό τα μέσα του δέκατου τέταρτου αιώνα, ο Μυστράς έγινε έδρα του Δεσποτάτου του Μορέως. Η πολιτική του θέση συνδέθηκε με οικοδομική δραστηριότητα και ένα ιδιαίτερα σημαντικό πολιτιστικό περιβάλλον.\n\nΣτις εκκλησίες σώζονται τοιχογραφίες που βοηθούν να κατανοήσουμε την τέχνη των τελευταίων βυζαντινών αιώνων. Οι μορφές, τα χρώματα και η αρχιτεκτονική φανερώνουν σχέσεις με την Κωνσταντινούπολη και άλλες περιοχές. Η σημασία τους βρίσκεται και στο ότι παραμένουν δεμένες με τον χώρο για τον οποίο δημιουργήθηκαν.\n\nΑλλά η πόλη δεν ήταν μόνο επίσημα κτίρια. Δρόμοι, πύλες, κατοικίες και πλατείες αποκαλύπτουν πώς οργανωνόταν η καθημερινότητα πάνω σε μια έντονη κλίση, ανάμεσα σε διαφορετικές ζώνες του οικισμού.\n\nΤον δέκατο ένατο αιώνα, η μετακίνηση κατοίκων προς τη νέα Σπάρτη άφησε σταδιακά τον μεσαιωνικό πυρήνα χωρίς την παλιά του ζωή. Η σημερινή εικόνα δεν είναι το αποτέλεσμα μιας στιγμιαίας εγκατάλειψης.\n\nΓια αυτό αξίζει να τον κοιτάμε σαν πόλη, όχι σαν σκηνικό. Κάθε επίπεδο της πλαγιάς κρατά διαφορετικό κομμάτι της ιστορίας του Μυστρά. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+      "script": "Αν ανεβείτε νοερά αυτή την πλαγιά, θα περάσετε από σπίτια, εκκλησίες, παλάτια και κάστρο. Ο Μυστράς δεν είναι ένα μόνο μνημείο, αλλά η μορφή μιας ολόκληρης μεσαιωνικής πόλης.\n\nΗ αρχή του συνδέεται με το κάστρο που έχτισε το 1249 ο Φράγκος ηγεμόνας Γουλιέλμος Βιλλεαρδουίνος. Η οχυρή θέση πάνω από την περιοχή της Σπάρτης είχε προφανή στρατηγική σημασία.\n\nΤο 1262 το κάστρο πέρασε στους Βυζαντινούς. Γύρω και χαμηλότερα από αυτό αναπτύχθηκε σταδιακά η πόλη, με κατοίκους, διοικητικές λειτουργίες και θρησκευτικά ιδρύματα που άλλαξαν την εικόνα του λόφου.\n\nΑπό τα μέσα του δέκατου τέταρτου αιώνα, ο Μυστράς έγινε έδρα του Δεσποτάτου του Μορέως. Η πολιτική του θέση συνδέθηκε με οικοδομική δραστηριότητα και ένα ιδιαίτερα σημαντικό πολιτιστικό περιβάλλον.\n\nΣτις εκκλησίες σώζονται τοιχογραφίες που βοηθούν να κατανοήσουμε την τέχνη των τελευταίων βυζαντινών αιώνων. Οι μορφές, τα χρώματα και η αρχιτεκτονική φανερώνουν σχέσεις με την Κωνσταντινούπολη και άλλες περιοχές. Η σημασία τους βρίσκεται και στο ότι παραμένουν δεμένες με τον χώρο για τον οποίο δημιουργήθηκαν.\n\nΑλλά η πόλη δεν ήταν μόνο επίσημα κτίρια. Δρόμοι, πύλες, κατοικίες και πλατείες αποκαλύπτουν πώς οργανωνόταν η καθημερινότητα πάνω σε μια έντονη κλίση, ανάμεσα σε διαφορετικές ζώνες του οικισμού.\n\nΜετά το χίλια οκτακόσια τριάντα τέσσερα, η μετακίνηση κατοίκων προς τη νέα Σπάρτη άφησε σταδιακά τον μεσαιωνικό πυρήνα χωρίς την παλιά του ζωή. Η σημερινή εικόνα δεν είναι το αποτέλεσμα μιας στιγμιαίας εγκατάλειψης.\n\nΓια αυτό αξίζει να τον κοιτάμε σαν πόλη, όχι σαν σκηνικό. Κάθε επίπεδο της πλαγιάς κρατά διαφορετικό κομμάτι της ιστορίας του Μυστρά. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
       "story_id": "INSTAGRAM_20261009_03_MYSTRAS_HILLSIDE_BYZANTINE_CITY",
       "local_date": "2026-10-09",
       "timezone": "Europe/Athens",
       "kind": "travel",
       "original_source_fingerprint": "instagram|mystras_hillside_byzantine_city",
       "topic_key": "mystras_hillside_byzantine_city",
-      "script_characters_editorial_estimate": 1640,
+      "script_characters_editorial_estimate": 1657,
       "voice": "el-GR-NestorasNeural",
       "target_duration_seconds": [
         80,
         110
       ],
       "estimated_duration_range_seconds_at_observed_156_to_180_wpm": [
-        82.7,
-        95.4
+        83.3,
+        96.2
       ],
       "actual_duration_seconds": null,
       "caption_disclosure_requires_final_asset_verification": true,
@@ -2695,7 +2695,24 @@
         "requires_replacement_narration": true,
         "actual_audio_listened": false,
         "PASSED_FINAL_REVIEW": false
-      }
+      },
+      "script_sha256": "90ab19911f4705f89b93e8762db058b1f4ce4c4854cff53dc13ba0e88bd85e43",
+      "pronunciation_correction_1834_20261009": {
+        "reason": "Full and focused unprompted offline ASR ambiguously transcribed the nineteenth-century phrase as11th century. Replace it with a clearly spoken year supported by the specific primary-source migration statement.",
+        "source_text_from": "Τον δέκατο ένατο αιώνα, η μετακίνηση κατοίκων προς τη νέα Σπάρτη άφησε σταδιακά τον μεσαιωνικό πυρήνα χωρίς την παλιά του ζωή.",
+        "source_text_to": "Μετά το χίλια οκτακόσια τριάντα τέσσερα, η μετακίνηση κατοίκων προς τη νέα Σπάρτη άφησε σταδιακά τον μεσαιωνικό πυρήνα χωρίς την παλιά του ζωή.",
+        "source_url": "https://whc.unesco.org/en/list/511/",
+        "source_section": "Outstanding Universal Value / Brief synthesis",
+        "previous_script_sha256": "9c4e0f1f7358583a6ca99b22737ec1d39a8f2fda5dc1c09d33bb2a20fc5ae64e",
+        "replacement_script_sha256": "90ab19911f4705f89b93e8762db058b1f4ce4c4854cff53dc13ba0e88bd85e43",
+        "applied_at_utc": "2026-10-09T14:39:40.454565+00:00",
+        "requires_replacement_narration": true,
+        "expected_narration_revision": "instagram-03-public-narration-r4",
+        "expected_final_revision": "instagram-03-final-r4",
+        "actual_audio_listened": false,
+        "passed_final_review": false
+      },
+      "recovery_source_inventory_path": "production_20261009_platform_specific/recovery/instagram-03-mystras-r4/inventory.json"
     },
     {
       "id": "INSTAGRAM_20261009_04_DAPHNI_MONASTERY_MOSAICS",

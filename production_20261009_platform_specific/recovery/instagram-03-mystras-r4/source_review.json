@@ -1,0 +1,21 @@
+{
+  "all_actual_images_viewed": true,
+  "review_artifact": "/workspace/scratch/ba7568f6e065/social-media-work/production_20261009_platform_specific/recovery/instagram-03-mystras/source_contact_sheet.jpg",
+  "reviewed_sha256": [
+    "60ed0577c5cf32de342f449dd91b536825beeb88c02cbebba9b3d17244e32ff8",
+    "18f47ef0ea0119473565f778737bfe265555b556ad50cf9690b54be01676940c",
+    "5eb730ae1ecad38f9880604ee7aa793d27e301662ae30d2ab174b1becc43b8e1",
+    "0d3d6b32d33a9c7e19c151f10cd09750db25d7dc51fcb577cfde3080c4a97647",
+    "500c2870889af3803d64d97ccbd2da349abb997757c8367dd8c57bc0e2a697c6",
+    "aace714dbef0a84635d9be622d3c5bd6e4e2a1cab0c7414d2facd42f1b52e1c8",
+    "7b39f6ca845f2ee73664fdd75b455edc44f719bd9016fb2695ac1da24e252390",
+    "10559b956b243edcdf0c34f159206afc543b96ebecfe58bd142ac2d961723019"
+  ],
+  "method": "All eight exact acquired photos visually inspected together at1600×2000; actual structures, frescoes, gate and complete compositions checked. All use contain.",
+  "notes": "Scaffolding in archival palace photo and small contemporary visitors in gate/ruins photos remain visible; no claim of historical-event photography.",
+  "job_id": "2026-10-09-instagram-03",
+  "reviewed_at_utc": "2026-10-09T12:55:36.348446+00:00",
+  "actual_audio_listened": false,
+  "exact_final_visual_review": false,
+  "passed_final_review": false
+}
