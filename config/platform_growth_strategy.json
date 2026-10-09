@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "strategy_id": "PLATFORM_SPECIFIC_FIFTEEN_DAILY_20261008",
-  "program_label": "PLATFORM_SPECIFIC_FIFTEEN_DAILY",
+  "strategy_id": "PLATFORM_SPECIFIC_TEN_DAILY_20261008",
+  "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
   "effective_at": "2026-10-08T08:28:13+03:00",
   "user_reconfirmed_at": "2026-10-08T23:58:00+03:00",
   "prepared_at_utc": "2026-10-08 06:01:37 UTC",
@@ -25,15 +25,15 @@
     "activation_is_not_automatic": true
   },
   "targets": {
-    "daily_distinct_stories": 60,
-    "daily_distinct_videos": 60,
-    "daily_provider_destinations": 60,
-    "per_platform_daily_video_target": 15,
+    "daily_distinct_stories": 40,
+    "daily_distinct_videos": 40,
+    "daily_provider_destinations": 40,
+    "per_platform_daily_video_target": 10,
     "one_platform_per_story": true,
     "one_provider_per_record": true,
     "crossposting_allowed": false,
     "renamed_or_reformatted_reuse_counts_as_new": false,
-    "cadence_basis": "Explicit user target: 15 distinct videos per platform per day. Daily topics are selected separately per platform from broad current statistics and verified platform-specific evidence relevant to the user's content style, not primarily from the user's own account.",
+    "cadence_basis": "Explicit user target: 10 distinct videos per platform per day. Daily topics are selected separately per platform from broad current statistics and verified platform-specific evidence relevant to the user's content style, not primarily from the user's own account.",
     "shortage_policy": "Report shortfall; do not fill with reused, unverified or unreviewed material"
   },
   "legacy_common_program": {
@@ -319,7 +319,7 @@
       "enabled": false,
       "status": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
       "provider": "facebook",
-      "daily_video_target": 15,
+      "daily_video_target": 10,
       "format": "REEL",
       "orientation": "9:16",
       "minimum_duration_seconds": 80,
@@ -355,7 +355,7 @@
       "enabled": false,
       "status": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
       "provider": "instagram",
-      "daily_video_target": 15,
+      "daily_video_target": 10,
       "format": "REEL",
       "orientation": "9:16",
       "minimum_duration_seconds": 80,
@@ -391,7 +391,7 @@
       "enabled": false,
       "status": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
       "provider": "tiktok",
-      "daily_video_target": 15,
+      "daily_video_target": 10,
       "format": "VIDEO",
       "orientation": "9:16",
       "minimum_duration_seconds": 80,
@@ -427,7 +427,7 @@
       "enabled": false,
       "status": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
       "provider": "youtube",
-      "daily_video_target": 15,
+      "daily_video_target": 10,
       "format": "YOUTUBE_SHORT",
       "orientation": "9:16",
       "minimum_duration_seconds": 80,
@@ -560,7 +560,7 @@
   },
   "latest_user_instruction": {
     "at": "2026-10-08T23:58:00+03:00",
-    "instruction": "Start the platform-specific 15-per-platform daily publishing program tomorrow at 07:00 Europe/Athens, subject to all active zero-credit, history, QA, and platform gates.",
+    "instruction": "Start the platform-specific 10-per-platform daily publishing program tomorrow at 07:00 Europe/Athens, subject to all active zero-credit, history, QA, and platform gates.",
     "daily_target_per_platform": 15,
     "daily_total": 60,
     "crossposting_allowed": false,
@@ -571,5 +571,20 @@
     "start_date": "2026-10-09",
     "first_publish_time_local": "07:00",
     "timezone": "Europe/Athens"
+  },
+  "cadence_reconciliation_20261009": {
+    "at_utc": "2026-10-09T05:56:49Z",
+    "status": "TARGET_RECONCILED_ONLY_RELEASE_REMAINS_BLOCKED",
+    "prior_per_platform_target": 15,
+    "current_per_platform_target": 10,
+    "evidence": [
+      "Current user standing CURRENT_TEN_DAILY instruction retains 10 and supersedes 5",
+      "Exact user request in state/queue_rebuild_20261009.json at 2026-10-08T22:33:46+03:00 explicitly requests 10 different videos per platform",
+      "The prepared catalog, 10 configured time slots and all four initial_daily_mix lists already implement 10"
+    ],
+    "zero_credit_rules_changed": false,
+    "final_review_rules_changed": false,
+    "production_enabled_changed": false,
+    "publication_or_scheduling_performed": false
   }
 }
