@@ -1,17 +1,17 @@
 {
   "program": "PLATFORM_SPECIFIC_TEN_DAILY",
   "brand_id": 7076410,
-  "checkpoint_at_utc": "2026-10-09T16:50:20.268Z",
+  "checkpoint_at_utc": "2026-10-09T17:02:55.395Z",
   "requested_per_platform": 10,
   "one_platform_per_story": true,
   "confirmed_published": {
-    "facebook": 6,
+    "facebook": 10,
     "instagram": 10,
-    "tiktok": 6,
+    "tiktok": 10,
     "youtube": 10
   },
-  "new_published": 32,
-  "status": "ACTIVE_MANUAL_RECOVERY_AND_PUBLICATION",
+  "new_published": 40,
+  "status": "COMPLETED_40_PUBLISHED_MANUAL_RECOVERY",
   "actual_audio_listened": false,
   "passed_final_review": false,
   "scope": "Manual uploads under latest user instruction after disclosure of unavailable actual hearing. Individual visual and objective audio checks retained; no automatic blanket release.",
@@ -61,8 +61,8 @@
       "job_id": "2026-10-09-facebook-04",
       "platform": "facebook",
       "metricool_post_id": 392219933,
-      "status": "PENDING",
-      "public_url": null,
+      "status": "PUBLISHED",
+      "public_url": "https://facebook.com/reel/1784364762871145",
       "publication_date": {
         "dateTime": "2026-10-09T19:53:00",
         "timezone": "Europe/Athens"
@@ -87,8 +87,8 @@
       "job_id": "2026-10-09-facebook-06",
       "platform": "facebook",
       "metricool_post_id": 392218721,
-      "status": "PENDING",
-      "public_url": null,
+      "status": "PUBLISHED",
+      "public_url": "https://facebook.com/reel/1805017104025212",
       "publication_date": {
         "dateTime": "2026-10-09T19:51:00",
         "timezone": "Europe/Athens"
@@ -113,8 +113,8 @@
       "job_id": "2026-10-09-facebook-08",
       "platform": "facebook",
       "metricool_post_id": 392219989,
-      "status": "PENDING",
-      "public_url": null,
+      "status": "PUBLISHED",
+      "public_url": "https://facebook.com/reel/1070901139258181",
       "publication_date": {
         "dateTime": "2026-10-09T19:54:00",
         "timezone": "Europe/Athens"
@@ -139,8 +139,8 @@
       "job_id": "2026-10-09-facebook-10",
       "platform": "facebook",
       "metricool_post_id": 392218680,
-      "status": "PENDING",
-      "public_url": null,
+      "status": "PUBLISHED",
+      "public_url": "https://facebook.com/reel/1807070950322590",
       "publication_date": {
         "dateTime": "2026-10-09T19:50:00",
         "timezone": "Europe/Athens"
@@ -295,8 +295,8 @@
       "job_id": "2026-10-09-tiktok-02",
       "platform": "tiktok",
       "metricool_post_id": 392218779,
-      "status": "PENDING",
-      "public_url": null,
+      "status": "PUBLISHED",
+      "public_url": "https://www.tiktok.com/@steliosvilanos/video/7694712076312333600",
       "publication_date": {
         "dateTime": "2026-10-09T19:52:00",
         "timezone": "Europe/Athens"
@@ -308,8 +308,8 @@
       "job_id": "2026-10-09-tiktok-03",
       "platform": "tiktok",
       "metricool_post_id": 392220040,
-      "status": "PENDING",
-      "public_url": null,
+      "status": "PUBLISHED",
+      "public_url": "https://www.tiktok.com/@steliosvilanos/video/7694712865802013985",
       "publication_date": {
         "dateTime": "2026-10-09T19:55:00",
         "timezone": "Europe/Athens"
@@ -373,8 +373,8 @@
       "job_id": "2026-10-09-tiktok-08",
       "platform": "tiktok",
       "metricool_post_id": 392221395,
-      "status": "PENDING",
-      "public_url": null,
+      "status": "PUBLISHED",
+      "public_url": "https://www.tiktok.com/@steliosvilanos/video/7694713133545377056",
       "publication_date": {
         "dateTime": "2026-10-09T19:56:00",
         "timezone": "Europe/Athens"
@@ -393,6 +393,19 @@
         "timezone": "Europe/Athens"
       },
       "final_sha256": "6267a0cd1d4373d7dbd5d96076ff3e7be1ace8bf9d5e9d92eae66a0ae45c1c0e",
+      "actual_audio_listened": false
+    },
+    {
+      "job_id": "2026-10-09-tiktok-10",
+      "platform": "tiktok",
+      "metricool_post_id": 392225836,
+      "status": "PUBLISHED",
+      "public_url": "https://www.tiktok.com/@steliosvilanos/video/7694713907541298465",
+      "publication_date": {
+        "dateTime": "2026-10-09T19:59:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "9ed3d59f263c79ce9bbc1a935d942c604b8b52b032f486fc353cb56bf4b21ba6",
       "actual_audio_listened": false
     },
     {
@@ -526,11 +539,11 @@
       "actual_audio_listened": false
     }
   ],
-  "remaining_to_publish": 8,
+  "remaining_to_publish": 0,
   "created_or_published_counts": {
     "facebook": 10,
     "instagram": 10,
-    "tiktok": 9,
+    "tiktok": 10,
     "youtube": 10
   },
   "initial_complete_narration_set": 40,
@@ -538,5 +551,9 @@
   "publishable": false,
   "manual_user_authorized_release_only": true,
   "current_complete_narrations": 40,
-  "current_final_videos": 40
+  "current_final_videos": 40,
+  "completed_at_utc": "2026-10-09T17:01:20.910Z",
+  "all_publication_readbacks_verified": true,
+  "unique_public_urls": 40,
+  "paid_production_credits_spent": 0
 }

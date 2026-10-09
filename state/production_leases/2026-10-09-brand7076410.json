@@ -4,9 +4,9 @@
   "brandName": "Ιστορίες που μας αγγίζουν",
   "owner": "interactive-recovery-20261009T143048Z-root",
   "created_at": "2026-10-09 14:35:49 UTC",
-  "updated_at": "2026-10-09 14:35:49 UTC",
-  "expires_at": "2026-10-09T20:30:00Z",
-  "status": "ACTIVE_MANUAL_RECOVERY",
+  "updated_at": "2026-10-09T17:02:55.395Z",
+  "expires_at": "2026-10-09T17:02:55.395Z",
+  "status": "COMPLETED_MANUAL_RECOVERY",
   "prior_lease_blob_sha": "ffd14d8dbefe00bc18b91a31aef33ca2b3fe490d",
   "request_scope": {
     "user_instruction": "Φτιάξε ό,τι είναι να φτιάξεις και ανέβασέ τα",
@@ -48,22 +48,36 @@
     "notion_refresh": "IN_PROGRESS"
   },
   "completed_narrations": 40,
-  "completed_final_exports": 7,
-  "new_scheduled_posts": 0,
-  "new_published_posts": 0,
-  "remaining_final_exports": 33,
+  "completed_final_exports": 40,
+  "new_scheduled_posts": 40,
+  "new_published_posts": 40,
+  "remaining_final_exports": 0,
   "actual_audio_listened": false,
   "PASSED_FINAL_REVIEW": false,
   "publishing_scope": "Manual publication of individually checked current-batch final files under latest user instruction. Keep unresolved substantive issues held; never assert actual hearing. Automated production and global release gates remain paused.",
   "known_specific_issue": {
     "job_id": "2026-10-09-instagram-03",
-    "status": "HOLD_PENDING_CORRECTED_NINETEENTH_CENTURY_NARRATION"
+    "status": "RESOLVED_WITH_CORRECTED_CURRENT_NARRATION",
+    "final_sha256": "a3607715feefa2c8fae08cfc2615fc6463701320237c119212cd28e99edbf988",
+    "verified_published_url": "https://www.instagram.com/reel/DeR0vwDD33m/"
   },
   "external_transfer": {
     "destination": "Connected HeyGen asset staging then Metricool",
     "zero_paid_credits": true,
     "prior_slot_status": "queued, no bytes transferred",
-    "prior_rejection_addressed_by": "direct user response authorizing described transfer and publication"
+    "prior_rejection_addressed_by": "direct user response authorizing described transfer and publication",
+    "completed_current_video_transfers": 40,
+    "all_byte_hash_readbacks_verified": true
   },
-  "global_automation_changed": false
+  "global_automation_changed": false,
+  "completed_at_utc": "2026-10-09T17:01:20.910Z",
+  "released_at_utc": "2026-10-09T17:02:55.395Z",
+  "pending_posts": 0,
+  "post_count_scope": "new_scheduled_posts is cumulative successfully created records; all forty are now PUBLISHED",
+  "confirmed_published_by_platform": {
+    "facebook": 10,
+    "instagram": 10,
+    "tiktok": 10,
+    "youtube": 10
+  }
 }
