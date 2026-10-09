@@ -1,0 +1,15 @@
+{
+  "applied_at_utc": "2026-10-09 15:12:49 UTC",
+  "reason": "Clarify two phrases that remain ambiguous in full and focused unprompted ASR; no direct-hearing claim and no scientific claim or story changed.",
+  "changes": [
+    {
+      "before": "Πώς μετράς μια τόσο μικρή μεταβολή σε μια απόσταση εκατοντάδων χιλιάδων χιλιομέτρων;",
+      "after": "Πώς μετράς μια τόσο μικρή μεταβολή, ενώ η Σελήνη βρίσκεται τόσο μακριά;"
+    },
+    {
+      "before": "Ύστερα αναζητούν το εξαιρετικά αδύναμο φως που επιστρέφει στα ευαίσθητα όργανά τους.",
+      "after": "Ύστερα αναζητούν το φως που επιστρέφει με πολύ χαμηλή ένταση στα ευαίσθητα όργανά τους."
+    }
+  ],
+  "actual_audio_listened": false
+}
