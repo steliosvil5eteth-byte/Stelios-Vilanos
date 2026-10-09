@@ -20,6 +20,7 @@ import unicodedata
 from pathlib import Path
 
 from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont, ImageOps
+from recovery_resource_limits import resource_slot
 
 VOICE = "el-GR-NestorasNeural"
 CTA = "Αν σας άρεσε, ακολουθήστε για περισσότερα."
@@ -45,12 +46,17 @@ def digest(path: Path) -> str:
 def run(args: list[str], cwd: Path | None = None, log_path: Path | None = None) -> str:
     if Path(args[0]).name == "ffmpeg" and "-nostdin" not in args:
         args = [args[0], "-nostdin", *args[1:]]
-    result = subprocess.run(args, cwd=cwd, stdin=subprocess.DEVNULL, text=True, capture_output=True)
+    slot = None
+    if Path(args[0]).name == "ffmpeg":
+        with resource_slot("ffmpeg") as slot:
+            result = subprocess.run(args, cwd=cwd, stdin=subprocess.DEVNULL, text=True, capture_output=True)
+    else:
+        result = subprocess.run(args, cwd=cwd, stdin=subprocess.DEVNULL, text=True, capture_output=True)
     if log_path is not None:
         log_path.parent.mkdir(parents=True, exist_ok=True)
         log_path.write_text(json.dumps({"command": args, "cwd": str(cwd) if cwd else None,
                                        "returncode": result.returncode, "stdout": result.stdout,
-                                       "stderr": result.stderr}, ensure_ascii=False, indent=2) + "\n")
+                                       "stderr": result.stderr, "resource_slot": slot}, ensure_ascii=False, indent=2) + "\n")
     if result.returncode:
         raise RenderBlocked(f"{Path(args[0]).name} failed: {result.stderr[-2500:]}")
     return result.stdout
@@ -295,7 +301,7 @@ def read_sources(path: Path, paragraph_count: int) -> list[dict]:
             provenance_fields += ["rightsholder", "copyright_statement"]
             scientific_sources = source.get("scientific_source_urls")
             if (not isinstance(scientific_sources, list) or not scientific_sources
-                    or any(not isinstance(url, str) or not re.match(r"https?://[^/\\s]+", url)
+                    or any(not isinstance(url, str) or not re.match(r"https?://[^/\s]+", url)
                            for url in scientific_sources)):
                 raise RenderBlocked("An original explanatory diagram requires its scientific-source URLs")
         else:
@@ -398,8 +404,11 @@ Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
     if note_font.getlength(disclosure) > 880:
         raise RenderBlocked("Disclosure exceeds the measured display width")
     header += line(0, duration, "Note", r"{\an5\pos(504,1750)}" + escaped(disclosure))
-    for cue in cues:
-        header += line(cue["start"], cue["end"], "Sub", r"{\an5\pos(503,1575)\q2}" + r"\N".join(escaped(t) for t in cue["lines"]))
+    for index, cue in enumerate(cues):
+        # Retain the final CTA visually through the natural audio tail. This
+        # display extension never changes source SRT or actual speech events.
+        visible_end = duration if index == len(cues) - 1 else cue["end"]
+        header += line(cue["start"], visible_end, "Sub", r"{\an5\pos(503,1575)\q2}" + r"\N".join(escaped(t) for t in cue["lines"]))
     path.write_text(header, encoding="utf-8")
 
 
@@ -467,6 +476,12 @@ def build(args: argparse.Namespace) -> dict:
             raise RenderBlocked(f"Inventory identity field {field} is missing")
     if inventory["platform"] not in ALLOWED_PLATFORMS or inventory.get("brand_id") != 7076410:
         raise RenderBlocked("Inventory falls outside the authorized brand and four platforms")
+    # Apply the same overlay limits before any expensive scene rendering.
+    # write_ass keeps its own check for callers that only remux existing scenes.
+    wrap_two_lines(args.title or inventory["title"], ImageFont.truetype(str(FONT), 52), 880)
+    disclosure = inventory.get("disclosure", "Αρχειακό υλικό · Συνθετική αφήγηση")
+    if ImageFont.truetype(str(REGULAR), 25).getlength(disclosure) > 880:
+        raise RenderBlocked("Disclosure exceeds the measured display width")
     expected_script = inventory.get("script_sha256")
     narration_hash = hashlib.sha256(script.encode("utf-8")).hexdigest()
     if expected_script is not None and expected_script != narration_hash:
@@ -500,6 +515,10 @@ def build(args: argparse.Namespace) -> dict:
               "narration_text_sha256": narration_hash,
               "scenes": scenes, "subtitle_font_px": SUB_SIZE, "subtitle_max_lines": 2,
               "subtitle_max_width_px": SUB_WIDTH, "subtitle_cues": cues,
+              "final_caption_visual_hold": {"cue_number": cues[-1]["number"],
+                                            "actual_cue_end_seconds": cues[-1]["end"],
+                                            "visible_until_seconds": duration,
+                                            "source_srt_and_audio_unchanged": True},
               "actual_audio_listened": False, "exact_final_visual_review": False,
               "passed_final_review": False, "publishable": False, "publishing_actions": 0,
               "paid_services_called": 0, "background_music": False, "avatar": False}
@@ -561,6 +580,14 @@ def build(args: argparse.Namespace) -> dict:
                        "width": WIDTH, "height": HEIGHT, "video_codec": video[0]["codec_name"],
                        "audio_codec": audio_streams[0]["codec_name"], "audio_streams": 1,
                        "technical_decode_passed": True}
+    report["sidecar_assets"] = []
+    for name in ("caption.txt", "source_attributions.md"):
+        source = args.inventory.parent / name
+        if source.is_file():
+            target = output / name
+            target.write_bytes(source.read_bytes())
+            report["sidecar_assets"].append({"name": name, "path": str(target.resolve()),
+                                               "sha256": digest(target), "copied_exactly_from": str(source.resolve())})
     (output / "render_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return report
 

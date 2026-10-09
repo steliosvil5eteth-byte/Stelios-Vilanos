@@ -1,17 +1,16 @@
 {
   "program": "PLATFORM_SPECIFIC_TEN_DAILY",
   "brand_id": 7076410,
-  "checkpoint_at_utc": "2026-10-09 15:22:05 UTC",
+  "checkpoint_at_utc": "2026-10-09T16:15:11.891Z",
   "requested_per_platform": 10,
   "one_platform_per_story": true,
-  "current_full_narrations": 40,
   "confirmed_published": {
-    "facebook": 2,
-    "instagram": 5,
-    "tiktok": 2,
-    "youtube": 1
+    "facebook": 4,
+    "instagram": 10,
+    "tiktok": 6,
+    "youtube": 6
   },
-  "new_published": 10,
+  "new_published": 26,
   "status": "ACTIVE_MANUAL_RECOVERY_AND_PUBLICATION",
   "actual_audio_listened": false,
   "passed_final_review": false,
@@ -19,32 +18,6 @@
   "transfer_authorization": "User explicitly continued the described connected HeyGen to Metricool intermediate transfer on 2026-10-09T17:30:27+03:00; actual zero-credit byte transfers succeeded.",
   "automation_activated": false,
   "publications": [
-    {
-      "job_id": "2026-10-09-instagram-01",
-      "platform": "instagram",
-      "metricool_post_id": 392119059,
-      "status": "PUBLISHED",
-      "public_url": "https://www.instagram.com/reel/DeRwdZcilLW/",
-      "publication_date": {
-        "dateTime": "2026-10-09T17:46:00",
-        "timezone": "Europe/Athens"
-      },
-      "final_sha256": "d5d785c48584db7c4d4f76695e4439b0762469036663c74a7bf1eb14dd1c3078",
-      "actual_audio_listened": false
-    },
-    {
-      "job_id": "2026-10-09-instagram-02",
-      "platform": "instagram",
-      "metricool_post_id": 392118284,
-      "status": "PUBLISHED",
-      "public_url": "https://www.instagram.com/reel/DeRwv7Sj2fu/",
-      "publication_date": {
-        "dateTime": "2026-10-09T17:49:00",
-        "timezone": "Europe/Athens"
-      },
-      "final_sha256": "d63741869bdcf4b783bdab8bb203ca5de94d3db9a1aebf4e166655c414ee57b2",
-      "actual_audio_listened": false
-    },
     {
       "job_id": "2026-10-09-facebook-01",
       "platform": "facebook",
@@ -72,55 +45,81 @@
       "actual_audio_listened": false
     },
     {
-      "job_id": "2026-10-09-tiktok-01",
-      "platform": "tiktok",
-      "metricool_post_id": 392119637,
+      "job_id": "2026-10-09-facebook-05",
+      "platform": "facebook",
+      "metricool_post_id": 392186005,
       "status": "PUBLISHED",
-      "public_url": "https://www.tiktok.com/@steliosvilanos/video/7694680108791041312",
+      "public_url": "https://facebook.com/reel/1413368227655456",
       "publication_date": {
-        "dateTime": "2026-10-09T17:48:00",
+        "dateTime": "2026-10-09T19:12:00",
         "timezone": "Europe/Athens"
       },
-      "final_sha256": "f00b0a2c039b747801361a8894c8eb2e803497807a7448ed41454fb0dee2aadc",
+      "final_sha256": "52ac65418bf0e9205d6fb563184edf8653740f2fd43f4872a16964fba688c1ba",
       "actual_audio_listened": false
     },
     {
-      "job_id": "2026-10-09-youtube-01",
-      "platform": "youtube",
-      "metricool_post_id": 392117112,
+      "job_id": "2026-10-09-facebook-09",
+      "platform": "facebook",
+      "metricool_post_id": 392157817,
       "status": "PUBLISHED",
-      "public_url": "https://www.youtube.com/shorts/GzlHPcnO8wE",
+      "public_url": "https://facebook.com/reel/1801131127692280",
       "publication_date": {
-        "dateTime": "2026-10-09T17:45:00",
+        "dateTime": "2026-10-09T18:35:00",
         "timezone": "Europe/Athens"
       },
-      "final_sha256": "8c63e4a30088cef1858c875add857dcd7e69b3c853a6ddf73e97728d65b0954c",
+      "final_sha256": "01b0b73348d69d9ab72395509d40a2710b0bc26b0671866aff9268f9ed0ea13b",
       "actual_audio_listened": false
     },
     {
-      "job_id": "2026-10-09-instagram-08",
+      "job_id": "2026-10-09-instagram-01",
       "platform": "instagram",
-      "metricool_post_id": 392137232,
+      "metricool_post_id": 392119059,
       "status": "PUBLISHED",
-      "public_url": "https://www.instagram.com/reel/DeRzC4vkW27/",
+      "public_url": "https://www.instagram.com/reel/DeRwdZcilLW/",
       "publication_date": {
-        "dateTime": "2026-10-09T18:09:00",
+        "dateTime": "2026-10-09T17:46:00",
         "timezone": "Europe/Athens"
       },
-      "final_sha256": "8a1ae8a4aff6eb60f74a9133190bdafcd9b85b70ca24bc6ccab27f6f68fa4455",
+      "final_sha256": "d5d785c48584db7c4d4f76695e4439b0762469036663c74a7bf1eb14dd1c3078",
       "actual_audio_listened": false
     },
     {
-      "job_id": "2026-10-09-tiktok-06",
-      "platform": "tiktok",
-      "metricool_post_id": 392138433,
+      "job_id": "2026-10-09-instagram-02",
+      "platform": "instagram",
+      "metricool_post_id": 392118284,
       "status": "PUBLISHED",
-      "public_url": "https://www.tiktok.com/@steliosvilanos/video/7694686043429195041",
+      "public_url": "https://www.instagram.com/reel/DeRwv7Sj2fu/",
       "publication_date": {
-        "dateTime": "2026-10-09T18:11:00",
+        "dateTime": "2026-10-09T17:49:00",
         "timezone": "Europe/Athens"
       },
-      "final_sha256": "42cb177aff9ab4b6d0ec1d1aec334c97ec0ab7d21b8306ddab4d79d1a96c5a89",
+      "final_sha256": "d63741869bdcf4b783bdab8bb203ca5de94d3db9a1aebf4e166655c414ee57b2",
+      "actual_audio_listened": false
+    },
+    {
+      "job_id": "2026-10-09-instagram-03",
+      "platform": "instagram",
+      "metricool_post_id": 392148988,
+      "status": "PUBLISHED",
+      "public_url": "https://www.instagram.com/reel/DeR0vwDD33m/",
+      "publication_date": {
+        "dateTime": "2026-10-09T18:24:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "a3607715feefa2c8fae08cfc2615fc6463701320237c119212cd28e99edbf988",
+      "actual_audio_listened": false
+    },
+    {
+      "job_id": "2026-10-09-instagram-04",
+      "platform": "instagram",
+      "metricool_post_id": 392149036,
+      "status": "PUBLISHED",
+      "public_url": "https://www.instagram.com/reel/DeR03JmFQBm/",
+      "publication_date": {
+        "dateTime": "2026-10-09T18:25:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "055c25151925b2edfad1e3ba3f662a763a31a6a6316bb304fcd5a3cd29932314",
       "actual_audio_listened": false
     },
     {
@@ -137,6 +136,19 @@
       "actual_audio_listened": false
     },
     {
+      "job_id": "2026-10-09-instagram-06",
+      "platform": "instagram",
+      "metricool_post_id": 392149071,
+      "status": "PUBLISHED",
+      "public_url": "https://www.instagram.com/reel/DeR0-LugPr_/",
+      "publication_date": {
+        "dateTime": "2026-10-09T18:26:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "7e75fa572c89964a9c9aba7f3cf4484b7495852cca58fdb5862e10ebcd2b1d6b",
+      "actual_audio_listened": false
+    },
+    {
       "job_id": "2026-10-09-instagram-07",
       "platform": "instagram",
       "metricool_post_id": 392143106,
@@ -150,50 +162,24 @@
       "actual_audio_listened": false
     },
     {
-      "job_id": "2026-10-09-instagram-03",
+      "job_id": "2026-10-09-instagram-08",
       "platform": "instagram",
-      "metricool_post_id": 392148988,
-      "status": "PENDING",
-      "public_url": null,
+      "metricool_post_id": 392137232,
+      "status": "PUBLISHED",
+      "public_url": "https://www.instagram.com/reel/DeRzC4vkW27/",
       "publication_date": {
-        "dateTime": "2026-10-09T18:24:00",
+        "dateTime": "2026-10-09T18:09:00",
         "timezone": "Europe/Athens"
       },
-      "final_sha256": "a3607715feefa2c8fae08cfc2615fc6463701320237c119212cd28e99edbf988",
-      "actual_audio_listened": false
-    },
-    {
-      "job_id": "2026-10-09-instagram-04",
-      "platform": "instagram",
-      "metricool_post_id": 392149036,
-      "status": "PENDING",
-      "public_url": null,
-      "publication_date": {
-        "dateTime": "2026-10-09T18:25:00",
-        "timezone": "Europe/Athens"
-      },
-      "final_sha256": "055c25151925b2edfad1e3ba3f662a763a31a6a6316bb304fcd5a3cd29932314",
-      "actual_audio_listened": false
-    },
-    {
-      "job_id": "2026-10-09-instagram-06",
-      "platform": "instagram",
-      "metricool_post_id": 392149071,
-      "status": "PENDING",
-      "public_url": null,
-      "publication_date": {
-        "dateTime": "2026-10-09T18:26:00",
-        "timezone": "Europe/Athens"
-      },
-      "final_sha256": "7e75fa572c89964a9c9aba7f3cf4484b7495852cca58fdb5862e10ebcd2b1d6b",
+      "final_sha256": "8a1ae8a4aff6eb60f74a9133190bdafcd9b85b70ca24bc6ccab27f6f68fa4455",
       "actual_audio_listened": false
     },
     {
       "job_id": "2026-10-09-instagram-09",
       "platform": "instagram",
       "metricool_post_id": 392149125,
-      "status": "PENDING",
-      "public_url": null,
+      "status": "PUBLISHED",
+      "public_url": "https://www.instagram.com/reel/DeR1F4yiktp/",
       "publication_date": {
         "dateTime": "2026-10-09T18:27:00",
         "timezone": "Europe/Athens"
@@ -205,8 +191,8 @@
       "job_id": "2026-10-09-instagram-10",
       "platform": "instagram",
       "metricool_post_id": 392149247,
-      "status": "PENDING",
-      "public_url": null,
+      "status": "PUBLISHED",
+      "public_url": "https://www.instagram.com/reel/DeR1NNaiCfw/",
       "publication_date": {
         "dateTime": "2026-10-09T18:28:00",
         "timezone": "Europe/Athens"
@@ -215,24 +201,184 @@
       "actual_audio_listened": false
     },
     {
+      "job_id": "2026-10-09-tiktok-01",
+      "platform": "tiktok",
+      "metricool_post_id": 392119637,
+      "status": "PUBLISHED",
+      "public_url": "https://www.tiktok.com/@steliosvilanos/video/7694680108791041312",
+      "publication_date": {
+        "dateTime": "2026-10-09T17:48:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "f00b0a2c039b747801361a8894c8eb2e803497807a7448ed41454fb0dee2aadc",
+      "actual_audio_listened": false
+    },
+    {
+      "job_id": "2026-10-09-tiktok-04",
+      "platform": "tiktok",
+      "metricool_post_id": 392167560,
+      "status": "PUBLISHED",
+      "public_url": "https://www.tiktok.com/@steliosvilanos/video/7694695604299025697",
+      "publication_date": {
+        "dateTime": "2026-10-09T18:48:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "40bf89a028b896cdf296998512282922cb82c16d09e9f753ca484e0dcdc6b5b0",
+      "actual_audio_listened": false
+    },
+    {
+      "job_id": "2026-10-09-tiktok-05",
+      "platform": "tiktok",
+      "metricool_post_id": 392185911,
+      "status": "PUBLISHED",
+      "public_url": "https://www.tiktok.com/@steliosvilanos/video/7694701603613330721",
+      "publication_date": {
+        "dateTime": "2026-10-09T19:11:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "7815ec78ee9efb68143e61239215b88368351bfb8519b3f73f873fbb5de6f190",
+      "actual_audio_listened": false
+    },
+    {
+      "job_id": "2026-10-09-tiktok-06",
+      "platform": "tiktok",
+      "metricool_post_id": 392138433,
+      "status": "PUBLISHED",
+      "public_url": "https://www.tiktok.com/@steliosvilanos/video/7694686043429195041",
+      "publication_date": {
+        "dateTime": "2026-10-09T18:11:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "42cb177aff9ab4b6d0ec1d1aec334c97ec0ab7d21b8306ddab4d79d1a96c5a89",
+      "actual_audio_listened": false
+    },
+    {
+      "job_id": "2026-10-09-tiktok-07",
+      "platform": "tiktok",
+      "metricool_post_id": 392157856,
+      "status": "PUBLISHED",
+      "public_url": "https://www.tiktok.com/@steliosvilanos/video/7694692496114257185",
+      "publication_date": {
+        "dateTime": "2026-10-09T18:36:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "a9d26198dbb263c5c857cb5cffad2e3497ac7c6ceb2f95d333f5380b493f51eb",
+      "actual_audio_listened": false
+    },
+    {
       "job_id": "2026-10-09-tiktok-09",
       "platform": "tiktok",
       "metricool_post_id": 392149302,
-      "status": "PENDING",
-      "public_url": null,
+      "status": "PUBLISHED",
+      "public_url": "https://www.tiktok.com/@steliosvilanos/video/7694690662360419617",
       "publication_date": {
         "dateTime": "2026-10-09T18:29:00",
         "timezone": "Europe/Athens"
       },
       "final_sha256": "6267a0cd1d4373d7dbd5d96076ff3e7be1ace8bf9d5e9d92eae66a0ae45c1c0e",
       "actual_audio_listened": false
+    },
+    {
+      "job_id": "2026-10-09-youtube-01",
+      "platform": "youtube",
+      "metricool_post_id": 392117112,
+      "status": "PUBLISHED",
+      "public_url": "https://www.youtube.com/shorts/GzlHPcnO8wE",
+      "publication_date": {
+        "dateTime": "2026-10-09T17:45:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "8c63e4a30088cef1858c875add857dcd7e69b3c853a6ddf73e97728d65b0954c",
+      "actual_audio_listened": false
+    },
+    {
+      "job_id": "2026-10-09-youtube-02",
+      "platform": "youtube",
+      "metricool_post_id": 392167223,
+      "status": "PUBLISHED",
+      "public_url": "https://www.youtube.com/shorts/_O7uQdbmCtA",
+      "publication_date": {
+        "dateTime": "2026-10-09T18:47:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "b9a1e9358dffa995b4517f86d26bcfd672976423dea715d4e44835581f846a5b",
+      "actual_audio_listened": false
+    },
+    {
+      "job_id": "2026-10-09-youtube-04",
+      "platform": "youtube",
+      "metricool_post_id": 392167597,
+      "status": "PUBLISHED",
+      "public_url": "https://www.youtube.com/shorts/4t7nTWlyC0U",
+      "publication_date": {
+        "dateTime": "2026-10-09T18:49:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "1462ef2246d794815bea050a5e989f3d531ffb4f1ec4c2884a043124bf26ad14",
+      "actual_audio_listened": false
+    },
+    {
+      "job_id": "2026-10-09-youtube-05",
+      "platform": "youtube",
+      "metricool_post_id": 392185796,
+      "status": "PUBLISHED",
+      "public_url": "https://www.youtube.com/shorts/b8KF_VKU_UA",
+      "publication_date": {
+        "dateTime": "2026-10-09T19:09:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "e687029d7dfb16e017326f97933da98a3a5580f2387a71f95073d92aa99c0739",
+      "actual_audio_listened": false
+    },
+    {
+      "job_id": "2026-10-09-youtube-06",
+      "platform": "youtube",
+      "metricool_post_id": 392185857,
+      "status": "PUBLISHED",
+      "public_url": "https://www.youtube.com/shorts/a8L-4n0tiV0",
+      "publication_date": {
+        "dateTime": "2026-10-09T19:10:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "57686fde8442d4043195d0414a08824cf1310e5689e3d805e04298267690b644",
+      "actual_audio_listened": false
+    },
+    {
+      "job_id": "2026-10-09-youtube-08",
+      "platform": "youtube",
+      "metricool_post_id": 392195761,
+      "status": "PENDING",
+      "public_url": null,
+      "publication_date": {
+        "dateTime": "2026-10-09T19:20:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "ccb45676d5c688072cfc103ab22128879dc4e6f9493b6b4dce931e0a50740c1e",
+      "actual_audio_listened": false
+    },
+    {
+      "job_id": "2026-10-09-youtube-09",
+      "platform": "youtube",
+      "metricool_post_id": 392186071,
+      "status": "PUBLISHED",
+      "public_url": "https://www.youtube.com/shorts/iAycyX75mpg",
+      "publication_date": {
+        "dateTime": "2026-10-09T19:13:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "51eed8838f3ae4e98742a62b367b18f58dd781dd64902f4e4621aef13f73f9aa",
+      "actual_audio_listened": false
     }
   ],
-  "remaining_to_publish": 30,
+  "remaining_to_publish": 14,
   "created_or_published_counts": {
-    "facebook": 2,
+    "facebook": 4,
     "instagram": 10,
-    "tiktok": 3,
-    "youtube": 1
-  }
+    "tiktok": 6,
+    "youtube": 7
+  },
+  "initial_complete_narration_set": 40,
+  "correction_policy": "Individual narration wording clarifications may replace an existing source audio. Corrected scripts are committed before ordinary zero-credit Nestoras requests; no substitute voice or blind retry.",
+  "publishable": false,
+  "manual_user_authorized_release_only": true
 }

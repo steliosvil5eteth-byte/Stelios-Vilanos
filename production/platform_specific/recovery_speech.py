@@ -8,8 +8,10 @@ from __future__ import annotations
 import argparse
 import asyncio
 import datetime as dt
+from email.utils import parsedate_to_datetime
 import hashlib
 import html
+from http import HTTPStatus
 import json
 import ssl
 import subprocess
@@ -20,6 +22,44 @@ VOICE = "el-GR-NestorasNeural"
 
 def write(path, data):
     path.write_text(json.dumps(data, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+
+def safe_error_metadata(exc):
+    """Keep useful refusal diagnostics without URLs, request headers or tokens.
+
+    In particular, str(aiohttp.ClientResponseError) includes its request URL.
+    Never serialize the exception, request_info, history, or all headers.
+    """
+    result = {"error_type": type(exc).__name__}
+    status = getattr(exc, "status", None)
+    if isinstance(status, int) and not isinstance(status, bool) and 100 <= status <= 599:
+        result["http_status"] = status
+        try:
+            result["http_status_message"] = HTTPStatus(status).phrase
+        except ValueError:
+            result["http_status_message"] = "Unregistered HTTP status"
+        result["access_denied"] = status in (401, 403)
+        result["rate_limited"] = status == 429
+    headers = getattr(exc, "headers", None)
+    retry_after = headers.get("Retry-After") if hasattr(headers, "get") else None
+    if isinstance(retry_after, str):
+        value = retry_after.strip()
+        if value.isascii() and value.isdigit() and len(value) <= 12:
+            result["retry_after_seconds"] = int(value)
+        elif len(value) <= 80:
+            try:
+                result["retry_after_utc"] = parsedate_to_datetime(value).astimezone(dt.timezone.utc).isoformat()
+            except (ValueError, TypeError, OverflowError):
+                result["retry_after_present_unparsed"] = True
+    # Only fixed, credential-free protocol phrases may be retained verbatim.
+    message = getattr(exc, "message", None)
+    safe_messages = {
+        "Invalid response status", "Invalid upgrade header",
+        "Invalid connection header", "Invalid challenge response",
+        "Server disconnected", "Connection timeout", "Timeout on reading data from socket",
+    }
+    if isinstance(message, str) and message:
+        result["protocol_message"] = message if message in safe_messages else "Unrecognized message omitted to avoid credentials"
+    return result
 
 async def synthesize(job, output):
     import edge_tts
@@ -76,9 +116,10 @@ async def synthesize(job, output):
         attempt.update(status="NARRATION_RENDERED_NEEDS_REVIEW")
     except Exception as exc:
         # Do not echo service URLs, client headers or credentials in errors.
-        attempt.update(status="FAILED_NO_AUTOMATIC_RETRY", error_type=type(exc).__name__, audio_bytes=audio_path.stat().st_size if audio_path.exists() else 0)
+        diagnostic = safe_error_metadata(exc)
+        attempt.update(status="FAILED_NO_AUTOMATIC_RETRY", audio_bytes=audio_path.stat().st_size if audio_path.exists() else 0, **diagnostic)
         write(attempt_path, attempt)
-        print(json.dumps({"status": attempt["status"], "error_type": attempt["error_type"], "audio_bytes": attempt["audio_bytes"]}))
+        print(json.dumps({"status": attempt["status"], "audio_bytes": attempt["audio_bytes"], **diagnostic}))
         raise SystemExit(2) from None
     attempt["completed_at_utc"] = dt.datetime.now(dt.timezone.utc).isoformat()
     write(attempt_path, attempt)
