@@ -1,0 +1,78 @@
+{
+  "batch_id": "f2c822db2a95b253",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "nisyros-20261009-scene-01",
+      "status": "rendered",
+      "card_count": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "youtube_music_embedded": null,
+      "error": null
+    },
+    {
+      "id": "nisyros-20261009-scene-02",
+      "status": "rendered",
+      "card_count": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "youtube_music_embedded": null,
+      "error": null
+    },
+    {
+      "id": "nisyros-20261009-scene-03",
+      "status": "failed",
+      "card_count": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "youtube_music_embedded": null,
+      "error": "HTTP Error 429: Too many requests (f061ab2)"
+    },
+    {
+      "id": "nisyros-20261009-scene-04",
+      "status": "failed",
+      "card_count": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "youtube_music_embedded": null,
+      "error": "HTTP Error 429: Too many requests (f061ab2)"
+    },
+    {
+      "id": "nisyros-20261009-scene-05",
+      "status": "failed",
+      "card_count": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "youtube_music_embedded": null,
+      "error": "HTTP Error 429: Too many requests (f061ab2)"
+    },
+    {
+      "id": "nisyros-20261009-scene-06",
+      "status": "failed",
+      "card_count": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "youtube_music_embedded": null,
+      "error": "HTTP Error 429: Too many requests (f061ab2)"
+    },
+    {
+      "id": "nisyros-20261009-scene-07",
+      "status": "failed",
+      "card_count": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "youtube_music_embedded": null,
+      "error": "HTTP Error 429: Too many requests (f061ab2)"
+    },
+    {
+      "id": "nisyros-20261009-scene-08",
+      "status": "failed",
+      "card_count": null,
+      "final_duration": null,
+      "music_embedded": null,
+      "youtube_music_embedded": null,
+      "error": "HTTP Error 429: Too many requests (f061ab2)"
+    }
+  ]
+}

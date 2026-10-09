@@ -1,0 +1,121 @@
+{
+  "batch_sha256": "f2c822db2a95b253847f7777bd8ccfc9ffb0d90525ae7858e055415b6ffd6811",
+  "batch_id": "f2c822db2a95b253",
+  "paid_ai_credits_used": 0,
+  "jobs": [
+    {
+      "id": "nisyros-20261009-scene-01",
+      "mode": "image_jpeg_copy",
+      "status": "rendered",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/4/46/View_of_the_Stefanos_crater_from_the_north._Nisyros%2C_Greece.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+      "attribution": "View_of_the_Stefanos_crater_from_the_north._Nisyros,_Greece.jpg — Ввласенко / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:View_of_the_Stefanos_crater_from_the_north._Nisyros,_Greece.jpg. License: CC-BY-SA-3.0; https://creativecommons.org/licenses/by-sa/3.0. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job.",
+      "title": "View_of_the_Stefanos_crater_from_the_north._Nisyros,_Greece.jpg",
+      "text": null,
+      "source_visual_preserved": true,
+      "narration": false,
+      "image_size": [
+        6016,
+        4016
+      ],
+      "files": [
+        {
+          "name": "nisyros-20261009-scene-01-qa.png",
+          "bytes": 15510,
+          "sha256": "84bb769a8dd02448fb36bf223c4ad69e5873fba62efaf33a8abf0a3cc9103dab"
+        },
+        {
+          "name": "nisyros-20261009-scene-01.jpg",
+          "bytes": 20839670,
+          "sha256": "9bd72bd5e60c545e4dc7bad0fd7bf0f1c05caf957101fc5a543eee0876865439"
+        }
+      ]
+    },
+    {
+      "id": "nisyros-20261009-scene-02",
+      "mode": "image_jpeg_copy",
+      "status": "rendered",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Nisyros_air_1.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+      "attribution": "Nisyros_air_1.jpg — Karelj / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:Nisyros_air_1.jpg. License: Public-domain release by the author, worldwide (PD-self); grant documented on the source page.. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job.",
+      "title": "Nisyros_air_1.jpg",
+      "text": null,
+      "source_visual_preserved": true,
+      "narration": false,
+      "image_size": [
+        2200,
+        1603
+      ],
+      "files": [
+        {
+          "name": "nisyros-20261009-scene-02-qa.png",
+          "bytes": 5403,
+          "sha256": "19842028057c48c43ebe09c9bc26290417995a4432edc7223309e4fdf64d5225"
+        },
+        {
+          "name": "nisyros-20261009-scene-02.jpg",
+          "bytes": 1643777,
+          "sha256": "180906305246567ccdc2a126f60eca0f7cdcbabac1b3d37b69ec5ac7fa848832"
+        }
+      ]
+    },
+    {
+      "id": "nisyros-20261009-scene-03",
+      "mode": "image_jpeg_copy",
+      "status": "failed",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Nisyros_vulcan_mofetta_2.jpg",
+      "attribution": "Nisyros_vulcan_mofetta_2.jpg — Karelj / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:Nisyros_vulcan_mofetta_2.jpg. License: Public-domain release by the author, worldwide (PD-self); grant documented on the source page.. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job.",
+      "title": "Nisyros_vulcan_mofetta_2.jpg",
+      "text": null,
+      "error": "HTTP Error 429: Too many requests (f061ab2)"
+    },
+    {
+      "id": "nisyros-20261009-scene-04",
+      "mode": "image_jpeg_copy",
+      "status": "failed",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/The_southern_slope_of_the_Stefanos_crater._Nisyros%2C_Greece.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+      "attribution": "The_southern_slope_of_the_Stefanos_crater._Nisyros,_Greece.jpg — Ввласенко / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:The_southern_slope_of_the_Stefanos_crater._Nisyros,_Greece.jpg. License: CC-BY-SA-3.0; https://creativecommons.org/licenses/by-sa/3.0. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job.",
+      "title": "The_southern_slope_of_the_Stefanos_crater._Nisyros,_Greece.jpg",
+      "text": null,
+      "error": "HTTP Error 429: Too many requests (f061ab2)"
+    },
+    {
+      "id": "nisyros-20261009-scene-05",
+      "mode": "image_jpeg_copy",
+      "status": "failed",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Fumarole_Nisyros.JPG?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+      "attribution": "Fumarole_Nisyros.JPG — Dreizung / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:Fumarole_Nisyros.JPG. License: CC-BY-3.0; https://creativecommons.org/licenses/by/3.0. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job.",
+      "title": "Fumarole_Nisyros.JPG",
+      "text": null,
+      "error": "HTTP Error 429: Too many requests (f061ab2)"
+    },
+    {
+      "id": "nisyros-20261009-scene-06",
+      "mode": "image_jpeg_copy",
+      "status": "failed",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/View_of_the_Stefanos_Crater_from_Nikia._Nisyros%2C_Greece.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
+      "attribution": "View_of_the_Stefanos_Crater_from_Nikia._Nisyros,_Greece.jpg — Ввласенко / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:View_of_the_Stefanos_Crater_from_Nikia._Nisyros,_Greece.jpg. License: CC-BY-SA-3.0; https://creativecommons.org/licenses/by-sa/3.0. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job.",
+      "title": "View_of_the_Stefanos_Crater_from_Nikia._Nisyros,_Greece.jpg",
+      "text": null,
+      "error": "HTTP Error 429: Too many requests (f061ab2)"
+    },
+    {
+      "id": "nisyros-20261009-scene-07",
+      "mode": "image_jpeg_copy",
+      "status": "failed",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Nisyros_inland_1.jpg",
+      "attribution": "Nisyros_inland_1.jpg — Karelj / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:Nisyros_inland_1.jpg. License: Public-domain release by the author, worldwide (PD-self); grant documented on the source page.. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job.",
+      "title": "Nisyros_inland_1.jpg",
+      "text": null,
+      "error": "HTTP Error 429: Too many requests (f061ab2)"
+    },
+    {
+      "id": "nisyros-20261009-scene-08",
+      "mode": "image_jpeg_copy",
+      "status": "failed",
+      "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Panoramic_view_southern_Nisyros%2C_Nikia_village_and_Crater.jpg",
+      "attribution": "Panoramic_view_southern_Nisyros,_Nikia_village_and_Crater.jpg — Alexios Emmanuel Panagiotopoulos (Isandros) / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:Panoramic_view_southern_Nisyros,_Nikia_village_and_Crater.jpg. License: CC-BY-SA-4.0; https://creativecommons.org/licenses/by-sa/4.0. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job.",
+      "title": "Panoramic_view_southern_Nisyros,_Nikia_village_and_Crater.jpg",
+      "text": null,
+      "error": "HTTP Error 429: Too many requests (f061ab2)"
+    }
+  ]
+}
