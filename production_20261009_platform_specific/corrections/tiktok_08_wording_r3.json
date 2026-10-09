@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "created_at_utc": "2026-10-09T16:06:29.914Z",
+  "job_id": "2026-10-09-tiktok-08",
+  "story_id": "tiktok-20261009-08-pistol-shrimp-cavitation",
+  "scope": "Two equivalent narration wording clarifications; one ordinary zero-credit synthesis will follow verified public source commit.",
+  "changes": [
+    {
+      "before": "οι επιστήμονες συνδύασαν γρήγορες κάμερες με υδρόφωνα",
+      "after": "οι επιστήμονες χρησιμοποίησαν μαζί γρήγορες κάμερες με υδρόφωνα"
+    },
+    {
+      "before": "να ακινητοποιεί μικρά θηράματα",
+      "after": "να σταματά την κίνηση μικρών θηραμάτων"
+    }
+  ],
+  "prior_final_sha256": "beda281f958688554787c4c9b1e15c9f86387bae372fbe3ce2e4923fa90f10bb",
+  "old_script_sha256": "0f0d1c08cf8b85fd6fbf715a963fd0dc6f2938bd536b1fd754748a2c8640837a",
+  "new_script_sha256": "debe7918ac34175bad643cacfb5b5a4509fe25e030b6b6995f422b68c225d611",
+  "observed_windows": [
+    {
+      "seconds": [
+        41.2,
+        46.1
+      ],
+      "reference": "συνδύασαν",
+      "asr": "Ινδία σαν"
+    },
+    {
+      "seconds": [
+        61.8,
+        66.2
+      ],
+      "reference": "να ακινητοποιεί",
+      "asr": "να κινητοποιεί"
+    }
+  ],
+  "interpretation": "Full medium and separate windows agreed on ambiguous lexical boundaries. These outputs do not prove the audible narration was definitely wrong; the revised phrases avoid the ambiguity while retaining the same scientific claims.",
+  "actual_audio_listened": false,
+  "passed_final_review": false,
+  "global_gates_modified": false
+}
