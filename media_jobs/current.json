@@ -1,13 +1,14 @@
 {
   "schema_version": "1.0",
-  "approved": true,
+  "approved": false,
   "paid_generation_allowed": false,
   "publish_to_social": false,
-  "production_status": "RESUME_SIX_RATE_LIMITED_IMPORTS_AND_REVIEW_TWO_ACQUIRED_COPIES",
-  "purpose": "Continue the same Nisyros IG01 archive-photo acquisition. First make two hash-verified review previews of existing acquired copies, then acquire only the six exact source photographs that previously failed. No voice, AI-image generation, credit-bearing research, final-video render, or social publishing.",
-  "created_at": "2026-10-09T09:54:06Z",
+  "production_status": "COMPLETED_RETIRED_ASSET_IMPORT_ONLY",
+  "purpose": "Completed Nisyros photo-import reference only. No runnable jobs remain. A future production action needs its own fresh complete preflight and appropriate lease.",
+  "retired_at_utc": "2026-10-09T10:14:02Z",
   "brand_id": 7076410,
-  "story_binding": {
+  "jobs": [],
+  "historical_import_story_binding": {
     "job_id": "2026-10-09-instagram-01",
     "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
     "fingerprint": "documented_topic|nisyros_stefanos_hydrothermal",
@@ -16,79 +17,46 @@
     "sourcepack_ref": "3a861c29085eaf229862ee40cc79a1ba3ba59538",
     "sourcepack_path": "production_20261009_platform_specific/manifest.json"
   },
-  "manual_preflight": {
-    "decision": "CLEAR_FOR_SCOPED_RESUMPTION_OF_SIX_FAILED_IMPORTS_AND_TWO_EXISTING_COPY_PREVIEWS_ONLY",
-    "reviewer": "nisyros-photo-import-20261009T093617Z",
-    "semantic_checked_at": "2026-10-09T09:54:06Z",
-    "same_existing_sourcepack_continuation": true,
-    "history_reads_succeeded": [
-      "metricool",
-      "notion_active_and_archived",
-      "pinned_repository_history_and_sourcepack",
-      "repository_leases"
-    ],
-    "metricool_checked_at": "2026-10-09T09:28:47.269Z",
-    "metricool_records_sha256": "def1a9cbead0a23d1dcc968f1a024f4839d2ceaf95790faf13563cf59ef325b2",
-    "notion_repository_checked_at": "2026-10-09T09:30:05Z",
-    "private_notion_repository_readset_sha256": "6d1d69083ed16ef1fe8e6172fe9c51e7a72dd0cab09b3b62ed9140ce44980b8f",
-    "conflicting_target_story_found": false,
-    "known_same_original_filename_found": false,
-    "media_novelty_limit": "Metricool rewrites original filenames; absence of source-name matches is not a full historic media-byte or visual identity proof. Target-topic history and current sourcepack acquisition state were also reviewed.",
-    "lease_path": "state/production_leases/2026-10-09-brand7076410.json",
-    "lease_owner": "nisyros-photo-import-20261009T093617Z",
-    "lease_must_be_claimed_and_read_back_before_dispatch": true,
-    "authorized_actions": [
-      "asset_import",
-      "asset_review_previews"
-    ],
-    "canonical_production_preflight_passed": false,
-    "enforcement_note": "This is a root-reviewed asset-import authorization and external CAS lease binding. The existing image copier does not implement canonical production preflight or enforce this metadata; no production gate is enabled.",
-    "known_existing_acquisitions": [
-      {
-        "job_id": "nisyros-20261009-scene-01",
-        "output_commit": "33ad1815d7a03a3dfbca216449ee15a54c19c754",
-        "files": [
-          {
-            "name": "nisyros-20261009-scene-01-qa.png",
-            "bytes": 15510,
-            "sha256": "84bb769a8dd02448fb36bf223c4ad69e5873fba62efaf33a8abf0a3cc9103dab"
-          },
-          {
-            "name": "nisyros-20261009-scene-01.jpg",
-            "bytes": 20839670,
-            "sha256": "9bd72bd5e60c545e4dc7bad0fd7bf0f1c05caf957101fc5a543eee0876865439"
-          }
-        ]
-      },
-      {
-        "job_id": "nisyros-20261009-scene-02",
-        "output_commit": "33ad1815d7a03a3dfbca216449ee15a54c19c754",
-        "files": [
-          {
-            "name": "nisyros-20261009-scene-02-qa.png",
-            "bytes": 5403,
-            "sha256": "19842028057c48c43ebe09c9bc26290417995a4432edc7223309e4fdf64d5225"
-          },
-          {
-            "name": "nisyros-20261009-scene-02.jpg",
-            "bytes": 1643777,
-            "sha256": "180906305246567ccdc2a126f60eca0f7cdcbabac1b3d37b69ec5ac7fa848832"
-          }
-        ]
-      }
-    ],
-    "duplicate_handling": "The two acquired photographs are not imported again from Wikimedia and are not counted as new photos. Their review derivatives bind the exact acquired-copy SHA256. The six failed source jobs had no surviving imported media and are explicitly resumed under the same existing story.",
-    "repository_delta_review": {
-      "base_ref": "3a861c29085eaf229862ee40cc79a1ba3ba59538",
-      "known_root_writes": [
-        "state/production_leases/2026-10-09-brand7076410.json",
-        "media_jobs/current.json",
-        "tools/render_media.py"
-      ],
-      "initial_import_report_and_exact_source_manifest_read_back": true,
-      "latest_source_code_commit": "43c38cf3193bc00b624a8fad500b9e6d47cf728e",
-      "canonical_story_and_script_unchanged": true
-    }
+  "post_import_canonical_binding": {
+    "import_story_sha256": "d4e6dc30c9c3b28fc8e2b0c72e2946f6efe422979be1bd1b2158f808ad1ec9f9",
+    "current_story_sha256": "048d6fe541ceeb96c743d0431a483d75f7a64069da050649c94eedd06a41448e",
+    "script_sha256": "03abce7d47e612847b297b182032c705fc2bc45727a332ec990bd303c7055919",
+    "script_unchanged": true,
+    "reason": "Replace unrealized AI-image scene instructions and draft disclosure with eight actually acquired archive photographs; preserve narration, identity, source facts and unscheduled editorial slot.",
+    "prior_import_preflight_is_historical_only": true,
+    "fresh_complete_semantic_media_history_preflight_required_before_synthesis_render_or_release": true,
+    "current_canonical_production_preflight_passed": false,
+    "manifest_commit": "13bdc4591c800bd752d67ec003c0d9d3dde1bfe6",
+    "manifest_blob": "40e118a89ee17d4e8785de6bdce2e38497acc4c7",
+    "catalog_commit": "4cdf57cc311e50ff1467dce3df907dab8821344d",
+    "catalog_blob": "c5640d69510ac1d89f9dc78b3da70a9442db8603"
+  },
+  "completed_batch": {
+    "batch_id": "4deeeea5dc72c239",
+    "executed_input_sha256": "4deeeea5dc72c23911c6b91b15fe596bd797d3c9b910b3886e563271fdc5499c",
+    "executed_input_commit": "150687c063cf91183b5c302c4f6989d6f556d33c",
+    "executed_input_blob_sha": "82155f9d9945c8049733ef5677f20155d462ac99",
+    "workflow_run_id": 37914255633,
+    "output_commit": "b40f8ff1e3e310cdbc0c83981f5761f5f2a59dba",
+    "source_manifest_path": "jobs/4deeeea5dc72c239/source_manifest.json",
+    "report_path": "jobs/4deeeea5dc72c239/manifest.json",
+    "new_source_photographs_this_run": 6,
+    "existing_copy_preview_jobs": 2,
+    "unique_acquired_photographs_across_both_runs": 8
+  },
+  "prior_batch": {
+    "input_sha256": "f2c822db2a95b253847f7777bd8ccfc9ffb0d90525ae7858e055415b6ffd6811",
+    "batch_id": "f2c822db2a95b253",
+    "workflow_run_id": 37912424036,
+    "output_commit": "33ad1815d7a03a3dfbca216449ee15a54c19c754",
+    "report_path": "jobs/f2c822db2a95b253/manifest.json",
+    "successful_source_imports": 2,
+    "failed_source_imports": 6,
+    "successes_are_preserved_and_not_redownloaded_from_original_source": true
+  },
+  "acquisition_record": {
+    "commit_sha": "f45cda0f3be09cf5535f0faf01367299fa626460",
+    "path": "production_20261009_platform_specific/nisyros_photo_acquisition_20261009.json"
   },
   "release_state": {
     "voice": "el-GR-NestorasNeural",
@@ -101,228 +69,10 @@
     "published": false,
     "publishable": false
   },
-  "retired_input_preservation": {
-    "path": "media_jobs/current.json",
-    "commit_ref": "3a861c29085eaf229862ee40cc79a1ba3ba59538",
-    "blob_sha": "9017b37c859ab0b9f2ccdf4626f5bd50643386e2",
-    "note": "The retired Dog Bartender job is not copied or resumed; the entire current input is replaced with this unrelated existing-sourcepack photo-import batch."
-  },
-  "jobs": [
-    {
-      "id": "nisyros-20261009-scene-01-review",
-      "mode": "preview",
-      "source_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/33ad1815d7a03a3dfbca216449ee15a54c19c754/jobs/f2c822db2a95b253/nisyros-20261009-scene-01.jpg",
-      "source_page_url": "https://commons.wikimedia.org/wiki/File:View_of_the_Stefanos_crater_from_the_north._Nisyros,_Greece.jpg",
-      "source_file_id": "View_of_the_Stefanos_crater_from_the_north._Nisyros,_Greece.jpg",
-      "source_author": "Ввласенко",
-      "source_license": "CC-BY-SA-3.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-      "output_image_license": "CC-BY-SA-3.0",
-      "license_application": "The copied JPEG and derived review preview remain under the same source-image license; the public source_manifest.json carries title, creator, source link, license link and modification notice alongside them. PD-self sources remain public domain.",
-      "attribution": "View_of_the_Stefanos_crater_from_the_north._Nisyros,_Greece.jpg — Ввласенко / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:View_of_the_Stefanos_crater_from_the_north._Nisyros,_Greece.jpg. License: CC-BY-SA-3.0; https://creativecommons.org/licenses/by-sa/3.0. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job. This preview job additionally resizes the already acquired copy to a full-color JPEG review image, maximum edge 1600 pixels; source-image license remains unchanged.",
-      "title": "View_of_the_Stefanos_crater_from_the_north._Nisyros,_Greece.jpg",
-      "asset_id": "ig_stefanos_north",
-      "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
-      "planned_narration_paragraph": 1,
-      "scene_assignment_status": "PROVISIONAL_AWAITING_ACTUAL_PIXEL_REVIEW",
-      "publish_to_social": false,
-      "expected_source_sha256": "9bd72bd5e60c545e4dc7bad0fd7bf0f1c05caf957101fc5a543eee0876865439",
-      "detail_preview": true,
-      "purpose": "Review derivatives of an already acquired, immutable JPEG copy; no new Wikimedia source download and no new distinct source photograph.",
-      "source_acquisition": {
-        "output_commit": "33ad1815d7a03a3dfbca216449ee15a54c19c754",
-        "batch_id": "f2c822db2a95b253",
-        "job_id": "nisyros-20261009-scene-01",
-        "file": {
-          "name": "nisyros-20261009-scene-01.jpg",
-          "bytes": 20839670,
-          "sha256": "9bd72bd5e60c545e4dc7bad0fd7bf0f1c05caf957101fc5a543eee0876865439"
-        }
-      }
-    },
-    {
-      "id": "nisyros-20261009-scene-02-review",
-      "mode": "preview",
-      "source_url": "https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/33ad1815d7a03a3dfbca216449ee15a54c19c754/jobs/f2c822db2a95b253/nisyros-20261009-scene-02.jpg",
-      "source_page_url": "https://commons.wikimedia.org/wiki/File:Nisyros_air_1.jpg",
-      "source_file_id": "Nisyros_air_1.jpg",
-      "source_author": "Karelj",
-      "source_license": "PD-SELF",
-      "license_url": "https://commons.wikimedia.org/wiki/File:Nisyros_air_1.jpg",
-      "output_image_license": "PD-SELF",
-      "license_application": "The copied JPEG and derived review preview remain under the same source-image license; the public source_manifest.json carries title, creator, source link, license link and modification notice alongside them. PD-self sources remain public domain.",
-      "attribution": "Nisyros_air_1.jpg — Karelj / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:Nisyros_air_1.jpg. License: Public-domain release by the author, worldwide (PD-self); grant documented on the source page.. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job. This preview job additionally resizes the already acquired copy to a full-color JPEG review image, maximum edge 1600 pixels; source-image license remains unchanged.",
-      "title": "Nisyros_air_1.jpg",
-      "asset_id": "ig_nisyros_aerial_2009",
-      "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
-      "planned_narration_paragraph": 2,
-      "scene_assignment_status": "PROVISIONAL_AWAITING_ACTUAL_PIXEL_REVIEW",
-      "publish_to_social": false,
-      "expected_source_sha256": "180906305246567ccdc2a126f60eca0f7cdcbabac1b3d37b69ec5ac7fa848832",
-      "detail_preview": true,
-      "purpose": "Review derivatives of an already acquired, immutable JPEG copy; no new Wikimedia source download and no new distinct source photograph.",
-      "source_acquisition": {
-        "output_commit": "33ad1815d7a03a3dfbca216449ee15a54c19c754",
-        "batch_id": "f2c822db2a95b253",
-        "job_id": "nisyros-20261009-scene-02",
-        "file": {
-          "name": "nisyros-20261009-scene-02.jpg",
-          "bytes": 1643777,
-          "sha256": "180906305246567ccdc2a126f60eca0f7cdcbabac1b3d37b69ec5ac7fa848832"
-        }
-      }
-    },
-    {
-      "id": "nisyros-20261009-scene-03",
-      "mode": "image_jpeg_copy",
-      "source_url": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Nisyros_vulcan_mofetta_2.jpg",
-      "source_page_url": "https://commons.wikimedia.org/wiki/File:Nisyros_vulcan_mofetta_2.jpg",
-      "source_file_id": "Nisyros_vulcan_mofetta_2.jpg",
-      "source_author": "Karelj",
-      "source_license": "PD-SELF",
-      "license_url": "https://commons.wikimedia.org/wiki/File:Nisyros_vulcan_mofetta_2.jpg",
-      "output_image_license": "PD-SELF",
-      "license_application": "The copied JPEG and derived review preview remain under the same source-image license; the public source_manifest.json carries title, creator, source link, license link and modification notice alongside them. PD-self sources remain public domain.",
-      "attribution": "Nisyros_vulcan_mofetta_2.jpg — Karelj / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:Nisyros_vulcan_mofetta_2.jpg. License: Public-domain release by the author, worldwide (PD-self); grant documented on the source page.. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job. A full-color resized JPEG review image, maximum edge 1600 pixels, is also produced; source-image license remains unchanged.",
-      "title": "Nisyros_vulcan_mofetta_2.jpg",
-      "asset_id": "ig_stefanos_vent_2009",
-      "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
-      "planned_narration_paragraph": 3,
-      "scene_assignment_status": "PROVISIONAL_AWAITING_ACTUAL_PIXEL_REVIEW",
-      "publish_to_social": false,
-      "detail_preview": true,
-      "resume_reason": "This exact source job produced no surviving file in the prior batch because the source returned HTTP 429. Resume only after adding polite pacing and bounded Retry-After handling.",
-      "previous_failed_batch_id": "f2c822db2a95b253"
-    },
-    {
-      "id": "nisyros-20261009-scene-04",
-      "mode": "image_jpeg_copy",
-      "source_url": "https://upload.wikimedia.org/wikipedia/commons/c/ca/The_southern_slope_of_the_Stefanos_crater._Nisyros%2C_Greece.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
-      "source_page_url": "https://commons.wikimedia.org/wiki/File:The_southern_slope_of_the_Stefanos_crater._Nisyros,_Greece.jpg",
-      "source_file_id": "The_southern_slope_of_the_Stefanos_crater._Nisyros,_Greece.jpg",
-      "source_author": "Ввласенко",
-      "source_license": "CC-BY-SA-3.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-      "output_image_license": "CC-BY-SA-3.0",
-      "license_application": "The copied JPEG and derived review preview remain under the same source-image license; the public source_manifest.json carries title, creator, source link, license link and modification notice alongside them. PD-self sources remain public domain.",
-      "attribution": "The_southern_slope_of_the_Stefanos_crater._Nisyros,_Greece.jpg — Ввласенко / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:The_southern_slope_of_the_Stefanos_crater._Nisyros,_Greece.jpg. License: CC-BY-SA-3.0; https://creativecommons.org/licenses/by-sa/3.0. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job. A full-color resized JPEG review image, maximum edge 1600 pixels, is also produced; source-image license remains unchanged.",
-      "title": "The_southern_slope_of_the_Stefanos_crater._Nisyros,_Greece.jpg",
-      "asset_id": "ig_stefanos_southern_slope",
-      "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
-      "planned_narration_paragraph": 4,
-      "scene_assignment_status": "PROVISIONAL_AWAITING_ACTUAL_PIXEL_REVIEW",
-      "publish_to_social": false,
-      "detail_preview": true,
-      "resume_reason": "This exact source job produced no surviving file in the prior batch because the source returned HTTP 429. Resume only after adding polite pacing and bounded Retry-After handling.",
-      "previous_failed_batch_id": "f2c822db2a95b253"
-    },
-    {
-      "id": "nisyros-20261009-scene-05",
-      "mode": "image_jpeg_copy",
-      "source_url": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Fumarole_Nisyros.JPG?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
-      "source_page_url": "https://commons.wikimedia.org/wiki/File:Fumarole_Nisyros.JPG",
-      "source_file_id": "Fumarole_Nisyros.JPG",
-      "source_author": "Dreizung",
-      "source_license": "CC-BY-3.0",
-      "license_url": "https://creativecommons.org/licenses/by/3.0",
-      "output_image_license": "CC-BY-3.0",
-      "license_application": "The copied JPEG and derived review preview remain under the same source-image license; the public source_manifest.json carries title, creator, source link, license link and modification notice alongside them. PD-self sources remain public domain.",
-      "attribution": "Fumarole_Nisyros.JPG — Dreizung / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:Fumarole_Nisyros.JPG. License: CC-BY-3.0; https://creativecommons.org/licenses/by/3.0. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job. A full-color resized JPEG review image, maximum edge 1600 pixels, is also produced; source-image license remains unchanged.",
-      "title": "Fumarole_Nisyros.JPG",
-      "asset_id": "ig_stefanos_fumarole",
-      "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
-      "planned_narration_paragraph": 5,
-      "scene_assignment_status": "PROVISIONAL_AWAITING_ACTUAL_PIXEL_REVIEW",
-      "publish_to_social": false,
-      "detail_preview": true,
-      "resume_reason": "This exact source job produced no surviving file in the prior batch because the source returned HTTP 429. Resume only after adding polite pacing and bounded Retry-After handling.",
-      "previous_failed_batch_id": "f2c822db2a95b253"
-    },
-    {
-      "id": "nisyros-20261009-scene-06",
-      "mode": "image_jpeg_copy",
-      "source_url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/View_of_the_Stefanos_Crater_from_Nikia._Nisyros%2C_Greece.jpg?utm_campaign=index&utm_content=original&utm_source=commons.wikimedia.org",
-      "source_page_url": "https://commons.wikimedia.org/wiki/File:View_of_the_Stefanos_Crater_from_Nikia._Nisyros,_Greece.jpg",
-      "source_file_id": "View_of_the_Stefanos_Crater_from_Nikia._Nisyros,_Greece.jpg",
-      "source_author": "Ввласенко",
-      "source_license": "CC-BY-SA-3.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
-      "output_image_license": "CC-BY-SA-3.0",
-      "license_application": "The copied JPEG and derived review preview remain under the same source-image license; the public source_manifest.json carries title, creator, source link, license link and modification notice alongside them. PD-self sources remain public domain.",
-      "attribution": "View_of_the_Stefanos_Crater_from_Nikia._Nisyros,_Greece.jpg — Ввласенко / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:View_of_the_Stefanos_Crater_from_Nikia._Nisyros,_Greece.jpg. License: CC-BY-SA-3.0; https://creativecommons.org/licenses/by-sa/3.0. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job. A full-color resized JPEG review image, maximum edge 1600 pixels, is also produced; source-image license remains unchanged.",
-      "title": "View_of_the_Stefanos_Crater_from_Nikia._Nisyros,_Greece.jpg",
-      "asset_id": "ig_stefanos_nikia",
-      "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
-      "planned_narration_paragraph": 6,
-      "scene_assignment_status": "PROVISIONAL_AWAITING_ACTUAL_PIXEL_REVIEW",
-      "publish_to_social": false,
-      "detail_preview": true,
-      "resume_reason": "This exact source job produced no surviving file in the prior batch because the source returned HTTP 429. Resume only after adding polite pacing and bounded Retry-After handling.",
-      "previous_failed_batch_id": "f2c822db2a95b253"
-    },
-    {
-      "id": "nisyros-20261009-scene-07",
-      "mode": "image_jpeg_copy",
-      "source_url": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Nisyros_inland_1.jpg",
-      "source_page_url": "https://commons.wikimedia.org/wiki/File:Nisyros_inland_1.jpg",
-      "source_file_id": "Nisyros_inland_1.jpg",
-      "source_author": "Karelj",
-      "source_license": "PD-SELF",
-      "license_url": "https://commons.wikimedia.org/wiki/File:Nisyros_inland_1.jpg",
-      "output_image_license": "PD-SELF",
-      "license_application": "The copied JPEG and derived review preview remain under the same source-image license; the public source_manifest.json carries title, creator, source link, license link and modification notice alongside them. PD-self sources remain public domain.",
-      "attribution": "Nisyros_inland_1.jpg — Karelj / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:Nisyros_inland_1.jpg. License: Public-domain release by the author, worldwide (PD-self); grant documented on the source page.. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job. A full-color resized JPEG review image, maximum edge 1600 pixels, is also produced; source-image license remains unchanged.",
-      "title": "Nisyros_inland_1.jpg",
-      "asset_id": "ig_nisyros_agricultural_inland",
-      "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
-      "planned_narration_paragraph": 7,
-      "scene_assignment_status": "PROVISIONAL_AWAITING_ACTUAL_PIXEL_REVIEW",
-      "publish_to_social": false,
-      "detail_preview": true,
-      "resume_reason": "This exact source job produced no surviving file in the prior batch because the source returned HTTP 429. Resume only after adding polite pacing and bounded Retry-After handling.",
-      "previous_failed_batch_id": "f2c822db2a95b253"
-    },
-    {
-      "id": "nisyros-20261009-scene-08",
-      "mode": "image_jpeg_copy",
-      "source_url": "https://upload.wikimedia.org/wikipedia/commons/6/65/Panoramic_view_southern_Nisyros%2C_Nikia_village_and_Crater.jpg",
-      "source_page_url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_southern_Nisyros,_Nikia_village_and_Crater.jpg",
-      "source_file_id": "Panoramic_view_southern_Nisyros,_Nikia_village_and_Crater.jpg",
-      "source_author": "Alexios Emmanuel Panagiotopoulos (Isandros)",
-      "source_license": "CC-BY-SA-4.0",
-      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
-      "output_image_license": "CC-BY-SA-4.0",
-      "license_application": "The copied JPEG and derived review preview remain under the same source-image license; the public source_manifest.json carries title, creator, source link, license link and modification notice alongside them. PD-self sources remain public domain.",
-      "attribution": "Panoramic_view_southern_Nisyros,_Nikia_village_and_Crater.jpg — Alexios Emmanuel Panagiotopoulos (Isandros) / Wikimedia Commons. Source: https://commons.wikimedia.org/wiki/File:Panoramic_view_southern_Nisyros,_Nikia_village_and_Crater.jpg. License: CC-BY-SA-4.0; https://creativecommons.org/licenses/by-sa/4.0. Changes: RGB conversion and JPEG re-encoding at original pixel dimensions; a reduced-color compact PNG review preview is also made. No crop, added objects, scene generation, narration, or final-video production in this job. A full-color resized JPEG review image, maximum edge 1600 pixels, is also produced; source-image license remains unchanged.",
-      "title": "Panoramic_view_southern_Nisyros,_Nikia_village_and_Crater.jpg",
-      "asset_id": "ig_nisyros_nikia_crater_panorama",
-      "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
-      "planned_narration_paragraph": 8,
-      "scene_assignment_status": "PROVISIONAL_AWAITING_ACTUAL_PIXEL_REVIEW",
-      "publish_to_social": false,
-      "detail_preview": true,
-      "resume_reason": "This exact source job produced no surviving file in the prior batch because the source returned HTTP 429. Resume only after adding polite pacing and bounded Retry-After handling.",
-      "previous_failed_batch_id": "f2c822db2a95b253"
-    }
-  ],
-  "execution_code": {
-    "commit_sha": "43c38cf3193bc00b624a8fad500b9e6d47cf728e",
-    "blob_sha": "240b60878d3a234125cf8e7a7bad6b99d2202379",
-    "path": "tools/render_media.py",
-    "file_sha256": "2d072c91ee44c298a7e556d926d602ccdf12e5c7877398bcb98ed7d590e17960",
-    "readback_verified": true,
-    "offline_tests_passed": 20,
-    "real_source_calls_in_validation": 0,
-    "paid_services_called": 0
-  },
-  "prior_batch": {
-    "input_sha256": "f2c822db2a95b253847f7777bd8ccfc9ffb0d90525ae7858e055415b6ffd6811",
-    "batch_id": "f2c822db2a95b253",
-    "workflow_run_id": 37912424036,
-    "output_commit": "33ad1815d7a03a3dfbca216449ee15a54c19c754",
-    "report_path": "jobs/f2c822db2a95b253/manifest.json",
-    "successful_source_imports": 2,
-    "failed_source_imports": 6,
-    "successes_are_preserved_and_not_redownloaded_from_original_source": true
+  "retirement_safety": {
+    "top_level_approved_false": true,
+    "zero_executable_jobs": true,
+    "paid_generation_prohibited": true,
+    "canonical_production_gates_enabled": false
   }
 }
