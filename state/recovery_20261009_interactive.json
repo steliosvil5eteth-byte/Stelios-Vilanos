@@ -1,16 +1,16 @@
 {
   "program": "PLATFORM_SPECIFIC_TEN_DAILY",
   "brand_id": 7076410,
-  "checkpoint_at_utc": "2026-10-09T16:15:11.891Z",
+  "checkpoint_at_utc": "2026-10-09T16:50:20.268Z",
   "requested_per_platform": 10,
   "one_platform_per_story": true,
   "confirmed_published": {
-    "facebook": 4,
+    "facebook": 6,
     "instagram": 10,
     "tiktok": 6,
-    "youtube": 6
+    "youtube": 10
   },
-  "new_published": 26,
+  "new_published": 32,
   "status": "ACTIVE_MANUAL_RECOVERY_AND_PUBLICATION",
   "actual_audio_listened": false,
   "passed_final_review": false,
@@ -45,6 +45,32 @@
       "actual_audio_listened": false
     },
     {
+      "job_id": "2026-10-09-facebook-03",
+      "platform": "facebook",
+      "metricool_post_id": 392217284,
+      "status": "PUBLISHED",
+      "public_url": "https://facebook.com/reel/1438381108223540",
+      "publication_date": {
+        "dateTime": "2026-10-09T19:47:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "3152c395068572c7e76d64c10083f133e61703cbdf742a726582cc0e9d082c95",
+      "actual_audio_listened": false
+    },
+    {
+      "job_id": "2026-10-09-facebook-04",
+      "platform": "facebook",
+      "metricool_post_id": 392219933,
+      "status": "PENDING",
+      "public_url": null,
+      "publication_date": {
+        "dateTime": "2026-10-09T19:53:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "4b769d25b0707db5eaf4fc8952ace632302fa103a182fe9f7defca8a77a1c308",
+      "actual_audio_listened": false
+    },
+    {
       "job_id": "2026-10-09-facebook-05",
       "platform": "facebook",
       "metricool_post_id": 392186005,
@@ -58,6 +84,45 @@
       "actual_audio_listened": false
     },
     {
+      "job_id": "2026-10-09-facebook-06",
+      "platform": "facebook",
+      "metricool_post_id": 392218721,
+      "status": "PENDING",
+      "public_url": null,
+      "publication_date": {
+        "dateTime": "2026-10-09T19:51:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "8fdd8aa5deb093576f479b5ec92933f61039b852c989434c12c0d5b661ad09cf",
+      "actual_audio_listened": false
+    },
+    {
+      "job_id": "2026-10-09-facebook-07",
+      "platform": "facebook",
+      "metricool_post_id": 392207719,
+      "status": "PUBLISHED",
+      "public_url": "https://facebook.com/reel/1387456339784918",
+      "publication_date": {
+        "dateTime": "2026-10-09T19:38:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "9f9f3f5ae6d50c03fdf762c1bd352880ff2961f13d3341ab655b908465947f51",
+      "actual_audio_listened": false
+    },
+    {
+      "job_id": "2026-10-09-facebook-08",
+      "platform": "facebook",
+      "metricool_post_id": 392219989,
+      "status": "PENDING",
+      "public_url": null,
+      "publication_date": {
+        "dateTime": "2026-10-09T19:54:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "8ab3ccf7af1d5d9489b73624fea319b76b43915e1233f4f47f2ce46aa5632911",
+      "actual_audio_listened": false
+    },
+    {
       "job_id": "2026-10-09-facebook-09",
       "platform": "facebook",
       "metricool_post_id": 392157817,
@@ -68,6 +133,19 @@
         "timezone": "Europe/Athens"
       },
       "final_sha256": "01b0b73348d69d9ab72395509d40a2710b0bc26b0671866aff9268f9ed0ea13b",
+      "actual_audio_listened": false
+    },
+    {
+      "job_id": "2026-10-09-facebook-10",
+      "platform": "facebook",
+      "metricool_post_id": 392218680,
+      "status": "PENDING",
+      "public_url": null,
+      "publication_date": {
+        "dateTime": "2026-10-09T19:50:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "5fa2e6045ad66e5f491b1fee7a28c27295980ecc072e8eeb758fa809abd22e27",
       "actual_audio_listened": false
     },
     {
@@ -214,6 +292,32 @@
       "actual_audio_listened": false
     },
     {
+      "job_id": "2026-10-09-tiktok-02",
+      "platform": "tiktok",
+      "metricool_post_id": 392218779,
+      "status": "PENDING",
+      "public_url": null,
+      "publication_date": {
+        "dateTime": "2026-10-09T19:52:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "3096d29bfb53600a8c73309f68aadb23fae847f59d2e3d842e9ee1c65d62dea7",
+      "actual_audio_listened": false
+    },
+    {
+      "job_id": "2026-10-09-tiktok-03",
+      "platform": "tiktok",
+      "metricool_post_id": 392220040,
+      "status": "PENDING",
+      "public_url": null,
+      "publication_date": {
+        "dateTime": "2026-10-09T19:55:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "f1df3488ed220d5ebbc9f134062c7ca62f1a4a5702d4880eeb8efd717ab47cfb",
+      "actual_audio_listened": false
+    },
+    {
       "job_id": "2026-10-09-tiktok-04",
       "platform": "tiktok",
       "metricool_post_id": 392167560,
@@ -266,6 +370,19 @@
       "actual_audio_listened": false
     },
     {
+      "job_id": "2026-10-09-tiktok-08",
+      "platform": "tiktok",
+      "metricool_post_id": 392221395,
+      "status": "PENDING",
+      "public_url": null,
+      "publication_date": {
+        "dateTime": "2026-10-09T19:56:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "90f1abbad64558f01e86b84a3816015879fd8b85401f2c600cc31be99f17acf6",
+      "actual_audio_listened": false
+    },
+    {
       "job_id": "2026-10-09-tiktok-09",
       "platform": "tiktok",
       "metricool_post_id": 392149302,
@@ -302,6 +419,19 @@
         "timezone": "Europe/Athens"
       },
       "final_sha256": "b9a1e9358dffa995b4517f86d26bcfd672976423dea715d4e44835581f846a5b",
+      "actual_audio_listened": false
+    },
+    {
+      "job_id": "2026-10-09-youtube-03",
+      "platform": "youtube",
+      "metricool_post_id": 392207547,
+      "status": "PUBLISHED",
+      "public_url": "https://www.youtube.com/shorts/OSX0aZasy6E",
+      "publication_date": {
+        "dateTime": "2026-10-09T19:35:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "35b95d1dc3b82f7bf75debe3dc658272fd560cb6ea56b163b2f4cc86435f0531",
       "actual_audio_listened": false
     },
     {
@@ -344,11 +474,24 @@
       "actual_audio_listened": false
     },
     {
+      "job_id": "2026-10-09-youtube-07",
+      "platform": "youtube",
+      "metricool_post_id": 392207597,
+      "status": "PUBLISHED",
+      "public_url": "https://www.youtube.com/shorts/mAWFXsHhxeQ",
+      "publication_date": {
+        "dateTime": "2026-10-09T19:36:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "fd85761f83685b47be2eb6b26132bc0453eef27d7e5e2dc694bad88fba6d296f",
+      "actual_audio_listened": false
+    },
+    {
       "job_id": "2026-10-09-youtube-08",
       "platform": "youtube",
       "metricool_post_id": 392195761,
-      "status": "PENDING",
-      "public_url": null,
+      "status": "PUBLISHED",
+      "public_url": "https://www.youtube.com/shorts/vPlF8u_vXnw",
       "publication_date": {
         "dateTime": "2026-10-09T19:20:00",
         "timezone": "Europe/Athens"
@@ -368,17 +511,32 @@
       },
       "final_sha256": "51eed8838f3ae4e98742a62b367b18f58dd781dd64902f4e4621aef13f73f9aa",
       "actual_audio_listened": false
+    },
+    {
+      "job_id": "2026-10-09-youtube-10",
+      "platform": "youtube",
+      "metricool_post_id": 392207671,
+      "status": "PUBLISHED",
+      "public_url": "https://www.youtube.com/shorts/jBjg2LD-bp4",
+      "publication_date": {
+        "dateTime": "2026-10-09T19:37:00",
+        "timezone": "Europe/Athens"
+      },
+      "final_sha256": "ff4bb0ae38e035dc8a9cdc82a7f413878bb312ec3657ccf56c03bab0246cd7af",
+      "actual_audio_listened": false
     }
   ],
-  "remaining_to_publish": 14,
+  "remaining_to_publish": 8,
   "created_or_published_counts": {
-    "facebook": 4,
+    "facebook": 10,
     "instagram": 10,
-    "tiktok": 6,
-    "youtube": 7
+    "tiktok": 9,
+    "youtube": 10
   },
   "initial_complete_narration_set": 40,
   "correction_policy": "Individual narration wording clarifications may replace an existing source audio. Corrected scripts are committed before ordinary zero-credit Nestoras requests; no substitute voice or blind retry.",
   "publishable": false,
-  "manual_user_authorized_release_only": true
+  "manual_user_authorized_release_only": true,
+  "current_complete_narrations": 40,
+  "current_final_videos": 40
 }
