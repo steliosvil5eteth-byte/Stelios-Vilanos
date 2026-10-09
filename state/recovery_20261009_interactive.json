@@ -1,27 +1,66 @@
 {
   "program": "PLATFORM_SPECIFIC_TEN_DAILY",
   "brand_id": 7076410,
-  "checkpoint_at_utc": "2026-10-09 13:35:16 UTC",
+  "checkpoint_at_utc": "2026-10-09 14:56:04 UTC",
   "requested_per_platform": 10,
   "one_platform_per_story": true,
   "current_full_narrations": 40,
-  "local_final_exports": {
+  "confirmed_published": {
     "facebook": 2,
-    "instagram": 3,
+    "instagram": 2,
     "tiktok": 1,
     "youtube": 1
   },
-  "new_scheduled": 0,
-  "new_published": 0,
-  "remaining_final_exports": 33,
+  "new_published": 6,
+  "status": "ACTIVE_MANUAL_RECOVERY_AND_PUBLICATION",
   "actual_audio_listened": false,
   "passed_final_review": false,
-  "publishable": false,
-  "status": "PREPARATION_CHECKPOINT_AWAITING_REQUIRED_INPUT",
-  "external_transfer_block": "Automatic approval review rejected unpublished Nisyros MP4 transfer to HeyGen as an intermediate host; explicit consent for that destination is required.",
-  "specific_audio_ambiguity": "Mystras nineteenth-century wording recognized as eleventh century by local ASR; keep held for actual listening.",
-  "source_acquisition": "Sole image worker stopped on tunnel403, no retries or route change.",
-  "audio_corrections": "Ten Γι’ contractions expanded to Για; Daphni Ό,τι expanded to Αυτό που. Truncated audio and failed video revisions are preserved and excluded.",
+  "scope": "Manual uploads under latest user instruction after disclosure of unavailable actual hearing. Individual visual and objective audio checks retained; no automatic blanket release.",
+  "transfer_authorization": "User explicitly continued the described connected HeyGen to Metricool intermediate transfer on 2026-10-09T17:30:27+03:00; actual zero-credit byte transfers succeeded.",
   "automation_activated": false,
-  "private_artifacts": "Current complete media, scripts, source packs and QA handoffs saved privately; do not infer publication from this public checkpoint."
+  "publications": [
+    {
+      "job_id": "2026-10-09-instagram-01",
+      "metricool_id": 392119059,
+      "sha256": "d5d785c48584db7c4d4f76695e4439b0762469036663c74a7bf1eb14dd1c3078",
+      "public_url": "https://www.instagram.com/reel/DeRwdZcilLW/",
+      "status": "PUBLISHED"
+    },
+    {
+      "job_id": "2026-10-09-instagram-02",
+      "metricool_id": 392118284,
+      "sha256": "d63741869bdcf4b783bdab8bb203ca5de94d3db9a1aebf4e166655c414ee57b2",
+      "public_url": "https://www.instagram.com/reel/DeRwv7Sj2fu/",
+      "status": "PUBLISHED"
+    },
+    {
+      "job_id": "2026-10-09-facebook-01",
+      "metricool_id": 392119371,
+      "sha256": "f52630bbda31a82d0c8076949e155cf6a631ed8c08589159da7700fff015e9ae",
+      "public_url": "https://facebook.com/reel/1517984116756472",
+      "status": "PUBLISHED"
+    },
+    {
+      "job_id": "2026-10-09-facebook-02",
+      "metricool_id": 392119669,
+      "sha256": "aac5ee2cc8d4f488b0477fde99d6ebd9a1982cc5d987a61ab36ecc64a0300962",
+      "public_url": "https://facebook.com/reel/1749464792950224",
+      "status": "PUBLISHED"
+    },
+    {
+      "job_id": "2026-10-09-tiktok-01",
+      "metricool_id": 392119637,
+      "sha256": "f00b0a2c039b747801361a8894c8eb2e803497807a7448ed41454fb0dee2aadc",
+      "public_url": "https://www.tiktok.com/@steliosvilanos/video/7694680108791041312",
+      "status": "PUBLISHED"
+    },
+    {
+      "job_id": "2026-10-09-youtube-01",
+      "metricool_id": 392117112,
+      "sha256": "8c63e4a30088cef1858c875add857dcd7e69b3c853a6ddf73e97728d65b0954c",
+      "public_url": "https://www.youtube.com/shorts/GzlHPcnO8wE",
+      "status": "PUBLISHED"
+    }
+  ],
+  "remaining_to_publish": 34
 }
