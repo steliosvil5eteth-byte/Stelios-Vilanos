@@ -3,7 +3,7 @@
   "manifest_id": "first_four_archive_asset_leads_20261009",
   "research_date": "2026-10-09",
   "created_at_utc": "2026-10-09T07:25:13Z",
-  "status": "RESEARCH_ONLY_TEN_ASSET_LEADS_ZERO_ACQUISITIONS",
+  "status": "RESEARCH_ONLY_FIFTEEN_ASSET_LEADS_ZERO_ACQUISITIONS",
   "purpose": "Public-repository-safe archive-asset research for four already prepared narrated-video sourcepacks.",
   "sourcepack_provenance": {
     "repository": "steliosvil5eteth-byte/Stelios-Vilanos",
@@ -15,8 +15,8 @@
   },
   "scope": {
     "story_count": 4,
-    "asset_lead_count": 10,
-    "image_file_lead_count": 9,
+    "asset_lead_count": 15,
+    "image_file_lead_count": 14,
     "article_figure_collection_lead_count": 1,
     "acquired_media_count": 0,
     "acquired_audio_count": 0,
@@ -73,7 +73,8 @@
     "Each story retains its sourcepack's original unscheduled editorial date/time. The provisional TikTok choice remains sequence 2 at 10:00 Europe/Athens; it does not replace sequence 1 or claim a publishing slot.",
     "Paragraph mappings are proposals. Reuse of one image does not automatically satisfy requirements for a distinct image per scene.",
     "The Frontiers figure collection is one research lead and must resolve into individually selected image components before acquisition is recorded.",
-    "Raw publishing history, private analytics and private content-workspace records are excluded."
+    "Raw publishing history, private analytics and private content-workspace records are excluded.",
+    "Nisyros now has an eight-paragraph proposed source mapping only. Dry-stone wall visibility for paragraph 7 and the daylight closing proposal for paragraph 8 remain unresolved; no sourcepack scene prompt or publishing slot was changed."
   ],
   "stories": [
     {
@@ -155,7 +156,12 @@
       "asset_ids": [
         "ig_stefanos_north",
         "ig_stefanos_nikia",
-        "ig_stefanos_fumarole"
+        "ig_stefanos_fumarole",
+        "ig_nisyros_aerial_2009",
+        "ig_stefanos_vent_2009",
+        "ig_stefanos_southern_slope",
+        "ig_nisyros_agricultural_inland",
+        "ig_nisyros_nikia_crater_panorama"
       ],
       "sourcepack_sequence": 1,
       "semantic_assessment": {
@@ -164,16 +170,15 @@
         "summary": "Stefanos hydrothermal formation and Nisyros geography are distinct from previously reviewed sulfur flames, volcanic lightning and basalt cooling."
       },
       "unresolved_scene_paragraphs": [
-        2,
-        3,
-        4,
         7,
         8
       ],
       "scene_gap_notes": [
-        "Three separate photographs have leads: north view, fumarole, Nikia overlook.",
-        "The fumarole may be reassigned to paragraph 3, but one image cannot count as both distinct scene 3 and scene 5.",
-        "Additional caldera, rock textures, inhabited terraces and a distinct closing landscape remain to be selected."
+        "All eight paragraphs now have distinct proposed source leads; no source image has been acquired or visually accepted.",
+        "The three existing leads for paragraphs 1, 5 and 6 are preserved unchanged.",
+        "Paragraph 7: agricultural context is documented, but suitable dry-stone wall or terrace visibility remains unconfirmed.",
+        "Paragraph 8: use the photographed daylight setting as a routine editorial adjustment under the user's continuation instruction; the sourcepack update and actual visual fit remain pending.",
+        "Aerial/caldera framing, scientific vent labeling, every 9:16 crop and all final scene rights remain subject to the later authorized acquisition and review workflow."
       ],
       "downloaded": false,
       "visual_qa_complete": false,
@@ -188,7 +193,100 @@
       "release_authorized": false,
       "scheduled": false,
       "published": false,
-      "publishable": false
+      "publishable": false,
+      "proposed_source_mapping_status": "EIGHT_PARAGRAPHS_MAPPED_TO_LEADS_ONLY",
+      "proposed_source_mapping": [
+        {
+          "paragraph": 1,
+          "asset_id": "ig_stefanos_north",
+          "mapping_status": "PRESERVED_EXISTING_LEAD",
+          "assignment_final": false,
+          "downloaded": false,
+          "visual_qa_complete": false,
+          "rights_complete": false,
+          "release_authorized": false
+        },
+        {
+          "paragraph": 2,
+          "asset_id": "ig_nisyros_aerial_2009",
+          "mapping_status": "NEW_LEAD_VISUAL_FIT_UNVERIFIED",
+          "assignment_final": false,
+          "downloaded": false,
+          "visual_qa_complete": false,
+          "rights_complete": false,
+          "release_authorized": false
+        },
+        {
+          "paragraph": 3,
+          "asset_id": "ig_stefanos_vent_2009",
+          "mapping_status": "NEW_LEAD_SCIENTIFIC_LABEL_CONSTRAINT",
+          "assignment_final": false,
+          "downloaded": false,
+          "visual_qa_complete": false,
+          "rights_complete": false,
+          "release_authorized": false
+        },
+        {
+          "paragraph": 4,
+          "asset_id": "ig_stefanos_southern_slope",
+          "mapping_status": "NEW_LEAD_VISUAL_FIT_UNVERIFIED",
+          "assignment_final": false,
+          "downloaded": false,
+          "visual_qa_complete": false,
+          "rights_complete": false,
+          "release_authorized": false
+        },
+        {
+          "paragraph": 5,
+          "asset_id": "ig_stefanos_fumarole",
+          "mapping_status": "PRESERVED_EXISTING_LEAD",
+          "assignment_final": false,
+          "downloaded": false,
+          "visual_qa_complete": false,
+          "rights_complete": false,
+          "release_authorized": false
+        },
+        {
+          "paragraph": 6,
+          "asset_id": "ig_stefanos_nikia",
+          "mapping_status": "PRESERVED_EXISTING_LEAD",
+          "assignment_final": false,
+          "downloaded": false,
+          "visual_qa_complete": false,
+          "rights_complete": false,
+          "release_authorized": false
+        },
+        {
+          "paragraph": 7,
+          "asset_id": "ig_nisyros_agricultural_inland",
+          "mapping_status": "UNRESOLVED_DRY_STONE_WALL_VISIBILITY",
+          "assignment_final": false,
+          "downloaded": false,
+          "visual_qa_complete": false,
+          "rights_complete": false,
+          "release_authorized": false
+        },
+        {
+          "paragraph": 8,
+          "asset_id": "ig_nisyros_nikia_crater_panorama",
+          "mapping_status": "UNRESOLVED_DAYLIGHT_CLOSING_PROPOSAL",
+          "assignment_final": false,
+          "downloaded": false,
+          "visual_qa_complete": false,
+          "rights_complete": false,
+          "release_authorized": false
+        }
+      ],
+      "visual_fit_unverified_paragraphs": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ]
     },
     {
       "story_id": "tiktok-20261009-02-blood-falls-iron-brine",
@@ -1083,6 +1181,409 @@
         "Acquire a separate suitable freshwater-lake image for paragraphs 7-8.",
         "Refresh the source and original media metadata during acquisition; later root fetch errors did not erase the earlier successful page read."
       ]
+    },
+    {
+      "asset_id": "ig_nisyros_aerial_2009",
+      "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
+      "title": "Nisyros air 1.jpg",
+      "lead_type": "EXISTING_IMAGE_FILE",
+      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Nisyros_air_1.jpg",
+      "source_file_id": "Nisyros_air_1.jpg",
+      "observed_date": "2026-10-09",
+      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
+      "direct_download_url": null,
+      "download_url_status": "NOT_RESOLVED_FOR_ACQUISITION",
+      "local_media_path": null,
+      "download_sha256": null,
+      "original_file_bytes_verified": false,
+      "scene_assignment_final": false,
+      "downloaded": false,
+      "visual_qa_complete": false,
+      "vertical_crop_qa_complete": false,
+      "rights_complete": false,
+      "attribution_complete": false,
+      "scene_set_complete": false,
+      "audio_generated": false,
+      "final_video_rendered": false,
+      "final_media_qa_complete": false,
+      "release_lease_acquired": false,
+      "release_authorized": false,
+      "scheduled": false,
+      "published": false,
+      "publishable": false,
+      "provenance": {
+        "repository": "Wikimedia Commons",
+        "creator": "Karelj",
+        "source_description": "Uploader's own actual aerial photograph of Nisyros island, Greece.",
+        "date_label_observed": "August 2009",
+        "exif_photograph_date": "2009-08-13",
+        "location_metadata": {
+          "latitude": 36.543286,
+          "longitude": 27.129156
+        },
+        "location_independently_verified": false
+      },
+      "license": {
+        "label_observed": "Public-domain release by the copyright holder, explicitly worldwide, with a fallback grant to anyone for any purpose unless conditions are required by law.",
+        "code": "PD-SELF",
+        "version": null,
+        "license_url": null,
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Nisyros_air_1.jpg",
+        "source_statement_read": true,
+        "individual_rights_review_complete": false,
+        "worldwide_clearance_complete": false,
+        "attribution_plan": "Karelj / Wikimedia Commons; identify the exact filename and archival photograph date. The source states a worldwide public-domain release."
+      },
+      "resolution_observed": {
+        "width": 2200,
+        "height": 1603,
+        "unit": "px",
+        "basis": "Individual source page original-file metadata; bytes not acquired."
+      },
+      "planned_uses": [
+        {
+          "paragraph": 2,
+          "role": "Island-scale aerial context for the introduction of Nisyros and its central caldera.",
+          "required_label_el": "Νίσυρος — αρχειακή αεροφωτογραφία, 2009"
+        }
+      ],
+      "source_preview_read": {
+        "status": "IMAGE_REFERENCE_RETURNED_WITHOUT_INSPECTABLE_IMAGE_BLOCK",
+        "pixel_level_review_complete": false
+      },
+      "constraints": [
+        "Verify that the chosen crop retains sufficient volcanic interior to support the caldera explanation.",
+        "Do not label an individual hydrothermal crater as the whole caldera.",
+        "This archival aerial is not a present-day condition report.",
+        "Source dimensions do not by themselves demonstrate acceptable 9:16 composition or quality."
+      ]
+    },
+    {
+      "asset_id": "ig_stefanos_vent_2009",
+      "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
+      "title": "Nisyros vulcan mofetta 2.jpg",
+      "lead_type": "EXISTING_IMAGE_FILE",
+      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Nisyros_vulcan_mofetta_2.jpg",
+      "source_file_id": "Nisyros_vulcan_mofetta_2.jpg",
+      "observed_date": "2026-10-09",
+      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
+      "direct_download_url": null,
+      "download_url_status": "NOT_RESOLVED_FOR_ACQUISITION",
+      "local_media_path": null,
+      "download_sha256": null,
+      "original_file_bytes_verified": false,
+      "scene_assignment_final": false,
+      "downloaded": false,
+      "visual_qa_complete": false,
+      "vertical_crop_qa_complete": false,
+      "rights_complete": false,
+      "attribution_complete": false,
+      "scene_set_complete": false,
+      "audio_generated": false,
+      "final_video_rendered": false,
+      "final_media_qa_complete": false,
+      "release_lease_acquired": false,
+      "release_authorized": false,
+      "scheduled": false,
+      "published": false,
+      "publishable": false,
+      "provenance": {
+        "repository": "Wikimedia Commons",
+        "creator": "Karelj",
+        "source_description": "Uploader's own photograph described as a mofette in a Nisyros volcanic crater; the file is categorized under Stefanos Crater.",
+        "date_label_observed": "August 2009",
+        "location_metadata": {
+          "latitude": 36.576883,
+          "longitude": 27.166003
+        },
+        "location_independently_verified": false
+      },
+      "license": {
+        "label_observed": "Public-domain release by the copyright holder, explicitly worldwide, with a fallback grant to anyone for any purpose unless conditions are required by law.",
+        "code": "PD-SELF",
+        "version": null,
+        "license_url": null,
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Nisyros_vulcan_mofetta_2.jpg",
+        "source_statement_read": true,
+        "individual_rights_review_complete": false,
+        "worldwide_clearance_complete": false,
+        "attribution_plan": "Karelj / Wikimedia Commons; identify the exact filename and archival photograph date. The source states a worldwide public-domain release."
+      },
+      "resolution_observed": {
+        "width": 2400,
+        "height": 1600,
+        "unit": "px",
+        "basis": "Individual source page original-file metadata; bytes not acquired."
+      },
+      "planned_uses": [
+        {
+          "paragraph": 3,
+          "role": "A distinct photographed surface vent accompanying the hydrothermal explanation.",
+          "required_label_el": "Υδροθερμική εκδήλωση στη Νίσυρο — αρχειακή φωτογραφία"
+        }
+      ],
+      "source_preview_read": {
+        "status": "IMAGE_REFERENCE_RETURNED_WITHOUT_INSPECTABLE_IMAGE_BLOCK",
+        "pixel_level_review_complete": false
+      },
+      "constraints": [
+        "The source calls this feature a mofette. Do not silently substitute a different scientific description.",
+        "The photograph records a surface feature, not the historical crater-forming explosion.",
+        "Do not infer visible steam, temperature or gas composition without verified supporting evidence.",
+        "Retain the separate existing ig_stefanos_fumarole lead for paragraph 5.",
+        "Verify a legible vertical crop of the actual original before accepting the scene."
+      ]
+    },
+    {
+      "asset_id": "ig_stefanos_southern_slope",
+      "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
+      "title": "The southern slope of the Stefanos crater. Nisyros, Greece.jpg",
+      "lead_type": "EXISTING_IMAGE_FILE",
+      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:The_southern_slope_of_the_Stefanos_crater._Nisyros,_Greece.jpg",
+      "source_file_id": "The_southern_slope_of_the_Stefanos_crater._Nisyros,_Greece.jpg",
+      "observed_date": "2026-10-09",
+      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
+      "direct_download_url": null,
+      "download_url_status": "NOT_RESOLVED_FOR_ACQUISITION",
+      "local_media_path": null,
+      "download_sha256": null,
+      "original_file_bytes_verified": false,
+      "scene_assignment_final": false,
+      "downloaded": false,
+      "visual_qa_complete": false,
+      "vertical_crop_qa_complete": false,
+      "rights_complete": false,
+      "attribution_complete": false,
+      "scene_set_complete": false,
+      "audio_generated": false,
+      "final_video_rendered": false,
+      "final_media_qa_complete": false,
+      "release_lease_acquired": false,
+      "release_authorized": false,
+      "scheduled": false,
+      "published": false,
+      "publishable": false,
+      "provenance": {
+        "repository": "Wikimedia Commons",
+        "creator": "Ввласенко",
+        "source_description": "Uploader's own photograph explicitly identifying the southern slope of Stefanos crater, Nisyros.",
+        "photograph_date": "2021-09-08",
+        "photograph_time_local_observed": "11:13:42",
+        "location_metadata": {
+          "latitude": 36.578851,
+          "longitude": 27.169975
+        },
+        "location_independently_verified": false
+      },
+      "license": {
+        "label_observed": "Creative Commons Attribution-Share Alike 3.0 Unported",
+        "code": "CC-BY-SA-3.0",
+        "version": "3.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:The_southern_slope_of_the_Stefanos_crater._Nisyros,_Greece.jpg",
+        "source_statement_read": true,
+        "individual_rights_review_complete": false,
+        "worldwide_clearance_complete": false,
+        "attribution_plan": "Ввласенко / Wikimedia Commons, CC BY-SA 3.0; include the source and license links and indicate crop or other changes.",
+        "adaptation_obligation": "Apply the same or a compatible license to adaptations as required by the source grant; attribution alone is not complete compliance."
+      },
+      "resolution_observed": {
+        "width": 6016,
+        "height": 4016,
+        "unit": "px",
+        "basis": "Individual source page original-file metadata; bytes not acquired."
+      },
+      "planned_uses": [
+        {
+          "paragraph": 4,
+          "role": "Geographically exact crater terrain for the paragraph distinguishing contributions of rock, lava, water and gases.",
+          "required_label_el": "Νότια πλαγιά του κρατήρα Στέφανος"
+        }
+      ],
+      "constraints": [
+        "Verify actual rock detail and framing; page metadata is not a pixel-level review.",
+        "Do not claim that the image demonstrates an underground process or visible steam before inspection.",
+        "Do not introduce an invented steaming fissure to match the earlier unrealized reconstruction prompt."
+      ]
+    },
+    {
+      "asset_id": "ig_nisyros_agricultural_inland",
+      "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
+      "title": "Nisyros inland 1.jpg",
+      "lead_type": "EXISTING_IMAGE_FILE",
+      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Nisyros_inland_1.jpg",
+      "source_file_id": "Nisyros_inland_1.jpg",
+      "observed_date": "2026-10-09",
+      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
+      "direct_download_url": null,
+      "download_url_status": "NOT_RESOLVED_FOR_ACQUISITION",
+      "local_media_path": null,
+      "download_sha256": null,
+      "original_file_bytes_verified": false,
+      "scene_assignment_final": false,
+      "downloaded": false,
+      "visual_qa_complete": false,
+      "vertical_crop_qa_complete": false,
+      "rights_complete": false,
+      "attribution_complete": false,
+      "scene_set_complete": false,
+      "audio_generated": false,
+      "final_video_rendered": false,
+      "final_media_qa_complete": false,
+      "release_lease_acquired": false,
+      "release_authorized": false,
+      "scheduled": false,
+      "published": false,
+      "publishable": false,
+      "provenance": {
+        "repository": "Wikimedia Commons",
+        "creator": "Karelj",
+        "source_description": "Uploader's own inland Nisyros landscape photograph, explicitly categorized under Agriculture in Nisyros.",
+        "date_label_observed": "August 2009",
+        "exif_photograph_date": "2009-08-17",
+        "location_metadata": {
+          "latitude": 36.591197,
+          "longitude": 27.182767
+        },
+        "location_independently_verified": false
+      },
+      "license": {
+        "label_observed": "Public-domain release by the copyright holder, explicitly worldwide, with a fallback grant to anyone for any purpose unless conditions are required by law.",
+        "code": "PD-SELF",
+        "version": null,
+        "license_url": null,
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Nisyros_inland_1.jpg",
+        "source_statement_read": true,
+        "individual_rights_review_complete": false,
+        "worldwide_clearance_complete": false,
+        "attribution_plan": "Karelj / Wikimedia Commons; identify the exact filename and archival photograph date. The source states a worldwide public-domain release."
+      },
+      "resolution_observed": {
+        "width": 2400,
+        "height": 1547,
+        "unit": "px",
+        "basis": "Individual source page original-file metadata; bytes not acquired."
+      },
+      "planned_uses": [
+        {
+          "paragraph": 7,
+          "role": "Proposed agricultural landscape for the human use of Nisyros's terrain; dry-stone wall visibility is not established.",
+          "required_label_el": "Αγροτικό τοπίο στο εσωτερικό της Νισύρου"
+        }
+      ],
+      "source_preview_read": {
+        "status": "IMAGE_REFERENCE_RETURNED_WITHOUT_INSPECTABLE_IMAGE_BLOCK",
+        "pixel_level_review_complete": false
+      },
+      "unresolved_scene_plan_details": [
+        {
+          "code": "DRY_STONE_WALL_VISIBILITY_UNCONFIRMED",
+          "status": "UNRESOLVED",
+          "detail": "The source page confirms an agricultural landscape, not that a suitable dry-stone wall or terrace detail is visible in the required crop.",
+          "resolution_options": [
+            "Confirm suitable wall or terrace detail by inspecting the acquired original under the later authorized workflow.",
+            "Approve a scene-plan adjustment to a general agricultural landscape while preserving the existing narration.",
+            "Identify another individually licensed Nisyros photograph if specific wall detail remains necessary."
+          ],
+          "resolved": false,
+          "scene_plan_change_approved": false
+        }
+      ],
+      "constraints": [
+        "Do not label this as a close-up of dry-stone walls without visual confirmation.",
+        "Do not substitute walls or terraces from another Greek island.",
+        "This is a provisional paragraph mapping, not a completed scene.",
+        "Do not mark the dry-stone wall requirement satisfied based on the Agriculture category alone."
+      ]
+    },
+    {
+      "asset_id": "ig_nisyros_nikia_crater_panorama",
+      "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
+      "title": "Panoramic view southern Nisyros, Nikia village and Crater.jpg",
+      "lead_type": "EXISTING_IMAGE_FILE",
+      "status": "SOURCE_FILE_IDENTIFIED_NOT_ACQUIRED",
+      "source_page_url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_southern_Nisyros,_Nikia_village_and_Crater.jpg",
+      "source_file_id": "Panoramic_view_southern_Nisyros,_Nikia_village_and_Crater.jpg",
+      "observed_date": "2026-10-09",
+      "evidence_level": "DESCRIPTION_AND_LICENSE_PAGE_READ_ONLY",
+      "direct_download_url": null,
+      "download_url_status": "NOT_RESOLVED_FOR_ACQUISITION",
+      "local_media_path": null,
+      "download_sha256": null,
+      "original_file_bytes_verified": false,
+      "scene_assignment_final": false,
+      "downloaded": false,
+      "visual_qa_complete": false,
+      "vertical_crop_qa_complete": false,
+      "rights_complete": false,
+      "attribution_complete": false,
+      "scene_set_complete": false,
+      "audio_generated": false,
+      "final_video_rendered": false,
+      "final_media_qa_complete": false,
+      "release_lease_acquired": false,
+      "release_authorized": false,
+      "scheduled": false,
+      "published": false,
+      "publishable": false,
+      "provenance": {
+        "repository": "Wikimedia Commons",
+        "creator": "Alexios Emmanuel Panagiotopoulos",
+        "uploader": "Isandros",
+        "source_description": "Uploader's own panorama identifying southern Nisyros, Nikia village and the crater; submitted to Wiki Loves Earth 2019.",
+        "photograph_date": "2019-05-24",
+        "photograph_time_local_observed": "12:57:30",
+        "photograph_time_zone": null
+      },
+      "license": {
+        "label_observed": "Creative Commons Attribution-Share Alike 4.0 International",
+        "code": "CC-BY-SA-4.0",
+        "version": "4.0",
+        "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+        "evidence_url": "https://commons.wikimedia.org/wiki/File:Panoramic_view_southern_Nisyros,_Nikia_village_and_Crater.jpg",
+        "source_statement_read": true,
+        "individual_rights_review_complete": false,
+        "worldwide_clearance_complete": false,
+        "attribution_plan": "Alexios Emmanuel Panagiotopoulos (Isandros) / Wikimedia Commons, CC BY-SA 4.0; include the source and license links and indicate crop or other changes.",
+        "adaptation_obligation": "Apply the same or a compatible license to adaptations as required by the source grant."
+      },
+      "resolution_observed": {
+        "width": 5090,
+        "height": 1764,
+        "unit": "px",
+        "basis": "Individual source page original-file metadata; bytes not acquired."
+      },
+      "planned_uses": [
+        {
+          "paragraph": 8,
+          "role": "Proposed daylight closing panorama connecting the island, settlement and crater.",
+          "required_label_el": "Νίσυρος — τοπίο, οικισμός και ηφαίστειο"
+        }
+      ],
+      "source_preview_read": {
+        "status": "PREVIEW_FETCH_FAILED_DESCRIPTION_AND_LICENSE_PAGE_READ",
+        "pixel_level_review_complete": false
+      },
+      "unresolved_scene_plan_details": [
+        {
+          "code": "DAYLIGHT_SCENE_PLAN_UPDATE_AND_VISUAL_CHECK_PENDING",
+          "status": "UNRESOLVED",
+          "detail": "The actual photograph is dated to daylight. The existing sourcepack's unrealized scene prompt calls for evening. The closing narration does not require evening, so a daylight scene is proposed without modifying the sourcepack.",
+          "resolved": false,
+          "new_user_approval_required": false,
+          "sourcepack_scene_plan_updated": false
+        }
+      ],
+      "constraints": [
+        "Do not describe or alter this daylight source as an evening observation.",
+        "Do not claim a visible Aegean horizon until the actual image and intended framing are inspected.",
+        "The very wide composition needs a deliberate 9:16 review; preserve the required geographical relationships.",
+        "Keep the full closing narration and CTA; timing awaits actual Nestoras audio."
+      ]
     }
   ],
   "rejected_or_unselected_leads": [
@@ -1109,5 +1610,6 @@
       "rights_complete": false,
       "release_authorized": false
     }
-  ]
+  ],
+  "last_research_update_at_utc": "2026-10-09T09:14:11Z"
 }
