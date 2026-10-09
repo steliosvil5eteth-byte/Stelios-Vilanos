@@ -4,14 +4,14 @@
   "brandName": "Ιστορίες που μας αγγίζουν",
   "owner": "interactive-recovery-20261009T121500Z-root",
   "created_at": "2026-10-09T12:15:33.447Z",
-  "updated_at": "2026-10-09T12:15:33.447Z",
-  "expires_at": "2026-10-09T13:45:33.447Z",
+  "updated_at": "2026-10-09T12:43:14.647Z",
+  "expires_at": "2026-10-09T15:43:14.647Z",
   "status": "ACTIVE",
   "authorized_actions": [
-    "existing_sourcepack_continuation",
-    "zero_paid_credit_narration",
+    "public_source_asset_acquisition",
+    "existing_public_script_zero_paid_credit_narration",
     "local_render",
-    "exact_final_review"
+    "exact_final_visual_and_objective_audio_review"
   ],
   "story_binding": {
     "job_id": "2026-10-09-instagram-01",
@@ -38,7 +38,7 @@
     "zero_paid_credit_budget": true,
     "exact_voice": "el-GR-NestorasNeural"
   },
-  "execution_scope": "One ordinary narration request for the existing Nisyros story using the publicly available Microsoft Edge voice service without an account/billing key, then local rendering. No automatic retry or paid fallback. This does not alter canonical automated production flags.",
+  "execution_scope": "Manually coordinated recovery of the existing 40-story platform-specific batch requested again at 2026-10-09T15:30:52+03:00. The unchanged public scripts and public licensed imagery may be prepared using the existing zero-paid-credit pipeline. Nisyros source/audio/final retained. Blood Falls is held pending reconciliation of two earlier old-brand PENDING records. No automatic publication, no paid generation, no assertion of actual hearing.",
   "preflight": {
     "metricool_read_complete_at": "2026-10-09T12:14:35Z",
     "metricool_day_reads": 42,
@@ -49,12 +49,42 @@
     "exact_voice_list_verified": true,
     "tls_certificate_verification_enabled": true,
     "paid_account_credentials_used": false,
-    "final_production_preflight_pending_target_notion_refresh": true
+    "final_production_preflight_pending_target_notion_refresh": false,
+    "notion_fresh_archive_count": 202,
+    "notion_fresh_nisyros_hits": 0,
+    "old_brand_7000636_history_records": 276,
+    "old_brand_history_days": 39,
+    "old_brand_history_read_at": "2026-10-09T12:43:14.647Z",
+    "new_nisyros_conflicts": 0,
+    "active_brand_queue_read_at": "2026-10-09T12:43:14.647Z",
+    "active_brand_today_and_next_three_day_records": 0,
+    "known_exception_blood_falls_hold": true
   },
-  "final_review": "NOT_PERFORMED",
+  "final_review": "VISUAL_AND_OBJECTIVE_AUDIO_REVIEW_ONLY",
   "actual_audio_listened": false,
   "publish_to_social": false,
-  "synthesis_attempts": 0,
-  "final_videos": 0,
-  "new_scheduled_posts": 0
+  "synthesis_attempts": 2,
+  "final_videos": 1,
+  "new_scheduled_posts": 0,
+  "batch_binding": {
+    "manifest_ref": "26f9eac6dd0bc7a807ef0667697e2b5ce5fc01a4",
+    "manifest_path": "production_20261009_platform_specific/manifest.json",
+    "jobs": 40,
+    "existing_nisyros_final_sha256": "d5d785c48584db7c4d4f76695e4439b0762469036663c74a7bf1eb14dd1c3078",
+    "first_batch_new_narrations": 38,
+    "held_job_ids": [
+      "2026-10-09-tiktok-02"
+    ],
+    "already_rendered_job_ids": [
+      "2026-10-09-instagram-01"
+    ]
+  },
+  "completed_narrations": 1,
+  "external_transfer_block": {
+    "destination": "HeyGen asset upload",
+    "status": "AUTOMATIC_APPROVAL_REVIEW_REJECTED",
+    "bytes_uploaded_verified": false,
+    "upload_not_completed": true,
+    "reason": "No explicit authorization for third-party staging destination; do not retry without authorization or a materially safer approved destination."
+  }
 }
