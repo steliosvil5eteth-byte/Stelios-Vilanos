@@ -2,31 +2,15 @@
   "date": "2026-10-09",
   "brandId": 7076410,
   "brandName": "Ιστορίες που μας αγγίζουν",
-  "owner": "interactive-recovery-20261009T121500Z-root",
-  "created_at": "2026-10-09T12:15:33.447Z",
-  "updated_at": "2026-10-09 13:35:16 UTC",
-  "expires_at": "2026-10-09 13:35:16 UTC",
-  "status": "RELEASED_BLOCKED_AWAITING_REQUIRED_INPUT",
-  "authorized_actions": [
-    "public_source_asset_acquisition",
-    "existing_public_script_zero_paid_credit_narration",
-    "local_render",
-    "exact_final_visual_and_objective_audio_review"
-  ],
-  "story_binding": {
-    "job_id": "2026-10-09-instagram-01",
-    "story_id": "INSTAGRAM_20261009_01_NISYROS_STEFANOS_HYDROTHERMAL",
-    "fingerprint": "documented_topic|nisyros_stefanos_hydrothermal",
-    "script_sha256": "03abce7d47e612847b297b182032c705fc2bc45727a332ec990bd303c7055919",
-    "sourcepack_path": "production_20261009_platform_specific/manifest.json"
-  },
-  "prior_completed_lease": {
-    "blob_sha": "3e19b5e1d78bc944afdcce2ea9fc1e6d0816670f",
-    "status": "COMPLETED_RELEASED",
-    "all_historical_details_preserved_in_git": true
-  },
+  "owner": "interactive-recovery-20261009T143048Z-root",
+  "created_at": "2026-10-09 14:35:49 UTC",
+  "updated_at": "2026-10-09 14:35:49 UTC",
+  "expires_at": "2026-10-09T20:30:00Z",
+  "status": "ACTIVE_MANUAL_RECOVERY",
+  "prior_lease_blob_sha": "ffd14d8dbefe00bc18b91a31aef33ca2b3fe490d",
   "request_scope": {
-    "at_local": "2026-10-09T15:04:17+03:00",
+    "user_instruction": "Φτιάξε ό,τι είναι να φτιάξεις και ανέβασέ τα",
+    "at_local": "2026-10-09T17:30:27+03:00",
     "daily_target_per_platform": 10,
     "platforms": [
       "facebook",
@@ -34,66 +18,52 @@
       "tiktok",
       "youtube"
     ],
-    "no_duplicate_stories": true,
+    "one_story_one_platform": true,
     "zero_paid_credit_budget": true,
     "exact_voice": "el-GR-NestorasNeural"
   },
-  "execution_scope": "Manually coordinated recovery of the existing 40-story platform-specific batch requested again at 2026-10-09T15:30:52+03:00. The unchanged public scripts and public licensed imagery may be prepared using the existing zero-paid-credit pipeline. Nisyros source/audio/final retained. Blood Falls is held pending reconciliation of two earlier old-brand PENDING records. No automatic publication, no paid generation, no assertion of actual hearing.",
-  "preflight": {
-    "metricool_read_complete_at": "2026-10-09T12:14:35Z",
-    "metricool_day_reads": 42,
-    "metricool_records": 265,
-    "metricool_today_records": 0,
-    "notion_records_last_full_read": 202,
-    "notion_read_at": "2026-10-09T12:07:04Z",
-    "exact_voice_list_verified": true,
-    "tls_certificate_verification_enabled": true,
-    "paid_account_credentials_used": false,
-    "final_production_preflight_pending_target_notion_refresh": false,
-    "notion_fresh_archive_count": 202,
-    "notion_fresh_nisyros_hits": 0,
-    "old_brand_7000636_history_records": 276,
-    "old_brand_history_days": 39,
-    "old_brand_history_read_at": "2026-10-09T12:43:14.647Z",
-    "new_nisyros_conflicts": 0,
-    "active_brand_queue_read_at": "2026-10-09T12:43:14.647Z",
-    "active_brand_today_and_next_three_day_records": 0,
-    "known_exception_blood_falls_hold": true
-  },
-  "final_review": "VISUAL_AND_OBJECTIVE_AUDIO_REVIEW_ONLY",
-  "actual_audio_listened": false,
-  "publish_to_social": false,
-  "synthesis_attempts": 2,
-  "final_videos": 1,
-  "new_scheduled_posts": 0,
+  "authorized_actions": [
+    "public_source_asset_acquisition",
+    "canonical_script_corrections",
+    "zero_paid_credit_narration",
+    "local_render",
+    "exact_final_visual_and_objective_audio_review",
+    "HeyGen_asset_staging_for_Metricool_transfer",
+    "manual_one_provider_Metricool_publication_after_checks",
+    "publication_readback_and_reconciliation"
+  ],
+  "authorization_context": "The latest instruction directly answers the prior concrete question requesting use of connected HeyGen as intermediate MP4 transfer to Metricool at zero paid credits. User was informed that actual hearing is unavailable and final production/QA remained, and explicitly instructed corrections and upload.",
   "batch_binding": {
-    "manifest_ref": "26f9eac6dd0bc7a807ef0667697e2b5ce5fc01a4",
     "manifest_path": "production_20261009_platform_specific/manifest.json",
-    "jobs": 40,
-    "existing_nisyros_final_sha256": "d5d785c48584db7c4d4f76695e4439b0762469036663c74a7bf1eb14dd1c3078",
-    "first_batch_new_narrations": 38,
-    "held_job_ids": [
-      "2026-10-09-tiktok-02"
-    ],
-    "already_rendered_job_ids": [
-      "2026-10-09-instagram-01"
-    ]
+    "manifest_ref": "6c5a36663bde02239cb198508d0480d7b405902b",
+    "jobs": 40
+  },
+  "preflight": {
+    "brand_settings_fresh": true,
+    "current_brand_queue_count": 0,
+    "current_brand_queue_window": "2026-10-09 to 2026-10-12 Europe/Athens",
+    "current_brand_queue_read_at": "2026-10-09 14:35:49 UTC",
+    "prior_active_history_records": 265,
+    "prior_old_brand_history_records": 276,
+    "notion_refresh": "IN_PROGRESS"
   },
   "completed_narrations": 40,
-  "external_transfer_block": {
-    "destination": "HeyGen asset upload",
-    "status": "AUTOMATIC_APPROVAL_REVIEW_REJECTED",
-    "bytes_uploaded_verified": false,
-    "upload_not_completed": true,
-    "reason": "No explicit authorization for third-party staging destination; do not retry without authorization or a materially safer approved destination."
-  },
-  "released_at": "2026-10-09 13:35:16 UTC",
   "completed_final_exports": 7,
+  "new_scheduled_posts": 0,
   "new_published_posts": 0,
   "remaining_final_exports": 33,
-  "release_reason": "Authorized preparation checkpoint saved. HeyGen staging transfer was rejected by automatic approval review because that intermediate destination needs explicit consent. Actual final audio listening is unavailable. No publication or auto-activation occurred.",
+  "actual_audio_listened": false,
   "PASSED_FINAL_REVIEW": false,
-  "publishing_permitted": false,
-  "background_production_running": false,
-  "source_acquisition_state": "Stopped after an HTTP tunnel403; no retry or reroute"
+  "publishing_scope": "Manual publication of individually checked current-batch final files under latest user instruction. Keep unresolved substantive issues held; never assert actual hearing. Automated production and global release gates remain paused.",
+  "known_specific_issue": {
+    "job_id": "2026-10-09-instagram-03",
+    "status": "HOLD_PENDING_CORRECTED_NINETEENTH_CENTURY_NARRATION"
+  },
+  "external_transfer": {
+    "destination": "Connected HeyGen asset staging then Metricool",
+    "zero_paid_credits": true,
+    "prior_slot_status": "queued, no bytes transferred",
+    "prior_rejection_addressed_by": "direct user response authorizing described transfer and publication"
+  },
+  "global_automation_changed": false
 }
