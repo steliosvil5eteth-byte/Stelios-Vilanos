@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "local_date": "2026-10-10",
-  "checked_at_utc": "2026-10-10T12:56:14Z",
+  "checked_at_utc": "2026-10-10T13:19:54Z",
   "timezone": "Europe/Athens",
   "brand_id": 7076410,
-  "status": "BLOCKED_NO_CURRENT_DAY_MEDIA_OR_VERIFIED_RELEASE_PATH",
+  "status": "BLOCKED_NEW_MEDIA_FREE_CAPACITY_ACTUAL_AUDIO_REVIEW_AND_DEPLOYMENT",
   "daily_target_per_platform": 10,
   "observed_today": {
     "metricool_scheduled_records": 0,
@@ -19,12 +19,15 @@
     "repository_history_items": 93,
     "current_day_final_media_found": 0,
     "current_day_passed_final_review": 0,
-    "caveat": "Counts reflect the live connector responses at this audit; analytics may lag native platforms."
+    "caveat": "Counts reflect the live connector responses at this audit; analytics may lag native platforms.",
+    "metricool_queue_rechecked_at_utc": "2026-10-10T13:19:54Z",
+    "publication_analytics_and_archive_checked_at_utc": "2026-10-10T12:56:14Z"
   },
   "future_queue": {
     "checked_through_local_date": "2026-10-13",
     "scheduled_records_returned": 0,
-    "complete_ready_days": 0
+    "complete_ready_days": 0,
+    "checked_at_utc": "2026-10-10T13:19:54Z"
   },
   "cause": {
     "daily_production_automation_enabled": false,
@@ -33,10 +36,14 @@
     "canonical_scheduling_enabled": false,
     "canonical_publication_enabled": false,
     "yesterday_was_manual_recovery_not_recurring_activation": true,
-    "publisher_implemented": false,
+    "publisher_implemented": true,
     "new_final_media_required": true,
     "zero_credit_nestoras_capacity": "NOT_VERIFIED",
-    "actual_final_audio_listening_capability": "NOT_AVAILABLE_IN_CURRENT_TOOLSET"
+    "actual_final_audio_listening_capability": "CURRENT_RUNTIME_EXPLICITLY_REJECTS_AUDIO_INPUT",
+    "publisher_connected_execution_tested": false,
+    "publisher_unattended_execution_activated": false,
+    "shared_authoritative_delivery_deployment_verified": false,
+    "facebook_native_ai_field_supported_by_metricool": false
   },
   "completed_repairs": {
     "stale_latest_instruction_target_fields": {
@@ -64,6 +71,24 @@
       "new_regression_tests": 4,
       "provider_calls": 0,
       "publisher_added": false
+    },
+    "publisher_core": {
+      "path": "production/platform_specific/publisher.py",
+      "documentation": "production/platform_specific/PUBLISHER.md",
+      "tests_passed": 73,
+      "publisher_tests": 34,
+      "tests_failed": 0,
+      "root_independent_suite_passed": true,
+      "independent_focused_review_completed": true,
+      "real_provider_calls": 0,
+      "all_release_gates_preserved": true,
+      "durable_attempt_before_create": true,
+      "unknown_write_blocks_subsequent_creates": true,
+      "immediate_live_readback_implemented": true,
+      "pending_not_reported_as_published": true,
+      "historical_duplicate_and_current_queue_guards": true,
+      "connected_execution_tested": false,
+      "host_integration_or_unattended_runner_activated": false
     }
   },
   "execution": {
@@ -77,10 +102,29 @@
     "production_or_publication_gates_enabled": false
   },
   "remaining_actions": [
-    "Verify a supported zero-credit Nestoras production route and current capacity using authorized account evidence before synthesis.",
-    "Complete new original content with a fresh cross-source semantic history and exclusive lease check before each create.",
-    "Provide real review of the exact final audio and visuals; technical checks alone do not grant PASSED_FINAL_REVIEW.",
-    "Implement and validate the production-to-Metricool publisher and recurring execution without bypassing existing gates.",
-    "Schedule only approved current media, then perform immediate live readback and keep PENDING distinct from PUBLISHED."
-  ]
+    "With the required browser-fallback permission, read Azure Portal to identify the Speech resource, plan and current usage; do not synthesize before verified zero-cost capacity and private resource binding.",
+    "Complete new original content with fresh complete cross-source semantic history and an exclusive shared lease before each create.",
+    "Provide actual review of exact final audio and visuals; technical checks alone do not grant PASSED_FINAL_REVIEW.",
+    "Integrate the tested publisher with an authorized host, authentic per-source refresh/reconciliation and one verified shared durable journal plus external lease; validate actual connected execution before recurring activation.",
+    "Resolve supported native AI disclosure for Facebook without inventing a field or treating caption text as a standing waiver.",
+    "Schedule only approved current media, immediately read back the live result and retain PENDING as distinct from PUBLISHED."
+  ],
+  "capability_checks": {
+    "audio_input": {
+      "test_used_existing_audio_only": true,
+      "generation_calls": 0,
+      "observed_response": "audio content omitted because you do not support audio input",
+      "actual_listening_performed": false
+    },
+    "free_nestoras_route": {
+      "azure_resource_and_current_allowance_verified": false,
+      "available_azure_speech_management_connector": false,
+      "heygen_zero_credit_route_verified": false,
+      "credit_consuming_video_review_tools_invoked": false
+    },
+    "facebook_native_disclosure": {
+      "available_in_metricool": false,
+      "official_source": "https://help.metricool.com/how-to-label-ai-generated-content-for-eu-ai-act-compliance-8a1j8"
+    }
+  }
 }

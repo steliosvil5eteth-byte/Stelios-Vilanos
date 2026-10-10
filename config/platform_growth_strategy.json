@@ -159,13 +159,26 @@
       "new_config_alone_does_not_create_media_or_publish": true,
       "implementation_path": "production/platform_specific",
       "validation_report": "production/platform_specific/VALIDATION.json",
-      "unit_tests_passed": 35,
+      "unit_tests_passed": 73,
       "local_validation_only": true,
       "actual_azure_sdk_execution_tested": false,
       "actual_new_story_end_to_end_render_tested": false,
-      "publisher_implemented": false,
+      "publisher_implemented": true,
       "manual_dry_run_workflow": ".github/workflows/platform-specific-dry-run.yml",
-      "automatic_workflow_execution": false
+      "automatic_workflow_execution": false,
+      "publisher_path": "production/platform_specific/publisher.py",
+      "publisher_status": "CONNECTED_TOOL_ADAPTER_LOCAL_TESTS_ONLY",
+      "publisher_connected_execution_tested": false,
+      "publisher_host_callback_integration_tested": false,
+      "publisher_shared_authoritative_journal_verified": false,
+      "publisher_unattended_runner_implemented": false,
+      "publisher_validation_date": "2026-10-10T13:21:00.882614+00:00",
+      "publisher_native_ai_fields_supported": [
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "publisher_facebook_blocker": "FACEBOOK_NATIVE_AI_FIELD_NOT_VERIFIED"
     }
   },
   "creative_rules": {
@@ -460,8 +473,8 @@
       "required_content_identity": "Different complete story, narration and relevant scene sequence from every other platform"
     }
   },
-  "latest_recovery_report": "state/recovery_false_consensus_20261008_2109.json",
-  "last_reconciled_at": "2026-10-08T19:21:18Z",
+  "latest_recovery_report": "state/daily_recovery_20261010.json",
+  "last_reconciled_at": "2026-10-10T13:21:00.882614+00:00",
   "bounded_manual_release_authorizations": {
     "RECOVERY_20261008_1925": {
       "batch_id": "RECOVERY_20261008_1925",

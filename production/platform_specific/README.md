@@ -30,15 +30,20 @@ repository**. Do not commit them or print them to Actions logs.
   content, uses no background music/avatar, and produces H264/yuv420p 30fps
   1080x1920 MP4, AAC mono 48kHz, faststart, measured Greek subtitle wrapping,
   visible AI disclosure, and review frames for every subtitle cue and scene.
+* `publisher.py`: one guarded scheduling attempt through the existing Metricool
+  connector, a durable attempt journal, exact staged-media verification and an
+  immediate live readback. It never retries an ambiguous write. Integration
+  requirements and remaining deployment limits are in [PUBLISHER.md](PUBLISHER.md).
 * `tests/`: failure-focused tests for identity, history errors, credential
   mismatch, quota races/lag, exact-byte review invalidation, real-media probing,
   platform/day capacity, subtitle loss and disabled-path zero provider calls.
 
-There is **no publisher here**. A handoff is neither a scheduled post nor a
-publication. An authorized operator must use the supported publishing connector,
-verify its native disclosure setting, and record live provider readback after
-each write. The next job requires a new queue snapshot. No bundled workflow
-executes synthesis, rendering or publication automatically.
+The publishing core has local failure-focused tests. It has not made a live
+connector write, and no host integration or unattended executor has been
+activated. A release handoff is still neither a scheduled post nor a publication;
+the publisher can only report those states after verified live readback. Each
+next job requires newly completed history and queue reads plus the shared lease.
+No bundled workflow executes synthesis, rendering or publication automatically.
 
 ## Current operational limits
 
@@ -217,3 +222,4 @@ This creates at most one handoff with an idempotency key, future time, one
 platform, exact media hash and reviewed caption. It performs **no publication**.
 Native AI disclosure must have supported-platform evidence, and the final transport
 still needs live readback before any status may become Scheduled or Published.
+

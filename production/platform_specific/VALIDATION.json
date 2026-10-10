@@ -1,14 +1,15 @@
 {
   "status": "LOCAL_IMPLEMENTATION_TESTED_NOT_PRODUCTION_ACTIVATED",
-  "validated_at": "2026-10-08T20:14:28.224323+00:00",
+  "validated_at": "2026-10-10T13:21:00.882614+00:00",
   "unit_tests": {
     "command": "python -m unittest discover -s tests -v",
-    "passed": 35,
+    "passed": 73,
     "failed": 0,
     "real_provider_calls": 0,
     "provider_failure_tests_use_mocks_only": true,
-    "prior_tests": 33,
-    "added_negative_tests": 2
+    "prior_tests": 39,
+    "new_publisher_tests": 34,
+    "independently_rerun_by_root": true
   },
   "smoke": {
     "ass_ffmpeg_render": "PASS",
@@ -16,7 +17,8 @@
     "visual_layout_inspected": true,
     "actual_story_rendered": false,
     "actual_audio_listened": false,
-    "source": "smoke/result.json"
+    "source": "smoke/result.json",
+    "validated_at": "2026-10-08T20:14:28.224323+00:00"
   },
   "source_pack_integration": {
     "catalog": "research_tiktok_youtube.json",
@@ -26,7 +28,8 @@
     "manifest_errors": 0,
     "exact_final_ready": 0,
     "real_scheduled_queue_count": 0,
-    "report": "reports/tiktok_youtube_20_dry_run.json"
+    "report": "reports/tiktok_youtube_20_dry_run.json",
+    "validated_at": "2026-10-08T20:14:28.224323+00:00"
   },
   "workflow": {
     "manual_only": true,
@@ -42,20 +45,24 @@
     "new_synthesis_calls": 0,
     "new_asr_calls": 0,
     "new_publication_calls": 0,
-    "remote_mutations_by_this_subtask": 0
+    "remote_mutations_by_validation_tests": 0
   },
   "limitations": [
     "Actual Azure SDK/network execution has not been tested or invoked.",
     "A complete new-story end-to-end render awaits approved local assets and valid production/history gates.",
     "Actual final audio and visual review is still required for every exact video.",
     "Private account receipts, live archive extracts, credential fingerprints and ledgers are excluded from the commit file list.",
-    "Resolved path/resource/period binding cannot prove shared storage across hosts; all production workers still require one common durable ledger store and coordinated executor/lease, never independent host copies."
+    "Resolved path/resource/period binding cannot prove shared storage across hosts; all production workers still require one common durable ledger store and coordinated executor/lease, never independent host copies.",
+    "The publishing core is implemented and locally tested with mocked connected tools; no live create or host callback integration has been exercised.",
+    "A real shared authoritative journal and external lease deployment, archive reconciliation adapters and unattended host execution remain unverified or unimplemented.",
+    "Facebook release remains blocked because the required native AI labeling field is unavailable in Metricool.",
+    "The current conversation runtime explicitly rejected audio input; no actual final-audio listening review was performed."
   ],
   "stable_files": [
     {
       "path": "pipeline.py",
-      "bytes": 31698,
-      "sha256": "66ee2284ff2978bb03c5c6832859859b117ae5a2f98cd09209e6885bbe19a477"
+      "bytes": 32503,
+      "sha256": "c29b91cae0238323b6e34ce35f81e5224f8f58bd0206afaf674adccbc16ca673"
     },
     {
       "path": "synthesize_guarded.py",
@@ -69,13 +76,13 @@
     },
     {
       "path": "tests/test_pipeline.py",
-      "bytes": 25413,
-      "sha256": "4c17f557f0b1cfaf313445ab4860988e484442dfc4c32be6c3af8aa1d9725035"
+      "bytes": 28127,
+      "sha256": "4a53158fe2aeaf5de138539be35786f77a5f166b6ab509bb156f915636fe2389"
     },
     {
       "path": "README.md",
-      "bytes": 12797,
-      "sha256": "1052caf14c0c31ba6c8745955bf91143ae4be1541e073b6cfb8e546c9fce8ddc"
+      "bytes": 13216,
+      "sha256": "450a406f21af9869ebf8c2674401ab3f4680d043f5a43a7d3cf2b9cb47dc6cfd"
     },
     {
       "path": "requirements.txt",
@@ -96,6 +103,21 @@
       "path": "workflow/platform-specific-dry-run.yml",
       "bytes": 2044,
       "sha256": "0a91a113bb4b933314af2fec92a775ab16f73c2d0ea33122416314bdb9615db0"
+    },
+    {
+      "path": "publisher.py",
+      "bytes": 24889,
+      "sha256": "2eb2b6071154896ce2f7459e46c2aa79c959c875baf2f5c36852c0e4067f8ae8"
+    },
+    {
+      "path": "tests/test_publisher.py",
+      "bytes": 19968,
+      "sha256": "0a65980886555023f4830ecfb7ee41ea86498d5502e962b6a4785bf6c8658a4c"
+    },
+    {
+      "path": "PUBLISHER.md",
+      "bytes": 11559,
+      "sha256": "a3cdeedd03a149ad70cd7297606e5b8e9b178c2a920cd0dd8e2e2652bdf545da"
     }
   ],
   "targeted_risk_regressions": {
@@ -106,6 +128,24 @@
     "missing_or_mismatched_private_executor_ledger_binding_rejected": true,
     "provider_invocations_in_new_negative_tests": 0,
     "operational_receipt_created": false,
-    "remote_calls": 0
+    "remote_calls": 0,
+    "validated_at": "2026-10-08T20:14:28.224323+00:00"
+  },
+  "publisher": {
+    "implemented": true,
+    "transport": "current_connected_metricool_tools_only",
+    "local_tests": 34,
+    "all_suite_tests": 73,
+    "root_suite_passed": true,
+    "independent_focused_review_completed": true,
+    "review_blocking_findings_remaining": 0,
+    "live_create_calls": 0,
+    "live_upload_calls": 0,
+    "host_callback_integration_tested": false,
+    "shared_authoritative_deployment_verified": false,
+    "unattended_runner_implemented": false,
+    "activated": false,
+    "facebook_native_ai_field_supported": false,
+    "documentation": "PUBLISHER.md"
   }
 }
