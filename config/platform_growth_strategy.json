@@ -3,7 +3,7 @@
   "strategy_id": "PLATFORM_SPECIFIC_FIFTEEN_DAILY_20261010",
   "program_label": "PLATFORM_SPECIFIC_FIFTEEN_DAILY",
   "effective_at": "2026-10-10T16:37:45+03:00",
-  "user_reconfirmed_at": "2026-10-10T16:37:45+03:00",
+  "user_reconfirmed_at": "2026-10-10T20:39:00+03:00",
   "prepared_at_utc": "2026-10-08 06:01:37 UTC",
   "authoritative": true,
   "enabled": false,
@@ -25,15 +25,15 @@
     "activation_is_not_automatic": true
   },
   "targets": {
-    "daily_distinct_stories": 60,
-    "daily_distinct_videos": 60,
+    "daily_distinct_stories": 15,
+    "daily_distinct_videos": 15,
     "daily_provider_destinations": 60,
     "per_platform_daily_video_target": 15,
-    "one_platform_per_story": true,
+    "one_platform_per_story": false,
     "one_provider_per_record": true,
-    "crossposting_allowed": false,
+    "crossposting_allowed": true,
     "renamed_or_reformatted_reuse_counts_as_new": false,
-    "cadence_basis": "Explicit user correction on 10 October 2026: 15 distinct videos per platform per day, 60 total. All prior creative, quality, zero-credit, history and one-platform-per-story rules remain unchanged.",
+    "cadence_basis": "Explicit user override on 10 October 2026: create 15 distinct videos total and publish the same 15 to Facebook, Instagram, TikTok, and YouTube (60 provider destinations). All zero-credit, QA, history, disclosure, and execution gates remain unchanged.",
     "shortage_policy": "Report shortfall; do not fill with reused, unverified or unreviewed material"
   },
   "legacy_common_program": {
@@ -134,7 +134,7 @@
         "videos_per_day": 60,
         "days": 30,
         "illustrative_characters_per_video": 1677.5,
-        "tts_characters": 3019500.0,
+        "tts_characters": 3019500,
         "asr_hours_at_80_to_110_seconds": [
           40,
           55
@@ -692,19 +692,13 @@
     "gates_changed": false
   },
   "latest_user_instruction": {
-    "at": "2026-10-10T16:37:45+03:00",
-    "instruction": "Publish 15 different stories/videos per platform per day on Facebook, Instagram, TikTok and YouTube (60 total). Carry out needed procedures; preserve all previously agreed rules.",
+    "at": "2026-10-10T20:39:00+03:00",
+    "instruction": "Publish the same 15 videos to all four platforms each day.",
+    "distinct_videos_total": 15,
     "daily_target_per_platform": 15,
-    "daily_total": 60,
-    "crossposting_allowed": false,
-    "daily_fresh_topics_required": true,
-    "optimize_from_general_platform_statistics": true,
-    "own_account_analytics_primary": false,
-    "zero_credit_only": true,
-    "start_date": "2026-10-09",
-    "first_publish_time_local": "07:00",
-    "timezone": "Europe/Athens",
-    "effective_date": "2026-10-10"
+    "daily_provider_destinations": 60,
+    "crossposting_allowed": true,
+    "zero_credit_only": true
   },
   "cadence_reconciliation_20261009": {
     "at_utc": "2026-10-09T05:56:49Z",
