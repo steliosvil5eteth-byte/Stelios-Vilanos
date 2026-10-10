@@ -561,8 +561,8 @@
   "latest_user_instruction": {
     "at": "2026-10-08T23:58:00+03:00",
     "instruction": "Start the platform-specific 10-per-platform daily publishing program tomorrow at 07:00 Europe/Athens, subject to all active zero-credit, history, QA, and platform gates.",
-    "daily_target_per_platform": 15,
-    "daily_total": 60,
+    "daily_target_per_platform": 10,
+    "daily_total": 40,
     "crossposting_allowed": false,
     "daily_fresh_topics_required": true,
     "optimize_from_general_platform_statistics": true,
@@ -586,5 +586,14 @@
     "final_review_rules_changed": false,
     "production_enabled_changed": false,
     "publication_or_scheduling_performed": false
+  },
+  "cadence_reconciliation_20261010": {
+    "at_utc": "2026-10-10T12:54:13Z",
+    "status": "STALE_DUPLICATE_CADENCE_FIELDS_RECONCILED",
+    "latest_user_instruction_per_platform_target": 10,
+    "latest_user_instruction_total": 40,
+    "changes": "Aligned two stale numeric fields with the canonical target and existing 10-slot schedule.",
+    "production_or_release_gates_changed": false,
+    "no_release_approval_granted": true
   }
 }
