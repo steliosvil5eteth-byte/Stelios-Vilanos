@@ -3,9 +3,8 @@ on:
   workflow_dispatch:
     inputs:
       manifest_path:
-        description: Public daily manifest path
+        description: Explicit current daily manifest path matching the canonical policy
         required: true
-        default: production_20261009_platform_specific/manifest.json
 permissions:
   contents: read
 concurrency:
@@ -53,3 +52,4 @@ jobs:
           path: ${{ runner.temp }}/platform-specific-dry-run.json
           retention-days: 3
           if-no-files-found: error
+

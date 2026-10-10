@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "strategy_id": "YOUTUBE_GROWTH_TEN_DAILY_20261008",
   "program_label": "YOUTUBE_GROWTH_TEN_DAILY",
   "enabled": false,
@@ -249,9 +249,9 @@
   },
   "active_schedule": false,
   "authoritative_strategy_file": "config/platform_growth_strategy.json",
-  "replacement_program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+  "replacement_program_label": "PLATFORM_SPECIFIC_FIFTEEN_DAILY",
   "replacement_platform": "youtube",
-  "replacement_objective_videos_per_day": 10,
+  "replacement_objective_videos_per_day": 15,
   "reactivate_when_replacement_enabled": false,
   "slots": [],
   "slot_policy": "SUPERSEDED. This file authorizes no production, slot refill, scheduling or publication; use only the canonical platform strategy.",
@@ -273,8 +273,8 @@
   },
   "providers_semantics": "Publishing allowlist: empty means DENY_ALL; never fall back to connected-network inventory or broadcast.",
   "provider_routing_override": {
-    "effective_date": "2026-10-08",
-    "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+    "effective_date": "2026-10-10",
+    "program_label": "PLATFORM_SPECIFIC_FIFTEEN_DAILY",
     "authoritative_strategy_file": "config/platform_growth_strategy.json",
     "enabled": false,
     "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
@@ -285,18 +285,18 @@
     "exactly_one_explicit_platform_per_story": true,
     "crossposting_allowed": false,
     "same_story_script_or_media_on_multiple_platforms": "BLOCK",
-    "required_program_attribution": "PLATFORM_SPECIFIC_TEN_DAILY",
+    "required_program_attribution": "PLATFORM_SPECIFIC_FIFTEEN_DAILY",
     "require_canonical_enabled": true,
     "require_canonical_production_enabled": true,
     "require_selected_platform_enabled": true,
     "require_fresh_required_history_and_verified_zero_credit_capacity": true,
-    "objective_distinct_videos_per_day": 40,
-    "objective_destinations_per_day": 40,
+    "objective_distinct_videos_per_day": 60,
+    "objective_destinations_per_day": 60,
     "objective_videos_per_platform_per_day": {
-      "facebook": 10,
-      "instagram": 10,
-      "tiktok": 10,
-      "youtube": 10
+      "facebook": 15,
+      "instagram": 15,
+      "tiktok": 15,
+      "youtube": 15
     },
     "published_history_mutations": false,
     "retired_programs": {
@@ -313,5 +313,19 @@
         "historical_data_use": "Audit and deduplication only; never a scheduling source."
       }
     }
+  },
+  "cadence_migration": {
+    "effective_at": "2026-10-10T16:37:45+03:00",
+    "previous_program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+    "replacement_program_label": "PLATFORM_SPECIFIC_FIFTEEN_DAILY",
+    "replacement_strategy_id": "PLATFORM_SPECIFIC_FIFTEEN_DAILY_20261010",
+    "previous_objective_videos_per_platform_per_day": 10,
+    "objective_videos_per_platform_per_day": 15,
+    "previous_objective_distinct_videos_per_day": 40,
+    "objective_distinct_videos_per_day": 60,
+    "previous_program_authorizes_new_work": false,
+    "activation_changed": false,
+    "published_history_mutations": false
   }
 }
+

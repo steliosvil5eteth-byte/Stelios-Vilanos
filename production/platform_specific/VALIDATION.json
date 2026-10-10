@@ -1,14 +1,14 @@
 {
   "status": "LOCAL_IMPLEMENTATION_TESTED_NOT_PRODUCTION_ACTIVATED",
-  "validated_at": "2026-10-10T13:21:00.882614+00:00",
+  "validated_at": "2026-10-10T13:55:53.714733+00:00",
   "unit_tests": {
-    "command": "python -m unittest discover -s tests -v",
-    "passed": 73,
+    "command": "python -m unittest discover -s tests -q",
+    "passed": 87,
     "failed": 0,
     "real_provider_calls": 0,
     "provider_failure_tests_use_mocks_only": true,
-    "prior_tests": 39,
-    "new_publisher_tests": 34,
+    "prior_tests": 73,
+    "new_cadence_tests": 14,
     "independently_rerun_by_root": true
   },
   "smoke": {
@@ -60,64 +60,74 @@
   ],
   "stable_files": [
     {
-      "path": "pipeline.py",
-      "bytes": 32503,
-      "sha256": "c29b91cae0238323b6e34ce35f81e5224f8f58bd0206afaf674adccbc16ca673"
-    },
-    {
-      "path": "synthesize_guarded.py",
-      "bytes": 13935,
-      "sha256": "925cc60f2fdf44707cf2fd6ba6d3ef021dbf7e1a7ed2605c99afe719196295ef"
-    },
-    {
-      "path": "render_local.py",
-      "bytes": 17728,
-      "sha256": "89704af103cf8df57fc993065ec0bcf075ba0f98c8347567175f4f7a6bbb519a"
-    },
-    {
-      "path": "tests/test_pipeline.py",
-      "bytes": 28127,
-      "sha256": "4a53158fe2aeaf5de138539be35786f77a5f166b6ab509bb156f915636fe2389"
-    },
-    {
       "path": "README.md",
-      "bytes": 13216,
-      "sha256": "450a406f21af9869ebf8c2674401ab3f4680d043f5a43a7d3cf2b9cb47dc6cfd"
+      "bytes": 7762,
+      "sha256": "28301ce468ffbe3922cf39446680493fbb188bd713c8ffbe904f244f51370d0d"
     },
     {
-      "path": "requirements.txt",
-      "bytes": 15,
-      "sha256": "41b54a6fb2918667ca47a61d73b522629d84490f3d78f0f20b21135faba10d35"
+      "path": ".github/workflows/platform-specific-dry-run.yml",
+      "bytes": 2016,
+      "sha256": "6cab39af6ea490d171923fe2ea94539f44bfda4543b185ac64b015d8d180591d"
     },
     {
-      "path": "contracts/history.NOT_VERIFIED.json",
-      "bytes": 600,
-      "sha256": "08f92fb9176bde0a2fc3943baae260f88b13006567e66a34ff7f10e49cb17f23"
+      "path": "config/platform_growth_strategy.json",
+      "bytes": 30965,
+      "sha256": "502c71a16dda572847ce0c0b7f13ca18a2daf59df294f197ef6e19b9ccb6df5a"
     },
     {
-      "path": "contracts/budget.NOT_VERIFIED.json",
-      "bytes": 708,
-      "sha256": "2a2a4c20bd400507999a8f9f664d5e5744e125839b9b617efbe8adc8a7a8e764"
+      "path": "config/content_strategy.json",
+      "bytes": 18437,
+      "sha256": "62836d573d7b189c16b35eac857d90f3fe58f17f04d541d838d53660f744b2d5"
     },
     {
-      "path": "workflow/platform-specific-dry-run.yml",
-      "bytes": 2044,
-      "sha256": "0a91a113bb4b933314af2fec92a775ab16f73c2d0ea33122416314bdb9615db0"
+      "path": "config/integrations.json",
+      "bytes": 12049,
+      "sha256": "85d0462ce4989674b55932abcb44a75cd064f6aa6c3d96d924206e7378a149ae"
     },
     {
-      "path": "publisher.py",
-      "bytes": 24889,
-      "sha256": "2eb2b6071154896ce2f7459e46c2aa79c959c875baf2f5c36852c0e4067f8ae8"
+      "path": "config/publishing_reliability.json",
+      "bytes": 13225,
+      "sha256": "fa4ec914f07b207c1148da9c7037f5c9062015c60a72a7209c0b9803847f0737"
     },
     {
-      "path": "tests/test_publisher.py",
-      "bytes": 19968,
-      "sha256": "0a65980886555023f4830ecfb7ee41ea86498d5502e962b6a4785bf6c8658a4c"
+      "path": "config/youtube_growth_strategy.json",
+      "bytes": 12596,
+      "sha256": "011b075c954c89a487da2a86a814abfec866bd0d414060d85ff715e819629aca"
     },
     {
-      "path": "PUBLISHER.md",
-      "bytes": 11559,
-      "sha256": "a3cdeedd03a149ad70cd7297606e5b8e9b178c2a920cd0dd8e2e2652bdf545da"
+      "path": "production/platform_specific/pipeline.py",
+      "bytes": 35937,
+      "sha256": "c94bfc772d0e95a11845ebc92baa858e554a54fe132ad270183e8e027f465510"
+    },
+    {
+      "path": "production/platform_specific/publisher.py",
+      "bytes": 24907,
+      "sha256": "73e2fff7c0405309328aa94b60f510a56203b865ab4a44c02bf9dace54e48281"
+    },
+    {
+      "path": "production/platform_specific/tests/test_pipeline.py",
+      "bytes": 28779,
+      "sha256": "d9aca05b8d3b88ed34978c2e128e2e051f142fd0cac6b818f7ee8370b537dc34"
+    },
+    {
+      "path": "production/platform_specific/tests/test_publisher.py",
+      "bytes": 20879,
+      "sha256": "7452d5e5c25b982956af7bb8ffe50ec4c3ba404edb976693b650f847fc4f8a61"
+    },
+    {
+      "path": "production/platform_specific/tests/test_cadence.py",
+      "bytes": 10347,
+      "sha256": "1db037558f674028e582ecd8730e5b030299e1a55602d2db119043dba99e29dd"
+    },
+    {
+      "path": "production/platform_specific/README.md",
+      "bytes": 15107,
+      "sha256": "0200982926614a94b50efd5a3b836afa4e8c2c934a62a88ce07fe2e8df6103a8"
+    },
+    {
+      "path": "production/platform_specific/PUBLISHER.md",
+      "bytes": 11934,
+      "sha256": "94a9f7242f4c2f891eddd12978e0a2fa25562a88bcb41b07a2100efb2433fa3f"
     }
   ],
   "targeted_risk_regressions": {
@@ -134,10 +144,10 @@
   "publisher": {
     "implemented": true,
     "transport": "current_connected_metricool_tools_only",
-    "local_tests": 34,
-    "all_suite_tests": 73,
-    "root_suite_passed": true,
-    "independent_focused_review_completed": true,
+    "local_tests": 36,
+    "all_suite_tests": 87,
+    "root_suite_passed": false,
+    "independent_focused_review_completed": false,
     "review_blocking_findings_remaining": 0,
     "live_create_calls": 0,
     "live_upload_calls": 0,
@@ -147,5 +157,127 @@
     "activated": false,
     "facebook_native_ai_field_supported": false,
     "documentation": "PUBLISHER.md"
-  }
+  },
+  "previous_validation_20261010_1321": {
+    "validated_at": "2026-10-10T13:21:00.882614+00:00",
+    "unit_tests": {
+      "command": "python -m unittest discover -s tests -v",
+      "passed": 73,
+      "failed": 0,
+      "real_provider_calls": 0,
+      "provider_failure_tests_use_mocks_only": true,
+      "prior_tests": 39,
+      "new_publisher_tests": 34,
+      "independently_rerun_by_root": true
+    },
+    "publisher": {
+      "implemented": true,
+      "transport": "current_connected_metricool_tools_only",
+      "local_tests": 34,
+      "all_suite_tests": 73,
+      "root_suite_passed": true,
+      "independent_focused_review_completed": true,
+      "review_blocking_findings_remaining": 0,
+      "live_create_calls": 0,
+      "live_upload_calls": 0,
+      "host_callback_integration_tested": false,
+      "shared_authoritative_deployment_verified": false,
+      "unattended_runner_implemented": false,
+      "activated": false,
+      "facebook_native_ai_field_supported": false,
+      "documentation": "PUBLISHER.md"
+    },
+    "stable_files": [
+      {
+        "path": "pipeline.py",
+        "bytes": 32503,
+        "sha256": "c29b91cae0238323b6e34ce35f81e5224f8f58bd0206afaf674adccbc16ca673"
+      },
+      {
+        "path": "synthesize_guarded.py",
+        "bytes": 13935,
+        "sha256": "925cc60f2fdf44707cf2fd6ba6d3ef021dbf7e1a7ed2605c99afe719196295ef"
+      },
+      {
+        "path": "render_local.py",
+        "bytes": 17728,
+        "sha256": "89704af103cf8df57fc993065ec0bcf075ba0f98c8347567175f4f7a6bbb519a"
+      },
+      {
+        "path": "tests/test_pipeline.py",
+        "bytes": 28127,
+        "sha256": "4a53158fe2aeaf5de138539be35786f77a5f166b6ab509bb156f915636fe2389"
+      },
+      {
+        "path": "README.md",
+        "bytes": 13216,
+        "sha256": "450a406f21af9869ebf8c2674401ab3f4680d043f5a43a7d3cf2b9cb47dc6cfd"
+      },
+      {
+        "path": "requirements.txt",
+        "bytes": 15,
+        "sha256": "41b54a6fb2918667ca47a61d73b522629d84490f3d78f0f20b21135faba10d35"
+      },
+      {
+        "path": "contracts/history.NOT_VERIFIED.json",
+        "bytes": 600,
+        "sha256": "08f92fb9176bde0a2fc3943baae260f88b13006567e66a34ff7f10e49cb17f23"
+      },
+      {
+        "path": "contracts/budget.NOT_VERIFIED.json",
+        "bytes": 708,
+        "sha256": "2a2a4c20bd400507999a8f9f664d5e5744e125839b9b617efbe8adc8a7a8e764"
+      },
+      {
+        "path": "workflow/platform-specific-dry-run.yml",
+        "bytes": 2044,
+        "sha256": "0a91a113bb4b933314af2fec92a775ab16f73c2d0ea33122416314bdb9615db0"
+      },
+      {
+        "path": "publisher.py",
+        "bytes": 24889,
+        "sha256": "2eb2b6071154896ce2f7459e46c2aa79c959c875baf2f5c36852c0e4067f8ae8"
+      },
+      {
+        "path": "tests/test_publisher.py",
+        "bytes": 19968,
+        "sha256": "0a65980886555023f4830ecfb7ee41ea86498d5502e962b6a4785bf6c8658a4c"
+      },
+      {
+        "path": "PUBLISHER.md",
+        "bytes": 11559,
+        "sha256": "a3cdeedd03a149ad70cd7297606e5b8e9b178c2a920cd0dd8e2e2652bdf545da"
+      }
+    ]
+  },
+  "cadence": {
+    "program": "PLATFORM_SPECIFIC_FIFTEEN_DAILY",
+    "manifest_schema_version": 2,
+    "per_platform": 15,
+    "daily_distinct_total": 60,
+    "prior_program": "PLATFORM_SPECIFIC_TEN_DAILY",
+    "original_ten_times_and_ids_preserved": true,
+    "additional_editorial_slots": [
+      "08:00",
+      "12:00",
+      "14:00",
+      "16:00",
+      "21:00"
+    ],
+    "timing_performance_validated": false,
+    "migration": "explicit copy-only new sibling file; same dates and original assets; twenty added empty slots",
+    "real_scheduled_queue_count": 0,
+    "actual_new_source_packs": 0,
+    "historical_manifests_rewritten": false,
+    "release_flags_enabled": false,
+    "local_tests": 14,
+    "validation_base_commit": "433fe2465c11d14d577baabf68d9def867c99c1e",
+    "compatibility_historical_subtrees_verified_unchanged": 20,
+    "quality_first_safe_future_same_day_catch_up_retained": true,
+    "independent_focused_review_completed": true,
+    "review_blocking_findings_remaining": 0,
+    "root_independent_suite_passed": true,
+    "provider_writes_by_validation_tests": 0
+  },
+  "stable_files_path_base": "repository_root"
 }

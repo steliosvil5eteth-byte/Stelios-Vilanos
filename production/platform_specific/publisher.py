@@ -400,7 +400,7 @@ def check_live_capacity(rows, job, history, body):
     prior = history["queue_snapshot"]["platforms"][job["platform"]]
     # The connector documents pending reads; prior publication analytics remain
     # necessary. Conservatively retain the larger observed count for each state.
-    if max(count["PUBLISHED"], prior["published"]) + max(count["PENDING"], prior["active_pending"]) >= 10:
+    if max(count["PUBLISHED"], prior["published"]) + max(count["PENDING"], prior["active_pending"]) >= p.DAILY_PER_PLATFORM:
         raise p.Blocked("DAILY_PLATFORM_CAP_REACHED")
 
 

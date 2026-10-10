@@ -7,6 +7,12 @@ not install an unattended runner, activate a policy, generate media, upload medi
 or obtain credentials. Actual connected execution and deployment on a shared
 authoritative executor have not been tested or activated.
 
+The current `PLATFORM_SPECIFIC_FIFTEEN_DAILY` policy allows at most **15 published
+plus active pending videos per platform per Athens day**, 60 distinct stories in
+total. Both the release preflight and fresh live-read cap use the same cadence
+constant. Legacy journal entries and historical publications still count; changing
+the program label never authorizes a duplicate.
+
 ## Exact transport and source evidence
 
 `MetricoolConnectorTransport` calls only these currently exposed tool bindings:

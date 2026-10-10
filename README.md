@@ -1,12 +1,12 @@
 # Ενεργή οδηγία: διαφορετικά βίντεο ανά πλατφόρμα
 
-Η νεότερη οδηγία της 08/10/2026 ορίζει **10 διαφορετικά βίντεο ανά πλατφόρμα/ημέρα, 40 διαφορετικές ιστορίες συνολικά**, στη μάρκα 7076410. Κάθε ιστορία έχει έναν μόνο προορισμό. Το μοναδικό authoritative αρχείο είναι `config/platform_growth_strategy.json`.
+Η νεότερη οδηγία της 10/10/2026, με ισχύ από `2026-10-10T16:37:45+03:00`, ορίζει **15 διαφορετικά βίντεο ανά πλατφόρμα/ημέρα, 60 διαφορετικές ιστορίες συνολικά**, στη μάρκα 7076410. Το πρόγραμμα είναι `PLATFORM_SPECIFIC_FIFTEEN_DAILY`. Κάθε ιστορία έχει έναν μόνο προορισμό. Το μοναδικό authoritative αρχείο είναι `config/platform_growth_strategy.json`.
 
 **Κατάσταση: BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY.** Η παραγωγή και ο προγραμματισμός είναι απενεργοποιημένα. Δεν έχουν δημιουργηθεί ή προγραμματιστεί νέα βίντεο για αυτό το πρόγραμμα. Απαιτούνται επιτυχής εξουσιοδοτημένος fresh έλεγχος ιστορικού, επαλήθευση πραγματικής δωρεάν δυναμικότητας με μηδενικά credits, ελεγμένη νέα διαδρομή εκτέλεσης, και τελικός έλεγχος των ίδιων media.
 
-Τα `CURRENT_TEN_DAILY` και `YOUTUBE_GROWTH_TEN_DAILY` είναι **SUPERSEDED**. Τα ιστορικά κείμενα παρακάτω δεν επιτρέπουν επαναφορά κοινών αναρτήσεων, παλιών sourcepacks ή παλιών παραγωγών. Η ενεργοποίηση του νέου config δεν ενεργοποιεί κάποιο παλιό workflow. Τα legacy Azure jobs έχουν τεθεί σε hold στο τρέχον head· παλιά commits/reruns δεν πρέπει να χρησιμοποιούνται.
+Τα `CURRENT_TEN_DAILY`, `YOUTUBE_GROWTH_TEN_DAILY` και η προηγούμενη έκδοση `PLATFORM_SPECIFIC_TEN_DAILY` είναι **SUPERSEDED**. Τα ιστορικά κείμενα παρακάτω δεν επιτρέπουν επαναφορά κοινών αναρτήσεων, παλιών sourcepacks ή παλιών παραγωγών. Η ενεργοποίηση του νέου config δεν ενεργοποιεί κάποιο παλιό workflow. Τα legacy Azure jobs έχουν τεθεί σε hold στο τρέχον head· παλιά commits/reruns δεν πρέπει να χρησιμοποιούνται.
 
-Ο dry-run CI και το παλιό `tools/check_rolling_queue.py` δεν πιστοποιούν ετοιμότητα της νέας παραγωγής. Το νέο config περιγράφει πολιτική και στόχο, όχι ολοκληρωμένη υπηρεσία παραγωγής. Δες `docs/PLATFORM_SPECIFIC_TEN_DAILY.md` για τα gates και τη διαδικασία ελέγχου.
+Ο dry-run CI και το παλιό `tools/check_rolling_queue.py` δεν πιστοποιούν ετοιμότητα της νέας παραγωγής. Το νέο config περιγράφει πολιτική και στόχο, όχι ολοκληρωμένη υπηρεσία παραγωγής. Δες `production/platform_specific/README.md` για τα gates και τη διαδικασία ελέγχου.
 
 ---
 
@@ -68,7 +68,7 @@ Repository για αυτοματοποίηση δημιουργίας, οργά�
 - Connected networks: Facebook, Instagram, TikTok, YouTube. Publishing providers are selected separately by each program.
 - This is the **only operational brand**. Previous Metricool brands are historical/audit-only and must not be used for new scheduling, publishing or repair.
 
-## Active programs
+## Historical superseded programs
 
 From 2026-10-08, **CURRENT_TEN_DAILY** continues unchanged for Facebook, Instagram and TikTok: ten common logical posts at 07:00, 09:00, 10:00, 11:00, 13:00, 15:00, 17:00, 18:30, 20:00 and 22:00 Europe/Athens, giving 30 provider destinations per normal day. Its authoritative configuration is `config/content_strategy.json`. The 11:00 Zodiac series remains one carousel containing six two-sign comparison units covering all 12 signs exactly once.
 
@@ -85,4 +85,5 @@ Publishing is quality-first: preserve published history, inspect the exact final
 ## Κατάσταση
 
 Το repository είναι πλέον έτοιμο να λειτουργήσει ως κεντρική ουρά αυτοματοποίησης. Η queue ξεκινά κενή ώστε να μην δημοσιευτεί τίποτα κατά λάθος.
+
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""No-network production planner for forty distinct single-platform videos.
+"""No-network production planner for sixty distinct single-platform videos.
 
 This module does not synthesize, publish, change remote policy or manufacture
 reviews. It validates evidence and prepares local rendering / release handoffs.
@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import argparse
 import collections
+import copy
 import datetime as dt
 import hashlib
 import json
@@ -17,11 +18,17 @@ import unicodedata
 from pathlib import Path
 from zoneinfo import ZoneInfo
 
-PROGRAM = "PLATFORM_SPECIFIC_TEN_DAILY"
+PROGRAM = "PLATFORM_SPECIFIC_FIFTEEN_DAILY"
+LEGACY_PROGRAM = "PLATFORM_SPECIFIC_TEN_DAILY"
+SCHEMA_VERSION = 2
+DAILY_PER_PLATFORM = 15
 VOICE = "el-GR-NestorasNeural"
 CTA = "Αν σας άρεσε, ακολουθήστε για περισσότερα."
 PLATFORMS = ("facebook", "instagram", "tiktok", "youtube")
-SLOTS = ("07:00", "09:00", "10:00", "11:00", "13:00", "15:00", "17:00", "18:30", "20:00", "22:00")
+LEGACY_SLOTS = ("07:00", "09:00", "10:00", "11:00", "13:00", "15:00", "17:00", "18:30", "20:00", "22:00")
+ADDITIONAL_SLOTS = ("08:00", "12:00", "14:00", "16:00", "21:00")
+SLOTS = tuple(sorted(LEGACY_SLOTS + ADDITIONAL_SLOTS))
+DAILY_TOTAL = DAILY_PER_PLATFORM * len(PLATFORMS)
 UTC = dt.timezone.utc
 HISTORY_SOURCES = ("metricool", "notion", "repository", "production_lease")
 
@@ -113,14 +120,41 @@ def verify_asset(base: Path, record: dict, path_key: str = "path", hash_key: str
 def scaffold(day: str) -> dict:
     dt.date.fromisoformat(day)
     return {
-        "schema_version": 1, "program": PROGRAM, "brand_id": 7076410,
+        "schema_version": SCHEMA_VERSION, "program": PROGRAM, "brand_id": 7076410,
         "local_date": day, "timezone": "Europe/Athens", "counts_as_scheduled_queue": False,
-        "jobs": [{"id": f"{day}-{platform}-{index:02d}", "platform": platform,
+        "jobs": [{"id": f"{day}-{platform}-{(LEGACY_SLOTS + ADDITIONAL_SLOTS).index(slot) + 1:02d}", "platform": platform,
                   "local_date": day, "slot_local": slot, "story_id": None,
                   "title": None, "fingerprint": None, "script": None, "caption": None,
                   "sources": [], "kind": None, "voice": VOICE,
                   "background_music": False, "avatar": False, "stage": "EMPTY_SLOT"}
-                 for platform in PLATFORMS for index, slot in enumerate(SLOTS, 1)]}
+                 for platform in PLATFORMS for slot in SLOTS]}
+
+
+def migrate_ten_manifest(manifest: dict) -> dict:
+    """Copy an explicit legacy layout; preserve dates, IDs, content and evidence.
+
+    Only twenty empty editorial slots are added. This creates no live clearance,
+    queue records or release approval and never moves a story to another date.
+    """
+    if manifest.get("program") != LEGACY_PROGRAM or manifest.get("schema_version") != 1:
+        raise Blocked("EXPLICIT_LEGACY_TEN_MANIFEST_REQUIRED")
+    jobs = manifest.get("jobs", [])
+    if (not isinstance(jobs, list) or len(jobs) != 40 or any(not isinstance(job, dict) for job in jobs) or
+            any(sorted(job.get("slot_local", "") for job in jobs if job.get("platform") == platform) != sorted(LEGACY_SLOTS)
+                for platform in PLATFORMS)):
+        raise Blocked("EXACT_LEGACY_TEN_SLOT_LAYOUT_REQUIRED")
+    result = copy.deepcopy(manifest)
+    additions = [job for job in scaffold(manifest["local_date"])["jobs"] if job["slot_local"] in ADDITIONAL_SLOTS]
+    result.update(program=PROGRAM, schema_version=SCHEMA_VERSION, counts_as_scheduled_queue=False,
+                  migration={"source_program": LEGACY_PROGRAM, "source_schema_version": 1,
+                             "preserved_jobs": 40, "added_empty_slots": 20,
+                             "creates_release_clearance": False})
+    result["jobs"].extend(additions)
+    result["jobs"].sort(key=lambda job: (PLATFORMS.index(job["platform"]), job["slot_local"]))
+    errors = validate_manifest(result)
+    if errors:
+        raise Blocked("; ".join(errors))
+    return result
 
 
 def import_catalog(manifest: dict, catalog: list[dict]) -> dict:
@@ -140,7 +174,7 @@ def import_catalog(manifest: dict, catalog: list[dict]) -> dict:
             continue
         slot = next((job for job in manifest["jobs"] if job["platform"] == platform and not job.get("story_id")), None)
         if slot is None:
-            raise Blocked(f"No empty {platform} slot remains; ten is the daily maximum")
+            raise Blocked(f"No empty {platform} slot remains; {DAILY_PER_PLATFORM} is the daily maximum")
         for key in ("title", "fingerprint", "script", "caption", "sources", "kind", "hook", "scene_beats"):
             if key in source:
                 slot[key] = source[key]
@@ -155,6 +189,10 @@ def import_catalog(manifest: dict, catalog: list[dict]) -> dict:
 
 def validate_manifest(manifest: dict) -> list[str]:
     errors = []
+    if manifest.get("program") == LEGACY_PROGRAM:
+        errors.append("LEGACY_TEN_MANIFEST_REQUIRES_EXPLICIT_MIGRATION")
+    if manifest.get("schema_version") != SCHEMA_VERSION:
+        errors.append("Current manifest schema version is required")
     if manifest.get("program") != PROGRAM or manifest.get("brand_id") != 7076410 or manifest.get("timezone") != "Europe/Athens":
         errors.append("Canonical program, brand and Athens timezone are required")
     try:
@@ -167,8 +205,8 @@ def validate_manifest(manifest: dict) -> list[str]:
     if any(not isinstance(job.get("platform"), str) for job in jobs):
         return errors + ["Each job must have one platform string, never a list"]
     counts = collections.Counter(job.get("platform") for job in jobs)
-    if len(jobs) != 40 or counts != collections.Counter({platform: 10 for platform in PLATFORMS}):
-        errors.append("Exactly forty job slots, ten per platform, are required")
+    if len(jobs) != DAILY_TOTAL or counts != collections.Counter({platform: DAILY_PER_PLATFORM for platform in PLATFORMS}):
+        errors.append(f"Exactly {DAILY_TOTAL} job slots, {DAILY_PER_PLATFORM} per platform, are required")
     seen = {key: {} for key in ("id", "story_id", "fingerprint", "title", "script", "audio_sha256", "final_sha256")}
     times = set()
     for job in jobs:
@@ -266,6 +304,13 @@ def production_errors(policy: dict, platform: str, action: str) -> list[str]:
     errors = []
     if policy.get("program_label") != PROGRAM or policy.get("enabled") is not True:
         errors.append("CANONICAL_PROGRAM_DISABLED")
+    targets = policy.get("targets", {})
+    expected = {"per_platform_daily_video_target": DAILY_PER_PLATFORM, "daily_distinct_stories": DAILY_TOTAL,
+                "daily_distinct_videos": DAILY_TOTAL, "daily_provider_destinations": DAILY_TOTAL}
+    if (any(type(targets.get(key)) is not int or targets[key] != value for key, value in expected.items()) or
+            any(policy.get("platforms", {}).get(name, {}).get("daily_video_target") != DAILY_PER_PLATFORM for name in PLATFORMS) or
+            policy.get("scheduling", {}).get("proposed_local_slots") != list(SLOTS)):
+        errors.append("CANONICAL_CADENCE_TARGETS_MISMATCH")
     if enabled.get("enabled") is not True or policy.get("platforms", {}).get(platform, {}).get("enabled") is not True:
         errors.append("PLATFORM_PRODUCTION_DISABLED")
     key = {"synthesize": "new_media_enabled", "render": "new_media_enabled", "release": "publication_enabled"}[action]
@@ -334,7 +379,7 @@ def queue_capacity_errors(job: dict, history: dict, now: dt.datetime) -> list[st
     published, pending = counts.get("published"), counts.get("active_pending")
     if any(not isinstance(value, int) or isinstance(value, bool) or value < 0 for value in (published, pending)):
         return ["EXPLICIT_PLATFORM_QUEUE_COUNTS_REQUIRED"]
-    if published + pending >= 10:
+    if published + pending >= DAILY_PER_PLATFORM:
         return ["DAILY_PLATFORM_CAP_REACHED"]
     return []
 
@@ -481,7 +526,7 @@ def plan(manifest: dict, base: Path, policy: dict, history: dict, budget: dict, 
         record = inspect_job(job, base, policy, history, budget, now, reserved)
         jobs.append(record)
         # Reserve cumulatively even when a later preflight must still block.
-        # This prevents a dry run from promising the same allowance forty times.
+        # This prevents a dry run from promising the same allowance sixty times.
         if job.get("script") and not job.get("audio") and not budget_errors(job, budget, now, reserved):
             reserved += job["tts_charge_upper_bound"]
     return {"program": PROGRAM, "local_date": manifest.get("local_date"), "generated_at": now.isoformat(),
@@ -549,6 +594,9 @@ def main() -> int:
     ingest.add_argument("--manifest", type=Path, required=True)
     ingest.add_argument("--catalog", type=Path, required=True)
     ingest.add_argument("--output", type=Path, required=True)
+    migrate = sub.add_parser("migrate-ten-manifest")
+    migrate.add_argument("--manifest", type=Path, required=True)
+    migrate.add_argument("--output", type=Path, required=True)
     dry = sub.add_parser("plan")
     dry.add_argument("--manifest", type=Path, required=True)
     dry.add_argument("--policy", type=Path, required=True)
@@ -563,6 +611,11 @@ def main() -> int:
     try:
         if args.command == "scaffold":
             write_json(args.output, scaffold(args.date))
+        elif args.command == "migrate-ten-manifest":
+            if (args.output.resolve() == args.manifest.resolve() or args.output.exists() or
+                    args.output.parent.resolve() != args.manifest.parent.resolve()):
+                raise Blocked("MIGRATION_REQUIRES_NEW_SIBLING_FILE_PRESERVING_ASSET_BASE")
+            write_json(args.output, migrate_ten_manifest(read_json(args.manifest)))
         elif args.command == "import-catalog":
             source = read_json(args.catalog)
             entries = source if isinstance(source, list) else source.get("jobs", source.get("stories"))

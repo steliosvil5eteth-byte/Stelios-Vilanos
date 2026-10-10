@@ -157,11 +157,18 @@ class PublisherTests(unittest.TestCase):
         self.assertEqual(self.fake.creates, 0)
 
     def test_new_pending_post_consumes_remaining_capacity(self):
-        self.current_history["queue_snapshot"]["platforms"]["youtube"]["published"] = 9
+        self.current_history["queue_snapshot"]["platforms"]["youtube"]["published"] = 14
         self.fake.rows = [{"id": 99, "text": "different", "media": ["different"],
             "publicationDate": {"dateTime": "2026-10-09T06:00:00", "timezone": pub.ZONE},
             "providers": [{"network": "youtube", "status": "PENDING"}], "draft": False, "autoPublish": True}]
         with self.assertRaisesRegex(p.Blocked, "DAILY_PLATFORM_CAP"):
+            self.run_job()
+        self.assertEqual(self.fake.creates, 0)
+
+    def test_fifteenth_delivery_still_requires_explicit_target_allowlist(self):
+        self.current_history["queue_snapshot"]["platforms"]["youtube"]["published"] = 14
+        self.current_policy["routing"]["active_publish_providers"] = ["instagram"]
+        with self.assertRaisesRegex(p.Blocked, "PLATFORM_NOT_IN_PUBLISH_ALLOWLIST"):
             self.run_job()
         self.assertEqual(self.fake.creates, 0)
 
@@ -190,6 +197,15 @@ class PublisherTests(unittest.TestCase):
         with self.assertRaisesRegex(p.Blocked, "ALREADY_ATTEMPTED_NO_RETRY"):
             self.run_job()
         self.assertEqual(self.fake.creates, 1)
+
+    def test_legacy_program_key_cannot_republish_after_cadence_change(self):
+        db = pub.connection(self.journal)
+        db.execute("INSERT INTO attempts VALUES (?,?,?,?,?,?,?,?)", ("UNIT_TEST_LEGACY_TEN_KEY", "other", self.item["final"]["sha256"],
+            "other", "other", "{}", "PUBLISHED", "{}"))
+        db.commit(); db.close()
+        with self.assertRaisesRegex(p.Blocked, "ALREADY_ATTEMPTED_NO_RETRY"):
+            self.run_job()
+        self.assertEqual(self.fake.creates, 0)
 
     def test_provider_failed_is_recorded_without_retry(self):
         self.fake.mode = "provider_failed"
@@ -313,12 +329,12 @@ class PublisherTests(unittest.TestCase):
         for name in ("metricool", "notion", "repository"):
             self.current_history["sources"][name]["observed_delivery_keys"] = ["other"]
         counts = self.current_history["queue_snapshot"]["platforms"]["youtube"]
-        for published, observed in ((9, []), (0, ["other"])):
+        for published, observed in ((14, []), (0, ["other"])):
             counts.update(published=published, observed_delivery_keys=observed)
             with self.subTest(counts=counts.copy()), self.assertRaisesRegex(p.Blocked, "PREVIOUS_DELIVERY_NOT_INCLUDED_IN_QUEUE_COUNTS:youtube"):
                 self.run_job()
         self.assertEqual(self.fake.creates, 0)
-        counts.update(published=9, observed_delivery_keys=["other"])
+        counts.update(published=14, observed_delivery_keys=["other"])
         self.assertEqual(self.run_job()["state"], "SCHEDULED_PENDING")
 
     def test_prior_date_success_needs_archive_ack_but_not_today_count(self):

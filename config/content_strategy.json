@@ -1,5 +1,5 @@
 {
-  "version": 7,
+  "version": 8,
   "timezone": "Europe/Athens",
   "priority": "BLOCKED_PLATFORM_SPECIFIC_STRATEGY",
   "active_schedule": false,
@@ -8,8 +8,8 @@
     "label": "Ιστορίες που μας αγγίζουν",
     "exclusive": true
   },
-  "daily_target_logical_posts": 40,
-  "destination_target_per_day": 40,
+  "daily_target_logical_posts": 60,
+  "destination_target_per_day": 60,
   "narrated_video_rules": {
     "ratio": "9:16",
     "resolution": "1080x1920",
@@ -75,7 +75,7 @@
     "if_failed": "Keep Blocked; no automatic generation, repair, retry or publication while the canonical program or platform is disabled.",
     "never_backdate": true,
     "live_duplicate_check_before_retry": true,
-    "end_of_day_target": "Objective after verified activation: ten unique videos per platform, forty different videos total. Shortfall never overrides source, cost, history, final QA or future-time gates."
+    "end_of_day_target": "Objective after verified activation: fifteen unique videos per platform, sixty different videos total. Shortfall never overrides source, cost, history, final QA or future-time gates."
   },
   "legacy": {
     "previous_metricool_brands_operational": false,
@@ -93,7 +93,7 @@
     "authorized_until": "2050-12-31",
     "timezone": "Europe/Athens",
     "rolling_reviewed_queue_days": 3,
-    "target_logical_posts_per_day": 40,
+    "target_logical_posts_per_day": 60,
     "method": "Progressive production and verified scheduling, not bulk placeholders",
     "requires_final_media_review": true,
     "service_availability_not_guaranteed": true,
@@ -101,9 +101,9 @@
     "target_reviewed_queue_days": 3,
     "planning_horizon_days": 7,
     "replenish_one_complete_day_daily": false,
-    "scope": "PLATFORM_SPECIFIC_TEN_DAILY; one distinct story per platform destination. Superseded programs never refill.",
+    "scope": "PLATFORM_SPECIFIC_FIFTEEN_DAILY; one distinct story per platform destination. Superseded programs never refill.",
     "enabled": false,
-    "target_logical_posts_per_platform_per_day": 10,
+    "target_logical_posts_per_platform_per_day": 15,
     "require_canonical_policy_reload_before_every_action": true,
     "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
     "reviewed_queue_completion_rule": "Future inventory counts as ready only with exact-final QA and fresh live verification of an active, non-draft, future schedule with autoPublish=true and provider status PENDING. Scheduled-PENDING is never Published or daily publication completion."
@@ -111,8 +111,8 @@
   "providers": [],
   "excluded_providers": [],
   "provider_routing_override": {
-    "effective_date": "2026-10-08",
-    "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+    "effective_date": "2026-10-10",
+    "program_label": "PLATFORM_SPECIFIC_FIFTEEN_DAILY",
     "authoritative_strategy_file": "config/platform_growth_strategy.json",
     "enabled": false,
     "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
@@ -123,18 +123,18 @@
     "exactly_one_explicit_platform_per_story": true,
     "crossposting_allowed": false,
     "same_story_script_or_media_on_multiple_platforms": "BLOCK",
-    "required_program_attribution": "PLATFORM_SPECIFIC_TEN_DAILY",
+    "required_program_attribution": "PLATFORM_SPECIFIC_FIFTEEN_DAILY",
     "require_canonical_enabled": true,
     "require_canonical_production_enabled": true,
     "require_selected_platform_enabled": true,
     "require_fresh_required_history_and_verified_zero_credit_capacity": true,
-    "objective_distinct_videos_per_day": 40,
-    "objective_destinations_per_day": 40,
+    "objective_distinct_videos_per_day": 60,
+    "objective_destinations_per_day": 60,
     "objective_videos_per_platform_per_day": {
-      "facebook": 10,
-      "instagram": 10,
-      "tiktok": 10,
-      "youtube": 10
+      "facebook": 15,
+      "instagram": 15,
+      "tiktok": 15,
+      "youtube": 15
     },
     "published_history_mutations": false,
     "retired_programs": {
@@ -297,8 +297,8 @@
       "note": "The 11:00 zodiac standing series counts as exactly one of the ten daily posts."
     }
   },
-  "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
-  "strategy_id": "PLATFORM_SPECIFIC_TEN_DAILY_20261008",
+  "program_label": "PLATFORM_SPECIFIC_FIFTEEN_DAILY",
+  "strategy_id": "PLATFORM_SPECIFIC_FIFTEEN_DAILY_20261010",
   "authoritative_strategy_file": "config/platform_growth_strategy.json",
   "enabled": false,
   "state": "BLOCKED_ZERO_CREDIT_CAPACITY_AND_FINAL_AUDIO_REVIEW",
@@ -324,41 +324,41 @@
     }
   },
   "providers_semantics": "Publishing allowlist: empty means DENY_ALL; never fall back to connected-network inventory or broadcast.",
-  "effective_at": "2026-10-08",
+  "effective_at": "2026-10-10T16:37:45+03:00",
   "daily_target_logical_posts_per_platform": {
-    "facebook": 10,
-    "instagram": 10,
-    "tiktok": 10,
-    "youtube": 10
+    "facebook": 15,
+    "instagram": 15,
+    "tiktok": 15,
+    "youtube": 15
   },
-  "target_semantics": "Objectives only: forty distinct stories/videos, each routed to one platform, not forty copies or deliveries of shared content.",
+  "target_semantics": "Objectives only: sixty distinct stories/videos, each routed to one platform, not sixty copies or deliveries of shared content.",
   "slots": [],
   "platforms": {
     "facebook": {
       "enabled": false,
       "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
-      "daily_target_original_videos": 10,
+      "daily_target_original_videos": 15,
       "format": "original_narrated_video",
       "authoritative_strategy_file": "config/platform_growth_strategy.json"
     },
     "instagram": {
       "enabled": false,
       "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
-      "daily_target_original_videos": 10,
+      "daily_target_original_videos": 15,
       "format": "original_narrated_video",
       "authoritative_strategy_file": "config/platform_growth_strategy.json"
     },
     "tiktok": {
       "enabled": false,
       "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
-      "daily_target_original_videos": 10,
+      "daily_target_original_videos": 15,
       "format": "original_narrated_video",
       "authoritative_strategy_file": "config/platform_growth_strategy.json"
     },
     "youtube": {
       "enabled": false,
       "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
-      "daily_target_original_videos": 10,
+      "daily_target_original_videos": 15,
       "format": "original_narrated_video",
       "authoritative_strategy_file": "config/platform_growth_strategy.json"
     }
@@ -371,7 +371,7 @@
       "CURRENT_TEN_DAILY",
       "YOUTUBE_GROWTH_TEN_DAILY"
     ],
-    "rule": "Brand 7076410 only. The current objective is forty different original narrated videos per local day: ten each for Facebook, Instagram, TikTok and YouTube, with exactly one platform per story and no crossposting or common media/script reuse. Generation, repair, retry, scheduling and publication remain blocked until the canonical policy explicitly enables production and the relevant platform, fresh required history checks pass, and sufficient zero-credit capacity is verified. Exact-final visual/audio QA and live readback remain mandatory. Preserve published history; never backdate or refill superseded/cancelled legacy slots."
+    "rule": "Brand 7076410 only. The current objective is sixty different original narrated videos per local day: fifteen each for Facebook, Instagram, TikTok and YouTube, with exactly one platform per story and no crossposting or common media/script reuse. Generation, repair, retry, scheduling and publication remain blocked until the canonical policy explicitly enables production and the relevant platform, fresh required history checks pass, and sufficient zero-credit capacity is verified. Exact-final visual/audio QA and live readback remain mandatory. Preserve published history; never backdate or refill superseded/cancelled legacy slots."
   },
   "latest_recovery_report": "state/recovery_release_20261008_1925.json",
   "last_reconciled_at": "2026-10-08T16:48:34Z",
@@ -428,5 +428,19 @@
       "remaining_new_creates": 0,
       "completed_at": "2026-10-08T16:48:34Z"
     }
+  },
+  "cadence_migration": {
+    "effective_at": "2026-10-10T16:37:45+03:00",
+    "previous_program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+    "replacement_program_label": "PLATFORM_SPECIFIC_FIFTEEN_DAILY",
+    "replacement_strategy_id": "PLATFORM_SPECIFIC_FIFTEEN_DAILY_20261010",
+    "previous_objective_videos_per_platform_per_day": 10,
+    "objective_videos_per_platform_per_day": 15,
+    "previous_objective_distinct_videos_per_day": 40,
+    "objective_distinct_videos_per_day": 60,
+    "previous_program_authorizes_new_work": false,
+    "activation_changed": false,
+    "published_history_mutations": false
   }
 }
+

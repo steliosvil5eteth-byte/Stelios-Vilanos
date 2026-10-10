@@ -17,7 +17,7 @@ NOW = dt.datetime(2026, 10, 8, 20, 0, tzinfo=p.UTC)
 
 
 def job(identifier="2026-10-09-youtube-01"):
-    item = p.scaffold("2026-10-09")["jobs"][-10]
+    item = p.scaffold("2026-10-09")["jobs"][-p.DAILY_PER_PLATFORM]
     item.update(id=identifier, story_id=identifier + "-story", title="Ένα μοναδικό τεστ", fingerprint=identifier + "-identity",
                 script="Μια διαφορετική ιστορία δοκιμής με καθαρή αρχή και τέλος. " + p.CTA,
                 caption="Πρωτότυπη μυθοπλασία. " + p.CTA, sources=[], kind="fiction")
@@ -28,10 +28,12 @@ def job(identifier="2026-10-09-youtube-01"):
 
 def policy(enabled=True):
     return {"program_label": p.PROGRAM, "enabled": enabled,
-            "active_schedule": enabled, "scheduling": {"enabled": enabled},
+            "targets": {"per_platform_daily_video_target": p.DAILY_PER_PLATFORM, "daily_distinct_stories": p.DAILY_TOTAL,
+                        "daily_distinct_videos": p.DAILY_TOTAL, "daily_provider_destinations": p.DAILY_TOTAL},
+            "active_schedule": enabled, "scheduling": {"enabled": enabled, "proposed_local_slots": list(p.SLOTS)},
             "routing": {"active_publish_providers": list(p.PLATFORMS) if enabled else []},
             "production": {"enabled": enabled, "new_media_enabled": enabled, "publication_enabled": enabled, "scheduling_enabled": enabled},
-            "platforms": {platform: {"enabled": enabled} for platform in p.PLATFORMS}}
+            "platforms": {platform: {"enabled": enabled, "daily_video_target": p.DAILY_PER_PLATFORM} for platform in p.PLATFORMS}}
 
 
 def history(item, ledger_path=None):
@@ -96,15 +98,18 @@ def final_fixture(item, directory):
 
 
 class ManifestTests(unittest.TestCase):
-    def test_exact_40_not_10_shared(self):
+    def test_exact_60_not_15_shared(self):
         manifest = p.scaffold("2026-10-09")
         self.assertEqual(p.validate_manifest(manifest), [])
-        manifest["jobs"] = manifest["jobs"][:10]
+        self.assertEqual(len(manifest["jobs"]), 60)
+        self.assertEqual({platform: sum(j["platform"] == platform for j in manifest["jobs"]) for platform in p.PLATFORMS},
+                         dict.fromkeys(p.PLATFORMS, 15))
+        manifest["jobs"] = manifest["jobs"][:15]
         self.assertTrue(p.validate_manifest(manifest))
 
     def test_duplicate_body_across_platforms(self):
         manifest = p.scaffold("2026-10-09")
-        first, second = manifest["jobs"][0], manifest["jobs"][10]
+        first, second = manifest["jobs"][0], manifest["jobs"][p.DAILY_PER_PLATFORM]
         first.update(story_id="one", title="first", fingerprint="one", script="Ίδιο κείμενο. " + p.CTA)
         second.update(story_id="two", title="renamed", fingerprint="two", script="Ίδιο κείμενο. " + p.CTA)
         self.assertTrue(any("duplicate script" in error for error in p.validate_manifest(manifest)))
@@ -318,12 +323,12 @@ class HistoryAndBudgetTests(unittest.TestCase):
         manifest = p.scaffold("2026-10-09")
         source_a, source_b = job("a"), job("b")
         source_b.update(title="Δεύτερη δοκιμή", script="Μία άλλη ιστορία. " + p.CTA)
-        manifest["jobs"][-10] = source_a
-        source_b["slot_local"] = "09:00"
-        manifest["jobs"][-9] = source_b
+        manifest["jobs"][-p.DAILY_PER_PLATFORM] = source_a
+        source_b["slot_local"] = p.SLOTS[1]
+        manifest["jobs"][-p.DAILY_PER_PLATFORM + 1] = source_b
         result = p.plan(manifest, Path("."), policy(), {}, budget(source_a["tts_charge_upper_bound"]), NOW)
         self.assertFalse(result["manifest_errors"])
-        self.assertIn("INSUFFICIENT_FREE_TTS_CAPACITY", result["jobs"][-9]["blockers"])
+        self.assertIn("INSUFFICIENT_FREE_TTS_CAPACITY", result["jobs"][-p.DAILY_PER_PLATFORM + 1]["blockers"])
 
 
 class FinalAndReleaseTests(unittest.TestCase):
@@ -379,7 +384,7 @@ class FinalAndReleaseTests(unittest.TestCase):
 
     def test_existing_published_plus_pending_enforces_cap(self):
         item, receipt = job(), history(job())
-        receipt["queue_snapshot"]["platforms"]["youtube"] = {"published": 6, "active_pending": 4}
+        receipt["queue_snapshot"]["platforms"]["youtube"] = {"published": 11, "active_pending": 4}
         self.assertIn("DAILY_PLATFORM_CAP_REACHED", p.queue_capacity_errors(item, receipt, NOW))
         receipt["queue_snapshot"]["platforms"]["youtube"]["active_pending"] = 3
         self.assertEqual(p.queue_capacity_errors(item, receipt, NOW), [])

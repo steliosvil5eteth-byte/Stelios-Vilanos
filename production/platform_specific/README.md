@@ -1,20 +1,51 @@
 # Platform-specific narrated-video production
 
-This is a new local orchestration path for **forty different stories per Athens
-day: ten each for Facebook, Instagram, TikTok and YouTube**. It does not reactivate
+This is a new local orchestration path for **sixty different stories per Athens
+day: fifteen each for Facebook, Instagram, TikTok and YouTube**. It does not reactivate
 the retired shared `CURRENT_TEN_DAILY` program. Every job has one platform string;
 broadcast provider arrays, repeated story IDs, fingerprints, titles and script
 bodies are rejected across the whole day.
 
 The code is intended for `production/platform_specific/` in the repository.
-Daily editorial inputs belong in `production_20261009_platform_specific/` (and
+Daily editorial inputs belong in `production_20261011_platform_specific/` (and
 the corresponding date directory). Private account receipts, archive extracts,
 credential fingerprints and usage ledgers **must remain outside the public
 repository**. Do not commit them or print them to Actions logs.
 
+## Cadence revision and historical manifests
+
+The user corrected the target on 10 October 2026 at 16:37:45 Europe/Athens to
+**15 different stories/videos per platform, 60 total**. The canonical label is
+`PLATFORM_SPECIFIC_FIFTEEN_DAILY`, with manifest schema version 2. One story,
+script and final media asset still have exactly one platform destination. The
+voice, duration, creative rules, final review and zero-credit requirements remain
+unchanged. Every production and publication flag remains disabled.
+
+A `PLATFORM_SPECIFIC_TEN_DAILY` schema-1 manifest is rejected by current planning
+and release. Do not relabel a historical 40-slot manifest or reset a delivery
+journal. A separate explicit migration copies a compatible legacy manifest into
+a **new sibling file**, preserves all forty existing jobs, dates, IDs and asset
+references, and adds twenty `EMPTY_SLOT` records. It does not move old stories to
+a future date, authorize their reuse or count them as a queue. Historical files
+and existing delivery attempts remain intact.
+
+```sh
+python production/platform_specific/pipeline.py migrate-ten-manifest \
+  --manifest /private/day/legacy-manifest.json \
+  --output /private/day/fifteen-manifest.json
+```
+
+New daily work uses a fresh 60-slot scaffold and newly reviewed source packs.
+Changing the cadence label does not clear story/media/fingerprint/script journal
+uniqueness or replace fresh complete history. Existing publications and active
+pending records count toward the same 15-per-platform day cap, regardless of
+their previous program label. Quality-first catch-up may use a safe future time
+on the same Athens day, after all review and fresh-capacity checks. A missed slot
+is never backdated or filled with unreviewed material.
+
 ## What is implemented
 
-* `pipeline.py`: 40-slot scaffold; actual source-pack import; structural and
+* `pipeline.py`: 60-slot scaffold; actual source-pack import; structural and
   identity validation; honest stage/blocker report; fresh complete history and
   exclusive-lease checks; conservative cumulative budget planning; exact-file
   review gate; one-job release handoff with a live daily platform cap.
@@ -72,26 +103,28 @@ From the repository root:
 
 ```sh
 python production/platform_specific/pipeline.py scaffold \
-  --date 2026-10-09 \
-  --output production_20261009_platform_specific/manifest.json
+  --date 2026-10-11 \
+  --output production_20261011_platform_specific/manifest.json
 
 python production/platform_specific/pipeline.py import-catalog \
-  --manifest production_20261009_platform_specific/manifest.json \
-  --catalog production_20261009_platform_specific/catalog.json \
-  --output production_20261009_platform_specific/manifest.json
+  --manifest production_20261011_platform_specific/manifest.json \
+  --catalog production_20261011_platform_specific/catalog.json \
+  --output production_20261011_platform_specific/manifest.json
 
 python production/platform_specific/pipeline.py plan \
-  --manifest production_20261009_platform_specific/manifest.json \
+  --manifest production_20261011_platform_specific/manifest.json \
   --policy config/platform_growth_strategy.json \
-  --output production_20261009_platform_specific/plan.json
+  --output production_20261011_platform_specific/plan.json
 
 cd production/platform_specific
 python -m unittest discover -s tests -v
 ```
 
-The scaffold uses the original initial test slots, without claiming optimal
-performance. The integrator can assign fresh platform-specific test times before
-validation; each platform must retain ten unique local times. A separate manifest
+The scaffold preserves the original ten editorial times and slot IDs. Five
+additional test times are 08:00, 12:00, 14:00, 16:00 and 21:00 Europe/Athens.
+All fifteen times fall within 07:00–22:00. These are editorial allocations,
+without a claim of optimal performance; the canonical policy and code must
+agree on the complete configured slot list. A separate manifest
 is required for each date. Catalog entries with another explicit date are not
 silently reassigned to tomorrow.
 
@@ -122,8 +155,8 @@ synthesis, rendering or release just because it has no conflict.
 
 Before a release, a separate queue snapshot must be at most five minutes old,
 complete, for brand 7076410, the exact Athens date and chosen platform. Existing
-`published + active_pending` must be below ten. Inactive drafts and failed rows
-do not count as active pending. The manifest's ten slots do not replace this
+`published + active_pending` must be below fifteen. Inactive drafts and failed rows
+do not count as active pending. The manifest's fifteen slots do not replace this
 live capacity check.
 
 An Azure receipt must come from an authorized live management/account read and
@@ -186,11 +219,11 @@ images or repeats them to reach duration.
 
 ```sh
 python production/platform_specific/render_local.py \
-  --manifest production_20261009_platform_specific/manifest.json \
-  --job-id 2026-10-09-youtube-01 \
+  --manifest production_20261011_platform_specific/manifest.json \
+  --job-id 2026-10-11-youtube-01 \
   --policy config/platform_growth_strategy.json \
   --history /private/approved-history.json \
-  --output /private/media/2026-10-09-youtube-01
+  --output /private/media/2026-10-11-youtube-01
 ```
 
 It refuses to overwrite an existing output directory. Source audio must be mono
@@ -211,8 +244,8 @@ format/duration; a `technical_passed` label cannot override an invalid container
 
 ```sh
 python production/platform_specific/pipeline.py export-release \
-  --manifest production_20261009_platform_specific/manifest.json \
-  --job-id 2026-10-09-youtube-01 \
+  --manifest production_20261011_platform_specific/manifest.json \
+  --job-id 2026-10-11-youtube-01 \
   --policy config/platform_growth_strategy.json \
   --history /private/fresh-history-and-queue.json \
   --output /private/release-one-job.json

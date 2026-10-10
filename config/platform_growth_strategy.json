@@ -1,9 +1,9 @@
 {
-  "schema_version": 1,
-  "strategy_id": "PLATFORM_SPECIFIC_TEN_DAILY_20261008",
-  "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
-  "effective_at": "2026-10-08T08:28:13+03:00",
-  "user_reconfirmed_at": "2026-10-08T23:58:00+03:00",
+  "schema_version": 2,
+  "strategy_id": "PLATFORM_SPECIFIC_FIFTEEN_DAILY_20261010",
+  "program_label": "PLATFORM_SPECIFIC_FIFTEEN_DAILY",
+  "effective_at": "2026-10-10T16:37:45+03:00",
+  "user_reconfirmed_at": "2026-10-10T16:37:45+03:00",
   "prepared_at_utc": "2026-10-08 06:01:37 UTC",
   "authoritative": true,
   "enabled": false,
@@ -25,15 +25,15 @@
     "activation_is_not_automatic": true
   },
   "targets": {
-    "daily_distinct_stories": 40,
-    "daily_distinct_videos": 40,
-    "daily_provider_destinations": 40,
-    "per_platform_daily_video_target": 10,
+    "daily_distinct_stories": 60,
+    "daily_distinct_videos": 60,
+    "daily_provider_destinations": 60,
+    "per_platform_daily_video_target": 15,
     "one_platform_per_story": true,
     "one_provider_per_record": true,
     "crossposting_allowed": false,
     "renamed_or_reformatted_reuse_counts_as_new": false,
-    "cadence_basis": "Explicit user target: 10 distinct videos per platform per day. Daily topics are selected separately per platform from broad current statistics and verified platform-specific evidence relevant to the user's content style, not primarily from the user's own account.",
+    "cadence_basis": "Explicit user correction on 10 October 2026: 15 distinct videos per platform per day, 60 total. All prior creative, quality, zero-credit, history and one-platform-per-story rules remain unchanged.",
     "shortage_policy": "Report shortfall; do not fill with reused, unverified or unreviewed material"
   },
   "legacy_common_program": {
@@ -129,7 +129,18 @@
       "no_multiple_accounts_keys_or_unofficial_quota_workaround": true,
       "local_asr_can_only_replace_cloud_asr_after_validation": true,
       "local_asr_does_not_solve_exact_nestoras_tts_capacity": true,
-      "source": "https://azure.microsoft.com/en-us/pricing/details/speech/"
+      "source": "https://azure.microsoft.com/en-us/pricing/details/speech/",
+      "fifteen_daily_illustrative_projection": {
+        "videos_per_day": 60,
+        "days": 30,
+        "illustrative_characters_per_video": 1677.5,
+        "tts_characters": 3019500.0,
+        "asr_hours_at_80_to_110_seconds": [
+          40,
+          55
+        ],
+        "basis": "Scale the existing October 9 40-script sample mean to the newly requested 60/day; not new scripts, actual billing, account quota or authorization."
+      }
     },
     "original_content": {
       "status": "REQUIRED_PER_STORY",
@@ -159,7 +170,7 @@
       "new_config_alone_does_not_create_media_or_publish": true,
       "implementation_path": "production/platform_specific",
       "validation_report": "production/platform_specific/VALIDATION.json",
-      "unit_tests_passed": 73,
+      "unit_tests_passed": 87,
       "local_validation_only": true,
       "actual_azure_sdk_execution_tested": false,
       "actual_new_story_end_to_end_render_tested": false,
@@ -178,7 +189,10 @@
         "tiktok",
         "youtube"
       ],
-      "publisher_facebook_blocker": "FACEBOOK_NATIVE_AI_FIELD_NOT_VERIFIED"
+      "publisher_facebook_blocker": "FACEBOOK_NATIVE_AI_FIELD_NOT_VERIFIED",
+      "cadence_validation_at": "2026-10-10T13:52:43.947751+00:00",
+      "cadence_program": "PLATFORM_SPECIFIC_FIFTEEN_DAILY",
+      "cadence_schema_version": 2
     }
   },
   "creative_rules": {
@@ -269,14 +283,19 @@
     "slot_status": "INITIAL_TEST_TIMES_NOT_VALIDATED_OPTIMAL",
     "proposed_local_slots": [
       "07:00",
+      "08:00",
       "09:00",
       "10:00",
       "11:00",
+      "12:00",
       "13:00",
+      "14:00",
       "15:00",
+      "16:00",
       "17:00",
       "18:30",
       "20:00",
+      "21:00",
       "22:00"
     ],
     "native_format_per_platform": true,
@@ -293,7 +312,32 @@
     "requested_start_date": "2026-10-09",
     "requested_first_publish_time_local": "07:00",
     "requested_timezone": "Europe/Athens",
-    "first_slot_required": true
+    "first_slot_required": true,
+    "cadence_revision": {
+      "at": "2026-10-10T16:37:45+03:00",
+      "preserved_existing_slots": [
+        "07:00",
+        "09:00",
+        "10:00",
+        "11:00",
+        "13:00",
+        "15:00",
+        "17:00",
+        "18:30",
+        "20:00",
+        "22:00"
+      ],
+      "additional_editorial_test_slots": [
+        "08:00",
+        "12:00",
+        "14:00",
+        "16:00",
+        "21:00"
+      ],
+      "performance_claim": "NOT_VALIDATED_OPTIMAL",
+      "missed_slots_are_not_backdated": true,
+      "quality_first_future_same_day_catch_up_retained": true
+    }
   },
   "transition": {
     "date": "2026-10-08",
@@ -332,7 +376,7 @@
       "enabled": false,
       "status": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
       "provider": "facebook",
-      "daily_video_target": 10,
+      "daily_video_target": 15,
       "format": "REEL",
       "orientation": "9:16",
       "minimum_duration_seconds": 80,
@@ -343,6 +387,27 @@
       "maximum_duration_seconds": null,
       "editorial_focus": "Recognizable human relationships, choices and consequences",
       "initial_daily_mix": [
+        {
+          "category": "human_relationship_fiction",
+          "count": 6
+        },
+        {
+          "category": "documented_human_history",
+          "count": 4
+        },
+        {
+          "category": "zodiac_entertainment",
+          "count": 3
+        },
+        {
+          "category": "folklore_labeled",
+          "count": 2
+        }
+      ],
+      "mix_status": "UNTESTED_EDITORIAL_HYPOTHESIS",
+      "evidence_note": "Relationships are a candidate direction; one large Reel outlier must not determine the entire mix",
+      "required_content_identity": "Different complete story, narration and relevant scene sequence from every other platform",
+      "initial_daily_mix_before_20261010": [
         {
           "category": "human_relationship_fiction",
           "count": 4
@@ -360,15 +425,13 @@
           "count": 1
         }
       ],
-      "mix_status": "UNTESTED_EDITORIAL_HYPOTHESIS",
-      "evidence_note": "Relationships are a candidate direction; one large Reel outlier must not determine the entire mix",
-      "required_content_identity": "Different complete story, narration and relevant scene sequence from every other platform"
+      "mix_revision_note": "Same four editorial categories, scaled from 4/3/2/1 to 6/4/3/2 for the user target of 15; untested editorial allocation, not a performance claim."
     },
     "instagram": {
       "enabled": false,
       "status": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
       "provider": "instagram",
-      "daily_video_target": 10,
+      "daily_video_target": 15,
       "format": "REEL",
       "orientation": "9:16",
       "minimum_duration_seconds": 80,
@@ -379,6 +442,27 @@
       "maximum_duration_seconds": null,
       "editorial_focus": "Visually concrete place, nature and object stories",
       "initial_daily_mix": [
+        {
+          "category": "place_history",
+          "count": 6
+        },
+        {
+          "category": "nature_phenomenon",
+          "count": 4
+        },
+        {
+          "category": "art_or_object_history",
+          "count": 3
+        },
+        {
+          "category": "human_story_in_place",
+          "count": 2
+        }
+      ],
+      "mix_status": "UNTESTED_EDITORIAL_HYPOTHESIS",
+      "evidence_note": "Place and nature examples are tentative signals in a small, low-engagement sample",
+      "required_content_identity": "Different complete story, narration and relevant scene sequence from every other platform",
+      "initial_daily_mix_before_20261010": [
         {
           "category": "place_history",
           "count": 4
@@ -396,15 +480,13 @@
           "count": 1
         }
       ],
-      "mix_status": "UNTESTED_EDITORIAL_HYPOTHESIS",
-      "evidence_note": "Place and nature examples are tentative signals in a small, low-engagement sample",
-      "required_content_identity": "Different complete story, narration and relevant scene sequence from every other platform"
+      "mix_revision_note": "Same four editorial categories, scaled from 4/3/2/1 to 6/4/3/2 for the user target of 15; untested editorial allocation, not a performance claim."
     },
     "tiktok": {
       "enabled": false,
       "status": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
       "provider": "tiktok",
-      "daily_video_target": 10,
+      "daily_video_target": 15,
       "format": "VIDEO",
       "orientation": "9:16",
       "minimum_duration_seconds": 80,
@@ -415,6 +497,27 @@
       "maximum_duration_seconds": null,
       "editorial_focus": "Human curiosity with a complete reveal, plus documented visual questions",
       "initial_daily_mix": [
+        {
+          "category": "human_mystery_fiction",
+          "count": 6
+        },
+        {
+          "category": "documented_curiosity_or_mystery",
+          "count": 4
+        },
+        {
+          "category": "folklore_labeled",
+          "count": 3
+        },
+        {
+          "category": "science_question",
+          "count": 2
+        }
+      ],
+      "mix_status": "UNTESTED_EDITORIAL_HYPOTHESIS",
+      "evidence_note": "Historical PHOTO winners do not establish narrated VIDEO performance; evaluate new videos separately",
+      "required_content_identity": "Different complete story, narration and relevant scene sequence from every other platform",
+      "initial_daily_mix_before_20261010": [
         {
           "category": "human_mystery_fiction",
           "count": 4
@@ -432,15 +535,13 @@
           "count": 1
         }
       ],
-      "mix_status": "UNTESTED_EDITORIAL_HYPOTHESIS",
-      "evidence_note": "Historical PHOTO winners do not establish narrated VIDEO performance; evaluate new videos separately",
-      "required_content_identity": "Different complete story, narration and relevant scene sequence from every other platform"
+      "mix_revision_note": "Same four editorial categories, scaled from 4/3/2/1 to 6/4/3/2 for the user target of 15; untested editorial allocation, not a performance claim."
     },
     "youtube": {
       "enabled": false,
       "status": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
       "provider": "youtube",
-      "daily_video_target": 10,
+      "daily_video_target": 15,
       "format": "YOUTUBE_SHORT",
       "orientation": "9:16",
       "minimum_duration_seconds": 80,
@@ -451,6 +552,27 @@
       "maximum_duration_seconds": 150,
       "editorial_focus": "One specific scientific or historical question, or one human decision",
       "initial_daily_mix": [
+        {
+          "category": "science_or_history_question",
+          "count": 6
+        },
+        {
+          "category": "human_choice_story",
+          "count": 4
+        },
+        {
+          "category": "greek_microhistory",
+          "count": 3
+        },
+        {
+          "category": "myth_labeled",
+          "count": 2
+        }
+      ],
+      "mix_status": "UNTESTED_EDITORIAL_HYPOTHESIS",
+      "evidence_note": "Prioritize clear first scene and narrative progression; low average watch duration is the primary issue",
+      "required_content_identity": "Different complete story, narration and relevant scene sequence from every other platform",
+      "initial_daily_mix_before_20261010": [
         {
           "category": "science_or_history_question",
           "count": 4
@@ -468,9 +590,7 @@
           "count": 1
         }
       ],
-      "mix_status": "UNTESTED_EDITORIAL_HYPOTHESIS",
-      "evidence_note": "Prioritize clear first scene and narrative progression; low average watch duration is the primary issue",
-      "required_content_identity": "Different complete story, narration and relevant scene sequence from every other platform"
+      "mix_revision_note": "Same four editorial categories, scaled from 4/3/2/1 to 6/4/3/2 for the user target of 15; untested editorial allocation, not a performance claim."
     }
   },
   "latest_recovery_report": "state/daily_recovery_20261010.json",
@@ -572,10 +692,10 @@
     "gates_changed": false
   },
   "latest_user_instruction": {
-    "at": "2026-10-08T23:58:00+03:00",
-    "instruction": "Start the platform-specific 10-per-platform daily publishing program tomorrow at 07:00 Europe/Athens, subject to all active zero-credit, history, QA, and platform gates.",
-    "daily_target_per_platform": 10,
-    "daily_total": 40,
+    "at": "2026-10-10T16:37:45+03:00",
+    "instruction": "Publish 15 different stories/videos per platform per day on Facebook, Instagram, TikTok and YouTube (60 total). Carry out needed procedures; preserve all previously agreed rules.",
+    "daily_target_per_platform": 15,
+    "daily_total": 60,
     "crossposting_allowed": false,
     "daily_fresh_topics_required": true,
     "optimize_from_general_platform_statistics": true,
@@ -583,7 +703,8 @@
     "zero_credit_only": true,
     "start_date": "2026-10-09",
     "first_publish_time_local": "07:00",
-    "timezone": "Europe/Athens"
+    "timezone": "Europe/Athens",
+    "effective_date": "2026-10-10"
   },
   "cadence_reconciliation_20261009": {
     "at_utc": "2026-10-09T05:56:49Z",
@@ -608,5 +729,42 @@
     "changes": "Aligned two stale numeric fields with the canonical target and existing 10-slot schedule.",
     "production_or_release_gates_changed": false,
     "no_release_approval_granted": true
+  },
+  "legacy_platform_specific_ten_program": {
+    "enabled": false,
+    "status": "SUPERSEDED",
+    "program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+    "superseded_at": "2026-10-10T16:37:45+03:00",
+    "prior_daily_target_per_platform": 10,
+    "prior_daily_total": 40,
+    "historical_manifests_and_delivery_journals_preserved": true,
+    "never_reactivate_when_new_program_enabled": true
+  },
+  "cadence_revision_20261010_163745": {
+    "at": "2026-10-10T16:37:45+03:00",
+    "source": "Current explicit user correction",
+    "prior_program_label": "PLATFORM_SPECIFIC_TEN_DAILY",
+    "program_label": "PLATFORM_SPECIFIC_FIFTEEN_DAILY",
+    "prior_latest_user_instruction": {
+      "at": "2026-10-08T23:58:00+03:00",
+      "instruction": "Start the platform-specific 10-per-platform daily publishing program tomorrow at 07:00 Europe/Athens, subject to all active zero-credit, history, QA, and platform gates.",
+      "daily_target_per_platform": 10,
+      "daily_total": 40,
+      "crossposting_allowed": false,
+      "daily_fresh_topics_required": true,
+      "optimize_from_general_platform_statistics": true,
+      "own_account_analytics_primary": false,
+      "zero_credit_only": true,
+      "start_date": "2026-10-09",
+      "first_publish_time_local": "07:00",
+      "timezone": "Europe/Athens"
+    },
+    "daily_target_per_platform": 15,
+    "daily_total": 60,
+    "publication_or_scheduling_performed": false,
+    "zero_credit_rules_changed": false,
+    "final_review_rules_changed": false,
+    "release_flags_enabled": false,
+    "historical_manifests_and_reports_rewritten": false
   }
 }
