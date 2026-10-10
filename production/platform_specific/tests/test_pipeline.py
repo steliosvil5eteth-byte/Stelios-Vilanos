@@ -28,6 +28,8 @@ def job(identifier="2026-10-09-youtube-01"):
 
 def policy(enabled=True):
     return {"program_label": p.PROGRAM, "enabled": enabled,
+            "active_schedule": enabled, "scheduling": {"enabled": enabled},
+            "routing": {"active_publish_providers": list(p.PLATFORMS) if enabled else []},
             "production": {"enabled": enabled, "new_media_enabled": enabled, "publication_enabled": enabled, "scheduling_enabled": enabled},
             "platforms": {platform: {"enabled": enabled} for platform in p.PLATFORMS}}
 
@@ -398,6 +400,50 @@ class FinalAndReleaseTests(unittest.TestCase):
                 handoff = p.release_preflight(item, root, policy(), history(item), NOW)
             self.assertEqual(handoff["status"], "RELEASE_HANDOFF_ONLY_NOT_SCHEDULED")
             self.assertTrue(handoff["requires_live_write_readback"])
+
+    def assert_release_policy_blocked(self, candidate, expected):
+        # These local UNIT_TEST_FIXTURE records are never operational evidence.
+        # All existing source/history/lease/final gates run; only ffprobe of the
+        # deliberately fake bytes is mocked to isolate the routing regression.
+        with tempfile.TemporaryDirectory() as tmp:
+            root, item = Path(tmp), job()
+            final_fixture(item, root)
+            item["native_ai_disclosure"] = {"platform": "youtube", "verified": True, "evidence": "UNIT_TEST_FIXTURE"}
+            with mock.patch("pipeline.probe_media", return_value=media_probe()):
+                with self.assertRaisesRegex(p.Blocked, expected):
+                    p.release_preflight(item, root, candidate, history(item), NOW)
+
+    def test_release_requires_both_schedule_flags(self):
+        for field in ("active_schedule", "scheduling"):
+            candidate = policy()
+            candidate[field] = False if field == "active_schedule" else {"enabled": False}
+            with self.subTest(field=field):
+                self.assert_release_policy_blocked(candidate, "ACTIVE_SCHEDULE_DISABLED")
+
+    def test_release_missing_schedule_flags_fail_closed(self):
+        for field in ("active_schedule", "scheduling"):
+            candidate = policy()
+            del candidate[field]
+            with self.subTest(field=field):
+                self.assert_release_policy_blocked(candidate, "ACTIVE_SCHEDULE_DISABLED")
+
+    def test_connected_inventory_does_not_authorize_a_target(self):
+        for allowed in ([], ["facebook", "instagram", "tiktok"]):
+            candidate = policy()
+            candidate["routing"] = {"connected_network_inventory": list(p.PLATFORMS),
+                                    "active_publish_providers": allowed}
+            with self.subTest(allowed=allowed):
+                self.assert_release_policy_blocked(candidate, "PLATFORM_NOT_IN_PUBLISH_ALLOWLIST")
+
+    def test_missing_or_malformed_publish_allowlist_fails_closed(self):
+        for allowed in (None, "youtube", ["youtube", "youtube"], ["youtube", "unknown"], [{"network": "youtube"}]):
+            candidate = policy()
+            candidate["routing"]["active_publish_providers"] = allowed
+            with self.subTest(allowed=allowed):
+                self.assert_release_policy_blocked(candidate, "PUBLISH_PROVIDER_ALLOWLIST_INVALID")
+        candidate = policy()
+        del candidate["routing"]
+        self.assert_release_policy_blocked(candidate, "PUBLISH_PROVIDER_ALLOWLIST_INVALID")
 
 
 class LocalMediaTests(unittest.TestCase):

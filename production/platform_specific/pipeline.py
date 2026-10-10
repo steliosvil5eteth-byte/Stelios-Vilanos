@@ -509,6 +509,18 @@ def release_preflight(job: dict, base: Path, policy: dict, history: dict, now: d
               final_errors(job, base, now) + queue_capacity_errors(job, history, now))
     if policy.get("production", {}).get("scheduling_enabled") is not True:
         errors.append("SCHEDULING_DISABLED")
+    # Connected networks are inventory, never permission to publish. Require
+    # the canonical schedule and explicit target allowlist on every release,
+    # even when an operator has enabled the other production flags.
+    if policy.get("active_schedule") is not True or policy.get("scheduling", {}).get("enabled") is not True:
+        errors.append("ACTIVE_SCHEDULE_DISABLED")
+    allowed = policy.get("routing", {}).get("active_publish_providers")
+    if (not isinstance(allowed, list) or
+            any(not isinstance(provider, str) or provider not in PLATFORMS for provider in allowed) or
+            len(allowed) != len(set(allowed))):
+        errors.append("PUBLISH_PROVIDER_ALLOWLIST_INVALID")
+    elif job["platform"] not in allowed:
+        errors.append("PLATFORM_NOT_IN_PUBLISH_ALLOWLIST")
     disclosure = job.get("native_ai_disclosure", {})
     if disclosure.get("platform") != job["platform"] or disclosure.get("verified") is not True or not disclosure.get("evidence"):
         errors.append("SUPPORTED_NATIVE_AI_DISCLOSURE_REQUIRED")
