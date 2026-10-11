@@ -37,7 +37,7 @@ def commons_candidates(query, limit=30):
     params={
       "action":"query","format":"json","generator":"search",
       "gsrsearch":f'{query} filetype:bitmap',"gsrnamespace":6,"gsrlimit":limit,
-      "prop":"imageinfo","iiprop":"url|mime|size|extmetadata"
+      "prop":"imageinfo","iiprop":"url|mime|size|extmetadata","iiurlwidth":1600
     }
     r=session.get(api,params=params,timeout=40); r.raise_for_status()
     pages=(r.json().get("query") or {}).get("pages") or {}
@@ -53,7 +53,7 @@ def commons_candidates(query, limit=30):
         lic_l=(lic+" "+usage).lower()
         if not any(t in lic_l for t in allowed_tokens): continue
         out.append({
-          "pageid":str(pid),"title":p.get("title",""),"url":ii.get("url"),
+          "pageid":str(pid),"title":p.get("title",""),"url":ii.get("thumburl") or ii.get("url"),
           "width":ii.get("width"),"height":ii.get("height"),
           "license":lic or usage,
           "artist":clean_html((em.get("Artist") or {}).get("value")),
@@ -63,7 +63,7 @@ def commons_candidates(query, limit=30):
     return out
 
 def choose_image(query):
-    variants=[query, query.replace("old ",""), " ".join(query.split()[:2])]
+    variants=[query+" photograph", query, query.replace("old ","")+" photograph", " ".join(query.split()[:2])+" photograph"]
     last=[]
     for q in variants:
         try:
@@ -74,15 +74,25 @@ def choose_image(query):
                     used_pages.add(c["pageid"]); return c
         except Exception as e:
             print("search error",q,e,flush=True)
-        time.sleep(.25)
+        time.sleep(.8)
     for c in last:
         if c.get("url"): return c
     raise RuntimeError(f"No freely licensed image found for {query}")
 
 def download_img(meta):
-    r=session.get(meta["url"],timeout=60); r.raise_for_status()
-    im=Image.open(BytesIO(r.content)).convert("RGB")
-    return im
+    url=meta["url"].split("?")[0]
+    last=None
+    for attempt in range(6):
+        try:
+            r=session.get(url,timeout=60)
+            if r.status_code==429:
+                time.sleep(3*(attempt+1)); last=RuntimeError("429"); continue
+            r.raise_for_status()
+            return Image.open(BytesIO(r.content)).convert("RGB")
+        except Exception as e:
+            last=e
+            time.sleep(2*(attempt+1))
+    raise last
 
 def cover(im,size=(1080,1920)):
     tw,th=size; w,h=im.size
@@ -163,7 +173,7 @@ for story in cfg["stories"]:
         p=render_slide(story,idx,photo,meta)
         slide_paths.append(p)
         sources.append({"slide":idx,"query":q,**meta})
-        time.sleep(.2)
+        time.sleep(1.1)
     video=make_video(story,slide_paths)
     contact=contact_sheet(story,slide_paths)
     sha=hashlib.sha256(video.read_bytes()).hexdigest()
