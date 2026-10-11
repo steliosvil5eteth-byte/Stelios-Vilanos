@@ -7,273 +7,213 @@
     {
       "id": "01",
       "title": "Το τελευταίο τραπέζι στο καφενείο",
-      "queries": [
-        "elderly man cafe coffee",
-        "two coffee cups cafe table",
-        "waiter cafe interior",
-        "elderly couple coffee cafe",
-        "empty cafe table coffee"
-      ],
       "cards": [
         "Κάθε Κυριακή, ένας ηλικιωμένος καθόταν πάντα στο ίδιο τραπέζι.",
         "Παρήγγελνε δύο καφέδες, αλλά ο δεύτερος έμενε ανέγγιχτος.",
         "Μια μέρα ο σερβιτόρος τόλμησε να ρωτήσει γιατί.",
         "«Ήταν η θέση της γυναίκας μου. Υποσχεθήκαμε πως θα πίνουμε καφέ μαζί όσο υπάρχουμε.»",
         "Την επόμενη Κυριακή, το τραπέζι ήταν άδειο. Οι δύο κούπες όμως ήταν ήδη εκεί."
-      ]
+      ],
+      "pexels_video_id": "9058065",
+      "source_page": "https://www.pexels.com/video/an-elderly-man-drinking-coffee-9058065/",
+      "source_license": "Pexels License - Free to use"
     },
     {
       "id": "02",
       "title": "Η τσάντα που επέστρεψε μετά από 12 χρόνια",
-      "queries": [
-        "lost bag bus station",
-        "old bag luggage storage",
-        "bus station employee luggage",
-        "father child old photograph",
-        "old suitcase sentimental"
-      ],
       "cards": [
         "Μια παλιά τσάντα βρέθηκε σε αποθήκη λεωφορείων.",
         "Μέσα είχε ένα παιδικό μπουφάν, ένα βιβλίο και μια διεύθυνση.",
         "Ο υπάλληλος έψαξε τον ιδιοκτήτη και τελικά τον βρήκε.",
         "Η τσάντα ανήκε στον πατέρα του, που την είχε χάσει όταν εκείνος ήταν παιδί.",
         "Δώδεκα χρόνια μετά, του επέστρεψε το τελευταίο πράγμα που κρατούσε από εκείνον."
-      ]
+      ],
+      "pexels_video_id": "5434562",
+      "source_page": "https://www.pexels.com/video/suitcase-with-train-station-background-5434562/",
+      "source_license": "Pexels License - Free to use"
     },
     {
       "id": "03",
       "title": "Το κουδούνι στις 4:17",
-      "queries": [
-        "apartment doorbell photograph",
-        "wall clock afternoon photograph",
-        "elderly neighbor apartment hallway photograph",
-        "two neighbors tea table photograph",
-        "apartment hallway warm light photograph"
-      ],
       "cards": [
         "Για τρεις εβδομάδες, το κουδούνι του χτυπούσε κάθε απόγευμα στις 4:17.",
         "Άνοιγε την πόρτα, αλλά στην αρχή δεν έβρισκε κανέναν.",
         "Μια μέρα περίμενε πίσω από την πόρτα και είδε τον ηλικιωμένο γείτονα να διστάζει.",
         "«Δεν χρειάζομαι τίποτα», του είπε. «Απλώς ήθελα να ακούσω μια ανθρώπινη φωνή.»",
         "Από την επόμενη μέρα, στις 4:17 δεν χτυπούσε κουδούνι. Έμπαινε κατευθείαν για τσάι."
-      ]
+      ],
+      "pexels_video_id": "5372872",
+      "source_page": "https://www.pexels.com/video/bellboy-walking-in-corridor-and-knocking-on-room-door-5372872/",
+      "source_license": "Pexels License - Free to use"
     },
     {
       "id": "04",
       "title": "Η θέση δίπλα στο παράθυρο",
-      "queries": [
-        "train window empty seat",
-        "woman train window",
-        "flower on train seat",
-        "siblings train travel",
-        "empty train seat window"
-      ],
       "cards": [
         "Στο τρένο, μια γυναίκα άφηνε πάντα κενή τη θέση δίπλα στο παράθυρο.",
         "Κανείς δεν καταλάβαινε γιατί, μέχρι που άφησε πάνω της ένα μικρό λουλούδι.",
         "Εκεί καθόταν ο αδελφός της στο τελευταίο τους ταξίδι μαζί.",
         "Δεν κράτησε τη θέση για να μη καθίσει κάποιος άλλος.",
         "Την κράτησε για να θυμάται ότι κάποτε δεν ταξίδευε μόνη."
-      ]
+      ],
+      "pexels_video_id": "6580769",
+      "source_page": "https://www.pexels.com/video/empty-seats-on-the-train-6580769/",
+      "source_license": "Pexels License - Free to use"
     },
     {
       "id": "05",
       "title": "Ο σκύλος που περίμενε έξω από το κλειστό μαγαζί",
-      "queries": [
-        "dog outside closed shop",
-        "dog waiting storefront",
-        "dog street shop door",
-        "shop owner dog doorway",
-        "dog inside small shop"
-      ],
       "cards": [
         "Το μαγαζί είχε κλείσει εδώ και μήνες, αλλά ο σκύλος ερχόταν κάθε πρωί.",
         "Καθόταν μπροστά στην πόρτα μέχρι να νυχτώσει.",
         "Οι γείτονες έμαθαν ότι ο παλιός ιδιοκτήτης τού έδινε πάντα λίγο φαγητό και νερό.",
         "Όταν ένας νέος άνθρωπος νοίκιασε το μαγαζί, άφησε την πόρτα ανοιχτή.",
         "Ο σκύλος μπήκε μέσα, ξάπλωσε στη γωνία και δεν περίμενε ξανά έξω."
-      ]
+      ],
+      "pexels_video_id": "5357501",
+      "source_page": "https://www.pexels.com/video/dog-staying-in-front-of-the-entrance-door-5357501/",
+      "source_license": "Pexels License - Free to use"
     },
     {
       "id": "06",
       "title": "Η απόδειξη των 2,40 €",
-      "queries": [
-        "old wallet receipt",
-        "coffee receipt table",
-        "couple first date cafe",
-        "two coffee cups table",
-        "old receipt memory"
-      ],
       "cards": [
         "Σε ένα παλιό πορτοφόλι βρήκε μια απόδειξη μόλις 2,40 €.",
         "Ήταν από δύο καφέδες, την ημέρα που γνώρισε τη γυναίκα του.",
         "Δεν θυμόταν τι φορούσε ούτε τι μουσική έπαιζε.",
         "Θυμόταν μόνο ότι άργησαν να φύγουν γιατί δεν ήθελαν να τελειώσει η κουβέντα.",
         "Κάποιες μικρές αποδείξεις κρύβουν ολόκληρες ζωές."
-      ]
+      ],
+      "pexels_video_id": "8296444",
+      "source_page": "https://www.pexels.com/video/dating-couple-having-coffee-8296444/",
+      "source_license": "Pexels License - Free to use"
     },
     {
       "id": "07",
       "title": "Το δωμάτιο 214",
-      "queries": [
-        "hotel room door number",
-        "hotel room window",
-        "marriage proposal hotel",
-        "man alone hotel room",
-        "hotel room memory"
-      ],
       "cards": [
         "Κάθε χρόνο ζητούσε στο ξενοδοχείο το ίδιο δωμάτιο: 214.",
         "Δεν ήταν το καλύτερο, ούτε είχε την καλύτερη θέα.",
         "Εκεί είχε κάνει πρόταση γάμου πριν από πολλά χρόνια.",
         "Μετά τον χωρισμό τους συνέχισε να επιστρέφει μόνος.",
         "Όχι επειδή περίμενε να γυρίσει εκείνη. Επειδή εκεί θυμόταν ποιος ήταν κάποτε."
-      ]
+      ],
+      "pexels_video_id": "7507165",
+      "source_page": "https://www.pexels.com/video/shot-of-a-hotel-room-with-an-open-door-7507165/",
+      "source_license": "Pexels License - Free to use"
     },
     {
       "id": "08",
       "title": "Το παλιό κλειδί στην τσέπη",
-      "queries": [
-        "old key hand",
-        "vintage house key",
-        "empty first apartment",
-        "hand holding key pocket",
-        "old key memory"
-      ],
       "cards": [
         "Για δεκαετίες κουβαλούσε ένα κλειδί που δεν άνοιγε πια καμία πόρτα.",
         "Ήταν από το πρώτο σπίτι που είχε νοικιάσει μόνος του.",
         "Όταν τα πράγματα δυσκόλευαν, το έπιανε στην τσέπη του.",
         "Του θύμιζε ότι κάποτε ξεκίνησε από ένα άδειο δωμάτιο και τα κατάφερε.",
         "Μερικά κλειδιά δεν ανοίγουν σπίτια. Ανοίγουν μνήμες."
-      ]
+      ],
+      "pexels_video_id": "8320971",
+      "source_page": "https://www.pexels.com/video/person-handing-a-key-8320971/",
+      "source_license": "Pexels License - Free to use"
     },
     {
       "id": "09",
       "title": "Η φωτογραφία πίσω από τον καθρέφτη",
-      "queries": [
-        "old photograph behind mirror",
-        "vintage couple photograph",
-        "old house mirror",
-        "family old photo hand",
-        "woman holding parents photograph"
-      ],
       "cards": [
         "Μετακομίζοντας, βρήκε μια φωτογραφία κρυμμένη πίσω από έναν παλιό καθρέφτη.",
         "Έδειχνε δύο νέους ανθρώπους μπροστά στο ίδιο σπίτι, πριν από δεκαετίες.",
         "Στο πίσω μέρος έγραφε: «Εδώ αρχίσαμε.»",
         "Αναζήτησε την οικογένεια και παρέδωσε τη φωτογραφία στην κόρη τους.",
         "Εκείνη την κοίταξε και είπε: «Αυτή είναι η μόνη φωτογραφία τους μαζί που δεν είχα.»"
-      ]
+      ],
+      "pexels_video_id": "7545824",
+      "source_page": "https://www.pexels.com/video/a-person-looking-at-vintage-photos-7545824/",
+      "source_license": "Pexels License - Free to use"
     },
     {
       "id": "10",
       "title": "Το παλτό στην τελευταία κρεμάστρα",
-      "queries": [
-        "old coat on hanger photograph",
-        "coat pocket note photograph",
-        "man holding old coat photograph",
-        "father son old photograph photograph",
-        "empty coat rack home photograph"
-      ],
       "cards": [
         "Καθάριζε την ντουλάπα όταν έμεινε μόνο ένα παλιό παλτό στην τελευταία κρεμάστρα.",
         "Ήταν του πατέρα του. Δεν το είχε αγγίξει από τότε που άδειασε το σπίτι.",
         "Στην εσωτερική τσέπη βρήκε ένα χαρτάκι με τη γραφή του: «Πάρε με όταν γυρίσεις.»",
         "Ήταν μια παλιά υπενθύμιση για ένα τηλεφώνημα που είχε γίνει χρόνια πριν.",
         "Δεν κράτησε το παλτό επειδή δεν μπορούσε να το αποχωριστεί. Το κράτησε γιατί του θύμισε πόσο σημαντικό είναι να απαντάς όσο προλαβαίνεις."
-      ]
+      ],
+      "pexels_video_id": "7670307",
+      "source_page": "https://www.pexels.com/video/hanging-clothes-on-a-rack-7670307/",
+      "source_license": "Pexels License - Free to use"
     },
     {
       "id": "11",
       "title": "Το φως στο απέναντι μπαλκόνι",
-      "queries": [
-        "apartment balconies night photograph",
-        "elderly woman window night photograph",
-        "opposite balcony light photograph",
-        "neighbors waving balcony photograph",
-        "city balconies dawn photograph"
-      ],
       "cards": [
         "Κάθε βράδυ, στις έντεκα ακριβώς, άναβε ένα μικρό φως στο απέναντι μπαλκόνι.",
         "Η γυναίκα που ζούσε μόνη της το πρόσεξε και άρχισε να ανάβει κι εκείνη το δικό της.",
         "Δεν είχαν μιλήσει ποτέ. Απλώς αντάλλασσαν ένα μικρό φως μέσα στη νύχτα.",
         "Μια βραδιά το απέναντι μπαλκόνι έμεινε σκοτεινό. Το πρωί χτύπησε για πρώτη φορά την πόρτα του γείτονα.",
         "Εκείνος ήταν καλά. Από τότε, αντί για δύο φώτα, υπήρχαν δύο καρέκλες στο ίδιο μπαλκόνι."
-      ]
+      ],
+      "pexels_video_id": "27854579",
+      "source_page": "https://www.pexels.com/video/a-view-of-the-city-from-a-balcony-at-night-27854579/",
+      "source_license": "Pexels License - Free to use"
     },
     {
       "id": "12",
       "title": "Το βιβλίο με τη μία υπογράμμιση",
-      "queries": [
-        "old book highlighted sentence",
-        "hand reading old book",
-        "mother old book home",
-        "family book memory",
-        "person phone call book table"
-      ],
       "cards": [
         "Σε ένα παλιό βιβλίο βρήκε μόνο μία πρόταση υπογραμμισμένη.",
         "«Να λες στους ανθρώπους όσα νιώθεις όσο είναι ακόμη εδώ.»",
         "Το βιβλίο ανήκε στη μητέρα του.",
         "Εκείνη δεν του είχε πει ποτέ ότι το είχε διαβάσει. Ούτε εκείνος της είχε πει αρκετά.",
         "Έκλεισε το βιβλίο και τηλεφώνησε αμέσως στην αδελφή του."
-      ]
+      ],
+      "pexels_video_id": "11530072",
+      "source_page": "https://www.pexels.com/video/hands-opening-old-book-11530072/",
+      "source_license": "Pexels License - Free to use"
     },
     {
       "id": "13",
       "title": "Το παγκάκι της Κυριακής",
-      "queries": [
-        "two elderly men park bench",
-        "man feeding pigeons park",
-        "man reading newspaper bench",
-        "empty park bench pigeons",
-        "elderly man feeding birds bench"
-      ],
       "cards": [
         "Δύο άγνωστοι κάθονταν κάθε Κυριακή στο ίδιο παγκάκι, χωρίς να μιλούν.",
         "Ο ένας τάιζε περιστέρια. Ο άλλος διάβαζε εφημερίδα.",
         "Μετά από μήνες, ο πρώτος δεν εμφανίστηκε.",
         "Την επόμενη Κυριακή, ο δεύτερος έφερε για πρώτη φορά ψίχουλα.",
         "Δεν είχαν γίνει ποτέ φίλοι με λόγια. Κι όμως, η απουσία είχε ήδη γίνει αισθητή."
-      ]
+      ],
+      "pexels_video_id": "34638793",
+      "source_page": "https://www.pexels.com/video/elderly-men-socializing-on-park-bench-outdoors-34638793/",
+      "source_license": "Pexels License - Free to use"
     },
     {
       "id": "14",
       "title": "Η ομπρέλα στο ασανσέρ",
-      "queries": [
-        "red umbrella elevator",
-        "umbrella apartment hallway",
-        "note on umbrella",
-        "people sharing umbrella rain",
-        "red umbrella hallway"
-      ],
       "cards": [
         "Κάθε βροχερή μέρα μια κόκκινη ομπρέλα εμφανιζόταν στο ασανσέρ της πολυκατοικίας.",
         "Κανείς δεν ήξερε σε ποιον ανήκε.",
         "Ένα σημείωμα έγραφε: «Πάρ’ την αν τη χρειάζεσαι. Φέρ’ την πίσω όταν μπορέσεις.»",
         "Για χρόνια πέρασε από δεκάδες χέρια.",
         "Κάποιος άγνωστος είχε βρει έναν απλό τρόπο να θυμίζει σε όλους ότι η καλοσύνη κυκλοφορεί."
-      ]
+      ],
+      "pexels_video_id": "4352807",
+      "source_page": "https://www.pexels.com/video/people-waiting-at-the-shop-front-while-raining-4352807/",
+      "source_license": "Pexels License - Free to use"
     },
     {
       "id": "15",
       "title": "Η βαλίτσα που δεν άνοιξε ποτέ",
-      "queries": [
-        "old suitcase attic",
-        "closed vintage suitcase",
-        "old travel tickets suitcase",
-        "old travel photograph suitcase",
-        "man opening old suitcase"
-      ],
       "cards": [
         "Μια παλιά βαλίτσα έμενε κλειστή στην αποθήκη για περισσότερα από είκοσι χρόνια.",
         "Όταν τελικά αποφάσισε να την ανοίξει, δεν βρήκε χρήματα ούτε μυστικά.",
         "Μόνο ρούχα, εισιτήρια και μια φωτογραφία από το πρώτο του ταξίδι.",
         "Κατάλαβε ότι την κρατούσε κλειστή επειδή φοβόταν να ξαναδεί τον νεότερο εαυτό του.",
         "Την έκλεισε ξανά, αυτή τη φορά χωρίς φόβο."
-      ]
+      ],
+      "pexels_video_id": "4684102",
+      "source_page": "https://www.pexels.com/video/video-of-person-holding-suitcase-4684102/",
+      "source_license": "Pexels License - Free to use"
     }
   ],
-  "build_trigger": "2026-10-11T14:42:00+03:00"
+  "build_trigger": "2026-10-11T14:48:00+03:00"
 }
