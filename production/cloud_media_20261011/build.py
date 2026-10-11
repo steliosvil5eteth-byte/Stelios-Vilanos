@@ -32,86 +32,72 @@ small_font=ImageFont.truetype(font_path,33)
 def clean_html(s):
     return re.sub("<[^>]+>","",s or "").replace("&amp;","&").strip()
 
-def commons_candidates(query, limit=30):
-    api="https://commons.wikimedia.org/w/api.php"
-    params={
-      "action":"query","format":"json","generator":"search",
-      "gsrsearch":f'{query} filetype:bitmap',"gsrnamespace":6,"gsrlimit":limit,
-      "prop":"imageinfo","iiprop":"url|mime|size|extmetadata","iiurlwidth":1600
-    }
-    r=session.get(api,params=params,timeout=40); r.raise_for_status()
-    pages=(r.json().get("query") or {}).get("pages") or {}
-    out=[]
-    for pid,p in pages.items():
-        ii=(p.get("imageinfo") or [{}])[0]
-        mime=(ii.get("mime") or "").lower()
-        if mime not in ("image/jpeg","image/png","image/webp"): continue
-        if int(ii.get("width") or 0)<700 or int(ii.get("height") or 0)<500: continue
-        em=ii.get("extmetadata") or {}
-        lic=clean_html((em.get("LicenseShortName") or {}).get("value"))
-        usage=clean_html((em.get("UsageTerms") or {}).get("value"))
-        lic_l=(lic+" "+usage).lower()
-        if not any(t in lic_l for t in allowed_tokens): continue
-        out.append({
-          "pageid":str(pid),"title":p.get("title",""),"url":ii.get("thumburl") or ii.get("url"),
-          "width":ii.get("width"),"height":ii.get("height"),
-          "license":lic or usage,
-          "artist":clean_html((em.get("Artist") or {}).get("value")),
-          "credit":clean_html((em.get("Credit") or {}).get("value")),
-          "description":clean_html((em.get("ImageDescription") or {}).get("value"))
-        })
-    return out
+def unsplash_candidates(query, limit=24):
+    endpoint="https://unsplash.com/napi/search/photos"
+    params={"query":query,"per_page":limit,"page":1,"orientation":"portrait"}
+    last=None
+    for attempt in range(5):
+        try:
+            r=session.get(endpoint,params=params,timeout=40)
+            if r.status_code==429:
+                time.sleep(3*(attempt+1)); continue
+            r.raise_for_status()
+            data=r.json()
+            out=[]
+            for item in data.get("results",[]):
+                if item.get("premium") is True or item.get("plus") is True:
+                    continue
+                urls=item.get("urls") or {}
+                raw=urls.get("raw") or urls.get("full") or urls.get("regular")
+                if not raw: continue
+                if "?" in raw:
+                    raw=raw+"&auto=format&fit=crop&w=1600&q=82"
+                else:
+                    raw=raw+"?auto=format&fit=crop&w=1600&q=82"
+                out.append({
+                    "pageid":item.get("id",""),
+                    "title":item.get("alt_description") or item.get("description") or query,
+                    "url":raw,
+                    "width":item.get("width"),"height":item.get("height"),
+                    "license":"Unsplash License",
+                    "artist":((item.get("user") or {}).get("name") or ""),
+                    "credit":((item.get("links") or {}).get("html") or ""),
+                    "description":item.get("alt_description") or ""
+                })
+            return out
+        except Exception as e:
+            last=e; time.sleep(2*(attempt+1))
+    raise last or RuntimeError("Unsplash search failed")
 
 def choose_image(query):
-    variants=[query+" photograph", query, query.replace("old ","")+" photograph", " ".join(query.split()[:2])+" photograph"]
+    variants=[query, " ".join(query.split()[:3]), " ".join(query.split()[-3:])]
     last=[]
     for q in variants:
         try:
-            cand=commons_candidates(q)
+            cand=unsplash_candidates(q)
             last=cand
             for c in cand:
                 if c["pageid"] not in used_pages and c.get("url"):
                     used_pages.add(c["pageid"]); return c
         except Exception as e:
             print("search error",q,e,flush=True)
-        time.sleep(.8)
+        time.sleep(.5)
     for c in last:
         if c.get("url"): return c
-    raise RuntimeError(f"No freely licensed image found for {query}")
+    raise RuntimeError(f"No free Unsplash image found for {query}")
 
 def download_img(meta):
-    url=meta["url"].split("?")[0]
     last=None
-    for attempt in range(6):
+    for attempt in range(5):
         try:
-            r=session.get(url,timeout=60)
+            r=session.get(meta["url"],timeout=60)
             if r.status_code==429:
-                time.sleep(3*(attempt+1)); last=RuntimeError("429"); continue
+                time.sleep(3*(attempt+1)); continue
             r.raise_for_status()
             return Image.open(BytesIO(r.content)).convert("RGB")
         except Exception as e:
-            last=e
-            time.sleep(2*(attempt+1))
+            last=e; time.sleep(2*(attempt+1))
     raise last
-
-def cover(im,size=(1080,1920)):
-    tw,th=size; w,h=im.size
-    scale=max(tw/w,th/h); nw,nh=int(w*scale),int(h*scale)
-    im=im.resize((nw,nh),Image.LANCZOS)
-    l=(nw-tw)//2; t=(nh-th)//2
-    return im.crop((l,t,l+tw,t+th))
-
-def wrap(draw,text,font,maxw):
-    words=text.split(); lines=[]; cur=""
-    for w in words:
-        test=(cur+" "+w).strip()
-        box=draw.textbbox((0,0),test,font=font,stroke_width=0)
-        if box[2]-box[0] <= maxw: cur=test
-        else:
-            if cur: lines.append(cur)
-            cur=w
-    if cur: lines.append(cur)
-    return lines
 
 def render_slide(story,idx,photo,meta):
     im=cover(photo)
@@ -173,7 +159,7 @@ for story in cfg["stories"]:
         p=render_slide(story,idx,photo,meta)
         slide_paths.append(p)
         sources.append({"slide":idx,"query":q,**meta})
-        time.sleep(1.1)
+        time.sleep(.35)
     video=make_video(story,slide_paths)
     contact=contact_sheet(story,slide_paths)
     sha=hashlib.sha256(video.read_bytes()).hexdigest()
