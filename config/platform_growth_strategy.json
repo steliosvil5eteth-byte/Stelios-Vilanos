@@ -60,8 +60,10 @@
     "record_requires_exactly_one_explicit_target": true,
     "require_program_attribution": true,
     "require_unique_story_id_and_media_sha256": true,
-    "same_story_on_second_platform_allowed": false,
-    "provider_only_title_or_thumbnail_changes_are_not_distinct_story": true
+    "same_story_on_second_platform_allowed": true,
+    "provider_only_title_or_thumbnail_changes_are_not_distinct_story": true,
+    "same_story_allowed_on_all_four_platforms_when_within_same_daily_set": true,
+    "count_same_story_once_for_distinct_stories": true
   },
   "required_checks": {
     "fresh_history": {
@@ -131,15 +133,16 @@
       "local_asr_does_not_solve_exact_nestoras_tts_capacity": true,
       "source": "https://azure.microsoft.com/en-us/pricing/details/speech/",
       "fifteen_daily_illustrative_projection": {
-        "videos_per_day": 60,
+        "videos_per_day": 15,
+        "provider_destinations_per_day": 60,
         "days": 30,
         "illustrative_characters_per_video": 1677.5,
-        "tts_characters": 3019500,
+        "tts_characters": 754875,
         "asr_hours_at_80_to_110_seconds": [
-          40,
-          55
+          10,
+          13.75
         ],
-        "basis": "Scale the existing October 9 40-script sample mean to the newly requested 60/day; not new scripts, actual billing, account quota or authorization."
+        "basis": "15 distinct original narrated videos daily, each legitimately reused across four platforms; 60 destinations are deliveries rather than 60 new synthesis jobs. Illustrative calculation, not actual quota evidence."
       }
     },
     "original_content": {
@@ -406,7 +409,7 @@
       ],
       "mix_status": "UNTESTED_EDITORIAL_HYPOTHESIS",
       "evidence_note": "Relationships are a candidate direction; one large Reel outlier must not determine the entire mix",
-      "required_content_identity": "Different complete story, narration and relevant scene sequence from every other platform",
+      "required_content_identity": "15 fully original distinct daily stories; the same 15 may be cross-posted unchanged to Facebook, Instagram, TikTok and YouTube with provider-specific formatting; no recycled historical stories.",
       "initial_daily_mix_before_20261010": [
         {
           "category": "human_relationship_fiction",
@@ -461,7 +464,7 @@
       ],
       "mix_status": "UNTESTED_EDITORIAL_HYPOTHESIS",
       "evidence_note": "Place and nature examples are tentative signals in a small, low-engagement sample",
-      "required_content_identity": "Different complete story, narration and relevant scene sequence from every other platform",
+      "required_content_identity": "15 fully original distinct daily stories; the same 15 may be cross-posted unchanged to Facebook, Instagram, TikTok and YouTube with provider-specific formatting; no recycled historical stories.",
       "initial_daily_mix_before_20261010": [
         {
           "category": "place_history",
@@ -516,7 +519,7 @@
       ],
       "mix_status": "UNTESTED_EDITORIAL_HYPOTHESIS",
       "evidence_note": "Historical PHOTO winners do not establish narrated VIDEO performance; evaluate new videos separately",
-      "required_content_identity": "Different complete story, narration and relevant scene sequence from every other platform",
+      "required_content_identity": "15 fully original distinct daily stories; the same 15 may be cross-posted unchanged to Facebook, Instagram, TikTok and YouTube with provider-specific formatting; no recycled historical stories.",
       "initial_daily_mix_before_20261010": [
         {
           "category": "human_mystery_fiction",
@@ -571,7 +574,7 @@
       ],
       "mix_status": "UNTESTED_EDITORIAL_HYPOTHESIS",
       "evidence_note": "Prioritize clear first scene and narrative progression; low average watch duration is the primary issue",
-      "required_content_identity": "Different complete story, narration and relevant scene sequence from every other platform",
+      "required_content_identity": "15 fully original distinct daily stories; the same 15 may be cross-posted unchanged to Facebook, Instagram, TikTok and YouTube with provider-specific formatting; no recycled historical stories.",
       "initial_daily_mix_before_20261010": [
         {
           "category": "science_or_history_question",
@@ -790,5 +793,11 @@
     "final_review_rules_changed": false,
     "release_flags_enabled": false,
     "historical_manifests_and_reports_rewritten": false
+  },
+  "cadence_revision_20261012_2046": {
+    "at": "2026-10-12T20:46:33+03:00",
+    "reason": "Reconcile internal routing contradiction with explicit 10 October instruction; user requested best-effort repair and publication.",
+    "effects": "Same 15 distinct videos across four platforms, 60 provider deliveries; per-platform target 15; no additional credits, publishing activation, or relaxation of review gates.",
+    "release_status": "STILL_BLOCKED_UNTIL_VERIFIED"
   }
 }
