@@ -713,6 +713,51 @@
       ],
       "global_production_enabled": false,
       "scope_rule": "Permits one zero-credit, no-voice, photo-carousel story on Facebook, Instagram and TikTok only. Does not enable general production, paid tools, narrated video, YouTube, or any second story."
+    },
+    "CAROUSEL_ZODIAC_20261012": {
+      "release_basis": "EXPLICIT_USER_BEST_EFFORT_ZERO_CREDIT_NO_NARRATION",
+      "status": "SCHEDULED_PENDING_PLATFORM_PUBLICATION",
+      "brand_id": 7076410,
+      "title": "Τα ζώδια όταν συναντούν έναν παλιό φίλο",
+      "fingerprint": "zodiac|old_friend_unexpected_encounter|all_twelve_six_pairs|2026-10-12",
+      "media_repo_path": "media/zodiac_old_friend_20261012",
+      "cards": 8,
+      "original_art_created_locally": true,
+      "narration": "NONE",
+      "paid_credits_used": false,
+      "platforms": [
+        "tiktok",
+        "instagram",
+        "facebook"
+      ],
+      "youtube_targeted": false,
+      "posts": [
+        {
+          "platform": "tiktok",
+          "scheduled_at": "2026-10-12T23:00:00+03:00",
+          "metricool_id": 394272153,
+          "uuid": "1254294066609276587",
+          "last_verified_status": "PENDING"
+        },
+        {
+          "platform": "instagram",
+          "scheduled_at": "2026-10-12T23:05:00+03:00",
+          "metricool_id": 394272559,
+          "uuid": "-1954462642512442389",
+          "last_verified_status": "PENDING"
+        },
+        {
+          "platform": "facebook",
+          "scheduled_at": "2026-10-12T23:10:00+03:00",
+          "metricool_id": 394272759,
+          "uuid": "6217288284791719484",
+          "last_verified_status": "PENDING"
+        }
+      ],
+      "notion_archive_url": "https://app.notion.com/p/3f7f2345b3188115bb1fdc42b800175a",
+      "qa_followup": "2026-10-12T23:40:00+03:00",
+      "scope_rule": "One manually produced and inspected non-narrated social-image carousel, scheduled on three supported networks only. This does not activate unattended production, permit narration without the final-audio gate, waive credits, or count this carousel as a narrated video.",
+      "public_platform_urls_verified": false
     }
   },
   "latest_preparation_report": {
