@@ -596,7 +596,7 @@
       "mix_revision_note": "Same four editorial categories, scaled from 4/3/2/1 to 6/4/3/2 for the user target of 15; untested editorial allocation, not a performance claim."
     }
   },
-  "latest_recovery_report": "state/daily_recovery_20261010.json",
+  "latest_recovery_report": "state/daily_recovery_20261014.json",
   "last_reconciled_at": "2026-10-10T13:21:00.882614+00:00",
   "bounded_manual_release_authorizations": {
     "RECOVERY_20261008_1925": {
