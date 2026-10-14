@@ -45,10 +45,10 @@ def render_card(photo, text, label, n):
     photo=ImageOps.fit(photo,(1080,1080),method=Image.Resampling.LANCZOS)
     art=photo.convert("RGBA")
     shade=Image.new("RGBA",(1080,1080),(0,0,0,0))
-    sp=shade.load()
+    sp=ImageDraw.Draw(shade)
     for y in range(1080):
         a=int(18+205*max(0,min(1,(y-410)/570))**0.66)
-        for x in range(1080):sp[x,y]=(2,7,16,a)
+        sp.line((0,y,1079,y),fill=(2,7,16,a),width=1)
     art=Image.alpha_composite(art,shade)
     dr=ImageDraw.Draw(art)
     dr.rounded_rectangle((48,47,1032,135),radius=25,fill=(6,15,29,172))
