@@ -1,0 +1,296 @@
+{
+  "date": "2026-10-14",
+  "format": "square 1080x1080",
+  "review_status": "NEEDS_EXACT_VISUAL_AND_VIDEO_REVIEW",
+  "posts": [
+    {
+      "slug": "leo_scorpio",
+      "title": "Λέων με ωροσκόπο Σκορπιό",
+      "review_status": "NEEDS_EXACT_VISUAL_AND_VIDEO_REVIEW",
+      "cards": [
+        {
+          "path": "media/carousel_eight_20261014/leo_scorpio/card_01.jpg",
+          "sha256": "3755166383519457910a242330a448160188b8bc7141b678627ccbc62dc671be"
+        },
+        {
+          "path": "media/carousel_eight_20261014/leo_scorpio/card_02.jpg",
+          "sha256": "55a6ca3b3fb774c6687291f3a14731f78d9536a4ae27d36b3b36618ba4c3a76d"
+        },
+        {
+          "path": "media/carousel_eight_20261014/leo_scorpio/card_03.jpg",
+          "sha256": "7eaff66b5c3e206ae739d12e0e6b137c22fa50d1bdc5da29bc9ac222ec6c3745"
+        },
+        {
+          "path": "media/carousel_eight_20261014/leo_scorpio/card_04.jpg",
+          "sha256": "f6b0edd07af55c15f1facdb5472b8329f535a283e28ed1edb749321f5c4f8f7e"
+        },
+        {
+          "path": "media/carousel_eight_20261014/leo_scorpio/card_05.jpg",
+          "sha256": "37424ede5d9213528567ed5dad5ff60bf1598f706f8525e7eb36deee7c65f2de"
+        },
+        {
+          "path": "media/carousel_eight_20261014/leo_scorpio/card_06.jpg",
+          "sha256": "0915b9d23d474113b970caf46246bca8adb20a52a5faf2932d16808c103e961d"
+        }
+      ],
+      "video": {
+        "path": "media/carousel_eight_20261014/leo_scorpio/slideshow.mp4",
+        "sha256": "1f3d96d36a640cc157ae6edd8c07cdc932c757ba8961274a1b62ea3230ee6462"
+      },
+      "caption": ""
+    },
+    {
+      "slug": "cancer_aries",
+      "title": "Καρκίνος με ωροσκόπο Κριό",
+      "review_status": "NEEDS_EXACT_VISUAL_AND_VIDEO_REVIEW",
+      "cards": [
+        {
+          "path": "media/carousel_eight_20261014/cancer_aries/card_01.jpg",
+          "sha256": "ff69333a1e9ff1ba793f2a48bf12800621075dcc38687db4a26b37663df37214"
+        },
+        {
+          "path": "media/carousel_eight_20261014/cancer_aries/card_02.jpg",
+          "sha256": "86ebe83a35156a91425f8187302755a313be5df43868378bd2ad2612ac5a136e"
+        },
+        {
+          "path": "media/carousel_eight_20261014/cancer_aries/card_03.jpg",
+          "sha256": "dfcac26faf4b3a36bf7f6f092a98eb5337c4daa3dd17727a66b2f8e0f152fc05"
+        },
+        {
+          "path": "media/carousel_eight_20261014/cancer_aries/card_04.jpg",
+          "sha256": "9dd85dd3b2df4a5eb29c65f7a5f4743ce108dfb3e0ddf5096fc2387f87ec120f"
+        },
+        {
+          "path": "media/carousel_eight_20261014/cancer_aries/card_05.jpg",
+          "sha256": "4908ad9a67d5e0928477ac4a43d6bb9e3cf979247d62ea30b17ec326c0bf76a3"
+        },
+        {
+          "path": "media/carousel_eight_20261014/cancer_aries/card_06.jpg",
+          "sha256": "b0e7b066557826c989475e82526ffbb68b63d642bce45423f5a50fabe0312e4c"
+        }
+      ],
+      "video": {
+        "path": "media/carousel_eight_20261014/cancer_aries/slideshow.mp4",
+        "sha256": "b57d7dccdd4f8e4ed3ccba94c86e964dc1e92db401ba7424e6a618345c3b6877"
+      },
+      "caption": "Καρκίνος με ωροσκόπο Κριό: ένα συμβολικό πορτρέτο τρυφερότητας και δυναμισμού. Εσύ ταυτίζεσαι; Ψυχαγωγική αστρολογία. Εικαστικά AI. Ακολουθήστε με για περισσότερα. #Ζώδια #Καρκίνος #Κριός #Ωροσκόπος #Αστρολογία"
+    },
+    {
+      "slug": "virgo_sagittarius",
+      "title": "Παρθένος με ωροσκόπο Τοξότη",
+      "review_status": "NEEDS_EXACT_VISUAL_AND_VIDEO_REVIEW",
+      "cards": [
+        {
+          "path": "media/carousel_eight_20261014/virgo_sagittarius/card_01.jpg",
+          "sha256": "8fcba492ae7b7e65e744671a831947ca407fe55f3e256abf561506e6c4da1789"
+        },
+        {
+          "path": "media/carousel_eight_20261014/virgo_sagittarius/card_02.jpg",
+          "sha256": "2190013765ce6caeae676bf93981a0b6045efc148950d84d30f3d7bcdb834590"
+        },
+        {
+          "path": "media/carousel_eight_20261014/virgo_sagittarius/card_03.jpg",
+          "sha256": "d16406b956b9691c7ddd3efc5b219c4a34d41ef8edc293096e534eea9fac84a7"
+        },
+        {
+          "path": "media/carousel_eight_20261014/virgo_sagittarius/card_04.jpg",
+          "sha256": "c3575473bd31965460112b623d6595d8a90da9b305ad1553cf6e97e12fb36a46"
+        },
+        {
+          "path": "media/carousel_eight_20261014/virgo_sagittarius/card_05.jpg",
+          "sha256": "92ca6cccf8fb3f96a55c3c2496f0505aa5f2e21d312cf8e9f858500c5ff4cbaa"
+        },
+        {
+          "path": "media/carousel_eight_20261014/virgo_sagittarius/card_06.jpg",
+          "sha256": "68c1536c452d734418c3acaf17461cf7a164f751d6bf4271d8779b9de076116b"
+        }
+      ],
+      "video": {
+        "path": "media/carousel_eight_20261014/virgo_sagittarius/slideshow.mp4",
+        "sha256": "b261bf9a473bd761ff11aeccf9bffbd0db64423674e41366757a9ea3bb766573"
+      },
+      "caption": "Παρθένος με ωροσκόπο Τοξότη: ανάμεσα στο πρόγραμμα και την περιπέτεια. Συμβολικό αστρολογικό πορτρέτο για ψυχαγωγία. Εικαστικά AI. Ακολουθήστε με για περισσότερα. #Ζώδια #Παρθένος #Τοξότης #Ωροσκόπος #Σχέσεις"
+    },
+    {
+      "slug": "pisces_capricorn",
+      "title": "Ιχθύς με ωροσκόπο Αιγόκερω",
+      "review_status": "NEEDS_EXACT_VISUAL_AND_VIDEO_REVIEW",
+      "cards": [
+        {
+          "path": "media/carousel_eight_20261014/pisces_capricorn/card_01.jpg",
+          "sha256": "84f153e33c56c8d7295bc37133d4184b89a9349e182e200e1bfb70ef6d86b91c"
+        },
+        {
+          "path": "media/carousel_eight_20261014/pisces_capricorn/card_02.jpg",
+          "sha256": "3a15c39832ce2493efefb4c38d7ca7c4196fb0a46846d2ce49b08e442c516a38"
+        },
+        {
+          "path": "media/carousel_eight_20261014/pisces_capricorn/card_03.jpg",
+          "sha256": "3194d20b9326262aae7ad2b95913cde89f92acd3026fda6039819da68a146372"
+        },
+        {
+          "path": "media/carousel_eight_20261014/pisces_capricorn/card_04.jpg",
+          "sha256": "02c2402a429d9c63562d642eea7bc8e463b22760c3ab00dfee8032bb09e7c0a7"
+        },
+        {
+          "path": "media/carousel_eight_20261014/pisces_capricorn/card_05.jpg",
+          "sha256": "2f068443edec06d7436bfc832431e79df2e4b2f5ca7e742dc9bfbd2a92743e66"
+        },
+        {
+          "path": "media/carousel_eight_20261014/pisces_capricorn/card_06.jpg",
+          "sha256": "ffab02ace1d1fd53aa16b198a35fbe3b0ecf0338d8fb169f12154572e2ddab9e"
+        }
+      ],
+      "video": {
+        "path": "media/carousel_eight_20261014/pisces_capricorn/slideshow.mp4",
+        "sha256": "5b225c5d9306b87a3ef04813258011fd6a9c119156e2f3b7d399d93d95e0f1df"
+      },
+      "caption": "Ιχθύς με ωροσκόπο Αιγόκερω: συναίσθημα πίσω από την αυτοσυγκράτηση. Συμβολικό πορτρέτο για ψυχαγωγία, όχι επιστημονική πρόβλεψη. Εικαστικά AI. Ακολουθήστε με για περισσότερα. #Ζώδια #Ιχθύς #Αιγόκερως #Ωροσκόπος #Αστρολογία"
+    },
+    {
+      "slug": "mother_light",
+      "title": "Η μητέρα που άφηνε το φως αναμμένο",
+      "review_status": "NEEDS_EXACT_VISUAL_AND_VIDEO_REVIEW",
+      "cards": [
+        {
+          "path": "media/carousel_eight_20261014/mother_light/card_01.jpg",
+          "sha256": "dbaa195d121ab40819cd672a2228ecd941dfc6aeff650bc9ae61c8eeb9eab1af"
+        },
+        {
+          "path": "media/carousel_eight_20261014/mother_light/card_02.jpg",
+          "sha256": "1f155924d705a3e23c684a1467135777eeb8a097f7736d3b4afc18ba7e2f307d"
+        },
+        {
+          "path": "media/carousel_eight_20261014/mother_light/card_03.jpg",
+          "sha256": "a9ec7465f3726da7f98870a76f803f3539419a8d3c1bc1ce107667bf17bc1f5e"
+        },
+        {
+          "path": "media/carousel_eight_20261014/mother_light/card_04.jpg",
+          "sha256": "73930467e098235dd2988e086707d3e8af56ed5b4e6afd626fa2077b260f316e"
+        },
+        {
+          "path": "media/carousel_eight_20261014/mother_light/card_05.jpg",
+          "sha256": "21e132919d550f016a35de0fbbcbdf82c634936ad0f989ef8d8a756bd0bf96a0"
+        },
+        {
+          "path": "media/carousel_eight_20261014/mother_light/card_06.jpg",
+          "sha256": "079ad7a2b179958699412ca934e98c2eaf930ffc405e4b0939a45101e24231e4"
+        }
+      ],
+      "video": {
+        "path": "media/carousel_eight_20261014/mother_light/slideshow.mp4",
+        "sha256": "9b3a75cf6a0150b62fa649cadb9490ed3e60bbde918fd13e6d21cf676a412023"
+      },
+      "caption": "Μερικές αγάπες δεν σβήνουν, ακόμη κι όταν περνούν χρόνια. Μια πρωτότυπη μυθοπλαστική ιστορία για τη μητρική αγάπη και τη συγχώρεση. Εικαστικά AI. Ακολουθήστε με για περισσότερα. #Ιστορίες #Μητέρα #Αγάπη #Συγκίνηση #Συγχώρεση"
+    },
+    {
+      "slug": "breakup_message",
+      "title": "Το μήνυμα που ήρθε αργά",
+      "review_status": "NEEDS_EXACT_VISUAL_AND_VIDEO_REVIEW",
+      "cards": [
+        {
+          "path": "media/carousel_eight_20261014/breakup_message/card_01.jpg",
+          "sha256": "e225fd131671972c437af648eb8b303e6914c8030378d8bb547681e5bcbad5a2"
+        },
+        {
+          "path": "media/carousel_eight_20261014/breakup_message/card_02.jpg",
+          "sha256": "d20d5b54eafc1edb0344c63c642f0cf8346fe6967a27b93e7fa64572d5e64f4c"
+        },
+        {
+          "path": "media/carousel_eight_20261014/breakup_message/card_03.jpg",
+          "sha256": "28b1e6ca7143cbaac06aa86e6a0ca7d8d76a4b6dd4bb1f03aac00a9a2bba5b17"
+        },
+        {
+          "path": "media/carousel_eight_20261014/breakup_message/card_04.jpg",
+          "sha256": "1ce3de6d703a0e2caa601066f0afb0c3ce025e3041073061189de1b2656c040a"
+        },
+        {
+          "path": "media/carousel_eight_20261014/breakup_message/card_05.jpg",
+          "sha256": "a12311402848c2bbeed7d01799440a12aec3f0f7185d49c9a8ea5d223050e297"
+        },
+        {
+          "path": "media/carousel_eight_20261014/breakup_message/card_06.jpg",
+          "sha256": "f2f9933b3036630d11559c88c7be2596e95ae92f0ad61f5b4e93689cf27e71cb"
+        }
+      ],
+      "video": {
+        "path": "media/carousel_eight_20261014/breakup_message/slideshow.mp4",
+        "sha256": "a4d72a5e289badcaf3d1e9c0c920423b50180fb3f4ff2dedb818b7f9aa373db6"
+      },
+      "caption": "Κάποια μηνύματα έρχονται όταν η απόφαση έχει ήδη παρθεί. Μια πρωτότυπη μυθοπλαστική ιστορία για τη σχέση, την απώλεια και τη δεύτερη ευκαιρία. Εικαστικά AI. Ακολουθήστε με για περισσότερα. #Ιστορίες #Χωρισμός #Αγάπη #Σχέσεις #Συγκίνηση"
+    },
+    {
+      "slug": "father_actions",
+      "title": "Ο πατέρας που δεν έλεγε σ’ αγαπώ",
+      "review_status": "NEEDS_EXACT_VISUAL_AND_VIDEO_REVIEW",
+      "cards": [
+        {
+          "path": "media/carousel_eight_20261014/father_actions/card_01.jpg",
+          "sha256": "2dce8d3d167a5d4870ab1c3342084545e696ee4ad88c51d10d568acacdd119bb"
+        },
+        {
+          "path": "media/carousel_eight_20261014/father_actions/card_02.jpg",
+          "sha256": "dd47298d19363535350914f825e41dbeeb41c6119a4bd039f34b0c9c23bd352b"
+        },
+        {
+          "path": "media/carousel_eight_20261014/father_actions/card_03.jpg",
+          "sha256": "8365deead3538ec64fa81d04adc2e47b87be32e789330286f8237a4695ec50e5"
+        },
+        {
+          "path": "media/carousel_eight_20261014/father_actions/card_04.jpg",
+          "sha256": "a378f43632dbf2af7c41987eb56213f1d90d961f289822c10bb3fe316738b6ca"
+        },
+        {
+          "path": "media/carousel_eight_20261014/father_actions/card_05.jpg",
+          "sha256": "ed26afa80c640b2e37f814dd7a1bb853c43a2e0261860d56f8894604e64caa8d"
+        },
+        {
+          "path": "media/carousel_eight_20261014/father_actions/card_06.jpg",
+          "sha256": "36fe60bcc48c09fbe2c45c66c051e2710f5359afcc1264ea00b4030b76221c9f"
+        }
+      ],
+      "video": {
+        "path": "media/carousel_eight_20261014/father_actions/slideshow.mp4",
+        "sha256": "eed72ecbbb367f4e3b508f7fc08efecec52d8493fa8f58e1377148b273d1a1fe"
+      },
+      "caption": "Δεν αγαπούν όλοι με λόγια. Κάποιοι το δείχνουν μέσα από μικρές καθημερινές πράξεις. Πρωτότυπη μυθοπλαστική ιστορία, εικαστικά AI. Ακολουθήστε με για περισσότερα. #Πατέρας #Αγάπη #Οικογένεια #Ιστορίες #Συγκίνηση"
+    },
+    {
+      "slug": "bench_flower",
+      "title": "Το λουλούδι στο παγκάκι",
+      "review_status": "NEEDS_EXACT_VISUAL_AND_VIDEO_REVIEW",
+      "cards": [
+        {
+          "path": "media/carousel_eight_20261014/bench_flower/card_01.jpg",
+          "sha256": "1c3c6ca611bb9ec566be7126ec8420e9a469ccc198a9eb516d2541282deb2606"
+        },
+        {
+          "path": "media/carousel_eight_20261014/bench_flower/card_02.jpg",
+          "sha256": "3c7a489959ad7ec792ec19be7608d5ffcbed745ea85ebfde29f1ccc054a48c05"
+        },
+        {
+          "path": "media/carousel_eight_20261014/bench_flower/card_03.jpg",
+          "sha256": "090e9108f95f031c34eb50d3943e1005905a18a3092f8535ea8df47dd1168f9a"
+        },
+        {
+          "path": "media/carousel_eight_20261014/bench_flower/card_04.jpg",
+          "sha256": "c5319ec09705b8df279cf67ba5d2396c5f00c9409506724fa8794426ba5d7412"
+        },
+        {
+          "path": "media/carousel_eight_20261014/bench_flower/card_05.jpg",
+          "sha256": "72631046d207ed812d55a9e55acca3cadba40655e5b1ce8d457b17e80764c73d"
+        },
+        {
+          "path": "media/carousel_eight_20261014/bench_flower/card_06.jpg",
+          "sha256": "58e97d727a9ed073c5ccabe9a699dbc78e111c9ab67c5c33dd2a87e01e3dfbe6"
+        }
+      ],
+      "video": {
+        "path": "media/carousel_eight_20261014/bench_flower/slideshow.mp4",
+        "sha256": "16b7d8d2468df2e65ac20f5593621a6ad153daaec5ce7f43a89a4849aa559d29"
+      },
+      "caption": "Υπάρχουν μέρη που κρατούν τις πιο πολύτιμες αναμνήσεις μας. Πρωτότυπη μυθοπλαστική ιστορία για την αγάπη και τη μνήμη. Εικαστικά AI. Ακολουθήστε με για περισσότερα. #Αγάπη #Μνήμη #Ιστορίες #Συγκίνηση #Ψυχή"
+    }
+  ],
+  "blockers": []
+}
