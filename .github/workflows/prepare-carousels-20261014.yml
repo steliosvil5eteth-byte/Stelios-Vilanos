@@ -1,0 +1,43 @@
+name: Prepare eight square carousel draft packs
+on:
+  push:
+    paths:
+      - ".github/workflows/prepare-carousels-20261014.yml"
+      - "production/carousel_eight_20261014/request.json"
+      - "production/carousel_eight_20261014/render.py"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  render-drafts:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install imaging and encoding dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install --quiet "pillow>=10,<12" "requests>=2,<3"
+      - name: Render independent final-image candidates and slow slideshow drafts
+        run: |
+          python production/carousel_eight_20261014/render.py
+      - name: Store media for exact human visual and video review
+        uses: actions/upload-artifact@v4
+        with:
+          name: carousel-eight-20261014-qa-drafts
+          path: media/carousel_eight_20261014
+          retention-days: 7
+          if-no-files-found: error
+      - name: Commit media as unpublished drafts only
+        run: |
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git add media/carousel_eight_20261014
+          if ! git diff --cached --quiet; then
+            git commit -m "assets: unpublished carousel media candidates for visual review"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
