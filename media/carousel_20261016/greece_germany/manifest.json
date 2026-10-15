@@ -1,0 +1,355 @@
+{
+  "id": "greece_germany",
+  "title": "Ελλάδα VS Γερμανία: πέρα από τον μισθό",
+  "date": "2026-10-15",
+  "time": null,
+  "brand_id": 7076410,
+  "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+  "cards": [
+    {
+      "path": "greece_germany/card_01.jpg",
+      "sha256": "6b9ab32b7d019197f360ea27856f4779e1e0b81fe8c7e2323af63e29c00bee3c",
+      "copy": {
+        "heading": "ΕΛΛΑΔΑ VS ΓΕΡΜΑΝΙΑ",
+        "body": "Ο μεγαλύτερος μισθός λέει όλη την ιστορία;\nΔέκα κάρτες για τη ζωή στις δύο χώρες.",
+        "note": "Συγκρίσιμα στοιχεία ανά δείκτη, με το έτος τους. Δεν είναι ενιαία κατάταξη χωρών.",
+        "source": "Στοιχεία 2023–2025 · Πηγές στην περιγραφή"
+      },
+      "photograph": "cover_1.jpg"
+    },
+    {
+      "path": "greece_germany/card_02.jpg",
+      "sha256": "b5536b4b2725bffb7d07324ef7230f84d0b8fe9cf47f17fae9ae95aff8494620",
+      "copy": {
+        "heading": "ΜΙΣΘΟΣ · 2024",
+        "label": "Μέση ετήσια μικτή αμοιβή",
+        "gr": "17.954 €",
+        "de": "53.791 €",
+        "note": "Προσαρμογή σε πλήρη απασχόληση. Όχι καθαρά χρήματα στην τσέπη ούτε εγγυημένος μισθός.",
+        "source": "Eurostat · nama_10_fte"
+      },
+      "photograph": "salary_1.jpg"
+    },
+    {
+      "path": "greece_germany/card_03.jpg",
+      "sha256": "b03e4d645caa2e1c434950a06b530a2019105e0c11d3f90f609ca58f3d00b6ed",
+      "copy": {
+        "heading": "ΩΡΕΣ ΕΡΓΑΣΙΑΣ · 2024",
+        "label": "Πραγματικές ώρες ανά εβδομάδα",
+        "gr": "39,8 ώρες",
+        "de": "33,9 ώρες",
+        "note": "Κύρια δουλειά, ηλικίες 20–64, πλήρης ΚΑΙ μερική απασχόληση. Όχι το συμβατικό ωράριο όλων.",
+        "source": "Eurostat · lfsa_ewhan2"
+      },
+      "photograph": "work_office.jpg"
+    },
+    {
+      "path": "greece_germany/card_04.jpg",
+      "sha256": "4eedc04e8ec688a96d287d433b769d022c573ca55da8ceaa8758b433232a67d5",
+      "copy": {
+        "heading": "ΕΠΙΠΕΔΟ ΤΙΜΩΝ · 2025",
+        "label": "Κατανάλωση νοικοκυριών · ΕΕ = 100",
+        "gr": "87,4",
+        "de": "108,3",
+        "note": "Προσωρινός δείκτης τιμών, όχι πληθωρισμός. Οι χαμηλότερες τιμές δεν αρκούν χωρίς σύγκριση εισοδήματος.",
+        "source": "Eurostat / Statistics Norway · προσωρινά 2025"
+      },
+      "photograph": "prices_1.jpg"
+    },
+    {
+      "path": "greece_germany/card_05.jpg",
+      "sha256": "29e05daa1a95c305c2ca5951937f436e27e5a8cc2caead9a5d5e8704cc5b1abb",
+      "copy": {
+        "heading": "ΣΤΕΓΑΣΗ · 2024",
+        "label": "Κόστος στέγασης στο διαθέσιμο εισόδημα",
+        "gr": "36%",
+        "de": "25%",
+        "note": "Μέσο μερίδιο εισοδήματος των νοικοκυριών, με στρογγυλοποίηση. Δεν είναι η μέση τιμή ενοικίου.",
+        "source": "Eurostat · Housing in Europe 2025"
+      },
+      "photograph": "housing_2.jpg"
+    },
+    {
+      "path": "greece_germany/card_06.jpg",
+      "sha256": "1dab6e62367eecb6f9feb0974fc7eac34345d48d74c1d5b2da19886142253977",
+      "copy": {
+        "heading": "ΠΑΙΔΕΙΑ · PISA 2025",
+        "label": "15χρονοι με βασικό επίπεδο στα μαθηματικά",
+        "gr": "50%",
+        "de": "66%",
+        "note": "Επίπεδο 2 και πάνω. Ένας μαθησιακός δείκτης, όχι συνολική βαθμολογία της παιδείας.",
+        "source": "OECD · PISA 2025 · σημειώματα χωρών"
+      },
+      "photograph": "digital_1.jpg"
+    },
+    {
+      "path": "greece_germany/card_07.jpg",
+      "sha256": "1b1ba70dea1beabbc69b51a4f1790db1b324bb83230a8c56a4e3c1974b3f4339",
+      "copy": {
+        "heading": "ΥΓΕΙΑ · 2023",
+        "label": "Προσδόκιμο ζωής στη γέννηση",
+        "gr": "81,8 χρόνια",
+        "de": "81,1 χρόνια",
+        "note": "Και τα δύο φύλα. Επηρεάζεται από πολλούς παράγοντες· δεν είναι βαθμολογία νοσοκομείων.",
+        "source": "OECD · Health at a Glance 2025 · στοιχεία 2023"
+      },
+      "photograph": "health_2.jpg"
+    },
+    {
+      "path": "greece_germany/card_08.jpg",
+      "sha256": "117e22e64620a33d71610cf5fcbd3c9f5e6dd40230dce97c3ea0d65f6d2b1122",
+      "copy": {
+        "heading": "ΟΔΙΚΗ ΑΣΦΑΛΕΙΑ · 2024",
+        "label": "Νεκροί σε τροχαία ανά εκατομμύριο κατοίκων",
+        "gr": "64",
+        "de": "33",
+        "note": "Εδώ το μικρότερο είναι καλύτερο. Ο δείκτης αφορά κατοίκους, όχι χιλιόμετρα οδήγησης ή όλες τις υποδομές.",
+        "source": "Ευρωπαϊκή Επιτροπή · CARE 2024"
+      },
+      "photograph": "roads_1.jpg"
+    },
+    {
+      "path": "greece_germany/card_09.jpg",
+      "sha256": "f63e5358bea3a2512bd57c4e085d198ae788709bd1cce27cb40054f3ccb9883b",
+      "copy": {
+        "heading": "ΨΗΦΙΑΚΗ ΚΑΘΗΜΕΡΙΝΟΤΗΤΑ · 2025",
+        "label": "«Η ψηφιοποίηση κάνει τη ζωή ευκολότερη»",
+        "gr": "78%",
+        "de": "74%",
+        "note": "Γνώμη πολιτών για δημόσιες και ιδιωτικές υπηρεσίες. Όχι αντικειμενικός βαθμός ποιότητας των υπηρεσιών.",
+        "source": "Ειδικό Ευρωβαρόμετρο · Digital Decade 2025"
+      },
+      "photograph": "digital_2.jpg"
+    },
+    {
+      "path": "greece_germany/card_10.jpg",
+      "sha256": "f8cd3788c79174fe3f4924e2515cd30e95fe70f5139333fe9fc71e595cc8675b",
+      "copy": {
+        "heading": "ΔΕΝ ΥΠΑΡΧΕΙ ΜΟΝΟ ΕΝΑΣ ΑΡΙΘΜΟΣ",
+        "body": "Μισθός, σπίτι, χρόνος, υπηρεσίες.\nΤι μετρά περισσότερο στη δική σου ζωή;",
+        "note": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "source": "Πηγές, ορισμοί και άδειες φωτογραφιών στην περιγραφή"
+      },
+      "photograph": "closing_1.jpg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "salary",
+      "url": "https://ec.europa.eu/eurostat/en/web/products-eurostat-news/w/ddn-20251112-1",
+      "dataset": "nama_10_fte",
+      "definition": "2024 annual gross average full-time-adjusted salary per employee, EUR. Greece 17954; Germany 53791. Direct Eurostat API values saved as salary_EL.json and salary_DE.json; not net wages or a job offer."
+    },
+    {
+      "id": "hours",
+      "url": "https://ec.europa.eu/eurostat/de/web/products-eurostat-news/w/ddn-20250514-1",
+      "definition": "2024 actual weekly hours in main job, employed persons aged 20-64, full-time and part-time together. Greece39.8/Germany33.9; not contractual full-time hours or commuting."
+    },
+    {
+      "id": "prices",
+      "url": "https://www.ssb.no/en/priser-og-prisindekser/konsumpriser/statistikk/sammenlikning-av-prisniva-i-europa",
+      "definition": "2025 preliminary household final consumption price-level indices, EU27=100: Greece87.4/Germany108.3. Statistics Norway, source Eurostat, updated19June2026. Not inflation or purchasing power."
+    },
+    {
+      "id": "housing",
+      "url": "https://ec.europa.eu/eurostat/fr/web/interactive-publications/housing-2025",
+      "definition": "2024 housing costs as share of disposable household income. Rounded values Greece36%,Germany25%; not the percentage of households exceeding a40%cost threshold."
+    },
+    {
+      "id": "education",
+      "url": "https://www.oecd.org/en/publications/pisa-2025-results-volume-i-country-notes_2d4ff9ea-en/greece_dd7e428b-en.html",
+      "germany_url": "https://www.oecd.org/de/publications/pisa-2025-ergebnisse-band-i_eade94cd-de/deutschland_8a1ce578-de.html",
+      "definition": "PISA2025, share of15-year-old students reaching at least Level2 in mathematics: Greece50%,Germany66%. Both current OECD country notes verified15Oct2026. Not a comprehensive education ranking."
+    },
+    {
+      "id": "health",
+      "url": "https://www.oecd.org/en/publications/health-at-a-glance-2025_8f9e3f98-en/full-report/indicator-overview-country-dashboards-and-major-trends_368ac397.html",
+      "definition": "2023 life expectancy at birth, both sexes, OECD Health at a Glance2025 dashboard: Greece81.8,Germany81.1years. Not hospital-quality ranking."
+    },
+    {
+      "id": "roads",
+      "url": "https://transport.ec.europa.eu/news-events/news/road-safety-statistics-2024-progress-continues-amid-persistent-challenges-2025-10-17_en",
+      "definition": "2024 road fatalities per million residents: Greece64,Germany33. Population denominator, not distance driven or total infrastructure quality."
+    },
+    {
+      "id": "digital_greece",
+      "url": "https://digital-strategy.ec.europa.eu/en/factpages/greece-2025-digital-decade-country-report",
+      "definition": "SpecialEurobarometer2025:78%ofGreek citizens consider digitisation of public and private services makes life easier. Opinion survey, not objective service-quality score."
+    },
+    {
+      "id": "digital_germany",
+      "url": "https://digital-strategy.ec.europa.eu/en/factpages/germany-2025-digital-decade-country-report",
+      "definition": "Same2025Eurobarometer item:74%ofGerman citizens. Do not interpret the4point difference as statistical significance or an objective country ranking."
+    }
+  ],
+  "photographs": [
+    {
+      "group": "cover",
+      "path": "cover_1.jpg",
+      "title": "File:Attica 06-13 Athens 50 View from Philopappos - Acropolis Hill.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg/1920px-Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "artist": "A.Savin",
+      "description": "View from Philopappos Hill in Athens (Attica, Greece) — Acropolis of Athens",
+      "sha256": "787b5204e2aac59f8061992a2438d4cfe96138ffa2a68e351ac4fcdec1090231",
+      "width": 1920,
+      "height": 1200
+    },
+    {
+      "group": "salary",
+      "path": "salary_1.jpg",
+      "title": "File:Skyline Frankfurt am Main 2015.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Skyline_Frankfurt_am_Main_2015.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Skyline_Frankfurt_am_Main_2015.jpg/1920px-Skyline_Frankfurt_am_Main_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Skyline_Frankfurt_am_Main_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0 de",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "artist": "Christian Wolf (www.c-w-design.de)",
+      "description": "Skyline of Frankfurt am Main, Germany.",
+      "sha256": "abdf92e8603732516f8d3534e9afe85a7cef8a627058db1b9366950fa5494ad0",
+      "width": 1920,
+      "height": 1349
+    },
+    {
+      "path": "work_office.jpg",
+      "title": "File:Working at office (Unsplash).jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Working_at_office_(Unsplash).jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Working_at_office_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "artist": "Javier Quesada quesada179",
+      "description": "Reus, Spain"
+    },
+    {
+      "group": "prices",
+      "path": "prices_1.jpg",
+      "title": "File:Dried fruit at Athens market.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Dried_fruit_at_Athens_market.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Dried_fruit_at_Athens_market.jpg/1920px-Dried_fruit_at_Athens_market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Dried_fruit_at_Athens_market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "artist": "Badseed",
+      "description": "Dried fruit on sale at an Athens Greece  shop, at Athinas street",
+      "sha256": "1177f9bc18ce8de851c2d2e76c45b6fc3f1a43d7da08dab3972bd7b483462a08",
+      "width": 1920,
+      "height": 2030
+    },
+    {
+      "group": "housing",
+      "path": "housing_2.jpg",
+      "title": "File:Apartment building in Athens after 1937.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Apartment_building_in_Athens_after_1937.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Apartment_building_in_Athens_after_1937.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Apartment_building_in_Athens_after_1937.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "artist": "Dimboukas",
+      "description": "An apartment building in central Athens. It was built after 1937 because the bay windows are short. Bay windows in Athens' buildings were reduced from 1.4 m to 40 cm in 1937.",
+      "sha256": "d8ed2337751ee7345af9bea3b9b3443580aafe477760d645b8f7fcbcec51a455",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "group": "digital",
+      "path": "digital_1.jpg",
+      "title": "File:Laptop on desk book stacks (Unsplash).jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Laptop_on_desk_book_stacks_(Unsplash).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Laptop_on_desk_book_stacks_%28Unsplash%29.jpg/1920px-Laptop_on_desk_book_stacks_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Laptop_on_desk_book_stacks_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "artist": "freddie marriage fredmarriage",
+      "description": "freddie marriage 2017",
+      "sha256": "df26203ea9f04b2b1becdcc7cc789dc505861fdf186eecdaebae64b853266de2",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "group": "health",
+      "path": "health_2.jpg",
+      "title": "File:Charité Bettenhochhaus Berlin 2021-04-29 02.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Charit%C3%A9_Bettenhochhaus_Berlin_2021-04-29_02.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Charit%C3%A9_Bettenhochhaus_Berlin_2021-04-29_02.jpg/1920px-Charit%C3%A9_Bettenhochhaus_Berlin_2021-04-29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Charit%C3%A9_Bettenhochhaus_Berlin_2021-04-29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "artist": "Leonhard Lenz",
+      "description": "Charité bed high rise in Berlin.",
+      "sha256": "4b1122ba7098d62954851b136856865148fc2ff3ef837225810a701a578250d4",
+      "width": 1920,
+      "height": 1281
+    },
+    {
+      "group": "roads",
+      "path": "roads_1.jpg",
+      "title": "File:08 Highway near Frankfurt, Germany - Autobahn 5 - Bundesautobahn A5.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:08_Highway_near_Frankfurt,_Germany_-_Autobahn_5_-_Bundesautobahn_A5.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/08_Highway_near_Frankfurt%2C_Germany_-_Autobahn_5_-_Bundesautobahn_A5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/08_Highway_near_Frankfurt%2C_Germany_-_Autobahn_5_-_Bundesautobahn_A5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "artist": "Marek Ślusarczyk (Tupungato) Photo portfolio",
+      "description": "A5 highway (Autobahn 5 or Bundesautobahn A5) near Frankfurt, Germany.",
+      "sha256": "f38754fc33ad157767deec201a8686e99ab9c2ab8d3cdc144f9a4328c64dd46c",
+      "width": 1625,
+      "height": 1084
+    },
+    {
+      "group": "digital",
+      "path": "digital_2.jpg",
+      "title": "File:Computer mouse laptop and phone on a desk.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Computer_mouse_laptop_and_phone_on_a_desk.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Computer_mouse_laptop_and_phone_on_a_desk.jpg/1920px-Computer_mouse_laptop_and_phone_on_a_desk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Computer_mouse_laptop_and_phone_on_a_desk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "artist": "Enoch Leung",
+      "description": "A laptop computer along with a telephone and a computer mouse setting on a desk",
+      "sha256": "ded6d54288f685f61e12bd560cd246a20d851721cae815f58988624ee067d017",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "group": "closing",
+      "path": "closing_1.jpg",
+      "title": "File:Thessaloniki beach promenade.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Thessaloniki_beach_promenade.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Thessaloniki_beach_promenade.jpg/1920px-Thessaloniki_beach_promenade.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Thessaloniki_beach_promenade.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "artist": "Johannesjom",
+      "description": "Air photo with view of Thessaloniki from the sea",
+      "sha256": "de45ac75c6899d715bc68026b564dd8fdb5f0936b41f4c7830d3555452587ebf",
+      "width": 1920,
+      "height": 762
+    }
+  ],
+  "reservation_token": "cf0080df-7787-48b4-bf2a-f41d0f7263b0",
+  "publication_requested_before": "2026-10-16T00:00:00+03:00",
+  "youtube_video": {
+    "path": "greece_germany/youtube_vertical.mp4",
+    "sha256": "aae79c120f7cf67006ad27ff9c3565250618630c16db8e64ed49379cf7915604",
+    "duration_seconds": 160,
+    "card_durations": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    "audio_streams": 0,
+    "width": 1080,
+    "height": 1920
+  },
+  "caption": "Ο μεγαλύτερος μισθός λέει όλη την ιστορία;\n\nΕλλάδα VS Γερμανία: ένα καρουζέλ δέκα καρτών για αποδοχές, εργασία, τιμές, στέγαση, παιδεία, υγεία, οδική ασφάλεια και ψηφιακή καθημερινότητα. Κάθε δείκτης έχει το δικό του έτος (2023–2025) και τον ορισμό του. Δεν είναι συνολική κατάταξη χωρών ή προσωπική οικονομική συμβουλή.\n\nΠοιος παράγοντας μετρά περισσότερο για εσένα;\n\nΠηγές: Eurostat, OECD/Destatis, Ευρωπαϊκή Επιτροπή, Ευρωβαρόμετρο. Αναλυτικοί ορισμοί, πρωτογενείς σύνδεσμοι και άδειες πραγματικών φωτογραφιών: https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/main/media/carousel_20261016/greece_germany/SOURCES.md\n\nΟι φωτογραφίες είναι εικονογραφική συνοδεία, όχι απόδειξη των στατιστικών ή τρέχουσες τιμές καταστημάτων. Δεν είναι εικόνες παραγόμενες με AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ελλάδα #Γερμανία #ΚόστοςΖωής #Καθημερινότητα #ΙστορίεςΠουΜαςΑγγίζουν"
+}
