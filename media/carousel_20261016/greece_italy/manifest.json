@@ -1,0 +1,396 @@
+{
+  "id": "greece_italy",
+  "title": "Ελλάδα VS Ιταλία: πέρα από τα στερεότυπα",
+  "date": "2026-10-16",
+  "time": "18:30",
+  "timezone": "Europe/Athens",
+  "brand_id": 7076410,
+  "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+  "fingerprint": "greece_vs_country|italy|salary_hours_prices_housing_education_health_roads_digital",
+  "cards": [
+    {
+      "path": "greece_italy/card_01.jpg",
+      "sha256": "79a2141e5b31066dcebec4dc3f19554dbb3f463ea8c271813d89b21eae09d21c",
+      "copy": {
+        "heading": "ΕΛΛΑΔΑ VS ΙΤΑΛΙΑ",
+        "body": "Ο μισθός δεν λέει όλη την ιστορία.\n8 δείκτες, χωρίς στερεότυπα.",
+        "note": "Δέκα κάρτες με συγκρίσιμα στοιχεία ανά δείκτη και το έτος τους. Δεν είναι ενιαία κατάταξη χωρών.",
+        "source": "Στοιχεία 2022–2025 · Πηγές στην περιγραφή"
+      },
+      "photo": "cover_1.jpg",
+      "layout": {
+        "heading_font": 45,
+        "body_font": 47,
+        "note_font": 35
+      },
+      "duration_seconds": 16
+    },
+    {
+      "path": "greece_italy/card_02.jpg",
+      "sha256": "51f3b0a1cc43f21e1e7796080d5fc4bd5eac919a2c90af42de6442397aaadc4f",
+      "copy": {
+        "heading": "ΜΙΣΘΟΣ · 2024",
+        "label": "Μέση ετήσια μικτή αμοιβή",
+        "gr": "17.954 €",
+        "it": "33.523 €",
+        "note": "Προσαρμογή σε πλήρη απασχόληση. Όχι καθαρά χρήματα στην τσέπη ούτε εγγυημένος μισθός.",
+        "source": "Eurostat · nama_10_fte"
+      },
+      "photo": "salary_1.jpg",
+      "layout": {
+        "heading_font": 45,
+        "label_font": 37,
+        "note_font": 34
+      },
+      "duration_seconds": 16
+    },
+    {
+      "path": "greece_italy/card_03.jpg",
+      "sha256": "256a195cb7ce1aeec162b4e55a53472d795065d13a637c27a940dae5a4270b1c",
+      "copy": {
+        "heading": "ΩΡΕΣ ΕΡΓΑΣΙΑΣ · 2024",
+        "label": "Πραγματικές ώρες ανά εβδομάδα",
+        "gr": "39,8 ώρες",
+        "it": "36,1 ώρες",
+        "note": "Κύρια δουλειά, ηλικίες 20–64, πλήρης ΚΑΙ μερική απασχόληση. Όχι το συμβατικό ωράριο όλων.",
+        "source": "Eurostat · lfsa_ewhan2"
+      },
+      "photo": "hours_2.jpg",
+      "layout": {
+        "heading_font": 45,
+        "label_font": 37,
+        "note_font": 34
+      },
+      "duration_seconds": 16
+    },
+    {
+      "path": "greece_italy/card_04.jpg",
+      "sha256": "861addad03c22eb41894b370aefd44676c074c86166ec626a0bc45caa29e915b",
+      "copy": {
+        "heading": "ΕΠΙΠΕΔΟ ΤΙΜΩΝ · 2024",
+        "label": "Κατανάλωση νοικοκυριών · ΕΕ = 100",
+        "gr": "86,5",
+        "it": "97,0",
+        "note": "Προσωρινός δείκτης τιμών, όχι πληθωρισμός. Χαμηλότερες τιμές δεν σημαίνουν από μόνες τους μεγαλύτερη άνεση.",
+        "source": "Eurostat / NSI · στοιχεία 17.12.2025"
+      },
+      "photo": "prices_2.jpg",
+      "layout": {
+        "heading_font": 45,
+        "label_font": 37,
+        "note_font": 34
+      },
+      "duration_seconds": 16
+    },
+    {
+      "path": "greece_italy/card_05.jpg",
+      "sha256": "fec5326d7a59d7b3f8b3370d558433daaa121f53a5e92a1bda23ef2da2ef8e4e",
+      "copy": {
+        "heading": "ΣΤΕΓΑΣΗ · 2024",
+        "label": "Κόστος στέγασης στο διαθέσιμο εισόδημα",
+        "gr": "35,5%",
+        "it": "13,6%",
+        "note": "Για το σύνολο των νοικοκυριών, όχι μόνο ενοικιαστές. Δεν είναι η μέση τιμή ενοικίου.",
+        "source": "Eurostat · ilc_mded01"
+      },
+      "photo": "housing_final.jpg",
+      "layout": {
+        "heading_font": 45,
+        "label_font": 37,
+        "note_font": 34
+      },
+      "duration_seconds": 16
+    },
+    {
+      "path": "greece_italy/card_06.jpg",
+      "sha256": "7f18a0fdb97e2ee8f0398a58738cbe4289af92d46342c0cee3541229bcf64b71",
+      "copy": {
+        "heading": "ΠΑΙΔΕΙΑ · PISA 2022",
+        "label": "Μαθηματικά · μέση επίδοση 15χρονων",
+        "gr": "430 μονάδες",
+        "it": "471 μονάδες",
+        "note": "Ένας συγκεκριμένος μαθησιακός δείκτης. Δεν βαθμολογεί ολόκληρη την παιδεία ή τα πανεπιστήμια.",
+        "source": "OECD · PISA 2022"
+      },
+      "photo": "education_final.jpg",
+      "layout": {
+        "heading_font": 45,
+        "label_font": 37,
+        "note_font": 34
+      },
+      "duration_seconds": 16
+    },
+    {
+      "path": "greece_italy/card_07.jpg",
+      "sha256": "93fd5aea1a0ca2e7300517ad095fee4a000509115d3806e08318c4c9d3578deb",
+      "copy": {
+        "heading": "ΥΓΕΙΑ · 2023",
+        "label": "Προσδόκιμο ζωής στη γέννηση",
+        "gr": "81,6 χρόνια",
+        "it": "83,8 χρόνια",
+        "note": "Και τα δύο φύλα. Επηρεάζεται από πολλούς παράγοντες· δεν είναι βαθμολογία νοσοκομείων.",
+        "source": "Eurostat · Ευρωπαϊκή Επιτροπή / K4P"
+      },
+      "photo": "health_final.jpg",
+      "layout": {
+        "heading_font": 45,
+        "label_font": 37,
+        "note_font": 34
+      },
+      "duration_seconds": 16
+    },
+    {
+      "path": "greece_italy/card_08.jpg",
+      "sha256": "0e6c41cc4451f83d34c2a156b3a70a24c03d9826d96eceb0bed47ac1dcd1d484",
+      "copy": {
+        "heading": "ΟΔΙΚΗ ΑΣΦΑΛΕΙΑ · 2024",
+        "label": "Νεκροί σε τροχαία ανά εκατομμύριο κατοίκων",
+        "gr": "64",
+        "it": "51",
+        "note": "Εδώ το μικρότερο είναι καλύτερο. Μετρά κατοίκους, όχι χιλιόμετρα οδήγησης ή το σύνολο των υποδομών.",
+        "source": "Ευρωπαϊκή Επιτροπή · CARE 2024"
+      },
+      "photo": "roads_2.jpg",
+      "layout": {
+        "heading_font": 45,
+        "label_font": 37,
+        "note_font": 34
+      },
+      "duration_seconds": 16
+    },
+    {
+      "path": "greece_italy/card_09.jpg",
+      "sha256": "6e783ffb92e62be01ab469b53717780637c795e15688f5dc19addda515d849a5",
+      "copy": {
+        "heading": "ΨΗΦΙΑΚΕΣ ΥΠΗΡΕΣΙΕΣ · 2025",
+        "label": "«Η ψηφιοποίηση κάνει τη ζωή ευκολότερη»",
+        "gr": "78%",
+        "it": "73%",
+        "note": "Γνώμη πολιτών για δημόσιες και ιδιωτικές υπηρεσίες. Όχι αντικειμενικός βαθμός ποιότητας υπηρεσιών.",
+        "source": "Ειδικό Ευρωβαρόμετρο · Digital Decade 2025"
+      },
+      "photo": "digital_1.jpg",
+      "layout": {
+        "heading_font": 45,
+        "label_font": 37,
+        "note_font": 34
+      },
+      "duration_seconds": 16
+    },
+    {
+      "path": "greece_italy/card_10.jpg",
+      "sha256": "ed171a2114619c40189086350b0bbe316dcb01b0d276c34c31b5e9849a6016f7",
+      "copy": {
+        "heading": "ΤΙ ΜΕΤΡΑ ΠΕΡΙΣΣΟΤΕΡΟ ΓΙΑ ΣΕΝΑ;",
+        "body": "Μισθός, σπίτι, χρόνος, υπηρεσίες — και οι άνθρωποί σου.\nΤι θα έβαζες πρώτο;",
+        "note": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "source": "Ορισμοί, πηγές και άδειες στην περιγραφή"
+      },
+      "photo": "closing_final.jpg",
+      "layout": {
+        "heading_font": 45,
+        "body_font": 47,
+        "note_font": 35
+      },
+      "duration_seconds": 16
+    }
+  ],
+  "sources": [
+    {
+      "id": "salary",
+      "url": "https://ec.europa.eu/eurostat/en/web/products-eurostat-news/w/ddn-20251112-1",
+      "dataset": "nama_10_fte",
+      "definition": "2024 annual gross average full-time-adjusted salary per employee, EUR. Greece17954,Italy33523. Direct Eurostat API responses retained in italy_sources. Not net monthly pay, median salary or a job offer."
+    },
+    {
+      "id": "hours",
+      "url": "https://ec.europa.eu/eurostat/de/web/products-eurostat-news/w/ddn-20250514-1",
+      "dataset": "lfsa_ewhan2",
+      "definition": "2024 actual weekly working hours in main job, employed persons aged20-64, all NACE activities, both sexes, full-time and part-time together. Greece39.8,Italy36.1. Not contracted full-time hours or commuting time."
+    },
+    {
+      "id": "prices",
+      "url": "https://www.nsi.bg/index.php/en/statistical-data/109/360",
+      "definition": "2024 household final consumption expenditure price-level index,EU27=100. Greece86.5,Italy97.0. Preliminary Eurostat PPP snapshot17Dec2025 displayed by NSI. Not inflation and not a specific household budget. Not claimed to be the latest2026price levels."
+    },
+    {
+      "id": "housing",
+      "url": "https://ec.europa.eu/eurostat/databrowser/view/ilc_mded01/default/table?lang=en",
+      "dataset": "ilc_mded01",
+      "definition": "2024 share of housing costs in disposable household income; hhcompTOTAL,rskpovthTOTAL,unitPC. Greece35.5%,Italy13.6%. Exact direct-API values. Not average rent, only renters, or percentage of households exceeding40%costs."
+    },
+    {
+      "id": "education",
+      "url": "https://www.oecd.org/en/publications/pisa-2022-results-volume-i_53f23881-en/full-report/overview-of-performance-trends_ae540546.html",
+      "definition": "OECD PISA2022 mathematics mean score among15-year-old students: Greece430,Italy471, rounded to whole points. Country snapshot tables. Not an overall ranking of schools, education systems or universities."
+    },
+    {
+      "id": "health",
+      "url": "https://knowledge4policy.ec.europa.eu/health-promotion-knowledge-gateway/health-inequalities-rates-1_en",
+      "definition": "Eurostat2023 life expectancy at birth, both sexes: Greece81.6years,Italy83.8years. The first table column is explicitly2023. Multiple determinants; not a score of hospital quality."
+    },
+    {
+      "id": "roads",
+      "url": "https://transport.ec.europa.eu/news-events/news/road-safety-statistics-2024-progress-continues-amid-persistent-challenges-2025-10-17_en",
+      "definition": "Final2024 road deaths per million residents: Greece64,Italy51. Denominator is population, not distance driven. Does not rank all infrastructure."
+    },
+    {
+      "id": "digital_greece",
+      "url": "https://digital-strategy.ec.europa.eu/en/factpages/greece-2025-digital-decade-country-report",
+      "definition": "Special Eurobarometer Digital Decade2025:78%of Greek citizens say digitalisation of public and private services makes life easier. Opinion survey, not an objective service-quality score."
+    },
+    {
+      "id": "digital_italy",
+      "url": "https://digital-strategy.ec.europa.eu/en/factpages/italy-2025-digital-decade-country-report",
+      "definition": "Same2025Eurobarometer item:73%of Italian citizens. No claim of statistical significance or objective country ranking."
+    }
+  ],
+  "photographs": [
+    {
+      "group": "cover",
+      "path": "cover_1.jpg",
+      "title": "File:Colosseum in Rome-April 2007-1- copie 2B.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Colosseum_in_Rome-April_2007-1-_copie_2B.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Colosseum_in_Rome-April_2007-1-_copie_2B.jpg/1920px-Colosseum_in_Rome-April_2007-1-_copie_2B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Colosseum_in_Rome-April_2007-1-_copie_2B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Diliff",
+      "license": "CC BY-SA 2.5",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+      "description": "A 4×4 segment panorama of the Colosseum at dusk. Taken by myself with a Canon 5D and 50mm f/1.8 lens at f/5.6.",
+      "sha256": "af12ee3de27fe0fb612242729593a3192009b1b0b4916acf75517cee3f21cb63"
+    },
+    {
+      "group": "salary",
+      "path": "salary_1.jpg",
+      "title": "File:Milan skyline skyscrapers of Porta Nuova business district.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Milan_skyline_skyscrapers_of_Porta_Nuova_business_district.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Milan_skyline_skyscrapers_of_Porta_Nuova_business_district.jpg/1920px-Milan_skyline_skyscrapers_of_Porta_Nuova_business_district.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Milan_skyline_skyscrapers_of_Porta_Nuova_business_district.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Francesco Ungaro",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Picture showing the skyline of Milan.",
+      "sha256": "67aba06db2f5512764592c6e6dfacb6e5bd543a371c8a56a3280d717ff88c8f0"
+    },
+    {
+      "group": "hours",
+      "path": "hours_2.jpg",
+      "title": "File:Roma Termini - Platform 02.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Roma_Termini_-_Platform_02.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Roma_Termini_-_Platform_02.jpg/1920px-Roma_Termini_-_Platform_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Roma_Termini_-_Platform_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Mint0ri",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Frecciarossa trains parked at platforms at Termini station. The one in the back is an ETR-1000 class while the one in front is an ETR-500.40 class.",
+      "sha256": "207a679e2acfd6edc0e65f43b5a11b03e11fc20cb2f7440e92a13581872ea424"
+    },
+    {
+      "group": "prices",
+      "path": "prices_2.jpg",
+      "title": "File:Fruit and vegetables at the central market in Florence (16636908459).jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Fruit_and_vegetables_at_the_central_market_in_Florence_(16636908459).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Fruit_and_vegetables_at_the_central_market_in_Florence_%2816636908459%29.jpg/1920px-Fruit_and_vegetables_at_the_central_market_in_Florence_%2816636908459%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Fruit_and_vegetables_at_the_central_market_in_Florence_%2816636908459%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Winniepix",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "description": "Fruit and vegetables at the central market in Florence",
+      "sha256": "0a8a0cd579fb786c1ca6b90964710c7faccf777d7c6039c88aa2ab87654ae883"
+    },
+    {
+      "path": "housing_final.jpg",
+      "title": "File:Aigyptou Square Athens.JPG",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Aigyptou_Square_Athens.JPG",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/00/Aigyptou_Square_Athens.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Dimboukas",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "description": "Aigyptou Square, Athens. Two apartment buildings are shown; Savvidis's apartment building (left) designed in 1934 by architect Nikolaos Nikolaidis (1891–1967) in the then fashionable \"modern,\" \"rationalist,\" or \"cubist\" style; and an apartment building (right) built in the 1950s, possibly designed by architect Emmanouil Vourekas according to \"classicizing modernism,\" or \"simplified classicism,\" as it is referred to in Greek bibliography, and which was popular for many apartment buildings between 1950–1960.",
+      "sha256": "9ed55f7d0c9c7559990c7dfdb1e425bbbdff0c8faa0628dfd3b1be6cf1844852"
+    },
+    {
+      "path": "education_final.jpg",
+      "title": "File:Bologna, Biblioteca Salaborsa.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Bologna,_Biblioteca_Salaborsa.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Bologna%2C_Biblioteca_Salaborsa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Palickap",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Urban Center Bologna, Italy. Urban Center Bologna, Itálie.Library.",
+      "sha256": "ee095149c0fa84e5fd4b3d923c7ad1e1aab584e73503844391cb7b77e498eef6"
+    },
+    {
+      "path": "health_final.jpg",
+      "title": "File:Amalia Fleming hospital Athens.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Amalia_Fleming_hospital_Athens.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Amalia_Fleming_hospital_Athens.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Badseed",
+      "license": "CC BY-SA 3.0",
+      "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+      "description": "The Amalia Fleming Hospital (Νοσοκομείο Αμαλία Φλέμινγκ) in Athens.",
+      "sha256": "4c7028b34ce4796dc2c7cbe04ee21a761af10d5df59ac320fa3916072a37b448"
+    },
+    {
+      "group": "roads",
+      "path": "roads_2.jpg",
+      "title": "File:Castagnole delle Lanze, veduta aerea con Tanaro.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Castagnole_delle_Lanze,_veduta_aerea_con_Tanaro.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Castagnole_delle_Lanze%2C_veduta_aerea_con_Tanaro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Castagnole_delle_Lanze%2C_veduta_aerea_con_Tanaro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Starnutoditopo",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Veduta aerea dell'ansa del Tanaro, presso Castagnole delle Lanze e Motta di Costigliole d'Asti, con il viadotto della ferrovia e quello dell'autostrada",
+      "sha256": "13076e58dd876c2f1761abf38769421fc851f4c4f0544065075a5f1614d12331"
+    },
+    {
+      "group": "digital",
+      "path": "digital_1.jpg",
+      "title": "File:Gadgets on a desk (Unsplash).jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Gadgets_on_a_desk_(Unsplash).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Gadgets_on_a_desk_%28Unsplash%29.jpg/1920px-Gadgets_on_a_desk_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Gadgets_on_a_desk_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Niklas Veenhuis niklasveenhuis",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Vidbo, Sweden",
+      "sha256": "34574f672d211c0f628dcd7d7908597cde9dcde79e7bd3f591be34f7eeb4584b"
+    },
+    {
+      "path": "closing_final.jpg",
+      "title": "File:Golfo de Patras 01.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Golfo_de_Patras_01.jpg",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Golfo_de_Patras_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "LBM1948",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Patras Gulf from the southern shore; on the background, Mount Giona (Aetolia, Greece)",
+      "sha256": "f644cfb74b7914fc4f2fc7446e399d91ca10bef5b13bf939374de8c09b407f5e"
+    }
+  ],
+  "real_photographs": true,
+  "is_ai_generated_visuals": false,
+  "youtube_video": {
+    "path": "greece_italy/youtube_vertical.mp4",
+    "sha256": "9e3f848752483eb0e6d459c6966918b336fff569ef6e888e14320307c28baf5a",
+    "duration_seconds": 160,
+    "card_durations": [
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16,
+      16
+    ],
+    "audio_streams": 0,
+    "width": 1080,
+    "height": 1920,
+    "fps": 24
+  },
+  "caption": "Ο μισθός δεν λέει όλη την ιστορία.\n\nΕλλάδα VS Ιταλία: δέκα κάρτες για αποδοχές, εργασία, τιμές, στέγαση, παιδεία, υγεία, οδική ασφάλεια και ψηφιακές υπηρεσίες. Κάθε ζεύγος αφορά τον ίδιο δείκτη και έτος. Τα στοιχεία είναι 2022–2025, όχι ισχυρισμός σημερινών τιμών ή συνολική κατάταξη χωρών.\n\nΠοιος παράγοντας μετρά περισσότερο για εσένα;\n\nΠηγές: Eurostat, OECD, Ευρωπαϊκή Επιτροπή, Ειδικό Ευρωβαρόμετρο. Αναλυτικοί ορισμοί και άδειες πραγματικών φωτογραφιών: https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/blob/main/media/carousel_20261016/greece_italy/SOURCES.md\n\nΟι φωτογραφίες είναι εικονογραφική συνοδεία και δεν αποδεικνύουν τα στατιστικά ή τρέχουσες τιμές καταστημάτων. Δεν είναι εικόνες παραγόμενες με AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ελλάδα #Ιταλία #ΚόστοςΖωής #Καθημερινότητα #ΙστορίεςΠουΜαςΑγγίζουν"
+}
