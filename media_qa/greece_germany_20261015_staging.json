@@ -2,7 +2,7 @@
   "package_id": "greece_germany",
   "verification": "TECHNICAL_STAGING_AND_TIMELINE_ONLY",
   "visual_review_reference": "state/daily_delivery/greece_germany_20261015.json",
-  "checked_at": "2026-10-15T20:32:14.014932+00:00",
+  "checked_at": "2026-10-15T20:39:49.575650+00:00",
   "native": [
     {
       "index": 1,
@@ -88,5 +88,29 @@
   },
   "pass": false,
   "does_not_create_or_publish": true,
-  "error": ""
+  "previous_incomplete_result": {
+    "error": "",
+    "youtube": {
+      "url": "https://static.metricool.com/planner/202610/7000636-file-14959495777782119582.mp4",
+      "sha256": "aae79c120f7cf67006ad27ff9c3565250618630c16db8e64ed49379cf7915604",
+      "exact_match": true,
+      "duration_seconds": 160.0,
+      "width": 1080,
+      "height": 1920,
+      "audio_streams": 0,
+      "audio_review": "NOT_APPLICABLE_NO_AUDIO_STREAM",
+      "full_decode_error_free": false
+    }
+  },
+  "reference_checks": [
+    {
+      "card": 1,
+      "expected": "a830c2fd482861458d8f75b9b8a5bee76497e13af8a2de7ce6c1e41d9886dd19",
+      "actual": "9855a1600abf5f50d340d31345cf5850d72d9a0a7b656393cd3d32853141352e",
+      "match": false
+    }
+  ],
+  "progress": "reference_1",
+  "error": "AssertionError('Reference1 hash differs: 9855a1600abf5f50d340d31345cf5850d72d9a0a7b656393cd3d32853141352e != a830c2fd482861458d8f75b9b8a5bee76497e13af8a2de7ce6c1e41d9886dd19')",
+  "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 36, in <module>\nAssertionError: Reference1 hash differs: 9855a1600abf5f50d340d31345cf5850d72d9a0a7b656393cd3d32853141352e != a830c2fd482861458d8f75b9b8a5bee76497e13af8a2de7ce6c1e41d9886dd19\n"
 }
