@@ -1,0 +1,20 @@
+{
+  "package_id": "greece_germany",
+  "technical_only": true,
+  "pass": false,
+  "references": [
+    {
+      "card": 1,
+      "original_file_sha256": "9855a1600abf5f50d340d31345cf5850d72d9a0a7b656393cd3d32853141352e",
+      "expected_inspected_rgb_sha256": "c55fbc600a18e1469be24a1841f9b707f03143499067679f13656b4f5ab2d2da",
+      "original_rgb_sha256": "ef6ca816a2e03dd99b84e0262552768b8accd3dd96b9d37800c54e92248e54e0",
+      "identical_pixels": false,
+      "width": 1080,
+      "height": 1920
+    }
+  ],
+  "checked_at": "2026-10-15T20:42:03.139145+00:00",
+  "explanation": "Downloaded encoded JPEG references differ in file bytes from Google Slides-exported images actually inspected. Pixel identity is tested, never assumed. If pixels differ this check cannot establish final visual clearance.",
+  "error": "FileNotFoundError(2, 'No such file or directory')",
+  "traceback": "Traceback (most recent call last):\n  File \"<stdin>\", line 19, in <module>\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/subprocess.py\", line 466, in check_output\n    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/subprocess.py\", line 548, in run\n    with Popen(*popenargs, **kwargs) as process:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/subprocess.py\", line 1026, in __init__\n    self._execute_child(args, executable, preexec_fn, close_fds,\n  File \"/opt/hostedtoolcache/Python/3.12.15/x64/lib/python3.12/subprocess.py\", line 1955, in _execute_child\n    raise child_exception_type(errno_num, err_msg, err_filename)\nFileNotFoundError: [Errno 2] No such file or directory: 'ffmpeg'\n"
+}
