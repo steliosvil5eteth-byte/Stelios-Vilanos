@@ -1,0 +1,49 @@
+name: Greece Italy exact review candidates 20261016
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/carousel-20261016-italy-render.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: carousel-20261016-italy-render
+  cancel-in-progress: false
+jobs:
+  render-only:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            production/carousel_20261016
+            media/carousel_20261016/italy_sources
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install Pillow==11.3.0
+      - name: Render only; no auto-approval or publication
+        run: python production/carousel_20261016/build_italy.py
+      - name: Save exact review files
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: greece-italy-20261016-exact-final-candidates
+          path: media/carousel_20261016/greece_italy
+          retention-days: 2
+          if-no-files-found: error
+      - name: Commit candidate media without release clearance
+        run: |
+          git config user.name 'carousel-media-builder'
+          git config user.email 'actions@users.noreply.github.com'
+          git add --sparse -f media/carousel_20261016/greece_italy
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Store Greece Italy ten-card and full-video candidates; exact final QA required'
+          git pull --rebase origin main
+          git push origin HEAD:main
