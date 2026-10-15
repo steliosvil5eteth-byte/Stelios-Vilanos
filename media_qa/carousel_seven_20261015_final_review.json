@@ -1,0 +1,35 @@
+{
+  "brand_id":7076410,
+  "reviewed_at":"2026-10-15T21:12:00+03:00",
+  "status":"PASSED_FINAL_REVIEW",
+  "scope":"Exact 42 JPEG cards and seven video files named in the immutable manifest; not previously published external variants",
+  "media_commit":"412f691dc843ac4b593804f613559edd18bfb980",
+  "manifest_path":"media/carousel_repair_20261015/manifest.json",
+  "manifest_sha256":"1e83fa712ebd15007c5f68a0c42642bf421610a44b3bcda08c145ab7237d4ee4",
+  "artifact_id":11996227953,
+  "artifact_sha256":"5dde21e5ae815d8d013bca8d97d62c5cccfaa208fb1761f45527bea456c31f07",
+  "slugs":["cancer_aries","virgo_sagittarius","pisces_capricorn","mother_light","breakup_message","father_actions","bench_flower"],
+  "review_evidence":{
+    "downloaded_exact_artifact":true,
+    "every_media_hash_matched_manifest":true,
+    "all_42_final_cards_visually_inspected":true,
+    "method":"Seven contact sheets of exact final JPEGs were visually opened and read, after previous source-image review. The father_actions sheet was reopened as PNG. Every final MP4 was actually decoded at 5.5,16.5,27.5,38.5,49.5,60.5 and 65.95 seconds; seven contact sheets from the decoded MP4 frames and a separate ending/CTA sheet were visually opened and read. Approval does not rely on renderer success or source metadata alone.",
+    "greek_text_spelling_and_sequence":"passed",
+    "image_relevance_photorealism_and_variation":"passed",
+    "square_cards":"1080x1080; six per post; ordered 1/6 through 6/6",
+    "cta":"Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+    "disclosure":"AI badge on every card; entertainment-astrology or fiction badge as appropriate; caption disclosures and supported native fields required",
+    "youtube":"1080x1920 H264 yuv420p, full uncropped 1080 square cards; 66 seconds, 11 seconds per card, 24fps",
+    "video_audio":"All seven files have zero audio streams; no narration, no music, no avatar. No listening to nonexistent audio claimed.",
+    "native_delivery":"Facebook and Instagram POST photos, TikTok native photos autoAddMusic=true; never substitute MP4 for native carousel"
+  },
+  "history_check":{
+    "repository_history_items_reviewed":93,
+    "exact_titles_slugs_and_media_duplicates_in_history":0,
+    "notion_fresh_exact_seven_title_and_created_since_20261015_query_rows":0,
+    "metricool_observed":"cancer_aries and virgo_sagittarius already PUBLISHED on Facebook,Instagram,TikTok. Exclude those six destinations. leo_scorpio already published on all four platforms on Oct14 and is excluded entirely.",
+    "release_rule":"Refresh live Metricool, Notion and repository history before each create; any new duplicate or concurrent reservation overrides this review. Review is not a blanket publishing permit or evidence of PUBLISHED status."
+  },
+  "daily_program_from_20261016":{"zodiac":4,"stories":4,"greece_vs_country":1,"logical_posts":9,"zodiac_story_cards":6,"comparison_cards":10,"shared_four_networks":true},
+  "spend":"Existing images reused; local/public standard runner rendering only; no generation calls, credit purchase or subscription upgrade."
+}
