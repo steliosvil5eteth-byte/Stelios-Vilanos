@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-16", "timezone": "Europe/Athens", "brand_id": 7076410,
+  "program_id": "CAROUSEL_FOUR_FOUR_ONE_20261016", "session_owner": "interactive-20261015-tomorrow-queue",
+  "status": "PREPARING_NOT_RELEASE_APPROVED", "passed_final_review": false,
+  "history_check": {"metricool_tomorrow": "live empty before reservation", "notion": "Fresh supported view, structured rows and focused SQL reads succeeded; no duplicate target ascendant pairings or proposed plots. Existing pottery story rejected and replaced with sister-photo reconciliation.", "repository_content_history_blob": "6f5a961a05f13d0e5d2c1ea5e7c265c1e2d820f2", "repository_local_snapshot_verified_matches_live_blob": true},
+  "packages": [
+    {"id":"taurus_aquarius","time":"07:00","title":"Ταύρος με ωροσκόπο Υδροχόο","fingerprint":"zodiac_ascendant|taurus_aquarius|roots_not_chains","cards":6,"status":"PREPARING"},
+    {"id":"guitar_home","time":"09:00","title":"Η κιθάρα που γύρισε σπίτι","fingerprint":"emotional_fiction|father_sells_guitar_for_adult_daughter_lessons_daughter_recovers_instrument_duet","cards":6,"status":"PREPARING"},
+    {"id":"gemini_capricorn","time":"11:00","title":"Δίδυμοι με ωροσκόπο Αιγόκερω","fingerprint":"zodiac_ascendant|gemini_capricorn|many_ideas_one_plan","cards":6,"status":"PREPARING"},
+    {"id":"first_day_shoes","time":"13:00","title":"Τα παπούτσια της πρώτης μέρας","fingerprint":"emotional_fiction|cobbler_repairs_interview_shoes_free_woman_pays_forward","cards":6,"status":"PREPARING"},
+    {"id":"libra_aries","time":"15:00","title":"Ζυγός με ωροσκόπο Κριό","fingerprint":"zodiac_ascendant|libra_aries|kindness_and_assertiveness","cards":6,"status":"PREPARING"},
+    {"id":"sisters_photo","time":"17:00","title":"Η φωτογραφία που δεν πέταξε","fingerprint":"emotional_fiction|estranged_adult_sisters_taped_holiday_photo_reconciliation_new_photo","cards":6,"status":"PREPARING"},
+    {"id":"greece_germany","time":"18:30","title":"Ελλάδα VS Γερμανία: πέρα από τον μισθό","fingerprint":"greece_vs_country|germany|salary_hours_prices_housing_education_health_roads_digital","cards":10,"status":"RESEARCH_REQUIRED"},
+    {"id":"sagittarius_pisces","time":"20:00","title":"Τοξότης με ωροσκόπο Ιχθύες","fingerprint":"zodiac_ascendant|sagittarius_pisces|freedom_and_empathy","cards":6,"status":"PREPARING"},
+    {"id":"bus_waited","time":"22:00","title":"Το λεωφορείο που περίμενε","fingerprint":"emotional_fiction|adult_night_school_first_day_bus_driver_waits_graduation_thanks","cards":6,"status":"PREPARING"}
+  ],
+  "providers": ["facebook","instagram","tiktok","youtube"], "deliveries": [],
+  "note": "Reservation prevents concurrent creation of the same topics. No assets approved, no schedule created, no publication claimed. Refresh live history before every external create. Never reuse the seven packages of 15 October."
+}
