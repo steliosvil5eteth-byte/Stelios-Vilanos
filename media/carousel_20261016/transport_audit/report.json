@@ -1,0 +1,457 @@
+{
+  "kind": "EXACT_BYTES_TRANSPORT_CHECK",
+  "expected_files": 56,
+  "identical_files": 56,
+  "all_identical": true,
+  "checks": [
+    {
+      "path": "taurus_aquarius/card_01.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-12296581125992455870.jpeg",
+      "expected_sha256": "27043cadb7f236ef68f9804670c7bdca054ed6c79c03a5f24a7810e03b5462cf",
+      "actual_sha256": "27043cadb7f236ef68f9804670c7bdca054ed6c79c03a5f24a7810e03b5462cf",
+      "identical": true,
+      "bytes": 302025
+    },
+    {
+      "path": "taurus_aquarius/card_02.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-12374054242275064549.jpeg",
+      "expected_sha256": "b2e8f67efb47ec1fc1febbe0af436af087fccafe198219f7719b735fd02832ca",
+      "actual_sha256": "b2e8f67efb47ec1fc1febbe0af436af087fccafe198219f7719b735fd02832ca",
+      "identical": true,
+      "bytes": 307710
+    },
+    {
+      "path": "taurus_aquarius/card_03.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-13619472477854821367.jpeg",
+      "expected_sha256": "d735917a93acdc1e0c262d776be174de3709056790117a8b8e717455b187c76f",
+      "actual_sha256": "d735917a93acdc1e0c262d776be174de3709056790117a8b8e717455b187c76f",
+      "identical": true,
+      "bytes": 295056
+    },
+    {
+      "path": "taurus_aquarius/card_04.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-12110235757954219057.jpeg",
+      "expected_sha256": "cd133266479f6206848c007e335f0b224438a3df58b1f3b1fe742aab9fe4d01b",
+      "actual_sha256": "cd133266479f6206848c007e335f0b224438a3df58b1f3b1fe742aab9fe4d01b",
+      "identical": true,
+      "bytes": 294167
+    },
+    {
+      "path": "taurus_aquarius/card_05.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-15499951880582917452.jpeg",
+      "expected_sha256": "b25afd5087422cf8ec4f8768857d6e48ac0c15c7fabd79f999c4aae09db32a34",
+      "actual_sha256": "b25afd5087422cf8ec4f8768857d6e48ac0c15c7fabd79f999c4aae09db32a34",
+      "identical": true,
+      "bytes": 272413
+    },
+    {
+      "path": "taurus_aquarius/card_06.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-17004619302057124772.jpeg",
+      "expected_sha256": "891bbe160b44c8a87ca234008860280f6e50343d55944e5874ada755cecfa642",
+      "actual_sha256": "891bbe160b44c8a87ca234008860280f6e50343d55944e5874ada755cecfa642",
+      "identical": true,
+      "bytes": 278960
+    },
+    {
+      "path": "taurus_aquarius/youtube_vertical.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-12149989679487164576.mp4",
+      "expected_sha256": "3e6c20805bd10cc3ead757944f17b85543a4a476441ec0abe0d096fb62647e00",
+      "actual_sha256": "3e6c20805bd10cc3ead757944f17b85543a4a476441ec0abe0d096fb62647e00",
+      "identical": true,
+      "bytes": 4975125
+    },
+    {
+      "path": "guitar_home/card_01.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-14894950785267884707.jpeg",
+      "expected_sha256": "5a55d85f00f33b6c200ae40cc2beff0181984b320b6da6d1d7780ce394c41f5a",
+      "actual_sha256": "5a55d85f00f33b6c200ae40cc2beff0181984b320b6da6d1d7780ce394c41f5a",
+      "identical": true,
+      "bytes": 298764
+    },
+    {
+      "path": "guitar_home/card_02.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-2409561157426068078.jpeg",
+      "expected_sha256": "6ab50494de1642be692216b7d0b11f7ee454e9837996a318fadd4332d676246c",
+      "actual_sha256": "6ab50494de1642be692216b7d0b11f7ee454e9837996a318fadd4332d676246c",
+      "identical": true,
+      "bytes": 257865
+    },
+    {
+      "path": "guitar_home/card_03.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-5196535307002841522.jpeg",
+      "expected_sha256": "13810865f8d475099d43d051b69352833a8102e5ff5ea647d096253c40b59bbf",
+      "actual_sha256": "13810865f8d475099d43d051b69352833a8102e5ff5ea647d096253c40b59bbf",
+      "identical": true,
+      "bytes": 274288
+    },
+    {
+      "path": "guitar_home/card_04.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-2967922428190700745.jpeg",
+      "expected_sha256": "2ecd007f036760113ee61188d8211432d218dda0a6d4dd18b416f812565bf0e2",
+      "actual_sha256": "2ecd007f036760113ee61188d8211432d218dda0a6d4dd18b416f812565bf0e2",
+      "identical": true,
+      "bytes": 294280
+    },
+    {
+      "path": "guitar_home/card_05.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-11741350717196219961.jpeg",
+      "expected_sha256": "d959ef41def38847d3476481550c94076324033ee0778f5809528830fbc02d2e",
+      "actual_sha256": "d959ef41def38847d3476481550c94076324033ee0778f5809528830fbc02d2e",
+      "identical": true,
+      "bytes": 258896
+    },
+    {
+      "path": "guitar_home/card_06.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-5072606170336072632.jpeg",
+      "expected_sha256": "c4f3a0e164e3c3f96ff63fea650f18a53e46c63a54ae181d394bb7420d87877a",
+      "actual_sha256": "c4f3a0e164e3c3f96ff63fea650f18a53e46c63a54ae181d394bb7420d87877a",
+      "identical": true,
+      "bytes": 302905
+    },
+    {
+      "path": "guitar_home/youtube_vertical.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-10022913318579903114.mp4",
+      "expected_sha256": "e5bb7f1745dca9cfb2fdda0ed70dc151268279dc6587bccf7dfa4a35fc19f75e",
+      "actual_sha256": "e5bb7f1745dca9cfb2fdda0ed70dc151268279dc6587bccf7dfa4a35fc19f75e",
+      "identical": true,
+      "bytes": 4751168
+    },
+    {
+      "path": "gemini_capricorn/card_01.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-17311676774383453515.jpeg",
+      "expected_sha256": "305e0574f1027c9fade6fedd4b6b7a48c5a0c8df3db76cceadbe66b69c5c4aaa",
+      "actual_sha256": "305e0574f1027c9fade6fedd4b6b7a48c5a0c8df3db76cceadbe66b69c5c4aaa",
+      "identical": true,
+      "bytes": 284722
+    },
+    {
+      "path": "gemini_capricorn/card_02.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-4636223304383814285.jpeg",
+      "expected_sha256": "598c92970a09af2a2dd3a8a23df2a0447436f0860c977a9e92ec9d6a219dd513",
+      "actual_sha256": "598c92970a09af2a2dd3a8a23df2a0447436f0860c977a9e92ec9d6a219dd513",
+      "identical": true,
+      "bytes": 287195
+    },
+    {
+      "path": "gemini_capricorn/card_03.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-7635396052154065211.jpeg",
+      "expected_sha256": "967458feacef8aab0d303699b172e506f9d86b1947e13e1beccbe383baacb80c",
+      "actual_sha256": "967458feacef8aab0d303699b172e506f9d86b1947e13e1beccbe383baacb80c",
+      "identical": true,
+      "bytes": 283829
+    },
+    {
+      "path": "gemini_capricorn/card_04.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-4530692863652778775.jpeg",
+      "expected_sha256": "1553e23b1c33b75addefdaa1bd3dc1789e2c2c6920c2f59d3b525ef8a7d8c0ef",
+      "actual_sha256": "1553e23b1c33b75addefdaa1bd3dc1789e2c2c6920c2f59d3b525ef8a7d8c0ef",
+      "identical": true,
+      "bytes": 287900
+    },
+    {
+      "path": "gemini_capricorn/card_05.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-15578234949760145614.jpeg",
+      "expected_sha256": "e89718b9a26175143d597f6a1c4467bad793642d17913b51c90d7c4122438942",
+      "actual_sha256": "e89718b9a26175143d597f6a1c4467bad793642d17913b51c90d7c4122438942",
+      "identical": true,
+      "bytes": 289133
+    },
+    {
+      "path": "gemini_capricorn/card_06.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-15859943517777561407.jpeg",
+      "expected_sha256": "98848d916da2d5bf07af357cba713c9635c4934d9cf30346a0189da8b5128ee4",
+      "actual_sha256": "98848d916da2d5bf07af357cba713c9635c4934d9cf30346a0189da8b5128ee4",
+      "identical": true,
+      "bytes": 274038
+    },
+    {
+      "path": "gemini_capricorn/youtube_vertical.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-4577625946978975734.mp4",
+      "expected_sha256": "fb26723c3f68aaa723721a86c3d815f54e1ecf949717ed47aaf7a37c36464199",
+      "actual_sha256": "fb26723c3f68aaa723721a86c3d815f54e1ecf949717ed47aaf7a37c36464199",
+      "identical": true,
+      "bytes": 4867497
+    },
+    {
+      "path": "first_day_shoes/card_01.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-4328287559290168365.jpeg",
+      "expected_sha256": "2ca964bb857a52f2d8e73f497b7533e3e6c07b8a6f39b9e2be96bd6a3727d5f7",
+      "actual_sha256": "2ca964bb857a52f2d8e73f497b7533e3e6c07b8a6f39b9e2be96bd6a3727d5f7",
+      "identical": true,
+      "bytes": 288025
+    },
+    {
+      "path": "first_day_shoes/card_02.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-10778698945635705287.jpeg",
+      "expected_sha256": "905604222ff4e679e3363a2548eacbcbaad497114da987296d14957d46ae04b8",
+      "actual_sha256": "905604222ff4e679e3363a2548eacbcbaad497114da987296d14957d46ae04b8",
+      "identical": true,
+      "bytes": 247183
+    },
+    {
+      "path": "first_day_shoes/card_03.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-11025590385710494335.jpeg",
+      "expected_sha256": "0628afcb7c9414d6d20a10f9c38669d2b474befbaec99dfc989a07d1ef774e61",
+      "actual_sha256": "0628afcb7c9414d6d20a10f9c38669d2b474befbaec99dfc989a07d1ef774e61",
+      "identical": true,
+      "bytes": 290590
+    },
+    {
+      "path": "first_day_shoes/card_04.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-3142613654896467676.jpeg",
+      "expected_sha256": "cd0fe3a235cb742cbc84c37266ff5ad39b19b343b0ca4cffac6919bd9ccf2bd1",
+      "actual_sha256": "cd0fe3a235cb742cbc84c37266ff5ad39b19b343b0ca4cffac6919bd9ccf2bd1",
+      "identical": true,
+      "bytes": 271826
+    },
+    {
+      "path": "first_day_shoes/card_05.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-13912953416884481437.jpeg",
+      "expected_sha256": "e553e50bdb04c97ae442981137d863856c67aa0976b9096ec3e0d74846936fcb",
+      "actual_sha256": "e553e50bdb04c97ae442981137d863856c67aa0976b9096ec3e0d74846936fcb",
+      "identical": true,
+      "bytes": 312585
+    },
+    {
+      "path": "first_day_shoes/card_06.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-3399044591307260976.jpeg",
+      "expected_sha256": "735e71ed01436532d86487a1b5873bc888e9f600315cb6b4d8b55f0ec0922ce1",
+      "actual_sha256": "735e71ed01436532d86487a1b5873bc888e9f600315cb6b4d8b55f0ec0922ce1",
+      "identical": true,
+      "bytes": 314683
+    },
+    {
+      "path": "first_day_shoes/youtube_vertical.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-14671794108540810458.mp4",
+      "expected_sha256": "199067dae235514cb107c11323c8f622c7a3593389a76af47ef84a57480ef079",
+      "actual_sha256": "199067dae235514cb107c11323c8f622c7a3593389a76af47ef84a57480ef079",
+      "identical": true,
+      "bytes": 5249756
+    },
+    {
+      "path": "libra_aries/card_01.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-14363790853012963176.jpeg",
+      "expected_sha256": "75f9cf765cd9ea71aab3d3268570a6917610b43d05ee68f5ac7189c3014a94fe",
+      "actual_sha256": "75f9cf765cd9ea71aab3d3268570a6917610b43d05ee68f5ac7189c3014a94fe",
+      "identical": true,
+      "bytes": 296494
+    },
+    {
+      "path": "libra_aries/card_02.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-11817173489837946450.jpeg",
+      "expected_sha256": "17b2352c7b17dfe95f486fffc35794a0d257b33fd6386639f854bff5a562cea5",
+      "actual_sha256": "17b2352c7b17dfe95f486fffc35794a0d257b33fd6386639f854bff5a562cea5",
+      "identical": true,
+      "bytes": 255507
+    },
+    {
+      "path": "libra_aries/card_03.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-15709743265966348348.jpeg",
+      "expected_sha256": "4a74c5147fa19e9d1f046bb52ecee8d8d9c37b6b6c459338d746581da10f1cd2",
+      "actual_sha256": "4a74c5147fa19e9d1f046bb52ecee8d8d9c37b6b6c459338d746581da10f1cd2",
+      "identical": true,
+      "bytes": 265539
+    },
+    {
+      "path": "libra_aries/card_04.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-5464563981830598491.jpeg",
+      "expected_sha256": "e3189833b2202922c0f79698dc181dfef9d28098fa113f3ff88d6dd0cc11eff1",
+      "actual_sha256": "e3189833b2202922c0f79698dc181dfef9d28098fa113f3ff88d6dd0cc11eff1",
+      "identical": true,
+      "bytes": 258048
+    },
+    {
+      "path": "libra_aries/card_05.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-15726296536331367410.jpeg",
+      "expected_sha256": "7532cf6a95bdc4593ee3086313dc1022e22529c939f2a9a3423f6fa6e5fd5a57",
+      "actual_sha256": "7532cf6a95bdc4593ee3086313dc1022e22529c939f2a9a3423f6fa6e5fd5a57",
+      "identical": true,
+      "bytes": 304194
+    },
+    {
+      "path": "libra_aries/card_06.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-8806893680282750844.jpeg",
+      "expected_sha256": "749ff8bd2bb56bb2545c855278fc7000abd2fee046fe161662fe2dd9de335baf",
+      "actual_sha256": "749ff8bd2bb56bb2545c855278fc7000abd2fee046fe161662fe2dd9de335baf",
+      "identical": true,
+      "bytes": 295917
+    },
+    {
+      "path": "libra_aries/youtube_vertical.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-14892201065456864136.mp4",
+      "expected_sha256": "2da66978e155f8e13446efd34aa1ea3b5c997661fd61e70e1ba5ecbadf4372f2",
+      "actual_sha256": "2da66978e155f8e13446efd34aa1ea3b5c997661fd61e70e1ba5ecbadf4372f2",
+      "identical": true,
+      "bytes": 4781346
+    },
+    {
+      "path": "sisters_photo/card_01.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-6715752889946991207.jpeg",
+      "expected_sha256": "02e39f651a647462612ab9f4dc2b16049673b08000e9fb141c06f162092e1086",
+      "actual_sha256": "02e39f651a647462612ab9f4dc2b16049673b08000e9fb141c06f162092e1086",
+      "identical": true,
+      "bytes": 257823
+    },
+    {
+      "path": "sisters_photo/card_02.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-6367682017833920656.jpeg",
+      "expected_sha256": "645393bcec9e4c949a0fe2f13efad875f0362914f181f43e3d7fa61b05fac584",
+      "actual_sha256": "645393bcec9e4c949a0fe2f13efad875f0362914f181f43e3d7fa61b05fac584",
+      "identical": true,
+      "bytes": 246695
+    },
+    {
+      "path": "sisters_photo/card_03.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-10692211211185307691.jpeg",
+      "expected_sha256": "7b5b1195501599e1e42045fddc900f90dcc718286c2855ae84c46519d480fe6d",
+      "actual_sha256": "7b5b1195501599e1e42045fddc900f90dcc718286c2855ae84c46519d480fe6d",
+      "identical": true,
+      "bytes": 300706
+    },
+    {
+      "path": "sisters_photo/card_04.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-7696958303222718699.jpeg",
+      "expected_sha256": "a4e660018969808223c5b7a3e5b02e79673a5e75b6d684cff85456c981444e3d",
+      "actual_sha256": "a4e660018969808223c5b7a3e5b02e79673a5e75b6d684cff85456c981444e3d",
+      "identical": true,
+      "bytes": 248998
+    },
+    {
+      "path": "sisters_photo/card_05.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-5938394091540728169.jpeg",
+      "expected_sha256": "ed2f11e4f99e63190601f7ec558ea8a20936367d3e2d51986fc273f80525697e",
+      "actual_sha256": "ed2f11e4f99e63190601f7ec558ea8a20936367d3e2d51986fc273f80525697e",
+      "identical": true,
+      "bytes": 298616
+    },
+    {
+      "path": "sisters_photo/card_06.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-17797401575340204316.jpeg",
+      "expected_sha256": "6a54204d22756b5cd21f053a4684f275088431d80a5c2b38ae4aecba1b91d167",
+      "actual_sha256": "6a54204d22756b5cd21f053a4684f275088431d80a5c2b38ae4aecba1b91d167",
+      "identical": true,
+      "bytes": 305999
+    },
+    {
+      "path": "sisters_photo/youtube_vertical.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-15864044035670965579.mp4",
+      "expected_sha256": "a78991f905cf33c4a1bdfd6dda7444cbeeb4b6f1027bc1726e7a37ee8e61b1f9",
+      "actual_sha256": "a78991f905cf33c4a1bdfd6dda7444cbeeb4b6f1027bc1726e7a37ee8e61b1f9",
+      "identical": true,
+      "bytes": 4711709
+    },
+    {
+      "path": "sagittarius_pisces/card_01.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-11378200867516965732.jpeg",
+      "expected_sha256": "e7dfb2bdd9e09ddc587ae1496781387e1b2bc151377799fc3dfe123d8157c3e3",
+      "actual_sha256": "e7dfb2bdd9e09ddc587ae1496781387e1b2bc151377799fc3dfe123d8157c3e3",
+      "identical": true,
+      "bytes": 296239
+    },
+    {
+      "path": "sagittarius_pisces/card_02.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-2535061980857602868.jpeg",
+      "expected_sha256": "4af1de469ed1342027ca55a506f7d7ca97ad918052e8f9607155853dd85f5aa8",
+      "actual_sha256": "4af1de469ed1342027ca55a506f7d7ca97ad918052e8f9607155853dd85f5aa8",
+      "identical": true,
+      "bytes": 258464
+    },
+    {
+      "path": "sagittarius_pisces/card_03.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-16750488757871631319.jpeg",
+      "expected_sha256": "e6aa2e49ed77c36f7c5112c432d74ff1b6565b0f4ec7d71a4d0f52fa63d14c00",
+      "actual_sha256": "e6aa2e49ed77c36f7c5112c432d74ff1b6565b0f4ec7d71a4d0f52fa63d14c00",
+      "identical": true,
+      "bytes": 295275
+    },
+    {
+      "path": "sagittarius_pisces/card_04.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-16266763433587733877.jpeg",
+      "expected_sha256": "c753899871693614f489d3e2fd725b34432ee083b857b510c3e1a673b885bfb1",
+      "actual_sha256": "c753899871693614f489d3e2fd725b34432ee083b857b510c3e1a673b885bfb1",
+      "identical": true,
+      "bytes": 276591
+    },
+    {
+      "path": "sagittarius_pisces/card_05.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-16065166746994380144.jpeg",
+      "expected_sha256": "c77a3525ed393a67d46a42a268f8c5f9ace44d232246a2bcdfbe7208240bbe8c",
+      "actual_sha256": "c77a3525ed393a67d46a42a268f8c5f9ace44d232246a2bcdfbe7208240bbe8c",
+      "identical": true,
+      "bytes": 298580
+    },
+    {
+      "path": "sagittarius_pisces/card_06.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-14382008945278125569.jpeg",
+      "expected_sha256": "8b504c9771630f97efa09cfca1a6f5a781799fbb203d5a7d95b7575d69b87b4c",
+      "actual_sha256": "8b504c9771630f97efa09cfca1a6f5a781799fbb203d5a7d95b7575d69b87b4c",
+      "identical": true,
+      "bytes": 264811
+    },
+    {
+      "path": "sagittarius_pisces/youtube_vertical.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-2540848535002180099.mp4",
+      "expected_sha256": "52075711c1ff23a3d1ff86823a62567018245c0106475a31efd6f576c40d1e81",
+      "actual_sha256": "52075711c1ff23a3d1ff86823a62567018245c0106475a31efd6f576c40d1e81",
+      "identical": true,
+      "bytes": 4744866
+    },
+    {
+      "path": "bus_waited/card_01.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-7280524144894867237.jpeg",
+      "expected_sha256": "2dce0dd48832220f1035d840e0268bed32ed7f67f42efdfaaa8bbeaec67e92c1",
+      "actual_sha256": "2dce0dd48832220f1035d840e0268bed32ed7f67f42efdfaaa8bbeaec67e92c1",
+      "identical": true,
+      "bytes": 334213
+    },
+    {
+      "path": "bus_waited/card_02.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-4557163221189824983.jpeg",
+      "expected_sha256": "6d3887029f00e7f08d344513ecb683dace24eaf9dbe92b82ba034184a3d4112a",
+      "actual_sha256": "6d3887029f00e7f08d344513ecb683dace24eaf9dbe92b82ba034184a3d4112a",
+      "identical": true,
+      "bytes": 273406
+    },
+    {
+      "path": "bus_waited/card_03.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-7353138752784232344.jpeg",
+      "expected_sha256": "780db6ebd90386d3fe98770490149c86c8ff4fe5f15f08356ea45ec6c473dde1",
+      "actual_sha256": "780db6ebd90386d3fe98770490149c86c8ff4fe5f15f08356ea45ec6c473dde1",
+      "identical": true,
+      "bytes": 280458
+    },
+    {
+      "path": "bus_waited/card_04.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-2337475910885538908.jpeg",
+      "expected_sha256": "7bc87621deffc381f4c160b16ccc0b6c31c656596e2c3fb24830e4001471fe85",
+      "actual_sha256": "7bc87621deffc381f4c160b16ccc0b6c31c656596e2c3fb24830e4001471fe85",
+      "identical": true,
+      "bytes": 291974
+    },
+    {
+      "path": "bus_waited/card_05.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-11803607550894475847.jpeg",
+      "expected_sha256": "019f7d5525d861adf8e01131820a9be535b3fc3c9538ad9d6c062e276526e222",
+      "actual_sha256": "019f7d5525d861adf8e01131820a9be535b3fc3c9538ad9d6c062e276526e222",
+      "identical": true,
+      "bytes": 276689
+    },
+    {
+      "path": "bus_waited/card_06.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-8783586085577581399.jpeg",
+      "expected_sha256": "8f99f3b662a9cf22bbd49068f2785c71c4e5a7f1e11463e6c46286355ac140a2",
+      "actual_sha256": "8f99f3b662a9cf22bbd49068f2785c71c4e5a7f1e11463e6c46286355ac140a2",
+      "identical": true,
+      "bytes": 304222
+    },
+    {
+      "path": "bus_waited/youtube_vertical.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-6369354964664372454.mp4",
+      "expected_sha256": "eaeeafe93ca5401f5ddfd9537fc47904d95bd728faaad9b17e7c1cbf97b6db51",
+      "actual_sha256": "eaeeafe93ca5401f5ddfd9537fc47904d95bd728faaad9b17e7c1cbf97b6db51",
+      "identical": true,
+      "bytes": 4878174
+    }
+  ],
+  "scope": "Identity to the manually reviewed final files, not a new visual approval and not proof of publication."
+}

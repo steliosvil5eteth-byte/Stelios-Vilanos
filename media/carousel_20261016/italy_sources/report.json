@@ -1,0 +1,358 @@
+{
+  "sources": [
+    {
+      "dataset": "nama_10_fte",
+      "geo": "EL",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_fte?lang=en&geo=EL&time=2024",
+      "sha256": "e68f458d403c659a91211df0401a3265da3b396de5fe1b7f85d3a0b09dedd170",
+      "path": "nama_10_fte_EL.json",
+      "dimensions": [
+        "freq",
+        "unit",
+        "geo",
+        "time"
+      ],
+      "size": [
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "dataset": "nama_10_fte",
+      "geo": "IT",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_fte?lang=en&geo=IT&time=2024",
+      "sha256": "1e0322e6b9a508f95e2eaa6a3d3707fe6445642db2a054d6b003452879ab20c3",
+      "path": "nama_10_fte_IT.json",
+      "dimensions": [
+        "freq",
+        "unit",
+        "geo",
+        "time"
+      ],
+      "size": [
+        1,
+        2,
+        1,
+        1
+      ]
+    },
+    {
+      "dataset": "lfsa_ewhan2",
+      "geo": "EL",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_ewhan2?lang=en&geo=EL&time=2024",
+      "sha256": "bf42712b460f6eccda97451871b404a433fa97d88d76add63fdba8a35caf46f0",
+      "path": "lfsa_ewhan2_EL.json",
+      "dimensions": [
+        "freq",
+        "nace_r2",
+        "wstatus",
+        "worktime",
+        "age",
+        "sex",
+        "unit",
+        "geo",
+        "time"
+      ],
+      "size": [
+        1,
+        23,
+        9,
+        4,
+        10,
+        3,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "dataset": "lfsa_ewhan2",
+      "geo": "IT",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/lfsa_ewhan2?lang=en&geo=IT&time=2024",
+      "sha256": "fe69edb3bdc1d653ad69b72e1656ed1b9108680bda3dfca008d2e81f5c907c98",
+      "path": "lfsa_ewhan2_IT.json",
+      "dimensions": [
+        "freq",
+        "nace_r2",
+        "wstatus",
+        "worktime",
+        "age",
+        "sex",
+        "unit",
+        "geo",
+        "time"
+      ],
+      "size": [
+        1,
+        23,
+        9,
+        4,
+        10,
+        3,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "dataset": "ilc_mded01",
+      "geo": "EL",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_mded01?lang=en&geo=EL&time=2024",
+      "sha256": "582204cc19bd96db2effc5bd168cba862719207fe6211a26c6fb95ee9277f4a6",
+      "path": "ilc_mded01_EL.json",
+      "dimensions": [
+        "freq",
+        "hhcomp",
+        "rskpovth",
+        "unit",
+        "geo",
+        "time"
+      ],
+      "size": [
+        1,
+        17,
+        3,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "dataset": "ilc_mded01",
+      "geo": "IT",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/ilc_mded01?lang=en&geo=IT&time=2024",
+      "sha256": "62a53d3d09a44c3a344d04333a668137aeae0b02e938d1b3bfe4a1607aff46eb",
+      "path": "ilc_mded01_IT.json",
+      "dimensions": [
+        "freq",
+        "hhcomp",
+        "rskpovth",
+        "unit",
+        "geo",
+        "time"
+      ],
+      "size": [
+        1,
+        17,
+        3,
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "photos": [
+    {
+      "group": "cover",
+      "path": "cover_1.jpg",
+      "title": "File:Colosseum in Rome-April 2007-1- copie 2B.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Colosseum_in_Rome-April_2007-1-_copie_2B.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Colosseum_in_Rome-April_2007-1-_copie_2B.jpg/1920px-Colosseum_in_Rome-April_2007-1-_copie_2B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Colosseum_in_Rome-April_2007-1-_copie_2B.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Diliff",
+      "license": "CC BY-SA 2.5",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+      "description": "A 4×4 segment panorama of the Colosseum at dusk. Taken by myself with a Canon 5D and 50mm f/1.8 lens at f/5.6.",
+      "sha256": "af12ee3de27fe0fb612242729593a3192009b1b0b4916acf75517cee3f21cb63"
+    },
+    {
+      "group": "cover",
+      "path": "cover_2.jpg",
+      "title": "File:Colosseum in Rome, Italy - April 2007.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Colosseum_in_Rome,_Italy_-_April_2007.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/53/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg/1920px-Colosseum_in_Rome%2C_Italy_-_April_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/53/Colosseum_in_Rome%2C_Italy_-_April_2007.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Diliff",
+      "license": "CC BY-SA 2.5",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+      "description": "A 4x4 segment panorama of the Coliseum at dusk. Taken by myself with a Canon 5D and 50mm f/1.8 lens at f/5.6.",
+      "sha256": "19e9d9f67800539c2f09e0e4b995b993a090202952c257dd1b10c9e088623d7e"
+    },
+    {
+      "group": "salary",
+      "path": "salary_1.jpg",
+      "title": "File:Milan skyline skyscrapers of Porta Nuova business district.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Milan_skyline_skyscrapers_of_Porta_Nuova_business_district.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/12/Milan_skyline_skyscrapers_of_Porta_Nuova_business_district.jpg/1920px-Milan_skyline_skyscrapers_of_Porta_Nuova_business_district.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/12/Milan_skyline_skyscrapers_of_Porta_Nuova_business_district.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Francesco Ungaro",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Picture showing the skyline of Milan.",
+      "sha256": "67aba06db2f5512764592c6e6dfacb6e5bd543a371c8a56a3280d717ff88c8f0"
+    },
+    {
+      "group": "salary",
+      "path": "salary_2.jpg",
+      "title": "File:Milan skyline skyscrapers of Porta Nuova business district (cropped).jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Milan_skyline_skyscrapers_of_Porta_Nuova_business_district_(cropped).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c3/Milan_skyline_skyscrapers_of_Porta_Nuova_business_district_%28cropped%29.jpg/1920px-Milan_skyline_skyscrapers_of_Porta_Nuova_business_district_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Milan_skyline_skyscrapers_of_Porta_Nuova_business_district_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "https://www.pexels.com/u/ghostpresenter/",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Picture showing the skyline of Milan.",
+      "sha256": "10decc45420e28545e6e653a271b1253c622c73a6a303269e160e8ff2a7186e2"
+    },
+    {
+      "group": "hours",
+      "path": "hours_1.jpg",
+      "title": "File:Roma Termini - Platform 03.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Roma_Termini_-_Platform_03.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Roma_Termini_-_Platform_03.jpg/1920px-Roma_Termini_-_Platform_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Roma_Termini_-_Platform_03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Mint0ri",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "A FS E.401 class train, train operated by Italo, and an ETR-1000 class train at platforms at Termini station.",
+      "sha256": "e66e1a986d173eb577118208fe4f7d678ced9b1e982cf3298aa7ef6f89665fd9"
+    },
+    {
+      "group": "hours",
+      "path": "hours_2.jpg",
+      "title": "File:Roma Termini - Platform 02.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Roma_Termini_-_Platform_02.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3e/Roma_Termini_-_Platform_02.jpg/1920px-Roma_Termini_-_Platform_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Roma_Termini_-_Platform_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Mint0ri",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Frecciarossa trains parked at platforms at Termini station. The one in the back is an ETR-1000 class while the one in front is an ETR-500.40 class.",
+      "sha256": "207a679e2acfd6edc0e65f43b5a11b03e11fc20cb2f7440e92a13581872ea424"
+    },
+    {
+      "group": "prices",
+      "path": "prices_1.jpg",
+      "title": "File:Mercato ortofrutticolo di novoli.JPG",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Mercato_ortofrutticolo_di_novoli.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Mercato_ortofrutticolo_di_novoli.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Mercato_ortofrutticolo_di_novoli.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "sailko",
+      "license": "CC BY 2.5",
+      "license_url": "https://creativecommons.org/licenses/by/2.5",
+      "description": "Mercato ortofrutticolo di novoli",
+      "sha256": "d7efcd4bc69a491b670ee8ad2bf5e03fff687b885daab0527bcc33bcccc3cdd6"
+    },
+    {
+      "group": "prices",
+      "path": "prices_2.jpg",
+      "title": "File:Fruit and vegetables at the central market in Florence (16636908459).jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Fruit_and_vegetables_at_the_central_market_in_Florence_(16636908459).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Fruit_and_vegetables_at_the_central_market_in_Florence_%2816636908459%29.jpg/1920px-Fruit_and_vegetables_at_the_central_market_in_Florence_%2816636908459%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Fruit_and_vegetables_at_the_central_market_in_Florence_%2816636908459%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Winniepix",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "description": "Fruit and vegetables at the central market in Florence",
+      "sha256": "0a8a0cd579fb786c1ca6b90964710c7faccf777d7c6039c88aa2ab87654ae883"
+    },
+    {
+      "group": "housing",
+      "path": "housing_1.jpg",
+      "title": "File:Volta della Sala dei Baroni (metà sec. XV), veduta dal cammino di ronda, Castel Nuovo, Napoli.JPG",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Volta_della_Sala_dei_Baroni_(met%C3%A0_sec._XV),_veduta_dal_cammino_di_ronda,_Castel_Nuovo,_Napoli.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/Volta_della_Sala_dei_Baroni_%28met%C3%A0_sec._XV%29%2C_veduta_dal_cammino_di_ronda%2C_Castel_Nuovo%2C_Napoli.JPG/1920px-Volta_della_Sala_dei_Baroni_%28met%C3%A0_sec._XV%29%2C_veduta_dal_cammino_di_ronda%2C_Castel_Nuovo%2C_Napoli.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Volta_della_Sala_dei_Baroni_%28met%C3%A0_sec._XV%29%2C_veduta_dal_cammino_di_ronda%2C_Castel_Nuovo%2C_Napoli.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Sergioizzo",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "On the bare walls of the Hall of the Barons it rises to a height of twenty meters the wonderful time at the center, instead of the traditional key, has placed a bright oculus, from which depart sixteen ribs piperno, liaising with other elements minors, creating a stellar design, highlighting the color contrast between the gray of the ribs, piperno of Pozzuoli, and the yellow of the walls and vaults in tuff. At the base of the roof develops a gallery, the parapet walk, which opens with eight square windows for each of the lunettes above it.\nIt was the \"Sala Mayor\" of the Angevin Castle, built by Robert of Anjou and frescoes by Giotto in 1330, with depictions of Men (and women) illustrious antiquity: Samson, Hercules, Solomon, Paris, Hector, Achilles Aeneas, Alexander and Caesar, probably with their \"companions.\"\nThe content of this cycle of frescoes, unfortunately lost, is described by the anonymous author of a collection of sonnets, dating to about 1350. Under the reign of Alfonso of Aragon (1442-1458) the room was rebuilt and enlarged by the Majorcan Guglielmo Sagrera, occupying only part of the site of the small Angevin room.\nThe solemn atmosphere is the most famous of the Castle and is called the \"Hall of the Barons\" as in 1486 the barons were arrested who had participated in the conspiracy against Ferrante I of Aragon, invited by the king to celebrate the wedding of his niece with the son of the Count of Sarno.\nIn 1919 the property was damaged by a fire that destroyed almost all the sculptural decorations. To the left of the entrance you notice the two-faced marble portal by Domenico Gagini, which led from the room with the apartment of the Aragonese king. Lintels, partially destroyed by fire, there are two bas-reliefs; in what looks toward the room depicts the triumphal procession of Alfonso, another the entrance of the King in the Castle. On the north wall, through a very ruined Catalan portal, it leads to the Angels Room, so called because it was frescoed with scenes depicting angels.\nIn the wall towards the sea, between the two windows quadripartite by a cross piperno, it opens a large rectangular fireplace topped by two stands intended for musicians and decorated by two hurdles, destroyed, and the flamboyant design similar to that of the rose window of the Chapel Palatine. In the southeast corner of the room, through a gothic door it leads to the spectacular spiral staircase, currently unusable, all piperno, which, with spiral pattern, from the apse of the Palatine Chapel leads to the Hall of the Barons and the upper terraces . The environment is also illuminated by a balcony called \"Triumphal\" which is the original base shaped like an inverted pyramid, decorated with fine stone carvings of Mallorca.\n\nThe Great Room floor was tiled in white and blue glazed, coming from Valencia factories. Currently the room is used as meetings hall of the City Council.",
+      "sha256": "689e0ad0081a79891f6baac66d20ccfd4d752a10e37c40623b3b8bef40e80686"
+    },
+    {
+      "group": "education",
+      "path": "education_1.jpg",
+      "title": "File:Paolo Monti - Servizio fotografico (Bologna, 1969) - BEIC 6366308.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Paolo_Monti_-_Servizio_fotografico_(Bologna,_1969)_-_BEIC_6366308.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Paolo_Monti_-_Servizio_fotografico_%28Bologna%2C_1969%29_-_BEIC_6366308.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/ba/Paolo_Monti_-_Servizio_fotografico_%28Bologna%2C_1969%29_-_BEIC_6366308.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Paolo Monti",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Servizio fotografico : Modena, 1969 / Paolo Monti. - Buste: 27, Fototipi: 27 : Negativo b/n, gelatina bromuro d'argento/ pellicola ; 10x12. - ((Serie costituita da 27 negativi identificati con i nn.: 15361-15386. La suddetta serie è contenuta nella scatola identificata con la numerazione 15001-15500G. - Occasione: Documentazione per Dott. Matteucci: Architettura 600/700 bolognese: Bologna e Modena. - Fonte: Agenda di Paolo Monti: Monti/ 3 aprile 1966 - 9 marzo 1971/ 12421-16823 (1966-1971), presso Archivio Paolo Monti. - Fonte: Monografia di Matteucci, Anna Maria: Anna Maria MATTEUCCI, Carlo Francesco Dotti e l'architettura bolognese del Settecento, Bologna, Edizioni Alfa (1968)",
+      "sha256": "655b1e279d0e3bd312c7d97ae0f941a0e8420a98c4bcbfcbf2423952c632a346"
+    },
+    {
+      "group": "education",
+      "path": "education_2.jpg",
+      "title": "File:Archiginnasio, Bologna; the anatomy theatre. Photograph by Wellcome M0010168.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Archiginnasio,_Bologna;_the_anatomy_theatre._Photograph_by_Wellcome_M0010168.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Archiginnasio%2C_Bologna%3B_the_anatomy_theatre._Photograph_by_Wellcome_M0010168.jpg/1920px-Archiginnasio%2C_Bologna%3B_the_anatomy_theatre._Photograph_by_Wellcome_M0010168.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Archiginnasio%2C_Bologna%3B_the_anatomy_theatre._Photograph_by_Wellcome_M0010168.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "",
+      "license": "CC BY 4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0",
+      "description": "The anatomical theatre at the University of Bologna: general view of interior. Copy of photograph by Emilia Pappi, Bologna.\n\nIconographic Collections\nKeywords: Anatomy; Biblioteca comunale dell'Archiginnasio (Bologna, Italy); Fotografia dell'Emilia",
+      "sha256": "e09d596cd2a644780dcd605b8070ca21c9605ed13f29bbc7db8c912897341fdd"
+    },
+    {
+      "group": "health",
+      "path": "health_1.jpg",
+      "title": "File:Roma, Policlinico Gemelli, chiesa centrale del Sacro Cuore - Facciata.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Roma,_Policlinico_Gemelli,_chiesa_centrale_del_Sacro_Cuore_-_Facciata.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Roma%2C_Policlinico_Gemelli%2C_chiesa_centrale_del_Sacro_Cuore_-_Facciata.jpg/1920px-Roma%2C_Policlinico_Gemelli%2C_chiesa_centrale_del_Sacro_Cuore_-_Facciata.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b0/Roma%2C_Policlinico_Gemelli%2C_chiesa_centrale_del_Sacro_Cuore_-_Facciata.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Pufui PcPifpef",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Facciata.",
+      "sha256": "c1b2399980e98674150ba7c53ffac3e83bdba936bc9381a323e22ccfa2d376b2"
+    },
+    {
+      "group": "roads",
+      "path": "roads_1.jpg",
+      "title": "File:Tiber Valley at Stimigliano Scalo (32454188018).jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Tiber_Valley_at_Stimigliano_Scalo_(32454188018).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/52/Tiber_Valley_at_Stimigliano_Scalo_%2832454188018%29.jpg/1920px-Tiber_Valley_at_Stimigliano_Scalo_%2832454188018%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/5/52/Tiber_Valley_at_Stimigliano_Scalo_%2832454188018%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Sonse",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "description": "Rieti, Italy",
+      "sha256": "77703228b4bcfb703b04481cb744416b9b4dd8daa8f3435a2d076c984cf6ef5c"
+    },
+    {
+      "group": "roads",
+      "path": "roads_2.jpg",
+      "title": "File:Castagnole delle Lanze, veduta aerea con Tanaro.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Castagnole_delle_Lanze,_veduta_aerea_con_Tanaro.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Castagnole_delle_Lanze%2C_veduta_aerea_con_Tanaro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Castagnole_delle_Lanze%2C_veduta_aerea_con_Tanaro.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Starnutoditopo",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "description": "Veduta aerea dell'ansa del Tanaro, presso Castagnole delle Lanze e Motta di Costigliole d'Asti, con il viadotto della ferrovia e quello dell'autostrada",
+      "sha256": "13076e58dd876c2f1761abf38769421fc851f4c4f0544065075a5f1614d12331"
+    },
+    {
+      "group": "digital",
+      "path": "digital_1.jpg",
+      "title": "File:Gadgets on a desk (Unsplash).jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Gadgets_on_a_desk_(Unsplash).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Gadgets_on_a_desk_%28Unsplash%29.jpg/1920px-Gadgets_on_a_desk_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Gadgets_on_a_desk_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Niklas Veenhuis niklasveenhuis",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Vidbo, Sweden",
+      "sha256": "34574f672d211c0f628dcd7d7908597cde9dcde79e7bd3f591be34f7eeb4584b"
+    },
+    {
+      "group": "digital",
+      "path": "digital_2.jpg",
+      "title": "File:Desk Setup (Unsplash).jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Desk_Setup_(Unsplash).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/cc/Desk_Setup_%28Unsplash%29.jpg/1920px-Desk_Setup_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Desk_Setup_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "artist": "Luke Chesser lukechesser",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "description": "Crew HQ, Montreal, Canada",
+      "sha256": "8cdfa44d8d8ac8ee61630370fee38b4b237ea355ef0cd5d6a0f271dff9096a99"
+    }
+  ],
+  "errors": [],
+  "release_approved": false
+}
