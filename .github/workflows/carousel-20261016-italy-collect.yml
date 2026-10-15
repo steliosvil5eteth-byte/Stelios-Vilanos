@@ -1,0 +1,48 @@
+name: Italy evidence and scheduled media integrity 20261016
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/carousel-20261016-italy-collect.yml']
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: carousel-20261016-italy-collect
+  cancel-in-progress: false
+jobs:
+  collect-only:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            production/carousel_20261016
+            media/carousel_20261016
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python -m pip install Pillow==11.3.0
+      - name: Collect public evidence and audit media, never publish
+        run: python production/carousel_20261016/italy_collect.py
+      - name: Save review evidence and transport audit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: italy-evidence-and-transport-audit-20261016
+          path: |
+            media/carousel_20261016/italy_sources
+            media/carousel_20261016/transport_audit
+          retention-days: 2
+          if-no-files-found: error
+      - name: Store evidence only
+        run: |
+          git config user.name 'carousel-media-builder'
+          git config user.email 'actions@users.noreply.github.com'
+          git add --sparse -f media/carousel_20261016/italy_sources media/carousel_20261016/transport_audit
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Store Italy evidence and exact scheduled media integrity results; no publication'
+          git pull --rebase origin main
+          git push origin HEAD:main
