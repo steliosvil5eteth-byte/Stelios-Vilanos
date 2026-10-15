@@ -1,0 +1,98 @@
+name: Germany exact staging verification only
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/greece-germany-staging-verify.yml']
+permissions:
+  contents: write
+concurrency:
+  group: greece-germany-staging-20261015
+  cancel-in-progress: false
+jobs:
+  verify:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+        with:
+          sparse-checkout: |
+            state/daily_delivery
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
+        with:
+          python-version: '3.12'
+          cache: ''
+      - name: Free local decoding dependencies
+        run: |
+          command -v ffmpeg || (sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg)
+          pip install --no-cache-dir numpy==2.3.3
+      - name: Verify exact staged files and complete timeline; never publish
+        run: |
+          python - <<'PY'
+          import json,hashlib,urllib.request,subprocess,datetime,pathlib,tempfile
+          import numpy as np
+          root=pathlib.Path('state/daily_delivery')
+          j=json.loads((root/'greece_germany_20261015.json').read_text())
+          receipt=json.loads((root/'greece_germany_20261015_staging_receipt.json').read_text())
+          p=next(x for x in json.loads((root/'carousel_20261016.json').read_text())['packages'] if x['id']=='greece_germany')
+          assert p['reservation']['token']==receipt['lease_token']==j['lease']['token']=='cf0080df-7787-48b4-bf2a-f41d0f7263b0'
+          assert datetime.datetime.now(datetime.timezone.utc)<datetime.datetime.fromisoformat(j['lease']['expires_at'])
+          assert receipt['native']['draft'] and receipt['youtube']['draft']
+          assert receipt['state']=='BOTH_STAGE_WRITES_RECONCILED'
+          out={'package_id':'greece_germany','verification':'TECHNICAL_STAGING_AND_TIMELINE_ONLY','visual_review_reference':'state/daily_delivery/greece_germany_20261015.json','checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'native':[],'youtube':{},'pass':False,'does_not_create_or_publish':True}
+          tmp=pathlib.Path(tempfile.mkdtemp())
+          def get(url,path):
+              with urllib.request.urlopen(urllib.request.Request(url,headers={'User-Agent':'ExactMediaVerifier/1.0'}),timeout=45) as r: data=r.read()
+              path.write_bytes(data)
+              return hashlib.sha256(data).hexdigest()
+          try:
+              for i,(url,expected) in enumerate(zip(j['writes'][0]['staged_media'],j['native_review']['sha256']),1):
+                  got=get(url,tmp/f'card_{i:02d}.jpg')
+                  out['native'].append({'index':i,'url':url,'sha256':got,'expected_sha256':expected,'exact_match':got==expected})
+              v=tmp/'staged.mp4'
+              got=get(receipt['youtube']['media'],v)
+              out['youtube']={'url':receipt['youtube']['media'],'sha256':got,'exact_match':got==j['video_review']['sha256']}
+              assert out['youtube']['exact_match'],'Staged MP4 hash differs from visually reviewed source'
+              probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(v)]))
+              vs=[s for s in probe['streams'] if s['codec_type']=='video']; au=[s for s in probe['streams'] if s['codec_type']=='audio']
+              assert len(vs)==1 and not au
+              assert (vs[0]['width'],vs[0]['height'])==(1080,1920)
+              assert vs[0]['r_frame_rate']=='24/1' and abs(float(probe['format']['duration'])-160)<0.1
+              out['youtube'].update({'duration_seconds':float(probe['format']['duration']),'width':1080,'height':1920,'audio_streams':0,'audio_review':'NOT_APPLICABLE_NO_AUDIO_STREAM','full_decode_error_free':False})
+              hashes=['a830c2fd482861458d8f75b9b8a5bee76497e13af8a2de7ce6c1e41d9886dd19','d7c7ad125d6c3754ae4fca59e8ae9c11a854599ea0b056d9d16c75f69970c14f','cc1e890584701c4e93002ee2d9855c6cb7e21cebd9fb44fe91cda34e8ae4046d','37d54ffdb1d540b85e61db31ee7e508537ccd3b302ec0807245fe0eb168cb9b7','004486f67984603aba35bd464202a04a001c21d2563c774254815f53a9ead05f','5c2135de5cf882f1a9c2ecd0620cd0b477eaf458097535336ff291155cd880ac','3206064fe9456887cc6c171cde857ef2be3616b973c95836f1aacabe1ad885eb','743b9851fcad3cbe393448ab66f96ce6afd8ffe55d21038e91782243d593bbbf','ede9f005d9cd42657541ed3a0c4ac03855bd677e638bd398fdfe316301fe7e6a','0b9e6d104837d658691e675dbc5a30fdf97fa3050fd4100f5dbbedc45316e109']
+              base='https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/53b6129c70a843e1012d6dacc2a8bce168f2e38d/media/carousel_20261016/greece_germany/'
+              refs=[]
+              for i,expected in enumerate(hashes,1):
+                  f=tmp/f'ref{i}.jpg'; assert get(base+f'encoded_frame_{i:02d}.jpg',f)==expected
+                  b=subprocess.check_output(['ffmpeg','-v','error','-i',str(f),'-vf','scale=216:384','-pix_fmt','rgb24','-frames:v','1','-f','rawvideo','pipe:1'])
+                  refs.append(np.frombuffer(b,dtype=np.uint8).astype(np.int16))
+              proc=subprocess.Popen(['ffmpeg','-v','error','-xerror','-i',str(v),'-vf','scale=216:384','-pix_fmt','rgb24','-f','rawvideo','pipe:1'],stdout=subprocess.PIPE,stderr=subprocess.PIPE)
+              n=0; size=216*384*3; maximum=[0.0]*10; bad=[]
+              while True:
+                  b=proc.stdout.read(size)
+                  if not b: break
+                  assert len(b)==size
+                  idx=n//384
+                  assert idx<10
+                  err=float(np.mean(np.abs(np.frombuffer(b,dtype=np.uint8).astype(np.int16)-refs[idx])))
+                  maximum[idx]=max(maximum[idx],err)
+                  if err>5: bad.append({'frame':n,'expected_card':idx+1,'mean_absolute_rgb_difference':err})
+                  n+=1
+              stderr=proc.stderr.read().decode();code=proc.wait();assert code==0,stderr
+              assert n==3840,f'Unexpected frame count {n}'
+              out['youtube'].update({'full_decode_error_free':True,'decoded_frames':n,'expected_frames':3840,'seconds_per_card':16,'all_ten_visually_reviewed_states_in_correct_order':not bad,'maximum_mean_rgb_difference_per_card':maximum,'threshold':5,'unexpected_frames':bad[:10]})
+              out['pass']=all(x['exact_match'] for x in out['native']) and not bad
+          except Exception as e:
+              out['error']=str(e)
+          dest=pathlib.Path('media_qa/greece_germany_20261015_staging.json');dest.parent.mkdir(exist_ok=True)
+          dest.write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n')
+          print(json.dumps(out,ensure_ascii=False))
+          PY
+      - name: Persist only verification report; no artifact storage and no publication
+        run: |
+          git config user.name 'exact-media-verifier'
+          git config user.email 'actions@users.noreply.github.com'
+          git add --sparse -f media_qa/greece_germany_20261015_staging.json
+          git commit -m 'Record exact Germany staging hashes and full timeline verification [skip ci]'
+          git pull --rebase origin main
+          git push origin HEAD:main
