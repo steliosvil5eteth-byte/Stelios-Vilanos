@@ -1,0 +1,910 @@
+{
+  "date": "2026-10-16",
+  "brand_id": 7076410,
+  "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+  "request_sha256": "bc0bb3279edde3047d279ba90cb12d50268c75d1eeabd5f40aea26ed3562788e",
+  "sources": {
+    "zodiac": {
+      "url": "https://videocdn.pollo.ai/web-cdn/pollo/production/cmv5r096l1hbosy5u7pikm7mg/ori/cmv9x8vca12ojnadi0hs92s13-0-2067ddbfd11eb9bd.png",
+      "sha256": "9294bd48139a443eba647c8e117593ebb2e8dd7afad802b9c8cc54ec0d4605a3",
+      "width": 3504,
+      "height": 2336
+    },
+    "stories": {
+      "url": "https://videocdn.pollo.ai/web-cdn/pollo/production/cmv5r096l1hbosy5u7pikm7mg/ori/cmv9x8v8812mq1wrh8ybblzm7-0-eb2f47790a96e6d3.png",
+      "sha256": "5ea54cd36dad35af35ab5a187a475c67203a9d1a8ef92472c21c8f9a39449e05",
+      "width": 3504,
+      "height": 2336
+    }
+  },
+  "posts": [
+    {
+      "id": "taurus_aquarius",
+      "title": "Ταύρος με ωροσκόπο Υδροχόο",
+      "time": "07:00",
+      "fingerprint": "zodiac_ascendant|taurus_aquarius|roots_not_chains",
+      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "taurus_aquarius/card_01.jpg",
+          "sha256": "27043cadb7f236ef68f9804670c7bdca054ed6c79c03a5f24a7810e03b5462cf",
+          "source_crop": [
+            12,
+            12,
+            572,
+            572
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 52,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "taurus_aquarius/card_02.jpg",
+          "sha256": "b2e8f67efb47ec1fc1febbe0af436af087fccafe198219f7719b735fd02832ca",
+          "source_crop": [
+            596,
+            12,
+            1156,
+            572
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 3,
+          "unclipped": true
+        },
+        {
+          "path": "taurus_aquarius/card_03.jpg",
+          "sha256": "d735917a93acdc1e0c262d776be174de3709056790117a8b8e717455b187c76f",
+          "source_crop": [
+            1180,
+            12,
+            1740,
+            572
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 3,
+          "unclipped": true
+        },
+        {
+          "path": "taurus_aquarius/card_04.jpg",
+          "sha256": "cd133266479f6206848c007e335f0b224438a3df58b1f3b1fe742aab9fe4d01b",
+          "source_crop": [
+            1764,
+            12,
+            2324,
+            572
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "taurus_aquarius/card_05.jpg",
+          "sha256": "b25afd5087422cf8ec4f8768857d6e48ac0c15c7fabd79f999c4aae09db32a34",
+          "source_crop": [
+            2348,
+            12,
+            2908,
+            572
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 3,
+          "unclipped": true
+        },
+        {
+          "path": "taurus_aquarius/card_06.jpg",
+          "sha256": "891bbe160b44c8a87ca234008860280f6e50343d55944e5874ada755cecfa642",
+          "source_crop": [
+            2932,
+            12,
+            3492,
+            572
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 46,
+          "body_lines": 2,
+          "unclipped": true
+        }
+      ],
+      "youtube_video": {
+        "path": "taurus_aquarius/youtube_vertical.mp4",
+        "sha256": "3e6c20805bd10cc3ead757944f17b85543a4a476441ec0abe0d096fb62647e00",
+        "width": 1080,
+        "height": 1920,
+        "duration_seconds": 72,
+        "card_durations": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "fps": 24,
+        "audio_streams": 0
+      },
+      "caption": "Θέλει ρίζες. Όχι αλυσίδες.\n\nΤαύρος με ωροσκόπο Υδροχόο: έξι κάρτες για το συμβολικό δίλημμα ανάμεσα στη σταθερότητα και στην ελευθερία. Εσύ πώς κρατάς την ισορροπία;\n\nΨυχαγωγική, συμβολική αστρολογία — όχι επιστημονική περιγραφή προσωπικότητας ή πρόβλεψη. Οι φωτορεαλιστικές εικόνες και τα πρόσωπα είναι φανταστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ζώδια #Ταύρος #Υδροχόος #Ωροσκόπος #ΙστορίεςΠουΜαςΑγγίζουν"
+    },
+    {
+      "id": "guitar_home",
+      "title": "Η κιθάρα που γύρισε σπίτι",
+      "time": "09:00",
+      "fingerprint": "emotional_fiction|father_sells_guitar_for_adult_daughter_lessons_daughter_recovers_instrument_duet",
+      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "guitar_home/card_01.jpg",
+          "sha256": "5a55d85f00f33b6c200ae40cc2beff0181984b320b6da6d1d7780ce394c41f5a",
+          "source_crop": [
+            12,
+            12,
+            572,
+            572
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 52,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "guitar_home/card_02.jpg",
+          "sha256": "6ab50494de1642be692216b7d0b11f7ee454e9837996a318fadd4332d676246c",
+          "source_crop": [
+            596,
+            12,
+            1156,
+            572
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "guitar_home/card_03.jpg",
+          "sha256": "13810865f8d475099d43d051b69352833a8102e5ff5ea647d096253c40b59bbf",
+          "source_crop": [
+            1180,
+            12,
+            1740,
+            572
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "guitar_home/card_04.jpg",
+          "sha256": "2ecd007f036760113ee61188d8211432d218dda0a6d4dd18b416f812565bf0e2",
+          "source_crop": [
+            1764,
+            12,
+            2324,
+            572
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 3,
+          "unclipped": true
+        },
+        {
+          "path": "guitar_home/card_05.jpg",
+          "sha256": "d959ef41def38847d3476481550c94076324033ee0778f5809528830fbc02d2e",
+          "source_crop": [
+            2348,
+            12,
+            2908,
+            572
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 3,
+          "unclipped": true
+        },
+        {
+          "path": "guitar_home/card_06.jpg",
+          "sha256": "c4f3a0e164e3c3f96ff63fea650f18a53e46c63a54ae181d394bb7420d87877a",
+          "source_crop": [
+            2932,
+            12,
+            3492,
+            572
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 46,
+          "body_lines": 3,
+          "unclipped": true
+        }
+      ],
+      "youtube_video": {
+        "path": "guitar_home/youtube_vertical.mp4",
+        "sha256": "e5bb7f1745dca9cfb2fdda0ed70dc151268279dc6587bccf7dfa4a35fc19f75e",
+        "width": 1080,
+        "height": 1920,
+        "duration_seconds": 72,
+        "card_durations": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "fps": 24,
+        "audio_streams": 0
+      },
+      "caption": "Πούλησε την κιθάρα του. Εκείνη νόμιζε πως είχε απλώς σταματήσει να αγαπά τη μουσική.\n\n«Η κιθάρα που γύρισε σπίτι»: μια ολοκληρωμένη ιστορία έξι καρτών για μια σιωπηλή θυσία και ένα όνειρο που βρήκε τον δρόμο της επιστροφής.\n\nΠοιος στήριξε το δικό σου ξεκίνημα;\n\nΠρωτότυπη μυθοπλαστική ιστορία. Οι φωτορεαλιστικές εικόνες και τα πρόσωπα είναι φανταστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #Πατέρας #Οικογένεια #Μουσική #ΙστορίεςΠουΜαςΑγγίζουν"
+    },
+    {
+      "id": "gemini_capricorn",
+      "title": "Δίδυμοι με ωροσκόπο Αιγόκερω",
+      "time": "11:00",
+      "fingerprint": "zodiac_ascendant|gemini_capricorn|many_ideas_one_plan",
+      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "gemini_capricorn/card_01.jpg",
+          "sha256": "305e0574f1027c9fade6fedd4b6b7a48c5a0c8df3db76cceadbe66b69c5c4aaa",
+          "source_crop": [
+            12,
+            596,
+            572,
+            1156
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 52,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "gemini_capricorn/card_02.jpg",
+          "sha256": "598c92970a09af2a2dd3a8a23df2a0447436f0860c977a9e92ec9d6a219dd513",
+          "source_crop": [
+            596,
+            596,
+            1156,
+            1156
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "gemini_capricorn/card_03.jpg",
+          "sha256": "967458feacef8aab0d303699b172e506f9d86b1947e13e1beccbe383baacb80c",
+          "source_crop": [
+            1180,
+            596,
+            1740,
+            1156
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 3,
+          "unclipped": true
+        },
+        {
+          "path": "gemini_capricorn/card_04.jpg",
+          "sha256": "1553e23b1c33b75addefdaa1bd3dc1789e2c2c6920c2f59d3b525ef8a7d8c0ef",
+          "source_crop": [
+            1764,
+            596,
+            2324,
+            1156
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "gemini_capricorn/card_05.jpg",
+          "sha256": "e89718b9a26175143d597f6a1c4467bad793642d17913b51c90d7c4122438942",
+          "source_crop": [
+            2348,
+            596,
+            2908,
+            1156
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "gemini_capricorn/card_06.jpg",
+          "sha256": "98848d916da2d5bf07af357cba713c9635c4934d9cf30346a0189da8b5128ee4",
+          "source_crop": [
+            2932,
+            596,
+            3492,
+            1156
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 46,
+          "body_lines": 2,
+          "unclipped": true
+        }
+      ],
+      "youtube_video": {
+        "path": "gemini_capricorn/youtube_vertical.mp4",
+        "sha256": "fb26723c3f68aaa723721a86c3d815f54e1ecf949717ed47aaf7a37c36464199",
+        "width": 1080,
+        "height": 1920,
+        "duration_seconds": 72,
+        "card_durations": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "fps": 24,
+        "audio_streams": 0
+      },
+      "caption": "Το μυαλό τρέχει. Το πρόγραμμα τού δίνει κατεύθυνση.\n\nΔίδυμοι με ωροσκόπο Αιγόκερω: έξι κάρτες για το συμβολικό πάντρεμα περιέργειας και επιμονής. Εσύ ξεκινάς πολλά ή τελειώνεις ένα κάθε φορά;\n\nΨυχαγωγική, συμβολική αστρολογία — όχι επιστημονική περιγραφή προσωπικότητας ή πρόβλεψη. Οι φωτορεαλιστικές εικόνες και τα πρόσωπα είναι φανταστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ζώδια #Δίδυμοι #Αιγόκερως #Ωροσκόπος #ΙστορίεςΠουΜαςΑγγίζουν"
+    },
+    {
+      "id": "first_day_shoes",
+      "title": "Τα παπούτσια της πρώτης μέρας",
+      "time": "13:00",
+      "fingerprint": "emotional_fiction|cobbler_repairs_interview_shoes_free_woman_pays_forward",
+      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "first_day_shoes/card_01.jpg",
+          "sha256": "2ca964bb857a52f2d8e73f497b7533e3e6c07b8a6f39b9e2be96bd6a3727d5f7",
+          "source_crop": [
+            12,
+            596,
+            572,
+            1156
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 52,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "first_day_shoes/card_02.jpg",
+          "sha256": "905604222ff4e679e3363a2548eacbcbaad497114da987296d14957d46ae04b8",
+          "source_crop": [
+            596,
+            596,
+            1156,
+            1156
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "first_day_shoes/card_03.jpg",
+          "sha256": "0628afcb7c9414d6d20a10f9c38669d2b474befbaec99dfc989a07d1ef774e61",
+          "source_crop": [
+            1180,
+            596,
+            1740,
+            1156
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 3,
+          "unclipped": true
+        },
+        {
+          "path": "first_day_shoes/card_04.jpg",
+          "sha256": "cd0fe3a235cb742cbc84c37266ff5ad39b19b343b0ca4cffac6919bd9ccf2bd1",
+          "source_crop": [
+            1764,
+            596,
+            2324,
+            1156
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 3,
+          "unclipped": true
+        },
+        {
+          "path": "first_day_shoes/card_05.jpg",
+          "sha256": "e553e50bdb04c97ae442981137d863856c67aa0976b9096ec3e0d74846936fcb",
+          "source_crop": [
+            2348,
+            596,
+            2908,
+            1156
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 3,
+          "unclipped": true
+        },
+        {
+          "path": "first_day_shoes/card_06.jpg",
+          "sha256": "735e71ed01436532d86487a1b5873bc888e9f600315cb6b4d8b55f0ec0922ce1",
+          "source_crop": [
+            2932,
+            596,
+            3492,
+            1156
+          ],
+          "duration_seconds": 13,
+          "body_font_px": 42,
+          "body_lines": 3,
+          "unclipped": true
+        }
+      ],
+      "youtube_video": {
+        "path": "first_day_shoes/youtube_vertical.mp4",
+        "sha256": "199067dae235514cb107c11323c8f622c7a3593389a76af47ef84a57480ef079",
+        "width": 1080,
+        "height": 1920,
+        "duration_seconds": 73,
+        "card_durations": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          13
+        ],
+        "fps": 24,
+        "audio_streams": 0
+      },
+      "caption": "Μερικές φορές, ένα καινούργιο ξεκίνημα στηρίζεται σε κάποιον που δεν σε γνωρίζει καν.\n\n«Τα παπούτσια της πρώτης μέρας»: έξι κάρτες για μια μικρή βοήθεια που δεν σταμάτησε στον πρώτο άνθρωπο. Εσύ ποια πράξη καλοσύνης θυμάσαι ακόμη;\n\nΠρωτότυπη μυθοπλαστική ιστορία. Οι φωτορεαλιστικές εικόνες και τα πρόσωπα είναι φανταστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #Καλοσύνη #Αλληλεγγύη #ΝέοΞεκίνημα #ΙστορίεςΠουΜαςΑγγίζουν"
+    },
+    {
+      "id": "libra_aries",
+      "title": "Ζυγός με ωροσκόπο Κριό",
+      "time": "15:00",
+      "fingerprint": "zodiac_ascendant|libra_aries|kindness_and_assertiveness",
+      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "libra_aries/card_01.jpg",
+          "sha256": "75f9cf765cd9ea71aab3d3268570a6917610b43d05ee68f5ac7189c3014a94fe",
+          "source_crop": [
+            12,
+            1180,
+            572,
+            1740
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 52,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "libra_aries/card_02.jpg",
+          "sha256": "17b2352c7b17dfe95f486fffc35794a0d257b33fd6386639f854bff5a562cea5",
+          "source_crop": [
+            596,
+            1180,
+            1156,
+            1740
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 3,
+          "unclipped": true
+        },
+        {
+          "path": "libra_aries/card_03.jpg",
+          "sha256": "4a74c5147fa19e9d1f046bb52ecee8d8d9c37b6b6c459338d746581da10f1cd2",
+          "source_crop": [
+            1180,
+            1180,
+            1740,
+            1740
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "libra_aries/card_04.jpg",
+          "sha256": "e3189833b2202922c0f79698dc181dfef9d28098fa113f3ff88d6dd0cc11eff1",
+          "source_crop": [
+            1764,
+            1180,
+            2324,
+            1740
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 3,
+          "unclipped": true
+        },
+        {
+          "path": "libra_aries/card_05.jpg",
+          "sha256": "7532cf6a95bdc4593ee3086313dc1022e22529c939f2a9a3423f6fa6e5fd5a57",
+          "source_crop": [
+            2348,
+            1180,
+            2908,
+            1740
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 3,
+          "unclipped": true
+        },
+        {
+          "path": "libra_aries/card_06.jpg",
+          "sha256": "749ff8bd2bb56bb2545c855278fc7000abd2fee046fe161662fe2dd9de335baf",
+          "source_crop": [
+            2932,
+            1180,
+            3492,
+            1740
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 46,
+          "body_lines": 3,
+          "unclipped": true
+        }
+      ],
+      "youtube_video": {
+        "path": "libra_aries/youtube_vertical.mp4",
+        "sha256": "2da66978e155f8e13446efd34aa1ea3b5c997661fd61e70e1ba5ecbadf4372f2",
+        "width": 1080,
+        "height": 1920,
+        "duration_seconds": 72,
+        "card_durations": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "fps": 24,
+        "audio_streams": 0
+      },
+      "caption": "Ευγένεια δεν σημαίνει να συμφωνείς με όλους.\n\nΖυγός με ωροσκόπο Κριό: έξι κάρτες για ένα συμβολικό πορτρέτο που ενώνει τη συνεννόηση με τη διεκδίκηση. Εσύ πώς βάζεις τα όριά σου;\n\nΨυχαγωγική, συμβολική αστρολογία — όχι επιστημονική περιγραφή προσωπικότητας ή πρόβλεψη. Οι φωτορεαλιστικές εικόνες και τα πρόσωπα είναι φανταστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ζώδια #Ζυγός #Κριός #Ωροσκόπος #ΙστορίεςΠουΜαςΑγγίζουν"
+    },
+    {
+      "id": "sisters_photo",
+      "title": "Η φωτογραφία που δεν πέταξε",
+      "time": "17:00",
+      "fingerprint": "emotional_fiction|estranged_adult_sisters_taped_holiday_photo_reconciliation_new_photo",
+      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "sisters_photo/card_01.jpg",
+          "sha256": "02e39f651a647462612ab9f4dc2b16049673b08000e9fb141c06f162092e1086",
+          "source_crop": [
+            12,
+            1180,
+            572,
+            1740
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 52,
+          "body_lines": 3,
+          "unclipped": true
+        },
+        {
+          "path": "sisters_photo/card_02.jpg",
+          "sha256": "645393bcec9e4c949a0fe2f13efad875f0362914f181f43e3d7fa61b05fac584",
+          "source_crop": [
+            596,
+            1180,
+            1156,
+            1740
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 3,
+          "unclipped": true
+        },
+        {
+          "path": "sisters_photo/card_03.jpg",
+          "sha256": "7b5b1195501599e1e42045fddc900f90dcc718286c2855ae84c46519d480fe6d",
+          "source_crop": [
+            1180,
+            1180,
+            1740,
+            1740
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "sisters_photo/card_04.jpg",
+          "sha256": "a4e660018969808223c5b7a3e5b02e79673a5e75b6d684cff85456c981444e3d",
+          "source_crop": [
+            1764,
+            1180,
+            2324,
+            1740
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 3,
+          "unclipped": true
+        },
+        {
+          "path": "sisters_photo/card_05.jpg",
+          "sha256": "ed2f11e4f99e63190601f7ec558ea8a20936367d3e2d51986fc273f80525697e",
+          "source_crop": [
+            2348,
+            1180,
+            2908,
+            1740
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "sisters_photo/card_06.jpg",
+          "sha256": "6a54204d22756b5cd21f053a4684f275088431d80a5c2b38ae4aecba1b91d167",
+          "source_crop": [
+            2932,
+            1180,
+            3492,
+            1740
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 42,
+          "body_lines": 3,
+          "unclipped": true
+        }
+      ],
+      "youtube_video": {
+        "path": "sisters_photo/youtube_vertical.mp4",
+        "sha256": "a78991f905cf33c4a1bdfd6dda7444cbeeb4b6f1027bc1726e7a37ee8e61b1f9",
+        "width": 1080,
+        "height": 1920,
+        "duration_seconds": 72,
+        "card_durations": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "fps": 24,
+        "audio_streams": 0
+      },
+      "caption": "Η φωτογραφία ήταν σκισμένη. Η θέση της αδελφής της στη ζωή της, όχι.\n\n«Η φωτογραφία που δεν πέταξε»: μια ολοκληρωμένη ιστορία έξι καρτών για όσα δεν διορθώνει η σιωπή και για μια συζήτηση που άργησε να αρχίσει.\n\nΠρωτότυπη μυθοπλαστική ιστορία. Οι φωτορεαλιστικές εικόνες και τα πρόσωπα είναι φανταστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #Αδέλφια #Συγχώρεση #Οικογένεια #ΙστορίεςΠουΜαςΑγγίζουν"
+    },
+    {
+      "id": "sagittarius_pisces",
+      "title": "Τοξότης με ωροσκόπο Ιχθύες",
+      "time": "20:00",
+      "fingerprint": "zodiac_ascendant|sagittarius_pisces|freedom_and_empathy",
+      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "sagittarius_pisces/card_01.jpg",
+          "sha256": "e7dfb2bdd9e09ddc587ae1496781387e1b2bc151377799fc3dfe123d8157c3e3",
+          "source_crop": [
+            12,
+            1764,
+            572,
+            2324
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "sagittarius_pisces/card_02.jpg",
+          "sha256": "4af1de469ed1342027ca55a506f7d7ca97ad918052e8f9607155853dd85f5aa8",
+          "source_crop": [
+            596,
+            1764,
+            1156,
+            2324
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "sagittarius_pisces/card_03.jpg",
+          "sha256": "e6aa2e49ed77c36f7c5112c432d74ff1b6565b0f4ec7d71a4d0f52fa63d14c00",
+          "source_crop": [
+            1180,
+            1764,
+            1740,
+            2324
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "sagittarius_pisces/card_04.jpg",
+          "sha256": "c753899871693614f489d3e2fd725b34432ee083b857b510c3e1a673b885bfb1",
+          "source_crop": [
+            1764,
+            1764,
+            2324,
+            2324
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "sagittarius_pisces/card_05.jpg",
+          "sha256": "c77a3525ed393a67d46a42a268f8c5f9ace44d232246a2bcdfbe7208240bbe8c",
+          "source_crop": [
+            2348,
+            1764,
+            2908,
+            2324
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "sagittarius_pisces/card_06.jpg",
+          "sha256": "8b504c9771630f97efa09cfca1a6f5a781799fbb203d5a7d95b7575d69b87b4c",
+          "source_crop": [
+            2932,
+            1764,
+            3492,
+            2324
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 46,
+          "body_lines": 3,
+          "unclipped": true
+        }
+      ],
+      "youtube_video": {
+        "path": "sagittarius_pisces/youtube_vertical.mp4",
+        "sha256": "52075711c1ff23a3d1ff86823a62567018245c0106475a31efd6f576c40d1e81",
+        "width": 1080,
+        "height": 1920,
+        "duration_seconds": 72,
+        "card_durations": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "fps": 24,
+        "audio_streams": 0
+      },
+      "caption": "Ανοιχτός ορίζοντας. Ευαίσθητη καρδιά.\n\nΤοξότης με ωροσκόπο Ιχθύες: έξι κάρτες για το συμβολικό πάντρεμα ελευθερίας, φαντασίας και τρυφερότητας. Εσύ πού νιώθεις περισσότερο ο εαυτός σου;\n\nΨυχαγωγική, συμβολική αστρολογία — όχι επιστημονική περιγραφή προσωπικότητας ή πρόβλεψη. Οι φωτορεαλιστικές εικόνες και τα πρόσωπα είναι φανταστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ζώδια #Τοξότης #Ιχθύες #Ωροσκόπος #ΙστορίεςΠουΜαςΑγγίζουν"
+    },
+    {
+      "id": "bus_waited",
+      "title": "Το λεωφορείο που περίμενε",
+      "time": "22:00",
+      "fingerprint": "emotional_fiction|adult_night_school_first_day_bus_driver_waits_graduation_thanks",
+      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "bus_waited/card_01.jpg",
+          "sha256": "2dce0dd48832220f1035d840e0268bed32ed7f67f42efdfaaa8bbeaec67e92c1",
+          "source_crop": [
+            12,
+            1764,
+            572,
+            2324
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 52,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "bus_waited/card_02.jpg",
+          "sha256": "6d3887029f00e7f08d344513ecb683dace24eaf9dbe92b82ba034184a3d4112a",
+          "source_crop": [
+            596,
+            1764,
+            1156,
+            2324
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "bus_waited/card_03.jpg",
+          "sha256": "780db6ebd90386d3fe98770490149c86c8ff4fe5f15f08356ea45ec6c473dde1",
+          "source_crop": [
+            1180,
+            1764,
+            1740,
+            2324
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "bus_waited/card_04.jpg",
+          "sha256": "7bc87621deffc381f4c160b16ccc0b6c31c656596e2c3fb24830e4001471fe85",
+          "source_crop": [
+            1764,
+            1764,
+            2324,
+            2324
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "bus_waited/card_05.jpg",
+          "sha256": "019f7d5525d861adf8e01131820a9be535b3fc3c9538ad9d6c062e276526e222",
+          "source_crop": [
+            2348,
+            1764,
+            2908,
+            2324
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 48,
+          "body_lines": 4,
+          "unclipped": true
+        },
+        {
+          "path": "bus_waited/card_06.jpg",
+          "sha256": "8f99f3b662a9cf22bbd49068f2785c71c4e5a7f1e11463e6c46286355ac140a2",
+          "source_crop": [
+            2932,
+            1764,
+            3492,
+            2324
+          ],
+          "duration_seconds": 12,
+          "body_font_px": 46,
+          "body_lines": 3,
+          "unclipped": true
+        }
+      ],
+      "youtube_video": {
+        "path": "bus_waited/youtube_vertical.mp4",
+        "sha256": "eaeeafe93ca5401f5ddfd9537fc47904d95bd728faaad9b17e7c1cbf97b6db51",
+        "width": 1080,
+        "height": 1920,
+        "duration_seconds": 72,
+        "card_durations": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "fps": 24,
+        "audio_streams": 0
+      },
+      "caption": "Μερικές φορές, κάποιος κρατά μια πόρτα ανοιχτή τη στιγμή που εσύ είσαι έτοιμος να τα παρατήσεις.\n\n«Το λεωφορείο που περίμενε»: έξι κάρτες για μια επιστροφή στο σχολείο, μια μικρή καλοσύνη και μια προσπάθεια που ανήκει σε εκείνον που την κάνει.\n\nΠρωτότυπη μυθοπλαστική ιστορία. Οι φωτορεαλιστικές εικόνες και τα πρόσωπα είναι φανταστικές αναπαραστάσεις δημιουργημένες με τεχνητή νοημοσύνη.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #ΔεύτερηΕυκαιρία #Μάθηση #Καλοσύνη #ΙστορίεςΠουΜαςΑγγίζουν"
+    }
+  ]
+}

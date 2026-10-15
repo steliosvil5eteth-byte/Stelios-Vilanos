@@ -1,0 +1,614 @@
+{
+  "official_data": [
+    {
+      "id": "salary_EL",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_fte?lang=en&geo=EL&time=2024",
+      "sha256": "e68f458d403c659a91211df0401a3265da3b396de5fe1b7f85d3a0b09dedd170",
+      "data": {
+        "version": "2.0",
+        "class": "dataset",
+        "label": "Average full time adjusted salary per employee",
+        "source": "ESTAT",
+        "updated": "2025-11-12T11:00:00+0100",
+        "value": {
+          "0": 17954,
+          "1": 17954
+        },
+        "id": [
+          "freq",
+          "unit",
+          "geo",
+          "time"
+        ],
+        "size": [
+          1,
+          2,
+          1,
+          1
+        ],
+        "dimension": {
+          "freq": {
+            "label": "Time frequency",
+            "category": {
+              "index": {
+                "A": 0
+              },
+              "label": {
+                "A": "Annual"
+              }
+            }
+          },
+          "unit": {
+            "label": "Unit of measure",
+            "category": {
+              "index": {
+                "EUR": 0,
+                "NAC": 1
+              },
+              "label": {
+                "EUR": "Euro",
+                "NAC": "National currency"
+              }
+            }
+          },
+          "geo": {
+            "label": "Geopolitical entity (reporting)",
+            "category": {
+              "index": {
+                "EL": 0
+              },
+              "label": {
+                "EL": "Greece"
+              }
+            }
+          },
+          "time": {
+            "label": "Time",
+            "category": {
+              "index": {
+                "2024": 0
+              },
+              "label": {
+                "2024": "2024"
+              }
+            }
+          }
+        },
+        "extension": {
+          "lang": "EN",
+          "id": "NAMA_10_FTE",
+          "agencyId": "ESTAT",
+          "version": "1.0",
+          "datastructure": {
+            "id": "NAMA_10_FTE",
+            "agencyId": "ESTAT",
+            "version": "9.0"
+          },
+          "annotation": [
+            {
+              "type": "CREATED",
+              "date": "2022-12-19T11:16:17+0100"
+            },
+            {
+              "type": "DISSEMINATION_DOI_XML",
+              "title": "<adms:identifier xmlns:adms=\"http://www.w3.org/ns/adms#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core.html\" xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"><adms:Identifier rdf:about=\"https://doi.org/10.2908/NAMA_10_FTE\"><skos:notation rdf:datatype=\"http://purl.org/spar/datacite/doi\">10.2908/NAMA_10_FTE</skos:notation><dct:creator rdf:resource=\"http://publications.europa.eu/resource/authority/corporate-body/ESTAT\"/><dct:issued rdf:datatype=\"http://www.w3.org/2001/XMLSchema#date\">2022-12-19</dct:issued></adms:Identifier></adms:identifier>"
+            },
+            {
+              "type": "DISSEMINATION_OBJECT_TYPE",
+              "title": "DATASET"
+            },
+            {
+              "type": "DISSEMINATION_TIMESTAMP_DATA",
+              "date": "2025-11-12T11:00:00+0100"
+            },
+            {
+              "type": "DISSEMINATION_TIMESTAMP_GLOBAL",
+              "date": "2025-12-23T23:00:00+0100"
+            },
+            {
+              "type": "DISSEMINATION_TIMESTAMP_PLANNED",
+              "date": "2025-12-23T23:00:00+0100"
+            },
+            {
+              "type": "ESMS_HTML",
+              "title": "Explanatory texts (metadata)",
+              "href": "https://ec.europa.eu/eurostat/cache/metadata/en/nama_10_fte_esms.htm"
+            },
+            {
+              "type": "ESMS_SDMX",
+              "title": "Explanatory texts (metadata)",
+              "href": "https://ec.europa.eu/eurostat/api/dissemination/files?file=metadata/nama_10_fte_esms.sdmx.zip"
+            },
+            {
+              "type": "OBS_COUNT",
+              "title": "1560"
+            },
+            {
+              "type": "OBS_PERIOD_OVERALL_LATEST",
+              "title": "2024"
+            },
+            {
+              "type": "OBS_PERIOD_OVERALL_OLDEST",
+              "title": "1995"
+            },
+            {
+              "type": "SOURCE_INSTITUTIONS",
+              "text": "Eurostat"
+            },
+            {
+              "type": "UPDATE_DATA",
+              "date": "2025-11-12T11:00:00+0100"
+            },
+            {
+              "type": "UPDATE_STRUCTURE",
+              "date": "2025-11-12T11:00:00+0100"
+            }
+          ],
+          "positions-with-no-data": {
+            "freq": [],
+            "unit": [],
+            "geo": [],
+            "time": []
+          }
+        }
+      }
+    },
+    {
+      "id": "salary_DE",
+      "url": "https://ec.europa.eu/eurostat/api/dissemination/statistics/1.0/data/nama_10_fte?lang=en&geo=DE&time=2024",
+      "sha256": "bbd60ce007d2a8c8943ebd93783b0afc48c9847782cfad78075a21ade3bd54db",
+      "data": {
+        "version": "2.0",
+        "class": "dataset",
+        "label": "Average full time adjusted salary per employee",
+        "source": "ESTAT",
+        "updated": "2025-11-12T11:00:00+0100",
+        "value": {
+          "0": 53791,
+          "1": 53791
+        },
+        "id": [
+          "freq",
+          "unit",
+          "geo",
+          "time"
+        ],
+        "size": [
+          1,
+          2,
+          1,
+          1
+        ],
+        "dimension": {
+          "freq": {
+            "label": "Time frequency",
+            "category": {
+              "index": {
+                "A": 0
+              },
+              "label": {
+                "A": "Annual"
+              }
+            }
+          },
+          "unit": {
+            "label": "Unit of measure",
+            "category": {
+              "index": {
+                "EUR": 0,
+                "NAC": 1
+              },
+              "label": {
+                "EUR": "Euro",
+                "NAC": "National currency"
+              }
+            }
+          },
+          "geo": {
+            "label": "Geopolitical entity (reporting)",
+            "category": {
+              "index": {
+                "DE": 0
+              },
+              "label": {
+                "DE": "Germany"
+              }
+            }
+          },
+          "time": {
+            "label": "Time",
+            "category": {
+              "index": {
+                "2024": 0
+              },
+              "label": {
+                "2024": "2024"
+              }
+            }
+          }
+        },
+        "extension": {
+          "lang": "EN",
+          "id": "NAMA_10_FTE",
+          "agencyId": "ESTAT",
+          "version": "1.0",
+          "datastructure": {
+            "id": "NAMA_10_FTE",
+            "agencyId": "ESTAT",
+            "version": "9.0"
+          },
+          "annotation": [
+            {
+              "type": "CREATED",
+              "date": "2022-12-19T11:16:17+0100"
+            },
+            {
+              "type": "DISSEMINATION_DOI_XML",
+              "title": "<adms:identifier xmlns:adms=\"http://www.w3.org/ns/adms#\" xmlns:skos=\"http://www.w3.org/2004/02/skos/core.html\" xmlns:dct=\"http://purl.org/dc/terms/\" xmlns:rdf=\"http://www.w3.org/1999/02/22-rdf-syntax-ns#\"><adms:Identifier rdf:about=\"https://doi.org/10.2908/NAMA_10_FTE\"><skos:notation rdf:datatype=\"http://purl.org/spar/datacite/doi\">10.2908/NAMA_10_FTE</skos:notation><dct:creator rdf:resource=\"http://publications.europa.eu/resource/authority/corporate-body/ESTAT\"/><dct:issued rdf:datatype=\"http://www.w3.org/2001/XMLSchema#date\">2022-12-19</dct:issued></adms:Identifier></adms:identifier>"
+            },
+            {
+              "type": "DISSEMINATION_OBJECT_TYPE",
+              "title": "DATASET"
+            },
+            {
+              "type": "DISSEMINATION_TIMESTAMP_DATA",
+              "date": "2025-11-12T11:00:00+0100"
+            },
+            {
+              "type": "DISSEMINATION_TIMESTAMP_GLOBAL",
+              "date": "2025-12-23T23:00:00+0100"
+            },
+            {
+              "type": "DISSEMINATION_TIMESTAMP_PLANNED",
+              "date": "2025-12-23T23:00:00+0100"
+            },
+            {
+              "type": "ESMS_HTML",
+              "title": "Explanatory texts (metadata)",
+              "href": "https://ec.europa.eu/eurostat/cache/metadata/en/nama_10_fte_esms.htm"
+            },
+            {
+              "type": "ESMS_SDMX",
+              "title": "Explanatory texts (metadata)",
+              "href": "https://ec.europa.eu/eurostat/api/dissemination/files?file=metadata/nama_10_fte_esms.sdmx.zip"
+            },
+            {
+              "type": "OBS_COUNT",
+              "title": "1560"
+            },
+            {
+              "type": "OBS_PERIOD_OVERALL_LATEST",
+              "title": "2024"
+            },
+            {
+              "type": "OBS_PERIOD_OVERALL_OLDEST",
+              "title": "1995"
+            },
+            {
+              "type": "SOURCE_INSTITUTIONS",
+              "text": "Eurostat"
+            },
+            {
+              "type": "UPDATE_DATA",
+              "date": "2025-11-12T11:00:00+0100"
+            },
+            {
+              "type": "UPDATE_STRUCTURE",
+              "date": "2025-11-12T11:00:00+0100"
+            }
+          ],
+          "positions-with-no-data": {
+            "freq": [],
+            "unit": [],
+            "geo": [],
+            "time": []
+          }
+        }
+      }
+    }
+  ],
+  "photo_candidates": [
+    {
+      "group": "cover",
+      "path": "cover_1.jpg",
+      "title": "File:Attica 06-13 Athens 50 View from Philopappos - Acropolis Hill.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg/1920px-Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Attica_06-13_Athens_50_View_from_Philopappos_-_Acropolis_Hill.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "artist": "A.Savin",
+      "description": "View from Philopappos Hill in Athens (Attica, Greece) — Acropolis of Athens",
+      "sha256": "787b5204e2aac59f8061992a2438d4cfe96138ffa2a68e351ac4fcdec1090231",
+      "width": 1920,
+      "height": 1200
+    },
+    {
+      "group": "cover",
+      "path": "cover_2.jpg",
+      "title": "File:Propylaea, Athenian Acropolis (internal view), Athens cityscape. Athens, Greece.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Propylaea,_Athenian_Acropolis_(internal_view),_Athens_cityscape._Athens,_Greece.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/89/Propylaea%2C_Athenian_Acropolis_%28internal_view%29%2C_Athens_cityscape._Athens%2C_Greece.jpg/1920px-Propylaea%2C_Athenian_Acropolis_%28internal_view%29%2C_Athens_cityscape._Athens%2C_Greece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/8/89/Propylaea%2C_Athenian_Acropolis_%28internal_view%29%2C_Athens_cityscape._Athens%2C_Greece.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "artist": "Mstyslav Chernov",
+      "description": "Parthenon, Athenian Acropolis (internal view), Athens cityscape. Athens, Greece.",
+      "sha256": "a6d652b8faa3c4be6bcb47285d053946273d11ff8f7cef0688c1f0a51c8481cc",
+      "width": 1920,
+      "height": 1277
+    },
+    {
+      "group": "salary",
+      "path": "salary_1.jpg",
+      "title": "File:Skyline Frankfurt am Main 2015.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Skyline_Frankfurt_am_Main_2015.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d7/Skyline_Frankfurt_am_Main_2015.jpg/1920px-Skyline_Frankfurt_am_Main_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/d/d7/Skyline_Frankfurt_am_Main_2015.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0 de",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+      "artist": "Christian Wolf (www.c-w-design.de)",
+      "description": "Skyline of Frankfurt am Main, Germany.",
+      "sha256": "abdf92e8603732516f8d3534e9afe85a7cef8a627058db1b9366950fa5494ad0",
+      "width": 1920,
+      "height": 1349
+    },
+    {
+      "group": "salary",
+      "path": "salary_2.jpg",
+      "title": "File:Skyline Frankfurt am Main.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Skyline_Frankfurt_am_Main.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7f/Skyline_Frankfurt_am_Main.jpg/1920px-Skyline_Frankfurt_am_Main.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/7/7f/Skyline_Frankfurt_am_Main.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 2.5",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+      "artist": "Nicolas Scheuer",
+      "description": "Downtown Frankfurt am Main, Germany; seen from Deutschherrn Bridge.",
+      "sha256": "0a95f9a549c1aa1cadc059477cba822eb512641ae22af64a2b4bd357dd8c0ace",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "group": "hours",
+      "path": "hours_1.jpg",
+      "title": "File:S-Bahn at Hauptbahnhof Berlin.JPG",
+      "file_page": "https://commons.wikimedia.org/wiki/File:S-Bahn_at_Hauptbahnhof_Berlin.JPG",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/48/S-Bahn_at_Hauptbahnhof_Berlin.JPG/1920px-S-Bahn_at_Hauptbahnhof_Berlin.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/48/S-Bahn_at_Hauptbahnhof_Berlin.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "artist": "Martin Falbisoner",
+      "description": "S-Bahn at Hauptbahnhof Berlin",
+      "sha256": "75538b824733dc765702704934184adb32e8c8e93b881518ea2ab28fb640226c",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "group": "hours",
+      "path": "hours_2.jpg",
+      "title": "File:Berlin Hauptbahnhof Glasdach 0906 045.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Berlin_Hauptbahnhof_Glasdach_0906_045.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/Berlin_Hauptbahnhof_Glasdach_0906_045.jpg/1920px-Berlin_Hauptbahnhof_Glasdach_0906_045.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Berlin_Hauptbahnhof_Glasdach_0906_045.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "artist": "Ermell",
+      "description": "Unicorn balloon hanging under the glass roof of Berlin Central Station",
+      "sha256": "00bd984d48bb7d6617a36ce0dda644e616740164ecbb912b126b63e7f1ac1a5e",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "group": "prices",
+      "path": "prices_1.jpg",
+      "title": "File:Dried fruit at Athens market.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Dried_fruit_at_Athens_market.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Dried_fruit_at_Athens_market.jpg/1920px-Dried_fruit_at_Athens_market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Dried_fruit_at_Athens_market.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "artist": "Badseed",
+      "description": "Dried fruit on sale at an Athens Greece  shop, at Athinas street",
+      "sha256": "1177f9bc18ce8de851c2d2e76c45b6fc3f1a43d7da08dab3972bd7b483462a08",
+      "width": 1920,
+      "height": 2030
+    },
+    {
+      "group": "prices",
+      "path": "prices_2.jpg",
+      "title": "File:Open air Fruit Fleemarket in Athens Chiou Street Metaxourgeio 01.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Open_air_Fruit_Fleemarket_in_Athens_Chiou_Street_Metaxourgeio_01.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3c/Open_air_Fruit_Fleemarket_in_Athens_Chiou_Street_Metaxourgeio_01.jpg/1920px-Open_air_Fruit_Fleemarket_in_Athens_Chiou_Street_Metaxourgeio_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Open_air_Fruit_Fleemarket_in_Athens_Chiou_Street_Metaxourgeio_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "artist": "Eleniath43",
+      "description": "Indoors in Metaxourgio metro station in Athens Greece",
+      "sha256": "25a71f9f24b1164e9b8135506dc5936a7f5eb73c6cce195555d3597bfe2900bc",
+      "width": 1920,
+      "height": 2560
+    },
+    {
+      "group": "housing",
+      "path": "housing_1.jpg",
+      "title": "File:Kallas House.JPG",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Kallas_House.JPG",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Kallas_House.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Kallas_House.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "artist": "DIMSFIKAS",
+      "description": "Maria Callas house in Athens",
+      "sha256": "27fe712b47c3bf55a150fc7beb0002c857fa5c9820ef334f7219265f1689bfb7",
+      "width": 960,
+      "height": 1280
+    },
+    {
+      "group": "housing",
+      "path": "housing_2.jpg",
+      "title": "File:Apartment building in Athens after 1937.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Apartment_building_in_Athens_after_1937.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Apartment_building_in_Athens_after_1937.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Apartment_building_in_Athens_after_1937.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "artist": "Dimboukas",
+      "description": "An apartment building in central Athens. It was built after 1937 because the bay windows are short. Bay windows in Athens' buildings were reduced from 1.4 m to 40 cm in 1937.",
+      "sha256": "d8ed2337751ee7345af9bea3b9b3443580aafe477760d645b8f7fcbcec51a455",
+      "width": 1024,
+      "height": 768
+    },
+    {
+      "group": "education",
+      "path": "education_1.jpg",
+      "title": "File:Le Grand Synagoge de Berlin (15482886970).jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Le_Grand_Synagoge_de_Berlin_(15482886970).jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Le_Grand_Synagoge_de_Berlin_%2815482886970%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/f/f6/Le_Grand_Synagoge_de_Berlin_%2815482886970%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY 2.0",
+      "license_url": "https://creativecommons.org/licenses/by/2.0",
+      "artist": "Thomas Fisher Rare Book Library, UofT",
+      "description": "Title: Le Grand Synagoge de Berlin\nPublisher: unknown\nRights info: No known restrictions on access\n\nRepository: Thomas Fisher Rare Book Library, University of Toronto, Toronto, Ontario Canada, M5S 1A5, library.utoronto.ca/fisher",
+      "sha256": "c14c11dad876b91915a7432e229d164ccc5e8e089982a5d91d867bc9ed8d3acd",
+      "width": 1083,
+      "height": 1665
+    },
+    {
+      "group": "education",
+      "path": "education_2.jpg",
+      "title": "File:Hotel Bristol Berlin Teehalle ca. 1900.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Hotel_Bristol_Berlin_Teehalle_ca._1900.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Hotel_Bristol_Berlin_Teehalle_ca._1900.jpg/1920px-Hotel_Bristol_Berlin_Teehalle_ca._1900.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Hotel_Bristol_Berlin_Teehalle_ca._1900.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "Public domain",
+      "license_url": "",
+      "artist": "Franz Linkhorst",
+      "description": "",
+      "sha256": "5c5e6527fb363c2f0ae75fb7093c548f051b3f41367560bde91d1965b1d1f08c",
+      "width": 1920,
+      "height": 1466
+    },
+    {
+      "group": "health",
+      "path": "health_1.jpg",
+      "title": "File:View from Charité Hospital High-rise Building in Berlin, December 2019.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:View_from_Charit%C3%A9_Hospital_High-rise_Building_in_Berlin,_December_2019.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3d/View_from_Charit%C3%A9_Hospital_High-rise_Building_in_Berlin%2C_December_2019.jpg/1920px-View_from_Charit%C3%A9_Hospital_High-rise_Building_in_Berlin%2C_December_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3d/View_from_Charit%C3%A9_Hospital_High-rise_Building_in_Berlin%2C_December_2019.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "artist": "Frozenmadness",
+      "description": "View from the 17th floor of the Charité Hospital High-rise Building (south side), the glass Reichstag dome is visible on the back right",
+      "sha256": "8dbf1795a3418491c2262233b233cf2a084f349a0acca113b701644428625502",
+      "width": 1920,
+      "height": 1440
+    },
+    {
+      "group": "health",
+      "path": "health_2.jpg",
+      "title": "File:Charité Bettenhochhaus Berlin 2021-04-29 02.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Charit%C3%A9_Bettenhochhaus_Berlin_2021-04-29_02.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Charit%C3%A9_Bettenhochhaus_Berlin_2021-04-29_02.jpg/1920px-Charit%C3%A9_Bettenhochhaus_Berlin_2021-04-29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/90/Charit%C3%A9_Bettenhochhaus_Berlin_2021-04-29_02.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "artist": "Leonhard Lenz",
+      "description": "Charité bed high rise in Berlin.",
+      "sha256": "4b1122ba7098d62954851b136856865148fc2ff3ef837225810a701a578250d4",
+      "width": 1920,
+      "height": 1281
+    },
+    {
+      "group": "roads",
+      "path": "roads_1.jpg",
+      "title": "File:08 Highway near Frankfurt, Germany - Autobahn 5 - Bundesautobahn A5.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:08_Highway_near_Frankfurt,_Germany_-_Autobahn_5_-_Bundesautobahn_A5.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/08_Highway_near_Frankfurt%2C_Germany_-_Autobahn_5_-_Bundesautobahn_A5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/4/49/08_Highway_near_Frankfurt%2C_Germany_-_Autobahn_5_-_Bundesautobahn_A5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY 3.0",
+      "license_url": "https://creativecommons.org/licenses/by/3.0",
+      "artist": "Marek Ślusarczyk (Tupungato) Photo portfolio",
+      "description": "A5 highway (Autobahn 5 or Bundesautobahn A5) near Frankfurt, Germany.",
+      "sha256": "f38754fc33ad157767deec201a8686e99ab9c2ab8d3cdc144f9a4328c64dd46c",
+      "width": 1625,
+      "height": 1084
+    },
+    {
+      "group": "roads",
+      "path": "roads_2.jpg",
+      "title": "File:DHL-logistics-Koengen-Bundesstr-313-Autobahn-8-Germany-aerial-January-2014.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:DHL-logistics-Koengen-Bundesstr-313-Autobahn-8-Germany-aerial-January-2014.jpg",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/DHL-logistics-Koengen-Bundesstr-313-Autobahn-8-Germany-aerial-January-2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/3/3e/DHL-logistics-Koengen-Bundesstr-313-Autobahn-8-Germany-aerial-January-2014.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "artist": "Wiki-observer",
+      "description": "Aerial picture (roughly taken towards South) of the village of Wendlingen, Baden-Württemberg, southern Germany, facing the Koengen logistics centre of DHL that is located alongside the federal road 313. At the upper edge of the picture, the A 8 highway is visible.",
+      "sha256": "56a0711c720e9af6fc5d11a33aff40458b8dfe982608664c521f588d41713a60",
+      "width": 1600,
+      "height": 1067
+    },
+    {
+      "group": "digital",
+      "path": "digital_1.jpg",
+      "title": "File:Laptop on desk book stacks (Unsplash).jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Laptop_on_desk_book_stacks_(Unsplash).jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c0/Laptop_on_desk_book_stacks_%28Unsplash%29.jpg/1920px-Laptop_on_desk_book_stacks_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Laptop_on_desk_book_stacks_%28Unsplash%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC0",
+      "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "artist": "freddie marriage fredmarriage",
+      "description": "freddie marriage 2017",
+      "sha256": "df26203ea9f04b2b1becdcc7cc789dc505861fdf186eecdaebae64b853266de2",
+      "width": 1920,
+      "height": 1280
+    },
+    {
+      "group": "digital",
+      "path": "digital_2.jpg",
+      "title": "File:Computer mouse laptop and phone on a desk.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Computer_mouse_laptop_and_phone_on_a_desk.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c6/Computer_mouse_laptop_and_phone_on_a_desk.jpg/1920px-Computer_mouse_laptop_and_phone_on_a_desk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Computer_mouse_laptop_and_phone_on_a_desk.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 2.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "artist": "Enoch Leung",
+      "description": "A laptop computer along with a telephone and a computer mouse setting on a desk",
+      "sha256": "ded6d54288f685f61e12bd560cd246a20d851721cae815f58988624ee067d017",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "group": "closing",
+      "path": "closing_1.jpg",
+      "title": "File:Thessaloniki beach promenade.jpg",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Thessaloniki_beach_promenade.jpg",
+      "image_url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b9/Thessaloniki_beach_promenade.jpg/1920px-Thessaloniki_beach_promenade.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Thessaloniki_beach_promenade.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 4.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "artist": "Johannesjom",
+      "description": "Air photo with view of Thessaloniki from the sea",
+      "sha256": "de45ac75c6899d715bc68026b564dd8fdb5f0936b41f4c7830d3555452587ebf",
+      "width": 1920,
+      "height": 762
+    },
+    {
+      "group": "closing",
+      "path": "closing_2.jpg",
+      "title": "File:Thessalonica Montage L.png",
+      "file_page": "https://commons.wikimedia.org/wiki/File:Thessalonica_Montage_L.png",
+      "image_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Thessalonica_Montage_L.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/9/95/Thessalonica_Montage_L.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "license": "CC BY-SA 3.0",
+      "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+      "artist": "SilentResident (compilation, sources to attribute see above; if any of the sources used in the Montage are removed from Wikimedia Commons, or better ones are found, please inform its creator so that they can update it. You can contact the creator by leaving a message here: [1])",
+      "description": "Thessalonica",
+      "sha256": "6b574033661d2d977defdeba59d28702c8dc9b595a78c42da37bd47a12db45a0",
+      "width": 1200,
+      "height": 1809
+    }
+  ],
+  "errors": [],
+  "release_approved": false
+}
