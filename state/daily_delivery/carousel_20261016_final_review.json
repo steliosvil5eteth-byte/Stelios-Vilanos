@@ -1,0 +1,19 @@
+{
+  "brand_id":7076410,"date":"2026-10-16","review_status":"PASSED_FINAL_REVIEW",
+  "scope":"Eight non-narrated zodiac/fiction packages only. The country comparison is not yet approved.",
+  "media_commit":"ad2b10b33bca554d25be132fe99ab1028d1f0318",
+  "manifest_path":"media/carousel_20261016/manifest.json",
+  "manifest_sha256":"ded6974f6686fb6c9d9ab0e990f878fff8693926b57a482d98ac2474602d1c81",
+  "artifact_id":12001633011,"artifact_sha256":"50ca8e80269b1c4fc1edb1b0eb043e909f617c085634fdff40a32dac95062eda",
+  "reviewed_packages":["taurus_aquarius","guitar_home","gemini_capricorn","first_day_shoes","libra_aries","sisters_photo","sagittarius_pisces","bus_waited"],
+  "review_method":"Opened all eight exact-JPEG six-card contact sheets and all eight six-frame contact sheets decoded from the actual final MP4 files. Read every card and CTA, inspected all 48 scenes for relevance, framing, character continuity, anatomy, Greek spelling, numbering and legibility; inspected every video card and full uncropped framing. Verified every JPEG/MP4 SHA256 against the bound manifest. Decoded all eight full MP4 files successfully. Caption, title, fiction/entertainment/AI disclosures and at-most-five hashtags reviewed against the stored request.",
+  "square_cards":48,"cards_per_package":6,"dimensions":[1080,1080],
+  "videos":8,"video_dimensions":[1080,1920],"fps":24,
+  "video_durations_seconds":{"taurus_aquarius":72,"guitar_home":72,"gemini_capricorn":72,"first_day_shoes":73,"libra_aries":72,"sisters_photo":72,"sagittarius_pisces":72,"bus_waited":72},
+  "reading_time":"12 seconds per card; last first_day_shoes card 13 seconds.",
+  "audio_streams":0,"actual_audio_listening":"NOT_APPLICABLE_NO_AUDIO","narration":"none","avatar":false,
+  "corrections_verified":["Preserved complete photographs with blurred side fill instead of excessive cover-crop","Removed top branding that obscured faces; moved brand to footer","Fixed final-card truncation using explicit CFR timestamps and bounded last-frame padding"],
+  "cta":"Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+  "not_approved":"Initial failed/cropped artifact 12001656230 and any later modified files are not covered. No automatic release clearance from renderer success.",
+  "release_requirements":"Fresh live history/concurrent-session checks immediately before each create; native six-image posts on FB/IG/TikTok, full silent slideshow only on YouTube, correct platform disclosure flags; immediate live readback after every write. This QA record is not a claim of scheduling or publication."
+}
