@@ -1,0 +1,87 @@
+name: Verify hosted files for seven existing Metricool posts
+on:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/verify-metricool-seven-20261015.yml']
+permissions:
+  contents: write
+concurrency:
+  group: metricool-seven-hosted-file-verification-20261015
+  cancel-in-progress: false
+jobs:
+  verify-existing-media:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 6
+    steps:
+      - uses: actions/checkout@v4
+      - name: Read each public hosted file once and compare exact SHA256
+        run: |
+          python3 - <<'PY'
+          import concurrent.futures, datetime, hashlib, json, pathlib, urllib.request
+          root = pathlib.Path('media/carousel_repair_20261015')
+          raw = (root / 'manifest.json').read_bytes()
+          expected_manifest = '1e83fa712ebd15007c5f68a0c42642bf421610a44b3bcda08c145ab7237d4ee4'
+          if hashlib.sha256(raw).hexdigest() != expected_manifest:
+              raise RuntimeError('Source manifest differs from exact locally reviewed artifact; do not grant clearance')
+          manifest = json.loads(raw)
+          hosted = {
+              'cancer_aries': ['6172878396480812713','4220898994413037443','11529844453454506987','5163711585915231732','7237403676541065646','2023593790214826192','8172197939610563723'],
+              'virgo_sagittarius': ['9336796394996088511','14005757537908218183','5010130098137864755','9378224491147212941','11474205833005633764','11560679049661154364','3057961126954153575'],
+              'pisces_capricorn': ['18187317121260755654','4622241669824738267','5891715773253312167','3005637328498744539','18343529614724216211','9254391654330108409','7374470576825236435'],
+              'mother_light': ['16330739549654817536','133068285595665163','16821722015960529830','15738003185350393549','13335831891306773033','14179922705415688809','11592208983931623730'],
+              'breakup_message': ['17004176077098768740','1306211853811475617','6831829232005684731','14969308328109727843','4016162095037616829','9362449436133060464','15290102803891666107'],
+              'father_actions': ['9065032080235940035','9312791826214660393','16730921978600030392','7514586954123813850','8356291014730280079','14071882802932380812','12941470510068443726'],
+              'bench_flower': ['16750208347533685197','12163821735795966525','7581249278057940202','4981268942413598786','17142158633794669921','17057952593405273278','17760317482614090489']
+          }
+          tasks = []
+          for post in manifest['posts']:
+              slug = post['slug']
+              files = post['cards'] + [post['youtube_video']]
+              if len(files) != 7 or len(hosted[slug]) != 7:
+                  raise RuntimeError('Unexpected card count')
+              for index, (entry, number) in enumerate(zip(files, hosted[slug])):
+                  extension = 'mp4' if index == 6 else 'jpeg'
+                  url = 'https://static.metricool.com/planner/202610/7000636-file-' + number + '.' + extension
+                  tasks.append((slug, entry['path'], entry['sha256'], url))
+          def check(task):
+              slug, path, expected, url = task
+              result = {'slug':slug,'reviewed_file':path,'url':url,'reviewed_sha256':expected,'status':'NOT_VERIFIED'}
+              try:
+                  request = urllib.request.Request(url, headers={'User-Agent':'ExactMediaReadback/1.0'})
+                  with urllib.request.urlopen(request, timeout=35) as response:
+                      content = response.read(25000001)
+                      if len(content) > 25000000:
+                          raise ValueError('File exceeds safe 25 MB cap')
+                      actual = hashlib.sha256(content).hexdigest()
+                      result.update({'hosted_sha256':actual,'bytes':len(content),'status':'EXACT_MATCH' if actual==expected else 'DIFFERENT_BYTES'})
+              except Exception as exc:
+                  result['error'] = type(exc).__name__ + ': ' + str(exc)[:240]
+              return result
+          with concurrent.futures.ThreadPoolExecutor(max_workers=7) as executor:
+              results = list(executor.map(check,tasks))
+          report = {
+              'brand_id':7076410,
+              'checked_at_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),
+              'scope':'Read-only identity check of files already hosted for the seven existing posts. No Metricool create/update/publish requests.',
+              'reviewed_manifest_sha256':expected_manifest,
+              'files':results,
+              'exact_matches':sum(r['status']=='EXACT_MATCH' for r in results),
+              'different_bytes':sum(r['status']=='DIFFERENT_BYTES' for r in results),
+              'read_errors':sum(r['status']=='NOT_VERIFIED' for r in results),
+              'visual_qa_not_performed_by_this_workflow':True,
+              'note':'Hash equality links these hosted bytes to the separately visually reviewed files; this workflow does not itself perform visual review or grant publication approval.'
+          }
+          out=pathlib.Path('state/metricool_seven_hosted_identity_20261015.json')
+          out.parent.mkdir(parents=True,exist_ok=True)
+          out.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n',encoding='utf-8')
+          print('RESULT',report['exact_matches'],'exact;',report['different_bytes'],'different;',report['read_errors'],'unreadable')
+          PY
+      - name: Store read-only verification evidence, without Actions artifacts or cache
+        run: |
+          git config user.name 'media-readback-verifier'
+          git config user.email 'actions@users.noreply.github.com'
+          git add state/metricool_seven_hosted_identity_20261015.json
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Record exact hosted media identity check; no publishing operations'
+          git push origin HEAD:main
