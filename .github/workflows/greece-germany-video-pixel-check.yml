@@ -1,4 +1,4 @@
-name: Germany inspected pixel identity and full timeline
+name: Germany exact lossless video review evidence
 on:
   push:
     branches: [main]
@@ -23,35 +23,31 @@ jobs:
         with:
           python-version: '3.12'
           cache: ''
-      - run: pip install --no-cache-dir numpy==2.3.3 Pillow==11.3.0
-      - name: Verify real decoded reference pixels and all3840frames
+      - run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg
+          pip install --no-cache-dir numpy==2.3.3 Pillow==11.3.0
+      - name: Lossless exact MP4 visual evidence and complete timeline; no release
         run: |
           python - <<'PY'
           import pathlib,json,urllib.request,hashlib,subprocess,tempfile,datetime,traceback
           import numpy as np
           from PIL import Image
-          root=pathlib.Path('state/daily_delivery');j=json.loads((root/'greece_germany_20261015.json').read_text())
+          root=pathlib.Path('state/daily_delivery');j=json.loads((root/'greece_germany_20261015.json').read_text());r=json.loads((root/'greece_germany_20261015_staging_receipt.json').read_text())
           assert datetime.datetime.now(datetime.timezone.utc)<datetime.datetime.fromisoformat(j['lease']['expires_at'])
           assert j['lease']['token']=='cf0080df-7787-48b4-bf2a-f41d0f7263b0'
-          report={'package_id':'greece_germany','technical_only':True,'pass':False,'references':[],'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'explanation':'Downloaded encoded JPEG references differ in file bytes from Google Slides-exported images actually inspected. Pixel identity is tested, never assumed. If pixels differ this check cannot establish final visual clearance.'}
-          expected=['c55fbc600a18e1469be24a1841f9b707f03143499067679f13656b4f5ab2d2da','32820a652a9970485aa22fcdad4f44d208d32e5e0a75704aba1837d42863d6e3','14f934e2ef99c8b9b150062da56da0bdddb03ca941e555466a4bde10127f7854','02099778fe2ef7ee4b107ce4689ea561ccb36d08728d3382626b23509d195cc7','e00a3be41557d9b2496cb6f666a94479b2cd24f3fb8e258367a382c98b027328','67b9fb35ff115dba1e0ee6f68a60f6adee67a6d4e112ffee2b7bdd36b6d6f4c6','9c9d67b11ed65a7be13673de614cb5e7530c1554d61fd1230e1b506c17f4b1d6','1b621b443681e6aadfadfb5e1708675c03c849e9ed3aa1dac3bf7fc62d1f81da','f9d5cd9f415ac37a68806deecb09c5fa7f3cfe36e370550fa0c971bd481fd523','88a040a6a0af0678a4bb352d7bca7f4b2f27bc9bd7048af5e26d9abf9611c60a']
-          tmp=pathlib.Path(tempfile.mkdtemp());base='https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/53b6129c70a843e1012d6dacc2a8bce168f2e38d/media/carousel_20261016/greece_germany/'
-          def get(url,path):
-              with urllib.request.urlopen(url,timeout=45) as r:b=r.read()
-              path.write_bytes(b);return hashlib.sha256(b).hexdigest()
+          report={'package_id':'greece_germany','technical_only':True,'pass':False,'lossless_frames':[],'checked_at':datetime.datetime.now(datetime.timezone.utc).isoformat(),'requires_actual_visual_inspection_of_new_pngs':True,'prior_reference_note':'Prior Google Slides-exported JPEGs changed pixels and cannot be byte-bound as exact source references. Fresh lossless PNGs must be inspected. Prior full-frame visual impression is not treated as exact clearance.'}
+          tmp=pathlib.Path(tempfile.mkdtemp());dest=pathlib.Path('media_qa/greece_germany_20261015_lossless');dest.mkdir(exist_ok=True)
           try:
+              v=tmp/'video.mp4'
+              with urllib.request.urlopen(r['youtube']['media'],timeout=45) as response:b=response.read()
+              v.write_bytes(b);h=hashlib.sha256(b).hexdigest();assert h==j['video_review']['sha256'],'StagedMP4hashmismatch'
+              probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(v)]));vs=[s for s in probe['streams'] if s['codec_type']=='video'];assert len(vs)==1 and (vs[0]['width'],vs[0]['height'])==(1080,1920);assert vs[0]['r_frame_rate']=='24/1';assert not [s for s in probe['streams'] if s['codec_type']=='audio'];assert abs(float(probe['format']['duration'])-160)<0.1
               refs=[]
-              for i,sha in enumerate(expected,1):
-                  f=tmp/f'frame{i}.jpg';filehash=get(base+f'encoded_frame_{i:02d}.jpg',f)
-                  im=Image.open(f).convert('RGB');rgbhash=hashlib.sha256(im.tobytes()).hexdigest()
-                  report['references'].append({'card':i,'original_file_sha256':filehash,'expected_inspected_rgb_sha256':sha,'original_rgb_sha256':rgbhash,'identical_pixels':sha==rgbhash,'width':im.width,'height':im.height})
-                  b=subprocess.check_output(['ffmpeg','-v','error','-i',str(f),'-vf','scale=216:384','-pix_fmt','rgb24','-frames:v','1','-f','rawvideo','pipe:1'])
-                  refs.append(np.frombuffer(b,dtype=np.uint8).astype(np.int16))
-              receipt=json.loads((root/'greece_germany_20261015_staging_receipt.json').read_text());v=tmp/'video.mp4';h=get(receipt['youtube']['media'],v)
-              assert h==j['video_review']['sha256'],f'MP4hashmismatch:{h}'
-              probe=json.loads(subprocess.check_output(['ffprobe','-v','error','-show_streams','-show_format','-of','json',str(v)]))
-              assert len([s for s in probe['streams'] if s['codec_type']=='audio'])==0,'Unexpectedaudio'
-              assert abs(float(probe['format']['duration'])-160)<0.1
+              for i in range(10):
+                  f=dest/f'frame_{i+1:02d}.png';subprocess.run(['ffmpeg','-y','-v','error','-ss',str(i*16+8),'-i',str(v),'-frames:v','1',str(f)],check=True)
+                  im=Image.open(f).convert('RGB');report['lossless_frames'].append({'card':i+1,'path':str(f),'sha256':hashlib.sha256(f.read_bytes()).hexdigest(),'rgb_sha256':hashlib.sha256(im.tobytes()).hexdigest(),'time_seconds':i*16+8})
+                  b=subprocess.check_output(['ffmpeg','-v','error','-i',str(f),'-vf','scale=216:384','-pix_fmt','rgb24','-frames:v','1','-f','rawvideo','pipe:1']);refs.append(np.frombuffer(b,dtype=np.uint8).astype(np.int16))
               ef=open(tmp/'err','wb');p=subprocess.Popen(['ffmpeg','-v','error','-xerror','-i',str(v),'-vf','scale=216:384','-pix_fmt','rgb24','-f','rawvideo','pipe:1'],stdout=subprocess.PIPE,stderr=ef)
               n=0;sz=216*384*3;mx=[0.]*10;bad=[]
               while True:
@@ -63,17 +59,16 @@ jobs:
                   if err>5:bad.append(n)
                   n+=1
               rc=p.wait();ef.close();assert rc==0,(tmp/'err').read_text();assert n==3840,f'Wrongframecount{n}'
-              report['video']={'url':receipt['youtube']['media'],'sha256':h,'full_decode_error_free':True,'frame_count':n,'duration_seconds':160,'seconds_per_card':16,'max_mean_rgb_error_per_card':mx,'unexpected_frames':bad[:20],'audio_review':'NOT_APPLICABLE_NO_AUDIO_STREAM'}
-              report['pass']=all(x['identical_pixels'] for x in report['references']) and not bad
+              report['video']={'url':r['youtube']['media'],'sha256':h,'full_decode_error_free':True,'frame_count':n,'duration_seconds':160,'seconds_per_card':16,'max_mean_rgb_error_per_card':mx,'unexpected_frames':bad[:20],'audio_review':'NOT_APPLICABLE_NO_AUDIO_STREAM'}
+              report['pass']=not bad
           except Exception as e:report['error']=repr(e);report['traceback']=traceback.format_exc()
-          dest=pathlib.Path('media_qa/greece_germany_20261015_video_pixel_check.json');dest.write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
-          print(json.dumps(report,ensure_ascii=False))
+          (dest/'report.json').write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n');print(json.dumps(report,ensure_ascii=False))
           PY
-      - name: Persist report only, no publisher or artifact storage
+      - name: Store QA evidence only, no scheduler or paid artifact storage
         run: |
           git config user.name 'exact-media-verifier'
           git config user.email 'actions@users.noreply.github.com'
-          git add --sparse -f media_qa/greece_germany_20261015_video_pixel_check.json
-          git commit -m 'Record inspected pixel identity and complete timeline result [skip ci]'
+          git add --sparse -f media_qa/greece_germany_20261015_lossless
+          git commit -m 'Store exact lossless Germany MP4 frames and timeline evidence for actual review [skip ci]'
           git pull --rebase origin main
           git push origin HEAD:main
