@@ -1,0 +1,454 @@
+{
+  "brand_id": 7076410,
+  "checked_at_utc": "2026-10-15T18:37:54.373971+00:00",
+  "scope": "Read-only identity check of files already hosted for the seven existing posts. No Metricool create/update/publish requests.",
+  "reviewed_manifest_sha256": "1e83fa712ebd15007c5f68a0c42642bf421610a44b3bcda08c145ab7237d4ee4",
+  "files": [
+    {
+      "slug": "cancer_aries",
+      "reviewed_file": "cancer_aries/card_01.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-6172878396480812713.jpeg",
+      "reviewed_sha256": "222d709ad121fcdf59b7e77ad14f4954db781d0fd08fe99407a939645ceffd73",
+      "status": "DIFFERENT_BYTES",
+      "hosted_sha256": "84416614aec24bbe532309b527417705704919649b2bb2e2dbbe7aab2d2e5c77",
+      "bytes": 222162
+    },
+    {
+      "slug": "cancer_aries",
+      "reviewed_file": "cancer_aries/card_02.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-4220898994413037443.jpeg",
+      "reviewed_sha256": "b49cd27b501c044bc4302e55b84326efe052b621189e480832f9056ca582f1e2",
+      "status": "DIFFERENT_BYTES",
+      "hosted_sha256": "84a5d4f9014b9bd9a484c466b3f42ea454aa1fa9f86e7416d295c2d03e5d0d0a",
+      "bytes": 249463
+    },
+    {
+      "slug": "cancer_aries",
+      "reviewed_file": "cancer_aries/card_03.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-11529844453454506987.jpeg",
+      "reviewed_sha256": "d8c4afd76ed8e32f04f1ed59e77a36cfa27d6089789c141be943994559f6c382",
+      "status": "DIFFERENT_BYTES",
+      "hosted_sha256": "d225faa17f3ab3645b1165dfa5f1b46879e61558a1604cb7071b1f513d0d2366",
+      "bytes": 263111
+    },
+    {
+      "slug": "cancer_aries",
+      "reviewed_file": "cancer_aries/card_04.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-5163711585915231732.jpeg",
+      "reviewed_sha256": "532377eea5176e5402a1ba9846aaf652f31004ce80cb23ce054d42c867b2983f",
+      "status": "DIFFERENT_BYTES",
+      "hosted_sha256": "4002754df8f4be041d9b7a031624a9590408f0e602e5588da73806e619c2defb",
+      "bytes": 211528
+    },
+    {
+      "slug": "cancer_aries",
+      "reviewed_file": "cancer_aries/card_05.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-7237403676541065646.jpeg",
+      "reviewed_sha256": "17a9c8dfee8e82a2d7e73c43aab4cbf5da3109ebf45b1d14a90e5068bce71411",
+      "status": "DIFFERENT_BYTES",
+      "hosted_sha256": "e3228ef51f281c72761e7eae0214d0e36a4e04714ab9aca2cbbf08ad81f2b398",
+      "bytes": 265984
+    },
+    {
+      "slug": "cancer_aries",
+      "reviewed_file": "cancer_aries/card_06.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-2023593790214826192.jpeg",
+      "reviewed_sha256": "086c8d0f28e8d896f65a2314f86c3918b9f6328c50f67d39b46e2124ba007bff",
+      "status": "DIFFERENT_BYTES",
+      "hosted_sha256": "6eb156bee2082b8dba6e09c7e8a5e2c2f582b63d257b702c697f8155eb0a2317",
+      "bytes": 267696
+    },
+    {
+      "slug": "cancer_aries",
+      "reviewed_file": "cancer_aries/youtube_vertical.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-8172197939610563723.mp4",
+      "reviewed_sha256": "83e2a1da52f0d1ef538618f5514584f00c6fb91079132e7658555bfc72cb5050",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "83e2a1da52f0d1ef538618f5514584f00c6fb91079132e7658555bfc72cb5050",
+      "bytes": 6580640
+    },
+    {
+      "slug": "virgo_sagittarius",
+      "reviewed_file": "virgo_sagittarius/card_01.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-9336796394996088511.jpeg",
+      "reviewed_sha256": "6f88cb3f0c6d14059235ffb4e9f3e9b22611775da3d49fd8d2eacbeaed85149a",
+      "status": "DIFFERENT_BYTES",
+      "hosted_sha256": "462e622d648e227de4c61d15fa5e86c8eba509fa3054d03dfba80ea385ded480",
+      "bytes": 328304
+    },
+    {
+      "slug": "virgo_sagittarius",
+      "reviewed_file": "virgo_sagittarius/card_02.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-14005757537908218183.jpeg",
+      "reviewed_sha256": "5469be9c747b173007bd52b927ed3001748043e2a5e935a2724cebb65694dfc2",
+      "status": "DIFFERENT_BYTES",
+      "hosted_sha256": "abb6ed19f09fa2c3f1fbc799a1352270b4401aaf051ad6a6f28f26f761dc8b1b",
+      "bytes": 291607
+    },
+    {
+      "slug": "virgo_sagittarius",
+      "reviewed_file": "virgo_sagittarius/card_03.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-5010130098137864755.jpeg",
+      "reviewed_sha256": "2a0714af484c43eedfc9ef1214e2bb3edcb7716aa38bc94181103a096eed3b7c",
+      "status": "DIFFERENT_BYTES",
+      "hosted_sha256": "b18517018138ccd90781fa6435868ef8dd790972f6c365cdadd9970b0efc6dae",
+      "bytes": 300787
+    },
+    {
+      "slug": "virgo_sagittarius",
+      "reviewed_file": "virgo_sagittarius/card_04.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-9378224491147212941.jpeg",
+      "reviewed_sha256": "560fedd864663d8f7ee219ecd2aa696b6564482b7d4bf592a8642c6d2e5e9d7d",
+      "status": "DIFFERENT_BYTES",
+      "hosted_sha256": "b944fb122fcbd70c70d75868ef95ee9ca38e1248178eb3e71f5f19b14045ff4c",
+      "bytes": 289325
+    },
+    {
+      "slug": "virgo_sagittarius",
+      "reviewed_file": "virgo_sagittarius/card_05.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-11474205833005633764.jpeg",
+      "reviewed_sha256": "61c03a8c5c4f0150aec3fd29684bc9dc6ecfef776f8610a18447c33e21f7d39b",
+      "status": "DIFFERENT_BYTES",
+      "hosted_sha256": "837ec315faa2d3fae91a3940e165d8673a5cad093fece2a8410e417bd72d9b21",
+      "bytes": 307304
+    },
+    {
+      "slug": "virgo_sagittarius",
+      "reviewed_file": "virgo_sagittarius/card_06.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-11560679049661154364.jpeg",
+      "reviewed_sha256": "1cffeb236d44b618bf25909bd2a675259b189ffc01c952f8e789c8ddd2c70432",
+      "status": "DIFFERENT_BYTES",
+      "hosted_sha256": "78c581e31969edf974aeb1fb0fb31520e85bf4713d78956bef2b1af39f63e15e",
+      "bytes": 231712
+    },
+    {
+      "slug": "virgo_sagittarius",
+      "reviewed_file": "virgo_sagittarius/youtube_vertical.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-3057961126954153575.mp4",
+      "reviewed_sha256": "54d3708f68c2623f7a13575d1e8a8514c8010ca40c1c28ef3e194bd2211ccde6",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "54d3708f68c2623f7a13575d1e8a8514c8010ca40c1c28ef3e194bd2211ccde6",
+      "bytes": 6948759
+    },
+    {
+      "slug": "pisces_capricorn",
+      "reviewed_file": "pisces_capricorn/card_01.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-18187317121260755654.jpeg",
+      "reviewed_sha256": "39002bc78b06a8a1173a3a1440b4a3db992a8ed8d60c82700e5224a5ece12924",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "39002bc78b06a8a1173a3a1440b4a3db992a8ed8d60c82700e5224a5ece12924",
+      "bytes": 188177
+    },
+    {
+      "slug": "pisces_capricorn",
+      "reviewed_file": "pisces_capricorn/card_02.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-4622241669824738267.jpeg",
+      "reviewed_sha256": "9d881ddcba9ada4e9c01347a38eee4e45b2131841348b9d99f334134fd3e1c8f",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "9d881ddcba9ada4e9c01347a38eee4e45b2131841348b9d99f334134fd3e1c8f",
+      "bytes": 181995
+    },
+    {
+      "slug": "pisces_capricorn",
+      "reviewed_file": "pisces_capricorn/card_03.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-5891715773253312167.jpeg",
+      "reviewed_sha256": "e8e5f62fc0b29877f2b66a9f32536ecd287d5457ebfe31966a5ad8538328da2b",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "e8e5f62fc0b29877f2b66a9f32536ecd287d5457ebfe31966a5ad8538328da2b",
+      "bytes": 195271
+    },
+    {
+      "slug": "pisces_capricorn",
+      "reviewed_file": "pisces_capricorn/card_04.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-3005637328498744539.jpeg",
+      "reviewed_sha256": "c4879490d36a3d3d3e080622a56f888507549b1b425bfddac6e67172de20570b",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "c4879490d36a3d3d3e080622a56f888507549b1b425bfddac6e67172de20570b",
+      "bytes": 270917
+    },
+    {
+      "slug": "pisces_capricorn",
+      "reviewed_file": "pisces_capricorn/card_05.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-18343529614724216211.jpeg",
+      "reviewed_sha256": "a9b2588f47d6f84662e3e055d5f8191c16ae222939fd2b7800ad01b2cf185494",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "a9b2588f47d6f84662e3e055d5f8191c16ae222939fd2b7800ad01b2cf185494",
+      "bytes": 206295
+    },
+    {
+      "slug": "pisces_capricorn",
+      "reviewed_file": "pisces_capricorn/card_06.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-9254391654330108409.jpeg",
+      "reviewed_sha256": "e72790be11cd49213f8ad8556e7fb198f9b7b12ed3357b7c59d40fa9d7311694",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "e72790be11cd49213f8ad8556e7fb198f9b7b12ed3357b7c59d40fa9d7311694",
+      "bytes": 188678
+    },
+    {
+      "slug": "pisces_capricorn",
+      "reviewed_file": "pisces_capricorn/youtube_vertical.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-7374470576825236435.mp4",
+      "reviewed_sha256": "0b36cd055c5257a07b45c985ef3eeef9befa1bfa9b8f116f8127b127b895ffd7",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "0b36cd055c5257a07b45c985ef3eeef9befa1bfa9b8f116f8127b127b895ffd7",
+      "bytes": 6821866
+    },
+    {
+      "slug": "mother_light",
+      "reviewed_file": "mother_light/card_01.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-16330739549654817536.jpeg",
+      "reviewed_sha256": "8ca7fa93fc05c9e0bf45148cd02418e43fca1128aa07562fd3ba562a25004268",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "8ca7fa93fc05c9e0bf45148cd02418e43fca1128aa07562fd3ba562a25004268",
+      "bytes": 182529
+    },
+    {
+      "slug": "mother_light",
+      "reviewed_file": "mother_light/card_02.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-133068285595665163.jpeg",
+      "reviewed_sha256": "c0cf63bae05d1e83838876374a81e92a46cce2b5af6d5aa12f809c6f180e7e23",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "c0cf63bae05d1e83838876374a81e92a46cce2b5af6d5aa12f809c6f180e7e23",
+      "bytes": 303213
+    },
+    {
+      "slug": "mother_light",
+      "reviewed_file": "mother_light/card_03.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-16821722015960529830.jpeg",
+      "reviewed_sha256": "d0baaa15533e5f71e749b1489a78d110c7fa90c6d5b11eb0545b4514b3220a24",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "d0baaa15533e5f71e749b1489a78d110c7fa90c6d5b11eb0545b4514b3220a24",
+      "bytes": 186576
+    },
+    {
+      "slug": "mother_light",
+      "reviewed_file": "mother_light/card_04.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-15738003185350393549.jpeg",
+      "reviewed_sha256": "d6551d00ef9e29c00b890ddcfbf86c48f0d98ef25e0380538f7fade926ba7fec",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "d6551d00ef9e29c00b890ddcfbf86c48f0d98ef25e0380538f7fade926ba7fec",
+      "bytes": 175410
+    },
+    {
+      "slug": "mother_light",
+      "reviewed_file": "mother_light/card_05.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-13335831891306773033.jpeg",
+      "reviewed_sha256": "97bc7c3e70e0ccaea4668d2c1b27d4fbf52cbb26c9e135672202d42d04ff4deb",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "97bc7c3e70e0ccaea4668d2c1b27d4fbf52cbb26c9e135672202d42d04ff4deb",
+      "bytes": 292127
+    },
+    {
+      "slug": "mother_light",
+      "reviewed_file": "mother_light/card_06.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-14179922705415688809.jpeg",
+      "reviewed_sha256": "5894f97f9daeffd554f5b5b8c888072d909393d4d7f3008b342954f664e6a727",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "5894f97f9daeffd554f5b5b8c888072d909393d4d7f3008b342954f664e6a727",
+      "bytes": 221630
+    },
+    {
+      "slug": "mother_light",
+      "reviewed_file": "mother_light/youtube_vertical.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-11592208983931623730.mp4",
+      "reviewed_sha256": "03680fbd29e2efda53aafc86bc474082de58e58313f23ac08d66e0dbf9bcda1e",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "03680fbd29e2efda53aafc86bc474082de58e58313f23ac08d66e0dbf9bcda1e",
+      "bytes": 6742018
+    },
+    {
+      "slug": "breakup_message",
+      "reviewed_file": "breakup_message/card_01.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-17004176077098768740.jpeg",
+      "reviewed_sha256": "e14ea7da0f447fcb14c3e8457baf7e3ec06df0f5d1e8f33a9221e6722cc8f49e",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "e14ea7da0f447fcb14c3e8457baf7e3ec06df0f5d1e8f33a9221e6722cc8f49e",
+      "bytes": 229526
+    },
+    {
+      "slug": "breakup_message",
+      "reviewed_file": "breakup_message/card_02.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-1306211853811475617.jpeg",
+      "reviewed_sha256": "7e93654d2cbc19f601d6c9bae2a31864da9ed5f9d9633794be705fab7b24eddb",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "7e93654d2cbc19f601d6c9bae2a31864da9ed5f9d9633794be705fab7b24eddb",
+      "bytes": 218833
+    },
+    {
+      "slug": "breakup_message",
+      "reviewed_file": "breakup_message/card_03.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-6831829232005684731.jpeg",
+      "reviewed_sha256": "ef877cd71056add9de68604c8a1c64e956b04bd7bd06fc114c816b1df1b43e05",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "ef877cd71056add9de68604c8a1c64e956b04bd7bd06fc114c816b1df1b43e05",
+      "bytes": 240503
+    },
+    {
+      "slug": "breakup_message",
+      "reviewed_file": "breakup_message/card_04.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-14969308328109727843.jpeg",
+      "reviewed_sha256": "e387590447ee1244c85c1a1c8154b0dd837bb4d14e98051c4dcc8afb399c94a4",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "e387590447ee1244c85c1a1c8154b0dd837bb4d14e98051c4dcc8afb399c94a4",
+      "bytes": 180947
+    },
+    {
+      "slug": "breakup_message",
+      "reviewed_file": "breakup_message/card_05.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-4016162095037616829.jpeg",
+      "reviewed_sha256": "9e6080e71993f9796b78a7b02f48402c496547a1503997706e9161ed6d7a7820",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "9e6080e71993f9796b78a7b02f48402c496547a1503997706e9161ed6d7a7820",
+      "bytes": 193564
+    },
+    {
+      "slug": "breakup_message",
+      "reviewed_file": "breakup_message/card_06.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-9362449436133060464.jpeg",
+      "reviewed_sha256": "3c5063e38b1900015bed58d0725cd061e961a7d75a83115b9e964ce167fffd5c",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "3c5063e38b1900015bed58d0725cd061e961a7d75a83115b9e964ce167fffd5c",
+      "bytes": 200985
+    },
+    {
+      "slug": "breakup_message",
+      "reviewed_file": "breakup_message/youtube_vertical.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-15290102803891666107.mp4",
+      "reviewed_sha256": "94660485432fcbfe7093a9545cb35edc68339c9b62664af59c3f26ebda2f8cf8",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "94660485432fcbfe7093a9545cb35edc68339c9b62664af59c3f26ebda2f8cf8",
+      "bytes": 6526746
+    },
+    {
+      "slug": "father_actions",
+      "reviewed_file": "father_actions/card_01.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-9065032080235940035.jpeg",
+      "reviewed_sha256": "0442e5afa9e80e3ef28eda7749f26f6f4358f05eef9f034b2c2441fb515170dc",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "0442e5afa9e80e3ef28eda7749f26f6f4358f05eef9f034b2c2441fb515170dc",
+      "bytes": 177568
+    },
+    {
+      "slug": "father_actions",
+      "reviewed_file": "father_actions/card_02.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-9312791826214660393.jpeg",
+      "reviewed_sha256": "ac107194aa9da25f2b74720ddaa327edb8f36ef3aa28922949b7ea98dc7b8b3b",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "ac107194aa9da25f2b74720ddaa327edb8f36ef3aa28922949b7ea98dc7b8b3b",
+      "bytes": 187986
+    },
+    {
+      "slug": "father_actions",
+      "reviewed_file": "father_actions/card_03.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-16730921978600030392.jpeg",
+      "reviewed_sha256": "2d9ebc9e74c60c7df00f87a77d9e83b94d928ebf7322c386e1819b50a8e91807",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "2d9ebc9e74c60c7df00f87a77d9e83b94d928ebf7322c386e1819b50a8e91807",
+      "bytes": 161680
+    },
+    {
+      "slug": "father_actions",
+      "reviewed_file": "father_actions/card_04.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-7514586954123813850.jpeg",
+      "reviewed_sha256": "90b78d5f173e7ba5a1ffd481d1a3bca0d92b1501692cde28f59a47a1560830fd",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "90b78d5f173e7ba5a1ffd481d1a3bca0d92b1501692cde28f59a47a1560830fd",
+      "bytes": 165379
+    },
+    {
+      "slug": "father_actions",
+      "reviewed_file": "father_actions/card_05.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-8356291014730280079.jpeg",
+      "reviewed_sha256": "8258ebb4e241ebe69e2b05b7f66efe9cd8f1b7062431596816bc154281e11a1d",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "8258ebb4e241ebe69e2b05b7f66efe9cd8f1b7062431596816bc154281e11a1d",
+      "bytes": 170406
+    },
+    {
+      "slug": "father_actions",
+      "reviewed_file": "father_actions/card_06.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-14071882802932380812.jpeg",
+      "reviewed_sha256": "da83ddbf3d0e281044515e39ce4aece393cfbfd449d947ca060e74b3e23cbf7d",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "da83ddbf3d0e281044515e39ce4aece393cfbfd449d947ca060e74b3e23cbf7d",
+      "bytes": 228738
+    },
+    {
+      "slug": "father_actions",
+      "reviewed_file": "father_actions/youtube_vertical.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-12941470510068443726.mp4",
+      "reviewed_sha256": "7298c0ac09824543422545093fae012afd3c2f67757d097e20b124add3189719",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "7298c0ac09824543422545093fae012afd3c2f67757d097e20b124add3189719",
+      "bytes": 6328375
+    },
+    {
+      "slug": "bench_flower",
+      "reviewed_file": "bench_flower/card_01.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-16750208347533685197.jpeg",
+      "reviewed_sha256": "bf62b167592a2ddaead1ac60dcecfcbdb76e43db4b5f0dab29cc10b88c5e0552",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "bf62b167592a2ddaead1ac60dcecfcbdb76e43db4b5f0dab29cc10b88c5e0552",
+      "bytes": 275492
+    },
+    {
+      "slug": "bench_flower",
+      "reviewed_file": "bench_flower/card_02.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-12163821735795966525.jpeg",
+      "reviewed_sha256": "4cd19212eabda4d9ed18418c29c4100a5abc5decd899742aa9e61cf6aebcd1d4",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "4cd19212eabda4d9ed18418c29c4100a5abc5decd899742aa9e61cf6aebcd1d4",
+      "bytes": 224117
+    },
+    {
+      "slug": "bench_flower",
+      "reviewed_file": "bench_flower/card_03.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-7581249278057940202.jpeg",
+      "reviewed_sha256": "c74647c999826eef1906c61e60b380271bc6451e0712cea558186548b329d8ca",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "c74647c999826eef1906c61e60b380271bc6451e0712cea558186548b329d8ca",
+      "bytes": 216468
+    },
+    {
+      "slug": "bench_flower",
+      "reviewed_file": "bench_flower/card_04.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-4981268942413598786.jpeg",
+      "reviewed_sha256": "7d4f39421ee598ee56d5c45ba310267e2c298d8f959c6acf415127d3d863039c",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "7d4f39421ee598ee56d5c45ba310267e2c298d8f959c6acf415127d3d863039c",
+      "bytes": 306509
+    },
+    {
+      "slug": "bench_flower",
+      "reviewed_file": "bench_flower/card_05.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-17142158633794669921.jpeg",
+      "reviewed_sha256": "1cff7b3cb834ab02e2776e8d247b4498662c184e9989e62cba502f6cb93e34a2",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "1cff7b3cb834ab02e2776e8d247b4498662c184e9989e62cba502f6cb93e34a2",
+      "bytes": 191149
+    },
+    {
+      "slug": "bench_flower",
+      "reviewed_file": "bench_flower/card_06.jpg",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-17057952593405273278.jpeg",
+      "reviewed_sha256": "4a13a8ba3dcb803578c6207ba4bc2d72132da8b83d01a51196ee187bdc3d0288",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "4a13a8ba3dcb803578c6207ba4bc2d72132da8b83d01a51196ee187bdc3d0288",
+      "bytes": 193079
+    },
+    {
+      "slug": "bench_flower",
+      "reviewed_file": "bench_flower/youtube_vertical.mp4",
+      "url": "https://static.metricool.com/planner/202610/7000636-file-17760317482614090489.mp4",
+      "reviewed_sha256": "e976ca5192a4f04d3c95681e439d3875d4ba0055e9287d38d52b2fee9ebefee4",
+      "status": "EXACT_MATCH",
+      "hosted_sha256": "e976ca5192a4f04d3c95681e439d3875d4ba0055e9287d38d52b2fee9ebefee4",
+      "bytes": 6915664
+    }
+  ],
+  "exact_matches": 37,
+  "different_bytes": 12,
+  "read_errors": 0,
+  "visual_qa_not_performed_by_this_workflow": true,
+  "note": "Hash equality links these hosted bytes to the separately visually reviewed files; this workflow does not itself perform visual review or grant publication approval."
+}
