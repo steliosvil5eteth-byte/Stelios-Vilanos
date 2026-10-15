@@ -1,0 +1,51 @@
+name: Review candidates for seven existing carousels
+on:
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/carousel-repair-20261015.yml'
+permissions:
+  contents: write
+concurrency:
+  group: carousel-repair-20261015
+  cancel-in-progress: false
+jobs:
+  prepare-review-candidates:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install local rendering dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install 'Pillow==11.3.0'
+      - name: Prepare candidates without publishing
+        run: |
+          python production/carousel_repair_20261015/prepare.py --source media/carousel_eight_20261014 --out media/carousel_repair_20261015 --video
+          find media/carousel_repair_20261015 -name 'video_frame_*.png' -delete
+          find media/carousel_repair_20261015 -name '*.ffconcat' -delete
+          mkdir -p .qa_snapshot
+          cp state/content_history.json .qa_snapshot/content_history.json
+      - name: Save immutable review artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: carousel-seven-final-review-candidates
+          path: |
+            media/carousel_repair_20261015
+            .qa_snapshot/content_history.json
+          include-hidden-files: true
+          retention-days: 1
+      - name: Save candidate media only; never grant QA clearance
+        run: |
+          git config user.name 'carousel-media-builder'
+          git config user.email 'actions@users.noreply.github.com'
+          git add -f media/carousel_repair_20261015
+          if git diff --cached --quiet; then exit 0; fi
+          git commit -m 'Store seven exact-CTA carousel and vertical candidates; final review required'
+          git push origin HEAD:main
