@@ -1,0 +1,92 @@
+{
+  "package_id": "greece_germany",
+  "verification": "TECHNICAL_STAGING_AND_TIMELINE_ONLY",
+  "visual_review_reference": "state/daily_delivery/greece_germany_20261015.json",
+  "checked_at": "2026-10-15T20:32:14.014932+00:00",
+  "native": [
+    {
+      "index": 1,
+      "url": "https://static.metricool.com/planner/202610/7000636-file-91704027111708286.jpeg",
+      "sha256": "6b9ab32b7d019197f360ea27856f4779e1e0b81fe8c7e2323af63e29c00bee3c",
+      "expected_sha256": "6b9ab32b7d019197f360ea27856f4779e1e0b81fe8c7e2323af63e29c00bee3c",
+      "exact_match": true
+    },
+    {
+      "index": 2,
+      "url": "https://static.metricool.com/planner/202610/7000636-file-13508995064891491383.jpeg",
+      "sha256": "b5536b4b2725bffb7d07324ef7230f84d0b8fe9cf47f17fae9ae95aff8494620",
+      "expected_sha256": "b5536b4b2725bffb7d07324ef7230f84d0b8fe9cf47f17fae9ae95aff8494620",
+      "exact_match": true
+    },
+    {
+      "index": 3,
+      "url": "https://static.metricool.com/planner/202610/7000636-file-4945439759676995147.jpeg",
+      "sha256": "b03e4d645caa2e1c434950a06b530a2019105e0c11d3f90f609ca58f3d00b6ed",
+      "expected_sha256": "b03e4d645caa2e1c434950a06b530a2019105e0c11d3f90f609ca58f3d00b6ed",
+      "exact_match": true
+    },
+    {
+      "index": 4,
+      "url": "https://static.metricool.com/planner/202610/7000636-file-4821781298166201055.jpeg",
+      "sha256": "4eedc04e8ec688a96d287d433b769d022c573ca55da8ceaa8758b433232a67d5",
+      "expected_sha256": "4eedc04e8ec688a96d287d433b769d022c573ca55da8ceaa8758b433232a67d5",
+      "exact_match": true
+    },
+    {
+      "index": 5,
+      "url": "https://static.metricool.com/planner/202610/7000636-file-9152325519958025985.jpeg",
+      "sha256": "29e05daa1a95c305c2ca5951937f436e27e5a8cc2caead9a5d5e8704cc5b1abb",
+      "expected_sha256": "29e05daa1a95c305c2ca5951937f436e27e5a8cc2caead9a5d5e8704cc5b1abb",
+      "exact_match": true
+    },
+    {
+      "index": 6,
+      "url": "https://static.metricool.com/planner/202610/7000636-file-10772885378828234669.jpeg",
+      "sha256": "1dab6e62367eecb6f9feb0974fc7eac34345d48d74c1d5b2da19886142253977",
+      "expected_sha256": "1dab6e62367eecb6f9feb0974fc7eac34345d48d74c1d5b2da19886142253977",
+      "exact_match": true
+    },
+    {
+      "index": 7,
+      "url": "https://static.metricool.com/planner/202610/7000636-file-4790257292447340980.jpeg",
+      "sha256": "1b1ba70dea1beabbc69b51a4f1790db1b324bb83230a8c56a4e3c1974b3f4339",
+      "expected_sha256": "1b1ba70dea1beabbc69b51a4f1790db1b324bb83230a8c56a4e3c1974b3f4339",
+      "exact_match": true
+    },
+    {
+      "index": 8,
+      "url": "https://static.metricool.com/planner/202610/7000636-file-1847984416972756555.jpeg",
+      "sha256": "117e22e64620a33d71610cf5fcbd3c9f5e6dd40230dce97c3ea0d65f6d2b1122",
+      "expected_sha256": "117e22e64620a33d71610cf5fcbd3c9f5e6dd40230dce97c3ea0d65f6d2b1122",
+      "exact_match": true
+    },
+    {
+      "index": 9,
+      "url": "https://static.metricool.com/planner/202610/7000636-file-8381328251104968983.jpeg",
+      "sha256": "f63e5358bea3a2512bd57c4e085d198ae788709bd1cce27cb40054f3ccb9883b",
+      "expected_sha256": "f63e5358bea3a2512bd57c4e085d198ae788709bd1cce27cb40054f3ccb9883b",
+      "exact_match": true
+    },
+    {
+      "index": 10,
+      "url": "https://static.metricool.com/planner/202610/7000636-file-8544648081831482845.jpeg",
+      "sha256": "f8cd3788c79174fe3f4924e2515cd30e95fe70f5139333fe9fc71e595cc8675b",
+      "expected_sha256": "f8cd3788c79174fe3f4924e2515cd30e95fe70f5139333fe9fc71e595cc8675b",
+      "exact_match": true
+    }
+  ],
+  "youtube": {
+    "url": "https://static.metricool.com/planner/202610/7000636-file-14959495777782119582.mp4",
+    "sha256": "aae79c120f7cf67006ad27ff9c3565250618630c16db8e64ed49379cf7915604",
+    "exact_match": true,
+    "duration_seconds": 160.0,
+    "width": 1080,
+    "height": 1920,
+    "audio_streams": 0,
+    "audio_review": "NOT_APPLICABLE_NO_AUDIO_STREAM",
+    "full_decode_error_free": false
+  },
+  "pass": false,
+  "does_not_create_or_publish": true,
+  "error": ""
+}
