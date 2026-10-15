@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "program_id": "CAROUSEL_FOUR_FOUR_ONE_20261016",
+  "authoritative_for_current_carousel_program": true,
+  "user_instruction_date": "2026-10-15",
+  "effective_date": "2026-10-16",
+  "timezone": "Europe/Athens",
+  "brand": {"id": 7076410, "name": "Ιστορίες που μας αγγίζουν"},
+  "scope_interpretation": "The user's 8,1 is interpreted as eight plus one: four zodiac/ascendant carousels, four emotional stories, and one Greece versus another country comparison. A newer explicit user clarification supersedes this interpretation.",
+  "daily_logical_posts": 9,
+  "daily_provider_deliveries": 36,
+  "crosspost_same_logical_set": true,
+  "providers": ["facebook", "instagram", "tiktok", "youtube"],
+  "series": [
+    {"id": "zodiac_ascendant", "daily_count": 4, "cards": 6, "disclosure": "Ψυχαγωγική, συμβολική αστρολογία· όχι επιστημονική πρόβλεψη ή περιγραφή προσωπικότητας."},
+    {"id": "emotional_fiction", "daily_count": 4, "cards": 6, "disclosure": "Πρωτότυπη μυθοπλαστική ιστορία."},
+    {"id": "greece_vs_country", "daily_count": 1, "cards": 10, "one_other_country_per_episode": true, "comparison_scope": ["εργασία και αποδοχές", "κόστος ζωής και στέγαση", "παιδεία", "υγεία", "υποδομές και μεταφορές", "δημόσιες υπηρεσίες", "καθημερινότητα"], "sources": "Use credible primary sources, comparable definitions and years, dates of data, and clear gross/net and purchasing-power distinctions. Never fabricate numbers or national stereotypes. Store sources with the post and include them in the caption/description."}
+  ],
+  "card_dimensions": {"width": 1080, "height": 1080},
+  "narration": "none_for_these_series",
+  "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+  "max_hashtags": 5,
+  "formats": {
+    "facebook": "Native POST with all separate square photo cards, not a Reel substitute.",
+    "instagram": "Native POST carousel with isAiGenerated=true for generated visuals.",
+    "tiktok": "Native photo carousel with autoAddMusic=true where supported. AI disclosure must be explicit on cards and in caption; isAigc alone is not a photo disclosure because the connector ignores it for photos.",
+    "youtube": "Complete vertical slideshow containing the entire square cards without cropping, sufficient reading time (11 seconds per card or more when needed), correct audience and AI disclosure. Silent is permitted for these non-narrated series. If music is used it must be a single rights-cleared and actually reviewed instrumental layer."
+  },
+  "operational_schedule": {
+    "reconcile_and_produce_local": "06:00",
+    "publication_slots_are_editorial_not_performance_claims": true,
+    "slots": [
+      {"time": "07:00", "series": "zodiac_ascendant"},
+      {"time": "09:00", "series": "emotional_fiction"},
+      {"time": "11:00", "series": "zodiac_ascendant"},
+      {"time": "13:00", "series": "emotional_fiction"},
+      {"time": "15:00", "series": "zodiac_ascendant"},
+      {"time": "17:00", "series": "emotional_fiction"},
+      {"time": "18:30", "series": "greece_vs_country"},
+      {"time": "20:00", "series": "zodiac_ascendant"},
+      {"time": "22:00", "series": "emotional_fiction"}
+    ],
+    "nightly_read_only_audit_local": "23:30",
+    "safe_catchup": "Quality before time. Schedule delayed reviewed material only in a safe unoccupied future slot; never backdate or exceed the current daily logical set."
+  },
+  "execution": {
+    "user_authorized": true,
+    "automation_id": "6ab92ba43c348191a319b62319599d8c",
+    "automation_is_not_proof_of_ready_queue": true,
+    "delivery_requires_all_quality_and_history_gates": true,
+    "legacy_narrated_publishers_must_remain_disabled": true,
+    "config_platform_growth_strategy_json_role": "Historical narrated-video program only. Its old 15/60 targets and TTS requirements do not define this newer non-narrated carousel program. Do not run the old publisher for this program."
+  },
+  "quality_gates": {
+    "fresh_reconciliation_sources": ["Metricool brand 7076410 live history and queue", "Notion Social Media Content Archive", "repository history and shared delivery journal"],
+    "before_every_create": "Repeat live duplicate and concurrent-session checks comparing series, substantive plot/topic, title, hook, caption, fingerprint, numbering and exact media hashes. Existing correct Published or active Scheduled-PENDING provider deliveries must not be recreated.",
+    "dedupe": "One original logical story may be sent once to each of the four platforms. Do not recycle it on another day, even with different images or title. Select a genuinely different replacement for duplicate topics.",
+    "exact_final_review": "Inspect all the actual final images/videos, Greek text, spelling, order, card count, scene relevance, crop, mobile readability, CTA, caption, hashtags, duration, actual audio where present, platform format and AI/fiction disclosure. Metadata, render success or an old approval do not pass QA. Bind PASSED_FINAL_REVIEW to the exact hashes.",
+    "fail_closed": true,
+    "block_only_affected_post_or_provider": true,
+    "no_blind_retry": true,
+    "no_backdate": true,
+    "after_every_write": "Immediately read back brand, date, local time, timezone, providers, media, draft, autoPublish, IDs, UUIDs and each provider status. PENDING is not Published. Retry only a failed provider after verifying no publication occurred.",
+    "unresolved_source_disagreement": "Do not publish uncertain material. Reconcile the specific disagreement with current evidence."
+  },
+  "cost_policy": "FREE_ONLY: no purchased credits, new charges, upgrades, premium generation or limit circumvention.",
+  "queue_target": {"minimum_complete_days": 2, "preferred_complete_days": 3, "logical_packages": [18, 27], "drafts_and_placeholders_do_not_count": true},
+  "notion_policy_page_id": "3e5f2345-b318-812d-a35a-f980ed6d873a",
+  "known_duplicate_exclusion": "Λέων με ωροσκόπο Σκορπιό — already published on 14 October 2026 to all four platforms; do not repost."
+}
