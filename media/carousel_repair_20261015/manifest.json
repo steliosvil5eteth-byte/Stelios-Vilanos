@@ -1,0 +1,287 @@
+{
+  "brand_id": 7076410,
+  "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+  "source_manifest_sha256": "4b6e6400f859e226f6f80db7356bb588986cb2b55f4516f0056ca7cfa7364546",
+  "posts": [
+    {
+      "slug": "cancer_aries",
+      "title": "Καρκίνος με ωροσκόπο Κριό",
+      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "cancer_aries/card_01.jpg",
+          "sha256": "222d709ad121fcdf59b7e77ad14f4954db781d0fd08fe99407a939645ceffd73"
+        },
+        {
+          "path": "cancer_aries/card_02.jpg",
+          "sha256": "b49cd27b501c044bc4302e55b84326efe052b621189e480832f9056ca582f1e2"
+        },
+        {
+          "path": "cancer_aries/card_03.jpg",
+          "sha256": "d8c4afd76ed8e32f04f1ed59e77a36cfa27d6089789c141be943994559f6c382"
+        },
+        {
+          "path": "cancer_aries/card_04.jpg",
+          "sha256": "532377eea5176e5402a1ba9846aaf652f31004ce80cb23ce054d42c867b2983f"
+        },
+        {
+          "path": "cancer_aries/card_05.jpg",
+          "sha256": "17a9c8dfee8e82a2d7e73c43aab4cbf5da3109ebf45b1d14a90e5068bce71411"
+        },
+        {
+          "path": "cancer_aries/card_06.jpg",
+          "sha256": "086c8d0f28e8d896f65a2314f86c3918b9f6328c50f67d39b46e2124ba007bff"
+        }
+      ],
+      "youtube_video": {
+        "path": "cancer_aries/youtube_vertical.mp4",
+        "sha256": "83e2a1da52f0d1ef538618f5514584f00c6fb91079132e7658555bfc72cb5050",
+        "duration_seconds": 66,
+        "width": 1080,
+        "height": 1920,
+        "fps": 24,
+        "audio_streams": 0
+      }
+    },
+    {
+      "slug": "virgo_sagittarius",
+      "title": "Παρθένος με ωροσκόπο Τοξότη",
+      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "virgo_sagittarius/card_01.jpg",
+          "sha256": "6f88cb3f0c6d14059235ffb4e9f3e9b22611775da3d49fd8d2eacbeaed85149a"
+        },
+        {
+          "path": "virgo_sagittarius/card_02.jpg",
+          "sha256": "5469be9c747b173007bd52b927ed3001748043e2a5e935a2724cebb65694dfc2"
+        },
+        {
+          "path": "virgo_sagittarius/card_03.jpg",
+          "sha256": "2a0714af484c43eedfc9ef1214e2bb3edcb7716aa38bc94181103a096eed3b7c"
+        },
+        {
+          "path": "virgo_sagittarius/card_04.jpg",
+          "sha256": "560fedd864663d8f7ee219ecd2aa696b6564482b7d4bf592a8642c6d2e5e9d7d"
+        },
+        {
+          "path": "virgo_sagittarius/card_05.jpg",
+          "sha256": "61c03a8c5c4f0150aec3fd29684bc9dc6ecfef776f8610a18447c33e21f7d39b"
+        },
+        {
+          "path": "virgo_sagittarius/card_06.jpg",
+          "sha256": "1cffeb236d44b618bf25909bd2a675259b189ffc01c952f8e789c8ddd2c70432"
+        }
+      ],
+      "youtube_video": {
+        "path": "virgo_sagittarius/youtube_vertical.mp4",
+        "sha256": "54d3708f68c2623f7a13575d1e8a8514c8010ca40c1c28ef3e194bd2211ccde6",
+        "duration_seconds": 66,
+        "width": 1080,
+        "height": 1920,
+        "fps": 24,
+        "audio_streams": 0
+      }
+    },
+    {
+      "slug": "pisces_capricorn",
+      "title": "Ιχθύς με ωροσκόπο Αιγόκερω",
+      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "pisces_capricorn/card_01.jpg",
+          "sha256": "39002bc78b06a8a1173a3a1440b4a3db992a8ed8d60c82700e5224a5ece12924"
+        },
+        {
+          "path": "pisces_capricorn/card_02.jpg",
+          "sha256": "9d881ddcba9ada4e9c01347a38eee4e45b2131841348b9d99f334134fd3e1c8f"
+        },
+        {
+          "path": "pisces_capricorn/card_03.jpg",
+          "sha256": "e8e5f62fc0b29877f2b66a9f32536ecd287d5457ebfe31966a5ad8538328da2b"
+        },
+        {
+          "path": "pisces_capricorn/card_04.jpg",
+          "sha256": "c4879490d36a3d3d3e080622a56f888507549b1b425bfddac6e67172de20570b"
+        },
+        {
+          "path": "pisces_capricorn/card_05.jpg",
+          "sha256": "a9b2588f47d6f84662e3e055d5f8191c16ae222939fd2b7800ad01b2cf185494"
+        },
+        {
+          "path": "pisces_capricorn/card_06.jpg",
+          "sha256": "e72790be11cd49213f8ad8556e7fb198f9b7b12ed3357b7c59d40fa9d7311694"
+        }
+      ],
+      "youtube_video": {
+        "path": "pisces_capricorn/youtube_vertical.mp4",
+        "sha256": "0b36cd055c5257a07b45c985ef3eeef9befa1bfa9b8f116f8127b127b895ffd7",
+        "duration_seconds": 66,
+        "width": 1080,
+        "height": 1920,
+        "fps": 24,
+        "audio_streams": 0
+      }
+    },
+    {
+      "slug": "mother_light",
+      "title": "Η μητέρα που άφηνε το φως αναμμένο",
+      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "mother_light/card_01.jpg",
+          "sha256": "8ca7fa93fc05c9e0bf45148cd02418e43fca1128aa07562fd3ba562a25004268"
+        },
+        {
+          "path": "mother_light/card_02.jpg",
+          "sha256": "c0cf63bae05d1e83838876374a81e92a46cce2b5af6d5aa12f809c6f180e7e23"
+        },
+        {
+          "path": "mother_light/card_03.jpg",
+          "sha256": "d0baaa15533e5f71e749b1489a78d110c7fa90c6d5b11eb0545b4514b3220a24"
+        },
+        {
+          "path": "mother_light/card_04.jpg",
+          "sha256": "d6551d00ef9e29c00b890ddcfbf86c48f0d98ef25e0380538f7fade926ba7fec"
+        },
+        {
+          "path": "mother_light/card_05.jpg",
+          "sha256": "97bc7c3e70e0ccaea4668d2c1b27d4fbf52cbb26c9e135672202d42d04ff4deb"
+        },
+        {
+          "path": "mother_light/card_06.jpg",
+          "sha256": "5894f97f9daeffd554f5b5b8c888072d909393d4d7f3008b342954f664e6a727"
+        }
+      ],
+      "youtube_video": {
+        "path": "mother_light/youtube_vertical.mp4",
+        "sha256": "03680fbd29e2efda53aafc86bc474082de58e58313f23ac08d66e0dbf9bcda1e",
+        "duration_seconds": 66,
+        "width": 1080,
+        "height": 1920,
+        "fps": 24,
+        "audio_streams": 0
+      }
+    },
+    {
+      "slug": "breakup_message",
+      "title": "Το μήνυμα που ήρθε αργά",
+      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "breakup_message/card_01.jpg",
+          "sha256": "e14ea7da0f447fcb14c3e8457baf7e3ec06df0f5d1e8f33a9221e6722cc8f49e"
+        },
+        {
+          "path": "breakup_message/card_02.jpg",
+          "sha256": "7e93654d2cbc19f601d6c9bae2a31864da9ed5f9d9633794be705fab7b24eddb"
+        },
+        {
+          "path": "breakup_message/card_03.jpg",
+          "sha256": "ef877cd71056add9de68604c8a1c64e956b04bd7bd06fc114c816b1df1b43e05"
+        },
+        {
+          "path": "breakup_message/card_04.jpg",
+          "sha256": "e387590447ee1244c85c1a1c8154b0dd837bb4d14e98051c4dcc8afb399c94a4"
+        },
+        {
+          "path": "breakup_message/card_05.jpg",
+          "sha256": "9e6080e71993f9796b78a7b02f48402c496547a1503997706e9161ed6d7a7820"
+        },
+        {
+          "path": "breakup_message/card_06.jpg",
+          "sha256": "3c5063e38b1900015bed58d0725cd061e961a7d75a83115b9e964ce167fffd5c"
+        }
+      ],
+      "youtube_video": {
+        "path": "breakup_message/youtube_vertical.mp4",
+        "sha256": "94660485432fcbfe7093a9545cb35edc68339c9b62664af59c3f26ebda2f8cf8",
+        "duration_seconds": 66,
+        "width": 1080,
+        "height": 1920,
+        "fps": 24,
+        "audio_streams": 0
+      }
+    },
+    {
+      "slug": "father_actions",
+      "title": "Ο πατέρας που δεν έλεγε σ’ αγαπώ",
+      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "father_actions/card_01.jpg",
+          "sha256": "0442e5afa9e80e3ef28eda7749f26f6f4358f05eef9f034b2c2441fb515170dc"
+        },
+        {
+          "path": "father_actions/card_02.jpg",
+          "sha256": "ac107194aa9da25f2b74720ddaa327edb8f36ef3aa28922949b7ea98dc7b8b3b"
+        },
+        {
+          "path": "father_actions/card_03.jpg",
+          "sha256": "2d9ebc9e74c60c7df00f87a77d9e83b94d928ebf7322c386e1819b50a8e91807"
+        },
+        {
+          "path": "father_actions/card_04.jpg",
+          "sha256": "90b78d5f173e7ba5a1ffd481d1a3bca0d92b1501692cde28f59a47a1560830fd"
+        },
+        {
+          "path": "father_actions/card_05.jpg",
+          "sha256": "8258ebb4e241ebe69e2b05b7f66efe9cd8f1b7062431596816bc154281e11a1d"
+        },
+        {
+          "path": "father_actions/card_06.jpg",
+          "sha256": "da83ddbf3d0e281044515e39ce4aece393cfbfd449d947ca060e74b3e23cbf7d"
+        }
+      ],
+      "youtube_video": {
+        "path": "father_actions/youtube_vertical.mp4",
+        "sha256": "7298c0ac09824543422545093fae012afd3c2f67757d097e20b124add3189719",
+        "duration_seconds": 66,
+        "width": 1080,
+        "height": 1920,
+        "fps": 24,
+        "audio_streams": 0
+      }
+    },
+    {
+      "slug": "bench_flower",
+      "title": "Το λουλούδι στο παγκάκι",
+      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "bench_flower/card_01.jpg",
+          "sha256": "bf62b167592a2ddaead1ac60dcecfcbdb76e43db4b5f0dab29cc10b88c5e0552"
+        },
+        {
+          "path": "bench_flower/card_02.jpg",
+          "sha256": "4cd19212eabda4d9ed18418c29c4100a5abc5decd899742aa9e61cf6aebcd1d4"
+        },
+        {
+          "path": "bench_flower/card_03.jpg",
+          "sha256": "c74647c999826eef1906c61e60b380271bc6451e0712cea558186548b329d8ca"
+        },
+        {
+          "path": "bench_flower/card_04.jpg",
+          "sha256": "7d4f39421ee598ee56d5c45ba310267e2c298d8f959c6acf415127d3d863039c"
+        },
+        {
+          "path": "bench_flower/card_05.jpg",
+          "sha256": "1cff7b3cb834ab02e2776e8d247b4498662c184e9989e62cba502f6cb93e34a2"
+        },
+        {
+          "path": "bench_flower/card_06.jpg",
+          "sha256": "4a13a8ba3dcb803578c6207ba4bc2d72132da8b83d01a51196ee187bdc3d0288"
+        }
+      ],
+      "youtube_video": {
+        "path": "bench_flower/youtube_vertical.mp4",
+        "sha256": "e976ca5192a4f04d3c95681e439d3875d4ba0055e9287d38d52b2fee9ebefee4",
+        "duration_seconds": 66,
+        "width": 1080,
+        "height": 1920,
+        "fps": 24,
+        "audio_streams": 0
+      }
+    }
+  ]
+}
