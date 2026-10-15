@@ -1,4 +1,4 @@
-name: Greece Germany comparison review 20261016
+name: Greece Germany reserved comparison render
 on:
   push:
     branches: [main]
@@ -13,31 +13,76 @@ jobs:
   render:
     if: github.event.repository.private == false
     runs-on: ubuntu-latest
-    timeout-minutes: 12
+    timeout-minutes: 10
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
         with:
           sparse-checkout: |
             production/carousel_20261016
             media/carousel_20261016/country_sources
-      - uses: actions/setup-python@v5
+            state/daily_delivery
+      - uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065
         with:
           python-version: '3.12'
-      - run: |
+          cache: ''
+      - name: Verify exclusive existing Germany reservation
+        run: |
+          python - <<'PY'
+          import json,datetime
+          d=json.load(open('state/daily_delivery/carousel_20261016.json'))
+          p=next(p for p in d['packages'] if p['id']=='greece_germany')
+          r=p['reservation']
+          assert r['token']=='cf0080df-7787-48b4-bf2a-f41d0f7263b0'
+          assert r['owner']=='interactive-greece-germany-20261015'
+          assert p['publication_date_override']=='2026-10-15'
+          assert datetime.datetime.now(datetime.timezone.utc)<datetime.datetime.fromisoformat(r['expires_at'])
+          assert not r['provider_writes'], 'Do not render again after a provider write'
+          PY
+      - name: Install free local render dependencies without package caches
+        run: |
           sudo apt-get update -qq
           sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
-          pip install Pillow==11.3.0
-      - run: python production/carousel_20261016/build_country.py
-      - uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: greece-germany-20261016-exact-review
-          path: media/carousel_20261016/greece_germany
-          retention-days: 2
-      - run: |
+          pip install --no-cache-dir Pillow==11.3.0
+      - name: Apply narrowly scoped layout and source corrections
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          p=Path('production/carousel_20261016/build_country.py')
+          s=p.read_text()
+          anchor='allcards=[];frames=[]'
+          assert s.count(anchor)==1
+          patch="""
+          cards[0]['body']='Ο μεγαλύτερος μισθός λέει όλη την ιστορία;\\nΔέκα κάρτες για τη ζωή στις δύο χώρες.'
+          cards[0]['source']='Στοιχεία 2023–2025 · Πηγές στην περιγραφή'
+          cards[3].update(heading='ΕΠΙΠΕΔΟ ΤΙΜΩΝ · 2025',gr='87,4',de='108,3',source='Eurostat / Statistics Norway · προσωρινά 2025')
+          sources[2]={'id':'prices','url':'https://www.ssb.no/en/priser-og-prisindekser/konsumpriser/statistikk/sammenlikning-av-prisniva-i-europa','definition':'2025 preliminary household final consumption price-level indices, EU27=100: Greece87.4/Germany108.3. Statistics Norway, source Eurostat, updated19June2026. Not inflation or purchasing power.'}
+          cards[5].update(heading='ΠΑΙΔΕΙΑ · PISA 2025',label='15χρονοι με βασικό επίπεδο στα μαθηματικά',gr='50%',de='66%',note='Επίπεδο 2 και πάνω. Ένας μαθησιακός δείκτης, όχι συνολική βαθμολογία της παιδείας.',source='OECD · PISA 2025 · σημειώματα χωρών')
+          sources[4]={'id':'education','url':'https://www.oecd.org/en/publications/pisa-2025-results-volume-i-country-notes_2d4ff9ea-en/greece_dd7e428b-en.html','germany_url':'https://www.oecd.org/de/publications/pisa-2025-ergebnisse-band-i_eade94cd-de/deutschland_8a1ce578-de.html','definition':'PISA2025, share of15-year-old students reaching at least Level2 in mathematics: Greece50%,Germany66%. Both current OECD country notes verified15Oct2026. Not a comprehensive education ranking.'}
+          cards[6].update(gr='81,8 χρόνια',de='81,1 χρόνια',source='OECD · Health at a Glance 2025 · στοιχεία 2023')
+          sources[5]={'id':'health','url':'https://www.oecd.org/en/publications/health-at-a-glance-2025_8f9e3f98-en/full-report/indicator-overview-country-dashboards-and-major-trends_368ac397.html','definition':'2023 life expectancy at birth, both sexes, OECD Health at a Glance2025 dashboard: Greece81.8,Germany81.1years. Not hospital-quality ranking.'}
+          cards[9]['body']='Μισθός, σπίτι, χρόνος, υπηρεσίες.\\nΤι μετρά περισσότερο στη δική σου ζωή;'
+          manifest['date']='2026-10-15'
+          manifest['time']=None
+          manifest['reservation_token']='cf0080df-7787-48b4-bf2a-f41d0f7263b0'
+          manifest['publication_requested_before']='2026-10-16T00:00:00+03:00'
+          """
+          import textwrap
+          s=s.replace(anchor,textwrap.dedent(patch)+'\n'+anchor)
+          s=s.replace("text(im,c['body'],(45,565,990,245),48,40,True)","text(im,c['body'],(45,565,990,250),46,36,True)")
+          s=s.replace('2022–2025','2023–2025').replace('Εκδοτική σύγκριση για16/10/2026','Εκδοτική σύγκριση για15/10/2026')
+          s=s.replace("s['url']]","s['url'],s.get('germany_url','')]")
+          compile(s,str(p),'exec')
+          p.write_text(s)
+          PY
+      - name: Render only; no scheduler, no TTS, no external generation
+        run: python production/carousel_20261016/build_country.py
+      - name: Store candidate files in repository, not billed artifact storage
+        run: |
+          cp production/carousel_20261016/build_country.py media/carousel_20261016/greece_germany/build_country_used.py
           git config user.name 'carousel-media-builder'
           git config user.email 'actions@users.noreply.github.com'
           git add --sparse -f media/carousel_20261016/greece_germany
-          git commit -m 'Store Greece Germany comparison candidate; final visual QA required'
+          git commit -m 'Store reserved Greece Germany candidate; exact visual QA still required [skip ci]'
+          git restore production/carousel_20261016/build_country.py
           git pull --rebase origin main
           git push origin HEAD:main
