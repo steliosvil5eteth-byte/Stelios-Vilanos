@@ -1,0 +1,19 @@
+{
+ "id":"greece_italy","date":"2026-10-16","time":"18:30","timezone":"Europe/Athens","brand_id":7076410,
+ "review_status":"PASSED_FINAL_REVIEW","passed_final_review":true,
+ "media_commit":"80c535e607406c13ef371288c17a45d07767dcae",
+ "manifest_path":"media/carousel_20261016/greece_italy/manifest.json",
+ "manifest_sha256":"8dca2b67aabf08af297556304de950e60f05bb6f1def6226901b69152172f2ed",
+ "manifest_git_blob":"e8ca332e160d911932a4636bb25392ffc69a4b85",
+ "artifact_id":12003649928,"artifact_sha256":"4f648c8d03e6d91aee7f3a6cd7198f4303ffc0dacf20cffe7dbd85df7740fbf4",
+ "cards":10,"card_dimensions":[1080,1080],
+ "video":{"sha256":"9e3f848752483eb0e6d459c6966918b336fff569ef6e888e14320307c28baf5a","duration_seconds":160,"dimensions":[1080,1920],"fps":24,"seconds_per_card":16,"audio_streams":0},
+ "actual_audio_listening":"NOT_APPLICABLE_NO_AUDIO","narration":false,"music":false,"avatar":false,
+ "visual_review":"Opened five pairs of the exact final ten JPEGs and read every Greek heading, figure, note, source, photo credit, numbering and CTA. Inspected all photographs for scene relevance, full framing and quality. Then decoded the complete actual MP4 successfully, regenerated ten frames locally from that same final MP4, and visually inspected all ten full vertical scenes in two contact sheets. No clipped text or missing card; sufficient authored reading time, complete ending and CTA.",
+ "hash_verification":"All ten final JPEGs and the MP4 match the SHA256 entries in the reviewed manifest. The fetched immutable repository manifest blob matches the locally inspected artifact exactly.",
+ "factual_review":{"salary_2024_EUR":[17954,33523],"actual_weekly_hours_2024":[39.8,36.1],"price_level_EU100_2024":[86.5,97.0],"housing_income_share_2024_pct":[35.5,13.6],"PISA_math_2022":[430,471],"life_expectancy_2023_years":[81.6,83.8],"road_deaths_per_million_2024":[64,51],"digital_services_opinion_2025_pct":[78,73],"country_order":["Greece","Italy"],"method":"Salary, hours and housing read from stored direct Eurostat API responses with explicit dimension selection. Prices checked in NSI Eurostat PPP table17Dec2025; PISA in OECD country snapshot tables; health in EC Knowledge4Policy2023column; road safety in EC final2024table; opinion in both EC DigitalDecade2025reports. Definitions, different years and limitations appear on cards and in SOURCES.md. No net-pay, current2026price or overall country-ranking claim."},
+ "photographs":"Real licensed photographs, not AI-generated. Attribution and license on every card, full original pages and license links in SOURCES.md, linked in caption. Original watermarks retained. Rejected irrelevant initial library/hospital/housing search results were replaced. Road photograph description confirms both rail and motorway viaducts; no claim about a particular road's crash rate.",
+ "platform_disclosure":{"instagram_isAiGenerated":false,"youtube_isAiGeneratedContent":false,"reason":"Actual photographs, layout and statistical text; no synthetic realistic visual scenes."},
+ "caption_reviewed":true,"hashtags":5,"cta":"Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+ "release_requirements":"Fresh live Metricool, available Notion search and shared-reservation checks before each create; native ten-image carousel on FB/IG/TikTok, full160s silent video on YouTube. Immediate live readback after every write. This review record is not proof of scheduling or publication."
+}
