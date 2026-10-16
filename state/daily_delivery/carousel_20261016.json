@@ -1,42 +1,413 @@
 {
- "date":"2026-10-16","timezone":"Europe/Athens","brand_id":7076410,
- "program_id":"CAROUSEL_FOUR_FOUR_ONE_20261016","session_owner":"interactive-20261015-tomorrow-queue",
- "status":"EIGHT_SCHEDULED_NINTH_IN_FINAL_PREPARATION","passed_final_review":false,
- "counts":{"daily_target":9,"logical_scheduled":8,"provider_scheduled_pending":32,"published":0,"failed":0,"remaining_logical":1},
- "history_check":{"metricool_tomorrow":"Initially empty; sixteen new records now live-readback verified,32PENDING. Do not recreate.","notion":"Fresh full supported history and focused SQL reads succeeded initially. Query Data Source later hit its plan limit and was not retried. Ordinary search/fetch/create remained explicitly available. All eight archive pages created and fetched back with matching IDs/times.","repository_content_history_blob":"6f5a961a05f13d0e5d2c1ea5e7c265c1e2d820f2","repository_local_snapshot_verified_matches_live_blob":true,"rejected_duplicate_candidate":"Pottery story replaced with distinct adult-sisters photograph reconciliation."},
- "approved_regular_media":{"commit":"ad2b10b33bca554d25be132fe99ab1028d1f0318","manifest":"media/carousel_20261016/manifest.json","manifest_sha256":"ded6974f6686fb6c9d9ab0e990f878fff8693926b57a482d98ac2474602d1c81","qa_record":"state/daily_delivery/carousel_20261016_final_review.json","qa_status":"PASSED_FINAL_REVIEW","transport_audit":"media/carousel_20261016/transport_audit/report.json","exact_metricool_files_verified":56,"all_identical_to_reviewed_files":true},
- "packages":[
-  {"id":"taurus_aquarius","time":"07:00","title":"Ταύρος με ωροσκόπο Υδροχόο","fingerprint":"zodiac_ascendant|taurus_aquarius|roots_not_chains","cards":6,"status":"SCHEDULED_PENDING","qa_status":"PASSED_FINAL_REVIEW","notion_page_id":"3faf2345-b318-810a-bd86-d975d2932f3c"},
-  {"id":"guitar_home","time":"09:00","title":"Η κιθάρα που γύρισε σπίτι","fingerprint":"emotional_fiction|father_sells_guitar_for_adult_daughter_lessons_daughter_recovers_instrument_duet","cards":6,"status":"SCHEDULED_PENDING","qa_status":"PASSED_FINAL_REVIEW","notion_page_id":"3faf2345-b318-81a1-8e13-ff7939a16de3"},
-  {"id":"gemini_capricorn","time":"11:00","title":"Δίδυμοι με ωροσκόπο Αιγόκερω","fingerprint":"zodiac_ascendant|gemini_capricorn|many_ideas_one_plan","cards":6,"status":"SCHEDULED_PENDING","qa_status":"PASSED_FINAL_REVIEW","notion_page_id":"3faf2345-b318-8165-9879-e69317322b63"},
-  {"id":"first_day_shoes","time":"13:00","title":"Τα παπούτσια της πρώτης μέρας","fingerprint":"emotional_fiction|cobbler_repairs_interview_shoes_free_woman_pays_forward","cards":6,"status":"SCHEDULED_PENDING","qa_status":"PASSED_FINAL_REVIEW","notion_page_id":"3faf2345-b318-81ee-b74e-cd25ca990ea0"},
-  {"id":"libra_aries","time":"15:00","title":"Ζυγός με ωροσκόπο Κριό","fingerprint":"zodiac_ascendant|libra_aries|kindness_and_assertiveness","cards":6,"status":"SCHEDULED_PENDING","qa_status":"PASSED_FINAL_REVIEW","notion_page_id":"3faf2345-b318-8114-8629-ccb291e74dc8"},
-  {"id":"sisters_photo","time":"17:00","title":"Η φωτογραφία που δεν πέταξε","fingerprint":"emotional_fiction|estranged_adult_sisters_taped_holiday_photo_reconciliation_new_photo","cards":6,"status":"SCHEDULED_PENDING","qa_status":"PASSED_FINAL_REVIEW","notion_page_id":"3faf2345-b318-8122-9a14-d8c03f1014e7"},
-  {"id":"greece_germany","time":"18:30","title":"Ελλάδα VS Γερμανία: πέρα από τον μισθό","fingerprint":"greece_vs_country|germany|salary_hours_prices_housing_education_health_roads_digital","cards":10,"status":"RESERVED_FOR_EXPLICIT_20261015_REQUEST","original_planned_date":"2026-10-16","publication_date_override":"2026-10-15","do_not_generate_or_publish_again_on_20261016":true,"override_reason":"Latest direct user request: publish the first Greece-versus-country comparison with Germany today before midnight, 15 October. Same logical package, not a new story or a second delivery.","reservation":{"owner":"interactive-greece-germany-20261015","token":"cf0080df-7787-48b4-bf2a-f41d0f7263b0","expires_at":"2026-10-15T23:58:00+03:00","scope":"greece_germany only; factual research, final media and single delivery per provider; not permission to change other packages","previous_status":"RESEARCH_REQUIRED","production_started":false,"passed_final_review":false,"provider_writes":[]}},
-  {"id":"greece_italy","time":"18:30","title":"Ελλάδα VS Ιταλία: πέρα από τα στερεότυπα","fingerprint":"greece_vs_country|italy|salary_hours_prices_housing_education_health_roads_digital","cards":10,"status":"FINAL_CANDIDATE_RENDERING_NOT_APPROVED","passed_final_review":false,"reservation_path":"state/daily_delivery/greece_italy_20261016.json"},
-  {"id":"sagittarius_pisces","time":"20:00","title":"Τοξότης με ωροσκόπο Ιχθύες","fingerprint":"zodiac_ascendant|sagittarius_pisces|freedom_and_empathy","cards":6,"status":"SCHEDULED_PENDING","qa_status":"PASSED_FINAL_REVIEW","notion_page_id":"3faf2345-b318-811c-a8a5-d66f88984ba4"},
-  {"id":"bus_waited","time":"22:00","title":"Το λεωφορείο που περίμενε","fingerprint":"emotional_fiction|adult_night_school_first_day_bus_driver_waits_graduation_thanks","cards":6,"status":"SCHEDULED_PENDING","qa_status":"PASSED_FINAL_REVIEW","notion_page_id":"3faf2345-b318-8165-9b0c-fd9422e0c5f9"}
- ],
- "exclude_from_20261016_daily_count":["greece_germany"],
- "providers":["facebook","instagram","tiktok","youtube"],
- "delivery_defaults":{"brand_id":7076410,"date":"2026-10-16","timezone":"Europe/Athens","autoPublish":true,"draft":false,"each_provider_status":"PENDING","live_readback_verified":true},
- "deliveries":[
-  {"package":"taurus_aquarius","time":"07:00","providers":["facebook","instagram","tiktok"],"id":397155834,"uuid":"-7064731777121499012","media":"six exact approved JPEGs"},
-  {"package":"taurus_aquarius","time":"07:00","providers":["youtube"],"id":397156582,"uuid":"8559103183634517575","media":"exact approved72s MP4"},
-  {"package":"guitar_home","time":"09:00","providers":["facebook","instagram","tiktok"],"id":397159770,"uuid":"229882061184321948","media":"six exact approved JPEGs"},
-  {"package":"guitar_home","time":"09:00","providers":["youtube"],"id":397160156,"uuid":"3242815696924462222","media":"exact approved72s MP4"},
-  {"package":"gemini_capricorn","time":"11:00","providers":["facebook","instagram","tiktok"],"id":397164164,"uuid":"4660307250541773393","media":"six exact approved JPEGs"},
-  {"package":"gemini_capricorn","time":"11:00","providers":["youtube"],"id":397164414,"uuid":"8511940718727482056","media":"exact approved72s MP4"},
-  {"package":"first_day_shoes","time":"13:00","providers":["facebook","instagram","tiktok"],"id":397165233,"uuid":"6891375717510562516","media":"six exact approved JPEGs"},
-  {"package":"first_day_shoes","time":"13:00","providers":["youtube"],"id":397165616,"uuid":"8809344699632862872","media":"exact approved73s MP4"},
-  {"package":"libra_aries","time":"15:00","providers":["facebook","instagram","tiktok"],"id":397166224,"uuid":"-6825701868101153590","media":"six exact approved JPEGs"},
-  {"package":"libra_aries","time":"15:00","providers":["youtube"],"id":397166562,"uuid":"-6521446115298884843","media":"exact approved72s MP4"},
-  {"package":"sisters_photo","time":"17:00","providers":["facebook","instagram","tiktok"],"id":397167398,"uuid":"4469232212384105943","media":"six exact approved JPEGs"},
-  {"package":"sisters_photo","time":"17:00","providers":["youtube"],"id":397167688,"uuid":"2538497369297340839","media":"exact approved72s MP4"},
-  {"package":"sagittarius_pisces","time":"20:00","providers":["facebook","instagram","tiktok"],"id":397169224,"uuid":"-6461060471073387549","media":"six exact approved JPEGs"},
-  {"package":"sagittarius_pisces","time":"20:00","providers":["youtube"],"id":397169482,"uuid":"1418373321443854261","media":"exact approved72s MP4"},
-  {"package":"bus_waited","time":"22:00","providers":["facebook","instagram","tiktok"],"id":397170243,"uuid":"6285301422913110984","media":"six exact approved JPEGs"},
-  {"package":"bus_waited","time":"22:00","providers":["youtube"],"id":397170595,"uuid":"715045823530877821","media":"exact approved72s MP4"}
- ],
- "note":"Eight packages are genuinely scheduled, not placeholders. Exact Metricool URLs and56byte hashes are in the transport audit. Each Notion archive was independently fetched after creation. Italy is the only incomplete ninth slot; Germany's separate Oct15 reservation is preserved and excluded from Oct16count. Do not recreate existing32PENDING destinations. Any changed media requires new exact review; no publication is claimed."
+  "date": "2026-10-16",
+  "timezone": "Europe/Athens",
+  "brand_id": 7076410,
+  "program_id": "CAROUSEL_FOUR_FOUR_ONE_20261016",
+  "session_owner": "interactive-20261015-tomorrow-queue",
+  "status": "COMPLETE_9_OF_9_SCHEDULED_PENDING",
+  "passed_final_review": true,
+  "counts": {
+    "daily_target": 9,
+    "logical_scheduled": 9,
+    "provider_scheduled_pending": 36,
+    "published": 0,
+    "failed": 0,
+    "blocked": 0,
+    "remaining_logical": 0
+  },
+  "history_check": {
+    "metricool_tomorrow": "Initially empty; sixteen new records now live-readback verified,32PENDING. Do not recreate.",
+    "notion": "Fresh full supported history and focused SQL reads succeeded initially. Query Data Source later hit its plan limit and was not retried. Ordinary search/fetch/create remained explicitly available. All eight archive pages created and fetched back with matching IDs/times.",
+    "repository_content_history_blob": "6f5a961a05f13d0e5d2c1ea5e7c265c1e2d820f2",
+    "repository_local_snapshot_verified_matches_live_blob": true,
+    "rejected_duplicate_candidate": "Pottery story replaced with distinct adult-sisters photograph reconciliation.",
+    "metricool_final": "18 live scheduled records; 9 logical packages; 36 PENDING destinations; no duplicate Greece-Italy record.",
+    "notion_final": "Full view scan before create: 265 active rows, 0 archived rows, 0 Greece-Italy duplicates. Archive page 3fbf2345-b318-817f-acbe-cf6db56f10fd created and fetched back."
+  },
+  "approved_regular_media": {
+    "commit": "ad2b10b33bca554d25be132fe99ab1028d1f0318",
+    "manifest": "media/carousel_20261016/manifest.json",
+    "manifest_sha256": "ded6974f6686fb6c9d9ab0e990f878fff8693926b57a482d98ac2474602d1c81",
+    "qa_record": "state/daily_delivery/carousel_20261016_final_review.json",
+    "qa_status": "PASSED_FINAL_REVIEW",
+    "transport_audit": "media/carousel_20261016/transport_audit/report.json",
+    "exact_metricool_files_verified": 56,
+    "all_identical_to_reviewed_files": true
+  },
+  "packages": [
+    {
+      "id": "taurus_aquarius",
+      "time": "07:00",
+      "title": "Ταύρος με ωροσκόπο Υδροχόο",
+      "fingerprint": "zodiac_ascendant|taurus_aquarius|roots_not_chains",
+      "cards": 6,
+      "status": "SCHEDULED_PENDING",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "notion_page_id": "3faf2345-b318-810a-bd86-d975d2932f3c"
+    },
+    {
+      "id": "guitar_home",
+      "time": "09:00",
+      "title": "Η κιθάρα που γύρισε σπίτι",
+      "fingerprint": "emotional_fiction|father_sells_guitar_for_adult_daughter_lessons_daughter_recovers_instrument_duet",
+      "cards": 6,
+      "status": "SCHEDULED_PENDING",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "notion_page_id": "3faf2345-b318-81a1-8e13-ff7939a16de3"
+    },
+    {
+      "id": "gemini_capricorn",
+      "time": "11:00",
+      "title": "Δίδυμοι με ωροσκόπο Αιγόκερω",
+      "fingerprint": "zodiac_ascendant|gemini_capricorn|many_ideas_one_plan",
+      "cards": 6,
+      "status": "SCHEDULED_PENDING",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "notion_page_id": "3faf2345-b318-8165-9879-e69317322b63"
+    },
+    {
+      "id": "first_day_shoes",
+      "time": "13:00",
+      "title": "Τα παπούτσια της πρώτης μέρας",
+      "fingerprint": "emotional_fiction|cobbler_repairs_interview_shoes_free_woman_pays_forward",
+      "cards": 6,
+      "status": "SCHEDULED_PENDING",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "notion_page_id": "3faf2345-b318-81ee-b74e-cd25ca990ea0"
+    },
+    {
+      "id": "libra_aries",
+      "time": "15:00",
+      "title": "Ζυγός με ωροσκόπο Κριό",
+      "fingerprint": "zodiac_ascendant|libra_aries|kindness_and_assertiveness",
+      "cards": 6,
+      "status": "SCHEDULED_PENDING",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "notion_page_id": "3faf2345-b318-8114-8629-ccb291e74dc8"
+    },
+    {
+      "id": "sisters_photo",
+      "time": "17:00",
+      "title": "Η φωτογραφία που δεν πέταξε",
+      "fingerprint": "emotional_fiction|estranged_adult_sisters_taped_holiday_photo_reconciliation_new_photo",
+      "cards": 6,
+      "status": "SCHEDULED_PENDING",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "notion_page_id": "3faf2345-b318-8122-9a14-d8c03f1014e7"
+    },
+    {
+      "id": "greece_germany",
+      "time": "18:30",
+      "title": "Ελλάδα VS Γερμανία: πέρα από τον μισθό",
+      "fingerprint": "greece_vs_country|germany|salary_hours_prices_housing_education_health_roads_digital",
+      "cards": 10,
+      "status": "RESERVED_FOR_EXPLICIT_20261015_REQUEST",
+      "original_planned_date": "2026-10-16",
+      "publication_date_override": "2026-10-15",
+      "do_not_generate_or_publish_again_on_20261016": true,
+      "override_reason": "Latest direct user request: publish the first Greece-versus-country comparison with Germany today before midnight, 15 October. Same logical package, not a new story or a second delivery.",
+      "reservation": {
+        "owner": "interactive-greece-germany-20261015",
+        "token": "cf0080df-7787-48b4-bf2a-f41d0f7263b0",
+        "expires_at": "2026-10-15T23:58:00+03:00",
+        "scope": "greece_germany only; factual research, final media and single delivery per provider; not permission to change other packages",
+        "previous_status": "RESEARCH_REQUIRED",
+        "production_started": false,
+        "passed_final_review": false,
+        "provider_writes": []
+      }
+    },
+    {
+      "id": "greece_italy",
+      "time": "18:30",
+      "title": "Ελλάδα VS Ιταλία: πέρα από τα στερεότυπα",
+      "fingerprint": "greece_vs_country|italy|salary_hours_prices_housing_education_health_roads_digital",
+      "cards": 10,
+      "status": "SCHEDULED_PENDING",
+      "passed_final_review": true,
+      "reservation_path": "state/daily_delivery/greece_italy_20261016.json",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "notion_page_id": "3fbf2345-b318-817f-acbe-cf6db56f10fd",
+      "delivery_receipt": "state/daily_delivery/greece_italy_20261016_delivery_receipt.json"
+    },
+    {
+      "id": "sagittarius_pisces",
+      "time": "20:00",
+      "title": "Τοξότης με ωροσκόπο Ιχθύες",
+      "fingerprint": "zodiac_ascendant|sagittarius_pisces|freedom_and_empathy",
+      "cards": 6,
+      "status": "SCHEDULED_PENDING",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "notion_page_id": "3faf2345-b318-811c-a8a5-d66f88984ba4"
+    },
+    {
+      "id": "bus_waited",
+      "time": "22:00",
+      "title": "Το λεωφορείο που περίμενε",
+      "fingerprint": "emotional_fiction|adult_night_school_first_day_bus_driver_waits_graduation_thanks",
+      "cards": 6,
+      "status": "SCHEDULED_PENDING",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "notion_page_id": "3faf2345-b318-8165-9b0c-fd9422e0c5f9"
+    }
+  ],
+  "exclude_from_20261016_daily_count": [
+    "greece_germany"
+  ],
+  "providers": [
+    "facebook",
+    "instagram",
+    "tiktok",
+    "youtube"
+  ],
+  "delivery_defaults": {
+    "brand_id": 7076410,
+    "date": "2026-10-16",
+    "timezone": "Europe/Athens",
+    "autoPublish": true,
+    "draft": false,
+    "each_provider_status": "PENDING",
+    "live_readback_verified": true
+  },
+  "deliveries": [
+    {
+      "package": "taurus_aquarius",
+      "time": "07:00",
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "id": 397155834,
+      "uuid": "-7064731777121499012",
+      "media": "six exact approved JPEGs"
+    },
+    {
+      "package": "taurus_aquarius",
+      "time": "07:00",
+      "providers": [
+        "youtube"
+      ],
+      "id": 397156582,
+      "uuid": "8559103183634517575",
+      "media": "exact approved72s MP4"
+    },
+    {
+      "package": "guitar_home",
+      "time": "09:00",
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "id": 397159770,
+      "uuid": "229882061184321948",
+      "media": "six exact approved JPEGs"
+    },
+    {
+      "package": "guitar_home",
+      "time": "09:00",
+      "providers": [
+        "youtube"
+      ],
+      "id": 397160156,
+      "uuid": "3242815696924462222",
+      "media": "exact approved72s MP4"
+    },
+    {
+      "package": "gemini_capricorn",
+      "time": "11:00",
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "id": 397164164,
+      "uuid": "4660307250541773393",
+      "media": "six exact approved JPEGs"
+    },
+    {
+      "package": "gemini_capricorn",
+      "time": "11:00",
+      "providers": [
+        "youtube"
+      ],
+      "id": 397164414,
+      "uuid": "8511940718727482056",
+      "media": "exact approved72s MP4"
+    },
+    {
+      "package": "first_day_shoes",
+      "time": "13:00",
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "id": 397165233,
+      "uuid": "6891375717510562516",
+      "media": "six exact approved JPEGs"
+    },
+    {
+      "package": "first_day_shoes",
+      "time": "13:00",
+      "providers": [
+        "youtube"
+      ],
+      "id": 397165616,
+      "uuid": "8809344699632862872",
+      "media": "exact approved73s MP4"
+    },
+    {
+      "package": "libra_aries",
+      "time": "15:00",
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "id": 397166224,
+      "uuid": "-6825701868101153590",
+      "media": "six exact approved JPEGs"
+    },
+    {
+      "package": "libra_aries",
+      "time": "15:00",
+      "providers": [
+        "youtube"
+      ],
+      "id": 397166562,
+      "uuid": "-6521446115298884843",
+      "media": "exact approved72s MP4"
+    },
+    {
+      "package": "sisters_photo",
+      "time": "17:00",
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "id": 397167398,
+      "uuid": "4469232212384105943",
+      "media": "six exact approved JPEGs"
+    },
+    {
+      "package": "sisters_photo",
+      "time": "17:00",
+      "providers": [
+        "youtube"
+      ],
+      "id": 397167688,
+      "uuid": "2538497369297340839",
+      "media": "exact approved72s MP4"
+    },
+    {
+      "package": "sagittarius_pisces",
+      "time": "20:00",
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "id": 397169224,
+      "uuid": "-6461060471073387549",
+      "media": "six exact approved JPEGs"
+    },
+    {
+      "package": "sagittarius_pisces",
+      "time": "20:00",
+      "providers": [
+        "youtube"
+      ],
+      "id": 397169482,
+      "uuid": "1418373321443854261",
+      "media": "exact approved72s MP4"
+    },
+    {
+      "package": "bus_waited",
+      "time": "22:00",
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "id": 397170243,
+      "uuid": "6285301422913110984",
+      "media": "six exact approved JPEGs"
+    },
+    {
+      "package": "bus_waited",
+      "time": "22:00",
+      "providers": [
+        "youtube"
+      ],
+      "id": 397170595,
+      "uuid": "715045823530877821",
+      "media": "exact approved72s MP4"
+    },
+    {
+      "package": "greece_italy",
+      "time": "18:30",
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "id": 397380646,
+      "uuid": "-606165204413429383",
+      "media": "ten exact repaired QA-passed JPEGs",
+      "status": "PENDING",
+      "draft": false,
+      "autoPublish": true
+    },
+    {
+      "package": "greece_italy",
+      "time": "18:30",
+      "providers": [
+        "youtube"
+      ],
+      "id": 397381029,
+      "uuid": "-984033149439358580",
+      "media": "exact repaired QA-passed 160s silent MP4",
+      "status": "PENDING",
+      "draft": false,
+      "autoPublish": true
+    }
+  ],
+  "note": "All nine 2026-10-16 logical packages are genuinely scheduled as 36 live-readback-verified PENDING destinations. PENDING is not Published. Greece-Italy was repaired only after actual visual QA found clipped labels on cards 2/4/6/8; exact repaired files then passed final review. Germany remains the distinct Oct15 package and is excluded from Oct16. No content is scheduled for Oct17-18; future stock is 0 complete days. Do not recreate existing records.",
+  "approved_comparison_media": {
+    "package": "greece_italy",
+    "qa_record": "state/daily_delivery/greece_italy_20261016_repaired_final_review.json",
+    "qa_status": "PASSED_FINAL_REVIEW",
+    "prior_review_revoked": true,
+    "repaired_cards": [
+      2,
+      4,
+      6,
+      8
+    ],
+    "exact_jpegs_verified": 10,
+    "exact_video_midpoint_frames_verified": 10,
+    "final_video_sha256": "5038212318a6a74a013996bdd1ecdedb4de85570d201b2dade87ce6298dac61b",
+    "repaired_manifest_sha256": "93369777379037d1aff12134c2fa4c4d07d1defd81ba1730c8fd235ff18b8b59",
+    "video": {
+      "width": 1080,
+      "height": 1920,
+      "duration_seconds": 160,
+      "audio_streams": 0
+    },
+    "cost_eur": 0
+  },
+  "future_queue": {
+    "checked_dates": [
+      "2026-10-17",
+      "2026-10-18"
+    ],
+    "complete_qa_passed_scheduled_days": 0,
+    "target_minimum_days": 2,
+    "preferred_days": 3,
+    "metricool_records_each_date": 0,
+    "status": "BELOW_TARGET_NOT_PLACEHOLDERED"
+  }
 }
