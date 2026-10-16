@@ -1,0 +1,129 @@
+{
+  "date": "2026-10-16",
+  "timezone": "Europe/Athens",
+  "brand_id": 7076410,
+  "brand_name": "Ιστορίες που μας αγγίζουν",
+  "program_id": "CAROUSEL_FOUR_FOUR_ONE_20261016",
+  "package_id": "greece_italy",
+  "slot": "18:30",
+  "title": "Ελλάδα VS Ιταλία: πέρα από τα στερεότυπα",
+  "logical_posts": 1,
+  "destinations": 4,
+  "state": "SCHEDULED_PENDING",
+  "publication_claimed": false,
+  "qa": {
+    "status": "PASSED_FINAL_REVIEW",
+    "prior_review_revoked": true,
+    "defect_found": "Cards 2, 4, 6, 8 had clipped country/source labels in the prior render.",
+    "repaired_cards": [
+      2,
+      4,
+      6,
+      8
+    ],
+    "visual_review": {
+      "exact_jpegs_reviewed": 10,
+      "exact_video_midpoint_frames_reviewed": 10,
+      "video_audio_present": false,
+      "audio_listening_required": false
+    },
+    "final_review_path": "state/daily_delivery/greece_italy_20261016_repaired_final_review.json",
+    "final_video_sha256": "5038212318a6a74a013996bdd1ecdedb4de85570d201b2dade87ce6298dac61b",
+    "repaired_manifest_sha256": "93369777379037d1aff12134c2fa4c4d07d1defd81ba1730c8fd235ff18b8b59",
+    "card_sha256": [
+      "79a2141e5b31066dcebec4dc3f19554dbb3f463ea8c271813d89b21eae09d21c",
+      "5ba43c51caa55d2f884b788157893f7bc5b82ade2faf7c471a104d8f416b2ab6",
+      "256a195cb7ce1aeec162b4e55a53472d795065d13a637c27a940dae5a4270b1c",
+      "8c2d8de59bdfd4708263f1225da126298311577de5d081e2ed985fde8c5cacfa",
+      "fec5326d7a59d7b3f8b3370d558433daaa121f53a5e92a1bda23ef2da2ef8e4e",
+      "bc17e86653a2e2d00375dd3549e602343bf43352ac9fc6cd58f611761f9f7cae",
+      "93fd5aea1a0ca2e7300517ad095fee4a000509115d3806e08318c4c9d3578deb",
+      "e70f49d3fb268608567f24a3c3954e316851fbe937b5d477f412c9b6d3488382",
+      "6e783ffb92e62be01ab469b53717780637c795e15688f5dc19addda515d849a5",
+      "ed171a2114619c40189086350b0bbe316dcb01b0d276c34c31b5e9849a6016f7"
+    ]
+  },
+  "metricool": {
+    "native": {
+      "id": 397380646,
+      "uuid": "-606165204413429383",
+      "providers": {
+        "facebook": {
+          "status": "PENDING"
+        },
+        "instagram": {
+          "status": "PENDING"
+        },
+        "tiktok": {
+          "status": "PENDING",
+          "autoAddMusic": true
+        }
+      },
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-11519840711164492623.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-9724551726082690992.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-13968344011161748541.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-8901709694292506378.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-7499044605432911155.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-14601249680761531489.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-9585244921015422569.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-8760597463082129297.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-11980857964281883743.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-12369048985722572124.jpeg"
+      ],
+      "draft": false,
+      "autoPublish": true
+    },
+    "youtube": {
+      "id": 397381029,
+      "uuid": "-984033149439358580",
+      "provider": {
+        "youtube": {
+          "status": "PENDING"
+        }
+      },
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-16239821211574084680.mp4"
+      ],
+      "type": "short",
+      "privacy": "public",
+      "madeForKids": false,
+      "isAiGeneratedContent": false,
+      "draft": false,
+      "autoPublish": true
+    },
+    "publication_date": "2026-10-16T18:30:00+03:00",
+    "immediate_live_readback_verified": true
+  },
+  "notion": {
+    "page_id": "3fbf2345-b318-817f-acbe-cf6db56f10fd",
+    "url": "https://app.notion.com/p/3fbf2345b318817facbecf6db56f10fd",
+    "readback_verified": true
+  },
+  "preflight": {
+    "live_metricool_records_before_create": 16,
+    "existing_destinations_before_create": 32,
+    "notion_active_rows_scanned": 265,
+    "notion_archived_rows_scanned": 0,
+    "duplicate_matches": 0,
+    "active_lease": "carousel-it-20261016-0600-7076410"
+  },
+  "rejected_write_attempts": [
+    {
+      "stage": "validation",
+      "reason": "GitHub raw URL interpreted as a local filename",
+      "metricool_mutation": false
+    },
+    {
+      "stage": "validation",
+      "reason": "providers supplied as strings instead of provider objects",
+      "metricool_mutation": false
+    },
+    {
+      "stage": "validation",
+      "reason": "publicationDate omitted from info object",
+      "metricool_mutation": false
+    }
+  ],
+  "cost_eur": 0
+}
