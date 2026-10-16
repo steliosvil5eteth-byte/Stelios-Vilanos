@@ -1,0 +1,69 @@
+{
+  "id": "greece_italy",
+  "date": "2026-10-16",
+  "time": "18:30",
+  "timezone": "Europe/Athens",
+  "brand_id": 7076410,
+  "review_status": "PASSED_FINAL_REVIEW",
+  "passed_final_review": true,
+  "reviewed_at_utc": "2026-10-16T03:09:39Z",
+  "supersedes": "state/daily_delivery/greece_italy_20261016_final_review.json",
+  "prior_review_revoked_reason": "Actual re-open of exact artifact exposed clipped/missing country labels and clipped source/credit text on cards 02,04,06,08. No Metricool record was created from that rejected attempt; immediate live readback returned zero records for 18:00-19:00.",
+  "repair": {
+    "script_path": "production/carousel_20261016/repair_italy_layout_20261016.py",
+    "script_commit": "741ba85522902fd37cfd044e272d5f78c55741ed",
+    "script_sha256": "b962837d133c9d88ab67bc8ecc42541cb62e787cf5ee71924474a5d4e47cafea",
+    "source_artifact_id": 12003649928,
+    "source_media_commit": "80c535e607406c13ef371288c17a45d07767dcae",
+    "method": "Rebuilt only the beige text panels of cards 02,04,06,08 from the existing licensed photographs and canonical copy; cards 01,03,05,07,09,10 remained byte-identical. Re-encoded the complete silent vertical slideshow locally with no generation credits."
+  },
+  "cards": 10,
+  "card_dimensions": [
+    1080,
+    1080
+  ],
+  "card_sha256": [
+    "79a2141e5b31066dcebec4dc3f19554dbb3f463ea8c271813d89b21eae09d21c",
+    "5ba43c51caa55d2f884b788157893f7bc5b82ade2faf7c471a104d8f416b2ab6",
+    "256a195cb7ce1aeec162b4e55a53472d795065d13a637c27a940dae5a4270b1c",
+    "8c2d8de59bdfd4708263f1225da126298311577de5d081e2ed985fde8c5cacfa",
+    "fec5326d7a59d7b3f8b3370d558433daaa121f53a5e92a1bda23ef2da2ef8e4e",
+    "bc17e86653a2e2d00375dd3549e602343bf43352ac9fc6cd58f611761f9f7cae",
+    "93fd5aea1a0ca2e7300517ad095fee4a000509115d3806e08318c4c9d3578deb",
+    "e70f49d3fb268608567f24a3c3954e316851fbe937b5d477f412c9b6d3488382",
+    "6e783ffb92e62be01ab469b53717780637c795e15688f5dc19addda515d849a5",
+    "ed171a2114619c40189086350b0bbe316dcb01b0d276c34c31b5e9849a6016f7"
+  ],
+  "manifest_sha256": "93369777379037d1aff12134c2fa4c4d07d1defd81ba1730c8fd235ff18b8b59",
+  "video": {
+    "sha256": "5038212318a6a74a013996bdd1ecdedb4de85570d201b2dade87ce6298dac61b",
+    "duration_seconds": 160,
+    "dimensions": [
+      1080,
+      1920
+    ],
+    "codec": "h264",
+    "fps": 2,
+    "seconds_per_card": 16,
+    "audio_streams": 0
+  },
+  "actual_visual_review": "Opened all ten exact final JPEGs at original resolution. Verified Greek text, all Greece/Italy labels and values, sources, photo credits, numbering 01/10-10/10, relevant photos, mobile readability, full ending and exact CTA. Decoded ten midpoint PNGs from the exact final MP4 and opened all ten at original resolution; every full square card is visible without crop and matches the repaired sequence.",
+  "actual_audio_listened": false,
+  "audio_review": "NOT_APPLICABLE_NO_AUDIO_STREAM",
+  "narration": false,
+  "music": false,
+  "avatar": false,
+  "factual_sources_unchanged": true,
+  "caption_reviewed": true,
+  "hashtags": 5,
+  "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+  "platform_disclosure": {
+    "real_photographs": true,
+    "instagram_isAiGenerated": false,
+    "youtube_isAiGeneratedContent": false,
+    "tiktok_caption_explicit_non_ai": true
+  },
+  "cost_policy": "FREE_ONLY",
+  "credits_consumed": 0,
+  "ready_for_single_native_and_single_youtube_create": true
+}
