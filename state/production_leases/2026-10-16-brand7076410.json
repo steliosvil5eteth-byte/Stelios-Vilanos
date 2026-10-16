@@ -1,0 +1,38 @@
+{
+  "date": "2026-10-16",
+  "brandId": 7076410,
+  "brandName": "Ιστορίες που μας αγγίζουν",
+  "owner": "daily-carousel-production-20261016T0600-Europe-Athens",
+  "lease_token": "carousel-it-20261016-0600-7076410",
+  "created_at": "2026-10-16T03:00:00Z",
+  "updated_at": "2026-10-16T03:00:00Z",
+  "expires_at": "2026-10-16T03:30:00Z",
+  "status": "ACTIVE_RELEASE_ONLY",
+  "program_id": "CAROUSEL_FOUR_FOUR_ONE_20261016",
+  "scope": {
+    "package_id": "greece_italy",
+    "scheduled_time": "2026-10-16T18:30:00+03:00",
+    "target_records": 2,
+    "target_destinations": 4,
+    "existing_verified_records": 16,
+    "existing_destinations": 32,
+    "no_recreate": true
+  },
+  "preflight": {
+    "metricool_live_records_20261016": 16,
+    "notion_active_rows_scanned": 265,
+    "notion_archived_rows_scanned": 0,
+    "notion_greece_italy_matches": 0,
+    "repository_final_review": "PASSED_FINAL_REVIEW",
+    "repository_media_commit": "80c535e607406c13ef371288c17a45d07767dcae",
+    "unresolved_writes": 0
+  },
+  "authorized_actions": [
+    "create_missing_native_FB_IG_TikTok_record",
+    "create_missing_YouTube_record",
+    "immediate_live_readback",
+    "update_shared_delivery_journal_and_archive"
+  ],
+  "cost_policy": "FREE_ONLY",
+  "no_blind_retry": true
+}
