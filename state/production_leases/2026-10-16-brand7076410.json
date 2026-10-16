@@ -5,9 +5,9 @@
   "owner": "daily-carousel-production-20261016T0600-Europe-Athens",
   "lease_token": "carousel-it-20261016-0600-7076410",
   "created_at": "2026-10-16T03:00:00Z",
-  "updated_at": "2026-10-16T03:00:00Z",
+  "updated_at": "2026-10-16T03:20:00Z",
   "expires_at": "2026-10-16T03:30:00Z",
-  "status": "ACTIVE_RELEASE_ONLY",
+  "status": "COMPLETED_RELEASED",
   "program_id": "CAROUSEL_FOUR_FOUR_ONE_20261016",
   "scope": {
     "package_id": "greece_italy",
@@ -34,5 +34,34 @@
     "update_shared_delivery_journal_and_archive"
   ],
   "cost_policy": "FREE_ONLY",
-  "no_blind_retry": true
+  "no_blind_retry": true,
+  "completed_at": "2026-10-16T03:20:00Z",
+  "result": {
+    "logical_posts_completed": 1,
+    "destinations_created": 4,
+    "native_record": {
+      "id": 397380646,
+      "uuid": "-606165204413429383",
+      "statuses": {
+        "facebook": "PENDING",
+        "instagram": "PENDING",
+        "tiktok": "PENDING"
+      }
+    },
+    "youtube_record": {
+      "id": 397381029,
+      "uuid": "-984033149439358580",
+      "status": "PENDING"
+    },
+    "final_day_counts": {
+      "logical_posts": 9,
+      "destinations_pending": 36,
+      "records": 18
+    },
+    "notion_page_id": "3fbf2345-b318-817f-acbe-cf6db56f10fd",
+    "delivery_receipt": "state/daily_delivery/greece_italy_20261016_delivery_receipt.json",
+    "daily_journal": "state/daily_delivery/carousel_20261016.json",
+    "immediate_live_readback_verified": true,
+    "cost_eur": 0
+  }
 }
