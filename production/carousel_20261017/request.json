@@ -6,12 +6,19 @@
   "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
   "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
   "source_license": "https://www.pexels.com/license/",
-  "cost": {"paid_charges_eur": 0, "generation_credits_used": 0, "new_credits_purchased": 0},
+  "cost": {
+    "paid_charges_eur": 0,
+    "generation_credits_used": 0,
+    "new_credits_purchased": 0
+  },
   "posts": [
     {
-      "id": "aries_virgo", "time": "07:00", "title": "Κριός με ωροσκόπο Παρθένο", "series": "zodiac_ascendant",
+      "id": "aries_virgo",
+      "time": "07:00",
+      "title": "Κριός με ωροσκόπο Παρθένο",
+      "series": "zodiac_ascendant",
       "fingerprint": "zodiac_ascendant|aries_virgo|impulse_with_method",
-      "disclosure": "Ψυχαγωγική αστρολογία · Φωτογραφίες Pexels",
+      "disclosure": "Ψυχαγωγική αστρολογία · Φωτογραφίες Pexels · Κείμενο AI",
       "copy": [
         "Πρώτα ανάβει η σπίθα. Μετά ανοίγει το τετράδιο. Κριός με ωροσκόπο Παρθένο: ένα συμβολικό πορτρέτο ορμής και μεθόδου.",
         "Η πλευρά του Κριού συμβολίζει την αρχή: βλέπει μια ευκαιρία και θέλει να κινηθεί πριν χαθεί η στιγμή.",
@@ -22,18 +29,45 @@
       ],
       "caption": "Πρώτα η σπίθα, μετά το σχέδιο.\n\nΚριός με ωροσκόπο Παρθένο: έξι κάρτες για ένα συμβολικό πάντρεμα τόλμης και οργάνωσης. Εσύ πότε νιώθεις πραγματικά έτοιμος;\n\nΨυχαγωγική, συμβολική αστρολογία — όχι επιστημονική περιγραφή ή πρόβλεψη. Χρησιμοποιούνται πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ζώδια #Κριός #Παρθένος #Ωροσκόπος #ΙστορίεςΠουΜαςΑγγίζουν",
       "photos": [
-        ["https://images.pexels.com/photos/33846784/pexels-photo-33846784/free-photo-of-serene-sunrise-over-mountain-range.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/serene-sunrise-over-mountain-range-33846784/", "Ανατολή πάνω από βουνά"],
-        ["https://images.pexels.com/photos/33889463/pexels-photo-33889463/free-photo-of-stunning-sunrise-over-mountain-peaks.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/stunning-sunrise-over-mountain-peaks-33889463/", "Πορτοκαλί ανατολή και κορυφές"],
-        ["https://images.pexels.com/photos/17630916/pexels-photo-17630916/free-photo-of-silhouette-of-a-man-watching-sunset-over-the-lake.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/silhouette-of-a-man-watching-sunset-over-the-lake-17630916/", "Ενήλικος μπροστά σε ορίζοντα"],
-        ["https://images.pexels.com/photos/28963187/pexels-photo-28963187/free-photo-of-modern-architecture-in-valencia-at-sunrise.png?auto=compress&w=1600", "https://www.pexels.com/photo/modern-architecture-in-valencia-at-sunrise-28963187/", "Δομημένη σύγχρονη αρχιτεκτονική"],
-        ["https://images.pexels.com/photos/30982185/pexels-photo-30982185/free-photo-of-serene-sunset-at-cable-beach-australia.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/serene-sunset-at-cable-beach-australia-30982185/", "Ήρεμη ακτή στο ηλιοβασίλεμα"],
-        ["https://images.pexels.com/photos/35315840/pexels-photo-35315840/free-photo-of-silhouette-of-photographer-at-sunset-by-the-sea.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/silhouette-of-photographer-at-sunset-by-the-sea-35315840/", "Ενήλικος φωτογράφος οργανώνει τη λήψη"]
+        [
+          "https://images.pexels.com/photos/33846784/pexels-photo-33846784/free-photo-of-serene-sunrise-over-mountain-range.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/serene-sunrise-over-mountain-range-33846784/",
+          "Ανατολή πάνω από βουνά"
+        ],
+        [
+          "https://images.pexels.com/photos/33889463/pexels-photo-33889463/free-photo-of-stunning-sunrise-over-mountain-peaks.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/stunning-sunrise-over-mountain-peaks-33889463/",
+          "Πορτοκαλί ανατολή και κορυφές"
+        ],
+        [
+          "https://images.pexels.com/photos/17630916/pexels-photo-17630916/free-photo-of-silhouette-of-a-man-watching-sunset-over-the-lake.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/silhouette-of-a-man-watching-sunset-over-the-lake-17630916/",
+          "Ενήλικος μπροστά σε ορίζοντα"
+        ],
+        [
+          "https://images.pexels.com/photos/28963187/pexels-photo-28963187/free-photo-of-modern-architecture-in-valencia-at-sunrise.png?auto=compress&w=1600",
+          "https://www.pexels.com/photo/modern-architecture-in-valencia-at-sunrise-28963187/",
+          "Δομημένη σύγχρονη αρχιτεκτονική"
+        ],
+        [
+          "https://images.pexels.com/photos/30982185/pexels-photo-30982185/free-photo-of-serene-sunset-at-cable-beach-australia.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/serene-sunset-at-cable-beach-australia-30982185/",
+          "Ήρεμη ακτή στο ηλιοβασίλεμα"
+        ],
+        [
+          "https://images.pexels.com/photos/35315840/pexels-photo-35315840/free-photo-of-silhouette-of-photographer-at-sunset-by-the-sea.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/silhouette-of-photographer-at-sunset-by-the-sea-35315840/",
+          "Ενήλικος φωτογράφος οργανώνει τη λήψη"
+        ]
       ]
     },
     {
-      "id": "coffee_for_next", "time": "09:00", "title": "Ο καφές για τον επόμενο", "series": "emotional_fiction",
+      "id": "coffee_for_next",
+      "time": "09:00",
+      "title": "Ο καφές για τον επόμενο",
+      "series": "emotional_fiction",
       "fingerprint": "emotional_fiction|grandfather_prepaid_coffee_for_lonely_patron_granddaughter_continues_jar",
-      "disclosure": "Πρωτότυπη μυθοπλασία · Φωτογραφίες Pexels",
+      "disclosure": "Πρωτότυπη μυθοπλασία · Φωτογραφίες Pexels · Κείμενο AI",
       "copy": [
         "Παρήγγειλε τον καφέ του παππού της. Ο σερβιτόρος ακούμπησε μπροστά της δύο φλιτζάνια.",
         "«Το δεύτερο είναι ήδη πληρωμένο», της είπε. Κάθε Τρίτη ο παππούς της άφηνε έναν καφέ για κάποιον που θα ερχόταν μόνος.",
@@ -44,18 +78,45 @@
       ],
       "caption": "Ο δεύτερος καφές ήταν ήδη πληρωμένος.\n\n«Ο καφές για τον επόμενο»: μια ολοκληρωμένη ιστορία έξι καρτών για έναν άνθρωπο που άφηνε παρέα σε αγνώστους και για την εγγονή που συνέχισε τη συνήθεια.\n\nΠρωτότυπη μυθοπλασία. Χρησιμοποιούνται πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #Καλοσύνη #Παππούς #Καφές #ΙστορίεςΠουΜαςΑγγίζουν",
       "photos": [
-        ["https://images.pexels.com/photos/12898898/pexels-photo-12898898.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/close-up-of-a-womans-hand-holding-a-disposable-coffee-cup-12898898/", "Χέρι με καφέ σε καφέ"],
-        ["https://images.pexels.com/photos/20285499/pexels-photo-20285499/free-photo-of-man-hand-holding-paper-cup-of-coffee.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/man-hand-holding-paper-cup-of-coffee-20285499/", "Ανδρικό χέρι με καφέ"],
-        ["https://images.pexels.com/photos/6278770/pexels-photo-6278770.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/person-holding-a-white-ceramic-cup-6278770/", "Λευκό φλιτζάνι σε χέρια"],
-        ["https://images.pexels.com/photos/34746704/pexels-photo-34746704/free-photo-of-romantic-coffee-date-with-latte-art.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/romantic-coffee-date-with-latte-art-34746704/", "Δύο καφέδες σε τραπέζι"],
-        ["https://images.pexels.com/photos/35054782/pexels-photo-35054782/free-photo-of-close-up-of-hands-holding-coffee-on-wooden-table.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/close-up-of-hands-holding-coffee-on-wooden-table-35054782/", "Χέρια γύρω από δύο καφέδες"],
-        ["https://images.pexels.com/photos/5176910/pexels-photo-5176910.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/woman-in-brown-dress-holding-white-ceramic-mug-5176910/", "Ενήλικη γυναίκα κρατά κούπα"]
+        [
+          "https://images.pexels.com/photos/12898898/pexels-photo-12898898.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/close-up-of-a-womans-hand-holding-a-disposable-coffee-cup-12898898/",
+          "Χέρι με καφέ σε καφέ"
+        ],
+        [
+          "https://images.pexels.com/photos/20285499/pexels-photo-20285499/free-photo-of-man-hand-holding-paper-cup-of-coffee.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/man-hand-holding-paper-cup-of-coffee-20285499/",
+          "Ανδρικό χέρι με καφέ"
+        ],
+        [
+          "https://images.pexels.com/photos/6278770/pexels-photo-6278770.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/person-holding-a-white-ceramic-cup-6278770/",
+          "Λευκό φλιτζάνι σε χέρια"
+        ],
+        [
+          "https://images.pexels.com/photos/34746704/pexels-photo-34746704/free-photo-of-romantic-coffee-date-with-latte-art.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/romantic-coffee-date-with-latte-art-34746704/",
+          "Δύο καφέδες σε τραπέζι"
+        ],
+        [
+          "https://images.pexels.com/photos/35054782/pexels-photo-35054782/free-photo-of-close-up-of-hands-holding-coffee-on-wooden-table.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/close-up-of-hands-holding-coffee-on-wooden-table-35054782/",
+          "Χέρια γύρω από δύο καφέδες"
+        ],
+        [
+          "https://images.pexels.com/photos/5176910/pexels-photo-5176910.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/woman-in-brown-dress-holding-white-ceramic-mug-5176910/",
+          "Ενήλικη γυναίκα κρατά κούπα"
+        ]
       ]
     },
     {
-      "id": "scorpio_libra", "time": "11:00", "title": "Σκορπιός με ωροσκόπο Ζυγό", "series": "zodiac_ascendant",
+      "id": "scorpio_libra",
+      "time": "11:00",
+      "title": "Σκορπιός με ωροσκόπο Ζυγό",
+      "series": "zodiac_ascendant",
       "fingerprint": "zodiac_ascendant|scorpio_libra|depth_with_fairness",
-      "disclosure": "Ψυχαγωγική αστρολογία · Φωτογραφίες Pexels",
+      "disclosure": "Ψυχαγωγική αστρολογία · Φωτογραφίες Pexels · Κείμενο AI",
       "copy": [
         "Βλέπει κάτω από την επιφάνεια, αλλά θέλει να ακούσει και τις δύο πλευρές. Σκορπιός με ωροσκόπο Ζυγό.",
         "Η πλευρά του Σκορπιού συμβολίζει βάθος: δεν αρκείται σε εύκολες απαντήσεις όταν κάτι τον νοιάζει πραγματικά.",
@@ -66,18 +127,45 @@
       ],
       "caption": "Βάθος χωρίς βιαστική κρίση.\n\nΣκορπιός με ωροσκόπο Ζυγό: ένα συμβολικό πορτρέτο που ενώνει ένταση, δικαιοσύνη και διάλογο.\n\nΨυχαγωγική, συμβολική αστρολογία — όχι επιστημονική περιγραφή ή πρόβλεψη. Χρησιμοποιούνται πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ζώδια #Σκορπιός #Ζυγός #Ωροσκόπος #ΙστορίεςΠουΜαςΑγγίζουν",
       "photos": [
-        ["https://images.pexels.com/photos/35571374/pexels-photo-35571374/free-photo-of-team-building-activity-crossing-water-obstacle.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/team-building-activity-crossing-water-obstacle-35571374/", "Ενήλικοι συνεργάζονται σε πέρασμα"],
-        ["https://images.pexels.com/photos/15573249/pexels-photo-15573249/free-photo-of-wooden-footbridge-with-gaps-under-clouds-on-sky.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/wooden-footbridge-with-gaps-under-clouds-on-sky-15573249/", "Κρεμαστή γέφυρα και ουρανός"],
-        ["https://images.pexels.com/photos/12472374/pexels-photo-12472374.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/people-on-steep-bridge-in-park-12472374/", "Ενήλικοι σε τοξωτή γέφυρα"],
-        ["https://images.pexels.com/photos/15666478/pexels-photo-15666478/free-photo-of-man-standing-on-a-footbridge-with-raised-arms.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/man-standing-on-a-footbridge-with-raised-arms-15666478/", "Ενήλικος ισορροπεί σε γέφυρα"],
-        ["https://images.pexels.com/photos/16076214/pexels-photo-16076214/free-photo-of-man-on-footbridge-over-forest.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/man-on-footbridge-over-forest-16076214/", "Ενήλικος διασχίζει γέφυρα δάσους"],
-        ["https://images.pexels.com/photos/15788315/pexels-photo-15788315/free-photo-of-man-walking-on-a-wooden-construction.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/man-walking-on-a-wooden-construction-15788315/", "Ενήλικος περνά ξύλινη γέφυρα στη βροχή"]
+        [
+          "https://images.pexels.com/photos/35571374/pexels-photo-35571374/free-photo-of-team-building-activity-crossing-water-obstacle.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/team-building-activity-crossing-water-obstacle-35571374/",
+          "Ενήλικοι συνεργάζονται σε πέρασμα"
+        ],
+        [
+          "https://images.pexels.com/photos/15573249/pexels-photo-15573249/free-photo-of-wooden-footbridge-with-gaps-under-clouds-on-sky.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/wooden-footbridge-with-gaps-under-clouds-on-sky-15573249/",
+          "Κρεμαστή γέφυρα και ουρανός"
+        ],
+        [
+          "https://images.pexels.com/photos/12472374/pexels-photo-12472374.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/people-on-steep-bridge-in-park-12472374/",
+          "Ενήλικοι σε τοξωτή γέφυρα"
+        ],
+        [
+          "https://images.pexels.com/photos/15666478/pexels-photo-15666478/free-photo-of-man-standing-on-a-footbridge-with-raised-arms.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/man-standing-on-a-footbridge-with-raised-arms-15666478/",
+          "Ενήλικος ισορροπεί σε γέφυρα"
+        ],
+        [
+          "https://images.pexels.com/photos/16076214/pexels-photo-16076214/free-photo-of-man-on-footbridge-over-forest.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/man-on-footbridge-over-forest-16076214/",
+          "Ενήλικος διασχίζει γέφυρα δάσους"
+        ],
+        [
+          "https://images.pexels.com/photos/15788315/pexels-photo-15788315/free-photo-of-man-walking-on-a-wooden-construction.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/man-walking-on-a-wooden-construction-15788315/",
+          "Ενήλικος περνά ξύλινη γέφυρα στη βροχή"
+        ]
       ]
     },
     {
-      "id": "coat_hidden_button", "time": "13:00", "title": "Το παλτό με το κρυφό κουμπί", "series": "emotional_fiction",
+      "id": "coat_hidden_button",
+      "time": "13:00",
+      "title": "Το παλτό με το κρυφό κουμπί",
+      "series": "emotional_fiction",
       "fingerprint": "emotional_fiction|community_wardrobe_coat_hidden_note_recipient_repairs_another_coat",
-      "disclosure": "Πρωτότυπη μυθοπλασία · Φωτογραφίες Pexels",
+      "disclosure": "Πρωτότυπη μυθοπλασία · Φωτογραφίες Pexels · Κείμενο AI",
       "copy": [
         "Η μοδίστρα βρήκε ένα κουμπί ραμμένο μέσα στη φόδρα. Δίπλα του υπήρχε ένα διπλωμένο χαρτί.",
         "Το παλτό είχε φτάσει στην κοινωνική ντουλάπα για επιδιόρθωση. Στο χαρτί έγραφε: «Αν σε ζεστάνει, κάποια σε σκέφτηκε».",
@@ -88,18 +176,45 @@
       ],
       "caption": "Το μήνυμα ήταν κρυμμένο στη φόδρα.\n\n«Το παλτό με το κρυφό κουμπί»: μια ολοκληρωμένη ιστορία έξι καρτών για ένα ρούχο που πέρασε από χέρι σε χέρι μαζί με μια μικρή βεβαιότητα: κάποιος σε σκέφτηκε.\n\nΠρωτότυπη μυθοπλασία. Χρησιμοποιούνται πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #Αλληλεγγύη #Καλοσύνη #ΝέοΞεκίνημα #ΙστορίεςΠουΜαςΑγγίζουν",
       "photos": [
-        ["https://images.pexels.com/photos/31094610/pexels-photo-31094610/free-photo-of-stylish-woman-in-green-coat-in-fashion-setting.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/stylish-woman-in-green-coat-in-fashion-setting-31094610/", "Ενήλικη γυναίκα με παλτό"],
-        ["https://images.pexels.com/photos/19490409/pexels-photo-19490409/free-photo-of-blue-wool-coat-with-gray-patterns-on-a-boutique-mannequin.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/blue-wool-coat-with-gray-patterns-on-a-boutique-mannequin-19490409/", "Μπλε παλτό σε κούκλα"],
-        ["https://images.pexels.com/photos/6766385/pexels-photo-6766385.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/black-suit-jacket-and-brown-coat-6766385/", "Ρούχα σε εργαστήριο ραπτικής"],
-        ["https://images.pexels.com/photos/19367429/pexels-photo-19367429/free-photo-of-blue-coat-hanging-on-a-mannequin.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/blue-coat-hanging-on-a-mannequin-19367429/", "Παλτό έτοιμο για χρήση"],
-        ["https://images.pexels.com/photos/6765655/pexels-photo-6765655.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/a-man-holding-a-tape-measure-fixing-a-suit-jacket-on-a-mannequin-6765655/", "Ενήλικος ράφτης διορθώνει ρούχο"],
-        ["https://images.pexels.com/photos/5264928/pexels-photo-5264928.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/a-man-fitting-dress-shirt-and-necktie-5264928/", "Ενήλικοι σε δοκιμή ρούχου"]
+        [
+          "https://images.pexels.com/photos/31094610/pexels-photo-31094610/free-photo-of-stylish-woman-in-green-coat-in-fashion-setting.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/stylish-woman-in-green-coat-in-fashion-setting-31094610/",
+          "Ενήλικη γυναίκα με παλτό"
+        ],
+        [
+          "https://images.pexels.com/photos/19490409/pexels-photo-19490409/free-photo-of-blue-wool-coat-with-gray-patterns-on-a-boutique-mannequin.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/blue-wool-coat-with-gray-patterns-on-a-boutique-mannequin-19490409/",
+          "Μπλε παλτό σε κούκλα"
+        ],
+        [
+          "https://images.pexels.com/photos/6766385/pexels-photo-6766385.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/black-suit-jacket-and-brown-coat-6766385/",
+          "Ρούχα σε εργαστήριο ραπτικής"
+        ],
+        [
+          "https://images.pexels.com/photos/19367429/pexels-photo-19367429/free-photo-of-blue-coat-hanging-on-a-mannequin.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/blue-coat-hanging-on-a-mannequin-19367429/",
+          "Παλτό έτοιμο για χρήση"
+        ],
+        [
+          "https://images.pexels.com/photos/6765655/pexels-photo-6765655.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/a-man-holding-a-tape-measure-fixing-a-suit-jacket-on-a-mannequin-6765655/",
+          "Ενήλικος ράφτης διορθώνει ρούχο"
+        ],
+        [
+          "https://images.pexels.com/photos/5264928/pexels-photo-5264928.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/a-man-fitting-dress-shirt-and-necktie-5264928/",
+          "Ενήλικοι σε δοκιμή ρούχου"
+        ]
       ]
     },
     {
-      "id": "aquarius_cancer", "time": "15:00", "title": "Υδροχόος με ωροσκόπο Καρκίνο", "series": "zodiac_ascendant",
+      "id": "aquarius_cancer",
+      "time": "15:00",
+      "title": "Υδροχόος με ωροσκόπο Καρκίνο",
+      "series": "zodiac_ascendant",
       "fingerprint": "zodiac_ascendant|aquarius_cancer|open_horizon_safe_harbor",
-      "disclosure": "Ψυχαγωγική αστρολογία · Φωτογραφίες Pexels",
+      "disclosure": "Ψυχαγωγική αστρολογία · Φωτογραφίες Pexels · Κείμενο AI",
       "copy": [
         "Κοιτάζει μακριά, αλλά χρειάζεται ένα λιμάνι που να νιώθει δικό του. Υδροχόος με ωροσκόπο Καρκίνο.",
         "Η πλευρά του Υδροχόου συμβολίζει νέες ιδέες, ανεξαρτησία και την ανάγκη να βλέπει πέρα από το συνηθισμένο.",
@@ -110,18 +225,45 @@
       ],
       "caption": "Ανοιχτός ορίζοντας, ασφαλές λιμάνι.\n\nΥδροχόος με ωροσκόπο Καρκίνο: έξι κάρτες για το συμβολικό δίλημμα ανάμεσα στην ανεξαρτησία και στη συναισθηματική ασφάλεια.\n\nΨυχαγωγική, συμβολική αστρολογία — όχι επιστημονική περιγραφή ή πρόβλεψη. Χρησιμοποιούνται πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ζώδια #Υδροχόος #Καρκίνος #Ωροσκόπος #ΙστορίεςΠουΜαςΑγγίζουν",
       "photos": [
-        ["https://images.pexels.com/photos/11933984/pexels-photo-11933984.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/blurred-view-of-boat-on-sea-on-a-rainy-day-through-a-window-11933984/", "Πλοίο μέσα από βρεγμένο παράθυρο"],
-        ["https://images.pexels.com/photos/37976280/pexels-photo-37976280/free-photo-of-empty-blue-seating-with-ocean-view-on-raindrop-window.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/empty-blue-seating-with-ocean-view-on-raindrop-window-37976280/", "Καθίσματα και θάλασσα πίσω από τζάμι"],
-        ["https://images.pexels.com/photos/14703334/pexels-photo-14703334.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/seats-behind-wet-window-14703334/", "Βροχή σε παράθυρο και άδειες θέσεις"],
-        ["https://images.pexels.com/photos/1046397/pexels-photo-1046397.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/car-window-panel-with-water-droplets-1046397/", "Σταγόνες σε παράθυρο και δρόμος"],
-        ["https://images.pexels.com/photos/68357/pexels-photo-68357.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/rainy-day-68357/", "Πόλη μέσα από βρεγμένο τζάμι"],
-        ["https://images.pexels.com/photos/29894575/pexels-photo-29894575/free-photo-of-raindrops-on-window-overlooking-coastal-town.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/raindrops-on-window-overlooking-coastal-town-29894575/", "Παράκτια πόλη πίσω από βροχή"]
+        [
+          "https://images.pexels.com/photos/11933984/pexels-photo-11933984.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/blurred-view-of-boat-on-sea-on-a-rainy-day-through-a-window-11933984/",
+          "Πλοίο μέσα από βρεγμένο παράθυρο"
+        ],
+        [
+          "https://images.pexels.com/photos/37976280/pexels-photo-37976280/free-photo-of-empty-blue-seating-with-ocean-view-on-raindrop-window.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/empty-blue-seating-with-ocean-view-on-raindrop-window-37976280/",
+          "Καθίσματα και θάλασσα πίσω από τζάμι"
+        ],
+        [
+          "https://images.pexels.com/photos/14703334/pexels-photo-14703334.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/seats-behind-wet-window-14703334/",
+          "Βροχή σε παράθυρο και άδειες θέσεις"
+        ],
+        [
+          "https://images.pexels.com/photos/1046397/pexels-photo-1046397.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/car-window-panel-with-water-droplets-1046397/",
+          "Σταγόνες σε παράθυρο και δρόμος"
+        ],
+        [
+          "https://images.pexels.com/photos/68357/pexels-photo-68357.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/rainy-day-68357/",
+          "Πόλη μέσα από βρεγμένο τζάμι"
+        ],
+        [
+          "https://images.pexels.com/photos/29894575/pexels-photo-29894575/free-photo-of-raindrops-on-window-overlooking-coastal-town.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/raindrops-on-window-overlooking-coastal-town-29894575/",
+          "Παράκτια πόλη πίσω από βροχή"
+        ]
       ]
     },
     {
-      "id": "suitcase_platform", "time": "17:00", "title": "Η βαλίτσα στην αποβάθρα", "series": "emotional_fiction",
+      "id": "suitcase_platform",
+      "time": "17:00",
+      "title": "Η βαλίτσα στην αποβάθρα",
+      "series": "emotional_fiction",
       "fingerprint": "emotional_fiction|two_strangers_swap_suitcases_recipe_notebook_return_share_meal",
-      "disclosure": "Πρωτότυπη μυθοπλασία · Φωτογραφίες Pexels",
+      "disclosure": "Πρωτότυπη μυθοπλασία · Φωτογραφίες Pexels · Κείμενο AI",
       "copy": [
         "Άνοιξε τη βαλίτσα στο ξενοδοχείο και βρήκε ένα τετράδιο με συνταγές. Καμία δεν ήταν δική του.",
         "Στην πρώτη σελίδα έγραφε: «Για τη Μαρίνα — ώστε το σπίτι μας να χωρά σε κάθε πόλη». Τότε κατάλαβε ότι είχε πάρει λάθος βαλίτσα.",
@@ -132,18 +274,45 @@
       ],
       "caption": "Μέσα στη λάθος βαλίτσα βρήκε κάτι που δεν είχε δικαίωμα να χαθεί.\n\n«Η βαλίτσα στην αποβάθρα»: μια ολοκληρωμένη ιστορία έξι καρτών για μια ανταλλαγή, ένα οικογενειακό τετράδιο και δύο αγνώστους που κάθισαν στο ίδιο τραπέζι.\n\nΠρωτότυπη μυθοπλασία. Χρησιμοποιούνται πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #Ταξίδι #Μνήμη #Συνταγές #ΙστορίεςΠουΜαςΑγγίζουν",
       "photos": [
-        ["https://images.pexels.com/photos/34171043/pexels-photo-34171043/free-photo-of-spacious-train-station-with-commuters-waiting.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/spacious-train-station-with-commuters-waiting-34171043/", "Μεγάλος σιδηροδρομικός σταθμός"],
-        ["https://images.pexels.com/photos/27303355/pexels-photo-27303355/free-photo-of-a-man-is-standing-in-a-train-station.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/a-man-is-standing-in-a-train-station-27303355/", "Ενήλικος με αποσκευή στον σταθμό"],
-        ["https://images.pexels.com/photos/32707616/pexels-photo-32707616/free-photo-of-traveler-with-luggage-boarding-modern-train.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/traveler-with-luggage-boarding-modern-train-32707616/", "Ταξιδιώτης με βαλίτσα επιβιβάζεται"],
-        ["https://images.pexels.com/photos/8973669/pexels-photo-8973669.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/people-walking-on-the-street-8973669/", "Ενήλικοι ταξιδιώτες σε σταθμό"],
-        ["https://images.pexels.com/photos/7007864/pexels-photo-7007864.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/photo-of-a-person-with-a-luggage-bag-waiting-at-a-train-station-7007864/", "Ενήλικος περιμένει με βαλίτσα"],
-        ["https://images.pexels.com/photos/39659196/pexels-photo-39659196/free-photo-of-classic-european-train-at-station-platform.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/classic-european-train-at-station-platform-39659196/", "Ευρωπαϊκό τρένο σε αποβάθρα"]
+        [
+          "https://images.pexels.com/photos/34171043/pexels-photo-34171043/free-photo-of-spacious-train-station-with-commuters-waiting.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/spacious-train-station-with-commuters-waiting-34171043/",
+          "Μεγάλος σιδηροδρομικός σταθμός"
+        ],
+        [
+          "https://images.pexels.com/photos/27303355/pexels-photo-27303355/free-photo-of-a-man-is-standing-in-a-train-station.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/a-man-is-standing-in-a-train-station-27303355/",
+          "Ενήλικος με αποσκευή στον σταθμό"
+        ],
+        [
+          "https://images.pexels.com/photos/32707616/pexels-photo-32707616/free-photo-of-traveler-with-luggage-boarding-modern-train.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/traveler-with-luggage-boarding-modern-train-32707616/",
+          "Ταξιδιώτης με βαλίτσα επιβιβάζεται"
+        ],
+        [
+          "https://images.pexels.com/photos/8973669/pexels-photo-8973669.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/people-walking-on-the-street-8973669/",
+          "Ενήλικοι ταξιδιώτες σε σταθμό"
+        ],
+        [
+          "https://images.pexels.com/photos/7007864/pexels-photo-7007864.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/photo-of-a-person-with-a-luggage-bag-waiting-at-a-train-station-7007864/",
+          "Ενήλικος περιμένει με βαλίτσα"
+        ],
+        [
+          "https://images.pexels.com/photos/39659196/pexels-photo-39659196/free-photo-of-classic-european-train-at-station-platform.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/classic-european-train-at-station-platform-39659196/",
+          "Ευρωπαϊκό τρένο σε αποβάθρα"
+        ]
       ]
     },
     {
-      "id": "capricorn_leo", "time": "20:00", "title": "Αιγόκερως με ωροσκόπο Λέοντα", "series": "zodiac_ascendant",
+      "id": "capricorn_leo",
+      "time": "20:00",
+      "title": "Αιγόκερως με ωροσκόπο Λέοντα",
+      "series": "zodiac_ascendant",
       "fingerprint": "zodiac_ascendant|capricorn_leo|quiet_work_visible_courage",
-      "disclosure": "Ψυχαγωγική αστρολογία · Φωτογραφίες Pexels",
+      "disclosure": "Ψυχαγωγική αστρολογία · Φωτογραφίες Pexels · Κείμενο AI",
       "copy": [
         "Χτίζει σιωπηλά, αλλά όταν έρθει η στιγμή βγαίνει στο φως. Αιγόκερως με ωροσκόπο Λέοντα.",
         "Η πλευρά του Αιγόκερω συμβολίζει αντοχή, ευθύνη και τη δουλειά που γίνεται ακόμη κι όταν κανείς δεν χειροκροτεί.",
@@ -154,18 +323,45 @@
       ],
       "caption": "Σιωπηλή δουλειά, ορατό θάρρος.\n\nΑιγόκερως με ωροσκόπο Λέοντα: έξι κάρτες για ένα συμβολικό πορτρέτο φιλοδοξίας, παρουσίας και ουσίας.\n\nΨυχαγωγική, συμβολική αστρολογία — όχι επιστημονική περιγραφή ή πρόβλεψη. Χρησιμοποιούνται πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ζώδια #Αιγόκερως #Λέων #Ωροσκόπος #ΙστορίεςΠουΜαςΑγγίζουν",
       "photos": [
-        ["https://images.pexels.com/photos/12787862/pexels-photo-12787862.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/stage-lights-system-12787862/", "Φώτα εξωτερικής σκηνής"],
-        ["https://images.pexels.com/photos/36569556/pexels-photo-36569556/free-photo-of-sunset-at-red-rocks-amphitheatre.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/sunset-at-red-rocks-amphitheatre-36569556/", "Ενήλικος σε αμφιθέατρο στο ηλιοβασίλεμα"],
-        ["https://images.pexels.com/photos/9831878/pexels-photo-9831878.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/head-near-microphone-in-darkness-9831878/", "Ενήλικος ερμηνευτής σε μπλε φως"],
-        ["https://images.pexels.com/photos/7715347/pexels-photo-7715347.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/man-playing-acoustic-guitar-7715347/", "Ενήλικος μουσικός στη σκηνή"],
-        ["https://images.pexels.com/photos/13230800/pexels-photo-13230800.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/lamps-on-stage-13230800/", "Σκηνή και κοινό τη νύχτα"],
-        ["https://images.pexels.com/photos/16844500/pexels-photo-16844500/free-photo-of-musician-in-blue-light-on-concert.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/musician-in-blue-light-on-concert-16844500/", "Ενήλικος μουσικός και κοινό"]
+        [
+          "https://images.pexels.com/photos/12787862/pexels-photo-12787862.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/stage-lights-system-12787862/",
+          "Φώτα εξωτερικής σκηνής"
+        ],
+        [
+          "https://images.pexels.com/photos/36569556/pexels-photo-36569556/free-photo-of-sunset-at-red-rocks-amphitheatre.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/sunset-at-red-rocks-amphitheatre-36569556/",
+          "Ενήλικος σε αμφιθέατρο στο ηλιοβασίλεμα"
+        ],
+        [
+          "https://images.pexels.com/photos/9831878/pexels-photo-9831878.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/head-near-microphone-in-darkness-9831878/",
+          "Ενήλικος ερμηνευτής σε μπλε φως"
+        ],
+        [
+          "https://images.pexels.com/photos/7715347/pexels-photo-7715347.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/man-playing-acoustic-guitar-7715347/",
+          "Ενήλικος μουσικός στη σκηνή"
+        ],
+        [
+          "https://images.pexels.com/photos/13230800/pexels-photo-13230800.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/lamps-on-stage-13230800/",
+          "Σκηνή και κοινό τη νύχτα"
+        ],
+        [
+          "https://images.pexels.com/photos/16844500/pexels-photo-16844500/free-photo-of-musician-in-blue-light-on-concert.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/musician-in-blue-light-on-concert-16844500/",
+          "Ενήλικος μουσικός και κοινό"
+        ]
       ]
     },
     {
-      "id": "book_two_handwritings", "time": "22:00", "title": "Το βιβλίο με τις δύο γραφές", "series": "emotional_fiction",
+      "id": "book_two_handwritings",
+      "time": "22:00",
+      "title": "Το βιβλίο με τις δύο γραφές",
+      "series": "emotional_fiction",
       "fingerprint": "emotional_fiction|widower_donates_wife_book_reader_replies_in_margins_gratitude_note",
-      "disclosure": "Πρωτότυπη μυθοπλασία · Φωτογραφίες Pexels",
+      "disclosure": "Πρωτότυπη μυθοπλασία · Φωτογραφίες Pexels · Κείμενο AI",
       "copy": [
         "Αγόρασε ένα παλιό βιβλίο και αναγνώρισε αμέσως τη γραφή της γυναίκας του στα περιθώρια.",
         "Το είχε δωρίσει μήνες μετά τον θάνατό της, όταν κάθε αντικείμενο στο σπίτι έμοιαζε βαρύτερο από όσο άντεχε.",
@@ -176,12 +372,36 @@
       ],
       "caption": "Η πρώτη γραφή ήταν της γυναίκας του. Η δεύτερη, ενός αγνώστου που δεν ήξερε ότι της απαντούσε.\n\n«Το βιβλίο με τις δύο γραφές»: μια ολοκληρωμένη ιστορία έξι καρτών για το πώς ένα βιβλίο κράτησε συντροφιά σε περισσότερους από έναν ανθρώπους.\n\nΠρωτότυπη μυθοπλασία. Χρησιμοποιούνται πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #Βιβλία #Μνήμη #Παρηγοριά #ΙστορίεςΠουΜαςΑγγίζουν",
       "photos": [
-        ["https://images.pexels.com/photos/8499579/pexels-photo-8499579.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/various-books-on-wooden-shelves-8499579/", "Μεταχειρισμένα βιβλία σε ράφι"],
-        ["https://images.pexels.com/photos/35098074/pexels-photo-35098074/free-photo-of-collection-of-antique-books-in-a-cardboard-box.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/collection-of-antique-books-in-a-cardboard-box-35098074/", "Παλιές εκδόσεις σε κουτί"],
-        ["https://images.pexels.com/photos/29608317/pexels-photo-29608317/free-photo-of-cozy-vintage-bookstore-in-istanbul-turkey.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/cozy-vintage-bookstore-in-istanbul-turkey-29608317/", "Παλαιοβιβλιοπωλείο"],
-        ["https://images.pexels.com/photos/35893470/pexels-photo-35893470/free-photo-of-cozy-bookstore-interior-with-vintage-charm.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/cozy-bookstore-interior-with-vintage-charm-35893470/", "Ζεστό εσωτερικό βιβλιοπωλείου"],
-        ["https://images.pexels.com/photos/18361685/pexels-photo-18361685/free-photo-of-stacks-of-old-books-in-a-library.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/stacks-of-old-books-in-a-library-18361685/", "Στοίβες παλιών βιβλίων"],
-        ["https://images.pexels.com/photos/18701956/pexels-photo-18701956/free-photo-of-stackf-od-books.jpeg?auto=compress&w=1600", "https://www.pexels.com/photo/stackf-od-books-18701956/", "Στοίβα βιβλίων σε βιβλιοπωλείο"]
+        [
+          "https://images.pexels.com/photos/8499579/pexels-photo-8499579.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/various-books-on-wooden-shelves-8499579/",
+          "Μεταχειρισμένα βιβλία σε ράφι"
+        ],
+        [
+          "https://images.pexels.com/photos/35098074/pexels-photo-35098074/free-photo-of-collection-of-antique-books-in-a-cardboard-box.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/collection-of-antique-books-in-a-cardboard-box-35098074/",
+          "Παλιές εκδόσεις σε κουτί"
+        ],
+        [
+          "https://images.pexels.com/photos/29608317/pexels-photo-29608317/free-photo-of-cozy-vintage-bookstore-in-istanbul-turkey.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/cozy-vintage-bookstore-in-istanbul-turkey-29608317/",
+          "Παλαιοβιβλιοπωλείο"
+        ],
+        [
+          "https://images.pexels.com/photos/35893470/pexels-photo-35893470/free-photo-of-cozy-bookstore-interior-with-vintage-charm.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/cozy-bookstore-interior-with-vintage-charm-35893470/",
+          "Ζεστό εσωτερικό βιβλιοπωλείου"
+        ],
+        [
+          "https://images.pexels.com/photos/18361685/pexels-photo-18361685/free-photo-of-stacks-of-old-books-in-a-library.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/stacks-of-old-books-in-a-library-18361685/",
+          "Στοίβες παλιών βιβλίων"
+        ],
+        [
+          "https://images.pexels.com/photos/18701956/pexels-photo-18701956/free-photo-of-stackf-od-books.jpeg?auto=compress&w=1600",
+          "https://www.pexels.com/photo/stackf-od-books-18701956/",
+          "Στοίβα βιβλίων σε βιβλιοπωλείο"
+        ]
       ]
     }
   ]
