@@ -5,7 +5,7 @@
   "brand_id": 7076410,
   "date": "2026-10-17",
   "program": "CAROUSEL_FOUR_FOUR_ONE_20261016",
-  "status": "ACTIVE_RELEASE",
+  "status": "PARTIAL_SCHEDULED_PENDING_8_OF_9",
   "scope": [
     "aries_virgo",
     "coffee_for_next",
@@ -38,7 +38,368 @@
   },
   "created_at": "2026-10-17T06:03:01+03:00",
   "expires_at": "2026-10-17T20:00:00+00:00",
-  "provider_writes": [],
+  "provider_writes": [
+    {
+      "package_id": "aries_virgo",
+      "route": "native",
+      "id": 398288441,
+      "uuid": "-8677685156316360753",
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "statuses": [
+        "PENDING",
+        "PENDING",
+        "PENDING"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "07:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-11057833902683202900.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-18398023124230255459.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-16666873656842178914.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-18303456752775246108.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-10605300473665910127.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-18056487033708313537.jpeg"
+      ]
+    },
+    {
+      "package_id": "aries_virgo",
+      "route": "youtube",
+      "id": 398288619,
+      "uuid": "4998562101560557682",
+      "providers": [
+        "youtube"
+      ],
+      "statuses": [
+        "PENDING"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "07:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-7159493171810040600.mp4"
+      ]
+    },
+    {
+      "package_id": "coffee_for_next",
+      "route": "native",
+      "id": 398288892,
+      "uuid": "9183175405032917487",
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "statuses": [
+        "PENDING",
+        "PENDING",
+        "PENDING"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "09:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-7383895633321908198.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-16169582425777866857.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-14924667497822093722.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-3367488359751063628.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-16359695785587854991.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-8146138136018567755.jpeg"
+      ]
+    },
+    {
+      "package_id": "coffee_for_next",
+      "route": "youtube",
+      "id": 398289029,
+      "uuid": "-5619253445949175630",
+      "providers": [
+        "youtube"
+      ],
+      "statuses": [
+        "PENDING"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "09:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-2531939640436164016.mp4"
+      ]
+    },
+    {
+      "package_id": "scorpio_libra",
+      "route": "native",
+      "id": 398289195,
+      "uuid": "-129318782046876322",
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "statuses": [
+        "PENDING",
+        "PENDING",
+        "PENDING"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "11:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-15924979733902298230.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-1908775120159588880.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-997523017397173786.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-8340365196788434294.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-8708839247417850386.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-2028938485764055660.jpeg"
+      ]
+    },
+    {
+      "package_id": "scorpio_libra",
+      "route": "youtube",
+      "id": 398289311,
+      "uuid": "7110085642750282563",
+      "providers": [
+        "youtube"
+      ],
+      "statuses": [
+        "PENDING"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "11:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-5854279983093439875.mp4"
+      ]
+    },
+    {
+      "package_id": "coat_hidden_button",
+      "route": "native",
+      "id": 398289548,
+      "uuid": "-3341799966771359980",
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "statuses": [
+        "PENDING",
+        "PENDING",
+        "PENDING"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "13:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-5254169327992710051.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-2689496121086043403.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-11214122171293208498.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-2811399906282286952.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-10183037648338936218.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-2751015165248419804.jpeg"
+      ]
+    },
+    {
+      "package_id": "coat_hidden_button",
+      "route": "youtube",
+      "id": 398289709,
+      "uuid": "-7345707890609863772",
+      "providers": [
+        "youtube"
+      ],
+      "statuses": [
+        "PENDING"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "13:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-4335766026552720509.mp4"
+      ]
+    },
+    {
+      "package_id": "aquarius_cancer",
+      "route": "native",
+      "id": 398289862,
+      "uuid": "6972503379969722147",
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "statuses": [
+        "PENDING",
+        "PENDING",
+        "PENDING"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "15:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-1959552891008712358.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-7540067883493529007.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-3001396832046515266.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-9035696004128072227.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-10309338614465780283.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-17310743346505968280.jpeg"
+      ]
+    },
+    {
+      "package_id": "aquarius_cancer",
+      "route": "youtube",
+      "id": 398289997,
+      "uuid": "1919221046278441346",
+      "providers": [
+        "youtube"
+      ],
+      "statuses": [
+        "PENDING"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "15:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-17209787695150129626.mp4"
+      ]
+    },
+    {
+      "package_id": "suitcase_platform",
+      "route": "native",
+      "id": 398290183,
+      "uuid": "279966494234398691",
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "statuses": [
+        "PENDING",
+        "PENDING",
+        "PENDING"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "17:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-251423799303474070.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-13928901560685807727.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-1820266916020311816.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-15408405303396423639.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-1563757157514506381.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-1214414829977678770.jpeg"
+      ]
+    },
+    {
+      "package_id": "suitcase_platform",
+      "route": "youtube",
+      "id": 398290264,
+      "uuid": "6714687813204198013",
+      "providers": [
+        "youtube"
+      ],
+      "statuses": [
+        "PENDING"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "17:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-10652767152353969423.mp4"
+      ]
+    },
+    {
+      "package_id": "capricorn_leo",
+      "route": "native",
+      "id": 398290443,
+      "uuid": "-1934151004377955016",
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "statuses": [
+        "PENDING",
+        "PENDING",
+        "PENDING"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "20:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-2414360119419329464.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-18075046667011348009.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-11754420002201270770.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-568672432662227055.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-4318364961041374475.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-6261913777391482783.jpeg"
+      ]
+    },
+    {
+      "package_id": "capricorn_leo",
+      "route": "youtube",
+      "id": 398290530,
+      "uuid": "2486538062522827780",
+      "providers": [
+        "youtube"
+      ],
+      "statuses": [
+        "PENDING"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "20:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-1428567119668169731.mp4"
+      ]
+    },
+    {
+      "package_id": "book_two_handwritings",
+      "route": "native",
+      "id": 398290756,
+      "uuid": "759428967021887759",
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok"
+      ],
+      "statuses": [
+        "PENDING",
+        "PENDING",
+        "PENDING"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "22:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-13033194361337271068.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-18084286822138559271.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-15030190116394125804.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-18059433227842920938.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-7408307927964926015.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-6102715442873993550.jpeg"
+      ]
+    },
+    {
+      "package_id": "book_two_handwritings",
+      "route": "youtube",
+      "id": 398290852,
+      "uuid": "-7221564778491263638",
+      "providers": [
+        "youtube"
+      ],
+      "statuses": [
+        "PENDING"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "22:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-3150748053055742937.mp4"
+      ]
+    }
+  ],
   "qa": {
     "status": "PASSED_FINAL_REVIEW",
     "record": "state/daily_delivery/carousel_20261017_final_review.json",
@@ -46,5 +407,9 @@
     "packages": 8,
     "comparison": "BLOCKED_RESEARCH_NOT_EXACTLY_VERIFIED"
   },
-  "release_started_at": "2026-10-17T06:30:00+03:00"
+  "release_started_at": "2026-10-17T06:30:00+03:00",
+  "scheduled_logical_posts": 8,
+  "scheduled_destinations": 32,
+  "blocked_logical_posts": 1,
+  "last_live_readback": "2026-10-17T06:52:00+03:00"
 }
