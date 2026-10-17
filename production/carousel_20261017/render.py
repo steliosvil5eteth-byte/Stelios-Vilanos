@@ -213,7 +213,11 @@ def main():
         audio_streams = [s for s in probe["streams"] if s["codec_type"] == "audio"]
         assert len(video_streams) == 1 and not audio_streams
         assert video_streams[0]["width"] == 1080 and video_streams[0]["height"] == 1920
-        assert abs(float(probe["format"]["duration"]) - total) < 0.2
+        actual_duration = float(probe["format"]["duration"])
+        # CFR encoding can add up to one frame interval at each still-image
+        # boundary. Reject a shortened or materially extended slideshow, but
+        # do not fail on harmless concat/CFR rounding.
+        assert total - 0.1 <= actual_duration <= total + 1.0
         decoded: list[Image.Image] = []
         cursor = 0
         for index, duration in enumerate(durations):
@@ -233,7 +237,8 @@ def main():
             "fingerprint": post["fingerprint"], "qa_status": "NEEDS_EXACT_FINAL_REVIEW", "cards": card_rows,
             "youtube_video": {
                 "path": str(video_path.relative_to(OUT)), "sha256": sha(video_path), "width": 1080, "height": 1920,
-                "duration_seconds": total, "card_durations": durations, "fps": 24, "audio_streams": 0,
+                "duration_seconds": actual_duration, "planned_duration_seconds": total,
+                "card_durations": durations, "fps": 24, "audio_streams": 0,
             },
             "caption": post["caption"],
         })
