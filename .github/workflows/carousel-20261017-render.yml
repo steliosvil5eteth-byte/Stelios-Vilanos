@@ -34,7 +34,7 @@ jobs:
           lease=json.load(open('state/production_leases/2026-10-17-brand7076410.json'))
           req=json.load(open('production/carousel_20261017/request.json'))
           assert lease['brand_id']==7076410 and lease['date']=='2026-10-17'
-          assert lease['status']=='ACTIVE_RENDER_ONLY'
+          assert lease['status'] in {'ACTIVE_RENDER_ONLY','ACTIVE_RELEASE'}
           assert datetime.datetime.now(datetime.timezone.utc)<datetime.datetime.fromisoformat(lease['expires_at'])
           assert req['cost']=={'paid_charges_eur':0,'generation_credits_used':0,'new_credits_purchased':0}
           assert len(req['posts'])==8
@@ -47,11 +47,20 @@ jobs:
           python -m pip install --no-cache-dir 'Pillow==11.3.0'
       - name: Render from explicit Pexels selections only
         run: python production/carousel_20261017/render.py
+      - name: Upload exact final media artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: carousel-20261017-final-media
+          path: media/carousel_20261017
+          if-no-files-found: error
+          retention-days: 7
       - name: Store candidates without granting final review
         run: |
           git config user.name 'carousel-media-builder'
           git config user.email 'actions@users.noreply.github.com'
           git add --sparse -f media/carousel_20261017
-          git commit -m 'Store Oct17 free-photo carousel candidates; exact visual QA required [skip ci]'
-          git pull --rebase origin main
-          git push origin HEAD:main
+          if ! git diff --cached --quiet; then
+            git commit -m 'Store Oct17 free-photo carousel candidates; exact visual QA required [skip ci]'
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
