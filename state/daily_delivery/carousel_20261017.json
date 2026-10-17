@@ -107,6 +107,10 @@
           "isAiGeneratedContent": false,
           "notifySubscribers": true
         }
+      },
+      "notion_page": {
+        "id": "3fcf2345-b318-81ee-8372-d4e0bfd3e056",
+        "url": "https://app.notion.com/p/3fcf2345b31881ee8372d4e0bfd3e056"
       }
     },
     {
@@ -187,6 +191,10 @@
           "isAiGeneratedContent": false,
           "notifySubscribers": true
         }
+      },
+      "notion_page": {
+        "id": "3fcf2345-b318-81e8-bef6-e7aa9d0cf18f",
+        "url": "https://app.notion.com/p/3fcf2345b31881e8bef6e7aa9d0cf18f"
       }
     },
     {
@@ -267,6 +275,10 @@
           "isAiGeneratedContent": false,
           "notifySubscribers": true
         }
+      },
+      "notion_page": {
+        "id": "3fcf2345-b318-81c5-83ef-d2464b905a0d",
+        "url": "https://app.notion.com/p/3fcf2345b31881c583efd2464b905a0d"
       }
     },
     {
@@ -347,6 +359,10 @@
           "isAiGeneratedContent": false,
           "notifySubscribers": true
         }
+      },
+      "notion_page": {
+        "id": "3fcf2345-b318-8196-928e-deab55f1a836",
+        "url": "https://app.notion.com/p/3fcf2345b3188196928edeab55f1a836"
       }
     },
     {
@@ -427,6 +443,10 @@
           "isAiGeneratedContent": false,
           "notifySubscribers": true
         }
+      },
+      "notion_page": {
+        "id": "3fcf2345-b318-8109-b076-ea04d5b28f17",
+        "url": "https://app.notion.com/p/3fcf2345b3188109b076ea04d5b28f17"
       }
     },
     {
@@ -507,6 +527,10 @@
           "isAiGeneratedContent": false,
           "notifySubscribers": true
         }
+      },
+      "notion_page": {
+        "id": "3fcf2345-b318-818e-8a8d-f93153402271",
+        "url": "https://app.notion.com/p/3fcf2345b318818e8a8df93153402271"
       }
     },
     {
@@ -587,6 +611,10 @@
           "isAiGeneratedContent": false,
           "notifySubscribers": true
         }
+      },
+      "notion_page": {
+        "id": "3fcf2345-b318-812c-8321-e017153d3cb1",
+        "url": "https://app.notion.com/p/3fcf2345b318812c8321e017153d3cb1"
       }
     },
     {
@@ -667,6 +695,10 @@
           "isAiGeneratedContent": false,
           "notifySubscribers": true
         }
+      },
+      "notion_page": {
+        "id": "3fcf2345-b318-814f-89c3-e53572495348",
+        "url": "https://app.notion.com/p/3fcf2345b318814f89c3e53572495348"
       }
     }
   ],
@@ -674,5 +706,39 @@
   "generation_credits_used": 0,
   "live_readback_verified": true,
   "live_record_count": 16,
-  "notion_archive_write_status": "PENDING"
+  "notion_archive_write_status": "COMPLETE_READBACK_VERIFIED",
+  "notion_pages": {
+    "aries_virgo": {
+      "id": "3fcf2345-b318-81ee-8372-d4e0bfd3e056",
+      "url": "https://app.notion.com/p/3fcf2345b31881ee8372d4e0bfd3e056"
+    },
+    "coffee_for_next": {
+      "id": "3fcf2345-b318-81e8-bef6-e7aa9d0cf18f",
+      "url": "https://app.notion.com/p/3fcf2345b31881e8bef6e7aa9d0cf18f"
+    },
+    "scorpio_libra": {
+      "id": "3fcf2345-b318-81c5-83ef-d2464b905a0d",
+      "url": "https://app.notion.com/p/3fcf2345b31881c583efd2464b905a0d"
+    },
+    "coat_hidden_button": {
+      "id": "3fcf2345-b318-8196-928e-deab55f1a836",
+      "url": "https://app.notion.com/p/3fcf2345b3188196928edeab55f1a836"
+    },
+    "aquarius_cancer": {
+      "id": "3fcf2345-b318-8109-b076-ea04d5b28f17",
+      "url": "https://app.notion.com/p/3fcf2345b3188109b076ea04d5b28f17"
+    },
+    "suitcase_platform": {
+      "id": "3fcf2345-b318-818e-8a8d-f93153402271",
+      "url": "https://app.notion.com/p/3fcf2345b318818e8a8df93153402271"
+    },
+    "capricorn_leo": {
+      "id": "3fcf2345-b318-812c-8321-e017153d3cb1",
+      "url": "https://app.notion.com/p/3fcf2345b318812c8321e017153d3cb1"
+    },
+    "book_two_handwritings": {
+      "id": "3fcf2345-b318-814f-89c3-e53572495348",
+      "url": "https://app.notion.com/p/3fcf2345b318814f89c3e53572495348"
+    }
+  }
 }
