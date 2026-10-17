@@ -3,7 +3,7 @@
   "brand_id": 7076410,
   "program": "CAROUSEL_FOUR_FOUR_ONE_20261016",
   "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
-  "request_sha256": "cdd95479946bb6f0a10a3cf072e0e3eaced8bf73786249062793b2158dec916f",
+  "request_sha256": "fa5a1a3563dd69a13b14b95a15a0826184a614a4111abead7fd8553a527decb3",
   "paid_charges_eur": 0,
   "generation_credits_used": 0,
   "posts": [
@@ -17,7 +17,7 @@
       "cards": [
         {
           "path": "aries_virgo/card_01.jpg",
-          "sha256": "c5e61ad68bc102295f1db0ff10094ca8cd4afe5f3586ecd1443fcb42c2103be6",
+          "sha256": "0797b24267dff391177e6fda6fea7c363293def55a15e6c9eac181252cbf4cef",
           "source_path": "aries_virgo/source/source_01.jpg",
           "source_sha256": "323ed354bc9a30371a7baae736906fc5febc2392b0412bfdf2601897b4428d3d",
           "source_page": "https://www.pexels.com/photo/serene-sunrise-over-mountain-range-33846784/",
@@ -32,7 +32,7 @@
         },
         {
           "path": "aries_virgo/card_02.jpg",
-          "sha256": "1d5e4c0c9f2411b0028cce3a1daf71dcc3b1d55850bab87571c8c87fcfedf42c",
+          "sha256": "6201eefaa5568fa46917722f39adfa226c8cef5ce0548b82d6dbdae40918fb37",
           "source_path": "aries_virgo/source/source_02.jpg",
           "source_sha256": "284d664ba4293197c9ce60fac45b7617fb10f1f21f24d0ea972807fdd57cce2b",
           "source_page": "https://www.pexels.com/photo/stunning-sunrise-over-mountain-peaks-33889463/",
@@ -47,7 +47,7 @@
         },
         {
           "path": "aries_virgo/card_03.jpg",
-          "sha256": "d0a5ad2f0ddc8692cb0e58cd608de56d70433ab79f75215345074fa8df4b5f10",
+          "sha256": "eda70cf08eb80f88bb064754d66ac1404a184620bb4ddde9ff85e4f2eeb8cdaa",
           "source_path": "aries_virgo/source/source_03.jpg",
           "source_sha256": "e9033856dae2aa56a1acec9106d5be66cbba3ee1aa6447b99e0d76f8ca8537a8",
           "source_page": "https://www.pexels.com/photo/silhouette-of-a-man-watching-sunset-over-the-lake-17630916/",
@@ -62,7 +62,7 @@
         },
         {
           "path": "aries_virgo/card_04.jpg",
-          "sha256": "37d32d617d6f54bbf9cf662fcd3bde5cf47cdb1b38ac2ff7c4b94ae57af36efb",
+          "sha256": "a9e3876ba3988bfc963bed55d408114c6c14fc41caa3f9cc8086d7a76292ad91",
           "source_path": "aries_virgo/source/source_04.jpg",
           "source_sha256": "435af9d92c1aac5020ac9249acc18e1f9e027079d628098b1ab21ec7222b5c0f",
           "source_page": "https://www.pexels.com/photo/modern-architecture-in-valencia-at-sunrise-28963187/",
@@ -77,7 +77,7 @@
         },
         {
           "path": "aries_virgo/card_05.jpg",
-          "sha256": "1c8158f5dc731fb4ec32f72dd3db760084124fa5f1683584b2f4709310002f66",
+          "sha256": "68d40bb932e4b208ddf46f8df853774c4c12e9dfa3103d070219ab2d2df6108a",
           "source_path": "aries_virgo/source/source_05.jpg",
           "source_sha256": "5c4b7fa474069afe2eff07c16570b2d56c1d48739aa681b971d1038b29106f41",
           "source_page": "https://www.pexels.com/photo/serene-sunset-at-cable-beach-australia-30982185/",
@@ -92,7 +92,7 @@
         },
         {
           "path": "aries_virgo/card_06.jpg",
-          "sha256": "5cfe61088d4f5e36a9d339a8ce3421ba5ed87b4afd4ec2569110e5f7b7ecf58f",
+          "sha256": "644117fe983170125018b395e58b62a274b55e23e675fb3e8031404d014e21d3",
           "source_path": "aries_virgo/source/source_06.jpg",
           "source_sha256": "4be6637363754277d621ac8cb7c0cca7a94c51adbe12739540ffa534b5980b83",
           "source_page": "https://www.pexels.com/photo/silhouette-of-photographer-at-sunset-by-the-sea-35315840/",
@@ -108,7 +108,7 @@
       ],
       "youtube_video": {
         "path": "aries_virgo/youtube_vertical.mp4",
-        "sha256": "25174c93ba2301ef2f09d11b48a5bf5ba2267fca5ed3897a7330e49cb1328029",
+        "sha256": "7674e34e6439b192d2062087fa242e47fbfeca2482d0e1bd295c6373de4e96cf",
         "width": 1080,
         "height": 1920,
         "duration_seconds": 71.958333,
@@ -137,7 +137,7 @@
       "cards": [
         {
           "path": "coffee_for_next/card_01.jpg",
-          "sha256": "bde1c68ce44834818927e8afde84d33c27129dd5665cdeb5f7d6eb41e6be32cd",
+          "sha256": "7b5672b1f34feaeaee243b6643b099d4efd79aa63f93e741f7d0ecdc516b022a",
           "source_path": "coffee_for_next/source/source_01.jpg",
           "source_sha256": "e1a7a75b33b5beb7262cd68b6749a9d8ab3f1ca7ee2bd8889aede8a94f777491",
           "source_page": "https://www.pexels.com/photo/close-up-of-a-womans-hand-holding-a-disposable-coffee-cup-12898898/",
@@ -152,7 +152,7 @@
         },
         {
           "path": "coffee_for_next/card_02.jpg",
-          "sha256": "deddfd65acd8a048d5babd9c26ebafbe32db20ab52d230b6cc96337f895260e4",
+          "sha256": "0d66a44af260b9a2804513ec02300c15c14f6cd0ec79bb9ea92670bd61d0733e",
           "source_path": "coffee_for_next/source/source_02.jpg",
           "source_sha256": "fea1719369915ac4d09d00fd0577994aab7d5fd9476132b7f39e011f7272041b",
           "source_page": "https://www.pexels.com/photo/man-hand-holding-paper-cup-of-coffee-20285499/",
@@ -167,7 +167,7 @@
         },
         {
           "path": "coffee_for_next/card_03.jpg",
-          "sha256": "4cf7d20ef54b2f825e88084e59f36f5f9194ecc2a15aaf79a40dfba8cecec11e",
+          "sha256": "619e69bf282cee501de3d39cea49ad7791930d12dc5d7d47d0b69da788cc1078",
           "source_path": "coffee_for_next/source/source_03.jpg",
           "source_sha256": "1fac0e48e06d58a86ab4c224715151825266c2d017dacad85b7a41ccfe49416d",
           "source_page": "https://www.pexels.com/photo/person-holding-a-white-ceramic-cup-6278770/",
@@ -182,7 +182,7 @@
         },
         {
           "path": "coffee_for_next/card_04.jpg",
-          "sha256": "e8f787d820049bea7179c824144aff539122fc44d0e4fec70d4895ea5b2d5523",
+          "sha256": "e538dd83deebfc80abec9049a8c1a7ede476f89f1aefee695b7bd3ea6e9d1f50",
           "source_path": "coffee_for_next/source/source_04.jpg",
           "source_sha256": "a6964015c137665e288e00e39ea4c4f74e67845523c098f9c779ac471650294a",
           "source_page": "https://www.pexels.com/photo/romantic-coffee-date-with-latte-art-34746704/",
@@ -197,7 +197,7 @@
         },
         {
           "path": "coffee_for_next/card_05.jpg",
-          "sha256": "511a8f170a87d25a15022c0420117efb06d6888a22b7ec66fff15170e465c5c6",
+          "sha256": "9130e7a57877a7201e35409e65e27588d9ed846470de77f47d0f9735f9dda56b",
           "source_path": "coffee_for_next/source/source_05.jpg",
           "source_sha256": "2bf9186d4dc8e99c3d1a8dc98c3061929160e6205dc2d1bb1a9ec639031911bc",
           "source_page": "https://www.pexels.com/photo/close-up-of-hands-holding-coffee-on-wooden-table-35054782/",
@@ -212,7 +212,7 @@
         },
         {
           "path": "coffee_for_next/card_06.jpg",
-          "sha256": "42107fef96f973226411c1998c6a45c136b547849049ca812733f29a6846af45",
+          "sha256": "30aa8a2ecbf40d6052d6a6f6e907378ecec0f1ac2485d498f7072aa828dfecfe",
           "source_path": "coffee_for_next/source/source_06.jpg",
           "source_sha256": "c0d654ef211e71404d7f893fa870f2ff5752b1fa0e1e9387e718ab0c724fde47",
           "source_page": "https://www.pexels.com/photo/woman-in-brown-dress-holding-white-ceramic-mug-5176910/",
@@ -228,7 +228,7 @@
       ],
       "youtube_video": {
         "path": "coffee_for_next/youtube_vertical.mp4",
-        "sha256": "e560fb49e0d3b84cdc5942fbdba0f05f44f6efc0b2412434eeeea0a730d624f9",
+        "sha256": "63c6acdebf135cc873d526e8decb8510fc8a260b8709ed22e8a42de0c1206ca6",
         "width": 1080,
         "height": 1920,
         "duration_seconds": 71.958333,
@@ -257,7 +257,7 @@
       "cards": [
         {
           "path": "scorpio_libra/card_01.jpg",
-          "sha256": "eac20575477ab556a99a299dd0250c78e99ca14c8bdbe376eee79d751a036a9e",
+          "sha256": "ef458bbcbccf6f223258cf69cd4cf56a52e32948c29bc86eb7846c0e6d8c37ab",
           "source_path": "scorpio_libra/source/source_01.jpg",
           "source_sha256": "b26bd52efd9d3b9d129091fb16eefd2b347932c02046ab95be89d7c306f3cdc9",
           "source_page": "https://www.pexels.com/photo/team-building-activity-crossing-water-obstacle-35571374/",
@@ -272,7 +272,7 @@
         },
         {
           "path": "scorpio_libra/card_02.jpg",
-          "sha256": "b75e40b8a5f25be0a76b65be39fa93fe1c30e6de36e538cb6f846b81dabbf281",
+          "sha256": "5aa3968b2457fbb3d2071fa345214f7c24c631427277d3aecf815add01ad7058",
           "source_path": "scorpio_libra/source/source_02.jpg",
           "source_sha256": "f982941583333505ad0f74ae4e784783d8c7fc0ecf451b6a354196f8a4fbf610",
           "source_page": "https://www.pexels.com/photo/wooden-footbridge-with-gaps-under-clouds-on-sky-15573249/",
@@ -287,7 +287,7 @@
         },
         {
           "path": "scorpio_libra/card_03.jpg",
-          "sha256": "6853e8813a5535c229d09aca333eac8a44537026f5f689dfefe729ab71b49c8a",
+          "sha256": "bac416453785941926742f6fef5dcaad5769648affbc887281210a00f8f772c5",
           "source_path": "scorpio_libra/source/source_03.jpg",
           "source_sha256": "cc2a883321250b3b640726bce6267e10836ef8244a7f77e5f832bde26540d338",
           "source_page": "https://www.pexels.com/photo/people-on-steep-bridge-in-park-12472374/",
@@ -302,7 +302,7 @@
         },
         {
           "path": "scorpio_libra/card_04.jpg",
-          "sha256": "6d4d097e2a9ed3bad0aca42ea0581d133ae0a74bb48e867673fb897f2adad011",
+          "sha256": "3cd256b7c07f4eebb1a3abbe5294b4e84febd8d49d3b5938e16d3b9dff86ea76",
           "source_path": "scorpio_libra/source/source_04.jpg",
           "source_sha256": "8ac28646a0c67f094ef9be8254a9b85157abb97c59a1af95fbee42c7819c775c",
           "source_page": "https://www.pexels.com/photo/man-standing-on-a-footbridge-with-raised-arms-15666478/",
@@ -317,7 +317,7 @@
         },
         {
           "path": "scorpio_libra/card_05.jpg",
-          "sha256": "b8f500007beb804008dbc49adb075e2228dde0d9e3d544eba241b7d6aad6e449",
+          "sha256": "bdd354f289a7a55bc71fe062c68466920c125f7ea9f9f5ef6c2c4935296e3ff6",
           "source_path": "scorpio_libra/source/source_05.jpg",
           "source_sha256": "a3dc59c2ce2bd8b7d26907caea169f5e63d1ee4389e263213889b2423e9fcf9e",
           "source_page": "https://www.pexels.com/photo/man-on-footbridge-over-forest-16076214/",
@@ -332,7 +332,7 @@
         },
         {
           "path": "scorpio_libra/card_06.jpg",
-          "sha256": "d200718ebb493f20d323e286400d8c6c1f9d8763de10eb2ce08ccd5e0e3772f0",
+          "sha256": "6c428c409354207664aaaf7a8f3e4b09e4925180a23b71a1d240d886a60f69f4",
           "source_path": "scorpio_libra/source/source_06.jpg",
           "source_sha256": "692736ef3df2ef221ac5cd0249435cc63f97924f5612eabb146557c1b66b6888",
           "source_page": "https://www.pexels.com/photo/man-walking-on-a-wooden-construction-15788315/",
@@ -348,7 +348,7 @@
       ],
       "youtube_video": {
         "path": "scorpio_libra/youtube_vertical.mp4",
-        "sha256": "161ce61ffdc690a14e2a2b0c49ac74095f1ff1613a91da7e6ae063f2ab2532c4",
+        "sha256": "b5f141c7663e723bffa5c27a9a5b2717549f896b21039d5ebc8f08910833e6be",
         "width": 1080,
         "height": 1920,
         "duration_seconds": 71.958333,
@@ -377,7 +377,7 @@
       "cards": [
         {
           "path": "coat_hidden_button/card_01.jpg",
-          "sha256": "580e435050b8e3c282009f669310a3316f5762a9f5ce516a3d7a86662a7a102c",
+          "sha256": "e1be77406eddc21fa5b1e96db7c6f88eddb494750c36f2a52597fc406e2bf91e",
           "source_path": "coat_hidden_button/source/source_01.jpg",
           "source_sha256": "756a549d1691e3532c128e587a4a1326b8b31b2c64ee227d39ac98f303dfa339",
           "source_page": "https://www.pexels.com/photo/stylish-woman-in-green-coat-in-fashion-setting-31094610/",
@@ -392,7 +392,7 @@
         },
         {
           "path": "coat_hidden_button/card_02.jpg",
-          "sha256": "5682a45965cb78671b06b779f437638ea23e495a4279c2b199c3e357321c7b2c",
+          "sha256": "752e5729e5ff232385d43f5c1d0aa6d3f0988fb8545b3b30116da8d627f45783",
           "source_path": "coat_hidden_button/source/source_02.jpg",
           "source_sha256": "804de9a69dab9e5d7fecdcc5ccec746b3944c5ee7fc50b9ec11ba8fbcb7c8f38",
           "source_page": "https://www.pexels.com/photo/blue-wool-coat-with-gray-patterns-on-a-boutique-mannequin-19490409/",
@@ -407,7 +407,7 @@
         },
         {
           "path": "coat_hidden_button/card_03.jpg",
-          "sha256": "b7417f28a21e6fd55f503d20c64587f54482dd8265bcb32a10eb0b03e71a812c",
+          "sha256": "95e404ebf4fa9db7d59a679b135155f8be4bab7f8b244612d8c17d807d043a95",
           "source_path": "coat_hidden_button/source/source_03.jpg",
           "source_sha256": "c4a10b48353798e9f251d85fb4e76ea730366e6761561043c69df1bf0c0b371e",
           "source_page": "https://www.pexels.com/photo/black-suit-jacket-and-brown-coat-6766385/",
@@ -422,7 +422,7 @@
         },
         {
           "path": "coat_hidden_button/card_04.jpg",
-          "sha256": "262d876c44122edd6e13b2707b074ae5b9888a9d87aee0b40edbcb5ca963d9b8",
+          "sha256": "d41c984369c2dacd6cc1059e24ee1f9f45064109154b4a93cdd6142ca4d0a43f",
           "source_path": "coat_hidden_button/source/source_04.jpg",
           "source_sha256": "28ad56d6c3ff966496a483fd68fa3d93a654a27518d3afc930da8036f1e71457",
           "source_page": "https://www.pexels.com/photo/blue-coat-hanging-on-a-mannequin-19367429/",
@@ -437,7 +437,7 @@
         },
         {
           "path": "coat_hidden_button/card_05.jpg",
-          "sha256": "8e63931f8dc1abb39099fb2d8e48bf5604616affd0fc59c8aad73dfe032a1a00",
+          "sha256": "ade47fabe8df1ddc6480a99fbe05608eba52e61934b612d9c1a71fdc23e05396",
           "source_path": "coat_hidden_button/source/source_05.jpg",
           "source_sha256": "1ccb98761e82daa4bd0c823f12553eaa87d18a80dafd1db0baf49bd04226f389",
           "source_page": "https://www.pexels.com/photo/a-man-holding-a-tape-measure-fixing-a-suit-jacket-on-a-mannequin-6765655/",
@@ -452,7 +452,7 @@
         },
         {
           "path": "coat_hidden_button/card_06.jpg",
-          "sha256": "2e079ae724075968b76fcd66fc07973e39da3da76cfdfa69c189b7ca268679d7",
+          "sha256": "ad7d528dfeb03d306d32a36f1a4e70c19747ffc497ac3fe84fafbcf3fbf3d7af",
           "source_path": "coat_hidden_button/source/source_06.jpg",
           "source_sha256": "cf13e4013ded8bfe6f80ed07409f5d5e4839e1c8aa9415f35d897087ac6cc976",
           "source_page": "https://www.pexels.com/photo/a-man-fitting-dress-shirt-and-necktie-5264928/",
@@ -468,7 +468,7 @@
       ],
       "youtube_video": {
         "path": "coat_hidden_button/youtube_vertical.mp4",
-        "sha256": "956b8ec52fcfd5591f80948bdb6308364e64151741ad2c2a60482255b45233c4",
+        "sha256": "790ce61bc61089b433117c64e270c3e629c5ff910dd1f2d3d2cffdb84ef0c48f",
         "width": 1080,
         "height": 1920,
         "duration_seconds": 72.958333,
@@ -497,7 +497,7 @@
       "cards": [
         {
           "path": "aquarius_cancer/card_01.jpg",
-          "sha256": "280d415ad18a29ad8d8833ad9a3c2a6bbafecc5d63fadba14d267c2ba8d1c6e5",
+          "sha256": "67818ae154c89dec1d1bddb5b7ec287da24580e2f6e3c134e1613e1475896b18",
           "source_path": "aquarius_cancer/source/source_01.jpg",
           "source_sha256": "10923a6fef2069a07c3c420acbc453e7cf81df180c9320341b09400be361b89d",
           "source_page": "https://www.pexels.com/photo/blurred-view-of-boat-on-sea-on-a-rainy-day-through-a-window-11933984/",
@@ -512,7 +512,7 @@
         },
         {
           "path": "aquarius_cancer/card_02.jpg",
-          "sha256": "646cd7f8ca38808a7fd96175092a64ee8f4121748c0401bbc368c0ac3adc150d",
+          "sha256": "e40ef6943b181662bbaf04cfc86d32ac5877f80296dc2f268ee5bf145a48548c",
           "source_path": "aquarius_cancer/source/source_02.jpg",
           "source_sha256": "41b1c29491f43c004e76c571d9b9b0ea8529a18424b1d9cbdbd1a2f57b74872b",
           "source_page": "https://www.pexels.com/photo/empty-blue-seating-with-ocean-view-on-raindrop-window-37976280/",
@@ -527,7 +527,7 @@
         },
         {
           "path": "aquarius_cancer/card_03.jpg",
-          "sha256": "06e605af0cfeca330d8e533e080c044754ef16c821f96296b208ea6487294315",
+          "sha256": "d9e075f34aa6ff776f059c8c7c1d1318d989f25f21affff409051fc22fecdae3",
           "source_path": "aquarius_cancer/source/source_03.jpg",
           "source_sha256": "2c4716a369cb91782c2a01c169ad7a8644f13bcf2624dc51c51a1d5dc6bf8cb4",
           "source_page": "https://www.pexels.com/photo/seats-behind-wet-window-14703334/",
@@ -542,7 +542,7 @@
         },
         {
           "path": "aquarius_cancer/card_04.jpg",
-          "sha256": "d2875a29790e546372c2345866fa62f20a1602d450bd42118f4757c714f69565",
+          "sha256": "22278a2e6358957a31c477242c6566cc9a962d6dcb2f4d6a261b0e35be59fd6c",
           "source_path": "aquarius_cancer/source/source_04.jpg",
           "source_sha256": "76043cbbbf3b62db15d933312af71ec4d4fb3c79c4147e3b6e827bd3e3f81ce8",
           "source_page": "https://www.pexels.com/photo/car-window-panel-with-water-droplets-1046397/",
@@ -557,7 +557,7 @@
         },
         {
           "path": "aquarius_cancer/card_05.jpg",
-          "sha256": "50ae16ec559216bd3682e1b79bcc3cfaab9414e468ecd87a2f83280a0ae4981f",
+          "sha256": "4e0f56f634c8925384bb7bf14fe2fd3e49960c2a713cb724fecc2ec53cefb11b",
           "source_path": "aquarius_cancer/source/source_05.jpg",
           "source_sha256": "39ebe5a176b5d6d68ddd8e6f9dbad219c11ffd96d0fa2b803ed4ff4162c38579",
           "source_page": "https://www.pexels.com/photo/rainy-day-68357/",
@@ -572,7 +572,7 @@
         },
         {
           "path": "aquarius_cancer/card_06.jpg",
-          "sha256": "81105deeb9ae73d99ec2ae1df051fe5f214c4366033108fa7b38b13ae176601f",
+          "sha256": "085387c99a0885b1ab9fef136c35b67deff8943b6304d63ec456147712d5e504",
           "source_path": "aquarius_cancer/source/source_06.jpg",
           "source_sha256": "2b5efd8fbd49a794db183afee054cc44e5cbc218e7f1d5c091774cedfe43bd4f",
           "source_page": "https://www.pexels.com/photo/raindrops-on-window-overlooking-coastal-town-29894575/",
@@ -588,7 +588,7 @@
       ],
       "youtube_video": {
         "path": "aquarius_cancer/youtube_vertical.mp4",
-        "sha256": "ad42f5c664678f4ffadd70d9ae001e6e79be9ed27754e319876eae67165c4aad",
+        "sha256": "f28c1f5d797772db4f4838eacc0232854a847551b3404940b2bad6cf8526b112",
         "width": 1080,
         "height": 1920,
         "duration_seconds": 71.958333,
@@ -617,7 +617,7 @@
       "cards": [
         {
           "path": "suitcase_platform/card_01.jpg",
-          "sha256": "75d21a5e4963670b9d75758a82be1ce6274e7ca863e405963d7949a2a90a676d",
+          "sha256": "8fd1094c34fed7c7336308f33bd5ae210ead001c70d91a22e314bb678ba2422e",
           "source_path": "suitcase_platform/source/source_01.jpg",
           "source_sha256": "c9dd0e3cd621b9cee3541365d4b59d7363e5f0e032348c233c9aa1ae6d22f4c6",
           "source_page": "https://www.pexels.com/photo/spacious-train-station-with-commuters-waiting-34171043/",
@@ -632,7 +632,7 @@
         },
         {
           "path": "suitcase_platform/card_02.jpg",
-          "sha256": "03eb55e7830336e97f6405229708f5b097c6b01d91acea28514008e0e8e47989",
+          "sha256": "1102f04bcc455a5c45cbc7c8331c45127b440c0b5de543501b93743e0e0fadc3",
           "source_path": "suitcase_platform/source/source_02.jpg",
           "source_sha256": "00f92229d6358ce4ec3af1bdb879c0d5be6202be80aa06ad4df14cbfaa352a8b",
           "source_page": "https://www.pexels.com/photo/a-man-is-standing-in-a-train-station-27303355/",
@@ -647,7 +647,7 @@
         },
         {
           "path": "suitcase_platform/card_03.jpg",
-          "sha256": "754421c46aa7225a8f6c28e90e392466c206b88d27222e0e4a629319823590bc",
+          "sha256": "e6b2deae12aa13ed6ad6be53a6ab209254bcd62ae89c12e2c609deaab1b4a422",
           "source_path": "suitcase_platform/source/source_03.jpg",
           "source_sha256": "200af63307ebcc35fad81ff01beecf7772c65640a309dba21d0bd373790fd120",
           "source_page": "https://www.pexels.com/photo/traveler-with-luggage-boarding-modern-train-32707616/",
@@ -662,7 +662,7 @@
         },
         {
           "path": "suitcase_platform/card_04.jpg",
-          "sha256": "9f7daefa2485d870636ba632244c8802b3111a1754a99a64ba4964b52c34678e",
+          "sha256": "db183d814520468ecacba33bb91a608b01c964e9a0ea23c031b5db717a1c2b6e",
           "source_path": "suitcase_platform/source/source_04.jpg",
           "source_sha256": "7ac2040311abed8f21f6cd4e8d49069073869716a92e0b40c08f823d7eeca1ca",
           "source_page": "https://www.pexels.com/photo/people-walking-on-the-street-8973669/",
@@ -677,7 +677,7 @@
         },
         {
           "path": "suitcase_platform/card_05.jpg",
-          "sha256": "de427c1290e51815aee6db083b62732a7645e8d6902f993f2129e50a80725358",
+          "sha256": "fbc35b7d65721fb487dd903c66e9748e8aae376e914a6cb58bbbe69bf18f866f",
           "source_path": "suitcase_platform/source/source_05.jpg",
           "source_sha256": "9a9b8f87cbfba9acbb02907a495d79a9591ed205dd469bfe5a9b808870169280",
           "source_page": "https://www.pexels.com/photo/photo-of-a-person-with-a-luggage-bag-waiting-at-a-train-station-7007864/",
@@ -692,7 +692,7 @@
         },
         {
           "path": "suitcase_platform/card_06.jpg",
-          "sha256": "9bbc02c6657bbcd50107be39a7b0921b0155e1ab406cb6c8296895ab0addf604",
+          "sha256": "d5d47e56bfe4e9145fdc3b53acbaf30132ead90f04a1e05df8e57fdbd24d1bb5",
           "source_path": "suitcase_platform/source/source_06.jpg",
           "source_sha256": "b0cd63869d8f9b36a7421452ce880b8514786795cac4fed8966af8681ba0dbde",
           "source_page": "https://www.pexels.com/photo/classic-european-train-at-station-platform-39659196/",
@@ -708,7 +708,7 @@
       ],
       "youtube_video": {
         "path": "suitcase_platform/youtube_vertical.mp4",
-        "sha256": "58a8df51d9eb07a369ad1b96a215f2c29b9375efa847a7b8832b9d871782c003",
+        "sha256": "cd4df1d2793adab674c92660f4b94025d2f354f77ec8a607171f8dc613c6d941",
         "width": 1080,
         "height": 1920,
         "duration_seconds": 72.958333,
@@ -737,7 +737,7 @@
       "cards": [
         {
           "path": "capricorn_leo/card_01.jpg",
-          "sha256": "ed53384e94f93d63111b3242943542bffef8253d5654a6962b515203da9c293e",
+          "sha256": "f1ae795f2e9f35dd6036203f6466f9708a08c07cb27fe15c4b7a1635afebe3d8",
           "source_path": "capricorn_leo/source/source_01.jpg",
           "source_sha256": "5612521c227c1d0e905e955b6dd938915d56bb971bfd3d98076799841606db85",
           "source_page": "https://www.pexels.com/photo/stage-lights-system-12787862/",
@@ -752,7 +752,7 @@
         },
         {
           "path": "capricorn_leo/card_02.jpg",
-          "sha256": "163d5d1460dbe7dc8ca31575083dad12221164aaf2b045e5ed304ed79f63838c",
+          "sha256": "f38b052690c238f1d87c83eaf866f51a0af77251cdecacd46009f738eb26c505",
           "source_path": "capricorn_leo/source/source_02.jpg",
           "source_sha256": "be8d0b31d3463dabea6894db898886f29dec693abf0795b4cb7bcf22c8ea05ed",
           "source_page": "https://www.pexels.com/photo/sunset-at-red-rocks-amphitheatre-36569556/",
@@ -767,7 +767,7 @@
         },
         {
           "path": "capricorn_leo/card_03.jpg",
-          "sha256": "e89922e892b71add7536c0c0ceea3fa4d2f4f2d3c76fa68d0e0abe0e1eaa20d8",
+          "sha256": "a4ad2d5d1dadaa05cee456ac10610c28fc59fc3504a11dbe28ae98532d956e4b",
           "source_path": "capricorn_leo/source/source_03.jpg",
           "source_sha256": "bd8d4c2a68c2578d43bd63989dfde38e6dc960b141f21fd9eb089655f038c4d4",
           "source_page": "https://www.pexels.com/photo/head-near-microphone-in-darkness-9831878/",
@@ -782,7 +782,7 @@
         },
         {
           "path": "capricorn_leo/card_04.jpg",
-          "sha256": "3f3f3d628762cc15483e587927226add350116beb084c415d1c6fd1510031880",
+          "sha256": "503defc94f52bd503bfd55b96e828244bc200eef0842762db681c314a799853b",
           "source_path": "capricorn_leo/source/source_04.jpg",
           "source_sha256": "963a53191e31d317206ca738c275bbdb548cb925a107cfc3722defec4883197a",
           "source_page": "https://www.pexels.com/photo/man-playing-acoustic-guitar-7715347/",
@@ -797,7 +797,7 @@
         },
         {
           "path": "capricorn_leo/card_05.jpg",
-          "sha256": "31be2c00dea9241f342faca250772016275ac41417ad01421ca72de6c0ec9a82",
+          "sha256": "df76ad00dca81123e55b08ab2564a8b7bea69830bce8516ce14490c38c29f1ca",
           "source_path": "capricorn_leo/source/source_05.jpg",
           "source_sha256": "6b5e766906b01538cdc6f068e007a30fecc73139e32e9e7cea43c1cc6a65949f",
           "source_page": "https://www.pexels.com/photo/lamps-on-stage-13230800/",
@@ -812,7 +812,7 @@
         },
         {
           "path": "capricorn_leo/card_06.jpg",
-          "sha256": "02bb4e1c88b8a080e197bfc89c792d4b73743a9f75e5b5525187d930f07d09f1",
+          "sha256": "2047baf1f95333dbb84ddf8be2057e006db60e3bd38b6da882498eaa996620ea",
           "source_path": "capricorn_leo/source/source_06.jpg",
           "source_sha256": "a30db11bbdc57ecc7f72e9cba83b23bf53b9125a8bbd67979588bc3aba1fc849",
           "source_page": "https://www.pexels.com/photo/musician-in-blue-light-on-concert-16844500/",
@@ -828,7 +828,7 @@
       ],
       "youtube_video": {
         "path": "capricorn_leo/youtube_vertical.mp4",
-        "sha256": "39bb8a7132b400f30e59f7c2bdfd1570ead73ac9ddc2d6786f58ac4ddb39ea6b",
+        "sha256": "05e2282298507f9d61b01ab6d42a323afcff219e96fa0bfffb7e1e94cbe6d717",
         "width": 1080,
         "height": 1920,
         "duration_seconds": 71.958333,
@@ -857,7 +857,7 @@
       "cards": [
         {
           "path": "book_two_handwritings/card_01.jpg",
-          "sha256": "ebe028f67dcc0c27770fc24b4654c65c081b900cce9c7463c5bba326fcb22b70",
+          "sha256": "1775c700f5d05cd0982a14fd30e3157db9acd26b0213e91117cd84d06e74fa29",
           "source_path": "book_two_handwritings/source/source_01.jpg",
           "source_sha256": "7ce96313c905936532ac9f8d39c573d6c4d3f3cc2f58187c2c9824cb017303e4",
           "source_page": "https://www.pexels.com/photo/various-books-on-wooden-shelves-8499579/",
@@ -872,7 +872,7 @@
         },
         {
           "path": "book_two_handwritings/card_02.jpg",
-          "sha256": "fa80981021041e35e2e00f34a817b64586996b6dc34eaaa7602782eaba3e5b1b",
+          "sha256": "2aec4ca1854fc6e548f558f0bf4295b3e3a1b8eda54f00e15c4110392d3c66fe",
           "source_path": "book_two_handwritings/source/source_02.jpg",
           "source_sha256": "37282bc5b5f6ab6f7b7e57ac29c02a0d1300b9f1eb34aa81017defc627e554b9",
           "source_page": "https://www.pexels.com/photo/collection-of-antique-books-in-a-cardboard-box-35098074/",
@@ -887,7 +887,7 @@
         },
         {
           "path": "book_two_handwritings/card_03.jpg",
-          "sha256": "58968c73535626ef76b83b0a4e292e4912ff6fc24971424db250b8c0aee9372d",
+          "sha256": "36576ea53f10f955a784c63cd3eaf1748e07c54b1151d5c6b9534e5013720231",
           "source_path": "book_two_handwritings/source/source_03.jpg",
           "source_sha256": "b0bfeb80596dd1a7cd9ee77435004adbe56fdd507036da83bafe11154c3e3b18",
           "source_page": "https://www.pexels.com/photo/cozy-vintage-bookstore-in-istanbul-turkey-29608317/",
@@ -902,7 +902,7 @@
         },
         {
           "path": "book_two_handwritings/card_04.jpg",
-          "sha256": "1273ce09dcfacdf0154401dded2f503f6980bbb02d129c93c2775ef4f4c019cf",
+          "sha256": "40ab3a18173d47bb481d88e12d383c5468e43615cd635acbced20add16405725",
           "source_path": "book_two_handwritings/source/source_04.jpg",
           "source_sha256": "a9bf6656c2c4e722620d3aa1e29a0646cfd91e12ae55ad6c58b212514490ff0e",
           "source_page": "https://www.pexels.com/photo/cozy-bookstore-interior-with-vintage-charm-35893470/",
@@ -917,7 +917,7 @@
         },
         {
           "path": "book_two_handwritings/card_05.jpg",
-          "sha256": "f4d2b1947d48a7a50756731f9850e117bbf88328797aacb9ffec2468ec2fc524",
+          "sha256": "6dc8faf3c2c894627dc9424df4bb72e59e32328304171c212423c3c3154e6887",
           "source_path": "book_two_handwritings/source/source_05.jpg",
           "source_sha256": "79f863e83952e70afe3b58abf98f2a18affe469975228c7bd9fd58e2a6cdf3ed",
           "source_page": "https://www.pexels.com/photo/stacks-of-old-books-in-a-library-18361685/",
@@ -932,7 +932,7 @@
         },
         {
           "path": "book_two_handwritings/card_06.jpg",
-          "sha256": "00a7cc91766c727c263a7c76b4fc4c96e50c260200719cd37f81fb8196001fcb",
+          "sha256": "73852c38dc6caf2e5a133693a3dbdac73d6347e3b2ef3981f058b03c5543c59c",
           "source_path": "book_two_handwritings/source/source_06.jpg",
           "source_sha256": "f7014448528fca527b3e15d6f6997ebd25fe377740fbd92cf329240ca0e6f654",
           "source_page": "https://www.pexels.com/photo/stackf-od-books-18701956/",
@@ -948,7 +948,7 @@
       ],
       "youtube_video": {
         "path": "book_two_handwritings/youtube_vertical.mp4",
-        "sha256": "1988638f8449d140100c1474f5eeca02b662c511603deb63dd97df44a5a25fe8",
+        "sha256": "a24fe4a9b669bda3fb0a0c3ec275959fd3ea280ee2c234777c134c7dd9273e19",
         "width": 1080,
         "height": 1920,
         "duration_seconds": 71.958333,
