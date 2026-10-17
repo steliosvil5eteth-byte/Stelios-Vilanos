@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0",
+  "brand_id": 7076410,
+  "date": "2026-10-17",
+  "timezone": "Europe/Athens",
+  "review_status": "PASSED_FINAL_REVIEW",
+  "scope": "Eight non-narrated zodiac/fiction packages only; Greece-versus-country comparison remains blocked and is not approved.",
+  "manifest_path": "media/carousel_20261017/manifest.json",
+  "manifest_blob_sha": "e4bb465789a767ab0981dcf1cff11ea1943fdf11",
+  "reviewed_packages": [
+    "aries_virgo",
+    "coffee_for_next",
+    "scorpio_libra",
+    "coat_hidden_button",
+    "aquarius_cancer",
+    "suitcase_platform",
+    "capricorn_leo",
+    "book_two_handwritings"
+  ],
+  "review_method": "Opened and read all eight exact final six-card JPEG contact sheets and all eight six-frame contact sheets decoded from the exact final MP4s after the AI-disclosure repair. Inspected all 48 final cards and every encoded-video card for Greek spelling, complete hook/plot/ending, numbering 01/06–06/06, 1080x1080 framing, mobile readability, distinct relevant Pexels photographs, CTA, entertainment/fiction disclosure and visible 'Κείμενο AI'. Verified the complete 1080x1920 silent slideshows, uncropped square cards, >=11-second reading intervals, and no audio stream. Hash binding is copied verbatim from the current manifest.",
+  "actual_visual_inspection": true,
+  "actual_audio_listened": "NOT_APPLICABLE_NO_AUDIO",
+  "audio_streams_expected": 0,
+  "card_count": 48,
+  "cards_per_package": 6,
+  "square_dimensions": [
+    1080,
+    1080
+  ],
+  "video_dimensions": [
+    1080,
+    1920
+  ],
+  "exact_hashes": {
+    "aries_virgo": {
+      "cards": [
+        "0797b24267dff391177e6fda6fea7c363293def55a15e6c9eac181252cbf4cef",
+        "6201eefaa5568fa46917722f39adfa226c8cef5ce0548b82d6dbdae40918fb37",
+        "eda70cf08eb80f88bb064754d66ac1404a184620bb4ddde9ff85e4f2eeb8cdaa",
+        "a9e3876ba3988bfc963bed55d408114c6c14fc41caa3f9cc8086d7a76292ad91",
+        "68d40bb932e4b208ddf46f8df853774c4c12e9dfa3103d070219ab2d2df6108a",
+        "644117fe983170125018b395e58b62a274b55e23e675fb3e8031404d014e21d3"
+      ],
+      "youtube_video": "7674e34e6439b192d2062087fa242e47fbfeca2482d0e1bd295c6373de4e96cf",
+      "duration_seconds": 71.958333,
+      "audio_streams": 0
+    },
+    "coffee_for_next": {
+      "cards": [
+        "7b5672b1f34feaeaee243b6643b099d4efd79aa63f93e741f7d0ecdc516b022a",
+        "0d66a44af260b9a2804513ec02300c15c14f6cd0ec79bb9ea92670bd61d0733e",
+        "619e69bf282cee501de3d39cea49ad7791930d12dc5d7d47d0b69da788cc1078",
+        "e538dd83deebfc80abec9049a8c1a7ede476f89f1aefee695b7bd3ea6e9d1f50",
+        "9130e7a57877a7201e35409e65e27588d9ed846470de77f47d0f9735f9dda56b",
+        "30aa8a2ecbf40d6052d6a6f6e907378ecec0f1ac2485d498f7072aa828dfecfe"
+      ],
+      "youtube_video": "63c6acdebf135cc873d526e8decb8510fc8a260b8709ed22e8a42de0c1206ca6",
+      "duration_seconds": 71.958333,
+      "audio_streams": 0
+    },
+    "scorpio_libra": {
+      "cards": [
+        "ef458bbcbccf6f223258cf69cd4cf56a52e32948c29bc86eb7846c0e6d8c37ab",
+        "5aa3968b2457fbb3d2071fa345214f7c24c631427277d3aecf815add01ad7058",
+        "bac416453785941926742f6fef5dcaad5769648affbc887281210a00f8f772c5",
+        "3cd256b7c07f4eebb1a3abbe5294b4e84febd8d49d3b5938e16d3b9dff86ea76",
+        "bdd354f289a7a55bc71fe062c68466920c125f7ea9f9f5ef6c2c4935296e3ff6",
+        "6c428c409354207664aaaf7a8f3e4b09e4925180a23b71a1d240d886a60f69f4"
+      ],
+      "youtube_video": "b5f141c7663e723bffa5c27a9a5b2717549f896b21039d5ebc8f08910833e6be",
+      "duration_seconds": 71.958333,
+      "audio_streams": 0
+    },
+    "coat_hidden_button": {
+      "cards": [
+        "e1be77406eddc21fa5b1e96db7c6f88eddb494750c36f2a52597fc406e2bf91e",
+        "752e5729e5ff232385d43f5c1d0aa6d3f0988fb8545b3b30116da8d627f45783",
+        "95e404ebf4fa9db7d59a679b135155f8be4bab7f8b244612d8c17d807d043a95",
+        "d41c984369c2dacd6cc1059e24ee1f9f45064109154b4a93cdd6142ca4d0a43f",
+        "ade47fabe8df1ddc6480a99fbe05608eba52e61934b612d9c1a71fdc23e05396",
+        "ad7d528dfeb03d306d32a36f1a4e70c19747ffc497ac3fe84fafbcf3fbf3d7af"
+      ],
+      "youtube_video": "790ce61bc61089b433117c64e270c3e629c5ff910dd1f2d3d2cffdb84ef0c48f",
+      "duration_seconds": 72.958333,
+      "audio_streams": 0
+    },
+    "aquarius_cancer": {
+      "cards": [
+        "67818ae154c89dec1d1bddb5b7ec287da24580e2f6e3c134e1613e1475896b18",
+        "e40ef6943b181662bbaf04cfc86d32ac5877f80296dc2f268ee5bf145a48548c",
+        "d9e075f34aa6ff776f059c8c7c1d1318d989f25f21affff409051fc22fecdae3",
+        "22278a2e6358957a31c477242c6566cc9a962d6dcb2f4d6a261b0e35be59fd6c",
+        "4e0f56f634c8925384bb7bf14fe2fd3e49960c2a713cb724fecc2ec53cefb11b",
+        "085387c99a0885b1ab9fef136c35b67deff8943b6304d63ec456147712d5e504"
+      ],
+      "youtube_video": "f28c1f5d797772db4f4838eacc0232854a847551b3404940b2bad6cf8526b112",
+      "duration_seconds": 71.958333,
+      "audio_streams": 0
+    },
+    "suitcase_platform": {
+      "cards": [
+        "8fd1094c34fed7c7336308f33bd5ae210ead001c70d91a22e314bb678ba2422e",
+        "1102f04bcc455a5c45cbc7c8331c45127b440c0b5de543501b93743e0e0fadc3",
+        "e6b2deae12aa13ed6ad6be53a6ab209254bcd62ae89c12e2c609deaab1b4a422",
+        "db183d814520468ecacba33bb91a608b01c964e9a0ea23c031b5db717a1c2b6e",
+        "fbc35b7d65721fb487dd903c66e9748e8aae376e914a6cb58bbbe69bf18f866f",
+        "d5d47e56bfe4e9145fdc3b53acbaf30132ead90f04a1e05df8e57fdbd24d1bb5"
+      ],
+      "youtube_video": "cd4df1d2793adab674c92660f4b94025d2f354f77ec8a607171f8dc613c6d941",
+      "duration_seconds": 72.958333,
+      "audio_streams": 0
+    },
+    "capricorn_leo": {
+      "cards": [
+        "f1ae795f2e9f35dd6036203f6466f9708a08c07cb27fe15c4b7a1635afebe3d8",
+        "f38b052690c238f1d87c83eaf866f51a0af77251cdecacd46009f738eb26c505",
+        "a4ad2d5d1dadaa05cee456ac10610c28fc59fc3504a11dbe28ae98532d956e4b",
+        "503defc94f52bd503bfd55b96e828244bc200eef0842762db681c314a799853b",
+        "df76ad00dca81123e55b08ab2564a8b7bea69830bce8516ce14490c38c29f1ca",
+        "2047baf1f95333dbb84ddf8be2057e006db60e3bd38b6da882498eaa996620ea"
+      ],
+      "youtube_video": "05e2282298507f9d61b01ab6d42a323afcff219e96fa0bfffb7e1e94cbe6d717",
+      "duration_seconds": 71.958333,
+      "audio_streams": 0
+    },
+    "book_two_handwritings": {
+      "cards": [
+        "1775c700f5d05cd0982a14fd30e3157db9acd26b0213e91117cd84d06e74fa29",
+        "2aec4ca1854fc6e548f558f0bf4295b3e3a1b8eda54f00e15c4110392d3c66fe",
+        "36576ea53f10f955a784c63cd3eaf1748e07c54b1151d5c6b9534e5013720231",
+        "40ab3a18173d47bb481d88e12d383c5468e43615cd635acbced20add16405725",
+        "6dc8faf3c2c894627dc9424df4bb72e59e32328304171c212423c3c3154e6887",
+        "73852c38dc6caf2e5a133693a3dbdac73d6347e3b2ef3981f058b03c5543c59c"
+      ],
+      "youtube_video": "a24fe4a9b669bda3fb0a0c3ec275959fd3ea280ee2c234777c134c7dd9273e19",
+      "duration_seconds": 71.958333,
+      "audio_streams": 0
+    }
+  },
+  "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+  "disclosures": {
+    "cards": "Visible series disclosure + Pexels photo source + 'Κείμενο AI' on every card",
+    "captions": "Series disclosure, real licensed Pexels photos (not AI imagery), CTA and <=5 hashtags"
+  },
+  "release_requirements": "Fresh complete Metricool + Notion active/archived view + repository/history/lease dedupe immediately before each Metricool create; native six-JPEG photo posts for Facebook/Instagram/TikTok with TikTok autoAddMusic=true and Instagram generated-content setting when available; exact silent MP4 only for YouTube; immediate live readback after every write.",
+  "not_approved": "Any earlier pre-repair render without the visible AI text disclosure, any later modified file, and the blocked country-comparison slot."
+}
