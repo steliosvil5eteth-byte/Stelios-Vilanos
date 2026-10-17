@@ -5,10 +5,16 @@
   "brand_id": 7076410,
   "date": "2026-10-17",
   "program": "CAROUSEL_FOUR_FOUR_ONE_20261016",
-  "status": "ACTIVE_RENDER_ONLY",
+  "status": "ACTIVE_RELEASE",
   "scope": [
-    "aries_virgo", "coffee_for_next", "scorpio_libra", "coat_hidden_button",
-    "aquarius_cancer", "suitcase_platform", "capricorn_leo", "book_two_handwritings"
+    "aries_virgo",
+    "coffee_for_next",
+    "scorpio_libra",
+    "coat_hidden_button",
+    "aquarius_cancer",
+    "suitcase_platform",
+    "capricorn_leo",
+    "book_two_handwritings"
   ],
   "excluded_slot": {
     "time": "18:30",
@@ -32,5 +38,13 @@
   },
   "created_at": "2026-10-17T06:03:01+03:00",
   "expires_at": "2026-10-17T20:00:00+00:00",
-  "provider_writes": []
+  "provider_writes": [],
+  "qa": {
+    "status": "PASSED_FINAL_REVIEW",
+    "record": "state/daily_delivery/carousel_20261017_final_review.json",
+    "record_blob_sha": "8b453936018e6c60bfe50885276e6261de866bd7",
+    "packages": 8,
+    "comparison": "BLOCKED_RESEARCH_NOT_EXACTLY_VERIFIED"
+  },
+  "release_started_at": "2026-10-17T06:30:00+03:00"
 }
