@@ -1,0 +1,725 @@
+{
+  "schema_version": "1.0",
+  "date": "2026-10-18",
+  "timezone": "Europe/Athens",
+  "brand_id": 7076410,
+  "brand_name": "Ιστορίες που μας αγγίζουν",
+  "program": "CAROUSEL_FOUR_FOUR_ONE_20261016",
+  "state": "PARTIAL_SCHEDULED_PENDING_8_OF_9",
+  "logical_target": 9,
+  "destination_target": 36,
+  "scheduled_logical_posts": 8,
+  "scheduled_destinations": 32,
+  "published_destinations": 0,
+  "failed_destinations": 0,
+  "inactive_drafts": 0,
+  "qa_record": "state/daily_delivery/carousel_20261018_final_review.json",
+  "actual_final_qa": {
+    "packages_passed": 8,
+    "native_jpegs_reviewed": 48,
+    "youtube_mp4_reviewed": 8,
+    "audio_streams": 0
+  },
+  "blocked": [
+    {
+      "time": "18:30",
+      "series": "greece_country_comparison",
+      "status": "BLOCKED_RESEARCH_NOT_EXACTLY_VERIFIED",
+      "blocked_destinations": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "reason": "Δεν ολοκληρώθηκε νέο δεκάκαρτο πακέτο με πρωτογενείς πηγές, συγκρίσιμα έτη/ορισμούς και exact-final QA· δεν δημιουργήθηκε Metricool record."
+    }
+  ],
+  "deliveries": [
+    {
+      "package_id": "taurus_gemini",
+      "title": "Ταύρος με ωροσκόπο Δίδυμο",
+      "series": "zodiac_ascendant",
+      "time": "07:00",
+      "fingerprint": "zodiac_ascendant|taurus_gemini|steady_roots_quick_mind",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "exact_native_sha256": [
+        "915e9f4cd4859aebe441516ba45f29f8a3fe089a6f998a1dea3c2ea87ca2cc03",
+        "83f50542b90a68714acf142142298106e03bbbb75d820647afa90e6d1f759f21",
+        "14f6b4616b1028a2e2a2a76c16d060e3bbf12be424aec6af5170e5ace2d6934d",
+        "cbf68e9854037cd7d12f71ee18f13fc9911143656f99cce648dc8834f1a2fa72",
+        "2f6d75f758c81a7935c31b832dbadcaae62d361a0fddaf8bee28768f77d29561",
+        "265207c42e884f2c308df021d5ad0e3a4d08b3d5d452716471ef409e039af758"
+      ],
+      "exact_youtube_sha256": "3ffbd2152dde5c1e528da54336968cb9a7e986b95d54d57648d1750943272f5f",
+      "native": {
+        "id": 398894208,
+        "uuid": "5838571086019839909",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-9903587019606775620.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-7541115422458117199.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-4924967801104444562.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-2666849167266213700.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-14433460530237413842.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-9283414416209423642.jpeg"
+        ],
+        "draft": false,
+        "autoPublish": true,
+        "publicationDate": {
+          "dateTime": "2026-10-18T07:00:00",
+          "timezone": "Europe/Athens"
+        }
+      },
+      "youtube": {
+        "id": 398894343,
+        "uuid": "5596673132248187341",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-13364994285789039875.mp4"
+        ],
+        "draft": false,
+        "autoPublish": true,
+        "publicationDate": {
+          "dateTime": "2026-10-18T07:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "youtubeData": {
+          "title": "Ταύρος με ωροσκόπο Δίδυμο | 6 κάρτες",
+          "type": "short",
+          "privacy": "public",
+          "madeForKids": false,
+          "isAiGeneratedContent": false,
+          "notifySubscribers": true
+        }
+      },
+      "notion_page": {
+        "id": "3fdf2345-b318-81e1-a288-ff28a90da227",
+        "url": "https://app.notion.com/p/3fdf2345b31881e1a288ff28a90da227"
+      }
+    },
+    {
+      "package_id": "unfinished_song",
+      "title": "Το τραγούδι που έμεινε στη μέση",
+      "series": "emotional_fiction",
+      "time": "09:00",
+      "fingerprint": "emotional_fiction|empty_rehearsal_stage_unfinished_song_reunites_estranged_brothers_duet",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "exact_native_sha256": [
+        "b25b83bc8ed3669db2ca372421a6c5c45face5d9f8469de1407836cfa64788bd",
+        "0a67525e4ddf35be2216b5d8a052d96297f34abe97c654e75340276b802bea1f",
+        "a7dbd71d37176e618d5e5e659eef82e025dc77fae136aa7d843fa74cf607a4ad",
+        "62d3a903fab8c14220d6b43c3f4d4e6902b72c8f72de736e5e54a863c94284e8",
+        "b9c416a7fd2dc6cc5bd85b1bf29031ee76f79bb34e4d7322749341849b14f9ad",
+        "2b70070b4f7bed4ef461a5efe529946b5d425446627e9ad9e0ac19161dd33ec0"
+      ],
+      "exact_youtube_sha256": "905461e6a98fde9a9429dda493543f0b4e5a3d88ec422081760b655c54ae9b07",
+      "native": {
+        "id": 398894926,
+        "uuid": "194759628075321472",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-13716589653751001049.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-17319955530194181636.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-5623700929534714390.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-2332726461961756019.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-17162614500048411955.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-16837371279046614574.jpeg"
+        ],
+        "draft": false,
+        "autoPublish": true,
+        "publicationDate": {
+          "dateTime": "2026-10-18T09:00:00",
+          "timezone": "Europe/Athens"
+        }
+      },
+      "youtube": {
+        "id": 398895011,
+        "uuid": "-1112253294996864454",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-5478444860116345936.mp4"
+        ],
+        "draft": false,
+        "autoPublish": true,
+        "publicationDate": {
+          "dateTime": "2026-10-18T09:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "youtubeData": {
+          "title": "Το τραγούδι που έμεινε στη μέση | 6 κάρτες",
+          "type": "short",
+          "privacy": "public",
+          "madeForKids": false,
+          "isAiGeneratedContent": false,
+          "notifySubscribers": true
+        }
+      },
+      "notion_page": {
+        "id": "3fdf2345-b318-81dc-ad39-fa93d0f1de98",
+        "url": "https://app.notion.com/p/3fdf2345b31881dcad39fa93d0f1de98?pvs=204"
+      }
+    },
+    {
+      "package_id": "cancer_sagittarius",
+      "title": "Καρκίνος με ωροσκόπο Τοξότη",
+      "series": "zodiac_ascendant",
+      "time": "11:00",
+      "fingerprint": "zodiac_ascendant|cancer_sagittarius|home_with_open_horizon",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "exact_native_sha256": [
+        "423016b688a205f2a31d7457a3f6bad36f6f86db8e3c8598d7188f06b4cd14e4",
+        "afce68332001ea643612bc5de61cdf7b08cb524e5194b9e8fa6c27b446bdd8f6",
+        "ce5fc489d9d9f4250a777e1f27237f2234bd7716a4f4dfcc83de342dcfa964df",
+        "870624dcb98b76069679a05a90039e65d79d59c172a3697730d0dee409cb443b",
+        "c99dcf182faff9e5d680e77995e4d8ff8c62ddcb4715b6f23c4efc60ed69acf1",
+        "d73d5e63d60ec5f6076c5a7a77e77508c1fc28715e540ae674f2224eca175812"
+      ],
+      "exact_youtube_sha256": "d3ec357cdab1fca826b39732456876e3f818ed1dfef4389e28cd5378891f814c",
+      "native": {
+        "id": 398895154,
+        "uuid": "8464617086774100481",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-8957573102005334140.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-1719256135869716710.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-13331004001562635383.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-5223584980236896342.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-56093600017658112.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-15965113655038623404.jpeg"
+        ],
+        "draft": false,
+        "autoPublish": true,
+        "publicationDate": {
+          "dateTime": "2026-10-18T11:00:00",
+          "timezone": "Europe/Athens"
+        }
+      },
+      "youtube": {
+        "id": 398895245,
+        "uuid": "1668346582099445048",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-12466653788680483977.mp4"
+        ],
+        "draft": false,
+        "autoPublish": true,
+        "publicationDate": {
+          "dateTime": "2026-10-18T11:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "youtubeData": {
+          "title": "Καρκίνος με ωροσκόπο Τοξότη | 6 κάρτες",
+          "type": "short",
+          "privacy": "public",
+          "madeForKids": false,
+          "isAiGeneratedContent": false,
+          "notifySubscribers": true
+        }
+      },
+      "notion_page": {
+        "id": "3fdf2345-b318-8141-b8ee-d3cdbe337216",
+        "url": "https://app.notion.com/p/3fdf2345b3188141b8eed3cdbe337216?pvs=204"
+      }
+    },
+    {
+      "package_id": "thermos_last_station",
+      "title": "Το θερμός του τελευταίου σταθμού",
+      "series": "emotional_fiction",
+      "time": "13:00",
+      "fingerprint": "emotional_fiction|station_cleaner_tea_stranded_commuters_retirement_thermos_thank_you",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "exact_native_sha256": [
+        "ba6b97a3fb97266dfe5fe31982515ed880048291da8a4b77ab4244d7a3736f32",
+        "3c5f7a4d24d5cddf02b3aee0ab110ed01636079e409291f038c98e37d62a3d41",
+        "bd4d5df4164e175b10f29a4b3f1137553d0a335aecee7fc23eafe19bd48d454a",
+        "4c0ee9ca41216b278aaea169d7933487d7993bf9d7d46784c6c99e4e0df976e0",
+        "6491b099313b746921d544a327b2f1d80c1a1895f9b52a8cb9497e5e8763fa47",
+        "063aad4eef13ce5fdcb479647cf8aa57069ac8300a63ee64a3910285f4bac2f0"
+      ],
+      "exact_youtube_sha256": "30a85ef2d4caa13f841ae161c6cb6da55452d6fab87795cd4e9a9ee3d960520a",
+      "native": {
+        "id": 398895381,
+        "uuid": "1229921651437159914",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-14754875038919607976.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-6797188339377690330.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-7670236473664058257.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-4306531930530704439.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-5334493964101870297.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-8119615242834312274.jpeg"
+        ],
+        "draft": false,
+        "autoPublish": true,
+        "publicationDate": {
+          "dateTime": "2026-10-18T13:00:00",
+          "timezone": "Europe/Athens"
+        }
+      },
+      "youtube": {
+        "id": 398895478,
+        "uuid": "8446804539179223552",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-15822059755975171406.mp4"
+        ],
+        "draft": false,
+        "autoPublish": true,
+        "publicationDate": {
+          "dateTime": "2026-10-18T13:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "youtubeData": {
+          "title": "Το θερμός του τελευταίου σταθμού | 6 κάρτες",
+          "type": "short",
+          "privacy": "public",
+          "madeForKids": false,
+          "isAiGeneratedContent": false,
+          "notifySubscribers": true
+        }
+      },
+      "notion_page": {
+        "id": "3fdf2345-b318-81ee-85a9-ee336617c8f4",
+        "url": "https://app.notion.com/p/3fdf2345b31881ee85a9ee336617c8f4?pvs=204"
+      }
+    },
+    {
+      "package_id": "virgo_aquarius",
+      "title": "Παρθένος με ωροσκόπο Υδροχόο",
+      "series": "zodiac_ascendant",
+      "time": "15:00",
+      "fingerprint": "zodiac_ascendant|virgo_aquarius|useful_innovation_human_detail",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "exact_native_sha256": [
+        "684522f7457d76208dc9db9529378ed4313736032c2426360fe0335d8b4a769e",
+        "77fd4b81a3ed553a32fd9b73878c68494685d3fd64eb1d1467245038f131339f",
+        "c86caef4b5603288d73befc553a86651b5e5d5b8b5d2bf949b3b96d1330b0ada",
+        "d38074a0f0b8c08228fc4640dfde9d3e1d1cb8a55a2bb07f482f3cfd9964f9a5",
+        "4953fade7a2e40eddc5522f96933c0f4d10dbb6608613f8269d218abd1b7363a",
+        "347e6848a57ea799a364a5874f988f34a00a54ec28645dbe0598f7259223f90e"
+      ],
+      "exact_youtube_sha256": "2f5cc1a7be22b6b2b74bbecd59af51e398f53f45a6212cc54e83aabaa73d90af",
+      "native": {
+        "id": 398895644,
+        "uuid": "3205730169502777845",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-17579816796558370502.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-5834529187787983908.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-5615109231692380573.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-5168497418555299186.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-8889944619590088885.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-1898354460110370851.jpeg"
+        ],
+        "draft": false,
+        "autoPublish": true,
+        "publicationDate": {
+          "dateTime": "2026-10-18T15:00:00",
+          "timezone": "Europe/Athens"
+        }
+      },
+      "youtube": {
+        "id": 398895722,
+        "uuid": "1870677946801865724",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-7724243393665522194.mp4"
+        ],
+        "draft": false,
+        "autoPublish": true,
+        "publicationDate": {
+          "dateTime": "2026-10-18T15:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "youtubeData": {
+          "title": "Παρθένος με ωροσκόπο Υδροχόο | 6 κάρτες",
+          "type": "short",
+          "privacy": "public",
+          "madeForKids": false,
+          "isAiGeneratedContent": false,
+          "notifySubscribers": true
+        }
+      },
+      "notion_page": {
+        "id": "3fdf2345-b318-819f-bfc8-ccfdd3f7e6f0",
+        "url": "https://app.notion.com/p/3fdf2345b318819fbfc8ccfdd3f7e6f0?pvs=204"
+      }
+    },
+    {
+      "package_id": "light_opposite_window",
+      "title": "Το φως στο απέναντι παράθυρο",
+      "series": "emotional_fiction",
+      "time": "17:00",
+      "fingerprint": "emotional_fiction|elderly_neighbors_lamp_signal_missing_signal_rescue_hospital_window",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "exact_native_sha256": [
+        "8d119d8c70f24015dbd17f8605d997b04505cf007002969bb3defa4bd34841e6",
+        "b6de9e24555e605bfcedc2006af9dc5e13c6aad725e5e6c1ec36453b2eb2f70d",
+        "b501b5f97b417e397f7a1369d8f86114bfc7341ea7b9b7661bbd32572199135e",
+        "3216bf2ee1d84c65a01a685dde3f080ede921ea8ba58df96f55038bd6abbc79a",
+        "7951841c330dea60a1a1b02df77dba04e1827c66446f44cb6ffafd64d2332961",
+        "ce0100ef80caca5a9dab6a7ed876b36a6caef53c8711cb3939066443e4091470"
+      ],
+      "exact_youtube_sha256": "f78883e710a3bf200700f301a879946b6b5e37bb8aeddecbc578ff7d178ad139",
+      "native": {
+        "id": 398895858,
+        "uuid": "926591642133679399",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-5089296168927595381.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-17112457745967311129.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-6295002477662316391.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-12314207484947355376.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-13964450845746530033.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-10469866319160708899.jpeg"
+        ],
+        "draft": false,
+        "autoPublish": true,
+        "publicationDate": {
+          "dateTime": "2026-10-18T17:00:00",
+          "timezone": "Europe/Athens"
+        }
+      },
+      "youtube": {
+        "id": 398895937,
+        "uuid": "-3022656739796563425",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-7482174151840825689.mp4"
+        ],
+        "draft": false,
+        "autoPublish": true,
+        "publicationDate": {
+          "dateTime": "2026-10-18T17:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "youtubeData": {
+          "title": "Το φως στο απέναντι παράθυρο | 6 κάρτες",
+          "type": "short",
+          "privacy": "public",
+          "madeForKids": false,
+          "isAiGeneratedContent": false,
+          "notifySubscribers": true
+        }
+      },
+      "notion_page": {
+        "id": "3fdf2345-b318-8104-b678-c42036a1257a",
+        "url": "https://app.notion.com/p/3fdf2345b3188104b678c42036a1257a?pvs=204"
+      }
+    },
+    {
+      "package_id": "pisces_libra",
+      "title": "Ιχθύες με ωροσκόπο Ζυγό",
+      "series": "zodiac_ascendant",
+      "time": "20:00",
+      "fingerprint": "zodiac_ascendant|pisces_libra|empathy_with_boundaries",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "exact_native_sha256": [
+        "558a9e5ec972770767f9d013446c9807f8580510d1a2932b981a569e6ddaf30e",
+        "21989786f1a638b5c9b607e2c42c8de9dae4543612a293591ae784ea657fcf13",
+        "2f9398cb5fded19accb37577bd32e016ab967aaaae30a7167fb7b331bc66e165",
+        "1bdc88ec078ed515c904d0e352f79963d661f0c22cd4aa2aad334794dfd95a51",
+        "76f4278f1f98605a5fb8cd0ee85e8d66347830753caea76146b99f5868edb6c9",
+        "5f3c3b7baebf95d1a40db507f5f5ac2becc7529717a41772225637b62565934e"
+      ],
+      "exact_youtube_sha256": "182e5e008c8bedfd8acfff888bd010c3b7f7df6a6a04eb11885ccebf3b295499",
+      "native": {
+        "id": 398896091,
+        "uuid": "3621633124426204580",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-8224126446967848363.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-9911816557472455438.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-5079932772000258303.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-15410253227667924688.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-7329088858842627853.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-15685336122905417753.jpeg"
+        ],
+        "draft": false,
+        "autoPublish": true,
+        "publicationDate": {
+          "dateTime": "2026-10-18T20:00:00",
+          "timezone": "Europe/Athens"
+        }
+      },
+      "youtube": {
+        "id": 398896154,
+        "uuid": "-4440520261075253011",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-1174209836679687864.mp4"
+        ],
+        "draft": false,
+        "autoPublish": true,
+        "publicationDate": {
+          "dateTime": "2026-10-18T20:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "youtubeData": {
+          "title": "Ιχθύες με ωροσκόπο Ζυγό | 6 κάρτες",
+          "type": "short",
+          "privacy": "public",
+          "madeForKids": false,
+          "isAiGeneratedContent": false,
+          "notifySubscribers": true
+        }
+      },
+      "notion_page": {
+        "id": "3fdf2345-b318-81a7-a0c6-d13dd17c4a9d",
+        "url": "https://app.notion.com/p/3fdf2345b31881a7a0c6d13dd17c4a9d?pvs=204"
+      }
+    },
+    {
+      "package_id": "sunday_table",
+      "title": "Το τραπέζι της Κυριακής",
+      "series": "emotional_fiction",
+      "time": "22:00",
+      "fingerprint": "emotional_fiction|bakery_owner_invites_lonely_regular_sunday_shared_table_welcomes_newcomer",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "exact_native_sha256": [
+        "70dd29f730718e8262db5d0365723c86847b7b6652be21b15d45bd10871cc79a",
+        "776151fc9f14b153536af68365884bc77056406cde236f6418ee7e2c50d504a4",
+        "e5fe2d1a1e4b730954423b357c482963db5d11e5855f6fda60d0e7a84379aedd",
+        "b9a15a93225ee6751b8ddd23fb6c55852eea52ebac94c8bac32b8a42472f58ab",
+        "586b0a4abb05b8855a910ac8ad4e367ea8640ebe93f2f07447c10783a47f1349",
+        "08d90f0756bc71b981c7cc73603f28f457061794d8fac4ddb906bee06991dc36"
+      ],
+      "exact_youtube_sha256": "9b7acdd91dad9593a0c1c3f85acbbe1a1838d6d775e6e4d1f896bc0c56c66e9b",
+      "native": {
+        "id": 398896291,
+        "uuid": "3153856915133187711",
+        "providers": [
+          {
+            "network": "facebook",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "instagram",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          },
+          {
+            "network": "tiktok",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-710538141035077242.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-16956861753500430181.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-14386611251286804902.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-37050676204364925.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-3511619045518628341.jpeg",
+          "https://static.metricool.com/planner/202610/7000636-file-16685618388536763810.jpeg"
+        ],
+        "draft": false,
+        "autoPublish": true,
+        "publicationDate": {
+          "dateTime": "2026-10-18T22:00:00",
+          "timezone": "Europe/Athens"
+        }
+      },
+      "youtube": {
+        "id": 398896375,
+        "uuid": "-7311968729905475667",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ],
+        "media": [
+          "https://static.metricool.com/planner/202610/7000636-file-10079695689641343001.mp4"
+        ],
+        "draft": false,
+        "autoPublish": true,
+        "publicationDate": {
+          "dateTime": "2026-10-18T22:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "youtubeData": {
+          "title": "Το τραπέζι της Κυριακής | 6 κάρτες",
+          "type": "short",
+          "privacy": "public",
+          "madeForKids": false,
+          "isAiGeneratedContent": false,
+          "notifySubscribers": true
+        }
+      },
+      "notion_page": {
+        "id": "3fdf2345-b318-81d0-b124-ca105f5a3aa3",
+        "url": "https://app.notion.com/p/3fdf2345b31881d0b124ca105f5a3aa3?pvs=204"
+      }
+    }
+  ],
+  "future_queue": {
+    "dates": [
+      "2026-10-19",
+      "2026-10-20"
+    ],
+    "fully_qa_passed_and_scheduled_days": 0,
+    "target_days": 3
+  },
+  "cost": {
+    "paid_charges_eur": 0,
+    "generation_credits_used": 0,
+    "new_credits_purchased": 0
+  },
+  "final_live_readback_at": "2026-10-18T06:28:00+03:00"
+}
