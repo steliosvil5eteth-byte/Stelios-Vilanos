@@ -34,5 +34,59 @@
   },
   "created_at": "2026-10-18T06:04:00+03:00",
   "expires_at": "2026-10-18T20:00:00+00:00",
-  "provider_writes": []
+  "provider_writes": [
+    {
+      "package_id": "taurus_gemini",
+      "route": "native",
+      "id": 398894208,
+      "uuid": "5838571086019839909",
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "07:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-9903587019606775620.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-7541115422458117199.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-4924967801104444562.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-2666849167266213700.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-14433460530237413842.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-9283414416209423642.jpeg"
+      ]
+    },
+    {
+      "package_id": "taurus_gemini",
+      "route": "youtube",
+      "id": 398894343,
+      "uuid": "5596673132248187341",
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "07:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-13364994285789039875.mp4"
+      ]
+    }
+  ]
 }
