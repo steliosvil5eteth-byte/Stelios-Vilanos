@@ -351,6 +351,59 @@
       "media": [
         "https://static.metricool.com/planner/202610/7000636-file-7482174151840825689.mp4"
       ]
+    },
+    {
+      "package_id": "pisces_libra",
+      "route": "native",
+      "id": 398896091,
+      "uuid": "3621633124426204580",
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "20:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-8224126446967848363.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-9911816557472455438.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-5079932772000258303.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-15410253227667924688.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-7329088858842627853.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-15685336122905417753.jpeg"
+      ]
+    },
+    {
+      "package_id": "pisces_libra",
+      "route": "youtube",
+      "id": 398896154,
+      "uuid": "-4440520261075253011",
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "20:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-1174209836679687864.mp4"
+      ]
     }
   ],
   "excluded_slot": {
