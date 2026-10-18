@@ -139,6 +139,59 @@
       "media": [
         "https://static.metricool.com/planner/202610/7000636-file-5478444860116345936.mp4"
       ]
+    },
+    {
+      "package_id": "cancer_sagittarius",
+      "route": "native",
+      "id": 398895154,
+      "uuid": "8464617086774100481",
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "11:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-8957573102005334140.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-1719256135869716710.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-13331004001562635383.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-5223584980236896342.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-56093600017658112.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-15965113655038623404.jpeg"
+      ]
+    },
+    {
+      "package_id": "cancer_sagittarius",
+      "route": "youtube",
+      "id": 398895245,
+      "uuid": "1668346582099445048",
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "11:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-12466653788680483977.mp4"
+      ]
     }
   ],
   "excluded_slot": {
