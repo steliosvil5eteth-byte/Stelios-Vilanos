@@ -298,6 +298,59 @@
       "media": [
         "https://static.metricool.com/planner/202610/7000636-file-7724243393665522194.mp4"
       ]
+    },
+    {
+      "package_id": "light_opposite_window",
+      "route": "native",
+      "id": 398895858,
+      "uuid": "926591642133679399",
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "17:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-5089296168927595381.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-17112457745967311129.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-6295002477662316391.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-12314207484947355376.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-13964450845746530033.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-10469866319160708899.jpeg"
+      ]
+    },
+    {
+      "package_id": "light_opposite_window",
+      "route": "youtube",
+      "id": 398895937,
+      "uuid": "-3022656739796563425",
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "17:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-7482174151840825689.mp4"
+      ]
     }
   ],
   "excluded_slot": {
