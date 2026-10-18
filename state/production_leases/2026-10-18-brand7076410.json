@@ -5,7 +5,7 @@
   "brand_id": 7076410,
   "date": "2026-10-18",
   "program": "CAROUSEL_FOUR_FOUR_ONE_20261016",
-  "status": "PARTIAL_SCHEDULED_PENDING_8_OF_9",
+  "status": "ACTIVE_RELEASE",
   "scope": [
     "taurus_gemini",
     "unfinished_song",
@@ -470,7 +470,5 @@
     "run_id": 39092670356,
     "artifact_id": 12122569189,
     "digest": "sha256:033525be4ebdad9a4f1ac04769b9706d537748db87b7f9dd8fc67fd91ab50e58"
-  },
-  "completed_at": "2026-10-18T06:29:00+03:00",
-  "daily_delivery_record": "state/daily_delivery/carousel_20261018.json"
+  }
 }
