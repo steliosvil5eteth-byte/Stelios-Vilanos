@@ -3,7 +3,7 @@
   "brand_id": 7076410,
   "program": "CAROUSEL_FOUR_FOUR_ONE_20261016",
   "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
-  "request_sha256": "9aa175a6bf94d03fd497c87c3a2adfa9ae15e2fc8739dd69fc947f6c357d3c08",
+  "request_sha256": "6677a2a11e576caa0014c0363ee9662256c1b1d1ec8da4ade6f835f6fbecaa87",
   "paid_charges_eur": 0,
   "generation_credits_used": 0,
   "posts": [
@@ -128,17 +128,17 @@
       "caption": "Σταθερές ρίζες, γρήγορο μυαλό.\n\nΤαύρος με ωροσκόπο Δίδυμο: έξι κάρτες για ένα συμβολικό πορτρέτο ασφάλειας, περιέργειας και ευελιξίας.\n\nΨυχαγωγική, συμβολική αστρολογία — όχι επιστημονική περιγραφή ή πρόβλεψη. Χρησιμοποιούνται πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ζώδια #Ταύρος #Δίδυμοι #Ωροσκόπος #ΙστορίεςΠουΜαςΑγγίζουν"
     },
     {
-      "id": "piano_third_floor",
-      "title": "Το πιάνο του τρίτου ορόφου",
+      "id": "unfinished_song",
+      "title": "Το τραγούδι που έμεινε στη μέση",
       "time": "09:00",
       "series": "emotional_fiction",
-      "fingerprint": "emotional_fiction|new_tenant_locked_piano_score_reunites_estranged_brothers_finishes_duet",
+      "fingerprint": "emotional_fiction|empty_rehearsal_stage_unfinished_song_reunites_estranged_brothers_duet",
       "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
       "cards": [
         {
-          "path": "piano_third_floor/card_01.jpg",
-          "sha256": "0c9e161c8c0bc69f5593b4e694061363398fa19ddfd496bc0f9260e8acaa7bc4",
-          "source_path": "piano_third_floor/source/source_01.jpg",
+          "path": "unfinished_song/card_01.jpg",
+          "sha256": "b25b83bc8ed3669db2ca372421a6c5c45face5d9f8469de1407836cfa64788bd",
+          "source_path": "unfinished_song/source/source_01.jpg",
           "source_sha256": "5612521c227c1d0e905e955b6dd938915d56bb971bfd3d98076799841606db85",
           "source_page": "https://www.pexels.com/photo/stage-lights-system-12787862/",
           "source_url": "https://images.pexels.com/photos/12787862/pexels-photo-12787862.jpeg?auto=compress&w=1600",
@@ -151,28 +151,13 @@
           "unclipped": true
         },
         {
-          "path": "piano_third_floor/card_02.jpg",
-          "sha256": "41fb53073bb4c75f9fb2eec4397fcd6192433efa70a59457587d091b76356885",
-          "source_path": "piano_third_floor/source/source_02.jpg",
+          "path": "unfinished_song/card_02.jpg",
+          "sha256": "0a67525e4ddf35be2216b5d8a052d96297f34abe97c654e75340276b802bea1f",
+          "source_path": "unfinished_song/source/source_02.jpg",
           "source_sha256": "be8d0b31d3463dabea6894db898886f29dec693abf0795b4cb7bcf22c8ea05ed",
           "source_page": "https://www.pexels.com/photo/sunset-at-red-rocks-amphitheatre-36569556/",
           "source_url": "https://images.pexels.com/photos/36569556/pexels-photo-36569556/free-photo-of-sunset-at-red-rocks-amphitheatre.jpeg?auto=compress&w=1600",
           "source_alt": "Άδειο αμφιθέατρο",
-          "duration_seconds": 12,
-          "body_font_px": 43,
-          "body_lines": 3,
-          "cta_font_px": null,
-          "cta_lines": 0,
-          "unclipped": true
-        },
-        {
-          "path": "piano_third_floor/card_03.jpg",
-          "sha256": "04153206af10e81ced780693f6ae33aed6225102b334c7bbaca3d960d057bdde",
-          "source_path": "piano_third_floor/source/source_03.jpg",
-          "source_sha256": "bd8d4c2a68c2578d43bd63989dfde38e6dc960b141f21fd9eb089655f038c4d4",
-          "source_page": "https://www.pexels.com/photo/head-near-microphone-in-darkness-9831878/",
-          "source_url": "https://images.pexels.com/photos/9831878/pexels-photo-9831878.jpeg?auto=compress&w=1600",
-          "source_alt": "Ενήλικος μουσικός σε χαμηλό φως",
           "duration_seconds": 12,
           "body_font_px": 43,
           "body_lines": 4,
@@ -181,9 +166,24 @@
           "unclipped": true
         },
         {
-          "path": "piano_third_floor/card_04.jpg",
-          "sha256": "c87b7fb154463cbd7abd229d73053594e14b45b12c86c7fbe3ec0f71dbdc4d13",
-          "source_path": "piano_third_floor/source/source_04.jpg",
+          "path": "unfinished_song/card_03.jpg",
+          "sha256": "a7dbd71d37176e618d5e5e659eef82e025dc77fae136aa7d843fa74cf607a4ad",
+          "source_path": "unfinished_song/source/source_03.jpg",
+          "source_sha256": "bd8d4c2a68c2578d43bd63989dfde38e6dc960b141f21fd9eb089655f038c4d4",
+          "source_page": "https://www.pexels.com/photo/head-near-microphone-in-darkness-9831878/",
+          "source_url": "https://images.pexels.com/photos/9831878/pexels-photo-9831878.jpeg?auto=compress&w=1600",
+          "source_alt": "Ενήλικος μουσικός σε χαμηλό φως",
+          "duration_seconds": 12,
+          "body_font_px": 43,
+          "body_lines": 3,
+          "cta_font_px": null,
+          "cta_lines": 0,
+          "unclipped": true
+        },
+        {
+          "path": "unfinished_song/card_04.jpg",
+          "sha256": "62d3a903fab8c14220d6b43c3f4d4e6902b72c8f72de736e5e54a863c94284e8",
+          "source_path": "unfinished_song/source/source_04.jpg",
           "source_sha256": "963a53191e31d317206ca738c275bbdb548cb925a107cfc3722defec4883197a",
           "source_page": "https://www.pexels.com/photo/man-playing-acoustic-guitar-7715347/",
           "source_url": "https://images.pexels.com/photos/7715347/pexels-photo-7715347.jpeg?auto=compress&w=1600",
@@ -196,9 +196,9 @@
           "unclipped": true
         },
         {
-          "path": "piano_third_floor/card_05.jpg",
-          "sha256": "ba1d2119d26140b5b0dbd4254497927122d39c435084016631c10ef6894e4347",
-          "source_path": "piano_third_floor/source/source_05.jpg",
+          "path": "unfinished_song/card_05.jpg",
+          "sha256": "b9c416a7fd2dc6cc5bd85b1bf29031ee76f79bb34e4d7322749341849b14f9ad",
+          "source_path": "unfinished_song/source/source_05.jpg",
           "source_sha256": "6b5e766906b01538cdc6f068e007a30fecc73139e32e9e7cea43c1cc6a65949f",
           "source_page": "https://www.pexels.com/photo/lamps-on-stage-13230800/",
           "source_url": "https://images.pexels.com/photos/13230800/pexels-photo-13230800.jpeg?auto=compress&w=1600",
@@ -211,9 +211,9 @@
           "unclipped": true
         },
         {
-          "path": "piano_third_floor/card_06.jpg",
-          "sha256": "93c55a23632eaec0abd1d0aa715210d467474053136e9fcbb1066a1898f68a91",
-          "source_path": "piano_third_floor/source/source_06.jpg",
+          "path": "unfinished_song/card_06.jpg",
+          "sha256": "2b70070b4f7bed4ef461a5efe529946b5d425446627e9ad9e0ac19161dd33ec0",
+          "source_path": "unfinished_song/source/source_06.jpg",
           "source_sha256": "a30db11bbdc57ecc7f72e9cba83b23bf53b9125a8bbd67979588bc3aba1fc849",
           "source_page": "https://www.pexels.com/photo/musician-in-blue-light-on-concert-16844500/",
           "source_url": "https://images.pexels.com/photos/16844500/pexels-photo-16844500/free-photo-of-musician-in-blue-light-on-concert.jpeg?auto=compress&w=1600",
@@ -227,8 +227,8 @@
         }
       ],
       "youtube_video": {
-        "path": "piano_third_floor/youtube_vertical.mp4",
-        "sha256": "80d37b6bfee3cb258d1318c770d51bb4982c8f7212724813ceae3eacb6ce31f1",
+        "path": "unfinished_song/youtube_vertical.mp4",
+        "sha256": "905461e6a98fde9a9429dda493543f0b4e5a3d88ec422081760b655c54ae9b07",
         "width": 1080,
         "height": 1920,
         "duration_seconds": 71.958333,
@@ -245,7 +245,7 @@
         "fps": 24,
         "audio_streams": 0
       },
-      "caption": "Η παρτιτούρα ήταν κομμένη στα δύο — όπως και οι άνθρωποι που την είχαν γράψει.\n\n«Το πιάνο του τρίτου ορόφου»: μια ολοκληρωμένη ιστορία έξι καρτών για δύο αδέλφια που τελείωσαν μαζί ό,τι είχαν αφήσει στη μέση.\n\nΠρωτότυπη μυθοπλασία. Χρησιμοποιούνται πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #Αδέλφια #Μουσική #Συμφιλίωση #ΙστορίεςΠουΜαςΑγγίζουν"
+      "caption": "Το τραγούδι σταματούσε στη μέση — όπως και η σχέση των δύο ανθρώπων που το είχαν γράψει.\n\n«Το τραγούδι που έμεινε στη μέση»: μια ολοκληρωμένη ιστορία έξι καρτών για δύο αδέλφια που ξαναβρήκαν τον κοινό τους στίχο.\n\nΠρωτότυπη μυθοπλασία. Χρησιμοποιούνται πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #Αδέλφια #Μουσική #Συμφιλίωση #ΙστορίεςΠουΜαςΑγγίζουν"
     },
     {
       "id": "cancer_sagittarius",

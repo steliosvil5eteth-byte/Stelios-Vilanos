@@ -11,7 +11,7 @@ License: https://www.pexels.com/license/
 5. [Ήρεμη ακτή στο ηλιοβασίλεμα](https://www.pexels.com/photo/serene-sunset-at-cable-beach-australia-30982185/)
 6. [Ενήλικος φωτογράφος οργανώνει τη λήψη](https://www.pexels.com/photo/silhouette-of-photographer-at-sunset-by-the-sea-35315840/)
 
-## Το πιάνο του τρίτου ορόφου
+## Το τραγούδι που έμεινε στη μέση
 
 1. [Φώτα σκηνής](https://www.pexels.com/photo/stage-lights-system-12787862/)
 2. [Άδειο αμφιθέατρο](https://www.pexels.com/photo/sunset-at-red-rocks-amphitheatre-36569556/)
