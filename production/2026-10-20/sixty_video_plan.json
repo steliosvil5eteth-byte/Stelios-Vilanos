@@ -1,0 +1,1143 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-20",
+  "timezone": "Europe/Athens",
+  "brand_id": 7076410,
+  "interpretation": "10 unique videos per platform plus 5 shared zodiac-ascendant videos per platform",
+  "unique_videos": 45,
+  "provider_deliveries": 60,
+  "posts": [
+    {
+      "id": "tiktok_01",
+      "platforms": [
+        "tiktok"
+      ],
+      "title": "Το τελευταίο εισιτήριο",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Βρήκε ένα ακυρωμένο εισιτήριο με τη δική του ημερομηνία γέννησης",
+        "development": "Στη στάση ανακαλύπτει ότι το είχε φυλάξει ο πατέρας του",
+        "ending": "Το εισιτήριο ήταν από το πρώτο τους ταξίδι",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το τελευταίο εισιτήριο",
+      "disclosure": "Μυθοπλαστική ιστορία.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "tiktok_02",
+      "platforms": [
+        "tiktok"
+      ],
+      "title": "Το κλειδί στο βιβλίο",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Αγόρασε μεταχειρισμένο βιβλίο και βρήκε κλειδί",
+        "development": "Το σημείωμα οδηγούσε σε ένα παλιό ντουλάπι βιβλιοθήκης",
+        "ending": "Μέσα υπήρχαν γράμματα που περίμεναν τον παραλήπτη",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το κλειδί στο βιβλίο",
+      "disclosure": "Μυθοπλαστική ιστορία.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "tiktok_03",
+      "platforms": [
+        "tiktok"
+      ],
+      "title": "Η λάθος παράδοση",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Έφτασε δέμα σε λάθος όροφο",
+        "development": "Το όνομα στο κουτί ανήκε στην παλιά ένοικο",
+        "ending": "Το περιεχόμενο ήταν φωτογραφίες για την οικογένειά της",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Η λάθος παράδοση",
+      "disclosure": "Μυθοπλαστική ιστορία.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "tiktok_04",
+      "platforms": [
+        "tiktok"
+      ],
+      "title": "Το άδειο κάθισμα",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Στο λεωφορείο κανείς δεν καθόταν σε μία θέση",
+        "development": "Ένας ηλικιωμένος εξήγησε την παλιά του συνήθεια",
+        "ending": "Εκεί καθόταν κάποτε η γυναίκα του",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το άδειο κάθισμα",
+      "disclosure": "Μυθοπλαστική ιστορία.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "tiktok_05",
+      "platforms": [
+        "tiktok"
+      ],
+      "title": "Το τηλέφωνο του φούρνου",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Το τηλέφωνο χτυπούσε κάθε Παρασκευή μετά το κλείσιμο",
+        "development": "Η ιδιοκτήτρια απαντούσε χωρίς να μιλά",
+        "ending": "Στην άλλη άκρη ήταν ο αδελφός της που μάθαινε ξανά να μιλά",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το τηλέφωνο του φούρνου",
+      "disclosure": "Μυθοπλαστική ιστορία.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "tiktok_06",
+      "platforms": [
+        "tiktok"
+      ],
+      "title": "Το τετράδιο με τα λάθη",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Μαθήτρια βρήκε τετράδιο γεμάτο διορθώσεις",
+        "development": "Κάθε λάθος είχε δίπλα μία ενθαρρυντική φράση",
+        "ending": "Το είχε κρατήσει η δασκάλα της",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το τετράδιο με τα λάθη",
+      "disclosure": "Μυθοπλαστική ιστορία.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "tiktok_07",
+      "platforms": [
+        "tiktok"
+      ],
+      "title": "Το μπλε κουμπί",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Στο παλτό της γιαγιάς έλειπε πάντα ένα κουμπί",
+        "development": "Ο εγγονός βρήκε ίδιο κουμπί σε παλιά φωτογραφία",
+        "ending": "Η γιαγιά το είχε χαρίσει στον παππού ως φυλαχτό",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το μπλε κουμπί",
+      "disclosure": "Μυθοπλαστική ιστορία.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "tiktok_08",
+      "platforms": [
+        "tiktok"
+      ],
+      "title": "Η απόδειξη των δύο ευρώ",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Κράτησε μια ασήμαντη απόδειξη δέκα χρόνια",
+        "development": "Η ημερομηνία συνέπιπτε με τη μέρα που γνώρισε έναν φίλο",
+        "ending": "Ήταν ο πρώτος καφές που είχαν μοιραστεί",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Η απόδειξη των δύο ευρώ",
+      "disclosure": "Μυθοπλαστική ιστορία.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "tiktok_09",
+      "platforms": [
+        "tiktok"
+      ],
+      "title": "Το κουτί κάτω από το θρανίο",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Στην ανακαίνιση σχολείου βρέθηκε μεταλλικό κουτί",
+        "development": "Περιείχε ευχές μαθητών από άλλη δεκαετία",
+        "ending": "Μία ευχή εκπληρώθηκε από την επόμενη γενιά",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το κουτί κάτω από το θρανίο",
+      "disclosure": "Μυθοπλαστική ιστορία.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "tiktok_10",
+      "platforms": [
+        "tiktok"
+      ],
+      "title": "Το φως στο απέναντι παράθυρο",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Κάθε βράδυ άναβε το ίδιο μικρό φως",
+        "development": "Μια βροχερή νύχτα έμεινε σβηστό",
+        "ending": "Οι γείτονες χτύπησαν την πόρτα και πρόσφεραν βοήθεια",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το φως στο απέναντι παράθυρο",
+      "disclosure": "Μυθοπλαστική ιστορία.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "instagram_01",
+      "platforms": [
+        "instagram"
+      ],
+      "title": "Τρία σημάδια πραγματικής φροντίδας",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Η φροντίδα δεν είναι μόνο μεγάλες υποσχέσεις",
+        "development": "Φαίνεται στην παρουσία, στη συνέπεια και στον σεβασμό",
+        "ending": "Ποιο από τα τρία εκτιμάς περισσότερο;",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Τρία σημάδια πραγματικής φροντίδας",
+      "disclosure": "Συμβουλές γενικού χαρακτήρα.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "instagram_02",
+      "platforms": [
+        "instagram"
+      ],
+      "title": "Το όριο χωρίς ενοχές",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Το να λες όχι δεν ακυρώνει την αγάπη",
+        "development": "Μπορείς να εξηγήσεις το όριό σου ήρεμα",
+        "ending": "Η αμοιβαία σχέση αντέχει τη σαφήνεια",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το όριο χωρίς ενοχές",
+      "disclosure": "Συμβουλές γενικού χαρακτήρα.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "instagram_03",
+      "platforms": [
+        "instagram"
+      ],
+      "title": "Μια συνήθεια για πιο ήρεμα πρωινά",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Το πρωί δεν χρειάζεται να ξεκινά με οθόνη",
+        "development": "Πέντε λεπτά προετοιμασίας μειώνουν τη βιασύνη",
+        "ending": "Δοκίμασε μια μικρή αλλαγή για μία εβδομάδα",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Μια συνήθεια για πιο ήρεμα πρωινά",
+      "disclosure": "Συμβουλές γενικού χαρακτήρα.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "instagram_04",
+      "platforms": [
+        "instagram"
+      ],
+      "title": "Η διαφορά ακρόασης και απάντησης",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Μερικές φορές περιμένουμε μόνο τη σειρά μας",
+        "development": "Μια ερώτηση μπορεί να αλλάξει τη συζήτηση",
+        "ending": "Άκου πρώτα και επανάλαβε τι κατάλαβες",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Η διαφορά ακρόασης και απάντησης",
+      "disclosure": "Συμβουλές γενικού χαρακτήρα.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "instagram_05",
+      "platforms": [
+        "instagram"
+      ],
+      "title": "Πώς δείχνεις ευγνωμοσύνη",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Ένα συγκεκριμένο ευχαριστώ έχει μεγαλύτερο νόημα",
+        "development": "Πες τι ακριβώς έκανε ο άλλος για σένα",
+        "ending": "Η αναγνώριση γίνεται πιο προσωπική",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Πώς δείχνεις ευγνωμοσύνη",
+      "disclosure": "Συμβουλές γενικού χαρακτήρα.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "instagram_06",
+      "platforms": [
+        "instagram"
+      ],
+      "title": "Μικρές πράξεις εμπιστοσύνης",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Η εμπιστοσύνη χτίζεται στην καθημερινότητα",
+        "development": "Τήρησε μια μικρή υπόσχεση χωρίς υπενθύμιση",
+        "ending": "Η συνέπεια μετρά περισσότερο από την εντύπωση",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Μικρές πράξεις εμπιστοσύνης",
+      "disclosure": "Συμβουλές γενικού χαρακτήρα.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "instagram_07",
+      "platforms": [
+        "instagram"
+      ],
+      "title": "Όταν μια φιλία αλλάζει",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Δεν μένουν όλες οι φιλίες ίδιες",
+        "development": "Η απόσταση δεν σημαίνει πάντα σύγκρουση",
+        "ending": "Μίλησε ανοιχτά πριν βγάλεις συμπέρασμα",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Όταν μια φιλία αλλάζει",
+      "disclosure": "Συμβουλές γενικού χαρακτήρα.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "instagram_08",
+      "platforms": [
+        "instagram"
+      ],
+      "title": "Η τέχνη του να ζητάς βοήθεια",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Το να ζητάς βοήθεια είναι δεξιότητα",
+        "development": "Πες συγκεκριμένα τι χρειάζεσαι και πότε",
+        "ending": "Δώσε στον άλλο χώρο να απαντήσει",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Η τέχνη του να ζητάς βοήθεια",
+      "disclosure": "Συμβουλές γενικού χαρακτήρα.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "instagram_09",
+      "platforms": [
+        "instagram"
+      ],
+      "title": "Ένα δωμάτιο λιγότερο θορυβώδες",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Δεν χρειάζεται μεγάλη ανακαίνιση για ηρεμία",
+        "development": "Μάζεψε μια επιφάνεια και μείωσε τα ερεθίσματα",
+        "ending": "Ποια γωνιά του σπιτιού θα άλλαζες;",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Ένα δωμάτιο λιγότερο θορυβώδες",
+      "disclosure": "Συμβουλές γενικού χαρακτήρα.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "instagram_10",
+      "platforms": [
+        "instagram"
+      ],
+      "title": "Μια ερώτηση πριν τον ύπνο",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Πριν κοιμηθείς θυμήσου μια μικρή καλή στιγμή",
+        "development": "Μην απαιτείς να ήταν τέλεια η μέρα",
+        "ending": "Τι άξιζε σήμερα να κρατήσεις;",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Μια ερώτηση πριν τον ύπνο",
+      "disclosure": "Συμβουλές γενικού χαρακτήρα.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "facebook_01",
+      "platforms": [
+        "facebook"
+      ],
+      "title": "Ο κήπος της πολυκατοικίας",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Μια άδεια αυλή είχε γίνει αποθήκη",
+        "development": "Οι γείτονες οργάνωσαν ένα μικρό Σάββατο καθαρισμού",
+        "ending": "Την άνοιξη όλοι μοιράζονταν τα πρώτα λουλούδια",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Ο κήπος της πολυκατοικίας",
+      "disclosure": "Μυθοπλαστική ιστορία.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "facebook_02",
+      "platforms": [
+        "facebook"
+      ],
+      "title": "Η παλιά φωτογραφία της πλατείας",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Κάποιος ανέβασε μια φωτογραφία του 1982",
+        "development": "Οι κάτοικοι αναγνώρισαν πρόσωπα και μαγαζιά",
+        "ending": "Η πλατεία γέμισε ξανά κοινές αναμνήσεις",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Η παλιά φωτογραφία της πλατείας",
+      "disclosure": "Μυθοπλαστική ιστορία.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "facebook_03",
+      "platforms": [
+        "facebook"
+      ],
+      "title": "Η δανεική καρέκλα",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Ένας γείτονας ζήτησε μία καρέκλα για το τραπέζι",
+        "development": "Την επέστρεψε με ένα χειρόγραφο ευχαριστώ",
+        "ending": "Έτσι ξεκίνησε μια ετήσια γιορτή της γειτονιάς",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Η δανεική καρέκλα",
+      "disclosure": "Μυθοπλαστική ιστορία.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "facebook_04",
+      "platforms": [
+        "facebook"
+      ],
+      "title": "Το ραδιόφωνο του παππού",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Ένα παλιό ραδιόφωνο δεν άνοιγε πια",
+        "development": "Ο εγγονός το επισκεύασε με προσοχή",
+        "ending": "Ο παππούς άκουσε ξανά την αγαπημένη του εκπομπή",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το ραδιόφωνο του παππού",
+      "disclosure": "Μυθοπλαστική ιστορία.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "facebook_05",
+      "platforms": [
+        "facebook"
+      ],
+      "title": "Το σχολικό κουδούνι",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Στην επανένωση τάξης όλοι θυμούνταν το κουδούνι",
+        "development": "Η δασκάλα έφερε το παλιό ημερολόγιο",
+        "ending": "Μια ξεχασμένη υπόσχεση έγινε κοινή δράση",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το σχολικό κουδούνι",
+      "disclosure": "Μυθοπλαστική ιστορία.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "facebook_06",
+      "platforms": [
+        "facebook"
+      ],
+      "title": "Η συνταγή της γειτόνισσας",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Μια συνταγή περνούσε από σπίτι σε σπίτι",
+        "development": "Κάθε οικογένεια πρόσθετε μια μικρή σημείωση",
+        "ending": "Στο τέλος έγινε βιβλιαράκι της γειτονιάς",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Η συνταγή της γειτόνισσας",
+      "disclosure": "Μυθοπλαστική ιστορία.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "facebook_07",
+      "platforms": [
+        "facebook"
+      ],
+      "title": "Το παγκάκι δίπλα στη θάλασσα",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Ένα παγκάκι χρειαζόταν επισκευή",
+        "development": "Τρεις φίλοι το έβαψαν με άδεια του δήμου",
+        "ending": "Έμεινε εκεί για να ξεκουράζονται όλοι",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το παγκάκι δίπλα στη θάλασσα",
+      "disclosure": "Μυθοπλαστική ιστορία.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "facebook_08",
+      "platforms": [
+        "facebook"
+      ],
+      "title": "Η επιστολή του ταχυδρόμου",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Ο συνταξιούχος ταχυδρόμος έλαβε πολλά γράμματα",
+        "development": "Οι κάτοικοι θυμήθηκαν τις μικρές εξυπηρετήσεις του",
+        "ending": "Ο ίδιος είπε ότι θυμόταν κάθε δρόμο",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Η επιστολή του ταχυδρόμου",
+      "disclosure": "Μυθοπλαστική ιστορία.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "facebook_09",
+      "platforms": [
+        "facebook"
+      ],
+      "title": "Το δέντρο της αποφοίτησης",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Μια τάξη είχε φυτέψει δέντρο πριν 30 χρόνια",
+        "development": "Οι παλιοί συμμαθητές το βρήκαν ακόμη όρθιο",
+        "ending": "Συναντήθηκαν ξανά κάτω από τη σκιά του",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το δέντρο της αποφοίτησης",
+      "disclosure": "Μυθοπλαστική ιστορία.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "facebook_10",
+      "platforms": [
+        "facebook"
+      ],
+      "title": "Το τραπέζι της Κυριακής",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 38,
+      "script": {
+        "hook": "Μια οικογένεια καθιέρωσε ένα κοινό γεύμα τον μήνα",
+        "development": "Κάθε μέλος έφερνε μια ανάμνηση",
+        "ending": "Το τραπέζι έγινε αρχείο οικογενειακών ιστοριών",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το τραπέζι της Κυριακής",
+      "disclosure": "Μυθοπλαστική ιστορία.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "youtube_01",
+      "platforms": [
+        "youtube"
+      ],
+      "title": "Γιατί ο ουρανός γίνεται κόκκινος",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 55,
+      "script": {
+        "hook": "Το ηλιοβασίλεμα αλλάζει χρώματα καθώς το φως ταξιδεύει",
+        "development": "Η ατμόσφαιρα σκεδάζει περισσότερο τα μικρότερα μήκη κύματος",
+        "ending": "Το κόκκινο φως κυριαρχεί σε μεγαλύτερη διαδρομή",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Γιατί ο ουρανός γίνεται κόκκινος",
+      "disclosure": "Εκπαιδευτικό περιεχόμενο — απαιτείται έλεγχος πηγών.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "youtube_02",
+      "platforms": [
+        "youtube"
+      ],
+      "title": "Τι είναι το σέλας",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 55,
+      "script": {
+        "hook": "Το σέλας μοιάζει με κουρτίνες φωτός",
+        "development": "Φορτισμένα σωματίδια αλληλεπιδρούν με τη γήινη ατμόσφαιρα",
+        "ending": "Τα διαφορετικά αέρια και ύψη δίνουν χρώματα",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Τι είναι το σέλας",
+      "disclosure": "Εκπαιδευτικό περιεχόμενο — απαιτείται έλεγχος πηγών.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "youtube_03",
+      "platforms": [
+        "youtube"
+      ],
+      "title": "Πώς δημιουργείται το ουράνιο τόξο",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 55,
+      "script": {
+        "hook": "Μετά τη βροχή εμφανίζεται ένα χρωματιστό τόξο",
+        "development": "Το φως διαθλάται και ανακλάται στα σταγονίδια",
+        "ending": "Η γωνία παρατήρησης καθορίζει τι βλέπουμε",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Πώς δημιουργείται το ουράνιο τόξο",
+      "disclosure": "Εκπαιδευτικό περιεχόμενο — απαιτείται έλεγχος πηγών.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "youtube_04",
+      "platforms": [
+        "youtube"
+      ],
+      "title": "Γιατί ο πάγος επιπλέει",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 55,
+      "script": {
+        "hook": "Το νερό είναι ασυνήθιστο όταν παγώνει",
+        "development": "Η κρυσταλλική δομή του πάγου έχει χαμηλότερη πυκνότητα",
+        "ending": "Γι’ αυτό οι λίμνες παγώνουν πρώτα στην επιφάνεια",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Γιατί ο πάγος επιπλέει",
+      "disclosure": "Εκπαιδευτικό περιεχόμενο — απαιτείται έλεγχος πηγών.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "youtube_05",
+      "platforms": [
+        "youtube"
+      ],
+      "title": "Τι προκαλεί την παλίρροια",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 55,
+      "script": {
+        "hook": "Η θάλασσα ανεβαίνει και κατεβαίνει",
+        "development": "Η βαρύτητα της Σελήνης και του Ήλιου επηρεάζει το νερό",
+        "ending": "Η μορφολογία της ακτής αλλάζει το τοπικό αποτέλεσμα",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Τι προκαλεί την παλίρροια",
+      "disclosure": "Εκπαιδευτικό περιεχόμενο — απαιτείται έλεγχος πηγών.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "youtube_06",
+      "platforms": [
+        "youtube"
+      ],
+      "title": "Γιατί τρεμοπαίζουν τα αστέρια",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 55,
+      "script": {
+        "hook": "Τα αστέρια μοιάζουν να αναβοσβήνουν",
+        "development": "Τα στρώματα της ατμόσφαιρας αλλάζουν τη διαδρομή του φωτός",
+        "ending": "Οι πλανήτες συνήθως τρεμοπαίζουν λιγότερο",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Γιατί τρεμοπαίζουν τα αστέρια",
+      "disclosure": "Εκπαιδευτικό περιεχόμενο — απαιτείται έλεγχος πηγών.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "youtube_07",
+      "platforms": [
+        "youtube"
+      ],
+      "title": "Πώς φτιάχνεται ένα απολίθωμα",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 55,
+      "script": {
+        "hook": "Δεν γίνεται κάθε παλιό οστό απολίθωμα",
+        "development": "Χρειάζονται ειδικές συνθήκες ταφής και διατήρησης",
+        "ending": "Τα απολιθώματα κρατούν στοιχεία της ζωής του παρελθόντος",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Πώς φτιάχνεται ένα απολίθωμα",
+      "disclosure": "Εκπαιδευτικό περιεχόμενο — απαιτείται έλεγχος πηγών.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "youtube_08",
+      "platforms": [
+        "youtube"
+      ],
+      "title": "Γιατί ακούμε ηχώ",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 55,
+      "script": {
+        "hook": "Μια φωνή επιστρέφει από μακριά",
+        "development": "Ο ήχος ανακλάται σε μια επιφάνεια",
+        "ending": "Η απόσταση καθορίζει αν ακούμε ξεχωριστή επανάληψη",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Γιατί ακούμε ηχώ",
+      "disclosure": "Εκπαιδευτικό περιεχόμενο — απαιτείται έλεγχος πηγών.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "youtube_09",
+      "platforms": [
+        "youtube"
+      ],
+      "title": "Πώς προσανατολίζονται τα αποδημητικά πουλιά",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 55,
+      "script": {
+        "hook": "Πολλά πουλιά ταξιδεύουν τεράστιες αποστάσεις",
+        "development": "Χρησιμοποιούν συνδυασμούς ουράνιων και περιβαλλοντικών ενδείξεων",
+        "ending": "Η έρευνα εξετάζει και τον ρόλο του μαγνητικού πεδίου",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Πώς προσανατολίζονται τα αποδημητικά πουλιά",
+      "disclosure": "Εκπαιδευτικό περιεχόμενο — απαιτείται έλεγχος πηγών.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "youtube_10",
+      "platforms": [
+        "youtube"
+      ],
+      "title": "Τι είναι η βιοφωταύγεια",
+      "format": "vertical_video_1080x1920",
+      "duration_target_seconds": 55,
+      "script": {
+        "hook": "Μερικοί οργανισμοί παράγουν το δικό τους φως",
+        "development": "Χημικές αντιδράσεις μέσα στο σώμα τους δημιουργούν λάμψη",
+        "ending": "Το φως μπορεί να βοηθά στην άμυνα ή στην επικοινωνία",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Τι είναι η βιοφωταύγεια",
+      "disclosure": "Εκπαιδευτικό περιεχόμενο — απαιτείται έλεγχος πηγών.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "zodiac_1",
+      "platforms": [
+        "tiktok",
+        "instagram",
+        "facebook",
+        "youtube"
+      ],
+      "duration_target_seconds": 40,
+      "format": "vertical_video_1080x1920",
+      "title": "Λέων με ωροσκόπο Ζυγό",
+      "script": {
+        "hook": "Λάμψη και ανάγκη για αρμονία",
+        "development": "Η συμβολική πλευρά του Λέοντα αναζητά δημιουργική έκφραση",
+        "ending": "Ο Ζυγός συμβολίζει διάλογο και ισορροπία",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "5 unique visual scenes, legible Greek captions, clear zodiac and ascendant symbols; do not reuse stock images",
+      "disclosure": "Συμβολική αστρολογία για ψυχαγωγία, όχι επιστημονική πρόβλεψη.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "zodiac_2",
+      "platforms": [
+        "tiktok",
+        "instagram",
+        "facebook",
+        "youtube"
+      ],
+      "duration_target_seconds": 40,
+      "format": "vertical_video_1080x1920",
+      "title": "Παρθένος με ωροσκόπο Τοξότη",
+      "script": {
+        "hook": "Λεπτομέρεια και ανοιχτός ορίζοντας",
+        "development": "Η Παρθένος συμβολίζει οργάνωση και προσοχή",
+        "ending": "Ο Τοξότης προσθέτει περιέργεια και εξερεύνηση",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "5 unique visual scenes, legible Greek captions, clear zodiac and ascendant symbols; do not reuse stock images",
+      "disclosure": "Συμβολική αστρολογία για ψυχαγωγία, όχι επιστημονική πρόβλεψη.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "zodiac_3",
+      "platforms": [
+        "tiktok",
+        "instagram",
+        "facebook",
+        "youtube"
+      ],
+      "duration_target_seconds": 40,
+      "format": "vertical_video_1080x1920",
+      "title": "Ιχθύς με ωροσκόπο Κριό",
+      "script": {
+        "hook": "Ευαισθησία και τόλμη",
+        "development": "Οι Ιχθύες συμβολίζουν φαντασία και ενσυναίσθηση",
+        "ending": "Ο Κριός προσθέτει πρωτοβουλία",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "5 unique visual scenes, legible Greek captions, clear zodiac and ascendant symbols; do not reuse stock images",
+      "disclosure": "Συμβολική αστρολογία για ψυχαγωγία, όχι επιστημονική πρόβλεψη.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "zodiac_4",
+      "platforms": [
+        "tiktok",
+        "instagram",
+        "facebook",
+        "youtube"
+      ],
+      "duration_target_seconds": 40,
+      "format": "vertical_video_1080x1920",
+      "title": "Καρκίνος με ωροσκόπο Υδροχόο",
+      "script": {
+        "hook": "Ρίζες και ανεξαρτησία",
+        "development": "Ο Καρκίνος συμβολίζει φροντίδα και οικειότητα",
+        "ending": "Ο Υδροχόος συμβολίζει αυτονομία και πρωτοτυπία",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "5 unique visual scenes, legible Greek captions, clear zodiac and ascendant symbols; do not reuse stock images",
+      "disclosure": "Συμβολική αστρολογία για ψυχαγωγία, όχι επιστημονική πρόβλεψη.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    },
+    {
+      "id": "zodiac_5",
+      "platforms": [
+        "tiktok",
+        "instagram",
+        "facebook",
+        "youtube"
+      ],
+      "duration_target_seconds": 40,
+      "format": "vertical_video_1080x1920",
+      "title": "Αιγόκερως με ωροσκόπο Δίδυμο",
+      "script": {
+        "hook": "Στόχος και ευελιξία",
+        "development": "Ο Αιγόκερως συμβολίζει υπομονή και πειθαρχία",
+        "ending": "Οι Δίδυμοι συμβολίζουν επικοινωνία και προσαρμογή",
+        "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα."
+      },
+      "visual_brief": "5 unique visual scenes, legible Greek captions, clear zodiac and ascendant symbols; do not reuse stock images",
+      "disclosure": "Συμβολική αστρολογία για ψυχαγωγία, όχι επιστημονική πρόβλεψη.",
+      "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
+      "qa": "PENDING"
+    }
+  ],
+  "slots": {
+    "tiktok": [
+      {
+        "id": "tiktok_01",
+        "time": "08:00"
+      },
+      {
+        "id": "tiktok_02",
+        "time": "09:00"
+      },
+      {
+        "id": "tiktok_03",
+        "time": "10:00"
+      },
+      {
+        "id": "tiktok_04",
+        "time": "11:00"
+      },
+      {
+        "id": "tiktok_05",
+        "time": "12:00"
+      },
+      {
+        "id": "tiktok_06",
+        "time": "13:00"
+      },
+      {
+        "id": "tiktok_07",
+        "time": "14:00"
+      },
+      {
+        "id": "tiktok_08",
+        "time": "15:00"
+      },
+      {
+        "id": "tiktok_09",
+        "time": "16:00"
+      },
+      {
+        "id": "tiktok_10",
+        "time": "17:00"
+      },
+      {
+        "id": "zodiac_1",
+        "time": "19:00"
+      },
+      {
+        "id": "zodiac_2",
+        "time": "20:00"
+      },
+      {
+        "id": "zodiac_3",
+        "time": "21:00"
+      },
+      {
+        "id": "zodiac_4",
+        "time": "22:00"
+      },
+      {
+        "id": "zodiac_5",
+        "time": "23:00"
+      }
+    ],
+    "instagram": [
+      {
+        "id": "instagram_01",
+        "time": "08:00"
+      },
+      {
+        "id": "instagram_02",
+        "time": "09:00"
+      },
+      {
+        "id": "instagram_03",
+        "time": "10:00"
+      },
+      {
+        "id": "instagram_04",
+        "time": "11:00"
+      },
+      {
+        "id": "instagram_05",
+        "time": "12:00"
+      },
+      {
+        "id": "instagram_06",
+        "time": "13:00"
+      },
+      {
+        "id": "instagram_07",
+        "time": "14:00"
+      },
+      {
+        "id": "instagram_08",
+        "time": "15:00"
+      },
+      {
+        "id": "instagram_09",
+        "time": "16:00"
+      },
+      {
+        "id": "instagram_10",
+        "time": "17:00"
+      },
+      {
+        "id": "zodiac_1",
+        "time": "19:00"
+      },
+      {
+        "id": "zodiac_2",
+        "time": "20:00"
+      },
+      {
+        "id": "zodiac_3",
+        "time": "21:00"
+      },
+      {
+        "id": "zodiac_4",
+        "time": "22:00"
+      },
+      {
+        "id": "zodiac_5",
+        "time": "23:00"
+      }
+    ],
+    "facebook": [
+      {
+        "id": "facebook_01",
+        "time": "08:00"
+      },
+      {
+        "id": "facebook_02",
+        "time": "09:00"
+      },
+      {
+        "id": "facebook_03",
+        "time": "10:00"
+      },
+      {
+        "id": "facebook_04",
+        "time": "11:00"
+      },
+      {
+        "id": "facebook_05",
+        "time": "12:00"
+      },
+      {
+        "id": "facebook_06",
+        "time": "13:00"
+      },
+      {
+        "id": "facebook_07",
+        "time": "14:00"
+      },
+      {
+        "id": "facebook_08",
+        "time": "15:00"
+      },
+      {
+        "id": "facebook_09",
+        "time": "16:00"
+      },
+      {
+        "id": "facebook_10",
+        "time": "17:00"
+      },
+      {
+        "id": "zodiac_1",
+        "time": "19:00"
+      },
+      {
+        "id": "zodiac_2",
+        "time": "20:00"
+      },
+      {
+        "id": "zodiac_3",
+        "time": "21:00"
+      },
+      {
+        "id": "zodiac_4",
+        "time": "22:00"
+      },
+      {
+        "id": "zodiac_5",
+        "time": "23:00"
+      }
+    ],
+    "youtube": [
+      {
+        "id": "youtube_01",
+        "time": "08:00"
+      },
+      {
+        "id": "youtube_02",
+        "time": "09:00"
+      },
+      {
+        "id": "youtube_03",
+        "time": "10:00"
+      },
+      {
+        "id": "youtube_04",
+        "time": "11:00"
+      },
+      {
+        "id": "youtube_05",
+        "time": "12:00"
+      },
+      {
+        "id": "youtube_06",
+        "time": "13:00"
+      },
+      {
+        "id": "youtube_07",
+        "time": "14:00"
+      },
+      {
+        "id": "youtube_08",
+        "time": "15:00"
+      },
+      {
+        "id": "youtube_09",
+        "time": "16:00"
+      },
+      {
+        "id": "youtube_10",
+        "time": "17:00"
+      },
+      {
+        "id": "zodiac_1",
+        "time": "19:00"
+      },
+      {
+        "id": "zodiac_2",
+        "time": "20:00"
+      },
+      {
+        "id": "zodiac_3",
+        "time": "21:00"
+      },
+      {
+        "id": "zodiac_4",
+        "time": "22:00"
+      },
+      {
+        "id": "zodiac_5",
+        "time": "23:00"
+      }
+    ]
+  },
+  "global_gates": [
+    "check prior publishing history and content semantic duplicates",
+    "verify sources for science videos",
+    "render original media and captions",
+    "inspect actual final media and encoded playback",
+    "license and AI disclosures",
+    "sha256 exact QA approval",
+    "check live queue and no concurrent writers",
+    "schedule future only, read back each provider ID"
+  ],
+  "queue_status": "NOT_SCHEDULED",
+  "no_automatic_publish_until_final_review": true
+}
