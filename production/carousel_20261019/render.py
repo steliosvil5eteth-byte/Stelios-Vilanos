@@ -1,4 +1,4 @@
-"""Render 17 Oct carousel candidates from explicitly selected Pexels photos.
+"""Render 19 Oct carousel candidates from explicitly selected Pexels photos.
 
 A successful render is only a candidate build. It never grants final QA.
 """
@@ -95,6 +95,10 @@ def download(url: str, target: Path):
 
 def make_card(photo: Image.Image, post: dict, index: int, cta: str):
     im = Image.new("RGB", (1080, 1080), BG)
+    # Greece/Spain source panels already contain an old top counter. Crop it before adding our own single 01/10 counter.
+    if post["series"] == "greece_vs_country":
+        trim = max(24, round(photo.height * 0.08))
+        photo = photo.crop((0, trim, photo.width, photo.height))
     photo = ImageOps.fit(photo, (1080, 650), method=Image.Resampling.LANCZOS, centering=(0.5, 0.45))
     im.paste(photo, (0, 0))
     overlay = Image.new("RGBA", im.size, (0, 0, 0, 0))
