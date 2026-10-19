@@ -737,7 +737,7 @@
       "cards": [
         {
           "path": "greece_spain/card_01.jpg",
-          "sha256": "c34503f71e092aa066999e8dac478582eaf4df9b13059636d56857fe34c34626",
+          "sha256": "db75911dbe83d8e081a440ab86ca44197bf68cf6a2e4e418b5ccd71d6123be67",
           "source_path": "greece_spain/source/source_01.jpg",
           "source_sha256": "932534654c6293b37a4d8269eb68ab27a3244cd93aa35c0bcdc2744efd73463c",
           "source_page": "https://ec.europa.eu/eurostat/",
@@ -752,7 +752,7 @@
         },
         {
           "path": "greece_spain/card_02.jpg",
-          "sha256": "af7ec4fca76799dc2301ecf174922319819a035efa03e4a7cdd22fe418a27a66",
+          "sha256": "2070e187f435da41089e331117e99814f3563d9104c8541c1dfa080e8452d16e",
           "source_path": "greece_spain/source/source_02.jpg",
           "source_sha256": "004426bc969e83302c29141294b6da37960d998960c173cef0796ff1dfe2741b",
           "source_page": "https://ec.europa.eu/eurostat/",
@@ -767,7 +767,7 @@
         },
         {
           "path": "greece_spain/card_03.jpg",
-          "sha256": "5afcf790d4ea643a22a19efb8b7cb800b4fe832411e50bcbd11cd8e83c57fdb9",
+          "sha256": "c91c899ad880a5d856f12fc17c70f6b9113f5c40fb0448fb451551586ec5cc45",
           "source_path": "greece_spain/source/source_03.jpg",
           "source_sha256": "456c733e7cf9ae02390b04862f5e0a04f2f91a5d34406bab2f93170cab90dd9b",
           "source_page": "https://ec.europa.eu/eurostat/",
@@ -782,7 +782,7 @@
         },
         {
           "path": "greece_spain/card_04.jpg",
-          "sha256": "d2f25d12c96442bdeab002cd3fad7e9a63e12bb50b73933fe23037d6991840b2",
+          "sha256": "783d96b6654d8f8922da8df8687bd673902938f86385c1dcd23c4a8f93111445",
           "source_path": "greece_spain/source/source_04.jpg",
           "source_sha256": "6a8a74cdbd87a4763cd82cd6eb7b90a9e85116640ee5df9555777b22bb01ae76",
           "source_page": "https://ec.europa.eu/eurostat/",
@@ -797,7 +797,7 @@
         },
         {
           "path": "greece_spain/card_05.jpg",
-          "sha256": "3a2033c68b3936ad35b7b4af30aed6c2b91e6ac2595a1cad488c10b8f335f083",
+          "sha256": "e0e61d23b3b8c157d27e37d001075a1af57b073237feb1eef3a954f9f55565a6",
           "source_path": "greece_spain/source/source_05.jpg",
           "source_sha256": "e380468f99e369adc15d2d4d5da475f0fd14de0d0cca97a0ca05e49f880ac329",
           "source_page": "https://ec.europa.eu/eurostat/",
@@ -812,7 +812,7 @@
         },
         {
           "path": "greece_spain/card_06.jpg",
-          "sha256": "6f69ceb3f521bf514de8febc54421c107295a926a531f770fa833a64693c6067",
+          "sha256": "d65736df5a2935e3185dee33ac488a005fc4d7ee0b153a810f8a1dc883a53925",
           "source_path": "greece_spain/source/source_06.jpg",
           "source_sha256": "7744373fb8c7905e96ad77005ca3772c9a1abefedbf69a579edc8b5e447c6127",
           "source_page": "https://ec.europa.eu/eurostat/",
@@ -827,7 +827,7 @@
         },
         {
           "path": "greece_spain/card_07.jpg",
-          "sha256": "a5f29a5c5d4000bb9e667e9912a7dc2365558ec0f74d8ad22a903dcd2fd477e3",
+          "sha256": "1e7784d6bf736e6ce7b2c29f65786fed875ad9571ada7f8998d1deddda6de692",
           "source_path": "greece_spain/source/source_07.jpg",
           "source_sha256": "fd2830d76c2c74edaf49c970fc97cf2c49b83ecf665cc43c68d904f41c628fef",
           "source_page": "https://ec.europa.eu/eurostat/",
@@ -842,7 +842,7 @@
         },
         {
           "path": "greece_spain/card_08.jpg",
-          "sha256": "95b1f73d6385c00b6c13a77bdf0bde39a57345f57ec9e4b3dfbfab733a890246",
+          "sha256": "4b0e56ac2dcb3d7fcfb71364785c5eda4b1ee76a510a5ccb26c11ffcd2c09916",
           "source_path": "greece_spain/source/source_08.jpg",
           "source_sha256": "38476f027258589ee1eac9584706cc4bee61aa8d565028da87f83976bbcd7573",
           "source_page": "https://ec.europa.eu/eurostat/",
@@ -857,7 +857,7 @@
         },
         {
           "path": "greece_spain/card_09.jpg",
-          "sha256": "c725a7c56fdba9c1845168a561546a63968744fc638441ba9c314a5437ef5aa0",
+          "sha256": "6729a32451ef9c97b81eb634aa6354e56312bd490492d02efbe985e347a7ce4d",
           "source_path": "greece_spain/source/source_09.jpg",
           "source_sha256": "14c2c52dae5a11cb5baf9e298a70b2769b5ba3da035e43dab8f4fc19209ebbdb",
           "source_page": "https://ec.europa.eu/eurostat/",
@@ -872,7 +872,7 @@
         },
         {
           "path": "greece_spain/card_10.jpg",
-          "sha256": "e0f0ef9a6074c56fad6443801273fb15db4ea339626a06d177982a92b32aa0d2",
+          "sha256": "6fd727e0d6292350fe6954528268cc45fffd26aa21a3ef659a319b248c46a8db",
           "source_path": "greece_spain/source/source_10.jpg",
           "source_sha256": "e3c87fc87777228900cc557e2734d3a9fdd774215971e16dd8ad2e97cce7de30",
           "source_page": "https://ec.europa.eu/eurostat/",
@@ -888,7 +888,7 @@
       ],
       "youtube_video": {
         "path": "greece_spain/youtube_vertical.mp4",
-        "sha256": "589e49e7f2101e51a9c373c2c8ff43e49a609b8c43211aba9b734ac8594fbdfc",
+        "sha256": "38d0739bad53df74ecf0797cdebda0b16694439ce7f38e1dbb042d4a3b911a50",
         "width": 1080,
         "height": 1920,
         "duration_seconds": 119.958333,
