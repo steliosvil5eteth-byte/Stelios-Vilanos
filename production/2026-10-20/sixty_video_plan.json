@@ -24,7 +24,34 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το τελευταίο εισιτήριο",
       "disclosure": "Μυθοπλαστική ιστορία.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Βρήκε ένα ακυρωμένο εισιτήριο με τη δική του ημερομηνία γέννησης. Στη στάση ανακαλύπτει ότι το είχε φυλάξει ο πατέρας του. Το εισιτήριο ήταν από το πρώτο τους ταξίδι. Κάποιες στιγμές μοιάζουν μικρές, αλλά αλλάζουν τον τρόπο που βλέπουμε τους ανθρώπους γύρω μας. Εσύ πώς θα αντιδρούσες αν ήσουν εκεί; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "visual": "Opening close-up relevant to: Βρήκε ένα ακυρωμένο εισιτήριο με τη δική του ημερομηνία γέννησης",
+            "subtitle": "Βρήκε ένα ακυρωμένο εισιτήριο με τη δική του ημερομηνία γέννησης"
+          },
+          {
+            "index": 2,
+            "visual": "Establishing scene of: Στη στάση ανακαλύπτει ότι το είχε φυλάξει ο πατέρας του",
+            "subtitle": "Στη στάση ανακαλύπτει ότι το είχε φυλάξει ο πατέρας του"
+          },
+          {
+            "index": 3,
+            "visual": "Specific visual payoff of: Το εισιτήριο ήταν από το πρώτο τους ταξίδι",
+            "subtitle": "Το εισιτήριο ήταν από το πρώτο τους ταξίδι"
+          },
+          {
+            "index": 4,
+            "visual": "Emotional closing image without repeated people or stock image",
+            "subtitle": "Εσύ πώς θα αντιδρούσες;"
+          }
+        ],
+        "fiction_disclosure": "Πρωτότυπη μυθοπλασία",
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "tiktok_02",
@@ -43,7 +70,34 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το κλειδί στο βιβλίο",
       "disclosure": "Μυθοπλαστική ιστορία.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Αγόρασε μεταχειρισμένο βιβλίο και βρήκε κλειδί. Το σημείωμα οδηγούσε σε ένα παλιό ντουλάπι βιβλιοθήκης. Μέσα υπήρχαν γράμματα που περίμεναν τον παραλήπτη. Κάποιες στιγμές μοιάζουν μικρές, αλλά αλλάζουν τον τρόπο που βλέπουμε τους ανθρώπους γύρω μας. Εσύ πώς θα αντιδρούσες αν ήσουν εκεί; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "visual": "Opening close-up relevant to: Αγόρασε μεταχειρισμένο βιβλίο και βρήκε κλειδί",
+            "subtitle": "Αγόρασε μεταχειρισμένο βιβλίο και βρήκε κλειδί"
+          },
+          {
+            "index": 2,
+            "visual": "Establishing scene of: Το σημείωμα οδηγούσε σε ένα παλιό ντουλάπι βιβλιοθήκης",
+            "subtitle": "Το σημείωμα οδηγούσε σε ένα παλιό ντουλάπι βιβλιοθήκης"
+          },
+          {
+            "index": 3,
+            "visual": "Specific visual payoff of: Μέσα υπήρχαν γράμματα που περίμεναν τον παραλήπτη",
+            "subtitle": "Μέσα υπήρχαν γράμματα που περίμεναν τον παραλήπτη"
+          },
+          {
+            "index": 4,
+            "visual": "Emotional closing image without repeated people or stock image",
+            "subtitle": "Εσύ πώς θα αντιδρούσες;"
+          }
+        ],
+        "fiction_disclosure": "Πρωτότυπη μυθοπλασία",
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "tiktok_03",
@@ -62,7 +116,34 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Η λάθος παράδοση",
       "disclosure": "Μυθοπλαστική ιστορία.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Έφτασε δέμα σε λάθος όροφο. Το όνομα στο κουτί ανήκε στην παλιά ένοικο. Το περιεχόμενο ήταν φωτογραφίες για την οικογένειά της. Κάποιες στιγμές μοιάζουν μικρές, αλλά αλλάζουν τον τρόπο που βλέπουμε τους ανθρώπους γύρω μας. Εσύ πώς θα αντιδρούσες αν ήσουν εκεί; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "visual": "Opening close-up relevant to: Έφτασε δέμα σε λάθος όροφο",
+            "subtitle": "Έφτασε δέμα σε λάθος όροφο"
+          },
+          {
+            "index": 2,
+            "visual": "Establishing scene of: Το όνομα στο κουτί ανήκε στην παλιά ένοικο",
+            "subtitle": "Το όνομα στο κουτί ανήκε στην παλιά ένοικο"
+          },
+          {
+            "index": 3,
+            "visual": "Specific visual payoff of: Το περιεχόμενο ήταν φωτογραφίες για την οικογένειά της",
+            "subtitle": "Το περιεχόμενο ήταν φωτογραφίες για την οικογένειά της"
+          },
+          {
+            "index": 4,
+            "visual": "Emotional closing image without repeated people or stock image",
+            "subtitle": "Εσύ πώς θα αντιδρούσες;"
+          }
+        ],
+        "fiction_disclosure": "Πρωτότυπη μυθοπλασία",
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "tiktok_04",
@@ -81,7 +162,34 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το άδειο κάθισμα",
       "disclosure": "Μυθοπλαστική ιστορία.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Στο λεωφορείο κανείς δεν καθόταν σε μία θέση. Ένας ηλικιωμένος εξήγησε την παλιά του συνήθεια. Εκεί καθόταν κάποτε η γυναίκα του. Κάποιες στιγμές μοιάζουν μικρές, αλλά αλλάζουν τον τρόπο που βλέπουμε τους ανθρώπους γύρω μας. Εσύ πώς θα αντιδρούσες αν ήσουν εκεί; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "visual": "Opening close-up relevant to: Στο λεωφορείο κανείς δεν καθόταν σε μία θέση",
+            "subtitle": "Στο λεωφορείο κανείς δεν καθόταν σε μία θέση"
+          },
+          {
+            "index": 2,
+            "visual": "Establishing scene of: Ένας ηλικιωμένος εξήγησε την παλιά του συνήθεια",
+            "subtitle": "Ένας ηλικιωμένος εξήγησε την παλιά του συνήθεια"
+          },
+          {
+            "index": 3,
+            "visual": "Specific visual payoff of: Εκεί καθόταν κάποτε η γυναίκα του",
+            "subtitle": "Εκεί καθόταν κάποτε η γυναίκα του"
+          },
+          {
+            "index": 4,
+            "visual": "Emotional closing image without repeated people or stock image",
+            "subtitle": "Εσύ πώς θα αντιδρούσες;"
+          }
+        ],
+        "fiction_disclosure": "Πρωτότυπη μυθοπλασία",
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "tiktok_05",
@@ -100,7 +208,34 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το τηλέφωνο του φούρνου",
       "disclosure": "Μυθοπλαστική ιστορία.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Το τηλέφωνο χτυπούσε κάθε Παρασκευή μετά το κλείσιμο. Η ιδιοκτήτρια απαντούσε χωρίς να μιλά. Στην άλλη άκρη ήταν ο αδελφός της που μάθαινε ξανά να μιλά. Κάποιες στιγμές μοιάζουν μικρές, αλλά αλλάζουν τον τρόπο που βλέπουμε τους ανθρώπους γύρω μας. Εσύ πώς θα αντιδρούσες αν ήσουν εκεί; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "visual": "Opening close-up relevant to: Το τηλέφωνο χτυπούσε κάθε Παρασκευή μετά το κλείσιμο",
+            "subtitle": "Το τηλέφωνο χτυπούσε κάθε Παρασκευή μετά το κλείσιμο"
+          },
+          {
+            "index": 2,
+            "visual": "Establishing scene of: Η ιδιοκτήτρια απαντούσε χωρίς να μιλά",
+            "subtitle": "Η ιδιοκτήτρια απαντούσε χωρίς να μιλά"
+          },
+          {
+            "index": 3,
+            "visual": "Specific visual payoff of: Στην άλλη άκρη ήταν ο αδελφός της που μάθαινε ξανά να μιλά",
+            "subtitle": "Στην άλλη άκρη ήταν ο αδελφός της που μάθαινε ξανά να μιλά"
+          },
+          {
+            "index": 4,
+            "visual": "Emotional closing image without repeated people or stock image",
+            "subtitle": "Εσύ πώς θα αντιδρούσες;"
+          }
+        ],
+        "fiction_disclosure": "Πρωτότυπη μυθοπλασία",
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "tiktok_06",
@@ -119,7 +254,34 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το τετράδιο με τα λάθη",
       "disclosure": "Μυθοπλαστική ιστορία.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Μαθήτρια βρήκε τετράδιο γεμάτο διορθώσεις. Κάθε λάθος είχε δίπλα μία ενθαρρυντική φράση. Το είχε κρατήσει η δασκάλα της. Κάποιες στιγμές μοιάζουν μικρές, αλλά αλλάζουν τον τρόπο που βλέπουμε τους ανθρώπους γύρω μας. Εσύ πώς θα αντιδρούσες αν ήσουν εκεί; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "visual": "Opening close-up relevant to: Μαθήτρια βρήκε τετράδιο γεμάτο διορθώσεις",
+            "subtitle": "Μαθήτρια βρήκε τετράδιο γεμάτο διορθώσεις"
+          },
+          {
+            "index": 2,
+            "visual": "Establishing scene of: Κάθε λάθος είχε δίπλα μία ενθαρρυντική φράση",
+            "subtitle": "Κάθε λάθος είχε δίπλα μία ενθαρρυντική φράση"
+          },
+          {
+            "index": 3,
+            "visual": "Specific visual payoff of: Το είχε κρατήσει η δασκάλα της",
+            "subtitle": "Το είχε κρατήσει η δασκάλα της"
+          },
+          {
+            "index": 4,
+            "visual": "Emotional closing image without repeated people or stock image",
+            "subtitle": "Εσύ πώς θα αντιδρούσες;"
+          }
+        ],
+        "fiction_disclosure": "Πρωτότυπη μυθοπλασία",
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "tiktok_07",
@@ -138,7 +300,34 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το μπλε κουμπί",
       "disclosure": "Μυθοπλαστική ιστορία.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Στο παλτό της γιαγιάς έλειπε πάντα ένα κουμπί. Ο εγγονός βρήκε ίδιο κουμπί σε παλιά φωτογραφία. Η γιαγιά το είχε χαρίσει στον παππού ως φυλαχτό. Κάποιες στιγμές μοιάζουν μικρές, αλλά αλλάζουν τον τρόπο που βλέπουμε τους ανθρώπους γύρω μας. Εσύ πώς θα αντιδρούσες αν ήσουν εκεί; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "visual": "Opening close-up relevant to: Στο παλτό της γιαγιάς έλειπε πάντα ένα κουμπί",
+            "subtitle": "Στο παλτό της γιαγιάς έλειπε πάντα ένα κουμπί"
+          },
+          {
+            "index": 2,
+            "visual": "Establishing scene of: Ο εγγονός βρήκε ίδιο κουμπί σε παλιά φωτογραφία",
+            "subtitle": "Ο εγγονός βρήκε ίδιο κουμπί σε παλιά φωτογραφία"
+          },
+          {
+            "index": 3,
+            "visual": "Specific visual payoff of: Η γιαγιά το είχε χαρίσει στον παππού ως φυλαχτό",
+            "subtitle": "Η γιαγιά το είχε χαρίσει στον παππού ως φυλαχτό"
+          },
+          {
+            "index": 4,
+            "visual": "Emotional closing image without repeated people or stock image",
+            "subtitle": "Εσύ πώς θα αντιδρούσες;"
+          }
+        ],
+        "fiction_disclosure": "Πρωτότυπη μυθοπλασία",
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "tiktok_08",
@@ -157,7 +346,34 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Η απόδειξη των δύο ευρώ",
       "disclosure": "Μυθοπλαστική ιστορία.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Κράτησε μια ασήμαντη απόδειξη δέκα χρόνια. Η ημερομηνία συνέπιπτε με τη μέρα που γνώρισε έναν φίλο. Ήταν ο πρώτος καφές που είχαν μοιραστεί. Κάποιες στιγμές μοιάζουν μικρές, αλλά αλλάζουν τον τρόπο που βλέπουμε τους ανθρώπους γύρω μας. Εσύ πώς θα αντιδρούσες αν ήσουν εκεί; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "visual": "Opening close-up relevant to: Κράτησε μια ασήμαντη απόδειξη δέκα χρόνια",
+            "subtitle": "Κράτησε μια ασήμαντη απόδειξη δέκα χρόνια"
+          },
+          {
+            "index": 2,
+            "visual": "Establishing scene of: Η ημερομηνία συνέπιπτε με τη μέρα που γνώρισε έναν φίλο",
+            "subtitle": "Η ημερομηνία συνέπιπτε με τη μέρα που γνώρισε έναν φίλο"
+          },
+          {
+            "index": 3,
+            "visual": "Specific visual payoff of: Ήταν ο πρώτος καφές που είχαν μοιραστεί",
+            "subtitle": "Ήταν ο πρώτος καφές που είχαν μοιραστεί"
+          },
+          {
+            "index": 4,
+            "visual": "Emotional closing image without repeated people or stock image",
+            "subtitle": "Εσύ πώς θα αντιδρούσες;"
+          }
+        ],
+        "fiction_disclosure": "Πρωτότυπη μυθοπλασία",
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "tiktok_09",
@@ -176,7 +392,34 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το κουτί κάτω από το θρανίο",
       "disclosure": "Μυθοπλαστική ιστορία.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Στην ανακαίνιση σχολείου βρέθηκε μεταλλικό κουτί. Περιείχε ευχές μαθητών από άλλη δεκαετία. Μία ευχή εκπληρώθηκε από την επόμενη γενιά. Κάποιες στιγμές μοιάζουν μικρές, αλλά αλλάζουν τον τρόπο που βλέπουμε τους ανθρώπους γύρω μας. Εσύ πώς θα αντιδρούσες αν ήσουν εκεί; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "visual": "Opening close-up relevant to: Στην ανακαίνιση σχολείου βρέθηκε μεταλλικό κουτί",
+            "subtitle": "Στην ανακαίνιση σχολείου βρέθηκε μεταλλικό κουτί"
+          },
+          {
+            "index": 2,
+            "visual": "Establishing scene of: Περιείχε ευχές μαθητών από άλλη δεκαετία",
+            "subtitle": "Περιείχε ευχές μαθητών από άλλη δεκαετία"
+          },
+          {
+            "index": 3,
+            "visual": "Specific visual payoff of: Μία ευχή εκπληρώθηκε από την επόμενη γενιά",
+            "subtitle": "Μία ευχή εκπληρώθηκε από την επόμενη γενιά"
+          },
+          {
+            "index": 4,
+            "visual": "Emotional closing image without repeated people or stock image",
+            "subtitle": "Εσύ πώς θα αντιδρούσες;"
+          }
+        ],
+        "fiction_disclosure": "Πρωτότυπη μυθοπλασία",
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "tiktok_10",
@@ -195,7 +438,34 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το φως στο απέναντι παράθυρο",
       "disclosure": "Μυθοπλαστική ιστορία.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Κάθε βράδυ άναβε το ίδιο μικρό φως. Μια βροχερή νύχτα έμεινε σβηστό. Οι γείτονες χτύπησαν την πόρτα και πρόσφεραν βοήθεια. Κάποιες στιγμές μοιάζουν μικρές, αλλά αλλάζουν τον τρόπο που βλέπουμε τους ανθρώπους γύρω μας. Εσύ πώς θα αντιδρούσες αν ήσουν εκεί; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "visual": "Opening close-up relevant to: Κάθε βράδυ άναβε το ίδιο μικρό φως",
+            "subtitle": "Κάθε βράδυ άναβε το ίδιο μικρό φως"
+          },
+          {
+            "index": 2,
+            "visual": "Establishing scene of: Μια βροχερή νύχτα έμεινε σβηστό",
+            "subtitle": "Μια βροχερή νύχτα έμεινε σβηστό"
+          },
+          {
+            "index": 3,
+            "visual": "Specific visual payoff of: Οι γείτονες χτύπησαν την πόρτα και πρόσφεραν βοήθεια",
+            "subtitle": "Οι γείτονες χτύπησαν την πόρτα και πρόσφεραν βοήθεια"
+          },
+          {
+            "index": 4,
+            "visual": "Emotional closing image without repeated people or stock image",
+            "subtitle": "Εσύ πώς θα αντιδρούσες;"
+          }
+        ],
+        "fiction_disclosure": "Πρωτότυπη μυθοπλασία",
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "instagram_01",
@@ -214,7 +484,25 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Τρία σημάδια πραγματικής φροντίδας",
       "disclosure": "Συμβουλές γενικού χαρακτήρα.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Η φροντίδα δεν είναι μόνο μεγάλες υποσχέσεις. Φαίνεται στην παρουσία, στη συνέπεια και στον σεβασμό. Ποιο από τα τρία εκτιμάς περισσότερο;. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Η φροντίδα δεν είναι μόνο μεγάλες υποσχέσεις"
+          },
+          {
+            "index": 2,
+            "subtitle": "Φαίνεται στην παρουσία, στη συνέπεια και στον σεβασμό"
+          },
+          {
+            "index": 3,
+            "subtitle": "Ποιο από τα τρία εκτιμάς περισσότερο;"
+          }
+        ],
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "instagram_02",
@@ -233,7 +521,25 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το όριο χωρίς ενοχές",
       "disclosure": "Συμβουλές γενικού χαρακτήρα.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Το να λες όχι δεν ακυρώνει την αγάπη. Μπορείς να εξηγήσεις το όριό σου ήρεμα. Η αμοιβαία σχέση αντέχει τη σαφήνεια. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Το να λες όχι δεν ακυρώνει την αγάπη"
+          },
+          {
+            "index": 2,
+            "subtitle": "Μπορείς να εξηγήσεις το όριό σου ήρεμα"
+          },
+          {
+            "index": 3,
+            "subtitle": "Η αμοιβαία σχέση αντέχει τη σαφήνεια"
+          }
+        ],
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "instagram_03",
@@ -252,7 +558,25 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Μια συνήθεια για πιο ήρεμα πρωινά",
       "disclosure": "Συμβουλές γενικού χαρακτήρα.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Το πρωί δεν χρειάζεται να ξεκινά με οθόνη. Πέντε λεπτά προετοιμασίας μειώνουν τη βιασύνη. Δοκίμασε μια μικρή αλλαγή για μία εβδομάδα. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Το πρωί δεν χρειάζεται να ξεκινά με οθόνη"
+          },
+          {
+            "index": 2,
+            "subtitle": "Πέντε λεπτά προετοιμασίας μειώνουν τη βιασύνη"
+          },
+          {
+            "index": 3,
+            "subtitle": "Δοκίμασε μια μικρή αλλαγή για μία εβδομάδα"
+          }
+        ],
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "instagram_04",
@@ -271,7 +595,25 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Η διαφορά ακρόασης και απάντησης",
       "disclosure": "Συμβουλές γενικού χαρακτήρα.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Μερικές φορές περιμένουμε μόνο τη σειρά μας. Μια ερώτηση μπορεί να αλλάξει τη συζήτηση. Άκου πρώτα και επανάλαβε τι κατάλαβες. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Μερικές φορές περιμένουμε μόνο τη σειρά μας"
+          },
+          {
+            "index": 2,
+            "subtitle": "Μια ερώτηση μπορεί να αλλάξει τη συζήτηση"
+          },
+          {
+            "index": 3,
+            "subtitle": "Άκου πρώτα και επανάλαβε τι κατάλαβες"
+          }
+        ],
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "instagram_05",
@@ -290,7 +632,25 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Πώς δείχνεις ευγνωμοσύνη",
       "disclosure": "Συμβουλές γενικού χαρακτήρα.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Ένα συγκεκριμένο ευχαριστώ έχει μεγαλύτερο νόημα. Πες τι ακριβώς έκανε ο άλλος για σένα. Η αναγνώριση γίνεται πιο προσωπική. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Ένα συγκεκριμένο ευχαριστώ έχει μεγαλύτερο νόημα"
+          },
+          {
+            "index": 2,
+            "subtitle": "Πες τι ακριβώς έκανε ο άλλος για σένα"
+          },
+          {
+            "index": 3,
+            "subtitle": "Η αναγνώριση γίνεται πιο προσωπική"
+          }
+        ],
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "instagram_06",
@@ -309,7 +669,25 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Μικρές πράξεις εμπιστοσύνης",
       "disclosure": "Συμβουλές γενικού χαρακτήρα.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Η εμπιστοσύνη χτίζεται στην καθημερινότητα. Τήρησε μια μικρή υπόσχεση χωρίς υπενθύμιση. Η συνέπεια μετρά περισσότερο από την εντύπωση. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Η εμπιστοσύνη χτίζεται στην καθημερινότητα"
+          },
+          {
+            "index": 2,
+            "subtitle": "Τήρησε μια μικρή υπόσχεση χωρίς υπενθύμιση"
+          },
+          {
+            "index": 3,
+            "subtitle": "Η συνέπεια μετρά περισσότερο από την εντύπωση"
+          }
+        ],
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "instagram_07",
@@ -328,7 +706,25 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Όταν μια φιλία αλλάζει",
       "disclosure": "Συμβουλές γενικού χαρακτήρα.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Δεν μένουν όλες οι φιλίες ίδιες. Η απόσταση δεν σημαίνει πάντα σύγκρουση. Μίλησε ανοιχτά πριν βγάλεις συμπέρασμα. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Δεν μένουν όλες οι φιλίες ίδιες"
+          },
+          {
+            "index": 2,
+            "subtitle": "Η απόσταση δεν σημαίνει πάντα σύγκρουση"
+          },
+          {
+            "index": 3,
+            "subtitle": "Μίλησε ανοιχτά πριν βγάλεις συμπέρασμα"
+          }
+        ],
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "instagram_08",
@@ -347,7 +743,25 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Η τέχνη του να ζητάς βοήθεια",
       "disclosure": "Συμβουλές γενικού χαρακτήρα.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Το να ζητάς βοήθεια είναι δεξιότητα. Πες συγκεκριμένα τι χρειάζεσαι και πότε. Δώσε στον άλλο χώρο να απαντήσει. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Το να ζητάς βοήθεια είναι δεξιότητα"
+          },
+          {
+            "index": 2,
+            "subtitle": "Πες συγκεκριμένα τι χρειάζεσαι και πότε"
+          },
+          {
+            "index": 3,
+            "subtitle": "Δώσε στον άλλο χώρο να απαντήσει"
+          }
+        ],
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "instagram_09",
@@ -366,7 +780,25 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Ένα δωμάτιο λιγότερο θορυβώδες",
       "disclosure": "Συμβουλές γενικού χαρακτήρα.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Δεν χρειάζεται μεγάλη ανακαίνιση για ηρεμία. Μάζεψε μια επιφάνεια και μείωσε τα ερεθίσματα. Ποια γωνιά του σπιτιού θα άλλαζες;. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Δεν χρειάζεται μεγάλη ανακαίνιση για ηρεμία"
+          },
+          {
+            "index": 2,
+            "subtitle": "Μάζεψε μια επιφάνεια και μείωσε τα ερεθίσματα"
+          },
+          {
+            "index": 3,
+            "subtitle": "Ποια γωνιά του σπιτιού θα άλλαζες;"
+          }
+        ],
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "instagram_10",
@@ -385,7 +817,25 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Μια ερώτηση πριν τον ύπνο",
       "disclosure": "Συμβουλές γενικού χαρακτήρα.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Πριν κοιμηθείς θυμήσου μια μικρή καλή στιγμή. Μην απαιτείς να ήταν τέλεια η μέρα. Τι άξιζε σήμερα να κρατήσεις;. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Πριν κοιμηθείς θυμήσου μια μικρή καλή στιγμή"
+          },
+          {
+            "index": 2,
+            "subtitle": "Μην απαιτείς να ήταν τέλεια η μέρα"
+          },
+          {
+            "index": 3,
+            "subtitle": "Τι άξιζε σήμερα να κρατήσεις;"
+          }
+        ],
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "facebook_01",
@@ -404,7 +854,34 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Ο κήπος της πολυκατοικίας",
       "disclosure": "Μυθοπλαστική ιστορία.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Μια άδεια αυλή είχε γίνει αποθήκη. Οι γείτονες οργάνωσαν ένα μικρό Σάββατο καθαρισμού. Την άνοιξη όλοι μοιράζονταν τα πρώτα λουλούδια. Κάποιες στιγμές μοιάζουν μικρές, αλλά αλλάζουν τον τρόπο που βλέπουμε τους ανθρώπους γύρω μας. Εσύ πώς θα αντιδρούσες αν ήσουν εκεί; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "visual": "Opening close-up relevant to: Μια άδεια αυλή είχε γίνει αποθήκη",
+            "subtitle": "Μια άδεια αυλή είχε γίνει αποθήκη"
+          },
+          {
+            "index": 2,
+            "visual": "Establishing scene of: Οι γείτονες οργάνωσαν ένα μικρό Σάββατο καθαρισμού",
+            "subtitle": "Οι γείτονες οργάνωσαν ένα μικρό Σάββατο καθαρισμού"
+          },
+          {
+            "index": 3,
+            "visual": "Specific visual payoff of: Την άνοιξη όλοι μοιράζονταν τα πρώτα λουλούδια",
+            "subtitle": "Την άνοιξη όλοι μοιράζονταν τα πρώτα λουλούδια"
+          },
+          {
+            "index": 4,
+            "visual": "Emotional closing image without repeated people or stock image",
+            "subtitle": "Εσύ πώς θα αντιδρούσες;"
+          }
+        ],
+        "fiction_disclosure": "Πρωτότυπη μυθοπλασία",
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "facebook_02",
@@ -423,7 +900,34 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Η παλιά φωτογραφία της πλατείας",
       "disclosure": "Μυθοπλαστική ιστορία.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Κάποιος ανέβασε μια φωτογραφία του 1982. Οι κάτοικοι αναγνώρισαν πρόσωπα και μαγαζιά. Η πλατεία γέμισε ξανά κοινές αναμνήσεις. Κάποιες στιγμές μοιάζουν μικρές, αλλά αλλάζουν τον τρόπο που βλέπουμε τους ανθρώπους γύρω μας. Εσύ πώς θα αντιδρούσες αν ήσουν εκεί; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "visual": "Opening close-up relevant to: Κάποιος ανέβασε μια φωτογραφία του 1982",
+            "subtitle": "Κάποιος ανέβασε μια φωτογραφία του 1982"
+          },
+          {
+            "index": 2,
+            "visual": "Establishing scene of: Οι κάτοικοι αναγνώρισαν πρόσωπα και μαγαζιά",
+            "subtitle": "Οι κάτοικοι αναγνώρισαν πρόσωπα και μαγαζιά"
+          },
+          {
+            "index": 3,
+            "visual": "Specific visual payoff of: Η πλατεία γέμισε ξανά κοινές αναμνήσεις",
+            "subtitle": "Η πλατεία γέμισε ξανά κοινές αναμνήσεις"
+          },
+          {
+            "index": 4,
+            "visual": "Emotional closing image without repeated people or stock image",
+            "subtitle": "Εσύ πώς θα αντιδρούσες;"
+          }
+        ],
+        "fiction_disclosure": "Πρωτότυπη μυθοπλασία",
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "facebook_03",
@@ -442,7 +946,34 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Η δανεική καρέκλα",
       "disclosure": "Μυθοπλαστική ιστορία.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Ένας γείτονας ζήτησε μία καρέκλα για το τραπέζι. Την επέστρεψε με ένα χειρόγραφο ευχαριστώ. Έτσι ξεκίνησε μια ετήσια γιορτή της γειτονιάς. Κάποιες στιγμές μοιάζουν μικρές, αλλά αλλάζουν τον τρόπο που βλέπουμε τους ανθρώπους γύρω μας. Εσύ πώς θα αντιδρούσες αν ήσουν εκεί; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "visual": "Opening close-up relevant to: Ένας γείτονας ζήτησε μία καρέκλα για το τραπέζι",
+            "subtitle": "Ένας γείτονας ζήτησε μία καρέκλα για το τραπέζι"
+          },
+          {
+            "index": 2,
+            "visual": "Establishing scene of: Την επέστρεψε με ένα χειρόγραφο ευχαριστώ",
+            "subtitle": "Την επέστρεψε με ένα χειρόγραφο ευχαριστώ"
+          },
+          {
+            "index": 3,
+            "visual": "Specific visual payoff of: Έτσι ξεκίνησε μια ετήσια γιορτή της γειτονιάς",
+            "subtitle": "Έτσι ξεκίνησε μια ετήσια γιορτή της γειτονιάς"
+          },
+          {
+            "index": 4,
+            "visual": "Emotional closing image without repeated people or stock image",
+            "subtitle": "Εσύ πώς θα αντιδρούσες;"
+          }
+        ],
+        "fiction_disclosure": "Πρωτότυπη μυθοπλασία",
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "facebook_04",
@@ -461,7 +992,34 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το ραδιόφωνο του παππού",
       "disclosure": "Μυθοπλαστική ιστορία.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Ένα παλιό ραδιόφωνο δεν άνοιγε πια. Ο εγγονός το επισκεύασε με προσοχή. Ο παππούς άκουσε ξανά την αγαπημένη του εκπομπή. Κάποιες στιγμές μοιάζουν μικρές, αλλά αλλάζουν τον τρόπο που βλέπουμε τους ανθρώπους γύρω μας. Εσύ πώς θα αντιδρούσες αν ήσουν εκεί; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "visual": "Opening close-up relevant to: Ένα παλιό ραδιόφωνο δεν άνοιγε πια",
+            "subtitle": "Ένα παλιό ραδιόφωνο δεν άνοιγε πια"
+          },
+          {
+            "index": 2,
+            "visual": "Establishing scene of: Ο εγγονός το επισκεύασε με προσοχή",
+            "subtitle": "Ο εγγονός το επισκεύασε με προσοχή"
+          },
+          {
+            "index": 3,
+            "visual": "Specific visual payoff of: Ο παππούς άκουσε ξανά την αγαπημένη του εκπομπή",
+            "subtitle": "Ο παππούς άκουσε ξανά την αγαπημένη του εκπομπή"
+          },
+          {
+            "index": 4,
+            "visual": "Emotional closing image without repeated people or stock image",
+            "subtitle": "Εσύ πώς θα αντιδρούσες;"
+          }
+        ],
+        "fiction_disclosure": "Πρωτότυπη μυθοπλασία",
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "facebook_05",
@@ -480,7 +1038,34 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το σχολικό κουδούνι",
       "disclosure": "Μυθοπλαστική ιστορία.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Στην επανένωση τάξης όλοι θυμούνταν το κουδούνι. Η δασκάλα έφερε το παλιό ημερολόγιο. Μια ξεχασμένη υπόσχεση έγινε κοινή δράση. Κάποιες στιγμές μοιάζουν μικρές, αλλά αλλάζουν τον τρόπο που βλέπουμε τους ανθρώπους γύρω μας. Εσύ πώς θα αντιδρούσες αν ήσουν εκεί; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "visual": "Opening close-up relevant to: Στην επανένωση τάξης όλοι θυμούνταν το κουδούνι",
+            "subtitle": "Στην επανένωση τάξης όλοι θυμούνταν το κουδούνι"
+          },
+          {
+            "index": 2,
+            "visual": "Establishing scene of: Η δασκάλα έφερε το παλιό ημερολόγιο",
+            "subtitle": "Η δασκάλα έφερε το παλιό ημερολόγιο"
+          },
+          {
+            "index": 3,
+            "visual": "Specific visual payoff of: Μια ξεχασμένη υπόσχεση έγινε κοινή δράση",
+            "subtitle": "Μια ξεχασμένη υπόσχεση έγινε κοινή δράση"
+          },
+          {
+            "index": 4,
+            "visual": "Emotional closing image without repeated people or stock image",
+            "subtitle": "Εσύ πώς θα αντιδρούσες;"
+          }
+        ],
+        "fiction_disclosure": "Πρωτότυπη μυθοπλασία",
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "facebook_06",
@@ -499,7 +1084,34 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Η συνταγή της γειτόνισσας",
       "disclosure": "Μυθοπλαστική ιστορία.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Μια συνταγή περνούσε από σπίτι σε σπίτι. Κάθε οικογένεια πρόσθετε μια μικρή σημείωση. Στο τέλος έγινε βιβλιαράκι της γειτονιάς. Κάποιες στιγμές μοιάζουν μικρές, αλλά αλλάζουν τον τρόπο που βλέπουμε τους ανθρώπους γύρω μας. Εσύ πώς θα αντιδρούσες αν ήσουν εκεί; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "visual": "Opening close-up relevant to: Μια συνταγή περνούσε από σπίτι σε σπίτι",
+            "subtitle": "Μια συνταγή περνούσε από σπίτι σε σπίτι"
+          },
+          {
+            "index": 2,
+            "visual": "Establishing scene of: Κάθε οικογένεια πρόσθετε μια μικρή σημείωση",
+            "subtitle": "Κάθε οικογένεια πρόσθετε μια μικρή σημείωση"
+          },
+          {
+            "index": 3,
+            "visual": "Specific visual payoff of: Στο τέλος έγινε βιβλιαράκι της γειτονιάς",
+            "subtitle": "Στο τέλος έγινε βιβλιαράκι της γειτονιάς"
+          },
+          {
+            "index": 4,
+            "visual": "Emotional closing image without repeated people or stock image",
+            "subtitle": "Εσύ πώς θα αντιδρούσες;"
+          }
+        ],
+        "fiction_disclosure": "Πρωτότυπη μυθοπλασία",
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "facebook_07",
@@ -518,7 +1130,34 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το παγκάκι δίπλα στη θάλασσα",
       "disclosure": "Μυθοπλαστική ιστορία.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Ένα παγκάκι χρειαζόταν επισκευή. Τρεις φίλοι το έβαψαν με άδεια του δήμου. Έμεινε εκεί για να ξεκουράζονται όλοι. Κάποιες στιγμές μοιάζουν μικρές, αλλά αλλάζουν τον τρόπο που βλέπουμε τους ανθρώπους γύρω μας. Εσύ πώς θα αντιδρούσες αν ήσουν εκεί; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "visual": "Opening close-up relevant to: Ένα παγκάκι χρειαζόταν επισκευή",
+            "subtitle": "Ένα παγκάκι χρειαζόταν επισκευή"
+          },
+          {
+            "index": 2,
+            "visual": "Establishing scene of: Τρεις φίλοι το έβαψαν με άδεια του δήμου",
+            "subtitle": "Τρεις φίλοι το έβαψαν με άδεια του δήμου"
+          },
+          {
+            "index": 3,
+            "visual": "Specific visual payoff of: Έμεινε εκεί για να ξεκουράζονται όλοι",
+            "subtitle": "Έμεινε εκεί για να ξεκουράζονται όλοι"
+          },
+          {
+            "index": 4,
+            "visual": "Emotional closing image without repeated people or stock image",
+            "subtitle": "Εσύ πώς θα αντιδρούσες;"
+          }
+        ],
+        "fiction_disclosure": "Πρωτότυπη μυθοπλασία",
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "facebook_08",
@@ -537,7 +1176,34 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Η επιστολή του ταχυδρόμου",
       "disclosure": "Μυθοπλαστική ιστορία.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Ο συνταξιούχος ταχυδρόμος έλαβε πολλά γράμματα. Οι κάτοικοι θυμήθηκαν τις μικρές εξυπηρετήσεις του. Ο ίδιος είπε ότι θυμόταν κάθε δρόμο. Κάποιες στιγμές μοιάζουν μικρές, αλλά αλλάζουν τον τρόπο που βλέπουμε τους ανθρώπους γύρω μας. Εσύ πώς θα αντιδρούσες αν ήσουν εκεί; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "visual": "Opening close-up relevant to: Ο συνταξιούχος ταχυδρόμος έλαβε πολλά γράμματα",
+            "subtitle": "Ο συνταξιούχος ταχυδρόμος έλαβε πολλά γράμματα"
+          },
+          {
+            "index": 2,
+            "visual": "Establishing scene of: Οι κάτοικοι θυμήθηκαν τις μικρές εξυπηρετήσεις του",
+            "subtitle": "Οι κάτοικοι θυμήθηκαν τις μικρές εξυπηρετήσεις του"
+          },
+          {
+            "index": 3,
+            "visual": "Specific visual payoff of: Ο ίδιος είπε ότι θυμόταν κάθε δρόμο",
+            "subtitle": "Ο ίδιος είπε ότι θυμόταν κάθε δρόμο"
+          },
+          {
+            "index": 4,
+            "visual": "Emotional closing image without repeated people or stock image",
+            "subtitle": "Εσύ πώς θα αντιδρούσες;"
+          }
+        ],
+        "fiction_disclosure": "Πρωτότυπη μυθοπλασία",
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "facebook_09",
@@ -556,7 +1222,34 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το δέντρο της αποφοίτησης",
       "disclosure": "Μυθοπλαστική ιστορία.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Μια τάξη είχε φυτέψει δέντρο πριν 30 χρόνια. Οι παλιοί συμμαθητές το βρήκαν ακόμη όρθιο. Συναντήθηκαν ξανά κάτω από τη σκιά του. Κάποιες στιγμές μοιάζουν μικρές, αλλά αλλάζουν τον τρόπο που βλέπουμε τους ανθρώπους γύρω μας. Εσύ πώς θα αντιδρούσες αν ήσουν εκεί; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "visual": "Opening close-up relevant to: Μια τάξη είχε φυτέψει δέντρο πριν 30 χρόνια",
+            "subtitle": "Μια τάξη είχε φυτέψει δέντρο πριν 30 χρόνια"
+          },
+          {
+            "index": 2,
+            "visual": "Establishing scene of: Οι παλιοί συμμαθητές το βρήκαν ακόμη όρθιο",
+            "subtitle": "Οι παλιοί συμμαθητές το βρήκαν ακόμη όρθιο"
+          },
+          {
+            "index": 3,
+            "visual": "Specific visual payoff of: Συναντήθηκαν ξανά κάτω από τη σκιά του",
+            "subtitle": "Συναντήθηκαν ξανά κάτω από τη σκιά του"
+          },
+          {
+            "index": 4,
+            "visual": "Emotional closing image without repeated people or stock image",
+            "subtitle": "Εσύ πώς θα αντιδρούσες;"
+          }
+        ],
+        "fiction_disclosure": "Πρωτότυπη μυθοπλασία",
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "facebook_10",
@@ -575,7 +1268,34 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Το τραπέζι της Κυριακής",
       "disclosure": "Μυθοπλαστική ιστορία.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Μια οικογένεια καθιέρωσε ένα κοινό γεύμα τον μήνα. Κάθε μέλος έφερνε μια ανάμνηση. Το τραπέζι έγινε αρχείο οικογενειακών ιστοριών. Κάποιες στιγμές μοιάζουν μικρές, αλλά αλλάζουν τον τρόπο που βλέπουμε τους ανθρώπους γύρω μας. Εσύ πώς θα αντιδρούσες αν ήσουν εκεί; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "visual": "Opening close-up relevant to: Μια οικογένεια καθιέρωσε ένα κοινό γεύμα τον μήνα",
+            "subtitle": "Μια οικογένεια καθιέρωσε ένα κοινό γεύμα τον μήνα"
+          },
+          {
+            "index": 2,
+            "visual": "Establishing scene of: Κάθε μέλος έφερνε μια ανάμνηση",
+            "subtitle": "Κάθε μέλος έφερνε μια ανάμνηση"
+          },
+          {
+            "index": 3,
+            "visual": "Specific visual payoff of: Το τραπέζι έγινε αρχείο οικογενειακών ιστοριών",
+            "subtitle": "Το τραπέζι έγινε αρχείο οικογενειακών ιστοριών"
+          },
+          {
+            "index": 4,
+            "visual": "Emotional closing image without repeated people or stock image",
+            "subtitle": "Εσύ πώς θα αντιδρούσες;"
+          }
+        ],
+        "fiction_disclosure": "Πρωτότυπη μυθοπλασία",
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "youtube_01",
@@ -594,7 +1314,25 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Γιατί ο ουρανός γίνεται κόκκινος",
       "disclosure": "Εκπαιδευτικό περιεχόμενο — απαιτείται έλεγχος πηγών.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Το ηλιοβασίλεμα αλλάζει χρώματα καθώς το φως ταξιδεύει. Η ατμόσφαιρα σκεδάζει περισσότερο τα μικρότερα μήκη κύματος. Το κόκκινο φως κυριαρχεί σε μεγαλύτερη διαδρομή. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Το ηλιοβασίλεμα αλλάζει χρώματα καθώς το φως ταξιδεύει"
+          },
+          {
+            "index": 2,
+            "subtitle": "Η ατμόσφαιρα σκεδάζει περισσότερο τα μικρότερα μήκη κύματος"
+          },
+          {
+            "index": 3,
+            "subtitle": "Το κόκκινο φως κυριαρχεί σε μεγαλύτερη διαδρομή"
+          }
+        ],
+        "production_state": "NEEDS_PRIMARY_SOURCE_VERIFICATION_AND_MEDIA"
+      }
     },
     {
       "id": "youtube_02",
@@ -613,7 +1351,25 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Τι είναι το σέλας",
       "disclosure": "Εκπαιδευτικό περιεχόμενο — απαιτείται έλεγχος πηγών.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Το σέλας μοιάζει με κουρτίνες φωτός. Φορτισμένα σωματίδια αλληλεπιδρούν με τη γήινη ατμόσφαιρα. Τα διαφορετικά αέρια και ύψη δίνουν χρώματα. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Το σέλας μοιάζει με κουρτίνες φωτός"
+          },
+          {
+            "index": 2,
+            "subtitle": "Φορτισμένα σωματίδια αλληλεπιδρούν με τη γήινη ατμόσφαιρα"
+          },
+          {
+            "index": 3,
+            "subtitle": "Τα διαφορετικά αέρια και ύψη δίνουν χρώματα"
+          }
+        ],
+        "production_state": "NEEDS_PRIMARY_SOURCE_VERIFICATION_AND_MEDIA"
+      }
     },
     {
       "id": "youtube_03",
@@ -632,7 +1388,25 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Πώς δημιουργείται το ουράνιο τόξο",
       "disclosure": "Εκπαιδευτικό περιεχόμενο — απαιτείται έλεγχος πηγών.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Μετά τη βροχή εμφανίζεται ένα χρωματιστό τόξο. Το φως διαθλάται και ανακλάται στα σταγονίδια. Η γωνία παρατήρησης καθορίζει τι βλέπουμε. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Μετά τη βροχή εμφανίζεται ένα χρωματιστό τόξο"
+          },
+          {
+            "index": 2,
+            "subtitle": "Το φως διαθλάται και ανακλάται στα σταγονίδια"
+          },
+          {
+            "index": 3,
+            "subtitle": "Η γωνία παρατήρησης καθορίζει τι βλέπουμε"
+          }
+        ],
+        "production_state": "NEEDS_PRIMARY_SOURCE_VERIFICATION_AND_MEDIA"
+      }
     },
     {
       "id": "youtube_04",
@@ -651,7 +1425,25 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Γιατί ο πάγος επιπλέει",
       "disclosure": "Εκπαιδευτικό περιεχόμενο — απαιτείται έλεγχος πηγών.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Το νερό είναι ασυνήθιστο όταν παγώνει. Η κρυσταλλική δομή του πάγου έχει χαμηλότερη πυκνότητα. Γι’ αυτό οι λίμνες παγώνουν πρώτα στην επιφάνεια. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Το νερό είναι ασυνήθιστο όταν παγώνει"
+          },
+          {
+            "index": 2,
+            "subtitle": "Η κρυσταλλική δομή του πάγου έχει χαμηλότερη πυκνότητα"
+          },
+          {
+            "index": 3,
+            "subtitle": "Γι’ αυτό οι λίμνες παγώνουν πρώτα στην επιφάνεια"
+          }
+        ],
+        "production_state": "NEEDS_PRIMARY_SOURCE_VERIFICATION_AND_MEDIA"
+      }
     },
     {
       "id": "youtube_05",
@@ -670,7 +1462,25 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Τι προκαλεί την παλίρροια",
       "disclosure": "Εκπαιδευτικό περιεχόμενο — απαιτείται έλεγχος πηγών.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Η θάλασσα ανεβαίνει και κατεβαίνει. Η βαρύτητα της Σελήνης και του Ήλιου επηρεάζει το νερό. Η μορφολογία της ακτής αλλάζει το τοπικό αποτέλεσμα. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Η θάλασσα ανεβαίνει και κατεβαίνει"
+          },
+          {
+            "index": 2,
+            "subtitle": "Η βαρύτητα της Σελήνης και του Ήλιου επηρεάζει το νερό"
+          },
+          {
+            "index": 3,
+            "subtitle": "Η μορφολογία της ακτής αλλάζει το τοπικό αποτέλεσμα"
+          }
+        ],
+        "production_state": "NEEDS_PRIMARY_SOURCE_VERIFICATION_AND_MEDIA"
+      }
     },
     {
       "id": "youtube_06",
@@ -689,7 +1499,25 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Γιατί τρεμοπαίζουν τα αστέρια",
       "disclosure": "Εκπαιδευτικό περιεχόμενο — απαιτείται έλεγχος πηγών.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Τα αστέρια μοιάζουν να αναβοσβήνουν. Τα στρώματα της ατμόσφαιρας αλλάζουν τη διαδρομή του φωτός. Οι πλανήτες συνήθως τρεμοπαίζουν λιγότερο. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Τα αστέρια μοιάζουν να αναβοσβήνουν"
+          },
+          {
+            "index": 2,
+            "subtitle": "Τα στρώματα της ατμόσφαιρας αλλάζουν τη διαδρομή του φωτός"
+          },
+          {
+            "index": 3,
+            "subtitle": "Οι πλανήτες συνήθως τρεμοπαίζουν λιγότερο"
+          }
+        ],
+        "production_state": "NEEDS_PRIMARY_SOURCE_VERIFICATION_AND_MEDIA"
+      }
     },
     {
       "id": "youtube_07",
@@ -708,7 +1536,25 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Πώς φτιάχνεται ένα απολίθωμα",
       "disclosure": "Εκπαιδευτικό περιεχόμενο — απαιτείται έλεγχος πηγών.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Δεν γίνεται κάθε παλιό οστό απολίθωμα. Χρειάζονται ειδικές συνθήκες ταφής και διατήρησης. Τα απολιθώματα κρατούν στοιχεία της ζωής του παρελθόντος. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Δεν γίνεται κάθε παλιό οστό απολίθωμα"
+          },
+          {
+            "index": 2,
+            "subtitle": "Χρειάζονται ειδικές συνθήκες ταφής και διατήρησης"
+          },
+          {
+            "index": 3,
+            "subtitle": "Τα απολιθώματα κρατούν στοιχεία της ζωής του παρελθόντος"
+          }
+        ],
+        "production_state": "NEEDS_PRIMARY_SOURCE_VERIFICATION_AND_MEDIA"
+      }
     },
     {
       "id": "youtube_08",
@@ -727,7 +1573,25 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Γιατί ακούμε ηχώ",
       "disclosure": "Εκπαιδευτικό περιεχόμενο — απαιτείται έλεγχος πηγών.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Μια φωνή επιστρέφει από μακριά. Ο ήχος ανακλάται σε μια επιφάνεια. Η απόσταση καθορίζει αν ακούμε ξεχωριστή επανάληψη. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Μια φωνή επιστρέφει από μακριά"
+          },
+          {
+            "index": 2,
+            "subtitle": "Ο ήχος ανακλάται σε μια επιφάνεια"
+          },
+          {
+            "index": 3,
+            "subtitle": "Η απόσταση καθορίζει αν ακούμε ξεχωριστή επανάληψη"
+          }
+        ],
+        "production_state": "NEEDS_PRIMARY_SOURCE_VERIFICATION_AND_MEDIA"
+      }
     },
     {
       "id": "youtube_09",
@@ -746,7 +1610,25 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Πώς προσανατολίζονται τα αποδημητικά πουλιά",
       "disclosure": "Εκπαιδευτικό περιεχόμενο — απαιτείται έλεγχος πηγών.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Πολλά πουλιά ταξιδεύουν τεράστιες αποστάσεις. Χρησιμοποιούν συνδυασμούς ουράνιων και περιβαλλοντικών ενδείξεων. Η έρευνα εξετάζει και τον ρόλο του μαγνητικού πεδίου. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Πολλά πουλιά ταξιδεύουν τεράστιες αποστάσεις"
+          },
+          {
+            "index": 2,
+            "subtitle": "Χρησιμοποιούν συνδυασμούς ουράνιων και περιβαλλοντικών ενδείξεων"
+          },
+          {
+            "index": 3,
+            "subtitle": "Η έρευνα εξετάζει και τον ρόλο του μαγνητικού πεδίου"
+          }
+        ],
+        "production_state": "NEEDS_PRIMARY_SOURCE_VERIFICATION_AND_MEDIA"
+      }
     },
     {
       "id": "youtube_10",
@@ -765,7 +1647,25 @@
       "visual_brief": "4-6 unique scene-specific images, original consistent visual sequence, no reused images; Τι είναι η βιοφωταύγεια",
       "disclosure": "Εκπαιδευτικό περιεχόμενο — απαιτείται έλεγχος πηγών.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Μερικοί οργανισμοί παράγουν το δικό τους φως. Χημικές αντιδράσεις μέσα στο σώμα τους δημιουργούν λάμψη. Το φως μπορεί να βοηθά στην άμυνα ή στην επικοινωνία. Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Μερικοί οργανισμοί παράγουν το δικό τους φως"
+          },
+          {
+            "index": 2,
+            "subtitle": "Χημικές αντιδράσεις μέσα στο σώμα τους δημιουργούν λάμψη"
+          },
+          {
+            "index": 3,
+            "subtitle": "Το φως μπορεί να βοηθά στην άμυνα ή στην επικοινωνία"
+          }
+        ],
+        "production_state": "NEEDS_PRIMARY_SOURCE_VERIFICATION_AND_MEDIA"
+      }
     },
     {
       "id": "zodiac_1",
@@ -787,7 +1687,33 @@
       "visual_brief": "5 unique visual scenes, legible Greek captions, clear zodiac and ascendant symbols; do not reuse stock images",
       "disclosure": "Συμβολική αστρολογία για ψυχαγωγία, όχι επιστημονική πρόβλεψη.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Λάμψη και ανάγκη για αρμονία. Η συμβολική πλευρά του Λέοντα αναζητά δημιουργική έκφραση. Ο Ζυγός συμβολίζει διάλογο και ισορροπία. Αυτό είναι ένα συμβολικό πορτρέτο, όχι πρόβλεψη για τη ζωή ή τον χαρακτήρα σου. Ποια πλευρά σε εκφράζει περισσότερο; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Λάμψη και ανάγκη για αρμονία"
+          },
+          {
+            "index": 2,
+            "subtitle": "Η συμβολική πλευρά του Λέοντα αναζητά δημιουργική έκφραση"
+          },
+          {
+            "index": 3,
+            "subtitle": "Ο Ζυγός συμβολίζει διάλογο και ισορροπία"
+          },
+          {
+            "index": 4,
+            "subtitle": "Συμβολική αστρολογία — για ψυχαγωγία"
+          },
+          {
+            "index": 5,
+            "subtitle": "Ποια πλευρά σε εκφράζει περισσότερο;"
+          }
+        ],
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "zodiac_2",
@@ -809,7 +1735,33 @@
       "visual_brief": "5 unique visual scenes, legible Greek captions, clear zodiac and ascendant symbols; do not reuse stock images",
       "disclosure": "Συμβολική αστρολογία για ψυχαγωγία, όχι επιστημονική πρόβλεψη.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Λεπτομέρεια και ανοιχτός ορίζοντας. Η Παρθένος συμβολίζει οργάνωση και προσοχή. Ο Τοξότης προσθέτει περιέργεια και εξερεύνηση. Αυτό είναι ένα συμβολικό πορτρέτο, όχι πρόβλεψη για τη ζωή ή τον χαρακτήρα σου. Ποια πλευρά σε εκφράζει περισσότερο; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Λεπτομέρεια και ανοιχτός ορίζοντας"
+          },
+          {
+            "index": 2,
+            "subtitle": "Η Παρθένος συμβολίζει οργάνωση και προσοχή"
+          },
+          {
+            "index": 3,
+            "subtitle": "Ο Τοξότης προσθέτει περιέργεια και εξερεύνηση"
+          },
+          {
+            "index": 4,
+            "subtitle": "Συμβολική αστρολογία — για ψυχαγωγία"
+          },
+          {
+            "index": 5,
+            "subtitle": "Ποια πλευρά σε εκφράζει περισσότερο;"
+          }
+        ],
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "zodiac_3",
@@ -831,7 +1783,33 @@
       "visual_brief": "5 unique visual scenes, legible Greek captions, clear zodiac and ascendant symbols; do not reuse stock images",
       "disclosure": "Συμβολική αστρολογία για ψυχαγωγία, όχι επιστημονική πρόβλεψη.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Ευαισθησία και τόλμη. Οι Ιχθύες συμβολίζουν φαντασία και ενσυναίσθηση. Ο Κριός προσθέτει πρωτοβουλία. Αυτό είναι ένα συμβολικό πορτρέτο, όχι πρόβλεψη για τη ζωή ή τον χαρακτήρα σου. Ποια πλευρά σε εκφράζει περισσότερο; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Ευαισθησία και τόλμη"
+          },
+          {
+            "index": 2,
+            "subtitle": "Οι Ιχθύες συμβολίζουν φαντασία και ενσυναίσθηση"
+          },
+          {
+            "index": 3,
+            "subtitle": "Ο Κριός προσθέτει πρωτοβουλία"
+          },
+          {
+            "index": 4,
+            "subtitle": "Συμβολική αστρολογία — για ψυχαγωγία"
+          },
+          {
+            "index": 5,
+            "subtitle": "Ποια πλευρά σε εκφράζει περισσότερο;"
+          }
+        ],
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "zodiac_4",
@@ -853,7 +1831,33 @@
       "visual_brief": "5 unique visual scenes, legible Greek captions, clear zodiac and ascendant symbols; do not reuse stock images",
       "disclosure": "Συμβολική αστρολογία για ψυχαγωγία, όχι επιστημονική πρόβλεψη.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Ρίζες και ανεξαρτησία. Ο Καρκίνος συμβολίζει φροντίδα και οικειότητα. Ο Υδροχόος συμβολίζει αυτονομία και πρωτοτυπία. Αυτό είναι ένα συμβολικό πορτρέτο, όχι πρόβλεψη για τη ζωή ή τον χαρακτήρα σου. Ποια πλευρά σε εκφράζει περισσότερο; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Ρίζες και ανεξαρτησία"
+          },
+          {
+            "index": 2,
+            "subtitle": "Ο Καρκίνος συμβολίζει φροντίδα και οικειότητα"
+          },
+          {
+            "index": 3,
+            "subtitle": "Ο Υδροχόος συμβολίζει αυτονομία και πρωτοτυπία"
+          },
+          {
+            "index": 4,
+            "subtitle": "Συμβολική αστρολογία — για ψυχαγωγία"
+          },
+          {
+            "index": 5,
+            "subtitle": "Ποια πλευρά σε εκφράζει περισσότερο;"
+          }
+        ],
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     },
     {
       "id": "zodiac_5",
@@ -875,7 +1879,33 @@
       "visual_brief": "5 unique visual scenes, legible Greek captions, clear zodiac and ascendant symbols; do not reuse stock images",
       "disclosure": "Συμβολική αστρολογία για ψυχαγωγία, όχι επιστημονική πρόβλεψη.",
       "status": "SCRIPT_READY_MEDIA_NOT_RENDERED",
-      "qa": "PENDING"
+      "qa": "PENDING",
+      "production_script": {
+        "voiceover": "Στόχος και ευελιξία. Ο Αιγόκερως συμβολίζει υπομονή και πειθαρχία. Οι Δίδυμοι συμβολίζουν επικοινωνία και προσαρμογή. Αυτό είναι ένα συμβολικό πορτρέτο, όχι πρόβλεψη για τη ζωή ή τον χαρακτήρα σου. Ποια πλευρά σε εκφράζει περισσότερο; Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+        "scenes": [
+          {
+            "index": 1,
+            "subtitle": "Στόχος και ευελιξία"
+          },
+          {
+            "index": 2,
+            "subtitle": "Ο Αιγόκερως συμβολίζει υπομονή και πειθαρχία"
+          },
+          {
+            "index": 3,
+            "subtitle": "Οι Δίδυμοι συμβολίζουν επικοινωνία και προσαρμογή"
+          },
+          {
+            "index": 4,
+            "subtitle": "Συμβολική αστρολογία — για ψυχαγωγία"
+          },
+          {
+            "index": 5,
+            "subtitle": "Ποια πλευρά σε εκφράζει περισσότερο;"
+          }
+        ],
+        "production_state": "SCRIPT_EXPANDED_MEDIA_REQUIRED"
+      }
     }
   ],
   "slots": {
@@ -1138,6 +2168,8 @@
     "check live queue and no concurrent writers",
     "schedule future only, read back each provider ID"
   ],
-  "queue_status": "NOT_SCHEDULED",
-  "no_automatic_publish_until_final_review": true
+  "queue_status": "NOT_SCHEDULED_MEDIA_NOT_RENDERED",
+  "no_automatic_publish_until_final_review": true,
+  "production_script_count": 45,
+  "last_revision": "2026-10-19"
 }
