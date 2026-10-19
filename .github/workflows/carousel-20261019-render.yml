@@ -1,0 +1,69 @@
+name: Carousel 20261019 free photo render
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/workflows/carousel-20261019-render.yml'
+      - 'production/carousel_20261019/**'
+      - 'state/production_leases/2026-10-19-brand7076410.json'
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: carousel-20261019-brand7076410
+  cancel-in-progress: false
+jobs:
+  render-candidates:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          sparse-checkout: |
+            production/carousel_20261019
+            state/production_leases/2026-10-19-brand7076410.json
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verify active production lease and free-only request
+        run: |
+          python - <<'PY'
+          import datetime, json
+          lease=json.load(open('state/production_leases/2026-10-19-brand7076410.json'))
+          req=json.load(open('production/carousel_20261019/request.json'))
+          assert lease['brand_id']==7076410 and lease['date']=='2026-10-19'
+          assert lease['status'] in {'ACTIVE_RENDER_ONLY','ACTIVE_RELEASE'}
+          assert datetime.datetime.now(datetime.timezone.utc)<datetime.datetime.fromisoformat(lease['expires_at'])
+          assert req['cost']=={'paid_charges_eur':0,'generation_credits_used':0,'new_credits_purchased':0}
+          assert len(req['posts'])==9
+          assert len({p['fingerprint'] for p in req['posts']})==9
+          PY
+      - name: Install free local rendering dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq ffmpeg fonts-dejavu-core
+          python -m pip install --no-cache-dir 'Pillow==11.3.0'
+      - name: Render from explicit Pexels selections only
+        run: |
+          python production/carousel_20261019/render.py
+      - name: Upload exact final media artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: carousel-20261019-final-media
+          path: media/carousel_20261019
+          if-no-files-found: error
+          retention-days: 7
+      - name: Store candidates without granting final review
+        run: |
+          git config user.name 'carousel-media-builder'
+          git config user.email 'actions@users.noreply.github.com'
+          git fetch origin main
+          git reset --soft origin/main
+          git add --sparse -f -A media/carousel_20261019
+          if ! git diff --cached --quiet -- media/carousel_20261019; then
+            git commit -m 'Store Oct19 free-photo carousel candidates; exact visual QA required [skip ci]'
+            git push origin HEAD:main
+          fi
+

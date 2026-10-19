@@ -1,0 +1,490 @@
+{
+  "date": "2026-10-19",
+  "brand_id": 7076410,
+  "timezone": "Europe/Athens",
+  "program": "CAROUSEL_FOUR_FOUR_ONE_20261016",
+  "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+  "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+  "source_license": "https://www.pexels.com/license/",
+  "cost": {
+    "paid_charges_eur": 0,
+    "generation_credits_used": 0,
+    "new_credits_purchased": 0
+  },
+  "sources": [
+    "https://ec.europa.eu/eurostat/en/web/products-eurostat-news/w/ddn-20251112-1",
+    "https://ec.europa.eu/eurostat/en/web/products-eurostat-news/w/ddn-20260610-3",
+    "https://ec.europa.eu/eurostat/web/interactive-publications/housing-2024",
+    "https://ec.europa.eu/eurostat/databrowser/view/prc_ppp_ind_1__custom_21943278/default/table",
+    "https://ec.europa.eu/eurostat/databrowser/view/demo_mlexpec/default/table",
+    "https://digital-strategy.ec.europa.eu/en/library/digital-decade-2025-country-reports"
+  ],
+  "posts": [
+    {
+      "id": "gemini_scorpio",
+      "time": "07:00",
+      "title": "Δίδυμος με ωροσκόπο Σκορπιό",
+      "series": "zodiac_ascendant",
+      "fingerprint": "zodiac_ascendant|gemini_scorpio|quick_mind_private_depth_clear_words",
+      "disclosure": "Ψυχαγωγική αστρολογία · Φωτογραφίες Pexels · Κείμενο AI",
+      "copy": [
+        "Μιλά γρήγορα, παρατηρεί σιωπηλά και κρατά πάντα μία σκέψη μόνο για τον εαυτό του. Δίδυμος με ωροσκόπο Σκορπιό.",
+        "Η πλευρά των Διδύμων συμβολίζει περιέργεια, ετοιμότητα και ανάγκη να βλέπει μια ιστορία από περισσότερες γωνίες.",
+        "Η πλευρά του Σκορπιού φέρνει ένταση, ιδιωτικότητα και επιθυμία να φτάνει κάτω από την επιφάνεια.",
+        "Το δίλημμα αυτού του πορτρέτου είναι να μη χρησιμοποιεί τις λέξεις ως απόσταση ούτε τη σιωπή ως δοκιμασία.",
+        "Η ισορροπία έρχεται όταν η περιέργεια γίνεται ειλικρινής ερώτηση και το βάθος γίνεται καθαρή εμπιστοσύνη.",
+        "Εσύ λες αμέσως όσα σκέφτεσαι ή περιμένεις μέχρι να νιώσεις απόλυτα ασφαλής;"
+      ],
+      "caption": "Γρήγορο μυαλό, βαθιά ένστικτα.\n\nΔίδυμος με ωροσκόπο Σκορπιό: έξι κάρτες για ένα συμβολικό πορτρέτο επικοινωνίας, ιδιωτικότητας και εμπιστοσύνης.\n\nΨυχαγωγική, συμβολική αστρολογία — όχι επιστημονική περιγραφή ή πρόβλεψη. Πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ζώδια #Δίδυμος #Σκορπιός #Ωροσκόπος #ΙστορίεςΠουΜαςΑγγίζουν",
+      "photos": [
+        [
+          "https://images.pexels.com/photos/29870955/pexels-photo-29870955.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/29870955/",
+          "Δύο ενήλικοι σε έντονη συζήτηση"
+        ],
+        [
+          "https://images.pexels.com/photos/31923318/pexels-photo-31923318.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/31923318/",
+          "Δύο φιγούρες σε αστικό μπαλκόνι"
+        ],
+        [
+          "https://images.pexels.com/photos/31416517/pexels-photo-31416517.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/31416517/",
+          "Σιλουέτα ζευγαριού τη νύχτα"
+        ],
+        [
+          "https://images.pexels.com/photos/31072295/pexels-photo-31072295.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/31072295/",
+          "Ζευγάρι σε βροχερό νυχτερινό δρόμο"
+        ],
+        [
+          "https://images.pexels.com/photos/3585044/pexels-photo-3585044.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/3585044/",
+          "Ενήλικοι συνομιλούν σε αστικό περιβάλλον"
+        ],
+        [
+          "https://images.pexels.com/photos/19841253/pexels-photo-19841253.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/19841253/",
+          "Δύο ενήλικοι περπατούν σε νυχτερινό δρόμο"
+        ]
+      ]
+    },
+    {
+      "id": "door_half_open",
+      "time": "09:00",
+      "title": "Η πόρτα που έμενε μισάνοιχτη",
+      "series": "emotional_fiction",
+      "fingerprint": "emotional_fiction|elderly_neighbor_half_open_door_daily_package_check_saves_delivery_worker",
+      "disclosure": "Πρωτότυπη μυθοπλασία · Φωτογραφίες Pexels · Κείμενο AI",
+      "copy": [
+        "Κάθε πρωί η κυρία Άννα άφηνε την πόρτα μισάνοιχτη ώσπου να περάσει ο διανομέας του τετάρτου.",
+        "Δεν περίμενε δέμα. Ήθελε μόνο να ακούει το ασανσέρ και να βεβαιώνεται ότι ο νεαρός δεν κουβαλούσε μόνος τα βαριά κουτιά.",
+        "Μια μέρα το ασανσέρ σταμάτησε, μα δεν ακούστηκε βήμα. Η Άννα βγήκε και τον βρήκε καθισμένο στο πλατύσκαλο, ζαλισμένο.",
+        "Κάλεσε βοήθεια, του έδωσε νερό και έμεινε μαζί του ώσπου ήρθε το ασθενοφόρο. Οι εξετάσεις έδειξαν εξάντληση.",
+        "Όταν επέστρεψε στη δουλειά, βρήκε στην πόρτα της ένα μικρό κουτί. Μέσα είχε ένα ξύλινο στοπ σε σχήμα καρδιάς.",
+        "«Για την πόρτα που δεν έκλεισε όταν τη χρειάστηκα», έγραφε. Από τότε, ο τέταρτος όροφος δεν ήταν απλώς άλλη μία παράδοση."
+      ],
+      "caption": "Η πόρτα έμενε μισάνοιχτη χωρίς να περιμένει κανένα δέμα.\n\n«Η πόρτα που έμενε μισάνοιχτη»: μια ολοκληρωμένη ιστορία έξι καρτών για μια ηλικιωμένη γειτόνισσα και μια μικρή καθημερινή προσοχή που έγινε βοήθεια την κατάλληλη στιγμή.\n\nΠρωτότυπη μυθοπλασία. Πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #Γειτονιά #Καλοσύνη #Φροντίδα #ΙστορίεςΠουΜαςΑγγίζουν",
+      "photos": [
+        [
+          "https://images.pexels.com/photos/16763010/pexels-photo-16763010.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/16763010/",
+          "Ηλικιωμένη γυναίκα σε ανοιχτή πόρτα"
+        ],
+        [
+          "https://images.pexels.com/photos/29372739/pexels-photo-29372739.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/29372739/",
+          "Ηλικιωμένη ανοίγει την πόρτα του σπιτιού"
+        ],
+        [
+          "https://images.pexels.com/photos/11489310/pexels-photo-11489310.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/11489310/",
+          "Χαμογελαστή ηλικιωμένη σε είσοδο σπιτιού"
+        ],
+        [
+          "https://images.pexels.com/photos/2028636/pexels-photo-2028636.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/2028636/",
+          "Ηλικιωμένη κάθεται δίπλα σε πόρτα"
+        ],
+        [
+          "https://images.pexels.com/photos/16572127/pexels-photo-16572127.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/16572127/",
+          "Ηλικιωμένη σε παραδοσιακή είσοδο"
+        ],
+        [
+          "https://images.pexels.com/photos/36645883/pexels-photo-36645883.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/36645883/",
+          "Ηλικιωμένη με γυαλιά σε πόρτα"
+        ]
+      ]
+    },
+    {
+      "id": "libra_taurus",
+      "time": "11:00",
+      "title": "Ζυγός με ωροσκόπο Ταύρο",
+      "series": "zodiac_ascendant",
+      "fingerprint": "zodiac_ascendant|libra_taurus|calm_beauty_steady_boundaries",
+      "disclosure": "Ψυχαγωγική αστρολογία · Φωτογραφίες Pexels · Κείμενο AI",
+      "copy": [
+        "Θέλει ειρήνη, αλλά όχι πρόχειρη· θέλει μια ομορφιά που να αντέχει και μετά τη δύσκολη συζήτηση. Ζυγός με ωροσκόπο Ταύρο.",
+        "Η πλευρά του Ζυγού συμβολίζει διάλογο, δικαιοσύνη και ανάγκη να ακούγονται όλες οι πλευρές.",
+        "Η πλευρά του Ταύρου φέρνει σταθερότητα, αισθητική και επιθυμία για ασφάλεια που φαίνεται στις πράξεις.",
+        "Το δίλημμα αυτού του πορτρέτου είναι να μην αναβάλλει μια αναγκαία απόφαση μόνο για να διατηρήσει την ηρεμία.",
+        "Η ισορροπία έρχεται όταν η ευγένεια αποκτά όρια και η επιμονή θυμάται ότι μια σχέση χρειάζεται δύο φωνές.",
+        "Εσύ κρατάς την ισορροπία με υποχώρηση ή με μια ήρεμη αλλά ξεκάθαρη θέση;"
+      ],
+      "caption": "Ηρεμία που δεν φοβάται τα όρια.\n\nΖυγός με ωροσκόπο Ταύρο: έξι κάρτες για ένα συμβολικό πορτρέτο αρμονίας, σταθερότητας και καθαρών αποφάσεων.\n\nΨυχαγωγική, συμβολική αστρολογία — όχι επιστημονική περιγραφή ή πρόβλεψη. Πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ζώδια #Ζυγός #Ταύρος #Ωροσκόπος #ΙστορίεςΠουΜαςΑγγίζουν",
+      "photos": [
+        [
+          "https://images.pexels.com/photos/12148522/pexels-photo-12148522.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/12148522/",
+          "Ισορροπημένες πέτρες σε ανθισμένο κήπο"
+        ],
+        [
+          "https://images.pexels.com/photos/3561063/pexels-photo-3561063.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/3561063/",
+          "Στοίβα ισορροπημένων πετρών"
+        ],
+        [
+          "https://images.pexels.com/photos/36993625/pexels-photo-36993625.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/36993625/",
+          "Ισορροπημένες πέτρες δίπλα σε ποτάμι"
+        ],
+        [
+          "https://images.pexels.com/photos/28559602/pexels-photo-28559602.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/28559602/",
+          "Πέτρινο γλυπτό ισορροπίας"
+        ],
+        [
+          "https://images.pexels.com/photos/1080471/pexels-photo-1080471.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/1080471/",
+          "Ισορροπημένες πέτρες σε πράσινο δάσος"
+        ],
+        [
+          "https://images.pexels.com/photos/6318392/pexels-photo-6318392.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/6318392/",
+          "Πολλαπλές στοίβες πετρών στο σούρουπο"
+        ]
+      ]
+    },
+    {
+      "id": "wallet_bus_stop",
+      "time": "13:00",
+      "title": "Το πορτοφόλι στη στάση",
+      "series": "emotional_fiction",
+      "fingerprint": "emotional_fiction|lost_wallet_bus_stop_notes_owner_returns_kindness_to_unemployed_woman",
+      "disclosure": "Πρωτότυπη μυθοπλασία · Φωτογραφίες Pexels · Κείμενο AI",
+      "copy": [
+        "Η Μαρίνα βρήκε ένα γεμάτο πορτοφόλι στη στάση τη μέρα που δεν είχε ούτε εισιτήριο για να γυρίσει σπίτι.",
+        "Μέσα υπήρχαν χρήματα, κάρτες και ένα χαρτάκι: «Για τα φάρμακα του μπαμπά». Δεν κράτησε ούτε ένα κέρμα.",
+        "Περίμενε δύο λεωφορεία ώσπου ένας άντρας επέστρεψε τρέχοντας και κοιτούσε πανικόβλητος κάτω από τα καθίσματα.",
+        "Του έδωσε το πορτοφόλι. Εκείνος προσπάθησε να την ανταμείψει, μα η Μαρίνα ζήτησε μόνο να πληρώσει το εισιτήριό της.",
+        "Μία εβδομάδα αργότερα την αναγνώρισε στο ίδιο σημείο. Εργαζόταν σε εταιρεία μεταφορών και της είπε ότι ζητούσαν υπάλληλο γραφείου.",
+        "Η Μαρίνα πήρε τη δουλειά μετά τη συνέντευξη. Δεν ανταμείφθηκε επειδή βρήκε χρήματα, αλλά επειδή έδειξε ποια ήταν όταν τα χρειαζόταν."
+      ],
+      "caption": "Βρήκε ένα γεμάτο πορτοφόλι τη μέρα που δεν είχε ούτε εισιτήριο.\n\n«Το πορτοφόλι στη στάση»: μια ολοκληρωμένη ιστορία έξι καρτών για την εντιμότητα που φαίνεται όταν κανείς δεν κοιτάζει.\n\nΠρωτότυπη μυθοπλασία. Πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #Εντιμότητα #Στάση #Ελπίδα #ΙστορίεςΠουΜαςΑγγίζουν",
+      "photos": [
+        [
+          "https://images.pexels.com/photos/5822210/pexels-photo-5822210.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/5822210/",
+          "Ανώνυμοι ενήλικοι σε αστική στάση"
+        ],
+        [
+          "https://images.pexels.com/photos/32532821/pexels-photo-32532821.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/32532821/",
+          "Ενήλικοι περιμένουν σε εξωτερική στάση"
+        ],
+        [
+          "https://images.pexels.com/photos/18262971/pexels-photo-18262971.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/18262971/",
+          "Ζευγάρι ελέγχει δρομολόγιο λεωφορείου"
+        ],
+        [
+          "https://images.pexels.com/photos/12133976/pexels-photo-12133976.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/12133976/",
+          "Ομάδα ενηλίκων περιμένει λεωφορείο"
+        ],
+        [
+          "https://images.pexels.com/photos/10104202/pexels-photo-10104202.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/10104202/",
+          "Μοναχικός ενήλικος σε ομιχλώδη στάση"
+        ],
+        [
+          "https://images.pexels.com/photos/10445861/pexels-photo-10445861.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/10445861/",
+          "Ενήλικος περιμένει μόνος σε νυχτερινή στάση"
+        ]
+      ]
+    },
+    {
+      "id": "sagittarius_aquarius",
+      "time": "15:00",
+      "title": "Τοξότης με ωροσκόπο Υδροχόο",
+      "series": "zodiac_ascendant",
+      "fingerprint": "zodiac_ascendant|sagittarius_aquarius|wide_horizon_independent_ideas",
+      "disclosure": "Ψυχαγωγική αστρολογία · Φωτογραφίες Pexels · Κείμενο AI",
+      "copy": [
+        "Κοιτά τον ορίζοντα και σκέφτεται όχι μόνο πού θα πάει, αλλά πώς θα μπορούσε να αλλάξει ο δρόμος. Τοξότης με ωροσκόπο Υδροχόο.",
+        "Η πλευρά του Τοξότη συμβολίζει εξερεύνηση, αισιοδοξία και ανάγκη για νόημα πέρα από τα γνώριμα όρια.",
+        "Η πλευρά του Υδροχόου φέρνει ανεξαρτησία, πρωτότυπες ιδέες και ενδιαφέρον για ό,τι μπορεί να ωφελήσει περισσότερους.",
+        "Το δίλημμα αυτού του πορτρέτου είναι να μην αγαπά τόσο το καινούργιο ώστε να ξεχνά όσους χρειάζονται χρόνο να ακολουθήσουν.",
+        "Η ισορροπία έρχεται όταν το μεγάλο όραμα αποκτά μικρά βήματα και η ελευθερία σέβεται τις συνέπειές της.",
+        "Εσύ ενθουσιάζεσαι περισσότερο με έναν νέο προορισμό ή με μια ιδέα που αλλάζει τον τρόπο που ταξιδεύουμε;"
+      ],
+      "caption": "Μεγάλος ορίζοντας, ανεξάρτητες ιδέες.\n\nΤοξότης με ωροσκόπο Υδροχόο: έξι κάρτες για ένα συμβολικό πορτρέτο εξερεύνησης, ελευθερίας και χρήσιμης αλλαγής.\n\nΨυχαγωγική, συμβολική αστρολογία — όχι επιστημονική περιγραφή ή πρόβλεψη. Πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ζώδια #Τοξότης #Υδροχόος #Ωροσκόπος #ΙστορίεςΠουΜαςΑγγίζουν",
+      "photos": [
+        [
+          "https://images.pexels.com/photos/3279307/pexels-photo-3279307.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/3279307/",
+          "Αστερισμός στον νυχτερινό ουρανό"
+        ],
+        [
+          "https://images.pexels.com/photos/1323321/pexels-photo-1323321.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/1323321/",
+          "Γαλαξίας και έναστρος ουρανός"
+        ],
+        [
+          "https://images.pexels.com/photos/11364119/pexels-photo-11364119.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/11364119/",
+          "Λαμπερό σμήνος γαλαξία"
+        ],
+        [
+          "https://images.pexels.com/photos/4254548/pexels-photo-4254548.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/4254548/",
+          "Φωτεινός Γαλαξίας τη νύχτα"
+        ],
+        [
+          "https://images.pexels.com/photos/4367584/pexels-photo-4367584.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/4367584/",
+          "Έντονη αστροφωτογραφία Γαλαξία"
+        ],
+        [
+          "https://images.pexels.com/photos/7925847/pexels-photo-7925847.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/7925847/",
+          "Σπειροειδής γαλαξίας στον ουρανό"
+        ]
+      ]
+    },
+    {
+      "id": "bread_on_sill",
+      "time": "17:00",
+      "title": "Το ψωμί που περίμενε στο περβάζι",
+      "series": "emotional_fiction",
+      "fingerprint": "emotional_fiction|widowed_baker_leaves_loaf_on_sill_for_homeless_regular_final_note_opens_table",
+      "disclosure": "Πρωτότυπη μυθοπλασία · Φωτογραφίες Pexels · Κείμενο AI",
+      "copy": [
+        "Κάθε βράδυ ο φούρναρης άφηνε ένα ζεστό καρβέλι στο περβάζι, δεμένο με λευκό σπάγκο.",
+        "Δεν έγραφε όνομα. Ήξερε ότι ένας άστεγος άντρας περνούσε μετά το κλείσιμο και ντρεπόταν να ζητήσει βοήθεια.",
+        "Για μήνες το καρβέλι εξαφανιζόταν πριν τα μεσάνυχτα. Ώσπου ένα πρωί έμεινε άθικτο και δίπλα του βρέθηκε ένα διπλωμένο χαρτί.",
+        "«Βρήκα δουλειά και δωμάτιο. Απόψε άφησέ το για κάποιον άλλον», έγραφε. Μέσα υπήρχε το πρώτο του ημερομίσθιο.",
+        "Ο φούρναρης δεν πήρε τα χρήματα. Αγόρασε δύο καρέκλες και έβαλε ένα μικρό τραπέζι έξω από το μαγαζί.",
+        "Την επόμενη νύχτα άφησε δύο καρβέλια και μια πινακίδα: «Κάθισε. Εδώ κανείς δεν χρειάζεται να ντρέπεται που πεινά»."
+      ],
+      "caption": "Κάθε βράδυ ένα ζεστό καρβέλι περίμενε χωρίς όνομα.\n\n«Το ψωμί που περίμενε στο περβάζι»: μια ολοκληρωμένη ιστορία έξι καρτών για μια διακριτική βοήθεια που έγινε ανοιχτή θέση για όποιον τη χρειαζόταν.\n\nΠρωτότυπη μυθοπλασία. Πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #Φούρνος #Αλληλεγγύη #Αξιοπρέπεια #ΙστορίεςΠουΜαςΑγγίζουν",
+      "photos": [
+        [
+          "https://images.pexels.com/photos/34699447/pexels-photo-34699447.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/34699447/",
+          "Ηλικιωμένος αρτοποιός με φρέσκα ψωμιά"
+        ],
+        [
+          "https://images.pexels.com/photos/31345893/pexels-photo-31345893.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/31345893/",
+          "Ηλικιωμένος αγοράζει ψωμί από μικρό φούρνο"
+        ],
+        [
+          "https://images.pexels.com/photos/35425736/pexels-photo-35425736.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/35425736/",
+          "Αρτοποιός εργάζεται σε παραδοσιακό φούρνο"
+        ],
+        [
+          "https://images.pexels.com/photos/10721131/pexels-photo-10721131.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/10721131/",
+          "Ηλικιωμένος κάθεται μέσα σε φούρνο"
+        ],
+        [
+          "https://images.pexels.com/photos/36698476/pexels-photo-36698476.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/36698476/",
+          "Ηλικιωμένος κοιτά βιτρίνα αρτοποιείου"
+        ],
+        [
+          "https://images.pexels.com/photos/36771365/pexels-photo-36771365.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/36771365/",
+          "Πάγκος αρτοποιείου με ψωμιά και γλυκά"
+        ]
+      ]
+    },
+    {
+      "id": "greece_spain",
+      "time": "18:30",
+      "title": "Ελλάδα vs Ισπανία",
+      "series": "greece_vs_country",
+      "fingerprint": "greece_vs_country|spain|2024_2025_comparable_eurostat_salary_jobs_housing_prices_health_services",
+      "disclosure": "Στοιχεία Eurostat/ΕΕ · Εικόνες AI από διαθέσιμο πακέτο · Κείμενο AI",
+      "copy": [
+        "ΕΛΛΑΔΑ vs ΙΣΠΑΝΙΑ\nΜισθοί, εργασία, στέγαση, τιμές, υγεία και καθημερινότητα — με κοινά ευρωπαϊκά σύνολα δεδομένων.",
+        "ΜΙΚΤΟΣ ΕΤΗΣΙΟΣ ΜΙΣΘΟΣ 2024\nΕλλάδα: 18.000 €\nΙσπανία: 33.700 €\nΜέσος πλήρους απασχόλησης· όχι καθαρά.",
+        "ΑΝΕΡΓΙΑ 2025\nΕλλάδα: 8,9%\nΙσπανία: 10,5%\nΕτήσιος μέσος όρος, ηλικίες 15–74.",
+        "ΚΟΣΤΟΣ ΣΤΕΓΑΣΗΣ 2024\nΠάνω από 40% του διαθέσιμου εισοδήματος:\nΕλλάδα 28,9% · Ισπανία 7,8%.",
+        "ΕΠΙΠΕΔΟ ΤΙΜΩΝ 2024\nΚατανάλωση νοικοκυριών, ΕΕ=100:\nΕλλάδα 81,2 · Ισπανία 89,8.",
+        "ΥΓΕΙΑ 2023\nΠροσδόκιμο ζωής κατά τη γέννηση:\nΕλλάδα 81,6 έτη · Ισπανία 84,0.",
+        "ΠΑΙΔΕΙΑ\nΣύγκρινε πρόσβαση, κόστος, πεδίο σπουδών και περιοχή — όχι μόνο έναν εθνικό μέσο όρο.",
+        "ΜΕΤΑΚΙΝΗΣΕΙΣ\nΗ εμπειρία αλλάζει ανά πόλη και νησί. Έλεγξε συχνότητα, κάλυψη και πραγματική διαδρομή κατοικίας–εργασίας.",
+        "ΔΗΜΟΣΙΕΣ ΥΠΗΡΕΣΙΕΣ\nΟι εκθέσεις Ψηφιακής Δεκαετίας 2025 δείχνουν πρόοδο και διαφορετικά κενά. Η προσωπική ανάγκη μετρά.",
+        "ΤΙ ΝΑ ΖΥΓΙΣΕΙΣ;\nΜικτά ≠ καθαρά. Τιμές ≠ αγοραστική δύναμη. Σύγκρινε πόλη, ενοίκιο, φόρους και πρόσβαση πριν αποφασίσεις."
+      ],
+      "caption": "Ελλάδα ή Ισπανία; Η απάντηση δεν χωρά σε έναν μισθό.\n\nΣύγκριση με κοινά ευρωπαϊκά σύνολα: μέσος μικτός ετήσιος μισθός πλήρους απασχόλησης (2024), ανεργία 15–74 (2025), στεγαστική επιβάρυνση πάνω από 40% διαθέσιμου εισοδήματος (2024), επίπεδο τιμών κατανάλωσης με ΕΕ=100 (2024) και προσδόκιμο ζωής (2023).\n\nΠηγές: Eurostat nama_10_fte, une_rt_a, ilc_lvho07a/tespm140, prc_ppp_ind_1, demo_mlexpec· Ευρωπαϊκή Επιτροπή Digital Decade 2025 για Ελλάδα και Ισπανία. Οι μέσοι όροι δεν περιγράφουν κάθε πόλη ή νοικοκυριό.\n\nΟι εικόνες προέρχονται από διαθέσιμο πακέτο με χρήση AI· τα αριθμητικά στοιχεία από τις παραπάνω επίσημες πηγές.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ελλάδα #Ισπανία #ΚόστοςΖωής #Eurostat #ΙστορίεςΠουΜαςΑγγίζουν",
+      "photos": [
+        [
+          "repo://production/carousel_20261019/comparison_sources/01.jpg",
+          "https://ec.europa.eu/eurostat/",
+          "Σκηνή σύγκρισης Ελλάδας και Ισπανίας 1"
+        ],
+        [
+          "repo://production/carousel_20261019/comparison_sources/02.jpg",
+          "https://ec.europa.eu/eurostat/",
+          "Σκηνή σύγκρισης Ελλάδας και Ισπανίας 2"
+        ],
+        [
+          "repo://production/carousel_20261019/comparison_sources/03.jpg",
+          "https://ec.europa.eu/eurostat/",
+          "Σκηνή σύγκρισης Ελλάδας και Ισπανίας 3"
+        ],
+        [
+          "repo://production/carousel_20261019/comparison_sources/04.jpg",
+          "https://ec.europa.eu/eurostat/",
+          "Σκηνή σύγκρισης Ελλάδας και Ισπανίας 4"
+        ],
+        [
+          "repo://production/carousel_20261019/comparison_sources/05.jpg",
+          "https://ec.europa.eu/eurostat/",
+          "Σκηνή σύγκρισης Ελλάδας και Ισπανίας 5"
+        ],
+        [
+          "repo://production/carousel_20261019/comparison_sources/06.jpg",
+          "https://ec.europa.eu/eurostat/",
+          "Σκηνή σύγκρισης Ελλάδας και Ισπανίας 6"
+        ],
+        [
+          "repo://production/carousel_20261019/comparison_sources/07.jpg",
+          "https://ec.europa.eu/eurostat/",
+          "Σκηνή σύγκρισης Ελλάδας και Ισπανίας 7"
+        ],
+        [
+          "repo://production/carousel_20261019/comparison_sources/08.jpg",
+          "https://ec.europa.eu/eurostat/",
+          "Σκηνή σύγκρισης Ελλάδας και Ισπανίας 8"
+        ],
+        [
+          "repo://production/carousel_20261019/comparison_sources/09.jpg",
+          "https://ec.europa.eu/eurostat/",
+          "Σκηνή σύγκρισης Ελλάδας και Ισπανίας 9"
+        ],
+        [
+          "repo://production/carousel_20261019/comparison_sources/10.jpg",
+          "https://ec.europa.eu/eurostat/",
+          "Σκηνή σύγκρισης Ελλάδας και Ισπανίας 10"
+        ]
+      ]
+    },
+    {
+      "id": "aries_capricorn",
+      "time": "20:00",
+      "title": "Κριός με ωροσκόπο Αιγόκερω",
+      "series": "zodiac_ascendant",
+      "fingerprint": "zodiac_ascendant|aries_capricorn|bold_start_patient_climb",
+      "disclosure": "Ψυχαγωγική αστρολογία · Φωτογραφίες Pexels · Κείμενο AI",
+      "copy": [
+        "Ξεκινά πριν οι άλλοι αποφασίσουν, αλλά μέσα του μετρά ήδη πόσο ψηλά μπορεί να φτάσει. Κριός με ωροσκόπο Αιγόκερω.",
+        "Η πλευρά του Κριού συμβολίζει θάρρος, πρωτοβουλία και την ανάγκη να δοκιμάζει άμεσα τη δύναμή του.",
+        "Η πλευρά του Αιγόκερου φέρνει πειθαρχία, φιλοδοξία και υπομονή για μια κορυφή που κερδίζεται βήμα βήμα.",
+        "Το δίλημμα αυτού του πορτρέτου είναι να μην μπερδεύει την ταχύτητα με την πρόοδο ούτε τον έλεγχο με την ασφάλεια.",
+        "Η ισορροπία έρχεται όταν η πρώτη σπίθα αποκτά σχέδιο και το μακρινό σχέδιο αφήνει χώρο σε μια γενναία αρχή.",
+        "Εσύ ξεκινάς με ορμή και οργανώνεσαι μετά ή περιμένεις ώσπου να έχεις χαρτογραφήσει όλη τη διαδρομή;"
+      ],
+      "caption": "Τολμηρή αρχή, υπομονετική ανάβαση.\n\nΚριός με ωροσκόπο Αιγόκερω: έξι κάρτες για ένα συμβολικό πορτρέτο πρωτοβουλίας, πειθαρχίας και στόχου.\n\nΨυχαγωγική, συμβολική αστρολογία — όχι επιστημονική περιγραφή ή πρόβλεψη. Πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ζώδια #Κριός #Αιγόκερως #Ωροσκόπος #ΙστορίεςΠουΜαςΑγγίζουν",
+      "photos": [
+        [
+          "https://images.pexels.com/photos/35113096/pexels-photo-35113096.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/35113096/",
+          "Ορεινό μονοπάτι στην ανατολή"
+        ],
+        [
+          "https://images.pexels.com/photos/38912563/pexels-photo-38912563.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/38912563/",
+          "Μονοπάτι στους Δολομίτες την αυγή"
+        ],
+        [
+          "https://images.pexels.com/photos/34030927/pexels-photo-34030927.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/34030927/",
+          "Ήρεμο μονοπάτι βουνού με πρωινό φως"
+        ],
+        [
+          "https://images.pexels.com/photos/38850583/pexels-photo-38850583.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/38850583/",
+          "Μονοπάτι σε ορεινή κοιλάδα"
+        ],
+        [
+          "https://images.pexels.com/photos/36799774/pexels-photo-36799774.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/36799774/",
+          "Χιονισμένο μονοπάτι στην ανατολή"
+        ],
+        [
+          "https://images.pexels.com/photos/30769221/pexels-photo-30769221.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/30769221/",
+          "Ενήλικος σε κορυφή βουνού την αυγή"
+        ]
+      ]
+    },
+    {
+      "id": "father_recipe",
+      "time": "22:00",
+      "title": "Η συνταγή του πατέρα",
+      "series": "emotional_fiction",
+      "fingerprint": "emotional_fiction|adult_daughter_finds_fathers_blank_recipe_cards_daily_memories_after_memory_loss",
+      "disclosure": "Πρωτότυπη μυθοπλασία · Φωτογραφίες Pexels · Κείμενο AI",
+      "copy": [
+        "Όταν ο πατέρας της άρχισε να ξεχνά, η Λένα βρήκε στην κουζίνα ένα κουτί γεμάτο λευκές κάρτες συνταγών.",
+        "Πίστεψε πως δεν είχε προλάβει να τις γράψει. Στην τελευταία, όμως, υπήρχε μία φράση: «Για όταν οι λέξεις δεν θα έρχονται».",
+        "Κάθε κάρτα είχε μόνο ένα άρωμα: κανέλα, λεμόνι, καφές, ψωμί. Η Λένα κατάλαβε ότι ήταν σημάδια για κοινές αναμνήσεις.",
+        "Άρχισε να μαγειρεύει μία γεύση την εβδομάδα. Ο πατέρας της δεν θυμόταν πάντα το όνομα, μα χαμογελούσε πριν δοκιμάσει.",
+        "Μια Κυριακή εκείνος πήρε μόνος του την κάρτα με το λεμόνι και είπε: «Αυτό το έφτιαχνες όταν φοβόσουν τις εξετάσεις».",
+        "Η Λένα δεν διόρθωσε τίποτα. Έγραψε στο πίσω μέρος: «Σήμερα με θυμήθηκες μέσα από τη γεύση». Η συνταγή είχε επιτέλους ολοκληρωθεί."
+      ],
+      "caption": "Οι κάρτες συνταγών ήταν λευκές — αλλά δεν ήταν άδειες.\n\n«Η συνταγή του πατέρα»: μια ολοκληρωμένη ιστορία έξι καρτών για μια κόρη, έναν πατέρα και τις αναμνήσεις που μερικές φορές επιστρέφουν μέσα από μια γνώριμη γεύση.\n\nΠρωτότυπη μυθοπλασία. Πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #Πατέρας #Μνήμη #Οικογένεια #ΙστορίεςΠουΜαςΑγγίζουν",
+      "photos": [
+        [
+          "https://images.pexels.com/photos/7551665/pexels-photo-7551665.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/7551665/",
+          "Ηλικιωμένος πατέρας με ενήλικη κόρη στο σαλόνι"
+        ],
+        [
+          "https://images.pexels.com/photos/7551684/pexels-photo-7551684.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/7551684/",
+          "Ενήλικη κόρη φροντίζει τον ηλικιωμένο πατέρα"
+        ],
+        [
+          "https://images.pexels.com/photos/7551671/pexels-photo-7551671.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/7551671/",
+          "Πατέρας και ενήλικη κόρη κάθονται μαζί"
+        ],
+        [
+          "https://images.pexels.com/photos/10284578/pexels-photo-10284578.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/10284578/",
+          "Ηλικιωμένος πατέρας και ενήλικη κόρη συζητούν"
+        ],
+        [
+          "https://images.pexels.com/photos/8899983/pexels-photo-8899983.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/8899983/",
+          "Ηλικιωμένος άντρας και ενήλικη γυναίκα παίζουν κάρτες"
+        ],
+        [
+          "https://images.pexels.com/photos/8507641/pexels-photo-8507641.jpeg?auto=compress&cs=tinysrgb&w=1600",
+          "https://www.pexels.com/photo/8507641/",
+          "Πατέρας και ενήλικος γιος μαγειρεύουν μαζί"
+        ]
+      ]
+    }
+  ]
+}
+
