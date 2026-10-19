@@ -176,6 +176,7 @@ def main():
         card_rows = []
         global_sources += [f"## {post['title']}", ""]
         for index, (url, page, alt) in enumerate(post["photos"]):
+            print(f"DOWNLOADING {post['id']} {index + 1}/{len(post['photos'])} {url}", flush=True)
             source_path = source_dir / f"source_{index + 1:02d}.jpg"
             photo = download(url, source_path)
             source_hash = sha(source_path)
