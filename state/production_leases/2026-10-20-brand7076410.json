@@ -207,6 +207,41 @@
         "https://static.metricool.com/planner/202610/7000636-file-8059696932036873353.mp4"
       ],
       "readback_at": "2026-10-20T06:12:00+03:00"
+    },
+    {
+      "package_id": "wallet_bus_stop",
+      "route": "native",
+      "id": 400685656,
+      "uuid": "-641422619329542881",
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "13:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-12260513864307345128.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-8877177972012412957.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-3892707156234116220.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-1741723468675303343.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-18131040685130208150.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-2964297716490429307.jpeg"
+      ],
+      "readback_at": "2026-10-20T06:15:00+03:00"
     }
   ]
 }
