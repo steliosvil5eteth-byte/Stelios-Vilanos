@@ -46,5 +46,38 @@
     "notion_write": true
   },
   "qa_record": "state/daily_delivery/carousel_20261020_final_review.json",
-  "provider_writes": []
+  "provider_writes": [
+    {
+      "package_id": "gemini_scorpio",
+      "route": "native",
+      "id": 400683348,
+      "uuid": "1382456779518136305",
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING"
+        }
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "07:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-13516203696898825131.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-6682186238642356463.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-10856055880682146565.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-11932330589816178184.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-16166244587484738479.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-9563812591796012423.jpeg"
+      ],
+      "readback_at": "2026-10-20T06:07:00+03:00"
+    }
+  ]
 }
