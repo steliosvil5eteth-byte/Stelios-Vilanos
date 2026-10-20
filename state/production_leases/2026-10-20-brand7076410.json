@@ -187,6 +187,26 @@
         "https://static.metricool.com/planner/202610/7000636-file-9132650405746335448.jpeg"
       ],
       "readback_at": "2026-10-20T06:12:00+03:00"
+    },
+    {
+      "package_id": "libra_taurus",
+      "route": "youtube",
+      "id": 400685168,
+      "uuid": "-2894048799641942596",
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "11:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-8059696932036873353.mp4"
+      ],
+      "readback_at": "2026-10-20T06:12:00+03:00"
     }
   ]
 }
