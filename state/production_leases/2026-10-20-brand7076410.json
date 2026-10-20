@@ -97,6 +97,41 @@
         "https://static.metricool.com/planner/202610/7000636-file-2292965136586622998.mp4"
       ],
       "readback_at": "2026-10-20T06:08:00+03:00"
+    },
+    {
+      "package_id": "door_half_open",
+      "route": "native",
+      "id": 400684714,
+      "uuid": "6995121149145205337",
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "09:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-6140988430638408295.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-17105367371091480670.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-11812438305268984502.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-14869384441298728821.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-8515567309461425972.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-14616791143154126279.jpeg"
+      ],
+      "readback_at": "2026-10-20T06:12:00+03:00"
     }
   ]
 }
