@@ -1,0 +1,810 @@
+{
+  "schema_version": "1.0",
+  "brand_id": 7076410,
+  "brand_name": "Ιστορίες που μας αγγίζουν",
+  "date": "2026-10-20",
+  "timezone": "Europe/Athens",
+  "program": "CAROUSEL_FOUR_FOUR_ONE_20261016",
+  "status": "COMPLETED_SCHEDULED_PENDING",
+  "logical_posts": 9,
+  "metricool_records": 18,
+  "destinations": 36,
+  "provider_counts": {
+    "facebook": 9,
+    "instagram": 9,
+    "tiktok": 9,
+    "youtube": 9
+  },
+  "provider_status_counts": {
+    "PENDING": 36,
+    "PUBLISHED": 0,
+    "FAILED": 0,
+    "BLOCKED": 0
+  },
+  "published_note": "PENDING is not Published.",
+  "qa_record": "state/daily_delivery/carousel_20261020_final_review.json",
+  "lease": "state/production_leases/2026-10-20-brand7076410.json",
+  "source_candidate_manifest": "media/carousel_20261019/manifest.json",
+  "source_candidate_reuse_reason": "UNPUBLISHED_CANDIDATE_REASSIGNED_AFTER_FRESH_DEDUPE",
+  "notion_pages": [
+    "3fff2345-b318-819e-94a4-f1911c0700a4",
+    "3fff2345-b318-819c-85d4-f68fd499525d",
+    "3fff2345-b318-8152-9e55-eb2cb7522d7b",
+    "3fff2345-b318-8189-98cb-e131ec345705",
+    "3fff2345-b318-8155-8d3a-cf4bb74b4ad9",
+    "3fff2345-b318-81cc-9ccc-eca0fa91fda3",
+    "3fff2345-b318-8128-afa4-f51786c9961a",
+    "3fff2345-b318-813b-9838-c523657b42a1",
+    "3fff2345-b318-8119-b618-d4b8a18dc449"
+  ],
+  "records": [
+    {
+      "id": 400683348,
+      "uuid": "1382456779518136305",
+      "publicationDate": {
+        "dateTime": "2026-10-20T07:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-13516203696898825131.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-6682186238642356463.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-10856055880682146565.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-11932330589816178184.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-16166244587484738479.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-9563812591796012423.jpeg"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "instagramData": {
+        "autoPublish": true,
+        "type": "POST",
+        "showReelOnFeed": true,
+        "isAiGenerated": false
+      },
+      "tiktokData": {
+        "privacyOption": "PUBLIC_TO_EVERYONE",
+        "title": "Δίδυμος με ωροσκόπο Σκορπιό",
+        "autoAddMusic": true,
+        "photoCoverIndex": 0,
+        "isAigc": true
+      },
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=1382456779518136305"
+    },
+    {
+      "id": 400683671,
+      "uuid": "6108162465827472289",
+      "publicationDate": {
+        "dateTime": "2026-10-20T07:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-2292965136586622998.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "instagramData": {
+        "autoPublish": true,
+        "isAiGenerated": false
+      },
+      "youtubeData": {
+        "title": "Δίδυμος με ωροσκόπο Σκορπιό",
+        "type": "short",
+        "privacy": "public",
+        "category": "ENTERTAINMENT",
+        "madeForKids": false,
+        "isAiGeneratedContent": false,
+        "notifySubscribers": true
+      },
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=6108162465827472289"
+    },
+    {
+      "id": 400684714,
+      "uuid": "6995121149145205337",
+      "publicationDate": {
+        "dateTime": "2026-10-20T09:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-6140988430638408295.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-17105367371091480670.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-11812438305268984502.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-14869384441298728821.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-8515567309461425972.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-14616791143154126279.jpeg"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "instagramData": {
+        "autoPublish": true,
+        "type": "POST",
+        "showReelOnFeed": true,
+        "isAiGenerated": false
+      },
+      "tiktokData": {
+        "privacyOption": "PUBLIC_TO_EVERYONE",
+        "title": "Η πόρτα που έμενε μισάνοιχτη",
+        "autoAddMusic": true,
+        "photoCoverIndex": 0,
+        "isAigc": true
+      },
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=6995121149145205337"
+    },
+    {
+      "id": 400684833,
+      "uuid": "1127147855523368131",
+      "publicationDate": {
+        "dateTime": "2026-10-20T09:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-14215166274998909537.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "instagramData": {
+        "autoPublish": true,
+        "isAiGenerated": false
+      },
+      "youtubeData": {
+        "title": "Η πόρτα που έμενε μισάνοιχτη",
+        "type": "short",
+        "privacy": "public",
+        "category": "ENTERTAINMENT",
+        "madeForKids": false,
+        "isAiGeneratedContent": false,
+        "notifySubscribers": true
+      },
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=1127147855523368131"
+    },
+    {
+      "id": 400685065,
+      "uuid": "-7083858245573261039",
+      "publicationDate": {
+        "dateTime": "2026-10-20T11:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-7707484110841321270.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-437910487262043558.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-2259258282618994147.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-10160191606534526857.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-12127624038444642154.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-9132650405746335448.jpeg"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "instagramData": {
+        "autoPublish": true,
+        "type": "POST",
+        "showReelOnFeed": true,
+        "isAiGenerated": false
+      },
+      "tiktokData": {
+        "privacyOption": "PUBLIC_TO_EVERYONE",
+        "title": "Ζυγός με ωροσκόπο Ταύρο",
+        "autoAddMusic": true,
+        "photoCoverIndex": 0,
+        "isAigc": true
+      },
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-7083858245573261039"
+    },
+    {
+      "id": 400685168,
+      "uuid": "-2894048799641942596",
+      "publicationDate": {
+        "dateTime": "2026-10-20T11:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-8059696932036873353.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "instagramData": {
+        "autoPublish": true,
+        "isAiGenerated": false
+      },
+      "youtubeData": {
+        "title": "Ζυγός με ωροσκόπο Ταύρο",
+        "type": "short",
+        "privacy": "public",
+        "category": "ENTERTAINMENT",
+        "madeForKids": false,
+        "isAiGeneratedContent": false,
+        "notifySubscribers": true
+      },
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-2894048799641942596"
+    },
+    {
+      "id": 400685656,
+      "uuid": "-641422619329542881",
+      "publicationDate": {
+        "dateTime": "2026-10-20T13:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-12260513864307345128.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-8877177972012412957.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-3892707156234116220.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-1741723468675303343.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-18131040685130208150.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-2964297716490429307.jpeg"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "instagramData": {
+        "autoPublish": true,
+        "type": "POST",
+        "showReelOnFeed": true,
+        "isAiGenerated": false
+      },
+      "tiktokData": {
+        "privacyOption": "PUBLIC_TO_EVERYONE",
+        "title": "Το πορτοφόλι στη στάση",
+        "autoAddMusic": true,
+        "photoCoverIndex": 0,
+        "isAigc": true
+      },
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-641422619329542881"
+    },
+    {
+      "id": 400685756,
+      "uuid": "-3549397234863027329",
+      "publicationDate": {
+        "dateTime": "2026-10-20T13:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-3311737607521340306.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "instagramData": {
+        "autoPublish": true,
+        "isAiGenerated": false
+      },
+      "youtubeData": {
+        "title": "Το πορτοφόλι στη στάση",
+        "type": "short",
+        "privacy": "public",
+        "category": "ENTERTAINMENT",
+        "madeForKids": false,
+        "isAiGeneratedContent": false,
+        "notifySubscribers": true
+      },
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-3549397234863027329"
+    },
+    {
+      "id": 400686519,
+      "uuid": "1981373547679729001",
+      "publicationDate": {
+        "dateTime": "2026-10-20T15:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-2923719885410188812.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-14111527907572146760.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-11662019402687413352.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-6556942383029154268.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-2714813357893191183.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-2872653671034570786.jpeg"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "instagramData": {
+        "autoPublish": true,
+        "type": "POST",
+        "showReelOnFeed": true,
+        "isAiGenerated": false
+      },
+      "tiktokData": {
+        "privacyOption": "PUBLIC_TO_EVERYONE",
+        "title": "Τοξότης με ωροσκόπο Υδροχόο",
+        "autoAddMusic": true,
+        "photoCoverIndex": 0,
+        "isAigc": true
+      },
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=1981373547679729001"
+    },
+    {
+      "id": 400686609,
+      "uuid": "-7652638830526446591",
+      "publicationDate": {
+        "dateTime": "2026-10-20T15:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-689495486266301474.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "instagramData": {
+        "autoPublish": true,
+        "isAiGenerated": false
+      },
+      "youtubeData": {
+        "title": "Τοξότης με ωροσκόπο Υδροχόο",
+        "type": "short",
+        "privacy": "public",
+        "category": "ENTERTAINMENT",
+        "madeForKids": false,
+        "isAiGeneratedContent": false,
+        "notifySubscribers": true
+      },
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-7652638830526446591"
+    },
+    {
+      "id": 400687051,
+      "uuid": "-6122830041976323171",
+      "publicationDate": {
+        "dateTime": "2026-10-20T17:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-1056921711061395438.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-15105396207487055119.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-2850560554024088278.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-12417890763961488279.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-9375093920497724835.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-10070621300225187162.jpeg"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "instagramData": {
+        "autoPublish": true,
+        "type": "POST",
+        "showReelOnFeed": true,
+        "isAiGenerated": false
+      },
+      "tiktokData": {
+        "privacyOption": "PUBLIC_TO_EVERYONE",
+        "title": "Το ψωμί που περίμενε στο περβάζι",
+        "autoAddMusic": true,
+        "photoCoverIndex": 0,
+        "isAigc": true
+      },
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-6122830041976323171"
+    },
+    {
+      "id": 400687169,
+      "uuid": "-7168072903967161376",
+      "publicationDate": {
+        "dateTime": "2026-10-20T17:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-103746552477408193.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "instagramData": {
+        "autoPublish": true,
+        "isAiGenerated": false
+      },
+      "youtubeData": {
+        "title": "Το ψωμί που περίμενε στο περβάζι",
+        "type": "short",
+        "privacy": "public",
+        "category": "ENTERTAINMENT",
+        "madeForKids": false,
+        "isAiGeneratedContent": false,
+        "notifySubscribers": true
+      },
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-7168072903967161376"
+    },
+    {
+      "id": 400687494,
+      "uuid": "-4649924964995936614",
+      "publicationDate": {
+        "dateTime": "2026-10-20T18:30:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-8301845526498671382.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-4963073383805631601.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-4095602475669139770.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-6694391608634898190.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-13874535842317852620.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-15802641485489513770.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-1065969838499806970.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-17677815511694874868.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-17867354661712613624.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-15817752281400866307.jpeg"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "instagramData": {
+        "autoPublish": true,
+        "type": "POST",
+        "showReelOnFeed": true,
+        "isAiGenerated": true
+      },
+      "tiktokData": {
+        "privacyOption": "PUBLIC_TO_EVERYONE",
+        "title": "Ελλάδα vs Ισπανία",
+        "autoAddMusic": true,
+        "photoCoverIndex": 0,
+        "isAigc": true
+      },
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-4649924964995936614"
+    },
+    {
+      "id": 400687639,
+      "uuid": "201158249306868123",
+      "publicationDate": {
+        "dateTime": "2026-10-20T18:30:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-7690243285793855393.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "instagramData": {
+        "autoPublish": true,
+        "isAiGenerated": false
+      },
+      "youtubeData": {
+        "title": "Ελλάδα vs Ισπανία",
+        "type": "short",
+        "privacy": "public",
+        "category": "EDUCATION",
+        "madeForKids": false,
+        "isAiGeneratedContent": true,
+        "notifySubscribers": true
+      },
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=201158249306868123"
+    },
+    {
+      "id": 400688025,
+      "uuid": "4794404556579750194",
+      "publicationDate": {
+        "dateTime": "2026-10-20T20:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-4834851071192799031.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-11606858979693182480.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-18258094070179462714.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-598933664010092802.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-14872115550154514364.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-4026286124355170720.jpeg"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "instagramData": {
+        "autoPublish": true,
+        "type": "POST",
+        "showReelOnFeed": true,
+        "isAiGenerated": false
+      },
+      "tiktokData": {
+        "privacyOption": "PUBLIC_TO_EVERYONE",
+        "title": "Κριός με ωροσκόπο Αιγόκερω",
+        "autoAddMusic": true,
+        "photoCoverIndex": 0,
+        "isAigc": true
+      },
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=4794404556579750194"
+    },
+    {
+      "id": 400688138,
+      "uuid": "-276722471490207095",
+      "publicationDate": {
+        "dateTime": "2026-10-20T20:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-2044641528890057398.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "instagramData": {
+        "autoPublish": true,
+        "isAiGenerated": false
+      },
+      "youtubeData": {
+        "title": "Κριός με ωροσκόπο Αιγόκερω",
+        "type": "short",
+        "privacy": "public",
+        "category": "ENTERTAINMENT",
+        "madeForKids": false,
+        "isAiGeneratedContent": false,
+        "notifySubscribers": true
+      },
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-276722471490207095"
+    },
+    {
+      "id": 400688361,
+      "uuid": "-4915353578773459355",
+      "publicationDate": {
+        "dateTime": "2026-10-20T22:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "facebook",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "tiktok",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-4261885595816842378.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-15836185112152900551.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-12168471543554718545.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-3322543653018263676.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-10860271305433923083.jpeg",
+        "https://static.metricool.com/planner/202610/7000636-file-13851227900692851368.jpeg"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "instagramData": {
+        "autoPublish": true,
+        "type": "POST",
+        "showReelOnFeed": true,
+        "isAiGenerated": false
+      },
+      "tiktokData": {
+        "privacyOption": "PUBLIC_TO_EVERYONE",
+        "title": "Η συνταγή του πατέρα",
+        "autoAddMusic": true,
+        "photoCoverIndex": 0,
+        "isAigc": true
+      },
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-4915353578773459355"
+    },
+    {
+      "id": 400688525,
+      "uuid": "2357729644415107439",
+      "publicationDate": {
+        "dateTime": "2026-10-20T22:00:00",
+        "timezone": "Europe/Athens"
+      },
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-15647207109624959846.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "instagramData": {
+        "autoPublish": true,
+        "isAiGenerated": false
+      },
+      "youtubeData": {
+        "title": "Η συνταγή του πατέρα",
+        "type": "short",
+        "privacy": "public",
+        "category": "ENTERTAINMENT",
+        "madeForKids": false,
+        "isAiGeneratedContent": false,
+        "notifySubscribers": true
+      },
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=2357729644415107439"
+    }
+  ],
+  "future_queue": {
+    "dates": [
+      "2026-10-21",
+      "2026-10-22"
+    ],
+    "metricool_records": 0,
+    "destinations": 0,
+    "complete_days": 0,
+    "target_complete_days": [
+      2,
+      3
+    ],
+    "status": "NOT_READY_NO_QA_PASSED_ACTIVE_SCHEDULED_PACKAGES"
+  },
+  "completed_at": "2026-10-20T06:28:00+03:00",
+  "cost_eur": 0,
+  "credits_used": 0
+}
