@@ -521,6 +521,26 @@
         "https://static.metricool.com/planner/202610/7000636-file-13851227900692851368.jpeg"
       ],
       "readback_at": "2026-10-20T06:25:00+03:00"
+    },
+    {
+      "package_id": "father_recipe",
+      "route": "youtube",
+      "id": 400688525,
+      "uuid": "2357729644415107439",
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "time": "22:00",
+      "media": [
+        "https://static.metricool.com/planner/202610/7000636-file-15647207109624959846.mp4"
+      ],
+      "readback_at": "2026-10-20T06:25:00+03:00"
     }
   ]
 }
