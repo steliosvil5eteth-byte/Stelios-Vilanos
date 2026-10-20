@@ -7,7 +7,7 @@
   "date": "2026-10-20",
   "timezone": "Europe/Athens",
   "program": "CAROUSEL_FOUR_FOUR_ONE_20261016",
-  "status": "ACTIVE_RELEASE",
+  "status": "COMPLETED_SCHEDULED_PENDING",
   "created_at": "2026-10-20T06:05:00+03:00",
   "expires_at": "2026-10-20T20:30:00+00:00",
   "scope": [
@@ -542,5 +542,22 @@
       ],
       "readback_at": "2026-10-20T06:25:00+03:00"
     }
-  ]
+  ],
+  "completed_at": "2026-10-20T06:28:00+03:00",
+  "delivery_record": "state/daily_delivery/carousel_20261020.json",
+  "final_live_readback": {
+    "metricool_records": 18,
+    "destinations": 36,
+    "PENDING": 36,
+    "Published": 0,
+    "Failed": 0,
+    "Blocked": 0,
+    "draft_false": 18,
+    "autoPublish_true": 18
+  },
+  "future_queue": {
+    "complete_days": 0,
+    "target_minimum_days": 2,
+    "target_preferred_days": 3
+  }
 }
