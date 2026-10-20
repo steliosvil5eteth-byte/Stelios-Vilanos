@@ -1,0 +1,647 @@
+{
+  "schema_version": "1.0",
+  "review_id": "carousel-20261020-exact-final-review",
+  "brand_id": 7076410,
+  "date": "2026-10-20",
+  "timezone": "Europe/Athens",
+  "program": "CAROUSEL_FOUR_FOUR_ONE_20261016",
+  "source_candidate_manifest": "media/carousel_20261019/manifest.json",
+  "source_candidate_manifest_sha256": "945f1ba8401a6cfc99fa57e8ef809fdaaa3359b02c055296e1315ccae2bc1244",
+  "reuse_reason": "UNPUBLISHED_CANDIDATE_REASSIGNED_AFTER_FRESH_DEDUPE",
+  "predecessor_lease": {
+    "path": "state/production_leases/2026-10-19-brand7076410.json",
+    "expired_at": "2026-10-19T18:30:00+00:00",
+    "metricool_writes": 0
+  },
+  "qa_status": "PASSED_FINAL_REVIEW",
+  "reviewed_at": "2026-10-20T06:05:00+03:00",
+  "actual_visual_inspection": {
+    "exact_square_cards": true,
+    "exact_encoded_video_card_states": true,
+    "all_58_cards_reviewed": true,
+    "all_9_vertical_slideshows_reviewed": true,
+    "greek_text_spelling_order_hook_continuity_endings_cta_disclosures": true,
+    "crop_and_mobile_readability": true,
+    "distinct_scene_relevant_photos": true,
+    "no_child_faces_observed": true,
+    "video_dimensions": "1080x1920",
+    "square_dimensions": "1080x1080",
+    "audio_streams": 0,
+    "audio_review": "NOT_APPLICABLE_NO_AUDIO_STREAM",
+    "narration": false
+  },
+  "history_gate": {
+    "metricool_records_for_date": 0,
+    "notion_active_rows": 282,
+    "notion_archived_rows": 0,
+    "notion_date_rows": 0,
+    "exact_title_or_fingerprint_matches_outside_candidate": 0,
+    "repository_candidate_matches_only": [
+      "media/carousel_20261019/manifest.json",
+      "production/carousel_20261019/request.json"
+    ],
+    "checked_at": "2026-10-20T06:05:00+03:00"
+  },
+  "cost_gate": {
+    "generation_credits_used": 0,
+    "paid_charges_eur": 0,
+    "artifact_reused": true
+  },
+  "posts": [
+    {
+      "id": "gemini_scorpio",
+      "title": "Δίδυμος με ωροσκόπο Σκορπιό",
+      "time": "07:00",
+      "series": "zodiac_ascendant",
+      "fingerprint": "zodiac_ascendant|gemini_scorpio|quick_mind_private_depth_clear_words",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "media/carousel_20261019/gemini_scorpio/card_01.jpg",
+          "sha256": "c6b86f7024b3aebbb3731ac9b9ccff10d8b8bff74677e2e401607245d8246875",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/gemini_scorpio/card_02.jpg",
+          "sha256": "ddcc279b06765f31d425da129c7c5dd3e255ca7e016850196de3bfa99cb32b26",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/gemini_scorpio/card_03.jpg",
+          "sha256": "81240ae81dc2a8ee712877f53c4c88885c7a4d597d98f589a72f7954b3b4c0d6",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/gemini_scorpio/card_04.jpg",
+          "sha256": "bfe6dc08bd0b2b06c252fbe3e17064f222e670c1fa8731b8951e1f0df7a5d149",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/gemini_scorpio/card_05.jpg",
+          "sha256": "57202f0e415fb7a7e638a875df0f1097c606692f37cf3e7cb6bb6f5ed8012427",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/gemini_scorpio/card_06.jpg",
+          "sha256": "e7eeebb6ad154ae2b4fff99ffc476220738d1c7853d1a347c0f5c400faa3f8ee",
+          "width": 1080,
+          "height": 1080
+        }
+      ],
+      "youtube_video": {
+        "path": "media/carousel_20261019/gemini_scorpio/youtube_vertical.mp4",
+        "sha256": "73c93c0fb31ea055b5b925c869b7e869f17cae7bdc6a0a2a4bdfcfc1b91dd977",
+        "width": 1080,
+        "height": 1920,
+        "duration_seconds": 71.958333,
+        "card_durations": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "audio_streams": 0
+      },
+      "caption": "Γρήγορο μυαλό, βαθιά ένστικτα.\n\nΔίδυμος με ωροσκόπο Σκορπιό: έξι κάρτες για ένα συμβολικό πορτρέτο επικοινωνίας, ιδιωτικότητας και εμπιστοσύνης.\n\nΨυχαγωγική, συμβολική αστρολογία — όχι επιστημονική περιγραφή ή πρόβλεψη. Πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ζώδια #Δίδυμος #Σκορπιός #Ωροσκόπος #ΙστορίεςΠουΜαςΑγγίζουν"
+    },
+    {
+      "id": "door_half_open",
+      "title": "Η πόρτα που έμενε μισάνοιχτη",
+      "time": "09:00",
+      "series": "emotional_fiction",
+      "fingerprint": "emotional_fiction|elderly_neighbor_half_open_door_daily_package_check_saves_delivery_worker",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "media/carousel_20261019/door_half_open/card_01.jpg",
+          "sha256": "daf582e4bb4ced049aefd0101c7d02b0f9f9e65fa3a6fa445f864cb04d06f358",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/door_half_open/card_02.jpg",
+          "sha256": "49fef7d4c8c04bd56bc22a5cdd39e8930ebe3639ceddd919f71ab18c604ba1de",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/door_half_open/card_03.jpg",
+          "sha256": "cd2c0997f49994a91facc80799dbf6dff53d72c395c3abc9d6a43f34accec864",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/door_half_open/card_04.jpg",
+          "sha256": "22c1f871f3008d6e400d3b60fc0a5683e515bdb864cf3d04673ef4c41d4b19e8",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/door_half_open/card_05.jpg",
+          "sha256": "99ac620ab27df1d23cee773bce0dcb4c84d9bbb0c9eaa78f1f435ca84f86f757",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/door_half_open/card_06.jpg",
+          "sha256": "0c27ac66edeaaf1f6ee6c10cb716a93e60fc5a22ad93e67c8ef06b6f62348f04",
+          "width": 1080,
+          "height": 1080
+        }
+      ],
+      "youtube_video": {
+        "path": "media/carousel_20261019/door_half_open/youtube_vertical.mp4",
+        "sha256": "7026ff050f5623afe0a4a3a0c9104908e325a53209f54428420d8ba63a4a3b82",
+        "width": 1080,
+        "height": 1920,
+        "duration_seconds": 71.958333,
+        "card_durations": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          14
+        ],
+        "audio_streams": 0
+      },
+      "caption": "Η πόρτα έμενε μισάνοιχτη χωρίς να περιμένει κανένα δέμα.\n\n«Η πόρτα που έμενε μισάνοιχτη»: μια ολοκληρωμένη ιστορία έξι καρτών για μια ηλικιωμένη γειτόνισσα και μια μικρή καθημερινή προσοχή που έγινε βοήθεια την κατάλληλη στιγμή.\n\nΠρωτότυπη μυθοπλασία. Πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #Γειτονιά #Καλοσύνη #Φροντίδα #ΙστορίεςΠουΜαςΑγγίζουν"
+    },
+    {
+      "id": "libra_taurus",
+      "title": "Ζυγός με ωροσκόπο Ταύρο",
+      "time": "11:00",
+      "series": "zodiac_ascendant",
+      "fingerprint": "zodiac_ascendant|libra_taurus|calm_beauty_steady_boundaries",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "media/carousel_20261019/libra_taurus/card_01.jpg",
+          "sha256": "537bdd2b45f5a2ae49b81bbb1850c506533d61e4daa9d07f5c3aff0ac00ae992",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/libra_taurus/card_02.jpg",
+          "sha256": "e5059b22040b12a77b712bf56952cd85d5140c99bcae43ef3e55aa311ce33b9c",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/libra_taurus/card_03.jpg",
+          "sha256": "da1b828efb33eea57d32fc15c26b48b9e3627f800e553a5f95fc8f46cd6575b1",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/libra_taurus/card_04.jpg",
+          "sha256": "c392fc5aa4edbc01ca4724cb92150db4a61fa2931fe6d5d5d4383148a92ace39",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/libra_taurus/card_05.jpg",
+          "sha256": "dbedc8dbe1d6ed46928020ab4b9df397307f90384024f039e6f096913b0f5dc0",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/libra_taurus/card_06.jpg",
+          "sha256": "c6124ec831c9808d62dd204006141b54c02b272f5b101bab959ebd8277beed72",
+          "width": 1080,
+          "height": 1080
+        }
+      ],
+      "youtube_video": {
+        "path": "media/carousel_20261019/libra_taurus/youtube_vertical.mp4",
+        "sha256": "7779a6ef6ca84624d23da85198fd5a897b0915db15dd4701304ffb27b4402a78",
+        "width": 1080,
+        "height": 1920,
+        "duration_seconds": 71.958333,
+        "card_durations": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "audio_streams": 0
+      },
+      "caption": "Ηρεμία που δεν φοβάται τα όρια.\n\nΖυγός με ωροσκόπο Ταύρο: έξι κάρτες για ένα συμβολικό πορτρέτο αρμονίας, σταθερότητας και καθαρών αποφάσεων.\n\nΨυχαγωγική, συμβολική αστρολογία — όχι επιστημονική περιγραφή ή πρόβλεψη. Πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ζώδια #Ζυγός #Ταύρος #Ωροσκόπος #ΙστορίεςΠουΜαςΑγγίζουν"
+    },
+    {
+      "id": "wallet_bus_stop",
+      "title": "Το πορτοφόλι στη στάση",
+      "time": "13:00",
+      "series": "emotional_fiction",
+      "fingerprint": "emotional_fiction|lost_wallet_bus_stop_notes_owner_returns_kindness_to_unemployed_woman",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "media/carousel_20261019/wallet_bus_stop/card_01.jpg",
+          "sha256": "c8592d544f6bc9642d71ece69bbfdca2f84b528da89dc04924b6ab7d15de1e85",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/wallet_bus_stop/card_02.jpg",
+          "sha256": "32814cbb74a15d559d3a413e423c365d92d710a62f266114ae3b2d9f7c5d2e52",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/wallet_bus_stop/card_03.jpg",
+          "sha256": "b534c923bee54800f845625daa35ca484cc5697010149ef9e885a4f314c47288",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/wallet_bus_stop/card_04.jpg",
+          "sha256": "fe876ad3f651ea1a8515ec0f4d95be714104170e606514914cc5ebbd66881408",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/wallet_bus_stop/card_05.jpg",
+          "sha256": "95f91a23f8d5fff11b9ad2e59e75b87462b9d2c4c4c06461e80b1d2e5b350a9c",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/wallet_bus_stop/card_06.jpg",
+          "sha256": "03205132146b6af6e118cc1683575a56406774d48bc6fa043c4d4010428040bd",
+          "width": 1080,
+          "height": 1080
+        }
+      ],
+      "youtube_video": {
+        "path": "media/carousel_20261019/wallet_bus_stop/youtube_vertical.mp4",
+        "sha256": "8de20e0042362b4e6d73646527d3378201852754a6bc6712bba2ac3e82d4cd1c",
+        "width": 1080,
+        "height": 1920,
+        "duration_seconds": 71.958333,
+        "card_durations": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          14
+        ],
+        "audio_streams": 0
+      },
+      "caption": "Βρήκε ένα γεμάτο πορτοφόλι τη μέρα που δεν είχε ούτε εισιτήριο.\n\n«Το πορτοφόλι στη στάση»: μια ολοκληρωμένη ιστορία έξι καρτών για την εντιμότητα που φαίνεται όταν κανείς δεν κοιτάζει.\n\nΠρωτότυπη μυθοπλασία. Πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #Εντιμότητα #Στάση #Ελπίδα #ΙστορίεςΠουΜαςΑγγίζουν"
+    },
+    {
+      "id": "sagittarius_aquarius",
+      "title": "Τοξότης με ωροσκόπο Υδροχόο",
+      "time": "15:00",
+      "series": "zodiac_ascendant",
+      "fingerprint": "zodiac_ascendant|sagittarius_aquarius|wide_horizon_independent_ideas",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "media/carousel_20261019/sagittarius_aquarius/card_01.jpg",
+          "sha256": "5a76439b08627da81d70c1f5c2a45c9a4186b5743d915ecf4dab12e0bc3a9e9b",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/sagittarius_aquarius/card_02.jpg",
+          "sha256": "95c0741fe5267e1dad2b9a01b6647fe5c15f6db0610256a902555b936ef6972f",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/sagittarius_aquarius/card_03.jpg",
+          "sha256": "048b634660c3095fb1ef15dc3ae212f48f5f22769c461d50ca15b4b85d05a5e6",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/sagittarius_aquarius/card_04.jpg",
+          "sha256": "a177a087737d3573b2a45b59d716d21e6068a3d421abf13e665199f2568b9340",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/sagittarius_aquarius/card_05.jpg",
+          "sha256": "b8a44543b8cc62cf1707b7807343ca763ebe9e6778407efd2bb733fdc6a9a2e2",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/sagittarius_aquarius/card_06.jpg",
+          "sha256": "6785f3a1dd57c078f1f330340244a711f93f34eee58d290064afb3e79bb2400f",
+          "width": 1080,
+          "height": 1080
+        }
+      ],
+      "youtube_video": {
+        "path": "media/carousel_20261019/sagittarius_aquarius/youtube_vertical.mp4",
+        "sha256": "22752cd5666c2eaad40ef12b6552effd5b5a19ed84b3684d22889d098c01a0ec",
+        "width": 1080,
+        "height": 1920,
+        "duration_seconds": 71.958333,
+        "card_durations": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "audio_streams": 0
+      },
+      "caption": "Μεγάλος ορίζοντας, ανεξάρτητες ιδέες.\n\nΤοξότης με ωροσκόπο Υδροχόο: έξι κάρτες για ένα συμβολικό πορτρέτο εξερεύνησης, ελευθερίας και χρήσιμης αλλαγής.\n\nΨυχαγωγική, συμβολική αστρολογία — όχι επιστημονική περιγραφή ή πρόβλεψη. Πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ζώδια #Τοξότης #Υδροχόος #Ωροσκόπος #ΙστορίεςΠουΜαςΑγγίζουν"
+    },
+    {
+      "id": "bread_on_sill",
+      "title": "Το ψωμί που περίμενε στο περβάζι",
+      "time": "17:00",
+      "series": "emotional_fiction",
+      "fingerprint": "emotional_fiction|widowed_baker_leaves_loaf_on_sill_for_homeless_regular_final_note_opens_table",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "media/carousel_20261019/bread_on_sill/card_01.jpg",
+          "sha256": "ce71981a395c39b0c219556268c7829d24f693bf20b5611d25f946fce6015dfc",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/bread_on_sill/card_02.jpg",
+          "sha256": "96f14aa0f580c26921b360b97a0b325f20e08759b0a653dac5129eb41dff6e6c",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/bread_on_sill/card_03.jpg",
+          "sha256": "9f6ef920760f8e80b9b5eea6456bc1dffbed82f577a053efbb820a5de407a227",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/bread_on_sill/card_04.jpg",
+          "sha256": "1768126b616e8476b32c77e3b18be55fe3c51ce203e16f71601d9858ebe61804",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/bread_on_sill/card_05.jpg",
+          "sha256": "8dbb35893e052b35f5f4bfb92c09304a167973299f97657e0dbf10068ab92a1a",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/bread_on_sill/card_06.jpg",
+          "sha256": "9b7154fa01bc83f7f6dd09c2f3cc82a62cf9239f68927c597806b988e850a606",
+          "width": 1080,
+          "height": 1080
+        }
+      ],
+      "youtube_video": {
+        "path": "media/carousel_20261019/bread_on_sill/youtube_vertical.mp4",
+        "sha256": "f71aaeb0aae894c353a24537b99caf320daa77eb2781e8e0f95aade6a52235a1",
+        "width": 1080,
+        "height": 1920,
+        "duration_seconds": 71.958333,
+        "card_durations": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          13
+        ],
+        "audio_streams": 0
+      },
+      "caption": "Κάθε βράδυ ένα ζεστό καρβέλι περίμενε χωρίς όνομα.\n\n«Το ψωμί που περίμενε στο περβάζι»: μια ολοκληρωμένη ιστορία έξι καρτών για μια διακριτική βοήθεια που έγινε ανοιχτή θέση για όποιον τη χρειαζόταν.\n\nΠρωτότυπη μυθοπλασία. Πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #Φούρνος #Αλληλεγγύη #Αξιοπρέπεια #ΙστορίεςΠουΜαςΑγγίζουν"
+    },
+    {
+      "id": "greece_spain",
+      "title": "Ελλάδα vs Ισπανία",
+      "time": "18:30",
+      "series": "greece_vs_country",
+      "fingerprint": "greece_vs_country|spain|2024_2025_comparable_eurostat_salary_jobs_housing_prices_health_services",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "media/carousel_20261019/greece_spain/card_01.jpg",
+          "sha256": "c34503f71e092aa066999e8dac478582eaf4df9b13059636d56857fe34c34626",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/greece_spain/card_02.jpg",
+          "sha256": "af7ec4fca76799dc2301ecf174922319819a035efa03e4a7cdd22fe418a27a66",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/greece_spain/card_03.jpg",
+          "sha256": "5afcf790d4ea643a22a19efb8b7cb800b4fe832411e50bcbd11cd8e83c57fdb9",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/greece_spain/card_04.jpg",
+          "sha256": "d2f25d12c96442bdeab002cd3fad7e9a63e12bb50b73933fe23037d6991840b2",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/greece_spain/card_05.jpg",
+          "sha256": "3a2033c68b3936ad35b7b4af30aed6c2b91e6ac2595a1cad488c10b8f335f083",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/greece_spain/card_06.jpg",
+          "sha256": "6f69ceb3f521bf514de8febc54421c107295a926a531f770fa833a64693c6067",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/greece_spain/card_07.jpg",
+          "sha256": "a5f29a5c5d4000bb9e667e9912a7dc2365558ec0f74d8ad22a903dcd2fd477e3",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/greece_spain/card_08.jpg",
+          "sha256": "95b1f73d6385c00b6c13a77bdf0bde39a57345f57ec9e4b3dfbfab733a890246",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/greece_spain/card_09.jpg",
+          "sha256": "c725a7c56fdba9c1845168a561546a63968744fc638441ba9c314a5437ef5aa0",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/greece_spain/card_10.jpg",
+          "sha256": "e0f0ef9a6074c56fad6443801273fb15db4ea339626a06d177982a92b32aa0d2",
+          "width": 1080,
+          "height": 1080
+        }
+      ],
+      "youtube_video": {
+        "path": "media/carousel_20261019/greece_spain/youtube_vertical.mp4",
+        "sha256": "589e49e7f2101e51a9c373c2c8ff43e49a609b8c43211aba9b734ac8594fbdfc",
+        "width": 1080,
+        "height": 1920,
+        "duration_seconds": 119.958333,
+        "card_durations": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "audio_streams": 0
+      },
+      "caption": "Ελλάδα ή Ισπανία; Η απάντηση δεν χωρά σε έναν μισθό.\n\nΣύγκριση με κοινά ευρωπαϊκά σύνολα: μέσος μικτός ετήσιος μισθός πλήρους απασχόλησης (2024), ανεργία 15–74 (2025), στεγαστική επιβάρυνση πάνω από 40% διαθέσιμου εισοδήματος (2024), επίπεδο τιμών κατανάλωσης με ΕΕ=100 (2024) και προσδόκιμο ζωής (2023).\n\nΠηγές: Eurostat nama_10_fte, une_rt_a, ilc_lvho07a/tespm140, prc_ppp_ind_1, demo_mlexpec· Ευρωπαϊκή Επιτροπή Digital Decade 2025 για Ελλάδα και Ισπανία. Οι μέσοι όροι δεν περιγράφουν κάθε πόλη ή νοικοκυριό.\n\nΟι εικόνες προέρχονται από διαθέσιμο πακέτο με χρήση AI· τα αριθμητικά στοιχεία από τις παραπάνω επίσημες πηγές.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ελλάδα #Ισπανία #ΚόστοςΖωής #Eurostat #ΙστορίεςΠουΜαςΑγγίζουν"
+    },
+    {
+      "id": "aries_capricorn",
+      "title": "Κριός με ωροσκόπο Αιγόκερω",
+      "time": "20:00",
+      "series": "zodiac_ascendant",
+      "fingerprint": "zodiac_ascendant|aries_capricorn|bold_start_patient_climb",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "media/carousel_20261019/aries_capricorn/card_01.jpg",
+          "sha256": "a62b9b93f21df4edbf562e8e7d3ade32e1411676fc9264122f2d982b326c8c0b",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/aries_capricorn/card_02.jpg",
+          "sha256": "52106de999a39185b9688e47c6872bb24611724abef089ac63f1ba140b99483f",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/aries_capricorn/card_03.jpg",
+          "sha256": "36ef249482beb2a803f5425281a4d8186e9c8f5dbd9f31d2b90be0d68fedc806",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/aries_capricorn/card_04.jpg",
+          "sha256": "ece276f3d32110b74cc30d2bf80923a7af1b7dfaf65449260827fb7a88405d42",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/aries_capricorn/card_05.jpg",
+          "sha256": "8193642d11dd3d9fb848c463d7bbb53226b2d7d0ee71a84ea82cc7bbb0158dd4",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/aries_capricorn/card_06.jpg",
+          "sha256": "4216b4f4343714ff547f331b0e4aaf7feed87f3eec296ca804b6e6c051b31b4d",
+          "width": 1080,
+          "height": 1080
+        }
+      ],
+      "youtube_video": {
+        "path": "media/carousel_20261019/aries_capricorn/youtube_vertical.mp4",
+        "sha256": "708930d65a109f39f4482f19c67339c730e6dad4e584d06d7be7ab5de807fa79",
+        "width": 1080,
+        "height": 1920,
+        "duration_seconds": 71.958333,
+        "card_durations": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          12
+        ],
+        "audio_streams": 0
+      },
+      "caption": "Τολμηρή αρχή, υπομονετική ανάβαση.\n\nΚριός με ωροσκόπο Αιγόκερω: έξι κάρτες για ένα συμβολικό πορτρέτο πρωτοβουλίας, πειθαρχίας και στόχου.\n\nΨυχαγωγική, συμβολική αστρολογία — όχι επιστημονική περιγραφή ή πρόβλεψη. Πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ζώδια #Κριός #Αιγόκερως #Ωροσκόπος #ΙστορίεςΠουΜαςΑγγίζουν"
+    },
+    {
+      "id": "father_recipe",
+      "title": "Η συνταγή του πατέρα",
+      "time": "22:00",
+      "series": "emotional_fiction",
+      "fingerprint": "emotional_fiction|adult_daughter_finds_fathers_blank_recipe_cards_daily_memories_after_memory_loss",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "cards": [
+        {
+          "path": "media/carousel_20261019/father_recipe/card_01.jpg",
+          "sha256": "534bf823a6c39b87e3dd1d0975c98c527993d111e2666a2d1fc54867f6c3a5c1",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/father_recipe/card_02.jpg",
+          "sha256": "fe60c706a33bdbc9b9743dc2083915ae76f707b3f68cdf7297c1163b931cd9e1",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/father_recipe/card_03.jpg",
+          "sha256": "39e4e586555689edcf2d91266c99ccf4a1c1e6ca33a19e3626f0665d7ba1963a",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/father_recipe/card_04.jpg",
+          "sha256": "a3fe76ecf0324cc08f6d3d4c21058066fe1dd0c5b23686e0e2a7c3c8dc31c4fa",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/father_recipe/card_05.jpg",
+          "sha256": "92f2bcafce18c02ff5211ebbb4ee2d36c125d4e412e5d5695e8a1daa3712be6c",
+          "width": 1080,
+          "height": 1080
+        },
+        {
+          "path": "media/carousel_20261019/father_recipe/card_06.jpg",
+          "sha256": "304c1859789729417e985a37f8ff830a46d1c6b4fca2a126184bf33de9b2ded5",
+          "width": 1080,
+          "height": 1080
+        }
+      ],
+      "youtube_video": {
+        "path": "media/carousel_20261019/father_recipe/youtube_vertical.mp4",
+        "sha256": "9b3644b30fd3567e871f22ebde220432bd3158a9284aae2bda59a9016888bcf0",
+        "width": 1080,
+        "height": 1920,
+        "duration_seconds": 71.958333,
+        "card_durations": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          14
+        ],
+        "audio_streams": 0
+      },
+      "caption": "Οι κάρτες συνταγών ήταν λευκές — αλλά δεν ήταν άδειες.\n\n«Η συνταγή του πατέρα»: μια ολοκληρωμένη ιστορία έξι καρτών για μια κόρη, έναν πατέρα και τις αναμνήσεις που μερικές φορές επιστρέφουν μέσα από μια γνώριμη γεύση.\n\nΠρωτότυπη μυθοπλασία. Πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #Πατέρας #Μνήμη #Οικογένεια #ΙστορίεςΠουΜαςΑγγίζουν"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": "1.0",
+  "lease_id": "carousel-20261020-brand7076410-0605",
+  "owner": "daily-carousel-production-20261020T0605-Europe-Athens",
+  "brand_id": 7076410,
+  "brand_name": "Ιστορίες που μας αγγίζουν",
+  "date": "2026-10-20",
+  "timezone": "Europe/Athens",
+  "program": "CAROUSEL_FOUR_FOUR_ONE_20261016",
+  "status": "ACTIVE_RELEASE",
+  "created_at": "2026-10-20T06:05:00+03:00",
+  "expires_at": "2026-10-20T20:30:00+00:00",
+  "scope": [
+    "gemini_scorpio",
+    "door_half_open",
+    "libra_taurus",
+    "wallet_bus_stop",
+    "sagittarius_aquarius",
+    "bread_on_sill",
+    "greece_spain",
+    "aries_capricorn",
+    "father_recipe"
+  ],
+  "source_candidate_date": "2026-10-19",
+  "source_candidate_reuse_reason": "UNPUBLISHED_CANDIDATE_REASSIGNED_AFTER_FRESH_DEDUPE",
+  "history_gate": {
+    "metricool_records_for_date": 0,
+    "notion_active_rows": 282,
+    "notion_archived_rows": 0,
+    "notion_date_rows": 0,
+    "exact_title_or_fingerprint_matches_outside_candidate": 0,
+    "repository_candidate_matches_only": [
+      "media/carousel_20261019/manifest.json",
+      "production/carousel_20261019/request.json"
+    ],
+    "checked_at": "2026-10-20T06:05:00+03:00"
+  },
+  "cost_gate": {
+    "generation_credits_used": 0,
+    "paid_charges_eur": 0,
+    "artifact_reused": true
+  },
+  "permissions": {
+    "final_review": true,
+    "metricool_write": true,
+    "notion_write": true
+  },
+  "qa_record": "state/daily_delivery/carousel_20261020_final_review.json",
+  "provider_writes": []
+}
