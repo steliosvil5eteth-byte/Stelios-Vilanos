@@ -1,0 +1,15 @@
+{
+  "program": "CAROUSEL_FOUR_FOUR_ONE_20261016",
+  "date": "2026-10-21",
+  "brand_id": 7076410,
+  "timezone": "Europe/Athens",
+  "owner": "scheduled-production-20261021",
+  "ownership_token": "carousel-20261021-7076410-6cce73c",
+  "status": "ACTIVE_RENDER_ONLY",
+  "scope": "render_and_exact_final_review_only_no_metricool_write_until_qa",
+  "created_at": "2026-10-21T06:02:00+03:00",
+  "expires_at": "2026-10-21T09:00:00+03:00",
+  "free_only": true,
+  "paid_charges_eur": 0,
+  "generation_credits_used": 0
+}
