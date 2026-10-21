@@ -5,7 +5,7 @@
   "timezone": "Europe/Athens",
   "owner": "scheduled-production-20261021",
   "ownership_token": "carousel-20261021-7076410-6cce73c",
-  "status": "ACTIVE_RELEASE",
+  "status": "BLOCKED_MEDIA_TRANSPORT",
   "scope": "metricool_create_and_readback_only_for_exact_final_reviewed_2026-10-21_batch",
   "created_at": "2026-10-21T06:02:00+03:00",
   "expires_at": "2026-10-21T09:00:00+03:00",
@@ -16,5 +16,10 @@
   "qa_manifest_blob_sha": "20a7b0b18027dd8ed5ddc590d0b72cbc600e49fd",
   "qa_status": "PASSED_FINAL_REVIEW",
   "history_gate_checked_at": "2026-10-21T06:19:00+03:00",
-  "metricool_records_before_release": 0
+  "metricool_records_before_release": 0,
+  "blocked_at": "2026-10-21T06:26:00+03:00",
+  "blocker_code": "METRICOOL_EXACT_MEDIA_UPLOAD_BRIDGE_UNAVAILABLE",
+  "metricool_records_after_attempts": 0,
+  "delivery_journal": "state/daily_delivery/carousel_20261021.json",
+  "safe_outcome": "NO_RECORD_CREATED_NO_RETRY_NO_BACKDATE"
 }
