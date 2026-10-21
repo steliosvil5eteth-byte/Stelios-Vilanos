@@ -1,0 +1,367 @@
+{
+  "schema_version": "1.0",
+  "brand_id": 7076410,
+  "brand_name": "Ιστορίες που μας αγγίζουν",
+  "date": "2026-10-21",
+  "timezone": "Europe/Athens",
+  "program": "CAROUSEL_FOUR_FOUR_ONE_20261016",
+  "status": "BLOCKED_MEDIA_TRANSPORT",
+  "logical_posts": 9,
+  "final_packages": 9,
+  "final_card_files": 58,
+  "final_youtube_videos": 9,
+  "qa": {
+    "status": "PASSED_FINAL_REVIEW",
+    "manifest": "media/carousel_20261021/manifest.json",
+    "manifest_blob_sha": "20a7b0b18027dd8ed5ddc590d0b72cbc600e49fd",
+    "reviewed_at": "2026-10-21T06:18:00+03:00",
+    "actual_visual_review": true,
+    "actual_audio_listened": false,
+    "audio_not_applicable_reason": "All nine YouTube slideshows intentionally contain zero audio streams."
+  },
+  "metricool": {
+    "records": 0,
+    "destinations": 0,
+    "provider_status_counts": {
+      "PUBLISHED": 0,
+      "SCHEDULED-PENDING": 0,
+      "FAILED": 0,
+      "BLOCKED": 36
+    },
+    "current_day_live_readback_at": "2026-10-21T06:25:00+03:00",
+    "current_day_live_records": 0,
+    "public_urls": []
+  },
+  "history_reconciliation": {
+    "metricool_complete_for_current_day": true,
+    "notion_active_rows_read": 291,
+    "notion_archived_rows_read": 0,
+    "notion_new_rows_for_date": 0,
+    "repository_history_checked": true,
+    "lease_checked": true,
+    "exact_title_matches_for_candidates": 0
+  },
+  "blocker": {
+    "code": "METRICOOL_EXACT_MEDIA_UPLOAD_BRIDGE_UNAVAILABLE",
+    "detail": "The connected Metricool create tool accepts mediaFiles only as executor-local file paths, but the connector cannot access the exact GitHub artifact or ChatGPT Library files in this run. Remote GitHub URLs, executor absolute paths, info.media URLs, Library file IDs, sediment references, and signed OAI transfer URLs were rejected. Immediate live readback after every attempt remained empty.",
+    "safe_outcome": "No Metricool record was created; no blind retry; no duplicate; no backdate.",
+    "attempts": [
+      {
+        "transport": "GitHub raw URLs in mediaFiles",
+        "result": "NO_SUCH_FILE_OR_DIRECTORY"
+      },
+      {
+        "transport": "executor absolute local paths in mediaFiles",
+        "result": "INVALID_ARGUMENT"
+      },
+      {
+        "transport": "remote URL in info.media",
+        "result": "INVALID_ARGUMENT"
+      },
+      {
+        "transport": "ChatGPT Library file IDs in mediaFiles",
+        "result": "NO_SUCH_FILE_OR_DIRECTORY"
+      },
+      {
+        "transport": "sediment Library references in mediaFiles",
+        "result": "NO_SUCH_FILE_OR_DIRECTORY"
+      },
+      {
+        "transport": "signed oaiusercontent transfer URLs in mediaFiles",
+        "result": "NO_SUCH_FILE_OR_DIRECTORY"
+      }
+    ]
+  },
+  "paid_charges_eur": 0,
+  "generation_credits_used": 0,
+  "future_queue": {
+    "full_qa_passed_scheduled_days": 0,
+    "required_days": 2,
+    "target_days": 3
+  },
+  "posts": [
+    {
+      "id": "leo_pisces",
+      "title": "Λέων με ωροσκόπο Ιχθύ",
+      "time": "07:00",
+      "series": "zodiac_ascendant",
+      "fingerprint": "zodiac_ascendant|leo_pisces|warm_presence_sensitive_imagination_quiet_courage",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "card_count": 6,
+      "card_sha256": [
+        "4ec2a3d30bbb4a729301e5456b06e3d1ce84a4d30c83cc3058a8b3da968df660",
+        "a7cead221d819ce0de6c4a33c2f8890d7422ad55efdcee46488f7a6f861e08dd",
+        "11aeb4effeaef50147d8b503fc6107634626ce339744f784d5b0b8830768888e",
+        "d0831330ae0788c4b84eedd5362917034b28cf97720846f22de46def2ea40915",
+        "15171509fd1eefb012129979c9df26bb0d620a6e662c8edfbd4ac83e62ab37ee",
+        "5728cc1d015cb861c7c91b338a2902827f0d80fab323251fa1733c300341c626"
+      ],
+      "youtube_video_sha256": "4c0bdb658002876ae63514a7a6507df80ce627a4141cca8ea7a0cab1bca16f89",
+      "youtube_duration_seconds": 71.958333,
+      "youtube_audio_streams": 0,
+      "metricool": {
+        "native_record": null,
+        "youtube_record": null,
+        "provider_statuses": {
+          "facebook": "BLOCKED",
+          "instagram": "BLOCKED",
+          "tiktok": "BLOCKED",
+          "youtube": "BLOCKED"
+        },
+        "public_urls": []
+      }
+    },
+    {
+      "id": "bakers_notebook",
+      "title": "Το τετράδιο του φούρναρη",
+      "time": "09:00",
+      "series": "emotional_fiction",
+      "fingerprint": "emotional_fiction|baker_secret_notebook_neighbours_need_bread_daughter_continues_kindness",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "card_count": 6,
+      "card_sha256": [
+        "121f429ebdf212ed6cf73988e7c12a30b3a7edcd067c3a23c4d5bb4fac4db5c3",
+        "5155d8b50185fa78f30030528b1bbfa2099d15d38473b8d181c265af0c98b705",
+        "f8599403e76d3537ca22d9281859a3251b52a03aedef451a09c106114ad820fe",
+        "1ab0652e90f4228635e3d474aefb02bd2e28afdb161e4561f5e5a9c9b31f30af",
+        "a36b73e8d35a5cfd4ede0ca5d895a4c871932dbeb3dafff1bb1a108cd4414d13",
+        "1bb93da80c6d0f9c1b3f9fb18e574ffd54e2adccf6e26d601c2e943e3ed0a6a2"
+      ],
+      "youtube_video_sha256": "2d788f328faa1156772a5adc95c6efa111bc7c53dda0ce18ce2b985180446b3b",
+      "youtube_duration_seconds": 71.958333,
+      "youtube_audio_streams": 0,
+      "metricool": {
+        "native_record": null,
+        "youtube_record": null,
+        "provider_statuses": {
+          "facebook": "BLOCKED",
+          "instagram": "BLOCKED",
+          "tiktok": "BLOCKED",
+          "youtube": "BLOCKED"
+        },
+        "public_urls": []
+      }
+    },
+    {
+      "id": "taurus_scorpio",
+      "title": "Ταύρος με ωροσκόπο Σκορπιό",
+      "time": "11:00",
+      "series": "zodiac_ascendant",
+      "fingerprint": "zodiac_ascendant|taurus_scorpio|steady_surface_intense_core_loyal_boundaries",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "card_count": 6,
+      "card_sha256": [
+        "0286d298d59208ff8d870ee46b1c4753d8ce78e239f583e439ef8cbd4dce7321",
+        "b92e376bc6a480139af56cb4de8ad67e2d2a5de4b299c6d50cca23de6cc9d2f4",
+        "ff48926648647af0e920325663b549cca810c6bec1f7532b117307813b60e8e9",
+        "c16cec1ab959244c53f0a40c15c3ca2fe7bc49584879dfe92389e96738549127",
+        "f698fd76a6f71f242bc29512c6d2bdbd650ccf4d718f00f9b164b1be3a4baad6",
+        "ea8f53d08ff6ddef97a205900d7e17e3a6ff05501663aa259e1bf27317a4dba9"
+      ],
+      "youtube_video_sha256": "847b2fef1e04f89f8b4c045378a2c53e8d46e98d67317c7df5664e6af18fbe39",
+      "youtube_duration_seconds": 71.958333,
+      "youtube_audio_streams": 0,
+      "metricool": {
+        "native_record": null,
+        "youtube_record": null,
+        "provider_statuses": {
+          "facebook": "BLOCKED",
+          "instagram": "BLOCKED",
+          "tiktok": "BLOCKED",
+          "youtube": "BLOCKED"
+        },
+        "public_urls": []
+      }
+    },
+    {
+      "id": "ribbons_box",
+      "title": "Το κουτί με τις τέσσερις κορδέλες",
+      "time": "13:00",
+      "series": "emotional_fiction",
+      "fingerprint": "emotional_fiction|seamstress_four_ribbons_family_moments_blanket_grandchild_legacy",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "card_count": 6,
+      "card_sha256": [
+        "b016c02445c01a3e5b18dbd66ce1cef9f086af77cd8da4b01fcf53a74b35a6af",
+        "bd8150ee502f7af277d938aad2d4f3a98335084f0339679ac40ae2d63fad6c48",
+        "847e75fa4c6e361f30b73e0ca3a468c48c960c6fb1f834234d8729c2010a8788",
+        "ad8fa6a072935c23fcdfc11fe7ebf2f818e52df606d2c1ccab15402c033cdc33",
+        "6a504a0adea48c0dce879f769a6454f287f091af890326ba99832349c14a7ef3",
+        "51a2a788c15cbaa7f61eaf8dfb6205e259a26527b0c4c54efb162838edae39c5"
+      ],
+      "youtube_video_sha256": "b22594744ff7543c3595691b590b81c57eeac4c38be3503485916baf98d857ae",
+      "youtube_duration_seconds": 71.958333,
+      "youtube_audio_streams": 0,
+      "metricool": {
+        "native_record": null,
+        "youtube_record": null,
+        "provider_statuses": {
+          "facebook": "BLOCKED",
+          "instagram": "BLOCKED",
+          "tiktok": "BLOCKED",
+          "youtube": "BLOCKED"
+        },
+        "public_urls": []
+      }
+    },
+    {
+      "id": "cancer_gemini",
+      "title": "Καρκίνος με ωροσκόπο Δίδυμο",
+      "time": "15:00",
+      "series": "zodiac_ascendant",
+      "fingerprint": "zodiac_ascendant|cancer_gemini|tender_memory_restless_words_honest_conversation",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "card_count": 6,
+      "card_sha256": [
+        "35f32ec48aecd19ef9bec3fa918b303574416df78aee8456cfc2baa587dbf80b",
+        "a639fd85669e71c4a2d6872006ac6abd3add79e06f7719b95cea7e92b0aca692",
+        "0535c72a60e4744d5ab7e0c9ff571b95a17b393a1e7ae67af470bdd9056d1785",
+        "7080d4a66a87a32b1db75ae6e205fea02fbcb665a07db541c676fd0300f9a231",
+        "f8573ec79009dd0d952689c5b2f838f82f5f1e27c1774f2dcefe8b9dcc543f64",
+        "3f8133dd97b7d352710fae2b955f41646996a6885c28f58794b1d032dcb3954c"
+      ],
+      "youtube_video_sha256": "4040420288d230b492e7276a1b059a062fdc9b547ac55a6a677fcb7efe5d565d",
+      "youtube_duration_seconds": 71.958333,
+      "youtube_audio_streams": 0,
+      "metricool": {
+        "native_record": null,
+        "youtube_record": null,
+        "provider_statuses": {
+          "facebook": "BLOCKED",
+          "instagram": "BLOCKED",
+          "tiktok": "BLOCKED",
+          "youtube": "BLOCKED"
+        },
+        "public_urls": []
+      }
+    },
+    {
+      "id": "museum_sketch",
+      "title": "Το σκίτσο στο μουσείο",
+      "time": "17:00",
+      "series": "emotional_fiction",
+      "fingerprint": "emotional_fiction|museum_guard_weekly_sketcher_discarded_posters_future_exhibition_return",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "card_count": 6,
+      "card_sha256": [
+        "f5608653864ff53fc5d4af13552b400216038ca804c537adaf20d70346db56d0",
+        "9e45ed50c5dbc00b690da62e8529a00ad2c87e0cf1ff23ee10f9a8db4bce5470",
+        "2ed6623218e83978d41f1ca75fd6db53c4917750d2edc6a04174a5d76264b765",
+        "5c2d331a95146fe26e7ec8a367cb5eb926c47a268fe0a57ca769e50854fb9d0f",
+        "347ae931b35906eec3b76770d1c4aff23eb095f119a7207b717dde20b120ad00",
+        "a13b2c81f7255df87920a60cff9989b5631b3619d5c50939ab7c7d65680c9a46"
+      ],
+      "youtube_video_sha256": "047d79f8799a10910db81434993ffa1fe8e743d53ff9398f70b31163e58e9121",
+      "youtube_duration_seconds": 71.958333,
+      "youtube_audio_streams": 0,
+      "metricool": {
+        "native_record": null,
+        "youtube_record": null,
+        "provider_statuses": {
+          "facebook": "BLOCKED",
+          "instagram": "BLOCKED",
+          "tiktok": "BLOCKED",
+          "youtube": "BLOCKED"
+        },
+        "public_urls": []
+      }
+    },
+    {
+      "id": "greece_portugal",
+      "title": "Ελλάδα vs Πορτογαλία",
+      "time": "18:30",
+      "series": "greece_vs_country",
+      "fingerprint": "greece_vs_country|portugal|official_eurostat_2022_2024_definitions_work_housing_health_digital_daily_life",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "card_count": 10,
+      "card_sha256": [
+        "cd621e9b117442ca4a8f81d58c2e14509e5a10840d2506db1f4fd0ae1a7c7050",
+        "a5d3e40a77820d6056c5d5a561d2b3ee9ca879f56ab71352f68d5c6c648f9847",
+        "67ec1dbd15ea12fd4f18168977a7b25ab8729780ba264e6400b1bd7623901e23",
+        "5b4baf4a9a4a0b1a44c6fa5ed4a22469d5db031f6a7e9a2e26c4fe86fb0db7b1",
+        "0e84ae1139da289df36e1c98c0a1c8b23a0e9d8b4ff3b8a4840d03252a300e0a",
+        "d0bb24addcc64ac0c9c421ad5070b243640cbf86be55bc0f142841430c4bb18e",
+        "488cb7b4de3b6324a67e516b7a87bf3b8c05ec8b6f1a981ecb3645c6fdb778a5",
+        "6a10190ee61da630f4ae8b7afbe6afce0fb717eb4af40c3e2c369fe844cd6da2",
+        "339fa70f5f64bd10d9e4cec1c1d4fb7d5b1e18359f341f107135c7ac5256ce9e",
+        "2e926fc4b691432046b31727fc922a9f844da825d03a0c62b9b6751e44e3248e"
+      ],
+      "youtube_video_sha256": "3baa73c0dabf9263e983cd64f1987017f0056733ed9052a3081d83d1904651aa",
+      "youtube_duration_seconds": 122.958333,
+      "youtube_audio_streams": 0,
+      "metricool": {
+        "native_record": null,
+        "youtube_record": null,
+        "provider_statuses": {
+          "facebook": "BLOCKED",
+          "instagram": "BLOCKED",
+          "tiktok": "BLOCKED",
+          "youtube": "BLOCKED"
+        },
+        "public_urls": []
+      }
+    },
+    {
+      "id": "aquarius_libra",
+      "title": "Υδροχόος με ωροσκόπο Ζυγό",
+      "time": "20:00",
+      "series": "zodiac_ascendant",
+      "fingerprint": "zodiac_ascendant|aquarius_libra|original_ideas_fair_dialogue_shared_future",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "card_count": 6,
+      "card_sha256": [
+        "e216bb2ab697ca983504f0f65b8c59085200f6ddbfd314130a67029f52135336",
+        "dc4156c4fdb84c9a43d4a618c3792f0fbe09a583b39a7d259e3501914aea61ec",
+        "eb39d21aeecd2f3e404ed6fecd8f0ae84af49a16792727977e0b56da8403ef93",
+        "01ebc454c770eab5bd3238ca319bd5bfb3d349cbef6a4f33c5e9617d740bcbec",
+        "43720dd918936e367ef881baebb7c0693dd49ede1e8c52e4054ccb85b67ac17d",
+        "06f849261d398ff76a002ea8258454fb821a5ed363e2c8e36eef73fd9f66cacc"
+      ],
+      "youtube_video_sha256": "f9555c931a0c98b38b9d893a21d6aa9055136c2080c080acc73141950209dd4c",
+      "youtube_duration_seconds": 71.958333,
+      "youtube_audio_streams": 0,
+      "metricool": {
+        "native_record": null,
+        "youtube_record": null,
+        "provider_statuses": {
+          "facebook": "BLOCKED",
+          "instagram": "BLOCKED",
+          "tiktok": "BLOCKED",
+          "youtube": "BLOCKED"
+        },
+        "public_urls": []
+      }
+    },
+    {
+      "id": "doormans_watch",
+      "title": "Το χαλασμένο ρολόι του θυρωρού",
+      "time": "22:00",
+      "series": "emotional_fiction",
+      "fingerprint": "emotional_fiction|doorman_broken_watch_tenant_times_kindness_retirement_clock_repaired",
+      "qa_status": "PASSED_FINAL_REVIEW",
+      "card_count": 6,
+      "card_sha256": [
+        "7a305121851322e2e9df3e9fc3627c2d387aa8f5a36eb92926373807860e9444",
+        "cfa1b4ea9bcb52d544c6b2d87e1aa3076bc6d336d69916c5e7b8b925cdd8253f",
+        "cb7539cb0746ea7a76e416331c832571d5fb6f4440b8e54e147abbefdfecb35c",
+        "c7f937be2b68d17f2b0a85cd67206bcdaf9b42a373d046970c90c90734b981e4",
+        "97213bc8da16fae4c4f076c66fd1f3d200ff0e14700ab03bbca5c78ce985a7da",
+        "4d56b0bda02ae3ac7386611425e78673f1c494b6115d6382332d00558055d9a5"
+      ],
+      "youtube_video_sha256": "fef40af3bee7030af4e9840f6351c656c2e59694830bbc6383f38290ebd81941",
+      "youtube_duration_seconds": 72.958333,
+      "youtube_audio_streams": 0,
+      "metricool": {
+        "native_record": null,
+        "youtube_record": null,
+        "provider_statuses": {
+          "facebook": "BLOCKED",
+          "instagram": "BLOCKED",
+          "tiktok": "BLOCKED",
+          "youtube": "BLOCKED"
+        },
+        "public_urls": []
+      }
+    }
+  ]
+}
