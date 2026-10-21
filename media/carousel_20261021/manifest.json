@@ -2,7 +2,7 @@
   "date": "2026-10-21",
   "brand_id": 7076410,
   "program": "CAROUSEL_FOUR_FOUR_ONE_20261016",
-  "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+  "qa_status": "PASSED_FINAL_REVIEW",
   "request_sha256": "0c44ef0b15a84a1a26a78f15deb9e14603d91c16026c9555ba7194427c272efc",
   "paid_charges_eur": 0,
   "generation_credits_used": 0,
@@ -13,7 +13,7 @@
       "time": "07:00",
       "series": "zodiac_ascendant",
       "fingerprint": "zodiac_ascendant|leo_pisces|warm_presence_sensitive_imagination_quiet_courage",
-      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "qa_status": "PASSED_FINAL_REVIEW",
       "cards": [
         {
           "path": "leo_pisces/card_01.jpg",
@@ -133,7 +133,7 @@
       "time": "09:00",
       "series": "emotional_fiction",
       "fingerprint": "emotional_fiction|baker_secret_notebook_neighbours_need_bread_daughter_continues_kindness",
-      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "qa_status": "PASSED_FINAL_REVIEW",
       "cards": [
         {
           "path": "bakers_notebook/card_01.jpg",
@@ -253,7 +253,7 @@
       "time": "11:00",
       "series": "zodiac_ascendant",
       "fingerprint": "zodiac_ascendant|taurus_scorpio|steady_surface_intense_core_loyal_boundaries",
-      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "qa_status": "PASSED_FINAL_REVIEW",
       "cards": [
         {
           "path": "taurus_scorpio/card_01.jpg",
@@ -373,7 +373,7 @@
       "time": "13:00",
       "series": "emotional_fiction",
       "fingerprint": "emotional_fiction|seamstress_four_ribbons_family_moments_blanket_grandchild_legacy",
-      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "qa_status": "PASSED_FINAL_REVIEW",
       "cards": [
         {
           "path": "ribbons_box/card_01.jpg",
@@ -493,7 +493,7 @@
       "time": "15:00",
       "series": "zodiac_ascendant",
       "fingerprint": "zodiac_ascendant|cancer_gemini|tender_memory_restless_words_honest_conversation",
-      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "qa_status": "PASSED_FINAL_REVIEW",
       "cards": [
         {
           "path": "cancer_gemini/card_01.jpg",
@@ -613,7 +613,7 @@
       "time": "17:00",
       "series": "emotional_fiction",
       "fingerprint": "emotional_fiction|museum_guard_weekly_sketcher_discarded_posters_future_exhibition_return",
-      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "qa_status": "PASSED_FINAL_REVIEW",
       "cards": [
         {
           "path": "museum_sketch/card_01.jpg",
@@ -733,7 +733,7 @@
       "time": "18:30",
       "series": "greece_vs_country",
       "fingerprint": "greece_vs_country|portugal|official_eurostat_2022_2024_definitions_work_housing_health_digital_daily_life",
-      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "qa_status": "PASSED_FINAL_REVIEW",
       "cards": [
         {
           "path": "greece_portugal/card_01.jpg",
@@ -917,7 +917,7 @@
       "time": "20:00",
       "series": "zodiac_ascendant",
       "fingerprint": "zodiac_ascendant|aquarius_libra|original_ideas_fair_dialogue_shared_future",
-      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "qa_status": "PASSED_FINAL_REVIEW",
       "cards": [
         {
           "path": "aquarius_libra/card_01.jpg",
@@ -1037,7 +1037,7 @@
       "time": "22:00",
       "series": "emotional_fiction",
       "fingerprint": "emotional_fiction|doorman_broken_watch_tenant_times_kindness_retirement_clock_repaired",
-      "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+      "qa_status": "PASSED_FINAL_REVIEW",
       "cards": [
         {
           "path": "doormans_watch/card_01.jpg",
@@ -1151,5 +1151,28 @@
       },
       "caption": "Το ρολόι είχε σταματήσει στις 07:12 — και κανείς δεν ήξερε γιατί.\n\n«Το χαλασμένο ρολόι του θυρωρού»: μια ολοκληρωμένη ιστορία έξι καρτών για τον χρόνο που χαρίζεται μέσα από μικρές καθημερινές πράξεις.\n\nΠρωτότυπη μυθοπλασία. Πραγματικές αδειοδοτημένες φωτογραφίες Pexels, όχι εικόνες AI.\n\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n\n#Ιστορίες #Χρόνος #Γειτονιά #Ευγνωμοσύνη #ΙστορίεςΠουΜαςΑγγίζουν"
     }
-  ]
+  ],
+  "final_review": {
+    "reviewed_at": "2026-10-21T06:18:00+03:00",
+    "reviewer": "Codex actual visual review",
+    "exact_files_bound": true,
+    "reviewed_card_files": 58,
+    "reviewed_encoded_video_contact_sheets": 9,
+    "checks": [
+      "Greek text and spelling",
+      "hook and complete ending",
+      "card count and order",
+      "scene relevance and distinct visuals",
+      "crop and mobile readability",
+      "exact CTA",
+      "caption and <=5 hashtags",
+      "AI/fiction/astrology disclosure",
+      "YouTube 1080x1920 full-card framing",
+      "per-card reading time >=11s",
+      "no audio stream",
+      "unique card/source/video SHA256"
+    ],
+    "actual_audio_listened": false,
+    "audio_not_applicable_reason": "All nine YouTube slideshows intentionally contain zero audio streams."
+  }
 }
