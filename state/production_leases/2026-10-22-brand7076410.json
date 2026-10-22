@@ -6,7 +6,7 @@
   "timezone": "Europe/Athens",
   "owner": "scheduled-production-20261022",
   "ownership_token": "carousel-20261022-7076410-f48c389a",
-  "status": "ACTIVE_RENDER_ONLY",
+  "status": "BLOCKED_RENDER_AND_MEDIA_TRANSPORT",
   "scope": "render five new zodiac-pair carousels (two humorous, three non-humorous); preserve five exact reviewed unpublished Oct21 packages; no Metricool create until all exact-final QA gates pass",
   "created_at": "2026-10-22T06:05:00+03:00",
   "expires_at": "2026-10-22T09:30:00+03:00",
@@ -18,5 +18,16 @@
   "notion_active_rows_read": 291,
   "notion_archived_rows_read": 0,
   "repository_history_checked": true,
-  "concurrent_session_conflict": false
+  "concurrent_session_conflict": false,
+  "blocked_at": "2026-10-22T06:10:00+03:00",
+  "blocker_codes": [
+    "OCT22_RENDER_MANIFEST_NOT_PRODUCED",
+    "METRICOOL_EXACT_MEDIA_UPLOAD_BRIDGE_UNAVAILABLE"
+  ],
+  "qa_manifest": "media/carousel_20261022/manifest.json",
+  "qa_manifest_live_readback": "404_NOT_FOUND",
+  "qa_status": "NEEDS_EXACT_FINAL_REVIEW",
+  "metricool_records_after_run": 0,
+  "delivery_journal": "state/daily_delivery/carousel_20261022.json",
+  "safe_outcome": "NO_PLACEHOLDER_NO_METRICOOL_CREATE_NO_DUPLICATE_NO_BACKDATE"
 }
