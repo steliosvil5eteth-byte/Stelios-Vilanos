@@ -1,0 +1,120 @@
+{
+  "schema_version": "1.0",
+  "brand_id": 7076410,
+  "brand_name": "Ιστορίες που μας αγγίζουν",
+  "date": "2026-10-22",
+  "timezone": "Europe/Athens",
+  "program": "CAROUSEL_FIVE_FOUR_ONE_20261022",
+  "status": "BLOCKED_RENDER_AND_MEDIA_TRANSPORT",
+  "canonical_config": {
+    "path": "config/carousel_daily_program.json",
+    "blob_sha": "dc783aa721f2eebf30b87d52e77bc65e68500cb0",
+    "commit": "7736dad49b17e8b6463c02e025f06f2dd2449462",
+    "logical_target": 10,
+    "destination_target": 40,
+    "zodiac_carousels": 5,
+    "humorous_zodiac": 2,
+    "non_humorous_zodiac": 3,
+    "emotional_fiction": 4,
+    "greece_vs_country": 1
+  },
+  "reconciliation": {
+    "metricool_live_checked_at": "2026-10-22T06:09:00+03:00",
+    "notion_active_rows_read": 291,
+    "notion_archived_rows_read": 0,
+    "repository_history_and_recent_commits_checked": true,
+    "concurrent_session_conflict": false,
+    "live_baseline_records_for_date": 0,
+    "live_baseline_destinations": 0
+  },
+  "production": {
+    "final_new_packages": 0,
+    "final_new_card_files": 0,
+    "final_new_youtube_videos": 0,
+    "new_exact_final_qa_passed": 0,
+    "prepared_not_final": {
+      "request": "production/carousel_20261022/request.json",
+      "request_blob_sha": "6ec098ff4b170ee31609c1d78d4653d96062515a",
+      "zodiac_candidates": 5,
+      "humorous": 2,
+      "non_humorous": 3,
+      "validator": "six two-sign cards; all 12 signs exactly once; no repeated title/theme/source inside five"
+    },
+    "inherited_unpublished_exact_reviewed_inventory": {
+      "source_delivery": "state/daily_delivery/carousel_20261021.json",
+      "packages": 5,
+      "ids": [
+        "bakers_notebook",
+        "ribbons_box",
+        "museum_sketch",
+        "doormans_watch",
+        "greece_portugal"
+      ],
+      "note": "Existing suitable unpublished final files from 2026-10-21. They remain inventory only and are not counted as Scheduled or Published on 2026-10-22."
+    },
+    "render": {
+      "workflow": ".github/workflows/carousel-20261022-render.yml",
+      "expected_manifest": "media/carousel_20261022/manifest.json",
+      "manifest_live_readback": "404_NOT_FOUND",
+      "status": "NOT_PRODUCED_OR_NOT_COMMITTED",
+      "qa_status": "NEEDS_EXACT_FINAL_REVIEW"
+    }
+  },
+  "metricool": {
+    "baseline_provider_counts": {
+      "PUBLISHED": 0,
+      "SCHEDULED-PENDING": 0,
+      "FAILED": 0,
+      "BLOCKED": 40
+    },
+    "writes_attempted": 0,
+    "reason_no_write": "No complete ten-package exact-final reviewed batch; equivalent media transport methods already rejected on 2026-10-21 and no new supported bridge became available. No blind retry.",
+    "outside_current_program": [
+      {
+        "id": 402663896,
+        "uuid": "-1772720586281627779",
+        "title": "Το παιδί που κανείς δεν βοήθησε",
+        "format": "narrated/AI narrative reel outside carousel program",
+        "providers": {
+          "facebook": {
+            "status": "PUBLISHED",
+            "public_url": "https://facebook.com/reel/4512486365660769"
+          },
+          "instagram": {
+            "status": "PUBLISHED",
+            "public_url": "https://www.instagram.com/reel/DexpzTZj496/"
+          },
+          "tiktok": {
+            "status": "PUBLISHED",
+            "public_url": "https://www.tiktok.com/@steliosvilanos/video/7699276654232816928"
+          },
+          "youtube": {
+            "status": "PUBLISHED",
+            "public_url": "https://www.youtube.com/watch?v=wh8KwHZk800"
+          }
+        },
+        "counted_toward_carousel_target": false
+      }
+    ]
+  },
+  "blockers": [
+    {
+      "code": "OCT22_RENDER_MANIFEST_NOT_PRODUCED",
+      "detail": "After creation/update of request, renderer, active lease and push-trigger workflow, live GitHub readback for media/carousel_20261022/manifest.json remained 404. Without exact final files there is no visual QA or release authority."
+    },
+    {
+      "code": "METRICOOL_EXACT_MEDIA_UPLOAD_BRIDGE_UNAVAILABLE",
+      "detail": "The connected Metricool create tool accepts connector-local mediaFiles, while exact GitHub/Library/executor files were rejected in the preceding live run. No new supported transport appeared; equivalent blind attempts were not repeated."
+    }
+  ],
+  "paid_charges_eur": 0,
+  "generation_credits_used": 0,
+  "future_queue": {
+    "full_qa_passed_scheduled_days": 0,
+    "minimum_required_days": 2,
+    "preferred_days": 3,
+    "scheduled_logical_packages": 0,
+    "scheduled_destinations": 0
+  },
+  "safe_outcome": "NO_PLACEHOLDER_NO_METRICOOL_CREATE_NO_DUPLICATE_NO_BACKDATE"
+}
