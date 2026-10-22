@@ -1,6 +1,6 @@
 """Render 21 Oct carousel candidates from explicitly selected Pexels photos.
 
-A successful render is only a candidate build. It never grants final QA. Zodiac validation requires six two-sign cards covering all 12 signs exactly once.
+A successful render is only a candidate build. It never grants final QA. Zodiac validation requires five different carousels: two humorous, three non-humorous; every carousel has six two-sign cards covering all 12 signs exactly once.
 """
 from __future__ import annotations
 
@@ -151,7 +151,10 @@ def main():
     request = json.loads(REQUEST.read_text())
     assert request["brand_id"] == 7076410
     assert request["date"] == "2026-10-22"
-    assert len(request["posts"]) == 4
+    assert len(request["posts"]) == 5
+    assert sum(p.get("tone") == "humorous" for p in request["posts"]) == 2
+    assert sum(p.get("tone") == "non_humorous" for p in request["posts"]) == 3
+    assert len({p["title"] for p in request["posts"]}) == 5
     OUT.mkdir(parents=True, exist_ok=True)
     manifest = {
         "date": request["date"],
