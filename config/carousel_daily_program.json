@@ -1,22 +1,62 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "program_id": "CAROUSEL_FOUR_FOUR_ONE_20261016",
   "authoritative_for_current_carousel_program": true,
-  "user_instruction_date": "2026-10-15",
+  "user_instruction_date": "2026-10-22",
   "effective_date": "2026-10-16",
   "timezone": "Europe/Athens",
-  "brand": {"id": 7076410, "name": "Ιστορίες που μας αγγίζουν"},
-  "scope_interpretation": "The user's 8,1 is interpreted as eight plus one: four zodiac/ascendant carousels, four emotional stories, and one Greece versus another country comparison. A newer explicit user clarification supersedes this interpretation.",
+  "brand": {
+    "id": 7076410,
+    "name": "Ιστορίες που μας αγγίζουν"
+  },
+  "scope_interpretation": "The user's newer explicit clarification supersedes the earlier ascendant format: keep four daily zodiac carousel slots; each zodiac carousel has six cards, each card pairs exactly two zodiac signs, and all 12 signs appear exactly once in that carousel. The overall daily target remains four zodiac carousels, four emotional stories, and one Greece-versus-country comparison.",
   "daily_logical_posts": 9,
   "daily_provider_deliveries": 36,
   "crosspost_same_logical_set": true,
-  "providers": ["facebook", "instagram", "tiktok", "youtube"],
-  "series": [
-    {"id": "zodiac_ascendant", "daily_count": 4, "cards": 6, "disclosure": "Ψυχαγωγική, συμβολική αστρολογία· όχι επιστημονική πρόβλεψη ή περιγραφή προσωπικότητας."},
-    {"id": "emotional_fiction", "daily_count": 4, "cards": 6, "disclosure": "Πρωτότυπη μυθοπλαστική ιστορία."},
-    {"id": "greece_vs_country", "daily_count": 1, "cards": 10, "one_other_country_per_episode": true, "comparison_scope": ["εργασία και αποδοχές", "κόστος ζωής και στέγαση", "παιδεία", "υγεία", "υποδομές και μεταφορές", "δημόσιες υπηρεσίες", "καθημερινότητα"], "sources": "Use credible primary sources, comparable definitions and years, dates of data, and clear gross/net and purchasing-power distinctions. Never fabricate numbers or national stereotypes. Store sources with the post and include them in the caption/description."}
+  "providers": [
+    "facebook",
+    "instagram",
+    "tiktok",
+    "youtube"
   ],
-  "card_dimensions": {"width": 1080, "height": 1080},
+  "series": [
+    {
+      "id": "zodiac_pairs_all_twelve",
+      "daily_count": 4,
+      "cards": 6,
+      "signs_per_card": 2,
+      "signs_covered_per_carousel": 12,
+      "each_sign_exactly_once_per_carousel": true,
+      "ascendant_format_superseded": true,
+      "disclosure": "Ψυχαγωγική, συμβολική αστρολογία· όχι επιστημονική πρόβλεψη ή περιγραφή προσωπικότητας."
+    },
+    {
+      "id": "emotional_fiction",
+      "daily_count": 4,
+      "cards": 6,
+      "disclosure": "Πρωτότυπη μυθοπλαστική ιστορία."
+    },
+    {
+      "id": "greece_vs_country",
+      "daily_count": 1,
+      "cards": 10,
+      "one_other_country_per_episode": true,
+      "comparison_scope": [
+        "εργασία και αποδοχές",
+        "κόστος ζωής και στέγαση",
+        "παιδεία",
+        "υγεία",
+        "υποδομές και μεταφορές",
+        "δημόσιες υπηρεσίες",
+        "καθημερινότητα"
+      ],
+      "sources": "Use credible primary sources, comparable definitions and years, dates of data, and clear gross/net and purchasing-power distinctions. Never fabricate numbers or national stereotypes. Store sources with the post and include them in the caption/description."
+    }
+  ],
+  "card_dimensions": {
+    "width": 1080,
+    "height": 1080
+  },
   "narration": "none_for_these_series",
   "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
   "max_hashtags": 5,
@@ -30,15 +70,42 @@
     "reconcile_and_produce_local": "06:00",
     "publication_slots_are_editorial_not_performance_claims": true,
     "slots": [
-      {"time": "07:00", "series": "zodiac_ascendant"},
-      {"time": "09:00", "series": "emotional_fiction"},
-      {"time": "11:00", "series": "zodiac_ascendant"},
-      {"time": "13:00", "series": "emotional_fiction"},
-      {"time": "15:00", "series": "zodiac_ascendant"},
-      {"time": "17:00", "series": "emotional_fiction"},
-      {"time": "18:30", "series": "greece_vs_country"},
-      {"time": "20:00", "series": "zodiac_ascendant"},
-      {"time": "22:00", "series": "emotional_fiction"}
+      {
+        "time": "07:00",
+        "series": "zodiac_pairs_all_twelve"
+      },
+      {
+        "time": "09:00",
+        "series": "emotional_fiction"
+      },
+      {
+        "time": "11:00",
+        "series": "zodiac_pairs_all_twelve"
+      },
+      {
+        "time": "13:00",
+        "series": "emotional_fiction"
+      },
+      {
+        "time": "15:00",
+        "series": "zodiac_pairs_all_twelve"
+      },
+      {
+        "time": "17:00",
+        "series": "emotional_fiction"
+      },
+      {
+        "time": "18:30",
+        "series": "greece_vs_country"
+      },
+      {
+        "time": "20:00",
+        "series": "zodiac_pairs_all_twelve"
+      },
+      {
+        "time": "22:00",
+        "series": "emotional_fiction"
+      }
     ],
     "nightly_read_only_audit_local": "23:30",
     "safe_catchup": "Quality before time. Schedule delayed reviewed material only in a safe unoccupied future slot; never backdate or exceed the current daily logical set."
@@ -52,7 +119,11 @@
     "config_platform_growth_strategy_json_role": "Historical narrated-video program only. Its old 15/60 targets and TTS requirements do not define this newer non-narrated carousel program. Do not run the old publisher for this program."
   },
   "quality_gates": {
-    "fresh_reconciliation_sources": ["Metricool brand 7076410 live history and queue", "Notion Social Media Content Archive", "repository history and shared delivery journal"],
+    "fresh_reconciliation_sources": [
+      "Metricool brand 7076410 live history and queue",
+      "Notion Social Media Content Archive",
+      "repository history and shared delivery journal"
+    ],
     "before_every_create": "Repeat live duplicate and concurrent-session checks comparing series, substantive plot/topic, title, hook, caption, fingerprint, numbering and exact media hashes. Existing correct Published or active Scheduled-PENDING provider deliveries must not be recreated.",
     "dedupe": "One original logical story may be sent once to each of the four platforms. Do not recycle it on another day, even with different images or title. Select a genuinely different replacement for duplicate topics.",
     "exact_final_review": "Inspect all the actual final images/videos, Greek text, spelling, order, card count, scene relevance, crop, mobile readability, CTA, caption, hashtags, duration, actual audio where present, platform format and AI/fiction disclosure. Metadata, render success or an old approval do not pass QA. Bind PASSED_FINAL_REVIEW to the exact hashes.",
@@ -64,7 +135,34 @@
     "unresolved_source_disagreement": "Do not publish uncertain material. Reconcile the specific disagreement with current evidence."
   },
   "cost_policy": "FREE_ONLY: no purchased credits, new charges, upgrades, premium generation or limit circumvention.",
-  "queue_target": {"minimum_complete_days": 2, "preferred_complete_days": 3, "logical_packages": [18, 27], "drafts_and_placeholders_do_not_count": true},
+  "queue_target": {
+    "minimum_complete_days": 2,
+    "preferred_complete_days": 3,
+    "logical_packages": [
+      18,
+      27
+    ],
+    "drafts_and_placeholders_do_not_count": true
+  },
   "notion_policy_page_id": "3e5f2345-b318-812d-a35a-f980ed6d873a",
-  "known_duplicate_exclusion": "Λέων με ωροσκόπο Σκορπιό — already published on 14 October 2026 to all four platforms; do not repost."
+  "known_duplicate_exclusion": "Λέων με ωροσκόπο Σκορπιό — already published on 14 October 2026 to all four platforms; do not repost.",
+  "zodiac_pairing_rule": {
+    "effective_date": "2026-10-22",
+    "wording": "Καρουζέλ έξι καρτών με δύο ζώδια ανά κάρτα, ώστε να καλύπτονται όλα τα ζώδια.",
+    "required_signs": [
+      "Κριός",
+      "Ταύρος",
+      "Δίδυμοι",
+      "Καρκίνος",
+      "Λέων",
+      "Παρθένος",
+      "Ζυγός",
+      "Σκορπιός",
+      "Τοξότης",
+      "Αιγόκερως",
+      "Υδροχόος",
+      "Ιχθύες"
+    ],
+    "validation": "Exactly six pairs; no repeated or omitted sign within the same carousel."
+  }
 }
