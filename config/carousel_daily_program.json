@@ -1,17 +1,17 @@
 {
-  "schema_version": 2,
-  "program_id": "CAROUSEL_FOUR_FOUR_ONE_20261016",
+  "schema_version": 3,
+  "program_id": "CAROUSEL_FIVE_FOUR_ONE_20261022",
   "authoritative_for_current_carousel_program": true,
   "user_instruction_date": "2026-10-22",
-  "effective_date": "2026-10-16",
+  "effective_date": "2026-10-22",
   "timezone": "Europe/Athens",
   "brand": {
     "id": 7076410,
     "name": "Ιστορίες που μας αγγίζουν"
   },
-  "scope_interpretation": "The user's newer explicit clarification supersedes the earlier ascendant format: keep four daily zodiac carousel slots; each zodiac carousel has six cards, each card pairs exactly two zodiac signs, and all 12 signs appear exactly once in that carousel. The overall daily target remains four zodiac carousels, four emotional stories, and one Greece-versus-country comparison.",
-  "daily_logical_posts": 9,
-  "daily_provider_deliveries": 36,
+  "scope_interpretation": "Newest explicit instruction: five different daily zodiac carousels, exactly two humorous and three non-humorous. Each zodiac carousel has six cards, exactly two different signs per card, and covers all 12 signs exactly once. This replaces only the earlier zodiac count/structure. Together with the preserved four emotional-fiction slots and one Greece-versus-country comparison, the daily target is ten logical posts and forty provider deliveries.",
+  "daily_logical_posts": 10,
+  "daily_provider_deliveries": 40,
   "crosspost_same_logical_set": true,
   "providers": [
     "facebook",
@@ -22,13 +22,16 @@
   "series": [
     {
       "id": "zodiac_pairs_all_twelve",
-      "daily_count": 4,
+      "daily_count": 5,
       "cards": 6,
       "signs_per_card": 2,
       "signs_covered_per_carousel": 12,
       "each_sign_exactly_once_per_carousel": true,
       "ascendant_format_superseded": true,
-      "disclosure": "Ψυχαγωγική, συμβολική αστρολογία· όχι επιστημονική πρόβλεψη ή περιγραφή προσωπικότητας."
+      "disclosure": "Ψυχαγωγική, συμβολική αστρολογία· όχι επιστημονική πρόβλεψη ή περιγραφή προσωπικότητας.",
+      "humorous_daily_count": 2,
+      "non_humorous_daily_count": 3,
+      "no_reused_images_or_themes_between_the_five": true
     },
     {
       "id": "emotional_fiction",
@@ -73,6 +76,11 @@
       {
         "time": "07:00",
         "series": "zodiac_pairs_all_twelve"
+      },
+      {
+        "time": "08:00",
+        "series": "zodiac_pairs_all_twelve",
+        "tone": "humorous"
       },
       {
         "time": "09:00",
@@ -139,8 +147,8 @@
     "minimum_complete_days": 2,
     "preferred_complete_days": 3,
     "logical_packages": [
-      18,
-      27
+      20,
+      30
     ],
     "drafts_and_placeholders_do_not_count": true
   },
@@ -163,6 +171,14 @@
       "Υδροχόος",
       "Ιχθύες"
     ],
-    "validation": "Exactly six pairs; no repeated or omitted sign within the same carousel."
+    "validation": "Exactly six pairs; no repeated or omitted sign within the same carousel.",
+    "daily_carousels": 5,
+    "humorous_carousels": 2,
+    "non_humorous_carousels": 3
+  },
+  "latest_repository_instruction": {
+    "source": "docs/VIDEO_PRODUCTION_RULES_2026-10-22.md",
+    "commit": "61da19f5a74e2efe16983aef501737b8dce2964d",
+    "effect": "Five zodiac carousels; two humorous; three non-humorous; six two-sign cards covering all 12 exactly once."
   }
 }
