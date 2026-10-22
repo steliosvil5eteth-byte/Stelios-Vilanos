@@ -38,7 +38,9 @@ jobs:
           assert lease['status'] in {'ACTIVE_RENDER_ONLY','ACTIVE_RELEASE'}
           assert datetime.datetime.now(datetime.timezone.utc)<datetime.datetime.fromisoformat(lease['expires_at'])
           assert req['cost']=={'paid_charges_eur':0,'generation_credits_used':0,'new_credits_purchased':0}
-          assert len(req['posts'])==4
+          assert len(req['posts'])==5
+          assert sum(p.get('tone')=='humorous' for p in req['posts'])==2
+          assert sum(p.get('tone')=='non_humorous' for p in req['posts'])==3
           assert all(p['series']=='zodiac_pairs_all_twelve' for p in req['posts'])
           assert len({p['fingerprint'] for p in req['posts']})==9
           PY
