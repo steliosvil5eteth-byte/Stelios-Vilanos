@@ -1,0 +1,3 @@
+# Audio draft v9 — 2026-10-29
+
+Generated locally with free eSpeak Greek voice (145 wpm): 80 individual WAV scene clips and 5 concatenated WAV story previews. Durations measured from WAV headers: 2026-10-29-01 150.859s; -03 149.660s; -05 142.956s; -07 133.952s; -09 137.457s. CSV scene start/end timestamps generated from audio durations. Validation passed for 80 rows, five complete files and positive scene timings. Audio is robotic, not release quality. No images, final edits, paid credits, or publication. Archive originality remains unverified. Local ZIP: social_audio_drafts_v9.zip (conversation artifact; not stored in repository).
