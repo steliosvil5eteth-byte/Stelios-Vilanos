@@ -58,6 +58,21 @@ class ControlCenterTests(unittest.TestCase):
         m["items"][0]["cost_eur"] = 1
         self.assertFalse(audit(m)["ready"])
 
+    def test_missing_cost_blocks(self):
+        m = valid_manifest()
+        m["items"][0].pop("cost_eur")
+        self.assertFalse(audit(m)["ready"])
+
+    def test_published_item_blocks(self):
+        m = valid_manifest()
+        m["items"][0]["published"] = True
+        self.assertFalse(audit(m)["ready"])
+
+    def test_unknown_published_status_blocks(self):
+        m = valid_manifest()
+        m["items"][0].pop("published")
+        self.assertFalse(audit(m)["ready"])
+
     def test_missing_qa_blocks(self):
         m = valid_manifest()
         m["items"][0]["qa_status"] = "draft"
