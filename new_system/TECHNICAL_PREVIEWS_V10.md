@@ -1,0 +1,3 @@
+# Technical timing previews v10
+
+On 2026-10-28, created five MP4 files with 16 timed abstract placeholder scenes each, synchronized to free robotic Greek audio drafts. FFprobe-verified durations (seconds): story 01 150.900; story 03 149.700; story 05 142.956; story 07 133.952; story 09 137.500. These are timing previews only: no photorealistic story images, no natural narration, no release approval, no originality certification, no publishing. The five videos are distributed in conversation ZIP social_timing_previews_v10.zip and are not stored in this repository. Next: render and inspect actual scene images, replace temporary audio with approved natural Greek voice, then re-render and manually QA.
