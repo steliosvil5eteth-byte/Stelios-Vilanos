@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-28",
+  "timezone": "Europe/Athens",
+  "read_only": true,
+  "brands": [
+    {
+      "brand_id": 7000636,
+      "returned_posts": 0
+    },
+    {
+      "brand_id": 7076410,
+      "returned_posts": 3,
+      "post_ids": [
+        408608949,
+        408648236,
+        408831146
+      ],
+      "tiktok_pending_confirmation_post_id": 408648236
+    }
+  ],
+  "scope": "One-day provider readback only; no claim about other dates or external posts",
+  "writes": 0,
+  "retry_allowed": false
+}
