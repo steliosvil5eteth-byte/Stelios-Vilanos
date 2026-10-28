@@ -1,0 +1,3 @@
+# Scene asset inventory v12
+
+2026-10-28: 5 draft stories, 80 planned independent images. File-system inventory under rendered_scenes: **0/80 independent scene image assets**. A new image-generation attempt returned a composite grid, which is not acceptable as a scene asset; no collage was cropped or passed as an individual photograph. Created local CSV with each story ID, scene number, expected filename, image prompt, and MISSING status. Technical and visual release gates remain blocked. Next safe step: generate individual images one at a time, verify 1080x1080 dimensions and manual content QA, then update inventory. No publishing or paid provider credits.
