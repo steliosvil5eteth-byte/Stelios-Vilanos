@@ -1,0 +1,19 @@
+{
+  "checked_at": "2026-10-28",
+  "source": "Notion Social Media Content Archive",
+  "source_id": "collection://46cd5cf4-5f7e-46e8-b0ef-274aeadbdb52",
+  "retrieval": "read-only SQL pages LIMIT 100 OFFSET 0,100,200",
+  "rows_retrieved": 291,
+  "source_row_count": 291,
+  "missing_title": 0,
+  "missing_hook": 86,
+  "missing_fingerprint": 3,
+  "duplicate_normalized_title_groups": 2,
+  "duplicate_normalized_hook_groups": 0,
+  "duplicate_normalized_fingerprint_groups": 1,
+  "archived_rows_verified": false,
+  "live_metricool_crosscheck": false,
+  "history_checked": false,
+  "publication_enabled": false,
+  "notes": "Snapshot is an aggregate audit only. No archive row content copied to GitHub. Active source count alone does not prove full historic completeness."
+}
