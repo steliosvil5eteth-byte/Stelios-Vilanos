@@ -1,0 +1,3 @@
+# First story scene 01 — visual QA 2026-10-28
+
+Created a **review-only** crop from the latest 4×4 composite. The source cell was 374×246 pixels and was upscaled to 1080×1080; no grid lines remain. It depicts a stranger unlocking a wooden workshop with Antonis nearby, but not correctly across the street as in the canonical narration. **REJECTED_FOR_FINAL_USE**: upscaling cannot recover source detail, and framing mismatches script. This does not count toward 16 approved images. A local ZIP `first_story_scene01_review.zip` includes the test JPEG and JSON QA. Next step is independently rendered high-resolution scene 01 with correct blocking, not more composites. No publishing or paid credits.
