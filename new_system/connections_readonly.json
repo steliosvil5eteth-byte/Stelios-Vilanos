@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "mode": "READ_ONLY",
+  "external_writes_enabled": false,
+  "publication_enabled": false,
+  "paid_api_calls_enabled": false,
+  "brand_id": 7076410,
+  "timezone": "Europe/Athens",
+  "notion": {
+    "control_center_page_id": "3ddf2345-b318-8072-b484-e2242388f6cc",
+    "archive_database_id": "38724259-aa51-43d0-9dc3-b8cf606577b1",
+    "publishing_proof_page_id": "3e0f2345-b318-81e7-bb18-d0888bc4041e",
+    "verification": "read_access_confirmed",
+    "row_level_history_reconciled": false
+  },
+  "checks": {
+    "archive_deduplication": "PENDING",
+    "source_verification": "PENDING",
+    "publication_proof": "PENDING",
+    "credit_cost_guard": "BLOCK_ALL_UNKNOWN"
+  }
+}
