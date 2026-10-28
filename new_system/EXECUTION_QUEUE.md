@@ -27,3 +27,9 @@ Do not declare COMPLETE until a **single** canonical story passes all gates: com
 - Metricool 2026-10-28 readback: 3 main-brand posts, 0 second-brand posts for that day only; TikTok confirmation pending for one.
 - Notion 291 active rows examined; archived coverage unverified.
 - Offline drafts, robotic WAV previews and placeholder MP4 are **not release-ready**.
+
+## GitHub Actions improvement — 2026-10-28
+- Added `.github/workflows/new-system-audit.yml` on isolated branch, triggered on branch pushes affecting `new_system/**` and by manual dispatch.
+- Runs offline Python unittest discovery and checks sample manifest does not enable publishing. No external provider actions or credentials.
+- **Execution result not yet verified**; do not call the workflow passing until its run is inspected.
+- GitHub scheduled workflows require default-branch presence; this branch-only workflow is not an always-on scheduled worker.
