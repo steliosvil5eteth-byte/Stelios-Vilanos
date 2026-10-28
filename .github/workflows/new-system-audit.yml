@@ -33,3 +33,19 @@ jobs:
               assert d.get("publishing_enabled") is not True, "Unsafe manifest"
           print("Offline-only release gate passed")
           PY
+      - name: Generate offline execution report
+        shell: bash
+        run: |
+          python new_system/offline_runner.py --output offline_status.json
+          python - <<'PY'
+          import json
+          x=json.load(open('offline_status.json'))
+          assert x['publishing_enabled'] is False
+          assert x['external_writes'] == 0
+          assert x['slot_count'] == 10
+          PY
+      - uses: actions/upload-artifact@v4
+        with:
+          name: offline-execution-status
+          path: offline_status.json
+          retention-days: 7
