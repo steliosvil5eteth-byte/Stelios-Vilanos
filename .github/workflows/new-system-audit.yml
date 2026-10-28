@@ -1,0 +1,35 @@
+name: New system offline audit
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - new-system/control-center-v1
+    paths:
+      - 'new_system/**'
+      - '.github/workflows/new-system-audit.yml'
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Offline tests
+        shell: bash
+        run: |
+          set -euo pipefail
+          python --version
+          python -m unittest discover -s new_system/tests -v
+      - name: Check no live publishing is enabled
+        shell: bash
+        run: |
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          p = Path("new_system/sample_manifest.json")
+          if p.exists():
+              d = json.loads(p.read_text(encoding="utf-8"))
+              assert d.get("publishing_enabled") is not True, "Unsafe manifest"
+          print("Offline-only release gate passed")
+          PY
