@@ -1,0 +1,35 @@
+{
+  "checked_date": "2026-10-28",
+  "brand_id": 7076410,
+  "source": "Metricool provider readback",
+  "posts": [
+    {
+      "id": 408608949,
+      "scheduled_local": "08:55",
+      "facebook": "PUBLISHED",
+      "instagram": "PUBLISHED",
+      "tiktok": "PUBLISHED",
+      "youtube": "PUBLISHED"
+    },
+    {
+      "id": 408648236,
+      "scheduled_local": "10:00",
+      "facebook": "PUBLISHED",
+      "instagram": "PUBLISHED",
+      "tiktok": "AWAITING_CONFIRMATION",
+      "youtube": "PUBLISHED",
+      "tiktok_action": "HOLD_NO_RETRY"
+    },
+    {
+      "id": 408831146,
+      "scheduled_local": "13:35",
+      "facebook": "PUBLISHED",
+      "instagram": "PUBLISHED",
+      "tiktok": "PUBLISHED",
+      "youtube": "PUBLISHED"
+    }
+  ],
+  "writes_performed": 0,
+  "auto_publish_enabled_by_new_system": false,
+  "notes": "Provider readback only. Not a full archive reconciliation. No retries."
+}
