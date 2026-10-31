@@ -1,0 +1,90 @@
+{
+  "schema_version": 1,
+  "strategy_id": "YOUTUBE_ZODIAC_20_DAILY_20261031",
+  "program_label": "YOUTUBE_ZODIAC_20_DAILY",
+  "effective_at": "2026-10-31T06:00:00+02:00",
+  "authoritative_for_series": true,
+  "supersedes": [
+    "METRICOOL_HEYGEN_CHANGE_WATCH",
+    "YOUTUBE_ZODIAC_MANUAL_UPLOAD_ONLY"
+  ],
+  "scope": {
+    "provider": "youtube",
+    "brand_id": 7076410,
+    "brand_name": "Ιστορίες που μας αγγίζουν",
+    "channel_id": "UCAGfj9lX7tz17W1wc82v9oA",
+    "handle": "@osios",
+    "other_platforms_allowed": false
+  },
+  "daily_target": {
+    "shorts": 20,
+    "timezone": "Europe/Athens",
+    "first_production_check": "06:00",
+    "last_slot": "23:30",
+    "no_backdate": true,
+    "quality_first": true
+  },
+  "creative": {
+    "cards_per_short": 6,
+    "signs_per_card": 2,
+    "all_12_signs_exactly_once": true,
+    "ascendant_required_for_each_sign": true,
+    "max_duration_seconds": 30,
+    "width": 1080,
+    "height": 1920,
+    "video_codec": "H.264",
+    "pixel_format": "yuv420p",
+    "fps": 30,
+    "audio_codec": "AAC",
+    "narration": false,
+    "music": "one rights-cleared instrumental layer",
+    "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+    "max_hashtags": 5,
+    "disclosure": "Ψυχαγωγική συμβολική αστρολογία· εικόνες με χρήση AI όπου εφαρμόζεται."
+  },
+  "execution": {
+    "user_authorized": true,
+    "production_allowed": true,
+    "scheduling_allowed": true,
+    "publication_allowed": true,
+    "zero_additional_cost": true,
+    "fail_closed": true,
+    "common_lease_and_journal_required": true,
+    "full_metricool_notion_and_two_repository_reconciliation_required": true,
+    "exact_final_visual_and_audio_review_required": true,
+    "review_bound_to_sha256": true,
+    "no_blind_retry": true,
+    "live_readback_required": true
+  },
+  "current_run": {
+    "date": "2026-10-31",
+    "status": "BLOCKED_INCOMPLETE_REQUIRED_REPOSITORY_RECONCILIATION",
+    "metricool_brand_verified": true,
+    "youtube_channel_verified": true,
+    "notion_active_rows_read": 291,
+    "notion_archived_rows_read": 0,
+    "notion_pagination_complete": true,
+    "todays_existing_metricool_record": {
+      "id": 412034327,
+      "time": "12:00",
+      "youtube_status": "PENDING",
+      "providers": [
+        "facebook",
+        "instagram",
+        "tiktok",
+        "youtube"
+      ],
+      "belongs_to_zodiac_series": false
+    },
+    "required_repository_1": "steliosvil5eteth-byte/Stelios-Vilanos",
+    "required_repository_1_status": "READ_OK",
+    "required_repository_2": "steliosvil5eteth-byte/social-media-automation",
+    "required_repository_2_status": "NOT_FOUND_OR_NOT_CONNECTED",
+    "produced": 0,
+    "scheduled_pending": 0,
+    "published": 0,
+    "failed": 0,
+    "blocked": 20,
+    "reason": "Fresh duplicate/history reconciliation cannot be called complete while the second explicitly required repository is inaccessible. No media generation, Metricool create, scheduling, upload, or retry was attempted."
+  }
+}
