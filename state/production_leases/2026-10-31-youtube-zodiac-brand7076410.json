@@ -1,0 +1,22 @@
+{
+  "schema": "YOUTUBE_ZODIAC_20_DAILY_LEASE_V1",
+  "date": "2026-10-31",
+  "brand_id": 7076410,
+  "provider": "youtube",
+  "timezone": "Europe/Athens",
+  "owner": "scheduled-automation-6ab86c66195c8191b86b6aa17c99609b",
+  "acquired_at": "2026-10-31T11:55:00+02:00",
+  "status": "BLOCKED_RELEASED",
+  "released_at": "2026-10-31T11:58:00+02:00",
+  "reconciliation": {
+    "metricool": "COMPLETE_FOR_REQUESTED_RANGE",
+    "notion_active_rows": 291,
+    "notion_archived_rows": 0,
+    "notion_complete": true,
+    "repository_stelios_vilanos": "OK",
+    "repository_social_media_automation": "NOT_FOUND_OR_NOT_CONNECTED"
+  },
+  "blocker_code": "REQUIRED_SECOND_REPOSITORY_UNAVAILABLE",
+  "safe_outcome": "NO_MEDIA_GENERATION_NO_METRICOOL_CREATE_NO_UPLOAD_NO_RETRY_NO_BACKDATE",
+  "delivery_journal": "state/daily_delivery/youtube_zodiac_20261031.json"
+}
