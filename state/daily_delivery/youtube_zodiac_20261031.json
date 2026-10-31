@@ -1,0 +1,21 @@
+{
+  "schema": "YOUTUBE_ZODIAC_20_DAILY_JOURNAL_V1",
+  "date": "2026-10-31",
+  "brand_id": 7076410,
+  "channel_id": "UCAGfj9lX7tz17W1wc82v9oA",
+  "timezone": "Europe/Athens",
+  "target": 20,
+  "existing_unrelated_youtube_pending": 1,
+  "existing_unrelated_metricool_id": 412034327,
+  "counts": {
+    "published": 0,
+    "scheduled_pending": 0,
+    "failed": 0,
+    "blocked": 20,
+    "qa_passed_files": 0
+  },
+  "blocked_reason": "Full required history gate failed because steliosvil5eteth-byte/social-media-automation returned 404/not connected. Exact-final MP4 audio review also not reached because production was not authorized past the history gate.",
+  "writes": [],
+  "no_blind_retry": true,
+  "last_updated_at": "2026-10-31T11:58:00+02:00"
+}
