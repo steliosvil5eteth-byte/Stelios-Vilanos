@@ -62,15 +62,69 @@
   },
   "current_run": {
     "date": "2026-11-01",
-    "status": "PREPARED_ONE_AWAITING_FINAL_AUDIO_REVIEW",
+    "status": "ONE_USER_APPROVED_SCHEDULED_PENDING",
     "produced": 1,
-    "scheduled_pending": 0,
+    "scheduled_pending": 1,
     "published": 0,
     "remaining_to_produce": 19,
     "exact_audio_listening_completed": false,
     "technical_audio_decode_passed": true,
     "requested_first_slot": "2026-11-01T10:00:00+02:00",
-    "library_file_id": "libfile_83c4a62fa9b881918066a035df508127"
+    "library_file_id": "libfile_83c4a62fa9b881918066a035df508127",
+    "user_final_approval": true,
+    "assistant_audio_listened": false,
+    "final_review_basis": "Assistant visual and technical review plus user's explicit final audio/content approval in this conversation.",
+    "sha256": "a0f872c2854910304411f8d9826c28e69a5f0a82646e4576ca060536721e7a18",
+    "metricool_post": {
+      "id": 413254247,
+      "publicationDate": {
+        "dateTime": "2026-11-01T22:40:00",
+        "timezone": "Europe/Athens"
+      },
+      "creationDate": {
+        "dateTime": "2026-11-01T22:31:00",
+        "timezone": "Europe/Athens"
+      },
+      "text": "Ακυρώθηκε η έξοδος. Εσύ τι κάνεις;\n12 ζώδια και 12 ωροσκόποι σε έξι μικρές σκηνές. Ποια αντίδραση σου ταιριάζει;\nΨυχαγωγική συμβολική αστρολογία. Φωτορεαλιστικές εικόνες δημιουργημένες με AI.\nΑν σας άρεσε, ακολουθήστε για περισσότερα.\n#Ζώδια #Ωροσκόπος #Αστρολογία #Χιούμορ #Shorts",
+      "firstCommentText": "",
+      "providers": [
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "media": [
+        "https://static.metricool.com/planner/202611/7000636-file-310909290441264500.mp4"
+      ],
+      "autoPublish": true,
+      "saveExternalMediaFiles": false,
+      "mediaAltText": [
+        null
+      ],
+      "shortener": false,
+      "draft": false,
+      "imageVariants": false,
+      "twitterData": {
+        "type": "POST"
+      },
+      "instagramData": {
+        "autoPublish": true,
+        "isAiGenerated": false
+      },
+      "youtubeData": {
+        "title": "Ακυρώθηκε η έξοδος! Ζώδια και ωροσκόπος #Shorts",
+        "type": "video",
+        "privacy": "public",
+        "madeForKids": false,
+        "isAiGeneratedContent": true
+      },
+      "hasNotReadNotes": false,
+      "uuid": "-1969495138997812162",
+      "creatorUserMail": "stelios.vil5eteth@gmail.com",
+      "creatorUserId": 5403385,
+      "brandTags": []
+    }
   },
   "configuration_update": {
     "date": "2026-11-01",
