@@ -337,9 +337,13 @@ def finish_video(job,work,outdir):
     if abs(w/h-9/16)>.03 or w%2 or h%2: raise ValueError('Original must be an even-sized vertical 9:16 video')
     scale=min(1,1080/w,1920/h);w=int(w*scale)//2*2;h=int(h*scale)//2*2; card=work/'cta.png';end_card((w,h)).save(card)
     if not any(s['codec_type']=='audio' for s in meta['streams']): raise ValueError('Expected narrated original with an audio stream')
-    out=outdir/(job['id']+'.mp4'); filters=f'[0:v]scale={w}:{h},setsar=1,fps=25,format=yuv420p,setpts=PTS-STARTPTS[v0];[0:a]aresample=48000,aformat=channel_layouts=stereo,asetpts=PTS-STARTPTS[a0];[1:v]setsar=1,fps=25,format=yuv420p,trim=duration=4,setpts=PTS-STARTPTS[v1];[2:a]atrim=duration=4,asetpts=PTS-STARTPTS[a1];[v0][a0][v1][a1]concat=n=2:v=1:a=1[v][a]'
-    run(['ffmpeg','-y','-v','error','-i',str(src),'-loop','1','-framerate','25','-i',str(card),'-f','lavfi','-i','anullsrc=r=48000:cl=stereo','-filter_complex',filters,'-map','[v]','-map','[a]','-c:v','libx264','-preset','veryfast','-crf','22','-threads','2','-c:a','aac','-b:a','128k','-movflags','+faststart',str(out)])
+    out=outdir/(job['id']+'.mp4'); filters=f'[0:v]scale={w}:{h},setsar=1,fps=30,format=yuv420p,setpts=PTS-STARTPTS[v0];[0:a]aresample=48000,aformat=channel_layouts=stereo,asetpts=PTS-STARTPTS[a0];[1:v]setsar=1,fps=30,format=yuv420p,trim=duration=4,setpts=PTS-STARTPTS[v1];[2:a]atrim=duration=4,asetpts=PTS-STARTPTS[a1];[v0][a0][v1][a1]concat=n=2:v=1:a=1[v][a]'
+    run(['ffmpeg','-y','-v','error','-i',str(src),'-loop','1','-framerate','30','-i',str(card),'-f','lavfi','-i','anullsrc=r=48000:cl=stereo','-filter_complex',filters,'-map','[v]','-map','[a]','-c:v','libx264','-preset','veryfast','-crf','22','-threads','2','-c:a','aac','-b:a','128k','-movflags','+faststart',str(out)])
     final=probe(out);dl=float(final['format']['duration'])
+    video_stream=next(s for s in final['streams'] if s['codec_type']=='video')
+    audio_stream=next(s for s in final['streams'] if s['codec_type']=='audio')
+    if video_stream['codec_name']!='h264' or video_stream.get('avg_frame_rate')!='30/1' or audio_stream['codec_name']!='aac':
+        raise ValueError('Platform export must be H.264 + constant 30 FPS + AAC')
     if abs(dl-(length+4))>.3: raise ValueError(f'Duration mismatch {length}->{dl}')
     run(['ffmpeg','-v','error','-i',str(out),'-f','null','-'])
     for label,sec in [('opening',1),('middle',length/2),('ending',dl-2)]:
