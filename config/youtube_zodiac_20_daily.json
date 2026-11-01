@@ -22,7 +22,10 @@
     "first_production_check": "06:00",
     "last_slot": "23:30",
     "no_backdate": true,
-    "quality_first": true
+    "quality_first": true,
+    "counting_scope": "automated_youtube_zodiac_series_only",
+    "user_uploads_are_additional": true,
+    "user_uploads_reduce_target": false
   },
   "creative": {
     "cards_per_short": 6,
