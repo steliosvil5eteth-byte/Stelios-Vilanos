@@ -1,0 +1,185 @@
+{
+  "schema": "YOUTUBE_ZODIAC_20_DAILY_JOURNAL_V1",
+  "date": "2026-11-02",
+  "brand_id": 7076410,
+  "channel_id": "UCAGfj9lX7tz17W1wc82v9oA",
+  "timezone": "Europe/Athens",
+  "target": 20,
+  "automated_series_count": 0,
+  "user_extra_count_rolling_24h": 10,
+  "counts": {
+    "produced": 0,
+    "qa_passed": 0,
+    "scheduled_pending": 0,
+    "published": 0,
+    "failed": 0,
+    "blocked": 0
+  },
+  "plans": [
+    {
+      "index": 1,
+      "title": "Το ξυπνητήρι χτυπά τρίτη φορά",
+      "hook": "Ποιο ζώδιο σηκώνεται και ποιο πατά αναβολή;",
+      "fingerprint": "youtube_zodiac_20261102_01_το_ξυπνητηρι_χτυπα_τριτη_φορα",
+      "duplicate_match": false,
+      "slot": "07:05"
+    },
+    {
+      "index": 2,
+      "title": "Ένα απρόσμενο κομπλιμέντο",
+      "hook": "Πώς αντιδρά κάθε ζώδιο όταν το αιφνιδιάζουν όμορφα;",
+      "fingerprint": "youtube_zodiac_20261102_02_ενα_απροσμενο_κομπλιμεντο",
+      "duplicate_match": false,
+      "slot": "07:58"
+    },
+    {
+      "index": 3,
+      "title": "Η μπαταρία έμεινε στο 1%",
+      "hook": "Ποιος πανικοβάλλεται και ποιος απολαμβάνει την ησυχία;",
+      "fingerprint": "youtube_zodiac_20261102_03_η_μπαταρια_εμεινε_στο_1_",
+      "duplicate_match": false,
+      "slot": "08:51"
+    },
+    {
+      "index": 4,
+      "title": "Ένα ταξίδι-έκπληξη",
+      "hook": "Ποιο ζώδιο φτιάχνει βαλίτσα σε πέντε λεπτά;",
+      "fingerprint": "youtube_zodiac_20261102_04_ενα_ταξιδι_εκπληξη",
+      "duplicate_match": false,
+      "slot": "09:44"
+    },
+    {
+      "index": 5,
+      "title": "Μήνυμα από τον πρώην",
+      "hook": "Ποιος απαντά και ποιος αφήνει το κινητό ανάποδα;",
+      "fingerprint": "youtube_zodiac_20261102_05_μηνυμα_απο_τον_πρωην",
+      "duplicate_match": false,
+      "slot": "10:37"
+    },
+    {
+      "index": 6,
+      "title": "Η πρώτη μέρα στη νέα δουλειά",
+      "hook": "Ποιος μιλά σε όλους και ποιος παρατηρεί πρώτα;",
+      "fingerprint": "youtube_zodiac_20261102_06_η_πρωτη_μερα_στη_νεα_δουλεια",
+      "duplicate_match": false,
+      "slot": "11:30"
+    },
+    {
+      "index": 7,
+      "title": "Η συνταγή απέτυχε",
+      "hook": "Ποιος παραγγέλνει και ποιος ξαναρχίζει από την αρχή;",
+      "fingerprint": "youtube_zodiac_20261102_07_η_συνταγη_απετυχε",
+      "duplicate_match": false,
+      "slot": "12:23"
+    },
+    {
+      "index": 8,
+      "title": "Τα κλειδιά χάθηκαν",
+      "hook": "Ποιος ψάχνει ψύχραιμα και ποιος κατηγορεί το σύμπαν;",
+      "fingerprint": "youtube_zodiac_20261102_08_τα_κλειδια_χαθηκαν",
+      "duplicate_match": false,
+      "slot": "13:16"
+    },
+    {
+      "index": 9,
+      "title": "Ένας κρυφός θαυμαστής",
+      "hook": "Ποιος λιώνει και ποιος ζητά αποδείξεις;",
+      "fingerprint": "youtube_zodiac_20261102_09_ενας_κρυφος_θαυμαστης",
+      "duplicate_match": false,
+      "slot": "14:09"
+    },
+    {
+      "index": 10,
+      "title": "Η πρώτη γνωριμία με τα πεθερικά",
+      "hook": "Ποιος κερδίζει τις εντυπώσεις χωρίς προσπάθεια;",
+      "fingerprint": "youtube_zodiac_20261102_10_η_πρωτη_γνωριμια_με_τα_πεθερικα",
+      "duplicate_match": false,
+      "slot": "15:02"
+    },
+    {
+      "index": 11,
+      "title": "Πρόσκληση για καραόκε",
+      "hook": "Ποιος πιάνει μικρόφωνο και ποιος κρύβεται;",
+      "fingerprint": "youtube_zodiac_20261102_11_προσκληση_για_καραοκε",
+      "duplicate_match": false,
+      "slot": "15:55"
+    },
+    {
+      "index": 12,
+      "title": "Μικρό κέρδος στο λαχείο",
+      "hook": "Ποιος κερνά και ποιος ανοίγει λογαριασμό αποταμίευσης;",
+      "fingerprint": "youtube_zodiac_20261102_12_μικρο_κερδος_στο_λαχειο",
+      "duplicate_match": false,
+      "slot": "16:48"
+    },
+    {
+      "index": 13,
+      "title": "Ο γείτονας κάνει πάρτι",
+      "hook": "Ποιος χορεύει και ποιος κοιτά το ρολόι;",
+      "fingerprint": "youtube_zodiac_20261102_13_ο_γειτονας_κανει_παρτι",
+      "duplicate_match": false,
+      "slot": "17:41"
+    },
+    {
+      "index": 14,
+      "title": "Έστειλες μήνυμα σε λάθος άτομο",
+      "hook": "Ποιος το σώζει και ποιος θέλει να εξαφανιστεί;",
+      "fingerprint": "youtube_zodiac_20261102_14_εστειλες_μηνυμα_σε_λαθος_ατομο",
+      "duplicate_match": false,
+      "slot": "18:34"
+    },
+    {
+      "index": 15,
+      "title": "Σαββατοκύριακο χωρίς ίντερνετ",
+      "hook": "Ποιος χαλαρώνει και ποιος ψάχνει σήμα στο μπαλκόνι;",
+      "fingerprint": "youtube_zodiac_20261102_15_σαββατοκυριακο_χωρις_ιντερνετ",
+      "duplicate_match": false,
+      "slot": "19:27"
+    },
+    {
+      "index": 16,
+      "title": "Η πρώτη μέρα στο γυμναστήριο",
+      "hook": "Ποιος το παρακάνει και ποιος οργανώνει πρόγραμμα;",
+      "fingerprint": "youtube_zodiac_20261102_16_η_πρωτη_μερα_στο_γυμναστηριο",
+      "duplicate_match": false,
+      "slot": "20:20"
+    },
+    {
+      "index": 17,
+      "title": "Ξαφνική βροχή χωρίς ομπρέλα",
+      "hook": "Ποιος τρέχει και ποιος χορεύει στη βροχή;",
+      "fingerprint": "youtube_zodiac_20261102_17_ξαφνικη_βροχη_χωρις_ομπρελα",
+      "duplicate_match": false,
+      "slot": "21:13"
+    },
+    {
+      "index": 18,
+      "title": "Ομαδική εργασία με χάος",
+      "hook": "Ποιος αναλαμβάνει και ποιος εξαφανίζεται;",
+      "fingerprint": "youtube_zodiac_20261102_18_ομαδικη_εργασια_με_χαος",
+      "duplicate_match": false,
+      "slot": "22:06"
+    },
+    {
+      "index": 19,
+      "title": "Αυθόρμητη εκδρομή",
+      "hook": "Ποιος λέει ναι πριν ακούσει τον προορισμό;",
+      "fingerprint": "youtube_zodiac_20261102_19_αυθορμητη_εκδρομη",
+      "duplicate_match": false,
+      "slot": "22:59"
+    },
+    {
+      "index": 20,
+      "title": "Βρήκες ένα παλιό γράμμα",
+      "hook": "Ποιος συγκινείται και ποιος ψάχνει όλη την ιστορία;",
+      "fingerprint": "youtube_zodiac_20261102_20_βρηκες_ενα_παλιο_γραμμα",
+      "duplicate_match": false,
+      "slot": "23:30"
+    }
+  ],
+  "notes": [
+    "User extras do not count toward target; they only constrain quota/collisions.",
+    "Release requires exact final audiovisual review bound to SHA256."
+  ],
+  "writes": []
+}
