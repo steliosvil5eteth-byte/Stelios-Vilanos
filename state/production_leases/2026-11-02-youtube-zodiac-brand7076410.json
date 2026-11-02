@@ -1,0 +1,107 @@
+{
+  "schema": "YOUTUBE_ZODIAC_20_DAILY_LEASE_V1",
+  "date": "2026-11-02",
+  "brand_id": 7076410,
+  "provider": "youtube",
+  "timezone": "Europe/Athens",
+  "owner": "scheduled-automation-6ab86c66195c8191b86b6aa17c99609b",
+  "acquired_at": "2026-11-02T06:16:00+02:00",
+  "status": "ACTIVE",
+  "reconciliation": {
+    "metricool_records_window": 14,
+    "notion_active_rows": 291,
+    "notion_archived_rows": 0,
+    "notion_pagination_complete": true,
+    "canonical_repository": "OK",
+    "legacy_repository": "NOT_REQUIRED_PER_CURRENT_POLICY"
+  },
+  "known_extras_rolling_24h": 10,
+  "known_series_today": 0,
+  "excluded_published": [
+    "Ακυρώθηκε η έξοδος. Εσύ;|youtube|2026-11-01T22:40:00+02:00|413254247"
+  ],
+  "planned_count": 20,
+  "duplicate_precheck": [
+    {
+      "fingerprint": "youtube_zodiac_20261102_01_το_ξυπνητηρι_χτυπα_τριτη_φορα",
+      "match": false
+    },
+    {
+      "fingerprint": "youtube_zodiac_20261102_02_ενα_απροσμενο_κομπλιμεντο",
+      "match": false
+    },
+    {
+      "fingerprint": "youtube_zodiac_20261102_03_η_μπαταρια_εμεινε_στο_1_",
+      "match": false
+    },
+    {
+      "fingerprint": "youtube_zodiac_20261102_04_ενα_ταξιδι_εκπληξη",
+      "match": false
+    },
+    {
+      "fingerprint": "youtube_zodiac_20261102_05_μηνυμα_απο_τον_πρωην",
+      "match": false
+    },
+    {
+      "fingerprint": "youtube_zodiac_20261102_06_η_πρωτη_μερα_στη_νεα_δουλεια",
+      "match": false
+    },
+    {
+      "fingerprint": "youtube_zodiac_20261102_07_η_συνταγη_απετυχε",
+      "match": false
+    },
+    {
+      "fingerprint": "youtube_zodiac_20261102_08_τα_κλειδια_χαθηκαν",
+      "match": false
+    },
+    {
+      "fingerprint": "youtube_zodiac_20261102_09_ενας_κρυφος_θαυμαστης",
+      "match": false
+    },
+    {
+      "fingerprint": "youtube_zodiac_20261102_10_η_πρωτη_γνωριμια_με_τα_πεθερικα",
+      "match": false
+    },
+    {
+      "fingerprint": "youtube_zodiac_20261102_11_προσκληση_για_καραοκε",
+      "match": false
+    },
+    {
+      "fingerprint": "youtube_zodiac_20261102_12_μικρο_κερδος_στο_λαχειο",
+      "match": false
+    },
+    {
+      "fingerprint": "youtube_zodiac_20261102_13_ο_γειτονας_κανει_παρτι",
+      "match": false
+    },
+    {
+      "fingerprint": "youtube_zodiac_20261102_14_εστειλες_μηνυμα_σε_λαθος_ατομο",
+      "match": false
+    },
+    {
+      "fingerprint": "youtube_zodiac_20261102_15_σαββατοκυριακο_χωρις_ιντερνετ",
+      "match": false
+    },
+    {
+      "fingerprint": "youtube_zodiac_20261102_16_η_πρωτη_μερα_στο_γυμναστηριο",
+      "match": false
+    },
+    {
+      "fingerprint": "youtube_zodiac_20261102_17_ξαφνικη_βροχη_χωρις_ομπρελα",
+      "match": false
+    },
+    {
+      "fingerprint": "youtube_zodiac_20261102_18_ομαδικη_εργασια_με_χαος",
+      "match": false
+    },
+    {
+      "fingerprint": "youtube_zodiac_20261102_19_αυθορμητη_εκδρομη",
+      "match": false
+    },
+    {
+      "fingerprint": "youtube_zodiac_20261102_20_βρηκες_ενα_παλιο_γραμμα",
+      "match": false
+    }
+  ],
+  "journal": "state/daily_delivery/youtube_zodiac_20261102.json"
+}
