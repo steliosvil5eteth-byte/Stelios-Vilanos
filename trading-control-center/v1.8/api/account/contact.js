@@ -1,0 +1,4 @@
+import {requireAccount,accountPayload} from '../_lib/access.js';
+import {updateAccount} from '../_lib/accounts.js';
+import {securityEvent} from '../_lib/security-events.js';
+export default async function handler(req,res){try{const a=await requireAccount(req);if(req.method!=='PUT')return res.status(405).json({error:'PUT only'});const patch={};if(req.body?.email!==undefined)patch.email=req.body.email;if(req.body?.displayName!==undefined)patch.displayName=req.body.displayName;const updated=await updateAccount(a.username,patch);await securityEvent(req,{type:'ACCOUNT_CONTACT_UPDATED',user:a.username,ok:true,detail:patch.email!==undefined?'email updated; verification reset if changed':'display name updated'});return res.status(200).json({ok:true,account:accountPayload(updated)})}catch(e){return res.status(e.status||500).json({error:e.message,code:e.code})}}
