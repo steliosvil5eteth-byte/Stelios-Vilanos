@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="el">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07111f">
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icon.svg" type="image/svg+xml">
+<title>Trading Control Center — v1.4</title>
+<style>
+:root{--bg:#07111f;--card:#0d1b2a;--line:#203a54;--text:#edf6ff;--muted:#9fb3c8;--accent:#4aa3ff;--good:#2ecc71;--bad:#ff6b6b;--warn:#f6c85f}
+*{box-sizing:border-box}body{margin:0;background:linear-gradient(180deg,#07111f,#09192a 45%,#07111f);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;min-height:100vh}
+.wrap{max-width:1120px;margin:auto;padding:20px 14px 50px}.top{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;flex-wrap:wrap;margin-bottom:16px}
+h1{font-size:clamp(25px,5vw,40px);margin:0}.muted{color:var(--muted)}.badge{border:1px solid var(--line);border-radius:999px;padding:7px 10px;font-size:12px;background:#0a1a2c}
+.grid{display:grid;gap:14px}.two{grid-template-columns:repeat(2,minmax(0,1fr))}.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+.card{background:rgba(13,27,42,.97);border:1px solid var(--line);border-radius:18px;padding:16px;box-shadow:0 14px 34px rgba(0,0,0,.24)}
+.card h2{font-size:17px;margin:0 0 12px}.field{display:grid;gap:6px;margin-bottom:10px}label{font-size:12px;color:var(--muted)}
+input,select,button{font:inherit}input,select{width:100%;padding:11px;border-radius:12px;border:1px solid var(--line);background:#071626;color:var(--text)}
+.actions{display:flex;gap:9px;flex-wrap:wrap}.btn{border:0;border-radius:12px;padding:10px 13px;font-weight:750;cursor:pointer}.primary{background:var(--accent);color:#00172a}.secondary{background:#17314b;color:#dcecff;border:1px solid #285171}.danger{background:#3a1720;color:#ffdce1;border:1px solid #6b3540}.btn:disabled{opacity:.45;cursor:not-allowed}
+.status{border:1px solid var(--line);border-radius:12px;padding:10px;font-size:12px;background:#081828}.ok{border-color:#245d43;color:#bdf2d0}.bad{border-color:#6b3540;color:#ffd0d6}.warn{border-color:#6d5727;color:#ffe6a5}
+.metric{background:#081828;border:1px solid var(--line);border-radius:12px;padding:10px}.metric .k{font-size:10px;color:var(--muted)}.metric .v{font-size:19px;font-weight:800;margin-top:3px}
+.list{display:grid;gap:9px}.row{border:1px solid var(--line);border-radius:13px;padding:11px;background:#091929}.row strong{font-size:14px}.mini{font-size:11px;color:var(--muted);line-height:1.45}.good{color:var(--good)}.badc{color:var(--bad)}.warnc{color:var(--warn)}
+.hidden{display:none!important}.split{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap}.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace}.footer{margin-top:16px;font-size:11px;color:#7f96ad;line-height:1.5}
+@media(max-width:800px){.two,.four{grid-template-columns:1fr}.wrap{padding:14px 10px 40px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div><h1>Trading Control Center</h1><div class="muted">v1.4 • Research + Paper Trading • Live execution OFF</div></div>
+    <div class="actions"><span id="sessionBadge" class="badge">Offline</span><button id="logoutBtn" class="btn secondary hidden">Logout</button></div>
+  </div>
+
+  <section id="authCard" class="card">
+    <h2>Σύνδεση / Νέος λογαριασμός</h2>
+    <div class="grid two">
+      <div>
+        <div class="field"><label>Username</label><input id="loginUser" autocomplete="username"></div>
+        <div class="field"><label>Password</label><input id="loginPass" type="password" autocomplete="current-password"></div>
+        <div class="actions"><button id="loginBtn" class="btn primary">LOGIN</button></div>
+      </div>
+      <div>
+        <div class="field"><label>Username</label><input id="regUser"></div>
+        <div class="field"><label>Email</label><input id="regEmail" type="email"></div>
+        <div class="field"><label>Password (≥10)</label><input id="regPass" type="password"></div>
+        <div class="actions"><button id="registerBtn" class="btn secondary">CREATE FREE ACCOUNT</button></div>
+      </div>
+    </div>
+    <div id="authStatus" class="status" style="margin-top:12px">Σύνδεση με production server API.</div>
+  </section>
+
+  <main id="app" class="hidden">
+    <div class="grid four" style="margin-bottom:14px">
+      <div class="metric"><div class="k">PLAN</div><div class="v" id="mPlan">—</div></div>
+      <div class="metric"><div class="k">EMAIL</div><div class="v" id="mEmail">—</div></div>
+      <div class="metric"><div class="k">CONSENT</div><div class="v" id="mConsent">—</div></div>
+      <div class="metric"><div class="k">LIVE TRADING</div><div class="v badc">OFF</div></div>
+    </div>
+
+    <div class="grid two">
+      <section class="card">
+        <div class="split"><h2>Market Research Scanner</h2><span class="badge">Research only</span></div>
+        <div class="field"><label>Watchlist</label><input id="symbols" value="AAPL,MSFT"></div>
+        <div class="grid two">
+          <div class="field"><label>Min score</label><input id="minScore" type="number" value="68"></div>
+          <div class="field"><label>Min Risk/Reward</label><input id="minRR" type="number" step=".1" value="2"></div>
+          <div class="field"><label>Min bars</label><input id="minBars" type="number" value="250"></div>
+          <div class="field"><label>Capital €</label><input id="capital" type="number" value="10000"></div>
+        </div>
+        <div class="actions"><button id="saveState" class="btn secondary">SAVE RULES</button><button id="scanBtn" class="btn primary">SCAN MARKET</button></div>
+        <div id="scanStatus" class="status" style="margin-top:10px">Δεν έχει γίνει scan.</div>
+        <div id="scanResults" class="list" style="margin-top:10px"></div>
+      </section>
+
+      <section class="card">
+        <div class="split"><h2>Paper Execution</h2><span class="badge">Simulated broker</span></div>
+        <div id="selectedBox" class="status">Επίλεξε accepted signal από το scanner.</div>
+        <div class="field" style="margin-top:10px"><label>Quantity</label><input id="qty" type="number" min="1" value="1"></div>
+        <div class="actions"><button id="paperBtn" class="btn primary" disabled>SUBMIT PAPER ORDER</button></div>
+        <div id="orderStatus" class="status" style="margin-top:10px">Verified email + current consent απαιτούνται.</div>
+        <hr style="border:0;border-top:1px solid var(--line);margin:16px 0">
+        <div class="actions"><button id="verifyBtn" class="btn secondary">SEND EMAIL VERIFICATION</button><button id="consentBtn" class="btn secondary">ACCEPT TERMS + PAPER RISK</button></div>
+        <div class="mini" style="margin-top:8px">Η αποδοχή αφορά την τρέχουσα έκδοση Terms/Risk. Το προϊόν δεν δίνει εγγύηση απόδοσης.</div>
+      </section>
+    </div>
+
+    <div class="grid two" style="margin-top:14px">
+      <section class="card">
+        <div class="split"><h2>Forward-test Signals</h2><button id="signalsBtn" class="btn secondary">REFRESH</button></div>
+        <div id="signalsList" class="list"><div class="mini">—</div></div>
+      </section>
+      <section class="card">
+        <div class="split"><h2>Portfolio / Risk</h2><button id="portfolioBtn" class="btn secondary">REFRESH</button></div>
+        <div class="grid four">
+          <div class="metric"><div class="k">EQUITY</div><div class="v" id="pEquity">—</div></div>
+          <div class="metric"><div class="k">EXPOSURE</div><div class="v" id="pExposure">—</div></div>
+          <div class="metric"><div class="k">STOP STRESS</div><div class="v" id="pStress">—</div></div>
+          <div class="metric"><div class="k">MAX DD</div><div class="v" id="pDD">—</div></div>
+        </div>
+        <div id="portfolioStatus" class="status" style="margin-top:10px">—</div>
+      </section>
+    </div>
+
+    <section id="adminCard" class="card hidden" style="margin-top:14px">
+      <div class="split"><h2>Admin Overview</h2><button id="adminBtn" class="btn secondary">REFRESH</button></div>
+      <div id="adminOut" class="list"></div>
+    </section>
+  </main>
+
+  <div class="footer">Paper/backtest αποτελέσματα μπορούν να διαφέρουν ουσιαστικά από πραγματική εκτέλεση λόγω slippage, liquidity, latency, data quality και regime changes. Δεν υπάρχει live-order endpoint σε αυτή την έκδοση.</div>
+</div>
+
+<script>
+const $=id=>document.getElementById(id);
+let session={authenticated:false,account:null,csrfToken:''},selected=null,lastStrategyId='';
+function esc(s){return String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function money(v){return Number.isFinite(Number(v))?Number(v).toLocaleString('el-GR',{style:'currency',currency:'EUR'}):'—'}
+function pct(v){return Number.isFinite(Number(v))?Number(v).toFixed(1)+'%':'—'}
+async function api(path,opt={}){const o={credentials:'same-origin',...opt,headers:{'Content-Type':'application/json',...(opt.headers||{})}};if(!['GET','HEAD','OPTIONS'].includes((o.method||'GET').toUpperCase())&&session.csrfToken)o.headers['X-CSRF-Token']=session.csrfToken;const r=await fetch(path,o);const text=await r.text();let j={};try{j=text?JSON.parse(text):{}}catch{j={raw:text}}if(!r.ok){const e=new Error(j.error||('HTTP '+r.status));e.code=j.code;e.status=r.status;throw e}return j}
+async function csrf(){if(!session.authenticated)return;try{session.csrfToken=(await api('/api/auth/csrf')).csrfToken||''}catch{session.csrfToken=''}}
+function renderSession(){const a=session.account;$('authCard').classList.toggle('hidden',session.authenticated);$('app').classList.toggle('hidden',!session.authenticated);$('logoutBtn').classList.toggle('hidden',!session.authenticated);$('sessionBadge').textContent=session.authenticated?(a.username+' • '+a.plan):'Offline';if(!a)return;$('mPlan').textContent=(a.plan||'free').toUpperCase();$('mEmail').textContent=a.emailVerifiedAt?'VERIFIED':'PENDING';$('adminCard').classList.toggle('hidden',a.role!=='admin')}
+async function refreshSession(){const j=await api('/api/auth/me');session.authenticated=!!j.authenticated;session.account=j.account||null;renderSession();if(session.authenticated){await csrf();await refreshConsent();await refreshSignals();await refreshPortfolio();if(session.account.role==='admin')await refreshAdmin()}}
+async function login(){try{await api('/api/auth/login',{method:'POST',body:JSON.stringify({username:$('loginUser').value.trim(),password:$('loginPass').value})});$('authStatus').textContent='Login OK';await refreshSession()}catch(e){$('authStatus').textContent='Login: '+e.message}}
+async function register(){try{const j=await api('/api/auth/register',{method:'POST',body:JSON.stringify({username:$('regUser').value.trim(),email:$('regEmail').value.trim(),password:$('regPass').value})});$('authStatus').textContent='Account created. Verification sent='+!!j.verification?.sent}catch(e){$('authStatus').textContent='Register: '+e.message}}
+async function logout(){try{await api('/api/auth/logout',{method:'POST',body:'{}'})}catch{}session={authenticated:false,account:null,csrfToken:''};renderSession()}
+function settings(){return {capital:Number($('capital').value)||10000,riskPct:.5,dailyLoss:2,maxPositionPct:25,maxExposurePct:100,maxOpen:5,minScore:Number($('minScore').value)||68,minRR:Number($('minRR').value)||2,maxHold:20,wTrend:30,wMomentum:25,wVolume:20,wVolatility:15,wRsi:10,slippageBps:5,commissionBps:2,scanMinBars:Number($('minBars').value)||250,scanMinOosTrades:5,scanMinOosAvgR:.05,scanMinOosPF:1.1}}
+async function saveRules(){const j=await api('/api/state',{method:'PUT',body:JSON.stringify({state:{settings:settings(),paper:[],scanConfig:{symbols:$('symbols').value}}})});lastStrategyId=j.currentStrategy?.id||'';$('scanStatus').textContent='Rules saved • '+lastStrategyId}
+function renderScan(run){const root=$('scanResults');root.innerHTML='';lastStrategyId=run.strategyId||lastStrategyId;(run.evaluations||[]).forEach(x=>{const d=document.createElement('div');d.className='row';const s=x.setup||{};d.innerHTML='<div class="split"><strong>'+esc(x.symbol)+'</strong><span class="'+(x.accepted?'good':'badc')+'">'+(x.accepted?'ACCEPTED':'REJECTED')+'</span></div><div class="mini">Score '+(s.score?.toFixed?.(1)??'—')+' • RR '+(s.rr?.toFixed?.(2)??'—')+' • bars '+x.bars+'<br>'+esc((x.reasons||[]).join(' | '))+'</div>';if(x.accepted){const b=document.createElement('button');b.className='btn secondary';b.style.marginTop='8px';b.textContent='SELECT';b.onclick=()=>selectSignal(x,run.strategyId);d.appendChild(b)}root.appendChild(d)});if(!run.evaluations?.length)root.innerHTML='<div class="mini">No evaluations.</div>'}
+function selectSignal(x,strategyId){selected={...x.setup,strategyId};$('selectedBox').innerHTML='<strong>'+esc(x.symbol)+'</strong><div class="mini">Entry '+x.setup.entry.toFixed(2)+' • Stop '+x.setup.stop.toFixed(2)+' • Target '+x.setup.target.toFixed(2)+' • RR '+x.setup.rr.toFixed(2)+'</div>';$('paperBtn').disabled=false}
+async function scan(){try{await saveRules();$('scanStatus').textContent='Scanning…';const j=await api('/api/scans',{method:'POST',body:JSON.stringify({symbols:$('symbols').value.split(',').map(x=>x.trim()).filter(Boolean)})});renderScan(j.run);$('scanStatus').textContent='Scan '+j.run.id+' • accepted '+j.run.accepted+' / rejected '+j.run.rejected}catch(e){$('scanStatus').textContent='Scan error: '+e.message}}
+function idem(){return 'web-'+Date.now()+'-'+Math.random().toString(36).slice(2)}
+async function submitPaper(){if(!selected)return;try{const order={symbol:selected.ticker,qty:Number($('qty').value)||1,entry:selected.entry,stop:selected.stop,target:selected.target,strategyId:selected.strategyId||lastStrategyId};const j=await api('/api/broker/order',{method:'POST',headers:{'Idempotency-Key':idem()},body:JSON.stringify({order})});$('orderStatus').textContent='ACCEPTED '+j.ticket.id+' • '+j.ticket.symbol+' x '+j.ticket.qty;await refreshPortfolio()}catch(e){$('orderStatus').textContent='Order blocked: '+e.message}}
+async function refreshConsent(){try{const j=await api('/api/consent');$('mConsent').textContent=j.consent.current?'CURRENT':'REQUIRED'}catch{$('mConsent').textContent='—'}}
+async function acceptConsent(){try{await api('/api/consent',{method:'POST',body:JSON.stringify({acceptTerms:true,acceptRisk:true})});await refreshConsent();$('orderStatus').textContent='Consent saved.'}catch(e){$('orderStatus').textContent=e.message}}
+async function verifyEmail(){try{const j=await api('/api/auth/email/request',{method:'POST',body:'{}'});$('orderStatus').textContent=j.alreadyVerified?'Email already verified.':('Verification sent='+j.sent)}catch(e){$('orderStatus').textContent=e.message}}
+async function refreshSignals(){try{const j=await api('/api/signals?limit=30'),r=$('signalsList');r.innerHTML='';(j.signals||[]).forEach(s=>{const d=document.createElement('div');d.className='row';d.innerHTML='<div class="split"><strong>'+esc(s.symbol)+'</strong><span>'+esc(s.status)+'</span></div><div class="mini">'+esc(s.strategyId)+' • score '+Number(s.score||0).toFixed(1)+' • '+esc(s.reason||'OPEN')+(Number.isFinite(Number(s.rMultiple))?' • R '+Number(s.rMultiple).toFixed(2):'')+'</div>';r.appendChild(d)});if(!j.signals?.length)r.innerHTML='<div class="mini">No forward-test signals.</div>'}catch(e){$('signalsList').innerHTML='<div class="mini">'+esc(e.message)+'</div>'}}
+async function refreshPortfolio(){try{const j=await api('/api/portfolio'),p=j.portfolio;$('pEquity').textContent=money(p.equity);$('pExposure').textContent=pct(p.exposurePct);$('pStress').textContent=pct(p.stopLossStressPct);$('pDD').textContent=pct(p.maxDrawdownPct);$('portfolioStatus').textContent='Open '+p.openPositions+' • Realized '+money(p.realizedPnl)+' • Unrealized '+money(p.unrealizedPnl)}catch(e){$('portfolioStatus').textContent=e.message}}
+async function refreshAdmin(){if(session.account?.role!=='admin')return;try{const j=await api('/api/admin/overview'),r=$('adminOut');r.innerHTML='';(j.users||[]).forEach(u=>{const d=document.createElement('div');d.className='row';d.innerHTML='<div class="split"><strong>'+esc(u.username)+'</strong><span>'+esc(u.plan)+' • '+esc(u.status)+'</span></div><div class="mini">role '+esc(u.role)+' • trades '+u.trades+' • scans '+u.scanRuns+'</div>';r.appendChild(d)})}catch(e){$('adminOut').innerHTML='<div class="mini">'+esc(e.message)+'</div>'}}
+$('loginBtn').onclick=login;$('registerBtn').onclick=register;$('logoutBtn').onclick=logout;$('saveState').onclick=()=>saveRules().catch(e=>$('scanStatus').textContent=e.message);$('scanBtn').onclick=scan;$('paperBtn').onclick=submitPaper;$('consentBtn').onclick=acceptConsent;$('verifyBtn').onclick=verifyEmail;$('signalsBtn').onclick=refreshSignals;$('portfolioBtn').onclick=refreshPortfolio;$('adminBtn').onclick=refreshAdmin;
+refreshSession().catch(()=>renderSession());
+</script>
+</body></html>
