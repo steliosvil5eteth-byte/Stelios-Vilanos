@@ -1,0 +1,49 @@
+{
+  "date": "2026-11-09",
+  "brand_id": 7076410,
+  "channel_id": "UCAGfj9lX7tz17W1wc82v9oA",
+  "status": "PARTIAL_RECONCILIATION_RELEASE_BLOCKED",
+  "counts_this_run": {
+    "produced": 0,
+    "qa_passed": 0,
+    "scheduled_pending": 0,
+    "published": 0,
+    "failed": 0
+  },
+  "historical_inventory": {
+    "batch": "2026-11-02",
+    "mp4_files_found": 20,
+    "sha256_matches_local_manifest": 20,
+    "technical_format_matches": 20,
+    "duration_seconds": 28.8,
+    "format": "1080x1920 H264 yuv420p 30fps AAC",
+    "actual_audio_listened": false,
+    "passed_final_review": false,
+    "not_new_production": true
+  },
+  "notion_view": {
+    "active": 291,
+    "archived": 0,
+    "pagination_complete": true
+  },
+  "metricool": {
+    "brands_checked": [
+      7076410,
+      7000636
+    ],
+    "window_start": "2026-11-08T11:18:00+02:00",
+    "window_end": "2026-11-10T23:59:59+02:00",
+    "visible_extras_published": 5,
+    "visible_extras_scheduled_pending_today": 7,
+    "visible_series_today": 0,
+    "channel_native_upload_inventory_complete": false
+  },
+  "unresolved": [
+    "Historical Nov2 lease remains ACTIVE; not silently cleared",
+    "No exact final audiovisual review completed",
+    "Private quota and zero-additional-cost production capacity not verified",
+    "Full publication/media deduplication not completed"
+  ],
+  "release_writes": [],
+  "note": "Supplemental evidence only; does not overwrite historical journal or assert current production completion."
+}
