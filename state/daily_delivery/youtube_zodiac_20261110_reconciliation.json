@@ -1,0 +1,54 @@
+{
+  "date": "2026-11-10",
+  "timezone": "Europe/Athens",
+  "brand_id": 7076410,
+  "channel_id": "UCAGfj9lX7tz17W1wc82v9oA",
+  "scope": "YOUTUBE_ZODIAC_20_DAILY",
+  "counts_this_run": {
+    "produced": 0,
+    "qa_passed": 0,
+    "scheduled_pending": 0,
+    "published": 0,
+    "failed_uploads": 0
+  },
+  "observed_today_series_scheduled_or_published": 0,
+  "target_gap": 20,
+  "historical_local_mp4_inventory": 20,
+  "notion_available_view": {
+    "active": 291,
+    "archived": 0,
+    "pagination_complete": true
+  },
+  "metricool_window": {
+    "from": "2026-11-09T09:55:00+02:00",
+    "to": "2026-11-12T23:59:59+02:00",
+    "brands_read": [
+      "7076410",
+      "7000636"
+    ],
+    "user_extra_youtube_published": 7,
+    "automated_series_count": 0,
+    "native_channel_upload_inventory_complete": false
+  },
+  "review": {
+    "file": "zodiac_short_20261102_01.mp4",
+    "sha256": "74cb65cb0a33659bd65862a7a6669e5529e0b1a362ef1ba1982120c838c87887",
+    "method": "Six still frames freshly extracted from final MP4; first frame also full resolution. Not full audiovisual playback.",
+    "actual_audio_listened": false,
+    "passed_final_review": false,
+    "issues": [
+      "Card2 bull symbol inconsistent with Aquarius/Cancer labels",
+      "Card3 pillow-fight visual inconsistent with reading-messages text"
+    ],
+    "decision": "BLOCKED_NEEDS_VISUAL_REPAIR_AND_FULL_AV_REVIEW"
+  },
+  "remaining_release_gates": [
+    "Actual audio review unavailable in this run",
+    "Generation zero-additional-cost quota not verified; no generation calls made",
+    "Complete native uploads and actual remaining quota unknown",
+    "Nov2 lease remains ACTIVE; no takeover or stale-lease clearance performed",
+    "Repository-wide historical reconciliation incomplete"
+  ],
+  "production_or_platform_writes": [],
+  "automation_disabled": false
+}
