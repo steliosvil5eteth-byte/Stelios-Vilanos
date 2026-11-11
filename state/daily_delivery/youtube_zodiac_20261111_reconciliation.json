@@ -1,0 +1,48 @@
+{
+  "date": "2026-11-11",
+  "timezone": "Europe/Athens",
+  "brand_id": 7076410,
+  "new_counts": {
+    "produced": 0,
+    "qa_passed": 0,
+    "scheduled_pending": 0,
+    "published": 0,
+    "failed": 0,
+    "blocked_target": 20
+  },
+  "automated_series_count_observed_today": 0,
+  "user_extra_count": {
+    "published_in_inspected_24h": 1,
+    "scheduled_today": 2
+  },
+  "metricool_window": {
+    "from": "2026-11-10T09:50:00+02:00",
+    "to": "2026-11-13T23:59:59+02:00",
+    "brands": [
+      "7076410",
+      "7000636"
+    ],
+    "native_upload_coverage": "UNKNOWN"
+  },
+  "notion": {
+    "active": 291,
+    "archived": 0,
+    "available_view_pagination_complete": true
+  },
+  "historical_inventory": {
+    "count": 20,
+    "sha256_matches": 20,
+    "original_journal_corrected": true,
+    "commit": "b999d663486abf69de46a00e0ca53d8c4ff49451",
+    "not_new_production": true
+  },
+  "blockers": [
+    "Full audiovisual final review not completed; actual audio listening unavailable in this run",
+    "Known card defects in first historical MP4 remain unrepaired",
+    "No verified zero-cost generation quota",
+    "Native YouTube uploads and remaining actual quota unverified",
+    "Full cross-history deduplication and lease ownership unresolved"
+  ],
+  "platform_writes": [],
+  "automation_disabled": false
+}
