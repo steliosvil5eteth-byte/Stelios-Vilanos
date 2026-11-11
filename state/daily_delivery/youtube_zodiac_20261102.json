@@ -8,12 +8,12 @@
   "automated_series_count": 0,
   "user_extra_count_rolling_24h": 10,
   "counts": {
-    "produced": 0,
+    "produced": 20,
     "qa_passed": 0,
     "scheduled_pending": 0,
     "published": 0,
     "failed": 0,
-    "blocked": 0
+    "blocked": 20
   },
   "plans": [
     {
@@ -179,7 +179,185 @@
   ],
   "notes": [
     "User extras do not count toward target; they only constrain quota/collisions.",
-    "Release requires exact final audiovisual review bound to SHA256."
+    "Release requires exact final audiovisual review bound to SHA256.",
+    "2026-11-11: Corrected stale Produced=0 to observed existing MP4 inventory=20. Not newly produced on Nov11, not QA-passed, not scheduled. Original snapshot retained in reconciliation_20261111.previous_counts. Historical upload state beyond inspected windows is not inferred."
   ],
-  "writes": []
+  "writes": [],
+  "reconciliation_20261111": {
+    "observed_date": "2026-11-11",
+    "previous_counts": {
+      "produced": 0,
+      "qa_passed": 0,
+      "scheduled_pending": 0,
+      "published": 0,
+      "failed": 0,
+      "blocked": 0
+    },
+    "evidence": "20 existing local MP4 files matched all 20 manifest SHA256 and plan titles/indexes. Creation timestamps not independently established; no new production today.",
+    "inventory": [
+      {
+        "index": 1,
+        "title": "Το ξυπνητήρι χτυπά τρίτη φορά",
+        "file": "zodiac_short_20261102_01.mp4",
+        "sha256": "74cb65cb0a33659bd65862a7a6669e5529e0b1a362ef1ba1982120c838c87887",
+        "bytes": 2649380,
+        "manifest_sha256": "74cb65cb0a33659bd65862a7a6669e5529e0b1a362ef1ba1982120c838c87887"
+      },
+      {
+        "index": 2,
+        "title": "Ένα απρόσμενο κομπλιμέντο",
+        "file": "zodiac_short_20261102_02.mp4",
+        "sha256": "27308fed4f1cd6ccf1451c088077505c6771947a0cb60df564ccdaac3789a7be",
+        "bytes": 2818559,
+        "manifest_sha256": "27308fed4f1cd6ccf1451c088077505c6771947a0cb60df564ccdaac3789a7be"
+      },
+      {
+        "index": 3,
+        "title": "Η μπαταρία έμεινε στο 1%",
+        "file": "zodiac_short_20261102_03.mp4",
+        "sha256": "dd297d3641062096556e8b9f7944565219d66dcdad2ded663b79c0868cdb0e66",
+        "bytes": 2535231,
+        "manifest_sha256": "dd297d3641062096556e8b9f7944565219d66dcdad2ded663b79c0868cdb0e66"
+      },
+      {
+        "index": 4,
+        "title": "Ένα ταξίδι-έκπληξη",
+        "file": "zodiac_short_20261102_04.mp4",
+        "sha256": "384a178fee74c58e2fca5d742e14b8cb4f8b6c272ab18457986dee855f683fcb",
+        "bytes": 2562446,
+        "manifest_sha256": "384a178fee74c58e2fca5d742e14b8cb4f8b6c272ab18457986dee855f683fcb"
+      },
+      {
+        "index": 5,
+        "title": "Μήνυμα από τον πρώην",
+        "file": "zodiac_short_20261102_05.mp4",
+        "sha256": "62f2a3782f9bd2dfc34de5815960be6d065dfef47bb097bf78a1eee3321e7b22",
+        "bytes": 2523246,
+        "manifest_sha256": "62f2a3782f9bd2dfc34de5815960be6d065dfef47bb097bf78a1eee3321e7b22"
+      },
+      {
+        "index": 6,
+        "title": "Η πρώτη μέρα στη νέα δουλειά",
+        "file": "zodiac_short_20261102_06.mp4",
+        "sha256": "047484c3798047bf7c63a5e5f4b1991301f3c114fc9afb4c9a30b80f528f3380",
+        "bytes": 2580749,
+        "manifest_sha256": "047484c3798047bf7c63a5e5f4b1991301f3c114fc9afb4c9a30b80f528f3380"
+      },
+      {
+        "index": 7,
+        "title": "Η συνταγή απέτυχε",
+        "file": "zodiac_short_20261102_07.mp4",
+        "sha256": "f93945a63b012843669f0439aa0fa4a440234068906b178cceb62086b1f005a6",
+        "bytes": 2600657,
+        "manifest_sha256": "f93945a63b012843669f0439aa0fa4a440234068906b178cceb62086b1f005a6"
+      },
+      {
+        "index": 8,
+        "title": "Τα κλειδιά χάθηκαν",
+        "file": "zodiac_short_20261102_08.mp4",
+        "sha256": "6c7ffe4cf14ddf7ec63d0966ffaf1669bf2241c5d211bc1708bf5e228399e891",
+        "bytes": 2528408,
+        "manifest_sha256": "6c7ffe4cf14ddf7ec63d0966ffaf1669bf2241c5d211bc1708bf5e228399e891"
+      },
+      {
+        "index": 9,
+        "title": "Ένας κρυφός θαυμαστής",
+        "file": "zodiac_short_20261102_09.mp4",
+        "sha256": "2ae017eb8c025cd14891e08d75fff847e08f70097a73c5e1b7c3ad01b81d5c61",
+        "bytes": 2584033,
+        "manifest_sha256": "2ae017eb8c025cd14891e08d75fff847e08f70097a73c5e1b7c3ad01b81d5c61"
+      },
+      {
+        "index": 10,
+        "title": "Η πρώτη γνωριμία με τα πεθερικά",
+        "file": "zodiac_short_20261102_10.mp4",
+        "sha256": "bf688334dd48b2f4d53d9a37292d4ee6ae3644b65b5e44beafb03c1dae248a6d",
+        "bytes": 2551431,
+        "manifest_sha256": "bf688334dd48b2f4d53d9a37292d4ee6ae3644b65b5e44beafb03c1dae248a6d"
+      },
+      {
+        "index": 11,
+        "title": "Πρόσκληση για καραόκε",
+        "file": "zodiac_short_20261102_11.mp4",
+        "sha256": "1bbfb8bf0028c5b7c329cb7f22e2ac269c339f1577ed57e6f9839226d656ff45",
+        "bytes": 2801923,
+        "manifest_sha256": "1bbfb8bf0028c5b7c329cb7f22e2ac269c339f1577ed57e6f9839226d656ff45"
+      },
+      {
+        "index": 12,
+        "title": "Μικρό κέρδος στο λαχείο",
+        "file": "zodiac_short_20261102_12.mp4",
+        "sha256": "e07aa34f9c3a4a18defbd3c9501f7900c2f14bb3bc41dceb20dd2c64b7da9e2a",
+        "bytes": 2672227,
+        "manifest_sha256": "e07aa34f9c3a4a18defbd3c9501f7900c2f14bb3bc41dceb20dd2c64b7da9e2a"
+      },
+      {
+        "index": 13,
+        "title": "Ο γείτονας κάνει πάρτι",
+        "file": "zodiac_short_20261102_13.mp4",
+        "sha256": "d05be6184c96cbda5920a6817250325bbf36fcec154c1866a3ee7b9315537a32",
+        "bytes": 2643975,
+        "manifest_sha256": "d05be6184c96cbda5920a6817250325bbf36fcec154c1866a3ee7b9315537a32"
+      },
+      {
+        "index": 14,
+        "title": "Έστειλες μήνυμα σε λάθος άτομο",
+        "file": "zodiac_short_20261102_14.mp4",
+        "sha256": "ed1a61fe4d242419ca89f5119112845f19a77bc397d1322f9dbe6c22273d8199",
+        "bytes": 2817922,
+        "manifest_sha256": "ed1a61fe4d242419ca89f5119112845f19a77bc397d1322f9dbe6c22273d8199"
+      },
+      {
+        "index": 15,
+        "title": "Σαββατοκύριακο χωρίς ίντερνετ",
+        "file": "zodiac_short_20261102_15.mp4",
+        "sha256": "575dd1e40433f42ea19ac392acc4b91a4010cc7a9761dfc6a1b78c072495d8ef",
+        "bytes": 2875499,
+        "manifest_sha256": "575dd1e40433f42ea19ac392acc4b91a4010cc7a9761dfc6a1b78c072495d8ef"
+      },
+      {
+        "index": 16,
+        "title": "Η πρώτη μέρα στο γυμναστήριο",
+        "file": "zodiac_short_20261102_16.mp4",
+        "sha256": "cb5420df60a3e2a0a97cda704a6a2529623c80cfa9293a366b7615d00e9b088e",
+        "bytes": 2673796,
+        "manifest_sha256": "cb5420df60a3e2a0a97cda704a6a2529623c80cfa9293a366b7615d00e9b088e"
+      },
+      {
+        "index": 17,
+        "title": "Ξαφνική βροχή χωρίς ομπρέλα",
+        "file": "zodiac_short_20261102_17.mp4",
+        "sha256": "b2991bd86e9e13bda439b668ec060a0dc9e2aa53b7ba7c02c921c7892edd0768",
+        "bytes": 2899579,
+        "manifest_sha256": "b2991bd86e9e13bda439b668ec060a0dc9e2aa53b7ba7c02c921c7892edd0768"
+      },
+      {
+        "index": 18,
+        "title": "Ομαδική εργασία με χάος",
+        "file": "zodiac_short_20261102_18.mp4",
+        "sha256": "072b543782cbeed92f2d88899ee9ed8b71805b0b9591f965618333ff8eed9cc5",
+        "bytes": 2649502,
+        "manifest_sha256": "072b543782cbeed92f2d88899ee9ed8b71805b0b9591f965618333ff8eed9cc5"
+      },
+      {
+        "index": 19,
+        "title": "Αυθόρμητη εκδρομή",
+        "file": "zodiac_short_20261102_19.mp4",
+        "sha256": "a372a079b662340dd6697e12fa87fc8a71cf5fa4d19af3c9ed8e99afaa1ad5a1",
+        "bytes": 2694200,
+        "manifest_sha256": "a372a079b662340dd6697e12fa87fc8a71cf5fa4d19af3c9ed8e99afaa1ad5a1"
+      },
+      {
+        "index": 20,
+        "title": "Βρήκες ένα παλιό γράμμα",
+        "file": "zodiac_short_20261102_20.mp4",
+        "sha256": "fef3f6674878bd98d2026a7ce0c8970b3942e11841f03e28248b5beb696238a4",
+        "bytes": 2712735,
+        "manifest_sha256": "fef3f6674878bd98d2026a7ce0c8970b3942e11841f03e28248b5beb696238a4"
+      }
+    ],
+    "actual_audio_listened": false,
+    "full_duplicate_history_check_complete": false,
+    "lease_not_released": true
+  }
 }
