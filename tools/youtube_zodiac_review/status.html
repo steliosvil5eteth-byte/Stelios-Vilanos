@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="el"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b1020"><title>20 YouTube Shorts · Δημοσιεύσεις</title>
+<style>
+*{box-sizing:border-box}
+:root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;color:#eaf1fe;background:#0b1120;color-scheme:dark}
+body{margin:0 auto;padding:26px 16px 80px;max-width:920px}
+h1{font-size:clamp(27px,5vw,39px);margin:8px 0 12px}
+p{line-height:1.55}.muted{color:#a1b1c9}
+.eyebrow{font-weight:700;color:#88b3fb;font-size:12px;letter-spacing:.12em}
+header{padding-bottom:8px}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:20px 0}
+a.btn,button{font-size:14px;text-decoration:none;display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:10px;border:1px solid #446089;padding:11px 15px;color:#fff;background:#1b3054;font-weight:650;cursor:pointer}
+button.primary{background:#2756af;border-color:#456dba}
+section{border:1px solid #31405c;border-radius:15px;background:#121f35;padding:18px;margin:14px 0}
+.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}@media(max-width:650px){.metrics{grid-template-columns:repeat(2,1fr)}}
+.metric{padding:13px;background:#172844;border-radius:11px;min-height:100px}.metric strong{font-size:29px;display:block;letter-spacing:-.04em;margin:2px 0}
+.metric small{color:#acbfd9;line-height:1.3}
+.titlebar{display:flex;justify-content:space-between;align-items:center;gap:14px;flex-wrap:wrap}
+h2{font-size:19px;margin:0}
+select{background:#12233e;border-radius:9px;border:1px solid #4b6387;color:white;padding:10px;font:inherit}
+.status{display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:30px;background:#51401f;color:#ffe19b;font-size:12px;font-weight:700;white-space:nowrap}
+.status.published{background:#153d35;color:#8fedd2}.status.blocked{background:#4a2428;color:#ffc5cf}.status.pending{background:#2b3958;color:#b9ceff}.status.unknown{background:#3a3641;color:#d1cbe0}
+.card{border-bottom:1px solid #33445d;padding:13px 0}.card:last-child{border-bottom:0}
+.card .head{display:flex;gap:10px;justify-content:space-between;align-items:center;flex-wrap:wrap}
+.card h3{font-size:16px;font-weight:650;margin:5px 0}
+.card a{color:#abd0ff}
+.note{border-left:3px solid #e9bb59;background:#302719;padding:12px 14px;border-radius:8px;margin:14px 0}
+.ok{border-left-color:#72d5a9;background:#173b33}
+pre{white-space:pre-wrap;overflow-wrap:anywhere}
+small{font-size:12px}
+footer{margin-top:25px;color:#8fa3be;font-size:12px}
+.footlinks{display:flex;flex-wrap:wrap;gap:15px} .footlinks a{color:#a5c6f4}
+</style></head><body>
+<header><div class="eyebrow">ΙΣΤΟΡΙΕΣ ΠΟΥ ΜΑΣ ΑΓΓΙΖΟΥΝ · YOUTUBE</div>
+<h1>Οι 20 καθημερινές δημοσιεύσεις</h1>
+<p class="muted">Μόνο παρακολούθηση. Δεν χρειάζεται να επιλέγεις MP4, να κάνεις QA ή να εγκρίνεις αναρτήσεις. Εδώ εμφανίζονται μόνο όσα καταγράφονται στο υπάρχον αρχείο παράδοσης· η εφαρμογή δεν εκτελεί δημοσιεύσεις.</p></header>
+<nav><button class="primary" id="reload">Ανανέωση κατάστασης</button><a class="btn" href="https://www.youtube.com/@osios" target="_blank" rel="noopener">Δες το κανάλι</a><a class="btn" href="https://app.notion.com/p/416f2345b31881a6ab9ac64c6615793c?pvs=204" target="_blank" rel="noopener">Αρχείο Notion</a></nav>
+<section><div class="titlebar"><h2>Ημερήσια αναφορά</h2><div><label for="date">Ημερομηνία </label><input id="date" type="date" style="background:#12233e;color:white;border-radius:8px;padding:10px;border:1px solid #4b6387"></div></div>
+<p class="muted" id="sourceStatus">Αναζήτηση στο canonical GitHub journal…</p>
+<div class="metrics" id="metrics"></div><div id="notice" class="note" role="status">Ανάγνωση στοιχείων…</div>
+<small class="muted" id="updated"></small></section>
+<section><div class="titlebar"><h2>Βίντεο της επιλεγμένης ημέρας</h2><span id="phase" class="status unknown">Άγνωστο</span></div><div id="videos" class="muted" style="margin-top:12px">Φόρτωση…</div></section>
+<section><h2>Πώς διαβάζεται η κατάσταση</h2><p class="muted"><strong>Published</strong> απαιτεί επιβεβαιωμένη κατάσταση YouTube και πραγματικό URL στο journal. Το <strong>Scheduled-PENDING</strong> σημαίνει προγραμματισμό, όχι δημοσίευση. Το <strong>Blocked</strong> σημαίνει αποτυχία προϋπόθεσης ή έλλειψη τελικού ελέγχου. Αν λείπει το αρχείο της ημερομηνίας, γράφουμε <strong>Άγνωστο</strong> — ποτέ αυθαίρετο 0/20 δημοσιευμένα.</p></section>
+<footer><div class="footlinks"><a href="https://github.com/steliosvil5eteth-byte/Stelios-Vilanos/tree/main/state/daily_delivery" target="_blank" rel="noopener">Πηγή αρχείου αναφορών</a><a href="/qa.html">Τεχνικός έλεγχος αρχείων</a></div>
+<p>Τελευταία ανανέωση: <span id="clock">—</span>. Τα στοιχεία προέρχονται από καταγραφές της αυτοματοποίησης και ενδέχεται να καθυστερούν. Ο αριθμός ημερήσιου στόχου δεν αποτελεί εγγύηση δημοσίευσης.</p></footer>
+<script>
+const BASE='https://raw.githubusercontent.com/steliosvil5eteth-byte/Stelios-Vilanos/main/state/daily_delivery/';
+const $=x=>document.getElementById(x);
+const esc=s=>String(s??'').replace(/[&<>"']/g,x=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[x]));
+function athensDay(){return new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Athens',year:'numeric',month:'2-digit',day:'2-digit'}).format(new Date())}
+function metrics(obj){const entries=[['20','Στόχος',false],['—','Published με URL',true],['—','Scheduled-PENDING',false],['—','Blocked',false]];
+ if(obj){const all=Array.isArray(obj.items)?obj.items:Array.isArray(obj.plans)?obj.plans:[];
+  const verified=all.filter(i=>getPublished(i)).length;
+  entries[1][0]=String(verified);
+  entries[2][0]=String(Number(obj.counts?.scheduled_pending??obj.counts_this_run?.scheduled_pending??0));
+  entries[3][0]=String(Number(obj.counts?.blocked??0));
+ }
+ $('metrics').innerHTML=entries.map(([val,label])=>'<div class="metric"><strong>'+val+'</strong><small>'+label+'</small></div>').join('');
+}
+function getPublished(item){const pubs=Array.isArray(item.providers)?item.providers:Array.isArray(item.provider_readback)?item.provider_readback:[];
+  const p=pubs.find(p=>p.network==='youtube'&&p.status==='PUBLISHED'&&p.publicUrl&&/^https:\/\//.test(p.publicUrl));
+  if(p)return p.publicUrl;
+  if(item.status==='PUBLISHED'&&item.public_url&&/^https:\/\//.test(item.public_url))return item.public_url;
+  return null;
+}
+function state(item){if(getPublished(item))return 'PUBLISHED';const v=String(item.status||item.release_status||item.review_state||'').toUpperCase();if(/BLOCK|ERROR|FAIL/.test(v))return 'BLOCKED';if(/PENDING|SCHEDULED/.test(v))return 'PENDING';return 'UNKNOWN'}
+function badge(s){return s==='PUBLISHED'?'<span class="status published">Published</span>':s==='PENDING'?'<span class="status pending">Scheduled-PENDING</span>':s==='BLOCKED'?'<span class="status blocked">Blocked</span>':'<span class="status unknown">Άγνωστο</span>'}
+async function load(){
+ const date=$('date').value||athensDay();const key=date.replaceAll('-','');
+ $('sourceStatus').textContent='Ανάκτηση καταγραφής '+date+'…';$('notice').textContent='Ενημέρωση από το repository…';$('notice').className='note';
+ const url=BASE+'youtube_zodiac_'+key+'.json';
+ try{
+  const resp=await fetch(url+'?t='+Date.now(),{cache:'no-store'});
+  if(!resp.ok)throw Error(resp.status===404?'no_record':'http_'+resp.status);
+  const data=await resp.json();
+  if(!data||data.date!==date||data.brand_id!==7076410)throw Error('invalid_record');
+  $('sourceStatus').textContent='Διαθέσιμη καταγραφή: '+date+' · μάρκα 7076410';
+  metrics(data);
+  const items=Array.isArray(data.items)?data.items:Array.isArray(data.plans)?data.plans:[];
+  const pub=items.filter(getPublished).length;
+  $('phase').innerHTML=pub?'<span class="status published">'+pub+' επιβεβαιωμένα</span>':badge('BLOCKED');
+  $('notice').textContent=pub
+    ?'Εμφανίζονται μόνο οι δημοσιεύσεις που έχουν καταγραφεί με πραγματικό YouTube URL. Οι υπόλοιπες δεν θεωρούνται δημοσιευμένες.'
+    :'Δεν υπάρχουν επιβεβαιωμένα Published URL σε αυτή την καταγραφή. Αυτό δεν αποδεικνύει ότι το YouTube δεν έχει άλλα uploads.';
+  const total=Number(data.target||20);
+  const m=Number(data.counts?.produced??data.counts_this_run?.produced??0);
+  $('updated').textContent='Αναφερόμενα Produced: '+m+' / '+total+' · Η ενημέρωση ισχύει μόνο για την επιλεγμένη ημερομηνία.';
+  $('videos').innerHTML=items.length?items.map((it,idx)=>{
+    const s=state(it),link=getPublished(it),title=esc(it.title||it.text||it.filename||'Χωρίς τίτλο');
+    return '<div class="card"><div class="head"><small class="muted">Short '+String(it.index||idx+1).padStart(2,'0')+'</small>'+badge(s)+'</div><h3>'+title+'</h3>'+(link?'<a href="'+esc(link)+'" target="_blank" rel="noopener">Προβολή στο YouTube</a>':'<small class="muted">Δεν υπάρχει επιβεβαιωμένος δημόσιος σύνδεσμος</small>')+'</div>';
+  }).join(''):'<p>Δεν υπάρχουν αναλυτικές εγγραφές για αυτή την ημέρα.</p>';
+ }catch(e){
+  metrics(null);$('phase').innerHTML=badge('UNKNOWN');$('updated').textContent='';
+  $('sourceStatus').textContent='Δεν υπάρχει επαληθευμένο ημερήσιο journal: '+date;
+  $('notice').textContent=e.message==='no_record'?'Δεν βρέθηκε αναφορά δημοσιεύσεων για αυτή την ημέρα. Η πραγματική κατάσταση δεν είναι γνωστή· δεν εμφανίζουμε πλασματικό 0/20.':'Δεν ήταν δυνατή η επαλήθευση της καταγραφής. Η κατάσταση παραμένει άγνωστη.';
+  $('videos').innerHTML='<p>Δεν υπάρχουν επιβεβαιωμένα στοιχεία προς προβολή. Δες απευθείας το κανάλι YouTube ή το αρχείο Notion.</p>';
+ }
+ $('clock').textContent=new Intl.DateTimeFormat('el-GR',{timeZone:'Europe/Athens',dateStyle:'short',timeStyle:'medium'}).format(new Date());
+}
+$('date').value=athensDay();$('date').addEventListener('change',load);$('reload').addEventListener('click',load);load();setInterval(load,5*60*1000);
+</script></body></html>
