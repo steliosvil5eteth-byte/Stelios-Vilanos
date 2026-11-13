@@ -2,7 +2,7 @@
   "version": 26,
   "updated_on": "2026-10-10",
   "timezone": "Europe/Athens",
-  "authoritative_strategy_file": "config/platform_growth_strategy.json",
+  "authoritative_strategy_file": "config/current_ten_daily.json",
   "publishing_paused": true,
   "active_metricool_brand": {
     "id": 7076410,
@@ -323,6 +323,8 @@
     },
     "retired_requirements_active": false,
     "retired_requirements_authorize_completion": false
-  }
+  },
+  "legacy_cadence_data_only": true,
+  "current_cadence_source": "config/current_ten_daily.json",
+  "current_program_policy": "Read config/current_ten_daily.json for exact ten daily slots; old 15/60 figures are legacy historical values only. Fail closed; never publish on an old count."
 }
-
