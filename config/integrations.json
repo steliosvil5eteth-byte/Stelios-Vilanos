@@ -15,7 +15,7 @@
     "networks_semantics": "Connected-network inventory only. It never authorizes generation, scheduling or publication and must never be used as a broadcast fallback."
   },
   "content": {
-    "strategy_file": "config/platform_growth_strategy.json",
+    "strategy_file": "config/current_ten_daily.json",
     "cycle_state_file": "state/content_cycle.json",
     "history_file": "state/content_history.json",
     "notion_rules_page_id": "3def2345-b318-8173-9711-e29c134da859",
@@ -124,7 +124,10 @@
     "publish_to_all_connected_socials_semantics": "Disabled; empty means DENY_ALL and never broadcast.",
     "broadcast_enabled": false,
     "providers": [],
-    "providers_semantics": "Publishing allowlist: empty means DENY_ALL; never fall back to connected-network inventory or broadcast."
+    "providers_semantics": "Publishing allowlist: empty means DENY_ALL; never fall back to connected-network inventory or broadcast.",
+    "current_program_policy_file": "config/current_ten_daily.json",
+    "legacy_routing_disabled": true,
+    "current_program_policy": "The active user specification is CURRENT_TEN_DAILY in config/current_ten_daily.json. Historical 15/60 fields here are not executable."
   },
   "runner": {
     "max_logical_posts_per_day": 60,
@@ -156,7 +159,7 @@
     },
     "enabled": false,
     "state": "BLOCKED_REQUIRED_HISTORY_AND_ZERO_CREDIT_CAPACITY",
-    "authoritative_strategy_file": "config/platform_growth_strategy.json",
+    "authoritative_strategy_file": "config/current_ten_daily.json",
     "generation_enabled": false,
     "publishing_enabled": false,
     "production_enabled": false,
@@ -200,7 +203,9 @@
         "reactivate_when_new_program_enabled": false,
         "historical_data_use": "Audit and deduplication only; never a scheduling source."
       }
-    }
+    },
+    "current_program_policy_file": "config/current_ten_daily.json",
+    "legacy_cadence_fields_not_authoritative": true
   },
   "audio": {
     "narrated_posts": {
@@ -284,4 +289,3 @@
     "published_history_mutations": false
   }
 }
-
