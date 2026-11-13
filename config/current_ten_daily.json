@@ -131,5 +131,50 @@
     "CAROUSEL_FIVE_FOUR_ONE_20261022"
   ],
   "automation_mode": "FAIL_CLOSED_UNTIL_ALL_GATES_PASSED",
-  "note": "This is a policy/config record, not evidence that 10 posts have been rendered or published."
+  "note": "This is a policy/config record, not evidence that 10 posts have been rendered or published.",
+  "channel_priorities": {
+    "updated_at": "2026-11-13",
+    "directive": "User prioritizes YouTube and Instagram over Facebook and TikTok for optimization, without reducing pre-existing delivery obligations or changing active 10-slot plan or separate 20 YouTube zodiac Shorts.",
+    "primary": [
+      "youtube",
+      "instagram"
+    ],
+    "secondary": [
+      "facebook",
+      "tiktok"
+    ],
+    "scope": "Prioritize time for QA, retention analysis, first-frame hooks, titles, format adaptations, publishing diagnostics and reliability in YouTube and Instagram. Continue normal distribution to Facebook and TikTok when passed and requested.",
+    "format_profiles": {
+      "youtube": "Full content, vertical 9:16 for YouTube Shorts/slideshows, H.264 CFR 30fps, AAC, no cropped story, separate YouTube-specific title/description and chapter/series continuity where supported. Use only the canonical 20-Shorts workflow for the 20 zodiac Shorts (never mix with ten slots).",
+      "instagram": "Instagram-native Reel or carousel per active series, vertical 9:16 for Reels, correct cover and first 2-second hook, H.264 CFR 30fps on narrated MP4, legible/cropped-safe overlays only when user/series permits them. Include a clean original caption.",
+      "facebook": "Maintain existing format and coverage, independent live confirmation.",
+      "tiktok": "Maintain native photo carousel with autoAddMusic when applicable, narrated video without duplicate audio."
+    },
+    "analysis": {
+      "recent_snapshot": "2026-10-30 through 2026-11-13 Metricool; historical performance only, not readiness or future projections.",
+      "youtube_top_viewed_examples": [
+        {
+          "title": "Ζώδια & Σχέσεις — Πώς αγαπάει κάθε ζώδιο;",
+          "views": 1018
+        },
+        {
+          "title": "Ακυρώθηκε η έξοδος! Ζώδια και ωροσκόπος",
+          "views": 425
+        }
+      ],
+      "instagram_top_reel_example": {
+        "title": "ΖΩΔΙΑ & ΣΧΕΣΕΙΣ — Πώς αγαπάει κάθε ζώδιο;",
+        "views": 146
+      },
+      "cautions": "Do not generalize from small sample or make same content duplicates. Review median Reel views, first-second retention, saves/shares and YouTube average view duration/subscribers before changing creative strategy."
+    },
+    "mandatory_gates": "No fresh create/schedule/publish without full prior duplicate checks, exact-final visual/audio PASSED_FINAL_REVIEW, 30fps CFR for narrated videos, and full provider readback. PENDING never equals Published.",
+    "new_costs": false,
+    "do_not_change": [
+      "active Metricool brand 7076410",
+      "10 existing daily series/slots",
+      "20 independent YouTube zodiac Shorts automation",
+      "existing scheduled posts or historical provider IDs"
+    ]
+  }
 }
