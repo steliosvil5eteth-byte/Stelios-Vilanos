@@ -5,10 +5,10 @@
   "effective_at": "2026-10-10T16:37:45+03:00",
   "user_reconfirmed_at": "2026-10-10T20:39:00+03:00",
   "prepared_at_utc": "2026-10-08 06:01:37 UTC",
-  "authoritative": true,
+  "authoritative": false,
   "enabled": false,
   "active_schedule": false,
-  "state": "BLOCKED_ZERO_CREDIT_CAPACITY_AND_FINAL_AUDIO_REVIEW",
+  "state": "SUPERSEDED_BY_CURRENT_TEN_DAILY_READ_ONLY",
   "active_metricool_brand": {
     "id": 7076410,
     "name": "Ιστορίες που μας αγγίζουν"
@@ -844,5 +844,7 @@
     "reason": "Reconcile internal routing contradiction with explicit 10 October instruction; user requested best-effort repair and publication.",
     "effects": "Same 15 distinct videos across four platforms, 60 provider deliveries; per-platform target 15; no additional credits, publishing activation, or relaxation of review gates.",
     "release_status": "STILL_BLOCKED_UNTIL_VERIFIED"
-  }
+  },
+  "superseded_by": "config/current_ten_daily.json",
+  "superseded_on": "2026-11-13"
 }
