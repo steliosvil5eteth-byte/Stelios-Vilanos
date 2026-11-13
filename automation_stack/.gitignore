@@ -1,0 +1,10 @@
+.env
+**/__pycache__/
+**/*.pyc
+**/fixtures/
+**/.pytest_cache/
+*.mp4
+*.wav
+*.mp3
+*.qa.json
+*.jsonl

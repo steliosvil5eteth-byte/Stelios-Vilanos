@@ -1,0 +1,34 @@
+{
+  "name": "Social program 7076410 - read-only preflight (staging)",
+  "nodes": [
+    {
+      "parameters": {"rule": {"interval": [{"field":"cronExpression","expression":"0 6 * * *"}]}},
+      "id": "ab218c2b-d8f4-4d13-b67e-f9be692c53e0",
+      "name": "06:00 Athens", "type": "n8n-nodes-base.scheduleTrigger", "typeVersion": 1.2,
+      "position": [200,160]
+    },
+    {
+      "parameters": {"method":"POST","url":"http://worker:8080/api/run","sendBody":true,"specifyBody":"json","jsonBody":"{\"task\":\"morning_reconciliation\"}","options":{}},
+      "id": "4fd8fa8e-b72b-49d9-af3a-26e98c4fd120",
+      "name":"Read-only reconciliation", "type":"n8n-nodes-base.httpRequest","typeVersion":4.2,"position":[480,160]
+    },
+    {
+      "parameters": {"rule": {"interval": [{"field":"cronExpression","expression":"30 23 * * *"}]}},
+      "id": "c8357641-c0ee-4c4c-a050-29c64e09da7e",
+      "name": "23:30 Athens", "type": "n8n-nodes-base.scheduleTrigger", "typeVersion":1.2,"position":[200,400]
+    },
+    {
+      "parameters": {"method":"POST","url":"http://worker:8080/api/run","sendBody":true,"specifyBody":"json","jsonBody":"{\"task\":\"nightly_audit\"}","options":{}},
+      "id":"e9f2033e-6d97-4550-a7a1-751a9cd3047f",
+      "name":"Read-only night audit","type":"n8n-nodes-base.httpRequest","typeVersion":4.2,"position":[480,400]
+    }
+  ],
+  "connections": {
+    "06:00 Athens": {"main": [[{"node":"Read-only reconciliation","type":"main","index":0}]]},
+    "23:30 Athens": {"main": [[{"node":"Read-only night audit","type":"main","index":0}]]}
+  },
+  "settings": {"timezone":"Europe/Athens","executionOrder":"v1"},
+  "active": false,
+  "pinData": {},
+  "tags": []
+}
