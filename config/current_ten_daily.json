@@ -123,7 +123,7 @@
     "qa_passed_target_days": 3
   },
   "related_programs": {
-    "youtube_zodiac_20_daily": "Separate existing program, never count as one of ten and do not modify its task.",
+    "youtube_zodiac_20_daily": "Separate existing 20 unique zodiac video series with TWO destinations: YouTube Shorts and Instagram Reels, authorized by the user on 2026-11-13. Counts as 20 independent logical assets and up to 20 additional IG Reels, never as part of the ten core logical daily posts. Reconcile Instagram quota and duplicates including core 11:00 Zodiac slot; never create a second scheduler or duplicate media. Source: config/youtube_zodiac_20_daily.json.",
     "subscriber_only_story": "Separate user-directed workflow; no follow CTA for subscriber episodes."
   },
   "supersedes_for_daily_ten": [
@@ -175,6 +175,10 @@
       "10 existing daily series/slots",
       "20 independent YouTube zodiac Shorts automation",
       "existing scheduled posts or historical provider IDs"
-    ]
+    ],
+    "additional_instagram_20_reels": "The separate zodiac automation for 20 daily original YouTube Shorts now also targets Instagram Reels, provided exact final visual/audio SHA256 QA, rights, destination quota and no duplicates are verified.",
+    "expected_instagram_targets": "10 core Instagram destinations in the CURRENT_TEN_DAILY program plus up to 20 additional zodiac Reels. This is a planned target, not a publishing guarantee.",
+    "core_post_count_unchanged": true,
+    "other_channels_unchanged": true
   }
 }
