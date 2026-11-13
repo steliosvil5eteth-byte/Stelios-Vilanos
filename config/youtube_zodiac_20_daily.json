@@ -14,7 +14,18 @@
     "brand_name": "Ιστορίες που μας αγγίζουν",
     "channel_id": "UCAGfj9lX7tz17W1wc82v9oA",
     "handle": "@osios",
-    "other_platforms_allowed": false
+    "other_platforms_allowed": true,
+    "providers": [
+      "youtube",
+      "instagram"
+    ],
+    "provider_allowlist": [
+      "youtube",
+      "instagram"
+    ],
+    "instagram_account": "stelios.vil5eteth",
+    "other_platforms_restricted_to_allowlist": true,
+    "provider_legacy_field_note": "scope.provider is retained only for backward compatibility; authoritative posting allowlist is scope.provider_allowlist. No Facebook/TikTok."
   },
   "daily_target": {
     "shorts": 20,
@@ -25,7 +36,11 @@
     "quality_first": true,
     "counting_scope": "automated_youtube_zodiac_series_only",
     "user_uploads_are_additional": true,
-    "user_uploads_reduce_target": false
+    "user_uploads_reduce_target": false,
+    "instagram_reels": 20,
+    "logical_unique_videos": 20,
+    "target_provider_destinations": 40,
+    "instagram_target_counts": "Additional 20 Instagram Reel destinations for same 20 logical unique zodiac videos, outside common 10 daily posts. Not 20 more assets."
   },
   "creative": {
     "cards_per_short": 6,
@@ -43,7 +58,21 @@
     "music": "one rights-cleared instrumental layer",
     "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
     "max_hashtags": 5,
-    "disclosure": "Ψυχαγωγική συμβολική αστρολογία· εικόνες με χρήση AI όπου εφαρμόζεται."
+    "disclosure": "Ψυχαγωγική συμβολική αστρολογία· εικόνες με χρήση AI όπου εφαρμόζεται.",
+    "instagram_reel": {
+      "format": "normal Reel (not Trial Reel)",
+      "width": 1080,
+      "height": 1920,
+      "fps_cfr": 30,
+      "codec": "H264/yuv420p",
+      "audio": "AAC; one embedded instrumental layer with verified cross-platform Instagram+YouTube rights",
+      "max_duration_seconds": 30,
+      "caption_max_chars": 2200,
+      "hashtags_max": 5,
+      "show_on_feed": true,
+      "ai_disclosure": true,
+      "visual_crop_review": true
+    }
   },
   "execution": {
     "user_authorized": true,
@@ -61,7 +90,19 @@
     "full_metricool_notion_and_canonical_repository_reconciliation_required": true,
     "canonical_repository": "steliosvil5eteth-byte/Stelios-Vilanos",
     "legacy_repository_policy": "social-media-automation is not accessible in the connected repository inventory. Do not require this unresolved legacy name to start production. Reconcile canonical repository, Notion and Metricool; block only actual ambiguous histories or conflicting ownership. Never claim inaccessible history was read.",
-    "production_may_continue_while_individual_release_is_blocked": true
+    "production_may_continue_while_individual_release_is_blocked": true,
+    "authorized_providers": [
+      "youtube",
+      "instagram"
+    ],
+    "instagram_user_authorized": true,
+    "instagram_publish_only_after_explicit_qa_and_dedupe": true,
+    "separate_provider_statuses_and_quota_checks": true,
+    "no_second_scheduling_automation": true,
+    "instagram_publishing_quota_rule": "Check rolling 24-hour IG quota, including 10 core daily logical posts and other uploads. Metricool documents maximum 50 API-published posts/24h; obey actual quota/error state. Fail closed when uncertain.",
+    "partial_platform_failure_rule": "Do not retry already Published, Scheduled/PENDING or ambiguous destination. Check exact target destination before retry; target only confirmed failed provider.",
+    "existing_media_reuse": "Same final SHA256-approved MP4 may be used for YouTube Shorts + Instagram Reels only when rights/platform compliance and full exact media QA pass. Separate platform captions/metadata.",
+    "legacy_youtube_history_preservation": "Never rewrite existing YouTube-only rows or count existing YouTube Published as Instagram Published; daily report must separately count each provider. Old fields remain for compatibility."
   },
   "current_run": {
     "date": "2026-11-01",
@@ -130,7 +171,9 @@
     }
   },
   "configuration_update": {
-    "date": "2026-11-01",
-    "basis": "User explicitly requested completing the workflow and daily automatic YouTube Shorts. Fix stale infrastructure dependency; keep final audiovisual QA, cost, duplicate and release gates unchanged."
+    "date": "2026-11-13",
+    "basis": "User specifically requested enabling the existing 20 daily zodiac Shorts also on Instagram. One automation, 20 videos x 2 platforms, no extra apps, no extra costs.",
+    "supersedes_platform_scope_only": "YOUTUBE_ONLY",
+    "actual_publication_verified": false
   }
 }
