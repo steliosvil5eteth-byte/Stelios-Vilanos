@@ -1,0 +1,34 @@
+name: Social automation staging checks (no publishing)
+on:
+  push:
+    paths:
+      - 'automation_stack/**'
+      - '.github/workflows/social-staging-smoke.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  fail-closed-renderer-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Install only FFmpeg test dependency
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg
+      - name: Python and real MP4 30-CFR integration tests
+        run: python -m unittest discover -s automation_stack/tests -v
+      - name: Validate n8n workflow JSON
+        run: python -m json.tool automation_stack/n8n/social_preflight.json >/dev/null
+      - name: Confirm workflow stays inactive
+        run: |
+          python - <<'PY'
+          import json
+          w=json.load(open('automation_stack/n8n/social_preflight.json'))
+          assert w['active'] is False
+          assert not any(n['name'].lower().startswith('publish') for n in w['nodes'])
+          PY
