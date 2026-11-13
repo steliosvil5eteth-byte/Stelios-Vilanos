@@ -321,5 +321,57 @@
     "schedule": 0,
     "paid_jobs": 0,
     "personal_posts_modified": 0
-  }
+  },
+  "target_providers": [
+    "youtube",
+    "instagram"
+  ],
+  "target_unique_videos": 20,
+  "provider_delivery_targets": {
+    "youtube_shorts": 20,
+    "instagram_reels": 20,
+    "combined_destinations": 40
+  },
+  "delivery_counts_by_provider": {
+    "youtube": {
+      "produced": 0,
+      "qa_passed": 0,
+      "scheduled_pending": 0,
+      "published": 0,
+      "failed": 0,
+      "blocked": 20,
+      "verification": "No matching scheduled zodiac-series posts in brand 7076410 within checked calendar. Separate native-channel uploads not exhaustively verified."
+    },
+    "instagram": {
+      "produced": 0,
+      "qa_passed": 0,
+      "scheduled_pending": 0,
+      "published": 0,
+      "failed": 0,
+      "blocked": 20,
+      "verification": "No matching scheduled zodiac-series posts in brand 7076410 within checked calendar. Separate native-account uploads not exhaustively verified."
+    }
+  },
+  "manual_trigger_20261113": {
+    "source": "User requested 20 daily original videos to go up on YouTube and Instagram; existing task run_now returned inline work for this conversation.",
+    "execution": "PREFLIGHT_CHECKED_RELEASE_BLOCKED",
+    "uploads_created": 0,
+    "posts_scheduled": 0,
+    "accounts": [
+      "YouTube Shorts",
+      "Instagram Reels"
+    ],
+    "verified_media_available_for_this_daily_set": 0,
+    "library_inventory_check": "479 MP4 files enumerated; no filenames identifying zodiac 20-daily series; does not prove no assets exist under other names.",
+    "drive_search_check": "Exact zodiac_short_20261102 video not found in accessible Google Drive; other unrelated prior Zodiac Extras exist.",
+    "original_known_blockers": [
+      "Exact-final visual+audio review not completed",
+      "Production media inventory/source unavailable",
+      "Rights-cleared audio and image-generation quota not verified",
+      "Cross-source lease/history and native 24h quota need verification"
+    ],
+    "publish_decision": "BLOCKED",
+    "readback_note": "No new create/write was sent to Metricool. No Published status inferred from schedule or historical examples."
+  },
+  "program_revision": "2026-11-13 YouTube+Instagram same 20 unique zodiac videos; format YouTube Shorts and Instagram Reels; 30fps CFR 1080x1920 up to 30 seconds."
 }
