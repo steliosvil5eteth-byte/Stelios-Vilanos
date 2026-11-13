@@ -299,7 +299,7 @@
   },
   "program_label": "PLATFORM_SPECIFIC_FIFTEEN_DAILY",
   "strategy_id": "PLATFORM_SPECIFIC_FIFTEEN_DAILY_20261010",
-  "authoritative_strategy_file": "config/platform_growth_strategy.json",
+  "authoritative_strategy_file": "config/current_ten_daily.json",
   "enabled": false,
   "state": "BLOCKED_ZERO_CREDIT_CAPACITY_AND_FINAL_AUDIO_REVIEW",
   "status": "paused",
@@ -441,6 +441,8 @@
     "previous_program_authorizes_new_work": false,
     "activation_changed": false,
     "published_history_mutations": false
-  }
+  },
+  "legacy_schedule_data_only": true,
+  "superseded_schedule_by": "config/current_ten_daily.json",
+  "current_program_policy": "Read config/current_ten_daily.json for today's 10 logical slots; older counts below are historical and must not be executed."
 }
-
