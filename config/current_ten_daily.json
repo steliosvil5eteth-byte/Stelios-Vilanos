@@ -1,0 +1,135 @@
+{
+  "schema_version": 1,
+  "program_id": "CURRENT_TEN_DAILY_20261113",
+  "status": "ACTIVE_USER_SPECIFICATION",
+  "effective_date": "2026-11-13",
+  "timezone": "Europe/Athens",
+  "brand": {
+    "name": "Ιστορίες που μας αγγίζουν",
+    "metricool_brand_id": 7076410
+  },
+  "daily_logical_posts": 10,
+  "slots": [
+    {
+      "time_local": "07:00",
+      "id": "relationships",
+      "title": "Ξεχωριστή σειρά σχέσεων"
+    },
+    {
+      "time_local": "09:00",
+      "id": "survival_rules",
+      "title": "Κανόνες Επιβίωσης"
+    },
+    {
+      "time_local": "10:00",
+      "id": "bartender_dog",
+      "title": "Σκύλος Μπάρμαν"
+    },
+    {
+      "time_local": "11:00",
+      "id": "zodiac",
+      "title": "Ζώδια"
+    },
+    {
+      "time_local": "13:00",
+      "id": "greece_two_day",
+      "title": "Διήμερο στην Ελλάδα"
+    },
+    {
+      "time_local": "15:00",
+      "id": "love_and_soul",
+      "title": "Αγάπη / Έρωτας / Χωρισμός / Ψυχή"
+    },
+    {
+      "time_local": "17:00",
+      "id": "documented_phenomenon",
+      "title": "Παράξενο πραγματικό φαινόμενο"
+    },
+    {
+      "time_local": "18:30",
+      "id": "documented_social_psychology",
+      "title": "Τεκμηριωμένα κοινωνικά/ψυχολογικά πειράματα"
+    },
+    {
+      "time_local": "20:00",
+      "id": "myth_or_truth",
+      "title": "Μύθος ή Αλήθεια"
+    },
+    {
+      "time_local": "22:00",
+      "id": "international_legends",
+      "title": "Διεθνείς θρύλοι"
+    }
+  ],
+  "reconciliation_time_local": "06:00",
+  "final_audit_time_local": "23:30",
+  "history_sources": [
+    "Metricool brand 7076410",
+    "Notion canonical program and archive",
+    "GitHub steliosvil5eteth-byte/Stelios-Vilanos history/leases"
+  ],
+  "dedupe_checks": [
+    "series",
+    "topic",
+    "title",
+    "hook",
+    "caption",
+    "fingerprint",
+    "episode_part",
+    "media",
+    "provider_status"
+  ],
+  "pre_create_rule": "Fresh reconciliation immediately before EVERY create; do not create if published, scheduled, or another executor already created materially equivalent content.",
+  "qa_gate": "PASSED_FINAL_REVIEW only after visual and audio inspection of the exact final upload assets",
+  "failure_rule": "Fail closed and block only affected post; no blind retry, duplicate, backdate, or uncertain publish.",
+  "publish_rule": "No automatic publication unless all source reconciliation, rights, AI disclosure, correct platform format, complete native media, QA, and readback requirements have passed.",
+  "content": {
+    "greek": "correct Greek text; complete hook, continuity, story and caption",
+    "cta": "Αν σας άρεσε, ακολουθήστε για περισσότερα.",
+    "hashtags_max": 5,
+    "images": "unique related photorealistic scenes",
+    "narrated_video": {
+      "video": "MP4 H.264 30 FPS CFR from first render",
+      "audio": "AAC; exact voice Νέστορας when narration required",
+      "subtitle_policy": "Apply active per-series requirements; no generic text overlays on narrative images",
+      "final_media_review": true
+    }
+  },
+  "platforms": {
+    "facebook": "native carousel or Reel/video as series requires",
+    "instagram": "native carousel or Reel/video as series requires",
+    "tiktok": "native photo carousel with autoAddMusic=true where applicable; narrated video no second music layer",
+    "youtube": "complete vertical slideshow/video; single permitted instrumental layer in carousel"
+  },
+  "safety": {
+    "no_spending_or_upgrade_without_authorization": true,
+    "readback_required": true,
+    "readback_fields": [
+      "brand",
+      "publication_date",
+      "publication_time",
+      "providers",
+      "media",
+      "draft",
+      "autoPublish",
+      "IDs",
+      "UUIDs",
+      "status"
+    ],
+    "pending_is_not_published": true
+  },
+  "queue_goal": {
+    "qa_passed_min_days": 2,
+    "qa_passed_target_days": 3
+  },
+  "related_programs": {
+    "youtube_zodiac_20_daily": "Separate existing program, never count as one of ten and do not modify its task.",
+    "subscriber_only_story": "Separate user-directed workflow; no follow CTA for subscriber episodes."
+  },
+  "supersedes_for_daily_ten": [
+    "PLATFORM_SPECIFIC_FIFTEEN_DAILY_20261010",
+    "CAROUSEL_FIVE_FOUR_ONE_20261022"
+  ],
+  "automation_mode": "FAIL_CLOSED_UNTIL_ALL_GATES_PASSED",
+  "note": "This is a policy/config record, not evidence that 10 posts have been rendered or published."
+}
