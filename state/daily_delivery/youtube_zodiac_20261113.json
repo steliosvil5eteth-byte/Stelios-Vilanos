@@ -1,0 +1,325 @@
+{
+  "date": "2026-11-13",
+  "brand_id": 7076410,
+  "channel_id": "UCAGfj9lX7tz17W1wc82v9oA",
+  "target": 20,
+  "timezone": "Europe/Athens",
+  "counts": {
+    "produced": 0,
+    "qa_passed": 0,
+    "scheduled_pending": 0,
+    "published": 0,
+    "failed": 0,
+    "blocked": 20
+  },
+  "items": [],
+  "status": "BLOCKED",
+  "count_basis": "Verified new production and release in this run; not a complete native-channel census. Blocked=unfilled daily target, not 20 newly produced assets.",
+  "automated_series_count": 0,
+  "user_extra_count": null,
+  "user_extra_count_known_rolling_window": 10,
+  "unknowns": [
+    "Complete native channel upload census and real remaining quota",
+    "Current zero-additional-cost generation/review allowance",
+    "Full repository history and all active ownership reconciliation"
+  ],
+  "blockers": [
+    "No verified actual listening path for exact final MP4; metadata/decode is not QA",
+    "Historical asset 01 requires visual corrections; all 20 require full AV review",
+    "Historical ACTIVE lease retained pending ownership reconciliation"
+  ],
+  "reconciliation": {
+    "metricool_window": {
+      "from": "2026-11-12T06:00:00+02:00",
+      "to": "2026-11-14T23:59:59+02:00"
+    },
+    "metricool_youtube_records": [
+      {
+        "brand_id": "7076410",
+        "id": 425366861,
+        "publicationDate": {
+          "dateTime": "2026-11-12T11:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "title": "Τους έδωσε τα πάντα… εκτός από την καρδιά τους | Επεισόδιο 1 — Η τελευταία υπόσχεση",
+        "providers": [
+          {
+            "network": "youtube",
+            "id": "YHFSXpq9OCo",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/watch?v=YHFSXpq9OCo",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "brand_id": "7076410",
+        "id": 425490422,
+        "publicationDate": {
+          "dateTime": "2026-11-12T13:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "title": "Τους έδωσε τα πάντα… εκτός από την καρδιά τους | Επεισόδιο 2 — Η πρόταση που άλλαξε τη ζωή του",
+        "providers": [
+          {
+            "network": "youtube",
+            "id": "RrL9MQW4KB8",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/watch?v=RrL9MQW4KB8",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "brand_id": "7076410",
+        "id": 425507379,
+        "publicationDate": {
+          "dateTime": "2026-11-12T14:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "title": "Τους έδωσε τα πάντα… εκτός από την καρδιά τους | Επεισόδιο 3 — Το χρέος που απειλούσε τα πάντα",
+        "providers": [
+          {
+            "network": "youtube",
+            "id": "a6D8wBaaX6s",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/watch?v=a6D8wBaaX6s",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "brand_id": "7076410",
+        "id": 425533510,
+        "publicationDate": {
+          "dateTime": "2026-11-12T15:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "title": "Τους έδωσε τα πάντα… εκτός από την καρδιά τους | Επεισόδιο 4 — Η πρώτη μεγάλη απόφαση",
+        "providers": [
+          {
+            "network": "youtube",
+            "id": "9NDq4zWjEfw",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/watch?v=9NDq4zWjEfw",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "brand_id": "7076410",
+        "id": 425547274,
+        "publicationDate": {
+          "dateTime": "2026-11-12T17:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "title": "Τους έδωσε τα πάντα… εκτός από την καρδιά τους | Επεισόδιο 5 — Η επιλογή ανάμεσα στο χρήμα και στην αγάπη",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "ERROR",
+            "detailedStatus": "The request metadata specifies an invalid or empty video title."
+          }
+        ]
+      },
+      {
+        "brand_id": "7076410",
+        "id": 425608109,
+        "publicationDate": {
+          "dateTime": "2026-11-12T18:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "title": "Τους έδωσε τα πάντα… εκτός από την καρδιά τους | Επεισόδιο 6 — Το πρώτο μεγάλο λάθος",
+        "providers": [
+          {
+            "network": "youtube",
+            "id": "3uKNsYg5kCs",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/watch?v=3uKNsYg5kCs",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "brand_id": "7076410",
+        "id": 425624981,
+        "publicationDate": {
+          "dateTime": "2026-11-12T19:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "title": "Τους έδωσε τα πάντα… εκτός από την καρδιά τους | Επεισόδιο 7 — Η γυναίκα που πίστεψε σε εκείνον",
+        "providers": [
+          {
+            "network": "youtube",
+            "id": "1X0svnAUE8g",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/watch?v=1X0svnAUE8g",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "brand_id": "7076410",
+        "id": 425694842,
+        "publicationDate": {
+          "dateTime": "2026-11-12T20:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "title": "Τους έδωσε τα πάντα… εκτός από την καρδιά τους | Επεισόδιο 8 — Το μυστικό του Λεωνίδα",
+        "providers": [
+          {
+            "network": "youtube",
+            "id": "PvUDBZDPkGo",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/watch?v=PvUDBZDPkGo",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "brand_id": "7076410",
+        "id": 425725269,
+        "publicationDate": {
+          "dateTime": "2026-11-12T21:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "title": "Τους έδωσε τα πάντα… εκτός από την καρδιά τους | Επεισόδιο 9 — Ο φάκελος που άφησε πίσω του",
+        "providers": [
+          {
+            "network": "youtube",
+            "id": "y6O32hzQkuI",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/watch?v=y6O32hzQkuI",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "brand_id": "7076410",
+        "id": 425764934,
+        "publicationDate": {
+          "dateTime": "2026-11-12T22:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "title": "Τους έδωσε τα πάντα… εκτός από την καρδιά τους | Επεισόδιο 10 — Ο γάμος και το πρώτο μεγάλο όνειρο",
+        "providers": [
+          {
+            "network": "youtube",
+            "id": "l7kHl6CKj8Q",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/watch?v=l7kHl6CKj8Q",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "brand_id": "7076410",
+        "id": 426279811,
+        "publicationDate": {
+          "dateTime": "2026-11-13T00:30:00",
+          "timezone": "Europe/Athens"
+        },
+        "title": "Τους έδωσε τα πάντα | Επεισόδιο 11 — Το παιδί που γεννήθηκε μέσα στα όνειρα",
+        "providers": [
+          {
+            "network": "youtube",
+            "id": "9ordJOybJvo",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/watch?v=9ordJOybJvo",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "brand_id": "7076410",
+        "id": 426294716,
+        "publicationDate": {
+          "dateTime": "2026-11-13T07:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "title": "Τους έδωσε τα πάντα | Επεισόδιο 12 — Η κόρη που του έκλεψε την καρδιά",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ]
+      },
+      {
+        "brand_id": "7076410",
+        "id": 426306442,
+        "publicationDate": {
+          "dateTime": "2026-11-13T08:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "title": "Τους έδωσε τα πάντα | Επεισόδιο 13 — Η επιχείρηση που έγινε αυτοκρατορία",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ]
+      },
+      {
+        "brand_id": "7076410",
+        "id": 426316324,
+        "publicationDate": {
+          "dateTime": "2026-11-13T09:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "title": "Τους έδωσε τα πάντα | Επεισόδιο 14 — Τα παιδιά που δεν γνώρισαν τη στέρηση",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ]
+      },
+      {
+        "brand_id": "7076410",
+        "id": 426325301,
+        "publicationDate": {
+          "dateTime": "2026-11-13T10:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "title": "Τους έδωσε τα πάντα | Επεισόδιο 15 — Το πρώτο σημάδι της αχαριστίας",
+        "providers": [
+          {
+            "network": "youtube",
+            "status": "PENDING",
+            "detailedStatus": "Pending"
+          }
+        ]
+      }
+    ],
+    "notion_view_active": 291,
+    "notion_view_archived": 0,
+    "notion_view_pagination_complete": true,
+    "full_history_semantic_dedupe_complete": false
+  },
+  "historical_inventory": {
+    "date_label": "2026-11-02",
+    "mp4_files_present": 20,
+    "counts_as_new_today": false,
+    "qa_passed": 0,
+    "journal": "state/daily_delivery/youtube_zodiac_20261102.json"
+  },
+  "alternative_route": {
+    "descript_workspace_connection": "verified",
+    "ai_cost": "unverified; no AI job submitted",
+    "actual_audio_review": "not established by connector documentation"
+  },
+  "safe_preparation": {
+    "semantic_repeat_flag": "Existing plans 04 (Ένα ταξίδι-έκπληξη) and 19 (Αυθόρμητη εκδρομή) share a substantially similar premise and immediate-yes hook; require editorial differentiation before release."
+  },
+  "actions": {
+    "new_generation": 0,
+    "upload": 0,
+    "schedule": 0,
+    "paid_jobs": 0,
+    "personal_posts_modified": 0
+  }
+}
