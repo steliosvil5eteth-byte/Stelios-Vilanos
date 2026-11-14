@@ -1,0 +1,280 @@
+{
+  "date": "2026-11-14",
+  "brand_id": 7076410,
+  "target": 20,
+  "timezone": "Europe/Athens",
+  "counts": {
+    "produced": 0,
+    "qa_passed": 0,
+    "scheduled_pending": 0,
+    "published": 0,
+    "failed": 0,
+    "blocked": 20
+  },
+  "items": [],
+  "instagram_counts": {
+    "scheduled_pending": 0,
+    "published": 0,
+    "failed": 0,
+    "blocked": 20
+  },
+  "logical_video_target": 20,
+  "provider_destination_target": 40,
+  "status": "BLOCKED",
+  "count_basis": "New actions in this run and verified series entries in checked window. Blocked means unmet target; no invented asset rows. Native account totals unknown.",
+  "automated_series_count": 0,
+  "user_extra_count": null,
+  "user_extra_count_known_rolling_window": {
+    "youtube": 8,
+    "instagram": 8
+  },
+  "unknowns": [
+    "Complete native account upload census and real remaining quotas",
+    "Zero additional cost generation/review allowance",
+    "Complete semantic repository/history and active lease reconciliation"
+  ],
+  "blockers": [
+    "No verified real full audiovisual review/listening capability for exact final MP4; affects all releases, not an isolated destination",
+    "Old 20 local MP4s exist but are not QA-passed; visual corrections required",
+    "Historical Nov2 ACTIVE lease unresolved"
+  ],
+  "reconciliation": {
+    "notion_active": 291,
+    "notion_archived": 0,
+    "saved_view_pagination_complete": true,
+    "semantic_history_complete": false,
+    "metricool_window": {
+      "from": "2026-11-13T05:59:00+02:00",
+      "to": "2026-11-15T23:59:59+02:00"
+    },
+    "provider_evidence": [
+      {
+        "id": 426294716,
+        "brand_id": "7076410",
+        "date": {
+          "dateTime": "2026-11-13T07:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Dfq1a6jCXE7/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Dfq1a6jCXE7/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "Aldy5GGZIs0",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/watch?v=Aldy5GGZIs0",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "id": 426306442,
+        "brand_id": "7076410",
+        "date": {
+          "dateTime": "2026-11-13T08:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Dfq8R0-gdI1/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Dfq8R0-gdI1/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "Tbzj1BUfllI",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/watch?v=Tbzj1BUfllI",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "id": 426316324,
+        "brand_id": "7076410",
+        "date": {
+          "dateTime": "2026-11-13T09:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/DfrDRaRCmZ5/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/DfrDRaRCmZ5/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "pjTcIet90To",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/watch?v=pjTcIet90To",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "id": 426325301,
+        "brand_id": "7076410",
+        "date": {
+          "dateTime": "2026-11-13T10:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/DfrKOjzCp_4/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/DfrKOjzCp_4/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "hYcQ-GztJSs",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/watch?v=hYcQ-GztJSs",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "id": 426548959,
+        "brand_id": "7076410",
+        "date": {
+          "dateTime": "2026-11-13T11:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/DfrRdGrDpTz/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/DfrRdGrDpTz/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "TZ4abh_xvwc",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/watch?v=TZ4abh_xvwc",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "id": 426561515,
+        "brand_id": "7076410",
+        "date": {
+          "dateTime": "2026-11-13T12:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/DfrYHjanLp9/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/DfrYHjanLp9/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "DR-fPF-KlH4",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/watch?v=DR-fPF-KlH4",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "id": 426567683,
+        "brand_id": "7076410",
+        "date": {
+          "dateTime": "2026-11-13T13:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/DfrfFwhlLN1/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/DfrfFwhlLN1/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "kzyIF_oKolE",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/watch?v=kzyIF_oKolE",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "id": 426587487,
+        "brand_id": "7076410",
+        "date": {
+          "dateTime": "2026-11-13T14:00:00",
+          "timezone": "Europe/Athens"
+        },
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Dfrlo1_lD_8/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Dfrlo1_lD_8/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "hbmP7igOA4I",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/watch?v=hbmP7igOA4I",
+            "detailedStatus": "Published"
+          }
+        ]
+      }
+    ]
+  },
+  "analytics": {
+    "period": "2026-10-30/2026-11-13",
+    "examples": [
+      {
+        "id": "-DBg-yNg-vg",
+        "views": 1018,
+        "average_view_duration_seconds": 6
+      },
+      {
+        "id": "COL0-Wly-mg",
+        "views": 425,
+        "average_view_duration_seconds": 5
+      }
+    ],
+    "subscribers_per_video": null,
+    "retention_curve": null,
+    "interpretation": "Small sample; no causal inference. Rework hook readability and early pacing before generation; do not copy old topics."
+  },
+  "historical_media": {
+    "local_files_present": 20,
+    "filename_date": "2026-11-02",
+    "counted_as_new": false,
+    "qa_passed": 0
+  },
+  "automation": {
+    "paused": true,
+    "reason": "Persistent workflow-wide lack of required actual audiovisual QA and verified zero-cost execution; no compliant release path. Not a transient API error."
+  },
+  "actions": {
+    "generated": 0,
+    "scheduled": 0,
+    "uploaded": 0,
+    "paid_jobs": 0,
+    "personal_posts_modified": 0
+  }
+}
