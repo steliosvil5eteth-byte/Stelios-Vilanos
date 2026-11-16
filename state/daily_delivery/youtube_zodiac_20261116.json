@@ -1,0 +1,236 @@
+{
+  "date": "2026-11-16",
+  "brand_id": 7076410,
+  "target": 20,
+  "timezone": "Europe/Athens",
+  "counts": {
+    "produced": 0,
+    "qa_passed": 0,
+    "scheduled_pending": 0,
+    "published": 0,
+    "failed": 0,
+    "blocked": 20
+  },
+  "instagram_counts": {
+    "scheduled_pending": 0,
+    "published": 0,
+    "failed": 0,
+    "blocked": 20
+  },
+  "items": [],
+  "status": "BLOCKED",
+  "count_basis": "New actions this run and Metricool window 2026-11-16 through 2026-11-19, empty. Not a native-account census. Old files not counted as new production.",
+  "historical_media": {
+    "count": 20,
+    "technical_probe_all_passed": true,
+    "technical_format": "28.8s 1080x1920 H264 yuv420p 30/1 fps AAC",
+    "all_manifest_sha256_match": true,
+    "inventory": [
+      {
+        "index": 1,
+        "title": "Το ξυπνητήρι χτυπά τρίτη φορά",
+        "source_file": "/workspace/scratch/91d31acceb07/output/youtube_zodiac_20261102/videos/zodiac_short_20261102_01.mp4",
+        "sha256": "74cb65cb0a33659bd65862a7a6669e5529e0b1a362ef1ba1982120c838c87887",
+        "status": "BLOCKED",
+        "filename_date": "2026-11-02",
+        "full_audiovisual_review_passed": false
+      },
+      {
+        "index": 2,
+        "title": "Ένα απρόσμενο κομπλιμέντο",
+        "source_file": "/workspace/scratch/91d31acceb07/output/youtube_zodiac_20261102/videos/zodiac_short_20261102_02.mp4",
+        "sha256": "27308fed4f1cd6ccf1451c088077505c6771947a0cb60df564ccdaac3789a7be",
+        "status": "BLOCKED",
+        "filename_date": "2026-11-02",
+        "full_audiovisual_review_passed": false
+      },
+      {
+        "index": 3,
+        "title": "Η μπαταρία έμεινε στο 1%",
+        "source_file": "/workspace/scratch/91d31acceb07/output/youtube_zodiac_20261102/videos/zodiac_short_20261102_03.mp4",
+        "sha256": "dd297d3641062096556e8b9f7944565219d66dcdad2ded663b79c0868cdb0e66",
+        "status": "BLOCKED",
+        "filename_date": "2026-11-02",
+        "full_audiovisual_review_passed": false
+      },
+      {
+        "index": 4,
+        "title": "Ένα ταξίδι-έκπληξη",
+        "source_file": "/workspace/scratch/91d31acceb07/output/youtube_zodiac_20261102/videos/zodiac_short_20261102_04.mp4",
+        "sha256": "384a178fee74c58e2fca5d742e14b8cb4f8b6c272ab18457986dee855f683fcb",
+        "status": "BLOCKED",
+        "filename_date": "2026-11-02",
+        "full_audiovisual_review_passed": false
+      },
+      {
+        "index": 5,
+        "title": "Μήνυμα από τον πρώην",
+        "source_file": "/workspace/scratch/91d31acceb07/output/youtube_zodiac_20261102/videos/zodiac_short_20261102_05.mp4",
+        "sha256": "62f2a3782f9bd2dfc34de5815960be6d065dfef47bb097bf78a1eee3321e7b22",
+        "status": "BLOCKED",
+        "filename_date": "2026-11-02",
+        "full_audiovisual_review_passed": false
+      },
+      {
+        "index": 6,
+        "title": "Η πρώτη μέρα στη νέα δουλειά",
+        "source_file": "/workspace/scratch/91d31acceb07/output/youtube_zodiac_20261102/videos/zodiac_short_20261102_06.mp4",
+        "sha256": "047484c3798047bf7c63a5e5f4b1991301f3c114fc9afb4c9a30b80f528f3380",
+        "status": "BLOCKED",
+        "filename_date": "2026-11-02",
+        "full_audiovisual_review_passed": false
+      },
+      {
+        "index": 7,
+        "title": "Η συνταγή απέτυχε",
+        "source_file": "/workspace/scratch/91d31acceb07/output/youtube_zodiac_20261102/videos/zodiac_short_20261102_07.mp4",
+        "sha256": "f93945a63b012843669f0439aa0fa4a440234068906b178cceb62086b1f005a6",
+        "status": "BLOCKED",
+        "filename_date": "2026-11-02",
+        "full_audiovisual_review_passed": false
+      },
+      {
+        "index": 8,
+        "title": "Τα κλειδιά χάθηκαν",
+        "source_file": "/workspace/scratch/91d31acceb07/output/youtube_zodiac_20261102/videos/zodiac_short_20261102_08.mp4",
+        "sha256": "6c7ffe4cf14ddf7ec63d0966ffaf1669bf2241c5d211bc1708bf5e228399e891",
+        "status": "BLOCKED",
+        "filename_date": "2026-11-02",
+        "full_audiovisual_review_passed": false
+      },
+      {
+        "index": 9,
+        "title": "Ένας κρυφός θαυμαστής",
+        "source_file": "/workspace/scratch/91d31acceb07/output/youtube_zodiac_20261102/videos/zodiac_short_20261102_09.mp4",
+        "sha256": "2ae017eb8c025cd14891e08d75fff847e08f70097a73c5e1b7c3ad01b81d5c61",
+        "status": "BLOCKED",
+        "filename_date": "2026-11-02",
+        "full_audiovisual_review_passed": false
+      },
+      {
+        "index": 10,
+        "title": "Η πρώτη γνωριμία με τα πεθερικά",
+        "source_file": "/workspace/scratch/91d31acceb07/output/youtube_zodiac_20261102/videos/zodiac_short_20261102_10.mp4",
+        "sha256": "bf688334dd48b2f4d53d9a37292d4ee6ae3644b65b5e44beafb03c1dae248a6d",
+        "status": "BLOCKED",
+        "filename_date": "2026-11-02",
+        "full_audiovisual_review_passed": false
+      },
+      {
+        "index": 11,
+        "title": "Πρόσκληση για καραόκε",
+        "source_file": "/workspace/scratch/91d31acceb07/output/youtube_zodiac_20261102/videos/zodiac_short_20261102_11.mp4",
+        "sha256": "1bbfb8bf0028c5b7c329cb7f22e2ac269c339f1577ed57e6f9839226d656ff45",
+        "status": "BLOCKED",
+        "filename_date": "2026-11-02",
+        "full_audiovisual_review_passed": false
+      },
+      {
+        "index": 12,
+        "title": "Μικρό κέρδος στο λαχείο",
+        "source_file": "/workspace/scratch/91d31acceb07/output/youtube_zodiac_20261102/videos/zodiac_short_20261102_12.mp4",
+        "sha256": "e07aa34f9c3a4a18defbd3c9501f7900c2f14bb3bc41dceb20dd2c64b7da9e2a",
+        "status": "BLOCKED",
+        "filename_date": "2026-11-02",
+        "full_audiovisual_review_passed": false
+      },
+      {
+        "index": 13,
+        "title": "Ο γείτονας κάνει πάρτι",
+        "source_file": "/workspace/scratch/91d31acceb07/output/youtube_zodiac_20261102/videos/zodiac_short_20261102_13.mp4",
+        "sha256": "d05be6184c96cbda5920a6817250325bbf36fcec154c1866a3ee7b9315537a32",
+        "status": "BLOCKED",
+        "filename_date": "2026-11-02",
+        "full_audiovisual_review_passed": false
+      },
+      {
+        "index": 14,
+        "title": "Έστειλες μήνυμα σε λάθος άτομο",
+        "source_file": "/workspace/scratch/91d31acceb07/output/youtube_zodiac_20261102/videos/zodiac_short_20261102_14.mp4",
+        "sha256": "ed1a61fe4d242419ca89f5119112845f19a77bc397d1322f9dbe6c22273d8199",
+        "status": "BLOCKED",
+        "filename_date": "2026-11-02",
+        "full_audiovisual_review_passed": false
+      },
+      {
+        "index": 15,
+        "title": "Σαββατοκύριακο χωρίς ίντερνετ",
+        "source_file": "/workspace/scratch/91d31acceb07/output/youtube_zodiac_20261102/videos/zodiac_short_20261102_15.mp4",
+        "sha256": "575dd1e40433f42ea19ac392acc4b91a4010cc7a9761dfc6a1b78c072495d8ef",
+        "status": "BLOCKED",
+        "filename_date": "2026-11-02",
+        "full_audiovisual_review_passed": false
+      },
+      {
+        "index": 16,
+        "title": "Η πρώτη μέρα στο γυμναστήριο",
+        "source_file": "/workspace/scratch/91d31acceb07/output/youtube_zodiac_20261102/videos/zodiac_short_20261102_16.mp4",
+        "sha256": "cb5420df60a3e2a0a97cda704a6a2529623c80cfa9293a366b7615d00e9b088e",
+        "status": "BLOCKED",
+        "filename_date": "2026-11-02",
+        "full_audiovisual_review_passed": false
+      },
+      {
+        "index": 17,
+        "title": "Ξαφνική βροχή χωρίς ομπρέλα",
+        "source_file": "/workspace/scratch/91d31acceb07/output/youtube_zodiac_20261102/videos/zodiac_short_20261102_17.mp4",
+        "sha256": "b2991bd86e9e13bda439b668ec060a0dc9e2aa53b7ba7c02c921c7892edd0768",
+        "status": "BLOCKED",
+        "filename_date": "2026-11-02",
+        "full_audiovisual_review_passed": false
+      },
+      {
+        "index": 18,
+        "title": "Ομαδική εργασία με χάος",
+        "source_file": "/workspace/scratch/91d31acceb07/output/youtube_zodiac_20261102/videos/zodiac_short_20261102_18.mp4",
+        "sha256": "072b543782cbeed92f2d88899ee9ed8b71805b0b9591f965618333ff8eed9cc5",
+        "status": "BLOCKED",
+        "filename_date": "2026-11-02",
+        "full_audiovisual_review_passed": false
+      },
+      {
+        "index": 19,
+        "title": "Αυθόρμητη εκδρομή",
+        "source_file": "/workspace/scratch/91d31acceb07/output/youtube_zodiac_20261102/videos/zodiac_short_20261102_19.mp4",
+        "sha256": "a372a079b662340dd6697e12fa87fc8a71cf5fa4d19af3c9ed8e99afaa1ad5a1",
+        "status": "BLOCKED",
+        "filename_date": "2026-11-02",
+        "full_audiovisual_review_passed": false
+      },
+      {
+        "index": 20,
+        "title": "Βρήκες ένα παλιό γράμμα",
+        "source_file": "/workspace/scratch/91d31acceb07/output/youtube_zodiac_20261102/videos/zodiac_short_20261102_20.mp4",
+        "sha256": "fef3f6674878bd98d2026a7ce0c8970b3942e11841f03e28248b5beb696238a4",
+        "status": "BLOCKED",
+        "filename_date": "2026-11-02",
+        "full_audiovisual_review_passed": false
+      }
+    ],
+    "visual_review": {
+      "index": 1,
+      "scope": "Six extracted frames of exact final MP4; not complete audiovisual QA",
+      "finding": "Card3 text says opening messages but image shows pillow fight. Zodiac decorative symbols also do not consistently correspond to labels.",
+      "passed": false
+    }
+  },
+  "blockers": [
+    "No supported actual listening/review capability for exact local final MP4 established; metadata is not listening.",
+    "Visual correction required on item1; remaining19 not visually approved.",
+    "Full semantic history/lease reconciliation and native rolling quotas not completed; no release attempted."
+  ],
+  "automation": {
+    "id": "6ab86c66195c8191b86b6aa17c99609b",
+    "enabled_observed": true,
+    "next_run_time": "2026-11-17T06:00:00+02:00",
+    "last_recorded_run": "2026-11-14",
+    "changed_this_run": false
+  },
+  "actions": {
+    "generated": 0,
+    "scheduled": 0,
+    "published": 0,
+    "paid_jobs": 0
+  },
+  "release_ready": false
+}
