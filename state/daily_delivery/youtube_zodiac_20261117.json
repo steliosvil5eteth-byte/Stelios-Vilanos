@@ -5,17 +5,17 @@
   "timezone": "Europe/Athens",
   "counts": {
     "produced": 0,
-    "qa_passed": 8,
-    "scheduled_pending": 8,
+    "qa_passed": 9,
+    "scheduled_pending": 9,
     "published": 0,
     "failed": 0,
-    "blocked": 12
+    "blocked": 11
   },
   "instagram_counts": {
-    "scheduled_pending": 8,
+    "scheduled_pending": 9,
     "published": 0,
     "failed": 0,
-    "blocked": 12
+    "blocked": 11
   },
   "items": [
     {
@@ -248,6 +248,37 @@
       },
       "media": [
         "https://static.metricool.com/planner/202611/7000636-file-14522570613190468270.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "providers": [
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
+      "plannerUrl": null
+    },
+    {
+      "index": 9,
+      "title": "Ο θαυμαστής αποκαλύπτεται",
+      "sha256": "f813f8b85cd1d38339f05d5ccfef5d373965466e8194c55e9ab319eeac917f86",
+      "status": "SCHEDULED_PENDING",
+      "id": 431206576,
+      "uuid": "-7879300217044253261",
+      "publicationDate": {
+        "dateTime": "2026-11-17T16:55:00",
+        "timezone": "Europe/Athens"
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/7000636-file-7375290633063189618.mp4"
       ],
       "draft": false,
       "autoPublish": true,
@@ -628,7 +659,7 @@
   "user_extra_count": null,
   "actions": {
     "new_production": 0,
-    "provider_writes": 8,
+    "provider_writes": 9,
     "paid_calls": 0,
     "audio_requirement_updated": true,
     "media_upload_rejected": 1
