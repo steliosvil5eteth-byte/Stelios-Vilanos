@@ -5,17 +5,17 @@
   "timezone": "Europe/Athens",
   "counts": {
     "produced": 0,
-    "qa_passed": 5,
-    "scheduled_pending": 5,
+    "qa_passed": 6,
+    "scheduled_pending": 6,
     "published": 0,
     "failed": 0,
-    "blocked": 15
+    "blocked": 14
   },
   "instagram_counts": {
-    "scheduled_pending": 5,
+    "scheduled_pending": 6,
     "published": 0,
     "failed": 0,
-    "blocked": 15
+    "blocked": 14
   },
   "items": [
     {
@@ -155,6 +155,37 @@
       },
       "media": [
         "https://static.metricool.com/planner/202611/7000636-file-6351142032486361514.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "providers": [
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
+      "plannerUrl": null
+    },
+    {
+      "index": 6,
+      "title": "Η πρώτη μέρα στη νέα δουλειά",
+      "sha256": "e972d85798c487c88bc7201917f0567905a623f9bee2e5f43cef238d7479ebee",
+      "status": "SCHEDULED_PENDING",
+      "id": 431205633,
+      "uuid": "5777062136112827684",
+      "publicationDate": {
+        "dateTime": "2026-11-17T15:10:00",
+        "timezone": "Europe/Athens"
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/7000636-file-13202243219549615873.mp4"
       ],
       "draft": false,
       "autoPublish": true,
@@ -535,7 +566,7 @@
   "user_extra_count": null,
   "actions": {
     "new_production": 0,
-    "provider_writes": 5,
+    "provider_writes": 6,
     "paid_calls": 0,
     "audio_requirement_updated": true,
     "media_upload_rejected": 1
