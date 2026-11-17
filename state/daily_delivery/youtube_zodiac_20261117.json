@@ -5,17 +5,17 @@
   "timezone": "Europe/Athens",
   "counts": {
     "produced": 0,
-    "qa_passed": 13,
-    "scheduled_pending": 13,
+    "qa_passed": 14,
+    "scheduled_pending": 14,
     "published": 0,
     "failed": 0,
-    "blocked": 7
+    "blocked": 6
   },
   "instagram_counts": {
-    "scheduled_pending": 13,
+    "scheduled_pending": 14,
     "published": 0,
     "failed": 0,
-    "blocked": 7
+    "blocked": 6
   },
   "items": [
     {
@@ -420,6 +420,37 @@
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
       "plannerUrl": null
+    },
+    {
+      "index": 14,
+      "title": "Έστειλες μήνυμα σε λάθος άτομο",
+      "sha256": "c2cb7cb72839cf0ef5fa37fa0216ac8de3fe54d00707bfd830783015fd7e66b7",
+      "status": "SCHEDULED_PENDING",
+      "id": 431207771,
+      "uuid": "-5560006967642011289",
+      "publicationDate": {
+        "dateTime": "2026-11-17T19:50:00",
+        "timezone": "Europe/Athens"
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/7000636-file-3450950243565494066.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "providers": [
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
+      "plannerUrl": null
     }
   ],
   "status": "PARTIALLY_SCHEDULED",
@@ -783,7 +814,7 @@
   "user_extra_count": null,
   "actions": {
     "new_production": 0,
-    "provider_writes": 13,
+    "provider_writes": 14,
     "paid_calls": 0,
     "audio_requirement_updated": true,
     "media_upload_rejected": 1
