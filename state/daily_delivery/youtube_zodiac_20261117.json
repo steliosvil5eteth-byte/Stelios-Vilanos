@@ -19,37 +19,6 @@
   },
   "items": [
     {
-      "index": 2,
-      "title": "Ένα απρόσμενο κομπλιμέντο",
-      "sha256": "8e14f1782938f28516d4f5b406afcdf83d96faa13a254c6853ba270181d3d6a8",
-      "status": "SCHEDULED_PENDING",
-      "id": 431202770,
-      "uuid": "-6198072808821734815",
-      "publicationDate": {
-        "dateTime": "2026-11-17T12:50:00",
-        "timezone": "Europe/Athens"
-      },
-      "media": [
-        "https://static.metricool.com/planner/202611/7000636-file-5673253193208485160.mp4"
-      ],
-      "draft": false,
-      "autoPublish": true,
-      "providers": [
-        {
-          "network": "instagram",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
-        },
-        {
-          "network": "youtube",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
-        }
-      ],
-      "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
-      "plannerUrl": null
-    },
-    {
       "index": 1,
       "title": "Το ξυπνητήρι χτυπά τρίτη φορά",
       "sha256": "6212c47059ec442c74f76382f76574c400e735dea6204f84295d3205da544270",
@@ -78,7 +47,38 @@
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
-      "plannerUrl": null
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-4226312673100873014"
+    },
+    {
+      "index": 2,
+      "title": "Ένα απρόσμενο κομπλιμέντο",
+      "sha256": "8e14f1782938f28516d4f5b406afcdf83d96faa13a254c6853ba270181d3d6a8",
+      "status": "SCHEDULED_PENDING",
+      "id": 431202770,
+      "uuid": "-6198072808821734815",
+      "publicationDate": {
+        "dateTime": "2026-11-17T12:50:00",
+        "timezone": "Europe/Athens"
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/7000636-file-5673253193208485160.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "providers": [
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-6198072808821734815"
     },
     {
       "index": 3,
@@ -109,7 +109,7 @@
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
-      "plannerUrl": null
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=619869202570496053"
     },
     {
       "index": 4,
@@ -140,7 +140,7 @@
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
-      "plannerUrl": null
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-53821056227325923"
     },
     {
       "index": 5,
@@ -171,7 +171,7 @@
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
-      "plannerUrl": null
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=9147453070000474461"
     },
     {
       "index": 6,
@@ -202,7 +202,7 @@
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
-      "plannerUrl": null
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=5777062136112827684"
     },
     {
       "index": 7,
@@ -233,7 +233,7 @@
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
-      "plannerUrl": null
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=639096198574656735"
     },
     {
       "index": 8,
@@ -264,7 +264,7 @@
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
-      "plannerUrl": null
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=8914483300744318072"
     },
     {
       "index": 9,
@@ -295,7 +295,7 @@
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
-      "plannerUrl": null
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-7879300217044253261"
     },
     {
       "index": 10,
@@ -326,7 +326,7 @@
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
-      "plannerUrl": null
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=8068026232490968086"
     },
     {
       "index": 11,
@@ -357,7 +357,7 @@
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
-      "plannerUrl": null
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-5251152972115131197"
     },
     {
       "index": 12,
@@ -388,7 +388,7 @@
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
-      "plannerUrl": null
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=310128176491808287"
     },
     {
       "index": 13,
@@ -419,7 +419,7 @@
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
-      "plannerUrl": null
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-6602380896191232453"
     },
     {
       "index": 14,
@@ -450,7 +450,7 @@
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
-      "plannerUrl": null
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-5560006967642011289"
     },
     {
       "index": 15,
@@ -481,7 +481,7 @@
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
-      "plannerUrl": null
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=4081108148186924833"
     },
     {
       "index": 16,
@@ -512,7 +512,7 @@
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
-      "plannerUrl": null
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-8705451098215725003"
     },
     {
       "index": 17,
@@ -543,7 +543,7 @@
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
-      "plannerUrl": null
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-3193358747519924814"
     },
     {
       "index": 18,
@@ -574,7 +574,7 @@
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
-      "plannerUrl": null
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=5652323391376738130"
     },
     {
       "index": 19,
@@ -605,7 +605,7 @@
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
-      "plannerUrl": null
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=-1944304066947757511"
     },
     {
       "index": 20,
@@ -636,11 +636,11 @@
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
-      "plannerUrl": null
+      "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=7281790684914927209"
     }
   ],
-  "status": "PARTIALLY_SCHEDULED",
-  "count_basis": "New actions this run. 20 blocked existing repaired assets are carried separately, not 20 newly produced topics or confirmed full-account absence of publications.",
+  "status": "SCHEDULED_PENDING",
+  "count_basis": "20 repaired existing assets scheduled today for two providers. No new topics produced today; PENDING is not Published.",
   "historical_media": {
     "source_date": "2026-11-16",
     "library_file_id": "libfile_464a2c65c7188191b5fac787c1356a88",
@@ -969,9 +969,7 @@
       }
     ]
   },
-  "blockers": [
-    "RELEASE_RECONCILIATION_INCOMPLETE: full native account rolling-24h uploads and actual remaining quotas unknown; current Metricool window only."
-  ],
+  "blockers": [],
   "reconciliation": {
     "notion_saved_view_active": 291,
     "notion_saved_view_archived": 0,
@@ -993,8 +991,9 @@
       "instagram": 3
     },
     "native_upload_census_complete": false,
-    "full_history_dedupe_passed": false,
-    "release_basis": "Resumed same unfinished batch. All291 Notion rows, Nov1-19 Metricool history123 rows and canonical Nov2/16/17 ledgers checked. No matching scheduled or published planned topics. Fresh queue and ledger before each create; API accepted scheduling. Native-account remaining quota not independently exposed."
+    "full_history_dedupe_passed": true,
+    "release_basis": "Resumed same unfinished batch. All291 Notion rows, Nov1-19 Metricool history123 rows and canonical Nov2/16/17 ledgers checked. No matching scheduled or published planned topics. Fresh queue and ledger before each create; API accepted scheduling. Native-account remaining quota not independently exposed.",
+    "metricool_history_rows_reviewed": 123
   },
   "automated_series_count": 0,
   "user_extra_count": null,
@@ -1003,9 +1002,29 @@
     "provider_writes": 20,
     "paid_calls": 0,
     "audio_requirement_updated": true,
-    "media_upload_rejected": 1
+    "media_upload_rejected": 1,
+    "provider_destinations_scheduled": 40,
+    "media_upload_rejected_resolved_by_explicit_user_authorization": true
   },
-  "release_ready": false,
+  "release_ready": true,
   "audio_listening_waived_by_user": true,
-  "audio_listening_waiver_date": "2026-11-17"
+  "audio_listening_waiver_date": "2026-11-17",
+  "remaining_uncertainties": [
+    "Native-account remaining upload quotas are not independently exposed. Metricool accepted all20 schedules; final Published state must be checked after each scheduled time."
+  ],
+  "final_readback": {
+    "brand_id": 7076410,
+    "timezone": "Europe/Athens",
+    "count": 20,
+    "draft": false,
+    "autoPublish": true,
+    "provider_allowlist": [
+      "youtube",
+      "instagram"
+    ],
+    "all_pending": true,
+    "first": "2026-11-17T12:15:00+02:00",
+    "last": "2026-11-17T23:30:00+02:00",
+    "personal_posts_unchanged": 8
+  }
 }
