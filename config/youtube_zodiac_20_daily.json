@@ -83,7 +83,7 @@
     "fail_closed": true,
     "common_lease_and_journal_required": true,
     "full_metricool_notion_and_two_repository_reconciliation_required": false,
-    "exact_final_visual_and_audio_review_required": true,
+    "exact_final_visual_and_audio_review_required": false,
     "review_bound_to_sha256": true,
     "no_blind_retry": true,
     "live_readback_required": true,
@@ -102,7 +102,10 @@
     "instagram_publishing_quota_rule": "Check rolling 24-hour IG quota, including 10 core daily logical posts and other uploads. Metricool documents maximum 50 API-published posts/24h; obey actual quota/error state. Fail closed when uncertain.",
     "partial_platform_failure_rule": "Do not retry already Published, Scheduled/PENDING or ambiguous destination. Check exact target destination before retry; target only confirmed failed provider.",
     "existing_media_reuse": "Same final SHA256-approved MP4 may be used for YouTube Shorts + Instagram Reels only when rights/platform compliance and full exact media QA pass. Separate platform captions/metadata.",
-    "legacy_youtube_history_preservation": "Never rewrite existing YouTube-only rows or count existing YouTube Published as Instagram Published; daily report must separately count each provider. Old fields remain for compatibility."
+    "legacy_youtube_history_preservation": "Never rewrite existing YouTube-only rows or count existing YouTube Published as Instagram Published; daily report must separately count each provider. Old fields remain for compatibility.",
+    "exact_final_visual_review_required": true,
+    "actual_listening_required": false,
+    "audio_review_policy": "User explicitly waived actual listening on 2026-11-17 for voiceless zodiac Shorts. One soft original instrumental track only; verify technical audio integrity without claiming listening."
   },
   "current_run": {
     "date": "2026-11-01",
@@ -171,9 +174,10 @@
     }
   },
   "configuration_update": {
-    "date": "2026-11-13",
+    "date": "2026-11-17",
     "basis": "User specifically requested enabling the existing 20 daily zodiac Shorts also on Instagram. One automation, 20 videos x 2 platforms, no extra apps, no extra costs.",
     "supersedes_platform_scope_only": "YOUTUBE_ONLY",
-    "actual_publication_verified": false
+    "actual_publication_verified": false,
+    "audio_review_override": "Explicit current user instruction: no listening required; no narration, one soft music layer, proceed to upload."
   }
 }
