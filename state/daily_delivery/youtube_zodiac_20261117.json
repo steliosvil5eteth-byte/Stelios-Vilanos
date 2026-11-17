@@ -5,17 +5,17 @@
   "timezone": "Europe/Athens",
   "counts": {
     "produced": 0,
-    "qa_passed": 11,
-    "scheduled_pending": 11,
+    "qa_passed": 12,
+    "scheduled_pending": 12,
     "published": 0,
     "failed": 0,
-    "blocked": 9
+    "blocked": 8
   },
   "instagram_counts": {
-    "scheduled_pending": 11,
+    "scheduled_pending": 12,
     "published": 0,
     "failed": 0,
-    "blocked": 9
+    "blocked": 8
   },
   "items": [
     {
@@ -341,6 +341,37 @@
       },
       "media": [
         "https://static.metricool.com/planner/202611/7000636-file-3264032175337589607.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "providers": [
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
+      "plannerUrl": null
+    },
+    {
+      "index": 12,
+      "title": "Μικρό κέρδος στο λαχείο",
+      "sha256": "087a44254d86e599ed4b50aed5dc1d0a0af569cc90928129c22b23b68f3f3af8",
+      "status": "SCHEDULED_PENDING",
+      "id": 431207566,
+      "uuid": "310128176491808287",
+      "publicationDate": {
+        "dateTime": "2026-11-17T18:40:00",
+        "timezone": "Europe/Athens"
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/7000636-file-7537815030864417238.mp4"
       ],
       "draft": false,
       "autoPublish": true,
@@ -721,7 +752,7 @@
   "user_extra_count": null,
   "actions": {
     "new_production": 0,
-    "provider_writes": 11,
+    "provider_writes": 12,
     "paid_calls": 0,
     "audio_requirement_updated": true,
     "media_upload_rejected": 1
