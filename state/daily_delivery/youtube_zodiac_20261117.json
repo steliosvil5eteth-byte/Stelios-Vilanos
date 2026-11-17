@@ -5,17 +5,17 @@
   "timezone": "Europe/Athens",
   "counts": {
     "produced": 0,
-    "qa_passed": 19,
-    "scheduled_pending": 19,
+    "qa_passed": 20,
+    "scheduled_pending": 20,
     "published": 0,
     "failed": 0,
-    "blocked": 1
+    "blocked": 0
   },
   "instagram_counts": {
-    "scheduled_pending": 19,
+    "scheduled_pending": 20,
     "published": 0,
     "failed": 0,
-    "blocked": 1
+    "blocked": 0
   },
   "items": [
     {
@@ -606,6 +606,37 @@
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
       "plannerUrl": null
+    },
+    {
+      "index": 20,
+      "title": "Βρήκες ένα παλιό γράμμα",
+      "sha256": "97edc414ea4cc0d72937208539b530b376ba3050927113f113554b57f374c33a",
+      "status": "SCHEDULED_PENDING",
+      "id": 431209425,
+      "uuid": "7281790684914927209",
+      "publicationDate": {
+        "dateTime": "2026-11-17T23:30:00",
+        "timezone": "Europe/Athens"
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/7000636-file-3069544372325742657.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "providers": [
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
+      "plannerUrl": null
     }
   ],
   "status": "PARTIALLY_SCHEDULED",
@@ -969,7 +1000,7 @@
   "user_extra_count": null,
   "actions": {
     "new_production": 0,
-    "provider_writes": 19,
+    "provider_writes": 20,
     "paid_calls": 0,
     "audio_requirement_updated": true,
     "media_upload_rejected": 1
