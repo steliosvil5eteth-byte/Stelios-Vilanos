@@ -4,7 +4,7 @@
   "brand_id": 7076410,
   "provider": "youtube",
   "timezone": "Europe/Athens",
-  "owner": "scheduled-automation-6ab86c66195c8191b86b6aa17c99609b",
+  "owner": "interactive-user-authorized-release-20261117",
   "acquired_at": "2026-11-02T06:16:00+02:00",
   "status": "ACTIVE",
   "reconciliation": {
@@ -103,5 +103,9 @@
       "match": false
     }
   ],
-  "journal": "state/daily_delivery/youtube_zodiac_20261102.json"
+  "journal": "state/daily_delivery/youtube_zodiac_20261102.json",
+  "previous_owner": "scheduled-automation-6ab86c66195c8191b86b6aa17c99609b",
+  "resumed_at": "2026-11-17T11:47:00+02:00",
+  "expires_at": "2026-11-17T23:59:59+02:00",
+  "resume_basis": "Explicit user instruction to finish existing batch; last owning automation run completed, no writes in Nov2 ledger, 123 Metricool history records Nov1-19 contain no planned-title duplicate, all291 Notion archive rows contain no planned-title duplicate. Same existing production batch, not new topics."
 }
