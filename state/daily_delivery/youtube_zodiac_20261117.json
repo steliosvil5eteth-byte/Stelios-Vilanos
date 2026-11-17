@@ -5,17 +5,17 @@
   "timezone": "Europe/Athens",
   "counts": {
     "produced": 0,
-    "qa_passed": 9,
-    "scheduled_pending": 9,
+    "qa_passed": 10,
+    "scheduled_pending": 10,
     "published": 0,
     "failed": 0,
-    "blocked": 11
+    "blocked": 10
   },
   "instagram_counts": {
-    "scheduled_pending": 9,
+    "scheduled_pending": 10,
     "published": 0,
     "failed": 0,
-    "blocked": 11
+    "blocked": 10
   },
   "items": [
     {
@@ -279,6 +279,37 @@
       },
       "media": [
         "https://static.metricool.com/planner/202611/7000636-file-7375290633063189618.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "providers": [
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
+      "plannerUrl": null
+    },
+    {
+      "index": 10,
+      "title": "Η πρώτη γνωριμία με τα πεθερικά",
+      "sha256": "3cdd3b41f2f16ad0421c07317dd82815b7d476c92efe600797d97019485b4b76",
+      "status": "SCHEDULED_PENDING",
+      "id": 431206671,
+      "uuid": "8068026232490968086",
+      "publicationDate": {
+        "dateTime": "2026-11-17T17:30:00",
+        "timezone": "Europe/Athens"
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/7000636-file-17301384823065408098.mp4"
       ],
       "draft": false,
       "autoPublish": true,
@@ -659,7 +690,7 @@
   "user_extra_count": null,
   "actions": {
     "new_production": 0,
-    "provider_writes": 9,
+    "provider_writes": 10,
     "paid_calls": 0,
     "audio_requirement_updated": true,
     "media_upload_rejected": 1
