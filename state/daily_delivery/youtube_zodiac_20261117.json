@@ -5,17 +5,17 @@
   "timezone": "Europe/Athens",
   "counts": {
     "produced": 0,
-    "qa_passed": 12,
-    "scheduled_pending": 12,
+    "qa_passed": 13,
+    "scheduled_pending": 13,
     "published": 0,
     "failed": 0,
-    "blocked": 8
+    "blocked": 7
   },
   "instagram_counts": {
-    "scheduled_pending": 12,
+    "scheduled_pending": 13,
     "published": 0,
     "failed": 0,
-    "blocked": 8
+    "blocked": 7
   },
   "items": [
     {
@@ -372,6 +372,37 @@
       },
       "media": [
         "https://static.metricool.com/planner/202611/7000636-file-7537815030864417238.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "providers": [
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
+      "plannerUrl": null
+    },
+    {
+      "index": 13,
+      "title": "Ο γείτονας κάνει πάρτι",
+      "sha256": "283ade33b7cca33283e56c65bffd0129786ad59966b579d47746c5d13ebabd46",
+      "status": "SCHEDULED_PENDING",
+      "id": 431207659,
+      "uuid": "-6602380896191232453",
+      "publicationDate": {
+        "dateTime": "2026-11-17T19:15:00",
+        "timezone": "Europe/Athens"
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/7000636-file-11206408618182040302.mp4"
       ],
       "draft": false,
       "autoPublish": true,
@@ -752,7 +783,7 @@
   "user_extra_count": null,
   "actions": {
     "new_production": 0,
-    "provider_writes": 12,
+    "provider_writes": 13,
     "paid_calls": 0,
     "audio_requirement_updated": true,
     "media_upload_rejected": 1
