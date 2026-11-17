@@ -5,17 +5,17 @@
   "timezone": "Europe/Athens",
   "counts": {
     "produced": 0,
-    "qa_passed": 3,
-    "scheduled_pending": 3,
+    "qa_passed": 4,
+    "scheduled_pending": 4,
     "published": 0,
     "failed": 0,
-    "blocked": 17
+    "blocked": 16
   },
   "instagram_counts": {
-    "scheduled_pending": 3,
+    "scheduled_pending": 4,
     "published": 0,
     "failed": 0,
-    "blocked": 17
+    "blocked": 16
   },
   "items": [
     {
@@ -93,6 +93,37 @@
       },
       "media": [
         "https://static.metricool.com/planner/202611/7000636-file-1618230481274450364.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "providers": [
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
+      "plannerUrl": null
+    },
+    {
+      "index": 4,
+      "title": "Ένα ταξίδι-έκπληξη",
+      "sha256": "1c8cb0f83fe13965fcb0f53bb68bb9c7ed2094997865bb34ee59c6a36c1ccd2e",
+      "status": "SCHEDULED_PENDING",
+      "id": 431205419,
+      "uuid": "-53821056227325923",
+      "publicationDate": {
+        "dateTime": "2026-11-17T14:05:00",
+        "timezone": "Europe/Athens"
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/7000636-file-14778665083259314708.mp4"
       ],
       "draft": false,
       "autoPublish": true,
@@ -473,7 +504,7 @@
   "user_extra_count": null,
   "actions": {
     "new_production": 0,
-    "provider_writes": 3,
+    "provider_writes": 4,
     "paid_calls": 0,
     "audio_requirement_updated": true,
     "media_upload_rejected": 1
