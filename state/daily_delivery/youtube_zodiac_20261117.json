@@ -5,17 +5,17 @@
   "timezone": "Europe/Athens",
   "counts": {
     "produced": 0,
-    "qa_passed": 15,
-    "scheduled_pending": 15,
+    "qa_passed": 16,
+    "scheduled_pending": 16,
     "published": 0,
     "failed": 0,
-    "blocked": 5
+    "blocked": 4
   },
   "instagram_counts": {
-    "scheduled_pending": 15,
+    "scheduled_pending": 16,
     "published": 0,
     "failed": 0,
-    "blocked": 5
+    "blocked": 4
   },
   "items": [
     {
@@ -482,6 +482,37 @@
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
       "plannerUrl": null
+    },
+    {
+      "index": 16,
+      "title": "Η πρώτη μέρα στο γυμναστήριο",
+      "sha256": "85e77c46badef58e6bfec05dc20420d2c5280051343021655956122910a30554",
+      "status": "SCHEDULED_PENDING",
+      "id": 431208993,
+      "uuid": "-8705451098215725003",
+      "publicationDate": {
+        "dateTime": "2026-11-17T21:05:00",
+        "timezone": "Europe/Athens"
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/7000636-file-8160429447979056328.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "providers": [
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
+      "plannerUrl": null
     }
   ],
   "status": "PARTIALLY_SCHEDULED",
@@ -845,7 +876,7 @@
   "user_extra_count": null,
   "actions": {
     "new_production": 0,
-    "provider_writes": 15,
+    "provider_writes": 16,
     "paid_calls": 0,
     "audio_requirement_updated": true,
     "media_upload_rejected": 1
