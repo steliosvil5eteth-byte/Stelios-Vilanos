@@ -5,17 +5,17 @@
   "timezone": "Europe/Athens",
   "counts": {
     "produced": 0,
-    "qa_passed": 7,
-    "scheduled_pending": 7,
+    "qa_passed": 8,
+    "scheduled_pending": 8,
     "published": 0,
     "failed": 0,
-    "blocked": 13
+    "blocked": 12
   },
   "instagram_counts": {
-    "scheduled_pending": 7,
+    "scheduled_pending": 8,
     "published": 0,
     "failed": 0,
-    "blocked": 13
+    "blocked": 12
   },
   "items": [
     {
@@ -217,6 +217,37 @@
       },
       "media": [
         "https://static.metricool.com/planner/202611/7000636-file-11106127222197527560.mp4"
+      ],
+      "draft": false,
+      "autoPublish": true,
+      "providers": [
+        {
+          "network": "instagram",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        },
+        {
+          "network": "youtube",
+          "status": "PENDING",
+          "detailedStatus": "Pending"
+        }
+      ],
+      "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
+      "plannerUrl": null
+    },
+    {
+      "index": 8,
+      "title": "Τα κλειδιά χάθηκαν",
+      "sha256": "221dc630f1d0873ed79d70e2f9c00401cd841aa8f1210cd551a6fffab6aa6a93",
+      "status": "SCHEDULED_PENDING",
+      "id": 431206497,
+      "uuid": "8914483300744318072",
+      "publicationDate": {
+        "dateTime": "2026-11-17T16:20:00",
+        "timezone": "Europe/Athens"
+      },
+      "media": [
+        "https://static.metricool.com/planner/202611/7000636-file-14522570613190468270.mp4"
       ],
       "draft": false,
       "autoPublish": true,
@@ -597,7 +628,7 @@
   "user_extra_count": null,
   "actions": {
     "new_production": 0,
-    "provider_writes": 7,
+    "provider_writes": 8,
     "paid_calls": 0,
     "audio_requirement_updated": true,
     "media_upload_rejected": 1
