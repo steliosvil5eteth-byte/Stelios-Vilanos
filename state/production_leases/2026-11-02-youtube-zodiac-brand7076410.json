@@ -6,7 +6,7 @@
   "timezone": "Europe/Athens",
   "owner": "interactive-user-authorized-release-20261117",
   "acquired_at": "2026-11-02T06:16:00+02:00",
-  "status": "ACTIVE",
+  "status": "COMPLETED",
   "reconciliation": {
     "metricool_records_window": 14,
     "notion_active_rows": 291,
@@ -107,5 +107,30 @@
   "previous_owner": "scheduled-automation-6ab86c66195c8191b86b6aa17c99609b",
   "resumed_at": "2026-11-17T11:47:00+02:00",
   "expires_at": "2026-11-17T23:59:59+02:00",
-  "resume_basis": "Explicit user instruction to finish existing batch; last owning automation run completed, no writes in Nov2 ledger, 123 Metricool history records Nov1-19 contain no planned-title duplicate, all291 Notion archive rows contain no planned-title duplicate. Same existing production batch, not new topics."
+  "resume_basis": "Explicit user instruction to finish existing batch; last owning automation run completed, no writes in Nov2 ledger, 123 Metricool history records Nov1-19 contain no planned-title duplicate, all291 Notion archive rows contain no planned-title duplicate. Same existing production batch, not new topics.",
+  "completed_at": "2026-11-17",
+  "outcome": "20 unique repaired videos scheduled as20 Metricool posts with youtube+instagram, all PENDING",
+  "post_ids": [
+    431205224,
+    431202770,
+    431205325,
+    431205419,
+    431205536,
+    431205633,
+    431205723,
+    431206497,
+    431206576,
+    431206671,
+    431206750,
+    431207566,
+    431207659,
+    431207771,
+    431207892,
+    431208993,
+    431209109,
+    431209230,
+    431209341,
+    431209425
+  ],
+  "release_journal": "state/daily_delivery/youtube_zodiac_20261117.json"
 }
