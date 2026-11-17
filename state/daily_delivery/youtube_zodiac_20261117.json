@@ -349,9 +349,9 @@
     ]
   },
   "blockers": [
-    "FULL_AV_QA_UNAVAILABLE: no verified actual whole-file listening capability; no PASSED_FINAL_REVIEW issued.",
     "RELEASE_RECONCILIATION_INCOMPLETE: full native account rolling-24h uploads and actual remaining quotas unknown; current Metricool window only.",
-    "ACTIVE_HISTORICAL_LEASE: Nov2 lease remains ACTIVE without established expiry; no takeover attempted."
+    "ACTIVE_HISTORICAL_LEASE: Nov2 lease remains ACTIVE without established expiry; no takeover attempted.",
+    "MEDIA_TRANSFER_APPROVAL_REQUIRED: auto-review rejected intermediary vidIQ upload; no upload performed. Direct Metricool browser has no authenticated session."
   ],
   "reconciliation": {
     "notion_saved_view_active": 291,
@@ -381,7 +381,11 @@
   "actions": {
     "new_production": 0,
     "provider_writes": 0,
-    "paid_calls": 0
+    "paid_calls": 0,
+    "audio_requirement_updated": true,
+    "media_upload_rejected": 1
   },
-  "release_ready": false
+  "release_ready": false,
+  "audio_listening_waived_by_user": true,
+  "audio_listening_waiver_date": "2026-11-17"
 }
