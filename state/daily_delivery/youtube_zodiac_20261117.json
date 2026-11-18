@@ -6,14 +6,14 @@
   "counts": {
     "produced": 0,
     "qa_passed": 20,
-    "scheduled_pending": 20,
-    "published": 0,
-    "failed": 0,
+    "scheduled_pending": 0,
+    "published": 13,
+    "failed": 7,
     "blocked": 0
   },
   "instagram_counts": {
-    "scheduled_pending": 20,
-    "published": 0,
+    "scheduled_pending": 0,
+    "published": 20,
     "failed": 0,
     "blocked": 0
   },
@@ -22,7 +22,7 @@
       "index": 1,
       "title": "Το ξυπνητήρι χτυπά τρίτη φορά",
       "sha256": "6212c47059ec442c74f76382f76574c400e735dea6204f84295d3205da544270",
-      "status": "SCHEDULED_PENDING",
+      "status": "PUBLISHED",
       "id": 431205224,
       "uuid": "-4226312673100873014",
       "publicationDate": {
@@ -37,13 +37,17 @@
       "providers": [
         {
           "network": "instagram",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "https://www.instagram.com/reel/Df1sYNVCeX5/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/Df1sYNVCeX5/",
+          "detailedStatus": "Published"
         },
         {
           "network": "youtube",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "T7iODLaHXlk",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.youtube.com/shorts/T7iODLaHXlk",
+          "detailedStatus": "Published"
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
@@ -53,7 +57,7 @@
       "index": 2,
       "title": "Ένα απρόσμενο κομπλιμέντο",
       "sha256": "8e14f1782938f28516d4f5b406afcdf83d96faa13a254c6853ba270181d3d6a8",
-      "status": "SCHEDULED_PENDING",
+      "status": "PUBLISHED",
       "id": 431202770,
       "uuid": "-6198072808821734815",
       "publicationDate": {
@@ -68,13 +72,17 @@
       "providers": [
         {
           "network": "instagram",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "https://www.instagram.com/reel/Df1wYWYgj7G/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/Df1wYWYgj7G/",
+          "detailedStatus": "Published"
         },
         {
           "network": "youtube",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "v7rbjeO8Vtc",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.youtube.com/shorts/v7rbjeO8Vtc",
+          "detailedStatus": "Published"
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
@@ -84,7 +92,7 @@
       "index": 3,
       "title": "Η μπαταρία έμεινε στο 1%",
       "sha256": "f46c8b9f4cea645e91b48e049ce0f7e4f259e7454a5f4ab94cc0d32db110a87d",
-      "status": "SCHEDULED_PENDING",
+      "status": "PUBLISHED",
       "id": 431205325,
       "uuid": "619869202570496053",
       "publicationDate": {
@@ -99,13 +107,17 @@
       "providers": [
         {
           "network": "instagram",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "https://www.instagram.com/reel/Df10d0mCQ3q/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/Df10d0mCQ3q/",
+          "detailedStatus": "Published"
         },
         {
           "network": "youtube",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "jstcHN-kJ8A",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.youtube.com/shorts/jstcHN-kJ8A",
+          "detailedStatus": "Published"
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
@@ -115,7 +127,7 @@
       "index": 4,
       "title": "Ένα ταξίδι-έκπληξη",
       "sha256": "1c8cb0f83fe13965fcb0f53bb68bb9c7ed2094997865bb34ee59c6a36c1ccd2e",
-      "status": "SCHEDULED_PENDING",
+      "status": "PUBLISHED",
       "id": 431205419,
       "uuid": "-53821056227325923",
       "publicationDate": {
@@ -130,13 +142,17 @@
       "providers": [
         {
           "network": "instagram",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "https://www.instagram.com/reel/Df15CiNku0O/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/Df15CiNku0O/",
+          "detailedStatus": "Published"
         },
         {
           "network": "youtube",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "baa0Mmi0nVE",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.youtube.com/shorts/baa0Mmi0nVE",
+          "detailedStatus": "Published"
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
@@ -146,7 +162,7 @@
       "index": 5,
       "title": "Μήνυμα από τον πρώην",
       "sha256": "1e4c8f11ff1aeea9e08d0d8111c54c65ec8e68cc8fc95df090ec09ebc05d471b",
-      "status": "SCHEDULED_PENDING",
+      "status": "PUBLISHED",
       "id": 431205536,
       "uuid": "9147453070000474461",
       "publicationDate": {
@@ -161,13 +177,17 @@
       "providers": [
         {
           "network": "instagram",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "https://www.instagram.com/reel/Df18ZB1DSR7/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/Df18ZB1DSR7/",
+          "detailedStatus": "Published"
         },
         {
           "network": "youtube",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "2K85-3NiATQ",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.youtube.com/shorts/2K85-3NiATQ",
+          "detailedStatus": "Published"
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
@@ -177,7 +197,7 @@
       "index": 6,
       "title": "Η πρώτη μέρα στη νέα δουλειά",
       "sha256": "e972d85798c487c88bc7201917f0567905a623f9bee2e5f43cef238d7479ebee",
-      "status": "SCHEDULED_PENDING",
+      "status": "PUBLISHED",
       "id": 431205633,
       "uuid": "5777062136112827684",
       "publicationDate": {
@@ -192,13 +212,17 @@
       "providers": [
         {
           "network": "instagram",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "https://www.instagram.com/reel/Df2AZixkV5K/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/Df2AZixkV5K/",
+          "detailedStatus": "Published"
         },
         {
           "network": "youtube",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "nPiVapyoxcE",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.youtube.com/shorts/nPiVapyoxcE",
+          "detailedStatus": "Published"
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
@@ -208,7 +232,7 @@
       "index": 7,
       "title": "Η συνταγή απέτυχε",
       "sha256": "d022a4f057ae8a5b427a90ca9a31149b72d895831591abe51411b034414c2553",
-      "status": "SCHEDULED_PENDING",
+      "status": "PUBLISHED",
       "id": 431205723,
       "uuid": "639096198574656735",
       "publicationDate": {
@@ -223,13 +247,17 @@
       "providers": [
         {
           "network": "instagram",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "https://www.instagram.com/reel/Df2EaVSk8gc/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/Df2EaVSk8gc/",
+          "detailedStatus": "Published"
         },
         {
           "network": "youtube",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "EOKkZpmzKcM",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.youtube.com/shorts/EOKkZpmzKcM",
+          "detailedStatus": "Published"
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
@@ -239,7 +267,7 @@
       "index": 8,
       "title": "Τα κλειδιά χάθηκαν",
       "sha256": "221dc630f1d0873ed79d70e2f9c00401cd841aa8f1210cd551a6fffab6aa6a93",
-      "status": "SCHEDULED_PENDING",
+      "status": "PUBLISHED",
       "id": 431206497,
       "uuid": "8914483300744318072",
       "publicationDate": {
@@ -254,13 +282,17 @@
       "providers": [
         {
           "network": "instagram",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "https://www.instagram.com/reel/Df2IapOFEkq/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/Df2IapOFEkq/",
+          "detailedStatus": "Published"
         },
         {
           "network": "youtube",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "9PS86k7kc-8",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.youtube.com/shorts/9PS86k7kc-8",
+          "detailedStatus": "Published"
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
@@ -270,7 +302,7 @@
       "index": 9,
       "title": "Ο θαυμαστής αποκαλύπτεται",
       "sha256": "f813f8b85cd1d38339f05d5ccfef5d373965466e8194c55e9ab319eeac917f86",
-      "status": "SCHEDULED_PENDING",
+      "status": "PUBLISHED",
       "id": 431206576,
       "uuid": "-7879300217044253261",
       "publicationDate": {
@@ -285,13 +317,17 @@
       "providers": [
         {
           "network": "instagram",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "https://www.instagram.com/reel/Df2MacZiaiw/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/Df2MacZiaiw/",
+          "detailedStatus": "Published"
         },
         {
           "network": "youtube",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "npdllyCX8xg",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.youtube.com/shorts/npdllyCX8xg",
+          "detailedStatus": "Published"
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
@@ -301,7 +337,7 @@
       "index": 10,
       "title": "Η πρώτη γνωριμία με τα πεθερικά",
       "sha256": "3cdd3b41f2f16ad0421c07317dd82815b7d476c92efe600797d97019485b4b76",
-      "status": "SCHEDULED_PENDING",
+      "status": "PUBLISHED",
       "id": 431206671,
       "uuid": "8068026232490968086",
       "publicationDate": {
@@ -316,13 +352,17 @@
       "providers": [
         {
           "network": "instagram",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "https://www.instagram.com/reel/Df2QmD1DuY3/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/Df2QmD1DuY3/",
+          "detailedStatus": "Published"
         },
         {
           "network": "youtube",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "f3QpNTO8V-w",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.youtube.com/shorts/f3QpNTO8V-w",
+          "detailedStatus": "Published"
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
@@ -332,7 +372,7 @@
       "index": 11,
       "title": "Πρόσκληση για καραόκε",
       "sha256": "b29bd290efeb578c7a35b9d158f0e3c94db87aa87185ccd5d7557e9812b83557",
-      "status": "SCHEDULED_PENDING",
+      "status": "PUBLISHED",
       "id": 431206750,
       "uuid": "-5251152972115131197",
       "publicationDate": {
@@ -347,13 +387,17 @@
       "providers": [
         {
           "network": "instagram",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "https://www.instagram.com/reel/Df2VDGsI6kA/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/Df2VDGsI6kA/",
+          "detailedStatus": "Published"
         },
         {
           "network": "youtube",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "x37i8q6fEcI",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.youtube.com/shorts/x37i8q6fEcI",
+          "detailedStatus": "Published"
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
@@ -363,7 +407,7 @@
       "index": 12,
       "title": "Μικρό κέρδος στο λαχείο",
       "sha256": "087a44254d86e599ed4b50aed5dc1d0a0af569cc90928129c22b23b68f3f3af8",
-      "status": "SCHEDULED_PENDING",
+      "status": "PARTIAL_FAILURE",
       "id": 431207566,
       "uuid": "310128176491808287",
       "publicationDate": {
@@ -378,13 +422,15 @@
       "providers": [
         {
           "network": "instagram",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "https://www.instagram.com/reel/Df2Yb-qjL2m/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/Df2Yb-qjL2m/",
+          "detailedStatus": "Published"
         },
         {
           "network": "youtube",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "status": "ERROR",
+          "detailedStatus": "You have reached your Metricool account limit."
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
@@ -394,7 +440,7 @@
       "index": 13,
       "title": "Ο γείτονας κάνει πάρτι",
       "sha256": "283ade33b7cca33283e56c65bffd0129786ad59966b579d47746c5d13ebabd46",
-      "status": "SCHEDULED_PENDING",
+      "status": "PUBLISHED",
       "id": 431207659,
       "uuid": "-6602380896191232453",
       "publicationDate": {
@@ -409,13 +455,17 @@
       "providers": [
         {
           "network": "instagram",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "https://www.instagram.com/reel/Df2cgUSCf5Z/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/Df2cgUSCf5Z/",
+          "detailedStatus": "Published"
         },
         {
           "network": "youtube",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "0MEyB2f4ZDo",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.youtube.com/shorts/0MEyB2f4ZDo",
+          "detailedStatus": "Published"
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
@@ -425,7 +475,7 @@
       "index": 14,
       "title": "Έστειλες μήνυμα σε λάθος άτομο",
       "sha256": "c2cb7cb72839cf0ef5fa37fa0216ac8de3fe54d00707bfd830783015fd7e66b7",
-      "status": "SCHEDULED_PENDING",
+      "status": "PUBLISHED",
       "id": 431207771,
       "uuid": "-5560006967642011289",
       "publicationDate": {
@@ -440,13 +490,17 @@
       "providers": [
         {
           "network": "instagram",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "https://www.instagram.com/reel/Df2ggHzgauT/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/Df2ggHzgauT/",
+          "detailedStatus": "Published"
         },
         {
           "network": "youtube",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "HQL-q1ITIdc",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.youtube.com/shorts/HQL-q1ITIdc",
+          "detailedStatus": "Published"
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
@@ -456,7 +510,7 @@
       "index": 15,
       "title": "Σαββατοκύριακο χωρίς ίντερνετ",
       "sha256": "aaebfe1f2549387cfd419173728f9fd88a636df00c583afaaa71cc4c7923114f",
-      "status": "SCHEDULED_PENDING",
+      "status": "PARTIAL_FAILURE",
       "id": 431207892,
       "uuid": "4081108148186924833",
       "publicationDate": {
@@ -471,13 +525,15 @@
       "providers": [
         {
           "network": "instagram",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "https://www.instagram.com/reel/Df2kcq2E3b1/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/Df2kcq2E3b1/",
+          "detailedStatus": "Published"
         },
         {
           "network": "youtube",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "status": "ERROR",
+          "detailedStatus": "You have reached your Metricool account limit."
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
@@ -487,7 +543,7 @@
       "index": 16,
       "title": "Η πρώτη μέρα στο γυμναστήριο",
       "sha256": "85e77c46badef58e6bfec05dc20420d2c5280051343021655956122910a30554",
-      "status": "SCHEDULED_PENDING",
+      "status": "PARTIAL_FAILURE",
       "id": 431208993,
       "uuid": "-8705451098215725003",
       "publicationDate": {
@@ -502,13 +558,15 @@
       "providers": [
         {
           "network": "instagram",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "https://www.instagram.com/reel/Df2pfqjjQkL/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/Df2pfqjjQkL/",
+          "detailedStatus": "Published"
         },
         {
           "network": "youtube",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "status": "ERROR",
+          "detailedStatus": "You have reached your Metricool account limit."
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
@@ -518,7 +576,7 @@
       "index": 17,
       "title": "Ξαφνική βροχή χωρίς ομπρέλα",
       "sha256": "cb41baadf03580a2f4848ca5bb9c74026f821cdaa1a8c95a0631c7d171bd3f00",
-      "status": "SCHEDULED_PENDING",
+      "status": "PARTIAL_FAILURE",
       "id": 431209109,
       "uuid": "-3193358747519924814",
       "publicationDate": {
@@ -533,13 +591,15 @@
       "providers": [
         {
           "network": "instagram",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "https://www.instagram.com/reel/Df2sfmDk0uO/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/Df2sfmDk0uO/",
+          "detailedStatus": "Published"
         },
         {
           "network": "youtube",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "status": "ERROR",
+          "detailedStatus": "You have reached your Metricool account limit."
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
@@ -549,7 +609,7 @@
       "index": 18,
       "title": "Ομάδα σε φανταστικές αποστολές",
       "sha256": "e704bb7c766238f34486a8848777a6d12c385f1b0e82d29aa568e22e70508cd7",
-      "status": "SCHEDULED_PENDING",
+      "status": "PARTIAL_FAILURE",
       "id": 431209230,
       "uuid": "5652323391376738130",
       "publicationDate": {
@@ -564,13 +624,15 @@
       "providers": [
         {
           "network": "instagram",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "https://www.instagram.com/reel/Df2wdvyiR6W/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/Df2wdvyiR6W/",
+          "detailedStatus": "Published"
         },
         {
           "network": "youtube",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "status": "ERROR",
+          "detailedStatus": "You have reached your Metricool account limit."
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
@@ -580,7 +642,7 @@
       "index": 19,
       "title": "Αυθόρμητη εκδρομή",
       "sha256": "de90e7deb80c4b9d0be810def95c0738c976c51b250935622b294961ec49371d",
-      "status": "SCHEDULED_PENDING",
+      "status": "PARTIAL_FAILURE",
       "id": 431209341,
       "uuid": "-1944304066947757511",
       "publicationDate": {
@@ -595,13 +657,15 @@
       "providers": [
         {
           "network": "instagram",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "https://www.instagram.com/reel/Df20ej_AvIK/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/Df20ej_AvIK/",
+          "detailedStatus": "Published"
         },
         {
           "network": "youtube",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "status": "ERROR",
+          "detailedStatus": "You have reached your Metricool account limit."
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
@@ -611,7 +675,7 @@
       "index": 20,
       "title": "Βρήκες ένα παλιό γράμμα",
       "sha256": "97edc414ea4cc0d72937208539b530b376ba3050927113f113554b57f374c33a",
-      "status": "SCHEDULED_PENDING",
+      "status": "PARTIAL_FAILURE",
       "id": 431209425,
       "uuid": "7281790684914927209",
       "publicationDate": {
@@ -626,21 +690,23 @@
       "providers": [
         {
           "network": "instagram",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "id": "https://www.instagram.com/reel/Df25vPjCQKM/",
+          "status": "PUBLISHED",
+          "publicUrl": "https://www.instagram.com/reel/Df25vPjCQKM/",
+          "detailedStatus": "Published"
         },
         {
           "network": "youtube",
-          "status": "PENDING",
-          "detailedStatus": "Pending"
+          "status": "ERROR",
+          "detailedStatus": "You have reached your Metricool account limit."
         }
       ],
       "review_basis": "Final six static cards visually inspected; technical decode verified; user explicitly waived listening requirement on Nov17.",
       "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7076410&openWithPostUuid=7281790684914927209"
     }
   ],
-  "status": "SCHEDULED_PENDING",
-  "count_basis": "20 repaired existing assets scheduled today for two providers. No new topics produced today; PENDING is not Published.",
+  "status": "PARTIAL_FAILURE",
+  "count_basis": "17Nov repaired batch; provider statuses verified18Nov. YouTube counts kept separate from Instagram.",
   "historical_media": {
     "source_date": "2026-11-16",
     "library_file_id": "libfile_464a2c65c7188191b5fac787c1356a88",
@@ -1026,5 +1092,23 @@
     "first": "2026-11-17T12:15:00+02:00",
     "last": "2026-11-17T23:30:00+02:00",
     "personal_posts_unchanged": 8
+  },
+  "reconciliation_audit_20261118": {
+    "prior_counts": {
+      "produced": 0,
+      "qa_passed": 20,
+      "scheduled_pending": 20,
+      "published": 0,
+      "failed": 0,
+      "blocked": 0
+    },
+    "prior_instagram_counts": {
+      "scheduled_pending": 20,
+      "published": 0,
+      "failed": 0,
+      "blocked": 0
+    },
+    "basis": "Fresh Metricool provider readback matched by id and uuid; no retries or provider writes.",
+    "date": "2026-11-18"
   }
 }
