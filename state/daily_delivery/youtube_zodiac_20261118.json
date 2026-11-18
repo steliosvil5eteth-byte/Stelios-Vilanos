@@ -1,0 +1,504 @@
+{
+  "date": "2026-11-18",
+  "brand_id": 7076410,
+  "target": 20,
+  "timezone": "Europe/Athens",
+  "counts": {
+    "produced": 0,
+    "qa_passed": 0,
+    "scheduled_pending": 0,
+    "published": 0,
+    "failed": 0,
+    "blocked": 0
+  },
+  "instagram_counts": {
+    "scheduled_pending": 0,
+    "published": 0,
+    "failed": 0,
+    "blocked": 0
+  },
+  "items": [],
+  "status": "INCOMPLETE_PREPRODUCTION",
+  "unfilled_target": 20,
+  "automated_series_count": 0,
+  "user_extra_count": null,
+  "count_basis": "No new assets or provider writes this run. Unfilled target is not counted as produced, failed, or 20 actual blocked files.",
+  "previous_batch_audit": {
+    "date": "2026-11-17",
+    "youtube": {
+      "published": 13,
+      "failed": 7,
+      "scheduled_pending": 0
+    },
+    "instagram": {
+      "published": 20,
+      "failed": 0,
+      "scheduled_pending": 0
+    },
+    "items": [
+      {
+        "index": 1,
+        "id": 431205224,
+        "title": "Το ξυπνητήρι χτυπά τρίτη φορά",
+        "status": "PUBLISHED",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Df1sYNVCeX5/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df1sYNVCeX5/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "T7iODLaHXlk",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/T7iODLaHXlk",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "index": 2,
+        "id": 431202770,
+        "title": "Ένα απρόσμενο κομπλιμέντο",
+        "status": "PUBLISHED",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Df1wYWYgj7G/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df1wYWYgj7G/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "v7rbjeO8Vtc",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/v7rbjeO8Vtc",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "index": 3,
+        "id": 431205325,
+        "title": "Η μπαταρία έμεινε στο 1%",
+        "status": "PUBLISHED",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Df10d0mCQ3q/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df10d0mCQ3q/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "jstcHN-kJ8A",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/jstcHN-kJ8A",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "index": 4,
+        "id": 431205419,
+        "title": "Ένα ταξίδι-έκπληξη",
+        "status": "PUBLISHED",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Df15CiNku0O/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df15CiNku0O/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "baa0Mmi0nVE",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/baa0Mmi0nVE",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "index": 5,
+        "id": 431205536,
+        "title": "Μήνυμα από τον πρώην",
+        "status": "PUBLISHED",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Df18ZB1DSR7/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df18ZB1DSR7/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "2K85-3NiATQ",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/2K85-3NiATQ",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "index": 6,
+        "id": 431205633,
+        "title": "Η πρώτη μέρα στη νέα δουλειά",
+        "status": "PUBLISHED",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Df2AZixkV5K/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df2AZixkV5K/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "nPiVapyoxcE",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/nPiVapyoxcE",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "index": 7,
+        "id": 431205723,
+        "title": "Η συνταγή απέτυχε",
+        "status": "PUBLISHED",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Df2EaVSk8gc/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df2EaVSk8gc/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "EOKkZpmzKcM",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/EOKkZpmzKcM",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "index": 8,
+        "id": 431206497,
+        "title": "Τα κλειδιά χάθηκαν",
+        "status": "PUBLISHED",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Df2IapOFEkq/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df2IapOFEkq/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "9PS86k7kc-8",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/9PS86k7kc-8",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "index": 9,
+        "id": 431206576,
+        "title": "Ο θαυμαστής αποκαλύπτεται",
+        "status": "PUBLISHED",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Df2MacZiaiw/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df2MacZiaiw/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "npdllyCX8xg",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/npdllyCX8xg",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "index": 10,
+        "id": 431206671,
+        "title": "Η πρώτη γνωριμία με τα πεθερικά",
+        "status": "PUBLISHED",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Df2QmD1DuY3/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df2QmD1DuY3/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "f3QpNTO8V-w",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/f3QpNTO8V-w",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "index": 11,
+        "id": 431206750,
+        "title": "Πρόσκληση για καραόκε",
+        "status": "PUBLISHED",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Df2VDGsI6kA/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df2VDGsI6kA/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "x37i8q6fEcI",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/x37i8q6fEcI",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "index": 12,
+        "id": 431207566,
+        "title": "Μικρό κέρδος στο λαχείο",
+        "status": "PARTIAL_FAILURE",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Df2Yb-qjL2m/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df2Yb-qjL2m/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "status": "ERROR",
+            "detailedStatus": "You have reached your Metricool account limit."
+          }
+        ]
+      },
+      {
+        "index": 13,
+        "id": 431207659,
+        "title": "Ο γείτονας κάνει πάρτι",
+        "status": "PUBLISHED",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Df2cgUSCf5Z/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df2cgUSCf5Z/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "0MEyB2f4ZDo",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/0MEyB2f4ZDo",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "index": 14,
+        "id": 431207771,
+        "title": "Έστειλες μήνυμα σε λάθος άτομο",
+        "status": "PUBLISHED",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Df2ggHzgauT/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df2ggHzgauT/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "id": "HQL-q1ITIdc",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.youtube.com/shorts/HQL-q1ITIdc",
+            "detailedStatus": "Published"
+          }
+        ]
+      },
+      {
+        "index": 15,
+        "id": 431207892,
+        "title": "Σαββατοκύριακο χωρίς ίντερνετ",
+        "status": "PARTIAL_FAILURE",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Df2kcq2E3b1/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df2kcq2E3b1/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "status": "ERROR",
+            "detailedStatus": "You have reached your Metricool account limit."
+          }
+        ]
+      },
+      {
+        "index": 16,
+        "id": 431208993,
+        "title": "Η πρώτη μέρα στο γυμναστήριο",
+        "status": "PARTIAL_FAILURE",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Df2pfqjjQkL/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df2pfqjjQkL/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "status": "ERROR",
+            "detailedStatus": "You have reached your Metricool account limit."
+          }
+        ]
+      },
+      {
+        "index": 17,
+        "id": 431209109,
+        "title": "Ξαφνική βροχή χωρίς ομπρέλα",
+        "status": "PARTIAL_FAILURE",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Df2sfmDk0uO/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df2sfmDk0uO/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "status": "ERROR",
+            "detailedStatus": "You have reached your Metricool account limit."
+          }
+        ]
+      },
+      {
+        "index": 18,
+        "id": 431209230,
+        "title": "Ομάδα σε φανταστικές αποστολές",
+        "status": "PARTIAL_FAILURE",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Df2wdvyiR6W/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df2wdvyiR6W/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "status": "ERROR",
+            "detailedStatus": "You have reached your Metricool account limit."
+          }
+        ]
+      },
+      {
+        "index": 19,
+        "id": 431209341,
+        "title": "Αυθόρμητη εκδρομή",
+        "status": "PARTIAL_FAILURE",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Df20ej_AvIK/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df20ej_AvIK/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "status": "ERROR",
+            "detailedStatus": "You have reached your Metricool account limit."
+          }
+        ]
+      },
+      {
+        "index": 20,
+        "id": 431209425,
+        "title": "Βρήκες ένα παλιό γράμμα",
+        "status": "PARTIAL_FAILURE",
+        "providers": [
+          {
+            "network": "instagram",
+            "id": "https://www.instagram.com/reel/Df25vPjCQKM/",
+            "status": "PUBLISHED",
+            "publicUrl": "https://www.instagram.com/reel/Df25vPjCQKM/",
+            "detailedStatus": "Published"
+          },
+          {
+            "network": "youtube",
+            "status": "ERROR",
+            "detailedStatus": "You have reached your Metricool account limit."
+          }
+        ]
+      }
+    ]
+  },
+  "reconciliation": {
+    "notion_active": 291,
+    "notion_archived": 0,
+    "view_pagination_complete": true,
+    "brands_read": [
+      7076410,
+      7000636
+    ],
+    "historical_lease_20261102": "COMPLETED",
+    "native_census_complete": false,
+    "remaining_quota": null
+  },
+  "preflight": {
+    "vidiq_upload_documented_credits_per_call": 0,
+    "vidiq_balance": 150,
+    "vidiq_balance_call_credits_used": 0,
+    "new_image_generation_cost_and_remaining_quota": "NOT_VERIFIED",
+    "actual_listening_required": false
+  },
+  "blockers": [
+    {
+      "scope": "youtube",
+      "code": "METRICOOL_ACCOUNT_LIMIT_OBSERVED",
+      "detail": "7 previous-batch YouTube destinations returned You have reached your Metricool account limit. No blind retry; expiry/reset not exposed."
+    },
+    {
+      "scope": "new_asset_generation",
+      "code": "COST_PREFLIGHT_NOT_COMPLETED",
+      "detail": "New image-generation allowance/cost not verified. No generation calls or paid fallback attempted; vidIQ free transfer does not establish free image generation."
+    }
+  ],
+  "actions": {
+    "provider_writes": 0,
+    "new_production": 0,
+    "paid_calls": 0
+  },
+  "release_ready": false
+}
