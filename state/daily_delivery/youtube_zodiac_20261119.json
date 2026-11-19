@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-19",
+  "brand_id": 7076410,
+  "target": 20,
+  "timezone": "Europe/Athens",
+  "counts": {
+    "produced": 0,
+    "qa_passed": 0,
+    "scheduled_pending": 0,
+    "published": 0,
+    "failed": 0,
+    "blocked": 0
+  },
+  "instagram_counts": {
+    "scheduled_pending": 0,
+    "published": 0,
+    "failed": 0,
+    "blocked": 0
+  },
+  "items": [],
+  "status": "BLOCKED_PREPRODUCTION",
+  "unfilled_target": 20,
+  "count_basis": "No new assets or provider writes. Missing target slots are not actual blocked files. No series rows observed in the checked Metricool window; native account census not complete.",
+  "reconciliation": {
+    "brands": [
+      7076410,
+      7000636
+    ],
+    "window": [
+      "2026-11-18T06:00:00+02:00",
+      "2026-11-20T23:59:59+02:00"
+    ],
+    "notion_view_active": 291,
+    "notion_view_archived": 0,
+    "view_pagination_complete": true,
+    "known_extras_published": {
+      "youtube": 8,
+      "instagram": 8
+    },
+    "native_census_complete": false,
+    "full_history_dedupe_passed": false
+  },
+  "blockers": [
+    {
+      "scope": "all_new_asset_production",
+      "code": "ZERO_ADDITIONAL_COST_GENERATION_NOT_VERIFIED",
+      "detail": "Current image-generation tool is available but exposes no account-specific remaining allowance or cost preflight. No generation or paid fallback call was made. This is not a proven quota exhaustion."
+    }
+  ],
+  "automation": {
+    "is_enabled": false,
+    "reason": "Persistent workflow-wide production preflight blocker; not individual platform error."
+  },
+  "actions": {
+    "new_production": 0,
+    "provider_writes": 0,
+    "paid_calls": 0
+  },
+  "actual_listening_required": false,
+  "release_ready": false
+}
